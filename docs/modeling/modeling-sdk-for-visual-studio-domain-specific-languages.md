@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b955dc6f79c689ca30d8d9876d0888b14127490
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815040"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476528"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
 
@@ -41,38 +41,3 @@ Wszystkie te funkcje można dostosowywać i rozszerzać. Rozszerzenia są integr
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 [Wpisy w blogu pokrewne](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
-
-Aby uzyskać wskazówki dotyczące zaawansowanych technik i rozwiązywania problemów, odwiedź stronę [forum Visual Studio DSL & Modeling Tools Extensibility](http://go.microsoft.com/fwlink/?LinkID=186074).
-
-## <a name="in-this-section"></a>W tej sekcji
- [Wprowadzenie do języków specyficznych dla domeny](../modeling/getting-started-with-domain-specific-languages.md)
-
- [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)
-
- [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
-
- [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
- [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md)
-
- [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
- [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)
-
- [Znajomość kodu DSL](../modeling/understanding-the-dsl-code.md)
-
- [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md)
-
- [Wdrażanie rozwiązań dla języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md)
-
- [Tworzenie języka specyficznego dla domeny opartego na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
-
- [Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
- [Instrukcje: Rozszerzanie projektanta języka specyficznego dla domeny](../modeling/how-to-extend-the-domain-specific-language-designer.md)
-
- [Wersje programu Visual Studio obsługiwane przez zestaw Visualization and Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
-
- [Instrukcje: Migracja języka specyficznego dla domeny do nowej wersji](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
-
- [Odwołania API do modelowania SDK dla Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

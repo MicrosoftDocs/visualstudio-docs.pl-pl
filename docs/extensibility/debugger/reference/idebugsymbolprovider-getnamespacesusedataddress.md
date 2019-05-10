@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d016dd475effa099ac4471e8bc9716f1965b569f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc32ea0d07779f82bb741b99632ec16a950e5da2
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915791"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223964"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Ta metoda tworzy moduł wyliczający dla obszarów nazw skojarzonych z tym adresem debugowania.
@@ -38,12 +41,12 @@ int GetNamespacesUsedAtAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pAddress`
+## <a name="parameters"></a>Parametry
+ `pAddress`\
 
  [in] Adres debugowania.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) moduł wyliczający dla obszarów nazw.
 
@@ -53,6 +56,6 @@ int GetNamespacesUsedAtAddress(
 ## <a name="remarks"></a>Uwagi
  Mogą być różne przestrzenie nazw skojarzonych z adresu podanego debugowania, na przykład zagnieżdżone przestrzenie nazw lub wielu `using` instrukcji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

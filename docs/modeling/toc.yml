@@ -1,13 +1,15 @@
 - name: Analizowanie i modelowanie architektury
-  href: analyze-and-model-your-architecture.md
   items:
+    - name: Analizowanie i modelowanie architektury
+      href: analyze-and-model-your-architecture.md
     - name: Co nowego w dziedzinie projektowania w programie Visual Studio 2017
       href: what-s-new-for-design-in-visual-studio.md
     - name: Zmienianie projektu przy użyciu wizualizacji i modelowania
       href: scenario-change-your-design-using-visualization-and-modeling.md
     - name: Tworzenie wizualizacji kodu
-      href: visualize-code.md
       items:
+        - name: Tworzenie wizualizacji kodu
+          href: visualize-code.md
         - name: Używanie map kodu do mapowania zależności
           href: map-dependencies-across-your-solutions.md
         - name: Udostępnianie map kodu
@@ -31,22 +33,25 @@
         - name: Tworzenie diagramów zależności z kodu
           href: create-layer-diagrams-from-your-code.md
     - name: Tworzenie modeli aplikacji
-      href: create-models-for-your-app.md
       items:
+        - name: Tworzenie modeli aplikacji
+          href: create-models-for-your-app.md
         - name: 'Diagramy zależności: Tematy pomocy'
           href: layer-diagrams-reference.md
         - name: 'Diagramy zależności: Wytyczne dotyczące'
           href: layer-diagrams-guidelines.md
         - name: Udostępnianie modeli i eksportowanie diagramów
-          href: share-models-and-exporting-diagrams.md
           items:
+            - name: Udostępnianie modeli i eksportowanie diagramów
+              href: share-models-and-exporting-diagrams.md
             - name: Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
               href: read-models-and-diagrams-in-other-visual-studio-editions.md
             - name: Eksportowanie diagramów jako obrazów
               href: export-diagrams-as-images.md
     - name: Używanie modeli w procesie tworzenia aplikacji
-      href: use-models-in-your-development-process.md
       items:
+        - name: Używanie modeli w procesie tworzenia aplikacji
+          href: use-models-in-your-development-process.md
         - name: Wymagania modelu użytkownika
           href: model-user-requirements.md
         - name: Modelowanie architektury aplikacji
@@ -58,15 +63,17 @@
         - name: Architektura Visual Studio — wskazówki dotyczące oprzyrządowania
           href: visual-studio-architecture-tooling-guidance.md
     - name: Weryfikacja systemu w czasie opracowywania
-      href: validate-your-system-during-development.md
       items:
+        - name: Weryfikacja systemu w czasie opracowywania
+          href: validate-your-system-during-development.md
         - name: Opracowywanie testów na podstawie modelu
           href: develop-tests-from-a-model.md
         - name: Weryfikacja kodu przy użyciu diagramów zależności
           href: validate-code-with-layer-diagrams.md
     - name: Rozszerzanie diagramów zależności
-      href: extend-layer-diagrams.md
       items:
+        - name: Rozszerzanie diagramów zależności
+          href: extend-layer-diagrams.md
         - name: Dodawanie poleceń i gestów do diagramów zależności
           href: add-commands-and-gestures-to-layer-diagrams.md
         - name: Dodawanie niestandardowej walidacji architektury do diagramów zależności
@@ -74,8 +81,9 @@
         - name: Dodawanie właściwości niestandardowych do diagramów zależności
           href: add-custom-properties-to-layer-diagrams.md
     - name: Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
-      href: modeling-sdk-for-visual-studio-domain-specific-languages.md
       items:
+        - name: Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
+          href: modeling-sdk-for-visual-studio-domain-specific-languages.md
         - name: Wprowadzenie do języków specyficznych dla domeny
           href: getting-started-with-domain-specific-languages.md
         - name: 'Opis modeli, klas i relacji'
@@ -83,11 +91,13 @@
         - name: 'Porady: definiowanie języka właściwego dla domeny'
           href: how-to-define-a-domain-specific-language.md
         - name: Dostosowywanie i rozszerzanie języka specyficznego dla domeny
-          href: customizing-and-extending-a-domain-specific-language.md
           items:
+            - name: Dostosowywanie i rozszerzanie języka specyficznego dla domeny
+              href: customizing-and-extending-a-domain-specific-language.md
             - name: Dostosowywanie prezentacji na diagramie
-              href: customizing-presentation-on-the-diagram.md
               items:
+                - name: Dostosowywanie prezentacji na diagramie
+                  href: customizing-presentation-on-the-diagram.md
                 - name: Definiowanie kształtów i łączników
                   href: defining-shapes-and-connectors.md
                 - name: 'Kontrolowanie koloru, stylu linii i innych właściwości kształtu'
@@ -113,8 +123,9 @@
             - name: Składnia ścieżki domeny
               href: domain-path-syntax.md
             - name: Właściwości elementów modelu
-              href: properties-of-model-elements.md
               items:
+                - name: Właściwości elementów modelu
+                  href: properties-of-model-elements.md
                 - name: Właściwości definicji DSL
                   href: properties-of-a-dsl-definition.md
                 - name: Właściwości klas domeny
@@ -144,8 +155,9 @@
             - name: Udostępnianie klas między językami DSL za pomocą biblioteki DSL
               href: sharing-classes-between-dsls-by-using-a-dsl-library.md
         - name: Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny
-          href: writing-code-to-customise-a-domain-specific-language.md
           items:
+            - name: Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny
+              href: writing-code-to-customise-a-domain-specific-language.md
             - name: Przesłanianie i rozszerzanie wygenerowanych klas
               href: overriding-and-extending-the-generated-classes.md
             - name: Nawigowanie po modelu i aktualizowanie go w kodzie programu
@@ -173,8 +185,9 @@
         - name: Sprawdzanie poprawności w języku specyficznym dla domeny
           href: validation-in-a-domain-specific-language.md
         - name: Pisanie poleceń i akcji użytkownika
-          href: writing-user-commands-and-actions.md
           items:
+            - name: Pisanie poleceń i akcji użytkownika
+              href: writing-user-commands-and-actions.md
             - name: Modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
               href: how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md
             - name: Dodawanie polecenia do menu skrótów
@@ -186,8 +199,9 @@
             - name: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego
               href: how-to-access-and-constrain-the-current-selection.md
         - name: Odpowiadanie na zmiany i ich propagowanie
-          href: responding-to-and-propagating-changes.md
           items:
+            - name: Odpowiadanie na zmiany i ich propagowanie
+              href: responding-to-and-propagating-changes.md
             - name: Obliczone i niestandardowe właściwości przechowywania
               href: calculated-and-custom-storage-properties.md
             - name: Obsługa zmian wartości właściwości domeny
@@ -199,8 +213,9 @@
             - name: 'Aktualizowanie kształtów i łączników, aby odzwierciedlały model'
               href: updating-shapes-and-connectors-to-reflect-the-model.md
         - name: Generowanie kodu z języka specyficznego dla domeny
-          href: generating-code-from-a-domain-specific-language.md
           items:
+            - name: Generowanie kodu z języka specyficznego dla domeny
+              href: generating-code-from-a-domain-specific-language.md
             - name: Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
               href: accessing-models-from-text-templates.md
             - name: Użycie rozszerzenia Visual Studio ModelBus w szablonie tekstu
@@ -214,8 +229,9 @@
         - name: Dostosowywanie przechowywania plików i serializacji XML
           href: customizing-file-storage-and-xml-serialization.md
         - name: Wdrażanie rozwiązań dla języka specyficznego dla domeny
-          href: deploying-domain-specific-language-solutions.md
           items:
+            - name: Wdrażanie rozwiązań dla języka specyficznego dla domeny
+              href: deploying-domain-specific-language-solutions.md
             - name: Wdrażanie pakietów MSI i VSIX języka DSL
               href: msi-and-vsix-deployment-of-a-dsl.md
             - name: Wiele języków DSL w jednym rozwiązaniu
@@ -227,8 +243,9 @@
         - name: Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF
           href: creating-a-wpf-based-domain-specific-language.md
         - name: Praca z rozwiązaniami dotyczącymi języka specyficznego dla domeny
-          href: working-with-domain-specific-language-solutions.md
           items:
+            - name: Praca z rozwiązaniami dotyczącymi języka specyficznego dla domeny
+              href: working-with-domain-specific-language-solutions.md
             - name: Języki specyficzne dla domeny — informacje
               href: about-domain-specific-languages.md
             - name: Przegląd narzędzi językowych właściwych dla domeny
@@ -254,11 +271,13 @@
         - name: Odwołania API do modelowania SDK dla Visual Studio
           href: api-reference-for-modeling-sdk-for-visual-studio.md
     - name: Generowanie kodu i szablony tekstowe T4
-      href: code-generation-and-t4-text-templates.md
       items:
+        - name: Generowanie kodu i szablony tekstowe T4
+          href: code-generation-and-t4-text-templates.md
         - name: Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
-          href: design-time-code-generation-by-using-t4-text-templates.md
           items:
+            - name: Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
+              href: design-time-code-generation-by-using-t4-text-templates.md
             - name: 'Przewodnik: Generowanie kodu przy użyciu szablonów tekstowych'
               href: walkthrough-generating-code-by-using-text-templates.md
             - name: Generowanie kodu w procesie kompilacji
@@ -270,11 +289,13 @@
         - name: Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
           href: run-time-text-generation-with-t4-text-templates.md
         - name: Pisanie szablonu tekstowego T4
-          href: writing-a-t4-text-template.md
           items:
+            - name: Pisanie szablonu tekstowego T4
+              href: writing-a-t4-text-template.md
             - name: Dyrektywy T4 dotyczące szablonu tekstowego
-              href: t4-text-template-directives.md
               items:
+                - name: Dyrektywy T4 dotyczące szablonu tekstowego
+                  href: t4-text-template-directives.md
                 - name: Dyrektywa T4 dotycząca szablonu
                   href: t4-template-directive.md
                 - name: Dyrektywa T4 dotycząca parametru
@@ -296,8 +317,9 @@
             - name: Dostęp do programu Visual Studio lub innych hostów z szablonu tekstowego
               href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
             - name: Korzystanie z sekwencji ucieczki w szablonach tekstowych
-              href: using-escape-sequences-in-text-templates.md
               items:
+                - name: Korzystanie z sekwencji ucieczki w szablonach tekstowych
+                  href: using-escape-sequences-in-text-templates.md
                 - name: Generowanie szablonów z szablonów przy użyciu sekwencji ucieczki
                   href: how-to-generate-templates-from-templates-by-using-escape-sequences.md
         - name: Debugowanie szablonu tekstowego T4
@@ -307,13 +329,15 @@
         - name: How to ... with — Szablony tekstowe
           href: how-to-dot-dot-dot-with-text-templates.md
         - name: Dostosowywanie przekształcenia tekstu T4
-          href: customizing-t4-text-transformation.md
           items:
+            - name: Dostosowywanie przekształcenia tekstu T4
+              href: customizing-t4-text-transformation.md
             - name: Proces transformacji szablonu tekstowego
               href: the-text-template-transformation-process.md
             - name: Tworzenie niestandardowych procesorów dyrektyw szablonów tekstowych T4
-              href: creating-custom-t4-text-template-directive-processors.md
               items:
+                - name: Tworzenie niestandardowych procesorów dyrektyw szablonów tekstowych T4
+                  href: creating-custom-t4-text-template-directive-processors.md
                 - name: Wdrażanie niestandardowego procesora dyrektywy
                   href: deploying-a-custom-directive-processor.md
                 - name: 'Przewodnik: Tworzenie niestandardowego procesora dyrektywy'
@@ -321,8 +345,9 @@
             - name: Wywoływanie przekształcenia tekstu w rozszerzeniu programu VS
               href: invoking-text-transformation-in-a-vs-extension.md
             - name: Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego
-              href: processing-text-templates-by-using-a-custom-host.md
               items:
+                - name: Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego
+                  href: processing-text-templates-by-using-a-custom-host.md
                 - name: 'Przewodnik: Tworzenie niestandardowego hosta szablonu tekstowego'
                   href: walkthrough-creating-a-custom-text-template-host.md
         - name: Wykaz interfejsów API dla szablonów tekstowych T4

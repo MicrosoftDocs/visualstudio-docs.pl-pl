@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3ed52e8be77e5f4dce081fc6a60ae22cecbb990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e401e009cd4119704e72dec09614ec013aa9eee0
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915199"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223552"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 Pobiera liczbę wartości ciągów dla określonej właściwości lub pola.
@@ -39,21 +42,21 @@ int GetValueDisplayStringCount (
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `displayKind`
+## <a name="parameters"></a>Parametry
+ `displayKind`\
 
  [in] Wartość z [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) wyliczenia.
 
- `propertyOrField`
+ `propertyOrField`\
 
  [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejs, który reprezentuje właściwość lub pole.
 
- `pcelt`
+ `pcelt`\
 
  [out] Zwraca liczbę ciągi wartości do wyświetlenia.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

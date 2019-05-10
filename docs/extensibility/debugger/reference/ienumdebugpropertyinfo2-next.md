@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1e87ad302cbd25fcda691b47372f4fbd5d1771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a866071b09c07f42d21bbf90de3bd6eda6717ab2
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866060"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223263"
 ---
 # <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
 Zwraca następny zestaw elementów z wyliczenia.
@@ -40,22 +43,22 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `celt`
+## <a name="parameters"></a>Parametry
+ `celt`\
 
  [in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
 
- `rgelt`
+ `rgelt`\
 
  [out w] Tablica [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) elementami do wypełnienia.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

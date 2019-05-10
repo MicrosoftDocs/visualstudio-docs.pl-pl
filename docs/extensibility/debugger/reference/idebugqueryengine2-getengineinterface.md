@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5ac40af5f508a00b010025f9851ee2a8933dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: af67f4589682cc3c0ecf42653374521c011115c2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869245"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457525"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 Pobiera interfejs aparatu (DE) niestandardowe debugowania.
@@ -36,8 +39,8 @@ int GetEngineInterface( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppUnk`
+## <a name="parameters"></a>Parametry
+ `ppUnk`\
 
  [out] Zwraca `IUnknown` obiekt reprezentuje aparat debugowania (DE) i może być odpytywany dla innych prawidłowe interfejsu skojarzonego z URZ (na przykład [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) lub [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
 
@@ -47,7 +50,7 @@ int GetEngineInterface( 
 ## <a name="remarks"></a>Uwagi
  Wynikowy interfejsu powinny stosowana z rozwagą, ponieważ wywołanie za pośrednictwem interfejsów pobierane z tej metody zmierzone przetwarzania Menedżer debugowania sesji i może spowodować SDM, jakim jest w niepoprawnym stanie lub generowanie błędów podczas debugowania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

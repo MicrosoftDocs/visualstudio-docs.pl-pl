@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6dbf712fc21338f8f5c4699ca2e11d5344dbad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915311"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224192"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Pobiera określoną liczbę bajtów z obiektu.
@@ -40,16 +43,16 @@ int GetData(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dataSize`
+## <a name="parameters"></a>Parametry
+ `dataSize`\
 
  [in] Liczba bajtów do pobrania ( `data` tablicy musi posiadać co najmniej tej liczby bajtów).
 
- `sizeGotten`
+ `sizeGotten`\
 
  [out] Zwraca liczbę bajtów, które rzeczywiście zostały pobrane.
 
- `data`
+ `data`\
 
  [out w] Tablica do wypełniona żądanych danych.
 
@@ -59,6 +62,6 @@ int GetData(
 ## <a name="remarks"></a>Uwagi
  Zalecane użycie tej metody jest do pobrania wszystkich bajtów danych do lokalnej tablicy, ponieważ nie istnieje żaden sposób na pominięcie nad bajtów w procesie pobierania. W tym przypadku parametr `dataSize` powinien mieć wartość zwracana przez [getsize —](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) metody.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

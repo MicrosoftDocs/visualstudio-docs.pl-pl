@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d917a3f33d0c4339420c048fe20184245bb8dac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a0f9097ae2db70f3743eb703bd6c654c4e464882
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868412"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224104"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Metoda wywoływana przez program obsługi zdarzeń, aby pobrać wyniki dotyczące procesu ładowania symboli.
@@ -40,19 +43,19 @@ int GetSymbolSearchInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pModule`
+## <a name="parameters"></a>Parametry
+ `pModule`\
 
  [out] Obiekt IDebugModule3 reprezentujący moduł, dla którego zostały załadowane symbole.
 
- `pbstrDebugMessage`
+ `pbstrDebugMessage`\
 
  [out w] Zwraca ciąg zawierający komunikaty o błędach z modułu. W przypadku braku błędów tego ciągu, po prostu będzie zawierać nazwę modułu, ale nigdy nie jest pusty.
 
 > [!NOTE]
 > [C++] `pbstrDebugMessage` nie może być `NULL` i musi być zwolniona przez `SysFreeString`.
 
- `pdwModuleInfoFlags`
+ `pdwModuleInfoFlags`\
 
  [out] Kombinacja flag z [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) Wyliczenie wskazujące, czy wszystkie symbole zostały załadowane.
 
@@ -62,7 +65,7 @@ int GetSymbolSearchInfo(
 ## <a name="remarks"></a>Uwagi
  Po odebraniu program obsługi [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) zdarzeń po zostanie podjęta próba, aby załadować symbole debugowania dla modułu, program obsługi może wywołać ta metoda do określenia wyników tego obciążenia.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
 - [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

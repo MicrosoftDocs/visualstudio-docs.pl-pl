@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976208"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461458"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Przewodnik: Korzystanie z pliku konfiguracji do określania źródła danych
 
@@ -62,16 +62,16 @@ Sprawdź *app.config* pliku. Zawiera on co najmniej deklaracji XML i elementu g�
 
 2. W ramach **configSections** elementu, Utwórz **sekcji** elementu.
 
-3. W **sekcji** elementu Dodawanie atrybutu o nazwie `name` i przypisz jej wartość `microsoft.visualstudio.testtools`. Dodaj inny atrybut o nazwie `type` i przypisz jej wartość `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. W **sekcji** elementu Dodawanie atrybutu o nazwie `name` i przypisz jej wartość `microsoft.visualstudio.testtools`. Dodaj inny atrybut o nazwie `type` i przypisz jej wartość `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 **Sekcji** element powinien wyglądać mniej więcej tak:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> Nazwa zestawu musi odpowiadać kompilacji programu Microsoft Visual Studio .NET Framework, którego używasz. Wybierz wersję odpowiadającą 9.0.0.0 korzystania z programu Visual Studio .NET Framework 3.5. Jeśli używasz programu Visual Studio .NET Framework 2.0, wybierz wersję odpowiadającą 8.0.0.0.
+> Nazwa zestawu musi odpowiadać kompilacji programu Microsoft Visual Studio .NET Framework, którego używasz.
 
 ## <a name="define-connection-strings"></a>Zdefiniuj parametry połączenia
 

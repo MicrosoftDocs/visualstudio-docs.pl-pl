@@ -1,26 +1,27 @@
 ---
 title: Jak używać platformy Boost.Test dla języka C++
-ms.date: 01/29/2018
+description: Użyj Boost.Test można utworzyć testów jednostkowych w programie Visual Studio.
+ms.date: 05/06/2019
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226102"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać platformy Boost.Test dla języka C++ w programie Visual Studio
 
-W **programu Visual Studio 2017 w wersji 15.5** i później, Boost.Test adapter testowy jest zintegrowana w środowisku IDE programu Visual Studio jako składnik **programowanie aplikacji klasycznych w języku C++** obciążenia.
+W programie Visual Studio 2017 i nowszych adapter testowy Boost.Test jest zintegrowana z programu Visual Studio IDE jako składnik **programowanie aplikacji klasycznych przy użyciu C++**  obciążenia.
 
 ![Rozszerzenia test Adapter for Boost.Test](media/cpp-boost-component.png)
 
-Jeśli nie masz **programowanie aplikacji klasycznych w języku C++** obciążenia zainstalowany, otwórz **Instalatora programu Visual Studio** i wybierz **Modyfikuj**. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj** przycisku.
+Jeśli nie masz **programowanie aplikacji klasycznych przy użyciu C++**  obciążenia zainstalowany, otwórz **Instalatora programu Visual Studio**. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj** przycisku.
 
 ## <a name="install-boost"></a>Zainstaluj Boost
 
@@ -48,7 +49,7 @@ Wymaga Boost.Test [Boost](http://www.boost.org/)! Jeśli nie masz zainstalowane 
 
 Szablon elementu korzysta z wariantu pojedynczego nagłówka Boost.Test, ale można zmodyfikować #include ścieżkę do użycia wariant biblioteki autonomicznych. Aby uzyskać więcej informacji, zobacz [Dodaj dyrektywy #include](#add-include-directives).
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Utwórz projekt testu (Visual Studio 2017 w wersji 15.5)
+## <a name="create-a-test-project"></a>Utwórz projekt testu
 
 W programie Visual Studio 2017 w wersji 15.5 dostępnych żadnych szablonów projektu lub elementu testowych wstępnie skonfigurowanych dla platformy Boost.Test. W związku z tym należy utworzyć i skonfigurować projekt aplikacji konsoli w celu przechowywania testów.
 

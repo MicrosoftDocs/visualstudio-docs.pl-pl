@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0aeb888b2cc81dac6157ef0944703227799e61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868757"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458535"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Pobiera opis ramki stosu.
@@ -40,23 +43,23 @@ int GetInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwFieldSpec`
+## <a name="parameters"></a>Parametry
+ `dwFieldSpec`\
 
  [in] Kombinacja flag z [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) wyliczenie, które określa, które pola `pFrameInfo` parametru są wypełniane.
 
- `nRadix`
+ `nRadix`\
 
  [in] Podstawy, który ma być używany w formatowaniu wszelkie dane liczbowe.
 
- `pFrameInfo`
+ `pFrameInfo`\
 
  [out] A [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strukturę, która jest wypełniane opis ramki stosu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

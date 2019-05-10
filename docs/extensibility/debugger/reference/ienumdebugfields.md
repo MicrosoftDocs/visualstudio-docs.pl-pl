@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f557b722a36665b20f5e06093027f8085a014ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cdb01a98a2cb2b2038366f0968c3b3532bd9ffc
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914714"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225587"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Ten interfejs reprezentuje kolekcję obiektów Implementowanie [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu.
@@ -54,7 +54,7 @@ IEnumDebugFields : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)

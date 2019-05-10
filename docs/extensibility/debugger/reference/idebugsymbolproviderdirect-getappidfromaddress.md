@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c0c2781038eae4f1a896b8d6627edb2969e35ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cb90dbb44b274e84c7cc22d09249b26b6ee491f1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868398"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458274"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 Pobiera identyfikator domeny aplikacji, mając adres debugowania.
@@ -37,17 +40,17 @@ int GetAppIDFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pAddress`
+## <a name="parameters"></a>Parametry
+ `pAddress`\
 
  [in] Debugowanie adres, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
 
- `pAppID`
+ `pAppID`\
 
  [out] Identyfikator domeny aplikacji.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

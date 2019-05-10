@@ -9,8 +9,9 @@
 - name: Dokument dziennika grafiki
   href: graphics-log-document.md
 - name: Analiza ramek grafiki
-  href: graphics-frame-analysis.md
   items:
+    - name: Analiza ramek grafiki
+      href: graphics-frame-analysis.md
     - name: Wariant rozmiaru 1x1 okienka ekranu
       href: 1x1-viewport-size-variant.md
     - name: Warianty 0x-2x-4x MSAA
@@ -46,8 +47,9 @@
 - name: Narzędzie wiersza polecenia do przechwytywania
   href: command-line-capture-tool.md
 - name: Przykłady diagnostyki grafiki
-  href: graphics-diagnostics-examples.md
   items:
+    - name: Przykłady diagnostyki grafiki
+      href: graphics-diagnostics-examples.md
     - name: 'Przewodnik: Przechwytywanie informacji graficznych'
       href: walkthrough-capturing-graphics-information.md
     - name: 'Przewodnik: programowe przechwytywanie informacji graficznych'
@@ -65,11 +67,13 @@
     - name: 'Instrukcje: zmiana maszyny odtwarzania diagnostyki grafiki'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Odwołanie (przechwycenie programowe)
-  href: reference-programmatic-capture.md
   items:
+    - name: Odwołanie (przechwycenie programowe)
+      href: reference-programmatic-capture.md
     - name: VsgDbg — Klasa
-      href: vsgdbg-class.md
       items:
+        - name: VsgDbg — Klasa
+          href: vsgdbg-class.md
         - name: 'VsgDbg::VsgDbg (Konstruktor)'
           href: vsgdbg-vsgdbg-constructor.md
         - name: 'VsgDbg::~VsgDbg (Destruktor)'

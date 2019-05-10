@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab72e7cc8d37fc9524913f692fca65ebcd0bbf6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aabff099408be8dcaceb7837208ce300be2c2d3b
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867514"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223380"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 Zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.
@@ -36,8 +39,8 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppEnum`
+## <a name="parameters"></a>Parametry
+ `ppEnum`\
 
  [out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
 
@@ -47,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>Uwagi
  Kopię wyliczenia ma ten sam stan, co oryginalny w czasie, którego ta metoda jest wywoływana. Jednak stany kopiowania i oryginalne są niezależne i można zmieniać indywidualnie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

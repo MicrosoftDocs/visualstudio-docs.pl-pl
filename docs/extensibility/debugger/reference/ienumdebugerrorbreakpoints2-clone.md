@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce1b25c032dcdd7b2b9d1b2908904d1eaee6cd9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6031eaad34e38c6033de9b36c208c7dabddf6ce3
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867293"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226608"
 ---
 # <a name="ienumdebugerrorbreakpoints2clone"></a>IEnumDebugErrorBreakpoints2::Clone
 Zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.
@@ -36,8 +39,8 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppEnum`
+## <a name="parameters"></a>Parametry
+ `ppEnum`\
 
  [out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
 
@@ -47,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>Uwagi
  Kopię wyliczenia ma ten sam stan, co oryginalny w czasie, którego ta metoda jest wywoływana. Jednak stany kopiowania i oryginalne są niezależne i można zmieniać indywidualnie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

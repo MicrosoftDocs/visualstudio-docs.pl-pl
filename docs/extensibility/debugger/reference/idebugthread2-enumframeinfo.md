@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 584c7ba10ac9eb05268f50ecaffa8c47818f7977
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 466d50f81fe73e0d67e01142568d20cd757ebeea
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915548"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225976"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Pobiera listę ramek stosu dla tego wątku.
@@ -40,16 +43,16 @@ int EnumFrameInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwFieldSpec`
+## <a name="parameters"></a>Parametry
+ `dwFieldSpec`\
 
  [in] Kombinacja flag z [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) wyliczenie, które określa, które pola [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury są do wypełniania. Określ `FIF_FUNCNAME_FORMAT` flagi do formatowania nazwy funkcji w jeden ciąg.
 
- `nRadix`
+ `nRadix`\
 
  [in] Podstawy używanych w formatowaniu wartości liczbowych informacji w moduł wyliczający.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Zwraca [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) obiekt, który zawiera listę [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury opisujące ramki stosu.
 
@@ -59,7 +62,7 @@ int EnumFrameInfo ( 
 ## <a name="remarks"></a>Uwagi
  Ramki dla wątku są wyliczane w kolejności, przy użyciu bieżącej ramki wyliczane najpierw i najstarsze ramki wyliczane ostatnio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

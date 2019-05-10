@@ -10,12 +10,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 400c259cf7aac5b6f3ea4a6c196ebaa77e29289b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+f1_keywords:
+- CA2300
+- DoNotUseInsecureDeserializerBinaryFormatter
+ms.openlocfilehash: 13b50e9eba49ff3457aff41d59448f1a0dfc2ea7
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545579"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083886"
 ---
 # <a name="ca2300-do-not-use-insecure-deserializer-binaryformatter"></a>CA2300: Nie używaj niezabezpieczonego deserializatora BinaryFormatter
 
@@ -43,10 +46,10 @@ Ta reguła umożliwia znalezienie <xref:System.Runtime.Serialization.Formatters.
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Nigdy nie używaj <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Jeśli musisz użyć typu program rozpoznawania nazw, ograniczyć typy po deserializacji do oczekiwanej listy.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET — Użyj TypeNameHandling.None. Jeśli musisz użyć innej wartości dla TypeNameHandling, ograniczyć po deserializacji typów do oczekiwanej listy przy użyciu niestandardowych ISerializationBinder.
+  - Newtonsoft Json.NET — Użyj TypeNameHandling.None. Jeśli musisz użyć innej wartości dla TypeNameHandling, ograniczyć po deserializacji typów do oczekiwanej listy przy użyciu niestandardowych ISerializationBinder.
   - Protocol Buffers
-- Należy odporne serializowanych danych. Po serializacji podpisać kryptograficznie serializowanych danych. Przed deserializacji należy zweryfikować podpisu kryptograficznego. Ochrona klucza kryptograficznego zostały ujawnione i projektowania dla wymiany kluczy.
-- Ograniczenia typów po deserializacji. Implementowanie niestandardowego <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Przed deserializacji za pomocą <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>ustaw <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> właściwości wystąpienia niestandardowego <xref:System.Runtime.Serialization.SerializationBinder>. W zgodnym z przesłoniętą <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metody, jeśli typ jest nieoczekiwany następnie zgłoszenie wyjątku.
+- Należy odporne serializowanych danych. Po serializacji podpisać kryptograficznie serializowanych danych. Przed deserializacji należy zweryfikować podpisu kryptograficznego. Ochrona klucza kryptograficznego zostały ujawnione i projektowanie pod kątem wymiany kluczy.
+- Ograniczenia typów po deserializacji. Implementowanie niestandardowego <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Przed deserializacji za pomocą <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>ustaw <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> właściwości wystąpienia niestandardowego <xref:System.Runtime.Serialization.SerializationBinder>. W zgodnym z przesłoniętą <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metody, jeśli typ jest nieoczekiwana i zgłosić wyjątek.
 - Można ograniczyć typy po deserializacji, możesz chcieć wyłączyć tę regułę, a następnie włącz reguły [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) i [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md). Reguły [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) i [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) pomoc, aby upewnić się, że <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> właściwość ma zawsze wartość przed deserializacji.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia

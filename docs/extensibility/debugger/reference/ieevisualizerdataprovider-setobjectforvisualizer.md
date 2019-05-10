@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a55328c4148aa911d86b8f2daf05ba84a50ff444
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223940"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Ta metoda zmienia obiekt, który reprezentuje wizualizatora.
@@ -40,16 +43,16 @@ int SetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pNewObject`
+## <a name="parameters"></a>Parametry
+ `pNewObject`\
 
  [in] Obiekt, który można ustawić.
 
- `error`
+ `error`\
 
  [out] Jeśli wystąpił błąd podczas ustawiania obiektu, ten ciąg zawiera komunikat o błędzie.
 
- `pException`
+ `pException`\
 
  [out] Jeśli wystąpił błąd, ten obiekt przechowuje informacje o wyjątku.
 
@@ -59,6 +62,6 @@ int SetObjectForVisualizer(
 ## <a name="remarks"></a>Uwagi
  Jest implementujący, aby określić, jak informacje o błędzie jest zwracana. Jednak jest możliwe, że niektóre obiekty wywołujące mogą tylko wygląd, aby zobaczyć, jeśli obiekt wyjątku został zwrócony wiedzieć, był błąd, więc ta metoda zawsze powinna zwracać obiekt wyjątku, jeśli wystąpił błąd. W przypadku, gdy obiekt wywołujący chce mieć należy również dostarczyć ciąg błędu z niego korzystać.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

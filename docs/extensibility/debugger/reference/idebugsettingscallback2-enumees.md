@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d64a568f4df1e4e1705e90ba186287c0b96a85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916353"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457610"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Wylicza ewaluatory wyrażeń dostępne, biorąc pod uwagę identyfikatorów języka i dostawcy.
@@ -40,25 +43,25 @@ public int EnumEEs(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `celtBuffer`
+## <a name="parameters"></a>Parametry
+ `celtBuffer`\
 
  [in] Liczba elementów w `pceltEEs` buforu.
 
- `rgguidLang`
+ `rgguidLang`\
 
  [out w] Unikatowy identyfikator dla języka programowania.
 
- `rgguidVendor`
+ `rgguidVendor`\
 
  [out w] Unikatowy identyfikator dla dostawcy.
 
- `pceltEEs`
+ `pceltEEs`\
 
  [out w] Tablica ewaluatory wyrażeń.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

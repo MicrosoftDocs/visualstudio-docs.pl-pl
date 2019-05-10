@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824010"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476598"
 ---
-# <a name="responding-to-and-propagating-changes"></a>Odpowiadanie na zmiany i propagowanie zmian
+# <a name="respond-to-and-propagate-changes"></a>Odpowiadanie na zmiany i ich propagowanie
+
 Gdy element zostanie utworzony, usunięty lub zaktualizowany, można napisać kod, który propaguje zmiany z innymi częściami modelu lub zasobów zewnętrznych, takich jak pliki, bazy danych lub innych składników.
 
-## <a name="in-this-section"></a>W tej sekcji
- Program narzędziowy należy wziąć pod uwagę te techniki w następującej kolejności:
+## <a name="reference"></a>Tematy pomocy
+
+Program narzędziowy należy wziąć pod uwagę te techniki w następującej kolejności:
 
 |Techniki|Scenariusze|Więcej informacji|
 |-|-|-|
@@ -34,12 +36,13 @@ Gdy element zostanie utworzony, usunięty lub zaktualizowany, można napisać ko
 |Wybór zasad|Reguły wyboru w szczególności ograniczenie, co użytkownik może wybrać.|[Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Wskazuje stany elementów modelu przy użyciu funkcji kształtów i łączników, takich jak w tle, strzałek, kolor i szerokości linii i stylu.|[Aktualizowanie kształtów i łączników, aby odzwierciedlały model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**Porównanie reguł i zdarzenia Store**
- Zgłaszających zmiany, reguł i zdarzenia są uruchamiane po wystąpieniu zmian w modelu.
+## <a name="compare-rules-and-store-events"></a>Porównaj reguł i przechowywania zdarzeń
 
- Reguły są zazwyczaj stosowane w transakcji end zostało zmienione, a zdarzenia są stosowane po zatwierdzeniu zmian w ramach transakcji.
+Zgłaszających zmiany, reguł i zdarzenia są uruchamiane po wystąpieniu zmian w modelu.
 
- Używać zdarzeń store można zsynchronizować modelu obiektów poza Store i reguł do zapewniania spójności w ramach Store.
+Reguły są zazwyczaj stosowane w transakcji end zostało zmienione, a zdarzenia są stosowane po zatwierdzeniu zmian w ramach transakcji.
+
+Używać zdarzeń store można zsynchronizować modelu obiektów poza Store i reguł do zapewniania spójności w ramach Store.
 
 - **Tworzenie niestandardowych reguł** Tworzenie niestandardowej reguły jako pochodne klasy abstrakcyjnej reguły. Musi również powiadomić framework o reguły niestandardowej. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
@@ -49,7 +52,7 @@ Gdy element zostanie utworzony, usunięty lub zaktualizowany, można napisać ko
 
 - **Przekazywanie argumentów zdarzeń do zasad i zdarzenia** obu zdarzeń, a zasady są przekazywane `EventArgs` parametr, który zawiera informacje o tym, jak model został zmieniony.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

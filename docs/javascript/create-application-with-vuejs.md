@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960636"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226043"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzia Node.js dla programu Visual Studio
 
@@ -71,10 +71,10 @@ W tym przykładzie należy użyć pustą aplikację ASP.NET Core (C#). Możesz z
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, następnie wybierz **Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core**. W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, następnie wybierz **Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core**. W oknie dialogowym wpisz nazwę **aplikację kliencką**, a następnie wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **Visual C#** , następnie wybierz **Web**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**, następnie wybierz **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **Visual C#** , następnie wybierz **Web**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**, wpisz nazwę **aplikację kliencką**, a następnie wybierz **OK**.
     ::: moniker-end
 
     Jeśli nie widzisz **aplikacji sieci Web programu ASP.NET Core** szablonu projektu należy zainstalować **ASP.NET i tworzenie aplikacji internetowych** obciążenia i. **.NET Core** pakietu roboczego programowanie na pierwszym. Aby zainstalować workload(s), kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe (wybierz **pliku**  >  **Nowe** > **projektu**). Uruchamia Instalatora programu Visual Studio. Wybierz wymagane obciążenia.
@@ -100,14 +100,14 @@ Aby zainstalować moduł npm vue — interfejs wiersza polecenia, otwórz wiersz
 
 1. Przejdź do wiersza polecenia i zmień bieżący katalog na folder główny projektu.
 
-1. Typ `vue init webpack ClientApp` i wykonaj kroki po wyświetleniu monitu o odpowiedzieć dodatkowe pytania.
+1. Typ `vue init webpack client-app` i wykonaj kroki po wyświetleniu monitu o odpowiedzieć dodatkowe pytania.
 
     > [!NOTE]
     > Aby uzyskać *.vue* plików, należy użyć WebPack lub podobne struktury przy użyciu modułu ładującego, aby wykonać konwersję. TypeScript i programu Visual Studio nie wiedzieć, jak skompilować *.vue* plików. Dotyczy to także tworzenie pakietów; TypeScript nie wie, jak konwertować ES2015 modułów (oznacza to, że `import` i `export` instrukcji) do pojedynczego final *js* plik do załadowania w przeglądarce. Ponownie WebPack jest najlepszym wyborem. Można dostarczać ten proces z poziomu programu Visual Studio, korzystając z programu MSBuild, należy uruchomić z szablonu programu Visual Studio. Obecnie nie ma ASP.NET szablonu dla Vue.js rozwoju w pakiecie.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Modyfikowanie konfiguracji webpack do utworzonych plików wyjściowych do wwwroot
 
-* Otwórz plik *./ClientApp/config/index.js*i zmień `build.index` i `build.assetsRoot` wwwroot ścieżki:
+* Otwórz plik *./client-app/config/index.js*i zmień `build.index` i `build.assetsRoot` wwwroot ścieżki:
 
     ```js
     // Template for index.html
@@ -117,15 +117,15 @@ Aby zainstalować moduł npm vue — interfejs wiersza polecenia, otwórz wiersz
     assetsRoot: path.resolve(__dirname, '../../wwwroot'),
     ```
 
-#### <a name="indicate-the-project-to-build-the-clientapp-each-time-that-a-build-is-triggered"></a>Projekt do kompilacji ClientApp wskazują za każdym razem, kompilacja zostaje wyzwolona
+#### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Wskazuje projekt, aby utworzyć aplikację klienta, za każdym razem, kompilacja zostaje wyzwolona
 
 1. W programie Visual Studio, przejdź do **projektu** > **właściwości** > **zdarzenia kompilacji**.
 
-1. Na **wiersz polecenia zdarzenia sprzed kompilacji**, typ `npm --prefix ./ClientApp run build`.
+1. Na **wiersz polecenia zdarzenia sprzed kompilacji**, typ `npm --prefix ./client-app run build`.
 
 #### <a name="configure-webpacks-output-module-names"></a>Konfigurowanie nazwy modułów dane wyjściowe webpack firmy
 
-* Otwórz plik *./ClientApp/build/webpack.base.conf.js*i dodaj następujące właściwości dla właściwości danych wyjściowych:
+* Otwórz plik *./client-app/build/webpack.base.conf.js*i dodaj następujące właściwości dla właściwości danych wyjściowych:
 
     ```js
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
@@ -138,7 +138,7 @@ Te kroki wymagają vue-cli 3.0, która jest obecnie dostępna w wersji beta.
 
 1. Przejdź do wiersza polecenia i zmień bieżący katalog na folder główny projektu.
 
-1. Typ `vue create ClientApp`, a następnie wybierz **ręcznie wybrać funkcje**.
+1. Typ `vue create client-app`, a następnie wybierz **ręcznie wybrać funkcje**.
 
 1. Wybierz **Typescript**, a następnie wybierz inne żądane opcje.
 
@@ -146,11 +146,11 @@ Te kroki wymagają vue-cli 3.0, która jest obecnie dostępna w wersji beta.
 
 #### <a name="configure-a-vuejs-project-for-typescript"></a>Konfigurowanie projektu Vue.js dla TypeScript
 
-1. Otwórz plik *./ClientApp/tsconfig.json* i Dodaj `noEmit:true` w opcjach kompilatora.
+1. Otwórz plik *./client-app/tsconfig.json* i Dodaj `noEmit:true` w opcjach kompilatora.
 
     To ustawienie pozwala uniknąć zaśmiecania projektu za każdym razem, gdy kompilujesz w programie Visual Studio.
 
-1. Następnie należy utworzyć *vue.config.js* w pliku *./ClientApp/* i Dodaj następujący kod.
+1. Następnie należy utworzyć *vue.config.js* w pliku *./client-app/* i Dodaj następujący kod.
 
     ```js
     module.exports = {
@@ -169,7 +169,7 @@ Te kroki wymagają vue-cli 3.0, która jest obecnie dostępna w wersji beta.
 
 #### <a name="build-with-vue-cli-30"></a>Tworzenie za pomocą vue-cli 3.0
 
-Wystąpił nieznany problem z vue — interfejs wiersza polecenia 3.0 zapobiega Automatyzowanie procesu kompilacji. Za każdym razem, spróbuj odświeżyć folderu wwwroot, musisz uruchomić polecenie `npm run build` w folderze ClientApp.
+Wystąpił nieznany problem z vue — interfejs wiersza polecenia 3.0 zapobiega Automatyzowanie procesu kompilacji. Za każdym razem, spróbuj odświeżyć folderu wwwroot, musisz uruchomić polecenie `npm run build` w folderze aplikacji klienckiej.
 
 ## <a name="limitations"></a>Ograniczenia
 
@@ -179,7 +179,7 @@ Wystąpił nieznany problem z vue — interfejs wiersza polecenia 3.0 zapobiega 
 * TypeScript nie rozpoznaje *.vue* pliki modułów. Potrzebujesz pliku, który zawiera kod, takich jak co mówić TypeScript *.vue* wyglądać plików (szablon vue-cli 3.0 zawiera już ten plik).
 
     ```js
-    // ./ClientApp/vue-shims.d.ts
+    // ./client-app/vue-shims.d.ts
     declare module "*.vue" {
         import Vue from "vue";
         export default Vue;

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74604e0b3446e33962c6a8e69a69bfc400f0e3e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2789601c6fd3c10fe1fa11609eaadb7febbd26c1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916700"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457758"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Ten interfejs zarejestrowanych umożliwia debugowania sesji manager (SDM), aby uzyskać informacje na temat programów, które "opublikowano" za pośrednictwem [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfejsu.
@@ -82,7 +82,7 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [Pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 4b03ccddadf954b8430b7ad9b5a4ed765fccc3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe363e8f78cba9fa46f3634e59beb22e523ddfa
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825013"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084045"
 ---
 # <a name="container-tools-in-visual-studio"></a>Narzędzia kontenerów w programie Visual Studio
 
@@ -25,7 +25,7 @@ Narzędzi dostępnych w programie Visual Studio do programowania z użyciem kont
 
 ## <a name="docker-support-in-visual-studio"></a>Obsługę platformy docker w programie Visual Studio
 
-Obsługę platformy docker jest dostępna dla niektórych typach projektów .NET.  Jest ona dostępna dla projektów programu ASP.NET, projektów ASP.NET Core i projektach konsoli .NET Core i .NET Framework.
+Obsługę platformy docker jest dostępna dla projektów programu ASP.NET, projektów ASP.NET Core i projektach konsoli .NET Core i .NET Framework.
 
 Obsługa platformy Docker w programie Visual Studio został zmieniony w liczbie wersjach w odpowiedzi na potrzeby klientów. Istnieją dwa poziomy obsługę platformy Docker, które można dodać do projektu i obsługiwane opcje zależne od typu projektu i wersji programu Visual Studio. W niektórych typach projektów obsługiwanych Jeśli Ty chcesz po prostu kontener dla jednego projektu, bez używania aranżacji, możesz tworzyć, dodając obsługę platformy Docker.  Następny poziom to obsługa aranżacji kontenerów, który dodaje pliki pomocnicze odpowiednie dla danego programu orchestrator, wybranych.  
 
@@ -46,13 +46,9 @@ Za pomocą programu Visual Studio 2019 r można użyć narzędzia Docker Compose
 > Jeśli używasz pełnej szablonu Projekt konsoli .NET Framework, po dodaniu obsługi programu Docker obsługę organizowanie za pomocą narzędzia Docker Compose jest automatycznie dodawany.
 ::: moniker-end
 
-**Dodaj > obsługę platformy Docker** i **Dodaj > Obsługa Orkiestratora kontenerów** polecenia znajdują się w menu kliknij prawym przyciskiem myszy (lub menu kontekstowego) węzeł projektu dla projektu platformy ASP.NET Core w  **Eksplorator rozwiązań**, jak pokazano na poniższym zrzucie ekranu:
+### <a name="adding-docker-support"></a>Dodawanie obsługi platformy Docker
 
-![Dodaj opcję menu obsługę platformy Docker w programie Visual Studio](./media/overview/add-docker-support-menu.png)
-
-### <a name="adding-docker-support-without-orchestration"></a>Dodawanie obsługi platformy Docker (bez aranżacji)
-
-Obsługę platformy Docker można dodać do istniejącego projektu, wybierając **Dodaj** > **obsługę platformy Docker** w **Eksploratora rozwiązań**. Można również włączyć obsługę platformy Docker podczas tworzenia projektu, wybierając **włączyć obsługę platformy Docker** podczas tworzenia nowego projektu, jak pokazano na poniższym zrzucie ekranu:
+Aby umożliwić obsługę platformy Docker podczas tworzenia projektu, wybierając **włączyć obsługę platformy Docker** podczas tworzenia nowego projektu, jak pokazano na poniższym zrzucie ekranu:
 
 ::: moniker range="vs-2017"
 ![Włącz obsługę platformy Docker dla nowej aplikacji sieci web platformy ASP.NET Core w programie Visual Studio](./media/overview/enable-docker-support-visual-studio.png)
@@ -60,6 +56,13 @@ Obsługę platformy Docker można dodać do istniejącego projektu, wybierając 
 ::: moniker range=">=vs-2019"
 ![Włącz obsługę platformy Docker dla nowej aplikacji sieci web platformy ASP.NET Core w programie Visual Studio](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
 ::: moniker-end
+
+> [!NOTE]
+> Dla projektów programu .NET Framework (nie .NET Core) dostępne są tylko Windows kontenery.
+
+Obsługę platformy Docker można dodać do istniejącego projektu, wybierając **Dodaj** > **obsługę platformy Docker** w **Eksploratora rozwiązań**. **Dodaj > obsługę platformy Docker** i **Dodaj > Obsługa Orkiestratora kontenerów** polecenia znajdują się w menu kliknij prawym przyciskiem myszy (lub menu kontekstowego) węzeł projektu dla projektu platformy ASP.NET Core w  **Eksplorator rozwiązań**, jak pokazano na poniższym zrzucie ekranu:
+
+![Dodaj opcję menu obsługę platformy Docker w programie Visual Studio](./media/overview/add-docker-support-menu.png)
 
 Podczas dodawania lub Włącz obsługę platformy Docker programu Visual Studio dodaje następujące do projektu:
 

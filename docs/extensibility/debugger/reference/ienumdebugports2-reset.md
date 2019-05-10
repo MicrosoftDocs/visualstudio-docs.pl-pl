@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a527065b84794dd4401fe29ed15d4522b5d330c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1deafbb5f8c6a3ba6f6881fb2cc2903a40548bd3
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225516"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
 Resetuje wyliczenia do pierwszego elementu.
@@ -40,5 +43,5 @@ int Reset();
 ## <a name="remarks"></a>Uwagi
  Po ta metoda jest wywoływana, następnym wywołaniu [dalej](../../../extensibility/debugger/reference/ienumdebugports2-next.md) metoda zwraca pierwszy element wyliczenia.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

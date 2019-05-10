@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 543d05e9d0917305f9f898cdae8e7add2c5949fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 64a05032118588679efcc455953b76227a973319
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867837"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225867"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 Ta metoda zwraca serwer proxy dla obiektu właściwości.
@@ -38,12 +41,12 @@ int GetPropertyProxy(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwID`
+## <a name="parameters"></a>Parametry
+ `dwID`\
 
  [in] Identyfikator właściwości proxy do pobrania.
 
- `proxy`
+ `proxy`\
 
  [out] Żądany proxy zaimplementowane w [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfejsu.
 
@@ -53,7 +56,7 @@ int GetPropertyProxy(
 ## <a name="remarks"></a>Uwagi
 - [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) przekazuje żądanie do tej metody w ramach wsparcia dla wizualizatorów typu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)

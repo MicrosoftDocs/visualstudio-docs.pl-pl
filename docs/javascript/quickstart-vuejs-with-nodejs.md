@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840620"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226501"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Szybki start: Utwórz swoją pierwszą aplikację Vue.js przy użyciu programu Visual Studio
 
@@ -59,12 +59,12 @@ Najpierw utworzysz Vue.js projektu aplikacji sieci web.
 1. Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **podstawowe Vue.js**, następnie wybierz **podstawowa Vue.js aplikacja sieci Web** (języka JavaScript lub TypeScript). W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **podstawowe Vue.js**, następnie wybierz **podstawowa Vue.js aplikacja sieci Web** (języka JavaScript lub TypeScript). W oknie dialogowym wpisz nazwę **basic vuejs**, a następnie wybierz **Utwórz**.
 
     ![Szablon VUE.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **JavaScript** lub **TypeScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **podstawowa Vue.js aplikacja sieci Web**, następnie wybierz **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **JavaScript** lub **TypeScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **podstawowa Vue.js aplikacja sieci Web**, wpisz nazwę **basic vuejs**, a następnie wybierz **OK**.
 
     ![Szablon VUE.js](../javascript/media/vuejs-template.png)
     ::: moniker-end

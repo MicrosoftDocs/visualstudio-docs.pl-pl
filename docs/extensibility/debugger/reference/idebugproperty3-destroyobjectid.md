@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 540427286306999b25fba99a2efbd17013740d90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3375ce22a9b66077d635acd9a5a98f2640662467
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869746"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457678"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 Niszczy Unikatowy identyfikator skojarzony z tą właściwością wskazujący, że obiekt wywołujący nie jest już dba do identyfikowania tej właściwości, które jednoznacznie ze wszystkich innych właściwości.
@@ -42,6 +45,6 @@ int DestroyObjectID();
 
  Unikatowe identyfikatory są tworzone za pomocą wywołania [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) metody, gdy obiekt wywołujący chce upewnić się, ta właściwość jest unikatowo identyfikowana przez inne właściwości.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

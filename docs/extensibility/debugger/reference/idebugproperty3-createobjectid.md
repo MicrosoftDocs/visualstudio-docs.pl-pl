@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf17196b4dae8642a81664dd339eaa78c2d2d8e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c511922be4a1ff353d4efde01a74fc43e233cba0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412744"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458851"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 Tworzy unikatowy identyfikator dla tej właściwości, aby upewnić się, że jest ona unikatowa wśród wszystkich innych właściwości.
@@ -45,6 +48,6 @@ int CreateObjectID();
 > [!NOTE]
 > Nie istnieje metoda do pobrania to unikatowy identyfikator, więc DE można zrobić, niezależnie od rodzaju chce uzyskać unikatowe identyfikatory podczas `CreateObjectID` metoda jest wywoływana.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

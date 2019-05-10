@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbe3444d5bcdb31a4ef7619b123041f459a09852
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0254322ecccd3fb8a79ee30a10434ff130c068c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916412"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458737"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 Ten interfejs umożliwia sesji debugowania manager (SDM) pobrać interfejs, który reprezentuje aparat debugowania (DE).
@@ -51,7 +51,7 @@ IDebugQueryEngine2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -9,16 +9,14 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: 5cc386ae0d9a9d19acf3590786773e9efbda2725
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e8c57bfbfcf63c845c8d8eac3560e2327a99d4d
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819998"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084065"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
-
-## <a name="overview"></a>Omówienie
 
 Program Visual Studio zapewnia spójny sposób programowania w kontenerze platformy Docker i zweryfikowania aplikacji w środowisku lokalnym.
 Nie trzeba ponownie uruchomić kontener każdorazowo, gdy wprowadzeniu zmiana w kodzie.
@@ -46,7 +44,9 @@ Możesz użyć [przybornika Docker](https://www.docker.com/products/docker-toolb
 
 Jeśli używasz przybornika platformy Docker, należy skonfigurować klienta platformy Docker.
 
-## <a name="1-create-a-web-app"></a>1. tworzenie aplikacji internetowej
+Kontenery platformy docker są dostępne dla projektów .NET Framework i .NET Core. Przyjrzyjmy się dwa przykładowe najpierw aplikację sieci web platformy .NET Core i drugie, aplikacji konsoli .NET Framework.
+
+## <a name="create-a-web-app"></a>tworzenie aplikacji internetowej
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -55,7 +55,7 @@ Jeśli używasz przybornika platformy Docker, należy skonfigurować klienta pla
 [! OBEJMUJĄ [utworzyć aspnet5-aplikacji-2019 r](../azure/includes/vs-2019/create-aspnet5-app-2019.md)
 ::: moniker-end
 
-## <a name="2-edit-your-code-and-refresh"></a>2. Edytuj kod i odświeżanie
+### <a name="edit-your-code-and-refresh"></a>Edytuj kod i odświeżanie
 
 Możesz szybko iterować zmiany, możesz uruchomić aplikację w kontenerze i kontynuować wprowadzanie zmian, ich wyświetlania, jak w przypadku usługi IIS Express.
 
@@ -80,7 +80,7 @@ Możesz szybko iterować zmiany, możesz uruchomić aplikację w kontenerze i ko
 
 6. Zmiany zostały zastosowane!
 
-## <a name="3-debug-with-breakpoints"></a>3. Debugować z punktami przerwania
+### <a name="debug-with-breakpoints"></a>Debugować z punktami przerwania
 
 Często zmian będzie potrzebna jest dalsza inspekcji, korzystając z funkcji debugowania programu Visual Studio.
 

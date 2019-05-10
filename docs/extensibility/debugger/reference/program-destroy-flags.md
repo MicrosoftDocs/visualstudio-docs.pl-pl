@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e232570edd4fcca95089324e30f3cbd725bdb9f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4958a1ee7b53fc975e126174fa6bd3f02daaa9ab
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865076"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460874"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 Wylicza prawidłowe wartości program zniszczyć flag.
@@ -37,7 +40,7 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 };
 ```
 
-## <a name="terms"></a>Warunki
+## <a name="fields"></a>Pola
  Zniszcz PROGRAM_DESTROY_CONTINUE_DEBUGGING program, ale nadal można debugować.
 
 ## <a name="remarks"></a>Uwagi
@@ -50,6 +53,6 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)

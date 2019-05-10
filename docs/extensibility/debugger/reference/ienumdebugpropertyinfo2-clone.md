@@ -1,52 +1,54 @@
 ---
 title: IEnumDebugPropertyInfo2::Clone | Dokumentacja firmy Microsoft
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumDebugPropertyInfo2::Clone
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Clone
 ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
-caps.latest.revision: 10
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5c6b8587f49d49c041adb818deebdbcedd9e86b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ebdd5d34624e2edcfbef8820b57c266effa9fc2d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866021"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223511"
 ---
 # <a name="ienumdebugpropertyinfo2clone"></a>IEnumDebugPropertyInfo2::Clone
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.
 
-Zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp#  
-HRESULT Clone(  
-   IEnumDebugPropertyInfo2** ppEnum  
-);  
-```  
-  
-```csharp  
-int Clone(  
-   out IEnumDebugPropertyInfo2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppEnum`  
- [out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Kopię wyliczenia ma ten sam stan, co oryginalny w czasie, którego ta metoda jest wywoływana. Jednak stany kopiowania i oryginalne są niezależne i można zmieniać indywidualnie.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT Clone(
+   IEnumDebugPropertyInfo2** ppEnum
+);
+```
+
+```csharp
+int Clone(
+   out IEnumDebugPropertyInfo2 ppEnum
+);
+```
+
+## <a name="parameters"></a>Parametry
+ `ppEnum`\
+
+ [out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Kopię wyliczenia ma ten sam stan, co oryginalny w czasie, którego ta metoda jest wywoływana. Jednak stany kopiowania i oryginalne są niezależne i można zmieniać indywidualnie.
+
+## <a name="see-also"></a>Zobacz także
+- [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2c8baa009160cc22766d1a30711fae5b153d2c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ec4ee2e7ca497a6bd3429447a1d66d6b216259cf
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869445"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457767"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Ustawia wartość tej właściwości wartość danego odwołania.
@@ -42,20 +45,20 @@ int SetValueAsReference(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `rgpArgs`
+## <a name="parameters"></a>Parametry
+ `rgpArgs`\
 
  [in] Tablica argumentów do przekazania do metody ustawiającej właściwość kodu zarządzanego. Jeśli metoda ustawiająca właściwości nie przyjmuje argumentów, lub jeśli [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektu nie odwołuje się do takich właściwości metody ustawiającej, `rgpArgs` powinien mieć wartość null. Ten parametr jest zazwyczaj wartość null.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Liczba argumentów w `rgpArgs` tablicy.
 
- `pValue`
+ `pValue`\
 
  [in] Odwołanie w formie [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiektu wartości do użycia, aby ustawić tę właściwość.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Jak długo konieczne w celu ustawienia wartości, w milisekundach. To typowa wartość `INFINITE`. Ma to wpływ na długość czasu, przez jaki wszystkie możliwe oceny może potrwać.
 
@@ -69,6 +72,6 @@ int SetValueAsReference(
 |`E_SETVALUE_VALUE_IS_READONLY`|Wartość jest tylko do odczytu i nie można ustawić.|
 |`E_NOTIMPL`|Metoda nie jest zaimplementowana.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

@@ -1,18 +1,19 @@
 ---
 title: Pisanie testów jednostkowych dla języka C/C++
-ms.date: 10/09/2018
+description: Zapis C++ testów jednostkowych w programie Visual Studio przy użyciu różnych środowisk testowych, w tym narzędzia CTest, Boost.Test i platformy Google Test.
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945352"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461591"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio
 
@@ -30,11 +31,11 @@ Program Visual Studio zawiera następujące struktury testów języka C++ z żad
 
 Oprócz zainstalowanych platform można napisać własne rozszerzenia test adapter for niezależnie od framework, które chcesz użyć w programie Visual Studio. Adapter testowy można zintegrować testów jednostkowych za pomocą **Eksploratora testów** okna. Kilka kart sieciowych innych firm są dostępne na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 w wersji 15.7 i nowsze (Professional i Enterprise)**
+**Visual Studio 2017 i nowsze (Professional i Enterprise)**
 
 Test jednostkowy C++ projektów pomocy technicznej [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017 w wersji 15.5 lub nowszej**
+**Visual Studio 2017 i nowsze (wszystkie wersje)**
 
 - **Google Test Adapter** jest dołączony jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Ma ona szablon projektu, można dodać do rozwiązania za pośrednictwem **Dodaj nowy projekt** menu kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań**i opcje, które można skonfigurować za pomocą **narzędzia**  >  **Opcje**. Aby uzyskać więcej informacji, zobacz [porady: Użyj platformy Google Test w programie Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -50,17 +51,35 @@ Możesz pobrać karty platformy Google Test i Boost.Test karty rozszerzeń w Vis
 
 W poniższych sekcjach przedstawiono podstawowe kroki ułatwiające rozpoczęcie pracy z testowania jednostkowego w języku C++. Podstawowa konfiguracja jest bardzo podobne do struktury firmy Microsoft i platformy Google Test. Boost.Test wymaga ręcznie utworzyć projekt testów.
 
-### <a name="create-a-test-project"></a>Utwórz projekt testu
+::: moniker range="vs-2019"
+
+### <a name="create-a-test-project-in-visual-studio-2019"></a>Tworzenie projektu testu w programie Visual Studio 2019 r.
+
+Zdefiniować i uruchomić testy wewnątrz projekty testowe, które znajdują się w tym samym rozwiązaniu, jako kod, który ma zostać przetestowana. Aby dodać nowy projekt testowy do istniejącego rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**. Ustaw **języka** do C++ i wpisz "test", w polu wyszukiwania. Na poniższej ilustracji przedstawiono projekty testowe, które są dostępne, kiedy **programowanie aplikacji klasycznych przy użyciu C++**  i **programowania platformy uniwersalnej systemu Windows** obciążenia są zainstalowane:
+
+![C++Projekty testowe w programie VIsual Studio 2019 r.](media/vs-2019/cpp-new-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="create-a-test-project-in-visual-studio-2017"></a>Tworzenie projektu testu w programie Visual Studio 2017
 
 Zdefiniować i uruchomić testy wewnątrz projekty testowe, które znajdują się w tym samym rozwiązaniu, jako kod, który ma zostać przetestowana. Aby dodać nowy projekt testowy do istniejącego rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**. Następnie w okienku po lewej stronie wybierz **Test programu Visual C++** i wybierz jeden z typów projektów w środkowym okienku. Na poniższej ilustracji przedstawiono projekty testowe, które są dostępne, kiedy **programowanie aplikacji klasycznych w języku C++** obciążenie jest zainstalowany:
 
 ![Projekty testowe w języku C++](media/cpp-new-test-project.png)
+
+::: moniker-end
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Tworzenie odwołania do innych projektów w rozwiązaniu
 
 Aby włączyć swój kod testu, aby uzyskać dostęp do funkcji w projekcie, który ma zostać przetestowana, należy dodać odwołanie do projektu w projekcie testu. Kliknij prawym przyciskiem myszy węzeł projektu testu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **odwołania**. Następnie w oknie dialogowym Wybierz projekty, które mają zostać przetestowane.
 
 ![Dodawanie odwołania](media/cpp-add-ref-test-project.png)
+
+### <a name="link-to-object-or-library-files"></a>Połącz z plikami obiektu lub biblioteki
+
+Jeśli kod testu nie eksportuje funkcji, które chcesz przetestować, możesz dodać dane wyjściowe pliki obj i lib, do zależności testowanego projektu testowego. Zobacz [połączyć testy z plikami obiektu lub biblioteki](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef).
 
 ### <a name="add-include-directives-for-header-files"></a>Dodaj #include dyrektywy dla plików nagłówkowych
 
@@ -117,7 +136,7 @@ Aby uzyskać najlepsze rozwiązania związane z testów jednostkowych, zobacz [p
 
 ## <a name="use-codelens"></a>Używanie funkcji CodeLens
 
-**Visual Studio 2017 w wersji 15.7 i nowsze (wersje Professional i Enterprise tylko)**
+**Visual Studio 2017 i nowsze (wersje Professional i Enterprise)**
 
 [Funkcja CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) pozwala szybko sprawdzić stan jednostki testowania bez opuszczania edytora kodu. Można zainicjować wskaźników CodeLens dla projektu testu jednostkowego języka C++ w jeden z następujących sposobów:
 

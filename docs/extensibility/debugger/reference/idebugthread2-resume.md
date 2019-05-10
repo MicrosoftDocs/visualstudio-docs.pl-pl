@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4997b8c711a67a3bb45529627e81e70b786acf00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5fc7b8f5cf5cd5360a60e8c6fbf3b6bf43415575
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915512"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225991"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Wznawia wykonanie wątku.
@@ -36,8 +39,8 @@ int Resume ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwSuspendCount`
+## <a name="parameters"></a>Parametry
+ `pdwSuspendCount`\
 
  [out] Zwraca wstrzymania liczenia przez operację wznawiania.
 
@@ -49,6 +52,6 @@ int Resume ( 
 
  Dla każdego wywołania tej metody musi być poprzednie wywołanie [Wstrzymaj](../../../extensibility/debugger/reference/idebugthread2-suspend.md) metody. Wstrzymania liczenia Określa, ile razy `IDebugThread2::Suspend` do tej pory została wywołana metoda.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

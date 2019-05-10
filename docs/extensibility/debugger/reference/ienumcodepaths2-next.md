@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803e8208ff1838c61da844b39d1423e8f99331cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 56f6c2b806e1e0a0e3d070722d27b6542ab39224
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915101"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223611"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 Zwraca następny zestaw elementów z wyliczenia.
@@ -40,22 +43,22 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `celt`
+## <a name="parameters"></a>Parametry
+ `celt`\
 
  [in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
 
- `rgelt`
+ `rgelt`\
 
  [out w] Tablica [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) elementami do wypełnienia.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
 - [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)

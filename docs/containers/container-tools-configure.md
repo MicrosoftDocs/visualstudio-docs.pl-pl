@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 6fe51e0067ac15eb8e775786047009411c1e3181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90f90f4e7f085dc4f7ea188833edb3462cbe7e3e
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825108"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084079"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Jak skonfigurować narzędzia kontenerów programu Visual Studio
 
@@ -62,8 +62,8 @@ W poniższej tabeli opisano **pojedynczego projektu** i **narzędzia Docker Comp
 | Nazwa | Ustawienie domyślne | Dotyczy: | Opis |
 | -----|:---------------:|:----------:| ----------- |
 | Ściągnij wymagane obrazy platformy Docker w projekcie open | Prawda | Pojedynczego projektu, Docker Compose | Aby zwiększyć wydajność podczas ładowania projektów programu Visual Studio rozpocznie operacji ściągania aparatu Docker w tle, tak, aby gdy wszystko będzie gotowe uruchomić kod, obraz, który został już pobrany, lub w trakcie pobierania. Jeśli właśnie trwa ładowanie projektów i przeglądania kodu, można ustawić **False** Aby uniknąć pobierania obrazów kontenerów, które nie jest potrzebny. |
-| Uruchamiaj kontenery na projekt open | Prawda | Pojedynczego projektu, Docker Compose | Ponownie do zwiększenia wydajności programu Visual Studio tworzy kontener z instaluje wolumin gotowy do podczas kompilowania i uruchamiania kontenera. Jeśli chcesz kontrolować, po utworzeniu kontenera, równa **False**. |
-| Zamknij zabij kontenery projektu | Prawda | Pojedynczy projekt i narzędzie Docker Compose | Ustaw **False** czy chcesz kontenerów do rozwiązania w celu będą nadal działać po zamknięcie rozwiązania lub zamknięcia programu Visual Studio. |
+| Uruchamiaj kontenery na projekt open | Prawda | Pojedynczego projektu, Docker Compose | Ponownie Aby zwiększyć wydajność, Visual Studio tworzy kontener wcześniej, aby była gotowa do podczas kompilowania i uruchamiania kontenera. Jeśli chcesz kontrolować, po utworzeniu kontenera, równa **False**. |
+| Zamknij kontenery stop w projekcie | Prawda | Pojedynczy projekt i narzędzie Docker Compose | Ustaw **False** czy chcesz kontenerów do rozwiązania w celu będą nadal działać po zamknięcie rozwiązania lub zamknięcia programu Visual Studio. |
 
 ::: moniker-end
 > [!WARNING]

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824184"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476592"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmienianie projektu przy użyciu wizualizacji i modelowania
 
@@ -81,10 +81,10 @@ W poniższej tabeli opisano role, które mogą pełnić te narzędzia wielu i r�
 
 ||**Modelowanie wymagań użytkowników**|**Modelowanie procesów biznesowych**|**Architektura i projektowanie**|**Kod — Wizualizacja i eksploracja**|**Weryfikacja**|
 |------|-|-|-|-|-|
-|Diagram języka specyficznego dla domeny (DSL)|Yes|Yes|Tak|||
-|Diagram zależności, sprawdzanie poprawności warstwy|||Tak|Yes|Yes|
-|Mapy kodu|||Tak|Yes|Tak|
-|Projektant klasy (oparty na kodzie)||||Tak||
+|Diagram języka specyficznego dla domeny (DSL)|Yes|Yes|Yes|||
+|Diagram zależności, sprawdzanie poprawności warstwy|||Tak|Yes|Tak|
+|Mapy kodu|||Yes|Yes|Tak|
+|Projektant klasy (oparty na kodzie)||||Yes||
 
 Aby narysować diagramy zależności, należy utworzyć projekt modelowania jako część nowego lub istniejącego rozwiązania. Te diagramy należy utworzyć w projekcie modelowania.
 Elementy na diagramach zależności znajdują się w projekcie modelowania, ale nie są one przechowywane we wspólnym modelu. Mapy kodu i diagramy klas .NET utworzone na podstawie kodu istnieje poza projektem modelowania.
@@ -172,11 +172,11 @@ Dinner Now musi oszacować koszty realizacji nowego wymagania. Zależy to częś
 
 |**Diagram**|**W tym artykule opisano**|
 |-|-|
-|*Diagram zależności*<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|Logiczna architektura kodu.<br /><br /> Diagram zależności organizuje i mapuje artefakty w rozwiązaniu Visual Studio, grup abstrakcyjnych nazywanych *warstwy*. Te warstwy określają role, zadania lub funkcje, które te artefakty pełnią w systemie.<br /><br /> Diagramy warstwy są przydatne do opisywania zamierzonego projektu systemu i sprawdzenia poprawności zmian kodu w stosunku do projektu.<br /><br /> Aby utworzyć warstwy, przeciągnij elementy z Eksploratora rozwiązań, map kodu, widoku klas i przeglądarki obiektów. Aby narysować nowe warstwy, Użyj przybornika lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię diagramu warstwy, a następnie kliknij przycisk **Wygeneruj zależności**. Aby określić zależności zamierzone, narysuj nowe.|
+|*Diagram zależności*<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|Logiczna architektura kodu.<br /><br /> Diagram zależności organizuje i mapuje artefakty w rozwiązaniu Visual Studio, grup abstrakcyjnych nazywanych *warstwy*. Te warstwy określają role, zadania lub funkcje, które te artefakty pełnią w systemie.<br /><br /> Diagramy zależności są przydatne do opisywania zamierzonego projektu systemu i sprawdzenia poprawności zmian kodu w stosunku do projektu.<br /><br /> Aby utworzyć warstwy, przeciągnij elementy z Eksploratora rozwiązań, map kodu, widoku klas i przeglądarki obiektów. Aby narysować nowe warstwy, Użyj przybornika lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię diagramu zależności, a następnie kliknij przycisk **Wygeneruj zależności**. Aby określić zależności zamierzone, narysuj nowe.|
 
- Na przykład poniższy diagram zależności opisuje zależności między warstwami i liczbą artefaktów, które są skojarzone z poszczególnymi warstwami:
+Na przykład poniższy diagram zależności opisuje zależności między warstwami i liczbą artefaktów, które są skojarzone z poszczególnymi warstwami:
 
- ![Diagram zależności systemu płatności zintegrowane](../modeling/media/layer_integrated_dnlucerne.png)
+![Diagram zależności systemu płatności zintegrowane](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagram zależności**
 
@@ -194,7 +194,7 @@ Zobacz:
 
 - Większość diagramów składa się z węzłów, które są połączone liniami. Dla każdego typu diagramu Przybornik zawiera różne rodzaje węzłów i wierszy.
 
-     Aby otworzyć przybornik, na **widoku** menu, kliknij przycisk **przybornika**.
+   Aby otworzyć przybornik, na **widoku** menu, kliknij przycisk **przybornika**.
 
 - Aby utworzyć węzeł, przeciągnij je z przybornika do diagramu. Niektóre rodzaje węzłów muszą zostać przeciągnięte do istniejących węzłów. Na przykład na diagramie składników nowy port musi być dodany do istniejącego składnika.
 
@@ -206,7 +206,7 @@ Diagramy modelowania w usłudze Visual Studio są zintegrowane z programem Team 
 
 Jako postępem prac zespoły aktualizują elementy robocze, aby odzwierciedlić czas poświęcony na ich zadań. Ponadto monitorują i raportują stan swojej pracy, korzystając z następujących funkcji serwera Team Foundation Server:
 
-- Codzienne *Raporty postępu* które pokazują, czy zostaną zakończone planowaną pracę w oczekiwanym czasie. Generują inne podobne raporty z Team Foundation Server w celu śledzenia postępu usterek.
+- Codzienne *spalania dół raporty* które pokazują, czy zostaną zakończone planowaną pracę w oczekiwanym czasie. Generują inne podobne raporty z Team Foundation Server w celu śledzenia postępu usterek.
 
 - *Arkusz iteracji* który używa programu Microsoft Excel, aby pomóc zespołowi w monitorowaniu i równoważeniu obciążenia pracą poszczególnych członków. Ten arkusz jest połączony z serwerem Team Foundation Server i dostarcza tematy do dyskusji podczas regularnie odbywanych spotkań.
 
@@ -329,7 +329,7 @@ Ta mapa pokazuje, że klasa PaymentApprover znajduje się teraz w przestrzeni na
 
 |**Diagram**|**W tym artykule opisano**|
 |-|-|
-|Diagram zależności|Logiczna architektura systemu. Użyj weryfikacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Aby ułatwić identyfikację istniejących dependencys lub dependencys zamierzony, utwórz mapę kodu i pogrupować pokrewne elementy. Aby utworzyć diagram zależności, zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)|
+|Diagram zależności|Logiczna architektura systemu. Użyj weryfikacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Aby ułatwić identyfikację istniejących zależności lub zależności zamierzone, utwórz mapę kodu i pogrupować pokrewne elementy. Aby utworzyć diagram zależności, zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)|
 |Diagram klasy (oparty na kodzie)|Istniejące klasy w kodzie dla konkretnego projektu.<br /><br /> Wizualizację i modyfikowanie istniejącej klasy w kodzie, za pomocą projektanta klas.<br /><br /> Zobacz [jak: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Definiuj słownik typów: Diagramy klas

@@ -1,6 +1,6 @@
 ---
 title: Docelowa kompilacja — kolejność | Dokumentacja firmy Microsoft
-ms.date: 09/04/2018
+ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6784ab59580df898e2f5f705984f13a3f94f73a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 502cc7d5f1124ef815455193f00c3f30e77c59a8
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939160"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225952"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
+
 Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Aby określić kolejność uruchamiania elementów docelowych, można użyć tych atrybutów:
 
 - `InitialTargets`. To `Project` atrybut określa elementy docelowe, które będą uruchamiane po pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu.
@@ -33,6 +34,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
   Obiekty docelowe może mieć `Condition` atrybutu. Jeśli określony warunek ma `false`, element docelowy nie jest wykonywane i nie ma wpływu na kompilację. Aby uzyskać więcej informacji o warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).
 
 ## <a name="initial-targets"></a>Cele początkowe
+
  `InitialTargets` Atrybutu [projektu](../msbuild/project-element-msbuild.md) element określa elementy docelowe, które będą uruchamiane po pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu. Cele początkowe są zwykle używane do sprawdzania błędów.
 
  Wartość `InitialTargets` atrybut może być rozdzielone średnikami, uporządkowanych lista elementów docelowych. Poniższy przykład określa, że `Warm` docelowy działa, a następnie `Eject` docelowych uruchomienia.
@@ -46,6 +48,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
  Aby uzyskać więcej informacji, zobacz [jak: Określ, która docelowa do tworzenia najpierw](../msbuild/how-to-specify-which-target-to-build-first.md).
 
 ## <a name="default-targets"></a>Domyślne elementy docelowe
+
  `DefaultTargets` Atrybutu [projektu](../msbuild/project-element-msbuild.md) element określa, których cel lub cele są tworzone, jeśli element docelowy nie jest jawnie określona w wierszu polecenia.
 
  Wartość `DefaultTargets` atrybut może być rozdzielaną średnikami, uporządkowaną listę domyślnych elementów docelowych. Poniższy przykład określa, że `Clean` docelowy działa, a następnie `Build` docelowych uruchomienia.
@@ -65,9 +68,11 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
  Aby uzyskać więcej informacji, zobacz [jak: Określ, która docelowa do tworzenia najpierw](../msbuild/how-to-specify-which-target-to-build-first.md).
 
 ## <a name="first-target"></a>Pierwszy element docelowy
+
  Jeśli nie ma żadnych cele początkowe, domyślne elementy docelowe ani wiersza polecenia obiekty docelowe, MSBuild uruchamia pierwszego obiektu docelowego napotka w pliku projektu lub jakiegokolwiek projektu, zaimportowane pliki.
 
 ## <a name="target-dependencies"></a>Miejsce docelowe zależności
+
  Obiekty docelowe można opisać relacji zależności ze sobą. `DependsOnTargets` Atrybut wskazuje, że obiekt docelowy zależy od innych elementów docelowych. Na przykład
 
 ```xml
@@ -77,6 +82,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
  informuje o MSBuild `Serve` zależy obiekt docelowego `Chop` docelowego i `Cook` docelowej. MSBuild uruchamia `Chop` docelowego, a następnie uruchamia `Cook` docelowy przed uruchomieniem `Serve` docelowej.
 
 ## <a name="beforetargets-and-aftertargets"></a>BeforeTargets i AfterTargets
+
  W wersji 4.0 programu MSBuild, należy określić kolejność obiektów docelowych za pomocą `BeforeTargets` i `AfterTargets` atrybutów.
 
  Rozważmy poniższy skrypt.
@@ -102,6 +108,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
 ```
 
 ## <a name="determine-the-target-build-order"></a>Określić kolejność kompilowania obiektów docelowych
+
  MSBuild określa kolejność kompilowania obiektów docelowych w następujący sposób:
 
 1. `InitialTargets` obiekty docelowe są uruchamiane.
@@ -110,15 +117,19 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
 
 3. `Condition` Atrybut docelowy jest oceniany. Jeśli `Condition` atrybut jest obecny i daje w wyniku `false`, element docelowy nie jest wykonywane i nie ma dalszych wpływu na kompilację.
 
-    Obiekty docelowe, w których przedstawiono warunkowego elementu docelowego w `BeforeTargets` lub `AfterTargets` nadal wykonywać w zalecanej kolejności
+    Inne obiekty docelowe, w których przedstawiono warunkowego elementu docelowego w `BeforeTargets` lub `AfterTargets` nadal wykonywać w zalecanej kolejności.
 
-4. Zanim obiekt docelowy jest wykonywany czy pomijany, jeśli jego `Condition` atrybutu nie było lub nie zostało obliczone do `false`, jego `DependsOnTargets` obiekty docelowe są uruchamiane.
+4. Zanim obiekt docelowy jest wykonywany czy pomijany, jego `DependsOnTargets` obiekty docelowe są uruchamiane, chyba że `Condition` atrybut jest stosowany do obiektu docelowego i daje w wyniku `false`.
 
-5. Zanim obiekt docelowy jest wykonywany czy pomijany, wszelkie docelowy, który jest wyświetlany w `BeforeTargets` atrybutu jest uruchamiany.
+   > [!NOTE]
+   > Obiekt docelowy jest uznawany za pominięta, jeżeli nie jest wykonywany, ponieważ jej elementy wyjściowe są aktualne (zobacz [kompilacja przyrostowa](../msbuild/incremental-builds.md)). To sprawdzenie odbywa się tuż przed wykonaniem zadania w docelowym i nie ma wpływu na kolejność wykonywania elementów docelowych.
 
-6. Przed wykonaniem celu jego `Inputs` atrybutu i `Outputs` atrybutu są porównywane. Jeśli program MSBuild ustali, że wszystkie pliki wyjściowe są nieaktualne w odniesieniu do odpowiedniego pliku wejściowego lub pliki, a następnie program MSBuild wykonuje element docelowy. W przeciwnym razie program MSBuild pomija element docelowy.
+5. Zanim obiekt docelowy jest wykonywany czy pomijany, inne element docelowy zawiera obiekt docelowy w `BeforeTargets` atrybutu jest uruchamiany.
 
-7. Po obiekt docelowy jest wykonywany czy pomijany, wszelkie docelowy, który jest wyświetlany w `AfterTargets` atrybutu jest uruchamiany.
+6. Przed wykonaniem docelowej, jej `Inputs` atrybutu i `Outputs` atrybutu są porównywane. Jeśli program MSBuild ustali, że wszystkie pliki wyjściowe są nieaktualne w odniesieniu do odpowiedniego pliku wejściowego lub pliki, a następnie program MSBuild wykonuje element docelowy. W przeciwnym razie program MSBuild pomija element docelowy.
+
+7. Po element docelowy jest wykonywany czy pomijany, inne element docelowy jest wyświetlany w `AfterTargets` atrybutu jest uruchamiany.
 
 ## <a name="see-also"></a>Zobacz także
+
 - [Docelowe elementy](../msbuild/msbuild-targets.md)

@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Więcej informacji na temat subskrypcji szkolenia Pluralsight, które są dołączone do wybranej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b4211fbba6a5f1602906a281869b40068f3d6f1
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947557"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225500"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight, w ramach subskrypcji programu Visual Studio
 
@@ -41,7 +41,7 @@ W poniższej tabeli przedstawiono, jakie korzyści z subskrypcji w witrynie Plur
    - Kliknij pole wyboru, aby zaakceptować warunki użycia i zasady zachowania poufności
    - Kliknij przycisk **zgodę, Aktywuj korzyść**.
      > [!div class="mx-imgBorder"]
-     > ![Aktywacja korzyści z firmą Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Aktywacja korzyści z firmą Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Warunki świadczenia Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
 

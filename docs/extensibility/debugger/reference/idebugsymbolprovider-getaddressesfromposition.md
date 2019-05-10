@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e615abb8bf4a535f88dd1df483540ac84e5ca5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224012"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Ta metoda mapuje położenie dokumentu na tablicę adresów debugowania.
@@ -42,20 +45,20 @@ int GetAddressesFromPosition( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pDocPos`
+## <a name="parameters"></a>Parametry
+ `pDocPos`\
 
  [in] Położenie dokumentu.
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in] W przypadku opcji TRUE ogranicza adresy debugowania do pojedynczej instrukcji.
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out] Zwraca moduł wyliczający dla wyjścia adresów debugowania skojarzone z tym instrukcja lub wiersza.
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out] Zwraca [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) modułu wyliczającego dla końcowy adresów debugowania skojarzone z tym instrukcja lub wiersza.
 
@@ -67,7 +70,7 @@ int GetAddressesFromPosition( 
 
  Istnieje możliwość dla pojedynczej instrukcji wielu adresów debugowania, tak jak w przypadku szablonów.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

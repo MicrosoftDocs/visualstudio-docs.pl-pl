@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebeef5502787ad5ab745d72e42205d86320a8f20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 786adff86b35ed4d33b07a4144544adffe53ea75
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226464"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 Ta metoda powoduje zresetowanie wyliczenia do pierwszego elementu.
@@ -32,7 +35,7 @@ HRESULT Reset(void);
 int Reset();
 ```
 
-#### <a name="parameters"></a>Parametry
+## <a name="parameters"></a>Parametry
  Brak
 
 ## <a name="return-value"></a>Wartość zwracana
@@ -41,6 +44,6 @@ int Reset();
 ## <a name="remarks"></a>Uwagi
  Po ta metoda jest wywoływana, następnym wywołaniu [dalej](../../../extensibility/debugger/reference/ienumdebugobjects-next.md) zwraca pierwszy element wyliczenia.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)
 - [Next](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)

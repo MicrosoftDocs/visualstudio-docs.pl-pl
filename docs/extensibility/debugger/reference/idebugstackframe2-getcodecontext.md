@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de112b3bba0ca649e333cc990a50284c29b92239
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12ad4db6583c702115f5c97b2fa2c4485c891298
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916093"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458577"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 Pobiera kontekst kodu dla tej ramki stosu.
@@ -36,14 +39,14 @@ int GetCodeContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppCodeCxt`
+## <a name="parameters"></a>Parametry
+ `ppCodeCxt`\
 
  [out] Zwraca [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który reprezentuje bieżący wskaźnik instrukcji do tej ramki stosu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

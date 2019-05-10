@@ -1,18 +1,18 @@
 ---
 title: 'Instrukcje: Pisanie testów jednostkowych dla bibliotek DLL języka C++'
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226274"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: Pisanie testów jednostkowych dla bibliotek DLL języka C++
 
@@ -38,13 +38,12 @@ W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL C++ przy uż
 
 1. Na **pliku** menu, wybierz **New** > **projektu**.
 
-     W oknie dialogowym Rozwiń **zainstalowane** > **szablony** > **Visual C++** > **testu**.
+     **Visual Studio 2017 and earlier**: Rozwiń **zainstalowane** > **szablony** > **Visual C++**   >  **testu**.
+     **Visual Studio 2019**: Ustaw **języka** do C++ i wpisz "test", w polu wyszukiwania.
 
      Wybierz **natywny projekt testów jednostkowych** szablon lub niezależnie od zainstalowanego framework użytkownik sobie tego życzy. Jeśli wybierzesz inny szablon, takich jak Google Test i Boost.Test, podstawowe zasady są takie same, mimo że niektóre szczegóły będą się różnić.
 
      W tym przewodniku nosi nazwę projektu testowego `NativeRooterTest`.
-
-     ![Tworzenie projektu testu jednostkowego w języku C++](../test/media/utecpp01.png)
 
 2. W nowym projekcie, należy sprawdzić **unittest1.cpp**
 
@@ -85,11 +84,45 @@ W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL C++ przy uż
 
 ## <a name="create_dll_project"></a> Utwórz projekt biblioteki DLL
 
-1. Tworzenie **Visual C++** projektu przy użyciu **projekt systemu Win32** szablonu.
+::: moniker range="vs-2019"
+
+Poniższe kroki pokazują jak utworzyć projekt DLL w programie Visual Studio 2019 r.
+
+1. Tworzenie C++ projektu przy użyciu **kreatora pulpitu Windows**: Kliknij prawym przyciskiem myszy nazwę rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**. Ustaw **języka** do C++ , a następnie wpisz "windows" w polu wyszukiwania. Wybierz **kreatora pulpitu Windows** z listy wyników. 
 
      W tym przewodniku nosi nazwę projektu `RootFinder`.
 
-     ![Tworzenie projektu C++ Win32](../test/media/utecpp05.png)
+2. Naciśnij klawisz **tworzenie**. W następnym oknie dialogowym w obszarze **typ aplikacji** wybierz **Biblioteka dołączana dynamicznie (dll)** i Sprawdź też **Eksportuj symbole**.
+
+     **Eksportuj symbole** opcja powoduje wygenerowanie wygodne makro, które służy do deklarowania metod wyeksportowany.
+
+     ![Kreator projektu C++ ustaw dla biblioteki DLL i eksportowanie symboli](../test/media/vs-2019/windows-desktop-project-dll.png)
+
+3. Zadeklaruj eksportowanych funkcji podmiot zabezpieczeń *.h* pliku:
+
+     ![Nowy kod projektu i .h plik DLL za pomocą interfejsu API makra](../test/media/utecpp07.png)
+
+     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione składowe klasy mają być wyświetlane poza bibliotekę DLL. Aby uzyskać więcej informacji, zobacz [korzystanie z dllimport i dllexport w klasach C++](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
+
+4. W polu podmiot zabezpieczeń *.cpp* plik i dodać minimalny treści funkcji:
+
+    ```cpp
+        // Find the square root of a number.
+        double CRootFinder::SquareRoot(double v)
+        {
+            return 0.0;
+        }
+    ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Poniższe kroki pokazują jak utworzyć projekt DLL w programie Visual Studio 2017.
+
+1. Tworzenie C++ projektu przy użyciu **projekt systemu Win32** szablonu.
+
+     W tym przewodniku nosi nazwę projektu `RootFinder`.
 
 2. Wybierz **DLL** i **Eksportuj symbole** Kreatora aplikacji Win32.
 
@@ -112,6 +145,8 @@ W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL C++ przy uż
             return 0.0;
         }
     ```
+
+::: moniker-end
 
 ## <a name="make_functions_visible"></a> Kilka projekt testowy do projektu biblioteki DLL
 

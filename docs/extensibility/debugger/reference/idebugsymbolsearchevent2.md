@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85556fb8549b6ebab679fed35d5d39fbd060fbff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e105f8d90c9482123c6adf44a527abd3e00f03b3
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915597"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226176"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 Ten interfejs są wysyłane przez aparat debugowania (DE) w celu wskazania, czy załadowano symbole debugowania dla debugowanego modułu.
@@ -53,7 +53,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

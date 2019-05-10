@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b20222db9b007fbeee6daf0df1921e4c56744818
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224058"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Ta metoda pobiera języka, który został użyty do kompilowania kodu pod adresem debugowania.
@@ -40,16 +43,16 @@ int GetLanguage(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pAddress`
+## <a name="parameters"></a>Parametry
+ `pAddress`\
 
  [in] Adres obiektu reprezentowanego przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
 
- `pguidLanguage`
+ `pguidLanguage`\
 
  [out] Zwraca `GUID` , który określa język.
 
- `pguidLanguageVendor`
+ `pguidLanguageVendor`\
 
  [out] Zwraca `GUID` określający dostawcy języka.
 
@@ -59,6 +62,6 @@ int GetLanguage(
 ## <a name="remarks"></a>Uwagi
  Aparat debugowania wywołuje tę metodę, aby uzyskać informacje potrzebne do wybrania Ewaluator wyrażeń poprawne.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

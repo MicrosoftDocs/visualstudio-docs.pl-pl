@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3979b7c50ee3af997924d15908556011682595d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415905"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460907"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocnicy zestawu SDK do debugowania
 Te funkcje i deklaracji są funkcje pomocnicze globalnego dotyczące implementowania silniki debugowania, ewaluatory wyrażeń i dostawców symboli w języku C++.
@@ -424,5 +424,5 @@ HRESULT EnumMetricSections(
 
  Biblioteki: libs\ad2de.lib, libs\dbgmetric.lib
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

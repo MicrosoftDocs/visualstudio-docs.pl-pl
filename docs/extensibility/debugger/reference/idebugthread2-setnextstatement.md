@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 896167d3655c5234f56f3b70e4369706250973c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0b6aca1ef95a8ae88301181955828f08c7c38bed
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915536"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226705"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Ustawia bieżący wskaźnik instrukcji do kontekstu danego kodu.
@@ -38,10 +41,11 @@ int SetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pStackFrame` Zarezerwowane dla przyszłego użytku; Ustaw wartość null.
+## <a name="parameters"></a>Parametry
+ `pStackFrame`\
+ Zarezerwowane dla przyszłego użytku; Ustaw wartość null.
 
- `pCodeContext`
+ `pCodeContext`\
 
  [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który opisuje lokalizacji kodu, który ma zostać wykonany i kontekst.
 
@@ -57,7 +61,7 @@ int SetNextStatement ( 
 ## <a name="remarks"></a>Uwagi
  Wskaźnik instrukcji wskazuje następnej instrukcji lub instrukcji do wykonania. Ta metoda jest używana, aby ponowić próbę wiersz kodu źródłowego lub aby wymusić kontynuowanie w innej funkcji, na przykład wykonywania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

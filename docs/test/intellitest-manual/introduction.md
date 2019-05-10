@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999761"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461492"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Omówienie programu Microsoft IntelliTest
 
@@ -78,7 +78,7 @@ Gdy skompilowany i wykonany, IntelliTest generuje zestaw testów, takie jak nast
 7. "Hello\0World!"
 8. "Hello World!"
 
-Odczyt [generowania testów jednostkowych z funkcją Intellitest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) Aby zrozumieć, w którym wygenerowane testy są zapisywane. Kod wygenerowany test powinien zawierać testów, jak w następującym kodzie:
+Odczyt [generowania testów jednostkowych z funkcją IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) Aby zrozumieć, w którym wygenerowane testy są zapisywane. Kod wygenerowany test powinien zawierać testów, jak w następującym kodzie:
 
 ```csharp
 [TestMethod]
@@ -115,8 +115,7 @@ W tym sensie wyników wywołań do kodu niezarządzanego lub niezinstrumentowane
 
 Ponadto program uważany jest za determistic inne niż w przypadku zmiany wartości ze źródeł zewnętrznych, gdy ponowne uruchomienie programu. W takich przypadkach program IntelliTest utraci kontrolę nad wykonywania programu, a wyszukiwanie staje się nieefektywne.
 
-Czasami nie jest oczywisty w takiej sytuacji.
-Należy wziąć pod uwagę następujące przykłady:
+Czasami nie jest oczywisty w takiej sytuacji. Należy wziąć pod uwagę następujące przykłady:
 
 * Wynik **element GetHashCode()** metody są dostarczane przez kod niezarządzany, a nie jest przewidywalne.
 * **System.Random** klasy korzysta bieżący czas systemowy, aby zapewnić naprawdę losowe wartości.

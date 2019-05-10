@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04a76c88e5fd3eee146f6c174087298bac2b6974
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9a5d4daad66ed6a4428724b20093473ba7b93856
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226223"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Pobiera nazwę wątku.
@@ -36,8 +39,8 @@ int GetName ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pbstrName`
+## <a name="parameters"></a>Parametry
+ `pbstrName`\
 
  [out] Zwraca nazwę wątku.
 
@@ -47,6 +50,6 @@ int GetName ( 
 ## <a name="remarks"></a>Uwagi
  Pobrana nazwa jest zawsze nazwę, która może być wyświetlany, i tę nazwę w tym artykule opisano wątku. Nazwa wątku mogą pochodzić z architektury środowiska wykonawczego, że obsługuje o nazwie wątków lub może być nazwy pochodzące z aparatu debugowania. Nazwa wątku mogą także ustawić za pomocą wywołania [setthreadname —](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) metody.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

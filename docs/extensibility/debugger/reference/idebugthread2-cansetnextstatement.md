@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ec2c5d157832834f76834f7b93e193629b66d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9af7c5a7c757546b7da8fef4320be6d6cc101738
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868388"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224178"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 Określa, czy bieżący wskaźnik instrukcji można ustawić ramkę stosu w danym.
@@ -38,10 +41,11 @@ int CanSetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pStackFrame` Zarezerwowane dla przyszłego użytku; Ustaw wartość null. Jeśli jest to wartość null, należy użyć bieżącej ramki stosu.
+## <a name="parameters"></a>Parametry
+ `pStackFrame`\
+ Zarezerwowane dla przyszłego użytku; Ustaw wartość null. Jeśli jest to wartość null, należy użyć bieżącej ramki stosu.
 
- `pCodeContext`
+ `pCodeContext`\
 
  [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który opisuje lokalizacji kodu, który ma zostać wykonany i kontekst.
 
@@ -51,7 +55,7 @@ int CanSetNextStatement ( 
 ## <a name="remarks"></a>Uwagi
  Jeśli ta metoda zwraca `S_OK`, następnie wywołać [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) metodę, aby faktycznie Ustaw następną instrukcję.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

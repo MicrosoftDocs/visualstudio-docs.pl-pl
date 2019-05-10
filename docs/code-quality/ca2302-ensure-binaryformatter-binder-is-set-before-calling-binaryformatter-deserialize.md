@@ -10,12 +10,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f2e98edd0cb1094422576b484be34f4f7ba8de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+f1_keywords:
+- CA2302
+- EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize
+ms.openlocfilehash: c833a60d98cbfd7eea3e3b673c7e60c6047a4ae9
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545283"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083895"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize
 
@@ -43,10 +46,10 @@ Ta reguła umożliwia znalezienie <xref:System.Runtime.Serialization.Formatters.
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Nigdy nie używaj <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Jeśli musisz użyć typu program rozpoznawania nazw, ograniczyć typy po deserializacji do oczekiwanej listy.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET — Użyj TypeNameHandling.None. Jeśli musisz użyć innej wartości dla TypeNameHandling, ograniczyć po deserializacji typów do oczekiwanej listy przy użyciu niestandardowych ISerializationBinder.
+  - Newtonsoft Json.NET — Użyj TypeNameHandling.None. Jeśli musisz użyć innej wartości dla TypeNameHandling, ograniczyć po deserializacji typów do oczekiwanej listy przy użyciu niestandardowych ISerializationBinder.
   - Protocol Buffers
-- Należy odporne serializowanych danych. Po serializacji podpisać kryptograficznie serializowanych danych. Przed deserializacji należy zweryfikować podpisu kryptograficznego. Ochrona klucza kryptograficznego zostały ujawnione i projektowania dla wymiany kluczy.
-- Ograniczenia typów po deserializacji. Implementowanie niestandardowego <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Przed deserializacji za pomocą <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>ustaw <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> właściwości wystąpienia niestandardowego <xref:System.Runtime.Serialization.SerializationBinder>. W zgodnym z przesłoniętą <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metody, jeśli typ jest nieoczekiwany następnie zgłoszenie wyjątku.
+- Należy odporne serializowanych danych. Po serializacji podpisać kryptograficznie serializowanych danych. Przed deserializacji należy zweryfikować podpisu kryptograficznego. Ochrona klucza kryptograficznego zostały ujawnione i projektowanie pod kątem wymiany kluczy.
+- Ograniczenia typów po deserializacji. Implementowanie niestandardowego <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Przed deserializacji za pomocą <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>ustaw <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> właściwości wystąpienia niestandardowego <xref:System.Runtime.Serialization.SerializationBinder>. W zgodnym z przesłoniętą <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metody, jeśli typ jest nieoczekiwana i zgłosić wyjątek.
   - Upewnij się, że wszystkie ścieżki kodu <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> zestawu właściwości.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia

@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386924"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476535"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Co nowego w dziedzinie projektowania w programie Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Weryfikacja zależności na żywo
 
-Usunięcie niechcianych zależności jest ważną częścią zarządzania Twojej długu technicznego. Na żywo weryfikacji zależności jest teraz dołączone, zapewniając dokładne informacje o problemach i pełni korzystanie z nowych funkcji w edytorze i lista błędów.
+Usunięcie niechcianych zależności jest ważną częścią zarządzania Twojej długu technicznego. Program Visual Studio udostępnia na żywo weryfikacji zależności, w tym dokładne informacje na temat problemów, na przykład, gdzie się znajdują. Zależności na żywo weryfikacji przyjmuje pełne korzyści wynikające z nowych funkcji w edytorze i lista błędów.
 
 ![Weryfikacja zależności na żywo w działaniu](media/dep-validation-whatsnew-01.png)
 
-Środowisko tworzenia zmienił się weryfikacji zależności mogą szybciej odnajdywać i bardziej dostępny, zmiana terminologii z "Diagramu warstwowego" do "Diagram zależności".
+Środowisko tworzenia zmienił się weryfikacji zależności mogą szybciej odnajdywać i łatwiej dostępne. Terminologii zmienił się z "Diagramu warstwowego" "Diagram zależności".
 
 **Architektury** menu zawiera teraz polecenia, aby bezpośrednio utworzyć diagram zależności:
 
 ![Element zależności na żywo w menu architektury](media/dep-validation-whatsnew-02.png)
 
-... i nazwy właściwości warstwy w diagram zależności i ich opisy, zostały zmienione, aby były bardziej zrozumiały:
+Warstwa właściwości nazwy i opisy zostały zmienione, aby były bardziej zrozumiały:
 
 ![Nazwy właściwości zależności na żywo zaktualizowane](media/dep-validation-whatsnew-03.png)
 
-Zobaczysz teraz wpływ zmian bezpośrednio w wynikach analizy dla bieżącego kodu w rozwiązaniu każdorazowo, gdy zapisać diagram. Nie trzeba już czekać na zakończenie polecenia "Weryfikacji zależności".
+Możesz natychmiast zobaczyć wpływ zmian w wynikach analizy dla bieżącego kodu w rozwiązaniu każdorazowo, gdy zapisać diagram. Nie trzeba czekać na zakończenie **weryfikacji zależności** polecenia.
 
 Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Usunięto projektantów UML
 
-Projektantów UML zostały usunięte z tej wersji programu Visual Studio Enterprise.
+Projektantów UML zostały usunięte z programu Visual Studio.
 
 * Diagramy UML są teraz uporządkowane jako pliki XML
 * Eksplorator modelu UML już nie istnieje.
@@ -57,7 +57,7 @@ Projektantów UML zostały usunięte z tej wersji programu Visual Studio Enterpr
 * Zaplecze — łączenie z DSL lub warstwy nie jest już obsługiwana
 * Rozszerzalność UML w zestaw Modeling SDK nie jest już obsługiwana
 
-Jednak pomoc techniczna dotycząca wizualizacja architektury kodu .NET i C++ jest dostępna za pośrednictwem [map kodu](map-dependencies-across-your-solutions.md)i znaczne ulepszenia do weryfikacji zależności opisane powyżej.
+Obsługa wizualizacji architektury .NET i C++ kod jest dostępny za pośrednictwem [map kodu](map-dependencies-across-your-solutions.md).
 
 Jeśli jesteś użytkownikiem znaczące projektantów UML, można nadal używać programu Visual Studio 2015 i jego wcześniejsze wersje podczas decyzję w sprawie narzędziem alternatywne do własnych potrzeb UML.
 

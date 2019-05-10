@@ -8,12 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443853"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226107"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Przewodnik: Tworzenie za pomocą zestawu SDK C# lub Visual Basic
 W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matematyczne przy użyciu języka Visual C# i następnie pakietu SDK jako programu Visual Studio rozszerzenia (VSIX). Wykonasz następujące procedury:
@@ -28,7 +31,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
 
 ## <a name="createClassLibrary"></a> Aby utworzyć składnika środowiska wykonawczego Windows SimpleMath
 
-1. Na pasku menu wybierz **pliku** > **New** > **nowy projekt**.
+1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
 2. Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, wybierz **Windows Store** węzła, a następnie wybierz **składnika środowiska wykonawczego Windows** szablonu.
 
@@ -50,7 +53,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
 8. W **konfiguracji** kolumny, upewnij się, że **SimpleMath** wiersza jest ustawiona na **wersji**, a następnie wybierz **Zamknij** przycisk, aby zaakceptować Zmiana.
 
    > [!IMPORTANT]
-   > Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacji wydania lub aplikacje, które używają składnika nie przekaże certyfikacji[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacji wydania lub aplikacje, które używają składnika nie przekaże certyfikacji [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
 
 9. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMath** węzła projektu, a następnie wybierz **kompilacji**.
 
@@ -153,7 +156,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
 
 ## <a name="createSample"></a> Aby utworzyć przykładową aplikację, która używa biblioteki klas
 
-1. Na pasku menu wybierz **pliku** > **New** > **nowy projekt**.
+1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
 2. Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz **Windows Store** węzła.
 
@@ -163,11 +166,11 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
 
 5. Na liście typów referencyjnych rozwiń **Windows**, a następnie wybierz **rozszerzenia**.
 
-6. W okienku szczegółów wybierz **proste SDK matematyczne** rozszerzenia.
+6. W okienku szczegółów wybierz **biblioteka funkcji matematycznych WinRT** rozszerzenia.
 
     Pojawi się dodatkowe informacje na temat zestawu SDK. Możesz wybrać **więcej informacji o** link umożliwiający otworzenie https://msdn.microsoft.com/, jak określono w pliku SDKManifest.xml we wcześniejszej części tego przewodnika.
 
-7. W **Menadżer odwołań** okno dialogowe, wybierz opcję **proste SDK matematyczne** pole wyboru, a następnie wybierz **OK** przycisku.
+7. W **Menadżer odwołań** okno dialogowe, wybierz opcję **biblioteka funkcji matematycznych WinRT** pole wyboru, a następnie wybierz **OK** przycisku.
 
 8. Na pasku menu wybierz **widoku** > **przeglądarki obiektów**.
 
@@ -181,11 +184,11 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
 
     ```xml
     <Page
-        x:Class="WinRTMathTestCS.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTestCS"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
@@ -207,11 +210,11 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
 
     ```xml
     <Page
-        x:Class="WinRTMathTest.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTest"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
