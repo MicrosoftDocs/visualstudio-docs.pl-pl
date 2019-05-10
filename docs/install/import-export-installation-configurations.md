@@ -19,11 +19,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346761"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64850753"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importowanie lub eksportowanie konfiguracji instalacji
 
