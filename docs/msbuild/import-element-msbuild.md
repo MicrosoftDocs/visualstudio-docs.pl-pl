@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977403"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531706"
 ---
 # <a name="import-element-msbuild"></a>Import — element (MSBuild)
 Importuje zawartość pliku jednego projektu do innego pliku projektu.
@@ -46,6 +46,7 @@ Importuje zawartość pliku jednego projektu do innego pliku projektu.
 |---------------|-----------------|
 |`Project`|Atrybut wymagany.<br /><br /> Ścieżka pliku projektu do zaimportowania. Ścieżka może zawierać symboli wieloznacznych. Pasujące pliki są importowane w kolejności posortowanej. Za pomocą tej funkcji, można dodać kod do projektu podczas dodawania pliku kodu do katalogu.|
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do sprawdzenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
+|`Sdk`| Atrybut opcjonalny.<br /><br /> Odwołuje się do projektu zestawu SDK.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak

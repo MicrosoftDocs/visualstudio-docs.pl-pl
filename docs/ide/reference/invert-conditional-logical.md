@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d59b61cff622a9ba305ebfa86f7c0ebe3c00fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422223"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531675"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Odwróć wyrażenia warunkowe i warunkowego i/lub operatorów
 
@@ -43,4 +43,4 @@ Ta Refaktoryzacja mają zastosowanie do:
 ## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
-- [Wskazówki dla deweloperów platformy .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Wskazówki dla deweloperów platformy .NET](../csharp-developer-productivity.md)

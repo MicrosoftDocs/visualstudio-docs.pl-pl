@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581984"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531666"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 
@@ -52,7 +52,7 @@ Możesz znaleźć wiele zaawansowanych funkcji w **Edytuj** > **zaawansowane** m
 
 |||
 |-|-|
-|[Formatuj dokument](code-styles-and-quick-actions.md#format-document-command)|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe, aby rozdzielić linie w dokumencie.|
+|Formatuj dokument|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe, aby rozdzielić linie w dokumencie.|
 |Formatuj zaznaczenie|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe, aby rozdzielić linie w zaznaczeniu.|
 |Zmień spacje na tabulatory w zaznaczonych wierszach|Zmienia spacje wiodące na tabulatory, gdzie jest to odpowiednie.|
 |Zmień tabulatory na spacje w zaznaczonych wierszach|Zmienia tabulatory wiodące na spacje. Jeśli chcesz przekonwertować wszystkie spacje w pliku na tabulacje (lub wszystkie tabulacje na spacje), możesz użyć `Edit.ConvertSpacesToTabs` i `Edit.ConvertTabsToSpaces` poleceń. Te polecenia nie są wyświetlane w menu programu Visual Studio, ale możesz je wywołać **szybki dostęp** okna lub okna poleceń.|
@@ -84,7 +84,7 @@ Można udostępniać ustawienia programu Visual Studio innemu deweloperowi, usta
 
 Aby zdefiniować nowe klawisze dostępu lub ponownie zdefiniować istniejących klawisze dostępu, przejdź do **narzędzia** > **opcje** > **środowiska**  >  **Klawiatury**. Aby uzyskać więcej informacji o klawiszach dostępu, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Aby uzyskać więcej informacji na temat dostosowywania edytora, zobacz [dostosowanie edytora do](../ide/customizing-the-editor.md). Dla opcji edytora specyficznych dla języka JavaScript, zobacz [opcji edytora języka JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
+Dla opcji edytora specyficznych dla języka JavaScript, zobacz [opcji edytora języka JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Zobacz także
 

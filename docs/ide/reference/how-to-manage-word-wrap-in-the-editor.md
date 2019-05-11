@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789487"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531613"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Instrukcje: Zarządzanie zawijaniem wierszy w edytorze
 
@@ -55,6 +55,5 @@ Jeśli jesteś zaznajomiony z zawijaniem wierszy w Notatniku ++, Sublime Text lu
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dostosowywanie edytora](../../ide/customizing-the-editor.md)
 - [Opcje edytora tekstowego, okno dialogowe](../../ide/reference/text-editor-options-dialog-box.md)
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

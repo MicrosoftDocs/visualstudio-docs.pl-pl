@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790051"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531632"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generowanie z użycia w programie Visual Studio
 
@@ -32,7 +32,7 @@ Dotyczy to generowanie kodu:
 
 1. Skopiuj kod z plikiem i wklej go do nowej bez uwzględniania niezbędne `using` instrukcji. Błąd wynikowe towarzyszy poprawki kodu, który dodaje brakujący `using` instrukcji.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Należy włączyć tę sugestię w **Narzędzia > Opcje > Edytor tekstu > C# > Zaawansowane > przy użyciu dyrektywy**.
 
 2. Wybierz klawisze Ctrl +. Aby otworzyć **szybkie akcje i Refaktoryzacje** menu.
@@ -47,4 +47,4 @@ Dotyczy to generowanie kodu:
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)
-- [Wskazówki dla deweloperów platformy .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Wskazówki dla deweloperów platformy .NET](../csharp-developer-productivity.md)

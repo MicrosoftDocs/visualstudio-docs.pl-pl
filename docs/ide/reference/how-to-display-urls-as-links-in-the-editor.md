@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 250f222dcc3f2645c53a97416cc379a3066c45ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789608"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531652"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Instrukcje: Wyświetlanie adresów URL jako linków w edytorze
 
@@ -45,6 +45,5 @@ Istnieje możliwość mają Edytor kodu, Traktuj Uniform Resource Locator (URL) 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dostosowywanie edytora](../../ide/customizing-the-editor.md)
 - [Opcje edytora tekstowego, okno dialogowe](../../ide/reference/text-editor-options-dialog-box.md)
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

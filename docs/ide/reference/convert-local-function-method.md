@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccddc3aef24ba14245dc568ca5f369e38ce8eba0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968295"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531639"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Konwertuj funkcją lokalną do metody
 
@@ -47,4 +47,4 @@ Ta Refaktoryzacja mają zastosowanie do:
 ## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
-- [Wskazówki dla deweloperów platformy .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Wskazówki dla deweloperów platformy .NET](../csharp-developer-productivity.md)
