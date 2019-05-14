@@ -246,7 +246,7 @@ Metoda testowa musi spełniać następujące wymagania:
 
 ### <a name="analyze-the-test-results"></a>Analizuj wyniki testu
 
-Wynik testu zawiera komunikat, który opisuje błąd. Dla `AreEqual` metody komunikat wyświetla co oczekiwano ( **oczekiwana\<*wartość* >**  parametr) i co zostało rzeczywiście przesłane ( **Rzeczywiste\<*wartość* >** parametru). Oczekiwano saldo, aby zmniejszyć, ale zamiast tego wzrosła o kwotę wycofania.
+Wynik testu zawiera komunikat, który opisuje błąd. Dla `AreEqual` metody komunikat wyświetla co oczekiwano ( **oczekiwana\<*wartość*>** parametr) i co zostało rzeczywiście przesłane ( **Rzeczywiste\<*wartość*>** parametru). Oczekiwano saldo, aby zmniejszyć, ale zamiast tego wzrosła o kwotę wycofania.
 
 Test jednostkowy ma niewykrytych usterek: ilość wycofanie *dodano* do salda konta, a powinien znajdować *odejmować*.
 
