@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab7816e7e1472101f0e84c05a4975f19e3902e27
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816426"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613549"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące programu FxCop i FxCop analizatorów
 
@@ -43,7 +43,7 @@ Aby uruchomić analizatory FxCop analizujące kod najpierw [zainstaluj pakiet Nu
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Mimo został zainstalowany pakiet NuGet analizatory FxCop analizujące kod Pobierz jest ostrzeżenie CA0507
 
-Jeśli zainstalowano analizatory FxCop analizujące kod, ale w dalszym ciągu uzyskać ostrzeżenie CA0507 **"Uruchom analizę kodu" została zastąpiona analizatory FxCop analizujące kod, które są uruchamiane podczas kompilacji**, może być konieczne ustawienie **RunCodeAnalysis**właściwości programu msbuild w pliku projektu, aby **false**. W przeciwnym razie statycznej analizy kodu będą wykonywane po każdej kompilacji.
+Jeśli zainstalowano analizatory FxCop analizujące kod, ale w dalszym ciągu uzyskać ostrzeżenie CA0507 **"" Uruchom analizę kodu"została zastąpiona analizatory FxCop analizujące kod, które są uruchamiane podczas kompilacji"**, może być konieczne ustawienie **RunCodeAnalysis**właściwości programu msbuild w pliku projektu, aby **false**. W przeciwnym razie statycznej analizy kodu będą wykonywane po każdej kompilacji.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>

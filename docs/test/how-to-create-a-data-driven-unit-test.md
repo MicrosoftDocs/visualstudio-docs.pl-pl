@@ -1,6 +1,6 @@
 ---
 title: Tworzenie testów jednostkowych opartych na danych
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979243"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615431"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
 
-Za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego, możesz skonfigurować metodę testu jednostkowego można pobrać wartości używanych w metodzie testowej, ze źródła danych. Metoda jest uruchamiane kolejno dla każdego wiersza w źródle danych, dzięki czemu można łatwo przetestować różne dane wejściowe, korzystając z jednej metody.
+Aby skonfigurować metodę testu jednostkowego, można pobrać wartości ze źródła danych, można użyć środowisko testów jednostkowych Microsoft dla kodu zarządzanego. Metoda jest uruchamiane kolejno dla każdego wiersza w źródle danych, dzięki czemu można łatwo przetestować różne dane wejściowe, korzystając z jednej metody.
 
 Tworzenie testu jednostkowego opartego na danych obejmuje następujące czynności:
 
@@ -43,13 +43,13 @@ Na przykład załóżmy, że masz:
 
 2. Projekt w `MyBank` o nazwie `BankDb` który zarządza transakcji dla kont.
 
-3. Klasa o nazwie `Maths` w `DbBank` projektu, który wykonuje funkcje matematyczne w celu zapewnienia korzystne bank każdej transakcji.
+3. Klasa o nazwie `Maths` w `BankDb` projektu, który wykonuje funkcje matematyczne w celu zapewnienia korzystne bank każdej transakcji.
 
 4. To test jednostkowy projekt o nazwie `BankDbTests` się testowanie zachowania `BankDb` składnika.
 
 5. To test jednostkowy klasę o nazwie `MathsTests` Aby sprawdzić zachowanie `Maths` klasy.
 
-Testujemy metody w `Maths` , dodanie dwóch liczb całkowitych, za pomocą pętli:
+Następnym krokiem jest przetestowanie metody w `Maths` , dodanie dwóch liczb całkowitych, za pomocą pętli:
 
 ```csharp
 public int AddIntegers(int first, int second)
@@ -88,6 +88,9 @@ public TestContext TestContext
 
 W metodzie testowej, uzyskujesz dostęp do danych za pośrednictwem `DataRow` właściwości indeksatora `TestContext`.
 
+> [!NOTE]
+> .NET core nie obsługuje [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) atrybutu. Jeśli spróbujesz uzyskać dostęp do danych testowych w ten sposób w .NET Core i platformy uniwersalnej systemu Windows projektu testu jednostkowego, zobaczysz błąd podobny do **""TestContext"nie zawiera definicji"DataRow"i żadna metoda dostępne rozszerzenia"DataRow"przyjmującej pierwszy argument typu" TestContext "znaleziono (czy nie brakuje przy użyciu dyrektywy lub odwołania do zestawu?)"** .
+
 ## <a name="write-the-test-method"></a>Pisanie metody testowej
 
 Metodę testową dla `AddIntegers` jest dość prosta. Dla każdego wiersza w źródle danych, należy wywołać `AddIntegers` z **Pierwszaliczba** i **Drugaliczba** kolumny wartości jako parametry i sprawdź wartość zwracaną względem **suma** wartość kolumny:
@@ -110,7 +113,7 @@ public void AddIntegers_FromDataSourceTest()
 }
 ```
 
-`Assert` Metoda zawiera komunikat, który wyświetla `x` i `y` wartości iteracji nie powiodło się. Domyślnie wartość potwierdzone `expected` i `actual`, znajdują się już w szczegółach testów zakończonych niepowodzeniem.
+`Assert` Metoda zawiera komunikat, który wyświetla `x` i `y` wartości iteracji nie powiodło się. Domyślnie wartości potwierdzone — `expected` i `actual` — znajdują się już w szczegółach testów zakończonych niepowodzeniem.
 
 ### <a name="specify-the-datasourceattribute"></a>Określ DataSourceAttribute
 

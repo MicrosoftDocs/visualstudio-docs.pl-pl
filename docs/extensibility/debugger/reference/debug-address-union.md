@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e62eefefe0e0a4f28c2ec2efe457017d940aaa2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fddd1fdc0aef74f637c058cd440f6e8309fe3432
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924658"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615286"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 W tym artykule opisano różne rodzaje adresów.
@@ -49,56 +52,45 @@ public struct DEBUG_ADDRESS_UNION {
 }
 ```
 
-## <a name="terms"></a>Warunki
-wartość dwKind A [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) wyliczenia, określając sposób interpretowania Unii.
+## <a name="members"></a>Elementy członkowskie
+`dwKind`\
+Wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) wyliczenia, określając sposób interpretowania Unii.
 
-addr.addrNative
+`addr.addrNative`\
+[C++ tylko] Zawiera [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) struktury, jeśli `dwKind` = ADDRESS_KIND_NATIVE.
 
- [C++ tylko] Zawiera [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) struktury, jeśli `dwKind` = ADDRESS_KIND_NATIVE.
+`addr.addrThisRel`\
+[C++ tylko] Zawiera[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) struktury, jeśli `dwKind` = ADDRESS_KIND_UNMANAGED_THIS_RELATIVE.
 
-addr.addrThisRel
+`addr.addUPhysical`\
+[C++ tylko] Zawiera[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) struktury, jeśli `dwKind` = ADDRESS_KIND_UNMANAGED_PHYSICAL.
 
- [C++ tylko] Zawiera[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) struktury, jeśli `dwKind` = ADDRESS_KIND_UNMANAGED_THIS_RELATIVE.
+`addr.addrMethod`\
+[C++ tylko] Zawiera[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) struktury, jeśli `dwKind` = ADDRESS_KIND_METHOD.
 
-addr.addUPhysical
+`addr.addrField`\
+[C++ tylko] Zawiera[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) struktury, jeśli `dwKind` = ADDRESS_KIND_FIELD.
 
- [C++ tylko] Zawiera[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) struktury, jeśli `dwKind` = ADDRESS_KIND_UNMANAGED_PHYSICAL.
+`addr.addrLocal`\
+[C++ tylko] Zawiera[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) struktury, jeśli `dwKind` = ADDRESS_KIND_LOCAL.
 
-addr.addrMethod
+`addr.addrParam`\
+[C++ tylko] Zawiera[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) struktury, jeśli `dwKind` = ADDRESS_KIND_PARAM.
 
- [C++ tylko] Zawiera[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) struktury, jeśli `dwKind` = ADDRESS_KIND_METHOD.
+`addr.addrArrayElem`\
+[C++ tylko] Zawiera[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) struktury, jeśli `dwKind` = ADDRESS_KIND_ARRAYELEM.
 
-addr.addrField
+`addr.addrRetVal`\
+[C++ tylko] Zawiera[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) struktury, jeśli `dwKind` = ADDRESS_KIND_RETVAL.
 
- [C++ tylko] Zawiera[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) struktury, jeśli `dwKind` = ADDRESS_KIND_FIELD.
+`addr.unused`\
+[C++ tylko] dopełnienia.
 
-addr.addrLocal
+`addr`\
+[C++ tylko] Nazwa Unii.
 
- [C++ tylko] Zawiera[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) struktury, jeśli `dwKind` = ADDRESS_KIND_LOCAL.
-
-addr.addrParam
-
- [C++ tylko] Zawiera[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) struktury, jeśli `dwKind` = ADDRESS_KIND_PARAM.
-
-addr.addrArrayElem
-
- [C++ tylko] Zawiera[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) struktury, jeśli `dwKind` = ADDRESS_KIND_ARRAYELEM.
-
-addr.addrRetVal
-
- [C++ tylko] Zawiera[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) struktury, jeśli `dwKind` = ADDRESS_KIND_RETVAL.
-
-addr.unused
-
- [C++ tylko] dopełnienia.
-
-addr
-
- [C++ tylko] Nazwa Unii.
-
-unionmember
-
- [C# tylko] Ta wartość musi być wprowadzane do typu odpowiednią strukturą na podstawie `dwKind`. Zobacz uwagi dla skojarzenia między `dwKind` i interpretacji Unii.
+`unionmember`\
+[C# tylko] Ta wartość musi być wprowadzane do typu odpowiednią strukturą na podstawie `dwKind`. Zobacz uwagi dla skojarzenia między `dwKind` i interpretacji Unii.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest częścią [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struktury i reprezentuje jeden z wielu różnych rodzajów adresów ( `DEBUG_ADDRESS` struktury jest wypełniane przez wywołanie [getaddress —](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metody).
@@ -149,7 +141,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

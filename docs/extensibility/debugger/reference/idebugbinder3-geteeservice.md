@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877562"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614898"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Ta metoda zwraca żądanej usługi.
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `vendor`
+## <a name="parameters"></a>Parametry
+`vendor`\
+[in] `GUID` dostawcy (wartość null jest dopuszczalne).
 
- [in] `GUID` dostawcy (wartość null jest dopuszczalne).
+`language`\
+[in] `GUID` języka (wartość null jest dopuszczalne).
 
- `language`
+`iid`\
+[in] `IID` usługi do uzyskania.
 
- [in] `GUID` języka (wartość null jest dopuszczalne).
-
- `iid`
-
- [in] `IID` usługi do uzyskania.
-
- `ppService`
-
- [out] Interfejs do żądanej usługi.
+`ppService`\
+[out] Interfejs do żądanej usługi.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -65,7 +64,7 @@ Int GetEEService(
 ## <a name="remarks"></a>Uwagi
  Przekaż `IID` dla [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interfejsu (`IID_IEEVisualizerServiceProvider`) aby zobaczyć, czy usługa Wizualizator typów jest dostępna. Jeśli tak, można uzyskać Ewaluator wyrażeń [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) wizualizatorów typu obsługiwany przez interfejs. Zobacz [Visualizing i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md) Aby uzyskać szczegółowe informacje.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

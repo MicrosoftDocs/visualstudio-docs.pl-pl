@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01cb000519647c415f68b369f5d2147a30e705e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7741ad4f7b587cbd31888e643557c744ca4200e2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923548"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614967"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Ta metoda pobiera obiekt pamięci, który reprezentuje ten obiekt jest powiązany z pamięci.
@@ -40,23 +43,20 @@ int GetMemoryObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pField`
+## <a name="parameters"></a>Parametry
+`pField`\
+[in] Określa pole, które można pobrać obiektu pamięci dla.
 
- [in] Określa pole, które można pobrać obiektu pamięci dla.
+`uConstant`\
+[in] Reprezentuje adres pamięci lub wartość stałej wartości.
 
- `uConstant`
-
- [in] Reprezentuje adres pamięci lub wartość stałej wartości.
-
- `ppObject`
-
- [out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący pamięci, którą jest powiązany ten obiekt.
+`ppObject`\
+[out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący pamięci, którą jest powiązany ten obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

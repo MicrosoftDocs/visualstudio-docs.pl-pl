@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd80c54d436698e14db69bb356bd0cca61aa6ea3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d090767cd50f465ea35033875cb84597fa8c6a47
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923985"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615133"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Pobiera typ elementu w tablicy.
@@ -36,10 +39,9 @@ int GetElementType(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppType`
-
- [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt, który opisuje typ elementu.
+## <a name="parameters"></a>Parametry
+`ppType`\
+[out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt, który opisuje typ elementu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -47,6 +49,6 @@ int GetElementType(
 ## <a name="remarks"></a>Uwagi
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) obiektu przyjęto założenie, że wszystkie elementy tablicy są tego samego typu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

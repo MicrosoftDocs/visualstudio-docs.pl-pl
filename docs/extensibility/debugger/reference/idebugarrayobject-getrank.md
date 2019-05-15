@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0391030e77e5959fdc28c94f63e099e5c505d77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aabaaed13de191e4e0ee8d8d0e8422d3df144210
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923731"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615212"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 Pobiera rangę tablicy, czyli liczbę wymiarów.
@@ -36,10 +39,9 @@ int GetRank(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwRank`
-
- [out] Zwraca rangę.
+## <a name="parameters"></a>Parametry
+`pdwRank`\
+[out] Zwraca rangę.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -47,5 +49,5 @@ int GetRank(
 ## <a name="remarks"></a>Uwagi
  Użyj [getdimensions —](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) metodę, aby pobrać rozmiar każdego wymiaru obiektu array.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

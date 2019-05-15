@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c091c7696867f369262a81259105dcf23fbe4c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2097a2168b40129c66ae6c48e75fee385ea81a45
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877742"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615258"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 Pobiera ranga lub liczba wymiarów tablicy.
@@ -36,10 +39,9 @@ int GetRank(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwRank`
-
- [out] Zwraca rangę.
+## <a name="parameters"></a>Parametry
+`pdwRank`\
+[out] Zwraca rangę.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -47,5 +49,5 @@ int GetRank(
 ## <a name="remarks"></a>Uwagi
  Ranga tablicy odpowiada liczbę wymiarów. W języku C++ i C# są naprawdę tablice tablic wielowymiarowych tablic, a w związku z tym można uznać za Jednowymiarowa tablica (i `GetRank` metoda zawsze zwraca 1). W [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], z drugiej strony, wielowymiarowe tablice są obsługiwane inaczej i rangę tablicy takich odzwierciedla liczbę wymiarów (i `GetRank` metoda zawsze zwraca liczbę wymiarów).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

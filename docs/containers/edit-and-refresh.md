@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: 7e8c57bfbfcf63c845c8d8eac3560e2327a99d4d
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: cdcfd381d74af4e3a11f96518ab3f31e79995978
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65084065"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614541"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 
@@ -96,6 +96,28 @@ Często zmian będzie potrzebna jest dalsza inspekcji, korzystając z funkcji de
 5. Przełącz się do programu Visual Studio, aby wyświetlić punkt przerwania, sprawdź wartości i tak dalej.
 
    ![Punkt przerwania](media/edit-and-refresh/breakpoint.png)
+
+## <a name="create-a-net-framework-console-app"></a>Tworzenie aplikacji konsoli .NET Framework
+
+Korzystając z projektów aplikacji konsoli .NET Framework, opcję, aby dodać obsługę platformy Docker bez orchestration nie jest obsługiwane. Nadal można użyć poniższej procedury, nawet wtedy, gdy jest używany tylko do tego pojedynczego projektu platformy Docker.
+
+1. Utwórz nowy projekt aplikacji platformy .NET Framework konsoli.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **Obsługa aranżacji kontenerów**.  W wyświetlonym oknie dialogowym wybierz **narzędzia Docker Compose**. Plik Dockerfile zostanie dodany do projektu i narzędzia Docker Compose projekt jest dodawany z plikami skojarzone pomocy technicznej.
+
+### <a name="debug-with-breakpoints"></a>Debugować z punktami przerwania
+
+1. W **Eksploratora rozwiązań**, otwórz `Program.cs`.
+2. Zastąp zawartość `Main` metoda następującym kodem:
+
+   ```csharp
+       System.Console.WriteLine("Hello, world!");
+   ```
+
+3. Ustaw punkt przerwania na lewo od linii kodu.
+4. Naciśnij klawisz F5, aby rozpocząć debugowanie i trafiony punkt przerwania.
+5. Przełącz się do programu Visual Studio, aby wyświetlić punkt przerwania, sprawdź wartości i tak dalej.
+
+   ![Punkt przerwania](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="summary"></a>Podsumowanie
 

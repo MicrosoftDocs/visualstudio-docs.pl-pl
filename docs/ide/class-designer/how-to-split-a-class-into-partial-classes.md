@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac7dc37787a91504988fc43636d49d2b3c9ce0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975154"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615415"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Instrukcje: Podział klasy na klasy częściowe w Projektancie klas
 
@@ -36,7 +36,7 @@ Istnieją dwa rodzaje metod częściowych. W języku C# są nazywane deklarowani
 Poniższe przykłady dzielenie definicji klasy `Employee` na dwie deklaracje, z których każdy definiuje różne procedury. Dwie definicje częściowe w przykładach można w jednym pliku źródłowym lub w dwóch innych plików źródłowych.
 
 > [!NOTE]
-> Visual Basic używa definicji częściowej klasy do oddzielania programu Visual Studio — wygenerowanego kodu z kodu utworzonych przez użytkownika. Kod jest dzielony na pliki źródłowe dyskretnych. Na przykład **projektanta formularzy Windows** definiuje częściowe klasy dla kontrolek, takich jak `Form`. Kod wygenerowany w tych kontrolek nie należy modyfikować.
+> Visual Basic używa definicji częściowej klasy do oddzielania kod generowany w programie Visual Studio z poziomu kodu utworzonych przez użytkownika. Kod jest dzielony na pliki źródłowe dyskretnych. Na przykład **projektanta formularzy Windows** definiuje częściowe klasy dla kontrolek, takich jak `Form`. Kod wygenerowany w tych kontrolek nie należy modyfikować.
 
 Aby uzyskać więcej informacji na temat typów częściowych w języku Visual Basic, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial).
 

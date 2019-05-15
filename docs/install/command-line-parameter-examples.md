@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4196916958de2df4f9c3a12f030b22d712e87502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b5d98d9f3b7453cf0337d529b9ef99815d92
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974242"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614504"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Przykładowe parametry wiersza polecenia do zainstalowania programu Visual Studio
 
@@ -67,7 +67,21 @@ Aby uzyskać listę obciążeń i składników, które można zainstalować przy
 * Umożliwia w plikach wsadowych lub skrypty poczekaj, aż Instalator programu Visual Studio w taki sposób, aby ukończyć przed wykonaniem polecenia dalej. W przypadku plików usługi batch `%ERRORLEVEL%` zmienna środowiskowa będzie zawierać wartość zwracaną przez polecenie, zgodnie z opisem w [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony. Niektóre narzędzia polecenia wymaga dodatkowych parametrów, aby czekać na zakończenie i w celu uzyskania wartości zwracanej przez Instalator. Oto przykład dodatkowe parametry, które są używane z polecenia skryptu programu PowerShell "Procesu uruchamiania":
 
    ```cmd
-   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+   start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
+   echo %errorlevel%
+   ```
+   ```PS
+   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   ```
+   lub
+   ```PS
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = "vs_enterprise.exe"
+    $startInfo.Arguments = "--all --quiet --wait" 
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $startInfo
+    $process.Start() 
+    $process.WaitForExit()
    ```
 
 * Pierwszy "--oczekiwania" jest używany przez Instalatora programu Visual Studio, a drugi "-oczekiwania" jest używany przez "Procesu uruchamiania" czekać na zakończenie. "-PassThru" parametr jest używany przez "Procesu uruchamiania" na potrzeby Instalatora kod zakończenia jego zwracanej wartości.

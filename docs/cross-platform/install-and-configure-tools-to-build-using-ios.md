@@ -1,7 +1,7 @@
 ---
 title: Instalowanie i Konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 05/21/2018
+ms.date: 05/13/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818505"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614436"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i Konfigurowanie narzędzia umożliwiające tworzenie za pomocą systemu iOS
 
@@ -32,13 +32,15 @@ Po zainstalowaniu narzędzia do tworzenia przy użyciu systemu iOS można znale�
 
 Aby zainstalować i używać zdalnego agenta do tworzenia kodu dla systemu iOS, najpierw musisz mieć następujące wymagania wstępne:
 
-- Komputer Mac z systemem OS X Mavericks (w wersji 10.9) lub nowszy
+- Komputerze Mac z systemem macOS w wersji Mojave, 10.14 lub nowszej
 
 - [Identyfikatora Apple ID](https://appleid.apple.com/)
 
-- Aktywne [systemu iOS w programie dla deweloperów](https://developer.apple.com/programs/ios/) konta z danymi firmy Apple
+- Aktywne [Apple Developer Program](https://developer.apple.com/programs/) konta
 
-- [Środowisko Xcode](https://developer.apple.com/xcode/downloads/) w wersji 6 lub nowszej.
+   Możesz uzyskać bezpłatne konto, umożliwiająca ładowania bezpośredniego aplikacji przeznaczonych na urządzenia z systemem iOS, aby tylko do testowania, ale nie do dystrybucji.
+
+- [Środowisko Xcode](https://developer.apple.com/xcode/downloads/) wersji 10.2.1 lub nowszy
 
    Środowisko Xcode, można pobrać z Store aplikacji.
 
@@ -48,23 +50,22 @@ Aby zainstalować i używać zdalnego agenta do tworzenia kodu dla systemu iOS, 
 
    `xcode-select --install`
 
-- Tożsamość skonfigurowane w środowisku Xcode do podpisywania systemu iOS
+- Identyfikator Apple ID konto skonfigurowane w środowisku Xcode jako tożsamości podpisywania do podpisywania aplikacji
 
-   Aby uzyskać szczegółowe informacje dotyczące uzyskiwania tożsamości podpisywania systemu iOS, zobacz [obsługi tożsamości i certyfikaty podpisywania](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) w bibliotece deweloperów systemu iOS. Aby wyświetlić lub ustaw tożsamość podpisywania w środowisku Xcode, otwórz **Xcode** menu i wybrać **preferencje**. Wybierz **kont** i wybierz identyfikator Apple ID, a następnie wybierz **Wyświetl szczegóły** przycisku.
+   Aby wyświetlić lub ustaw tożsamość podpisywania w środowisku Xcode, otwórz **Xcode** menu i wybrać **preferencje**. Wybierz **kont** i wybierz identyfikator Apple ID, a następnie wybierz **Wyświetl szczegóły** przycisku. Zobacz [Dodaj swoje konto Apple ID](https://help.apple.com/xcode/mac/current/#/devaf282080a) szczegółowe informacje.
+   
+   Szczegółowe informacje na temat wymagań dotyczących podpisywania, zobacz [co to jest podpisywania aplikacji](https://help.apple.com/xcode/mac/current/#/dev3a05256b8). 
 
-- Jeśli używasz urządzenia z systemem iOS do tworzenia aplikacji, profil aprowizacji skonfigurowane w środowisku Xcode dla Twojego urządzenia
+- Jeśli używasz urządzenia z systemem iOS do tworzenia aplikacji, profilu inicjowania obsługi administracyjnej skonfigurowane w środowisku Xcode dla Twojego urządzenia
 
-   Aby uzyskać szczegółowe informacje na temat tworzenia profilów aprowizacji, zobacz [Create provisioning profile za pomocą Member Center przeznaczonej](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) w bibliotece deweloperów systemu iOS.
+   Środowisko Xcode zapewnia automatyczne podpisywanie, w którym tworzy certyfikaty podpisywania dla Ciebie zgodnie z potrzebami. Aby uzyskać szczegółowe informacje na temat Automatyczne podpisywanie programu Xcode zobacz [automatyczne podpisywanie](https://help.apple.com/xcode/mac/current/#/dev80cc24546).
 
-- [Node.js](https://nodejs.org/)
+   Jeśli chcesz wykonać ręczne podpisywanie, musisz utworzyć profil inicjowania obsługi administracyjnej dla aplikacji. Aby uzyskać szczegółowe informacje na temat tworzenia profilów aprowizacji, zobacz [do projektowania, profil inicjowania obsługi administracyjnej](https://help.apple.com/developer-account/#/devf2eb157f8). 
 
-   Zainstaluj najnowszą wersję długi okres pomocy technicznej (LTS) 8.x środowiska Node.js na komputerze Mac. Pamiętaj, że inne najnowsze wersje mogą nie obsługiwać niektórych modułów używane w vcremote może spowodować niepowodzenie instalacji vcremote.
+- [Node.js](https://nodejs.org/) wersji 8.11.3 i Menedżera npm w wersji 5.6.0
 
-- Zaktualizowana wersja Menedżera npm
+   Zainstaluj 8.11.3 wersję środowiska Node.js na komputerze Mac. Jeśli zainstalujesz pakiet Node.js, powinien mu towarzyszyć npm w wersji 5.6.0. Należy pamiętać, że inne wersje środowiska Node.js i narzędzie npm mogą nie obsługiwać niektóre moduły używane w vcremote agenta zdalnego, co może powodować niepowodzenie instalacji vcremote.
 
-   Wersja programu npm, dostarczanego przy użyciu środowiska Node.js nie może być wystarczająco długi, aby zainstalować vcremote. Aby zaktualizować npm, Otwórz aplikację Terminal na komputerze Mac, a następnie wprowadź następujące polecenie:
-
-   `sudo npm install -g npm@latest`
 
 ## <a name="Install"></a> Zainstaluj agenta zdalnego dla systemu iOS
 
@@ -131,7 +132,7 @@ Po uruchomieniu agenta zdalnego można użyć go w programie Visual Studio, dop�
 
 Aby połączyć się z agentem zdalnym z programu Visual Studio, należy określić konfigurację zdalnego w opcjach programu Visual Studio.
 
-#### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Aby skonfigurować agenta zdalnego w programie Visual Studio
+### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Aby skonfigurować agenta zdalnego w programie Visual Studio
 
 1. Jeśli agent nie jest już uruchomiona na komputerze Mac, wykonaj kroki opisane w [uruchomić agenta zdalnego](#Start). Komputer Mac musi być uruchomiona vcremote dla programu Visual Studio pomyślnie pair, łączenie i skompiluj projekt.
 
@@ -168,7 +169,7 @@ Visual Studio używa te same informacje, aby nawiązać połączenie zdalnego ag
 
 Po uruchomieniu agenta zdalnego po raz pierwszy, wygenerowany kod PIN jest ważny przez ograniczony okres — domyślnie 10 minut. Visual Studio nie parowania z agentem zdalnym przed wygaśnięciem, należy wygenerować nowy kod PIN.
 
-#### <a name="to-generate-a-new-pin"></a>Aby wygenerować nowy kod PIN
+### <a name="to-generate-a-new-pin"></a>Aby wygenerować nowy kod PIN
 
 1. Zatrzymaj agenta, lub Otwórz drugie okno terminala aplikacji na komputerze Mac, a następnie go użyć, aby wprowadzić polecenie.
 
@@ -182,7 +183,7 @@ Po uruchomieniu agenta zdalnego po raz pierwszy, wygenerowany kod PIN jest ważn
 
 Ze względów bezpieczeństwa serwera certyfikatów tej pary programu Visual Studio z agentem zdalnym są powiązane z nazwy hosta lub adres IP Twojego komputera Mac. W przypadku zmiany tych wartości, należy wygenerować nowy certyfikat serwera i następnie ponownie skonfigurować program Visual Studio z nowymi wartościami.
 
-#### <a name="to-generate-a-new-server-certificate"></a>Aby wygenerować nowy certyfikat serwera
+### <a name="to-generate-a-new-server-certificate"></a>Aby wygenerować nowy certyfikat serwera
 
 1. Zatrzymaj agenta vcremote.
 
@@ -204,7 +205,7 @@ Ze względów bezpieczeństwa serwera certyfikatów tej pary programu Visual Stu
 
 Można skonfigurować agenta zdalnego przy użyciu różnych opcji wiersza polecenia. Na przykład można określić port do nasłuchiwania żądań kompilacji i określ maksymalną liczbę kompilacji do obsługi w systemie plików. Domyślnie limit wynosi 10 kompilacji. Spowoduje to usunięcie zdalnego agenta kompilacji, które przekraczają maksimum podczas zamykania.
 
-#### <a name="to-configure-the-remote-agent"></a>Aby skonfigurować agenta zdalnego
+### <a name="to-configure-the-remote-agent"></a>Aby skonfigurować agenta zdalnego
 
 - Aby wyświetlić pełną listę poleceń agenta zdalnego, w aplikacji Terminal, wpisz:
 
@@ -233,6 +234,50 @@ Można skonfigurować agenta zdalnego przy użyciu różnych opcji wiersza polec
    `vcremote --config config_file_path`
 
    gdzie *config_file_path* jest ścieżka do pliku konfiguracji w formacie JSON. Opcje uruchamiania i ich wartości nie może zawierać łączników.
+
+## <a name="troubleshoot-the-remote-agent"></a>Rozwiązywanie problemów z agentem zdalnym
+
+### <a name="debugging-on-an-ios-device"></a>Debugowanie na urządzeniu z systemem iOS
+
+Jeśli debugowanie na urządzeniu z systemem iOS nie działa, mogą występować problemy z narzędziem [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller), który jest używany do komunikacji z urządzenia z systemem iOS. To narzędzie jest zwykle instalowany z Homebrew podczas instalacji vcremote. Wykonaj poniższe kroki, aby uniknąć tego problemu.
+
+Otwórz aplikację Terminal i zaktualizuj ideviceinstaller i jego zależności, wykonując następujące czynności w kolejności:
+
+1. Upewnij się, że jest aktualizowany Homebrew
+
+   `brew update`
+
+1. Odinstaluj libimobiledevice i usbmuxd
+
+   `brew uninstall --ignore-dependencies libimobiledevice`
+
+   `brew uninstall --ignore-dependencies usbmuxd`
+
+1. Zainstaluj najnowszą wersję libimobiledevice usbmuxd
+
+   `brew install --HEAD usbmuxd`
+
+   `brew unlink usbmuxd`
+
+   `brew link usbmuxd`
+
+   `brew install --HEAD libimobiledevice`
+
+1. Odinstaluj i ponownie zainstaluj ideviceinstaller
+
+   `brew uninstall ideviceinstaller`
+
+   `brew install ideviceinstaller`
+
+Sprawdź, czy tego ideviceinstaller może komunikować się z urządzeniem poprzez podjęcie próby wyświetlić listę zainstalowanych na urządzeniu:
+
+`ideviceinstaller -l`
+
+Jeśli błędy ideviceinstaller, że nie można uzyskać dostęp do folderu `/var/db/lockdown`, zmienianie uprawnień w folderze przy użyciu:
+
+`sudo chmod 777 /var/db/lockdown`
+    
+Sprawdź ponownie, jeśli ideviceinstaller może komunikować się z urządzeniem.
 
 ## <a name="see-also"></a>Zobacz także
 

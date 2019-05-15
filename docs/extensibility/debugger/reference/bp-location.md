@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85f8c915f5c0d6d81214220f78c7db0544777cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 94e731b56bf5c7554edf11620435cd24778e8e9d
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888985"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615356"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Określa typ struktury, używane do opisywania lokalizację punktu przerwania.
@@ -51,51 +54,41 @@ public struct BP_LOCATION {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-`bpLocationType` Wartość z zakresu od [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) wyliczenie używaną do interpretacji parametru `bpLocation` Unii lub `unionmemberX` elementów członkowskich.
+`bpLocationType`\
+Wartość z zakresu od [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) wyliczenie używaną do interpretacji parametru `bpLocation` Unii lub `unionmemberX` elementów członkowskich.
 
-`bpLocation`.`bplocCodeFileLine`
+`bpLocation`.`bplocCodeFileLine`\
+[C++ tylko] Zawiera [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
 
- [C++ tylko] Zawiera [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
+`bpLocation.bplocCodeFuncOffset`\
+[C++ tylko] Zawiera [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
 
-`bpLocation.bplocCodeFuncOffset`
+`bpLocation.bplocCodeContext`\
+[C++ tylko] Zawiera [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
 
- [C++ tylko] Zawiera [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
+`bpLocation.bplocCodeString`\
+[C++ tylko] Zawiera [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_STRING`.
 
-`bpLocation.bplocCodeContext`
+`bpLocation.bplocCodeAddress`\
+[C++ tylko] Zawiera [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
 
- [C++ tylko] Zawiera [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
+`bpLocation.bplocDataString`\
+[C++ tylko] Zawiera [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) struktury, jeśli `bpLocationType`  =  `BPLT_DATA_STRING`.
 
-`bpLocation.bplocCodeString`
+`bpLocation.bplocResolution`\
+[C++ tylko] Zawiera [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) struktury, jeśli `bpLocationType`  =  `BPLT_RESOLUTION`.
 
- [C++ tylko] Zawiera [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_STRING`.
+`unionmember1`\
+[C# tylko] Zobacz uwagi na temat sposobu interpretacji.
 
-`bpLocation.bplocCodeAddress`
+`unionmember2`\
+[C# tylko] Zobacz uwagi na temat sposobu interpretacji.
 
- [C++ tylko] Zawiera [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
+`unionmember3`\
+[C# tylko] Zobacz uwagi na temat sposobu interpretacji.
 
-`bpLocation.bplocDataString`
-
- [C++ tylko] Zawiera [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) struktury, jeśli `bpLocationType`  =  `BPLT_DATA_STRING`.
-
-`bpLocation.bplocResolution`
-
- [C++ tylko] Zawiera [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) struktury, jeśli `bpLocationType`  =  `BPLT_RESOLUTION`.
-
-`unionmember1`
-
- [C# tylko] Zobacz uwagi na temat sposobu interpretacji.
-
-`unionmember2`
-
- [C# tylko] Zobacz uwagi na temat sposobu interpretacji.
-
-`unionmember3`
-
- [C# tylko] Zobacz uwagi na temat sposobu interpretacji.
-
-`unionmember4`
-
- [C# tylko] Zobacz uwagi na temat sposobu interpretacji.
+`unionmember4`\
+[C# tylko] Zobacz uwagi na temat sposobu interpretacji.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest elementem członkowskim [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
@@ -145,7 +138,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)

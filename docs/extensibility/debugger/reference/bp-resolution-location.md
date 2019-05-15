@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888979"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615369"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Określa strukturę Rozpoznawanie lokalizacji punktu przerwania.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-`bpType` Wartość z zakresu od [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) wyliczenie, które określa, jak interpretować `bpResLocation` Unii lub `unionmemberX` elementów członkowskich.
+`bpType`\
+Wartość z zakresu od [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) wyliczenie, które określa, jak interpretować `bpResLocation` Unii lub `unionmemberX` elementów członkowskich.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ tylko] Zawiera [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) struktury, jeśli `bpType`  =  `BPT_CODE`.
 
- [C++ tylko] Zawiera [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) struktury, jeśli `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ tylko] Zawiera [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struktury, jeśli `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ tylko] Symbol zastępczy.
 
- [C++ tylko] Zawiera [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struktury, jeśli `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# tylko] Zobacz uwagi na temat sposobu interpretacji.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# tylko] Zobacz uwagi na temat sposobu interpretacji.
 
- [C++ tylko] Symbol zastępczy.
+`unionmember3`\
+[C# tylko] Zobacz uwagi na temat sposobu interpretacji.
 
-`unionmember1`
-
- [C# tylko] Zobacz uwagi na temat sposobu interpretacji.
-
-`unionmember2`
-
- [C# tylko] Zobacz uwagi na temat sposobu interpretacji.
-
-`unionmember3`
-
- [C# tylko] Zobacz uwagi na temat sposobu interpretacji.
-
-`unionmember4`
-
- [C# tylko] Zobacz uwagi na temat sposobu interpretacji.
+`unionmember4`\
+[C# tylko] Zobacz uwagi na temat sposobu interpretacji.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest elementem członkowskim [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) i [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.
@@ -123,7 +120,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

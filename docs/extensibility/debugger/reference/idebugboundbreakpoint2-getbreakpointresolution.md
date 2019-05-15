@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e3e4cfe144713b7747f74e754a3a265cbbdb15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ab2e65b80ab1494828fa0945e5fe8a6b41f62f71
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923620"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614859"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Pobiera rozwiązanie punktu przerwania, który opisuje tego punktu przerwania.
@@ -37,10 +40,9 @@ int GetBreakpointResolution( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`ppBPResolution`
-
- [out] Zwraca [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfejs, który reprezentuje jedną z następujących czynności:
+## <a name="parameters"></a>Parametry
+`ppBPResolution`\
+[out] Zwraca [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfejs, który reprezentuje jedną z następujących czynności:
 
 - Obiekt rozwiązania punktu przerwania w tym artykule opisano lokalizacja w kodzie, w którym została powiązana punktu przerwania w kodzie.
 
@@ -86,7 +88,7 @@ HRESULT CBoundBreakpoint::GetBreakpointResolution(
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)

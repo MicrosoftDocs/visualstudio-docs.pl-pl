@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d4622e1de76406568cda4761005c5482f3169d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 39c1c8b6d8294676df3527cafbdd035a9da84548
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877500"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615081"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 Ta metoda określa typu run-time obiektu.
@@ -38,14 +41,12 @@ int ResolveRuntimeType(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pObject`
+## <a name="parameters"></a>Parametry
+`pObject`\
+[in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) zostać rozpoznane.
 
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) zostać rozpoznane.
-
- `ppResolved`
-
- [out] Zwraca typ obiektu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+`ppResolved`\
+[out] Zwraca typ obiektu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -53,7 +54,7 @@ int ResolveRuntimeType(
 ## <a name="remarks"></a>Uwagi
  Zawsze typu run-time obiektu nie jest znany w czasie kompilacji. Na przykład za pomocą polimorfizm, argument można przekazać do funkcji jako swojej klasy bazowej, takie jak klasa przycisków. Rzeczywisty argument może być klasy pochodnej, takich jak klasa przycisków radiowych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

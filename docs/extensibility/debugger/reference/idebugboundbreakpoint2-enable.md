@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 267f7b3fed8df1a326bca9dd5c1ca8128330ee16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c0f178497b9f53c488c8f4cb3142559a7883778a
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877441"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614661"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Włącza lub wyłącza punkt przerwania.
@@ -37,10 +40,9 @@ int Enable( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`fEnable`
-
- [in] Ustawianie pozycji różna od zera (`TRUE`) Aby włączyć lub zero (`FALSE`) można wyłączyć punkt przerwania.
+## <a name="parameters"></a>Parametry
+`fEnable`\
+[in] Ustawianie pozycji różna od zera (`TRUE`) Aby włączyć lub zero (`FALSE`) można wyłączyć punkt przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązany punkt przerwania jest ustawiony na `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenia).
@@ -95,6 +97,6 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

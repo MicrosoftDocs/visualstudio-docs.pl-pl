@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902166"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614516"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
@@ -267,7 +267,7 @@ Po wybraniu **wyrażenia warunkowego**, możesz wybrać dwa warunki: **Ma warto�
 
 2. Rozpocznij debugowanie, a po wstrzymuje wykonywanie w punkcie przerwania, wybierz **debugowania** > **Windows** > **lokalne** lub **Alt** + **4** otworzyć **lokalne** okna.
 
-   Znajdź punkt przerwania w **lokalne** okna, kliknij go prawym przyciskiem myszy, a następnie wybierz pozycję **wprowadzić identyfikator obiektu**.
+   Znajdź wystąpienie określonego obiektu w **lokalne** okna, kliknij go prawym przyciskiem myszy, a następnie wybierz pozycję **wprowadzić identyfikator obiektu**.
 
    Powinien zostać wyświetlony **$** oraz liczbą **lokalne** okna. Jest to identyfikator obiektu.
 

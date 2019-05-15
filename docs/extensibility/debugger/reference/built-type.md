@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1a1ecf55b017319850f97c23d926a650c7e01680
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924773"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615347"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 Ta struktura określa informacje o typie pola pobierana z metadanych.
@@ -40,12 +43,15 @@ public struct BUILT_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>Parametry
-Identyfikator ulAppDomainID aplikacji, z którego pochodzą symbolu. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
+## <a name="members"></a>Elementy członkowskie
+`ulAppDomainID`\
+Identyfikator aplikacji, z którego pochodzą symbolu. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
 
-guidModule identyfikator GUID modułu, który zawiera tego pola.
+`guidModule`\
+Identyfikator GUID moduł, który zawiera tego pola.
 
-pUnderlyingField [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) identyfikowanie z polem powiązanych z tym polem skompilowany obiekt.
+`pUnderlyingField`\
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md) identyfikowanie z polem powiązanych z tym polem skompilowany obiekt.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest wyświetlany jako część Unii w [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struktury, kiedy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_BUILT` (wartość z zakresu od [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Wyliczenie).
@@ -57,7 +63,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

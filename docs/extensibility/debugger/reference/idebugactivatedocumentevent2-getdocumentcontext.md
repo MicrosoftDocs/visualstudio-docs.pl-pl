@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45923ef6d219e7f7dd79581856d0875b792130d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ac048a26036457345f652a8d23a55fae54d59f0
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924248"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615537"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Pobiera kontekst dokumentu, który opisuje pozycji w dokumencie, który ma być przeprowadzone przy użyciu pakietu debugowania aktywnego.
@@ -37,10 +40,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppDocContext`
-
- [out] Zwraca [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiekt, który reprezentuje pozycji w dokumencie pliku źródłowym.
+## <a name="parameters"></a>Parametry
+`ppDocContext`\
+[out] Zwraca [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiekt, który reprezentuje pozycji w dokumencie pliku źródłowym.
 
 ## <a name="remarks"></a>Uwagi
  Aby wyświetlić daszek, na przykład, mogą być używane tej pozycji.
@@ -48,6 +50,6 @@ int GetDocumentContext ( 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

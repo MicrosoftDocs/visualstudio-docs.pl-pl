@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 273735feeca633a1104a072c0e4d37c520d9de23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 97e783947055bda86a35bb8b68a44c13da3613c0
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923416"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614697"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 Ustawia lub zmienia liczba — dostęp próbny skojarzony ten powiązany punkt przerwania.
@@ -37,10 +40,9 @@ int SetPassCount( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `bpPassCount`
-
- [in] [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która określa liczbę — dostęp próbny.
+## <a name="parameters"></a>Parametry
+`bpPassCount`\
+[in] [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która określa liczbę — dostęp próbny.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązany punkt przerwania jest ustawiony na `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenia).
@@ -50,7 +52,7 @@ int SetPassCount( 
 
  Dowolnej liczbie — dostęp próbny, który był wcześniej skojarzony z tego punktu przerwania zostaną utracone.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)
 - [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)

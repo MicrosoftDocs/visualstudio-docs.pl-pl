@@ -9,12 +9,12 @@ f1_keywords:
 manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 8a256d878339ddbfc1e37662e829d752f1be7bd6
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.openlocfilehash: 4779c9aa27f65a3295f3a234e4f46314d7fe3b69
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346775"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613578"
 ---
 # <a name="f1-help"></a>F1 Pomoc
 
@@ -26,10 +26,11 @@ Jeśli szukasz pomocy F1 — słowo kluczowe lub nazwa interfejsu API należy ku
 
 ## <a name="useful-links"></a>Przydatne linki
 
-- Aby uzyskać ogólne informacje na temat programu Visual Studio, zobacz [Omówienie programu Visual Studio](../../get-started/visual-studio-ide.md).
-- Aby uzyskać pomoc, Edytor tekstu Visual Studio, zobacz [za pomocą edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Wyszukaj dokumentację referencyjną w [przeglądarka interfejsu API .NET](/dotnet/api/).
 - C# Pomoc [przewodnik C#](/dotnet/csharp/index).
 - Aby uzyskać pomoc w języku Visual Basic, zobacz [Przewodnik po Visual Basic](/dotnet/visual-basic/).
 - Aby uzyskać F# pomocy, zobacz [ F# przewodnik](/dotnet/fsharp/).
 - Aby uzyskać pomoc w języku Python, zobacz [języka Python w programie Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
 - Aby uzyskać pomoc w języku C++, zobacz [C++ w programie Visual Studio](/cpp/visual-cpp-in-visual-studio).
+- Aby uzyskać informacje na temat programu Visual Studio, zobacz [Omówienie programu Visual Studio](../../get-started/visual-studio-ide.md).
+- Aby uzyskać pomoc, Edytor tekstu Visual Studio, zobacz [za pomocą edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md).
