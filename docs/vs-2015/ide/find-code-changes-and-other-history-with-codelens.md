@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 100cd424b60ce09db8c62c049b38f4c301ebe26f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383946"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704837"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało
   
 - Team Foundation Server 2013 or later, Visual Studio Team Services, or Git  
   
-- [Lync 2010 lub nowszej lub Skype dla firm](http://technet.microsoft.com/lync), skontaktuj się z zespołem z poziomu edytora kodu  
+- [Lync 2010 lub nowszej lub Skype dla firm](https://technet.microsoft.com/lync), skontaktuj się z zespołem z poziomu edytora kodu  
   
   Kod Visual C# .NET lub Visual Basic .NET, który są przechowywane z kontroli wersji Team Foundation (TFVC) lub Git, Pobierz szczegóły wskaźników CodeLens na poziomie klasy i metody (*poziomie elementu kodu* wskaźniki). Jeśli repozytorium Git jest hostowana w TfGit, możesz także uzyskać łącza do elementów roboczych TFS.  
   
@@ -83,7 +83,7 @@ Skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało
   
  ![CodeLens: Pobierz historię zmian przez swój kod w TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- Domyślny okres czasu jest ostatnich 12 miesięcy. Jeśli Twój kod jest przechowywany na serwerze Team Foundation Server, możesz to zmienić, uruchamiając [polecenia TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) z [polecenie CodeIndex](../ide/codeindex-command.md) i **/indexHistoryPeriod** flagi.  
+ Domyślny okres czasu jest ostatnich 12 miesięcy. Jeśli Twój kod jest przechowywany na serwerze Team Foundation Server, możesz to zmienić, uruchamiając [polecenia TFSConfig](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) z [polecenie CodeIndex](../ide/codeindex-command.md) i **/indexHistoryPeriod** flagi.  
   
  Aby wyświetlić szczegółowej historii wszystkich zmian, łącznie ze składnikami z ponad rok temu, wybierz opcję **Pokaż wszystkie zmiany pliku**.  
   
@@ -124,7 +124,7 @@ Skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało
 #### <a name="find-incoming-changes-from-other-branches"></a>Znajdź zmiany przychodzące z innych gałęzi  
  ![CodeLens: Znajdowanie zmian w kodzie w innych gałęzi,](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
- ...tak jak tej poprawki w Deweloper gałęzi w tym miejscu:  
+ .. .tak jak tej poprawki w Deweloper gałęzi w tym miejscu:  
   
  ![CodeLens: Zmień zaznaczone ich z inną gałęzią](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
   
@@ -222,7 +222,7 @@ Skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało
   
 - Upewnij się, że jest włączona funkcja CodeLens. Przejdź do **narzędzia**, **opcje**, **edytora tekstów**, **wszystkie języki**, **CodeLens**.  
   
-- Jeśli Twój kod jest przechowywany w programie TFS, upewnij się, że indeksowanie kodu jest włączone za pomocą [polecenie CodeIndex](../ide/codeindex-command.md) z [polecenia konfiguracji TFS](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
+- Jeśli Twój kod jest przechowywany w programie TFS, upewnij się, że indeksowanie kodu jest włączone za pomocą [polecenie CodeIndex](../ide/codeindex-command.md) z [polecenia konfiguracji TFS](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
 - Wskaźniki związane z TFS pojawiają się tylko wtedy, gdy elementy robocze są połączone z kodem, a użytkownik ma uprawnienia do otwierania połączonych elementów roboczych. [Upewnij się, że masz uprawnienia członka zespołu.](/azure/devops/organizations/security/view-permissions)  
   
@@ -283,4 +283,4 @@ Skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało
  **ODP.:** **Lokalnej wersji** Strzałka wskazuje na najnowszy zestaw zmian w lokalnej wersji tego pliku. Gdy serwerze znajdują się nowsze zestawy zmian, są one wyświetlane powyżej lub poniżej **lokalnej wersji** strzałka, w zależności od kolejności ich sortowania.  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>PYT.: Czy mogę zarządzać jak funkcja CodeLens przetwarza kod w celu wyświetlenia historii i połączone elementy?  
- **ODP.:** Tak, jeśli kod jest w programie TFS, użyj [polecenie CodeIndex](../ide/codeindex-command.md) z [polecenia konfiguracji TFS](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).
+ **ODP.:** Tak, jeśli kod jest w programie TFS, użyj [polecenie CodeIndex](../ide/codeindex-command.md) z [polecenia konfiguracji TFS](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434179"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698682"
 ---
 # <a name="upgrading-project-items"></a>Uaktualnianie elementów projektu
 W przypadku dodania lub zarządzania elementami wewnątrz systemy projektu, który nie należy implementować, konieczne może uczestniczyć w procesie uaktualniania projektu. Crystal Reports znajduje się przykład elementu, który można dodać do systemu projektu.  
@@ -38,5 +38,5 @@ W przypadku dodania lub zarządzania elementami wewnątrz systemy projektu, któ
 2. W tym czasie element projektu pobiera powiadomienie z informacją o uaktualnieniu projektu **Kreator konwersji Visual Studio** jest nadal wyświetlany. Dlatego należy używać metod <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interfejsu, aby zapewnić uaktualnienia wiadomości do Kreatora interfejsu użytkownika.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kreator konwersji Visual Studio](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Kreator konwersji Visual Studio](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Uaktualnianie projektów niestandardowych](../misc/upgrading-custom-projects.md)

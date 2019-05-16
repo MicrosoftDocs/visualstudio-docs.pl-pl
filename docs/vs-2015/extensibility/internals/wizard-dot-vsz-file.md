@@ -12,12 +12,12 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: db58e5d4b747c71e4b1394e5fc38a48391bee71e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab1adde4c7018f136f47769e16a8ce2fedf72c93
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795584"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687666"
 ---
 # <a name="wizard-vsz-file"></a>Kreator (plik Vsz)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Param="WIZARDUI = FALSE"
 |Kreator|To pole zawiera OLE ProgID kreatora lub też ciąg reprezentujący identyfikator GUID identyfikatora CLSID kreatora, który jest cocreated IDE.|  
 |Param|Te elementy są opcjonalne. Możesz dodać dowolną liczbę wymaganych.|  
   
- Parametry włączenia pliku .vsz do przekazania dodatkowych parametrów niestandardowych do kreatora. Każda wartość jest przekazywana jako element ciągu w tablicy wariantów do kreatora. Aby uzyskać więcej informacji, zobacz [parametry niestandardowe](../../extensibility/internals/custom-parameters.md). Aby uzyskać informacje o sposobie używania pliku .vsz do tworzenia kreatorów niestandardowych, zobacz [. Plik Vsz (kontrola projektu)](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ Parametry włączenia pliku .vsz do przekazania dodatkowych parametrów niestandardowych do kreatora. Każda wartość jest przekazywana jako element ciągu w tablicy wariantów do kreatora. Aby uzyskać więcej informacji, zobacz [parametry niestandardowe](../../extensibility/internals/custom-parameters.md). Aby uzyskać informacje o sposobie używania pliku .vsz do tworzenia kreatorów niestandardowych, zobacz [. Plik Vsz (kontrola projektu)](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  Aby dodać domyślny identyfikator ustawień regionalnych do pliku .vsz, określ `FALLBACK_LCID`= xxxx, gdzie xxxx to identyfikator ustawień regionalnych, na przykład 1033 dla języka angielskiego. Gdy `FALLBACK_LCID` zdefiniowano parametru, jeśli bieżący identyfikator nie zostanie znaleziony, kreator używa Identyfikatora ustawień regionalnych rezerwowego.  
   

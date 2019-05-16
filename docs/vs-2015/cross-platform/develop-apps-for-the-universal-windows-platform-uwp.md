@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698652"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruc
   
  **Co to dokładnie jest platformy uniwersalnej Windows?**  
   
- Jest po prostu zbiorem kontrakty i wersji. Te pozwalają na docelowy, gdzie można uruchomić aplikacji. System operacyjny nie jest już docelowych. Teraz możesz wskazać swoją aplikację do co najmniej jeden urządzenia z rodzin. Dowiedz się więcej szczegółów tego [Przewodnik po platformie](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
+ Jest po prostu zbiorem kontrakty i wersji. Te pozwalają na docelowy, gdzie można uruchomić aplikacji. System operacyjny nie jest już docelowych. Teraz możesz wskazać swoją aplikację do co najmniej jeden urządzenia z rodzin. Dowiedz się więcej szczegółów tego [Przewodnik po platformie](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
 ## <a name="requirements"></a>Wymagania  
  Narzędzia Universal Windows App Development są dostarczane z emulatorów, które można użyć, aby zobaczyć, jak wygląda aplikacja na różnych urządzeniach. Aby użyć tych emulatorów, musisz zainstalować to oprogramowanie na komputerze fizycznym. Komputer fizyczny, należy uruchomić Windows 8.1 (x64) Professional edition lub nowszy, i mieć procesor obsługujący funkcję Hyper-V klienta i translację adresów drugiego poziomu (SLAT). Nie można użyć emulatorów, gdy program Visual Studio jest zainstalowany na maszynie wirtualnej.  
@@ -55,8 +55,8 @@ Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruc
   Projektant XAML można używać tylko w przypadku platformy programowania systemu Windows 10.  
   
 ## <a name="universal-windows-apps"></a>Universal Windows apps  
- Wybierz swój język preferowany Programowanie w językach C#, Visual Basic, C++ lub JavaScript, aby [tworzenie aplikacji Windows Universal dla urządzeń z systemem Windows 10](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Lub Obejrzyj [ten film stanowi wprowadzenie](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
+ Wybierz swój język preferowany Programowanie w językach C#, Visual Basic, C++ lub JavaScript, aby [tworzenie aplikacji Windows Universal dla urządzeń z systemem Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Lub Obejrzyj [ten film stanowi wprowadzenie](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
   
- Jeśli masz istniejące aplikacje Windows Store 8.1, aplikacje systemu Windows Phone 8.1 lub Windows Universal apps utworzonych za pomocą programu Visual Studio 2015 RC [portu tych istniejących aplikacji](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) używać najnowszej wersji uniwersalnej platformy Windows.  
+ Jeśli masz istniejące aplikacje Windows Store 8.1, aplikacje systemu Windows Phone 8.1 lub Windows Universal apps utworzonych za pomocą programu Visual Studio 2015 RC [portu tych istniejących aplikacji](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) używać najnowszej wersji uniwersalnej platformy Windows.  
   
  Po utworzeniu aplikacji Universal Windows, należy najpierw [Zapakuj aplikację](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) go zainstalować na urządzeniu z systemem Windows 10 lub przesłać go do Windows Store.
