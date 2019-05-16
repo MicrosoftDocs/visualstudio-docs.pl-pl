@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434860"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685321"
 ---
 # <a name="how-to-use-the-threads-window"></a>Instrukcje: Korzystanie z okna wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, na któr
 ## <a name="freezing-and-thawing-threads"></a>Zawiesza się i odblokowania wątków  
  Zablokowanie wątku systemu nie zostaną uruchomione wykonywanie wątku, nawet jeśli zasoby są dostępne.  
   
- W kodzie natywnym można wstrzymać lub wznowić wątków przez wywołanie funkcji Windows `SuspendThread` i `ResumeThread` lub funkcje MFC [CWinThread::SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) i [CWinThread::ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Jeśli wywołasz `SuspendThread` lub `ResumeThread`, możesz zmienić *zawieszone liczba*, który pojawia się w **wątków** okna. Jednak jeśli blokowanie lub odblokowywanie wątków natywnych, możesz nie zmieniaj licznik wstrzymany. W kodzie natywnym wątku nie można wykonać, chyba że jest rozmrożone i został wstrzymany liczbę zero.  
+ W kodzie natywnym można wstrzymać lub wznowić wątków przez wywołanie funkcji Windows `SuspendThread` i `ResumeThread` lub funkcje MFC [CWinThread::SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) i [CWinThread::ResumeThread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Jeśli wywołasz `SuspendThread` lub `ResumeThread`, możesz zmienić *zawieszone liczba*, który pojawia się w **wątków** okna. Jednak jeśli blokowanie lub odblokowywanie wątków natywnych, możesz nie zmieniaj licznik wstrzymany. W kodzie natywnym wątku nie można wykonać, chyba że jest rozmrożone i został wstrzymany liczbę zero.  
   
  W kodzie zarządzanym zawiesza się lub rozgrzewania wątku zmienić licznik wstrzymany. W kodzie zarządzanym zablokowanego wątku został wstrzymany liczbę 1. W kodzie natywnym zablokowanego wątku ma liczba wstrzymanych 0, chyba że wątek został wstrzymany `SuspendThread` wywołania.  
   

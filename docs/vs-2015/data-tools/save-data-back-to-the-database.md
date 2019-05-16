@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2882434f0638d565133efd9744a94d224d39d121
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425348"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692534"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   
  `GetChanges` samodzielnie rekordy wszystkie zmienione. Z kolei przekazując żądaną <xref:System.Data.DataRowState> jako parametr do `GetChanges` metody, można określić podzbiór zmienionych rekordów, które mają: nowo dodane rekordy, rekordy, które zostały oznaczone do usunięcia, odłączony rekordów lub zmodyfikowanych rekordów.  
   
- Wprowadzenie podzestaw zmienionych rekordów jest przydatne w przypadku, gdy użytkownik chce przesłać rekordów do innego składnika do przetworzenia. Zamiast przesyłania całego zestawu danych, można zmniejszyć koszty komunikowania się z innego składnika przez pobieranie tylko rekordy, które wymaga składnika. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie zmienionych wierszy](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Wprowadzenie podzestaw zmienionych rekordów jest przydatne w przypadku, gdy użytkownik chce przesłać rekordów do innego składnika do przetworzenia. Zamiast przesyłania całego zestawu danych, można zmniejszyć koszty komunikowania się z innego składnika przez pobieranie tylko rekordy, które wymaga składnika. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie zmienionych wierszy](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Zatwierdza zmiany w zestawie danych  
  Zmiany w zestawie danych, <xref:System.Data.DataRow.RowState%2A> ustawiono właściwość zmienionych wierszy. Ustanowionych, przechowywane i udostępniane przez pierwotnym i bieżącym wersje rekordów <xref:System.Data.DataRowView.RowVersion%2A> właściwości. Metadane, które są przechowywane we właściwościach tych zmienionych wierszy jest niezbędne do wysyłania właściwe aktualizacje w źródle danych.  
@@ -219,12 +219,12 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   
 - W warstwie biznesowej, dodając kod do aplikacji w taki sposób, aby sprawdzić poprawność danych. Zestaw danych jest w jednym miejscu, możesz to zrobić. Projektant obiektów DataSet zawiera niektóre zalety weryfikacji zaplecza — takie jak możliwość sprawdzenia poprawności zmian, jak zmieniają się wartości kolumn i wierszy. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md).  
   
-- W warstwie prezentacji przez dodawanie walidacji do formularzy. Aby uzyskać więcej informacji, zobacz [walidacji danych wejściowych użytkownika w formularzach Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- W warstwie prezentacji przez dodawanie walidacji do formularzy. Aby uzyskać więcej informacji, zobacz [walidacji danych wejściowych użytkownika w formularzach Windows Forms](https://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
 - W danych zaplecza, na wysyłanie danych do źródła danych — na przykład baza danych —, dzięki czemu jej o zaakceptowanie lub odrzucenie danych. Jeśli pracujesz z bazą danych, który zawiera zaawansowane funkcje służące do sprawdzania poprawności danych, a także informacje o błędzie, może to być praktyczne podejście, ponieważ można sprawdzić poprawność danych niezależnie od tego, gdzie pochodzi on z. Jednak to podejście nie może uwzględnić wymagania sprawdzania poprawności specyficznych dla aplikacji. Ponadto posiadanie źródła danych sprawdzania poprawności danych może spowodować wiele rund do źródła danych, w zależności od tego, jak ułatwia rozpoznawanie błędów sprawdzania poprawności wygenerowane przez usługę zaplecza w aplikacji.  
   
   > [!IMPORTANT]
-  > Korzystając z polecenia danych za pomocą <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> właściwość, która jest równa <xref:System.Data.CommandType>, należy dokładnie sprawdzić informacje przesyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próby wysłania przez użytkownika (wstrzyknąć) zmodyfikowany lub dodatkowych instrukcji SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze sprawdzić, czy informacje są prawidłowe. Jest najlepszym rozwiązaniem jest zawsze używaj sparametryzowanych zapytań lub procedur przechowywanych, gdy jest to możliwe. Aby uzyskać więcej informacji, zobacz [Przegląd wykorzystuje skryptu](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Korzystając z polecenia danych za pomocą <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> właściwość, która jest równa <xref:System.Data.CommandType>, należy dokładnie sprawdzić informacje przesyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próby wysłania przez użytkownika (wstrzyknąć) zmodyfikowany lub dodatkowych instrukcji SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze sprawdzić, czy informacje są prawidłowe. Jest najlepszym rozwiązaniem jest zawsze używaj sparametryzowanych zapytań lub procedur przechowywanych, gdy jest to możliwe. Aby uzyskać więcej informacji, zobacz [Przegląd wykorzystuje skryptu](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Po zmiany zostały dokonane w zestawie danych, mogą przesyłać zmiany ze źródłem danych. Najczęściej, możesz to zrobić, wywołując `Update` metodę TableAdapter (lub adapter danych). Metoda pętlę każdy rekord w tabeli danych określa, jakiego rodzaju aktualizacji jest wymagana (aktualizowania, wstawiania lub usuwania), jeśli są dostępne, a następnie uruchamia odpowiednie polecenie.  
   
@@ -272,6 +272,6 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   
 ## <a name="see-also"></a>Zobacz też  
  [Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Przygotowanie aplikacji na odbieranie danych](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Przygotowanie aplikacji na odbieranie danych](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Sprawdzanie poprawności danych](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Sprawdzanie poprawności danych](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

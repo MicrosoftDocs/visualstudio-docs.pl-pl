@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ba55795e1f1b5f54b2a863ec0163a796111d9800
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437993"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689470"
 ---
 # <a name="signing-page-project-designer"></a>Strona podpisywania, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ Użyj **podpisywanie** strony **projektanta projektu** do podpisywania manifest�
   
 ## <a name="assembly-signing"></a>Podpisywanie zestawów  
  **Podpisz zestaw** pola wyboru  
- Zaznacz to pole wyboru, aby podpisać zestaw i utworzyć plik klucza o silnej nazwie. Aby uzyskać więcej informacji na temat podpisywania zestawu za pomocą **projektanta projektu**, zobacz [jak: Podpisywanie zestawu (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Zaznacz to pole wyboru, aby podpisać zestaw i utworzyć plik klucza o silnej nazwie. Aby uzyskać więcej informacji na temat podpisywania zestawu za pomocą **projektanta projektu**, zobacz [jak: Podpisywanie zestawu (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Ta opcja korzysta z narzędzia Al.exe, dostarczone przez [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] do podpisywania zestawu. Aby uzyskać więcej informacji na temat Al.exe zobacz [jak: Podpisywanie zestawu silną nazwą](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Ta opcja korzysta z narzędzia Al.exe, dostarczone przez [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] do podpisywania zestawu. Aby uzyskać więcej informacji na temat Al.exe zobacz [jak: Podpisywanie zestawu silną nazwą](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  **Wybierz plik klucza o silnej nazwie** listy  
  Umożliwia określenie nowej lub istniejącej o silnej nazwie klucza pliku, który jest używany do podpisywania zestawu. Wybierz  **\<Przeglądaj … >** można wybrać istniejący plik klucza.  
@@ -83,7 +83,7 @@ Użyj **podpisywanie** strony **projektanta projektu** do podpisywania manifest�
  **Opóźnienie logowania tylko** pola wyboru  
  Zaznacz to pole wyboru, aby włączyć podpisywanie opóźnione.  
   
- Należy zauważyć, że opóźnienie podpisanego projektu nie będzie działać i nie można debugować. Można jednak użyć [Sn.exe (narzędzie silnych nazw)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) z `-Vr` opcję pomijania weryfikacji podczas programowania.  
+ Należy zauważyć, że opóźnienie podpisanego projektu nie będzie działać i nie można debugować. Można jednak użyć [Sn.exe (narzędzie silnych nazw)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) z `-Vr` opcję pomijania weryfikacji podczas programowania.  
   
 > [!NOTE]
 > Po podpisaniu zestawu nie zawsze masz dostęp do klucza prywatnego. Na przykład organizacja może być ściśle chronionej parę kluczy, deweloperzy nie mają dostępu do codziennie. Klucz publiczny mogą być dostępne, ale dostęp do klucza prywatnego jest ograniczony do kilku osób. W takim przypadku można użyć *opóźnione* lub *częściowe podpisywanie* można podać klucz publiczny, opóźnienie dodanie klucza prywatnego, dopóki nie jest przekazywane zestawu.  
@@ -91,8 +91,8 @@ Użyj **podpisywanie** strony **projektanta projektu** do podpisywania manifest�
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)   
  [Zarządzanie podpisywaniem zestawu i manifestu](../../ide/managing-assembly-and-manifest-signing.md)   
- [Silnej nazwy logowania dla zarządzanych aplikacji](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Silnej nazwy logowania dla zarządzanych aplikacji](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Instrukcje: Podpisywanie aplikacji i manifestów wdrożenia](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Instrukcje: Podpisywanie zestawu (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Instrukcje: Podpisywanie zestawu silną nazwą](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
- [Zestawy o silnych nazwach](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [Instrukcje: Podpisywanie zestawu (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Instrukcje: Podpisywanie zestawu silną nazwą](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Zestawy o silnych nazwach](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

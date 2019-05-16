@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438888"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703194"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Edytor zestawu reguł, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -76,7 +76,7 @@ W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w
   
   Kolejność wykonywania wyrażenia następuje reguły pierwszeństwa operatorów języka C#.  
   
-  Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Zatrzymaj i aktualizacji funkcji  
  **Następnie akcje:** i **inne akcje:** wyrażenia obsługują **zatrzymanie** i **aktualizacji** funkcji. Do użycia **zatrzymanie** funkcji, wpisz **zatrzymanie** do **następnie akcji:** lub **Else akcji:** pola tekstowego. **Zatrzymanie** czynność powoduje wykonanie zestawu reguł zatrzymać natychmiast, a sterowanie powraca do wywołującego kodu. Możesz użyć **aktualizacji** funkcji z łańcucha do przodu.  

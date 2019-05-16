@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686290"
 ---
 # <a name="profiling-tools"></a>narzędzia profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesor
 ## <a name="memory-usage"></a>Użycie pamięci  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Podczas debugowania za pomocą umożliwia znajdowanie przecieków pamięci i pamięci nieefektywne **użycie pamięci** narzędzia. To narzędzie pozwala wykonać migawki stosu pamięci zarządzanego i natywnego. Narzędzie to za pomocą aplikacji komputerowych, Windows Universal apps i aplikacje platformy ASP.NET. **Użycie pamięci** narzędzie można uruchomić z **narzędzia diagnostyczne** okna podczas debugowania (**debugowanie / Windows / Pokaż narzędzia diagnostyczne**) lub na zewnątrz debugera (**Debugowanie / Profiler wydajności...**). Zobacz [użycie pamięci](../profiling/memory-usage.md) i [użycie pamięci bez debugowania](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) Aby uzyskać więcej informacji.  
+ Podczas debugowania za pomocą umożliwia znajdowanie przecieków pamięci i pamięci nieefektywne **użycie pamięci** narzędzia. To narzędzie pozwala wykonać migawki stosu pamięci zarządzanego i natywnego. Narzędzie to za pomocą aplikacji komputerowych, Windows Universal apps i aplikacje platformy ASP.NET. **Użycie pamięci** narzędzie można uruchomić z **narzędzia diagnostyczne** okna podczas debugowania (**debugowanie / Windows / Pokaż narzędzia diagnostyczne**) lub na zewnątrz debugera (**Debugowanie / Profiler wydajności...**). Zobacz [użycie pamięci](../profiling/memory-usage.md) i [użycie pamięci bez debugowania](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) Aby uzyskać więcej informacji.  
   
 ## <a name="cpu-usage"></a>Użycie procesora CPU  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

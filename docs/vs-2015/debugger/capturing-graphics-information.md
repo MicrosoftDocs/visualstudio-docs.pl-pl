@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437825"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702554"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator gra
 ## <a name="capturing-graphics-information-remotely"></a>Zdalne przechwytywanie informacji graficznych  
  Informacje graficzne mogą być przechwytywane z aplikacji, która jest uruchomiona na komputerze lokalnym lub na zdalnym komputerze lub urządzeniu. Zdalne przechwytywanie jest obsługiwane dla [!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] maszyn i [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)] urządzeń. Aby przechwytywać informacje graficzne z aplikacji, która jest uruchomiona zdalnie, skonfiguruj projekt dla zdalnego debugowania, a następnie uruchom aplikację w obszarze Diagnostyka grafiki zgodnie z wcześniejszym opisem. Aplikacja jest uruchamiana na komputerze zdalnym, a przechwycone informacje graficzne są rejestrowane na komputerze deweloperskim.  
   
- Konfiguracja projektu dla zdalnego debugowania zależy od rodzaju aplikacji, którą projektujesz, i języka programowania, którego używasz. Aby uzyskać informacje o tym, jak skonfigurować zdalne debugowanie dla aplikacji Windows Store, zobacz [Uruchom Windows Store apps na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md). Aby uzyskać informacje o tym, jak skonfigurować zdalne debugowanie klasycznych aplikacji Windows, zobacz [Ustaw się zdalne debugowanie projektu programu Visual Studio](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
+ Konfiguracja projektu dla zdalnego debugowania zależy od rodzaju aplikacji, którą projektujesz, i języka programowania, którego używasz. Aby uzyskać informacje o tym, jak skonfigurować zdalne debugowanie dla aplikacji Windows Store, zobacz [Uruchom Windows Store apps na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md). Aby uzyskać informacje o tym, jak skonfigurować zdalne debugowanie klasycznych aplikacji Windows, zobacz [Ustaw się zdalne debugowanie projektu programu Visual Studio](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
  Później można użyć zdalnego komputera lub urządzenia do odtwarzania informacji graficznych, bez względu na to, gdzie informacje zostały przechwycone. Aby uzyskać więcej informacji, zobacz [jak: Zmiana maszyny odtwarzania diagnostyki grafiki](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   

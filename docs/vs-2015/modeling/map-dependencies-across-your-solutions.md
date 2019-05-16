@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb62c82722cbfc76264e760e117c828a6dc3bef0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440937"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687158"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,7 +284,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
      ![Używanie okienka filtru można uproszczenie wyświetlania](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ## <a name="SeeSourceHeader"></a> Zobacz zależności między plikami źródłowymi C i C++ a plikami nagłówkowymi  
- Jeśli chcesz utworzyć pełniejsze mapy dla projektów w języku C++, należy ustawić opcji Przeglądaj informacje kompilatora (**/FR**) w tych projektach. Zobacz [/FR, /Fr (Utwórz. Plik SBR)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, to ustawienie opcji dla bieżącej mapy. Można ukryć komunikat dla wszystkich nowszych mapy. Możesz ukryć ten komunikat, można wyświetlić ją ponownie. Ustaw następujący klucz rejestru `0` lub Usuń klucz:  
+ Jeśli chcesz utworzyć pełniejsze mapy dla projektów w języku C++, należy ustawić opcji Przeglądaj informacje kompilatora (**/FR**) w tych projektach. Zobacz [/FR, /Fr (Utwórz. Plik SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, to ustawienie opcji dla bieżącej mapy. Można ukryć komunikat dla wszystkich nowszych mapy. Możesz ukryć ten komunikat, można wyświetlić ją ponownie. Ustaw następujący klucz rejestru `0` lub Usuń klucz:  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
@@ -312,11 +312,11 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
 |Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie wygenerować mapę.|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przestaje odpowiadać przy próbie wygenerowania mapy kodu z **architektury** menu.|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|  
 |Niektóre ustawienia dla bazy danych przeglądania IntelliSense są wyłączone.|Niektóre ustawienia opcji IntelliSense mogą być wyłączone w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **opcje** okno dialogowe.|Włącz te ustawienia.<br /><br /> Zobacz [opcje, Edytor tekstu, C/C++, zaawansowane](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
-|Komunikat **nieznane metody** w węźle metody zostanie wyświetlony.<br /><br /> Ten problem występuje, ponieważ nie można rozpoznać nazwy metody.|Plik binarny może nie mieć podstawowej tabeli relokacji.|Włącz **/Fixed: No** opcji w konsolidatorze.<br /><br /> Zobacz [/Fixed (stały adres podstawowy)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
-||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz **/DEBUG** opcji w konsolidatorze.<br /><br /> Zobacz [/DEBUG (generowanie informacji o debugowaniu)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
+|Komunikat **nieznane metody** w węźle metody zostanie wyświetlony.<br /><br /> Ten problem występuje, ponieważ nie można rozpoznać nazwy metody.|Plik binarny może nie mieć podstawowej tabeli relokacji.|Włącz **/Fixed: No** opcji w konsolidatorze.<br /><br /> Zobacz [/Fixed (stały adres podstawowy)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
+||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz **/DEBUG** opcji w konsolidatorze.<br /><br /> Zobacz [/DEBUG (generowanie informacji o debugowaniu)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||Nie można otworzyć lub znaleźć pliku .pdb w oczekiwanych lokalizacjach.|Upewnij się, że plik .pdb istnieje w oczekiwanych lokalizacjach.|  
-||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli **/pdbstripped** w konsolidatorze użyto opcji, zamiast dołączyć kompletny plik .pdb.<br /><br /> Zobacz [/pdbstripped (Usuń symbole prywatne)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
-||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Jeśli element wywołujący jest sekcją thunk, spróbuj użyć `_declspec(dllimport)` Aby uniknąć osadzenia.<br /><br /> Zobacz:<br /><br /> -   [Ograniczenia i reguły ogólne](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importowanie wywołań funkcji przy użyciu atrybutu __declspec(dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli **/pdbstripped** w konsolidatorze użyto opcji, zamiast dołączyć kompletny plik .pdb.<br /><br /> Zobacz [/pdbstripped (Usuń symbole prywatne)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
+||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Jeśli element wywołujący jest sekcją thunk, spróbuj użyć `_declspec(dllimport)` Aby uniknąć osadzenia.<br /><br /> Zobacz:<br /><br /> -   [Ograniczenia i reguły ogólne](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importowanie wywołań funkcji przy użyciu atrybutu __declspec(dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ## <a name="RenderMoreQuickly"></a> Wprowadź kod, który map render szybciej  
  Podczas generowania mapy po raz pierwszy, program Visual Studio indeksuje wszystkie zależności, które znajdzie. Ten proces może zająć trochę czasu, szczególnie w przypadku dużych rozwiązań, ale poprawi wydajność później. Jeśli kod ulegnie zmianie, program Visual Studio indeksuje ponownie tylko zaktualizowany kod. Aby zminimalizować czas potrzebny na mapie, aby zakończyć renderowania, należy rozważyć następujące kwestie:  

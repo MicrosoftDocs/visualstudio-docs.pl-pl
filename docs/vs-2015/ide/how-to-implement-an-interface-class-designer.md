@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee9289ebaeb12318ef83694f5dfb74b2930b8df1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b437fb34902783002baedee992a21ee61a86c2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416747"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685625"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Instrukcje: Implementowanie interfejsu (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ W Projektancie klas można zaimplementować interfejsu na diagramie klas, łącz
 2. Otwórz widok klas i wyszukaj interfejs.  
   
     > [!TIP]
-    > Jeśli widok klas nie jest otwarty, otwórz widok klas z **widoku** menu. Aby uzyskać więcej informacji dotyczących widoku klas, zobacz [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+    > Jeśli widok klas nie jest otwarty, otwórz widok klas z **widoku** menu. Aby uzyskać więcej informacji dotyczących widoku klas, zobacz [Viewing Classes and Their Members](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
 3. Przeciągnij węzeł interfejsu klasa kształt na diagramie.  
   

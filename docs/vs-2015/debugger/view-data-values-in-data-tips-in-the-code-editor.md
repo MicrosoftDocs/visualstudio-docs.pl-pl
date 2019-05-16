@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437692"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700110"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Podgląd wartości danych w poradach dotyczących danych w edytorze kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,6 +143,6 @@ DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Instrukcje: Użyj okna dialogowego QuickWatch](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Instrukcje: Użyj okna dialogowego QuickWatch](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
- [Instrukcje: Zmień Format numeryczny debuger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Instrukcje: Zmień Format numeryczny debuger Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

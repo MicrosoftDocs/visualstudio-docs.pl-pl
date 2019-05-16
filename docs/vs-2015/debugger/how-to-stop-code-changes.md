@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690059"
 ---
 # <a name="how-to-stop-code-changes"></a>Instrukcje: Zatrzymywanie zmian kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +45,4 @@ Gdy Edytuj i Kontynuuj Trwa stosowanie zmian kodu, można zatrzymać operacji.
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i Kontynuuj](../debugger/edit-and-continue.md)   
- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

@@ -18,17 +18,17 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795668"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684218"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Korzystanie z okna stosów równoległych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Stosów równoległych** okno jest przydatne podczas debugowania aplikacji wielowątkowych. Jego **Widok wątków** pokazuje informacje stosu wywołań dla wszystkich wątków w aplikacji. Dzięki temu można przechodzić między wątkami i ramki stosu w tych wątkach. W kodzie zarządzanym **widoku zadania** pokazuje Wywołaj stosy <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów. W kodzie natywnym **widoku zadania** pokazuje Wywołaj stosy [grupy zadań](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [równoległe algorytmy](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentów asynchronicznych](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)i [zadań lekkich](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
+**Stosów równoległych** okno jest przydatne podczas debugowania aplikacji wielowątkowych. Jego **Widok wątków** pokazuje informacje stosu wywołań dla wszystkich wątków w aplikacji. Dzięki temu można przechodzić między wątkami i ramki stosu w tych wątkach. W kodzie zarządzanym **widoku zadania** pokazuje Wywołaj stosy <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów. W kodzie natywnym **widoku zadania** pokazuje Wywołaj stosy [grupy zadań](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [równoległe algorytmy](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentów asynchronicznych](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)i [zadań lekkich](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>Widok wątków  
  Poniższa ilustracja przedstawia jeden wątek, który wystąpił z głównym a, B, a następnie kodu zewnętrznego. Dwie inne wątki pracę z zewnętrznego kodu, a następnie przeszedł do A, ale jeden z wątków, ciąg dalszy B, a następnie zewnętrznego kodu i innego wątku ciąg dalszy C, a następnie niektóre AnonymousMethod.  
@@ -63,7 +63,7 @@ ms.locfileid: "54795668"
   
  ![Pasek narzędzi okna stosów równoległych](../debugger/media/parallel-stackstoolbar.png "Parallel_StacksToolbar")  
   
-|Objaśnienie list|Formant|Opis|  
+|Objaśnienie list|formant|Opis|  
 |--------------------|-------------|-----------------|  
 |ELEMENT|Pole kombi wątków/zadań|Przełącza widok między Wywołaj stosy wątków i Wywołaj stosy zadania. Aby uzyskać więcej informacji zobacz widoku zadania i Widok wątków.|  
 |B|Pokaż tylko oflagowane|Pokazuje stosy wywołań tylko dla wątków, które są oznaczone w innych oknach debugowania, takie jak **wątków GPU** okna i **równoległego wyrażenia kontrolnego** okna.|  
@@ -121,7 +121,7 @@ ms.locfileid: "54795668"
  [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
- [Programowanie równoległe](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Programowanie równoległe](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)   
  [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task, klasa](../extensibility/debugger/task-class-internal-members.md)

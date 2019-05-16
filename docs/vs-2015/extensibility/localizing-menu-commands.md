@@ -15,12 +15,12 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 681a529b33fc2342168ba1fbe1df57746dc8bd7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c879072b55729e249b1aecd665d6f470f4138a75
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101707"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686136"
 ---
 # <a name="localizing-menu-commands"></a>Lokalizowanie poleceń menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -158,4 +158,4 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
  [MenuCommands programu Vs. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
- [Globalizacja i lokalizacja](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)
+ [Globalizacja i lokalizacja](https://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)

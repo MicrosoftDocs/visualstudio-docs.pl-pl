@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442322"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683528"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Uruchamianie aplikacji Windows Phone w emulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowania i testowania aplikacji Windows Phone na komputerze bez urządzenia fizycznego. Można symulacji typowe touch i obrót zdarzeń i wybrać rozmiar ekranu fizycznego i rozwiązania, który chcesz emulować. Możesz także testować wiele często używane funkcje, takie jak lokalizacja, sieci, powiadomienia, czujników, przyspieszeniomierza i opcjonalnie karta SD.  
   
- Aby uzyskać więcej informacji o funkcjach, które można przetestować w emulatorze, zobacz [testowania aplikacji funkcji w Windows Phone Emulator](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Aby uzyskać więcej informacji o funkcjach, które można przetestować w emulatorze, zobacz [testowania aplikacji funkcji w Windows Phone Emulator](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Razem z Visual Studio emulator zapewnia kompletne środowisko, w którym można projektowania, tworzenia, debugowania i testowania aplikacji Windows Phone.  
   
@@ -103,7 +103,7 @@ Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowa
 ### <a name="BKMK_depltool"></a> Uruchamianie aplikacji za pomocą narzędzia do wdrażania aplikacji  
  Można również użyć narzędzia do wdrażania aplikacji Windows Phone (**AppDeploy.exe**) aby uruchomić aplikację w emulatorze. To narzędzie jest autonomiczną aplikację, która jest instalowana podczas instalacji narzędzi deweloperskich programu Windows Phone.  
   
- Aby uzyskać więcej informacji, zobacz [aplikacji wdrożenia Windows Phone 8.1 przy użyciu narzędzia Application Deployment](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
+ Aby uzyskać więcej informacji, zobacz [aplikacji wdrożenia Windows Phone 8.1 przy użyciu narzędzia Application Deployment](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
 ## <a name="BKMK_toolbar"></a> Konfigurowanie emulator Windows Phone przy użyciu narzędzi emulatora  
  W poniższej tabeli przedstawiono dostępne przyciski konfiguracji, na pasku narzędzi emulatora.  

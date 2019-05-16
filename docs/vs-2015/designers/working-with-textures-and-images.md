@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 89c8fd489c29fc9b352c34011349ff447e48adb4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403463"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690078"
 ---
 # <a name="working-with-textures-and-images"></a>Praca z obrazami i teksturami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403463"
 Można użyć edytora obrazów w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do tworzenia i modyfikowania teksturami i obrazami. Edytor obrazów obsługuje zaawansowane formatów tekstur i obrazów, takich jak te, które są używane w rozwoju aplikacji DirectX.  
   
 > [!NOTE]
-> Edytor obrazów nie obsługuje obrazy niska color, takich jak ikony i kursory. Aby utworzyć lub zmodyfikować te rodzaje obrazów, użyj [edytor obrazów dla ikon](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
+> Edytor obrazów nie obsługuje obrazy niska color, takich jak ikony i kursory. Aby utworzyć lub zmodyfikować te rodzaje obrazów, użyj [edytor obrazów dla ikon](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
   
 ## <a name="textures-and-images"></a>Obrazami i teksturami  
  Tekstury i obrazy są na poziomie podstawowym, po prostu tabele danych, które są używane do visual szczegółowych informacji w aplikacjach grafiki. Rodzaj szczegółów, który zapewnia obrazu lub tekstury zależy od tego, jak są używane, ale koloru próbek, wartości alfa (przezroczystości), normalne powierzchni i wysokość wartości są typowe przykłady. Główną różnicą między Tekstura i obraz jest, że tekstury jest przeznaczone do użycia wraz z reprezentacją kształtu — zwykle modelu 3-D — express kompletnym obiektem lub sceny, ale obraz jest zazwyczaj reprezentację autonomicznej obiekt lub scenę .  

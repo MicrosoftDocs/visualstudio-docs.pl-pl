@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437591"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701181"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Tworzenie aplikacji w językach dwukierunkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Visual Studio umożliwia tworzenie aplikacji, które poprawnie wyświetlania tek
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Typy aplikacji tego Dwukierunkowa obsługa języków  
   
-1. Aplikacje Windows. Możesz tworzyć aplikacje całkowicie dwukierunkowej, umożliwiające obsługę tekstu dwukierunkowego, od prawej do lewej kolejność czytania i dublowanie (cofania układu systemu windows, menu, okna dialogowe i tak dalej). Z wyjątkiem funkcji dublowania, te funkcje są dostępne, domyślnie lub zgodnie z ustawieniami właściwości. Dublowanie obsługę natury niektóre funkcje, takie jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowania w kodzie. Aby uzyskać więcej informacji, zobacz [dwukierunkowej obsługę dla Windows Forms aplikacji](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
+1. Aplikacje Windows. Możesz tworzyć aplikacje całkowicie dwukierunkowej, umożliwiające obsługę tekstu dwukierunkowego, od prawej do lewej kolejność czytania i dublowanie (cofania układu systemu windows, menu, okna dialogowe i tak dalej). Z wyjątkiem funkcji dublowania, te funkcje są dostępne, domyślnie lub zgodnie z ustawieniami właściwości. Dublowanie obsługę natury niektóre funkcje, takie jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowania w kodzie. Aby uzyskać więcej informacji, zobacz [dwukierunkowej obsługę dla Windows Forms aplikacji](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
   
-2. Aplikacje sieci Web. Usługi sieci Web pomocy technicznej i odbieranie wysyła tekst UTF-8 i Unicode, czemu są odpowiednie dla aplikacji obejmujące językach dwukierunkowych. Aplikacji klienta sieci Web zależy od przeglądarki dla interfejsu użytkownika, więc stopień Obsługa dwukierunkowych w aplikacji sieci Web jest zależny od stopnia przeglądarki użytkownika obsługuje te funkcje dwukierunkowych. W programie Visual Studio możesz tworzyć aplikacje z obsługą tekst arabski lub hebrajski, kolejność czytania od prawej do lewej, kodowanie pliku i ustawienia lokalnych kultury. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji sieci Web platformy ASP.NET](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
+2. Aplikacje sieci Web. Usługi sieci Web pomocy technicznej i odbieranie wysyła tekst UTF-8 i Unicode, czemu są odpowiednie dla aplikacji obejmujące językach dwukierunkowych. Aplikacji klienta sieci Web zależy od przeglądarki dla interfejsu użytkownika, więc stopień Obsługa dwukierunkowych w aplikacji sieci Web jest zależny od stopnia przeglądarki użytkownika obsługuje te funkcje dwukierunkowych. W programie Visual Studio możesz tworzyć aplikacje z obsługą tekst arabski lub hebrajski, kolejność czytania od prawej do lewej, kodowanie pliku i ustawienia lokalnych kultury. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji sieci Web platformy ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
   
 3. Aplikacje konsoli. Aplikacje konsoli nie uwzględniają tekstu Obsługa języków dwukierunkowych. Jest to wynikiem sposobu działania Windows za pomocą aplikacji konsoli.  
   
@@ -79,7 +79,7 @@ Visual Studio umożliwia tworzenie aplikacji, które poprawnie wyświetlania tek
 - Kod i tekst dosłowny. W edytorze kodu (jest to również edytora tekstów) umożliwia arabskie i hebrajskie nazwę klasy, funkcje, zmienne, właściwości, literałów ciągów, atrybuty i tak dalej. Jednak Edytor obsługuje kolejność czytania od prawej do lewej; tekst zawsze rozpoczyna się na lewym marginesie.  
   
     > [!TIP]
-    > Zaleca się umieścić literałów ciągów w plikach zasobów zamiast kodować je w swoich programach. Aby uzyskać więcej informacji, zobacz [instruktażu: Lokalizowanie formularzy Windows](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Zaleca się umieścić literałów ciągów w plikach zasobów zamiast kodować je w swoich programach. Aby uzyskać więcej informacji, zobacz [instruktażu: Lokalizowanie formularzy Windows](https://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
     > Użytkownik musi być zgodne, w jaki sposób odwoływania się do obiektów o nazwie w tych językach. Na przykład jeśli używasz Kashida w nazwach zmienną arabski, należy zawsze używać Kashida przy odwoływaniu się do tej zmiennej lub będą powodować błędy.  
@@ -87,7 +87,7 @@ Visual Studio umożliwia tworzenie aplikacji, które poprawnie wyświetlania tek
 - Komentarze w kodzie. Komentarze można tworzyć w arabski lub hebrajski. Umożliwia także tych języków w narzędziu konstruktora komentarz.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dwukierunkowa obsługa Windows Forms aplikacji](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [Dwukierunkowa obsługa aplikacji sieci Web ASP.NET](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
+ [Dwukierunkowa obsługa Windows Forms aplikacji](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
+ [Dwukierunkowa obsługa aplikacji sieci Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [Globalizowanie aplikacji](../ide/globalizing-applications.md)   
  [Lokalizowanie aplikacji](../ide/localizing-applications.md)

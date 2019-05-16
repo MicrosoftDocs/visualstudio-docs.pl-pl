@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4a0cf53dcc9870b5d0c93d2fcaaf2d942fd9959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56b010a01ccd7e40e696653e13dd7c972c97a9cb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767941"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690536"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,4 +41,4 @@ Podczas debugowania aplikacji zarządzanych, [!INCLUDE[vsprvs](../includes/vsprv
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
  [Nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md)   
  [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Proces zarządzanego wykonania](http://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)
+ [Proces zarządzanego wykonania](https://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)

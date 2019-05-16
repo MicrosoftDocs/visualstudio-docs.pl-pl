@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669799"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689483"
 ---
 # <a name="setting-language-specific-editor-options"></a>Ustawianie opcji Edytora specyficznych dla języka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ ms.locfileid: "59669799"
  [Opcje, Edytor tekstów, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  W tym artykule opisano ustawienia, które określają, jak lista dokańczania IntelliSense zachowuje się podczas pracy nad kodem w języku C# i J#.  
   
- [Sprawdzanie poprawności, CSS, Edytor tekstu, okno dialogowe Opcje](http://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
+ [Sprawdzanie poprawności, CSS, Edytor tekstu, okno dialogowe Opcje](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
  W tym artykule opisano ustawienia dokańczania instrukcji i ustawienia korekcji błędów w kaskadowych arkuszach stylów (CSS).  
   
- [Sprawdzanie poprawności, HTML, Edytor tekstu, okno dialogowe Opcje](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
+ [Sprawdzanie poprawności, HTML, Edytor tekstu, okno dialogowe Opcje](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
  W tym artykule opisano ustawienia sprawdzania składni języka HTML na podstawie wybranego schematu.  
   
  [Opcje, Edytor tekstów, XAML, Formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md)  
@@ -57,5 +57,5 @@ ms.locfileid: "59669799"
  [Dostosowywanie edytora](../../ide/customizing-the-editor.md)  
  Zawiera łącza do tematów wyjaśniających wiele aspektów edytora, dla których można ustawić preferencje.  
   
- [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  Zawiera łącza do tematów, które opisują sposób dostosowania ustawień, kluczowe powiązania i inne funkcje zintegrowanego środowiska programistycznego (IDE).

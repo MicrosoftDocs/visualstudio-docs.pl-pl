@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b80e0e7daed1c426ea30c3da9a4e2324d33f48bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683015"
 ---
 # <a name="msbuild-reference"></a>Odwołanie do narzędzia MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "59650303"
  Wyświetla listę znaków, które mogą mieć "dodać znak ucieczki" Aby były prawidłowo interpretowane. Sekwencja unikowa to ciąg znaków oznacza, że występuje alternatywnych interpretacji.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Przegląd MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Introduces [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] i zawiera łącza do tematów, które wyjaśniają, jak z niej korzystać do tworzenia projektów.  
+ [Przegląd MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Introduces [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] i zawiera łącza do tematów, które wyjaśniają, jak z niej korzystać do tworzenia projektów.  
   
  <xref:Microsoft.Build.Conversion>  
  Zawiera odwołanie do przestrzeni nazw konwersji  

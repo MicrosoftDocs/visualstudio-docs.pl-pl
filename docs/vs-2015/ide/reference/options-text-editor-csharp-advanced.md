@@ -20,12 +20,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c8b957517a7b539f74a9715b92b8a2945d3fe5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 73148f8c3f569f3d585f6127b7ec713c766b0f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441376"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674249"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63441376"
 Aby zmodyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komentarze dokumentacji XML dla języka Visual C#, należy użyć tego okna dialogowego. Aby otworzyć to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu rozwiń **Edytor tekstu** folder, rozwiń węzeł **C#**, a następnie kliknij przycisk  **Zaawansowane**.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="outlining"></a>Tworzenie konspektu  
  Przejdź do trybu konspektu po otwarciu plików  
@@ -68,7 +68,7 @@ Aby zmodyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komenta
   
 ## <a name="xml-documentation-comments"></a>Komentarze dokumentacji XML  
  Generowanie komentarzy dokumentacji XML dla / / /  
- Po wybraniu wstawia \<podsumowania > początek i koniec tagi automatycznie dla komentarzy dokumentacji XML, po wpisaniu wprowadzenie komentarz / / /. Aby uzyskać więcej informacji na temat dokumentacji XML, zobacz [komentarze dokumentacji XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ Po wybraniu wstawia \<podsumowania > początek i koniec tagi automatycznie dla komentarzy dokumentacji XML, po wpisaniu wprowadzenie komentarz / / /. Aby uzyskać więcej informacji na temat dokumentacji XML, zobacz [komentarze dokumentacji XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   
 ## <a name="implement-interface"></a>Implementowanie interfejsu  
  Otocz wygenerowanego kodu za pomocą #region  
@@ -79,6 +79,6 @@ Aby zmodyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komenta
  Po wybraniu `System` przy użyciu dyrektywy są wyświetlane przed innymi za pomocą dyrektywy. Aby uzyskać więcej informacji, zobacz [Sortuj wyrażenia Using](../../misc/sort-usings.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Komentarze dokumentacji XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [Komentarze dokumentacji XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)   
  [Funkcja IntelliSense dla języka Visual C#](../../ide/visual-csharp-intellisense.md)

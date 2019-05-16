@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5d7339ac0e79ac318dcf3913be97bec6847ec69
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2cf949803bcc864937e67c1f94addaaf6abacbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430546"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685640"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowanymi ustawieniami dewelopera języka Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63430546"
 Domyślnie, wszystkie opcje konfiguracji zaawansowanej kompilacji jest ukryty za pomocą [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zastosowanymi ustawieniami dewelopera. W tym temacie wyjaśniono, jak ręcznie włączyć te ustawienia.  
   
 ## <a name="enabling-advanced-build-configurations"></a>Włączanie zaawansowane konfiguracje kompilacji  
- Domyślnie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ustawienia dewelopera Ukryj opcję, aby otworzyć **programu Configuration Manager** okno dialogowe i **konfiguracji** i **platformy** list w [Projektant projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+ Domyślnie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ustawienia dewelopera Ukryj opcję, aby otworzyć **programu Configuration Manager** okno dialogowe i **konfiguracji** i **platformy** list w [Projektant projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 #### <a name="to-enable-advanced-build-configurations"></a>Aby włączyć zaawansowane konfiguracje kompilacji  
   

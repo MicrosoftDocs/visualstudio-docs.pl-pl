@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f0d674984d916cb59f5938903d1bf1ba7d687bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433684"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680328"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybierz elementy paska narzędzi, składniki WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę forma
 - Gdy zaznaczone jest pole wyboru obok składnika, ikona tych składników, będą wyświetlane w **przybornika**.  
   
   > [!TIP]
-  > Aby dodać wystąpienie kontrolki WPF do projektu dokument otwarty do edycji, przeciągnij jego **przybornika** ikony na powierzchnię projektową widoku. Domyślne znaczników i kodu dla składnika są wstawiane do projektu, możesz zmodyfikować. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie oknem przybornika](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) i [jak: Karty przybornika manipulowania](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  > Aby dodać wystąpienie kontrolki WPF do projektu dokument otwarty do edycji, przeciągnij jego **przybornika** ikony na powierzchnię projektową widoku. Domyślne znaczników i kodu dla składnika są wstawiane do projektu, możesz zmodyfikować. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie oknem przybornika](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) i [jak: Karty przybornika manipulowania](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Po wyczyszczeniu pola wyboru obok składnika odpowiednią ikonę zostaną usunięte z **przybornika.**  
   
@@ -42,13 +42,13 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę forma
   Wyświetla listę nazw kontrolek WPF, dla których wpisy znajdują się w rejestrze na komputerze.  
   
   Przestrzeń nazw  
-  Wyświetla hierarchię [NIB: Biblioteka klas programu .NET Framework](http://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) przestrzeni nazw, który definiuje strukturę składnika. Sortuj w tej kolumnie, aby wyświetlić listę dostępnych składników w każdej przestrzeni nazw z .NET Framework zainstalowana na danym komputerze.  
+  Wyświetla hierarchię [NIB: Biblioteka klas programu .NET Framework](https://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) przestrzeni nazw, który definiuje strukturę składnika. Sortuj w tej kolumnie, aby wyświetlić listę dostępnych składników w każdej przestrzeni nazw z .NET Framework zainstalowana na danym komputerze.  
   
   Nazwa zestawu  
   Wyświetla nazwę zestawu .NET Framework, który zawiera przestrzeń nazw dla każdego składnika. Sortuj od tej kolumny, aby wyświetlić listę przestrzeni nazw zawartych w każdym zestawie .NET Framework zainstalowana na danym komputerze.  
   
   Katalog  
-  Wyświetla lokalizację zestawu .NET Framework. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache. Aby uzyskać więcej informacji na temat globalnej pamięci podręcznej zestawów, zobacz [Praca z zestawami i Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).  
+  Wyświetla lokalizację zestawu .NET Framework. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache. Aby uzyskać więcej informacji na temat globalnej pamięci podręcznej zestawów, zobacz [Praca z zestawami i Global Assembly Cache](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **Filtr**  
@@ -72,10 +72,10 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę forma
   
   Ponadto, jeśli metadanych w czasie projektowania jest stosowany do formantu niestandardowego i metadane Określa, że <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> ustawiono `false`, formant nie jest wyświetlana w przyborniku.  
   
-  Możesz odwoływać się kontrolkom bezpośrednio w widoku XAML przez mapowanie przestrzeni nazw i zestawu dla formantu. Aby uzyskać więcej informacji, zobacz [jak: Importowanie Namespace XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
+  Możesz odwoływać się kontrolkom bezpośrednio w widoku XAML przez mapowanie przestrzeni nazw i zestawu dla formantu. Aby uzyskać więcej informacji, zobacz [jak: Importowanie Namespace XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wybierz elementy przybornika, okno dialogowe (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
+ [Wybierz elementy przybornika, okno dialogowe (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [Przybornik](../../ide/reference/toolbox.md)   
- [Instrukcje: Użyj kontrolki WPF innych firm w aplikacji WPF](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
- [Projektant WPF](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)
+ [Instrukcje: Użyj kontrolki WPF innych firm w aplikacji WPF](https://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [Projektant WPF](https://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

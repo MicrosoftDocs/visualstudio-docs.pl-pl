@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757661"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685697"
 ---
 # <a name="application-properties"></a>Właściwości aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ Można ustawić właściwości ogólnego zastosowania dla języka Visual Basic C
   Zadania dostępne dla aplikacji są zależne od języka programowania, używany.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: Określanie ikony aplikacji (Visual Basic C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
+ [Instrukcje: Określanie ikony aplikacji (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [Wprowadzenie do projektanta projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Wprowadzenie do projektanta projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Zarządzanie, debugowanie — właściwości](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Zarządzanie właściwościami kompilacja](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Zarządzanie, debugowanie — właściwości](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Zarządzanie właściwościami kompilacja](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Zarządzanie zasobami aplikacji (.NET)](../ide/managing-application-resources-dotnet.md)   
  [Zarządzanie ustawieniami aplikacji (.NET)](../ide/managing-application-settings-dotnet.md)

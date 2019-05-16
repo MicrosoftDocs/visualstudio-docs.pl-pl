@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194569"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691446"
 ---
 # <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  [IntelliTrace](../debugger/intellitrace.md)  
  Znajduj błędy szybciej i łatwiej, rejestrując historię wykonywania aplikacji za pomocą funkcji IntelliTrace. Krok do tyłu i przekazywać je za pośrednictwem zarejestrowane zdarzenia i wywołania, aby sprawdzić stan aplikacji w kluczowych punktach w czasie. Debugowanie kodu bez ustawiania wielu punktów przerwania lub ponownego uruchamiania aplikacji w taki sposób, jak często. Wymaga programu Visual Studio Ultimate.  
   
- [Śledzenie i instrumentacja aplikacji](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
+ [Śledzenie i instrumentacja aplikacji](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
  W tym artykule opisano, śledzenie, możesz monitorować wykonywanie aplikacji, gdy jest uruchomiona i instrumentacji, które obejmuje umieszczenie instrukcji śledzenia w lokalizacjach strategicznych w kodzie. Ten temat zawiera także łącza do wprowadzenie do Instrumentacji i śledzenia, przełączniki śledzenia, obiekty nasłuchujące śledzenia kodu w aplikacji, Dodawanie instrukcji śledzenia do kodu aplikacji i kompilowanie warunkowe ze śledzenia <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> .  
   
- [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
+ [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  Zawiera opis opcji konsolidatora, która dodaje <xref:System.Diagnostics.DebuggableAttribute> do kodu napisanego w języku C++. Ten atrybut jest potrzebnych do korzystania z debugowania funkcji, takich jak dołączanie przy użyciu języka C++.  
   
- [Debugowanie aplikacji usługi Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
+ [Debugowanie aplikacji usługi Windows](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
  Zawiera informacje dotyczące debugowania aplikacji usług Windows, w tym konfigurowania, dołączanie do procesu, debugowanie kodu w usłudze `OnStart` metodę i kod w metody Main, ustawiania punktów przerwania, a za pomocą kontroli usług Manager, aby uruchomić, zatrzymać, wstrzymać lub kontynuować usługę.  
   
- [Debugowanie i profilowanie](http://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
+ [Debugowanie i profilowanie](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
  W tym artykule omówiono wymagania konfiguracji i debugowania aplikacji .NET Framework.  
   
  [Debugowanie skryptów i aplikacji sieci Web](../debugger/debugging-web-applications-and-script.md)  
@@ -88,6 +88,6 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje dotyczące nowości w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, Edytuj i Kontynuuj, debugowanie kodu zarządzanego, debugowania projektów Visual C++, debugowania modelu COM i ActiveX, debugowanie bibliotek DLL, debugowanie SQL, a użytkownik odwołania do interfejsu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Debugowanie Windows niestandardowych formantów formularzy w czasie projektowania](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [Przewodnik: Debugowanie Windows niestandardowych formantów formularzy w czasie projektowania](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)

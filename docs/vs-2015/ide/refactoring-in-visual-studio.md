@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f98061cbc25bc4b4b7ef54a7027f40c9f780c6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a3db616ec23a8d6fdb1984ce27f8fec4909cc9e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680240"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refaktoryzacja w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ Refaktoryzacja polega na modyfikacji kodu, aby ułatwić utrzymanie, zrozumieć 
  [Refaktoryzacja (C#)](../csharp-ide/refactoring-csharp.md)
 
 ### <a name="refactoring-in-visual-basic"></a>Refaktoryzacja w języku Visual Basic
- [Refaktoryzacja i zmiana nazwy — okno dialogowe (Visual Basic)](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)
+ [Refaktoryzacja i zmiana nazwy — okno dialogowe (Visual Basic)](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)
 
 ### <a name="refactoring-in-c"></a>Refaktoryzacja w języku C++
- [Pisanie i refaktoryzacja kodu (C++)](http://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
+ [Pisanie i refaktoryzacja kodu (C++)](https://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
 
 ### <a name="refactoring-in-f"></a>Refaktoryzacja w F\#
  Refaktoryzacja obsługę F# znajduje się w [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), rozszerzenia programu Visual Studio innych firm.

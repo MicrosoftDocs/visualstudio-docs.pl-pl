@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dc27bd0cb93ab142d2a82758c72b27d14032d04e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424630"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674980"
 ---
 # <a name="managing-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Projekty mają właściwości, które zarządzają wiele aspektów kompilacji, d
   
  ![Visual C&#43;&#43; project properties](../ide/media/vs2015-projprops-cpp.png "VS2015_ProjProps_cpp")  
   
- Aby uzyskać informacji na temat właściwości projektu C++, zobacz [Praca z właściwościami projektu](http://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd). Aby uzyskać więcej informacji na temat właściwości kodu JavaScript, zobacz [strony właściwości, JavaScript](../ide/reference/property-pages-javascript.md).  
+ Aby uzyskać informacji na temat właściwości projektu C++, zobacz [Praca z właściwościami projektu](https://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd). Aby uzyskać więcej informacji na temat właściwości kodu JavaScript, zobacz [strony właściwości, JavaScript](../ide/reference/property-pages-javascript.md).  
   
 ## <a name="solution-properties"></a>Właściwości rozwiązania  
  Aby uzyskać dostęp do właściwości rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **właściwości**. W oknie dialogowym możesz ustawić konfiguracje projektu do debugowania lub wydania kompilacji, wybierz, które projekty (s) powinna być projekt startowy, po naciśnięciu klawisza F5 i ustaw opcje analizy kodu.  

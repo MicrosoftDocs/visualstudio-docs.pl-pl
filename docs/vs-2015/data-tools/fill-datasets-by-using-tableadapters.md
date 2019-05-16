@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fb06c1d97c854aae05d993c086069e10e35518f5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431944"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704983"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnij zestawów danych za pomocą adapterów TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawi
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>Associated DataTable schema  
- Gdy utworzysz TableAdapter, użyj początkowego zapytania lub skojarzonej procedurę przechowywaną, aby zdefiniować schemat TableAdapter <xref:System.Data.DataTable>. Uruchomienie tego początkowego zapytania lub procedurę składowaną przez wywołanie metody TableAdapter `Fill` — metoda (która wypełnia TableAdapter skojarzonej <xref:System.Data.DataTable>). Wszelkie zmiany wprowadzone do zapytanietableadapter główne są odzwierciedlane w schemat tabeli powiązane dane. Na przykład usunięcie kolumny z główne zapytanie spowoduje również usunięcie kolumny z tabeli powiązane dane. Jeśli żadnych dodatkowych kwerend w metodzie TableAdapter używa instrukcji SQL, które zwracają kolumn, które nie znajdują się w głównym zapytania, Projektant próbuje synchronizować zmiany kolumn między kwerendy głównych i dodatkowych kwerend. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+ Gdy utworzysz TableAdapter, użyj początkowego zapytania lub skojarzonej procedurę przechowywaną, aby zdefiniować schemat TableAdapter <xref:System.Data.DataTable>. Uruchomienie tego początkowego zapytania lub procedurę składowaną przez wywołanie metody TableAdapter `Fill` — metoda (która wypełnia TableAdapter skojarzonej <xref:System.Data.DataTable>). Wszelkie zmiany wprowadzone do zapytanietableadapter główne są odzwierciedlane w schemat tabeli powiązane dane. Na przykład usunięcie kolumny z główne zapytanie spowoduje również usunięcie kolumny z tabeli powiązane dane. Jeśli żadnych dodatkowych kwerend w metodzie TableAdapter używa instrukcji SQL, które zwracają kolumn, które nie znajdują się w głównym zapytania, Projektant próbuje synchronizować zmiany kolumn między kwerendy głównych i dodatkowych kwerend. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie TableAdapters](https://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>Polecenia aktualizacji TableAdapter  
  Funkcja aktualizacji TableAdapter jest zależna od ilości informacji jest dostępnych w główne zapytanie w Kreatorze TableAdapter. Na przykład adapterów TableAdapter, które są skonfigurowane do pobierania wartości z wielu tabel (sprzężenia), wartości skalarnych, widokach lub wyniki funkcji agregujących nie są wstępnie utworzone za pomocą możliwość wysyłania aktualizacji do podstawowej bazy danych. Jednak należy skonfigurować ręcznie w poleceń INSERT, UPDATE i DELETE **właściwości** okna.  
@@ -106,7 +106,7 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawi
  Jeśli nie chcesz utworzyć te metody bezpośrednie, ustaw TableAdapter **GenerateDbDirectMethods** właściwości `false` (w **właściwości** okno). Dodatkowe zapytania, które są dodawane do elementu TableAdapter są autonomiczne zapytań — nie generują te metody.  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter obsługę typów dopuszczających wartości zerowe  
- TableAdapters obsługuje typy dopuszczające wartości zerowe `Nullable(Of T)` i `T?`. Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual Basic, zobacz [typów wartości dopuszczających wartości zerowe](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku C#, zobacz [przy użyciu typów dopuszczających wartości zerowe](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
+ TableAdapters obsługuje typy dopuszczające wartości zerowe `Nullable(Of T)` i `T?`. Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual Basic, zobacz [typów wartości dopuszczających wartości zerowe](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku C#, zobacz [przy użyciu typów dopuszczających wartości zerowe](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Zabezpieczenia  
  Kiedy używasz polecenia danych za pomocą `CommandType` właściwością <xref:System.Data.CommandType>, należy dokładnie sprawdzić informacje przesyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próby wysłania przez użytkownika (wstrzyknąć) zmodyfikowany lub dodatkowych instrukcji SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze sprawdzić, czy informacje są prawidłowe. Najlepszym rozwiązaniem jest zawsze używaj sparametryzowanych zapytań lub procedur przechowywanych, gdy jest to możliwe.  

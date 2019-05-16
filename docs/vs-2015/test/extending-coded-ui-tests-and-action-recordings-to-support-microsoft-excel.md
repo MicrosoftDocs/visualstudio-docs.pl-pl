@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a85676fca972bb0d2d91f5ffd7c7cbf95bfc68c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416468"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686391"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Struktura testowania kodowane testy interfejsu użytkownika i nagrywania akcji n
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft dodatek programu Excel: ExcelCodedUIAddinHelper  
  Ten projekt zawiera dodatek, który działa w procesie programu Excel. Zobacz [przykładowy dodatek Excel dla kodowanych testów interfejsu użytkownika](../test/sample-excel-add-in-for-coded-ui-testing.md) krótki przegląd projektu dodatku.  
   
- Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla programu Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla programu Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Komunikacja interfejsu użytkownika programu Excel: ExcelUIcommunicationHelper  
  Ten projekt zawiera `IExcelUICommunication` interfejsu i klasy informacje, które są używane do przekazywania danych między struktury testowania kodowanego interfejsu użytkownika i program Excel. Aby uzyskać więcej informacji, zobacz [interfejs komunikatora programu Excel przykładowe](../test/sample-excel-communicator-interface.md).  

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431115"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690217"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Wizualizowanie zdarzeń i znaczników EventSource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w pos
   
 ### <a name="marker-type"></a>Typ znacznika  
   
-1. Zdarzenia, które mają [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: uruchamianie lub win: zatrzymywanie są traktowane jako początek lub koniec zakresu, odpowiednio.  Zagnieżdżone lub nakładające się zakresy nie mogą być wyświetlane. Nie można wyświetlić pary zdarzeń, które zaczynają się w jednym wątku i kończyć się na innym.  
+1. Zdarzenia, które mają [Opcode](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: uruchamianie lub win: zatrzymywanie są traktowane jako początek lub koniec zakresu, odpowiednio.  Zagnieżdżone lub nakładające się zakresy nie mogą być wyświetlane. Nie można wyświetlić pary zdarzeń, które zaczynają się w jednym wątku i kończyć się na innym.  
   
-2. Zdarzenie, którego kod operacji nie jest win: Start ani win: Stop jest traktowany jako flagi znacznika, chyba że jego [poziom](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win: pełne lub nowszej.  
+2. Zdarzenie, którego kod operacji nie jest win: Start ani win: Stop jest traktowany jako flagi znacznika, chyba że jego [poziom](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win: pełne lub nowszej.  
   
 3. We wszystkich innych przypadkach zdarzenia jest traktowany jak jeden komunikat.  
   
@@ -62,11 +62,11 @@ Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w pos
   
 |wartość cvType|Wynikowy typ znacznika|  
 |------------------|---------------------------|  
-|0|Komunikat|  
+|0|Message|  
 |1|Początek zakresu|  
 |2|Koniec zakresu|  
 |3|Flaga|  
-|Wszystkie inne wartości|Komunikat|  
+|Wszystkie inne wartości|Message|  
   
 ### <a name="importance"></a>Znaczenie  
  Możesz użyć `cvImportance` pola typu byte, aby kontrolować ustawienia ważności zdarzeń EventSource. Firma Microsoft zaleca jednak sterować wyświetlanych ważność zdarzenia przy użyciu jego poziom.  

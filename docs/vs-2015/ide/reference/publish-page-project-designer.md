@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f135221564583d2d9726bb9fa153840b1328e96f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441309"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701828"
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ ms.locfileid: "63441309"
  Aplikacje przeglądarki WPF sieci Web, aby uzyskać **aplikacja jest dostępna w trybie offline oraz** opcja jest wyłączona, ponieważ takie aplikacje są dostępne tylko w trybie online.  
   
  **Pliki aplikacji**  
- Otwiera [pliki aplikacji, okno dialogowe](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), który jest używany do określenia, jak i gdzie poszczególne pliki są instalowane.  
+ Otwiera [pliki aplikacji, okno dialogowe](https://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), który jest używany do określenia, jak i gdzie poszczególne pliki są instalowane.  
   
  **Wymagania wstępne**  
  Otwiera [wstępnie wymagane składniki, okno dialogowe](../../ide/reference/prerequisites-dialog-box.md), który jest używany do określenia wstępnie wymagane składniki, takie jak .NET Framework, można zainstalować wraz z aplikacją.  
   
  **Aktualizacje**  
- Otwiera [dialogowym aktualizacje aplikacji](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), która umożliwia określenie zachowania aktualizacji dla aplikacji. Nie jest dostępna, gdy **aplikacja jest dostępna online tylko** jest zaznaczone.  
+ Otwiera [dialogowym aktualizacje aplikacji](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), która umożliwia określenie zachowania aktualizacji dla aplikacji. Nie jest dostępna, gdy **aplikacja jest dostępna online tylko** jest zaznaczone.  
   
  **Opcje**  
- Otwiera [okno dialogowe Opcje publikowania](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), który jest używany do określenia dodatkowych zaawansowane opcje publikowania.  
+ Otwiera [okno dialogowe Opcje publikowania](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), który jest używany do określenia dodatkowych zaawansowane opcje publikowania.  
   
  **Opublikuj wersję**  
  Ustawia numer wersji publikowania dla aplikacji; Po zmianie numeru wersji, aplikacja została opublikowana jako aktualizację. Każda część wersję publikacji (**głównych**, **pomocnicza**, **kompilacji**, **poprawki**) może mieć maksymalną wartość 65355 (<xref:System.UInt16.MaxValue>), Maksymalna dozwolona przez <xref:System.Version>.  
@@ -70,7 +70,7 @@ ms.locfileid: "63441309"
  Opcjonalna. Po wybraniu tej opcji (ustawienie domyślne), **poprawki** część numeru wersji publikowania jest zwiększany o jeden każdym opublikowaniu aplikacji. To powoduje, że aplikacja opublikowana jako aktualizację.  
   
  **Kreator publikacji**  
- Otwiera [Kreator publikacji](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Kończenie pracy Kreatora publikacji ma taki sam skutek jak działa **Publikuj** polecenie **kompilacji** menu.  
+ Otwiera [Kreator publikacji](https://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Kończenie pracy Kreatora publikacji ma taki sam skutek jak działa **Publikuj** polecenie **kompilacji** menu.  
   
  **Publikuj teraz**  
  Publikuje aplikacji przy użyciu bieżących ustawień. Odpowiednikiem **Zakończ** znajdujący się w **PublishWizard**.  

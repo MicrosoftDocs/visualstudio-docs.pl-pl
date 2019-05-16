@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442857"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681680"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Instrukcje: Ręcznie pakietu rozszerzenia (VSIX wdrożenia)
 Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeń dla wdrożenia. Istnieją trzy sposoby, aby utworzyć pakiet:  
@@ -26,7 +26,7 @@ Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs
   W tym dokumencie opisano trzecią opcję.  
   
 ## <a name="creating-a-vsix-package"></a>Tworzenie pakietu VSIX  
- Aby ręcznie pakiet rozszerzenia, Dodaj plik extension.manifest i pliku [Content_Types] .xml do projektu rozszerzenia, umieść je w pliku skompresowanym wraz z danych wyjściowych kompilacji, a tak, że ma rozszerzenie nazwy pliku .vsix, Zmień nazwę skompresowanego pliku. Rozszerzenie do umieszczenia w pakiecie musi być typu, który jest obsługiwany przez [schematu VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Aby ręcznie pakiet rozszerzenia, Dodaj plik extension.manifest i pliku [Content_Types] .xml do projektu rozszerzenia, umieść je w pliku skompresowanym wraz z danych wyjściowych kompilacji, a tak, że ma rozszerzenie nazwy pliku .vsix, Zmień nazwę skompresowanego pliku. Rozszerzenie do umieszczenia w pakiecie musi być typu, który jest obsługiwany przez [schematu VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
 > Nazwy plików pakietów VSIX nie może zawierać spacji ani znaków, które są zastrzeżone w identyfikatorach URI (Uniform Resource), zdefiniowane w obszarze [ \[specyfikacja RFC 2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -37,7 +37,7 @@ Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs
   
 2. Utwórz plik XML i nadaj mu nazwę `extension.vsixmanifest`.  
   
-3. Wprowadź w pliku extension.vsixmanifest zgodnie ze schematem VSIX. Manifest przykładzie można zobaczyć [PackageManifest elementu (Element główny, schemat VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Wprowadź w pliku extension.vsixmanifest zgodnie ze schematem VSIX. Manifest przykładzie można zobaczyć [PackageManifest elementu (Element główny, schemat VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4. Utwórz drugi plik XML i nadaj mu nazwę `[Content_Types].xml`.  
   
@@ -56,4 +56,4 @@ Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzenia programu Visual Studio wysyłki](../extensibility/shipping-visual-studio-extensions.md)   
  [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Element PackageManifest (Element główny, VSX schematu)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Element PackageManifest (Element główny, VSX schematu)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

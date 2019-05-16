@@ -10,19 +10,19 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59afc6a95e327460602ece8db58f075b483d0e09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5d2e7d15f7b479941c3186d8cd694c92f762bbf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690994"
 ---
 # <a name="extending-properties"></a>Rozszerzanie właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Właściwości** okna jest przeglądarkę właściwości uniwersalnych dla składników COM i COM + i obsługuje wszystkie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] produktów. **Właściwości** okna współpracuje z `ITypeInfo` typu informacji i metadanych modelu COM +, aby wyświetlić listę właściwości czasu projektowania dla aktualnie wybranego obiektu w innym oknie zintegrowanego środowiska programistycznego (IDE).  
   
- **Właściwości** okno, które można otworzyć, naciskając klawisz F4 na klawiaturze lub wybierając **okno właściwości** na **widoku** menu służy do wyświetlania i edytowania niezależne od konfiguracji, w czasie projektowania, właściwości i zdarzeń zaznaczonych obiektów. Właściwości zależne od konfiguracji, skojarzone z rozwiązaniami i projektami, są wyświetlane na [stron właściwości](../../extensibility/internals/property-pages.md). Aby uzyskać więcej informacji, zobacz [właściwości NIB: projektu](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md), i [zarządzania NIB: element w projektach](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ **Właściwości** okno, które można otworzyć, naciskając klawisz F4 na klawiaturze lub wybierając **okno właściwości** na **widoku** menu służy do wyświetlania i edytowania niezależne od konfiguracji, w czasie projektowania, właściwości i zdarzeń zaznaczonych obiektów. Właściwości zależne od konfiguracji, skojarzone z rozwiązaniami i projektami, są wyświetlane na [stron właściwości](../../extensibility/internals/property-pages.md). Aby uzyskać więcej informacji, zobacz [właściwości NIB: projektu](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md), i [zarządzania NIB: element w projektach](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  ![Omówienie okna właściwości](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Okno właściwości  
@@ -70,19 +70,19 @@ Okno właściwości
  [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)  
  W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] platformy ciągłe testowanie i debugowanie aplikacji podczas ich tworzenia.  
   
- [Właściwości dokumentu HTML, okno właściwości](http://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
+ [Właściwości dokumentu HTML, okno właściwości](https://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
  Zawiera instrukcje dotyczące edytowania dokumentu HTML bezpośrednio w oknie właściwości i zawiera tabela przedstawiająca szczegółowo pola w dokumencie HTML w oknie dialogowym właściwości.  
   
- [IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
+ [IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
  W tym artykule opisano `IDispatch` interfejs, który pierwotnie opracowano do obsługi automatyzacji, zapewnienie mechanizmu przekazującego z późnym wiązaniem dostępu i pobieranie informacji na temat metod i właściwości obiektu.  
   
- [NIB: Wprowadzenie do właściwości dynamicznych (Visual Studio)](http://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
+ [NIB: Wprowadzenie do właściwości dynamicznych (Visual Studio)](https://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
  Zawiera omówienie właściwości dynamicznych, które pozwalają skonfigurować aplikację tak, aby wartości właściwości są przechowywane w pliku konfiguracji zewnętrznego zamiast skompilowany kod aplikacji.  
   
- [NIB: projekty, jako kontenery](http://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
+ [NIB: projekty, jako kontenery](https://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
  W tym artykule opisano rolę projektu jako kontener w rozwiązaniu do logicznie zarządzania, tworzenie i debugowanie elementy, które składają się na aplikację.  
   
- [NIB:Project Properties](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
+ [NIB:Project Properties](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
  W tym artykule opisano, jak projekt zarządza ustawienia, które umożliwiają właściwości kontrolki, które są stosowane do całego projektu, a także właściwości, które są ograniczone do niektórych konfiguracje kompilacji projektu.  
   
  [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)  

@@ -30,12 +30,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800927"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682423"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Przecieki pamięci, zdefiniowane jako niepowodzenie poprawnie npamięci, które 
   
  Aby funkcje CRT działały prawidłowo `#include` instrukcji należy wykonać pokazaną tu kolejność.  
   
- Łącznie z mapy crtdbg.h `malloc` i [bezpłatne](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) funkcje do ich wersji debugowej [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) i `free`, którye śledzą alokację i dezalokację pamięci. To mapowanie występuje tylko w debugowanych kompilacjach, które mają `_DEBUG`. Kompilacje wydania używają zwykłej `malloc` i `free` funkcji.  
+ Łącznie z mapy crtdbg.h `malloc` i [bezpłatne](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) funkcje do ich wersji debugowej [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) i `free`, którye śledzą alokację i dezalokację pamięci. To mapowanie występuje tylko w debugowanych kompilacjach, które mają `_DEBUG`. Kompilacje wydania używają zwykłej `malloc` i `free` funkcji.  
   
  `#define` Instrukcji mapuje wersję podstawową stosu CRT na odpowiednią wersję debugowania. Jeżeli pominięto `#define` instrukcji, zrzut przecieku pamięci będzie mniej dokładny.  
   
@@ -67,7 +67,7 @@ Przecieki pamięci, zdefiniowane jako niepowodzenie poprawnie npamięci, które 
 _CrtDumpMemoryLeaks();  
 ```  
   
- Jeśli aplikacja ma wiele wyjść, nie trzeba ręcznie umieszczać wywołania do [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) w każdym punkcie wyjścia. Wywołanie `_CrtSetDbgFlag` na początku aplikacji spowoduje automatyczne wywołanie `_CrtDumpMemoryLeaks` na każdym punkcie wyjścia. Należy ustawić dwa pola bitowe pokazane tutaj:  
+ Jeśli aplikacja ma wiele wyjść, nie trzeba ręcznie umieszczać wywołania do [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) w każdym punkcie wyjścia. Wywołanie `_CrtSetDbgFlag` na początku aplikacji spowoduje automatyczne wywołanie `_CrtDumpMemoryLeaks` na każdym punkcie wyjścia. Należy ustawić dwa pola bitowe pokazane tutaj:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -82,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretowanie raport przecieku pamięci  
- Jeśli aplikacja nie definiuje `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) wyświetla raport przecieku pamięci, który wygląda podobnie do tego:  
+ Jeśli aplikacja nie definiuje `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) wyświetla raport przecieku pamięci, który wygląda podobnie do tego:  
   
 ```  
 Detected memory leaks!  
@@ -109,7 +109,7 @@ Object dump complete.
   
 - Numer alokacji pamięci, która jest `18` w tym przykładzie  
   
-- [Typ bloku](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), czyli `normal` w tym przykładzie.  
+- [Typ bloku](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), czyli `normal` w tym przykładzie.  
   
 - Lokalizacja pamięci szesnastkowej, czyli `0x00780E80` w tym przykładzie.  
   

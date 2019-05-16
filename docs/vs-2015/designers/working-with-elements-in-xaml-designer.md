@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403458"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690032"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Praca z elementami w Projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403458"
 Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w XAML, w kodzie lub przy użyciu projektanta XAML. W tym temacie opisano sposób pracy z elementami w Projektancie XAML w programie Visual Studio lub Blend for Visual Studio.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Dodanie elementu do układu  
- *Układ* polega na rozmiar i położenie elementów w interfejsie użytkownika. Aby zmienić położenie elementów wizualnych, możesz umieścić je w układzie [panelu](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). A `Panel` ma właściwości elementu podrzędnego, który jest kolekcją z [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx) typów. Można użyć różnych `Panel` elementy podrzędne, takie jak [kanwy](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx), i [siatki](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), która będzie służyć jako kontenery i to pozycjonowania i rozmieszczania elementów na stronie.  
+ *Układ* polega na rozmiar i położenie elementów w interfejsie użytkownika. Aby zmienić położenie elementów wizualnych, możesz umieścić je w układzie [panelu](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). A `Panel` ma właściwości elementu podrzędnego, który jest kolekcją z [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx) typów. Można użyć różnych `Panel` elementy podrzędne, takie jak [kanwy](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx), i [siatki](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), która będzie służyć jako kontenery i to pozycjonowania i rozmieszczania elementów na stronie.  
   
  Domyślnie `Grid` panelu służy jako kontener układu najwyższego poziomu w ramach strony lub formularza. Możesz dodać panele układów, formantów i innych elementów w obrębie układu strony najwyższego poziomu.  
   
@@ -34,7 +34,7 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
   
     - Przeciągnij element z **przybornika** do obszaru kompozycji.  
   
-    - W **przybornika**, wybierz jedno z narzędzi do rysowania (na przykład [elipsy](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) lub [prostokąt](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), a następnie narysuj element aktywnego panelu.  
+    - W **przybornika**, wybierz jedno z narzędzi do rysowania (na przykład [elipsy](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) lub [prostokąt](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), a następnie narysuj element aktywnego panelu.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Zmiana kolejności warstw elementów  
  Jeśli istnieją dwa elementy w obszarze kompozycji w Projektancie XAML, jeden element pojawi się przed innymi w kolejności warstw. W dolnej części listy elementów w konspekt dokumentu okna jest elementem najbardziej z przodu (z wyjątkiem kiedy **wyznacza indeks** ustawiono właściwość elementu). Po włożeniu element do strony, formularza lub kontener układu elementu automatycznie znajduje się przed inne elementy w elemencie aktywny kontener. Aby zmienić kolejność elementów, można użyć **kolejności** poleceń lub przeciągnąć elementy w drzewie obiektów w okno konspektu dokumentu.  

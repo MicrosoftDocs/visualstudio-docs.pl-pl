@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105477"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702264"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Kontynuowanie wykonania po wyjątkach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kiedy debuger przerywa wykonywanie z powodu wyjątku, pojawi się okno dialogowe. Dla języka Visual Basic lub C#, zostanie wyświetlony [Asystenta wyjątków](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) okno dialogowe, domyślnie. Dla języka C++, zostanie wyświetlony starszej wersji **wyjątek** okno dialogowe. Jeśli używasz języka Visual Basic lub C#, ale zostały wyłączone **Asystenta wyjątków** w **opcje** zobaczysz okno dialogowe **wyjątek** okno dialogowe.  
+Kiedy debuger przerywa wykonywanie z powodu wyjątku, pojawi się okno dialogowe. Dla języka Visual Basic lub C#, zostanie wyświetlony [Asystenta wyjątków](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) okno dialogowe, domyślnie. Dla języka C++, zostanie wyświetlony starszej wersji **wyjątek** okno dialogowe. Jeśli używasz języka Visual Basic lub C#, ale zostały wyłączone **Asystenta wyjątków** w **opcje** zobaczysz okno dialogowe **wyjątek** okno dialogowe.  
   
  Gdy **Asystenta wyjątków** lub **wyjątek** pojawi się okno dialogowe, możesz spróbować rozwiązać ten problem, który spowodował wyjątek.  
   

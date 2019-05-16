@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0da69de4a91ebabce4af99e26195b349ef5daa60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e69bd59782c2caa1dcb878df4e5316df798b0f21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411409"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680977"
 ---
 # <a name="text-template-utility-methods"></a>Metody korzystania z szablonów tekstowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "63411409"
 Istnieje kilka metod, które są zawsze dostępne dla Ciebie podczas pisania kodu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonu tekstu. Te metody są zdefiniowane w <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
-> Można również użyć innych metod i usług udostępnianych przez środowisko hosta w regularnych szablon tekstowy (nieprzetworzony). Na przykład, można rozpoznać ścieżki do plików, rejestrowanie błędów i Pobierz usługi świadczone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i dowolne załadowane pakietów.  Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio z szablonu tekstowego](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Można również użyć innych metod i usług udostępnianych przez środowisko hosta w regularnych szablon tekstowy (nieprzetworzony). Na przykład, można rozpoznać ścieżki do plików, rejestrowanie błędów i Pobierz usługi świadczone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i dowolne załadowane pakietów.  Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio z szablonu tekstowego](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Pisanie metod  
  Możesz użyć `Write()` i `WriteLine()` metody dołączyć tekst wewnątrz bloku standardowego kodu, zamiast korzystać z blokiem kodu wyrażenia. Poniższe bloki kodu dwa są funkcjonalnie równoważne.  

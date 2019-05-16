@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795056"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686771"
 ---
 # <a name="debugger-windows"></a>Debuger Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Podczas debugowania programu, można otworzyć większość okien debugera. Aby 
 |Równoległe wyrażenie kontrolne|EWIDENCYJNE: + SHIFT + D, (1, 2, 3, 4)|[Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)|  
 |Wyrażenie kontrolne|CTRL + ALT + W, (1, 2, 3, 4)|[Okna wyrażeń kontrolnych i szybkich wyrażeń kontrolnych](../debugger/watch-and-quickwatch-windows.md)|  
 |QuickWatch|SHIFT+F9|[Okna wyrażeń kontrolnych i szybkich wyrażeń kontrolnych](../debugger/watch-and-quickwatch-windows.md)|  
-|Auto|CTRL+ALT+V, A|[Windows zmiennej](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Zmienne lokalne|CTRL+ALT+V, L|[Windows zmiennej](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Auto|CTRL+ALT+V, A|[Windows zmiennej](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Zmienne lokalne|CTRL+ALT+V, L|[Windows zmiennej](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Natychmiastowe|CTRL+ALT+I|[Okno bezpośrednie](../ide/reference/immediate-window.md)|  
-|Interaktywne debugowania języka Python|SHIFT+ALT+I|[Wprowadzenie do narzędzi PTVS: Interaktywny język Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Interaktywne debugowania języka Python|SHIFT+ALT+I|[PTVS — wprowadzenie: środowisko Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |Konsola JavaScript|CTRL+ALT+V, C|[Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |Eksplorator DOM|CTRL + ALT + V, D|[Debugowanie układu przy użyciu eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)|  
 |Dynamiczne drzewo wizualne|-|[Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)|  

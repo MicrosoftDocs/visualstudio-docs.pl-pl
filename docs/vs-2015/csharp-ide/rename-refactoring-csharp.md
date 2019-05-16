@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686040"
 ---
 # <a name="rename-refactoring-c"></a>Refaktoryzacja zmiany nazwy (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439954"
 |-----------------|----------------------|  
 |Pole|Zmienia deklaracji i użycia pola na nową nazwę.|  
 |Zmienna lokalna|Zmienia deklaracji i użycia zmiennej na nową nazwę.|  
-|Metoda|Zmienia nazwę metody i wszystkie odwołania do tej metody na nową nazwę. **Uwaga:**  Po zmianie nazwy metody rozszerzenia operacji zmiany nazwy propaguje do wszystkich wystąpień metody, które znajdują się w zakresie, niezależnie od tego, czy metoda rozszerzenia jest używany jako metodę statyczną lub metodą wystąpienia. Aby uzyskać więcej informacji, zobacz [metody rozszerzenia](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Metoda|Zmienia nazwę metody i wszystkie odwołania do tej metody na nową nazwę. **Uwaga:**  Po zmianie nazwy metody rozszerzenia operacji zmiany nazwy propaguje do wszystkich wystąpień metody, które znajdują się w zakresie, niezależnie od tego, czy metoda rozszerzenia jest używany jako metodę statyczną lub metodą wystąpienia. Aby uzyskać więcej informacji, zobacz [metody rozszerzenia](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Przestrzeń nazw|Zmienia nazwę przestrzeni nazw na nową nazwę w deklaracji, wszystkie `using` instrukcji i w pełni kwalifikowanych nazw. **Uwaga:**  Przy zmianie nazwy obszaru nazw, a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualizuje również **domyślne Namespace** właściwość **aplikacji** strony **projektanta projektu**. Ta właściwość nie może być resetowany, wybierając **Cofnij** z **Edytuj** menu. Aby zresetować **domyślne Namespace** wartości właściwości, należy zmodyfikować właściwość w **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [strony aplikacji](../ide/reference/application-page-project-designer-csharp.md).|  
 |Właściwość|Zmienia deklaracji i użycia właściwości na nową nazwę.|  
 |Typ|Zmienia wszystkie deklaracje i wszelkie użycia tego typu na nową nazwę, w tym konstruktory i destruktory. Dla typów częściowych operacji zmiany nazwy będzie propagowany do wszystkich części.|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>Zobacz też  
  [Refaktoryzacja (C#)](../csharp-ide/refactoring-csharp.md)   
- [Typy anonimowe](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [Typy anonimowe](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

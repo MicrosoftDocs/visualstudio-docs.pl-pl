@@ -10,12 +10,12 @@ ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdb6aabe2e7379c063e7347389deb467d724be3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e45d5f252deaf1788ae5093048ef8afb900fbe4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794578"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704074"
 ---
 # <a name="project-type-essentials"></a>Podstawowe informacje o typach projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "54794578"
   
 - Typy projektów są obiektami w VSPackage, które implementują zbiór interfejsów [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oczekuje. Jeśli używasz języka C# do tworzenia typów projektów, klasy projektu środowiska pakietu zarządzanego implementacji interfejsów wymaganych dla Ciebie i umożliwiają dziedziczą tę implementację. Aby uzyskać więcej informacji, zobacz [Implementowanie typu projektu (C#) przy użyciu środowiska pakietu zarządzanego](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
-- Dla deweloperów C++ klas w bibliotece HierUtil działają w podobny sposób. Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Implementowanie typu projektu (C++) przy użyciu klasy projektu HierUtil7](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+- Dla deweloperów C++ klas w bibliotece HierUtil działają w podobny sposób. Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Implementowanie typu projektu (C++) przy użyciu klasy projektu HierUtil7](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
 - Typy projektów może obsługiwać danych innych niż pliki kodu źródłowego typowe, które są kompilowane do zestawu .exe lub .dll. Na przykład [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projektów baz danych zawierają odwołania do skryptu i zapytania plików przechowywanych na dysku i dodanie poleceń do **Eksploratora rozwiązań** do wykonywania skryptów i zapytania względem bazy danych, ale projektów nie obsługują zachowanie kompilacji. Aby uzyskać więcej informacji, zobacz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
   

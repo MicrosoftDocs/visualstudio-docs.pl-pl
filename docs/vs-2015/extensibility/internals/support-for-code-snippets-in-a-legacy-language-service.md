@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408455"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691786"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Wstawianie fragmentu kodu przy użyciu polecenia Menu  
  Aby polecenie menu do wyświetlenia w przeglądarce fragment kodu, możesz dodać polecenie menu a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interfejsu w odpowiedzi na polecenie menu.  
   
-1. Dodaj przycisk i polecenia do pliku vsct. Można znaleźć instrukcje dotyczące wykonywania, dlatego w [instruktażu: Tworzenie polecenia Menu za pomocą szablonu pakietu programu Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Dodaj przycisk i polecenia do pliku vsct. Można znaleźć instrukcje dotyczące wykonywania, dlatego w [instruktażu: Tworzenie polecenia Menu za pomocą szablonu pakietu programu Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2. Wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy, a także Przesłoń <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> metodę w celu wskazania obsługę nowego polecenia menu. W tym przykładzie zawsze uruchamia polecenia menu.  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dec62254e64c137f133ddb1dbad849e25cb81f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d7a7663a2e365f800b754b771bffca4f539cee51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755484"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675435"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Przykłady i wskazówki dotyczące wdrażania ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,5 +41,5 @@ Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i instrukcje krok po 
 |[Pobieranie zestawów na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Wyjaśnia, jak można pobrać zestawów aplikacji tylko wtedy, gdy najpierw są one używane przez aplikację.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio Walkthroughs](http://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Visual Studio Walkthroughs](https://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Przykłady w Visual Studio](../ide/visual-studio-samples.md)

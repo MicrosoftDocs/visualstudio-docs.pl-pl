@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678807"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Funkcja IntelliTrace programu Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -73,7 +73,7 @@ Możesz zapisywać dane IntelliTrace z następujących źródeł:
 
 - Sesji testowej w programie Microsoft Test Manager
 
-- Aplikacje internetowe ASP.NET hostowane w usłudze IIS lub aplikacje SharePoint 2010 i SharePoint 2013 działające we wdrożeniu, gdy używasz programu Microsoft Monitoring Agent samodzielnie lub w połączeniu z programem System Center 2012. Zobacz [używać autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
+- Aplikacje internetowe ASP.NET hostowane w usłudze IIS lub aplikacje SharePoint 2010 i SharePoint 2013 działające we wdrożeniu, gdy używasz programu Microsoft Monitoring Agent samodzielnie lub w połączeniu z programem System Center 2012. Zobacz [używać autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).
 
 Oto kilka przykładów, jak IntelliTrace może pomóc w debugowaniu:
 

@@ -20,14 +20,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08480e46ab492acb1c7ab10c8514897721708aba
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559201"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692455"
 ---
-# <a name="save-data-in-a-transaction"></a>Zapisywanie danych w ramach transakcji
+# <a name="save-data-in-a-transaction"></a>zapisywanie danych w transakcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy użyciu <xref:System.Transactions> przestrzeni nazw. W tym przykładzie użyto `Customers` i `Orders` tabel z przykładowej bazy danych Northwind.  
@@ -44,12 +44,12 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 2. Nadaj projektowi nazwę **SavingDataInATransactionWalkthrough**.  
   
-3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
 ## <a name="create-a-database-data-source"></a>Tworzenie źródła danych bazy danych  
- Ten krok używa [Kreatora konfiguracji źródła danych](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) można utworzyć źródła danych, na podstawie `Customers` i `Orders` tabel w bazie danych Northwind.  
+ Ten krok używa [Kreatora konfiguracji źródła danych](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) można utworzyć źródła danych, na podstawie `Customers` i `Orders` tabel w bazie danych Northwind.  
   
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   

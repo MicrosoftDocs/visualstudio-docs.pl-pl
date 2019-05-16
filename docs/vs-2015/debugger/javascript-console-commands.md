@@ -18,19 +18,19 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431432"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690585"
 ---
 # <a name="javascript-console-commands"></a>Polecenia konsoli JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Przykłady pokazujące, jak używać tego okna, zobacz [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Informacje przedstawione w tym temacie mają zastosowanie do aplikacji Windows Store, Windows Phone Store, aplikacje i aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji Cordova, zobacz [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Aby uzyskać informacje na temat korzystania z konsoli w programie Internet Explorer F12 tools, zobacz [w tym temacie](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Przykłady pokazujące, jak używać tego okna, zobacz [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Informacje przedstawione w tym temacie mają zastosowanie do aplikacji Windows Store, Windows Phone Store, aplikacje i aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji Cordova, zobacz [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Aby uzyskać informacje na temat korzystania z konsoli w programie Internet Explorer F12 tools, zobacz [w tym temacie](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Jeśli nastąpi zamknięcie okna konsoli języka JavaScript, możesz go otworzyć podczas debugowania w programie Visual Studio, wybierając **debugowania** > **Windows** > **języka JavaScript Konsola**.  
   

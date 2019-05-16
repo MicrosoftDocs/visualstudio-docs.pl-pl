@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692246"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
   
  Testowanie podsystemu dotyczą te same zasady główne składniki systemu. Każdy składnik jest testowane oddzielnie od innych składników. Podsystem testy skoncentrować się na zachowanie widoczne na interfejsy użytkownika składnika lub interfejsu API.  
   
- Aby uzyskać więcej informacji o sposobach uruchamiania testów, zobacz [testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+ Aby uzyskać więcej informacji o sposobach uruchamiania testów, zobacz [testowanie aplikacji](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Wyprowadzanie testów systemowych z modelu wymagań  
  Można tworzyć i utrzymania relacji między testy systemu i modelu wymagań. Aby ustalić tę relację, piszesz testy, które odpowiadają głównych elementów modelu wymagań. Program Visual Studio pomaga zachować tej relacji przez umożliwienie tworzenia łącza między testy i części modelu. Aby uzyskać więcej informacji na temat modeli wymagania, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
@@ -63,9 +63,9 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Aby połączyć testy przypadek użycia  
   
-1. W [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], Utwórz wymagania i podstawą zestaw testów. Aby dowiedzieć się, jak to zrobić, zobacz [testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. W [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], Utwórz wymagania i podstawą zestaw testów. Aby dowiedzieć się, jak to zrobić, zobacz [testowanie aplikacji](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-    Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby uzyskać więcej informacji, zobacz [śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby uzyskać więcej informacji, zobacz [śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Elementem roboczym należy połączyć jeden lub więcej przypadków użycia w modelu.  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  Wiele metod dostępu i metod aktualizowania już będą dostępne za pośrednictwem interfejsu API normalne aplikacji. Ale niektóre dodatkowe funkcje mogą mieć do zapisania w celu umożliwienia badania. Te dodatkowe metody dostępu i metod aktualizowania czasami są nazywane "Instrumentacji testów". Ponieważ są one zależne od wewnętrznego projektu systemu, spoczywa deweloperów systemu zapewnić im, natomiast testerów pisanie kodu testów pod względem modelu wymagań.  
   
- Podczas pisania testów automatycznych, można użyć podczas testów generycznych do opakowania metody dostępu i metod aktualizowania. Aby uzyskać więcej informacji, zobacz [tworzenia automatycznych, testów plik wykonywalny przy użyciu testów ogólnych](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
+ Podczas pisania testów automatycznych, można użyć podczas testów generycznych do opakowania metody dostępu i metod aktualizowania. Aby uzyskać więcej informacji, zobacz [tworzenia automatycznych, testów plik wykonywalny przy użyciu testów ogólnych](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
   
 ### <a name="tests-for-business-rules"></a>Testy dla reguły biznesowe  
  Niektóre wymagania nie są bezpośrednio związane z dowolnego przypadku użycia jednej. Na przykład firma DinnerNow umożliwia klientom wybrać z menu wiele, ale wymaga, aby w każdej kolejności, wszystkie wybrane elementy powinny pochodzić z pojedynczym Menu. Tę regułę biznesową, może być wyrażona jako niezmiennej dotyczących skojarzeń zamówienia, menu i elementy w modelu klasy wymagań.  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Aby połączyć testy elementu modelu lub relacji  
   
-1. W [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], Utwórz wymagania i podstawą zestaw testów. Aby dowiedzieć się, jak to zrobić, zobacz [testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. W [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], Utwórz wymagania i podstawą zestaw testów. Aby dowiedzieć się, jak to zrobić, zobacz [testowanie aplikacji](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby uzyskać więcej informacji, zobacz [śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+     Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby uzyskać więcej informacji, zobacz [śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Elementem roboczym należy połączyć jeden lub więcej elementów w modelu.  
   

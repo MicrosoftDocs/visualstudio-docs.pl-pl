@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ab8427c144d56461aa52a535acbe618b68d9994
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5eba30fce1a2333d04db8485498700853372d154
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803336"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691669"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Jak można używać okien debugera przy debugowaniu programu pierwszego planu?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Opis problemu
  Próbuję debugować problem, malowaniu ekranu. Aby obserwować ten problem, muszę zachować program na pierwszym planie, co oznacza, że nie mam dostępu do debugowania systemu windows. Co mogę zrobić?  
   
 ## <a name="solution"></a>Rozwiązanie  
- Jeśli masz drugiego komputera, można użyć, zdalne debugowanie. Podczas działania debugera na hoście z konfiguracją dwóch komputerach możesz obejrzeć malowaniu ekranu na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [ustawienie zapasowej zdalne debugowanie](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+ Jeśli masz drugiego komputera, można użyć, zdalne debugowanie. Podczas działania debugera na hoście z konfiguracją dwóch komputerach możesz obejrzeć malowaniu ekranu na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [ustawienie zapasowej zdalne debugowanie](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   

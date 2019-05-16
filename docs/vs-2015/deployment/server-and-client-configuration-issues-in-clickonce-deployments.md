@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b8f81f22ffe566524e45a62330bc95c8ce00016
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444973"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686379"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy konfiguracji serwera i klienta we wdrożeniach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
   
 - .deploy  
   
-  Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.  
+  Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.  
   
   Trzeba będzie skonfigurować manifest, .application i .deploy, na przykład korzystania z usług IIS, w którym nie zainstalowano [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], lub jeśli używasz innego serwera sieci Web (np. Apache).  
   
@@ -54,7 +54,7 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
   
  Można również zastosować poprawkę do .NET Framework 2.0, aby włączyć tę funkcję. Aby uzyskać więcej informacji, zobacz http://go.microsoft.com/fwlink/?LinkId=158730.  
   
- Aby uzyskać więcej informacji, zobacz [ \<defaultProxy >, Element (ustawienia sieci)](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
+ Aby uzyskać więcej informacji, zobacz [ \<defaultProxy >, Element (ustawienia sieci)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce i zgodności z przeglądarką sieci Web  
  Obecnie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalacje będą uruchamiane tylko wtedy, gdy adres URL do manifestu wdrażania jest otwierane przy użyciu programu Internet Explorer. Wdrożenia, którego adres URL jest uruchamiane w innej aplikacji, takich jak Microsoft Office Outlook, zostanie uruchomiony pomyślnie tylko wtedy, gdy program Internet Explorer jest ustawiony jako domyślnej przeglądarki sieci Web.  
@@ -92,7 +92,7 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce i zamapowanego dysków  
- Jeśli publikowanie aplikacji ClickOnce przy użyciu programu Visual Studio, nie można określić zamapowanego dysku jako lokalizację instalacji. Jednak można modyfikować aplikacji ClickOnce, aby zainstalować z dysku zmapowanego przy użyciu generatora manifestu i Edytor (Mage.exe i MageUI.exe). Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) i [MageUI.exe (Manifest Generation i graficzny klient Editing Tool)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+ Jeśli publikowanie aplikacji ClickOnce przy użyciu programu Visual Studio, nie można określić zamapowanego dysku jako lokalizację instalacji. Jednak można modyfikować aplikacji ClickOnce, aby zainstalować z dysku zmapowanego przy użyciu generatora manifestu i Edytor (Mage.exe i MageUI.exe). Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) i [MageUI.exe (Manifest Generation i graficzny klient Editing Tool)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protokół FTP nieobsługiwane w przypadku instalowania aplikacji  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] obsługuje instalowanie aplikacji z dowolnego serwera HTTP 1.1 w sieci Web lub serwera plików. FTP, protokół transferu plików, nie jest obsługiwana dla instalacji aplikacji. FTP umożliwia publikowanie tylko aplikacji. Poniższa tabela zawiera podsumowanie tych różnic:  

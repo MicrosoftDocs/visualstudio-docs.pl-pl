@@ -9,12 +9,12 @@ caps.latest.revision: 66
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40af4a29d35e4bd060251d0db8b6cb13dbb44caf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6b8c9cbc856559e349851dd4c08b65883793a640
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081011"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675832"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnozowanie problemów po wdrożeniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Aby zdiagnozować problemy w aplikacji internetowej ASP.NET po wdrożeniu przy u
 #### <a name="TFS2013"></a> Team Foundation Server 2013  
  Skonfiguruj swoją definicję kompilacji, można dodać lokalizacji źródła, kompilacji i symboli do manifestu kompilacji (plik BuildInfo.config). Team Foundation Build automatycznie tworzy ten plik i umieszcza go w folderze danych wyjściowych projektu.  
   
-1. [Edytuj definicję kompilacji lub Utwórz nową definicję kompilacji.](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [Edytuj definicję kompilacji lub Utwórz nową definicję kompilacji.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
     ![Wyświetl kompilacji definicji w programie TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
@@ -56,7 +56,7 @@ Aby zdiagnozować problemy w aplikacji internetowej ASP.NET po wdrożeniu przy u
   
     ![Ustawianie ścieżki symboli w definicji kompilacji programu TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-    Aby uzyskać więcej informacji o symbolach, zobacz [opublikować dane symboliczne](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+    Aby uzyskać więcej informacji o symbolach, zobacz [opublikować dane symboliczne](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
 4. Dodaj ten argument MSBuild, aby uwzględnić swoje lokalizacje TFS i symboli w pliku manifestu kompilacji:  
   
@@ -144,7 +144,7 @@ Aby zdiagnozować problemy w aplikacji internetowej ASP.NET po wdrożeniu przy u
  **buildsymbolstorepath =**\<*ścieżka do symboli*>  
   
 ## <a name="DeployRelease"></a> Krok 2: Tworzenie wersji aplikacji  
- Jeśli używasz [pakietu Web.Deploy](http://msdn.microsoft.com/library/dd394698.aspx) utworzony przez proces kompilacji do wdrożenia aplikacji, manifest kompilacji została automatycznie zmieniona z "*ProjectName*. BuildInfo.config"do"BuildInfo.config"i jest umieszczany w tym samym folderze, z pliku Web.config aplikacji na serwerze sieci web.  
+ Jeśli używasz [pakietu Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) utworzony przez proces kompilacji do wdrożenia aplikacji, manifest kompilacji została automatycznie zmieniona z "*ProjectName*. BuildInfo.config"do"BuildInfo.config"i jest umieszczany w tym samym folderze, z pliku Web.config aplikacji na serwerze sieci web.  
   
  Jeśli używasz innych metod do wdrożenia aplikacji, upewnij się, że manifest kompilacji została zmieniona z "*ProjectName*. BuildInfo.config"do"BuildInfo.config"i jest umieszczany w tym samym folderze, z pliku Web.config aplikacji na serwerze sieci web.  
   
@@ -304,7 +304,7 @@ Aby zdiagnozować problemy w aplikacji internetowej ASP.NET po wdrożeniu przy u
   
    Informacje o Twoim systemie kompilacji albo `"TeamBuild"` lub `"MSBuild"`, oraz następujące wymagane właściwości:  
   
-  - **BuildLabel** (dla TeamBuild): Nazwa i numer kompilacji. Ta etykieta jest również używane jako nazwa zdarzenia wdrażania. Aby uzyskać więcej informacji na temat numerów kompilacji, zobacz [Użyj kompilacji cyfry jako opisowych nazw zakończonych kompilacji](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+  - **BuildLabel** (dla TeamBuild): Nazwa i numer kompilacji. Ta etykieta jest również używane jako nazwa zdarzenia wdrażania. Aby uzyskać więcej informacji na temat numerów kompilacji, zobacz [Użyj kompilacji cyfry jako opisowych nazw zakończonych kompilacji](https://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
   
   - **SymbolPath** (zalecane): Lista identyfikatorów URI dla Twojej lokalizacji symboli (plik PDB), rozdzielonych średnikami. Te identyfikatory URI może być adresy URL lub UNC. Ułatwia dla programu Visual Studio można znaleźć pasującego symbole, aby pomóc w debugowaniu.  
   
@@ -364,7 +364,7 @@ Aby zdiagnozować problemy w aplikacji internetowej ASP.NET po wdrożeniu przy u
      ![Otwórz z kontroli źródła &#45; migracji](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a> Q: Co to jest obszar roboczy?  
- **ODP.:** Twoje [obszar roboczy przechowuje kopię źródła](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) więc możesz rozwijać i przetestować go oddzielnie przed zaewidencjonowaniem swojej pracy. Jeśli nie masz jeszcze obszaru roboczego, który jest specjalnie zmapowany na znalezione rozwiązania lub projekt, program Visual Studio wyświetli monit, aby wybrać dostępny obszar roboczy lub utworzyć nowy obszar roboczy z nazwą komputera jako domyślną nazwą obszaru roboczego.  
+ **ODP.:** Twoje [obszar roboczy przechowuje kopię źródła](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) więc możesz rozwijać i przetestować go oddzielnie przed zaewidencjonowaniem swojej pracy. Jeśli nie masz jeszcze obszaru roboczego, który jest specjalnie zmapowany na znalezione rozwiązania lub projekt, program Visual Studio wyświetli monit, aby wybrać dostępny obszar roboczy lub utworzyć nowy obszar roboczy z nazwą komputera jako domyślną nazwą obszaru roboczego.  
   
 #### <a name="UntrustedSymbols"></a> Q: Dlaczego otrzymuję komunikat dotyczący niezaufanych symboli?  
  ![Debugowanie przy użyciu ścieżki niezaufanych symboli? ](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

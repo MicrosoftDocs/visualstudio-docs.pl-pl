@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad2814dffa75809a318dc7cebe7831b5ecec7d29
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431442"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690608"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debugowanie just in time w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
     </configuration>
     ```
 
-3. W aplikacji formularzy Windows w języku C++, należy także ustawić `DebuggableAttribute` w pliku .config lub w kodzie. Jeśli kompilujesz z opcją [/zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) i bez [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), kompilator ustawia ten atrybut. Jeśli chcesz debugować kompilację niezoptymalizowanego wydania, jednak należy ustawić to samodzielnie. Można to zrobić, dodając poniższą linię do one pliku AssemblyInfo.cpp aplikacji:
+3. W aplikacji formularzy Windows w języku C++, należy także ustawić `DebuggableAttribute` w pliku .config lub w kodzie. Jeśli kompilujesz z opcją [/zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) i bez [/Og](https://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), kompilator ustawia ten atrybut. Jeśli chcesz debugować kompilację niezoptymalizowanego wydania, jednak należy ustawić to samodzielnie. Można to zrobić, dodając poniższą linię do one pliku AssemblyInfo.cpp aplikacji:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];

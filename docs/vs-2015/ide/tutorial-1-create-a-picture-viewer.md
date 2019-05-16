@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5044d499e4568dba73c6db0865f92edcf02be4ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c382ff2a16e47f52a33e5c6728f0c57d57e4315b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443242"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703049"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie przeglądarki obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ W tym samouczku kompilujesz program, który ładuje obraz z pliku i wyświetla g
 >   
 > Aby wyświetlić kod w języku Visual Basic, wybierz opcję **VB** u góry bloków kodu, a następnie, aby wyświetlić kod Visual C#, wybierz opcję **C#** kartę. Jeśli interesuje Cię Nauka języka Visual C++, zobacz [wprowadzenie](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) i [samouczek języka C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
-> Jeśli chcesz się dowiedzieć, jak napisać Visual C# lub Visual Basic aplikacje dla Windows Store, zobacz [tworzenie pierwszej aplikacji Windows Store przy użyciu języka C# lub Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Aby uzyskać informacje dotyczące tworzenia aplikacji JavaScript dla Windows Store, zobacz [tworzenie pierwszej aplikacji Windows Store przy użyciu języka JavaScript](http://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
+> Jeśli chcesz się dowiedzieć, jak napisać Visual C# lub Visual Basic aplikacje dla Windows Store, zobacz [tworzenie pierwszej aplikacji Windows Store przy użyciu języka C# lub Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Aby uzyskać informacje dotyczące tworzenia aplikacji JavaScript dla Windows Store, zobacz [tworzenie pierwszej aplikacji Windows Store przy użyciu języka JavaScript](https://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   

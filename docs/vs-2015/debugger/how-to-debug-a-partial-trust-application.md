@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437319"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704490"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Instrukcje: Debugowanie aplikacji częściowej relacji zaufania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ma zastosowanie do Windows i aplikacji konsoli.  
   
- [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md) ułatwia wdrażanie aplikacji częściowej relacji zaufania, które wykorzystują [zabezpieczenia dostępu kodu](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) Aby ograniczyć dostęp do zasobów na komputerze.  
+ [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md) ułatwia wdrażanie aplikacji częściowej relacji zaufania, które wykorzystują [zabezpieczenia dostępu kodu](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) Aby ograniczyć dostęp do zasobów na komputerze.  
   
  Debugowanie aplikacji częściowego zaufania może stanowić wyzwanie, ponieważ aplikacje częściowo zaufane mają uprawnienia zabezpieczeń (i działają inaczej niż w związku z tym) w zależności od tego, gdzie są one zainstalowane. Jeśli zainstalowany z Internetu, częściowo zaufanych aplikacji będą miały uprawnienia kilka. Jeśli została zainstalowana ze lokalny intranet, mają większe uprawnienia, a jeśli zainstalowane z komputera lokalnego, mają pełne uprawnienia. Mogą również mieć niestandardowej strefy, przy użyciu uprawnień niestandardowych. Może być konieczne debugowanie aplikacji częściowej relacji zaufania w ramach poszczególnych lub wszystkich tych warunków. Na szczęście program Visual Studio ułatwia to również.  
   

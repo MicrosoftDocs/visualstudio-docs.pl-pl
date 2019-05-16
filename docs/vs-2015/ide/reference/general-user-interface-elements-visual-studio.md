@@ -9,12 +9,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a510ad25e741fc5924597d4b26841518c63f83a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690960"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Ogólne elementy interfejsu użytkownika (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,6 +69,6 @@ W tej sekcji opisano niektóre elementy interfejsu użytkownika zintegrowanego �
 
  [Przybornik, karta HTML](../../ide/reference/toolbox-html-tab.md) pozwala na dodawanie tagów html do powierzchni projektowej.
 
- [Ogólne, okno dialogowe Opcje CSS, Edytor tekstu,](http://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) pozwala określić opcje dla plików CSS.
+ [Ogólne, okno dialogowe Opcje CSS, Edytor tekstu,](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) pozwala określić opcje dla plików CSS.
 
- [Sprawdzanie poprawności, HTML, Edytor tekstu, okno dialogowe Opcje](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) pozwala określić opcje dla stron HTML.
+ [Sprawdzanie poprawności, HTML, Edytor tekstu, okno dialogowe Opcje](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) pozwala określić opcje dla stron HTML.

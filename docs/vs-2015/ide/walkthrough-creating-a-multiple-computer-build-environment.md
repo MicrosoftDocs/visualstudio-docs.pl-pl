@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438139"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674153"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Skopiuj następujące pliki z folderu \Debug_NonRedist\x86\ lub \Debug_NonRedist\x64\ do komputera kompilacji, zgodnie z opisem w [przygotowania komputera do przebiegu testu, plik wykonywalny debugowania](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Żadne inne pliki nie mogą być kopiowane.  
+5. Skopiuj następujące pliki z folderu \Debug_NonRedist\x86\ lub \Debug_NonRedist\x64\ do komputera kompilacji, zgodnie z opisem w [przygotowania komputera do przebiegu testu, plik wykonywalny debugowania](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Żadne inne pliki nie mogą być kopiowane.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
          Dla natywnej kompilacji 64-bitowej, wskaż 64-bitowy MSBuild.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)

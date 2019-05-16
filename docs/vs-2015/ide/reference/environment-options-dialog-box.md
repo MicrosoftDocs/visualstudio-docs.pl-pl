@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5880dbeb9f3f49f990a923fd48c27dd6167d59c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441724"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692196"
 ---
 # <a name="environment-options-dialog-box"></a>Środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ ms.locfileid: "63441724"
 Możesz użyć stron w **środowiska** folderu w **opcje** okno dialogowe, aby ustawić sposób niektóre elementy zintegrowanego środowiska programistycznego (IDE) wyświetlane i się zachowują. Możesz uzyskać dostęp do stron środowisko, na pasku menu, wybierając **narzędzia**, **opcje**, a następnie wybierając **środowiska**.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu, które są wyświetlane na komputerze, mogą się różnić od tych, które są opisane w pomocy, w zależności od aktywnych ustawień i używanej wersji Visual Studio. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu, które są wyświetlane na komputerze, mogą się różnić od tych, które są opisane w pomocy, w zależności od aktywnych ustawień i używanej wersji Visual Studio. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Oto źródła informacji na temat, jak|Zobacz|  
 |----------------------------------|---------|  
 |Dostosować wygląd i zachowanie okien, menu i innych elementów IDE.|[Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)|  
-|Określać zabezpieczenia dla dodatków.|[Okno dialogowe Opcje zabezpieczeń, środowisko, dodatku](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|Określać zabezpieczenia dla dodatków.|[Okno dialogowe Opcje zabezpieczeń, środowisko, dodatku](https://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |Zmieniać ustawienia automatycznego zapisywania i przywracania plików.|[Automatyczne odzyskiwanie, Środowisko, Opcje — okno dialogowe](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |Ustanawiać ustawienia wyświetlania i zarządzania dokumentu, które obejmują zachowanie dodatkowych plików.|[Dokumenty, Środowisko, Opcje — okno dialogowe](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |Dostosuj sposób aktualizacje wykonywane i sposobu zarządzania rozszerzeniami.|[Rozszerzenia i aktualizacje, Środowisko, opcje — okno dialogowe](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  

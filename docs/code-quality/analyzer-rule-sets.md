@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387699"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675486"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Zestawy reguł na potrzeby analizatorów Roslyn
 
@@ -25,11 +25,28 @@ W przypadku migrowania ze starszego "FxCop" statycznej analizy kodu do analizato
 
 ## <a name="use-analyzer-rule-sets"></a>Korzystanie z zestawów reguł analizatora
 
-Po zakończeniu [zainstaluj pakiet analizatora NuGet](install-roslyn-analyzers.md), zlokalizuj wstępnie zdefiniowany zestaw reguł jego *zestawów reguł* katalogu. Na przykład, jeśli odwołujesz `Microsoft.CodeAnalysis.FxCopAnalyzers` analizatora pakietów, a następnie można znaleźć jego katalog zestawów reguł w *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<wersji \>\rulesets*. Z tego miejsca możesz można przeciągnij i upuść, lub skopiuj i Wklej, co najmniej jeden z zestawów reguł do projektu programu Visual Studio w **Eksploratora rozwiązań**.
+Po zakończeniu [zainstaluj pakiet analizatora NuGet](install-roslyn-analyzers.md), zlokalizuj wstępnie zdefiniowany zestaw reguł jego *zestawów reguł* katalogu. Na przykład, jeśli odwołujesz `Microsoft.CodeAnalysis.FxCopAnalyzers` analizatora pakietów, możesz znaleźć jej *zestawów reguł* katalogu na *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\ \<wersji\>\rulesets*. Stamtąd skopiować jednego lub więcej zestawów reguł, a następnie wklej je w katalogu, który zawiera projektu programu Visual Studio lub bezpośrednio do **Eksploratora rozwiązań**.
 
-Aby aktywny zestaw reguł dla analizy zestaw reguł, kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz polecenie **właściwości**. Na stronach właściwości projektu, wybierz **analizy kodu** kartę. W obszarze **Uruchom ten zestaw reguł**, wybierz opcję **Przeglądaj**, a następnie wybierz odpowiednią regułę zestaw, który został skopiowany do katalogu projektu. Teraz widoczne tylko naruszeń zasady dla tych reguł, które są włączone w wybranym zestawem reguł.
+Możesz również [Dostosuj zestaw wstępnie zdefiniowanych reguł](how-to-create-a-custom-rule-set.md) zgodnie z preferencjami. Na przykład zmienić ważność co najmniej jedną regułę tak, aby naruszeń są traktowane jako błędy lub ostrzeżenia w **lista błędów**.
 
-Możesz również [Dostosuj zestaw wstępnie zdefiniowanych reguł](how-to-create-a-custom-rule-set.md#create-a-custom-rule-set) zgodnie z preferencjami. Na przykład zmienić ważność co najmniej jedną regułę tak, aby naruszeń są traktowane jako błędy lub ostrzeżenia w **lista błędów**.
+## <a name="set-the-active-rule-set"></a>Ustaw aktywny zestaw reguł
+
+Proces ustawiania aktywny zestaw reguł jest nieco inne w zależności od tego, czy masz projekt .NET Core/.NET Standard lub projekt programu .NET Framework.
+
+### <a name="net-core"></a>.NET Core
+
+Aby utworzyć regułę ustawić aktywny zestaw reguł dla analizy w projektach .NET Core lub .NET Standard, należy ręcznie dodać **CodeAnalysisRuleSet** właściwość do pliku projektu. Na przykład, poniższy kod ustawia fragment `HelloWorld.ruleset` jako aktywna reguła zestawu.
+
+```xml
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
+```
+
+### <a name="net-framework"></a>.NET Framework
+
+Aby aktywny zestaw reguł dla analizy w projektach .NET Framework zestaw reguł, kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz polecenie **właściwości**. Na stronach właściwości projektu, wybierz **analizy kodu** kartę. W obszarze **Uruchom ten zestaw reguł**, wybierz opcję **Przeglądaj**, a następnie wybierz odpowiednią regułę zestaw, który został skopiowany do katalogu projektu. Teraz widoczne tylko naruszeń zasady dla tych reguł, które są włączone w wybranym zestawem reguł.
 
 ## <a name="available-rule-sets"></a>Zestawy reguł dostępne
 

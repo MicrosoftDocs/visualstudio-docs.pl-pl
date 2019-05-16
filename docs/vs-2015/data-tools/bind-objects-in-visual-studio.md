@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09afb67f0e9431ca8cd520635f243dca70880f09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683154"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Powiązanie obiektów w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
 - Zapisywanie danych z obiektów w bazie danych.
 
 > [!NOTE]
-> Aby lepiej zrozumieć i dostarczanie kontekstu przykładach na tej stronie, zalecamy wykonanie następujących czynności: [Przewodnik: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Ten przewodnik tworzy obiekty omówionych w tym miejscu.
+> Aby lepiej zrozumieć i dostarczanie kontekstu przykładach na tej stronie, zalecamy wykonanie następujących czynności: [Przewodnik: O łączeniu z danymi w obiektach (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Ten przewodnik tworzy obiekty omówionych w tym miejscu.
 
 ### <a name="loaddata-into-objects"></a>Loaddata na obiekty
  W tym przykładzie dane zostały załadowane do obiektów za pomocą adapterów TableAdapter. Domyślnie TableAdapters są tworzone za pomocą dwóch rodzajów metod, które pobierania danych z bazy danych i wypełnianie tabel danych.
@@ -75,7 +75,7 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
  [!code-vb[VbRaddataConnecting#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb#4)]
 
 ### <a name="create-a-typed-collection-of-objects"></a>Tworzenie typizowanego kolekcji obiektów
- Tworzenie klas kolekcji dla obiektów, lub użyj kolekcje wpisane, które są automatycznie udostępniane przez [BindingSource, składnik](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
+ Tworzenie klas kolekcji dla obiektów, lub użyj kolekcje wpisane, które są automatycznie udostępniane przez [BindingSource, składnik](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
 
  Tworząc klasę kolekcji niestandardowej dla obiektów, zaleca się dziedziczenie z <xref:System.ComponentModel.BindingList%601>. Ta klasa ogólna zapewnia funkcje do administrowania kolekcji, a także możliwość wywoływać zdarzenia, które wysyłać powiadomienia do infrastruktury powiązanie danych w formularzach Windows Forms.
 
@@ -92,9 +92,9 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
 ### <a name="addobjects-to-a-collection"></a>Addobjects do kolekcji
  Dodać obiekty do kolekcji, wywołując `Add` metody klasy kolekcji niestandardowej lub z <xref:System.Windows.Forms.BindingSource>.
 
- Na przykład dodanie do kolekcji za pomocą <xref:System.Windows.Forms.BindingSource>, zobacz `LoadCustomers` method in Class metoda [instruktażu: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Na przykład dodanie do kolekcji za pomocą <xref:System.Windows.Forms.BindingSource>, zobacz `LoadCustomers` method in Class metoda [instruktażu: O łączeniu z danymi w obiektach (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
- Na przykład dodawania obiektów do niestandardowej kolekcji, zobacz `LoadOrders` method in Class metoda [instruktażu: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Na przykład dodawania obiektów do niestandardowej kolekcji, zobacz `LoadOrders` method in Class metoda [instruktażu: O łączeniu z danymi w obiektach (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
 > `Add` Metody jest dostarczana automatycznie dla niestandardowej kolekcji, gdy dziedziczą z <xref:System.ComponentModel.BindingList%601>.

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e0f962440d722a881d7a8de4ed2e7c9a9c7755f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b912708e7cc2f811e9cd18a24096ef66e128c375
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795913"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690074"
 ---
 # <a name="working-with-shaders"></a>Praca z cieniowaniem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Można użyć projektanta modułu cieniującego opartej na wykresach w [!INCLUDE
 ## <a name="dgsl-documents"></a>Dokumenty DGSL  
  Projektant programu do cieniowania zapisuje programów do cieniowania w formacie kierowane wykres modułu cieniującego języka (DGSL), który jest w formacie XML, który jest oparty na przekierowanie Graph Markup Language (DGML). DGSL programów do cieniowania można zastosować bezpośrednio w modelach 3-D w edytorze modeli. Jednak zanim użyjesz modułu cieniującego DGSL w swojej aplikacji, należy go wyeksportować do formatu, który rozumie DirectX — na przykład HLSL.  
   
- Ponieważ DGSL jest zgodny z DGML, można użyć narzędzia, które są przeznaczone do analizowania dokumentów DGML analizować swoje programów do cieniowania z DGSL. Aby uzyskać informacje na temat DGML, zobacz [opis kierowane Graph Markup Language (DGML)](http://msdn.microsoft.com/library/ee842619.aspx).  
+ Ponieważ DGSL jest zgodny z DGML, można użyć narzędzia, które są przeznaczone do analizowania dokumentów DGML analizować swoje programów do cieniowania z DGSL. Aby uzyskać informacje na temat DGML, zobacz [opis kierowane Graph Markup Language (DGML)](https://msdn.microsoft.com/library/ee842619.aspx).  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   

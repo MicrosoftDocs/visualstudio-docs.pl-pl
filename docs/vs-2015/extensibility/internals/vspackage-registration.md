@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a11f05edb4e7d476fdbcab82d365f9327dd4869a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440807"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685283"
 ---
 # <a name="vspackage-registration"></a>Rejestracja pakietu VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Poinformowanie pakietów VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
 > [!NOTE]
 > Jest akceptowana praktyka podczas programowania pakietu VSPackage, aby użyć rejestracji automatycznej. Jednak [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] partnerów nie można wysłać ich produktów w ramach instalacji za pomocą rejestracji automatycznej.  
   
- Rejestr w pakiet Instalatora Windows jest ogólnie wpisów w tabeli w rejestrze. Można również zarejestrować rozszerzeń plików, w tabeli w rejestrze. Jednak Instalator Windows udostępnia wbudowaną obsługę identyfikator programowy (ProgId), klasy, rozszerzenia i tabele zlecenie. Aby uzyskać więcej informacji, zobacz [tabel bazy danych](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
+ Rejestr w pakiet Instalatora Windows jest ogólnie wpisów w tabeli w rejestrze. Można również zarejestrować rozszerzeń plików, w tabeli w rejestrze. Jednak Instalator Windows udostępnia wbudowaną obsługę identyfikator programowy (ProgId), klasy, rozszerzenia i tabele zlecenie. Aby uzyskać więcej informacji, zobacz [tabel bazy danych](https://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
  Pamiętaj, że wpisy rejestru są skojarzone ze składnikiem, który jest odpowiedni dla wybranej strategii side-by-side. Na przykład wpisy rejestru dla pliku udostępnionego, powinna być skojarzona z tego pliku Instalatora Windows składnika. Podobnie wpisy rejestru dla określonej wersji pliku powinna być skojarzona z tego pliku składnika. W przeciwnym razie Instalowanie lub odinstalowywanie Twojego pakietu VSPackage dla jednej wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] może spowodować przerwanie usługi pakietu VSPackage w innych wersjach. Aby uzyskać więcej informacji, zobacz [obsługi wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
@@ -58,5 +58,5 @@ Poinformowanie pakietów VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
 - Można odmówić dostępu do zasobów sieciowych, takich jak biblioteki typów, jeśli składnik jest określony jako przebieg ze źródła i znajduje się w tabeli SelfReg kodu rejestracji automatycznej. Może to spowodować, że instalacja składnika się kończyć niepowodzeniem podczas instalacji administracyjnej.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instalator Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [Rejestracja pakietu zarządzanego](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Instalator Windows](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [Rejestracja pakietu zarządzanego](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

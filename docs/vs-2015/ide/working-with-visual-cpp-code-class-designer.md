@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: faf99505c556594ad1281b0341ac1cad9acbae81
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebe8c65748ba0380a7c4f171d940c3d78f52a577
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443391"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698079"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Praca z kodem Visual C++ (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Projektant klasy Wyświetla powierzchni projektowej o nazwie *diagram klas* zape
 ### <a name="type-resolution-issues"></a>Typ rozwiązywania problemów  
  Projektant klas może nie być w stanie rozpoznać typów z następujących powodów:  
   
-- Typ jest w projekcie lub w zestawie, który nie odwołuje się projekt, który zawiera diagram klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu, który zawiera tekst. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Typ jest w projekcie lub w zestawie, który nie odwołuje się projekt, który zawiera diagram klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu, który zawiera tekst. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - Typ nie jest w niewłaściwym zakresie, więc Projektant klas nie może go zlokalizować. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typu (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.  
   
@@ -77,7 +77,7 @@ Projektant klasy Wyświetla powierzchni projektowej o nazwie *diagram klas* zape
   
 - Upewnij się, że Projektant klasy obsługuje typ, który wprowadzono. Zobacz [ograniczenia dla elementów kodu w języku C++](#limitations).  
   
-- Spróbuj rozwiązać tego typu. Typ może być w projekcie lub w zestawie, który nie odwołuje się projekt, który zawiera diagram klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu, który zawiera tekst. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Spróbuj rozwiązać tego typu. Typ może być w projekcie lub w zestawie, który nie odwołuje się projekt, który zawiera diagram klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu, który zawiera tekst. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - Upewnij się, że typ jest w niewłaściwym zakresie tak, aby zlokalizować projektanta klas. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typu (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.  
   

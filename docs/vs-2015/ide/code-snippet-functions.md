@@ -13,17 +13,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5a7a7522d0c3ddab224e19150f47120b92b2dd32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701529"
 ---
 # <a name="code-snippet-functions"></a>Funkcje wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Istnieją trzy funkcje dostępne do użycia z [!INCLUDE[csprcs](../includes/csprcs-md.md)] fragmenty kodu. Funkcje są określone w [funkcja](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) element fragmentu kodu. Aby uzyskać informacje na temat tworzenia fragmenty kodu, zobacz [fragmenty kodu](../ide/code-snippets.md).  
+Istnieją trzy funkcje dostępne do użycia z [!INCLUDE[csprcs](../includes/csprcs-md.md)] fragmenty kodu. Funkcje są określone w [funkcja](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) element fragmentu kodu. Aby uzyskać informacje na temat tworzenia fragmenty kodu, zobacz [fragmenty kodu](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>Funkcje  
  W poniższej tabeli opisano funkcje dostępne w połączeniu z `Function` element fragmentów kodu.  
@@ -154,5 +154,5 @@ Istnieją trzy funkcje dostępne do użycia z [!INCLUDE[csprcs](../includes/cspr
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Function — Element (fragmenty kodu Intellisense)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Function — Element (fragmenty kodu Intellisense)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)

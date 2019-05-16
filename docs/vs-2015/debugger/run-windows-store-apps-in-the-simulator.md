@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426623"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683544"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie Windows Store apps w symulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
      ![Menu kontekstowe ustawienia zrzut ekranu](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Symulowanie właściwości połączenia sieciowego  
- Możesz pomóc użytkownikom aplikacji zarządzania kosztami mierzonych połączeń sieciowych, utrzymywanie rozpoznawanie sieci połączenia kosztów ani danych plan zmian stanu i włączając aplikację do używania tych informacji, aby uniknąć ponoszenia dodatkowych kosztów dla mobilnych lub przekroczenie limit transferu określone dane. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) interfejsów API pozwala reagować na [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) i [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) zdarzenia, które podpisują. Zobacz [Szybki Start: Zarządzanie ograniczenia kosztów sieci taryfowej](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Możesz pomóc użytkownikom aplikacji zarządzania kosztami mierzonych połączeń sieciowych, utrzymywanie rozpoznawanie sieci połączenia kosztów ani danych plan zmian stanu i włączając aplikację do używania tych informacji, aby uniknąć ponoszenia dodatkowych kosztów dla mobilnych lub przekroczenie limit transferu określone dane. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) interfejsów API pozwala reagować na [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) i [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) zdarzenia, które podpisują. Zobacz [Szybki Start: Zarządzanie ograniczenia kosztów sieci taryfowej](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Debugowanie lub testowanie kodu uwzględnieniem kosztów sieci, symulator może naśladują właściwości sieci, które są udostępniane za pośrednictwem [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) obiektu zwróconego przez [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
   
@@ -136,7 +136,7 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
   
    **Więcej informacji na temat zarządzania połączeniami sieciowymi**  
   
-   [Szybki start: Zarządzanie ograniczenia kosztów sieci taryfowej](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Szybki start: Zarządzanie ograniczenia kosztów sieci taryfowej](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Przykładowe informacje o sieci](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -144,9 +144,9 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [Sposób reagowania na zdarzenia systemu przy użyciu zadań w tle](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Sposób reagowania na zdarzenia systemu przy użyciu zadań w tle](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
-   [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w aplikacjach Windows Store w tle](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w aplikacjach Windows Store w tle](https://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Przejdź symulator za pomocą klawiatury  
  Możesz przejść na pasku narzędzi w symulatorze, naciskając klawisz **strzałkę CTRL + ALT + Strzałka w górę** można przełączać fokus z okna simulator do paska narzędzi symulatora. Użyj **Strzałka w górę** i **strzałkę w dół** przenoszenia między przyciskami na pasku narzędzi.  

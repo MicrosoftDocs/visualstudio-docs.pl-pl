@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31840c40f2a494ffd32f5241e2770938138877e9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429161"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704096"
 ---
 # <a name="project-property-user-interface"></a>Interfejs użytkownika właściwości projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,8 +55,8 @@ Podtypu projektu można użyć elementów w projekcie **stron właściwości** o
   
   Ponieważ projekt podtypu agregacje <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> obiektu, można zastąpić, definicja tych właściwości, aby kontrolować, które **stron właściwości** okna dialogowe są wyświetlane. Podtypu projektu można pobrać te właściwości z wewnętrznego podstawowego projektu i następnie dodawać i usuwać CLSID zgodnie z potrzebami.  
   
-  Nowe strony właściwości dodane przez podtypu projektu są przekazywane obiekt przeglądania konfiguracji projektu z projektu podstawowego wdrożenia. Ten obiekt przeglądania konfiguracji projektu obsługuje automatyzacji urządzeń Extender. Aby uzyskać więcej informacji na temat AutomationExtenders, zobacz [wdrażania i przy użyciu automatyzacji urządzeń Extender](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Strony właściwości implementowane przez wywołanie podtypu projektu <xref:EnvDTE.Project.Extender%2A> można pobrać ich własnych projektów podtyp konfiguracji przeglądania obiekt, który rozszerza obiekt przeglądania konfiguracji projektu podstawowego.  
+  Nowe strony właściwości dodane przez podtypu projektu są przekazywane obiekt przeglądania konfiguracji projektu z projektu podstawowego wdrożenia. Ten obiekt przeglądania konfiguracji projektu obsługuje automatyzacji urządzeń Extender. Aby uzyskać więcej informacji na temat AutomationExtenders, zobacz [wdrażania i przy użyciu automatyzacji urządzeń Extender](https://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Strony właściwości implementowane przez wywołanie podtypu projektu <xref:EnvDTE.Project.Extender%2A> można pobrać ich własnych projektów podtyp konfiguracji przeglądania obiekt, który rozszerza obiekt przeglądania konfiguracji projektu podstawowego.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:EnvDTE.IFilterProperties>   
- [Okno dialogowe strony właściwości](http://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
+ [Okno dialogowe strony właściwości](https://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

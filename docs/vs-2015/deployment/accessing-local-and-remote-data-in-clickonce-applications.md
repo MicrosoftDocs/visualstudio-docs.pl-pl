@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427247"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688113"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
   
  Izolowany magazyn działa we wszystkich wersjach [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Wydzielona pamięć masowa działa również w częściowo zaufanych aplikacji bez konieczności stosowania dodatkowych uprawnień przyznaje. Jeśli aplikacja musi działać w częściowej relacji zaufania, ale musi przechowywać dane specyficzne dla aplikacji, należy używać wydzielonej pamięci masowej.  
   
- Aby uzyskać więcej informacji, zobacz [wydzielonej pamięci masowej](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
+ Aby uzyskać więcej informacji, zobacz [wydzielonej pamięci masowej](https://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
 ### <a name="other-local-files"></a>Inne pliki lokalne  
  Jeśli aplikacja musi działać z lub zapisu danych przez użytkownika końcowego, takie jak raporty, obrazy, muzyka i tak dalej, aplikacja będzie wymagać <xref:System.Security.Permissions.FileIOPermission> do odczytu i zapisu danych do lokalnego systemu plików.  
@@ -86,7 +86,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
  W pewnym momencie aplikacja prawdopodobnie będzie mieć do pobierania informacji ze zdalnej witryny sieci Web, takie jak informacje o danych lub rynku klienta. W tej sekcji omówiono najbardziej typowe techniki pobierania zdalnych danych.  
   
 ### <a name="accessing-files-by-using-http"></a>Uzyskiwanie dostępu do plików za pomocą protokołu HTTP  
- Dostępne dane z serwera sieci Web przy użyciu <xref:System.Net.WebClient> lub <xref:System.Net.HttpWebRequest> klasy w <xref:System.Net> przestrzeni nazw. Dane mogą być albo pliki statyczne lub [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacje, które zwracają nieprzetworzony tekst lub dane XML. Jeśli dane są w formacie XML, najszybszym sposobem pobrania danych polega na użyciu <xref:System.Xml.XmlDocument> klasy, których <xref:System.Xml.XmlDocument.Load%2A> metoda przyjmuje adres URL jako argument. Aby uzyskać przykład, zobacz [wczytywanie dokumentu XML do modelu DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
+ Dostępne dane z serwera sieci Web przy użyciu <xref:System.Net.WebClient> lub <xref:System.Net.HttpWebRequest> klasy w <xref:System.Net> przestrzeni nazw. Dane mogą być albo pliki statyczne lub [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacje, które zwracają nieprzetworzony tekst lub dane XML. Jeśli dane są w formacie XML, najszybszym sposobem pobrania danych polega na użyciu <xref:System.Xml.XmlDocument> klasy, których <xref:System.Xml.XmlDocument.Load%2A> metoda przyjmuje adres URL jako argument. Aby uzyskać przykład, zobacz [wczytywanie dokumentu XML do modelu DOM](https://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
   
  Należy wziąć pod uwagę zabezpieczeń, gdy aplikacja uzyskuje dostęp do danych zdalnych za pośrednictwem protokołu HTTP. Domyślnie Twoja [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji dostęp do zasobów sieciowych może być ograniczona, w zależności od tego, jak Twoja aplikacja została wdrożona. Te ograniczenia są stosowane do zapobiegania złośliwych programów, uzyskiwanie dostępu do uprzywilejowanych danych zdalnych lub do atakowania innych komputerów w sieci za pomocą komputera użytkownika.  
   

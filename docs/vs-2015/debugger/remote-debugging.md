@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e31d177a8bda5435c2201701241638cb919cf9ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687548"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,7 +283,7 @@ Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu 
  Aby uzyskać więcej informacji, zobacz pomocy debugowania zdalnego (naciśnij klawisz **F1** w oknie zdalnego debugera, lub kliknij przycisk **pomocy / użycia**). Więcej informacji można znaleźć [.NET zdalnego ładowania zmiany symboli w programie Visual Studio 2012 i 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
 ## <a name="bkmk_winstoreAzure"></a> Zdalne debugowanie aplikacji Windows Store i Azure  
- Aby uzyskać informacje o zdalnym debugowaniu aplikacji Windows Store, zobacz [debugowania i testowania aplikacji Windows Store na urządzeniu zdalnym z programu Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
+ Aby uzyskać informacje o zdalnym debugowaniu aplikacji Windows Store, zobacz [debugowania i testowania aplikacji Windows Store na urządzeniu zdalnym z programu Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Aby dowiedzieć się, jak debugowanie na platformie Azure zobacz jeden z tych tematów:  
   
@@ -291,7 +291,7 @@ Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu 
   
 - [Debugowanie zaplecza platformy .NET w programie Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
-- Wprowadzenie do zdalnego debugowania w witrynach sieci Web platformy Azure ([część 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [część 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [część 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Wprowadzenie do zdalnego debugowania w witrynach sieci Web platformy Azure ([część 1](https://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [część 2](https://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [część 3](https://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)   

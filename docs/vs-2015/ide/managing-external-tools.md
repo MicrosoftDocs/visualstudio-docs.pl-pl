@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445428"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686961"
 ---
 # <a name="managing-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Możesz wywołać zewnętrznych narzędzi z poziomu programu Visual Studio. Kilk
   
 1. Utwórz identyfikator GUID: generuje identyfikator GUID.  
   
-2. Wyszukiwanie błędów: pobiera komunikat o błędzie z wprowadzonej wartości. Aby uzyskać więcej informacji, zobacz [odwołanie ERRLOOK](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Wyszukiwanie błędów: pobiera komunikat o błędzie z wprowadzonej wartości. Aby uzyskać więcej informacji, zobacz [odwołanie ERRLOOK](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
 3. Narzędzie śledzenia ATL/MFC: Pokazuje debugowania komunikaty śledzenia w źródłach ATL i MFC.  
   
@@ -85,7 +85,7 @@ Możesz wywołać zewnętrznych narzędzi z poziomu programu Visual Studio. Kilk
 6. Edytor konfiguracji usługi WCF: Umożliwia tworzenie i modyfikowanie ustawień konfiguracji usługi WCF.  
   
 > [!WARNING]
-> Może pojawić się różne listy zewnętrznych narzędzi w zależności od wersji programu Visual Studio zainstalowane a profilu ustawień zostały zastosowane. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Może pojawić się różne listy zewnętrznych narzędzi w zależności od wersji programu Visual Studio zainstalowane a profilu ustawień zostały zastosowane. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Dodawanie nowych narzędzi  
  Możesz dodać do zewnętrznego narzędzia **narzędzia** menu. Otwórz **zewnętrznych narzędzi** dialogowym i kliknij przycisk **Dodaj**, a następnie wypełnij informacje. Na przykład następujący wpis powoduje Eksploratora Windows, aby otworzyć znajduje się w katalogu pliku, który aktualnie otwarte w programie Visual Studio:  
@@ -122,4 +122,4 @@ Możesz wywołać zewnętrznych narzędzi z poziomu programu Visual Studio. Kilk
 |Nazwa pliku rozwiązania|$(SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk i ścieżkę pliku nazwa).|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Narzędzia kompilacji C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Narzędzia kompilacji C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

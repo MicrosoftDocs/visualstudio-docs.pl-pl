@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyść platformy Azure, zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685927"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Dzięki platformie Microsoft Azure w ramach subskrypcji programu Visual Studio
 
@@ -28,7 +28,7 @@ Jako subskrybent programu Visual Studio mogą używać programu Microsoft Azure,
 |               Visual Studio Enterprise miesięczna               |        Niedostępne        |                                                             |
 |             Visual Studio Professional Standard              |     50 USD środków miesięcznie      |                             Tak
 |              Visual Studio Professional miesięczna              |        Niedostępne        |                                                             |
-|                    Visual Studio Test Pro                    |     50 USD środków miesięcznie      |                             Yes                             |
+|                    Visual Studio Test Pro                    |     50 USD środków miesięcznie      |                             Tak                             |
 |                        Platformy MSDN                        |     miesięczne środki w wysokości 100 USD     |                             Yes                             |
 |                 Visual Studio Dev Essentials                 | W przypadku usług bezpłatnych i 200 USD środków | Bezpłatnych usług są nieograniczone.  jednorazowe jest tylko 200 USD środków. |
 |               Visual Studio Enterprise - NFR\*               |     150 USD środków miesięcznie     |                             Tak                             |
@@ -102,7 +102,7 @@ Jeśli masz aktywną inną subskrypcję programu Visual Studio na na **różnych
 
 Jeśli Twoja subskrypcja jest objęta limitem wydatków i podejmiesz żadnych działań przed jego wygaśnięcia, subskrypcje platformy Azure Twojej subskrypcji platformy Azure zostaną wyłączone. Aby przekonwertować ją do oferty płatności zgodnie z rzeczywistym i nadal z niego korzystać, Dodaj instrument płatniczy i [Usuń limit wydatków](/azure/billing/billing-spending-limit/).
 
-Jeśli nie chcesz kontynuować tę subskrypcję programu Visual Studio na platformie Azure, możesz przetransferować swoje zasoby, takie jak maszyny wirtualne i bazy danych do innej subskrypcji platformy Azure i [anulować](http://azure.microsoft.com/support/cancel-account/) tę subskrypcję w dowolnym momencie.
+Jeśli nie chcesz kontynuować tę subskrypcję programu Visual Studio na platformie Azure, możesz przetransferować swoje zasoby, takie jak maszyny wirtualne i bazy danych do innej subskrypcji platformy Azure i [anulować](https://azure.microsoft.com/support/cancel-account/) tę subskrypcję w dowolnym momencie.
 
 Jeśli uważasz, że błąd otrzymujesz tę wiadomość e-mail, skontaktuj się z [dział obsługi klienta platformy Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 

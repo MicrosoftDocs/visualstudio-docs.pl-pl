@@ -41,12 +41,12 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064573"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684467"
 ---
 # <a name="using-breakpoints"></a>Używanie punktów przerwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debuge
    Warunek może być dowolnym prawidłowym wyrażeniem rozpoznawanym przez debuger. Aby uzyskać więcej informacji dotyczących prawidłowych wyrażeń, zobacz [wyrażenia w debugerze](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Za pomocą identyfikatorów obiektów w warunkach punkt przerwania (C# i F#)  
- Istnieją momenty, gdy zachodzi potrzeba przyjrzeć się zachowaniu określonego obiektu; na przykład można dowiedzieć się, dlaczego obiekt został wstawiony więcej niż jeden raz w kolekcji. W C# i F#, można tworzyć identyfikatory obiektów dla określonego wystąpienia [typy odwołań](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.  Aby utworzyć identyfikator obiektu, wykonaj następujące czynności:  
+ Istnieją momenty, gdy zachodzi potrzeba przyjrzeć się zachowaniu określonego obiektu; na przykład można dowiedzieć się, dlaczego obiekt został wstawiony więcej niż jeden raz w kolekcji. W C# i F#, można tworzyć identyfikatory obiektów dla określonego wystąpienia [typy odwołań](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.  Aby utworzyć identyfikator obiektu, wykonaj następujące czynności:  
   
 1. Ustaw punkt przerwania w kodzie na pewien czas, po utworzeniu obiektu.  
   

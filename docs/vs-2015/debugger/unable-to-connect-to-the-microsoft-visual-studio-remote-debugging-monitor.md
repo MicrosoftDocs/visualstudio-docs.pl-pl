@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db946e2dfac035a8e0ddb5581c37e36b0406fb24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437780"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684832"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63437780"
 Ten komunikat o błędzie jest wyświetlany, gdy wprowadzasz Nieprawidłowa nazwa programu Visual Studio Monitor zdalnego debugowania w **dołączyć do procesu** okno dialogowe. Nazwa monitora debugera zdalnego jest zwykle taka sama jak komputer, do którego próbujesz nawiązać połączenie zdalne debugowanie. Ten komunikat może wystąpić, ponieważ Maszyna zdalna nie istnieje w sieci, monitor debugera zdalnego jest nie prawidłowo skonfigurowane na komputerze zdalnym lub maszynie zdalnej jest niedostępny z powodu problemów z siecią lub obecności zapory.  
   
 > [!IMPORTANT]
-> Jeśli uważasz, że ten komunikat został przesłany z powodu błędu w produkcie, zgłoś ten problem w programie Visual Studio [Wyślij uśmiech](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Jeśli potrzebujesz więcej pomocy, zobacz [Porozmawiaj z nami](../ide/talk-to-us.md) sposobów na kontakt z firmą Microsoft.  
+> Jeśli uważasz, że ten komunikat został przesłany z powodu błędu w produkcie, zgłoś ten problem w programie Visual Studio [Wyślij uśmiech](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Jeśli potrzebujesz więcej pomocy, zobacz [Porozmawiaj z nami](../ide/talk-to-us.md) sposobów na kontakt z firmą Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Został wyświetlony komunikat, gdy został I debugowanie lokalnie  
  Jeśli otrzymujesz ten komunikat, gdy debugujesz lokalnie, oprogramowanie antywirusowe lub zapory innych firm może być stronę. Visual Studio to 32-bitowej aplikacji, więc używa 64-bitowej wersji zdalnego debugera do debugowania 64-bitowych aplikacji. Dwa procesy komunikacji za pośrednictwem sieci lokalnej na komputerze lokalnym. Żaden ruch sieciowy pozostawia komputera, ale istnieje możliwość, że oprogramowanie zabezpieczeń innych firm mogą blokować komunikacji.  

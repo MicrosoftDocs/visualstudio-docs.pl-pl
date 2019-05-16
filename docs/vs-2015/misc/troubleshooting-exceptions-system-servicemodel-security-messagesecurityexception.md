@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436554"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689150"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Rozwiązywanie problemów z wyjątkami: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest generowany, gdy [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Określa, że komunikat nie jest poprawnie zabezpieczony lub została naruszona. Ten błąd występuje najczęściej, gdy wszystkie spełnione są następujące warunki:  
@@ -86,4 +86,4 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest gen
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [Korzystanie z Asystenta wyjątków](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [Korzystanie z Asystenta wyjątków](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

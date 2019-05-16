@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 196fc4bddba0cfa6addb786148cd3876e1ec8260
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55ba291135b41d534d8f91cae5d6257a26d4e34c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430009"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686496"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -531,4 +531,4 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 |Inne zagadnienia|||Niestandardowych klawiatur ekranowych|
 
 #### <a name="gestures"></a>Gestów
- Gesty użytkownikom skrótów do poleceń, które w przeciwnym razie mogą wymagać bardziej skomplikowanych interakcji. Zapoznaj się z wytycznymi dotyczącymi Windows na [powszechnych gestów dotykowych dla aplikacji komputerowych](http://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)i postępuj zgodnie z tych wskazówkach dotyczących większości gestów, łącznie z prostych gestów takich jak przesuwać i powiększać.
+ Gesty użytkownikom skrótów do poleceń, które w przeciwnym razie mogą wymagać bardziej skomplikowanych interakcji. Zapoznaj się z wytycznymi dotyczącymi Windows na [powszechnych gestów dotykowych dla aplikacji komputerowych](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)i postępuj zgodnie z tych wskazówkach dotyczących większości gestów, łącznie z prostych gestów takich jak przesuwać i powiększać.

@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d8239b0ccbedfdb2965d8dc5f7738c50f9548e94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 588ff95f90c6d85526dfe931e8f0b8ab439d9b94
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431515"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697579"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Instrukcje: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "63431515"
  Jeśli aplikacja jest w trybie online tylko, zawsze będzie ona aktywowana przy użyciu adresu URL. Nawet w takim jednak aplikacji muszą być napisane działała poprawnie, jeśli parametry ciągu zapytania lub są uszkodzone.  
   
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework  
- Zezwalaj na przekazywanie parametrów adresu URL do swojej [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji tylko wtedy, gdy planujesz czyszczenia danych wejściowych złośliwego znaki przed jego użyciem. Ciąg osadzone cudzysłowy, ukośniki lub średnikami, na przykład, mogą wykonywać operacje na danych dowolnego użycie niefiltrowane w zapytaniu SQL względem bazy danych. Aby uzyskać więcej informacji na temat zabezpieczeń ciągu zapytania, zobacz [Przegląd wykorzystuje skryptu](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+ Zezwalaj na przekazywanie parametrów adresu URL do swojej [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji tylko wtedy, gdy planujesz czyszczenia danych wejściowych złośliwego znaki przed jego użyciem. Ciąg osadzone cudzysłowy, ukośniki lub średnikami, na przykład, mogą wykonywać operacje na danych dowolnego użycie niefiltrowane w zapytaniu SQL względem bazy danych. Aby uzyskać więcej informacji na temat zabezpieczeń ciągu zapytania, zobacz [Przegląd wykorzystuje skryptu](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)

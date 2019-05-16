@@ -11,26 +11,26 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae770d36c0f030a060eccfe86bc3939dad9622d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408577"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691872"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Pomoc techniczna dotycząca właściwości projektu i konfiguracji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **Właściwości** okna [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE) można wyświetlić właściwości projektu i konfiguracji. Strony właściwości można określić dla typu projektu co użytkownik może ustawić właściwości dla aplikacji.  
   
- Wybierając węzeł projektu w **Eksploratora rozwiązań** , a następnie klikając polecenie **właściwości** na **projektu** menu, możesz otworzyć okno dialogowe, które obejmują projektu i konfiguracji właściwości. W [!INCLUDE[csprcs](../../includes/csprcs-md.md)] i [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]i typy pochodzące z tych języków, jako stronę z zakładkami w wyświetlonym oknie dialogowym projektu [ogólne, środowisko, opcje, okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md). Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Przewodnik: Udostępnianie projektów i właściwości konfiguracji (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ Wybierając węzeł projektu w **Eksploratora rozwiązań** , a następnie klikając polecenie **właściwości** na **projektu** menu, możesz otworzyć okno dialogowe, które obejmują projektu i konfiguracji właściwości. W [!INCLUDE[csprcs](../../includes/csprcs-md.md)] i [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]i typy pochodzące z tych języków, jako stronę z zakładkami w wyświetlonym oknie dialogowym projektu [ogólne, środowisko, opcje, okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md). Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Przewodnik: Udostępnianie projektów i właściwości konfiguracji (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  Środowiska pakietu zarządzanego dla projektów (MPFProj) udostępnia klasy pomocy do tworzenia i zarządzania nowy system projektów. Instrukcje można znaleźć źródła kodu i kompilacji w [MPF projektów — Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Trwałość projektu i właściwości konfiguracji  
- Właściwości projektu i konfiguracji są utrwalane w pliku projektu, który ma rozszerzenie nazwy pliku skojarzone z tym typem projektu, na przykład, .csproj, .vbproj i .myproj. Projekty języka zwykle Użyj pliku szablonu do wygenerowania pliku projektu. Jednak istnieją faktycznie na kilka sposobów skojarzenia typów projektów i szablonów. Aby uzyskać więcej informacji, zobacz [NIB: Szablony programu Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) i [opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Właściwości projektu i konfiguracji są utrwalane w pliku projektu, który ma rozszerzenie nazwy pliku skojarzone z tym typem projektu, na przykład, .csproj, .vbproj i .myproj. Projekty języka zwykle Użyj pliku szablonu do wygenerowania pliku projektu. Jednak istnieją faktycznie na kilka sposobów skojarzenia typów projektów i szablonów. Aby uzyskać więcej informacji, zobacz [NIB: Szablony programu Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) i [opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Właściwości projektu i konfiguracji są tworzone przez dodanie elementów do pliku szablonu. Te właściwości będą dostępne dla każdego projektu, utworzony przy użyciu typu projektu, który używa tego szablonu. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projekty i MPFProj używają [nie w kompilacji: Przegląd MSBuild](http://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) schematu dla plików szablonów. Te pliki zawierają sekcji PropertyGroup dla każdej konfiguracji. Właściwości projektów zwykle są zachowywane w pierwszej sekcji PropertyGroup argumentu konfiguracji jest ustawiony na pusty ciąg.  
+ Właściwości projektu i konfiguracji są tworzone przez dodanie elementów do pliku szablonu. Te właściwości będą dostępne dla każdego projektu, utworzony przy użyciu typu projektu, który używa tego szablonu. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projekty i MPFProj używają [nie w kompilacji: Przegląd MSBuild](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) schematu dla plików szablonów. Te pliki zawierają sekcji PropertyGroup dla każdej konfiguracji. Właściwości projektów zwykle są zachowywane w pierwszej sekcji PropertyGroup argumentu konfiguracji jest ustawiony na pusty ciąg.  
   
  Poniższy kod przedstawia początek podstawowego pliku projektu MSBuild.  
   
@@ -93,9 +93,9 @@ ms.locfileid: "63408577"
  `MyConfigProp` Właściwość konfiguracji pojawia się na stronie właściwości konfiguracji, co **Moje właściwości konfiguracji** w danej kategorii, **Moje kategorii**. Jeśli wybrano opcję opisu, **Mój opis**, pojawi się na panelu Opis.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Nie w kompilacji: Przewodnik: Udostępnianie projektów i właściwości konfiguracji (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [Nie w kompilacji: Przewodnik: Udostępnianie projektów i właściwości konfiguracji (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [Dodawanie i usuwanie stron właściwości](../../extensibility/adding-and-removing-property-pages.md)   
  [Stan pakietu VSPackage](../../misc/vspackage-state.md)   
  [Projekty](../../extensibility/internals/projects.md)   
- [NIB: Visual Studio Templates](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [NIB: Visual Studio Templates](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [Opis katalogu szablonu (pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

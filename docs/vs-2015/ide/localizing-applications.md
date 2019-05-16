@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a412016f2e51415456ee1a86a1b65fccf4d70a9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3d735544e034c397a06ba50e04160323c536b3d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800549"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674992"
 ---
 # <a name="localizing-applications"></a>Lokalizowanie aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "54800549"
  [Wprowadzenie do aplikacji międzynarodowych opartych na programie .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  W tym artykule omówiono pojęcia związane z tworzy oprogramowanie na rynku międzynarodowym przy użyciu języka Visual Basic lub Visual C#.  
   
- [Globalizacja formularzy Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalizacja formularzy Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Zawiera łącza do stron dotyczących tworzenia aplikacji Windows, które obsługują wielu kulturach.  
   
- [Globalizacja i lokalizacja](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Globalizacja i lokalizacja](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Zawiera łącza do stron dotyczących tworzenia aplikacji sieci Web, które obsługują wielu kulturach.  
   
- [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do wydania](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do wydania](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Zawiera informacje dotyczące programowania dla międzynarodowych grupy odbiorców, takich jak zagadnienia dotyczące projektowania i terminologii.

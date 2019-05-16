@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704786"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Tworzenie aplikacji za pomocą projektanta przepływów pracy
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] Jest widoczny Projektant wizualny oraz debugera dla konstrukcji graficznego i debugowanie [!INCLUDE[wf](../includes/wf-md.md)] aplikacji w [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] hostowaną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] środowiska deweloperskiego. Pozwala ona do tworzenia aplikacji złożonych przepływu pracy, biblioteka działań lub [!INCLUDE[indigo1](../includes/indigo1-md.md)] usługi przy użyciu szablonów i projektantów działań. [!INCLUDE[crabout](../includes/crabout-md.md)] przepływy pracy, zobacz [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] Jest widoczny Projektant wizualny oraz debugera dla konstrukcji graficznego i debugowanie [!INCLUDE[wf](../includes/wf-md.md)] aplikacji w [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] hostowaną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] środowiska deweloperskiego. Pozwala ona do tworzenia aplikacji złożonych przepływu pracy, biblioteka działań lub [!INCLUDE[indigo1](../includes/indigo1-md.md)] usługi przy użyciu szablonów i projektantów działań. [!INCLUDE[crabout](../includes/crabout-md.md)] przepływy pracy, zobacz [Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Poniżej przedstawiono kilka nowych funkcji projektowania modyfikujące tej nowej wersji składnika [!INCLUDE[wfd2](../includes/wfd2-md.md)] oprócz starsze wersje [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
@@ -65,8 +65,8 @@ ms.locfileid: "62977010"
  [Opracowywanie aplikacji przepływu pracy przeznaczonych dla platformy .NET 3.0 lub .NET 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Zawiera wskazówki dotyczące używania starszej wersji projektanta, który jest przeznaczony dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
- [Rehostowanie projektanta &#91;WF — przykłady&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [Rehostowanie projektanta &#91;WF — przykłady&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  W tym przykładzie przedstawiono sposób tworzenia układu WPF zawiera projektanta.  
   
- [Projektanci działań niestandardowych](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [Projektanci działań niestandardowych](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  Ta sekcja zawiera przykłady działań, które za pomocą projektantów niestandardowych do wyświetlania w Projektancie przepływu pracy.

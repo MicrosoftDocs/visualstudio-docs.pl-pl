@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e43944a3a21f48559ab5bf36d30585f8550b9da1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bd801e7afc1fa0a4edf043aba560bc4afcdae9de
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682842"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Metody interfejsu powinny móc zostać wywołane przez typy podrzędne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,4 +52,4 @@ ms.locfileid: "54754702"
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExplicitMethodImplementations/cs/FxCop.Design.ExplicitMethodImplementations.cs#1)]
 
 ## <a name="see-also"></a>Zobacz też
- [Interfejsy](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)
+ [Interfejsy](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)

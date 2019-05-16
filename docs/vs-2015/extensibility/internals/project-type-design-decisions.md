@@ -13,12 +13,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd26e08ab153e96fc601e89788008cb0e9ca38c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792092"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704085"
 ---
 # <a name="project-type-design-decisions"></a>Decyzje projektowe dotyczące typów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzj
   
  Elementy w projekcie mogą być plikami lub mogą być bardziej abstrakcyjne obiekty, takie jak obiekty połączenia bazy danych repozytorium lub danych w Internecie. Jeśli elementy znajdują się pliki projektu można na podstawie odwołania lub na podstawie katalogu projektu.  
   
- W projektach odwołania elementów może się pojawić w więcej niż jeden projekt. Jednak sam plik, który reprezentuje element znajduje się w tylko jednym katalogu. W projektach na poziomie katalogu wszystkich elementów projektu istnieje w strukturze katalogów. Aby uzyskać więcej informacji, zobacz [zarządzania NIB: element w projektach](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ W projektach odwołania elementów może się pojawić w więcej niż jeden projekt. Jednak sam plik, który reprezentuje element znajduje się w tylko jednym katalogu. W projektach na poziomie katalogu wszystkich elementów projektu istnieje w strukturze katalogów. Aby uzyskać więcej informacji, zobacz [zarządzania NIB: element w projektach](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  Elementy lokalne są przechowywane na tym samym komputerze, na którym zainstalowano aplikację. Elementy zdalne mogą być przechowywane na oddzielnym serwerze w sieci lokalnej lub gdzie indziej w Internecie.  
   
@@ -60,7 +60,7 @@ Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzj
   
 ## <a name="see-also"></a>Zobacz też  
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB: element zarządzania w projektach](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [NIB: element zarządzania w projektach](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Trwałość projektu](../../extensibility/internals/project-persistence.md)   
  [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)   

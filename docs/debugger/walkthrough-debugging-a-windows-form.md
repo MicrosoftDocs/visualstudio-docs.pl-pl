@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407584"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678925"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Przewodnik: Debugowanie formularza Windows Forms
 Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarządzanych. Formularz systemu Windows tworzy standardową aplikację systemu Windows. Można wykonać instrukcje z tego przewodnika przy użyciu języka Visual Basic, C# lub C++.
@@ -165,23 +165,24 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. Na **debugowania** menu, wybierz opcję **Rozpocznij bez debugowania**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Formularz systemu Windows zaczyna działanie w systemie Windows, tak jak gdyby użytkownik dwukrotnie kliknął jego plik wykonawczy. Debuger nie jest dołączony.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. Na **debugowania** menu, wybierz opcję **dołączyć do procesu**. (To polecenie jest dostępna również na **narzędzia** menu.)
 
-     The **Attach to Process** dialog box appears.
+     **Dołączyć do procesu** pojawi się okno dialogowe.
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. W **dostępne procesy** okienko, należy znaleźć nazwę procesu (Walkthrough_SimpleDebug.exe) w **procesu** kolumny i kliknij ją.
 
-5. Click the **Attach** button.
+5. Kliknij przycisk **Dołącz** przycisku.
 
-6. In your Windows Form, click the one and only button.
+6. W formularzu systemu Windows, należy kliknąć jedyny przycisk.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     Debuger przerywa wykonywanie formularza systemu Windows w punkcie przerwania.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>Zobacz też
+- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
+- [Zabezpieczenia debugera](../debugger/debugger-security.md)

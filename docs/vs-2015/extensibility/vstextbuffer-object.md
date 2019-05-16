@@ -13,12 +13,12 @@ ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 950f9c50ccaf137b21d775ceaf1bff196b1b8ac7
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 5b68d443e542b6bd707aacc2b22d0efc1064152c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089300"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690642"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer, obiekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Obiekt bufor tekstowy przedstawia strumień tekst Unicode, który jest zazwyczaj
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Edytuj dane](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [Edytuj dane](https://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

@@ -15,23 +15,23 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33c148b459e34da26f068fe041d90979c7244cde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5401679f02141cac9fff32025edfff4dc76895b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429031"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678895"
 ---
 # <a name="supplying-xml-code-comments"></a>Stosowanie komentarzy kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz wprowadzać komentarze w plikach kodu źródłowego dostępna jako funkcja IntelliSense. Po dodaniu przełącznika/doc do języka Visual Basic, C# lub wiersza polecenia kompilatora C++ generowany jest plik XML, służący jako podstawa dokumentacji funkcji IntelliSense.  
   
- Aby uzyskać więcej informacji na temat dokumentowanie kodu w języku Visual Basic, zobacz [jak: Tworzenie dokumentacji XML](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
+ Aby uzyskać więcej informacji na temat dokumentowanie kodu w języku Visual Basic, zobacz [jak: Tworzenie dokumentacji XML](https://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
   
- Aby uzyskać więcej informacji na temat dokumentowanie kodu w języku C#, zobacz [komentarze dokumentacji XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ Aby uzyskać więcej informacji na temat dokumentowanie kodu w języku C#, zobacz [komentarze dokumentacji XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   
- Aby uzyskać więcej informacji na temat dokumentowanie kodu w języku C++, zobacz [komentarze](http://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514) i [dokumentacji XML](http://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506).  
+ Aby uzyskać więcej informacji na temat dokumentowanie kodu w języku C++, zobacz [komentarze](https://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514) i [dokumentacji XML](https://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)

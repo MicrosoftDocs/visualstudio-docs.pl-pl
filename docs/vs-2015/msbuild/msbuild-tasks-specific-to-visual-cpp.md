@@ -16,17 +16,17 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f4de01af6535a33607e5263966492210f8ce4a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 452c3b408ab6471963124e61bc803e99eb6be80d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686907"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Zadania narzędzia MSBuild właściwe dla Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Po zainstalowaniu programu Visual C++, następujące zadania są dostępne, oprócz tych, które są instalowane z [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Aby uzyskać więcej informacji, zobacz [Przegląd MSBuild (Visual C++)](http://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca).  
+Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Po zainstalowaniu programu Visual C++, następujące zadania są dostępne, oprócz tych, które są instalowane z [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Aby uzyskać więcej informacji, zobacz [Przegląd MSBuild (Visual C++)](https://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca).  
   
  Oprócz parametrów dla każdego zadania każde zadanie ma następujące parametry.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442728"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685931"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach Sklepu Windows w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elem
 
  W tym temacie opisano również sposób debugowania **zadania w tle**. Zadania w tle umożliwiają wykonywania pewnych operacji w tle, nawet w przypadku aplikacji nie jest uruchomiona. Debuger umożliwia Udostępnij swoją aplikację w trybie debugowania i następnie — bez konieczności uruchamiania interfejsu użytkownika — uruchomić i debugować zadanie w tle.
 
- Aby uzyskać więcej informacji na temat zadań Zarządzanie okresem istnienia procesu i tła zobacz [uruchamiania i wznawianie i wielozadaniowość](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
+ Aby uzyskać więcej informacji na temat zadań Zarządzanie okresem istnienia procesu i tła zobacz [uruchamiania i wznawianie i wielozadaniowość](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
 ## <a name="BKMK_In_this_topic"></a> W tym temacie
  [Zdarzenia Zarządzanie okresem istnienia procesu wyzwalacza](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elem
      Należy pamiętać, że **Wstrzymaj i zakończyć** nie zamknie aplikacji i kończy się sesja debugowania.
 
 ## <a name="BKMK_Trigger_background_tasks"></a> Zadania w tle wyzwalacza
- Dowolna aplikacja można zarejestrować zadania w tle mogą odpowiadać na określone zdarzenia systemowe, nawet wtedy, gdy aplikacja nie jest uruchomiona. Zadania w tle nie może uruchomić kod, który bezpośrednio aktualizacje interfejsu użytkownika; Zamiast tego zawierają one informacje dla użytkownika przy użyciu aktualizacji kafelka, wskaźnik aktualizacji i powiadomień wyskakujących. Aby uzyskać więcej informacji, zobacz [obsługi aplikacji przy użyciu zadań w tle](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+ Dowolna aplikacja można zarejestrować zadania w tle mogą odpowiadać na określone zdarzenia systemowe, nawet wtedy, gdy aplikacja nie jest uruchomiona. Zadania w tle nie może uruchomić kod, który bezpośrednio aktualizacje interfejsu użytkownika; Zamiast tego zawierają one informacje dla użytkownika przy użyciu aktualizacji kafelka, wskaźnik aktualizacji i powiadomień wyskakujących. Aby uzyskać więcej informacji, zobacz [obsługi aplikacji przy użyciu zadań w tle](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
 
  Możesz wyzwolić wydarzenia, uruchamianych zadań w tle dla swojej aplikacji za pomocą debugera.
 
@@ -125,4 +125,4 @@ Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elem
 4. Wybierz **diagnostycznych** dziennika.
 
 ## <a name="see-also"></a>Zobacz też
- [Testowanie aplikacji Store za pomocą programu Visual Studio](../test/testing-store-apps-with-visual-studio.md) [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [zarządzania cyklem życia aplikacji](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [uruchamiania i wznawianie i wielozadaniowość](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Testowanie aplikacji Store za pomocą programu Visual Studio](../test/testing-store-apps-with-visual-studio.md) [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [zarządzania cyklem życia aplikacji](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [uruchamiania i wznawianie i wielozadaniowość](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

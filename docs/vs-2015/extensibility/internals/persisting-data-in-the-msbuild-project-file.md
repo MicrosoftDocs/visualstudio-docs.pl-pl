@@ -10,19 +10,19 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4563cd912295cf447b8268c0b9f54e39d11e921f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39d2ab449c3623a90dd76729b46a9f353900fc88
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051885"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704117"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Utrwalanie danych w pliku projektu programu MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Podtypu projektu może być konieczne do utrwalenia danych specyficznych dla podtypu do pliku projektu do późniejszego użycia. Podtypu projektu używa trwałość plików projektu, aby spełniać następujące wymagania:  
   
-1. Utrwalanie danych używanych w ramach tworzenia projektu. (Aby uzyskać więcej informacji na temat aparatu Microsoft Build Engine, zobacz [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informacje dotyczące kompilacji wykonać jedną z następujących:  
+1. Utrwalanie danych używanych w ramach tworzenia projektu. (Aby uzyskać więcej informacji na temat aparatu Microsoft Build Engine, zobacz [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informacje dotyczące kompilacji wykonać jedną z następujących:  
   
     1. Dane niezależnie od konfiguracji. Oznacza to, że — dane przechowywane w elementach programu MSBuild z warunki pustego lub Brak.  
   

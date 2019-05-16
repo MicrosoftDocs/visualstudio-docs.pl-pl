@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437555"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701262"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
   Okna dokumentów i narzędzi mogą być ułożone przez przeciąganie, za pomocą poleceń w **okna** menu i klikając prawym przyciskiem myszy pasek tytułu okna.
 
 > [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Dokowanie Windows
  W przypadku kliknij i przeciągnij pasek tytułu okna narzędzi lub na karcie okna dokumentu romb przewodnik pojawia się. Podczas operacji przeciągania gdy wskaźnik myszy znajduje się nad jedną strzałki rombu, zacieniony obszar pojawi się informujący o tym, gdzie okna zostanie zadokowany po zwolnieniu przycisku myszy teraz.
@@ -182,4 +182,4 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
 |[Rodzaje Windows](../misc/kinds-of-windows.md)|W tym artykule omówiono różnice między oknami narzędzi i oknami dokumentu w IDE.|
 |[Instrukcje: Aranżowanie i dokowanie Windows](../misc/how-to-arrange-and-dock-windows.md)|W tym artykule opisano, jak dokować, automatycznie ukrywać i rozkładać sąsiadująco okna, a także jak zresetować układ okien.|
 |[Instrukcje: Poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|W tym artykule opisano, jak przechodzić kolejno przez otwarte okna w IDE, w kolejności ich użycia. Opisano również, jak można przejść do określonych dokumentów.|
-|[Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Zawiera informacje dotyczące kombinacji ustawień i wpływu ustawień na układy okien, skróty klawiaturowe i inne elementy w IDE.|
+|[Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Zawiera informacje dotyczące kombinacji ustawień i wpływu ustawień na układy okien, skróty klawiaturowe i inne elementy w IDE.|

@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a862b01eb4fdbb654ce31419742c07ba22194ffa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387014"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705985"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testowanie aplikacji platformy UWP i 8.1 Phone systemu Windows za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -374,7 +374,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |Funkcja|Aplikacje Windows Store|Aplikacje Windows Phone|  
 |-------------|------------------------|------------------------|  
-|Element docelowy dla wykonywania testów|Komputerze lokalnym lub zdalnym. Komputer zdalny można określić, gdy automatyczny przypadek testowy można używać do uruchamiania testów. Zobacz [zautomatyzować przypadek testowy w programie Microsoft Test Manager](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Urządzenie lub emulator. Zobacz, [Pyt.: Testy można wykonać na tylko emulator, czy też korzystać urządzenia fizycznego? ](#TestingPhoneAppsCodedUI_EmulatorDevice) w tym temacie.|  
+|Element docelowy dla wykonywania testów|Komputerze lokalnym lub zdalnym. Komputer zdalny można określić, gdy automatyczny przypadek testowy można używać do uruchamiania testów. Zobacz [zautomatyzować przypadek testowy w programie Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Urządzenie lub emulator. Zobacz, [Pyt.: Testy można wykonać na tylko emulator, czy też korzystać urządzenia fizycznego? ](#TestingPhoneAppsCodedUI_EmulatorDevice) w tym temacie.|  
 |Wykonywanie z wiersza polecenia|Plik ustawień nie są wymagane do określenia docelowej.|Wymagany do określenia docelowej pliku Runsettings.|  
 |Wyspecjalizowane klasy formantów powłoki|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |Kontrolki WebView w aplikacji w języku XAML|Obsługiwane, jeśli używasz Html * wyspecjalizowane klasy do interakcji z elementów HTML. Zobacz <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Nieobsługiwane.|  

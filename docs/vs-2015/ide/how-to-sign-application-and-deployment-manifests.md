@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685422"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: Podpisywanie aplikacji i manifestów wdrożenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
   
  Podpisywanie manifestów ClickOnce jest opcjonalne dla aplikacji opartych na .exe. Aby uzyskać więcej informacji zobacz sekcję "Generowanie nieoznaczonych manifestów" w tym dokumencie.  
   
- Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [jak: Tworzenie pary kluczy publiczny prywatny](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [jak: Tworzenie pary kluczy publiczny prywatny](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] obsługuje tylko te kluczowe pliki wymiany informacji osobistych (PFX), które mają rozszerzenie .pfx. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów Windows bieżącego użytkownika, klikając **wybierać Store** na **podpisywanie** strony właściwości projektu.  
@@ -109,7 +109,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
 3. Opublikuj aplikację.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zestawy o silnych nazwach](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Instrukcje: Tworzenie pary kluczy publiczny prywatny](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Zestawy o silnych nazwach](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Instrukcje: Tworzenie pary kluczy publiczny prywatny](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Strona podpisywania, Projektant projektu](../ide/reference/signing-page-project-designer.md)   
  [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)

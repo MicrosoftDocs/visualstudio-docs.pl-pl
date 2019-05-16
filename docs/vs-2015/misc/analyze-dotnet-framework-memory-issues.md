@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444659"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688574"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analiza problemów pamięci .NET Framework
 Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET Framework za pomocą programu Visual Studio zarządzany analizator pamięci. Minimalna wersja systemu .NET Framework kod docelowy jest .NET Framework 4.5.  
@@ -47,7 +47,7 @@ Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET F
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Zidentyfikuj problem pamięci w aplikacji  
- Najbardziej widoczne objawem problemów z pamięcią jest wydajności aplikacji, szczególnie w przypadku spadku wydajności wraz z upływem czasu. Obniżenie wydajności innych aplikacji, podczas gdy Twoja aplikacja działa również może wskazywać problem z pamięci. Jeśli podejrzewasz problem pamięci, skorzystaj z narzędzia, takie jak Menedżer zadań lub [Windows Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx) zmuszony do dalszego badania. Na przykład wyszukaj wzrost całkowity rozmiar pamięci, która nie może wyjaśniać potencjalnym źródłem przecieki pamięci:  
+ Najbardziej widoczne objawem problemów z pamięcią jest wydajności aplikacji, szczególnie w przypadku spadku wydajności wraz z upływem czasu. Obniżenie wydajności innych aplikacji, podczas gdy Twoja aplikacja działa również może wskazywać problem z pamięci. Jeśli podejrzewasz problem pamięci, skorzystaj z narzędzia, takie jak Menedżer zadań lub [Windows Performance Monitor](https://technet.microsoft.com/library/cc749249.aspx) zmuszony do dalszego badania. Na przykład wyszukaj wzrost całkowity rozmiar pamięci, która nie może wyjaśniać potencjalnym źródłem przecieki pamięci:  
   
  ![Zgodne pamięci wzrost Monitor zasobów](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,7 +56,7 @@ Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET F
  ![Wartości graniczne pamięci w usłudze Resource Manager](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> Zbieraj migawki pamięci  
- Narzędzia analizy pamięci analizuje informacje zawarte w *pliki zrzutu* zawierających informacje o stercie. Można tworzyć pliki zrzutu w programie Visual Studio lub można użyć narzędzia, takiego jak [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Zobacz [co to jest zrzut, i jak mogę utworzyć jeden?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) na blogu zespołu debugera Visual Studio.  
+ Narzędzia analizy pamięci analizuje informacje zawarte w *pliki zrzutu* zawierających informacje o stercie. Można tworzyć pliki zrzutu w programie Visual Studio lub można użyć narzędzia, takiego jak [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Zobacz [co to jest zrzut, i jak mogę utworzyć jeden?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) na blogu zespołu debugera Visual Studio.  
   
 > [!NOTE]
 > Większość narzędzi może zbierać informacji zrzutu z lub bez niego dane pamięci sterty ukończone. Analizator pamięci programu Visual Studio wymaga informacji pełnego stosu.  

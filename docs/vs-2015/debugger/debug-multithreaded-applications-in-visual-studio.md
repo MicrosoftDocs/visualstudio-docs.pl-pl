@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8cb43c9a32f3dfd0a6383d466f7cd283acf0ab3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691282"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuguj aplikacje wielowątkowe w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas
 
  Ponadto wielowątkowość wprowadza kilka nowych rodzajów potencjalnych błędów. Często na przykład dwa lub więcej wątków, trzeba mieć dostęp do tego samego zasobu, ale tylko jeden wątek może bezpiecznie uzyskać dostępu do zasobu w danym momencie. Niektóre forma wzajemnego wykluczania jest niezbędne upewnić się, że tylko jeden wątek uzyskuje dostęp do zasobów w danym momencie. Jeśli wzajemne wykluczanie jest wykonywane niepoprawnie, może utworzyć *zakleszczenia* warunku, gdzie żaden wątek nie może wykonać. Zakleszczenia mogą być problemem szczególnie trudnym do debugowania.
 
- Program Visual Studio udostępnia **wątków** okna, okno wątków GPU, okno czujki równoległej i inne funkcje, które debugowanie wielowątkowe. Najlepszym sposobem, aby dowiedzieć się więcej o funkcjach wątkowości jest wykonanie instrukcji opisanych w przewodnikach. Zobacz [instruktażu: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md) i [instruktażu: Debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
+ Program Visual Studio udostępnia **wątków** okna, okno wątków GPU, okno czujki równoległej i inne funkcje, które debugowanie wielowątkowe. Najlepszym sposobem, aby dowiedzieć się więcej o funkcjach wątkowości jest wykonanie instrukcji opisanych w przewodnikach. Zobacz [instruktażu: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md) i [instruktażu: Debugowanie aplikacji C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
 
  Visual Studio udostępnia również zaawansowane punkty przerwania i punkty śledzenia, które mogą być bardzo przydatne podczas debugowania aplikacji wielowątkowych. Filtry punktów przerwania można użyć, aby umieścić punkty przerwania na jednym z wątków. Zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md)
 
@@ -83,11 +83,11 @@ Przewodnik po funkcjach debugowania wątku, z naciskiem na funkcje jak do [!INCL
 
 - Punkty śledzenia pozwalają na wykonywanie śledzenia programu bez przerywania. Może to być przydatne do badania problemów, takich jak zakleszczenia.
 
-  [Wątkowość](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) pojęcia wielowątkowości w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programowania, w tym przykładzie kodu.
+  [Wątkowość](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) pojęcia wielowątkowości w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programowania, w tym przykładzie kodu.
 
-  [Wielowątkowość w składnikach](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) jak używać wielowątkowości w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] składników.
+  [Wielowątkowość w składnikach](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) jak używać wielowątkowości w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] składników.
 
-  [Obsługa wielowątkowości w przypadku starszego kodu (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) pojęcia wielowątkowości i przykładowy kod dla programistów C++ przy użyciu biblioteki MFC.
+  [Obsługa wielowątkowości w przypadku starszego kodu (Visual C++)](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) pojęcia wielowątkowości i przykładowy kod dla programistów C++ przy użyciu biblioteki MFC.
 
 ## <a name="see-also"></a>Zobacz też
  [Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md) [zdalnego debugowania](../debugger/remote-debugging.md)

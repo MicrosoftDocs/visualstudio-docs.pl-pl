@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 300088cb8051f53f5f1afbfe41be92dac9853b53
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b178afb59558f5e684d704137039891aefbf0e3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834327"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683245"
 ---
 # <a name="vsinstr-warnings"></a>Ostrzeżenia VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ W poniższej tabeli wymieniono ostrzeżenia narzędzia VSInstr.exe. NOWARN — o
 |Numer ostrzeżenia|Opis|  
 |--------------------|-----------------|  
 |**VSP2000**|Błąd wewnętrzny. Nie można pobrać nazwy pliku modułu dla tego pliku wykonywalnego.|  
-|**VSP2001**|\<Nazwa zestawu > jest zestaw o silnej nazwie. Musi zostać ponownie podpisany przed mogą być wykonywane.<br /><br /> To ostrzeżenie występuje, gdy został zinstrumentowany na zestawu podpisanego za pomocą. Można użyć narzędzia sn.exe, ponownie podpisać plik binarny lub tymczasowo wyłączyć wymaganie silnej nazwy. Aby uzyskać więcej informacji, zobacz [Sn.exe (narzędzie silnych nazw)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
+|**VSP2001**|\<Nazwa zestawu > jest zestaw o silnej nazwie. Musi zostać ponownie podpisany przed mogą być wykonywane.<br /><br /> To ostrzeżenie występuje, gdy został zinstrumentowany na zestawu podpisanego za pomocą. Można użyć narzędzia sn.exe, ponownie podpisać plik binarny lub tymczasowo wyłączyć wymaganie silnej nazwy. Aby uzyskać więcej informacji, zobacz [Sn.exe (narzędzie silnych nazw)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
 |**VSP2002**|Nie można znaleźć funkcji \<funcname > w pliku \<nazwa pliku ><br /><br /> To ostrzeżenie występuje, jeśli funkcja nie może znajdować się w określonym pliku.|  
 |**VSP2003**|Nie można znaleźć żadnych skrzyżowanych skoków do funkcji \<funcname > w pliku \<nazwa_pliku >.<br /><br /> To ostrzeżenie występuje, jeśli narzędzie VSInstr nie może zniweczyć przechodzi między. Skrzyżowany skok są używane do optymalizacji kodu.|  
 |**VSP2004**|Funkcja \<funcname > została wykluczona przy użyciu przełącznika wiersza polecenia wykluczenia, ale była wymagana, ponieważ zawiera skok.<br /><br /> To ostrzeżenie występuje, jeśli funkcja został wykluczony, korzystając z opcji wykluczenia, ale jest wymagany w procesie instrumentacji. Program profilujący automatycznie uwzględnia wymaganej funkcji.|  

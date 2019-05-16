@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685552"
 ---
 # <a name="image-library-viewer"></a>Przeglądarka biblioteki obrazów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -130,7 +130,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 |||  
 |-|-|  
 |**Atrybut**|**Definicja**|  
-|Identyfikator URI|[Wymagane] Identyfikator URI, który określa, gdzie można załadować obrazu z. Może to być jedna z następujących czynności:<br /><br /> -A [identyfikatora URI pakietu](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) za pomocą aplikacji: / / / urzędu<br /><br /> — Odwołanie do zasobu składnik bezwzględne<br /><br /> — Ścieżka do pliku zawierającego zasobu natywnego|  
+|Identyfikator URI|[Wymagane] Identyfikator URI, który określa, gdzie można załadować obrazu z. Może to być jedna z następujących czynności:<br /><br /> -A [identyfikatora URI pakietu](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) za pomocą aplikacji: / / / urzędu<br /><br /> — Odwołanie do zasobu składnik bezwzględne<br /><br /> — Ścieżka do pliku zawierającego zasobu natywnego|  
 |Tło|[Opcjonalnie] Wskazuje, jakie na rodzaju tła, których źródłem jest przeznaczony do użycia.<br /><br /> Może to być jedna z następujących czynności:<br /><br /> - *Jasny*: Źródło może być używane na tle światła.<br /><br /> - *Ciemny*: Źródło może być używane na ciemnym tle.<br /><br /> - *HighContrast*: Źródło może służyć w dowolnym tła w trybie dużego kontrastu.<br /><br /> - *HighContrastLight*: Źródło może być używane na tle światła w trybie dużego kontrastu.<br /><br /> -*HighContrastDark*: Źródło może być używane na ciemnym tle w trybie dużego kontrastu.<br /><br /> Jeśli **tła** atrybut zostanie pominięty, źródła można używać na dowolnym tła.<br /><br /> Jeśli **tła** jest *światła*, *ciemny*, *HighContrastLight*, lub *HighContrastDark*, nigdy nie są odwrócone kolory źródła. Jeśli **tła** jest pominięty lub ustawiony jako *HighContrast*, odwracanie kolorów źródło jest kontrolowane przez obraz **AllowColorInversion** atrybutu.|  
   
  A \<źródło > element może mieć dokładnie jeden następujące opcjonalne elementy podrzędne:  

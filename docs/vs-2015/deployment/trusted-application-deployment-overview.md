@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 869a756b1995a1ae5de3736fcee4ccede6cb46e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a09f32f90ffca081fb8bf405f5d661160e8d4adf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686365"
 ---
 # <a name="trusted-application-deployment-overview"></a>Przegląd wdrażania zaufanych aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../includ
   
 - <xref:System.Security.Cryptography?displayProperty=fullName> Przestrzeni nazw.  
   
-- CertMgr.exe, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemach Windows 98 i wszystkich nowszych wersji. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (Menedżer certyfikatów narzędzie)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemach Windows 98 i wszystkich nowszych wersji. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (Menedżer certyfikatów narzędzie)](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Tworzenie aplikacji ClickOnce  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacja jest [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplikacja kliencka w połączeniu z plików manifestu, które opisują aplikacji, a następnie podaj parametry instalacji. Można włączyć program do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację za pomocą **Publikuj** polecenia w pliku [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Alternatywnie można wygenerować wszystkie pliki, które są wymagane do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia za pomocą narzędzi, które są dołączone [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Aby uzyskać szczegółowe instrukcje dotyczące [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrażania, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
@@ -88,12 +88,12 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../includ
  Wdrażanie zaufanej aplikacji zależy od [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]i mogą być używane tylko z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
   
 ### <a name="sign-the-deployment"></a>Utwórz wdrożenie  
- Po uzyskaniu certyfikatu, musisz podać go do podpisania wdrożenia. Jeśli aplikacja jest wdrażana przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kreator publikacji, Kreator automatycznie wygeneruje certyfikat testowy dla Ciebie, jeśli nie podano certyfikatu samodzielnie. Można również użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno projektanta projektu, jednak podać certyfikat podany przez urząd certyfikacji.  Zobacz też [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) lub [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
+ Po uzyskaniu certyfikatu, musisz podać go do podpisania wdrożenia. Jeśli aplikacja jest wdrażana przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kreator publikacji, Kreator automatycznie wygeneruje certyfikat testowy dla Ciebie, jeśli nie podano certyfikatu samodzielnie. Można również użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno projektanta projektu, jednak podać certyfikat podany przez urząd certyfikacji.  Zobacz też [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) lub [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
   
 > [!CAUTION]
 > Zaleca się, że aplikacja jest wdrożona za pomocą certyfikatu testu.  
   
- Możesz też zarejestrować aplikację za pomocą narzędzi Mage.exe lub MageUI.exe SDK. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Aby uzyskać pełną listę opcji wiersza polecenia, które dotyczą wdrażania podpisywania, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+ Możesz też zarejestrować aplikację za pomocą narzędzi Mage.exe lub MageUI.exe SDK. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Aby uzyskać pełną listę opcji wiersza polecenia, które dotyczą wdrażania podpisywania, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ### <a name="publish-the-application"></a>Publikowanie aplikacji  
  Zaraz po zarejestrowaniu Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestów, aplikacja jest gotowa do opublikowania w lokalizacji instalacji. Lokalizacja instalacji może być serwerem sieci Web, udziału plików lub dysk lokalny. Gdy klient uzyskuje dostęp do pliku manifestu wdrożenia po raz pierwszy, musisz wybrać Menedżer zaufania czy [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji udzielono uprawnienia lub nie było uruchamiane na wyższym poziomie zaufania przez zainstalowany zaufany wydawcy. Menedżer zaufania sprawia, że ten wybór porównując certyfikat użyty do podpisania wdrożenia przy użyciu certyfikatów przechowywanych w klienta zaufanego wydawcę, przechowywania. Jeśli Menedżer zaufania znajdzie dopasowanie, aplikacja będzie działać z wysokim poziomem zaufania.  
@@ -105,5 +105,5 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../includ
  Wdrażanie zaufanych aplikacji służy do udzielania podwyższonego zaufania do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje wdrożone za pośrednictwem sieci Web lub przez udział plików przedsiębiorstwa. Nie masz do użycia zaufanego wdrożenia aplikacji dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji rozproszonych na dysku CD, ponieważ domyślnie, te aplikacje są udzielane pełne zaufanie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Mage.exe (manifestu narzędzie generowania i edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (manifestu narzędzie generowania i edytowania)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436522"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686925"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parametr zestawu międzyoperacyjnego programu Visual Studio Marshalingu
-Pakietów VSPackage, które są zapisywane w kodzie zarządzanym może być konieczne wywoływanie lub można wywoływać za pomocą kodu niezarządzanego COM. Argumenty metody są zazwyczaj transformowany lub zorganizować automatycznie, organizator międzyoperacyjny. Jednak czasami argumenty nie mogą zostać przekształcone w prosty sposób. W takich przypadkach parametrów prototypu zestawu międzyoperacyjnego metody są używane do możliwie najdokładniej dopasować parametrów funkcji COM. Aby uzyskać więcej informacji, zobacz [Marshaling międzyoperacyjności](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+Pakietów VSPackage, które są zapisywane w kodzie zarządzanym może być konieczne wywoływanie lub można wywoływać za pomocą kodu niezarządzanego COM. Argumenty metody są zazwyczaj transformowany lub zorganizować automatycznie, organizator międzyoperacyjny. Jednak czasami argumenty nie mogą zostać przekształcone w prosty sposób. W takich przypadkach parametrów prototypu zestawu międzyoperacyjnego metody są używane do możliwie najdokładniej dopasować parametrów funkcji COM. Aby uzyskać więcej informacji, zobacz [Marshaling międzyoperacyjności](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## <a name="general-suggestions"></a>Ogólne sugestie  
   
@@ -123,7 +123,7 @@ else
  Zarządzanych metod, które wywołują interfejsy tego typu należy ściągnąć pierwszego elementu poza [out] tablica. Ten element może być traktowana tak, jakby była `retval` zwracanie wartości z odpowiedniego interfejsu COM.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Marshaling międzyoperacyjny](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Marshaling międzyoperacyjny](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [Problemów związanych ze współdziałaniem](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [Marshaling międzyoperacyjny](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Marshaling międzyoperacyjny](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Problemów związanych ze współdziałaniem](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Managed VSPackages](../misc/managed-vspackages.md)

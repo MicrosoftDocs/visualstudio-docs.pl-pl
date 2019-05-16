@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4f92b96d99889c88236df34b3f60c7fd71d5032d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116202"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691345"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Przygotowanie debugowania: Typy projektów Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ W tej sekcji opisano sposób debugowania projektu podstawowych typów utworzonyc
    [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikacje Windows Forms (.NET)  
- **Windows Forms aplikacji (.NET)** szablon umożliwia utworzenie [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] aplikacji Windows Forms. Aby uzyskać więcej informacji, zobacz [jak: Utwórz projekt aplikacji Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ **Windows Forms aplikacji (.NET)** szablon umożliwia utworzenie [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] aplikacji Windows Forms. Aby uzyskać więcej informacji, zobacz [jak: Utwórz projekt aplikacji Windows](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest podobny, jak w zarządzanych aplikacjach Windows Forms.  
   
@@ -117,4 +117,4 @@ W tej sekcji opisano sposób debugowania projektu podstawowych typów utworzonyc
  [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Dołączanie do programu uruchomione lub wielu programów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Instrukcje: Utwórz projekt aplikacji Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [Instrukcje: Utwórz projekt aplikacji Windows](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 08db6a5d22cacc348a9ef36fd9e9857d5b55642a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444387"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703736"
 ---
 # <a name="signfile-task"></a>SignFile — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Podpisuje określonego pliku przy użyciu określonego certyfikatu.
 ```  
   
 > [!NOTE]
-> Odcisk palca certyfikatu jest Skrót SHA-1 certyfikatu. Aby uzyskać więcej informacji, zobacz [uzyskać Skrót SHA-1 certyfikatu zaufanego głównego urzędu certyfikacji](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
+> Odcisk palca certyfikatu jest Skrót SHA-1 certyfikatu. Aby uzyskać więcej informacji, zobacz [uzyskać Skrót SHA-1 certyfikatu zaufanego głównego urzędu certyfikacji](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie użyto `Exec` zadania do podpisywania plików określonych w `FilesToSign` elementu kolekcji za pomocą certyfikatu określonego przez `Certificate` właściwości. Służy to do podpisywania plików Instalatora Windows podczas procesu kompilacji.  

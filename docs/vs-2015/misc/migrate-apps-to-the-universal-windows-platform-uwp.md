@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686665"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migracja aplikacji na platformę uniwersalną systemu Windows
 Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikacji Windows Store 8.1, aplikacje systemu Windows Phone 8.1 lub Windows Universal apps utworzonych za pomocą programu Visual Studio 2015 RC, dzięki czemu mogą być używane za pomocą programu Visual Studio 2015 RTM. (W przypadku aplikacji uniwersalnej Windows 8.1, za pomocą projektu aplikacji Windows i Windows Phone projektu, należy wykonać kroki do każdego projektu migracji.)  
@@ -29,7 +29,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
 - [Zmiany wymagane do istniejących projektów testów jednostkowych dla aplikacji Universal Windows utworzonych za pomocą programu Visual Studio 2015 RC](#MigrateUnitTest).  
   
-  Jeśli nie chcesz wprowadzić te zmiany, Dowiedz się, jak [portu istniejących aplikacji](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) do nowego projektu Universal Windows.  
+  Jeśli nie chcesz wprowadzić te zmiany, Dowiedz się, jak [portu istniejących aplikacji](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) do nowego projektu Universal Windows.  
   
 ## <a name="MigrateCSharp"></a> Migrowanie C# /VB Windows Store 8.1 lub Windows Phone 8.1 aplikacjach opcję użycia platformy uniwersalnej Windows  
   
@@ -110,7 +110,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
     6. Dodaj \<EnableDotNetNativeCompatibleProfile > element i ustaw dla niego wartość: **true**.  
   
-    7. Domyślna Skala zasobów dla aplikacji Universal Windows apps to 200. Jeśli projekt zawiera zasoby, które nie są skalowane o wartości 200, należy dodać \<UapDefaultAssetScale > element z wartością zasoby do tego PropertyGroup skali. Dowiedz się więcej o [zasobów i skaluje się](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. Domyślna Skala zasobów dla aplikacji Universal Windows apps to 200. Jeśli projekt zawiera zasoby, które nie są skalowane o wartości 200, należy dodać \<UapDefaultAssetScale > element z wartością zasoby do tego PropertyGroup skali. Dowiedz się więcej o [zasobów i skaluje się](https://msdn.microsoft.com/library/jj679352.aspx).  
   
          Teraz Twoja \<PropertyGroup > element zawartość okna powinna wyglądać następująco:  
   
@@ -272,7 +272,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
     4. Dodaj \<EnableDotNetNativeCompatibleProfile > element i ustaw dla niego wartość: PRAWDA.  
   
-    5. Domyślna Skala zasobów dla aplikacji Universal Windows apps to 200. Jeśli projekt zawiera zasoby, które nie są skalowane o wartości 200, należy dodać \<UapDefaultAssetScale > element z wartością zasoby do tego PropertyGroup skali. Dowiedz się więcej o [zasobów i skaluje się](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. Domyślna Skala zasobów dla aplikacji Universal Windows apps to 200. Jeśli projekt zawiera zasoby, które nie są skalowane o wartości 200, należy dodać \<UapDefaultAssetScale > element z wartością zasoby do tego PropertyGroup skali. Dowiedz się więcej o [zasobów i skaluje się](https://msdn.microsoft.com/library/jj679352.aspx).  
   
     6. Dla Windows Phone projektów, zmień wartość \<ApplicationType > od Windows Phone do Windows Store.  
   
@@ -651,7 +651,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
 4. Znajdź \<PropertyGroup > element, który zawiera \<TargetPlatformVersion > i \<TargetPlatformMinVersion > elementy. Zmiana wartości istniejącego \<TargetPlatformVersion > i \<TargetPlatformMinVersion > elementy, aby mieć taką samą wersję platformy Windows uniwersalnej, który został zainstalowany.  
   
-    Domyślna Skala zasobów dla aplikacji Universal Windows apps to 200. Projekty utworzone za pomocą programu Visual Studio 2015 RC dołączone zasoby skalowane w 100, należy dodać \<UapDefaultAssetScale > element o wartości 100, aby ta PropertyGroup. Dowiedz się więcej o [zasobów i skaluje się](http://msdn.microsoft.com/library/jj679352.aspx).  
+    Domyślna Skala zasobów dla aplikacji Universal Windows apps to 200. Projekty utworzone za pomocą programu Visual Studio 2015 RC dołączone zasoby skalowane w 100, należy dodać \<UapDefaultAssetScale > element o wartości 100, aby ta PropertyGroup. Dowiedz się więcej o [zasobów i skaluje się](https://msdn.microsoft.com/library/jj679352.aspx).  
   
 5. Jeśli dodano wszelkie odwołania do zestawów SDK rozszerzeń platformy uniwersalnej systemu Windows (na przykład: zestaw SDK usługi Mobile Windows), musisz zaktualizować wersję zestawu SDK. Na przykład to \<SDKReference > element:  
   
@@ -761,7 +761,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
      Dodaj \<EnableDotNetNativeCompatibleProfile > element i ustaw jej wartość na wartość true, jeśli element nie istnieje.  
   
-     Domyślna Skala zasobów dla aplikacji Universal Windows apps to 200. Projekty utworzone za pomocą programu Visual Studio 2015 RC dołączone zasoby skalowane w 100, należy dodać \<UapDefaultAssetScale > element o wartości 100, aby ta PropertyGroup. Dowiedz się więcej o [zasobów i skaluje się](http://msdn.microsoft.com/library/jj679352.aspx).  
+     Domyślna Skala zasobów dla aplikacji Universal Windows apps to 200. Projekty utworzone za pomocą programu Visual Studio 2015 RC dołączone zasoby skalowane w 100, należy dodać \<UapDefaultAssetScale > element o wartości 100, aby ta PropertyGroup. Dowiedz się więcej o [zasobów i skaluje się](https://msdn.microsoft.com/library/jj679352.aspx).  
   
      Dlatego ta \<PropertyGroup > element teraz wyglądać podobnie jak poniżej:  
   

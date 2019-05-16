@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c71c0e7f8961b5f7c545fb59597cdd173230fc08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422810"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680505"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Instrukcje: Tworzenie typu Zerowalnego (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Niektóre typy wartości nie zawsze masz (lub potrzebujesz) zdefiniowanej warto�
   
   Projektant klas Wyświetla typ dopuszczający wartość null, tak samo, jak wyświetla jego typ podstawowy.  
   
-  Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual C#, zobacz [typów dopuszczających wartości zerowe](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual Basic, zobacz [typów wartości dopuszczających wartości zerowe](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual C#, zobacz [typów dopuszczających wartości zerowe](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual Basic, zobacz [typów wartości dopuszczających wartości zerowe](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -83,7 +83,7 @@ Niektóre typy wartości nie zawsze masz (lub potrzebujesz) zdefiniowanej warto�
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Nullable%601>   
- [Typy dopuszczające wartości zerowe](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
- [Przy użyciu typów dopuszczających wartości zerowe](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Instrukcje: Identyfikowanie typu dopuszczającego wartość null](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
- [Typy wartości dopuszczających wartości null](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+ [Typy dopuszczające wartości zerowe](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
+ [Przy użyciu typów dopuszczających wartości zerowe](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
+ [Instrukcje: Identyfikowanie typu dopuszczającego wartość null](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Typy wartości dopuszczających wartości null](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

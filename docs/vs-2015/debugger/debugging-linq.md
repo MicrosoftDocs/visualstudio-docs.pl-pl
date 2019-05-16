@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0292bf5b62bf150a598b4c750929ba6928216a50
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691271"
 ---
 # <a name="debugging-linq"></a>Debugowanie LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60108571"
 ## <a name="BKMK_ViewingLINQResults"></a> Wyświetlanie wyników programu LINQ  
  Można przeglądać rezultaty instrukcji LINQ, używając DataTips, okna czujki i okna dialogowego QuickWatch. Kiedy używasz okna źródła, możesz wstrzymać wskaźnik na zapytaniu w oknie źródła i wyświetli się datatip. Można kopiować zmienną LINQ i wklej go w oknie czujki lub okno dialogowe QuickWatch.  
   
- W programie LINQ kwerenda nie jest uwzględniana podczas tworzenia lub deklarowania, ale tylko wtedy, gdy kwerenda jest używana. W związku z tym zapytanie nie ma wartości dopóki jest ocenione. Aby uzyskać pełny opis tworzenia i oceny kwerend, zobacz [wprowadzenie do zapytań LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) lub [Your pierwszego zapytania LINQ pisania](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
+ W programie LINQ kwerenda nie jest uwzględniana podczas tworzenia lub deklarowania, ale tylko wtedy, gdy kwerenda jest używana. W związku z tym zapytanie nie ma wartości dopóki jest ocenione. Aby uzyskać pełny opis tworzenia i oceny kwerend, zobacz [wprowadzenie do zapytań LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) lub [Your pierwszego zapytania LINQ pisania](https://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
   
  Aby wyświetlić wynik zapytania, debugger musi je ocenić. Bezwarunkowa ocena, która występuje podczas wyświetlania wyniku zapytania LINQ w debugerze, ma jakieś konsekwencje, które należy wziąć pod uwagę:  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60108571"
  W zapytaniach składnika LINQ to SQL kod predykatu jest poza kontrolą debugera. W związku z tym nie możesz wejść w kod predykatu. Wszystkie zapytania, który kompiluje do drzewa wyrażenie generuje kod, który jest poza kontrolą debugera.  
   
 ### <a name="stepping-in-visual-basic"></a>Przechodzenie krok po kroku w języku Visual Basic  
- Jeśli są krokowe program Visual Basic debugger napotka deklarację zapytania, nie wkracza w deklarację, ale wyróżnia całą deklarację jako pojedynczą instrukcję. Dzieje się tak, ponieważ zapytanie nie jest oceniany, dopóki nie jest wywoływana. Aby uzyskać więcej informacji, zobacz [wprowadzenie do LINQ w Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
+ Jeśli są krokowe program Visual Basic debugger napotka deklarację zapytania, nie wkracza w deklarację, ale wyróżnia całą deklarację jako pojedynczą instrukcję. Dzieje się tak, ponieważ zapytanie nie jest oceniany, dopóki nie jest wywoływana. Aby uzyskać więcej informacji, zobacz [wprowadzenie do LINQ w Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
   
  Jeśli prześledzisz poniższy przykład kodu do usuwania błędów podkreśli deklarację kwerendy lub utworzenie kwerendy jako pojedynczej instrukcji.  
   
@@ -117,8 +117,8 @@ End Function
  W języku Visual Basic umożliwia Edytuj i Kontynuuj na kodzie non-LINQ, nawet w metodzie, która zawiera kwerendę LINQ. Można dodać lub usunąć kod przez instrukcją LINQ, nawet jeśli zmiany mają wpływ na numer wiersza zapytania LINQ. Języka Visual Basic obsługi debugowania dla kodu-LINQ, pozostaje taki sam, jakim był, zanim wprowadzenie LINQ nie zmieniło. Nie można zmienić, Dodaj lub jednak usuwać w zapytaniu LINQ, chyba że chcesz zatrzymać debugowanie, aby zastosować zmiany.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
- [Efekty uboczne i wyrażenia](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
+ [Debugowanie SQL](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Efekty uboczne i wyrażenia](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)   
- [Wprowadzenie do zapytań LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
- [Wprowadzenie do LINQ w Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
+ [Wprowadzenie do zapytań LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
+ [Wprowadzenie do LINQ w Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)

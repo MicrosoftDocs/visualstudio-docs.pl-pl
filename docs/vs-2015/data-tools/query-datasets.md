@@ -9,17 +9,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425370"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692580"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable, zapisywanie pętlę foreach za pośrednictwem kolekcji wierszy w tabeli lub użyć [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
+Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable, zapisywanie pętlę foreach za pośrednictwem kolekcji wierszy w tabeli lub użyć [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
 ## <a name="dataset-case-sensitivity"></a>Rozróżnianie wielkości liter dla zestawu danych  
  W zestawie danych, nazwy tabel i kolumn domyślnie wielkość liter — oznacza to, tabeli w zestawie danych o nazwie "Klienci" może również określane jako "klientów." Odpowiada to konwencje nazewnictwa w wielu bazach danych, w tym program SQL Server.In SQL Server, domyślne zachowanie to, że nazwy elementów danych nie mogą być wyodrębnione tylko wielkością liter.  
@@ -65,7 +65,7 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
   
  Możesz użyć <xref:System.Data.DataRelation> obiekt do zlokalizowania rekordy pokrewne, wywołując <xref:System.Data.DataRow.GetChildRows%2A> metody <xref:System.Data.DataRow> w tabeli nadrzędnej. Ta metoda zwraca tablicę powiązane rekordy podrzędne. Można też wywołać <xref:System.Data.DataRow.GetParentRow%2A> metody <xref:System.Data.DataRow> w tabeli podrzędnej. Ta metoda zwraca pojedynczą <xref:System.Data.DataRow> z tabeli nadrzędnej.  
   
- Ta strona zawiera przykłady użycia typizowanych zestawów danych. Aby dowiedzieć się, jak nawigowanie po relacjach w nietypizowane zbiory danych, zobacz [przejść elementów DataRelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
+ Ta strona zawiera przykłady użycia typizowanych zestawów danych. Aby dowiedzieć się, jak nawigowanie po relacjach w nietypizowane zbiory danych, zobacz [przejść elementów DataRelation](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
 > Jeśli pracujesz w aplikacji Windows Forms i przy użyciu funkcji wiązania danych, aby wyświetlić dane, wygenerowany przez projektanta formularzy może zapewnić wystarczającą ilość funkcjonalność dla aplikacji. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  

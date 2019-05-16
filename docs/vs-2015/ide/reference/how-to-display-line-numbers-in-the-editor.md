@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2d6d3bd1d0a27a12194005422910236ea0fd02c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405668"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704410"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Instrukcje: Wyświetl numery wierszy w edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63405668"
 Możesz wyświetlać lub ukrywać numerację wierszy w kodzie.  
   
 > [!NOTE]
-> W zależności od aktywnych ustawień okna dialogowe i polecenia menu, które pojawiają się mogą różnić się od tych, które są opisane poniżej. Aby zmienić swoje ustawienia, otwórz **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> W zależności od aktywnych ustawień okna dialogowe i polecenia menu, które pojawiają się mogą różnić się od tych, które są opisane poniżej. Aby zmienić swoje ustawienia, otwórz **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Wyświetl numery wierszy w kodzie  
  Numery wierszy nie są dodawane do kodu; są one tylko dla odniesienia. Jeśli chcesz, aby numery wierszy były drukowane, w **drukowanie** okno dialogowe, wybierz opcję **dołączyć numery wierszy** pole wyboru.  

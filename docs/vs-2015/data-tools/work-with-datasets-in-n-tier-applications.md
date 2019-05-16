@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558466"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688193"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach n-warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Aplikacje warstwowe — * są aplikacji biznesowych przetwarzających dane, któ
  [Przewodnik: Tworzenie n-warstwowej aplikacji do obsługi danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Instrukcje krok po kroku dotyczące tworzenia typizowany zestaw danych i oddzielenie kodu TableAdapter i zestaw danych do wielu projektów.  
   
- [Przewodnik: Dodawanie walidacji do aplikacji warstwowych](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Przewodnik: Dodawanie walidacji do aplikacji warstwowych](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  Instrukcje krok po kroku do dodawania sprawdzania poprawności do aplikacji, który został utworzony w Przewodnik po aplikacji n warstwowa danych.  
   
 ## <a name="reference"></a>Tematy pomocy  
@@ -71,4 +71,4 @@ Aplikacje warstwowe — * są aplikacji biznesowych przetwarzających dane, któ
 - [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)   
 - [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
-- [N-warstwowe i zdalne aplikacje z użyciem LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [N-warstwowe i zdalne aplikacje z użyciem LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

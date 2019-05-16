@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 664363740737eb72213b4818b104aa14c3667a14
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445726"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690927"
 ---
 # <a name="visual-studio-shell-integrated"></a>Program Visual Studio Shell (zintegrowany)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,4 +79,4 @@ Powłoka programu Visual Studio obejmuje zintegrowanego środowiska programistyc
 - Żadne języki Visual Studio lub ich szablony skojarzonego projektu lub szablony elementów projektu, są uwzględnione w integrated shell. Nie implementacji specyficznych dla języka innych funkcji, dla dołączono przykładowych fragmentów kodu języka Visual Basic.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Rozszerzanie programu Visual Studio — omówienie](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [Rozszerzanie programu Visual Studio — omówienie](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

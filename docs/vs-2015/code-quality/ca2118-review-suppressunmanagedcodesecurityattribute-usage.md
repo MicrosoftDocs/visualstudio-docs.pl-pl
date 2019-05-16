@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687285"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Przejrzyj przypadki użycia atrybutu SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60059178"
  Typ publiczny lub chroniony lub elementu członkowskiego ma <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atrybutu.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Zmienia domyślne zachowanie systemu zabezpieczeń dla elementów członkowskich wykonujących kod niezarządzany, za pomocą wywołań międzyoperacyjnych COM lub platformy. Ogólnie rzecz biorąc, system sprawia, że [dane i modelowanie](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) uprawnienia kodu niezarządzanego. To żądanie występuje w czasie wykonywania dla każdego wywołania elementu członkowskiego i sprawdza, czy każdy obiekt wywołujący w stosie wywołań, aby uzyskać uprawnienia. Gdy atrybut nie jest obecny, system sprawia, że [zapotrzebowania na łącza](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) uprawnienia: Jeśli element wywołujący jest kompilowany dokładnie na czas, sprawdzane są uprawnienia bezpośredniego obiektu wywołującego.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Zmienia domyślne zachowanie systemu zabezpieczeń dla elementów członkowskich wykonujących kod niezarządzany, za pomocą wywołań międzyoperacyjnych COM lub platformy. Ogólnie rzecz biorąc, system sprawia, że [dane i modelowanie](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) uprawnienia kodu niezarządzanego. To żądanie występuje w czasie wykonywania dla każdego wywołania elementu członkowskiego i sprawdza, czy każdy obiekt wywołujący w stosie wywołań, aby uzyskać uprawnienia. Gdy atrybut nie jest obecny, system sprawia, że [zapotrzebowania na łącza](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) uprawnienia: Jeśli element wywołujący jest kompilowany dokładnie na czas, sprawdzane są uprawnienia bezpośredniego obiektu wywołującego.
 
  Atrybut ten jest używany głównie w celu zwiększenia wydajności; jednak wzrost wydajności powoduje znaczące zagrożenia dla bezpieczeństwa. Jeśli umieścisz ten atrybut na publiczne elementy członkowskie, które wywołują metody natywnej obiektów wywołujących w stosie wywołań (inne niż bezpośredniego obiektu wywołującego) nie ma potrzeby kodu niezarządzanego uprawnienia do wykonywania kodu niezarządzanego. W zależności od członka publicznego działania i obsługi danych wejściowych jego Zezwalaj na niezaufane wywołań do dostępu do funkcjonalności zazwyczaj ograniczone do zaufanego kodu.
 
@@ -72,4 +72,4 @@ ms.locfileid: "60059178"
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Wytyczne dotyczące bezpiecznego programowania](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [optymalizacje zabezpieczeń](http://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [dane i modelowanie](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [Link żądania](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Wytyczne dotyczące bezpiecznego programowania](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [optymalizacje zabezpieczeń](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [dane i modelowanie](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [Link żądania](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

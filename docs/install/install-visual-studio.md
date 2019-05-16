@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ec34dc0f4f2794f853b8e70670d4d3f59e7bae3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974945"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692323"
 ---
 # <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
@@ -203,7 +203,7 @@ Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacy
 
 Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z poziomu wiersza polecenia. Na przykład, możesz wymusić Instalatora Aby uruchomić w języku angielskim, za pomocą następującego polecenia: `vs_installer.exe --locale en-US`. Instalator zapamięta to ustawienie po jej uruchomieniu następnym razem. Instalator obsługuje następujące generatory kodów języka: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru i tr-tr.
 
-## <a name="step-7---change-the-installation-location-optional"></a>Krok 7 — zmiana lokalizacji instalacji (opcjonalnie)
+## <a name="step-7---select-the-installation-location-optional"></a>Krok 7 — wybierz miejsce instalacji (opcjonalnie)
 
 ::: moniker range="vs-2017"
 
@@ -217,7 +217,7 @@ Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z
 
 Możliwe jest zmniejszenie miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
-  ![Visual Studio 2019 - Zmień lokalizacje instalacji](media/vs-2019/vs-installer-installation-locations.png "zmiana lokalizacji instalacji")
+  ![Visual Studio 2019 - lokalizacje instalacji wybierz](media/vs-2019/vs-installer-installation-locations.png "wybierz miejsce instalacji")
 
 ::: moniker-end
 

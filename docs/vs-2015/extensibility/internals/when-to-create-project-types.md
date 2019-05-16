@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061713"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687701"
 ---
 # <a name="when-to-create-project-types"></a>Kiedy należy tworzyć typy projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Tworzenie nowych typów projektów stanowi podstawę do dostosowywania [!INCLUDE
 |Zadanie|Opis|  
 |----------|-----------------|  
 |Obsługa poleceń|Dowolnego pakietu VSPackage może obsługiwać poleceń.|  
-|Tworzenie edytora|Można zarejestrować edytorach niestandardowych. Aby uzyskać więcej informacji, zobacz [Windows dokumentu i edytory](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Tworzenie edytora|Można zarejestrować edytorach niestandardowych. Aby uzyskać więcej informacji, zobacz [Windows dokumentu i edytory](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Będącej właścicielem systemu windows|Bez dodawania nowych typów projektów, można utworzyć okna dokumentów i narzędzi.|  
 |Uwidacznianie właściwości w oknie dialogowym właściwości|Wszystkie obiekty można ujawnić właściwości.|  
   
@@ -60,6 +60,6 @@ Tworzenie nowych typów projektów stanowi podstawę do dostosowywania [!INCLUDE
  Podtypy projektów można użyć w celu rozszerzania typu zarządzanego projektu bez konieczności tworzenia nowego typu projektu. Podtypy projektów użycia agregacji COM, aby rozszerzyć projektów zarządzanych, napisane w firmie Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] lub [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Za pomocą agregacji COM można ponownie użyć większość implementacji systemu zarządzanego projektu i nadal dostosować do danego scenariusza za pomocą agregacji i umożliwia korzystanie z obsługi interfejsów. Aby uzyskać więcej informacji na temat podtypy projektów, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Windows dokumentu i edytory](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Windows dokumentu i edytory](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Hierarchie w programie Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

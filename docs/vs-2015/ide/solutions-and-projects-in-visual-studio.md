@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679878"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Podczas tworzenia aplikacji, aplikacji, witryny sieci Web, aplikacji sieci Web s
  Można również utworzyć niestandardowe szablony projektów i elementów. Aby uzyskać więcej informacji, zobacz [tworzenie projektów i szablonów elementów](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Tworzenie nowych projektów
- Najprostszym sposobem utworzenia nowego projektu jest uruchomienie przy użyciu szablonu projektu wstępnie zdefiniowane, co składa się z podstawowego zestawu wstępnie wygenerowanego kodu pliki, pliki konfiguracji, zasobów, i ustawienia, które ułatwiają pracę, tworzenia określonego typu aplikacji lub witryny sieci Web w języków programowania. Te szablony są, zostanie wyświetlony w **okna dialogowego Nowy projekt** po wybraniu **pliku &#124; New &#124; projektu** lub **pliku &#124; New &#124; witryny sieci Web** z menu głównego, a następnie przejdź. Aby uzyskać więcej informacji, zobacz [tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md) i [NIB tworzenie projektów z szablonów](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Najprostszym sposobem utworzenia nowego projektu jest uruchomienie przy użyciu szablonu projektu wstępnie zdefiniowane, co składa się z podstawowego zestawu wstępnie wygenerowanego kodu pliki, pliki konfiguracji, zasobów, i ustawienia, które ułatwiają pracę, tworzenia określonego typu aplikacji lub witryny sieci Web w języków programowania. Te szablony są, zostanie wyświetlony w **okna dialogowego Nowy projekt** po wybraniu **pliku &#124; New &#124; projektu** lub **pliku &#124; New &#124; witryny sieci Web** z menu głównego, a następnie przejdź. Aby uzyskać więcej informacji, zobacz [tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md) i [NIB tworzenie projektów z szablonów](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Zarządzanie projektami w Eksploratorze rozwiązań
  Po utworzeniu nowego projektu, należy użyć **Eksploratora rozwiązań** do przeglądania i zarządzania projektów i rozwiązań i ich skojarzonych elementów. Poniższa ilustracja przedstawia Eksploratora serwera za pomocą rozwiązań języka C#, która zawiera dwa projekty.

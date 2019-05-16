@@ -19,17 +19,17 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: caa267aa44a72d180195a30b41fa7a2c03033bdf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 712d0de957ff7f780567c927fb1b18b100f8f6ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668408"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703519"
 ---
 # <a name="generateresource-task"></a>GenerateResource — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wykonuje konwersję między txt i pliki resx (w formacie zasobów opartych na języku XML) i common language runtime binarnych plików Resources, które mogą być osadzone w wykonywalnym pliku danych binarnych środowiska uruchomieniowego lub skompilowane do zestawów satelickich. To zadanie jest zazwyczaj używany w konwersji plików txt lub resx na pliki .resource. `GenerateResource` Zadanie jest podobne do [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
+Wykonuje konwersję między txt i pliki resx (w formacie zasobów opartych na języku XML) i common language runtime binarnych plików Resources, które mogą być osadzone w wykonywalnym pliku danych binarnych środowiska uruchomieniowego lub skompilowane do zestawów satelickich. To zadanie jest zazwyczaj używany w konwersji plików txt lub resx na pliki .resource. `GenerateResource` Zadanie jest podobne do [resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry `GenerateResource` zadania.  

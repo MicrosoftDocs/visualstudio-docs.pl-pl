@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681387"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refaktoryzacja hermetyzowania pola (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Hermetyzuj pole** operacja refaktoryzacji pozwala na szybkie tworzenie właściwości z istniejącego pola, a następnie bezproblemowo zaktualizować swój kod z odwołaniami do nowej właściwości.  
   
- Gdy [pola](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) jest [publicznych](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), inne obiekty mają bezpośredniego dostępu do tego pola i można ją zmodyfikować, niewykrytych przez obiekt, który jest właścicielem tego pola. Za pomocą [właściwości](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) do hermetyzacji tego pola, można uniemożliwić bezpośredni dostęp do pola.  
+ Gdy [pola](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) jest [publicznych](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), inne obiekty mają bezpośredniego dostępu do tego pola i można ją zmodyfikować, niewykrytych przez obiekt, który jest właścicielem tego pola. Za pomocą [właściwości](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) do hermetyzacji tego pola, można uniemożliwić bezpośredni dostęp do pola.  
   
- Aby utworzyć nową właściwość **Hermetyzuj pole** operacji zmienia modyfikator dostępu dla pola, które mają być hermetyzacji do [prywatnej](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8), a następnie generuje [Pobierz](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)i [ustaw](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) metody dostępu dla tego pola. W niektórych przypadkach tylko `get` metody dostępu jest generowany, np. gdy pole jest zadeklarowany jako tylko do odczytu.  
+ Aby utworzyć nową właściwość **Hermetyzuj pole** operacji zmienia modyfikator dostępu dla pola, które mają być hermetyzacji do [prywatnej](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8), a następnie generuje [Pobierz](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)i [ustaw](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) metody dostępu dla tego pola. W niektórych przypadkach tylko `get` metody dostępu jest generowany, np. gdy pole jest zadeklarowany jako tylko do odczytu.  
   
  Aparat refaktoryzacji aktualizacji kodu z odwołaniami do nowej właściwości w obszarach, określone w **aktualizacji odwołania** części **Hermetyzuj pole** okno dialogowe.  
   

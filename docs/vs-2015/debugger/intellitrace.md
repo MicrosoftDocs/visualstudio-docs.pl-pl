@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ea7378e72d970bf53470b4434222aa4a1a4d9a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440145"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690521"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +48,8 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
   
 |||  
 |-|-|  
-|**Debuguj aplikację przy użyciu funkcji IntelliTrace:**<br /><br /> — Pokaż poprzednie zdarzenia.<br />— Pokaż informacje wywołań w przeszłych zdarzeń.<br />-Zapisz sesję IntelliTrace.<br />-Control IntelliTrace zbiera dane.|-   [Wskazówki: Używanie funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Konfigurowanie funkcji IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Debugowanie historyczne](../debugger/historical-debugging.md)|  
-|**Zbieraj dane IntelliTrace podczas sesji testowej w programie Test Manager**|-   [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+|**Debuguj aplikację przy użyciu funkcji IntelliTrace:**<br /><br /> — Pokaż poprzednie zdarzenia.<br />— Pokaż informacje wywołań w przeszłych zdarzeń.<br />-Zapisz sesję IntelliTrace.<br />-Control IntelliTrace zbiera dane.|-   [Wskazówki: Używanie funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Konfigurowanie funkcji IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Debugowanie historyczne](../debugger/historical-debugging.md)|  
+|**Zbieraj dane IntelliTrace podczas sesji testowej w programie Test Manager**|-   [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|-   [Przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Uruchom debugowanie z pliku dziennika IntelliTrace (plik itrace).**|-   [Przy użyciu zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -57,7 +57,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
   
 |||  
 |-|-|  
-|**Obsługiwane**|— W przypadku aplikacji w języku Visual Basic i Visual C#, które używają .NET Framework 2.0 lub nowszych wersji.<br />     Możesz debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i aplikacje 64-bitowe.<br />     Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [instruktażu: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Aby debugować aplikacje Microsoft Azure za pomocą IntelliTrace, zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Obsługiwane**|— W przypadku aplikacji w języku Visual Basic i Visual C#, które używają .NET Framework 2.0 lub nowszych wersji.<br />     Możesz debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i aplikacje 64-bitowe.<br />     Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [instruktażu: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Aby debugować aplikacje Microsoft Azure za pomocą IntelliTrace, zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Ograniczona obsługa**|- F# aplikacje na zasadach eksperymentalnych<br />-Windows Store apps obsługiwane tylko pod kątem zdarzeń|  
 |**Nieobsługiwane**|-C++, inne języki i skryptu<br />— Usługi Windows, Silverlight, Xbox lub [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplikacji|  
   
@@ -77,7 +77,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
   
 - Sesji testowej w programie Microsoft Test Manager  
   
-- Aplikacje internetowe ASP.NET hostowane w usłudze IIS lub aplikacje SharePoint 2010 i SharePoint 2013 działające we wdrożeniu, gdy używasz programu Microsoft Monitoring Agent samodzielnie lub w połączeniu z programem System Center 2012. Zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
+- Aplikacje internetowe ASP.NET hostowane w usłudze IIS lub aplikacje SharePoint 2010 i SharePoint 2013 działające we wdrożeniu, gdy używasz programu Microsoft Monitoring Agent samodzielnie lub w połączeniu z programem System Center 2012. Zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).  
   
   Oto kilka przykładów, jak IntelliTrace może pomóc w debugowaniu:  
   
@@ -91,7 +91,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
   
 - Aplikacja przestaje działać na komputerze testowym, ale pomyślnie działa na komputerze deweloperskim.  
   
-   Możesz zbierać dane IntelliTrace z Microsoft Test Manager, zapisać dane w pliku iTrace i dołączyć ten plik do elementu pracy programu Team Foundation Server, aby przeprowadzić późniejszą analizę. Zobacz [zbieranie większej ilości danych podczas wykonywania testów ręcznych](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) i [używanie zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
+   Możesz zbierać dane IntelliTrace z Microsoft Test Manager, zapisać dane w pliku iTrace i dołączyć ten plik do elementu pracy programu Team Foundation Server, aby przeprowadzić późniejszą analizę. Zobacz [zbieranie większej ilości danych podczas wykonywania testów ręcznych](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) i [używanie zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
   
 - Błąd lub awaria ma miejsce we wdrożonej aplikacji.  
   
@@ -104,7 +104,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
 ## <a name="WhatData"></a> Jakie dane są zbierane przez IntelliTrace?  
  **Zbieranie informacji o zdarzeniach**  
   
- Domyślnie IntelliTrace zapisuje tylko zdarzenia funkcji IntelliTrace: debugera, zdarzenia, wyjątki, zdarzenia .NET Framework i inne zdarzenia systemowe, które mogą pomóc w debugowaniu. Możesz wybrać typy zdarzeń IntelliTrace, które mają być zbierane, z wyjątkiem zdarzeń debugera i wyjątków, które są zawsze zbierane. Zobacz [skonfiguruj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Domyślnie IntelliTrace zapisuje tylko zdarzenia funkcji IntelliTrace: debugera, zdarzenia, wyjątki, zdarzenia .NET Framework i inne zdarzenia systemowe, które mogą pomóc w debugowaniu. Możesz wybrać typy zdarzeń IntelliTrace, które mają być zbierane, z wyjątkiem zdarzeń debugera i wyjątków, które są zawsze zbierane. Zobacz [skonfiguruj IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 - **Zdarzenia debugera**  
   
@@ -146,7 +146,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
   
   - [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Przewodnik: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Przewodnik: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Gromadzenie informacji o wywołaniach funkcji**  
   
@@ -163,23 +163,23 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
 > [!NOTE]
 > IntelliTrace zbiera tylko 256 pierwszych obiektów w tablicach i pierwszych 256 znaków w ciągach.  
   
- Zobacz [skonfiguruj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Zobacz [skonfiguruj IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
  **Moduł — zbieranie informacji**  
   
- Aby kontrolować, ile informacji na temat wywołania gromadzi IntelliTrace, określ tylko te moduły, która Cię interesują. Może to zwiększyć wydajność aplikacji podczas zbierania. Zobacz [skonfiguruj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Aby kontrolować, ile informacji na temat wywołania gromadzi IntelliTrace, określ tylko te moduły, która Cię interesują. Może to zwiększyć wydajność aplikacji podczas zbierania. Zobacz [skonfiguruj IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="AffectPerformance"></a> IntelliTrace spowolni moją aplikację?  
  IntelliTrace domyślnie zbiera dane tylko dla wybranych zdarzeń IntelliTrace. To może lub nie może spowolnić aplikację, w zależności od struktury i organizacji kodu. Na przykład jeśli funkcja IntelliTrace często zapisuje zdarzenie, może to spowolnić aplikację. To może również, że możesz rozważenia refaktoryzacji aplikacji.  
   
- Gromadzenie informacji o wywołaniach może znacznie spowolnić pracę aplikacji. Może to również zwiększyć rozmiar wszystkich plików dziennika IntelliTrace (iTrace) zapisywanych na dysku. Aby zminimalizować te skutki, zbieraj informacji o wywołaniach tylko interesujących Cię modułów.  Aby zmienić maksymalny rozmiar plików itrace, przejdź do **narzędzia**, **opcje**, **IntelliTrace**, **zaawansowane**. Zobacz [skonfiguruj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Gromadzenie informacji o wywołaniach może znacznie spowolnić pracę aplikacji. Może to również zwiększyć rozmiar wszystkich plików dziennika IntelliTrace (iTrace) zapisywanych na dysku. Aby zminimalizować te skutki, zbieraj informacji o wywołaniach tylko interesujących Cię modułów.  Aby zmienić maksymalny rozmiar plików itrace, przejdź do **narzędzia**, **opcje**, **IntelliTrace**, **zaawansowane**. Zobacz [skonfiguruj IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Funkcje IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Konfigurowanie funkcji IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
+ [Konfigurowanie funkcji IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
- [Dołączanie danych diagnostycznych śledzenia z usterkami trudnymi do odtworzenia](http://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
+ [Dołączanie danych diagnostycznych śledzenia z usterkami trudnymi do odtworzenia](https://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
  [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)  
   

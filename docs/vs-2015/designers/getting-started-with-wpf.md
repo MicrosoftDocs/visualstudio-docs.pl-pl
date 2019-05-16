@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a0137fd1eda8613d332cb07df0d87df97ff9a51a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2d314455b8b392c4e2f830101dae76c40e2865
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776380"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704436"
 ---
 # <a name="getting-started-with-wpf"></a>Wprowadzenie do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Windows Presentation Foundation (WPF) to struktura interfejsu użytkownika, któ
   
 |||  
 |-|-|  
-|Chcę, aby przejść bezpośrednio...|[Przewodnik: Mój pierwszy aplikacji klasycznej WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [Przewodnik: Tworzenie aplikacji WPF pulpitu podłączone do usługi mobilnej Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|  
+|Chcę, aby przejść bezpośrednio...|[Przewodnik: moja pierwsza aplikacja klasyczna WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [Przewodnik: tworzenie aplikacji klasycznej WPF podłączonej do usługi mobilnej platformy Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|  
 |Jak projektowanie interfejsu użytkownika aplikacji?|[Projektowanie XAML w programach Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)|  
-|Jesteś nowym użytkownikiem platformy .NET?|[Omówienie programu .NET Framework](https://msdn.microsoft.com/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Podstawy aplikacji](http://msdn.microsoft.com/library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Wprowadzenie do języków Visual C# i Visual Basic](https://msdn.microsoft.com/library/dd492171\(v=vs.140\).aspx)|  
+|Jesteś nowym użytkownikiem platformy .NET?|[Omówienie programu .NET Framework](https://msdn.microsoft.com/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Podstawy aplikacji](https://msdn.microsoft.com/library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Wprowadzenie do języków Visual C# i Visual Basic](https://msdn.microsoft.com/library/dd492171\(v=vs.140\).aspx)|  
 |Więcej informacji o WPF...|[Wprowadzenie do WPF](../designers/introduction-to-wpf.md)<br /><br /> [Przegląd XAML (WPF)](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)<br /><br /> [Kontrolki](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)<br /><br /> [Powiązanie danych — omówienie](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)<br /><br /> [Powiązanie danych WPF za pomocą LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
 |Jesteś deweloperem formularze Windows?|[Kontrolki formularzy Windows Forms i równoważne kontrolki WPF](https://msdn.microsoft.com/library/ms750559\(v=vs.100\).aspx)<br /><br /> [Obsługiwane scenariusze w współdziałanie WPF i Windows Forms](https://msdn.microsoft.com/library/ms751797\(v=vs.100\).aspx)|  
   

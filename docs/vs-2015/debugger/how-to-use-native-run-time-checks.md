@@ -41,17 +41,17 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b50dda3e31e27fa5d177c3b0ba2790babd2a660f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101681"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685858"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Instrukcje: Korzystanie z macierzystego sprawdzania w czasie wykonywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W elemencie wizualnym C++, możesz użyć natywnych [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) do przechwytywania typowych błędów czasu wykonywania, takich jak:  
+W elemencie wizualnym C++, możesz użyć natywnych [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) do przechwytywania typowych błędów czasu wykonywania, takich jak:  
   
 - Uszkodzenie wskaźnika stosu.  
   
@@ -85,5 +85,5 @@ W elemencie wizualnym C++, możesz użyć natywnych [runtime_checks](http://msdn
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
- [Sprawdzanie błędów czasu wykonywania](http://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
+ [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
+ [Sprawdzanie błędów czasu wykonywania](https://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)

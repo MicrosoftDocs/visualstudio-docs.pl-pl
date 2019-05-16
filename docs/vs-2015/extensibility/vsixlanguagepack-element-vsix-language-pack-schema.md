@@ -8,12 +8,12 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7b4ba4e98b8b2d42485a7594d5bab658e1bd6ccb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a429a97c25f9c0215f17b024d34fece20d1d8f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422490"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690707"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Element VSIXLanguagePack (schemat VSIX Language Pack)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,4 +73,4 @@ Wymagana. Zawiera element główny pakietu językowego VSIX. Pakietu językowego
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)   
- [Odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Odwołanie do schematu 1.0 rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

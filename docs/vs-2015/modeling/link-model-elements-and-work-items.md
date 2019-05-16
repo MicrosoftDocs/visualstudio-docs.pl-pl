@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7aca98a97919a741f43c3c746d96fc8e89cb9ea6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440961"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674206"
 ---
 # <a name="link-model-elements-and-work-items"></a>Łączenie elementów modeli i elementów roboczych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ ms.locfileid: "63440961"
 1. W **Team Explorer**, upewnij się, że nawiązano do projektu zespołowego, gdzie elementy modelu są połączone z elementem roboczym.  
   
     > [!NOTE]
-    > Do wyświetlania elementów modelu połączonego można używać tylko programu Team Explorer, a nie Team Web Access. Upewnij się, że obszar roboczy jest mapowany do projektu modelowania, zawierającego elementy lub diagramy modelowania. Jeśli nie masz obszaru roboczego, należy go utworzyć. Zobacz [Rozwiązywanie problemów](#Troubleshooting) i [tworzenie i Praca z obszarami roboczymi](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Do wyświetlania elementów modelu połączonego można używać tylko programu Team Explorer, a nie Team Web Access. Upewnij się, że obszar roboczy jest mapowany do projektu modelowania, zawierającego elementy lub diagramy modelowania. Jeśli nie masz obszaru roboczego, należy go utworzyć. Zobacz [Rozwiązywanie problemów](#Troubleshooting) i [tworzenie i Praca z obszarami roboczymi](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Otwórz element roboczy, wybierz polecenie **łącza**. W obszarze **łącze modelu**, otwórz menu skrótów dla połączonego elementu modelu. Wybierz **Otwórz połączony element**.  
   
@@ -168,7 +168,7 @@ ms.locfileid: "63440961"
   
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|  
 |---------------|------------------------|--------------------|  
-|Nie można odnaleźć elementu modelu, który chcesz połączyć.|Element może znajdować się na diagramie w projekcie modelowania, który znajduje się w [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Możliwe, że nie masz obszaru roboczego, który jest mapowany do diagramu.|Zmapuj obszar roboczy projektu modelowania i diagram. Jeśli nie masz obszaru roboczego, należy go utworzyć.<br /><br /> Komunikat o błędzie wyświetlany dla tego problemu zawiera ścieżkę, która służy do mapowania obszaru roboczego.<br /><br /> Zobacz [tworzenie i Praca z obszarami roboczymi](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|Nie można odnaleźć elementu modelu, który chcesz połączyć.|Element może znajdować się na diagramie w projekcie modelowania, który znajduje się w [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Możliwe, że nie masz obszaru roboczego, który jest mapowany do diagramu.|Zmapuj obszar roboczy projektu modelowania i diagram. Jeśli nie masz obszaru roboczego, należy go utworzyć.<br /><br /> Komunikat o błędzie wyświetlany dla tego problemu zawiera ścieżkę, która służy do mapowania obszaru roboczego.<br /><br /> Zobacz [tworzenie i Praca z obszarami roboczymi](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |Nie można odnaleźć połączonego elementu modelu.|Połączony element może znajdować się na diagramie, który został przeniesiony, zmieniony lub usunięty.|1.  W elemencie roboczym usuń łącze do elementu modelu.<br />2.  Utwórz nowe łącze od elementu roboczego do elementu modelu.|  
 |Element roboczy nie pokazuje oczekiwanych, połączonych elementów modelu.|Element roboczy pokazuje element warstwy połączonej, tylko jeśli łącze zostało utworzone z elementu roboczego. Jeśli Twój zespół nie używa [!INCLUDE[esprscc](../includes/esprscc-md.md)], ścieżki lokalne diagramów będą służyć do tworzenia linków. Jeśli projekt modelowania i jego diagramy są w [!INCLUDE[esprscc](../includes/esprscc-md.md)], wszyscy członkowie zespołu mający dostęp do projektu mogą wyświetlić połączone elementy w elementach roboczych.|Spróbuj odświeżyć element roboczy.|  
 |Usuwanie łącza do elementu modelu z elementu roboczego nie spowodowało usunięcia łącza od elementu modelu do elementu roboczego.||Usuń łącze do elementu roboczego, zaczynając od elementu modelu.|  
