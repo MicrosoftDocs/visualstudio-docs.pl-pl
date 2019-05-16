@@ -74,7 +74,7 @@ Po zatrzymaniu w punkcie przerwania, możesz mieć różne sposoby, aby przejś�
 | **Wyjdź** | **SHIFT**+**F11** | Uruchamia kod aż do zakończenia bieżącej funkcji, a następnie kroki do instrukcji wywołujące.  To polecenie jest przydatne, gdy nie jest konieczne do debugowania w pozostałej części bieżącej funkcji. |
 | **Uruchom do kursora** | **CTRL**+**F10** | Uruchamia kod do lokalizacji karetki w edytorze. To polecenie umożliwia łatwe pominąć segment kodu, który nie jest potrzebny do debugowania. |
 | **Ustaw następną instrukcję** | **CTRL**+**Shift**+**F10** | Zmienia bieżący przebieg punktów w kodzie do lokalizacji karetki. To polecenie umożliwia pominięcie segmentu kodu są uruchamiane, takie jak, gdy wiesz kod jest uszkodzony lub tworzy niechciane efekt uboczny. |
-| **Pokaż następną instrukcję** | **ALT**+**Num****&#42;**| Powrót do następnej instrukcji do uruchomienia. To polecenie jest przydatne, jeśli został wyszukiwanie w kodzie, a nie pamiętasz, gdzie debuger został zatrzymany. |
+| **Pokaż następną instrukcję** | **ALT**+**Num** **&#42;**| Powrót do następnej instrukcji do uruchomienia. To polecenie jest przydatne, jeśli został wyszukiwanie w kodzie, a nie pamiętasz, gdzie debuger został zatrzymany. |
 
 ### <a name="inspect-and-modify-values"></a>Sprawdzanie i modyfikowanie wartości
 
