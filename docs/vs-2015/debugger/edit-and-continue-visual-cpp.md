@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fd223b0a5891bc28cdef18dcd64312812607422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428478"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697383"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ W projektach języka Visual C++ można użyć Edytuj i Kontynuuj. Zobacz [obsłu
   
  Inne ulepszenia Update 1 obejmują okno dialogowe oczekiwania nowe, można anulować, i powiadomienia, gdy plik nie obsługuje funkcji Edytuj i Kontynuuj. Aby uzyskać więcej informacji na temat ulepszenia Update 1, zobacz [usprawnienia w zakresie języka C++, Edytuj i Kontynuuj w Visual Studio 2015 Update 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
   
- [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) opcję kompilatora, która została wprowadzona w Visual Studio 2013 Update 3 dodaje dodatkowe informacje w plikach .pdb (symbol) dla danych binarnych skompilowany bez [/Od (Wyłącz (Debuguj)) ](http://msdn.microsoft.com/library/aafb762y.aspx) opcji.  
+ [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) opcję kompilatora, która została wprowadzona w Visual Studio 2013 Update 3 dodaje dodatkowe informacje w plikach .pdb (symbol) dla danych binarnych skompilowany bez [/Od (Wyłącz (Debuguj)) ](https://msdn.microsoft.com/library/aafb762y.aspx) opcji.  
   
  **/ZO** wyłącza Edytuj i Kontynuuj. Zobacz [jak: Debugowanie zoptymalizowanego kodu](../debugger/how-to-debug-optimized-code.md).  
   
@@ -70,7 +70,7 @@ W projektach języka Visual C++ można użyć Edytuj i Kontynuuj. Zobacz [obsłu
 ## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Jak zresetować punkty wykonywania  
  Niektóre zmiany kodu mogą spowodować punkt wykonywania, aby przejść do nowej lokalizacji, gdy Edytuj i Kontynuuj stosuje te zmiany. Edytuj i Kontynuuj umieszcza punkt wykonania jak to możliwe, ale wyniki mogą być niepoprawne we wszystkich przypadkach.  
   
- W programie Visual C++ okno dialogowe informuje użytkownika, podczas zmiany punktów wykonywania. Należy sprawdzić czy lokalizacja jest poprawna, przed kontynuowaniem debugowania. Jeśli nie jest poprawny, należy użyć **Ustaw następną instrukcję** polecenia. Aby uzyskać więcej informacji, zobacz [Ustaw następną instrukcję do wykonania](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+ W programie Visual C++ okno dialogowe informuje użytkownika, podczas zmiany punktów wykonywania. Należy sprawdzić czy lokalizacja jest poprawna, przed kontynuowaniem debugowania. Jeśli nie jest poprawny, należy użyć **Ustaw następną instrukcję** polecenia. Aby uzyskać więcej informacji, zobacz [Ustaw następną instrukcję do wykonania](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
 ## <a name="BKMK_How_to_work_with_stale_code"></a> Jak pracować z kodem nieodświeżonym  
  W niektórych przypadkach Edytuj i Kontynuuj nie można od razu zastosować zmiany kodu do pliku wykonywalnego, ale można zastosować zmian w kodzie później, jeśli będziesz kontynuować debugowanie. Dzieje się tak w przypadku edycji funkcji wywołującej bieżącą funkcję, lub jeśli dodasz więcej niż 64 bajtów zmiennych nowych funkcji w stosie wywołań  

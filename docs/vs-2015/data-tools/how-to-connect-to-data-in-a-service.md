@@ -22,19 +22,19 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 22a1a991a950ba8e1a7c4c39299616641797630c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386109"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684744"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Instrukcje: Łączenie z danymi w usłudze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Łączenie aplikacji z danymi zwróconymi z usługi, uruchamiając [Kreatora konfiguracji źródła danych](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) i wybierając polecenie **usługi** na **wybierz typ źródła danych**strony.  
+Łączenie aplikacji z danymi zwróconymi z usługi, uruchamiając [Kreatora konfiguracji źródła danych](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) i wybierając polecenie **usługi** na **wybierz typ źródła danych**strony.  
   
- Po zakończeniu działania kreatora, jest dodawany do projektu odwołanie do usługi i jest natychmiast dostępna w [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
+ Po zakończeniu działania kreatora, jest dodawany do projektu odwołanie do usługi i jest natychmiast dostępna w [okna źródeł danych](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 > [!NOTE]
 > Elementy, które pojawiają się w **źródeł danych** okna są zależne od informacji, zwracanemu przez usługę. Niektóre usługi mogą nie dostarczać wystarczających informacji dla **Kreatora konfiguracji źródła danych** do tworzenia obiektów, które można powiązać. Na przykład, jeśli usługa zwraca zestaw danych bez typu, następnie nie widać żadnych elementów w **okna źródeł danych** po ukończeniu kreatora. Jest to spowodowane nietypizowanych zbiorów danych nie zapewniają schematu, dlatego Kreator nie ma wystarczających informacji, aby utworzyć źródło danych.  

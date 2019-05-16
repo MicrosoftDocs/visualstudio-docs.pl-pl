@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a51b4cdb67590b908bc406b78c04ddf0c5aa3e2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444634"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694556"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Instrukcje: Tworzenie biblioteki projektanta działań
 Niestandardowi Projektanci działań umożliwiają tworzenie interfejsu użytkownika dla standardowego lub niestandardowego działania. Kontrolowania złożoności interfejsu użytkownika i mieć możliwość utworzenia więcej niż jeden projektanta działań dla działania. Ten scenariusz umożliwia tworzenie projektantów, które są dostosowane do wielu odbiorców.  
@@ -40,7 +40,7 @@ Niestandardowi Projektanci działań umożliwiają tworzenie interfejsu użytkow
   
 8. Szablon projektu tworzy definicji działania projektanta XAML i kodem pliku implementacji w kodzie źródłowym. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otwiera i wyświetla kanwy dla projektanta działań.  
   
-9. Przeciągnij [!INCLUDE[avalon1](../includes/avalon1-md.md)] kontrolki z **przybornika** do powierzchni projektu, który z nich korzystać w swojej niestandardowego projektanta działań.  Na przykład sposób implementacji niestandardowego projektanta działań zobacz [jak: Tworzenie niestandardowego projektanta działań](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Przeciągnij [!INCLUDE[avalon1](../includes/avalon1-md.md)] kontrolki z **przybornika** do powierzchni projektu, który z nich korzystać w swojej niestandardowego projektanta działań.  Na przykład sposób implementacji niestandardowego projektanta działań zobacz [jak: Tworzenie niestandardowego projektanta działań](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     > Niestandardowi Projektanci działań może służyć do niestandardowych działań, jak również jak w przypadku domyślnej [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]działań.  

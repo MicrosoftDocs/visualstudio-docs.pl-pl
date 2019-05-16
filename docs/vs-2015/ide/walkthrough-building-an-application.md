@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045476"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698362"
 ---
 # <a name="walkthrough-building-an-application"></a>Przewodnik: Tworzenie aplikacji
 
@@ -78,7 +78,7 @@ Użyjesz **rozszerzenia i aktualizacje** okno dialogowe, aby znaleźć i zainsta
 
 ## <a name="BKMK_CreateBuildConfig"></a> Utwórz niestandardową konfigurację kompilacji
 
-Podczas tworzenia rozwiązania Debuguj i zwolnij konfiguracje kompilacji i ich domyślne elementy docelowe platformy są automatycznie definiowane dla rozwiązania. Następnie można dostosować te konfiguracje lub tworzyć własne. Konfiguracje kompilacji określają typ kompilacji. Platformy kompilacji określają system operacyjny do aplikacji jest przeznaczony dla tej konfiguracji. Aby uzyskać więcej informacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md), [ogólne informacje o platformach kompilacji](../ide/understanding-build-platforms.md), i [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+Podczas tworzenia rozwiązania Debuguj i zwolnij konfiguracje kompilacji i ich domyślne elementy docelowe platformy są automatycznie definiowane dla rozwiązania. Następnie można dostosować te konfiguracje lub tworzyć własne. Konfiguracje kompilacji określają typ kompilacji. Platformy kompilacji określają system operacyjny do aplikacji jest przeznaczony dla tej konfiguracji. Aby uzyskać więcej informacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md), [ogólne informacje o platformach kompilacji](../ide/understanding-build-platforms.md), i [konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 Można zmienić lub utworzyć konfigurację i ustawienia platformy za pomocą **programu Configuration Manager** okno dialogowe. W tej procedurze utworzysz konfigurację kompilacji dla badania.
 
@@ -197,9 +197,9 @@ Możesz zmienić ilość informacji dotyczących procesu kompilacji, który poja
 
     Informacja o kompilacji obejmuje czas rozpoczęcia kompilacji (umieszczony na początku), kolejność, w której pliki zostały przetworzone i ilość czasu trwania procesu do ukończenia (znajdujący się na końcu). Informacje te obejmują także składnię rzeczywistą kompilatora działającą w programie Visual Studio podczas kompilacji.
 
-    Na przykład w kompilacji Visual C# [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) opcji wyświetla kod ostrzegawczy 1762, który określono wcześniej w tym temacie, oraz trzy inne ostrzeżenia.
+    Na przykład w kompilacji Visual C# [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) opcji wyświetla kod ostrzegawczy 1762, który określono wcześniej w tym temacie, oraz trzy inne ostrzeżenia.
 
-    W kompilacji Visual Basic [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) nie zawiera określonych ostrzeżeń do wykluczenia, więc żadne ostrzeżenia nie są wyświetlane.
+    W kompilacji Visual Basic [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) nie zawiera określonych ostrzeżeń do wykluczenia, więc żadne ostrzeżenia nie są wyświetlane.
 
    > [!TIP]
    > Możesz przeszukiwać zawartość **dane wyjściowe** okno po wyświetleniu **znaleźć** okno dialogowe, wybierając klawisze Ctrl + F.
@@ -264,6 +264,6 @@ Aby uzyskać więcej informacji, zobacz [jak: Zmiana katalogu wyjściowego kompi
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Przewodnik: Tworzenie projektu (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [Omówienie wstępnej kompilacji projektu aplikacji sieci Web platformy ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
-- [Przewodnik: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Przewodnik: Tworzenie projektu (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [Omówienie wstępnej kompilacji projektu aplikacji sieci Web platformy ASP.NET](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Przewodnik: korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md)

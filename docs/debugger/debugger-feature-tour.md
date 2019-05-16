@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854089"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679762"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debugera programu Visual Studio
 

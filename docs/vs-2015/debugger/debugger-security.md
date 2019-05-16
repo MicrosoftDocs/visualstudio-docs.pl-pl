@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 32fec95757e3baf1b62230457cc048aba38af8c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c1c56b3081f9e74ff9ab864639772c18bd758df6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101642"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686777"
 ---
 # <a name="debugger-security"></a>Zabezpieczenia debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, któr
  Aby uzyskać więcej informacji, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Zabezpieczenia debugowania usług sieci Web  
- Bezpieczniej jest Debuguj lokalnie, ale ponieważ prawdopodobnie nie masz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zainstalowany na serwerze sieci web, debugowanie lokalne może być niepraktyczne. Ogólnie rzecz biorąc debugowanie usług sieci Web jest wykonywane zdalnie, z wyjątkiem podczas tworzenia aplikacji, więc zalecenia dotyczące zdalnego debugowania zabezpieczeń dotyczą również usług sieci Web profilowanie. Poniżej przedstawiono pewne dodatkowe najlepsze rozwiązania. Aby uzyskać więcej informacji, zobacz [debugowanie usług XML sieci Web](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Bezpieczniej jest Debuguj lokalnie, ale ponieważ prawdopodobnie nie masz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zainstalowany na serwerze sieci web, debugowanie lokalne może być niepraktyczne. Ogólnie rzecz biorąc debugowanie usług sieci Web jest wykonywane zdalnie, z wyjątkiem podczas tworzenia aplikacji, więc zalecenia dotyczące zdalnego debugowania zabezpieczeń dotyczą również usług sieci Web profilowanie. Poniżej przedstawiono pewne dodatkowe najlepsze rozwiązania. Aby uzyskać więcej informacji, zobacz [debugowanie usług XML sieci Web](https://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 - Nie należy włączać debugowania na serwerze sieci Web, którego bezpieczeństwo zostało naruszone.  
   

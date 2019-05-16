@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da608c7f937a09d56b25b87625580e5047d560cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431935"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705049"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Narzędzia modelu danych jednostki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ Entity Framework to technologii mapowania obiektowo relacyjny, który umożliwia
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Program Entity Framework na platformie ADO.NET](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Opisuje sposób używania [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] narzędzia, które [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] oferuje do tworzenia aplikacji.|
-|[Model danych jednostki](http://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Zawiera linki i informacje dotyczące pracy z danymi, które jest wykorzystywane przez aplikacje oparte na [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
+|[Program Entity Framework na platformie ADO.NET](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Opisuje sposób używania [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] narzędzia, które [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] oferuje do tworzenia aplikacji.|
+|[Model danych jednostki](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Zawiera linki i informacje dotyczące pracy z danymi, które jest wykorzystywane przez aplikacje oparte na [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
 |[Wprowadzenie do na pełnej platformie .NET (Konsola, WinForms, WPF, itd.)](/ef/ef6/get-started)|Zawiera samouczki na temat tworzenia aplikacji klasycznych .NET, korzystających z programu Entity Framework 7.|
 |[Program ASP.NET 5 aplikację do nowej bazy danych](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|W tym artykule opisano sposób tworzenia nowej aplikacji platformy ASP.NET 5 za pomocą programu Entity Framework 7.|
 

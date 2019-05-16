@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90aa5e77c6541b36619615fc253c55f5d78a6b45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 43feac58c024c0eda8b8930fba05c0c92f7ac6bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445706"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704318"
 ---
 # <a name="hosting-process-vshostexe"></a>Proces hostingu (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Proces hostingu to funkcja w programie Visual Studio, który poprawia wydajnoś�
 > Pliki procesu hostingu (. vshost.exe) są przeznaczone do użytku przez program Visual Studio i nie należy uruchamiać bezpośrednio lub wdrożony z aplikacją.  
   
 ## <a name="improved-debugging-performance"></a>Zwiększona wydajność debugowania  
- Proces hostingu tworzy domenę aplikacji i kojarzy debugera z aplikacją. Wykonywania tych zadań mogą wprowadzać zauważalnego opóźnienia między debugowanie w czasie została uruchomiona i czas aplikacja rozpoczyna wykonywanie. Proces hostingu pomaga zwiększyć wydajność tworzenia domeny aplikacji i kojarzenie debugera w tle i zapisując domeny aplikacji i stan debugera między uruchomieniami aplikacji. Aby uzyskać więcej informacji na temat domen aplikacji, zobacz [domen aplikacji](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  
+ Proces hostingu tworzy domenę aplikacji i kojarzy debugera z aplikacją. Wykonywania tych zadań mogą wprowadzać zauważalnego opóźnienia między debugowanie w czasie została uruchomiona i czas aplikacja rozpoczyna wykonywanie. Proces hostingu pomaga zwiększyć wydajność tworzenia domeny aplikacji i kojarzenie debugera w tle i zapisując domeny aplikacji i stan debugera między uruchomieniami aplikacji. Aby uzyskać więcej informacji na temat domen aplikacji, zobacz [domen aplikacji](https://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  
   
 ## <a name="partial-trust-debugging"></a>Debugowanie w częściowej relacji zaufania  
  Aplikacja może być określony jako częściowo zaufanych aplikacji w [strony zabezpieczeń](../ide/reference/security-page-project-designer.md) z **projektanta projektu**. Debugowanie aplikacji częściowej relacji zaufania wymaga specjalnych inicjowania domeny aplikacji. Ten proces inicjowania jest obsługiwany przez proces hostingu.  
@@ -40,4 +40,4 @@ Proces hostingu to funkcja w programie Visual Studio, który poprawia wydajnoś�
  [Debugowanie i proces hostingu](../debugger/debugging-and-the-hosting-process.md)   
  [Instrukcje: Wyłączanie procesu hostingu](../ide/how-to-disable-the-hosting-process.md)   
  [Okno bezpośrednie](../ide/reference/immediate-window.md)   
- [Domeny aplikacji](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)
+ [Domeny aplikacji](https://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)

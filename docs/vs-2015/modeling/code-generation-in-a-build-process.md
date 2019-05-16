@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 57114789ce9f0505423e8463f90117619bfc717b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687057"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Oznacza to, że nie można uzyskać dostępu do takich elementów, jak nazwy pli
 
 Aby umożliwić wykonywanie zadań kompilacji na komputerze deweloperskim, należy zainstalować [zestawu Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
-Jeśli [serwer kompilacji](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) uruchomienia na komputerze, na którym nie zainstalowano programu Visual Studio, skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp ostatnich numerów wersji "*".
+Jeśli [serwer kompilacji](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) uruchomienia na komputerze, na którym nie zainstalowano programu Visual Studio, skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp ostatnich numerów wersji "*".
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 

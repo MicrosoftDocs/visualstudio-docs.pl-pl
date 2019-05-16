@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: de804cb26eb9c51acc67445e1f1b1c0fdfabab91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834818"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697530"
 ---
 # <a name="publishing-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,8 +98,8 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wła
 |[Przewodnik: Pobieranie zestawów satelickich na żądanie przy użyciu interfejsu API wdrażania ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Opisuje sposób oznaczania zestawy satelickie jako opcjonalną i Pobierz tylko zestaw na komputerze klienckim musi uzyskać bieżące ustawienia kultury.|  
 |[Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|W tym temacie omówiono wdrażanie aplikacji ClickOnce przy użyciu narzędzia .NET Framework.|  
 |[Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymaga ponownego podpisywania i zachowuje informacje o znakowaniu](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|Wyjaśnia, jak wdrożyć aplikację ClickOnce bez ponownego podpisywania manifestów za pomocą narzędzia .NET Framework.|  
-|[NIB: Instrukcje: Optymalizowanie aplikacji dla określonego typu procesora CPU](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Opisano sposób publikowania dla 64-bitowy procesor, zmieniając **Procesora docelowego** lub **platformę docelową** właściwość w projekcie.|  
-|[Przewodnik: Włączanie aplikacji ClickOnce uruchomić przy użyciu wielu wersji programu .NET Framework](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Wyjaśnia, jak umożliwić aplikacji ClickOnce zainstalować i uruchomić przy użyciu wielu wersji programu .NET Framework.|  
+|[NIB: Instrukcje: Optymalizowanie aplikacji dla określonego typu procesora CPU](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Opisano sposób publikowania dla 64-bitowy procesor, zmieniając **Procesora docelowego** lub **platformę docelową** właściwość w projekcie.|  
+|[Przewodnik: Włączanie aplikacji ClickOnce uruchomić przy użyciu wielu wersji programu .NET Framework](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Wyjaśnia, jak umożliwić aplikacji ClickOnce zainstalować i uruchomić przy użyciu wielu wersji programu .NET Framework.|  
 |[Przewodnik: Tworzenie niestandardowego instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Wyjaśnia sposób tworzenia niestandardowego Instalatora, aby zainstalować aplikację ClickOnce.|  
 |[Instrukcje: Publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Zawiera instrukcje krok po kroku, aby rozwiązać błąd, który jest wyświetlany, gdy spróbujesz opublikować aplikację WPF, która ma włączonej funkcji stylów wizualnych.|  
   

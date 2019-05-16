@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 90a7611e0b8895b0ed3540cae861ebafec9ae4bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780682"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698625"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio umożliwia tworzenie wiele rodzajów aplikacji, od prostych sklepu
 
 - Gier i aplikacji intensywnie korzystających z grafiki dla różnych urządzeń Windows, w tym Xbox, za pomocą programu DirectX.
 
-Program Visual Studio domyślnie udostępnia obsługę C#, C i C++, JavaScript, F#i Visual Basic. Program Visual Studio działa i dobrze integruje się z aplikacji innych firm, takich jak Unity za pośrednictwem [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) rozszerzenie i Apache Cordova za pośrednictwem [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Można rozszerzyć Visual Studio samodzielnie, tworząc niestandardowe narzędzia, które wykonywały wyspecjalizowane zadania.
+Program Visual Studio domyślnie udostępnia obsługę C#, C i C++, JavaScript, F#i Visual Basic. Program Visual Studio działa i dobrze integruje się z aplikacji innych firm, takich jak Unity za pośrednictwem [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) rozszerzenie i Apache Cordova za pośrednictwem [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Można rozszerzyć Visual Studio samodzielnie, tworząc niestandardowe narzędzia, które wykonywały wyspecjalizowane zadania.
 
 Jeśli nie znasz programu Visual Studio przed, w opanowaniu podstaw za pomocą naszych [Rozpoczynanie pracy opracowywanie zawartości przy użyciu programu Visual Studio](../ide/get-started-developing-with-visual-studio.md) wskazówki i samouczki.
 
@@ -133,7 +133,7 @@ Jeśli chcesz dowiedzieć się o nowych funkcjach w programie Visual Studio 2015
 
 8. **Przejdź do definicji** menu kontekstowego spowoduje przejście bezpośrednio do miejsca, w którym definiowany jest funkcji lub obiektu. Inne polecenia nawigacji są także dostępne przez kliknięcie prawym przyciskiem myszy w edytorze.
 
-9. Pokrewne narzędzia [przeglądarki obiektów](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)zawierają umożliwia umożliwia sprawdzanie zestawów .NET lub środowiska wykonawczego Windows w systemie, aby zobaczyć ich typy i jakie metody i właściwości zawierają te typy.
+9. Pokrewne narzędzia [przeglądarki obiektów](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)zawierają umożliwia umożliwia sprawdzanie zestawów .NET lub środowiska wykonawczego Windows w systemie, aby zobaczyć ich typy i jakie metody i właściwości zawierają te typy.
 
      ![Obiekt System.Timer w przeglądarce](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -154,7 +154,7 @@ Dane wyjściowe z kompilacji, takie jak komunikaty powodzenia lub błędu są wy
 
  [Bezpośrednim](../ide/reference/immediate-window.md) pozwala na typ w wyrażeniu i natychmiastowe wyświetlenie jego wyniku.
 
- [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) okna rejestruje każde wywołanie metody i innych zdarzeń z uruchomiony .NET program i może ułatwić odnajdywanie, gdy problem pochodzi.
+ [IntelliTrace](https://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) okna rejestruje każde wywołanie metody i innych zdarzeń z uruchomiony .NET program i może ułatwić odnajdywanie, gdy problem pochodzi.
 
  Aby uzyskać więcej informacji, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).
 
@@ -164,10 +164,10 @@ Dane wyjściowe z kompilacji, takie jak komunikaty powodzenia lub błędu są wy
  ![Eksplorator testów jednostkowych](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
 ## <a name="analyzing-code-quality-and-performance"></a>Analizowanie jakości kodu i wydajności
- Visual Studio zawiera zaawansowane narzędzia do analizy statycznej i środowiska uruchomieniowego. Narzędzia do analizy statycznej pomóc w zidentyfikowaniu potencjalnych błędów projektowania, globalizacji, współpracy, wydajności, zabezpieczeń i innych kategorii. Testowanie wydajności lub profilowania, polega na mierzenie sposób działania Twojego programu. Dostęp tych narzędzi z **analizy** menu. Aby uzyskać więcej informacji, zobacz [poprawa jakości za pomocą programu Visual Studio, narzędzia diagnostyczne](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Visual Studio zawiera zaawansowane narzędzia do analizy statycznej i środowiska uruchomieniowego. Narzędzia do analizy statycznej pomóc w zidentyfikowaniu potencjalnych błędów projektowania, globalizacji, współpracy, wydajności, zabezpieczeń i innych kategorii. Testowanie wydajności lub profilowania, polega na mierzenie sposób działania Twojego programu. Dostęp tych narzędzi z **analizy** menu. Aby uzyskać więcej informacji, zobacz [poprawa jakości za pomocą programu Visual Studio, narzędzia diagnostyczne](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>Łączenie z usługami w chmurze i baz danych
- [Eksploratora serwera](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) zasoby zostaną wyświetlone w oknie programu Visual Studio w ramach kont zarządzanych w ramach konta personalizacji (po jednym zalogowaniu przy użyciu), łącznie z wystąpienia programu SQL Server, Azure, usługami Salesforce.com, Office 365 i witryny sieci Web.
+ [Eksploratora serwera](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) zasoby zostaną wyświetlone w oknie programu Visual Studio w ramach kont zarządzanych w ramach konta personalizacji (po jednym zalogowaniu przy użyciu), łącznie z wystąpienia programu SQL Server, Azure, usługami Salesforce.com, Office 365 i witryny sieci Web.
 
  ![Eksplorator serwera](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
@@ -184,7 +184,7 @@ Dane wyjściowe z kompilacji, takie jak komunikaty powodzenia lub błędu są wy
  Architektura i modelowanie narzędzi programu Visual Studio umożliwia projektowanie i modelowanie aplikacji. Te narzędzia ułatwiają wizualizować strukturę kodu, zachowanie i relacje. Możesz tworzyć modele na różnych poziomach szczegółowości w całym cyklu życia aplikacji, jako część procesu opracowywania. Możesz śledzić wymagania, zadania, przypadki testowe, błędy i inne prace związane ze swoimi modelami, łącząc elementy modelu do elementów roboczych serwera Team Foundation Server i plan rozwoju. Aby uzyskać więcej informacji, zobacz [projektowanie i modelowanie aplikacji](../modeling/analyze-and-model-your-architecture.md).
 
 ## <a name="extending-visual-studio-through-the-visual-studio-sdk"></a>Rozszerzanie programu Visual Studio za pomocą programu Visual Studio SDK
- Program Visual Studio jest rozszerzalna platforma. Rozszerzenia programu Visual Studio to narzędzie niestandardowe, która integruje się z IDE. Można dodać rozszerzenia innych firm lub tworzyć własne. Aby uzyskać więcej informacji, zobacz [programowanie rozszerzenia programu Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
+ Program Visual Studio jest rozszerzalna platforma. Rozszerzenia programu Visual Studio to narzędzie niestandardowe, która integruje się z IDE. Można dodać rozszerzenia innych firm lub tworzyć własne. Aby uzyskać więcej informacji, zobacz [programowanie rozszerzenia programu Visual Studio](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
 
  [Dotyczące środowiska użytkownika w usłudze Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md) są niezbędne odwołania dla każdego, kto pisanie rozszerzenia dla programu Visual Studio. Te wytyczne specyficzne dla platformy obejmują informacji na temat projektu okna dialogowego, czcionki, kolory, ikony, typowe formanty oraz inne wzorce interakcji, składające się z nowej funkcji bezproblemowo integrują się z programem Visual Studio.
 
@@ -196,7 +196,7 @@ Dane wyjściowe z kompilacji, takie jak komunikaty powodzenia lub błędu są wy
 |[Instrukcje: Poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Wprowadzenie do programowania w programie Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich](../ide/finding-and-using-visual-studio-extensions.md)|[Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)|[Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)|
-|[Narzędzia profilowania](../profiling/profiling-tools.md)|[Podnoszenie jakości kodu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
+|[Narzędzia profilowania](../profiling/profiling-tools.md)|[Podnoszenie jakości kodu](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
 |[Projektowanie interfejsów użytkownika](../designers/designing-user-interfaces.md)|[Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)|
 |[Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)|[Wdrażanie aplikacji, usług i składników](../deployment/deploying-applications-services-and-components.md)|
 |[Obsługa 64-bitowego środowiska IDE programu Visual Studio](../ide/visual-studio-ide-64-bit-support.md)|[Zabezpieczenia](../ide/security-in-visual-studio.md)|

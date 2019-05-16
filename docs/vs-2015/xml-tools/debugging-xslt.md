@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4ba095b9af87a36a1957ec94496f4445f0ed2bb7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873326"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697036"
 ---
 # <a name="debug-xslt"></a>Debugowanie XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,5 +54,5 @@ Debuger programu Visual Studio umożliwia debugowanie kodu XSLT. Debuger obsług
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Wprowadza debugera programu Visual Studio.  
   
- [Dokumentacja XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [Dokumentacja XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  Oferuje materiały źródłowe dotyczące funkcje i elementy XSLT.

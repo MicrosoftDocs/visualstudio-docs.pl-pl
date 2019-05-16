@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692741"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) służ
   
 |Opcja|Opis|Parametry|Zwracane wartości|  
 |------------|-----------------|----------------|-------------------|  
-|Zapytanie|Zwraca, czy można uruchomić kolekcjonowania.|Brak|0, jeśli kolekcja jest gotowy do uruchomienia.<br /><br /> 1, jeśli kolekcja jest już w toku.<br /><br /> 2, jeśli kolekcja nie jest w toku, ale co najmniej wymaganych [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) sesji jest włączony.|  
+|Zapytanie|Zwraca, czy można uruchomić kolekcjonowania.|Brak|0, jeśli kolekcja jest gotowy do uruchomienia.<br /><br /> 1, jeśli kolekcja jest już w toku.<br /><br /> 2, jeśli kolekcja nie jest w toku, ale co najmniej wymaganych [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) sesji jest włączony.|  
 |Uruchom|Uruchamia określony proces w Wizualizatorze współbieżności.|Ścieżka pliku wykonywalnego.|0, jeśli działanie zakończyło się pomyślnie.<br /><br /> 1, jeśli działanie nie powiodło się, ponieważ nie można uruchomić aplikacji docelowej.<br /><br /> 13, jeśli działanie nie powiodło się, ponieważ CVCollectionCmd ma niewystarczające uprawnienia do zapisu w katalogu określonym produktem wyjściowym.|  
 |Dołącz|Rozpoczyna się Kolekcjonowanie śladu całego systemu; w przeciwnym razie dołącza do procesu, jeśli mapa została określona.|Brak.|0, jeśli załącznika zakończyło się pomyślnie.<br /><br /> 1, jeśli załącznika nie powiodło się, ponieważ określony proces jest nieprawidłowa lub niejednoznaczna.<br /><br /> 13, jeśli załącznika nie powiodło się, ponieważ CVCollectionCmd ma niewystarczające uprawnienia do zapisu w katalogu określonym produktem wyjściowym.|  
 |Odłącz|Zatrzymuje kolekcję.|Brak.|0, jeśli odłączenie zakończyło się pomyślnie.<br /><br /> 1, jeśli odłączenie nie powiodło się, ponieważ kolekcja nie jest obecnie w toku.<br /><br /> 2, jeśli odłączenie nie powiodło się, ponieważ nie można zatrzymać kolekcji.|  

@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3eb0891911e5dacbad2447ba3d141a81286e7dc8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5b1c754255ba0bc659c9b6968ad8ba0dea629ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784152"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702323"
 ---
 # <a name="client-block-hook-functions"></a>Funkcje punktu zaczepienia bloku klienta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ void YourClientDump(void *, size_t)
   
  Innymi słowy, funkcja podłączania powinna obsługiwać **void** wskaźnika na początku bloku alokacji, wraz z **size_t** wpisz wartość wskazującą, rozmiar alokacji i zwracać `void`. Innych niż jego zawartość, zależą od Ciebie.  
   
- Po zainstalowaniu, używając funkcji punktów zaczepienia [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033), będzie ona wywoływana zawsze `_CLIENT_BLOCK` jest zrzucany bloku. Następnie można użyć [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) można pobrać informacji na temat typu lub podtypu zrzut bloków.  
+ Po zainstalowaniu, używając funkcji punktów zaczepienia [_CrtSetDumpClient](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033), będzie ona wywoływana zawsze `_CLIENT_BLOCK` jest zrzucany bloku. Następnie można użyć [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) można pobrać informacji na temat typu lub podtypu zrzut bloków.  
   
  Wskaźnik do funkcji, możesz przekazać do `_CrtSetDumpClient` typu **_crt_dump_client —**, zgodnie z definicją w CRTDBG. GODZ.:  
   
@@ -53,5 +53,5 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie pisanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 Sample](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)   
- [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)
+ [crt_dbg2 Sample](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)   
+ [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)

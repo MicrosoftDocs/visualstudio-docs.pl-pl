@@ -23,18 +23,18 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ea2f40119425cc558b5486a9085b92b05ba81c97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426523"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702680"
 ---
 # <a name="how-to-debug-native-dlls"></a>Instrukcje: Debugowanie natywnych bibliotek DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Podczas debugowania biblioteki DLL, należy uruchomić debugowanie od:  
   
@@ -44,7 +44,7 @@ ms.locfileid: "63426523"
   
 - Projekt umożliwiający utworzenie biblioteki DLL, sam.  
   
-  Jeśli masz projekt umożliwiający utworzenie pliku wykonywalnego, rozpocząć debugowanie z tego projektu. Następnie można otworzyć pliku źródłowego dla biblioteki DLL i ustawiać punkty przerwania w tym pliku, mimo że nie jest częścią projektu użyty do utworzenia pliku wykonywalnego. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Jeśli masz projekt umożliwiający utworzenie pliku wykonywalnego, rozpocząć debugowanie z tego projektu. Następnie można otworzyć pliku źródłowego dla biblioteki DLL i ustawiać punkty przerwania w tym pliku, mimo że nie jest częścią projektu użyty do utworzenia pliku wykonywalnego. Aby uzyskać więcej informacji, zobacz [punktów przerwania](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
   Jeśli uruchomisz debugowanie z projektu, który tworzy bibliotekę DLL, należy określić plik wykonywalny, który chcesz użyć podczas debugowania biblioteki DLL.  
   

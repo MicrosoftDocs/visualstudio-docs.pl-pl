@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445638"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683857"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] patrzy na warunki `PropertyGroup`, `ItemGroup`, `Import`, właściwości i elementy w tym celu.  
   
 ## <a name="additional-build-actions"></a>Dodatkowe akcje kompilacji  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Pozwala zmienić nazwę typu elementu pliku w projekcie z **Build Action** właściwość [właściwości pliku](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, i `None` nazwy typu elementu są zawsze wyświetlane w tym menu, razem z dowolnym innymi nazwami typów elementów już w projekcie. Aby upewnić się, wszystkie nazwy typu elementu niestandardowego są zawsze dostępne w tym menu, można dodać nazwy do typów elementu o nazwie `AvailableItemName`. Na przykład, dodanie następującego elementu do pliku projektu spowoduje dodanie niestandardowego typu `JScript` do tego menu dla wszystkich projektów, które go zaimportują:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Pozwala zmienić nazwę typu elementu pliku w projekcie z **Build Action** właściwość [właściwości pliku](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, i `None` nazwy typu elementu są zawsze wyświetlane w tym menu, razem z dowolnym innymi nazwami typów elementów już w projekcie. Aby upewnić się, wszystkie nazwy typu elementu niestandardowego są zawsze dostępne w tym menu, można dodać nazwy do typów elementu o nazwie `AvailableItemName`. Na przykład, dodanie następującego elementu do pliku projektu spowoduje dodanie niestandardowego typu `JScript` do tego menu dla wszystkich projektów, które go zaimportują:  
   
 ```  
 <ItemGroup>  

@@ -17,12 +17,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ce131e91a6eb4f8f5ed36701d71000763df29b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 915d5a2784ed6135d4083f0ad44c7a86b8969e55
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753844"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680946"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteka obrazów programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,4 +34,4 @@ Bibliotekę obrazów programu Visual Studio zawiera obrazy aplikacji, które poj
  Biblioteka obrazów jest podzielona na pięć kategorii: Typowe elementy, działania, adnotacje, ikony i obiektów. Pliki Readme zawartych w formacie PDF dla wspólnych elementów i typów ikon. Zawierają one informacje o tym, jak prawidłowo używać tych obrazów w swoich aplikacjach.
 
 ## <a name="see-also"></a>Zobacz też
- [Obrazy, mapy bitowe i metapliki](http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)
+ [Obrazy, mapy bitowe i metapliki](https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)

@@ -10,12 +10,12 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 515540eee455fcf22151e336897dd5f586867a82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761935"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700820"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Pola i interfejsy okna właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Model do wyboru ustalić, jakie informacje są wyświetlane w **właściwości**
   
 3. Wywoływanie <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> i przekazanie do niej elementy na wybraną hierarchię `VSHPROPID_BrowseObject` wypełnia parametr <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> obiektu.  
   
-4. Obiekt pochodzi od [interfejsu IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) jest zwracany w przypadku <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> dla żądanego elementu, a środowisko jest zawijany do <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (patrz następny krok). Jeśli wywołanie zakończy się niepowodzeniem, środowiska sprawia, że drugie wywołanie `IVsHierarchy::GetProperty`, przekazanie jej w kontenerze zaznaczenia <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> podać hierarchii element lub elementy.  
+4. Obiekt pochodzi od [interfejsu IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) jest zwracany w przypadku <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> dla żądanego elementu, a środowisko jest zawijany do <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (patrz następny krok). Jeśli wywołanie zakończy się niepowodzeniem, środowiska sprawia, że drugie wywołanie `IVsHierarchy::GetProperty`, przekazanie jej w kontenerze zaznaczenia <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> podać hierarchii element lub elementy.  
   
     Projektu pakietu VSPackage nie powoduje utworzenia <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ponieważ okno dostarczane przez środowisko pakietu VSPackage, który zawiera go (na przykład **Eksploratora rozwiązań**) tworzy <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> w jej imieniu.  
   

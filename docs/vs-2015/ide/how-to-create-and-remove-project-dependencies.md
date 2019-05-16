@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4b039f514c7d43e768becca8532a05fb14785b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680375"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Instrukcje: Tworzenie i usuwanie zależności projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być k
  [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)   
  [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)   
- [NIB jak: Modyfikowanie właściwości projektu i ustawień konfiguracji](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB jak: Modyfikowanie właściwości projektu i ustawień konfiguracji](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

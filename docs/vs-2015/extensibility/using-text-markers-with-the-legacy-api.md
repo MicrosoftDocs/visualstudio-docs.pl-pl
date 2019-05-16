@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695477"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Znaczniki tekstu przy użyciu starszej wersji interfejsu API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Znacznik tekstu jest ruchomy zakres tekstu w buforze, które mogą mieć wpływ 
 |[Instrukcje: tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md)|W tym artykule opisano, jak utworzyć i dodać typ znacznika niestandardowego tekstu do widoku tekstu.|  
 |[Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)|Wyjaśnia, jak dodawać znaczniki tekstu.|  
 |[Wewnątrz edytora podstawowego](../extensibility/inside-the-core-editor.md)|Opisuje funkcje edytora podstawowe i szczegółowe informacje na temat sposobu dostosowywania podstawowy edytor.|  
-|[Funkcje edytora](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|W tym artykule opisano funkcje dostępne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji.|  
+|[Funkcje edytora](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|W tym artykule opisano funkcje dostępne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji.|  
   
 ## <a name="reference"></a>Tematy pomocy  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

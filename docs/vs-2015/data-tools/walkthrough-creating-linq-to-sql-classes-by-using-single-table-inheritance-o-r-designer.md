@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa33d13623e1f7222eb831571d60d25404465dc4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424697"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702978"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "63424697"
     > [!NOTE]
     > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Jest obsługiwane w projektach Visual Basic i C#. Utwórz nowy projekt w jednym z tych języków.  
   
-3. Kliknij przycisk **aplikacja interfejsu Windows Forms** szablonu, a następnie kliknij przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Kliknij przycisk **aplikacja interfejsu Windows Forms** szablonu, a następnie kliknij przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
 4. Projekt InheritanceWalkthrough zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -188,8 +188,8 @@ ms.locfileid: "63424697"
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Instrukcje: Dodaj LINQ do klas SQL do projektu (Projektant O-R)](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
- [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [Instrukcje: Dodaj LINQ do klas SQL do projektu (Projektant O-R)](https://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
+ [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [LINQ do SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Instrukcje: Generowanie modelu obiektu w języku Visual Basic lubC#](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
+ [LINQ do SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Instrukcje: Generowanie modelu obiektu w języku Visual Basic lubC#](https://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)

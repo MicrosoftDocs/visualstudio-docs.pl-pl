@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a1d3d9ca1af5e2c96c497e6c677051c587047097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695377"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Instrukcje: Docelowa wersja systemu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63435140"
 W tym dokumencie opisano, jak ukierunkować tworzony projekt na konkretną wersję .NET Framework i jak zmienić wersję docelową w istniejących projektach Visual Basic, Visual C# lub Visual F#.  
   
 > [!IMPORTANT]
-> Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+> Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie platformy docelowej i zestawu narzędzi platformy](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **W tym temacie**  
   
@@ -62,7 +62,7 @@ W tym dokumencie opisano, jak ukierunkować tworzony projekt na konkretną wersj
      ![Visual Studio Solution Explorer Properties](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    > Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    > Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie platformy docelowej i zestawu narzędzi platformy](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2. W lewej kolumnie okna właściwości wybierz **aplikacji** kartę.  
   
@@ -82,9 +82,9 @@ W tym dokumencie opisano, jak ukierunkować tworzony projekt na konkretną wersj
   
 ## <a name="see-also"></a>Zobacz też  
  [Program Visual Studio Wielowersyjnością kodu – Przegląd](../ide/visual-studio-multi-targeting-overview.md)   
- [.NET framework Wielowersyjność kodu dla projektów sieci Web platformy ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
+ [.NET framework Wielowersyjność kodu dla projektów sieci Web platformy ASP.NET](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Rozwiązywanie problemów z błędami obiektów docelowych w programie .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
  [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
- [Konfigurowanie projektów](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
- [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
+ [Konfigurowanie projektów](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
+ [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c33ae053a605e50aa8d1940fc97f3c0f687b48fa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424580"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695333"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Instrukcje: Wyświetlanie istniejących typów (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Aby wyświetlić istniejący typ i jej elementów członkowskich, należy dodać
    Typy można także wyświetlić w projekcie, przeciągając jeden lub więcej typów z węzła projektu w Widoku klas do diagramu klasy.  
   
 > [!TIP]
-> Jeśli widok klas nie jest otwarty, otwórz widok klas z **widoku** menu. Aby uzyskać więcej informacji dotyczących widoku klas, zobacz [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Jeśli widok klas nie jest otwarty, otwórz widok klas z **widoku** menu. Aby uzyskać więcej informacji dotyczących widoku klas, zobacz [Viewing Classes and Their Members](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Aby wyświetlić typy w lokalizacjach domyślnych na diagramie, zaznacz jeden lub więcej typów w widoku klas kliknij prawym przyciskiem myszy wybrane typy i wybierz **Pokaż Diagram klas**.  
   

@@ -8,17 +8,17 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 44cb171594a6d595652b3c013505927bd82f947e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842953"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685249"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i biblioteka obsługująca kod dla tablic ImmutableArray
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[Platformie kompilatora .NET](https://github.com/dotnet/roslyn) ("Roslyn") pomaga w tworzeniu bibliotek kodu aware. Biblioteka obsługująca kod zawiera funkcje, których można użyć i narzędzi (analizatorów Roslyn), aby ułatwić korzystanie z biblioteki w najlepszy sposób, lub aby uniknąć błędów. W tym temacie dowiesz się, jak tworzyć Roslyn rzeczywistych analizator catch typowych błędów, korzystając z [NIB: Kolekcje niezmienialne](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) pakietu NuGet. W przykładzie pokazano również sposób udostępniania poprawki kodu dla kodu problemu wykrytego przez analizator. Użytkownicy widzą poprawki kodu w Visual Studio żarówki interfejsu użytkownika i automatycznie stosować poprawki dla kodu.
+[Platformie kompilatora .NET](https://github.com/dotnet/roslyn) ("Roslyn") pomaga w tworzeniu bibliotek kodu aware. Biblioteka obsługująca kod zawiera funkcje, których można użyć i narzędzi (analizatorów Roslyn), aby ułatwić korzystanie z biblioteki w najlepszy sposób, lub aby uniknąć błędów. W tym temacie dowiesz się, jak tworzyć Roslyn rzeczywistych analizator catch typowych błędów, korzystając z [NIB: Kolekcje niezmienialne](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) pakietu NuGet. W przykładzie pokazano również sposób udostępniania poprawki kodu dla kodu problemu wykrytego przez analizator. Użytkownicy widzą poprawki kodu w Visual Studio żarówki interfejsu użytkownika i automatycznie stosować poprawki dla kodu.
 
 ## <a name="getting-started"></a>Wprowadzenie
 Potrzebne są następujące polecenie, aby skompilować ten przykład:

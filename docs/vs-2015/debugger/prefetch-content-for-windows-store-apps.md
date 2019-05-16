@@ -14,19 +14,19 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04842202e8534c551212d7322ab74e9b0ace5848
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4e0d9c73277a913a7539ab5eeed4cca738d9bd5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446183"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700759"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Zawartość pobrana z wyprzedzeniem dla aplikacji Sklepu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
- Aby zapewnić zwiększyć szybkość reakcji aplikacji Windows Store, możesz poprosić o Windows do wstępnego ładowania niektórych zawartości sieci web, takich jak strony sieci web lub obrazów do aplikacji [WinINet](http://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)pamięci podręcznej. Ta funkcja jest wywoływana, trwa pobieranie z wyprzedzeniem. Jest szczególnie efektywna, dla zawartości, która jest używana podczas uruchamiania, ale użytkownik może zawartość pobrana z wyprzedzeniem inne często używane, za. Metody [Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) klasy umożliwiają określenie identyfikatorów URI zawartości, którą chcesz wstępnego ładowania. Zobacz zestaw SDK Windows [przykładowej zawartości pobierania z wyprzedzeniem](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) przykładów dotyczących sposobów dodać funkcje ContentPrefetcher do aplikacji.  
+ Aby zapewnić zwiększyć szybkość reakcji aplikacji Windows Store, możesz poprosić o Windows do wstępnego ładowania niektórych zawartości sieci web, takich jak strony sieci web lub obrazów do aplikacji [WinINet](https://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](https://msdn.microsoft.com/library/aa383630.aspx)pamięci podręcznej. Ta funkcja jest wywoływana, trwa pobieranie z wyprzedzeniem. Jest szczególnie efektywna, dla zawartości, która jest używana podczas uruchamiania, ale użytkownik może zawartość pobrana z wyprzedzeniem inne często używane, za. Metody [Windows.Networking.BackgroundTransfer.ContentPrefetcher](https://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) klasy umożliwiają określenie identyfikatorów URI zawartości, którą chcesz wstępnego ładowania. Zobacz zestaw SDK Windows [przykładowej zawartości pobierania z wyprzedzeniem](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) przykładów dotyczących sposobów dodać funkcje ContentPrefetcher do aplikacji.  
   
  Windows korzysta z algorytmów heurystycznych, aby określić, gdy, a pobieranie z wyprzedzeniem powinny być wykonywane i jakie zasoby zostaną pobrane. Algorytm heurystyczny uwzględniać konto system sieci i stan zasilania, Historia użycia aplikacji użytkownika oraz liczbę prób wcześniejszego pobierania z wyprzedzeniem. W programie Visual Studio, można użyć **wyzwalacza Windows Store App pobieranie z wyprzedzeniem** polecenie, aby wymusić Windows umożliwia zignorowanie Algorytm heurystyczny ContentPrefetcher i wstępnego ładowania całą zawartość określona witryna sieci web. Może to być przydatne, jeśli chcesz, aby przetestować zachowanie aplikacji lub wydajność dzięki zawartość pobrana z wyprzedzeniem w znanym stanie (załadowane lub nie załadowano).  
   

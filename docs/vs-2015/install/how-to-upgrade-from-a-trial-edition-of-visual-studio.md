@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433029"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696207"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Instrukcje: Uaktualnienie z wersji próbnej programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ Wstępna wersja programu Visual Studio możesz ocenić 14 dni bez rejestracji pr
     > Dostęp do Internetu jest wymagany, aby zarejestrować i odblokować dowolną wersję programu Visual Studio. Po zarejestrowaniu programu Visual Studio połączenie z Internetem jest opcjonalne.
 
 ## <a name="see-also"></a>Zobacz też
- [Zainstaluj program Visual Studio](../install/install-visual-studio-2015.md) [logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md) [jak: Znajdź klucz produktu programu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Locate or Change the Product Key for Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Zainstaluj program Visual Studio](../install/install-visual-studio-2015.md) [logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md) [jak: Znajdź klucz produktu programu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Locate or Change the Product Key for Team Foundation Server](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

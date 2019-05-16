@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fb5fb56a011355abb991d6e8da122461045af2b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77cf26d9746336a614b36d7dcd443b841afa06f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699762"
 ---
 # <a name="marks-view"></a>Widok znaczników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Widok znaczników wyświetla próbki i zdarzenie ETW, które zostały wstawione 
   
 ## <a name="see-also"></a>Zobacz też  
  [Przegląd raportu wydajności](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > jak: Konfigurowanie znaczników profilowania](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > jak: Wstaw znaczniki w pliku danych Profiler](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [< PAVE_OVER > jak: Konfigurowanie znaczników profilowania](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [< PAVE_OVER > jak: Wstaw znaczniki w pliku danych Profiler](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
  [Instrukcje: Zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; okno Kontrola zbierania danych](http://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+ [&#91;NIB&#93; okno Kontrola zbierania danych](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

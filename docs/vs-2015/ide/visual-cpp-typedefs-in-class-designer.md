@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234b4252edc587ef52db57d3ec18eb98bb6b849b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fbf945459b0f0e2be041373da1db1cc419f776ed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778620"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674109"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definicje typów Visual C++ w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ typedef class coord
 };  
 ```  
   
- Aby uzyskać więcej informacji o korzystaniu z `typedef` typu, zobacz [specyfikator typedef (NOTINBUILD)](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
+ Aby uzyskać więcej informacji o korzystaniu z `typedef` typu, zobacz [specyfikator typedef (NOTINBUILD)](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
   
  Kształt typu C++ ma kształt z typem określonym w definicji typu. Na przykład, jeśli źródło deklaruje `typedef class`, kształt ma zaokrąglone rogi i etykiety **klasy**. Aby uzyskać `typedef struct`, kształt ma ostre rogi i etykieta **struktury**.  
   
@@ -64,7 +64,7 @@ typedef class coord
   
  *Nazwa* : *typu*  
   
-  — klasa typedef  
+ — klasa typedef  
   
  Rysuje linię skojarzenia nawiązywania połączenia z typu *nazwa*, jeśli to możliwe.  
   
@@ -72,7 +72,7 @@ typedef class coord
   
  `func: void (*)(int)`  
   
-  — klasa typedef  
+ — klasa typedef  
   
  Element TypeDef dla wskaźników funkcji. Linia skojarzenia, nie jest rysowane.  
   
@@ -87,7 +87,7 @@ class A {
   
  `MyInt: int`  
   
-  — klasa typedef  
+ — klasa typedef  
   
  `A`  
   
@@ -105,7 +105,7 @@ class A {
   
  `MyB : B`  
   
-  — klasa typedef  
+ — klasa typedef  
   
  Kliknij prawym przyciskiem myszy kształt typu, a następnie klikając polecenie **Pokaż jako skojarzenie** Wyświetla element typedef lub klasy i **Alias** linię łączącą dwa kształty, które (podobnie jak linia skojarzenia).  
   
@@ -115,7 +115,7 @@ class A {
   
  `MyBar : Bar`  
   
-  — klasa typedef  
+ — klasa typedef  
   
  Wartość taka sama jak powyżej.  
   
@@ -134,7 +134,7 @@ class A {
   
  `MyB : B`  
   
-  — klasa typedef  
+ — klasa typedef  
   
  `A`  
   
@@ -156,7 +156,7 @@ class A {
   
  `MyIntVect : vector<int>`  
   
-  — klasa typedef  
+ — klasa typedef  
   
  `class B {};`  
   
@@ -166,7 +166,7 @@ class A {
   
  `MyB : B`  
   
-  — klasa typedef  
+ — klasa typedef  
   
  -> B  
   
@@ -192,7 +192,7 @@ class A {
   
  `MyIntVect : std::vector<int>`  
   
-  — klasa typedef  
+ — klasa typedef  
   
  `MyVect`  
   
@@ -202,4 +202,4 @@ class A {
   
 ## <a name="see-also"></a>Zobacz też  
  [Praca z kodem Visual C++ (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Specyfikator typedef (NOTINBUILD)](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+ [Specyfikator typedef (NOTINBUILD)](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

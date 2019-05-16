@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1eb88a5baa09256aa58d3c62b926047df01b32f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445709"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700991"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Importowanie przestrzeni nazw pozwala na używanie elementów z tej przestrzeni 
 3. W **zaimportowane przestrzenie nazw** listy, zaznacz pole wyboru dla przestrzeni nazw, który chcesz dodać.  
   
     > [!NOTE]
-    > W celu zaimportowania, przestrzeń nazw musi być w składnika. Przestrzeń nazw nie ma na liście, należy dodać odwołanie do składnika, który go zawiera. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    > W celu zaimportowania, przestrzeń nazw musi być w składnika. Przestrzeń nazw nie ma na liście, należy dodać odwołanie do składnika, który go zawiera. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Aby usunąć importowanych przestrzeni nazw  
   

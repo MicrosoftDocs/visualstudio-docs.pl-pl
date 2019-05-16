@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c9b267893bacef8c9126b1a17b4eb444af6a1dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447236"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692889"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|Pobiera flagę wskazującą, czy funkcja zawiera polecenie longjmp (część obsługi wyjątków w stylu języka C).|  
 |[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|Pobiera flagę wskazującą, czy moduł zawiera kodu zarządzanego.|  
 |[IDiaSymbol::get_hasNestedTypes](../../debugger/debug-interface-access/idiasymbol-get-hasnestedtypes.md)|Pobiera flagę wskazującą, czy typ danych zdefiniowany przez użytkownika ma zagnieżdżone definicji typu.|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|Pobiera flagę wskazującą, czy funkcja lub compiland — sprawdzanie zabezpieczeń skompilowany w (za pośrednictwem [/GS (Sprawdzanie zabezpieczeń bufora)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) przełącznika kompilatora).|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|Pobiera flagę wskazującą, czy funkcja lub compiland — sprawdzanie zabezpieczeń skompilowany w (za pośrednictwem [/GS (Sprawdzanie zabezpieczeń bufora)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) przełącznika kompilatora).|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|Pobiera flagę wskazującą, czy funkcja stylu Win32 ze strukturą wyjątków.|  
 |[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|Pobiera flagę wskazującą, czy funkcja zawiera polecenia setjmp.|  
 |[IDiaSymbol::get_indirectVirtualBaseClass](../../debugger/debug-interface-access/idiasymbol-get-indirectvirtualbaseclass.md)|Pobiera flagę wskazującą, czy typ danych zdefiniowany przez użytkownika jest pośredniej wirtualnej klasy bazowej.|  
@@ -117,12 +117,12 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|Pobiera flagę wskazującą, czy moduł został przekonwertowany z wspólny język pośredni (CIL) do kodu macierzystego.|  
 |[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|Pobiera flagę wskazującą, czy elementy typ danych zdefiniowany przez użytkownika są wyrównane do określonych granic.|  
 |[IDiaSymbol::get_isHLSLData](../../debugger/debug-interface-access/idiasymbol-get-ishlsldata.md)|Określa, czy ten symbol reprezentuje dane wysokiej Level Shader Language (HLSL).|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|Pobiera flagę wskazującą, czy moduł został skompilowany przy użyciu [/hotpatch (Utwórz obraz Hotpatchable)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) przełącznika kompilatora.|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|Pobiera flagę wskazującą, czy moduł został skompilowany przy użyciu [/hotpatch (Utwórz obraz Hotpatchable)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) przełącznika kompilatora.|  
 |[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|Pobiera flagę wskazującą, czy zarządzane compiland — został połączony z funkcją LTCG konsolidatora.|  
 |[IDiaSymbol::get_isMatrixRowMajor](../../debugger/debug-interface-access/idiasymbol-get-ismatrixrowmajor.md)|Określa, czy macierzy wiersz głównych.|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|Pobiera flagę wskazującą, czy zarządzane compiland — jest .netmodule (zawierających tylko metadane).|  
 |[IDiaSymbol::get_isMultipleInheritance](../../debugger/debug-interface-access/idiasymbol-get-ismultipleinheritance.md)|Określa, czy `this` wskaźnik wskazuje na element członkowski danych wielokrotne dziedziczenie.|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|Pobiera flagę wskazującą, czy funkcja ["naked"](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) atrybutu.|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|Pobiera flagę wskazującą, czy funkcja ["naked"](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) atrybutu.|  
 |[IDiaSymbol::get_isOptimizedAway](../../debugger/debug-interface-access/idiasymbol-get-isoptimizedaway.md)|Określa, czy zmienna jest w celu optymalizacji.|  
 |[IDiaSymbol::get_isPointerBasedOnSymbolValue](../../debugger/debug-interface-access/idiasymbol-get-ispointerbasedonsymbolvalue.md)|Określa, czy `this` wskaźnik opiera się na wartości symbolu.|  
 |[IDiaSymbol::get_isPointerToDataMember](../../debugger/debug-interface-access/idiasymbol-get-ispointertodatamember.md)|Określa, czy ten symbol jest wskaźnik do składowej danych.|  
@@ -152,8 +152,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_msil](../../debugger/debug-interface-access/idiasymbol-get-msil.md)|Pobiera flagę wskazującą, czy symbol odwołuje się do kodu Microsoft Intermediate Language (MSIL).|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|Pobiera nazwę symbolu.|  
 |[IDiaSymbol::get_nested](../../debugger/debug-interface-access/idiasymbol-get-nested.md)|Pobiera flagę wskazującą, czy jest zagnieżdżony typ danych zdefiniowany przez użytkownika.|  
-|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|Pobiera flagę wskazującą, czy funkcja jest oznaczona za pomocą [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) atrybutu.|  
-|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|Pobiera flagę wskazującą, czy funkcja została zadeklarowana przy użyciu [noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) atrybutu.|  
+|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|Pobiera flagę wskazującą, czy funkcja jest oznaczona za pomocą [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) atrybutu.|  
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|Pobiera flagę wskazującą, czy funkcja została zadeklarowana przy użyciu [noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) atrybutu.|  
 |[IDiaSymbol::get_noStackOrdering](../../debugger/debug-interface-access/idiasymbol-get-nostackordering.md)|Pobiera flagę wskazującą, czy kolejność stosu nie może zostać wykonane w ramach sprawdzania bufora stosu.|  
 |[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|Pobiera flagę wskazującą, czy funkcja lub etykiety, nigdy nie zostanie osiągnięty.|  
 |[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|Zwraca liczbę znaczników wskaźnika akceleratora w funkcji skrótową, C++ AMP.|  

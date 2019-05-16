@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441435"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705869"
 ---
 # <a name="convert-dialog-box"></a>Konwertowanie — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,5 +40,5 @@ ms.locfileid: "63441435"
 2. Wybierz narzędzie, które jest odpowiednie dla twojej aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [NOTINBUILD — jak: Aktualizacja projektu z Visual Basic 6.0](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
+ [NOTINBUILD — jak: Aktualizacja projektu z Visual Basic 6.0](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

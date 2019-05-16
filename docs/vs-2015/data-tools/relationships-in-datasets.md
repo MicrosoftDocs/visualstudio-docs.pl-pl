@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425414"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692530"
 ---
 # <a name="relationships-in-datasets"></a>Relacje w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
  Po utworzeniu <xref:System.Data.DataRelation> obiektu, masz możliwość określenia, czy relacja umożliwia tylko wymuszać ograniczenia — oznacza to, go nie również posłuży do uzyskiwania dostępu do rekordów pokrewnych. Ta opcja umożliwia generowanie zestawu danych jest nieco bardziej efektywne i zawiera metody mniej niż jeden możliwości związane z rekordów. Jednak nie można uzyskać dostęp do powiązanych rekordów. Na przykład relacji tylko do ograniczenia uniemożliwia usunięcie rekordu nadrzędnego, który wciąż ma rekordy podrzędne i nie masz dostępu do rekordów podrzędnych przez nadrzędne.  
   
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Ręczne tworzenie relacji danych w Projektancie obiektów Dataset  
- Podczas tworzenia tabel danych za pomocą narzędzi do projektowania danych w programie Visual Studio, relacje zostaną utworzone automatycznie, jeśli można gromadzić dane ze źródła danych. Jeśli ręcznie dodasz tabel danych z **DataSet** karcie **przybornika**, może być konieczne ręczne tworzenie relacji. Aby uzyskać informacje na temat tworzenia <xref:System.Data.DataRelation> obiektów programowo, zobacz [Dodawanie elementów DataRelation](http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
+ Podczas tworzenia tabel danych za pomocą narzędzi do projektowania danych w programie Visual Studio, relacje zostaną utworzone automatycznie, jeśli można gromadzić dane ze źródła danych. Jeśli ręcznie dodasz tabel danych z **DataSet** karcie **przybornika**, może być konieczne ręczne tworzenie relacji. Aby uzyskać informacje na temat tworzenia <xref:System.Data.DataRelation> obiektów programowo, zobacz [Dodawanie elementów DataRelation](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
   
  Relacje między tabelami danych są wyświetlane jako wiersze w **Projektanta obiektów Dataset**, za pomocą klucza i nieskończoności glif przedstawiające jeden do wielu aspektów relacji. Domyślnie nazwa relationshipCommentEnd Id = "1c8c78e19b7fa441" nie jest wyświetlany na powierzchni projektowej.  
   
@@ -84,7 +84,7 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Można utworzyć relacji między tabelami danych dwa  
   
-1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Przeciągnij **relacji** obiektu z **DataSet** przybornika do tabeli podrzędnej danych w relacji.  
   
@@ -98,9 +98,9 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
   
 6. Wybierz kolumny, które sprzężenia w **kolumn klucza** i **kolumny klucza obcego** listy.  
   
-7. Wybierz, czy chcesz utworzyć relację i/lub ograniczenia. Aby uzyskać informacje, zobacz [wprowadzenie do obiektów DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Wybierz, czy chcesz utworzyć relację i/lub ograniczenia. Aby uzyskać informacje, zobacz [wprowadzenie do obiektów DataRelation](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8. Zaznacz lub wyczyść **zagnieżdżone relacji** pole. Wybranie tej opcji ustawia <xref:System.Data.DataRelation.Nested%2A> właściwości `true`, i sprawia, że element podrzędny wiersze w relacji do być zagnieżdżony w kolumnie nadrzędnej, gdy te wiersze są zapisywane w postaci danych XML lub synchronizowane z <xref:System.Xml.XmlDataDocument>. Aby uzyskać więcej informacji, zobacz [zagnieżdżanie elementów DataRelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Zaznacz lub wyczyść **zagnieżdżone relacji** pole. Wybranie tej opcji ustawia <xref:System.Data.DataRelation.Nested%2A> właściwości `true`, i sprawia, że element podrzędny wiersze w relacji do być zagnieżdżony w kolumnie nadrzędnej, gdy te wiersze są zapisywane w postaci danych XML lub synchronizowane z <xref:System.Xml.XmlDataDocument>. Aby uzyskać więcej informacji, zobacz [zagnieżdżanie elementów DataRelation](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Ustawianie reguł, które mają być egzekwowane, gdy wprowadzasz zmiany do rekordów w tych tabelach. Aby uzyskać więcej informacji, zobacz <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Aby wyświetlić nazwy relacji w Projektancie obiektów Dataset  
   
-1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Z **danych** menu, wybierz opcję **Pokaż etykiety relacji** polecenie, aby wyświetlić nazwę relacji. Usuń zaznaczenie tego polecenia, aby ukryć nazwę relacji.

@@ -23,21 +23,21 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435724"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675613"
 ---
 # <a name="how-to-debug-optimized-code"></a>Instrukcje: Debugowanie zoptymalizowanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UWAGA]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
-> [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)(zostanie wprowadzony w programie Visual Studio Update 3) — opcja kompilatora generuje bogatsze informacje debugowania dla zoptymalizowanego kodu (projekty, które nie są tworzone za pomocą **/Od** — Opcja kompilatora. Zobacz [/O opcje (Optymalizuj kod)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). W tym Ulepszona obsługa debugowania zmienne lokalne i funkcje śródwierszowe.  
+> [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)(zostanie wprowadzony w programie Visual Studio Update 3) — opcja kompilatora generuje bogatsze informacje debugowania dla zoptymalizowanego kodu (projekty, które nie są tworzone za pomocą **/Od** — Opcja kompilatora. Zobacz [/O opcje (Optymalizuj kod)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). W tym Ulepszona obsługa debugowania zmienne lokalne i funkcje śródwierszowe.  
 >   
 > [Edytuj i Kontynuuj](../debugger/edit-and-continue-visual-csharp.md) jest wyłączona, gdy **/Zo** ocompiler opcja jest używana.  
   
@@ -73,11 +73,11 @@ UWAGA]
   
 6. W obszarze **C++** folderu, wybierz `Optimization`.  
   
-7. Na liście właściwości po prawej stronie Znajdź `Optimization`. Prawdopodobnie wynika z ustawieniem obok niego `Disabled (` [/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Wybierz jedną z opcji (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` [/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, lub `Custom`).  
+7. Na liście właściwości po prawej stronie Znajdź `Optimization`. Prawdopodobnie wynika z ustawieniem obok niego `Disabled (` [/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Wybierz jedną z opcji (`Minimum Size``(`[/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` [/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, lub `Custom`).  
   
 8. Jeśli została wybrana opcja `Custom` opcja dla `Optimization`, można teraz ustawić opcje dla każdego z pozostałych właściwości wyświetlane na liście właściwości.  
   
-9. Wybierz właściwości konfiguracji, C/C++, węzeł wiersza polecenia na stronie właściwości projektu i Dodaj `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` do **dodatkowe opcje** pola tekstowego.  
+9. Wybierz właściwości konfiguracji, C/C++, węzeł wiersza polecenia na stronie właściwości projektu i Dodaj `(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` do **dodatkowe opcje** pola tekstowego.  
   
     > [!WARNING]
     > `/Zo` wymaga programu Visual Studio 2013 Update 3 lub nowszej wersji.  
@@ -90,7 +90,7 @@ UWAGA]
 for (x=0; x<10; x++)  
 ```  
   
- Załóżmy, że Ustaw punkt przerwania w tym wierszu. Można by oczekiwać punkt przerwania zostanie osiągnięty 10 razy, ale jeśli kod jest zoptymalizowany, punkt przerwania zostaje trafiony tylko jeden raz. Wynika to pierwsza instrukcja ustawia wartość `x` na 0. Kompilator rozpoznaje, że to tylko należy wykonać jeden raz i przenosi ją wyjścia z pętli. Przenosi punkt przerwania z nim. Instrukcje, które porównania i zwiększ `x` pozostają wewnątrz pętli. Po wyświetleniu **dezasemblacji** oknie [jednostka kroku](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) jest automatycznie ustawiana na instrukcji lepszą kontrolę, co jest przydatne, jeśli krok po kroku przez zoptymalizowany kod.  
+ Załóżmy, że Ustaw punkt przerwania w tym wierszu. Można by oczekiwać punkt przerwania zostanie osiągnięty 10 razy, ale jeśli kod jest zoptymalizowany, punkt przerwania zostaje trafiony tylko jeden raz. Wynika to pierwsza instrukcja ustawia wartość `x` na 0. Kompilator rozpoznaje, że to tylko należy wykonać jeden raz i przenosi ją wyjścia z pętli. Przenosi punkt przerwania z nim. Instrukcje, które porównania i zwiększ `x` pozostają wewnątrz pętli. Po wyświetleniu **dezasemblacji** oknie [jednostka kroku](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) jest automatycznie ustawiana na instrukcji lepszą kontrolę, co jest przydatne, jeśli krok po kroku przez zoptymalizowany kod.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

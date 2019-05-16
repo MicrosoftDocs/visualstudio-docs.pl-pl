@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a1eae79e90a7d20419aaf25c1679aae885e3e92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442796"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686429"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu p
 > [!NOTE]
 > **pliki .runsettings i .testsettings**  
 >   
-> Istnieją dwa typy plików do konfigurowania testów. *.runsettings są używane w przypadku testów jednostkowych. I \*.testsettings dla [testów środowisku laboratoryjnym](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)wydajności sieci web i testach, obciążenia i dostosowanie niektórych rodzajów adapterów danych diagnostycznych, takich jak karty IntelliTrace i dziennika zdarzeń.  
+> Istnieją dwa typy plików do konfigurowania testów. *.runsettings są używane w przypadku testów jednostkowych. I \*.testsettings dla [testów środowisku laboratoryjnym](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)wydajności sieci web i testach, obciążenia i dostosowanie niektórych rodzajów adapterów danych diagnostycznych, takich jak karty IntelliTrace i dziennika zdarzeń.  
 >   
 > W poprzednich wersjach programu Visual Studio do 2010 r., jednostki, które testy również zostały dostosowane przy użyciu plików *.testsettings. Możesz nadal to zrobić, ale testy zostaną uruchomione wolniej niż w przypadku użycia równoważnymi konfiguracjami w \*pliku .runsettings.  
   
@@ -141,7 +141,7 @@ Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu p
 #### <a name="other-diagnostic-data-adapters"></a>Inne adaptery danych diagnostycznych  
  Adapter pokrycia kodu jest obecnie jedynym adapterem, który można dostosować przy użyciu pliku parametrów uruchomieniowych.  
   
- Aby dostosować każdy inny rodzaj adaptera danych diagnostycznych, należy użyć pliku ustawień testu. Aby uzyskać więcej informacji, zobacz [Określanie ustawień testu testów programu Visual Studio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).  
+ Aby dostosować każdy inny rodzaj adaptera danych diagnostycznych, należy użyć pliku ustawień testu. Aby uzyskać więcej informacji, zobacz [Określanie ustawień testu testów programu Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).  
   
 #### <a name="testrunparameters"></a>TestRunParameters  
  TestRunParameters udostępnia sposób definiowania zmiennych i wartości, które są dostępne dla testów w czasie wykonywania.  
@@ -152,7 +152,7 @@ Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu p
 |Konfiguracja|Domyślny|Wartości|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|false|W programie Visual Studio 2012 adapter karty MSTest został zoptymalizowany, aby był bardziej skalowalny i działał szybciej. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość `true` Aby użyć starszego adaptera testowego.<br /><br /> Można jej użyć na przykład wtedy, gdy dysponujesz plikiem app.config określonym dla testu jednostkowego.<br /><br /> Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|  
-|IgnoreTestImpact|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz [jak: Zbieranie danych niezbędnych do Sprawdź, które testy powinny być uruchamiania po zmianach w kodzie](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|IgnoreTestImpact|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz [jak: Zbieranie danych niezbędnych do Sprawdź, które testy powinny być uruchamiania po zmianach w kodzie](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||Można tu określić plik ustawień testowych do użycia z adapterem MS Test. Można również określić plik ustawień testu za pomocą menu **Test**, **ustawienia testu**, **wybierz plik ustawień testu**.<br /><br /> Jeśli ta wartość jest podana, należy także ustawić **ForcedlegacyMode** do **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|false|Po zakończeniu przebiegu testu MSTest jest zamykany. Każdy proces, który jest uruchamiany jako część testu, również będzie w tej chwili zatrzymywany. Jeśli program wykonujący test ma być nadal aktywny, ustaw dla tej konfiguracji wartość true.<br /><br /> Można na przykład wykorzystać ją do zachowania działania przeglądarki między kodowanymi testami interfejsu użytkownika.|  
 |DeploymentEnabled|true|Jeśli zostanie ustawiona wartość false, elementy wdrożenia, które określono w metodzie testowej, nie zostaną skopiowane do katalogu wdrożenia.|  
@@ -164,4 +164,4 @@ Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu p
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)   
- [Wprowadzanie ustawień testów dla testów programu Visual Studio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [Wprowadzanie ustawień testów dla testów programu Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

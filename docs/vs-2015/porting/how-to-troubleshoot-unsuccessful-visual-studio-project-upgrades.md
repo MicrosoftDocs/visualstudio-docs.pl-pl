@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096338"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696393"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Instrukcje: Rozwiązywanie problemów z uaktualnieniami projektu powiodło się programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ Czasami program Visual Studio w pełni nie można przekonwertować projekt z wcz
    Jeśli chcesz, aby projekt do uruchamiania w uaktualnionego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji, należy zaktualizować odwołania do projektu, a także aktualizacji `Imports` lub `Using` instrukcji, które wywołują odwołania. Jeśli projekt ładuje się w środowisku IDE, można zaktualizować odwołania przy użyciu **Eksploratora rozwiązań** lub **Menadżer odwołań** okno dialogowe.
 
 ## <a name="see-also"></a>Zobacz też
- [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [konwertowanie na platformie ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [konwertowanie na platformie ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

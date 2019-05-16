@@ -12,12 +12,12 @@ ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4fe446234317aedbf2090c5ee43d69fd08b1f020
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 74e61e60384b3e98bf26eb8208696ecb9223efa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117463"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696329"
 ---
 # <a name="error-handling-and-return-values"></a>Obsługa błędów i wartości zwracane
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +57,6 @@ Pakietów VSPackage i COM należy użyć takiej samej architekturze błędów. `
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Seterrorinfo — (Automatyzacja składnika)](http://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
- [Geterrorinfo —](http://msdn.microsoft.com/03317526-8c4f-4173-bc10-110c8112676a)   
- [Interfejs ISupportErrorInfo interfejsu](http://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32)
+ [Seterrorinfo — (Automatyzacja składnika)](https://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
+ [Geterrorinfo —](https://msdn.microsoft.com/03317526-8c4f-4173-bc10-110c8112676a)   
+ [Interfejs ISupportErrorInfo interfejsu](https://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32)

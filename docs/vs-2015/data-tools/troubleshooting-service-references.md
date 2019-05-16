@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1c5886d4ac3efcb906a27f73af6a79fad95a5af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056722"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700239"
 ---
 # <a name="troubleshooting-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pr
 
 3. Upewnij się, że **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru jest zaznaczone, a następnie kliknij przycisk **OK**.
 
-4. Załaduj projekt usługi WCF. Aby uzyskać więcej informacji, zobacz [NIB jak: Tworzenie rozwiązań dotyczących wielu projektów](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. Załaduj projekt usługi WCF. Aby uzyskać więcej informacji, zobacz [NIB jak: Tworzenie rozwiązań dotyczących wielu projektów](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
 5. W **programu Configuration Manager** okno dialogowe, zestaw **Konfiguracja rozwiązania aktywnego** do **debugowania**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
 

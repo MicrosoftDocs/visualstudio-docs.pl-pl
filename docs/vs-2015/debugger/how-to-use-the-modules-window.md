@@ -27,12 +27,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b19237b94ed3d53c49f248e22b86d3af8180625
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b592515692e23dce49c125c7895bd158904b653f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696126"
 ---
 # <a name="how-to-use-the-modules-window"></a>Instrukcje: Korzystanie z okna modułów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,6 +78,6 @@ UWAGA]
 2. Wskaż **ustawienia automatycznego ładowania symboli** a następnie kliknij przycisk **zawsze obciążenia ręcznie** lub **domyślne**. Zmiana zostanie wprowadzona dopiero po ponownym uruchomieniu sesji debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przerwanie wykonywania](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Przerwanie wykonywania](https://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
  [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

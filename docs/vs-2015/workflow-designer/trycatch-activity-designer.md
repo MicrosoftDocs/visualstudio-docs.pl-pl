@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb155cc7bbf4efbda54666f91f2db3f92e6c378c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976609"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697074"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch, projektant działań
 **TryCatch** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.TryCatch> działania.  
   
 ## <a name="the-trycatch-activity"></a>Działania TryCatch  
- <xref:System.Activities.Statements.TryCatch> Zawiera działanie <xref:System.Activities.Statements.TryCatch.Try%2A> aktywności, zbiór **Catch\<TException >** i <xref:System.Activities.Statements.TryCatch.Finally%2A> działania. A <xref:System.Activities.Statements.Catch%601> typu **TException** zawiera <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> i <xref:System.Activities.Statements.Catch%601.Action%2A>. Służą one ze sobą do zaimplementowania typowych opartą na wyjątkach mechanizm obsługi błędów. A <xref:System.Activities.Statements.TryCatch> działania próbuje wykonać jego <xref:System.Activities.Statements.TryCatch.Try%2A> działania. Jeśli <xref:System.Activities.Statements.TryCatch.Try%2A> działania generuje każdy wyjątek <xref:System.Activities.Statements.TryCatch> używa działanie jego **Catch < TException\>**  kolekcji, aby dopasować wyjątku. Jeśli istnieje dopasowanie, a następnie <xref:System.Activities.Statements.Catch%601.Action%2A> odpowiadającego **Catch\<TException >** jest wykonywane, służąc jako logiki, dla wyjątku obsługi błędów. Jeśli działania w <xref:System.Activities.Statements.TryCatch.Try%2A> sekcji zostało ukończone pomyślnie, lub działania w <xref:System.Activities.Statements.TryCatch.Catches%2A> zostało ukończone pomyślnie, <xref:System.Activities.Statements.TryCatch> wykonuje działanie jego <xref:System.Activities.Statements.TryCatch.Finally%2A> działania. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Wyjątki](http://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
+ <xref:System.Activities.Statements.TryCatch> Zawiera działanie <xref:System.Activities.Statements.TryCatch.Try%2A> aktywności, zbiór **Catch\<TException >** i <xref:System.Activities.Statements.TryCatch.Finally%2A> działania. A <xref:System.Activities.Statements.Catch%601> typu **TException** zawiera <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> i <xref:System.Activities.Statements.Catch%601.Action%2A>. Służą one ze sobą do zaimplementowania typowych opartą na wyjątkach mechanizm obsługi błędów. A <xref:System.Activities.Statements.TryCatch> działania próbuje wykonać jego <xref:System.Activities.Statements.TryCatch.Try%2A> działania. Jeśli <xref:System.Activities.Statements.TryCatch.Try%2A> działania generuje każdy wyjątek <xref:System.Activities.Statements.TryCatch> używa działanie jego **Catch < TException\>**  kolekcji, aby dopasować wyjątku. Jeśli istnieje dopasowanie, a następnie <xref:System.Activities.Statements.Catch%601.Action%2A> odpowiadającego **Catch\<TException >** jest wykonywane, służąc jako logiki, dla wyjątku obsługi błędów. Jeśli działania w <xref:System.Activities.Statements.TryCatch.Try%2A> sekcji zostało ukończone pomyślnie, lub działania w <xref:System.Activities.Statements.TryCatch.Catches%2A> zostało ukończone pomyślnie, <xref:System.Activities.Statements.TryCatch> wykonuje działanie jego <xref:System.Activities.Statements.TryCatch.Finally%2A> działania. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Wyjątki](https://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
   
 ### <a name="using-the-trycatch-activity-designer"></a>Za pomocą TryCatch, Projektant działań  
  **TryCatch** projektanta działań można znaleźć w **obsługę błędów** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** karty w lewej części [!INCLUDE[wfd2](../includes/wfd2-md.md)] (można także wybrać **narzędzi** z **widoku** menu lub TROLERA + ALT + X.)  

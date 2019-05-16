@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef4d1221b59e6f1e5ed3de94f91742bbea778462
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428610"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679328"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Pisanie kodu obsługi zdarzeń przycisku Pokaż obraz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Kod Visual C#
   
     2. **IntelliSense** okna otwiera i wyświetla **openFileDialog1**. Wybierz klawisz TAB, aby go zaznaczyć. (W języku Visual Basic zaczyna się od zakończenia początkowej, tak aby było widać **OpenFileDialog1**. Upewnij się, że **OpenFileDialog1** jest zaznaczona.)  
   
-         Aby dowiedzieć się więcej na temat `OpenFileDialog`, zobacz [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
+         Aby dowiedzieć się więcej na temat `OpenFileDialog`, zobacz [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
   
     3. Wpisz kropkę (`.`) (wielu programistów nazywa to kropką.) Ponieważ wpisano kropkę na prawo po **openFileDialog1**, **IntelliSense** zostanie wyświetlone okno dialogowe, wypełnionymi wszystkimi **OpenFileDialog** metodami i właściwościami składnika. Są to te same właściwości, które pojawiają się w **właściwości** okna po wybraniu ich programie Windows Forms Designer. Możesz również wybrać metody, które informują składnik, aby wykonywały (np. otwarcie okna dialogowego).  
   
@@ -67,7 +67,7 @@ Ikona zdarzenie
   
     4. Rozpocznij wpisywanie `ShowDialog` (wielkość liter nie ma znaczenia w przypadku IntelliSense). `ShowDialog()` Wyświetli metodę **Otwórz plik** okno dialogowe. Po podświetleniu w oknie **ShowDialog**, wybierz klawisz TAB. Możesz również wyróżnić "ShowDialog" i wybrać klawisz F1, aby uzyskać pomoc dotyczącą go.  
   
-         Aby dowiedzieć się więcej na temat `ShowDialog()` metody, zobacz [metoda ShowDialog](http://msdn.microsoft.com/library/c7ykbedk.aspx).  
+         Aby dowiedzieć się więcej na temat `ShowDialog()` metody, zobacz [metoda ShowDialog](https://msdn.microsoft.com/library/c7ykbedk.aspx).  
   
     5. Kiedy używasz metody na kontrolce lub składnik (nazywane *wywołanie metody*), musisz dodać nawiasy. Wprowadź nawiasy otwierające i zamykające natychmiast po "g" w `ShowDialog`: `()` Teraz powinien on wyglądać "openFileDialog1.ShowDialog()".  
   
@@ -83,7 +83,7 @@ Ikona zdarzenie
   
     8. Wpisz kropkę, aby otworzyć wartość DialogResult **IntelliSense** okna. Wprowadź literę `O` i wybierz klawisz TAB, aby wstawić **OK**.  
   
-         Aby dowiedzieć się więcej na temat `DialogResult`, zobacz [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
+         Aby dowiedzieć się więcej na temat `DialogResult`, zobacz [DialogResult](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
         > Pierwszy wiersz kodu powinien być kompletny. Dla języka Visual C#, należy go poniżej.  

@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5956ad23fe22c7c36b712fac61df268586142df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045787"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697561"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Instrukcje: Ponowne podpisywanie manifestów wdrożenia i aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
  Inny scenariusz, w którym może ponownie podpisać manifesty jest, gdy Twoi klienci wymagają podpisać aplikację i manifesty wdrożenia za pomocą ich własnych certyfikatów.  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>Ponowne podpisywanie aplikacji i wdrażania manifestów  
- W tej procedurze założono, że zostały już wprowadzone zmiany do pliku manifestu aplikacji (manifest). Aby uzyskać więcej informacji, zobacz [jak: Zmień właściwości wdrożenia](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
+ W tej procedurze założono, że zostały już wprowadzone zmiany do pliku manifestu aplikacji (manifest). Aby uzyskać więcej informacji, zobacz [jak: Zmień właściwości wdrożenia](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Ponowne podpisywanie aplikacji i wdrażania manifestów za pomocą Mage.exe  
   

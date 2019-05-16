@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40b1d2961fa0f0187d11bd87df54ff2ad3124275
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0c258ea081e95179c507f76413ae2a5fc7d71a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433523"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705851"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Instrukcje: Tworzenie aplikacji usługi przepływu pracy WCF
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] aplikacje usług przepływu pracy są usług łączności rozproszonych, które przekazywania wiadomości między klientami a same granice procesu. Implementację kontraktu usługi po stronie usługi odbywa się deklaratywne za pośrednictwem działań przepływu pracy w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] w sposób analogiczny do usług przepływu pracy w starszej wersji w .NET Framework 3.5.  
@@ -43,5 +43,5 @@ ms.locfileid: "63433523"
 8. Szablon projektu umożliwia utworzenie definicji usługi jako XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Zostanie otwarty widok projektu za pomocą <xref:System.Activities.Statements.Sequence> działania, który zawiera zbiór <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Utwórz działanie](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Instrukcje: Utwórz działanie](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)

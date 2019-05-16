@@ -12,12 +12,12 @@ ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c0bc0520e6f030ad6746748ac269eb97bc885e2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 034040ecd8df3368f53cb7a3bf99197e962e2b56
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754501"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702303"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- DE implementuje ten interfejs do zgłaszania właściwość została zniszczona. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) dostęp do `IDebugEvent2` interfejsu. Ten interfejs jest implementowany, jeśli DE została wcześniej utworzona właściwość skojarzony ze skryptem; niszczenie właściwość usuwa skryptów skojarzonych z poziomu środowiska IDE.  
+ DE implementuje ten interfejs do zgłaszania właściwość została zniszczona. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) dostęp do `IDebugEvent2` interfejsu. Ten interfejs jest implementowany, jeśli DE została wcześniej utworzona właściwość skojarzony ze skryptem; niszczenie właściwość usuwa skryptów skojarzonych z poziomu środowiska IDE.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
  DE tworzy i wysyła tego obiektu zdarzenia do raportu, którego właściwość została zniszczona. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  

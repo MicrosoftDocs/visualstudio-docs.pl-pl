@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434875"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691549"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (G
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów  
   
 ### <a name="specifying-an-accelerator"></a>Określanie klawiszy skrótów  
- Punkty przerwania w kodzie procesora GPU tylko są osiągane, jeśli kod jest uruchomiony na [Accelerator::direct3d_ref —](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) akcelerator (REF). Jeśli nie określisz akceleratora w kodzie, akcelerator REF jest automatycznie wybierany jako **typowi akceleratora debugowania** we właściwościach projektu. Jeśli Twój kod jawnie wybiera akcelerator, akcelerator REF nie będą używane podczas debugowania, a punkty przerwania nie zostanie uruchomiona, jeśli sprzęt procesora GPU nie ma obsługi debugowania. Użytkownik może rozwiązać ten problem przez napisanie kodu, tak aby używał akcelerator REF podczas debugowania. Aby uzyskać więcej informacji, zobacz właściwości projektu i [używanie akceleratora i obiektów accelerator_view](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) i [ustawienia projektu dla C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Punkty przerwania w kodzie procesora GPU tylko są osiągane, jeśli kod jest uruchomiony na [Accelerator::direct3d_ref —](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) akcelerator (REF). Jeśli nie określisz akceleratora w kodzie, akcelerator REF jest automatycznie wybierany jako **typowi akceleratora debugowania** we właściwościach projektu. Jeśli Twój kod jawnie wybiera akcelerator, akcelerator REF nie będą używane podczas debugowania, a punkty przerwania nie zostanie uruchomiona, jeśli sprzęt procesora GPU nie ma obsługi debugowania. Użytkownik może rozwiązać ten problem przez napisanie kodu, tak aby używał akcelerator REF podczas debugowania. Aby uzyskać więcej informacji, zobacz właściwości projektu i [używanie akceleratora i obiektów accelerator_view](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) i [ustawienia projektu dla C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Warunkowe punkty przerwania  
  Warunkowe punkty przerwania w kodzie GPU są obsługiwane, ale nie każde wyrażenie może przyjąć na urządzeniu. Gdy na urządzeniu nie można obliczyć wyrażenia, sprawdzana jest zgodność to debugera. Debuger będzie prawdopodobnie działać wolniej niż urządzenia.  
@@ -83,6 +83,6 @@ Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (G
  Istnieje możliwość dla obliczeń C++ AMP może przekroczyć domyślny interwał czasu jest ustawiana przez proces odzyskiwania (TDR) i wykrywania limitu czasu Windows. Jeśli tak się stanie, obliczenie zostanie anulowane, a dane zostaną utracone. Aby uzyskać więcej informacji, zobacz [obsługi TDR w bibliotece C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+ [Przewodnik: Debugowanie aplikacji C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Rozpocznij debugowanie GPU w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)

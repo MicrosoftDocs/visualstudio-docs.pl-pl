@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e5ca0c60511ee9537041f3a41f44a0e1f55b5a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dc4d918f3eae9088e2b36b7bebbb69ce130e26d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441363"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674140"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63441363"
 Użyj **IntelliSense** stronie właściwości, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla języka Visual C#. Możesz uzyskać dostęp **IntelliSense** strony właściwości, klikając **opcje** na **narzędzia** menu, klikając **C#** w **Edytora tekstów** folder, a następnie klikając **IntelliSense.**  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **IntelliSense** strona właściwości zawiera następujące właściwości:  
   
@@ -41,10 +41,10 @@ Użyj **IntelliSense** stronie właściwości, aby zmodyfikować ustawienia, kt�
  Gdy ta opcja jest zaznaczona, IntelliSense wyświetla automatycznie na liście uzupełniania po rozpoczęciu wpisywania. Gdy ta opcja nie jest zaznaczona, uzupełnianie przez funkcję IntelliSense są nadal dostępne z poziomu **IntelliSense** menu lub naciskając klawisze CTRL + SPACJA.  
   
  **Umieść słowa kluczowe w listach uzupełniania**  
- Gdy ta opcja jest zaznaczona, IntelliSense dodaje słowa kluczowe języka C#, na przykład [klasy](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), na liście uzupełniania.  
+ Gdy ta opcja jest zaznaczona, IntelliSense dodaje słowa kluczowe języka C#, na przykład [klasy](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), na liście uzupełniania.  
   
  **Umieść fragmenty kodu w listach uzupełniania**  
- Gdy ta opcja jest zaznaczona, IntelliSense dodaje aliasy we fragmentach kodu języka C# na liście uzupełniania. W przypadku, gdy alias fragment kodu jest taka sama jak słowo kluczowe, na przykład [klasy](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), słowo kluczowe zastępuje skrót. Aby uzyskać więcej informacji, zobacz [Visual C# — wstawki](../../ide/visual-csharp-code-snippets.md).  
+ Gdy ta opcja jest zaznaczona, IntelliSense dodaje aliasy we fragmentach kodu języka C# na liście uzupełniania. W przypadku, gdy alias fragment kodu jest taka sama jak słowo kluczowe, na przykład [klasy](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), słowo kluczowe zastępuje skrót. Aby uzyskać więcej informacji, zobacz [Visual C# — wstawki](../../ide/visual-csharp-code-snippets.md).  
   
 ## <a name="selection-in-completion-lists"></a>Wybór w listach uzupełniania  
  **Zatwierdzone, wpisując następujące znaki:**  
@@ -72,5 +72,5 @@ Użyj **IntelliSense** stronie właściwości, aby zmodyfikować ustawienia, kt�
   
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne, środowisko, okno dialogowe Opcje](../../ide/reference/general-environment-options-dialog-box.md)   
- [Komentarze dokumentacji XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [Komentarze dokumentacji XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

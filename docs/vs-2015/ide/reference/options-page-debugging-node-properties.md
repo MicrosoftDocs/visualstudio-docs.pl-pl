@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9ebedd1a764098d8e4a4866a9645d10aa999062
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bd02ae0c3cd9f05e817e335b942a76c849655e44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670189"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674726"
 ---
 # <a name="options-page-debugging-node-properties"></a>Strona opcji, debugowanie — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -81,10 +81,10 @@ W poniższych tabelach opisano strony (lub kolekcje właściwości), są skojarz
 |EnableRPC|Get/Set (wartość logiczna)|Określa, czy debuger wejść do COM zdalnych wywołań procedur.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kontrolowanie ustawień opcji](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Określanie nazw elementów właściwości na stronach opcji](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Kontrolowanie ustawień opcji](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Określanie nazw elementów właściwości na stronach opcji](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Strona opcji, czcionki i kolory — właściwości węzła](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Strona opcji, Edytor tekstu — właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Ogólne, debugowanie, okno dialogowe Opcje](../../debugger/general-debugging-options-dialog-box.md)   
- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Just-In-Time, Debugowanie, Opcje, okno dialogowe](../../debugger/just-in-time-debugging-options-dialog-box.md)

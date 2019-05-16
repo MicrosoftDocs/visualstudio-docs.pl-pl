@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114811"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674999"
 ---
 # <a name="managing-application-settings-net"></a>Zarządzanie ustawieniami aplikacji (.NET)
 
@@ -59,7 +59,7 @@ Podczas tworzenia ustawień z zakresu użytkownika (na przykład czcionki domyś
 >
 > Jeśli nie podejmiesz informacje o parametrach połączenia z zewnętrznego źródła, takiego jak podanie Identyfikatora użytkownika i hasła, należy zachować ostrożność, aby upewnić się, że wartości, które można używać do tworzenia połączenia ciągu nie zawierają dodatkowych parametrów połączenia które zmieniają zachowanie połączenia.
 >
-> Należy rozważyć użycie funkcji konfiguracji chronionej do szyfrowania poufnych informacji w pliku konfiguracji. Zobacz [ochrony informacji o połączeniu](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4) Aby uzyskać więcej informacji.
+> Należy rozważyć użycie funkcji konfiguracji chronionej do szyfrowania poufnych informacji w pliku konfiguracji. Zobacz [ochrony informacji o połączeniu](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4) Aby uzyskać więcej informacji.
 
 > [!NOTE]
 > Ponieważ nie istnieje żaden model pliku konfiguracji dla bibliotek klas, ustawienia aplikacji nie są stosowane do projektów biblioteki klas. Wyjątkiem jest Visual Studio Tools dla pakietu Office DLL projektu, co może mieć plik konfiguracji.
@@ -74,7 +74,7 @@ Projektant ustawień najpierw szuka pliku Settings.settings, który tworzy syste
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Uzyskiwanie dostępu do lub zmiana ustawień aplikacji w czasie wykonywania w języku Visual Basic
 
-W [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektów, mieli dostęp ustawienia aplikacji w czasie wykonywania za pomocą `My.Settings` obiektu. Na **ustawienia** kliknij **wyświetlić kod** przycisk, aby wyświetlić plik Settings.vb. Plik Settings.VB definiuje `Settings` klasy, która umożliwia obsługę następujących zdarzeń w klasie ustawień: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, i <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Należy zauważyć, że `Settings` klasa w Settings.vb jest częściową klasą, która wyświetla tylko włany kod, nie całje wygenerowanej klasy. Aby uzyskać więcej informacji na temat uzyskiwania dostępu do ustawień aplikacji za pomocą `My.Settings` obiektu, zobacz [uzyskiwania dostępu do ustawień aplikacji](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+W [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektów, mieli dostęp ustawienia aplikacji w czasie wykonywania za pomocą `My.Settings` obiektu. Na **ustawienia** kliknij **wyświetlić kod** przycisk, aby wyświetlić plik Settings.vb. Plik Settings.VB definiuje `Settings` klasy, która umożliwia obsługę następujących zdarzeń w klasie ustawień: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, i <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Należy zauważyć, że `Settings` klasa w Settings.vb jest częściową klasą, która wyświetla tylko włany kod, nie całje wygenerowanej klasy. Aby uzyskać więcej informacji na temat uzyskiwania dostępu do ustawień aplikacji za pomocą `My.Settings` obiektu, zobacz [uzyskiwania dostępu do ustawień aplikacji](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 Wartości ustawienia zakresu użytkownika, które użytkownik zmienia w czasie wykonywania (na przykład położenie formularza) są przechowywane w pliku user.config. Należy zauważyć, że wartości domyślne są nadal zapisywane w pliku app.config.
 
@@ -98,8 +98,8 @@ Należy także jawnie wywołać `Save` metody tej klasy otoki, aby utrwalić ust
 Properties.Settings.Default.Save();
 ```
 
-Aby uzyskać ogólne informacje na temat uzyskiwania dostępu do ustawień aplikacji za pomocą `Settings` klasy, zobacz [Przegląd ustawień aplikacji](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Aby uzyskać informacje o iterowaniu przez ustawienia, zobacz ten [wpis na forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Aby uzyskać ogólne informacje na temat uzyskiwania dostępu do ustawień aplikacji za pomocą `Settings` klasy, zobacz [Przegląd ustawień aplikacji](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Aby uzyskać informacje o iterowaniu przez ustawienia, zobacz ten [wpis na forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Uzyskiwanie dostępu do ustawień aplikacji](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Uzyskiwanie dostępu do ustawień aplikacji](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

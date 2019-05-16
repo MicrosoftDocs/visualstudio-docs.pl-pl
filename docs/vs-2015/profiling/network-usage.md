@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441896"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673822"
 ---
 # <a name="network-usage"></a>Użycie sieci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,6 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
 3. Przycisk Drukowanie pretty odpowiedzi (wewnątrz karta Treść) może pomóc w przeanalizować za pomocą formatu JSON, XML, HTML, CSS, JavaScript i TypeScript ładunków odpowiedzi przez zwiększenie czytelności zawartości.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Uruchamianie narzędzi profilowania bez debugowania](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Uruchamianie narzędzi profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Visual Studio blog: Wprowadzenie do programu Visual Studio, inspektor sieci](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Wideo Channel 9: Narzędzia diagnostyczne VS — nowy Profiler sieci](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

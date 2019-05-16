@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 502560791295bed256834f8a00bfb55ce5aa448a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6739f38e91ce998441c4cfa62453d485a5d370e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424621"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697544"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Instrukcje: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Możesz wdrożyć [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikac
 7. Przed `</applicationRequestMinimum>` elementu Dodawanie kodu XML uprawnienia, których wymaga aplikacja.  
   
     > [!NOTE]
-    > Możesz użyć `ToXml` ustawiona metoda uprawnienia, można wygenerować kodu XML manifestu aplikacji. Na przykład, aby wygenerować plik XML dla <xref:System.Security.Permissions.EnvironmentPermission> zestaw uprawnień, wywołanie <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metody. Aby uzyskać więcej informacji na temat struktury uprawnienie ustawić XML, zobacz [NIB: Instrukcje: Importowanie zestawu uprawnień za pomocą pliku XML](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
+    > Możesz użyć `ToXml` ustawiona metoda uprawnienia, można wygenerować kodu XML manifestu aplikacji. Na przykład, aby wygenerować plik XML dla <xref:System.Security.Permissions.EnvironmentPermission> zestaw uprawnień, wywołanie <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metody. Aby uzyskać więcej informacji na temat struktury uprawnienie ustawić XML, zobacz [NIB: Instrukcje: Importowanie zestawu uprawnień za pomocą pliku XML](https://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   

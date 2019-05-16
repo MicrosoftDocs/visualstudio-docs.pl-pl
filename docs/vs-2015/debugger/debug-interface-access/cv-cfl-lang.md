@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: afc89dc2b70191524830926d108a5de81fbbb647
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c1fabdb202d51b85eb2983360bdfd02757f7649
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759465"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699360"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ typedef enum CV_CFL_LANG { 
  Aplikacja języka JScript.  
   
  CV_CFL_MSIL  
- Język aplikacji jest nieznany Microsoft Intermediate Language (MSIL), prawdopodobnie wynik za pomocą [opcję/LTCG (Generowanie kodu Link-time)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) przełącznika.  
+ Język aplikacji jest nieznany Microsoft Intermediate Language (MSIL), prawdopodobnie wynik za pomocą [opcję/LTCG (Generowanie kodu Link-time)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) przełącznika.  
   
  CV_CFL_HLSL  
  Aplikacja język jest wysoki poziom programu do cieniowania.  

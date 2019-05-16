@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421252"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693555"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Przewodnik: Tworzenie aplikacji WPF pulpitu podłączone do usługi mobilnej Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych 
   
 - Aktywne konto Microsoft Azure.  
   
-    - Użytkownik może Załóż bezpłatne konto próbne [tutaj](http://azure.microsoft.com/pricing/free-trial/).  
+    - Użytkownik może Załóż bezpłatne konto próbne [tutaj](https://azure.microsoft.com/pricing/free-trial/).  
   
     - Możesz aktywować [korzyści dla subskrybentów MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Subskrypcji sieci MSDN zapewnia środki na korzystanie z każdego miesiąca, używanego do płatne usługi platformy Azure.  
   
@@ -566,7 +566,7 @@ Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych 
   
  Można wprowadzić interfejsu użytkownika bardziej atrakcyjne, dodając kolor, kształty, grafiki i animacje nawet. Zobacz [projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
   
- Możesz połączyć do istniejącej bazy danych SQL lub innych źródeł danych przy użyciu usług Azure Mobile Services. Zobacz [dokumentacja usług Mobile Services](http://azure.microsoft.com/services/app-service/mobile/).  
+ Możesz połączyć do istniejącej bazy danych SQL lub innych źródeł danych przy użyciu usług Azure Mobile Services. Zobacz [dokumentacja usług Mobile Services](https://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Mój pierwszy aplikacji klasycznej WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

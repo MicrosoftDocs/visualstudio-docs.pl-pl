@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9463e46a7341a7da5c4aa79ae477d6aa0ff0c6cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444568"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686647"
 ---
 # <a name="how-to-create-an-activity-library"></a>Instrukcje: Tworzenie biblioteki działań
 Działania niestandardowe są używane do modelowania procesów biznesowych w szczególności w przepływie pracy. Szablon Biblioteka działań w [!INCLUDE[vs2010](../includes/vs2010-md.md)] została przekazana do utworzenia takiego działania niestandardowe, które wizualnie za pomocą [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -48,5 +48,5 @@ Działania niestandardowe są używane do modelowania procesów biznesowych w sz
     > Tylko jeden element podrzędny działania są dozwolone w treści działanie niestandardowe; jednak działania podrzędne może być złożone działania, takie jak <xref:System.Activities.Statements.Sequence> działania lub <xref:System.Activities.Statements.Flowchart> działania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Utwórz działanie](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Instrukcje: Utwórz działanie](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)

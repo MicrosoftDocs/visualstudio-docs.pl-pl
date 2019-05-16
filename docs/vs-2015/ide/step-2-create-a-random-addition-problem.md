@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442625"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693969"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2. Tworzenie zadania z dodawaniem losowych liczb
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ W drugiej części tego samouczka należy quiz trudne, dodając zagadnienia mate
   
      `Random` jest znany jako obiekt. Prawdopodobnie słyszałeś już słowo, i Dowiedz się więcej na temat co to oznacza dla programowania w następnym samouczku. Teraz wystarczy pamiętać, że można użyć `new` instrukcji, aby utworzyć przyciski, etykiety, panele, okna Openfiledialog, Colordialog, SoundPlayer, Random i nawet formularze i te elementy są określane jako obiekty. Jeśli uruchamiasz program, formularz zostaje uruchomiony i tworzy kod związany z nim `Random` obiektu i nadaje mu **randomizer**.  
   
-     Wkrótce będziesz tworzyć metodę sprawdzania odpowiedzi, dlatego quiz musi używać zmiennych do przechowywania liczb losowych, który generuje dla każdego problemu. Zobacz [zmienne](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) lub [typy](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Aby prawidłowo używać zmiennych, musisz je zadeklarować, co oznacza utworzenie listy ich nazwy i typy danych.  
+     Wkrótce będziesz tworzyć metodę sprawdzania odpowiedzi, dlatego quiz musi używać zmiennych do przechowywania liczb losowych, który generuje dla każdego problemu. Zobacz [zmienne](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) lub [typy](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Aby prawidłowo używać zmiennych, musisz je zadeklarować, co oznacza utworzenie listy ich nazwy i typy danych.  
   
 4. Dodaj dwie zmienne liczby całkowitej do formularza i nazwij je **addend1** i **addend2**.  
   

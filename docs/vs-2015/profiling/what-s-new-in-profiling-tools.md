@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0fc61a68e363c7a1616b35fb9ebc875e88550885
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ef76180bef1b643bb1f3ba3255b5b46dafdca272
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791522"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694999"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Co&#39;nowego w narzędziach profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Aby uzyskać informacji o tym, co nowego w programie Visual Studio 2015 Update 1
 ## <a name="whats-new-in-update-1"></a>Co nowego w aktualizacji 1  
  Począwszy od programu Visual Studio 2015 Update 1, możesz zobaczyć podział użycia procesora CPU dla poszczególnych funkcji bez opuszczania debugera. Aby uzyskać więcej informacji, zobacz [profilowanie Procesora w debugerze programu Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
   
- **Narzędzia diagnostyczne** okna dodano opcje wyszukiwania i filtrowania **zdarzenia** kartę. Aby uzyskać więcej informacji, zobacz [zintegrowane z debugerem profilowania](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859) i [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+ **Narzędzia diagnostyczne** okna dodano opcje wyszukiwania i filtrowania **zdarzenia** kartę. Aby uzyskać więcej informacji, zobacz [zintegrowane z debugerem profilowania](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859) i [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Diagnostyka debugowanie zmian interfejsu użytkownika i klawiszy skrótu  
  Możesz teraz uruchomić narzędzia diagnostyczne podczas debugowania przy użyciu nowego **narzędzia diagnostyczne** okna. Okno zostanie wyświetlone automatycznie, ale można również otworzyć go za pomocą nowego elementu menu **Pokaż narzędzia diagnostyczne** (skrót klawiaturowy **Ctrl + Alt + F2**).  

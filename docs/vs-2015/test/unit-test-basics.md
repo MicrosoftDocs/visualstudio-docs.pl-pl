@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76faef002162576cec6b598e499c937caa0c4fbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 63f6faf24c1b3ce3aeedd8d4b3c82e2b09a6f443
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445984"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695354"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworzenie i Uruchamianie test
   
  Testy jednostkowe ma największy wpływ na jakość kodu, gdy jest integralną częścią przepływu pracy tworzenia oprogramowania. Jak najszybciej pisania funkcji lub innych bloku kodu aplikacji, Utwórz testy jednostkowe, sprawdź zachowania kodu w odpowiedzi na standardowy, granic lub niepoprawny przypadki danych wejściowych, a, sprawdzanie jawnego lub niejawnego założenia przez kod. Za pomocą *programowanie sterowane testami*, tworzenie testów jednostkowych, przed przystąpieniem do napisania kodu, więc użyć testów jednostkowych jako specyfikacji funkcjonalnych i dokumentacji projektu.  
   
- Można szybko wygenerować projekty testowe i metod testowych w kodzie lub ręcznie utworzyć testy, gdy ich potrzebujesz. Zapoznaj się z kodu platformy .NET przy użyciu funkcji IntelliTest, można generować dane testowe oraz pakiet testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, którymi instrukcja zostanie wykonana. Dowiedz się, jak [generowania testów jednostkowych dla kodu](http://msdn.microsoft.com/library/dn823749.aspx).  
+ Można szybko wygenerować projekty testowe i metod testowych w kodzie lub ręcznie utworzyć testy, gdy ich potrzebujesz. Zapoznaj się z kodu platformy .NET przy użyciu funkcji IntelliTest, można generować dane testowe oraz pakiet testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, którymi instrukcja zostanie wykonana. Dowiedz się, jak [generowania testów jednostkowych dla kodu](https://msdn.microsoft.com/library/dn823749.aspx).  
   
  Eksplorator testów można również uruchomić innych firm i open source, struktur testów jednostek, które zostały zaimplementowane interfejsy dodatek programu Test Explorer. Można dodać wiele z tych środowisk przy użyciu Menedżera rozszerzeń programu Visual Studio i galerii programu Visual Studio. Zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)  
   
@@ -49,7 +49,7 @@ Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworzenie i Uruchamianie test
   
 - [Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
-- [Testy jednostkowe kodu natywnego za pomocą narzędzia Eksplorator testów](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+- [Testy jednostkowe kodu natywnego za pomocą narzędzia Eksplorator testów](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
 ## <a name="BKMK_The_MyBank_Solution_example"></a> Przykład MyBank rozwiązania  
  W tym temacie, użyjemy rozwoju fikcyjnej aplikacji o nazwie `MyBank` jako przykład. Nie musisz rzeczywisty kod, aby uprościć wyjaśnienia, w tym temacie. Metody testowe są napisane w języku C# i przedstawione przy użyciu Frameworka testów jednostkowych firmy Microsoft dla kodu zarządzanego, jednakże pojęcia można łatwo przenosić do innych języków i struktur.  

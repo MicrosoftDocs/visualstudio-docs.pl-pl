@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d8ba826e332141a3ee53a70185f0e8e18e465f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443220"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703990"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Ze względów bezpieczeństwa należy uruchamiać Visual Studio jako zwykły uż
 |Instalacja|Instalowanie programu Visual Studio.|[Instalowanie programu Visual Studio 2015](../install/install-visual-studio-2015.md)|
 ||Aktualizacja z wersji próbnej Visual Studio.|[Instrukcje: aktualizacja z wersji próbnej wersji programu Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości Pomocy.|[Instalowanie zawartości lokalnej i zarządzanie nią](../ide/install-and-manage-local-content.md)|
-|Typy aplikacji|Tworzenie rozwiązań dla programu SharePoint 2010.|[Wymagania związane z opracowywaniem rozwiązań SharePoint](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
+|Typy aplikacji|Tworzenie rozwiązań dla programu SharePoint 2010.|[Wymagania związane z opracowywaniem rozwiązań SharePoint](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Pobieranie licencji deweloperskiej dla [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Uzyskaj licencję dewelopera (aplikacje Windows Store)](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |Przybornik|Dodawanie klasycznych formantów COM do **przybornika**.|[Korzystanie z przybornika](../ide/using-the-toolbox.md)|
-|Dodatki|Instalowanie i używanie dodatków, które zostały napisane przy użyciu klasycznego modelu COM w IDE.|[Tworzenie dodatków i kreatorów](http://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|Kompilowanie|Używanie zdarzeń mających miejsce po kompilacji, które rejestrują składnik.|[Ogólne informacje o niestandardowych krokach budowania lub zdarzeniach kompilacji](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
-||Włączanie etapu rejestracji podczas kompilowania projektów języka C++.|[Ogólne informacje o niestandardowych krokach budowania lub zdarzeniach kompilacji](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+|Dodatki|Instalowanie i używanie dodatków, które zostały napisane przy użyciu klasycznego modelu COM w IDE.|[Tworzenie dodatków i kreatorów](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
+|Kompilowanie|Używanie zdarzeń mających miejsce po kompilacji, które rejestrują składnik.|[Ogólne informacje o niestandardowych krokach budowania lub zdarzeniach kompilacji](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+||Włączanie etapu rejestracji podczas kompilowania projektów języka C++.|[Ogólne informacje o niestandardowych krokach budowania lub zdarzeniach kompilacji](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
 |Debugowanie|Debugowanie aplikacji, które działają z podwyższonymi uprawnieniami.|[Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)|
 ||Debugowanie aplikacji, które działają na innym koncie użytkownika, takich jak witryny sieci Web programu ASP.NET.|[Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
-||Debugowanie w strefie dla aplikacji przeglądarki XAML (XBAP).|[Host WPF (PresentationHost.exe)](http://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
+||Debugowanie w strefie dla aplikacji przeglądarki XAML (XBAP).|[Host WPF (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
 ||Używanie emulatora do debugowania projektów usług w chmurze dla systemu Microsoft Azure.|[Debugowanie usługi Chmurowej w programie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
-||Konfigurowanie zapory do zdalnego debugowania.|[Konfigurowanie narzędzi zdalnych na urządzeniu](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
+||Konfigurowanie zapory do zdalnego debugowania.|[Konfigurowanie narzędzi zdalnych na urządzeniu](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Narzędzia wydajności|Profilowanie aplikacji.|[Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)|
 |wdrażania|Wdrażanie aplikacji internetowej do usług Internet Information Services (IIS) na komputerze lokalnym.|[Wdrażanie aplikacji sieci Web ASP.NET u dostawcy hostingu przy użyciu programu Visual Studio lub Visual Web Developer: Wdrażanie w usługach IIS jako środowisku testowym](http://go.microsoft.com/fwlink/?LinkId=266478)|
 |Dostarczanie opinii do firmy Microsoft|Zmiana sposobu uczestnictwa w programie konsumenckim programu Visual Studio.|[Instrukcje: Prześlij opinię](../misc/how-to-send-feedback-about-visual-studio.md)|

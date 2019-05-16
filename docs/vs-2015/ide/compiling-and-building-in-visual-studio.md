@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bfee16abf522284471baf4c8dc8b3c47468a032e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067355"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701492"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilowanie i tworzenie w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Można używać programu Visual Studio do kompilacji aplikacji i do tworzenia ze
 |------------------|--------------|--------------------------|
 |Używanie IDE|-Można łatwiej tworzyć i natychmiast uruchamiać kompilacje.<br />— Można uruchomić kompilację na wielu procesorach dla projektów C++ i C#.<br />— Można dostosować niektóre aspekty systemu kompilacji.|[Kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |Uruchomienie wiersza polecenia MSBuild|— Można kompilować projekty bez konieczności instalowania programu Visual Studio.<br />— Można uruchomić kompilację na wielu procesorach dla wszystkich typów projektów.<br />— Można dostosować większość obszarów systemu kompilacji.|[MSBuild](../msbuild/msbuild.md)|
-|Użycie Team Foundation Build|— Można zautomatyzować proces kompilacji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Można również kompilować projekty na udostępnionych serwerach kompilacji, a nie na komputerze dewelopera.<br />— Można szybko określić kod, który ma być skompilowany, testy, które chcesz uruchomić, oraz inne typowe opcje.<br />— Można modyfikować przepływ kompilacji, a w razie potrzeby, tworzyć aktywności kompilacji, aby wykonywać zadania wysoce niestandardowe.|[Kompiluj aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
+|Użycie Team Foundation Build|— Można zautomatyzować proces kompilacji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Można również kompilować projekty na udostępnionych serwerach kompilacji, a nie na komputerze dewelopera.<br />— Można szybko określić kod, który ma być skompilowany, testy, które chcesz uruchomić, oraz inne typowe opcje.<br />— Można modyfikować przepływ kompilacji, a w razie potrzeby, tworzyć aktywności kompilacji, aby wykonywać zadania wysoce niestandardowe.|[Kompiluj aplikację](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
 
 ## <a name="building-from-the-ide"></a>Kompilacja z IDE
- Podczas tworzenia projektu domyślne konfiguracje kompilacji zostają dla niego zdefiniowane, a konfiguracja kompilacji rozwiązania zostaje do niego przypisana, aby dostarczyć kontekst dla kompilacji. Konfiguracje rozwiązania definiują, jak projekty w rozwiązaniu mają być kompilowane i wdrażane. Konfiguracje projektu są zestawem właściwości projektu, które są unikatowe dla platformy i typu kompilacji (na przykład wydanie Win32). Można edytować domyślne konfiguracje oraz można tworzyć własne konfiguracje. Aby uzyskać więcej informacji, zobacz [wprowadzenie do projektanta projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) i [NIB jak: Modyfikowanie właściwości projektu i ustawień konfiguracji](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
+ Podczas tworzenia projektu domyślne konfiguracje kompilacji zostają dla niego zdefiniowane, a konfiguracja kompilacji rozwiązania zostaje do niego przypisana, aby dostarczyć kontekst dla kompilacji. Konfiguracje rozwiązania definiują, jak projekty w rozwiązaniu mają być kompilowane i wdrażane. Konfiguracje projektu są zestawem właściwości projektu, które są unikatowe dla platformy i typu kompilacji (na przykład wydanie Win32). Można edytować domyślne konfiguracje oraz można tworzyć własne konfiguracje. Aby uzyskać więcej informacji, zobacz [wprowadzenie do projektanta projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) i [NIB jak: Modyfikowanie właściwości projektu i ustawień konfiguracji](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  Spoza IDE można wykonywać następujące zadania dodatkowe:
 
@@ -53,4 +53,4 @@ Można używać programu Visual Studio do kompilacji aplikacji i do tworzenia ze
 - Zwiększ wydajność kompilacji przy użyciu kompilacji równoległych. Aby uzyskać więcej informacji, zobacz [tworzenie wielu projektów w sposób równoległy](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) lub wpis w blogu [dostrajanie kompilacji równoległych C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Zobacz też
- [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md) [opis konfiguracji kompilacji](../ide/understanding-build-configurations.md) [interpretacji platformy kompilacji](../ide/understanding-build-platforms.md) [tworzenia projektów witryny sieci Web (kompilowanie)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Jak: Tworzenie i usuwanie zależności projektu](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md) [opis konfiguracji kompilacji](../ide/understanding-build-configurations.md) [interpretacji platformy kompilacji](../ide/understanding-build-platforms.md) [tworzenia projektów witryny sieci Web (kompilowanie)](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Jak: Tworzenie i usuwanie zależności projektu](../ide/how-to-create-and-remove-project-dependencies.md)

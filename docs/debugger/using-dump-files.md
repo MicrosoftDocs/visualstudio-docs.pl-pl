@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901763"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676369"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Pliki zrzutu debugera programu Visual Studio
 
@@ -74,7 +74,7 @@ Za pomocą [debugowanie just in Time](../debugger/just-in-time-debugging-in-visu
 1. Przejdź do ścieżki i wybierz nazwę dla pliku zrzutu, a następnie wybierz **Zapisz**.
 
 >[!NOTE]
->Można tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu Windows. Na przykład **Procdump** narzędzie wiersza polecenia z [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) można tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zobacz [wymagania i ograniczenia](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) uzyskać informacji na temat korzystania z innych narzędzi do tworzenia plików zrzutu.
+>Można tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu Windows. Na przykład **Procdump** narzędzie wiersza polecenia z [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) można tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zobacz [wymagania i ograniczenia](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) uzyskać informacji na temat korzystania z innych narzędzi do tworzenia plików zrzutu.
 
 ## <a name="BKMK_Open_a_dump_file"></a> Otwieranie pliku zrzutu
 

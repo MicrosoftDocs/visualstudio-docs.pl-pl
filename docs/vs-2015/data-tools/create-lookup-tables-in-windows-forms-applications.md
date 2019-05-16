@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af9777667bef466dc97ea3a3d239f83f766816da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693952"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Termin *tabeli odnośników* dotyczy kontrolek, które są powiązane z dwoma pokrewnymi tabelami danych. Te kontrolki wyszukiwania odnośników pokazują dane z pierwszej tabeli w oparciu o wartości wybrane w drugiej tabeli.  
   
- Utworzenia tabel odnośników, można przeciągnąć główny węzeł tabeli nadrzędnej (z [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) na kontrolkę w formularzu, która jest już powiązana z kolumną w pokrewnej tabeli podrzędnej.  
+ Utworzenia tabel odnośników, można przeciągnąć główny węzeł tabeli nadrzędnej (z [okna źródeł danych](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) na kontrolkę w formularzu, która jest już powiązana z kolumną w pokrewnej tabeli podrzędnej.  
   
  Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w `Orders` tabela zawiera `CustomerID`, wskazujący, który klient złożył zamówienie. `CustomerID` to klucz obcy wskazujący rekord klienta w tabeli `Customers`. W tym scenariuszu jest rozwiniesz `Orders` tabelę **źródeł danych** okna i ustaw węzeł główny **szczegóły**. Następnie ustaw `CustomerID` kolumny na <xref:System.Windows.Forms.ComboBox> (lub innej kontrolki obsługującej powiązanie wyszukiwania odnośników), a następnie przeciągnij `Orders` węzła do formularza. Na koniec, przeciągnij `Customers` węzła na kontrolkę powiązaną z pokrewną kolumną — w tym przypadku <xref:System.Windows.Forms.ComboBox> powiązany z `CustomerID` kolumny.  
   

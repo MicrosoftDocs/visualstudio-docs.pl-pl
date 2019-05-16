@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 17b906f721bea6e4183575eced962e9ed830cda1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423269"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675457"
 ---
 # <a name="clickonce-security-and-deployment"></a>Wskazówki dotyczące wdrażania ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jest to technologia wdrażania umożliwiająca tworzenie automatycznie aktualizowane aplikacje z systemem Windows, które można instalować i uruchamiać z interakcji z użytkownikiem minimalny. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewnia pełną obsługę publikowanie i aktualizowanie aplikacji wdrożonych przy użyciu technologii ClickOnce, jeśli opracowano Twoich projektów w języku Visual Basic i Visual C#. Aby dowiedzieć się, jak wdrażanie aplikacji Visual C++, zobacz [wdrożenie rozwiązania ClickOnce dla aplikacji Visual C++](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jest to technologia wdrażania umożliwiająca tworzenie automatycznie aktualizowane aplikacje z systemem Windows, które można instalować i uruchamiać z interakcji z użytkownikiem minimalny. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewnia pełną obsługę publikowanie i aktualizowanie aplikacji wdrożonych przy użyciu technologii ClickOnce, jeśli opracowano Twoich projektów w języku Visual Basic i Visual C#. Aby dowiedzieć się, jak wdrażanie aplikacji Visual C++, zobacz [wdrożenie rozwiązania ClickOnce dla aplikacji Visual C++](https://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenie pozwala pokonać trzy główne problemy we wdrożeniu:  
   
@@ -98,8 +98,8 @@ ms.locfileid: "63423269"
 |----------|-----------------|  
 |[Strona zabezpieczeń, Projektant projektu](../ide/reference/security-page-project-designer.md)|Objawy manifestów aplikacji i wdrożenia.|  
 |[Strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md)|Generuje i umożliwia edycję manifestów aplikacji i wdrożenia dla aplikacji Visual Basic i Visual C#.|  
-|[Mage.exe (narzędzie generowania manifestu i edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Generuje manifestów aplikacji i wdrożenia dla aplikacji Visual Basic, Visual C# i Visual C++.<br /><br /> Podpisuje i podpisuje ponownie manifestów aplikacji i wdrożenia.<br /><br /> Można uruchomić z wiersza polecenia i skrypty usługi batch.|  
-|[MageUI.exe (narzędzie generowania i edytowania manifestu, klient z interfejsem graficznym)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Generuje i umożliwia edycję manifestów aplikacji i wdrożenia.<br /><br /> Podpisuje i podpisuje ponownie manifestów aplikacji i wdrożenia.|  
+|[Mage.exe (narzędzie generowania manifestu i edytowania)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Generuje manifestów aplikacji i wdrożenia dla aplikacji Visual Basic, Visual C# i Visual C++.<br /><br /> Podpisuje i podpisuje ponownie manifestów aplikacji i wdrożenia.<br /><br /> Można uruchomić z wiersza polecenia i skrypty usługi batch.|  
+|[MageUI.exe (narzędzie generowania i edytowania manifestu, klient z interfejsem graficznym)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Generuje i umożliwia edycję manifestów aplikacji i wdrożenia.<br /><br /> Podpisuje i podpisuje ponownie manifestów aplikacji i wdrożenia.|  
 |[GenerateApplicationManifest, zadanie](../msbuild/generateapplicationmanifest-task.md)|Generuje manifest aplikacji.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie do MSBuild](../msbuild/msbuild-reference.md).|  
 |[GenerateDeploymentManifest, zadanie](../msbuild/generatedeploymentmanifest-task.md)|Generuje manifest wdrożenia.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie do MSBuild](../msbuild/msbuild-reference.md).|  
 |[SignFile, zadanie](../msbuild/signfile-task.md)|Objawy manifestów aplikacji i wdrożenia.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie do MSBuild](../msbuild/msbuild-reference.md).|  

@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67dd471808b938428d1c9e3f2d5b10c36f2bc914
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435104"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697001"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizowanie zużycia energii w aplikacjach ze Sklepu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,12 +55,12 @@ Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i e
   
  **Dodawanie znaczników do języka C#, Visual Basic kodu w języku C++**  
   
- Aby dodać znacznik użytkownika do języka C#, Visual Basic kodu w języku C++ należy najpierw utworzyć [loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) obiektu. Następnie Wstaw wywołania [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) metod w punktach w kodzie, które chcesz oznaczyć. Użyj [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) w wywołaniach.  
+ Aby dodać znacznik użytkownika do języka C#, Visual Basic kodu w języku C++ należy najpierw utworzyć [loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) obiektu. Następnie Wstaw wywołania [LoggingChannel.LogMessage](https://msdn.microsoft.com/library/windows/apps/dn264210.aspx) metod w punktach w kodzie, które chcesz oznaczyć. Użyj [LoggingLevel.Information](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) w wywołaniach.  
   
  Gdy jest wykonywana metoda, znacznik użytkownika jest dodawany do danych profilowania wraz z komunikatem.  
   
 > [!NOTE]
-> - Loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics implementuje [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) interfejsu (nazywany [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) w języku C# i VB). Aby uniknąć przecieku zasobów systemu operacyjnego, należy wywołać [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() w języku C# i VB) po zakończeniu używania kanału rejestrowania.  
+> - Loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics implementuje [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) interfejsu (nazywany [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) w języku C# i VB). Aby uniknąć przecieku zasobów systemu operacyjnego, należy wywołać [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() w języku C# i VB) po zakończeniu używania kanału rejestrowania.  
 >   - Każdy otwarty kanał rejestrowania musi mieć unikatową nazwę. Próba utworzenia nowego kanału rejestrowania o takiej samej nazwie, jak nazwa aktualnie otwartego kanału, powoduje wyjątek.  
   
  Zobacz przykładową zestaw SDK Windows [przykładowe LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) przykłady.  
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
   
 ## <a name="BKMK_Other_resources"></a> Inne zasoby  
   
-- **Stan połączenia i zarządzanie kosztami** sekcje dla [C# / VB/C++ i XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) i [języków JavaScript i HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) w Centrum deweloperów Windows opisano interfejsy API Windows, które zapewniają informacje o łączności sieciowej, można użyć aplikacji, aby zminimalizować koszty ruchu sieciowego.  
+- **Stan połączenia i zarządzanie kosztami** sekcje dla [C# / VB/C++ i XAML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) i [języków JavaScript i HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) w Centrum deweloperów Windows opisano interfejsy API Windows, które zapewniają informacje o łączności sieciowej, można użyć aplikacji, aby zminimalizować koszty ruchu sieciowego.  
   
      Symulator aplikacji do Sklepu Windows w programie Visual Studio umożliwia symulowanie właściwości połączenia danych interfejsów API informacji sieciowych. Zobacz [Uruchom Windows Store aplikacji w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md)  
   

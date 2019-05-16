@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652763"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696262"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ Xamarin pozwala tworzyć aplikacje mobilne dla wielu platform przeznaczonych dla
  W poniższych tabelach identyfikuje funkcji programu Visual Studio ALM, które można oczekiwać, że do sprawnej współpracy z projektu Xamarin i te, które mają ograniczenia. Zapoznaj się z dokumentacją połączone, aby uzyskać szczegółowe informacje na temat funkcji, samodzielnie.  
   
 ## <a name="agile-tools"></a>Narzędzia agile  
- Opis łącza: **[Praca](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (przy użyciu programu Visual Studio Team Services lub TFS, w tym Team Explorer Everywhere)  
+ Opis łącza: **[Praca](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (przy użyciu programu Visual Studio Team Services lub TFS, w tym Team Explorer Everywhere)  
   
  Komentarz ogólny: wszystkie planowania i śledzenia funkcji są niezależne od typu projektu i języków programowania.  
   
 |Funkcja|Obsługiwane za pomocą platformy Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |Zarządzanie zaległości i sprintów|Tak||  
-|Śledzenie pracy|Tak||  
-|Współpraca pokoju zespołu|Yes||  
+|Śledzenie pracy|Yes||  
+|Współpraca pokoju zespołu|Tak||  
 |Tablice Kanban|Tak||  
 |Tworzenie raportów i wizualizowanie postępu|Tak||  
   
@@ -48,55 +48,55 @@ Xamarin pozwala tworzyć aplikacje mobilne dla wielu platform przeznaczonych dla
   
 |Funkcja|Obsługiwane za pomocą platformy Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
-|Diagramy sekwencji|Tak||  
+|Diagramy sekwencji|Yes||  
 |Wykresy zależności|Yes||  
 |Hierarchia wywołań|Tak||  
 |Projektant klas|Tak||  
 |Eksplorator architektury|Tak||  
 |Diagramy UML (Użyj przypadek, działania, klasy, składnika, sekwencja i DSL)|Tak||  
 |Diagramy warstwowe|Tak||  
-|Sprawdzanie poprawności warstwy|Yes||  
+|Sprawdzanie poprawności warstwy|Tak||  
   
 ## <a name="code"></a>Kod  
   
 |Funkcja|Obsługiwane za pomocą platformy Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
-|[Użyj kontroli wersji serwera Team Foundation](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) lub Visual Studio Team Services|Yes||  
-|[Wprowadzenie do usługi Git w usłudze Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Tak||  
-|[Kod analizy/usprawnianie jakości kodu (odwołania, sugerowane zmiany itp.)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Tak||  
-|[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Yes|Poza granice specyficzne dla platformy, których implementacja nie zostanie rozwiązany do czasu wykonywania.|  
-|[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Tak||  
+|[Użyj kontroli wersji serwera Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) lub Visual Studio Team Services|Tak||  
+|[Wprowadzenie do usługi Git w usłudze Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Tak||  
+|[Kod analizy/usprawnianie jakości kodu (odwołania, sugerowane zmiany itp.)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Yes||  
+|[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Tak|Poza granice specyficzne dla platformy, których implementacja nie zostanie rozwiązany do czasu wykonywania.|  
+|[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Yes||  
   
 ## <a name="build"></a>Kompilacja  
- Opis łącza: **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Opis łącza: **[Build](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Funkcja|Obsługiwane za pomocą platformy Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |Lokalny serwer TFS|Tak|Maszyny kompilacji musi być zainstalowany program Xamarin i mogą być połączone do komputera systemu OSX kompilacji dla systemu iOS. Zobacz [Konfigurowanie TFS dla programu Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin witryny sieci Web)|  
-|Serwer kompilacji w środowisku lokalnym, połączone z Visual Studio Team Services|Yes|Zobacz [serwer kompilacji](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) instrukcje.|  
-|Usługa hostowana kontrolera programu Visual Studio Team Services|Tak|Zobacz [kompilowania aplikacji platformy Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
+|Serwer kompilacji w środowisku lokalnym, połączone z Visual Studio Team Services|Tak|Zobacz [serwer kompilacji](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) instrukcje.|  
+|Usługa hostowana kontrolera programu Visual Studio Team Services|Yes|Zobacz [kompilowania aplikacji platformy Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Tworzenie definicji przy użyciu wstępnego i skryptu używanego po utworzeniu|Tak||  
 |W tym ciągłą integrację warunkowych zaewidencjonowań|Tak|Warunkowych zaewidencjonowań w przypadku repozytorium TFVC, tylko wtedy, gdy usługa Git działa w modelu żądania ściągnięcia, a nie do zaewidencjonowania.|  
   
 ## <a name="testing"></a>Testowanie  
- Opis łącza: **[Testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Opis łącza: **[Testowanie aplikacji](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Funkcja|Obsługiwane za pomocą platformy Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |Planowanie testów, tworzenie przypadków testowych i porządkowanie zestawów testów|Tak||  
-|Testowanie ręczne|Tak||  
+|Testowanie ręczne|Yes||  
 |Test Manager (nagrywanie i odtwarzanie testów)|Tak|Urządzenia Windows i emulatory systemu Android tylko w programie Visual Studio. Nagrywanie dla wszystkich urządzeń jest możliwe dzięki [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
 |Pokrycie kodu|n/d||  
-|[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Yes|Windows i Android elementów docelowych można wbudowane narzędzia MSTest. Aby uruchomić testy jednostkowe w Windows, Android i iOS, Xamarin zaleca NUnit. Zobacz [Konfigurowanie TFS dla programu Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin witryny sieci Web).|  
+|[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Tak|Windows i Android elementów docelowych można wbudowane narzędzia MSTest. Aby uruchomić testy jednostkowe w Windows, Android i iOS, Xamarin zaleca NUnit. Zobacz [Konfigurowanie TFS dla programu Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin witryny sieci Web).|  
 |[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)|Tylko Windows|Rejestrator testu interfejsu użytkownika programu Visual Studio jest Windows tylko. Dla wszystkich platform, zobacz [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Poprawianie jakości kodu  
- Opis łącza: **[Poprawianie jakości kodu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Opis łącza: **[Poprawianie jakości kodu](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Funkcja|Obsługiwane za pomocą platformy Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |[Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Tak||  
-|[Znajdowanie zduplikowanego kodu za pomocą wykrywania klonu kodu](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Yes||  
+|[Znajdowanie zduplikowanego kodu za pomocą wykrywania klonu kodu](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Yes||  
 |[Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Yes||  
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|Nie|Użyj [Xamarin Profiler](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) za pomocą programu Xamarin Studio zamiast tego. Należy pamiętać, że Profiler platformy Xamarin jest obecnie dostępna w wersji zapoznawczej, a jeszcze nie działa dla celów Windows.|  
 |[Analizowanie problemów pamięci .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Nie|Narzędzia programu Visual Studio nie ma punktów zaczepienia w Mono framework do profilowania.|  
@@ -106,7 +106,7 @@ Xamarin pozwala tworzyć aplikacje mobilne dla wielu platform przeznaczonych dla
   
 |Funkcja|Obsługiwane za pomocą platformy Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
-|Zarządzanie procesów tworzenia wersji|Yes||  
+|Zarządzanie procesów tworzenia wersji|Tak||  
 |Wdrażanie serwerów na potrzeby ładowania bezpośredniego za pośrednictwem skryptów|Tak||  
 |Przekazywanie do sklepu z aplikacjami|Częściowe|Rozszerzenia są dostępne, można zautomatyzować ten proces dla niektóre sklepy z aplikacjami.  Zobacz [rozszerzenia programu Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), na przykład [rozszerzenia do witryny Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
@@ -115,4 +115,4 @@ Xamarin pozwala tworzyć aplikacje mobilne dla wielu platform przeznaczonych dla
   
 |Funkcja|Obsługiwane za pomocą platformy Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
-|Awarii dystrybucji analizy i telemetrię oraz wersji beta|Yes||
+|Awarii dystrybucji analizy i telemetrię oraz wersji beta|Tak||

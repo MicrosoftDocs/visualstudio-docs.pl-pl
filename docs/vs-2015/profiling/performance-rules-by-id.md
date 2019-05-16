@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691694"
 ---
 # <a name="performance-rules-by-id"></a>Zasady wydajności według ID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Ostrzeżenie|Opis|
 |[DA0006: Przesłoń metodę Equals() dla typów wartości](../profiling/da0006-override-equals-parens-for-value-types.md)|Wywołania do metody Equals i operatory równości typu publicznego wartości są znaczna część danych profilowania. Rozważ zaimplementowanie bardziej efektywną metodę.|  
 |[DA0007: Unikaj używania wyjątków w przepływie sterowania](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|Wysoki współczynnik obsługi wyjątków w .NET Framework zostały wywołane w danych profilowania. Należy rozważyć użycie inną logikę przepływu sterowania w celu zmniejszenia liczby wyjątków, które są generowane.|  
 |[DA0008: Zebrano kilka próbek](../profiling/da0008-few-samples-collected.md)|Tylko kilka przykładów zostały zebrane podczas uruchomienia profilowania. Należy wziąć pod uwagę dłużej przebiegu lub zwiększenie częstotliwości próbkowania dla uzyskania bardziej znaczących wyników.|  
-|[DA0009: Wysoka wartość licznika % czasu w trybie JIT](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|W kompilatorze tylko w czas (JIT) był poświęcony na znacznego procentu czasu wykonywania aplikacji.|  
+|[DA0009: Wysoka wartość licznika % czasu w trybie JIT](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|W kompilatorze tylko w czas (JIT) był poświęcony na znacznego procentu czasu wykonywania aplikacji.|  
 |[DA0010: Kosztowna funkcja GetHashCode](../profiling/da0010-expensive-gethashcode.md)|Wywołania metody GetHashCode tego typu są znaczna część danych profilowania, lub metoda przydziela pamięć.|  
 |[DA0011: Kosztowna funkcja CompareTo](../profiling/da0011-expensive-compareto.md)|CompareTo — metoda tego typu jest kosztowne lub przydziela pamięć.|  
 |[DA0012: Znaczne odbicie](../profiling/da0012-significant-amount-of-reflection.md)|Wywołania do metody System.Reflection, takie jak element InvokeMember i GetMember lub typ metod, takich jak MemberInvoke są znaczna część danych profilowania. Gdy to możliwe, należy wziąć pod uwagę zastąpienie tych metod wczesne powiązania do metod zestawów zależnych.|  

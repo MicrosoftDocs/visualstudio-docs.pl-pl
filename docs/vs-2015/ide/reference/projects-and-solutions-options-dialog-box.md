@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92dac82de96323e1d057991e6570715371c9b272
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2bdcfc2f6a4b7655a6f4f2e335310e938e5acfed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438045"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701981"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Opcje projektów i rozwiązań — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63438045"
 Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] folderów projektu i określa domyślne zachowanie **dane wyjściowe** oknie **listy zadań**, i **Eksploratora rozwiązań** jako projekty są opracowane i wbudowane. Aby otworzyć to okno dialogowe, kliknij przycisk **narzędzia / Opcje** rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.  
   
 > [!NOTE]
-> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ogólne ustawienia projektowe** na uwadze. Aby wyświetlić lub zmienić ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ogólne ustawienia projektowe** na uwadze. Aby wyświetlić lub zmienić ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Ustawienia  
  **Lokalizacja projektów**  
@@ -58,7 +58,7 @@ Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fo
  Jeśli spróbujesz utworzyć nowy projekt lub Otwórz istniejący projekt w lokalizacji, która nie jest w pełni zaufany (na przykład na ścieżkę UNC lub ścieżki HTTP), zostanie wyświetlony komunikat. Użyj tej opcji, aby określić, czy komunikat jest wyświetlany za każdym razem, spróbuj utworzyć lub otworzyć projekt w lokalizacji, która nie jest w pełni zaufany.  
   
  **Pokaż okno dane wyjściowe, gdy rozpoczyna się kompilacja**  
- Automatycznie wyświetla okno danych wyjściowych w środowisku IDE na początku rozwiązania kompilacji. Aby uzyskać więcej informacji, zobacz [jak: Kontrolowanie okna danych wyjściowych](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Ta opcja jest domyślnie włączona.  
+ Automatycznie wyświetla okno danych wyjściowych w środowisku IDE na początku rozwiązania kompilacji. Aby uzyskać więcej informacji, zobacz [jak: Kontrolowanie okna danych wyjściowych](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Ta opcja jest domyślnie włączona.  
   
  **Monituj o symboliczną zmianę nazwy podczas zmieniania nazw plików**  
  Po wybraniu wyświetla komunikat dialogowe z pytaniem, czy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] również należy zmienić wszystkie odwołania w projekcie do elementu kodu.  

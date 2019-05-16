@@ -10,12 +10,12 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1d34642bd805469283ad22d6b40054596ed00a9e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d48b07dd5e4fc1fe745e3669041884c1b8eacd9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441565"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703146"
 ---
 # <a name="how-to-update-the-status-bar"></a>Instrukcje: Aktualizacja paska stanu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "63441565"
   
 - Edytor informacji  
   
-  Aby uzyskać więcej informacji, zobacz [paski stanu](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
+  Aby uzyskać więcej informacji, zobacz [paski stanu](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
   
   IDE automatycznie wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metody usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> wdrożenia po uaktywnieniu okna dokumentu.  
   
   Implementujący pakietu VSPackage jest odpowiedzialny za aktualizowanie tekst statusu na pasku stanu. IDE resetuje ten ciąg na "GOTOWY", jeśli pole tekstowe stan jest ustawiony na pusty tekst ("") w czasie bezczynności.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Paski stanu](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)
+ [Paski stanu](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)

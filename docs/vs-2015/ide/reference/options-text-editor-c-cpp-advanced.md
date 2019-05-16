@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a17931b9d7ccb8ef60158d6ea6d22e8b2f27b031
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441414"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697163"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opcje, edytor tekstu, C/C++, zaawansowane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Zmieniając tych opcji, możesz zmienić zachowanie związane z technologii Inte
  Dostępu do tej strony, w **opcje** rozwiń w lewym okienku w oknie dialogowym **edytora tekstów**, rozwiń węzeł **C/C++**, a następnie wybierz **zaawansowane**.  
   
 > [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Przeglądanie nawigacji  
  Nigdy nie należy wybrać te opcje, z wyjątkiem w rzadkich przypadkach, gdy rozwiązanie jest tak duża, że działanie bazy danych wykorzystuje niedopuszczalne ilość zasobów systemowych.  
@@ -124,7 +124,7 @@ Zmieniając tych opcji, możesz zmienić zachowanie związane z technologii Inte
  **Maksymalna liczba buforowanych jednostek tłumaczenia**  
  Maksymalna liczba jednostek tłumaczenia, które będą znajdować się aktywne w dowolnym momencie dla żądań IntelliSense. Należy określić wartość z przedziału od 2 do 15. Ten numer bezpośrednio związana z oczekiwaną maksymalną liczbę procesów VCPkgSrv.exe, które będą uruchamiane (dla danego wystąpienia programu Visual Studio). Wartość domyślna to 2, ale jeśli masz dostępnej pamięci, można zwiększyć tę wartość i prawdopodobnie osiągnąć nieco większą wydajność w technologii IntelliSense.  
   
- Aby uzyskać więcej informacji na temat jednostek tłumaczenia, zobacz [etapy translacji](http://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
+ Aby uzyskać więcej informacji na temat jednostek tłumaczenia, zobacz [etapy translacji](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
   
  **Wyłącz agresywne listy**  
  Listę elementów członkowskich nie jest wyświetlany podczas wpisywania nazwy typu lub zmiennej. Lista jest wyświetlana tylko wtedy, gdy możesz wpisać znaki zatwierdzające zgodnie z definicją w **znaki zatwierdzania List składowych** opcji.  

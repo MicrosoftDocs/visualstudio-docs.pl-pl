@@ -19,12 +19,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 785e3960148d627e437d15e8662dfd76dccc53c0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eb21495954801d55c1db0bb9156a813ab73db683
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659335"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687099"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Odwołanie do zadania WPF MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +60,4 @@ Proces kompilacji Windows Presentation Foundation (WPF) Microsoft build engine (
  Dodaje  **\<hostInBrowser / >** elementu w manifeście aplikacji (*projectname*. exe.manifest) podczas [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] projekt został skompilowany.  
   
 ## <a name="see-also"></a>Zobacz też  
- [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
+ [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

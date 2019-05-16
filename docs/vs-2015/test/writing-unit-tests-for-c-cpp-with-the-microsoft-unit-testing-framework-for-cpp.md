@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437965"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695283"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Framework testów jednostkowych firmy Microsoft dla języka C++ pozwala pisać testy jednostkowe dla projektów języka C++.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
   
     - `#include` `.h` pliku, który zawiera deklaracje zewnętrzne dostępne funkcje biblioteki DLL.  
   
-         `.h` Plik powinien zawierać deklaracje funkcji oznaczone `_declspec(dllimport)`. Alternatywnie możesz wyeksportować metody przy użyciu plików DEF. Aby uzyskać więcej informacji, zobacz [importowanie i eksportowanie](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
+         `.h` Plik powinien zawierać deklaracje funkcji oznaczone `_declspec(dllimport)`. Alternatywnie możesz wyeksportować metody przy użyciu plików DEF. Aby uzyskać więcej informacji, zobacz [importowanie i eksportowanie](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
   
          Testy jednostkowe mogą uzyskiwać dostęp tylko funkcje, które są eksportowane z biblioteki DLL w ramach testu.  
   
@@ -168,7 +168,7 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
   
      ![Nowy kod projektu i .h plik DLL za pomocą interfejsu API makra](../test/media/utecpp07.png "UteCpp07")  
   
-     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione składowe klasy mają być wyświetlane poza bibliotekę DLL. Aby uzyskać więcej informacji, zobacz [korzystanie z dllimport i dllexport w klasach C++](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
+     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione składowe klasy mają być wyświetlane poza bibliotekę DLL. Aby uzyskać więcej informacji, zobacz [korzystanie z dllimport i dllexport w klasach C++](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
   
 4. W pliku .cpp główną należy dodać minimalny treści funkcji:  
   
@@ -395,7 +395,7 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Using Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [Przegląd interoperacyjności kodu zarządzanego/niezarządzanego](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [Przegląd interoperacyjności kodu zarządzanego/niezarządzanego](https://msdn.microsoft.com/library/ms973872.aspx)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)   
- [Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Importowanie i eksportowanie](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Importowanie i eksportowanie](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

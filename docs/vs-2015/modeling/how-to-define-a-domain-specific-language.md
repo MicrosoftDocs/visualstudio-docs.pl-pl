@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 863daa41820b8a08f6cd9a6af26c6169fcda97db
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441062"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697258"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 ##### <a name="to-test-the-new-domain-classes"></a>Aby przetestować nowe klasy domeny  
   
-1. **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1. **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. **Twórz i uruchamiaj język DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie klasy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie doświadczalnym. W doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.  
   

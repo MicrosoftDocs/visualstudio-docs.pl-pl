@@ -9,18 +9,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eb9da0913b3ce77ea30fd58d5243d5a380d19f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c3691f782f317667b56f6bf3641c0f4c6a703eda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954469"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697570"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Instrukcje: Publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależności od motywu, wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), więc należy włączyć je ręcznie. Włączanie stylów wizualnych dla aplikacji WPF i opublikować rozwiązanie spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu, a proces publikowania aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych zobacz [wizualne omówienie style](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Aby uzyskać więcej informacji na temat komunikatu o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
+Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależności od motywu, wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), więc należy włączyć je ręcznie. Włączanie stylów wizualnych dla aplikacji WPF i opublikować rozwiązanie spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu, a proces publikowania aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych zobacz [wizualne omówienie style](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Aby uzyskać więcej informacji na temat komunikatu o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
  Aby naprawić błąd i opublikować rozwiązanie, należy wykonać następujące zadania:
 
@@ -125,7 +125,7 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
 
 1. Otwórz **wiersz polecenia programu Visual Studio**.
 
-    Aby uzyskać więcej informacji o sposobie otwierania **Visual Studio Command Prompt**, zobacz [wiersz polecenia](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
+    Aby uzyskać więcej informacji o sposobie otwierania **Visual Studio Command Prompt**, zobacz [wiersz polecenia](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
 
    > [!NOTE]
    > Pozostałe kroki zakładają następujące rozwiązania:
@@ -193,5 +193,5 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
 ## <a name="see-also"></a>Zobacz też
 
 [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
-[style wizualne omówienie](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
-[wiersz polecenia](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
+[style wizualne omówienie](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
+[wiersz polecenia](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)

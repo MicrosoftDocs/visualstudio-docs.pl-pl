@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cba6f91dd6dc0bb826531a312dc6ca5c94b21a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc5384fcff280c8a38875878ac32051b490624f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558745"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704174"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
   
 - Utwórz nową **aplikacji Windows**.  
   
-- Tworzenie i konfigurowanie zestawu danych za pomocą [Kreatora konfiguracji źródła danych](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Tworzenie i konfigurowanie zestawu danych za pomocą [Kreatora konfiguracji źródła danych](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Wybierz kontrolkę do utworzenia w formularzu podczas przeciągania elementów z **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -57,7 +57,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
   
 2. Nadaj projektowi nazwę **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **TableAdapterDbDirectMethodsWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -153,7 +153,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po utworzeniu formularza powiązanych z danymi. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:  
   
-- Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zapytania parametrycznego do Windows Forms aplikacji](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zapytania parametrycznego do Windows Forms aplikacji](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
 - Dodawanie dodatkowych tabel do zestawu danych, wybierając **Konfigurowanie zestawu danych za pomocą kreatora** z poziomu **źródeł danych** okna. Można dodawać formanty, które wyświetlają pokrewne dane, przeciągając pokrewne węzły na formularzu. 
   

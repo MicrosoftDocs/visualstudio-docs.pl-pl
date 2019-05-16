@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d7df6e4a4bddc2d3e9bf7ab84375a65a6d2c98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700652"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Weryfikacja kodu przy użyciu diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
 |Ukrywanie wszystkich pominiętych błędów w **lista błędów** okna|Kliknij prawym przyciskiem myszy w dowolnym miejscu w **lista błędów** okna, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pokaż wszystkie pominięte błędy**.|  
   
 ## <a name="ValidateAuto"></a> Automatycznie Walidacja kodu  
- Walidację warstwy możesz wykonać przy każdym uruchomieniu lokalnej kompilacji. Jeśli Twój zespół używa programu Team Foundation Build, możesz wykonać walidację warstwy z bramkowanymi ewidencjonowaniami, którą można określić, tworząc niestandardowe zadanie MSBuild, a następnie używając raportów kompilacji do zbierania błędów walidacji. Aby utworzyć kompilacje z bramkowanym ewidencjonowaniem, zobacz [używać procesu kompilacji ewidencjonowanej warunkowo w celu sprawdzenia poprawności zmian](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
+ Walidację warstwy możesz wykonać przy każdym uruchomieniu lokalnej kompilacji. Jeśli Twój zespół używa programu Team Foundation Build, możesz wykonać walidację warstwy z bramkowanymi ewidencjonowaniami, którą można określić, tworząc niestandardowe zadanie MSBuild, a następnie używając raportów kompilacji do zbierania błędów walidacji. Aby utworzyć kompilacje z bramkowanym ewidencjonowaniem, zobacz [używać procesu kompilacji ewidencjonowanej warunkowo w celu sprawdzenia poprawności zmian](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Aby walidować kod automatycznie podczas lokalnej kompilacji  
   
@@ -197,15 +197,15 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
   
    Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors). Aby uzyskać więcej informacji na temat [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], zobacz:  
   
-- [Kompiluj aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Kompiluj aplikację](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-- [Użyj domyślnego szablonu procesu kompilacji](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [Użyj domyślnego szablonu procesu kompilacji](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
-- [Modyfikowanie starszej kompilacji oparty na UpgradeTemplate.xaml](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [Modyfikowanie starszej kompilacji oparty na UpgradeTemplate.xaml](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
-- [Dostosowywanie szablonu procesu kompilacji](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Dostosowywanie szablonu procesu kompilacji](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-- [Monitoruj postęp kompilacji uruchomiony](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [Monitoruj postęp kompilacji uruchomiony](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ## <a name="TroubleshootingValidation"></a> Rozwiązywanie problemów z problemy ze sprawdzaniem poprawności warstwy  
  W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji na temat tych błędów, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).  

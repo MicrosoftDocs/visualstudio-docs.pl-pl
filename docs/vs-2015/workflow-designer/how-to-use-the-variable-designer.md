@@ -11,15 +11,15 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0db5cba76f464e559f46963afd0be6b663ad6d6f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ebfcf53ce4d03f676930bd905baa0723c17e481
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407873"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697092"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Instrukcje: Używanie projektanta zmiennych
-Projektanta zmiennych służy do tworzenia zmiennych do użytku w scenariuszach powiązanie danych i instrukcji warunkowych. Projektant jest dostępne po kliknięciu **zmienne** przycisku w lewym dolnym rogu obszaru roboczego projektowania. Projektant zawiera listę zmiennych, które są wyświetlane w formie tabelarycznej i mogą być sortowane przez każdy z nagłówków kolumn, z wyjątkiem **domyślne** kolumny. Każda zmienna zawiera nazwę, typ zmiennej, zakresu i wartość domyślną (jeśli istnieje). Nazwa i domyślne wartości są tekst do edycji i typie i zakresie są rozwijane. Zakres jest działania, który został wybrany, gdy wywołano projektanta zmiennych. Jeśli nie można utworzyć zmiennej w zakresie wyboru, zakres będzie domyślnie do najbliższej działania nadrzędnego zaznaczenia, umożliwiający zmiennych, które można utworzyć w swoim zakresie. [!INCLUDE[crabout](../includes/crabout-md.md)] zmienne, zobacz [zmienne i argumenty](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
+Projektanta zmiennych służy do tworzenia zmiennych do użytku w scenariuszach powiązanie danych i instrukcji warunkowych. Projektant jest dostępne po kliknięciu **zmienne** przycisku w lewym dolnym rogu obszaru roboczego projektowania. Projektant zawiera listę zmiennych, które są wyświetlane w formie tabelarycznej i mogą być sortowane przez każdy z nagłówków kolumn, z wyjątkiem **domyślne** kolumny. Każda zmienna zawiera nazwę, typ zmiennej, zakresu i wartość domyślną (jeśli istnieje). Nazwa i domyślne wartości są tekst do edycji i typie i zakresie są rozwijane. Zakres jest działania, który został wybrany, gdy wywołano projektanta zmiennych. Jeśli nie można utworzyć zmiennej w zakresie wyboru, zakres będzie domyślnie do najbliższej działania nadrzędnego zaznaczenia, umożliwiający zmiennych, które można utworzyć w swoim zakresie. [!INCLUDE[crabout](../includes/crabout-md.md)] zmienne, zobacz [zmienne i argumenty](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
   
  Kolejność sortowania nie została zastosowana, dopóki użytkownik jawnie używa sortowania formantów, zostanie zamknięty i ponownie otwiera projektanta zmiennych lub tworzy innej zmiennej.  
   
@@ -38,5 +38,5 @@ Projektanta zmiennych służy do tworzenia zmiennych do użytku w scenariuszach 
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie projektanta przepływu pracy](../workflow-designer/using-the-workflow-designer.md)   
- [Zmienne i argumenty](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)   
+ [Zmienne i argumenty](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)   
  [Instrukcje: Używanie projektanta argumentów](../workflow-designer/how-to-use-the-argument-designer.md)

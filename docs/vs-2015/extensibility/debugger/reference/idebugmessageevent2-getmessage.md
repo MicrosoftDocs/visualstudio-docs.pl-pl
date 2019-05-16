@@ -13,12 +13,12 @@ ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e571a7ba2116c093f8d4e4afd78fffc5014ae906
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 14eb540962db3a806273d5c76facb7f9bf25dee7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759150"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685896"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ int GetMessage( 
  [out] Zwraca komunikat.  
   
  `pdwType`  
- [out] Zwraca typ wiadomości, za pomocą Konwencji Win32 `MessageBox` funkcji. Zobacz [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) funkcji, aby uzyskać szczegółowe informacje.  
+ [out] Zwraca typ wiadomości, za pomocą Konwencji Win32 `MessageBox` funkcji. Zobacz [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) funkcji, aby uzyskać szczegółowe informacje.  
   
  `pbstrHelpFileName`  
  [out w] Zwraca nazwę pliku pomocy. Może być wartością null (C++) lub wartość pustą (C#), jeśli nie ma żadnego pliku pomocy.  
@@ -69,4 +69,4 @@ int GetMessage( 
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)   
- [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)
+ [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)

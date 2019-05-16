@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cab72753016c49b4d959d2224dbfd99f8a0c07bb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ec230a5bf32ab6e70967e76d31030af3a7a351a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433146"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687598"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definiowanie polecenia menu w diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
    |                                                                                                    Tematy pomocy                                                                                                    |                                                                                                  Co to pozwala zrobić                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Zdefiniuj składniki za pomocą [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
+   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Zdefiniuj składniki za pomocą [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Odczytaj i Zamień właściwości elementów modelu.                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Utwórz elementy modelu, Modyfikuj kształty na diagramach.                                                                                       |
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Zdefiniuj model obsługi zdarzeń.<br /><br /> Hermetyzuj serię zmian do modelu. Aby uzyskać więcej informacji, zobacz [aktualizacji modelu UML łącza za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md). |

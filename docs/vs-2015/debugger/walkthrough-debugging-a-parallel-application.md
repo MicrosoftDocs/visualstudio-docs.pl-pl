@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092984"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705279"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Przewodnik: Debugowanie aplikacji równoległych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległej. Te okna pomaga zrozumieć i zweryfikować zachowanie środowiska uruchomieniowego kodu, który używa [Biblioteka zadań równoległych (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) lub [współbieżność środowiska wykonawczego](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punkty przerwania. Po kodu przerywa, instruktaż przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows, aby go sprawdzić.  
+Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległej. Te okna pomaga zrozumieć i zweryfikować zachowanie środowiska uruchomieniowego kodu, który używa [Biblioteka zadań równoległych (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) lub [współbieżność środowiska wykonawczego](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punkty przerwania. Po kodu przerywa, instruktaż przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows, aby go sprawdzić.  
   
  Ten przewodnik zawiera wskazówki te zadania:  
   
@@ -308,7 +308,7 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
  [Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
- [Programowanie równoległe](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Współbieżność środowiska wykonawczego](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Programowanie równoległe](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Współbieżność środowiska wykonawczego](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)   
  [Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425400"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692555"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
 5. Dodawanie kodu, aby wyświetlić schemat XML oparte na pliku XML w <xref:System.Windows.Forms.TextBox> kontroli  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu, które zostanie wyświetlona, może się różnić od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji korzystasz. Aby zmienić swoje ustawienia na **narzędzia** menu, wybierz opcję**Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu, które zostanie wyświetlona, może się różnić od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji korzystasz. Aby zmienić swoje ustawienia na **narzędzia** menu, wybierz opcję**Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu  
  W tym kroku utworzysz projekt języka Visual Basic lub Visual C#, który zawiera ten przewodnik.  
@@ -59,7 +59,7 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
   
 2. Nadaj projektowi nazwę `ReadingXML`.  
   
-3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **ReadingXML** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -246,7 +246,7 @@ W tym instruktażu dowiesz się, podstawowe informacje dotyczące odczytywania p
 - Edytowanie danych w zestawie danych, a następnie zapisać ją z bazą danych.
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki dotyczące danych](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Wskazówki dotyczące danych](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Przygotowanie aplikacji na odbieranie danych](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Przygotowanie aplikacji na odbieranie danych](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

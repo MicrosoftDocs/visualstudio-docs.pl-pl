@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea9f23147c6ad7a8b3b28f799b90044763d36d16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66adcdeca1aa794649b42f4ae153d9b2f879deff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441386"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697137"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opcje, edytor tekstu, C/C++, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Pozwala zmienić domyślne zachowanie Edytora kodu podczas programowania w C lub
  Dostępu do tej strony, w **opcje** rozwiń w lewym okienku w oknie dialogowym **edytora tekstów**, rozwiń węzeł **C/C++**, a następnie kliknij przycisk **formatowanie** .  
   
 > [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="cc-options"></a>Opcje C/C++  
  **Włącz automatyczne etykietki narzędzi z szybkie informacje**  
@@ -66,16 +66,16 @@ Pozwala zmienić domyślne zachowanie Edytora kodu podczas programowania w C lub
  Po przywróceniu pliku do edytora tekstów można włączyć funkcję tworzenia konspektów. Aby uzyskać więcej informacji, zobacz [konspekt](../../ide/outlining.md). Gdy ta opcja jest zaznaczona, tworzenie konspektów jest włączone po otwarciu pliku.  
   
  **Automatyczne tworzenie konspektu bloków regionu #pragma**  
- Kiedy ta opcja jest zaznaczona, automatyczne tworzenie konspektu dla [dyrektyw pragma](http://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f) jest włączona. Dzięki temu można rozwinąć lub zwinąć bloki regionów pragmy w trybie konspektu.  
+ Kiedy ta opcja jest zaznaczona, automatyczne tworzenie konspektu dla [dyrektyw pragma](https://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f) jest włączona. Dzięki temu można rozwinąć lub zwinąć bloki regionów pragmy w trybie konspektu.  
   
  **Automatyczny konspekt bloków instrukcji**  
  Kiedy ta opcja jest zaznaczona, automatyczne tworzenie konspektu jest włączone dla następujących konsruktów instrukcji:  
   
-- [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
+- [if-else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
   
-- [switch, instrukcja (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
+- [switch, instrukcja (C++)](https://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
   
-- [while, instrukcja (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
+- [while, instrukcja (C++)](https://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne, środowisko, okno dialogowe Opcje](../../ide/reference/general-environment-options-dialog-box.md)   

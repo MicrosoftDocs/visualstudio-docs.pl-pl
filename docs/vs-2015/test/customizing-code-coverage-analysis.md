@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416644"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686436"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
  Wybierz **testu**, **ustawienia testu**, **zaznacz plik ustawień testu** i zaznacz plik .runsettings. Plik pojawi się w menu Ustawienia testu, gdzie można zaznaczyć go lub usunąć. Zaznaczona, plik .runsettings ma zastosowanie przy każdym użyciu **Analizuj pokrycie kodu**.  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Dostosowywanie ustawień uruchamiania w teście wiersza polecenia  
- Aby uruchomić testy z wiersza polecenia, należy użyć narzędzia vstest.console.exe. Plik ustawień jest parametrem tego narzędzia. Aby uzyskać więcej informacji, zobacz [korzystanie z VSTest.console z wiersza polecenia](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
+ Aby uruchomić testy z wiersza polecenia, należy użyć narzędzia vstest.console.exe. Plik ustawień jest parametrem tego narzędzia. Aby uzyskać więcej informacji, zobacz [korzystanie z VSTest.console z wiersza polecenia](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
 1. Uruchom wiersz polecenia programisty dla programu Visual Studio:  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  

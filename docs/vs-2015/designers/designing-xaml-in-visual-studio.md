@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bca0b07922d1b0b0d1a218fcccfa51e68a64e7e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 437c6cc7af2b0337b362e14db19deb9584a3d412
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114785"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695538"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Projektowanie XAML w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Program Visual Studio i Blend for Visual Studio udostępniają narzędzia wizualne dla kompilowania interesujące interfejsy użytkownika i rozbudowane treści multimedialne środowisk dla komputerów opartych na XAML Windows, sieci web, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), i [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx)aplikacji. Zarówno korzystają ze wspólnego zestawu, projektowania i okien narzędzi i Edytor XAML, ale program Blend for Visual Studio udostępnia narzędzia do projektowania dodatkowe dla bardziej zaawansowanych zadań, takich jak animacji i zachowania.
+Program Visual Studio i Blend for Visual Studio udostępniają narzędzia wizualne dla kompilowania interesujące interfejsy użytkownika i rozbudowane treści multimedialne środowisk dla komputerów opartych na XAML Windows, sieci web, [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), i [Windows Store](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx)aplikacji. Zarówno korzystają ze wspólnego zestawu, projektowania i okien narzędzi i Edytor XAML, ale program Blend for Visual Studio udostępnia narzędzia do projektowania dodatkowe dla bardziej zaawansowanych zadań, takich jak animacji i zachowania.
 
 ## <a name="choosing-the-right-tool"></a>Wybór właściwego narzędzia
  Ulubionego narzędzia projektowania jest w dużym stopniu zależy od zestawu umiejętności. Jeśli jesteś bardziej zorientowane na kod, można napisać kod XAML w programie Visual Studio do wykonywania zadań projektowania nawet Zaawansowane. Jeśli jesteś bardziej zorientowane na projekt, program Blend for Visual Studio umożliwia wykonywanie zaawansowanych zadań bez konieczności pisania kodu.
@@ -41,11 +41,11 @@ Program Visual Studio i Blend for Visual Studio udostępniają narzędzia wizual
 
      ![Środowisko ponownego ładowania pliku](../designers/media/blendfilereload.png "BlendFileReload")
 
-- **Synchronizowane układy i ustawienia:** Układy niestandardowe umożliwiają zapisać i zastosować dostosowania układu okna narzędzia. Program Visual Studio zsynchronizuje te dostosowania i preferencje dotyczące programu Visual Studio i Blend for Visual Studio na maszynach po zalogowaniu się przy użyciu tego samego konta Microsoft. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+- **Synchronizowane układy i ustawienia:** Układy niestandardowe umożliwiają zapisać i zastosować dostosowania układu okna narzędzia. Program Visual Studio zsynchronizuje te dostosowania i preferencje dotyczące programu Visual Studio i Blend for Visual Studio na maszynach po zalogowaniu się przy użyciu tego samego konta Microsoft. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 - **Typowe Eksploratora rozwiązań:** Eksplorator rozwiązań pozwala zorganizowany widok projektów i ich pliki, a także uzyskać dostęp do poleceń związanych z nimi. Za pomocą Eksploratora rozwiązań łatwiej jest pracować z projektami dużych przedsiębiorstw. Zobacz [rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Team Explorer:** Za pomocą programu Team Explorer można zarządzać projektów z repozytoriami GIT lub TFS, ułatwiające współpracę zespołową. Zobacz [pracy w programie Team Explorer](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+- **Team Explorer:** Za pomocą programu Team Explorer można zarządzać projektów z repozytoriami GIT lub TFS, ułatwiające współpracę zespołową. Zobacz [pracy w programie Team Explorer](https://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 
 - **Pakiet NuGet:** Możesz zarządzać pakietami NuGet w programie Visual Studio i Blend for Visual Studio. NuGet to Menedżer pakietów dla platformy .NET Framework, która upraszcza instalacji i usuwania pakietów za pomocą rozwiązania.
 

@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Dowiedz się, jak znaleźć i pobrać produktów firmy Microsoft, zawartych w ramach subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953739"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697783"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Za pomocą dla subskrybentów pliki do pobrania w ramach subskrypcji programu Visual Studio
 W ramach korzyści dla subskrybenta masz dostęp do szerokiej gamy programów do pobrania.
@@ -31,7 +31,7 @@ Istnieje kilka powodów dlaczego poszczególnych produktów mogą nie być dost�
 - **Oprogramowanie nadmiarowe.** Niektóre pakiety Office i autonomiczny urząd pliki do pobrania i klucze produktów nie są już dostępne w subskrypcjach obejmujących pakiet Office. Pliki do pobrania i klucze produktów są dostępne dla odpowiedniego najwyższego typu pakietu Office w tej samej wersji.  Na przykład w przypadku wyszukiwania dla programu PowerPoint 2010, wyszukiwanie nie generuje żadnych wyników.  Można jednak wyszukiwania dla pakietu Office 2010 — pakiet Office, który zawierał PowerPoint 2010 - i pobrać pakiet.
 
 ## <a name="what-do-i-get"></a>Jakie korzyści?
-Liczba i typ plików do pobrania zależy od subskrypcji członkostwa poziom i programów.  Na przykład standardowy subskrypcją programu Visual Studio Enterprise, mogą mieć różne pliki do pobrania dostępne dla nich od subskrybentów, którzy uzyskali swoje subskrypcje w ramach subskrypcji programu Microsoft Partner Network czy BizSpark.  Aby dowiedzieć się więcej o jakie pliki do pobrania są dostępne dla poszczególnych poziomów subskrypcji, Pobierz listę [produktów, korzyści z poziomu](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
+Liczba i typ plików do pobrania zależy od subskrypcji członkostwa poziom i programów.  Na przykład standardowy subskrypcją programu Visual Studio Enterprise, mogą mieć różne pliki do pobrania dostępne dla nich od subskrybentów, którzy uzyskali swoje subskrypcje w ramach subskrypcji programu Microsoft Partner Network czy BizSpark.  Aby dowiedzieć się więcej o jakie pliki do pobrania są dostępne dla poszczególnych poziomów subskrypcji, Pobierz listę [produktów, korzyści z poziomu](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx).
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

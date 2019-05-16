@@ -10,17 +10,17 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4427931b079671a19e647860b263105ffdf52bd4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435540"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695019"
 ---
 # <a name="creating-a-settings-category"></a>Tworzenie kategorii ustawień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używać go do wartości, aby zapisać i przywrócić wartości z pliku ustawień. Kategoria ustawień jest grupą powiązanych właściwości, które są wyświetlane jako "punkt ustawień niestandardowych;" oznacza to, że pole wyboru w **importowanie i eksportowanie ustawień** kreatora. (Można znaleźć na **narzędzia** menu.) Ustawienia są zapisywane lub przywrócone jako kategorii, a poszczególne ustawienia nie są wyświetlane w kreatorze. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używać go do wartości, aby zapisać i przywrócić wartości z pliku ustawień. Kategoria ustawień jest grupą powiązanych właściwości, które są wyświetlane jako "punkt ustawień niestandardowych;" oznacza to, że pole wyboru w **importowanie i eksportowanie ustawień** kreatora. (Można znaleźć na **narzędzia** menu.) Ustawienia są zapisywane lub przywrócone jako kategorii, a poszczególne ustawienia nie są wyświetlane w kreatorze. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Tworzenie kategorii ustawień przez wywodzić ją z <xref:Microsoft.VisualStudio.Shell.DialogPage> klasy.  
   

@@ -25,17 +25,17 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 38d553abd50d1b5870adc31e08d349f9f84c0579
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a492a1db8b65cad74d02cec0f43bf0c81461730
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786320"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687509"
 ---
 # <a name="report-hook-functions"></a>Raportowanie funkcji punktów zaczepienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Raport funkcji podłączania zainstalowane za pomocą [_CrtSetReportHook](http://msdn.microsoft.com/library/1ae7c64f-8c84-4797-9574-b59f00f7a509), jest wywoływana za każdym razem [_CrtDbgReport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) generuje raport debugowania. Używając go, między innymi do filtrowania raportów skoncentrować się na określonych typów alokacji. Funkcja podłączania raport powinien mieć prototypu, jak pokazano poniżej:  
+Raport funkcji podłączania zainstalowane za pomocą [_CrtSetReportHook](https://msdn.microsoft.com/library/1ae7c64f-8c84-4797-9574-b59f00f7a509), jest wywoływana za każdym razem [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) generuje raport debugowania. Używając go, między innymi do filtrowania raportów skoncentrować się na określonych typów alokacji. Funkcja podłączania raport powinien mieć prototypu, jak pokazano poniżej:  
   
 ```  
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
@@ -53,4 +53,4 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie pisanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 Sample](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [crt_dbg2 Sample](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

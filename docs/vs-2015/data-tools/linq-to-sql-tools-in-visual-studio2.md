@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 24b874ab71cba23a3fe6cf4a6fb36293d6753935
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384045"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697759"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL Tools w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ LINQ do SQL była pierwszym technologii mapowania obiektowo relacyjny, wydane pr
 
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Ma dwa różne obszary, na jego powierzchnię projektową: jednostki w okienku po lewej stronie, a okienko metod po prawej stronie. W okienku jednostek jest główna powierzchnia projektowa wyświetlającą klas jednostek, skojarzeń i hierarchii dziedziczenia. Okienko metod jest powierzchni projektu, który wyświetla <xref:System.Data.Linq.DataContext> metod, które są mapowane do procedur przechowywanych i funkcji.
 
- [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Udostępnia powierzchnia projektowania wizualnego służące do tworzenia [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klasy encji i skojarzeń (relacji), które są oparte na obiektach w bazie danych. Innymi słowy [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] służy do tworzenia modelu obiektów w aplikacji, która mapuje do obiektów w bazie danych. Polecenie to generuje także silnie typizowanego <xref:System.Data.Linq.DataContext> używany do wysyłania i odbierania danych między klasami jednostki i bazy danych. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Również zapewnia funkcje procedurom składowanym w mapie i funkcje <xref:System.Data.Linq.DataContext> metody zwracający dane i wypełnianie klas jednostek. Na koniec [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] zapewnia możliwość projektowania relacje dziedziczenia między klasami jednostki.
+ [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Udostępnia powierzchnia projektowania wizualnego służące do tworzenia [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klasy encji i skojarzeń (relacji), które są oparte na obiektach w bazie danych. Innymi słowy [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] służy do tworzenia modelu obiektów w aplikacji, która mapuje do obiektów w bazie danych. Polecenie to generuje także silnie typizowanego <xref:System.Data.Linq.DataContext> używany do wysyłania i odbierania danych między klasami jednostki i bazy danych. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Również zapewnia funkcje procedurom składowanym w mapie i funkcje <xref:System.Data.Linq.DataContext> metody zwracający dane i wypełnianie klas jednostek. Na koniec [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] zapewnia możliwość projektowania relacje dziedziczenia między klasami jednostki.
 
 ## <a name="opening-the-or-designer"></a>Otwieranie Relational Designer
  Aby dodać LINQ w modelu entity SQL do projektu, wybierz **projektu &#124; Dodaj nowy element** , a następnie wybierz **klasy LINQ do SQL** z listy elementów projektu:
@@ -62,7 +62,7 @@ LINQ do SQL była pierwszym technologii mapowania obiektowo relacyjny, wydane pr
  Inne obiekty, takie jak [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klasy można użyć dziedziczenia i pochodzić z innych klas. W bazie danych relacje dziedziczenia są tworzone na kilka sposobów. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Obsługuje dziedziczenia pojedynczej tabeli, co jest często stosowana w systemach relacyjnych. Aby uzyskać więcej informacji, zobacz [jak: Skonfigurować dziedziczenie za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Zapytania LINQ to SQL
- Klas jednostek utworzonych przez [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] są przeznaczone do użytku z programem [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Aby uzyskać więcej informacji, zobacz [jak: Zapytanie dotyczące informacji](http://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
+ Klas jednostek utworzonych przez [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] są przeznaczone do użytku z programem [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Aby uzyskać więcej informacji, zobacz [jak: Zapytanie dotyczące informacji](https://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
 
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Oddzielanie DataContext wygenerowany i kod klasy jednostek w różnych obszarach nazw
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Zapewnia **Namespace kontekstu** i **Namespace jednostki** właściwości <xref:System.Data.Linq.DataContext>. Te właściwości określają, jakie przestrzeni nazw <xref:System.Data.Linq.DataContext> i kodu klasy jednostki jest generowany na. Właściwości te są domyślnie pusta i <xref:System.Data.Linq.DataContext> i klas jednostek są generowane w przestrzeni nazw aplikacji. Aby wygenerować kod w przestrzeni nazw, innym niż przestrzeń nazw aplikacji, wprowadź wartość w **Namespace kontekstu** i/lub **Namespace jednostki** właściwości.
@@ -100,4 +100,4 @@ LINQ do SQL była pierwszym technologii mapowania obiektowo relacyjny, wydane pr
  <xref:System.Data.Linq>
 
 ## <a name="see-also"></a>Zobacz też
- [Narzędzia Visual Studio data tools dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [— często zadawane pytania](http://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+ [Narzędzia Visual Studio data tools dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [— często zadawane pytania](https://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

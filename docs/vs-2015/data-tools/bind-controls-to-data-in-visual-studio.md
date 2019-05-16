@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556925"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705575"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych kontro
 
  1. Generowanie modelu przy użyciu **modelu Entity Data Model** kreatora, a następnie przeciągnij te obiekty do projektanta.
 
- 2. Klasy LINQ do SQL nie są wyświetlane w **źródeł danych** okna. Można jednak dodać nowe źródło danych obiektu opartego na LINQ do klas SQL, a następnie przeciągnąć te obiekty do projektanta w celu tworzenia formantów powiązanych z danymi. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. Klasy LINQ do SQL nie są wyświetlane w **źródeł danych** okna. Można jednak dodać nowe źródło danych obiektu opartego na LINQ do klas SQL, a następnie przeciągnąć te obiekty do projektanta w celu tworzenia formantów powiązanych z danymi. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>Data Sources — Okno
  Źródła danych są dostępne dla projektu jako elementy **źródeł danych** okna. To okno jest widoczne, lub jest dostępny z **widoku** menu, gdy powierzchnię projektową formularza jest aktywnym oknem w projekcie. Można przeciągnąć elementy z tego okna, aby utworzyć formanty powiązane z danymi źródłowymi, a źródłami danych można również skonfigurować, klikając prawym przyciskiem myszy.
@@ -71,4 +71,4 @@ Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych kontro
 |Dostosuj podpisy dla formantów.|[Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Zobacz też
- [Narzędzia Visual Studio data tools dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [powiązanie danych formularzy Windows](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [Narzędzia Visual Studio data tools dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [powiązanie danych formularzy Windows](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92e4fb1ae7cf7acf387eb9387284534eb55c1066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 813094285557171e9c7f021f597d0d643356b5d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429928"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694410"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Instrukcje: Wyłączanie procesu hostingu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ Wywołania niektórych interfejsów API mogą mieć wpływ na włączenie proces
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie i proces hostingu](../debugger/debugging-and-the-hosting-process.md)   
  [Proces hostingu (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [Kompilacje podczas tworzenia aplikacji](http://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+ [Kompilacje podczas tworzenia aplikacji](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

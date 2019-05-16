@@ -75,12 +75,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 158aff0f14886ea5d714c35456bf53d5768f57b8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057459"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697872"
 ---
 # <a name="crt-debug-heap-details"></a>Szczegóły dotyczące sterty debugowania CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ Ten temat zawiera szczegółowy widok sterty debugowania CRT.
 ## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Znajdź przepełnienia bufora z debugowaniem sterty  
  Dwie najbardziej typowe i trudne problemy, które napotykają programiści to zastępowanie końca przydzielonego buforu i przecieki pamięci (nie można zwolnić alokacji, które są już potrzebne). Stos debugowania oferuje zaawansowane narzędzia do rozwiązywania problemów z alokacją pamięci tego rodzaju.  
   
- Debuguj wersje funkcji w stosie wywołań wersje standardowe lub podstawowe używane w wersji kompilacji. Żądając bloku pamięci, Menedżer stosu debugowania przydziela ze stosu podstawowego nieco większy blok pamięci niż żądany, a następnie zwraca wskaźnik do Twojej części tego bloku. Załóżmy, że aplikacja zawiera wywołanie: `malloc( 10 )`. W kompilacji wydania [— funkcja malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) wywołuje procedurę alokacji stosu podstawowego z żądaniem o przydział 10 bajtów. Do kompilacji debugowanej, jednak `malloc` wywoływałby [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), która będzie następnie wywołaj procedurę alokacji stosu podstawowego z żądaniem przydziału 10 bajtów plus około 36 bajtów dodatkowej pamięci. Wszystkie wynikające bloki pamięci w stercie debugowania są połączone na pojedynczej liście połączonej, uporządkowane według daty alokacji.  
+ Debuguj wersje funkcji w stosie wywołań wersje standardowe lub podstawowe używane w wersji kompilacji. Żądając bloku pamięci, Menedżer stosu debugowania przydziela ze stosu podstawowego nieco większy blok pamięci niż żądany, a następnie zwraca wskaźnik do Twojej części tego bloku. Załóżmy, że aplikacja zawiera wywołanie: `malloc( 10 )`. W kompilacji wydania [— funkcja malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) wywołuje procedurę alokacji stosu podstawowego z żądaniem o przydział 10 bajtów. Do kompilacji debugowanej, jednak `malloc` wywoływałby [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), która będzie następnie wywołaj procedurę alokacji stosu podstawowego z żądaniem przydziału 10 bajtów plus około 36 bajtów dodatkowej pamięci. Wszystkie wynikające bloki pamięci w stercie debugowania są połączone na pojedynczej liście połączonej, uporządkowane według daty alokacji.  
   
  Dodatkowa pamięć przydzielana przez procedury stosu debugowania jest używana na potrzeby informacji księgowych, wskaźników, bloki pamięci debugowania łączy ze sobą oraz małych buforów po obu stronach danych, aby przechwycić zastępuje przydzielonego regionu.  
   
@@ -150,10 +150,10 @@ typedef struct _CrtMemBlockHeader
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Typy bloków na stercie debugowania  
- Każdy blok pamięci w stosie debugowania jest przypisany do jednego z pięciu typów alokacji. Te typy są śledzone i raportowane inaczej do celów wykrywania przecieków i raportowania stanu. Można określić typ bloku, przydzielając go za pomocą bezpośredniego wywołania jednej z funkcji alokacji sterty debugowania, takie jak [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Pięć typów bloków pamięci w stosie debugowania (w **nBlockUse** członkiem **_CrtMemBlockHeader** struktury) są następujące:  
+ Każdy blok pamięci w stosie debugowania jest przypisany do jednego z pięciu typów alokacji. Te typy są śledzone i raportowane inaczej do celów wykrywania przecieków i raportowania stanu. Można określić typ bloku, przydzielając go za pomocą bezpośredniego wywołania jednej z funkcji alokacji sterty debugowania, takie jak [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Pięć typów bloków pamięci w stosie debugowania (w **nBlockUse** członkiem **_CrtMemBlockHeader** struktury) są następujące:  
   
  **_NORMAL_BLOCK**  
- Wywołanie [— funkcja malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) lub [calloc](http://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) tworzy Blok normalny. Jeśli zamierzasz używać tylko bloków normalnych i nie potrzebujesz bloków klienta, warto zdefiniować [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), co powoduje, że wszystkie alokacji stosu wywołań mają być mapowane do ich odpowiedników debugowania w kompilacjach do debugowania. Umożliwi to pliku nazwa i wierszu numer informacji na temat każdego wywołania alokacji mogą być przechowywane w odpowiednim nagłówku bloku.  
+ Wywołanie [— funkcja malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) lub [calloc](https://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) tworzy Blok normalny. Jeśli zamierzasz używać tylko bloków normalnych i nie potrzebujesz bloków klienta, warto zdefiniować [_CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), co powoduje, że wszystkie alokacji stosu wywołań mają być mapowane do ich odpowiedników debugowania w kompilacjach do debugowania. Umożliwi to pliku nazwa i wierszu numer informacji na temat każdego wywołania alokacji mogą być przechowywane w odpowiednim nagłówku bloku.  
   
  `_CRT_BLOCK`  
  Bloki pamięci przydzielane wewnętrznie przez wiele funkcji biblioteki wykonawczej są oznaczane jako bloki CRT, dzięki czemu mogą być obsługiwane osobno. W rezultacie, wykrywanie przecieków i inne operacje nie wpływa to przez nich. Alokacji nigdy nie należy przydzielić, ponownego przydzielenia lub bloku typu CRT.  
@@ -166,7 +166,7 @@ typedef struct _CrtMemBlockHeader
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- Funkcję klienta hak służąca do zrzucania obiektów przechowywanych w blokach klienta można zainstalować przy użyciu [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033), a następnie wywoływana zawsze wtedy, gdy blok klienta jest zrzucany przez funkcję debugowania. Ponadto [_CrtDoForAllClientObjects](http://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) może służyć do wywołania danej funkcji dostarczanej przez aplikację dla każdego bloku klient w stercie debugowania.  
+ Funkcję klienta hak służąca do zrzucania obiektów przechowywanych w blokach klienta można zainstalować przy użyciu [_CrtSetDumpClient](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033), a następnie wywoływana zawsze wtedy, gdy blok klienta jest zrzucany przez funkcję debugowania. Ponadto [_CrtDoForAllClientObjects](https://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) może służyć do wywołania danej funkcji dostarczanej przez aplikację dla każdego bloku klient w stercie debugowania.  
   
  **_FREE_BLOCK**  
  Normalnie bloki, które są zwalniane, są usuwane z listy. Aby sprawdzić, czy zwolniona pamięć jest nadal nie zapisywana lub do symulacji warunków braku pamięci, można zachować zwolnione bloki na liście połączonej, oznaczone jako wolne i wypełnione za pomocą znanej wartości bajtu (obecnie 0xDD).  
@@ -174,7 +174,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  Istnieje możliwość wyłączyć operacje debugowania sterty przez pewien czas. W tym czasie bloki pamięci są przechowywane na liście, ale są oznaczone jako bloki do ignorowania.  
   
- Aby określić typ i podtyp bloku, należy użyć funkcji [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) i makr **_BLOCK_TYPE** i **_BLOCK_SUBTYPE**. Makra są zdefiniowane (w pliku crtdbg.h), w następujący sposób:  
+ Aby określić typ i podtyp bloku, należy użyć funkcji [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) i makr **_BLOCK_TYPE** i **_BLOCK_SUBTYPE**. Makra są zdefiniowane (w pliku crtdbg.h), w następujący sposób:  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
@@ -187,10 +187,10 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  Wiele funkcji sterty debugowania musi być dostępny z w obrębie kodu. W poniższej sekcji opisano niektóre funkcje i sposobu ich używania.  
   
  `_CrtCheckMemory`  
- Można użyć wywołania [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), na przykład, aby sprawdzić integralność sterty w dowolnym momencie. Ta funkcja sprawdza każdy blok pamięci w stercie, sprawdza, czy informacje nagłówka bloku pamięci są prawidłowe i potwierdza, że bufory nie zostały zmodyfikowane.  
+ Można użyć wywołania [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), na przykład, aby sprawdzić integralność sterty w dowolnym momencie. Ta funkcja sprawdza każdy blok pamięci w stercie, sprawdza, czy informacje nagłówka bloku pamięci są prawidłowe i potwierdza, że bufory nie zostały zmodyfikowane.  
   
  `_CrtSetDbgFlag`  
- Można kontrolować, jak śledzi informacje o stercie debugowania alokacje za pomocą flagi wewnętrznej, [_crtDbgFlag](http://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), który można odczytać i ustawić za pomocą [_CrtSetDbgFlag](http://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) funkcji. Zmieniając tę flagę, możesz poinstruować stertę debugowania, tak aby sprawdzała przecieki pamięci, gdy zamyka program i zgłoś wszelkie wykryte nieszczelności. Podobnie można określić, że zwolnione bloki pamięci nie można usunąć z listy dwukierunkowej, aby symulować sytuacje małej ilości pamięci. Podczas sprawdzania stosu zwolnione bloki są kontrolowane w całości, aby upewnić się, że ich nie zostały zajęte.  
+ Można kontrolować, jak śledzi informacje o stercie debugowania alokacje za pomocą flagi wewnętrznej, [_crtDbgFlag](https://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), który można odczytać i ustawić za pomocą [_CrtSetDbgFlag](https://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) funkcji. Zmieniając tę flagę, możesz poinstruować stertę debugowania, tak aby sprawdzała przecieki pamięci, gdy zamyka program i zgłoś wszelkie wykryte nieszczelności. Podobnie można określić, że zwolnione bloki pamięci nie można usunąć z listy dwukierunkowej, aby symulować sytuacje małej ilości pamięci. Podczas sprawdzania stosu zwolnione bloki są kontrolowane w całości, aby upewnić się, że ich nie zostały zajęte.  
   
  **_CrtDbgFlag** Flaga zawiera następujące pola bitowe:  
   
@@ -306,11 +306,11 @@ typedef struct _CrtMemState
   
 |Funkcja|Opis|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](http://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Zapisuje migawkę stosu w **_CrtMemState** struktury dostarczoną przez aplikację.|  
-|[_CrtMemDifference](http://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Porównuje dwie struktury stanu pamięci, zapisuje różnicę między nimi w trzeciej strukturze i zwraca wartość PRAWDA, jeśli dwa stany są różne.|  
-|[_CrtMemDumpStatistics](http://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Zrzuca danego **_CrtMemState** struktury. Struktura może zawierać migawkę stanu sterty debugowania w danym momencie lub różnicę między dwiema migawkami.|  
-|[_CrtMemDumpAllObjectsSince](http://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Zrzuca informacje o wszystkich obiektach przydzielonych od wykonania danej migawki stosu lub od początku wykonywania. Za każdym razem, gdy Zrzuca **_CLIENT_BLOCK** bloku, wywołuje funkcję zaczepienia dostarczoną przez aplikację, jeśli została ona zainstalowana za pomocą **_CrtSetDumpClient**.|  
-|[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Określa, czy wszystkie pamięci przecieków wystąpił od momentu rozpoczęcia wykonywania programu, a jeśli tak, zrzuca wszystkie przydzielone obiekty. Za każdym razem, gdy **_CrtDumpMemoryLeaks** zrzuty **_CLIENT_BLOCK** bloku, wywołuje funkcję zaczepienia dostarczoną przez aplikację, jeśli została ona zainstalowana za pomocą **_CrtSetDumpClient**.|  
+|[_CrtMemCheckpoint](https://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Zapisuje migawkę stosu w **_CrtMemState** struktury dostarczoną przez aplikację.|  
+|[_CrtMemDifference](https://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Porównuje dwie struktury stanu pamięci, zapisuje różnicę między nimi w trzeciej strukturze i zwraca wartość PRAWDA, jeśli dwa stany są różne.|  
+|[_CrtMemDumpStatistics](https://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Zrzuca danego **_CrtMemState** struktury. Struktura może zawierać migawkę stanu sterty debugowania w danym momencie lub różnicę między dwiema migawkami.|  
+|[_CrtMemDumpAllObjectsSince](https://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Zrzuca informacje o wszystkich obiektach przydzielonych od wykonania danej migawki stosu lub od początku wykonywania. Za każdym razem, gdy Zrzuca **_CLIENT_BLOCK** bloku, wywołuje funkcję zaczepienia dostarczoną przez aplikację, jeśli została ona zainstalowana za pomocą **_CrtSetDumpClient**.|  
+|[_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Określa, czy wszystkie pamięci przecieków wystąpił od momentu rozpoczęcia wykonywania programu, a jeśli tak, zrzuca wszystkie przydzielone obiekty. Za każdym razem, gdy **_CrtDumpMemoryLeaks** zrzuty **_CLIENT_BLOCK** bloku, wywołuje funkcję zaczepienia dostarczoną przez aplikację, jeśli została ona zainstalowana za pomocą **_CrtSetDumpClient**.|  
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
@@ -321,7 +321,7 @@ typedef struct _CrtMemState
   
  Najprostszym sposobem określenia konkretnej alokacji stosu, udała, jest korzystanie z zalet unikatowy numer żądania alokacji związanego z każdym blokiem w stosie debugowania. Gdy informacje o bloku są raportowane przez jedną z funkcji zrzutu, ten numer żądania alokacji jest ujęty w nawiasy klamrowe (na przykład "{36}").  
   
- Znając numer żądania alokacji nieprawidłowo zaalokowanego bloku, możesz przekazać ten numer do [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) do utworzenia punktu przerwania. Wykonywanie zostanie przerwane tuż przed alokowanie bloku i używa wycofywania, aby określić, która procedura była odpowiedzialna za błędne wywołanie. Aby uniknąć konieczności ponownego kompilowania, można osiągnąć to samo w debugerze, ustawiając **_crtBreakAlloc** numer żądania alokacji Cię interesuje.  
+ Znając numer żądania alokacji nieprawidłowo zaalokowanego bloku, możesz przekazać ten numer do [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) do utworzenia punktu przerwania. Wykonywanie zostanie przerwane tuż przed alokowanie bloku i używa wycofywania, aby określić, która procedura była odpowiedzialna za błędne wywołanie. Aby uniknąć konieczności ponownego kompilowania, można osiągnąć to samo w debugerze, ustawiając **_crtBreakAlloc** numer żądania alokacji Cię interesuje.  
   
  **Tworzenie wersji debugowania procedur Twojej alokacji**  
   

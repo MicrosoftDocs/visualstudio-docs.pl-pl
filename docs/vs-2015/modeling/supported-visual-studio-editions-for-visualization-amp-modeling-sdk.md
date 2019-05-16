@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19b4c45e72c90d8f1cee3130475767003a6d7cf7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8104eb9aa2d340545fb4cbfbd2e46286d953375
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696867"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Obsługiwane wersje programu Visual Studio dla zestawu Visualization &amp; Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ Poniżej przedstawiono listę wersji programu Visual Studio, które są obsługi
 > Aby było uruchomić produkt powłoki języka DSL, należy ustawić **obsługiwanych wersji programu VS** pole manifestu rozszerzenia. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

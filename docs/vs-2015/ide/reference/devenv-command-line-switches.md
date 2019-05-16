@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444739"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690981"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistyczne
 |[/ Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Uruchamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] i loguje wszelką aktywność do pliku dziennika.|  
 |[/ Uruchomienia (devenv.exe)](../../ide/reference/run-devenv-exe.md) lub `/r`|Kompiluje i uruchamia określone rozwiązanie.|  
 |[/ Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Kompiluje i uruchamia określone rozwiązanie, minimalizuje IDE w rozwiązaniu jest uruchamiany, gdy IDE jest zamykane po rozwiązaniu zakończył działanie.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Powoduje, że środowisko IDE będzie używać zmiennych środowiskowych PATH, INCLUDE i Biblioteka, aby uzyskać [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] kompilacji, a nie ustawienia określone w sekcji katalogi VC ++ **projektów** opcji na liście **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Ustawianie ścieżki i zmiennych środowiskowych dla kompilacji wiersza polecenia](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Powoduje, że środowisko IDE będzie używać zmiennych środowiskowych PATH, INCLUDE i Biblioteka, aby uzyskać [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] kompilacji, a nie ustawienia określone w sekcji katalogi VC ++ **projektów** opcji na liście **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Ustawianie ścieżki i zmiennych środowiskowych dla kompilacji wiersza polecenia](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
 |[/ Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Otwiera określone pliki w działającej instancji tej aplikacji. W przypadku Brak uruchomionych wystąpień rozpocznie nowa instancja o uproszczonym układzie okna.|  
 |[/ ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Uruchamia wystąpienie programu Visual Studio IDE bez ładowania określonego dodatku.|  
 |[/ SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Uruchamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w trybie awaryjnym, ładuje tylko środowisko domyślne i usługi oraz wydane wersje pakietów innych firm.|  

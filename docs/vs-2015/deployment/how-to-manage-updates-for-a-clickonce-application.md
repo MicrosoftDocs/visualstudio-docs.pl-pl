@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ff014a1e8d7a43e84e0b10ee8d7d42e7fa975ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0754d816104832f92a0be8d754046d1ee18e7a09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082753"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697650"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Instrukcje: Zarządzanie aktualizacjami dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ ms.locfileid: "60082753"
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [Okno dialogowe aktualizacji aplikacji](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [Okno dialogowe aktualizacji aplikacji](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   

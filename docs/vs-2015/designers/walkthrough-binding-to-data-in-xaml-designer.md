@@ -11,17 +11,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7a27b2744247bba78575b0387a958bda5990d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c839350dd37f71d4f3368e077f4d9afe1b2bb2f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071619"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701926"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Przewodnik: Powiązanie z danymi w Projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W Projektancie XAML można ustawić właściwości powiązania danych, przy użyciu obszaru roboczego i w oknie właściwości. W przykładzie w tym przewodniku pokazano, jak powiązać dane z kontrolką. W szczególności instruktażu przedstawiono sposób tworzenia prostego klasy koszyka zakupów, która ma [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) o nazwie `ItemCount`, a następnie wiążą `ItemCount` właściwości **tekstu** właściwości z [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) kontroli.  
+W Projektancie XAML można ustawić właściwości powiązania danych, przy użyciu obszaru roboczego i w oknie właściwości. W przykładzie w tym przewodniku pokazano, jak powiązać dane z kontrolką. W szczególności instruktażu przedstawiono sposób tworzenia prostego klasy koszyka zakupów, która ma [DependencyProperty](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) o nazwie `ItemCount`, a następnie wiążą `ItemCount` właściwości **tekstu** właściwości z [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) kontroli.  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Aby utworzyć klasę, aby użyć jako źródła danych  
   
@@ -66,7 +66,7 @@ W Projektancie XAML można ustawić właściwości powiązania danych, przy uży
     End Class  
     ```  
   
-     Ten kod ustawia wartość 0 jako domyślna liczba elementów za pomocą [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) obiektu.  
+     Ten kod ustawia wartość 0 jako domyślna liczba elementów za pomocą [PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) obiektu.  
   
 5. Na **pliku** menu, wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
   
@@ -74,7 +74,7 @@ W Projektancie XAML można ustawić właściwości powiązania danych, przy uży
   
 1. W Eksploratorze rozwiązań Otwórz menu skrótów dla pliku MainWindow.xaml, a następnie wybierz **Projektant widoków**.  
   
-2. W przyborniku wybierz [siatki](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) kontroli i dodać go do formularza.  
+2. W przyborniku wybierz [siatki](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) kontroli i dodać go do formularza.  
   
 3. Za pomocą `Grid` zaznaczone, w oknie dialogowym właściwości wybierz **New** znajdujący się obok **DataContext** właściwości.  
   
@@ -100,4 +100,4 @@ W Projektancie XAML można ustawić właściwości powiązania danych, przy uży
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Dodaj konwerter wartości — okno dialogowe](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+ [NIB: Dodaj konwerter wartości — okno dialogowe](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

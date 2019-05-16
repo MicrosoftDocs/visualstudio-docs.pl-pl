@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2744dabdb79d777661c1ed73e8a85b05b5308624
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437252"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704768"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ Użyj **aplikacji** strony **projektanta projektu** do określania ustawień apl
  Poniższe opcje umożliwiają konfigurowanie ogólnych ustawień dla aplikacji.  
   
  **Nazwa zestawu**  
- Określa nazwę pliku wyjściowego, który będzie przechowywać manifest zestawu. Zmiana tej właściwości spowoduje również zmianę **Nazwa wyjściowego** właściwości. Można również wprowadzenie tej zmiany z wiersza polecenia przy użyciu [/out (opcje kompilatora C#)](http://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Określa nazwę pliku wyjściowego, który będzie przechowywać manifest zestawu. Zmiana tej właściwości spowoduje również zmianę **Nazwa wyjściowego** właściwości. Można również wprowadzenie tej zmiany z wiersza polecenia przy użyciu [/out (opcje kompilatora C#)](https://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Domyślna przestrzeń nazw**  
  Określa podstawowej przestrzeni nazw dla plików dodawane do projektu.  
   
- Zobacz [przestrzeni nazw](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) Aby uzyskać więcej informacji na temat tworzenia przestrzeni nazw w kodzie.  
+ Zobacz [przestrzeni nazw](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) Aby uzyskać więcej informacji na temat tworzenia przestrzeni nazw w kodzie.  
   
  Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -64,7 +64,7 @@ Użyj **aplikacji** strony **projektanta projektu** do określania ustawień apl
 > [!NOTE]
 > Środowisko wykonawcze Windows można typów projektów, aby były wyświetlane jako obiektów natywnych w jakikolwiek język są one używane. Na przykład JavaScript aplikacji współdziałających ze środowiska wykonawczego Windows ich używać jako zbiór obiektów JavaScript i aplikacji w języku C# korzystanie z biblioteki jako kolekcję obiektów platformy .NET. Upakowanie danych wyjściowych projektu w formacie pliku WinMD, możesz korzystać z zalet tej samej technologii, która używa środowiska wykonawczego Windows.  
   
- Aby uzyskać więcej informacji na temat **typ aplikacji** właściwości, zobacz [/TARGET (opcje kompilatora C#)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Aby dowiedzieć się, jak programowo dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Aby uzyskać więcej informacji na temat **typ aplikacji** właściwości, zobacz [/TARGET (opcje kompilatora C#)](https://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Aby dowiedzieć się, jak programowo dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Informacje o zestawie**  
  Kliknięcie tego przycisku powoduje wyświetlenie [informacje o zestawie — okno dialogowe](../../ide/reference/assembly-information-dialog-box.md).  
@@ -74,7 +74,7 @@ Użyj **aplikacji** strony **projektanta projektu** do określania ustawień apl
   
  Domyślnie w projekcie aplikacja przeglądarki środowiska WPF, ta opcja jest **(nie ustawiono)**. Druga opcja to *Projectname*. aplikacji. W tego rodzaju projektu należy ustawić początkową identyfikatora URI można załadować zasobów interfejsu użytkownika podczas uruchamiania aplikacji. Aby to zrobić, otwórz plik Application.xaml w projekcie i ustaw `StartupUri` właściwość w pliku .xaml w projekcie, takie jak Window1.xaml. Aby uzyskać listę elementów głównych dopuszczalne, zobacz <xref:System.Windows.Application.StartupUri%2A>. Należy także zdefiniować `public static void Main()` metodę w klasie w projekcie. Ta klasa pojawi się w **obiekt początkowy** listy jako *ProjectName.ClassName*. Klasę można następnie wybrać jako obiekt początkowy.  
   
- Zobacz [/main (opcje kompilatora C#)](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ Zobacz [/main (opcje kompilatora C#)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
 ## <a name="resources"></a>Zasoby  
  Poniższe opcje umożliwiają konfigurowanie ogólnych ustawień dla aplikacji.  
@@ -83,7 +83,7 @@ Użyj **aplikacji** strony **projektanta projektu** do określania ustawień apl
  Domyślnie ten przycisk radiowy zostanie wybrany i **ikonę** i **manifestu** opcje są włączone. Dzięki temu można własną ikonę lub wybrać opcje różnych generowania manifestu. Pozostaw ten przycisk radiowy zaznaczone, chyba że udostępniasz plik zasobów dla projektu.  
   
  **Ikona**  
- Określa plik .ico, który ma być używany jako ikona programu. Kliknij przycisk wielokropka, aby przejść do istniejącej grafiki, lub wpisz nazwę pliku, którego chcesz. Zobacz [/win32icon (opcje kompilatora C#)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Określa plik .ico, który ma być używany jako ikona programu. Kliknij przycisk wielokropka, aby przejść do istniejącej grafiki, lub wpisz nazwę pliku, którego chcesz. Zobacz [/win32icon (opcje kompilatora C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Manifest**  
  Wybiera opcję generowania manifestu, gdy aplikacja zostanie uruchomiona w systemie Windows Vista w ramach kontroli konta użytkownika (UAC). Ta opcja może mieć następujące wartości:  
@@ -101,4 +101,4 @@ Użyj **aplikacji** strony **projektanta projektu** do określania ustawień apl
   
 ## <a name="see-also"></a>Zobacz też  
 [Zarządzanie właściwościami aplikacji](../../ide/application-properties.md)  
- [Pisanie kodu dla rozwiązań pakietu Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+ [Pisanie kodu dla rozwiązań pakietu Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

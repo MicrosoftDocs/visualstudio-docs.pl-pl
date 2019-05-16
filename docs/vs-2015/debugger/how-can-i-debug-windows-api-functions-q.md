@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7729782fe23c1404aa6862116e884baa97b17f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c5fd73eb64c79ac9476c0036b9f2d709294d178
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704594"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Jak można debugować funkcje API systemu Windows?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Jeśli chcesz debugować funkcja interfejsu API Windows, która zawiera symbole 
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Aby uzyskać nazwę z atrybutami, zobacz [wyświetlania nazw Ozdobionych](http://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Aby uzyskać nazwę z atrybutami, zobacz [wyświetlania nazw Ozdobionych](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   

@@ -10,12 +10,12 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd4be229338d1a09c22b4d81384dc90f0544fa39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113849"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700739"
 ---
 # <a name="properties-window-overview"></a>Omówienie okna właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60113849"
 |Nazwa interfejsu|Opis|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Zawiera listę kategorii, aby **właściwości** okna i mapuje każdej właściwości w kategorii.|  
-|[IDispatch — interfejs](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Udostępnia metody i właściwości do programowania, narzędzia i inne aplikacje obsługujące automatyzację obiektu.|  
+|[IDispatch — interfejs](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Udostępnia metody i właściwości do programowania, narzędzia i inne aplikacje obsługujące automatyzację obiektu.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Zawiera przyciski wielokropek (...) o nazwie *Konstruktorzy* , Otwórz program windows modalne okno dialogowe implementowany przez sam obiekt. Używane, gdy wartość nie jest łatwo wpisana przez użytkownika w polu tekstowym. Na przykład może być używane otworzyć selektor kolorów, który określa wartość RGB dla Ciebie.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Zapewnia dostęp do obiektów używane do aktualizowania informacji wyświetlanych w **właściwości** okna. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> jest implementowana przez pakietów VSPackage dla każdego okna, który zawiera obiekty można wybierać z powiązanych właściwości, które mają być wyświetlane.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Zawiera informacje o typie obiektu, takiego jak metody interfejsu i pola struktury.|  

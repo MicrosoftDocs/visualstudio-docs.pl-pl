@@ -26,17 +26,17 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86ca63ead6b2014dfe0d90d496ef4b7d7efe7f63
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e56c48468b6890f9c51e3ac79ac6167fd8647903
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784803"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675149"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Wprowadzenie do aplikacji międzynarodowych na podstawie .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], istnieją dwie części do tworzenia aplikacji gotowych do: globalizacja, proces projektowania aplikacji, które dostosowują się do różnych kultur i lokalizacja, proces tłumaczeniem zasobów dla określonej kultury. Aby uzyskać ogólne informacje dotyczące projektowania aplikacji międzynarodowych odbiorców, zobacz [najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
+W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], istnieją dwie części do tworzenia aplikacji gotowych do: globalizacja, proces projektowania aplikacji, które dostosowują się do różnych kultur i lokalizacja, proces tłumaczeniem zasobów dla określonej kultury. Aby uzyskać ogólne informacje dotyczące projektowania aplikacji międzynarodowych odbiorców, zobacz [najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
   
  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Model lokalizacji składa się z głównym zestawie, który zawiera kod aplikacji i zasoby rezerwowe — ciągi, obrazy i inne obiekty, dla języka, w którym pierwotnie opracowano aplikację. Każda aplikacja zlokalizowanych ma zestawy satelickie lub zespołów, które zawierają zlokalizowane zasoby. Ponieważ zawsze zestawu głównego zawiera zasoby rezerwowe, jeśli zasób nie zostanie znaleziony w zestawie satelickim zlokalizowane, <xref:System.Resources.ResourceManager> spróbuje ją załadować hierarchicznie ostatecznie nastąpi powrót do zasobu w głównym zestawie. System rezerwowy zasobu zostało wyjaśnione bardziej szczegółowo w [hierarchiczna organizacja zasobów do lokalizacji](../ide/hierarchical-organization-of-resources-for-localization.md).  
   

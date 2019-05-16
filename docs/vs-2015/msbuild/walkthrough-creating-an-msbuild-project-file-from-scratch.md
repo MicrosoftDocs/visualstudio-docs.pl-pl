@@ -11,19 +11,19 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445614"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682364"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od zera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Języki programowania, które obsługują program .NET Framework używają plików projektu MSBuild do opisywania i kontrolowania procesu tworzenia aplikacji. Gdy używasz programu Visual Studio do tworzenia pliku projektu programu MSBuild, właściwy XML jest automatycznie dodawany do pliku. Jednak może okazać się pomocne w zrozumieniu, w jaki sposób XML jest zorganizowany i jak mogą zmienić go, aby kontrolować kompilację.  
   
- Aby dowiedzieć się, jak tworzenie pliku projektu dla projektu w języku C++, zobacz [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
+ Aby dowiedzieć się, jak tworzenie pliku projektu dla projektu w języku C++, zobacz [MSBuild (Visual C++)](https://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
   
  W tym instruktażu przedstawiono sposób przyrostowego tworzenia podstawowego pliku projektu za pomocą edytora tekstu. Instruktaż obejmuje następujące kroki:  
   

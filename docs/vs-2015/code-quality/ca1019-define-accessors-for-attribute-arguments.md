@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4c21a3e4daeea64dd36c42bd986fcda75ad0bcaa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 01d4b421f196eec7401f12ca8eeb7a52b2396065
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791194"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704197"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Zdefiniuj metody dostępu dla argumentów atrybutów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,4 +77,4 @@ ms.locfileid: "54791194"
  [CA1813: Unikaj niezapieczętowanych atrybutów](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Zobacz też
- [Atrybuty](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
+ [Atrybuty](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

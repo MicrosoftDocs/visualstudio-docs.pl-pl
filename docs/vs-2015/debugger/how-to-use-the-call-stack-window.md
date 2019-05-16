@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65dafa09035e937e9ee48005c4f29c441d983c37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697476"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Instrukcje: Korzystanie z okna stosu wywołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Za pomocą **stos wywołań** okna, można wyświetlić wywołania funkcji lub p
  Za pomocą menu skrótów, można wybrać, czy wyświetlane są wywołania między wątkami.  
   
 > [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz pozycję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz pozycję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Aby wyświetlić okno stosu wywołań w trybie przerwania lub w trybie uruchamiania  
   
@@ -139,7 +139,7 @@ Za pomocą **stos wywołań** okna, można wyświetlić wywołania funkcji lub p
   
 ## <a name="see-also"></a>Zobacz też  
  [Kod mieszany i brakujące informacje w oknie stosu wywołań](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Instrukcje: Zmień Format numeryczny debuger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [Instrukcje: Zmień Format numeryczny debuger Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
  [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)

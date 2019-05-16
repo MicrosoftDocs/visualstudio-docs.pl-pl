@@ -12,19 +12,19 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d127aaa85cdd8da9e5daebe5c7841e0f6e85238d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651620"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674875"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Strona opcji, edytor tekstu — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są skojarzone z **edytora tekstów** kategorii `DTE.Properties("TextEditor", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, które jest używane do dostępu `Properties` kolekcji, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.  
   
- Makra języka Visual Basic w [Controlling Options Settings](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) pokazują, jak wyświetlić bieżące opcje i ich wartości dla każdej strony **opcje** okno dialogowe.  
+ Makra języka Visual Basic w [Controlling Options Settings](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) pokazują, jak wyświetlić bieżące opcje i ich wartości dla każdej strony **opcje** okno dialogowe.  
   
 ## <a name="general"></a>Ogólne  
  `DTE.Properties("TextEditor", "General")`  
@@ -66,7 +66,7 @@ W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są sko
 |CutCopyBlankLines|Get/Set (wartość logiczna)|Wycina lub kopiuje puste wiersze, gdy są zaznaczone.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kontrolowanie ustawień opcji](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Określanie nazw elementów właściwości na stronach opcji](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Kontrolowanie ustawień opcji](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Określanie nazw elementów właściwości na stronach opcji](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Strona opcji, środowisko — właściwości węzła](../../ide/reference/options-page-environment-node-properties.md)   
  [Strona opcji, czcionki i kolory — Właściwości węzła](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

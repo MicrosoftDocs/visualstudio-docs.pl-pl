@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 31859128aed64ec6a1182f085685b2e82e485f84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86aac26819e86455c8ab5c3676c8198bbb482e43
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437074"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697193"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Udoskonalanie jakości kodu z zasadami ewidencjowania projektu zespołowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Gdy używasz Team Foundation Version Control (TFVC), można utworzyć zasady ewi
   
 |Zadanie|Zawartość pomocnicza|  
 |----------|------------------------|  
-|**Tworzenie i używanie zasad ewidencjonowania:** Utwórz zasady ewidencjonowania w przy użyciu ustawień projektu zespołowego [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Ustawianie i wymuszanie bram jakości](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Tworzenie i używanie zasad ewidencjonowania:** Utwórz zasady ewidencjonowania w przy użyciu ustawień projektu zespołowego [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Ustawianie i wymuszanie bram jakości](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**Tworzenie i używanie zasad ewidencjonowania analizy kodu:** Można wybrać ze standardowego zestawu reguł analizy kodu lub można utworzyć niestandardowy zestaw.|[Tworzenie zasad zaewidencjonowania analizy kodu i korzystanie z nich](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
   
 |Zadanie|Zawartość pomocnicza|  
 |----------|------------------------|  
-|**Skonfiguruj swoje Środowisko deweloperskie:** Zanim można utworzyć lub zmodyfikować kod, należy skonfigurować do tworzenia i środowisk testowych przy użyciu odpowiedniego kodu źródłowego. Jeśli pracujesz z bazami danych, musi również mieć dostęp do ich reprezentacji w trybie offline.|[Konfigurowanie środowisk](http://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
+|**Skonfiguruj swoje Środowisko deweloperskie:** Zanim można utworzyć lub zmodyfikować kod, należy skonfigurować do tworzenia i środowisk testowych przy użyciu odpowiedniego kodu źródłowego. Jeśli pracujesz z bazami danych, musi również mieć dostęp do ich reprezentacji w trybie offline.|[Konfigurowanie środowisk](https://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
 |**Użyj analizy kodu w procesie tworzenia:** Członkowie zespołu, uruchamiania analizy kodu na swoich komputerach roboczych. W programie Visual Studio deweloperzy skonfigurować i uruchamiają analizę kodu dla poszczególnych projektów kodu, wyświetlanie oraz analizować problemy znalezione przez przebiegi i Utwórz elementy robocze dla ostrzeżeń.|[Analizowanie jakości aplikacji](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
 |**Tworzenie i Uruchamianie testów jednostkowych:** Testy jednostkowe pozwalają deweloperom i testerom w szybki sposób sprawdzić występowanie błędów logicznych w metodach klas w C#, Visual Basic .NET i projektów w języku C++. Test jednostkowy można utworzyć jeden raz i uruchamiany za każdym razem zmianie kodu źródłowego, aby upewnić się, że zostały wprowadzone żadne błędy.|[Testowanie jednostek kodu](../test/unit-test-your-code.md)|  
-|**Śledzenie elementów roboczych i defektów:** Elementy robocze można użyć do śledzenia i zarządzania pracą i informacjami o projekcie zespołowym. Element roboczy jest bazy danych rekord [!INCLUDE[esprfound](../includes/esprfound-md.md)] używa do śledzenia przypisania i postępu prac. Można użyć różnych rodzajów elementów roboczych do śledzenia różnych typów pracy takich jak wymagań klientów, błędów produktu i zadań programistycznych.|[Śledzenie pracy i zarządzanie przepływem pracy &#91;przekierowanie&#93;](http://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
+|**Śledzenie elementów roboczych i defektów:** Elementy robocze można użyć do śledzenia i zarządzania pracą i informacjami o projekcie zespołowym. Element roboczy jest bazy danych rekord [!INCLUDE[esprfound](../includes/esprfound-md.md)] używa do śledzenia przypisania i postępu prac. Można użyć różnych rodzajów elementów roboczych do śledzenia różnych typów pracy takich jak wymagań klientów, błędów produktu i zadań programistycznych.|[Śledzenie pracy i zarządzanie przepływem pracy &#91;przekierowanie&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   

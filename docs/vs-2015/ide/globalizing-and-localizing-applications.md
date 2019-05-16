@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49702a40e081b4836e078a77368148451a29636d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe8671142aeda4972f9ac218fe536b4a991649a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794373"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704369"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizacja i lokalizacja aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Jeśli planujesz dystrybucja aplikacji odbiorcom międzynarodowym, należy zapew
  [Globalizowanie aplikacji (aplikacje Windows Store przy użyciu języka C# / VB/C++ i XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
  Zawiera tematy porad i wskazówek, aby pomóc Ci sprzedawać i lokalizowanie usługi [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikację utworzoną za pomocą XAML i Visual C#, Visual Basic lub Visual C++.  
   
- [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do wydania](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do wydania](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Zawiera ogólne informacje o programowaniu dla międzynarodowych grupy odbiorców.  
   
- [Omówienie biblioteki klas](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
+ [Omówienie biblioteki klas](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
  Wprowadza klas, interfejsów i typów wartości, które przyspiesza i zoptymalizować proces tworzenia aplikacji oraz zapewnia dostęp do funkcji systemu.  
   
  <xref:System.Globalization>  

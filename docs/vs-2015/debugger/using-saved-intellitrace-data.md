@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 549c4f5225773a7d9ac40c16a9db6ca9309c7d6f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437776"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684390"
 ---
 # <a name="using-saved-intellitrace-data"></a>Korzystanie z zapisanych danych funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,8 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
     |**Element źródłowy**|**Zobacz**|  
     |----------------|-------------|  
     |Sesja IntelliTrace w Visual Studio Enterprise (ale nie Professional lub Community)|[Funkcje IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Sesji testowej w programie Microsoft Test Manager. Dołącza plik .iTrace do elementu roboczego Team Foundation Server.|[Zbieranie większej ilości danych podczas wykonywania testów ręcznych](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-    |Program Microsoft Monitoring Agent, albo samodzielnie lub z programem System Center 2012 R2 Operations Manager dla platformy ASP.NET i aplikacje sieci web aplikacji programu SharePoint, działające we wdrożeniu|-   [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
+    |Sesji testowej w programie Microsoft Test Manager. Dołącza plik .iTrace do elementu roboczego Team Foundation Server.|[Zbieranie większej ilości danych podczas wykonywania testów ręcznych](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+    |Program Microsoft Monitoring Agent, albo samodzielnie lub z programem System Center 2012 R2 Operations Manager dla platformy ASP.NET i aplikacje sieci web aplikacji programu SharePoint, działające we wdrożeniu|-   [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](https://technet.microsoft.com/library/dn249700.aspx)|  
   
 ## <a name="GetStarted"></a> Co chcesz zrobić?  
   
@@ -207,7 +207,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
     ![Dziennik IntelliTrace &#45; SharePoint nieobsługiwane wyjątki](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Aby uzyskać wskazówki, zobacz [instruktażu: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Do tego rodzaju danych, które rekordy agenta, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
+   Aby uzyskać wskazówki, zobacz [instruktażu: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Do tego rodzaju danych, które rekordy agenta, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
   
 ### <a name="ThreadsList"></a> Lista wątków  
  Badać zarejestrowane wątki, które uruchomiono w procesie docelowym. Możesz rozpocząć debugowanie od pierwszego prawidłowego zdarzenia IntelliTrace w wybranym wątku.  
@@ -258,14 +258,14 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
 |----------------|-------------------|  
 |**Nazwa modułu**|Nazwa pliku modułu|  
 |**Ścieżka modułu**|Lokalizację dysku, na którym moduł został załadowany|  
-|**Identyfikator modułu**|Unikatowy identyfikator modułu, który jest specyficzny dla wersji i przyczynia się do pasujących plików symboli (PDB). Zobacz [znajdowanie plików symboli (.pdb) i pliki źródłowe](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**Identyfikator modułu**|Unikatowy identyfikator modułu, który jest specyficzny dla wersji i przyczynia się do pasujących plików symboli (PDB). Zobacz [znajdowanie plików symboli (.pdb) i pliki źródłowe](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Gdzie można uzyskać więcej informacji?  
  [Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [Funkcje IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
+ [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

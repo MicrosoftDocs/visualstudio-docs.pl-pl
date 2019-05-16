@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431125"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697904"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawu danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ UWAGA]
 
  Obiekt DataSet jest obiekt w pamięci, który jest zasadniczo mini bazy danych. Zawiera ona obiekty DataTable, DataColumn i DataRow, w których można przechowywać i modyfikować dane z jednego lub więcej baz danych bez konieczności utrzymywanie otwartego połączenia. Zestaw danych przechowuje informacje o zmianach wprowadzonych do jego danych, więc aktualizacje, które mogą być śledzone i wysyłane z powrotem do bazy danych, gdy aplikacja staje się zakończone.
 
- Zestawy danych i powiązanych klas są zdefiniowane w przestrzeni nazw System.Data w bibliotece klas programu .NET Framework. Można tworzyć i modyfikować zestawy danych dynamicznie w kodzie. Aby uzyskać więcej informacji o tym, jak to zrobić Zobacz ADO.NET. W dokumentacji w tej sekcji przedstawiono sposób pracy z zestawami danych za pomocą projektantów programu Visual Studio. Warto wiedzieć: zestawy danych, które odbywa się za pomocą projektantów za pomocą TableAdapter obiektów korzystanie z bazy danych, natomiast zestawów danych, które są wykonywane programowo za pomocą obiektów DataAdapter. Aby dowiedzieć się, jak programowe tworzenie zestawów danych, zobacz [DataAdapter i DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).
+ Zestawy danych i powiązanych klas są zdefiniowane w przestrzeni nazw System.Data w bibliotece klas programu .NET Framework. Można tworzyć i modyfikować zestawy danych dynamicznie w kodzie. Aby uzyskać więcej informacji o tym, jak to zrobić Zobacz ADO.NET. W dokumentacji w tej sekcji przedstawiono sposób pracy z zestawami danych za pomocą projektantów programu Visual Studio. Warto wiedzieć: zestawy danych, które odbywa się za pomocą projektantów za pomocą TableAdapter obiektów korzystanie z bazy danych, natomiast zestawów danych, które są wykonywane programowo za pomocą obiektów DataAdapter. Aby dowiedzieć się, jak programowe tworzenie zestawów danych, zobacz [DataAdapter i DataReaders](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).
 
  Jeśli aplikacja musi jedynie odczytywać dane z bazy danych, a nie wykonywania aktualizacji, dodaje lub usuwa, można zwykle uzyskać lepszą wydajność przy użyciu elementu DataReader obiektu do pobrania danych do ogólnego obiekt listy lub innego obiektu kolekcji. W przypadku wyświetlania danych, użytkownik może wiązania danych interfejsu użytkownika do kolekcji.
 
@@ -89,7 +89,7 @@ UWAGA]
 
     - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
 
-- Zapytania i wyszukiwać dane w zestawie danych. Aby uzyskać więcej informacji, zobacz [zestawów danych zapytania](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Włącza [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) nad danymi w <xref:System.Data.DataSet> obiektu. Aby uzyskać więcej informacji, zobacz [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Zapytania i wyszukiwać dane w zestawie danych. Aby uzyskać więcej informacji, zobacz [zestawów danych zapytania](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Włącza [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) nad danymi w <xref:System.Data.DataSet> obiektu. Aby uzyskać więcej informacji, zobacz [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
 - Użyj **źródeł danych** okna, aby powiązać formanty interfejsu użytkownika z zestawu danych lub jego poszczególnych kolumn i określić, które kolumny są można edytować użytkownika. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 

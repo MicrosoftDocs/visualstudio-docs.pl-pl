@@ -23,12 +23,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07c5853b673657c3ce8e90467a13bbac3f430b6e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556627"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698989"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Możesz wyświetlić dane użytkownikom aplikacji przez powiązanie danych do fo
 
  ![Źródło danych operacji przeciągania](../data-tools/media/raddata-data-source-drag-operation.png "operacji przeciągania raddata źródła danych")
 
- Aby uzyskać ogólne informacje na temat tworzenia formantów powiązanych z danymi w programie Visual Studio, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Aby uzyskać więcej informacji na temat wiązania danych w formularzach Windows Forms, zobacz [powiązanie danych formularzy Windows](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
+ Aby uzyskać ogólne informacje na temat tworzenia formantów powiązanych z danymi w programie Visual Studio, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Aby uzyskać więcej informacji na temat wiązania danych w formularzach Windows Forms, zobacz [powiązanie danych formularzy Windows](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -64,17 +64,17 @@ Możesz wyświetlić dane użytkownikom aplikacji przez powiązanie danych do fo
 
  Aby uzyskać więcej informacji na temat <xref:System.Windows.Forms.BindingSource> składników, zobacz:
 
-- [BindingSource, składnik](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [BindingSource, składnik](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
-- [BindingSource, składnik — omówienie](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [BindingSource, składnik — omówienie](https://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
-- [BindingSource, składnik — architektura](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [BindingSource, składnik — architektura](https://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator — kontrolka
- Ten składnik udostępnia interfejs użytkownika do przechodzenia między danymi wyświetlanymi przez aplikację Windows. Aby uzyskać więcej informacji, zobacz [BindingNavigator — kontrolka](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
+ Ten składnik udostępnia interfejs użytkownika do przechodzenia między danymi wyświetlanymi przez aplikację Windows. Aby uzyskać więcej informacji, zobacz [BindingNavigator — kontrolka](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>DataGridView — formant
- Aby wyświetlić i edytować dane tabelaryczne z wielu różnych rodzajów źródeł danych, należy użyć <xref:System.Windows.Forms.DataGridView> kontroli. Można powiązać danych <xref:System.Windows.Forms.DataGridView> przy użyciu <xref:System.Windows.Forms.DataGridView.DataSource%2A> właściwości. Aby uzyskać więcej informacji, zobacz [— informacje o formancie DataGridView](http://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
+ Aby wyświetlić i edytować dane tabelaryczne z wielu różnych rodzajów źródeł danych, należy użyć <xref:System.Windows.Forms.DataGridView> kontroli. Można powiązać danych <xref:System.Windows.Forms.DataGridView> przy użyciu <xref:System.Windows.Forms.DataGridView.DataSource%2A> właściwości. Aby uzyskać więcej informacji, zobacz [— informacje o formancie DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
 
 ## <a name="see-also"></a>Zobacz też
  [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

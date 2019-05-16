@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816071"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676734"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Korzystanie z narzędzi Visual Studio Tools for Unity
 
@@ -202,7 +202,7 @@ Należy pamiętać, że opisanym tutaj scenariuszu założono, że kod źródło
 
    PDB, pliki są wymagane podczas debugowania, ponieważ zawiera symbole debugowania biblioteki DLL i utwórz mapę kodu, biblioteki DLL do postaci kodu źródłowego. Jeśli jest przeznaczony dla starszej wersji środowiska uruchomieniowego, Visual Studio Tools for Unity użyje informacji z biblioteki DLL i pliku PDB do tworzenia biblioteki DLL. Plik MDB debugowania symbol format jest używany przez aparat skryptów starszego aparatu Unity. Jeśli są przeznaczone dla nowego środowiska uruchomieniowego i przy użyciu pliku PDB przenośny, Visual Studio Tools for Unity nie spróbuje wykonać żadnych konwersji symbolu jako nowe środowisko uruchomieniowe Unity jest w stanie natywnie korzystanie z plików PDB przenośny.
    
-   Można znaleźć więcej informacji na temat generowania plików PDB [tutaj](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Jeśli nowe środowisko uruchomieniowe, upewnij się, że "Informacje o debugowaniu" jest ustawiona na "Portable", aby można było prawidłowo wygenerować pliku PDB przenośny. Jeśli jest przeznaczony dla starszej wersji środowiska uruchomieniowego, należy użyć "Pełnej".
+   Można znaleźć więcej informacji na temat generowania plików PDB [tutaj](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Jeśli nowe środowisko uruchomieniowe, upewnij się, że "Informacje o debugowaniu" jest ustawiona na "Portable", aby można było prawidłowo wygenerować pliku PDB przenośny. Jeśli jest przeznaczony dla starszej wersji środowiska uruchomieniowego, należy użyć "Pełnej".
 
 4. Debugowanie kodu. Można teraz debugować kod źródłowy biblioteki DLL wraz z kodu źródłowego w swoim projekcie aparatu Unity i wszystkie funkcje, które już znasz, takich jak punkty przerwania debugowania i krokowe wykonywanie kodu.
 

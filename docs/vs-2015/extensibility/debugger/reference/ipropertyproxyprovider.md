@@ -12,12 +12,12 @@ ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5de601ef0266763ddd7243e4c526edca24803335
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 39cdc7769765a7680905fca5faa49222bf0a3b6d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781822"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700045"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IPropertyProxyProvider : IUnknown
  Ewaluator wyrażeń (EE) implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu jako część EE wsparcie wizualizatorów typu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołaj [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugProperty3` interfejsu w celu uzyskania tego interfejsu.  
+ Wywołaj [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugProperty3` interfejsu w celu uzyskania tego interfejsu.  
   
 ## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  `IPropertyProxyProvider` Interfejsu implementuje następującą metodę:  

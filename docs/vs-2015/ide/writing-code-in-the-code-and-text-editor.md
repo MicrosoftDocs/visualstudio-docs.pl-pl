@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bba1d1b45c47a61f85bf37d4768a8f05ba0c3e87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 23dd08e95100f186c172fff2cfa6a392bd11eee4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439788"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698084"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Pisanie kodu w edytorze kodu i tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,7 +188,7 @@ Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
  Aby uzyskać informacje o opcjach edytora specyficznych dla języka zobacz następujące tematy:  
 
-- [Ustawienia języka Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Ustawienia języka Visual Basic](https://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
 - [Używanie środowiska programistycznego Visual Studio dla C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 

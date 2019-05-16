@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114317"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698786"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Tworzenie aplikacji mobilnych na wiele platform w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 
 |**Dowiedz się więcej**|
 |--------------------|
-|Wybierz, czy można udostępnić swój kod za pomocą udostępnionych projektów i/lub projektów biblioteki klas przenośnych.<br /><br /> [Współdzielenie kodu między platformami](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog .NET Framework)<br /><br /> [Udostępnianie kodu opcje](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Opcje udostępniania przy użyciu programu .NET Framework kodu](http://msdn.microsoft.com/library/dn720832.aspx) (Biblioteka MSDN)|
+|Wybierz, czy można udostępnić swój kod za pomocą udostępnionych projektów i/lub projektów biblioteki klas przenośnych.<br /><br /> [Współdzielenie kodu między platformami](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog .NET Framework)<br /><br /> [Udostępnianie kodu opcje](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Opcje udostępniania przy użyciu programu .NET Framework kodu](https://msdn.microsoft.com/library/dn720832.aspx) (Biblioteka MSDN)|
 
 ### <a name="WindowsHTML"></a> Docelowe urządzenia z systemem Windows 10
  ![Urządzenia Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
@@ -90,7 +90,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 |**Dowiedz się więcej**|
 |--------------------|
 |[Dowiedz się więcej o uniwersalnych aplikacji dla Windows](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Windows Dev Center)|
-|[Tworzenie swojej pierwszej](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows Dev Center)|
+|[Tworzenie swojej pierwszej](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows Dev Center)|
 |[Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrowanie aplikacji na platformie Universal Windows (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
@@ -171,6 +171,6 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Dodawanie pakietu Office 365 API do projektu programu Visual Studio](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
-- [Azure Mobile Services](http://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [Dodawanie pakietu Office 365 API do projektu programu Visual Studio](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Azure Mobile Services](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

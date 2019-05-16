@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438075"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696061"
 ---
 # <a name="output-window"></a>Okno wyniku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,14 +61,14 @@ ms.locfileid: "63438075"
   
  Można również zaprogramować aplikacje do zapisywania komunikatów diagnostycznych w czasie wykonywania dla **dane wyjściowe** okienka. Aby to zrobić, należy użyć elementów członkowskich <xref:System.Diagnostics.Debug> klasy lub <xref:System.Diagnostics.Trace> klasy w <xref:System.Diagnostics> przestrzeni nazw w bibliotece klas programu .NET Framework. Elementy członkowskie <xref:System.Diagnostics.Debug> klasy dane wyjściowe podczas tworzenia konfiguracji debugowania z rozwiązania lub projektu; członkowie <xref:System.Diagnostics.Trace> klasy, dane wyjściowe podczas kompilowania konfiguracji Debug i Release. Aby uzyskać więcej informacji, zobacz [komunikaty diagnostyczne w oknie danych wyjściowych](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
- W [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], można tworzyć niestandardowych kroków kompilacji i zdarzenia kompilacji, którego ostrzeżenia i błędy są wyświetlane i uwzględniane w **dane wyjściowe** okienka. Przez naciśnięcie klawisza F1 w wierszu danych wyjściowych, możesz wyświetlić odpowiedniego tematu Pomocy. Aby uzyskać więcej informacji, zobacz [formatowanie danych wyjściowych niestandardowy krok budowania lub zdarzenia kompilacji](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
+ W [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], można tworzyć niestandardowych kroków kompilacji i zdarzenia kompilacji, którego ostrzeżenia i błędy są wyświetlane i uwzględniane w **dane wyjściowe** okienka. Przez naciśnięcie klawisza F1 w wierszu danych wyjściowych, możesz wyświetlić odpowiedniego tematu Pomocy. Aby uzyskać więcej informacji, zobacz [formatowanie danych wyjściowych niestandardowy krok budowania lub zdarzenia kompilacji](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
   
 ## <a name="scrolling-behavior"></a>Zachowanie przewijania  
  Jeśli używasz autoscrolling w oknie danych wyjściowych i następnie Nawiguj przy użyciu myszy lub klawiszy strzałek, zatrzymuje autoscrolling. Aby wznowić autoscrolling, naciśnij klawisze CTRL + END.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Komunikaty diagnostyczne w oknie danych wyjściowych](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Instrukcje: Kontrolowanie okna danych wyjściowych](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Instrukcje: Kontrolowanie okna danych wyjściowych](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)   
  [Ogólne informacje o konfiguracjach kompilacji](../../ide/understanding-build-configurations.md)   
- [Omówienie biblioteki klas](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [Omówienie biblioteki klas](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

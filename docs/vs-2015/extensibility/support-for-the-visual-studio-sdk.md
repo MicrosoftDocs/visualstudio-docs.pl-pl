@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193846"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688731"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Kilka opcji pomocy technicznej są dostępne dla klientów, którzy pytań na te
 ## <a name="included-support"></a>Uwzględnione pomocy technicznej  
   
 ### <a name="visual-studio-product-support"></a>Pomoc techniczna programu Visual Studio  
- Niektóre pomoc techniczna jest dołączone do zakupu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produktów. Aby uzyskać więcej informacji, zobacz [pomoc techniczna dla programu Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Firma Microsoft udostępnia zespół pomocy technicznej dedykowanych odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzalności.  
+ Niektóre pomoc techniczna jest dołączone do zakupu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produktów. Aby uzyskać więcej informacji, zobacz [pomoc techniczna dla programu Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Firma Microsoft udostępnia zespół pomocy technicznej dedykowanych odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzalności.  
   
 ### <a name="msdn-subscription-support"></a>Pomoc techniczna dla subskrypcji MSDN  
  Pakiety subskrypcji MSDN mogą również obejmować niektórych pomocy technicznej. Aby uzyskać więcej informacji, zobacz [pomocy technicznej subskrybenta MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  

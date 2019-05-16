@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d5884ab002590f8944aa8c1134c67758a2f0c58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6468e14e3ed588386440e992d9a570e735123bab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423806"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678908"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Instrukcje: Pisanie funkcji raportowania błędów czasu wykonywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia bardziej złożone niestandardowe funkcji raportowania. W tym przykładzie instrukcji switch obsługuje różne typy błędów, zgodnie z definicją `reportType` parametru `_CrtDbgReportW`. Ponieważ zastępowane `_CrtDbgReportW`, nie można użyć `_CrtSetReportMode`. Funkcję musi obsługiwać dane wyjściowe. Pierwszy argument w postaci zmiennej w tej funkcji ma wiele błędów czasu wykonywania. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorType](http://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06).  
+ Poniższy przykład przedstawia bardziej złożone niestandardowe funkcji raportowania. W tym przykładzie instrukcji switch obsługuje różne typy błędów, zgodnie z definicją `reportType` parametru `_CrtDbgReportW`. Ponieważ zastępowane `_CrtDbgReportW`, nie można użyć `_CrtSetReportMode`. Funkcję musi obsługiwać dane wyjściowe. Pierwszy argument w postaci zmiennej w tej funkcji ma wiele błędów czasu wykonywania. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorType](https://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06).  
   
 ```  
 #include <windows.h>  
@@ -112,7 +112,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```  
   
 ## <a name="example"></a>Przykład  
- Użyj `_RTC_SetErrorFuncW` do zainstalowania funkcji niestandardowych zamiast `_CrtDbgReportW`. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorFuncW](http://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a). `_RTC_SetErrorFuncW` Zwracają wartość poprzedniej funkcji raportowania, który można zapisać i przywrócić w razie potrzeby.  
+ Użyj `_RTC_SetErrorFuncW` do zainstalowania funkcji niestandardowych zamiast `_CrtDbgReportW`. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorFuncW](https://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a). `_RTC_SetErrorFuncW` Zwracają wartość poprzedniej funkcji raportowania, który można zapisać i przywrócić w razie potrzeby.  
   
 ```  
 #include <rtcapi.h>  

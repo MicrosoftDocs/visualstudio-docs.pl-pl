@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8757b04423037d821d7b74293e508f567975da57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f5d4333508d6faec3df81f860f5b5b2b526be324
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047935"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692084"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ argument CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,4 +78,4 @@ ms.locfileid: "60047935"
  [CA1305: Określ argument IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Zobacz też
- [NIB: Używanie klasy CultureInfo](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
+ [NIB: Używanie klasy CultureInfo](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

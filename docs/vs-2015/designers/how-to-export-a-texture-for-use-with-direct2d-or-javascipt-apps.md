@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44d877f7ff6774e8e52428f4a44acab99816c480
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 98b08fc8ebf2fca207d41b644032d7abbcd97a24
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434422"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681739"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Potok zawartości obrazu może generować tekstury, które są zgodne z konwencj
   
 2. Skonfigurować pliku tekstury, jest przetwarzany przez potok zawartości obrazu. W **Eksploratora rozwiązań**, otwórz menu skrótów dla utworzonego właśnie pliku tekstury, a następnie wybierz **właściwości**. Na **właściwości konfiguracji**, **ogólne** ustaw **typu elementu** właściwości **potok zawartości obrazu**. Upewnij się, że **zawartości** właściwość jest ustawiona na **tak** i **Wyłącz z kompilacji** ustawiono **nie**, a następnie wybierz  **Zastosuj** przycisku. **Potok zawartości obrazu** zostanie wyświetlona strona właściwości konfiguracji.  
   
-3. Ustaw format wyjściowy na jeden z formatów skompresowanego bloku. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **skompresować** właściwości  **Kompresja bc3_unorm (/ compress: BC3_UNORM)**. Możesz wybrać dowolny z innych formantów BC1, BC2 lub BC3 formatów w zależności od wymagań. Direct2D nie obsługuje obecnie tekstur BC4, BC5, BC6 lub BC7 tekstury. Aby uzyskać więcej informacji o różnych formatach kompresji Blokowej, zobacz [kompresja blokowa (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
+3. Ustaw format wyjściowy na jeden z formatów skompresowanego bloku. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **skompresować** właściwości  **Kompresja bc3_unorm (/ compress: BC3_UNORM)**. Możesz wybrać dowolny z innych formantów BC1, BC2 lub BC3 formatów w zależności od wymagań. Direct2D nie obsługuje obecnie tekstur BC4, BC5, BC6 lub BC7 tekstury. Aby uzyskać więcej informacji o różnych formatach kompresji Blokowej, zobacz [kompresja blokowa (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
   
    > [!NOTE]
    > Format kompresji, który jest określony, określa format pliku, który jest wytwarzany przez potok zawartości obrazu. Stanowi to odmianę **Format** właściwości obrazu źródłowego w edytorze obrazu, który określa format pliku obrazu źródłowego, ponieważ przechowywane na dysku — czyli *formatu roboczego*. Nie ma zazwyczaj format roboczy był skompresowany.  

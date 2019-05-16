@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf656ed94b232e2ce19986696f4155dc225c8ad0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc659641e64bde9da4f1e05abf285fbdec1877e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433643"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674843"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opcje — Okno dialogowe [Visual Studio]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63433643"
 **Opcje** okno dialogowe umożliwia konfigurowanie zintegrowanego środowiska programistycznego (IDE) do Twoich potrzeb. Na przykład można ustanowić domyślną lokalizację zapisywania dla projektów, zmienić domyślny wygląd i zachowanie systemu windows i tworzenie skrótów do często używanych poleceń. Dostępne są również opcje specyficzne dla języka programowania i platform. Możesz uzyskać dostęp **opcje** z **narzędzia** menu.
 
 > [!NOTE]
-> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="layout-of-the-options-dialog-box"></a>Układ okna dialogowego Opcje
  **Opcje** okno dialogowe jest podzielona na dwie części: okienka nawigacji po lewej stronie i obszar wyświetlacza po prawej stronie. Kontrolka drzewa w okienku nawigacji zawiera węzły folderów, takie jak środowisko, Edytor tekstu, projekty i rozwiązania i kontroli źródła. Rozwiń węzeł dowolnego folderu, aby wyświetlić listę stron opcji, które zawiera. Po wybraniu węzła dla określonej strony, dostępne opcje są wyświetlane w obszarze.

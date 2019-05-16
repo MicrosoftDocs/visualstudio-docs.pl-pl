@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436979"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705170"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
 5. W **wartość** kolumny, wprowadź parametry połączenia (bez żadnego poza cudzysłowy), a następnie zapisz zmiany.  
   
 > [!NOTE]
-> W rzeczywistej aplikacji, należy przechowywać parametry połączenia bezpieczne, zgodnie z opisem w [parametry połączenia i pliki konfiguracyjne](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> W rzeczywistej aplikacji, należy przechowywać parametry połączenia bezpieczne, zgodnie z opisem w [parametry połączenia i pliki konfiguracyjne](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Pobieranie parametrów połączenia  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|Użyj `ExecuteNonQuery` metodę `cmdNewCustomer` do uruchomienia `Sales.uspNewCustomer` procedury składowanej. To przechowywane procedury przebiegów `INSERT` instrukcji, nie zapytanie.|  
 |NC-13|`@CustomerID` Wartość jest zwracana jako wartość tożsamości z bazy danych. Ponieważ jest to liczba całkowita, musisz przekonwertować go na ciąg, aby wyświetlić ją w **identyfikator klienta** pola tekstowego.<br /><br /> — Można zadeklarować `parsedCustomerID` w NC-2.<br />-Store `@CustomerID` wartość w `parsedCustomerID` do późniejszego użycia.<br />-Konwertuj zwracany Identyfikatro klienta na ciąg i włóż go do `txtCustomerID.Text`.|  
 |NC-14|W tym przykładzie Dodaj prostą klauzuli catch (niemającą jakości produkcyjnej).|  
-|NC-15|Zawsze zamykaj połączenie po zakończeniu korzystania z niego, tak aby mogło być ono zwolnione z puli połączeń. Zobacz [połączenie serwera SQL Server (ADO.NET) buforowanie](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
+|NC-15|Zawsze zamykaj połączenie po zakończeniu korzystania z niego, tak aby mogło być ono zwolnione z puli połączeń. Zobacz [połączenie serwera SQL Server (ADO.NET) buforowanie](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
 |NC-16|Zdefiniuj metodę, aby sprawdzić, czy nazwa klienta jest obecna.<br /><br /> — Jeśli pole tekstowe jest puste, wyświetlany komunikat i zwracają `false`, ponieważ nazwa jest wymagana do utworzenia konta.<br />— Jeśli pole tekstowe nie jest pusta, zwróć `true`.|  
 |NC-17|Dodaj kod do obsługi zdarzeń kliknij `btnPlaceOrder` przycisku.|  
 |NC-18|Opakować wywołanie `isPlaceOrderReady` wokół `btnPlaceOrder_Click` kodu zdarzenia, aby `uspPlaceNewOrder` nie działa, jeśli jest to wymagane dane wejściowe nie będą dostępne.|  

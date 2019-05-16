@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d83b4945b41c26ace1b36a294f1830fdbb24d319
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47e893cfe84c984231891583abe5d0fea0178dc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798984"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694464"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch, projektant działań
 <xref:System.Activities.Statements.PickBranch> Zapewnia oparte na zdarzeniach ścieżką wykonywania w ramach <xref:System.Activities.Statements.Pick> działanie, które mogą być wyzwalane przez zdarzenia przychodzącego.  
@@ -58,5 +58,5 @@ ms.locfileid: "62798984"
   
 ## <a name="see-also"></a>Zobacz też  
  [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)   
- [Wybieranie działania](http://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
- [Używanie działania Pick](http://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)
+ [Wybieranie działania](https://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
+ [Używanie działania Pick](https://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)

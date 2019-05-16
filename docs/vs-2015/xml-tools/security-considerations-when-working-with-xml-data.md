@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fab67780f113c2348fa30e80c4174d1f26f130f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 448396ebf8bf6318a22d7c6b05037d3ea43b0fd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697128"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +42,4 @@ W tym temacie omówiono problemy z zabezpieczeniami, które należy znać podcza
 - Ewaluator wyrażeń XSLT jest ładowany przez aparat debugowania zarządzanego. Aparat debugowania zarządzanego przyjęto założenie, że cały kod jest uruchamiany z komputera lokalnego użytkownika. W związku z tym <xref:System.Xml.Xsl.XslCompiledTransform> klasy pobiera plik XSLT do użytkownika komputera lokalnego. Możliwość, że podwyższenie poziomu w uprawnień do wykonywania może wystąpić skuteczność została osłabiona przez wykonywanie wszystkie przekształcenia XSLT w nowej domeny aplikacji z ograniczonymi uprawnieniami  
   
 ## <a name="see-also"></a>Zobacz też  
- [Domeny aplikacji](http://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)
+ [Domeny aplikacji](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

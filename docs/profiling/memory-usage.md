@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34efc198b1237028c84e86e8cb34db9270b6d646
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad4716b2408afb04242a8a71da3a96474dc42b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426659"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704471"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Użycie pamięci miar w programie Visual Studio
 

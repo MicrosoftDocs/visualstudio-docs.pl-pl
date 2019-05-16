@@ -29,12 +29,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 759376a6682287cbe41d4d1dc13666c5a540f8e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9c26cc17d00881a72928806089a4c2880fdbce2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050560"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702338"
 ---
 # <a name="cc-assertions"></a>Potwierdzenia C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Instrukcji asercji określa warunek, który chcą mieć wartość true w punkcie
 
 - Potwierdzenia MFC dla programów MFC.  
 
-- [ATLASSERT](http://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) dla programów, które używają ATL.  
+- [ATLASSERT](https://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) dla programów, które używają ATL.  
 
 - Potwierdzenia CRT dla programów, które używają biblioteki wykonawczej C.  
 
-- ANSI [assert — funkcja](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) innych programów C/C++.  
+- ANSI [assert — funkcja](https://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) innych programów C/C++.  
 
   Potwierdzenia umożliwia przechwytywania błędów logiki, sprawdź wyniki operacji i testowanie warunki błędów, które powinno zostać obsłużone.  
 
@@ -94,7 +94,7 @@ ASSERT(nM++ > 0); // Don't do this!
 
 ```  
 
- Ponieważ `ASSERT` w wydanej wersji programu, nie jest obliczane wyrażenie `nM` mają różne wartości w wersjach Debug i Release. Aby uniknąć tego problemu w MFC, można użyć [Sprawdź](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makr zamiast `ASSERT`.  `VERIFY` oblicza wyrażenie we wszystkich wersjach, ale nie sprawdza wynik w pełnej wersji.  
+ Ponieważ `ASSERT` w wydanej wersji programu, nie jest obliczane wyrażenie `nM` mają różne wartości w wersjach Debug i Release. Aby uniknąć tego problemu w MFC, można użyć [Sprawdź](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makr zamiast `ASSERT`.  `VERIFY` oblicza wyrażenie we wszystkich wersjach, ale nie sprawdza wynik w pełnej wersji.  
 
  Należy zachować ostrożność szczególnie przy użyciu wywołania funkcji w instrukcji potwierdzania, ponieważ obliczania funkcji może mieć nieoczekiwane działania niepożądane.  
 
@@ -108,7 +108,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
  [W tym temacie](#BKMK_In_this_topic)  
 
 ## <a name="BKMK_CRT_assertions"></a> Potwierdzenia CRT  
- CRTDBG. Określa plik nagłówkowy H [_ASSERT i _asserte — makra](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) sprawdzania potwierdzenia.  
+ CRTDBG. Określa plik nagłówkowy H [_ASSERT i _asserte — makra](https://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) sprawdzania potwierdzenia.  
 
 |   Macro    |                                             Wynik                                              |
 |------------|-------------------------------------------------------------------------------------------------|
@@ -128,30 +128,30 @@ VERIFY ( myFnctn(0)==1 ) // safe
    } while (0)  
 ```  
 
- Jeśli potwierdzona wyrażenie ma wartość FALSE, [_CrtDbgReport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) jest wywoływana, aby zgłosić błąd potwierdzenia (przy użyciu okno dialogowe komunikatu, domyślnie). Jeśli wybierzesz **ponów** w oknie dialogowym komunikatu `_CrtDbgReport` zwraca 1 i `_CrtDbgBreak` wywołuje debugera za pomocą `DebugBreak`.  
+ Jeśli potwierdzona wyrażenie ma wartość FALSE, [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) jest wywoływana, aby zgłosić błąd potwierdzenia (przy użyciu okno dialogowe komunikatu, domyślnie). Jeśli wybierzesz **ponów** w oknie dialogowym komunikatu `_CrtDbgReport` zwraca 1 i `_CrtDbgBreak` wywołuje debugera za pomocą `DebugBreak`.  
 
 ### <a name="checking-for-heap-corruption"></a>Sprawdzanie, czy uszkodzenie sterty  
- W poniższym przykładzie użyto [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) aby wykryć ewentualne uszkodzenia sterty:  
+ W poniższym przykładzie użyto [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) aby wykryć ewentualne uszkodzenia sterty:  
 
 ```  
 _ASSERTE(_CrtCheckMemory());  
 ```  
 
 ### <a name="checking-pointer-validity"></a>Sprawdzanie poprawności wskaźnika  
- W poniższym przykładzie użyto [_crtisvalidpointer —](http://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) Aby sprawdzić, czy zakres pamięci danego nadaje się do odczytu lub zapisu.  
+ W poniższym przykładzie użyto [_crtisvalidpointer —](https://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) Aby sprawdzić, czy zakres pamięci danego nadaje się do odczytu lub zapisu.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( address, size, TRUE );  
 ```  
 
- W poniższym przykładzie użyto [_crtisvalidheappointer —](http://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) Aby sprawdzić, wskaźnik wskazuje pamięci lokalnej sterty (sterty tworzony i zarządzany przez to wystąpienie biblioteki wykonawczej C — Biblioteka DLL może mieć własne wystąpienie biblioteki, i w związku z tym swój własny sterty, poza stosu aplikacji). Ta asercja nie przechwytuje tylko wartość null lub liczbach adresy, ale także wskaźniki do zmiennych statycznych, zmiennych stosu i inne nielokalnych pamięci.  
+ W poniższym przykładzie użyto [_crtisvalidheappointer —](https://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) Aby sprawdzić, wskaźnik wskazuje pamięci lokalnej sterty (sterty tworzony i zarządzany przez to wystąpienie biblioteki wykonawczej C — Biblioteka DLL może mieć własne wystąpienie biblioteki, i w związku z tym swój własny sterty, poza stosu aplikacji). Ta asercja nie przechwytuje tylko wartość null lub liczbach adresy, ale także wskaźniki do zmiennych statycznych, zmiennych stosu i inne nielokalnych pamięci.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( myData );  
 ```  
 
 ### <a name="checking-a-memory-block"></a>Sprawdzanie bloku pamięci  
- W poniższym przykładzie użyto [_crtismemoryblock —](http://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) Aby sprawdzić, czy blok pamięci znajduje się w lokalnej sterty i ma typ bloku prawidłowe.  
+ W poniższym przykładzie użyto [_crtismemoryblock —](https://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) Aby sprawdzić, czy blok pamięci znajduje się w lokalnej sterty i ma typ bloku prawidłowe.  
 
 ```  
 _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber));  
@@ -160,11 +160,11 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
  [W tym temacie](#BKMK_In_this_topic)  
 
 ## <a name="BKMK_MFC_assertions"></a> Potwierdzenia MFC  
- Definiuje MFC [ASERCJA](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) — makro sprawdzania potwierdzenia. Umożliwia on również definiowanie `MFC ASSERT_VALID` i `CObject::AssertValid` metody do sprawdzania stanu wewnętrznego `CObject`-pochodnych obiektu.  
+ Definiuje MFC [ASERCJA](https://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) — makro sprawdzania potwierdzenia. Umożliwia on również definiowanie `MFC ASSERT_VALID` i `CObject::AssertValid` metody do sprawdzania stanu wewnętrznego `CObject`-pochodnych obiektu.  
 
  Jeśli argument MFC `ASSERT` — makro osiągnie wartość zero lub wartość FAŁSZ, makro zatrzymuje wykonywanie programów, a ostrzega o tym użytkownika; w przeciwnym razie wykonywanie jest kontynuowane.  
 
- Jeśli potwierdzenie nie powiedzie się, okno dialogowe komunikatu zawiera nazwę pliku źródłowego i numer wiersza asercji. Jeśli w oknie dialogowym wybierz pozycję Ponów próbę polu wywołanie [afxdebugbreak —](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) powoduje wykonanie na przerwanie i przejście do debugera. W tym momencie możesz analizować stos wywołań i użyj innych obiektów debugera, aby określić, dlaczego potwierdzenie nie powiodło się. Po włączeniu [Just-in-time debugging](../debugger/just-in-time-debugging-in-visual-studio.md)i debuger nie została jeszcze uruchomiona, okno dialogowe można uruchomić debugera.  
+ Jeśli potwierdzenie nie powiedzie się, okno dialogowe komunikatu zawiera nazwę pliku źródłowego i numer wiersza asercji. Jeśli w oknie dialogowym wybierz pozycję Ponów próbę polu wywołanie [afxdebugbreak —](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) powoduje wykonanie na przerwanie i przejście do debugera. W tym momencie możesz analizować stos wywołań i użyj innych obiektów debugera, aby określić, dlaczego potwierdzenie nie powiodło się. Po włączeniu [Just-in-time debugging](../debugger/just-in-time-debugging-in-visual-studio.md)i debuger nie została jeszcze uruchomiona, okno dialogowe można uruchomić debugera.  
 
  Poniższy przykład pokazuje, jak używać `ASSERT` Aby sprawdzić wartość zwracaną przez funkcję:  
 
@@ -173,16 +173,16 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative  
 ```  
 
- Możesz użyć ASSERT, za pomocą [IsKindOf](http://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6) funkcję, aby zapewnić typ sprawdzania argumentów funkcji:  
+ Możesz użyć ASSERT, za pomocą [IsKindOf](https://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6) funkcję, aby zapewnić typ sprawdzania argumentów funkcji:  
 
 ```  
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
 
- `ASSERT` — Makro nie tworzy kodu w pełnej wersji. Jeśli potrzebujesz można obliczyć wartości wyrażenia w pełnej wersji, użyj [Sprawdź](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makr zamiast ASSERT.  
+ `ASSERT` — Makro nie tworzy kodu w pełnej wersji. Jeśli potrzebujesz można obliczyć wartości wyrażenia w pełnej wersji, użyj [Sprawdź](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makr zamiast ASSERT.  
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID i CObject::AssertValid  
- [CObject::AssertValid](http://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) metoda zapewnia sprawdzania w trakcie wykonywania wewnętrznego stanu obiektu. Mimo że nie musisz przesłonić `AssertValid` po utworzeniu klasy pochodnej klasy z `CObject`, aby włączyć klasy bardziej niezawodna w ten sposób. `AssertValid` należy wykonać potwierdzenia na wszystkich zmiennych Członkowskich obiektu, aby sprawdzić, czy zawierają one prawidłowe wartości. Na przykład należy sprawdzić, wskaźnik zmienne składowe nie mają wartości NULL.  
+ [CObject::AssertValid](https://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) metoda zapewnia sprawdzania w trakcie wykonywania wewnętrznego stanu obiektu. Mimo że nie musisz przesłonić `AssertValid` po utworzeniu klasy pochodnej klasy z `CObject`, aby włączyć klasy bardziej niezawodna w ten sposób. `AssertValid` należy wykonać potwierdzenia na wszystkich zmiennych Członkowskich obiektu, aby sprawdzić, czy zawierają one prawidłowe wartości. Na przykład należy sprawdzić, wskaźnik zmienne składowe nie mają wartości NULL.  
 
  Poniższy przykład pokazuje sposób deklarowania `AssertValid` funkcji:  
 
@@ -223,7 +223,7 @@ void CPerson::AssertValid() const
 
  Dowolny zmiennych Członkowskich przechowywać obiekty, można użyć `ASSERT_VALID` makra w celu testowania ich ważność wewnętrznego (Jeśli zastąpisz ich klasy `AssertValid`).  
 
- Rozważmy na przykład klasa `CMyData`, które sklepy [CObList](http://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) w jednym z jego zmiennych Członkowskich. `CObList` Zmiennej `m_DataList`, przechowuje kolekcję `CPerson` obiektów. Deklaracja skróconej `CMyData` wygląda podobnie do następującego:  
+ Rozważmy na przykład klasa `CMyData`, które sklepy [CObList](https://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) w jednym z jego zmiennych Członkowskich. `CObList` Zmiennej `m_DataList`, przechowuje kolekcję `CPerson` obiektów. Deklaracja skróconej `CMyData` wygląda podobnie do następującego:  
 
 ```  
 class CMyData : public CObject  

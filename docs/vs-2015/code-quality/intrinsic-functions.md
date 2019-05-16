@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759441"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699437"
 ---
 # <a name="intrinsic-functions"></a>Funkcje wewnętrzne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Wyrażenia w SAL może być wyrażeniem języka C/C++, pod warunkiem, że to wyr
 |Adnotacja|Opis|  
 |----------------|-----------------|  
 |`_String_length_(param)`|`param` jest to liczba elementów w ciągu maksymalnie, ale nie łącznie z terminatorem null. Ta adnotacja jest zarezerwowana dla typów znaku ciągu.|  
-|`strlen(param)`|`param` jest to liczba elementów w ciągu maksymalnie, ale nie łącznie z terminatorem null. Ta adnotacja jest zarezerwowany do użycia na znak tablice i przypomina funkcji środowiska uruchomieniowego C [funkcje strlen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
-|`wcslen(param)`|`param` jest to liczba elementów w ciągu maksymalnie (z wyjątkiem) terminator o wartości null. Ta adnotacja jest zarezerwowany do użycia na znak dwubajtowy tablice i przypomina funkcji środowiska uruchomieniowego C [wcslen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`strlen(param)`|`param` jest to liczba elementów w ciągu maksymalnie, ale nie łącznie z terminatorem null. Ta adnotacja jest zarezerwowany do użycia na znak tablice i przypomina funkcji środowiska uruchomieniowego C [funkcje strlen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`wcslen(param)`|`param` jest to liczba elementów w ciągu maksymalnie (z wyjątkiem) terminator o wartości null. Ta adnotacja jest zarezerwowany do użycia na znak dwubajtowy tablice i przypomina funkcji środowiska uruchomieniowego C [wcslen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z adnotacji SAL w celu zmniejszenia liczby błędów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

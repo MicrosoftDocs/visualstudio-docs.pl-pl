@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049311"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675337"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Dostarczanie obsługi polecenia Cofnij do projektantów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Projektanci, takie jak edytory, zazwyczaj należy do obsługi operacji cofania, 
   
 - Trwałość dostarczają i CodeDOM obsługuje implementując <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> i <xref:System.ComponentModel.Design.IComponentChangeService> klasy.  
   
-  Aby uzyskać więcej informacji na temat pisania projektantów przy użyciu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], zobacz [rozszerzenie obsługi w czasie projektowania](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Aby uzyskać więcej informacji na temat pisania projektantów przy użyciu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], zobacz [rozszerzenie obsługi w czasie projektowania](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
   [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Zapewnia infrastrukturę cofania domyślne przez:  
   
@@ -45,7 +45,7 @@ Projektanci, takie jak edytory, zazwyczaj należy do obsługi operacji cofania, 
   
 - Stosuje systemu podczas analizowania i generowanie kodu na podstawie CodeDOM standardowego dla generowania kodu i trwałości.  
   
-     Aby uzyskać więcej informacji na temat pracy z obsługą programu Visual Studio CodeDOM, zobacz [dynamiczne generowanie kodu źródłowego i kompilacja](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Aby uzyskać więcej informacji na temat pracy z obsługą programu Visual Studio CodeDOM, zobacz [dynamiczne generowanie kodu źródłowego i kompilacja](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Kiedy należy używać jawnych cofania projektanta pomocy technicznej  
  Projektanci należy podać zarządu cofania, jeśli korzystają z graficznym interfejsem użytkownika, określane jako karty Widok innej niż ta, dostarczone przez <xref:System.Windows.Forms.Control>.  
@@ -105,4 +105,4 @@ Projektanci, takie jak edytory, zazwyczaj należy do obsługi operacji cofania, 
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [Rozszerzenie obsługi w czasie projektowania](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Rozszerzenie obsługi w czasie projektowania](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

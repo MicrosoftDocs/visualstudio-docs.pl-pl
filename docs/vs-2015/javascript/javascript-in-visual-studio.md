@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705786"
 ---
 # <a name="javascript-in-visual-studio"></a>Język JavaScript w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pisania kodu w języku JavaScript w środowisku IDE programu Visual Studio można używać większości lub wszystkich standardowych ułatwień edycji (fragmenty kodu, technologia IntelliSense itd.). W przypadku wielu typów aplikacji i usług, można napisać kod JavaScript.
 
- Aby uzyskać dokumentację referencyjną języka JavaScript, zobacz [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
+ Aby uzyskać dokumentację referencyjną języka JavaScript, zobacz [JavaScript](https://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
 
  Określonych wersji programu Visual Studio lub określone rozszerzenia programu Visual Studio, może być konieczne opracowanie typów określonej aplikacji i usług przy użyciu języków HTML i JavaScript. Poniższa lista zawiera linki do dodatkowych informacji.
 
@@ -29,7 +29,7 @@ JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pis
 
 - Aby utworzyć [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)oraz aplikacje uniwersalne (obsługujących obu platform) [Pobierz narzędzia](https://developer.microsoft.com/windows/downloads).
 
-- Aby utworzyć usług w chmurze, zobacz [witryny Microsoft Azure](http://azure.microsoft.com/documentation/).
+- Aby utworzyć usług w chmurze, zobacz [witryny Microsoft Azure](https://azure.microsoft.com/documentation/).
 
 - Do tworzenia witryn sieci web i aplikacji sieci web, [można znaleźć w witrynie ASP.NET](http://www.asp.net/get-started/websites).
 

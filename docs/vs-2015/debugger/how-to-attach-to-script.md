@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db5f46fdea66647131557b3d2cff2619e99aabc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 719654916087e7c7f4249ff52abbed628a2c56a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704495"
 ---
 # <a name="how-to-attach-to-script"></a>Instrukcje: Dołączanie do skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
   
 2. W **dołączyć do procesu** okno dialogowe, przyjrzeć **dostępne procesy** chcesz dołączyć do listy i Znajdź skryptu procedur. Procesy skryptu można zidentyfikować, analizując **typu** kolumny.  
   
-   1. Jeśli proces, który chcesz debugować jest uruchomiony na innym komputerze, musisz najpierw wybrać komputera zdalnego. Aby uzyskać więcej informacji, zobacz [jak: Wybierz komputer zdalny](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Jeśli proces, który chcesz debugować jest uruchomiony na innym komputerze, musisz najpierw wybrać komputera zdalnego. Aby uzyskać więcej informacji, zobacz [jak: Wybierz komputer zdalny](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
    2. Jeśli proces działa przy użyciu konta innego użytkownika, wybierz opcję **Pokaż procesy wszystkich użytkowników** pole wyboru.  
   
@@ -59,7 +59,7 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
   
    **Dostępne procesy** zostanie wyświetlona lista automatycznie po otwarciu **procesy** okno dialogowe. Procesy można uruchomić i zatrzymać w tle, gdy jest otwarte okno dialogowe. W związku z tym zawartość może nie zawsze być nieaktualne. Można odświeżyć listę w dowolnym momencie, aby wyświetlić bieżącą listę procesów, naciskając klawisz **Odśwież** przycisku.  
   
-   Można być dołączonym do wielu programów podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny program w pasku narzędzi debugowania lokalizacji. Aby uzyskać więcej informacji, zobacz [jak: Ustaw bieżący proces](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+   Można być dołączonym do wielu programów podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny program w pasku narzędzi debugowania lokalizacji. Aby uzyskać więcej informacji, zobacz [jak: Ustaw bieżący proces](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
    Wszystkie **debugowania** poleceń menu wpływają na aktywny program. W oknie dialogowym procesów, może przerwać dowolnego debugowanego programu. Zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md).  
   

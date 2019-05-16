@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425887"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696442"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Instrukcje: Aktualizacja projektów Visual C++ w Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +54,4 @@ Przy pierwszym otwarciu projektu Visual C++, który został utworzony we wcześn
  Jeśli chcesz kontynuować pracę z niestandardowym PlatformToolset w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], zestaw narzędzi musi znajdować się pod %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ na x86 komputerze lub % ProgramFiles (x86)%\MSBuild\ Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ na x64 maszyny. Aby uzyskać informacje o sposobie tworzenia niestandardowego zestawu narzędzi platformy, zobacz [C++ natywna Wielowersyjność](http://go.microsoft.com/fwlink/?LinkId=248587) na blogu zespołu Visual C++.
 
 ## <a name="see-also"></a>Zobacz też
- [Visual C++, przenoszenie i uaktualnianie przewodnik](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Visual C++, przenoszenie i uaktualnianie przewodnik](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

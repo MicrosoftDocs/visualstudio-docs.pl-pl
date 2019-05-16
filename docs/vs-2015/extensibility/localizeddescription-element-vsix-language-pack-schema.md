@@ -8,12 +8,12 @@ ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e626e532c462199d38ddb3f1044bab25d389995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 281f3823d22ee0e290e4b6bb32a8280f4773a592
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679907"
 ---
 # <a name="localizeddescription-element-vsix-language-pack-schema"></a>Element LocalizedDescription (schemat VSIX Language Pack)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,4 +62,4 @@ Wymagana. Zapewnia zlokalizowany opis rozszerzenia.
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)   
- [Odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Odwołanie do schematu 1.0 rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

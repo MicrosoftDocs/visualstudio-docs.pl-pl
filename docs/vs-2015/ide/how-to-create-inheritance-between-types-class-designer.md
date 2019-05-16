@@ -14,12 +14,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80d4ebe992a3406a4e8c54b033cd4f526335231b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9994733405932ed9f7b15cc8ce46c31215afaebc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416975"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680357"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy prz
     >  Mimo że można wizualizować istniejące typy rodzajowe, nie można utworzyć nowych typów rodzajowych. Ponadto nie można zmienić parametrów typu dla istniejących typów rodzajowych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dziedziczenie](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
- [Podstawowe informacje o dziedziczeniu](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
+ [Dziedziczenie](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
+ [Podstawowe informacje o dziedziczeniu](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
  [Instrukcje: Wyświetlanie dziedziczenia między typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Klasy Visual C++ w Projektancie klas](../ide/visual-cpp-classes-in-class-designer.md)

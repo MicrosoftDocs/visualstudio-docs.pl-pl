@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b5834e00cfaf43d1e5230ffbb221dbd5044d687
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 759b3268edd6155d733c18779ebf7ca4efc44a44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386838"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688867"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63386838"
 Procedury składowane, które mogą być dodawane do Projektanta obiektów relacyjnych lub wykonywane co typowe <xref:System.Data.Linq.DataContext> metody. One może również zastąpić to ustawienie domyślne [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] zachowania w czasie wykonywania, który wykonuje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klas jednostek bazy danych (na przykład w przypadku, gdy wywołanie <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metody).  
   
 > [!NOTE]
-> Jeśli Twoja procedura składowana ma zwracać wartości, które muszą zostać odesłany do klienta (na przykład wartości obliczane w procedurze składowanej), utworzyć parametry wyjściowe w przechowywanych procedur. Jeśli nie możesz użyć parametrów wyjściowych, zapisu przesłonięcia implementację metody częściowej, zamiast polegania na generowany przez projektanta O/R. Wartości wygenerowanych w bazie danych elementów członkowskich muszą być podane odpowiednie wartości po pomyślnym ukończeniu operacji WSTAWIANIA lub aktualizacji. Aby uzyskać więcej informacji, zobacz [obowiązki dewelopera w zastępowanie domyślne zachowanie](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
+> Jeśli Twoja procedura składowana ma zwracać wartości, które muszą zostać odesłany do klienta (na przykład wartości obliczane w procedurze składowanej), utworzyć parametry wyjściowe w przechowywanych procedur. Jeśli nie możesz użyć parametrów wyjściowych, zapisu przesłonięcia implementację metody częściowej, zamiast polegania na generowany przez projektanta O/R. Wartości wygenerowanych w bazie danych elementów członkowskich muszą być podane odpowiednie wartości po pomyślnym ukończeniu operacji WSTAWIANIA lub aktualizacji. Aby uzyskać więcej informacji, zobacz [obowiązki dewelopera w zastępowanie domyślne zachowanie](https://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
   
 > [!NOTE]
 > [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] uchwyty wygenerowanych w bazie danych wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazy danych) i kolumn sygnatur czasowych. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości wygenerowanych w bazie danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, lub <xref:System.Data.Linq.Mapping.AutoSync>.  
@@ -67,6 +67,6 @@ Procedury składowane, które mogą być dodawane do Projektanta obiektów relac
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ do SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Operacje wstawiania, aktualizowania i usuwania](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
+ [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ do SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Operacje wstawiania, aktualizowania i usuwania](https://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)

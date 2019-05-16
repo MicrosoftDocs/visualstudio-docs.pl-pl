@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b403f457cead70f113609e30cebdcf1c53c1341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fb1355dfebaad4230c349c0c7b30ae400ecdaa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759947"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692172"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Funkcja (Zestaw SDK dostępu do interfejsu debugowania)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,14 +42,14 @@ Każda funkcja jest identyfikowana przez `SymTagFunction` symboli.
 |[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` Jeśli funkcja zawiera obsługi (tylko w DIA SDK w wersji 8.0 lub nowszym) wyjątków języka c++.|  
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE` Jeśli funkcja zawiera asynchronicznych wyjątków (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` Jeśli funkcja zawiera zestaw wbudowany (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
-|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` Jeśli funkcja zawiera [longjmp](http://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) wywołania (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
+|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` Jeśli funkcja zawiera [longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) wywołania (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` Jeśli funkcja zawiera sprawdzenia zabezpieczeń (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|`BOOL`|`TRUE` Jeśli funkcja zawiera wyjątek stylu Win32 ze strukturą obsługi (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
-|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` Jeśli funkcja zawiera [setjmp](http://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) wywołania (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
+|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` Jeśli funkcja zawiera [setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) wywołania (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` Jeśli funkcja ma zwracany przerwania (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE` Jeśli funkcja jest wprowadzenie wirtualnego.|  
 |[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE` Jeśli funkcja została oznaczona przy użyciu jednego z [w tekście, __inline, \__forceinline](../../misc/inline-inline-forceinline.md) atrybutów.|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` Jeśli funkcja jest oznaczona atrybutem ["naked"](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) atrybutu (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` Jeśli funkcja jest oznaczona atrybutem ["naked"](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) atrybutu (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` Jeśli funkcja jest statyczna (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Liczba bajtów kod funkcji, zaczynając od lokalizacji.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol otaczającej compiland —.|  

@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447301"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694915"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,10 +94,10 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
 
    Po wybraniu ładuje tabele eksportu bibliotek DLL. Informacje symboliczne z tabel eksportu bibliotek DLL mogą być przydatne, jeśli pracujesz z komunikatami systemu Windows, procedurami systemu Windows (WindowProcs), obiektami COM, kierowaniem lub dowolną biblioteką DLL, dla której nie masz symboli. Odczytywanie informacji o eksportowaniu biblioteki DLL są związane z pewnym dodatkowym obciążeniem. Dlatego ta funkcja jest domyślnie wyłączona.
 
-   Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, użyj `dumpbin /exports`. Symbole są dostępne dla dowolnej 32-bitowej systemowej biblioteki DLL. Czytając `dumpbin /exports` danych wyjściowych, możesz zobaczyć dokładną nazwę funkcji, w tym znaki inne niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji tabel eksportu biblioteki DLL mogą być pojawić się obcięte gdzie indziej w debugerze. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [dumpbin/EXPORTS](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
+   Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, użyj `dumpbin /exports`. Symbole są dostępne dla dowolnej 32-bitowej systemowej biblioteki DLL. Czytając `dumpbin /exports` danych wyjściowych, możesz zobaczyć dokładną nazwę funkcji, w tym znaki inne niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji tabel eksportu biblioteki DLL mogą być pojawić się obcięte gdzie indziej w debugerze. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [dumpbin/EXPORTS](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
 
 ### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Użyj serwerów symboli używanych do wyszukiwania plików symboli nie na komputerze lokalnym
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można pobierać pliki symboli debugowania z serwerów symboli, które implementują protokół symsrv. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) i [Debugging Tools for Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) to dwa narzędzia, które mogą implementować serwery symboli. Określasz serwery symboli do użycia w VS **opcje** okno dialogowe.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można pobierać pliki symboli debugowania z serwerów symboli, które implementują protokół symsrv. [Visual Studio Team Foundation Server](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) i [Debugging Tools for Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) to dwa narzędzia, które mogą implementować serwery symboli. Określasz serwery symboli do użycia w VS **opcje** okno dialogowe.
 
  Serwery symboli, z których możesz korzystać, obejmują:
 
@@ -165,9 +165,9 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
 
  **Opcje języka C++**
 
- Plik bazy danych programu (.pdb) przechowuje informacje od debugowaniu i stanie projektu, co pozwala na łączenie przyrostowe konfiguracji debugowania programu. Tworzony jest plik .pdb podczas konstruowania z [/zi lub/zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (dla C/C++).
+ Plik bazy danych programu (.pdb) przechowuje informacje od debugowaniu i stanie projektu, co pozwala na łączenie przyrostowe konfiguracji debugowania programu. Tworzony jest plik .pdb podczas konstruowania z [/zi lub/zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (dla C/C++).
 
- W [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) opcja nazywa plik .pdb utworzony przez kompilator. Podczas tworzenia projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przy użyciu kreatorów, **/Fd** opcja jest ustawiona na tworzenie pliku .pdb o nazwie *projektu*.pdb.
+ W [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) opcja nazywa plik .pdb utworzony przez kompilator. Podczas tworzenia projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przy użyciu kreatorów, **/Fd** opcja jest ustawiona na tworzenie pliku .pdb o nazwie *projektu*.pdb.
 
  Jeśli kompilujesz aplikację C/C++ za pomocą pliku reguł programu make i określisz **/zi** lub **/zi** bez **/Fd**, znajdą się z dwoma plikami .pdb:
 
@@ -183,7 +183,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
 
   **Opcje .NET framework**
 
-  Plik bazy danych programu (.pdb) przechowuje informacje o debugowaniu i stanie projektu, co pozwala na łączenie przyrostowe konfiguracji debugowania programu. Tworzony jest plik .pdb podczas konstruowania z **/debug**. Możesz tworzyć aplikacje przy użyciu **/Debug: full** lub **/debug:pdbonly**. Kompilowanie z użyciem **/Debug: full** generuje kod do debugowania. Kompilowanie z użyciem **/debug:pdbonly** generuje pliki .pdb, ale nie generuje `DebuggableAttribute` który informuje kompilator JIT, dostępne są informacje debugowania. Użyj **/debug:pdbonly** Jeśli chcesz wygenerować pliki .pdb dla kompilacji wydania, które nie chcesz debugować. Aby uzyskać więcej informacji, zobacz [/Debug (opcje kompilatora C#)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) lub [/Debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
+  Plik bazy danych programu (.pdb) przechowuje informacje o debugowaniu i stanie projektu, co pozwala na łączenie przyrostowe konfiguracji debugowania programu. Tworzony jest plik .pdb podczas konstruowania z **/debug**. Możesz tworzyć aplikacje przy użyciu **/Debug: full** lub **/debug:pdbonly**. Kompilowanie z użyciem **/Debug: full** generuje kod do debugowania. Kompilowanie z użyciem **/debug:pdbonly** generuje pliki .pdb, ale nie generuje `DebuggableAttribute` który informuje kompilator JIT, dostępne są informacje debugowania. Użyj **/debug:pdbonly** Jeśli chcesz wygenerować pliki .pdb dla kompilacji wydania, które nie chcesz debugować. Aby uzyskać więcej informacji, zobacz [/Debug (opcje kompilatora C#)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) lub [/Debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
 
   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Debuger używa ścieżki do pliku .pdb w pliku EXE lub DLL do znajdowania pliku project.pdb. Jeśli debuger nie może odnaleźć pliku .pdb w tej lokalizacji lub jeśli ścieżka jest nieprawidłowa, debuger przeszukuje ścieżkę zawierającą plik EXE, a następnie ścieżki symboli określone w **opcje** okno dialogowe. Ta ścieżka jest folderem **debugowanie** folderu w **symbole** węzła. Debuger nie załaduje pliku .pdb, który nie pasuje do debugowanego pliku wykonywalnego. Jeśli debuger nie może odnaleźć pliku .pdb, **Znajdź symbole** pojawi się okno dialogowe, które pozwala wyszukiwać symbole lub dodać dodatkowe lokalizacje do ścieżki wyszukiwania.
 

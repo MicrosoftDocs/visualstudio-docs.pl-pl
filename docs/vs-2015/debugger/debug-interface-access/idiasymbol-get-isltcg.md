@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e68e563873054f15770415979ff7152ee7b4379c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d355a05ba2d805349a84a842a00b699d6c1ef272
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696285"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera flagę określającą, czy [compiland —](../../debugger/debug-interface-access/compiland.md) została połączona z przełącznikiem konsolidatora [opcję/LTCG (Generowanie kodu Link-time)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2), która pomaga w optymalizacji całego programu. Ten przełącznik dotyczy tylko kodu zarządzanego.  
+Pobiera flagę określającą, czy [compiland —](../../debugger/debug-interface-access/compiland.md) została połączona z przełącznikiem konsolidatora [opcję/LTCG (Generowanie kodu Link-time)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2), która pomaga w optymalizacji całego programu. Ten przełącznik dotyczy tylko kodu zarządzanego.  
   
 ## <a name="syntax"></a>Składnia  
   

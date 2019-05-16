@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6cee865542256906ac1685b937da0e63327a97d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694855"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Ten przewodnik zawiera instrukcje krok po kroku do przekazywania danych z jedneg
   
 - Tworzenie nowego **aplikacji Windows** projektu.  
   
-- Tworzenie i konfigurowanie zestawu danych za pomocą [Kreatora konfiguracji źródła danych](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Tworzenie i konfigurowanie zestawu danych za pomocą [Kreatora konfiguracji źródła danych](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Wybieranie formantu do utworzenia w formularzu podczas przeciągania elementów z **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -64,7 +64,7 @@ Ten przewodnik zawiera instrukcje krok po kroku do przekazywania danych z jedneg
   
 2. Nadaj projektowi nazwę `PassingDataBetweenForms`.  
   
-3. Wybierz **aplikacja interfejsu Windows Forms**i kliknij przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wybierz **aplikacja interfejsu Windows Forms**i kliknij przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **PassingDataBetweenForms** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2001a3278037eb1c2dc1866c9508bb8623af3370
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2d6c2aa6cea687119e69b565da5468e8fa723641
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652490"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703417"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59652490"
 |`OutputFile`|Wymagane **ciąg** parametr wyjściowy.<br /><br /> Określa ścieżkę wyjściową zestawu skompilowanego dyrektywy lokalizacji.|  
   
 ## <a name="remarks"></a>Uwagi  
- Możesz dodać atrybuty lokalizacji i komentarze, aby [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] zawartości. Za pomocą [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] obsługi lokalizacji można odłączenia lokalizacja atrybutów i komentarzy i umieść je w pliku .loc, który jest oddzielony od wygenerowanego zestawu. Można to zrobić za pomocą **LocalizationPropertyStorage** atrybutu. Aby uzyskać więcej informacji na temat atrybuty lokalizacji i komentarze a **LocalizationPropertyStorage**, zobacz [lokalizacja atrybutów i komentarzy](http://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
+ Możesz dodać atrybuty lokalizacji i komentarze, aby [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] zawartości. Za pomocą [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] obsługi lokalizacji można odłączenia lokalizacja atrybutów i komentarzy i umieść je w pliku .loc, który jest oddzielony od wygenerowanego zestawu. Można to zrobić za pomocą **LocalizationPropertyStorage** atrybutu. Aby uzyskać więcej informacji na temat atrybuty lokalizacji i komentarze a **LocalizationPropertyStorage**, zobacz [lokalizacja atrybutów i komentarzy](https://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład scala lokalizacji kilku [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plików binarnych do .loc pojedynczego pliku.  
@@ -62,4 +62,4 @@ ms.locfileid: "59652490"
  [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)   
  [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Kompilowanie aplikacji WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Kompilowanie aplikacji WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

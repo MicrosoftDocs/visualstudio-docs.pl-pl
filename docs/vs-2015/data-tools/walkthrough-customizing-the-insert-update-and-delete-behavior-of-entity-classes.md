@@ -9,19 +9,19 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db27e8665d74477f3bb668831cbfaeef00d622bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424799"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700225"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) udostępnia powierzchnia projektowania wizualnego służące do tworzenia i edytowania [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klasy (klas jednostek), które są oparte na obiektach w bazie danych. Za pomocą [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), można użyć technologii LINQ do dostępu do bazy danych z programu SQL. Aby uzyskać więcej informacji, zobacz [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+[LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) udostępnia powierzchnia projektowania wizualnego służące do tworzenia i edytowania [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klasy (klas jednostek), które są oparte na obiektach w bazie danych. Za pomocą [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), można użyć technologii LINQ do dostępu do bazy danych z programu SQL. Aby uzyskać więcej informacji, zobacz [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
- Domyślnie logiki, aby przeprowadzić aktualizacje są dostarczane przez [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] środowiska uruchomieniowego. Środowisko uruchomieniowe tworzy domyślne instrukcji Insert, Update i Delete na podstawie schematu tabeli (definicje kolumn i informacje o kluczu podstawowym). Gdy użytkownik nie chce Użyj zachowania domyślnego, można skonfigurować zachowanie aktualizacji i wyznaczyć określonych procedur składowanych do wykonania niezbędnych operacji wstawiania, aktualizacji, i usuwa wymagane do pracy z danymi w bazie danych. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład, gdy Twoje klas jednostek mapy do widoków. Ponadto można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabel za pomocą procedur składowanych. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacje, przy użyciu procedur składowanych](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
+ Domyślnie logiki, aby przeprowadzić aktualizacje są dostarczane przez [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] środowiska uruchomieniowego. Środowisko uruchomieniowe tworzy domyślne instrukcji Insert, Update i Delete na podstawie schematu tabeli (definicje kolumn i informacje o kluczu podstawowym). Gdy użytkownik nie chce Użyj zachowania domyślnego, można skonfigurować zachowanie aktualizacji i wyznaczyć określonych procedur składowanych do wykonania niezbędnych operacji wstawiania, aktualizacji, i usuwa wymagane do pracy z danymi w bazie danych. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład, gdy Twoje klas jednostek mapy do widoków. Ponadto można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabel za pomocą procedur składowanych. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacje, przy użyciu procedur składowanych](https://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
 > Ten poradnik wymaga dostępności **InsertCustomer**, **UpdateCustomer**, i **DeleteCustomer** procedury składowane dla bazy danych Northwind.
@@ -65,7 +65,7 @@ ms.locfileid: "63424799"
     > [!NOTE]
     > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Jest obsługiwana w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i projektów języka C#. W związku z tym Utwórz nowy projekt w jeden z tych języków.  
   
-3. Kliknij przycisk **aplikacja interfejsu Windows Forms** szablon i kliknij przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Kliknij przycisk **aplikacja interfejsu Windows Forms** szablon i kliknij przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Projekt UpdatingwithSProcsWalkthrough zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -253,14 +253,14 @@ ms.locfileid: "63424799"
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które warto wykonać po utworzeniu [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klas jednostek. Niektóre udoskonalenia, których można dokonać w tej aplikacji są następujące:  
   
-- Implementowanie współbieżności sprawdzanie podczas aktualizacji. Aby uzyskać informacje, zobacz [optymistycznej współbieżności: Omówienie](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+- Implementowanie współbieżności sprawdzanie podczas aktualizacji. Aby uzyskać informacje, zobacz [optymistycznej współbieżności: Omówienie](https://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
-- Dodawanie zapytań LINQ do filtrowania danych. Aby uzyskać informacje, zobacz [wprowadzenie do zapytań LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+- Dodawanie zapytań LINQ do filtrowania danych. Aby uzyskać informacje, zobacz [wprowadzenie do zapytań LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ do SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Zapytania LINQ to SQL](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
+ [LINQ do SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Zapytania LINQ to SQL](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [PAVE What's New do tworzenia aplikacji danych w programie Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)
+ [PAVE What's New do tworzenia aplikacji danych w programie Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)

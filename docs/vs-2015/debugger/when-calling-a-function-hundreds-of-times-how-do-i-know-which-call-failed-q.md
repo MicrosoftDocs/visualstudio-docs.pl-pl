@@ -29,12 +29,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b3cfa5c52b8ddbe53ce127fde60a9b4edfd8ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fba5032860e21bbd323b8e49d5f32ab9b6f90540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775304"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688135"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Skąd wiadomo, gdy funkcja jest wywoływana setki razy, które wywołanie nie powiodło się?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +53,5 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   
- [Ustawianie punktów przerwania](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Ustawianie punktów przerwania](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

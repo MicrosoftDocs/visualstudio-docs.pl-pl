@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd362c01c996dc6a32197b9acd88f11b26c034bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 537b3f45dcf22dcc766b9902d20bf97af24b3c9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655809"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675508"
 ---
 # <a name="watch-command"></a>Czujka — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ Debug.Watch[index]
   
 ## <a name="see-also"></a>Zobacz też  
  [Zmiennych automatycznych i zmiennych lokalnych Windows](../../debugger/autos-and-locals-windows.md)   
- [Instrukcje: Edytowanie wartości w oknie zmiennych](http://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
- [Instrukcje: Użyj okna dialogowego QuickWatch](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Instrukcje: Edytowanie wartości w oknie zmiennych](https://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
+ [Instrukcje: Użyj okna dialogowego QuickWatch](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Okno polecenia](../../ide/reference/command-window.md)   
  [Znajdź/Command — pole](../../ide/find-command-box.md)   

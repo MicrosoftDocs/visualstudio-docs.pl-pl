@@ -21,21 +21,21 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adb8bfdf5edb4f6aa04a53f051fafa9ef3793e10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a89738446bf8c08680835ddccb7efa30c2f740f5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801333"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694699"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Ostrzeżenie o kodzie nieodświeżonym — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-To okno dialogowe pojawia się po dokonaniu zmiany natywny kod, który **Edytuj i Kontynuuj** nie może od razu zastosować. Zgodnie z wynikiem, natywnego kodu w bieżącej ramki stosu jest obecnie nieaktualna, czyli starych. Aby uzyskać więcej informacji, zobacz [jak: Praca z Nieodświeżonym kodem](http://msdn.microsoft.com/c7536e95-66a6-44a0-995d-3fe5035250b4).  
+To okno dialogowe pojawia się po dokonaniu zmiany natywny kod, który **Edytuj i Kontynuuj** nie może od razu zastosować. Zgodnie z wynikiem, natywnego kodu w bieżącej ramki stosu jest obecnie nieaktualna, czyli starych. Aby uzyskać więcej informacji, zobacz [jak: Praca z Nieodświeżonym kodem](https://msdn.microsoft.com/c7536e95-66a6-44a0-995d-3fe5035250b4).  
   
  **Nie pokazuj ponownie tego okna dialogowego**  
  Jeśli wybierzesz to pole wyboru, Edytuj i Kontynuuj zastosuje zmiany kodu bez pytania o uprawnienia w przyszłości. Można włączyć tego ostrzeżenia ponownie, przechodząc do **opcje** okno dialogowe, otwierając **debugowanie** folderu, klikając **Edytuj i Kontynuuj** strony i wybierając **Ostrzegaj o nieodświeżonym kodzie**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md)   
- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

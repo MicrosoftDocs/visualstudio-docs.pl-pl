@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3d938a3768193d758a467e833f006d4019ea5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2948910463bc6d520accce0256bd8e74315c46
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584673"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704331"
 ---
 # <a name="globalizing-applications"></a>Globalizowanie aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ Globalizacja to proces projektowania i opracowywania produktu oprogramowania, kt
  W tym artykule omówiono klasy, które formatowania dat, czasu, liczby, waluty i innych informacji, zgodnie z ustawieniem kultury.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Globalizacja formularzy Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalizacja formularzy Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Zawiera łącza do stron pomocy, informacje o globalizacji formularzy Windows Forms.  
   
- [Globalizacja i lokalizacja](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Globalizacja i lokalizacja](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Zawiera łącza do stron pomocy, informacje o globalizacji stron formularzy sieci Web.  
   
  [Wprowadzenie do aplikacji międzynarodowych opartych na programie .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  W tym artykule omówiono podstawowe pojęcia dotyczące tworzy oprogramowanie na rynku międzynarodowym przy użyciu języka Visual Basic lub Visual C#.  
   
- [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do wydania](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do wydania](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Zawiera informacje dotyczące programowania dla międzynarodowych grupy odbiorców, takich jak zagadnienia dotyczące projektowania i terminologii.

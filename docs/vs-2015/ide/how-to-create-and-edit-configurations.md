@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 35cda86854bede07c8f1d4830f05607b7fab3643
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422898"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680412"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Instrukcje: Tworzenie i edytowanie konfiguracji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Na przykład mo
   
      **Stron właściwości** zostanie otwarte okno.  
   
-     Można ustawić właściwości dla Twojej konfiguracji. Na przykład dla konfiguracji wydania, można określić czy kod jest zoptymalizowany, gdy rozwiązanie jest stworzone i dla konfiguracji debugowania, można określić, że `DEBUG` symbol kompilacja warunkowa jest uwzględniany. Aby uzyskać więcej informacji na temat ustawień strony właściwości, zobacz [wprowadzenie do projektanta projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     Można ustawić właściwości dla Twojej konfiguracji. Na przykład dla konfiguracji wydania, można określić czy kod jest zoptymalizowany, gdy rozwiązanie jest stworzone i dla konfiguracji debugowania, można określić, że `DEBUG` symbol kompilacja warunkowa jest uwzględniany. Aby uzyskać więcej informacji na temat ustawień strony właściwości, zobacz [wprowadzenie do projektanta projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Tworzenie i modyfikowanie konfiguracji projektu  
   
@@ -126,4 +126,4 @@ Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Na przykład mo
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)   
  [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB jak: Modyfikowanie właściwości projektu i ustawień konfiguracji](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB jak: Modyfikowanie właściwości projektu i ustawień konfiguracji](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

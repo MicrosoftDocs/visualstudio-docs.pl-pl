@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440934"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680291"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Zarządzanie modelami i diagramami w ramach kontroli wersji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zarządzać różne wersje usługi projektów i diagramów modelowania, łącznie z mapy kodu (pliki .dgml) za pomocą [Użyj kontroli wersji serwera Team Foundation lub Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); albo z lokalnego serwera Team Foundation Server lub w chmurze za pomocą Visual Studio Team Services.  
+Zarządzać różne wersje usługi projektów i diagramów modelowania, łącznie z mapy kodu (pliki .dgml) za pomocą [Użyj kontroli wersji serwera Team Foundation lub Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); albo z lokalnego serwera Team Foundation Server lub w chmurze za pomocą Visual Studio Team Services.  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -77,7 +77,7 @@ Zarządzać różne wersje usługi projektów i diagramów modelowania, łączni
   
 - Zmiana właściwości relacji, które wykraczają poza pakiet.  
   
-- Aby dowiedzieć się o blokadach wyewidencjonowania, zobacz [Sprawdź out i edytować pliki](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+- Aby dowiedzieć się o blokadach wyewidencjonowania, zobacz [Sprawdź out i edytować pliki](https://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Aby przenieść plik diagramu do lub z folderu projektu  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e342ec8438aeac6acd149ed93e8ce8a281a63323
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d51801c1be56504fa4bf4ed2046d463db0e99aae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790498"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701504"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ Można użyć kształtów obrazu, aby określić, jak klasy domeny są wyświetl
 |Obraz|Ścieżka do pliku obrazu, który służy do tego kształtu.|\<Brak >|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

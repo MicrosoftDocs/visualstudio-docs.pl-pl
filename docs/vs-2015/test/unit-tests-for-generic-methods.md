@@ -11,17 +11,17 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6132da236498867865717ccc7d1f470e2b990a86
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445950"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695130"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednostkowe metod ogólnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz wygenerować testy jednostkowe metod ogólnych dokładnie tak jak w przypadku innych metod, zgodnie z opisem w [jak: Tworzenie i uruchamianie testu jednostkowego](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Poniższe sekcje zawierają informacje i przykłady tworzenia testów jednostkowych dla metod ogólnych.  
+Możesz wygenerować testy jednostkowe metod ogólnych dokładnie tak jak w przypadku innych metod, zgodnie z opisem w [jak: Tworzenie i uruchamianie testu jednostkowego](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Poniższe sekcje zawierają informacje i przykłady tworzenia testów jednostkowych dla metod ogólnych.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Argumenty typu i ograniczenia typu  
  Gdy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje testu jednostkowego dla klasy ogólnej, takich jak `MyList<T>`, generuje on dwie metody: ogólny pomocnika i metody testowej. Jeśli `MyList<T>` ma co najmniej jedno ograniczenie typu, argument typu musi spełniać wszystkie ograniczenia typu. Aby upewnić się, że ogólny kodu w ramach testu działa zgodnie z oczekiwaniami wszystkie dozwolone danych wejściowych, testowana metoda wywołuje metodę pomocnika ogólnego z ograniczeniami, które mają zostać przetestowane.  
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
-> Przy każdym uruchomieniu testu SizeOfLinkedListTest jego TestHelper metoda jest wywoływana dwa razy. Instrukcję assert musi zwrócić wartość true, co czas test kończył się pomyślnie. Jeśli test zakończy się niepowodzeniem, może nie być jasne czy wywołania określona `<int>` lub wywołanie, które określono `<char>` spowodował, że jego nie powiedzie się. Aby znaleźć odpowiedzi, można analizować stos wywołań, lub można ustawić punkty przerwania w metodzie testowej, a następnie debugować podczas wykonywania testu. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie podczas przeprowadzania testu w rozwiązaniu ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> Przy każdym uruchomieniu testu SizeOfLinkedListTest jego TestHelper metoda jest wywoływana dwa razy. Instrukcję assert musi zwrócić wartość true, co czas test kończył się pomyślnie. Jeśli test zakończy się niepowodzeniem, może nie być jasne czy wywołania określona `<int>` lub wywołanie, które określono `<char>` spowodował, że jego nie powiedzie się. Aby znaleźć odpowiedzi, można analizować stos wywołań, lub można ustawić punkty przerwania w metodzie testowej, a następnie debugować podczas wykonywania testu. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie podczas przeprowadzania testu w rozwiązaniu ASP.NET](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
 ### <a name="TypeConstraintNotSatisfied"></a> Przykład 2: Za pomocą ograniczenia typu  
  Ten przykład przedstawia test jednostkowy metody rodzajowej, który używa ograniczenia typu, który nie jest spełniony. Pierwsza sekcja wyświetla kod z projektu kodu w ramach testu. Ograniczenie typu jest wyróżniona.  
@@ -198,5 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Anatomia testu jednostkowego](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Anatomia testu jednostkowego](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Testowanie jednostek kodu](../test/unit-test-your-code.md)

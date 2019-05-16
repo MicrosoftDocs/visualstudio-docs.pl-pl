@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a43fe714028b7211904a0bb993d2964bfe612ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 109810e3650ec4cf01d781026eddf09834fc3f18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416919"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703109"
 ---
 # <a name="how-to-create-project-templates"></a>Instrukcje: Tworzenie szablonów projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Ta procedura umożliwia utworzenie szablonu przy użyciu **Eksportuj szablon** k
 1. Utwórz projekt.  
   
     > [!NOTE]
-    > Gdy nazwy projektu, który będzie źródło szablonu, należy używać tylko znaków prawidłowego identyfikatora. Szablon wyeksportowany z projektu o nazwie nieprawidłowe znaki może spowodować błędy kompilacji w przyszłości projekty na podstawie szablonu. Aby uzyskać więcej informacji na prawidłowy identyfikator znaków, zobacz [zadeklarowane nazwy elementów](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
+    > Gdy nazwy projektu, który będzie źródło szablonu, należy używać tylko znaków prawidłowego identyfikatora. Szablon wyeksportowany z projektu o nazwie nieprawidłowe znaki może spowodować błędy kompilacji w przyszłości projekty na podstawie szablonu. Aby uzyskać więcej informacji na prawidłowy identyfikator znaków, zobacz [zadeklarowane nazwy elementów](https://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
 2. Edytuj projekt, dopóki nie jest gotowy do wyeksportowania jako szablon.  
   

@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a43fb3a22ecb2d04542eacf07bf883590868b75b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430926"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685308"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Instrukcje: Dostęp do wbudowanych czcionek i schemat kolorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat kol
   
 2. Nazwa kategorii należy dodać do tabeli ciągów wewnątrz pakietu VSPackage plik zasobów (.rc), dzięki czemu może być lokalizowana w razie potrzeby wyświetlane w środowisku IDE.  
   
-    Aby uzyskać więcej informacji, zobacz [Dodawanie lub usuwanie ciągu](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Aby uzyskać więcej informacji, zobacz [Dodawanie lub usuwanie ciągu](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Aby zarejestrować kategorii przy użyciu wbudowanych czcionki i kolory  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116787"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686740"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Debugowanie aplikacji ASP.NET i AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Debugowanie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web
  [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)  
  Wyjaśnia, dlaczego tylko mój kod, należy włączyć debugowanie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] wyjątków.  
   
- [Debugowanie i śledzenie Ajax aplikacje — Przegląd](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugowanie i śledzenie Ajax aplikacje — Przegląd](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  W tym artykule omówiono niektóre techniki i narzędzia, które mogą pomóc w debugowaniu kodu AJAX.  
   
  [IntelliTrace](../debugger/intellitrace.md)  

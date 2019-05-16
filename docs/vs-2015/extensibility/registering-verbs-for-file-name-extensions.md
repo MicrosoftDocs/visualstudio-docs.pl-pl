@@ -10,19 +10,19 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685270"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Rejestrowanie zleceń dla rozszerzeń nazw plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowanego akcję, która występuje po dwukrotnym kliknięciu pliku. Preferowane to, że akcja jest połączony z czasownika, na przykład otwarty, która odnosi się do akcji.  
   
- Możesz zarejestrować zlecenia, które są skojarzone z identyfikator programowy (ProgID) dla rozszerzenia, przy użyciu klawisza powłoki, znajduje się w kluczu HKEY_CLASSES_ROOT\\*progid*\shell. Aby uzyskać więcej informacji, zobacz [typów plików](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Możesz zarejestrować zlecenia, które są skojarzone z identyfikator programowy (ProgID) dla rozszerzenia, przy użyciu klawisza powłoki, znajduje się w kluczu HKEY_CLASSES_ROOT\\*progid*\shell. Aby uzyskać więcej informacji, zobacz [typów plików](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
 ## <a name="registering-standard-verbs"></a>Rejestrowanie zleceń standardowych  
  System operacyjny rozpoznaje następujących zleceń standardowych:  

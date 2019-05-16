@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a38909eb0917b3ad5b02d5e953c17c950c7c819e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5076ea34b1bcbd66239722bc8fb1a3edc4763162
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539195"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680617"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Analiza kodu dla zarządzanego kodu — Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje in
   Można to zrobić poprzez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu za pomocą zasad ewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Integracji kompilacji zespołu  
- Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie do analizy jako część procesu kompilacji. Aby uzyskać więcej informacji, zobacz [skompilować aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie do analizy jako część procesu kompilacji. Aby uzyskać więcej informacji, zobacz [skompilować aplikację](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   

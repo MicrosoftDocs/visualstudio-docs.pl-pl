@@ -11,23 +11,23 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cfb8b493190429f6f3a0a6295d65db2c151639c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436611"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705815"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Rejestrowanie programów obsługi zestawu międzyoperacyjnego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Należy zarejestrować pakietu VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tak, aby prawidłowo polecenia kieruje zintegrowanego środowiska programistycznego (IDE).  
   
- Rejestru mogą być aktualizowane ręcznie edytując lub przy użyciu pliku rejestratora (.rgs). Aby uzyskać więcej informacji, zobacz [tworzenie skryptów rejestratora](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ Rejestru mogą być aktualizowane ręcznie edytując lub przy użyciu pliku rejestratora (.rgs). Aby uzyskać więcej informacji, zobacz [tworzenie skryptów rejestratora](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
  Framework pakietu zarządzanego (MPF) oferuje tę funkcję za pośrednictwem <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> klasy.  
   
- [Polecenie dokument referencyjny dotyczący formatowania tabeli](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) zasoby znajdują się w niezarządzanych satelitarnej biblioteki DLL interfejsu użytkownika.  
+ [Polecenie dokument referencyjny dotyczący formatowania tabeli](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) zasoby znajdują się w niezarządzanych satelitarnej biblioteki DLL interfejsu użytkownika.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Polecenie obsługi rejestracji pakietu VSPackage  
  Pakietu VSPackage działający jako procedura obsługi interfejsu użytkownika (UI)-na podstawie polecenia wymaga wpis rejestru o nazwie po pakietu VSPackage `GUID`. Ten wpis rejestru określa lokalizację pliku zasobów interfejsu użytkownika pakietu VSPackage i zasobu menu, w tym pliku. Wpis rejestru sam znajduje się w folderze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<wersji >* \Menus, gdzie  *\<wersji >* jest wersją [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], na przykład 9.0.  

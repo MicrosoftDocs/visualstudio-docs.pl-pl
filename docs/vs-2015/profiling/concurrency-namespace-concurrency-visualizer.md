@@ -13,17 +13,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 854371293fd46893f41eef0abc36446f1c7955f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e975986a03e7005835653dc98931fc9a44681e28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422399"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700482"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Przestrzeń nazwy współbieżności (Concurrency Visualizer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Concurrency` Przestrzeń nazw zawiera klasy i funkcje, które zapewniają dostęp do środowiska wykonawczego Concurrency, platformy programowania współbieżnego dla C++. Aby uzyskać więcej informacji, zobacz [współbieżność środowiska wykonawczego](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+`Concurrency` Przestrzeń nazw zawiera klasy i funkcje, które zapewniają dostęp do środowiska wykonawczego Concurrency, platformy programowania współbieżnego dla C++. Aby uzyskać więcej informacji, zobacz [współbieżność środowiska wykonawczego](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
 ## <a name="syntax"></a>Składnia  
   

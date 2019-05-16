@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 883cdd8f3d150c894ecfbe7ccd2fbc2906c9e79b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437016"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705189"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfigurowanie odwołania do usługi — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63437016"
 **Konfiguruj odwołanie do usługi** okno dialogowe umożliwia konfigurowanie zachowania [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] usług.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Aby uzyskać dostęp do **Konfiguruj odwołanie do usługi** odwoływać się okno dialogowe, kliknij prawym przyciskiem myszy, a usługa **Eksploratora rozwiązań** i wybierz polecenie **Konfiguruj odwołanie do usługi**. Okno dialogowe można również przejść, klikając **zaawansowane** znajdujący się w **okno dialogowe Dodaj odwołanie do usługi**.  
   
@@ -63,10 +63,10 @@ ms.locfileid: "63437016"
  Określa, czy metody usługi WCF zostanie wywołana synchronicznie (ustawienie domyślne) lub asynchronicznie.  
   
  **Generuj operacje oparte na zadanie**  
- Podczas pisania kodu asynchronicznego, ta opcja umożliwia korzystanie z Biblioteka zadań równoległych (TPL) wprowadzone przy użyciu platformy .net 4. Zobacz [zadań Biblioteka równoległych (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Podczas pisania kodu asynchronicznego, ta opcja umożliwia korzystanie z Biblioteka zadań równoległych (TPL) wprowadzone przy użyciu platformy .net 4. Zobacz [zadań Biblioteka równoległych (TPL)](https://msdn.microsoft.com/library/dd460717.aspx).  
   
  **Zawsze Generuj kontrakty komunikatów**  
- Określa, czy typy kontraktu komunikatu, zostanie wygenerowany dla klienta programu WCF. Aby uzyskać więcej informacji na temat kontraktów komunikatu zobacz [za pomocą kontraktów komunikatu](http://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
+ Określa, czy typy kontraktu komunikatu, zostanie wygenerowany dla klienta programu WCF. Aby uzyskać więcej informacji na temat kontraktów komunikatu zobacz [za pomocą kontraktów komunikatu](https://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
   
  **Typ kolekcji**  
  Określa typ kolekcji listy dla klienta programu WCF. Domyślny typ to <xref:System.Array>.  
@@ -87,7 +87,7 @@ ms.locfileid: "63437016"
  Zawiera listę przywoływanych zestawach dla projektu lub witryny sieci Web. Gdy **ponownie użyj typów w określonych przywoływanych zestawach** jest zaznaczone, pojedyncze zestawy można zaznaczyć lub wyczyścić.  
   
  **Dodaj odwołanie sieci Web**  
- Wyświetla [NIB: Dodaj odwołanie sieci Web, okno dialogowe](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
+ Wyświetla [NIB: Dodaj odwołanie sieci Web, okno dialogowe](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
   
 > [!NOTE]
 > Ta opcja powinna być używana tylko dla projektów przeznaczonych dla wersji 2.0 programu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
@@ -96,6 +96,6 @@ ms.locfileid: "63437016"
 > **Dodaj odwołanie sieci Web** przycisk jest dostępny tylko wtedy, gdy **Konfiguruj odwołanie do usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołań usługi](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
- [Instrukcje: Dodaj odwołanie do usługi sieci Web](http://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
+ [Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołań usługi](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
+ [Instrukcje: Dodaj odwołanie do usługi sieci Web](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
  [Usługi Windows Communication Foundation i usługi danych programu WCF](../data-tools/configure-service-reference-dialog-box.md)

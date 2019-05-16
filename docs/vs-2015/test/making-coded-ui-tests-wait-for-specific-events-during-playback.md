@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c0158370ceb101e8c6934f92e2dd3e8689254c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686316"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Wstrzymywanie kodowanych testów użytkownika dla określonych zdarzeń podczas odtwarzania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać tes
  Visual Studio Enterprise  
   
 > [!TIP]
-> Można również dodać opóźnienia przed akcji za pomocą edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Wstawianie opóźnienia przed akcją UI za pomocą edytora testu kodowanego interfejsu użytkownika](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
+> Można również dodać opóźnienia przed akcji za pomocą edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Wstawianie opóźnienia przed akcją UI za pomocą edytora testu kodowanego interfejsu użytkownika](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
  **UITestControl.WaitForControlXXX() Methods**  
   
@@ -117,4 +117,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [Przewodnik: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Instrukcje: Wstawianie opóźnienia przed akcją UI za pomocą edytora testu kodowanego interfejsu użytkownika](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [Instrukcje: Wstawianie opóźnienia przed akcją UI za pomocą edytora testu kodowanego interfejsu użytkownika](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

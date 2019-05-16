@@ -13,19 +13,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a17db8fbdb281139ba095070130e6c608954b5a7
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878172"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676295"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego
+# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Instrukcje: Konfigurowanie statycznej analizy kodu dla kodu zarządzanego
 
 W programie Visual Studio, można wybrać z listy analizy kodu [zestawów reguł](../code-quality/rule-set-reference.md) do zastosowania do projektu kodu zarządzanego. Domyślnie **reguł zalecanych Minimum Microsoft** zestaw reguł jest zaznaczone, ale można zastosować inną regułę, ustaw, jeśli to konieczne. Zestawy reguł można zastosować do jednego lub wielu projektów w rozwiązaniu.
 
-> [!TIP]
-> Aby uzyskać informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci web ASP.NET, zobacz [jak: Konfigurowanie analizy kodu dla sieci web platformy ASP.NET w aplikacji](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+Aby uzyskać informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci web ASP.NET, zobacz [jak: Konfigurowanie analizy kodu dla sieci web platformy ASP.NET w aplikacji](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+
+> [!NOTE]
+> Ten artykuł ma zastosowanie do statycznej analizy kodu i nie [analizatorów Roslyn](use-roslyn-analyzers.md), której nie uruchamiania analizy kodu po kompilacji.
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Aby skonfigurować zestaw reguł dla projektu .NET Framework
 

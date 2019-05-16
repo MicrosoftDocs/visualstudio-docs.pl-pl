@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438387"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697621"
 ---
 # <a name="html-ui-responsiveness"></a>Czas odpowiedzi interfejsu użytkownika HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **Dekodowanie obrazu.** Wskazuje czas spędzony na dekompresowaniu i dekodowaniu obrazów.  
   
-  Dla skryptów i stylów kategorii Profiler czasu odpowiedzi interfejsu użytkownika może zawierać dane, które możesz działać na wykresie szczegółów osi czasu. Po zidentyfikowaniu zagadnienia dotyczące skryptów jako problem, można uruchomić program profilujący próbkowanie Procesora z Profiler czasu odpowiedzi interfejsu użytkownika. Alternatywnie można użyć programu Visual Studio profiler funkcji w celu uzyskania bardziej szczegółowych danych. Aby uzyskać więcej informacji, zobacz [danych analizowanie synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Dla skryptów i stylów kategorii Profiler czasu odpowiedzi interfejsu użytkownika może zawierać dane, które możesz działać na wykresie szczegółów osi czasu. Po zidentyfikowaniu zagadnienia dotyczące skryptów jako problem, można uruchomić program profilujący próbkowanie Procesora z Profiler czasu odpowiedzi interfejsu użytkownika. Alternatywnie można użyć programu Visual Studio profiler funkcji w celu uzyskania bardziej szczegółowych danych. Aby uzyskać więcej informacji, zobacz [danych analizowanie synchronizacja funkcji JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
   W przypadku innych kategorii zdarzeń może być w stanie zidentyfikować efekty uboczne platformy, które powodują dodawanie funkcji do aplikacji, ale w takich przypadkach nie można rozwiązać problemy z wydajnością określonej za pomocą Profiler czasu odpowiedzi interfejsu użytkownika.  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - Obejrzyj [ten film wideo](http://channel9.msdn.com/Events/Build/2013/3-316) z konferencji Build 2013 o Profiler czasu odpowiedzi interfejsu użytkownika.  
   
-- Przeczytaj wskazówki dotyczące wydajności dla aplikacji Windows Store utworzonych dla Windows przy użyciu języka JavaScript. Aby uzyskać więcej informacji, zobacz [wydajność — najlepsze rozwiązania dla aplikacji Windows Store przy użyciu języka JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+- Przeczytaj wskazówki dotyczące wydajności dla aplikacji Windows Store utworzonych dla Windows przy użyciu języka JavaScript. Aby uzyskać więcej informacji, zobacz [wydajność — najlepsze rozwiązania dla aplikacji Windows Store przy użyciu języka JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
-- Informacje na temat modelu wykonywania kodu jednowątkowego i wydajności, zobacz [wykonywanie kodu](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+- Informacje na temat modelu wykonywania kodu jednowątkowego i wydajności, zobacz [wykonywanie kodu](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Analizowanie wydajności aplikacji](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analizowanie wydajności aplikacji](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

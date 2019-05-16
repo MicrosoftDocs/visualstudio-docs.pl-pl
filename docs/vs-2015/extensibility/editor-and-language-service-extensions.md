@@ -10,12 +10,12 @@ ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4bfdc448025e03e385da80733a46359d1ad0eae9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7fa3e4be6ee44011eb1286e3ebf22ee69f8e3397
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795733"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683116"
 ---
 # <a name="editor-and-language-service-extensions"></a>Rozszerzenia edytora i usługi językowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,5 +33,5 @@ Możesz rozszerzyć większość funkcji edytora kodu Visual Studio. Edytor jest
 |[Starsze interfejsy w edytorze](../extensibility/legacy-interfaces-in-the-editor.md)|Zawiera łącza do dokumentów, które wyjaśniają, jak uzyskać dostęp do podstawowy edytor z istniejącego kodu.|  
 |[Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)|Zawiera łącza do dokumentów, które przedstawiają sposób tworzenia niestandardowych edytorów.|  
 |[Rozszerzalność starszej wersji usługi językowej](../extensibility/internals/legacy-language-service-extensibility.md)|Zawiera łącza do dokumentów, których opisano sposób integracji języków programowania w programie Visual Studio.|  
-|[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Wprowadza struktura Managed Extensibility Framework (MEF).|  
-|[Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Wprowadza Windows Presentation Foundation (WPF).|
+|[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Wprowadza struktura Managed Extensibility Framework (MEF).|  
+|[Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Wprowadza Windows Presentation Foundation (WPF).|

@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c591af9259a4a45af762e79552c99671a094d0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705834"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje dotycz�
   
  **Zbieranie danych Porada na komputerze zdalnym**  
   
- Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs\_profiler\_**_\<platformy >_ **\_**  _\<Języka >_**.exe** plik wchodzącej w skład _VSInstallDir %_**tools\performance Tools\Setups**folder programu Visual Studio komputera na komputerze zdalnym i zainstaluj go. Nie można użyć narzędzi profilowania w [narzędzia zdalne programu Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Pobieranie pakietu.  
+ Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs\_profiler\_**_\<platformy >_ **\_**  _\<Języka >_**.exe** plik wchodzącej w skład _VSInstallDir %_**tools\performance Tools\Setups**folder programu Visual Studio komputera na komputerze zdalnym i zainstaluj go. Nie można użyć narzędzi profilowania w [narzędzia zdalne programu Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Pobieranie pakietu.  
   
  **Porada raportów**  
   

@@ -12,12 +12,12 @@ ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ab95443f611c9cc6a1e74b2b5120047344a9857a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8bc18204d3cbe20635ab0680a50b4d1555dce2ce
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690304"
 ---
 # <a name="idebugfield"></a>IDebugField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugField : IUnknown
  Dostawca symboli implementuje ten interfejs jako klasa bazowa dla wszystkich pól.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs jest klasą bazową dla wszystkich pól. Na podstawie wartości zwracanej z [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), ten interfejs może zwracać bardziej wyspecjalizowane interfejsy przy użyciu [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). Ponadto zwrócić wiele interfejsów `IDebugField` obiektów z różnych metod.  
+ Ten interfejs jest klasą bazową dla wszystkich pól. Na podstawie wartości zwracanej z [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), ten interfejs może zwracać bardziej wyspecjalizowane interfejsy przy użyciu [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). Ponadto zwrócić wiele interfejsów `IDebugField` obiektów z różnych metod.  
   
 ## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugField`.  

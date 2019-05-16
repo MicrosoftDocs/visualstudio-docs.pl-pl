@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093738"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689864"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Dodawanie menu skrótów w oknie narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
   
  W tym instruktażu przedstawiono sposób tworzenia menu skrótów jako menu programu Visual Studio, przez zadeklarowanie elementów menu w pliku vsct, a następnie wdrożyć je w klasie, która definiuje okno narzędzia przy użyciu środowiska pakietu zarządzanego. Takie podejście ułatwia dostęp do poleceń programu Visual Studio, elementy interfejsu użytkownika i modelu obiektu automatyzacji.  
   
- Alternatywnie, jeśli z menu skrótów nie uzyskać dostępu do funkcji programu Visual Studio, możesz użyć <xref:System.Windows.FrameworkElement.ContextMenu%2A> właściwość elementu XAML w kontrolce użytkownika. Aby uzyskać więcej informacji, zobacz [ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
+ Alternatywnie, jeśli z menu skrótów nie uzyskać dostępu do funkcji programu Visual Studio, możesz użyć <xref:System.Windows.FrameworkElement.ContextMenu%2A> właściwość elementu XAML w kontrolce użytkownika. Aby uzyskać więcej informacji, zobacz [ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

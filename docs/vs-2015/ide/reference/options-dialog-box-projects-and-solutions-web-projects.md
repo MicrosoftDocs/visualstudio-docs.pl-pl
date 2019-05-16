@@ -11,22 +11,22 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5df1a0a6c3500da646d499ffacc3bb9827408c24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6e9fb8731c50080e30dfe6686d69bd57fa14a3c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433661"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674500"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Projekty sieci Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ustawia serwer sieci Web, który projektów sieci Web będzie używany do tworzenia aplikacji w ramach [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Aby otworzyć to okno dialogowe, kliknij przycisk **opcje narzędzi**. Rozwiń **projekty i rozwiązania** a następnie kliknij przycisk **projektów sieci Web**.  
   
- Domyślnie po uruchomieniu projektu sieci Web w programie Visual Studio (na przykład za pomocą F5 lub Ctrl + F5), program Visual Studio używa serwera wdrożeniowego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [serwerów sieci Web w programie Visual Studio dla projektów sieci Web platformy ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
+ Domyślnie po uruchomieniu projektu sieci Web w programie Visual Studio (na przykład za pomocą F5 lub Ctrl + F5), program Visual Studio używa serwera wdrożeniowego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [serwerów sieci Web w programie Visual Studio dla projektów sieci Web platformy ASP.NET](https://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
   
 > [!NOTE]
-> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ustawień sieci Web** na uwadze. Aby wyświetlić lub zmienić ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ustawień sieci Web** na uwadze. Aby wyświetlić lub zmienić ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Ustawienia  
  **Użyj 64-bitowej wersji usług IIS Express dla projektów i witryn sieci web**  

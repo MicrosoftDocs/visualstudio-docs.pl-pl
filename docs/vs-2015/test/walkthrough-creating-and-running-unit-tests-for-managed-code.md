@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e120499893a5b2a85d9a40a57e078f3d8f6586d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408484"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695049"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ W tym przewodniku krok po kroku tworzenia, uruchamiania i dostosowywać serie te
 > W tym instruktażu wykorzystano środowisko testów jednostkowych Microsoft dla kodu zarządzanego. Eksplorator testów można również uruchomić testy z innej struktury testów, które posiada adaptery dla Eksploratora testów. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
-> Aby uzyskać informacje o sposobach uruchamiania testów z wiersza polecenia, zobacz [wskazówki: Korzystanie z narzędzia testu wiersza polecenia](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Aby uzyskać informacje o sposobach uruchamiania testów z wiersza polecenia, zobacz [wskazówki: Korzystanie z narzędzia testu wiersza polecenia](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   

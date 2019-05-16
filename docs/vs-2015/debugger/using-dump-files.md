@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071775"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684301"
 ---
 # <a name="using-dump-files"></a>Przy użyciu plików zrzutu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
   
 - Program Visual Studio umożliwia debugowanie plików zrzutu macierzystych aplikacji z urządzeń ARM. Program Visual Studio umożliwia również debugowanie plików zrzutu zarządzanych aplikacji z urządzeń ARM, ale tylko w macierzystym debugerze.  
   
-- Aby debugować [trybu jądra](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) plików zrzutu w programie Visual Studio 2013, Pobierz [Windows 8.1 w wersji dla debugowania narzędzi dla Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Zobacz [debugowanie jądra w programie Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- Aby debugować [trybu jądra](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) plików zrzutu w programie Visual Studio 2013, Pobierz [Windows 8.1 w wersji dla debugowania narzędzi dla Windows](https://msdn.microsoft.com/windows/hardware/gg463009). Zobacz [debugowanie jądra w programie Visual Studio](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
 - Visual Studio nie umożliwia debugowania plików zrzutu zapisanych w starszym formacie zrzutu znanym jako [zrzut trybu użytkownika pełnego](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Należy zauważyć, że pełny zrzut trybu użytkownika to nie to samo, co zrzut ze stertą.  
   
-- Aby debugować z [SOS.dll (SOS Debugging Extension)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) w programie Visual Studio, należy zainstalować debugowania narzędzi dla Windows będącego częścią Windows Driver Kit (WDK). Zobacz [Windows 8.1 (wersja zapoznawcza): Pobierz zestawy, bity i narzędzia](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Aby debugować z [SOS.dll (SOS Debugging Extension)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) w programie Visual Studio, należy zainstalować debugowania narzędzi dla Windows będącego częścią Windows Driver Kit (WDK). Zobacz [Windows 8.1 (wersja zapoznawcza): Pobierz zestawy, bity i narzędzia](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
   
 - Za pomocą [debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md) włączone, można dołączyć debugera do awarii procesu, który działa poza debugera i następnie zapisać plik zrzutu. Zobacz [dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  Można również tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu systemu Windows. Na przykład **Procdump** narzędzie wiersza polecenia z [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) można tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zobacz [wymagania i ograniczenia](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) w tym temacie, aby uzyskać dodatkowe informacje na temat korzystania z innych narzędzi do tworzenia plików zrzutu.  
+  Można również tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu systemu Windows. Na przykład **Procdump** narzędzie wiersza polecenia z [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) można tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zobacz [wymagania i ograniczenia](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) w tym temacie, aby uzyskać dodatkowe informacje na temat korzystania z innych narzędzi do tworzenia plików zrzutu.  
   
   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   

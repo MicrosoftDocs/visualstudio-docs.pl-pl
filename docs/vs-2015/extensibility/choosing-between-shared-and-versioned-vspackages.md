@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088148"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685340"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Wybieranie między udostępnionymi i wersjonowanymi pakietami VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Różne wersje programu Visual Studio mogą współistnieć na tym samym kompute
   
     - Usługi pakietu VSPackage, aby dostosować je do wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , w którym jest uruchomiona. Następnie, jeśli zapytania dla nowszej usługi nie powiedzie się, Twoje pakietu VSPackage zaoferować innych usług, które są obsługiwane w starszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-- Zarejestruj swoje pakietu VSPackage odpowiednio. Aby uzyskać więcej informacji, zobacz [Rejestracja pakietu VSPackage](../extensibility/internals/vspackage-registration.md) i [zarządzane Rejestracja pakietu VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Zarejestruj swoje pakietu VSPackage odpowiednio. Aby uzyskać więcej informacji, zobacz [Rejestracja pakietu VSPackage](../extensibility/internals/vspackage-registration.md) i [zarządzane Rejestracja pakietu VSPackage](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 - Rejestrowanie rozszerzeń plików odpowiednio. Aby uzyskać więcej informacji, zobacz [rejestrowanie rozszerzeń nazw plików dla wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

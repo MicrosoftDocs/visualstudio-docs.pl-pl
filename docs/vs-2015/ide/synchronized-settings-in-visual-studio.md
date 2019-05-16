@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428271"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678862"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronizacja ustawień w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Korzystając z tego samego konta personalizacji zalogować się do programu Visu
 ## <a name="synchronized-settings"></a>Zsynchronizowane ustawienia
  Domyślnie zsynchronizowane są następujące ustawienia.
 
-- Ustawienia środowiska deweloperskiego (musisz wybrać zestaw ustawień przy pierwszym uruchomieniu programu Visual Studio, ale możesz zmienić wybór w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- Ustawienia środowiska deweloperskiego (musisz wybrać zestaw ustawień przy pierwszym uruchomieniu programu Visual Studio, ale możesz zmienić wybór w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
 
 - Następujące opcje w **narzędzia &#124; opcje** strony:
 

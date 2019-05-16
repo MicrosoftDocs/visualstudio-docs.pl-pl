@@ -12,12 +12,12 @@ ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6175b89db774598463d1f8ffaa03057ecb50a69b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9a309779850dd33b77b426beb5627f61c40c2c4f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441189"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675242"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Odinstalowywanie pakietów VSPackage przy użyciu Instalatora Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,5 +41,5 @@ W większości przypadków Instalatora Windows można odinstalować usługi paki
 > `Installed` jest to właściwość, Instalator Windows zestawów po wykryciu, że Twoje pakietu VSPackage został już zainstalowany w systemie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instalator Windows](http://msdn.microsoft.com/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
+ [Instalator Windows](https://msdn.microsoft.com/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
  [Wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md)

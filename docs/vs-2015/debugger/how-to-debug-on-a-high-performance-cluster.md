@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117554"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702689"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Instrukcje: Debugowanie w klastrze o wysokiej wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
   
  Podczas debugowania w klastrze o wysokiej wydajności, można używać wszystkich [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugowania systemu windows i technik, które są dostępne dla zdalnego debugowania. Ponieważ przeprowadzasz debugowanie zdalne, jednak zewnętrzne okno konsoli nie jest dostępna.  
   
- **Wątków** okna i **procesy** są szczególnie przydatne podczas debugowania aplikacji równoległych. Aby uzyskać porady na temat sposobu korzystania z tych okien, zobacz [jak: Korzystanie z okna procesów](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) i [jak: Korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md).  
+ **Wątków** okna i **procesy** są szczególnie przydatne podczas debugowania aplikacji równoległych. Aby uzyskać porady na temat sposobu korzystania z tych okien, zobacz [jak: Korzystanie z okna procesów](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) i [jak: Korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md).  
   
  W poniższych procedurach przedstawiono kilka technik, które są szczególnie przydatne podczas debugowania w klastrze o wysokiej wydajności.  
   
@@ -103,7 +103,7 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)   
- [Instrukcje: Korzystanie z okna procesów](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Instrukcje: Korzystanie z okna procesów](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [Instrukcje: Korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md)   
- [Wątków i procesów](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Wątków i procesów](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)

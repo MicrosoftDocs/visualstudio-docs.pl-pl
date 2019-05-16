@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429012"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699152"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Dodawanie poleceń programu Visual Studio do strony początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tworząc niestandardową stronę początkową, możesz dodać do niego poleceń programu Visual Studio. W tym dokumencie omówiono różne sposoby, aby powiązać obiekty XAML na stronie początkowej poleceń programu Visual Studio.  
   
- Aby uzyskać więcej informacji na temat poleceń w XAML, zobacz [polecenia — omówienie](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ Aby uzyskać więcej informacji na temat poleceń w XAML, zobacz [polecenia — omówienie](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>Dodawanie poleceń polecenia dobrze  
  Strony początkowej tworzone w [tworzenie niestandardowe strony początkowej](../extensibility/creating-a-custom-start-page.md) dodano <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> i <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> przestrzeni nazw, w następujący sposób.  
@@ -94,7 +94,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="adding-commands-with-the-dte-object"></a>Dodawanie poleceń za pomocą obiektu DTE  
  Ze strony Start, zarówno w znaczników i kodu, możesz uzyskać dostęp obiekt DTE.  
   
- W znaczniku, możesz do niego dostęp za pomocą [— rozszerzenie znaczników powiązania](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) składnia do wywoływania <xref:EnvDTE.DTE> obiektu. Takie podejście umożliwia powiązania proste właściwości, takie jak te, które zwracają kolekcje, ale nie można powiązać z metody lub usługi. W poniższym przykładzie przedstawiono <xref:System.Windows.Controls.TextBlock> kontrolki, która jest powiązywana z <xref:EnvDTE._DTE.Name%2A> właściwości i <xref:System.Windows.Controls.ListBox> formant, który wylicza <xref:EnvDTE.Window.Caption%2A> właściwości kolekcji, który jest zwracany przez <xref:EnvDTE._DTE.Windows%2A> właściwości.  
+ W znaczniku, możesz do niego dostęp za pomocą [— rozszerzenie znaczników powiązania](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) składnia do wywoływania <xref:EnvDTE.DTE> obiektu. Takie podejście umożliwia powiązania proste właściwości, takie jak te, które zwracają kolekcje, ale nie można powiązać z metody lub usługi. W poniższym przykładzie przedstawiono <xref:System.Windows.Controls.TextBlock> kontrolki, która jest powiązywana z <xref:EnvDTE._DTE.Name%2A> właściwości i <xref:System.Windows.Controls.ListBox> formant, który wylicza <xref:EnvDTE.Window.Caption%2A> właściwości kolekcji, który jest zwracany przez <xref:EnvDTE._DTE.Windows%2A> właściwości.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

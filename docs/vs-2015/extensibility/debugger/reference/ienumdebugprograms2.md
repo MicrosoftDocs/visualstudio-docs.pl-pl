@@ -12,12 +12,12 @@ ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6d25c9856085938860180bf76a2f634aa651551
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8d9d1030616fa8d7f3a1bfc6b533c4ed8433ea89
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112016"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703904"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ IEnumDebugPrograms2 : IUnknown
   
 - Wypełnij **modułów** okna (przez wywołanie metody [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) , a następnie wywołując [enummodules —](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) na każdy program).  
   
-- Wypełnij **dołączyć do procesu** listy (przez wywołanie metody `IDebugProcess2::EnumPrograms` , a następnie wywołując [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na każdym [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejs do uzyskiwania [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) interfejsu).  
+- Wypełnij **dołączyć do procesu** listy (przez wywołanie metody `IDebugProcess2::EnumPrograms` , a następnie wywołując [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na każdym [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejs do uzyskiwania [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) interfejsu).  
   
 - Generowanie listy DEs, który można debugować każdy program w procesie (przy użyciu [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).  
   

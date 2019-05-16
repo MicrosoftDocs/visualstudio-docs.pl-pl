@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2594c7a6cf648c52f44ea9ee2f71d9481742a94b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a42a05c453c328dc156cadb86c9abc55d587c467
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441678"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674301"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Ustawienia międzynarodowe, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63441678"
 Strona Ustawienia międzynarodowe umożliwia zmienić domyślny język, jeśli masz więcej niż jedną wersję językową zintegrowanego środowiska programistycznego (IDE) zainstalowane na tym komputerze. Dostęp do tego okna dialogowego wybierając **opcje** z **narzędzia** menu, a następnie wybierając **ustawienia międzynarodowe** z **środowiska** folderu. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   
 > [!NOTE]
-> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Język**  
  Wyświetla listę dostępnych języków w wersjach językowych zainstalowany produkt. Ta opcja jest niedostępna, chyba że masz więcej niż jedną wersję językową, zainstalowana na tym komputerze. Wiele języków, produktów lub mieszanym językiem instalacji produktów, któremu udostępniono środowiska, wybór języka jest zmieniana na **taki sam jak Microsoft Windows**.  

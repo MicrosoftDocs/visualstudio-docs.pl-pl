@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050169"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674359"
 ---
 # <a name="memory-usage-without-debugging"></a>Użycie pamięci bez debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać nas
   
 - Porównywanie migawek do znalezienia głównej przyczyny problemów z pamięcią.  
   
-  W tym temacie opisano sposób analizowania aplikacji w języku XAML Universal Windows za pomocą narzędzia użycie pamięci. Jeśli chcesz analizować wykorzystanie pamięci w aplikacjach Windows Universal, korzystające z języków JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  W tym temacie opisano sposób analizowania aplikacji w języku XAML Universal Windows za pomocą narzędzia użycie pamięci. Jeśli chcesz analizować wykorzystanie pamięci w aplikacjach Windows Universal, korzystające z języków JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Uruchamianie sesji diagnostyki użycia pamięci  
   
@@ -204,7 +204,7 @@ Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać nas
   
 ## <a name="see-also"></a>Zobacz też  
  [Pamięć języka JavaScript](../profiling/javascript-memory.md)   
- [Analizowanie wydajności aplikacji](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [Uruchamianie narzędzi diagnostycznych i wydajności](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [Wydajność — najlepsze rozwiązania dla aplikacji Windows Store przy użyciu języka C++, C# i Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Analizowanie wydajności aplikacji](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [Uruchamianie narzędzi diagnostycznych i wydajności](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [Wydajność — najlepsze rozwiązania dla aplikacji Windows Store przy użyciu języka C++, C# i Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnozowanie problemów z pamięcią za pomocą nowe narzędzie użycie pamięci w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

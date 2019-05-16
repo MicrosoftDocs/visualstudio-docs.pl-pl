@@ -19,12 +19,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 846eb1ca1c63ee8dad88d31bbc574ef6d71efc4b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: da32f0bfce9edf652e19df6b68bc51ed92624d80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657748"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699019"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ ms.locfileid: "59657748"
  [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)   
  [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Kompilowanie aplikacji WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Kompilowanie aplikacji WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

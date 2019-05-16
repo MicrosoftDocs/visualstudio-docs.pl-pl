@@ -13,12 +13,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acf49209927d2d27d717c797d0abd729795a2c20
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f98d2209ca3a2869e4be69a9c46faa5c4755a06
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441120"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699910"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Zaawansowane ustawienia kompilatora (Visual Basic) — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Użyj **ustawienia AdvancedCompiler** okna dialogowego **projektanta projektu** 
   
 2. Na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** pojawi się, kliknij przycisk **skompilować** kartę.  
   
-3. Na [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), wybierz opcję **konfiguracji** i **platformy**. W uproszczonych konfiguracjach kompilacji **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+3. Na [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), wybierz opcję **konfiguracji** i **platformy**. W uproszczonych konfiguracjach kompilacji **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 4. Kliknij przycisk **zaawansowane opcje kompilacji**.  
   
@@ -55,7 +55,7 @@ Użyj **ustawienia AdvancedCompiler** okna dialogowego **projektanta projektu** 
  Wybierz **Brak**, **pełne**, lub **tylko do pdb** z listy. **Brak** Określa, że żadne informacje debugowania będą generowane. **Pełne** Określa, że pełne informacje debugowania będą generowane, i **tylko do pdb** Określa, że tylko wtedy PDB informacje debugowania będą generowane. Domyślnie ta opcja jest ustawiona na **pełne**.  
   
 ## <a name="compilation-constants"></a>Stałe kompilacji  
- Stałe kompilacji warunkowej ma efekt jest podobny do korzystania z [#Const](http://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) dyrektywy preprocesora w źródle pliku, z tą różnicą, że stałe zdefiniowane są publiczne i zastosować do wszystkich plików w projekcie. Możesz użyć stałe kompilacji warunkowej, wraz z [#If... Then... #Else](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) dyrektywy, aby warunkowo skompilować pliki źródłowe. Zobacz [kompilacji warunkowej](http://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848).  
+ Stałe kompilacji warunkowej ma efekt jest podobny do korzystania z [#Const](https://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) dyrektywy preprocesora w źródle pliku, z tą różnicą, że stałe zdefiniowane są publiczne i zastosować do wszystkich plików w projekcie. Możesz użyć stałe kompilacji warunkowej, wraz z [#If... Then... #Else](https://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) dyrektywy, aby warunkowo skompilować pliki źródłowe. Zobacz [kompilacji warunkowej](https://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848).  
   
  **Zdefiniuj stałą DEBUG**  
  Domyślnie to pole wyboru jest zaznaczone, określając, że można ustawić stałą DEBUG.  

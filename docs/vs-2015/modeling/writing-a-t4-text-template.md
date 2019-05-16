@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e2f40421c2b59e61de1560619422491a37ed8d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446715"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684699"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- Aby uzyskać listę makr, zobacz [typowe makra dla poleceń i właściwości kompilacji](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
+ Aby uzyskać listę makr, zobacz [typowe makra dla poleceń i właściwości kompilacji](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
   
  Dyrektywa zestawu nie ma wpływu na [szablon tekstowy wstępnie przetworzony](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
@@ -264,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- Można również wykorzystywać inne usługi udostępniane przez hosta. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio lub innych hostów z szablonu](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ Można również wykorzystywać inne usługi udostępniane przez hosta. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio lub innych hostów z szablonu](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Szablony tekstu czasu projektowania uruchamiane w oddzielnej domenie aplikacji  
  Należy zwrócić uwagę, [szablon tekstowy czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md) działa w elemencie AppDomain, który jest oddzielony od głównej aplikacji. W większości przypadków nie ma to znaczenia, jednak w pewnych skomplikowanych przypadkach mogą wystąpić ograniczenia. Na przykład aby można było przekazać dane między szablonem a osobną usługą, usługa musi udostępniać interfejs API obsługujący serializację.  

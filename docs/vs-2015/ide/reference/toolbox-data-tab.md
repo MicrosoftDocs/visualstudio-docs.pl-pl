@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c9a067c8388a398834f5fb1862072544bb0e53c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419793"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689377"
 ---
 # <a name="toolbox-data-tab"></a>Przybornik, karta Dane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63419793"
 Wyświetla obiekty danych możesz dodać do formularzy i składników. **Danych** karcie **przybornika** pojawia się podczas tworzenia projektu, który ma skojarzony projektanta. **Przybornika** pojawia się domyślnie w programie Visual Studio zintegrowanego środowiska programistycznego; Jeśli chcesz wyświetlić **przybornika**, wybierz opcję **przybornika** z **Widoku** menu.  
   
 > [!TIP]
-> Uruchamianie Kreatora konfiguracji źródła danych zostaną automatycznie tworzą i konfigurują większość elementów danych. Aby uzyskać więcej informacji, zobacz [tworzenia aplikacji przetwarzających dane z programu Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+> Uruchamianie Kreatora konfiguracji źródła danych zostaną automatycznie tworzą i konfigurują większość elementów danych. Aby uzyskać więcej informacji, zobacz [tworzenia aplikacji przetwarzających dane z programu Visual Studio](https://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika  
  Aby przejść bezpośrednio na stronie dokumentacji .NET Framework dla składnika, naciśnij klawisz **F1** element **przybornika** lub element składnika w zasobniku projektanta.  
@@ -39,8 +39,8 @@ Wyświetla obiekty danych możesz dodać do formularzy i składników. **Danych*
 |<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje nawigacji i manipulowania interfejsu użytkownika (UI) dla formantów w formularzu, które są powiązane z danymi.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki dotyczące danych](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Wskazówki dotyczące danych](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Przygotowanie aplikacji na odbieranie danych](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Przygotowanie aplikacji na odbieranie danych](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Powiązywanie kontrolek z danymi w programie Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Sprawdzanie poprawności danych](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Sprawdzanie poprawności danych](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

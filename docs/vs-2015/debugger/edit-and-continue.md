@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d5b10d3e40d889ffa9e7743d65de487c2d823cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760688"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698731"
 ---
 # <a name="edit-and-continue"></a>Edytuj i kontynuuj
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Edytuj i Kontynuuj jest funkcją zaoszczędzić czas, która pozwala do wprowadz
   
  Ta sekcja zawiera następujące tematy:  
   
- [Instrukcje: Jawne stosowanie zmian kodu](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [Instrukcje: Jawne stosowanie zmian kodu](https://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
  [Instrukcje: Włączanie i wyłączanie funkcji Edytuj i kontynuuj](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Instrukcje: Zatrzymywanie zmian kodu](../debugger/how-to-stop-code-changes.md)  
   
- [Punkty wykonywania](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
+ [Punkty wykonywania](https://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Edytuj i kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -55,5 +55,5 @@ Edytuj i Kontynuuj jest funkcją zaoszczędzić czas, która pozwala do wprowadz
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)

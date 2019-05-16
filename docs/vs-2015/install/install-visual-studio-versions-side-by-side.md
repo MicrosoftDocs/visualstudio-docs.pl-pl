@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d040353aadbc448b6608cd11fc78a134872fdafa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117645"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693563"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie programu Visual Studio wersje Side-by-Side
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Ta wersja programu Visual Studio można zainstalować na komputerze, na którym 
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Wersje programu .NET framework i instalacje Side-by-Side
 
-- Visual Basic, Visual C#i Visual F# projektów użyj **platformę docelową** opcji **projektanta projektu** do określenia, która wersja programu .NET Framework projekt używa. Dla projektu w języku C++ można ręcznie zmienić platformę docelową, modyfikując plik vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
+- Visual Basic, Visual C#i Visual F# projektów użyj **platformę docelową** opcji **projektanta projektu** do określenia, która wersja programu .NET Framework projekt używa. Dla projektu w języku C++ można ręcznie zmienić platformę docelową, modyfikując plik vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji](https://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
 
      Podczas tworzenia projektu można określić, która wersja programu .NET Framework jest przeznaczony projekt **.NET Framework** listy w **nowy projekt** okno dialogowe.
 
@@ -50,13 +50,13 @@ Ta wersja programu Visual Studio można zainstalować na komputerze, na którym 
     |--------------|-----------|
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)|
-    |Visual F#|[Konfigurowanie projektów](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
-    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Uruchamianie aplikacji JScript w poprzedniej wersji środowiska uruchomieniowego języka wspólnego](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
+    |Visual F#|[Konfigurowanie projektów](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
+    |C++|[Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Uruchamianie aplikacji JScript w poprzedniej wersji środowiska uruchomieniowego języka wspólnego](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie programu Visual Studio](../install/install-visual-studio-2015.md)
 - [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
-- [Kompilowanie aplikacji izolowanych C/C++ oraz aplikacji wykonywanych równocześnie](http://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
-- [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+- [Kompilowanie aplikacji izolowanych C/C++ oraz aplikacji wykonywanych równocześnie](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
+- [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 437e541fab1559c65c410d94a8911c158aa3592e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 132e6252662ed765630764dabca26b22f868a315
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438935"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704877"
 ---
 # <a name="memory-usage"></a>Użycie pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie p
   
   Mimo że można zbierać migawki pamięci w dowolnym momencie **użycie pamięci** narzędzie debugera programu Visual Studio można użyć do kontrolowania, jak aplikacja wykonuje podczas badania problemów z wydajnością. Ustawianie punktów przerwania, przechodzenie krok po kroku, Przerwij wszystko i inne akcje debuger może pomóc w skoncentrowaniu swoje badania wydajności ścieżki kodu, które są najbardziej odpowiednie. Wykonanie tych akcji, gdy Twoja aplikacja jest uruchomiona można eliminuje szumu od kodu, który nie interesują użytkownika i może znacznie skrócić czas potrzebny do zdiagnozowania problemu.  
   
-  Można również użyć narzędzia pamięci poza debugerem. Zobacz [użycie pamięci bez debugowania](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
+  Można również użyć narzędzia pamięci poza debugerem. Zobacz [użycie pamięci bez debugowania](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
-> **Niestandardowe obsługi alokatora** profiler pamięci natywnej polega na zbieraniu alokacji [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) dane zdarzenia wyemitowane przez w czasie wykonywania.  Puli buforów w CRT i zestaw Windows SDK ma została oznaczona na poziomie źródła przechwycić swoje dane alokacji.  Jeśli piszesz własnego buforów niż wszystkie funkcje, które zwracają wskaźnik do nowo przydzielonego stosu pamięci może być dekorowane za pomocą [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(alokatora), jak pokazano w następującym przykładzie myMalloc:  
+> **Niestandardowe obsługi alokatora** profiler pamięci natywnej polega na zbieraniu alokacji [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) dane zdarzenia wyemitowane przez w czasie wykonywania.  Puli buforów w CRT i zestaw Windows SDK ma została oznaczona na poziomie źródła przechwycić swoje dane alokacji.  Jeśli piszesz własnego buforów niż wszystkie funkcje, które zwracają wskaźnik do nowo przydzielonego stosu pamięci może być dekorowane za pomocą [__declspec](https://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(alokatora), jak pokazano w następującym przykładzie myMalloc:  
 >   
 > `__declspec(allocator) void* myMalloc(size_t size)`  
   

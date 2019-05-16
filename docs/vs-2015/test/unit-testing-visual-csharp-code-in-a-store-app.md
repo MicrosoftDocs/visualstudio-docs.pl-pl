@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 144097837eba5c8feeb5a424134fec887d51befe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445933"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695257"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Testowanie jednostek kodu języka Visual C# w Store app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
 >   - Uruchom testy po każdej kompilacji.  
 >   - Programu Visual Studio Enterprise zawiera także Microsoft Fakes framework izolacji dla kodu zarządzanego, który ułatwia skoncentrowanie się testy na własny kod, zastępując kod testu systemu i innych firm funkcjonalność.  
 > 
->   Aby uzyskać więcej informacji, zobacz [weryfikowanie kodu przy użyciu testów jednostkowych](http://msdn.microsoft.com/library/dd264975.aspx) w bibliotece MSDN.  
+>   Aby uzyskać więcej informacji, zobacz [weryfikowanie kodu przy użyciu testów jednostkowych](https://msdn.microsoft.com/library/dd264975.aspx) w bibliotece MSDN.  
   
 ## <a name="BKMK_In_this_topic"></a> W tym temacie  
  [Tworzenie rozwiązania i projektu testu jednostkowego](#BKMK_Create_the_solution_and_the_unit_test_project)  

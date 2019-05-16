@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443167"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698207"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
   Na liście uzupełniania w języku C# jest również inteligentnego odfiltrować tokenów nie ma znaczenia i wstępnie wybierz token na podstawie kontekstu. Aby uzyskać więcej informacji, zobacz [filtrowane listy uzupełniania w języku C#](../misc/filtered-completion-lists-in-csharp.md) i [Pre-selected listy uzupełniania w C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ### <a name="CodeSnippets"></a> Fragmenty kodu w listach uzupełniania  
- W języku Visual C# na liście uzupełniania zawiera fragmenty kodu, aby pomóc łatwo Wstawianie wstępnie zdefiniowanych jednostek kodu programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako ten fragment kodu [Shortcut — Element (fragmenty kodu Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Aby uzyskać więcej informacji na temat fragmentów kodu, które domyślnie są dostępne w Visual C#, zobacz [Visual C# — wstawki](../ide/visual-csharp-code-snippets.md).  
+ W języku Visual C# na liście uzupełniania zawiera fragmenty kodu, aby pomóc łatwo Wstawianie wstępnie zdefiniowanych jednostek kodu programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako ten fragment kodu [Shortcut — Element (fragmenty kodu Intellisense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Aby uzyskać więcej informacji na temat fragmentów kodu, które domyślnie są dostępne w Visual C#, zobacz [Visual C# — wstawki](../ide/visual-csharp-code-snippets.md).  
   
 ### <a name="Keywords"></a> Słowa kluczowe języka w listach uzupełniania  
- W języku Visual C# na liście uzupełniania także słowa kluczowe języka. Aby uzyskać więcej informacji na temat słowa kluczowe języka C#, zobacz [słowa kluczowe języka C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
+ W języku Visual C# na liście uzupełniania także słowa kluczowe języka. Aby uzyskać więcej informacji na temat słowa kluczowe języka C#, zobacz [słowa kluczowe języka C#](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
 ### <a name="ExtensionMethods"></a> Metody rozszerzające w listach uzupełniania  
  W języku Visual C# na liście uzupełniania zawiera metody rozszerzenia, które znajdują się w zakresie.  
@@ -81,7 +81,7 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
  Funkcja IntelliSense pamięta elementy członkowskie zaznaczone niedawno w oknie podręcznym [List Members](../ide/using-intellisense.md) pola obiektu automatyczne uzupełnianie nazw. Następnym razem, użyj listy członków ostatnio używanych elementów członkowskich są wyświetlane u góry. Historia ostatnio używanych elementów członkowskich jest czyszczona między każdej sesji w środowisku IDE.  
   
 ## <a name="override"></a>override  
- Podczas wpisywania [zastąpienia](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) i następnie naciśnij klawisz spacji, IntelliSense wyświetla wszystkie elementy członkowskie prawidłową klasę podstawową, które można zastąpić w oknie podręcznym listy. Wpisywanie zwracany typ metody po `override` wyświetli monit o technologię IntelliSense, aby wyświetlić tylko metody, które zwracają tego samego typu. Gdy IntelliSense nie może znaleźć dopasowań, wyświetli wszystkie elementy członkowskie klasy bazowej.  
+ Podczas wpisywania [zastąpienia](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) i następnie naciśnij klawisz spacji, IntelliSense wyświetla wszystkie elementy członkowskie prawidłową klasę podstawową, które można zastąpić w oknie podręcznym listy. Wpisywanie zwracany typ metody po `override` wyświetli monit o technologię IntelliSense, aby wyświetlić tylko metody, które zwracają tego samego typu. Gdy IntelliSense nie może znaleźć dopasowań, wyświetli wszystkie elementy członkowskie klasy bazowej.  
   
 ## <a name="automatic-code-generation"></a>Automatyczne generowanie kodu  
   
@@ -102,7 +102,7 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
  Aby wyświetlić opcje dostępne w programie Visual Studio IDE na **Edytuj** menu, wskaż **IntelliSense**, a następnie wskaż **organizowania deklaracje Using**. IDE udostępnia następujące opcje do organizowania i Usuń `usings` dyrektywy:  
   
 ### <a name="implement-interface"></a>Implementowanie interfejsu  
- Technologia IntelliSense zawiera opcję, aby pomóc w zaimplementowaniu [interfejsu](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) podczas pracy w edytorze kodu. Zwykle aby prawidłowo zaimplementować interfejs należy utworzyć deklaracji metody dla każdego członka interfejsu w klasie. Za pomocą technologii IntelliSense po wpisaniu nazwy interfejsu w deklaracji klasy, jest wyświetlany tagu inteligentnego. Tag inteligentny zapewnia możliwość automatycznie, implementować interfejs za pomocą jawnego lub niejawnego nazewnictwa. W obszarze nazw jawne deklaracje metody przenoszenia nazwę interfejsu; w obszarze nazw niejawne deklaracje metody nie wskazują interfejsu, do którego należą. Metody interfejsu jawnie nazwane zostać oceniony jedynie przez wystąpienie interfejsu, a nie przy użyciu wystąpienia klasy. Aby uzyskać więcej informacji, zobacz [jawnej implementacji interfejsu](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
+ Technologia IntelliSense zawiera opcję, aby pomóc w zaimplementowaniu [interfejsu](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) podczas pracy w edytorze kodu. Zwykle aby prawidłowo zaimplementować interfejs należy utworzyć deklaracji metody dla każdego członka interfejsu w klasie. Za pomocą technologii IntelliSense po wpisaniu nazwy interfejsu w deklaracji klasy, jest wyświetlany tagu inteligentnego. Tag inteligentny zapewnia możliwość automatycznie, implementować interfejs za pomocą jawnego lub niejawnego nazewnictwa. W obszarze nazw jawne deklaracje metody przenoszenia nazwę interfejsu; w obszarze nazw niejawne deklaracje metody nie wskazują interfejsu, do którego należą. Metody interfejsu jawnie nazwane zostać oceniony jedynie przez wystąpienie interfejsu, a nie przy użyciu wystąpienia klasy. Aby uzyskać więcej informacji, zobacz [jawnej implementacji interfejsu](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
   
  Implementuj interfejs wygeneruje minimalną liczbę wycinków — metoda, który jest wymagany do spełnienia interfejsu. Jeśli klasa bazowa implementuje części interfejsu, te klasy zastępcze nie są generowane.  
   

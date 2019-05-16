@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693416"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Niezabezpieczone przetwarzanie definicji DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63425436"
  Jeśli używasz niezabezpieczone <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> wystąpień lub odwołanie do jednostki zewnętrznej źródeł, analizator może akceptować niezaufanych danych wejściowych i ujawnienia poufnych informacji dla osób atakujących.
 
 ## <a name="rule-description"></a>Opis reguły
- A [definicji typu dokumentu (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) jest jeden z dwóch sposobów analizatora XML można określić ważności dokumentu, zgodnie z definicją [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła szuka właściwości i wystąpienia, gdzie niezaufanych danych jest akceptowany w celu otrzymania deweloperów o potencjalnych [ujawnienie informacji](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) ataków. Ta zasada wyzwala, gdy:
+ A [definicji typu dokumentu (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) jest jeden z dwóch sposobów analizatora XML można określić ważności dokumentu, zgodnie z definicją [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła szuka właściwości i wystąpienia, gdzie niezaufanych danych jest akceptowany w celu otrzymania deweloperów o potencjalnych [ujawnienie informacji](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) ataków. Ta zasada wyzwala, gdy:
 
 - Włączono XmlReaderSettings <xref:System.Xml.XmlReader> wystąpienia, który jest rozpoznawany jako zewnętrzne jednostki XML przy użyciu <xref:System.Xml.XmlUrlResolver>.
 
@@ -59,7 +59,7 @@ ms.locfileid: "63425436"
 
 - Wyłącz przetwarzanie DTD, jeśli masz do czynienia ze źródeł niezaufanych, ustawiając <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> właściwości **true** .
 
-- Klasy XmlTextReader ma dziedziczenia pełnego zaufania. Zobacz [Inheritancedemand](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Aby uzyskać więcej informacji.
+- Klasy XmlTextReader ma dziedziczenia pełnego zaufania. Zobacz [Inheritancedemand](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Aby uzyskać więcej informacji.
 
   .NET 4 i nowsze
 

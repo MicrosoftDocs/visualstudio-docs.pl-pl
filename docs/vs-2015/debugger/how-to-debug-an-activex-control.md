@@ -25,18 +25,18 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3db776586a74fc1063a0553bb1dcf9ac62537965
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9524ab08ab955609f29f437e8a1576af02738aa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444808"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704462"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Instrukcje: Debugowanie kontrolki ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UWAGA]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Aby debugować formant ActiveX, należy określić (plik wykonywalny) dla formantu do uruchamiania w kontenerze.  
   
@@ -59,7 +59,7 @@ UWAGA]
      Jeśli nie zostanie określony kontener w **strony właściwości projektu** okno dialogowe, można określić kontenera po rozpoczęciu debugowania. Po wybraniu polecenia wykonywania, aby rozpocząć debugowanie, [plik wykonywalny debugowania sesji okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md) pojawia się. Określ nazwę ścieżki kontenera, w oknie dialogowym.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kontrolki ActiveX](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
- [Testowanie właściwości i zdarzeń za pomocą kontenera testu](http://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
+ [Kontrolki ActiveX](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [Testowanie właściwości i zdarzeń za pomocą kontenera testu](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
  [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)   
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)

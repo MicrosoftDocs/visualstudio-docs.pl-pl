@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 288e0e4d017302a41b3267a3ae751573ab849b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d9cd07ed41e39c931e67f43f1c77ff8bd56b2eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760634"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701774"
 ---
 # <a name="properties-of-decorators"></a>Właściwości elementów Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,4 +69,4 @@ Dekoratory są ikony, tekst lub cudzysłów ostrokątny rozwijania/zwijania, kt�
 |Pozycja|Domyślnej pozycji dekoratora.|TargetBottom|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

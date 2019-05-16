@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f7477017edc3c00a155064152f1d5df77bd35e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419739"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689368"
 ---
 # <a name="toolbox"></a>Przybornik
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +33,22 @@ ms.locfileid: "63419739"
  **Przybornika** wyświetlane tylko te elementy, które są odpowiednie dla typu pliku, w którym pracujesz. Możesz wyszukiwać w przyborniku, aby dodatkowo filtrować widoczne elementy. Jeśli Twój projekt wymaga formantu, który nie jest obsługiwany przez profil klienta, można ustawić projekt przeznaczony dla całego środowiska, edytując właściwości projektu.  
   
 > [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Pomoc na temat kart przybornika  
  Poniższe dokumenty zawierają dodatkowe informacje o określonych **przybornika** karty.  
   
-- [Przybornik, karta Dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [Przybornik, karta Dane](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
-- [Przybornik, karta Składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [Przybornik, karta Składniki](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
-- [Przybornik, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [Przybornik, karta HTML](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
-- [Przybornik, karta Dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [Przybornik, karta Dane](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
-- [Przybornik, karta Składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [Przybornik, karta Składniki](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
-- [Przybornik, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [Przybornik, karta HTML](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z przybornika](../../ide/using-the-toolbox.md)

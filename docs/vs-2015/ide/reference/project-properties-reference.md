@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b7e4051d960d6e893e4bd390686557f90197966
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5d36a521db2c82ed207b3f77a51908ca7fad3d27
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669099"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696002"
 ---
 # <a name="project-properties-reference"></a>Odwołanie do właściwości projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,5 +45,5 @@ Dowiedz się więcej na temat konfigurowania i dostosowywania właściwości pro
 |||  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wprowadzenie do projektanta projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Wprowadzenie do projektanta projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -12,12 +12,12 @@ ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9208b21aafbcee9cb5d6938eea3b60bdde491ba0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4cd84c3580d94491e09ce9e8cde8175f9e437be0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440615"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693399"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ IDebugPointerObject : IDebugObject
  Ewaluator wyrażeń implementuje ten interfejs reprezentujący obiekt wskaźnika.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfejsu można uzyskać ten interfejs, za pomocą [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) Jeśli `IDebugObject` reprezentuje wskaźnik.  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfejsu można uzyskać ten interfejs, za pomocą [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) Jeśli `IDebugObject` reprezentuje wskaźnik.  
   
 ## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  Oprócz metod odziedziczone [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), `IDebugPointerObject` interfejsu udostępnia następujące metody.  

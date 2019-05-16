@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437685"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693575"
 ---
 # <a name="view-dom-event-listeners"></a>Podgląd odbiorników zdarzeń DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
      **Zdarzenia** karta przedstawia detektorów zdarzeń dla każdego elementu wybranego na liście hierarchii.
 
 ### <a name="Tips"></a> Porady dotyczące rozwiązywania problemów z odbiornikiem zdarzeń
- W niektórych scenariuszach aplikacji detektorów zdarzeń musi być jawnie usunięte za pomocą [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Użyj **zdarzenia** kartę w Eksploratorze DOM, aby sprawdzić, czy odbiorniki zdarzeń zostały usunięte z elementów DOM podczas uruchamiania kodu. Poniżej przedstawiono kilka wskazówek, aby pomóc rozwiązać tego rodzaju problemy:
+ W niektórych scenariuszach aplikacji detektorów zdarzeń musi być jawnie usunięte za pomocą [removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Użyj **zdarzenia** kartę w Eksploratorze DOM, aby sprawdzić, czy odbiorniki zdarzeń zostały usunięte z elementów DOM podczas uruchamiania kodu. Poniżej przedstawiono kilka wskazówek, aby pomóc rozwiązać tego rodzaju problemy:
 
-- Aplikacje korzystające z modelu nawigacji jednej strony można zaimplementować w programie Visual Studio [szablony projektów](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), nie jest zazwyczaj konieczne jest usunięcie detektory zdarzenia zarejestrowane dla obiektów, takich jak elementy modelu DOM, które są częścią strony. W tym scenariuszu elementu modelu DOM i jego skojarzone ze zdarzeniem odbiorników mają ten sam okres istnienia i mogą być zebranych elementów bezużytecznych.
+- Aplikacje korzystające z modelu nawigacji jednej strony można zaimplementować w programie Visual Studio [szablony projektów](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx), nie jest zazwyczaj konieczne jest usunięcie detektory zdarzenia zarejestrowane dla obiektów, takich jak elementy modelu DOM, które są częścią strony. W tym scenariuszu elementu modelu DOM i jego skojarzone ze zdarzeniem odbiorników mają ten sam okres istnienia i mogą być zebranych elementów bezużytecznych.
 
 - Jeśli okres istnienia obiektu lub DOM element różni się od odbiornika skojarzone ze zdarzeniem, być może trzeba wywołać `removeEventListener` metody. Na przykład, jeśli używasz `window.onresize` zdarzeń, może być konieczne usunięcie odbiornik zdarzeń, jeśli przejdziesz do innej strony, gdzie obsługi zdarzeń.
 

@@ -18,17 +18,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33c466d3c7a619de87baccd2713c9a595283d5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4cba42203cb5d42e2518d2f1ead7fb998d9b6425
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422797"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680640"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Instrukcje: Konfigurowanie projektów pod kątem platform docelowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umożliwia ustawianie aplikacji przeznaczonych dla różnych platform, w tym platform 64-bitowych. Aby uzyskać więcej informacji na platformie 64-bitowej obsługi w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [aplikacji 64-bitowych](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umożliwia ustawianie aplikacji przeznaczonych dla różnych platform, w tym platform 64-bitowych. Aby uzyskać więcej informacji na platformie 64-bitowej obsługi w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [aplikacji 64-bitowych](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Platformy za pomocą programu Configuration Manager  
  **Programu Configuration Manager** umożliwia szybko dodać nową platformę docelową z projektem. Po wybraniu jednej z platform dołączone [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], właściwości projektu są modyfikowane w celu utworzenia projektu dla wybranej platformy.  
@@ -57,14 +57,14 @@ ms.locfileid: "63422797"
   
  Wykonanie tego zadania zależy od języka programowania, którego używasz. Skorzystaj z następujących linków, aby uzyskać więcej informacji:  
   
-- Aby uzyskać [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektów, zobacz [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Aby uzyskać [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektów, zobacz [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
 - Aby uzyskać [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektów, zobacz [Stroka kompilacji, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
-- Aby uzyskać [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektów, zobacz [/CLR (kompilacja języka wspólnego środowiska uruchomieniowego)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Aby uzyskać [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektów, zobacz [/CLR (kompilacja języka wspólnego środowiska uruchomieniowego)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne informacje o platformach kompilacji](../ide/understanding-build-platforms.md)   
- [/ platform (opcje kompilatora C#)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
- [Aplikacje 64-bitowe](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [/ platform (opcje kompilatora C#)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
+ [Aplikacje 64-bitowe](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Obsługa 64-bitowego środowiska IDE programu Visual Studio](../ide/visual-studio-ide-64-bit-support.md)

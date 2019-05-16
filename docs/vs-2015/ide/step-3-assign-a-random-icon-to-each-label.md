@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d65d1a758523aaf7652f2d47bec50aa9fdb91884
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442597"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694008"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3. Przypisywanie losowej ikony do każdej etykiety
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
   
      Pierwszy wiersz konwertuje `control` zmienną etykietę o nazwie `iconLabel`. Wiersz po tym to `if` instrukcję, która sprawdza, aby upewnić się, że konwersja zadziałała. Jeśli konwersja działa, instrukcje `if` Uruchom instrukcję. (Może pamiętasz z poprzednich samouczków `if` instrukcja jest używane do oceny dowolnego określonego warunku.) W pierwszym wierszu `if` instrukcja tworzy zmienną o nazwie `randomNumber` zawierającą liczbę losową, która odnosi się do jednego z elementów na liście ikon. Aby to zrobić, używa `Next` metody `Random` obiektu, który został utworzony wcześniej. `Next` Metoda zwraca liczbę losową. Ten wiersz używa także `Count` właściwość `icons` listy, aby określić zakres, z którego można wybrać liczbę losową. Następny wiersz przypisuje jeden ikony elementów listy, aby `Text` właściwości etykiety. Zakomentowany wiersz jest objaśniony w dalszej części tego tematu. Na koniec, ostatni wiersz w `if` instrukcja powoduje usunięcie z listy ikonę, która została dodana do formularza.  
   
-     Należy pamiętać, że jeśli nie wiesz na pewno, co wykonuje jakaś część kodu, możesz umieścić wskaźnik myszy nad elementem kodu i przeczytać dymek z podpowiedzią. Możesz także przejrzeć każdy wiersz kodu, gdy program jest uruchomiony przy użyciu debugera Visual Studio. Zobacz [jak: Krok za pomocą debugera programu Visual Studio? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) lub [nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md) Aby uzyskać więcej informacji.  
+     Należy pamiętać, że jeśli nie wiesz na pewno, co wykonuje jakaś część kodu, możesz umieścić wskaźnik myszy nad elementem kodu i przeczytać dymek z podpowiedzią. Możesz także przejrzeć każdy wiersz kodu, gdy program jest uruchomiony przy użyciu debugera Visual Studio. Zobacz [jak: Krok za pomocą debugera programu Visual Studio? ](https://msdn.microsoft.com/vstudio/ee672313.aspx) lub [nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md) Aby uzyskać więcej informacji.  
   
-3. Aby wypełnić planszę gry ikonami, musisz wywołać `AssignIconsToSquares()` metoda zaraz po uruchomieniu programu. Jeśli używasz Visual C#, Dodaj instrukcję tuż poniżej wywołania `InitializeComponent()` method in Class metoda `Form1` *Konstruktor*, aby formularz wywoływał nową metodę w celu skonfigurowania się przed wyświetleniem. Konstruktory są wywoływane podczas tworzenia nowego obiektu, takiego jak klasa lub struktura. Zobacz [konstruktorów (C# Programming Guide)](http://msdn.microsoft.com/library/ace5hbzh.aspx) lub [korzystanie z konstruktorów i destruktorów](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) w języku Visual Basic, aby uzyskać więcej informacji.  
+3. Aby wypełnić planszę gry ikonami, musisz wywołać `AssignIconsToSquares()` metoda zaraz po uruchomieniu programu. Jeśli używasz Visual C#, Dodaj instrukcję tuż poniżej wywołania `InitializeComponent()` method in Class metoda `Form1` *Konstruktor*, aby formularz wywoływał nową metodę w celu skonfigurowania się przed wyświetleniem. Konstruktory są wywoływane podczas tworzenia nowego obiektu, takiego jak klasa lub struktura. Zobacz [konstruktorów (C# Programming Guide)](https://msdn.microsoft.com/library/ace5hbzh.aspx) lub [korzystanie z konstruktorów i destruktorów](https://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) w języku Visual Basic, aby uzyskać więcej informacji.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   

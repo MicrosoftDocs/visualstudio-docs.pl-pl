@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9800025bd55237a4f1d19ca6f07c78c757b603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9ce72d69cb64b0421771324803a785546fa884f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753524"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693763"
 ---
 # <a name="pseudovariables"></a>Pseudozmienne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ $handles
 |`$clk`|Wyświetla godzinę w cyklach zegara.|  
 |`$user`|Wyświetla strukturę z informacjami o koncie dla konta, na którym działa aplikacja. Ze względów bezpieczeństwa informacje hasła nie są wyświetlane.|  
 |`$exceptionstack`|Wyświetla ślad stosu wyjątku bieżącego środowiska wykonawczego Windows. `$ exceptionstack` działa tylko w aplikacji Store, które są uruchomione na Windows 8.1 lub nowszym. `$ exceptionstack` nie jest obsługiwana dla języka C++ i wyjątki|  
-|`$ReturnValue`|Wyświetla wartość zwracaną metody .NET Framework. Zobacz [Sprawdź wartości zwracanych z wywołań metod](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
+|`$ReturnValue`|Wyświetla wartość zwracaną metody .NET Framework. Zobacz [Sprawdź wartości zwracanych z wywołań metod](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
   
  W języku C# i Visual Basic można użyć pseudozmiennych pokazanych w następującej tabeli:  
   
@@ -68,8 +68,8 @@ $handles
 |`$delete` lub `$$delete`|Usuwa zmienną niejawną, który został utworzony w **bezpośrednie** okna. Składnia jest `$delete,` *zmiennej* lub`$delete,` *zmiennej*`.`|  
 |`$objectids` lub `$listobjectids`|Wyświetla wszystkie aktywne identyfikatory obiektów jako elementy podrzędne określonego wyrażenia. Składnia jest `$objectid,` *wyrażenie* lub`$listobjectids,` *wyrażenia*`.`|  
 |`$` *N* `#`|Wyświetla obiekt z Identyfikatorem obiektu równym *N*.|  
-|`$dynamic`|Wyświetla specjalny **dynamiczny widok** węzła dla obiektu, który implementuje `IDynamicMetaObjectProvider`. interfejs. Składnia jest `$dynamic,` *obiektu*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4. Zobacz [dynamiczny widok](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
+|`$dynamic`|Wyświetla specjalny **dynamiczny widok** węzła dla obiektu, który implementuje `IDynamicMetaObjectProvider`. interfejs. Składnia jest `$dynamic,` *obiektu*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4. Zobacz [dynamiczny widok](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyrażenie kontrolne i QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Windows zmiennej](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Windows zmiennej](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

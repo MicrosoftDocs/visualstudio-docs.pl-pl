@@ -19,17 +19,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dcb55ee2128d237c2be6f57da828ec3c5877cfdd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c7b97c346cc933e14292fbb1198bfb69ecf59717
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445074"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696160"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Instrukcje: Korzystanie z okna wątków GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w procesorze GPU w aplikacji, na którym wykonujesz debugowanie. Aby uzyskać więcej informacji na temat aplikacji działających na procesorze GPU, zobacz [Przegląd C++ AMP](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
+Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w procesorze GPU w aplikacji, na którym wykonujesz debugowanie. Aby uzyskać więcej informacji na temat aplikacji działających na procesorze GPU, zobacz [Przegląd C++ AMP](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
   
  Okno wątków GPU zawiera tabelę, w którym każdy wiersz reprezentuje zestaw wątków GPU, które mają takie same wartości we wszystkich kolumnach. Można sortować, zmienić kolejność, Usuń i grupowania elementów, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów) z okna wątków GPU. Następujące kolumny są wyświetlane w oknie wątków GPU:  
   
@@ -108,4 +108,4 @@ Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w pr
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Przewodnik: debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Przewodnik: debugowanie aplikacji C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

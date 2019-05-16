@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2f3bfe9fc40aa21e02268bb403d7497ac41529
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cdeb1b847b746807c80509f4390daf445f65d90f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433841"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697657"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Instrukcje: Uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63433841"
 Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji, musisz najpierw pobrać pakiety instalacyjne tych wstępnie wymaganych składników na komputerze dewelopera. Po opublikowaniu aplikacji i wybraniu **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co aplikację**, wystąpi błąd, jeśli pakiety instalacyjne nie są w **pakietów** folderu.  
   
 > [!NOTE]
-> Aby dodać pakiet instalacyjny dla programu .NET Framework, zobacz [.NET Framework — przewodnik wdrażania dla deweloperów](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
+> Aby dodać pakiet instalacyjny dla programu .NET Framework, zobacz [.NET Framework — przewodnik wdrażania dla deweloperów](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
 ## <a name="Package"></a> Aby dodać pakiet instalacyjny przy użyciu pliku Package.xml  
   

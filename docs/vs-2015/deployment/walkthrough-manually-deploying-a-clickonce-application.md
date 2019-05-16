@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429123"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686323"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -206,8 +206,8 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
  Gdy zajdzie potrzeba wdrożenia nowej wersji aplikacji, Utwórz nowy katalog o nazwie po nowej wersji — na przykład 1.0.0.1—and Skopiuj nowe pliki aplikacji do nowego katalogu. Następnie należy wykonać poprzednie kroki, aby utworzyć i zarejestrować nowy manifest aplikacji i aktualizacji i podpisać manifest wdrożenia. Uważaj określić tę samą wersję wyższe w obu Mage.exe `-New` i `–Update` wywołań, jako [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aktualizuje tylko nowsze wersje z najbardziej znaczących całkowitą najdalej po lewej stronie. Jeśli używasz MageUI.exe, możesz zaktualizować manifest wdrożenia, otwierając go, wybierając **odwołania aplikacji** kartę, klikając **wybierz manifestu** przycisk, a następnie wybierając aktualizację manifest aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Mage.exe (manifestu narzędzie generowania i edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (Manifest narzędzie generowania i edytowania, graficzny klient)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [Mage.exe (manifestu narzędzie generowania i edytowania)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (Manifest narzędzie generowania i edytowania, graficzny klient)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74495c068cbd476014fa2c10088239e096d42f02
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696004"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "56840938"
 Użyj **formatowanie** stronę właściwości, aby określić, jak sformatowane elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **formatowanie** właściwości rozwiń **edytora tekstów**, **XAML**, **formatowanie** węzła.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="auto-formatting-events"></a>Automatyczne formatowanie zdarzeń
 Automatyczne formatowanie może wystąpić, gdy dowolne z następujących zdarzeń wykryte.
@@ -127,6 +127,6 @@ To ustawienie umożliwia określenie, czy kontrolki użytkownika i kontrolki nie
 |**Automatycznie wypełnij elementy przybornika**|Określa, czy kontrolki użytkownika i niestandardowe formanty w bieżącym rozwiązaniu są wyświetlane w przyborniku automatycznie.|
 
 ## <a name="see-also"></a>Zobacz też
-[XAML w WPF](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Instrukcje: Zmienianie ustawień widoku XAML](http://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[XAML i przewodniki po kodzie](http://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+[XAML w WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
+[Instrukcje: Zmienianie ustawień widoku XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
+[XAML i przewodniki po kodzie](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 409021e9a88f5bedfcab9ec172f7f962c7623d3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be514104ebc3cd908cd9469c6b674a22f9dad401
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442259"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696186"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Usługi języka specyficznego dla domeny (DSL) można rozszerzyć za pomocą Man
   
  Ponadto po włączeniu MEF w DSL może być łatwiejsze do pisania, niektóre funkcje DSL, nawet jeśli zostały one wszystkie utworzone wraz z język DSL.  
   
- Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Aby włączyć DSL być rozszerzony za MEF  
   
@@ -376,6 +376,6 @@ namespace MefExtension
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzenia programu Visual Studio wysyłki](../extensibility/shipping-visual-studio-extensions.md)   
- [Struktura Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
+ [Struktura Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
  [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md)

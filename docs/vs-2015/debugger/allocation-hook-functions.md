@@ -24,17 +24,17 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81135546ffa208a4efb96569cd7968dfe560cdf9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439933"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702526"
 ---
 # <a name="allocation-hook-functions"></a>Funkcje punktu zaczepienia alokacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Funkcji podłączania alokacji zainstalowane za pomocą [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), jest wywoływana za każdym razem, gdy przydzielone, ponownie przydzielić lub zwolnienie pamięci. Ten typ punktu zaczepienia może służyć do wielu różnych celów. Użyj go, aby przetestować, jak aplikacja obsługuje sytuacje braku pamięci, na przykład do zbadania wzorców przydziału lub do rejestrowania informacji o alokacji do późniejszej analizy.  
+Funkcji podłączania alokacji zainstalowane za pomocą [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), jest wywoływana za każdym razem, gdy przydzielone, ponownie przydzielić lub zwolnienie pamięci. Ten typ punktu zaczepienia może służyć do wielu różnych celów. Użyj go, aby przetestować, jak aplikacja obsługuje sytuacje braku pamięci, na przykład do zbadania wzorców przydziału lub do rejestrowania informacji o alokacji do późniejszej analizy.  
   
 > [!NOTE]
 > Należy pamiętać o ograniczeniu dotyczącym używania funkcji biblioteki wykonawczej języka C w funkcji punktu zaczepienia alokacji, opisanego w artykule [Punkty zaczepienia alokacji i alokacja pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
@@ -47,7 +47,7 @@ int YourAllocHook(int nAllocType, void *pvData,
         const unsigned char * szFileName, int nLine )  
 ```  
   
- Wskaźnik, który jest przekazywany do [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) typu **_crt_alloc_hook —**, zgodnie z definicją w CRTDBG. GODZ.:  
+ Wskaźnik, który jest przekazywany do [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) typu **_crt_alloc_hook —**, zgodnie z definicją w CRTDBG. GODZ.:  
   
 ```  
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
@@ -59,4 +59,4 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>Zobacz też  
  [Punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Debugowanie pisanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 Sample](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [crt_dbg2 Sample](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

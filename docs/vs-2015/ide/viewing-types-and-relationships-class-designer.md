@@ -17,12 +17,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c401a59bb2b635a737788c0a587ef5097cc74c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 978458e9aaca7ea0eae15350803c26246f0c9f1e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443191"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696453"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Wyświetlanie typów i relacji (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63443191"
 Projektant klas korzysta z diagramów klas, aby pokazać szczegóły typów, na przykład, ich składowe i relacje, które współużytkują one. Wizualizacja te jednostki jest faktycznie dynamiczny widok w kodzie. Oznacza to, że można edytować typy w Projektancie i następnie zobacz zmiany zostaną uwzględnione w kodzie źródłowym jednostki. Podobnie diagram klas są synchronizowane z zmiany wprowadzone do jednostek w kodzie.  
   
 > [!NOTE]
-> Jeśli projekt zawiera diagram klas i projekt odwołuje się do typu, który znajduje się w innym projekcie, diagram klas nie są wyświetlane odwołanie typu do czasu kompilowania projektu dla tego typu. Podobnie diagram nie są wyświetlane zmiany do kodu zewnętrznej jednostki dopóki można ponownie skompilować projekt dla danej jednostki. Aby uzyskać informacji na temat typów w przywoływanych zestawach i plikach tylko do odczytu, zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+> Jeśli projekt zawiera diagram klas i projekt odwołuje się do typu, który znajduje się w innym projekcie, diagram klas nie są wyświetlane odwołanie typu do czasu kompilowania projektu dla tego typu. Podobnie diagram nie są wyświetlane zmiany do kodu zewnętrznej jednostki dopóki można ponownie skompilować projekt dla danej jednostki. Aby uzyskać informacji na temat typów w przywoływanych zestawach i plikach tylko do odczytu, zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Instrukcje: Wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md)  

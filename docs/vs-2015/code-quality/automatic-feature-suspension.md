@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d406d200864a3c79dcd568b3c9411a1635ce116
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045985"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704016"
 ---
 # <a name="automatic-feature-suspension"></a>Automatyczne wstrzymanie funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Jeśli Twoje dostępnej pamięci systemowej kwalifikuje się do 200MB lub mniej,
 
 - Pełnej analizy rozwiązania dla programu Visual C# i Visual Basic jest wyłączona.
 
-- [Wyrzucanie elementów bezużytecznych](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) trybu o małych opóźnieniach (GC) dla języka Visual C# i Visual Basic są wyłączone.
+- [Wyrzucanie elementów bezużytecznych](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) trybu o małych opóźnieniach (GC) dla języka Visual C# i Visual Basic są wyłączone.
 
 - Visual Studio pamięci podręczne są opróżniane.
 
@@ -62,5 +62,5 @@ Ponadto używane dla operacji programu Visual Studio wewnętrznych pamięci podr
 ## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Podstawy dotyczące odzyskiwania pamięci](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Podstawy dotyczące odzyskiwania pamięci](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

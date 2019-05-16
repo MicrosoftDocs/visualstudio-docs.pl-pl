@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446480"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704677"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Ogólne, debugowanie, okno dialogowe Opcje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "63446480"
  **Przerwij, gdy wyjątki przekroczą granice AppDomain lub granice zarządzane/macierzyste**  
  Podczas debugowania zarządzanego lub mieszanym, środowisko uruchomieniowe języka wspólnego może przechwytywać wyjątki, które przecinają granice domen aplikacji lub granice zarządzane/macierzyste, gdy są spełnione następujące warunki:  
   
- 1\) kiedy kod macierzysty wywołuje kod zarządzany za pomocą COM Interop, i zgłasza wyjątek, kod zarządzany. Zobacz [wprowadzenie do COM Interop](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1\) kiedy kod macierzysty wywołuje kod zarządzany za pomocą COM Interop, i zgłasza wyjątek, kod zarządzany. Zobacz [wprowadzenie do COM Interop](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) gdy kodu zarządzanego uruchomionego w domenie aplikacji 1 wywołuje kod zarządzany w domenie aplikacji, 2, a kodw aplikacji Domena 2 zgłasza wyjątek. Zobacz [programowanie z domenami aplikacji](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) gdy kodu zarządzanego uruchomionego w domenie aplikacji 1 wywołuje kod zarządzany w domenie aplikacji, 2, a kodw aplikacji Domena 2 zgłasza wyjątek. Zobacz [programowanie z domenami aplikacji](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3\) gdy kod wywołuje funkcję przy użyciu odbicia, a funkcja zgłasza wyjątek. Zobacz [odbicia](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3\) gdy kod wywołuje funkcję przy użyciu odbicia, a funkcja zgłasza wyjątek. Zobacz [odbicia](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  W 2) i 3), jest czasami wyjątek przez kod zarządzany w `mscorlib` zamiast środowiska uruchomieniowego języka wspólnego. Ta opcja nie wpływa na przerwanie w wyjątkach przechwyconych przez `mscorlib`.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "63446480"
  Umożliwia ustawiania filtrów punktów przerwania, tak że wpływają one tylko określone procesy, wątki lub komputery.  
   
  **Włącz Asystenta wyjątków**  
- Tylko dla kodu zarządzanego. Zarządzane wyjątki, Otwórz okno dialogowe Asystenta wyjątków.  Zobacz [Asystenta wyjątków](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
+ Tylko dla kodu zarządzanego. Zarządzane wyjątki, Otwórz okno dialogowe Asystenta wyjątków.  Zobacz [Asystenta wyjątków](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Operacja unwind na stosie wywołań dotycząca nieobsłużonych wyjątków**  
  Powoduje, że **stos wywołań** okna, aby wycofać stos wywołań do punktu przed wystąpieniem nieobsługiwanego wyjątku.  
@@ -123,7 +123,7 @@ ms.locfileid: "63446480"
  **Ładuj eksporty dll**  
  Ładuje tabele eksportu bibliotek dll. Informacje o symbolach tabel eksportu biblioteki dll może być przydatne, jeśli pracujesz z Windows wiadomości, procedur Windows (WindowProcs), obiektami COM, lub organizowanie lub dowolną biblioteką dll, dla której nie masz symboli. Odczytywanie pliku dll informacji o eksportowaniu pewne nadmiarowe obciążenie. Dlatego ta funkcja jest domyślnie wyłączona.  
   
- Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, użyj `dumpbin /exports`. Symbole są dostępne dla każdej biblioteki dll systemu 32-bitowego. Czytając `dumpbin /exports` danych wyjściowych, możesz zobaczyć dokładną nazwę funkcji, w tym znaki inne niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji tabel eksportu biblioteki dll, może pojawić się obcięte gdzie indziej w debugerze. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [dumpbin/EXPORTS](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, użyj `dumpbin /exports`. Symbole są dostępne dla każdej biblioteki dll systemu 32-bitowego. Czytając `dumpbin /exports` danych wyjściowych, możesz zobaczyć dokładną nazwę funkcji, w tym znaki inne niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji tabel eksportu biblioteki dll, może pojawić się obcięte gdzie indziej w debugerze. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [dumpbin/EXPORTS](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Pokaż diagram równoległych stosów od dołu do góry**  
  Kontroluje kierunek, w którym stosy są wyświetlane w **stosów równoległych** okna.  
@@ -164,7 +164,7 @@ ms.locfileid: "63446480"
   Pokazuje **dynamiczne drzewo wizualne** polecenia na pasku narzędzi w oknie głównym aplikacji XAML, która jest debugowana. Ta opcja została wprowadzona w Visual Studio 2015 Update 2.  
   
   **Włącz narzędzia diagnostyczne podczas debugowania**  
-  **Narzędzia diagnostyczne** zostanie wyświetlone okno podczas debugowania. Aby uzyskać więcej informacji, zobacz [zintegrowane z debugerem profilowania](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Narzędzia diagnostyczne** zostanie wyświetlone okno podczas debugowania. Aby uzyskać więcej informacji, zobacz [zintegrowane z debugerem profilowania](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
   **Podczas debugowania Pokaż element perftip dla czasu upłynęło**  
   W oknie Kod wyświetla czas wywołania danej metody podczas debugowania.  

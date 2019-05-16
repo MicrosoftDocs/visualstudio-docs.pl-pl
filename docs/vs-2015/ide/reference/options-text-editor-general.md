@@ -48,12 +48,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b33fb6408bc9d37d7f0c94af9253a1ce9879235a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 423c79bc2fc6640180b0dfa9f6e9d59ef1d37dcc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441327"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695861"
 ---
 # <a name="options-text-editor-general"></a>Opcje, edytor tekstów, ogólne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "63441327"
 To okno dialogowe umożliwia zmianę ustawień globalnych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytorze kodu i tekstu. Aby wyświetlić to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **edytora tekstów** folder, a następnie kliknij **ogólne**.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Ustawienia  
  Przeciąganie i upuszczanie edycji tekstu  

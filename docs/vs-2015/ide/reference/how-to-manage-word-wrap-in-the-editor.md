@@ -13,22 +13,22 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07dda6011b25df1cfcd4d17e46c2591f87ab7413
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3b24e14fe1f1d740732bdb5f9d8d32a12aab0055
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437146"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703881"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Instrukcje: Zarządzanie zawijaniem wierszy w edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Można ustawić lub wyczyścić **zawijanie** opcji. Gdy ta opcja jest ustawiona, część długi wiersz, który wykracza poza bieżącym szerokość okna edytora kodu jest wyświetlany w następnym wierszu. Po wyczyszczeniu tej opcji, na przykład w celu ułatwienia korzystania numerowanie wierszy można przewijać po prawej stronie, aby zobaczyć zakończenia długie wiersze.  
   
- Aby uzyskać więcej informacji, zobacz [jak: Ustawianie opcji ogólnych edytora](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Aby uzyskać więcej informacji, zobacz [jak: Ustawianie opcji ogólnych edytora](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
 > [!NOTE]
-> Polecenia menu, zostanie wyświetlony i okien dialogowych mogą różnić się od tych opisanych w **pomocy** w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu, zostanie wyświetlony i okien dialogowych mogą różnić się od tych opisanych w **pomocy** w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Procedura  
   

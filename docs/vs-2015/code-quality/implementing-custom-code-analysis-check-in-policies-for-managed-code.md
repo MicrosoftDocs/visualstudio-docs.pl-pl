@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f0b22eabc4df4b6ce7e8596f0c6546cb3a4c61c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426549"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696654"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
  Aby utworzyć niestandardowy zestaw reguł dla projektu zespołowego, należy najpierw utworzyć specjalny folder zestaw reguł zasad ewidencjonowania **Eksploratora kontroli źródła**. Następnie utworzysz pliku zestawu reguł i dodaj go do kontroli wersji. Na koniec należy określić regułę, Ustaw jako zasady analizy kodu ewidencjonowania projektu zespołowego.  
   
 > [!NOTE]
-> Aby utworzyć folder w projekcie zespołowym, najpierw należy zamapować katalog główny projektu zespołowego do lokalizacji na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [tworzenie i Praca z obszarami roboczymi (stare)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Aby utworzyć folder w projekcie zespołowym, najpierw należy zamapować katalog główny projektu zespołowego do lokalizacji na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [tworzenie i Praca z obszarami roboczymi (stare)](https://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Aby utworzyć folder kontroli wersji dla zestawu reguł zasad ewidencjonowania  
   
@@ -61,7 +61,7 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
   
 1. W **Eksploratora kontroli źródła**, kliknij prawym przyciskiem myszy nowy folder, a następnie kliknij przycisk **Dodaj elementy do folderu**.  
   
-     Aby uzyskać więcej informacji, zobacz [korzystanie z kontroli wersji](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Aby uzyskać więcej informacji, zobacz [korzystanie z kontroli wersji](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
 2. Kliknij plik, który został utworzony zestaw reguł, a następnie kliknij **Zakończ**.  
   

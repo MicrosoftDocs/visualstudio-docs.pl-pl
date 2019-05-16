@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 677af3ccbad28ed4eca3db2f98b82ef432b48676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1f2ee066e448c0c039c4288c39aa13a646bc46a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764561"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697453"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Mierzenie złożoności i łatwości konserwacji zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ Wzrostu złożoności nowoczesnych aplikacji, zwiększa także trudności niezaw
   
  [Praca z danymi metryk kodu](../code-quality/working-with-code-metrics-data.md)  
   
- [Instrukcje: Skopiuj wyniki metryki kodu do Schowka](http://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
+ [Instrukcje: Skopiuj wyniki metryki kodu do Schowka](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
   
- [Instrukcje: Eksportuj wyniki metryki kodu do programu Excel](http://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
+ [Instrukcje: Eksportuj wyniki metryki kodu do programu Excel](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
   
- [Instrukcje: Utwórz element roboczy na podstawie wyniku](http://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
+ [Instrukcje: Utwórz element roboczy na podstawie wyniku](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów z metryk kodu](../code-quality/troubleshooting-code-metrics-issues.md)   
- [Wykonywanie typowych zadań programistycznych](http://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
+ [Wykonywanie typowych zadań programistycznych](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

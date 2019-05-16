@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436810"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702643"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Ta funkcja umożliwia debugowanie aplikacji, które są uruchomione na komputerz
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Dołącz do procesu na komputerze zdalnym
  Aby dołączyć do procesu, musisz znać nazwę procesu (zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios) dla kilku typowych nazw procesów). Aby uzyskać bardziej szczegółowy wskazówki w przypadku aplikacji ASP.NET, które zostały wdrożone w usługach IIS, zobacz [zdalnego debugowania ASP.NET, na komputerze zdalnym IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). W przypadku innych aplikacji można znaleźć nazwę procesu, w Menedżerze zadań.
 
- Kiedy używasz **dołączyć do procesu** okno dialogowe, możesz wybrać inny komputer, który skonfigurowano dla zdalnego debugowania. Aby uzyskać więcej informacji, zobacz [zdalne debugowanie](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Po wybraniu komputera zdalnego można wyświetlić listę dostępnych procesów uruchomionych na tym komputerze i dołączyć do jednego lub kilku procesów debugowania.
+ Kiedy używasz **dołączyć do procesu** okno dialogowe, możesz wybrać inny komputer, który skonfigurowano dla zdalnego debugowania. Aby uzyskać więcej informacji, zobacz [zdalne debugowanie](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Po wybraniu komputera zdalnego można wyświetlić listę dostępnych procesów uruchomionych na tym komputerze i dołączyć do jednego lub kilku procesów debugowania.
 
  **Aby wybrać komputer zdalny:**
 
@@ -106,7 +106,7 @@ Ta funkcja umożliwia debugowanie aplikacji, które są uruchomione na komputerz
 
 ## <a name="additional-info"></a>Dodatkowe informacje
 
-Można być dołączonym do wielu programów podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny program w **Lokalizacja debugowania** paska narzędzi lub **procesy** okna. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie bieżącego programu](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
+Można być dołączonym do wielu programów podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny program w **Lokalizacja debugowania** paska narzędzi lub **procesy** okna. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie bieżącego programu](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
 Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie potwierdzenie okno dialogowe zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
@@ -136,7 +136,7 @@ W przypadku niektórych typów aplikacji (takich jak aplikacje Windows Store), n
 > Aby dołączyć do aplikacji Windows Universal, która jest napisany w języku JavaScript, należy najpierw włączyć debugowanie dla aplikacji. Zobacz [dołączyć debuger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) w Centrum deweloperów Windows.
 
 > [!NOTE]
-> Aby debuger dołączał do kodu napisanego w języku C++, kod musi wysyłać właściwość `DebuggableAttribute`. Można dodać to w kodzie automatycznie przez powiązanie z [/assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) — opcja konsolidatora.
+> Aby debuger dołączał do kodu napisanego w języku C++, kod musi wysyłać właściwość `DebuggableAttribute`. Można dodać to w kodzie automatycznie przez powiązanie z [/assemblydebug](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) — opcja konsolidatora.
 
 ## <a name="what-debugger-features-can-i-use"></a>Jakie funkcje debugera można używać?
 

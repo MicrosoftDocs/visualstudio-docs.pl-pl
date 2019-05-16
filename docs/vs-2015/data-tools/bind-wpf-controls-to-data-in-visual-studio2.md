@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437038"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697956"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek WPF z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Można tworzyć powiązane z danymi [!INCLUDE[TLA#tla_titlewinclient](../include
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Aby utworzyć formant, który jest powiązany z jednego pola danych
 
-1. W **źródeł danych** okna, rozwiń węzeł elementu, który reprezentuje tabeli lub obiektu. Znajdź element podrzędny, który reprezentuje kolumny lub właściwości, które chcesz powiązać z. Na przykład wizualny, zobacz [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. W **źródeł danych** okna, rozwiń węzeł elementu, który reprezentuje tabeli lub obiektu. Znajdź element podrzędny, który reprezentuje kolumny lub właściwości, które chcesz powiązać z. Na przykład wizualny, zobacz [okna źródeł danych](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Opcjonalnie wybierz formant Aby utworzyć. Każdy element na **źródeł danych** okno ma domyślny formant, który jest tworzony podczas przeciągania elementu do projektanta. Domyślny formant jest zależny od odpowiedniego typu danych elementu.
 
@@ -73,7 +73,7 @@ Można tworzyć powiązane z danymi [!INCLUDE[TLA#tla_titlewinclient](../include
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Aby utworzyć formant, który jest powiązany z wielu pól danych
 
-1. W **źródeł danych** okna, wybierz element, który reprezentuje tabeli lub obiektu. Na przykład wizualny, zobacz [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. W **źródeł danych** okna, wybierz element, który reprezentuje tabeli lub obiektu. Na przykład wizualny, zobacz [okna źródeł danych](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Opcjonalnie wybierz formant Aby utworzyć. Domyślnie każdy element **źródeł danych** okna, który reprezentuje dane tabeli lub obiektu jest ustawiona na tworzenie <xref:System.Windows.Controls.DataGrid> (Jeśli projekt jest przeznaczony dla .NET Framework 4) lub <xref:System.Windows.Controls.ListView> (w przypadku wcześniejszych wersji programu .NET Framework).
 
@@ -91,7 +91,7 @@ Można tworzyć powiązane z danymi [!INCLUDE[TLA#tla_titlewinclient](../include
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Aby utworzyć zestaw elementów sterujących, które są powiązane z wielu pól danych
 
-1. W **źródeł danych** okna, wybierz element, który reprezentuje tabeli lub obiektu. Na przykład wizualny, zobacz [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. W **źródeł danych** okna, wybierz element, który reprezentuje tabeli lub obiektu. Na przykład wizualny, zobacz [okna źródeł danych](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Kliknij strzałkę listy rozwijanej obok elementu i wybierz pozycję **szczegóły**.
 

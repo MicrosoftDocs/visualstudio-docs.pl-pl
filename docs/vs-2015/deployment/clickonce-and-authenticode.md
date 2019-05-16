@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7938940cc1a9e672ee831165ecc55e2897c3a9fe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089084"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697365"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Authenticode * jest technologia firmy Microsoft, która używa branżowego stand
   
  Z drugiej strony Jeśli zostanie wyświetlony certyfikat od urzędu certyfikacji, takich jak dostawcy certyfikatu lub działu, w przedsiębiorstwie, certyfikat oferuje większe bezpieczeństwo dla użytkowników. Nie tylko identyfikuje wydawcę oprogramowania podpisany, ale tej tożsamości weryfikuje, sprawdzając z urzędem certyfikacji, który podpisał go. Jeśli urząd certyfikacji nie jest główny urząd certyfikacji, Authenticode będą również "połączony" do głównego urzędu, aby sprawdzić, czy urząd certyfikacji jest autoryzowany do wystawiania certyfikatów. Ze względów bezpieczeństwa należy używać certyfikatu wystawionego przez urząd certyfikacji, jeśli to możliwe.  
   
- Aby uzyskać więcej informacji na temat generowania certyfikatów self zobacz [Makecert.exe (narzędzie tworzenia certyfikatów)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ Aby uzyskać więcej informacji na temat generowania certyfikatów self zobacz [Makecert.exe (narzędzie tworzenia certyfikatów)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
 ### <a name="timestamps"></a>Sygnatury czasowe  
  Certyfikaty używane do podpisywania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje wygasają po upływie określonego czasu, zwykle przez dwanaście miesięcy. Aby wyeliminować potrzebę stale ponownego podpisywania aplikacji przy użyciu nowych certyfikatów [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] obsługuje sygnatury czasowej. Gdy aplikacja jest podpisana z sygnaturą czasową, jego certyfikat będzie nadal być akceptowane, nawet po wygaśnięciu, pod warunkiem, że sygnatura czasowa jest nieprawidłowa. Dzięki temu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji za pomocą wygasłe certyfikaty, ale nieprawidłowy sygnatury czasowe, aby pobrać i uruchomić. Umożliwia także zainstalowanych aplikacji za pomocą wygasłe certyfikaty, aby w dalszym ciągu pobieranie i instalowanie aktualizacji.  
@@ -75,4 +75,4 @@ Authenticode * jest technologia firmy Microsoft, która używa branżowego stand
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Przegląd wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)   
- [Mage.exe (narzędzie generowania manifestu i edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
+ [Mage.exe (narzędzie generowania manifestu i edytowania)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

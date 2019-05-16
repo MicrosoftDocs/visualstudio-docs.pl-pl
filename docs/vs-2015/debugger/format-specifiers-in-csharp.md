@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118243"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682483"
 ---
 # <a name="format-specifiers-in-c"></a>Specyfikatory formatu w języku C\#
 
@@ -64,7 +64,7 @@ W poniższej tabeli przedstawiono specyfikatory formatu C# rozpoznawanym przez d
 
 |Specyfikator|Format|Oryginalnej wartości czujki|Wyświetla|
 |---------------|------------|--------------------------|--------------|
-|ac|Wymuś wyniku obliczenia wyrażenia. Może to być przydatne, gdy bezwarunkowa ocena właściwości i niejawne wywołania funkcji jest wyłączone. Zobacz [efekty uboczne i wyrażenia](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<value>|
+|ac|Wymuś wyniku obliczenia wyrażenia. Może to być przydatne, gdy bezwarunkowa ocena właściwości i niejawne wywołania funkcji jest wyłączone. Zobacz [efekty uboczne i wyrażenia](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<value>|
 |d|Liczba całkowita dziesiętna|0x0065|101|
 |dynamic|Wyświetla określony obiekt przy użyciu dynamicznego widoku|Wyświetla wszystkie elementy członkowskie obiektu, w tym widoku dynamicznego|Wyświetla tylko widoku dynamicznego|
 |h|Szesnastkowa liczba całkowita|61541|0x0000F065|
@@ -76,4 +76,4 @@ W poniższej tabeli przedstawiono specyfikatory formatu C# rozpoznawanym przez d
 ## <a name="see-also"></a>Zobacz też
 
 - [Okna wyrażeń kontrolnych i szybkich wyrażeń kontrolnych](../debugger/watch-and-quickwatch-windows.md)
-- [Windows zmiennej](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [Windows zmiennej](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5269ec74388fa9b09a4cceabad364d19409470df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434501"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699744"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
 4. Wypełnianie zestawu danych danymi z `Customers` tabeli w bazie danych Northwind.  
   
-5. Użyj [narzędzia graficzne bazy danych](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) w programie Visual Studio do uzyskiwania bezpośredniego dostępu do `Customers` tabela danych i zmienić rekord.  
+5. Użyj [narzędzia graficzne bazy danych](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) w programie Visual Studio do uzyskiwania bezpośredniego dostępu do `Customers` tabela danych i zmienić rekord.  
   
 6. Zmień ten sam rekord na inną wartość, zaktualizować zestaw danych, a próba zapisania zmian w bazie danych, co powoduje błąd współbieżności, są zgłaszane.  
   
@@ -55,7 +55,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
 - Dostęp do przykładowej bazy danych Northwind z uprawnieniami do wykonywania aktualizacji.
   
 > [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu  
  Swoje Instruktaż należy rozpocząć od tworzenia nowej aplikacji Windows.  
@@ -79,7 +79,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
 1. Na **danych** menu, wybierz **Dodaj nowe dane źródła**.  
   
-     [Kreatora konfiguracji źródła danych](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) zostanie otwarty.  
+     [Kreatora konfiguracji źródła danych](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) zostanie otwarty.  
   
 2. Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**.  
   

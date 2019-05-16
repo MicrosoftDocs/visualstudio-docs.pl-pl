@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432437"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680785"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
 Kilka opcji pomocy technicznej są dostępne dla klientów, którzy pytań na temat sposobu rozszerzenia programu Visual Studio zintegrowane środowisko programistyczne (IDE).
@@ -45,7 +45,7 @@ Przykłady "open source" z zestawu SDK rozszerzeń można znaleźć w witrynie G
 ## <a name="included-support"></a>Uwzględnione pomocy technicznej
 
 ### <a name="visual-studio-product-support"></a>Pomoc techniczna programu Visual Studio
- Niektóre pomoc techniczna jest dołączone do zakupu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produktów. Aby uzyskać więcej informacji, zobacz [pomoc techniczna dla programu Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Firma Microsoft udostępnia zespół pomocy technicznej dedykowanych odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzalności.
+ Niektóre pomoc techniczna jest dołączone do zakupu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produktów. Aby uzyskać więcej informacji, zobacz [pomoc techniczna dla programu Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Firma Microsoft udostępnia zespół pomocy technicznej dedykowanych odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzalności.
 
 ### <a name="msdn-subscription-support"></a>Pomoc techniczna dla subskrypcji MSDN
  Pakiety subskrypcji MSDN mogą również obejmować niektórych pomocy technicznej. Aby uzyskać więcej informacji, zobacz [pomocy technicznej subskrybenta MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ Informacje dotyczące obsługi poszczególnych żądań znajduje się w temacie 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Porozmawiaj z nami](../ide/talk-to-us.md)
+- [Porozmawiaj z nami](../ide/feedback-options.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b5543b2d968e96cbd5bf8c9f6dd015b2acf31b4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2d9e301b842e0cbd84e23b58310c6afad276b4a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536116"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696768"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Nie przeciążaj operatora równości w typach referencyjnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ ms.locfileid: "62536116"
  [CA1013: Dokonaj przeciążenia operatora równości przy przeciążaniu operatorów dodawania i odejmowania](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Object.Equals%2A?displayProperty=fullName> [Operatory równości](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+ <xref:System.Object.Equals%2A?displayProperty=fullName> [Operatory równości](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

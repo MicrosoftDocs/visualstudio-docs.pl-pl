@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10280b60c4ae929fce9a0ce563fb1d7cac3fd5f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bd49b08e8bd48393a980fe775db66c96c0edc1fd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441341"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695828"
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Opcje to okno dialogowe umożliwia określenie, jak wszystkie pliki z określony
  Po wybraniu opcji "z kodowaniem", pojawi się okno dialogowe przy każdym otwarciu dokumentu tego typu, który służy do wybierania schemat kodowania dla tego dokumentu. Może to być przydatne w przypadku przygotowywania wersje dokumentów projektu do użytku na różnych platformach i w różnych językach docelowego.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **Rozszerzenie**  

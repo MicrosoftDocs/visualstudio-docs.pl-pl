@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436563"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689098"
 ---
 # <a name="support-for-settings-categories"></a>Obsługa ustawień kategorii
-Kategoria Ustawienia składa się z grupą opcje umożliwiające dostosowanie zintegrowanego środowiska programistycznego (IDE). Na przykład ustawienia można kontrolować układ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] systemów windows i zawartość elementu menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Kategoria Ustawienia składa się z grupą opcje umożliwiające dostosowanie zintegrowanego środowiska programistycznego (IDE). Na przykład ustawienia można kontrolować układ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] systemów windows i zawartość elementu menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Na **narzędzia** kliknij menu **Import i eksport ustawień** można uruchomić **Kreatora importowania i eksportowania ustawień**. Kreator udostępnia trzy opcje: eksportowanie, zaimportować lub zresetowanie ustawień programu. Na przykład wybranie eksportu, otwiera **wybierz ustawienia do eksportowania** strony kreatora.  
   
@@ -64,4 +64,4 @@ Kategoria Ustawienia składa się z grupą opcje umożliwiające dostosowanie zi
  [Tworzenie strony opcji](../extensibility/creating-an-options-page.md)   
  [Przykłady VSSDK](../misc/vssdk-samples.md)   
  [Stan pakietu VSPackage](../misc/vspackage-state.md)   
- [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428202"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695110"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla aplikacji Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!I
     > [!NOTE]
     > Wybranych funkcji powinny znajdować się możliwości, które są niezbędne do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testu jednostkowego, aby działo poprawnie. Nigdy nie mają możliwości uwzględnić możliwości, które nie są częścią [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji przetestowane i zwykle powinny być podzestawem funkcji określonych dla [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]testowanej aplikacji.  
   
-     Aby uzyskać więcej informacji dotyczących projektanta manifestów, zobacz [skonfigurować pakiet aplikacji Windows 8.1 przy użyciu manifest designer](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
+     Aby uzyskać więcej informacji dotyczących projektanta manifestów, zobacz [skonfigurować pakiet aplikacji Windows 8.1 przy użyciu manifest designer](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
      ![Manifest testów jednostkowych](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -149,4 +149,4 @@ Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!I
   
 ## <a name="see-also"></a>Zobacz też  
  [Testowanie aplikacji Store za pomocą programu Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Tworzenie i testowanie aplikacji Windows Store, za pomocą Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Tworzenie i testowanie aplikacji Windows Store, za pomocą Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

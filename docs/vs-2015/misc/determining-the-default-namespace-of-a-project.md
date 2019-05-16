@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d58c8986922c30192d6300a623a635b24c34ed5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822588"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705775"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Określanie Namespace domyślnego projektu
-Dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], jeśli `CustomToolNamespace` właściwość jest ustawiona w pliku wejściowego, a następnie wartość `CustomToolNamespace` staje się wartością domyślnego parametru przestrzeni nazw, przekazana do <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> metody. W przeciwnym razie `wszDefaultNamespace` parametr przekazany do `Generate` jest zawsze równa głównej przestrzeni nazw. Aby uzyskać więcej informacji na temat przestrzenie nazw, zobacz [słowa kluczowe Namespace](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
+Dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], jeśli `CustomToolNamespace` właściwość jest ustawiona w pliku wejściowego, a następnie wartość `CustomToolNamespace` staje się wartością domyślnego parametru przestrzeni nazw, przekazana do <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> metody. W przeciwnym razie `wszDefaultNamespace` parametr przekazany do `Generate` jest zawsze równa głównej przestrzeni nazw. Aby uzyskać więcej informacji na temat przestrzenie nazw, zobacz [słowa kluczowe Namespace](https://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
   
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] używa przestrzeni nazw opartych na folder. Oznacza to, że przestrzeń nazw składa się z głównego obszaru nazw, a także nazwy dowolnego folderu zawierającego narzędzie niestandardowe. Każda nazwa folderu jest konwertowana na prawidłowy identyfikator i okresy oddzielić wszystkie nazwy. Na przykład, jeśli plik wejściowy jest FolderA\FolderB\FolderC\MyInput.txt oraz główna przestrzeń nazw jest CL9 obliczanej domyślny obszar nazw będzie **CL9. FolderA.FolderB.FolderC**.  
   

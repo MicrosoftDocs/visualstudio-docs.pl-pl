@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976982"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704717"
 ---
 # <a name="creating-a-workflow-project"></a>Tworzenie projektu przepływu pracy
 Przepływy pracy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] usług przepływu pracy, działań niestandardowych i projektanci mogą być tworzone za pomocą działania niestandardowego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony projektów. W tej sekcji opisano sposób tworzenia bibliotek i aplikacji przy użyciu szablonów projektu dostępne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -44,7 +44,7 @@ Przepływy pracy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] usług przepły
  W tym artykule opisano sposób dodawania działań przepływu pracy dodatkowe lub projektantów i innych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] elementy, takie jak działania kodu do istniejącego projektu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Projektowanie przepływów pracy](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [Projektowanie przepływów pracy](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie projektanta przepływu pracy](../workflow-designer/using-the-workflow-designer.md)

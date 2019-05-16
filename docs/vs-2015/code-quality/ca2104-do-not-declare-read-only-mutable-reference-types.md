@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 03bb90b11e994ce2f823deb7e2395afc6aee7e04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4c6619bc5803c1b44e1c6b0516987c3110bbd30
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776556"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687416"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Nie deklaruj modyfikowalnych typów referencyjnych tylko do odczytu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "54776556"
 ## <a name="rule-description"></a>Opis reguły
  Typ zmienny to typ, którego dane wystąpienia mogą być modyfikowane. <xref:System.Text.StringBuilder?displayProperty=fullName> Klasy jest przykładem typu referencji zmiennej. Zawiera elementy członkowskie, które można zmienić wartość wystąpienia klasy. Na przykład typ referencyjny niezmienne <xref:System.String?displayProperty=fullName> klasy. Po utworzeniu wystąpienia, jego wartość nigdy nie można zmienić.
 
- Modyfikator tylko do odczytu ([tylko do odczytu](http://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) w języku C# [tylko do odczytu](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], i [const](http://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) w języku C++) na typ odwołania pola (wskaźnik w C++) uniemożliwia pola zastąpione przez inne wystąpienie typu referencyjnego. Jednak modyfikator nie uniemożliwia dane wystąpienia pola modyfikowana za pomocą typu odwołania.
+ Modyfikator tylko do odczytu ([tylko do odczytu](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) w języku C# [tylko do odczytu](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], i [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) w języku C++) na typ odwołania pola (wskaźnik w C++) uniemożliwia pola zastąpione przez inne wystąpienie typu referencyjnego. Jednak modyfikator nie uniemożliwia dane wystąpienia pola modyfikowana za pomocą typu odwołania.
 
  Pola tablicy tylko do odczytu są wykluczone z tej reguły, ale zamiast tego spowodować naruszenie [CA2105: Pola tablicy nie można odczytać tylko](../code-quality/ca2105-array-fields-should-not-be-read-only.md) reguły.
 

@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46e5990b92dae5086d2986c8df9c8ba4106e913c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77fd48cd8e64be296231ff847b31d940d3d5831c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428589"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704144"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Edytuj i kontynuuj — okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,4 +37,4 @@ Tylko w trybie macierzystym) to okno dialogowe pojawia się po zakończeniu edyc
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

@@ -11,12 +11,12 @@ ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59e12a90d241bf07a53cc98c91eef4cfc6d7d063
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 89a07bc5a5c4c8b7a6054b53610325c654355bc8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695957"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Plan rozwoju rozszerzania debugera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Ta dokumentacja zawiera przewodnik i informacje do rozszerzania [!INCLUDE[vs_cur
   
      [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [Samouczek: Tworzenie aparatu debugowania, korzystając z modelu COM ATL](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [Samouczek: Tworzenie aparatu debugowania, korzystając z modelu COM ATL](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
      [Implementowanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)  
   

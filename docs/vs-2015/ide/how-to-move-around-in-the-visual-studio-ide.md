@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df45f28076bb520a3b1e8055d9c6fbac08cb7669
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435244"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685599"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Instrukcje: Poruszanie się w środowisku IDE programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63435244"
 Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożliwia przenoszenie okna okna i plikami na kilka różnych sposobów, w zależności od wymagań preferencji lub projektu. Można przełączać się między otwartych plików w edytorze lub przechodzić przez wszystkie aktywne okna narzędzi w IDE. Możesz również przełączyć bezpośrednio do dowolnego otwartego pliku w edytorze, niezależnie od kolejności, w którym ostatniego dostępu. Te funkcje może pomóc zwiększyć produktywność podczas pracy w środowisku IDE.
 
 > [!NOTE]
-> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ogólnych ustawieniach projektowych** na uwadze. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ogólnych ustawieniach projektowych** na uwadze. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
  Prawie wszystkie polecenia menu w programie Visual Studio ma skrót klawiaturowy. Można również utworzyć własne skróty niestandardowe. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

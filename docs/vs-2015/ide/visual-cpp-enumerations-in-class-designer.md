@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 209f56d8222d4cc446d15f8eedd4d89b08993c5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38d36c1fdc0033115f1d7a4cf18265dc1f2a3ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548586"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696362"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Wyliczenia Visual C++ w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +43,8 @@ enum class CardSuit {
   
  Kształt wyliczenia C++ na diagramie klasy wygląda i działa jak kształt struktury, chyba że czyta etykietę **wyliczenia** lub **Enum class**, jest różowy, a nie niebieski i ma kolorowe obramowanie na lewym i górnym marginesy. Zarówno wyliczenia kształtów, jak i struktury mają ostre rogi.  
   
- Aby uzyskać więcej informacji o korzystaniu z `enum` typu, zobacz [wyliczenia](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3).  
+ Aby uzyskać więcej informacji o korzystaniu z `enum` typu, zobacz [wyliczenia](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Praca z kodem Visual C++ (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Wyliczenia](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)
+ [Wyliczenia](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)

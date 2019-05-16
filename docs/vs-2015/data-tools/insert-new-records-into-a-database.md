@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5074af8f0a9ca172d04b4cd5bb1d9057ad4bb5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3f7ccd6af16d89c18f5a5bba63f6afc50de391c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688714"
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Wstawianie nowych rekordów do bazy danych, umożliwia `TableAdapter.Update` met
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Wstawianie nowych rekordów do bazy danych za pomocą TableAdapter.Update — metoda  
   
-1. Dodawanie nowych rekordów do żądaną <xref:System.Data.DataTable> przez utworzenie nowego <xref:System.Data.DataRow> i dodanie go do <xref:System.Data.DataTable.Rows%2A> kolekcji. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie wierszy do DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Dodawanie nowych rekordów do żądaną <xref:System.Data.DataTable> przez utworzenie nowego <xref:System.Data.DataRow> i dodanie go do <xref:System.Data.DataTable.Rows%2A> kolekcji. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie wierszy do DataTable](https://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. Po dodaniu nowych wierszy do <xref:System.Data.DataTable>, wywołaj `TableAdapter.Update` metody. Możesz kontrolować ilość danych, które można zaktualizować przez przekazanie albo cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub pojedynczej <xref:System.Data.DataRow>.  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c9fb1d536283e016a95b704b0246d8204300241
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61ae0a5a690e1413bfccd66ee0e9db7f6d812c15
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438323"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702251"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Instrukcje: Wyświetlanie i ukrywanie grup rejestru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63438323"
  Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Kliknięcie prawym przyciskiem myszy **rejestruje** okna, pojawi się menu podręczne zawierające te grupy, które można wyświetlić lub ukryć zgodnie z potrzebami po poniższej procedurze.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-or-hide-register-groups"></a>Wyświetlanie lub ukrywanie grup rejestru  
   

@@ -10,12 +10,12 @@ ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d0e628b1e920031aa447485536863c1b563bc1c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 22ee836f5a4330c551181f01229e82eb14623fb8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754489"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675210"
 ---
 # <a name="using-the-automation-model"></a>Korzystanie z modelu automatyzacji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54754489"
 Po połączeniu usługi pakietu VSPackage do automatyzacji, wywołując można uzyskać właściwości i metody <xref:EnvDTE.DTEClass.GetObject%2A> metody <xref:EnvDTE._DTE> obiektu, przekazując ciąg reprezentujący obiekt, który chcesz pobrać.  
   
 ## <a name="obtaining-project-objects"></a>Uzyskiwanie obiektów projektu  
- Poniżej przedstawiono dwa przykłady kodu, które pokazują, jak konsumenta automatyzacji uzyskuje projektu obiektów automatyzacji. Aby uzyskać informacje o tym, jak można pobrać obiektu DTE, zobacz [jak: Pobieranie odwołań do obiektów DTE i DTE2](http://msdn.microsoft.com/library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
+ Poniżej przedstawiono dwa przykłady kodu, które pokazują, jak konsumenta automatyzacji uzyskuje projektu obiektów automatyzacji. Aby uzyskać informacje o tym, jak można pobrać obiektu DTE, zobacz [jak: Pobieranie odwołań do obiektów DTE i DTE2](https://msdn.microsoft.com/library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
   
 ```vb  
 Sub DoAutomation()  

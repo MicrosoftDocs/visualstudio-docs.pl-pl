@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442864"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686552"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu w języku Visual Basic i C# w aplikacjach Store przy użyciu programu Visual Studio statycznej analizy kodu
 
@@ -27,7 +27,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Narzędzie do analizy kodu w programie Visual Studio Express sprawdza swój kod pod kątem zestaw wspólne wady i naruszeń dobrą praktykę programistyczną. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ narzędzie do analizy kodu szuka wzorców konkretnego kodu, które są prawidłowe, ale nadal można tworzyć problemy dla Ciebie lub innych osób używających Twojego kodu. Analiza kodu, można także znaleźć defektów w kodzie, które są trudne do odnajdywania za pomocą testowania. Podczas procesu opracowywania uruchomione narzędzie do analizy kodu w regularnych odstępach czasu może zwiększyć jakość ukończonej aplikacji.
 
 > [!NOTE]
-> W programie Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional można użyć pełnej funkcjonalności podczas analizy kodu. Zobacz [analiza jakości aplikacji za pomocą narzędzi analizy kodu](http://msdn.microsoft.com/library/dd264897.aspx) w bibliotece MSDN.
+> W programie Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional można użyć pełnej funkcjonalności podczas analizy kodu. Zobacz [analiza jakości aplikacji za pomocą narzędzi analizy kodu](https://msdn.microsoft.com/library/dd264897.aspx) w bibliotece MSDN.
 
 ## <a name="in-this-topic"></a>W tym temacie:
  Informacje na temat:
@@ -98,12 +98,12 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 ## <a name="BKMK_Warnings"></a> Ostrzeżenia analizy kodu w języku Visual Basic i C#
  Analiza kodu generuje następujące ostrzeżenia:
 
- [CA1001: Typy, które posiadają pola usuwalne powinny być usuwalne](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: Typy, które posiadają pola usuwalne powinny być usuwalne](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Usuwaj puste finalizatory](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: Usuwaj puste finalizatory](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: Pola możliwe do rozporządzania należy rozporządzać](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: Pola możliwe do rozporządzania należy rozporządzać](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Zaimplementuj konstruktory serializacji](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: Zaimplementuj konstruktory serializacji](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

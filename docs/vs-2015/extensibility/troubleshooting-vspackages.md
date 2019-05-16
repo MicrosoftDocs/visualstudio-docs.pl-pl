@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430126"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695504"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
   
    2. Wybierz **odwołania** karcie **stron właściwości** okno dialogowe i upewnij się, że wszystkie ścieżki są prawidłowe. Alternatywnie, można użyć **przeglądarki obiektów** Aby przeglądać w poszukiwaniu przywoływanych obiektów.  
   
-        Dla kodu zarządzanego, możesz użyć [Fuslogvw.exe (Podgląd dziennika powiązań zestawów)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) do wyświetlania szczegółów ładowania zestawu nie powiodło się.  
+        Dla kodu zarządzanego, możesz użyć [Fuslogvw.exe (Podgląd dziennika powiązań zestawów)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) do wyświetlania szczegółów ładowania zestawu nie powiodło się.  
   
 2. Dla niezarządzanego kodu można znaleźć identyfikator CLSID pakietu VSPackage w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] węzła rejestru CLSID:  
   

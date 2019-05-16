@@ -19,12 +19,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8d12603c10c238f74d8e9e7d79dad495d8840978
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441500"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680228"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,28 +39,28 @@ Użyj **skompilować** strony projektanta projektu, aby określić instrukcje ko
  Następujące ustawienia pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.  
   
 > [!NOTE]
-> Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. W związku z tym **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+> Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. W związku z tym **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Konfiguracja**  
- Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) i [jak: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).  
+ Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) i [jak: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).  
   
  **Platforma**  
- Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można określić **dowolny Procesor** (ustawienie domyślne), **x64**, lub **x86**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można określić **dowolny Procesor** (ustawienie domyślne), **x64**, lub **x86**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="compiler-configuration-options"></a>Opcje konfiguracji kompilatora  
  Następujące ustawienia pozwalają włączyć ustawienia kompilatora opcji konfiguracji.  
   
  **Kompiluj ścieżkę wyjściową**  
- Określa położenie plików wyjściowych dla tej konfiguracji projektu. W tym polu wpisz ścieżkę dane wyjściowe kompilacji, lub kliknij przycisk **Przeglądaj** przycisk, aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzasz ścieżkę bezwzględną, jego zostanie zapisana jako względna. Domyślna ścieżka to bin\Debug\ lub bin\Release\\. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Określa położenie plików wyjściowych dla tej konfiguracji projektu. W tym polu wpisz ścieżkę dane wyjściowe kompilacji, lub kliknij przycisk **Przeglądaj** przycisk, aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzasz ścieżkę bezwzględną, jego zostanie zapisana jako względna. Domyślna ścieżka to bin\Debug\ lub bin\Release\\. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. **Kompilacji** polecenia **debugowania** menu (F5) umieszcza kompilację w lokalizacji debugowania bez względu na to **ścieżkę wyjściową** określisz. Jednak **kompilacji** polecenia **kompilacji** menu umieszcza go w miejscu określonym przez użytkownika. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. **Kompilacji** polecenia **debugowania** menu (F5) umieszcza kompilację w lokalizacji debugowania bez względu na to **ścieżkę wyjściową** określisz. Jednak **kompilacji** polecenia **kompilacji** menu umieszcza go w miejscu określonym przez użytkownika. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Opcja explicit**  
  Określa, czy zezwalać na niejawne deklaracji zmiennych. Wybierz **na** będą musieli jawnej deklaracji zmiennych. Powoduje to kompilator, aby włączyć raportowanie błędów, jeśli zmienne nie są deklarowane, zanim zostaną użyte. Wybierz **poza** umożliwia niejawne deklaracji zmiennych.  
   
- To ustawienie odpowiada [/optionexplicit —](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) — opcja kompilatora.  
+ To ustawienie odpowiada [/optionexplicit —](https://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) — opcja kompilatora.  
   
- Jeśli plik kodu źródłowego zawiera [Option Explicit — instrukcja](http://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc), `On` lub `Off` zastępuje wartości w instrukcji **Option Explicit** ustawienie **kompilacji Strona**.  
+ Jeśli plik kodu źródłowego zawiera [Option Explicit — instrukcja](https://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc), `On` lub `Off` zastępuje wartości w instrukcji **Option Explicit** ustawienie **kompilacji Strona**.  
   
  Podczas tworzenia nowego projektu **Option Explicit** ustawienie **strony kompilacji** jest ustawiona na wartość **Option Explicit** ustawienie w **opcje**  okno dialogowe. Aby wyświetlić lub zmienić ustawienia, w tym oknie na **narzędzia** menu, kliknij przycisk **opcje**. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, a następnie kliknij przycisk **ustawienia domyślne VB**. Ustawienie domyślne początkowej **Option Explicit** w **ustawienia domyślne VB** jest **na**.  
   
@@ -75,15 +75,15 @@ Użyj **skompilować** strony projektanta projektu, aby określić instrukcje ko
   
 - Niejawnego wpisywania, które spowodowało, że `Object` typu  
   
-  Niejawne błędy konwersji zawężającej wystąpić, gdy jest konwersja typu danych niejawne, który jest konwersją zawężającą. Aby uzyskać więcej informacji, zobacz [Option Strict — instrukcja](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Konwersje jawne i niejawne](http://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66), i [rozszerzanie i zwężanie konwersji](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd).  
+  Niejawne błędy konwersji zawężającej wystąpić, gdy jest konwersja typu danych niejawne, który jest konwersją zawężającą. Aby uzyskać więcej informacji, zobacz [Option Strict — instrukcja](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Konwersje jawne i niejawne](https://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66), i [rozszerzanie i zwężanie konwersji](https://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd).  
   
-  Obiekt jest rozpoznanie późnego wiązania, gdy jest ona przypisana do właściwości lub metody w zmiennej, która jest zadeklarowana jako typ `Object`. Aby uzyskać więcej informacji, zobacz [Option Strict — instrukcja](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) i [wczesnego a późne wiązanie](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
+  Obiekt jest rozpoznanie późnego wiązania, gdy jest ona przypisana do właściwości lub metody w zmiennej, która jest zadeklarowana jako typ `Object`. Aby uzyskać więcej informacji, zobacz [Option Strict — instrukcja](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) i [wczesnego a późne wiązanie](https://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
   
-  Niejawne obiektu typu błędy występują, gdy odpowiedni typ nie może być wywnioskowane dla zadeklarowanej zmiennej, więc typ `Object` została wywnioskowana. To przede wszystkim występuje, gdy używasz `Dim` instrukcję, aby zadeklarować zmienną bez użycia `As` klauzuli i `Option Infer` jest wyłączona. Aby uzyskać więcej informacji, zobacz [Option Strict — instrukcja](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Option Infer — instrukcja](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)i [specyfikacja języka Visual Basic](http://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).  
+  Niejawne obiektu typu błędy występują, gdy odpowiedni typ nie może być wywnioskowane dla zadeklarowanej zmiennej, więc typ `Object` została wywnioskowana. To przede wszystkim występuje, gdy używasz `Dim` instrukcję, aby zadeklarować zmienną bez użycia `As` klauzuli i `Option Infer` jest wyłączona. Aby uzyskać więcej informacji, zobacz [Option Strict — instrukcja](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Option Infer — instrukcja](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)i [specyfikacja języka Visual Basic](https://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).  
   
-  **Option Strict** ustawienie odpowiada [/optionstrict —](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) — opcja kompilatora.  
+  **Option Strict** ustawienie odpowiada [/optionstrict —](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) — opcja kompilatora.  
   
-  Jeśli plik kodu źródłowego zawiera [Option Strict — instrukcja](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), `On` lub `Off` zastępuje wartości w instrukcji **Option Strict** ustawienie **strony kompilacji** .  
+  Jeśli plik kodu źródłowego zawiera [Option Strict — instrukcja](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), `On` lub `Off` zastępuje wartości w instrukcji **Option Strict** ustawienie **strony kompilacji** .  
   
   Podczas tworzenia projektu, **Option Strict** ustawienie **strony kompilacji** jest ustawiona na wartość **Option Strict** ustawienie w **opcje** okno dialogowe. Aby wyświetlić lub zmienić ustawienia, w tym oknie na **narzędzia** menu, kliknij przycisk **opcje**. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, a następnie kliknij przycisk **ustawienia domyślne VB**. Ustawienie domyślne początkowej **Option Strict** w **ustawienia domyślne VB** jest **poza**.  
   
@@ -102,25 +102,25 @@ Użyj **skompilować** strony projektanta projektu, aby określić instrukcje ko
   **Opcja compare**  
   Określa typ porównania ciągów do użycia. Wybierz **binarne** aby poinstruować kompilator, aby używać innych porównań ciągów binarnych, wielkość liter. Wybierz **tekstu** używać porównania ciągów specyficzne dla ustawień regionalnych, bez uwzględniania wielkości liter tekstu.  
   
-  To ustawienie odpowiada [/optioncompare —](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) — opcja kompilatora.  
+  To ustawienie odpowiada [/optioncompare —](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) — opcja kompilatora.  
   
-  Jeśli plik kodu źródłowego zawiera [instrukcji porównanie opcji](http://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), `Binary` lub `Text` zastępuje wartości w instrukcji **Option Compare** ustawienie **kompilacji Strona**.  
+  Jeśli plik kodu źródłowego zawiera [instrukcji porównanie opcji](https://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), `Binary` lub `Text` zastępuje wartości w instrukcji **Option Compare** ustawienie **kompilacji Strona**.  
   
   Podczas tworzenia projektu, **Option Compare** ustawienie **strony kompilacji** jest ustawiona na wartość **Option Compare** ustawienie w **opcje** okno dialogowe. Aby wyświetlić lub zmienić ustawienia, w tym oknie na **narzędzia** menu, kliknij przycisk **opcje**. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, a następnie kliknij przycisk **ustawienia domyślne VB**. Ustawienie domyślne początkowej **Option Compare** w **ustawienia domyślne VB** jest **binarne**.  
   
   **Opcja infer**  
   Określa, czy zezwalać na wnioskowanie o typie lokalnym w deklaracjach zmiennych. Wybierz **na** do Zezwalaj na użycie wnioskowania o typie lokalnym. Wybierz **poza** na wnioskowanie o typie lokalnym bloku.  
   
-  To ustawienie odpowiada [/optioninfer —](http://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed) — opcja kompilatora.  
+  To ustawienie odpowiada [/optioninfer —](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed) — opcja kompilatora.  
   
-  Jeśli plik kodu źródłowego zawiera [Option Infer — instrukcja](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), `On` lub `Off` zastępuje wartości w instrukcji **Option Infer** ustawienie **strony kompilacji** .  
+  Jeśli plik kodu źródłowego zawiera [Option Infer — instrukcja](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), `On` lub `Off` zastępuje wartości w instrukcji **Option Infer** ustawienie **strony kompilacji** .  
   
   Podczas tworzenia projektu, **Option Infer** ustawienie **strony kompilacji** jest ustawiona na wartość **Option Infer** ustawienie w **opcje**okno dialogowe. Aby wyświetlić lub zmienić ustawienia, w tym oknie na **narzędzia** menu, kliknij przycisk **opcje**. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, a następnie kliknij przycisk **ustawienia domyślne VB**. Ustawienie domyślne początkowej **Option Infer** w **ustawienia domyślne VB** jest **na**.  
   
   **Docelowy adres CPU**  
   Określa procesor, która ma zostać użyty przez plik wyjściowy. Określ **x86** dla dowolnej 32-bitowy procesor zgodnego z Intel **x64** dla dowolnego 64-bitowy procesor zgodnego z Intel, **ARM** dla dowolnego procesora ARM lub **dowolny Procesor**  do określenia, czy akceptowalny jest każdy procesor. **Dowolny procesor CPU** jest wartością domyślną dla nowych projektów, ponieważ zezwala ona na aplikację do uruchamiania na największą liczbę typów sprzętu.  
   
-  Aby uzyskać więcej informacji, zobacz [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+  Aby uzyskać więcej informacji, zobacz [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
   **Preferuj 32-bitowe**  
   Jeśli **Preferuj 32 bitowe** pole wyboru jest zaznaczone, aplikacja działa jako aplikacja 32-bitowa w 32-bitowych i 64-bitowych wersjach systemu Windows. W przeciwnym razie aplikacja działa jako aplikacja 32-bitowego na 32-bitowe wersje systemu Windows i jako aplikacji 64-bitowych w 64-bitowych wersjach systemu Windows.  
@@ -143,7 +143,7 @@ Użyj **skompilować** strony projektanta projektu, aby określić instrukcje ko
   **Wyłącz wszystkie ostrzeżenia**  
   Określa, czy należy umożliwić kompilatorowi wysyłanie powiadomień, jak to określono w **warunek i powiadomień** tabeli opisane we wcześniejszej części tego dokumentu. Domyślnie to pole wyboru jest wyczyszczone. Zaznacz to pole wyboru, aby poinstruować kompilator, aby nie wystawiać ostrzeżenia lub błędy.  
   
-  To ustawienie odpowiada [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) — opcja kompilatora.  
+  To ustawienie odpowiada [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) — opcja kompilatora.  
   
   **Traktuje wszystkie ostrzeżenia jako błędy**  
   Określa, jak ma traktować ostrzeżenia. Domyślnie to pole wyboru jest wyczyszczone, tak aby wszystkie powiadomienia ostrzeżenie pozostały ustawienie **ostrzeżenie**. Zaznacz to pole wyboru, aby zmienić wszystkie powiadomienia ostrzeżenie **błąd**.  
@@ -153,7 +153,7 @@ Użyj **skompilować** strony projektanta projektu, aby określić instrukcje ko
   **Generowanie pliku dokumentacji XML**  
   Określa, czy do generowania informacji o dokumentacji. Domyślnie to pole wyboru jest zaznaczone, poinstruowanie kompilatora, aby wygenerować informacje o dokumentacji i uwzględnić go w pliku XML. Wyczyść to pole wyboru, aby poinstruować kompilator, aby pominąć tworzenie dokumentacji.  
   
-  To ustawienie odpowiada [/doc](http://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65) — opcja kompilatora.  
+  To ustawienie odpowiada [/doc](https://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65) — opcja kompilatora.  
   
   **Zarejestruj dla współdziałania z modelem COM**  
   Określa, czy Twoją zarządzaną aplikacją udostępni obiektu COM (otokę wywoływaną z modelu COM), który umożliwia obiektu COM na interakcję z aplikacją.  
@@ -169,8 +169,8 @@ Użyj **skompilować** strony projektanta projektu, aby określić instrukcje ko
   Kliknij ten przycisk, aby uzyskać dostęp do **ustawienia AdvancedCompiler** okno dialogowe. Użyj **ustawienia AdvancedCompiler** okno dialogowe, aby określić projektu najbardziej zaawansowane właściwości konfiguracji kompilacji. To okno dialogowe dotyczy tylko dla projektów języka Visual Basic. Aby uzyskać więcej informacji, zobacz [Zaawansowane z okno dialogowe Ustawienia kompilatora (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
- [Zarządzanie właściwościami kompilacja](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [Zarządzanie właściwościami kompilacja](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Kompilator wiersza polecenia programu Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
+ [Kompilator wiersza polecenia programu Visual Basic](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md)

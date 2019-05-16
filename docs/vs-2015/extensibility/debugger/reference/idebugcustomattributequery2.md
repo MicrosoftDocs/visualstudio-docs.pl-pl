@@ -13,12 +13,12 @@ ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a52c47eeb55dc7120beb45e480e593696be410a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4bc592ff0198d4cc93d500c39167e214e63f032
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571862"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702587"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
  Dostawca symboli implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) w celu obsługi niestandardowych atrybutów.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Użyj [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) uzyskać ten interfejs z [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu.  
+ Użyj [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) uzyskać ten interfejs z [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu.  
   
 ## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody **IDebugCustomAttributeQuery** interfejsu.  

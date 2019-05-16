@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d49b870b83eeb4bce48c562f3944aacef871cd2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0dee5cff8700e5748832792c1056b51a878e3f3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431068"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696895"
 ---
 # <a name="application-timeline"></a>Oś czasu aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ Użyj **oś czasu aplikacji** profiler, aby znaleźć i naprawić interakcji apl
 5. Windows 7  
   
 > [!NOTE]
-> Można zbierać i analizować dane użycia procesora CPU i dane zużycia energii, wraz z **ApplicationTimeline** danych. Zobacz [uruchamianie narzędzi profilowania bez debugowania](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Można zbierać i analizować dane użycia procesora CPU i dane zużycia energii, wraz z **ApplicationTimeline** danych. Zobacz [uruchamianie narzędzi profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Zbieranie danych oś czasu aplikacji  
- Czas reakcji aplikacji można profilować na komputerze lokalnym, podłączone urządzenie, symulatorze programu Visual Studio lub emulatorach lub urządzenie zdalne. Zobacz [uruchamianie narzędzi profilowania bez debugowania](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ Czas reakcji aplikacji można profilować na komputerze lokalnym, podłączone urządzenie, symulatorze programu Visual Studio lub emulatorach lub urządzenie zdalne. Zobacz [uruchamianie narzędzi profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
 > Jeśli to możliwe Uruchom aplikację bezpośrednio na urządzeniu. Wydajność aplikacji obserwowana na symulatorze lub za pośrednictwem połączenia pulpitu zdalnego może nie być taka sama jak rzeczywista wydajność na urządzeniu. Z drugiej strony zbieranie danych przy użyciu narzędzia zdalne programu Visual Studio nie wpływa na dane wydajności.  
@@ -121,5 +121,5 @@ Użyj **oś czasu aplikacji** profiler, aby znaleźć i naprawić interakcji apl
   
 ## <a name="see-also"></a>Zobacz też  
  [Blog zespołu programu WPF: Nowe narzędzie do analizy wydajności interfejsu użytkownika dla aplikacji WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
- [Wydajność — najlepsze rozwiązania dla aplikacji Windows Store przy użyciu języka C++, C# i Visual Basic](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Optymalizacja wydajności aplikacji WPF](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [Wydajność — najlepsze rozwiązania dla aplikacji Windows Store przy użyciu języka C++, C# i Visual Basic](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
+ [Optymalizacja wydajności aplikacji WPF](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

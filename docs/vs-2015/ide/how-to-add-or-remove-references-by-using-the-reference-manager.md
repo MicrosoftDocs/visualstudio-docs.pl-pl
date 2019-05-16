@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701153"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
   
 - Składnik, który używa [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] jest niezgodny z projektem, który jest przeznaczony dla [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
-     Podczas tworzenia nowej aplikacji docelowej niektóre projekty kierują [!INCLUDE[net_v45](../includes/net-v45-md.md)] domyślnie. Aby uzyskać więcej informacji, zobacz [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
+     Podczas tworzenia nowej aplikacji docelowej niektóre projekty kierują [!INCLUDE[net_v45](../includes/net-v45-md.md)] domyślnie. Aby uzyskać więcej informacji, zobacz [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 - Dodawanie odwołań do pliku do danych wyjściowych innego projektu w tym samym rozwiązaniu, należy unikać, ponieważ w ten sposób może spowodować błędy kompilacji. Zamiast tego należy użyć **projektów** karcie **Dodaj odwołanie** okno dialogowe, aby utworzyć odwołania projekt projekt. Ułatwia to Projektowanie zespołowe poprzez umożliwienie lepszego zarządzania bibliotekami klas, utworzone w projekcie. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami uszkodzone](../ide/troubleshooting-broken-references.md).  
   
@@ -173,7 +173,7 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
 </PropertyGroup>  
 ```  
   
- Upewnij się, że wybrano **Windows** pole wyboru w tej podgrupie. Wówczas można używać elementów środowiska wykonawczego Windows. Jednak warto również dodać System.Runtime, w którym środowisko wykonawcze Windows definiuje kilka standardowych klas i interfejsów, takich jak IEnumerable, które są używane we wszystkich bibliotekach uruchomieniowych Windows. Aby uzyskać informacje o dodawaniu System.Runtime, zobacz [zarządzane aplikacje pulpitu i środowisko uruchomieniowe Windows](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
+ Upewnij się, że wybrano **Windows** pole wyboru w tej podgrupie. Wówczas można używać elementów środowiska wykonawczego Windows. Jednak warto również dodać System.Runtime, w którym środowisko wykonawcze Windows definiuje kilka standardowych klas i interfejsów, takich jak IEnumerable, które są używane we wszystkich bibliotekach uruchomieniowych Windows. Aby uzyskać informacje o dodawaniu System.Runtime, zobacz [zarządzane aplikacje pulpitu i środowisko uruchomieniowe Windows](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
   
 ### <a name="extensions-subgroup"></a>Podgrupa Rozszerzenia  
  Rozszerzenia wyświetla pakiety SDK użytkownika, które rozszerzają docelową platformę Windows. Ta karta jest wyświetlana dla [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] wyłącznie dla projektów aplikacji. Projekty pulpitu nie będzie wyświetlały tej karty, ponieważ mogą one wykorzystywać tylko pliki .winmd pierwszego producenta.  
@@ -216,5 +216,5 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
  Pasek wyszukiwania w **Menadżer odwołań** okno dialogowe działa przez kartę która jest w trybie koncentracji uwagi. Na przykład, jeśli użytkownik wpisze "System" na pasku wyszukiwania, gdy **rozwiązania** karta jest w trybie koncentracji uwagi, wyszukiwanie nie zwraca żadnych wyników, chyba że rozwiązanie składa się z nazwy projektu, który zawiera "System".  
   
 ## <a name="see-also"></a>Zobacz też  
- [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodawanie odwołania](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodawanie odwołania](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)

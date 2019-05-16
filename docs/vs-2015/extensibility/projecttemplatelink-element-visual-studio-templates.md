@@ -13,12 +13,12 @@ ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c20e0402f49b9c1d069b89bc972d8d3179f2ceb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6ee9f5d4a162f994cfea4fb3fe620599c1627b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797245"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681314"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Określa ścieżkę do pliku .vstemplate jednego projektu w szablonie wieloproje
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`ProjectName`|Atrybut opcjonalny.<br /><br /> Określa nazwę każdego indywidualnego projektu w szablonie wieloprojektowym. **Nowy projekt** okno dialogowe nie można przypisywać nazw poszczególnym projektom.|  
-|`CopyParameters`|Umożliwia kopiowanie wszystkich zmiennych z głównego szablonu grupowego do poszczególnych połączonych szablonów.<br /><br /> Parametry w połączonych szablonach mają prefiks `"$ext_*$"`. Na przykład, jeśli w nadrzędnym szablonie grupowym parametr `$projectname$` ma wartość **ExampleProject1**, gdy połączony szablon pobiera swoją kolej, aby można było wykonywane, parametr `$ext_projectname$`, który jest kopią `$projectname$`parametr z nadrzędnym szablonie grupowym.<br /><br /> Dzięki temu połączone szablony mogą korzystać z niektórych wspólnych parametrów tworzonych wygodnie tylko w nadrzędnym szablonie grupowym.<br /><br /> Ten atrybut jest opcjonalny, a następnie automatycznie wartość domyślna to `false` gdy nie jest dołączony.<br /><br /> Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do wersji produktu jest poprawny, zobacz [odwołuje się do zestawów zapewniane przez program Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`CopyParameters`|Umożliwia kopiowanie wszystkich zmiennych z głównego szablonu grupowego do poszczególnych połączonych szablonów.<br /><br /> Parametry w połączonych szablonach mają prefiks `"$ext_*$"`. Na przykład, jeśli w nadrzędnym szablonie grupowym parametr `$projectname$` ma wartość **ExampleProject1**, gdy połączony szablon pobiera swoją kolej, aby można było wykonywane, parametr `$ext_projectname$`, który jest kopią `$projectname$`parametr z nadrzędnym szablonie grupowym.<br /><br /> Dzięki temu połączone szablony mogą korzystać z niektórych wspólnych parametrów tworzonych wygodnie tylko w nadrzędnym szablonie grupowym.<br /><br /> Ten atrybut jest opcjonalny, a następnie automatycznie wartość domyślna to `false` gdy nie jest dołączony.<br /><br /> Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do wersji produktu jest poprawny, zobacz [odwołuje się do zestawów zapewniane przez program Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -100,4 +100,4 @@ Określa ścieżkę do pliku .vstemplate jednego projektu w szablonie wieloproje
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Instrukcje: Create Multi-Project Templates](../ide/how-to-create-multi-project-templates.md)
+ [Instrukcje: Tworzenie szablonów obejmujących wiele projektów](../ide/how-to-create-multi-project-templates.md)

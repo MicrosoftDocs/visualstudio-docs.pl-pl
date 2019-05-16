@@ -12,12 +12,12 @@ ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca5027acbc985ee9afcd8ecd4cf67d2adca40d66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a81668d5c45dd4b3363821972914e3f9dc10266a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757082"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692215"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugProviderProgramNode2 : IUnknown
  Aparat debugowania (DE) implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) do obsługi organizowania interfejsów granice procesu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołaj [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugProgramNode2` interfejsu w celu uzyskania tego interfejsu. Jeśli nie można uzyskać ten interfejs, DE nie obsługuje organizowanie interfejsów.  
+ Wywołaj [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugProgramNode2` interfejsu w celu uzyskania tego interfejsu. Jeśli nie można uzyskać ten interfejs, DE nie obsługuje organizowanie interfejsów.  
   
 ## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  Ten interfejs implementuje następującą metodę:  

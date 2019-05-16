@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821419"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676700"
 ---
 # <a name="use-roslyn-analyzers"></a>Używanie analizatorów Roslyn
 
@@ -56,7 +56,7 @@ Aby edytować aktywny zestaw reguł w z edytora zestawu reguł, kliknij prawym p
 Aby zmienić aktywny zestaw reguł dla projektu, przejdź do **analizy kodu** karcie we właściwościach projektu. Wybierz regułę, ustaw na liście w obszarze **Uruchom ten zestaw reguł**. Aby otworzyć zestaw reguł, wybierz **Otwórz**.
 
 > [!NOTE]
-> Dla zestawów reguł projektach .NET core i .NET Standard nie obsługują polecenia menu **Eksploratora rozwiązań**, na przykład **otwórz aktywny zestaw reguł**. Aby określić inny niż domyślny zestaw reguł dla projektu .NET Core lub .NET Standard, ręcznie [Dodaj **CodeAnalysisRuleSet** właściwość do pliku projektu](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Można skonfigurować reguły w ramach zestawu reguł w programie Visual Studio czy interfejs użytkownika edytora zestawu reguł.
+> Dla zestawów reguł projektach .NET core i .NET Standard nie obsługują polecenia menu **Eksploratora rozwiązań**, na przykład **otwórz aktywny zestaw reguł**. Aby określić inny niż domyślny zestaw reguł dla projektu .NET Core lub .NET Standard, ręcznie [Dodaj **CodeAnalysisRuleSet** właściwość](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) do pliku projektu. Nadal można skonfigurować reguły w ramach zestawu reguł w programie Visual Studio czy interfejs użytkownika edytora zestawu reguł.
 
 ## <a name="rule-severity"></a>Ważność reguły
 

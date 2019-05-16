@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412311"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675170"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 </asp:ScriptManager>
 ```
 
- Technologia IntelliSense obsługuje również pliki skryptów, które są osadzane jako zasoby w zestawie w aplikacjach internetowych ASP.NET AJAX. Aby uzyskać więcej informacji na temat zasobów osadzonych skryptów, zobacz [instruktażu: Embedding a JavaScript File jako zasób w zestawie](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ Technologia IntelliSense obsługuje również pliki skryptów, które są osadzane jako zasoby w zestawie w aplikacjach internetowych ASP.NET AJAX. Aby uzyskać więcej informacji na temat zasobów osadzonych skryptów, zobacz [instruktażu: Embedding a JavaScript File jako zasób w zestawie](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 #### <a name="ReferenceDirectives"></a> Dyrektywy odwoławcze
  A `reference` włącza dyrektywą [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] do ustanawiania relacji między skryptu aktualnie edytowanym i innymi skryptami. `reference` Dyrektywy pozwala umieścić plik skryptu w kontekście skryptów bieżącego pliku skryptu. Dzięki temu IntelliSense może się odnosić do zewnętrznie zdefiniowanych funkcji, typów i pól w trakcie kodowania.
@@ -284,5 +284,5 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 - [Uzupełnianie instrukcji dla identyfikatorów](../ide/statement-completion-for-identifiers.md)
 - [Komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md)
 - [Model obiektowy DHTML — informacje](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [Lista członków](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Lista członków](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [Atrybut SRC &#124; src właściwości](http://go.microsoft.com/fwlink/?LinkId=92345)

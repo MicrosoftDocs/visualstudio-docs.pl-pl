@@ -37,12 +37,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03f525d3b996875097ddee433d0e9ad887ee728f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840784"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679467"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kod
   
 |**Diagram**|**Pokazuje**|  
 |-----------------|---------------|  
-|[Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)|Przepływ pracy między działaniami i uczestników procesu biznesowego|  
-|[Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)|Składniki systemu, ich interfejsy, portów i relacji|  
-|[Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)|Typy, które są używane do przechowywania i wymiany danych w systemie oraz ich wzajemne relacje|  
-|[Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)|Sekwencje interakcje między obiektów, składniki, systemów i aktorów|  
-|[Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)|Cele użytkowników i zadań, które obsługuje system|  
+|[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|Przepływ pracy między działaniami i uczestników procesu biznesowego|  
+|[Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)|Składniki systemu, ich interfejsy, portów i relacji|  
+|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|Typy, które są używane do przechowywania i wymiany danych w systemie oraz ich wzajemne relacje|  
+|[Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)|Sekwencje interakcje między obiektów, składniki, systemów i aktorów|  
+|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|Cele użytkowników i zadań, które obsługuje system|  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługi każdego typu diagramu, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -67,7 +67,7 @@ Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kod
   
 |**Diagram**|**Pokazuje**|  
 |-----------------|---------------|  
-|[Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|  
+|[Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|  
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i inne relacje w istniejącym kodzie|  
 |Diagramy klas wygenerowany kod<br /><br /> [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)|Typy i ich relacje w kodzie .NET|  
   
@@ -91,7 +91,7 @@ Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kod
 |[Wymagania modelu użytkownika](../modeling/model-user-requirements.md)|Używanie modeli uściślenia i komunikują się potrzeby użytkowników.|  
 |[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|Używanie modeli do opisania ogólną strukturę i zachowanie systemu i upewnij się, że spełnia potrzeby użytkowników.|  
 |[Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)|Upewnij się, że oprogramowanie pozostaje zgodny z potrzebami użytkowników i ogólną architekturę systemu.|  
-|[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używaj modeli w Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Używanie modeli, aby pomóc Ci zrozumieć i zmienić systemu podczas jego tworzenia.|  
+|[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używaj modeli w Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Używanie modeli, aby pomóc Ci zrozumieć i zmienić systemu podczas jego tworzenia.|  
 |[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Organizowania modeli w dużych i średnich projektu.|  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  

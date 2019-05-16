@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442889"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695309"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -445,19 +445,19 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="VerifyCodeUsingCUITWhatsNext"></a> Jaka jest przyszłość?
  **Dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika:** Można uruchomić kodowane testy interfejsu użytkownika bezpośrednio z programu Visual Studio, zgodnie z opisem we wcześniejszej części tego tematu. Ponadto można uruchomić zautomatyzowane testy interfejsu użytkownika z [!INCLUDE[TCMext](../includes/tcmext-md.md)], lub z [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Kodowane testy interfejsu użytkownika są automatyzowane, mają wchodzić w interakcje z pulpitem po uruchomieniu, w przeciwieństwie do innych testów automatycznych.
 
-- [Instrukcje: Uruchamianie testów z programu Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Instrukcje: Uruchamianie testów z programu Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
-- [Uruchamianie automatycznych testów w programie Microsoft Test Manager](http://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
+- [Uruchamianie automatycznych testów w programie Microsoft Test Manager](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Instrukcje: Konfigurowanie i przeprowadzanie zaplanowanych testów po skompilowaniu aplikacji](http://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Instrukcje: Konfigurowanie i przeprowadzanie zaplanowanych testów po skompilowaniu aplikacji](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
-- [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
+- [Uruchom testy w procesie kompilacji](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
-- [Uruchamianie testów automatycznych z wiersza polecenia](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
+- [Uruchamianie testów automatycznych z wiersza polecenia](https://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
 
 - [Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
 
-- [&#91;wycofane&#93; za pomocą kodowanych testów interfejsu użytkownika w testach obciążenia](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
+- [&#91;wycofane&#93; za pomocą kodowanych testów interfejsu użytkownika w testach obciążenia](https://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
   **Dodawanie obsługi kontrolek niestandardowych:**  Kodowanych testów interfejsu użytkownika nie obsługuje każdego możliwego interfejsu użytkownika i może nie obsługiwać interfejsu użytkownika, którą chcesz przetestować. Na przykład nie można od razu utworzyć kodowany test interfejsu użytkownika interfejsu użytkownika dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Można jednak utworzyć rozszerzenie kodowanych testów interfejsu użytkownika, który będzie obsługiwać formant niestandardowy.
 
@@ -465,7 +465,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;wycofane&#93; tworzenie ręcznych przypadków testowych za pomocą programu Microsoft Test Manager](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat automatycznych testów systemowych, zobacz [tworzenie zautomatyzowanych testów przy użyciu programu Microsoft Test Manager](http://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;wycofane&#93; tworzenie ręcznych przypadków testowych za pomocą programu Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat automatycznych testów systemowych, zobacz [tworzenie zautomatyzowanych testów przy użyciu programu Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
@@ -486,7 +486,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Podnoszenie jakości kodu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
+- [Podnoszenie jakości kodu](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [Przewodnik: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)
 - [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
@@ -494,4 +494,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 - [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Uaktualnianie kodowanych testów interfejsu użytkownika programu Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-- [Generowanie kodowanego testu interfejsu użytkownika na podstawie dotychczasowego rejestrowania akcji](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
+- [Generowanie kodowanego testu interfejsu użytkownika na podstawie dotychczasowego rejestrowania akcji](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)

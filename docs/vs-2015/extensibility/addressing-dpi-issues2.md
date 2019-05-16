@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443964"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699271"
 ---
 # <a name="addressing-dpi-issues"></a>Rozwiązywanie problemów z technologią DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Włączanie obsługi HDPI do obiektu  
  Domyślnie przez formanty obiektu (na przykład formantu WebBrowser w WPF lub interfejs IWebBrowser2) nie włączaj HDPI wykrywania i obsługi technicznej. Wynik będzie osadzonego formantu z zawartością wyświetlania, która jest zbyt mała w wysokiej rozdzielczości. Poniżej opisano sposób włączania obsługi wysokiej rozdzielczości DPI w wystąpieniu obiektu określonego w sieci web.  
   
- Implementuj interfejs IDocHostUIHandler (zobacz artykuł w witrynie MSDN w [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) interfejsu):  
+ Implementuj interfejs IDocHostUIHandler (zobacz artykuł w witrynie MSDN w [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) interfejsu):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Opcjonalnie można zaimplementować interfejsu ICustomDoc (zobacz artykuł w witrynie MSDN w [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) interfejsu):  
+ Opcjonalnie można zaimplementować interfejsu ICustomDoc (zobacz artykuł w witrynie MSDN w [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) interfejsu):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

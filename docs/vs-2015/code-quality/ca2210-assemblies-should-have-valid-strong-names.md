@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8b286a67b21d022b12f77ffff68a71da88256757
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f94183c6051ed0c2603bbfe35484fabb83a2160f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697984"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Zestawy powinny mieć prawidłowe silne nazwy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "60095779"
 
 - Aby uzyskać [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 1.0 lub 1.1, użyj jednej <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> lub <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atrybutu.
 
-- Aby uzyskać [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], użyj jednej `/keyfile` lub `/keycontainer` — opcja kompilatora [/KeyFile (Określ klucz lub parę klucz Aby podpisać zestaw)](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) lub  [ /KeyContainer (Określ kontener klucza, aby podpisać zestaw)](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) — opcja konsolidatora w języku C++).
+- Aby uzyskać [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], użyj jednej `/keyfile` lub `/keycontainer` — opcja kompilatora [/KeyFile (Określ klucz lub parę klucz Aby podpisać zestaw)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) lub  [ /KeyContainer (Określ kontener klucza, aby podpisać zestaw)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) — opcja konsolidatora w języku C++).
 
   **Aby podpisać zestaw silną nazwą w programie Visual Studio**
 
@@ -89,11 +89,11 @@ ms.locfileid: "60095779"
 
    **Aby podpisać zestaw silną nazwą poza programem Visual Studio**
 
-- Użyj narzędzie silnych nazw (Sn.exe), które są dostarczane przez [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zestawu SDK. Aby uzyskać więcej informacji, zobacz [Sn.exe (narzędzie silnych nazw)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Użyj narzędzie silnych nazw (Sn.exe), które są dostarczane przez [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zestawu SDK. Aby uzyskać więcej informacji, zobacz [Sn.exe (narzędzie silnych nazw)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Tylko Pomijaj ostrzeżeń dla tej reguły, jeśli zestaw jest używany w środowisku, w których naruszeniu zawartość nie jest wymagana.
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName><xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Instrukcje: Podpisywanie zestawu silną nazwą](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (narzędzie silnych nazw)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [Instrukcje: Podpisywanie zestawu silną nazwą](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (narzędzie silnych nazw)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

@@ -18,21 +18,21 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 267a04e0d717bde311423aae7f35fba07ca6f39b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437707"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684035"
 ---
 # <a name="using-the-tasks-window"></a>Korzystanie z okna zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Zadania** przypomina okna **wątków** okna, z wyjątkiem, że przedstawia informacje na temat <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), lub [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) obiekty zamiast każdego wątku. Takie jak wątki zadania reprezentują operacje asynchroniczne, które można uruchomić jednocześnie; Jednak wiele zadań może działać na tym samym wątku. Zobacz [asynchronicznego programowania w języku JavaScript (aplikacje Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Aby uzyskać więcej informacji.  
+**Zadania** przypomina okna **wątków** okna, z wyjątkiem, że przedstawia informacje na temat <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), lub [WinJS.Promise ](https://msdn.microsoft.com/library/windows/apps/br211867.aspx) obiekty zamiast każdego wątku. Takie jak wątki zadania reprezentują operacje asynchroniczne, które można uruchomić jednocześnie; Jednak wiele zadań może działać na tym samym wątku. Zobacz [asynchronicznego programowania w języku JavaScript (aplikacje Windows Store)](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Aby uzyskać więcej informacji.  
   
- W kodzie zarządzanym można używać **zadania** okna podczas pracy z <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów lub za pomocą **await** i **async** słowa kluczowe (**Await** i **Async** w języka Visual Basic). Aby uzyskać więcej informacji o zadaniach w kodzie zarządzanym, zobacz [programowania równoległego](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
+ W kodzie zarządzanym można używać **zadania** okna podczas pracy z <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów lub za pomocą **await** i **async** słowa kluczowe (**Await** i **Async** w języka Visual Basic). Aby uzyskać więcej informacji o zadaniach w kodzie zarządzanym, zobacz [programowania równoległego](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
   
- W kodzie natywnym można użyć **zadania** okna podczas pracy z [grupy zadań](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [równoległe algorytmy](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentów asynchronicznych](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), i [zadań lekkich](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Aby uzyskać więcej informacji o zadaniach w kodzie natywnym, zobacz [współbieżność środowiska wykonawczego](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+ W kodzie natywnym można użyć **zadania** okna podczas pracy z [grupy zadań](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [równoległe algorytmy](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentów asynchronicznych](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), i [zadań lekkich](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Aby uzyskać więcej informacji o zadaniach w kodzie natywnym, zobacz [współbieżność środowiska wykonawczego](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
  W języku JavaScript można użyć okna zadań podczas pracy z kodem .then promise.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "63437707"
 |**flagi**|Umożliwia Flagowanie zadania lub i przedstawia zadania, które są oznaczone.|  
 |**Ikony**|Żółta strzałka wskazuje bieżącego zadania. Bieżące zadanie jest zadaniem najważniejsze dla bieżącego wątku.<br /><br /> Biały strzałek wskazuje zadania istotne, czyli ten, który były aktualne, gdy debuger został wywołany.<br /><br /> Ikona Wstrzymaj wskazuje zadanie, które są zablokowane przez użytkownika. Można Zablokuj i Odblokuj zadania, klikając prawym przyciskiem myszy na liście.|  
 |**Identyfikator**|Liczba dostarczane przez system dla zadania. W kodzie natywnym jest to adres zadania.|  
-|**Status**|Bieżący stan (zaplanowane, aktywne, prawdopodobnie zakleszczone, oczekuje lub ukończone) zadania. Zaplanowane zadanie to taki, który nie został jeszcze uruchomiony i dlatego nie ma jeszcze stos wywołań, przypisany wątek lub powiązane informacje.<br /><br /> Aktywne zadanie to taki, który był wykonywany kod przed przerwanie w debugerze.<br /><br /> Zadanie oczekujące to taki, który jest zablokowane, ponieważ trwa oczekiwanie na zdarzenie ma być zasygnalizowany, blokady mogą być wprowadzane lub inne zadanie, aby zakończyć.<br /><br /> Prawdopodobnie zakleszczone zadanie jest zadanie oczekujące, w których wątek jest zakleszczone przez inny wątek.<br /><br /> Umieść kursor nad **stan** komórki dla zadanie prawdopodobnie zakleszczone lub oczekuje, aby zobaczyć więcej informacji na temat tego bloku. **Ostrzeżenie:**  **Zadania** okna raporty zakleszczenia tylko w przypadku zablokowanych zadanie, które używa podstawowego synchronizacji, który jest obsługiwany przez przejście przez łańcuch oczekiwania (WCT). Na przykład prawdopodobnie zakleszczone <xref:System.Threading.Tasks.Task> obiektu, który używa WCT, debuger raporty **oczekujące, zakleszczone**. Prawdopodobnie zakleszczone zadania, który jest zarządzany przez środowisko uruchomieniowe współbieżności, która nie korzysta z WCT, raportów jest debugera **oczekiwania**. Aby uzyskać więcej informacji na temat WCT zobacz [oczekiwania przechodzenie łańcucha](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
+|**Status**|Bieżący stan (zaplanowane, aktywne, prawdopodobnie zakleszczone, oczekuje lub ukończone) zadania. Zaplanowane zadanie to taki, który nie został jeszcze uruchomiony i dlatego nie ma jeszcze stos wywołań, przypisany wątek lub powiązane informacje.<br /><br /> Aktywne zadanie to taki, który był wykonywany kod przed przerwanie w debugerze.<br /><br /> Zadanie oczekujące to taki, który jest zablokowane, ponieważ trwa oczekiwanie na zdarzenie ma być zasygnalizowany, blokady mogą być wprowadzane lub inne zadanie, aby zakończyć.<br /><br /> Prawdopodobnie zakleszczone zadanie jest zadanie oczekujące, w których wątek jest zakleszczone przez inny wątek.<br /><br /> Umieść kursor nad **stan** komórki dla zadanie prawdopodobnie zakleszczone lub oczekuje, aby zobaczyć więcej informacji na temat tego bloku. **Ostrzeżenie:**  **Zadania** okna raporty zakleszczenia tylko w przypadku zablokowanych zadanie, które używa podstawowego synchronizacji, który jest obsługiwany przez przejście przez łańcuch oczekiwania (WCT). Na przykład prawdopodobnie zakleszczone <xref:System.Threading.Tasks.Task> obiektu, który używa WCT, debuger raporty **oczekujące, zakleszczone**. Prawdopodobnie zakleszczone zadania, który jest zarządzany przez środowisko uruchomieniowe współbieżności, która nie korzysta z WCT, raportów jest debugera **oczekiwania**. Aby uzyskać więcej informacji na temat WCT zobacz [oczekiwania przechodzenie łańcucha](https://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Godzina rozpoczęcia**|Czas, w którym zadanie stały się aktywne.|  
 |**Czas trwania**|Liczba sekund, które zadania była aktywna.|  
 |**Czas ukończenia**|Czas, w którym zadanie jest ukończone.|  
@@ -61,7 +61,7 @@ ms.locfileid: "63437707"
 |**Wątek przypisania**|Identyfikator i nazwa wątku, na którym działa zadanie.|  
 |**Status powrotu**|Stan zadania po jego zakończeniu. Wartości zwracane stan **Powodzenie**, **odwołania**, i **błąd**.|  
 |**AppDomain**|Dla kodu zarządzanego, domeny aplikacji, w którym zadanie jest wykonywane.|  
-|**task_group**|Dla kodu natywnego adresu [task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) obiekt, który zaplanowane zadanie. Dla agentów asynchronicznych i zadań lekkich ta kolumna jest równa 0.|  
+|**task_group**|Dla kodu natywnego adresu [task_group](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) obiekt, który zaplanowane zadanie. Dla agentów asynchronicznych i zadań lekkich ta kolumna jest równa 0.|  
 |Proces|Identyfikator procesu, który zadanie jest uruchomione.|  
 |Stan Async|Dla kodu zarządzanego, stan zadania. Domyślnie ta kolumna jest ukryta. Aby wyświetlić tę kolumnę, otwórz menu kontekstowe dla jednego z nagłówków kolumn. Wybierz **kolumn**, **AsyncState**.|  
   
@@ -95,7 +95,7 @@ ms.locfileid: "63437707"
 ## <a name="see-also"></a>Zobacz też  
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
- [Programowanie równoległe](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Współbieżność środowiska wykonawczego](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Programowanie równoległe](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Współbieżność środowiska wykonawczego](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)   
  [Przewodnik: Debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c5b0336e1f503d3f540fb8129beab57891564ce0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 16b4c2fb13a8de1824233b491d752b796aea907d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770590"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676547"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identyfikatory powinny mieć poprawny sufiks
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,12 +47,12 @@ ms.locfileid: "54770590"
 |<xref:System.Attribute?displayProperty=fullName>|Atrybut|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Wyjątek|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Kolekcja|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Słownik|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Kolekcja|
 |<xref:System.Collections.Queue?displayProperty=fullName>|Kolekcja lub kolejki|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Kolekcja lub stos|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Kolekcja|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Słownik|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Kolekcji lub elementu DataTable|
@@ -93,4 +93,4 @@ foreach(SomeType x in SomeDictionary.Values) { }
  [CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Zobacz też
- [Atrybuty](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Zdarzenia i delegatów](http://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [Atrybuty](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Zdarzenia i delegatów](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

@@ -19,16 +19,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669344"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696410"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Używanie wyrażeń regularnych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio używa regularnego wyrażenia .NET Framework do znajdowania i zamieniania tekstu. Aby uzyskać więcej informacji o wyrażeniach regularnych programu .NET, zobacz [wyrażeń regularnych programu .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
+Visual Studio używa regularnego wyrażenia .NET Framework do znajdowania i zamieniania tekstu. Aby uzyskać więcej informacji o wyrażeniach regularnych programu .NET, zobacz [wyrażeń regularnych programu .NET Framework](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 Przed Visual Studio 2012 Visual Studio używał niestandardowych składni wyrażeń regularnych w oknach Znajdź i Zamień. Zobacz [Visual Studio regularne wyrażenia konwersje](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) objaśnienia dotyczące jak konwertować niektóre częściej używane niestandardowe znaki regularnych wyrażeń do wersji platformy .NET.
 
@@ -36,7 +36,7 @@ Przed Visual Studio 2012 Visual Studio używał niestandardowych składni wyraż
 > W systemach operacyjnych Windows większość linii kończyć się "\r\n" (znak powrotu karetki następuje nowy wiersz). Następujące znaki nie są widoczne, ale są obecne w edytorze i są przekazywane do usługi .NET Regular Expression.
 
 > [!TIP]
-> Aby uzyskać informacje o wyrażeniach regularnych, które są używane we wzorcach zamieniania, zobacz [podstawienia](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Aby użyć grupy numerowanych przechwytywania, składnia jest `$1` Aby określić numerowaną grupę i `(x)` do określenia danej grupie. Na przykład zgrupowanych wyrażenia regularnego `(\d)([a-z])` znajduje cztery dopasowań w następujący ciąg: **1a 2b 3c 4d**. Ciąg zastępujący `z$1` konwertuje ciąg na **z1 z2 z3 z4**.
+> Aby uzyskać informacje o wyrażeniach regularnych, które są używane we wzorcach zamieniania, zobacz [podstawienia](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Aby użyć grupy numerowanych przechwytywania, składnia jest `$1` Aby określić numerowaną grupę i `(x)` do określenia danej grupie. Na przykład zgrupowanych wyrażenia regularnego `(\d)([a-z])` znajduje cztery dopasowań w następujący ciąg: **1a 2b 3c 4d**. Ciąg zastępujący `z$1` konwertuje ciąg na **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Przykłady wyrażeń regularnych
 

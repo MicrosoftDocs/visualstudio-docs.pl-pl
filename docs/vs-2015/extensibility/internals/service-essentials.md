@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111601"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696078"
 ---
 # <a name="service-essentials"></a>Podstawowe informacje o usłudze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage 
   
 - Aby zapewnić obsługę ładowania na żądanie, dostawca usług rejestruje jej usług globalnych z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [rejestrowania usług](../../misc/registering-services.md).  
   
-- Po uzyskaniu usługi, użyj [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (niezarządzany kod) lub rzutowania (kod zarządzany) można pobrać żądanego interfejsu, na przykład:  
+- Po uzyskaniu usługi, użyj [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (niezarządzany kod) lub rzutowania (kod zarządzany) można pobrać żądanego interfejsu, na przykład:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -62,5 +62,5 @@ Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage 
 ## <a name="see-also"></a>Zobacz też  
  [Lista dostępnych usług](../../extensibility/internals/list-of-available-services.md)   
  [Korzystanie z usług i dostarczanie](../../extensibility/using-and-providing-services.md)   
- [Rzutowanie i konwersje typów](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
- [Rzutowanie](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
+ [Rzutowanie i konwersje typów](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
+ [Rzutowanie](https://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)

@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 814327befe538bfaa102b198988e76dbd52090bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432391"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705691"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ W tym instruktażu przedstawiono sposób dodawania właściwości śledzenia do 
   
  W narzędzia języka specyficznego dla domeny (narzędzia DSL), nazwy wyświetlanej właściwości klasy domeny ma wartość domyślną, która jest obliczana przy użyciu nazwy klasy domeny, ale użytkownik może na przykład zmień wartość w czasie projektowania lub zresetować je do obliczonej wartości.  
   
- W tym instruktażu utworzysz języka specyficznego dla domeny (DSL), który ma Namespace, właściwość, która ma wartość domyślną, w oparciu o właściwość Namespace domyślny model śledzenia. Aby uzyskać więcej informacji na temat śledzenia właściwości, zobacz [Definiowanie właściwości śledzenia](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ W tym instruktażu utworzysz języka specyficznego dla domeny (DSL), który ma Namespace, właściwość, która ma wartość domyślną, w oparciu o właściwość Namespace domyślny model śledzenia. Aby uzyskać więcej informacji na temat śledzenia właściwości, zobacz [Definiowanie właściwości śledzenia](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 - Obsługa narzędzia DSL, śledzenie deskryptorów właściwości. Jednak projektanta DSL nie można dodać właściwości śledzenia do języka. W związku z tym należy dodać niestandardowy kod definiować ani implementować właściwości śledzenia.  
   

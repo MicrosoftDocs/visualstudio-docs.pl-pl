@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408430"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685718"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Kompilowanie oraz oczyszczanie projektów i rozwiązań w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63408430"
 Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lub wyczyścić wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Aby uzyskać samouczek krok po kroku, zobacz [instruktażu: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> Interfejs użytkownika w Twojej wersji programu Visual Studio mogą różnić się od co w tym temacie opisano, w zależności od aktywnych ustawień. Aby zmienić swoje ustawienia, otwórz **narzędzia** menu, a następnie wybierz **Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Interfejs użytkownika w Twojej wersji programu Visual Studio mogą różnić się od co w tym temacie opisano, w zależności od aktywnych ustawień. Aby zmienić swoje ustawienia, otwórz **narzędzia** menu, a następnie wybierz **Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Do kompilacji, odbudować lub Wyczyść całe rozwiązanie
 
@@ -110,4 +110,4 @@ Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lu
     - Wybierz kombinację klawiszy Ctrl + Break kluczy.
 
 ## <a name="see-also"></a>Zobacz także
- [Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md) [uzyskiwanie dzienniki kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md) [opis konfiguracji kompilacji](../ide/understanding-build-configurations.md) [Debuguj i zwolnij konfiguracje projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [odwołanie kompilacji C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [przełączników wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md) [rozwiązań i projektów](../ide/solutions-and-projects-in-visual-studio.md)
+ [Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md) [uzyskiwanie dzienniki kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md) [opis konfiguracji kompilacji](../ide/understanding-build-configurations.md) [Debuguj i zwolnij konfiguracje projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [odwołanie kompilacji C/C++](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [przełączników wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md) [rozwiązań i projektów](../ide/solutions-and-projects-in-visual-studio.md)

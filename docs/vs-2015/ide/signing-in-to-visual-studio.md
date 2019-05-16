@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083962"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679829"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio — logowanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Możesz spersonalizować i poprawić komfort programowania w programie Visual St
 
 - **Nieograniczony dostęp do szerokiej gamy korzyści** z programu Visual Studio Dev Essentials, łącznie z bezpłatnego oprogramowania, szkoleń, pomocy technicznej i nie tylko. Zobacz [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) Aby uzyskać więcej informacji.
 
-- **Synchronizuje ustawienia programu Visual Studio** — ustawienia dostosować, takie jak powiązania kluczy, układ okna, a kolor motywu, obowiązują natychmiast po zalogowaniu do programu Visual Studio na dowolnym urządzeniu. Zobacz [zsynchronizowane ustawienia w programie Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Synchronizuje ustawienia programu Visual Studio** — ustawienia dostosować, takie jak powiązania kluczy, układ okna, a kolor motywu, obowiązują natychmiast po zalogowaniu do programu Visual Studio na dowolnym urządzeniu. Zobacz [zsynchronizowane ustawienia w programie Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Trwale odblokowuje Visual Studio Express Edition** — można użyć dowolnej wersji programu Visual Studio Express for, tak długo, jak chcesz, a nie być ograniczonym do okresu próbnego 30 dni.
 

@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445895"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695105"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aktualizowanie kodowanych testów interfejsu użytkownika z Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Testowanie projektów zawierających kodowane testy interfejsu użytkownika, kt�
 - Visual Studio Enterprise
 
 > [!NOTE]
-> Visual Studio zawiera więcej niż jeden typ projektu testowego. Jeśli tworzysz nowy kodowany test interfejsu użytkownika, zostanie utworzony w typu projektu kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [uaktualnianie testów ze starszych wersji programu Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio zawiera więcej niż jeden typ projektu testowego. Jeśli tworzysz nowy kodowany test interfejsu użytkownika, zostanie utworzony w typu projektu kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [uaktualnianie testów ze starszych wersji programu Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
 > [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Projekty testowe, które zawiera kodowane testy interfejsu użytkownika musi zostać zrekompilowany, po otwarciu projektu testowego w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] lub [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] side-by-side przy użyciu [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
@@ -64,4 +64,4 @@ Testowanie projektów zawierających kodowane testy interfejsu użytkownika, kt�
 - **Testowanie obciążenia:** Możesz uruchomić test obciążenia wraz z sieci typu innego niż profil sieci lokalnej (LAN) na komputerze, to jest uruchomiony system Windows 8, sterownik emulatora sieci powoduje awarię systemu operacyjnego. Aby uzyskać więcej informacji, zobacz [2736182 artykułu KB](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Zobacz też
- [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [uaktualnianie testów ze starszych wersji programu Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) [generowania Kodowany Test interfejsu użytkownika z istniejącego nagrania akcji](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [uaktualnianie testów ze starszych wersji programu Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) [generowania Kodowany Test interfejsu użytkownika z istniejącego nagrania akcji](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

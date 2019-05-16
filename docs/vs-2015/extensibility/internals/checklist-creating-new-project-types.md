@@ -11,12 +11,12 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1699846c0a588a21ebd37a13f77dc45c2a695139
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 02edc5925109a31eebfd98c90bd116fb86eef276
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697228"
 ---
 # <a name="checklist-creating-new-project-types"></a>Lista kontrolna: Tworzenie nowych typów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Należy wykonać kilka zadań, aby utworzyć nowy typ projektu. Poniższa lista 
   
     - Fabryka projektu do zarządzania, tworzenie nowych projektów i otworzenie istniejącego projektu. Aby uzyskać więcej informacji, zobacz [tworzenia projektu wystąpień, przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    - Projekt hierarchii oraz obsługi polecenia. Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Implementowanie typu projektu (C++) przy użyciu klasy projektu HierUtil7](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md), [podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md) i [MenuCommands programu Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
+    - Projekt hierarchii oraz obsługi polecenia. Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Implementowanie typu projektu (C++) przy użyciu klasy projektu HierUtil7](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md), [podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md) i [MenuCommands programu Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   
     - Zarządzanie elementów projektu, w tym dodawanie projektu do **nowy projekt** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Dodawanie projektu i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md) i [szablonów elementów i projektów rejestrowanie](../../extensibility/internals/registering-project-and-item-templates.md).  
   

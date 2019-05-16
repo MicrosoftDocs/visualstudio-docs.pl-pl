@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f5c8e6298ab8ec7da947ae3c71fd2dcf4e1e9e25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ccfe43fc110622c70802d2108b6ba5ff7ecb1b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792291"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700383"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Metody muszą zachowywać spójną przezroczystość podczas nadpisywania metod bazowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,4 +50,4 @@ ms.locfileid: "54792291"
  [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2134.methodsmustoverridewithconsistenttransparency/cs/ca2134 - methodsmustoverridewithconsistenttransparency.cs#1)]
 
 ## <a name="see-also"></a>Zobacz też
- [Kod o przezroczystym poziomie bezpieczeństwa, poziom 2](http://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+ [Kod o przezroczystym poziomie bezpieczeństwa, poziom 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

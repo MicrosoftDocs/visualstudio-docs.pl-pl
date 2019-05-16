@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a14cb7a30d985042df8f46086dcb1432af5afdd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428233"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695087"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Przewodnik: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -388,6 +388,6 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Wprowadzenie do projektanta WPF](http://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
+ [Wprowadzenie do projektanta WPF](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

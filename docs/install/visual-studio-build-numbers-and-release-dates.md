@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/07/2019
+ms.date: 05/14/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7a3d02ad903daba40da5ac0c9a9ebbb320747a49
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d420656345331cd5e02193e9de2b8a18a990472d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461348"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695452"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -31,6 +31,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.4 | Wydanie | 14 maja 2019 r. | 16.0.28803.452 |
 | 16.1.0 | Wersja zapoznawcza 3 | 6 maja 2019 r. | 16.1.28902.138 |
 | 16.0.3 | Wydanie | 30 kwietnia 2019 r. | 16.0.28803.352 |
 | 16.1.0 | Preview 2 | 23 kwietnia 2019 r. | 16.1.28822.285 |
@@ -72,10 +73,12 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.12 | Wydanie | 14 maja 2019 r. | 15.9.28307.665 |
+| 15.0.23 | Wydanie | 14 maja 2019 r. | 15.0.26228.85 |
 | 15.9.11 | Wydanie | 2 kwietnia 2019 r. | 15.9.28307.586 |
 | 15.9.10 | Wydanie | 25 marca 2019 r. | 15.9.28307.557 |
 | 15.9.9 | Wydanie | 12 marca 2019 r. | 15.9.28307.518 |
-| 15.0.21 | Wydanie | 12 marca 2019 r. | 15.0.26228.76 |
+| 15.0.22 | Wydanie | 12 marca 2019 r. | 15.0.26228.76 |
 | 15.9.8 | Wydanie | 5 marca 2019 r. | 15.9.28307.481 |
 | 15.9.7 | Wydanie | 12 lutego 2019 r. | 15.9.28307.423 |
 | 15.0.21 | Wydanie | 12 lutego 2019 r. | 15.0.26228.73 |

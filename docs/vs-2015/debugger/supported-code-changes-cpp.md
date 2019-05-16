@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684912"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Jeśli wytwarzania jednego z tych zmian, a następnie próby zastosowania zmian 
 ## <a name="BKMK_Unsupported_scenarios"></a> Nieobsługiwane scenariusze  
  Edytuj i Kontynuuj dla języka C/C++ jest niedostępna w następujących scenariuszach debugowania:  
   
-- Debugowanie natywne aplikacje skompilowane z [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowania)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+- Debugowanie natywne aplikacje skompilowane z [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowania)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
   
 - W wersjach programu Visual Studio przed Visual Studio 2015 Update 1, debugowaniu aplikacji Windows Store lub składniki. Począwszy od programu Visual Studio 2015 Update 1 można Edytuj i Kontynuuj w aplikacji Windows Store w języku C++ i aplikacji DirectX, ponieważ teraz obsługuje `/ZI` przełącznika kompilatora z `/bigobj` przełącznika. Możesz również użyć Edytuj i Kontynuuj z plikami binarnymi kompilowany przy użyciu `/FASTLINK` przełącznika.  
   
@@ -141,7 +141,7 @@ Jeśli wytwarzania jednego z tych zmian, a następnie próby zastosowania zmian 
 3. Wyczyść **Zezwalaj na Prekompilowanie** pole wyboru.  
   
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> Agraniczenia atrybutów języka IDL  
- Edytuj i Kontynuuj nie jest generowany ponownie plików definicji (języka IDL) interfejsu. W związku z tym zmiany atrybutów pliku IDL nie zostaną odzwierciedlone, podczas debugowania. Aby zobaczyć efekt zmian atrybuty IDL, należy zatrzymać debugowanie i ponownie skompiluj aplikację. Edytuj i Kontynuuj nie generuje błąd lub ostrzeżenie Jeżeli zmieniono atrybuty IDL. Aby uzyskać więcej informacji, zobacz [atrybuty IDL](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
+ Edytuj i Kontynuuj nie jest generowany ponownie plików definicji (języka IDL) interfejsu. W związku z tym zmiany atrybutów pliku IDL nie zostaną odzwierciedlone, podczas debugowania. Aby zobaczyć efekt zmian atrybuty IDL, należy zatrzymać debugowanie i ponownie skompiluj aplikację. Edytuj i Kontynuuj nie generuje błąd lub ostrzeżenie Jeżeli zmieniono atrybuty IDL. Aby uzyskać więcej informacji, zobacz [atrybuty IDL](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

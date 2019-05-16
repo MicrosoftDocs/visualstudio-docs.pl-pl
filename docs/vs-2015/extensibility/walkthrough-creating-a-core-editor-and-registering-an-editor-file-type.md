@@ -10,12 +10,12 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14296aa335ba6710d4d9eac8e5338af7463c0aac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442273"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687633"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Przewodnik: Tworzenie edytorze podstawowych i rejestrowanie typu pliku w edytorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
   
 ### <a name="to-create-the-vspackage"></a>Do utworzenia pakietu VSPackage  
   
-- Rozpocznij [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i utworzyć [!INCLUDE[csprcs](../includes/csprcs-md.md)] pakietu VSPackage o nazwie `MyPackage`, zgodnie z opisem w [instruktażu: Tworzenie pakietu VSPackage polecenia Menu](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Rozpocznij [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i utworzyć [!INCLUDE[csprcs](../includes/csprcs-md.md)] pakietu VSPackage o nazwie `MyPackage`, zgodnie z opisem w [instruktażu: Tworzenie pakietu VSPackage polecenia Menu](https://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Aby dodać fabryka edytorów  
   

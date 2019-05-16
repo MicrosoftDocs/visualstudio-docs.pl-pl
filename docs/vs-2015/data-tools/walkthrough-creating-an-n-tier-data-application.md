@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424745"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675626"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Przewodnik: Tworzenie aplikacji warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
   
 - Tworzenie typizowanego zestawu danych za pomocą **Kreatora konfiguracji źródła danych**.  
   
-- Oddziel wygenerowany [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i kod zestawu danych w dyskretne projekty.  
+- Oddziel wygenerowany [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i kod zestawu danych w dyskretne projekty.  
   
 - Tworzenie usługi Windows Communication Foundation (WCF) do wywołania w warstwie dostępu do danych.  
   
@@ -381,7 +381,7 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które warto wykonać po zapisaniu powiązanych danych w aplikacji systemu Windows. Na przykład można wprowadzić następujące ulepszenia do tej aplikacji:  
   
-- Dodawanie walidacji do zestawu danych. Aby uzyskać informacje, zobacz [instruktażu: Dodawanie walidacji do aplikacji warstwowych](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Dodawanie walidacji do zestawu danych. Aby uzyskać informacje, zobacz [instruktażu: Dodawanie walidacji do aplikacji warstwowych](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 - Dodaj dodatkowe metody do usługi w przypadku aktualizowania danych w bazie danych.  
   

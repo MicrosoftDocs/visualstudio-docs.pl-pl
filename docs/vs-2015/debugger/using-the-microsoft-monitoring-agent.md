@@ -9,24 +9,24 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 48c020c978b593a94ecd4d60109245f6acb718b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437726"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684091"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [przy użyciu programu Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent).
 
-Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacje błędy, problemy z wydajnością lub inne problemy można monitorować lokalnie za pomocą **Microsoft Monitoring Agent**. Zdarzenia diagnostyczne z poziomu agenta można zapisać do pliku dziennika (.iTrace) funkcji IntelliTrace. Można następnie otwórz plik dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub Community) do debugowania problemów ze wszystkim narzędziami diagnostyki programu Visual Studio. Istnieje też możliwość gromadzenia danych diagnostycznych IntelliTrace i metoda dane, uruchamiając agenta w **śledzenia** trybu. Program Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](/azure/azure-monitor/app/app-insights-overview) i [System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu.  
+Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacje błędy, problemy z wydajnością lub inne problemy można monitorować lokalnie za pomocą **Microsoft Monitoring Agent**. Zdarzenia diagnostyczne z poziomu agenta można zapisać do pliku dziennika (.iTrace) funkcji IntelliTrace. Można następnie otwórz plik dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub Community) do debugowania problemów ze wszystkim narzędziami diagnostyki programu Visual Studio. Istnieje też możliwość gromadzenia danych diagnostycznych IntelliTrace i metoda dane, uruchamiając agenta w **śledzenia** trybu. Program Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](/azure/azure-monitor/app/app-insights-overview) i [System Center Operations Manager](https://technet.microsoft.com/library/hh205987.aspx). Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu.  
   
 > [!NOTE]
 > Może również zbierać dane diagnostyczne i metody funkcji IntelliTrace dla sieci web programu SharePoint, WPF i Windows aplikacje formularza na komputerach zdalnych, bez wprowadzania zmian w środowisku docelowym przy użyciu **autonomiczny moduł zbierający IntelliTrace**. Autonomiczny moduł zbierający ma większy wpływ na wydajność niż uruchomienie programu Microsoft Monitoring Agent **Monitor** trybu. Zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
- Jeśli używasz programu System Center 2012, za pomocą programu Microsoft Monitoring Agent programu Operations Manager Otrzymuj alerty dotyczące problemów i tworzenie elementów roboczych serwera Team Foundation Server wraz z łączami do zapisane dzienniki IntelliTrace. Następnie można przypisać te elementy robocze z inne potrzeby dalszego debugowania. Zobacz [Integrowanie programu Operations Manager z procesami programowania](http://technet.microsoft.com/library/jj614609.aspx) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
+ Jeśli używasz programu System Center 2012, za pomocą programu Microsoft Monitoring Agent programu Operations Manager Otrzymuj alerty dotyczące problemów i tworzenie elementów roboczych serwera Team Foundation Server wraz z łączami do zapisane dzienniki IntelliTrace. Następnie można przypisać te elementy robocze z inne potrzeby dalszego debugowania. Zobacz [Integrowanie programu Operations Manager z procesami programowania](https://technet.microsoft.com/library/jj614609.aspx) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).  
   
  Przed rozpoczęciem Sprawdź, czy zgodnego źródła i symboli dla kodu skompilowane i wdrożone. Dzięki temu można przejść bezpośrednio do kodu aplikacji, podczas uruchamiania, debugowania i przeglądanie zdarzenia diagnostyczne w dzienniku IntelliTrace. [Skonfiguruj kompilacje](../debugger/diagnose-problems-after-deployment.md) tak, aby program Visual Studio, mogą automatycznie znaleźć i otworzyć pasujące źródło do wdrożonego kodu.  
   
@@ -37,13 +37,13 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 3. [Krok 3. Zapisz zarejestrowane zdarzenia](#SaveEvents)  
   
 ## <a name="SetUpMonitoring"></a> Krok 1: Skonfiguruj program Microsoft Monitoring Agent  
- Skonfiguruj agenta autonomiczny, na serwerze sieci web, do przeprowadzenia monitorowania lokalnego bez konieczności zmieniania aplikacji. Jeśli używasz programu System Center 2012, zobacz [instalacji programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  
+ Skonfiguruj agenta autonomiczny, na serwerze sieci web, do przeprowadzenia monitorowania lokalnego bez konieczności zmieniania aplikacji. Jeśli używasz programu System Center 2012, zobacz [instalacji programu Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465156.aspx).  
   
 ### <a name="SetUpStandaloneMMA"></a> Konfigurowanie agenta autonomiczny  
   
 1. Upewnij się, że:  
   
-    - Na serwerze sieci web jest uruchomiona [obsługiwane wersje programu Internetowe usługi informacyjne (IIS)](http://technet.microsoft.com/library/dn465154.aspx).  
+    - Na serwerze sieci web jest uruchomiona [obsługiwane wersje programu Internetowe usługi informacyjne (IIS)](https://technet.microsoft.com/library/dn465154.aspx).  
   
     - Serwer sieci web ma .NET Framework 3.5, 4 lub 4.5.  
   
@@ -77,7 +77,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
      **PS C: > Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
   
-3. [Odwiedź TechNet](http://technet.microsoft.com/systemcenter/default) można pobrać najnowszej zawartości pomocy.  
+3. [Odwiedź TechNet](https://technet.microsoft.com/systemcenter/default) można pobrać najnowszej zawartości pomocy.  
   
 #### <a name="FullPermissionsITLog"></a> Q: Jak skonfigurować uprawnienia dla puli aplikacji?  
  **ODP.:** Użyj Windows **icacls** polecenia lub za pomocą Eksploratora Windows (lub Eksploratora plików). Na przykład:  
@@ -111,7 +111,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   7. Upewnij się, że pula aplikacji ma **odczytu & wykonać** uprawnienia.  
   
 ## <a name="MonitorEvents"></a> Krok 2: Rozpoczęcie monitorowania aplikacji  
- Za pomocą programu Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) polecenie, aby rozpocząć monitorowanie aplikacji. Jeśli używasz programu System Center 2012, zobacz [monitorowanie aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
+ Za pomocą programu Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) polecenie, aby rozpocząć monitorowanie aplikacji. Jeśli używasz programu System Center 2012, zobacz [monitorowanie aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 1. Na serwerze sieci web Otwórz **programu Windows PowerShell** lub **środowiska Windows PowerShell ISE** okna wiersza polecenia jako administrator.  
   
@@ -137,7 +137,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
     |||  
     |-|-|  
-    |*"\<appName>"*|Określ ścieżkę do nazwy aplikacji sieci web i witryny sieci web w usługach IIS. Można także dodać ścieżkę usług IIS, jeśli użytkownik sobie tego życzy.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> —lub—<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Na przykład:<br /><br /> ![Ścieżka do witryny sieci web usług IIS i aplikacji sieci web](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Można również użyć [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) i [uzyskać WebApplication](http://technet.microsoft.com/library/ee790554.aspx) poleceń.|  
+    |*"\<appName>"*|Określ ścieżkę do nazwy aplikacji sieci web i witryny sieci web w usługach IIS. Można także dodać ścieżkę usług IIS, jeśli użytkownik sobie tego życzy.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> —lub—<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Na przykład:<br /><br /> ![Ścieżka do witryny sieci web usług IIS i aplikacji sieci web](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Można również użyć [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) i [uzyskać WebApplication](https://technet.microsoft.com/library/ee790554.aspx) poleceń.|  
     |*\<monitoringMode>*|Określ tryb monitorowania:<br /><br /> <ul><li>**Monitor**: Rejestrowanie minimalne szczegółowe informacje o zdarzeń dotyczących wyjątków i zdarzeń dotyczących wydajności. W tym trybie wykorzystuje domyślny plan kolekcji.</li><li>**Śledzenie**: Zarejestruj szczegóły na poziomie funkcji lub monitorowanie aplikacji SharePoint 2010 i 2013 programu SharePoint przy użyciu planu w określonej kolekcji. Ten tryb może uniemożliwić aplikacji wykonywania wolniej.<br /><br /> <ul><li>[PYT.: Jak skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)</li><li>[PYT.: Jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing)</li></ul><br />     Przykład ten rejestruje zdarzenia dla aplikacji programu SharePoint hostowany w witrynie programu SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" śledzenia "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Niestandardowe**: Niestandardowe szczegóły rekordu przy użyciu określić dostosowanego planu kolekcji. Musisz ponownie uruchomić monitorowanie edycji planu kolekcji po monitorowania został już uruchomiony.</li></ul>|  
     |*"\<outputPath >"*|Określ pełną ścieżką do przechowywania dzienników IntelliTrace. Upewnij się, utworzyć ten katalog, przed rozpoczęciem monitorowania.|  
     |*\<UInt32>*|Określ maksymalny rozmiar dziennika IntelliTrace. Domyślny maksymalny rozmiar dziennika IntelliTrace to 250 MB.<br /><br /> Gdy osiągnie ten limit, agent zastępuje najwcześniej wpisy, aby zrobić miejsce na więcej wpisów. Aby zmienić ten limit, użyj **— wartość właściwości MaximumFileSizeInMegabytes** opcji lub edytować `MaximumLogFileSize` atrybutu w planie kolekcji.|  
@@ -231,7 +231,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   Agent zapisuje wartości dla `id`, `Employee.Id`, `Employee.Name` i `Employee` obiekt zwracany z `AlterEmployee` metody. Jednak agent nie zapisuje informacje o `Address` innych obiektów niż posiadającym wartość zerową lub nie. Agent nie zapisuje również dane dotyczące zmiennych lokalnych w `AlterEmployee` metody, chyba że inne metody używają tych zmiennych lokalnych jako parametrów w tym momencie są zapisywane jako parametry metody.  
   
 ## <a name="SaveEvents"></a> Krok 3: Zapisz zarejestrowane zdarzenia  
- Po znalezieniu błędu lub problemu z wydajnością, Zapisz zarejestrowane zdarzenia w dzienniku IntelliTrace. Agent tworzy dziennik tylko wtedy, gdy zarejestrował zdarzenia. Jeśli używasz programu System Center 2012, zobacz [monitorowanie aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
+ Po znalezieniu błędu lub problemu z wydajnością, Zapisz zarejestrowane zdarzenia w dzienniku IntelliTrace. Agent tworzy dziennik tylko wtedy, gdy zarejestrował zdarzenia. Jeśli używasz programu System Center 2012, zobacz [monitorowanie aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Zapisz zarejestrowane zdarzenia, ale Kontunuuj monitorowanie  
  Wykonaj następujące kroki, gdy chcesz utworzyć dziennik IntelliTrace, ale nie chcesz ponownie uruchomić aplikacji lub zatrzymywania monitorowania. Agent kontynuuje monitorowanie, nawet jeśli ponowne uruchomienie serwera lub aplikacji.  

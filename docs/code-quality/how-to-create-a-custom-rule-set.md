@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816575"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676561"
 ---
 # <a name="customize-a-rule-set"></a>Dostosuj zestaw reguł
 
 Można utworzyć niestandardowego zestawu reguł do potrzeb określonego projektu dla analizy kodu.
 
-## <a name="create-a-custom-rule-set"></a>Tworzenie niestandardowego zestawu reguł
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Tworzenie niestandardowego zestawu reguł z istniejącego zestawu reguł
 
 Aby utworzyć niestandardową regułę zestaw, możesz otworzyć wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca można dodawać i usuwać określone zasady i możesz zmienić akcję, która występuje, gdy zostanie naruszona zasada&mdash;na przykład wyświetlić ostrzeżenia lub błędu.
 
@@ -40,7 +40,12 @@ Aby utworzyć niestandardową regułę zestaw, możesz otworzyć wbudowany zesta
 
 4. Wybierz **Otwórz** reguły są wyświetlane w edytorze zestawu reguł.
 
-Można również utworzyć nowego pliku zestawu reguł z **nowy plik** okno dialogowe:
+> [!NOTE]
+> Jeśli masz projekt .NET Core lub .NET Standard, proces jest nieco inny, ponieważ nie istnieje żadne **analizy kodu** kartę właściwości. Postępuj zgodnie z instrukcjami, aby [skopiuj wstępnie zdefiniowana reguła ustawiona na projekt i ustawić ją jako aktywny zestaw reguł](analyzer-rule-sets.md). Po skopiowaniu przez zestaw reguł można [go edytować w programie Visual Studio, w edytorze zestawu reguł](working-in-the-code-analysis-rule-set-editor.md) , otwierając go z **Eksploratora rozwiązań**.
+
+## <a name="create-a-new-rule-set"></a>Tworzenie nowego zestawu reguł
+
+Można utworzyć nowego pliku zestawu reguł z **nowy plik** okno dialogowe:
 
 1. Wybierz **pliku** > **New** > **pliku**, lub naciśnij **Ctrl**+**N**.
 
@@ -50,9 +55,12 @@ Można również utworzyć nowego pliku zestawu reguł z **nowy plik** okno dial
 
    Nowy *.ruleset* plik zostanie otwarty w edytorze zestawu reguł.
 
-### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Tworzenie niestandardowego zestawu reguł z wielu zestawów reguł
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Tworzenie niestandardowego zestawu reguł z wielu zestawów reguł
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**.
+> [!NOTE]
+> Poniższa procedura nie ma zastosowania do projektów .NET Core, które nie zawierają **analizy kodu** kartę właściwości.
+
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**.
 
 2. Na **właściwości** stron, wybierz opcję **analizy kodu** kartę.
 
@@ -68,7 +76,7 @@ Można również utworzyć nowego pliku zestawu reguł z **nowy plik** okno dial
 
 6. Wybierz **Otwórz** można otworzyć nowej reguły, które są ustawiane za pomocą edytora zestawu reguł.
 
-### <a name="rule-precedence"></a>Priorytet reguły
+## <a name="rule-precedence"></a>Priorytet reguły
 
 - Jeśli ta sama zasada jest wymienionych dwóch lub więcej razy w regule ustawić z różnymi poziomami ważności, kompilator generuje błąd. Na przykład:
 

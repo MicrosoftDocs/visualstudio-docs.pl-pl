@@ -26,12 +26,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: effeac6eb35eab5da53dc8e58cd44a72297a23d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ce0a416ef39165d38530c11aad0689811805b353
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102320"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702444"
 ---
 # <a name="assertions-in-managed-code"></a>Potwierdzenia w zarządzanym kodzie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,7 +211,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  Aby dostosować dane wyjściowe w ten sposób, program musi zawierać odbiornik i musi dziedziczyć <xref:System.Diagnostics.TraceListener> i zastąpić jej <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> metody.  
   
- Aby uzyskać więcej informacji, zobacz [detektorów śledzenia](http://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025).  
+ Aby uzyskać więcej informacji, zobacz [detektorów śledzenia](https://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025).  
   
  [W tym temacie](#BKMK_In_this_topic)  
   
@@ -222,7 +222,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>   
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Śledzenie i Instrumentacja aplikacji](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [Instrukcje: Kompilowanie warunkowe ze śledzeniem i debugowaniem](http://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
+ [Śledzenie i Instrumentacja aplikacji](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
+ [Instrukcje: Kompilowanie warunkowe ze śledzeniem i debugowaniem](https://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
  [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)

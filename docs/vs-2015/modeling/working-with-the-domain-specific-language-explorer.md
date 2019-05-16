@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92f2dc0f425c86b7304ccde5778f8479678bc41f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef80d444c24cfa0bf78d23aabc4f7d7d0bc819a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037885"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694177"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Praca z eksploratorem języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +46,4 @@ ms.locfileid: "60037885"
 - **Zachowanie serializacji kodu XML**. Ustawienia serializacji dla modelu. Aby uzyskać więcej informacji na temat serializacji, zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

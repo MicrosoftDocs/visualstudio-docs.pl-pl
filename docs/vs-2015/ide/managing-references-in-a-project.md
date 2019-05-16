@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a54df63d71eeb641aa16c5bf7d4a2cb0c8a8a292
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424537"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675086"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
 > Wszystkie projekty w programie Visual Studio zawierają odwołanie domniemane do `System.Core`nawet wtedy, gdy `System.Core` zostanie usunięty z listy odwołań.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Odwołania do udostępnionych składników w czasie wykonywania  
- W czasie wykonywania, składniki muszą się znajdować albo w ścieżce wyjściowej projektu lub w [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Jeśli projekt zawiera odwołanie do obiektu, który nie znajduje się w jednej z tych lokalizacji, należy skopiować odwołanie do ścieżki wyjściowej projektu podczas kompilowania projektu. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Właściwość wskazuje, czy ta kopia musi zostać wykonana. Jeśli wartość jest **True**, odwołanie jest kopiowane do katalogu projektu podczas kompilowania projektu. Jeśli wartość jest **False**, odwołanie nie jest kopiowany.  
+ W czasie wykonywania, składniki muszą się znajdować albo w ścieżce wyjściowej projektu lub w [Global Assembly Cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Jeśli projekt zawiera odwołanie do obiektu, który nie znajduje się w jednej z tych lokalizacji, należy skopiować odwołanie do ścieżki wyjściowej projektu podczas kompilowania projektu. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Właściwość wskazuje, czy ta kopia musi zostać wykonana. Jeśli wartość jest **True**, odwołanie jest kopiowane do katalogu projektu podczas kompilowania projektu. Jeśli wartość jest **False**, odwołanie nie jest kopiowany.  
   
  W przypadku wdrożenia aplikacji, która zawiera odwołanie do składnika niestandardowego, który jest zarejestrowany w globalnej pamięci podręcznej zestawów, składnik nie zostanie wdrożony z aplikacją, bez względu na to <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> ustawienie. We wcześniejszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można ustawić <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> właściwość w odwołaniu do zapewnienia, że zestaw został wdrożony. Teraz należy ręcznie dodać zestaw do folderu \Bin. Spowoduje to umieszczenie całego kodu niestandardowego, w ramach kontroli, zmniejszając ryzyko publikowania kodu niestandardowego za pomocą którego użytkownik nie jest zaznajomiony.  
   
@@ -118,5 +118,5 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów z przerwanymi odwołaniami](../ide/troubleshooting-broken-references.md)   
- [Programowanie za pomocą zestawów](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
+ [Programowanie za pomocą zestawów](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d99cef315e37d729db856376929c27cd8b2fe55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 856fe295650c1203d180c8cc3c7127b03b0d668f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433719"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681205"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63433719"
 Użyj tej strony w oknie dialogowym Opcje, aby określić, czy pliki są automatycznie do kopii zapasowej. Ta strona umożliwia także określić czy zmodyfikowane pliki są przywracane podczas zintegrowanego środowiska programistycznego (IDE) zostanie nieoczekiwanie zamknięty. Dostęp do tego okna dialogowego wybierając **narzędzia** menu i wybierając pozycję **opcje**, a następnie wybierając **środowiska** folderów i wybierania  **AutoRecover** strony. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Zapisuj informacje Autoodzyskiwania co \<n > minut**  
  Użyj tej opcji, aby dostosować, jak często automatycznie zapisaniu pliku w edytorze. Wcześniej zapisanych plików, kopia pliku jest zapisywana w \\... \My Studio \< *wersji*> pliki \Backup\\<*projectname*>. Jeśli plik jest nowy, nie został ręcznie zapisany plik jest automatycznie zapisane przy użyciu nazwy losowo wygenerowany plik.  

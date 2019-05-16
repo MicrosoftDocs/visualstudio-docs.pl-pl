@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88a8d30b6eff7f4d7d2754ea383f7b544cc615ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a84de037661992d1ee185bea2a70db74dac5e618
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417066"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686354"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Przewodnik: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu z
   
  Zgodnie z opisem w [lokalizowanie aplikacji ClickOnce](../deployment/localizing-clickonce-applications.md), może zawierać wiele zestawów satelickich dla różnych kultur, w tym samym [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia. Domyślnie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pobierze wszystkie zestawy satelickie w danym wdrożeniu na komputerze klienckim, mimo że pojedynczego klienta, prawdopodobnie będziesz potrzebować zestawu satelickiego tylko jeden.  
   
- W tym instruktażu pokazano, jak oznaczyć swoje zestawy satelickie jako opcjonalne i Pobierz tylko zestaw na komputerze klienckim musi uzyskać bieżące ustawienia kultury. W poniższej procedurze użyto narzędzi dostępnych w ramach [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Można również wykonać to zadanie w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Zobacz też [instruktażu: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) lub [instruktażu: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ W tym instruktażu pokazano, jak oznaczyć swoje zestawy satelickie jako opcjonalne i Pobierz tylko zestaw na komputerze klienckim musi uzyskać bieżące ustawienia kultury. W poniższej procedurze użyto narzędzi dostępnych w ramach [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Można również wykonać to zadanie w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Zobacz też [instruktażu: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant](https://msdn.microsoft.com/library/ms366788\(v=vs.110\)) lub [instruktażu: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant](https://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 > [!NOTE]
 > Do celów testowych, w poniższym przykładzie kodu programowo ustawia kulturę `ja-JP`. Zobacz sekcję "Kolejne kroki" w dalszej części tego tematu zawiera informacje na temat dostosować ten kod w środowisku produkcyjnym.  
@@ -51,9 +51,9 @@ Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu z
      [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs#1)]
      [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb#1)]  
   
-2. Generowanie zestawów satelickich dla aplikacji przy użyciu [Resgen.exe (Generator pliku zasobów)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) lub [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Generowanie zestawów satelickich dla aplikacji przy użyciu [Resgen.exe (Generator pliku zasobów)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) lub [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3. Generuj manifest aplikacji lub Otwórz istniejący manifest aplikacji, za pomocą MageUI.exe. Aby uzyskać więcej informacji o tym narzędziu, zobacz [MageUI.exe (Manifest Generation i graficzny klient Editing Tool)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+3. Generuj manifest aplikacji lub Otwórz istniejący manifest aplikacji, za pomocą MageUI.exe. Aby uzyskać więcej informacji o tym narzędziu, zobacz [MageUI.exe (Manifest Generation i graficzny klient Editing Tool)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 4. Kliknij przycisk **pliki** kartę.  
   

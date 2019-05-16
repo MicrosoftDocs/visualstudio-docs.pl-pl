@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaa7288d46b57204a637dc81d1d8b943debd87fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 932b770f38f75d26028eceb6c0addc2ababeef6d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417458"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696346"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Instrukcje: Tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja)
 Wykonaj następujące kroki, aby utworzyć projekt sekwencyjne Aplikacja konsoli przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -54,4 +54,4 @@ Wykonaj następujące kroki, aby utworzyć projekt sekwencyjne Aplikacja konsoli
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Tworzenie przepływów pracy](http://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)
+ [Tworzenie przepływów pracy](https://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

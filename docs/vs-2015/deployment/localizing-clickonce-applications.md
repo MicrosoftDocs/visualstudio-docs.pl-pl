@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3c29bd6a58d510d98f2a08c96d0cd0bc774e197e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443775"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679995"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultur
  Zaletą tego podejścia jest tworzy pojedyncze wdrożenie i upraszcza swoją historię wdrożenia zlokalizowane. W czasie wykonywania zestawu satelickiego odpowiednie będzie używany, w zależności od kultury domyślnej systemów operacyjnych Windows przez użytkownika. Wadą tego podejścia jest to, że pobiera wszystkie zestawy satelickie, zawsze wtedy, gdy aplikacja jest zainstalowane lub zaktualizowane na komputerze klienckim. Jeśli aplikacja ma dużą liczbę ciągów lub klienci mają wolne połączenie sieciowe, ten proces może wpłynąć na wydajność podczas aktualizacji aplikacji.  
   
 > [!NOTE]
-> To podejście przyjęto założenie, że aplikacja Dopasowuje wysokość, szerokość i położenie kontrolki automatycznie w celu uwzględnienia rozmiarów ciąg tekstu różne w różnych kulturach. Windows Forms zawiera szereg kontroli i technologie, które pozwalają na projektowanie formularza umożliwiają łatwe możliwych do zlokalizowania, w tym <xref:System.Windows.Forms.FlowLayoutPanel> i <xref:System.Windows.Forms.TableLayoutPanel> formantów, jak również <xref:System.Windows.Forms.Control.AutoSize%2A> właściwości.  Zobacz też [jak: Obsługiwanie lokalizacji na Windows Forms przy użyciu AutoSize i TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+> To podejście przyjęto założenie, że aplikacja Dopasowuje wysokość, szerokość i położenie kontrolki automatycznie w celu uwzględnienia rozmiarów ciąg tekstu różne w różnych kulturach. Windows Forms zawiera szereg kontroli i technologie, które pozwalają na projektowanie formularza umożliwiają łatwe możliwych do zlokalizowania, w tym <xref:System.Windows.Forms.FlowLayoutPanel> i <xref:System.Windows.Forms.TableLayoutPanel> formantów, jak również <xref:System.Windows.Forms.Control.AutoSize%2A> właściwości.  Zobacz też [jak: Obsługiwanie lokalizacji na Windows Forms przy użyciu AutoSize i TableLayoutPanel](https://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Generowanie jednego wdrożenia dla każdej kultury  
  W tej strategii wdrażania możesz wygenerować wiele wdrożeń. W każdym wdrożeniu obejmują tylko zestawu satelickiego potrzebne dla określonej kultury i oznacz wdrożenia jako specyficzne dla tej kultury.  
@@ -70,7 +70,7 @@ Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultur
   
  Pobieranie zestawów satelickich na żądanie różni się nieco od innych typów zestawów na żądanie pobierania. Aby uzyskać więcej informacji i przykładów kodu o sposobie włączania tego scenariusza przy użyciu [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] narzędzi dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], zobacz [instruktażu: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Można również włączyć ten scenariusz w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Zobacz też [instruktażu: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) lub [instruktażu: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Można również włączyć ten scenariusz w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Zobacz też [instruktażu: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant](https://msdn.microsoft.com/library/ms366788\(v=vs.110\)) lub [instruktażu: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant](https://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Testowanie zlokalizowanych aplikacji ClickOnce, przed przystąpieniem do wdrożenia  
  Zestawu satelickiego stosowanych w odniesieniu do Windows Forms aplikacji tylko wtedy, gdy <xref:System.Threading.Thread.CurrentUICulture%2A> wątku głównego aplikacji zostaje ustalona kultury zestawu satelickiego. Klienci na rynkach lokalnych będą prawdopodobnie już uruchomione zlokalizowanej wersji systemu Windows za pomocą jego kultury, ustaw odpowiednią wartość domyślną.  
@@ -84,4 +84,4 @@ Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultur
 ## <a name="see-also"></a>Zobacz też  
  [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Globalizacja formularzy Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
+ [Globalizacja formularzy Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)

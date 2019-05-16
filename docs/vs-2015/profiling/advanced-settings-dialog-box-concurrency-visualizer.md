@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782520"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705763"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w Wizualizatorze współbi
  Domyślnie zdarzenia CLR są zbierane tylko wtedy, gdy proces zarządzany jest profilowana, ponieważ są one zazwyczaj konieczne w przypadku natywnych procesów.  W niektórych przypadkach (na przykład, gdy macierzysty proces jest hostowany jest aparat CLR) może być służąca do gromadzenia zdarzeń CLR dla natywnych procesów.  Jeśli jest to możliwe, wybierz opcję **Zbierz dla natywnych procesów** pole wyboru.  
   
 ### <a name="disable-rundown-events"></a>Wyłącz zdarzenia uwalniania  
- Środowisko CLR generuje zdarzenia na podstawie dwóch dostawców: środowiska uruchomieniowego i podsumowania.  Jeśli chcesz zbierać zdarzenia środowiska uruchomieniowego CLR, ale chcemy uniknąć zbierania zdarzeń podsumowania, wybierz **wyłączyć zdarzenia podsumowania** pole wyboru.  Zmniejsza rozmiar pliku śledzenia, który jest generowany przez kolekcji, ale niektóre stosów może nie rozwiązać. Aby uzyskać więcej informacji, zobacz [dostawcy ETW CLR](http://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
+ Środowisko CLR generuje zdarzenia na podstawie dwóch dostawców: środowiska uruchomieniowego i podsumowania.  Jeśli chcesz zbierać zdarzenia środowiska uruchomieniowego CLR, ale chcemy uniknąć zbierania zdarzeń podsumowania, wybierz **wyłączyć zdarzenia podsumowania** pole wyboru.  Zmniejsza rozmiar pliku śledzenia, który jest generowany przez kolekcji, ale niektóre stosów może nie rozwiązać. Aby uzyskać więcej informacji, zobacz [dostawcy ETW CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
   
 ### <a name="sample-events"></a>Przykładowe zdarzenia  
  Zbieraj stosy wywołań, które są skojarzone z wykonywaniem wątków umożliwia próbkowane zdarzenia. Te zdarzenia są zbierane w około raz na milisekundę dla wątków, które są wykonywane w bieżącym procesie. Po wyłączeniu zbierania próbkowane zdarzenia zmniejszany jest rozmiar zbieranego śladu, ale nie można przeglądać wszystkie stosy wywołań, które są skojarzone z wykonywaniem wątków.  

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cc585c348451e0189caeabaf6269606e6b73b219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa0c51eaa10503a92c21960dc3dd074aa7541f5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431878"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694960"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Tylko wyliczenia z atrybutem Flags powinny mieć nazwy w liczbie mnogiej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,4 +56,4 @@ ms.locfileid: "62431878"
  [CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.FlagsAttribute?displayProperty=fullName> [Projekt wyliczeń](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
+ <xref:System.FlagsAttribute?displayProperty=fullName> [Projekt wyliczeń](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

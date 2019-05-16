@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116748"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680903"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refaktoryzacja wyodrębniania interfejsu (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wyodrębnij interfejs jest operacji refaktoryzacji, która zapewnia łatwy sposób utworzyć nowy interfejs z elementami członkowskimi, które pochodzą z istniejącej klasy, struktury lub interfejsu.  
   
- Korzystając z kilku klientów ten sam podzestaw elementów członkowskich z klasy, struktury lub interfejsu, lub gdy wiele klasami, strukturami lub interfejsy wspólnym podzestaw elementów członkowskich, może być przydatne do międzynarodowym podzestaw elementów członkowskich w interfejsie. Aby uzyskać więcej informacji na temat używania interfejsów zobacz [interfejsów](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
+ Korzystając z kilku klientów ten sam podzestaw elementów członkowskich z klasy, struktury lub interfejsu, lub gdy wiele klasami, strukturami lub interfejsy wspólnym podzestaw elementów członkowskich, może być przydatne do międzynarodowym podzestaw elementów członkowskich w interfejsie. Aby uzyskać więcej informacji na temat używania interfejsów zobacz [interfejsów](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  Wyodrębnij interfejs generuje interfejs w nowym pliku i umieszcza kursor na początku nowego pliku. Można określić elementów członkowskich, które można wyodrębnić do nowego interfejsu, Nazwa nowego interfejsu i nazwę wygenerowanego pliku przy użyciu **Wyodrębnij interfejs** okno dialogowe.  
   

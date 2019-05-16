@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559881"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693769"
 ---
 # <a name="n-tier-data-applications-overview"></a>Aplikacje warstwowe — Przegląd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-warstwy * dane aplikacji są sterowany danymi, które są rozdzielone na wiele
   
 - [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) zawiera ustawienia umożliwiające Generowanie klasy DataContext i danych do oddzielnych przestrzeni nazw. Takie rozwiązania pozwala logicznie rozdzielić warstwy dostępu do danych i jednostek danych.  
   
-- [LINQ do SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) zapewnia <xref:System.Data.Linq.Table%601.Attach%2A> metodę, która umożliwia łączenie kontekstu danych z różnych warstw w aplikacji. Aby uzyskać więcej informacji, zobacz [N-warstwowe i zdalne aplikacje za pomocą LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [LINQ do SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) zapewnia <xref:System.Data.Linq.Table%601.Attach%2A> metodę, która umożliwia łączenie kontekstu danych z różnych warstw w aplikacji. Aby uzyskać więcej informacji, zobacz [N-warstwowe i zdalne aplikacje za pomocą LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Warstwa prezentacji  
  *Warstwa prezentacji* jest warstwą, gdzie użytkownicy dokonują interakcji z aplikacją. Często zawiera także dodatkową logikę aplikacji. Oto typowe składniki warstwy prezentacji:  
   
 - Składniki powiązania danych, takie jak <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator>.  
   
-- Obiektowe reprezentacje danych, takie jak [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klas jednostek do użycia w warstwie prezentacji.  
+- Obiektowe reprezentacje danych, takie jak [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klas jednostek do użycia w warstwie prezentacji.  
   
   Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej za pomocą odwołania do usługi (na przykład [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplikacji). Warstwa prezentacji nie uzyskuje bezpośredniego dostępu do warstwy danych. Warstwa prezentacji komunikuje się z warstwą danych za pomocą składnika dostępu do danych w warstwie środkowej.  
   
@@ -57,9 +57,9 @@ N-warstwy * dane aplikacji są sterowany danymi, które są rozdzielone na wiele
   
 - Składniki i logika dostępu do danych, w tym:  
   
-  - [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i [DataAdapter i DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i [DataAdapter i DataReaders](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  - Obiektowe reprezentacje danych, takie jak [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klas jednostek.  
+  - Obiektowe reprezentacje danych, takie jak [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klas jednostek.  
   
   - Wspólne usługi aplikacji, takie jak uwierzytelnianie, autoryzacja i personalizacja.  
   
@@ -87,9 +87,9 @@ Warstwa danych
   
  [Przewodnik: Tworzenie n-warstwowej aplikacji do obsługi danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [Przewodnik: Dodawanie walidacji do aplikacji warstwowych](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Przewodnik: Dodawanie walidacji do aplikacji warstwowych](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [N-warstwowe i zdalne aplikacje z użyciem LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [N-warstwowe i zdalne aplikacje z użyciem LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Data.Linq.ITable.Attach%2A>   

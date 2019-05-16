@@ -22,19 +22,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bfa51dae4ab9ab08abf3493c747a471b924de1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675915"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek WPF z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych z [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] kontrolki. Aby utworzyć te formanty powiązane z danymi, można przeciągnąć elementy z **źródeł danych** okna na [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W tym temacie opisano niektóre z najbardziej typowych zadań, narzędzi i klas, które służą do tworzenia powiązanych z danymi [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] aplikacji.
 
- Aby uzyskać ogólne informacje o sposobie tworzenia formantów powiązanych z danymi w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Aby uzyskać więcej informacji na temat [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] wiązania danych, zobacz [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+ Aby uzyskać ogólne informacje o sposobie tworzenia formantów powiązanych z danymi w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Aby uzyskać więcej informacji na temat [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] wiązania danych, zobacz [Data Binding Overview](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Zadania związane z wiązaniem formantów WPF z danymi
  Poniższa tabela zawiera listę zadań, które można wykonać przez przeciąganie elementów z **źródeł danych** okna [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)].
@@ -98,7 +98,7 @@ Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych z [!IN
  Podczas przeciągania obiektu lub właściwości z **źródeł danych** okna Projektanta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] tworzący formant powiązany z danymi (lub wiąże istniejący formant z obiektem lub właściwością). Jednak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje kodu, który wypełnia obiekt danych. Musisz napisać ten kod samodzielnie.
 
 > [!NOTE]
-> Klasy niestandardowe muszą być publiczne i domyślnie ma konstruktora bez parametrów. Nie mogą one być klasami zagnieżdżonymi, które mają "dot" w ich składnię. Aby uzyskać więcej informacji, zobacz [XAML oraz klas niestandardowe dla WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+> Klasy niestandardowe muszą być publiczne i domyślnie ma konstruktora bez parametrów. Nie mogą one być klasami zagnieżdżonymi, które mają "dot" w ich składnię. Aby uzyskać więcej informacji, zobacz [XAML oraz klas niestandardowe dla WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] wykonujący następujące czynności:
 

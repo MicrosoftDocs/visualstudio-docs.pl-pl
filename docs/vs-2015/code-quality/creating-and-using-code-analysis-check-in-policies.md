@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a8015eb672e87431a1d225221ff2321c41e041a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697048"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Tworzenie zasad ewidencjonowania analizy kodu i korzystanie z nich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +44,6 @@ Gdy używasz Team Foundation Version Control (TFVC), można utworzyć zasad anal
  Wyjaśnia, jak dodać wyrazy i tokeny do słownika, do którego odwołują się zasady nazewnictwa analizy kodu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Ustawianie i wymuszanie bram jakości](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
+ [Ustawianie i wymuszanie bram jakości](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [Doskonalenie jakości kodu za pomocą zasad zaewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

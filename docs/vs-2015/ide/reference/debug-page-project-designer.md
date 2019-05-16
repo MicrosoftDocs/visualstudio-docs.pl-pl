@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ffe4f9280dfbb0b3146ebf8b3dd7b62e908814
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 039b6722ca064c64c0e0b7f7757070852e908395
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441429"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703914"
 ---
 # <a name="debug-page-project-designer"></a>Strona debugowania, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ ms.locfileid: "63441429"
  Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.  
   
  **Konfiguracja**  
- Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Te ustawienia mogą mieć **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Te ustawienia mogą mieć **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Platforma**  
- Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można wybierać **dowolny Procesor** (ustawienie domyślne), **x64**, i **x86**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można wybierać **dowolny Procesor** (ustawienie domyślne), **x64**, i **x86**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="start-action"></a>Akcja uruchamiania  
  **Akcja uruchamiania** wskazuje element uruchamianą podczas debugowania aplikacji: projekt, program niestandardowy, adres URL lub nie rób. Domyślnie ta opcja jest ustawiona na **spustit projekt**. **Akcja uruchamiania** ustawienie **debugowania** strony określa wartość `StartAction` właściwości.  
@@ -78,6 +78,6 @@ ms.locfileid: "63441429"
  [Debugowanie w programie Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Ustawienia projektu dla języka C# konfiguracji debugowania](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Ustawienia projektu dla języka Visual Basic konfiguracji debugowania](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Zarządzanie, debugowanie — właściwości](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Zarządzanie, debugowanie — właściwości](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [Instrukcje: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650254"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698720"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Następująca tabela zawiera listę często używanych właściwości, które s�
 |Satellite_Version|Określa informacje o wersji dla zestawu satelickiego.|  
 |Satellite_Win32Icon|Wstawia plik ikony .ico w zestawie satelickim.|  
 |Satellite_Win32Resource|Wstawia zasób Win32 (plik .res) do zestawu satelickiego.|  
-|SubsystemVersion|Określa minimalną wersję podsystemu, którego wygenerowany plik wykonywalny może używać. Ta właściwość jest równoważna `/subsystemversion` przełącznika kompilatora. Aby uzyskać informacje o wartości domyślnej tej właściwości, zobacz [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) lub [/subsystemversion (opcje kompilatora C#)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
+|SubsystemVersion|Określa minimalną wersję podsystemu, którego wygenerowany plik wykonywalny może używać. Ta właściwość jest równoważna `/subsystemversion` przełącznika kompilatora. Aby uzyskać informacje o wartości domyślnej tej właściwości, zobacz [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) lub [/subsystemversion (opcje kompilatora C#)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
 |TargetCompactFramework|Wersja platformy .NET Compact Framework, która jest wymagana do uruchamiania aplikacji, który jest kompilowany. Określenie jej pozwala odwoływać się do niektórych zestawów systemu, nie można się odwoływać inaczej.|  
 |TargetFrameworkVersion|Wersja [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , jest wymagana do uruchamiania aplikacji, który jest kompilowany. Określenie jej pozwala odwoływać się do niektórych zestawów systemu, nie można się odwoływać inaczej.|  
 |TreatWarningsAsErrors|Parametr logiczny który, jeśli `true`, powoduje, że wszystkie ostrzeżenia są traktowane jako błędy. Ten parametr jest równoważny `/nowarn` przełącznika kompilatora.|  

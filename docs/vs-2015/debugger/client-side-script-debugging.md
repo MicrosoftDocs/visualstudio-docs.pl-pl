@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773600"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702376"
 ---
 # <a name="client-side-script-debugging"></a>Debugowanie skryptu po stronie klienta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Debuger programu Visual Studio zapewnia kompleksowe środowisko debugowania do z
 ## <a name="debugging-ajax-script-applications"></a>Aplikacje debugowania skryptów AJAX  
  Aplikacje sieci Web z włączoną obsługą technologii AJAX intensywnie korzystają z kod skryptu i stanowią szczególne wyzwanie dla debugowania. Aby uzyskać informacje na temat technik debuggowania AJAX zobacz  
   
- [Debugowanie i śledzenie — Przegląd aplikacji Ajax](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debugowanie i śledzenie — Przegląd aplikacji Ajax](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Ograniczenia debugowania skryptu](../debugger/limitations-on-script-debugging.md)   
- [Windows zmiennej](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Windows zmiennej](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Okno bezpośrednie](../ide/reference/immediate-window.md)   
- [Debugowanie i śledzenie Ajax aplikacje — Przegląd](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugowanie i śledzenie Ajax aplikacje — Przegląd](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d979b53f4bd5962a01fa5eb1b77cc7c81c68a4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8dcb8fa757f1cccf2f3aef6c2520e0c61da0b9f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538465"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682676"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Błąd: Nie można automatycznie krok po kroku do serwera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Odczytuje błąd:
   
  Nie można automatycznie krok po kroku do serwera. Debuger nie został powiadomiony, zanim była wykonywana ta procedura zdalnego  
   
- Ten błąd może wystąpić, gdy chcesz wejść do usługi sieci web (zobacz [przechodzenie krok po kroku w usłudze internetowej XML](http://msdn.microsoft.com/8e67de38-bf5f-41cc-a457-1b88ce63d764)). Może wystąpić, gdy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nie jest skonfigurowany prawidłowo.  
+ Ten błąd może wystąpić, gdy chcesz wejść do usługi sieci web (zobacz [przechodzenie krok po kroku w usłudze internetowej XML](https://msdn.microsoft.com/8e67de38-bf5f-41cc-a457-1b88ce63d764)). Może wystąpić, gdy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nie jest skonfigurowany prawidłowo.  
   
  Możliwe przyczyny to:  
   

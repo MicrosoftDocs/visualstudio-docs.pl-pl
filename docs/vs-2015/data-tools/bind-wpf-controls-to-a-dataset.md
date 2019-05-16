@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80233f0786018bf1b4b18dbfa990a143d298f559
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5231e37b7dd4881deaa6c85c8aa0e33d15bfcc0e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439510"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673998"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
 - Zestawy danych i adapterów TableAdapter. Aby uzyskać więcej informacji, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
-- Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-project"></a>Utwórz projekt  
  Utwórz nowy projekt WPF. Projekt zostanie wyświetlona rekordy produktu.  
@@ -226,7 +226,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
   
     > [!NOTE]
-    > W tym przykładzie użyto `Save` metody `TableAdapter` Aby zapisać zmiany. Ta opcja jest odpowiednia w tym przewodniku, ponieważ tylko jeden danych tabeli został zmieniony. Jeśli potrzebujesz zapisać zmiany z wieloma tabelami danych, można też użyć `UpdateAll` metody `TableAdapterManager` generujący programu Visual Studio przy użyciu zestawu danych. Aby uzyskać więcej informacji, zobacz [TableAdapterManager — Przegląd](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+    > W tym przykładzie użyto `Save` metody `TableAdapter` Aby zapisać zmiany. Ta opcja jest odpowiednia w tym przewodniku, ponieważ tylko jeden danych tabeli został zmieniony. Jeśli potrzebujesz zapisać zmiany z wieloma tabelami danych, można też użyć `UpdateAll` metody `TableAdapterManager` generujący programu Visual Studio przy użyciu zestawu danych. Aby uzyskać więcej informacji, zobacz [TableAdapterManager — Przegląd](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
 ## <a name="test-the-application"></a>Testowanie aplikacji  
  Skompiluj i uruchom aplikację. Sprawdź, czy można wyświetlać i aktualizować rekordy produktu.  
@@ -260,5 +260,5 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
  [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
- [Omówienie projektanta Silverlight i WPF](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [Powiązanie danych — omówienie](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [Omówienie projektanta Silverlight i WPF](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [Powiązanie danych — omówienie](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

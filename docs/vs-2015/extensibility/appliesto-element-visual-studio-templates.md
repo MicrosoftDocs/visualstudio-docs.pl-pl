@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f6622c4774be5188aced606ce4b73dffe544aea1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044190"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698939"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
   
  Ten element jest opcjonalny. Plik szablonu może zawierać maksymalnie jedno jego wystąpienie. Element umożliwia jedynie potwierdzenie zgodności szablonu elementu z funkcjami aktualnie zaznaczonego aktywnego projektu. Nie można za jego pomocą ustawić niezgodności szablonu. Jeśli `AppliesTo` jest nieobecny lub wyrażenie pomyślnie zgadzaj, następnie `TemplateID` lub `TemplateGroupID` służy do potwierdzana, jak w poprzednich wersjach produktu.  
   
- Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do poprawnej wersji, zobacz [odwołuje się do zestawów zapewniane przez program Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do poprawnej wersji, zobacz [odwołuje się do zestawów zapewniane przez program Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate>  
  \<TemplateData>  

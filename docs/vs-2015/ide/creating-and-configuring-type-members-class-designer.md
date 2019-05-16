@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437607"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701211"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Tworzenie i konfigurowanie typów członków (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
 |Moduł (tylko w języku VB)|metoda, właściwość, pole, zdarzenie, konstruktor, stała|  
   
 > [!NOTE]
-> Utwórz bardziej zwartą deklarację właściwości, gdy akcesory właściwości get i set nie potrzebują dodatkowej logiki, za pomocą automatycznie wdrożonych właściwości (tylko C#). Aby wyświetlić pełny podpis z **Diagram klas** menu, wybierz **Zmień Format elementów członkowskich**, **Wyświetl pełną sygnaturę**. Aby uzyskać więcej informacji dotyczących automatycznie implementowanych właściwości, zobacz [implemented Properties](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Utwórz bardziej zwartą deklarację właściwości, gdy akcesory właściwości get i set nie potrzebują dodatkowej logiki, za pomocą automatycznie wdrożonych właściwości (tylko C#). Aby wyświetlić pełny podpis z **Diagram klas** menu, wybierz **Zmień Format elementów członkowskich**, **Wyświetl pełną sygnaturę**. Aby uzyskać więcej informacji dotyczących automatycznie implementowanych właściwości, zobacz [implemented Properties](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Typowe zadania  
   
@@ -131,7 +131,7 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
      **Uwaga:** Skróty klawiaturowe można również użyć do tworzenia elementów członkowskich. Aby uzyskać więcej informacji, zobacz [skróty myszy i klawiaturowe w diagramie klas i oknie szczegółów klasy (Projektant klas)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ## <a name="ModifyTypeMembers"></a> Modyfikowanie elementów członkowskich typu  
- Projektant klas umożliwia modyfikowanie składowych typów, które są wyświetlane na diagramie. Można modyfikować składowe dowolnego typu wyświetlane na diagramie klasy, które nie są tylko do odczytu. (Zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Składowe typu modyfikuje się za pomocą edycji w miejscu na powierzchni projektowej, w oknie Właściwości i w oknie Szczegóły klasy.  
+ Projektant klas umożliwia modyfikowanie składowych typów, które są wyświetlane na diagramie. Można modyfikować składowe dowolnego typu wyświetlane na diagramie klasy, które nie są tylko do odczytu. (Zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Składowe typu modyfikuje się za pomocą edycji w miejscu na powierzchni projektowej, w oknie Właściwości i w oknie Szczegóły klasy.  
   
  Wszystkie składowe wyświetlane w oknie Szczegóły klasy reprezentują składowe typów na diagramie klasy. Istnieją cztery rodzaje elementów członkowskich: metody, właściwości, pola i zdarzenia.  
   
@@ -263,7 +263,7 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
   
  Wszystkie komórki w oknie Szczegóły klasy są edytowalne, z kilkoma wyjątkami:  
   
-- Cały typ jest tylko do odczytu, gdy, na przykład znajduje się w zestawie odwołania (zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Po zaznaczeniu kształtu w Konstruktorze klasy, okno Szczegóły klasy wyświetla jego szczegóły w stanie tylko do odczytu.  
+- Cały typ jest tylko do odczytu, gdy, na przykład znajduje się w zestawie odwołania (zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Po zaznaczeniu kształtu w Konstruktorze klasy, okno Szczegóły klasy wyświetla jego szczegóły w stanie tylko do odczytu.  
   
 - Dla indeksatorów nazwa jest tylko do odczytu, a pozostałe (typ, modyfikator, podsumowanie) są edytowalne.  
   

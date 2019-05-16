@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443180"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696403"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Klasy Visual C++ w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > **Pokaż klasy pochodne** polecenie nie jest obsługiwane dla kodu C++. Klasy pochodne można wyświetlić, przechodząc do widoku klas, rozwijając węzeł typu, rozszerzając **typów pochodnych** podfolder, a następnie przeciągając tych typów na diagramie klasy.  
   
- Aby uzyskać więcej informacji na temat dziedziczenia klas wielu zobacz [dziedziczenie wielokrotne (NOTINBUILD)](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) i [wiele klas podstawowych](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Aby uzyskać więcej informacji na temat dziedziczenia klas wielu zobacz [dziedziczenie wielokrotne (NOTINBUILD)](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) i [wiele klas podstawowych](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Klasy abstrakcyjne  
  Projektant klasy obsługuje klasy abstrakcyjne (zwaną również "abstrakcyjnych klas bazowych"). Są to klasy, która nigdy nie wystąpienia, ale z którego można uzyskać innych klas. Przy użyciu przykładu z "Wielokrotne dziedziczenie" wcześniej w tym dokumencie, może być wystąpienia `Bird` klasy jako pojedyncze obiekty w następujący sposób:  
@@ -121,7 +121,7 @@ typedef struct
   
  Struktury mogą być również anonimowe. Projektant klas Wyświetla anonimowe klasy i struktury takie same, jak jest wyświetlana odpowiedniego typu. Mimo że można zadeklarować i wyświetlić anonimowe klas i struktur, Projektant klas nie będzie używać nazwa tagu, który określisz. Nazwa która generuje widoku klasy zostanie użyty. Klasy lub struktury jest wyświetlana w widoku klas i projektanta klas jako element o nazwie **__unnamed**.  
   
- Aby uzyskać więcej informacji na temat klasy anonimowe, zobacz [anonimowe typy klas](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
+ Aby uzyskać więcej informacji na temat klasy anonimowe, zobacz [anonimowe typy klas](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
   
 ## <a name="template-classes"></a>Klasy szablonów  
  Projektant klasy obsługuje wizualizacji klasy szablonu. Zagnieżdżone deklaracje są obsługiwane. W poniższej tabeli przedstawiono kilka typowych deklaracji.  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>Zobacz też  
  [Praca z kodem Visual C++ (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Klasy i struktury](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [Anonimowe typy klas](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Dziedziczenie wielokrotne](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [Wiele klas podstawowych](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [Szablony](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [Klasy i struktury](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [Anonimowe typy klas](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) Dziedziczenie wielokrotne](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Wiele klas podstawowych](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [Szablony](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 287e9362162c00a5292815ebacfb8047b2a0bb7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d669d01339b92c64cfe03ccb3ae897a1816aeac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799944"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701763"
 ---
 # <a name="properties-of-diagrams"></a>Właściwości diagramów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,4 +50,4 @@ Można ustawić właściwości, które określają, jak diagramy będzie wyświe
 |Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla okna ten diagram.|\<Brak >|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

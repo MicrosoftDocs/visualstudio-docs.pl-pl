@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3b7f4de72984bb5b009a890bba9678a59df6c7c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4570b8ed1afdfff2efd36dbc2f80e97cfbceecac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842882"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698062"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowni
 |**Artykuły techniczne i dzienniki**|[Centrum MSDN architektury](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [Testowanie aplikacji](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
  [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d603d2435183581cac92a7c6dae6a4044d8f8fe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f67acff26d346b915f6b457fc0887f1d5f2ec3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087433"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695905"
 ---
 # <a name="debug-64-bit-applications"></a>Debugowanie aplikacji 64-bitowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,8 +58,8 @@ Można debugować aplikację 64-bitowych, która jest uruchomiona na komputerze 
 - Zawieszanie się lub wydajności problem z programem Visual Studio zostały przekroczone. Jeśli ten problem występuje regularnie, można zbierać zrzuty programu Visual Studio (devenv.exe) i proces roboczy (msvsmon.exe) i wysyłać je do firmy Microsoft. 
   
 ## <a name="see-also"></a>Zobacz też  
- [Aplikacje 64-bitowe](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Konfigurowanie programów dla wersji 64-bitowych](http://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [Aplikacje 64-bitowe](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Konfigurowanie programów dla wersji 64-bitowych](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Obsługa 64-bitowego środowiska IDE programu Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
  [Przy użyciu plików zrzutu](../debugger/using-dump-files.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)

@@ -11,17 +11,17 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a06dc77f3515b3791f1cf71cf4ccbf19691c6e4a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4f82ed06e072ada6f52004482f5ddb9363b93625
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651646"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688642"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Import i eksport ustawień, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ta strona służy do określenia, gdzie jest zapisywany plik ustawień użytkownika, albo użyć pliku ustawień zespołu. Aby uzyskać więcej informacji na temat ustawień, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Ta strona służy do określenia, gdzie jest zapisywany plik ustawień użytkownika, albo użyć pliku ustawień zespołu. Aby uzyskać więcej informacji na temat ustawień, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

@@ -12,12 +12,12 @@ ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 162556c8b6b81f44db850c60c4b602e285f8ca94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c179a4443c23373fb92adf522ee0af34acb19c3f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695269"
 ---
 # <a name="idebugobject"></a>IDebugObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ IDebugObject : IUnknown
  Ewaluatora wyrażeń implementuje ten interfejs reprezentujący obiekt.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs jest klasą bazową dla wszystkich obiektów używanych przez ewaluatora wyrażeń w wyrażeniach przeanalizowany. Jest on zwracany przez wywołanie [powiązać](../../../extensibility/debugger/reference/idebugbinder-bind.md) metody. [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) uzyskuje bardziej wyspecjalizowane interfejsy, w tym interfejsie.  
+ Ten interfejs jest klasą bazową dla wszystkich obiektów używanych przez ewaluatora wyrażeń w wyrażeniach przeanalizowany. Jest on zwracany przez wywołanie [powiązać](../../../extensibility/debugger/reference/idebugbinder-bind.md) metody. [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) uzyskuje bardziej wyspecjalizowane interfejsy, w tym interfejsie.  
   
 ## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugObject`.  

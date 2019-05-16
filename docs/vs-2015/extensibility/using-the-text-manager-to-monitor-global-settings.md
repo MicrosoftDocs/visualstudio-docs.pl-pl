@@ -11,12 +11,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 792c566eda53cb8a4703e8ab03982952c518d8e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ece51450b8344ae4715a912399ec538171a26a5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763784"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695465"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Za pomocą Menedżera tekstu do monitorowania ustawień globalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +42,4 @@ W przypadku zastosowania edytorze podstawowych, należy monitorować zmiany wpro
   
 ## <a name="see-also"></a>Zobacz też  
  [W edytorze podstawowych](../extensibility/inside-the-core-editor.md)   
- [Funkcje edytora](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
+ [Funkcje edytora](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

@@ -8,12 +8,12 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 04168f2e69cb613a00313a45a38b2db2882d6d1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b80f1f90f3e661b0bbd09fadf173cb171cd97df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795662"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695484"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>Element MoreInfoURL (schemat VSIX Language Pack)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,4 +62,4 @@ Opcjonalna. Łącze do zlokalizowanych informacji o rozszerzeniu.
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)   
- [Odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Odwołanie do schematu 1.0 rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

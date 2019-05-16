@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c91fbd8a4fc3775272e578df43025bd7052c72ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 34349bf096d8bb98ae4b3de7c7a922b8d28bc4f8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783288"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703001"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Compiland — informacje jest podzielony między symboli z `SymTagCompiland` tag
 |[IDiaSymbol::get_frontEndMinor](../../debugger/debug-interface-access/idiasymbol-get-frontendminor.md)|`DWORD`|Fronton pomocniczy numer wersji kompilatora.|  
 |[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|`BOOL`|`TRUE` Jeśli ta compiland — zawiera informacje o debugowaniu (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|`BOOL`|`TRUE` Jeśli ta compiland — zawiera kod zarządzany (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` Jeśli compiland — został skompilowany przy użyciu [/GS (Sprawdzanie zabezpieczeń bufora)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) przełącznika kompilatora (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` Jeśli compiland — został skompilowany przy użyciu [/GS (Sprawdzanie zabezpieczeń bufora)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) przełącznika kompilatora (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|`BOOL`|`TRUE` Jeśli compiland — została przekonwertowana z kodu wspólny język pośredni (CIL) do kodu macierzystego.|  
 |[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|`BOOL`|`TRUE` Jeśli typy zdefiniowane przez użytkownika (UDT) mają zostać wyrównane do niektórych określona granica pamięci (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE` Jeśli compiland — został skompilowany przy użyciu [/hotpatch (Utwórz obraz Hotpatchable)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) przełącznika kompilatora (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
-|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` Jeśli compiland — został skompilowany przy użyciu [opcję/LTCG (Generowanie kodu Link-time)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) przełącznika kompilatora (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE` Jeśli compiland — został skompilowany przy użyciu [/hotpatch (Utwórz obraz Hotpatchable)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) przełącznika kompilatora (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
+|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` Jeśli compiland — został skompilowany przy użyciu [opcję/LTCG (Generowanie kodu Link-time)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) przełącznika kompilatora (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|`BOOL`|Wartość TRUE, jeśli compiland — to moduł Microsoft Intermediate Language (MSIL) (tylko w DIA SDK w wersji 8.0 lub nowszym).|  
 |[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)|`DWORD`|Język kodu źródłowego.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Compiland — symbol.|  

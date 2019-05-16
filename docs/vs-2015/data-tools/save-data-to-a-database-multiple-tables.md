@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 132aa0f37cc63e6afe2eff61a6d0f6dec5b200b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425018"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692449"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
  Dane można zapisać w aplikacji w bazie danych, wywołując `Update` metody TableAdapter. Podczas przeciągania tabel z **źródeł danych** okna na formularzu, kod, który jest wymagany w celu zapisywania danych jest automatycznie dodawany. Dodatkowe tabele, które są dodawane do formularza wymaga ręcznego dodawania tego kodu. W tym instruktażu pokazano, jak dodać kod, aby zapisać aktualizacje z więcej niż jedną tabelą.  
   
 > [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Zadania zilustrowane w tym przewodniku obejmują:  
   
 - Tworzenie nowego **aplikacji Windows** projektu.  
   
-- Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą [Kreatora konfiguracji źródła danych](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą [Kreatora konfiguracji źródła danych](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
-- Określa elementy w [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+- Określa elementy w [okna źródeł danych](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 - Tworzenie formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.  
   
@@ -64,7 +64,7 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 2. Nadaj projektowi nazwę `UpdateMultipleTablesWalkthrough`.  
   
-3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **UpdateMultipleTablesWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -126,7 +126,7 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
  Zaktualizuj bazy danych, wywołując `Update` metody **klientów** i **zamówienia** adapterów TableAdapter. Domyślnie program obsługi zdarzeń dla **Zapisz** przycisk<xref:System.Windows.Forms.BindingNavigator> zostanie dodany do kodu formularza w celu wysyłania aktualizacji do bazy danych. Ta procedura modyfikuje kod, aby wysłać aktualizacje we właściwej kolejności. Pozwala to wyeliminować możliwość zgłaszania błędów więzów integralności. Kod implementuje również dodanymi komentarzami opakowując wywołania aktualizacji w bloku try-catch. Można zmodyfikować kod odpowiednio do potrzeb aplikacji.  
   
 > [!NOTE]
-> Dla jasności ten przewodnik nie używa transakcji. Jeśli aktualizujesz, dwa lub więcej powiązanych tabel, obejmuje jednak logika aktualizacji w obrębie transakcji. Transakcja jest procesem, który gwarantuje, że wszystkie powiązane zmiany w bazie danych są pomyślnie, zanim wszelkie zmiany zostaną zatwierdzone. Aby uzyskać więcej informacji, zobacz [transakcje i współbieżność](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+> Dla jasności ten przewodnik nie używa transakcji. Jeśli aktualizujesz, dwa lub więcej powiązanych tabel, obejmuje jednak logika aktualizacji w obrębie transakcji. Transakcja jest procesem, który gwarantuje, że wszystkie powiązane zmiany w bazie danych są pomyślnie, zanim wszelkie zmiany zostaną zatwierdzone. Aby uzyskać więcej informacji, zobacz [transakcje i współbieżność](https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-add-update-logic-to-the-application"></a>Aby dodać logikę aktualizacji do aplikacji  
   
@@ -152,9 +152,9 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po utworzeniu formularza powiązanych z danymi w aplikacji Windows. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:  
   
-- Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zapytania parametrycznego do Windows Forms aplikacji](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zapytania parametrycznego do Windows Forms aplikacji](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
-- Edytowanie źródła danych, aby dodać lub usunąć obiekty bazy danych. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie zestawu danych](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+- Edytowanie źródła danych, aby dodać lub usunąć obiekty bazy danych. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie zestawu danych](https://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

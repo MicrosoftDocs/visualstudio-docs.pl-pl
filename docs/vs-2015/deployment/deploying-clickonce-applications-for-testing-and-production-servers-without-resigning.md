@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c7cc8a9d1767a289112b18dbfe7c81b9a010bae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a65f2e39eac5889b287b082b4cad6842f44aa2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422785"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675552"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Wdrażanie technologii ClickOnce do testowania i obsługi serwerów produkcyjnych bez ponownego podpisywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63422785"
 W tym temacie opisano nową funkcję wprowadzone w .NET Framework w wersji 3.5, która umożliwia wdrażanie aplikacji ClickOnce z wielu lokalizacji sieciowych bez ponownego podpisywania lub zmiana ClickOnce manifesty ClickOnce.  
   
 > [!NOTE]
-> Rezygnacja nadal jest to preferowana metoda wdrażania nowych wersji aplikacji. Jeśli to możliwe, należy użyć metody resigning. Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+> Rezygnacja nadal jest to preferowana metoda wdrażania nowych wersji aplikacji. Jeśli to możliwe, należy użyć metody resigning. Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
  Niezależnych dostawców oprogramowania i deweloperów innych firm można wyrazić zgodę na tę funkcję, co ułatwia ich klienci będą mogli aktualizować aplikacje usługi. Ta funkcja może być używana w następujących sytuacjach:  
   
@@ -65,5 +65,5 @@ W tym temacie opisano nową funkcję wprowadzone w .NET Framework w wersji 3.5, 
  Aby uzyskać instrukcje krok po kroku dotyczące tworzenia wdrożenia, które mogą zostać wdrożone w różnych lokalizacjach sieciowych, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Mage.exe (manifestu narzędzie generowania i edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (narzędzie generowania i edytowania manifestu, klient z interfejsem graficznym)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)
+ [Mage.exe (manifestu narzędzie generowania i edytowania)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (narzędzie generowania i edytowania manifestu, klient z interfejsem graficznym)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)

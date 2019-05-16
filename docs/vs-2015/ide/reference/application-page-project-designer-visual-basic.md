@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9979283258611b38e894c08446352082bcc7134e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433767"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688092"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplik
  Poniższe opcje umożliwiają konfigurowanie ogólnych ustawień dla aplikacji.  
   
  **Nazwa zestawu**  
- Określa nazwę pliku wyjściowego, który zawiera manifest zestawu. Jeśli zmienisz tę właściwość **Nazwa wyjściowego** zmienią właściwości. Ta zmiana może wprowadzić polecenie w wierszu polecenia, za pomocą [/out (Visual Basic)](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae). Aby dowiedzieć się, jak programowo dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Określa nazwę pliku wyjściowego, który zawiera manifest zestawu. Jeśli zmienisz tę właściwość **Nazwa wyjściowego** zmienią właściwości. Ta zmiana może wprowadzić polecenie w wierszu polecenia, za pomocą [/out (Visual Basic)](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae). Aby dowiedzieć się, jak programowo dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Główna przestrzeń nazw**  
  Określa podstawowej przestrzeni nazw dla wszystkich plików w projekcie. Na przykład jeśli ustawisz **Namespace głównego** do `Project1` i masz `Class1` poza dowolnego obszaru nazw w kodzie będzie jego przestrzeń nazw `Project1.Class1`. Jeśli masz `Class2` w przestrzeni nazw `Order` w kodzie, będzie jego przestrzeń nazw `Project1.Order.Class2`.  
@@ -43,11 +43,11 @@ Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplik
  Jeśli wyczyścisz **Namespace głównego**, struktura przestrzeni nazw projektu można określić w kodzie.  
   
 > [!NOTE]
-> Jeśli używasz Global — słowo kluczowe w [Namespace, instrukcja](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), można zdefiniować przestrzeni nazw poza głównej przestrzeni nazw projektu. Jeśli wyczyścisz **Namespace głównego**, `Global` staje się przestrzeń nazw najwyższego poziomu, co eliminuje potrzebę `Global` — słowo kluczowe w `Namespace` instrukcji. Aby uzyskać więcej informacji, zobacz "Globalne — słowo kluczowe w Namespace instrukcji" w [przestrzeni nazw w języku Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
+> Jeśli używasz Global — słowo kluczowe w [Namespace, instrukcja](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), można zdefiniować przestrzeni nazw poza głównej przestrzeni nazw projektu. Jeśli wyczyścisz **Namespace głównego**, `Global` staje się przestrzeń nazw najwyższego poziomu, co eliminuje potrzebę `Global` — słowo kluczowe w `Namespace` instrukcji. Aby uzyskać więcej informacji, zobacz "Globalne — słowo kluczowe w Namespace instrukcji" w [przestrzeni nazw w języku Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
   
- Aby uzyskać informacje o sposobie tworzenia przestrzeni nazw w kodzie, zobacz [Namespace, instrukcja](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
+ Aby uzyskać informacje o sposobie tworzenia przestrzeni nazw w kodzie, zobacz [Namespace, instrukcja](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
   
- Aby uzyskać więcej informacji na temat właściwości przestrzeń nazw głównego zobacz [/rootnamespace —](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
+ Aby uzyskać więcej informacji na temat właściwości przestrzeń nazw głównego zobacz [/rootnamespace —](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
   
  Aby dowiedzieć się, jak programowo dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -71,10 +71,10 @@ Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplik
 > [!NOTE]
 > Środowisko wykonawcze Windows można typów projektów, aby były wyświetlane jako obiektów natywnych w jakikolwiek język są one używane. Na przykład JavaScript aplikacji współdziałających ze środowiska wykonawczego Windows ich używać jako zbiór obiektów JavaScript i aplikacji w języku C# korzystanie z biblioteki jako kolekcję obiektów platformy .NET. Upakowanie danych wyjściowych projektu w formacie pliku WinMD, możesz korzystać z zalet tej samej technologii, która używa środowiska wykonawczego Windows.  
   
- Aby uzyskać więcej informacji na temat **typ aplikacji** właściwości, zobacz [/TARGET (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Aby uzyskać informacje o tym, jak programowo uzyskać dostęp właściwości do, zobacz <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Aby uzyskać więcej informacji na temat **typ aplikacji** właściwości, zobacz [/TARGET (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Aby uzyskać informacje o tym, jak programowo uzyskać dostęp właściwości do, zobacz <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Ikona**  
- Określa plik .ico, który ma być używany jako ikona programu. Wybierz  **\<Przeglądaj … >** aby przejść do istniejącej grafiki. Zobacz [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (lub [/win32icon (opcje kompilatora C#)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Określa plik .ico, który ma być używany jako ikona programu. Wybierz  **\<Przeglądaj … >** aby przejść do istniejącej grafiki. Zobacz [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (lub [/win32icon (opcje kompilatora C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Formularz początkowy / obiekt początkowy / startowy identyfikator URI**  
  Określa punkt startowy aplikacji formularza lub wpis.  
@@ -85,7 +85,7 @@ Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplik
   
  Jeśli **struktury aplikacji Włącz** jest wyczyszczone, ta lista staje się **obiekt początkowy** i pokazuje formularze i klas lub moduły z `Sub Main`.  
   
- **Obiekt początkowy** definiuje punkt wejścia, który ma być wywoływana podczas ładowania aplikacji. Zazwyczaj ta opcja jest ustawiona na formularzu głównym w aplikacji lub do `Sub Main` procedury, które należy uruchamiać podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie ma punktu wejścia, ich jedyną opcją dla tej właściwości jest **(Brak)**. Aby uzyskać więcej informacji, zobacz [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ **Obiekt początkowy** definiuje punkt wejścia, który ma być wywoływana podczas ładowania aplikacji. Zazwyczaj ta opcja jest ustawiona na formularzu głównym w aplikacji lub do `Sub Main` procedury, które należy uruchamiać podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie ma punktu wejścia, ich jedyną opcją dla tej właściwości jest **(Brak)**. Aby uzyskać więcej informacji, zobacz [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
  **Informacje o zestawie**  
  Kliknij ten przycisk, aby wyświetlić [informacje o zestawie — okno dialogowe](../../ide/reference/assembly-information-dialog-box.md).  
@@ -110,7 +110,7 @@ Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplik
  Następujące ustawienia są dostępne w **właściwości szablonu aplikacji Windows** sekcji. Te opcje są dostępne tylko wtedy, gdy **struktury aplikacji Włącz** pole wyboru jest zaznaczone. Opis sekcji następujące po niej **właściwości szablonu aplikacji Windows** ustawienia dla aplikacji Windows Presentation Foundation (WPF).  
   
  **Włączyć style wizualne XP**  
- Włącza lub wyłącza stylów wizualnych Windows XP, znany także jako *Windows XP motywy*. Na przykład stylów wizualnych Windows XP włącz kontrolek z zaokrąglone rogi i dynamiczne kolorów. Wartość domyślna jest ustawiona. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych Windows XP zobacz [funkcje systemu Windows XP i kontrolki formularzy Windows](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Włącza lub wyłącza stylów wizualnych Windows XP, znany także jako *Windows XP motywy*. Na przykład stylów wizualnych Windows XP włącz kontrolek z zaokrąglone rogi i dynamiczne kolorów. Wartość domyślna jest ustawiona. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych Windows XP zobacz [funkcje systemu Windows XP i kontrolki formularzy Windows](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
   
  **Pojedyncze wystąpienie aplikacji**  
  Zaznacz to pole wyboru, aby uniemożliwić użytkownikom uruchamianie wielu wystąpień aplikacji. Ustawieniem domyślnym dla tego pola wyboru jest wyczyszczone. To ustawienie zezwala na wiele wystąpień aplikacji do uruchomienia.  
@@ -159,4 +159,4 @@ Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplik
  <xref:System.Windows.Application> Obiektu wywołuje zdarzenia po wprowadzeniu pewnych zmian stanu aplikacji (np. na uruchamianie aplikacji lub zamknięcie). Aby uzyskać pełną listę zdarzeń, które udostępnia tę klasę, zobacz <xref:System.Windows.Application>. Zdarzenia te są obsługiwane w sekcji kodu użytkownika `Application` klasy częściowej.  
   
 ## <a name="see-also"></a>Zobacz też  
-[Zarządzanie właściwościami aplikacji](../../ide/application-properties.md) [pisany w rozwiązaniach pakietu Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Zarządzanie właściwościami aplikacji](../../ide/application-properties.md) [pisany w rozwiązaniach pakietu Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

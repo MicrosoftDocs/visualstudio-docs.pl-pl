@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9652073b6e5ea58b8206b195f3a99769a1b63a91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 69ea9c3a41f83b9c06dc18d6da1f859017f12ca5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771644"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697807"
 ---
 # <a name="no-source-available"></a>Nie jest dostępne żadne źródło
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ Projekt nie zawiera kodu źródłowego dla kodu, który chcesz wyświetlić. Naj
 ## <a name="see-also"></a>Zobacz też  
  [Okno dialogowe strony właściwości rozwiązania źródła pliki, typowe właściwości debugowania](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
  [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [SOS.dll (rozszerzenie do debugowania SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)
+ [SOS.dll (rozszerzenie do debugowania SOS)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)

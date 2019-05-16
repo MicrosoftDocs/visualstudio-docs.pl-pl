@@ -19,17 +19,17 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47fba490edd07c61490760114ca8df91b3e35eb1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 71ef27b61e162fedbf0b8fcaac38d93bedbc77c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668226"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682403"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Odczytuje metadane w określonym zestawie i dodaje niezbędne wpisy do rejestru, co umożliwia klientom COM utworzyć [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] klasy w sposób niewidoczny dla użytkownika. Zachowanie to zadanie jest podobne, ale nie są identyczne, z [Regasm.exe (narzędzie rejestracji zestawów)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb).  
+Odczytuje metadane w określonym zestawie i dodaje niezbędne wpisy do rejestru, co umożliwia klientom COM utworzyć [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] klasy w sposób niewidoczny dla użytkownika. Zachowanie to zadanie jest podobne, ale nie są identyczne, z [Regasm.exe (narzędzie rejestracji zestawów)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb).  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry `RegisterAssembly` zadania.  

@@ -10,12 +10,12 @@ ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e7055d69ea387994ea8011ac779334e61b899abf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9cf06e881034b980b8e40e095779007b3c7fa6f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435701"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703603"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Rejestrowanie niestandardowego aparatu debugowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "63435701"
 Aparat debugowania musi zarejestrować się jako fabryki klas z konwencjami COM także zarejestrować przy użyciu programu Visual Studio za pomocą podklucza rejestru programu Visual Studio.  
   
 > [!NOTE]
-> Przykładowy sposób rejestrowania aparat debugowania można znaleźć w tym przykładzie TextInterpreter powstała jako część [samouczka: Tworzenie aparatu debugowania, korzystając z modelu COM ATL](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+> Przykładowy sposób rejestrowania aparat debugowania można znaleźć w tym przykładzie TextInterpreter powstała jako część [samouczka: Tworzenie aparatu debugowania, korzystając z modelu COM ATL](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
 ## <a name="dll-server-process"></a>Proces serwera biblioteki DLL  
  Zazwyczaj aparat debugowania jest wdrażany w jego własnej biblioteki DLL jako serwera COM. Oznacza to, że aparat debugowania należy zarejestrować identyfikator CLSID jego fabryki klas z modelem COM programu Visual Studio do niego dostęp. Następnie aparat debugowania musi zarejestrować się przy użyciu programu Visual Studio w celu ustanowienia żadnych właściwości (w przeciwnym razie znane jako metryki) debugowania aparatu obsługuje. Wybór metryki, które są zapisywane w podkluczu rejestru programu Visual Studio dla aparatu debugowania zależy od funkcje, które obsługuje aparatu debugowania.  
@@ -53,4 +53,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [Pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Samouczek: Tworzenie aparatu debugowania, korzystając z modelu COM ATL](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [Samouczek: Tworzenie aparatu debugowania, korzystając z modelu COM ATL](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)

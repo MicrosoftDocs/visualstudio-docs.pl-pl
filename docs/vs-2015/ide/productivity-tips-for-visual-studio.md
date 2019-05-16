@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b9f9f851ee1c326f9d8cc2ea50d1f542ec00f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696293"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio — wskazówki dotyczące produktywności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Wykorzystując te porady, możesz można szybciej i wydajniej zapisu, przejść 
 ## <a name="BKMK_Debugging"></a> Debugowanie kodu
  Debugowanie może zajmować dużo czasu, ale poniższe porady mogą pomóc przyspieszyć proces.
 
-- **Testowanie strony, aplikacji lub witryny w różnych przeglądarkach**. Podczas debugowania kodu można łatwo przełączać się między przeglądarkami zainstalowanych w sieci web, w tym [narzędzie Page Inspector (Visual Studio)](http://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), bez konieczności otwierania **przeglądanie za pomocą** okno dialogowe. Możesz użyć **Debuguj element docelowy** listę, która znajduje się na **standardowa** pasku narzędzi obok pozycji **Rozpocznij debugowanie** przycisk, aby szybko sprawdzić, jakiej przeglądarki używasz podczas debugowania lub Wyświetlanie stron.
+- **Testowanie strony, aplikacji lub witryny w różnych przeglądarkach**. Podczas debugowania kodu można łatwo przełączać się między przeglądarkami zainstalowanych w sieci web, w tym [narzędzie Page Inspector (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), bez konieczności otwierania **przeglądanie za pomocą** okno dialogowe. Możesz użyć **Debuguj element docelowy** listę, która znajduje się na **standardowa** pasku narzędzi obok pozycji **Rozpocznij debugowanie** przycisk, aby szybko sprawdzić, jakiej przeglądarki używasz podczas debugowania lub Wyświetlanie stron.
 
      ![Wybierz opcje debugowania w przeglądarce sieci Web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 

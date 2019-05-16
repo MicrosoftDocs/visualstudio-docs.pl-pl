@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9e0024ae6db5af3f1cf23c07fe29fbac8e4827d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a360ee4ad35fd48a46f6d866912a05a584a54c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788892"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687316"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Zabezpieczenie metody powinno być nadzbiorem typu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54788892"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ ma zabezpieczenia deklaratywne, jeden z jego metody ma zabezpieczenia deklaratywne dla tego samego działania zabezpieczeń i akcji zabezpieczeń nie jest [zapotrzebowania na łącza](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) lub [Inheritancedemand](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)oraz uprawnienia sprawdzany przez typ nie są podzbiorem uprawnienia metodę.
+ Typ ma zabezpieczenia deklaratywne, jeden z jego metody ma zabezpieczenia deklaratywne dla tego samego działania zabezpieczeń i akcji zabezpieczeń nie jest [zapotrzebowania na łącza](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) lub [Inheritancedemand](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)oraz uprawnienia sprawdzany przez typ nie są podzbiorem uprawnienia metodę.
 
 ## <a name="rule-description"></a>Opis reguły
  Metoda nie powinna mieć zarówno metody typu poziomie i zabezpieczenia deklaratywne dla tego samego działania. Dwa testy nie są połączone; dotyczy tylko żądanie poziom metody. Na przykład, jeśli typem zażąda uprawnień `X`, oraz jednej z jego metod zażąda uprawnień `Y`, kod nie musi mieć uprawnienie `X` wykonania metody.
@@ -62,4 +62,4 @@ ms.locfileid: "54788892"
  **[ma uprawnienia do zapisu (wymagane przez typ)] informacje osobiste: 6/16/1964 12:00:00 AM**
  **[nie uprawnień do odczytu (wymagany przez metodę)] można uzyskać dostępu do informacji osobistych: Żądanie nie powiodło się.**
 ## <a name="see-also"></a>Zobacz też
- [Wytyczne dotyczące bezpiecznego programowania](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Inheritancedemand](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [Link zapotrzebowanie](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dane i modelowanie](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Wytyczne dotyczące bezpiecznego programowania](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Inheritancedemand](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [Link zapotrzebowanie](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dane i modelowanie](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

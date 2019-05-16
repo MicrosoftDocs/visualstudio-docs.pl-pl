@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db7ccd5a4b8266122c2d295cde3cdcca87dc0576
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 91b34183e36c86290c14e3da7d17687d45cfe180
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657837"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694657"
 ---
 # <a name="import-and-export-settings-command"></a>Import i eksport ustawień — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
  Opcjonalna. Przywraca bieżące ustawienia.  
   
 ## <a name="remarks"></a>Uwagi  
- Uruchomienie tego polecenia, na których nie zmienia otwiera **Import i eksport ustawień** kreatora. Aby uzyskać więcej informacji, zobacz [jak: Udostępnianie ustawień pomiędzy komputerami lub wersjami programu Visual Studio](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
+ Uruchomienie tego polecenia, na których nie zmienia otwiera **Import i eksport ustawień** kreatora. Aby uzyskać więcej informacji, zobacz [jak: Udostępnianie ustawień pomiędzy komputerami lub wersjami programu Visual Studio](https://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
   
 ## <a name="example"></a>Przykład  
  Następujące polecenie eksportuje bieżące ustawienia do pliku `MyFile.vssettings`.  
@@ -53,5 +53,5 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
