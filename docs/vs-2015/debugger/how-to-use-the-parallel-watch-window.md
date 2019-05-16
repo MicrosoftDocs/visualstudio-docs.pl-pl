@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445089"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697492"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,4 +90,4 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Instrukcje: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Przewodnik: debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Przewodnik: debugowanie aplikacji C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

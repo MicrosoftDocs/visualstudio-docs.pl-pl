@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403568"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686889"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmienianie projektu przy użyciu wizualizacji i modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,11 +297,11 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
-- [Zdefiniuj proces kompilacji](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Zdefiniuj proces kompilacji](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [Korzystać z procesu kompilacji ewidencjonowanej warunkowo do sprawdzenia poprawności zmian](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Korzystać z procesu kompilacji ewidencjonowanej warunkowo do sprawdzenia poprawności zmian](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [Dostosowywanie szablonu procesu kompilacji](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Dostosowywanie szablonu procesu kompilacji](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> Ogólne porady dotyczące tworzenia i używania modeli  
   
@@ -336,13 +336,13 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz:  
   
-- [Śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [Łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md)  
   
-- [Wykresy, pulpity nawigacyjne i raporty dla programu Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Wykresy, pulpity nawigacyjne i raporty dla programu Visual Studio ALM](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [Tworzenie zaległości i zadań za pomocą programu Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Tworzenie zaległości i zadań za pomocą programu Project](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> Testowanie, sprawdzanie poprawności i ewidencjonowanie kodu  
  Jak wykonania poszczególne zadania zespoły ewidencjonują kod do kontroli wersji serwera Team Foundation i otrzymują przypomnienia z Team Foundation Server, jeśli zapomną. Zanim Team Foundation Server zaakceptuje ewidencjonowania, zespoły uruchamiają testy jednostkowe i sprawdzanie poprawności warstwy, aby sprawdzić kod w oparciu o przypadki testowe i projekt. Używają programu Team Foundation Server do uruchamiania kompilacji, zautomatyzowanych testów jednostek i sprawdzania poprawności warstw w regularnie. Dzięki temu, upewnij się, że dany kod spełnia następujące kryteria:  
@@ -359,13 +359,13 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz:  
   
-- [Testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [Testowanie aplikacji](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)  
   
 - [Korzystanie z kontroli wersji](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [Kompiluj aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Kompiluj aplikację](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Aktualizowanie systemu przy użyciu wizualizacji i modelowania  
  Lucerna i obiad teraz muszą zintegrować swoje systemy płatności. Poniższe sekcje pokazują, że diagramy modelowania w programie Visual Studio pomagają w wykonaniu tego zadania:  
@@ -888,6 +888,6 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
  [Wizualizacja kodu](../modeling/visualize-code.md)   
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)   
  [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)   
- [Używaj modeli w Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Używaj modeli w Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Weryfikacja systemu w czasie projektowania](../modeling/validate-your-system-during-development.md)   
  [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)
