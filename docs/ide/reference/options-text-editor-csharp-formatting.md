@@ -18,18 +18,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a11fa7913828ef557c87ec50184c9de35a9e5bc4
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817824"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847443"
 ---
-# <a name="options-text-editor-c-code-style-formatting"></a>Opcje, Edytor tekstu, C#, styl i formatowanie kodu
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Okno dialogowe Opcje: Edytor tekstu \> C# \> styl kodu \> formatowania
 
-Użyj **formatowanie** Strona opcji, aby ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony Opcje, wybierz opcję **narzędzia** > **opcje**. W **opcje** okna dialogowego wybierz **edytora tekstów** > **C#** > **styl kodu**  >  **Formatowanie**.
+Użyj **formatowanie** Opcje strony i jego podstrony ([**wcięcia**](#indentation-page), **nowe wiersze**, **odstępy** a **zawijania**) można ustawić opcje formatowania kodu w edytorze kodu.
 
-## <a name="general-page"></a>Strona Ogólne
+Aby uzyskać dostęp do tej strony Opcje, wybierz opcję **narzędzia** > **opcje** z paska menu. W **opcje** okna dialogowego wybierz **edytora tekstów** > **C#** > **styl kodu**  >  **Formatowanie**.
+
+> [!TIP]
+> **Wcięcia**, **nowe wiersze**, **odstępy**, i **zawijania** podstrony każdego Wyświetla okno podglądu u dołu, który pokazuje wpływ każdej opcji. Aby użyć okno podglądu, wybierz opcję formatowania. Okno podglądu pokazano przykład odpowiadającego wybranej opcji. Po zmianie ustawienia przez wybranie przycisku radiowego lub okienka do zaznaczenia, aktualizacje okna (wersja zapoznawcza), aby pokazać efekt nowe ustawienie.
+
+## <a name="formatting-general-page"></a>Formatowanie strony (Ogólne)
 
 ### <a name="general-settings"></a>Ustawienia ogólne
 
@@ -43,9 +48,17 @@ Te ustawienia mają wpływ na *podczas* edytora kodu stosuje opcji formatowania 
 |**Automatycznie Formatuj przy powrocie**|Po wybraniu formatowania tekstu po **Enter** jest wciśnięty, aby dopasować opcje formatowania, wybrany dla edytora.|
 |**Automatycznie Formatuj przy wklejaniu**|Po wybraniu formatuje tekst, który jest wklejany do edytora, aby dopasować opcje formatowania, wybrany dla edytora.|
 
+::: moniker range="vs-2019"
+
+Jeśli wcześniej zastosowane ustawienia stylu kodu dla C# plików przy użyciu **Formatuj dokument** w programie Visual Studio 2017, które funkcje są teraz dostępne jako polecenie [ **oczyszczania kodu** ](../code-styles-and-code-cleanup.md#apply-code-styles).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 ### <a name="format-document-settings"></a>Format ustawień dokumentów
 
-Te ustawienia skonfigurować **Formatuj dokument** polecenia do wykonywania oczyszczania dodatkowy kod w pliku. Aby uzyskać więcej informacji na temat sposobu stosowania tych ustawień, zobacz [polecenia dokumentu w formacie](../code-styles-and-quick-actions.md#format-document-command).
+Te ustawienia skonfigurować **Formatuj dokument** polecenia do wykonywania oczyszczania dodatkowy kod w pliku. Aby uzyskać więcej informacji na temat sposobu stosowania tych ustawień, zobacz [polecenia dokumentu w formacie](../code-styles-and-code-cleanup.md#apply-code-styles).
 
 |Etykieta|Opis|Odpowiednie polecenie EditorConfig i narzędzia > Opcje zasad|
 |-----------|-----------------|-----------------|-----------------|
@@ -68,13 +81,18 @@ Te ustawienia skonfigurować **Formatuj dokument** polecenia do wykonywania oczy
 
 ![Ustawienia oczyszczania kodu dla języka C# w programie Visual Studio](media/format-document-settings.png)
 
-## <a name="preview-windows"></a>Windows (wersja zapoznawcza)
+::: moniker-end
 
-**Wcięcia**, **nowe wiersze**, **odstępy**, i **zawijania** podstrony każdego wyświetlić okno podglądu u dołu. Okno podglądu przedstawiono wpływ poszczególnych opcji. Aby użyć okno podglądu, wybierz opcję formatowania. Okno podglądu pokazano przykład odpowiadającego wybranej opcji. Po zmianie ustawienia przez wybranie przycisku radiowego lub okienka do zaznaczenia, aktualizacje okna (wersja zapoznawcza), aby pokazać efekt nowe ustawienie.
+## <a name="indentation-page"></a>Strona wcięć
 
-## <a name="indentation-remarks"></a>Uwagi wcięć
+Opcje wcięcia na tej stronie są stosowane podczas automatycznego formatowania kodu. Jeden jest przykładem podczas automatycznego formatowania kodu, gdy Wklej kod do pliku podczas **automatycznie Formatuj przy wklejaniu** jest zaznaczone. ( **Automatycznie Formatuj przy wklejaniu** opcji podlega **formatowanie** > **ogólne**.)
 
-Wcięcie opcji na **karty** stron dla każdego z języków tylko określić, gdzie edytora kodu umieszcza kursor po naciśnięciu klawisza **Enter** na końcu wiersza. Wcięcie opcji w obszarze **formatowanie** są stosowane, gdy kod jest formatowana automatycznie, na przykład po wklejeniu kodu do pliku podczas **automatycznie Formatuj przy wklejaniu** jest zaznaczone i kiedy bloku formatowana jest wpisany ręcznie.
+![C#Opcje wcięcia edytora tekstu w programie Visual Studio](media/csharp-indentation-options.png)
+
+> [!TIP]
+> Dostępne są również opcje wcięcia w **edytora tekstów** > **C#** > **karty** Strona opcji. Te opcje tylko określić, gdzie edytora kodu umieszcza kursor po naciśnięciu klawisza **Enter** na końcu wiersza.
+>
+> ![C#Edytor tekstu karty Opcje w programie Visual Studio](media/csharp-tabs-options.png)
 
 ## <a name="see-also"></a>Zobacz także
 

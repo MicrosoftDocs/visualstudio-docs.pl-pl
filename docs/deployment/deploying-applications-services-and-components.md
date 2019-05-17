@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9735ee997a18b7867394621ea9b7e6c3a644cb46
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e66eb7fc2915514b91135e8c89843a0d979abf4a
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676610"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845908"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrażanie w programie Visual Studio
 
@@ -40,7 +40,7 @@ Zobacz, przewodniki Szybki Start i samouczków, aby uzyskać instrukcje krok po 
 
 Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoczęcia wdrożenia etapowego, w którym inne narzędzie służy do wdrażania końcowego.
 
-- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, **Python**, i. **.NET Core**: Narzędzie publikowania do wdrożenia w lokalnym folderze. Opcje dostępne są zależne od typu aplikacji. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) Następnie wybierz pozycję **folderu**. Aby uzyskać więcej informacji, zobacz [wdrażanie w lokalnym folderze](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, **Python**, i. **.NET Core**: Narzędzie publikowania do wdrożenia w lokalnym folderze. Opcje dostępne są zależne od typu aplikacji. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli wcześniej nie skonfigurowano żadnych profilów publikowania, musisz kliknąć **Utwórz nowy profil**.) Następnie wybierz pozycję **folderu**. Aby uzyskać więcej informacji, zobacz [wdrażanie w lokalnym folderze](quickstart-deploy-to-local-folder.md).
 
     ![Wybierz polecenie Publikuj](../deployment/media/quickstart-publish.png)
 

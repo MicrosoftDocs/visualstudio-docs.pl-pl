@@ -1,6 +1,6 @@
 ---
 title: 'CA1812: Unikaj klas wewnętrznych bez wystąpień'
-ms.date: 11/04/2016
+ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def22bd4aee4f64b5e14f2bbe7978a0dfa061261
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796907"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841433"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Unikaj klas wewnętrznych bez wystąpień
 
@@ -32,7 +32,7 @@ ms.locfileid: "62796907"
 
 ## <a name="cause"></a>Przyczyna
 
-Wystąpienie typu na poziomie zestawu nie jest tworzone przez kod w zestawie.
+Wewnętrzny typ (w poziomie zestawu) nigdy nie zostanie uruchomiony.
 
 ## <a name="rule-description"></a>Opis reguły
 
@@ -50,19 +50,17 @@ Następujące typy nie są sprawdzane przez tę regułę:
 
 - Typy tablic emitowane przez kompilator
 
-- Typy, którego nie można utworzyć wystąpienia i definiują `static` (`Shared` w języku Visual Basic) tylko metody.
+- Typy, nie można utworzyć wystąpienia i tylko definiują [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` w języku Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) metody.
 
-Jeśli zastosujesz <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> do zestawu, który jest analizowana, ta zasada zostanie przeprowadzona na żadnych konstruktorów, które są oznaczone jako `internal` , ponieważ nie można sprawdzić, czy pole jest używany przez inny `friend` zestawu.
-
-Mimo że nie można obejść to ograniczenie w Visual Studio Code Analysis, zewnętrzne autonomicznego programu FxCop wystąpi na wewnętrzny konstruktory co `friend` zestawu znajduje się w analizie.
+Jeśli zastosujesz <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> do zestawu, który jest analizowana, ta zasada nie oznaczy typy, które są oznaczone jako [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` w języku Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) może być polem używane przez zestaw przyjazny.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Usuń typ lub Dodaj kod, który korzysta z niego. Jeśli typ zawiera tylko metody statyczne, Dodaj jedną z następujących do typu, aby uniemożliwić kompilatorowi emitowania publiczne wystąpienia domyślnego konstruktora:
+Aby naprawić naruszenie tej zasady, Usuń typ lub Dodaj kod, który korzysta z niego. Jeśli typ zawiera tylko `static` metod, Dodaj jedną z następujących do typu, aby uniemożliwić kompilatorowi emitowania publiczne wystąpienia domyślnego konstruktora:
 
 - Konstruktor prywatny dla typów, których platformą docelową .NET Framework w wersji 1.0 i 1.1.
 
-- `static` (`Shared` w języku Visual Basic) modyfikator dla typów, których platformą docelową [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- `static` Modyfikator C# typów, których platformą docelową [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] lub nowszej.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -70,9 +68,9 @@ Jest bezpieczne pominąć ostrzeżenie od tej reguły. Firma Microsoft zaleca, a
 
 - Klasa jest tworzona za pośrednictwem metody z późnym wiązaniem odbicia, takich jak <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- Klasa jest tworzony automatycznie w czasie wykonywania lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Na przykład klas, które implementują <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> lub <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Klasa jest tworzona automatycznie przez środowisko uruchomieniowe lub ASP.NET. Niektóre przykłady automatycznie utworzone klasy są tymi, które implementują <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> lub <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- Klasa jest przekazywany jako parametr typu ogólnego, który ma nowe ograniczenie. Na przykład poniższy przykład zgłosi tej reguły.
+- Klasa jest przekazywany jako parametr typu, który ma [ `new` ograniczenie](/dotnet/csharp/language-reference/keywords/new-constraint). Poniższy przykład zostaną oflagowane przez regułę CA1812:
 
     ```csharp
     internal class MyClass
@@ -88,17 +86,13 @@ Jest bezpieczne pominąć ostrzeżenie od tej reguły. Firma Microsoft zaleca, a
             return new T();
         }
     }
-    // [...]
+
     MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
     mc.Create();
     ```
 
-  W takich przypadkach zaleca się, że pominąć to ostrzeżenie.
-
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-[CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
-
-[CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)

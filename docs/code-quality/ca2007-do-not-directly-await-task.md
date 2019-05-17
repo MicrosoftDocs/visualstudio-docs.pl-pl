@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545231"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841390"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Nie oczekuj bezpośrednio zadania
 
@@ -76,7 +76,7 @@ public async Task Execute()
 
 Możesz określić, czy chcesz wykluczyć metod asynchronicznych, które nie zwrócą wartość od tej reguły. Aby wykluczyć tych rodzajów metod, należy dodać następujące pary klucz wartość do pliku .editorconfig w projekcie:
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA2007.exclude_async_void_methods = true
 
@@ -86,7 +86,7 @@ dotnet_code_quality.CA2007.skip_async_void_methods = true
 
 Można również skonfigurować, której dane wyjściowe rodzaju zestawu, aby zastosować tę regułę do. Na przykład tylko Zastosuj tę regułę do kodu, który tworzy aplikacji konsoli lub dynamicznie łączonych bibliotek (czyli nie aplikacja interfejsu użytkownika), Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
 
-```
+```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 

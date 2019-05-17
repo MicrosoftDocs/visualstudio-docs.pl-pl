@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806487"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841537"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia XPath
 
@@ -32,7 +32,7 @@ Potencjalnie niezaufane dane wejściowe żądania HTTP osiągnie zapytania XPath
 
 ## <a name="rule-description"></a>Opis reguły
 
-Podczas pracy z niezaufane dane wejściowe, można w trosce o atakami polegającymi na iniekcji XPath. Konstruowanie zapytania XPath przy użyciu niezaufane dane wejściowe mogą umożliwić osobie atakującej manipulowanie złośliwie zapytanie, aby zwrócić wynik niezamierzone i potencjalnie ujawnić zawartość XML kwerendy. 
+Podczas pracy z niezaufane dane wejściowe, można w trosce o atakami polegającymi na iniekcji XPath. Konstruowanie zapytania XPath przy użyciu niezaufane dane wejściowe mogą umożliwić osobie atakującej manipulowanie złośliwie zapytanie, aby zwrócić wynik niezamierzone i potencjalnie ujawnić zawartość XML kwerendy.
 
 Ta zasada próbuje odnaleźć danych wejściowych z żądań HTTP, osiągając wyrażenie XPath.
 
@@ -40,7 +40,7 @@ Ta zasada próbuje odnaleźć danych wejściowych z żądań HTTP, osiągając w
 > Ta reguła nie może śledzić dane w zestawach. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP i przekazuje je do innego zestawu, który wykonuje kwerendę XPath, ta zasada nie wygenerowanie ostrzeżenia.
 
 > [!NOTE]
-> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w `.editorconfig` plików.
+> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w pliku EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -92,7 +92,7 @@ Partial Public Class WebForm
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
         Dim operation As String = Me.Request.Form("operation")
-        
+
         ' If an attacker uses this for input:
         '     ' or 'a' = 'a
         ' Then the XPath query will be:

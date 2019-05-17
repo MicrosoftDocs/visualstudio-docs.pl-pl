@@ -3,59 +3,54 @@ title: Wymaga autoryzacji serwera proxy | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
-ms.topic: reference
+ms.topic: troubleshooting
 ms.assetid: c2d24ae1-9902-460e-b72a-0299eed9ee82
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74f8fdd738c613977a73cc3d79b5ba880c7e6e74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 520c31f671aee05663a5471aca05cfe06313b168
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116098"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847034"
 ---
-# <a name="proxy-authorization-required"></a>Wymaga autoryzacji serwera proxy
+# <a name="proxy-authorization-required"></a>Wymagana autoryzacja serwera proxy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni do programu Visual Studio Online za pośrednictwem serwera proxy i serwer proxy blokuje wywołania. Visual Studio Online jest używany do przechowywania użytkownik zalogowany do środowiska IDE.  
-  
-## <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
-  
-- Uruchom ponownie program Visual Studio. Powinna zostać wyświetlona okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia w oknie dialogowym.  
-  
-- Jeśli powyższy krok nie rozwiąże problemu, może to być spowodowane serwera proxy nie jest wyświetlany monit o poświadczenia dla http://go.microsoft.com adresy, ale jest to spowodowane *. adresów visualStudio.com. Na tych serwerach należy umieścić na liście dozwolonych poniżej, aby odblokować wszystkie w scenariuszach logowania w programie Visual Studio:  
-  
-    - *.windows.net  
-  
-    - *.microsoftonline.com  
-  
-    - *.visualstudio.com  
-  
-    - *.microsoft.com  
-  
-    - *.live.com  
-  
-- W przeciwnym razie możesz usunąć http://go.microsoft.com adresów z listy dozwolonych adresów, tak, aby w oknie dialogowym uwierzytelniania serwera proxy, pojawia się dla obu http://go.microsoft.com adres i punkty końcowe serwera, po ponownym uruchomieniu programu Visual Studio.  
-  
-- LUB  
-  
-- Poświadczenia domyślne za pomocą serwera proxy, należy wykonać następujące:  
-  
-    1. Znajdź devenv.exe.config (plik devenv.exe w konfiguracji): **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (lub **% ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Common7\IDE**) .  
-  
-    2. Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj następujący kod:  
-  
-        ```xml  
-        <defaultProxy enabled="true" useDefaultCredentials="true">  
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#" http://<yourproxy:port#>"/>  
-        </defaultProxy>  
-  
-        ```  
-  
-         Adres serwera proxy poprawne należy wstawić dla sieci w `proxyaddress="<http://<yourproxy:port#>`.  
-  
-- LUB  
-  
-- Można również postępuj zgodnie z instrukcjami [ten wpis](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) można dodać kod, który umożliwi używanie serwera proxy.
+**Wymaga autoryzacji serwera Proxy** błąd występuje zazwyczaj, gdy użytkownicy są połączeni zasoby online programu Visual Studio za pośrednictwem serwera proxy i serwer proxy blokuje wywołania.
+
+Aby rozwiązać ten problem, spróbuj wykonać co najmniej jeden z następujących czynności:
+
+- Uruchom ponownie program Visual Studio. Powinna zostać wyświetlona okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia w oknie dialogowym.
+
+- Jeśli powyższy krok nie rozwiąże problemu, może to być spowodowane serwera proxy nie jest wyświetlany monit o poświadczenia dla http://go.microsoft.com adresy, ale jest to spowodowane *. adresów visualStudio.com. Na tych serwerach należy dodać następujące adresy URL do listy dozwolonych, aby odblokować wszystkie w scenariuszach logowania w programie Visual Studio:
+
+    - *.windows.net
+
+    - *.microsoftonline.com
+
+    - *.visualstudio.com
+
+    - *.microsoft.com
+
+    - *.live.com
+
+- Możesz usunąć http://go.microsoft.com adresów z listy dozwolonych, aby w oknie dialogowym uwierzytelniania serwera proxy, pojawia się dla obu http://go.microsoft.com adres i punkty końcowe serwera, po ponownym uruchomieniu programu Visual Studio.
+
+- Poświadczenia domyślne za pomocą serwera proxy, wykonaj następujące czynności:
+
+   1. Znajdź devenv.exe.config (plik devenv.exe w konfiguracji): **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (lub **% ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Common7\IDE**) .
+
+   2. Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj następujący kod:
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#" http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      Wstaw adres prawidłowy serwer proxy dla Twojej sieci w `proxyaddress="<http://<yourproxy:port#>`.
+
+- Postępuj zgodnie z instrukcjami w [ten wpis w blogu](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) można dodać kod, który pozwala na używanie serwera proxy.
