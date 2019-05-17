@@ -1,8 +1,8 @@
 - name: Programowanie aplikacji za pomocą Projektanta przepływu pracy
   items:
-    - name: Programowanie aplikacji za pomocą Projektanta przepływu pracy
+    - name: Omówienie i wymagania wstępne
       href: developing-applications-with-the-workflow-designer.md
-    - name: Tworzenie projektu przepływu pracy
+    - name: Projekty przepływu pracy
       items:
         - name: Tworzenie projektu przepływu pracy
           href: creating-a-workflow-project.md
@@ -28,11 +28,10 @@
       href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
     - name: Projektanci działań
       items:
-        - name: Projektanci działań
-          href: using-the-activity-designers.md
         - name: Projektanci działań przepływu sterowania
           items:
-            - name: Projektanci działań przepływu sterowania
+            - name: Omówienie i dokumentacja
+              displayName: Control flow activity designers
               href: control-flow-activity-designers.md
             - name: 'DoWhile, projektant działań'
               href: dowhile-activity-designer.md
@@ -56,7 +55,8 @@
               href: while-activity-designer.md
         - name: Projektanci działań Flowchart
           items:
-            - name: Projektanci działań Flowchart
+            - name: Omówienie i dokumentacja
+              displayName: Flow chart activity designers
               href: flowchart-activity-designers.md
             - name: 'Flowchart, projektant działań'
               href: flowchart-activity-designer.md
@@ -66,7 +66,8 @@
               href: flowswitch-t-activity-designer.md
         - name: Projektanci działań automatu stanów
           items:
-            - name: Projektanci działań automatu stanów
+            - name: Omówienie i dokumentacja
+              displayName: State machine activity designers
               href: state-machine-activity-designers.md
             - name: 'StateMachine, projektant działań'
               href: statemachine-activity-designer.md
@@ -78,7 +79,8 @@
               href: transition-activity-designer.md
         - name: Projektanci działań Messaging
           items:
-            - name: Projektanci działań Messaging
+            - name: Omówienie i dokumentacja
+              displayName: Messaging activity designers
               href: messaging-activity-designers.md
             - name: 'CorrelationScope, projektant działań'
               href: correlationscope-activity-designer.md
@@ -96,7 +98,8 @@
               href: transactedreceivescope-activity-designer.md
         - name: Projektanci działań Runtime
           items:
-            - name: Projektanci działań Runtime
+            - name: Omówienie i dokumentacja
+              displayName: Run-time activity designers
               href: runtime-activity-designers.md
             - name: 'Persist, projektant działań'
               href: persist-activity-designer.md
@@ -104,7 +107,8 @@
               href: terminateworkflow-activity-designer.md
         - name: Projektanci działań Primitives
           items:
-            - name: Projektanci działań Primitives
+            - name: Omówienie i dokumentacja
+              displayName: Primitives activity designers
               href: primitives-activity-designers.md
             - name: 'Assign, projektant działań'
               href: assign-activity-designer.md
@@ -118,7 +122,8 @@
               href: writeline-activity-designer.md
         - name: Projektanci działań Transaction
           items:
-            - name: Projektanci działań Transaction
+            - name: Omówienie i dokumentacja
+              displayName: Transaction activity designers
               href: transaction-activity-designers.md
             - name: 'CancellationScope, projektant działań'
               href: cancellationscope-activity-designer.md
@@ -132,7 +137,8 @@
               href: transactionscope-activity-designer.md
         - name: Projektanci działań Collection
           items:
-            - name: Projektanci działań Collection
+            - name: Omówienie i dokumentacja
+              displayName: Collection activity designers
               href: collection-activity-designers.md
             - name: 'AddToCollection<T>, projektant działań'
               href: addtocollection-t-activity-designer.md
@@ -144,7 +150,8 @@
               href: removefromcollection-t-activity-designer.md
         - name: Projektanci działań Error Handling
           items:
-            - name: Projektanci działań Error Handling
+            - name: Omówienie i dokumentacja
+              displayName: Error handling activity designers
               href: error-handling-activity-designers.md
             - name: 'Rethrow, projektant działań'
               href: rethrow-activity-designer.md
@@ -154,11 +161,12 @@
               href: trycatch-activity-designer.md
         - name: Projektanci działań Migration
           items:
-            - name: Projektanci działań Migration
+            - name: Omówienie i dokumentacja
+              displayName: Migration activity designers
               href: migration-activity-designers.md
             - name: 'Interop, projektant działań'
               href: interop-activity-designer.md
-    - name: Debugowania przepływów pracy
+    - name: Debugowanie
       items:
         - name: Debugowania przepływów pracy
           href: debugging-workflows-with-the-workflow-designer.md
@@ -168,10 +176,8 @@
           href: how-to-debug-xaml-with-the-workflow-designer.md
         - name: Nieobsługiwane scenariusze debugowania
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: Odwołanie interfejsu użytkownika
+    - name: Dokumentacja interfejsu użytkownika
       items:
-        - name: Odwołanie interfejsu użytkownika
-          href: workflow-designer-ui-help.md
         - name: 'Wyszukiwanie i wybieranie typu .NET, okno dialogowe'
           href: browse-and-select-a-dotnet-type-dialog-box.md
         - name: 'Definicja wyrażenia CorrelatesOn, okno dialogowe'

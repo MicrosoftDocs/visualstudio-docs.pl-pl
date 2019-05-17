@@ -20,9 +20,10 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Narzędzia platformy Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Narzędzia do obsługi zestawów danych
-      href: dataset-tools-in-visual-studio.md
+    - name: Zestawy danych
       items:
+        - name: Narzędzia do obsługi zestawów danych
+          href: dataset-tools-in-visual-studio.md
         - name: Typizowane i nietypizowane zestawy danych
           href: typed-vs-untyped-datasets.md
         - name: Omówienie adapterów TableAdapter
@@ -37,18 +38,21 @@
   items:
     - name: Tworzenie bazy danych
       href: create-a-sql-database-by-using-a-designer.md
-    - name: Dodawanie połączeń
-      href: add-new-connections.md
+    - name: Połączenia
       items:
+        - name: Dodawanie połączeń
+          href: add-new-connections.md
         - name: Zapisywanie i edytowanie parametrów połączeń
           href: how-to-save-and-edit-connection-strings.md
         - name: Łączenie z danymi w bazie danych programu Access
           href: connect-to-data-in-an-access-database-windows-forms.md
     - name: Dodawanie źródeł danych platformy .NET
       href: add-new-data-sources.md
-    - name: Korzystanie z narzędzi LINQ to SQL
-      href: linq-to-sql-tools-in-visual-studio2.md
+    - name: LINQ to SQL Tools
       items:
+        - name: Omówienie
+          displayName: LINQ to SQL tools
+          href: linq-to-sql-tools-in-visual-studio2.md
         - name: Zmienianie zwracanego typu metody DataContext
           href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
         - name: Tworzenie metod DataContext zamapowanych na procedury składowane
@@ -69,18 +73,19 @@
           href: how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md
         - name: Włączanie i wyłączanie pluralizacji
           href: how-to-turn-pluralization-on-and-off-o-r-designer.md
-    - name: Korzystanie z narzędzi do obsługi zestawów danych
+    - name: Używanie narzędzi do obsługi zestawów danych
       items:
-        - name: Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
-          href: create-and-configure-datasets-in-visual-studio.md
+        - name: Tworzenie zestawów danych
           items:
+            - name: Tworzenie i konfigurowanie zestawów danych
+              href: create-and-configure-datasets-in-visual-studio.md
             - name: Tworzenie relacji między zestawami danych
               href: relationships-in-datasets.md
-            - name: Tworzenie obiektu DataSet za pomocą Projektanta obiektów Dataset
+            - name: Tworzenie obiektu DataSet za pomocą Projektanta obiektów DataSet
               href: walkthrough-creating-a-dataset-with-the-dataset-designer.md
-            - name: Tworzenie obiektu DataTable za pomocą Projektanta obiektów Dataset
+            - name: Tworzenie obiektu DataTable za pomocą Projektanta obiektów DataSet
               href: walkthrough-creating-a-datatable-in-the-dataset-designer.md
-        - name: TableAdapters
+        - name: Konfigurowanie adapterów TableAdapter
           items:
             - name: Tworzenie i konfigurowanie adapterów TableAdapter
               href: create-and-configure-tableadapters.md
@@ -88,7 +93,7 @@
               href: create-parameterized-tableadapter-queries.md
             - name: Bezpośredni dostęp do bazy danych za pomocą adaptera TableAdapter
               href: directly-access-the-database-with-a-tableadapter.md
-            - name: Wyłączanie ograniczeń podczas zapełniania zestawu danych
+            - name: Wyłączanie ograniczeń podczas wypełniania zestawu danych
               href: turn-off-constraints-while-filling-a-dataset.md
             - name: Rozszerzanie funkcjonalności adaptera TableAdapter
               href: extend-the-functionality-of-a-tableadapter.md
@@ -96,11 +101,13 @@
           href: read-xml-data-into-a-dataset.md
         - name: Edytowanie danych w zestawach danych
           href: edit-data-in-datasets.md
-        - name: Weryfikowanie danych w zestawach danych
+        - name: Walidacja danych w zestawach danych
           href: validate-data-in-datasets.md
         - name: Zapisywanie danych z powrotem w bazie danych
-          href: save-data-back-to-the-database.md
           items:
+            - name: Omówienie
+              displayName: Save data to database
+              href: save-data-back-to-the-database.md
             - name: Wstawianie nowych rekordów do bazy danych
               href: insert-new-records-into-a-database.md
             - name: Aktualizowanie danych za pomocą adaptera TableAdapter
@@ -109,9 +116,10 @@
               href: hierarchical-update.md
             - name: Obsługiwanie wyjątku współbieżności
               href: handle-a-concurrency-exception.md
-            - name: Zapisywanie danych przy użyciu transakcji
-              href: save-data-by-using-a-transaction.md
+            - name: Transakcje
               items:
+                - name: Zapisywanie danych przy użyciu transakcji
+                  href: save-data-by-using-a-transaction.md
                 - name: 'Przewodnik: zapisywanie danych w transakcji'
                   href: save-data-in-a-transaction.md
             - name: Zapisywanie danych w bazie danych (wiele tabel)
@@ -134,17 +142,19 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: Powiązywanie kontrolek ze źródłami danych
-      href: bind-controls-to-data-in-visual-studio.md
+    - name: Formanty
       items:
+        - name: Powiązywanie kontrolek ze źródłami danych
+          href: bind-controls-to-data-in-visual-studio.md
         - name: Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych
           href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
         - name: Dodawanie kontrolek niestandardowych do okna źródeł danych
           href: add-custom-controls-to-the-data-sources-window.md
-        - name: Powiązywanie kontrolek WPF z danymi
-          href: bind-wpf-controls-to-data-in-visual-studio.md
+        - name: Kontrolki WPF
           items:
-            - name: Powiązywanie kontrolek WPF z zestawem danych
+            - name: Powiązywanie kontrolek WPF z danymi
+              href: bind-wpf-controls-to-data-in-visual-studio.md
+            - name: Wiązanie kontrolek WPF z zestawem danych
               href: bind-wpf-controls-to-a-dataset.md
             - name: Powiązywanie kontrolek WPF z usługą danych programu WCF
               href: bind-wpf-controls-to-a-wcf-data-service.md
@@ -154,9 +164,10 @@
               href: display-related-data-in-wpf-applications.md
             - name: Powiązywanie kontrolek z obrazami z bazy danych
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Powiązywanie kontrolek Windows Forms z danymi
-          href: bind-windows-forms-controls-to-data-in-visual-studio.md
+        - name: Kontrolki Windows Forms
           items:
+            - name: Powiązywanie kontrolek Windows Forms z danymi
+              href: bind-windows-forms-controls-to-data-in-visual-studio.md
             - name: Filtrowanie i sortowanie danych w aplikacji Windows Forms
               href: filter-and-sort-data-in-a-windows-forms-application.md
             - name: Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
@@ -178,8 +189,10 @@
         - name: Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
           href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
     - name: Usługi Windows Communication Foundation i usługi danych programu WCF
-      href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
       items:
+        - name: Omówienie technologii WCF w programie Visual Studio
+          displayName: Windows Communication Foundation Services and WCF Data Services
+          href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
         - name: Praca z modelem koncepcyjnym
           href: working-with-a-conceptual-model-wcf-data-services.md
         - name: Łączenie z danymi w usłudze
@@ -207,9 +220,9 @@
         - name: Dziedziczenie klas danych
           href: data-class-inheritance-o-r-designer.md
         - name: Komunikaty narzędzia Object Relational Designer
-          href: o-r-designer-messages.md
           items:
             - name: 'Nie można usunąć wybranej klasy, ponieważ jest ona używana jako zwracany typ przez co najmniej jedną metodę DataContext'
+              displayName: O/R Designer messages
               href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
             - name: Parametry połączenia zawierają poświadczenia z hasłem w postaci zwykłego tekstu i nie korzystają ze zintegrowanych zabezpieczeń
               href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md

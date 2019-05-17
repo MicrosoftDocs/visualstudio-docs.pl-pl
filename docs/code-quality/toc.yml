@@ -20,8 +20,9 @@
     - name: Analizowanie kodu zarządzanego pod kątem błędów
       href: walkthrough-analyzing-managed-code-for-code-defects.md
     - name: Analizowanie kodu C/C++ pod kątem błędów
-      href: walkthrough-analyzing-c-cpp-code-for-defects.md
       items:
+        - name: Analizowanie kodu C/C++ pod kątem błędów
+          href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: Przykładowy pokaz
           href: demo-sample.md
 - name: Przewodniki z instrukcjami
@@ -35,8 +36,9 @@
             - name: Zainstaluj
               href: install-fxcop-analyzers.md
             - name: Konfiguracja
-              href: configure-fxcop-analyzers.md
               items:
+                - name: Konfiguracja
+                  href: configure-fxcop-analyzers.md
                 - name: Opcje konfiguracji
                   href: fxcop-analyzer-options.md
             - name: Migrowanie ze statycznej analizy kodu
@@ -56,8 +58,9 @@
         - name: Ręczne przeprowadzanie analizy kodu
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Pomijanie ostrzeżeń
-          href: in-source-suppression-overview.md
           items:
+            - name: Pomijanie ostrzeżeń
+              href: in-source-suppression-overview.md
             - name: Pomijanie ostrzeżeń analizy wygenerowanego kodu
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: Dostosowywanie słownika analizy kodu
@@ -73,8 +76,9 @@
         - name: Ustawianie właściwości analizy kodu
           href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
         - name: Korzystanie z adnotacji SAL w celu zmniejszenia liczby błędów kodu
-          href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
           items:
+            - name: Korzystanie z adnotacji SAL w celu zmniejszenia liczby błędów kodu
+              href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
             - name: Zrozumienie SAL
               href: understanding-sal.md
             - name: Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
@@ -94,13 +98,15 @@
         - name: Określanie dodatkowych informacji o kodzie za pomocą funkcji __Analysis_assume
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
     - name: Zestawy reguł
-      href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: Zestawy reguł
+          href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Zestawy reguł dla pakietów analizatora
           href: analyzer-rule-sets.md
         - name: Zestawy reguł dla kodu zarządzanego
-          href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
+            - name: Zestawy reguł dla kodu zarządzanego
+              href: how-to-configure-code-analysis-for-a-managed-code-project.md
             - name: Konfigurowanie analizy kodu dla aplikacji internetowej ASP.NET
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Zestawy reguł dla kodu w języku C++
@@ -110,8 +116,9 @@
         - name: Korzystanie z edytora zestawów reguł
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: Zasady zaewidencjonowania
-      href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
       items:
+        - name: Zasady zaewidencjonowania
+          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
         - name: Implementowanie niestandardowych zasad zaewidencjonowania analizy kodu dla kodu zarządzanego
           href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
         - name: Wymuszanie kodu łatwego w utrzymaniu
@@ -129,8 +136,9 @@
 - name: Tematy pomocy
   items:
     - name: Zestawy reguł
-      href: rule-set-reference.md
       items:
+        - name: Zestawy reguł
+          href: rule-set-reference.md
         - name: Zestaw reguł All Rules
           href: all-rules-rule-set.md
         - name: Podstawowy zestaw reguł poprawności dla zarządzanego kodu
@@ -158,20 +166,23 @@
         - name: Zestaw reguł zabezpieczeń dla zarządzanego kodu
           href: security-rules-rule-set-for-managed-code.md
     - name: Analiza kodu zarządzanego — ostrzeżenia
-      href: code-analysis-for-managed-code-warnings.md
       items:
+        - name: Analiza kodu zarządzanego — ostrzeżenia
+          href: code-analysis-for-managed-code-warnings.md
         - name: Ostrzeżenia analizy kodu dla zarządzanego kodu według identyfikatora CheckId
           href: code-analysis-warnings-for-managed-code-by-checkid.md
         - name: Ostrzeżenia dotyczące kryptografii
-          href: cryptography-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące kryptografii
+              href: cryptography-warnings.md
             - name: 'CA5350: Nie używaj słabych algorytmów kryptograficznych'
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: 'CA5351: Nie używaj uszkodzonych algorytmów kryptograficznych'
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
         - name: Ostrzeżenia dotyczące projektu
-          href: design-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące projektu
+              href: design-warnings.md
             - name: 'CA1000: Nie deklaruj statycznych składowych na typach ogólnych'
               href: ca1000-do-not-declare-static-members-on-generic-types.md
             - name: 'CA1001: Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji'
@@ -297,8 +308,9 @@
             - name: 'CA2210: Zestawy powinny mieć prawidłowe silne nazwy'
               href: ca2210-assemblies-should-have-valid-strong-names.md
         - name: Ostrzeżenia dotyczące globalizacji
-          href: globalization-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące globalizacji
+              href: globalization-warnings.md
             - name: 'CA1300: Określ argument MessageBoxOptions'
               href: ca1300-specify-messageboxoptions.md
             - name: 'CA1301: Unikaj duplikowania akceleratorów'
@@ -322,8 +334,9 @@
             - name: 'CA2101: Określ kierowanie dla argumentów ciągu P-Invoke'
               href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
         - name: Ostrzeżenia dotyczące współdziałania
-          href: interoperability-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące współdziałania
+              href: interoperability-warnings.md
             - name: 'CA1400: Punkty wejścia P-Invoke powinny istnieć'
               href: ca1400-p-invoke-entry-points-should-exist.md
             - name: 'CA1401: Elementy P-Invoke nie powinny być widoczne'
@@ -357,8 +370,9 @@
             - name: 'CA1415: Poprawnie zadeklaruj elementy P-Invoke'
               href: ca1415-declare-p-invokes-correctly.md
         - name: Ostrzeżenia dotyczące dostępności
-          href: maintainability-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące dostępności
+              href: maintainability-warnings.md
             - name: 'CA1500: Nazwy zmiennych nie powinny być zgodne z nazwami pól'
               href: ca1500-variable-names-should-not-match-field-names.md
             - name: 'CA1501: Unikaj nadmiernego dziedziczenia'
@@ -372,15 +386,17 @@
             - name: 'CA1506: Unikaj nadmiernego sprzężenia klas'
               href: ca1506-avoid-excessive-class-coupling.md
         - name: Ostrzeżenia dotyczące mobilności
-          href: mobility-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące mobilności
+              href: mobility-warnings.md
             - name: 'CA1600: Nie używaj priorytetu procesu o wartości Bezczynny'
               href: ca1600-do-not-use-idle-process-priority.md
             - name: 'CA1601: Nie używaj czasomierzy, które uniemożliwiają zmiany stanu zasilania'
               href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
         - name: Ostrzeżenia dotyczące nazewnictwa
-          href: naming-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące nazewnictwa
+              href: naming-warnings.md
             - name: 'CA1700: Nie nadawaj wartościom wyliczeniowym nazwy „Reserved”'
               href: ca1700-do-not-name-enum-values-reserved.md
             - name: 'CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter'
@@ -428,8 +444,9 @@
             - name: 'CA1726: Używaj preferowanych terminów'
               href: ca1726-use-preferred-terms.md
         - name: Ostrzeżenia dotyczące wydajności
-          href: performance-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące wydajności
+              href: performance-warnings.md
             - name: 'CA1800: Nie rzutuj niepotrzebnie'
               href: ca1800-do-not-cast-unnecessarily.md
             - name: 'CA1802: Używaj literałów w odpowiednich miejscach'
@@ -463,8 +480,9 @@
             - name: 'CA1824: Oznaczaj zestawy za pomocą atrybutu NeutralResourcesLanguageAttribute'
               href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
         - name: Ostrzeżenia dotyczące przenośności
-          href: portability-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące przenośności
+              href: portability-warnings.md
             - name: 'CA1900: Pola typu wartości powinny być przenośne'
               href: ca1900-value-type-fields-should-be-portable.md
             - name: 'CA1901: Deklaracje metody P-Invoke powinny być przenośne'
@@ -472,8 +490,9 @@
             - name: 'CA1903: Używaj tylko interfejsu API platformy docelowej'
               href: ca1903-use-only-api-from-targeted-framework.md
         - name: Ostrzeżenia dotyczące niezawodności
-          href: reliability-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące niezawodności
+              href: reliability-warnings.md
             - name: 'CA2000: Likwiduj obiekty przed utratą zakresu'
               href: ca2000-dispose-objects-before-losing-scope.md
             - name: 'CA2001: Unikaj wywoływania problematycznych metod'
@@ -489,8 +508,9 @@
             - name: 'CA2007: Nie oczekuj bezpośrednio zadania'
               href: ca2007-do-not-directly-await-task.md
         - name: Ostrzeżenia dotyczące zabezpieczeń
-          href: security-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące zabezpieczeń
+              href: security-warnings.md
             - name: 'CA2100: Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach'
               href: ca2100-review-sql-queries-for-security-vulnerabilities.md
             - name: 'CA2102: Przechwytuj wyjątki bez atrybutu CLSCompliant w ogólnych procedurach obsługi'
@@ -587,6 +607,20 @@
               href: ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md
             - name: 'CA2302: Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize'
               href: ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md
+            - name: 'CA2305: Nie używaj niezabezpieczonego deserializatora LosFormatter'
+              href: ca2305-do-not-use-insecure-deserializer-losformatter.md
+            - name: 'CA2310: Nie używaj niezabezpieczonego deserializatora NetDataContractSerializer'
+              href: ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md
+            - name: 'CA2311: Nie wykonuj deserializacji bez uprzedniego ustawienia właściwości NetDataContractSerializer.Binder'
+              href: ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md
+            - name: 'CA2312: Upewnij się, że właściwość NetDataContractSerializer.Binder jest ustawiona przed deserializacją'
+              href: ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md
+            - name: 'CA2315: Nie używaj niezabezpieczonego deserializatora ObjectStateFormatter'
+              href: ca2315-do-not-use-insecure-deserializer-objectstateformatter.md
+            - name: 'CA2321: Nie wykonuj deserializacji za pomocą obiektu JavaScriptSerializer zainicjowanego przy użyciu parametru SimpleTypeResolver'
+              href: ca2321.md
+            - name: 'CA2322: Upewnij się, że obiekt JavaScriptSerializer nie został zainicjowany przy użyciu parametru SimpleTypeResolver przed deserializacją'
+              href: ca2322.md
             - name: 'CA3001: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL'
               href: ca3001-review-code-for-sql-injection-vulnerabilities.md
             - name: 'CA3002: Przegląd kodu pod kątem luk umożliwiających działanie skryptów między witrynami'
@@ -620,8 +654,9 @@
             - name: 'CA3147: Oznaczanie procedur obsługi zleceń za pomocą tokenu ValidateAntiForgeryToken'
               href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: Ostrzeżenia dotyczące wykorzystania
-          href: usage-warnings.md
           items:
+            - name: Ostrzeżenia dotyczące wykorzystania
+              href: usage-warnings.md
             - name: 'CA1801: Dokonaj przeglądu nieużywanych parametrów'
               href: ca1801-review-unused-parameters.md
             - name: 'CA1806: Nie ignoruj wyników metod'
@@ -711,8 +746,9 @@
         - name: Błędy zasad analizy kodu
           href: code-analysis-policy-errors.md
     - name: Ostrzeżenia kontrolerów podstawowych wytycznych dotyczących języka C++
-      href: code-analysis-for-cpp-corecheck.md
       items:
+        - name: Ostrzeżenia kontrolerów podstawowych wytycznych dotyczących języka C++
+          href: code-analysis-for-cpp-corecheck.md
         - name: C26400
           href: C26400.md
         - name: C26401
@@ -868,8 +904,9 @@
         - name: C26498
           href: C26498.md
     - name: Ostrzeżenia dotyczące analizy kodu w językach C/C++
-      href: code-analysis-for-c-cpp-warnings.md
       items:
+        - name: Ostrzeżenia dotyczące analizy kodu w językach C/C++
+          href: code-analysis-for-c-cpp-warnings.md
         - name: C1250
           href: c1250.md
         - name: C1251
@@ -1451,8 +1488,9 @@
         - name: C28351
           href: c28351.md
     - name: Błędy aplikacji analizy kodu
-      href: code-analysis-application-errors.md
       items:
+        - name: Błędy aplikacji analizy kodu
+          href: code-analysis-application-errors.md
         - name: CA0001
           href: ca0001.md
         - name: CA0051

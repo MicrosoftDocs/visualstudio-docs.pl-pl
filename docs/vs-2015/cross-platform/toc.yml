@@ -1,0 +1,78 @@
+- name: Programowanie mobilnych aplikacji międzyplatformowych
+  items:
+    - name: Programowanie mobilnych aplikacji międzyplatformowych
+      href: cross-platform-mobile-development-in-visual-studio.md
+    - name: Visual Studio i Xamarin
+      items:
+        - name: Visual Studio i Xamarin
+          href: visual-studio-and-xamarin.md
+        - name: Instalator i instalacja
+          href: setup-and-install.md
+        - name: Informacje dotyczące programowania mobilnego za pomocą platformy Xamarin
+          href: learn-about-mobile-development-with-xamarin.md
+        - name: Sprawdzanie środowiska Xamarin
+          href: verify-your-xamarin-environment.md
+        - name: Podstawowe informacje dotyczące tworzenia aplikacji za pomocą platformy Xamarin.Forms w programie Visual Studio
+          href: learn-app-building-basics-with-xamarin-forms-in-visual-studio.md
+        - name: Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika przy użyciu platformy Xamarin w programie Visual Studio
+          href: build-apps-with-native-ui-using-xamarin-in-visual-studio.md
+        - name: Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin
+          href: application-lifecycle-management-alm-with-xamarin-apps.md
+        - name: 'Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac'
+          href: setup-install-and-verifications-for-mac-users.md
+    - name: Visual Studio Tools for Apache Cordova
+      href: visual-studio-tools-for-apache-cordova.md
+    - name: Narzędzia Visual Studio Tools for Unity
+      items:
+        - name: Narzędzia Visual Studio Tools for Unity
+          href: visual-studio-tools-for-unity.md
+        - name: Omówienie
+          href: overview-of-visual-studio-tools-for-unity.md
+        - name: Wprowadzenie
+          href: getting-started-with-visual-studio-tools-for-unity.md
+        - name: Używanie rozszerzenia Visual Studio Tools for Unity
+          href: using-visual-studio-tools-for-unity.md
+        - name: Programowanie dla rozszerzenia Visual Studio Tools for Unity
+          items:
+            - name: Programowanie dla rozszerzenia Visual Studio Tools for Unity
+              href: programming-visual-studio-tools-for-unity.md
+            - name: Przykład — generowanie pliku projektu
+              href: customize-project-files-created-by-vstu.md
+            - name: Przykład — wywołanie zwrotne dziennika
+              href: share-the-unity-log-callback-with-vstu.md
+        - name: Rozwiązywanie problemów i znane problemy
+          href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+        - name: Dziennik zmian
+          href: change-log-visual-studio-tools-for-unity.md
+        - name: Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity
+          href: application-lifecycle-management-alm-with-unity-apps.md
+    - name: Język Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+      items:
+        - name: Język Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+          href: visual-cpp-for-cross-platform-mobile-development.md
+        - name: Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+          items:
+            - name: Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+              href: install-visual-cpp-for-cross-platform-mobile-development.md
+            - name: Instalowanie i konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS
+              href: install-and-configure-tools-to-build-using-ios.md
+        - name: Tworzenie aplikacji systemu Android działania natywnego
+          href: create-an-android-native-activity-app.md
+        - name: Tworzenie aplikacji OpenGL ES w systemach Android i iOS
+          href: build-an-opengl-es-application-on-android-and-ios.md
+        - name: Importowanie projektu XCode
+          href: import-an-xcode-project.md
+        - name: Synchronizacja zmian między XCode i Visual Studio
+          href: sync-changes-between-xcode-and-visual-studio.md
+        - name: Przykłady programowania międzyplatformowych aplikacji mobilnych
+          href: cross-platform-mobile-development-examples.md
+    - name: Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
+      href: develop-apps-for-the-universal-windows-platform-uwp.md
+    - name: Emulator programu Visual Studio dla systemu Android
+      items:
+        - name: Emulator programu Visual Studio dla systemu Android
+          href: visual-studio-emulator-for-android.md
+        - name: Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android
+          href: system-requirements-for-the-visual-studio-emulator-for-android.md
+        - name: Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android
+          href: troubleshooting-the-visual-studio-emulator-for-android.md

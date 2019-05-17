@@ -1,12 +1,15 @@
 - name: Projektowanie interfejsów użytkownika
-  href: designing-user-interfaces.md
   items:
-    - name: Projektowanie XAML w programie Visual Studio
-      href: designing-xaml-in-visual-studio.md
+    - name: Przewodniki po narzędziach
+      href: designing-user-interfaces.md
+    - name: XAML
       items:
+        - name: Projektowanie XAML w programie Visual Studio
+          href: designing-xaml-in-visual-studio.md
         - name: XAML Designer
-          href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
           items:
+            - name: Omówienie
+              href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
             - name: Praca z elementami
               href: working-with-elements-in-xaml-designer.md
             - name: Organizowanie obiektów w kontenery układów
@@ -22,8 +25,9 @@
             - name: Błędy i ostrzeżenia XAML
               href: xaml-errors-warnings.md
         - name: Blend for Visual Studio
-          href: creating-a-ui-by-using-blend-for-visual-studio.md
           items:
+            - name: Omówienie
+              href: creating-a-ui-by-using-blend-for-visual-studio.md
             - name: Wstawianie kontrolek i modyfikowanie ich zachowania
               href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
             - name: 'Wstawianie obrazów, klipów wideo i klipów audio'
@@ -37,8 +41,9 @@
             - name: Wyświetlanie danych
               href: display-data-in-blend.md
             - name: Skróty klawiaturowe i klawisze modyfikujące
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
               items:
+                - name: Omówienie
+                  href: keyboard-shortcuts-and-modifier-keys-in-blend.md
                 - name: Skróty klawiaturowe
                   href: keyboard-shortcuts-in-blend.md
                 - name: Klawisze modyfikujące obszar kompozycji
@@ -50,23 +55,24 @@
             - name: Produkty i usługi związane z ułatwieniami dostępu dla narzędzia Blend
               href: accessibility-products-and-services-blend.md
     - name: Windows Presentation Foundation (WPF)
-      href: getting-started-with-wpf.md
       items:
+        - name: Wprowadzenie
+          href: getting-started-with-wpf.md
         - name: Omówienie podsystemu WPF
           href: introduction-to-wpf.md
-        - name: Powiązanie danych WPF za pomocą LINQ to XML
-          href: wpf-data-binding-with-linq-to-xml-overview.md
+        - name: Powiązanie danych
           items:
+            - name: Powiązanie danych WPF za pomocą LINQ to XML
+              href: wpf-data-binding-with-linq-to-xml-overview.md
             - name: Właściwości dynamiczne LINQ to XML
-              href: linq-to-xml-dynamic-properties.md
               items:
+                - name: Omówienie
+                  href: linq-to-xml-dynamic-properties.md
                 - name: Właściwości dynamiczne klasy XAttribute
-                  href: xattribute-class-dynamic-properties.md
                   items:
                     - name: Wartość (właściwość dynamiczna XAttribute)
                       href: value-xattribute-dynamic-property.md
                 - name: Właściwości dynamiczne klasy XElement
-                  href: xelement-class-dynamic-properties.md
                   items:
                     - name: Atrybut (właściwość dynamiczna XElement)
                       href: attribute-xelement-dynamic-property.md
@@ -80,40 +86,43 @@
                       href: value-xelement-dynamic-property.md
                     - name: Xml (właściwość dynamiczna XElement)
                       href: xml-xelement-dynamic-property.md
-                - name: Przykład
-                  href: wpf-data-binding-using-linq-to-xml-example.md
+                - name: Przykłady
                   items:
+                    - name: Powiązanie danych WPF za pomocą LINQ to XML
+                      href: wpf-data-binding-using-linq-to-xml-example.md
                     - name: Kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład
                       href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
                     - name: 'Przewodnik: Powiązanie danych LINQ to XML'
                       href: walkthrough-linqtoxmldatabinding-example.md
-                      items:
-                        - name: Kod źródłowy L2DBForm.xaml
-                          href: l2dbform-xaml-source-code.md
-                        - name: Kod źródłowy L2DBForm.xaml.cs
-                          href: l2dbform-xaml-cs-source-code.md
-    - name: Praca z zasobami 3D dla gier i aplikacji
-      href: working-with-3-d-assets-for-games-and-apps.md
+                    - name: Kod źródłowy L2DBForm.xaml
+                      href: l2dbform-xaml-source-code.md
+                    - name: Kod źródłowy L2DBForm.xaml.cs
+                      href: l2dbform-xaml-cs-source-code.md
+    - name: Zasoby 3D
       items:
-        - name: Praca z teksturami i obrazami
-          href: working-with-textures-and-images.md
+        - name: Praca z zasobami 3D dla gier i aplikacji
+          href: working-with-3-d-assets-for-games-and-apps.md
+        - name: 'Instrukcje: Korzystanie z zasobów 3D w grach i aplikacjach'
+          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Tekstury i obrazy
           items:
+            - name: Praca z teksturami i obrazami
+              href: working-with-textures-and-images.md
             - name: Edytor obrazów
               href: image-editor.md
             - name: Przykłady edytora obrazów
-              href: image-editor-examples.md
               items:
                 - name: Tworzenie tekstury podstawowej
                   href: how-to-create-a-basic-texture.md
                 - name: Tworzenie i modyfikacja poziomów MIP
                   href: how-to-create-and-modify-mip-levels.md
-        - name: Praca z modelami 3D
-          href: working-with-3-d-models.md
+        - name: Modele 3D
           items:
+            - name: Praca z modelami 3D
+              href: working-with-3-d-models.md
             - name: Edytor modelu
               href: model-editor.md
             - name: Przykłady edytora modelu
-              href: model-editor-examples.md
               items:
                 - name: Tworzenie podstawowego modelu 3D
                   href: how-to-create-a-basic-3-d-model.md
@@ -123,14 +132,16 @@
                   href: how-to-model-3-d-terrain.md
                 - name: Stosowanie cieniowania do modelu 3D
                   href: how-to-apply-a-shader-to-a-3-d-model.md
-        - name: Praca z cieniowaniem
-          href: working-with-shaders.md
+        - name: Programy do cieniowania
           items:
+            - name: Praca z cieniowaniem
+              href: working-with-shaders.md
             - name: Projektant cieniowania
               href: shader-designer.md
             - name: Węzły projektanta cieniowania
-              href: shader-designer-nodes.md
               items:
+                - name: Omówienie
+                  href: shader-designer-nodes.md
                 - name: Stałe węzły
                   href: constant-nodes.md
                 - name: Węzły parametrów
@@ -144,7 +155,6 @@
                 - name: Węzły filtrów
                   href: filter-nodes.md
             - name: Przykłady projektanta cieniowania
-              href: shader-designer-examples.md
               items:
                 - name: Tworzenie cieniowania koloru podstawowego
                   href: how-to-create-a-basic-color-shader.md
@@ -162,8 +172,7 @@
                   href: walkthrough-creating-a-realistic-3-d-billiard-ball.md
                 - name: Eksportowanie cieniowania
                   href: how-to-export-a-shader.md
-        - name: Korzystanie z zasobów 3D w grach i aplikacjach
-          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Eksportowanie tekstur
           items:
             - name: Eksportowanie tekstury zawierającej mipmapy
               href: how-to-export-a-texture-that-contains-mipmaps.md

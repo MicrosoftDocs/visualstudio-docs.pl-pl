@@ -1,0 +1,16 @@
+- name: Python
+  items:
+    - name: Python
+      href: getting-started-with-python.md
+    - name: Konfigurowanie programu Visual Studio
+      href: getting-started-with-ptvs-setting-up-visual-studio.md
+    - name: Rozpoczynanie programowania (projekty)
+      href: getting-started-with-ptvs-start-coding-projects.md
+    - name: Edytowanie kodu
+      href: getting-started-with-ptvs-editing-code.md
+    - name: Debugowanie
+      href: getting-started-with-ptvs-debugging.md
+    - name: Interaktywne środowisko języka Python
+      href: getting-started-with-ptvs-interactive-python.md
+    - name: Tworzenie witryny internetowej na platformie Azure
+      href: getting-started-with-ptvs-building-a-website-in-azure.md

@@ -12,9 +12,9 @@
     - name: Samouczki
       expanded: true
       items:
-        - name: Samouczek — aplikacja obsługująca wiele kontenerów przy użyciu narzędzia Docker Compose
+        - name: Aplikacja obsługująca wiele kontenerów przy użyciu narzędzia Docker Compose
           href: tutorial-multicontainer.md
-        - name: Samouczek — platforma Kubernetes w programie Visual Studio
+        - name: Platforma Kubernetes w programie Visual Studio
           href: tutorial-kubernetes-tools.md
     - name: Instrukcje
       items:
@@ -24,6 +24,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Wdrażanie w usłudze Azure App Service
           href: deploy-app-service.md
+        - name: Wyświetlanie i diagnozowanie kontenerów
+          href: view-and-diagnose-containers.md
         - name: Konfigurowanie narzędzi kontenerów
           href: container-tools-configure.md
     - name: Rozwiązywanie problemów

@@ -1,16 +1,21 @@
 - name: Narzędzia XML w Visual Studio
-  href: xml-tools-in-visual-studio.md
   items:
+    - name: Omówienie
+      href: xml-tools-in-visual-studio.md
     - name: Edytor XML
-      href: xml-editor.md
       items:
+        - name: Omówienie
+          displayName: XML editor
+          href: xml-editor.md
         - name: Walidacja dokumentów XML
           href: xml-document-validation.md
         - name: Funkcje IntelliSense w edytorze XML
           href: xml-editor-intellisense-features.md
         - name: Fragmenty kodu XML
-          href: xml-snippets.md
           items:
+            - name: Omówienie
+              displayName: XML snippets overview
+              href: xml-snippets.md
             - name: Używanie fragmentów kodu XML
               href: how-to-use-xml-snippets.md
             - name: Generowanie fragmentu kodu na podstawie schematu XML
@@ -44,11 +49,14 @@
         - name: 'Schematy XML, okno dialogowe'
           href: xml-schemas-dialog-box.md
     - name: Projektant schematu XML
-      href: xml-schema-designer.md
       items:
+        - name: Omówienie
+          displayName: XML Schema Designer overview
+          href: xml-schema-designer.md
         - name: Eksplorator schematu XML
-          href: xml-schema-explorer.md
           items:
+            - name: Eksplorator schematu XML
+              href: xml-schema-explorer.md
             - name: Wyszukiwanie zestawu schematów
               href: searching-the-schema-set.md
             - name: 'Sortowanie, filtrowanie i grupowanie'
@@ -57,9 +65,10 @@
               href: context-menus-xml-schema-explorer.md
             - name: Integracja literałów XML
               href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: Obszar roboczy projektanta schematu XML
-          href: xml-schema-designer-workspace.md
+        - name: Obszar roboczy
           items:
+            - name: Omówienie widoków
+              href: xml-schema-designer-workspace.md
             - name: Widok startowy
               href: start-view.md
             - name: Widok modelu zawartości
@@ -91,17 +100,19 @@
             - name: Drukowanie diagramów
               href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
             - name: Przykładowe pliki XSD
-              href: sample-xsd-files.md
               items:
                 - name: Prosty schemat
+                  displayName: Sample XSD files
                   href: sample-xsd-file-simple-schema.md
                 - name: Schemat zamówienia zakupu
                   href: sample-xsd-file-purchase-order-schema.md
                 - name: Relacje
                   href: sample-xsd-file-relationships.md
     - name: Debugowanie kodu XSLT
-      href: debugging-xslt.md
       items:
+        - name: Omówienie
+          displayName: XSLT debugging
+          href: debugging-xslt.md
         - name: 'Przewodnik: Debugowanie arkusza stylów XSLT'
           href: walkthrough-debug-an-xslt-style-sheet.md
         - name: Ocena wyrażenia XPath
