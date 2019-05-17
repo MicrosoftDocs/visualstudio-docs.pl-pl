@@ -1,6 +1,6 @@
 ---
 title: 'CA2213: Pola możliwe do likwidacji należy likwidować'
-ms.date: 11/05/2018
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38157fcc23561b47a919151aa78a71f98b3909b
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806683"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805001"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Pola możliwe do likwidacji należy likwidować
 
@@ -36,10 +36,21 @@ Typ, który implementuje <xref:System.IDisposable?displayProperty=fullName> dekl
 
 ## <a name="rule-description"></a>Opis reguły
 
-Typ jest odpowiedzialny za usuwania wszystkich niezarządzanych zasobów. Reguła CA2213 sprawdza czy typu usuwalnego (czyli takiego, które implementuje <xref:System.IDisposable>) `T` deklaruje pole `F` oznacza to wystąpienie typu usuwalnego `FT`. Dla każdego pola `F` który został przypisany obiekt utworzony lokalnie w obrębie metody lub inicjatory typu zawierającego `T`, reguła próbuje zlokalizować wywołanie `FT.Dispose`. Reguła wyszukuje metody wywoływane przez `T.Dispose` i jeden poziom w dół (czyli metody wywoływane przez metody wywołane `FT.Dispose`).
+Typ jest odpowiedzialny za usuwania wszystkich niezarządzanych zasobów. Reguła CA2213 sprawdza czy typu usuwalnego (czyli takiego, które implementuje <xref:System.IDisposable>) `T` deklaruje pole `F` oznacza to wystąpienie typu usuwalnego `FT`. Dla każdego pola `F` który został przypisany obiekt utworzony lokalnie w obrębie metody lub inicjatory typu zawierającego `T`, reguła próbuje zlokalizować wywołanie `FT.Dispose`. Reguła wyszukuje metody wywoływane przez `T.Dispose` i jeden poziom w dół (czyli metody wywoływane przez metody wywołane `T.Dispose`).
 
 > [!NOTE]
-> CA2213 reguła jest uruchamiana tylko dla pól, przypisane obiekt rozporządzalny lokalnie utworzonego w ramach inicjatory i metod typu zawierającego. Jeśli obiekt jest utworzony lub przypisane poza typu `T`, nie jest wyzwalana reguła. Zmniejsza to szumu w przypadkach, gdzie typ zawierający nie posiada odpowiedzialność usuwania obiektu.
+> Inne niż [specjalne przypadki](#special-cases), reguła CA2213 generowane tylko dla pól, przypisane obiekt rozporządzalny lokalnie utworzonego w ramach inicjatory i metod typu zawierającego. Jeśli obiekt jest utworzony lub przypisane poza typu `T`, nie jest wyzwalana reguła. Zmniejsza to szumu w przypadkach, gdzie typ zawierający nie posiada odpowiedzialność usuwania obiektu.
+
+### <a name="special-cases"></a>Specjalne przypadki
+
+CA2213 reguły mogą również uruchamiane w przypadku pól z następujących typów nawet, jeśli obiekt, który ich nie jest tworzony lokalnie:
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Przekazywanie obiektu z jednego z następujących typów do konstruktora, a następnie przypisując go do pola wskazuje *dispose przenoszenie własności* do nowo skonstruowanego typu. Oznacza to, że nowo skonstruowany typ odpowiada teraz do usuwania obiektu. Jeśli obiekt nie jest usuwane, naruszenie CA2213 występuje.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -47,7 +58,10 @@ Aby naprawić naruszenie tej zasady, należy wywołać <xref:System.IDisposable.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Bezpiecznie Pomijaj ostrzeżeń dla tej reguły, jeśli nie jesteś odpowiedzialny dla przy zwalnianiu zasobów przechowywanych przez pole lub wywołanie <xref:System.IDisposable.Dispose%2A> występuje dokładniejsze wywoływania niż sprawdzanie reguły.
+Jest to bezpieczne Pomijaj ostrzeżeń dla tej reguły, jeśli:
+
+- Flagą typu nie odpowiada dla przy zwalnianiu zasobów przechowywanych przez pole (oznacza to, że typ ma *dispose własność*)
+- Wywołanie <xref:System.IDisposable.Dispose%2A> występuje dokładniejsze wywoływania niż sprawdzanie reguły
 
 ## <a name="example"></a>Przykład
 

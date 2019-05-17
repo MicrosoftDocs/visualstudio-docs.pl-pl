@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Szczegółowe informacje dotyczące subskrypcji, które są oferowane, jakie zasady są stosowane i ilu subskrypcji są oferowane w programie MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945404"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805303"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Subskrypcje programu Visual Studio jest oferowana dla partnerów w programie Microsoft Partner Network (MPN)
 Partnerzy, którzy Zdobądź kompetencję lub kto kupować Action Pack w programie MPN to kwalifikujących się do korzystania z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane na poszczególnych użytkowników, a także obowiązują tylko wtedy, gdy jest przypisany do określonego nazwanego użytkownika, który działa w przypadku firmy partnera.
@@ -52,7 +52,7 @@ Przy użyciu pakietu akcji zdobywa partnera **3 subskrypcje programu Visual Stud
 - — Windows najnowszej wersji Enterprise tylko służące do tworzenia i testowania tylko
 - System Windows Server — najnowszej wersji tylko na potrzeby tworzenia i testowania tylko
 
-Subskrybenci programu Visual Studio Professional (MPN), można również pobrać i użyć bezpłatnego oprogramowania dla ich rozwoju, w tym SQL Server Developer Edition.
+Subskrybenci programu Visual Studio Professional (MPN), można również pobrać i korzystać z oprogramowania przez ich rozwoju, w tym SQL Server Developer Edition.
 
 Subskrypcja programu Visual Studio Professional (MPN) nie obejmuje korzyści usługom DevOps platformy Azure, miesięczne środki na korzystanie z platformy Azure, pomoc techniczna, szkolenia lub inne korzyści dla subskrybentów, które są dostępne z subskrypcji programu Visual Studio, które są oferowane dostępna w sprzedaży.
 

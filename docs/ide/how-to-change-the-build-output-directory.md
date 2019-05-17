@@ -1,6 +1,6 @@
 ---
 title: 'Instrukcje: Zmiana katalogu wyjściowego kompilacji'
-ms.date: 11/04/2016
+ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824233"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805052"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Instrukcje: Zmiana katalogu wyjściowego kompilacji
 
-Należy określić lokalizację danych wyjściowych, na podstawie — konfiguracja (w przypadku debugowania, wersji lub obie) wygenerowany przez projekt.
-
-> [!NOTE]
-> Jeśli masz **Instalatora** projektu, zobacz uwagę na końcu tego artykułu.
+Można określić lokalizacji dane wyjściowe generowane przez projekt na podstawie — konfiguracja (w przypadku debugowania, wersji lub obu).
 
 ## <a name="change-the-build-output-directory"></a>Zmiana katalogu wyjściowego kompilacji
 
-1. Na pasku menu wybierz **projektu** > **\<nazwa_aplikacji > właściwości**. Również kliknięciu prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**.
+1. Aby otworzyć strony właściwości projektu, kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**.
 
-2. Jeśli masz projekt języka Visual Basic, wybierz **skompilować** kartę. Jeśli masz projekt C#, wybierz opcję **kompilacji** kartę. Jeśli masz projekt języka C++ lub projektu w języku JavaScript, wybierz opcję **ogólne** kartę.
+2. Wybierz odpowiednią kartę, na podstawie od typu projektu:
 
-3. W konfiguracji listy rozwijanej u góry wybierz konfigurację, której dane wyjściowe pliku lokalizacji, aby zmienić (debugowanie, wydanie lub wszystkie).
+   - Aby uzyskać C#, wybierz opcję **kompilacji** kartę.
+   - Dla języka Visual Basic, wybierz **skompilować** kartę.
+   - Aby uzyskać C++ lub JavaScript, wybierz **ogólne** kartę.
 
-     Znajdź pozycję Ścieżka danych wyjściowych (**ścieżkę wyjściową kompilacji** w języku Visual Basic **katalog wyjściowy** w programie Visual C++ **ścieżkę wyjściową** w języku JavaScript i C#). Określ nowy katalog danych wyjściowych kompilacji względem katalogu projektu.
+3. W konfiguracji listy rozwijanej u góry wybierz konfigurację, której dane wyjściowe chcesz zmienić lokalizację plików (**debugowania**, **wersji**, lub **wszystkie konfiguracje**).
 
-> [!NOTE]
-> W projekcie programu Instalatora **nazwę pliku wyjściowego** okno zmienia tylko lokalizacja *Setup.exe* pliku nie lokalizację plików projektu. Aby uzyskać więcej informacji, zobacz **kompilacji, właściwości konfiguracji, okno dialogowe właściwości projektu wdrożenia**.
+4. Znajdowanie wpisu ścieżka danych wyjściowych na stronie&mdash;różni się w zależności od typu projektu:
+
+   - **Ścieżka wyjściowa** dla C# i projektów języka JavaScript
+   - **Kompiluj ścieżkę wyjściową** dla projektów języka Visual Basic
+   - **Katalog wyjściowy** wizualizacji C++ projektów
+
+   Wpisz ścieżkę, aby wygenerować dane wyjściowe (bezwzględną lub względną do katalogu głównego projektu), lub wybierz **Przeglądaj** aby przejść do tego folderu, zamiast tego.
+
+   ![Dane wyjściowe właściwości ścieżki dla programu Visual Studio C# projektu](media/output-path.png)
+
+> [!TIP]
+> Jeśli nie Trwa generowanie danych wyjściowych do lokalizacji, który określiłeś, upewnij się, w przypadku tworzenia odpowiedniej konfiguracji (na przykład **debugowania** lub **wersji**), wybierając ją na pasku menu Program Visual Studio.
+>
+> ![Tworzenie konfiguracji selektora w Visual Studio 2019 r.](media/build-configuration-chooser.png)
 
 ## <a name="see-also"></a>Zobacz także
 

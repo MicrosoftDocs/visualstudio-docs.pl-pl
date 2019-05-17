@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści CloudPilot dostępne w wybranych subskrypcjach programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948428"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805363"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcji programu Visual Studio
 
@@ -86,4 +86,4 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli nie została już aktywowana korzyść platformy Azure, która pochodzi z Twoją subskrypcją, odwiedź stronę [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a następnie kliknij przycisk na platformie Azure kafelka w kategorii narzędzi do konfigurowania subskrypcji platformy Azure i Zrealizuj swoje bezpłatnych środków platformy Azure.
+Jeśli nie została już aktywowana korzyść platformy Azure, która pochodzi z Twoją subskrypcją, odwiedź stronę [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a następnie kliknij przycisk na platformie Azure kafelka w kategorii narzędzi do konfigurowania subskrypcji platformy Azure i Zrealizuj swoje środki na korzystanie z platformy Azure.

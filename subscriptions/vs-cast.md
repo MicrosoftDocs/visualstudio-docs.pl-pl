@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat wyróżnienia RZUTOWANIA korzyści dostępne w wybranych subskrypcjach programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947916"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805339"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Wyróżnij RZUTOWANIA korzyści w ramach subskrypcji programu Visual Studio
 
@@ -107,6 +107,6 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli nie została już aktywowana korzyść platformy Azure, która pochodzi z Twoją subskrypcją, odwiedź stronę [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a następnie kliknij przycisk na platformie Azure kafelka w kategorii narzędzi do konfigurowania subskrypcji platformy Azure i Zrealizuj swoje bezpłatnych środków platformy Azure.
+Jeśli nie została już aktywowana korzyść platformy Azure, która pochodzi z Twoją subskrypcją, odwiedź stronę [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a następnie kliknij przycisk na platformie Azure kafelka w kategorii narzędzi do konfigurowania subskrypcji platformy Azure i Zrealizuj swoje środki na korzystanie z platformy Azure.
 
 Nie zapomnij też wyewidencjonować wersji demonstracyjnej, przewodnik użytkownika i filmów instruktażowych wymienionych w wiadomości e-mail firmy Greg.

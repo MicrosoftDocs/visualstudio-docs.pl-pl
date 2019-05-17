@@ -1,6 +1,6 @@
 ---
 title: 'CA2000: Likwiduj obiekty przed utratą zakresu'
-ms.date: 11/04/2016
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b986e5219c1e8d437651feebeec09eb4ca3dd5cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 732b3d683802c50042ee40fee1549a9d247e2470
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545410"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65804978"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Likwiduj obiekty przed utratą zakresu
 
@@ -35,44 +35,59 @@ ms.locfileid: "62545410"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Obiekt lokalny <xref:System.IDisposable> typ jest tworzony, ale obiekt nie jest usuwane, zanim wszystkie odwołania do obiektu znajdą się poza zakresem.
+
+Obiekt lokalny <xref:System.IDisposable> typ jest tworzony, ale obiekt nie jest usuwane, zanim wszystkie odwołania do obiektu znajdą się poza zakresem.
 
 ## <a name="rule-description"></a>Opis reguły
- Jeśli możliwy do likwidacji obiekt nie zostanie jawnie zlikwidowany, zanim wszystkie odwołania do niego będą poza zakresem, obiekt zostanie zlikwidowany w nieokreślonym czasie gdy moduł odśmiecania pamięci uruchomi finalizatora obiektu. Ponieważ może wystąpić wyjątkowe zdarzenie, które uniemożliwi finalizatora obiektu, uruchamianie, obiekt powinien zostać jawnie zlikwidowany zamiast tego.
+
+Jeśli możliwy do likwidacji obiekt nie zostanie jawnie zlikwidowany, zanim wszystkie odwołania do niego będą poza zakresem, obiekt zostanie zlikwidowany w nieokreślonym czasie gdy moduł odśmiecania pamięci uruchomi finalizatora obiektu. Ponieważ może wystąpić wyjątkowe zdarzenie, które uniemożliwi finalizatora obiektu, uruchamianie, obiekt powinien zostać jawnie zlikwidowany zamiast tego.
+
+### <a name="special-cases"></a>Specjalne przypadki
+
+CA2000 reguły nie jest wyzwalana dla lokalnych obiektów następujących typów, nawet wtedy, gdy obiekt nie jest usuwane:
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Przekazywanie obiektu z jednego z następujących typów do konstruktora, a następnie przypisując go do pola wskazuje *dispose przenoszenie własności* do nowo skonstruowanego typu. Oznacza to, że nowo skonstruowany typ odpowiada teraz do usuwania obiektu. Jeśli Twój kod przekazuje obiekt jednego z tych typów do konstruktora, nie naruszenia reguł CA2000 występuje nawet wtedy, gdy obiekt nie jest usuwane, zanim wszystkie odwołania do niego znajdą się poza zakresem.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy wywołać <xref:System.IDisposable.Dispose%2A> w obiekcie, zanim wszystkie odwołania do niego będą poza zakresem.
 
- Należy zauważyć, że można użyć `using` — instrukcja (`Using` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) do opakowania obiekty, które implementują `IDisposable`. Obiekty, które są opakowane w ten sposób zostanie automatycznie usunięte z końcem `using` bloku.
+Aby naprawić naruszenie tej zasady, należy wywołać <xref:System.IDisposable.Dispose%2A> w obiekcie, zanim wszystkie odwołania do niego będą poza zakresem.
 
- Poniżej przedstawiono kilka sytuacji, w którym za pomocą instrukcji nie jest wystarczająco, aby chronić interfejs IDisposable obiektów i może spowodować, że CA2000 występuje.
+Możesz użyć [ `using` instrukcji](/dotnet/csharp/language-reference/keywords/using-statement) ([ `Using` ](/dotnet/visual-basic/language-reference/statements/using-statement) w języku Visual Basic) do opakowania obiekty, które implementują <xref:System.IDisposable>. Obiekty, które są opakowane w ten sposób są automatycznie usuwane na końcu `using` bloku. Jednak nie powinien lub nie mogą być obsługiwane za pomocą w następujących sytuacjach `using` instrukcji:
 
-- Zwraca obiekt rozporządzalny wymaga, że obiekt jest konstruowany w bloku try/finally poza za pomocą bloku.
+- Aby zwrócić możliwy do likwidacji obiekt, obiekt musi być skonstruowany w `try/finally` block poza `using` bloku.
 
-- Inicjowanie elementów członkowskich obiektu możliwe do rozporządzania, nie należy wykonywać w Konstruktorze przy użyciu instrukcji.
+- Nie Inicjuj elementy członkowskie obiektu możliwe do rozporządzania w Konstruktorze typu `using` instrukcji.
 
-- Zagnieżdżanie konstruktorów, które są chronione tylko przez jeden wyjątek procedury obsługi. Na przykład
+- Kiedy konstruktory, które są chronione przez program obsługi wyjątków tylko jeden są zagnieżdżone w [nabycia część `using` instrukcji](/dotnet/csharp/language-reference/language-specification/statements#the-using-statement), błąd w Konstruktorze zewnętrzne może spowodować obiekt utworzony przez zagnieżdżone Konstruktor nigdy nie zamknięte. W poniższym przykładzie wystąpił błąd podczas <xref:System.IO.StreamReader> Konstruktor może spowodować <xref:System.IO.FileStream> obiektu nigdy nie jest zamknięty. CA2000 flagi naruszenie reguły, w tym przypadku.
 
-    ```csharp
-    using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
-    { ... }
-    ```
+   ```csharp
+   using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
+   { ... }
+   ```
 
-     powoduje, że CA2000, ponieważ wystąpił błąd podczas tworzenia obiektu StreamReader może spowodować obiektu FileStream, nigdy nie jest zamknięty.
-
-- Obiekty dynamiczne należy używać obiektu w tle do implementowania wzorca usuwania obiektów interfejsu IDisposable.
+- Obiekty dynamiczne należy użyć obiektu w tle do implementowania wzorca usuwania dla <xref:System.IDisposable> obiektów.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły, jeśli wywołujesz metodę na obiekcie, który wywołuje `Dispose`, takich jak <xref:System.IO.Stream.Close%2A>, lub jeśli metoda, który spowodował ostrzeżenie zwraca obiekt interfejsu IDisposable otacza obiekt.
+
+Nie pomijaj ostrzeżeń dla tej reguły, chyba że:
+
+- Na obiekcie, który wywołuje wywołujesz metodę `Dispose`, takich jak <xref:System.IO.Stream.Close%2A>
+- Metoda, która wywołała zwraca ostrzeżenie <xref:System.IDisposable> obiektu, który otacza obiekt
+- Metody przydzielania nie mieć prawa własności do usuwania; oznacza to odpowiedzialność, można zlikwidować obiektu jest przenoszona do innego obiektu lub otok, który został utworzony w metodzie i zwracany do wywołującego
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2213: Pola możliwe do rozporządzania należy rozporządzać](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202: Nie Likwiduj obiektów wiele razy](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+- [CA2213: Pola możliwe do rozporządzania należy rozporządzać](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+- [CA2202: Nie Likwiduj obiektów wiele razy](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Przykład
 
-Przed zaimplementowaniem metodę, która zwraca obiekt rozporządzalny, użyj bloku try/finally bez blok catch, aby upewnić się, usunięciu obiektu. Za pomocą bloku try/finally, Zezwalaj na wyjątki, aby zostać wywołane w momencie błędu i upewnij się, że ten obiekt zostanie usunięty.
+W przypadku wdrażania metodę, która zwraca obiekt rozporządzalny, użyj bloku try/finally bez blok catch, aby upewnić się, usunięciu obiektu. Za pomocą bloku try/finally, Zezwalaj na wyjątki, aby zostać wywołane w momencie błędu i upewnij się, że ten obiekt zostanie usunięty.
 
 W metodzie OpenPort1 wywołania, które można otworzyć obiektu ISerializable portu SerialPort lub wywołanie SomeMethod może zakończyć się niepowodzeniem. CA2000 ostrzeżenie jest zgłaszane w tej implementacji.
 
@@ -156,13 +171,14 @@ End Function
 ```
 
 ## <a name="example"></a>Przykład
- Domyślnie [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora zawiera operatory arytmetyczne wszystkie sprawdzaj przepełnienie. W związku z tym, może zgłaszać żadnych operacji arytmetycznej języka Visual Basic <xref:System.OverflowException>. Może to prowadzić do nieoczekiwanych naruszeń w zasadach, takie jak CA2000. Na przykład następująca funkcja CreateReader1 dadzą naruszenie CA2000, ponieważ kompilator Visual Basic jest emitowania przepełnienie sprawdzanie instrukcji do dodania, który może zgłosić wyjątek, które spowodują TextWriter nie można usunąć.
 
- Aby rozwiązać ten problem, można wyłączyć emitowania sprawdzania przepełnienia przez kompilator języka Visual Basic w projekcie lub zmodyfikować kod tak jak następującą funkcję CreateReader2.
+Domyślnie kompilator Visual Basic ma wszystkich operatorów arytmetycznych, sprawdzaj przepełnienie. W związku z tym, może zgłaszać żadnych operacji arytmetycznej języka Visual Basic <xref:System.OverflowException>. Może to prowadzić do nieoczekiwanych naruszeń w zasadach, takie jak CA2000. Na przykład następująca funkcja CreateReader1 dadzą naruszenie CA2000, ponieważ kompilator Visual Basic jest emitowania przepełnienie sprawdzanie instrukcji do dodania, który może zgłosić wyjątek, które spowodują TextWriter nie można usunąć.
 
- Aby wyłączyć emitowania sprawdzania przepełnienia, kliknij prawym przyciskiem myszy nazwę projektu w Eksploratorze rozwiązań, a następnie kliknij przycisk **właściwości**. Kliknij przycisk **skompilować**, kliknij przycisk **zaawansowane opcje kompilacji**, a następnie sprawdź, **Usuń nadmiaru**.
+Aby rozwiązać ten problem, można wyłączyć emitowania sprawdzania przepełnienia przez kompilator języka Visual Basic w projekcie lub zmodyfikować kod tak jak następującą funkcję CreateReader2.
 
-  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
+Aby wyłączyć emitowania sprawdzania przepełnienia, kliknij prawym przyciskiem myszy nazwę projektu w Eksploratorze rozwiązań, a następnie kliknij przycisk **właściwości**. Kliknij przycisk **skompilować**, kliknij przycisk **zaawansowane opcje kompilacji**, a następnie sprawdź, **Usuń nadmiaru**.
+
+[!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
 ## <a name="see-also"></a>Zobacz także
 
