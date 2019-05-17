@@ -237,7 +237,7 @@ using BankAccountNS;
 ## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Napraw kod i ponownego przeprowadzania testów  
  **Analizuj wyniki testu**  
   
- Wynik testu zawiera komunikat, który opisuje błąd. Dla `AreEquals` metody komunikat wyświetlany, możesz oczekiwanym ((<strong>oczekiwana\<*XXX*></strong>parametr) i co zostało rzeczywiście przesłane ( **Rzeczywiste\<*YYY* >** parametru). Rezultatem było saldo od salda początkowego, ale zamiast tego wzrosło o kwotę wycofania.  
+ Wynik testu zawiera komunikat, który opisuje błąd. Dla `AreEquals` metody komunikat wyświetlany, możesz oczekiwanym ((<strong>oczekiwana\<*XXX*></strong>parametr) i co zostało rzeczywiście przesłane ( **Rzeczywiste\<*YYY*>** parametru). Rezultatem było saldo od salda początkowego, ale zamiast tego wzrosło o kwotę wycofania.  
   
  Ponowne testy kodu pokazuje, że test jednostkowy zdołały usterkę. Kwota wybrana z konta jest dodawana do salda konta, po powinna być odejmowana.  
   
