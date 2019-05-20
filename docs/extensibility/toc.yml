@@ -34,7 +34,7 @@
   items:
     - name: Language Server Protocol
       href: language-server-protocol.md
-    - name: Dodawanie rozszerzenia protokołu Language Server Protocol
+    - name: Dodawanie rozszerzenia Language Server Protocol
       href: adding-an-lsp-extension.md
 - name: Otwórz folder
   items:
