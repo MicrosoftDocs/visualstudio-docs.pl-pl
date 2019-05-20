@@ -220,8 +220,8 @@ Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkowni
   }
   ```
 
-  *Formant, który chcę wybrać traci fokus i znika przy próbie wybierz narzędzie Dodaj Asercje z konstruktora kodowanego testu interfejsu użytkownika. Jak wybrać formant? * 
-   **Wybierając ukrytą kontrolkę za pomocą klawiatury**
+   *Formant, który chcę wybrać traci fokus i znika przy próbie wybierz narzędzie Dodaj Asercje z konstruktora kodowanego testu interfejsu użytkownika. Jak wybrać formant?*
+  **Wybierając ukrytą kontrolkę za pomocą klawiatury**
 
   Czasami, gdy [dodawanie formantów i weryfikowania ich właściwości](#VerifyingCodeUsingCUITGenerateAssertions), może być konieczne użycie klawiatury. Na przykład podczas próby rejestrowania kodowanego testu interfejsu użytkownika, używającej formant menu kontekstowego na liście elementów menu w formancie utracić fokus i znikają w przypadku próby wybierz narzędzie Dodaj Asercje z Konstruktor kodowanego testu IU. Zostało to przedstawione na poniższej ilustracji, gdzie tracić fokus i znika, jeśli zostanie podjęta próba wybierz ją przy użyciu narzędzia Dodaj Asercje przez menu kontekstowego w programie Internet Explorer.
 
