@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570301"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934525"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 W poniższej tabeli właściwości często używanych list, które są zdefiniowane w plikach projektu programu Visual Studio lub zawartych w *.targets* pliki, dostarczanych przez program MSBuild.
@@ -68,6 +68,7 @@ W poniższej tabeli właściwości często używanych list, które są zdefiniow
 | FileAlignment | Określa w bajtach, gdzie należy wyrównać sekcje pliku wyjściowego. Prawidłowe wartości to 512, 1024, 2048, 4096 i 8192. Ta właściwość jest równoważna `/filealignment` przełącznika kompilatora. |
 | FrameworkPathOverride | Określa lokalizację *mscorlib.dll* i *microsoft.visualbasic.dll*. Ten parametr jest równoważny `/sdkpath` przełączyć z *vbc.exe* kompilatora. |
 | GenerateDocumentation | (Tylko Visual Basic) Parametr logiczny, który wskazuje, czy dokumentacja jest generowana przez kompilację. Jeśli `true`, kompilacja generuje informacje o dokumentacji i umieszcza go w *.xml* plików wraz z nazwą pliku wykonywalnego lub biblioteki, utworzonego przez zadanie kompilacji. |
+| GenerateSerializationAssemblies | Wskazuje, czy zestawy serializacji XML powinny być generowane przez *SGen.exe*, które można ustawić, auto lub wyłączony. Ta właściwość jest używana dla zestawów, których celem są tylko .NET Framework. Aby wygenerować zestawy serializacji XML dla zestawów .NET Standard i .NET Core, odwołać *Microsoft.XmlSerializer.Generator* pakietu NuGet. |
 | IntermediateOutputPath | Pełna pośrednia ścieżka wyjściowa wyprowadzana z `BaseIntermediateOutputPath`, jeśli nie określono ścieżki. Na przykład *\obj\debug\\*. |
 | KeyContainerName | Nazwa kontenera klucza silnej nazwy. |
 | KeyOriginatorFile | Nazwa pliku klucza silnej nazwy. |
@@ -91,8 +92,8 @@ W poniższej tabeli właściwości często używanych list, które są zdefiniow
 | ProduceReferenceAssembly | Wartość logiczna, która po ustawieniu `true` umożliwia produkcji [zestawów odwołań](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) dla bieżącego zestawu. `Deterministic` powinien być `true` podczas używania tej funkcji. Ta właściwość odnosi się do `/refout` przełączyć z *vbc.exe* i *csc.exe* kompilatory. |
 | ProduceOnlyReferenceAssembly | Wartość logiczna, która instruuje kompilator, aby wyemitować tylko odwołanie do zestawu, a nie kod skompilowany. Nie można używać w połączeniu z `ProduceReferenceAssembly`.  Ta właściwość odnosi się do `/refonly` przełączyć z *vbc.exe* i *csc.exe* kompilatory. |
 | RemoveIntegerChecks | Wartość logiczna, która wskazuje, czy wyłączyć sprawdzanie błędów przepełnienia liczby całkowitej. Wartość domyślna to `false`. Ta właściwość jest równoważna `/removeintchecks` przełączyć z *vbc.exe* kompilatora. |
-| SGenUseProxyTypes | Wartość logiczna, która wskazuje, czy typy serwerów proxy powinny być generowane przez *SGen.exe*.<br /><br /> Obiekt docelowy SGen używa tej właściwości można ustawić flagę UseProxyTypes. Ta właściwość jest domyślnie ustawiona na wartość true, a nie ma interfejsu użytkownika Aby to zmienić. Aby wygenerować zestawu serializacji dla typów innych niż Usługa sieci Web, Dodaj tę właściwość do pliku projektu i ustaw ją na false przed zaimportowaniem *Microsoft.Common.Targets* lub *C#/VB.targets*. |
-| SGenToolPath | Opcjonalna ścieżka narzędzia wskazującą, skąd uzyskać *SGen.exe* podczas bieżącej wersji *SGen.exe* zostanie zastąpiona. |
+| SGenUseProxyTypes | Wartość logiczna, która wskazuje, czy typy serwerów proxy powinny być generowane przez *SGen.exe*. Dotyczy to tylko wtedy, gdy *GenerateSerializationAssemblies* jest ustawiany na i dla programu .NET Framework tylko.<br /><br /> Obiekt docelowy SGen używa tej właściwości można ustawić flagę UseProxyTypes. Ta właściwość jest domyślnie ustawiona na wartość true, a nie ma interfejsu użytkownika Aby to zmienić. Aby wygenerować zestawu serializacji dla typów innych niż Usługa sieci Web, Dodaj tę właściwość do pliku projektu i ustaw ją na false przed zaimportowaniem *Microsoft.Common.Targets* lub *C#/VB.targets*. |
+| SGenToolPath | Opcjonalna ścieżka narzędzia wskazującą, skąd uzyskać *SGen.exe* podczas bieżącej wersji *SGen.exe* zostanie zastąpiona. Ta właściwość jest używana tylko dla programu .NET Framework.|
 | StartupObject | Określa klasę lub moduł, który zawiera element metodę Main lub procedurę Sub Main. Ta właściwość jest równoważna `/main` przełącznika kompilatora. |
 | ProcessorArchitecture | Architektura procesora, który jest używany, gdy odwołania do zestawów są rozwiązane. Prawidłowe wartości to "msil", "x86", "amd64" lub "ia64". |
 | RootNamespace | Główna przestrzeń nazw, używana przy nazywaniu zasobu osadzonego. Ta przestrzeń nazw jest częścią nazwy manifestu osadzonego zasobu. |

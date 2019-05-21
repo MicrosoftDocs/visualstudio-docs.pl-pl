@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946090"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934495"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -58,7 +58,7 @@ Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub z
 |![Uruchom po kompilacji](../test/media/ute_runafterbuild_btn.png)|Aby uruchomić testy jednostkowe po każdej kompilacji lokalnej, wybierz **testu** w menu standardowym, a następnie wybierz **Uruchom testy po kompilacji** na **Eksplorator testów** paska narzędzi.|
 
 > [!NOTE]
-> Uruchamianie testów jednostek po każdej kompilacji wymaga programu Visual Studio Enterprise edition.
+> Uruchamianie testów jednostek po każdej kompilacji wymaga programu Visual Studio Enterprise 2017 lub Visual Studio 2019 r. W programie Visual Studio 2019 wchodzi on w Community i Professional oraz Enterprise.
 
 ## <a name="view-test-results"></a>Wyświetlanie wyników testu
 
@@ -200,7 +200,7 @@ Można określić liczbę kodów produktu, który jest aktualnie testowany przez
 
 Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu:
 
-1. Wybierz **testy** menu programu Visual Studio, a następnie wybierz **analiza pokrycia kodu**.
+1. Wybierz **testu** w górnym menu paska, a następnie wybierz **analiza pokrycia kodu**.
 
 2. Wybierz jedną z następujących poleceń z podmenu:
 
