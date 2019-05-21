@@ -1,7 +1,7 @@
 ---
 title: Rozwiązywanie problemów z błędami sieci lub serwera proxy
 description: Rozwiązania związane z siecią lub serwer proxy błędy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwerem proxy.
-ms.date: 03/30/2019
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968135"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976228"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów z błędami związanych z siecią, podczas instalowania lub użyć programu Visual Studio
 
@@ -36,19 +36,19 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
 - Uruchom ponownie program Visual Studio. Powinna zostać wyświetlona okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia, po wyświetleniu monitu w oknie dialogowym.
 
-- Jeśli ponowne uruchomienie programu Visual Studio nie rozwiązuje ten problem, może to oznaczać, serwer proxy nie jest wyświetlany monit o poświadczenia dla protokołu http:&#47;&#47;go.microsoft.com adresy, ale jest to spowodowane &#42;. adresów visualStudio.com. Na tych serwerach należy wziąć pod uwagę umieszczania na białej liście następujące adresy URL, aby odblokować wszystkie w scenariuszach logowania w programie Visual Studio:
+- Jeśli ponowne uruchomienie programu Visual Studio nie rozwiązuje ten problem, może to oznaczać, serwer proxy nie jest wyświetlany monit o poświadczenia dla protokołu http:&#47;&#47;go.microsoft.com adresy, ale jest to spowodowane &#42;. visualStudio.microsoft.com adresów. Na tych serwerach należy rozważyć dodanie następujących adresów URL do listy dozwolonych, aby odblokować wszystkie w scenariuszach logowania w programie Visual Studio:
 
     - &#42;.windows.net
 
     - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+    - &#42;.visualstudio.microsoft.com
 
     - &#42;.microsoft.com
 
     - &#42;.live.com
 
-- W przeciwnym razie możesz usunąć http:&#47;&#47;go.microsoft.com adresów z listy dozwolonych adresów, tak, aby w oknie dialogowym uwierzytelniania serwera proxy, pojawia się dla obu protokołu http:&#47;&#47;go.microsoft.com adres i punkty końcowe serwera, gdy program Visual Studio ponownie uruchomione.
+- W przeciwnym razie możesz usunąć http:&#47;&#47;go.microsoft.com adresów z listy dozwolonych, aby w oknie dialogowym uwierzytelniania serwera proxy, pojawia się dla obu protokołu http:&#47;&#47;go.microsoft.com adres i punkty końcowe serwera, gdy program Visual Studio ponownie uruchomione.
 
   -LUB-
 
@@ -120,7 +120,7 @@ Włącz połączenia dla następujących adresów URL:
 
 - &#42;. azurewebsites.net (dla połączenia platformy Azure)
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - CDN.vsassets.IO (hosty usługa content delivery network lub sieci CDN, zawartości)
 
@@ -138,5 +138,5 @@ Włącz połączenia dla następujących adresów URL:
 ## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie i używanie programu Visual Studio za zaporą lub serwerem proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
-* [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Instalowanie programu Visual Studio](install-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
 title: Instalowanie i używanie za serwerem zapory lub serwera proxy
-description: Sprawdź adresy URL domen, porty i protokoły, które można dodać do listy dozwolonych lub otworzyć, jeśli Twoja organizacja korzysta z zapory lub serwera proxy
-ms.date: 03/30/2019
+description: Sprawdź adresy URL domen, porty i protokoły, które możesz zechcieć dodać do listy dozwolonych lub otworzyć, jeśli Twoja organizacja korzysta z zapory lub serwera proxy
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974712"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976216"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 
-Jeśli Ty lub Twoja organizacja korzysta z środki bezpieczeństwa, takie jak Zapora lub serwer proxy, następnie istnieją adresy URL domen, które możesz chcieć "dozwolonych" i porty i protokoły, które można otworzyć, aby mieć najlepsze wyniki, podczas instalacji i używania Visual Stu dio i usług platformy Azure.
+Jeśli Ty lub Twoja organizacja używa środki bezpieczeństwa, takie jak Zapora lub serwer proxy, istnieją domeny, które adresy URL, może wystąpić konieczność dodania do "Zezwalaj na liście" i porty i protokoły, które można otworzyć, aby mieć najlepsze wyniki, podczas instalacji i używania  Visual Studio i usług platformy Azure.
 
-* **[Zainstaluj program Visual Studio](#install-visual-studio)**: Te tabele zawierają adresy URL domen do listy dozwolonych adresów, tak, aby mieć dostęp do wszystkich składników i obciążeń, które mają.
+* **[Zainstaluj program Visual Studio](#install-visual-studio)**: Te tabele zawierają adresy URL domen, masz dostęp do wszystkich składników i obciążeń, które chcesz dodać do listy dozwolonych.
 
-* **[Użyj programu Visual Studio i usług platformy Azure](#use-visual-studio-and-azure-services)**: Poniższa tabela zawiera adresy URL domen do listy dozwolonych adresów i portów i protokołów, aby otworzyć tak, aby mieć dostęp do wszystkich funkcji i usług, które mają.
+* **[Użyj programu Visual Studio i usług platformy Azure](#use-visual-studio-and-azure-services)**: Poniższa tabela zawiera adresy URL domen, aby dodać do listy dozwolonych i portach i protokołach, aby otworzyć tak, aby mieć dostęp do wszystkich funkcji i usług, które mają.
 
 > [!NOTE]
 > W tym artykule został napisany dla programu Visual Studio w Windows, ale ma również zastosowanie do niektórych informacji [instalowania programu Visual Studio dla komputerów Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) za serwerem zapory lub serwera proxy.
 
 ## <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
-### <a name="urls-to-whitelist"></a>Adresy URL do listy dozwolonych
+### <a name="urls-to-add-to-an-allow-list"></a>Dodaj do listy dozwolonych adresów URL
 
-Instalator programu Visual Studio pobiera pliki z różnych domen i serwerów ich pobierania, w tym miejscu są adresy URL domen, które należy do listy dozwolonych jako zaufane w Interfejsie użytkownika lub skrypty wdrażania.
+Ponieważ Instalatora programu Visual Studio pobiera pliki z różnych domen i ich pobierania serwerów, w tym miejscu są adresy URL domen, które możesz zechcieć dodać do listy dozwolonych jako zaufane w Interfejsie użytkownika lub skrypty wdrażania.
 
 #### <a name="microsoft-domains"></a>Microsoft domains
 
@@ -79,9 +79,9 @@ Instalator programu Visual Studio pobiera pliki z różnych domen i serwerów ic
 
 ## <a name="use-visual-studio-and-azure-services"></a>Używanie programu Visual Studio i usług platformy Azure
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Adresy URL do listy dozwolonych adresów i portów i protokołów, aby otworzyć
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>Adresy URL, aby dodać do listy dozwolonych i portach i protokołach, aby otworzyć
 
-Aby upewnić się, że masz dostęp do wszystkiego, czego potrzebujesz, korzystając z programu Visual Studio lub usług platformy Azure za serwerem zapory lub serwera proxy, Oto adresy URL powinny listy dozwolonych adresów i portów i protokołów, które można otworzyć.
+Aby upewnić się, że masz dostęp do wszystkiego, czego potrzebujesz, korzystając z programu Visual Studio lub usług platformy Azure za serwerem zapory lub serwera proxy, w tym miejscu są adresami URL należy dodać do listy dozwolonych i portów i protokołów, które można otworzyć.
 
 | Usługa lub scenariusza | Punkt końcowy DNS | Protokół | Port | Opis |
 | - | - | - | - | - |

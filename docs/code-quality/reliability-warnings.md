@@ -14,17 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 009422eaf9ac81af6e8f9d48732655b2528c85a0
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825341"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976151"
 ---
-# <a name="reliability-warnings"></a>Ostrzeżenia niezawodności
-Ostrzeżenia niezawodności obsługuje niezawodność biblioteki i aplikacji, takich jak poprawne użycie pamięci i wątku.
+# <a name="reliability-warnings"></a>Ostrzeżenia dotyczące niezawodności
 
-## <a name="in-this-section"></a>W tej sekcji
+Ostrzeżenia niezawodności obsługuje niezawodność biblioteki i aplikacji, takich jak poprawne użycie pamięci i wątku. Reguły dotyczące niezawodności, obejmują:
 
 |Reguła|Opis|
 |----------|-----------------|
@@ -34,3 +33,4 @@ Ostrzeżenia niezawodności obsługuje niezawodność biblioteki i aplikacji, ta
 |[CA2003: Nie Traktuj włókien jak wątków](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Zarządzane zarządzalny wątek jest traktowany jako wątek Win32.|
 |[CA2004: Usuń wywołania GC. Utrzymywania aktywności](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|W przypadku konwertowania użycia SafeHandle należy usunąć wszystkie wywołania GC. KeepAlive (obiekt). W tym przypadku klasy nie powinny wywołać GC. Obsługuj KeepAlive, zakładając, że nie ma finalizatora, ale zależą od klasy SafeHandle w celu sfinalizowania systemu operacyjnego dla nich.|
 |[CA2006: Używaj klasy SafeHandle w celu hermetyzacji zasobów natywnych](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Wykorzystanie elementu IntPtr w kodzie zarządzanym może wskazywać na potencjalny problem dotyczący bezpieczeństwa i niezawodności. Wszystkie użycia elementu IntPtr muszą być przejrzane w celu ustalenia, czy użycie elementu SafeHandle lub podobnej technologii jest w tym miejscu wymagane.|
+|[CA2007: Nie bezpośrednio oczekiwanie na zadanie](../code-quality/ca2007-do-not-directly-await-task.md)|Metoda asynchroniczna [czeka](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> bezpośrednio.|

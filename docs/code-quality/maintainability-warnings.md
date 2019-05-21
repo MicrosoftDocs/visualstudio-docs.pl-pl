@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752a637ef01c33aa4e93083e9578d01f00977960
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823559"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976165"
 ---
-# <a name="maintainability-warnings"></a>Utrzymanie — Ostrzeżenia
+# <a name="maintainability-warnings"></a>Ostrzeżenia dotyczące dostępności
 
 Ostrzeżenia dotyczące utrzymania obsługuje konserwacji biblioteki i aplikacji.
 
@@ -35,7 +35,8 @@ Ostrzeżenia dotyczące utrzymania obsługuje konserwacji biblioteki i aplikacji
 | [CA1504: Przegląd mylących nazw pól](../code-quality/ca1504-review-misleading-field-names.md) | Nazwa pola wystąpienia zaczyna się od "s_" lub nazwa statycznego (udostępnionego w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) pola rozpoczyna się od "m_". |
 | [CA1505: Unikaj kodu trudnego w utrzymaniu](../code-quality/ca1505-avoid-unmaintainable-code.md) | Typ lub metoda ma niską wartość indeksu konserwacji. Niski indeks konserwacji wskazuje, że typ lub metoda są prawdopodobnie trudne do utrzymania i są dobrymi kandydatami do przeprojektowania. |
 | [CA1506: Unikaj nadmiernego sprzężenia klas](../code-quality/ca1506-avoid-excessive-class-coupling.md) | Ta reguła mierzy sprzęgnięcie klasy przez liczenie unikatowych odwołań typów, które zawiera typ lub metoda. |
+| [CA1507: Użyj nameof zamiast ciągów](../code-quality/ca1507.md) | Literał ciągu jest używana jako argument gdzie `nameof` wyrażenie może być stosowane. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/code-metrics-values.md)
+- [Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/code-metrics-values.md)

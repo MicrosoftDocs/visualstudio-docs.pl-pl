@@ -6,16 +6,16 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 335871a2a1d43230a7e9017711d37becdaef6f54
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: ccdedcb82b06ec2723555f8dedcf3b628e392137
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615474"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976138"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac tour
 
-Program Visual Studio dla komputerów Mac jest .NET _zintegrowanego środowiska programistycznego_ na komputerze Mac, który może służyć do edycji, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Oprócz oczekiwane funkcje, takie jak standardowy edytor i debugera Visual Studio for Mac obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i kontroli źródła do aparatu ese procesu tworzenia oprogramowania.
+Program Visual Studio dla komputerów Mac jest .NET _zintegrowanego środowiska programistycznego_ na komputerze Mac, który może służyć do edycji, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Oprócz oczekiwane funkcje, takie jak standardowy edytor i debugera Visual Studio for Mac obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i kontroli źródła, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 
 Program Visual Studio for Mac obsługuje wiele typów plików jako jego odpowiednika Windows, takich jak `.csproj`, `.fsproj`, lub `.sln` pliki i obsługuje funkcje, takie jak EditorConfig, co oznacza, użyć środowiska IDE, który w najlepszy dla siebie.
 Tworzenia, otwierania i tworzenia aplikacji będzie pracę w znanym środowisku dla każdego, kto ma korzystał już z programu Visual Studio na Windows. Ponadto program Visual Studio for Mac wykorzystuje wiele zaawansowanych narzędzi, które jego odpowiednika Windows zaawansowane IDE. Platformę kompilatora programu Roslyn jest używana do refaktoryzacji i technologii IntelliSense. Silnik projektu systemu i kompilacji, użyj programu MSBuild, a jego Edytor źródła obsługuje pakiety TextMate. Używa tego samego aparatów debugera dla aplikacji platformy Xamarin i .NET Core i ten sam projektantów Xamarin.iOS i Xamarin.Android.
