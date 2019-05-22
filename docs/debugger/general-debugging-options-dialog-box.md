@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399402"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037386"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
@@ -136,7 +136,7 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, uż
 
 - **Pokaż narzędzia środowiska uruchomieniowego w aplikacji**: Pokazuje **dynamiczne drzewo wizualne** polecenia na pasku narzędzi w oknie głównym aplikacji XAML, która jest debugowana. Ta opcja została wprowadzona w Visual Studio 2015 Update 2.
 
-- **Włącz XAML Edytuj i Kontynuuj**:   Umożliwia używanie funkcji Edytuj i Kontynuuj funkcji przy użyciu kodu XAML.
+- **Włącz Reload gorąca XAML**: Umożliwia funkcja XAML gorąca Załaduj ponownie przy użyciu kodu XAML, gdy uruchomiona jest aplikacja. (Ta funkcja była wcześniej nazywana "XAML Edytuj i Kontynuuj")
 
 **Włącz narzędzia diagnostyczne podczas debugowania**: **Narzędzia diagnostyczne** zostanie wyświetlone okno podczas debugowania.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/02/2019
+ms.date: 05/22/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cda1d4c5dd53b3d4f582253a91c676024c78f31a
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951260"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037595"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Identyfikatory obciążeń i składników programu Visual Studio
 

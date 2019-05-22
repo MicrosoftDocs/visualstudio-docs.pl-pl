@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b89f8415d34a4facaca694db8507c911d279bf8f
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976119"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037509"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
@@ -165,3 +165,4 @@ Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie 
 * [Importowanie lub eksportowanie konfiguracji instalacji](import-export-installation-configurations.md)
 * [Archiwa Instalatora programu Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/)
 * [Cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
+* [Ustawienia Załaduj synchroniczne](../extensibility/synchronously-autoloaded-extensions.md)

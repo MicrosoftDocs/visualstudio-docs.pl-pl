@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793455"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037009"
 ---
 # <a name="project-and-item-templates"></a>Szablony projektów i elementów
 
@@ -47,7 +47,7 @@ Wszystkie szablony projektów i elementów, czy zainstalowany za pomocą program
 
 ::: moniker-end
 
-   Aby uzyskać więcej informacji na temat *.vstemplate* plików, zobacz [parametry szablonu](../ide/template-parameters.md).
+   Aby uzyskać więcej informacji na temat *.vstemplate* plików, zobacz [znaczniki szablonu](template-tags.md) i [parametry szablonu](../ide/template-parameters.md).
 
 Jeśli te pliki są kompresowane do *zip* pliku i umieścić w odpowiednim folderze, Visual Studio automatycznie wyświetli je w następujących miejscach:
 
@@ -71,6 +71,7 @@ Aby uzyskać więcej informacji na temat folderów szablonów, zobacz [jak: Loka
 
 - [Instrukcje: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
 - [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
+- [Znaczniki szablonu](template-tags.md)
 - [Parametry szablonu](../ide/template-parameters.md)
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
 - [Pakiety NuGet w szablonach programu Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

@@ -1,7 +1,7 @@
 ---
 title: Analiza kodu programu FxCop i analizatory FxCop analizujące kod
 ms.date: 09/06/2018
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab7816e7e1472101f0e84c05a4975f19e3902e27
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65613549"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037266"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące programu FxCop i FxCop analizatorów
 
@@ -48,6 +48,10 @@ Jeśli zainstalowano analizatory FxCop analizujące kod, ale w dalszym ciągu uz
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
+
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Które reguły wydajnej analizatory FxCop analizujące kod?
+
+Aby uzyskać informacje o tym, jakie reguły analizy kodu statycznego wydajnej [analizatory FxCop analizujące kod](install-fxcop-analyzers.md), zobacz [stanu portu reguł programu Fxcop](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Zobacz także
 

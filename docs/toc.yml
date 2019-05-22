@@ -16,10 +16,10 @@
   items:
     - name: Instalowanie programu Visual Studio
       href: install/install-visual-studio.md
-    - name: Konta
+    - name: Konta personalizacji
       items:
         - name: Logowanie do programu Visual Studio
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Praca z wieloma kontami użytkowników
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: Modyfikowanie programu Visual Studio
       href: install/modify-visual-studio.md
-    - name: Instalowanie Podglądu Pomocy
-      href: help-viewer/installation.md
     - name: Napraw program Visual Studio
       href: install/repair-visual-studio.md
     - name: Odinstalowywanie programu Visual Studio
       href: install/uninstall-visual-studio.md
     - name: Podręcznik administratora programu Visual Studio
       items:
-        - name: Przewodnik administratora
+        - name: Omówienie
           href: install/visual-studio-administrator-guide.md
         - name: Korzystanie z wiersza polecenia
           items:
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: Znane problemy z kontenerami
           href: install/build-tools-container-issues.md
+    - name: Instalowanie Podglądu Pomocy
+      href: help-viewer/installation.md
 - name: Przewodniki Szybki Start
   items:
     - name: Orientacja programu Visual Studio

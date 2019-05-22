@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdf29e3a4cda2bf5d527a2b712878c1fbd76197
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789070"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037585"
 ---
-# <a name="wrap-indent-and-align-parameters"></a>Opakowywanie, wcięcia i wyrównywanie parametrów
+# <a name="wrap-indent-and-align-parameters-or-arguments"></a>Opakowywanie, wcięcia i wyrównywanie parametry i argumenty
 
 Ta Refaktoryzacja mają zastosowanie do:
 
@@ -25,11 +25,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** Umożliwia opakować, wcięcia i parametrów wyrównanie.
+**Co:** Umożliwia opakować, wcięcia i wyrównywanie parametry i argumenty.
 
-**Kiedy:** Masz deklaracji metody lub wywołania, który ma wiele parametrów.
+**Kiedy:** Masz deklaracji metody lub wywołania, które ma wiele parametrów lub argumentów.
 
-**Dlaczego:** Odczytywanie długą listę parametrów jest łatwiejsze w przypadku, gdy są one opakowane lub wcięte w zależności od preferencji użytkownika.
+**Dlaczego:** Odczytywanie długą listę parametrów lub argumentów jest łatwiejsze w przypadku, gdy są one opakowane lub wcięte w zależności od preferencji użytkownika.
 
 ## <a name="how-to"></a>Instrukcje
 

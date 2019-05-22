@@ -1,20 +1,24 @@
 # [Visual Studio dla komputerów Mac](index.yml)
 # [Samouczek środowiska IDE](ide-tour.md)
 
-# [Instalacja](installation.md)
+# Instalacja
+## [Instalowanie programu Visual Studio 2019 dla komputerów Mac](installation.md)
 ## [Instalowanie i używanie programu za zaporą lub serwerem proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalowanie wcześniejszej wersji](install-preview.md)
 ## [Aktualizacja](update.md)
 ## [Dezinstalacja](uninstall.md)
 
-# [Konta użytkowników](user-accounts.md)
+# Konta użytkowników
+## [Omówienie](user-accounts.md)
 ## [Logowanie](signing-in.md)
 ## [Włączanie subskrypcji](enable-subscription.md)
 
-# [Dostosowywanie środowiska IDE](customizing-the-ide.md)
+# Dostosowywanie środowiska IDE
+## [Dostosowywanie wyglądu i sposobu działania środowiska IDE](customizing-the-ide.md)
 ## [Rozszerzenie programu Visual Studio dla komputerów Mac](extending-visual-studio-mac.md)
 
-# [Projekty i rozwiązania](projects-and-solutions.md)
+# Projekty i rozwiązania
+## [Omówienie](projects-and-solutions.md)
 ## [Tworzenie nowych projektów](create-new-projects.md)
 ## [Dodawanie i usuwanie elementów projektu](add-and-remove-project-items.md)
 ## [Zarządzanie rozwiązaniami i właściwościami projektu](managing-solutions-and-project-properties.md)
@@ -23,7 +27,8 @@
 ## [Zarządzanie zasobami aplikacji](managing-app-resources.md)
 ## [Instrukcje: Otwieranie wielu rozwiązań lub wystąpień](open-multiple-solutions.md)
 
-# [Edytor źródeł](source-editor.md)
+# Edytor źródeł
+## [Funkcje edytora](source-editor.md)
 ## [Refaktoryzacja](refactoring.md)
 ## [Komentarze](comments.md)
 ## [Zachowanie edytora](editor-behavior.md)
@@ -34,10 +39,12 @@
 ## [EditorConfig](editorconfig.md)
 ## [Domyślne skróty klawiaturowe](keyboard-shortcuts.md)
 
-# [Debugowanie](debugging.md)
+# Debugowanie
+## [Omówienie](debugging.md)
 ## [Wizualizacje danych](data-visualizations.md)
 
-# [Kompilowanie i tworzenie](compiling-and-building.md)
+# Kompilowanie i tworzenie
+## [Omówienie](compiling-and-building.md)
 ## [Kompilowanie oraz oczyszczanie projektów i rozwiązań](building-and-cleaning-projects-and-solutions.md)
 ## [Akcja kompilacji](build-actions.md)
 ## [Instrukcje: Ustawianie wielu projektów startowych](set-startup-projects.md)
@@ -45,18 +52,21 @@
 ## [Konfiguracje](configurations.md)
 ### [Tworzenie i edycja konfiguracji](create-and-edit-configurations.md)
 
-# [Kontrola wersji](version-control.md)
+# Kontrola wersji
+## [Omówienie](version-control.md)
 ## [Kontrola wersji TF](tf-version-control.md)
 ## [Konfigurowanie repozytorium Git](set-up-git-repository.md)
 ## [Praca z usługą Git](working-with-git.md)
 ## [Konfigurowanie repozytorium podwersji](set-up-subversion-repository.md)
 ## [Praca z podwersją](working-with-subversion.md)
 
-# [Wdrożenie aplikacji internetowej](web-app-deployment.md)
+# Wdrożenie aplikacji internetowej
+## [Omówienie](web-app-deployment.md)
 ## [Publikowanie w usłudze Azure App Service](publish-app-svc.md)
 ## [Publikowanie w folderze](publish-folder.md)
 
-# [Pakiety robocze](workloads.md)
+# Pakiety robocze
+## [Dostępne obciążenia](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript i TypeScript](javascript.md)
@@ -73,7 +83,8 @@
 
 # [Ułatwienia dostępu](accessibility.md)
 
-# [Rozwiązywanie problemów](troubleshooting.md)
+# Rozwiązywanie problemów
+## [Dzienniki i wyjątki](troubleshooting.md)
 ## [Program poprawy jakości obsługi klienta systemu Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Zgłaszanie problemu](report-a-problem.md)
 ## [Rozwiązywanie problemów: Dlaczego nie mogę wyświetlić wszystkich szablonów?](troubleshooting-no-templates.md)
