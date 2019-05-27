@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b4468af7b2b0cfd08e551839a9ab9c606c25df2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f2e1d3ada2e5bf5f906d7c458a47e32f7e59c3c5
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920624"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212590"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 Określa, proces może zostać zakończone.
@@ -36,10 +39,9 @@ int CanTerminateProcess ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pProcess`
-
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje proces, który ma zostać zakończony.
+## <a name="parameters"></a>Parametry
+`pProcess`\
+[in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje proces, który ma zostać zakończony.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_FALSE` Jeśli silnik nie można przerwać proces, na przykład, ponieważ nastąpiła odmowa dostępu.
@@ -47,7 +49,7 @@ int CanTerminateProcess ( 
 ## <a name="remarks"></a>Uwagi
  Jeśli ta metoda zwraca `S_OK`, następnie go [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) można wywołać metody faktycznie zakończenia procesu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)

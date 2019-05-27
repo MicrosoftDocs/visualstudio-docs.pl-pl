@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2714a038c2cede4b351de92454bb74a5052805c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5b78afc3ace3764856fd0a83899be2eae597239e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223573"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203672"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Ta metoda zwraca listę wizualizatorów typu, które obsługującemu tej usługi.
@@ -46,21 +46,17 @@ int GetCustomViewerList(
 ```
 
 ## <a name="parameters"></a>Parametry
- `celtSkip`\
+`celtSkip`\
+[in] Liczba wizualizatorów można pominąć.
 
- [in] Liczba wizualizatorów można pominąć.
+`celRequested`\
+[in] Liczba wizualizatorów do pobrania (również określa rozmiar `rgViewers` tablicy).
 
- `celRequested`\
+`rgViewers`\
+[out w] Tablica [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktury do wypełnienia.
 
- [in] Liczba wizualizatorów do pobrania (również określa rozmiar `rgViewers` tablicy).
-
- `rgViewers`\
-
- [out w] Tablica [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktury do wypełnienia.
-
- `pceltFetched`\
-
- [out] Liczba wizualizatorów faktycznie pobrać.
+`pceltFetched`\
+[out] Liczba wizualizatorów faktycznie pobrać.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 360ee8cb970dd4a1c181061e4ed99d9c6e06b452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c96d8b94142f9751412df90d3e46240631aa96f9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876490"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205950"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 Pobiera typ, biorąc pod uwagę jej token.
@@ -41,22 +44,18 @@ int GetTypeFromToken(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`appDomain`
+## <a name="parameters"></a>Parametry
+`appDomain`\
+[in] Identyfikator domeny aplikacji.
 
- [in] Identyfikator domeny aplikacji.
+`guidModule`\
+[in] Unikatowy identyfikator modułu.
 
-`guidModule`
+`tdToken`\
+[in] Token typu, który ma zostać pobrane.
 
- [in] Unikatowy identyfikator modułu.
-
-`tdToken`
-
- [in] Token typu, który ma zostać pobrane.
-
-`ppField`
-
- [out] Zwraca typ, który jest reprezentowany przez [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+`ppField`\
+[out] Zwraca typ, który jest reprezentowany przez [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -90,5 +89,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

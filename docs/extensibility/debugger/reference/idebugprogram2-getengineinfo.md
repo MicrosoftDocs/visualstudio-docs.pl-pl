@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe8b6768bf67cab4a4d69e82c509db0bd6f93543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1b03fe660cd6b909c1d86871556e4f0e6ecb945
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917264"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212298"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 Pobiera nazwę i identyfikator GUID aparat debugowania (DE), program został uruchomiony.
@@ -38,14 +41,12 @@ int GetEngineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pbstrEngine`
+## <a name="parameters"></a>Parametry
+`pbstrEngine`\
+[out] Zwraca nazwę DE program został uruchomiony.
 
- [out] Zwraca nazwę DE program został uruchomiony.
-
- `pguidEngine`
-
- [out] Zwraca identyfikator GUID DE program został uruchomiony.
+`pguidEngine`\
+[out] Zwraca identyfikator GUID DE program został uruchomiony.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -53,5 +54,5 @@ int GetEngineInfo( 
 ## <a name="remarks"></a>Uwagi
  DE każdy definiuje swój własny identyfikator GUID do identyfikacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

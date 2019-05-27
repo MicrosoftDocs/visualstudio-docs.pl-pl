@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9967351e4b0654a21cab21c2f17eedcbcb471fff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7afcf34153c6910820068cfbea7e67b08568223a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919401"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212189"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 Ta metoda pobiera typ pola.
@@ -36,14 +39,13 @@ int GetKind(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwKind`
-
- [out] Zwraca typ pola pod postacią połączenia [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) stałe.
+## <a name="parameters"></a>Parametry
+`pdwKind`\
+[out] Zwraca typ pola pod postacią połączenia [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) stałe.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

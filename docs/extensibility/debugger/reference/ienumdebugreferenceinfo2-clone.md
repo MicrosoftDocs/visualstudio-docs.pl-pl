@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 648e1a1e801cb143dd87a1d0ced4a1e7d8e5dba7
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 3146ef95472d45e4d74ad960779059aa32e402ff
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461243"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212023"
 ---
 # <a name="ienumdebugreferenceinfo2clone"></a>IEnumDebugReferenceInfo2::Clone
 Zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>Parametry
- `ppEnum`\
-
- [out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
+`ppEnum`\
+[out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

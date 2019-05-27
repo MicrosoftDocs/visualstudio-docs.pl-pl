@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ea45e3aa1f59353e0a395a61b0309144b413227
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: df6c1418b49745a089b55f7d66067a54360e88fd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223993"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207135"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Pobiera adres debugowania, występującego z adresu podanego debugowania w metodzie.
@@ -44,17 +44,14 @@ int GetNextAddress( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `pAddress`\
+`pAddress`\
+[in] Podany adres debugowania.
 
- [in] Podany adres debugowania.
+`fStatementOnly`\
+[in] W przypadku opcji TRUE ogranicza adresy debugowania do pojedynczej instrukcji.
 
- `fStatementOnly`\
-
- [in] W przypadku opcji TRUE ogranicza adresy debugowania do pojedynczej instrukcji.
-
- `ppAddress`\
-
- [out] Zwraca następny adres debugowania.
+`ppAddress`\
+[out] Zwraca następny adres debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zwraca prawidłową `HRESULT`, zazwyczaj S_OK.

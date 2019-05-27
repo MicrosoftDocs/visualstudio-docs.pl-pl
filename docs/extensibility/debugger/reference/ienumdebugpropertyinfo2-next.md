@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a866071b09c07f42d21bbf90de3bd6eda6717ab2
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b97e8d2a90c6b0dda446978fb5c180fc7c30fa01
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223263"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212028"
 ---
 # <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
 Zwraca następny zestaw elementów z wyliczenia.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parametry
- `celt`\
+`celt`\
+[in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
 
- [in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
+`rgelt`\
+[out w] Tablica [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) elementami do wypełnienia.
 
- `rgelt`\
-
- [out w] Tablica [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) elementami do wypełnienia.
-
- `pceltFetched`\
-
- [out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
+`pceltFetched`\
+[out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.

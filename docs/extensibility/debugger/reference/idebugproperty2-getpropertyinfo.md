@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f088bcfeebb570be911fbc8e37bed5995767ac9
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: cefde77199f4348cb93fd387291f3a991bf4d50c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457736"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211474"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 Pobiera [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strukturę, która opisuje właściwość, która.
@@ -50,29 +50,23 @@ int GetPropertyInfo ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `dwFields`\
+`dwFields`\
+[in] Kombinacja wartości z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) wyliczenie, które określa pola, które są wypełniane w `pPropertyInfo` struktury.
 
- [in] Kombinacja wartości z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) wyliczenie, które określa pola, które są wypełniane w `pPropertyInfo` struktury.
+`nRadix`\
+[in] Podstawy ma być używany w formatowaniu wszelkie dane liczbowe.
 
- `nRadix`\
+`dwTimeout`\
+[in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
 
- [in] Podstawy ma być używany w formatowaniu wszelkie dane liczbowe.
+`rgpArgs`\
+[out w] Zarezerwowane dla przyszłego użytku; Ustaw wartość null.
 
- `dwTimeout`\
+`dwArgCount`\
+[in] Zarezerwowane dla przyszłego użytku; ustawić na zero.
 
- [in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
-
- `rgpArgs`\
-
- [out w] Zarezerwowane dla przyszłego użytku; Ustaw wartość null.
-
- `dwArgCount`\
-
- [in] Zarezerwowane dla przyszłego użytku; ustawić na zero.
-
- `pPropertyInfo`\
-
- [out] A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strukturę, która jest wypełniane opis właściwości.
+`pPropertyInfo`\
+[out] A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strukturę, która jest wypełniane opis właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

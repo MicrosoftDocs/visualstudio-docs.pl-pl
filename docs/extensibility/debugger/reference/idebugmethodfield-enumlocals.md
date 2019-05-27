@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e8c39adaca6c394b631542d57d74ed4818501b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5a99fb1e0b8b32f98d06f34ac39b8dfd781cdc62
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872927"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211979"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Tworzy moduł wyliczający wybrane zmienne lokalne, metody.
@@ -38,14 +41,12 @@ int EnumLocals(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pAddress`
+## <a name="parameters"></a>Parametry
+`pAddress`\
+[in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiekt reprezentujący adres debugowania, który wybiera kontekst lub zakres, z którego mają zostać pobrane zmienne lokalne.
 
- [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiekt reprezentujący adres debugowania, który wybiera kontekst lub zakres, z którego mają zostać pobrane zmienne lokalne.
-
-`ppLocals`
-
- [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę zmienne; w przeciwnym razie zwraca wartość null, jeśli nie ma żadnych zmiennych lokalnych.
+`ppLocals`\
+[out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę zmienne; w przeciwnym razie zwraca wartość null, jeśli nie ma żadnych zmiennych lokalnych.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie ma żadnych zmiennych lokalnych. W przeciwnym razie zwraca kod błędu.
@@ -75,7 +76,7 @@ public void func(int index)
 
 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) obiekt reprezentuje `func` sama metoda. Wywoływanie `EnumLocals` metody z [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) równa `Inner Scope 1` adres zwraca wyliczenie zawierający `temp1` zmiennej, na przykład.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

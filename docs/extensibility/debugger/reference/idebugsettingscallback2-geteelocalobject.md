@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9cdf108aa196e899da6188212708bacb3e147ff
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b26646df5958bd6070ee0c30dbe574070cd1127a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458633"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212149"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 Pobiera wyrażenie ewaluatora lokalnego obiektu podanej nazwy metryki.
@@ -44,21 +44,17 @@ private int GetEELocalObject(
 ```
 
 ## <a name="parameters"></a>Parametry
- `guidLang`\
+`guidLang`\
+[in] Unikatowy identyfikator języka programowania.
 
- [in] Unikatowy identyfikator języka programowania.
+`guidVendor`\
+[in] Unikatowy identyfikator dostawcy.
 
- `guidVendor`\
+`pszMetric`\
+[in] Nazwa metryki.
 
- [in] Unikatowy identyfikator dostawcy.
-
- `pszMetric`\
-
- [in] Nazwa metryki.
-
- `ppUnk`\
-
- [out] Zwraca wyrażenie ewaluatora lokalnego obiektu.
+`ppUnk`\
+[out] Zwraca wyrażenie ewaluatora lokalnego obiektu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

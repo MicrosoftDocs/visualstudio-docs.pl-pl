@@ -9,13 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f0facec34c04e5b228e346d1559ffe4f179fa1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926838"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212237"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -64,7 +63,7 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 
 * Zestawy, które tylko zostały zainstalowane w GAC:
 
-   Te zestawy są teraz instalowane w ramach <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Te foldery są częścią procesu programu Visual Studio ścieżkach sondowania.
+   Te zestawy są teraz instalowane w ramach <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Te foldery są częścią procesu programu Visual Studio ścieżkach sondowania.
 
 * Zestawy, które zostały zainstalowane w ścieżce sondowanie i pamięci podręcznej GAC:
 
@@ -106,8 +105,8 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 
 * Wcześniej zainstalowany program Visual Studio wielu kluczy rejestru w systemie **HKEY_LOCAL_MACHINE** i **HKEY_CURRENT_USER** gałęzie w kluczu dotyczące programu Visual Studio:
 
-  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Klucze rejestru, tworzone przez instalatory MSI i rozszerzeń dla poszczególnych komputerów.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Klucze rejestru, utworzone przez program Visual Studio, aby przechowywać ustawienia specyficzne dla użytkownika.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}** : Klucze rejestru, tworzone przez instalatory MSI i rozszerzeń dla poszczególnych komputerów.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}** : Klucze rejestru, utworzone przez program Visual Studio, aby przechowywać ustawienia specyficzne dla użytkownika.
   * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Kopię programu Visual Studio HKLM klucz powyżej, a także klucze rejestru są scalane z *.pkgdef* plików według rozszerzenia.
 
 * Aby zmniejszyć wpływ na rejestrze, używa teraz program Visual Studio [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) funkcję, aby przechowywać klucze rejestru w prywatnej pliku binarnego w obszarze *[VSAPPDATA]\privateregistry.bin*. Bardzo niewielkiej liczby Visual Studio kluczy pozostają w rejestrze systemowym.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0321dfbdc719d8e155bb1ee035032e2862bb90e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc37cd9cff4956d000441a632f84a6155f9b9586
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873851"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212214"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Ta metoda pobiera rozszerzone informacje dotyczące pola.
@@ -40,23 +43,20 @@ int GetExtendedInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `guidExtendedInfo`
-
- [in] Wybiera informacje, które mają zostać zwrócone. Prawidłowe wartości to:
+## <a name="parameters"></a>Parametry
+`guidExtendedInfo`\
+[in] Wybiera informacje, które mają zostać zwrócone. Prawidłowe wartości to:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |`guidConstantValue`|Wartość atrybutu jako sekwencja bajtów.|
 |`guidConstantType`|Typ jako typ podpisu.|
 
- `prgBuffer`
+`prgBuffer`\
+[out] Zwraca informacje o rozszerzonych.
 
- [out] Zwraca informacje o rozszerzonych.
-
- `pdwLen`
-
- [out w] Zwraca rozmiar rozszerzone informacje w bajtach.
+`pdwLen`\
+[out w] Zwraca rozmiar rozszerzone informacje w bajtach.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -64,5 +64,5 @@ int GetExtendedInfo(
 ## <a name="remarks"></a>Uwagi
  Obecnie metoda ta zwraca tylko typ lub wartość stałą. Obiekt wywołujący należy zwolnić buforu zwracane w `prgBuffer` przez wywołanie modelu COM `CoTaskMemFree` — funkcja (C++) lub <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

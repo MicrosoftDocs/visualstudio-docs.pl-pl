@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d08d9108ed4a433bcbcb17d6d4587532542b303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7e9a40db04342bcf75f6099c9143c38bf8b83482
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872466"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210040"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 Pobiera alias skojarzony z tym obiektem, jeśli istnieje.
@@ -36,10 +39,9 @@ int GetAlias(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppAlias`
-
- [out] Zwraca [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) obiekt reprezentujący alias dla tego obiektu; w przeciwnym razie zwraca wartość null.
+## <a name="parameters"></a>Parametry
+`ppAlias`\
+[out] Zwraca [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) obiekt reprezentujący alias dla tego obiektu; w przeciwnym razie zwraca wartość null.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -47,6 +49,6 @@ int GetAlias(
 ## <a name="remarks"></a>Uwagi
  Alias dla obiektu jest tworzony przy użyciu wywołania do [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) metody.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c8349b8a7f7b823d4596f167889a227b166b7a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e3661186357e82170cc67f6e3744e8662ebae76c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457370"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212137"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 Pobiera wartość, która odnosi się do określonej metryki Ewaluator wyrażeń.
@@ -44,21 +44,17 @@ private int GetEEMetricDword(
 ```
 
 ## <a name="parameters"></a>Parametry
- `guidLang`\
+`guidLang`\
+[in] Unikatowy identyfikator języka programowania.
 
- [in] Unikatowy identyfikator języka programowania.
+`guidVendor`\
+[in] Unikatowy identyfikator dostawcy.
 
- `guidVendor`\
+`pszMetric`\
+[in] Nazwa metryki.
 
- [in] Unikatowy identyfikator dostawcy.
-
- `pszMetric`\
-
- [in] Nazwa metryki.
-
- `pdwValue`\
-
- [out] Zwraca wartość, która odpowiada ciągowi metryki.
+`pdwValue`\
+[out] Zwraca wartość, która odpowiada ciągowi metryki.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

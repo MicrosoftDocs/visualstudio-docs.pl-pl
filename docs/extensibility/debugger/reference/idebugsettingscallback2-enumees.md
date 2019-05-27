@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5205cfbda0420e45fc1e22dac678d97975f937a8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457610"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212170"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Wylicza ewaluatory wyrażeń dostępne, biorąc pod uwagę identyfikatorów języka i dostawcy.
@@ -44,21 +44,17 @@ public int EnumEEs(
 ```
 
 ## <a name="parameters"></a>Parametry
- `celtBuffer`\
+`celtBuffer`\
+[in] Liczba elementów w `pceltEEs` buforu.
 
- [in] Liczba elementów w `pceltEEs` buforu.
+`rgguidLang`\
+[out w] Unikatowy identyfikator dla języka programowania.
 
- `rgguidLang`\
+`rgguidVendor`\
+[out w] Unikatowy identyfikator dla dostawcy.
 
- [out w] Unikatowy identyfikator dla języka programowania.
-
- `rgguidVendor`\
-
- [out w] Unikatowy identyfikator dla dostawcy.
-
- `pceltEEs`\
-
- [out w] Tablica ewaluatory wyrażeń.
+`pceltEEs`\
+[out w] Tablica ewaluatory wyrażeń.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

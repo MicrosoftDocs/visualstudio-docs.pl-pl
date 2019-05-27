@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 022712c0be8dfb569ba097bc4a86f8b02de93633
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ca994aaf03103e6d668d78a7d3a683ddbc988eb7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457416"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210093"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Ustawia wartość odniesienia z ciągu. Zarezerwowane do użytku w przyszłości.
@@ -44,17 +44,14 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `pszValue`\
+`pszValue`\
+[in] Wartość jako ciąg.
 
- [in] Wartość jako ciąg.
+`dwRadix`\
+[in] Podstawy, który ma być używany w formatowaniu wszelkie dane liczbowe.
 
- `dwRadix`\
-
- [in] Podstawy, który ma być używany w formatowaniu wszelkie dane liczbowe.
-
- `dwTimeout`\
-
- [in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
+`dwTimeout`\
+[in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca `E_NOTIMPL`.

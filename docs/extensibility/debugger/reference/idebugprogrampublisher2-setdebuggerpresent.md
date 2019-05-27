@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6226463ff16cc1415b99c3b06973ae8f580688a1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: daac325e80e91423ed641d486598ed95d0e76b6f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458965"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211657"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 Informuje wydawca programu, że debuger jest obecna i uruchomiona.
@@ -40,9 +40,8 @@ int SetDebuggerPresent(
 ```
 
 ## <a name="parameters"></a>Parametry
- `fDebuggerPresent`\
-
- [in] Niezerowa Koniunkcja (`TRUE`) jest obecny debuger, wartość zero (`FALSE`) Jeśli nie jest.
+`fDebuggerPresent`\
+[in] Niezerowa Koniunkcja (`TRUE`) jest obecny debuger, wartość zero (`FALSE`) Jeśli nie jest.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3fdfd604f28f6657b27ef0e81ca4ce5855d97df
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: bc49529f5652475ad9f7528fd229e0354ee055d4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457288"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212044"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Pobiera ciąg wartość metryki nadać jej nazwę.
@@ -45,21 +45,17 @@ private int GetMetricString(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pszType`\
+`pszType`\
+[in] Typ metryki.
 
- [in] Typ metryki.
+`guidSection`\
+[in] Unikatowy identyfikator sekcji.
 
- `guidSection`\
+`pszMetric`\
+[in] Nazwa metryki.
 
- [in] Unikatowy identyfikator sekcji.
-
- `pszMetric`\
-
- [in] Nazwa metryki.
-
- `pbstrValue`\
-
- [out] Zwraca ciąg wartość metryki.
+`pbstrValue`\
+[out] Zwraca ciąg wartość metryki.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

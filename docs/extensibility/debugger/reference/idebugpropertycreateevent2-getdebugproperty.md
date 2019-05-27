@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b953b18c96a48402e49f06443c09220d151204dd
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b12806c9aa4befe41fc2f9bbbc83feb75208a240
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458793"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212382"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 Pobiera nową właściwość.
@@ -40,9 +40,8 @@ int GetDebugProperty ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `ppProperty`\
-
- [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje nową właściwość.
+`ppProperty`\
+[out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje nową właściwość.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

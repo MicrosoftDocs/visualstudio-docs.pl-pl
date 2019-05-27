@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b45db093a451331de20b3f38bdf58f2669f0577
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: bacf4fffe9c4cf6a3f54bff8a941b5e680cd57cf
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223667"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210301"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 Ta metoda tworzy usługę wizualizatora.
@@ -48,25 +48,20 @@ int CreateVisualizerService(
 ```
 
 ## <a name="parameters"></a>Parametry
- `binder`\
+`binder`\
+[in] [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) obiekt przekazany do [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).
 
- [in] [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) obiekt przekazany do [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).
+`pSymProv`\
+[in] [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) obiekt przekazany do `IDebugParsedExpression::EvaluateSync`.
 
- `pSymProv`\
+`pAddress`\
+[in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiekt przekazany do `IDebugParsedExression::EvaluateSync`.
 
- [in] [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) obiekt przekazany do `IDebugParsedExpression::EvaluateSync`.
+`dataProvider`\
+[in] Implementowanie obiektu [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) interfejsu (dostarczonych przez ewaluatora wyrażeń).
 
- `pAddress`\
-
- [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiekt przekazany do `IDebugParsedExression::EvaluateSync`.
-
- `dataProvider`\
-
- [in] Implementowanie obiektu [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) interfejsu (dostarczonych przez ewaluatora wyrażeń).
-
- `ppService`\
-
- [out] Utworzono usługę.
+`ppService`\
+[out] Utworzono usługę.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

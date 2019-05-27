@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7965f9c1990f894d53f0f114f74636814b9fdbb1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 26281ea175936429f1be5ac2620802c9d2cd5aa1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458870"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211422"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 Pobiera rozmiar w bajtach, wartość właściwości.
@@ -40,9 +40,8 @@ int GetSize ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `pdwSize`\
-
- [out] Zwraca rozmiar w bajtach, wartość właściwości.
+`pdwSize`\
+[out] Zwraca rozmiar w bajtach, wartość właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETSIZE_NO_SIZE` Jeśli właściwość ma rozmiar nie.

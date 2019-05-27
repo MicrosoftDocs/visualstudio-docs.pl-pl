@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea52bdeb73481c15c15762df1c8508473e6b0442
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 38916b7c5a7721509091218b5a66e1a7d7ca8a47
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223321"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208532"
 ---
 # <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
 Zwraca liczbę elementów w wyliczeniu.
@@ -40,9 +40,8 @@ int GetCount(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pcelt`\
-
- [out] Zwraca liczbę elementów w wyliczeniu.
+`pcelt`\
+[out] Zwraca liczbę elementów w wyliczeniu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

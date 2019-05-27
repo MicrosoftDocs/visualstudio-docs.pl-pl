@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e401e009cd4119704e72dec09614ec013aa9eee0
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: cbd7bd7655769668ce2a279150f444fd196235fb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223552"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212601"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 Pobiera liczbę wartości ciągów dla określonej właściwości lub pola.
@@ -43,17 +43,14 @@ int GetValueDisplayStringCount (
 ```
 
 ## <a name="parameters"></a>Parametry
- `displayKind`\
+`displayKind`\
+[in] Wartość z [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) wyliczenia.
 
- [in] Wartość z [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) wyliczenia.
+`propertyOrField`\
+[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejs, który reprezentuje właściwość lub pole.
 
- `propertyOrField`\
-
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejs, który reprezentuje właściwość lub pole.
-
- `pcelt`\
-
- [out] Zwraca liczbę ciągi wartości do wyświetlenia.
+`pcelt`\
+[out] Zwraca liczbę ciągi wartości do wyświetlenia.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

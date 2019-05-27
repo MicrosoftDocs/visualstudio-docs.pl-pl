@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfdfb05d45996e87ea749dffa89915a175d9274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ad964c4f9759368d6d687386274e221bb7cf73a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920703"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212468"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Ta metoda uruchamia proces, za pomocą aparatu debugowania (DE).
@@ -60,58 +63,45 @@ int LaunchSuspended(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszMachine`
+## <a name="parameters"></a>Parametry
+`pszMachine`\
+[in] Nazwa maszyny, w którym można uruchomić procesu. Użyj wartości null, aby określić komputer lokalny.
 
- [in] Nazwa maszyny, w którym można uruchomić procesu. Użyj wartości null, aby określić komputer lokalny.
+`pPort`\
+[in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfejs reprezentujący portu, który będzie uruchamiany program.
 
- `pPort`
+`pszExe`\
+[in] Nazwa pliku wykonywalnego do uruchomienia.
 
- [in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfejs reprezentujący portu, który będzie uruchamiany program.
+`pszArgs`\
+[in] Argumenty do przekazania do pliku wykonywalnego. Może być wartością null, jeśli nie wymaga argumentów.
 
- `pszExe`
+`pszDir`\
+[in] Nazwa katalogu roboczego używane przez plik wykonywalny. Może być wartością null, jeśli katalog roboczy nie jest wymagana.
 
- [in] Nazwa pliku wykonywalnego do uruchomienia.
+`bstrEnv`\
+[in] Blok środowiska ciągów zakończony znakiem NULL, następuje dodatkowe terminator o wartości NULL.
 
- `pszArgs`
+`pszOptions`\
+[in] Opcje dla pliku wykonywalnego.
 
- [in] Argumenty do przekazania do pliku wykonywalnego. Może być wartością null, jeśli nie wymaga argumentów.
+`dwLaunchFlags`\
+[in] Określa [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) opłata za sesję.
 
- `pszDir`
+`hStdInput`\
+[in] Dojście do alternatywnego strumienia wejściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.
 
- [in] Nazwa katalogu roboczego używane przez plik wykonywalny. Może być wartością null, jeśli katalog roboczy nie jest wymagana.
+`hStdOutput`\
+[in] Dojście do strumienia wyjściowego alternatywne. Może być równa 0, jeśli przekierowanie nie jest wymagana.
 
- `bstrEnv`
+`hStdError`\
+[in] Dojście do błędu alternatywnego strumienia wyjściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.
 
- [in] Blok środowiska ciągów zakończony znakiem NULL, następuje dodatkowe terminator o wartości NULL.
+`pCallback`\
+[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt, który odbiera zdarzenia debuger.
 
- `pszOptions`
-
- [in] Opcje dla pliku wykonywalnego.
-
- `dwLaunchFlags`
-
- [in] Określa [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) opłata za sesję.
-
- `hStdInput`
-
- [in] Dojście do alternatywnego strumienia wejściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.
-
- `hStdOutput`
-
- [in] Dojście do strumienia wyjściowego alternatywne. Może być równa 0, jeśli przekierowanie nie jest wymagana.
-
- `hStdError`
-
- [in] Dojście do błędu alternatywnego strumienia wyjściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.
-
- `pCallback`
-
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt, który odbiera zdarzenia debuger.
-
- `ppDebugProcess`
-
- [out] Zwraca wartość wynikowa [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje uruchomienie procesu.
+`ppDebugProcess`\
+[out] Zwraca wartość wynikowa [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje uruchomienie procesu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -121,7 +111,7 @@ int LaunchSuspended(
 
  [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) metoda jest wywoływana, aby rozpocząć proces po procesie została pomyślnie uruchomiona w stanie wstrzymania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be32b39df6da618e38dc9e62264412fce8c29e20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24cce091d1381d97d70ce9c42baecc38bcf92393
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922427"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205940"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Pobiera typ nadać jej nazwę.
@@ -39,18 +42,15 @@ int GetTypesByName(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pszClassName`
+## <a name="parameters"></a>Parametry
+`pszClassName`\
+[in] Nazwa typu.
 
- [in] Nazwa typu.
+`nameMatch`\
+[in] Wybiera typ dopasowania, na przykład wielkość liter. Wartość z zakresu od [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) wyliczenia.
 
-`nameMatch`
-
- [in] Wybiera typ dopasowania, na przykład wielkość liter. Wartość z zakresu od [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) wyliczenia.
-
-`ppEnum`
-
- [out] Moduł wyliczający, który zawiera typ lub typy o podanej nazwie.
+`ppEnum`\
+[out] Moduł wyliczający, który zawiera typ lub typy o podanej nazwie.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -124,5 +124,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

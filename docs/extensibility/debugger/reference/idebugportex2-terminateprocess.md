@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cae335b2d4c897509fa292fe57f83cdb6f861b41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 914590ef5b45e444d0a356dfb9bf95c6f129aefb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918300"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208956"
 ---
 # <a name="idebugportex2terminateprocess"></a>IDebugPortEx2::TerminateProcess
 Kończy proces.
@@ -36,14 +39,13 @@ int TerminateProcess( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pPortProcess`
-
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt reprezentujący procesu, który ma zostać zakończony.
+## <a name="parameters"></a>Parametry
+`pPortProcess`\
+[in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt reprezentujący procesu, który ma zostać zakończony.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

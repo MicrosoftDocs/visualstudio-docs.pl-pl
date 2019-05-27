@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 122b0d64c32f50287a8845cbd43a41834234a415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8d78427fd3f5e949560be4abb4e1a55616cea859
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867280"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208104"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Ta metoda zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.
@@ -36,10 +39,9 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppEnum`
-
- [out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
+## <a name="parameters"></a>Parametry
+`ppEnum`\
+[out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
 
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8b93aa895588f743f4cc7c6b6adfa207590936d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873314"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210556"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Odczytuje sekwencji bajtów, zaczynając od danej lokalizacji.
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pStartContext`
+## <a name="parameters"></a>Parametry
+`pStartContext`\
+[in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który określa, gdzie należy rozpocząć odczyt bajtów.
 
- [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który określa, gdzie należy rozpocząć odczyt bajtów.
+`dwCount`\
+[in] Liczba bajtów do odczytania. Również określa długość `rgbMemory` tablicy.
 
- `dwCount`
+`rgbMemory`\
+[out w] Tablica wypełniona Bajty odczytane.
 
- [in] Liczba bajtów do odczytania. Również określa długość `rgbMemory` tablicy.
+`pdwRead`\
+[out] Zwraca liczbę bajtów ciągłych odczytane.
 
- `rgbMemory`
-
- [out w] Tablica wypełniona Bajty odczytane.
-
- `pdwRead`
-
- [out] Zwraca liczbę bajtów ciągłych odczytane.
-
- `pdwUnreadable`
-
- [out w] Zwraca liczbę bajtów nie można go odczytać. Może być wartością null, jeśli klient jest zainteresowany liczbę bajtów nie można go odczytać.
+`pdwUnreadable`\
+[out w] Zwraca liczbę bajtów nie można go odczytać. Może być wartością null, jeśli klient jest zainteresowany liczbę bajtów nie można go odczytać.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -78,6 +76,6 @@ int ReadAt(
 
  W tym przypadku ponieważ `*pdwRead + *pdwUnreadable < dwCount`, obiekt wywołujący musi wywoływania dodatkowych odczytu pozostałe bajty 30 oryginalnego 100, żądane i [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt przekazany w `pStartContext` parametru musi być zaawansowane za 70.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

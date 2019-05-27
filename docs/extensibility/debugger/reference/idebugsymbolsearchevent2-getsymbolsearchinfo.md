@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0f9097ae2db70f3743eb703bd6c654c4e464882
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ca6afee5cce069b212a2f1a88335d2fbce2e0427
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224104"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206898"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Metoda wywoływana przez program obsługi zdarzeń, aby pobrać wyniki dotyczące procesu ładowania symboli.
@@ -44,20 +44,17 @@ int GetSymbolSearchInfo(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pModule`\
+`pModule`\
+[out] Obiekt IDebugModule3 reprezentujący moduł, dla którego zostały załadowane symbole.
 
- [out] Obiekt IDebugModule3 reprezentujący moduł, dla którego zostały załadowane symbole.
-
- `pbstrDebugMessage`\
-
- [out w] Zwraca ciąg zawierający komunikaty o błędach z modułu. W przypadku braku błędów tego ciągu, po prostu będzie zawierać nazwę modułu, ale nigdy nie jest pusty.
+`pbstrDebugMessage`\
+[out w] Zwraca ciąg zawierający komunikaty o błędach z modułu. W przypadku braku błędów tego ciągu, po prostu będzie zawierać nazwę modułu, ale nigdy nie jest pusty.
 
 > [!NOTE]
 > [C++] `pbstrDebugMessage` nie może być `NULL` i musi być zwolniona przez `SysFreeString`.
 
- `pdwModuleInfoFlags`\
-
- [out] Kombinacja flag z [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) Wyliczenie wskazujące, czy wszystkie symbole zostały załadowane.
+`pdwModuleInfoFlags`\
+[out] Kombinacja flag z [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) Wyliczenie wskazujące, czy wszystkie symbole zostały załadowane.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

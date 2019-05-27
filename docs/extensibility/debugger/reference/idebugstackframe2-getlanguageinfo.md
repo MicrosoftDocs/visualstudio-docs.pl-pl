@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87cdfcaa59fabb983d85d154bca48a381ebf8819
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c5b6b5a94b38e1d057e51fe8f3ad8ed8e0003e4e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457548"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203279"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 Pobiera język skojarzone z tą ramką stosu.
@@ -42,13 +42,11 @@ int GetLanguageInfo ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `pbstrLanguage`\
+`pbstrLanguage`\
+[out] Zwraca nazwę języka, który implementuje metodę skojarzoną z tą ramką stosu.
 
- [out] Zwraca nazwę języka, który implementuje metodę skojarzoną z tą ramką stosu.
-
- `pguidLanguage`\
-
- [out] Zwraca `GUID` języka. Aby uzyskać [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] języków, na przykład, następujące mogą zostać zwrócone:
+`pguidLanguage`\
+[out] Zwraca `GUID` języka. Aby uzyskać [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] języków, na przykład, następujące mogą zostać zwrócone:
 
 -   `guidVBScriptLang`\
 

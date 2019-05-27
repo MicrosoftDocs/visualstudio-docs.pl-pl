@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6214d9240b51878d175496994831d767aa83375d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f0a1524a6c24b21dc9a167a7df286f60f48873
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918736"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210366"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 Pobiera komunikat do wyświetlenia.
@@ -45,31 +48,26 @@ int GetMessage( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pMessageType`
+## <a name="parameters"></a>Parametry
+`pMessageType`\
+[out] Zwraca wartość z zakresu od [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) wyliczenie opisujące typ komunikatu.
 
- [out] Zwraca wartość z zakresu od [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) wyliczenie opisujące typ komunikatu.
+`pbstrMessage`\
+[out] Zwraca komunikat.
 
- `pbstrMessage`
+`pdwType`\
+[out] Zwraca typ wiadomości, za pomocą Konwencji Win32 `MessageBox` funkcji. Zobacz [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) funkcji, aby uzyskać szczegółowe informacje.
 
- [out] Zwraca komunikat.
+`pbstrHelpFileName`\
+[out w] Zwraca nazwę pliku pomocy. Może być wartością null (C++) lub wartość pustą (C#), jeśli nie ma żadnego pliku pomocy.
 
- `pdwType`
-
- [out] Zwraca typ wiadomości, za pomocą Konwencji Win32 `MessageBox` funkcji. Zobacz [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) funkcji, aby uzyskać szczegółowe informacje.
-
- `pbstrHelpFileName`
-
- [out w] Zwraca nazwę pliku pomocy. Może być wartością null (C++) lub wartość pustą (C#), jeśli nie ma żadnego pliku pomocy.
-
- `pdwHelpId`
-
- [out w] Zwraca identyfikator pomocy. Mogą być 0, jeśli pomoc nie jest skojarzone z tym komunikatem.
+`pdwHelpId`\
+[out w] Zwraca identyfikator pomocy. Mogą być 0, jeśli pomoc nie jest skojarzone z tym komunikatem.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
 - [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

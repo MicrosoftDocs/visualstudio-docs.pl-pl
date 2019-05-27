@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e23ec439e352f6aa4e3b4d307bea76ebfdcf00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ad3e4c14c28f220a28e8d9aa65ddb1b6e6a3af0a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918790"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210551"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 Zapisuje określoną liczbę bajtów pamięci, zaczynając od określonego adresu.
@@ -41,18 +44,15 @@ int WriteAt(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pStartContext`
+## <a name="parameters"></a>Parametry
+`pStartContext`\
+[in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który określa, gdzie rozpoczyna zapis bajtów.
 
- [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który określa, gdzie rozpoczyna zapis bajtów.
+`dwCount`\
+[in] Liczba bajtów do zapisania.
 
- `dwCount`
-
- [in] Liczba bajtów do zapisania.
-
- `rgbMemory`
-
- [in] Bajty do zapisania. Ta tablica zakłada, że co najmniej `dwCount` bajtów.
+`rgbMemory`\
+[in] Bajty do zapisania. Ta tablica zakłada, że co najmniej `dwCount` bajtów.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` Jeśli nie wszystkie wartości bajtowe mogłyby być zapisywane lub zwraca kod błędu (zwykle `E_FAIL`).
@@ -60,6 +60,6 @@ int WriteAt(
 ## <a name="remarks"></a>Uwagi
  Jeśli adres początkowy nie jest w obrębie okna pamięci, reprezentowane przez ten [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiektu występuje nie zapisywania i kod błędu `E_FAIL` zwróceniem — nawet wtedy, gdy kwota do zapisania nakłada się do obszaru pamięci.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

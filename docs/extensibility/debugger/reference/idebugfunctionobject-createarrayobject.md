@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ee5d4a59442238b461361522b06087650547b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2f35c63310abe227dd50428d34122787ed0fb292
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873955"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212614"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 Tworzy obiekt, tablica. Ta tablica mogą zawierać albo podstawowego lub wartości wystąpienia obiektu.
@@ -46,30 +49,24 @@ int CreateArrayObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ot`
+## <a name="parameters"></a>Parametry
+`ot`\
+[in] Określa wartość z zakresu od [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) Wyliczenie wskazujące typ obiektu nowej tablicy.
 
- [in] Określa wartość z zakresu od [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) Wyliczenie wskazujące typ obiektu nowej tablicy.
+`pClassField`\
+[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt reprezentujący klasę obiektu, w przypadku tworzenia tablicę obiektów, wartości wystąpień. W przypadku tworzenia tablicy obiektów pierwotnych, ten parametr jest wartością null.
 
- `pClassField`
+`dwRank`\
+[in] Ranga lub liczba wymiarów tablicy.
 
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt reprezentujący klasę obiektu, w przypadku tworzenia tablicę obiektów, wartości wystąpień. W przypadku tworzenia tablicy obiektów pierwotnych, ten parametr jest wartością null.
+`dwDims`\
+[in] Rozmiary każdego wymiaru tablicy.
 
- `dwRank`
+`dwLowBounds`\
+[in] Źródło każdego wymiaru (zazwyczaj 0 lub 1).
 
- [in] Ranga lub liczba wymiarów tablicy.
-
- `dwDims`
-
- [in] Rozmiary każdego wymiaru tablicy.
-
- `dwLowBounds`
-
- [in] Źródło każdego wymiaru (zazwyczaj 0 lub 1).
-
- `ppObject`
-
- [out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt reprezentujący nowo utworzona tablica. Jest to rzeczywiście [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) obiektu.
+`ppObject`\
+[out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt reprezentujący nowo utworzona tablica. Jest to rzeczywiście [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) obiektu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -77,5 +74,5 @@ int CreateArrayObject(
 ## <a name="remarks"></a>Uwagi
  Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje parametr tablicowy do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

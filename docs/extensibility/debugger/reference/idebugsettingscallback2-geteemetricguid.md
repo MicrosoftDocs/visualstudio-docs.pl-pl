@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75d934b4896614655a2043e1f6ba549d72f99e2d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8829afadbd2f02b9b87f2beb84088aeeb447e66
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457475"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212103"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Pobiera unikatowy identyfikator dla metryki ewaluatora wyrażeń nadać jej nazwę.
@@ -44,21 +44,17 @@ HRESULT GetEEMetricGuid(
 ```
 
 ## <a name="parameters"></a>Parametry
- `guidLang`\
+`guidLang`\
+[in] Unikatowy identyfikator języka programowania.
 
- [in] Unikatowy identyfikator języka programowania.
+`guidVendor`\
+[in] Unikatowy identyfikator dostawcy.
 
- `guidVendor`\
+`pszMetric`\
+[in] Nazwa metryki.
 
- [in] Unikatowy identyfikator dostawcy.
-
- `pszMetric`\
-
- [in] Nazwa metryki.
-
- `pguidValue`\
-
- [out] Zwraca unikatowy identyfikator metryki.
+`pguidValue`\
+[out] Zwraca unikatowy identyfikator metryki.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c674b73ad6ec45b1e388f62fbd3103afb5daedb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05222901081fe3ba93f4648f3a2689d3d9a5c6ea
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918114"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204478"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Dodaje port.
@@ -38,14 +41,12 @@ int AddPort( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pRequest`
+## <a name="parameters"></a>Parametry
+`pRequest`\
+[in] [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) obiekt, który opisuje portu, który ma zostać dodana.
 
- [in] [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) obiekt, który opisuje portu, który ma zostać dodana.
-
- `ppPort`
-
- [out] Zwraca [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) obiekt, który reprezentuje numer portu.
+`ppPort`\
+[out] Zwraca [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) obiekt, który reprezentuje numer portu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -53,7 +54,7 @@ int AddPort( 
 ## <a name="remarks"></a>Uwagi
  Ta metoda faktycznie tworzy żądany port, a także dodanie go do dostawcy portu wewnętrznej listy aktywnych portów. [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) metodę można wywołać najpierw, aby uniknąć możliwych opóźnień czasochłonne.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

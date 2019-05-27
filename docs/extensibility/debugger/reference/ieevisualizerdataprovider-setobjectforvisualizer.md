@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 31bc89e248d609e8b828d4cc5b9ac41c8e15c70c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223940"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203693"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Ta metoda zmienia obiekt, który reprezentuje wizualizatora.
@@ -44,17 +44,14 @@ int SetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pNewObject`\
+`pNewObject`\
+[in] Obiekt, który można ustawić.
 
- [in] Obiekt, który można ustawić.
+`error`\
+[out] Jeśli wystąpił błąd podczas ustawiania obiektu, ten ciąg zawiera komunikat o błędzie.
 
- `error`\
-
- [out] Jeśli wystąpił błąd podczas ustawiania obiektu, ten ciąg zawiera komunikat o błędzie.
-
- `pException`\
-
- [out] Jeśli wystąpił błąd, ten obiekt przechowuje informacje o wyjątku.
+`pException`\
+[out] Jeśli wystąpił błąd, ten obiekt przechowuje informacje o wyjątku.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

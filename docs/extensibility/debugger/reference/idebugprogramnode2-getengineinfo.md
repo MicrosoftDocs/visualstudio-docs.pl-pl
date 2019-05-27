@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7ef0ce265bc63ce9a00fd748c50a338d52294557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459068"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211699"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Pobiera nazwę i identyfikator aparat debugowania (DE), który używa programu.
@@ -42,13 +42,11 @@ int GetEngineInfo(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pbstrEngine`\
+`pbstrEngine`\
+[out] Zwraca nazwę DE działania programu (C++-określonych: może to być wskaźnik zerowy, co oznacza, że obiekt wywołujący nie zainteresowanych nazwę aparat).
 
- [out] Zwraca nazwę DE działania programu (C++-określonych: może to być wskaźnik zerowy, co oznacza, że obiekt wywołujący nie zainteresowanych nazwę aparat).
-
- `pguidEngine`\
-
- [out] Zwraca unikatowy identyfikator globalny DE działania programu (C++-określonych: może to być wskaźnik zerowy, co oznacza, że obiekt wywołujący nie zainteresowani GUID aparatu).
+`pguidEngine`\
+[out] Zwraca unikatowy identyfikator globalny DE działania programu (C++-określonych: może to być wskaźnik zerowy, co oznacza, że obiekt wywołujący nie zainteresowani GUID aparatu).
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

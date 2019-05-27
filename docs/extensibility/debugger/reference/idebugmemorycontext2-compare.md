@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8f7f778e0dfd55e9db175c4e279c92b72e427e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f04000d3e2675f766ae343836320aa7433ade87d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873288"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211993"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Porównuje kontekstu pamięci dla każdego kontekstu w podanej tablicy w sposób wskazany przez porównanie flag, zwraca indeks pierwszego kontekst, który jest zgodny.
@@ -43,22 +46,18 @@ int Compare(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `compare`
+## <a name="parameters"></a>Parametry
+`compare`\
+[in] Wartość z zakresu od [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) wyliczenie, który określa typ porównania.
 
- [in] Wartość z zakresu od [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) wyliczenie, który określa typ porównania.
+`rgpMemoryContextSet`\
+[in] Tablica odniesień do [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiektów, które ma zostać wykonane porównanie.
 
- `rgpMemoryContextSet`
+`dwMemoryContextSetLen`\
+[in] Liczbę kontekstów w `rgpMemoryContextSet` tablicy.
 
- [in] Tablica odniesień do [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiektów, które ma zostać wykonane porównanie.
-
- `dwMemoryContextSetLen`
-
- [in] Liczbę kontekstów w `rgpMemoryContextSet` tablicy.
-
- `pdwMemoryContext`
-
- [out] Zwraca indeks pierwszego kontekst pamięci, który spełnia porównanie.
+`pdwMemoryContext`\
+[out] Zwraca indeks pierwszego kontekst pamięci, który spełnia porównanie.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_COMPARE_CANNOT_COMPARE` Jeśli nie można porównać dwóch kontekstów.
@@ -66,6 +65,6 @@ int Compare(
 ## <a name="remarks"></a>Uwagi
  Aparat debugowania (DE) nie ma do obsługi wszystkich rodzajów porównań, ale musi obsługiwać co najmniej `CONTEXT_EQUAL`, `CONTEXT_LESS_THAN`, `CONTEXT_GREATER_THAN` i `CONTEXT_SAME_SCOPE`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdfa97ccdbf139ce28ec58c07864551c4e6a7d5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01465a0b921d61a07c4d31c8d4d4ba4b70e5bafd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922646"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206858"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 Tworzy moduł wyliczający dla zagnieżdżonych moduły wyliczające tej klasy.
@@ -36,10 +39,9 @@ int EnumNestedEnums(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`ppEnum`
-
- [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę zagnieżdżonych wyliczenia. Zwraca wartość null, jeśli nie ma żadnych zagnieżdżonych wyliczenia.
+## <a name="parameters"></a>Parametry
+`ppEnum`\
+[out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę zagnieżdżonych wyliczenia. Zwraca wartość null, jeśli nie ma żadnych zagnieżdżonych wyliczenia.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie ma żadnych zagnieżdżonych modułów wyliczających. W przeciwnym razie zwraca kod błędu.
@@ -57,7 +59,7 @@ class RootClass {
 
 `EnumNestedEnums` Zwróci metoda [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiektu, który zawiera jeden [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) obiekt, który reprezentuje `NestedEnum` wyliczenia.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

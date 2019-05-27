@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2339a8209f1cb0a1cc3379bda7efd87d95ceb992
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5a34ca14be711d26858b3186e033bd91d6a9cd37
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223645"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209862"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 Zwraca liczbę elementów w wyliczeniu.
@@ -40,9 +40,8 @@ int GetCount(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pcelt`\
-
- [out] Zwraca liczbę elementów w wyliczeniu.
+`pcelt`\
+[out] Zwraca liczbę elementów w wyliczeniu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
