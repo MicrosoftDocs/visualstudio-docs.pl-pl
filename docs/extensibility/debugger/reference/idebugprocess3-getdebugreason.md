@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55f49d94ec95af8c7c74205335fe69b1ec3ecd41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9bc4092db3cec5c16e895cc763895272d89b340c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917692"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202399"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 Ta metoda zwraca przyczynę, że proces został uruchomiony dla debugowania.
@@ -36,14 +39,13 @@ int GetDebugReason(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pReason`
-
- [out] Zwraca wartość z zakresu od [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) wyliczenia.
+## <a name="parameters"></a>Parametry
+`pReason`\
+[out] Zwraca wartość z zakresu od [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) wyliczenia.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md)

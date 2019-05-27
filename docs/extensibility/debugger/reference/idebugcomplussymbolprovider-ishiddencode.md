@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0c9ef5f6000d3d8b3e446dddc460928e6bf626b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12e2acecb92bece536824c4fe64213cbe4e768ea
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876589"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206164"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 Określa, jeśli kod pod adresem określonym debugera jest ukryta.
@@ -34,10 +37,9 @@ int IsHiddenCode(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pAddress`
-
- [in] Adres debugowania, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
+## <a name="parameters"></a>Parametry
+`pAddress`\
+[in] Adres debugowania, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli kod jest ukryta, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`.
@@ -90,5 +92,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

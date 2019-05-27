@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6df3a4f69c62e7681eade705186c802a225f060
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a02fbe5b954fca78e2f75f982a62a1b9bf5f4a0b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873390"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210616"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 Zwraca interfejs, który reprezentuje obiektu zarządzanego.
@@ -36,10 +39,9 @@ int GetManagedObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppManagedObject`
-
- [out] Zwraca interfejs, który reprezentuje obiektu zarządzanego.
+## <a name="parameters"></a>Parametry
+`ppManagedObject`\
+[out] Zwraca interfejs, który reprezentuje obiektu zarządzanego.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -47,5 +49,5 @@ int GetManagedObject(
 ## <a name="remarks"></a>Uwagi
  Interfejs zwrócone w wyniku tej metody można wykonywać zapytania, dla dowolnego interfejsu implementowany przez klasy zarządzanej, dzięki czemu jego metody do wywołania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

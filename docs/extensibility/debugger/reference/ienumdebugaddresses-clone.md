@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 061f893d83f6fc2225ccc3219f1243338b55a404
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e7be8c22896759ec32fe595965c2e62c9c63ac01
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915065"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203622"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
 Ta metoda zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.
@@ -36,10 +39,9 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppEnum`
-
- [out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
+## <a name="parameters"></a>Parametry
+`ppEnum`\
+[out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
 
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -47,5 +49,5 @@ int Clone(
 ## <a name="remarks"></a>Uwagi
  Kopię wyliczenia ma ten sam stan, co oryginalny w czasie, którego ta metoda jest wywoływana. Jednak stany kopiowania i oryginalne są niezależne i można zmieniać indywidualnie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

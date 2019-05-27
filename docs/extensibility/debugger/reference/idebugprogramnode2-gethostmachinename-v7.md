@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09919ed73afc9115feffd1f828e9e8d14d1eae79
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 84cadbb3eb2351b5ecb2796de7694766a09f1d42
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457792"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203942"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
@@ -44,8 +44,7 @@ int GetHostMachineName_V7 (
 ## <a name="parameters"></a>Parametry
 
 `pbstrHostMachineName`\
-
- [out] Zwraca nazwę komputera, w którym jest uruchomiony program.
+[out] Zwraca nazwę komputera, w którym jest uruchomiony program.
 
 ## <a name="return-value"></a>Wartość zwracana
 

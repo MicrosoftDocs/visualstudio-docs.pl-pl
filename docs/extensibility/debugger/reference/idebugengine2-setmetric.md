@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 325cd30a49fb636c56eebd9e6301b3999e851363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 19c7a45647e20c72b7f446e2fb53667195f94f6a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920875"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207481"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 Ta metoda umożliwia ustawienie wartości rejestru znane jako metrykę.
@@ -38,14 +41,12 @@ int SetMetric(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszMetric`
+## <a name="parameters"></a>Parametry
+`pszMetric`\
+[in] Nazwa metryki.
 
- [in] Nazwa metryki.
-
- `varValue`
-
- [in] Określa wartość metryki.
+`varValue`\
+[in] Określa wartość metryki.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -53,6 +54,6 @@ int SetMetric(
 ## <a name="remarks"></a>Uwagi
  Metryka to wartość rejestru używane do zmiany zachowania aparatu debugowania lub anonsowanie obsługiwanych funkcji. Ta metoda może przekazywać wywołanie odpowiednią formą [pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funkcji `SetMetric`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [Pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

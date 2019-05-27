@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 641a3420dac230a62e7a6ba509547ba85efee372
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459018"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203753"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Pobiera węzeł programu dla określonego programu.
@@ -50,9 +50,8 @@ int GetProviderProgramNode(
 ```
 
 ## <a name="parameters"></a>Parametry
- `Flags`\
-
- [in] Kombinacja flag z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) wyliczenia. Następujące flagi są typowe dla tego wywołania:
+`Flags`\
+[in] Kombinacja flag z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) wyliczenia. Następujące flagi są typowe dla tego wywołania:
 
 |Flaga|Opis|
 |----------|-----------------|
@@ -60,25 +59,20 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|Obiekt wywołujący jest teraz debugowana (dodatkowe informacje na temat kierowania zostanie zwrócony dla każdego węzła).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Dołączony do obiektu wywołującego, ale nie jest uruchomiona przez debuger.|
 
- `pPort`\
+`pPort`\
+[in] Port procesu wywołującego jest uruchomiona na.
 
- [in] Port procesu wywołującego jest uruchomiona na.
+`processId`\
+[in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program zagrożona.
 
- `processId`\
+`guidEngine`\
+[in] Identyfikator GUID aparatu debugowania, który program jest dołączony do (jeśli istnieje).
 
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program zagrożona.
+`programId`\
+[in] Identyfikator programu, dla którego należy pobrać węzła programu.
 
- `guidEngine`\
-
- [in] Identyfikator GUID aparatu debugowania, który program jest dołączony do (jeśli istnieje).
-
- `programId`\
-
- [in] Identyfikator programu, dla którego należy pobrać węzła programu.
-
- `ppProgramNode`\
-
- [out] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt reprezentujący węzeł żądanego programu.
+`ppProgramNode`\
+[out] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt reprezentujący węzeł żądanego programu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

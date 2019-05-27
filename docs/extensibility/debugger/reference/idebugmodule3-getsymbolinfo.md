@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 54aaa85909522122b97624ee7d65d4cbb0b51ddb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918856"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203044"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Pobiera listę ścieżek, które są przeszukiwane pod kątem symboli, a także wyniki wyszukiwania poszczególnych ścieżek.
@@ -39,14 +42,12 @@ int GetSymbolInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`dwFields`
+## <a name="parameters"></a>Parametry
+`dwFields`\
+[in] Kombinacja flag z [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) wyliczenie opisujące który pola `pInfo` mają być wypełnione.
 
- [in] Kombinacja flag z [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) wyliczenie opisujące który pola `pInfo` mają być wypełnione.
-
-`pInfo`
-
- [out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) strukturę, której członkami są w celu wprowadzenia określone informacje. Jeśli to jest wartość null, Metoda ta zwraca `E_INVALIDARG`.
+`pInfo`\
+[out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) strukturę, której członkami są w celu wprowadzenia określone informacje. Jeśli to jest wartość null, Metoda ta zwraca `E_INVALIDARG`.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli metoda się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -83,11 +84,11 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb... Nie znaleziono pliku.**
-**c:\winnt\symbols\user32.pdb... Wersja jest niezgodna.**
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Załadowano symbole.**
+**c:\symbols\user32.pdb... Nie znaleziono pliku.** 
+**c:\winnt\symbols\user32.pdb... Wersja jest niezgodna.** 
+ **\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Załadowano symbole.**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)
 - [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)

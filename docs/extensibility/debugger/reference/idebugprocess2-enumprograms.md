@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c044961a4b360c028c560adbea3d6faee09ee49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d7d3abe711ae75340826a2d5aa4755ad0d62b40e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917884"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202744"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
 Pobiera listę wszystkich programów, które są zawarte w tym procesie.
@@ -36,14 +39,13 @@ int EnumPrograms( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppEnum`
-
- [out] Zwraca [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) obiekt, który zawiera listę wszystkich programów w procesie.
+## <a name="parameters"></a>Parametry
+`ppEnum`\
+[out] Zwraca [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) obiekt, który zawiera listę wszystkich programów w procesie.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2929ed704d8b9642d30b9a7951a707db0635b319
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0aff4ccea937536530d74dde13a5ba8a7b14bca7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414051"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205668"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 Ta metoda pobiera narzędzia komputera dla serwera.
@@ -39,10 +42,9 @@ int GetMachineUtilities_V7(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppUtil`
-
- [out] Zwraca `IDebugMDMUtil2_V7` interfejs, który reprezentuje dane narzędzia maszyny.
+## <a name="parameters"></a>Parametry
+`ppUtil`\
+[out] Zwraca `IDebugMDMUtil2_V7` interfejs, który reprezentuje dane narzędzia maszyny.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca `E_NOTIMPL`, wskazujący, że metoda nie jest zaimplementowana.
@@ -50,5 +52,5 @@ int GetMachineUtilities_V7(
 ## <a name="remarks"></a>Uwagi
  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zawsze zwraca `E_NOTIMPL` Jeśli ta metoda jest wywoływana.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

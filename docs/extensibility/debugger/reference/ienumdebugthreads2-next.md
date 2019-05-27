@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05044241a1e5b708bffaa73fedd674cea7618715
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8b6ed3f14bb916074455590699934c6d757ed049
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458161"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210837"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
 Zwraca następny zestaw elementów z wyliczenia.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parametry
- `celt`\
+`celt`\
+[in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
 
- [in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
+`rgelt`\
+[out w] Tablica [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) elementami do wypełnienia.
 
- `rgelt`\
-
- [out w] Tablica [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) elementami do wypełnienia.
-
- `pceltFetched`\
-
- [out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
+`pceltFetched`\
+[out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.

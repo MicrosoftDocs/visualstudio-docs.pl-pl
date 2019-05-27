@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4db91b1495484adff076e959021b4791f1e62a29
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 9d67c266295a69fe3f045aa5329b0f6667766128
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458223"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207031"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 Pobiera informacje o grupie symbol dostawca symboli jest elementem członkowskim.
@@ -41,13 +41,11 @@ int GetCurrentModulesState(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pState`\
+`pState`\
+[out] Stan grupy dostawcy symboli.
 
- [out] Stan grupy dostawcy symboli.
-
- `count`\
-
- [out] Liczba modułów w grupie.
+`count`\
+[out] Liczba modułów w grupie.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

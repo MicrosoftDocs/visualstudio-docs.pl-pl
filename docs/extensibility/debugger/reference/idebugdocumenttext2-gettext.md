@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62ee27d9780ba1bb3941320604ade1d3cf16e5fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875182"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203322"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Pobiera tekst z określonej pozycji w dokumencie.
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pos`
+## <a name="parameters"></a>Parametry
+`pos`\
+[in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która wskazuje lokalizację tekst, który ma zostać pobrane.
 
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która wskazuje lokalizację tekst, który ma zostać pobrane.
+`cMaxChars`\
+[in] Maksymalna liczba znaków z tekstu, które mają zostać pobrane.
 
-`cMaxChars`
+`pText`\
+[out w] Wskaźnik do buforu, który ma zostać wypełniona odpowiedni tekst. Ten bufor musi mieć możliwość zawierać co najmniej `cMaxChars` liczby znaków dwubajtowych.
 
- [in] Maksymalna liczba znaków z tekstu, które mają zostać pobrane.
-
-`pText`
-
- [out w] Wskaźnik do buforu, który ma zostać wypełniona odpowiedni tekst. Ten bufor musi mieć możliwość zawierać co najmniej `cMaxChars` liczby znaków dwubajtowych.
-
-`pcNumChars`
-
- [out] Zwraca liczbę znaków, które faktycznie pobrane.
+`pcNumChars`\
+[out] Zwraca liczbę znaków, które faktycznie pobrane.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -101,6 +100,6 @@ namespace Mynamespace
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

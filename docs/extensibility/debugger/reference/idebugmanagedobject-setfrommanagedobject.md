@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ccea9847cc23e45f9877f3d331be723293ee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dbaaf27222754d4a68d7de6367a2c0d7a1a8be73
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918915"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210628"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 Ustawia wartość wystąpienia obiektu klasy wartości z instancji klasy wartości podać jako parametr.
@@ -36,10 +39,9 @@ int SetFromManagedObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pManagedObject`
-
- [in] Interfejs, który reprezentuje zarządzanego obiektu zawierającego nowe wartości.
+## <a name="parameters"></a>Parametry
+`pManagedObject`\
+[in] Interfejs, który reprezentuje zarządzanego obiektu zawierającego nowe wartości.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -47,5 +49,5 @@ int SetFromManagedObject(
 ## <a name="remarks"></a>Uwagi
  Ta metoda służy do zmiany obiektu zarządzanego, reprezentowane przez [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) obiektu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

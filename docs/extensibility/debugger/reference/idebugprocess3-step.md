@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 296c76a386b72c3435a90e207dd76f9eeca56422
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24adde5d1c1a89949861481a3d370219875c2eb1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412954"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210956"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Powoduje, że proces krok jednej instrukcji lub instrukcji.
@@ -43,18 +46,15 @@ int Step(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pThread`
+## <a name="parameters"></a>Parametry
+`pThread`\
+[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątku jest zmieniana.
 
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątku jest zmieniana.
+`sk`\
+[in] Jedną z [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) wartości.
 
- `sk`
-
- [in] Jedną z [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) wartości.
-
- `step`
-
- [in] Jedną z [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) wartości.
+`step`\
+[in] Jedną z [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) wartości.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -64,7 +64,7 @@ int Step(
 
  **Ostrzeżenie** nie będą wysyłane zdarzenia zatrzymywania lub natychmiastowego zdarzeń (synchroniczne) [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)

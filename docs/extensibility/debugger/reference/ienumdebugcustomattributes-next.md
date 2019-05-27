@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 205308bbac53ac21b8b81c26b4f333c3be111dbd
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 8a4ea136872181a9432efbd778738e22c47c6304
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226662"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208277"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 Pobiera określoną liczbę atrybutów niestandardowych, w kolejności wyliczenia.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parametry
- `celt`\
+`celt`\
+[in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
 
- [in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
+`rgelt`\
+[out] Tablica [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) obiekty do wypełnienia.
 
- `rgelt`\
-
- [out] Tablica [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) obiekty do wypełnienia.
-
- `pceltFetched`\
-
- [out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
+`pceltFetched`\
+[out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.

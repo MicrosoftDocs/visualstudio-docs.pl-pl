@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b086a6f0c4d343aaa7b0d58dd93db74a043fa65
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 99dd88cfef1b9fe2adad7f0ac7aebf6a810e368f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458778"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212375"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 Pobiera metodę, która pobiera właściwość.
@@ -40,9 +40,8 @@ int GetPropertyGetter(
 ```
 
 ## <a name="parameters"></a>Parametry
- `ppField`\
-
- [out] Zwraca [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) obiekt reprezentujący metodę, która pobiera właściwość.
+`ppField`\
+[out] Zwraca [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) obiekt reprezentujący metodę, która pobiera właściwość.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.

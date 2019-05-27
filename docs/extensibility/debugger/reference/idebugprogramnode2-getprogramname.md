@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c3afc604d1470b994dac977b3a176ee855ad4a76
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: dc941f0bf88a6e41b81bfdbf6f6c948c34e8e477
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459051"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203815"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 Pobiera nazwę programu.
@@ -41,8 +41,7 @@ int GetProgramName (
 
 ## <a name="parameters"></a>Parametry
 `pbstrProgramName`\
-
- [out] Zwraca nazwę programu.
+[out] Zwraca nazwę programu.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

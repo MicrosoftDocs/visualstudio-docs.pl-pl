@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5701df9085de7a63e7f09ea37c28244897122b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cb62493170cf393a3a46b14586f6dcdc4f762d76
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921258"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210053"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 Określa, jeśli położenie dokumentu jest zawarty w danym dokumencie.
@@ -36,10 +39,9 @@ int IsPositionInDocument( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pDoc`
-
- [in] [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) obiekt, który reprezentuje zawierającego Release candidate dokumentu.
+## <a name="parameters"></a>Parametry
+`pDoc`\
+[in] [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) obiekt, który reprezentuje zawierającego Release candidate dokumentu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -47,6 +49,6 @@ int IsPositionInDocument( 
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest używana głównie w przypadku ustawiania punktów przerwania [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfejsów. W miarę ładowania, by określić czy dokument zawiera ta pozycja nosi nazwę położenie punktu przerwania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

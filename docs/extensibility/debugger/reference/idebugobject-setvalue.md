@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fec036357fb92563eba81c919ab32fea2e58c3b3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872453"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211280"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Ustawia wartość obiektu z kolejnych serię bajtów.
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pValue`
+## <a name="parameters"></a>Parametry
+`pValue`\
+[in] Tablica bajtów reprezentujący nową wartość.
 
- [in] Tablica bajtów reprezentujący nową wartość.
-
- `nSize`
-
- [in] Rozmiar wartość w bajtach.
+`nSize`\
+[in] Rozmiar wartość w bajtach.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -53,6 +54,6 @@ int SetValue(
 ## <a name="remarks"></a>Uwagi
  Wartości w tablicy są kopiowane do tego [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektu, zastępując dowolnym istniejącą wartość. Rozmiar nową wartość może być większy lub mniejszy niż istniejąca wartość. To `IDebugObject` nie może być odwołaniem o wartości null.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

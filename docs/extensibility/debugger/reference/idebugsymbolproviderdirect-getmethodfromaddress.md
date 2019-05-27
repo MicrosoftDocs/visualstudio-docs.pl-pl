@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 65bc4e95fbf73517e4f247a60404eff9e6747ef7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224008"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206950"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 Pobiera informacje o metodzie pod adresem określonym debugowania.
@@ -51,33 +51,26 @@ int GetMethodFromAddress(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pAddress`\
+`pAddress`\
+[in] Debugowanie adres, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
 
- [in] Debugowanie adres, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
+`pGuid`\
+[out] Unikatowy identyfikator modułu.
 
- `pGuid`\
+`pAppID`\
+[out] Identyfikator domeny aplikacji.
 
- [out] Unikatowy identyfikator modułu.
+`pTokenClass`\
+[out] Token, który reprezentuje klasę zawierającą.
 
- `pAppID`\
+`pTokenMethod`\
+[out] Token, który reprezentuje modułu.
 
- [out] Identyfikator domeny aplikacji.
+`pdwOffset`\
+[out] Przesunięcie w bajtach od początku `pAddress` parametru.
 
- `pTokenClass`\
-
- [out] Token, który reprezentuje klasę zawierającą.
-
- `pTokenMethod`\
-
- [out] Token, który reprezentuje modułu.
-
- `pdwOffset`\
-
- [out] Przesunięcie w bajtach od początku `pAddress` parametru.
-
- `pdwVersion`\
-
- [out] Numer wersji metody.
+`pdwVersion`\
+[out] Numer wersji metody.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

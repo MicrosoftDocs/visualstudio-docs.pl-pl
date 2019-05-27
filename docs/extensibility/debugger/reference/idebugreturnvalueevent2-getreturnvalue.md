@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db7199a4e589d4839e2a9171350063d2bb4f9f68
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2d21fc4adbeb283fc6274dfbed5902153c7e84e9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457449"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198992"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
 Pobiera wartość zwracana na przechodzenie krok po kroku z lub funkcji.
@@ -40,9 +40,8 @@ int GetReturnValue ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `ppReturnValue`\
-
- [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje wartość, które mają zostać pobrane.
+`ppReturnValue`\
+[out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje wartość, które mają zostać pobrane.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

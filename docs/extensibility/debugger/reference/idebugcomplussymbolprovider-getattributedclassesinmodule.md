@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e284565ad4e30a4a7aa766ea7150b02281aad3ed
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876740"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206495"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Pobiera klasy przy użyciu określonego atrybutu w danym module.
@@ -41,22 +44,18 @@ int GetAttributedClassesinModule (
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`ulAppDomainID`
+## <a name="parameters"></a>Parametry
+`ulAppDomainID`\
+[in] Identyfikator domeny aplikacji.
 
- [in] Identyfikator domeny aplikacji.
+`guidModule`\
+[in] Unikatowy identyfikator modułu.
 
-`guidModule`
+`pstrAttribute`\
+[in] Ciąg atrybutu.
 
- [in] Unikatowy identyfikator modułu.
-
-`pstrAttribute`
-
- [in] Ciąg atrybutu.
-
-`ppEnum`
-
- [out] Zwraca wyliczenie opartego na atrybutach klas.
+`ppEnum`\
+[out] Zwraca wyliczenie opartego na atrybutach klas.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -152,5 +151,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

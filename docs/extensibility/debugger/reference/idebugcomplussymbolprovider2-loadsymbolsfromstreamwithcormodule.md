@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 487f98f992a1b6caf2d4359c9840fd568b023805
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876358"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205898"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Ładowanie symboli debugowania z danego strumienia danych **ICorDebugModule** obiektu.
@@ -45,30 +48,24 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`ulAppDomainID`
+## <a name="parameters"></a>Parametry
+`ulAppDomainID`\
+[in] Identyfikator domeny aplikacji.
 
- [in] Identyfikator domeny aplikacji.
+`guidModule`\
+[in] Unikatowy identyfikator modułu.
 
-`guidModule`
+`baseAddress`\
+[in] Adres podstawowy pamięci.
 
- [in] Unikatowy identyfikator modułu.
+`pUnkMetadataImport`\
+[in] Obiekt, który zawiera metadane symbolu.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Obiekt, który implementuje [icordebugmodule — interfejs](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Adres podstawowy pamięci.
-
-`pUnkMetadataImport`
-
- [in] Obiekt, który zawiera metadane symbolu.
-
-`pUnkCorDebugModule`
-
- [in] Obiekt, który implementuje [icordebugmodule — interfejs](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`pStream`
-
- [in] Strumień danych, który zawiera symbole debugowania do załadowania.
+`pStream`\
+[in] Strumień danych, który zawiera symbole debugowania do załadowania.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -146,5 +143,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

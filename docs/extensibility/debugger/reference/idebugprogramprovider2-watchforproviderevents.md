@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c9e660e27397c530d4ef06c8ddfa3312ee4888cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458982"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203724"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Umożliwia procesu otrzymywać powiadomienia o zdarzeniach portu.
@@ -50,9 +50,8 @@ int WatchForProviderEvents(
 ```
 
 ## <a name="parameters"></a>Parametry
- `Flags`\
-
- [in] Kombinacja flag z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) wyliczenia. Następujące flagi są typowe dla tego wywołania:
+`Flags`\
+[in] Kombinacja flag z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) wyliczenia. Następujące flagi są typowe dla tego wywołania:
 
 |Flaga|Opis|
 |----------|-----------------|
@@ -61,25 +60,20 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Dołączony do obiektu wywołującego, ale nie jest uruchomiona przez debuger.|
 |`PFLAG_REASON_WATCH`|Obiekt wywołujący chce obejrzeć dla zdarzeń. Jeśli ta flaga nie jest ustawiona. następnie zdarzeń wywołania zwrotnego jest usuwany, a obiekt wywołujący nie będzie już otrzymywać powiadomień.|
 
- `pPort`\
+`pPort`\
+[in] Port procesu wywołującego jest uruchomiona na.
 
- [in] Port procesu wywołującego jest uruchomiona na.
+`processId`\
+[in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program zagrożona.
 
- `processId`\
+`EngineFilter`\
+[in] Tablica identyfikatorów GUID aparaty debugowania skojarzonego z procesem.
 
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program zagrożona.
+`guidLaunchingEngine`\
+[in] Identyfikator GUID aparatu debugowania, który uruchomił ten proces (jeśli istnieje).
 
- `EngineFilter`\
-
- [in] Tablica identyfikatorów GUID aparaty debugowania skojarzonego z procesem.
-
- `guidLaunchingEngine`\
-
- [in] Identyfikator GUID aparatu debugowania, który uruchomił ten proces (jeśli istnieje).
-
- `pEventCallback`\
-
- [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) obiekt, który otrzymuje powiadomienia o zdarzeniach.
+`pEventCallback`\
+[in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) obiekt, który otrzymuje powiadomienia o zdarzeniach.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

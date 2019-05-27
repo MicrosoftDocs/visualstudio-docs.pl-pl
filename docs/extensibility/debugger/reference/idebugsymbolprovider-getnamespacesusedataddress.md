@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc32ea0d07779f82bb741b99632ec16a950e5da2
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fe8f9dafa4543148ed373295f9c694e7678491a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223964"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207163"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Ta metoda tworzy moduł wyliczający dla obszarów nazw skojarzonych z tym adresem debugowania.
@@ -42,13 +42,11 @@ int GetNamespacesUsedAtAddress(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pAddress`\
+`pAddress`\
+[in] Adres debugowania.
 
- [in] Adres debugowania.
-
- `ppEnum`\
-
- [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) moduł wyliczający dla obszarów nazw.
+`ppEnum`\
+[out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) moduł wyliczający dla obszarów nazw.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 947e3cfc4c3ca435fe545ab8834c9b0a0c778786
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bad83e609f597f28dd5e15af7b5013f49dde6db3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917249"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210249"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 Pobiera bajtów pamięci zajmowane przez program.
@@ -36,10 +39,9 @@ int GetMemoryBytes( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppMemoryBytes`
-
- [out] Zwraca [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiekt, który reprezentuje bajtów pamięci programu.
+## <a name="parameters"></a>Parametry
+`ppMemoryBytes`\
+[out] Zwraca [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiekt, który reprezentuje bajtów pamięci programu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -47,6 +49,6 @@ int GetMemoryBytes( 
 ## <a name="remarks"></a>Uwagi
  Bajty pamięci, reprezentowane przez [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiektów jest przeznaczony dla programu obrazu w pamięci i nie wszystkie pamięci, która została przydzielona, gdy program został wykonany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48e1e90c69688cf1ef5388e74060e38087d50920
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9670dd1c6c56e2e6b983dffc054aa23fddae6e09
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922664"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206275"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Pobiera typ symbolu, podany adres debugowania.
@@ -37,14 +40,12 @@ int GetTypeFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pAddress`
+## <a name="parameters"></a>Parametry
+`pAddress`\
+[in] Adres debugowania, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
 
- [in] Adres debugowania, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
-
-`ppField`
-
- [out] Zwraca typ tablicy, ponieważ jest reprezentowana przez [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfejsu.
+`ppField`\
+[out] Zwraca typ tablicy, ponieważ jest reprezentowana przez [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfejsu.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -117,5 +118,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

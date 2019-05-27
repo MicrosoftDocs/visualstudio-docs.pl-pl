@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6275f67e07c88cb337c77bc672394af539b8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 780f1c357ef4c8f8a8114689e7495f7882af9723
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875951"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205209"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 Pobiera atrybuty niestandardowe bajtów, biorąc pod uwagę nazwę atrybutu niestandardowego.
@@ -40,18 +43,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszCustomAttributeName`
+## <a name="parameters"></a>Parametry
+`pszCustomAttributeName`\
+[in] Ciąg zawierający nazwę atrybutu niestandardowego do wyszukania.
 
- [in] Ciąg zawierający nazwę atrybutu niestandardowego do wyszukania.
+`ppBlob`\
+[out w] Tablica, która jest wypełniane bajtów atrybutu niestandardowego.
 
- `ppBlob`
-
- [out w] Tablica, która jest wypełniane bajtów atrybutu niestandardowego.
-
- `pdwLen`
-
- [out w] Określa maksymalną liczbę bajtów do zwrócenia w `ppBlob` tablicy i zwraca liczbę bajtów rzeczywiście zapisanych na tablicy.
+`pdwLen`\
+[out w] Określa maksymalną liczbę bajtów do zwrócenia w `ppBlob` tablicy i zwraca liczbę bajtów rzeczywiście zapisanych na tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie ma atrybutu niestandardowego. W przeciwnym razie zwraca kod błędu.
@@ -63,6 +63,6 @@ int GetCustomAttributeByName(
 
  Jeśli `ppBlob` i `pdwLen` parametry są ustawione na wartość null, Metoda ta może służyć do ustalenia, czy atrybut niestandardowy jedynie istnieje. Alternatywą łatwiej jest jednak wywołać [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) metody.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
 - [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)

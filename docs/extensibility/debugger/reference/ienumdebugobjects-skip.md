@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 017ba5823d33f32465dc58d3340ba8cd40712013
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 61c5da18ebbf3a2db1fbbaad05691386f37c68bf
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226527"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203478"
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
 Ta metoda nakłada się na określoną liczbę elementów.
@@ -40,9 +40,8 @@ int Skip(
 ```
 
 ## <a name="parameters"></a>Parametry
- `celt`\
-
- [in] Liczba elementów do pominięcia.
+`celt`\
+[in] Liczba elementów do pominięcia.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli `celt` jest większa niż liczba pozostałych elementów; w przeciwnym razie zwraca kod błędu.

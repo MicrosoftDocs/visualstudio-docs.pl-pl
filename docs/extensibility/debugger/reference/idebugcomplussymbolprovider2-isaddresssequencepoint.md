@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc56d0bda7d8b1797c29db6c2e72a5efc3d586d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e2ebf5c3a27f29b580088b891b3e0d4260aba447
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876407"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205918"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 Określa, czy adres debugowania określonego punktu sekwencji.
@@ -35,10 +38,9 @@ int IsAddressSequencePoint(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pAddress`
-
- [in] Debugowanie adres, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
+## <a name="parameters"></a>Parametry
+`pAddress`\
+[in] Debugowanie adres, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli adres debugowania punktu sekwencji, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`.
@@ -84,5 +86,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

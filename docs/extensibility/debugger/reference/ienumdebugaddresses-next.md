@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a990c0843d34a0458e8646bea18e9bcc056e40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4d8cb666478b870242a9fd9a7a5b0c8bd9ba60a1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915042"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203591"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 Ta metoda zwraca następny zestaw elementów z wyliczenia.
@@ -40,22 +43,19 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `celt`
+## <a name="parameters"></a>Parametry
+`celt`\
+[in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
 
- [in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
+`rgelt`\
+[out w] Tablica [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elementami do wypełnienia.
 
- `rgelt`
-
- [out w] Tablica [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elementami do wypełnienia.
-
- `pceltFetched`
-
- [out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
+`pceltFetched`\
+[out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
