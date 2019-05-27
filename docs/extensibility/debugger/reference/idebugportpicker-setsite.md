@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0964c94334ca0815b4410f6858dca5502b2f8a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d44c0ad0cef8777623f3393172e372ea4c33782a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918159"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204500"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 Ustawia dostawcę usług.
@@ -34,10 +37,9 @@ public int SetSite(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pSP`
-
- [in] Odwołanie do interfejsu dostawcę usług.
+## <a name="parameters"></a>Parametry
+`pSP`\
+[in] Odwołanie do interfejsu dostawcę usług.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -45,5 +47,5 @@ public int SetSite(
 ## <a name="remarks"></a>Uwagi
  Ta metoda zostanie wywołana przed inne metody są wywoływane.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)
