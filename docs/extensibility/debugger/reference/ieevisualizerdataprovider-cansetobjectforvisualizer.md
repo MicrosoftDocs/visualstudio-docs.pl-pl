@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e66f14ca1191a164236b78837297f20881ff0178
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a19bbe5a0d5529cdf2f48d48810390a333d68cf9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224083"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199202"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 Ta metoda określa, czy wizualizatora może mieć obiektu danych, który reprezentuje zaktualizowany.
@@ -40,9 +40,8 @@ int CanSetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Parametry
- `b`\
-
- [out] Wartość różną od zera (`TRUE`) można zaktualizować obiektu w wizualizatora, wartość zero (`FALSE`) Jeśli jest ona nieosiągalna.
+`b`\
+[out] Wartość różną od zera (`TRUE`) można zaktualizować obiektu w wizualizatora, wartość zero (`FALSE`) Jeśli jest ona nieosiągalna.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

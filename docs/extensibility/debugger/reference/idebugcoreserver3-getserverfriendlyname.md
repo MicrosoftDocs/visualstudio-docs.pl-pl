@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f70e8301b6a44397d351345fe3cb8fe0c3d3426e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 968b204624662a1fb54d98703e163f76f0329adc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414029"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205443"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Pobiera przyjazną nazwę dla serwera.
@@ -36,10 +39,9 @@ int GetServerFriendlyName(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pbstrName`
-
- [out] Zwraca przyjazną nazwę dla serwera.
+## <a name="parameters"></a>Parametry
+`pbstrName`\
+[out] Zwraca przyjazną nazwę dla serwera.
 
 > [!NOTE]
 > Obiekt wywołujący jest odpowiedzialny za zwalnianie ciągu.
@@ -52,6 +54,6 @@ int GetServerFriendlyName(
 
  Dla nazwy zorientowane na komputerze, należy wywołać [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) metody.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 122071435d4bc2e5784abcc7a9a8c16c2c08e311
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ec34fc2bc8d7dea08580903788ef271f7167cf8a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226196"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199565"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Pobiera właściwości, które opisują tego wątku.
@@ -43,12 +43,10 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>Parametry
 `dwFields`\
-
- [in] Kombinacja flag z [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) wyliczenie, które określa, które pola `ptp` mają być wypełnione.
+[in] Kombinacja flag z [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) wyliczenie, które określa, które pola `ptp` mają być wypełnione.
 
 `ptp`\
-
- [out w] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) strukturę, która jest wypełniane właściwości wątku.
+[out w] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) strukturę, która jest wypełniane właściwości wątku.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

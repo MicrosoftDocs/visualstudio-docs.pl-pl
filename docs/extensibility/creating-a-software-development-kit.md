@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc04de6de270053e20e05a30312a298e9e6e2f0f
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891228"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177347"
 ---
 # <a name="create-a-software-development-kit"></a>Utwórz zestaw software development kit
 Zestaw software development kit (SDK) to zbiór interfejsów API, którego można się odwoływać jako pojedynczy element w programie Visual Studio. **Menadżer odwołań** okno dialogowe wyświetla listę wszystkich zestawów SDK, które mają zastosowanie do projektu. Po dodaniu zestawu SDK do projektu interfejsach API dostępnych w programie Visual Studio.
@@ -34,7 +34,7 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
  Zestawy SDK platformy są wymagane do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestawu SDK jest wymagany do tworzenia aplikacji dla [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Instalacja
- Wszystkich zestawów SDK dla platformy, zostaną zainstalowane w*zestawów SDK HKLM\Software\Microsoft\Microsoft\\\v [TPI] [TPV]\\ @InstallationFolder = [katalogu głównym zestawu SDK]*. W związku z tym [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestaw SDK został zainstalowany w *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+ Wszystkich zestawów SDK dla platformy, zostaną zainstalowane w *zestawów SDK HKLM\Software\Microsoft\Microsoft\\\v [TPI] [TPV]\\ @InstallationFolder = [katalogu głównym zestawu SDK]*. W związku z tym [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestaw SDK został zainstalowany w *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
 ### <a name="layout"></a>Układ
  Zestawy SDK platformy mają następujące układu:
@@ -161,7 +161,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 2. ProductFamilyName: Ogólny nazwa produktu zestawu SDK. Na przykład [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK nosi nazwę "Microsoft.WinJS.1.0" i "Microsoft.WinJS.2.0", które należą do tej samej rodziny SDK produktów z rodziny "Microsoft.WinJS". Ten atrybut umożliwia programu Visual Studio i MSBuild, nawiązać połączenie. Jeśli ten atrybut nie istnieje, nazwa zestawu SDK jest używana jako nazwa rodziny produktów.
 
-3. FrameworkIdentity: Określa zależność, na co najmniej jedną bibliotekę składnika Windows, który wartość tego atrybutu są umieszczane w manifeście aplikacja odbierająca komunikaty. Ten atrybut ma zastosowanie tylko do bibliotek składnika Windows.
+3. FrameworkIdentity: Określa zależność, na co najmniej jedną bibliotekę składnika Windows. Wartość tego atrybutu są umieszczane w manifeście aplikacja odbierająca komunikaty. Ten atrybut ma zastosowanie tylko do bibliotek składnika Windows.
 
 4. TargetFramework: Określa zestawy SDK, które są dostępne w Menedżerze odwołań i przybornika. Jest to rozdzielana średnikami lista target framework monikerów, na przykład ".NET Framework, wersja = v2.0; .NET Framework, wersja = v4.5.1". Jeśli nie określono kilka wersji tej samej platformy docelowej, Menadżer odwołań używa najniższą określonej wersji w celu ich filtrowania. Na przykład jeśli ".NET Framework w wersji = v2.0; .NET Framework, wersja = v4.5.1" jest określony, będzie używać Menedżera odwołań ".NET Framework w wersji = v2.0". Jeśli profil framework określony element docelowy jest określona, tylko ten profil będzie służyć Menadżer odwołań w celu ich filtrowania. Na przykład, gdy "Silverlight, wersja = w wersji 4.0, profil = WindowsPhone" jest określona, filtr tylko profilem Windows Phone; Menadżer odwołań nie widzi zestawu SDK w Menedżerze odwołań do projektu przeznaczonego dla pełnej wersji programu Silverlight 4.0 Framework.
 

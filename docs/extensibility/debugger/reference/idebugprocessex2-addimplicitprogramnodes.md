@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6203b12defbe70d3807508953d85f39ff725a746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 411b0b40d6c47f240472c82f727d955dda8df2df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917607"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204094"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Metoda ta umożliwia dodanie węzła dla każdego silnika debugowania (DE) określony program.
@@ -40,18 +43,15 @@ int AddImplicitProgramNodes(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `guidLaunchingEngine`
+## <a name="parameters"></a>Parametry
+`guidLaunchingEngine`\
+[in] `GUID` Z DE, która ma być używany do uruchamiania programów (przyjęto, że można dodać węzły swój własny program).
 
- [in] `GUID` Z DE, która ma być używany do uruchamiania programów (przyjęto, że można dodać węzły swój własny program).
+`rgguidSpecificEngines`\
+[in] Tablica `GUID`s DEs dla programu, który zostanie dodany węzłów.
 
- `rgguidSpecificEngines`
-
- [in] Tablica `GUID`s DEs dla programu, który zostanie dodany węzłów.
-
- `celtSpecificEngines`
-
- [in] Liczba `GUID`s w `rgguidSpecificEngines` tablicy.
+`celtSpecificEngines`\
+[in] Liczba `GUID`s w `rgguidSpecificEngines` tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -59,6 +59,6 @@ int AddImplicitProgramNodes(
 ## <a name="remarks"></a>Uwagi
 - [Program węzłów](../../../extensibility/debugger/program-nodes.md) zostanie dodana dla każdego DE wymienionych w `rgguidSpecificEngines`— z wyjątkiem uruchamiania aparatu (podany w `guidLaunchingEngine`), który zakłada się, że dodanie węzła swój własny program jest uruchamiany program.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
 - [Węzły programu](../../../extensibility/debugger/program-nodes.md)

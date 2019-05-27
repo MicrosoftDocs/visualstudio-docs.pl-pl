@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Programowe Wypełnianie tabel programu Word właściwościami dokumentu'
+title: Programowe Wypełnianie tabel programu Word właściwościami dokumentu
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8a7e87268b021d8bc8a14b1b5d99f3331c0f431
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e296a63c208bc1c3316f89b7b4003f16daf3c93e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955992"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177785"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Instrukcje: Programowe Wypełnianie tabel programu Word właściwościami dokumentu
   Poniższy przykład tworzy tabelę programu Microsoft Office Word w górnej części dokumentu i wypełnia właściwości dokumentu hosta.

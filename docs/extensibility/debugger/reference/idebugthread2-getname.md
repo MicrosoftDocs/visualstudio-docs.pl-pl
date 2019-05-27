@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a5d4daad66ed6a4428724b20093473ba7b93856
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4da4f3287d8d307dd65aff5d09aa34c5b17b0119
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226223"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199659"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Pobiera nazwę wątku.
@@ -40,9 +40,8 @@ int GetName ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `pbstrName`\
-
- [out] Zwraca nazwę wątku.
+`pbstrName`\
+[out] Zwraca nazwę wątku.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

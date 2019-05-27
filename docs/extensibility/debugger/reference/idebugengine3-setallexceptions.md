@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33735e047f0ac0266648afd2ffb4de0cbc908a25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7815b5515a89d6a040208b7062286e5818f2ba91
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920924"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207439"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 Ta metoda ustawia stan wszystkich oczekujących wyjątków.
@@ -36,14 +39,13 @@ int SetAllExceptions(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwState`
-
- [in] Jedną z [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) wartości.
+## <a name="parameters"></a>Parametry
+`dwState`\
+[in] Jedną z [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) wartości.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)

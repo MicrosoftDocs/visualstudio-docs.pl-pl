@@ -22,7 +22,8 @@
 ## [Tworzenie nowych projektów](create-new-projects.md)
 ## [Dodawanie i usuwanie elementów projektu](add-and-remove-project-items.md)
 ## [Zarządzanie rozwiązaniami i właściwościami projektu](managing-solutions-and-project-properties.md)
-## [Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md)
+## Zarządzanie odwołaniami w projekcie
+### [Omówienie](managing-references-in-a-project.md)
 ### [Przewodnik: Dołączanie pakietu NuGet do projektu](nuget-walkthrough.md)
 ## [Zarządzanie zasobami aplikacji](managing-app-resources.md)
 ## [Instrukcje: Otwieranie wielu rozwiązań lub wystąpień](open-multiple-solutions.md)
@@ -49,7 +50,8 @@
 ## [Akcja kompilacji](build-actions.md)
 ## [Instrukcje: Ustawianie wielu projektów startowych](set-startup-projects.md)
 ## [Dostosowywanie procesu kompilacji](customizing-build-system.md)
-## [Konfiguracje](configurations.md)
+## Konfiguracje
+### [Ogólne informacje o konfiguracjach kompilacji](configurations.md)
 ### [Tworzenie i edycja konfiguracji](create-and-edit-configurations.md)
 
 # Kontrola wersji
@@ -67,14 +69,18 @@
 
 # Pakiety robocze
 ## [Dostępne obciążenia](workloads.md)
-## [ASP.NET Core](asp-net-core.md)
+## ASP.NET Core
+### [Obsługa platformy .NET Core](net-core-support.md)
+### [Tworzenie pierwszej aplikacji platformy ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript i TypeScript](javascript.md)
-## [Azure](azure-workload.md)
+## Azure
+### [Omówienie](azure-workload.md)
 ### [Wprowadzenie do usługi Azure Functions](azure-functions.md)
 ### [Samouczek: Azure Functions](azure-functions-lab.md)
 ### [Usługi połączone](connected-services.md)
-## [Projektowanie gier w środowisku Unity](unity-tools.md)
+## Projektowanie gier w środowisku Unity
+### [Projektowanie gier w środowisku Unity](unity-tools.md)
 ### [Konfiguracja](setup-vsmac-tools-unity.md)
 ### [Używanie narzędzi Unity Tools](using-vsmac-tools-unity.md)
 ### [Używanie platformy .NET 4.x w środowisku Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)

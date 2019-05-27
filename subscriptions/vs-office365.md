@@ -7,20 +7,20 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści usługi Office 365, objęte niektóre subskrypcje programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0beffc3409a562382b2a97981254dca887ec6ac9
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947732"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177576"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Usługi Office 365 Pro Plus w subskrypcji programu Visual Studio
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Usługi Office 365 ProPlus w subskrypcji programu Visual Studio
 
-Tworzenie najlepszych. Pracę z dowolnego miejsca dzięki aplikacjom, które zawsze są aktualizowane. Usługi Office 365 Pro Plus jest subskrypcję, która pochodzi z aplikacji — wersja premium, takich jak Word, Excel, PowerPoint, OneNote, programu Outlook, wydawcy i dostępu (wydawcy i dostępny na komputerze tylko dostęp). Aplikacje można zainstalować na wielu urządzeniach, w tym komputerów z systemem Mac, tabletach Ipad, iPhone, tabletów z systemem Android i telefonach z systemem Android. Usługi Office 365 również jest dostarczany z usług, takich jak 1TB miejsca do magazynowania w usłudze OneDrive, 60 minut Skype na miesiąc i Microsoft Czat i telefonicznej pomocy technicznej. Dzięki subskrypcji Uzyskaj najnowsze wersje aplikacji i automatycznie otrzymywać aktualizacje, gdy wystąpią.
+Tworzenie najlepszych. Pracę z dowolnego miejsca dzięki aplikacjom, które zawsze są aktualizowane. Office 365 ProPlus to subskrypcję, która pochodzi z aplikacji — wersja premium, takich jak Word, Excel, PowerPoint, OneNote, programu Outlook, wydawcy i dostępu (wydawcy i dostępny na komputerze tylko dostęp). Aplikacje można zainstalować na wielu urządzeniach, w tym komputerów z systemem Mac, tabletach Ipad, iPhone, tabletów z systemem Android i telefonach z systemem Android. Usługi Office 365 również jest dostarczany z usług, takich jak 1TB miejsca do magazynowania w usłudze OneDrive, 60 minut Skype na miesiąc i Microsoft Czat i telefonicznej pomocy technicznej. Dzięki subskrypcji Uzyskaj najnowsze wersje aplikacji i automatycznie otrzymywać aktualizacje, gdy wystąpią.
 
-## <a name="getting-started-with-office-365-pro-plus"></a>Rozpoczynanie pracy z usługą Office 365 Pro Plus
+## <a name="getting-started-with-office-365-proplus"></a>Wprowadzenie do usługi Office 365 ProPlus
 
-Wykonaj następujące kroki, aby pobrać i aktywować Office 365 Pro Plus:
+Wykonaj następujące kroki, aby pobrać i aktywować usługi Office 365 ProPlus:
 1. Zaloguj się do subskrypcji programu Visual Studio Enterprise.
 2. Kliknij pozycję **pliki do pobrania** kartę.
 3. Zobaczysz listę polecane pliki do pobrania. Na liście pakietu Office, wybierz opcję **usługi Office 365**.
@@ -52,7 +52,7 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Yes          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Tak          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                            |  Brak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |

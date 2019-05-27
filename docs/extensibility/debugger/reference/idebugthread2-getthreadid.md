@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ac7e834b948d663ea9b537b36720864f25fe94c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ff2e7583577f8626ed4cd1ad71e2c5a83d30eb00
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225972"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199593"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Pobiera identyfikator wątku systemu.
@@ -41,8 +41,7 @@ int GetThreadId (
 
 ## <a name="parameters"></a>Parametry
 `pdwThreadId`\
-
- [out] Zwraca identyfikator wątku systemu.
+[out] Zwraca identyfikator wątku systemu.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

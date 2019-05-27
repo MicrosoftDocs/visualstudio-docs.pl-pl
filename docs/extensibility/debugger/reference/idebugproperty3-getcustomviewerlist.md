@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 78060933846d60d1e8721cda676ac837ea2bff06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457654"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200194"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Pobiera listę przeglądarek niestandardowych skojarzone z tą właściwością.
@@ -47,20 +47,16 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parametry
 `celtSkip`\
-
- [in] Liczba osób przeglądających można pominąć.
+[in] Liczba osób przeglądających można pominąć.
 
 `celtRequested`\
-
- [in] Liczba osób przeglądających można pobrać (również określa rozmiar `rgViewers` tablicy).
+[in] Liczba osób przeglądających można pobrać (również określa rozmiar `rgViewers` tablicy).
 
 `rgViewers`\
-
- [out w] Tablica [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktury do wypełnienia.
+[out w] Tablica [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktury do wypełnienia.
 
 `pceltFetched`\
-
- [out] Rzeczywista liczba osób przeglądających zwracane.
+[out] Rzeczywista liczba osób przeglądających zwracane.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

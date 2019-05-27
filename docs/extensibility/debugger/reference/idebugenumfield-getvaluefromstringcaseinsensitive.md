@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db1efb094694863f4deda8a7c2f380077f952a1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 163e675d0ef4b47e0a0bf82d730adcc081eddec3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874775"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200093"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 Ta metoda używa wyszukiwanie bez uwzględniania wielkości liter w celu zwrócenia wartości skojarzone z nazwą stała wyliczenia.
@@ -38,14 +41,12 @@ int GetValueFromStringCaseInsensitive(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszValue`
+## <a name="parameters"></a>Parametry
+`pszValue`\
+[in] Ciąg określający nazwę, dla którego ma zostać pobrana wartość. Należy pamiętać, że dla języka C++, jest to ciąg znaku dwubajtowego.
 
- [in] Ciąg określający nazwę, dla którego ma zostać pobrana wartość. Należy pamiętać, że dla języka C++, jest to ciąg znaku dwubajtowego.
-
- `pValue`
-
- [out] Zwraca wartość liczbową skojarzoną.
+`pValue`\
+[out] Zwraca wartość liczbową skojarzoną.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, jeśli nazwa nie jest częścią wyliczenia lub kod błędu.
@@ -53,6 +54,6 @@ int GetValueFromStringCaseInsensitive(
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest rozróżniana wielkość liter. Jeśli wyszukiwanie jest potrzebny (na przykład w języku, takich jak C++, w których jest rozróżniana wielkość liter nazwy), użyj [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)

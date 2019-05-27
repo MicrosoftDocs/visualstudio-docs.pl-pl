@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb0ad7c73d2e4233ad919ffe48515bbade031fd8
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c2e78efb77bdd2bfaf2a7ef2b253110133b24934
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461142"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212837"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -45,13 +45,11 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ## <a name="members"></a>Elementy członkowskie
 
 `tokMethod`\
-
 Identyfikator tablicy ten element jest częścią.
 
 [C++] `_mdToken` jest `typedef` dla 32-bitowych `int`.
 
 `dwIndex`\
-
 Indeks tego elementu w tablicy.
 
 ## <a name="remarks"></a>Uwagi

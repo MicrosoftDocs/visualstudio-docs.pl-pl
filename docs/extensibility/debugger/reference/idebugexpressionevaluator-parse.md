@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a93d909fbc8882c5864097a2a36c36749327a2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3504ba7ec668e243b72536b940f0779a5c0b728d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843137"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200876"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Ta metoda konwertuje ciąg wyrażenia przeanalizowany wyrażenia.
@@ -46,30 +49,24 @@ int Parse(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `upstrExpression`
+## <a name="parameters"></a>Parametry
+`upstrExpression`\
+[in] Wyrażenie ciąg, który ma być analizowany.
 
- [in] Wyrażenie ciąg, który ma być analizowany.
+`dwFlags`\
+[in] Kolekcja [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) stałe, które określają, jak wyrażenie ma zostać przeanalizowany.
 
- `dwFlags`
+`nRadix`\
+[in] Podstawy ma być używany do interpretacji wszelkie dane liczbowe.
 
- [in] Kolekcja [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) stałe, które określają, jak wyrażenie ma zostać przeanalizowany.
+`pbstrError`\
+[out] Zwraca błąd jako tekst czytelny dla człowieka.
 
- `nRadix`
+`pichError`\
+[out] Zwraca pozycję znaku, Start błędu, w ciągu wyrażenia.
 
- [in] Podstawy ma być używany do interpretacji wszelkie dane liczbowe.
-
- `pbstrError`
-
- [out] Zwraca błąd jako tekst czytelny dla człowieka.
-
- `pichError`
-
- [out] Zwraca pozycję znaku, Start błędu, w ciągu wyrażenia.
-
- `ppParsedExpression`
-
- [out] Zwraca wyrażenie przeanalizowany w [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.
+`ppParsedExpression`\
+[out] Zwraca wyrażenie przeanalizowany w [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -77,7 +74,7 @@ int Parse(
 ## <a name="remarks"></a>Uwagi
  Ta metoda tworzy wyrażenie przeanalizowany, a nie wartość rzeczywistą. Przeanalizowana wyrażenie jest gotowy do można obliczyć, oznacza to, przekonwertować na wartość.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 - [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)
 - [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

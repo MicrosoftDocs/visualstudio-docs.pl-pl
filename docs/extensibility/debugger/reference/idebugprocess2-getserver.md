@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f9b513bcf336cac68af7d915880af0652b0954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 50ed9f14c09bc4c97d35a2ed4d856b13f11705f6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917768"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202429"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 Pobiera serwera, na którym uruchomiono ten proces.
@@ -36,10 +39,9 @@ int GetServer( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppServer`
-
- [out] Zwraca [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) obiekt, który reprezentuje serwer, na którym działa ten proces.
+## <a name="parameters"></a>Parametry
+`ppServer`\
+[out] Zwraca [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) obiekt, który reprezentuje serwer, na którym działa ten proces.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -47,6 +49,6 @@ int GetServer( 
 ## <a name="remarks"></a>Uwagi
  Więcej niż jeden serwer może działać na jednym komputerze.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

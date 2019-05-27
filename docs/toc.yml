@@ -231,6 +231,8 @@
               items:
                 - name: Tworzenie szablonów projektów i elementów
                   href: ide/creating-project-and-item-templates.md
+                - name: Dodawanie tagów do szablonu
+                  href: ide/template-tags.md
                 - name: Tworzenie szablonów projektu
                   href: ide/how-to-create-project-templates.md
                 - name: Tworzenie szablonów obejmujących wiele projektów

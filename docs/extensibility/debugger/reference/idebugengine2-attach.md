@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29f9b8ce9e235fc25a1c52930bbf31ec8d8cf557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875317"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207779"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Dołącza aparat debugowania (DE), programów lub programu. Wywoływane przez Menedżer debugowania sesji (SDM), gdy DE jest uruchomiona wewnątrz procesu SDM.
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pProgram`
+## <a name="parameters"></a>Parametry
+`pProgram`\
+[in] Tablica [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekty reprezentujące programy do podłączenia do. Są to programy portu.
 
- [in] Tablica [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekty reprezentujące programy do podłączenia do. Są to programy portu.
+`rgpProgramNodes`\
+[in] Tablica [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekty reprezentujące program węzłów, jednej dla każdego programu. Węzły programu w tej tablicy reprezentują te same programy, podobnie jak w `pProgram`. Węzły programu podane są tak, aby DE można zidentyfikować te programy można dołączyć do.
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in] Liczba programów i/lub węzły programu w `pProgram` i `rgpProgramNodes` tablic.
 
- [in] Tablica [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekty reprezentujące program węzłów, jednej dla każdego programu. Węzły programu w tej tablicy reprezentują te same programy, podobnie jak w `pProgram`. Węzły programu podane są tak, aby DE można zidentyfikować te programy można dołączyć do.
+`pCallback`\
+[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt ma być używany do wysyłania zdarzeń debugowania do SDM.
 
- `celtPrograms`
-
- [in] Liczba programów i/lub węzły programu w `pProgram` i `rgpProgramNodes` tablic.
-
- `pCallback`
-
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt ma być używany do wysyłania zdarzeń debugowania do SDM.
-
- `dwReason`
-
- [in] Wartość z zakresu od [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) wyliczenie, które określa przyczyny dołączenie tych programów. Aby uzyskać więcej informacji, zobacz sekcję: Uwagi.
+`dwReason`\
+[in] Wartość z zakresu od [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) wyliczenie, które określa przyczyny dołączenie tych programów. Aby uzyskać więcej informacji, zobacz sekcję: Uwagi.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -91,7 +89,7 @@ int Attach( 
 
    Przed wywołaniem metody węzła programu w tablicy, biorąc pod uwagę przy `pProgram` lub `rgpProgramNodes`, personifikacji, jeśli jest to wymagane, powinna być włączona na `IDebugProgram2` interfejs, który reprezentuje węzeł program. Zwykle jednak ten krok nie jest konieczne. Aby uzyskać więcej informacji, zobacz [problemy z zabezpieczeniami](../../../extensibility/debugger/security-issues.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

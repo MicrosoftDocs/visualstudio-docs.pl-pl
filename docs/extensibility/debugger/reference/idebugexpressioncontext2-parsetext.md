@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0f11c3b1770ca32b34f7a5480d5d56acc2b2478
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919998"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201045"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analizuje wyrażenia w postaci tekstu do późniejszego obliczenia.
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pszCode`
+## <a name="parameters"></a>Parametry
+`pszCode`\
+[in] Wyrażenie które ma być analizowany.
 
- [in] Wyrażenie które ma być analizowany.
+`dwFlags`\
+[in] Kombinacja flag z [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) wyliczenie, które kontroluje analizy.
 
-`dwFlags`
+`nRadix`\
+[in] Podstawy, który ma być używany podczas analizowania wszelkie dane liczbowe w `pszCode`.
 
- [in] Kombinacja flag z [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) wyliczenie, które kontroluje analizy.
+`ppExpr`\
+[out] Zwraca [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) obiekt, który reprezentuje przeanalizowany wyrażenie, który jest gotowy do powiązania i oceny.
 
-`nRadix`
+`pbstrError`\
+[out] Zwraca komunikat o błędzie, jeśli wyrażenie zawiera błąd.
 
- [in] Podstawy, który ma być używany podczas analizowania wszelkie dane liczbowe w `pszCode`.
-
-`ppExpr`
-
- [out] Zwraca [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) obiekt, który reprezentuje przeanalizowany wyrażenie, który jest gotowy do powiązania i oceny.
-
-`pbstrError`
-
- [out] Zwraca komunikat o błędzie, jeśli wyrażenie zawiera błąd.
-
-`pichError`
-
- [out] Zwraca indeks znaków błędu w `pszCode` Jeśli wyrażenie zawiera błąd.
+`pichError`\
+[out] Zwraca indeks znaków błędu w `pszCode` Jeśli wyrażenie zawiera błąd.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -128,7 +125,7 @@ HRESULT CEnvBlock::ParseText(
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
 - [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

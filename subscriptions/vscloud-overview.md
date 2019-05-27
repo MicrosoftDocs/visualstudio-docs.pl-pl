@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Wypożyczać program Visual Studio Professional lub Visual Studio Enterprise na podstawie miesiąca na miesiąc lub roczna, nie długoterminowej umowy.
 searchscope: VS Subscription
-ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679314"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177558"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji chmury programu Visual Studio Professional i Visual Studio Enterprise
 
@@ -96,11 +96,14 @@ Odp.:  Ta zmiana nie ma wpływu na istniejących subskrybentów.
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>PYT.:  Czy muszę podejmować żadnych działań w wyniku te zmiany?
 Odp.:  Nie.  Twoje subskrypcje pozostaną w miejscu i będzie można nimi zarządzać, jak już dziś.
 
-#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-my-company-owns"></a>PYT.: Co zrobić, jeśli chcesz zwiększyć liczbę subskrypcji Moja firma jest właścicielem?
-Odp.:  Administrator nadal może zwiększyć liczbę subskrypcji, odwiedzając [ https://manage.visualstudio.com ](https://manage.visualstudio.com) i postępując zgodnie z instrukcjami w tym artykule do zwiększenia liczby subskrypcji.
+#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>PYT.: Co zrobić, jeśli chcę zwiększyć liczbę subskrypcji dla moich klientów?
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>PYT.: Co zrobić, jeśli chcesz zmniejszyć liczbę subskrypcji Moja firma jest właścicielem?
-Odp.:  Administrator nadal może zmniejszyć liczbę subskrypcji, odwiedzając [ https://manage.visualstudio.com ](https://manage.visualstudio.com) i postępując zgodnie z instrukcjami w tym artykule do zmniejszenia liczby subskrypcji.
+Odp.: Subskrypcje roczne zakupiony w danym miesiącu są naliczane od razu za cały rok i są ważne przez cały rok. Z tego względu administrator można modyfikować tylko liczbę licencji w bieżącym miesiącu zakupu (będą one ważne przez 1 rok i opłat za 1 rok). Poza miesiąca zakupu nie jest już możliwe, aby zwiększyć liczbę subskrypcji.
+
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>PYT.: Co zrobić, jeśli chcę, aby zmniejszyć liczbę subskrypcji dla moich klientów?
+
+Odp.: Administrator nadal może zmniejszyć liczbę subskrypcji, odwiedzając stronę https://manage.visualstudio.com i postępując zgodnie z instrukcjami w tym artykule do zmniejszenia liczby subskrypcji. System będzie *nie* Generowanie środki i rozliczane proporcjonalnie. Zwrot należy skontaktować się z zespołu rozliczeń platformy Azure.
+
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>PYT.: Jeśli anuluję moją subskrypcję, I będzie można kupić inną subskrypcję później roczna w chmurze?
 Odp.:  Mimo że nie będzie można kupić inną subskrypcję roczna w chmurze, istnieje wiele opcji zakupu subskrypcji programu Visual Studio.  Dowiedz się więcej o [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).

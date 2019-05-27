@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a67286b4732436c2a680e13e90740ca9faff299
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9824eb198a491e537500de23b03a2f218767200d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842766"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209495"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 Ustawia lub zmienia warunek skojarzony z Oczekujący punkt przerwania.
@@ -37,10 +40,9 @@ int SetCondition( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `bpCondition`
-
- [in] A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) strukturę, która określa warunek, którego chcesz ustawić.
+## <a name="parameters"></a>Parametry
+`bpCondition`\
+[in] A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) strukturę, która określa warunek, którego chcesz ustawić.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -48,6 +50,6 @@ int SetCondition( 
 ## <a name="remarks"></a>Uwagi
  Dowolny warunek, który był wcześniej skojarzony z Oczekujący punkt przerwania zostaną utracone. Wszystkie punkty przerwania, powiązany z tym oczekujących punktów przerwania są wywoływane w celu ich warunek ustawiony na wartość określoną w `bpCondition` parametru.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

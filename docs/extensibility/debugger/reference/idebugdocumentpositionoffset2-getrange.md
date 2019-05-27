@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8b309af47aed94c45eca418b390be041f66f609
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c86b97fd2437f19e280d9cf9e81454cceee9e47f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921193"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199176"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 Pobiera zakres dla bieżącej pozycji dokumentu.
@@ -36,14 +39,12 @@ public int GetRange(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwBegOffset`
+## <a name="parameters"></a>Parametry
+`pdwBegOffset`\
+[out w] Przesunięcia dla pozycja początkowa zakresu. Ustaw ten parametr ma wartość null, jeśli te informacje nie są potrzebne.
 
- [out w] Przesunięcia dla pozycja początkowa zakresu. Ustaw ten parametr ma wartość null, jeśli te informacje nie są potrzebne.
-
- `pdwEndOffset`
-
- [out w] Przesunięcia dla pozycja końcowa zakresu. Ustaw ten parametr ma wartość null, jeśli te informacje nie są potrzebne.
+`pdwEndOffset`\
+[out w] Przesunięcia dla pozycja końcowa zakresu. Ustaw ten parametr ma wartość null, jeśli te informacje nie są potrzebne.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -58,6 +59,6 @@ Line 6: x = 1;
 
  Wiersz 5 przyczynia się żadnego kodu do debugowanego programu. Jeśli debuger, która ustawia punkt przerwania w wierszu 5 chce DE wyszukiwania do przodu pewien dla pierwszego wiersza, która wspiera kodu, debuger określić zakres, który zawiera wiersze dodatkowe Release candidate, gdzie punkt przerwania mogą zostać prawidłowo umieszczone. DE będzie następnie wyszukuj do przodu, za pomocą tych wierszy aż do znalezienia go wiersza, który mógłby odebrać punktu przerwania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

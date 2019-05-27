@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d958c535cc93e140f61e6681130f16c8d49d8fc0
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 3bce2917af3d6ee2090bd2006fe843f2bcc292da
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458077"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212819"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 
@@ -43,7 +43,6 @@ public struct METADATA_ADDRESS_FIELD {
 ## <a name="members"></a>Elementy członkowskie
 
 `tokField`\
-
 Identyfikator tokenu pola.
 
 [C++] `_mdToken` jest `typedef` dla 32-bitowych `int`.

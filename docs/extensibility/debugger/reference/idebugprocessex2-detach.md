@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e736c14b1a87188f45658a51cff0c123553332e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58480e52e86fc4603648d9f534cb03e944a8dde8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917505"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212886"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 Ta metoda informuje proces, czy sesja jest już debugowanie procesu.
@@ -36,10 +39,9 @@ int Detach(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pSession`
-
- [in] Wartość, która jednoznacznie identyfikuje sesję Aby odłączyć ten proces z.
+## <a name="parameters"></a>Parametry
+`pSession`\
+[in] Wartość, która jednoznacznie identyfikuje sesję Aby odłączyć ten proces z.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -47,5 +49,5 @@ int Detach(
 ## <a name="remarks"></a>Uwagi
  Interfejs przekazanej `pSession` jest należy traktować tylko jako plik cookie, wartość, która jednoznacznie identyfikuje Menedżer debugowania sesji, który pierwotnie dołączony do tego procesu; Brak metody w interfejsie podane są funkcjonalne.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

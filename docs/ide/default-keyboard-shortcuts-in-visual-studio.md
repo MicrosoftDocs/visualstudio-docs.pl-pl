@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb21b08af13d386ae6bd506b96be33ac0a2fb8a7
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962044"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177602"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -125,7 +125,8 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Debug.StepIntoSpecific|**Shift + Alt + F11**|
 |Debug.StepOut|**Shift+F11**|
 |Debug.StepOutCurrentProcess|**Ctrl + Shift + Alt + F11**|
-|Debug.StepOver|**F10**|
+|Debug.StepOver|**F10** (podczas debugowania: Wykonuje krok akcji)|
+|Debug.StepOver|**F10** (podczas debugowania nie: Uruchomiony zostanie program debugowania i zatrzymuje się w pierwszym wierszu kodu użytkownika)|
 |Debug.StepOverCurrentProcess|**Ctrl + Alt + F10**|
 |Debug.StopDebugging|**SHIFT + F5**|
 |Debug.StopPerformanceAnalysis|**Shift + Alt + F2**|

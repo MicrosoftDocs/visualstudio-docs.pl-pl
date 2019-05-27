@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30dfd7b9605cf26f5cc562e6768d1f035f6b484e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e7dd35666120924de9b5eb712a784c6765aa347b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917679"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208842"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 Pobiera tablicę unikatowych identyfikatorów dla silniki debugowania dostępnych.
@@ -35,14 +38,13 @@ public int GetEngineFilter(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pEngineArray`
-
- [out] Odwołanie do struktury, która zawiera unikatowych identyfikatorów dla aparaty debugowania.
+## <a name="parameters"></a>Parametry
+`pEngineArray`\
+[out] Odwołanie do struktury, która zawiera unikatowych identyfikatorów dla aparaty debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md)

@@ -1,5 +1,5 @@
 ---
-title: Publikowanie dla deweloperów i środowisk testowych za pomocą skryptów programu Windows PowerShell | Dokumentacja firmy Microsoft
+title: Skrypty programu PowerShell, aby opublikować środowiska deweloperskie i testowe
 description: Dowiedz się, jak publikować do tworzenia i środowisk testowych za pomocą skryptów środowiska Windows PowerShell w programie Visual Studio.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 2198aac794362237e3b2b6321d9c9bda86108b79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f598ddd3175353103d478dca9828536346e247cd
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427095"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177260"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
 

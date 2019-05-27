@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457278"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212862"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Pobiera reprezentację zależnych od maszyny, zakresu adresów fizycznych skojarzonych z ramki stosu.
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `paddrMin`\
+`paddrMin`\
+[out] Zwraca najniższy adres fizyczny skojarzone z tą ramką stosu.
 
- [out] Zwraca najniższy adres fizyczny skojarzone z tą ramką stosu.
-
- `paddrMax`\
-
- [out] Zwraca najwyższy adres fizyczny skojarzone z tą ramką stosu.
+`paddrMax`\
+[out] Zwraca najwyższy adres fizyczny skojarzone z tą ramką stosu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

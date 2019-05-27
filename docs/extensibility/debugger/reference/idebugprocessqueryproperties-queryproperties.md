@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3644a8d8b8834056e5cf61fc8647d5c47056208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1c88d5b719b8d800ef13f890bb65cd5f6b68d58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917492"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200472"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Tego zapytania metody dla wartości właściwości określonego procesu debugowania.
@@ -36,14 +39,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-#### <a name="parameters"></a>Parametry
- `celt`
+## <a name="parameters"></a>Parametry
+`celt`\
+[in] Rozmiar macierzy zawierający definicje właściwości i wartości właściwości.
 
- [in] Rozmiar macierzy zawierający definicje właściwości i wartości właściwości.
-
- `dwPropType`
-
- [in] Tablica, która zawiera definicje właściwości kwerendy. Możliwe wartości to:
+`dwPropType`\
+[in] Tablica, która zawiera definicje właściwości kwerendy. Możliwe wartości to:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -51,7 +52,8 @@ int QueryProperties(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out] Tablica zawierająca wartości właściwości.
+`pvarPropValue`\
+[out] Tablica zawierająca wartości właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -59,5 +61,5 @@ int QueryProperties(
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest rzadko używana.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

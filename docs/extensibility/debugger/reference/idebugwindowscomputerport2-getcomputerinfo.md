@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1894c5488c6d9405f8b1d84ae2cb2d497fb0542b
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4404e714156a058db18f5284cc7adc8f4a23d1c5
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226146"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199291"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 Pobiera informacje o komputerze, na którym w debugerze programu uruchomione.
@@ -39,9 +39,8 @@ public int GetComputerInfo(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pInfo`\
-
- [out] Odwołanie do struktury, która zawiera informacje o komputerze.
+`pInfo`\
+[out] Odwołanie do struktury, która zawiera informacje o komputerze.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

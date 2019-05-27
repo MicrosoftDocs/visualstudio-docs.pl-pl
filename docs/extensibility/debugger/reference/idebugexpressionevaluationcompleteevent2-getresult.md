@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cc3122103b075b18d2e77e72ad50cda958ba715
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a7ceb20932a0d41486675a8bf1928831726856cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843186"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200936"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 Pobiera wynik obliczania wyrażenia.
@@ -36,10 +39,8 @@ int GetResult( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppResult`
-
- [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt reprezentujący wynik obliczania wyrażenia.
+## <a name="parameters"></a>Parametry
+`ppResult` [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt reprezentujący wynik obliczania wyrażenia.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -47,6 +48,6 @@ int GetResult( 
 ## <a name="remarks"></a>Uwagi
  Zwrócony [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt zawiera wartość obliczane wyrażenie. Należy pamiętać, że ta wartość może być wartością złożonych takich jak tablica, ale wynik końcowy musi być numeryczny lub ciąg, wartość, która jest wyświetlana użytkownikowi.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

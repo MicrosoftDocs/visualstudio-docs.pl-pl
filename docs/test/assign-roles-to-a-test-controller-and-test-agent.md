@@ -1,5 +1,5 @@
 ---
-title: Przypisz role do kontrolera testów i agenta testowego, potrzeby testowania automatycznego
+title: Kontroler testów rolami i testować agenta dla testów automatycznych
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 322b7d2baeca80f076c33879b52a650f31f8872b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb62e668d7077e1be96ff7a282628b76b426898f
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822806"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177796"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisywanie ról do testów kontrolera i agenta testowego
 

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df878cc59a47a8d3cc7079f8b919f87d9bb60f43
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e5d1f1f4b31317e79c497e1b13dcd7e218ecd16b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457481"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212995"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Porównuje jedno odwołanie do innego. Zarezerwowane do użytku w przyszłości.
@@ -42,13 +42,11 @@ int Compare ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `dwCompare`\
+`dwCompare`\
+[in] Wartość z zakresu od [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) wyliczenie, które określa operacji porównania, na przykład taki sam, mniej niż lub równy.
 
- [in] Wartość z zakresu od [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) wyliczenie, które określa operacji porównania, na przykład taki sam, mniej niż lub równy.
-
- `pReference`\
-
- [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiekt reprezentujący odwołania do porównania.
+`pReference`\
+[in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiekt reprezentujący odwołania do porównania.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca `E_NOTIMPL`.

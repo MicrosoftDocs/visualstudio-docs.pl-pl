@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c4179b6e762d925ca918e459c5109deb6579c10
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4e6d6ddbc87a2219711a93b54a699df3c5511ab2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458838"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200202"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Pobiera liczbę przeglądarek niestandardowych, które mogą być dostępne dla tej właściwości.
@@ -41,8 +41,7 @@ int GetCustomViewerCount(
 
 ## <a name="parameters"></a>Parametry
 `pcelt`\
-
- [out] Liczba przeglądarek niestandardowych, które są dostępne dla tej właściwości.
+[out] Liczba przeglądarek niestandardowych, które są dostępne dla tej właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
