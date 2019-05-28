@@ -81,6 +81,8 @@
               href: install/disable-or-move-the-package-cache.md
             - name: Sterowanie aktualizacjami na potrzeby wdrożeń programu Visual Studio
               href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
+              href: install/update-servicing-baseline.md
         - name: Zarządzanie instalacjami
           items:
             - name: Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
