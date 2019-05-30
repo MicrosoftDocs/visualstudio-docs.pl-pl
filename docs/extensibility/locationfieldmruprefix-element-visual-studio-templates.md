@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <LocationFieldMRUPrefix> element [Visual Studio Templates]
 - LocationFieldMRUPrefix element [Visual Studio Templates]
 ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8c4c3fa4e64b302c6d1c9d0e393528d46fe072f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d817f688ffeebecf1655fe10aa58efa664135c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907352"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309081"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Locationfieldmruprefix — element (szablony Visual Studio)
 Określa ścieżki ostatnio używanych (MRU) w **nowy projekt** i **Dodaj nowy element** okno dialogowe.

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97a2d4e76ebe1ed206ebbc2eea09b15865b86a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fd481883c826ff21a82b52bdd82de087b6219b58
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924261"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309013"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Wylicza dodatkowe rodzajów pól, które [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt może zawierać. To wyliczenie rozszerza [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) wyliczenia.
@@ -41,12 +44,15 @@ public enum enum_FIELD_KIND_EX
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-Pole FIELD_KIND_EX_NONE nie zawiera typie rozszerzonym.
+## <a name="fields"></a>Pola
+`FIELD_KIND_EX_NONE`\
+Pole nie zawiera typie rozszerzonym.
 
-Pole FIELD_TYPE_EX_METHODVAR zawiera zmienną metody.
+`FIELD_TYPE_EX_METHODVAR`\
+Pole zawiera zmienną metody.
 
-Pole FIELD_TYPE_EX_CLASSVAR zawiera zmienną klasy.
+`FIELD_TYPE_EX_CLASSVAR`\
+Pole zawiera zmienną klasy.
 
 ## <a name="requirements"></a>Wymagania
 Nagłówek: Sh.h
@@ -55,6 +61,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)
