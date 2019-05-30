@@ -3,17 +3,17 @@ title: Tworzenie Software Development Kit | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc04de6de270053e20e05a30312a298e9e6e2f0f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 6ad14712653aeca146ffe00cc5c79fd044ce2a4b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177347"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345390"
 ---
 # <a name="create-a-software-development-kit"></a>Utwórz zestaw software development kit
 Zestaw software development kit (SDK) to zbiór interfejsów API, którego można się odwoływać jako pojedynczy element w programie Visual Studio. **Menadżer odwołań** okno dialogowe wyświetla listę wszystkich zestawów SDK, które mają zastosowanie do projektu. Po dodaniu zestawu SDK do projektu interfejsach API dostępnych w programie Visual Studio.
@@ -34,7 +34,7 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
  Zestawy SDK platformy są wymagane do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestawu SDK jest wymagany do tworzenia aplikacji dla [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Instalacja
- Wszystkich zestawów SDK dla platformy, zostaną zainstalowane w *zestawów SDK HKLM\Software\Microsoft\Microsoft\\\v [TPI] [TPV]\\ @InstallationFolder = [katalogu głównym zestawu SDK]*. W związku z tym [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestaw SDK został zainstalowany w *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+ Wszystkich zestawów SDK dla platformy, zostaną zainstalowane w *zestawów SDK HKLM\Software\Microsoft\Microsoft\\\v [TPI] [TPV]\\ @InstallationFolder = [katalogu głównym zestawu SDK]* . W związku z tym [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestaw SDK został zainstalowany w *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
 ### <a name="layout"></a>Układ
  Zestawy SDK platformy mają następujące układu:
@@ -74,7 +74,7 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
 
 1. Określ ją w kluczu rejestru:
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>** \
 
      i dodaj podklucz (ustawienie domyślne), który ma wartość `<path to SDK><SDKName><SDKVersion>`.
 
@@ -104,7 +104,7 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
 
 2. *Odwołania* folder: pliki binarne, które zawierają interfejsy API. Mogą to być pliki Windows metadanych (WinMD) lub zespołów.
 
-3. *Redystrybucyjna* folder: pliki, które są wymagane do debugowania/środowiska uruchomieniowego i należy pobrać spakowanych jako część aplikacji przez użytkownika. Wszystkie pliki binarne, powinny zostać umieszczone pod *\redist\\< config\>\\< arch\>*, i nazwami plików binarnych powinna mieć następujący format w celu zapewnienia unikatowości: *]* \<firmy >. \<produktu >. \<cel >. \<rozszerzenia ><em>. Na przykład *Microsoft.Cpp.Build.dll</em>. Wszystkie pliki z nazwami, których może dojść do kolizji z nazwami plików od innych zestawów SDK (na przykład pliki javascript, css, pri, xaml, png i jpg) należy umieścić pod <em>\redist\\< config\>\\< arch\> \\< sdkname\> \* z wyjątkiem plików, które są skojarzone z XAML kontrolki. Te pliki powinny być umieszczone pod * \redist\\< config\>\\< arch\>\\< componentname\>\\</em>.
+3. *Redystrybucyjna* folder: pliki, które są wymagane do debugowania/środowiska uruchomieniowego i należy pobrać spakowanych jako część aplikacji przez użytkownika. Wszystkie pliki binarne, powinny zostać umieszczone pod *\redist\\< config\>\\< arch\>* , i nazwami plików binarnych powinna mieć następujący format w celu zapewnienia unikatowości: *]* \<firmy >. \<produktu >. \<cel >. \<rozszerzenia ><em>. Na przykład *Microsoft.Cpp.Build.dll</em>. Wszystkie pliki z nazwami, których może dojść do kolizji z nazwami plików od innych zestawów SDK (na przykład pliki javascript, css, pri, xaml, png i jpg) należy umieścić pod <em>\redist\\< config\>\\< arch\> \\< sdkname\> \* z wyjątkiem plików, które są skojarzone z XAML kontrolki. Te pliki powinny być umieszczone pod * \redist\\< config\>\\< arch\>\\< componentname\>\\</em>.
 
 4. *Czasu projektowania* folder: pliki, które są potrzebne w tylko wstępnej — uruchamianie/debugowanie raz i nie powinien spakowane w ramach aplikacji przez użytkownika. Mogą to być dokumenty XML, bibliotek, nagłówków, pliki binarne czasu projektowania przybornika, program MSBuild artefaktów i tak dalej. Dowolnego zestawu SDK, który jest przeznaczony do użycia przez natywnego projektu musi mieć *SDKName.props* pliku. Na poniższym obrazie przedstawiono przykład tego typu pliku.
 

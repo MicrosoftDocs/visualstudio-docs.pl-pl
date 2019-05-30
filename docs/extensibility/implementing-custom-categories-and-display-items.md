@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418839"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321397"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementowanie niestandardowych kategorii i wyświetlania elementów
 Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) za pomocą niestandardowych kategorii i wyświetlenie elementów.
@@ -45,7 +45,7 @@ Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!
 
 ## <a name="to-create-or-identify-categories"></a>Aby utworzyć lub wskazać kategorii
 
-- Konstruowania specjalny typ wpisu rejestru kategorii *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >*\FontAndColors\\ `<Category>`]*
+- Konstruowania specjalny typ wpisu rejestru kategorii *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<wersji programu Visual Studio > *\FontAndColors\\ `<Category>`]*
 
    *\<Kategoria >* to niezlokalizowana nazwa kategorii.
 
@@ -60,7 +60,7 @@ Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!
 
 ## <a name="to-create-or-identify-groups"></a>Aby utworzyć lub wskazać grupy
 
-- Konstruowania specjalny typ wpisu rejestru kategorii *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >*\FontAndColors\\*  \<grupy >*]*
+- Konstruowania specjalny typ wpisu rejestru kategorii *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<wersji programu Visual Studio > *\FontAndColors\\*  \<grupy > *]*
 
    *\<grupy >* to niezlokalizowana Nazwa grupy.
 

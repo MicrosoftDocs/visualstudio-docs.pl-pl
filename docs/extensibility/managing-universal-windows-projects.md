@@ -3,17 +3,17 @@ title: Zarządzanie projektami Windows Universal | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39ab595bd607f8530f899ca803a0dfeaa5178542
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907046"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340543"
 ---
 # <a name="manage-universal-windows-projects"></a>Zarządzaj projektami Universal Windows
 
@@ -293,7 +293,7 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Teraz wypróbuj działanie rozwiązania. Naciśnij klawisz F5, aby uruchomić doświadczalne wystąpienie. Tworzenie projektu aplikacji uniwersalnej Centrum C# w doświadczalnym wystąpieniu (w **nowy projekt** okno dialogowe **Visual C#** > **Windows**  >   **System Windows 8** > **Universal** > **aplikacja Centrum zawartości**). Po załadowaniu rozwiązania, przejdź do **narzędzia** menu i kliknij przycisk **wywołania TestUniversalProject**, a następnie zaewidencjonuj tekst **dane wyjściowe** okienka. Powinien zostać wyświetlony podobny do poniższego:
+16. Teraz wypróbuj działanie rozwiązania. Naciśnij klawisz F5, aby uruchomić doświadczalne wystąpienie. Tworzenie projektu aplikacji uniwersalnej Centrum C# w doświadczalnym wystąpieniu (w **nowy projekt** okno dialogowe **Visual C#**  > **Windows**  >   **System Windows 8** > **Universal** > **aplikacja Centrum zawartości**). Po załadowaniu rozwiązania, przejdź do **narzędzia** menu i kliknij przycisk **wywołania TestUniversalProject**, a następnie zaewidencjonuj tekst **dane wyjściowe** okienka. Powinien zostać wyświetlony podobny do poniższego:
 
     ```
     Found shared project: HubApp.Shared

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428816"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322429"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego. Fragmentem jest oparty na składni XML szablonu przy użyciu zestawu pól. Te pola są wyróżnione po tym fragmencie kodu jest wstawiany i mogą mieć różne wartości w zależności od kontekstu, w którym wstawieniu fragmentu kodu. Po wstawieniu fragmentu kodu, usługa językowa można sformatować fragment kodu.
@@ -50,7 +50,7 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
 
  Zwykle istnieją dwie lokalizacje, w którym są przechowywane pliki szablon fragmentu kodu: (1) gdy język został zainstalowany i 2) w folderze użytkownika. Te lokalizacje są dodawane w rejestrze tak, program Visual Studio **Menedżera wstawek kodu** można znaleźć fragmenty kodu. Folder użytkownika jest przechowywania fragmenty utworzone przez użytkownika.
 
- Układ typowy folder plików szablonów zainstalowanych fragment kodu wygląda następująco: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
+ Układ typowy folder plików szablonów zainstalowanych fragment kodu wygląda następująco: *[InstallRoot]* \\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
 
  *[Element InstallRoot]*  jest folderem, język jest zainstalowany w.
 
@@ -58,7 +58,7 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
 
  *[LCID]*  to identyfikator ustawień regionalnych. Jest to jak zlokalizowane wersje swoje fragmenty są przechowywane. Na przykład identyfikator ustawień regionalnych dla języka angielskiego to 1033, więc *[LCID]* zastępuje 1033.
 
- Należy podać jeden dodatkowy plik i który jest plikiem indeksu pliku, zwykle nazywane SnippetsIndex.xml lub ExpansionsIndex.xml (możesz użyć dowolnego prawidłowe pliku z rozszerzeniem .xml). Ten plik zwykle znajduje się w *[InstallRoot]*\\ *[TestLanguage]* folder i umożliwia określenie dokładnej lokalizacji folderu fragmentów kodu, jak również identyfikator języka i identyfikator GUID języka Usługa, która używa fragmenty kodu. Dokładnej ścieżki pliku indeksu są umieszczane w rejestrze, zgodnie z opisem w dalszej części "Instalowanie wpisy rejestru". Poniżej przedstawiono przykładowy plik SnippetsIndex.xml:
+ Należy podać jeden dodatkowy plik i który jest plikiem indeksu pliku, zwykle nazywane SnippetsIndex.xml lub ExpansionsIndex.xml (możesz użyć dowolnego prawidłowe pliku z rozszerzeniem .xml). Ten plik zwykle znajduje się w *[InstallRoot]* \\ *[TestLanguage]* folder i umożliwia określenie dokładnej lokalizacji folderu fragmentów kodu, jak również identyfikator języka i identyfikator GUID języka Usługa, która używa fragmenty kodu. Dokładnej ścieżki pliku indeksu są umieszczane w rejestrze, zgodnie z opisem w dalszej części "Instalowanie wpisy rejestru". Poniżej przedstawiono przykładowy plik SnippetsIndex.xml:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>

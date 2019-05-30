@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e270d1be9cdf935dbffa7d094fddaecd4f73a02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1329f847f7f961bf4c792cbdf7f40f8f04b1694c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433074"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338732"
 ---
 # <a name="sccrename-function"></a>SccRename, funkcja
 Ta funkcja zmienia nazwę pliku w systemie kontroli źródła.

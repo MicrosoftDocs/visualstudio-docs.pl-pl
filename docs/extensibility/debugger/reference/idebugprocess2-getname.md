@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetName
 ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 371766c1aaffbbd82cd4a5da8876a65eccc96363
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: d869f041bee3d187e4cd980328819505e667114e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202607"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339033"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 Pobiera tytuł, przyjazną nazwę lub nazwę procesu.

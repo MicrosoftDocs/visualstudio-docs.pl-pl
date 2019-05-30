@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411097"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322832"
 ---
 # <a name="vsix-manifest-designer"></a>Projektant manifestu VSIX
 Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas instalacji rozszerzenia programu Visual Studio.
@@ -60,15 +60,15 @@ Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas insta
 
   **Licencja** Określa plik tekstowy, który zawiera licencji użytkownika, jeśli jest obecna.
 
-  **Ikona** Określa plik grafiki (*.png*, *.bmp*, *JPEG*, *.ico*) zawierający ikonę do wyświetlenia w **Menedżera rozszerzeń**, jeśli występuje ikona. Obraz ikony musi być 32 x 32 piksele lub zmiany rozmiaru do tych wymiarów. Jeśli określono żadnej ikony, **Menedżera rozszerzeń** używa ikona domyślna.
+  **Ikona** Określa plik grafiki ( *.png*, *.bmp*, *JPEG*, *.ico*) zawierający ikonę do wyświetlenia w **Menedżera rozszerzeń**, jeśli występuje ikona. Obraz ikony musi być 32 x 32 piksele lub zmiany rozmiaru do tych wymiarów. Jeśli określono żadnej ikony, **Menedżera rozszerzeń** używa ikona domyślna.
 
-  **Obraz podglądu** Określa plik grafiki (*.png*, *.bmp*, *JPEG*, *.ico*) zawiera obraz, aby można wyświetlić w **Menedżera rozszerzeń**, jeśli obraz podglądu jest obecny. Obraz podglądu musi być 200 x 200 pikseli. Jeśli brak obrazu (wersja zapoznawcza) jest określony, **Menedżera rozszerzeń** korzysta z domyślnego obrazu.
+  **Obraz podglądu** Określa plik grafiki ( *.png*, *.bmp*, *JPEG*, *.ico*) zawiera obraz, aby można wyświetlić w **Menedżera rozszerzeń**, jeśli obraz podglądu jest obecny. Obraz podglądu musi być 200 x 200 pikseli. Jeśli brak obrazu (wersja zapoznawcza) jest określony, **Menedżera rozszerzeń** korzysta z domyślnego obrazu.
 
   **Tagi** dodaje znaczniki tekst służący do wskazówki dotyczące wyszukiwania.
 
-  **Informacje o wersji** Określa plik (*.txt*, *.rtf*) zawierający informacje o wersji. Pobiera również adres URL witryny sieci Web, która wyświetla informacje o wersji.
+  **Informacje o wersji** Określa plik ( *.txt*, *.rtf*) zawierający informacje o wersji. Pobiera również adres URL witryny sieci Web, która wyświetla informacje o wersji.
 
-  **Getting Started Guide** Określa plik (*.txt*, *.rtf*) zawierający informacje o sposobie używania rozszerzenia lub zawartości w pakiecie VSIX. Ten przewodnik jest wyświetlany, gdy instalacja rozszerzenia została ukończona. Pobiera również adres URL witryny sieci Web, która wyświetla przewodnika.
+  **Getting Started Guide** Określa plik ( *.txt*, *.rtf*) zawierający informacje o sposobie używania rozszerzenia lub zawartości w pakiecie VSIX. Ten przewodnik jest wyświetlany, gdy instalacja rozszerzenia została ukończona. Pobiera również adres URL witryny sieci Web, która wyświetla przewodnika.
 
   **Więcej informacji o adres URL** Określa adres URL witryny sieci Web, która zawiera dodatkowe informacje o produkcie.
 
@@ -94,7 +94,7 @@ Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas insta
 
   **Plik VSIX są zainstalowane dla wszystkich użytkowników (wymaga podniesienia uprawnień związane z instalacją)** Jeśli wybierzesz to pole wyboru, to rozszerzenie jest zainstalowane dla wszystkich użytkowników; w przeciwnym razie jest ona zainstalowana tylko dla bieżącego użytkownika.
 
-  **Plik VSIX jest instalowany przez Instalatora Windows** Jeśli wybierzesz to pole wyboru, to rozszerzenie jest zainstalowane przez Instalatora Windows (*.msi* pliku); w przeciwnym razie jest zainstalowany jako typowych pakietów VSIX (*.vsix*  pliku).
+  **Plik VSIX jest instalowany przez Instalatora Windows** Jeśli wybierzesz to pole wyboru, to rozszerzenie jest zainstalowane przez Instalatora Windows ( *.msi* pliku); w przeciwnym razie jest zainstalowany jako typowych pakietów VSIX ( *.vsix*  pliku).
 
   **Zasoby** karta zawiera następujące elementy sterujące.
 

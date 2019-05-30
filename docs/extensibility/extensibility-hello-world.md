@@ -3,17 +3,17 @@ title: Witaj świecie rozszerzenie samouczka | Dokumentacja firmy Microsoft
 ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c3bbafcf138c60b65940bcee73c74f56cf6e2fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912309"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342861"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Tworzenie pierwszego rozszerzenia: Witaj Świecie
 
@@ -156,7 +156,7 @@ Zostanie wyświetlone zostaną słowa **wystąpienie doświadczalne** na pasku t
 
 ::: moniker-end
 
-Krok 2. Na **narzędzia** menu **wystąpienie doświadczalne**, kliknij przycisk **Say Hello World!**.
+Krok 2. Na **narzędzia** menu **wystąpienie doświadczalne**, kliknij przycisk **Say Hello World!** .
 
 ![wynik końcowy](media/hello-world-final-result.png)
 

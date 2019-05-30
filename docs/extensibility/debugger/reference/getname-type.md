@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878111"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317584"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Określa typ nazwy plików do pobrania.
@@ -49,20 +52,27 @@ public enum enum_GETNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-GN_NAME określa przyjazną nazwę dokumentu lub kontekstu.
+## <a name="fields"></a>Pola
+`GN_NAME`\
+Określa przyjazną nazwę dokumentu lub kontekstu.
 
-GN_FILENAME Określa pełną ścieżkę dokumentu lub kontekstu.
+`GN_FILENAME`\
+Określa pełną ścieżkę dokumentu lub kontekstu.
 
-GN_BASENAME Określa nazwę pliku podstawowego zamiast pełnej ścieżki dokumentu lub kontekstu.
+`GN_BASENAME`\
+Określa nazwę pliku podstawowego zamiast pełnej ścieżki dokumentu lub kontekstu.
 
-GN_MONIKERNAME Określa unikatową nazwę dokumentu lub kontekstu w postaci krótka.
+`GN_MONIKERNAME`\
+Określa unikatową nazwę dokumentu lub kontekstu w postaci krótka.
 
-GN_URL nazwa adresu URL dokumentu lub kontekstu.
+`GN_URL`\
+Określa nazwę adresu URL dokumentu lub kontekstu.
 
-GN_TITLE Określa tytuł dokumentu, jeśli taka istnieje.
+`GN_TITLE`\
+Określa tytuł dokumentu, jeśli taka istnieje.
 
-Przetwarza GN_STARTPAGEURL pobiera początkowy adres URL, dla strony.
+`GN_STARTPAGEURL`\
+Pobiera początkowy adres URL strony dla procesów.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości są przekazywane jako parametry [getname —](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [getname —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), i [getname —](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metody, aby określić, jakiego rodzaju nazwy do zwrócenia.
@@ -74,7 +84,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)
 - [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)
