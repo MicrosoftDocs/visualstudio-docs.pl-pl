@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a11c5b441b6806c1ee9a07d77044be1ab42d2197
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b81d6be4ebb7e210efc2034f43fc9a91ec1844e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319521"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402061"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -379,7 +379,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL + K, Ctrl + R**|
 |View.Output|**Ctrl + Alt + O** (litery ' O')|
-|View.PopBrowseContex|**Ctrl + Shift + 8**|
+|View.PopBrowseContext|**Ctrl + Shift + 8** (C++ tylko)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**SHIFT + F4**|
 |View.ResourceView|**Ctrl + Shift + E**|

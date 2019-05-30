@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2 | Dokumentacja firmy Microsoft'
+title: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436719"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401101"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2
   Po zdefiniowaniu niestandardowy typ elementu projektu programu SharePoint i skojarzyć go z szablonem projektu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, używając szablonu do utworzenia nowego projektu, który zawiera element projektu. Informacje zbierane, może służyć do zainicjowania elementu projektu.
@@ -368,7 +368,7 @@ ms.locfileid: "63436719"
 
 2. Na **podpisywanie** zaznacz **Podpisz zestaw** pole wyboru.
 
-3. W **wybierz plik klucza o silnej nazwie** wybierz  **\<nowy... >**.
+3. W **wybierz plik klucza o silnej nazwie** wybierz  **\<nowy... >** .
 
 4. W **Utwórz klucz silnej nazwy** okna dialogowego wprowadź nazwę dla nowego pliku klucza, usuń zaznaczenie **Chroń mój plik klucza przy użyciu hasła** pole wyboru, a następnie wybierz **OK** przycisku.
 

@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie, publikowanie i aktualizowanie pakietów rozwiązania SharePoint | Dokumentacja firmy Microsoft
+title: Wdrażanie, publikowanie i uaktualnianie pakietów rozwiązania SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c41b36766e112dc86bd15c7a2bec48633c35b57
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436736"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402041"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Wdrażanie, publikowanie oraz aktualizowanie pakietów rozwiązania SharePoint
   Po opracowywania rozwiązania programu SharePoint w programie Visual Studio, możesz wdrożyć jego pliku pakietu (wsp) na lokalnym serwerze programu SharePoint lub opublikować ją w lokalnym lub zdalnym serwerem programu SharePoint. Jeśli pliki są wdrożone, można dostosować, jak wdrożonych plików pakietu (wsp).
@@ -54,7 +54,7 @@ ms.locfileid: "63436736"
  Można również dodać polecenia do uruchomienia przed i po wdrożeniu. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie poleceń wdrażania SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).
 
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Publikowanie pakietów na serwerze lokalnym lub zdalnym
- Aby opublikować rozwiązanie w trybie piaskownicy programu SharePoint na serwerze zdalnym, na pasku menu wybierz **kompilacji**, **Publikuj**, a następnie w **Publikuj** okna dialogowego wybierz **Publikowania w witrynie SharePoint** przycisk opcji, podając adres URL serwera zdalnego, takich jak **https://someremoteserver.sharepoint.microsoftonline.com**.
+ Aby opublikować rozwiązanie w trybie piaskownicy programu SharePoint na serwerze zdalnym, na pasku menu wybierz **kompilacji**, **Publikuj**, a następnie w **Publikuj** okna dialogowego wybierz **Publikowania w witrynie SharePoint** przycisk opcji, podając adres URL serwera zdalnego, takich jak **https://someremoteserver.sharepoint.microsoftonline.com** .
 
  Publikowanie rozwiązania SharePoint na serwerze lokalnym, w **Publikuj** okna dialogowego wybierz **opublikowanie w systemie plików** przycisk opcji, podając ścieżkę systemu lokalnego.
 

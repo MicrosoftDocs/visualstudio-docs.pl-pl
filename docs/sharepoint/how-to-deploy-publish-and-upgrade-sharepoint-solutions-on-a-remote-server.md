@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym | Dokumentacja firmy Microsoft'
+title: Wdrażanie, publikowanie i aktualizowanie rozwiązań SharePoint zdalnie
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813946"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401444"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Instrukcje: Wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym
   Oprócz wdrażania rozwiązań programu SharePoint do systemu lokalnego, można publikować rozwiązania w trybie piaskownicy programu SharePoint na lokacjach zdalnych i lokalnych witryn programu SharePoint. Zdalnej kopii procesu publikowania *.wsp* pliku na serwerze programu SharePoint, instaluje rozwiązanie i następnie umożliwia aktywację rozwiązania. Możesz również uaktualnić zdalnej instalacji rozwiązania programu SharePoint, po wprowadzeniu zmian do niego.
@@ -37,7 +37,7 @@ ms.locfileid: "62813946"
 
 5. Zaloguj się do serwera zdalnego, jeśli wymagane jest uwierzytelnienie użytkownika.
 
-     Publikowanie postępu jest wyświetlana w programie Visual Studio **dane wyjściowe** okna. Po zakończeniu procesu rozwiązania (*.wsp*) pliku jest zainstalowany na zdalnym serwerze programu SharePoint. Jednak go nadal należy aktywować zanim będzie można używać w programie SharePoint.
+     Publikowanie postępu jest wyświetlana w programie Visual Studio **dane wyjściowe** okna. Po zakończeniu procesu rozwiązania ( *.wsp*) pliku jest zainstalowany na zdalnym serwerze programu SharePoint. Jednak go nadal należy aktywować zanim będzie można używać w programie SharePoint.
 
 6. Na **Galeria rozwiązań** stronie, wybierz aplikację programu SharePoint, a następnie na Wstążce, wybierz **Aktywuj** przycisku.
 

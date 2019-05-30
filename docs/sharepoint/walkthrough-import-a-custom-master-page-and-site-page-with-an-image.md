@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem | Dokumentacja firmy Microsoft'
+title: Importuj niestandardową stronę wzorcową i stronę witryny z obrazem
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834390"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400899"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Przewodnik: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem
   W tym instruktażu pokazano, jak importować niestandardową stronę wzorcową i stronę witryny, która ma obraz w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.
@@ -27,7 +27,7 @@ ms.locfileid: "62834390"
 
 - Utwórz niestandardową stronę wzorcową i stronę witryny przy użyciu obrazu w programie SharePoint Designer.
 
-- Eksportuj niestandardową stronę wzorcową, obrazów i stronę witryny do rozwiązania programu SharePoint (*.wsp*) pliku.
+- Eksportuj niestandardową stronę wzorcową, obrazów i stronę witryny do rozwiązania programu SharePoint ( *.wsp*) pliku.
 
 - Importowanie i wdrażanie *.wsp* mezzanine do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint za pomocą projektu Importowanie pakietu rozwiązań programu SharePoint.
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834390"
 6. Zapisz stronę zaktualizowanej witryny.
 
 ## <a name="export-the-items-from-sharepoint"></a>Eksportowanie elementów z programu SharePoint
- Eksportować z programu SharePoint do rozwiązania programu SharePoint (*.wsp*) pliku.
+ Eksportować z programu SharePoint do rozwiązania programu SharePoint ( *.wsp*) pliku.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Aby wyeksportować elementy z programu SharePoint Designer
 

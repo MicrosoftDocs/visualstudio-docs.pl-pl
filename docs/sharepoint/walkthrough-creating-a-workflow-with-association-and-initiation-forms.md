@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia | Dokumentacja firmy Microsoft'
+title: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430378"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401152"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Przewodnik: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia
   W tym instruktażu pokazano, jak utworzyć podstawowy sekwencyjny przepływ pracy, który obejmuje korzystanie z formularzy skojarzenia i inicjacji. Są to formularze ASPX umożliwiające dodanie parametrów do przepływu pracy, gdy jest on pierwszy raz skojarzony przez administratora programu SharePoint (formularz skojarzenia) i po uruchomieniu przepływu pracy przez użytkownika (formularz inicjowania).
@@ -90,7 +90,7 @@ ms.locfileid: "63430378"
 
      **Kreator ustawień niestandardowych SharePoint** pojawia się.
 
-10. W **Określ nazwę przepływu pracy debugowania** strona, zaakceptuj nazwę domyślną (**ExpenseReport - Workflow1**). Należy zachować wartość typu szablonu przepływu pracy domyślnego (**przepływu pracy dla listy)**. Wybierz **dalej** przycisku.
+10. W **Określ nazwę przepływu pracy debugowania** strona, zaakceptuj nazwę domyślną (**ExpenseReport - Workflow1**). Należy zachować wartość typu szablonu przepływu pracy domyślnego (**przepływu pracy dla listy)** . Wybierz **dalej** przycisku.
 
 11. W **chcesz użyć programu Visual Studio automatycznie skojarzył przepływ pracy w sesji debugowania?** strony, usuń zaznaczenie tego pola, które automatycznie kojarzy szablonu przepływu pracy, jeśli zaznaczono opcję on.
 

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704657"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401729"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -147,9 +147,9 @@ Masz teraz projekt za pomocą metod, które można przetestować. W tym artykule
 
 ::: moniker range="vs-2017"
 
-2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz **testu**.
+2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane**, rozwiń węzeł **Visual C#** , a następnie wybierz **testu**.
 
-3. Z listy szablonów wybierz **projekt testów MSTest (.NET Core)**.
+3. Z listy szablonów wybierz **projekt testów MSTest (.NET Core)** .
 
 4. W **nazwa** wprowadź `BankTests`, a następnie wybierz pozycję **OK**.
 
@@ -365,9 +365,9 @@ Uruchomione dwóch metod testowych pokazuje, czy testy działają poprawnie.
 
 ### <a name="continue-the-analysis"></a>Kontynuuj analizę
 
-Ostatnie dwie metody testowe są jednak także trudne. Nie można mieć pewne uruchamiania tych testów, który warunek w testowanej metody zgłasza wyjątek. Jakiś sposób na rozróżnienie tych dwóch warunków będącego kwotą Debet ujemna ani większa niż saldo kwoty, zwiększyłaby zaufanie w testach.
+Dodatkowo można zwiększyć metoda poddawana testom. Za pomocą bieżącej implementacji, firma Microsoft nie ma możliwości wiedzieć, który warunek (`amount > m_balance` lub `amount < 0`) spowodowało wyjątek podczas testu. Po prostu wiemy, że `ArgumentOutOfRangeException` zgłoszono gdzieś w metodzie. Byłoby lepiej można stwierdzić, który warunek w `BankAccount.Debit` spowodowała zgłoszenie wyjątku (`amount > m_balance` lub `amount < 0`) dzięki czemu mamy pewność, czy naszych metody jest poprawnością sprawdzania argumentów poprawnie.
 
-Spójrz na testowaną metodę ponownie i zwróć uwagę, że obie instrukcje warunkowe używają `ArgumentOutOfRangeException` Konstruktor, który właśnie przyjmuje nazwę argumentu jako parametr:
+Przyjrzyj się metoda poddawana testom (`BankAccount.Debit`) ponownie i zwróć uwagę, że obie instrukcje warunkowe użyj `ArgumentOutOfRangeException` Konstruktor, który właśnie przyjmuje nazwę argumentu jako parametr:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

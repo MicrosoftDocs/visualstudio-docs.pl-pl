@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild | Dokumentacja firmy Microsoft'
+title: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80c29cab77cffcb46da8913ccd6e050ec4181c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814020"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401510"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild
-  Przy użyciu docelowych elementów MSBuild w wierszu polecenia, można dostosować, jak program Visual Studio tworzy pliki pakietu programu SharePoint (*.wsp*). Na przykład można dostosować właściwości programu MSBuild, aby zmienić katalog pośredni pakowania i grup elementów MSBuild, określających wyliczany plików.
+  Przy użyciu docelowych elementów MSBuild w wierszu polecenia, można dostosować, jak program Visual Studio tworzy pliki pakietu programu SharePoint ( *.wsp*). Na przykład można dostosować właściwości programu MSBuild, aby zmienić katalog pośredni pakowania i grup elementów MSBuild, określających wyliczany plików.
 
 ## <a name="customize-and-run-msbuild-targets"></a>Dostosowywanie i uruchamianie elementów docelowych MSBuild
  Możesz dostosować BeforeLayout i AfterLayout obiekty docelowe, po wykonaniu zadań przed układu pakietu, takie jak dodawanie, usuwanie lub modyfikowanie plików, które zostanie umieszczony w pakiecie.

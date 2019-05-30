@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint | Dokumentacja firmy Microsoft'
+title: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430364"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401058"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Przewodnik: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint
   W tym instruktażu pokazano, jak utworzyć szablon podstawowy sekwencyjny przepływ pracy. Właściwość Biblioteka dokumentów udostępnionych w celu ustalenia, czy dokument został przejrzany sprawdza, czy przepływ pracy. Jeśli dokument został przejrzany, przepływ pracy zakończy się.

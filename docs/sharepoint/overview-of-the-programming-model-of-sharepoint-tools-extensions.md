@@ -1,5 +1,5 @@
 ---
-title: Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi | Dokumentacja firmy Microsoft
+title: Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb496b077f1ff55fda53d3325765e8e58911096
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421291"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401784"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi
   Po utworzeniu rozszerzeń dla narzędzi SharePoint w programie Visual Studio, należy rozpocząć od implementacja interfejsów rozszerzeń, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków będzie również użyć innych typów dostarczonych przez narzędzia programu SharePoint do zaimplementowania funkcji w rozszerzeniu. W niektórych przypadkach można także użyć typów w innych modeli obiektów, dostarczone przez program Visual Studio i programu SharePoint. Konieczne jest zrozumienie przeznaczenia każdego z tych modeli obiektów oraz wiedzieć, jak za ich pomocą ze sobą tworzenia rozszerzeń dla narzędzi SharePoint.
@@ -55,7 +55,7 @@ ms.locfileid: "63421291"
 - *Modele obiektów serwera i klienta programu SharePoint*. Użyj tych modeli obiektów, do modyfikowania witryny programu SharePoint lub odbierać dane z witryny programu SharePoint z kontekstu rozszerzenia narzędzi programu SharePoint.
 
 ### <a name="sharepoint-tools-object-model"></a>Model obiektów programu SharePoint narzędzia
- Każdego rozszerzenia narzędzi programu SharePoint używa typów w modelu obiektów programu SharePoint narzędzia do definiowania zachowania podstawowych i funkcji rozszerzenia. W poniższych tabelach opisano przestrzenie nazw, które mają zostać uwzględnione w tym modelu obiektu assemby, który je zawiera.
+ Każdego rozszerzenia narzędzi programu SharePoint używa typów w modelu obiektów programu SharePoint narzędzia do definiowania zachowania podstawowych i funkcji rozszerzenia. W poniższych tabelach opisano przestrzenie nazw, które mają zostać uwzględnione w tym modelu obiektu zestawu, który je zawiera.
 
 #### <a name="microsoftvisualstudiosharepointdll"></a>Microsoft.VisualStudio.SharePoint.dll
 

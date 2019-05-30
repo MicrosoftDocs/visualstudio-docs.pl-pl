@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz listy dla SharePoint | Dokumentacja firmy Microsoft'
+title: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 141ce92fa083a0afacdae3a279d2697e0931e3be
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430698"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401271"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint
   Poniższe procedury przedstawiają sposób tworzenia kolumn niestandardowych witryny programu SharePoint — lub *pola*— a także typu zawartości, która korzysta z kolumny witryny. Pokazano również, jak utworzyć listę, która korzysta z nowego typu zawartości.
@@ -137,7 +137,7 @@ ms.locfileid: "63430698"
 
 4. W **szablony** okienku wybierz **listy** szablonu, Zmień nazwę na **pacjentów**, a następnie wybierz **Dodaj** przycisku.
 
-5. Pozostaw **dostosować tę listę na podstawie** jako **domyślne (pustego)**, a następnie wybierz **Zakończ** przycisku.
+5. Pozostaw **dostosować tę listę na podstawie** jako **domyślne (pustego)** , a następnie wybierz **Zakończ** przycisku.
 
 6. W Projektancie listy wybierz **typów zawartości** przycisk, aby wyświetlić **ustawienia typu zawartości** okno dialogowe.
 

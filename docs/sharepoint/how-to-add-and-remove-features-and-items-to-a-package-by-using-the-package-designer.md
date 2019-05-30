@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów | Dokumentacja firmy Microsoft'
+title: 'Projektant pakietu: Dodawanie i usuwanie funkcji oraz elementów do pakietu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbd44bbf3b337815c8c72cea66dd4d56fc645ade
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966981"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401613"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów
   Podczas tworzenia rozwiązania programu SharePoint, Visual Studio dodaje funkcje programu SharePoint domyślne do pakietu w rozwiązaniu. Przed wdrożeniem końcowego może Dodawanie i usuwanie elementów projektu programu SharePoint oraz funkcje, aby zmodyfikować pakiet programu SharePoint.

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dodawanie pozycji Menu skrótów do rozszerzenia elementu projektu programu SharePoint | Dokumentacja firmy Microsoft'
+title: Dodawanie pozycji menu skrótów do rozszerzenia elementu projektu SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 168e881191843d63f515d5066ec451848319d22e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8041f9cbf19d1e1324478b92d2655f1377102b81
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967158"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401641"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Instrukcje: Dodawanie pozycji menu skrótów do rozszerzenia elementu projektu SharePoint
   Element menu skrótów można dodać do istniejącego elementu projektu programu SharePoint przy użyciu rozszerzenia elementu projektu. Element menu jest wyświetlany, gdy użytkownik kliknie prawym przyciskiem myszy element projektu w **Eksploratora rozwiązań**.

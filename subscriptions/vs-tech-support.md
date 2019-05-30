@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączonej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811535"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402028"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Uaktywnij i użyć korzyści z pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -91,6 +91,9 @@ Gdy oddzwonienie, najpierw zostanie monit Zaloguj się. Korzystając z listy roz
    > [!div class="mx-imgBorder"]
    > ![Pomoc techniczna korzyści informacji o incydentach — Wybieranie planu](_img/vs-tech-support/vs-tech-support-choose-plan.png)
 
+   > [!NOTE]
+   > Jeśli nie widzisz dział pomocy technicznej Twojej planowania, wróć do poprzedniej strony i kliknij przycisk **dalej** ponownie.  Jeśli się nie powiedzie wyświetlić planu pomocy technicznej, skopiuj tekst z problemu wymagającego pomocy technicznej do Schowka, Odśwież stronę i Utwórz ponownie problemu wymagającego pomocy technicznej.
+
 6. Wykonaj pozostałe kroki (ważność, informacje kontaktowe, przejrzyj).   Po przesłaniu zdarzenia zostaną wyświetlone potwierdzenie, że zdarzenie zostało pomyślnie przesłane, i możesz przekazać pliki z przypadkiem. Ze specjalistą pomocy technicznej zostanie przypisany do zdarzenia i skontaktuje się z Tobą w celu rozwiązania problemu za pomocą skontaktuj się z wybraną metodą.
 
 #### <a name="submit-an-incident-by-phone"></a>Przesłania żądania przez telefon
@@ -110,9 +113,9 @@ Aby użyć swojej korzyści z pomocy technicznej subskrypcji programu Visual Stu
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
-| Visual Studio Professional (Standard) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>2</sup>                                        | zdarzenia 2                                                          |Tak         |
+| Visual Studio Professional (Standard) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>2</sup>                                        | zdarzenia 2                                                          |Yes         |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                             |  Yes         |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                               | Yes         |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                               | Tak         |
 | Visual Studio Dev Essentials | Nie dotyczy | Niedostępne |Nie dotyczy|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 

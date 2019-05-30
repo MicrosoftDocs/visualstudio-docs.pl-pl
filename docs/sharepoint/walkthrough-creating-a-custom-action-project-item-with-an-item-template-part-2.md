@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 2 | Dokumentacja firmy Microsoft'
+title: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430467"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401168"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 2
   Po zdefiniowaniu niestandardowy typ elementu projektu programu SharePoint i skojarzyć go z szablonem elementu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, używając szablonu można dodać nowe wystąpienie elementu projektu do projektu. Informacje zbierane, może służyć do zainicjowania elementu projektu.
@@ -175,7 +175,7 @@ ms.locfileid: "63430467"
 
 2. Na **podpisywanie** zaznacz **Podpisz zestaw** pole wyboru.
 
-3. W **wybierz plik klucza o silnej nazwie** wybierz  **\<nowy... >**.
+3. W **wybierz plik klucza o silnej nazwie** wybierz  **\<nowy... >** .
 
 4. W **Utwórz klucz silnej nazwy** okna dialogowego wprowadź nazwę, usuń zaznaczenie **Chroń mój plik klucza przy użyciu hasła** pole wyboru, a następnie wybierz **OK** przycisku.
 
@@ -303,7 +303,7 @@ ms.locfileid: "63430467"
 
 13. W **opis** wprowadź **otwiera witrynę sieci Web programu SharePoint Developer Center**.
 
-14. W **adresu URL** wprowadź **https://docs.microsoft.com/sharepoint/dev/**, a następnie wybierz **Zakończ** przycisku.
+14. W **adresu URL** wprowadź **https://docs.microsoft.com/sharepoint/dev/** , a następnie wybierz **Zakończ** przycisku.
 
      Program Visual Studio dodaje element o nazwie **CustomAction1** do projektu i otwiera *Elements.xml* plik w edytorze. Upewnij się, że *Elements.xml* zawiera wartości, które są określone w kreatorze.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie kontrolki użytkownika dla strony aplikacji SharePoint lub składnika Web Part | Dokumentacja firmy Microsoft'
+title: Tworzenie formantu użytkownika dla części strony lub sieci web aplikacji programu SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a88a59e9b87a193329433e5eb0625afa1428026
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446507"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401480"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Instrukcje: Tworzenie kontrolki użytkownika dla części strony lub sieci web aplikacji programu SharePoint
   Można tworzyć niestandardowe kontrolki użytkownika, które dostarczają niestandardowych funkcjonalności dla rozwiązania SharePoint oraz można używać tych funkcjonalności ponownie w obrębie projektu. Można dołączyć kontrolki użytkownika do części sieci lub strony aplikacji, dodać inne kontrolki ASP.NET oraz SharePoint oraz zdefiniować właściwości o metody dla kontrolki. Aby uzyskać więcej informacji dotyczących kontrolek użytkownika, zobacz [Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) i [kontrolki użytkownika oraz serwera w programie SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -37,7 +37,7 @@ ms.locfileid: "63446507"
 
 4. W **zainstalowane** okienku wybierz **Office/SharePoint** węzła.
 
-5. Na liście szablonów programu SharePoint, wybierz opcję **kontrolki użytkownika (tylko rozwiązanie farmy)**.
+5. Na liście szablonów programu SharePoint, wybierz opcję **kontrolki użytkownika (tylko rozwiązanie farmy)** .
 
     > [!NOTE]
     > Kontrolki użytkownika działają tylko w rozwiązaniach farmy.

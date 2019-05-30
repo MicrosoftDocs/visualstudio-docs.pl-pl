@@ -1,5 +1,5 @@
 ---
-title: Stosowanie wycinków kodu do izolowania poszczególnych części aplikacji testów jednostkowych
+title: Stosowanie wycinków kodu do izolowania części Twojej aplikacji do testowania
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961976"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401716"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych
 
@@ -228,9 +228,9 @@ class TestMyComponent
     public void TestVariableContosoPrice()
     {
         // Arrange:
-        int priceToReturn;
-        string companyCodeUsed;
-        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()
+        int priceToReturn = 345;
+        string companyCodeUsed = "";
+        var componentUnderTest = new StockAnalyzer(new StockAnalysis.Fakes.StubIStockFeed()
             {
                GetSharePriceString = (company) =>
                   {
@@ -240,8 +240,6 @@ class TestMyComponent
                      return priceToReturn;
                   };
             };
-        // Set the value that will be returned by the stub:
-        priceToReturn = 345;
 
         // Act:
         int actualResult = componentUnderTest.GetContosoPrice();
@@ -263,7 +261,7 @@ Class TestMyComponent
     <TestMethod()> _
     Public Sub TestVariableContosoPrice()
         ' Arrange:
-        Dim priceToReturn As Integer
+        Dim priceToReturn As Integer = 345
         Dim companyCodeUsed As String = ""
         Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()
         With stockFeed
@@ -278,8 +276,6 @@ Class TestMyComponent
         End With
         ' Create an object to test:
         Dim componentUnderTest As New StockAnalyzer(stockFeed)
-        ' Set the value that will be returned by the stub:
-        priceToReturn = 345
 
         ' Act:
         Dim actualResult As Integer = componentUnderTest.GetContosoPrice()
@@ -316,7 +312,7 @@ var stub = new StubIMyInterface ();
 stub.MyMethodString = (value) => 1;
 ```
 
-Jeśli nie podano wycinka dla funkcji, środowisko Fakes wygeneruje funkcję zwracającą wartość domyślną typu zwracanego. W przypadku liczb, wartością domyślną jest 0, a dla typów klasy jest `null` (C#) lub `Nothing` (Visual Basic).
+Jeśli nie podano wycinka dla funkcji, środowisko Fakes generuje funkcję zwracającą wartość domyślną typu zwracanego. W przypadku liczb, wartość domyślna jest równa 0, a dla typów klasy jest `null` (C#) lub `Nothing` (Visual Basic).
 
 ### <a name="properties"></a>Właściwości
 
@@ -340,7 +336,7 @@ stub.ValueGet = () => i;
 stub.ValueSet = (value) => i = value;
 ```
 
-Jeśli nie podano metody zastępczej ani dla metod ustawiających, ani pobierających właściwości, środowisko Fakes wygeneruje odcinek, który przechowuje wartości, tak aby właściwość zastępcza działała jak prosta zmienna.
+Jeśli podano metody klasy zastępczej dla ustawiających, ani pobierających właściwości, Fakes wygeneruje odcinek, który przechowuje wartości, tak aby właściwość zastępcza działała jak prosta zmienna.
 
 ### <a name="events"></a>Zdarzenia
 
@@ -408,7 +404,7 @@ W poprzednich przykładach wycinki zostały wygenerowane z interfejsów. Można 
     }
 ```
 
-W wycinku wygenerowanym z tej klasy można ustawić metody delegowane dla DoAbstract() i DoVirtual(), ale nie DoConcrete().
+W wycinku wygenerowanym z tej klasy, można ustawić metody delegowane dla `DoAbstract()` i `DoVirtual()`, ale nie `DoConcrete()`.
 
 ```csharp
 // unit test
@@ -437,13 +433,13 @@ Typy wycinków zostały tak zaprojektowane, aby zapewniać płynność debugowan
 
 ## <a name="stub-limitations"></a>Ograniczenia dotyczące wycinka
 
-1. Podpisy metod ze wskaźnikami nie są obsługiwane.
+- Podpisy metod ze wskaźnikami nie są obsługiwane.
 
-2. Zapieczętowane klasy lub metody statyczne nie mogą zostać przekształcone na wycinki, ponieważ typy wycinka opierają się na wysyłaniu wirtualnej metody. W takich przypadkach używać typów podkładek, zgodnie z opisem w [stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+- Zapieczętowane klasy lub metody statyczne nie mogą zostać przekształcone na wycinki, ponieważ typy wycinka opierają się na wysyłaniu wirtualnej metody. W takich przypadkach używać typów podkładek, zgodnie z opisem w [stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
 ## <a name="change-the-default-behavior-of-stubs"></a>Zmiana domyślnego zachowania wycinków
 
-Każdy wygenerowany typ wycinka posiada wystąpienie `IStubBehavior` interfejsu (za pośrednictwem `IStub.InstanceBehavior` właściwości). Zachowanie jest wywoływane za każdym razem, gdy klient wywołuje element członkowski, który nie ma dołączonego niestandardowego delegata. Jeśli nie ustawiono zachowania, zostanie użyty wystąpienie zwrócone przez `StubsBehaviors.Current` właściwości. Domyślnie właściwość ta zwraca zachowanie, które zgłasza `NotImplementedException` wyjątku.
+Każdy wygenerowany typ wycinka posiada wystąpienie `IStubBehavior` interfejsu (za pośrednictwem `IStub.InstanceBehavior` właściwości). Zachowanie jest wywoływane za każdym razem, gdy klient wywołuje element członkowski, który nie ma dołączonego niestandardowego delegata. Jeśli nie ustawiono zachowania, używa wystąpienie zwrócone przez `StubsBehaviors.Current` właściwości. Domyślnie właściwość ta zwraca zachowanie, które zgłasza `NotImplementedException` wyjątku.
 
 To zachowanie można zmienić w dowolnym momencie przez ustawienie `InstanceBehavior` właściwości na dowolnym wystąpieniu wycinka. Na przykład poniższa Wstawka kodu zmienia zachowanie, które nie działa lub zwraca wartość domyślną typu zwracanego: `default(T)`:
 

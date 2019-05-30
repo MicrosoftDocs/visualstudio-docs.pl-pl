@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840449"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402071"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Krok 2. Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core
 
@@ -111,6 +111,9 @@ public void OnGet()
 ```
 
 Powinna zostać wyświetlona godzina używanego serwera w przeglądarce po przejściu do aplikacji.
+
+> [!NOTE]
+> Dane wyjściowe mogą się różnić od obrazu, ponieważ format danych wyjściowych ToShortDateTimeString zależy od bieżącego ustawienia kultury. Zobacz <xref:System.DateTime.ToShortTimeString>.
 
 ![Projektu programu Visual Studio 2019 platformy ASP.NET Core w przeglądarce](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
