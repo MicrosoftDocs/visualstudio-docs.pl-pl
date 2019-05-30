@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - dwTYPE_KIND enumeration
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a33bdf1875426898a6db72831bee4d1d7ac1f9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12fe23d53939303be6b7e6a20ff12d2524d71593
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924494"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318129"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
 Określa, jak interpretować typ [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.
@@ -42,12 +45,15 @@ public enum enum_dwTYPE_KIND {
 };
 ```
 
-#### <a name="parameters"></a>Parametry
-TYPE_KIND_METADATA [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Unii powinno być interpretowane jako [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) struktury.
+## <a name="fields"></a>Pola
+`TYPE_KIND_METADATA`\
+[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Unii powinno być interpretowane jako [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) struktury.
 
-TYPE_KIND_PDB `TYPE_INFO` Unii powinno być interpretowane jako [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) struktury.
+`TYPE_KIND_PDB`\
+`TYPE_INFO` Unii powinno być interpretowane jako [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) struktury.
 
-TYPE_KIND_BUILT `TYPE_INFO` Unii powinno być interpretowane jako [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) struktury.
+`TYPE_KIND_BUILT`\
+`TYPE_INFO` Unii powinno być interpretowane jako [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) struktury.
 
 ## <a name="remarks"></a>Uwagi
 Wartości to wyliczenie są wyświetlane w `dwKind` pole [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struktury i służą do określenia sposobu interpretowania `type` Unii. `TYPE_INFO` Struktury jest zwracany przez wywołanie [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) metody.
@@ -59,7 +65,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)

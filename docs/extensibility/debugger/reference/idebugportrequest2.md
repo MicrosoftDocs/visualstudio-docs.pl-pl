@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortRequest2 interface
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2b78986b997358d7f15c9c8c73bb4bd0f73aaf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 83f70a9fe027f004ef3829827ba8af40f7fb72e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871483"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340310"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 Ten interfejs zawiera opis portu. Ten opis jest wykorzystywany Aby dodać port do dostawcy portu.
@@ -51,7 +51,7 @@ IDebugPortRequest2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
 - [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)

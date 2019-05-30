@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f3a33ff273b62c701eae66d8fda1ff7178c5c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e402979dc5b76b8693a4be7a80a3d5d98f889616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965044"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320672"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku
 Można zdefiniować typu zawartości i połączyć rozszerzenie nazwy pliku przy użyciu rozszerzenia Managed Extensibility Framework (MEF) edytora. W niektórych przypadkach rozszerzenie nazwy pliku jest już zdefiniowany przez usługę języka. Jednak aby używać go z MEF, nadal należy połączyć go z typem zawartości.

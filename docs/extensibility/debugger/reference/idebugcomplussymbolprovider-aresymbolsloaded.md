@@ -6,20 +6,20 @@ helpviewer_keywords:
 - AreSymbolsLoaded
 - IDebugComPlusSymbolProvider::AreSymbolsLoaded
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69afa16468865be4ae7753e46bd8e478d107b2f3
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 452cfb7758b110621ead9bc9e7e71f9bfab1e924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66206637"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338849"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Określa, jeśli dla określonego modułu podany identyfikator domeny aplikacji, czy załadowano symbole debugowania.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878272"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346526"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Określa protokół używany do komunikacji między serwerem debugowania i debugowanie pakietu (DE).
@@ -48,20 +51,27 @@ public enum CONNECTION_PROTOCOL {
 };
 ```
 
-#### <a name="parameters"></a>Parametry
-Połączenie nie CONNECTION_NONE stało się do serwera.
+## <a name="fields"></a>Pola
+`CONNECTION_NONE`\
+Połączenie nie zostało ustanowione do serwera.
 
-CONNECTION_UNKNOWN połączenia zostały wprowadzone, ale jest nieznanego typu.
+`CONNECTION_UNKNOWN`\
+Połączenie zostało wykonane, ale jest nieznanego typu.
 
-To połączenie CONNECTION_LOCAL serwera lokalnego.
+`CONNECTION_LOCAL`\
+To połączenie serwera lokalnego.
 
-CONNECTION_PIPE jest połączenie za pośrednictwem nazwanych potoków.
+`CONNECTION_PIPE`\
+Połączenie jest użycie nazwanego potoku.
 
-Połączenie CONNECTION_TCPIP używa protokołu TCP/IP.
+`CONNECTION_TCPIP`\
+Połączenie używa protokołu TCP/IP.
 
-Połączenie CONNECTION_HTTP korzysta z protokołu HTTP (za pośrednictwem serwera sieci Web).
+`CONNECTION_HTTP`\
+Połączenie korzysta z protokołu HTTP (za pośrednictwem serwera sieci Web).
 
-CONNECTION_OTHER została ustanowiona inny rodzaj połączenia (Ta wartość nie jest obecnie używany).
+`CONNECTION_OTHER`\
+Inny rodzaj połączenie zostało ustanowione (Ta wartość nie jest obecnie używany).
 
 ## <a name="remarks"></a>Uwagi
 Te wartości są zwracane z [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metody.
@@ -73,6 +83,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

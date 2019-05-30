@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877916"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346166"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Określa, dlaczego ten proces został uruchomiony dla debugowania.
@@ -45,16 +48,21 @@ public enum enum_DEBUG_REASON {
 };
 ```
 
-#### <a name="parameters"></a>Parametry
-Wystąpił błąd nieokreślonym DEBUG_REASON_ERROR A (są one używane jako domyślne warunku, gdy żaden z innych powodów, dla których Dopasuj).
+## <a name="fields"></a>Pola
+`DEBUG_REASON_ERROR`\
+Wystąpił błąd nieokreślonym (są one używane jako domyślne warunku, gdy żaden z innych powodów, dla których Dopasuj).
 
-DEBUG_REASON_USER_LAUNCHED proces został uruchomiony na żądanie użytkownika.
+`DEBUG_REASON_USER_LAUNCHED`\
+Proces został uruchomiony na żądanie użytkownika.
 
-DEBUG_REASON_USER_ATTACHED proces działa już został dołączony do przez użytkownika.
+`DEBUG_REASON_USER_ATTACHED`\
+Proces działa już został dołączony do przez użytkownika.
 
-DEBUG_REASON_AUTO_ATTACHED proces automatycznie został dołączony do podczas jej uruchamiania.
+`DEBUG_REASON_AUTO_ATTACHED`\
+Proces został dołączony do automatycznie, podczas jej uruchamiania.
 
-Proces został uruchomiony ze względu na DEBUG_REASON_CAUSALITY *Just-In-Time* zdarzenia debugowania (JIT).
+`DEBUG_REASON_CAUSALITY`\
+Proces został uruchomiony ze względu na *Just-In-Time* zdarzenia debugowania (JIT).
 
 ## <a name="remarks"></a>Uwagi
 Zwrócone w wyniku [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metody.
@@ -66,6 +74,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

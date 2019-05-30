@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression interface
 ms.assetid: be6486ed-b070-4898-95b1-58581bcb4447
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5d0c7b32c6764c1911160f2909628f4102a9b96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c56c0547d348c4fb3de387ac0ffce465b7bf5e90
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413554"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311788"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
@@ -54,7 +54,7 @@ IDebugParsedExpression : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

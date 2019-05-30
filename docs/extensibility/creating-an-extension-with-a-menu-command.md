@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891067"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345370"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu
 
@@ -32,7 +32,7 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
 
 1. Utwórz projekt VSIX, o nazwie **FirstMenuCommand**. Można znaleźć szablonu projektu VSIX w **nowy projekt** okna dialogowego, wyszukując pozycję "vsix".
 
-2. Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **FirstCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#** > **rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *FirstCommand.cs*.
+2. Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **FirstCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#**  > **rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *FirstCommand.cs*.
 
 3. Skompiluj projekt, a następnie rozpocząć debugowanie.
 
@@ -50,7 +50,7 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
 
 ::: moniker-end
 
-Teraz przejdź do **narzędzia** menu w eksperymentalnym wystąpieniu. Powinien zostać wyświetlony **wywołania FirstCommand** polecenia. W tym momencie polecenie wyświetla okno komunikatu, informujący, że **FirstCommandPackage wewnątrz FirstMenuCommand.FirstCommand.MenuItemCallback()**. Zobaczymy, jak faktycznie Uruchom Notatnik z tego polecenia, w następnej sekcji.
+Teraz przejdź do **narzędzia** menu w eksperymentalnym wystąpieniu. Powinien zostać wyświetlony **wywołania FirstCommand** polecenia. W tym momencie polecenie wyświetla okno komunikatu, informujący, że **FirstCommandPackage wewnątrz FirstMenuCommand.FirstCommand.MenuItemCallback()** . Zobaczymy, jak faktycznie Uruchom Notatnik z tego polecenia, w następnej sekcji.
 
 ## <a name="change-the-menu-command-handler"></a>Zmień program obsługi poleceń menu
 

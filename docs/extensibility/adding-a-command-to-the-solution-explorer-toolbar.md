@@ -7,17 +7,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cb5c0a8aac049b7d5ff0e79843724b87e4999e4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410165"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313542"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Dodaj polecenie do paska narzędzi Eksploratora rozwiązań
 W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań** paska narzędzi.
@@ -27,7 +27,7 @@ W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań
  Aby uzyskać więcej informacji na temat menu i polecenia paska narzędzi i *vsct* plików, zobacz [polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Użyj tabeli poleceń XML (*vsct*) plików zamiast Konfiguracja tabeli poleceń (*.ctc*) pliki do definiowania sposobu wyświetlania menu i poleceń w swojej pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Użyj tabeli poleceń XML (*vsct*) plików zamiast Konfiguracja tabeli poleceń ( *.ctc*) pliki do definiowania sposobu wyświetlania menu i poleceń w swojej pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

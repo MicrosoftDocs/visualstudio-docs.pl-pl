@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a53e7971ac54af439a02d765fb392157d4a5321
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd56391084788729c0f8439728f9afffd59da946
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911202"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311251"
 ---
 # <a name="icon-element"></a>Icon, element
 Atrybut guid tagu ikona jest identyfikatorem guid zdefiniowanych mapy bitowej. `id` Atrybut wybiera gniazda na pasku mapy bitowej. Ten element jest opcjonalny. Jeśli ten element nie jest uwzględniony wartość **guidOfficeIcon:msotcidNoIcon** będzie wynikać.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06b392dd10c364e746f592a4d0ffd9ac32ca7df9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a01b5982b4f747bd70c3a35bc0b7191bb54cd21b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311359"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 Żądania, że program zatrzymać wykonywanie następnej czasu jeden z jego próby uruchomienia wątków.
@@ -42,6 +45,6 @@ int CauseBreak();
 
  Ta metoda jest asynchroniczne, metoda zwraca natychmiast bez oczekiwania musi być zatrzymanie programu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

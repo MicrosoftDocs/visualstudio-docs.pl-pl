@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - CreateNewFolder element [Visual Studio project templates]
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 962a319477e63fdaa7b6f1982cd260ccb8d8bd7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51b7702f1b1e1c509f4f9d88d72f170d0ed765f2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927047"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341767"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Createnewfolder — element (szablony Visual Studio)
 Określa, czy należy sprawdzić, czy katalog docelowy, w którym ma zostać utworzony projekt nie istnieje. Jeśli katalog istnieje, można utworzyć katalogu świeże dla projektu. To ustawienie jest zazwyczaj zastępowany przez `NewProjectRequiresNewFolder(VsTemplate)` flagę rejestru (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), wszystkie popularne typy projektu umożliwia określenie, czy chcesz utworzyć nowy projekt w nowym katalogu.
