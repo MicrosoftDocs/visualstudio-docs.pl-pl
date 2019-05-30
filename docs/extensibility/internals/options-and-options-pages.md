@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db221c99b90f99f80c89f504281be4233ce3a046
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c336503b80e2af34ac58c7debde16895d7f2585
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424207"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314851"
 ---
 # <a name="options-and-options-pages"></a>Opcje i strony opcji
 Klikając **opcje** na **narzędzia** zostanie otwarte menu **opcje** okno dialogowe. Opcje w oknie dialogowym są zbiorczo określany jako opcje strony. Drzewie w okienku nawigacji zawiera opcje kategorie, a każda kategoria ma stron opcji. Po wybraniu strony, dostępne opcje są wyświetlane w okienku po prawej stronie. Te strony umożliwiają zmienić wartości opcji, które określają stan pakietu VSPackage.

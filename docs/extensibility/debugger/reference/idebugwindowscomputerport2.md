@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugWindowsComputerPort2 interface
 ms.assetid: 25f327b8-0303-4268-88d1-74df630436aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9126d7507f47852b7fc9bcd3777b112932892bb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2a60572c652080f2655ab7fe33954a661fbe07e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868181"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319742"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 Zezwala na wykonanie zapytania dotyczącego informacji o komputerze docelowym.

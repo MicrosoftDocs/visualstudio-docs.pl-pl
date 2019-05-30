@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7272de0eccf77aff3956a3371e206cd1cbb2141a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 43e4a119ae84f7b86b9b1a54f1f55dc2ffa78b15
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418326"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349258"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrowanie starszej wersji usługi językowej
 Aktualizowanie projektu i dodawanie pliku source.extension.vsixmanifest w projekcie, można migrować starszej wersji usługi językowej do nowszej wersji programu Visual Studio. Sama usługa języka będzie działać tak jak poprzednio, ponieważ w edytorze programu Visual Studio dostosowuje go.
@@ -57,7 +57,7 @@ Aktualizowanie projektu i dodawanie pliku source.extension.vsixmanifest w projek
 
     - Na **aplikacji** kartę, zmień **platformę docelową** do **4.6.1**.
 
-    - Na **debugowania** na karcie **uruchomienia programu zewnętrznego** wpisz  **\<ścieżka instalacji programu Visual Studio > \Common7\IDE\devenv.exe.**.
+    - Na **debugowania** na karcie **uruchomienia programu zewnętrznego** wpisz  **\<ścieżka instalacji programu Visual Studio > \Common7\IDE\devenv.exe.** .
 
          W **argumenty wiersza polecenia** wpisz /**rootsuffix Exp**.
 
@@ -103,7 +103,7 @@ Aktualizowanie projektu i dodawanie pliku source.extension.vsixmanifest w projek
 
     - Zapisz i zamknij plik.
 
-11. Skompiluj rozwiązanie. Tworzenie plików są wdrażane w **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.
+11. Skompiluj rozwiązanie. Tworzenie plików są wdrażane w **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .
 
 12. Rozpocznij debugowanie. Drugie wystąpienie programu Visual Studio jest otwarty.
 

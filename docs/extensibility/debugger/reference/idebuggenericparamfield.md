@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField interface
 ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab5cb19475ae92ab1e89bdce5c833e0f18a2cccb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db5f82944063abc3274840e820104a7737944047
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873451"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349200"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 Reprezentuje parametr typu ogólnego kodu zarządzanego.

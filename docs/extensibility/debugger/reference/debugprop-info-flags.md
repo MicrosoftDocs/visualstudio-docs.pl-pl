@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS enumeration
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 131e014e3714df708c5ef1526ecb911531c5a5c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ae512bec8f88be81a0c45ddf541c94d78b483284
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924573"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318372"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Określa, jakie informacje należy pobrać o obiekcie właściwości debugowania.
@@ -67,32 +70,45 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-DEBUGPROP_INFO_FULLNAME zainicjować bądź użyj `bstrFullName` pola.
+## <a name="fields"></a>Pola
+`DEBUGPROP_INFO_FULLNAME`\
+Inicjowanie bądź użyj `bstrFullName` pola.
 
-DEBUGPROP_INFO_NAME zainicjować bądź użyj `bstrName` pola.
+`DEBUGPROP_INFO_NAME`\
+Inicjowanie bądź użyj `bstrName` pola.
 
-DEBUGPROP_INFO_TYPE zainicjować bądź użyj `bstrType` pola.
+`DEBUGPROP_INFO_TYPE`\
+Inicjowanie bądź użyj `bstrType` pola.
 
-DEBUGPROP_INFO_VALUE zainicjować bądź użyj `bstrValue` pola.
+`DEBUGPROP_INFO_VALUE`\
+Inicjowanie bądź użyj `bstrValue` pola.
 
-DEBUGPROP_INFO_ATTRIB zainicjować bądź użyj `dwAttrib` pola.
+`DEBUGPROP_INFO_ATTRIB`\
+Inicjowanie bądź użyj `dwAttrib` pola.
 
-DEBUGPROP_INFO_PROP zainicjować bądź użyj `pProperty` pola, które zawiera [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfejsu.
+`DEBUGPROP_INFO_PROP`\
+Inicjowanie bądź użyj `pProperty` pola, które zawiera [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfejsu.
 
-DEBUGPROP_INFO_VALUE_AUTOEXPAND oznacza, że wartość pola może zawierać wartość rozwinięte automatycznie, jeśli są dostępne dla tego typu obiektu.
+`DEBUGPROP_INFO_VALUE_AUTOEXPAND`\
+Oznacza, że wartość pola może zawierać wartość rozwinięte automatycznie, jeśli są dostępne dla tego typu obiektu.
 
-DEBUGPROP_INFO_VALUE_NOFUNCEVAL Deprecated.
+`DEBUGPROP_INFO_VALUE_NOFUNCEVAL`\
+Przestarzałe.
 
-DEBUGPROP_INFO_VALUE_RAW nie zwracają żadnych wartości beautified lub elementów członkowskich (czyli nie Formatuj wartości).
+`DEBUGPROP_INFO_VALUE_RAW`\
+Nie zwracają żadnych wartości beautified lub elementów członkowskich (czyli nie Formatuj wartości).
 
-DEBUGPROP_INFO_VALUE_NO_TOSTRING nie zwracają żadnych specjalnych wartości syntetyzowany (na przykład nie należy wywoływać metody `ToString()` na obiekcie w celu utworzenia wartości).
+`DEBUGPROP_INFO_VALUE_NO_TOSTRING`\
+Nie zwraca żadnych specjalnych wartości syntetyzowany (na przykład nie należy wywoływać metody `ToString()` na obiekcie w celu utworzenia wartości).
 
-DEBUGPROP_INFO_NONE Określa, że ustawiono bez flag.
+`DEBUGPROP_INFO_NONE`\
+Określa, czy nie flagi są ustawione.
 
-DEBUGPROP_INFO_STANDARD zainicjować bądź użyj `dwAttrib`, `bstrName`, `bstrType`, i `bstrValue` pola.
+`DEBUGPROP_INFO_STANDARD`\
+Inicjowanie bądź użyj `dwAttrib`, `bstrName`, `bstrType`, i `bstrValue` pola.
 
-DEBUGPROP_INFO_All wskazuje maskę wszystkie flagi.
+`DEBUGPROP_INFO_All`\
+Określa maskę wszystkie flagi.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości są przekazywane do [getpropertyinfo —](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), i [enumproperties —](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) metod, aby określić pola, które mają zostać zainicjowane [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury.
@@ -108,7 +124,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)

@@ -3,18 +3,18 @@ title: 'Instrukcje: Migrowanie projektów rozszerzalności do programu Visual St
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863658"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319314"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017
 
@@ -31,7 +31,7 @@ Upewnij się, że ta instalacja obejmuje następujące obciążenia:
 
 Wszystkie projekty VSIX będzie wymagają jednokierunkowego uaktualnienia wersji głównej programu Visual Studio 2017.
 
-Plik projektu (na przykład **.csproj*) zostaną zaktualizowane:
+Plik projektu (na przykład * *.csproj*) zostaną zaktualizowane:
 
 * MinimumVisualStudioVersion — są teraz ustawione na 15.0
 * OldToolsVersion (jeśli istnieje wcześniej)-równa 14.0
@@ -47,7 +47,7 @@ Aby zaktualizować odwołania NuGet Microsoft.VSSDK.BuildTools:
 
 * Kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Zarządzaj pakietami NuGet dla rozwiązania**.
 * Przejdź do **aktualizacje** kartę.
-* Wybierz **Microsoft.VSSDK.BuildTools (Najnowsza wersja)**.
+* Wybierz **Microsoft.VSSDK.BuildTools (Najnowsza wersja)** .
 * Naciśnij klawisz **aktualizacji**.
 
 ![Narzędzia VSSDK do kompilacji](media/vssdk-build-tools.png)
@@ -120,7 +120,7 @@ Może wyglądać: *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 
 * Skompiluj projekt VSIX.
 * Rozpakuj wygenerowanego pliku VSIX.
-   * Domyślnie plik VSIX znajduje się wewnątrz *bin/Debug* lub *bin/Release* jako *.vsix [YourCustomExtension]*.
+   * Domyślnie plik VSIX znajduje się wewnątrz *bin/Debug* lub *bin/Release* jako *.vsix [YourCustomExtension]* .
    * Zmień nazwę *.vsix* do *zip* łatwe wyświetlanie zawartości.
 * Sprawdź, czy istnienie trzy pliki:
    * *Extension.vsixmanifest*

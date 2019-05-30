@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964485"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318505"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: Użyj klawisza skrótu z rozszerzeniem edytora
 Klawisze skrótów można odpowiedzieć w rozszerzeniu edytora. Następujące Instruktaż pokazuje, jak dodać zakończeń widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora zakończeń okienka ekranu, i umożliwia dodawanie zakończeń przy użyciu + znak.
@@ -108,7 +108,7 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
     }
     ```
 
-7. Implementowanie `Exec()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus (**+**) wpisany znak.
+7. Implementowanie `Exec()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus ( **+** ) wpisany znak.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Comma
    }
    ```
 
-6. Implementowanie `ExecuteCommand()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus (**+**) wpisany znak.
+6. Implementowanie `ExecuteCommand()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus ( **+** ) wpisany znak.
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)

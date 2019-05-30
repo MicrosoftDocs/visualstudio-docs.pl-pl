@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2 interface
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3dea6edb6045e21931651ff5c20a01a5f000ff62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 859522ebdbe231146c73b25c5e4c92fba9809727
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916160"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321939"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 Włącza debugowanie aparatów odczytać ustawienia metryki zdalnie.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: edc91cf8599a8591b70d14c49611ff64d5e957e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878054"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318226"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 W tym artykule opisano jednej instrukcji dezasemblacji dla zintegrowanego środowiska programistycznego (IDE) do wyświetlenia.
@@ -61,33 +64,45 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-`dwFields` [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) stałą, która określa pola, które są wypełnione.
+`dwFields`\
+[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) stałą, która określa pola, które są wypełnione.
 
-`bstrAddress` Adres przesunięcia od niektórych punkt początkowy (zazwyczaj początku funkcji skojarzonej).
+`bstrAddress`\
+Adres przesunięcia od niektórych punkt początkowy (zazwyczaj początku funkcji skojarzonej).
 
-`bstrCodeBytes` Bajty kodu w tej instrukcji.
+`bstrCodeBytes`\
+Bajty kodu w tej instrukcji.
 
-`bstrOpcode` Kod operacji w tej instrukcji.
+`bstrOpcode`\
+Kod operacji w tej instrukcji.
 
-`bstrOperands` Argumenty operacji dla tej instrukcji.
+`bstrOperands`\
+Argumenty operacji dla tej instrukcji.
 
-`bstrSymbol` Nazwa symbolu ewentualnej skojarzonych z tym adresem (symboli publicznych, etykiety i tak dalej).
+`bstrSymbol`\
+Nazwa symbolu ewentualnej skojarzonych z tym adresem (symboli publicznych, etykiety i tak dalej).
 
-`uCodeLocationId` Identyfikator lokalizacji kodu dla tego wiersza dezasemblowany. Jeśli adres kontekst kodu jednego wiersza jest większa niż adres kontekst kodu innego, identyfikator lokalizacji zdezasemblowany kod pierwszego również będą większe niż identyfikator lokalizacji kodu drugiego.
+`uCodeLocationId`\
+Identyfikator lokalizacji kodu dla tego wiersza dezasemblowany. Jeśli adres kontekst kodu jednego wiersza jest większa niż adres kontekst kodu innego, identyfikator lokalizacji zdezasemblowany kod pierwszego również będą większe niż identyfikator lokalizacji kodu drugiego.
 
-`posBeg` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) odnosi się do pozycji w dokumencie, gdzie rozpoczyna się danych dezasemblacji.
+`posBeg`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) odnosi się do pozycji w dokumencie, gdzie rozpoczyna się danych dezasemblacji.
 
-`posEnd` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) odnosi się do pozycji w dokumencie, gdzie kończy się danych dezasemblacji.
+`posEnd`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) odnosi się do pozycji w dokumencie, gdzie kończy się danych dezasemblacji.
 
-`bstrDocumentUrl` Dokumenty tekstowe, które mogą być reprezentowane jako nazwy pliku, aby uzyskać `bstrDocumentUrl` wypełniane nazwą pliku, gdzie można znaleźć źródła, przy użyciu formatu `file://file name`.
+`bstrDocumentUrl`\
+Dokumenty tekstowe, które mogą być reprezentowane jako nazwy pliku, aby uzyskać `bstrDocumentUrl` wypełniane nazwą pliku, gdzie można znaleźć źródła, przy użyciu formatu `file://file name`.
 
 Dla dokumentów tekstowych, których nie można przedstawić jako nazwy pliku `bstrDocumentUrl` to unikatowy identyfikator dla dokumentu, a aparat debugowania musi implementować [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) metody.
 
 To pole może również zawierać dodatkowe informacje na temat sum kontrolnych. Aby uzyskać szczegółowe informacje, zobacz uwagi.
 
-`dwByteOffset` Liczba bajtów, jaką instrukcja jest od początku wiersza kodu.
+`dwByteOffset`\
+Liczba bajtów, jaką instrukcja jest od początku wiersza kodu.
 
-`dwFlags` [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) Stała określająca flag, które są aktywne.
+`dwFlags`\
+[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) Stała określająca flag, które są aktywne.
 
 ## <a name="remarks"></a>Uwagi
 Każdy `DisassemblyData` struktury w tym artykule opisano jednej instrukcji dezasemblacji. Tablica te struktury jest zwracana z [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metody.
@@ -211,7 +226,7 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)

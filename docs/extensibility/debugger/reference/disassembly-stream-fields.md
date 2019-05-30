@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3fdc4a738a28f64aa87955f339409d1e64ed3bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877981"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318261"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 Określa, jakie informacje należy pobrać o polu dezasemblacji.
@@ -61,32 +64,45 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-DSF_ADDRESS zainicjować bądź użyj `bstrAddress` pola.
+## <a name="fields"></a>Pola
+`DSF_ADDRESS`\
+Inicjowanie bądź użyj `bstrAddress` pola.
 
-DSF_ADDRESSOFFSET zainicjować bądź użyj `bstrAddressOffset` pola.
+`DSF_ADDRESSOFFSET`\
+Inicjowanie bądź użyj `bstrAddressOffset` pola.
 
-DSF_CODEBYTES zainicjować bądź użyj `bstrCodeBytes` pola.
+`DSF_CODEBYTES`\
+Inicjowanie bądź użyj `bstrCodeBytes` pola.
 
-DSF_OPCODE zainicjować bądź użyj `bstrOpCode` pola.
+`DSF_OPCODE`\
+Inicjowanie bądź użyj `bstrOpCode` pola.
 
-DSF_OPERANDS zainicjować bądź użyj `bstrOperands` pola.
+`DSF_OPERANDS`\
+Inicjowanie bądź użyj `bstrOperands` pola.
 
-DSF_SYMBOL zainicjować bądź użyj `bstrSymbol` pola.
+`DSF_SYMBOL`\
+Inicjowanie bądź użyj `bstrSymbol` pola.
 
-DSF_CODELOCATIONID zainicjować bądź użyj `uCodeLocationId` pola.
+`DSF_CODELOCATIONID`\
+Inicjowanie bądź użyj `uCodeLocationId` pola.
 
-DSF_POSITION zainicjować bądź użyj `posBeg` i `posEnd` pola.
+`DSF_POSITION`\
+Inicjowanie bądź użyj `posBeg` i `posEnd` pola.
 
-DSF_DOCUMENTURL zainicjować bądź użyj `bstrDocumentUrl` pola.
+`DSF_DOCUMENTURL`\
+Inicjowanie bądź użyj `bstrDocumentUrl` pola.
 
-DSF_BYTEOFFSET zainicjować bądź użyj `dwByteOffset` pola.
+`DSF_BYTEOFFSET`\
+Inicjowanie bądź użyj `dwByteOffset` pola.
 
-DSF_FLAGS zainicjować bądź użyj `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) pola.
+`DSF_FLAGS`\
+Inicjowanie bądź użyj `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) pola.
 
-Symbol DSF_OPERANDS_SYMBOLS obejmują nazwy w `bstrOperands` pola.
+`DSF_OPERANDS_SYMBOLS`\
+Dołącz nazwy symbolu w `bstrOperands` pola.
 
-DSF_ALL określa wszystkie pola dla strumienia dezasemblacji.
+`DSF_ALL`\
+Określa wszystkie pola dla strumienia dezasemblacji.
 
 ## <a name="remarks"></a>Uwagi
 Przekazany jako parametr do [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metodę, aby wskazać, które pola [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury, które mają zostać zainicjowane.
@@ -102,7 +118,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

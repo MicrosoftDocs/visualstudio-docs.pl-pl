@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c5f1883a5d8c09713d520aa934f91b32cbaf388
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cb5fcac8f9cc509718648fa9bd6db0f18d01b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978986"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349229"
 ---
 # <a name="attribute-glossary"></a>Słownik atrybutów
 
@@ -152,7 +152,7 @@ Ten atrybut można ustawić na poziomie zestawu, aby zastąpić wartości ustawi
 ```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
-[assembly: PexAssemblySettings(TestFramework = "Naked")]
+[assembly: PexAssemblySettings(TestFramework = "MSTestv2")]
 ```
 
 <a name="pexassemblyundertest"></a>

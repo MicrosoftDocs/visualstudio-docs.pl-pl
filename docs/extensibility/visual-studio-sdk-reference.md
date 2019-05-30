@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62f5547da6e2181590b231175a409c505f3da7a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 692297a22017ad3bb934bc80cc05c9b90f62ecbc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824380"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322183"
 ---
 # <a name="visual-studio-sdk-reference"></a>Odwołanie w Visual Studio SDK
 Ta sekcja zawiera informacje o przestrzeni nazw programu Visual Studio, pokrewne obszary nazw i innych obszarach zainteresowań dla deweloperów, którzy korzystają z zestawu SDK programu Visual Studio.

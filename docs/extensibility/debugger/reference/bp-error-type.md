@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2964c833abfa25b57678680f8b821f992cb31de8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3dc51691d4d424ee4d1c1a450f1e4e32b78e0e6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889110"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319294"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Określa typ błąd punktu przerwania.
@@ -57,28 +60,39 @@ public enum enum_BP_ERROR_TYPE {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-BPET_NONE określa nie błąd punktu przerwania.
+## <a name="fields"></a>Pola
+`BPET_NONE`\
+Określa nie błąd punktu przerwania.
 
-BPET_TYPE_WARNING określa błąd stylu ostrzeżenie punktu przerwania.
+`BPET_TYPE_WARNING`\
+Określa błąd stylu ostrzeżenie punktu przerwania.
 
-BPET_TYPE_ERROR określa błąd punktu przerwania stylu błędu.
+`BPET_TYPE_ERROR`\
+Określa błąd punktu przerwania stylu błędu.
 
-BPET_SEV_HIGH określa błąd punktu przerwania o wysokiej ważności.
+`BPET_SEV_HIGH`\
+Określa błąd punktu przerwania o wysokiej ważności.
 
-BPET_SEV_GENERAL określa o średniej ważności, punkt przerwania.
+`BPET_SEV_GENERAL`\
+Określa o średniej ważności, punkt przerwania.
 
-BPET_SEV_LOW określa o niskiej ważności, punkt przerwania.
+`BPET_SEV_LOW`\
+Określa o niskiej ważności, punkt przerwania.
 
-BPET_TYPE_MASK określa błąd punktu przerwania stylu maski.
+`BPET_TYPE_MASK`\
+Określa błąd punktu przerwania stylu maski.
 
-BPET_SEV_MASK określa błąd punktu przerwania ważność maska stylu.
+`BPET_SEV_MASK`\
+Określa błąd punktu przerwania ważność maska stylu.
 
-BPET_GENERAL_WARNING określa błąd punktu przerwania ogólne ostrzeżenie stylu.
+`BPET_GENERAL_WARNING`\
+Określa błąd punktu przerwania ogólne ostrzeżenie stylu.
 
-BPET_GENERAL_ERROR określa błąd punktu przerwania stylu w przypadku błędu ogólnego.
+`BPET_GENERAL_ERROR`\
+Określa błąd punktu przerwania stylu w przypadku błędu ogólnego.
 
-BPET_ALL Określa typy błąd punktu przerwania.
+`BPET_ALL`\
+Określa wszystkie typy błąd punktu przerwania.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości mogą być łączone przy użyciu bitowego operatora `OR` i jest używana do `dwType` członkiem [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury. Przekazany jako parametr do [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) metody.
@@ -92,7 +106,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

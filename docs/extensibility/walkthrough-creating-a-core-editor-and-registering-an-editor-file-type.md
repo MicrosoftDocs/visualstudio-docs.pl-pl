@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80d4081a567c67b73200f4f1d0e1d6bee32871e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411037"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312781"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Przewodnik: Tworzenie edytorze podstawowych i rejestrowania typu pliku w edytorze
 W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który rozpoczyna się [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowy edytor, gdy plik za pomocą *.myext* rozszerzenie nazwy pliku jest ładowany.
@@ -28,7 +28,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
 
 1. W obszarze **rozszerzalności programu Visual Basic**. Domyślny język projektu jest języka Visual Basic.
 
-2. W obszarze **rozszerzalność języka C#**. Domyślny język projektu jest C#.
+2. W obszarze **rozszerzalność języka C#** . Domyślny język projektu jest C#.
 
 3. W obszarze **innych typów projektów rozszerzalności**. Domyślny język projektu jest w języku C++.
 

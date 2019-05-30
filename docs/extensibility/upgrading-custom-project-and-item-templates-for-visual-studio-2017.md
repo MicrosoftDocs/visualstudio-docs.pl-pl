@@ -4,18 +4,18 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 39dbe74c8f59171461cca04fc9015782e21fe9da
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261801"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316337"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017
 
@@ -120,7 +120,7 @@ Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w we
 
 ```
 
- Informacje dostarczone przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elementu pozostają bez zmian. **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu.
+ Informacje dostarczone przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elementu pozostają bez zmian.  **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu.
 
  W tym miejscu jest to domyślny plik .vstemplate elementu utworzone przez program Visual Studio 2015:
 
@@ -172,7 +172,7 @@ Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w we
 </VSTemplateManifest>
 ```
 
- Informacje dostarczone przez  **\<TemplateData >** elementu pozostają bez zmian. **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu
+ Informacje dostarczone przez  **\<TemplateData >** elementu pozostają bez zmian.  **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu
 
  Aby uzyskać więcej informacji na temat różnych elementów pliku vstman zobacz [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
