@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, VisibilityConstraints
 - VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5dfbeb3c45e05c93554aae9b17a42c265408bc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee64b4b8ccebe6e63b5c558df68e0a5625b37884
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839039"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310664"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints, element
 VisibilityConstraints, element określa statyczne widoczność grupy poleceń i paski narzędzi. Widoczność najpierw jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) bez załadowania pakietu VSPackage.

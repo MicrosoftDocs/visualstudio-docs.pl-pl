@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::DestroyObjectID
 ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3375ce22a9b66077d635acd9a5a98f2640662467
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c117cab17340f50a1ed580d081c3291308ec0d9d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457678"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308883"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 Niszczy Unikatowy identyfikator skojarzony z tą właściwością wskazujący, że obiekt wywołujący nie jest już dba do identyfikowania tej właściwości, które jednoznacznie ze wszystkich innych właściwości.

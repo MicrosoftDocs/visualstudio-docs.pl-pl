@@ -3,17 +3,17 @@ title: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++ | Dokumentacj
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74133386d2dbd6d6b3ccb099a0b9231bc9deb073
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a60194c6512b67e1e3e90389b0221b6cdb8a5226
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796504"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312687"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++
 W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne biblioteki zestawu SDK pakietu SDK jako Visual Studio rozszerzenia (VSIX), a następnie użyć go do tworzenia aplikacji. Instruktażu jest podzielony na następujące kroki:
@@ -31,7 +31,7 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
 
 1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-2. Na liście szablonów rozwiń **Visual C++** > **Windows Universal**, a następnie wybierz pozycję **biblioteki DLL (Windows Universal apps)** szablonu. W **nazwa** określ `NativeMath`, a następnie wybierz **OK** przycisku.
+2. Na liście szablonów rozwiń **Visual C++**  > **Windows Universal**, a następnie wybierz pozycję **biblioteki DLL (Windows Universal apps)** szablonu. W **nazwa** określ `NativeMath`, a następnie wybierz **OK** przycisku.
 
 3. Aktualizacja *NativeMath.h* aby dopasować następujący kod.
 
@@ -41,9 +41,9 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
 
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
 
-5. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **rozwiązania "NativeMath"**, a następnie wybierz **Dodaj** > **nowy projekt**.
+5. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **rozwiązania "NativeMath"** , a następnie wybierz **Dodaj** > **nowy projekt**.
 
-6. Na liście szablonów rozwiń **Visual C++**, a następnie wybierz pozycję **składnika środowiska wykonawczego Windows** szablonu. W **nazwa** określ `NativeMathWRT`, a następnie wybierz **OK** przycisku.
+6. Na liście szablonów rozwiń **Visual C++** , a następnie wybierz pozycję **składnika środowiska wykonawczego Windows** szablonu. W **nazwa** określ `NativeMathWRT`, a następnie wybierz **OK** przycisku.
 
 7. Aktualizacja *Class1.h* do dopasowania ten kod:
 
@@ -57,9 +57,9 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
 
 ## <a name="createVSIX"></a> Aby utworzyć projekt rozszerzenia NativeMathVSIX
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **rozwiązania "NativeMath"**, a następnie wybierz **Dodaj** > **nowy projekt**.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **rozwiązania "NativeMath"** , a następnie wybierz **Dodaj** > **nowy projekt**.
 
-2. Na liście szablonów rozwiń **Visual C#** > **rozszerzalności**, a następnie wybierz pozycję **projekt VSIX**. W **nazwa** określ **NativeMathVSIX**, a następnie wybierz **OK** przycisku.
+2. Na liście szablonów rozwiń **Visual C#**  > **rozszerzalności**, a następnie wybierz pozycję **projekt VSIX**. W **nazwa** określ **NativeMathVSIX**, a następnie wybierz **OK** przycisku.
 
 3. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **source.extension.vsixmanifest**, a następnie wybierz **Wyświetl kod**.
 
@@ -69,7 +69,7 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
 
 5. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **NativeMathVSIX** projektu, a następnie wybierz **Dodaj** > **nowy element**.
 
-6. Na liście **elementy Visual C#**, rozwiń węzeł **danych**, a następnie wybierz pozycję **pliku XML**. W **nazwa** określ `SDKManifest.xml`, a następnie wybierz **OK** przycisku.
+6. Na liście **elementy Visual C#** , rozwiń węzeł **danych**, a następnie wybierz pozycję **pliku XML**. W **nazwa** określ `SDKManifest.xml`, a następnie wybierz **OK** przycisku.
 
 7. Zastąp zawartość pliku za pomocą tego XML:
 
@@ -92,7 +92,7 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
                 \Neutral
     ```
 
-9. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **rozwiązania "NativeMath"**, a następnie wybierz **Otwórz Folder w Eksploratorze plików**.
+9. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **rozwiązania "NativeMath"** , a następnie wybierz **Otwórz Folder w Eksploratorze plików**.
 
 10. W **Eksploratora plików**, kopia *$SolutionRoot$\NativeMath\NativeMath.h*, a następnie w polu **Eksploratora rozwiązań**w obszarze **NativeMathVSIX**projektu, wklej ją w *$SolutionRoot$ \NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include\\*  folderu.
 
@@ -111,7 +111,7 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
 
 12. Na pasku menu wybierz **widoku** > **Windows inne** > **okno właściwości** (klawiatury: Wybierz **F4** klucza).
 
-13. W **Eksploratora rozwiązań**, wybierz opcję **NativeMathWRT.winmd** pliku. W **właściwości** oknie zmiany **Build Action** właściwości **zawartości**, a następnie zmień **Include w VSIX** właściwości  **Wartość true,**.
+13. W **Eksploratora rozwiązań**, wybierz opcję **NativeMathWRT.winmd** pliku. W **właściwości** oknie zmiany **Build Action** właściwości **zawartości**, a następnie zmień **Include w VSIX** właściwości  **Wartość true,** .
 
      Powtórz ten proces dla **NativeMath.h** pliku.
 
@@ -141,7 +141,7 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
 
 1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-2. Na liście szablonów rozwiń **Visual C++** > **Windows Universal** , a następnie wybierz **pusta aplikacja**. W **nazwa** określ **NativeMathSDKSample**, a następnie wybierz **OK** przycisku.
+2. Na liście szablonów rozwiń **Visual C++**  > **Windows Universal** , a następnie wybierz **pusta aplikacja**. W **nazwa** określ **NativeMathSDKSample**, a następnie wybierz **OK** przycisku.
 
 3. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **NativeMathSDKSample** projektu, a następnie wybierz **Dodaj** > **odwołania**.
 

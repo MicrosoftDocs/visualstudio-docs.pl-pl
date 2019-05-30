@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84bdc9b7f0ff6d342abe15f4fb5679c642f54fb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 494f8d3ab204a599e8d3708d07a56c87658b97d4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434756"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311913"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>PROJECTTYPE — element (szablony Visual Studio)
 Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej grupy w **nowy projekt** lub **Dodaj nowy element** okno dialogowe.

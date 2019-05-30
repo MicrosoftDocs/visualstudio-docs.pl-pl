@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f117209c8e1d57c64ab53df608fe55ae27f0cff0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965196"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312411"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Przewodnik: Wyświetlanie uzupełniania instrukcji
 Uzupełnianie instrukcji opartych na języku można zaimplementować poprzez określenie identyfikatorów, dla których chcesz udostępnić uzupełniania i następnie wyzwalania sesja kończenia. Można zdefiniować uzupełnianie instrukcji w kontekście usługi językowej, zdefiniować własne rozszerzenia nazwy pliku i typu zawartości, a następnie Wyświetl uzupełnianie po prostu tego typu. Lub możesz wyzwolić zakończenia dla istniejącego typu zawartości — na przykład "plaintext". W tym przewodniku pokazano, jak wyzwolić uzupełniania instrukcji dla typu zawartości "w postaci zwykłego tekstu", który jest typem zawartości pliki tekstowe. Typ zawartości "text" jest element nadrzędny elementu wszystkich innych typów zawartości, w tym kodu i pliki XML.

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text view
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a52ba7fa7e57e63f13cfe502a46d54071ee82591
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892166"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313663"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Dostęp do widoku tekstu przy użyciu starszej wersji interfejsu API
 Widok tekstu jest prezentacji tekst, który znajduje się w buforze tekstu. Można uzyskać dostęp do widoku tekstu przy użyciu starszej wersji interfejsu API, jak pokazano w poniższej sekcji.

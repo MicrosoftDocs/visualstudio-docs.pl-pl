@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language services
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01784cd21bbc0a29a6216525e626a8fa992e0ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a27fc9ec55b301dc3355e03e2e86e968752fbbd0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856587"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309534"
 ---
 # <a name="language-services-and-the-core-editor"></a>Usługi języka oraz podstawowy edytor
 Edytory w programie Visual Studio są często skojarzone z usługą language. Między innymi usługi językowej zapewnia kolorowanie składni, uzupełniania instrukcji, funkcja IntelliSense i formatowania tekstu.
@@ -26,7 +26,7 @@ Edytory w programie Visual Studio są często skojarzone z usługą language. Mi
  Aby uzyskać więcej informacji, zobacz [ustalić, które edytora otwiera plik w projekcie](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).
 
 ## <a name="language-services-and-the-core-editor"></a>Usługi języka oraz podstawowy edytor
- Przez zaimplementowanie usługi językowej, można kontrolować sposób wyświetlania danych w widoku dokumentu. Usługa języka zawiera informacje i zachowanie, które są specyficzne dla danego języka, takich jak Visual C++. Podczas utworzyć buforu tekstu i określić rozszerzenie nazwy pliku dla dokumentu jest otwierana, buforu tekstowego określa skojarzony z tym rozszerzeniem nazwy pliku z klucza rejestru, usługa językowa **HKEY_LOCAL_MACHINE\SOFTWARE\ Microsoft\Editors\\\Extensions {identyfikator GUID YourLanguageService}**. Standardowa pakietu VSPackage, następnie ładowania procedury ładowania usługi pakietu VSPackage i tworzone jest wystąpienie usługi języka.
+ Przez zaimplementowanie usługi językowej, można kontrolować sposób wyświetlania danych w widoku dokumentu. Usługa języka zawiera informacje i zachowanie, które są specyficzne dla danego języka, takich jak Visual C++. Podczas utworzyć buforu tekstu i określić rozszerzenie nazwy pliku dla dokumentu jest otwierana, buforu tekstowego określa skojarzony z tym rozszerzeniem nazwy pliku z klucza rejestru, usługa językowa **HKEY_LOCAL_MACHINE\SOFTWARE\ Microsoft\Editors\\\Extensions {identyfikator GUID YourLanguageService}** . Standardowa pakietu VSPackage, następnie ładowania procedury ładowania usługi pakietu VSPackage i tworzone jest wystąpienie usługi języka.
 
  Usługa podstawowy język jest wyświetlany na poniższej ilustracji.
 

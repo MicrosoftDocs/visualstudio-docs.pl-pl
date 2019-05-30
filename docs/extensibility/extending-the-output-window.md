@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd02ce74f2fee8255d92c47149a46f1003b02011
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912398"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311025"
 ---
 # <a name="extend-the-output-window"></a>Rozszerzanie okna danych wyjściowych
 **Dane wyjściowe** okno to zbiór okienek tekstu odczytu/zapisu. Program Visual Studio zawiera te okienka wbudowane: **Tworzenie**, w projektach, które komunikują się komunikaty dotyczące kompilacji i **ogólne**, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komunikuje się komunikaty dotyczące środowiska IDE. Projekty odwołać się do **kompilacji** automatycznie za pomocą okienka <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metody interfejsu i programu Visual Studio zapewnia bezpośredni dostęp do **ogólne** okienko za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Usługa. Oprócz wbudowanych okienek można tworzyć i zarządzać własnych niestandardowych okienek.

@@ -3,20 +3,20 @@ title: 'Przewodnik: Tworzenie za pomocą zestawu SDK C# lub Visual Basic | Dokum
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 6bb9ae53dfb2e849c35c05fe5187cddcf301622c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226107"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312644"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Przewodnik: Tworzenie za pomocą zestawu SDK C# lub Visual Basic
 W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matematyczne przy użyciu języka Visual C# i następnie pakietu SDK jako programu Visual Studio rozszerzenia (VSIX). Wykonasz następujące procedury:
@@ -140,7 +140,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
 
 23. Na pasku menu wybierz **widoku** > **właściwości** (klawiatury: Wybierz **F4** klucza).
 
-24. W **właściwości** oknie zmiany **Build Action** właściwości **zawartości**, a następnie zmień **Include w VSIX** właściwości  **Wartość true,**.
+24. W **właściwości** oknie zmiany **Build Action** właściwości **zawartości**, a następnie zmień **Include w VSIX** właściwości  **Wartość true,** .
 
 25. W **Eksploratora rozwiązań**, powtórz ten proces dla **SimpleMath.pri**.
 

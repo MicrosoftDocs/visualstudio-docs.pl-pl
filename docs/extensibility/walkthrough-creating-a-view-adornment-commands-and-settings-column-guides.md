@@ -3,17 +3,17 @@ title: Tworzenie widoku zakończeń, poleceń i ustawień | Dokumentacja firmy M
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8e69801797ed40c206f828499efb234a97791cb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796452"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312664"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Utwórz widok zakończeń, poleceń i ustawień (prowadnice kolumn)
 Możesz rozszerzyć o edytorze tekstu/kodu programu Visual Studio z poleceniami i efekty widoku. W tym artykule pokazano, jak rozpocząć pracę z funkcją popularne rozszerzenie prowadnice kolumn. Prowadnice kolumn są wizualnie światła linii w widoku edytora tekstów w celu zarządzania swój kod, aby szerokości kolumn określonych. W szczególności sformatowany kod może być ważne dla przykładów dokumentów, wpisów w blogu lub raporty o błędach.

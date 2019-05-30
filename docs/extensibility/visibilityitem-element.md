@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c999543306508bdba4a1b600e509ffadbe2ce4c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c817b9a004872800b02f6a7c6d0f64fd324304b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945209"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310732"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem, element
 `VisibilityItem` Element określa statyczne widoczności poleceń i paski narzędzi. Każdy wpis identyfikuje polecenia lub menu, a także polecenia skojarzonego kontekstu interfejsu użytkownika. Program Visual Studio wykrywa polecenia, menu i paski narzędzi i ich widoczność bez ładowanie pakietów VSPackage, który definiuje je. IDE używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metodę pozwala ustalić, czy kontekst interfejsu użytkownika poleceń jest aktywny.

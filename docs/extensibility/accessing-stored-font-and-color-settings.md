@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], persistence
 - colors, accessing stored settings
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c270c67d21c023310df5b25c015afa754787a33f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcc0d8ad5b195b15652e8af3a2f1400827f8c628
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843881"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313692"
 ---
 # <a name="access-stored-font-and-color-settings"></a>Dostęp przechowywane ustawienia czcionek i kolorów
 
@@ -25,7 +25,7 @@ Visual Studio, które są przechowywane w zintegrowanym środowisku programistyc
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Aby zainicjować utrwalanie stanu czcionek i kolorów
 
-Informacje o czcionek i kolorów są przechowywane według kategorii w następującej lokalizacji rejestru: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], gdzie  *\<CategoryGUID >* to kategoria identyfikatora GUID.
+Informacje o czcionek i kolorów są przechowywane według kategorii w następującej lokalizacji rejestru: [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<wersji programu Visual Studio >* \FontAndColors\\  *\<CategoryGUID >* ], gdzie  *\<CategoryGUID >* to kategoria identyfikatora GUID.
 
 W związku z tym aby zainicjować trwałości, pakietu VSPackage musi:
 

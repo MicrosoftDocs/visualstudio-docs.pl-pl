@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7ae97c500ced1da67013fd6f12307edc0828dbf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445006"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312466"
 ---
 # <a name="walkthrough-highlight-text"></a>Przewodnik: Wyróżnianie tekstu
 Możesz dodać różne efekty do edytora, tworząc części składowe Managed Extensibility Framework (MEF). W tym instruktażu przedstawiono sposób zaznacz każde wystąpienie bieżącego słowa w pliku tekstowym. Jeśli słowa występuje więcej niż jeden raz w pliku tekstowym, a następnie pozycji karetki w jedno wystąpienie, każde wystąpienie jest wyróżniona.

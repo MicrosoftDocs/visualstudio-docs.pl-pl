@@ -3,17 +3,17 @@ title: Language Server Protocol — omówienie | Dokumentacja firmy Microsoft
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856670"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309626"
 ---
 # <a name="language-server-protocol"></a>Language Server Protocol
 
@@ -55,7 +55,7 @@ Poniżej przedstawiono przykład sposobu narzędzie a serwerem języka komunikac
 
 * **Użytkownik wykonuje "Przejdź do definicji" w symbolu w edytorze**: Narzędzie wysyła żądanie "textDocument/definicji" z dwoma parametrami: (1 identyfikator URI dokumentu i (2 położenie tekstu, z której zainicjowano przejdź do definicji żądania do serwera. W odpowiedzi serwer podaje identyfikator URI dokumentu i położenie definicji symbolu w dokumencie.
 
-* **Użytkownik zamyka dokument (plik)**: Za pomocą narzędzia informowanie serwera języka, który dokument jest już w pamięci, które bieżącą zawartość jest teraz na bieżąco w systemie plików jest wysyłane powiadomienie "textDocument/didClose".
+* **Użytkownik zamyka dokument (plik)** : Za pomocą narzędzia informowanie serwera języka, który dokument jest już w pamięci, które bieżącą zawartość jest teraz na bieżąco w systemie plików jest wysyłane powiadomienie "textDocument/didClose".
 
 Ten przykład ilustruje, jak protokół komunikuje się z serwerem języka na poziomie funkcji edytora, takich jak "Przejdź do definicji", "Znajdź wszystkie odwołania". Typy danych używany przez protokół to edytor lub IDE "typy danych", takie jak dokument tekstowy aktualnie otwarte i położenie kursora. Typy danych nie są na poziomie modelu programowania domeny języka, który zapewni zwykle drzewa abstrakcyjnej składni i kompilatora symbole (na przykład rozpoznać typy, przestrzenie nazw,...). Znacznie upraszcza protokołu.
 

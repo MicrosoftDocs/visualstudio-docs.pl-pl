@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad90c1ec332c2f214514e660b27dc5a915485f99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3b17d7ef3137c48ddda97e1b2b5bbf0e58cf5bb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312841"
 ---
 # <a name="wizards"></a>Kreatory
 Po utworzeniu kreatora, zazwyczaj chcesz dodać go do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko projektowe (IDE), aby inne osoby mogą go używać. Pojawi się w Kreatorze dodano **Dodaj nowy projekt** lub **Dodaj nowy element** okien dialogowych. Aby wyświetlić **Dodaj nowy projekt** lub **Dodaj nowy element** okna dialogowego pola, kliknij prawym przyciskiem myszy otwartego rozwiązania w **Eksploratora rozwiązań**, wskaż polecenie **Dodaj**, i następnie kliknij przycisk **nowy projekt** lub **nowy element**.

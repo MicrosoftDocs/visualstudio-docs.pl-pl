@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2 interface
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ef6df6419f43201555f1dcc275b44d2a0e9737
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0bea73c1bce5367d9686e835bb58dd99a83cc818
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917791"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314138"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Ten interfejs reprezentuje proces uruchomiony na porcie. Jeśli port lokalny port, następnie `IDebugProcess2` zazwyczaj reprezentuje fizyczny proces na komputerze lokalnym.
@@ -68,7 +68,7 @@ IDebugProcess2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 807a44d88d2799c8390547a5ab576bdbca3c074a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64e00c452f01c95046b4dc669dbd3bdd1517d287
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861755"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309201"
 ---
 # <a name="checklist-create-new-project-types"></a>Lista kontrolna: Tworzenie nowych typów projektów
 Należy wykonać kilka zadań, aby utworzyć nowy typ projektu. Poniższa lista kontrolna zawiera przewodnik dotyczący tych zadań:
@@ -55,7 +55,7 @@ Należy wykonać kilka zadań, aby utworzyć nowy typ projektu. Poniższa lista 
 
 7. Wyświetla projekt w **projektu** karcie **Dodaj odwołanie** okno dialogowe, ustawiając `VARIANT_TRUE` jako wartość `VSHPROPID_ShowProjInSolutionPage`. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
 
-8. Utwórz Installer firmy Microsoft (*.msi*) w pliku instalowanie z pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [rejestrowanie typu projektu](../../extensibility/internals/registering-a-project-type.md), i [pakietów VSPackage](../../extensibility/internals/vspackages.md).
+8. Utwórz Installer firmy Microsoft ( *.msi*) w pliku instalowanie z pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [rejestrowanie typu projektu](../../extensibility/internals/registering-a-project-type.md), i [pakietów VSPackage](../../extensibility/internals/vspackages.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Hierarchie w programie Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

@@ -3,17 +3,17 @@ title: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript | Doku
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796346"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312552"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript
 W tym przewodniku pokazano, jak utworzyć proste matematyczne SDK jako programu Visual Studio rozszerzenia (VSIX) za pomocą języka JavaScript.  Instruktażu jest podzielony na te części:
@@ -31,7 +31,7 @@ W tym przewodniku pokazano, jak utworzyć proste matematyczne SDK jako programu 
 
 1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-2. Na liście kategorii szablonu w obszarze **Visual C#**, wybierz opcję **rozszerzalności**, a następnie wybierz pozycję **projekt VSIX** szablonu.
+2. Na liście kategorii szablonu w obszarze **Visual C#** , wybierz opcję **rozszerzalności**, a następnie wybierz pozycję **projekt VSIX** szablonu.
 
 3. W **nazwa** tekstu określ `SimpleMathVSIX` i wybierz polecenie **OK** przycisku.
 
@@ -96,7 +96,7 @@ W tym przewodniku pokazano, jak utworzyć proste matematyczne SDK jako programu 
 
 14. W menu skrótów dla **\js\\**  folderu, wybierz **Dodaj** > **nowy element**.
 
-15. W obszarze **elementy Visual C#**, wybierz opcję **Web** kategorii, a następnie wybierz **plik JavaScript** elementu. Nadaj plikowi nazwę `arithmetic.js`, a następnie wybierz **Dodaj** przycisku.
+15. W obszarze **elementy Visual C#** , wybierz opcję **Web** kategorii, a następnie wybierz **plik JavaScript** elementu. Nadaj plikowi nazwę `arithmetic.js`, a następnie wybierz **Dodaj** przycisku.
 
 16. Wstaw następujący kod do *arithmetic.js*:
 
@@ -132,7 +132,7 @@ W tym przewodniku pokazano, jak utworzyć proste matematyczne SDK jako programu 
 
 18. W **Eksploratora rozwiązań**, w menu skrótów dla **SimpleMathVSIX** projektu, wybierz **kompilacji**.
 
-19. Po kompilacji zakończy się pomyślnie, w menu skrótów dla projektu, wybierz **Otwórz Folder w Eksploratorze plików**. Przejdź do **\bin\debug\\**i uruchom `SimpleMathVSIX.vsix` go zainstalować.
+19. Po kompilacji zakończy się pomyślnie, w menu skrótów dla projektu, wybierz **Otwórz Folder w Eksploratorze plików**. Przejdź do **\bin\debug\\** i uruchom `SimpleMathVSIX.vsix` go zainstalować.
 
 20. Wybierz **zainstalować** przycisku, dzięki czemu instalacja zakończona.
 

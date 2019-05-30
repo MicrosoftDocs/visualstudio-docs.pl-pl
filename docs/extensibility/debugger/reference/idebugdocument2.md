@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2 interface
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28334cc7aa0c8a5587a20d6c9dfdee3133d9ea7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 23510910fe18c68107e2c497aac5913da1eae963
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921799"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310224"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Ten interfejs reprezentuje dokumentu źródłowego.
@@ -52,7 +52,7 @@ IDebugDocument2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)
 - [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)
 - [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)

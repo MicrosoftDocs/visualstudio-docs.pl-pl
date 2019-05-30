@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetSourceRange
 ms.assetid: 5903c75e-5390-4d13-9314-1ee276255313
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a535da1feb24dd0de69f76af451056f3d8335d8a
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 210ac493a2b717b901e989dcb248efe29ad3fe75
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66204632"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311844"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 Pobiera kod źródłowy zakres tego kontekstu dokumentu.

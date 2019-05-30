@@ -3,17 +3,17 @@ title: Narzędzia usługi obrazów | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d431227d53c14f72dea9641948fdfc197e04b8bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b41b280581daa9ca54370429ae75eaab5c8551b7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909766"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315690"
 ---
 # <a name="image-service-tools"></a>Narzędzia usługi obrazów
 Zestaw SDK programu VS zawiera kilka narzędzi, które pomagają Konstruktorzy rozszerzenia, użyj usługi obrazów programu Visual Studio.

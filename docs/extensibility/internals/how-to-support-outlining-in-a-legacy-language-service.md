@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services, supporting Collapse to Definitions command
 - hidden text, Collapse to Definitions command
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3181f7ab2e69dd04a21f5f81ca470f849c268e03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f79f98ede5c28f8e3acb682ebe8f23e4dc4f72e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418387"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312036"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Instrukcje: Obsługa zwijania w starszej wersji usługi językowej
 Konspekt jest używany do rozwinąć lub zwinąć różnych regionach tekstu. Konspekt sposób jest używany może być określony inaczej w różnych językach. Aby uzyskać więcej informacji, zobacz [konspekt](../../ide/outlining.md).

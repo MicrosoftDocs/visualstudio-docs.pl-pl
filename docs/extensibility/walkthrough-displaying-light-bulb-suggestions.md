@@ -3,17 +3,17 @@ title: 'Przewodnik: Wyświetlanie sugestie z żarówką | Dokumentacja firmy Mic
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25365c5599d299189b07ec5c30124aac0004f390
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7d2a5c938d5a79cbdb69eb256d1e625e0e35c375
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444944"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312508"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Przewodnik: Wyświetl sugestie z żarówką
 Ikony żarówek są ikony w edytorze programu Visual Studio, które rozwinąć w celu wyświetlenia zestawem akcji, na przykład poprawki dla problemów identyfikowane za pomocą analizatorów kodu wbudowanego lub refaktoryzacji kodu.

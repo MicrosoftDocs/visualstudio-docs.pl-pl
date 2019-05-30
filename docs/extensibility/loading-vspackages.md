@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92d6605f85aff7cd99abd4046999f484332a2faa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c7c2a558abc928524813419df6b7848d34f0f3e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431340"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309570"
 ---
 # <a name="load-vspackages"></a>Ładowanie pakietów VSPackage
 Pakietów VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ich funkcjonalność jest wymagana. Na przykład pakietu VSPackage jest ładowany, gdy program Visual Studio używa w fabryce projektu lub usługi, która implementuje pakietu VSPackage. Ta funkcja jest nazywana opóźnionego ładowania, która jest używana zawsze, gdy jest to możliwe zwiększyć wydajność.

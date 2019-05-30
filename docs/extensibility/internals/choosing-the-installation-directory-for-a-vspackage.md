@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862052"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309123"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wybieranie katalogu instalacyjnego dla pakietu VSPackage
 Pakietu VSPackage i towarzyszące mu pliki muszą znajdować się w systemie plików użytkownika. Lokalizacja zależy od tego, czy pakietu VSPackage odbywa się lub niezarządzane schematu przechowywania wersji side-by-side i wybór użytkownika.
@@ -55,7 +55,7 @@ Pakietu VSPackage i towarzyszące mu pliki muszą znajdować się w systemie pli
 
 4. Ustawienia domyślne systemu LCID z odmianą języka domyślnego.
 
-5. Federalna Angielski (*. \1033* lub *. \0x409*).
+5. Federalna Angielski ( *. \1033* lub *. \0x409*).
 
 Jeśli biblioteka DLL pakietu VSPackage zawiera zasoby i **SatelliteDll\DllName** punkty wejścia rejestru, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] próbuje załadować je w podanej kolejności.
 

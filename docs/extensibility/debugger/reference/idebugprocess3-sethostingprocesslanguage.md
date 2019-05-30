@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7caebed7f3f9375a7b41fd68e43e6dbb6d21f37
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 242f35dce9245406c3466784811d79ac1942c49f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66208782"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313911"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Ta metoda określa język, który proces będzie obsługiwana w obszarze. Ten język następnie można przez aparat debugowania (DE) załadować Ewaluator wyrażeń odpowiednie.

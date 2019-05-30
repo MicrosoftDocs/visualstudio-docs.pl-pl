@@ -3,17 +3,17 @@ title: Typowe wzorce kontrolki dla programu Visual Studio | Dokumentacja firmy M
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799476"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312300"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Typowe wzorce kontrolki dla programu Visual Studio
 ## <a name="BKMK_CommonControls"></a> Formanty standardowe
@@ -274,7 +274,7 @@ W niektórych przypadkach przyciski mogą być używane w interfejsie użytkowni
 
 Kiedy należy używać tylko do wielokropka krótki przycisk:
 
-- Jeśli istnieje więcej niż jednego długiego **[Przeglądaj …]**  przycisku w oknie dialogowym, takie jak kiedy kilka pól umożliwiają przeglądanie. Użyj krótkiej **[...]**  przycisku dla każdego uniknąć pomylenia klucze dostępu, utworzone przez tę sytuację (**& Przeglądaj** i **prz & eglądaj** w tym samym oknie dialogowym).
+- Jeśli istnieje więcej niż jednego długiego **[Przeglądaj …]**  przycisku w oknie dialogowym, takie jak kiedy kilka pól umożliwiają przeglądanie. Użyj krótkiej **[...]**  przycisku dla każdego uniknąć pomylenia klucze dostępu, utworzone przez tę sytuację ( **& Przeglądaj** i **prz & eglądaj** w tym samym oknie dialogowym).
 
 - W oknie dialogowym ścisłej lub po nie uzasadnione miejsce do umieszczenia długie przycisku.
 
@@ -317,7 +317,7 @@ Zmiany rozmiaru graficzny przycisków jest taka sama, jak w przypadku krótkiej 
 Hiperlinki dobrze nadają się do akcji na podstawie nawigacji, takich jak otwieranie tematu pomocy, modalne okno dialogowe lub kreatora. Jeśli hiperlink jest używany dla polecenia, zawsze powinna zostać wyświetlona widoczne i zauważalne zmiany w interfejsie użytkownika. Ogólnie rzecz biorąc w akcji, które są zaangażowani w zapewnienie akcję (np. Zapisz i Anuluj i Usuń) za pomocą przycisku lepiej są przekazywane.
 
 #### <a name="writing-style"></a>Styl pisania
-Postępuj zgodnie z [pulpitu Windows wskazówki dotyczące tekst interfejsu użytkownika](/windows/desktop/uxguide/text-ui). Nie używaj "Dowiedz się więcej o," "Powiedz mi więcej o" lub "Get uzyskać pomoc w tym" właściwej. Zamiast tego frazę tekst łącza pomocy pod względem podstawowego zapytania, odpowiedzi z zawartości pomocy. Na przykład "**jak dodać serwer do Eksploratora serwera?**"
+Postępuj zgodnie z [pulpitu Windows wskazówki dotyczące tekst interfejsu użytkownika](/windows/desktop/uxguide/text-ui). Nie używaj "Dowiedz się więcej o," "Powiedz mi więcej o" lub "Get uzyskać pomoc w tym" właściwej. Zamiast tego frazę tekst łącza pomocy pod względem podstawowego zapytania, odpowiedzi z zawartości pomocy. Na przykład "**jak dodać serwer do Eksploratora serwera?** "
 
 #### <a name="visual-style"></a>Styl wizualny
 

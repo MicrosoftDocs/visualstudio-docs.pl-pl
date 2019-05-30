@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 403009367f6cdf8a9fd1ebb750ee9bb020690685
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965170"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312420"
 ---
 # <a name="walkthrough-display-signature-help"></a>Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur
 Pomocy dotyczącej sygnatur (znany także jako *Parameter Info*) Wyświetla podpis metody w etykietce narzędzia, gdy użytkownik wpisuje znak start listy parametrów (zazwyczaj nawias otwierający). Jako parametr i separator parametru (zazwyczaj przecinek) mają typ, etykietki narzędzia jest aktualizowana w celu wyświetlenia następny parametr pogrubioną czcionką. Pomoc podpisu można zdefiniować w następujący sposób: w kontekście usługi językowej zdefiniować własne rozszerzenia nazwy pliku i typu zawartości i wyświetlić Pomoc podpisu dla właśnie tego typu lub Wyświetl Pomoc podpisu dla istniejącego typu zawartości (na przykład "text"). Ten poradnik pokazuje jak wyświetlić Pomoc podpisu dla typu zawartości "text".

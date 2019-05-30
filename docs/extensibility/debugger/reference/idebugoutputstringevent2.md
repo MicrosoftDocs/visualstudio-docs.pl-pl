@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugOutputStringEvent2 interface
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfce52f89e75c8e9e697a3fa5ad4184c3d1fa42b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d47fe2b329f9f2fb4adb57cdf6e2a6a871299d14
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872515"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311901"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 Ten interfejs jest wysyłane przez aparat debugowania (DE) do Menedżer debugowania sesji (SDM) w danych wyjściowych ciąg.
@@ -55,7 +55,7 @@ IDebugOutputStringEvent2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

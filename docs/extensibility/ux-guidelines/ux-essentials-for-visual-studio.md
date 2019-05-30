@@ -3,17 +3,17 @@ title: UX Essentials for Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951881"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310813"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Podstawy interfejsu użytkownika dla programu Visual Studio
 
@@ -134,10 +134,10 @@ W właściwe podejście pokazano w **rysunek C**, to ustawienie jest powiązany 
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Podkreślenie używana jako etykieta grupy, nie hiperłącza
  Podkreślenie tekst powinien być stosowany tylko dla hiperlinków.
 
- **Zły:**\
+ **Zły:** \
  ![Podkreślony tekst, który nie jest hiperłącze to wzorzec oprogramowanie Visual Studio. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />Podkreślony tekst, który nie jest hiperłącze to wzorzec oprogramowanie Visual Studio.
 
- **Dobre:**\
+ **Dobre:** \
  ![Różne poprawnie, bez hiperlink tekst jest wyświetlany unadorned czcionką środowiska. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />Różne poprawnie, bez hiperlink tekst jest wyświetlany unadorned czcionką środowiska.
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Kliknij pole wyboru skutkuje wyskakującego okna dialogowego

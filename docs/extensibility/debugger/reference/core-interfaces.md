@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37e8b8e47b306f8b99e378cf407c0faf0955c737
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 76381731da62507217fb4408f20be6e8c35baa56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924869"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346370"
 ---
 # <a name="core-interfaces"></a>Interfejsy podstawowe
 Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomocą [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -303,6 +303,6 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Udostępnia metody w celu uzyskania dostępu do danych, które zostaną przekazane do Wizualizator typów.|
 |[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|Reprezentuje właściwość, która zapewnia dostęp do [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) implementacji.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [Tworzenie niestandardowego aparatu debugowania](../../../extensibility/debugger/creating-a-custom-debug-engine.md)
