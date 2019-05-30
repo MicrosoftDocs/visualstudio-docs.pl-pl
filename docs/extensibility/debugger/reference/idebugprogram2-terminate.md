@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Terminate
 ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b80afe3f0061e016301b86229f2eacedf217a43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 16a6d60173090642bda7d8fd940ecf0699e1d7ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870118"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331498"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 Kończy program.
@@ -42,6 +45,6 @@ int Terminate();
 
  Ta metoda lub [Zakończ](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) metoda jest wywoływana przez środowisko IDE, zwykle w odpowiedzi na użytkownika zatrzymywanie debugowania wszystkie. Implementacja tej metody w idealnym przypadku należy zakończyć program w ramach procesu. Jeśli nie jest to możliwe, DE powinien uniemożliwienie program dalszych w ramach tego procesu (i wykonaj wszelkie niezbędne czyszczenia). Jeśli `IDebugProcess2::Terminate` wywołano metodę IDE, cały proces zostanie zakończony jakiś czas po `IDebugProgram2::Terminate` metoda jest wywoływana.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

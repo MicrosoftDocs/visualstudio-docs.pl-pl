@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::Abort
 ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 490c131820cbe16b8e18be649ad5439c024ad3c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c85a746ab4c916a0aae81b40dd3539264c5572f6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326024"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 Ta metoda anuluje Obliczanie wyrażenia asynchroniczne jako uruchomione przez wywołanie do [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) metody.
@@ -40,7 +43,7 @@ int Abort();
 ## <a name="remarks"></a>Uwagi
  Po anulowaniu Obliczanie wyrażenia asynchroniczne niewysłane [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) zdarzenia w celu wywołania zwrotnego zdarzenia przekazane do [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) lub [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)

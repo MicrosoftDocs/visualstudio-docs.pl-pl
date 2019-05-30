@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925240"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327377"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Określa, gdzie znajduje się zestaw.
@@ -43,14 +46,18 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-Zestaw ALR_NAME znajduje się w bieżącej przestrzeni nazw.
+## <a name="fields"></a>Pola
+`ALR_NAME`\
+Zestaw znajduje się w bieżącej przestrzeni nazw.
 
-Zestaw ALR_USERDIR znajduje się w katalogu użytkownika.
+`ALR_USERDIR`\
+Zestaw znajduje się w katalogu użytkownika.
 
-Zestaw ALR_SHAREDDIR znajduje się w katalogu udostępnionym.
+`ALR_SHAREDDIR`\
+Zestaw znajduje się w katalogu udostępnionym.
 
-Zestaw ALR_REMOTEDIR znajduje się w katalogu zdalnym.
+`ALR_REMOTEDIR`\
+Zestaw znajduje się w katalogu zdalnym.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości są zwracane przez [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) i [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) metody.
@@ -64,7 +71,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
 - [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
