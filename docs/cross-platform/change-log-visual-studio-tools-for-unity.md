@@ -1,7 +1,7 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, Windows) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403203"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327357"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 Dziennik zmian w programie Visual Studio Tools for Unity.
+
+## <a name="4110"></a>4.1.1.0
+ wydana 24 maja 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integracja:**
+
+    - Zaktualizowano obiekt MonoBehaviour interfejsu API do 2019.1.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integracja:**
+
+    - Naprawiono raportowania ostrzeżenia i błędy w danych wyjściowych po włączeniu uproszczonego kompilacji.
+    
+    - Naprawiono lightweight wydajność kompilacji.
+
+## <a name="4100"></a>4.1.0.0
+ wydana 21 maja 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integracja:**
+
+    - Dodano obsługę nową partię interfejsu API, aby załadować ponownie projekty szybciej.
+    
+    - Wyłączone pełnej kompilacji dla projektów aparatu Unity, na rzecz błędy funkcji IntelliSense i ostrzeżenia. W rzeczywistości Unity tworzy rozwiązania programu Visual Studio z projekty bibliotek klas, które reprezentują Unity czynności wewnętrznie. Po uwzględnieniu wynik kompilacji w programie Visual Studio nigdy nie jest używany ani odebrane przez aparat Unity, zgodnie z ich potoku kompilacji jest zamknięty. Tworzenie w programie Visual Studio jest po prostu zużywają zasoby nic za darmo. Jeśli potrzebujesz pełnej kompilacji, ponieważ dysponujesz narzędziami lub Instalator, który zależy od niego, można wyłączyć tego rodzaju optymalizacji (Narzędzia/opcje/Tools for Unity/wyłączyć pełna kompilacja projektów). 
+
+    - Automatycznie pokazuj Eksploratora projektów aparatu Unity (UPE) podczas ładowania projektu środowiska Unity. UPE będzie zadokowany obok Eksploratora rozwiązań.
+    
+    - Zaktualizowano mechanizm Ekstrakcja Nazwa projektu za pomocą aparatu Unity 2019.x.
+
+    - Dodano obsługę pakietów Unity w UPE. Tylko odwołanie do pakietów (przy użyciu manifest.json w ```Packages``` folderu) i pakiety lokalnego (osadzone w ```Packages``` folder) są widoczne.
+    
+- **Generowanie projektu:**
+
+    - Zachowaj właściwości zewnętrznych podczas przetwarzania pliku rozwiązania.
+
+- **Ocena:**
+
+    - Dodano obsługę nazwy kwalifikowanej aliasu (tylko globalnej przestrzeni nazw obecnie). Dlatego Ewaluator wyrażeń akceptuje teraz typów przy użyciu global::namespace.type formularza.
+    
+    - Dodano obsługę ```pointer[index]``` formularza, który jest identyczny semantycznie wskaźnika cofnięcia odwołania ```*(pointer+index)``` formularza.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integracja:**
+
+    - Rozwiązano problemy zależności z Microsoft.VisualStudio.MPF.
+    
+    - Dołącz stały player platformy uniwersalnej systemu Windows bez żadnego projektu załadowanego.
+    
+    - Odświeżanie bazy danych trwałych automatyczne programu Visual Studio nie został jeszcze dołączony.
+    
+    - Rozwiązano problemy motyw z etykiety i pola wyboru.
+    
+- **Debuger:**
+
+    - Naprawiono przechodzenie krok po kroku, za pomocą konstruktorów statycznych.
 
 ## <a name="4005"></a>4.0.0.5
  wydana 27 lutego 2019 r.

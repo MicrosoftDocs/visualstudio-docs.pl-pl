@@ -6,17 +6,17 @@ helpviewer_keywords:
 - directory status code enumerator
 - source control plug-ins, directory status enumeration
 ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e62685a1a351c9a5773e18a53316106a18af66a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b6e113949c9e87605895bbb43aa1ae4b4df0496
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864040"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348034"
 ---
 # <a name="directory-status-code-enumerator"></a>Moduł wyliczający kod stanu katalogu
 `SccDirStatus` Modułu wyliczającego zawiera nazwanych stałych, określające stan katalogu w systemie kontroli źródła. To wyliczenie jest używane przez [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). To została wprowadzona w wersji 1.2 API wtyczki kontroli źródła.

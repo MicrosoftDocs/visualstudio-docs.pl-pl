@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_CUSTOM_VIEWER structure
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f50f46376e21694bebeb4f13ab8ed8e658838bf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ba4af7ef465a4d98f78eccc9f7dce7dd4fa43aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878098"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346184"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 Struktura, która identyfikuje podglądu niestandardowego lub typu wizualizatora.
@@ -47,17 +50,23 @@ public struct DEBUG_CUSTOM_VIEWER {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-dwID identyfikator do rozróżnienia wielu osób przeglądających lub wizualizatorów implementowane za pomocą jednej `GUID`.
+`dwID`\
+Identyfikator, aby odróżnić wiele osób przeglądających lub wizualizatorów implementowane za pomocą jednej `GUID`.
 
-bstrMenuName tekst, który będzie wyświetlany w menu rozwijanym.
+`bstrMenuName`\
+Tekst, który będzie wyświetlany w menu rozwijanym.
 
-Opis bstrDescription A Przeglądarka niestandardowa lub Wizualizator typów (musi być wartością null Jeśli nie są używane).
+`bstrDescription`\
+Opis podglądu niestandardowego lub Wizualizator typów (musi być wartością null Jeśli nie są używane).
 
-guidLang języka dostarczanie Ewaluator wyrażeń.
+`guidLang`\
+Język dostarczanie Ewaluator wyrażeń.
 
-guidVendor dostawcy dostarczanie Ewaluator wyrażeń.
+`guidVendor`\
+Dostawca dostarczanie Ewaluator wyrażeń.
 
-bstrMetric metryki w ramach której przeglądarka niestandardowa lub typu wizualizatora `CLSID` są przechowywane.
+`bstrMetric`\
+Metryki w ramach której przeglądarka niestandardowa lub typu wizualizatora `CLSID` są przechowywane.
 
 ## <a name="remarks"></a>Uwagi
 Lista ta struktura jest zwracany przez wywołanie [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) — metoda (a w konsekwencji, [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) metody).
@@ -69,7 +78,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

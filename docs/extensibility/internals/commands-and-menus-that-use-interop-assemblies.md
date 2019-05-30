@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, handling using interop assemblies
 - command handling with interop assemblies
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d08e7ad95e621ab444f98c295f5d84aa2b6e0066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14625d38a8eae594d1ba63aa1f628c2482be8f30
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910766"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342012"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Polecenia i menu, które używają zestawów międzyoperacyjnych
 Pakietu VSPackage, który implementuje poleceń menu i paska narzędzi przy użyciu zestawów międzyoperacyjnych musi:

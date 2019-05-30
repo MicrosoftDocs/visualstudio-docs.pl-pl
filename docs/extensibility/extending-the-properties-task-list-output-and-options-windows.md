@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab0b47246adcf337a774a8519cd5e782104fb9aa
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 5186d7c16f89201b43ebabc49215c0afff4bbfd4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263659"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337117"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozszerzanie właściwości, listy zadań, danych wyjściowych i opcji systemu windows
 Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W tym przewodniku pokazano, jak zintegrować informacji na temat okna narzędzia nową **opcje** strony i nowe ustawienie na **właściwości** strony, a także zapisywać **listy zadań** i **dane wyjściowe** systemu windows.

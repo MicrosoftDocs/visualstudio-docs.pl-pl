@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages
 ms.assetid: cad0893a-9c5f-45b7-952a-e2294f83e324
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ceb38f50e47fe56fdb164ed0ea6330b776db3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ded81de2a0571bbf79d9d08dcd422d3b54783de0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907935"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323396"
 ---
 # <a name="vspackages"></a>Pakiety VSPackage
 Pakietów VSPackage są moduły oprogramowania rozszerzające [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE), zapewniając elementy interfejsu użytkownika, usługi, projekty, edytorów i projektantów.

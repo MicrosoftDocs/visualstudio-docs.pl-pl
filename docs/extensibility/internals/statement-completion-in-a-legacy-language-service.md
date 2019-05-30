@@ -6,17 +6,17 @@ helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcc86d8c43703b0274c5282c9f4f843f760e697c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5c6e157505b146b9c1ca37f508311c9e80958be6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428907"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322435"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Uzupełnianie instrukcji w starszej wersji usługi językowej
 Uzupełnianie instrukcji jest procesem, za pomocą którego usługa językowa ułatwiają zakończyć słowem kluczowym języka lub element, który zostały uruchomione, wpisz w edytorze podstawowych. W tym temacie omówiono, jak działa uzupełniania instrukcji i sposobie jego implementowania w usłudze języka.

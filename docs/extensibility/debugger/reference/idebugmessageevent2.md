@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMessageEvent2 interface
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49224ad0018286fffd365857364bf1b37300788f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: facb0b818ab8bd8babae59e6cdbd2b209a8cfda7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918829"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346842"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Ten interfejs jest używany przez aparat debugowania (DE), aby wysłać komunikat do programu Visual Studio, która wymaga odpowiedź od użytkownika.
@@ -58,7 +58,7 @@ IDebugMessageEvent2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b72e1493e8ab00f3aa98f3a9bd8e1e1dd30201e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9685d14651a40fd26842e0d922fefbc0075c00c5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909071"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341478"
 ---
 # <a name="providing-automation-for-vspackages"></a>Zapewnianie automatyzacji pakietów VSPackage
 Istnieją dwa główne sposoby zapewnienia automatyzacji z pakietów VSPackage: wdrażając obiektów specyficznych dla pakietu VSPackage i wdrażając obiektów automatyzacji w wersji standard. Ogólnie rzecz biorąc są one używane razem do rozszerzenia modelu automatyzacji środowiska.

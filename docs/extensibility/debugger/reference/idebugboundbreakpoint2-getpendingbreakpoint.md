@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IDebugBoundBreakpoint2::GetPendingBreakpoint method
 - GetPendingBreakpoint method
 ms.assetid: 22f94f81-f8d9-46de-96e9-fae6f3c24903
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a466adc76eefca139f521e689502e44c1c29ddc
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 862c0e4fe1783793c98d50b771200effdbfd02d6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614638"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320509"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 Pobiera oczekujący punkt przerwania, z której została utworzona określonego powiązany punkt przerwania.

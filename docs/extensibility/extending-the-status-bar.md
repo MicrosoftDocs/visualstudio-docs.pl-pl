@@ -6,17 +6,17 @@ helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e6c2b34fcc5261ab8fb3a87a24e2cc0959d8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c555c2a23b52d475b01fbf8cc2086167acc423dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911911"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342881"
 ---
 # <a name="extend-the-status-bar"></a>Rozszerzanie paska stanu
 Na pasku stanu programu Visual Studio w dolnej części IDE służy do wyświetlania informacji.

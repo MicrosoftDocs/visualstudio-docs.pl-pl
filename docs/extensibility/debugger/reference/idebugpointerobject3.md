@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPointerObject3 interface
 ms.assetid: 11d26af4-1079-435e-96fa-d5269cbea8eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ff3a5f9143b80a3cd3ca095677f9bc2c71c0d10
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 85f1962b1a9d9d8b8c9d2fe6b8e7699d6561b67d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413396"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343770"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 > [!IMPORTANT]

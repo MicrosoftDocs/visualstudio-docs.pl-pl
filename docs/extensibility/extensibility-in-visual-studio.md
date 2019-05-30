@@ -3,17 +3,17 @@ title: Rozszerzalność w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 81b0dbe6-ddf3-4899-b09c-a3837037231d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 426ffcd5d764cf5141fede28ccee74326311a618
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0267aab863ad653074a597fff513db36870a75c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863106"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342759"
 ---
 # <a name="extensibility-in-visual-studio"></a>Rozszerzalność w programie Visual Studio
 Program Visual Studio zapewnia wiele opcji rozszerzalności. Można utworzyć własne zestawy SDK, Windows, Windows Phone i zestawy SDK platformy Azure, (które są instalowane jako część pakietu Visual Studio) i rozszerzenia programu Visual Studio.

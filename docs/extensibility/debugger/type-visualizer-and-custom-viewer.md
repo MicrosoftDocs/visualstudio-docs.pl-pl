@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 219632bce50b6942d46e4061a3c7eaf8f70adfd5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01f058f959c9af78e196112cc49b63d293e8e31d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864245"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341262"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Wizualizator typów i Przeglądarka niestandardowa
 Wizualizator typów jest składnikiem, który wyświetla część danych w określonym formacie. Format jest całkowicie maksymalnie visualizer, który implementuje, jest to użytkownik końcowy lub dostawcą firm wizualizatorów.

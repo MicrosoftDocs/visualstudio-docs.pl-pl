@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2 interface
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daad54225170366d98a2df3465c7dba952098c4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5c79ec83adcb766bd7c6de3d31a2ae790710a838
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870105"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348959"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Ten interfejs reprezentuje program, który jest uruchomiony w procesie.
@@ -71,7 +71,7 @@ IDebugProgram2 : IUnknown
 ## <a name="remarks"></a>Uwagi
  Program jest kontenerem wątków, uruchomiony w ramach określonej architektury czasu wykonywania, podczas procesu składa się z jednego lub wielu programów.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
 - [Next](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)

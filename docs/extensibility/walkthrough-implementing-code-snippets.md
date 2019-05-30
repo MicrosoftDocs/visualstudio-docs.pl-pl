@@ -3,17 +3,17 @@ title: 'Przewodnik: Implementowanie fragmentów kodu | Dokumentacja firmy Micros
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ae22475fa488d93ac4660fdc0cf567f50b32029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e4b6d0346ce10c780254b26a4f2c710ed171ef5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965157"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320738"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Przewodnik: Implementowanie fragmentów kodu
 Można tworzyć fragmenty kodu i dołączać do rozszerzenia edytora, tak aby użytkownicy rozszerzenia można dodać je do swój własny kod.

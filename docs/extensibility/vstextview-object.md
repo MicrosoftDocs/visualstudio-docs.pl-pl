@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSTextView object, reference
 - views [Visual Studio SDK], reference
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab54fce0271438f89ec66b4fc5d8db1ebe21634f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eddd5640b2f8f073f791f6bdb4dc006f8fab0e36
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953091"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322814"
 ---
 # <a name="vstextview-object"></a>Obiekt VSTextView
 Widok tekstu jest oknem, pozwalającą użytkownikom na wyświetlanie i edytowanie tekst w formacie Unicode bufor tekstowy. Zasadniczo jest to widok co dotyczą większości użytkowników jako edytora. Ponieważ widok jest oddzielone z buforu różne warstwy tekstu (zawijanie wyrazów, konspektu tekstu i tak dalej), widoku nie może być dokładne reprezentacja tekstu w buforze. Aby uzyskać więcej informacji na temat widoku tekstu, zobacz [dostęp do widoku theText przy użyciu starszej wersji interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

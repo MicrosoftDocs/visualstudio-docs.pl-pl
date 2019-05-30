@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CODE_PATH structure
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e09cd77308f83c2b9fb1b9cba70076ad797eb2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 516122ee8aaaa0ed18537369eeeffb05be3ebf1c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62879225"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327226"
 ---
 # <a name="codepath"></a>CODE_PATH
 Opis wywołania metody lub funkcji.
@@ -39,9 +42,11 @@ public struct CODE_PATH {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-bstrName nazwa ścieżki kodu.
+`bstrName`\
+Nazwa ścieżki kodu.
 
-pCode [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który identyfikuje gdzie kod w celu wkroczenia do funkcji.
+`pCode`\
+[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który identyfikuje gdzie kod w celu wkroczenia do funkcji.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest używany do implementowania przechodzenie krok po kroku do funkcji. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) zwraca wszystkie wywołania z bieżącej lokalizacji w debugowanego programu. Ta struktura reprezentuje jedno takie wywołanie.
@@ -53,7 +58,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

@@ -6,22 +6,22 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3b4423b54975c773de743b093f882f1fd9c42c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dff6ee0a81472ea556aaca478a2ff33db93fe871
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926939"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321177"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funkcje wywołania zwrotnego implementowane przez środowisko IDE
 Aby Integracja z usługą zintegrowanego środowiska programistycznego (IDE) jako Bezproblemowa, jak to możliwe i w celu zapewnienia ujednoliconego końcowego wtyczka do kontroli źródła można użyć funkcji wywołania zwrotnego, które są implementowane przez środowisko IDE. Wtyczka może wywołać te funkcje w odpowiednim czasie podczas operacji kontroli źródła do przekazywania informacji do IDE; IDE może następnie wyświetlić te informacje jako elementy osadzone w ich natywnym interfejsem użytkownika. Użytkownik ma zmniejszenie fragmentacji środowisko, w tym scenariuszu niż Jeśli wtyczka zatrudnionych własnego interfejsu użytkownika.
 
- Plik nagłówka wymagane jest *scc.h*. Domyślna lokalizacja to *\Program Files\VSIP 8.0\EnvSDK\common\inc\\*. Jest również folder VSIP, który zawiera przykładowe wtyczki kontroli źródła na *\Program Files\VSIP 8.0\MSSCCI\\*.
+ Plik nagłówka wymagane jest *scc.h*. Domyślna lokalizacja to *\Program Files\VSIP 8.0\EnvSDK\common\inc\\* . Jest również folder VSIP, który zawiera przykładowe wtyczki kontroli źródła na *\Program Files\VSIP 8.0\MSSCCI\\* .
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) zawiera opis funkcji wywołania zwrotnego, który jest używany przez [SccOpenProject](../extensibility/sccopenproject-function.md) umożliwiające wyświetlanie komunikatów z kontroli źródła wtyczek za pośrednictwem środowiska IDE.
