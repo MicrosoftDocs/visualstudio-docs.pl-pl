@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest3
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c45b1bae11710063d089aeca61a9d20fb6e907a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9101f1c2faeedf8b08b3b11044eaa22f6c6d512a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923171"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352877"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 Ten interfejs reprezentuje informacje niezbędne do tworzenia i powiązać dowolnego typu punktu przerwania. To rozszerzenie [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
@@ -51,6 +51,6 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

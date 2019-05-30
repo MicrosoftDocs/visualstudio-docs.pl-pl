@@ -1,8 +1,8 @@
 ---
-title: 'Samouczek: Aplikacja Hello World z Windows Presentation Foundation (WPF) w języku Visual Basic'
+title: Aplikacja Hello World przy użyciu platformy WPF w języku Visual Basic
 description: Utwórz prostą aplikację Windows Desktop .NET w języku Visual Basic w programie Visual Studio przy użyciu struktury interfejsu użytkownika Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f56482dbbe76722e8b8d55fad01d283de2dc113e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965936"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263613"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: Tworzenie prostej aplikacji za pomocą Visual Basic
 
@@ -81,7 +81,7 @@ Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, i **Eksplorator
 
 1. Open Visual Studio 2019.
 
-2. Na **Utwórz nowy projekt** ekranu, wyszukaj "WPF" i wybierz **aplikacja WPF (.NET Framework)**, a następnie wybierz **dalej**.
+2. Na **Utwórz nowy projekt** ekranu, wyszukaj "WPF" i wybierz **aplikacja WPF (.NET Framework)** , a następnie wybierz **dalej**.
 
    ![Szablon aplikacji WPF w oknie dialogowym Nowy projekt programu Visual Studio](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
@@ -131,7 +131,7 @@ Okno powinno wyglądać podobnie, jak na poniższej ilustracji:
 Kod znaczników XAML powinien wyglądać podobnie jak w poniższym przykładzie:
 
 ```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+<TextBlock HorizontalAlignment="Left" Margin="381,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>Dostosuj tekst w bloku tekstu
@@ -298,9 +298,20 @@ Teraz, gdy upewnieniu się, że wszystko działa, możesz przygotować wersję d
 
 3. Skompiluj rozwiązanie, wybierając **kompilacji** > **Kompiluj rozwiązanie**.
 
-Gratulujemy wykonanie kroków tego samouczka! Możesz znaleźć *.exe* utworzone w katalogu rozwiązania i projektu (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Gratulujemy wykonanie kroków tego samouczka! Możesz znaleźć *.exe* utworzone w katalogu rozwiązania i projektu ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Co nowego w programie Visual Studio 2017](../../ide/whats-new-visual-studio.md)
+::: moniker range="vs-2017"
+
+- [Co nowego w programie Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
 - [Wskazówki dotyczące produktywności](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [What's new in Visual Studio 2019 r.](../../ide/whats-new-visual-studio-2019.md)
+- [Wskazówki dotyczące produktywności](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end

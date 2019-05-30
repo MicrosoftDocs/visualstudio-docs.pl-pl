@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe73a4d66d57ae362d4b99d10aca9170971f17b9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b0e70d6695b76df9a6ef66586713e27a61697ae
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429633"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332907"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flagi wiersza polecenia kompilatora VSCT
 Kompilator programu Visual Studio polecenie tabeli (VSCT) udostępnia przełączniki wiersza polecenia w celu zapewnienia pomyślnej kompilacji .vsct — pliki.

@@ -1,5 +1,6 @@
 ---
-title: Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017 | Dokumentacja firmy Microsoft
+title: Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 39dbe74c8f59171461cca04fc9015782e21fe9da
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434214"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261801"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017
 
@@ -26,7 +27,7 @@ Jeśli chcesz utworzyć szablon projektu lub elementu jako część rozszerzenia
 
 ## <a name="template-scanning"></a>Szablon skanowania
 
-W poprzednich wersjach programu Visual Studio **devenv/Setup** lub **devenv/installvstemplates** skanowania dysku lokalnym, aby znaleźć szablonów projektów i elementów. Począwszy od programu Visual Studio 2017, skanowanie jest wykonywane tylko w przypadku lokalizacji poziomie użytkownika. Domyślna lokalizacja poziom użytkownika **%USERPROFILE%\Documents\\< wersja programu Visual Studio\>\Templates\\**. Ta lokalizacja jest używana dla szablonów generowane przez **projektu** > **Eksportuj szablony...**  polecenia, jeśli **automatycznie zaimportuj szablon do programu Visual Studio** opcja jest zaznaczona w kreatorze.
+W poprzednich wersjach programu Visual Studio **devenv/Setup** lub **devenv/installvstemplates** skanowania dysku lokalnym, aby znaleźć szablonów projektów i elementów. Począwszy od programu Visual Studio 2017, skanowanie jest wykonywane tylko w przypadku lokalizacji poziomie użytkownika. Domyślna lokalizacja poziom użytkownika **%USERPROFILE%\Documents\\< wersja programu Visual Studio\>\Templates\\** . Ta lokalizacja jest używana dla szablonów generowane przez **projektu** > **Eksportuj szablony...**  polecenia, jeśli **automatycznie zaimportuj szablon do programu Visual Studio** opcja jest zaznaczona w kreatorze.
 
 Do innych lokalizacji (niezwiązanych z użytkownikiem) musi zawierać plik manifest(.vstman), który określa lokalizację i innych parametrów szablonu. W pliku vstman jest generowany wraz z pliku .vstemplate, używany do szablonów. Po zainstalowaniu rozszerzenia za pomocą plikiem typu .vsix, można to zrobić przez kompilację rozszerzenia programu Visual Studio 2017. Ale jeśli używasz pliku .msi, musisz wprowadzić zmiany ręcznie. Aby uzyskać listę co należy zrobić, aby wprowadzić te zmiany, zobacz **uaktualnienia zainstalowane za pomocą rozszerzenia. MSI** dalej na tej stronie.
 
@@ -34,7 +35,7 @@ Do innych lokalizacji (niezwiązanych z użytkownikiem) musi zawierać plik mani
 
 1. Otwórz rozwiązanie w programie Visual Studio 2017. Użytkownik jest proszony o uaktualnienie kodu. Kliknij przycisk **OK**.
 
-2. Po zakończeniu uaktualniania, konieczne może być zmiana wersji docelowej instalacji. W projekcie VSIX, otwórz plik source.extension.vsixmanifest, a następnie wybierz **Instaluj obiekty docelowe** kartę. Jeśli **zakres wersji** pole jest **[14.0]**, kliknij przycisk **Edytuj** i zmień go na obejmują program Visual Studio 2017. Na przykład można ustawić go **[14.0,15.0]** instalowania rozszerzenia do programu Visual Studio 2015 lub Visual Studio 2017 lub **[15.0]** go zainstalować, po prostu Visual Studio 2017.
+2. Po zakończeniu uaktualniania, konieczne może być zmiana wersji docelowej instalacji. W projekcie VSIX, otwórz plik source.extension.vsixmanifest, a następnie wybierz **Instaluj obiekty docelowe** kartę. Jeśli **zakres wersji** pole jest **[14.0]** , kliknij przycisk **Edytuj** i zmień go na obejmują program Visual Studio 2017. Na przykład można ustawić go **[14.0,15.0]** instalowania rozszerzenia do programu Visual Studio 2015 lub Visual Studio 2017 lub **[15.0]** go zainstalować, po prostu Visual Studio 2017.
 
 3. Należy ponownie skompilować kod.
 
@@ -119,7 +120,7 @@ Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w we
 
 ```
 
- Informacje dostarczone przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elementu pozostają bez zmian.  **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu.
+ Informacje dostarczone przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elementu pozostają bez zmian. **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu.
 
  W tym miejscu jest to domyślny plik .vstemplate elementu utworzone przez program Visual Studio 2015:
 
@@ -171,7 +172,7 @@ Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w we
 </VSTemplateManifest>
 ```
 
- Informacje dostarczone przez  **\<TemplateData >** elementu pozostają bez zmian.  **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu
+ Informacje dostarczone przez  **\<TemplateData >** elementu pozostają bez zmian. **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu
 
  Aby uzyskać więcej informacji na temat różnych elementów pliku vstman zobacz [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

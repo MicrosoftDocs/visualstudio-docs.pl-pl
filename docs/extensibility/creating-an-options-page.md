@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0b8108470d5f9f14c76e422591a536648b5485e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891022"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350990"
 ---
 # <a name="create-an-options-page"></a>Tworzenie strony opcji
 
@@ -37,7 +37,7 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
 
 1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu VSIX, o nazwie `MyToolsOptionsExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** okna dialogowego, wyszukując pozycję "vsix".
 
-2. Dodawanie pakietu VSPackage, dodając szablon elementu pakiet rozszerzeń Visual Studio o nazwie `MyToolsOptionsPackage`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C#** > **rozszerzalności** i wybierz **pakiet rozszerzeń Visual Studio**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby `MyToolsOptionsPackage.cs`. Aby uzyskać więcej informacji o sposobie tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
+2. Dodawanie pakietu VSPackage, dodając szablon elementu pakiet rozszerzeń Visual Studio o nazwie `MyToolsOptionsPackage`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C#**  > **rozszerzalności** i wybierz **pakiet rozszerzeń Visual Studio**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby `MyToolsOptionsPackage.cs`. Aby uzyskać więcej informacji o sposobie tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
 
 ### <a name="to-create-the-tools-options-property-grid"></a>Aby utworzyć siatki właściwości opcji narzędzi
 
@@ -247,7 +247,7 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
 
      Ten kod wywołuje <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> można utworzyć lub pobrać `OptionPageGrid` wystąpienia. `OptionPageGrid` wywołania <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> załadować jego opcji, które są właściwości publiczne.
 
-2. Teraz Dodaj polecenie niestandardowe szablon elementu o nazwie **MyToolsOptionsCommand** do wyświetlania wartości. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#** > **rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *MyToolsOptionsCommand.cs*.
+2. Teraz Dodaj polecenie niestandardowe szablon elementu o nazwie **MyToolsOptionsCommand** do wyświetlania wartości. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#**  > **rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *MyToolsOptionsCommand.cs*.
 
 3. W *MyToolsOptionsCommand* pliku, Zastąp treść metody polecenia `ShowMessageBox` metoda następującym kodem:
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f5e7db4b31607c05da32a09e5d691a85ef4173
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614821"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332283"
 ---
 # <a name="createpkgdef-utility"></a>Narzędzie CreatePkgDef
 Pobiera plik .dll dla rozszerzenia programu Visual Studio, jako parametr i tworzy *.pkgdef* pliku, który towarzyszy *.dll* pliku. *.Pkgdef* plik zawiera wszystkie informacje, które w przeciwnym razie powinny być zapisane w rejestrze systemu, gdy rozszerzenie jest zainstalowane.
@@ -33,7 +33,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Argumenty
-**/out=&lt;FileName&gt;**\
+**/out=&lt;FileName&gt;** \
 Wymagana. Ustawia nazwę *.pkgdef* plik wyjściowy będzie &lt;FileName&gt;.
 
 **/ codebase**\
@@ -42,7 +42,7 @@ Opcjonalna. Wymusza rejestrację przy użyciu **CodeBase** narzędzia.
 **/ Assembly**\
 Wymusza rejestrację przy użyciu **zestawu** narzędzia.
 
-**&lt;AssemblyPath&gt;**\
+**&lt;AssemblyPath&gt;** \
 Ścieżka *.dll* pliku, z którego chcesz wygenerować *.pkgdef*.
 
 ## <a name="remarks"></a>Uwagi
@@ -56,9 +56,9 @@ Rozwój rozszerzeń przy użyciu *.pkgdef* plików zastępuje wymagania rejestru
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-Jeśli folder instalacji to *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*, rozszerzenie jest rozpoznawany przez program Visual Studio, ale jest domyślnie wyłączona. Użytkownik może włączyć rozszerzenie za pomocą **Zarządzaj rozszerzeniami**.
+Jeśli folder instalacji to *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* , rozszerzenie jest rozpoznawany przez program Visual Studio, ale jest domyślnie wyłączona. Użytkownik może włączyć rozszerzenie za pomocą **Zarządzaj rozszerzeniami**.
 
-Jeśli folder instalacji to *%vsinstalldir%\Common7\IDE\Extensions\\*, rozszerzenie jest domyślnie włączona.
+Jeśli folder instalacji to *%vsinstalldir%\Common7\IDE\Extensions\\* , rozszerzenie jest domyślnie włączona.
 
 > [!NOTE]
 > **Zarządzaj rozszerzeniami** narzędzie nie może służyć do dostępu do rozszerzenia, chyba, że jest zainstalowany jako część pakietu VSIX.
@@ -73,9 +73,9 @@ Jeśli folder instalacji to *%vsinstalldir%\Common7\IDE\Extensions\\*, rozszerze
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-Jeśli folder instalacji to *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*, rozszerzenie jest rozpoznawany przez program Visual Studio, ale jest domyślnie wyłączona. Użytkownik może włączyć rozszerzenie za pomocą **rozszerzenia i aktualizacje**.
+Jeśli folder instalacji to *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* , rozszerzenie jest rozpoznawany przez program Visual Studio, ale jest domyślnie wyłączona. Użytkownik może włączyć rozszerzenie za pomocą **rozszerzenia i aktualizacje**.
 
-Jeśli folder instalacji to *%vsinstalldir%\Common7\IDE\Extensions\\*, rozszerzenie jest domyślnie włączona.
+Jeśli folder instalacji to *%vsinstalldir%\Common7\IDE\Extensions\\* , rozszerzenie jest domyślnie włączona.
 
 > [!NOTE]
 > **Rozszerzenia i aktualizacje** narzędzie nie może służyć do dostępu do rozszerzenia, chyba, że jest zainstalowany jako część pakietu VSIX.

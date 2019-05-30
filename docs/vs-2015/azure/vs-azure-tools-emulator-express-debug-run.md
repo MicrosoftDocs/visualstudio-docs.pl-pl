@@ -10,12 +10,12 @@ ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 8ce7337350ac80e1992e850eb10d0ac7297f9502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7e1d5e63a93f8fe1f67de920a1ccf7966d97ed6
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963572"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263771"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej za pomocą emulatora w wersji Express
 Za pomocą Emulator Express, można przetestować i debugowanie usługi w chmurze bez konieczności uruchamiania programu Visual Studio jako administrator. Możesz ustawić ustawienia projektu, aby użyć Emulator Express lub pełnego emulatora, w zależności od wymagań usługi w chmurze. Aby uzyskać więcej informacji na temat pełnego emulatora, zobacz [uruchamiania aplikacji platformy Azure w emulatorze obliczeń](/azure/storage/common/storage-use-emulator).
@@ -50,4 +50,4 @@ Znane ograniczenia Emulator Express następujące problemy:
 - Wszelkie ograniczenia, które są stosowane do emulatora obliczeń platformy Azure dotyczą również Emulator Express. Na przykład nie może mieć więcej niż 50 wystąpień roli na wdrożenie. Aby uzyskać więcej informacji o emulatorze obliczeń systemu Azure, zobacz [uruchamiania aplikacji platformy Azure w emulatorze obliczeń](http://go.microsoft.com/fwlink/p/?LinkId=623050).
 
 ## <a name="next-steps"></a>Następne kroki
-[Debugowanie usług Azure cloud services](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Debugowanie usług Azure cloud services](vs-azure-tools-debugging-cloud-services-overview.md)

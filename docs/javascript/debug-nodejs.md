@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438005"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263031"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji w języku JavaScript lub TypeScript w programie Visual Studio
 
@@ -64,7 +64,7 @@ Aby dołączyć debuger programu Visual Studio i trafień punktów przerwania w 
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Można również ustawić `--remote-debugging-port` flagę podczas uruchamiania przeglądarki, wybierając **przeglądanie za pomocą...**  > z **debugowania** narzędzi, wybierając **Dodaj**, a następnie ustawienie flagi **argumenty** pola. Użyj innej nazwy przyjazne przeglądarki, takich jak **dla programu Chrome przy użyciu debugowania**. Aby uzyskać więcej informacji, zobacz [wersji](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    > Można również ustawić `--remote-debugging-port` flagę podczas uruchamiania przeglądarki, wybierając **przeglądanie za pomocą...**  > z **debugowania** narzędzi, wybierając **Dodaj**, a następnie ustawienie flagi **argumenty** pola. Użyj innej nazwy przyjazne przeglądarki, takich jak **dla programu Chrome przy użyciu debugowania**. Aby uzyskać więcej informacji, zobacz [wersji](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 
@@ -147,7 +147,7 @@ Jeśli dodasz *tsconfig.json* plik do projektu programu Visual Studio traktuje k
 
 * **inlineSourceMap**: Emituj pojedynczy plik z mapami źródeł zamiast tworzenia map oddzielne źródło dla każdego pliku źródłowego.
 * **inlineSources**: Emituj źródło razem map źródeł w pojedynczym pliku; wymaga *inlineSourceMap* lub *mapy źródła* do ustawienia.
-* **mapRoot**: Określa lokalizację, w której debuger powinien znajdować się w mapę źródłową (*.map*) zamiast domyślnej lokalizacji. Użyj tej flagi, jeśli środowiska wykonawczego *.map* pliki muszą znajdować się w innej lokalizacji niż *js* plików. Określona lokalizacja jest osadzony w mapę źródłową do kierowania debugera do lokalizacji *.map* plików.
+* **mapRoot**: Określa lokalizację, w której debuger powinien znajdować się w mapę źródłową ( *.map*) zamiast domyślnej lokalizacji. Użyj tej flagi, jeśli środowiska wykonawczego *.map* pliki muszą znajdować się w innej lokalizacji niż *js* plików. Określona lokalizacja jest osadzony w mapę źródłową do kierowania debugera do lokalizacji *.map* plików.
 * **mapy źródła**: Generuje odpowiadający *.map* pliku.
 * **sourceRoot**: Określa lokalizację, gdzie debuger powinien znaleźć plików TypeScript zamiast szukania w lokalizacjach źródłowych. Jeśli źródła czasu wykonywania muszą znajdować się w innej lokalizacji niż lokalizacja, w czasie projektowania, należy użyć tej flagi. Określona lokalizacja jest osadzony w mapę źródłową do kierowania debugera, na którym znajdują się pliki źródłowe.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (Projektant O-R)'
+title: Mapa LINQ do klas SQL do tabel/widoków (Projektant O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b9fb62fe3b6d92c617fc89f083aadcd262579e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4a923dd102d93aaf7ed545c022f5f12087f8a6b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567012"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260601"
 ---
-# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Instrukcje: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (O/R Designer)
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Instrukcje: Tworzenie klas LINQ to SQL zamapowanych na tabele i widoki (Object Relational Designer)
 
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasy, które są mapowane do bazy danych, tabele i widoki są nazywane *klas jednostek*. Klasa jednostki mapuje rekord, podczas gdy poszczególne właściwości klasy jednostki mapują do poszczególnych kolumn, które tworzą rekord. Tworzenie klas jednostek, które są oparte na bazy danych tabel lub widoków, przeciągając tabele lub widoki z **Eksploratora serwera** lub **Eksplorator bazy danych** na [LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). **O/R Designer** generuje klasy, a następnie stosuje konkretne [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atrybutów, aby umożliwić [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funkcji (łączności danych i możliwości edytowania <xref:System.Data.Linq.DataContext>). Aby uzyskać szczegółowe informacje na temat [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klas, zobacz [LINQ to SQL model obiektów](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
 

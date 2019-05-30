@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści usługi Office 365, objęte niektóre subskrypcje programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0beffc3409a562382b2a97981254dca887ec6ac9
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177576"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263125"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Usługi Office 365 ProPlus w subskrypcji programu Visual Studio
 
@@ -26,7 +26,7 @@ Wykonaj następujące kroki, aby pobrać i aktywować usługi Office 365 ProPlus
 3. Zobaczysz listę polecane pliki do pobrania. Na liście pakietu Office, wybierz opcję **usługi Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Pliki do pobrania usługi Office 365](_img/vs-office365/vs-office365-downloads.png)
-0. Aby zainstalować usługi Office 365, musisz mieć klucz produktu.  Kliknij pozycję **Pobierz klucz** link w obszarze listy usługi Office 365.
+0. Aby zainstalować usługi Office 365 ProPlus, musisz mieć klucz produktu.  Kliknij pozycję **Pobierz klucz** link w obszarze listy usługi Office 365.
    > [!div class="mx-imgBorder"]
    > ![Klucz produktu Get usługi Office 365](_img/vs-office365/vs-office365-get-key.png)
 0. Okna wysuwanego Pokaż klucze, które możesz już zostały zgłoszone oraz tych, które są dostępne dla użytkownika.  Aby uzyskać nowy klucz, kliknij przycisk **Zgłoś klucz** w obszarze **pakiet Office Professional Plus 2019** ofercie.
@@ -52,7 +52,7 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Tak          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Yes          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                            |  Brak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |

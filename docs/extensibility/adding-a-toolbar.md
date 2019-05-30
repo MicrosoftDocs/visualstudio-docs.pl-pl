@@ -6,17 +6,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
 - IDE, adding toolbars
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0485b6649396239d2b6501c65e801a03767d5df1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12fcf63c09d805f23fcbf0d041ab41ede7f85f32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891881"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352351"
 ---
 # <a name="add-a-toolbar"></a>Dodawanie paska narzędzi
 W tym instruktażu pokazano, jak dodać pasek narzędzi środowiska IDE programu Visual Studio.
@@ -87,7 +87,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi środowiska IDE programu
 
 6. Kliknij prawym przyciskiem myszy na pasku menu programu Visual Studio można pobrać listy pasków narzędzi. Wybierz **Test narzędzi**.
 
-7. Pasek narzędzi powinna zostać wyświetlona jako ikony po prawej stronie Znajdź w plikach ikonę. Po kliknięciu ikony, powinien zostać wyświetlony komunikat informujący, że **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
+7. Pasek narzędzi powinna zostać wyświetlona jako ikony po prawej stronie Znajdź w plikach ikonę. Po kliknięciu ikony, powinien zostać wyświetlony komunikat informujący, że **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()** .
 
 ## <a name="see-also"></a>Zobacz także
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

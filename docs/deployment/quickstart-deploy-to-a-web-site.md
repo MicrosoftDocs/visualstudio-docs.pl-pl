@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa1adbecc4114d53f2cdaa9e03296ed7f6144b6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ae1d142058b2f655bb55e5140a6ad6ac5f119742
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679177"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263500"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publikowanie aplikacji sieci Web do witryny sieci web przy użyciu programu Visual Studio
 
@@ -24,7 +24,7 @@ Możesz użyć **Publikuj** narzędzie do publikowania aplikacji platformy ASP.N
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Jeśli potrzebujesz opublikować aplikację pulpitu Windows sieciowy udział plików, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic). Dla C++/CLR, zobacz [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) lub dla języka C /C++, zobacz [wdrażanie aplikacji natywnych przy użyciu projektu instalacji](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Jeśli potrzebujesz opublikować aplikację pulpitu Windows sieciowy udział plików, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic). Dla C++/CLR, zobacz [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dla języka C /C++, zobacz [wdrażanie aplikacji natywnych przy użyciu projektu instalacji](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Publikowanie w witrynie sieci Web
 

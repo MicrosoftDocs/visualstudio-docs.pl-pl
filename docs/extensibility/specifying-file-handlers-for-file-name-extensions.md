@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b56df6c315d0612d6139fcda8b94f5d1b33b12a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7a80c17fc6de0efe691b1c36e4421cb2b62cbd00
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434548"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331789"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Określanie programów obsługi plików dla rozszerzeń nazw plików
 Istnieje kilka sposobów, aby określić aplikację, która obsługuje pliku, który ma rozszerzenie określonego pliku. Czasowniki OpenWithList i OpenWithProgids są dwa sposoby określania programów obsługi plików we wpisie rejestru dla rozszerzenia pliku.
@@ -47,7 +47,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |.Extension|ProductName. extension.versionMajor.versionMinor|
 
- Możesz zarejestrować różne aplikacje, które można otworzyć konkretnego rozszerzenia pliku, dodając numerów wersji ProgID jako wartości przekierowywanie wpisów z HKEY_CLASSES_ROOT\\*\<rozszerzenia >* \OpenWithProgids klucza. Ten klucz rejestru zawiera listę alternatywnych ProgID skojarzone z rozszerzeniem pliku. Aplikacje skojarzone z wymienionych ProgID pojawiają się w **Otwórz za pomocą**_nazwa produktu_ podmenu. Jeśli ta sama aplikacja jest określona w obu `OpenWithList` i `OpenWithProgids` klucze, system operacyjny scala duplikaty.
+ Możesz zarejestrować różne aplikacje, które można otworzyć konkretnego rozszerzenia pliku, dodając numerów wersji ProgID jako wartości przekierowywanie wpisów z HKEY_CLASSES_ROOT\\ *\<rozszerzenia >* \OpenWithProgids klucza. Ten klucz rejestru zawiera listę alternatywnych ProgID skojarzone z rozszerzeniem pliku. Aplikacje skojarzone z wymienionych ProgID pojawiają się w **Otwórz za pomocą**_nazwa produktu_ podmenu. Jeśli ta sama aplikacja jest określona w obu `OpenWithList` i `OpenWithProgids` klucze, system operacyjny scala duplikaty.
 
 > [!NOTE]
 > `OpenWithProgids` Klucz jest obsługiwany tylko w Windows XP. Ponieważ inne systemy operacyjne zignorować ten klucz, nie należy używać go jako rejestrację tylko dla programów obsługi plików. Użyj tego klucza, aby zapewnić lepsze środowisko użytkownika w Windows XP.

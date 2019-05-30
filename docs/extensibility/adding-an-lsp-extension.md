@@ -3,19 +3,19 @@ title: Dodawanie rozszerzenia protokołu Language Server Protocol | Dokumentacja
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7518a9086d5923c7b6ad71f07227b76517934b56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805115"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352329"
 ---
-# <a name="add-a-language-server-protocol-extension"></a>Dodawanie rozszerzenia protokołu Language Server Protocol
+# <a name="add-a-language-server-protocol-extension"></a>Dodawanie rozszerzenia Language Server Protocol
 
 Protokół serwera języka (LSP) jest wspólny protokół w formie wywołania JSON RPC w wersji 2.0, użycie go do udostępnienia funkcji usługi różne edytory kodu języka. Przy użyciu protokołu, programiści mogą pisać funkcji serwera jednego języka, aby zapewnić obsługę języka, takie jak IntelliSense, Diagnostyka błędów Znajdź wszystkie odwołania i tak dalej, aby różne edytory kodu, które obsługują LSP. Tradycyjnie usług językowych w programie Visual Studio można dodać za pomocą plików gramatyki TextMate, aby zapewnić podstawowe funkcje, takie jak wyróżnianie składni lub pisanie usług języka niestandardowego, które umożliwia uzyskanie pełnego zestawu interfejsów API rozszerzania programu Visual Studio dokładniejsze dane. Za pomocą programu Visual Studio Obsługa LSP jest trzeci etap.
 
@@ -139,7 +139,7 @@ LSP nie zawiera specyfikacji dostarczania tekstu kolorowania dla języków. Aby 
 
 4. Kliknij prawym przyciskiem myszy na pliki i wybierz **właściwości**. Zmień **kompilacji** akcji **zawartości** i zmień **Include w VSIX** właściwości **true**.
 
-Po wykonaniu poprzednich kroków *gramatyki* folder zostanie dodany do pakietu instalacji katalogu jako źródło repozytorium o nazwie "MyLang" ("MyLang" jest po prostu nazwą uściślania i może być dowolnym ciągiem unikatowy). Wszystkie gramatyki (*.tmlanguage* plików) i pliki motywów (*.tmtheme* pliki) w tym katalogu są pobierane jako rynkowych i zastępują wbudowane gramatyki dołączonym TextMate. Jeśli plik gramatyki zadeklarowane rozszerzenia są zgodne z rozszerzeniem otwierany plik, TextMate przechodzi.
+Po wykonaniu poprzednich kroków *gramatyki* folder zostanie dodany do pakietu instalacji katalogu jako źródło repozytorium o nazwie "MyLang" ("MyLang" jest po prostu nazwą uściślania i może być dowolnym ciągiem unikatowy). Wszystkie gramatyki ( *.tmlanguage* plików) i pliki motywów ( *.tmtheme* pliki) w tym katalogu są pobierane jako rynkowych i zastępują wbudowane gramatyki dołączonym TextMate. Jeśli plik gramatyki zadeklarowane rozszerzenia są zgodne z rozszerzeniem otwierany plik, TextMate przechodzi.
 
 ## <a name="create-a-simple-language-client"></a>Tworzenie prostego języka klienta
 
@@ -369,7 +369,7 @@ Istnieją trzy możliwe wartości szczegółowości śledzenia:
 * "Komunikaty o": śledzenie włączone, ale jedyną metodą identyfikator nazwy i odpowiedzi są śledzone.
 * "Pełne": śledzenie włączone; komunikat całego rpc jest śledzone.
 
-Jeśli śledzenie jest włączone zawartości są zapisywane do pliku w *%temp%\VisualStudio\LSP* katalogu. Dziennik w formacie nazewnictwa *[LanguageClientName]-log [sygnatury Datetime]*. Obecnie śledzenie można włączyć tylko w scenariuszach Otwórz folder. Otwieranie pojedynczy plik, aby aktywować aplikację serwer języka nie ma diagnostyki śledzenie pomocy technicznej.
+Jeśli śledzenie jest włączone zawartości są zapisywane do pliku w *%temp%\VisualStudio\LSP* katalogu. Dziennik w formacie nazewnictwa *[LanguageClientName]-log [sygnatury Datetime]* . Obecnie śledzenie można włączyć tylko w scenariuszach Otwórz folder. Otwieranie pojedynczy plik, aby aktywować aplikację serwer języka nie ma diagnostyki śledzenie pomocy technicznej.
 
 ### <a name="custom-messages"></a>Niestandardowe komunikaty
 

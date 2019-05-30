@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47dd3b1c75ab7ff206714509a82449d744a02952
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891690"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333526"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flagi bitowe używane przez określone polecenia
 Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmodyfikować, ustawiając jeden lub więcej bitów w postaci pojedynczej wartości. Te wartości są określane jako flag bitowych. Różne flagi bitowe używane przez interfejs API wtyczki kontroli źródła są szczegółowo opisane w tym miejscu, pogrupowane według funkcji, która korzysta z nich.

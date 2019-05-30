@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu | Dokumentacja firmy Microsoft'
+title: Ręczne wdrażanie ClickOnce zachowywanie znakowania aplikacji
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405832"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263424"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu
 Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadaj mu klientowi do publikowania i wdrażania, tradycyjnie miał odbiorcy do manifestu wdrażania aktualizacji i ponownie zaloguj się. Która nadal jest preferowaną metodą w większości przypadków, .NET Framework 3.5 pozwala na tworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, które mogą być wdrażane przez klientów bez konieczności ponownie wygenerować nowy manifest wdrożenia. Aby uzyskać więcej informacji, zobacz [aplikacji wdrażania technologii ClickOnce do testowania i produkcji serwerów bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -127,7 +127,7 @@ Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
 
 13. Wybierz **pliku**, **Zapisz** z menu i Zapisz w manifeście aplikacji. Zostanie wyświetlony monit podpisać manifest aplikacji, podczas zapisywania.
 
-14. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj **logowania jako plik certyfikatu** opcji, a następnie wybierz certyfikat z systemu plików, przy użyciu wielokropka (**...** ) przycisku.
+14. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj **logowania jako plik certyfikatu** opcji, a następnie wybierz certyfikat z systemu plików, przy użyciu wielokropka ( **...** ) przycisku.
 
      —lub—
 

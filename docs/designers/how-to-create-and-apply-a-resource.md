@@ -1,5 +1,5 @@
 ---
-title: Jak utworzyć i stosowanie zasobów
+title: Tworzenie i stosowanie zasobów
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,23 +11,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6622285d985d75c547428163b0b6cdaa8f699fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9eee42d9e3a48f77153e5bd94f72a975ab27843
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897588"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263395"
 ---
-# <a name="how-to-create-and-apply-a-resource"></a>Jak utworzyć i stosowanie zasobów
+# <a name="how-to-create-and-apply-a-resource"></a>Tworzenie i stosowanie zasobów
+
 Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostkach wielokrotnego użytku, o nazwie zasoby. Style umożliwiają ustawianie właściwości elementu i ponownie użyć tych ustawień, aby uzyskać spójny wygląd między wieloma elementami. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definiuje wygląd formantu i mogą być również stosowane jako zasób. Aby uzyskać więcej informacji, zobacz [Szybki Start: Style formantów](http://go.microsoft.com/fwlink/?LinkID=248239) i [Szybki Start: Kontrolowanie szablony](http://go.microsoft.com/fwlink/?LinkID=247982).
 
- Zawsze, gdy tworzysz nowy zasób z istniejącej właściwości [styl](/uwp/api/Windows.UI.Xaml.Style), lub `ControlTemplate`, **Utwórz zasób** okno dialogowe pozwala na zdefiniowanie zasobu na poziomie aplikacji w poziomie dokumentu lub na poziomie elementu. Te poziomy określają, w którym może korzystać z zasobów. Na przykład jeśli zdefiniujesz zasób na poziomie elementu, zasób może być stosowane tylko do elementu, na którym został utworzony. Istnieje również możliwość przechowywania zasobu w słowniku zasobów, oddzielnym pliku, który można użyć ponownie w innym projekcie.
+Zawsze, gdy tworzysz nowy zasób z istniejącej właściwości [styl](/uwp/api/Windows.UI.Xaml.Style), lub `ControlTemplate`, **Utwórz zasób** okno dialogowe pozwala na zdefiniowanie zasobu na poziomie aplikacji w poziomie dokumentu lub na poziomie elementu. Te poziomy określają, w którym może korzystać z zasobów. Na przykład jeśli zdefiniujesz zasób na poziomie elementu, zasób może być stosowane tylko do elementu, na którym został utworzony. Istnieje również możliwość przechowywania zasobu w [słownik zasobów](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references), które jest oddzielnym pliku, który można użyć ponownie w innym projekcie.
 
-### <a name="to-create-a-new-resource"></a>Aby utworzyć nowy zasób
+## <a name="create-a-new-resource"></a>Utwórz nowy zasób
 
 1. Plik XAML jest otwarty w Projektancie XAML Utwórz element lub wybierz element w okno konspektu dokumentu.
 
-2. W oknie dialogowym właściwości wybierz znacznik właściwości, która pojawia się jako symbol pole po prawej stronie wartości właściwości, a następnie wybierz **Konwertuj na nowy zasób**. Symbol białe pola wskazuje wartość domyślną, a symbol czarne pole zazwyczaj wskazuje, że zastosowano zasobu lokalnego.
+2. W **właściwości** oknie Wybierz znacznik właściwości, która pojawia się jako symbol pole po prawej stronie wartości właściwości, a następnie wybierz **Konwertuj na nowy zasób**. Symbol białe pola wskazuje wartość domyślną, a symbol czarne pole zazwyczaj wskazuje, że zastosowano zasobu lokalnego.
 
      Pojawi się odpowiednie okno dialogowego dla tworzenia zasobu. To okno dialogowe pojawia się podczas tworzenia zasobu z pędzla:
 
@@ -43,17 +44,17 @@ Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostk
 
     - Aby udostępnić zasób tylko element z której utworzono zasób lub jego elementy podrzędne, wybierz **w tym dokumencie**, a na liście rozwijanej wybierz **elementu**: **nazwy** .
 
-    - Aby zdefiniować zasób w pliku słownika zasobów, które mogą zostać ponownie użyte w innych projektach, kliknij przycisk **słownik zasobów**, a następnie wybierz istniejący plik słownika zasobów, takich jak **StandardStyles.xaml**, na liście rozwijanej.
+    - Aby zdefiniować zasób w [słownik zasobów](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) pliku, który może być ponownie używane w innych projektach, kliknij przycisk **słownik zasobów**. Wybierz istniejący plik słownika zasobów, takich jak **StandardStyles.xaml**, na liście rozwijanej.
 
 5. Wybierz **OK** przycisk, aby utworzyć zasób i zastosować go do elementu, z którego została utworzona.
 
-### <a name="to-apply-a-resource-to-an-element-or-property"></a>Aby zastosować zasób do elementu lub właściwości
+## <a name="apply-a-resource-to-an-element-or-property"></a>Stosowanie zasobu do elementu lub właściwości
 
 1. Okno konspektu dokumentu wybierz element, do której chcesz zastosować do zasobu.
 
 2. Wykonaj jedną z następujących czynności:
 
-   - Stosowanie zasobów do właściwości. W oknie dialogowym właściwości wybierz znacznik właściwości obok wartości właściwości, wybierz polecenie **zasobu lokalnego** lub **zasób systemowy**, a następnie wybierz zasób dostępny z wyświetlonej listy.
+   - Stosowanie zasobów do właściwości. W **właściwości** oknie Wybierz znacznik właściwości obok wartości właściwości, wybierz pozycję **zasobu lokalnego** lub **zasób systemowy**, a następnie wybierz zasób dostępny z wyświetlonej listy.
 
       Jeśli nie widzisz zasobów, która powinna się pojawić, może to być, ponieważ typ zasobu nie jest zgodny z typem właściwości.
 
@@ -64,11 +65,11 @@ Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostk
 
      Zasoby można zastosować, wszędzie tam, gdzie są one zgodne. Na przykład można zastosować zasób pędzla **pierwszego planu** właściwość <xref:Windows.UI.Xaml.Controls.TextBox> kontroli.
 
-### <a name="to-edit-a-resource"></a>Aby edytować zasobu
+## <a name="edit-a-resource"></a>Edytuj zasób
 
 1. Wybierz element, w obszarze kompozycji lub w oknie konspekt dokumentu.
 
-2. Wybierz znacznik właściwości domyślne lub lokalnych z prawej strony właściwości w oknie dialogowym właściwości, a następnie wybierz **Edytuj zasób** otworzyć **Edytuj zasób** okno dialogowe.
+2. Wybierz znacznik właściwości domyślne lub lokalnych z prawej strony właściwości w **właściwości** okna, a następnie wybierz **Edytuj zasób** otworzyć **Edytuj zasób** okno dialogowe.
 
 3. Modyfikowanie opcji dla zasobu.
 

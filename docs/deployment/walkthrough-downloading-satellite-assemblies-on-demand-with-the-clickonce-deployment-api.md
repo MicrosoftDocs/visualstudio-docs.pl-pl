@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce | Dokumentacja firmy Microsoft'
+title: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405926"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262970"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Przewodnik: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce
 Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu zestawów satelickich. A *zestawie satelickim* to zestaw, który zawiera zasoby aplikacji dla kultury innej niż aplikacja domyślna kultura.
@@ -54,7 +54,7 @@ Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu z
 
 4. Kliknij przycisk **pliki** kartę.
 
-5. Kliknij przycisk **wielokropka** przycisku (**...** ) i wybierz katalog zawierający wszystkie zestawy aplikacji i plików, w tym zestawy satelickie generowana z użyciem *Resgen.exe*. (Zestawu satelickiego mają nazwy w postaci  *\<isoCode > \ApplicationName.resources.dll*, gdzie \<isoCode > jest identyfikatorem języka, w formacie RFC 1766.)
+5. Kliknij przycisk **wielokropka** przycisku ( **...** ) i wybierz katalog zawierający wszystkie zestawy aplikacji i plików, w tym zestawy satelickie generowana z użyciem *Resgen.exe*. (Zestawu satelickiego mają nazwy w postaci  *\<isoCode > \ApplicationName.resources.dll*, gdzie \<isoCode > jest identyfikatorem języka, w formacie RFC 1766.)
 
 6. Kliknij przycisk **wypełniania** Aby dodać pliki do wdrożenia.
 

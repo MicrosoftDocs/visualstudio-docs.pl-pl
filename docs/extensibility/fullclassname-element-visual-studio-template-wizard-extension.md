@@ -1,5 +1,5 @@
 ---
-title: FullClassName, Element (rozszerzenie Kreatora szablonów programu Visual Studio) | Dokumentacja firmy Microsoft
+title: FullClassName, element (rozszerzenie Kreatora szablonów programu VS)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028b936cafbae60a0f58a9579a64041955632e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 3cf84842ab16a072484fe7665a3318960c6f4e3c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911937"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263641"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName, element (rozszerzenie Kreatora szablonów programu Visual Studio)
 W pełni kwalifikowaną nazwę klasy, która implementuje `IWizard` interfejsu.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT structure
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ef8b2d927fab7637d92ac8061b3580c16db96e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3fd1ab73a20b319af6c9464062113f4e8f2d64fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888958"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353010"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
 W tym artykule opisano, liczbę i warunki, na których jest uruchamiany warunkowego punktu przerwania.
@@ -39,9 +42,11 @@ public struct BP_PASSCOUNT {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-`dwPassCount` Liczba razy, aby przekazać za pośrednictwem punktu przerwania przed wyzwoleniem go.
+`dwPassCount`\
+Liczba razy, aby przekazać za pośrednictwem punktu przerwania przed wyzwoleniem go.
 
-`stylePassCount` Wartość z zakresu od [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) Liczba przebiegów wyliczenie, które określa styl punkt przerwania.
+`stylePassCount`\
+Wartość z zakresu od [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) Liczba przebiegów wyliczenie, które określa styl punkt przerwania.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest elementem członkowskim [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struktury.
@@ -55,7 +60,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)

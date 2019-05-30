@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccProperties function
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 519a17e7596a9cea479eeb24799724919d49bd45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c8037b69b537a5db3a8e547e5122032097b75fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433048"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353566"
 ---
 # <a name="sccproperties-function"></a>SccProperties, funkcja
 Funkcja ta wyświetla właściwości kontroli źródła dla pliku lub projektu.

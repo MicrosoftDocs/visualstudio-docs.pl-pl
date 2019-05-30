@@ -6,17 +6,17 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861696"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342176"
 ---
 # <a name="command-design"></a>Projektowanie poleceń
 Dodając polecenie do VSPackage, należy określić, gdzie jest wyświetlane, gdy jest dostępna i jak ma być obsługiwane.
@@ -36,7 +36,7 @@ Dodając polecenie do VSPackage, należy określić, gdzie jest wyświetlane, gd
 ## <a name="visual-studio-command-environment"></a>Środowisko polecenia w usłudze Visual Studio
  Program Visual Studio może obsługiwać dowolną liczbę pakietów VSPackage, a każdy może współtworzyć zawartość swój własny zestaw poleceń. Środowisko zawiera tylko polecenia, które są odpowiednie dla bieżącego zadania. Aby uzyskać więcej informacji, zobacz [polecenia dostępności](../../extensibility/internals/command-availability.md) i [wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md).
 
- Pakietu VSPackage, który definiuje nowe polecenia, menu, paski narzędzi lub menu skrótów informacje jego polecenia do programu Visual Studio w momencie instalacji za pośrednictwem wpisów rejestru dodawanych odwoływać się do zasobów w zestawach natywnego, zarządzanego. Każdy zasób, następnie odwołuje się do zasobu danych binarnych (*.cto*) plik, który jest generowany, gdy kompilujesz tabeli poleceń programu Visual Studio (*vsct*) pliku. Dzięki temu program Visual Studio zapewniają zestawy poleceń scalone, menu i paski narzędzi bez konieczności ładowania każdego zainstalowanego pakietu VSPackage.
+ Pakietu VSPackage, który definiuje nowe polecenia, menu, paski narzędzi lub menu skrótów informacje jego polecenia do programu Visual Studio w momencie instalacji za pośrednictwem wpisów rejestru dodawanych odwoływać się do zasobów w zestawach natywnego, zarządzanego. Każdy zasób, następnie odwołuje się do zasobu danych binarnych ( *.cto*) plik, który jest generowany, gdy kompilujesz tabeli poleceń programu Visual Studio (*vsct*) pliku. Dzięki temu program Visual Studio zapewniają zestawy poleceń scalone, menu i paski narzędzi bez konieczności ładowania każdego zainstalowanego pakietu VSPackage.
 
 ### <a name="command-organization"></a>Polecenie organizacji
  Środowisko umieszcza polecenia według grupy, priorytetu i menu.

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce | Dokumentacja firmy Microsoft'
+title: Adres URL pomocy technicznej wstępnie wymaganych składników wdrożenia ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79aec7a8882f87bc98f822d4fb4f0c1961bd69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928607"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263220"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Instrukcje: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymagania wstępne, które muszą być dostępne na komputerze klienckim, aby sprawdzić wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do uruchomienia aplikacji. Te zależności obejmują wymaganą minimalną wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], wersję systemu operacyjnego i dowolne zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], jednak nie zainstalują dowolną z tych wymagań wstępnych. Jeśli warunek wstępny nie zostanie znaleziony, po prostu zatrzymuje instalację i wyświetla okno dialogowe wyjaśniające, dlaczego instalacja nie powiodła się.

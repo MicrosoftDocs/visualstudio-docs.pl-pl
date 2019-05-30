@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eccfc06cd48513e7a72eb23bbde11188f2e50dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9062b1f3811b0b2b596cfb7fa016bca00143f332
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696879"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261068"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Debugger (wystąpienie wyjątku) ― okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Wystąpił wyjątek w programach. To okno dialogowe Raporty rodzaj zgłaszanego 
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)   
  [Najlepsze praktyki dotyczące wyjątków](https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
- [Obsługa wyjątków](https://msdn.microsoft.com/library/ccb11fe8-6938-41ac-b477-a183e85865b9)
+ [Obsługa wyjątków](/cpp/extensions/exception-handling-cpp-component-extensions)

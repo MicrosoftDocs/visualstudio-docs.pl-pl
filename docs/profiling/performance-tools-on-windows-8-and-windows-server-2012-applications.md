@@ -1,5 +1,5 @@
 ---
-title: Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012 | Dokumentacja firmy Microsoft
+title: Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798205"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262957"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012
 
@@ -109,7 +109,7 @@ Należy dodać opcji zbierania danych interakcji warstwy do uruchomienia profilo
 
 **Zbieranie danych Porada na komputerze zdalnym**
 
-Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs\_profiler\_**_\<platformy >_ **\_**  _\<Języka >_**.exe** plik wchodzącej w skład *%VSInstallDir%\Team Tools\Setups narzędzia* folderu maszynie z systemem Visual Studio komputer zdalny i zainstaluj go. Nie można użyć narzędzi profilowania w [zdalne debugowanie](../debugger/remote-debugging.md) Pobieranie pakietu.
+Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs\_profiler\_** _\<platformy >_ **\_**  _\<Języka >_ **.exe** plik wchodzącej w skład *%VSInstallDir%\Team Tools\Setups narzędzia* folderu maszynie z systemem Visual Studio komputer zdalny i zainstaluj go. Nie można użyć narzędzi profilowania w [zdalne debugowanie](../debugger/remote-debugging.md) Pobieranie pakietu.
 
 Możesz użyć [VSPerfCmd](../profiling/vsperfcmd.md) lub [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) do zbierania danych profilowania.
 

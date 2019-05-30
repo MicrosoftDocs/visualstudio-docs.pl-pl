@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RES_DATA_FLAGS enumeration
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfbf34af69accc3fa50e0648880b5f8633f1618a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7573d9bde08f69a7c7e7707d7631dc71e2d8d5e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888934"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350644"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 Określa, czy punkt przerwania danych jest emulowane lub wdrożonych w sprzętu.
@@ -37,8 +40,9 @@ public enum enum_BP_RES_DATA_FLAGS {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-BP_RES_DATA_EMULATED Określa, że punkt przerwania danych jest emulowane.
+## <a name="fields"></a>Pola
+`BP_RES_DATA_EMULATED`\
+Określa, że punkt przerwania danych jest emulowane.
 
 ## <a name="remarks"></a>Uwagi
 Używany do `dwFlags` członkiem [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struktury.
@@ -50,6 +54,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

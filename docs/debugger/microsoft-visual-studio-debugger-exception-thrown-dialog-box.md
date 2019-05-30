@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a684002360f59d33e61c40261afc1bfd515511e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9fd0035ca0764f3673e07b4e3289b87773c8349b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408521"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261339"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Debugger (wystąpienie wyjątku) ― okno dialogowe
 Wystąpił wyjątek w programach. To okno dialogowe Raporty rodzaj zgłaszanego wyjątku. Twój kod musi do obsługi tego wyjątku. Można wybrać jedną z następujących opcji do obsługi wyjątku:
@@ -44,4 +44,4 @@ Wystąpił wyjątek w programach. To okno dialogowe Raporty rodzaj zgłaszanego 
 ## <a name="see-also"></a>Zobacz też
 - [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)
 - [Najlepsze rozwiązania dotyczące wyjątków](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [Obsługa wyjątków](/cpp/windows/exception-handling-cpp-component-extensions)
+- [Obsługa wyjątków](/cpp/extensions/exception-handling-cpp-component-extensions)

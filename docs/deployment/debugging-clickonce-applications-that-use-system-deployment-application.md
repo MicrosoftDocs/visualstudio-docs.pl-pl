@@ -1,5 +1,5 @@
 ---
-title: Debugowanie aplikacji ClickOnce używających System.Deployment.Application | Dokumentacja firmy Microsoft
+title: Debugowanie aplikacji ClickOnce, używających System.Deployment.Application
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1efa919349535a2cb73ca80f2015ef0d0df93cd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d70697e3523fcb12384cb51415f73ebd210f45c9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929001"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262002"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Debugowanie aplikacji ClickOnce używających System.Deployment.Application
 W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia można skonfigurować sposób aktualizowania aplikacji. Jednakże, jeśli chcesz dostosować zaawansowane [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] funkcje wdrażania, konieczne będzie dostępu do modelu obiektu wdrożenia, które są dostarczane przez <xref:System.Deployment.Application>. Możesz użyć <xref:System.Deployment.Application> interfejsów API na potrzeby zaawansowanych zadań, takich jak:

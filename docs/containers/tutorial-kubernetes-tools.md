@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 55e18da9eb7e887ca49565725737cfb8c5aa719e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a778cac1be1ae86fbec197fa49b5d79b6ec8677
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820220"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261193"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 
@@ -27,7 +27,7 @@ Aby korzystać z tej nowej funkcji, należy:
 
 ::: moniker range="vs-2017"
 - Najnowszą wersję [programu Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) z *ASP.NET i tworzenie aplikacji internetowych* obciążenia.
-- [Narzędzi usługi Kubernetes dla programu Visual Studio](https://aka.ms/get-vsk8stools), która jest dostępna do pobrania osobno.
+- [Narzędzi usługi Kubernetes dla programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes), która jest dostępna do pobrania osobno.
 ::: moniker-end
 ::: moniker range="vs-2019"
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) z *ASP.NET i tworzenie aplikacji internetowych* obciążenia.
@@ -36,7 +36,7 @@ Aby korzystać z tej nowej funkcji, należy:
 ::: moniker range="vs-2017"
 - Jeśli chcesz opublikować w usłudze AKS za pomocą programu Visual Studio (*nie* wymagane do debugowania w usłudze AKS za pomocą usługi Azure Dev miejsca do magazynowania):
 
-    1. [AKS narzędzia publikowania](https://aka.ms/get-vsk8spublish), która jest dostępna do pobrania osobno.
+    1. [AKS narzędzia publikowania](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes), która jest dostępna do pobrania osobno.
 
     1. Klaster Azure Kubernetes Service. Aby uzyskać więcej informacji, zobacz [tworzenia klastra usługi AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Pamiętaj, aby [łączenia z klastrem](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z deweloperskiej stacji roboczej.
 

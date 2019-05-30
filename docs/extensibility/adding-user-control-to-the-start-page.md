@@ -7,18 +7,18 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c662374b8ed0abc7e1c178fb4ff07d5033de8a54
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891818"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352306"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Dodaj kontrolkę użytkownika do strony początkowej
 
@@ -179,7 +179,7 @@ Aby udostępnić ten formant do projektu strony początkowej w pliku projektu st
 
 1. Skopiuj plik XAML i pomocnicze pliki tekstowe lub znaczników pliki do *%USERPROFILE%\My 2015\StartPages Documents\Visual Studio\\*  folderu.
 
-2. Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w _folder instalacji programu Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.
+2. Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w _folder instalacji programu Visual Studio_ **\Common7\IDE\ PrivateAssemblies\\** .
 
 3. Wpisz w wierszu polecenia programu Visual Studio **devenv /rootsuffix Exp** otworzyć doświadczalne wystąpienie programu Visual Studio.
 

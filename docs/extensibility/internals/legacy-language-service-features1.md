@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework]
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2a1eea79b0ac2d80fb2b75043d4462e73928798
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8fead42087699deb257b29093ee4349bbc8ef78
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909557"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333637"
 ---
 # <a name="legacy-language-service-features"></a>Funkcje usługi starszego języka
 Usługa języka zarządzanego pakietu framework (MPF) może obsługiwać co najmniej jeden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji, takich jak wyróżnianie składni, funkcję IntelliSense i weryfikacji punktu przerwania. Poszczególne funkcje można zaimplementować niezależna od innych, ale wymaga analizator i skaner z wyjątkiem wyróżniania składni, która wymaga tylko skaner.

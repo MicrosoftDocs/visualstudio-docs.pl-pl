@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928899"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263299"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Omówienie wdrażania w programie Visual Studio
 
@@ -118,7 +118,7 @@ Samouczki:
 
 - [Wdrażanie aplikacji .NET Core za pomocą narzędzia publikowania](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publikowanie aplikacji platformy ASP.NET core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Wdrażanie w Visual C++](/cpp/ide/deployment-in-visual-cpp)
+- [Wdrażanie w Visual C++](/cpp/windows/deployment-in-visual-cpp)
 - [Wdrażanie aplikacji platformy uniwersalnej systemu Windows](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publikowanie aplikacji w języku Node.js na platformie Azure, za pomocą narzędzia Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publikowanie aplikacji w języku Python w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f989e5ec028f3a296585c54eb17b54f4da7c1cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809318"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260474"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodów
 
@@ -28,15 +28,15 @@ Aby dowiedzieć się, jak Generowanie danych metryk kodu w programie Visual Stud
 
 Na poniższej liście przedstawiono kod wyników metryk, które oblicza programu Visual Studio:
 
-- **Indeks łatwości utrzymania** — oblicza wartość indeksu od 0 do 100, która reprezentuje względną łatwość utrzymania kodu. Wysoka wartość oznacza lepsze łatwość konserwacji. Klasyfikacje oznaczone kolorem umożliwia szybką identyfikację aktywnych problemów w kodzie. Ocena zielony od 20 do 100 i wskazuje, że kod ma dużą łatwość utrzymania. Żółty ocena jest od 10 do 19 i wskazuje, że kod jest umiarkowanie łatwego w utrzymaniu. Ocena czerwony jest ma klasyfikację od 0 do 9 i wskazuje niski łatwość utrzymania.
+- **Indeks łatwości utrzymania** — oblicza wartość indeksu od 0 do 100, która reprezentuje względną łatwość utrzymania kodu. Wysoka wartość oznacza lepsze łatwość konserwacji. Klasyfikacje oznaczone kolorem umożliwia szybką identyfikację aktywnych problemów w kodzie. Ocena zielony od 20 do 100 i wskazuje, że kod ma dużą łatwość utrzymania. Żółty ocena jest od 10 do 19 i wskazuje, że kod jest umiarkowanie łatwego w utrzymaniu. Ocena czerwony jest ma klasyfikację od 0 do 9 i wskazuje niski łatwość utrzymania. Aby uzyskać więcej informacji, zobacz [zakres indeks łatwości utrzymania i znaczenie](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) wpis w blogu.
 
-- **Złożoność Cyklomatyczna** -mierzy strukturalnych złożoności kodu. Zostanie utworzony, obliczając liczbę różne ścieżki przepływu programu. Program, który zawiera przepływ sterowania złożonych będzie wymagać więcej testów do osiągnięcia pokrycia kodu dobre i będzie mniej łatwego w utrzymaniu.
+- **Złożoność Cyklomatyczna** -mierzy strukturalnych złożoności kodu. Zostanie utworzony, obliczając liczbę różne ścieżki przepływu programu. Program, który zawiera przepływ sterowania złożonych wymaga więcej testów do osiągnięcia pokrycia kodu dobre i jest mniej łatwego w utrzymaniu. Aby uzyskać więcej informacji, zobacz [Wikipedia wpis dla złożoność cyklomatyczna](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Głębokość dziedziczenia** — wskazuje liczbę definicji klasy, które rozszerzenia w katalogu głównym hierarchii klas. Głębiej hierarchii coraz trudniejszy do zrozumienia, gdzie są zdefiniowane określonej metody i pola może być lub / i zmieniony.
+- **Głębokość dziedziczenia** — wskazuje liczbę różnych klas dziedziczących od siebie nawzajem, aż do klasy bazowej. Głębokość dziedziczenia jest podobny do klasy sprzężenia, w tym zmiany w klasie bazowej może mieć wpływ na dowolne klasy dziedziczone. Im większa tej liczby, bardziej dziedziczenia i wyższa potencjalnych modyfikacje klasy bazowej spowodować podziału zmianie. Głębokość dziedziczenia niską wartość jest prawidłowy, i o wysokiej wartości jest nieodpowiedni. 
 
-- **Klasa sprzężenia** -mierzy sprzężenia unikatowy klasy za pomocą parametrów, zmienne lokalne, zwracanych typów, wywołania metody, wystąpień generyczny lub szablonu, klas bazowych, implementacji interfejsu, pól zdefiniowanych dla typów zewnętrznych i Atrybut dekoracji. Projektowania oprogramowania dobre nakazują, typów i metod powinni mieć wysoką spójność i mało sprzężenia. Sprzężenie wysoki wskazuje projekt, który jest trudny do ponownego użycia i utrzymywać ze względu na jej wielu współzależności na inne typy.
+- **Klasa sprzężenia** -mierzy sprzężenia unikatowy klasy za pomocą parametrów, zmienne lokalne, zwracanych typów, wywołania metody, wystąpień generyczny lub szablonu, klas bazowych, implementacji interfejsu, pól zdefiniowanych dla typów zewnętrznych i Atrybut dekoracji. Projektowania oprogramowania dobre nakazują, typów i metod powinni mieć wysoką spójność i mało sprzężenia. Sprzężenie wysoki wskazuje projekt, który jest trudny do ponownego użycia i utrzymywać ze względu na jej wielu współzależności na inne typy. Aby uzyskać więcej informacji, zobacz [sprzężenia klas](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) wpis w blogu.
 
-- **Wiersze kodu** — Wskazuje przybliżoną liczbę wierszy w kodzie. Liczba zależy od kodu IL i dlatego nie dokładną liczbę wierszy w pliku kodu źródłowego. Bardzo wysoka liczba może wskazywać typ lub metoda próbuje wykonać dużo pracy i powinien być podziału. Może również wskazywać, że typ lub metoda może być trudne do utrzymania.
+- **Wiersze kodu** — Wskazuje przybliżoną liczbę wierszy w kodzie. Liczba zależy od kodu IL i dlatego nie dokładną liczbę wierszy w pliku kodu źródłowego. Wysoka liczba może wskazywać, że typ lub metoda próbuje wykonać dużo pracy i można podzielić. Może również wskazywać, że typ lub metoda może być trudne do utrzymania.
 
    > [!NOTE]
    > [Wersji wiersza polecenia](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) kodu narzędzie metryki liczby rzeczywiste wiersze kodu, ponieważ analizuje ona kodu źródłowego, zamiast IL.

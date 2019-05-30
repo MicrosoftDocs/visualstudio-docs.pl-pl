@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie dzienników kontenera i zmiennych środowiskowych i dostęp do systemu plików.
+title: Dzienniki kontenerów, zmienne środowiskowe i dostęp do systemu plików
 description: W tym artykule opisano, jak zwiększyć możliwości debugowanie i diagnozowanie aplikacji opartych na kontenerach w programie Visual Studio za pomocą okna narzędzi, aby zobaczyć, co się dzieje w kontenerach hostujących aplikację.
 author: ghogen
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 05/06/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a686d2e361f40ad4040ad112845e99ab844a3c15
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: b8e8e2db3f8f6e5aa60f3fa593caf017c349dca8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135606"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261198"
 ---
 # <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Jak wyświetlać i diagnozowanie kontenerów w programie Visual Studio
 

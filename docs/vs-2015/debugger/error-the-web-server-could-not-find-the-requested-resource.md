@@ -16,14 +16,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 656ebd6f8b1e720afd129bca3d53712526fc914f
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b3904a9fcb2e15190018dbc4caabe925690e023f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869197"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263709"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Błąd: Serwer sieci Web nie można znaleźć żądanego zasobu
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Błąd: Serwer internetowy nie mógł znaleźć żądanego zasobu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ze względu na zagadnienia dotyczące zabezpieczeń usługi IIS zwrócił błąd ogólny.  
@@ -35,5 +35,5 @@ Ze względu na zagadnienia dotyczące zabezpieczeń usługi IIS zwrócił błąd
  Aby uzyskać więcej informacji na temat rozwiązywania problemów usług IIS, zobacz [zarządzania usługami IIS i administrowanie](http://go.microsoft.com/fwlink/?LinkId=255872).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Narzędzia zabezpieczeń dotyczące narzędzia UrlScan](https://www.iis.net/downloads/microsoft/urlscan)   
+ [Narzędzia zabezpieczeń dotyczące narzędzia UrlScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [Błąd: Serwer internetowy został zablokowany i blokuje czasownik DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

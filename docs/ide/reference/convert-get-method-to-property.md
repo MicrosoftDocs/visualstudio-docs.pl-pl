@@ -1,5 +1,5 @@
 ---
-title: Konwertowanie metody Get na właściwość i konwersja właściwości na metodę Get
+title: Konwertowanie metody Get na właściwość; Konwertowanie właściwości na metodę Get
 ms.date: 01/26/2018
 ms.topic: reference
 ms.devlang: csharp
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e6177ac701f3792aa49df72584b8bb3cccefd23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87fc623f781c54267fa70da7c5d2a341823e35ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968613"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263095"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konwertowanie metody Get na właściwość / skonwertować właściwości refaktoryzacje metody Get
 

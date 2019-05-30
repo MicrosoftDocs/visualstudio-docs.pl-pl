@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_RESOLUTION_INFO structure
 ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d89a871abf6a62dec712ce9d9ae486496c775b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dca7dcac5dc7ccf4d30d9b61165771ba464bbcf9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925168"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351830"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 W tym artykule opisano rozwiązania punktu przerwania błędu, takie jak lokalizacja, program i wątku.
@@ -47,17 +50,23 @@ public struct BP_ERROR_RESOLUTION_INFO {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-`dwFields` Kombinacja wartości z [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) wyliczenie opisujące są wypełnione pola, które tej struktury.
+`dwFields`\
+Kombinacja wartości z [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) wyliczenie opisujące są wypełnione pola, które tej struktury.
 
-`bpResLocation` [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Unii, który określa lokalizację rozwiązania punktu przerwania.
+`bpResLocation`\
+[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Unii, który określa lokalizację rozwiązania punktu przerwania.
 
-`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje aplikacji, w którym wystąpił błąd punktu przerwania.
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje aplikacji, w którym wystąpił błąd punktu przerwania.
 
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątku, na którym działa aplikacja, która wygenerowała błąd punktu przerwania.
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątku, na którym działa aplikacja, która wygenerowała błąd punktu przerwania.
 
-`bstrMessage` Ciąg zawierający wszystkie komunikaty ostrzeżeń lub błędów wynikających z rozwiązania tego błędu.
+`bstrMessage`\
+Ciąg zawierający wszystkie komunikaty ostrzeżeń lub błędów wynikających z rozwiązania tego błędu.
 
-`dwType` Wartość z zakresu od [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) wyliczenie, który określa typ błąd punktu przerwania.
+`dwType`\
+Wartość z zakresu od [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) wyliczenie, który określa typ błąd punktu przerwania.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest zwracana z [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) metody.
@@ -69,7 +78,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

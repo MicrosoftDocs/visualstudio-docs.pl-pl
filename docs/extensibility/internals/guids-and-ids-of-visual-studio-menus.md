@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9f858bec8ff025061603c72eda4ff6fc6d36549c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420627"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263627"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Menu identyfikatory GUID i identyfikatory programu Visual Studio
 W tym artykule wylicza wartości Identyfikator GUID i identyfikator menu i grup na pasku menu programu Visual Studio. Te wartości są zdefiniowane w *vsct* pliki, które są zainstalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia definiowane w IDE, menu i grupy](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -56,6 +56,7 @@ W tym artykule wylicza wartości Identyfikator GUID i identyfikator menu i grup 
 |Kompilacja|IDM_VS_MENU_BUILD|
 |Format|IDM_VS_MENU_FORMAT|
 |Narzędzia|IDM_VS_MENU_TOOLS|
+|Rozszerzenia|IDM_VS_MENU_EXTENSIONS|
 |Okno|IDM_VS_MENU_WINDOW|
 |Dodatki|IDM_VS_MENU_ADDINS|
 |Społeczność|IDM_VS_MENU_COMMUNITY|

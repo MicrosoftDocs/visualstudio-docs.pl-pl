@@ -10,12 +10,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f565f4f8294fc7f1a467e20ad17a793dd3a09bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 81043cc87dd659f14ec634dc14990956a0864f9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097092"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263576"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Dodawanie funkcji wyszukiwania do okna narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
      Kontrolka wyszukiwania pojawi się w górnej części okna narzędzia z **wyszukiwania** znaku wodnego oraz ikonę szkła powiększanie. Jednak wyszukiwania nie działa jeszcze, ponieważ proces wyszukiwania nie została zaimplementowana.  
   
 ## <a name="to-add-the-search-implementation"></a>Aby dodać implementacji wyszukiwania  
- Po włączeniu wyszukiwania na <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, jak w poprzedniej procedurze okna narzędzia tworzy hosta wyszukiwania. Ten host konfiguruje i zarządza procesami wyszukiwania, które pojawiają się w wątku tła. Ponieważ <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> klasa zarządza tworzenia hosta wyszukiwania i ustawienia wyszukiwania, wystarczy utworzyć zadanie wyszukiwania i stanowią metodę wyszukiwania. Proces wyszukiwania występuje w wątku w tle i wywołania formant okna narzędzia występuje w wątku interfejsu użytkownika. W związku z tym, należy użyć <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metodę, aby zarządzać wszelkie wywołania, wprowadzone w radzenia sobie z kontrolką.  
+ Po włączeniu wyszukiwania na <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, jak w poprzedniej procedurze okna narzędzia tworzy hosta wyszukiwania. Ten host konfiguruje i zarządza procesami wyszukiwania, które pojawiają się w wątku tła. Ponieważ <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> klasa zarządza tworzenia hosta wyszukiwania i ustawienia wyszukiwania, wystarczy utworzyć zadanie wyszukiwania i stanowią metodę wyszukiwania. Proces wyszukiwania występuje w wątku w tle i wywołania formant okna narzędzia występuje w wątku interfejsu użytkownika. W związku z tym, należy użyć [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) metodę, aby zarządzać wszelkie wywołania, wprowadzone w radzenia sobie z kontrolką.  
   
 1. W pliku TestSearch.cs, Dodaj następujący kod `using` instrukcji:  
   
@@ -160,7 +160,7 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
   
     - Zastępuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> metodę w celu utworzenia zadania wyszukiwania.  
   
-    - Zastępuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metody w celu przywrócenia stanu pola tekstowego. Ta metoda jest wywoływana, gdy użytkownik anuluje zadania wyszukiwania i po użytkownik ustawia lub unsets opcji lub filtrów. Zarówno <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> są wywoływane w wątku interfejsu użytkownika. W związku z tym, nie trzeba w tym polu tekstowym za dostęp <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metody.  
+    - Zastępuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metody w celu przywrócenia stanu pola tekstowego. Ta metoda jest wywoływana, gdy użytkownik anuluje zadania wyszukiwania i po użytkownik ustawia lub unsets opcji lub filtrów. Zarówno <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> są wywoływane w wątku interfejsu użytkownika. W związku z tym, nie trzeba w tym polu tekstowym za dostęp [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) metody.  
   
     - Tworzy klasę o nazwie `TestSearchTask` tej, która dziedziczy <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, która udostępnia domyślną implementację elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.  
   

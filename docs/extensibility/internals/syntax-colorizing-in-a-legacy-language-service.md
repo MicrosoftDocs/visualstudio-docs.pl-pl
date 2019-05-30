@@ -8,17 +8,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429908"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331130"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Kolorowanie składni w starszej wersji usługi językowej
 Kolorowanie składni jest funkcją, która powoduje, że różne elementy języka programowania mają być wyświetlane w pliku źródłowego w różnych kolorach i stylów. Aby obsługiwać tę funkcję, musisz podać analizator i skaner identyfikujące typów elementy leksykalne lub tokenów w pliku. Wiele języków rozróżnia słowa kluczowe, ograniczniki (na przykład nawiasów zwykłych lub klamrowych) i komentarze, kolorowanie je na różne sposoby.
@@ -34,7 +34,7 @@ Kolorowanie składni jest funkcją, która powoduje, że różne elementy język
  Informacje o kolorach powrót do edytora jest indeks listy elementów z możliwością kolorowania. Każdy element z możliwością kolorowania określa wartość koloru i zestaw atrybutów czcionek, takie jak pogrubienie lub przekreślenie. Edytor dostarcza zestaw elementy z możliwością kolorowania domyślne, których można użyć usługi języka. To wszystko, co należy zrobić, należy określić indeks odpowiedni kolor dla każdego typu tokenu. Można jednak udostępniają zestaw niestandardowych elementów z możliwością kolorowania i indeksy, które podasz tokenów i odwoływać się do listy elementów z możliwością kolorowania zamiast domyślnej listy. Należy także ustawić `RequestStockColors` wpisu rejestru na 0 (lub nie określaj `RequestStockColors` wpis w ogóle) do obsługi kolorów niestandardowych. Można ustawić ten wpis rejestru o nazwany parametr do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybutów zdefiniowanych przez użytkownika. Aby uzyskać więcej informacji na temat rejestrowania usługi językowej i ustawianie jego opcji, zobacz [rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
 ## <a name="custom-colorable-items"></a>Niestandardowe elementy z możliwością kolorowania
- Aby przekazać własne niestandardowe elementy z możliwością kolorowania, konieczne jest przesłonięcie <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> i <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metody <xref:Microsoft.VisualStudio.Package.LanguageService> klasy. Pierwsza metoda zwraca liczbę niestandardowych elementów z możliwością kolorowania, które obsługuje usługi języka, a druga pobiera niestandardowego elementu z możliwością kolorowania według indeksu. Możesz utworzyć domyślną listę elementów z możliwością kolorowania niestandardowych. W Konstruktorze usługi języka wszystko, co należy zrobić to podać każdego elementu z możliwością kolorowania o nazwie. Program Visual Studio automatycznie obsługuje przypadek, gdy użytkownik wybierze inny zbiór elementów z możliwością kolorowania. Ta nazwa jest wyświetlana w **czcionki i kolory** strony właściwości w **opcje** okno dialogowe (dostępne w programie Visual Studio **narzędzia** menu) i określa tę nazwę, która kolor przesłaniany przez użytkownika. Opcje użytkownika są przechowywane w pamięci podręcznej w rejestrze i uzyskują nazwę koloru. **Czcionki i kolory** strony właściwości wyświetla listę wszystkich nazw kolorów w kolejności alfabetycznej, dzięki czemu można grupować kolory niestandardowe, poprzedzając każda nazwa koloru z Twoją nazwą języka; na przykład "**TestLanguage - Comment**"i"**TestLanguage — słowo kluczowe**". Lub można grupować według typu, z możliwością kolorowania elementów "**komentarz (TestLanguage)**"i"**— słowo kluczowe (TestLanguage)**". Preferowane jest grupowanie według nazwy języka.
+ Aby przekazać własne niestandardowe elementy z możliwością kolorowania, konieczne jest przesłonięcie <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> i <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metody <xref:Microsoft.VisualStudio.Package.LanguageService> klasy. Pierwsza metoda zwraca liczbę niestandardowych elementów z możliwością kolorowania, które obsługuje usługi języka, a druga pobiera niestandardowego elementu z możliwością kolorowania według indeksu. Możesz utworzyć domyślną listę elementów z możliwością kolorowania niestandardowych. W Konstruktorze usługi języka wszystko, co należy zrobić to podać każdego elementu z możliwością kolorowania o nazwie. Program Visual Studio automatycznie obsługuje przypadek, gdy użytkownik wybierze inny zbiór elementów z możliwością kolorowania. Ta nazwa jest wyświetlana w **czcionki i kolory** strony właściwości w **opcje** okno dialogowe (dostępne w programie Visual Studio **narzędzia** menu) i określa tę nazwę, która kolor przesłaniany przez użytkownika. Opcje użytkownika są przechowywane w pamięci podręcznej w rejestrze i uzyskują nazwę koloru. **Czcionki i kolory** strony właściwości wyświetla listę wszystkich nazw kolorów w kolejności alfabetycznej, dzięki czemu można grupować kolory niestandardowe, poprzedzając każda nazwa koloru z Twoją nazwą języka; na przykład "**TestLanguage - Comment**"i"**TestLanguage — słowo kluczowe**". Lub można grupować według typu, z możliwością kolorowania elementów "**komentarz (TestLanguage)** "i" **— słowo kluczowe (TestLanguage)** ". Preferowane jest grupowanie według nazwy języka.
 
 > [!CAUTION]
 > Zdecydowanie zaleca się obejmują nazwę języka w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania.

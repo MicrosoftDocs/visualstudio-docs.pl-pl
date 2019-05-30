@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901356"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262132"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debugowanie techniki i narzędzia, aby ułatwić tworzenie lepszego kodu
 
@@ -294,7 +294,7 @@ Poniżej przedstawiono kilka ważnych wskazówki dotyczące obsługi wyjątków:
     }
     ```
 
-* Dla nieznanego funkcje, które zawierają w swojej aplikacji, expecially tych interakcji z danymi zewnętrznymi (np. żądania sieci web) zapoznaj się z dokumentacją, aby zobaczyć, jakie wyjątki funkcji będzie prawdopodobnie zgłaszany. Może to być kluczowych informacji do obsługi błędów właściwe i do debugowania aplikacji.
+* Dla nieznanego funkcje, które zawierają w swojej aplikacji, zwłaszcza tych, które wchodzenie w interakcje z danymi zewnętrznymi (np. żądania sieci web) zapoznaj się z dokumentacją, aby zobaczyć, jakie wyjątki funkcji będzie prawdopodobnie zgłaszany. Może to być kluczowych informacji do obsługi błędów właściwe i do debugowania aplikacji.
 
 Dla przykładowej aplikacji, należy naprawić `SerializationException` w `GetJsonData` metody, zmieniając `4o` do `40`.
 

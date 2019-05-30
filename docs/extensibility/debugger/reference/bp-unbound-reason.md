@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62881788"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350555"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Zapewnia powodów, dla którego punkt przerwania został niepowiązanej.
@@ -43,14 +46,18 @@ public enum enum_BP_UNBOUND_REASON {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-BPUR_UNKNOWN przyczyną jest nieznany.
+## <a name="fields"></a>Pola
+`BPUR_UNKNOWN`\
+Przyczyną jest nieznany.
 
-BPUR_CODE_UNLOADED kodu, który zawiera punkt przerwania został zwolniony.
+`BPUR_CODE_UNLOADED`\
+Kod, który zawiera punkt przerwania został zwolniony.
 
-BPUR_BREAKPOINT_REBIND punkt przerwania ma zostało odbitych do innej lokalizacji. To jest wykonywane podczas edycji i kontynuowania działania w przypadku, gdy punkt przerwania lub gdy punkt przerwania jest powiązana z pliku ze ścieżką, która nie jest już prawidłowy.
+`BPUR_BREAKPOINT_REBIND`\
+Punkt przerwania ma zostało odbitych do innej lokalizacji. To jest wykonywane podczas edycji i kontynuowania działania w przypadku, gdy punkt przerwania lub gdy punkt przerwania jest powiązana z pliku ze ścieżką, która nie jest już prawidłowy.
 
-BREAKPOINT_ERROR BPUR_ punkt przerwania jest określana jest błędny po jest powiązany. Dzieje się to do zarządzanego punktów przerwania, którego warunki nie są już prawidłowe.
+`BPUR_ BREAKPOINT_ERROR`\
+Punkt przerwania jest określana jest błędny po jest powiązany. Dzieje się to do zarządzanego punktów przerwania, którego warunki nie są już prawidłowe.
 
 ## <a name="remarks"></a>Uwagi
 Zwrócone przez [getreason —](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) metody.
@@ -62,6 +69,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

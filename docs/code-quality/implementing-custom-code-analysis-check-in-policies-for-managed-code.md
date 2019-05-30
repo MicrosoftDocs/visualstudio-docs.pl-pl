@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
+title: Zasady ewidencjonowania analizy kodu niestandardowego dla kodu zarządzanego
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c32164ef319199171b75379823dc021cfd886d74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815793"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260840"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementowanie niestandardowych zasad zaewidencjonowania analizy kodu dla kodu zarządzanego
 
@@ -79,7 +79,7 @@ Aby utworzyć niestandardowy zestaw reguł dla projektu DevOps platformy Azure, 
 
 3. W **zasad ewidencjonowania** listy, kliknij dwukrotnie **analizy kodu**i upewnij się, że **wymusić analizy kodu dla zarządzanego kodu** pole wyboru jest zaznaczone.
 
-4. W **Uruchom ten zestaw reguł** kliknij  **\<z kontroli źródła wybierz zestaw reguł >**.
+4. W **Uruchom ten zestaw reguł** kliknij  **\<z kontroli źródła wybierz zestaw reguł >** .
 
 5. Wpisz ścieżkę pliku zestawu reguł zasad zaewidencjonowania w kontroli wersji.
 
@@ -114,6 +114,6 @@ Należy określić zestaw reguł zasad ewidencjonowania w projekcie jako zestaw 
 
 6. Ignorowanie kodu w składników innych firm, wybierz **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
 
-7. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.
+7. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >** .
 
 8. Określ lokalną wersję pliku zestawu reguł zasad ewidencjonowania.

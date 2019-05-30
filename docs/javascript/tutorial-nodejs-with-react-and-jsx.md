@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1283b447f750c3485029085d2669215abbf65dfd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fc45c25dcc9de1cdf1991525401e2d53bd86cdb3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695980"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261990"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -378,7 +378,7 @@ W poprzedniej sekcji debuger jest dołączony do kodu w języku Node.js po stron
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Można również ustawić `--remote-debugging-port` flagę podczas uruchamiania przeglądarki, wybierając **przeglądanie za pomocą...**  > z **debugowania** narzędzi, wybierając **Dodaj**, a następnie ustawienie flagi **argumenty** pola. Użyj innej nazwy przyjazne przeglądarki, takich jak **dla programu Chrome przy użyciu debugowania**. Aby uzyskać więcej informacji, zobacz [wersji](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    > Można również ustawić `--remote-debugging-port` flagę podczas uruchamiania przeglądarki, wybierając **przeglądanie za pomocą...**  > z **debugowania** narzędzi, wybierając **Dodaj**, a następnie ustawienie flagi **argumenty** pola. Użyj innej nazwy przyjazne przeglądarki, takich jak **dla programu Chrome przy użyciu debugowania**. Aby uzyskać więcej informacji, zobacz [wersji](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 

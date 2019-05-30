@@ -1,5 +1,5 @@
 ---
-title: Wyzwalacz wstrzymania, wznowienia i zdarzeń w tle podczas debugowania platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
+title: Wyzwalaj zdarzenia wstrzymywanie/wznawianie/tła podczas debugowania platformy uniwersalnej systemu Windows
 ms.custom: seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c0c5c6a1bfb161f8eed37cbf9c95740596977852
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: aefa6bad31b15445ab4b294f8c2e8a80e320e88c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388499"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263345"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w tle podczas debugowania aplikacji platformy UWP w programie Visual Studio
 Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elementu) określa stan wykonania aplikacji — uruchamianie, wstrzymywanie, wznawianie i przerywa aplikację w odpowiedzi na działania użytkownika i stan urządzenia. Podczas debugowania, Windows powoduje wyłączenie tych zdarzeń aktywacji. W tym temacie opisano, jak wyzwolenie tych zdarzeń w debugerze.

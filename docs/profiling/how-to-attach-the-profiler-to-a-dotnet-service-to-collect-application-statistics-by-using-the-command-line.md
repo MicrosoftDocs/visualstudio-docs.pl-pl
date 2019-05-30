@@ -1,5 +1,5 @@
 ---
-title: Dołączanie profilera do usługi .NET w celu zbierania statystyk aplikacji
+title: Dołącz profiler do usługi .NET w celu zbierania statystyk aplikacji
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a476ea94506800679c51b4d9081aeecdfb92f273
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 32aa82654d55496c3d407f59712a8b7adba56b9a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439621"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261551"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: Dołączanie profilera do usługi .NET w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do .NET Framework, usługi i zbierania statystyk wydajności przy użyciu metody próbkowania.

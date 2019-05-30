@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3 interface
 ms.assetid: c27c2a14-300b-4535-be22-767c83602f69
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05f5390bed584ac46368b7ffb7455abb4d30064e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7d00f24505de763d85d4d454d6f3bde459653689
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413968"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352734"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]

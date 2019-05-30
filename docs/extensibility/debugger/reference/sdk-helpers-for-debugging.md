@@ -9,17 +9,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460907"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329212"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocnicy zestawu SDK do debugowania
 Te funkcje i deklaracji są funkcje pomocnicze globalnego dotyczące implementowania silniki debugowania, ewaluatory wyrażeń i dostawców symboli w języku C++.
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 > W większości przypadków, metryki będą zapisywane w kluczu HKEY_LOCAL_MACHINE. Jednak czasami HKEY_CURRENT_USER będzie klucz miejsca docelowego. Dbgmetric.lib obsługuje oba klucze. Podczas pobierania metrykę, przeszukuje HKEY_CURRENT_USER pierwszy, a następnie HKEY_LOCAL_MACHINE. Podczas metrykę, parametr określa, które klucz najwyższego poziomu do użycia.
 
- *[klucz rejestru]*\
+ *[klucz rejestru]* \
 
  `Software`\
 
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[wersja główny]*\
+ *[wersja główny]* \
 
- *[metryki główny]*\
+ *[metryki główny]* \
 
- *[type metryki]*\
+ *[type metryki]* \
 
  *[Metryka] = [wartość metryki]*
 
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- *[identyfikator guid aparatu]*\
+ *[identyfikator guid aparatu]* \
 
- `CLSID` = *[identyfikator guid klasy]*
+ `CLSID` =  *[identyfikator guid klasy]*
 
  *[Metryka] = [wartość metryki]*
 
@@ -288,9 +288,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- `0` = *[guid dostawcy portu]*
+ `0` =  *[guid dostawcy portu]*
 
- `1` = *[guid dostawcy portu]*
+ `1` =  *[guid dostawcy portu]*
 
 |Symbol zastępczy|Opis|
 |-----------------|-----------------|
@@ -299,13 +299,13 @@ HRESULT EnumMetricSections(
 |*[guid dostawcy portu]*|Identyfikator GUID dostawcy portu, jeśli istnieje. Wiele aparaty debugowania Użyj dostawcy portu domyślnego i w związku z tym nie należy określać ich własnego dostawcy. W tym przypadku podklucz `PortSupplier` będą nieobecne.|
 
 ### <a name="port-suppliers"></a>Dostawcy portów
- Poniżej znajduje się organizacja metryki dostawcy portu w rejestrze. `PortSupplier` jest to nazwa typu metryki dla dostawcy portu i odpowiada *[type metryki]*.
+ Poniżej znajduje się organizacja metryki dostawcy portu w rejestrze. `PortSupplier` jest to nazwa typu metryki dla dostawcy portu i odpowiada *[type metryki]* .
 
  `PortSupplier`\
 
- *[guid dostawcy portu]*\
+ *[guid dostawcy portu]* \
 
- `CLSID` = *[identyfikator guid klasy]*
+ `CLSID` =  *[identyfikator guid klasy]*
 
  *[Metryka] = [wartość metryki]*
 
@@ -317,15 +317,15 @@ HRESULT EnumMetricSections(
 |*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje ten dostawcy portu|
 
 ### <a name="symbol-providers"></a>Symbol dostawców
- Poniżej znajduje się organizacja metryki dostawca symboli w rejestrze. `SymbolProvider` jest nazwą typu metryki dla dostawcy symboli i odpowiada *[type metryki]*.
+ Poniżej znajduje się organizacja metryki dostawca symboli w rejestrze. `SymbolProvider` jest nazwą typu metryki dla dostawcy symboli i odpowiada *[type metryki]* .
 
  `SymbolProvider`\
 
- *[identyfikator guid dostawcy symbol]*\
+ *[identyfikator guid dostawcy symbol]* \
 
  `file`\
 
- `CLSID` = *[identyfikator guid klasy]*
+ `CLSID` =  *[identyfikator guid klasy]*
 
  *[Metryka] = [wartość metryki]*
 
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
 
  `metadata`\
 
- `CLSID` = *[identyfikator guid klasy]*
+ `CLSID` =  *[identyfikator guid klasy]*
 
  *[Metryka] = [wartość metryki]*
 
@@ -345,18 +345,18 @@ HRESULT EnumMetricSections(
 |*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje ten dostawca symboli|
 
 ### <a name="expression-evaluators"></a>Ewaluatory wyrażeń
- Poniżej znajduje się organizacja metryki ewaluatora wyrażeń w rejestrze. `ExpressionEvaluator` jest to nazwa typu metryki dla Ewaluator wyrażeń i odpowiada *[type metryki]*.
+ Poniżej znajduje się organizacja metryki ewaluatora wyrażeń w rejestrze. `ExpressionEvaluator` jest to nazwa typu metryki dla Ewaluator wyrażeń i odpowiada *[type metryki]* .
 
 > [!NOTE]
 > Typ metryki `ExpressionEvaluator` nie jest zdefiniowany w dbgmetric.h, ponieważ zakłada się, że wszystkie zmiany metryki dla ewaluatory wyrażeń zostanie wysłany za pomocą funkcji metryki ewaluatora wyrażeń odpowiednie (układ `ExpressionEvaluator` podklucz jest nieco skomplikowane, dzięki czemu szczegółowe informacje są ukryte wewnątrz dbgmetric.lib).
 
  `ExpressionEvaluator`\
 
- *[identyfikator guid języka]*\
+ *[identyfikator guid języka]* \
 
- *[identyfikator guid dostawcy]*\
+ *[identyfikator guid dostawcy]* \
 
- `CLSID` = *[identyfikator guid klasy]*
+ `CLSID` =  *[identyfikator guid klasy]*
 
  *[Metryka] = [wartość metryki]*
 
@@ -364,9 +364,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- `0` = *[guid aparatu debugowania]*
+ `0` =  *[guid aparatu debugowania]*
 
- `1` = *[guid aparatu debugowania]*
+ `1` =  *[guid aparatu debugowania]*
 
 |Symbol zastępczy|Opis|
 |-----------------|-----------------|
@@ -376,11 +376,11 @@ HRESULT EnumMetricSections(
 |*[guid aparatu debugowania]*|Identyfikator GUID działającego w tym ewaluatora wyrażenia z aparatu debugowania|
 
 ### <a name="expression-evaluator-extensions"></a>Rozszerzenia ewaluatora wyrażeń
- Poniżej znajduje się organizacja metryki rozszerzenia ewaluatora wyrażenia, w rejestrze. `EEExtensions` jest nazwą typu metryki dla wyrażenia rozszerzenia ewaluatora i odpowiada *[type metryki]*.
+ Poniżej znajduje się organizacja metryki rozszerzenia ewaluatora wyrażenia, w rejestrze. `EEExtensions` jest nazwą typu metryki dla wyrażenia rozszerzenia ewaluatora i odpowiada *[type metryki]* .
 
  `EEExtensions`\
 
- *[identyfikator guid rozszerzenie]*\
+ *[identyfikator guid rozszerzenie]* \
 
  *[Metryka] = [wartość metryki]*
 
@@ -391,21 +391,21 @@ HRESULT EnumMetricSections(
 |*[identyfikator guid rozszerzenie]*|Identyfikator GUID rozszerzenie ewaluatora wyrażeń|
 
 ### <a name="exceptions"></a>Wyjątki
- Poniżej znajduje się organizacja metryki wyjątki w rejestrze. `Exception` jest to nazwa typu metryki dla wyjątków i odpowiada *[type metryki]*.
+ Poniżej znajduje się organizacja metryki wyjątki w rejestrze. `Exception` jest to nazwa typu metryki dla wyjątków i odpowiada *[type metryki]* .
 
  `Exception`\
 
- *[guid aparatu debugowania]*\
+ *[guid aparatu debugowania]* \
 
- *[typów wyjątków]*\
+ *[typów wyjątków]* \
 
- *[wyjątek]*\
-
- *[Metryka] = [wartość metryki]*
+ *[wyjątek]* \
 
  *[Metryka] = [wartość metryki]*
 
- *[wyjątek]*\
+ *[Metryka] = [wartość metryki]*
+
+ *[wyjątek]* \
 
  *[Metryka] = [wartość metryki]*
 
@@ -414,7 +414,7 @@ HRESULT EnumMetricSections(
 |Symbol zastępczy|Opis|
 |-----------------|-----------------|
 |*[guid aparatu debugowania]*|Identyfikator GUID aparatu debugowania, który obsługuje wyjątki.|
-|*[typów wyjątków]*|Ogólny tytuł podklucza który identyfikuje klasy wyjątków, które są obsługiwane. Typowe nazwy są **wyjątki C++**, **wyjątki Win32**, **wyjątki środowiska uruchomieniowego języka wspólnego**, i **macierzystego sprawdzania w trakcie wykonywania**. Te nazwy są również używane do identyfikowania konkretnej klasy wyjątku dla użytkownika.|
+|*[typów wyjątków]*|Ogólny tytuł podklucza który identyfikuje klasy wyjątków, które są obsługiwane. Typowe nazwy są **wyjątki C++** , **wyjątki Win32**, **wyjątki środowiska uruchomieniowego języka wspólnego**, i **macierzystego sprawdzania w trakcie wykonywania**. Te nazwy są również używane do identyfikowania konkretnej klasy wyjątku dla użytkownika.|
 |*[wyjątek]*|Nazwa, dla wyjątku: na przykład **_com_error** lub **klawisze CTRL + Break**. Te nazwy są również używane do identyfikować określony wyjątek dla użytkownika.|
 
 ## <a name="requirements"></a>Wymagania

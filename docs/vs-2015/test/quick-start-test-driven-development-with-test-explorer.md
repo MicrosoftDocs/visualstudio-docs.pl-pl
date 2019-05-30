@@ -8,14 +8,14 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e1ac0eb389a6f1747ef713cd99f9bb3006ff6b9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446195"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261644"
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: Programowanie sterowane za pomocą narzędzia Eksplorator testów testami
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego działania kodu przez wiele kroków przyrostowych cyklu rozwoju. Istnieje kilka środowisk, których można użyć do pisania testów jednostkowych, łącznie z niektórymi opracowanymi przez osoby trzecie. Niektóre środowiska testowe są wyspecjalizowane w testowaniu różnych języków lub platform. Eksplorator testów udostępnia jeden interfejs do testów jednostkowych w dowolnym z tych środowisk. Dostępne są adaptery dla większości powszechnie stosowanych środowisk, a następnie można napisać własne adaptery dla innych platform.  
@@ -65,10 +65,10 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 > Wyświetlane wyniki dotyczą ostatniego działają. Kolorowe paski wyników pokazują jedynie wyniki wykonanych testów. Na przykład jeśli uruchomisz kilka testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom testy zakończone powodzeniem, następnie paski wyników zostaną wyświetlone wszystkie zielony.  
   
 > [!NOTE]
-> Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [Użyj platformę testową różnych](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [Użyj platformę testową różnych](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 ## <a name="walkthrough"></a> Wskazówki: Za pomocą testów jednostkowych do opracowania metody  
- W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [struktury testowej różnych Usa](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [Użyj platformę testową różnych](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Tworzenie testu i metody  
   
@@ -124,7 +124,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
 7. Wybierz elementy w obszarze **ślad stosu** aby zobaczyć, gdzie test nie powiódł się.  
   
-   ![Testów jednostkowych Test Explorer z wyświetlonym nie powiodło się. ](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![Testów jednostkowych Test Explorer z wyświetlonym nie powiodło się. ] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
    Na tym etapie utworzono test i procedurę zastępczą, którą zmodyfikujesz, aby test zakończy się pomyślnie.  
   
@@ -145,7 +145,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
      Test zakończy się pomyślnie.  
   
-     ![Jednostka Test Explorer z wyświetlonym testu wynikiem pozytywnym. ](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+     ![Jednostka Test Explorer z wyświetlonym testu wynikiem pozytywnym. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodaj testy, aby rozszerzyć zakres danych wejściowych  
   
@@ -287,4 +287,4 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
      Kod nadal przechodzi wszystkie testy.  
   
-     ![Eksplorator testów jednostkowych pokazujący 3 testy zakończone pomyślnie. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Eksplorator testów jednostkowych pokazujący 3 testy zakończone pomyślnie. ] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

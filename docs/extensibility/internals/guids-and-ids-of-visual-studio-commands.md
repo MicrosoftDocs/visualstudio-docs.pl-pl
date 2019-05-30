@@ -9,17 +9,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89274600d05b787182ac447902555f7d703851c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860973"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329190"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikatory GUID i identyfikatory programu Visual Studio poleceń
 Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visual Studio zintegrowane środowisko programistyczne (IDE) są definiowane w .vsct — pliki, które są zainstalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia definiowane w IDE, menu i grupy](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -54,7 +54,7 @@ Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visua
 
 - Elementy menu, które obejmują podkreślony znak, takie jak **drukowania** polecenie **pliku** menu, w którym *P* jest podkreślony.
 
-     Znaki, które są poprzedzone symbolem handlowego "i" (&) znaków w nazwach elementów menu są wyświetlane jako podkreślony. Jednak *vsct* pliki są zapisywane w formacie XML, który używa handlowe "i" (&) znaku, aby wskazać znaki specjalne i wymaga, że musi województw handlowe "i" mają być wyświetlane jako  *&amp;amp;*. Dlatego w *vsct* pliku **drukowania** polecenia jest wyświetlany jako  *&amp;amp; Drukuj*.
+     Znaki, które są poprzedzone symbolem handlowego "i" (&) znaków w nazwach elementów menu są wyświetlane jako podkreślony. Jednak *vsct* pliki są zapisywane w formacie XML, który używa handlowe "i" (&) znaku, aby wskazać znaki specjalne i wymaga, że musi województw handlowe "i" mają być wyświetlane jako  *&amp;amp;* . Dlatego w *vsct* pliku **drukowania** polecenia jest wyświetlany jako  *&amp;amp; Drukuj*.
 
 - Polecenia, które mają dynamiczne tekstu, takie jak **Zapisz** \<bieżącej, nazwa_pliku\>i dynamicznie wygenerowano elementy menu, takie jak elementy **ostatnio używane pliki** listy.
 

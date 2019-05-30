@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b634b25c7bfaf71294993cc48c960508d764839
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406771"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263238"
 ---
 # <a name="clickonce-security-and-deployment"></a>Wdrażania i zabezpieczeń ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest to technologia wdrażania umożliwiająca tworzenie automatycznie aktualizowane aplikacje z systemem Windows, które można instalować i uruchamiać z interakcji z użytkownikiem minimalny. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapewnia pełną obsługę publikowanie i aktualizowanie aplikacji wdrożonych przy użyciu technologii ClickOnce, jeśli opracowano Twoich projektów w języku Visual Basic i Visual C#. Aby dowiedzieć się, jak wdrażanie aplikacji Visual C++, zobacz [wdrożenie rozwiązania ClickOnce dla aplikacji Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest to technologia wdrażania umożliwiająca tworzenie automatycznie aktualizowane aplikacje z systemem Windows, które można instalować i uruchamiać z interakcji z użytkownikiem minimalny. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapewnia pełną obsługę publikowanie i aktualizowanie aplikacji wdrożonych przy użyciu technologii ClickOnce, jeśli opracowano Twoich projektów w języku Visual Basic i Visual C#. Aby dowiedzieć się, jak wdrażanie aplikacji Visual C++, zobacz [wdrożenie rozwiązania ClickOnce dla aplikacji Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenie pozwala pokonać trzy główne problemy we wdrożeniu:
 

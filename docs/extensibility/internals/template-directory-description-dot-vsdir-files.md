@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad06428905f924e0e339882057ee4e657da47e8a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857763"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331115"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Opis katalogu szablonu (pliki Vsdir)
 Plik opis katalogu szablonu (vsdir) to plik tekstowy, który umożliwia zintegrowanego środowiska programistycznego (IDE), aby wyświetlić folderów, plików .vsz kreatora i plików szablonów, które są skojarzone z projektem w oknach dialogowych. Zawartość obejmują jeden rekord w pliku lub folderu. Wszystkich plików .vsdir w lokalizacji, do którego istnieje odwołanie są scalane, mimo że .vsdir tylko jeden plik jest zazwyczaj podawana do opisania wiele folderów, pliki szablonów lub kreatorów.

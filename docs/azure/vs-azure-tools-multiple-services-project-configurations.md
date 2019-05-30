@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie projektu platformy Azure przy użyciu wielu konfiguracji usługi | Dokumentacja firmy Microsoft
+title: Konfigurowanie projektu platformy Azure przy użyciu wielu konfiguracji usługi
 description: Dowiedz się, jak skonfigurować projekt usługi w chmurze platformy Azure, zmieniając plików ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg i ServiceConfiguration.Cloud.cscfg.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555314"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260647"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
@@ -51,7 +51,7 @@ Jeśli masz już dodany punkt końcowy HTTPS, opcji punktu końcowego HTTPS jest
 
 ### <a name="diagnostics"></a>Diagnostyka
 
-Domyślnie diagnostyki są włączone dla roli sieci Web. Konta projektu i magazynu usługi platformy Azure w chmurze są skonfigurowane do korzystania z emulatora magazynu lokalnego. Gdy wszystko jest gotowe do wdrożenia na platformie Azure, możesz wybrać przycisk konstruktora (**...** ) zamiast tego użyć usługi Azure storage. Dane diagnostyczne mogą przesyłać do konta magazynu, na żądanie lub automatycznie zaplanowanych odstępach czasu. Aby uzyskać więcej informacji na temat usługi Diagnostyka Azure, zobacz [Włączanie diagnostyki w usługach Azure Cloud Services i Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Domyślnie diagnostyki są włączone dla roli sieci Web. Konta projektu i magazynu usługi platformy Azure w chmurze są skonfigurowane do korzystania z emulatora magazynu lokalnego. Gdy wszystko jest gotowe do wdrożenia na platformie Azure, możesz wybrać przycisk konstruktora ( **...** ) zamiast tego użyć usługi Azure storage. Dane diagnostyczne mogą przesyłać do konta magazynu, na żądanie lub automatycznie zaplanowanych odstępach czasu. Aby uzyskać więcej informacji na temat usługi Diagnostyka Azure, zobacz [Włączanie diagnostyki w usługach Azure Cloud Services i Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Strona Ustawienia
 

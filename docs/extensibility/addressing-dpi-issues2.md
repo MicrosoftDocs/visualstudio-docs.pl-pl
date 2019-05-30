@@ -3,17 +3,17 @@ title: Adresowanie Problemy2 DPI | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2b440ff34a5c1f2c60b8874ba56266b636afde3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892058"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352262"
 ---
 # <a name="address-dpi-issues"></a>Wartość DPI rozwiązywania problemów
 Zwiększa liczbę urządzeń, które jest dostarczany z ekranami "o wysokiej rozdzielczości". Te ekrany, zwykle dokonują ponad 200 pikseli na cal (ppi). Korzystanie z aplikacji na tych komputerów będzie wymagać zawartości można skalować w do potrzeb wyświetlania zawartości w odległości normalnego widoku dla urządzenia. 2014 roku podstawowy cel wyświetlaczy o wysokiej gęstości są mobilni, urządzenia (tablety, laptopy clamshell i telefonów).

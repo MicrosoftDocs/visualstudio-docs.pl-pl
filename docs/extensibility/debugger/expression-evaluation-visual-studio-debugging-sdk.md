@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b100ccac042aeed3ed8211c56fc1129311d850b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e1e09f2302a6bb8401dd8c9f2d7c48810d5ecdc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889856"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353817"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Obliczanie wyrażenia (Visual Studio debugowanie zestawu SDK)
 W trybie break IDE musi zwrócić proste wyrażenia wielu zmiennych program. Aby wykonać ocenę, aparat debugowania (DE) należy przeanalizować i ocenić wyrażenie, które jest wprowadzany do jednego z okien środowiska IDE.

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetInfo
 ms.assetid: 19c6870b-b94e-453c-bf19-82ce95b79d26
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71bb25e93cc1a3f97e61e269270cd87a0bc36558
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: ad560386991a0545510e1b74a140d17cc35fcbe3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66209969"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352113"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Pobiera opis ramki stosu.

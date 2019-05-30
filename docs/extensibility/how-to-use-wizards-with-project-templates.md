@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911384"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352041"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Instrukcje: Korzystanie z kreatorów z szablonami projektu
 
@@ -210,7 +210,7 @@ Szablon niestandardowy projekt, aby użyć niestandardowego kreatora, musisz pod
 
 1. Podpisz zestaw. W **Eksploratora rozwiązań**, wybierz projekt VSIX, kliknij prawym przyciskiem myszy i wybierz **właściwości projektu**.
 
-2. W **właściwości projektu** wybierz **podpisywanie** kartę w **podpisywanie** karcie wyboru **Podpisz zestaw**. W **wybierz plik klucza o silnej nazwie** pól, zaznacz  **\<nowy >**. W **Utwórz klucz silnej nazwy** okna w **nazwę pliku klucza** wpisz **key.snk**. Usuń zaznaczenie pola wyboru **Chroń mój plik klucza przy użyciu hasła** pola.
+2. W **właściwości projektu** wybierz **podpisywanie** kartę w **podpisywanie** karcie wyboru **Podpisz zestaw**. W **wybierz plik klucza o silnej nazwie** pól, zaznacz  **\<nowy >** . W **Utwórz klucz silnej nazwy** okna w **nazwę pliku klucza** wpisz **key.snk**. Usuń zaznaczenie pola wyboru **Chroń mój plik klucza przy użyciu hasła** pola.
 
 3. W **Eksploratora rozwiązań**, wybierz projekt VSIX i Znajdź **właściwości** okna.
 
@@ -218,9 +218,9 @@ Szablon niestandardowy projekt, aby użyć niestandardowego kreatora, musisz pod
 
 5. Ponownie skompiluj rozwiązanie.
 
-6. Teraz można znaleźć pliku key.snk w katalogu projektu MyProjectWizard (*\<lokalizacji na dysku > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopiuj *key.snk* pliku.
+6. Teraz można znaleźć pliku key.snk w katalogu projektu MyProjectWizard ( *\<lokalizacji na dysku > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopiuj *key.snk* pliku.
 
-7. Przejdź do katalogu wyjściowego i Znajdź zestaw (*\<lokalizacji na dysku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Wklej *key.snk* pliku w tym miejscu. (Nie jest to absolutnie konieczne, ale jej ułatwi następujące kroki).
+7. Przejdź do katalogu wyjściowego i Znajdź zestaw ( *\<lokalizacji na dysku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Wklej *key.snk* pliku w tym miejscu. (Nie jest to absolutnie konieczne, ale jej ułatwi następujące kroki).
 
 8. Otwórz okno polecenia i przejdź do katalogu, w którym utworzono zestaw.
 

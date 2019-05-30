@@ -1,5 +1,5 @@
 ---
-title: Serwer i problemy z konfiguracją klienta we wdrożeniach ClickOnce | Dokumentacja firmy Microsoft
+title: Problemy z konfiguracją serwera/klienta we wdrożeniach ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406784"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263476"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy z konfiguracją serwera i klienta we wdrożeniach ClickOnce
 Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Server, a wdrożenie zawiera typ pliku, który nie rozpoznaje Windows, takich jak plik programu Microsoft Word, usługi IIS będą odrzucać do przekazywania pliku, a wdrożenie zakończy się niepowodzeniem.

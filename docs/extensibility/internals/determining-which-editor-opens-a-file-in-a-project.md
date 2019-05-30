@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project types, determining which editor opens a file
 - persistence, determining which editor opens a file
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13b39d52f574c90cf1a4ead8e47e7d24aac94708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e54a922cfa36aad8c8c7e68e87012926a8ab715
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861203"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351596"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Określić, które edytora otwiera plik w projekcie
 Gdy użytkownik otwiera plik w projekcie, środowiska przechodzi przez proces sondowania, po pewnym czasie otwarcie odpowiedniego edytora lub projektanta dla tego pliku. Procedury początkowej zatrudnionych przez środowisko jest taki sam dla standardowych i niestandardowych edytorów. Środowisko używa różnych kryteriów, podczas sondowania edytory, które służy do otwierania pliku i pakietu VSPackage skoordynować ze środowiskiem w trakcie tego procesu.

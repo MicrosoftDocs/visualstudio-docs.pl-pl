@@ -1,5 +1,5 @@
 ---
-title: Punkt, warianty punktowego, Trójliniowego i Anizotropowego filtrowania tekstur | Dokumentacja firmy Microsoft
+title: Warianty filtr punktu/warianty punktowego/trójliniowego/anizotropowe tekstury
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8229a407c6326d097dd1c1413f3692a3781b40aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895537"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262934"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Warianty punktowego, dwuliniowego, trójliniowego i anizotropowego filtrowania tekstur
 Zastępuje tryb filtrowania na próbników odpowiednie tekstury.

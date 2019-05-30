@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420523"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334922"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Instrukcje: Instalowanie wtyczki kontroli źródła
 Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
@@ -64,7 +64,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
 3. Dodaj podklucz **SourceCodeControlProvider**w obszarze **HKEY_LOCAL_MACHINE** w **oprogramowania** podklucza.
 
-    W podkluczu ten wpis rejestru **ProviderRegKey** jest ustawiony na ciąg, który reprezentuje podklucza, który można umieścić w rejestrze, w kroku 1. Wzorzec jest **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *oprogramowania\\< nazwa firmy\>\\< nazwa produktu \>*.
+    W podkluczu ten wpis rejestru **ProviderRegKey** jest ustawiony na ciąg, który reprezentuje podklucza, który można umieścić w rejestrze, w kroku 1. Wzorzec jest **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *oprogramowania\\< nazwa firmy\>\\< nazwa produktu \>* .
 
     Oto przykłady tego podklucza.
 
@@ -77,7 +77,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
 4. Utwórz podklucz o nazwie **InstalledSCCProviders** w obszarze **SourceCodeControlProvider** podklucza, a następnie umieścić jednego wpisu tego podklucza.
 
-    Nazwa tego wpisu jest czytelny dla użytkownika nazwa dostawcy, (taka sama jak wartość określona dla wpisu SCCServerName), a wartość jest jeszcze raz podklucza, który został utworzony w kroku 1. Wzorzec jest **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nazwa wyświetlana\>** = *oprogramowania\\< firmy Nazwa\>\\< nazwa produktu\>*.
+    Nazwa tego wpisu jest czytelny dla użytkownika nazwa dostawcy, (taka sama jak wartość określona dla wpisu SCCServerName), a wartość jest jeszcze raz podklucza, który został utworzony w kroku 1. Wzorzec jest **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nazwa wyświetlana\>**  = *oprogramowania\\< firmy Nazwa\>\\< nazwa produktu\>* .
 
     Na przykład:
 

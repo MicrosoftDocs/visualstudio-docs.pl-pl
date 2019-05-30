@@ -7,17 +7,17 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6eb32f81947f7359f5912e8a558e8df5002a0b80
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843829"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352409"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Dodaj listy ostatnio używanych elementów do podmenu
 W tym przewodniku opiera się na pokazach w [dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)i przedstawiono sposób dodawania listy dynamicznych elementów do podmenu. Lista dynamiczna stanowi podstawę do tworzenia list najbardziej ostatnio używanych elementów.

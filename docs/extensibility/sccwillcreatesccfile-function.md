@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccWillCreateSccFile function
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fa85c8a96f17508d2e2e53a8d14444dd857dad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dc7b9f5b298260b2bcca88c75087059bd8f0065
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800291"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338455"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile, funkcja
 Ta funkcja sprawdza, czy wtyczka do kontroli źródła obsługuje tworzenie MSSCCPRJ. Plik SCC dla każdego danego pliku.

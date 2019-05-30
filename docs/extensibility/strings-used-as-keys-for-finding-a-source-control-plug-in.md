@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3233bfbfa379fac7be7214431e7a09844b7d65ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31c2b30fb41976cdbbab13fa22d438c63bddbbef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800099"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331705"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła
 Następujące ciągi są klucze służące do uzyskiwania dostępu do rejestru, aby znaleźć informacje o kontroli źródła wtyczek.
@@ -48,5 +48,5 @@ Następujące ciągi są klucze służące do uzyskiwania dostępu do rejestru, 
 
 ## <a name="see-also"></a>Zobacz też
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
-- [Instrukcje: Instalowanie wtyczki kontroli źródła](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [Instrukcje: instalowanie wtyczki kontroli kodu źródłowego](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Plik MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

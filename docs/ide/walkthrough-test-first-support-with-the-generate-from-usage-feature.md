@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Rozwoju pierwszego badania za pomocą funkcji generowania na podstawie sposobu użycia'
+title: Rozwoju pierwszego badania za pomocą funkcji generowania na podstawie sposobu użycia
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 186713daa3d4c913926779f79ffc61ff488578d5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432035"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262848"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Przewodnik: Rozwoju pierwszego badania za pomocą funkcji generowania na podstawie sposobu użycia
 
@@ -93,7 +93,7 @@ Przyjęto założenie, opis produktu stanowi, że `Automobile` klasa ma dwie wł
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Ponieważ kod odwołuje się do dwóch niezdefiniowanymi właściwościami na `Automobile`, falistą linią pojawia się w obszarze `Model` i `TopSpeed`. Umieść kursor nad `Model` i wybierz polecenie **szybkie akcje** błąd żarówka, a następnie wybierz **Generuj właściwość "Automobile.Model"**.
+2. Ponieważ kod odwołuje się do dwóch niezdefiniowanymi właściwościami na `Automobile`, falistą linią pojawia się w obszarze `Model` i `TopSpeed`. Umieść kursor nad `Model` i wybierz polecenie **szybkie akcje** błąd żarówka, a następnie wybierz **Generuj właściwość "Automobile.Model"** .
 
 3. Generowania szkieletu właściwości dla `TopSpeed` właściwości w taki sam sposób.
 
@@ -107,11 +107,11 @@ Teraz utworzymy metody testowej, który wygeneruje odcinek konstruktora, aby zai
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. Kliknij przycisk **szybkie akcje** żarówka w obszarze czerwona fala błąd, a następnie kliknij przycisk **Generowanie konstruktora w "Samochód"**.
+2. Kliknij przycisk **szybkie akcje** żarówka w obszarze czerwona fala błąd, a następnie kliknij przycisk **Generowanie konstruktora w "Samochód"** .
 
      W `Automobile` klasy pliku, zwróć uwagę, że nowy konstruktor ma zbadać nazwy zmiennych lokalnych, które są używane w wywołaniu konstruktora, podczas gdy znaleziono właściwości, które mają takie same nazwy w `Automobile` klasy i podany kod w treści konstruktora, celu przechowywanie wartości argumentu w `Model` i `TopSpeed` właściwości.
 
-3. Po wygenerowaniu nowego Konstruktora faliste podkreślenie pojawia się w obszarze wywołanie konstruktora domyślnego w `DefaultAutomobileIsInitializedCorrectly`. Komunikat o błędzie stwierdzający, że `Automobile` klasa nie ma konstruktora przyjmującego zero argumentów. Aby wygenerować Konstruktor jawne Tworzenie domyślnych, który nie ma parametrów, kliknij przycisk **szybkie akcje** błąd żarówki, a następnie kliknij **Generowanie konstruktora w "Samochód"**.
+3. Po wygenerowaniu nowego Konstruktora faliste podkreślenie pojawia się w obszarze wywołanie konstruktora domyślnego w `DefaultAutomobileIsInitializedCorrectly`. Komunikat o błędzie stwierdzający, że `Automobile` klasa nie ma konstruktora przyjmującego zero argumentów. Aby wygenerować Konstruktor jawne Tworzenie domyślnych, który nie ma parametrów, kliknij przycisk **szybkie akcje** błąd żarówki, a następnie kliknij **Generowanie konstruktora w "Samochód"** .
 
 ### <a name="generate-a-stub-for-a-method"></a>Wygenerować klasy zastępczej dla metody
 Przyjęto założenie, specyfikacja stwierdza, że nowy `Automobile` można umieścić w `IsRunning` stanie, jeśli jego `Model` i `TopSpeed` właściwości są ustawione na coś innego niż wartości domyślne.
@@ -121,9 +121,9 @@ Przyjęto założenie, specyfikacja stwierdza, że nowy `Automobile` można umie
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. Kliknij przycisk **szybkie akcje** żarówki błąd dla `myAuto.Start` wywołania metody, a następnie kliknij przycisk **Generuj metodę "Automobile.Start"**.
+2. Kliknij przycisk **szybkie akcje** żarówki błąd dla `myAuto.Start` wywołania metody, a następnie kliknij przycisk **Generuj metodę "Automobile.Start"** .
 
-3. Kliknij przycisk **szybkie akcje** żarówki dla `IsRunning` właściwości, a następnie kliknij przycisk **Generuj właściwość "Automobile.IsRunning"**.
+3. Kliknij przycisk **szybkie akcje** żarówki dla `IsRunning` właściwości, a następnie kliknij przycisk **Generuj właściwość "Automobile.IsRunning"** .
 
      `Automobile` Klasa teraz zawiera metodę o nazwie `Start()` i właściwość o nazwie `IsRunning`.
 

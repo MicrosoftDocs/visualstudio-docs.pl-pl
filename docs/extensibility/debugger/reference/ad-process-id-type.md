@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID_TYPE enumeration
 ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 405d11b0c685017d59251ba83126a73fe1a96db2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9df097037a84af9da63f0a98ee6cfa3b28cfcdd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925276"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351388"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
 Określa, jak interpretować procesu o identyfikatorze w [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury.
@@ -39,10 +42,12 @@ public enum enum_AD_PROCESS_ID {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-Identyfikator procesu AD_PROCESS_ID_SYSTEM jest identyfikator systemu. Użyj `ProcessId.dwProcessId` pole [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury.
+## <a name="fields"></a>Pola
+`AD_PROCESS_ID_SYSTEM`\
+Identyfikator procesu jest identyfikator systemu. Użyj `ProcessId.dwProcessId` pole [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury.
 
-Identyfikator procesu AD_PROCESS_ID_GUID jest identyfikatorem GUID. Użyj `ProcessId.guidProcessId` pole `AD_PROCESS_ID` struktury.
+`AD_PROCESS_ID_GUID`\
+Identyfikator procesu jest identyfikatorem GUID. Użyj `ProcessId.guidProcessId` pole `AD_PROCESS_ID` struktury.
 
 ## <a name="remarks"></a>Uwagi
 Używany do `ProcessIdType` członkiem [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury w celu określenia typu Identyfikator procesu, który znajduje się w strukturze. Określa, jak interpretować `ProcessId` Unii w strukturze.
@@ -54,6 +59,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

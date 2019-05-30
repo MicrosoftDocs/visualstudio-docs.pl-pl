@@ -6,17 +6,17 @@ helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02055e4e9f25f98193e8b27d42326589aef47762
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433620"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336121"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Utrwalanie właściwości elementu projektu
 Można utrwalić właściwości dodawane do elementu projektu, takich jak tworzenie pliku źródłowego. Można to zrobić, umieszczając właściwość w pliku projektu.

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Użycie technologii ClickOnce do wdrażania aplikacji, które można uruchamiać na wielu wersji programu .NET Framework | Dokumentacja firmy Microsoft'
+title: Użycie technologii ClickOnce do wdrażania aplikacji multitarget
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7e7d79dd1fc3d6c988701d0aa88cb4d0d299c2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de3ca40696549ad9208ffd181f8dbc4e7f092b5d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406722"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263202"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Instrukcje: Użycie technologii ClickOnce do wdrażania aplikacji, które można uruchamiać na wielu wersji programu .NET framework
 Można wdrożyć aplikację, który jest przeznaczony dla wielu wersji programu .NET Framework przy użyciu technologii wdrażania ClickOnce. Wymaga to Generowanie i zaktualizuj manifesty aplikacji i wdrożenia.

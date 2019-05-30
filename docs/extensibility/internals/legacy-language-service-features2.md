@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], code development aides
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd5a903867af5de3ecf0a945f1b7f0d8e532ea96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de7e0fa6a229929a34ed3654c3a4e03e02d1129b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414983"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333506"
 ---
 # <a name="legacy-language-service-features"></a>Funkcje usługi starszego języka
 W poniższych sekcjach wymieniono niektóre funkcje usługi starszego języka, które można podać.

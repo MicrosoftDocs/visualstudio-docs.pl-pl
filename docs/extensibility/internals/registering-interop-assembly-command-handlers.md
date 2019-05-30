@@ -6,17 +6,17 @@ helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b07f018a35874e2ffc3f3be825abb227f2996aea
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3e90ffc6b065b6d69bbe09bfe1887764ccc9955
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425472"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353333"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Rejestrowanie programów obsługi zestawu międzyoperacyjnego
 Należy zarejestrować pakietu VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby prawidłowo polecenia kieruje zintegrowanego środowiska programistycznego (IDE).
@@ -28,10 +28,10 @@ Należy zarejestrować pakietu VSPackage [!INCLUDE[vsprvs](../../code-quality/in
 - [Polecenie dokument referencyjny dotyczący formatowania tabeli](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) zasoby znajdują się w niezarządzanych satelitarnej biblioteki DLL interfejsu użytkownika.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Polecenie obsługi rejestracji pakietu VSPackage
- Pakietu VSPackage działający jako procedura obsługi interfejsu użytkownika (UI)-na podstawie polecenia wymaga wpis rejestru o nazwie po pakietu VSPackage `GUID`. Ten wpis rejestru określa lokalizację pliku zasobów interfejsu użytkownika pakietu VSPackage i zasobu menu, w tym pliku. Wpis rejestru sam znajduje się w folderze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<wersji >* \Menus, gdzie  *\<wersji >* jest wersją [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], na przykład 9.0.
+ Pakietu VSPackage działający jako procedura obsługi interfejsu użytkownika (UI)-na podstawie polecenia wymaga wpis rejestru o nazwie po pakietu VSPackage `GUID`. Ten wpis rejestru określa lokalizację pliku zasobów interfejsu użytkownika pakietu VSPackage i zasobu menu, w tym pliku. Wpis rejestru sam znajduje się w folderze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<wersji >* \Menus, gdzie  *\<wersji >* jest wersją [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], na przykład 9.0.
 
 > [!NOTE]
-> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywne główne, kiedy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłoki jest zainicjowany. Aby uzyskać więcej informacji o ścieżce katalogu głównego, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<wersji >* może zostać zastąpiona przez alternatywne główne, kiedy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłoki jest zainicjowany. Aby uzyskać więcej informacji o ścieżce katalogu głównego, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>Wpis rejestru CTMENU zasobów
  Struktura wpisu rejestru to:

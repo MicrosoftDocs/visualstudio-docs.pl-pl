@@ -1,5 +1,5 @@
 ---
-title: Usuwanie z, informacje o kontroli źródła. Proj i. Pliki SLN | Dokumentacja firmy Microsoft
+title: Usuń informacje o kontroli źródła z plików Proj i SLN
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4caa3d9edd7cba768f6338ad7aecf168041a1130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 100de838eb1b205046d09d1149d78d3adba43b91
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859181"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260809"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Usuwanie informacji o kontroli kodu źródłowego z plików Proj i Sln
 W wersji 1.2 API wtyczki kontroli źródła SCC informacje są przechowywane w MSSCCPRJ. Plik SCC. Zaletą MSSCCPRJ. Plik SCC jest o tym, czy informacje SCC jest nie źródła - kontrolowane, tak jak w przypadku plików Proj i sln.

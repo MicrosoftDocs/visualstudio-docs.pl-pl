@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 646384f43a6196bca802998b709285c247e4c378
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd4f4d37af94ba3a7dcdffc249e8b5e681025b78
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843842"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352391"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Dodawanie paska narzędzi do okna narzędzi
 W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
@@ -111,7 +111,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
 
      Powinien pojawić się narzędzi (wygląda jak ikona domyślna), u góry po lewej części okna narzędzia tuż poniżej tytułu.
 
-3. Na pasku narzędzi kliknij ikonę, aby wyświetlić komunikat **TWTestCommandPackage wewnątrz TWToolbar.TWTestCommand.MenuItemCallback()**.
+3. Na pasku narzędzi kliknij ikonę, aby wyświetlić komunikat **TWTestCommandPackage wewnątrz TWToolbar.TWTestCommand.MenuItemCallback()** .
 
 ## <a name="see-also"></a>Zobacz także
 - [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md)

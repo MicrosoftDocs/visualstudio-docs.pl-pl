@@ -3,17 +3,17 @@ title: Wzorce aplikacji dla programu Visual Studio | Dokumentacja firmy Microsof
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd12d18c0230af4307d0dec8fe37868801226472
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55044df3898b452e87ec877f9ae10dd12a2b1110
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432621"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337948"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
 ## <a name="BKMK_WindowInteractions"></a> Okno interakcji

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)'
+title: 'Instrukcje: Dodawanie diagramów klasy do projektów (Projektant klas)'
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975588"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332762"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Instrukcje: Dodawanie diagramów klas do projektów
 
@@ -71,6 +71,9 @@ W **Widok klas**, otwórz menu kontekstowe przestrzeni nazw lub typ, a następni
 W **Eksploratora rozwiązań** lub w widoku klas, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **widoku**, następnie wybierz **Pokaż Diagram klas**.
 
 Diagram klas wypełniane automatycznie jest tworzony.
+
+> [!NOTE]
+> Projektant klas nie jest dostępne w projektach .NET Core.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z metod profilowania do zbierania danych wydajności z wiersza polecenia | Dokumentacja firmy Microsoft
+title: Użyj wiersza polecenia z metod profilowania, aby uzyskać dane dotyczące wydajności
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831446"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263826"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Korzystanie z metod profilowania do zbierania danych o wydajności z wiersza polecenia
 Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzędzi wiersza poleceń Profiling Tools jest zależna od czynników, takich jak typ aplikacji, profilowany, metody profilowania, którego chcesz użyć, i czy aplikacji docelowej jest zapisywany w natywnym, czy [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kodu.

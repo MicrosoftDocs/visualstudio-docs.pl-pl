@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress2 interface
 ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10af641162fe9d254eaa3c0c2f5efbf841dc154e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 66fd149bc3eed7633586c156f6493c8febcbeaac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924103"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330362"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 Ten interfejs zapewnia dostęp do Identyfikatora procesu, który jest właścicielem obiektu, którego adres jest reprezentowany przez ten interfejs.
@@ -48,6 +48,6 @@ IDebugAddress2 : IDebugAddress
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

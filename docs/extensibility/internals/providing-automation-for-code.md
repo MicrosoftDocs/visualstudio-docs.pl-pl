@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - CodeModel object
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3a7f1bc0f3394f0b7c0d882657d926ce11259a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c7fa6836f3c396471e3b330d94b67d0978252e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859300"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341546"
 ---
 # <a name="providing-automation-for-code"></a>Zapewnianie automatyzacji kodu
 Tworzenie modelu automatyzacji dla kodu nie jest wymagana. Zestaw SDK środowiska nie zapewnia próbkę aby to zrobić. Szczegółowe informacje na temat modele kodu, zobacz <xref:EnvDTE.CodeModel> obiektu.

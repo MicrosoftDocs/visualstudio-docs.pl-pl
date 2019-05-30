@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe selektora URL (Programowanie SharePoint w programie Visual Studio) | Dokumentacja firmy Microsoft
+title: Okno dialogowe selektora URL (Programowanie SharePoint)
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d8f193e50053b5cdf0b89cf41b09471c513ee9d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007955"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261945"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Okno dialogowe selektora URL (Programowanie SharePoint w programie Visual Studio)
   W okno dialogowe selektora URL można wybrać pliki, takie jak pliki strony wzorcowej lub pliki obrazów, które znajdują się w projekcie lub na serwerze lokalnym, na którym uruchomiony jest SharePoint.

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccIsMultiCheckoutEnabled function
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b4d13367977081b757fa9b0ef2823154dc348a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93cbefe716b46b3dd3fe481447612c5c7f65daa3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433061"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353572"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled, funkcja
 Ta funkcja sprawdza, czy wtyczka do kontroli źródła zezwala na wiele operacji wyewidencjonowania w pliku.

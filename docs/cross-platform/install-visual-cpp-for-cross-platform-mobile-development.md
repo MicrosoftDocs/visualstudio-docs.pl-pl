@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 261d26307a212fa44506b21caadf4b7351453e06
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824802"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261094"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalowanie aplikacji mobilnych dla wielu platform przy użyciu języka C++
 
@@ -60,7 +60,7 @@ Instalator programu Visual Studio dla programu Visual Studio 2017 obejmuje **opr
 
 1. Za pomocą **obciążeń** wybraną kartą, przewiń w dół i wybierz **opracowywania aplikacji mobilnych w języku C++** obciążenie w Instalatorze programu Visual Studio. Po wybraniu tego obciążenia wybrane zostaną także inne składniki wymagane do programowania w języku C++. Możesz również innymi obciążeniami i poszczególne składniki do zainstalowania w tym samym czasie. Aby utworzyć kod dla wielu platform, który również jest przeznaczony dla platformy uniwersalnej systemu Windows, wybierz **programowania na platformę uniwersalną Windows** obciążenia.
 
-1. W **szczegółowe informacje dotyczące instalacji** okienku rozwiń **opracowywania aplikacji mobilnych w języku C++**. W **opcjonalnie** sekcji, możesz wybrać dodatkowe wersje zestawu NDK, emulatora systemu Google Android, sprzętu Intel Accelerated menedżera wykonywania i IncrediBuild narzędzie przyspieszanie kompilacji.
+1. W **szczegółowe informacje dotyczące instalacji** okienku rozwiń **opracowywania aplikacji mobilnych w języku C++** . W **opcjonalnie** sekcji, możesz wybrać dodatkowe wersje zestawu NDK, emulatora systemu Google Android, sprzętu Intel Accelerated menedżera wykonywania i IncrediBuild narzędzie przyspieszanie kompilacji.
 
 1. Domyślnie jeden lub więcej składników Instalatora zestawu SDK systemu Android znajdują się przez obciążenie. Dodatkowe wersje zestawu SDK systemu Android są dostępne. Aby dodać je do instalacji, wybierz **poszczególne składniki** kartę, a następnie przewiń w dół do **zestawów SDK, bibliotek i struktur** sekcji, aby dokonać wyboru.
 
@@ -74,7 +74,7 @@ Instalator programu Visual Studio dla programu Visual Studio 2017 obejmuje **opr
 1. Otwórz program Visual Studio.
 
 > [!NOTE]
-> Jeśli używasz programu Visual Studio 2015, zobacz [zainstalować Visual C++ for Cross-Platform Mobile Development (Visual Studio 2015)](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)
+> Jeśli używasz programu Visual Studio 2015, zobacz [zainstalować Visual C++ for Cross-Platform Mobile Development (Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015)
 
 ## <a name="install-tools-for-ios"></a>Instalowanie narzędzi dla systemu iOS
 
@@ -91,11 +91,11 @@ Przeczytaj poniższe informacje, a następnie użyj poniższych linków, aby rę
 
 - [Java SE Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-   Domyślnie Instalator umieszcza narzędzia języka Java na platformie *\Java C:\Program Files (x86)*.
+   Domyślnie Instalator umieszcza narzędzia języka Java na platformie *\Java C:\Program Files (x86)* .
 
 - [Android SDK](https://developer.android.com/sdk/index.html#command-tools)
 
-   Podczas instalacji należy zaktualizować interfejsów API, zgodnie z zaleceniami. Upewnij się, że co najmniej zainstalowano zestaw SDK dla systemu Android 5.0 Lollipop (poziom 21 interfejsu API). Domyślnie Instalator umieszcza zestawu SDK systemu Android w *\Android\android-sdk C:\Program Files (x86)*.
+   Podczas instalacji należy zaktualizować interfejsów API, zgodnie z zaleceniami. Upewnij się, że co najmniej zainstalowano zestaw SDK dla systemu Android 5.0 Lollipop (poziom 21 interfejsu API). Domyślnie Instalator umieszcza zestawu SDK systemu Android w *\Android\android-sdk C:\Program Files (x86)* .
 
    Możesz uruchomić aplikację Menedżer zestawów SDK, w katalogu zestawu SDK systemu Android ponownie, aby zaktualizować zestaw SDK i zainstaluj opcjonalnych narzędzi oraz dodatkowe poziomy interfejsu API. Aktualizacji może zakończyć się niepowodzeniem do zainstalowania, chyba że używasz **Uruchom jako administrator** do uruchomienia aplikacji Menedżer zestawów SDK. Jeśli masz problemy z tworzenia aplikacji systemu Android, sprawdź Menedżer zestawów SDK, aktualizacje usługi zainstalowanych zestawów SDK.
 
@@ -119,11 +119,11 @@ W większości przypadków Visual Studio może wykrywać konfiguracje dla oprogr
 
 1. Na pasku menu programu Visual Studio wybierz **narzędzia** > **opcje**.
 
-1. W **opcje** okno dialogowe, wybierz opcję **Międzyplatformowe** > **C++** > **Android**.
+1. W **opcje** okno dialogowe, wybierz opcję **Międzyplatformowe** > **C++**  > **Android**.
 
    ![Opcje narzędzia dla systemu android do ścieżki](../cross-platform/media/cppmdd_options_android.PNG "CPPMDD_Options_Android")
 
-1. Aby zmienić ścieżkę używaną przez narzędzie, zaznacz pole wyboru obok ścieżkę, a następnie Edytuj ścieżkę folderu, w polu tekstowym. Umożliwia także przycisk przeglądania (**...** ) aby otworzyć **wybierz lokalizację** okna dialogowego, aby wybrać folder.
+1. Aby zmienić ścieżkę używaną przez narzędzie, zaznacz pole wyboru obok ścieżkę, a następnie Edytuj ścieżkę folderu, w polu tekstowym. Umożliwia także przycisk przeglądania ( **...** ) aby otworzyć **wybierz lokalizację** okna dialogowego, aby wybrać folder.
 
 1. Wybierz **OK** można zapisać narzędzie niestandardowe lokalizacje folderów.
 

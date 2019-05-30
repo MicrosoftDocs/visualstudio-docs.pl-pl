@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie kontenera platformy Docker programu ASP.NET do usługi Azure Container Registry (ACR) | Dokumentacja firmy Microsoft
+title: Wdrażanie kontenera platformy Docker programu ASP.NET do rejestru ACR
 description: Dowiedz się, jak wdrożyć aplikację sieci web platformy ASP.NET Core do rejestru kontenerów za pomocą narzędzia kontenerów programu Visual Studio
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 8f0dfe14530a4638e43041053d069d2e1293e73d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 812cddf692ab6cc5676a04dabb88a6e1224c7dcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824874"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261045"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Wdrażanie kontenera platformy ASP.NET w rejestrze kontenerów przy użyciu programu Visual Studio
 

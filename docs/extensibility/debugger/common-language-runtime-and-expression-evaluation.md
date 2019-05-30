@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411318"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351296"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Typowe obliczenia środowiska uruchomieniowego i wyrażenia języka
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "63411318"
 
  Po przeanalizowaniu wyrażenie do oceny, każdy obiekt danych nosi nazwę dostawca symboli (SP). Na przykład, jeśli "" jest zdefiniowany w więcej niż jednej metody, pytanie "Która A?" Musisz udzielić odpowiedzi, zanim można ustalić wartości A. Odpowiedź zwrócona przez PS jest podobny do "Trzeci element na piątym ramce stosu" lub "A, o 50 bajtów poza początek pamięci statycznej przydzielony do tej metody."
 
- Oprócz tworzenia MSIL dla samego programu, kompilatory CLR może utworzyć również bardzo opisowe informacje debugowania, który jest zapisywany w bazie danych programu (*.pdb*) pliku. Tak długo, jak kompilator języka zastrzeżonej generuje informacje o debugowaniu w tym samym formacie jak kompilatory CLR, SP CLR jest możliwość określenia, czy języka o nazwie obiektów danych. Po zidentyfikowaniu obiektu danych o nazwie EE używa obiekt integratora skojarzyć (lub powiązać) obiekt danych do obszaru pamięci, która zawiera wartość tego obiektu. DE można pobrać lub ustawić nową wartość dla obiektu danych.
+ Oprócz tworzenia MSIL dla samego programu, kompilatory CLR może utworzyć również bardzo opisowe informacje debugowania, który jest zapisywany w bazie danych programu ( *.pdb*) pliku. Tak długo, jak kompilator języka zastrzeżonej generuje informacje o debugowaniu w tym samym formacie jak kompilatory CLR, SP CLR jest możliwość określenia, czy języka o nazwie obiektów danych. Po zidentyfikowaniu obiektu danych o nazwie EE używa obiekt integratora skojarzyć (lub powiązać) obiekt danych do obszaru pamięci, która zawiera wartość tego obiektu. DE można pobrać lub ustawić nową wartość dla obiektu danych.
 
  Zastrzeżone kompilator może zapewnić CLR, informacje o debugowaniu, wywołując `ISymbolWriter` interfejsu (który jest zdefiniowany w .NET Framework w przestrzeni nazw `System.Diagnostics.SymbolStore`). Kompilowanie na język MSIL i zapisywania informacji debugowania za pomocą tych interfejsów, kompilator własności CLR DE i użyć SP. Znacznie upraszcza to integrowanie własności języka środowiska IDE programu Visual Studio.
 

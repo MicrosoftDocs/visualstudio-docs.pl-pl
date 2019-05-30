@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b61cb7f3f5d739a80a0ce18ba62baa92aed48319
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f880596854eb376d386bc6a96d789c54767f39d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414170"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351863"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Dokumentacja interfejsu API (Debugowanie w programie Visual Studio)
 Ta część zawiera omówienie interfejsu API, przewodnik, który pokazuje składni i użycia dla wszystkich elementów interfejsu API i gamę przykłady kodu. Wszystkie odwołania są wymieniane alfabetycznie według kategorii.
@@ -42,7 +42,7 @@ Ta część zawiera omówienie interfejsu API, przewodnik, który pokazuje skła
 > [!NOTE]
 > Nieprawidłowy lub `NULL` [parametry out] może spowodować, że środowisko IDE ulega awarii.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395070d018492fa8950c6856270c61c0a645cdd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1893b78063e045f341af246fc0ef2c0f2ad1538e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889123"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351413"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 Określa identyfikator procesu, który może mieć identyfikator systemu lub identyfikator GUID.
@@ -45,11 +48,14 @@ public struct AD_PROCESS_ID {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-`ProcessIdType` Wartość z zakresu od [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) wyliczenie opisujące jak interpretować `ProcessId` Unii (lub dla kodu zarządzanego, które do członków struktury).
+`ProcessIdType`\
+Wartość z zakresu od [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) wyliczenie opisujące jak interpretować `ProcessId` Unii (lub dla kodu zarządzanego, które do członków struktury).
 
-Identyfikator procesu dwProcessId jako wartość z systemu.
+`dwProcessId`\
+Identyfikator procesu jako wartość z systemu.
 
-Identyfikator procesu guidProcessId jako identyfikatora GUID.
+`guidProcessId`\
+Identyfikator procesu jako identyfikatora GUID.
 
 dwUnused dopełnienia.
 
@@ -77,7 +83,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

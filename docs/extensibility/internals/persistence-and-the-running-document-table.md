@@ -8,17 +8,17 @@ helpviewer_keywords:
 - architecture, persistence
 - running document table (RDT), architecture
 ms.assetid: 27117eae-6c58-4189-a61a-1397a43b5ecf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: deb5472776bc9c4a4d6bb0ccd8830cba5eea3d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d80932ab926b7ef26eaef10991e4f5782e81c4b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859891"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328521"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Trwałość i uruchamianie tabeli dokumentów
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, projekty są całkowicie odpowiedzialni za zarządzanie trwałości ich elementów projektu, które realizowane przy użyciu usługi, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Dokumenty są podstawową jednostką trwałości w środowisku Visual Studio. Projekty koordynować otwieranie, zapisywanie i zmiana nazwy dokumentów za pomocą uruchomionej tabeli dokumentu (Normalizacją) z zasobem, który śledzi stan wszystkich otwartych dokumentach.

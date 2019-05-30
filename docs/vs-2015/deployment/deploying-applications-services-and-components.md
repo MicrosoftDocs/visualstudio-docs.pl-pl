@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b573c85a6a19e2f84bcb2a6cae8b0c55768255
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675591"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260685"
 ---
 # <a name="deploying-applications-services-and-components"></a>Wdrażanie aplikacji, usług i składników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ Wdrażanie aplikacji, usług i składników to rozpowszechnianie ich w celu inst
 |**Wdrażanie aplikacji komputerowej:** Za pomocą wdrażania ClickOnce, możesz opublikować aplikację komputerową na serwerze sieci web lub w sieciowym udziale plików. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia.|[Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
 |**Utwórz program instalacyjny:** Program instalacyjny można utworzyć za pomocą programu InstallShield Limited Edition, które jest bezpłatne.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**Obsługa istniejących programów instalacyjnych:** Kontynuuj korzystanie z programu instalacyjnego utworzone we wcześniejszej wersji programu Visual Studio po zainstalowaniu rozszerzenia projektów Instalatora Visual Studio.|[Rozszerzenie projektów Instalatora Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Dokumentacja dla projektów Instalatora jest dostępna tutaj: [Wdrażanie za pomocą Instalatora programu Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Wdrażanie aplikacji Visual C++:** Środowisko wykonawcze Visual C++ za pomocą aplikacji można wdrożyć przy użyciu wdrażania centralnego, wdrażania lokalnego lub łączenia statycznego.|[Wdrażanie natywnych aplikacji komputerowych (Visual C++)](https://msdn.microsoft.com/library/zebw5zk9.aspx)|  
+|**Wdrażanie aplikacji Visual C++:** Środowisko wykonawcze Visual C++ za pomocą aplikacji można wdrożyć przy użyciu wdrażania centralnego, wdrażania lokalnego lub łączenia statycznego.|[Wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**Wdrażanie aplikacji do testowania:** Aby umożliwić bardziej wyrafinowane projektowanie i testowanie przez wdrożenie aplikacji w środowiskach wirtualnych.|[Testowanie w środowisku laboratoryjnym](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**Instalowanie wymagań wstępnych:** Można zainstalować wstępnie wymagane składniki aplikacji komputerowych, konfigurując Instalator ogólny, który jest znany jako program inicjujący.|[Wstępnie wymagane składniki wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)|

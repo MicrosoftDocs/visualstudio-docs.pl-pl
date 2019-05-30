@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji | Dokumentacja firmy Microsoft'
+title: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c3880fdc8d1d83fd36fdf09fea9e0c955b02236
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406732"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263268"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
 Aby udostępnić aplikację ClickOnce użytkownikom, możesz opublikować go do udziału plików lub ścieżki, serwer FTP lub nośnik wymienny. Aplikację można opublikować za pomocą Kreatora publikacji; dodatkowe właściwości związanych z publikowaniem są dostępne na **Publikuj** strony **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [publikowania ClickOnce applications](../deployment/publishing-clickonce-applications.md).

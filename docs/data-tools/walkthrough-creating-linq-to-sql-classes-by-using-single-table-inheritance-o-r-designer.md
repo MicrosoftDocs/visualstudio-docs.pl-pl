@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (Projektant O-R)'
+title: Klasy LINQ do SQL z dziedziczeniem pojedynczej tabeli (Projektant O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c99023f57cec8b920518ac702cf5c71988a163c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402691"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262879"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie typu LINQ do klas SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
 [LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenie pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [jak: Skonfigurować dziedziczenie za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zawiera dane rzeczywiste, aby zademonstrować użycie dziedziczenie w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].

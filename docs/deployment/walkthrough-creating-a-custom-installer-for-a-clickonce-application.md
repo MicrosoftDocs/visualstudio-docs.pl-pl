@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+title: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e6969490789b4f5747c28f33e91c7d61e97de52e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405745"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263458"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce
 Na podstawie dowolnej aplikacji ClickOnce *.exe* pliku można dyskretnie zainstalować i aktualizowane przez instalatora niestandardowego. Niestandardowego Instalatora można zaimplementować niestandardowy komfortu podczas instalacji, w tym niestandardowych okien dialogowych dla operacji zabezpieczeń i konserwacji. Aby wykonać operacje instalacji, używa niestandardowego Instalatora <xref:System.Deployment.Application.InPlaceHostingManager> klasy. W tym instruktażu pokazano, jak utworzyć niestandardowego instalatora dyskretnej instalacji aplikacji ClickOnce.

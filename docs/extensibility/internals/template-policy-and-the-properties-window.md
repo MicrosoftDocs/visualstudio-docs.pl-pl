@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, template policy
 ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 769a665e98fe2aaa5cb3ad75947caa177182f4cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 751e6d766a4ae107eaabb7364d8aeca627fc59da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908688"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331213"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Szablon zasad i okno właściwości
 Gdy projekt znajduje się wewnątrz szablonu projektu w przedsiębiorstwie, tego szablonu projektu przedsiębiorstwa mogą wymusić zasady. Szablon zasad staje się ograniczający system, który może służyć do ustawiania wartości domyślnej właściwości, Ukryj właściwości, dodać właściwości i tak dalej.

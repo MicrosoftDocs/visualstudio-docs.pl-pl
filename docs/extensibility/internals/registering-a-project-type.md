@@ -7,17 +7,17 @@ helpviewer_keywords:
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fccd422a0f24a65532e648a1254aecedc484903e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b950ea6dde73ecb7f20ef45e945106e8711aefb0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425670"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353348"
 ---
 # <a name="registering-a-project-type"></a>Rejestrowanie typu projektu
 Gdy tworzysz nowy typ projektu, należy utworzyć wpisy rejestru, które umożliwiają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznaje i pracować z danego typu projektu. Wpisy rejestru są zazwyczaj tworzone przy użyciu pliku skryptu (.rgs) z rejestru.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18c2100341a62abd0f8f12bd4b459c7e271a15bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912523"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353391"
 ---
 # <a name="dynamically-add-menu-items"></a>Dynamiczne dodawanie elementów menu
 Można dodać elementów menu w czasie wykonywania, określając `DynamicItemStart` polecenia Flaga w definicji symbolu zastępczego przycisku w tabeli poleceń programu Visual Studio (*vsct*) plik, a następnie definiowanie (kod) liczba elementów menu do wyświetlenia i Obsługa polecenia. Po załadowaniu pakietu VSPackage, symbol zastępczy jest zastępowany elementów menu dynamiczne.

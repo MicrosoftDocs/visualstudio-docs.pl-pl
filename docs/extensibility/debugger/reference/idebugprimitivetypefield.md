@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPrimitiveTypeField interface
 ms.assetid: 73a428fd-797e-4ceb-8392-ba16f1c5226b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25af7b2126be79901ceb97d6c93786d59111bfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4012b919cffc5e16433567fac283ac731d4d215c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871470"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353280"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 Reprezentuje wartość wyliczenia typu podstawowego z [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu.

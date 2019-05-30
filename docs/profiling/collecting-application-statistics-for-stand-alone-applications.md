@@ -1,5 +1,5 @@
 ---
-title: Zbieranie statystyk aplikacji dla aplikacji autonomicznych przy użyciu wiersza polecenia Profiler | Dokumentacja firmy Microsoft
+title: Zbieranie statystyk aplikacji autonomicznej za pomocą wiersza polecenia profilera
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 233934f9206e71a4051dbbcd17efc6001656ddfe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78dbda79e4bff6aaaf5c98ca6c92487c98781d39
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440227"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263454"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Zbieranie statystyk aplikacji dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
 W tej sekcji opisano procedury składowane i opcji zbierania statystyk wydajności dla aplikacji klienckiej (autonomiczny) przy użyciu metody próbkowania w wierszu polecenia.

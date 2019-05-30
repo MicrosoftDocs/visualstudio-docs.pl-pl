@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb21b08af13d386ae6bd506b96be33ac0a2fb8a7
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
-ms.translationtype: MT
+ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177602"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261319"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -268,9 +268,9 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Project.AddNewItem|**Ctrl + Shift + A**|
 |Project.ClassWizard|**Ctrl + Shift + X**|
 |Project.Override|**Ctrl + Alt + dodatki**|
-|Project.Previewchanges|**ALT +;**  następnie **klawisze Alt + C**|
-|Project.Publishselectedfiles|**ALT +;**  następnie **Alt + P**|
-|Project.Replaceselectedfilesfromserver|**ALT +;**  następnie **klawisze Alt + R**|
+|Project.Previewchanges|**ALT +; ** następnie **klawisze Alt + C**|
+|Project.Publishselectedfiles|**ALT +; ** następnie **Alt + P**|
+|Project.Replaceselectedfilesfromserver|**ALT +; ** następnie **klawisze Alt + R**|
 
 ### <a name="bkmk_projectContext"></a> Menu kontekstowe projektu i rozwiązania
 
@@ -804,7 +804,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 | Edit.GotoBraceExtend | **Ctrl + Shift +]** |
 | Edit.GotoRecent | **Ctrl+T,R** |
 | Edit.GotoNextIssueinFile | **ALT + PgDn** |
-| Edit.GotoPreviousIssueinFile  **Alt+PgUp** |
+| Edit.GotoPreviousIssueinFile | **ALT + PgUp** |
 | Edit.HideSelection | **CTRL + M, Ctrl + H** |
 | Edit.IncreaseFilterLevel | **ALT +.** |
 | Edit.IncrementalSearch | **CTRL + I** |

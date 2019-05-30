@@ -1,5 +1,5 @@
 ---
-title: Dołącz profiler do aplikacji platformy ASP.NET do zbierania danych cncurrency
+title: Dołącz profiler do aplikacji platformy ASP.NET w celu zbierania danych współbieżności
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4911b41058c2546ea373302d326535be775877ba
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974288"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261569"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Dołącz profiler do aplikacji sieci web ASP.NET do zbierania danych współbieżności przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do aplikacji ASP.NET i zbieranie danych współbieżności procesu i wątku.
@@ -33,13 +33,13 @@ Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do
 
    - [/Start](../profiling/start.md) opcja inicjuje profiler, aby zbierał dane rywalizacji zasobów.
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.
+   - [/Output](../profiling/output.md) **:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.
 
      Można użyć dowolnej opcji z poniższej tabeli z **/start** opcji.
 
    | Opcja | Opis |
    | - | - |
-   | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` | Określa opcjonalną domenę i nazwę użytkownika konta, aby uzyskać dostęp do programu profilującego. |
+   | [/ User](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` | Określa opcjonalną domenę i nazwę użytkownika konta, aby uzyskać dostęp do programu profilującego. |
    | [/crosssession](../profiling/crosssession.md) | Włącza profilowanie procesów w innych sesjach logowania. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności Windows mają być zbierane podczas profilowania. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500. |
@@ -47,7 +47,7 @@ Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do
 
 2. Uruchom aplikację ASP.NET w typowy sposób.
 
-3. Dołącz profiler do procesu roboczego ASP.NET, wpisując następujące polecenie:**VSPerfCmd / dołączanie:** `PID` [**/targetclr:**`Version`]
+3. Dołącz profiler do procesu roboczego ASP.NET, wpisując następujące polecenie:**VSPerfCmd / dołączanie:** `PID` [ **/targetclr:** `Version`]
 
    - `PID` Określa identyfikator lub nazwę procesu roboczego ASP.NET. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.
 
@@ -62,9 +62,9 @@ Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do
 
     |Opcja|Opis|
     |------------|-----------------|
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia (**globalon**) lub zatrzymuje (**/globaloff**) zbieranie danych dla wszystkich procesów.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymuje (**/processoff**) zbieranie danych dla procesu, identyfikator procesu (`PID`) określa.|
-    |[/ Dołączanie](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ Odłącz](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ Dołączanie** uruchamia zbieranie danych dla procesu, identyfikator procesu (`PID`) lub nazwę procesu (*Nazwa_procedury*) określa. **/ Odłącz** zatrzymuje zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli jest określony żaden proces.|
+    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia (**globalon**) lub zatrzymuje ( **/globaloff**) zbieranie danych dla wszystkich procesów.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia ( **/processon**) lub zatrzymuje ( **/processoff**) zbieranie danych dla procesu, identyfikator procesu (`PID`) określa.|
+    |[/ Dołączanie](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/ Odłącz](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/ Dołączanie** uruchamia zbieranie danych dla procesu, identyfikator procesu (`PID`) lub nazwę procesu (*Nazwa_procedury*) określa. **/ Odłącz** zatrzymuje zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli jest określony żaden proces.|
 
 ## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania
  Aby zakończyć sesję profilowania, profiler nie może zbierać dane. Możesz zatrzymać zbieranie danych z aplikacji, która jest profilowana metodą współbieżności, poprzez ponowne uruchomienie procesu roboczego ASP.NET lub wywołując **VSPerfCmd / Odłącz** opcji. Następnie należy wywołać **VSPerfCmd/shutdown** opcję, aby wyłączyć profiler i zamknąć plik danych profilowania. **VSPerfClrEnv /globaloff** polecenie usuwa zmienne środowiskowe profilowania, ale konfiguracja systemu nie jest resetowana do ponownego uruchomienia komputera.

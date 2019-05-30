@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Określanie dodatkowych informacji o kodzie za pomocą funkcji __Analysis_assume'
+title: Użyj funkcji __analysis_assume dla wskazówek analizy kodu
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ce2a97acd248e546fdfab1a1b5c3f22e085f0c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09db0ff784c7d8fa5a9889487f6090ad9afbfea0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403120"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260866"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Instrukcje: Określanie dodatkowych informacji o kodzie za pomocą funkcji __Analysis_assume
 Możesz podać wskazówek, aby narzędzie do analizy kodu dla kodu C/C++, który będzie pomocy proces analizy i zmniejszyć ostrzeżenia. Podać dodatkowe informacje, należy użyć następujących funkcji:

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Open With command
 - persistence, supporting Open With command
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3d8c9873f529a366f7910946cf5807c45f73ca7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66ca76d7e25d1f9f1fa23605a83b68094686fcd5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415388"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351564"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Wyświetlanie plików za pomocą polecenia Otwórz za pomocą
 Projekt można zadawać IDE, aby wyświetlić **Otwórz za pomocą** okno dialogowe. To żądanie monituje użytkownika o otwarcie pliku, który zawiera szereg standardowych edytorów. W poniższych krokach opisano tego procesu:

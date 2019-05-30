@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341b321b529bc1359ba576cc26ec20cc99e96cb3
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: de4aa0214ab97c330ddfb689076a2c378c4d227a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458395"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329309"
 ---
 # <a name="seekstart"></a>SEEK_START
 Określa położenie, z którym ma zostać rozpoczęte wyszukiwanie w strumieniu dezasemblacji.

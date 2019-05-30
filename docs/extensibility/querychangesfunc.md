@@ -8,17 +8,17 @@ helpviewer_keywords:
 - QUERYCHANGESFUNC callback function
 - QUERYCHANGESDATA structure
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2c7a993bca55f1224661e15f9a7ecbf0a967e31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ac0003d26296a25659debbab3352e4e37cbf2ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433425"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334393"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Jest to funkcja wywołania zwrotnego używane przez [SccQueryChanges](../extensibility/sccquerychanges-function.md) operację, aby wyliczyć Kolekcja nazw plików i ustalić stan każdego pliku.

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zmiany zwracanego typu metody DataContext (Projektant O-R)'
+title: Zmień zwracany typ metody DataContext (Projektant O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03e24c11e18f092823ad8dd8c4479b50e531b78b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 18e54938248dd52ee331e4df7bd2388105522657
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402820"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260574"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Instrukcje: Zmiany zwracanego typu metody DataContext (O/R Designer)
+# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Instrukcje: Zmienianie zwracanego typu metody DataContext (Object Relational Designer)
 Zwracany typ <xref:System.Data.Linq.DataContext> — metoda (utworzonym w zależności od procedury składowanej lub funkcji) różni się w zależności od tego, gdzie porzucić procedury składowanej lub funkcji w elemencie **O/R Designer**. Jeśli usuniesz element bezpośrednio na istniejącej klasy jednostki, <xref:System.Data.Linq.DataContext> metodę, która ma typ zwracany klasy jednostki jest tworzony (Jeśli schemat danych zwróconych przez procedurę składowaną lub funkcję odpowiada kształt klasy jednostek). Jeśli usuniesz element na pustym obszarem **O/R Designer**, <xref:System.Data.Linq.DataContext> metodę, która zwraca automatycznie wygenerowany typ zostanie utworzony. Możesz zmienić typ zwracany <xref:System.Data.Linq.DataContext> metoda po dodaniu do okienka metod. Aby sprawdzić lub zmienić typ zwracany <xref:System.Data.Linq.DataContext> metody, zaznacz go i kliknij **typie zwracanym** właściwość **właściwości** okna.
 
 > [!NOTE]

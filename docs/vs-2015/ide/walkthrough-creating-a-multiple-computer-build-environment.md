@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674153"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263016"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Przewodnik: Tworzenie środowiska kompilowania na wielu komputerach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowanie programu Visual Studio na komputerze-hoście, a następnie kopiowanie różnych plików i ustawień na inny komputer, aby uczestniczyć w kompilacji. Nie trzeba zainstalować program Visual Studio na innym komputerze.  
@@ -197,7 +197,7 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Skopiuj następujące pliki z folderu \Debug_NonRedist\x86\ lub \Debug_NonRedist\x64\ do komputera kompilacji, zgodnie z opisem w [przygotowania komputera do przebiegu testu, plik wykonywalny debugowania](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Żadne inne pliki nie mogą być kopiowane.  
+5. Skopiuj następujące pliki z folderu \Debug_NonRedist\x86\ lub \Debug_NonRedist\x64\ do komputera kompilacji, zgodnie z opisem w [przygotowania komputera do przebiegu testu, plik wykonywalny debugowania](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Żadne inne pliki nie mogą być kopiowane.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
          Dla natywnej kompilacji 64-bitowej, wskaż 64-bitowy MSBuild.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)

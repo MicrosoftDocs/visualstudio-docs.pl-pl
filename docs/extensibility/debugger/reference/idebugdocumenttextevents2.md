@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2 interface
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e24568d307db694d30a5e87630f47f764a036427
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 56ecf7c81c2be90b975785cc8f07f11af2aa2a7e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921287"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351354"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Ten interfejs jest używany do powiadamiania programu Visual Studio dotyczące zmian w dokumencie źródłowym, które są dostarczane przez aparat debugowania.
@@ -56,6 +56,6 @@ IDebugDocumentTextEvents2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

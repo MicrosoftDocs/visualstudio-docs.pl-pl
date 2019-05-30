@@ -8,17 +8,20 @@ helpviewer_keywords:
 - Delete method
 - IDebugBoundBreakpoint2::Delete method
 ms.assetid: 7088dc66-f24a-446f-a52a-397d02457a41
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d534fb10d87b0b7c62ede892aa8abdf0957b6be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a286d954e482e283e5df9e3268e0ed6c3743c8db
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923597"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330669"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
 Usuwa punkt przerwania.
@@ -65,6 +68,6 @@ HRESULT CBoundBreakpoint::Delete(void)
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek'
+title: Dostosowywanie zachowania wstawiania/aktualizowania/usuwania dla klas jednostek
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565410"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262911"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie zachowania wstawiania, aktualizacji i usuwania dla klas jednostek
 
@@ -195,7 +195,7 @@ Domyślnie, Zapisz przycisk nie jest włączona i nie jest zaimplementowana funk
 
 5. W **właściwości** wybierz **Wstaw** właściwości.
 
-6. Kliknij przycisk wielokropka (**...** ) obok pozycji **Użyj środowiska uruchomieniowego** otworzyć **Konfigurowanie zachowania** okno dialogowe.
+6. Kliknij przycisk wielokropka ( **...** ) obok pozycji **Użyj środowiska uruchomieniowego** otworzyć **Konfigurowanie zachowania** okno dialogowe.
 
 7. Wybierz **dostosować**.
 
@@ -217,7 +217,7 @@ Domyślnie, Zapisz przycisk nie jest włączona i nie jest zaimplementowana funk
 13. Mapa **Original_CustomerID** argument metody **CustomerID (oryginalny)** właściwości klasy.
 
     > [!NOTE]
-    > Domyślnie argumenty metody będzie zmapowana do właściwości klasy, gdy nazwy są zgodne. Jeśli nazwy właściwości zostały zmienione, a nie są już zgodne w tabeli i Klasa jednostki, Niewykluczone, że właściwość odpowiednik klasy do mapowania, jeśli **O/R Designer** nie może określić poprawne mapowania. Ponadto, jeśli argumenty metody nie ma właściwości prawidłową klasę do mapowania, możesz ustawić **właściwości klasy** wartość **(Brak)**.
+    > Domyślnie argumenty metody będzie zmapowana do właściwości klasy, gdy nazwy są zgodne. Jeśli nazwy właściwości zostały zmienione, a nie są już zgodne w tabeli i Klasa jednostki, Niewykluczone, że właściwość odpowiednik klasy do mapowania, jeśli **O/R Designer** nie może określić poprawne mapowania. Ponadto, jeśli argumenty metody nie ma właściwości prawidłową klasę do mapowania, możesz ustawić **właściwości klasy** wartość **(Brak)** .
 
 14. Kliknij przycisk **Zastosuj** można zapisać konfiguracji dla wybranej klasy lub zachowania.
 

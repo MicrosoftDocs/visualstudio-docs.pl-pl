@@ -1,5 +1,5 @@
 ---
-title: Zbieranie danych współbieżności dla usługi przy użyciu wiersza polecenia Profiler | Dokumentacja firmy Microsoft
+title: Użyj wiersza polecenia profilera, aby uzyskać danych współbieżności dla usługi
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5df8fa1b0e0d9c76595c29958641de628e5e8b78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4fba5c02846fa13cb0929a63e4007acb7db58535
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440218"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262977"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla usługi przy użyciu wiersza polecenia profilera
 Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools umożliwia zbieranie danych kontencji zasobów i dane o aktywności wątku, który pokazuje wykorzystanie procesora CPU, rywalizacji wątków, migracji wątków, opóźnień synchronizacji, obszary nachodzące We/Wy i inne zdarzenia systemowe.

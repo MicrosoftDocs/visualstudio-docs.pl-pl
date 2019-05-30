@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4532b7e566bbd315d9acbdef43198e0f91f5f195
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443054"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263552"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Wprowadzenie do narzędzi Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ W tej sekcji dowiesz się, jak zainstalować program Visual Studio Tools for Uni
   
  W przeciwnym razie jeśli jesteś nowym użytkownikiem platformy Unity, zacząć od małej od podstawowego samouczka. Odwiedź stronę Unity Dowiedz się, aby znaleźć samouczki dotyczące przykładowych projektów, które można uruchomić przy użyciu i lekcje, których można uzyskać z poziomu, aby tworzyć gry przy użyciu aparatu Unity. Dowiedz się, Unity strona ma samouczki łatwe do wykonania dla kilku różnych gier.  
   
- [Samouczki — strona Unity Dowiedz się więcej](http://unity3d.com/learn/tutorials/modules)  
+ [Samouczki — strona Unity Dowiedz się więcej](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 — Konfigurowanie Edytor platformy Unity można użyć programu Visual Studio Tools for Unity  
  Aby włączyć projekt do programu Visual Studio Tools for Unity, zestawu Visual Studio jako jego Edytor skryptu zewnętrznego. W edytorze Unity w menu głównym wybierz **Edycja preferencji**; następnie w **preferencje Unity** okno dialogowe, wybierz **zewnętrznych narzędzi**. Następnym etapem jest skonfigurowanie **Edytor skryptów zewnętrznych** właściwości do wersji programu Visual Studio, w której chcesz użyć (dla tej wersji programu Visual Studio musi być zainstalowany program Visual Studio Tools for Unity) i upewnij się, że **edytora dołączanie** właściwość jest ustawiona.  
@@ -77,7 +77,7 @@ W tej sekcji dowiesz się, jak zainstalować program Visual Studio Tools for Uni
   
  Na koniec upewnij się, został ustawiony element docelowy kompilacji, za pośrednictwem **ustawieniach kompilacji** strony oraz że **debugowanie skryptu** jest włączona.  
   
- ![Konfigurowanie ustawień kompilacji platformy Unity na potrzeby debugowania. ](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Konfigurowanie ustawień kompilacji platformy Unity na potrzeby debugowania. ] (../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3 — Uruchom program Visual Studio Edytor platformy Unity  
  Począwszy od Unity 5.2 **Visual Studio Tools** menu rozszerzeń nie są już potrzebne do uruchomienia programu Visual Studio lub aby skonfigurować program Visual Studio Tools for Unity. Zamiast tego po skonfigurowaniu programu Visual Studio jako edytora skryptu zewnętrznego, po prostu wybierz plik skryptu z programu Unity editor, a kod zostanie otwarty w programie Visual Studio.  
@@ -90,23 +90,23 @@ W tej sekcji dowiesz się, jak zainstalować program Visual Studio Tools for Uni
   
  W przeciwnym razie jeśli jesteś nowym użytkownikiem platformy Unity, zacząć od małej od podstawowego samouczka. Odwiedź stronę Unity Dowiedz się, aby znaleźć samouczki dotyczące przykładowych projektów, które można uruchomić przy użyciu i lekcje, których można uzyskać z poziomu, aby tworzyć gry przy użyciu aparatu Unity. Dowiedz się, Unity strona ma samouczki łatwe do wykonania dla kilku różnych gier.  
   
- [Samouczki — strona Unity Dowiedz się więcej](http://unity3d.com/learn/tutorials/modules)  
+ [Samouczki — strona Unity Dowiedz się więcej](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 — Konfigurowanie Edytor platformy Unity można użyć programu Visual Studio Tools for Unity  
  Jeśli zaczynasz z istniejącego projektu środowiska Unity lub podczas tworzenia projektu zaimportowano unitypackage narzędzia programu Visual Studio, musisz zaimportować unitypackage teraz. W oknie Edytor środowiska Unity w menu głównym wybierz **zasobów, importowanie pakietu Visual Studio 2015 Tools** (powinien zostać wyświetlony opcji wersji ma zainstalowanego programu Visual Studio).  
   
- ![Importuj pakiet w narzędziach VSTU w swoim projekcie aparatu Unity. ](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
+ ![Importuj pakiet w narzędziach VSTU w swoim projekcie aparatu Unity. ] (../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
   
  Na koniec upewnij się, został ustawiony element docelowy kompilacji, za pośrednictwem **ustawieniach kompilacji** strony oraz że **debugowanie skryptu** jest włączona.  
   
- ![Konfigurowanie ustawień kompilacji platformy Unity na potrzeby debugowania. ](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Konfigurowanie ustawień kompilacji platformy Unity na potrzeby debugowania. ] (../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3 — Uruchom program Visual Studio z edytora aparatu Unity  
  Ostatnim krokiem jest do uruchamiania programu Visual Studio z poziomu aparatu Unity. Tworzy rozwiązanie Visual Studio dla projektu, a następnie zostanie otwarty w programie Visual Studio.  
   
  W edytorze Unity w menu głównym wybierz **narzędzia programu Visual Studio, Otwórz w programie Visual Studio**.  
   
- ![Otwórz swój projekt środowiska unity w programie Visual Studio. ](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
+ ![Otwórz swój projekt środowiska unity w programie Visual Studio. ] (../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
 ## <a name="next-steps"></a>Następne kroki  
  Aby dowiedzieć się, jak pracować z i debugowanie projektu środowiska Unity w programie Visual Studio, zobacz [przy użyciu programu Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  

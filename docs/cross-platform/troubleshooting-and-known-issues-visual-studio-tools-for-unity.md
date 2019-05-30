@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów i znane problemy (Visual Studio Tools for Unity) | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów i znane problemy (narzędzia VS Tools for Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815589"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261116"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools for Unity)
 
@@ -54,7 +54,7 @@ To powinno rozwiązać problem. W przypadku, gdy nadal występuje ten problem, u
 
 Kilka wtyczek platformy Unity, takich jak analizy, FMOD, STUDZIENKĘ (uniwersalny odtwarzacz), ZFBrowser lub przeglądarki Embedded korzystają z wątków natywnych. Jest to problem, gdy wtyczki kończy się dołączanie natywnych wątku do środowiska uruchomieniowego, które następnie wykonuje operację blokowania wywołań do systemu operacyjnego. Oznacza to, Unity nie można przerwać wątek debugera (lub Załaduj ponownie domeny) i zawieszeniu.
 
-FMOD, istnieje obejście tego problemu, możesz przekazać `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` inicjowania [flagi](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) Wyłącz Przetwarzanie asynchroniczne i wykonywać całego procesu przetwarzania w wątku głównym.
+FMOD, istnieje obejście tego problemu, możesz przekazać `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` inicjowania [flagi](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) Wyłącz Przetwarzanie asynchroniczne i wykonywać całego procesu przetwarzania w wątku głównym.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Niezgodne projektu w programie Visual Studio
 

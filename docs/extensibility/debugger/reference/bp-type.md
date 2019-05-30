@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888922"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350577"
 ---
 # <a name="bptype"></a>BP_TYPE
 Określa, czy punkt przerwania znajduje się w lokalizacji kodu, jest lokalizacja danych lub inny typ punktu przerwania.
@@ -43,14 +46,18 @@ public enum enum_BP_TYPE {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-BPT_NONE określa żadnego typu punktu przerwania.
+## <a name="fields"></a>Pola
+`BPT_NONE`\
+Określa żadnego typu punktu przerwania.
 
-BPT_CODE określa punkt przerwania w kodzie.
+`BPT_CODE`\
+Określa punkt przerwania w kodzie.
 
-BPT_DATA określa punkt przerwania danych.
+`BPT_DATA`\
+Określa punkt przerwania danych.
 
-Punkt przerwania, który nie jest ani kodu ani danych określa BPT_SPECIAL typu. Ten typ jest przestarzały i nie powinna być używana.
+`BPT_SPECIAL`\
+Określa punkt przerwania, który nie jest ani kodu ani typu danych. Ten typ jest przestarzały i nie powinna być używana.
 
 ## <a name="remarks"></a>Uwagi
 Przekazany jako parametr do [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) i [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) metody.
@@ -62,7 +69,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

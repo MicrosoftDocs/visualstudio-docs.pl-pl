@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a74d6008db15cc8cd89daf4882d8952006dc547d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a6508b8cfde2f08eb40201973fec899ee11956b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433087"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353548"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList, funkcja
 Ta funkcja określa, które pliki i katalogi (opcjonalnie) są przechowywane w kontroli źródła, biorąc pod uwagę listę katalogów do sprawdzenia.

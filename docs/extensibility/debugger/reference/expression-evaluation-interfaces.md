@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b23bde604674f8452d7ba63937e0936bce42cd4a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2919310885cb2666a74136d56db713ee8e607dfc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414144"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337647"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -59,7 +59,7 @@ ms.locfileid: "63414144"
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|Zapewnia możliwość tworzenia [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) obiektu.|
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|Reprezentuje kolekcję [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektów.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [Pisanie ewaluatora wyrażeń środowiska CLR](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Wizualizator typów i przeglądarka niestandardowa](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

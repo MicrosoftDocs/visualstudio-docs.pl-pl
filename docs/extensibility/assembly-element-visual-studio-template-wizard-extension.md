@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3ec9052a9d912e5563e4db1f8afc8d9daf9d6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68fb795005f1f653893147f7013117112f803211
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843635"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352226"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly — element (rozszerzenie Kreatora szablonów programu Visual Studio)
 Określa nazwę lub silna nazwa zestawu, który implementuje `IWizard` interfejsu.

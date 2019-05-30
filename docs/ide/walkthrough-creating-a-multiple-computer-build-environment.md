@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581642"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262935"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: tworzenie środowiska kompilowania na wielu komputerach
 
@@ -62,7 +62,7 @@ W tej sekcji omówiono kopiowania określonych plików, kompilatorów, narzędzi
 - Na x86 komputera, domyślna lokalizacja to *C:\Program Files\Microsoft Visual Studio*
 - Na x64 komputera, domyślna lokalizacja to *C:\Program Files (x86) \Microsoft Visual Studio*
 
-Należy zauważyć, że nazwa *Program Files* folderu jest zależna od systemu operacyjnego, który jest zainstalowany. Na x86 komputera, nazwa jest *Program Files*; x64 komputera, nazwa jest *Program Files (x86)*. Niezależnie od architektury systemu, ten instruktażu odwołuje się do *Program Files* folder jako *% ProgramFiles %*.
+Należy zauważyć, że nazwa *Program Files* folderu jest zależna od systemu operacyjnego, który jest zainstalowany. Na x86 komputera, nazwa jest *Program Files*; x64 komputera, nazwa jest *Program Files (x86)* . Niezależnie od architektury systemu, ten instruktażu odwołuje się do *Program Files* folder jako *% ProgramFiles %* .
 
 > [!NOTE]
 > Na komputerze kompilacji wszystkie odpowiednie pliki muszą być na tym samym dysku. Litera dysku może być jednak różni się od litery dysku dla dysku, na którym zainstalowano program Visual Studio na komputerze-hoście. W każdym przypadku konieczne jest uwzględnienie lokalizacji plików podczas tworzenia wpisów rejestru zgodnie z opisem w dalszej części tego dokumentu.
@@ -169,7 +169,7 @@ Należy zauważyć, że nazwa *Program Files* folderu jest zależna od systemu o
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Skopiuj następujące pliki z *Debug_NonRedist\x86* lub *Debug_NonRedist\x64* folderu na komputerze kompilacji, zgodnie z opisem w [przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Żadne inne pliki nie mogą być kopiowane.
+5. Skopiuj następujące pliki z *Debug_NonRedist\x86* lub *Debug_NonRedist\x64* folderu na komputerze kompilacji, zgodnie z opisem w [przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Żadne inne pliki nie mogą być kopiowane.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -332,7 +332,7 @@ Można utworzyć środowisko budowania, które mogą być rozmieszczone na róż
 
 2. Skopiuj pliki i katalogi zgodnie z opisem w [skopiuj pliki z komputera hosta do komputera kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) sekcji tego przewodnika, z wyjątkiem wklej je w obszarze *% Depot %* katalogu, który został właśnie utworzony. Na przykład skopiuj z *%ProgramFiles%\Windows Kits\8.0\bin* do *%Depot%\Windows Kits\8.0\bin*.
 
-3. Kiedy pliki są wklejane w *% Depot %*, wprowadź następujące zmiany:
+3. Kiedy pliki są wklejane w *% Depot %* , wprowadź następujące zmiany:
 
     - W % Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\i \Microsoft.CppCommon.targets\\, zmienić każde wystąpienie z
 
@@ -407,5 +407,5 @@ Można utworzyć środowisko budowania, które mogą być rozmieszczone na róż
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md)
