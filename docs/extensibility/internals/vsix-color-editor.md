@@ -3,17 +3,17 @@ title: VSIX Color Editor | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f9c6dbcc47e4bbac4203d7ec49f563f2a85ba32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857925"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332918"
 ---
 # <a name="vsix-color-editor"></a>Edytor kolorów VSIX
 Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i edytować kolorów niestandardowych dla programu Visual Studio. Narzędzie można również wygenerować klucze zasobu motywu, czemu kolory, można użyć w kodzie. To narzędzie jest przydatne do tworzenia rozszerzenia programu Visual Studio, który obsługuje motywów kolorów. To narzędzie może otwierać pliki .pkgdef i XML. Visual Studio motywy (.vstheme plików) może służyć za pomocą rozszerzenia kolor Edytor programu Visual Studio, zmieniając rozszerzenie pliku .xml. Ponadto pliki .vstheme można importować do bieżącego pliku .xml.
@@ -55,7 +55,7 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
 
    **Krok 1. Określ nazwy kategorii i tokenu dla nowych tokenów kolorów.**
 
-   Preferowany nazewnictwa schemat jest VSColor **[Category] [typ interfejsu użytkownika] [Stan]**. Nie należy używać słowa "color" w nazwach VSColor, ponieważ jest nadmiarowy.
+   Preferowany nazewnictwa schemat jest VSColor **[Category] [typ interfejsu użytkownika] [Stan]** . Nie należy używać słowa "color" w nazwach VSColor, ponieważ jest nadmiarowy.
 
    Nazwy kategorii zapewniają logiczne grupowanie i powinien być zdefiniowany jako wąskiego, jak to możliwe. Na przykład nazwa okna jednego narzędzia może być nazwa kategorii, ale nazwa całej działalności zespołu lub projektu zespołu nie jest. Grupowanie wpisy na kategorie zapobiega rozróżnienie kolory o takiej samej nazwie.
 

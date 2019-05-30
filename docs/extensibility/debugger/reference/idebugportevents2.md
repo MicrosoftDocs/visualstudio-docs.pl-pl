@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb6a13b47013153de284ad1997a484efb3be1c98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5690108aaeede2cf15cc5fac927a3dc5ab3855ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918330"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326727"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Ten interfejs powiadamia słuchacz (zazwyczaj Menedżer debugowania sesji [SDM] lub aparat debugowania) proces i program tworzenia i niszczenia na określonym porcie. Te informacje mogą służyć do przedstawiać w czasie rzeczywistym procesów i programy uruchomione na porcie.
@@ -53,6 +53,6 @@ IDebugPortEvents2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

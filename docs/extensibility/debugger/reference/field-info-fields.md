@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924330"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337670"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Określa, jakie informacje należy pobrać o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.
@@ -47,14 +50,18 @@ public enum enum_FIELD_INFO_FIELDS {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-FIF_FULLNAME zainicjować bądź użyj `bstrFullName` pole [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.
+## <a name="fields"></a>Pola
+`FIF_FULLNAME`\
+Inicjowanie bądź użyj `bstrFullName` pole [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.
 
-FIF_NAME zainicjować bądź użyj `bstrName` pole `FIELD_INFO` struktury.
+`FIF_NAME`\
+Inicjowanie bądź użyj `bstrName` pole `FIELD_INFO` struktury.
 
-FIF_TYPE zainicjować bądź użyj `bstrType` pole `FIELD_INFO` struktury.
+`FIF_TYPE`\
+Inicjowanie bądź użyj `bstrType` pole `FIELD_INFO` struktury.
 
-FIF_MODIFIERS zainicjować bądź użyj `bstrModifiers` pole `FIELD_INFO` struktury.
+`FIF_MODIFIERS`\
+Inicjowanie bądź użyj `bstrModifiers` pole `FIELD_INFO` struktury.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości również są przekazywane jako argument do [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metodę, aby określić które pola [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury, które mają zostać zainicjowane.
@@ -70,7 +77,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

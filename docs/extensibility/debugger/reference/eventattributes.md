@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVENTATTRIBUTES enumeration
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58417471e37dd335c2fa751492f2db357274417a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a3361d27a9e0a4a1f56035c0d2af20d9fa9a9303
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877729"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337768"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Określa atrybuty zdarzeń.
@@ -49,20 +52,27 @@ public enum enum_EVENTATTRIBUTES {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-EVENT_ASYNCHRONOUS wskazuje, że zdarzenie jest asynchroniczny i braku odpowiedzi na zdarzenia jest wymagana.
+## <a name="fields"></a>Pola
+`EVENT_ASYNCHRONOUS`\
+Wskazuje, że zdarzenie jest asynchroniczna, jak i braku odpowiedzi na zdarzenia jest wymagana.
 
-EVENT_SYNCHRONOUS wskazuje, że zdarzenie jest synchroniczne; Odpowiedz przez [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
+`EVENT_SYNCHRONOUS`\
+Wskazuje, że zdarzenie jest synchroniczne; Odpowiedz przez [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
 
-EVENT_STOPPING wskazuje, że jest to zdarzenie zatrzymywania. Musi być połączona z jedną `EVENT_ASYNCHRONOUS` lub `EVENT_SYNCHRONOUS`.
+`EVENT_STOPPING`\
+Wskazuje, że jest to zdarzenie zatrzymywania. Musi być połączona z jedną `EVENT_ASYNCHRONOUS` lub `EVENT_SYNCHRONOUS`.
 
-EVENT_ASYNC_STOP wskazuje zdarzenie asynchroniczne zatrzymywania. Obecnie nie ma żadnego takiego zdarzenia. Ta flaga jest tylko symbol zastępczy.
+`EVENT_ASYNC_STOP`\
+Wskazuje zdarzenie asynchroniczne zatrzymywania. Obecnie nie ma żadnego takiego zdarzenia. Ta flaga jest tylko symbol zastępczy.
 
-EVENT_SYNC_STOP wskazuje zdarzenia synchroniczne zatrzymywanie (kombinację `EVENT_SYNCHRONOUS` i `EVENT_STOPPING`). Ta wartość jest używana przez aparat debugowania (DE) podczas wysyłania zdarzeń zatrzymywania. Udzielona przez wywołanie [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [kroku](../../../extensibility/debugger/reference/idebugprogram2-step.md), lub [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+`EVENT_SYNC_STOP`\
+Wskazuje zdarzenia synchroniczne zatrzymywanie (kombinację `EVENT_SYNCHRONOUS` i `EVENT_STOPPING`). Ta wartość jest używana przez aparat debugowania (DE) podczas wysyłania zdarzeń zatrzymywania. Udzielona przez wywołanie [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [kroku](../../../extensibility/debugger/reference/idebugprogram2-step.md), lub [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
-EVENT_IMMEDIATE wskazuje zdarzenie, które są wysyłane do IDE natychmiast. Ta flaga jest w połączeniu z inne flagi, takich jak `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, lub `EVENT_SYNC_STOP` aby wskazać typ zdarzenia oraz fakt, że mechanizm odpowiedzi (jeśli istnieje) jest znany.
+`EVENT_IMMEDIATE`\
+Określa zdarzenie, które są wysyłane do IDE natychmiast. Ta flaga jest w połączeniu z inne flagi, takich jak `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, lub `EVENT_SYNC_STOP` aby wskazać typ zdarzenia oraz fakt, że mechanizm odpowiedzi (jeśli istnieje) jest znany.
 
-EVENT_EXPRESSION_EVALUATION zdarzenia jest wynikiem obliczenia wyrażenia.
+`EVENT_EXPRESSION_EVALUATION`\
+Zdarzenie jest wynikiem obliczenia wyrażenia.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości są przekazywane w `dwAttrib` parametru [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) metody.
@@ -76,7 +86,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

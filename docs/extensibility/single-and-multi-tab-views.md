@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3676a19b5b5b7a4050a7d48385e76954ad0bcc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def68627223ba082f5ec6a3ef571e314feae33f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432890"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332044"
 ---
 # <a name="single-and-multi-tab-views"></a>Widoki z jedną i wieloma kartami
 Edytor można tworzyć różne typy widoków. Przykładem jest oknem edytora kodu, jest inny Projektant formularzy.
@@ -114,5 +114,5 @@ Error:
 
 ## <a name="see-also"></a>Zobacz też
 - [Obsługa wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md)
-- [Instrukcje: Dołączanie widoków do danych dokumentów](../extensibility/how-to-attach-views-to-document-data.md)
+- [Instrukcje: dołączanie widoków do danych dokumentów](../extensibility/how-to-attach-views-to-document-data.md)
 - [Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)

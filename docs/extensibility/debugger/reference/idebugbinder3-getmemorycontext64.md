@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 48c4bde703584a57baac8040d9c5176f942300db
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 92c589951e9b65536be5474f56eb6b959232b738
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614759"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327068"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Konwertuje lokalizacji obiektu lub adresów pamięci 64-bitowych w kontekście pamięci.

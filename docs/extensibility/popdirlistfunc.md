@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 259ada240d81b87d2d36e12cddcc28efe8d893f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fef3ab783c736fd2573e8d9df1a513e25d37020
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806099"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326134"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Jest to funkcja wywołania zwrotnego do [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) funkcję, aby zaktualizować kolekcję katalogów i (opcjonalnie) nazw plików, aby dowiedzieć się, które są pod kontrolą źródła.

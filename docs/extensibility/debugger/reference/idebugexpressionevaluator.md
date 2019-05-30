@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator interface
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f74579ba14a99cde35bb12b2a4d320c73802ad75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a7606f01d180c0c26ad0e2f82e5d83a7256e3d64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874149"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325624"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -102,7 +102,7 @@ IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolPro
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
 - [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)

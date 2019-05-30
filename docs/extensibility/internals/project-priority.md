@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d444896c305130c7805b8fd6ec1bdf020ed446d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1badd483690ae22f9e314c0f9eb4ac3033d82e4a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909240"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328274"
 ---
 # <a name="project-priority"></a>Priorytet projektu
 Element projektu jest zazwyczaj członkiem tylko jednego projektu w rozwiązaniu. W związku z tym IDE może łatwo ustalić, który projekt jest używany do otwierania elementu. Jednak jeśli element jest członkiem więcej niż jeden projekt, IDE używa schematu priorytetu do określenia najlepsze projektu do otwierania elementu.

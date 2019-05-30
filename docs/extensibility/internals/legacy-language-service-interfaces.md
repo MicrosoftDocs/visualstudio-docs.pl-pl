@@ -6,17 +6,17 @@ helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5c907885e91cc3b7765ff94528a30a84b17ee46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a626111fc1f2eb8790cdfe2a146f63eba7fbab3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909578"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333493"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfejsy starszej wersji usługi językowej
 Dla określonego języka programowania jednocześnie może istnieć tylko jedno wystąpienie usługi języka. Jednak usługa jeden język może obsługiwać więcej niż jeden z nich.

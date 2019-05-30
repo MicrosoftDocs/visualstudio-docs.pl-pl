@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a260f0458b6278abc6c515b616345463a0cafef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af86781f771ec5516e212ba3df8fdf945cd8d6d3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434742"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334217"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Rejestrowanie zleceń dla rozszerzeń nazw plików
 Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowanego akcję, która występuje po dwukrotnym kliknięciu pliku. Preferowane to, że akcja jest połączony z czasownika, na przykład otwarty, która odnosi się do akcji.

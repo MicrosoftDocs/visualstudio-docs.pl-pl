@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429351"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323315"
 ---
 # <a name="web-project-essentials"></a>Podstawowe informacje dotyczące projektów internetowych
 Projekty sieci Web tworzyć aplikacje sieci Web. Projekt sieci Web można użyć, aby utworzyć aplikację internetową, która ma inteligentne strony sieci Web. Inteligentne strony sieci Web zawiera kod po stronie serwera, który renderuje stronę sieci Web na żądanie.
@@ -32,7 +32,7 @@ Projekty sieci Web tworzyć aplikacje sieci Web. Projekt sieci Web można użyć
 
   - Projekt aplikacji sieci Web (WAP) tworzy jednej plik wykonywalny, który łączy kod dla wszystkich stron sieci Web inteligentnego, a także wszystkich plików źródłowych z folderu /App_Code.
 
-- Niezależnie od w witrynie sieci Web znajduje się plik rozwiązania dla projektu sieci Web. Domyślnie pliki rozwiązania znajdują się w \Documents and Settings\\*Twojekonto*\My dokumenty\\*\<programu Visual Studio ### >* \Projects\\ *YourWebSite*.
+- Niezależnie od w witrynie sieci Web znajduje się plik rozwiązania dla projektu sieci Web. Domyślnie pliki rozwiązania znajdują się w \Documents and Settings\\*Twojekonto*\My dokumenty\\ *\<programu Visual Studio ### >* \Projects\\ *YourWebSite*.
 
   > [!NOTE]
   > Jeśli chcesz zachować plik rozwiązania z witryny sieci Web, po prostu przesuń istnieje i otwórz go ponownie.

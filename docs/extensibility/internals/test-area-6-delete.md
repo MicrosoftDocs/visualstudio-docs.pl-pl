@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 935c735009d83274cc1a8ae126d46f8ee9dbe1ae
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908676"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327988"
 ---
 # <a name="test-area-6-delete"></a>Obszar testowy 6: Usuwanie
 Ten obszar testowy wtyczki kontroli źródła obejmuje akcje usuwania.

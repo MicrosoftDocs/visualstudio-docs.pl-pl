@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c36e5df52d4caa34d611f7f1c26b8a5187a637a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f861875e15a9051ab05d1b7398ea5902189830b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926087"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332569"
 ---
 # <a name="bind-breakpoints"></a>Powiąż punktów przerwania
 Jeśli użytkownik ustawia punkt przerwania, być może, naciskając klawisz **F9**, IDE formulates żądanie i wyświetla monit o sesji debugowania, aby utworzyć punkt przerwania.

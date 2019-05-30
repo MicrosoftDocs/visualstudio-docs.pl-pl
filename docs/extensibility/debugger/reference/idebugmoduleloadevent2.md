@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModuleLoadEvent2 interface
 ms.assetid: 7d26fb23-5d49-4ba7-b7c5-3aed4d7be81e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689fd873bc753e885f0e1efad177a26d524bb030
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: caca1e79ef99e4bc5e7dd830ed20e717a2fa684f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918544"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323721"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), podczas ładowania modułu lub zwolnione.
@@ -51,7 +51,7 @@ IDebugModuleLoadEvent2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

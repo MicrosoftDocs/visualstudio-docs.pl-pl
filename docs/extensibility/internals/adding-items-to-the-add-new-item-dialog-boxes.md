@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418694"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328050"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Dodawanie elementów do okna dialogowego Dodaj nowy element
 Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna się od kluczy rejestru. Jak pokazano w następujących wpisach rejestru **AddItemTemplates** sekcja zawiera ścieżkę i nazwę katalogu, w które elementy udostępnione w **Dodaj nowy element** są umieszczane okno dialogowe.
@@ -46,7 +46,7 @@ Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna si�
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Katalog dla **TemplatesDir**, czyli *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, jest węzłem w lewej części **Dodaj Nowy element** drzewa okno dialogowe. Dodatkowe elementy w drzewie są oparte na podkatalogu w tym katalogu głównego. Pliki można dodać do projektu są elementy w prawym okienku **Dodaj nowy element** okno dialogowe.
+ Katalog dla **TemplatesDir**, czyli *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* , jest węzłem w lewej części **Dodaj Nowy element** drzewa okno dialogowe. Dodatkowe elementy w drzewie są oparte na podkatalogu w tym katalogu głównego. Pliki można dodać do projektu są elementy w prawym okienku **Dodaj nowy element** okno dialogowe.
 
  Zazwyczaj ten folder będzie zawierać pliki szablonu projektu, taki jak kod HTML szablonu lub *.cpp* pliku i wszystkie *.vsz* pliki do uruchamiania kreatorów. Aby kontrolować sposób wyświetlania elementów, możesz również uwzględnić *.vsdir* pliki do lokalizowania nazwy katalogów i ikony. Zlokalizowany ciąg jest podpis, który pojawia się w oknie dialogowym, który reprezentuje ten węzeł w **Dodaj nowy element** drzewa okno dialogowe.
 

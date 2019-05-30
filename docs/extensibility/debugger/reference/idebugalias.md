@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias interface
 ms.assetid: 3cc4c9a4-7805-4239-b00e-eb4a024f3c55
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 793b57c217144f04dc573b98d58dea9d9202995c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 29b7a8bca687ff2992c5e3fb92cb0cc6c8a1740d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414187"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338130"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -57,7 +57,7 @@ IDebugAlias : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)
 - [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)

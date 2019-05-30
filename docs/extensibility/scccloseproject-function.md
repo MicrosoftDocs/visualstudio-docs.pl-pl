@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0420aa4d7148e6409dd6edab903ffbc3e7644f35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a5fe721a3b51f4d3f210e7f2d5450e4f4bc6f41
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62803025"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333935"
 ---
 # <a name="scccloseproject-function"></a>Funkcja SccCloseProject
 Ta funkcja powoduje zamknięcie projektu oznaczenia końca określonej sesji.

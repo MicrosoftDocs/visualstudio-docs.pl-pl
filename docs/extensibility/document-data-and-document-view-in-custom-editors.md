@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6470b7ddb8a28c2aa22a23a55976f1f8831c4363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7574fad343e2966ab9a8782d472a0491bd29767b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864147"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348091"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dane dokumentu i Widok dokumentu w edytorach niestandardowych
 Niestandardowy edytor, który składa się z dwóch części: obiekt danych dokumentu i obiekt widoku dokumentu. Jak sugerują nazwy dokumentu obiekt danych reprezentuje dane tekstowe, które mają być wyświetlane. Podobnie obiekt widoku dokumentu (lub "view") przedstawia jednego lub kilku okien, w której chcesz wyświetlić obiekt danych dokumentu.

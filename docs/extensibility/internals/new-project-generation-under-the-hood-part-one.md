@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a657c59cba31ea48298179a41ab1024a0b7e948f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860309"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326627"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: szczegółowe informacje (część pierwsza)
 Nigdy nie myśl o tym, jak utworzyć swój własny typ projektu? Zastanawiasz się, co rzeczywiście się dzieje po utworzeniu nowego projektu? Teraz wykonać podglądu pod maską i zobacz, co naprawdę dzieje.
@@ -78,7 +78,7 @@ devenv /installvstemplates
 
  \<Ścieżka instalacji usługi Visual Studio > \VC#\VCSPackages\1033\csprojui.dll
 
- Aby to sprawdzić, otwórz Eksploratora plików, a następnie przeciągnij csprojui.dll do katalogu programu Visual Studio... Tabela ciągów pokazuje, że zasób #2345 ma podpis **Visual C#**.
+ Aby to sprawdzić, otwórz Eksploratora plików, a następnie przeciągnij csprojui.dll do katalogu programu Visual Studio... Tabela ciągów pokazuje, że zasób #2345 ma podpis **Visual C#** .
 
 ##### <a name="sortpriority"></a>SortPriority
  Określa położenie węzeł główny na **typów projektów** drzewa.

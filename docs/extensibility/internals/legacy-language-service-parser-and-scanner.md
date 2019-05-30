@@ -6,17 +6,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84b569a843a3ee414143dbfffb0dba6e881f5567
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b8ed17e67246479772636d67bc8d9f218a3a3fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418379"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333472"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizator i skaner starszej wersji usługi językowej
 Analizator jest niezwykle usługi języka. Klasy języka zarządzanego pakietu Framework (MPF) wymagają analizatora języka, aby wybrać informacje związane z kodem są wyświetlane. Analizator składni dzieli tekst na tokeny leksykalne, a następnie identyfikuje tych tokenów według typu i funkcje.

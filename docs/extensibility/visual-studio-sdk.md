@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VS SDK (see Visual Studio SDK)
 - Visual Studio, SDK
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de690ea6b077ea0c0dc7c6b65f34c68c95e41081
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b713015bc2ee1f42fdf331521a990d89eb6adbcd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553669"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323092"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj nowe funkcje do programu Visual Studio. Można dystrybuować swoje rozszerzenia innym użytkownikom, a także do witryny Marketplace programu Visual Studio. Poniżej przedstawiono kilka sposobów, w którym można rozszerzyć Visual Studio:
@@ -76,7 +76,7 @@ Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj n
 ## <a name="see-also"></a>Zobacz także
 - [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [Często zadawane pytania: Konwertowanie dodatków na rozszerzenia pakietu VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [Zarządzanie wieloma wątkami w kodzie zarządzanym](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Rozszerzenie menu i poleceń](../extensibility/extending-menus-and-commands.md)
 - [Dodawanie poleceń do pasków narzędzi](../extensibility/adding-commands-to-toolbars.md)

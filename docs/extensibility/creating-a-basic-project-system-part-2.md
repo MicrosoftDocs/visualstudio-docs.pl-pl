@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926805"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336997"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 Pierwszy instrukcje przedstawione w tej serii [tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak tworzenie systemu podstawowego projektu. W tym przewodniku opiera się na systemu podstawowego projektu, dodając szablonu programu Visual Studio, strony właściwości i inne funkcje. Pierwszym przewodniku należy wykonać przed rozpoczęciem korzystania z niej.
@@ -42,7 +42,7 @@ Ten przewodnik omawia sposób wykonywania tych zadań:
 ## <a name="create-a-visual-studio-template"></a>Tworzenie szablonu programu Visual Studio
 - [Tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md) pokazuje, jak utworzyć szablon podstawowy projekt i dodać go do systemu projektu. Pokazano również, jak zarejestrować ten szablon przy użyciu programu Visual Studio przy użyciu <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybut, który zapisuje pełną ścieżkę *\\Templates\Projects\SimpleProject\\* folder w systemie rejestr.
 
-Przy użyciu szablonu programu Visual Studio (*.vstemplate* pliku) zamiast szablonu podstawowego projektu, można kontrolować, jak szablon jest wyświetlany w **nowy projekt** okno dialogowe i jak są parametry szablonu zastąpione. A *.vstemplate* plik jest plikiem XML, który opisuje, jak mają być włączone, gdy projekt jest tworzony przy użyciu szablonu projektu systemu plików źródłowych. Sam system projekt jest kompilowany przez zbieranie *.vstemplate* plików i plików źródłowych w *zip* pliku, a następnie wdrażane przez skopiowanie *zip* plik do lokalizacji, która jest znane w programie Visual Studio. Ten proces opisano szczegółowo w dalszej części tego przewodnika.
+Przy użyciu szablonu programu Visual Studio ( *.vstemplate* pliku) zamiast szablonu podstawowego projektu, można kontrolować, jak szablon jest wyświetlany w **nowy projekt** okno dialogowe i jak są parametry szablonu zastąpione. A *.vstemplate* plik jest plikiem XML, który opisuje, jak mają być włączone, gdy projekt jest tworzony przy użyciu szablonu projektu systemu plików źródłowych. Sam system projekt jest kompilowany przez zbieranie *.vstemplate* plików i plików źródłowych w *zip* pliku, a następnie wdrażane przez skopiowanie *zip* plik do lokalizacji, która jest znane w programie Visual Studio. Ten proces opisano szczegółowo w dalszej części tego przewodnika.
 
 1. W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwórz rozwiązanie SimpleProject, który został utworzony, postępując zgodnie z [tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
@@ -175,7 +175,7 @@ ZipProjects:
 ```
 
 ## <a name="deploy-a-visual-studio-template"></a>Wdrażanie szablonu programu Visual Studio
-Szablony programu Visual Studio nie zawierają informacji o ścieżce. W związku z tym, szablon *zip* plik zostanie wdrożony do lokalizacji, który jest znany w programie Visual Studio. Lokalizacja folderu ProjectTemplates jest zazwyczaj *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >*.
+Szablony programu Visual Studio nie zawierają informacji o ścieżce. W związku z tym, szablon *zip* plik zostanie wdrożony do lokalizacji, który jest znany w programie Visual Studio. Lokalizacja folderu ProjectTemplates jest zazwyczaj *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >* .
 
 Aby wdrożyć fabryką projektu, program instalacyjny musi mieć uprawnienia administratora. Wdrażania szablonów w węźle instalacji programu Visual Studio: *14.0\Common7\IDE\ProjectTemplates programu Visual Studio ...\Microsoft*.
 
@@ -207,7 +207,7 @@ Węzły podrzędne są tworzone przez zmianę w pliku projektu i dodawanie \<Out
 
 W tej sekcji pokazano, jak utworzyć węzeł podrzędny konsoli SimpleProject typu projektu.
 
-1. Zmień nazwę *\\Templates\Projects\SimpleProject\\* folder  *\\Templates\Projects\ConsoleApp\\*.
+1. Zmień nazwę *\\Templates\Projects\SimpleProject\\* folder  *\\Templates\Projects\ConsoleApp\\* .
 
 2. W **właściwości** okna, wybierz wszystkie pięć plików *\\Templates\Projects\ConsoleApp\\* folder i upewnij się, że **Build Action**ustawiono **ZipProject**.
 

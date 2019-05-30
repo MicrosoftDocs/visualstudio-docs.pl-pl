@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2 interface
 ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8484c7fd0d183b6cc9ba377cfff959cec0cfac73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3ea2c47bbf6ad3dc837f11242fccac9ff2aa264
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922360"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334741"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 Reprezentuje dostawcę symbol modelu COM +, za pomocą metod, które są specyficzne dla kodu zarządzanego i rozszerza **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md).

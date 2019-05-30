@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c37699e965698b4f5700bc1994ba25c8c0bbbd5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889136"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337423"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 Opisuje warunki, na których jest uruchamiany punkt przerwania.
@@ -45,15 +48,20 @@ public struct BP_CONDITION {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje aktywnego wątku dla aplikacji, która zawiera punkt przerwania.
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje aktywnego wątku dla aplikacji, która zawiera punkt przerwania.
 
-`styleCondition` Wartość z zakresu od [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) wyliczenie opisujące styl ten warunek punktu przerwania.
+`styleCondition`\
+Wartość z zakresu od [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) wyliczenie opisujące styl ten warunek punktu przerwania.
 
-`bstrContext` Lokalizacja punktu przerwania.
+`bstrContext`\
+Lokalizacja punktu przerwania.
 
-`bstrCondition` Stan uruchomieniu którego punkt przerwania.
+`bstrCondition`\
+Stan uruchomieniu którego punkt przerwania.
 
-`nRadix` Podstawy do użycia podczas obliczania wszelkie dane liczbowe.
+`nRadix`\
+Podstawy do użycia podczas obliczania wszelkie dane liczbowe.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest elementem członkowskim [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
@@ -67,7 +75,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

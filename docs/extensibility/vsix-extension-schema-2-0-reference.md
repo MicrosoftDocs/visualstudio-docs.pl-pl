@@ -6,17 +6,17 @@ helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c6672fea1f3998f46c171ab7e9164291e12588f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411140"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322850"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. Format pliku jest regulowane przez schemat. W wersji 2.0 tego schematu obsługuje dodawanie niestandardowych typów i atrybutów.  Schematu manifestu jest rozszerzalny. Moduł ładujący manifestu ignoruje elementów XML oraz atrybuty, które go nie rozumie.

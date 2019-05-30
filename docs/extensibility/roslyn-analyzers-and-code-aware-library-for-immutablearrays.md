@@ -3,17 +3,17 @@ title: Analizatory Roslyn i Biblioteka obsługująca kod dla tablic Immutablearr
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0c2eed45ce27fb108b0cdd0c84f64e4e253c9c1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433334"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334170"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i Biblioteka obsługująca kod dla tablic Immutablearray
 
@@ -131,7 +131,7 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 Wiersze kodu za pomocą `ImmutableArray` mają faliste linie, ponieważ trzeba uzyskać niemodyfikowalny pakiet NuGet i Dodaj `using` instrukcji w kodzie. Naciśnij przycisk prawo wskaźnika na węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Zarządzaj pakietami NuGet**. W Menedżerze NuGet wpisz "Klasa Immutable" w polu wyszukiwania, a następnie wybierz element **System.Collections.Immutable** (nie należy wybierać **Microsoft.Bcl.Immutable**) w okienku po lewej stronie i naciśnij klawisz  **Zainstaluj** przycisku w okienku po prawej stronie. Instalowanie pakietu dodaje odwołania do odwołań projektu.
 
-Nadal pojawi się czerwone faliste linie w obszarze `ImmutableArray`, więc umieść karetkę w tym identyfikator i naciśnij klawisz **Ctrl**+**.** (okres), aby wyświetlić menu sugerowanej poprawki i dodasz odpowiednie `using` instrukcji.
+Nadal pojawi się czerwone faliste linie w obszarze `ImmutableArray`, więc umieść karetkę w tym identyfikator i naciśnij klawisz **Ctrl**+ **.** (okres), aby wyświetlić menu sugerowanej poprawki i dodasz odpowiednie `using` instrukcji.
 
 **Zapisz wszystko i Zamknij** drugiego wystąpienia programu Visual Studio teraz, aby spowodować straty stanu czystego, aby kontynuować.
 
@@ -210,7 +210,7 @@ Usuń punkt przerwania, dzięki czemu mogą zobaczyć pracy analizator (i zatrzy
 
 Przed przystąpieniem do wykonywania, zamknij drugie wystąpienie programu Visual Studio i zatrzymywanie debugowania w pierwszego wystąpienia programu Visual Studio (na którym jest tworzona analizatora).
 
-**Dodaj nową klasę.** Użyj menu skrótów (wskaźnik myszy w prawy przycisk) na węzeł projektu w **Eksploratora rozwiązań** i wybierz opcję Dodaj nowy element. Dodaj klasę o nazwie `BuildCodeFixProvider`. Ta klasa musi pochodzić od `CodeFixProvider`, i będą musieli używać **Ctrl**+**.** (okres), aby wywołać poprawki kodu, który dodaje poprawny `using` instrukcji. Ta klasa musi również być oznaczona przy użyciu `ExportCodeFixProvider` atrybutu i konieczne będzie dodanie `using` instrukcję, aby rozwiązać `LanguageNames` wyliczenia. Musisz mieć plik klasy w nim następującym kodem:
+**Dodaj nową klasę.** Użyj menu skrótów (wskaźnik myszy w prawy przycisk) na węzeł projektu w **Eksploratora rozwiązań** i wybierz opcję Dodaj nowy element. Dodaj klasę o nazwie `BuildCodeFixProvider`. Ta klasa musi pochodzić od `CodeFixProvider`, i będą musieli używać **Ctrl**+ **.** (okres), aby wywołać poprawki kodu, który dodaje poprawny `using` instrukcji. Ta klasa musi również być oznaczona przy użyciu `ExportCodeFixProvider` atrybutu i konieczne będzie dodanie `using` instrukcję, aby rozwiązać `LanguageNames` wyliczenia. Musisz mieć plik klasy w nim następującym kodem:
 
 ```csharp
 using Microsoft.CodeAnalysis;
@@ -223,7 +223,7 @@ namespace ImmutableArrayAnalyzer
     {}
 ```
 
-**Klasy zastępczej się pochodzić elementy członkowskie.** Teraz umieść karetka edytora w identyfikatorze `CodeFixProvider` i naciśnij klawisz **Ctrl**+**.** (okres), aby zastąpić klasą zastępczą out to implementacja to abstrakcyjna klasa bazowa. Spowoduje to wygenerowanie właściwości i metody dla Ciebie.
+**Klasy zastępczej się pochodzić elementy członkowskie.** Teraz umieść karetka edytora w identyfikatorze `CodeFixProvider` i naciśnij klawisz **Ctrl**+ **.** (okres), aby zastąpić klasą zastępczą out to implementacja to abstrakcyjna klasa bazowa. Spowoduje to wygenerowanie właściwości i metody dla Ciebie.
 
 **Implementuje właściwość.** Wypełnij `FixableDiagnosticIds` właściwości `get` treść następującym kodem:
 
@@ -244,14 +244,14 @@ var root = await context.Document
                         .GetSyntaxRootAsync(context.CancellationToken);
 ```
 
-**Znajdź węzeł o problem.** Są przekazywane w kontekście zakresu, ale węzeł, w którym możesz znaleźć, może nie być kod, który trzeba wprowadzać zmian. Zgłoszona Diagnostyka tylko podać zakres identyfikatora typu (gdzie wężyk należały), ale musisz zastąpić wyrażenie tworzenia cały obiekt, w tym `new` — słowo kluczowe na początku i nawiasy na końcu. Dodaj następujący kod do metody (i użyj **Ctrl**+**.** Aby dodać `using` poufności informacji dotyczące `ObjectCreationExpressionSyntax`):
+**Znajdź węzeł o problem.** Są przekazywane w kontekście zakresu, ale węzeł, w którym możesz znaleźć, może nie być kod, który trzeba wprowadzać zmian. Zgłoszona Diagnostyka tylko podać zakres identyfikatora typu (gdzie wężyk należały), ale musisz zastąpić wyrażenie tworzenia cały obiekt, w tym `new` — słowo kluczowe na początku i nawiasy na końcu. Dodaj następujący kod do metody (i użyj **Ctrl**+ **.** Aby dodać `using` poufności informacji dotyczące `ObjectCreationExpressionSyntax`):
 
 ```csharp
 var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
-**Zarejestruj swoje poprawki kodu dla żarówki interfejsu użytkownika.** Podczas rejestrowania poprawkę kodu Roslyn podłącza się do programu Visual Studio żarówki interfejsu użytkownika automatycznie. Użytkownicy końcowi będą widzieli, mogą używać **Ctrl**+**.** (kropka), gdy Twoje analizatora squiggles zły `ImmutableArray<T>` Użyj konstruktora. Ponieważ dostawcą poprawki kodu jest wykonywana tylko wtedy, gdy występuje problem, można założyć, że masz wyrażenie tworzenia obiektu, którego szukasz. Z parametru kontekstowego można zarejestrować nowe poprawki kodu, dodając następujący kod na końcu `RegisterCodeFixAsync` metody:
+**Zarejestruj swoje poprawki kodu dla żarówki interfejsu użytkownika.** Podczas rejestrowania poprawkę kodu Roslyn podłącza się do programu Visual Studio żarówki interfejsu użytkownika automatycznie. Użytkownicy końcowi będą widzieli, mogą używać **Ctrl**+ **.** (kropka), gdy Twoje analizatora squiggles zły `ImmutableArray<T>` Użyj konstruktora. Ponieważ dostawcą poprawki kodu jest wykonywana tylko wtedy, gdy występuje problem, można założyć, że masz wyrażenie tworzenia obiektu, którego szukasz. Z parametru kontekstowego można zarejestrować nowe poprawki kodu, dodając następujący kod na końcu `RegisterCodeFixAsync` metody:
 
 ```csharp
 context.RegisterCodeFix(
@@ -262,9 +262,9 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-Należy umieścić karetka edytora w identyfikatorze, `CodeAction`, następnie za pomocą **Ctrl**+**.** (okres), aby dodać odpowiednią `using` instrukcji dla tego typu.
+Należy umieścić karetka edytora w identyfikatorze, `CodeAction`, następnie za pomocą **Ctrl**+ **.** (okres), aby dodać odpowiednią `using` instrukcji dla tego typu.
 
-Następnie umieść karetkę edytora w `ChangeToImmutableArrayEmpty` identyfikator i użyj **Ctrl**+**.** ponownie, aby wygenerować ten szkieletu metody dla Ciebie.
+Następnie umieść karetkę edytora w `ChangeToImmutableArrayEmpty` identyfikator i użyj **Ctrl**+ **.** ponownie, aby wygenerować ten szkieletu metody dla Ciebie.
 
 Ten ostatni fragment kodu, który został dodany rejestruje poprawki kodu przez przekazanie `CodeAction` i Identyfikator diagnostyczny dla rodzaju znalezione problemy. W tym przykładzie istnieje tylko jeden identyfikator diagnostycznych, który zawiera ten kod poprawki, dzięki czemu można po prostu Przekaż pierwszy element tablicy identyfikatorów diagnostycznych. Po utworzeniu `CodeAction`, są przekazywane w tekst, który żarówki interfejsu użytkownika należy używać jako Opis poprawki kodu. Możesz też przekazać funkcję, która przyjmuje CancellationToken i zwraca nowy dokument. Nowy dokument ma nowe drzewo składni, obejmującą kodzie poprawionego, który wywołuje `ImmutableArray.Empty`. Ten fragment kodu użyto wyrażenia lambda, dzięki czemu można zamknąć za pośrednictwem węzła objectCreation i kontekstu dokumentu.
 
@@ -288,7 +288,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-Konieczne będzie umieszczenie karetka edytora w `SyntaxGenerator` identyfikator i użyj **Ctrl**+**.** (okres), aby dodać odpowiednią `using` instrukcji dla tego typu.
+Konieczne będzie umieszczenie karetka edytora w `SyntaxGenerator` identyfikator i użyj **Ctrl**+ **.** (okres), aby dodać odpowiednią `using` instrukcji dla tego typu.
 
 Ten kod używa `SyntaxGenerator`, który jest typem przydatne do tworzenia nowego kodu. Po wprowadzenie generator dla dokumentu, który ma problem z kodem `ChangeToImmutableArrayEmpty` wywołania `MemberAccessExpression`, przekazując typ, który ma chcemy, aby uzyskać dostęp do elementu członkowskiego i przekazanie nazwy elementu członkowskiego jako ciąg.
 
@@ -296,9 +296,9 @@ Następnie metoda pobiera głównego dokumentu, a ponieważ może to obejmować 
 
 ## <a name="try-your-code-fix"></a>Spróbuj poprawkę kodu
 
-Teraz można nacisnąć klawisz **F5** do wykonania swojej analizator w drugim wystąpieniu programu Visual Studio. Otwórz projekt konsoli, używane przed. Powinien zostać wyświetlony żarówki, są wyświetlane, gdy nowe wyrażenie tworzenia obiektu dotyczy `ImmutableArray<int>`. Jeśli użytkownik naciśnie klawisz **Ctrl**+**.** (kropka) zostanie wyświetlone naprawić kod. wyświetlony zostanie automatycznie wygenerowany kod różnica (wersja zapoznawcza) w żarówki interfejsu użytkownika. Roslyn tworzy to dla Ciebie.
+Teraz można nacisnąć klawisz **F5** do wykonania swojej analizator w drugim wystąpieniu programu Visual Studio. Otwórz projekt konsoli, używane przed. Powinien zostać wyświetlony żarówki, są wyświetlane, gdy nowe wyrażenie tworzenia obiektu dotyczy `ImmutableArray<int>`. Jeśli użytkownik naciśnie klawisz **Ctrl**+ **.** (kropka) zostanie wyświetlone naprawić kod. wyświetlony zostanie automatycznie wygenerowany kod różnica (wersja zapoznawcza) w żarówki interfejsu użytkownika. Roslyn tworzy to dla Ciebie.
 
-**Porada Pro:** Jeśli Uruchom drugie wystąpienie programu Visual Studio, a nie widać ikony żarówki z poprawkę kodu, następnie może być konieczne wyczyszczenie pamięci podręcznej składnika programu Visual Studio. Wyczyszczenie pamięci podręcznej wymusza ponownej analizy składników, aby umożliwić programu Visual Studio należy następnie najnowsze składnika programu Visual Studio. Po pierwsze Zamknij drugie wystąpienie programu Visual Studio. Następnie w **Eksplorator Windows**, przejdź do *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. ("16.0" zmienia od wersji programu Visual Studio). Usuń podkatalogu *ComponentModelCache*.
+**Porada Pro:** Jeśli Uruchom drugie wystąpienie programu Visual Studio, a nie widać ikony żarówki z poprawkę kodu, następnie może być konieczne wyczyszczenie pamięci podręcznej składnika programu Visual Studio. Wyczyszczenie pamięci podręcznej wymusza ponownej analizy składników, aby umożliwić programu Visual Studio należy następnie najnowsze składnika programu Visual Studio. Po pierwsze Zamknij drugie wystąpienie programu Visual Studio. Następnie w **Eksplorator Windows**, przejdź do *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\* . ("16.0" zmienia od wersji programu Visual Studio). Usuń podkatalogu *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Rozmowy wideo i Zakończ projektu kodu
 

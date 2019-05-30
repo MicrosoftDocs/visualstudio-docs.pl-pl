@@ -6,17 +6,17 @@ helpviewer_keywords:
 - enumerations [Visual Studio SDK]
 - debugging [Debugging SDK], enumerations
 ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86a41c0b548cc457853ecd1190c84f1ced846e58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1cc4f811c1b1651d6ac5807f754a2d9c97eda2ad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924609"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337900"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Wyliczenia (Debugowanie w programie Visual Studio)
 Poniżej przedstawiono wyliczenia dla [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugowanie zestawu SDK.
@@ -176,5 +176,5 @@ Poniżej przedstawiono wyliczenia dla [!INCLUDE[vsprvs](../../../code-quality/in
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
