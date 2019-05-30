@@ -7,17 +7,17 @@ helpviewer_keywords:
 - IntelliSense, Quick Info
 - language services [managed package framework], IntelliSense Quick Info
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc46510aeeaf08279101ff546cde6dbd2593571
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6180e34135197c60276bf119ce0ac34c859b2f3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425671"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341364"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Szybkie informacje w starszej wersji usługi językowej
 Szybkie informacje technologii IntelliSense zawiera informacje o odpowiadającym w źródle, gdy użytkownik umieszcza karetkę w identyfikatorze i wybiera **Quick Info** z **IntelliSense** menu lub mieści wskaźnik myszy kursor nad identyfikatorem. Powoduje to etykietki narzędzia się z informacjami o tym identyfikatorze. Te informacje zazwyczaj składa się z typ identyfikatora. Gdy aparat debugowania jest aktywne, te informacje mogą obejmować bieżącą wartość. Aparat debugowania dostarcza wartości wyrażeń, gdy usługa językowa obsługuje tylko identyfikatorów.

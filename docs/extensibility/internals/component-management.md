@@ -6,22 +6,22 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 477079cdb0349b2299b5cb829770800a4930958d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910387"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310020"
 ---
 # <a name="component-management"></a>Zarządzanie składnikami
 Jednostki zadań w Instalatorze Windows są określane jako składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla ustawień, które przy użyciu Instalatora Windows.
 
- Chociaż kilka produktów można użyć, aby utworzyć Instalatora pakietu VSPackage, przyjęto korzystanie z Instalatora Windows (*.msi*) plików. Podczas tworzenia Instalatora, musi poprawnie Zarządzanie wdrażaniem pliku, tak, aby zliczanie odwołań poprawnych odbywa się na cały czas. W związku z tym różne wersje produktu nie zakłócają lub włamanie wzajemnie się kombinacji instalacji i odinstalować scenariuszy.
+ Chociaż kilka produktów można użyć, aby utworzyć Instalatora pakietu VSPackage, przyjęto korzystanie z Instalatora Windows ( *.msi*) plików. Podczas tworzenia Instalatora, musi poprawnie Zarządzanie wdrażaniem pliku, tak, aby zliczanie odwołań poprawnych odbywa się na cały czas. W związku z tym różne wersje produktu nie zakłócają lub włamanie wzajemnie się kombinacji instalacji i odinstalować scenariuszy.
 
  W Instalatorze Windows zliczanie odwołań występuje na poziomie składnika. Należy uważnie organizowanie zasobów — pliki, wpisy rejestru i tak dalej — na składniki. Istnieją inne poziomy organizacji — takich jak moduły, funkcje i produkty — które mogą pomóc w różnych scenariuszach. Aby uzyskać więcej informacji, zobacz [podstawowe informacje dotyczące Instalatora Windows](../../extensibility/internals/windows-installer-basics.md).
 

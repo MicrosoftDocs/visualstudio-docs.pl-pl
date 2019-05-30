@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8578056f907c70e3b900b1f3cdbcbeefc39688b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 799b7e67248759987a3e3f9595978fb1a7bbf87d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924172"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317600"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 Określa typ nazwy hosta.
@@ -39,10 +42,12 @@ public enum enum_GETHOSTNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-GHN_FRIENDLY_NAME określa przyjazną nazwę hosta.
+## <a name="fields"></a>Pola
+`GHN_FRIENDLY_NAME`\
+Określa przyjazną nazwę hosta.
 
-GHN_FILE_NAME Określa nazwę pliku hosta.
+`GHN_FILE_NAME`\
+Określa nazwę pliku hosta.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości są przekazywane jako argument do [gethostname —](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodę, aby pobrać nazwy hosta, w różnych formatach.
@@ -54,6 +59,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965057"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320619"
 ---
 # <a name="walkthrough-outlining"></a>Przewodnik: Tworzenie konspektu
 Konfigurowanie opartych na języku funkcje, takie jak tworzenie konspektu, definiując rodzaje regionów tekst, który chcesz rozwinąć lub zwinąć. Można zdefiniować regionów w kontekście usługi języka lub zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i stosowanie definicji region tylko do tego typu lub zastosować definicje region do istniejącego typu zawartości (na przykład "text"). Ten poradnik pokazuje jak zdefiniować i wyświetlanie konspektu regionów.
@@ -34,9 +34,9 @@ Konfigurowanie opartych na języku funkcje, takie jak tworzenie konspektu, defin
 3. Usuń istniejące pliki klasy.
 
 ## <a name="implement-an-outlining-tagger"></a>Implementowanie konspektu moduł tagujący
- Konspektu regiony są oznaczone według rodzaju tagu (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Ten tag udostępnia standardowy konspekt zachowanie. Schemat regionu można można rozwijać i zwijać. Schemat region jest oznaczona przez znak Plus (**+**), jeśli jest zwinięte lub znak Minus (**-**) Jeśli jest on rozwinięty i rozwinięty region jest zaznaczonymi przez pionowym wierszem.
+ Konspektu regiony są oznaczone według rodzaju tagu (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Ten tag udostępnia standardowy konspekt zachowanie. Schemat regionu można można rozwijać i zwijać. Schemat region jest oznaczona przez znak Plus ( **+** ), jeśli jest zwinięte lub znak Minus ( **-** ) Jeśli jest on rozwinięty i rozwinięty region jest zaznaczonymi przez pionowym wierszem.
 
- Poniższe kroki pokazują jak zdefiniować moduł tagujący, tworzącą konspektu regiony dla wszystkich regionów, które są rozdzielane znakami nawiasy (**[**,**]**).
+ Poniższe kroki pokazują jak zdefiniować moduł tagujący, tworzącą konspektu regiony dla wszystkich regionów, które są rozdzielane znakami nawiasy ( **[** , **]** ).
 
 ### <a name="to-implement-an-outlining-tagger"></a>Aby zaimplementować konspektu moduł tagujący
 
@@ -129,7 +129,7 @@ Konfigurowanie opartych na języku funkcje, takie jak tworzenie konspektu, defin
     ]
     ```
 
-4. Powinna istnieć konspektu region, który zawiera oba nawiasy kwadratowe. Można kliknąć przycisk z lewej strony otwierającego nawiasu znak Minus, aby zwinąć konspektu regionu. Gdy region jest zwinięte, symbol wielokropka (*...* ) powinien pojawić się po lewej stronie Zwinięty region, a okno podręczne zawierające tekst **umieść tekst** powinien zostać wyświetlony po umieszczeniu wskaźnika na wielokropek.
+4. Powinna istnieć konspektu region, który zawiera oba nawiasy kwadratowe. Można kliknąć przycisk z lewej strony otwierającego nawiasu znak Minus, aby zwinąć konspektu regionu. Gdy region jest zwinięte, symbol wielokropka ( *...* ) powinien pojawić się po lewej stronie Zwinięty region, a okno podręczne zawierające tekst **umieść tekst** powinien zostać wyświetlony po umieszczeniu wskaźnika na wielokropek.
 
 ## <a name="see-also"></a>Zobacz także
 - [Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

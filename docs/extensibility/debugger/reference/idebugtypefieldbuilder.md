@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
 ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 456fe2656949e0cc862acdb97149b85f037beac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 165bbf6326bee67718c4c2ae44933d1b21b8252c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915422"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319794"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 Reprezentuje zdolność do tworzenia pola, które reprezentuje typ.

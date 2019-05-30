@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861768"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340790"
 ---
 # <a name="inside-the-editor"></a>Wewnątrz edytora
 
@@ -108,7 +108,7 @@ A <xref:Microsoft.VisualStudio.Text.SnapshotPoint> odpowiada pozycji znaku w mig
 
 #### <a name="spans-and-normalizedspancollections"></a>Zakresy i NormalizedSpanCollections
 
-A <xref:Microsoft.VisualStudio.Text.Span> reprezentuje interwału, który można zastosować do tekstu w migawce tekstu. Pozycje migawki, są liczony od zera, więc zakresy można uruchomić w dowolnym miejscu, w tym zero. `End` Właściwość zakresu jest równy sumie jego `Start` właściwości i jego `Length` właściwości. A `Span` nie zawiera znaku, która jest indeksowana przy `End` właściwości. Na przykład zakres zawierający Start = 5, a długość = 3 ma End = 8, i zawiera znaki w pozycji 5, 6 i 7. Ten zakres jest 5..8).
+A <xref:Microsoft.VisualStudio.Text.Span> reprezentuje interwału, który można zastosować do tekstu w migawce tekstu. Pozycje migawki, są liczony od zera, więc zakresy można uruchomić w dowolnym miejscu, w tym zero. `End` Właściwość zakresu jest równy sumie jego `Start` właściwości i jego `Length` właściwości. A `Span` nie zawiera znaku, która jest indeksowana przy `End` właściwości. Na przykład zakres zawierający Start = 5, a długość = 3 ma End = 8, i zawiera znaki w pozycji 5, 6 i 7. Ten zakres jest [5..8).
 
 Dwa zakresy intersect, jeśli mają one żadnych pozycji w tym pozycja końcowa. W związku z tym, część wspólną [3, 5) i [2, 7) jest [3, 5) i część wspólną [3, 5) i [5, 7) jest [5, 5). (Zwróć uwagę, że [5, 5) jest pusty zakres.)
 

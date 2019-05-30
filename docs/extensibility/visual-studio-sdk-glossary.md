@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838909"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322418"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Słownik usługi Visual Studio SDK
 W tym słowniku zawiera definicje dla terminów używanych w [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] dokumentacji.
@@ -73,7 +73,7 @@ W tym słowniku zawiera definicje dla terminów używanych w [!INCLUDE[vsipsdk](
 
   składnik niezależnie od składnika najwyższego poziomu, który używa jest niemodalne okno dialogowe najwyższego poziomu może efektywnie działać jako okno aplikacji autonomicznej, ale jest implementowany jako obiekt w procesie. W związku z tym niezależne składnik najwyższego poziomu skoordynować modalności i usługi pętli komunikatów w środowisku IDE. W trakcie obiekty nie mają własne pętli komunikatów.
 
-  Dostawca informacji o dostawcy informacji jest moduł, który można wyszukiwać słowa kluczowe i zwrócić listę tematów, w postaci `IVsUserContextItem` obiektów. Aby zapewnić **F1** i wyszukiwania słów kluczowych elementów dla dostawcy informacji, zarejestruj skompilowanego pliku pomocy (*. HxS*) w systemie. Tematy pomocy, w tych plikach zawierają listę tematów, wyświetlana w oknie Pomoc dynamiczna a czy użytkownik naciśnie **F1**.
+  Dostawca informacji o dostawcy informacji jest moduł, który można wyszukiwać słowa kluczowe i zwrócić listę tematów, w postaci `IVsUserContextItem` obiektów. Aby zapewnić **F1** i wyszukiwania słów kluczowych elementów dla dostawcy informacji, zarejestruj skompilowanego pliku pomocy ( *. HxS*) w systemie. Tematy pomocy, w tych plikach zawierają listę tematów, wyświetlana w oknie Pomoc dynamiczna a czy użytkownik naciśnie **F1**.
 
   obiekt pakietu VSPackage składnika, który implementuje w miejscu `IOleInPlaceComponent` interfejsu do zarządzania oknem, które wizualnie znajduje się w oknie dokumentu należące do środowiska IDE. Składniki w miejscu nie są używane w standardowych OLE-scalanie menu; Zamiast tego mogą zintegrować ich elementy interfejsu użytkownika IDE.
 

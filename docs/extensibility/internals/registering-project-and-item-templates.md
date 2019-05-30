@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859482"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319512"
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablonów projektów i elementów
 Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje szablony projektów i elementów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informacje rejestracji skojarzony z typów projektu są używane do określenia, jakie do wyświetlenia w **Dodaj nowy projekt** i **Dodaj nowy element** okien dialogowych.
@@ -117,7 +117,8 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
  \WizardFiles
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Dodawanie projektu i szablonów elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Kreatory](../../extensibility/internals/wizards.md)
-- [Lokalizowanie aplikacji](../../ide/localizing-applications.md)
+- [Lokalizowanie aplikacji](../../ide/globalizing-and-localizing-applications.md)
 - [Identyfikatory CATID obiektów, które są zwykle używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

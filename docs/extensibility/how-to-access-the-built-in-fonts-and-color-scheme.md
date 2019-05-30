@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2abc6606d33e4b59faeb1838bcb173fd51a28616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415515"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340971"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Instrukcje: Dostęp do wbudowanych czcionek i kolorów ccheme
 Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat kolorów i czcionek, który jest skojarzony z oknem edytora. Możesz uzyskać dostęp za pośrednictwem systemu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsu.
@@ -41,7 +41,7 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat kol
     > [!NOTE]
     > Podczas pobierania danych czcionek i kolorów, za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> lub innych interfejsów pakietów VSPackage za pomocą tego identyfikatora GUID wbudowane informacje referencyjne.
 
-2. Nazwa kategorii, należy dodać do tabeli ciągów wewnątrz zasobów pakietu VSPackage (*.rc*) plików, dzięki czemu może być lokalizowana w razie potrzeby wyświetlane w środowisku IDE.
+2. Nazwa kategorii, należy dodać do tabeli ciągów wewnątrz zasobów pakietu VSPackage ( *.rc*) plików, dzięki czemu może być lokalizowana w razie potrzeby wyświetlane w środowisku IDE.
 
      Aby uzyskać więcej informacji, zobacz [apletu Dodaj lub Usuń ciąg](/cpp/windows/adding-or-deleting-a-string).
 
@@ -49,7 +49,7 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat kol
 
 1. Utworzyć specjalny typ wpisu rejestru kategorii w następującej lokalizacji:
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<wersji programu Visual Studio > \FontAndColors\\\<kategorii >*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<wersji programu Visual Studio > \FontAndColors\\\<kategorii >* ]
 
      *\<Kategoria >* to niezlokalizowana nazwa kategorii.
 

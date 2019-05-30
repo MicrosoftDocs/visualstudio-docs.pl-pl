@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: a11c5b441b6806c1ee9a07d77044be1ab42d2197
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261319"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319521"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -187,7 +187,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.NavigateTo|**CTRL +**|
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
-|Edit.OpenFile|**Ctrl + Shift + G**|
+|Edit.OpenFile|**Ctrl + Shift + G** (otwiera nazwę pliku, w obszarze kursora)|
 |Edit.Paste|**CTRL + V**<br /><br /> lub<br /><br /> **SHIFT + dodatki**|
 |Edit.PreviousBookmark|**CTRL + K, Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + P**|
@@ -268,9 +268,9 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Project.AddNewItem|**Ctrl + Shift + A**|
 |Project.ClassWizard|**Ctrl + Shift + X**|
 |Project.Override|**Ctrl + Alt + dodatki**|
-|Project.Previewchanges|**ALT +; ** następnie **klawisze Alt + C**|
-|Project.Publishselectedfiles|**ALT +; ** następnie **Alt + P**|
-|Project.Replaceselectedfilesfromserver|**ALT +; ** następnie **klawisze Alt + R**|
+|Project.Previewchanges|**ALT +;**  następnie **klawisze Alt + C**|
+|Project.Publishselectedfiles|**ALT +;**  następnie **Alt + P**|
+|Project.Replaceselectedfilesfromserver|**ALT +;**  następnie **klawisze Alt + R**|
 
 ### <a name="bkmk_projectContext"></a> Menu kontekstowe projektu i rozwiązania
 
@@ -294,9 +294,9 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**CTRL + [**, **O** (litery ' O')<br /><br /> lub<br /><br /> **CTRL + [**, **Ctrl + O** (litery ' O')|
-|SolutionExplorer.PendingChangesFilter|**CTRL + [**, **P**<br /><br /> lub<br /><br /> **CTRL + [**, **klawisze Ctrl + P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL + [**, **S**<br /><br /> lub<br /><br /> **CTRL + [**, **klawisze Ctrl + S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL + [** , **O** (litery ' O')<br /><br /> lub<br /><br /> **CTRL + [** , **Ctrl + O** (litery ' O')|
+|SolutionExplorer.PendingChangesFilter|**CTRL + [** , **P**<br /><br /> lub<br /><br /> **CTRL + [** , **klawisze Ctrl + P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL + [** , **S**<br /><br /> lub<br /><br /> **CTRL + [** , **klawisze Ctrl + S**|
 
 ### <a name="bkmk_team"></a> Zespół
 

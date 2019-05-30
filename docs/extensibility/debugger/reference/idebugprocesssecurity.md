@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity interface
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12c1cc5af90fa0ff337a105f6d3d7232b72ab6ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 74202c4342ae5880f277299b6bb94dcdadff26f5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917437"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311419"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity` jest implementowana przez dostawcę portu, aby ostrzec użytkownika, że dołączanie do procesu jest niebezpieczne.
@@ -44,7 +44,7 @@ IDebugProcessSecurity : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Porty](../../../extensibility/debugger/ports.md)
 - [Dostawcy portów](../../../extensibility/debugger/port-suppliers.md)
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)

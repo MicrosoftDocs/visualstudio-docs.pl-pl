@@ -2,17 +2,17 @@
 title: Rozwiązywanie problemów z odnajdywania szablonów w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 01/02/2018
 ms.topic: conceptual
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ea74d3c5f3fed961a956e9a55a4930d009d530
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0b6af3e24d4e563ebbbcf0a233d85a1cd038cb3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432086"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316367"
 ---
 # <a name="troubleshooting-template-installation"></a>Rozwiązywanie problemów z instalacją szablonu
 
@@ -20,13 +20,13 @@ Jeśli napotkasz problemy z wdrażania szablonów projektu lub elementu, można 
 
 ::: moniker range="vs-2017"
 
-1. Tworzenie pliku pkgdef *Common7\IDE\CommonExtensions* folderze instalacji. Na przykład *\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef C:\Program Files (x86)*.
+1. Tworzenie pliku pkgdef *Common7\IDE\CommonExtensions* folderze instalacji. Na przykład *\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef C:\Program Files (x86)* .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Tworzenie pliku pkgdef *Common7\IDE\CommonExtensions* folderze instalacji. Na przykład *\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef C:\Program Files (x86)*.
+1. Tworzenie pliku pkgdef *Common7\IDE\CommonExtensions* folderze instalacji. Na przykład *\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef C:\Program Files (x86)* .
 
 ::: moniker-end
 
