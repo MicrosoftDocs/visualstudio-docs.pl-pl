@@ -138,7 +138,7 @@ Przed użyciem funkcji diagnostyki pamięci, należy włączyć śledzenia diagn
 
   **Aby wybrać funkcje diagnostyczne dotyczące pamięci za pomocą afxmemdf —**
 
-- Jeśli chcesz bardziej precyzyjną kontrolę nad funkcji diagnostycznych pamięci, można selektywnie włączyć funkcje diagnostyczne poszczególnych pamięci włączać i wyłączać, ustawiając wartość zmiennej globalnej MFC [afxmemdf —](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Ta zmienna może mieć następujące wartości, określony przez Typ wyliczany **afxmemdf —**.
+- Jeśli chcesz bardziej precyzyjną kontrolę nad funkcji diagnostycznych pamięci, można selektywnie włączyć funkcje diagnostyczne poszczególnych pamięci włączać i wyłączać, ustawiając wartość zmiennej globalnej MFC [afxmemdf —](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Ta zmienna może mieć następujące wartości, określony przez Typ wyliczany **afxmemdf —** .
 
   |Wartość|Opis|
   |-----------|-----------------|
@@ -358,7 +358,7 @@ Dla obiektów zaalokowanych na stosie jednak należy je jawnie usunąć obiektu,
 #### <a name="BKMK_Customizing_object_dumps"></a> Dostosowywanie obiektu zrzutów
 Po utworzeniu klasy pochodnej klasy z [CObject](/cpp/mfc/reference/cobject-class), możesz zastąpić `Dump` funkcja elementu członkowskiego, aby podać dodatkowe informacje, gdy używasz [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) do obiektów zrzutu [Okno danych wyjściowych](../ide/reference/output-window.md).
 
-`Dump` Funkcji zapisuje tekstową reprezentację wartości elementu członkowskiego obiektu zmienne kontekstowe zrzutu ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Kontekst zrzutu jest podobne do strumienia we/wy. Możesz użyć operatora append (**<<**) do wysyłania danych do `CDumpContext`.
+`Dump` Funkcji zapisuje tekstową reprezentację wartości elementu członkowskiego obiektu zmienne kontekstowe zrzutu ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Kontekst zrzutu jest podobne do strumienia we/wy. Możesz użyć operatora append ( **<<** ) do wysyłania danych do `CDumpContext`.
 
 Gdy zastąpisz `Dump` funkcji, należy najpierw wywołać klasy bazowej wersję `Dump` do porzucenia zawartości obiektu klasy bazowej. Następnie wyprowadzić tekstowy opis i wartość każdej zmiennej składowej klasy pochodnej.
 
@@ -432,7 +432,7 @@ Tworzenie modułów wybranych z biblioteki debugowania MFC umożliwia używanie 
 
    1. W  **\<Projekt > strony właściwości** okno dialogowe, kliknij przycisk **programu Configuration Manager** przycisku.
 
-   2. W [programu Configuration Manager, okno dialogowe](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), Znajdź projekt w siatce. W **konfiguracji** kolumny wybierz  **\<nowy... >**.
+   2. W [programu Configuration Manager, okno dialogowe](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), Znajdź projekt w siatce. W **konfiguracji** kolumny wybierz  **\<nowy... >** .
 
    3. W [nowa konfiguracja projektu, okno dialogowe](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), wpisz nazwę dla nowej konfiguracji, takich jak "Częściowe Debug", **Nazwa konfiguracji projektu** pole.
 

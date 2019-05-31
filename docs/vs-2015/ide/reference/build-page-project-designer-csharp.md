@@ -40,7 +40,7 @@ Użyj **kompilacji** strony **projektanta projektu** do określania właściwoś
  Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Te ustawienia mogą mieć **aktywna (debugowanie)** (to jest wartość domyślna), **debugowania**, **wersji**, lub **wszystkie konfiguracje**.  
   
  **Platforma**  
- Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawieniem domyślnym jest **aktywna (dowolny procesor CPU)**. Możesz zmienić aktywną platformę przy użyciu **programu Configuration Manager**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).  
+ Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawieniem domyślnym jest **aktywna (dowolny procesor CPU)** . Możesz zmienić aktywną platformę przy użyciu **programu Configuration Manager**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="general"></a>Ogólne  
  Poniższe opcje umożliwiają skonfigurowanie kilku ustawień kompilatora języka C#.  

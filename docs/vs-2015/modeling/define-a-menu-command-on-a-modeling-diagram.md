@@ -249,7 +249,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX wybierz **Otwórz Folder w Eksploratorze Windows**.  
 
-    2. Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
+    2. Zlokalizuj plik **bin\\\*\\** _YourProject_ **.vsix**  
 
 2. Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
 

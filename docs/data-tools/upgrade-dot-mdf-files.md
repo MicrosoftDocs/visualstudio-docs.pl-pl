@@ -23,7 +23,7 @@ ms.locfileid: "62565163"
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnianie plików mdf
 
-W tym temacie opisano opcje uaktualniania pliku bazy danych (*.mdf*) po Zainstaluj nowszą wersję programu Visual Studio. Zawiera on instrukcje w celu uwzględnienia poniższych zadań:
+W tym temacie opisano opcje uaktualniania pliku bazy danych ( *.mdf*) po Zainstaluj nowszą wersję programu Visual Studio. Zawiera on instrukcje w celu uwzględnienia poniższych zadań:
 
 - Uaktualnić plik bazy danych w celu użycia nowszej wersji programu SQL Server Express LocalDB
 
@@ -33,7 +33,7 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (*.mdf*) po Zainstal
 
 - Wprowadź programu SQL Server Express domyślny aparat bazy danych
 
-Można użyć programu Visual Studio, aby otworzyć projekt, który zawiera plik bazy danych (*.mdf*) który został utworzony przy użyciu starszej wersji programu SQL Server Express lub LocalDB. Aby kontynuować tworzenie projektu w programie Visual Studio, konieczne jest posiadanie tej wersji programu SQL Server Express lub LocalDB zainstalowane na tym samym komputerze co program Visual Studio lub musisz uaktualnić plik bazy danych. W przypadku uaktualniania pliku bazy danych nie można uzyskać do niego dostęp przy użyciu starszych wersji programu SQL Server Express lub LocalDB.
+Można użyć programu Visual Studio, aby otworzyć projekt, który zawiera plik bazy danych ( *.mdf*) który został utworzony przy użyciu starszej wersji programu SQL Server Express lub LocalDB. Aby kontynuować tworzenie projektu w programie Visual Studio, konieczne jest posiadanie tej wersji programu SQL Server Express lub LocalDB zainstalowane na tym samym komputerze co program Visual Studio lub musisz uaktualnić plik bazy danych. W przypadku uaktualniania pliku bazy danych nie można uzyskać do niego dostęp przy użyciu starszych wersji programu SQL Server Express lub LocalDB.
 
 Użytkownik może również monit uaktualnić plik bazy danych, który został utworzony za pomocą starszej wersji programu SQL Server Express lub LocalDB, jeśli wersja pliku nie jest zgodna z wystąpieniem programu SQL Server Express lub LocalDB, który jest aktualnie zainstalowany. Aby rozwiązać ten problem, Visual Studio wyświetli monit o uaktualnienie pliku.
 

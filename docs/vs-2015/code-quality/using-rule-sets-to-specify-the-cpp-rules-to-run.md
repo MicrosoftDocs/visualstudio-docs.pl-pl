@@ -11,7 +11,7 @@ ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60068642"
@@ -63,7 +63,7 @@ W [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsUltShort](.
   
 - Aby zwinąć reguł we wszystkich grupach, wybierz opcję **Zwiń wszystkie**.  
   
-- Aby zmienić pola, które reguły są grupowane według, wybierz pole z **Group By** listy. Aby wyświetlić reguły niezgrupowane, wybierz  **\<Brak >**.  
+- Aby zmienić pola, które reguły są grupowane według, wybierz pole z **Group By** listy. Aby wyświetlić reguły niezgrupowane, wybierz  **\<Brak >** .  
   
 - Aby dodać lub usunąć pola w kolumnach regułę, wybierz opcję **opcje kolumny**.  
   

@@ -101,7 +101,7 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
 ### <a name="regular-expressions"></a>Wyrażenia regularne  
  Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są tym samym, co symbole wieloznaczne. W szczególności:  
   
-1. **\.\\*** odpowiada ciągowi dowolnych znaków  
+1. **\.\\** * odpowiada ciągowi dowolnych znaków  
   
 2. **\\.** odpowiada kropce ".")  
   

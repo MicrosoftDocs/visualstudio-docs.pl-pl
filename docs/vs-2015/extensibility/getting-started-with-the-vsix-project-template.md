@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038669"
@@ -39,7 +39,7 @@ Aby utworzyć rozszerzenie lub istniejące rozszerzenie wdrożenia pakietu, moż
   
 2. Utwórz pusty projekt VSIX.  
   
-     Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **projektu**. Wybierz opcję **języka Visual Basic** lub **Visual C#**. W obszarze wybranego węzła, wybierz **rozszerzalności**, a następnie wybierz pozycję **projekt VSIX**.  
+     Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **projektu**. Wybierz opcję **języka Visual Basic** lub **Visual C#** . W obszarze wybranego węzła, wybierz **rozszerzalności**, a następnie wybierz pozycję **projekt VSIX**.  
   
 3. Dodaj plik zip do projektu. Ustaw jego **Kopiuj do katalogu wyjściowego** właściwość `Copy Always`.  
   

@@ -60,7 +60,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
    > [!NOTE]
    > Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).  
   
-5. Aby zainstalować rozszerzenie w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku *bin\\*. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
+5. Aby zainstalować rozszerzenie w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku *bin\\* . Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Dodawanie warstwowego modułu Walidującego do oddzielnego VSIX  
  Jeśli chcesz utworzyć jeden VSIX zawierający moduły sprawdzania warstwy, polecenia oraz inne rozszerzenia, zaleca się utworzenie jednego projektu do definiowania VSIX i oddzielnych projektów dla programów obsługi. Aby uzyskać informacje na temat innych rodzajów rozszerzenia modelowania, zobacz [modeli i diagramów UML rozszerzyć](../modeling/extend-uml-models-and-diagrams.md).  
@@ -71,7 +71,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
   
 2. Identyfikowanie lub Utwórz projekt VSIX w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source.extension.vsixmanifest**. Jeśli trzeba dodać projekt VSIX, wykonaj następujące kroki:  
   
-    1. W **nowy projekt** okna dialogowego wybierz **Visual C#**, **rozszerzalności**, **projekt VSIX**.  
+    1. W **nowy projekt** okna dialogowego wybierz **Visual C#** , **rozszerzalności**, **projekt VSIX**.  
   
     2. W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX **Ustaw jako projekt startowy**.  
   

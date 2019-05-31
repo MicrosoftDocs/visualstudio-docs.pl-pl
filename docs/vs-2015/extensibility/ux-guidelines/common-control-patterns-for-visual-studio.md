@@ -298,7 +298,7 @@ ms.locfileid: "63430041"
 
  Kiedy należy używać tylko do wielokropka krótki przycisk:
 
-- Jeśli istnieje więcej niż jednego długiego **[Przeglądaj …]**  przycisku w oknie dialogowym, takie jak kiedy kilka pól umożliwiają przeglądanie. Użyj krótkiej **[...]**  przycisku dla każdego uniknąć pomylenia klucze dostępu, utworzone przez tę sytuację (**& Przeglądaj** i **prz & eglądaj** w tym samym oknie dialogowym).
+- Jeśli istnieje więcej niż jednego długiego **[Przeglądaj …]**  przycisku w oknie dialogowym, takie jak kiedy kilka pól umożliwiają przeglądanie. Użyj krótkiej **[...]**  przycisku dla każdego uniknąć pomylenia klucze dostępu, utworzone przez tę sytuację ( **& Przeglądaj** i **prz & eglądaj** w tym samym oknie dialogowym).
 
 - W oknie dialogowym ścisłej lub po nie uzasadnione miejsce do umieszczenia długie przycisku.
 
@@ -348,7 +348,7 @@ ms.locfileid: "63430041"
  Hiperlinki dobrze nadają się do akcji na podstawie nawigacji, takie jak otwieranie tematu pomocy, modalne okno dialogowe lub kreatora. Jeśli hiperlink jest używany dla polecenia, zawsze powinna zostać wyświetlona widoczne i zauważalne zmiany w interfejsie użytkownika. Ogólnie rzecz biorąc w akcji, które są zaangażowani w zapewnienie akcję (np. Zapisz i Anuluj i Usuń) za pomocą przycisku lepiej są przekazywane.
 
 #### <a name="writing-style"></a>Styl pisania
- Postępuj zgodnie z [pulpitu Windows wskazówki dotyczące tekst interfejsu użytkownika](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Nie używaj "Dowiedz się więcej o," "Powiedz mi więcej o" lub "Get uzyskać pomoc w tym" właściwej. Zamiast tego frazę tekst łącza pomocy pod względem podstawowego zapytania, odpowiedzi z zawartości pomocy. Na przykład "**jak dodać serwer do Eksploratora serwera?**"
+ Postępuj zgodnie z [pulpitu Windows wskazówki dotyczące tekst interfejsu użytkownika](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Nie używaj "Dowiedz się więcej o," "Powiedz mi więcej o" lub "Get uzyskać pomoc w tym" właściwej. Zamiast tego frazę tekst łącza pomocy pod względem podstawowego zapytania, odpowiedzi z zawartości pomocy. Na przykład "**jak dodać serwer do Eksploratora serwera?** "
 
 #### <a name="visual-style"></a>Styl wizualny
 

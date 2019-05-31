@@ -59,7 +59,7 @@ Aktualizowanie projektu i dodawanie pliku source.extension.vsixmanifest w projek
   
     - Na **aplikacji** kartę, zmień **platformę docelową** do **4.6.1**.  
   
-    - Na **debugowania** na karcie **uruchomienia programu zewnętrznego** wpisz  **\<ścieżka instalacji programu Visual Studio > \Common7\IDE\devenv.exe.**.  
+    - Na **debugowania** na karcie **uruchomienia programu zewnętrznego** wpisz  **\<ścieżka instalacji programu Visual Studio > \Common7\IDE\devenv.exe.** .  
   
          W **argumenty wiersza polecenia** wpisz /**rootsuffix Exp**.  
   
@@ -105,7 +105,7 @@ Aktualizowanie projektu i dodawanie pliku source.extension.vsixmanifest w projek
   
     - Zapisz i zamknij plik.  
   
-11. Skompiluj rozwiązanie. Tworzenie plików są wdrażane w **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.  
+11. Skompiluj rozwiązanie. Tworzenie plików są wdrażane w **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .  
   
 12. Rozpocznij debugowanie. Drugie wystąpienie programu Visual Studio jest otwarty.  
   

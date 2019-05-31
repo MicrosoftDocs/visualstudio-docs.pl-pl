@@ -82,7 +82,7 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
   
 3. W **zasad ewidencjonowania** listy, kliknij dwukrotnie **analizy kodu**i upewnij się, że **wymusić analizy kodu dla zarządzanego kodu** pole wyboru jest zaznaczone.  
   
-4. W **Uruchom ten zestaw reguł** kliknij  **\<z kontroli źródła wybierz zestaw reguł >**.  
+4. W **Uruchom ten zestaw reguł** kliknij  **\<z kontroli źródła wybierz zestaw reguł >** .  
   
 5. Wpisz ścieżkę pliku zestawu reguł zasad zaewidencjonowania w kontroli wersji.  
   
@@ -116,6 +116,6 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
   
 6. Ignorowanie kodu w składników innych firm, wybierz **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.  
   
-7. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.  
+7. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >** .  
   
 8. Określ lokalną wersję pliku zestawu reguł zasad ewidencjonowania.

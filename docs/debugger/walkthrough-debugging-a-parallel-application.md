@@ -46,7 +46,7 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
 - Jak windows poradzić sobie z skalę za pomocą grupowania, powiększania i inne powiązane funkcje.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- W tym przewodniku założono, że **tylko mój kod** jest włączona (jest włączony domyślnie w nowszych wersjach programu Visual Studio). Na **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzła, wybierz opcję **ogólne**, a następnie wybierz **Włącz Tylko mój kod (tylko zarządzany)**. Jeśli ta funkcja nie jest ustawiona, nadal można korzystać z tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.
+ W tym przewodniku założono, że **tylko mój kod** jest włączona (jest włączony domyślnie w nowszych wersjach programu Visual Studio). Na **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzła, wybierz opcję **ogólne**, a następnie wybierz **Włącz Tylko mój kod (tylko zarządzany)** . Jeśli ta funkcja nie jest ustawiona, nadal można korzystać z tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.
 
 ## <a name="c-sample"></a>Przykładowy języka C#
  Użycie przykładowy języka C#, w tym przewodniku również założenie, że kod zewnętrzny jest ukryty. Do wyświetlania i ukrywania kod zewnętrzny jest wyświetlany, kliknij prawym przyciskiem myszy **nazwa** nagłówek tabeli **stos wywołań** okna, a następnie zaznacz lub usuń zaznaczenie **Pokaż kod zewnętrzny**. Jeśli ta funkcja nie jest ustawiona, nadal można korzystać z tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.
@@ -65,7 +65,7 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++**), wybierz **szablony**, a następnie:
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++** ), wybierz **szablony**, a następnie:
 
     - Aby uzyskać C# lub Visual Basic, wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla dowolnego C# lub Visual Basic. W oknie dialogowym wybierz **Utwórz**.
     - Dla języka C++, wybierz **Tworzenie nowego projektu aplikacji Konsolowej** dla języka C++. W oknie dialogowym wybierz **Utwórz**.
@@ -75,9 +75,9 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego pole, wybierz następujące opcje:
 
-    - Dla C# aplikacji, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
-    - Dla aplikacji w języku Visual Basic w obszarze **języka Visual Basic**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
-    - Dla aplikacji w języku C++ w obszarze **Visual C++**, wybierz **pulpitu Windows**,, a następnie wybierz **aplikacji konsoli Windows**.
+    - Dla C# aplikacji, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)** .
+    - Dla aplikacji w języku Visual Basic w obszarze **języka Visual Basic**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)** .
+    - Dla aplikacji w języku C++ w obszarze **Visual C++** , wybierz **pulpitu Windows**,, a następnie wybierz **aplikacji konsoli Windows**.
 
     Następnie wpisz nazwę lub użyj nazwy domyślnej i kliknij **OK**.
     ::: moniker-end

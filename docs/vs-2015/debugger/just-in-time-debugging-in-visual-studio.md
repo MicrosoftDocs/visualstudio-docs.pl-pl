@@ -102,7 +102,7 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
 
      Aby włączyć Just-In-Time debugowanie aplikacji Windows Forms, należy wykonać następujące dodatkowe czynności:
 
-2. Ustaw `jitDebugging` wartość `true` w `system.windows.form` części pliku machine.config lub  *\<Nazwa aplikacji >*. exe.config pliku:
+2. Ustaw `jitDebugging` wartość `true` w `system.windows.form` części pliku machine.config lub  *\<Nazwa aplikacji >* . exe.config pliku:
 
     ```
     <configuration>
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  W obszarze **debugery możliwe**, który powinien zostać wyświetlony **nowego wystąpienia programu Microsoft Visual Studio 2015** wybrany wiersz. Jeśli go nie jest wybrana, wybierz ją.
 
- W dolnej części okna w obszarze **chcesz debugować za pomocą wybranego debugera?**, kliknij przycisk **tak**.
+ W dolnej części okna w obszarze **chcesz debugować za pomocą wybranego debugera?** , kliknij przycisk **tak**.
 
  Projekt ThrowsNullException zostanie otwarty w nowym wystąpieniu programu Visual Studio z wykonywaniem zatrzymana w wierszu, który zgłasza wyjątek:
 

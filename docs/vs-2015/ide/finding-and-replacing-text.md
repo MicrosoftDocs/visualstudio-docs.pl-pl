@@ -61,7 +61,7 @@ Możesz znaleźć i zamienić tekst w Edytor kodu programu Visual Studio, a niek
   
  Dostęp do opcji zastępowania, wybierając przycisk obok **znaleźć** pola tekstowego. Aby wykonywać jedną zamianę naraz, wybierz opcję **Zamień następny** znajdujący się obok **Zastąp** pola tekstowego. Aby zamienić wszystkie dopasowania, wybierz opcję **Zamień wszystkie** przycisku.  
   
- Aby zmienić kolor podświetlenia dopasowań, wybierz **narzędzia** menu, wybierz opcję **opcje**, a następnie wybierz **środowiska**i wybierz **czcionki i kolory** . W **Pokaż ustawienia dla** listy wybierz **edytora tekstów**, a następnie w polu **wyświetlania elementów** listy wybierz **Znajdź zaznaczone (rozszerzenie)**.  
+ Aby zmienić kolor podświetlenia dopasowań, wybierz **narzędzia** menu, wybierz opcję **opcje**, a następnie wybierz **środowiska**i wybierz **czcionki i kolory** . W **Pokaż ustawienia dla** listy wybierz **edytora tekstów**, a następnie w polu **wyświetlania elementów** listy wybierz **Znajdź zaznaczone (rozszerzenie)** .  
   
 ### <a name="searching-tool-windows"></a>Wyszukiwanie narzędzia Windows  
  Możesz użyć **znaleźć** kontrolować w oknach kodu lub tekstu, takie jak **dane wyjściowe** systemu windows, i **Find Results** systemu windows, wybierając **Znajdź i Zamień**na **Edytuj** menu lub (CTRL + F).  

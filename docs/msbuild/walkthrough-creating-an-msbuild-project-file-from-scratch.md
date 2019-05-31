@@ -51,9 +51,9 @@ Aby ukończyć Instruktaż, musisz mieć .NET Framework (wersja 2.0, 3.5, 4.0 lu
 
 #### <a name="to-create-the-minimal-application"></a>Aby utworzyć minimalną aplikację
 
-1. W wierszu polecenia przejdź do folderu, w którym chcesz utworzyć aplikację, na przykład *\My dokumenty\\*  lub *\Desktop\\*.
+1. W wierszu polecenia przejdź do folderu, w którym chcesz utworzyć aplikację, na przykład *\My dokumenty\\*  lub *\Desktop\\* .
 
-2. Typ **md HelloWorld** utworzyć podfolder o nazwie *\HelloWorld\\*.
+2. Typ **md HelloWorld** utworzyć podfolder o nazwie *\HelloWorld\\* .
 
 3. Typ **cd HelloWorld** można zmienić do nowego folderu.
 
@@ -161,7 +161,7 @@ Zadania w lokalizacji docelowej kompilacji są wykonywane sekwencyjnie. W tym pr
 
 #### <a name="to-add-msbuild-to-your-path"></a>Aby dodać programu MSBuild do ścieżki
 
-- Począwszy od programu Visual Studio 2013, możesz znaleźć *MSBuild.exe* w folderze programu MSBuild (*%ProgramFiles%\MSBuild* na 32-bitowym systemie operacyjnym lub *% ProgramFiles (x86) %\MSBuild*na 64-bitowym systemie operacyjnym).
+- Począwszy od programu Visual Studio 2013, możesz znaleźć *MSBuild.exe* w folderze programu MSBuild ( *%ProgramFiles%\MSBuild* na 32-bitowym systemie operacyjnym lub *% ProgramFiles (x86) %\MSBuild*na 64-bitowym systemie operacyjnym).
 
      W wierszu polecenia wpisz **Ustaw PATH=%PATH%;%ProgramFiles%\MSBuild** lub **Ustaw ŚCIEŻKĘ = % PATH %; % ProgramFiles (x86) %\MSBuild**.
 

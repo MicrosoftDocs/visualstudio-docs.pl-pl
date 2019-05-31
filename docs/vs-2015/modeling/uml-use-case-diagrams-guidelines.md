@@ -190,11 +190,11 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
    - **1** stwierdzić, że dokładnie jedno wystąpienie tej roli uczestniczy w każdym odnośniku.  
   
-   - **1..\\*** do co najmniej jedno wystąpienie tej roli uczestniczyć w każdym odnośniku stanu.  
+   - **1..\\** * do co najmniej jedno wystąpienie tej roli uczestniczyć w każdym odnośniku stanu.  
   
    - **od 0 do 1** do stanu, że udział jest opcjonalna.  
   
-   - **\\*** Aby stwierdzać, że zero lub więcej wystąpień tej roli uczestniczyć w linku.  
+   - **\\** * Aby stwierdzać, że zero lub więcej wystąpień tej roli uczestniczyć w linku.  
   
 > [!NOTE]
 > Wiele zespołów nie należy umieszczać informacje liczebność na diagramy przypadków użycia, pozostawiając Liczebność punktów na wartość domyślną 1. Zamiast tego zapewniają informacje przedstawione w osobnym opisy przypadki użycia. W takim przypadku zostaną ukryte wszystkich Liczebność punktów diagramy przypadków użycia.  

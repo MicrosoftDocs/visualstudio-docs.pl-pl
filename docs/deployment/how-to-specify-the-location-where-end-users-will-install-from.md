@@ -39,7 +39,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 2. Kliknij przycisk **Publikuj** kartę.
 
-3. W polu adres URL instalacji wprowadź lokalizację instalacji przy użyciu w pełni kwalifikowany adres URL w formacie *http://www.microsoft.com/ApplicationName*, lub ścieżkę UNC w formacie  *\\\Server\ApplicationName*.
+3. W polu adres URL instalacji wprowadź lokalizację instalacji przy użyciu w pełni kwalifikowany adres URL w formacie *http://www.microsoft.com/ApplicationName* , lub ścieżkę UNC w formacie  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Określanie lokalizacji kopiowania plików w programie Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

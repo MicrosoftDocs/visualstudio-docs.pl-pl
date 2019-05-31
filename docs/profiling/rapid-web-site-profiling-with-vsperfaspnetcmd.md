@@ -61,14 +61,14 @@ Jeśli chcesz przeprowadzić profilowanie statycznie skompilowany. *dll* plików
 
  Można również użyć **/Trace** opcję, aby uwzględnić szczegółowe informacje o czasie przy użyciu danych pamięci .NET:
 
- **polecenie vsperfaspnetcmd/Memory**[**: okres istnienia**]   **/trace**`websiteUrl`
+ **polecenie vsperfaspnetcmd/Memory**[ **: okres istnienia**]   **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Do zbierania danych o interakcji między warstwami
 
 > [!WARNING]
 > Interakcje między warstwami (TIP) dane profilowania mogą być zbierane przy użyciu dowolnej wersji programu Visual Studio. Natomiast obejrzeć takie dane można wyświetlać tylko w programie Visual Studio Enterprise.
 >
-> Aby zebrać dane Porada w systemie Windows 8 lub Windows Server 2012, należy użyć Instrumentacji (**/trace**) opcji.
+> Aby zebrać dane Porada w systemie Windows 8 lub Windows Server 2012, należy użyć Instrumentacji ( **/trace**) opcji.
 
 Aby zebrać dane interakcji między warstwami przy użyciu dane próbkowania:
 
@@ -80,7 +80,7 @@ Aby zebrać dane interakcji między warstwami przy użyciu danych Instrumentacji
 
 Aby zebrać dane interakcji między warstwami przy użyciu danych pamięci .NET:
 
-**polecenie vsperfaspnetcmd/Memory**[**: okres istnienia**] **/Porada**_podanym adresem URL_
+**polecenie vsperfaspnetcmd/Memory**[ **: okres istnienia**] **/Porada**_podanym adresem URL_
 
 ## <a name="use-the-nowait-option"></a>Użyj opcji flagi/nowait
 
@@ -88,7 +88,7 @@ Domyślnie, wiersz polecenia nie może zwracać po **vsperfaspnetcmd** polecenia
 
 Aby rozpocząć profilowanie:
 
-**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
 
 Aby zakończyć profilowania:
 

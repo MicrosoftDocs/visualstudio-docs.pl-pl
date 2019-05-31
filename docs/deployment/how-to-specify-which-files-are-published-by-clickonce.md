@@ -29,15 +29,15 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
  Pliki [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji są zarządzane w **pliki aplikacji** okno dialogowe, dostępna z **Publikuj** strony **projektanta projektu**.
 
- Początkowo jest grupą pojedynczy plik o nazwie **(wymagane)**. Można tworzyć grup dodatkowych plików i przypisać im odpowiednie pliki. Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania. Na przykład .exe lub pliki aplikacji oznaczone jako pliki danych, trzeba należeć do **(wymagane)** grupy.
+ Początkowo jest grupą pojedynczy plik o nazwie **(wymagane)** . Można tworzyć grup dodatkowych plików i przypisać im odpowiednie pliki. Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania. Na przykład .exe lub pliki aplikacji oznaczone jako pliki danych, trzeba należeć do **(wymagane)** grupy.
 
- Stan publikowania domyślną wartość plik zostanie oznaczony za pomocą **(Auto)**. Na przykład .exe aplikacji ma stan publikowania **Include (Auto)** domyślnie.
+ Stan publikowania domyślną wartość plik zostanie oznaczony za pomocą **(Auto)** . Na przykład .exe aplikacji ma stan publikowania **Include (Auto)** domyślnie.
 
  Pliki z **Build Action** właściwością **zawartości** zostały oznaczone jako pliki aplikacji i zostanie oznaczony jako domyślnie włączone. Można je dołączony, wykluczony lub oznaczone jako pliki danych. Wyjątki są następujące:
 
-- Pliki danych, takich jak SQL Database (*.mdf* i *.mdb*) plików i plików XML zostaną oznaczone jako pliki danych domyślnie.
+- Pliki danych, takich jak SQL Database ( *.mdf* i *.mdb*) plików i plików XML zostaną oznaczone jako pliki danych domyślnie.
 
-- Odwołania do zestawów (*.dll* pliki) zostały oznaczone następujący po dodaniu odwołania: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako zestaw wymagań wstępnych (**wymagań wstępnych (Auto)**), musi znajdować się w pamięci podręcznej GAC, zanim aplikacja zostanie zainstalowana. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony domyślnie jako zestawu aplikacji (**Include (Auto)**) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM pojawi się w **pliki aplikacji** okno dialogowe (jako *.ocx* pliku) tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostaną dołączone.
+- Odwołania do zestawów ( *.dll* pliki) zostały oznaczone następujący po dodaniu odwołania: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako zestaw wymagań wstępnych (**wymagań wstępnych (Auto)** ), musi znajdować się w pamięci podręcznej GAC, zanim aplikacja zostanie zainstalowana. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony domyślnie jako zestawu aplikacji (**Include (Auto)** ) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM pojawi się w **pliki aplikacji** okno dialogowe (jako *.ocx* pliku) tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostaną dołączone.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Aby dodać pliki do okna dialogowego pliki aplikacji
 
@@ -77,7 +77,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 3. Kliknij przycisk **pliki aplikacji** przycisk, aby otworzyć **pliki aplikacji** okno dialogowe.
 
-4. W **pliki aplikacji** okna dialogowego Wybierz zestaw aplikacji (*.dll* pliku), którą chcesz oznaczyć jako warunek wstępny. Należy pamiętać, że aplikacja musi mieć odwołanie do zestawu aplikacji w celu pojawiają się na liście.
+4. W **pliki aplikacji** okna dialogowego Wybierz zestaw aplikacji ( *.dll* pliku), którą chcesz oznaczyć jako warunek wstępny. Należy pamiętać, że aplikacja musi mieć odwołanie do zestawu aplikacji w celu pojawiają się na liście.
 
 5. W **stan publikowania** pól, zaznacz **wymagań wstępnych** z listy rozwijanej.
 

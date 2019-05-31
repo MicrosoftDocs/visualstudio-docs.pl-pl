@@ -209,7 +209,7 @@ Zmień nazwę istniejącej klasy domeny i relacje. Na przykład począwszy od de
 
     2. Otwórz okno właściwości i umieść ją, aby mogli przeglądać Eksplorator DSL i właściwości, które znajdują się w tym samym czasie.
 
-    3. W Eksploratorze DSL rozwiń **edytora**, **karty przybornika**,  *\<DSL >*, a następnie **narzędzia**.
+    3. W Eksploratorze DSL rozwiń **edytora**, **karty przybornika**,  *\<DSL >* , a następnie **narzędzia**.
 
     4. Kliknij przycisk **ExampleElement**. Jest to element przybornika, który służy do tworzenia elementów.
 

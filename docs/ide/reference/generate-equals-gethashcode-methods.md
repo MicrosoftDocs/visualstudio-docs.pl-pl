@@ -43,7 +43,7 @@ Dotyczy to generowanie kodu:
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
 
    - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
 

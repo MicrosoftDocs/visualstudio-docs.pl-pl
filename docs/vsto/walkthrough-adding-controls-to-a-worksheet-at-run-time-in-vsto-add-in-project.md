@@ -60,7 +60,7 @@ ms.locfileid: "62982115"
 
 1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)**, a następnie kliknij przycisk **Dodaj**.
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)** , a następnie kliknij przycisk **Dodaj**.
 
      Plik o nazwie **Ribbon1.cs** lub **Ribbon1.vb** zostanie otwarty w Projektancie Wstążki i wyświetla domyślną kartę i grupę.
 

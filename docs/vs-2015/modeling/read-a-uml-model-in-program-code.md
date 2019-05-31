@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 37539ee6c031d88b9db279cc61214ac5e3077e76
 ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63387671"

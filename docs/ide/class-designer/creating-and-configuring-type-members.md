@@ -114,7 +114,7 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 
      Typ uzyskuje fokus i jego zawartość jest wyświetlana w **szczegóły klasy** okna.
 
-2. W **szczegóły klasy** okna, w sekcji zawierającej rodzaj elementu członkowskiego, które chcesz dodać, kliknij przycisk  **\<Dodawanie elementu członkowskiego >**. Na przykład jeśli chcesz dodać pole, kliknij pozycję  **\<Dodaj pole >**.
+2. W **szczegóły klasy** okna, w sekcji zawierającej rodzaj elementu członkowskiego, które chcesz dodać, kliknij przycisk  **\<Dodawanie elementu członkowskiego >** . Na przykład jeśli chcesz dodać pole, kliknij pozycję  **\<Dodaj pole >** .
 
 3. Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, a następnie naciśnij klawisz Enter.
 
@@ -225,7 +225,7 @@ Wiersze parametrów zawierają następujące elementy:
 
      Pojawi się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i wyrazy  **\<Dodaj parametr >.**
 
-3. Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
+3. Kliknij przycisk  **\<Dodaj parametr >** , wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
 
      Nowy parametr jest dodawany do metody i kodu metody. Wyświetla w **szczegóły klasy** okna i okna właściwości.
 
@@ -241,7 +241,7 @@ Wiersze parametrów zawierają następujące elementy:
 
      Pojawi się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i wyrazy  **\<Dodaj parametr >.**
 
-3. Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
+3. Kliknij przycisk  **\<Dodaj parametr >** , wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
 
      Nowy parametr jest dodawany do metody i kodu metody. Wyświetla w **szczegóły klasy** okna i okna właściwości.
 

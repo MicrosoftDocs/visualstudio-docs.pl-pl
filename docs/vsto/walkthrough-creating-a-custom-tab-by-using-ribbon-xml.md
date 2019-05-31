@@ -63,7 +63,7 @@ ms.locfileid: "63438576"
 
 1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **wstążki (XML)**.
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **wstążki (XML)** .
 
 3. Zmień nazwę nowego wstążki do **MyRibbon**i kliknij przycisk **Dodaj**.
 

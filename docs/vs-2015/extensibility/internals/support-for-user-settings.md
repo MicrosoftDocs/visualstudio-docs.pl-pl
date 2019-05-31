@@ -33,14 +33,14 @@ Pakietu VSPackage może zdefiniować co najmniej jednej kategorii ustawienia, kt
      Jeśli jednego pakietu VSPackage obsługuje kilka punktów ustawienia niestandardowe, w każdym punkcie ustawienia niestandardowego jest implementowany przez osobnej klasy, a każdy zostanie zarejestrowany przez unikatowego wystąpienia <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> klasy. W związku z tym ustawienia z implementacji klasy może obsługiwać więcej niż jednej kategorii ustawień.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Szczegóły wpisu rejestru punktu ustawień niestandardowych  
- Niestandardowe ustawienia punkty są tworzone we wpisie rejestru w następującej lokalizacji: HKLM\Software\Microsoft\VisualStudio\\*\<wersji >* \UserSettings\\`<CSPName>`, gdzie `<CSPName>` nazywa się punkt ustawienia niestandardowe obsługuje pakietu VSPackage i  *\<wersji >* jest wersją [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], na przykład 8.0.  
+ Niestandardowe ustawienia punkty są tworzone we wpisie rejestru w następującej lokalizacji: HKLM\Software\Microsoft\VisualStudio\\ *\<wersji >* \UserSettings\\`<CSPName>`, gdzie `<CSPName>` nazywa się punkt ustawienia niestandardowe obsługuje pakietu VSPackage i  *\<wersji >* jest wersją [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], na przykład 8.0.  
   
 > [!NOTE]
-> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywne główne, kiedy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest zintegrowanym środowisku programistycznym (IDE) zainicjowane. Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<wersji >* może zostać zastąpiona przez alternatywne główne, kiedy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest zintegrowanym środowisku programistycznym (IDE) zainicjowane. Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  Poniżej przedstawiono strukturę wpis rejestru:  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\  
   
  `<CSPName`> = "#12345" s  
   

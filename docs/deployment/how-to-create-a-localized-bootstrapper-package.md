@@ -24,7 +24,7 @@ Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla 
 
  Domyślnie program Visual Studio 2010 zawiera zlokalizowane pakiety programu inicjującego tylko dla .NET Framework 4, .NET Framework 4 Client Profile F# środowiska uruchomieniowego w wersji 2.0 i F# 4.0 środowiska uruchomieniowego. Zlokalizowane pakiety dla innych programów inicjujących można utworzyć, wykonując trzy kroki.
 
-1. Utwórz folder o nazwie po nazwie ustawień regionalnych *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.
+1. Utwórz folder o nazwie po nazwie ustawień regionalnych *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >* .
 
 2. Utwórz plik, który zawiera postanowienia licencyjne dotyczące oprogramowania pakietu programu inicjującego i umieścić go w nowym folderze.
 

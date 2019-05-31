@@ -48,7 +48,7 @@ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narz
   
 2. Użyj następującej składni, aby ustawić **_NT_SYMBOL_PATH** zmiennej środowiskowej lub opcji symbolpath VSPerfReport:  
   
-    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     gdzie *LocalStore* to ścieżka katalogu lokalnego, który został utworzony.  
   

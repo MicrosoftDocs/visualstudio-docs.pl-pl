@@ -32,15 +32,15 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] plik
   
  Pliki [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji są zarządzane w **pliki aplikacji** okno dialogowe, dostępna z **Publikuj** strony **projektanta projektu**.  
   
- Początkowo jest grupą pojedynczy plik o nazwie **(wymagane)**. Można tworzyć grup dodatkowych plików i przypisać im odpowiednie pliki. Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania. Na przykład .exe lub pliki aplikacji oznaczone jako pliki danych, trzeba należeć do **(wymagane)** grupy.  
+ Początkowo jest grupą pojedynczy plik o nazwie **(wymagane)** . Można tworzyć grup dodatkowych plików i przypisać im odpowiednie pliki. Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania. Na przykład .exe lub pliki aplikacji oznaczone jako pliki danych, trzeba należeć do **(wymagane)** grupy.  
   
- Stan publikowania domyślną wartość plik zostanie oznaczony za pomocą **(Auto)**. Na przykład .exe aplikacji ma stan publikowania **Include (Auto)** domyślnie.  
+ Stan publikowania domyślną wartość plik zostanie oznaczony za pomocą **(Auto)** . Na przykład .exe aplikacji ma stan publikowania **Include (Auto)** domyślnie.  
   
  Pliki z **Build Action** właściwością **zawartości** zostały oznaczone jako pliki aplikacji i zostanie oznaczony jako domyślnie włączone. Można je dołączony, wykluczony lub oznaczone jako pliki danych. Wyjątki są następujące:  
   
 - Pliki danych, takich jak pliki bazy danych SQL Database (pliki .mdf i .mdb) i pliki XML są oznaczane jako pliki danych domyślnie.  
   
-- Po dodaniu odwołania, odwołania do zestawów (pliki .dll) zostały oznaczone w następujący sposób: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako zestaw wymagań wstępnych (**wymagań wstępnych (Auto)**), musi znajdować się w pamięci podręcznej GAC, zanim aplikacja zostanie zainstalowana. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony domyślnie jako zestawu aplikacji (**Include (Auto)**) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM pojawi się w **pliki aplikacji** pola (jako pliku ocx) okno dialogowe tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostaną dołączone.  
+- Po dodaniu odwołania, odwołania do zestawów (pliki .dll) zostały oznaczone w następujący sposób: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako zestaw wymagań wstępnych (**wymagań wstępnych (Auto)** ), musi znajdować się w pamięci podręcznej GAC, zanim aplikacja zostanie zainstalowana. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony domyślnie jako zestawu aplikacji (**Include (Auto)** ) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM pojawi się w **pliki aplikacji** pola (jako pliku ocx) okno dialogowe tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostaną dołączone.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Aby dodać pliki do okna dialogowego pliki aplikacji  
   

@@ -43,7 +43,7 @@ ms.locfileid: "62967399"
 ## <a name="identifiers-for-sharepoint-project-items"></a>Identyfikatory elementów projektu programu SharePoint
  Każdy element projektu programu SharePoint ma odpowiedni identyfikator ciągu. Identyfikator elementu projektu musisz wiedzieć, aby wykonać następujące zadania:
 
-- Tworzenie rozszerzenia elementu projektu. W takim przypadku należy przekazać identyfikator dla elementu projektu, który ma zostać rozszerzony do konstruktora <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Aby utworzyć rozszerzenie elementu projektu wszystkie typy, należy przekazać **\\*** wartość ciągu.
+- Tworzenie rozszerzenia elementu projektu. W takim przypadku należy przekazać identyfikator dla elementu projektu, który ma zostać rozszerzony do konstruktora <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Aby utworzyć rozszerzenie elementu projektu wszystkie typy, należy przekazać **\\** * wartość ciągu.
 
 - Programowe Dodawanie elementu projektu do projektu. W takim przypadku należy przekazać identyfikator dla elementu projektu, aby <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> metody.
 

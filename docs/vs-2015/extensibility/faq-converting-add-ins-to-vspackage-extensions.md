@@ -52,7 +52,7 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
   
      Zostanie wyświetlone drugie wystąpienie programu Visual Studio. To drugie wystąpienie jest nazywany wystąpienie doświadczalne i może nie mieć tych samych ustawień co wystąpienie programu Visual Studio za pomocą pisania kodu. Podczas pierwszego uruchomienia wystąpienia eksperymentalnego użytkownik jest proszony logować się do usługi VS Online i określ motywu i profilu.  
   
-     Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien pojawić się komunikat: **Inside TestVSPackagePackage.MenuItemCallback()**.  
+     Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien pojawić się komunikat: **Inside TestVSPackagePackage.MenuItemCallback()** .  
   
 ## <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w VSPackage  
  Kodu dodatku jest zwykle uruchamiane w jednym z dwóch sposobów:  

@@ -177,7 +177,7 @@ ms.locfileid: "63438556"
 
 5. Wyłącz połączenie z bazą danych. Odłącz kabel sieciowy z komputera, jeśli baza danych znajduje się na serwerze lub Zatrzymaj usługę programu SQL Server, jeśli baza danych znajduje się na komputerze deweloperskim.
 
-6. Otwórz program Excel, a następnie otwórz **Moje Detail.xlsx wzorzec** z *\bin* katalogu (*\My Master-Detail\bin* w języku Visual Basic lub *\My Master-Detail\bin\ debugowanie* w języku C#).
+6. Otwórz program Excel, a następnie otwórz **Moje Detail.xlsx wzorzec** z *\bin* katalogu ( *\My Master-Detail\bin* w języku Visual Basic lub *\My Master-Detail\bin\ debugowanie* w języku C#).
 
 7. Przewiń rekordów, aby zobaczyć, że arkusz działa normalnie po rozłączeniu.
 

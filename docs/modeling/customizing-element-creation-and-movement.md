@@ -109,7 +109,7 @@ Użytkownicy mogą również wkleić elementy do innych elementów.
 
       Narzędzie nawigacji ścieżki służy do tworzenia każdej ścieżki:
 
-      1. W obszarze **Przetwórz scalanie przez utworzenie linków w ścieżkach**, kliknij przycisk  **\<Dodaj ścieżkę >**.
+      1. W obszarze **Przetwórz scalanie przez utworzenie linków w ścieżkach**, kliknij przycisk  **\<Dodaj ścieżkę >** .
 
       2. Kliknij strzałkę listy rozwijanej z prawej strony elementu listy. Zostanie wyświetlony w widoku drzewa.
 

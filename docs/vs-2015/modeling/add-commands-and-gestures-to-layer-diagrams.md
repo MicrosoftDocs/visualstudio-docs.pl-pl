@@ -55,7 +55,7 @@ Można zdefiniować polecenia w menu kontekstowym i elemencie obsługi gestu na 
   
     [Definiowanie procedury obsługi gestu](#gesture)  
   
-6. Aby zainstalować rozszerzenie w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku *bin\\*. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
+6. Aby zainstalować rozszerzenie w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku *bin\\* . Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Dodawanie polecenia lub gestu do oddzielnych VSIX  
  Jeśli chcesz utworzyć jeden VSIX zawierający polecenia, moduły sprawdzania warstwy oraz inne rozszerzenia, zaleca się utworzenie jednego projektu do definiowania VSIX i oddzielnych projektów dla programów obsługi. Aby uzyskać informacje na temat innych rodzajów rozszerzenia modelowania, zobacz [modeli i diagramów UML rozszerzyć](../modeling/extend-uml-models-and-diagrams.md).  
@@ -69,7 +69,7 @@ Można zdefiniować polecenia w menu kontekstowym i elemencie obsługi gestu na 
   
 2. Identyfikowanie lub Utwórz projekt VSIX w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source.extension.vsixmanifest**. Aby dodać projekt VSIX:  
   
-    1. W **nowy projekt** okna dialogowego rozwiń **Visual C#**, następnie kliknij przycisk **rozszerzalności**, a następnie kliknij przycisk **projekt VSIX**.  
+    1. W **nowy projekt** okna dialogowego rozwiń **Visual C#** , następnie kliknij przycisk **rozszerzalności**, a następnie kliknij przycisk **projekt VSIX**.  
   
     2. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt VSIX, a następnie kliknij przycisk **Ustaw jako projekt startowy**.  
   

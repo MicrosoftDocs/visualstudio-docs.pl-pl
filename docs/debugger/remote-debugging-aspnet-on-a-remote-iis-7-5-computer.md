@@ -60,7 +60,7 @@ Ten artykuł zawiera instrukcje dotyczące konfigurowania podstawowej konfigurac
 1. Utwórz nową aplikację MVC ASP.NET.
 
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 r, wpisz **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, wybierz **szablony**, następnie wybierz **tworzenie nowych sieci Web platformy ASP.NET aplikacji (.NET Framework)**. Nadaj projektowi nazwę w oknie dialogowym **MyASPApp**, a następnie wybierz **Utwórz**. Wybierz **MVC** i wybierz polecenie **Utwórz**.
+    W programie Visual Studio 2019 r, wpisz **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, wybierz **szablony**, następnie wybierz **tworzenie nowych sieci Web platformy ASP.NET aplikacji (.NET Framework)** . Nadaj projektowi nazwę w oknie dialogowym **MyASPApp**, a następnie wybierz **Utwórz**. Wybierz **MVC** i wybierz polecenie **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Aby to zrobić w programie Visual Studio 2017, wybierz **Plik > Nowy > Projekt**, a następnie wybierz **Visual C# > sieci Web > Aplikacja sieci Web ASP.NET**. W **ASP.NET 4.5.2** szablony zaznacz **MVC**. Upewnij się, że **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** ustawiono **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.)
@@ -234,7 +234,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
 7. Kliknij przycisk **dołączania**
 
-8. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwy komputera zdalnego >**.
+8. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwy komputera zdalnego >** .
 
     Powinna zostać wyświetlona strona sieci web platformy ASP.NET.
 9. W działającej aplikacji platformy ASP.NET, kliknij link, aby **o** strony.

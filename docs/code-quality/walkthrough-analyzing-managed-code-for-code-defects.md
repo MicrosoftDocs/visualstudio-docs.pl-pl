@@ -141,7 +141,7 @@ Ten przewodnik przeprowadzi Cię przez proces przy użyciu analizy kodu, aby ana
 
    1. Wybierz **Podpisz zestaw** pole wyboru.
 
-   1. W **wybierz plik klucza o nazwie ciąg** listy wybierz  **\<nowy... >**.
+   1. W **wybierz plik klucza o nazwie ciąg** listy wybierz  **\<nowy... >** .
 
       **Utwórz klucz silnej nazwy** pojawi się okno dialogowe.
 

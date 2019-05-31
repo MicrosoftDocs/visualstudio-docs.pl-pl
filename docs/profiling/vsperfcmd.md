@@ -36,22 +36,22 @@ VSPerfCmd [/U] [/options]
 |[Rozpocznij](../profiling/start.md) **:** `mode`|Uruchamia usługę profilowania w określonym trybie.|
 |[Dane wyjściowe](../profiling/output.md) **:** `filename`|Określa nazwę pliku wyjściowego. Za pomocą tylko **Start**.|
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Włącza profilowanie między sesjami Windows. Za pomocą tylko **Start**, **dołączyć**, **lub uruchom**.|
-|[Użytkownik](../profiling/user-vsperfcmd.md) **:**[`domain\`]`username`|Umożliwia dostęp do określonego konta do usługi profilera. Za pomocą tylko **Start**.|
-|[WaitStart](../profiling/waitstart.md)[**:**`n`]|Oczekuje na zainicjowanie rejestratora zbierania danych. Jeśli `n` jest określony, **VSPerfCmd** poczeka co najwyżej `n` sekund. Jeśli `n` nie zostanie określony, **VSPerfCmd** będzie czekać w nieskończoność. To ułatwia korzystanie z **VSPerfCmd** w ramach procesu wsadowego.|
-|[Licznik](../profiling/counter.md) **:** `cfg`|Gdy używany jest przykładowy metoda profilowania, określa licznika procesora CPU oraz liczby zdarzeń do użycia jako interwał próbkowania. Można przykładowe tylko jedna wartość licznika.<br /><br /> Gdy jest używana metoda profilowania Instrumentacja, określa on Licznik użycia Procesora, mają być zbierane w każdym punkcie instrumentacji. Za pomocą tylko **Start:**`Trace`, **dołączyć**, lub **Uruchom**.|
+|[Użytkownik](../profiling/user-vsperfcmd.md) **:** [`domain\`]`username`|Umożliwia dostęp do określonego konta do usługi profilera. Za pomocą tylko **Start**.|
+|[WaitStart](../profiling/waitstart.md)[ **:** `n`]|Oczekuje na zainicjowanie rejestratora zbierania danych. Jeśli `n` jest określony, **VSPerfCmd** poczeka co najwyżej `n` sekund. Jeśli `n` nie zostanie określony, **VSPerfCmd** będzie czekać w nieskończoność. To ułatwia korzystanie z **VSPerfCmd** w ramach procesu wsadowego.|
+|[Licznik](../profiling/counter.md) **:** `cfg`|Gdy używany jest przykładowy metoda profilowania, określa licznika procesora CPU oraz liczby zdarzeń do użycia jako interwał próbkowania. Można przykładowe tylko jedna wartość licznika.<br /><br /> Gdy jest używana metoda profilowania Instrumentacja, określa on Licznik użycia Procesora, mają być zbierane w każdym punkcie instrumentacji. Za pomocą tylko **Start:** `Trace`, **dołączyć**, lub **Uruchom**.|
 |[QueryCounters](../profiling/querycounters.md)|Wyświetla listę prawidłowych liczników procesora CPU dla bieżącej maszyny.|
 |[WinCounter](../profiling/wincounter.md) **:** *ścieżki*|Określa zdarzenia licznika wydajności Windows obejmujący z danymi znacznika profilu. Za pomocą tylko **Start**.|
 |[AutoMark](../profiling/automark.md) **:** *n*|Określa przedział czasu (w milisekundach) między zdarzeniami zbierania danych licznika wydajności Windows. Za pomocą **WinCounter**.|
 |[Zdarzenia](../profiling/events-vsperfcmd.md) **:** `option`|Określa, kolekcji określone zdarzenia śledzenie zdarzeń dla Windows (ETW). Dane ETW są zbierane do. *itl* pliku, który nie jest danych profilowania (. *Vsp*) pliku.|
 |[Status](../profiling/status.md)|Wyświetla stan profiler, informacje dotyczące procesów, które są aktualnie profilowane i kont, które mają uprawnienia do kontrolowania profilera.|
-|[Zamknięcie](../profiling/shutdown.md)[**:**`n`]|Zamyka plik danych profilowania i wyłącza profilera.|
+|[Zamknięcie](../profiling/shutdown.md)[ **:** `n`]|Zamyka plik danych profilowania i wyłącza profilera.|
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Wznawia zbieranie danych po wywołaniu **VSPerfCmdGlobalOff**.|
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|Zatrzymuje wszystkie zbieranie danych, ale nie kończy się sesja profilowania.|
 |[ProcessOn](../profiling/processon-and-processoff.md) **:** `pid`|Wznawia działanie funkcji zbierania danych dla określonego procesu, po profilowanie została wstrzymana przez wywołanie **VSPerfCmdProcessOff**.|
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Zatrzymuje zbieranie danych dla określonego procesu.|
 |[ThreadOn i ThreadOff](../profiling/threadon-and-threadoff.md) **:** *identyfikatora tid*|Wznawia profilowania dla określonego procesu po profilowanie została wstrzymana przez wywołanie **VSPerfCmdThreadOff**. Użyj **ThreadOn** tylko wtedy, gdy profilowanie przy użyciu metody instrumentacji.|
 |[ThreadOn i ThreadOff](../profiling/threadon-and-threadoff.md) **:** *identyfikatora tid*|Wstrzymano profilowanie dla określonego wątku. Użyj **ThreadOff** tylko wtedy, gdy profilowanie przy użyciu metody instrumentacji.|
-|[Oznacz](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|Wstawia znacznik do pliku danych profilowania z opcjonalnym tekstem.|
+|[Oznacz](../profiling/mark.md) **:** _MarkNum_[ **,** _MarkText_ **]**|Wstawia znacznik do pliku danych profilowania z opcjonalnym tekstem.|
 
 ## <a name="sample-method-options"></a>Przykładowe opcje metody
  Poniższe opcje są dostępne tylko w przypadku, gdy używana jest metoda profilowania próbkowanie.
@@ -61,18 +61,18 @@ VSPerfCmd [/U] [/options]
 |[Uruchom](../profiling/launch.md) **:** *pliku wykonywalnego*|Uruchamia określoną aplikację i rozpoczyna się profilowanie.|
 |[Argumenty](../profiling/args.md) **:** *argumenty*|Określa argumenty wiersza polecenia do przekazania do uruchomionej aplikacji.|
 |[Console](../profiling/console.md)|Uruchamia określone polecenie w nowym oknie wiersza polecenia.|
-|[Dołącz](../profiling/attach.md) **:** *PID*[**,**_PID_]|Rozpoczyna się profilowanie określonych procesów. Procesy można zidentyfikować za pomocą Identyfikatora procesu lub nazwę procesu.|
-|[Odłącz](../profiling/detach.md)[**:**_PID_[,_PID_]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować za pomocą Identyfikatora procesu lub nazwę procesu. Jeśli żaden proces nie zostanie określony, profilowanie zostało zatrzymane dla wszystkich procesów.|
-|[GC](../profiling/gc-vsperfcmd.md)[**:**{**alokacji**`&#124;`**okres istnienia**}]|Służy do zbierania danych pamięci .NET alokacji i obiekt okresu istnienia. Za pomocą tylko **VSPerfCmdLaunch** opcji.|
+|[Dołącz](../profiling/attach.md) **:** *PID*[ **,** _PID_]|Rozpoczyna się profilowanie określonych procesów. Procesy można zidentyfikować za pomocą Identyfikatora procesu lub nazwę procesu.|
+|[Odłącz](../profiling/detach.md)[ **:** _PID_[,_PID_]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować za pomocą Identyfikatora procesu lub nazwę procesu. Jeśli żaden proces nie zostanie określony, profilowanie zostało zatrzymane dla wszystkich procesów.|
+|[GC](../profiling/gc-vsperfcmd.md)[ **:** {**alokacji**`&#124;`**okres istnienia**}]|Służy do zbierania danych pamięci .NET alokacji i obiekt okresu istnienia. Za pomocą tylko **VSPerfCmdLaunch** opcji.|
 
 ### <a name="sample-interval-options"></a>Przykładowe opcje interwału
  Poniższe opcje, określ typ i czas trwania próbkowania odstępach czasu. Wartość domyślna to **czasomierza**. Można również określić licznika Procesora jako interwał, za pomocą **licznika** opcji. Te opcje można określić tylko z **Uruchom** lub z pierwszym **Dołącz** sesji profilowania.
 
 |Opcja|Opis|
 |------------|-----------------|
-|[PF](../profiling/pf.md)[**:**_n_]|Próbki na każdym n tej strony błędów (domyślny = 10).|
-|[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Przykłady w przypadku każdego wywołania n tego systemu (domyślne = 10).|
-|[Czasomierz](../profiling/timer.md)[**:**_n_]|Próbki na każdy procesor n tym cyklu (domyślny 10 000 000).|
+|[PF](../profiling/pf.md)[ **:** _n_]|Próbki na każdym n tej strony błędów (domyślny = 10).|
+|[Sys](../profiling/sys-vsperfcmd.md)[ **:** _n_]|Przykłady w przypadku każdego wywołania n tego systemu (domyślne = 10).|
+|[Czasomierz](../profiling/timer.md)[ **:** _n_]|Próbki na każdy procesor n tym cyklu (domyślny 10 000 000).|
 
 ## <a name="service-component-and-kernel-mode-device-options"></a>Usługa składnika i jądra tryb opcje urządzenia
  Następujące opcje administratora pomocy technicznej profilowania składniki usługi lub sterowniki urządzeń trybu jądra. Opcje administratora Ustawianie uprawnień profilowania i kontrolować profilowanych usługi lub sterownika urządzenia.

@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60049740"
@@ -116,7 +116,7 @@ W programie Visual Studio można zdefiniować rozszerzenia do diagramów modelow
   
     1. W **Eksploratora rozwiązań**, w menu skrótów projektu, a następnie wybierz **Otwórz Folder w Eksploratorze Windows**.  
   
-    2. Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
+    2. Zlokalizuj plik **bin\\\*\\** _YourProject_ **.vsix**  
   
 2. Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
   

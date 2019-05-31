@@ -61,14 +61,14 @@ ms.locfileid: "63438902"
   
  Można również użyć **/Trace** opcję, aby uwzględnić szczegółowe informacje o czasie przy użyciu danych pamięci .NET:  
   
- **polecenie vsperfaspnetcmd/Memory**[**: okres istnienia**]   **/trace**`websiteUrl`  
+ **polecenie vsperfaspnetcmd/Memory**[ **: okres istnienia**]   **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Do zbierania danych o interakcji między warstwami  
   
 > [!WARNING]
 > Interakcje między warstwami (TIP) danych profilowania można zbierać w programach [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], lub [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Natomiast obejrzeć takie dane można wyświetlić tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Aby zebrać dane Porada w systemie Windows 8 lub Windows Server 2012, należy użyć Instrumentacji (**/trace**) opcji.  
+> Aby zebrać dane Porada w systemie Windows 8 lub Windows Server 2012, należy użyć Instrumentacji ( **/trace**) opcji.  
   
  Aby zebrać dane interakcji między warstwami przy użyciu dane próbkowania:  
   
@@ -80,14 +80,14 @@ ms.locfileid: "63438902"
   
  Aby zebrać dane interakcji między warstwami przy użyciu danych pamięci .NET:  
   
- **polecenie vsperfaspnetcmd/Memory**[**: okres istnienia**] **/Porada**_podanym adresem URL_  
+ **polecenie vsperfaspnetcmd/Memory**[ **: okres istnienia**] **/Porada**_podanym adresem URL_  
   
 ## <a name="UsingNoWait"></a> Przy użyciu opcji flagi/nowait  
  Domyślnie, wiersz polecenia nie może zwracać po **vsperfaspnetcmd** polecenia. Następująca opcja składni umożliwia wymuszenie wiersza polecenia, aby zwrócić. W oknie wiersza polecenia można wykonywać inne operacje. Aby zakończyć profilowania, należy użyć **/shutdown** opcję w oddzielnym **vsperfaspnetcmd** polecenia.  
   
  Aby rozpocząć profilowanie:  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
   
  Aby zakończyć profilowania:  
   

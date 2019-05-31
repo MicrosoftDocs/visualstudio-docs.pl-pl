@@ -64,7 +64,7 @@ W tym przewodniku krok po kroku tworzenia, uruchamiania i dostosowywać serie te
   
     **Nowy projekt** pojawi się okno dialogowe.  
   
-3. W obszarze **zainstalowane szablony**, kliknij przycisk **Visual C#**.  
+3. W obszarze **zainstalowane szablony**, kliknij przycisk **Visual C#** .  
   
 4. Na liście typów aplikacji, kliknij **biblioteki klas**.  
   
@@ -114,7 +114,7 @@ public void Debit(double amount)
   
 1. Na **pliku** menu, wybierz **Dodaj**, a następnie wybierz **nowy projekt...** .  
   
-2. W oknie dialogowym Nowy projekt rozwiń **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz **testu**.  
+2. W oknie dialogowym Nowy projekt rozwiń **zainstalowane**, rozwiń węzeł **Visual C#** , a następnie wybierz **testu**.  
   
 3. Z listy szablonów wybierz **projektu testu jednostkowego**.  
   

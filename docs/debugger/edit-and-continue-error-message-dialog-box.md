@@ -40,7 +40,7 @@ Możliwe przyczyny tego komunikatu o błędzie:
 - Podczas próby edytowania kodu podczas debugowania odzyskiwania po awarii. Zrzut programu Watson.
 - Próby edytowania kodu po wystąpieniu nieobsługiwanego wyjątku, a opcja **Unwind na stosie wywołań dotycząca nieobsłużonych wyjątków** nie jest zaznaczone.
 - Podczas próby edytowania kodu podczas debugowania aplikacji osadzonego środowiska uruchomieniowego.
-- Podczas próby edytowania kodu zarządzanego za pomocą .NET Framework w wersji wcześniejszej niż 4.5.1 z obiektem docelowym 64-bitowych aplikacji. Aby użyć Edytuj i Kontynuuj dla programu .NET Framework wcześniejszych niż 4.5.1, ustawić element docelowy **x86** w  **\<nazwa_projektu >** > **właściwości**  >  **Skompilować** karcie **zaawansowane kompilatora** ustawienie.
+- Podczas próby edytowania kodu zarządzanego za pomocą .NET Framework w wersji wcześniejszej niż 4.5.1 z obiektem docelowym 64-bitowych aplikacji. Aby użyć Edytuj i Kontynuuj dla programu .NET Framework wcześniejszych niż 4.5.1, ustawić element docelowy **x86** w  **\<nazwa_projektu >**  > **właściwości**  >  **Skompilować** karcie **zaawansowane kompilatora** ustawienie.
 - Podczas próby edytowania kodu w zestawie, który został zmodyfikowany podczas debugowania, a został załadowany ponownie.
 - Podczas próby edytowania kodu w zestawie, który nie został załadowany.
 - Rozpoczynanie debugowania starą wersję aplikacji, ponieważ najnowsza wersja ma błędy kompilacji.

@@ -57,7 +57,7 @@ Okno IDE
     - **Okno właściwości** w tym oknie można zmienić właściwości elementów, które wybrano w innych oknach. Na przykład, jeśli wybierzesz Form1, możesz zmienić jego tytuł przez ustawienie **tekstu** właściwości, na które można zmienić kolor tła, ustawiając **Backcolor** właściwości.  
   
     > [!NOTE]
-    > W pierwszym wierszu **Eksploratora rozwiązań** pokazuje **rozwiązanie "PictureViewer" (1 projekt)**, co oznacza, że tworzone rozwiązanie programu Visual Studio. To rozwiązanie może zawierać więcej niż jeden projekt, ale na razie będziesz pracować z rozwiązaniami, które zawierają tylko jeden projekt.  
+    > W pierwszym wierszu **Eksploratora rozwiązań** pokazuje **rozwiązanie "PictureViewer" (1 projekt)** , co oznacza, że tworzone rozwiązanie programu Visual Studio. To rozwiązanie może zawierać więcej niż jeden projekt, ale na razie będziesz pracować z rozwiązaniami, które zawierają tylko jeden projekt.  
   
 6. Na pasku menu wybierz **pliku**, **Zapisz wszystko**.  
   

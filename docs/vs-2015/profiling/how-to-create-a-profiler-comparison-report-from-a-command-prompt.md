@@ -11,7 +11,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c6dabbae5f2d3758aebe0562f99767ee6993d80
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54756742"
@@ -27,12 +27,12 @@ Możesz wygenerować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tool
   
  Aby utworzyć raport porównawczy, należy użyć następującej składni:  
   
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]  
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]  
   
  Można dodać opcji z poniższej tabeli, aby **VSPerfReport/diff** wiersza polecenia.  
   
 |Opcja|Opis|  
 |------------|-----------------|  
-|**DiffThreshold:**[*wartość*]|Różnica należy pominąć, jeśli jest poniżej tej wartości procentowej wartości progu. Ponadto nowe dane przy użyciu wartości znajdujących się poniżej tego progu nie będą wyświetlane.|  
+|**DiffThreshold:** [*wartość*]|Różnica należy pominąć, jeśli jest poniżej tej wartości procentowej wartości progu. Ponadto nowe dane przy użyciu wartości znajdujących się poniżej tego progu nie będą wyświetlane.|  
 |**DiffTable:** *TableName*|Ta tabela służy do porównywania plików. Domyślnie jest używany w tabeli funkcji. Określ identyfikator, który znajduje się w **VSPerfReport/querydifftables zwraca**.|  
 |**DiffColumn:** *NazwaKolumny*|Ta kolumna służy do porównywania wartości. Domyślnie kolumna % próbek wyłącznych jest używana. Określ identyfikator, który znajduje się w **VSPerfReport/querydifftables zwraca**.|

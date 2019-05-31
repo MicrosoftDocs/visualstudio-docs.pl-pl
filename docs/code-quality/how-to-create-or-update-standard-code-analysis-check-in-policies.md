@@ -61,7 +61,7 @@ Z **Uruchom ten zestaw reguł** listy, użyj jednej z następujących metod:
 
 - Wybierz zestaw standardowych reguł firmy Microsoft.
 
-- Wybierz niestandardową regułę, ustaw, klikając  **\<wybierz zestaw reguł z kontroli źródła... >**. Następnie wpisz ścieżkę kontroli wersji, reguły, ustaw w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
+- Wybierz niestandardową regułę, ustaw, klikając  **\<wybierz zestaw reguł z kontroli źródła... >** . Następnie wpisz ścieżkę kontroli wersji, reguły, ustaw w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

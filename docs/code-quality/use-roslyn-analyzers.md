@@ -122,7 +122,7 @@ Istnieje wiele sposobów, aby pominąć naruszeń reguł:
 
 - Z **Edytor kodu**
 
-   Aby pominąć naruszenie zasad w edytorze kodu, umieść kursor w wierszu kodu za pomocą naruszenie, a następnie naciśnij klawisz **Ctrl**+**.** Aby otworzyć **szybkie akcje** menu. Wybierz **Pomiń CAXXXX** > **w źródle/w pliku pominięć**.
+   Aby pominąć naruszenie zasad w edytorze kodu, umieść kursor w wierszu kodu za pomocą naruszenie, a następnie naciśnij klawisz **Ctrl**+ **.** Aby otworzyć **szybkie akcje** menu. Wybierz **Pomiń CAXXXX** > **w źródle/w pliku pominięć**.
 
    ![Pomiń diagnostyki w menu Szybkie akcje](media/suppress-diagnostic-from-editor.png)
 

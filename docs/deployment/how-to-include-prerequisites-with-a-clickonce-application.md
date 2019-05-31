@@ -31,10 +31,10 @@ Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą [!IN
 
 3. Otwórz w Notatniku *Package.xml* pliku.
 
-4. Znajdź **nazwa** element, który zawiera **http://go.microsoft.com/fwlink**, a następnie skopiuj adres URL. Obejmują **LinkID** części.
+4. Znajdź **nazwa** element, który zawiera **http://go.microsoft.com/fwlink** , a następnie skopiuj adres URL. Obejmują **LinkID** części.
 
    > [!NOTE]
-   > Jeśli nie **nazwa** element zawiera **http://go.microsoft.com/fwlink**, otwórz **Product.xml** pliku w folderze głównym wstępnie wymaganego składnika i zlokalizuj **fwlink** ciągu.
+   > Jeśli nie **nazwa** element zawiera **http://go.microsoft.com/fwlink** , otwórz **Product.xml** pliku w folderze głównym wstępnie wymaganego składnika i zlokalizuj **fwlink** ciągu.
 
    > [!IMPORTANT]
    > Niektóre wstępnie wymagane składniki mają wiele pakietów instalacyjnych (na przykład dla systemów 32-bitowych i 64-bitowych). Jeśli wiele **nazwa** elementy zawierają **fwlink**, pozostałe kroki należy powtórzyć dla każdego z nich.

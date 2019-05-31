@@ -24,12 +24,12 @@ Możesz wygenerować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] P
 
  Aby utworzyć raport porównawczy, należy użyć następującej składni:
 
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]
 
  Można dodać opcji z poniższej tabeli, aby **VSPerfReport/diff** wiersza polecenia.
 
 |Opcja|Opis|
 |------------|-----------------|
-|**DiffThreshold:**[*wartość*]|Różnica należy pominąć, jeśli jest poniżej tej wartości procentowej wartości progu. Ponadto nowe dane przy użyciu wartości znajdujących się poniżej tego progu nie będą wyświetlane.|
+|**DiffThreshold:** [*wartość*]|Różnica należy pominąć, jeśli jest poniżej tej wartości procentowej wartości progu. Ponadto nowe dane przy użyciu wartości znajdujących się poniżej tego progu nie będą wyświetlane.|
 |**DiffTable:** *TableName*|Ta tabela służy do porównywania plików. Domyślnie jest używany w tabeli funkcji. Określ identyfikator, który znajduje się w **VSPerfReport/querydifftables zwraca**.|
 |**DiffColumn:** *NazwaKolumny*|Ta kolumna służy do porównywania wartości. Domyślnie kolumna % próbek wyłącznych jest używana. Określ identyfikator, który znajduje się w **VSPerfReport/querydifftables zwraca**.|

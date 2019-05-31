@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
 ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63383421"
@@ -49,9 +49,9 @@ Ten poradnik pokazuje jak używać narzędzi analizy kodu, które zostały skonf
   
 1. Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **projektu**.  
   
-2. W **nowy projekt** dialogowego **typów projektów**, kliknij przycisk **Visual C#**.  
+2. W **nowy projekt** dialogowego **typów projektów**, kliknij przycisk **Visual C#** .  
   
-3. W obszarze **Visual C#**, wybierz opcję **biblioteki klas**.  
+3. W obszarze **Visual C#** , wybierz opcję **biblioteki klas**.  
   
 4. W **nazwa** polu tekstowym **RuleSetSample** a następnie kliknij przycisk **OK**.  
   
@@ -140,7 +140,7 @@ Ten poradnik pokazuje jak używać narzędzi analizy kodu, które zostały skonf
   
 2. W **właściwości** kliknij pozycję **analizy kodu**.  
   
-    W **Uruchom ten zestaw reguł** listy rozwijanej kliknij  **\<Przeglądaj... >**. Przejdź do folderu głównego projektu kodu, a następnie wybierz pozycję **MyCustomRuleSet.ruleset**. Jest to nowy zestaw reguł, który został utworzony w poprzedniej procedurze.  
+    W **Uruchom ten zestaw reguł** listy rozwijanej kliknij  **\<Przeglądaj... >** . Przejdź do folderu głównego projektu kodu, a następnie wybierz pozycję **MyCustomRuleSet.ruleset**. Jest to nowy zestaw reguł, który został utworzony w poprzedniej procedurze.  
   
 3. Na **pliku** menu, kliknij przycisk **Zapisz** Aby zapisać konfigurację projektu. Teraz można niestandardowego zestawu reguł z projektem.  
   

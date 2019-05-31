@@ -144,7 +144,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
   **Aby wybrać funkcje diagnostyczne dotyczące pamięci za pomocą afxmemdf —**  
   
-- Jeśli chcesz bardziej precyzyjną kontrolę nad funkcji diagnostycznych pamięci, można selektywnie włączyć funkcje diagnostyczne poszczególnych pamięci włączać i wyłączać, ustawiając wartość zmiennej globalnej MFC [afxmemdf —](https://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Ta zmienna może mieć następujące wartości, określony przez Typ wyliczany **afxmemdf —**.  
+- Jeśli chcesz bardziej precyzyjną kontrolę nad funkcji diagnostycznych pamięci, można selektywnie włączyć funkcje diagnostyczne poszczególnych pamięci włączać i wyłączać, ustawiając wartość zmiennej globalnej MFC [afxmemdf —](https://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Ta zmienna może mieć następujące wartości, określony przez Typ wyliczany **afxmemdf —** .  
   
   |Wartość|Opis|  
   |-----------|-----------------|  
@@ -191,7 +191,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Należy zauważyć, że instrukcje sprawdzanie pamięci jest oddzielona przez `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** blokuje, dzięki czemu są one kompilowane tylko w wersji debugowania programu.  
+    Należy zauważyć, że instrukcje sprawdzanie pamięci jest oddzielona przez `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** blokuje, dzięki czemu są one kompilowane tylko w wersji debugowania programu.  
   
     Teraz, gdy wiesz, występuje przeciek pamięci, można użyć innej funkcji członkowskiej, [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) pomoże Ci go zlokalizować.  
   
@@ -364,7 +364,7 @@ Phone #: 581-0215
 #### <a name="BKMK_Customizing_object_dumps"></a> Dostosowywanie obiektu zrzutów  
  Po utworzeniu klasy pochodnej klasy z [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), możesz zastąpić `Dump` funkcja elementu członkowskiego, aby podać dodatkowe informacje, gdy używasz [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) do obiektów zrzutu [Okno danych wyjściowych](../ide/reference/output-window.md).  
   
- `Dump` Funkcji zapisuje tekstową reprezentację wartości elementu członkowskiego obiektu zmienne kontekstowe zrzutu ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Kontekst zrzutu jest podobne do strumienia we/wy. Możesz użyć operatora append (**<<**) do wysyłania danych do `CDumpContext`.  
+ `Dump` Funkcji zapisuje tekstową reprezentację wartości elementu członkowskiego obiektu zmienne kontekstowe zrzutu ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Kontekst zrzutu jest podobne do strumienia we/wy. Możesz użyć operatora append ( **<<** ) do wysyłania danych do `CDumpContext`.  
   
  Gdy zastąpisz `Dump` funkcji, należy najpierw wywołać klasy bazowej wersję `Dump` do porzucenia zawartości obiektu klasy bazowej. Następnie wyprowadzić tekstowy opis i wartość każdej zmiennej składowej klasy pochodnej.  
   
@@ -438,7 +438,7 @@ pMyPerson->Dump( afxDump );
   
    1. W  **\<Projekt > strony właściwości** okno dialogowe, kliknij przycisk **programu Configuration Manager** przycisku.  
   
-   2. W [programu Configuration Manager, okno dialogowe](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), Znajdź projekt w siatce. W **konfiguracji** kolumny wybierz  **\<nowy... >**.  
+   2. W [programu Configuration Manager, okno dialogowe](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), Znajdź projekt w siatce. W **konfiguracji** kolumny wybierz  **\<nowy... >** .  
   
    3. W [nowa konfiguracja projektu, okno dialogowe](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), wpisz nazwę dla nowej konfiguracji, takich jak "Częściowe Debug", **Nazwa konfiguracji projektu** pole.  
   

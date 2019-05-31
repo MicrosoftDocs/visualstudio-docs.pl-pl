@@ -117,7 +117,7 @@ W poniższej tabeli opisano elementy na **tryb edytora obrazów** narzędzi, kt�
 |**Zaznacz dowolny kształt**|Umożliwia wybór nieregularne obszaru obrazu. Po wybraniu regionu, można wycinania, kopiowania, przenieść, skalowanie, obracanie, przerzucić lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|
 |**Wybór Różdżka**|Umożliwia wybór podobnym kolorze obszaru obrazu. *Tolerancji*— czyli maksymalna różnica między sąsiadujących kolorów w ramach których są one traktowane jako podobne — można skonfigurować, aby uwzględnić mniejszych lub szerszy zakres podobne kolory. Po wybraniu regionu, można wycinania, kopiowania, przenieść, skalowanie, obracanie, przerzucić lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|
 |**Przesuwanie**|Umożliwia przenoszenie obrazu względem ramki okna. W **Pan** tryb, wybierz punkt na obrazie, a następnie przesuwaj go.<br /><br /> Można tymczasowo uaktywnić **Pan** tryb przez naciśnięcie i przytrzymanie **Ctrl** klucza.|
-|**Zoom**|Umożliwia wyświetlanie więcej lub mniej szczegółów obrazu względem ramki okna. W **powiększenia** tryb, wybierz punkt na obrazie a następnie przesuń w prawo lub w dół, aby powiększyć lub poziomie w lewo lub do powiększania.<br /><br /> Można powiększyć lub pomniejszyć przez naciśnięcie i przytrzymanie **Ctrl** podczas możesz użyć kółka myszy lub naciśnij znak plus (**+**) lub znak minus (**-**) .|
+|**Zoom**|Umożliwia wyświetlanie więcej lub mniej szczegółów obrazu względem ramki okna. W **powiększenia** tryb, wybierz punkt na obrazie a następnie przesuń w prawo lub w dół, aby powiększyć lub poziomie w lewo lub do powiększania.<br /><br /> Można powiększyć lub pomniejszyć przez naciśnięcie i przytrzymanie **Ctrl** podczas możesz użyć kółka myszy lub naciśnij znak plus ( **+** ) lub znak minus ( **-** ) .|
 |**Powiększ do rzeczywistego rozmiaru**|Wyświetla obraz przy użyciu relacji 1:1 między piksele obrazu i pikseli ekranu.|
 |**Dopasuj widok do rozmiaru**|Wyświetla pełnego obrazu w ramki okna.|
 |**Dopasuj widok do szerokości**|Wyświetla całą szerokość obrazu ramki okna.|
@@ -150,11 +150,11 @@ W poniższej tabeli opisano elementy na **edytora obrazów** narzędzi, które s
 
 ### <a name="work-with-mip-levels"></a>Praca z poziomów MIP
 
-Niektóre obraz formatów, na przykład, DirectDraw Surface (*.dds*), Obsługa poziomów MIP przestrzeni tekstury poziomu z Detail (poziomu). Aby uzyskać informacje o tym, jak generować i pracować z poziomami MIP, zobacz [jak: Tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Niektóre obraz formatów, na przykład, DirectDraw Surface ( *.dds*), Obsługa poziomów MIP przestrzeni tekstury poziomu z Detail (poziomu). Aby uzyskać informacje o tym, jak generować i pracować z poziomami MIP, zobacz [jak: Tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Praca z przezroczystością
 
-Niektóre obraz formatów, na przykład, DirectDraw Surface (*.dds*), obsługują przezroczystość. Istnieje kilka sposobów, można użyć przezroczystości, w zależności od tego narzędzia, którego używasz. Aby określić stopień przejrzystości dla wyboru koloru w **właściwości** oknie **A** składnik (alfa) wybór koloru.
+Niektóre obraz formatów, na przykład, DirectDraw Surface ( *.dds*), obsługują przezroczystość. Istnieje kilka sposobów, można użyć przezroczystości, w zależności od tego narzędzia, którego używasz. Aby określić stopień przejrzystości dla wyboru koloru w **właściwości** oknie **A** składnik (alfa) wybór koloru.
 
 W poniższej tabeli opisano, jak różne rodzaje kontroli narzędzi, jak przezroczystości są stosowane:
 
@@ -250,8 +250,8 @@ W poniższej tabeli opisano właściwości narzędzia:
 |Zaznacz wszystkie|**Ctrl**+**A**|
 |Usuń bieżące zaznaczenie|**Delete**|
 |Anuluj bieżące zaznaczenie|**ESC** (ucieczki)|
-|Powiększanie|**CTRL**+**kółkiem myszy do przodu**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Znak plus (**+**)|
-|Pomniejszanie|**CTRL**-**obrót kółkiem myszy do tyłu**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Znak minus (**-**)|
+|Powiększanie|**CTRL**+**kółkiem myszy do przodu**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Znak plus ( **+** )|
+|Pomniejszanie|**CTRL**-**obrót kółkiem myszy do tyłu**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Znak minus ( **-** )|
 |Przesuń w górę obrazu|**Obrót kółkiem myszy do tyłu**<br /><br /> **PageDown**|
 |Przesuń w dół obrazu|**Obrót kółkiem myszy do przodu**<br /><br /> **PageUp**|
 |Przesuń obrazu po lewej|**SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **Obrót kółkiem myszy w lewo**<br /><br /> **Shift**+**PageDown**|

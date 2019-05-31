@@ -39,7 +39,7 @@ ms.locfileid: "63447067"
 
 - Względna lub bezwzględna ścieżka w standardzie Windows formatowania, takich jak *C:\Deploy\MyApplication* lub *\MyApplication*.
 
-- Ścieżka Universal Naming Convention (UNC), takie jak  *\\\ServerName\MyApplication\\*.
+- Ścieżka Universal Naming Convention (UNC), takie jak  *\\\ServerName\MyApplication\\* .
 
 - Adres URL sieci Web site, takich jak http://www.microsoft.com/MyApplication.
 

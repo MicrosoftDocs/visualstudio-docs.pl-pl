@@ -77,13 +77,13 @@ ms.locfileid: "63431542"
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **Zmiana wskaźnik - przekazywane przez wartość:**
+ **Zmiana wskaźnik - przekazywane przez wartość:** 
 **12345**
 **12345**
 **wskaźnik zmiana - przekazywany przez odwołanie:** 
 **12345**
 **12345 ABCDE**
-**przekazywanie poprzez wartość zwracana:**
+**przekazywanie poprzez wartość zwracana:** 
 **12345 ABCDE**
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1021: Unikaj parametrów out](../code-quality/ca1021-avoid-out-parameters.md)

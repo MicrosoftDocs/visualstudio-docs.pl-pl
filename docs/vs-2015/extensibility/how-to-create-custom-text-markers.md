@@ -34,7 +34,7 @@ Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub 
   
 1. Utwórz wpis rejestru w następujący sposób:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>jest `GUID` używany do identyfikowania znacznika dodawany  
   
@@ -43,9 +43,9 @@ Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub 
     *\<PackageGUID >* jest identyfikator GUID pakietu VSPackage implementacji obiektu automatyzacji.  
   
    > [!NOTE]
-   > Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez główny alternatywne po zainicjowaniu powłoki programu Visual Studio, aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<wersji >* może zostać zastąpiona przez główny alternatywne po zainicjowaniu powłoki programu Visual Studio, aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Utwórz cztery wartości w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* \Text Editor\External znaczniki\\*\<MarkerGUID >*  
+2. Utwórz cztery wartości w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<wersji >* \Text Editor\External znaczniki\\ *\<MarkerGUID >*  
   
    - (Domyślnie)  
   

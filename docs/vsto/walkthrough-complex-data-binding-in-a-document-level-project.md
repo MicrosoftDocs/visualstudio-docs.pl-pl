@@ -210,7 +210,7 @@ ms.locfileid: "62981679"
 
 4. Kliknij przycisk strzałki w **tytuł** ponownie nagłówek kolumny.
 
-5. Kliknij przycisk **(wszystkie)**.
+5. Kliknij przycisk **(wszystkie)** .
 
      Filtrowanie jest usuwany, a wszystkie wiersze będą widoczne.
 

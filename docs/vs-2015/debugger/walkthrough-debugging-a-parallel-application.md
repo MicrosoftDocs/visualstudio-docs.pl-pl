@@ -47,7 +47,7 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
 - Jak windows poradzić sobie z skalę za pomocą grupowania, powiększania i inne powiązane funkcje.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- W tym przewodniku założono, że **tylko mój kod** jest włączona. Na **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzła, wybierz opcję **ogólne**, a następnie wybierz **Włącz Tylko mój kod (tylko zarządzany)**. Jeśli ta funkcja nie jest ustawiona, nadal można korzystać z tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.  
+ W tym przewodniku założono, że **tylko mój kod** jest włączona. Na **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzła, wybierz opcję **ogólne**, a następnie wybierz **Włącz Tylko mój kod (tylko zarządzany)** . Jeśli ta funkcja nie jest ustawiona, nadal można korzystać z tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.  
   
 ## <a name="c-sample"></a>Przykładowy języka C#  
  Użycie przykładowy języka C#, w tym przewodniku również założenie, że kod zewnętrzny jest ukryty. Do wyświetlania i ukrywania kod zewnętrzny jest wyświetlany, kliknij prawym przyciskiem myszy **nazwa** nagłówek tabeli **stos wywołań** okna, a następnie zaznacz lub usuń zaznaczenie **Pokaż kod zewnętrzny**. Jeśli ta funkcja nie jest ustawiona, nadal można korzystać z tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.  

@@ -37,7 +37,7 @@ Utwórz następujący projekt aplikacja wielowątkowa do użycia w ramach tego s
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++**), wybierz **szablony**, a następnie:
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++** ), wybierz **szablony**, a następnie:
 
     - Aby uzyskać C#, wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla C#. W oknie dialogowym wybierz **Utwórz**.
     - Dla języka C++, wybierz **Tworzenie nowego projektu aplikacji Konsolowej**. W oknie dialogowym wybierz **Utwórz**.
@@ -46,8 +46,8 @@ Utwórz następujący projekt aplikacja wielowątkowa do użycia w ramach tego s
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego pole, wybierz następujące opcje:
-    - Dla C# aplikacji, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
-    - Dla aplikacji w języku C++ w obszarze **Visual C++**, wybierz **pulpitu Windows**,, a następnie wybierz **aplikacji konsoli Windows**.
+    - Dla C# aplikacji, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)** .
+    - Dla aplikacji w języku C++ w obszarze **Visual C++** , wybierz **pulpitu Windows**,, a następnie wybierz **aplikacji konsoli Windows**.
 
     Następnie wpisz nazwę, takich jak **MyThreadWalkthroughApp** i kliknij przycisk **OK**.
     ::: moniker-end

@@ -97,7 +97,7 @@ Wszystkie poprzednie wersje programu Visual Studio debugowanie w trybie mieszany
 
 ![Stos wywołań połączone w debugowaniu trybu mieszanego](media/mixed-mode-debugging-call-stack.png)
 
-Przejścia są traktowane jako **[kod zewnętrzny]**, bez określania kierunku przejście, jeśli **narzędzia** > **opcje**  >  **Debugowanie** > **ogólne** > **Włącz tylko mój kod** ustawiono opcję.
+Przejścia są traktowane jako **[kod zewnętrzny]** , bez określania kierunku przejście, jeśli **narzędzia** > **opcje**  >  **Debugowanie** > **ogólne** > **Włącz tylko mój kod** ustawiono opcję.
 
 Dwukrotne kliknięcie ramki żadnych wywołań sprawia, że aktywna i spowoduje otwarcie odpowiedniego kodu źródłowego, jeśli jest to możliwe. Jeśli kod źródłowy jest niedostępny, ramki nadal zostanie aktywowane i mogą być kontrolowane zmiennych lokalnych.
 
@@ -107,7 +107,7 @@ Korzystając z **Step Into** (**F11**) lub **Step Out** (**Shift**+**F11**) pole
 
 ### <a name="pyobject-values-view-in-native-code"></a>Wyświetl wartości PyObject w kodzie natywnym
 
-Po uaktywnieniu ramka natywna (C lub C++) jej zmienne lokalne wyświetlane w debugerze **lokalne** okna. W moduły macierzyste rozszerzenia języka Python, wiele z tych zmiennych są typu `PyObject` (czyli element typedef dla `_object`), lub kilka innych Python typy podstawowe (patrz lista poniżej). W debugowaniu trybu mieszanego, te wartości obecne dodatkowe podrzędnym etykietą **[widok Python]**. Po rozwinięciu ten węzeł zawiera reprezentację Python zmiennej, taka sama jak co widział, jeśli zmienna lokalna odwołuje się do tego samego obiektu znajdował się w ramce języka Python. Element podrzędny tego węzła są edytowalne.
+Po uaktywnieniu ramka natywna (C lub C++) jej zmienne lokalne wyświetlane w debugerze **lokalne** okna. W moduły macierzyste rozszerzenia języka Python, wiele z tych zmiennych są typu `PyObject` (czyli element typedef dla `_object`), lub kilka innych Python typy podstawowe (patrz lista poniżej). W debugowaniu trybu mieszanego, te wartości obecne dodatkowe podrzędnym etykietą **[widok Python]** . Po rozwinięciu ten węzeł zawiera reprezentację Python zmiennej, taka sama jak co widział, jeśli zmienna lokalna odwołuje się do tego samego obiektu znajdował się w ramce języka Python. Element podrzędny tego węzła są edytowalne.
 
 ![Widok języka Python w oknie zmienne lokalne](media/mixed-mode-debugging-python-view.png)
 
@@ -150,7 +150,7 @@ Podobnie jak w poprzedniej sekcji, aby umożliwić **[C++ widok]** natywnej wart
 
 Jeśli pole podrzędne obiektu jest typu `PyObject`, lub jednego z innych obsługiwanych typów, a następnie w nim **[widok Python]** reprezentacji węzła (Jeśli te oświadczenia są włączone), dzięki czemu można przejść do obiektu wykresów where łącza nie są bezpośrednio widoczne dla języka Python.
 
-W odróżnieniu od **[widok Python]** węzły, które można określić typu obiektu, należy użyć metadane obiektu języka Python, nie istnieje mechanizm podobnie niezawodne dla **[C++ widok]**. Ogólnie rzecz biorąc, danej wartości Python (czyli `PyObject` odwołania) nie jest możliwe ustalenie niezawodnie struktury języka C/C++, które jest wspierającą. Tryb mieszany debuger próbuje odgadnąć tego typu, patrząc na różnych pól typu obiektu (takie jak `PyTypeObject` wskazywanym przez jego `ob_type` pole) mają typy wskaźników funkcji. Jeśli jeden z tych wskaźników funkcji, który odwołuje się funkcja, która może zostać rozwiązany i ma tę funkcję `self` parametrem typu bardziej szczegółowe niż `PyObject*`, a następnie tego typu będzie traktowana jako zapasowy typ. Na przykład jeśli `ob_type->tp_init` punktów danego obiektu w następujących funkcji:
+W odróżnieniu od **[widok Python]** węzły, które można określić typu obiektu, należy użyć metadane obiektu języka Python, nie istnieje mechanizm podobnie niezawodne dla **[C++ widok]** . Ogólnie rzecz biorąc, danej wartości Python (czyli `PyObject` odwołania) nie jest możliwe ustalenie niezawodnie struktury języka C/C++, które jest wspierającą. Tryb mieszany debuger próbuje odgadnąć tego typu, patrząc na różnych pól typu obiektu (takie jak `PyTypeObject` wskazywanym przez jego `ob_type` pole) mają typy wskaźników funkcji. Jeśli jeden z tych wskaźników funkcji, który odwołuje się funkcja, która może zostać rozwiązany i ma tę funkcję `self` parametrem typu bardziej szczegółowe niż `PyObject*`, a następnie tego typu będzie traktowana jako zapasowy typ. Na przykład jeśli `ob_type->tp_init` punktów danego obiektu w następujących funkcji:
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {

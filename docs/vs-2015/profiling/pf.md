@@ -52,16 +52,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="invalid-options"></a>Nieprawidłowe opcje  
  Nie można określić następujące opcje w wierszu polecenia jako **PF**.  
   
- **Czasomierz**[**:**`Cycles`]  
+ **Czasomierz**[ **:** `Cycles`]  
  Ustawia zdarzenie próbkowania zegara procesora cykli i opcjonalnie ustawia interwał próbkowania `Cycles`. Domyślny interwał czasomierza wynosi 10 000 000.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Ustawia zdarzenie próbkowania na wywołania z profilowaną aplikację do jądra systemu operacyjnego (syscalls) i opcjonalnie ustawia interwał próbkowania `Events`. Domyślny interwał Sys wynosi 10.  
   
  **Licznik:** `Name`[`,Reload`[`,FriendlyName`]]  
  Ustawia zdarzenie próbkowania wydajności procesorów CPU, licznik określonej przez `Name` i ustawia interwał próbkowania `Reload`.  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
  Zbiera dane pamięci platformy .NET. Domyślnie (**alokacji**), dane są zbierane na każde zdarzenie alokacji pamięci. Gdy **okres istnienia** parametr jest określony, dane są również zbierane przy każdym zdarzeniu kolekcji wyrzucania elementów.  
   
 ## <a name="example"></a>Przykład  

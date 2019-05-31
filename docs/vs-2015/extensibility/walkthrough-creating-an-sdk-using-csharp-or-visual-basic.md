@@ -117,7 +117,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
   
 23. Na pasku menu wybierz **widoku**, **właściwości** (klawiatury: Wybierz klawisz F4).  
   
-24. W **właściwości** oknie zmiany **Build Action** właściwości **zawartości**, a następnie zmień **Include w VSIX** właściwości  **Wartość true,**.  
+24. W **właściwości** oknie zmiany **Build Action** właściwości **zawartości**, a następnie zmień **Include w VSIX** właściwości  **Wartość true,** .  
   
 25. W **Eksploratora rozwiązań**, powtórz ten proces dla **SimpleMath.pri**.  
   

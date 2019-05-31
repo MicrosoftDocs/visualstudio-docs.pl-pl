@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045658"
@@ -97,7 +97,7 @@ W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](..
   
 - Aby zwinąć reguł we wszystkich grupach, kliknij **Zwiń wszystkie**.  
   
-- Aby zmienić pola, które reguły są grupowane według, zaznacz pole z **Group By** listy. Aby wyświetlić reguły niezgrupowane, wybierz  **\<Brak >**.  
+- Aby zmienić pola, które reguły są grupowane według, zaznacz pole z **Group By** listy. Aby wyświetlić reguły niezgrupowane, wybierz  **\<Brak >** .  
   
 - Aby dodać lub usunąć pola w kolumnach regułę, kliknij przycisk **opcje kolumny**.  
   

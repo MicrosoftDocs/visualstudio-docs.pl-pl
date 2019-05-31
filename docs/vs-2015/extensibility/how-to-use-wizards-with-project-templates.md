@@ -33,7 +33,7 @@ Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IW
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Tworzenie projektu szablonu projektu z projektu VSIX  
  Możesz rozpocząć tworzenie szablonu niestandardowego za pomocą projektu szablonu projektu., który jest częścią zestawu SDK programu Visual Studio. W tej procedurze użyto projektu szablonu projektu C#, ale jest również szablon projektami Visual Basic. Następnie możesz dodać projekt VSIX do rozwiązania zawierającego projekt szablonu projektu.  
   
-1. Utwórz projekt szablonu projektu C# (w programie Visual Studio, **plik / nowy / Project / Visual C# / rozszerzalności / szablonu projektu C#**). Nadaj mu nazwę **MyProjectTemplate**.  
+1. Utwórz projekt szablonu projektu C# (w programie Visual Studio, **plik / nowy / Project / Visual C# / rozszerzalności / szablonu projektu C#** ). Nadaj mu nazwę **MyProjectTemplate**.  
   
     > [!NOTE]
     > Może być konieczne instalowanie zestawu SDK programu Visual Studio. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -207,7 +207,7 @@ Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IW
   
 1. Podpisz zestaw. W **Eksploratora rozwiązań**, wybierz projekt VSIX, kliknij prawym przyciskiem myszy i wybierz **właściwości projektu**.  
   
-2. W **właściwości projektu** wybierz **podpisywanie** kartę w **podpisywanie** karcie wyboru **Podpisz zestaw**. W **wybierz plik klucza o silnej nazwie** pól, zaznacz  **\<nowy >**. W **Utwórz klucz silnej nazwy** okna w **nazwę pliku klucza** wpisz **key.snk**. Usuń zaznaczenie pola wyboru **Chroń mój plik klucza przy użyciu hasła** pola.  
+2. W **właściwości projektu** wybierz **podpisywanie** kartę w **podpisywanie** karcie wyboru **Podpisz zestaw**. W **wybierz plik klucza o silnej nazwie** pól, zaznacz  **\<nowy >** . W **Utwórz klucz silnej nazwy** okna w **nazwę pliku klucza** wpisz **key.snk**. Usuń zaznaczenie pola wyboru **Chroń mój plik klucza przy użyciu hasła** pola.  
   
 3. W **Eksploratora rozwiązań**, wybierz projekt VSIX i Znajdź **właściwości** okna.  
   
@@ -215,9 +215,9 @@ Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IW
   
 5. Ponownie skompiluj rozwiązanie.  
   
-6. Teraz można znaleźć pliku key.snk w katalogu projektu MyProjectWizard (**\<lokalizacji na dysku > \MyProjectTemplate\MyProjectWizard\key.snk**). Skopiuj plik key.snk.  
+6. Teraz można znaleźć pliku key.snk w katalogu projektu MyProjectWizard ( **\<lokalizacji na dysku > \MyProjectTemplate\MyProjectWizard\key.snk**). Skopiuj plik key.snk.  
   
-7. Przejdź do katalogu wyjściowego i Znajdź zestaw (**\<lokalizacji na dysku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Wklej plik key.snk w tym miejscu. (Nie jest to absolutnie konieczne, ale jej ułatwi następujące kroki).  
+7. Przejdź do katalogu wyjściowego i Znajdź zestaw ( **\<lokalizacji na dysku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Wklej plik key.snk w tym miejscu. (Nie jest to absolutnie konieczne, ale jej ułatwi następujące kroki).  
   
 8. Otwórz okno polecenia i przejdź do katalogu, w którym utworzono zestaw.  
   

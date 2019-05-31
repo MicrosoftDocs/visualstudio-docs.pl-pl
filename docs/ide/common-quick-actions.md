@@ -29,7 +29,7 @@ Szybkie akcje w tej sekcji naprawić błędy w kodzie, które mogłyby spowodowa
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Popraw błędnie symboli lub słowo kluczowe
 
-W przypadku błędnego wpisania przypadkowo typu lub słowa kluczowego w programie Visual Studio, tej szybkiej akcji automatycznie skoryguje go dla Ciebie. Zostaną wyświetlone te elementy w menu żarówka w postaci **"Zmień"*błędnie napisane słowa*"to"*poprawić wyraz*"**. Na przykład:
+W przypadku błędnego wpisania przypadkowo typu lub słowa kluczowego w programie Visual Studio, tej szybkiej akcji automatycznie skoryguje go dla Ciebie. Zostaną wyświetlone te elementy w menu żarówka w postaci **"Zmień"*błędnie napisane słowa*"to"*poprawić wyraz*"** . Na przykład:
 
 ```csharp
 // Before

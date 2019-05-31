@@ -66,7 +66,7 @@ Możesz wymagać, można uruchomić analizę kodu dla wszystkich projektów kodu
   
     - Wybierz zestaw standardowych reguł firmy Microsoft.  
   
-    - Aby wybrać niestandardowego zestawu reguł, kliknij przycisk  **\<wybierz zestaw reguł z kontroli źródła... >**, a następnie wpisz ścieżkę kontroli wersji, reguły, ustaw w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:  
+    - Aby wybrać niestandardowego zestawu reguł, kliknij przycisk  **\<wybierz zestaw reguł z kontroli źródła... >** , a następnie wpisz ścieżkę kontroli wersji, reguły, ustaw w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:  
   
     - **$/** `TeamProjectName` **/** `VersionControlPath`  
   

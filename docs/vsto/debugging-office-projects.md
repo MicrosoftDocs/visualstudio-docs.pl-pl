@@ -73,7 +73,7 @@ ms.locfileid: "63441884"
  Za każdym razem, gdy tworzysz projekt, zestaw danych jest opróżniany i utworzona ponownie. Jeśli chcesz debugować buforowany zestaw danych, należy otworzyć dokument poza programem Visual Studio i następnie dołączyć debuger.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Projekty dokumentu programu Word debugowania na podstawie dokumentu programu Word 97 – 2003 (* .doc) format
- Do debugowania projektu dokument programu Word, w oparciu o dokument programu Word 97 – 2003 (*/*.doc *) format, folder projektu należy dodać do listy zaufanych folderów. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [udzielenia zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
+ Do debugowania projektu dokument programu Word, w oparciu o dokument programu Word 97 – 2003 ( */* .doc *) format, folder projektu należy dodać do listy zaufanych folderów. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [udzielenia zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Dodatki debugowania wyłączone
  Aplikacje Microsoft Office może spowodować wyłączenie dodatków narzędzi VSTO dla programów, które nieoczekiwane zachowanie. Aplikacji pakietu Microsoft Office powoduje wyłączenie dodatków narzędzi VSTO, aby uniemożliwić problematycznego kod ładowania każdorazowym uruchomieniu aplikacji. Jednak również jest łatwo spowodować nieoczekiwane zachowanie podczas debugowania typowy. Aby dowiedzieć się, jak ponownie włączyć dodatków narzędzi VSTO dla programów, zobacz [jak: Ponowne włączanie dodatku narzędzi VSTO dla programów, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).

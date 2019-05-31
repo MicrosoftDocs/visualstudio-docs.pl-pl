@@ -74,13 +74,13 @@ ms.locfileid: "54784173"
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **Zmiana wskaźnik - przekazywane przez wartość:**
+ **Zmiana wskaźnik - przekazywane przez wartość:** 
 **12345**
 **12345**
 **wskaźnik zmiana - przekazywany przez odwołanie:** 
 **12345**
 **12345 ABCDE**
-**przekazywanie poprzez wartość zwracana:**
+**przekazywanie poprzez wartość zwracana:** 
 **12345 ABCDE**
 ## <a name="try-pattern-methods"></a>Wypróbuj metody wzorca
 

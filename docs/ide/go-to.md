@@ -27,7 +27,7 @@ Visual Studio **przejdź do** poleceń wyszukiwania ukierunkowanych swój kod, a
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Keyboard** | Naciśnij klawisz **Ctrl**+**T** lub **Ctrl**+**,**
+**Keyboard** | Naciśnij klawisz **Ctrl**+**T** lub **Ctrl**+ **,**
 **Myszy** | Wybierz **Edytuj** > **przejdź do** > **przejdź do wszystkich**
 
 Niewielki przedział jest wyświetlany w prawym górnym rogu edytora kodu.
@@ -38,7 +38,7 @@ Podczas wpisywania w polu tekstowym, wyniki są wyświetlane na liście rozwijan
 
 ![Nawiguj do okna](../ide/media/vside_navigatetowindow.png)
 
-Możesz też wprowadzić znak zapytania (**?**) Aby uzyskać dodatkową pomoc.
+Możesz też wprowadzić znak zapytania ( **?** ) Aby uzyskać dodatkową pomoc.
 
 ![Przejdź do wszystkich pomocy](media/go-to-all-help.png)
 

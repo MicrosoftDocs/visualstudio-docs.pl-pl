@@ -62,7 +62,7 @@ Aby utworzyć nową regułę niestandardową zestawu, zapisz go przy użyciu now
 
 - Aby zwinąć reguł we wszystkich grupach, wybierz opcję **Zwiń wszystkie**.
 
-- Aby zmienić pola, które reguły są grupowane według, wybierz pole z **Group By** listy. Aby wyświetlić reguły niezgrupowane, wybierz  **\<Brak >**.
+- Aby zmienić pola, które reguły są grupowane według, wybierz pole z **Group By** listy. Aby wyświetlić reguły niezgrupowane, wybierz  **\<Brak >** .
 
 - Aby dodać lub usunąć pola w kolumnach regułę, wybierz opcję **opcje kolumny**.
 

@@ -103,7 +103,7 @@ Po zainstalowaniu, upewnij się, że debuger zdalny jest uruchomiony na komputer
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwy komputera zdalnego >**.
+1. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwy komputera zdalnego >** .
     
     Powinna zostać wyświetlona strona sieci web platformy ASP.NET.
 1. Na stronie sieci web platformy ASP.NET, kliknij link, aby **o** strony.

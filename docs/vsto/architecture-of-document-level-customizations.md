@@ -84,18 +84,18 @@ ms.locfileid: "63440373"
 
 |Excel|Word|
 |-----------|----------|
-|Skoroszyt programu Excel (*xlsx*)<br /><br /> Skoroszyt programu Excel z włączoną obsługą makr (*.xlsm*)<br /><br /> Skoroszyt binarny programu Excel (*xlsb*)<br /><br /> Skoroszyt programu Excel 97 – 2003 (*xls*)<br /><br /> Szablon programu Excel (*xltx*)<br /><br /> Szablon programu Excel z włączoną obsługą makr (*xltm*)<br /><br /> Szablon programu Excel 97 – 2003 (*xlt*)|Dokument programu Word (*.docx*)<br /><br /> Dokument programu Word z obsługą makr (*docm*)<br /><br /> Dokument programu Word 97 – 2003 (*doc*)<br /><br /> Szablon programu Word (*dotx*)<br /><br /> Szablon programu Word z obsługą makr (*dotm*)<br /><br /> Szablon programu Word 97 – 2003 (*.dot*)|
+|Skoroszyt programu Excel (*xlsx*)<br /><br /> Skoroszyt programu Excel z włączoną obsługą makr ( *.xlsm*)<br /><br /> Skoroszyt binarny programu Excel (*xlsb*)<br /><br /> Skoroszyt programu Excel 97 – 2003 (*xls*)<br /><br /> Szablon programu Excel (*xltx*)<br /><br /> Szablon programu Excel z włączoną obsługą makr (*xltm*)<br /><br /> Szablon programu Excel 97 – 2003 (*xlt*)|Dokument programu Word ( *.docx*)<br /><br /> Dokument programu Word z obsługą makr (*docm*)<br /><br /> Dokument programu Word 97 – 2003 (*doc*)<br /><br /> Szablon programu Word (*dotx*)<br /><br /> Szablon programu Word z obsługą makr (*dotm*)<br /><br /> Szablon programu Word 97 – 2003 ( *.dot*)|
 
- Należy projektować rozszerzenia kodu zarządzanego tylko dla dokumentów w obsługiwanych formatów. W przeciwnym razie określonych zdarzeń nie może zostać wywołane, gdy dokument zostanie otwarty w aplikacji. Na przykład <xref:Microsoft.Office.Tools.Excel.Workbook.Open> zdarzeń nie jest inicjowane, gdy używasz rozszerzenia kodu zarządzanego ze skoroszytami zapisany w formacie arkusza kalkulacyjnego programu Excel, XML lub strony sieci web (*.htm*; *.html*) format.
+ Należy projektować rozszerzenia kodu zarządzanego tylko dla dokumentów w obsługiwanych formatów. W przeciwnym razie określonych zdarzeń nie może zostać wywołane, gdy dokument zostanie otwarty w aplikacji. Na przykład <xref:Microsoft.Office.Tools.Excel.Workbook.Open> zdarzeń nie jest inicjowane, gdy używasz rozszerzenia kodu zarządzanego ze skoroszytami zapisany w formacie arkusza kalkulacyjnego programu Excel, XML lub strony sieci web ( *.htm*; *.html*) format.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Obsługa dokumentów programu Word, które mają rozszerzenia nazwy pliku .xml
  Szablony projektów dokumentów nie pozwalają na tworzenie projektów, w oparciu o następujące formaty plików:
 
-- Dokument XML programu Word (*\*xml*).
+- Dokument XML programu Word ( *\*xml*).
 
-- Dokument XML programu Word 2003 (*\*xml*).
+- Dokument XML programu Word 2003 ( *\*xml*).
 
-  Chcąc użytkownikom końcowym, użyj opcji dostosowania w tych formatach plików, tworzenie i wdrażanie dostosowania, które korzysta z jednego z obsługiwanych formatów plików określone w powyższej tabeli. Po zainstalowaniu dostosowania, użytkownicy końcowi można zapisać dokument w dokumencie programu Word XML (*\*xml*) format lub dokument programu Word 2003 XML (*\*xml*) format, a Dostosowywanie będą w dalszym ciągu działać zgodnie z oczekiwaniami.
+  Chcąc użytkownikom końcowym, użyj opcji dostosowania w tych formatach plików, tworzenie i wdrażanie dostosowania, które korzysta z jednego z obsługiwanych formatów plików określone w powyższej tabeli. Po zainstalowaniu dostosowania, użytkownicy końcowi można zapisać dokument w dokumencie programu Word XML ( *\*xml*) format lub dokument programu Word 2003 XML ( *\*xml*) format, a Dostosowywanie będą w dalszym ciągu działać zgodnie z oczekiwaniami.
 
 ## <a name="Components"></a> Składniki dostosowania
  Główne składniki dostosowania są dokumentu i zestawu. Oprócz tych składników istnieje kilka elementów, które odgrywa ważną rolę w sposób aplikacje Microsoft Office wykrycie i załadowanie dostosowań.

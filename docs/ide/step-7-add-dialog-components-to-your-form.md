@@ -24,7 +24,7 @@ Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła,
 
 ## <a name="to-add-dialog-components-to-your-form"></a>Aby dodać elementy dialogu do formularza
 
-1. Wybierz **Windows Forms Designer** (**Form1.cs [projekt]** lub **Form1.vb [projekt]**), a następnie otwórz **okien dialogowych** w  **Przybornik**.
+1. Wybierz **Windows Forms Designer** (**Form1.cs [projekt]** lub **Form1.vb [projekt]** ), a następnie otwórz **okien dialogowych** w  **Przybornik**.
 
     > [!NOTE]
     > **Okien dialogowych** w **przybornika** zawiera składniki, które otwierają wiele przydatnych okien dialogowych, które mogą służyć do otwierania i zapisywania plików, przeglądania folderów i wybierania czcionek i kolorów. Używasz dwóch elementów dialogu w tym projekcie: OpenFileDialog i ColorDialog.

@@ -39,7 +39,7 @@ ms.locfileid: "62548380"
 ---
 # <a name="find-and-replace-text"></a>Znajdowanie i zastępowanie tekstu
 
-Możesz znaleźć i zamienić tekst w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) (**Ctrl**+**F** lub **Ctrl** + **H**) lub [Znajdź/Zamień w plikach](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F**  lub **Ctrl**+**Shift**+**H**). Można również znaleźć i zamienić tylko *niektóre* wystąpień wzorca za pomocą  *[zaznaczenie wielu karetki](#multi-caret-selection)*.
+Możesz znaleźć i zamienić tekst w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) (**Ctrl**+**F** lub **Ctrl** + **H**) lub [Znajdź/Zamień w plikach](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F**  lub **Ctrl**+**Shift**+**H**). Można również znaleźć i zamienić tylko *niektóre* wystąpień wzorca za pomocą  *[zaznaczenie wielu karetki](#multi-caret-selection)* .
 
 > [!TIP]
 > Jeśli zmieniasz kodu symbole, takie jak zmienne i metody, lepiej jest *[zrefaktoryzuj](../ide/reference/rename.md)* ich niż korzystać Znajdź i Zamień. Refaktoryzacja jest inteligentne i określa zakres, Znajdź i Zamień bezrefleksyjne zastępuje wszystkie wystąpienia.
@@ -62,7 +62,7 @@ Możesz ograniczyć wyszukiwanie do bieżącego dokumentu, bieżącego rozwiąza
 
 Dostęp do opcji zastępowania, wybierając przycisk obok **znaleźć** pola tekstowego. Aby wykonywać jedną zamianę naraz, wybierz opcję **Zamień następny** znajdujący się obok **Zastąp** pola tekstowego. Aby zamienić wszystkie dopasowania, wybierz opcję **Zamień wszystkie** przycisku.
 
-Aby zmienić kolor podświetlenia dopasowań, wybierz **narzędzia** menu, wybierz opcję **opcje**, a następnie wybierz **środowiska**i wybierz **czcionki i kolory** . W **Pokaż ustawienia dla** listy wybierz **edytora tekstów**, a następnie w polu **wyświetlania elementów** listy wybierz **Znajdź zaznaczone (rozszerzenie)**.
+Aby zmienić kolor podświetlenia dopasowań, wybierz **narzędzia** menu, wybierz opcję **opcje**, a następnie wybierz **środowiska**i wybierz **czcionki i kolory** . W **Pokaż ustawienia dla** listy wybierz **edytora tekstów**, a następnie w polu **wyświetlania elementów** listy wybierz **Znajdź zaznaczone (rozszerzenie)** .
 
 ### <a name="search-tool-windows"></a>Wyszukiwanie okien
 
@@ -92,7 +92,7 @@ Można zdefiniować zakres wyszukiwania, wybierając **Choose Search Folders** p
 
 ### <a name="create-custom-component-sets"></a>Tworzenie zestawów składników niestandardowych
 
-Można zdefiniować zestawy składników jako zakres wyszukiwania, wybierając **Edit Custom Component Set** znajdujący się obok **przeszukania** pole. Można określić zainstalowane składniki .NET lub COM, projekty programu Visual Studio, które znajdują się w rozwiązaniu lub wszystkie zestawy lub typy biblioteki (*.dll*, *.tlb*, *.olb*, *.exe*, lub *.ocx*). Aby przeszukać odwołania, zaznacz **Szukaj w odwołaniach** pole.
+Można zdefiniować zestawy składników jako zakres wyszukiwania, wybierając **Edit Custom Component Set** znajdujący się obok **przeszukania** pole. Można określić zainstalowane składniki .NET lub COM, projekty programu Visual Studio, które znajdują się w rozwiązaniu lub wszystkie zestawy lub typy biblioteki ( *.dll*, *.tlb*, *.olb*, *.exe*, lub *.ocx*). Aby przeszukać odwołania, zaznacz **Szukaj w odwołaniach** pole.
 
 ## <a name="multi-caret-selection"></a>Wybieranie wielu karetki
 
@@ -121,10 +121,10 @@ Dla zachowania wyboru wielu karetki, należy użyć następujących kluczy i akc
 |**CTRL**+**Alt** + kliknięcie|Dodawanie dodatkowej karetki|
 |**CTRL**+**Alt** i kliknij dwukrotnie ikonę|Dodaj wybrane elementy dodatkowej programu word|
 |**CTRL**+**Alt** kliknij i przeciągnij|Dodaj pomocniczy zaznaczenie|
-|**SHIFT**+**Alt**+**.**|Dodaj następny szukanego tekstu jako zaznaczenia|
-|**CTRL**+**Shift**+**Alt**+**,**|Dodaj wszystkie dopasowania tekstu jako zaznaczenia|
-|**SHIFT**+**Alt**+**,**|Usuń ostatni zaznaczone wystąpienie|
-|**CTRL**+**Shift**+**Alt**+**.**|Pomiń kolejne wystąpienie dopasowania|
+|**SHIFT**+**Alt**+ **.**|Dodaj następny szukanego tekstu jako zaznaczenia|
+|**CTRL**+**Shift**+**Alt**+ **,**|Dodaj wszystkie dopasowania tekstu jako zaznaczenia|
+|**SHIFT**+**Alt**+ **,**|Usuń ostatni zaznaczone wystąpienie|
+|**CTRL**+**Shift**+**Alt**+ **.**|Pomiń kolejne wystąpienie dopasowania|
 |**ALT** + kliknięcie|Dodaj pole wyboru|
 |**ESC** lub kliknij przycisk|Wyczyść wszystkie zaznaczenia|
 

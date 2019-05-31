@@ -33,13 +33,13 @@ Aby uzyskać informacje o sposobie konfigurowania zestawu reguł dla aplikacji s
 
 1. Otwórz **analizy kodu** kartę na stronach właściwości projektu. Można to zrobić na następujące sposoby:
 
-   - W **Eksploratora rozwiązań**, wybierz projekt. Na pasku menu wybierz **analizy** > **Konfigurowanie analizy kodu** > **dla \<nazwa_projektu >**.
+   - W **Eksploratora rozwiązań**, wybierz projekt. Na pasku menu wybierz **analizy** > **Konfigurowanie analizy kodu** > **dla \<nazwa_projektu >** .
 
    - Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**, a następnie wybierz pozycję **analizy kodu** kartę.
 
 1. W **konfiguracji** i **platformy** listy, wybierz platformę konfiguracji i docelowej kompilacji.
 
-1. Aby uruchomić analizę kodu, za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji** pole wyboru. Można również uruchomić analizę kodu ręcznie, wybierając **analizy** > **Uruchom analizę kodu** > **Uruchom analizę kodu dla \<nazwa_projektu >**.
+1. Aby uruchomić analizę kodu, za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji** pole wyboru. Można również uruchomić analizę kodu ręcznie, wybierając **analizy** > **Uruchom analizę kodu** > **Uruchom analizę kodu dla \<nazwa_projektu >** .
 
 1. Domyślnie program analizy kodu nie raportuje ostrzeżenia z kodu, który jest generowany automatycznie przez narzędzia zewnętrzne. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, należy wyczyścić **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
 

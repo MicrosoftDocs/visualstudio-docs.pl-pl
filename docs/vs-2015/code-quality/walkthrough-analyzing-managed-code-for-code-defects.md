@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60116293"
@@ -41,7 +41,7 @@ W tym przewodniku możesz analizować za pomocą narzędzia do analizy kodu zarz
   
 1. Na **pliku** menu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], kliknij przycisk **New** a następnie kliknij przycisk **projektu**.  
   
-2. W **nowy projekt** dialogowego **typów projektów**, kliknij przycisk **Visual C#**.  
+2. W **nowy projekt** dialogowego **typów projektów**, kliknij przycisk **Visual C#** .  
   
 3. W obszarze **szablony**, wybierz opcję **biblioteki klas**.  
   
@@ -149,7 +149,7 @@ W tym przewodniku możesz analizować za pomocą narzędzia do analizy kodu zarz
   
        Wybierz **Podpisz zestaw** pole wyboru.  
   
-       W **wybierz plik klucza o nazwie ciąg** listy wybierz  **\<nowy... >**.  
+       W **wybierz plik klucza o nazwie ciąg** listy wybierz  **\<nowy... >** .  
   
        **Utwórz klucz silnej nazwy** pojawi się okno dialogowe.  
   

@@ -148,7 +148,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
 ## <a name="CommandSet"></a> Zdefiniuj zachowanie polecenia  
- DSL ma już niektóre polecenia, które są implementowane w częściową klasą, która jest zadeklarowana w DslPackage\GeneratedCode\CommandSet.cs. Aby dodać nowe polecenia, można rozszerzyć tę klasę, tworząc nowy plik, który zawiera częściowa deklaracja tego samego rodzaju. Nazwa klasy jest zazwyczaj  *\<YourDslName >*`CommandSet`. Jest to przydatne rozpocząć przez weryfikowanie nazwę klasy i zapoznanie się jego zawartość.  
+ DSL ma już niektóre polecenia, które są implementowane w częściową klasą, która jest zadeklarowana w DslPackage\GeneratedCode\CommandSet.cs. Aby dodać nowe polecenia, można rozszerzyć tę klasę, tworząc nowy plik, który zawiera częściowa deklaracja tego samego rodzaju. Nazwa klasy jest zazwyczaj  *\<YourDslName >* `CommandSet`. Jest to przydatne rozpocząć przez weryfikowanie nazwę klasy i zapoznanie się jego zawartość.  
   
  Polecenie klasę zestawu jest tworzony na podstawie <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
   

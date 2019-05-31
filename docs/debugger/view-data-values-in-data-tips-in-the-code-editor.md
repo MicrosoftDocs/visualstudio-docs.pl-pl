@@ -75,7 +75,7 @@ Aby zamknąć wszystkie etykietki danych, na **debugowania** menu, wybierz opcj�
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Zamknij wszystkie etykietki danych dla określonego pliku
 
-Aby zamknąć wszystkie etykietki danych dla określonego pliku na **debugowania** menu, wybierz opcję **wyczyść wszystkie etykietki danych przypięte do \<nazwa pliku >**.
+Aby zamknąć wszystkie etykietki danych dla określonego pliku na **debugowania** menu, wybierz opcję **wyczyść wszystkie etykietki danych przypięte do \<nazwa pliku >** .
 
 ## <a name="expand-and-edit-information"></a>Rozwiń węzeł i edytować informacje o
 Korzystanie z DataTips, aby rozwinąć tablica, struktury lub obiekt, aby wyświetlić jego składowe. Można również edytować wartość zmiennej w poradzie dotyczącej danych.

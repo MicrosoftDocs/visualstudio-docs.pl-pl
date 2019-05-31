@@ -131,7 +131,7 @@ Usługi języka specyficznego dla domeny (DSL) można rozszerzyć za pomocą Man
   
    - Ten zestaw jest zwykle ma nazwę, która kończy się ". DSL.dll".  
   
-   - Jeśli masz dostęp do projektu DSL, można znaleźć pliku zestawu w katalogu **Dsl\bin\\\\***  
+   - Jeśli masz dostęp do projektu DSL, można znaleźć pliku zestawu w katalogu **Dsl\bin\\\\** *  
   
    - Jeśli masz dostęp do pliku VSIX języka DSL, można znaleźć zestawu, zmieniając rozszerzenie nazwy pliku w pliku VSIX ".zip". Zdekompresuj plik zip.  
   
@@ -147,7 +147,7 @@ Usługi języka specyficznego dla domeny (DSL) można rozszerzyć za pomocą Man
   
    - System.Windows.Forms.dll  
   
-4. Utwórz projekt VSIX w tym samym rozwiązaniu. Aby to zrobić, w **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie wybierz pozycję  **Projekt VSIX**.  
+4. Utwórz projekt VSIX w tym samym rozwiązaniu. Aby to zrobić, w **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** , kliknij przycisk **rozszerzalności**, a następnie wybierz pozycję  **Projekt VSIX**.  
   
 5. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt VSIX, a następnie kliknij przycisk **Ustaw jako projekt startowy**.  
   

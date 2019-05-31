@@ -32,7 +32,7 @@ Jeśli nie masz zainstalowanego programu Visual Studio, można zapobiec debugowa
 
 - Jeśli próbujesz uruchomić aplikację sieci web, Wyłącz debugowanie skryptu:
 
-  W Windows **Panelu sterowania** > **sieć i Internet** > **Opcje internetowe**, wybierz opcję **Wyłącz skryptu (debugowania Internet Explorer)** i **Wyłącz debugowanie skryptu (inne)**. Ustawienia i konkretne kroki zależą od używanej wersji systemu Windows i przeglądarki.
+  W Windows **Panelu sterowania** > **sieć i Internet** > **Opcje internetowe**, wybierz opcję **Wyłącz skryptu (debugowania Internet Explorer)** i **Wyłącz debugowanie skryptu (inne)** . Ustawienia i konkretne kroki zależą od używanej wersji systemu Windows i przeglądarki.
 
   ![Opcje internetowe JIT](../debugger/media/jitinternetoptions.png "Opcje internetowe JIT")
 

@@ -139,7 +139,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
 
 - Aby zmienić ścieżki wyszukiwania, wybierz niezaznaczoną ścieżkę lub wybierz **New** i wprowadź nową ścieżkę. Wybierz **obciążenia** wyszukać ponownie ścieżki i załadować plik symbolu, jeśli zostanie znaleziony.
 
-- Wybierz **Przeglądaj i Przeszukuj**_nazwę pliku wykonywalnego_**...**  zastąpić wszelkie opcje symbolu i ponów próbę ścieżki wyszukiwania. Plik symboli jest ładowany, jeśli zostanie odnaleziony, lub wyświetlany jest Eksplorator plików, aby użytkownik mógł ręczne wybrać plik symboli.
+- Wybierz **Przeglądaj i Przeszukuj**_nazwę pliku wykonywalnego_ **...**  zastąpić wszelkie opcje symbolu i ponów próbę ścieżki wyszukiwania. Plik symboli jest ładowany, jeśli zostanie odnaleziony, lub wyświetlany jest Eksplorator plików, aby użytkownik mógł ręczne wybrać plik symboli.
 
 - Wybierz **Zmień ustawienia symboli...**  do wyświetlenia **debugowanie** / **symbole** strony okna dialogowego VS opcje.
 

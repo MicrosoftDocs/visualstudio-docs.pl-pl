@@ -47,7 +47,7 @@ W tym temacie opisano sposób użycia **Edytor warunku reguły** okno dialogowe 
 |**OK**|Kliknij, aby zapisać warunek reguły.|  
   
 ## <a name="entering-condition-expressions"></a>Wprowadzanie wyrażenia warunku  
- Warunek wyrażenia są wprowadzane jako tekst. Możesz wpisać **to.** do edytora, aby odwoływać się do pola, właściwości i metody używane w przepływie pracy przy użyciu menu podobne do funkcji IntelliSense. Lub możesz bezpośrednio wpisać nazwę elementu członkowskiego przepływu pracy. Operatory logiczne można dodać do warunku, takich jak AND, OR i NOT. Można również dodać predykatów. Predykat jest operator binarny i dwóch argumentów operacji. Operatory dwuargumentowe, obsługiwane są **==**, **>**, **\<**, **>=**, i **<=**. Obsługiwane argumenty operacji są wartości stałej, funkcja arytmetyczne i zakresie publiczne elementy członkowskie.  
+ Warunek wyrażenia są wprowadzane jako tekst. Możesz wpisać **to.** do edytora, aby odwoływać się do pola, właściwości i metody używane w przepływie pracy przy użyciu menu podobne do funkcji IntelliSense. Lub możesz bezpośrednio wpisać nazwę elementu członkowskiego przepływu pracy. Operatory logiczne można dodać do warunku, takich jak AND, OR i NOT. Można również dodać predykatów. Predykat jest operator binarny i dwóch argumentów operacji. Operatory dwuargumentowe, obsługiwane są **==** , **>** , **\<** , **>=** , i **<=** . Obsługiwane argumenty operacji są wartości stałej, funkcja arytmetyczne i zakresie publiczne elementy członkowskie.  
   
  Można określić typ porównania i możesz porównać **null** ani być pustym ciągiem. Można wprowadzić zagnieżdżone wywołania do elementów członkowskich na zmienną, która zawiera typ złożony, na przykład `this.Address.State == "WA"`.  
   

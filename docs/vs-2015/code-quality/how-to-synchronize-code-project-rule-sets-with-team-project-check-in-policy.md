@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082051"
@@ -47,7 +47,7 @@ Ustawienia analizy kodu dla projektów kodu zasad ewidencjonowania dla projektu 
   
 3. Kliknij przycisk **analiza kodu**.  
   
-4. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.  
+4. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >** .  
   
 5. W **Otwórz** okna dialogowego wprowadź plik zestawu reguł zasad ewidencjonowania.  
   
@@ -65,6 +65,6 @@ Ustawienia analizy kodu dla projektów kodu zasad ewidencjonowania dla projektu 
   
 5. Otwórz okno dialogowe właściwości dla projektu kodu, a następnie wyświetlić **analizy kodu** strony.  
   
-6. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.  
+6. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >** .  
   
 7. W **Otwórz** okna dialogowego wprowadź plik zestawu reguł.

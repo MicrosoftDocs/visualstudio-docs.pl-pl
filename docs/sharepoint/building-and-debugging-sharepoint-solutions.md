@@ -24,11 +24,11 @@ ms.locfileid: "62988138"
   Ogólnie rzecz biorąc, kompilowania i debugowania rozwiązań programu SharePoint jest taka sama jak kompilowania i debugowania innych rodzajów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. W tematach w tej sekcji opisano różnice, które istnieją.
 
 ## <a name="project-output-for-sharepoint-solutions"></a>Dane wyjściowe projektu dla rozwiązań SharePoint
- Tworzenie rozwiązań programu SharePoint tworzy zestawów i pakietów rozwiązań (*.wsp*) pliku. W poniższej tabeli przedstawiono lokalizacje tych plików podczas kompilacji.
+ Tworzenie rozwiązań programu SharePoint tworzy zestawów i pakietów rozwiązań ( *.wsp*) pliku. W poniższej tabeli przedstawiono lokalizacje tych plików podczas kompilacji.
 
 |Tworzenie elementu|Folder wyjściowy|
 |----------------|-------------------|
-|Zestaw, bazy danych programu (*.pdb*), a *.wsp* plików.|*\<Nazwa_projektu > \bin\debug* lub  *\<nazwa_projektu > \bin\release*|
+|Zestaw, bazy danych programu ( *.pdb*), a *.wsp* plików.|*\<Nazwa_projektu > \bin\debug* lub  *\<nazwa_projektu > \bin\release*|
 |Plików elementów projektów programu SharePoint.|*\<Nazwa_projektu > \pkg\debug* lub  *\<nazwa_projektu > \pkg\release*|
 |Pośrednie pliki kompilacji.|*\<Nazwa_projektu > \obj\debug* lub  *\<nazwa_projektu > \obj\release*|
 |Pośrednie pliki pakietu.|*\<Nazwa_projektu > \pkgobj\debug* lub  *\<nazwa_projektu > \pkgobj\release*|

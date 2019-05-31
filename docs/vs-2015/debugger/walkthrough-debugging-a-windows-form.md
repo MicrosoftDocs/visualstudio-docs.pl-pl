@@ -53,7 +53,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
   
      **Nowy projekt** pojawi się okno dialogowe.  
   
-2. W okienku typów projektów, otwórz **języka Visual Basic**, **Visual C#**, lub **Visual C++** węzła, a następnie  
+2. W okienku typów projektów, otwórz **języka Visual Basic**, **Visual C#** , lub **Visual C++** węzła, a następnie  
   
     1. W języku Visual Basic lub Visual C#, wybierz **Windows** węzła, następnie wybierz pozycję **aplikacja formularza Windows** w **szablony** okienka.  
   

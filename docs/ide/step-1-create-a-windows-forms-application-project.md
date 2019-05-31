@@ -35,7 +35,7 @@ Kiedy tworzysz przeglądarki obrazów, pierwszym krokiem jest utworzenie projekt
 
 2. Wybierz opcję **Visual C#**  lub **języka Visual Basic** w lewej części **nowy projekt** okno dialogowe.
 
-3. Na liście szablonów wybierz **aplikacji programu Windows Forms (.NET Framework)**. Nazwij nowy formularz **PictureViewer**, a następnie wybierz **OK** przycisku.
+3. Na liście szablonów wybierz **aplikacji programu Windows Forms (.NET Framework)** . Nazwij nowy formularz **PictureViewer**, a następnie wybierz **OK** przycisku.
 
     >[!NOTE]
     >Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.<br/><br/>![Obciążenie programowanie aplikacji klasycznych dla platformy .NET w Instalatorze programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz [Zainstaluj program Visual Studio](../install/install-visual-studio.md) strony.
@@ -96,7 +96,7 @@ Program Visual Studio tworzy rozwiązanie dla Twojego programu. To rozwiązanie 
     - **Okno właściwości** w tym oknie można zmienić właściwości elementów, które wybrano w innych oknach. Na przykład, jeśli wybierzesz Form1, możesz zmienić jego tytuł przez ustawienie **tekstu** właściwości, na które można zmienić kolor tła, ustawiając **Backcolor** właściwości.
 
     > [!NOTE]
-    > W pierwszym wierszu **Eksploratora rozwiązań** pokazuje **rozwiązanie "PictureViewer" (1 projekt)**, co oznacza, że tworzone rozwiązanie programu Visual Studio. To rozwiązanie może zawierać więcej niż jeden projekt, ale na razie będziesz pracować z rozwiązaniami, które zawierają tylko jeden projekt.
+    > W pierwszym wierszu **Eksploratora rozwiązań** pokazuje **rozwiązanie "PictureViewer" (1 projekt)** , co oznacza, że tworzone rozwiązanie programu Visual Studio. To rozwiązanie może zawierać więcej niż jeden projekt, ale na razie będziesz pracować z rozwiązaniami, które zawierają tylko jeden projekt.
 
 1. Na pasku menu wybierz **pliku** > **Zapisz wszystko**.
 

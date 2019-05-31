@@ -46,7 +46,7 @@ Można zmienić przestrzeni nazw języka specyficznego dla domeny. Wprowadź zmi
 
 10. Zresetuj wystąpienie eksperymentalne programu Visual Studio.
 
-    1. Usuń **\Users\\**_{name}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
+    1. Usuń **\Users\\** _{name}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
 
     2. Na Windows **Start** menu, wybierz **wszystkie programy** > **Microsoft Visual Studio 2010 SDK** > **narzędzia**  >  **Zresetuj wystąpienie eksperymentalne**.
 

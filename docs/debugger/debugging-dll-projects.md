@@ -76,7 +76,7 @@ Dla projektów C/C++ można ustawić nagłówek i lokalizacje plików LIB na str
 
 1. W górnej części **właściwości** okienku w obszarze **konfiguracji**, wybierz opcję **wszystkie konfiguracje**.
 
-1. W obszarze **C/C++** > **ogólne** > **dodatkowe katalogi dołączenia**, określ folder zawierający pliki nagłówków.
+1. W obszarze **C/C++**  > **ogólne** > **dodatkowe katalogi dołączenia**, określ folder zawierający pliki nagłówków.
 
 1. W obszarze **konsolidatora** > **ogólne** > **dodatkowe katalogi bibliotek**, określ folder zawierający pliki LIB.
 

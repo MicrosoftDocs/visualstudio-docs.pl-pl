@@ -129,7 +129,7 @@ Jeśli masz dostęp do utworzonych przez siebie lub kogoś innego DSL włączone
 
    - Ten zestaw jest zwykle ma nazwę, która kończy się ". DSL.dll".
 
-   - Jeśli masz dostęp do projektu DSL, można znaleźć pliku zestawu w katalogu **Dsl\bin\\\\***
+   - Jeśli masz dostęp do projektu DSL, można znaleźć pliku zestawu w katalogu **Dsl\bin\\\\** *
 
    - Jeśli masz dostęp do pliku VSIX języka DSL, można znaleźć zestawu, zmieniając rozszerzenie nazwy pliku w pliku VSIX ".zip". Zdekompresuj plik zip.
 

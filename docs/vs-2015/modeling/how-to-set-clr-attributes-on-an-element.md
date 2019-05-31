@@ -29,7 +29,7 @@ Atrybuty niestandardowe są specjalne atrybuty, które mogą być dodawane do el
   
 1. W **Eksplorator DSL**, wybierz element, do którego chcesz dodać atrybut niestandardowy.  
   
-2. W **właściwości** okna, obok **atrybuty niestandardowe** właściwości, kliknij przycisk Przeglądaj (**...** ) ikona.  
+2. W **właściwości** okna, obok **atrybuty niestandardowe** właściwości, kliknij przycisk Przeglądaj ( **...** ) ikona.  
   
      **Edycja atrybutów** zostanie otwarte okno dialogowe.  
   

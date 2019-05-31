@@ -36,7 +36,7 @@ ms.locfileid: "63447014"
 
  Lokalizacja folderu publikowania jest to katalog, do którego program Visual Studio kopiuje pliki rozwiązania, takie jak manifestów, zespoły i innych plików z kompilacji. Musi mieć dostęp do zapisu do tego katalogu.
 
- Opcje obejmują komputera lokalnego, UNC udziału plików lub witryny sieci web HTTP/HTTPS. Ścieżka może być lokalny (*c:\foldername\publishfolder*) względnych (*publikowania\\*), lub w pełni kwalifikowanej lokalizacji (*\\\servername\foldername* lub http://<em>servername/foldername</em>).
+ Opcje obejmują komputera lokalnego, UNC udziału plików lub witryny sieci web HTTP/HTTPS. Ścieżka może być lokalny (*c:\foldername\publishfolder*) względnych (*publikowania\\* ), lub w pełni kwalifikowanej lokalizacji ( *\\\servername\foldername* lub http://<em>servername/foldername</em>).
 
  Domyślnie jest lokalizacja publikowania *http://localhost/projectname/* Jeśli usługi IIS są zainstalowane, lub *publikowania\\*  katalogu, jeśli nie masz zainstalowane usługi IIS.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63447014"
 
  Adres URL folderu instalacyjnego jest to katalog, z którego użytkownik zainstaluje dostosowania. Należy również ścieżki, który rozwiązanie będzie używany do sprawdzenia aktualizacji. Ścieżka może być taka sama jak lokalizacja folderu publikowania, ale nie jest wymagane.
 
- Opcje obejmują komputera lokalnego, UNC udziału plików lub witryny sieci web HTTP/HTTPS. Ścieżka może być lokalny (*c:\foldername\publishfolder*) względnych (*publikowania\\*), lub w pełni kwalifikowanej lokalizacji (*\\\servername\foldername* lub http://<em>servername/foldername</em>). Wszystkie lokalizacje HTTP/HTTPS musi zostać utworzona z znaki US-ASCII. Znaki Unicode nie są obsługiwane.
+ Opcje obejmują komputera lokalnego, UNC udziału plików lub witryny sieci web HTTP/HTTPS. Ścieżka może być lokalny (*c:\foldername\publishfolder*) względnych (*publikowania\\* ), lub w pełni kwalifikowanej lokalizacji ( *\\\servername\foldername* lub http://<em>servername/foldername</em>). Wszystkie lokalizacje HTTP/HTTPS musi zostać utworzona z znaki US-ASCII. Znaki Unicode nie są obsługiwane.
 
  Jeśli ścieżka instalacji jest ustawiona, pliki dostosowania musi być w tej lokalizacji, użytkownicy mogą zainstalować dostosowania. Lokalizacja powinna być ustawiona tylko wtedy, gdy znasz lokalizacji końcowej wdrożenia.
 

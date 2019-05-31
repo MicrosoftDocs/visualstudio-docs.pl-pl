@@ -45,7 +45,7 @@ Aby włączyć ustawienia niestandardowe i wyłączonym, usuń zaznaczenie lub z
 
 ### <a name="specify-symbol-search-paths"></a>Określ ścieżki wyszukiwania symboli
 
-Pokrycie kodu wymaga plików symboli (*.pdb* plików) dla zestawów. Dla zestawów zbudowanych według rozwiązania pliki symboli są zwykle obecne obok plików binarnych, a pokrycie kodu działa automatycznie. Jednak w niektórych przypadkach można chcieć dołączyć odwołania do zestawów do analizy pokrycia kodu. W takich przypadkach *.pdb* plików mogą nie być w przylegającymi do plików binarnych ale można określić ścieżkę wyszukiwania symbolu w *.runsettings* pliku.
+Pokrycie kodu wymaga plików symboli ( *.pdb* plików) dla zestawów. Dla zestawów zbudowanych według rozwiązania pliki symboli są zwykle obecne obok plików binarnych, a pokrycie kodu działa automatycznie. Jednak w niektórych przypadkach można chcieć dołączyć odwołania do zestawów do analizy pokrycia kodu. W takich przypadkach *.pdb* plików mogą nie być w przylegającymi do plików binarnych ale można określić ścieżkę wyszukiwania symbolu w *.runsettings* pliku.
 
 ```xml
 <SymbolSearchPaths>
@@ -55,7 +55,7 @@ Pokrycie kodu wymaga plików symboli (*.pdb* plików) dla zestawów. Dla zestaw�
 ```
 
 > [!NOTE]
-> Rozpoznawanie symboli może potrwać, szczególnie przy używaniu zdalnej lokalizacji pliku za pomocą wielu zestawów. W związku z tym, należy wziąć pod uwagę kopiowanie *.pdb* pliki do tej samej lokalizacji lokalnej co plik binarny (*.dll* i *.exe*) plików.
+> Rozpoznawanie symboli może potrwać, szczególnie przy używaniu zdalnej lokalizacji pliku za pomocą wielu zestawów. W związku z tym, należy wziąć pod uwagę kopiowanie *.pdb* pliki do tej samej lokalizacji lokalnej co plik binarny ( *.dll* i *.exe*) plików.
 
 ### <a name="exclude-and-include"></a>Dołączanie i wykluczanie
 

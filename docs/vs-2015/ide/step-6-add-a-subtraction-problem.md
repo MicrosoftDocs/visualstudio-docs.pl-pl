@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60064223"
@@ -55,7 +55,7 @@ W szóstej części tego samouczka dodasz problem odejmowania i Dowiedz się, ja
      ![Etykietka narzędzia okna technologii IntelliSense](../ide/media/express-overloads.png "Express_Overloads")  
 Etykietka narzędzia okna technologii IntelliSense  
   
-     Etykietka narzędzia pokazuje **(+ 2 overload(s))**, co oznacza, że można wywołać `Next()` metody na dwa inne sposoby. Przeciążenia zawierają różną liczbę lub typy argumentów, tak że każde działa nieco inaczej od siebie nawzajem. Na przykład metoda może przyjmować jeden argument, jeden z jej przeciążeń może stać się liczba całkowita i ciąg. Możesz wybrać poprawne przeciążenie oparte na co chcesz zrobić. Po dodaniu kod, aby `StartTheQuiz()` metody, więcej informacji znajduje się w oknie technologii Intellisense zaraz po wprowadzeniu `randomizer.Next(`. Wybierz klawisze strzałki w górę i Strzałka w dół, aby przechodzić między przeciążeniami, jak pokazano na następującym rysunku.  
+     Etykietka narzędzia pokazuje **(+ 2 overload(s))** , co oznacza, że można wywołać `Next()` metody na dwa inne sposoby. Przeciążenia zawierają różną liczbę lub typy argumentów, tak że każde działa nieco inaczej od siebie nawzajem. Na przykład metoda może przyjmować jeden argument, jeden z jej przeciążeń może stać się liczba całkowita i ciąg. Możesz wybrać poprawne przeciążenie oparte na co chcesz zrobić. Po dodaniu kod, aby `StartTheQuiz()` metody, więcej informacji znajduje się w oknie technologii Intellisense zaraz po wprowadzeniu `randomizer.Next(`. Wybierz klawisze strzałki w górę i Strzałka w dół, aby przechodzić między przeciążeniami, jak pokazano na następującym rysunku.  
   
      ![Przeciążenie dla następnego&#40; &#41; metody w technologii IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload")  
 Przeciążenie dla metody Next() w technologii IntelliSense  
