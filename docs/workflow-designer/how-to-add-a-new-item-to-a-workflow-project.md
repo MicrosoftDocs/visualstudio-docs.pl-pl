@@ -1,5 +1,5 @@
 ---
-title: 'Projektant przepływu pracy — jak: Dodawanie nowego elementu do projektu przepływu pracy'
+title: 'Projektant przepływu pracy: Dodaj nowy element do projektu przepływu pracy'
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0fb6c013e3df041e750344c09fb19f8c43b254
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29e4c03eef2a276995890bbd6b723fa457aefde2
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536981"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432037"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Instrukcje: Dodaj nowy element do projektu przepływu pracy
 

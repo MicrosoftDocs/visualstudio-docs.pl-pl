@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26433d62a68b28450a56eee1282376733acfe55c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f0eb7cab3b1bc764f663cd647811928510281e8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838805"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432013"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -44,6 +44,8 @@ devenv /Edit [File1[ FileN]...]
 Jeśli plik nie jest określona, istniejącego wystąpienia programu Visual Studio zostanie ustawiony fokus. Jeśli jest określony plik nie istnieje żadne wystąpienie programu Visual Studio, narzędziu tworzy wystąpienie o uproszczonym układzie okna.
 
 Jeśli stan modalny istniejącego wystąpienia programu Visual Studio, plik zostanie otwarty w istniejącym wystąpieniu gdy program Visual Studio kończy stan modalny. Na przykład, ta sytuacja może wystąpić podczas [okno dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md) jest otwarty.
+
+Jeśli więcej niż jedno wystąpienie programu Visual Studio jest otwarty, plik jest otwarty w ostatnio otwieranych wystąpienia.
 
 ## <a name="example"></a>Przykład
 

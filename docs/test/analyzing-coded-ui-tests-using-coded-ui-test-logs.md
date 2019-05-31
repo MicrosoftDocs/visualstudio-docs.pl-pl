@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822742"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432311"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizowanie coded UI kodowanych testów przy użyciu dzienników testu interfejsu użytkownika
 
@@ -24,23 +24,23 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
 
 Zależnie od scenariusza należy użyć jednej z następujących metod Aby włączyć dziennik:
 
-- Docelowy .NET Framework w wersji 4, na których nie *App.config* plik istnieje w projekcie testu:
+- Jeśli ma nie *App.config* plik istnieje w projekcie testu:
 
-   1. Otwórz *QTAgent32_40.exe.config* pliku. Domyślnie ten plik znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Określenie *QTAgent\*.exe* proces nie jest uruchamiany po uruchomieniu testu. Jednym ze sposobów, aby zrobić to jest, aby obejrzeć **szczegóły** kartę w Windows **Menedżera zadań**.
+   
+   2. Otwórz odpowiedni *.config* plik wchodzącej w skład *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<wersji >\\\<edition > \Common7\IDE* folderu. Na przykład, jeśli proces działa jest *QTAgent_40.exe*, otwórz *QTAgent_40.exe.config*.
 
-   2. Na poziom dziennika, który ma, należy zmodyfikować wartość EqtTraceLevel.
+   2. Zmodyfikuj wartość **EqtTraceLevel** na poziom dziennika, które chcesz.
+   
+      ```xml
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
+      ```
 
    3. Zapisz plik.
 
-- Docelowy .NET Framework w wersji 4.5 bez *App.config* plik istnieje w projekcie testu:
-
-   1. Otwórz *QTAgent32.exe.config* pliku. Domyślnie ten plik znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. Zmień wartość EqtTraceLevel na poziom dziennika, który ma.
-
-   3. Zapisz plik.
-
-- *App.config* plik znajduje się w projekcie testu:
+- W przypadku *App.config* plik istnieje w projekcie testu:
 
     - Otwórz *App.config* plik w projekcie, a następnie dodaj następujący kod w węźle Konfiguracja:
 
@@ -54,11 +54,13 @@ Zależnie od scenariusza należy użyć jednej z następujących metod Aby włą
 
 - Włączanie rejestrowania z sam kod testu:
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2. Uruchom kodowany test interfejsu użytkownika, aby wyświetlić dziennik
 
-Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do *QTAgent32.exe.config* pliku w miejscu, zobacz dane wyjściowe link **Eksploratora testów** wyników. Pliki dziennika są tworzone, nie tylko w przypadku, gdy test zakończy się niepowodzeniem, ale także w przypadku udanych testów, gdy poziom śledzenia jest ustawiona na "pełne."
+Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do *QTAgent\*. exe.config* pliku w miejscu, zobacz dane wyjściowe link **Eksploratora testów** wyników. Pliki dziennika są tworzone, nie tylko w przypadku, gdy test kończy się niepowodzeniem ale także w przypadku udanych testów podczas poziom śledzenia jest równa **pełne**.
 
 1. Na **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.
 

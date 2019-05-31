@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b81d6be4ebb7e210efc2034f43fc9a91ec1844e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: a2a2b4a8c747595a0aa1e0f3499b8d24b0b0d301
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402061"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432260"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -170,11 +170,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.FindPreviousSelected|**Ctrl + Shift + F3**|
 |Edit.GenerateMethod|**CTRL + K, Ctrl + M**|
 |Edit.GoTo|**CTRL + G**|
+|Edit.GoToAll|**CTRL +** lub **klawisze Ctrl + T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**CTRL + D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**SHIFT + F8**|
+|Edit.GoToMember|**CTRL + 1, Ctrl + M** lub **Ctrl + M 1,** lub **Alt +\\**|
+|Edit.GoToNextLocation|**F8** (następny błąd w oknie Lista błędów lub danych wyjściowych)|
+|Edit.GoToPrevLocation|**SHIFT + F8** (poprzedni błąd w oknie Lista błędów lub danych wyjściowych)|
 |Edit.InsertSnippet|**CTRL + K, Ctrl + X**|
 |Edit.MoveControlDown|**CTRL + Strzałka w dół**|
 |Edit.MoveControlDownGrid|**Strzałka w dół**|
@@ -184,7 +186,6 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.MoveControlRightGrid|**Strzałka w prawo**|
 |Edit.MoveControlUp|**CTRL + Strzałka w górę**|
 |Edit.MoveControlUpGrid|**Strzałka w górę**|
-|Edit.NavigateTo|**CTRL +**|
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl + Shift + G** (otwiera nazwę pliku, w obszarze kursora)|
@@ -346,7 +347,6 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Tools.AttachtoProcess|**Ctrl + Alt + P**|
 |Tools.CodeSnippetsManager|**CTRL + K, Ctrl + B**|
 |Tools.ForceGC|**Ctrl + Shift + Alt + F12, Ctrl + Shift + Alt + F12**|
-|Tools.GoToCommandLine|**CTRL +/**|
 
 ### <a name="bkmk_view"></a> Widok
 
@@ -354,7 +354,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |--------------| - |
 |View.AllWindows|**Shift + Alt + M**|
 |View.ArchitectureExplorer|**CTRL +\\, Ctrl + R**|
-|View.Backward|**Alt + Strzałka w lewo**|
+|View.Backward|**Alt + Strzałka w lewo** (funkcje inaczej niż w edytorze tekstu View.NavigateBackward)|
 |View.BookmarkWindow|**CTRL + K, Ctrl + W**|
 |View.BrowseNext|**Ctrl + Shift + 1**|
 |View.BrowsePrevious|**Ctrl + Shift + 2**|
@@ -369,7 +369,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.ErrorList|**CTRL +\\, E**<br /><br /> lub<br /><br /> **CTRL +\\, Ctrl + E**|
 |View.F#Interactive|**Ctrl + Alt + F**|
 |View.FindSymbolResults|**Ctrl + Alt + F12**|
-|View.Forward|**Alt + Strzałka w prawo**|
+|View.Forward|**Alt + Strzałka w prawo** (funkcje inaczej niż w edytorze tekstu View.NavigateForward)|
 |View.ForwardBrowseContext|**Ctrl + Shift + 7**|
 |View.FullScreen|**Shift + Alt + Enter**|
 |View.NavigateBackward|**CTRL +-**|
@@ -779,7 +779,6 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 | Edit.CharRight | **Strzałka w prawo** |
 | Edit.CharRightExtend | **Shift + Strzałka w prawo** |
 | Edit.CharRightExtendColumn | **Strzałka Shift + Alt + Strzałka w prawo** |
-| Edit.CharTranspose | **Ctrl+T** |
 | Edit.ClearBookmarks | **CTRL + K, Ctrl + L** |
 | Edit.CollapseAllOutlining | **CTRL + M, Ctrl + A** |
 | Edit.CollapseCurrentRegion | **CTRL + M, Ctrl + S** |

@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548956"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432274"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Dostosowywanie zagnieżdżania plików w Eksploratorze rozwiązań
+# <a name="file-nesting-in-solution-explorer"></a>Zagnieżdżanie plików w Eksploratorze rozwiązań
 
-Zagnieżdżanie plików powiązanych z **Eksploratora rozwiązań** nie jest nowy, do czasu, ale teraz masz żadnej kontroli nad tym zagnieżdżenia reguły. Możesz wybrać ustawienia wstępne **wyłączone**, **domyślne** i **sieci Web**, ale można również dostosować zagnieżdżania dokładnie do swoich potrzeb. Możesz nawet utworzyć specyficznych dla rozwiązania i ustawienia specyficzne dla projektu, ale więcej informacji na temat wszystkich później. Najpierw Zajmijmy co można uzyskać, out-of--box.
+**Eksplorator rozwiązań** zagnieżdża instrukcje dotyczące plików, które ułatwia organizowanie ich i ułatwić ich do zlokalizowania. Na przykład jeśli dodasz formularzy Windows Forms do projektu pliku kodu formularza jest zagnieżdżona poniżej formularza w **Eksploratora rozwiązań**. W projektach ASP.NET Core zagnieżdżanie plików mogą być podejmowane krok dalej. Możesz wybrać ustawienia zagnieżdżania plików **poza**, **domyślne**, i **Web**. Możesz również [dostosować, jak zagnieżdżone pliki](#customize-file-nesting) lub [tworzenia ustawień specyficznych dla rozwiązania i specyficznych dla projektu](#create-project-specific-settings).
 
 > [!NOTE]
 > Ta funkcja jest obecnie obsługiwana tylko w przypadku projektów ASP.NET Core.
@@ -128,7 +128,7 @@ Możesz określić wszystkie ustawienia, w tym własne niestandardowe ustawienia
 
 ![Aktywuj niestandardowego pliku reguły zagnieżdżania](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Tworzenie ustawień specyficznych dla rozwiązania i specyficznych dla projektu
+## <a name="create-project-specific-settings"></a>Utwórz ustawienia specyficzne dla projektu
 
 Można utworzyć ustawień specyficznych dla rozwiązania i specyficznych dla projektu za pomocą menu kliknij prawym przyciskiem myszy (menu kontekstowe) każdego rozwiązania i projektu:
 
@@ -142,7 +142,7 @@ Można zrobić przeciwieństwo i przekaż programowi Visual Studio do *tylko* u�
 
 Ustawienia specyficzne dla rozwiązania i specyficznych dla projektu może zostać sprawdzone w kontroli źródła i całego zespołu działa na bazie kodu można udostępniać je.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Wyłączanie reguły zagnieżdżenia globalnego pliku dla danego rozwiązania lub projektu
+## <a name="disable-file-nesting-rules-for-a-project"></a>Wyłączanie reguł zagnieżdżania plików dla projektu
 
 Istniejące reguły zagnieżdżenia pliku globalnego dla określonych rozwiązań lub projektów, można wyłączyć za pomocą **Usuń** akcji dla dostawcy zamiast **Dodaj**. Na przykład jeśli dodasz następujący kod ustawień do projektu wszystkie **pathSegment** reguły, które mogą występować globalnie dla tego określonego projektu są wyłączone:
 
@@ -157,3 +157,4 @@ Istniejące reguły zagnieżdżenia pliku globalnego dla określonych rozwiąza�
 ## <a name="see-also"></a>Zobacz także
 
 - [Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Rozwiązania i projekty w programie Visual Studio](solutions-and-projects-in-visual-studio.md)

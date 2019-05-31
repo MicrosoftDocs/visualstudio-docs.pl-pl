@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854155"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432219"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Rejestrowanie i powtarzanie na żywo aplikacji ASP.NET na maszynach wirtualnych platformy Azure przy użyciu rozszerzenia Snapshot Debugger
 
@@ -44,7 +44,7 @@ W tym samouczku wykonasz następujące czynności:
 * Debugowanie w czasie podróży jest dostępna dla następujących aplikacji sieci web maszyny Wirtualnej platformy Azure:
   * Aplikacje ASP.NET (AMD64) działające w programie .NET Framework 4.8 lub nowszym.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Otwórz swój projekt i uruchomić rozszerzenia Snapshot Debugger z włączonym debugowaniem podróży czasu
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Uruchom rozszerzenie Snapshot Debugger z włączonym debugowaniem podróży czasu
 
 1. Otwórz projekt, dla której chcesz zbierać czas podróży rejestrowania.
 

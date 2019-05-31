@@ -1,5 +1,5 @@
 ---
-title: 'Projektant przepływu pracy — jak: Definiowanie i stosowanie delegowania działania'
+title: 'Projektant przepływu pracy: Definiowanie i stosowanie delegowania działania'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949525"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431794"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Instrukcje: Definiowanie i stosowanie delegowania działania w Projektancie przepływu pracy
 
@@ -34,7 +34,7 @@ ms.locfileid: "62949525"
 
 5. Kliknij przycisk **utworzenia argumentu**. Nazwij nowy argument **elementów**.
 
-6. W **typ argumentu** kolumny wybierz **tablica [T]**.
+6. W **typ argumentu** kolumny wybierz **tablica [T]** .
 
 7. W przeglądarce typu wybierz **obiektu** , a następnie wybierz **OK**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949525"
 
 14. W **typ zmiennej** kolumny wybierz **Int32**. Pozostaw **zakres** jako **podczas**i **domyślne** puste kolumny.
 
-15. Ustaw **warunek** właściwość <xref:System.Activities.Statements.While> działanie **indeks < Items.Length;**.
+15. Ustaw **warunek** właściwość <xref:System.Activities.Statements.While> działanie **indeks < Items.Length;** .
 
 16. Przeciągnij <xref:System.Activities.Statements.InvokeDelegate> działanie z **podstawowych** sekcji przybornika, aby **treści** z <xref:System.Activities.Statements.While> działania.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949525"
 
 18. W **właściwości** siatkę <xref:System.Activities.Statements.InvokeDelegate> działania, kliknij przycisk **...**  znajdujący się w **argumenty delegata** właściwości.
 
-19. W **wartość** kolumny argument o nazwie **Argument**, wprowadź **elementów [Index]**. Kliknij przycisk **Ok** zamknąć **DelegateArguments** okna dialogowego.
+19. W **wartość** kolumny argument o nazwie **Argument**, wprowadź **elementów [Index]** . Kliknij przycisk **Ok** zamknąć **DelegateArguments** okna dialogowego.
 
 20. Przeciągnij <xref:System.Activities.Statements.Assign> działania na linii poziomej poniżej <xref:System.Activities.Statements.InvokeDelegate> działania. <xref:System.Activities.Statements.Assign> Tworzenia działania i <xref:System.Activities.Statements.Sequence> działania jest tworzona automatycznie zawiera dwa działania w **treści** części **MyForEach** działania. Sekwencja jest konieczne, ponieważ **treści** sekcji może zawierać tylko jedno działanie. Automatyczne utworzenie nowego <xref:System.Activities.Statements.Sequence> działania to nowa funkcja programu .NET Framework 4.5.
 
@@ -76,11 +76,11 @@ ms.locfileid: "62949525"
 
 3. Przeciągnij **MyForEach** działania z przybornika do powierzchni projektanta. Działanie znajduje się w sekcji przybornika z taką samą nazwę jak projektu.
 
-4. Ustaw **elementów** właściwość **MyForEach** działanie **nowy obiekt [] {1, "abc"}**.
+4. Ustaw **elementów** właściwość **MyForEach** działanie **nowy obiekt [] {1, "abc"}** .
 
 5. Przeciągnij <xref:System.Activities.Statements.WriteLine> działanie z **podstawowych** sekcji przybornika, aby **delegata: treść** części **MyForEach** działania.
 
-6. Ustaw **tekstu** właściwość <xref:System.Activities.Statements.WriteLine> działanie **Argument.ToString()**.
+6. Ustaw **tekstu** właściwość <xref:System.Activities.Statements.WriteLine> działanie **Argument.ToString()** .
 
 Gdy przepływ pracy ma miejsce, w konsoli wyświetlone zostaną następujące dane wyjściowe:
 

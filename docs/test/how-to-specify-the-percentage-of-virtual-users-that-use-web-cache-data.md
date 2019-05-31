@@ -1,5 +1,5 @@
 ---
-title: Określ wartości procentowej użytkowników wirtualnych danych pamięci podręcznej sieci Web użycie dla testów obciążenia
+title: 'Test obciążeniowy: Ustawić procent wirtualnych użytkowników przy użyciu danych z pamięci podręcznej sieci web'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,12 @@ ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08f0bb9fb14c631f3bf1e5545a69663eb060e3e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f436573712ff228244a40e5199f2f5a4b4326c5e
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821146"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431868"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Instrukcje: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci web
 

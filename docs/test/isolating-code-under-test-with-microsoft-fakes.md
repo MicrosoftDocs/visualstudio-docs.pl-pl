@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8dd991af976c9262a6a1af7813c1201f68b36ab8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971316"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431742"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 
@@ -69,9 +69,7 @@ Aby uzyskać bardziej szczegółowy opis, zobacz [używają wycinków kodu do iz
      Zamiast tego zdefiniuj interfejs, który może być implementowany przez inny składnik, a także przez wycinek dla celów testowych:
 
     ```csharp
-    public int GetContosoPrice(IStockFeed feed)
-    { return feed.GetSharePrice("COOO"); }
-
+    public int GetContosoPrice(IStockFeed feed) => feed.GetSharePrice("COOO");
     ```
 
     ```vb

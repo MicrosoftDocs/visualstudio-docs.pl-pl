@@ -126,8 +126,8 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-                - name: Zmiany ładunku pakietu
-                  href: install/changed-payloads.md
+            - name: Zmiany ładunku pakietu
+              href: install/changed-payloads.md
             - name: Numery wersji i daty wydania programu Visual Studio
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Korzystanie z programu Visual Studio z poziomu maszyny wirtualnej platformy Azure

@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Korzystanie z pliku konfiguracji do określania źródła danych'
+title: Zdefiniuj źródło danych przy użyciu pliku konfiguracji
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: aa57582a241400cbdfc9115d16326fda8019a5ae
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461458"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432241"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Przewodnik: Korzystanie z pliku konfiguracji do określania źródła danych
 
