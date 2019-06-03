@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. Aplikacja umożliwia odnalezienie dodatków narzędzi VSTO dla programów, wyszukując wpisy w następującym kluczu rejestru:
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<application name>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \Addins\\**
 
     Każdy wpis w ramach tego klucza rejestru jest unikatowy identyfikator dodatku narzędzi VSTO. Zazwyczaj jest to nazwa zestawu dodatków narzędzi VSTO dla programów.
 
 2. Aplikacja szuka `Manifest` wejścia we wpisie dla każdego dodatku narzędzi VSTO.
 
-    Pełna ścieżka manifestu w mogą być przechowywane w zarządzanych dodatków narzędzi VSTO dla programów `Manifest` wpis w **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Nazwa aplikacji >_ \Addins\\  _\<identyfikator dodatku >_**. Manifestu to plik (zazwyczaj plik XML), który zawiera informacje, które są używane do ładowania dodatku narzędzi VSTO.
+    Pełna ścieżka manifestu w mogą być przechowywane w zarządzanych dodatków narzędzi VSTO dla programów `Manifest` wpis w **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<Nazwa aplikacji >_ \Addins\\  _\<identyfikator dodatku >_ **. Manifestu to plik (zazwyczaj plik XML), który zawiera informacje, które są używane do ładowania dodatku narzędzi VSTO.
 
 3. Jeśli aplikacja wykryje `Manifest` wpisu, aplikacja próbuje załadować zarządzanego dodatku narzędzi VSTO programu ładującego składnika. Aplikacja wykonuje to zadanie w trakcie tworzenia obiektów COM, który implementuje imanagedaddin — interfejs.
 
