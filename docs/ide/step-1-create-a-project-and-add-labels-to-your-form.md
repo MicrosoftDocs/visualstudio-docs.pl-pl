@@ -1,6 +1,6 @@
 ---
 title: Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
-ms.date: 11/04/2016
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d32ae922726a13416086e982679483ae36f2ad0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5052cc84cb3c314885483f914385725189ba07d9
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949143"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462131"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 
@@ -24,7 +24,7 @@ Jako pierwsze kroki w projektowaniu tego quizu tworzysz projekt i dodać etykiet
 > [!NOTE]
 > Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
-## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Aby utworzyć projekt i ustawić właściwości dla formularza
+## <a name="to-create-a-project-for-a-form"></a>Aby utworzyć projekt dla formularza
 
 ::: moniker range="vs-2017"
 
@@ -42,15 +42,32 @@ Jako pierwsze kroki w projektowaniu tego quizu tworzysz projekt i dodać etykiet
 
 1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
 
-1. Wybierz pozycję w polu wyszukiwania wpisz "WPF" **aplikacja WPF (.NET Framework)**, a następnie wybierz **dalej**.
+   ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   (Jeśli nie widzisz **aplikacja WPF (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.)
+1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *Windows Forms* w polu wyszukiwania.
 
-1. Nazwij projekt, **MathQuiz**i wybierz polecenie **Create**
+1. Wybierz **aplikacji programu Windows Forms (.NET Framework)** szablonu, a następnie wybierz **dalej**.
+
+   ![Wybierz szablon języka Visual Basic w aplikacji Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
+   >
+   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Następnie w Instalatorze programu Visual Studio, wybierz pozycję Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.
+   >
+   > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem.
+
+1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *MathQuiz* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
 
 ::: moniker-end
 
-1. Wybierz formularz, a następnie zmień jego **tekstu** właściwości **Math Quiz**.
+## <a name="to-create-set-properties-for-a-form"></a>Aby utworzyć zestaw właściwości dla formularza
+
+1. W programie Visual Studio, wybierz formularz (albo *Form1.cs* lub *Form1.vb*, w zależności od języka programowania), a następnie zmień jego **tekstu** właściwości  **Quiz matematyczny**.
 
      **Właściwości** okno zawiera właściwości dla formularza.
 
@@ -80,7 +97,7 @@ Jako pierwsze kroki w projektowaniu tego quizu tworzysz projekt i dodać etykiet
 
 6. W **właściwości** oknie Wybierz **tekstu** właściwości, a następnie wybierz **Backspace** klawisz, aby wyczyścić jej wartość.
 
-7. Wybierz znak plus (**+**) obok pozycji **czcionki** właściwości, a następnie zmień wartość **rozmiar** właściwości **15,75**.
+7. Wybierz znak plus ( **+** ) obok pozycji **czcionki** właściwości, a następnie zmień wartość **rozmiar** właściwości **15,75**.
 
      Możesz zmienić kilka właściwości czcionki, jak przedstawiono na poniższym obrazie.
 

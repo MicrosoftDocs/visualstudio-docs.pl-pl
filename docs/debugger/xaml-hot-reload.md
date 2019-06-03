@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929130"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462145"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Pisanie i debugowanie kodu XAML z gorącej ponownego ładowania XAML w programie Visual Studio
 
@@ -47,7 +47,7 @@ Poniżej przedstawiono znane że ograniczenia XAML hot Załaduj ponownie. Aby un
 |Tworzenie obiektów zasobu w słowniku zasobów, takich jak te w okno strona Twojej aplikacji lub *App.xaml*|Nieobsługiwane|Obsługiwane|Przykład: dodawanie ```SolidColorBrush``` do słownika zasobów do użycia jako ```StaticResource```.</br>Uwaga: Zasoby statyczne, styl konwerterów i inne elementy zapisywane do słownika zasobów może być stosowane używane podczas korzystania z gorącej ponownego ładowania XAML. Tworzenie zasobu nie jest obsługiwane.</br> Zmiana słownika zasobów ```Source``` właściwości.| 
 |Dodawanie nowych kontrolek, klasy, systemu windows lub inne pliki do projektu, gdy aplikacja jest uruchomiona|Nieobsługiwane|Nieobsługiwane|Brak|
 |Zarządzanie pakietami NuGet (Dodawanie/usuwanie/aktualizowania pakietów)|Nieobsługiwane|Nieobsługiwane|Brak|
-|Zmieniającymi się danymi powiązania, który używa rozszerzenia znaczników {rozszerzenia x: Bind}|Brak|Obsługiwane w programie Visual Studio 2019 r i nowszych wersjach|Nie są obsługiwane w Visual Studio 2018 r. lub starszych wersji|
+|Zmieniającymi się danymi powiązania, który używa rozszerzenia znaczników {rozszerzenia x: Bind}|Brak|Obsługiwane w programie Visual Studio 2019 r i nowszych wersjach|Nie są obsługiwane w programie Visual Studio 2017 lub starszych wersji|
 
 ## <a name="error-messages"></a>Komunikaty o błędach
 
