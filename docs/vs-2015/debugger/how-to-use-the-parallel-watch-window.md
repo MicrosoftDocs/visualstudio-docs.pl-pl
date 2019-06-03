@@ -39,7 +39,7 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
   > [!TIP]
   > Należy otworzyć **zadanie równoległe** okno, aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna.  
   
--  **\<Dodaj wyrażenie kontrolne >** kolumny, w którym należy wprowadzić wyrażenia, aby obejrzeć.  
+- **\<Dodaj wyrażenie kontrolne >** kolumny, w którym należy wprowadzić wyrażenia, aby obejrzeć.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

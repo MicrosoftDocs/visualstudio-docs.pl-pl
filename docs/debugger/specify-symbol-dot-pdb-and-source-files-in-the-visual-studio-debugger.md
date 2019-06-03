@@ -37,7 +37,7 @@ ms.locfileid: "60045345"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
-Baza danych programu (*.pdb*) plików, nazywany również pliki symboli mapowania identyfikatorów i instrukcje w kodzie źródłowym projektu do odpowiednich identyfikatorów i zgodnie z instrukcjami w skompilowanych aplikacji.
+Baza danych programu ( *.pdb*) plików, nazywany również pliki symboli mapowania identyfikatorów i instrukcje w kodzie źródłowym projektu do odpowiednich identyfikatorów i zgodnie z instrukcjami w skompilowanych aplikacji.
 
 Podczas kompilowania projektu z programu Visual Studio IDE, za pomocą standardowej konfiguracji kompilacji debugowania, kompilator utworzy odpowiednie pliki symboli. Możesz również [ustawić opcje symboli w kodzie](#compiler-symbol-options).
 
@@ -62,7 +62,7 @@ Podczas debugowania projektu w programie Visual Studio IDE, debuger automatyczni
 
 Ponadto debuger wyszukuje pliki symboli w następujących lokalizacjach:
 
-1. W lokalizacji określonej w pliku DLL lub pliku wykonywalnego (*.exe*) pliku.
+1. W lokalizacji określonej w pliku DLL lub pliku wykonywalnego ( *.exe*) pliku.
 
    Domyślnie jeśli skompilowałeś bibliotekę DLL lub *.exe* pliku na komputerze, konsolidator umieszcza pełną ścieżkę i nazwę skojarzonego *.pdb* pliku w bibliotece DLL lub *.exe* pliku. Debuger sprawdza, czy plik symboli znajduje się w tej lokalizacji.
 
@@ -177,11 +177,11 @@ Podczas budowania projektu z programu Visual Studio IDE ze standardem **debugowa
 
   - *VC\<x > .pdb*, gdzie  *\<x >* oznacza wersję Visual C++, na przykład *VC11.pdb*
 
-    *VC\<x > .pdb* plik przechowuje wszystkie informacje o debugowaniu dla plików poszczególnych obiektów i znajduje się w tym samym katalogu co plik makefile projektu. Zawsze tworzy plik obiektu, kompilator C/C++ scala informacje debugowania do *VC\<x > .pdb*. Tak, nawet jeśli każdy plik źródłowy zawiera wspólne pliki nagłówkowe  *\<windows.h >*, definicje TypeDef z tych nagłówków są zapisywane tylko raz, a nie w każdym pliku obiektu. Informacje wstawione zawierają informacje o typie, ale nie zawiera informacji o symbolach, takich jak definicje funkcji.
+    *VC\<x > .pdb* plik przechowuje wszystkie informacje o debugowaniu dla plików poszczególnych obiektów i znajduje się w tym samym katalogu co plik makefile projektu. Zawsze tworzy plik obiektu, kompilator C/C++ scala informacje debugowania do *VC\<x > .pdb*. Tak, nawet jeśli każdy plik źródłowy zawiera wspólne pliki nagłówkowe  *\<windows.h >* , definicje TypeDef z tych nagłówków są zapisywane tylko raz, a nie w każdym pliku obiektu. Informacje wstawione zawierają informacje o typie, ale nie zawiera informacji o symbolach, takich jak definicje funkcji.
 
   - *\<Projekt > .pdb*
 
-     *\<Projekt > .pdb* plik przechowuje wszystkie informacje debugowania dla projektu *.exe* pliku i znajduje się w *\debug* podkatalogu.  *\<Projekt > .pdb* plik zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, nie tylko informacje o typie znalezione w *VC\<x > .pdb*.
+    *\<Projekt > .pdb* plik przechowuje wszystkie informacje debugowania dla projektu *.exe* pliku i znajduje się w *\debug* podkatalogu. *\<Projekt > .pdb* plik zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, nie tylko informacje o typie znalezione w *VC\<x > .pdb*.
 
   Zarówno *VC\<x > .pdb* i  *\<Projekt > .pdb* pliki zezwalają na aktualizacje przyrostowe. Konsolidator osadza także ścieżkę do *.pdb* pliki *.exe* lub *.dll* utworzonych plików.
 
@@ -236,7 +236,7 @@ Gdy tak się stanie, debuger wyświetla **Brak załadowanych symboli** lub **Bra
 **Na potrzeby pomocy Znajdź i załaduj symbole Brak strony dokumentu nie załadowano symboli:**
 
 - Aby zmienić ścieżki wyszukiwania, wybierz niezaznaczoną ścieżkę lub wybierz **nową ścieżkę** lub **Nowa ścieżka usługi VSTS** i wprowadź lub wybierz nową ścieżkę. Wybierz **obciążenia** wyszukać ponownie ścieżki i załadować plik symbolu, jeśli zostanie znaleziony.
-- Aby zastąpić wszelkie opcje symbolu i ponów próbę ścieżki wyszukiwania, wybierz **Przeglądaj i Przeszukuj \<nazwę pliku wykonywalnego >**. Plik symboli jest ładowany, jeśli zostanie znaleziony, lub **Eksploratora plików** zostanie otwarty, można ręcznie wybrać plik symboli.
+- Aby zastąpić wszelkie opcje symbolu i ponów próbę ścieżki wyszukiwania, wybierz **Przeglądaj i Przeszukuj \<nazwę pliku wykonywalnego >** . Plik symboli jest ładowany, jeśli zostanie znaleziony, lub **Eksploratora plików** zostanie otwarty, można ręcznie wybrać plik symboli.
 - Aby otworzyć **opcje** > **debugowanie** > **symbole** wybierz opcję **Zmień ustawienia symboli**.
 - Aby pokazać demontaż w nowym oknie jeden raz, wybierz pozycję **wyświetlić dezasemblację**, lub wybierz **okna dialogowego Opcje** ustawić opcję, aby zawsze pokazywać deasemblację, gdy nie znaleziono plików źródłowych lub symboli.
 - Aby wyświetlić lokalizacje przeszukiwane i wynik, rozwiń **informacje o ładowaniu symboli**.

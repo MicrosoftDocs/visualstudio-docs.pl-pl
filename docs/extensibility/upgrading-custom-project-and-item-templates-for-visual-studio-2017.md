@@ -120,7 +120,7 @@ Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w we
 
 ```
 
- Informacje dostarczone przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elementu pozostają bez zmian.  **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu.
+ Informacje dostarczone przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elementu pozostają bez zmian. **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu.
 
  W tym miejscu jest to domyślny plik .vstemplate elementu utworzone przez program Visual Studio 2015:
 
@@ -172,7 +172,7 @@ Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w we
 </VSTemplateManifest>
 ```
 
- Informacje dostarczone przez  **\<TemplateData >** elementu pozostają bez zmian.  **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu
+ Informacje dostarczone przez  **\<TemplateData >** elementu pozostają bez zmian. **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu
 
  Aby uzyskać więcej informacji na temat różnych elementów pliku vstman zobacz [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

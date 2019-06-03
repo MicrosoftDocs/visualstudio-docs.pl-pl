@@ -69,7 +69,7 @@ Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkowni
 
 1. **Utwórz projekt kodowanego testu interfejsu użytkownika.**
 
-    Kodowane testy interfejsu użytkownika musi być zawarty w projekt kodowanego testu interfejsu użytkownika. Jeśli nie masz jeszcze projektu kodowanego testu interfejsu użytkownika, zrób to. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt** a następnie wybierz opcję **języka Visual Basic** lub **Visual C#**. Następnie wybierz pozycję **testu**, **kodowanego testu interfejsu użytkownika**.
+    Kodowane testy interfejsu użytkownika musi być zawarty w projekt kodowanego testu interfejsu użytkownika. Jeśli nie masz jeszcze projektu kodowanego testu interfejsu użytkownika, zrób to. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt** a następnie wybierz opcję **języka Visual Basic** lub **Visual C#** . Następnie wybierz pozycję **testu**, **kodowanego testu interfejsu użytkownika**.
 
    - <em>Nie widzę **kodowanego testu interfejsu użytkownika</em>* szablony projektów.*
 
@@ -220,7 +220,7 @@ Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkowni
   }
   ```
 
-   *Formant, który chcę wybrać traci fokus i znika przy próbie wybierz narzędzie Dodaj Asercje z konstruktora kodowanego testu interfejsu użytkownika. Jak wybrać formant?*
+  *Formant, który chcę wybrać traci fokus i znika przy próbie wybierz narzędzie Dodaj Asercje z konstruktora kodowanego testu interfejsu użytkownika. Jak wybrać formant?* 
   **Wybierając ukrytą kontrolkę za pomocą klawiatury**
 
   Czasami, gdy [dodawanie formantów i weryfikowania ich właściwości](#VerifyingCodeUsingCUITGenerateAssertions), może być konieczne użycie klawiatury. Na przykład podczas próby rejestrowania kodowanego testu interfejsu użytkownika, używającej formant menu kontekstowego na liście elementów menu w formancie utracić fokus i znikają w przypadku próby wybierz narzędzie Dodaj Asercje z Konstruktor kodowanego testu IU. Zostało to przedstawione na poniższej ilustracji, gdzie tracić fokus i znika, jeśli zostanie podjęta próba wybierz ją przy użyciu narzędzia Dodaj Asercje przez menu kontekstowego w programie Internet Explorer.
