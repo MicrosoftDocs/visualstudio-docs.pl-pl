@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1662f484d8738c381f704732389537b0ac3ad5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f091ea0841ac66cd106c3fa613f1219ddaaffcf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431476"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501204"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie formantów do formularza
 W tym kroku dodaj formanty, takie jak <xref:System.Windows.Forms.PictureBox> kontroli i <xref:System.Windows.Forms.CheckBox> formantu do formularza. Następnie dodaj <xref:System.Windows.Forms.Button> formantów do formularza.
@@ -30,8 +30,7 @@ W tym kroku dodaj formanty, takie jak <xref:System.Windows.Forms.PictureBox> kon
 
 4. Wybierz nowy **PictureBox** sterowania, aby go zaznaczyć, a następnie wybierz czarny trójkąt na nowym formancie PictureBox w celu wyświetlenia jego listy zadań, jak pokazano na poniższej ilustracji.
 
-     ![Zadania w obiekcie PictureBox](../ide/media/express_pictureboxtasks.png)
-**PictureBox** zadania
+     ![Zadania w obiekcie PictureBox](../ide/media/express_pictureboxtasks.png)<br/>***PictureBox*** *zadania*
 
     > [!NOTE]
     > Jeśli przypadkowo dodasz nieprawidłowy typ formantu do swojego obiektu TableLayoutPanel, można go usunąć. Kliknij prawym przyciskiem myszy formant, a następnie wybierz **Usuń** jego menu kontekstowego. Można również usunąć formanty z formularza, korzystając z paska menu. Na pasku menu wybierz **Edytuj** > **Cofnij**, lub **Edytuj** > **Usuń**.
@@ -45,8 +44,7 @@ W tym kroku dodaj formanty, takie jak <xref:System.Windows.Forms.PictureBox> kon
 
 7. Wybierz **TableLayoutPanel** w formularzu, a następnie dodać kontrolkę pola wyboru do formularza. Kliknij dwukrotnie **wyboru** pozycja **przybornika** Aby dodać nowy formant pola wyboru do następnej wolnej komórki w tabeli. Ponieważ PictureBox zajmuje pierwsze dwie komórki w TableLayoutPanel, formant pola wyboru jest dodawany do lewej dolnej komórce. Wybierz **tekstu** właściwość i wpisz wyraz **Stretch**, jak pokazano na poniższej ilustracji.
 
-     ![Formant TextBox z właściwością Stretch](../ide/media/express_pictureviewercheckbox.png)
-**TextBox** kontrolką **Stretch** właściwości
+     ![Formant TextBox z właściwością Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Pole tekstowe*** *kontrolką* ***Stretch*** *właściwości*
 
 8. Wybierz **TableLayoutPanel** na formularzu, a następnie przejdź do **kontenery** w **przybornika** (skąd masz formant TableLayoutPanel) i kliknij dwukrotnie **FlowLayoutPanel** element, aby dodać nowy formant do ostatniej komórki w elemencie PictureBox (prawy dolny róg). Następnie Zadokuj FlowLayoutPanel w TableLayoutPanel (przez wybranie **Zadokuj w kontenerze nadrzędnym** na liście zadań programu FlowLayoutPanel czarny trójkąt lub przez ustawienie FlowLayoutPanel **zadokować** Właściwość **wypełnienia**).
 
@@ -71,8 +69,7 @@ W tym kroku dodaj formanty, takie jak <xref:System.Windows.Forms.PictureBox> kon
 
 5. Wybierz **Zamknij** przycisk, aby go zaznaczyć. Naciśnij i przytrzymaj **Ctrl** klucza i wybierz pozostałe trzy przyciski są wszystkie zaznaczone. Gdy zaznaczone są wszystkie przyciski, przejdź do **właściwości** okna i przewiń do **AutoSize** właściwości. Ta właściwość zawiera informacje rozmiar przycisku automatycznie dopasuje wszystkich swoich tekstów. Ustaw ją na **true**. Przyciski powinny teraz być wielkość i być w odpowiedniej kolejności. (Tak długo, jak wszystkie cztery przyciski są zaznaczone, można zmienić wszystkie cztery **AutoSize** właściwości w tym samym czasie.) Na poniższej ilustracji przedstawiono cztery przyciski.
 
-     ![Obraz podglądu z czterema przyciskami](../ide/media/express_autosize.png)
-**Picture Viewer** z czterema przyciskami
+     ![Przeglądarka obrazów z czterema przyciskami](../ide/media/express_autosize.png)<br/>***Obraz podglądu*** *z czterema przyciskami*
 
 6. Teraz uruchom program ponownie, aby zobaczyć układem formularza. Wybieranie przycisków i pola wyboru jeszcze nic nie robi, ale wkrótce będą one działać.
 

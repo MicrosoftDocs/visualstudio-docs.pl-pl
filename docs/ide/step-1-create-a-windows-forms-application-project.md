@@ -1,6 +1,6 @@
 ---
 title: Krok 1. Utwórz projekt Windows Forms aplikacji
-ms.date: 03/23/2019
+ms.date: 06/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979871"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501055"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Utwórz projekt Windows Forms aplikacji
 
@@ -28,14 +28,13 @@ Kiedy tworzysz przeglądarki obrazów, pierwszym krokiem jest utworzenie projekt
 
 ## <a name="open-visual-studio-2017"></a>Open Visual Studio 2017
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu**. Okno dialogowe powinno wyglądać następująco.
+1. Na pasku menu wybierz **pliku** > **New** > **projektu**. Okno dialogowe powinno wyglądać podobnie do poniższej zrzut ekranu.
 
-     ![Okno dialogowe nowego projektu](../ide/media/newprojectdialogcallouts.png)<br/>
-***Nowy projekt** okno dialogowe*
+     ![Okno dialogowe nowego projektu](../ide/media/newprojectdialogcallouts.png)<br/>***Nowy projekt*** *okno dialogowe*
 
-2. Wybierz opcję **Visual C#**  lub **języka Visual Basic** w lewej części **nowy projekt** okno dialogowe.
+2. Wybierz **Visual C#**  lub **języka Visual Basic** w lewej części **nowy projekt** okna dialogowego pole, a następnie wybierz **Windows Desktop**.
 
-3. Na liście szablonów wybierz **aplikacji programu Windows Forms (.NET Framework)** . Nazwij nowy formularz **PictureViewer**, a następnie wybierz **OK** przycisku.
+3. Na liście szablonów wybierz **aplikacji programu Windows Forms (.NET Framework)** . Nazwij nowy formularz *PictureViewer*, a następnie wybierz **OK** przycisku.
 
     >[!NOTE]
     >Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.<br/><br/>![Obciążenie programowanie aplikacji klasycznych dla platformy .NET w Instalatorze programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz [Zainstaluj program Visual Studio](../install/install-visual-studio.md) strony.
@@ -50,7 +49,7 @@ Kiedy tworzysz przeglądarki obrazów, pierwszym krokiem jest utworzenie projekt
 
    ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *Windows Forms* w polu wyszukiwania. Następnie wybierz pozycję **języka Visual Basic** od języka, a następnie wybierz **Windows** z listy Platform. 
+1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *Windows Forms* w polu wyszukiwania. Następnie wybierz pozycję **języka Visual Basic** od języka, a następnie wybierz **Windows** z listy Platform.
 
    Po zastosowaniu filtrów języka i platformy, wybierz **aplikacji programu Windows Forms (.NET Framework)** szablonu, a następnie wybierz **dalej**.
 
@@ -59,13 +58,13 @@ Kiedy tworzysz przeglądarki obrazów, pierwszym krokiem jest utworzenie projekt
    > [!NOTE]
    > Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
    >
-   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Następnie w Instalatorze programu Visual Studio, wybierz pozycję Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.
-   > 
+   >
    > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem. 
+   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem.
 
 1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *PictureViewer* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
 

@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: ed84e5478ae7a15905a5555a318bd656c664710e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82f3426cbba06a27f2d2f74fdd167f003ebb3eae
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982896"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500934"
 ---
 # <a name="javascript-and-typescript-support"></a>Obsługa języków JavaScript i TypeScript
 
@@ -39,7 +39,7 @@ Program Visual Studio for Mac używa [usługę językową JavaScript](/visualstu
 Funkcja intellisense języka JavaScript w programie Visual Studio dla komputerów Mac może bazować na wnioskowanie o typie, JSDoc lub TypeScript deklaracji.
 
 - **Wnioskowanie o typie** — typ obiektu jest wybierana przez otaczającego kontekst kodu. Aby uzyskać więcej informacji, zobacz sekcję programu Visual Studio na [IntelliSense oparte na wnioskowanie o typie](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference).
-- **Element JSDoc** — istnieją momenty, gdy wnioskowanie o typie nie udostępnia informacji poprawnego typu. W takich przypadkach informacje o typie można podać jawnie przez [JSDoc](http://usejsdoc.org/about-getting-started.html) adnotacji. Aby uzyskać więcej informacji, zobacz sekcję programu Visual Studio na [IntelliSense oparte na danych JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
+- **Element JSDoc** — istnieją momenty, gdy wnioskowanie o typie nie udostępnia informacji poprawnego typu. W takich przypadkach informacje o typie można podać jawnie przez [JSDoc](https://jsdoc.app/about-getting-started.html) adnotacji. Aby uzyskać więcej informacji, zobacz sekcję programu Visual Studio na [IntelliSense oparte na danych JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
 - **Pliki deklaracji TypeScript** — `.d.ts` pliki są używane do przekazania wartości do JavaScript IntelliSense. Typy zadeklarowane w tym pliku może służyć jako typy na komentarzy JSDoc. Aby uzyskać więcej informacji, zobacz sekcję programu Visual Studio na [funkcji IntelliSense na podstawie TypeScript deklaracji plików](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)
 
     ![Dodawanie plików definicji typescript](media/javascript-image3.png)

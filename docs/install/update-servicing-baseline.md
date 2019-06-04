@@ -1,5 +1,5 @@
 ---
-title: Aktualizacja programu Visual Studio znajduje się w obsługi punktu odniesienia
+title: Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
 titleSuffix: ''
 description: Dowiedz się, jak zaktualizować program Visual Studio, pozostając na obsługi linii bazowej.
 ms.date: 05/22/2019
@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213849"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501120"
 ---
-# <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualizacja programu Visual Studio znajduje się w obsługi punktu odniesienia
+# <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
 
-Visual Studio 2019 będzie miał częste aktualizacje podczas jego [cyklu życia produktu](/visualstudio/productinfo/release-rhythm.md#release-channel-updates). Obejmują one zarówno aktualizacje wersji pomocniczej (na przykład: 16.0 do 16.1) który może zawierać nowe funkcje i składniki i aktualizacje obsługi (na przykład: tylko 16.0.4 do 16.0.5) zawierający docelowe poprawki dotyczące problemów krytycznych. 
+Visual Studio 2019 będzie miał częste aktualizacje podczas jego [cyklu życia produktu](/visualstudio/productinfo/release-rhythm#release-channel-updates). Obejmują one zarówno aktualizacje wersji pomocniczej (na przykład: 16.0 do 16.1) który może zawierać nowe funkcje i składniki i aktualizacje obsługi (na przykład: tylko 16.0.4 do 16.0.5) zawierający docelowe poprawki dotyczące problemów krytycznych. 
 
-Administratorzy przedsiębiorstwa można przechowywać swoich klientów na obsługi linii bazowej, która jest obsługiwane w przypadku obsługi aktualizacji dla roku ostatnie wydanie następnej obsługi linii bazowej. To daje większą elastyczność dla deweloperów i administratorów przyjęcie nowe funkcje, poprawki usterek i składników zawartych w nowe aktualizacje pomocnicze. Pierwszy obsługi punkt odniesienia jest 16.0.x. Zobacz [opcje pomocy technicznej dla subskrypcji enterprise i professional klientów](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers) Aby uzyskać więcej informacji.
+Administratorzy przedsiębiorstwa można przechowywać swoich klientów na obsługi linii bazowej, która jest obsługiwane w przypadku obsługi aktualizacji dla roku ostatnie wydanie następnej obsługi linii bazowej. To daje większą elastyczność dla deweloperów i administratorów przyjęcie nowe funkcje, poprawki usterek i składników zawartych w nowe aktualizacje pomocnicze. Pierwszy obsługi punkt odniesienia jest 16.0.x. Zobacz [opcje pomocy technicznej dla subskrypcji enterprise i professional klientów](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) Aby uzyskać więcej informacji.
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Jak się dostać się do obsługi punktu odniesienia
 

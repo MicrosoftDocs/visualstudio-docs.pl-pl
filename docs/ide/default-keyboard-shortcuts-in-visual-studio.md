@@ -13,34 +13,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a2b4a8c747595a0aa1e0f3499b8d24b0b0d301
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432260"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501174"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
 Aby uzyskać więcej informacji na temat klawiatura — ułatwienia dostępu, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md) i [jak: Używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-Można uzyskać dostęp do różnych poleceń i okien w programie Visual Studio, wybierając odpowiednie skróty klawiaturowe. Ten temat zawiera listę domyślnych skrótów dla profilu ogólnego projektowania, które być może wybrano podczas instalacji programu Visual Studio. Niezależnie od wybranego profilu, możesz zidentyfikować skrót dla polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **klawiatury**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
+Można uzyskać dostęp do różnych poleceń i okien w programie Visual Studio, wybierając odpowiednie skróty klawiaturowe. Ta strona zawiera listę domyślnych skrótów dla **ogólne** profil, który być może wybrano podczas instalowania programu Visual Studio. Niezależnie od wybranego profilu, możesz zidentyfikować skrót dla polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **klawiatury**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
 
 Aby uzyskać listę typowych skrótów klawiaturowych i innych informacji o wydajności, zobacz [domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klawiatury porady](../ide/tips-and-tricks-for-visual-studio.md), i [ Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md).
-
-Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensie, że można uzyskać do nich dostęp z dowolnego miejsca w Visual Studio za pomocą skrótów klawiaturowych:
 
 |||||
 |-|-|-|-|
 |[Analyze](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Edytowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menu kontekstowe edytora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menu kontekstowe rozwiązania i projektu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Eksplorator testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
+|[Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menu kontekstowe edytora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menu kontekstowe projektu i rozwiązania](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Eksplorator testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Kompilacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Plik](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refaktoryzacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Narzędzia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[Menu kontekstowe widoku klas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Widok](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
 |[Debugowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test obciążeniowy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Window](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Menu kontekstowe debugera](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Inne menu kontekstowe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menu kontekstowe Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Centrum diagnostyki](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="bkmk_global"></a> Globalne
+## <a name="global-shortcuts"></a>Globalne skróty
+
+Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać ich w przypadku dowolnego okna programu Visual Studio jest ustawiony fokus.
 
 ### <a name="bkmk_analyze"></a> Analizowanie
 
@@ -161,6 +161,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.Cut|**CTRL + X**<br /><br /> lub<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> lub<br /><br /> **Ctrl + Shift + dodatki**|
 |Edit.Delete|**Delete**|
+|Edit.Duplicate|**CTRL + D**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**Ctrl + Shift + F**|
@@ -173,7 +174,6 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.GoToAll|**CTRL +** lub **klawisze Ctrl + T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**CTRL + D**|
 |Edit.GoToMember|**CTRL + 1, Ctrl + M** lub **Ctrl + M 1,** lub **Alt +\\**|
 |Edit.GoToNextLocation|**F8** (następny błąd w oknie Lista błędów lub danych wyjściowych)|
 |Edit.GoToPrevLocation|**SHIFT + F8** (poprzedni błąd w oknie Lista błędów lub danych wyjściowych)|

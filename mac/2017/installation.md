@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93159487d4d00b70a801e235f9a22eb35d6183c0
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998124"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500986"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Install Visual Studio 2017 for Mac
 
@@ -67,7 +67,7 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
       - Wybierz pełni Międzyplatformowe aplikacje Xamarin — **Android**, **dla systemu iOS**, i **macOS** platformy.
    * **Aplikacje .NET core** — wybierz **platformy .NET Core** platformy.
    * **Aplikacje sieci Web programu ASP.NET Core** — wybierz **platformy .NET Core** platformy.
-   * **Opracowywanie gier Unity dla wielu platform** — żadnych dodatkowych platform muszą być zainstalowane poza Visual Studio dla komputerów Mac. Zapoznaj się [przewodnik konfiguracji środowiska Unity](/visualstudio/macm/setup-vsmac-tools-unity) Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity.
+   * **Opracowywanie gier Unity dla wielu platform** — żadnych dodatkowych platform muszą być zainstalowane poza Visual Studio dla komputerów Mac. Zapoznaj się [przewodnik konfiguracji środowiska Unity](/visualstudio/mac/setup-vsmac-tools-unity) Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity.
 
    Na tym ekranie instalacji Wyświetla wersję i rozmiar każdego składnika. Kliknij każdy składnik, aby wyświetlić listę zależności dla tego składnika (dla systemu Android), zobacz dodatkowe pakiety, które pobiera (dla platformy .NET Core) lub wyświetlić dodatkowe aplikacje wymagane (dla systemów iOS i macOS):
 

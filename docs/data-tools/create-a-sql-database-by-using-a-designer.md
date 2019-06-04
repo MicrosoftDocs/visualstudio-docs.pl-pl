@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569997"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501075"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Tworzenie bazy danych i dodawanie tabel w programie Visual Studio
 
@@ -26,7 +26,19 @@ Za pomocą programu Visual Studio do tworzenia i aktualizowania lokalnego pliku 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Do przeprowadzenia tego instruktażu, konieczne jest posiadanie opcjonalnego **przechowywanie i przetwarzanie danych** obciążenia zainstalowane w programie Visual Studio. Aby go zainstalować, otwórz **Instalatora programu Visual Studio** i wybierz polecenie **więcej** > **Modyfikuj** obok wersji programu Visual Studio, którą chcesz zmodyfikować (Jeśli masz więcej niż zainstalowana jedna wersja). Na **obciążeń** , w obszarze **sieć Web i chmura**, wybierz **przechowywanie i przetwarzanie danych**, a następnie kliknij przycisk **Modyfikuj** obciążenia, aby dodać Program Visual Studio.
+Do przeprowadzenia tego instruktażu, konieczne jest posiadanie opcjonalnego **przechowywanie i przetwarzanie danych** obciążenia zainstalowane w programie Visual Studio. Aby go zainstalować, otwórz **Instalatora programu Visual Studio** i wybierz polecenie **Modyfikuj** lub **więcej** > **Modyfikuj** obok wersji Program Visual Studio, który chcesz zmodyfikować.
+
+::: moniker range=">=vs-2019"
+
+Na **obciążeń** , w obszarze **inne zestawy narzędzi**, wybierz **przechowywanie i przetwarzanie danych**, a następnie kliknij przycisk **Modyfikuj** obciążenia, aby dodać Program Visual Studio.
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+Na **obciążeń** , w obszarze **sieć Web i chmura**, wybierz **przechowywanie i przetwarzanie danych**, a następnie kliknij przycisk **Modyfikuj** obciążenia, aby dodać Program Visual Studio.
+
+::: moniker-end
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Tworzenie projektu i pliku lokalnej bazy danych
 

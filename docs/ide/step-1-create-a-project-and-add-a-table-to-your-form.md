@@ -1,6 +1,6 @@
 ---
 title: Krok 1. Tworzenie projektu i Dodawanie tabeli do formularza
-ms.date: 11/04/2016
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979562"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501155"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Tworzenie projektu i Dodawanie tabeli do formularza
 
@@ -27,33 +27,55 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
 1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
+1. Wybierz **Visual C#**  lub **języka Visual Basic** w lewej części **nowy projekt** okna dialogowego pole, a następnie wybierz **Windows Desktop**.
+
+1. Z listy szablonów wybierz **aplikacji programu Windows Forms (.NET Framework)** szablonu, nadaj jej nazwę *nazwę MatchingGame*, a następnie wybierz **OK** przycisku.
+
+    Formularz, który nosi nazwę *Form1.cs* lub *Form1.vb* pojawia się w zależności od języka programowania, który został wybrany.
+
+   > [!NOTE]
+   > Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.<br/><br/>![Obciążenie programowanie aplikacji klasycznych dla platformy .NET w Instalatorze programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz [Zainstaluj program Visual Studio](../install/install-visual-studio.md) strony.
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
 
-1. Wybierz pozycję w polu wyszukiwania wpisz "WPF" **aplikacja WPF (.NET Framework)**, a następnie wybierz **dalej**.
+   ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   (Jeśli nie widzisz **aplikacja WPF (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.)
+1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *Windows Forms* w polu wyszukiwania.
 
-1. Nazwij projekt, **nazwę MatchingGame**i wybierz polecenie **Create**
+1. Wybierz **aplikacji programu Windows Forms (.NET Framework)** szablonu, a następnie wybierz **dalej**.
+
+   ![Wybierz szablon języka Visual Basic w aplikacji Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
+   >
+   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Następnie w Instalatorze programu Visual Studio, wybierz pozycję Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.
+   >
+   > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem.
+
+1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *nazwę MatchingGame* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
 
 ::: moniker-end
 
-2. Jeśli nie używasz programu Visual Studio Express, musisz najpierw wybrać język programowania. Z **zainstalowane szablony** , wybierz opcję **Visual C#** lub **języka Visual Basic**.
+## <a name="to-set-properties-for-a-form"></a>Aby ustawić właściwości dla formularza
 
-3. Na liście szablonów projektu wybierz **aplikacja interfejsu Windows Forms**, nadaj projektowi nazwę **nazwę MatchingGame**, a następnie wybierz **OK** przycisku.
-
-4. W **właściwości** okna, ustaw następujące właściwości formularza.
+1. W **właściwości** okna, ustaw następujące właściwości formularza.
 
    1. Formularz zmiany **tekstu** właściwość **Form1** do **gra w dopasowywanie**. Ten tekst jest wyświetlany w górnej części okna gry.
 
    2. Ustaw rozmiar formularza na 550 pikseli szerokości i 550 pikseli wysokości. Możesz to zrobić, ustawiając **rozmiar** właściwości **550, 550**, lub poprzez przeciąganie rogu formularza, aż zobaczysz właściwy rozmiar w prawym dolnym rogu zintegrowanego rozwoju (środowiska ŚRODOWISKO IDE).
 
-5. Wyświetl przybornik, wybierając **przybornika** karty po lewej stronie IDE.
+2. Wyświetl przybornik, wybierając **przybornika** karty po lewej stronie IDE.
 
-6. Przeciągnij <xref:System.Windows.Forms.TableLayoutPanel> z kontrolować **kontenery** kategorii w przyborniku, a następnie ustaw następujące właściwości dla niego.
+3. Przeciągnij <xref:System.Windows.Forms.TableLayoutPanel> z kontrolować **kontenery** kategorii w przyborniku, a następnie ustaw następujące właściwości dla niego.
 
    1. Ustaw **BackColor** właściwości **CornflowerBlue**. Aby to zrobić, otwórz **BackColor** okno dialogowe, wybierając strzałkę listy rozwijanej obok **BackColor** właściwość **właściwości** okna.  Następnie wybierz **Web** karcie **BackColor** okno dialogowe, aby wyświetlić listę nazw dostępnych kolorów.
 
@@ -72,7 +94,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
       TableLayoutPanel powinien być teraz siatką 4 x 4, o szesnastu kwadratowych komórkach równej wielkości. Te wiersze i kolumny są tam, gdzie później pojawią się obrazy ikon.
 
-7. Należy się upewnić, że TableLayoutPanel jest zaznaczony w edytorze formularza. Aby to sprawdzić, powinien zostać wyświetlony **tableLayoutPanel1** w górnej części **właściwości** okna. Jeśli nie jest zaznaczone, wybierz TableLayoutPanel na formularzu lub wybierz go z rozwijanej listy formantów u góry **właściwości** okna.
+4. Należy się upewnić, że TableLayoutPanel jest zaznaczony w edytorze formularza. Aby to sprawdzić, powinien zostać wyświetlony **tableLayoutPanel1** w górnej części **właściwości** okna. Jeśli nie jest zaznaczone, wybierz TableLayoutPanel na formularzu lub wybierz go z rozwijanej listy formantów u góry **właściwości** okna.
 
     Gdy TableLayoutPanel jest zaznaczony, Otwórz przybornik i Dodaj <xref:System.Windows.Forms.Label> kontroli (znajdujący się w **wspólnych formantów** kategoria) do lewej górnej komórki TableLayoutPanel. Formant etykiety powinny teraz być zaznaczone w środowisku IDE. Ustaw dla niego następujące właściwości.
 
@@ -84,7 +106,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
    4. Ustaw **TextAlign** właściwości **MiddleCenter** , wybierając przycisk listy rozwijanej obok właściwości, a następnie wybierając środkowy przycisk. Gwarantuje to, że ikona pojawia się w środku komórki.
 
-   5. Wybierz **czcionki** właściwości. Wielokropek (**...** ) powinien pojawić się przycisk.
+   5. Wybierz **czcionki** właściwości. Wielokropek ( **...** ) powinien pojawić się przycisk.
 
    6. Wybierz przycisk wielokropka i ustaw **czcionki** wartość **Webdings**, **styl czcionki** do **Bold**i **rozmiar** do **48**.
 
@@ -95,14 +117,14 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
        > [!NOTE]
        > Czcionka Webdings to czcionka ikon, która jest dostarczana z systemem operacyjnym Windows. W grze w dopasowywanie, gracz musi dopasować pary ikon, więc ta czcionka jest używana do wyświetlania dopasowywanych ikon. Zamiast umieszczać **c** w **tekstu** właściwość, spróbuj wprowadzić różne litery, aby zobaczyć, jakie ikony są wyświetlane. Znak wykrzyknika to pająk, wielkie N to oko, a przecinek to papryczka chili.
 
-8. Wybierz formant etykiety i skopiuj go do następnej komórki w TableLayoutPanel. (Wybierz **Ctrl**+**C** kluczy lub na pasku menu wybierz **Edytuj** > **kopiowania**.) Następnie wklej go. (Wybierz **Ctrl**+**V** kluczy lub na pasku menu wybierz **Edytuj** > **Wklej**.) W drugiej komórce TableLayoutPanel pojawi się kopia pierwszej etykiety. Wklej ją ponownie, a inny etykieta jest wyświetlana w trzeciej komórce. Wklejaj formanty etykiet, aż wszystkie komórki zostaną wypełnione.
+5. Wybierz formant etykiety i skopiuj go do następnej komórki w TableLayoutPanel. (Wybierz **Ctrl**+**C** kluczy lub na pasku menu wybierz **Edytuj** > **kopiowania**.) Następnie wklej go. (Wybierz **Ctrl**+**V** kluczy lub na pasku menu wybierz **Edytuj** > **Wklej**.) W drugiej komórce TableLayoutPanel pojawi się kopia pierwszej etykiety. Wklej ją ponownie, a inny etykieta jest wyświetlana w trzeciej komórce. Wklejaj formanty etykiet, aż wszystkie komórki zostaną wypełnione.
 
    > [!NOTE]
    > Jeśli wkleisz zbyt wiele razy, IDE doda nowy wiersz do TableLayoutPanel, tak, aby miało miejsce na dodanie nowego formantu etykiety. Można cofnąć tę operację. Aby usunąć nową komórkę, wybierz **Ctrl**+**Z** kluczy lub na pasku menu wybierz **Edytuj** > **Cofnij**.
 
     Teraz formularz jest rozmieszczony. Powinien wyglądać tak, jak na poniższej ilustracji:
 
-    ![Początkowy formularz gry w dopasowywanie](../ide/media/express_tut4step1.png) początkowy formularz gry w dopasowywanie
+    ![Początkowy formularz gry w dopasowywanie](../ide/media/express_tut4step1.png)<br/>   Początkowy formularz gry w dopasowywanie
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

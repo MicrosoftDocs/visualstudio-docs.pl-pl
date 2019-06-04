@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5052cc84cb3c314885483f914385725189ba07d9
-ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66462131"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501133"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 
@@ -30,11 +30,14 @@ Jako pierwsze kroki w projektowaniu tego quizu tworzysz projekt i dodać etykiet
 
 1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-1. W **zainstalowane szablony** , wybierz opcję **C#** lub **języka Visual Basic**.
+1. Wybierz **Visual C#**  lub **języka Visual Basic** w lewej części **nowy projekt** okna dialogowego pole, a następnie wybierz **Windows Desktop**.
 
-1. Z listy szablonów wybierz **aplikacja interfejsu Windows Forms** szablonu, nadaj jej nazwę **MathQuiz**, a następnie wybierz **OK** przycisku.
+1. Z listy szablonów wybierz **aplikacji programu Windows Forms (.NET Framework)** szablonu, nadaj jej nazwę *MathQuiz*, a następnie wybierz **OK** przycisku.
 
-     Formularz, który nosi nazwę *Form1.cs* lub *Form1.vb* pojawia się w zależności od języka programowania, który został wybrany.
+    Formularz, który nosi nazwę *Form1.cs* lub *Form1.vb* pojawia się w zależności od języka programowania, który został wybrany.
+
+   > [!NOTE]
+   > Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.<br/><br/>![Obciążenie programowanie aplikacji klasycznych dla platformy .NET w Instalatorze programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz [Zainstaluj program Visual Studio](../install/install-visual-studio.md) strony.
 
 ::: moniker-end
 
@@ -65,7 +68,7 @@ Jako pierwsze kroki w projektowaniu tego quizu tworzysz projekt i dodać etykiet
 
 ::: moniker-end
 
-## <a name="to-create-set-properties-for-a-form"></a>Aby utworzyć zestaw właściwości dla formularza
+## <a name="to-set-properties-for-a-form"></a>Aby ustawić właściwości dla formularza
 
 1. W programie Visual Studio, wybierz formularz (albo *Form1.cs* lub *Form1.vb*, w zależności od języka programowania), a następnie zmień jego **tekstu** właściwości  **Quiz matematyczny**.
 
