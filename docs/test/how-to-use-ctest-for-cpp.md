@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: fddb32ce75bf587ee78ca172fd4de2c31237a331
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a97aa7dfcc1cc46d64813ea7714629cb8557055d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225942"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714891"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Jak używać narzędzia CTest dla C++ w programie Visual Studio 2017 i nowsze
 
-CMake (co obejmuje narzędzia CTest) jest zintegrowana w środowisku IDE programu Visual Studio domyślnie jako część **programowanie aplikacji klasycznych w języku C++** obciążenia. Jeśli musisz zainstalować go na komputerze, Otwórz program Instalator programu Visual Studio, kliknij pozycję **programowanie aplikacji klasycznych przy użyciu C++**  przycisk, a następnie kliknij przycisk **Modyfikuj**. Sprawdź [narzędzia CMake dla elementu wizualnego C++ ](/cpp/ide/cmake-tools-for-visual-cpp) pod listą składników obciążenia.
+CMake (co obejmuje narzędzia CTest) jest zintegrowana w środowisku IDE programu Visual Studio domyślnie jako część **programowanie aplikacji klasycznych w języku C++** obciążenia. Jeśli musisz zainstalować go na komputerze, Otwórz program Instalator programu Visual Studio, kliknij pozycję **programowanie aplikacji klasycznych przy użyciu C++**  przycisk, a następnie kliknij przycisk **Modyfikuj**. Sprawdź [narzędzia CMake dla elementu wizualnego C++ ](/cpp/build/cmake-tools-for-visual-cpp) pod listą składników obciążenia.
 
 ## <a name="to-write-tests"></a>Do pisania testów
 

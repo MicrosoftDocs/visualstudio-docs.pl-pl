@@ -1,5 +1,5 @@
 ---
-title: Wypełnij zestawów danych za pomocą adapterów TableAdapter
+title: Wypełnianie zestawów danych za pomocą adapterów TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566924"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715184"
 ---
-# <a name="fill-datasets-by-using-tableadapters"></a>Wypełnij zestawów danych za pomocą adapterów TableAdapter
+# <a name="fill-datasets-by-using-tableadapters"></a>Wypełnianie zestawów danych za pomocą adapterów TableAdapter
 
 Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawie jednego lub więcej zapytań lub procedur składowanych, które określisz. TableAdapters można również wykonać dodaje, aktualizuje i usuwa w bazie danych, aby zachować zmiany wprowadzone do zestawu danych. Można także wystawić polecenia globalne, które nie są związane z żadną z tabel.
 
 > [!NOTE]
-> TableAdapters są generowane przez projektantów programu Visual Studio. Jeśli programowe tworzenie zestawów danych użyj DataAdapter jest klasą .NET Framework.
+> TableAdapters są generowane przez projektantów programu Visual Studio. Jeśli programowe tworzenie zestawów danych użyj DataAdapter jest klasą .NET.
 
 Aby uzyskać szczegółowe informacje o operacjach TableAdapter możesz pominąć bezpośrednio do jednego z tych tematów:
 

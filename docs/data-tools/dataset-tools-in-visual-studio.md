@@ -47,21 +47,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567118"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715214"
 ---
-# <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawu danych w programie Visual Studio
+# <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawów danych w programie Visual Studio
 
 > [!NOTE]
 > Zestawy danych i powiązanych klas są starszej technologii .NET, od początku 2000s, które umożliwiają aplikacjom do pracy z danymi w pamięci, gdy aplikacje są odłączone od bazy danych. Są one szczególnie przydatne w przypadku aplikacji, które umożliwiają użytkownikom modyfikowanie danych i utrwala zmiany w bazie danych. Mimo że zestawy danych okazały się być odniosła technologii, zalecane jest użycie programu Entity Framework w nowej aplikacji platformy .NET. Entity Framework zapewnia bardziej naturalny sposób pracy z danymi tabelarycznymi jako modele obiektów i ma prostsze interfejs programowania.
 
 A `DataSet` obiekt jest obiektem w pamięci, która jest zasadniczo mini bazy danych. Zawiera on `DataTable`, `DataColumn`, i `DataRow` obiektów, które można przechowywać i modyfikować dane z jednego lub więcej baz danych bez konieczności utrzymywanie otwartego połączenia. Zestaw danych przechowuje informacje o zmianach wprowadzonych do jego danych, więc aktualizacje, które mogą być śledzone i wysyłane z powrotem do bazy danych, gdy aplikacja staje się zakończone.
 
-Zestawy danych i powiązanych klas, które są zdefiniowane w <xref:System.Data?displayProperty=fullName> przestrzeni nazw w bibliotece klas programu .NET Framework. Można tworzyć i modyfikować zestawów danych dynamicznie w kodzie za pomocą platformy ADO.NET. W dokumentacji w tej sekcji przedstawiono sposób pracy z zestawami danych za pomocą projektantów programu Visual Studio. Zestawy danych, które są tworzone za pomocą projektantów **TableAdapter** obiekty do interakcji z bazą danych. Użyj zestawów danych, które są tworzone programowo **DataAdapter** obiektów. Aby dowiedzieć się, jak programowe tworzenie zestawów danych, zobacz [DataAdapter i DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Zestawy danych i powiązanych klas, które są zdefiniowane w <xref:System.Data?displayProperty=fullName> przestrzeni nazw w interfejsie API .NET. Można tworzyć i modyfikować zestawów danych dynamicznie w kodzie za pomocą platformy ADO.NET. W dokumentacji w tej sekcji przedstawiono sposób pracy z zestawami danych za pomocą projektantów programu Visual Studio. Zestawy danych, które są tworzone za pomocą projektantów **TableAdapter** obiekty do interakcji z bazą danych. Użyj zestawów danych, które są tworzone programowo **DataAdapter** obiektów. Aby dowiedzieć się, jak programowe tworzenie zestawów danych, zobacz [DataAdapter i DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Jeśli aplikacja musi jedynie odczytywać dane z bazy danych, a nie wykonywania aktualizacji, dodaje lub usuwa, można zwykle uzyskać lepszą wydajność, za pomocą `DataReader` obiektu do pobrania danych do ogólnego `List` obiektu lub innej kolekcji. W przypadku wyświetlania danych, użytkownik może wiązania danych interfejsu użytkownika do kolekcji.
 

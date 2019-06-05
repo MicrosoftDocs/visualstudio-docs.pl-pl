@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825046"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715281"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Przewodnik: Analizowanie kodu zarządzanego pod względem wad kodu
 
 W tym przewodniku będzie analizować zarządzanego projektu pod względem wad kodu za pomocą narzędzia analizy kodu.
 
-Ten przewodnik przeprowadzi Cię przez proces przy użyciu analizy kodu, aby analizować swoje zestawy kodu zarządzanego na platformie .NET dla zapewnienia zgodności z wytycznymi projektowania Microsoft .NET Framework.
+Ten przewodnik przeprowadzi Cię przez proces przy użyciu analizy kodu, aby analizować swoje zestawy kodu zarządzanego na platformie .NET dla zapewnienia zgodności z wytycznymi projektowania platformy .NET.
 
 ## <a name="create-a-class-library"></a>Utwórz bibliotekę klas
 

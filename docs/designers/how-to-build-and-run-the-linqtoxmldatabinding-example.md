@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład'
+title: 'Instrukcje: Kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d53f8d08222eb35660f7a4454164d6b821a976d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897562"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714834"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Instrukcje: Kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład
 
@@ -22,7 +22,9 @@ Aby uzyskać więcej informacji na temat programu Visual Studio, zobacz [Omówie
 
 ## <a name="create-the-project"></a>Utwórz projekt
 
-1. Otwórz program Visual Studio i Utwórz C# **aplikacja WPF** o nazwie **elementu linqtoxmldatabinding —**. Projekt powinien skierowane do .NET Framework 3.5 (lub nowszy).
+1. Otwórz program Visual Studio i Utwórz C# **aplikacja WPF** o nazwie **elementu linqtoxmldatabinding —** .
+
+   Projekt powinien skierowane do .NET Framework 3.5 (lub nowszy).
 
 1. Jeśli nie zrobiono, dodaj odwołania do projektu dla następujących zestawów platformy .NET:
 

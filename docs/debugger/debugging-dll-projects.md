@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ec10f226ad139ffbeb46badc6ef3dd6c384af91
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852489"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714940"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debugowanie bibliotek DLL w programie Visual Studio (C#, C++, Visual Basic F#)
 
@@ -84,7 +84,7 @@ Dla projektów C/C++ można ustawić nagłówek i lokalizacje plików LIB na str
 
 1. Kliknij przycisk **OK**.
 
-Aby uzyskać więcej informacji na temat ustawień projektu C++, zobacz [strony właściwości (Visual C++)](/cpp/ide/property-pages-visual-cpp).
+Aby uzyskać więcej informacji na temat ustawień projektu C++, zobacz [strony właściwości (Visual C++)](/cpp/build/reference/property-pages-visual-cpp).
 
 ## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Tworzenie wersji debugowania
 

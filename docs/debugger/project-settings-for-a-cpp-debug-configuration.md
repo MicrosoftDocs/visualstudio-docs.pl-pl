@@ -112,12 +112,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: df0b604d865c31bb389fe8955521fb61208e4c11
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407886"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715448"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w języku C++
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual C++ lub C w **stron właściwości** okno dialogowe, zgodnie z opisem w [jak: Zestaw debugowania i zwalniania konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.
@@ -139,7 +139,7 @@ Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual
 | **Argumenty polecenia** (debuger Windows lokalnego)<br /><br /> **Argumenty polecenia zdalnego** (debuger zdalny Windows) | -Określa argumenty określonego wcześniej polecenia.<br /><br /> W tym polu, można użyć następujących operatorów przekierowania:<br /><br /> < `file`<br /> Odczytuje stdin z pliku.<br /><br /> > `file`<br /> Zapisuje plik stdout do pliku.<br /><br /> >> `file`<br /> Dołącza plik stdout do pliku.<br /><br /> 2> `file`<br /> Zapisuje plik stderr do pliku.<br /><br /> 2>> `file`<br /> Dołącza plik stderr do pliku.<br /><br /> 2> &1<br /> Wysyła dane wyjściowe obiektu stderr (2) do tej samej lokalizacji co obiekt stdout (1).<br /><br /> 1> &2<br /> Wysyła stdout (1) dane wyjściowe do tej samej lokalizacji co obiekt stderr (2).<br /><br /> W większości przypadków te operatory mają zastosowanie tylko do aplikacji konsoli. |
 | **Katalog roboczy** | Określa katalog roboczy debugowanego programu względem katalogu projektu, w którym znajduje się Twój plik EXE. Jeśli zostawisz puste, katalogiem roboczym jest katalogu projektu. Katalog projektu dla zdalnego debugowania, znajduje się na serwerze zdalnym. |
 | **Dołącz** (debuger Windows lokalnego i debugera zdalnego Windows) | Określa, czy należy uruchomić lub dołączyć do aplikacji. Domyślne ustawienie to nie. |
-| **Nazwa serwera zdalnego** (debuger zdalny Windows) | Określa nazwę komputera (innego niż Twój), na którym chcesz debugować aplikację.<br /><br /> Makro kompilacji RemoteMachine jest ustawiona na wartość tej właściwości; Aby uzyskać więcej informacji, zobacz [makra dla kompilacji polecenia i właściwości](/cpp/ide/common-macros-for-build-commands-and-properties). |
+| **Nazwa serwera zdalnego** (debuger zdalny Windows) | Określa nazwę komputera (innego niż Twój), na którym chcesz debugować aplikację.<br /><br /> Makro kompilacji RemoteMachine jest ustawiona na wartość tej właściwości; Aby uzyskać więcej informacji, zobacz [makra dla kompilacji polecenia i właściwości](/cpp/build/reference/common-macros-for-build-commands-and-properties). |
 | **Połączenie** (debuger zdalny Windows) | Umożliwia przełączanie między typami połączeń standardowych i nieuwierzytelnionymi dla debugowania zdalnego. Określ nazwę komputera zdalnego, w **nazwa serwera zdalnego** pole. Typy połączeń obejmują następujące czynności:<br /><br /> -   **Zdalny z uwierzytelnianiem Windows**<br />-   **Zdalny bez bez uwierzytelnienia**<br /><br /> **Uwaga** zdalne debugowanie bez uwierzytelniania może opuścić narażony na naruszenia zabezpieczeń komputera zdalnego. Tryb uwierzytelniania Windows jest bezpieczniejszy.<br /><br /> Aby uzyskać więcej informacji, zobacz [zdalnego debugowania konfiguracji](../debugger/remote-debugging.md). |
 | **Adres URL HTTP** (sieci Web usługi debugera i debuger przeglądarki sieci Web) | Określa adres URL, w którym znajduje się projekt, który debugujesz. |
 | **Typ debugera** | Określa typ debugera, który ma być używany: **Tylko w trybie macierzystym**, **tylko zarządzane**, **tylko GPU**, **mieszany**, **automatycznie** (ustawienie domyślne) lub **skryptu**.<br /><br /> -   **Tylko w trybie macierzystym** jest dla niezarządzanego kodu C++.<br />-   **Tylko zarządzany** jest dla kodu, który jest uruchamiany w ramach środowiska uruchomieniowego języka wspólnego (kod zarządzany).<br />-   **Mieszane** wywołuje debugery dla obu kodu zarządzanego i niezarządzanego.<br />-   **Automatyczne** Określa typ debugera na podstawie kompilatora i informacji EXE.<br />-   **Skrypt** wywołuje debugera skryptów.<br />-   **Tylko GPU** jest dla kodu C++ AMP, który jest uruchamiany na urządzeniu GPU lub na rasteryzatorze referencyjnym. Zobacz [kodu debugowania GPU](../debugger/debugging-gpu-code.md). |

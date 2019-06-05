@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: f9dce876b477dfb802b9cf64214af2ca1cec6a4e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805052"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715356"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Instrukcje: Zmiana katalogu wyjściowego kompilacji
 
@@ -52,5 +52,5 @@ Można określić lokalizacji dane wyjściowe generowane przez projekt na podsta
 ## <a name="see-also"></a>Zobacz także
 
 - [Strona kompilacji, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Strona właściwości ogólnych (projekt)](/cpp/ide/general-property-page-project)
+- [Strona właściwości ogólnych (projekt)](/cpp/build/reference/general-property-page-project)
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)

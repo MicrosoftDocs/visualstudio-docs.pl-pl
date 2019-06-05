@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4616bd95c0461e2318a4b0811f2f12c360a9aeae
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847513"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714963"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Instrukcje: Określanie ustawień debugera
 W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można określić różne ustawienia dla zachowania debugera, w tym, jak zmienne są wyświetlane, czy są prezentowane niektórych ostrzeżeń, jak ustawić punktów przerwania i wpływ podziału na uruchomione programy. Określanie ustawień debugera w **opcje** okno dialogowe.
@@ -45,4 +45,4 @@ W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można określić r
 - [Ogólne, Debugowanie, Opcje, okno dialogowe](../debugger/general-debugging-options-dialog-box.md)
 - [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
-- [Typowe makra dla właściwości i poleceń kompilacji](/cpp/ide/common-macros-for-build-commands-and-properties)
+- [Typowe makra dla właściwości i poleceń kompilacji](/cpp/build/reference/common-macros-for-build-commands-and-properties)

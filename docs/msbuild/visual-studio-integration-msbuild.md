@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7ac4d91de1e41477e1acd21118422e3164e20e80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445380"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715425"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja programu Visual Studio (MSBuild)
 Visual Studio zawiera [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do ładowania i kompilacji projektów zarządzanych. Ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest odpowiedzialna za projekt, niemal każdy projekt w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formatu może być pomyślnie używany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nawet jeśli projekt został utworzony przez inne narzędzie i ma niestandardowy proces kompilacji.
 
  W tym artykule opisano specyficzne aspekty [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]firmy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hostingu, które należy rozważyć podczas dostosowywania projektów i *.targets* pliki, które mają zostać załadowane i skompilowane w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pomogą Ci one upewnić się, że [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] funkcje, takie jak IntelliSense i debugowanie, pracują dla Twojego własnego projektu.
 
- Aby uzyskać informacji na temat projektów w języku C++, zobacz [pliki projektu](/cpp/ide/project-files).
+ Aby uzyskać informacji na temat projektów w języku C++, zobacz [pliki projektu](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Rozszerzeń nazw plików projektu
  *MSBuild.exe* rozpoznaje wszystkie rozszerzenia nazw plików projektu pasujących do wzorca *.\* Proj*. Jednak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozpoznaje tylko podzbiór tych rozszerzeń nazw plików projektu, które określają system projektu charakterystyczny, który załaduje projekt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie ma neutralny językowo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] systemu projektu opartego na.
@@ -133,9 +133,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Zwolnij projekt**.
 
-     Projekt jest oznaczony jako **(niedostępna)**.
+     Projekt jest oznaczony jako **(niedostępna)** .
 
-2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Edytuj \<plik projektu >**.
+2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Edytuj \<plik projektu >** .
 
      Plik projektu zostanie otwarty w edytorze XML programu Visual Studio.
 

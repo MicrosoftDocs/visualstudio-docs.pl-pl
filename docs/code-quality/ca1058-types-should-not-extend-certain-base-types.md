@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44aaead9e00a1fb279666dfc55d4e9496e21139e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4157316756e4b180f6fb49082bf60927ddb43707
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842105"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714797"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy nie powinny rozszerzać niektórych typów podstawowych
 
@@ -47,7 +47,7 @@ Domyślnie ta reguła przegląda tylko typy widoczne na zewnątrz, ale jest to [
 
 ## <a name="rule-description"></a>Opis reguły
 
-Dla programu .NET Framework w wersji 1 został zalecony, do uzyskania nowego wyjątki od <xref:System.ApplicationException>. Zalecenie został zmieniony i nowych wyjątków powinien pochodzić od <xref:System.Exception?displayProperty=fullName> lub jedna z jej podklasach w <xref:System> przestrzeni nazw.
+Wyjątki powinien pochodzić od <xref:System.Exception?displayProperty=fullName> lub jedna z jej podklasach w <xref:System> przestrzeni nazw.
 
 Nie należy tworzyć podklasą <xref:System.Xml.XmlDocument> Jeśli chcesz utworzyć widok XML z bazowego źródła danych lub modelu obiektu.
 

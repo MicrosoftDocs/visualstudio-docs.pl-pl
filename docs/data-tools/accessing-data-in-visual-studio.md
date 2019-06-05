@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5403803a4da0821978a8c6bbfc31e45c31104640
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818231"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715276"
 ---
 # <a name="access-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
@@ -152,6 +152,6 @@ Zainstaluj [obsługi języka Python w programie Visual Studio](../python/overvie
 
 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;w tym artykule opisano możliwości zapytań wbudowane w języku C# i Visual Basic i wspólnego modelu wykonywania zapytań relacyjnych baz danych, dokumentów XML, zestawów danych i kolekcji w pamięci.
 
-[Narzędzia XML w programie Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;omówiono pracy za pomocą funkcji programu .NET Framework XML danych debugowania XSLT XML i architektura zapytanie w języku XML.
+[Narzędzia XML w programie Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;zawiera omówienie pracy z funkcjami .NET XML danych debugowania XSLT XML i architektury zapytanie w języku XML.
 
-[Dokumenty i dane XML](/dotnet/standard/data/xml/index)&mdash;zawiera omówienie kompleksowego i zintegrowanego zestawu klas, które działają z dokumentów XML i dane w programie .NET Framework.
+[Dokumenty i dane XML](/dotnet/standard/data/xml/index)&mdash;zawiera omówienie kompleksowego i zintegrowanego zestawu klas, które działają z dokumentów XML i dane na platformie .NET.

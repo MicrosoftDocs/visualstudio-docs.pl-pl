@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f2f2437f09286b1b6ff0aa856eec845ecb83c1d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816802"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715000"
 ---
-# <a name="design-warnings"></a>Ostrzeżenia projektu
-Projekt ostrzeżenia dotyczące pomocy technicznej dla zgodności z wytycznymi projektowania programu .NET Framework.
+# <a name="design-warnings"></a>Ostrzeżenia dotyczące projektu
+
+Przestrzeganie pomocy technicznej ostrzeżenia dotyczące projektowania [wytyczne dotyczące projektowania .NET](/dotnet/standard/design-guidelines/).
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -43,7 +44,7 @@ Projekt ostrzeżenia dotyczące pomocy technicznej dla zgodności z wytycznymi p
 | [CA1012: Typy abstrakcyjne nie powinny mieć konstruktorów](../code-quality/ca1012-abstract-types-should-not-have-constructors.md) | Konstruktory dla typów abstrakcyjnych mogą być wywoływane tylko przez typy pochodne. Ze względu na to, że publiczne konstruktory tworzą wystąpienia typu, a nie można utworzyć wystąpienia typu abstrakcyjnego, publiczny konstruktor typu abstrakcyjnego został niepoprawnie zaprojektowany. |
 | [CA1013: Dokonaj przeciążenia operatora równości przy przeciążaniu operatorów dodawania i odejmowania](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md) | Typ publiczny lub chroniony implementuje operatory dodawania lub odejmowania bez implementowania operatora porównania. |
 | [CA1014: Oznacz zestawy atrybutem CLSCompliant](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md) | The Common Language Specification (CLS) definiuje ograniczenia nazw, typów danych i reguł, z którymi muszą być zgodne zestawy, jeśli zostaną użyte w językach programowania. Zasada dobrego projektowania nakazuje, aby wszystkie zestawy jawnie wskazywały zgodność ze specyfikacją CLS za pomocą CLSCompliantAttribute. Jeśli ten atrybut nie jest obecny w zestawie, oznacza to, że zestaw jest niezgodny. |
-| [CA1016: Oznacz zestawy atrybutem Assemblyversion](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET Framework używa numeru wersji, aby jednoznacznie zidentyfikować zestaw i powiązać z typami w zestawach o silnej nazwie. Numer wersji jest używany razem z zasadami wersji i wydawcy. Domyślnie aplikacje są uruchamiane tylko z wersji zestawu, z którego zostały zbudowane. |
+| [CA1016: Oznacz zestawy atrybutem Assemblyversion](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET używa numeru wersji, aby jednoznacznie zidentyfikować zestaw i powiązać z typami w zestawach o silnej nazwie. Numer wersji jest używany razem z zasadami wersji i wydawcy. Domyślnie aplikacje są uruchamiane tylko z wersji zestawu, z którego zostały zbudowane. |
 | [CA1017: Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md) | ComVisibleAttribute określa, w jaki sposób klienci COM otrzymują dostęp do kodu zarządzanego. Zasada dobrego projektowania nakazuje, aby zestawy jawnie wskazywały widoczność COM. Widoczność COM można ustawić dla całego zestawu, a następnie zastąpić dla poszczególnych typów i elementów członkowskich typu. Jeśli ten atrybut jest nieobecny, zawartość zestawu jest widoczna dla klientów COM. |
 | [CA1018: Oznacz atrybuty atrybutem Attributeusage](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md) | Podczas definiowania atrybutu niestandardowego należy go oznaczyć przy użyciu elementu AttributeUsageAttribute, aby wskazać, w którym miejscu kodu źródłowego ma być on zastosowany. Znaczenie i zamierzone użycie atrybutu określi jego prawidłowe lokalizacje w kodzie. |
 | [CA1019: Zdefiniuj metody dostępu dla argumentów atrybutu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) | Atrybuty mogą definiować obowiązkowe argumenty, które trzeba określić, aby móc zastosować atrybut do obiektu docelowego. Znane są również jako argumenty pozycyjne, ponieważ są one dostarczane do konstruktorów atrybutu jako parametry pozycyjne. Dla każdego obowiązkowego argumentu atrybut powinien również dostarczyć odpowiadającą właściwość tylko do odczytu, dzięki której można pobrać wartość argumentu w czasie wykonywania. Atrybuty mogą też definiować argumenty opcjonalne, które są znane również jako argumenty nazwane. Argumenty te są dostarczane do konstruktorów atrybutu poprzez nazwę i powinny mieć odpowiadającą właściwość umożliwiającą odczyt i zapis. |

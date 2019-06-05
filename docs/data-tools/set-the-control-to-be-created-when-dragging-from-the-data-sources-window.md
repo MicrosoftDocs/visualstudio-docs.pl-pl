@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 442a98b76efb8013d5d40607e14586299718afc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260955"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715093"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych
 
@@ -45,7 +45,7 @@ W tym kontekście pojęcie *obiektu* odwołuje się do obiektu niestandardowego 
 
     - Aby wyświetlić wszystkie dane w jednym formancie, Wybieranie innej kontrolki na liście, takie jak **DataGrid** lub **listy** w aplikacji WPF lub **DataGridView** w formularzach Windows Forms aplikacja.
 
-    Lista dostępnych kontrolek jest zależny, na których projektant otwartych, która wersja programu .NET Framework projekt jest ukierunkowany i tego, czy zostały dodane niestandardowe formanty danych pomocy technicznej powiązanie **przybornika**. Jeśli formant, który chcesz utworzyć, nie jest lista dostępnych kontrolek, możesz dodać formant do listy. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    Lista dostępnych kontrolek jest zależny, na których projektant otwartych, która wersja programu .NET projekt jest ukierunkowany i tego, czy zostały dodane niestandardowe formanty danych pomocy technicznej powiązanie **przybornika**. Jeśli formant, który chcesz utworzyć, nie jest lista dostępnych kontrolek, możesz dodać formant do listy. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
     Aby dowiedzieć się, jak można utworzyć niestandardowego formantu Windows Forms, który można dodać do listy formanty tabele danych lub obiekty na liście **źródeł danych** okna, zobacz [utworzyć formant użytkownika Windows Forms, który obsługuje złożonych danych Powiązanie](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
@@ -63,7 +63,7 @@ Przed przeciągnięciem elementu, który reprezentuje kolumny lub właściwości
 
 4. Kliknij menu rozwijane dla kolumny lub właściwości, a następnie wybierz formant, który chcesz utworzyć, gdy element zostanie przeciągnięty do projektanta.
 
-     Lista dostępnych kontrolek jest zależny, na których projektant otwartych, która wersja programu .NET Framework projekt jest ukierunkowany i które niestandardowe formanty obsługujące, możesz powiązania danych zostały dodane do **przybornika**. Jeśli formant, który ma zostać utworzona lista dostępnych kontrolek, możesz dodać formant do listy. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+     Lista dostępnych kontrolek jest zależny, na których projektant otwartych, która wersja programu .NET projekt jest ukierunkowany i które niestandardowe formanty obsługujące, możesz powiązania danych zostały dodane do **przybornika**. Jeśli formant, który ma zostać utworzona lista dostępnych kontrolek, możesz dodać formant do listy. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
      Aby dowiedzieć się, jak utworzyć formant niestandardowy, który można dodać do listy formantów dla kolumn danych lub właściwości w **źródeł danych** okna, zobacz [tworzenie kontrolki użytkownika formularzy Windows obsługującego proste powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 

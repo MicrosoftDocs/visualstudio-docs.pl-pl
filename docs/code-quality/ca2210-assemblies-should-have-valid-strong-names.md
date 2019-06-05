@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e596f2e970df487a31628ab0bd29051172b950e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796682"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714764"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Zestawy powinny mieć prawidłowe silne nazwy
 
@@ -64,11 +64,11 @@ Należy pamiętać, że można załadować i przeanalizować zestawu podpisanego
 
 Użyj jednej z następujących procedur:
 
-- Narzędzie Assembly Linker (Al.exe) dostarczonych przez .NET Framework SDK.
+- Użyj [narzędzie Assembly Linker (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker).
+
+- Dla programu .NET Framework 2.0, użyj `/keyfile` lub `/keycontainer` — opcja kompilatora [/KeyFile (Określ klucz lub parę klucz Aby podpisać zestaw)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) lub  [ /KeyContainer (Określ kontener klucza, aby podpisać zestaw)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) w — opcja konsolidatora C++).
 
 - .NET Framework w wersji 1.0 lub 1.1, użyj <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> lub <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atrybutu.
-
-- Aby uzyskać [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], użyj jednej `/keyfile` lub `/keycontainer` — opcja kompilatora [/KeyFile (Określ klucz lub parę klucz Aby podpisać zestaw)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) lub  [ /KeyContainer (Określ kontener klucza, aby podpisać zestaw)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) — opcja konsolidatora w języku C++).
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Utwórz zestaw o silnej nazwie w programie Visual Studio
 
@@ -90,7 +90,7 @@ Użyj jednej z następujących procedur:
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Podpisać zestaw silną nazwą poza programem Visual Studio
 
-Narzędzie silnych nazw (Sn.exe) dostarczonego przez .NET Framework SDK. Aby uzyskać więcej informacji, zobacz [Sn.exe (narzędzie silnych nazw)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+Użyj [narzędzie silnych nazw (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 

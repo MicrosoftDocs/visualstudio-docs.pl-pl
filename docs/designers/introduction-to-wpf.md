@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893926"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714816"
 ---
 # <a name="wpf-overview"></a>Omówienie podsystemu WPF
 
@@ -24,13 +24,13 @@ Windows Presentation Foundation (WPF) pozwala tworzyć aplikacje dla Windows kli
 
 ![Przykładowy interfejs użytkownika z branży opieki zdrowotnej firmy Contoso](../designers/media/wpfintrofigure24.png)
 
-Podstawowe WPF jest aparat renderowania niezależne od rozdzielczości i wektorowej, który został opracowany pod kątem zalet sprzęt graficzny modern. WPF rozszerza core przy użyciu kompleksowych funkcji tworzenia aplikacji, które obejmują Extensible Application Markup Language (XAML), kontrolek, powiązanie danych, układ, grafiki 2D i 3D, animacji, stylów, szablony, dokumentów, nośnika, tekstu, a Typografia. WPF znajduje się na platformie .NET Framework, dzięki czemu możesz tworzyć aplikacje, które zawierają inne elementy w bibliotece klas programu .NET Framework.
+Podstawowe WPF jest aparat renderowania niezależne od rozdzielczości i wektorowej, który został opracowany pod kątem zalet sprzęt graficzny modern. WPF rozszerza core przy użyciu kompleksowych funkcji tworzenia aplikacji, które obejmują Extensible Application Markup Language (XAML), kontrolek, powiązanie danych, układ, grafiki 2D i 3D, animacji, stylów, szablony, dokumentów, nośnika, tekstu, a Typografia. WPF jest częścią platformy .NET, dzięki czemu możesz tworzyć aplikacje używające inne elementy interfejsu API platformy .NET.
 
 W tym omówieniu jest przeznaczony dla nowych osób i opisano kluczowe funkcje i pojęcia dotyczące środowiska WPF.
 
 ## <a name="program-with-wpf"></a>Program przy użyciu platformy WPF
 
-WPF istnieje jako podzbiór typów programu .NET Framework, które znajdują się w większości przypadków w <xref:System.Windows> przestrzeni nazw. Jeśli aplikacje zostały wcześniej utworzony za pomocą .NET Framework przy użyciu technologii zarządzanych, takich jak ASP.NET i Windows Forms, WPF podstawowe środowisko programowania należy się zapoznać; Możesz utworzyć wystąpienia klasy, ustaw właściwości, metody wywołania i zdarzenia uchwyt, za pomocą platformy .NET ulubiony język programowania, takich jak C# lub Visual Basic.
+WPF istnieje jako podzbiór typów .NET, które (w większości przypadków) znajdują się w <xref:System.Windows> przestrzeni nazw. Jeśli aplikacje zostały wcześniej skompilowana przy użyciu platformy .NET przy użyciu technologii zarządzanych, takich jak ASP.NET i Windows Forms, WPF podstawowe środowisko programowania należy się zapoznać; tworzenia wystąpień klas, ustaw właściwości, metody wywołania i zdarzenia uchwyt, przy użyciu Twoje ulubione platformy .NET, język programowania, takich jak C# lub Visual Basic.
 
 WPF obejmuje dodatkowych narzędzi programistycznych, które podnoszą właściwości i zdarzenia: [właściwości zależności](/dotnet/framework/wpf/advanced/dependency-properties-overview) i [zdarzenia trasowanego](/dotnet/framework/wpf/advanced/routed-events-overview).
 

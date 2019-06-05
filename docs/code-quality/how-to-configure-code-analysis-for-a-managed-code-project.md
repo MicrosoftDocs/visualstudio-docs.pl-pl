@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676295"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715060"
 ---
 # <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Instrukcje: Konfigurowanie statycznej analizy kodu dla kodu zarządzanego
 
@@ -29,7 +29,7 @@ Aby uzyskać informacje o sposobie konfigurowania zestawu reguł dla aplikacji s
 > [!NOTE]
 > Ten artykuł ma zastosowanie do statycznej analizy kodu i nie [analizatorów Roslyn](use-roslyn-analyzers.md), której nie uruchamiania analizy kodu po kompilacji.
 
-## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Aby skonfigurować zestaw reguł dla projektu .NET Framework
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Konfigurowanie zestawu reguł dla projektu .NET Framework
 
 1. Otwórz **analizy kodu** kartę na stronach właściwości projektu. Można to zrobić na następujące sposoby:
 

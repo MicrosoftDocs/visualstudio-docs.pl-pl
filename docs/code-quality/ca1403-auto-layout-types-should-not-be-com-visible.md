@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546202"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714847"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typy z automatycznym układem nie powinny być widoczne dla modelu COM
 
@@ -39,7 +39,7 @@ Typ wartości widocznych Component Object Model (COM) jest oznaczony za pomocą 
 
 ## <a name="rule-description"></a>Opis reguły
 
-<xref:System.Runtime.InteropServices.LayoutKind> typy układu są zarządzane przez środowisko uruchomieniowe języka wspólnego. Układ tych typów może się zmieniać między wersjami programu .NET Framework, co spowoduje przerwanie klientów modelu COM, które oczekują określonego układu. Jeśli <xref:System.Runtime.InteropServices.StructLayoutAttribute> atrybut nie jest określony, C#, Visual Basic, a następnie określ Kompilatory języka C++ [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) dla typów wartości.
+<xref:System.Runtime.InteropServices.LayoutKind> typy układu są zarządzane przez środowisko uruchomieniowe języka wspólnego. Układ tych typów może się zmieniać między wersjami programu .NET, co spowoduje przerwanie klientów modelu COM, które oczekują określonego układu. Jeśli <xref:System.Runtime.InteropServices.StructLayoutAttribute> atrybut nie jest określony, C#, Visual Basic, a następnie określ Kompilatory języka C++ [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) dla typów wartości.
 
 Chyba że oznaczony inaczej, wszystkie typy publiczne, nieogólną są widoczne dla modelu COM, a wszystkie typy bez publicznego i ogólny są niewidoczne dla modelu COM. Aby zmniejszyć liczbę fałszywych alarmów, ta reguła wymaga widoczność COM typu, który ma być jawnie określony. Muszą być oznaczone zawierające zestaw <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> równa `false` i typ musi być oznaczony przez <xref:System.Runtime.InteropServices.ComVisibleAttribute> równa `true`.
 

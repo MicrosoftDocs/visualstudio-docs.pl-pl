@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825445"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715303"
 ---
 # <a name="naming-warnings"></a>Nazewnictwo — Ostrzeżenia
-Ostrzeżenia nazewnictwa obsługuje gotowość do konwencji nazewnictwa wytycznych projektowych programu .NET Framework.
+
+Ostrzeżenia nazewnictwa obsługuje zgodności z konwencjami nazewnictwa platformy .NET wytycznych projektowych.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -42,7 +43,7 @@ Ostrzeżenia nazewnictwa obsługuje gotowość do konwencji nazewnictwa wytyczny
 |[CA1719: Nazwy parametrów nie powinny odpowiadać nazwom elementu członkowskiego](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Nazwa parametru powinna przekazywać znaczenie parametru, a nazwa elementu członkowskiego powinna przekazywać znaczenie elementu członkowskiego. W projekcie rzadko są one takie same. Nazywanie parametru tak samo jak nazwa jego elementu członkowskiego jest nieintuicyjne i utrudnia korzystanie z biblioteki.|
 |[CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Każdego wyrazu w ciągu zasobu jest podzielony na tokeny, które są oparte na wielkość liter w wyrazie. Każda ciągła kombinacja dwóch tokenów jest sprawdzana przez bibliotekę sprawdzania pisowni firmy Microsoft. Jeżeli zostanie rozpoznana, dane słowo powoduje naruszenie reguły.|
 |[CA1703: Ciągi zasobów, które powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Ciąg zasobu zawiera jeden lub więcej wyrazów, które nie są rozpoznane przez bibliotekę sprawdzania pisowni Microsoft.|
-|[CA1724: Nazwy typów nie powinny odpowiadać nazwom](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Nazwy typów nie powinny odpowiadać nazwy przestrzeni nazw, które są zdefiniowane w bibliotece klas programu .NET Framework. Naruszenie tej zasady może zmniejszyć użyteczność biblioteki.|
+|[CA1724: Nazwy typów nie powinny odpowiadać nazwom](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Nazwy typów nie powinny odpowiadać nazwom przestrzeni nazw .NET. Naruszenie tej zasady może zmniejszyć użyteczność biblioteki.|
 |[CA1707: Identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Przez konwencję identyfikatory nazw nie zawierają znaku podkreślenia (_). Ta reguła sprawdza przestrzenie nazw, typy, elementy członkowskie i parametry.|
 |[CA1721: Nazwy właściwości nie powinny odpowiadać metody get](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|Nazwa publicznego lub chronionego elementu członkowskiego zaczyna się od „Get” i odpowiada nazwie właściwości publicznej lub chronionej. Metody „Get” i właściwości powinny mieć nazwy, które wyraźnie odróżniają ich funkcje.|
 |[CA1716: Identyfikatory nie powinny odpowiadać słowom](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Przestrzeń nazw lub nazwa typu odpowiada zastrzeżonym słowom kluczowym w języku programowania. Identyfikatory przestrzeni nazw i typów nie powinny być zgodne ze słowami kluczowymi, które są definiowane przez języki dla środowiska uruchomieniowego języka wspólnego.|

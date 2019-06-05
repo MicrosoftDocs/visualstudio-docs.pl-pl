@@ -1,5 +1,5 @@
 ---
-title: 'Wykorzystanie — Ostrzeżenia '
+title: Wykorzystanie — Ostrzeżenia
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8f2deaa728a2bcd71bcd2264fcd110aee7982e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 132f5c91b12ac0b7ada4d4987ca0298e47310436
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825256"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715163"
 ---
-# <a name="usage-warnings"></a>Wykorzystanie — Ostrzeżenia 
-Ostrzeżenia dotyczące użycia obsługi właściwego użycia programu .NET Framework.
+# <a name="usage-warnings"></a>Wykorzystanie — Ostrzeżenia
+
+Ostrzeżenia dotyczące użycia obsługi właściwego użycia programu .NET.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -31,14 +32,14 @@ Ostrzeżenia dotyczące użycia obsługi właściwego użycia programu .NET Fram
 |[CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)|Podpis metody zawiera parametr, który nie jest używany w jej treści.|
 |[CA1806: Nie Ignoruj wyników metod](../code-quality/ca1806-do-not-ignore-method-results.md)|Nowy obiekt jest tworzony, ale nigdy nie jest używany; albo metoda, która tworzy i zwraca nowy ciąg, jest wywoływana, ale nowy ciąg nigdy nie jest używany; albo metody COM lub P/Invoke zwracają HRESULT lub kod błędu, który nigdy nie jest używany.|
 |[CA1816: Wywołaj GC. SuppressFinalize poprawnie](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Metoda, która jest implementacją Dispose, nie wywołuje GC. SuppressFinalize; lub metody, która nie jest implementacją Dispose, wywołuje GC. SuppressFinalize; lub metoda wywołuje metodę GC. SuppressFinalize i przekazuje na coś innego niż to (Me w języku Visual Basic).|
-|[CA2200: Ponownie, aby zachować szczegóły stosu](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Ponownie zgłoszony wyjątek i wyjątek jest jawnie określona w instrukcji "throw". Jeśli wyjątek jest ponownie zgłaszany przez określenie wyjątku w instrukcji "throw", Lista wywołań metod między pierwotną metodą, która zgłosiła wyjątek, a bieżąca metoda zostanie utracony.|
+|[CA2200: Ponownie, aby zachować szczegóły stosu](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Wyjątek jest zgłaszany ponownie i jest on jawnie określony w instrukcji „throw”. Jeśli wyjątek jest zgłaszany ponownie przez określenie wyjątku w instrukcji „throw”, lista wywołań metod między pierwotną metodą, która zgłosiła wyjątek, a bieżącą zostanie utracona.|
 |[CA2201: Nie wywołuj zastrzeżonych typów wyjątku](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|Dzięki temu można trudno wykrycie i zdebugowanie pierwotnego błędu.|
 |[CA2202: Nie Likwiduj obiektów wiele razy](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Implementacja metody zawiera ścieżki kodu, które powodują wielokrotne wywołania do System.IDisposable.Dispose lub równoważnika (na przykład użycie metody Close() na niektórych typach) dla tego samego obiektu.|
 |[CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|Ciąg literału w treści metody zawiera jeden lub więcej wyrazów, które nie są rozpoznawane przez bibliotekę sprawdzania pisowni Microsoft.|
-|[CA2205: Użyj zarządzanych odpowiedników funkcji Win32 API](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Wywołania platformy metoda jest zdefiniowana i metody z równoważną funkcjonalność istnieje w bibliotece klas programu .NET Framework.|
+|[CA2205: Użyj zarządzanych odpowiedników funkcji Win32 API](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Wywołania platformy zdefiniowano metody, które metody .NET z równoważną funkcjonalność jest dostępna.|
 |[CA2207: Typu wartości Inicjuj pola statyczne bezpośrednio](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Typ wartości deklaruje jawny, statyczny konstruktor. Aby naprawić naruszenie tej zasady, zainicjuj wszystkie dane statyczne, gdy jest on zadeklarowany, i usuń konstruktor statyczny.|
 |[CA2208: Poprawne wystąpienia wyjątków argumentów](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|Wywołanie odnosi się do domyślnego (bezparametrowego) konstruktora typu wyjątku, który jest elementem ArgumentException lub od niego pochodzi, albo niepoprawny argument ciągu jest przekazywany do sparametryzowania konstruktora typu wyjątku lub pochodzi od elementu ArgumentException.|
-|[CA2211: Pola niebędące stałymi nie powinny być widoczne](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|Pola statyczne, które nie są ani stałe, ani tylko do odczytu, nie obsługują wielowątkowości. Dostęp do takich pól musi być starannie kontrolowany i wymaga zaawansowanych technik programowania do synchronizowania dostępu do obiektu klasy.|
+|[CA2211: Pola niebędące stałymi nie powinny być widoczne](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|Statyczne pola tego są nie stałe lub tylko do odczytu nie metodą o bezpiecznych wątkach. Dostęp do takich pól musi być starannie kontrolowany i wymaga zaawansowanych technik programowania do synchronizowania dostępu do obiektu klasy.|
 |[CA2212: Nie oznaczaj usługowych składników atrybutem WebMethod](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Metoda w typie, który dziedziczy z elementu System.EnterpriseServices.ServicedComponent, jest oznaczona za pomocą atrybutu System.Web.Services.WebMethodAttribute. Ze względu na to, że atrybut WebMethodAttribute i metoda ServicedComponent mają sprzeczne zachowanie i wymagania dotyczące przepływu kontekstu i transakcji, w niektórych scenariuszach zachowanie metod będzie niepoprawne.|
 |[CA2213: Pola możliwe do rozporządzania należy rozporządzać](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Typ, który implementuje element System.IDisposable, deklaruje pola takiego typu, które implementują także IDisposable. Metoda Dispose pola nie jest wywoływana przez metodę Dispose typu deklarującego.|
 |[CA2214: Nie wywoływać nadpisywalnych metod w konstruktorach](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Gdy Konstruktor wywołuje metodę wirtualną, jest możliwe, że Konstruktor wystąpienia, które wywołuje metodę nie zostało wykonane.|
@@ -58,7 +59,7 @@ Ostrzeżenia dotyczące użycia obsługi właściwego użycia programu .NET Fram
 |[CA2228: Dostarczaj niepublikowanych formatów zasobów](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Pliki zasobów, które zostały utworzone za pomocą wersji wstępnej wersji programu .NET Framework nie może być użyteczne z obsługiwanymi wersjami programu .NET Framework.|
 |[CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)|Aby naprawić naruszenie tej zasady, należy zaimplementować konstruktora serializacji. Dla zamkniętej klasy należy ustawić konstruktor prywatny; w przeciwnym razie powinien być chroniony.|
 |[CA2230: Użyj parametrów dla argumentów zmiennych](../code-quality/ca2230-use-params-for-variable-arguments.md)|Typ publiczny lub chroniony zawiera metodę publiczną lub chronioną, która używa wywoływania VarArgs zamiast słowa kluczowego params.|
-|[CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Typ wartości zastępuje metodę Object.Equals, ale nie implementuje operatora równości.|
+|[CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Typ wartości zastępuje `Object.Equals` , ale nie implementuje operatora równości.|
 |[CA2232: Punkty wejścia znacznik Windows Forms za pomocą atrybutu STAThread](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|STAThreadAttribute wskazuje, że model wątkowości COM dla aplikacji jest jednowątkowym apartamentem. Atrybut ten musi być obecny w punkcie wejścia każdej aplikacji korzystającej z Windows Forms; jeśli zostanie pominięty, składniki systemu Windows mogą nie działać poprawnie.|
 |[CA2233: Operacje nie powinny powodować przepełnienia](../code-quality/ca2233-operations-should-not-overflow.md)|Operacje arytmetyczne nie powinno być wykonywane bez uprzedniego sprawdzenia operandów, aby upewnić się, że wynik operacji nie jest spoza zakresu możliwych wartości dla typów danych związane.|
 |[CA2234: Przekazuj obiekty System.Uri zamiast ciągów](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|Wykonano wywołanie do metody, która ma parametr typu ciąg, którego nazwa zawiera „uri”, „URI”, „urn”, „URN”, „url” lub „URL”.  Deklarujący typ metody zawiera odpowiadające przeciążenie metody z parametrem System.Uri.|

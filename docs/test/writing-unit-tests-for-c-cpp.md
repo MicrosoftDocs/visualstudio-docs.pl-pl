@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461591"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715248"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio
 
@@ -41,7 +41,7 @@ Test jednostkowy C++ projektów pomocy technicznej [CodeLens](../ide/find-code-c
 
 - **Boost.Test** jest dołączony jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Jest zintegrowana z usługą **Eksplorator testów** , ale obecnie nie ma szablonu projektu, w związku z tym musi być ręcznie skonfigurowany. Aby uzyskać więcej informacji, zobacz [porady: Używanie narzędzia Boost.Test w programie Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- **Narzędzia CTest** pomoc techniczna jest uwzględniona w [narzędzia CMake dla programu Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) składnika, który jest częścią programu **programowanie aplikacji klasycznych w języku C++** obciążenia. Jednak narzędzia CTest nie jest jeszcze w pełni zintegrowana z **Eksplorator testów**. Aby uzyskać więcej informacji, zobacz [porady: Używanie narzędzia CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
+- **Narzędzia CTest** pomoc techniczna jest uwzględniona w [narzędzia CMake dla programu Visual Studio](/cpp/build/cmake-tools-for-visual-cpp) składnika, który jest częścią programu **programowanie aplikacji klasycznych w języku C++** obciążenia. Jednak narzędzia CTest nie jest jeszcze w pełni zintegrowana z **Eksplorator testów**. Aby uzyskać więcej informacji, zobacz [porady: Używanie narzędzia CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 i starsze**
 

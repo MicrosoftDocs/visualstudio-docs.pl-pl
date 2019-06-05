@@ -1,5 +1,5 @@
 ---
-title: Powiązanie danych WPF za pomocą LINQ to XML — Przegląd
+title: Powiązanie danych WPF za pomocą LINQ to XML — omówienie
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843931"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715068"
 ---
-# <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Powiązanie danych WPF za pomocą LINQ to XML — Przegląd
+# <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Powiązanie danych WPF za pomocą LINQ to XML — omówienie
 
 W tym temacie przedstawiono funkcje powiązania danych dynamicznych w <xref:System.Xml.Linq> przestrzeni nazw. Te funkcje może służyć jako źródło danych dla elementów interfejsu użytkownika w aplikacjach Windows Presentation Foundation (WPF). W tym scenariuszu opiera się na specjalne *właściwości dynamicznych* z <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> i <xref:System.Xml.Linq.XElement?displayProperty=fullName>.
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML i LINQ to XML
 
-Extensible Application Markup Language (XAML) jest dialekt XML utworzone przez firmę Microsoft do obsługi technologii .NET Framework 3.0. Używane na platformie WPF reprezentujące elementy interfejsu użytkownika i powiązane funkcje, takie jak zdarzenia i powiązanie danych. W programie Windows Workflow Foundation XAML jest używana do reprezentowania struktury programów, takich jak formant programu (*przepływy pracy*). XAML umożliwia deklaratywne aspektów technologii od powiązany kod proceduralny definiujący bardziej zindywidualizowane zachowanie programu w języku.
+Extensible Application Markup Language (XAML) jest dialekt XML utworzone przez firmę Microsoft do obsługi technologii .NET. Używane na platformie WPF reprezentujące elementy interfejsu użytkownika i powiązane funkcje, takie jak zdarzenia i powiązanie danych. W programie Windows Workflow Foundation XAML jest używana do reprezentowania struktury programów, takich jak formant programu (*przepływy pracy*). XAML umożliwia deklaratywne aspektów technologii od powiązany kod proceduralny definiujący bardziej zindywidualizowane zachowanie programu w języku.
 
 Istnieją dwa sposoby szerokie, które mogą wchodzić w interakcje XAML i LINQ to XML:
 

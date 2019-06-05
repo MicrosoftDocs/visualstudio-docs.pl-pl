@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c52db730e471d845989b8fdfbadd259b5d166e8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825282"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715226"
 ---
 # <a name="security-warnings"></a>Ostrzeżenia dotyczące zabezpieczeń
 
@@ -36,7 +36,7 @@ Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikac
 |[CA2104: Nie deklaruj odczytu modyfikowalnych typów referencyjnych tylko](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Typ widoczny z zewnątrz zawiera widoczne na zewnątrz pole tylko do odczytu, które jest typu referencji zmiennej. Typ zmienny to typ, którego dane wystąpienia mogą być modyfikowane.|
 |[CA2105: Pola tablicy nie powinny być tylko odczytu](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Jeśli zastosujesz modyfikator tylko do odczytu (ReadOnly w języku Visual Basic) do pola, które zawiera tablicę, pola nie można zmienić w taki sposób, aby odwoływać się do innej tablicy. Można jednak zmienić elementy tablicy przechowywane w polu tylko do odczytu.|
 |[CA2106: Zabezpiecz asercje](../code-quality/ca2106-secure-asserts.md)|Metoda potwierdza uprawnienia i żadne sprawdzenia zabezpieczeń nie są wykonywane na obiekcie wywołującym. Potwierdzanie uprawnienia zabezpieczeń bez sprawdzania zabezpieczeń może pozostawić zdatną do wykorzystania słabość zabezpieczeń w kodzie.|
-|[CA2107: Przegląd Odmów i permit only](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Metoda PermitOnly i akcje zabezpieczeń CodeAccessPermission.Deny powinny być używane tylko przez tych, którzy mają zaawansowaną wiedzę o zabezpieczeniach .NET Framework. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.|
+|[CA2107: Przegląd Odmów i permit only](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Za pomocą PermitOnly — metoda i akcje zabezpieczeń CodeAccessPermission.Deny powinny być używane tylko przez osoby, które mają zaawansowaną wiedzę zabezpieczeń platformy .NET. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.|
 |[CA2108: Przejrzyj zabezpieczenia deklaratywne dla typów wartości](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Publiczny lub chroniony typ wartości jest zabezpieczony przez dostęp do danych lub zapotrzebowanie na łącza.|
 |[CA2109: Przejrzyj widoczne procedury obsługi zdarzeń](../code-quality/ca2109-review-visible-event-handlers.md)|Wykryto publiczną lub chronioną metodę obsługi zdarzeń. Metody obsługi zdarzeń nie powinny być udostępnione, chyba że jest to absolutnie konieczne.|
 |[CA2111: Wskaźniki nie powinny być widoczne](../code-quality/ca2111-pointers-should-not-be-visible.md)|Wskaźnik nie jest prywatny, wewnętrzny ani tylko do odczytu. Złośliwy kod może zmienić wartość wskaźnika, potencjalnie umożliwiając dostęp do dowolnego miejsca w pamięci lub powodując błędy aplikacji bądź systemu.|
