@@ -7,12 +7,12 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 1d560e3fd383e3db19c664bf027470c8da224fd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73c068ed1fcd03564638961e3d4e6dce7f7d6ed2
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987408"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501228"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Team Foundation Version Control
 
@@ -157,7 +157,7 @@ Następujące opcje może służyć do uwierzytelniania z serwerem:
 
 Do korzystania z uwierzytelniania podstawowego jest niezbędne do włączenia **uwierzytelniania alternatywnych poświadczeń** w usługom DevOps platformy Azure, wykonując poniższe kroki:
 
-1. Zaloguj się do Twojej organizacji DevOps platformy Azure jako właściciel (https://dev.azure.com/{organization}/{project}).
+1. Zaloguj się do Twojej organizacji DevOps platformy Azure jako właściciel (https:\//dev.azure.com/{organization}/{project}).
 
 2. Z organizacji paska narzędzi, wybierz ikonę koła zębatego, a następnie wybierz pozycję **zasad**:
 
