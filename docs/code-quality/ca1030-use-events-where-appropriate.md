@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7e96009d689fec48d242f4db1790e6e0eacafa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f9a3d2ef30018c7fe57f1e7d728ba1dd152f56f5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842366"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714297"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używaj zdarzeń, o ile to możliwe
 
@@ -45,7 +45,7 @@ Domyślnie ta reguła przegląda tylko widocznych zewnętrznie metod, ale jest t
 
 Ta reguła wykrywa metody o nazwach, które normalnie mogą być używane dla zdarzeń. Zdarzenia wykonaj wzorzec projektowy obserwatora lub publikowania i subskrybowania; są one używane podczas zmiany stanu, w jeden obiekt musi zostać przekazany innych obiektów. Jeśli metoda jest wywoływana w odpowiedzi na jasno określoną zmianę stanu, metoda powinna być wywoływany przez program obsługi zdarzeń. Obiekty, które wywołują tę metodę, powinny wywoływać zdarzenia, a nie bezpośrednio metodę.
 
-Typowe przykłady zdarzeń znajdują się w aplikacji interfejsu użytkownika, gdy akcja użytkownika, takie jak kliknięcie przycisku powoduje, że segment kodu do wykonania. Model zdarzenia .NET Framework nie jest ograniczona do interfejsów użytkownika; powinno być używane wszędzie tam, gdzie muszą komunikować się, że stan zmieni się na co najmniej jeden obiekt.
+Typowe przykłady zdarzeń znajdują się w aplikacji interfejsu użytkownika, gdy akcja użytkownika, takie jak kliknięcie przycisku powoduje, że segment kodu do wykonania. Model zdarzeń platformy .NET nie jest ograniczona do interfejsów użytkownika. Powinno być używane wszędzie tam, gdzie muszą komunikować się, że stan zmieni się na co najmniej jeden obiekt.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 

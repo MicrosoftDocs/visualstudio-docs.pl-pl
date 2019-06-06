@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c251b9fbf8327369acf20ef6acea0518e2b16913
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c7f3bdc6351f30d5cad60a7ed9663824fa3d434
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808266"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714708"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Przejrzyj przypadki użycia metod Deny i PermitOnly
 
@@ -31,14 +31,16 @@ ms.locfileid: "62808266"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda zawiera sprawdzanie zabezpieczeń, które określa akcji zabezpieczeń PermitOnly lub Odmów.
+
+Metoda zawiera sprawdzanie zabezpieczeń, które określa akcji zabezpieczeń PermitOnly lub Odmów.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Akcji zabezpieczeń powinny być używane tylko przez tych, którzy mają zaawansowaną wiedzę o zabezpieczeniach .NET Framework. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.
 
- Odmów zmienia domyślne zachowanie przeszukiwania stosu, który występuje w odpowiedzi na żądania zabezpieczeń. Dzięki temu można określić uprawnienia, które nie muszą być przyznawane na czas trwania odmowy metody, niezależnie od rzeczywistego uprawnień obiektów wywołujących w stosie wywołań. Jeśli przejście przez stos wykrywa metody, która jest zabezpieczony przez Odmów, a Jeśli żądane uprawnienie jest zawarte w odmówionych uprawnień, przejście przez stos nie powiedzie się. PermitOnly również zmienia domyślne zachowanie przeszukiwania stosu. Umożliwia ona kod, aby określić te uprawnienia, które mogą być udzielane, niezależnie od uprawnień obiektom wywołującym. Jeśli przejście przez stos wykrywa metody, która jest zabezpieczony przez PermitOnly i żądane uprawnienie nie jest uwzględniony w uprawnieniach, które są określone przez PermitOnly, przejście przez stos nie powiedzie się.
+<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Akcji zabezpieczeń powinny być używane tylko przez tych, którzy mają zaawansowaną wiedzę o zabezpieczeń .NET. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.
 
- Kod, który opiera się na te akcje należy dokładnie ocenić dla luki w zabezpieczeniach ze względu na ograniczone użyteczność i zachowanie subtelne. Rozważ następujące opcje:
+Odmów zmienia domyślne zachowanie przeszukiwania stosu, który występuje w odpowiedzi na żądania zabezpieczeń. Dzięki temu można określić uprawnienia, które nie muszą być przyznawane na czas trwania odmowy metody, niezależnie od rzeczywistego uprawnień obiektów wywołujących w stosie wywołań. Jeśli przejście przez stos wykrywa metody, która jest zabezpieczony przez Odmów, a Jeśli żądane uprawnienie jest zawarte w odmówionych uprawnień, przejście przez stos nie powiedzie się. PermitOnly również zmienia domyślne zachowanie przeszukiwania stosu. Umożliwia ona kod, aby określić te uprawnienia, które mogą być udzielane, niezależnie od uprawnień obiektom wywołującym. Jeśli przejście przez stos wykrywa metody, która jest zabezpieczony przez PermitOnly i żądane uprawnienie nie jest uwzględniony w uprawnieniach, które są określone przez PermitOnly, przejście przez stos nie powiedzie się.
+
+Kod, który opiera się na te akcje należy dokładnie ocenić dla luki w zabezpieczeniach ze względu na ograniczone użyteczność i zachowanie subtelne. Rozważ następujące opcje:
 
 - [Link zapotrzebowanie](/dotnet/framework/misc/link-demands) nie dotyczy Deny lub PermitOnly.
 
@@ -51,22 +53,24 @@ ms.locfileid: "62808266"
 - Jeśli stan odmowa ma żadnego efektu, to znaczy, gdy obiekt wywołujący ma uprawnienie, który jest zablokowany przez Odmów, obiekt wywołujący można dostępu do chronionego zasobu bezpośrednio, pomijanie Odmów. Podobnie jeśli obiekt wywołujący nie ma odmowy uprawnień, przejście przez stos może zakończyć się niepowodzeniem bez Odmów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Naruszenie zasad spowoduje, że każde użycie tych akcji zabezpieczeń. Aby naprawić naruszenie, nie należy używać tych akcji zabezpieczeń.
+
+Naruszenie zasad spowoduje, że każde użycie tych akcji zabezpieczeń. Aby naprawić naruszenie, nie należy używać tych akcji zabezpieczeń.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, tylko w przypadku, po zakończeniu przeglądu zabezpieczeń.
+
+Pomijaj ostrzeżeń dla tej reguły, tylko w przypadku, po zakończeniu przeglądu zabezpieczeń.
 
 ## <a name="example-1"></a>Przykład 1
- W poniższym przykładzie pokazano kilka ograniczeń Odmów.
 
- Następująca biblioteka zawiera klasę, która ma dwie metody, które są identyczne, z wyjątkiem wymogów bezpieczeństwa, które je chronić.
+W poniższym przykładzie pokazano kilka ograniczeń Odmów. Biblioteka zawiera klasę, która ma dwie metody, które są identyczne, z wyjątkiem wymogów bezpieczeństwa, które je chronić.
 
- [!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
+[!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
 
 ## <a name="example-2"></a>Przykład 2
- Następującej aplikacji przedstawia skutki Odmów zabezpieczonej metod z biblioteki.
 
- [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
+Następującej aplikacji przedstawia skutki Odmów zabezpieczonej metod z biblioteki.
+
+[!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
 
 Ten przykład generuje następujące wyniki:
 

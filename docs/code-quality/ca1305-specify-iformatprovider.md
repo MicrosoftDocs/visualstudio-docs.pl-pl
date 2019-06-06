@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797545"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714678"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Określ argument IFormatProvider
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797545"
 
 Metoda lub Konstruktor wywołują jednego lub więcej członków, którzy mają przeciążenia akceptujące <xref:System.IFormatProvider?displayProperty=fullName> parametru, a metoda lub Konstruktor niewywołujący przeciążenia, które przyjmuje <xref:System.IFormatProvider> parametru.
 
-Ta zasada powoduje ignorowanie wywołania do metod .NET Framework, które są udokumentowane jako ignorowanie <xref:System.IFormatProvider> parametru. Reguła ignoruje także następujących metod:
+Ta zasada powoduje ignorowanie wywołania do metod .NET, które są udokumentowane jako ignorowanie <xref:System.IFormatProvider> parametru. Reguła ignoruje także następujących metod:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Ta zasada powoduje ignorowanie wywołania do metod .NET Framework, które są ud
 
 ## <a name="rule-description"></a>Opis reguły
 
-Gdy <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> lub <xref:System.IFormatProvider> obiektu nie jest podany, wartość domyślna, która jest dostarczana przez członka przeciążonego może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych. Ponadto elementy członkowskie programu .NET Framework wybierz domyślną kulturę i formatowanie na podstawie założeń, które mogą być niepoprawne w kodzie. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać informacje specyficzne dla kultury, zgodnie z następującymi wytycznymi:
+Gdy <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> lub <xref:System.IFormatProvider> obiektu nie jest podany, wartość domyślna, która jest dostarczana przez członka przeciążonego może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych. Ponadto elementy członkowskie programu .NET wybierz domyślną kulturę i formatowanie na podstawie założeń, które mogą być niepoprawne w kodzie. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać informacje specyficzne dla kultury, zgodnie z następującymi wytycznymi:
 
 - Jeśli wartość będzie wyświetlana dla użytkownika, należy użyć bieżącej kultury. Zobacz <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

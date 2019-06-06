@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953676"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714473"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing — często zadawane pytania
 
@@ -33,7 +33,7 @@ Live Unit Testing działa z trzech struktur testowania jednostek popularne, wymi
 |Struktury testowej  |Minimalna wersja programu Visual Studio karty  |Minimalna wersja Framework  |
 |---------|---------|---------|
 |xUnit.net |2.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio |xunit 1.9.2 |
-|Rozszerzenie NUnit |NUnit3TestAdapter wersji 3.5.1 |Wersja 3.5.0 NUnit |
+|Rozszerzenie NUnit |Wersja NUnit3TestAdapter numer 3.7.0 |Wersja 3.5.0 NUnit |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |1.0.5-preview rozwiązań MSTest.TestFramework |
 
 Jeśli masz starszą test oparte na narzędziu MSTest projektów tego odwołania `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i nie chcesz przejść do nowszych pakietów MSTest NuGet, przeprowadź uaktualnienie do programu Visual Studio 2017 w wersji 15.4 lub nowszej.

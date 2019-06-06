@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f666dc71aaf9683d9a7c936cc4985e97146d9454
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842527"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714380"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Użyj ogólnych wystąpień procedury obsługi zdarzeń
 
@@ -41,7 +41,7 @@ Domyślnie ta reguła przegląda tylko typy widoczne na zewnątrz, ale jest to [
 
 ## <a name="rule-description"></a>Opis reguły
 
-Przed .NET, aby można było przekazać niestandardowe informacje do narzędzia obsługi zdarzeń nowe delegowanie musiały być zadeklarowany, które określone klasy, który został utworzony na podstawie <xref:System.EventArgs?displayProperty=fullName> klasy. Ta zasada obowiązuje już na platformie .NET. Wprowadzona w programie .NET Framework <xref:System.EventHandler%601?displayProperty=fullName> delegata, Delegat ogólny, która umożliwia każdej klasy, która jest pochodną <xref:System.EventArgs> ma być używany razem z programu obsługi zdarzeń.
+Przed .NET, aby można było przekazać niestandardowe informacje do narzędzia obsługi zdarzeń nowe delegowanie musiały być zadeklarowany, które określone klasy, który został utworzony na podstawie <xref:System.EventArgs?displayProperty=fullName> klasy. Na platformie .NET, ogólnego <xref:System.EventHandler%601?displayProperty=fullName> delegata umożliwia każdej klasy, która jest pochodną <xref:System.EventArgs> ma być używany razem z programu obsługi zdarzeń.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 

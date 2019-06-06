@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564839"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714471"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 
@@ -56,7 +56,7 @@ Usługi danych WCF jest implementacją standardowego protokołu Open Data (OData
 
 ### <a name="wcf-programming-model"></a>Model programowania programu WCF
 
-Model programowania WCF opiera się na komunikację między dwiema jednostkami: usługi WCF i klienta WCF. Model programowania jest hermetyzowany w <xref:System.ServiceModel> przestrzeni nazw w programie .NET Framework.
+Model programowania WCF opiera się na komunikację między dwiema jednostkami: usługi WCF i klienta WCF. Model programowania jest hermetyzowany w <xref:System.ServiceModel> przestrzeni nazw na platformie .NET.
 
 ### <a name="wcf-service"></a>Usługa WCF
 
@@ -228,7 +228,7 @@ Można powiązać danych zwracanych przez usługę Windows Communication Foundat
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Instrukcje: Konfigurowanie usługi do ponownego użycia istniejących typów
 
-Po dodaniu do projektu odwołanie do usługi żadnych typów zdefiniowanych w usłudze są generowane w projekcie lokalnym. W wielu przypadkach tworzy to typy zduplikowanych, gdy usługa korzysta z wspólnego typów programu .NET Framework lub gdy typy są definiowane w bibliotece udostępnionej.
+Po dodaniu do projektu odwołanie do usługi żadnych typów zdefiniowanych w usłudze są generowane w projekcie lokalnym. W wielu przypadkach tworzy to typy zduplikowanych, gdy usługa korzysta z popularnych typów .NET lub gdy typy są definiowane w bibliotece udostępnionej.
 
 Aby uniknąć tego problemu, typów w przywoływanych zestawach są udostępnione domyślnie. Jeśli chcesz wyłączyć udostępnianie dla jednego lub więcej zestawów typu, możesz zrobić to w **Konfigurowanie odwołania do usług** okno dialogowe.
 
