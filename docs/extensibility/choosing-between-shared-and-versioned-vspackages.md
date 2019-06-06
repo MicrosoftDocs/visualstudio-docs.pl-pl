@@ -12,17 +12,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eea3cb0abe4c0e1151b15680bbab984f9131c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321025"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747787"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Wybieranie między udostępnionymi i wersjonowanymi pakietami VSPackage
 Różne wersje programu Visual Studio mogą współistnieć na tym samym komputerze. Pakietów VSPackage może obsługiwać dowolnej kombinacji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wersji.
 
- Aby umożliwić instalacje side-by-side pakietów VSPackage przy użyciu jednej z dwóch strategii, udostępniony strategię lub numerów wersji strategii. Zarówno pomieścić obecności wielu wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i skojarzone wersje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Aby umożliwić instalacje side-by-side pakietów VSPackage przy użyciu jednej z dwóch strategii, udostępniony strategię lub numerów wersji strategii. Zarówno pomieścić obecności wielu wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i skojarzone wersje programu .NET Framework.
 
  W przypadku użycia udostępnionego strategii jednego pakietu VSPackage jest zarejestrowana do użycia w wielu wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W określonej wersji strategii, wiele pakietu VSPackage biblioteki DLL są zainstalowane, jeden dla każdej wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] która jest obsługiwana.
 

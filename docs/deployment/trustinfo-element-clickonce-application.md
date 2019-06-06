@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d6ac13c6eb76bff5ffc07043fd20063700237fc
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927302"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745597"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; — element (aplikacja ClickOnce)
 Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomienia na komputerze klienckim.
@@ -87,7 +87,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
      Wymagana. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.
 
 ## <a name="ipermission"></a>Interfejsu IPermission
- Opcjonalna. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission` Elementu pełni identyfikuje klasy uprawnień w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. `IPermission` Element ma następujące atrybuty, ale mogą mieć dodatkowe atrybuty, które odnoszą się do właściwości klasy uprawnień. Aby sprawdzić składnię określone uprawnienie, zobacz temat w przykładach wymienionych w pliku Security.config —.
+ Opcjonalna. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission` Elementu pełni identyfikuje klasy uprawnień w programie .NET Framework. `IPermission` Element ma następujące atrybuty, ale mogą mieć dodatkowe atrybuty, które odnoszą się do właściwości klasy uprawnień. Aby sprawdzić składnię określone uprawnienie, zobacz temat w przykładach wymienionych w pliku Security.config —.
 
 - `class`
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793555"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746864"
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 
@@ -61,11 +61,11 @@ Jeśli masz plik, który ma zastosowanie do wielu projektów, takich jak plik re
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Tworzenie projektu platformy .NET, który jest przeznaczony dla określonej wersji programu .NET Framework
 
-Podczas tworzenia projektu można określić określonej wersji programu .NET Framework, który chcesz, aby projekt do użycia.
+Kiedy tworzysz projekt programu .NET Framework, można określić określonej wersji programu .NET Framework, który chcesz, aby projekt do użycia. (Podczas tworzenia projektu platformy .NET Core nie Określ wersję framework).
 
 ::: moniker range="vs-2017"
 
-Aby określić wersji programu .NET framework, wybierz **Framework** menu rozwijane w **nowy projekt** okno dialogowe.
+Aby określić wersji programu .NET Framework, wybierz **Framework** menu rozwijane w **nowy projekt** okno dialogowe.
 
 ![W ramach listy rozwijanej w oknie dialogowym Nowy projekt](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Aby określić wersji programu .NET framework, wybierz **Framework** menu rozwij
 
 ::: moniker range=">=vs-2019"
 
-Aby określić wersji programu .NET framework, wybierz **Framework** menu rozwijanego **Utwórz nowy projekt** strony.
+Aby określić wersji programu .NET Framework, wybierz **Framework** menu rozwijanego **Utwórz nowy projekt** strony.
 
 ![Selektor Framework w konfigurowania nowego projektu](media/vs-2019/configure-new-project-framework.png)
 

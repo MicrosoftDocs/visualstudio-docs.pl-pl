@@ -11,21 +11,19 @@ helpviewer_keywords:
 - IntelliTrace, debugging applications
 - debugger, (See also IntelliTrace [Visual Studio ALM])
 - debugging, (See also IntelliTrace [Visual Studio ALM])
-- IntelliTrace, collecting data from Test Manager
 - IntelliTrace
-- Test Manager, debugging with IntelliTrace
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678807"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746671"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Funkcja IntelliTrace programu Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -44,7 +42,6 @@ Za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise (ale nie w 
 |||
 |-|-|
 |**Debuguj aplikację przy użyciu funkcji IntelliTrace:**<br /><br /> — Pokaż poprzednie zdarzenia.<br />— Pokaż informacje wywołań w przeszłych zdarzeń.<br />-Zapisz sesję IntelliTrace.<br />-Control IntelliTrace zbiera dane.|- [Sprawdź poprzednie Stany aplikacji za pomocą funkcji IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Wskazówki: Używanie funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debugowanie historyczne](../debugger/historical-debugging.md)|
-|**Zbieraj dane IntelliTrace podczas sesji testowej w programie Test Manager**|- [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|- [Przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Uruchom debugowanie z pliku dziennika IntelliTrace (plik itrace).**|- [Przy użyciu zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
@@ -71,8 +68,6 @@ Możesz zapisywać dane IntelliTrace z następujących źródeł:
 
 - Sesja IntelliTrace w Visual Studio 2015 Enterprise lub nowszy ani we wcześniejszych wersjach programu Visual Studio Ultimate.
 
-- Sesji testowej w programie Microsoft Test Manager
-
 - Aplikacje internetowe ASP.NET hostowane w usłudze IIS lub aplikacje SharePoint 2010 i SharePoint 2013 działające we wdrożeniu, gdy używasz programu Microsoft Monitoring Agent samodzielnie lub w połączeniu z programem System Center 2012. Zobacz [używać autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).
 
 Oto kilka przykładów, jak IntelliTrace może pomóc w debugowaniu:
@@ -84,10 +79,6 @@ Oto kilka przykładów, jak IntelliTrace może pomóc w debugowaniu:
 - Ma miejsce wyjątek.
 
      Nie mając IntelliTrace zostanie wyświetlony komunikat o wyjątku, ale nie mają najwięcej informacji o zdarzeniach, które doprowadziły do niego. Można sprawdzić stos wywołań, aby zobaczyć łańcuch wywołań, który doprowadził do wyjątku, ale nie widać sekwencji zdarzeń, które wystąpiły podczas tych wywołań. Z IntelliTrace można sprawdzić zdarzenia, które miały miejsce przed wystąpieniem wyjątku.
-
-- Aplikacja przestaje działać na komputerze testowym, ale pomyślnie działa na komputerze deweloperskim.
-
-     Możesz zbierać dane IntelliTrace z Microsoft Test Manager, zapisać dane w pliku iTrace i dołączyć ten plik do elementu pracy programu Team Foundation Server, aby przeprowadzić późniejszą analizę. Zobacz [zbieranie większej ilości danych podczas wykonywania testów ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) i [korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
 - Błąd lub awaria ma miejsce we wdrożonej aplikacji.
 

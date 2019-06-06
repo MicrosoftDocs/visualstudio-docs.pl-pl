@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433880"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747269"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Nieobsługiwane scenariusze debugowania w Projektancie przepływu pracy
 
-Projektant przepływu pracy w programie .NET Framework 4 dodano wiele nowych funkcji, ale nadal istnieją pewne scenariusze debugowania, które nie obsługują.
-
-Nieobsługiwany projektanta przepływu pracy debugowania scenariusze są następujące:
+Projektant przepływu pracy nie obsługuje następujących scenariuszy debugowania:
 
 - Wykonywanie nie mogą być kontynuowane po kod został zmodyfikowany.
 
@@ -29,7 +27,7 @@ Nieobsługiwany projektanta przepływu pracy debugowania scenariusze są następ
 
 - Projektanta przepływu pracy nie może służyć do debugowania utworzonych w kodzie bez korzystania z projektanta przepływów pracy.
 
-- Przepływy pracy utworzone we wcześniejszych wersjach programu Windows Workflow Foundation (WF) nie można debugować w programie .NET Framework 4 designer.
+- Przepływy pracy utworzone we wcześniejszych wersjach programu Windows Workflow Foundation (WF) nie można debugować w programie .NET Framework 4 lub nowszym.
 
 - Punkty przerwania nie może być zdefiniowana w łączach między działaniami lub <xref:System.Activities.Statements.Flowchart> węzłów.
 

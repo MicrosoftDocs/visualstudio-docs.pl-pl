@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714268"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744703"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Unikaj klas wewnętrznych bez wystąpień
 
@@ -58,7 +58,7 @@ Jeśli zastosujesz <xref:System.Runtime.CompilerServices.InternalsVisibleToAttri
 
 Aby naprawić naruszenie tej zasady, Usuń typ lub Dodaj kod, który korzysta z niego. Jeśli typ zawiera tylko `static` metod, Dodaj jedną z następujących do typu, aby uniemożliwić kompilatorowi emitowania publiczne wystąpienia domyślnego konstruktora:
 
-- `static` Modyfikator C# typów, których platformą docelową [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] lub nowszej.
+- `static` Modyfikator C# typów przeznaczonych dla platformy .NET Framework 2.0 lub nowszej.
 
 - Konstruktor prywatny dla typów, których platformą docelową .NET Framework w wersji 1.0 i 1.1.
 

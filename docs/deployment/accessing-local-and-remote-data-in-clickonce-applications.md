@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406619"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746066"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce
 Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapewnia różne opcje do odczytywania i zapisywania danych, zarówno lokalnie, jak i zdalnie.
@@ -37,7 +37,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
 ### <a name="clickonce-data-directory"></a>Katalog danych ClickOnce
  Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zainstalowanej na komputerze lokalnym ma katalog danych, przechowywany w katalogu Documents and Settings użytkownika. Każdy plik objęte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i oznaczony jako plik "dane" jest kopiowany do tego katalogu, gdy aplikacja jest zainstalowana. Pliki danych może być dowolnego typu pliku, najczęściej używane są tekstu, XML i pliki bazy danych, takich jak pliki .mdb Microsoft Access.
 
- Katalog danych jest przeznaczona dla danych zarządzanych aplikacji, które to dane, które aplikacja jawnie zapisuje i przechowuje. Wszystkie statyczne nondependency pliki nie są oznaczone jako "dane" w manifeście aplikacji będzie zamiast tego znajdują się w katalogu aplikacji. Jest to katalog, gdzie aplikacja pliku wykonywalnym (*.exe*) znajdują się pliki oraz zestawy.
+ Katalog danych jest przeznaczona dla danych zarządzanych aplikacji, które to dane, które aplikacja jawnie zapisuje i przechowuje. Wszystkie statyczne nondependency pliki nie są oznaczone jako "dane" w manifeście aplikacji będzie zamiast tego znajdują się w katalogu aplikacji. Jest to katalog, gdzie aplikacja pliku wykonywalnym ( *.exe*) znajdują się pliki oraz zestawy.
 
 > [!NOTE]
 > Gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] odinstalowania aplikacji, katalog danych zostaną również usunięte. Nie wolno używać katalogu danych do przechowywania danych zarządzanych przez użytkowników końcowych, takich jak dokumenty.
@@ -60,7 +60,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
 
  Możesz również uzyskać ścieżkę katalogu danych przy użyciu odpowiednich zmiennych na <xref:System.Windows.Forms.Application> klasy, takie jak <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- Manipulowanie inne typy plików mogą wymagać dodatkowych uprawnień. Na przykład, jeśli chcesz używać bazy danych programu Access (*.mdb*) pliku, aplikacja musi assert pełne zaufanie aby można było używać odpowiedniego \<xref:System.Data > klasy.
+ Manipulowanie inne typy plików mogą wymagać dodatkowych uprawnień. Na przykład, jeśli chcesz używać bazy danych programu Access ( *.mdb*) pliku, aplikacja musi assert pełne zaufanie aby można było używać odpowiedniego \<xref:System.Data > klasy.
 
 #### <a name="data-directory-and-application-versions"></a>Katalog danych i wersji aplikacji
  Każda wersja aplikacji ma swój własny katalog danych, która jest odizolowana od innych wersji. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tworzy ten katalog, niezależnie od tego, czy wszystkie pliki danych są uwzględnione we wdrożeniu, tak, aby aplikacja ma lokalizację, aby utworzyć nowe pliki danych w czasie wykonywania. Po zainstalowaniu nowej wersji aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] skopiuje wszystkie istniejące pliki danych z poprzedniej wersji danych katalogu w katalogu danych nowej wersji — tego, czy zostały uwzględnione we wdrożeniu, oryginalnym lub utworzone przez aplikacja.
@@ -72,7 +72,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
 ### <a name="isolated-storage"></a>Wydzielona pamięć masowa
  Wydzielona pamięć masowa zapewnia interfejs API do tworzenia i uzyskiwania dostępu do plików za pomocą prostego interfejsu API. Rzeczywistej lokalizacji przechowywanych plików jest ukryty dla deweloperów i użytkownika.
 
- Izolowany magazyn działa we wszystkich wersjach [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Wydzielona pamięć masowa działa również w częściowo zaufanych aplikacji bez konieczności stosowania dodatkowych uprawnień przyznaje. Jeśli aplikacja musi działać w częściowej relacji zaufania, ale musi przechowywać dane specyficzne dla aplikacji, należy używać wydzielonej pamięci masowej.
+ Wydzielona pamięć masowa działa we wszystkich wersjach programu .NET Framework. Wydzielona pamięć masowa działa również w częściowo zaufanych aplikacji bez konieczności stosowania dodatkowych uprawnień przyznaje. Jeśli aplikacja musi działać w częściowej relacji zaufania, ale musi przechowywać dane specyficzne dla aplikacji, należy używać wydzielonej pamięci masowej.
 
  Aby uzyskać więcej informacji, zobacz [wydzielonej pamięci masowej](/dotnet/standard/io/isolated-storage).
 
@@ -98,7 +98,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
  Jeśli Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja nie może uzyskiwać dostęp do serwera sieci Web, z powodu ograniczeń zabezpieczeń, aplikacja musi assert <xref:System.Net.WebPermission> dla tej witryny sieci Web. Aby uzyskać więcej informacji na temat zwiększania uprawnień zabezpieczeń dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, zobacz [aplikacji Secure ClickOnce](../deployment/securing-clickonce-applications.md).
 
 ### <a name="access-data-through-an-xml-web-service"></a>Dostęp do danych za pośrednictwem usługi XML sieci Web
- Jeśli udostępnisz danych jako usługi sieci Web XML, uzyskujesz dostęp do danych za pomocą serwera proxy usługi sieci Web XML. Serwer proxy jest [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] utworzyć przy użyciu klasy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Operacje usługi XML sieci Web — takie jak pobieranie klientów, wprowadzanie do zamówienia i tak dalej — są widoczne jako metody na serwerze proxy. To sprawia, że usługi sieci Web łatwiejsze w użyciu niż nieprzetworzony tekst lub pliki XML.
+ Jeśli udostępnisz danych jako usługi sieci Web XML, uzyskujesz dostęp do danych za pomocą serwera proxy usługi sieci Web XML. Serwer proxy jest klasą .NET Framework, możesz utworzyć przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Operacje usługi XML sieci Web — takie jak pobieranie klientów, wprowadzanie do zamówienia i tak dalej — są widoczne jako metody na serwerze proxy. To sprawia, że usługi sieci Web łatwiejsze w użyciu niż nieprzetworzony tekst lub pliki XML.
 
  Jeśli usługi XML sieci Web działa za pośrednictwem protokołu HTTP, usługi będą powiązane przez te same ograniczenia zabezpieczeń jako <xref:System.Net.WebClient> i <xref:System.Net.HttpWebRequest> klasy.
 

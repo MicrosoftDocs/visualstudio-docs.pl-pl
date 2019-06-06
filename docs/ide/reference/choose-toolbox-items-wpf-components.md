@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790931"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744982"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybierz elementy paska narzędzi, składniki WPF
 
@@ -31,7 +31,7 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę forma
 - Po wyczyszczeniu pola wyboru obok składnika odpowiednią ikonę zostaną usunięte z **przybornika**.
 
     > [!NOTE]
-    > Składniki .NET Framework zainstalowana na danym komputerze pozostaną dostępne, czy ich ikony są wyświetlane w **przybornika**.
+    > Składniki .NET zainstalowany na tym komputerze pozostaną dostępne, czy ich ikony są wyświetlane w **przybornika**.
 
 Kolumny na **składniki WPF** karta zawiera następujące informacje:
 
@@ -41,15 +41,15 @@ Wyświetla listę nazw kontrolek WPF, dla których wpisy znajdują się w rejest
 
 **Namespace**
 
-Wyświetla hierarchię [interfejsu API programu .NET Framework klasy](/dotnet/api/?view=netframework-4.7) przestrzeni nazw, który definiuje strukturę składnika. Sortuj w tej kolumnie, aby wyświetlić listę dostępnych składników w każdej przestrzeni nazw z .NET Framework zainstalowana na danym komputerze.
+Wyświetla hierarchię [interfejsu API platformy .NET](/dotnet/api/?view=netframework-4.7) przestrzeni nazw, który definiuje strukturę składnika. Sortuj w tej kolumnie, aby wyświetlić listę dostępnych składnikach w obrębie każdego obszaru nazw .NET zainstalowany na tym komputerze.
 
 **Nazwa zestawu**
 
-Wyświetla nazwę zestawu .NET Framework, który zawiera przestrzeń nazw dla każdego składnika. Sortuj od tej kolumny, aby wyświetlić listę przestrzeni nazw zawartych w każdym zestawie .NET Framework zainstalowana na danym komputerze.
+Wyświetla nazwę zestawu .NET, który zawiera przestrzeń nazw dla każdego składnika. Sortuj w tej kolumnie, aby wyświetlić listę przestrzeni nazw zawartych w każdym zestawie .NET zainstalowany na tym komputerze.
 
 **Directory**
 
-Wyświetla lokalizację zestawu .NET Framework. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache. Aby uzyskać więcej informacji na temat globalnej pamięci podręcznej zestawów, zobacz [Praca z zestawami i Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Wyświetla lokalizację zestawu .NET. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache. Aby uzyskać więcej informacji na temat globalnej pamięci podręcznej zestawów, zobacz [Praca z zestawami i Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Lista elementów UI
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974166"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744728"
 ---
 # <a name="how-to-choose-collection-methods"></a>Instrukcje: Wybieranie metod zbierania
 
@@ -34,7 +34,7 @@ Można użyć sesji wydajności **metoda** właściwości w celu określenia naj
 |----------------------------| - |
 | **Próbkowanie Procesora** | Zbieranie statystyk aplikacji, które są przydatne do analizy początkowej i analizować problemy wykorzystanie procesora CPU. |
 | **Instrumentacja** | Służy do zbierania danych o chronometrażu, które są przydatne na potrzeby ukierunkowanej analizy i analizowania problemów z wydajnością we/wy. |
-| **Alokacja pamięci platformy .NET** | Gromadzi informacje o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dane alokacji pamięci za pomocą metoda profilowania próbkowanie. |
+| **Alokacja pamięci platformy .NET** | Zbiera dane alokacji pamięci .NET Framework przy użyciu metoda profilowania próbkowanie. |
 | **Współbieżność** | Zbiera dane rywalizacji o zasób liczbowych. |
 
 ## <a name="performance-explorer"></a>Eksplorator wydajności
@@ -75,7 +75,7 @@ Można użyć sesji wydajności **metoda** właściwości w celu określenia naj
 
 4. Kliknij przycisk **próbkowania** lub **Instrumentacji**.
 
-5. Kliknij przycisk **informacje dotyczące alokacji obiektów .NET zbieranie** do zbierania rozmiaru i liczby [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] obiekt alokacji.
+5. Kliknij przycisk **informacje dotyczące alokacji obiektów .NET zbieranie** do zbierania rozmiaru i liczby alokacji obiektów platformy .NET Framework.
 
 6. (Opcjonalnie) Kliknij przycisk **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** do zbierania danych o generacje kolekcji wyrzucania elementów, w których pamięci obiektu zostało odzyskane.
 

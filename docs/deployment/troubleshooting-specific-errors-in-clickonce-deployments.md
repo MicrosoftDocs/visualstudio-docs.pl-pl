@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927460"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745665"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce
 W tym artykule przedstawiono następujące typowe błędy, które mogą wystąpić podczas wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji oraz przedstawiono kroki, aby rozwiązać każdy problem.
@@ -36,7 +36,7 @@ W tym artykule przedstawiono następujące typowe błędy, które mogą wystąpi
 
  Najpierw upewnij się, że serwer jest skonfigurowany do skojarzenia *.application* rozszerzenie o zawartości typu "application/x-ms aplikacji."
 
- Jeśli serwer jest skonfigurowany prawidłowo, sprawdź, czy [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] jest zainstalowany na tym komputerze. Jeśli [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] jest zainstalowany i nadal widzisz ten problem, spróbuj odinstalowania i ponownego zainstalowania [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] ponownie zarejestrować typ zawartości na komputerze klienckim.
+ Jeśli serwer jest skonfigurowany prawidłowo, sprawdź zainstalowanie programu .NET Framework 2.0 na komputerze. Jeśli zainstalowano program .NET Framework 2.0 i nadal widzisz ten problem, spróbuj odinstalowania i ponownego zainstalowania programu .NET Framework 2.0, aby ponownie zarejestrować zawartość typu na komputerze klienckim.
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Komunikat o błędzie jest wyświetlany komunikat, "nie można pobrać aplikacji. Pliki Brak we wdrożeniu"lub"pobrania aplikacji zostało przerwane, sprawdź, czy błędy sieciowe i spróbuj ponownie później "
  Ten komunikat oznacza, że jeden lub więcej plików, do którego nastąpiło odwołanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty nie można pobrać. Najprostszym sposobem, aby debugować ten błąd jest spróbują pobrać adres URL, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mówi, nie można go pobrać. Poniżej przedstawiono niektóre możliwe przyczyny:

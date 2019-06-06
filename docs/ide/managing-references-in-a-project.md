@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535585"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747050"
 ---
 # <a name="manage-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
@@ -38,7 +38,7 @@ Aby dodać odwołanie, kliknij prawym przyciskiem myszy **odwołania** lub **zal
 
 Można dodać odwołania do następujących typów składników i usług:
 
-- Biblioteki klas .NET framework lub zestawy
+- Biblioteki klas platformy .NET lub zestawy
 
 - Aplikacje platformy uniwersalnej systemu Windows
 
@@ -50,7 +50,7 @@ Można dodać odwołania do następujących typów składników i usług:
 
 ## <a name="uwp-app-references"></a>Odwołania do aplikacji platformy uniwersalnej systemu Windows
 
-### <a name="project-references"></a>Odwołania do projektu
+### <a name="project-references"></a>Odwołania projektu
 
 Uniwersalne projekty platformy Windows (UWP) można utworzyć odwołania do innych projektów platformy uniwersalnej systemu Windows w rozwiązaniu lub do projektów Windows 8.1 lub plików binarnych, pod warunkiem, że te projekty nie używają interfejsów API, które zostały zaniechane w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [przenieść z 8 środowiska uruchomieniowego Windows do platformy uniwersalnej systemu Windows](/windows/uwp/porting/w8x-to-uwp-root).
 
@@ -101,11 +101,11 @@ W przypadku wdrożenia aplikacji, która zawiera odwołanie do składnika niesta
 
 Domyślnie <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> właściwość jest ustawiona na **False** Jeśli zestaw lub składnik znajduje się w globalnej pamięci podręcznej lub jest składnikiem struktury. W przeciwnym razie wartość jest równa **True**. Odwołania projektu do projektu są zawsze ustawione na **True**.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Odwołania projektu lub zestawu, który jest przeznaczony dla innej wersji programu .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Odwołania projektu lub zestawu, który jest przeznaczony dla innej wersji programu .NET
 
-Możesz tworzyć aplikacje, które odwołują się projektów lub zestawów, których docelowa była inna wersja programu .NET Framework. Na przykład można utworzyć aplikację współpracującego .NET Framework 4.6, które odwołuje się do zestawu, który jest przeznaczony dla .NET Framework 4.5. Jeśli tworzysz projekt, który jest przeznaczony dla starszej wersji programu .NET Framework, nie można ustawić odwołania w tym projekcie do projektu lub zestawu, który jest przeznaczony dla nowszej wersji.
+Możesz tworzyć aplikacje, które odwołują się projektów lub zestawów, przeznaczonych dla różnych wersji programu .NET. Na przykład można utworzyć aplikację współpracującego .NET Framework 4.6, które odwołuje się do zestawu, który jest przeznaczony dla .NET Framework 4.5. Jeśli tworzysz projekt, który jest przeznaczony dla starszej wersji oprogramowania .NET, nie można ustawić odwołania w tym projekcie do projektu lub zestawu, który jest przeznaczony dla nowszej wersji.
 
-Aby uzyskać więcej informacji, zobacz [wielowersyjnością kodu – Przegląd](../ide/visual-studio-multi-targeting-overview.md).
+Aby uzyskać więcej informacji, zobacz [Framework przeznaczonych dla Przegląd](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Odwołania do projektu do projektu
 

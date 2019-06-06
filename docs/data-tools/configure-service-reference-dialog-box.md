@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca5f71d386f48b36fcb1126a1e0467b40ef8d73
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567976"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745582"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfiguruj odwołanie do usługi — Okno dialogowe
 
@@ -98,7 +98,7 @@ Aby uzyskać dostęp do **Konfiguruj odwołanie do usługi** odwoływać się ok
  Wyświetla **Dodaj odwołanie sieci Web** okno dialogowe.
 
 > [!NOTE]
-> Ta opcja powinna służyć wyłącznie dla projektów przeznaczonych dla wersji 2.0 programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+> Ta opcja powinna używana tylko dla projektów przeznaczonych dla wersji 2.0 programu .NET Framework.
 >
 > [!NOTE]
 > **Dodaj odwołanie sieci Web** przycisk jest dostępny, gdy **Konfiguruj odwołanie do usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.

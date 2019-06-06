@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548157"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745818"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -56,11 +56,11 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
 
 ## <a name="assemblies-tab"></a>Karta Zestawy
 
-**Zestawy** karta zawiera listę wszystkich zestawów .NET Framework, które są dostępne dla odwołań. **Zestawy** karty nie ma żadnych zestawów z globalnej pamięci podręcznej zestawów (GAC), ponieważ zestawy w pamięci podręcznej GAC są częścią środowiska czasu wykonywania. Wdrażania lub kopiowania aplikacji zawierającej odwołanie do zestawu, który jest zarejestrowany w GAC, zestaw nie będzie można wdrażać i skopiowany z aplikacją, bez względu na to **Kopiuj lokalnie** ustawienie. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md).
+**Zestawy** karta zawiera listę wszystkich zestawów platformy .NET, które są dostępne dla odwołań. **Zestawy** karty nie ma żadnych zestawów z globalnej pamięci podręcznej zestawów (GAC), ponieważ zestawy w pamięci podręcznej GAC są częścią środowiska czasu wykonywania. Wdrażania lub kopiowania aplikacji zawierającej odwołanie do zestawu, który jest zarejestrowany w GAC, zestaw nie będzie można wdrażać i skopiowany z aplikacją, bez względu na to **Kopiuj lokalnie** ustawienie. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md).
 
 Podczas ręcznego dodawania odniesienia do dowolnych przestrzeni nazw EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a>, lub <xref:EnvDTE100>) ustaw **Osadź typy współdziałania** właściwości odwołania do **False** w **właściwości** okna. Ustawienie tej właściwości na **True** Przyczyna tworzyć problemy ze względu na pewne właściwości EnvDTE, które nie mogą być osadzone.
 
-Wszystkie projekty pulpitu zawierają niejawne odwołanie do **mscorlib**. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekty zawierają niejawne odwołanie do <xref:Microsoft.VisualBasic>. Wszystkie projekty zawierają niejawne odwołanie do **System.Core**nawet wtedy, gdy zostanie ono usunięte z listy odwołań.
+Wszystkie projekty pulpitu zawierają niejawne odwołanie do **mscorlib**. Projekty języka Visual Basic zawierają niejawne odwołanie do <xref:Microsoft.VisualBasic>. Wszystkie projekty zawierają niejawne odwołanie do **System.Core**nawet wtedy, gdy zostanie ono usunięte z listy odwołań.
 
 Jeśli typ projektu nie obsługuje zestawów, karta nie pojawi się w **Menadżer odwołań** okno dialogowe.
 
@@ -68,7 +68,9 @@ Jeśli typ projektu nie obsługuje zestawów, karta nie pojawi się w **Menadże
 
 1. **Framework** Wyświetla listę wszystkich zestawów, które stanowią docelową platformę framework.
 
-    Projekty dla systemu Windows 8.x Store aplikacji zawierają odwołania do wszystkich zestawów w docelowym [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] domyślnie przy tworzeniu projektu. W projektach zarządzanych, węzeł tylko do odczytu w ramach **odwołania** folderu w **Eksploratora rozwiązań** wskazuje odwołanie do całej struktury framework. W związku z tym **Framework** karta nie będzie wyliczony żaden zestaw z framework i zamiast tego wyświetli się następujący komunikat: "Wszystkich zestawów Framework istnieją już odwołania. Użyj przeglądarki obiektów do zbadania odwołań w ramach." Dla projektów pulpitu **Framework** kartę wylicza zestawy z docelowej platformy framework i użytkownik musi dodać odwołania wymagane przez tę aplikację.
+   Dla projektów, które nie docelowej platformy .NET Core i platformy uniwersalnej Windows **Framework** kartę wylicza zestawy z docelowej platformy framework. Użytkownik musi dodać wszystkie odwołania wymagane przez tę aplikację.
+
+   Uniwersalne projekty Windows zawierają odwołania do wszystkich zestawów w docelowej platformy framework domyślnie. W projektach zarządzanych, węzeł tylko do odczytu w ramach **odwołania** folderu w **Eksploratora rozwiązań** wskazuje odwołanie do całej struktury framework. W związku z tym **Framework** karta nie wyliczony żaden zestaw z framework i zamiast tego wyświetli następujący komunikat: "Wszystkich zestawów Framework istnieją już odwołania. "Użyj przeglądarki obiektów do zbadania odwołań we Framework".
 
 2. **Rozszerzenia** Wyświetla listę wszystkich zestawów, które opracowali zewnętrzni dostawcy składników i formantów rozszerzyć docelową platformę framework. W zależności od celu aplikacji użytkownika, może być konieczne użycie tych zestawów.
 
@@ -84,22 +86,20 @@ Jeśli typ projektu nie obsługuje zestawów, karta nie pojawi się w **Menadże
 
    I starsze wersje [identyfikatora struktury docelowej]
 
-   Na przykład, jeśli projekt jest przeznaczony dla .NET Framework 4 na komputerze 32-bitowym **rozszerzenia** wyliczą zestawy, które są zarejestrowane w ramach *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*, i  *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
+   Na przykład, jeśli projekt jest przeznaczony dla .NET Framework 4 na komputerze 32-bitowym **rozszerzenia** wylicza zestawy, które są zarejestrowane w ramach *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*, i *\ Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
 
-Niektóre składniki na liście mogą nie być wyświetlane, w zależności od wersji .NET Framework projektu. Taka sytuacja może wystąpić w następujących warunkach:
+Niektóre składniki na liście mogą nie być wyświetlane, w zależności od wersji framework projektu. Taka sytuacja może wystąpić w następujących warunkach:
 
-- Składnik, który korzysta z najnowszej wersji programu .NET Framework jest niezgodny z projektem, który jest przeznaczony dla starszej wersji programu .NET Framework.
+- Składnik, który korzysta z najnowszej wersji framework jest niezgodny z projektem, który jest przeznaczony dla starszej wersji.
 
-    Aby uzyskać informacje o zmienianiu docelowej wersji .NET Framework dla projektu, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Aby uzyskać informacje o zmienianiu wersji platformy docelowej projektu, zobacz [jak: Docelowa wersja framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-- Składnik, który używa [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest niezgodny z projektem, który jest przeznaczony dla [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)].
-
-    Podczas tworzenia nowej aplikacji docelowej niektóre projekty kierują [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] domyślnie.
+- Składnik, który używa .NET Framework 4 jest niezgodny z projektem, który jest przeznaczony dla .NET Framework 4.5.
 
 Dodawanie odwołań do pliku do danych wyjściowych innego projektu w tym samym rozwiązaniu, należy unikać, ponieważ w ten sposób może spowodować błędy kompilacji. Zamiast tego należy użyć **projektów** karcie **Dodaj odwołanie** okno dialogowe, aby utworzyć odwołania projekt projekt. Ułatwia to Projektowanie zespołowe poprzez umożliwienie lepszego zarządzania bibliotekami klas, utworzone w projekcie. Aby uzyskać więcej informacji, zobacz [rozwiązywanie uszkodzenie odwołań](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
-> W programie Visual Studio 2015 lub nowszym odwołanie pliku zamiast odwołania projektu jest tworzony, jeśli wersji docelowej programu .NET Framework jednego projektu jest w wersji 4.5 lub nowszej, a wersję docelową innego projektu jest w wersji 2, 3, 3.5 lub 4.0.
+> W programie Visual Studio 2015 lub nowszym odwołanie pliku zamiast odwołania projektu jest tworzony, jeśli docelowej wersji struktury jednego projektu jest .NET Framework 4.5 lub nowszy, a wersją docelową innego projektu jest .NET Framework 2, 3, 3.5 lub 4.0.
 
 ### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Aby wyświetlić zestaw w oknie dialogowym Dodawanie odwołania
 
@@ -125,7 +125,7 @@ Dodawanie odwołań do pliku do danych wyjściowych innego projektu w tym samym 
 
    - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>*  jest najniższą wersją .NET Framework, która ma zastosowanie. Jeśli *\<VersionMinimum\>* jest w wersji 3.0, foldery określone w *AssemblyFoldersEx* zastosowanie do projektów przeznaczonych dla platformy .NET Framework 3.0 lub nowszej.
+   *\<VersionMinimum\>*  jest najniższa wersja framework, która ma zastosowanie. Jeśli *\<VersionMinimum\>* jest w wersji 3.0, foldery określone w *AssemblyFoldersEx* zastosowanie do projektów przeznaczonych dla platformy .NET Framework 3.0 lub nowszej.
 
    *\<AssemblyLocation\>*  to katalog zestawów, które mają być wyświetlane w **Dodaj odwołanie** okno dialogowe, na przykład *C:\MyAssemblies*.
 
@@ -137,13 +137,10 @@ Dodawanie odwołań do pliku do danych wyjściowych innego projektu w tym samym 
 
 **Projektów** karcie znajduje się lista wszystkich zgodnych projektów w obrębie bieżącego rozwiązania, w **rozwiązania** karcie podrzędnej.
 
-Projekt może się odwoływać do innego projektu, który jest przeznaczony dla innej wersji platformy .NET Framework. Na przykład, można utworzyć projektu przeznaczonego [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] , ale która odwołuje się zestaw stworzonemu dla platformy .NET Framework 2. Jednak projekt .NET Framework 2 nie może odwoływać się [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [wielowersyjnością kodu – Przegląd](../ide/visual-studio-multi-targeting-overview.md).
+Projekt może odwoływać się do innego projektu, który jest przeznaczony dla innej wersję. Na przykład można utworzyć projektu przeznaczonego do .NET Framework 4, ale która odwołuje się zestaw stworzonemu dla platformy .NET Framework 2. Jednak projekt .NET Framework 2 nie może odwoływać się do projektu .NET Framework 4. Aby uzyskać więcej informacji, zobacz [Framework przeznaczonych dla Przegląd](../ide/visual-studio-multi-targeting-overview.md).
 
-Projekt, który jest przeznaczony dla [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest niezgodny z projektem, który jest przeznaczony dla [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
-
-Odwołanie do pliku jest tworzony zamiast odwołania projektu, jeśli jeden projekt obiektów docelowych programu .NET Framework 4 i inny projekt jest przeznaczony dla starszej wersji.
-
-Projekt, który jest przeznaczony dla [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] nie można dodać odwołania projektu do projektu, który jest przeznaczony dla programu .NET Framework i na odwrót.
+> [!NOTE]
+> Projekt, który jest przeznaczony dla .NET Framework 4 jest niezgodny z projektem, który jest przeznaczony dla .NET Framework 4 Client Profile.
 
 ## <a name="universal-windows-tab"></a>Uniwersalne karta Windows
 
@@ -177,9 +174,9 @@ Jeśli typ projektu nie obsługuje COM, karta nie pojawi się w **Menadżer odwo
 
 Możesz użyć **Przeglądaj** przycisk, aby wyszukać składnik w systemie plików.
 
-Projekt może się odwoływać do składnika, który jest przeznaczony dla innej wersji platformy .NET Framework. Na przykład można utworzysz aplikację przeznaczonego .NET Framework 4.7, który odwołuje się do składnika, który jest przeznaczony dla .NET Framework 4. Aby uzyskać więcej informacji, zobacz [wielowersyjnością kodu – Przegląd](../ide/visual-studio-multi-targeting-overview.md).
+Projekt może odwoływać się do składnika, który jest przeznaczony dla innej wersję. Na przykład można utworzyć aplikację, która jest przeznaczony dla .NET Framework 4.7, ale odwołuje się do składnika, który jest przeznaczony dla .NET Framework 4. Aby uzyskać więcej informacji, zobacz [Framework przeznaczonych dla Przegląd](../ide/visual-studio-multi-targeting-overview.md).
 
-Nie należy dodawać odwołań do pliku do danych wyjściowych innego projektu w tym samym rozwiązaniu, ponieważ takie rozwiązanie może spowodować błędy kompilacji. Zamiast tego należy użyć **rozwiązania** karcie **Menadżer odwołań** okno dialogowe, aby utworzyć odwołania projekt projekt. Ułatwia to Projektowanie zespołowe poprzez umożliwienie lepszego zarządzania bibliotekami klas utworzonymi w projektach. Aby uzyskać więcej informacji, zobacz [rozwiązywanie uszkodzenie odwołań](../ide/troubleshooting-broken-references.md).
+Należy unikać dodawania odwołań do pliku do danych wyjściowych innego projektu w tym samym rozwiązaniu, ponieważ takie rozwiązanie może spowodować błędy kompilacji. Zamiast tego należy użyć **rozwiązania** karcie **Menadżer odwołań** okno dialogowe, aby utworzyć odwołania projekt projekt. Ułatwia to Projektowanie zespołowe poprzez umożliwienie lepszego zarządzania bibliotekami klas utworzonymi w projektach. Aby uzyskać więcej informacji, zobacz [rozwiązywanie uszkodzenie odwołań](../ide/troubleshooting-broken-references.md).
 
 Nie można przejść do zestawu SDK i dodać go do projektu. Można przeglądać tylko w pliku (na przykład zestawu lub *winmd*) i dodaj go do projektu.
 

@@ -260,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87461cfe06ac1c038176c3b9d4dcd513733e8d43
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a36eb66e0308fddbc17e5ea9627562c2939f4bd7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714509"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745469"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla zarządzanego kodu dzięki CheckId
 
@@ -492,7 +492,7 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA2225 | [CA2225: Operator overloads ma nazwanych zastępców](../code-quality/ca2225-operator-overloads-have-named-alternates.md) |Wykryto przeciążony operator i nie znaleziono metody alternatywnej o oczekiwanej nazwie. Nazwany alternatywny element członkowski udostępnia taką samą funkcjonalność jak operator i jest dostarczany deweloperom programującym w językach, które nie obsługują przeciążonych operatorów. |
 | CA2226 | [CA2226: Operatory powinny mieć symetryczne przeciążenia](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md) | Typ implementuje operator równości lub nierówności, ale nie implementuje operatora przeciwnego. |
 | CA2227 |[CA2227: Właściwości kolekcji powinny być tylko do odczytu](../code-quality/ca2227-collection-properties-should-be-read-only.md) |Właściwość zapisywalnej kolekcji pozwala użytkownikowi zastąpić kolekcję inną kolekcją. Właściwość tylko do odczytu uniemożliwia zastępowanie kolekcji, ale nadal umożliwia ustawienie poszczególnych członków. |
-| CA2228 | [CA2228: Dostarczaj niepublikowanych formatów zasobów](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | Pliki zasobów, które zostały utworzone za pomocą wersji wstępnej programu .NET Framework nie może być użyteczne z obsługiwanymi wersjami programu .NET Framework. |
+| CA2228 | [CA2228: Dostarczaj niepublikowanych formatów zasobów](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | Pliki zasobów, które zostały utworzone za pomocą wersji wstępnej wersji platformy .NET nie może być użyteczne z obsługiwanymi wersjami programu .NET. |
 | CA2229 | [CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md) | Aby naprawić naruszenie tej zasady, należy zaimplementować konstruktora serializacji. Dla zamkniętej klasy należy ustawić konstruktor prywatny; w przeciwnym razie powinien być chroniony. |
 | CA2230 | [CA2230: Użyj parametrów dla argumentów zmiennych](../code-quality/ca2230-use-params-for-variable-arguments.md) | Typ publiczny lub chroniony zawiera metodę publiczną lub chronioną, która używa wywoływania VarArgs zamiast słowa kluczowego params. |
 | CA2231 | [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Typ wartości zastępuje metodę Object.Equals, ale nie implementuje operatora równości. |

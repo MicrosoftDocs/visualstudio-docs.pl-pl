@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 733f3ec7573287e934f8a5f0167db89c0683759a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 911f0423184f22919be016691b9333b2f62d1b61
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564011"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744801"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Tworzenie niestandardowych widoków obiektów (C#, Visual Basic, C++)
 Można dostosować sposób, w programie Visual Studio Wyświetla typy danych w oknach zmiennych debugera.
@@ -41,7 +41,7 @@ Aby uzyskać C++ kodu, możesz dodać dane niestandardowe rozszerzenia typu, prz
 
 W C#, Visual Basic i C++ (C++tylko kod w sposób niezamierzony), można dodawać rozszerzeń dla niestandardowych danych za pomocą <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, i <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
 
-W [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kodu języka Visual Basic nie obsługuje atrybutu DebuggerBrowsable. To ograniczenie zostało usunięte w nowszych wersjach programu .NET Framework.
+W kodzie .NET Framework 2.0 Visual Basic nie obsługuje atrybutu DebuggerBrowsable. To ograniczenie zostało usunięte w nowszych wersjach programu .NET Framework.
 
 ## <a name="visualizers"></a>Wizualizatory
 

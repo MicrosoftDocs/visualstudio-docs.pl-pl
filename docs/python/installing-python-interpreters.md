@@ -1,7 +1,7 @@
 ---
 title: Wybierz i zainstaluj interpretery języka Python
 description: Pełna lista interpreterów języka Python, które są obsługiwane w programie Visual Studio z krótkie instrukcje, gdzie można znaleźć własnych instalatorów.
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3cfe5e54e4893ffa0bed6e3be1bf142fdda60be
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957418"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747149"
 ---
 # <a name="install-python-interpreters"></a>Instalowanie interpreterów języka Python
 
@@ -26,6 +26,11 @@ Alternatywnie możesz zainstalować interpreterów standardowego języka python 
 ::: moniker-end
 
 Można też ręcznie zainstalują dowolną z interpretery wymienione w poniższej tabeli opisano poza Instalatora programu Visual Studio. Na przykład po zainstalowaniu pakietu Anaconda 3 przed zainstalowaniem programu Visual Studio, nie trzeba ponownie zainstalować za pomocą Instalatora programu Visual Studio. Można także zainstalować tłumacza ręcznie Jeśli, na przykład, nowsza wersja dostępna nie jeszcze są widoczne w Instalatorze programu Visual Studio.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Program Visual Studio obsługuje wszystkie oficjalnie obsługiwane wersje języka Python, określony przez [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). W szczególności w wersji 2.7, 3.5 i 3.6 oraz 3.7.
+::: moniker-end
 
 Aby uzyskać **programu Visual Studio 2015 i starsze**, należy ręcznie zainstalować jeden interpretery.
 

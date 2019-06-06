@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993550"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747536"
 ---
 # <a name="how-to--with-text-templates"></a>How to ... with — Szablony tekstowe
 Szablony tekstu w programie Visual Studio zapewniają wygodny sposób generowania tekstu dowolnego rodzaju. Aby wygenerować tekst w czasie wykonywania w ramach Twojej aplikacji i w czasie projektowania, aby wygenerować niektóre z kodu projektu, można użyć szablonów tekstowych. Ten temat zawiera podsumowanie najczęściej zadawane "Jak mogę...?" pytania.
@@ -45,13 +45,14 @@ Szablony tekstu w programie Visual Studio zapewniają wygodny sposób generowani
      W kodzie, należy użyć `this.Host.ResolvePath(filename)` uzyskać pełną ścieżkę pliku.
 
 ### <a name="invoke-methods-from-a-template"></a>Wywoływanie metod na podstawie szablonu
- Jeśli metody już istnieje, na przykład w standardzie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klasy:
+
+Jeśli metody już istnieje, na przykład klas platformy .NET:
 
 - Użyj \<#@assembly#> dyrektywy do załadowania zestawu oraz użyć \<#@import#> można ustawić kontekstu przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca importowania](../modeling/t4-import-directive.md).
 
    Jeśli często ten sam zestaw zestawów i dyrektywy import, należy wziąć pod uwagę pisania procesora dyrektywy. W każdym szablonie można wywoływać procesor dyrektywy, którego można załadować zestawów i plików modelu i Ustaw kontekst przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych procesorów T4 dotyczącej tekstu szablonu dyrektywy](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
-  Jeśli piszesz metody samodzielnie:
+Jeśli piszesz metody samodzielnie:
 
 - Jeśli piszesz szablonie tekstowym czasu wykonywania pisania definicji klasy częściowej, który ma taką samą nazwę jak szablon tekstowy środowiska uruchomieniowego. Dodaj dodatkowe metody do tej klasy.
 

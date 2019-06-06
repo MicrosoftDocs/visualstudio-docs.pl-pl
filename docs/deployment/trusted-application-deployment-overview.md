@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3d4339295c47ee6bc8915eecfb581d9a0e8a4bed
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406633"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747665"
 ---
 # <a name="trusted-application-deployment-overview"></a>Zaufane wdrożenie aplikacji — omówienie
 Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, które mają podwyższony poziom uprawnień przy użyciu technologii zaufanego wdrożenia aplikacji.
@@ -80,7 +80,7 @@ Należy wykonać następujące kroki, aby móc korzystać z zaufanego wdrożenia
 - *CertMgr.exe*, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemach Windows 98 i wszystkich nowszych wersji. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (Menedżer certyfikatów narzędzie)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Tworzenie aplikacji ClickOnce
- A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplikacja kliencka w połączeniu z plików manifestu, które opisują aplikacji, a następnie podaj parametry instalacji. Można włączyć program do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację za pomocą **Publikuj** polecenia w pliku [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternatywnie można wygenerować wszystkie pliki, które są wymagane do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą narzędzi, które są dołączone [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Aby uzyskać szczegółowe instrukcje dotyczące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrażania, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest aplikacją kliencką programu .NET Framework, w połączeniu z plików manifestu, które opisują aplikacji, a następnie podaj parametry instalacji. Można włączyć program do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację za pomocą **Publikuj** polecenia w pliku [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternatywnie można wygenerować wszystkie pliki, które są wymagane do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą narzędzi, które są dołączone [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Aby uzyskać szczegółowe instrukcje dotyczące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrażania, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
  Wdrażanie zaufanej aplikacji zależy od [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]i mogą być używane tylko z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
 

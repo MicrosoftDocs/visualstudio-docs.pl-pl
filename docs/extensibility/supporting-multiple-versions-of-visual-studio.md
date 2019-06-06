@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8469f89e2dd013be9760dc80c6f96ea655b80699
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7212445cd507a0d7d185bbd73fa2292e5b783f4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316873"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745989"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Obsługiwanie wielu wersji programu Visual Studio
 Termin *side-by-side* oznacza, że można zainstalować i zarządzać wieloma wersjami produktu na tym samym komputerze. Dla pakietów VSPackage oznacza to, że użytkownik może mieć różne wersje programu Visual Studio zainstalowany na tym samym komputerze. Jednak nie może mieć side-by-side wersje usługi pakietów VSPackage załadowane do jednej wersji programu Visual Studio.
@@ -36,7 +36,7 @@ Termin *side-by-side* oznacza, że można zainstalować i zarządzać wieloma we
    Aby uzyskać więcej informacji, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) , a także [Zarządzanie składnikami](../extensibility/internals/component-management.md).
 
   > [!NOTE]
-  > Instalowanie wersji programu Visual Studio instaluje odpowiednią wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Na przykład instalowania programu Visual Studio 2010 i Visual Studio 2012 na tym samym komputerze instaluje wersjach 4.0 i 4.5 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]odpowiednio.
+  > Instalowanie wersji programu Visual Studio instaluje odpowiednią wersję programu .NET Framework. Na przykład instalacji programu Visual Studio 2010 i Visual Studio 2012 na tym samym komputerze również zostanie zainstalowany w wersji 4.0 i 4.5 programu .NET Framework, odpowiednio.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Wybór między udostępnionych i kontrolą wersji pakietów VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md) wyjaśnia, jak rozwiązywać problemy side-by-side w swojej pakietu VSPackage.

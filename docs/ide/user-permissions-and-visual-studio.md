@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821646"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747627"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
@@ -33,7 +33,7 @@ Możesz tworzyć prawie wszystko w środowisku IDE programu Visual Studio jako z
 |Instalacja|Zainstaluj program Visual Studio.|[Instalowanie programu Visual Studio](../install/install-visual-studio.md)|
 ||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości pomocy.|[Instalowanie i zarządzania lokalną zawartością Pomocy](../help-viewer/install-manage-local-content.md)|
 |Przybornik|Dodawanie klasycznych formantów COM do **przybornika**.|[Przybornik](../ide/reference/toolbox.md)|
-|Kompilowanie|Użyj zdarzenia mające miejsce po kompilacji, które rejestrują składnik.|[Omówienie niestandardowych kroków kompilacji i zdarzenia kompilacji](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|Kompilowanie|Użyj zdarzenia mające miejsce po kompilacji, które rejestrują składnik.|[Omówienie niestandardowych kroków kompilacji i zdarzenia kompilacji](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||Obejmują etapu rejestracji podczas kompilowania projektów języka C++.||
 |Debugowanie|Debugowanie aplikacji, które działają z podwyższonymi uprawnieniami.|[Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)|
 ||Debugowanie aplikacji, które działają innego użytkownika konta, takich jak witryny sieci Web platformy ASP.NET.|[Debugowanie aplikacji ASP.NET i AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|

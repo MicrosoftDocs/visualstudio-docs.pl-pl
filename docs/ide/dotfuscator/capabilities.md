@@ -17,12 +17,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557258"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744781"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Możliwości programu Dotfuscator
 
@@ -37,7 +37,7 @@ System Dotfuscator Community obsługuje szeroki zakres .NET zestawu i aplikacji 
 ## <a name="intellectual-property-protection"></a>Ochrona własności intelektualnej
 
 Projektowania aplikacji, zachowanie i implementacja są form własności intelektualnej (IP).
-Aplikacje utworzone w programie .NET Framework są jednak zasadniczo Otwieranie książki; jest bardzo proste do zestawów .NET odtwarzania, [ponieważ zawierają one metadanych wysokiego poziomu i kodu pośredniego][assemblies].
+Aplikacje utworzone dla platformy .NET są jednak zasadniczo Otwieranie książki; ułatwia odtwarzanie zestawy .NET, [ponieważ zawierają one metadanych wysokiego poziomu i kodu pośredniego][assemblies].
 
 System Dotfuscator Community obejmuje podstawowe [zasłanianie .NET] [ obfuscation] w formie [zmiana nazwy][renaming].
 Polega na zaciemnianiu kodu przy użyciu narzędzia Dotfuscator zmniejsza ryzyko przed nieautoryzowanym dostępem do kodu źródłowego za pomocą odtwarzania ważne informacje dotyczące nazewnictwa już nie będą dostępne publicznie.
@@ -50,7 +50,7 @@ System Dotfuscator może wprowadzać [zachowanie zapobieganie debugowania][debug
 ## <a name="application-integrity-protection"></a>Ochrona integralności aplikacji
 
 Oprócz ochrony kodu źródłowego, jest również ważne, aby upewnić się, że Twoja aplikacja jest używana zgodnie z założeniami.
-Osoby atakujące mogą próbować przejąć kontrolę nad aplikację w celu obejścia zasad licencjonowania (czyli piractwa), wykradać lub wykonywać operacje na danych poufnych, obsługiwane przez aplikację lub zmienić sposób działania aplikacji.
+Osoby atakujące mogą próbować przejąć kontrolę nad aplikację w celu obejścia zasad licencjonowania (oznacza to, piractwa komputerowego), wykradać lub wykonywać operacje na danych poufnych, obsługiwane przez aplikację lub zmienić sposób działania aplikacji.
 
 System Dotfuscator Community może wprowadzać [kod sprawdzania poprawności aplikacji][checks] do zestawów, w tym [zapobieganie odporne][tamper], [zapobieganie debugowania][debug], i [zapobiegających odblokowanym dostępem][root] miary.
 Po wykryciu stanu aplikacji nieprawidłowy kod sprawdzania poprawności można [zapraszać kod aplikacji, aby rozwiązać tę sytuację w odpowiedni sposób][check-app].

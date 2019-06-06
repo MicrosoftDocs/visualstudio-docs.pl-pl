@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5766beb87626efd11ba50422d5f811d1ae1d91e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898701"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747412"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Ciągi&gt; — element (program inicjujący)
 Definiuje zlokalizowane ciągi dla nazwy produktu, nazwy pakietów i komunikaty o błędach instalacji.
@@ -52,7 +52,7 @@ Definiuje zlokalizowane ciągi dla nazwy produktu, nazwy pakietów i komunikaty 
 |`Name`|Wymagana. Nazwa ciągu.|
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu określa wszystkie ciągi w języku polskim dla [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Instalatora.
+ Poniższy przykład kodu określa wszystkie ciągi w języku polskim dla Instalatora programu .NET Framework.
 
 ```xml
 <Strings>

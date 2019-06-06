@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408593"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746058"
 ---
 # <a name="application-deployment-prerequisites"></a>Wymagania wstępne wdrożenia aplikacji
 
-Aby utworzyć swoją aplikację, aby zainstalować i uruchomić się pomyślnie, należy najpierw zainstalować wszystkie składniki, od których aplikacja jest zależna na komputerze docelowym. Na przykład większość aplikacji utworzonych za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zależy od [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. W tym przypadku poprawną wersję środowiska uruchomieniowego języka wspólnego musi być obecny na komputerze docelowym, zanim aplikacja zostanie zainstalowana.
+Aby utworzyć swoją aplikację, aby zainstalować i uruchomić się pomyślnie, należy najpierw zainstalować wszystkie składniki, od których aplikacja jest zależna na komputerze docelowym. Na przykład większość aplikacji utworzonych za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ma zależność od programu .NET Framework. W tym przypadku poprawną wersję środowiska uruchomieniowego języka wspólnego musi być obecny na komputerze docelowym, zanim aplikacja zostanie zainstalowana.
 
  Możesz wybrać te warunki wstępne **wstępnie wymagane składniki, okno dialogowe** i zainstaluj jako część instalacji programu .NET Framework i inne redistributable. To rozwiązanie jest znany jako *uruchamianie*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generuje program wykonywalny Windows o nazwie *Setup.exe*, znane również jako *programu inicjującego*. Program inicjujący jest odpowiedzialny za instalowanie wymagań wstępnych przed uruchomieniem Twojej aplikacji. Aby uzyskać więcej informacji o wybieraniu tych wymagań wstępnych, zobacz [wstępnie wymagane składniki, okno dialogowe](../ide/reference/prerequisites-dialog-box.md).
 
@@ -76,7 +76,7 @@ Aby utworzyć swoją aplikację, aby zainstalować i uruchomić się pomyślnie,
 | **-?, -h, — pomoc** | Wyświetla okno dialogowe pomocy. |
 | **— adres url, - componentsurl** | Pokazuje adres URL przechowywanych i składników adresów url dla tego zestawu w górę. |
 | **-url =** `location` | Ustawia adres URL, gdzie *Setup.exe* będzie szukał [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. |
-| **-componentsurl =** `location` | Ustawia adres URL, gdzie *Setup.exe* będzie szukał zależności, takie jak [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-componentsurl =** `location` | Ustawia adres URL, gdzie *Setup.exe* będzie szukał zależności, takich jak .NET Framework. |
 | **-homesite=** `true` **&#124;** `false` | Gdy `true`, pliki do pobrania zależności z preferowanych lokalizacji witryny dostawcy. To ustawienie przesłania **- componentsurl** ustawienie. Gdy `false`, pobiera zależności z adresu URL określonego przez **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Obsługa systemów operacyjnych

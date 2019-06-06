@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977672"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747556"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath — zadanie
-Pobiera ścieżkę do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zestawów.
+Pobiera ścieżkę do zestawów .NET Framework.
 
 ## <a name="task-parameters"></a>Parametry zadania
 W poniższej tabeli opisano parametry `GetFrameworkPath` zadania.
@@ -41,12 +41,12 @@ W poniższej tabeli opisano parametry `GetFrameworkPath` zadania.
 |`Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do najnowszych zestawów framework, jeśli są dostępne. W przeciwnym razie zwraca `null`.|
 
 ## <a name="remarks"></a>Uwagi
-Jeśli różne wersje programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] są zainstalowane, to zadanie zwraca informacje o wersji, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest przeznaczony do działania.
+Jeśli są zainstalowane różne wersje programu .NET Framework, to zadanie zwraca informacje o wersji, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest przeznaczony do działania.
 
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie użyto `GetFrameworkPath` zadania do ścieżki do przechowywania [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] w `FrameworkPath` właściwości.
+W poniższym przykładzie użyto `GetFrameworkPath` zadanie, aby zapisać ścieżki programu .NET Framework w `FrameworkPath` właściwości.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

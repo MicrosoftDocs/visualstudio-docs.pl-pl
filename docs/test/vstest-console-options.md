@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bf4cea6dcd87b8cf0d2113ac3a245163ba89080
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976237"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746918"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
 
@@ -41,7 +41,7 @@ Poniższa tabela zawiera listę wszystkich opcji *VSTest.Console.exe* i krótkie
 |**/UseVsixExtensions**|Ta opcja powoduje, że *vstest.console.exe* użycie procesu lub pomija rozszerzenia VSIX zainstalowane w uruchomionym teście (jeśli istnieje).<br />Ta opcja jest przestarzały. Uruchamianie z kolejnej głównej wersji programu Visual Studio, ta opcja może zostać usunięty. Przenieś do używania rozszerzenia dostępne jako pakiet NuGet.<br />Przykład: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*path*]**|Wymusza *vstest.console.exe* proces używa niestandardowych adapterów testowych z określonej ścieżki (jeśli istnieją) w przebiegu testu.<br />Przykład: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/ Platform: [*typu platformy*]**|Docelowa platforma architektury ma być używany dla wykonywania testów.<br />Prawidłowe wartości to x86 x64 i ARM.|
-|**/ Framework: [*framework w wersji*]**|Wersja docelowa.NET Framework służący do wykonywania testów.<br />Prawidłowe wartości to Framework35, Framework40 i Framework45 oraz FrameworkUap10.<br />Jeśli platforma docelowa jest określona jako **Framework35**, testy w CLR w wersji 4.0 "compatibly tryb".<br />Przykład: `/Framework:framework40`|
+|**/ Framework: [*framework w wersji*]**|Wersja platformy .NET docelowa ma być używany dla wykonywania testów.<br />Prawidłowe wartości to Framework35, Framework40 i Framework45 oraz FrameworkUap10.<br />Jeśli platforma docelowa jest określona jako **Framework35**, testy w CLR w wersji 4.0 "compatibly tryb".<br />Przykład: `/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|Uruchom testy, które odpowiadają danemu wyrażeniu.<br />< wyrażenie\> jest w formacie < właściwość\>= < wartość\>[\|< wyrażenie\>].<br />Przykład: `/TestCaseFilter:"Priority=1"`<br />Przykład: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** opcji wiersza polecenia nie można używać z **/testy** opcji wiersza polecenia. <br />Aby uzyskać informacje na temat tworzenia i używania wyrażeń, zobacz [filtr przypadków testowych](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Wyświetla informacje o użyciu.|
 |**/ Logger: [*identyfikatora uri/friendlyname*]**|Określ Rejestrator dla wyników badań.<br />Przykład: Aby rejestrować wyniki w Visual Studio Test wyniki pliku (TRX), użyj **/Logger:trx**.<br />Przykład: Aby opublikować wyniki testu z Team Foundation Server, użyj wyrażenia TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Kolekcja = < adres url projektu\>;**<br />**BuildName = < nazwa kompilacji\>;**<br />**TeamProject = < Nazwa projektu\>;**<br />**[; Platform = < wartość domyślna to "Dowolny procesor CPU" >]**<br />**[; Flavor = < wartość domyślna to "Debugowanie" >]**<br />**[;RunTitle=<title\>]**|

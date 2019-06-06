@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791074"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744993"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 
@@ -50,14 +50,18 @@ Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.P
 
 **Struktura docelowa**
 
-Określa wersję programu .NET Framework, cele aplikacji. Ta opcja może mieć różne wartości w zależności od tego, które wersje programu .NET Framework są zainstalowane na tym komputerze.
+Określa wersję platformy .NET, cele aplikacji. Ta opcja może mieć różne wartości w zależności od tego, które wersje platformy .NET są instalowane na komputerze.
 
-Domyślnie wartość jest taka sama jak struktury docelowej, która wybranej podczas tworzenia projektu.
+Dla projektów programu .NET Framework wartością domyślną jest zgodna platformę docelową, które zostały określone podczas tworzenia projektu.
+
+Dla projektu .NET Core przeznaczonego dostępnych wersji może wyglądać następująco:
+
+![TARGET framework w wersji dla projektu .NET Core](../media/application-target-framework.png)
 
 > [!NOTE]
 > Wstępnie wymagane pakiety wymienione w [wstępnie wymagane składniki, okno dialogowe](../../ide/reference/prerequisites-dialog-box.md) są ustawiane automatycznie przy pierwszym otwarciu okna dialogowego. Jeśli użytkownik zmieni później platformę docelową projektu, musisz wybrać wstępnie wymagane składniki ręcznie, aby dopasować do nowej platformy docelowej.
 
-Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [programu Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md).
+Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [Framework przeznaczonych dla Przegląd](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Typ danych wyjściowych**
 
@@ -77,9 +81,9 @@ Aby uzyskać więcej informacji o przekierowywaniu, zobacz [przekierowanie wersj
 
 **Obiekt początkowy**
 
-Definiuje punkt wejścia, który ma być wywoływana podczas ładowania aplikacji. Zazwyczaj jest ono ustawione w formularzu głównym w aplikacji lub do `Main` procedury, które należy uruchamiać podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie ma punktu wejścia, ich jedyną opcją dla tej właściwości jest **(nie ustawiono)**.
+Definiuje punkt wejścia, który ma być wywoływana podczas ładowania aplikacji. Zazwyczaj jest ono ustawione w formularzu głównym w aplikacji lub do `Main` procedury, które należy uruchamiać podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie ma punktu wejścia, ich jedyną opcją dla tej właściwości jest **(nie ustawiono)** .
 
-Domyślnie w projekcie aplikacji WPF, ta opcja jest ustawiona na **(nie ustawiono)**. Druga opcja to \[nazwa_projektu] .App. W projekcie WPF należy ustawić startowy identyfikator URI do ładowania zasobów interfejsu użytkownika podczas uruchamiania aplikacji. Aby to zrobić, otwórz *Application.xaml* pliku w projekcie i ustaw `StartupUri` właściwości *.xaml* pliku w projekcie, takie jak *Window1.xaml*. Aby uzyskać listę elementów głównych dopuszczalne, zobacz <xref:System.Windows.Application.StartupUri%2A>. Należy także zdefiniować `public static void Main()` metodę w klasie w projekcie. Ta klasa pojawi się w **obiekt początkowy** listy jako *ProjectName.ClassName*. Klasę można następnie wybrać jako obiekt początkowy.
+Domyślnie w projekcie aplikacji WPF, ta opcja jest ustawiona na **(nie ustawiono)** . Druga opcja to \[nazwa_projektu] .App. W projekcie WPF należy ustawić startowy identyfikator URI do ładowania zasobów interfejsu użytkownika podczas uruchamiania aplikacji. Aby to zrobić, otwórz *Application.xaml* pliku w projekcie i ustaw `StartupUri` właściwości *.xaml* pliku w projekcie, takie jak *Window1.xaml*. Aby uzyskać listę elementów głównych dopuszczalne, zobacz <xref:System.Windows.Application.StartupUri%2A>. Należy także zdefiniować `public static void Main()` metodę w klasie w projekcie. Ta klasa pojawi się w **obiekt początkowy** listy jako *ProjectName.ClassName*. Klasę można następnie wybrać jako obiekt początkowy.
 
 Zobacz [/main (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -115,4 +119,4 @@ Wybiera opcję generowania manifestu, gdy aplikacja zostanie uruchomiona w syste
 
 Wybierz ten przycisk radiowy, gdy udostępniasz plik zasobów dla projektu. Wybranie tej opcji wyłącza **ikonę** i **manifestu** opcje.
 
-Wprowadź nazwę ścieżki lub użyj przycisku Przeglądaj (**...** ) aby dodać plik zasobów Win32 do projektu.
+Wprowadź nazwę ścieżki lub użyj przycisku Przeglądaj ( **...** ) aby dodać plik zasobów Win32 do projektu.

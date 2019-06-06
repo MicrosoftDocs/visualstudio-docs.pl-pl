@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 346a7f4cc7c7a8e6f579f94c6294ce9577fa01c7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842094"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744595"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Statyczne typy przechowujące powinny być zapieczętowane
 
@@ -46,7 +46,7 @@ CA1052 reguły przyjęto założenie, że typ, który zawiera tylko statyczne el
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, oznacz typ jako `sealed` lub `NotInheritable`. Jeśli są przeznaczone dla .NET Framework 2.0 lub nowszej, lepszym rozwiązaniem jest Oznacz typ jako `static` lub `Shared`. W ten sposób nie trzeba zadeklarować Konstruktor prywatny, aby uniemożliwić tworzonych przez klasy.
+Aby naprawić naruszenie tej zasady, oznacz typ jako `sealed` lub `NotInheritable`. Jeśli projekt jest przeznaczony dla .NET Framework 2.0 lub nowszej, lepszym rozwiązaniem jest Oznacz typ jako `static` lub `Shared`. W ten sposób nie trzeba zadeklarować Konstruktor prywatny, aby uniemożliwić tworzonych przez klasy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 

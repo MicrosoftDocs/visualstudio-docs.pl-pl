@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929157"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746086"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Tworzenie aplikacji ClickOnce z wiersza polecenia
-W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], można kompilować projekty z wiersza polecenia, nawet jeśli są one tworzone w zintegrowanym środowisku programistycznym (IDE). W rzeczywistości, można ponownie utworzyć projekt, który został utworzony za pomocą [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na innym komputerze, który ma tylko [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zainstalowane. Dzięki temu można odtworzyć za pomocą zautomatyzowanego procesu kompilacji, na przykład w centralnej kompilacji laboratorium lub za pomocą zaawansowane techniki poza zakres tematyczny skompilowanie projektu, sama obsługi skryptów.
+W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], można kompilować projekty z wiersza polecenia, nawet jeśli są one tworzone w zintegrowanym środowisku programistycznym (IDE). W rzeczywistości, można ponownie utworzyć projekt, który został utworzony za pomocą [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na innym komputerze, który tylko zainstalowane środowisko .NET Framework. Dzięki temu można odtworzyć za pomocą zautomatyzowanego procesu kompilacji, na przykład w centralnej kompilacji laboratorium lub za pomocą zaawansowane techniki poza zakres tematyczny skompilowanie projektu, sama obsługi skryptów.
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Użyj programu MSBuild do odtworzenia wdrożenia aplikacji ClickOnce
  Kiedy wywołujesz /target:publish msbuild w wierszu polecenia, informuje system MSBuild, aby skompilować projekt i Utwórz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w folderze Publikuj. Jest to równoważne z wybraniu **Publikuj** polecenie w IDE.
@@ -73,7 +73,7 @@ W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)],
 
 5. Typ `msbuild /target:publish`.
 
-   Powyższe kroki powoduje wygenerowanie pełnego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji w podfolderze o nazwie projektu **Publikuj**. *CmdLineDemo.application* jest [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Folder *CmdLineDemo_1.0.0.0* zawiera pliki *CmdLineDemo.exe* i *CmdLineDemo.exe.manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikacji. *Setup.exe* jest program inicjujący, która domyślnie jest skonfigurowana do instalowania [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. DotNetFX folder zawiera pakiety redystrybucyjne dla [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Jest to całego zestawu plików, należy wdrożyć aplikację sieci Web lub za pośrednictwem ścieżka UNC lub dysk CD/DVD.
+   Powyższe kroki powoduje wygenerowanie pełnego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji w podfolderze o nazwie projektu **Publikuj**. *CmdLineDemo.application* jest [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Folder *CmdLineDemo_1.0.0.0* zawiera pliki *CmdLineDemo.exe* i *CmdLineDemo.exe.manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikacji. *Setup.exe* jest program inicjujący, która domyślnie jest skonfigurowana do instalowania programu .NET Framework. DotNetFX folder zawiera pakiety redystrybucyjne programu .NET Framework. Jest to całego zestawu plików, należy wdrożyć aplikację sieci Web lub za pośrednictwem ścieżka UNC lub dysk CD/DVD.
 
 ## <a name="publish-properties"></a>Opublikuj właściwości
  Gdy będziesz publikować aplikację w powyższych procedurach następujące właściwości są wstawiane do pliku projektu, w Kreatorze publikacji. Te właściwości bezpośrednio wpływają na sposób, w jaki [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji są generowane.

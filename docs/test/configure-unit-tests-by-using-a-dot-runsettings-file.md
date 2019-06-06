@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5030498702808dc9d41a5daa12520893c3de2627
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531991"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746557"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku
 
-Testy jednostkowe w programie Visual Studio, można skonfigurować za pomocą *.runsettings* pliku. Na przykład można zmienić wersji programu .NET Framework, na którym są uruchamiane testy, katalog dla wyników testów lub dane, które są zbierane podczas przebiegu testu.
+Testy jednostkowe w programie Visual Studio, można skonfigurować za pomocą *.runsettings* pliku. Na przykład można zmienić wersję platformy .NET, na którym są uruchamiane testy, katalog dla wyników testów lub dane, które są zbierane podczas przebiegu testu.
 
 Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie wymaga żadnej specjalnej konfiguracji, nie potrzebujesz *.runsettings* pliku. Najbardziej powszechnym zastosowaniem programu *.runsettings* plik jest w celu dostosowania [analiza pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 

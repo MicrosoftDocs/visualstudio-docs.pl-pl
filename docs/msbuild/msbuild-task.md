@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a58235b724f97e3934ab620677e530fbd9ba9726
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437852"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747362"
 ---
 # <a name="msbuild-task"></a>zadanie MSBuild
 Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów z innego [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.
@@ -44,7 +44,7 @@ Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 | `TargetAndPropertyListSeparators` | Opcjonalnie `String[]` parametru.<br /><br /> Określa listę obiektów docelowych i właściwości jako `Project` metadanych elementu). Separatory będzie niezmieniony przed rozpoczęciem przetwarzania. np. % 3B (o zmienionym znaczeniu ";") będzie traktowane tak, jakby był to niezmieniony ";". |
 | `TargetOutputs` | Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego tylko do odczytu.<br /><br /> Zwraca wszystkie pliki projektu wyjścia skompilowanych elementów docelowych. Tylko dane wyjściowe z elementów docelowych, które zostały określone są zwracane, nie jakiekolwiek dane wyjściowe, które mogą występować na obiekty docelowe, które zależą od tych celów.<br /><br /> `TargetOutputs` Parametr zawiera również następujące metadane:<br /><br /> -   `MSBuildSourceProjectFile`: [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Pliku projektu, który zawiera element docelowy ustawić dane wyjściowe.<br />-   `MSBuildSourceTargetName`: Obiekt docelowy ustawić dane wyjściowe. **Uwaga:**  Jeśli chcesz zidentyfikować dane wyjściowe z każdego pliku projektu lub docelowe oddzielnie, uruchom `MSBuild` zadań osobno dla każdego pliku projektu lub docelowego. Jeśli uruchamiasz `MSBuild` zadanie tylko raz, aby utworzyć wszystkie pliki projektu, dane wyjściowe wszystkie elementy docelowe są zbierane w tablicy. |
 | `Targets` | Opcjonalnie `String` parametru.<br /><br /> Określa cel lub cele do kompilacji w plikach projektu. Oddziel listę nazw docelowych za pomocą średnika. Jeśli nie określono żadnych elementów docelowych w `MSBuild` zadań, są tworzone w domyślnych elementów docelowych określone w plikach projektu. **Uwaga:**  Cele musi przypadać w plikach projektu. Jeśli tak się nie stanie, występuje błąd kompilacji. |
-| `ToolsVersion` | Opcjonalnie `String` parametru.<br /><br /> Określa `ToolsVersion` do użycia podczas tworzenia projektów przekazany do tego zadania.<br /><br /> Włącza [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania, aby skompilować projekt, który jest przeznaczony dla innej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] niż określona w projekcie. Prawidłowe wartości to `2.0`, `3.0` i `3.5`. Wartość domyślna to `3.5`. |
+| `ToolsVersion` | Opcjonalnie `String` parametru.<br /><br /> Określa `ToolsVersion` do użycia podczas tworzenia projektów przekazany do tego zadania.<br /><br /> Włącza [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania, aby skompilować projekt, który jest przeznaczony dla innej wersji programu .NET Framework niż zestaw określony w projekcie. Prawidłowe wartości to `2.0`, `3.0` i `3.5`. Wartość domyślna to `3.5`. |
 | `UnloadProjectsOnCompletion` | Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, projekt zostanie zwolniona po zakończeniu operacji. |
 | `UseResultsCache` | Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, buforowane wynik zostanie zwrócony, jeśli jest obecny.<br /><br />  Jeśli zostanie uruchomione zadanie MSBuild, wynik będzie zapisywane w zakresie <br /><br /> (ProjectFileName GlobalProperties) [TargetNames]<br /><br /> jako listę elementów kompilacji |
 

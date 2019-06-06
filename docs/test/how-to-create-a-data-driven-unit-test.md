@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615431"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745868"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
 
@@ -179,4 +179,4 @@ Po poprawieniu testowaną metodę test, uruchom ponownie, paski wyników zmieni 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Kod testu jednostkowego](../test/unit-test-your-code.md)
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
-- [Pisanie testów jednostkowych dla .NET Framework z środowisko testów jednostkowych Microsoft dla kodu zarządzanego](../test/unit-test-your-code.md)
+- [Pisanie testów jednostkowych dla platformy .NET przy użyciu frameworka testów jednostkowych firmy Microsoft](../test/unit-test-your-code.md)

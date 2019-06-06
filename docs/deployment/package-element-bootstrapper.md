@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898753"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745762"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pakiet&gt; — element (program inicjujący)
 `Package` Element jest elementem XML najwyższego poziomu w pliku pakietu.
@@ -147,10 +147,10 @@ ms.locfileid: "62898753"
 |--------------------| - |
 | `Culture` | Wymagana. Określa kulturę używaną do tego pakietu, która określa język, który ma być używany. Ten atrybut jest kluczem do `Strings` element, który wyświetla ciągi dla kultury dla nazw produktów i komunikaty o błędach podczas instalacji. |
 | `Name` | Wymagana. Nazwa pakietu, takich jak wyświetlany dla deweloperów w narzędziu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ten atrybut jest kluczem do `Strings` element, który powinien zawierać `String` element z `Name` i `Culture` ustawić właściwości, aby dopasować `Name` i `Culture` właściwości `Package`. |
-| `LicenseAgreement` | Opcjonalna. Określa nazwę pliku pakietu dystrybucji, który zawiera umowy licencyjnej użytkownika oprogramowania (EULA).  Ten plik może być zwykły tekst (*.txt*) lub w formacie. (*.rtf*) |
+| `LicenseAgreement` | Opcjonalna. Określa nazwę pliku pakietu dystrybucji, który zawiera umowy licencyjnej użytkownika oprogramowania (EULA).  Ten plik może być zwykły tekst ( *.txt*) lub w formacie. ( *.rtf*) |
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu pokazuje plik kompletny pakiet dla redystrybucji [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Poniższy przykład kodu pokazuje plik kompletny pakiet dla Redystrybucja programu .NET Framework 2.0.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

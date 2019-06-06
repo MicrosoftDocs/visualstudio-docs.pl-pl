@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d7a15f1228d65cf13101811eca47a5cd7401a73
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263512"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747818"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z usług .NET Framework przy użyciu wiersza polecenia profilera
-W tej sekcji opisano procedury składowane i opcji zbierania danych pamięci alokacji i obiekt okresu istnienia dla [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usługi przy użyciu metody próbkowania w wierszu polecenia.
+W tej sekcji opisano procedury składowane i opcji zbierania alokacji pamięci i danych o okresie istnienia obiektu usługi .NET Framework przy użyciu metody próbkowania w wierszu polecenia.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 

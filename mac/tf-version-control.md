@@ -3,16 +3,16 @@ title: Team Foundation Version Control (TFVC)
 description: Nawiązywanie połączenia z programu Visual Studio dla komputerów Mac w Team Foundation Server/DevOps platformy Azure za pomocą Team Foundation Version Control (TFVC).
 author: conceptdev
 ms.author: crdun
-ms.date: 04/04/2019
+ms.date: 04/28/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500998"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745552"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Team Foundation Version Control
 
@@ -21,7 +21,7 @@ ms.locfileid: "66500998"
 
 Repozytoriów platformy Azure oferuje dwa modele kontroli wersji: [Git](/azure/devops/repos/git/?view=azure-devops), rozproszony system kontroli wersji, a [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), wersjami w sposób scentralizowany system kontroli.
 
-Program Visual Studio for Mac zapewnia pełną obsługę dla repozytoriów Git, ale wymaga obejścia do pracy z użyciem systemu TFVC. Jeśli obecnie używasz TFVC do kontroli wersji, poniżej przedstawiono niektóre rozwiązania, które umożliwia dostęp do kodu źródłowego hostowanych w TFVC.
+Program Visual Studio for Mac zapewnia pełną obsługę dla repozytoriów Git, ale wymaga obejścia do pracy z użyciem systemu TFVC. Jeśli obecnie używasz TFVC do kontroli wersji, poniżej przedstawiono niektóre rozwiązania, które umożliwia dostęp do kodu źródłowego hostowanych w TFVC:
 
 * [Przy użyciu programu Visual Studio Code i rozszerzenia repozytoriów platformy Azure, graficznego interfejsu użytkownika](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Nawiązać połączenie z repozytorium, korzystając z Team Explorer Everywhere wiersza polecenia klienta (TEE CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
@@ -31,7 +31,7 @@ W pozostałej części tego artykułu przeprowadzi Cię przez opcje wymienionych
 
 ## <a name="requirements"></a>Wymagania
 
-* Visual Studio Community, Professional lub Enterprise dla komputerów Mac w wersji 7,8 lub nowszej.
+* Visual Studio Community, Professional lub Enterprise dla komputerów Mac w wersji 7,8 i nowszych.
 * Usługom DevOps platformy Azure, Team Foundation Server 2013 i nowsze, lub na platformie Azure DevOps Server 2018 r. lub później.
 * Projekt w usługom DevOps platformy Azure lub Team Foundation Server/Azure DevOps Server skonfigurowany do używania kontroli wersji serwera Team Foundation.
 
@@ -44,8 +44,6 @@ Jeśli wolisz pracować z interfejsem graficznym do zarządzania plikami w kontr
 Jeśli wiesz, przy użyciu systemu macOS Terminal, a następnie z Team Explorer Everywhere klienta wiersza polecenia (TEE CLC) umożliwia obsługiwanych nawiązywania połączenia ze źródłem w TFVC.
 
 Można wykonaj poniższe kroki, aby skonfigurować połączenie TFVC oraz zatwierdzić zmiany.
-
-Specjalne dzięki Chris Pilcher, Deweloper w naszej społeczności, którego [oryginalnego instrukcje dotyczące TEE CLC](https://gist.github.com/chris-pilcher/a3f14eb081d7ab983e5c) podstawą w tej sekcji.
 
 ### <a name="setting-up-the-tee-clc"></a>Konfigurowanie TEE CLC
 
@@ -82,7 +80,7 @@ tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 
 `TF_AUTO_SAVE_CREDENTIALS` Ustawienie środowiska umożliwia zapisanie poświadczeń, więc zostanie wyświetlony monit o podanie ich wiele razy. Po wyświetleniu monitu o nazwę użytkownika, używać osobisty token dostępu utworzony w poprzedniej sekcji i pustego hasła.
 
-Teraz, aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyjesz `tf workfold` polecenia. Poniższy przykład zmapuje folder o nazwie "WebApp.Services" z "MyRepository" TFVC projektu i ustawić go tak, aby być skopiowany do folderu lokalnego ~/Projects/ (czyli folder "Projekty" w folderze głównym bieżących użytkowników).
+Aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyjesz `tf workfold` polecenia. Poniższy przykład zmapuje folder o nazwie "WebApp.Services" z "MyRepository" TFVC projektu i ustawić go tak, aby być skopiowany do folderu lokalnego ~/Projects/ (czyli folder "Projekty" w folderze głównym bieżących użytkowników).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/

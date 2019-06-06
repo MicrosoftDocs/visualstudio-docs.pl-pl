@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898136"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745613"
 ---
 # <a name="product-and-package-schema-reference"></a>Odwołanie do schematu produktu i pakietu
-A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętrzne wymagane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Przykłady zależności zewnętrznych [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] i Microsoft Data Access Components (MDAC). Plik pakietu jest podobny do pliku produktu, ale jest używana do instalowania składników zależnych od kultury, zależności, takich jak zestawy zlokalizowane, umów licencyjnych i dokumentacji.
+A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętrzne wymagane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Przykładami zależności zewnętrznych programu .NET Framework i program Microsoft Data Access Components (MDAC). Plik pakietu jest podobny do pliku produktu, ale jest używana do instalowania składników zależnych od kultury, zależności, takich jak zestawy zlokalizowane, umów licencyjnych i dokumentacji.
 
  Plik produktu i pakietów składa się z jednej najwyższego poziomu `Product` lub `Package` elementu, z których każdy zawiera następujące elementy.
 
@@ -53,7 +53,7 @@ A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętr
  `InstallChecks` testy tego setup.exe należy wykonywać istnienie danego pakietu. `PackageFiles` Wyświetla listę wszystkich pakietów, które proces instalacji może być konieczne zainstalowanie, jeżeli nie dany test. Każdy wpis polecenia w obszarze polecenia wykonuje jedno z badań opisanego przez `InstallChecks`i określa, która `PackageFile` do uruchomienia powinny test się nie powieść. Możesz użyć `Strings` elementu do zlokalizowania nazw produktów i komunikaty o błędach, tak aby jedna instalacja pojedynczego binarne umożliwia zainstalowanie aplikacji dla dowolnej liczby języków.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu demonstruje pliku kompletnego produktu do instalacji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Poniższy przykład kodu demonstruje plik kompletnego produktu dla instalacji programu .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

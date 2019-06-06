@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb101dc1f272ae56ceb0058afb2806aec4154936
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945466"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747684"
 ---
 # <a name="toolbox"></a>Przybornik
 
@@ -33,7 +33,7 @@ Przybornik pojawi się w połączeniu z projektanta widoków, takich jak Widok p
 > [!NOTE]
 > W przypadku niektórych typów projektu **przybornika** mogą nie być wyświetlane wszystkie elementy.
 
-Wersja programu .NET Framework, że projekt jest ukierunkowany również wpływa na zbiór kontrolek widocznych w przyborniku. Można ustawić projekt, aby docelowa była inna wersja programu .NET Framework ze stron właściwości projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na pasku menu wybierz **projektu** > **projectname właściwości**. Na **aplikacji** kartę, należy użyć **platformę docelową** listy rozwijanej.
+Wersja platformy .NET, czy projekt jest ukierunkowany również wpływa na zbiór kontrolek widocznych w przyborniku. Jeśli to konieczne, można zmienić wersji platformy docelowej na stronach właściwości projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na pasku menu wybierz **projektu** > **projectname właściwości**. Na **aplikacji** kartę, należy użyć **platformę docelową** listy rozwijanej.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Zarządzanie okno przybornika i jego formantów
 

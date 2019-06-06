@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df9c1f83e8a839c7e767c3145e734eba80add485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566090"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745347"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Praca z modelem koncepcyjnym (WCF Data Services)
 
@@ -27,7 +27,7 @@ Korzystając z modelu koncepcyjnego do opisu danych w bazie danych, można tworz
 
 | Temat | Opis |
 | - | - |
-| [Instrukcje: Wykonywanie zapytań usługi danych](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Pokazuje sposób tworzenia zapytań względem usługi danych z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplikacji. |
+| [Instrukcje: Wykonywanie zapytań usługi danych](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Pokazuje sposób tworzenia zapytań względem usługi danych z poziomu aplikacji .NET. |
 | [Instrukcje: Projekt wyników zapytania](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Pokazuje, jak zmniejszyć ilość danych zwracanych przez zapytanie usługi danych. |
 
  Korzystając z modelu koncepcyjnego, można określić, jakiego rodzaju dane jest prawidłowy w języku, który pasuje do Twojej domeny. Można zdefiniować prawidłowe dane w modelu, lub można dodać sprawdzanie poprawności do operacji wykonywanych w usłudze jednostki lub danych.

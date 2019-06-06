@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83a3851c74d97992fa75e9ce533ca707e2115c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969152"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746489"
 ---
 # <a name="prerequisites-dialog-box"></a>Wstępnie wymagane składniki — Okno dialogowe
 
@@ -42,7 +42,7 @@ Wstępnie wymagane składniki, które pojawiają się w **wymagania wstępne** o
 
 |Element|Opis|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Ten pakiet zainstaluje następujące:<br /><br /> — Program .NET framework w wersji 2.0, 3.0 i 3.5.<br />— Obsługuje dla wszystkich wersji .NET Framework na 32-bitowych (x86) i (x64) 64-bitowych systemów operacyjnych.<br />-Pakiety językowe dla każdej wersji .NET Framework, która jest instalowana z pakietem.<br />-Dodatki service Pack dla programu .NET Framework 2.0 i 3.0.<br /><br /> .NET framework 3.0 jest dołączony do Windows Vista i .NET Framework 3.5 jest dołączony do Visual Studio. .NET framework 3.5 jest wymagany dla wszystkich projektów Visual Basic i C#, które są kompilowane dla 32-bitowych systemach operacyjnych i dla którego platforma docelowa jest ustawiona na **.NET Framework 3.5**oraz dla projektów języka Visual Basic i C# dla 64-bitowych systemy operacyjne. (IA64 nie jest obsługiwany.) Należy pamiętać, że projekty języka Visual Basic i C# są kompilowane dla dowolnej architektury Procesora domyślnie. Aby uzyskać więcej informacji, zobacz [Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3.5 SP1**|Ten pakiet zainstaluje następujące:<br /><br /> — Program .NET framework w wersji 2.0, 3.0 i 3.5.<br />— Obsługuje dla wszystkich wersji .NET Framework na 32-bitowych (x86) i (x64) 64-bitowych systemów operacyjnych.<br />-Pakiety językowe dla każdej wersji .NET Framework, która jest instalowana z pakietem.<br />-Dodatki service Pack dla programu .NET Framework 2.0 i 3.0.<br /><br /> .NET framework 3.0 jest dołączony do Windows Vista i .NET Framework 3.5 jest dołączony do Visual Studio. .NET framework 3.5 jest wymagany dla wszystkich projektów Visual Basic i C#, które są kompilowane dla 32-bitowych systemach operacyjnych i dla którego platforma docelowa jest ustawiona na **.NET Framework 3.5**oraz dla projektów języka Visual Basic i C# dla 64-bitowych systemy operacyjne. (IA64 nie jest obsługiwany.) Należy pamiętać, że projekty języka Visual Basic i C# są kompilowane dla dowolnej architektury Procesora domyślnie. Aby uzyskać więcej informacji, zobacz [Framework przeznaczonych dla Przegląd](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Ten pakiet instaluje program .NET Framework 4.x x86 i x64 64.|
 |**Program Microsoft System CLR Types dla programu SQL Server 2014 (x64 i x86)**|Ten pakiet zainstaluje Microsoft System CLR Types dla programu SQL Server 2014 dla x64 lub x86.|
 |**SQL Server 2008 R2 Express**|Ten pakiet zainstaluje Microsoft SQL Server 2008 R2 Express, bezpłatna wersja programu Microsoft SQL Server 2008 R2, idealną bazę danych dla małych sieci web, serwera lub aplikacji klasycznych. Może służyć do swobodnego rozwoju i produkcji.|
@@ -57,4 +57,4 @@ Wstępnie wymagane składniki, które pojawiają się w **wymagania wstępne** o
 - [Strona publikowania, Projektant projektu](../../ide/reference/publish-page-project-designer.md)
 - [Wstępnie wymagane składniki wdrażania aplikacji](../../deployment/application-deployment-prerequisites.md)
 - [Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
-- [Wielowersyjność kodu w programie Visual Studio ― przegląd](../../ide/visual-studio-multi-targeting-overview.md)
+- [Framework celem — omówienie](../../ide/visual-studio-multi-targeting-overview.md)

@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950163"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747581"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Instrukcje: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel
 
@@ -70,7 +70,7 @@ Raporty programu Excel można albo wygenerować w **analizatora testu obciążen
 
    2. W **wybierz bazę danych zawierającą testy obciążeniowe** w obszarze **nazwy serwera**, wpisz nazwę serwera zawierającego wyniki testu obciążenia.
 
-   3. W **Databasename** listę rozwijaną, wybierz bazę danych zawierającą wyniki testu obciążenia na liście.
+   3. W **Nazwa bazy danych** listę rozwijaną, wybierz bazę danych zawierającą wyniki testu obciążenia na liście.
 
 3. W **jak chcesz wygenerować raport** Sprawdź, czy **utworzyć raport** jest zaznaczone, a następnie wybierz **dalej**.
 
@@ -125,7 +125,7 @@ Raporty programu Excel można albo wygenerować w **analizatora testu obciążen
 
    2. W **wybierz bazę danych zawierającą testy obciążeniowe** w obszarze **nazwy serwera**, wpisz nazwę serwera zawierającego wyniki testu obciążenia.
 
-   3. W **Databasename** listę rozwijaną, wybierz bazę danych zawierającą wyniki testu obciążenia na liście.
+   3. W **Nazwa bazy danych** listę rozwijaną, wybierz bazę danych zawierającą wyniki testu obciążenia na liście.
 
 3. W **jak chcesz wygenerować raport** Sprawdź, czy **utworzyć raport** jest zaznaczone, a następnie wybierz **dalej**.
 
@@ -144,7 +144,7 @@ Raporty programu Excel można albo wygenerować w **analizatora testu obciążen
    > [!TIP]
    > Aby uzyskać lepsze raporty kilka właściwości są dostępne w testach obciążenia i testy wydajności sieci web, które umożliwiają bardziej rozbudowane raporty. Żądanie strony ma dwie właściwości, które są wyświetlane w raportach: Cel i nazwa raportowania. Czasy reakcji stron będą raportowane względem celu, a nazwa raportowania będzie używana zamiast adresu URL w raportach. W teście obciążeniowym parametrów uruchomieniowych, w obszarze Zarządzaj zbiorem liczników właściwość znaczniki komputerów jest przedstawiona w nazwach komputerów raportów. Jest to bardzo przydatne do opisywania roli danej maszyny w raporcie.
 
-## <a name="net-framework-security"></a>zabezpieczenia .NET Framework
+## <a name="net-security"></a>Zabezpieczenia platformy .net
 
 Wyniki testu obciążenia i raporty zawierają potencjalnie poufne informacje, które mogą być używane do zorganizowania ataku na komputer użytkownika lub sieci. Wyniki testu obciążenia i raporty zawierają nazwy komputerów i parametry połączenia. Należy pamiętać o tym kiedy raportów testów obciążenia są udostępniane innym osobom.
 

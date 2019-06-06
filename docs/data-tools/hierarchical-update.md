@@ -1,5 +1,5 @@
 ---
-title: Hierarchiczna aktualizacja
+title: Aktualizacja hierarchiczna
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,18 +21,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566806"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745459"
 ---
-# <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
+# <a name="hierarchical-update"></a>Aktualizacja hierarchiczna
 
 *Hierarchiczna aktualizacja* proces zapisywanie zaktualizowanych danych (na podstawie zestawu danych przy użyciu dwóch lub więcej powiązanych tabel) do bazy danych przy zachowaniu więzy integralności. *Integralność referencyjną* odwołuje się do reguły spójności, dostarczone przez ograniczenia w bazie danych, które kontrolują zachowanie Wstawianie, aktualizowanie i usuwanie rekordów pokrewnych. Na przykład jest więzów integralności, który wymusza utworzenie rekordu klientów przed zezwoleniem zamówienia, które ma zostać utworzony dla tego klienta.  Aby uzyskać więcej informacji na temat relacji w zestawach danych, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md).
 
-Używa funkcji hierarchiczna aktualizacja `TableAdapterManager` zarządzanie `TableAdapter`s w zestawie danych wpisywanych. `TableAdapterManager` Składnik jest klasą generowanych przez program Visual Studio, więc nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Podczas przeciągania tabeli z **źródeł danych** okna do strony formularza Windows lub programu WPF, Visual Studio dodaje zmienną typu TableAdapterManager do formularza lub strony i zostanie wyświetlony w projektancie w zasobniku składnika. Aby uzyskać szczegółowe informacje na temat `TableAdapterManager` klasy, zobacz sekcję TableAdapterManager z [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+Używa funkcji hierarchiczna aktualizacja `TableAdapterManager` zarządzanie `TableAdapter`s w zestawie danych wpisywanych. `TableAdapterManager` Składnik to klasa generowanych przez program Visual Studio, nie jest typem platformy .NET. Podczas przeciągania tabeli z **źródeł danych** okna do strony formularza Windows lub programu WPF, Visual Studio dodaje zmienną typu TableAdapterManager do formularza lub strony i zostanie wyświetlony w projektancie w zasobniku składnika. Aby uzyskać szczegółowe informacje na temat `TableAdapterManager` klasy, zobacz sekcję TableAdapterManager z [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 Domyślnie zestaw traktuje powiązane tabele jako "tylko relacje" oznacza to, że nie to wymuszania ograniczeń klucza obcego. Można zmodyfikować to ustawienie w czasie projektowania za pomocą **Projektanta obiektów Dataset**. Zaznacz wiersz relacji między dwiema tabelami, aby wyświetlić **relacji** okno dialogowe. Określi, wprowadzone zmiany są tutaj sposób, w jaki `TableAdapterManager` zachowuje się podczas wysyłania zmian w tabelach pokrewnych w bazie danych.
 
@@ -114,7 +114,7 @@ Oprócz zatwierdzania zmian w pokrewnej tabeli podrzędnej przed zapisaniem dany
 
 Domyślnie `TableAdapterManager` klasy jest generowany, gdy utworzysz zestaw danych, który zawiera powiązane tabele. Aby zapobiec sytuacji, w której klasy generowane, należy zmienić wartość `Hierarchical Update` właściwości zestawu danych na wartość false. Podczas przeciągania tabeli, która ma relację na powierzchnię projektową formularza Windows lub strony WPF program Visual Studio deklaruje zmienną składową klasy. Nie używaj wiązania danych, musisz ręcznie zadeklarować zmienną.
 
-`TableAdapterManager` Klasa nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. W związku z tym użytkownik nie może go wyszukać w dokumentacji. Jest on tworzony w czasie projektowania, jako część procesu tworzenia zestawu danych.
+`TableAdapterManager` Klasy nie jest typem platformy .NET. W związku z tym użytkownik nie może go wyszukać w dokumentacji. Jest on tworzony w czasie projektowania, jako część procesu tworzenia zestawu danych.
 
 Poniżej przedstawiono często używanych metod i właściwości `TableAdapterManager` klasy:
 

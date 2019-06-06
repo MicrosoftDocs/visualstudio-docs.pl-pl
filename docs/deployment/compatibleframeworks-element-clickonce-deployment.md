@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b96327205369d0280a865b632801edbf199745
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407864"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746033"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; — element (wdrażanie ClickOnce)
 Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalować i uruchamiać.
@@ -41,7 +41,7 @@ Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalo
 ```
 
 ## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `compatibleFrameworks` Element jest wymagany, dla których obiektem docelowym manifesty wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime udostępnianym przez [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] lub nowszej. `compatibleFrameworks` Elementu zawiera jeden lub więcej `framework` elementy, które określają wersje programu .NET Framework, na których można uruchomić tę aplikację. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Środowisko uruchomieniowe będzie uruchomić aplikację na pierwszy dostępny `framework` na tej liście.
+ `compatibleFrameworks` Element jest wymagany, dla których obiektem docelowym manifesty wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime udostępnianym przez .NET Framework 4 lub nowszej. `compatibleFrameworks` Elementu zawiera jeden lub więcej `framework` elementy, które określają wersje programu .NET Framework, na których można uruchomić tę aplikację. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Środowisko uruchomieniowe będzie uruchomić aplikację na pierwszy dostępny `framework` na tej liście.
 
  Poniższa tabela zawiera listę atrybutów, `compatibleFrameworks` obsługuje element.
 
@@ -61,7 +61,7 @@ Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalo
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="example"></a>Przykład
- Poniższy kod przedstawia przykład `compatibleFrameworks` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Tego wdrożenia można uruchomić na [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Można również uruchomić na [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest nadzbiorem [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
+ Poniższy kod przedstawia przykład `compatibleFrameworks` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Tego wdrożenia można uruchomić na [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Jego można również uruchomić na .NET Framework 4 jest podzestawem [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
 
 ```xml
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">

@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6d0b3fb2eb143cfdc288485ab9e40499b6fccb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50ad60808a3ce4e00ac5330d41df5aa4421a00f7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547874"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747609"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Tworzenie aplikacji uniwersalnych i zlokalizowanych
 
-Program Visual Studio sprawia, że tworzenie aplikacji dla publiczności międzynarodowej łatwe dzięki wykorzystaniu usług, wbudowaną [.NET Framework](/dotnet/standard/globalization-localization/).
+Program Visual Studio sprawia, że tworzenie aplikacji dla publiczności międzynarodowej łatwe dzięki wykorzystaniu usług, wbudowaną [.NET](/dotnet/standard/globalization-localization/).
 
 Na przykład system projektu dla aplikacji Windows Forms można wygenerować plików zasobów dla rezerwowego kultura interfejsu użytkownika i każdego dodatkowego kultura interfejsu użytkownika. Podczas tworzenia projektu w programie Visual Studio, pliki zasobów są kompilowane z formatu programu Visual Studio XML (resx) na pośrednie format binarny (.resources), które następnie są osadzone w zestawach satelickich. Aby uzyskać więcej informacji, zobacz [pliki zasobów w programie Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) i [tworzenie zestawów satelickich dla aplikacji klasycznych](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 

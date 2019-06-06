@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263826"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746778"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Korzystanie z metod profilowania do zbierania danych o wydajności z wiersza polecenia
-Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzędzi wiersza poleceń Profiling Tools jest zależna od czynników, takich jak typ aplikacji, profilowany, metody profilowania, którego chcesz użyć, i czy aplikacji docelowej jest zapisywany w natywnym, czy [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kodu.
+Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzędzi wiersza poleceń Profiling Tools jest zależna od czynników, takich jak typ aplikacji, profilowany, metody profilowania, który chcesz użyć, i czy aplikacji docelowej jest zapisywany w trybie macierzystym i .NET Kod Framework.
 
  W tym temacie organizuje wiersza polecenia tematów proceduralnych zgodnie z wybranej metody profilowania.
 
@@ -50,9 +50,9 @@ Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzęd
 - [Natywnych usług](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Umożliwia zbieranie danych pamięci alokacji i obiekt okresu istnienia metod pamięci .NET
- Metoda pamięci Profiling Tools .NET umożliwia zbieranie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dane alokacji pamięci oraz informacje o okresie istnienia obiektów w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Metoda pamięci .NET narzędzi profilowania umożliwia zbieranie danych alokacji pamięci .NET Framework i informacje o okresie istnienia obiektów w programie .NET Framework.
 
- Można uruchomić aplikacji docelowej za pomocą profilera; należy dołączyć profiler do uruchomionego wystąpienia aplikacji; można także tworzyć instrumentowanej wersji aplikacji, zbierać szczegółowe informacje o czasach wraz z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dane pamięci.
+ Można uruchomić aplikacji docelowej za pomocą profilera; należy dołączyć profiler do uruchomionego wystąpienia aplikacji; a może utworzyć instrumentowanej wersji aplikacji, aby zbierać szczegółowe informacje o czasach wraz z danych pamięci .NET Framework.
 
 |Zadanie|Typ aplikacji docelowej|
 |----------|-----------------------------|

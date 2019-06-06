@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5387ce65532cb532192191bd67f29cc7af6e28c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545296"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744807"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach
 
@@ -36,7 +36,8 @@ ms.locfileid: "62545296"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Metoda ustawia <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> właściwości przy użyciu ciągu, który jest zbudowany z argumentem ciągu do metody.
+
+Metoda ustawia <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> właściwości przy użyciu ciągu, który jest zbudowany z argumentem ciągu do metody.
 
 ## <a name="rule-description"></a>Opis reguły
 
@@ -48,7 +49,7 @@ Zasada ta zakłada, że argument ciągu zawiera dane wejściowe użytkownika. Ci
 
 - Weryfikowanie danych wejściowych użytkownika, zarówno dla typu i zawartości, przed utworzeniem ciągu polecenia.
 
-Następujące typy .NET Framework implementują <xref:System.Data.IDbCommand.CommandText%2A> właściwość lub ustaw właściwość przy użyciu argumentu ciągu konstruktorów.
+Implementuje następujące typy .NET <xref:System.Data.IDbCommand.CommandText%2A> właściwość lub ustaw właściwość przy użyciu argumentu ciągu konstruktorów.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> i <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -60,32 +61,36 @@ Następujące typy .NET Framework implementują <xref:System.Data.IDbCommand.Com
 
 Należy zauważyć, że zasada ta jest naruszona stosowania metody ToString typu jest jawnie lub niejawnie do konstruowania ciągu zapytania. Oto przykład.
 
-```
+```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- Zostanie naruszona zasada, ponieważ złośliwy użytkownik może zastąpić metodę ToString().
+Zostanie naruszona zasada, ponieważ złośliwy użytkownik może zastąpić metodę ToString().
 
- Również zostanie naruszona zasada niejawnie stosowania ToString.
+Również zostanie naruszona zasada niejawnie stosowania ToString.
 
-```
+```csharp
 int x = 10;
 string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy użyć sparametryzowanych zapytań.
+
+Aby naprawić naruszenie tej zasady, należy użyć sparametryzowanych zapytań.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli tekst polecenia nie zawiera danych podawanych przez użytkownika.
+
+Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli tekst polecenia nie zawiera danych podawanych przez użytkownika.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metodę `UnsafeQuery`, który narusza regułę i metody `SaferQuery`, odpowiadającej reguły za pomocą ciągu sparametryzowanego polecenia.
 
- [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
- [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
- [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
+W poniższym przykładzie pokazano metodę `UnsafeQuery`, który narusza regułę i metody `SaferQuery`, odpowiadającej reguły za pomocą ciągu sparametryzowanego polecenia.
+
+[!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
+[!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
+[!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
 
 ## <a name="see-also"></a>Zobacz także
- [Przegląd zabezpieczeń](/dotnet/framework/data/adonet/security-overview)
+
+- [Przegląd zabezpieczeń](/dotnet/framework/data/adonet/security-overview)

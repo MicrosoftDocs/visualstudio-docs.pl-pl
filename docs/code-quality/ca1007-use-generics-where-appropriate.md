@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779721"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744768"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Używaj typów ogólnych tam, gdzie to odpowiednie
 
@@ -34,7 +34,7 @@ ms.locfileid: "62779721"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda widoczna na zewnątrz zawiera parametr przekazany przez odwołanie typu <xref:System.Object?displayProperty=fullName>, zawierające cele zestawu i [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Metoda widoczna na zewnątrz zawiera parametr przekazany przez odwołanie typu <xref:System.Object?displayProperty=fullName>, i zawierające zestaw jest przeznaczony dla .NET Framework 2.0.
 
 ## <a name="rule-description"></a>Opis reguły
  Parametr przekazany przez odwołanie jest parametr, który jest modyfikowana przy użyciu `ref` (`ByRef` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) — słowo kluczowe. Typ argumentu, który jest dostarczany dla parametru odwołania musi dokładnie odpowiadać typ parametru odwołania. Aby użyć typu, który pochodzi od typu parametru odwołania, typ najpierw należy przypisać do zmiennej typu parametru odwołania i rzutowania. Użyj metody ogólnej umożliwia wszystkich typów podlegających ograniczeniom, które zostaną przekazane do metody bez uprzedniego rzutowania typu do typu parametru odwołania.

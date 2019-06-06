@@ -8,16 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f07d4e2dc52ff05d67ec18d7f40f1119db582c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bac2041e9338f4b8b95755221a44157e0c409c8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894011"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747280"
 ---
 # <a name="get-started-with-wpf"></a>Rozpoczynanie pracy z aparatem WPF
 
-Windows Presentation Foundation (WPF) to struktura interfejsu użytkownika, która tworzy aplikacje klienta pulpitu. Platforma programistyczna WPF obsługuje szeroką gamę funkcje tworzenia aplikacji, w tym modelu aplikacji, zasobów, formanty, grafiki, układ, powiązań danych, dokumentów i zabezpieczeń. Jest podzbiorem .NET Framework, więc jeśli aplikacje zostały wcześniej utworzony za pomocą programu .NET Framework przy użyciu platformy ASP.NET lub formularzy Windows, doświadczenie w programowaniu należy się zapoznać. WPF używa Extensible Application Markup Language (XAML), aby zapewnić deklaratywny model programowania aplikacji. Ta sekcja zawiera tematy, które wprowadzają i pomóc Ci rozpocząć pracę przy użyciu platformy WPF.
+Windows Presentation Foundation (WPF) to struktura interfejsu użytkownika, która tworzy aplikacje klienta pulpitu. Platforma programistyczna WPF obsługuje szeroką gamę funkcje tworzenia aplikacji, w tym modelu aplikacji, zasobów, formanty, grafiki, układ, powiązań danych, dokumentów i zabezpieczeń. Struktura jest częścią platformy .NET, więc jeśli aplikacje utworzone wcześniej przy użyciu platformy .NET przy użyciu platformy ASP.NET lub Windows Forms, doświadczenie w programowaniu należy się zapoznać. WPF używa Extensible Application Markup Language (XAML), aby zapewnić deklaratywny model programowania aplikacji.
+
+Ta sekcja zawiera tematy, które wprowadzają i pomóc Ci rozpocząć pracę przy użyciu platformy WPF.
 
 ## <a name="where-should-i-start"></a>Gdzie mam zacząć?
 
@@ -25,7 +27,7 @@ Windows Presentation Foundation (WPF) to struktura interfejsu użytkownika, któ
 |-|-|
 |Chcę, aby przejść bezpośrednio...|[Przewodnik: Mój pierwszy aplikacji klasycznej WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Chcę porównanie narzędzi do projektowania XAML...|[Projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)|
-|Jesteś nowym użytkownikiem platformy .NET?|[Omówienie programu .NET framework](/dotnet/framework/get-started/overview)<br /><br /> [Podstawy aplikacji](/dotnet/standard/application-essentials)<br /><br /> [Wprowadzenie do języka Visual C# i Visual Basic](../ide/quickstart-visual-basic-console.md)|
+|Jesteś nowym użytkownikiem platformy .NET?|[Omówienie platformy .NET](/dotnet/framework/get-started/overview)<br /><br /> [Podstawy aplikacji](/dotnet/standard/application-essentials)<br /><br /> [Wprowadzenie do języka Visual C# i Visual Basic](../ide/quickstart-visual-basic-console.md)|
 |Więcej informacji o WPF...|[WPF — Przegląd](../designers/introduction-to-wpf.md)<br /><br /> [Przegląd XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Kontrolki](/dotnet/framework/wpf/controls/)<br /><br /> [Przegląd wiązanie danych](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [Powiązanie danych WPF za pomocą LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
 |Jesteś deweloperem formularze Windows?|[Kontroluje kontrolek formularzy Windows Forms i równoważne WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [Obsługiwane scenariusze w współdziałanie WPF i Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 

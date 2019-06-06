@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263220"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745561"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Instrukcje: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce
-A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymagania wstępne, które muszą być dostępne na komputerze klienckim, aby sprawdzić wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do uruchomienia aplikacji. Te zależności obejmują wymaganą minimalną wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], wersję systemu operacyjnego i dowolne zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], jednak nie zainstalują dowolną z tych wymagań wstępnych. Jeśli warunek wstępny nie zostanie znaleziony, po prostu zatrzymuje instalację i wyświetla okno dialogowe wyjaśniające, dlaczego instalacja nie powiodła się.
+A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymagania wstępne, które muszą być dostępne na komputerze klienckim, aby sprawdzić wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do uruchomienia aplikacji. Te zależności obejmują minimalną wymaganą wersję programu .NET Framework w wersji systemu operacyjnego i dowolne zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], jednak nie zainstalują dowolną z tych wymagań wstępnych. Jeśli warunek wstępny nie zostanie znaleziony, po prostu zatrzymuje instalację i wyświetla okno dialogowe wyjaśniające, dlaczego instalacja nie powiodła się.
 
  Istnieją dwie metody instalacji wymagań wstępnych. Możesz zainstalować je przy użyciu aplikacji programu inicjującego. Alternatywnie można określić adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych, który jest wyświetlany użytkownikom w oknie dialogowym, jeśli wymagań wstępnych nie zostanie znaleziony. Strony odwołuje się ten adres URL może zawierać łącza do instrukcji dotyczących instalacji wymagany warunek wstępny. Jeśli aplikacja nie określa adres URL pomocy technicznej dla indywidualnych wstępnie wymaganego składnika [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Wyświetla adres URL pomocy technicznej, określone w pliku manifestu wdrożenia dla aplikacji jako całości, jeśli jest zdefiniowana.
 
@@ -31,7 +31,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymaga
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganego składnika
 
-1. Otwórz manifest aplikacji ( *.manifest* pliku) dla Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.
+1. Otwórz manifest aplikacji ( *.manifest* pliku) dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.
 
 2. Wstępnie wymaganego składnika systemu operacyjnego można dodać `supportUrl` atrybutu `dependentOS` elementu:
 
@@ -65,7 +65,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymaga
      </dependency>
    ```
 
-5. Opcjonalna. Dla aplikacji przeznaczonych dla środowiska .NET Framework 4, otwarcie manifestu wdrażania ( *.application* pliku) dla Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.
+5. Opcjonalna. Dla aplikacji przeznaczonych dla środowiska .NET Framework 4, otwarcie manifestu wdrażania ( *.application* pliku) dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.
 
 6. Wymaganie wstępne platformy .NET Framework 4, można dodać `supportUrl` atrybutu `compatibleFrameworks` elementu:
 

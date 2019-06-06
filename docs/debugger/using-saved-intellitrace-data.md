@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408622"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746150"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Przy użyciu zapisanych danych funkcji IntelliTrace (C#, Visual Basic, C++)
 
@@ -37,7 +37,6 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
     |**Element źródłowy**|**Zobacz**|
     |----------------|-------------|
     |Sesja IntelliTrace w Visual Studio Enterprise (ale nie Professional lub Community)|[Funkcje IntelliTrace](../debugger/intellitrace-features.md)|
-    |Sesji testowej w programie Microsoft Test Manager. Dołącza plik .iTrace do elementu roboczego Team Foundation Server.|[Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Program Microsoft Monitoring Agent, albo samodzielnie lub z programem System Center 2012 R2 Operations Manager dla platformy ASP.NET i aplikacje sieci web aplikacji programu SharePoint, działające we wdrożeniu|-   [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> Co chcesz zrobić?
@@ -67,7 +66,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
 > Jeśli plik IntelliTrace został zamknięty podczas debugowania, możesz uruchomić go w łatwy sposób. Przejdź do **debugowania** menu, wybierz **IntelliTrace**, **Pokaż podsumowanie dziennika**. Można również wybrać **Pokaż podsumowanie dziennika** w **IntelliTrace** okna. Jest on dostępny tylko podczas debugowania przy użyciu funkcji IntelliTrace.
 
 ## <a name="Understand"></a> Informacje w dzienniku IntelliTrace
- Niektóre z poniższych sekcji w pliku .iTrace są wyświetlane tylko wtedy, gdy zostały zebrane dane z określonego źródła, na przykład z programu Test Manager lub aplikacji programu SharePoint.
+ Niektóre z poniższych sekcji w pliku .iTrace są wyświetlane tylko wtedy, gdy zostały zebrane dane z określonego źródła, na przykład z aplikacji programu SharePoint.
 
 |**Sekcja**|**zawiera**|**Źródło kolekcji**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
 |[Analiza](#Analysis)|SharePoint 2010 i SharePoint 2013 tylko dla aplikacji. Diagnozowanie zdarzeń IntelliTrace i programu SharePoint, takich jak zdarzenia debugera, zdarzenia usługi ULS, nieobsłużone wyjątki i inne dane zarejestrowane przez program Microsoft Monitoring Agent.|Program Microsoft Monitoring Agent, albo autonomiczny moduł zbierający lub za pomocą programu System Center 2012 R2 Operations Manager|
 |[Informacje o systemie](#SystemInfo)|Ustawienia i specyfikacje systemu hosta|Wszystkie źródła|
 |[Lista wątków](#ThreadsList)|Wątki, które uruchomiono podczas procesu kolekcji|Wszystkie źródła|
-|[Dane testowe](#TestData)|Kroki testu i ich wyniki z sesji testowej|Test Manager|
 |[Moduły](#Modules)|Moduły załadowane w procesie ładowania w kolejności załadowania.|Wszystkie źródła|
 |[Żądania sieci Web](#Modules)|Dane żądania sieci Web w środowisku produkcyjnym IIS sieci web, aplikacji i programu SharePoint 2010 i SharePoint 2013|Program Microsoft Monitoring Agent i standalone collector|
 
@@ -84,7 +82,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
 
 - Wybierz nagłówek kolumny, aby posortować dane.
 
-- Użyj pola wyszukiwania do filtrowania danych. Zwykłe wyszukiwanie tekstu działa we wszystkich kolumnach, z wyjątkiem kolumn czasowych. Można także filtrować wyszukiwania do określonej kolumny za pomocą jednego filtru na kolumnę. Wpisz nazwę kolumny bez spacji, dwukropka (**:**) ani wartości wyszukiwania. Postępuj zgodnie z tym przy użyciu średnika (**;**) aby dodać inną wartość w kolumnie i wyszukiwania.
+- Użyj pola wyszukiwania do filtrowania danych. Zwykłe wyszukiwanie tekstu działa we wszystkich kolumnach, z wyjątkiem kolumn czasowych. Można także filtrować wyszukiwania do określonej kolumny za pomocą jednego filtru na kolumnę. Wpisz nazwę kolumny bez spacji, dwukropka ( **:** ) ani wartości wyszukiwania. Postępuj zgodnie z tym przy użyciu średnika ( **;** ) aby dodać inną wartość w kolumnie i wyszukiwania.
 
      Na przykład, aby znaleźć zdarzenia wydajności, które zawierają wyraz "wolne" w **opis** kolumny, wpisz:
 
@@ -227,9 +225,6 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
 |**Nazwa**|Nazwa wątku. Nienazwane wątki są wyświetlane jako "\<bez nazwy >".|
 |**Godzina rozpoczęcia**|Godzina utworzenia wątku|
 |**Godzina zakończenia**|Czas zakończenia wątku|
-
-### <a name="TestData"></a> Dane testowe
- Przeanalizuj dane funkcji IntelliTrace programu Test Manager rejestrowane podczas testowania aplikacji.
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>Aby rozpocząć debugowanie z określonego etapu testu
 

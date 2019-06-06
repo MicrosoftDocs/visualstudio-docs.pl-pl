@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 086c4546d72042d2b2c7c1789cdf1695bc54b81d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808550"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744857"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko interfejsu API platformy docelowej
 
@@ -46,7 +46,7 @@ ms.locfileid: "62808550"
 |Program .NET Framework 3,5|.NET Framework 3.5 SP1|
 |Program .NET Framework 4|Brak|
 
- Aby zmienić platformę docelową projektu, zobacz [przeznaczonych dla określonej wersji programu .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Aby zmienić platformę docelową projektu, zobacz [jak: Docelowa wersja programu .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby usunąć zależność od dodatku service pack, należy usunąć wszystkie użycia nowego elementu członkowskiego lub typu. Jeśli jest to zamierzone zależności, ostrzeżenia lub wyłącz tę regułę.
@@ -67,4 +67,4 @@ ms.locfileid: "62808550"
 ## <a name="see-also"></a>Zobacz także
 
 - [Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)
-- [Określanie konkretnej wersji programu .NET Framework jako docelowej](../ide/visual-studio-multi-targeting-overview.md)
+- [Framework celem — omówienie](../ide/visual-studio-multi-targeting-overview.md)

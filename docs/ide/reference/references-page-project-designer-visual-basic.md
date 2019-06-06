@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c111c3a3b1c97a75d97baa625438052fbcae5a98
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956456"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746381"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 
-Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, odwołania sieci web i importowanych przestrzeni nazw w projekcie. Projekty mogą zawierać odwołania do składników modelu COM, usług sieci web XML, zestawów i biblioteki klas .NET Framework lub inne biblioteki klas. Aby uzyskać więcej informacji na temat korzystania z odwołań, zobacz [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md).
+Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, odwołania sieci web i importowanych przestrzeni nazw w projekcie. Projekty mogą zawierać odwołania do składników COM, usług sieci web XML, zestawów i bibliotek .NET lub inne biblioteki klas. Aby uzyskać więcej informacji na temat korzystania z odwołań, zobacz [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md).
 
 Aby uzyskać dostęp do **odwołania** wybierz węzeł projektu (nie **rozwiązania** węzła) w **Eksploratora rozwiązań**. Następnie wybierz **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **odwołania** kartę.
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263476"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747423"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy z konfiguracją serwera i klienta we wdrożeniach ClickOnce
 Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Server, a wdrożenie zawiera typ pliku, który nie rozpoznaje Windows, takich jak plik programu Microsoft Word, usługi IIS będą odrzucać do przekazywania pliku, a wdrożenie zakończy się niepowodzeniem.
@@ -41,7 +41,7 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
 
   Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.
 
-  Trzeba będzie skonfigurować *.manifest*, *.application*, i *.deploy*, na przykład, jeśli używasz usług IIS, w którym nie zainstalowano [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], czy jesteś przy użyciu innego serwera sieci Web (np. Apache).
+  Trzeba będzie skonfigurować *.manifest*, *.application*, i *.deploy*, na przykład, jeśli używasz usług IIS, w którym nie zainstalowano programu .NET Framework lub w przypadku przy użyciu innego serwera sieci Web (np. Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce i protokołu Secure Sockets Layer (SSL)
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja będzie działać prawidłowo za pośrednictwem protokołu SSL, z wyjątkiem sytuacji, gdy program Internet Explorer zgłasza monit o certyfikat SSL. Monit może być wywoływane, gdy ma się, że wystąpił problem z certyfikatem, takie jak kiedy nazwy lokacji nie są zgodne lub certyfikat wygasł. Zapewnienie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] działa za pośrednictwem połączenia SSL, upewnij się, że certyfikat jest aktualny i że dane certyfikatu są zgodne dane lokacji.
@@ -121,14 +121,14 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
   Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania typy MIME w systemie Windows Server można znaleźć w artykule bazy wiedzy Microsoft Knowledge Base KB326965, "usług IIS 6.0 nie nieznane typy MIME"w obsłużyć [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
 
 ## <a name="content-type-mappings"></a>Mapowanie typu zawartości
- Podczas publikowania za pośrednictwem protokołu HTTP, typu zawartości (znany także jako typ MIME), aby uzyskać *.application* plik powinien być "application/x-ms aplikacji." Jeśli masz [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] zainstalowane na serwerze, to zostanie ustawiona dla Ciebie automatycznie. Jeśli to nie jest zainstalowany, a następnie należy utworzyć skojarzenia typu MIME dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] katalog główny aplikacji (lub cały serwer).
+ Podczas publikowania za pośrednictwem protokołu HTTP, typu zawartości (znany także jako typ MIME), aby uzyskać *.application* plik powinien być "application/x-ms aplikacji." Jeśli masz zainstalowany na serwerze programu .NET Framework 2.0, spowoduje to ustawienie dla Ciebie automatycznie. Jeśli to nie jest zainstalowany, a następnie należy utworzyć skojarzenia typu MIME dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] katalog główny aplikacji (lub cały serwer).
 
  W przypadku wdrożenia przy użyciu serwera usług IIS, należy uruchomić <em>inetmgr.</em> plik exe i dodać nowy typ zawartości "application/x-ms aplikacja" dla *.application* rozszerzenia.
 
 ## <a name="http-compression-issues"></a>Problemy z kompresji HTTP
  Za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], można wykonać pliki do pobrania, które używają kompresji HTTP, technologia serwera sieci Web, która za pomocą algorytmu GZIP kompresowania strumienia danych przed wysłaniem strumienia do klienta. Klient — w tym przypadku [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]— dekompresuje strumienia przed odczytaniem plików.
 
- Jeśli używasz usług IIS, można łatwo włączyć kompresję HTTP. Jednak włączenie kompresji HTTP obejmującej go jest włączona tylko dla niektórych typów plików — to znaczy, pliki HTML i tekst. Aby włączyć kompresję dla zestawów (*.dll*), XML (*.xml*), manifesty wdrożenia (*.application*) i manifesty aplikacji (*.manifest*), należy dodać te typy plików do listy typów dla usługi IIS mają skompresować. Do momentu dodania typy plików do wdrożenia, będą kompresowane tylko tekst i pliki HTML.
+ Jeśli używasz usług IIS, można łatwo włączyć kompresję HTTP. Jednak włączenie kompresji HTTP obejmującej go jest włączona tylko dla niektórych typów plików — to znaczy, pliki HTML i tekst. Aby włączyć kompresję dla zestawów ( *.dll*), XML ( *.xml*), manifesty wdrożenia ( *.application*) i manifesty aplikacji ( *.manifest*), należy dodać te typy plików do listy typów dla usługi IIS mają skompresować. Do momentu dodania typy plików do wdrożenia, będą kompresowane tylko tekst i pliki HTML.
 
  Aby uzyskać szczegółowe instrukcje dotyczące usług IIS, zobacz [sposobu określania typów dokumentów dodatkowe kompresji HTTP](http://go.microsoft.com/fwlink/?LinkId=178459).
 

@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934525"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745887"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 W poniższej tabeli właściwości często używanych list, które są zdefiniowane w plikach projektu programu Visual Studio lub zawartych w *.targets* pliki, dostarczanych przez program MSBuild.
 
- Pliki w programie Visual Studio projektu (*.csproj*, *.vbproj*, *.vcxproj*i inne) zawierają kod MSBuild XML, który jest uruchamiany, gdy tworzysz projekt za pomocą IDE. Projekty zazwyczaj importują jeden lub więcej *.targets* pliki, aby zdefiniować ich proces kompilacji. Aby uzyskać więcej informacji, zobacz [MSBuild — pliki .targets](../msbuild/msbuild-dot-targets-files.md).
+ Pliki w programie Visual Studio projektu ( *.csproj*, *.vbproj*, *.vcxproj*i inne) zawierają kod MSBuild XML, który jest uruchamiany, gdy tworzysz projekt za pomocą IDE. Projekty zazwyczaj importują jeden lub więcej *.targets* pliki, aby zdefiniować ich proces kompilacji. Aby uzyskać więcej informacji, zobacz [MSBuild — pliki .targets](../msbuild/msbuild-dot-targets-files.md).
 
 ## <a name="list-of-common-properties-and-parameters"></a>Lista typowych właściwości i parametrów
 
@@ -39,7 +39,7 @@ W poniższej tabeli właściwości często używanych list, które są zdefiniow
 | ALToolPath | Ścieżka gdzie *AL.exe* można znaleźć. Ta właściwość zastępuje bieżącą wersję *AL.exe* umożliwia korzystanie z innej wersji. |
 | ApplicationIcon | *.Ico* plik ikony do przekazania do kompilatora w celu osadzenia jako ikona Win32. Właściwość jest równoważna `/win32icon` przełącznika kompilatora. |
 | ApplicationManifest | Określa ścieżkę do pliku, który jest używany do generowania zewnętrznych informacji manifestu kontroli konta użytkownika (UAC). Ma zastosowanie tylko do projektów programu Visual Studio przeznaczonych dla [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].<br /><br /> W większości przypadków manifest jest osadzony. Jednak jeśli używasz rejestracji wolnego modelu COM lub [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, a następnie manifest może być plik zewnętrzny, instalowany razem z zestawami aplikacji. Aby uzyskać więcej informacji zobacz Omówienie właściwości NoWin32Manifest w tym temacie. |
-| AssemblyOriginatorKeyFile | Określa plik, który jest używany do podpisywania zestawu (*.snk* lub *PFX*) i który jest przekazywany do [resolvekeysource — zadanie](../msbuild/resolvekeysource-task.md) do wygenerowania klucza rzeczywistego, który jest używany do podpisywania zestaw. |
+| AssemblyOriginatorKeyFile | Określa plik, który jest używany do podpisywania zestawu ( *.snk* lub *PFX*) i który jest przekazywany do [resolvekeysource — zadanie](../msbuild/resolvekeysource-task.md) do wygenerowania klucza rzeczywistego, który jest używany do podpisywania zestaw. |
 | AssemblySearchPaths | Lista lokalizacji do przeszukania podczas rozpoznawania zestawu odwołania w czasie kompilacji. Kolejność wyświetlania ścieżek na tej liście ma znaczenie, ponieważ ścieżki wymienione wcześniej mają pierwszeństwo przed późniejszymi wpisami. |
 | AssemblyName | Nazwa zestawu pliku wyjściowego po utworzeniu projektu. |
 | BaseAddress | Określa adres bazowy głównego zestawu wyjścia. Ta właściwość jest równoważna `/baseaddress` przełącznika kompilatora. |
@@ -53,7 +53,7 @@ W poniższej tabeli właściwości często używanych list, które są zdefiniow
 | Konfiguracja | Konfiguracja, który jest kompilowany "Debug" lub "Wersja". |
 | CscToolPath | Ścieżka *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kompilatora. |
 | CustomBeforeMicrosoftCommonTargets | Nazwa pliku projektu lub pliku obiektów docelowych, który ma być importowane automatycznie przed zaimportowaniem wspólnych obiektów docelowych. |
-| DebugSymbols | Wartość logiczna wskazująca, czy symbole są generowane przez kompilację.<br /><br /> Ustawienie **- p: DebugSymbols = false** w wierszu poleceń wyłącza Generowanie z bazy danych programu (*.pdb*) pliki symboli. |
+| DebugSymbols | Wartość logiczna wskazująca, czy symbole są generowane przez kompilację.<br /><br /> Ustawienie **- p: DebugSymbols = false** w wierszu poleceń wyłącza Generowanie z bazy danych programu ( *.pdb*) pliki symboli. |
 | DebugType | Definiuje poziom informacji debugowania, które mają być generowane. Prawidłowe wartości to "full", "" pdbonly"," "przenośne", "embedded" i "none". |
 | DefineConstants | Definiuje stałe warunkowe kompilatora. Pary symbol/wartość są oddzielone średnikami i są określane przy użyciu następującej składni:<br /><br /> *symbol1 = wartość1; Symbol2 = wartość2*<br /><br /> Właściwość jest równoważna `/define` przełącznika kompilatora. |
 | DefineDebug | Wartość logiczna wskazująca, czy chcesz, aby stała DEBUG była zdefiniowana. |
@@ -69,7 +69,7 @@ W poniższej tabeli właściwości często używanych list, które są zdefiniow
 | FrameworkPathOverride | Określa lokalizację *mscorlib.dll* i *microsoft.visualbasic.dll*. Ten parametr jest równoważny `/sdkpath` przełączyć z *vbc.exe* kompilatora. |
 | GenerateDocumentation | (Tylko Visual Basic) Parametr logiczny, który wskazuje, czy dokumentacja jest generowana przez kompilację. Jeśli `true`, kompilacja generuje informacje o dokumentacji i umieszcza go w *.xml* plików wraz z nazwą pliku wykonywalnego lub biblioteki, utworzonego przez zadanie kompilacji. |
 | GenerateSerializationAssemblies | Wskazuje, czy zestawy serializacji XML powinny być generowane przez *SGen.exe*, które można ustawić, auto lub wyłączony. Ta właściwość jest używana dla zestawów, których celem są tylko .NET Framework. Aby wygenerować zestawy serializacji XML dla zestawów .NET Standard i .NET Core, odwołać *Microsoft.XmlSerializer.Generator* pakietu NuGet. |
-| IntermediateOutputPath | Pełna pośrednia ścieżka wyjściowa wyprowadzana z `BaseIntermediateOutputPath`, jeśli nie określono ścieżki. Na przykład *\obj\debug\\*. |
+| IntermediateOutputPath | Pełna pośrednia ścieżka wyjściowa wyprowadzana z `BaseIntermediateOutputPath`, jeśli nie określono ścieżki. Na przykład *\obj\debug\\* . |
 | KeyContainerName | Nazwa kontenera klucza silnej nazwy. |
 | KeyOriginatorFile | Nazwa pliku klucza silnej nazwy. |
 | MSBuildProjectExtensionsPath | Określa ścieżkę, gdzie znajdują się rozszerzenia projektu. Domyślnie ten ma taką samą wartość jak `BaseIntermediateOutputPath`. |
@@ -115,10 +115,10 @@ W poniższej tabeli właściwości często używanych list, które są zdefiniow
 | Satellite_Trademark | Określa ciąg w polu Trademark w zestawie satelickim. |
 | Satellite_Version | Określa informacje o wersji dla zestawu satelickiego. |
 | Satellite_Win32Icon | Wstawia *.ico* plik ikony w zestawie satelickim. |
-| Satellite_Win32Resource | Wstawia zasób Win32 (*.res* plików) do zestawu satelickiego. |
+| Satellite_Win32Resource | Wstawia zasób Win32 ( *.res* plików) do zestawu satelickiego. |
 | SubsystemVersion | Określa minimalną wersję podsystemu, którego wygenerowany plik wykonywalny może używać. Ta właściwość jest równoważna `/subsystemversion` przełącznika kompilatora. Aby uzyskać informacje o wartości domyślnej tej właściwości, zobacz [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) lub [/subsystemversion (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Wersja platformy .NET Compact Framework, która jest wymagana do uruchamiania aplikacji, który jest kompilowany. Określenie jej pozwala odwoływać się do niektórych zestawów systemu, nie można się odwoływać inaczej. |
-| TargetFrameworkVersion | Wersja [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , jest wymagana do uruchamiania aplikacji, który jest kompilowany. Określenie jej pozwala odwoływać się do niektórych zestawów systemu, nie można się odwoływać inaczej. |
+| TargetFrameworkVersion | Wersja programu .NET Framework, która jest wymagana do uruchamiania aplikacji, który jest kompilowany. Określenie jej pozwala odwoływać się do niektórych zestawów systemu, nie można się odwoływać inaczej. |
 | TreatWarningsAsErrors | Parametr logiczny który, jeśli `true`, powoduje, że wszystkie ostrzeżenia są traktowane jako błędy. Ten parametr jest równoważny `/nowarn` przełącznika kompilatora. |
 | UseHostCompilerIfAvailable | Parametr logiczny który, jeśli `true`, powoduje, że zadanie kompilacji używa obiektu wewnątrzprocesowego kompilatora, jeśli jest ona dostępna. Ten parametr jest używany tylko przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | Utf8output — | Parametr logiczny który, jeśli `true`, rejestruje dane wyjściowe kompilatora przy użyciu kodowania UTF-8. Ten parametr jest równoważny `/utf8Output` przełącznika kompilatora. |

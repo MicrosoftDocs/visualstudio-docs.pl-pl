@@ -8,38 +8,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9760dbf4fd2eabb43e88e0b99858eba3e09c8fb5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004619"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747397"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Program MSBuild docelowej platformy framework i docelowego
 Można skompilować projekt, do uruchamiania na *platformę docelową*, czyli konkretnej wersji programu .NET Framework i *platformę docelową*, czyli architektury konkretnego oprogramowania.  Można na przykład wskazać aplikację do uruchamiania na .NET Framework 2.0 na 32-bitowej platformie, która jest zgodna z rodziny procesorów 802 x 86 ("x86"). Kombinacja wartości docelowej i platforma docelowa jest znany jako *kontekstu docelowej*.
 
 ## <a name="target-framework-and-profile"></a>Platforma docelowa i profilu
- Platforma docelowa to konkretna wersja [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] przeznaczonego do uruchamiania na projekt. Określanie platformy docelowej jest wymagana, ponieważ umożliwia ona funkcje kompilatora i odwołania do zestawów, które należą wyłącznie do tej wersji w ramach.
+ Platforma docelowa to konkretna wersja systemu .NET Framework, że projekt został skompilowany do uruchamiania na. Określanie platformy docelowej jest wymagana, ponieważ umożliwia ona funkcje kompilatora i odwołania do zestawów, które należą wyłącznie do tej wersji w ramach.
 
  Obecnie następujące wersje programu .NET Framework są dostępne do użycia:
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 (zawarty w programie Visual Studio 2005)
+- .NET Framework 2.0 (zawarte w programie Visual Studio 2005)
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0 (zawarte w [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 3.0 (zawarte w [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (zawarte w [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3.5 (zawarte w [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
 
-- The [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2
+- The .NET Framework 4.5.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (zawarte w [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4.6 (zawarte w [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1
+- .NET Framework 4.6.1
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2
+- .NET Framework 4.6.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7
+- .NET Framework 4.7
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1
+- .NET Framework 4.7.1
 
 Na liście zestawów, że każdy sprawia, że można odwoływać się do wersji programu .NET Framework różnią się od siebie. Na przykład nie można tworzyć aplikacje Windows Presentation Foundation (WPF), chyba że projekt jest przeznaczony dla .NET Framework w wersji 3.0 lub nowszej.
 

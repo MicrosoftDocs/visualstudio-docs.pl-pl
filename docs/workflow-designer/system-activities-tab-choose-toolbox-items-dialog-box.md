@@ -11,46 +11,42 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e057a0ff61bd095dd011c85970fd23ab1da75838
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: fd25b939519bb1a1cb179ab5bbd4d20b9307f920
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432059"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747766"
 ---
-# <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities, karta, Wybieranie elementów przybornika, okno dialogowe
+# <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Karta System.Activities, okno dialogowe Wybierz elementy przybornika
 
 Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę działań Windows Workflow Foundation (WF), szablonów i elementów dostępnych dla Ciebie. Do wyświetlania tej listy, wybierz **wybierz elementy przybornika** z **narzędzia** menu lub klikając prawym przyciskiem myszy **przybornika** i wybierając polecenie **wybierz elementy**do wyświetlenia **wybierz elementy przybornika** okno dialogowe, a następnie wybierz jego **System.Activities** kartę. Gotowych lista zawiera działania przepływu pracy z zestawów System.Activities, System.ServiceModel.Activities i System.Activities.Core.Presentation; jednak tylko dostarczane przez system działania wyświetlane i działań, dodawać za pośrednictwem innych zestawów, wyświetlana w **przybornika** są zaznaczone domyślnie. Ostatnio dodane działań są automatycznie sprawdzane i są wyświetlane w **przybornika** po kliknięciu **OK** w oknie dialogowym. Ponadto te elementy są wyświetlane w **przybornika** pod nową kategorię, która odnosi się do przestrzeni nazw, gdzie znajduje się działanie / / szablon elementu.
 
 > [!WARNING]
 > Jeśli spróbujesz dodać zestaw, który nie zawiera żadnych działań przepływu pracy, okna dialogowego błędu jest wyświetlany, który objaśnia, że zestaw nie zawiera żadnych działań.
 
- To okno dialogowe jest niezależny od projektu i dlatego **System.Activities** kartę w dalszym ciągu wyświetlane w autonomicznych XAML lub typu projektu niezwiązanej z przepływem pracy.
+To okno dialogowe jest niezależny od projektu i dlatego **System.Activities** kartę w dalszym ciągu wyświetlane w autonomicznych XAML lub typu projektu niezwiązanej z przepływem pracy.
 
- Filtrowanie odbywa się na poszczególnych kartach. Oznacza to, nie jest możliwe dodawanie działań przepływu pracy za pośrednictwem **składnik .NET** kartę. Muszą oni można dodawać za pośrednictwem **System.Activities** samej karcie.
+Filtrowanie odbywa się na poszczególnych kartach i nie jest możliwe dodawanie działań przepływu pracy za pośrednictwem **składnik .NET** kartę. Dodaj je za pośrednictwem **System.Activities** samej karcie.
 
- Możesz usunąć zaznaczenie wszelkich elementów, które nie mają być wyświetlane w **przybornika** z tego okna dialogowego kartę, lub też można to zrobić za pomocą **Usuń** kliknij prawym przyciskiem myszy opcję menu w **przybornika**i usuwając odwołanie do zestawu nie powoduje usunięcia elementu z **przybornika**.
+Możesz usunąć zaznaczenie wszelkich elementów, które nie mają być wyświetlane w **przybornika** z tego okna dialogowego kartę, lub też można to zrobić za pomocą **Usuń** kliknij prawym przyciskiem myszy opcję menu w **przybornika**i usuwając odwołanie do zestawu nie powoduje usunięcia elementu z **przybornika**.
 
- Utworzenie wystąpienia działania, przeciągając i upuszczając go w Projektancie dodaje zestaw, który zawiera element do listy przywoływanych zestawach automatycznie. Ponadto jeśli działania odwołuje się do zestawu języka C, nie dodaje C do listy przywoływanego zestawu. Zestaw C ma znajdować się w pamięci podręcznej GAC i tym samym katalogu co działanie B. W przypadku autonomicznego zestawu ma znajdować się w pamięci podręcznej GAC lub ścieżki sondy programu VS. Następnie można przeciągać i upuszczać działania na powierzchni projektanta przepływu pracy.
+Utworzenie wystąpienia działania, przeciągając i upuszczając go w Projektancie dodaje zestaw, który zawiera element do listy przywoływanych zestawach automatycznie. Ponadto jeśli działania odwołuje się do zestawu języka C, nie dodaje C do listy przywoływanego zestawu. Zestaw C ma znajdować się w pamięci podręcznej GAC i tym samym katalogu co działanie B. W przypadku autonomicznego zestawu ma znajdować się w pamięci podręcznej GAC lub ścieżki sondy programu VS. Następnie można przeciągać i upuszczać działania na powierzchni projektanta przepływu pracy.
 
- **Przybornik** ustawienia są domyślnie zapisywane jako opcje użytkownika, więc gdy następnym razem, gdy otworzysz **przybornika**, wyświetla listy niestandardowe działania przepływu pracy. Jeden efektem ubocznym tego jest to, że po dodaniu elementów do określonej domeny **przybornika** za pośrednictwem **wybierz elementy przybornika** okno dialogowe, możesz nadal przeglądać te elementy, jeśli pracujesz Aplikacja konsoli przepływu pracy oraz. Jeśli nie chcesz je wyświetlić, usuń je za pomocą menu kliknij prawym przyciskiem myszy lub usuń zaznaczenie pola wyboru je za pośrednictwem **wybierz elementy przybornika** okno dialogowe wspomniane wcześniej.
+**Przybornik** ustawienia są domyślnie zapisywane jako opcje użytkownika, więc gdy następnym razem, gdy otworzysz **przybornika**, wyświetla listy niestandardowe działania przepływu pracy. Jeden efektem ubocznym tego jest to, że po dodaniu elementów do określonej domeny **przybornika** za pośrednictwem **wybierz elementy przybornika** okno dialogowe, możesz nadal przeglądać te elementy, jeśli pracujesz Aplikacja konsoli przepływu pracy oraz. Jeśli nie chcesz je wyświetlić, usuń je za pomocą menu kliknij prawym przyciskiem myszy lub usuń zaznaczenie pola wyboru je za pośrednictwem **wybierz elementy przybornika** okno dialogowe wspomniane wcześniej.
 
- Kolumny w tym oknie dialogowym zawiera następujące informacje:
+Kolumny w tym oknie dialogowym zawiera następujące informacje:
 
- Nazwa
+Name\
+Wyświetla nazwy działania przepływu pracy w danym momencie zarejestrowany na komputerze lokalnym.
 
- Wyświetla nazwy działania przepływu pracy w danym momencie zarejestrowany na komputerze lokalnym.
+Namespace\
+Wyświetla hierarchii obszaru nazw .NET, który definiuje strukturę działania.
 
- Przestrzeń nazw
+Name\ zestawu
+Wyświetla nazwę i wersję zestawu .NET, który zawiera działania.
 
- Wyświetla hierarchię przestrzeni nazw w bibliotece klas .NET Framework, który definiuje strukturę działania.
+Directory\
+Wyświetla lokalizację zestawu .NET, który zawiera działania przepływu pracy. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache.
 
- Nazwa zestawu
-
- Wyświetla nazwę i wersję zestawu .NET Framework, który zawiera działanie.
-
- Katalog
-
- Wyświetla lokalizację zestawu .NET Framework, który zawiera działania przepływu pracy. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache.
-
- Aby posortować składniki na liście, wybierz nagłówek dowolnej kolumny.
+Aby posortować składniki na liście, wybierz nagłówek dowolnej kolumny.

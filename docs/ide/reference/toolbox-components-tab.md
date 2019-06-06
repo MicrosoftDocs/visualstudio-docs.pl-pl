@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944947"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747752"
 ---
 # <a name="toolbox-components-tab"></a>Przybornik, karta składniki
 
-Wyświetla składniki, które można dodać do projektantów w Visual Basic i C# dla formularzy Windows Forms. Oprócz składników .NET Framework, które znajdują się za pomocą programu Visual Studio, takie jak <xref:System.Messaging.MessageQueue> i <xref:System.Diagnostics.EventLog> składników, możesz dodać swoje składniki posiada lub w innej firmy do tej karty.
+Wyświetla składniki, które można dodać do projektantów w Visual Basic i C# dla formularzy Windows Forms. Oprócz składników platformy .NET, które znajdują się za pomocą programu Visual Studio, takie jak <xref:System.Messaging.MessageQueue> i <xref:System.Diagnostics.EventLog> składników, możesz dodać swoje składniki posiada lub w innej firmy do tej karty.
 
 Aby wyświetlić tę kartę, otwórz projektanta Windows Forms. Wybierz **widoku** > **przybornika**. W **przybornika**, wybierz opcję **składniki** kartę.
 

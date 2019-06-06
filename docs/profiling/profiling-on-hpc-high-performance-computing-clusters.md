@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d93071aa62c4d2305b0104ec17e8242bacefa6d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994993"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745316"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Klastry profilu na HPC (przetwarzanie o wysokiej wydajności)
 
@@ -36,9 +36,9 @@ Aby przeprowadzić profilowanie w węźle obliczeń HPC, wykonaj następujące c
 
 - Zainstaluj program Microsoft HPC Pack 2008 na tym samym komputerze co program Visual Studio. Komputer nie musi być częścią klastra HPC. Można zainstalować pakietu HPC Pack na [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414).
 
-- Zainstaluj [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] i węzła obliczeniowego autonomiczną wersję narzędzi profilowania w HPC. Zainstaluj programy dla obu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] i autonomiczny profiler jest dostępny na nośniku instalacyjnym programu Visual Studio. **Uwaga** po wykonaniu procedury instalacji należy ponownie uruchomić obliczenia [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] oraz przed zainstalowaniem narzędzi profilowania.
+- Zainstaluj program .NET Framework 4, a węzeł obliczeniowy autonomiczną wersję narzędzi profilowania w HPC. Zainstaluj programy zarówno dla programu .NET Framework i program profilujący autonomicznym są dostępne na nośniku instalacyjnym programu Visual Studio. **Uwaga** po wykonaniu procedury instalacji .NET Framework i przed zainstalowaniem narzędzi profilowania, należy ponownie uruchomić zasoby obliczeniowe.
 
-  Aby zainstalować [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] i autonomicznych Profiling Tools na aktywne HPC obliczeń, węzeł i Włącz profilowanie na komputerze z klastra, wykonaj następujące kroki:
+  Aby zainstalować program .NET Framework 4 i autonomicznych Profiling Tools w aktywnym węźle obliczeń HPC i Włącz profilowanie na komputerze klastra, wykonaj następujące kroki:
 
 1. Otwórz okno wiersza polecenia, który został zainstalowany przy użyciu pakietu HPC pack.
 
@@ -53,7 +53,7 @@ Aby przeprowadzić profilowanie w węźle obliczeń HPC, wykonaj następujące c
 | | |
 |------------------| - |
 | *%HeadNode%* | Nazwa węzła głównego klastra. |
-| *%FxPath%* | Ścieżka do [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] Instalatora. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%FxPath%* | Ścieżka do Instalatora programu .NET Framework 4. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Ścieżka do wersji autonomicznego Instalatora narzędzi profilowania. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profil w węźle obliczeń HPC
@@ -139,7 +139,7 @@ Można zmienić właściwości sesji wydajności, które ustawione w Kreatorze p
 |---------------------------------------| - |
 | **Nazwa projektu** | Nazwa bieżącego [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] projekt lub rozwiązanie. |
 | **Czyszczenie, gdy narzędzie profiler jest zatrzymane** | W przypadku wartości true spowoduje usunięcie plików binarnych, które zostały wdrożone w katalogu wykonywania. Pliki i katalogi utworzone przez program użytkownika nie są usuwane w tym kroku. Jeśli katalogu wykonywania i katalog wdrożenia zostały utworzone przez środowisko IDE, IDE podejmie próbę usunięcia ich, ale nie zrobić, jeśli mają one pliki nie są wdrażane przez środowisko IDE. |
-| **Dodatkowe pliki do wdrożenia** | Określa listę rozdzielonych średnikami wszelkie dodatkowe pliki do wdrożenia w węźle obliczeniowym. Możesz kliknąć przycisk wielokropka (**...** ) aby wybrać wiele plików za pomocą okna dialogowego. |
+| **Dodatkowe pliki do wdrożenia** | Określa listę rozdzielonych średnikami wszelkie dodatkowe pliki do wdrożenia w węźle obliczeniowym. Możesz kliknąć przycisk wielokropka ( **...** ) aby wybrać wiele plików za pomocą okna dialogowego. |
 | **Polecenie Mpiexec** | Określa aplikację, która uruchamiania aplikacji MPI. Wartość domyślna to **mpiexec.exe** |
 | **Argumenty Mpiexec** | Określa argumenty do przekazania do polecenia mpiexec.exe. |
 | **Żądane węzły w klastrze** | Określa liczbę węzłów w klastrze, na którym chcesz uruchomić aplikację. |

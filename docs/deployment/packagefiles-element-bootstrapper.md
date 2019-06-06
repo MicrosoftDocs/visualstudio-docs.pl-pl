@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898714"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747511"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Zadaniach PackageFiles&gt; — element (program inicjujący)
 `PackageFiles` Element zawiera `PackageFile` elementów, które definiują pakietów instalacyjnych, wykonywane na `Command` elementu.
@@ -62,7 +62,7 @@ ms.locfileid: "62898714"
 | `Hash` | Opcjonalna. Skrót SHA1 pliku pakietu. Służy to sprawdzić integralność pliku w czasie instalacji. Jeśli nie można obliczyć skrótu identyczne z pliku pakietu, pakietu nie zostanie zainstalowana. |
 
 ## <a name="example"></a>Przykład
- Poniższy kod definiuje pakietów dla [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pakietu redystrybucyjnego oprogramowania oraz jego zależności, takich jak Instalator Windows.
+ Poniższy kod definiuje pakiety dla pakietu redystrybucyjnego .NET Framework i jego zależności, takich jak Instalator Windows.
 
 ```xml
 <PackageFiles>

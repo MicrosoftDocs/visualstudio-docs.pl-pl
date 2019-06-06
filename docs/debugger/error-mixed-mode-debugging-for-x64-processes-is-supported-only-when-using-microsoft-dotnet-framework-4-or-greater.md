@@ -14,21 +14,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1423cbcfcae53948f7b9c9cd52eb90f57251bc24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ef0daf5fd28bd829edcdce412839b03ed8347bf
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851054"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745440"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Błąd: Debugowanie procesów 64-bitowych w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 4 lub nowszej wersji
-Aby debugować kod mieszany natywnych i zarządzanych w procesie 64-bitowym, konieczne jest posiadanie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] w wersji 4. Debugowanie trybu mieszanego procesów 64-bitowe o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] w wersji wcześniejszej niż 4 nie jest obsługiwane.
+Aby debugować kod mieszany natywnych i zarządzanych w procesie 64-bitowym, konieczne jest posiadanie .NET Framework w wersji 4. Debugowanie w trybie mieszanym dla procesów 64-bitowych z .NET Framework w wersji wcześniejszej niż 4 nie jest obsługiwane.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
 - Wykonaj jedną z następujących czynności:
 
-  - Uaktualnij swoje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] do wersji 4.
+  - Uaktualnić używany program .NET Framework w wersji 4.
 
   - Twórz 32-bitowej wersji aplikacji do debugowania.
 

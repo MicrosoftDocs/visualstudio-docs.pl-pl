@@ -18,15 +18,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5e79969c3b4be22a3c9bb01f06297f54b0734ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331204"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746008"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Obsługa narzędzi do przeglądania symboli
-**Przeglądarka obiektów**, **Widok klas**, **przeglądarce wywołań** i **wyniki wyszukiwania symboli** narzędzia udostępniają symbol przeglądania w programie Visual Studio. Te narzędzia wyświetlanie widoków drzewa hierarchicznego symboli i pokazanie relacji między symbolami w drzewie. Symbole mogą reprezentować przestrzenie nazw, obiektów, klas, składowych klasy i inne elementy języka zawarte w różnych składników. Składniki obejmują projektów programu Visual Studio, zewnętrzne [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] składniki i biblioteki typów (.tlb). Aby uzyskać więcej informacji, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).
+**Przeglądarka obiektów**, **Widok klas**, **przeglądarce wywołań** i **wyniki wyszukiwania symboli** narzędzia udostępniają symbol przeglądania w programie Visual Studio. Te narzędzia wyświetlanie widoków drzewa hierarchicznego symboli i pokazanie relacji między symbolami w drzewie. Symbole mogą reprezentować przestrzenie nazw, obiektów, klas, składowych klasy i inne elementy języka zawarte w różnych składników. Składniki obejmują projektów programu Visual Studio, zewnętrznych składników .NET Framework i biblioteki typów (.tlb). Aby uzyskać więcej informacji, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).
 
 ## <a name="symbol-browsing-libraries"></a>Biblioteki przeglądania symboli
  Jako implementującego języka możesz rozszerzyć możliwości przeglądania symboli programu Visual Studio, tworząc bibliotek, Śledź symbole w poszczególnych składnikach, które zapewniają listy symboli do Menedżera obiektów programu Visual Studio za pomocą zestawu interfejsów. Biblioteka jest opisana przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interfejsu. Menedżer obiektów programu Visual Studio odpowiada na żądania dla nowych danych narzędzi do przeglądania symboli przez uzyskanie danych z biblioteki i organizowania go. Następnie wypełnia lub narzędzia zostaje zaktualizowana o żądanych danych. Aby uzyskać odwołanie do Menedżera obiektów w programie Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, przekazać <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> identyfikator do usługi `GetService` metody.

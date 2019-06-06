@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44c9a4a5c59907c527c47523c6c758adaf7ee51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dd2945ec12ac398f2887d20d3d0cb6156f4ed3c
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825497"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745212"
 ---
 # <a name="performance-warnings"></a>Wydajność — Ostrzeżenia
 Ostrzeżeń dotyczących wydajności obsługi bibliotek o wysokiej wydajności i aplikacji.
@@ -38,7 +38,7 @@ Ostrzeżeń dotyczących wydajności obsługi bibliotek o wysokiej wydajności i
 | [CA1810: Inicjowanie pola statyczne typu referencyjnego śródwierszowo](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | Podczas gdy typ deklaruje jawny, statyczny konstruktor, kompilator just in time (JIT) do każdej metody statycznej dodaje sprawdzenie i konstruktora wystąpienia, aby upewnić się, że konstruktor statyczny został wcześniej wywołany. Sprawdzenia konstruktora statycznego mogą obniżyć wydajność. |
 | [CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md) | Prywatne lub wewnętrzne członek (w poziomie zestawu) nie ma obiektów wywołujących w zestawie, nie jest wywoływany przez środowisko uruchomieniowe języka wspólnego i nie jest wywoływany przez delegata. |
 | [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | Wystąpienie typu na poziomie zestawu nie jest tworzone przez kod w zestawie. |
-| [CA1813: Unikaj niezapieczętowanych atrybutów](../code-quality/ca1813-avoid-unsealed-attributes.md) | Biblioteka klas .NET Framework dostarcza metody do pobierania atrybutów niestandardowych. Domyślnie te metody wyszukują hierarchie dziedziczenia atrybutu. Plombowanie atrybutu eliminuje wyszukiwanie przez hierarchię dziedziczenia i może zwiększyć wydajność. |
+| [CA1813: Unikaj niezapieczętowanych atrybutów](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET dostarcza metody do pobierania atrybutów niestandardowych. Domyślnie te metody wyszukują hierarchie dziedziczenia atrybutu. Plombowanie atrybutu eliminuje wyszukiwanie przez hierarchię dziedziczenia i może zwiększyć wydajność. |
 | [CA1814: Preferuj Tablice nieregularne wielowymiarowych](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | Nieregularna tablica to ta, której elementy są tablicami. Tablice, które tworzą elementy mogą być różne rozmiary, które mogą skutkować zapewnia większą oszczędność miejsca dla niektórych zestawów danych. |
 | [CA1815: Przesłoń metodę equals i operator równości dla typów wartości](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Dla typów wartości dziedziczona implementacja operatora Equas wykorzystuje bibliotekę odbić i porównuje zawartość wszystkich pól. Odbicie jest obliczeniowo kosztowne, a porównanie równości każdego pola może być niepotrzebne. Jeśli można się spodziewać, że użytkownicy będą porównywać lub sortować wystąpienia lub używać wystąpień jako kluczy tabel haszowanych, typ wartości powinien implementować Equals. |
 | [CA1816: Wywołaj GC. SuppressFinalize poprawnie](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Metoda, która jest implementacją Dispose, nie wywołuje GC. SuppressFinalize lub metody, która nie jest implementacją Dispose, wywołuje GC. SuppressFinalize lub metoda wywołuje GC. SuppressFinalize i przekazuje na coś innego niż to (Me w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). |

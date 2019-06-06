@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e285ead27b8d3d7c674a138d5f06c69a7e88d1fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9746119c746679817076c86e3d5a9080cec30d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779295"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744683"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Nie przechwytuj typów wyjątków ogólnych
 
@@ -47,7 +47,7 @@ ms.locfileid: "62779295"
  Nie pomijaj ostrzeżeń dla tej reguły. Przechwytywanie typów wyjątków ogólnych może ukryć problemów w czasie wykonywania przed użytkownikiem biblioteki oraz może utrudnić debugowanie.
 
 > [!NOTE]
-> Począwszy od [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], środowisko uruchomieniowe języka wspólnego (CLR) dostarcza już wyjątki uszkodzony, które występują w systemie operacyjnym i kodu zarządzanego, takie jak naruszenia zasad dostępu w [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], aby zostać obsłużony przez kod zarządzany. Jeśli chcesz skompilować aplikację w [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] lub nowszy i obsługa obsługi wyjątków uszkodzony, możesz zastosować <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atrybutu do metody, która obsługuje wyjątek stanie uszkodzenia.
+> Począwszy od programu .NET Framework 4 środowisko uruchomieniowe języka wspólnego (CLR) nie jest już dostarcza wyjątki uszkodzony, które występują w systemie operacyjnym i kodu zarządzanego, takie jak naruszenia zasad dostępu w [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], aby zostać obsłużony przez kod zarządzany. Jeśli do kompilacji aplikacji w programie .NET Framework 4 lub nowszy, a obsługa obsługą wyjątków uszkodzony, możesz zastosować <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atrybutu do metody, która obsługuje wyjątek stanie uszkodzenia.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład przedstawia typ, który narusza tę regułę i typu, który implementuje prawidłowo `catch` bloku.

@@ -1,6 +1,6 @@
 ---
 title: Uruchamianie i debugowanie testów jednostkowych w Eksploratorze testów
-description: Dowiedz się, jak uruchomić testy z użyciem Eksplorator testów w programie Visual Studio. W tym temacie opisano, jak włączyć automatyczne testy po kompilacji, wyświetlić wyniki testów, grupy i filtrowanie listy testów, tworzenie listy odtwarzania, Debuguj testy i skróty testu.
+description: Dowiedz się, jak uruchomić testy z Eksploratora testów w programie Visual Studio. W tym temacie opisano, jak włączyć automatyczne testy po kompilacji, wyświetlić wyniki testów, grupy i filtrowanie listy testów, tworzenie listy odtwarzania, Debuguj testy i skróty testu.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934495"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747777"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -23,7 +23,7 @@ Użyj **Eksploratora testów** do uruchamiania testów jednostkowych z Visual St
 
 Program Visual Studio obejmuje struktur testowania jednostek pochodzących od firmy Microsoft dla kodu zarządzanego i natywnego. Jednak **Eksploratora testów** można również uruchomić dowolnej jednostki struktury testów, które ma zaimplementowany adapter programu Test Explorer. Aby uzyskać więcej informacji na temat Instalowanie platform testów jednostkowych innych firm, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)
 
-**Eksplorator testów** można uruchomić testy z wielu projektów testów w rozwiązaniu i z klas testowych, które są częścią projektów kodu produkcyjnego. Projekty testów mogą używać innych struktur testów jednostek. Jeśli testowany kod jest przeznaczony dla .NET Framework, Projekt testowy można napisać tak w dowolnym języku, który również jest przeznaczony dla .NET Framework, bez względu na język docelowy kodu. Natywnych projektów kodu C/C++ muszą być przetestowany przy użyciu struktury testowej jednostki C++. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md).
+**Eksplorator testów** można uruchomić testy z wielu projektów testów w rozwiązaniu i z klas testowych, które są częścią projektów kodu produkcyjnego. Projekty testów mogą używać innych struktur testów jednostek. Jeśli testowany kod jest przeznaczony dla platformy .NET, Projekt testowy można napisać tak w dowolnym języku, który również jest przeznaczony dla platformy .NET, bez względu na język docelowy kodu. Natywnych projektów kodu C/C++ muszą być przetestowany przy użyciu struktury testowej jednostki C++. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Uruchom testy w Eksploratorze testów
 

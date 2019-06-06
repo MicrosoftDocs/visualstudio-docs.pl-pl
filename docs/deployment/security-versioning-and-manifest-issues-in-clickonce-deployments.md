@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263485"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745607"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce
 
@@ -59,7 +59,7 @@ Ten błąd może wystąpić tylko wtedy, gdy edytujesz swoje [!INCLUDE[ndpteccli
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Określ poszczególne zestawy .NET Framework w manifeście
 
-Aplikacja nie będzie można załadować po zakończeniu edycji ręcznie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, aby odwoływać się do starszej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zestawu. Na przykład, jeśli dodaje odwołanie do zestawu przestrzeni nazw System.Net wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wcześniejszymi niż wersja określona w manifeście, następnie mógłby wystąpić błąd. Ogólnie rzecz biorąc, należy zrezygnować do określenia odniesienia do poszczególnych [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zespołów, jak wersja [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] względem której działa aplikacja jest określony jako zależności w manifeście aplikacji.
+Aplikacja nie będzie można załadować po zakończeniu edycji ręcznie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, aby odwoływać się do starszej wersji zestawu .NET Framework. Na przykład jeśli dodano odwołanie do zestawu przestrzeni nazw System.Net dla wersji programu .NET Framework wcześniejszych niż wersja określona w manifeście, następnie może wystąpić błąd. Ogólnie rzecz biorąc użytkownik nie należy próbować Określ odwołania do poszczególnych zestawów .NET Framework, zgodnie z wersji programu .NET Framework, z którym jest uruchamiana aplikacja jest określony jako zależności w manifeście aplikacji.
 
 ## <a name="manifest-parsing-issues"></a>Manifest analizowania problemów
 

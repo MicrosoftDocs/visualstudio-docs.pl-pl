@@ -2,7 +2,7 @@
 title: Tworzenie aplikacji internetowej platformy ASP.NET Core wC#
 description: Dowiedz się, jak utworzyć prostą aplikację sieci web Hello World w programie Visual Studio w języku C# i ASP.NET Core, który krok po kroku.
 ms.custom: mvc,seodec18
-ms.date: 03/23/2019
+ms.date: 06/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ea01ff2671212c8dfeb023d145cfd224a5feb2f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e701fd45230295222ffc6e17c05052e01b47189
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954754"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745044"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki start: Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core przy użyciu programu Visual Studio
 
@@ -55,7 +55,7 @@ Aby rozpocząć, należy utworzyć projekt aplikacji sieci web platformy ASP.NET
 
 1. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 
-1. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **Visual C#**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**. <br/><br/>Następnie nadaj plikowi nazwę `HelloWorld` i wybierz polecenie **OK**.
+1. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **Visual C#** , a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**. <br/><br/>Następnie nadaj plikowi nazwę `HelloWorld` i wybierz polecenie **OK**.
 
    ![Utwórz nowy projekt aplikacji sieci Web programu ASP.NET Core dla języka C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
@@ -75,7 +75,7 @@ Aby rozpocząć, należy utworzyć projekt aplikacji sieci web platformy ASP.NET
    ![Okno dialogowe nowej aplikacji sieci Web programu ASP.NET Core](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **platformy ASP.NET Core 2.1** lub nowszym, upewnij się, że używasz najnowszej wersji programu Visual Studio. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio do najnowszej wersji](../install/update-visual-studio.md) strony.
+   > Jeśli nie widzisz **platformy ASP.NET Core 2.1**, upewnij się, że używasz najnowszej wersji programu Visual Studio. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio do najnowszej wersji](../install/update-visual-studio.md) strony.
 
 Wkrótce potem Visual Studio otwiera plik projektu.
 
@@ -110,7 +110,7 @@ Wkrótce potem Visual Studio otwiera plik projektu.
 
    ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. W **Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core** okna, upewnij się, że **platformy ASP.NET Core 2.1** lub nowszej jest wyświetlana w menu u góry listy rozwijanej. Następnie wybierz **aplikacji sieci Web**, w tym przykładzie stron Razor. Następnie wybierz pozycję **Utwórz**.
+1. W **Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core** okna, upewnij się, że **platformy ASP.NET Core 2.1** pojawia się w menu u góry listy rozwijanej. Następnie wybierz **aplikacji sieci Web**, w tym przykładzie stron Razor. Następnie wybierz pozycję **Utwórz**.
 
    ![W oknie "Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core"](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
@@ -132,7 +132,7 @@ Wkrótce potem Visual Studio otwiera plik projektu.
 
    ![Kod HTML dla obszaru dodatkowe informacje w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Zmień tekst "informacje dodatkowe" do odczytu "**Hello World!**".
+1. Zmień tekst "informacje dodatkowe" do odczytu "**Hello World!** ".
 
    ![Zmień domyślny kod HTML dla obszaru dodatkowe informacje w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -144,7 +144,7 @@ Wkrótce potem Visual Studio otwiera plik projektu.
 
    ![Kod C# obszar opisu aplikacji w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. Zmień tekst komunikatu "description aplikacji" do odczytu "**co to jest wiadomość?**".
+1. Zmień tekst komunikatu "description aplikacji" do odczytu "**co to jest wiadomość?** ".
 
    ![Zmień domyślny tekst komunikatu dla obszaru Opis aplikacji, w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003662"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746586"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper — zadanie
 Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej wstępnie wymagane składniki. Służy on jako jeden Instalator, który integruje osobne instalatory dla wszystkich składników tworzących aplikację.
@@ -152,7 +152,7 @@ Poniżej opisano parametry `GenerateBootstrapper` zadania.
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie użyto `GenerateBootstrapper` zadanie, aby zainstalować aplikację, która musi mieć [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] zainstalowany jako warunek wstępny.
+W poniższym przykładzie użyto `GenerateBootstrapper` zadanie, aby zainstalować aplikację, która musi być zainstalowany jako warunek wstępny programu .NET Framework 2.0.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

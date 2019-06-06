@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0819a4d9e1438b300daa68db4208bfe5908d800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6127ae8e76ff7233ff7ad4f7b336325555e57b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794352"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747207"
 ---
 # <a name="object-lifetime-view"></a>Widok okresu istnienia obiektu
 Widok okresu istnienia obiektu, jest dostępny, gdy **również zbieranie danych o okresie istnienia obiektu platformy .NET** jest sprawdzane na **sesji wydajności** strony właściwości.
 
- Moduł zbierający elementy bezużyteczne z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zarządza alokacją i zwolnieniem pamięci dla aplikacji. W celu zoptymalizowania wydajności moduł zbierający elementy bezużyteczne, zarządzanego stosu jest podzielony na trzy generacje: 0, 1 i 2. Moduł odśmiecania pamięci środowiska uruchomieniowego zapisuje nowe obiekty w generacji 0. Obiekty, które przeżyły kolekcje są promowane i przechowywane w generacji 1 i 2.
+ Moduł odśmiecania pamięci środowiska .NET Framework zarządza alokacją i zwolnieniem pamięci dla aplikacji. W celu zoptymalizowania wydajności moduł zbierający elementy bezużyteczne, zarządzanego stosu jest podzielony na trzy generacje: 0, 1 i 2. Moduł odśmiecania pamięci środowiska uruchomieniowego zapisuje nowe obiekty w generacji 0. Obiekty, które przeżyły kolekcje są promowane i przechowywane w generacji 1 i 2.
 
  Moduł odśmiecania pamięci odzyskuje pamięć, cofnięcie przydziału całego generacji obiektów. Dla obiektów, które zostały utworzone przez profilowanej aplikacji widok okresu istnienia obiektu przedstawia liczbę i rozmiar obiektów oraz jego generacji, w którym są odzyskiwane.
 

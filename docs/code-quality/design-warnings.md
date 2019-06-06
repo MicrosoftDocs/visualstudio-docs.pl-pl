@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f2437f09286b1b6ff0aa856eec845ecb83c1d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bd8b7c990ff0a56acd22cf4b7ddb16bc2e6c1618
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715000"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745163"
 ---
 # <a name="design-warnings"></a>Ostrzeżenia dotyczące projektu
 
@@ -32,7 +32,7 @@ Przestrzeganie pomocy technicznej ostrzeżenia dotyczące projektowania [wytyczn
 | [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | Po wywołaniu statycznego elementu członkowskiego typu ogólnego dla typu trzeba określić argument typu. Po wywołaniu wystąpienia ogólnego elementu członkowskiego, które nie obsługuje wnioskowania, dla elementu członkowskiego musi zostać określony argument typu. W tych dwóch przypadkach składnia określająca argument typu jest różna i łatwo o pomyłkę. |
 | [CA1001: Typy, które posiadają pola usuwalne powinny być usuwalne](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Klasa deklaruje i implementuje pole wystąpienia typu System.IDisposable i klasa nie implementuje interfejsu IDisposable. Klasa, która deklaruje pole IDisposable, pośrednio posiada niezarządzany zasób i powinna implementować interfejs IDisposable. |
 | [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002-do-not-expose-generic-lists.md) | System.Collections.Generic.List < (z \<(T >) >) jest kolekcją ogólną, która jest przeznaczona dla wydajności, nie o dziedziczeniu. Dlatego też lista nie zawiera wirtualnych elementów członkowskich. Zamiast powyższych powinny zostać zastosowane kolekcje ogólne, zaprojektowane do obsługi dziedziczenia. |
-| [CA1003: Użyj wystąpień obsługi zdarzeń generycznych](../code-quality/ca1003-use-generic-event-handler-instances.md) | Typ zawiera delegata zwracającego wartość typu void, którego podpis zawiera dwa parametry (pierwszy typu obiekt i drugi typu, który można przypisać do EventArgs) i cele zestawu zawierającego [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. |
+| [CA1003: Użyj wystąpień obsługi zdarzeń generycznych](../code-quality/ca1003-use-generic-event-handler-instances.md) | Typ zawiera delegata zwracającego wartość typu void, którego podpis zawiera dwa parametry (pierwszy typu obiekt i drugi typu, który można przypisać do EventArgs), a zawierające zestaw jest przeznaczony dla .NET Framework 2.0. |
 | [CA1004: Metody ogólne powinny podawać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md) | Wnioskowanie to ustalenie argumentu typu metody ogólnej przez typ argumentu przekazanego do metody, zamiast użycia jawnej specyfikacji argumentu typu. Aby włączyć wnioskowanie, podpis parametru metody ogólnej musi zawierać parametr, który jest tego samego typu co parametr typu dla metody. W tym przypadku argument typu nie musi zostać określony. Gdy używasz wnioskowania dla wszystkich parametrów typu składnia wywoływania metod rodzajowych i nierodzajowych wystąpienia jest identyczna; Upraszcza to użycie metod ogólnych. |
 | [CA1005: Unikaj nadużywania parametrów na typach generycznych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Zwykle jest to za pomocą jednego parametru typu, jak w List\<T >, a w niektórych przypadkach, z dwoma parametrami typu, jak Dictionary\<TKey, TValue >. Jeśli jednak istnieją więcej niż dwa parametry typu, poziom trudności staje się zbyt wysoki dla większości użytkowników. |
 | [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md) | Argument typu zagnieżdżonego jest argumentem typu, który jest również typem ogólnym. Aby wywołać element członkowski, którego podpis zawiera argument typu zagnieżdżonego, użytkownik musi zainicjować wystąpienie pierwszego typu ogólnego i przekazać go do konstruktora drugiego typu ogólnego. Wymagana procedura oraz składnia są złożone i należy ich unikać. |

@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946794"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747698"
 ---
-# <a name="toolbox-data-tab"></a>Przybornik, karta Dane
+# <a name="toolbox-data-tab"></a>Przybornik, karta dane
 
 Wyświetla obiekty danych możesz dodać do formularzy i składników. **Danych** karcie **przybornika** pojawia się podczas tworzenia projektu, który ma skojarzony projektanta. **Przybornika** pojawia się domyślnie w programie Visual Studio zintegrowanego środowiska programistycznego; Jeśli chcesz wyświetlić **przybornika**, wybierz opcję **przybornika** z **Widoku** menu.
 
@@ -28,7 +28,7 @@ Wyświetla obiekty danych możesz dodać do formularzy i składników. **Danych*
 
 ## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika
 
-Aby przejść bezpośrednio na stronie dokumentacji .NET Framework dla składnika, naciśnij klawisz **F1** element **przybornika** lub element składnika w zasobniku projektanta.
+Aby przejść bezpośrednio do strony dokumentacja platformy .NET dla składnika, naciśnij **F1** element **przybornika** lub element składnika w zasobniku projektanta.
 
 |Nazwa|Opis|
 |----------|-----------------|
@@ -37,7 +37,7 @@ Aby przejść bezpośrednio na stronie dokumentacji .NET Framework dla składnik
 |<xref:System.Windows.Forms.BindingSource>|Upraszcza proces powiązywanie kontrolek z bazowego źródła danych.|
 |<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje nawigacji i manipulowania interfejsu użytkownika (UI) dla formantów w formularzu, które są powiązane z danymi.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostęp do danych w programie Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)

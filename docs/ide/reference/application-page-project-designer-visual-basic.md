@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e918521a404914c2acc9a8fd6283815b1ee324e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791659"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744943"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
 
@@ -57,14 +57,14 @@ Aby dowiedzieć się, jak programowo dostęp do tej właściwości, zobacz <xref
 
 ### <a name="target-framework-all-configurations"></a>Platforma docelowa (wszystkie konfiguracje)
 
-Określa wersję programu .NET Framework, cele aplikacji. Ta opcja może mieć różne wartości w zależności od tego, które wersje programu .NET Framework są zainstalowane na tym komputerze.
+Określa wersję platformy .NET, cele aplikacji. Ta opcja może mieć różne wartości w zależności od tego, które wersje platformy .NET są instalowane na komputerze.
 
-Wartość domyślna jest zgodna platformę docelową, które zostały określone podczas tworzenia projektu.
+Dla projektów programu .NET Framework wartością domyślną jest zgodna platformę docelową, które zostały określone podczas tworzenia projektu.
 
 > [!NOTE]
 > Wstępnie wymagane pakiety, które są wymienione w [wstępnie wymagane składniki, okno dialogowe](../../ide/reference/prerequisites-dialog-box.md) są ustawiane automatycznie po otwarciu okna dialogowego po raz pierwszy. Jeśli użytkownik zmieni później platformę docelową projektu, należy określić wstępnie wymagane składniki ręcznie, aby dopasować do nowej platformy docelowej.
 
-Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [programu Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md).
+Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [Framework przeznaczonych dla Przegląd](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Typ aplikacji
 
@@ -90,7 +90,7 @@ Jeśli projekt jest aplikacją przeglądarki środowiska WPF, ta lista jest zaty
 
 Jeśli **struktury aplikacji Włącz** jest wyczyszczone, ta lista staje się **obiekt początkowy** i pokazuje formularze i klas lub moduły z `Sub Main`.
 
-**Obiekt początkowy** definiuje punkt wejścia, który ma być wywoływana podczas ładowania aplikacji. Zazwyczaj ta opcja jest ustawiona na formularzu głównym w aplikacji lub do `Sub Main` procedury, które należy uruchamiać podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie ma punktu wejścia, ich jedyną opcją dla tej właściwości jest **(Brak)**. Aby uzyskać więcej informacji, zobacz [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Obiekt początkowy** definiuje punkt wejścia, który ma być wywoływana podczas ładowania aplikacji. Zazwyczaj ta opcja jest ustawiona na formularzu głównym w aplikacji lub do `Sub Main` procedury, które należy uruchamiać podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie ma punktu wejścia, ich jedyną opcją dla tej właściwości jest **(Brak)** . Aby uzyskać więcej informacji, zobacz [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Ikona
 
@@ -153,7 +153,7 @@ Wybierz **w głównym oknie, Zamknij** do określenia, czy zakończyć działani
 
 ### <a name="splash-screen"></a>Ekran powitalny
 
-Wybierz formularz, który ma być używany jako ekran powitalny. Musisz wcześniej utworzono ekran powitalny za pomocą formularza lub szablonu. Wartość domyślna to **(Brak)**.
+Wybierz formularz, który ma być używany jako ekran powitalny. Musisz wcześniej utworzono ekran powitalny za pomocą formularza lub szablonu. Wartość domyślna to **(Brak)** .
 
 ### <a name="view-application-events"></a>Wyświetl zdarzenia aplikacji
 

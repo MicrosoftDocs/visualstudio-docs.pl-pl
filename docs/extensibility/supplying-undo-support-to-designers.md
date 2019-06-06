@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331632"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747726"
 ---
 # <a name="supply-undo-support-to-designers"></a>Podaj Obsługa polecenia Cofnij do projektantów
 
@@ -29,7 +29,7 @@ Projektanta implementacji, które są potrzebne, aby zapewnić obsługę funkcji
 
 - Trwałość dostarczają i CodeDOM obsługuje implementując <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> i <xref:System.ComponentModel.Design.IComponentChangeService> klasy.
 
-Aby uzyskać więcej informacji na temat pisania projektantów przy użyciu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], zobacz [rozszerzenie obsługi w czasie projektowania](/previous-versions/37899azc(v=vs.140)).
+Aby uzyskać więcej informacji o pisaniu projektantów przy użyciu .NET Framework, zobacz [rozszerzenie obsługi w czasie projektowania](/previous-versions/37899azc(v=vs.140)).
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Zapewnia infrastrukturę cofania domyślne przez:
 
@@ -50,7 +50,7 @@ Projektanta w programie Visual Studio obsługuje automatyczne i pełne cofania i
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Kiedy należy używać jawnych cofania projektanta pomocy technicznej
  Projektanci należy podać zarządu cofania, jeśli korzystają z graficznym interfejsem użytkownika, określane jako karty Widok innej niż ta, dostarczone przez <xref:System.Windows.Forms.Control>.
 
- Na przykład może być tworzenie produktu za pomocą interfejsu opartego na sieci web projektu graficznego zamiast [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]— na podstawie interfejsu graficznego.
+ Na przykład może być tworzenia produktu z interfejsem sieci web projektu graficznego, a nie interfejsu graficznego środowiska .NET Framework.
 
  W takich przypadkach jeden konieczne zarejestrowanie programu Visual Studio przy użyciu tej karty Widok <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>i zarządzanie jawne cofania.
 
@@ -59,7 +59,7 @@ Projektanta w programie Visual Studio obsługuje automatyczne i pełne cofania i
 ## <a name="undo-support-features-of-the-designer"></a>Cofnij obsługują funkcje projektanta
  Zestaw SDK środowiska zawiera implementacje domyślne klasy interfejsy niezbędne do zapewnienia Cofnij pomocy technicznej, które mogą być używane przez projektantów nie używa <xref:System.Windows.Forms.Control> na podstawie klasy dla ich interfejsów użytkownika lub standardowego modelu CodeDOM i trwałości.
 
- <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Klasa pochodzi od [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine> przy użyciu implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> klasy, aby zarządzać cofania operacji.
+ <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Klasa pochodzi od programu .NET Framework <xref:System.ComponentModel.Design.UndoEngine> przy użyciu implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> klasy, aby zarządzać cofania operacji.
 
  Program Visual Studio zawiera następującą funkcję do projektanta cofania:
 

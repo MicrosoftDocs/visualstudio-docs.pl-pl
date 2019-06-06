@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436860"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747382"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 
@@ -48,7 +48,7 @@ Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplika
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Jak działa ten atrybut ToolsVersion
 
- Podczas tworzenia projektu w programie Visual Studio lub uaktualnienie istniejącego projektu o nazwie atrybutu `ToolsVersion` zostaną automatycznie włączone w projekcie pliku i jego wartość odnosi się do wersji programu MSBuild, który znajduje się w wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [przeznaczonych dla określonej wersji środowiska .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Podczas tworzenia projektu w programie Visual Studio lub uaktualnienie istniejącego projektu o nazwie atrybutu `ToolsVersion` zostaną automatycznie włączone w projekcie pliku i jego wartość odnosi się do wersji programu MSBuild, który znajduje się w wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Framework przeznaczonych dla Przegląd](../ide/visual-studio-multi-targeting-overview.md).
 
  Gdy `ToolsVersion` wartość jest zdefiniowana w pliku projektu, program MSBuild używa tej wartości można określić wartości właściwości zestawu narzędzi, które są dostępne dla projektu. Jedna właściwość zestawu narzędzi jest `$(MSBuildToolsPath)`, która określa ścieżkę do narzędzia programu .NET Framework. Tej właściwości zestawu narzędzi (lub `$(MSBuildBinPath)`), jest wymagana.
 

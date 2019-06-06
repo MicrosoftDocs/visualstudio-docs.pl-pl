@@ -7,22 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438179"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746806"
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
-Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla domeny (DSL), zamiast DSL diagram. Ten temat przeprowadzi Cię przez powiązanie formularza Windows DSL za pomocą Visual Studio Visualization i Modeling SDK.
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach Windows
 
- ![Język DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formularza i Eksploratora modelu.
+Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla domeny (DSL), zamiast DSL diagram. Ten temat przeprowadzi Cię przez powiązanie formularza Windows za pomocą Visual Studio Visualization i Modeling SDK języka DSL.
 
-## <a name="creating-a-windows-forms-dsl"></a>Tworzenie formularzy Windows DSL
- **Minimalny projektanta WinForm** DSL szablon służy do tworzenia minimalne DSL, który można dostosować do własnych własnych wymagań.
+Na poniższej ilustracji przedstawiono interfejs użytkownika Windows formularza i Eksplorator modelu DSL wystąpienia:
 
-#### <a name="to-create-a-minimal-winforms-dsl"></a>Aby utworzyć minimalny DSL WinForms
+![Wystąpienia elementu DSL w programie Visual Studio](../modeling/media/dsl-wpf-2.png)
+
+## <a name="create-a-windows-forms-dsl"></a>Tworzenie formularzy Windows DSL
+
+**Minimalny projektanta WinForm** DSL szablon służy do tworzenia minimalne DSL, który można dostosować do własnych własnych wymagań.
 
 1. Utwórz DSL z **minimalny projektanta WinForm** szablonu.
 
@@ -37,7 +39,7 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 
    1. Transformuj wszystkie szablony.
 
-   2. Tworzenie i uruchamianie aplikacji przykładowej (**kombinację klawiszy CTRL + F5**).
+   2. Tworzenie i uruchamianie aplikacji przykładowej (**Ctrl**+**F5**).
 
    3. W doświadczalnym wystąpieniu programu Visual Studio, otwórz `Sample` plik debugowania projektu.
 
@@ -62,14 +64,14 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
     - Plik o nazwie `DataBinding.cs` zawierający dodatkowe częściową definicję `ModelViewControl`. Aby wyświetlić jego zawartość w **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku i wybierz polecenie **Wyświetl kod**.
 
 ### <a name="about-the-ui-project"></a>Temat projektu interfejsu użytkownika
- Po zaktualizowaniu pliku definicji DSL, aby określić własne DSL, trzeba będzie zaktualizować kontrolki na `UI` projektu DSL. W odróżnieniu od `Dsl` i `DslPackage` projektami, na przykład `UI` projektu nie jest generowany na podstawie `DslDefinitionl.dsl`. Możesz dodać .TT — pliki do generowania kodu, jeśli chcesz, mimo że nie jest objęty w tym przewodniku.
 
-## <a name="updating-the-dsl-definition"></a>Aktualizowanie definicji DSL
- Następujące definicji DSL jest używana w tym przewodniku.
+Po zaktualizowaniu pliku definicji DSL, aby określić własne DSL, trzeba będzie zaktualizować kontrolki na `UI` projektu DSL. W odróżnieniu od `Dsl` i `DslPackage` projektami, na przykład `UI` projektu nie jest generowany na podstawie `DslDefinitionl.dsl`. Możesz dodać .TT — pliki do generowania kodu, jeśli chcesz, mimo że nie jest objęty w tym przewodniku.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+## <a name="update-the-dsl-definition"></a>Aktualizacja definicji DSL
 
-#### <a name="to-update-the-dsl-definition"></a>Aby zaktualizować definicję DSL
+Następujące definicji DSL jest używana w tym przewodniku.
+
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Otwórz DslDefinition.dsl w projektanta DSL.
 
@@ -107,10 +109,11 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
     > [!NOTE]
     > Na tym etapie inne projekty nie zostanie skompilowany bez błędów. Jednakże chcemy kompilacji projektu Dsl, tak aby jej zestaw jest dostępne w Kreatorze źródła danych.
 
-## <a name="updating-the-ui-project"></a>Aktualizowanie projektu interfejsu użytkownika
- Teraz można utworzyć nowej kontrolki użytkownika, który spowoduje wyświetlenie informacji, która jest przechowywana w modelu DSL. Najprostszym sposobem łączenia kontrolki użytkownika w modelu jest za pomocą powiązania danych. Typ adaptera o nazwie powiązania danych **ModelingBindingSource** specjalnie do łączenia z językami DSL VMSDK innych interfejsów.
+## <a name="update-the-ui-project"></a>Aktualizuj projekt interfejsu użytkownika
 
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>Aby zdefiniować modelu DSL jako źródło danych
+Teraz można utworzyć nowej kontrolki użytkownika, który spowoduje wyświetlenie informacji, która jest przechowywana w modelu DSL. Najprostszym sposobem łączenia kontrolki użytkownika w modelu jest za pomocą powiązania danych. Typ adaptera o nazwie powiązania danych **ModelingBindingSource** specjalnie do łączenia z językami DSL VMSDK innych interfejsów.
+
+### <a name="define-your-dsl-model-as-a-data-source"></a>Zdefiniuj modelu DSL jako źródło danych
 
 1. Na **danych** menu, wybierz **Pokaż źródła danych**.
 
@@ -128,7 +131,7 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 
      ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
-#### <a name="to-connect-your-model-to-a-form"></a>Aby połączyć swój model do formularza
+### <a name="connect-your-model-to-a-form"></a>Łączenie modelu do formularza
 
 1. W **interfejsu użytkownika** projektu, Usuń wszystkie istniejące pliki CS.
 
@@ -151,7 +154,7 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
    > [!NOTE]
    > Etap alternatywne jest przeciągnij zwierząt i pól elementów z okna źródeł danych w formancie. Ta akcja tworzy automatycznie siatek danych i powiązania między widokiem siatki i źródła danych. Jednak tego powiązania nie działa prawidłowo dla języków DSL. W związku z tym zaleca się tworzenie siatek danych i powiązania ręcznie.
 
-7. Jeśli przybornik nie zawiera **ModelingBindingSource** narzędzia, dodaj ją. W menu skrótów **danych** kartę, wybrać **wybierz elementy**. W **wybierz elementy przybornika** okno dialogowe, wybierz opcję **ModelingBindingSource** z **.NET Framework kartę**.
+7. Jeśli przybornik nie zawiera **ModelingBindingSource** narzędzia, dodaj ją. W menu skrótów **danych** kartę, wybrać **wybierz elementy**. W **wybierz elementy przybornika** okno dialogowe, wybierz opcję **ModelingBindingSource** z **.NET Framework** kartę.
 
 8. Korzystanie z przybornika, Utwórz dwa wystąpienia **ModelingBindingSource**i nazwij je `AnimalBinding` i `FieldBinding`.
 
@@ -173,7 +176,7 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 
   ![DslWpf4](../modeling/media/dslwpf4.png) schematu łącza między źródłami danych i widoków.
 
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>Aby ukończyć powiązania z język DSL
+### <a name="complete-the-bindings-to-the-dsl"></a>Wykonaj powiązania z język DSL
 
 1. Dodaj następujący kod w osobnym pliku kodu w **interfejsu użytkownika** projektu:
 
@@ -207,10 +210,9 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
     string viewControlTypeName = "FarmControl";
     ```
 
-## <a name="testing-the-dsl"></a>Testowanie język DSL
- Rozwiązanie DSL teraz skompilować i uruchomić, chociaż możesz zechcieć dodać kolejne ulepszenia później.
+## <a name="test-the-dsl"></a>Testowanie język DSL
 
-#### <a name="to-test-the-dsl"></a>Aby przetestować język DSL
+Rozwiązanie DSL teraz skompilować i uruchomić, chociaż możesz zechcieć dodać kolejne ulepszenia później.
 
 1. Skompiluj i uruchom rozwiązanie.
 
@@ -229,21 +231,21 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 
      Po wyjściu z każdego pola w formularzu odpowiednie zmiany właściwości w oknie dialogowym właściwości.
 
-## <a name="enhancing-the-dsl"></a>Udoskonalanie język DSL
+## <a name="enhance-the-dsl"></a>Rozszerzanie DSL
 
-#### <a name="to-make-the-properties-update-immediately"></a>Zapewnienie właściwości wykonać natychmiastową aktualizację
+### <a name="make-the-properties-update-immediately"></a>Wprowadź właściwości, wykonać natychmiastową aktualizację
 
 1. W widoku Projekt FarmControl.cs zaznacz pole proste, takie jak nazwa, rozmiar lub IsOrganic.
 
-2. W oknie właściwości rozwiń **powiązania danych** , a następnie otwórz **(zaawansowane)**.
+2. W oknie właściwości rozwiń **powiązania danych** , a następnie otwórz **(zaawansowane)** .
 
-     W **formatowanie i powiązywanie zaawansowane** okna dialogowego, w obszarze **tryb aktualizacji źródła danych**, wybierz **onpropertychanged —**.
+     W **formatowanie i powiązywanie zaawansowane** okna dialogowego, w obszarze **tryb aktualizacji źródła danych**, wybierz **onpropertychanged —** .
 
 3. Skompiluj i uruchom rozwiązanie.
 
      Upewnij się, że po zmianie zawartości tego pola do odpowiedniej właściwości natychmiast zmiany modelu farmy.
 
-#### <a name="to-provide-add-buttons"></a>Aby zapewnić Dodaj przyciski
+### <a name="provide-add-buttons"></a>Podaj Dodaj przyciski
 
 1. W widoku Projekt FarmControl.cs Użyj przybornika, aby utworzyć przycisk w formularzu.
 
@@ -301,7 +303,8 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
    ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Kod, aby dodać element — informacje
- Nowy element przycisków poniższy kod alternatywne jest nieco prostsze.
+
+Nowy element przycisków poniższy kod alternatywne jest nieco prostsze.
 
 ```csharp
 private void NewSheepButton_Click(object sender, EventArgs e)
@@ -314,12 +317,12 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 }
 ```
 
- Ten kod nie ustawiać, domyślna nazwa dla nowego elementu. Nie działa on dostosowany scalania, który został zdefiniowany w **dyrektywy scalania elementów** elementu DSL, a nie działa on żadnych niestandardowych scalać kod, który może być zdefiniowany.
+Ten kod nie ustawiać, domyślna nazwa dla nowego elementu. Nie działa on dostosowany scalania, który został zdefiniowany w **dyrektywy scalania elementów** elementu DSL, a nie działa on żadnych niestandardowych scalać kod, który może być zdefiniowany.
 
- W związku z tym firma Microsoft zaleca użycie <xref:Microsoft.VisualStudio.Modeling.ElementOperations> do tworzenia nowych elementów. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).
+W związku z tym firma Microsoft zaleca użycie <xref:Microsoft.VisualStudio.Modeling.ElementOperations> do tworzenia nowych elementów. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
+- [Jak zdefiniować języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

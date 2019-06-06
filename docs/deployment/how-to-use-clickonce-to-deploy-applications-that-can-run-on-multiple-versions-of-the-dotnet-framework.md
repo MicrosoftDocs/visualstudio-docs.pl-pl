@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de3ca40696549ad9208ffd181f8dbc4e7f092b5d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263202"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747495"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Instrukcje: Użycie technologii ClickOnce do wdrażania aplikacji, które można uruchamiać na wielu wersji programu .NET framework
 Można wdrożyć aplikację, który jest przeznaczony dla wielu wersji programu .NET Framework przy użyciu technologii wdrażania ClickOnce. Wymaga to Generowanie i zaktualizuj manifesty aplikacji i wdrożenia.
 
 > [!NOTE]
-> Zanim zmienisz aplikacji pod kątem wielu wersji programu .NET Framework, należy upewnić się, że aplikacja działa z wieloma wersjami programu .NET Framework. Wersja środowiska uruchomieniowego języka wspólnego różni się między [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] a .NET Framework 2.0, .NET Framework 3.0 i .NET Framework 3.5.
+> Zanim zmienisz aplikacji pod kątem wielu wersji programu .NET Framework, należy upewnić się, że aplikacja działa z wieloma wersjami programu .NET Framework. Wersja środowiska uruchomieniowego języka wspólnego różni się między .NET Framework 4 i .NET Framework 2.0, .NET Framework 3.0 oraz .NET Framework 3.5.
 
  Ten proces wymaga wykonania następujących kroków:
 
@@ -88,7 +88,7 @@ Można wdrożyć aplikację, który jest przeznaczony dla wielu wersji programu 
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. Zaktualizuj numer wersji `<assemblyIdentity>` elementu dla Microsoft.Windows.CommonLanguageRuntime numer wersji dla programu .NET Framework, która jest najprostszy. Na przykład, jeśli aplikacja jest przeznaczony dla .NET Framework 3.5 i [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], użyj 2.0.50727.0 numer wersji i XML powinien wyglądać podobnie do poniższego:
+3. Zaktualizuj numer wersji `<assemblyIdentity>` elementu dla Microsoft.Windows.CommonLanguageRuntime numer wersji dla programu .NET Framework, która jest najprostszy. Na przykład jeśli aplikacja jest przeznaczony dla .NET Framework 3.5 i .NET Framework 4, użyj 2.0.50727.0 numer wersji i XML powinien wyglądać następująco:
 
    ```xml
    <dependency>

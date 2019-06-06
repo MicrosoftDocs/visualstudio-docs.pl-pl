@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536428"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747138"
 ---
 # <a name="interop-activity-designer"></a>Interop, projektant działań
 
@@ -29,11 +29,7 @@ ms.locfileid: "62536428"
 
 **Międzyoperacyjności** projektanta działań można znaleźć w **migracji** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**kartę. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
-[Migracji](../workflow-designer/migration-activity-designers.md) kategorię, która zawiera <xref:System.Activities.Statements.Interop> działanie tylko zostaną wyświetlone w **przybornika** Jeśli projekt jest przeznaczony dla pełnego .NET Framework 4.
-
-Dla projektów C#, można ponownie docelowej projektu, aby użyć pełnego .NET Framework 4, klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**. Na **aplikacji** zaznacz **.NET Framework 4** opcji **platformę docelową**. Wybierz **tak** aby potwierdzić tę zmianę.
-
-Dla projektów języka Visual Basic można ponownie docelowej projektu, aby użyć pełnego .NET Framework 4, klikając prawym przyciskiem myszy nad projektem w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**. Na **skompilować** kliknij pozycję **zaawansowane opcje kompilacji** przycisku. Wybierz **.Net Framework 4** z **Target framework listy**, a następnie kliknij przycisk **OK**. Wybierz **tak** aby potwierdzić tę zmianę.
+[Migracji](../workflow-designer/migration-activity-designers.md) kategorię, która zawiera <xref:System.Activities.Statements.Interop> działania jest wyświetlany tylko w **przybornika** Jeśli projekt jest przeznaczony dla .NET Framework 4 (pełne) lub nowszej. Jeśli to konieczne, można zmienić wersję framework, docelowy system operacyjny projektu.
 
 **Międzyoperacyjności** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchnię projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Upuszczanie **międzyoperacyjności** tworzy projektanta działań <xref:System.Activities.Statements.Interop> działanie przy użyciu domyślnego **DisplayName** z międzyoperacyjności. Możesz edytować <xref:System.Activities.Activity.DisplayName%2A> w nagłówku **międzyoperacyjności** Projektant działań lub **DisplayName** pola siatki właściwości.
 

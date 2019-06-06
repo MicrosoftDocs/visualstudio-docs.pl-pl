@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407629"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746110"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Przy użyciu autonomicznego modułu zbierającego IntelliTrace (C#, Visual Basic)
 
@@ -106,12 +106,12 @@ ms.locfileid: "63407629"
 
    2. Przejdź do katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**
 
-   3. Użyj **rozwiń** polecenia, w tym okresie (**.**) na końcu, aby rozwinąć IntelliTraceCollection.cab:
+   3. Użyj **rozwiń** polecenia, w tym okresie ( **.** ) na końcu, aby rozwinąć IntelliTraceCollection.cab:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > Okres (**.**) zachowuje podfoldery, które zawierają zlokalizowane plany kolekcji.
+       > Okres ( **.** ) zachowuje podfoldery, które zawierają zlokalizowane plany kolekcji.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Skonfiguruj uprawnienia dla katalogu kolektora
 
@@ -157,7 +157,7 @@ ms.locfileid: "63407629"
 
             - W 64-bitowych systemach operacyjnych, otwórz menu skrótów dla **programu Windows PowerShell**. Wybierz **Uruchom jako administrator**.
 
-            - W 32-bitowych systemach operacyjnych, otwórz menu skrótów dla **programu Windows PowerShell (x86)**. Wybierz **Uruchom jako administrator**.
+            - W 32-bitowych systemach operacyjnych, otwórz menu skrótów dla **programu Windows PowerShell (x86)** . Wybierz **Uruchom jako administrator**.
 
     2. W oknie wiersza polecenia programu PowerShell użyj **Import-Module** polecenie, aby zaimportować **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
@@ -377,9 +377,7 @@ ms.locfileid: "63407629"
 
 ## <a name="WhereElse"></a> Gdzie indziej można uzyskać dane IntelliTrace?
 
-- W programie Visual Studio Enterprise sesję debugowania funkcji IntelliTrace, zobacz temat [funkcji IntelliTrace](../debugger/intellitrace-features.md).
-
-- W sesji testowej w programie Microsoft Test Manager, zobacz [jak: Zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+Można uzyskać dane IntelliTrace z IntelliTrace sesji debugowania w programie Visual Studio Enterprise. Zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Gdzie można uzyskać więcej informacji?
  [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)

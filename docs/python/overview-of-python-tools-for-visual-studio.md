@@ -2,7 +2,7 @@
 title: Obsługa języka Python w programie Visual Studio na Windows
 titleSuffix: ''
 description: Podsumowanie funkcji języka Python w programie Visual Studio, dzięki czemu najlepsze środowisko IDE języka Python na Windows (znany także jako narzędzi Python Tools for Visual Studio, PTVS).
-ms.date: 03/12/2019
+ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785239"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747566"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -37,6 +37,11 @@ Aby rozpocząć pracę:
 - Przechodzą przez co najmniej jeden z przewodników Szybki Start, aby utworzyć projekt. Jeśli wiesz, skorzystaj z [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md) lub [tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 ::: moniker-end
 - Postępuj zgodnie z [działał z językiem Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) samouczek dotyczący środowiska pełnej end-to-end.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Program Visual Studio obsługuje wszystkie oficjalnie obsługiwane wersje języka Python, określony przez [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). W szczególności w wersji 2.7, 3.5 i 3.6 oraz 3.7.
+::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Obsługa wielu interpretery
 
@@ -150,9 +155,9 @@ Informacje dodatkowe:
 
 ## <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
 
-Obciążenie języka Python zawiera zestaw Azure SDK dla języka Python, co upraszcza korzystanie usług platformy Azure z aplikacji Windows, Mac OS X i Linux.
+Bibliotek platformy Azure dla języka Python upraszczają korzystanie usług platformy Azure z aplikacji Windows, Mac OS X i Linux. Można ich użyć do tworzenia i zarządzania zasobami platformy Azure, a także połączyć się z usługami platformy Azure. 
 
-Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](/python/azure/?view=azure-python).
+Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](/python/azure/?view=azure-python) i [bibliotek platformy Azure dla języka Python](/python/azure/python-sdk-azure-overview?view=azure-python) .
 
 ## <a name="questions-and-answers"></a>Pytania i odpowiedzi
 

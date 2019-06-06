@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950059"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747244"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Instrukcje: Tworzenie dodatku programu Visual Studio dla podglądu wyników testu wydajności sieci Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Instrukcje: Tworzenie dodatku dla podglądu wyników testu wydajności sieci Web
 
 Możesz rozszerzyć w interfejsie użytkownika dla **podglądu wyników testu wydajności sieci Web** przy użyciu następujących przestrzeni nazw:
 
@@ -256,9 +256,9 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu WebPerfTestResultsViewerControl i wybierz **właściwości**.
 
-2. Wybierz **aplikacji** kartę, a następnie wybierz **platformę docelową** listy rozwijanej i wybierz pozycję **.NET Framework 4** i Zamknij **właściwości**.
+2. Wybierz **aplikacji** kartę, a następnie wybierz **platformę docelową** listy rozwijanej i wybierz pozycję **.NET Framework 4** (lub nowsza). Zamknij **właściwości** okna.
 
-     Jest to wymagane w celu obsługi odwołań biblioteki DLL, które są potrzebne do rozszerzania **podglądu wyników testu wydajności sieci Web**.
+   Jest to wymagane w celu obsługi odwołań biblioteki DLL, które są potrzebne do rozszerzania **podglądu wyników testu wydajności sieci Web**.
 
 3. W **Eksploratora rozwiązań**, w projekcie WebPerfTestResultsViewerControl kliknij prawym przyciskiem myszy **odwołania** a następnie wybierz węzeł **Dodaj odwołanie**.
 
@@ -300,15 +300,11 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>Kompiluj rozwiązanie WebPerfTestResultsViewerAddin
-
-### <a name="to-build-the-solution"></a>Aby skompilować rozwiązanie
+## <a name="build-the-solution"></a>Skompiluj rozwiązanie
 
 - Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Zarejestruj dodatek WebPerfTestResultsViewerAddin
-
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Aby zarejestrować dodatek za pomocą Menedżera dodatków
 
 1. Na **narzędzia** menu, wybierz opcję **Add-in Manager**.
 
@@ -318,15 +314,13 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 4. Wybierz **OK**.
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Uruchom test wydajności sieci web, korzystanie z kompilacji dodatku WebPerfTestResultsViewerAddin
-
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Aby uruchomić nowy program VS dodatek dla podglądu wyników testu sieci Web
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Uruchamianie testu wydajności sieci web przy użyciu podglądu wyników testu sieci Web
 
 1. Uruchamianie testu wydajności sieci web, a następnie zostanie wyświetlony dodatku WebPerfTestResultsViewerAddin w nowej karcie zatytułowaną przykład, wyświetlaną w **Podgląd wyników testu wydajności sieci Web**.
 
 2. Wybierz kartę Aby wyświetlić właściwości przedstawione w formancie DataGridView.
 
-## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework
+## <a name="net-security"></a>Zabezpieczenia platformy .net
 
 Aby zwiększyć bezpieczeństwo poprzez uniemożliwienie automatycznego uaktywniania szkodliwych dodatków, program Visual Studio udostępnia ustawienia na **opcje narzędzi** stronę o nazwie **Dodaj dodatków/makr zabezpieczeń**.
 

@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c79b685382eff3e6ca5a37fa9fb087136595dc76
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975689"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746957"
 ---
 # <a name="microsoft-help-viewer"></a>Podgląd Pomocy firmy Microsoft
 
-Można zainstalować i wyświetlić zawartość dla różnych produktów i technologii na komputerze lokalnym przy użyciu Podglądu pomocy firmy Microsoft. Produkty te obejmują program Visual Studio, .NET Framework, dokumentację języka, programu SQL Server i rozwoju Windows. Podgląd Pomocy umożliwia:
+Można zainstalować i wyświetlić zawartość dla różnych produktów i technologii na komputerze lokalnym przy użyciu Podglądu pomocy firmy Microsoft. Produkty te obejmują program Visual Studio, .NET, dokumentację języka, programu SQL Server i rozwoju Windows. Podgląd Pomocy umożliwia:
 
 - Pobieranie zestawów zawartości, które są również określane jako książki. Może to być przydatne, jeśli musisz pracować w "tryb offline" i nadal mieć dostęp do dokumentacji.
 

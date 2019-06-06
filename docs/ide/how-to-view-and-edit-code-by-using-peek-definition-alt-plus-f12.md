@@ -7,22 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537516"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747333"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Instrukcje: Wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)
 
 Możesz użyć **Peek Definition** polecenie, aby wyświetlić i edytować kod bez przełączania kodu, który właśnie piszesz. **Zobacz definicję** i **przejdź do definicji** wyświetlane te same informacje, ale **zobacz definicję** pojawia się w oknie podręcznym, a **przejdź do definicji** pokazuje kod w oddzielnym oknie kodu. **Przejdź do definicji** powoduje, że kontekst (to znaczy aktywne okno kodu, bieżący wiersz i pozycja kursora) przełączyć się do okna kodu definicji. Za pomocą **Peek Definition**, można wyświetlać i edytować definicję i poruszać się wewnątrz pliku definicji, zachowując swoje miejsce w oryginalnym pliku kodu.
 
-Możesz użyć **Peek Definition** przy użyciu kodu C#, Visual Basic i C++. W języku Visual Basic **Peek Definition** Wyświetla łącze do **przeglądarki obiektów** dla symboli, które nie mają metadanych definicji (na przykład typów programu .NET Framework, które są wbudowane).
+Możesz użyć **Peek Definition** przy użyciu kodu C#, Visual Basic i C++. W języku Visual Basic **Peek Definition** Wyświetla łącze do **przeglądarki obiektów** dla symboli, które nie mają metadanych definicji (na przykład .NET typy, które są wbudowane).
 
-## <a name="working-with-peek-definition"></a>Praca z funkcją Zobacz definicję
+## <a name="use-peek-definition"></a>Używanie definicji wglądu
 
-### <a name="to-open-a-peek-definition-window"></a>Aby otworzyć okno Zobacz definicję
+### <a name="open-a-peek-definition-window"></a>Otwórz okno zobacz definicję
 
 1. Można zobacz definicję, wybierając **Peek Definition** menu kliknij prawym przyciskiem myszy dla typu lub elementu członkowskiego, który chcesz zbadać. Jeśli opcja jest włączona, można również wgląd definicji za pomocą myszy, naciskając klawisz **Ctrl** (lub innego modyfikatora) i klikając nazwę elementu członkowskiego. Lub z klawiatury, naciśnij klawisz **Alt**+**F12**.
 
@@ -75,7 +75,7 @@ Można użyć następujących skrótów klawiaturowych z **Peek Definition** okn
 |Otwórz okno definicji|**ALT**+**F12**|
 |Zamknij okno definicji|**ESC**|
 |Promuj okno definicji do karty zwykłego dokumentu|**SHIFT**+**Alt**+**strona główna**|
-|Przechodzenie między oknami definicji|**CTRL**+**Alt** + **-** i **Ctrl**+**Alt**+**=**|
+|Przechodzenie między oknami definicji|**CTRL**+**Alt** + **-** i **Ctrl**+**Alt**+ **=**|
 |Przechodzenie między wieloma wynikami|**F8** i **Shift**+**F8**|
 |Przełączanie się między oknem edytora kodu i oknem definicji|**SHIFT**+**Esc**|
 

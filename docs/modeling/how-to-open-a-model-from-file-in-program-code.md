@@ -7,34 +7,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5bd7a55e94b3b9d8ca9e68a91de8512f30eb500
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445126"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747504"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Instrukcje: Otwieranie modelu z pliku w kodzie programu
+
 W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 
- Z rozszerzenia programu Visual Studio ModelBus służy do tego celu. ModelBus zapewnia standardowego mechanizmu do odwoływania się do modelu lub elementy w modelu, a także do znajdowania modelu, jeśli została przeniesiona. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+Z rozszerzenia programu Visual Studio ModelBus służy do tego celu. ModelBus zapewnia standardowego mechanizmu do odwoływania się do modelu lub elementy w modelu, a także do znajdowania modelu, jeśli została przeniesiona. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="target-framework"></a>Struktura docelowa
- Ustaw **platformę docelową** projektu aplikacji do **.NET Framework 4**.
+## <a name="target-framework"></a>Platforma docelowa
 
-#### <a name="to-set-the-target-framework"></a>Aby ustawić platformę docelową
+Ustaw **platformę docelową** projektu aplikacji do wersji .NET Framework 4 lub nowszej.
 
 1. Otwórz projekt programu Visual Studio dla aplikacji, w którym chcesz odczytać modelu DSL.
 
 2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.
 
-3. W oknie dialogowym właściwości projektu na **aplikacji** kartę, należy ustawić **platformę docelową** pole **.NET Framework 4**.
+3. W oknie dialogowym właściwości projektu na **aplikacji** kartę, należy ustawić **platformę docelową** pole **.NET Framework 4** (lub nowsza).
 
 > [!NOTE]
-> Konieczne może być nawet wtedy, gdy wybrano **.NET Framework 4** w oknie dialogowym tworzenia projektu. Platforma docelowa nie powinny być **.NET Framework 4 Client Profile**.
+> Platforma docelowa nie powinny być **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Odwołania
- Należy dodać te odwołania do projektu aplikacji Visual Studio:
+
+Dodaj te odwołania do projektu aplikacji Visual Studio:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
@@ -43,9 +44,10 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 - Zestaw DSL, który można znaleźć w folderze bin projektu DSL. Jego nazwa ma zwykle postać: *NazwaFirmy*. *YourProject*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Ważne klas w język DSL
- Przed można napisać kod, który odczytuje DSL, należy znać nazwy niektórych klas wygenerowanych przez DSL. W rozwiązaniu DSL Otwórz **Dsl** projektu i Znajdź **GeneratedCode** folderu. Alternatywnie, kliknij dwukrotnie zestaw DSL w projekcie **odwołania**i otwórz przestrzeń nazw DSL w **przeglądarki obiektów**.
 
- Są to klasy, które należy zidentyfikować:
+Przed można napisać kod, który odczytuje DSL, należy znać nazwy niektórych klas wygenerowanych przez DSL. W rozwiązaniu DSL Otwórz **Dsl** projektu i Znajdź **GeneratedCode** folderu. Alternatywnie, kliknij dwukrotnie zestaw DSL w projekcie **odwołania**i otwórz przestrzeń nazw DSL w **przeglądarki obiektów**.
+
+Są to klasy, które należy zidentyfikować:
 
 - *YourDslRootClass* — jest to nazwa klasy głównej w swojej `DslDefinition.dsl`.
 
@@ -53,8 +55,9 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 
 - *YourDslName* `DomainModel` — ta klasa jest zdefiniowana w `DomainModel.cs` w projekcie języka DSL.
 
-## <a name="reading-from-a-file"></a>Odczytywanie z pliku
- Poniższy przykład jest przeznaczony do odczytu DSL, w którym klasy ważne są następujące:
+## <a name="read-from-a-file"></a>Odczyt z pliku
+
+Poniższy przykład jest przeznaczony do odczytu DSL, w którym klasy ważne są następujące:
 
 - FamilyTreeModel
 
@@ -62,7 +65,7 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 
 - FamilyTreeDomainModel
 
-  Inne klasy domeny tego języka DSL jest osobą.
+Inne klasy domeny tego języka DSL jest osobą.
 
 ```csharp
 using System;
@@ -100,8 +103,9 @@ namespace StandaloneReadDslConsole
 } } } }
 ```
 
-## <a name="saving-to-a-file"></a>Zapisywanie do pliku
- Dodaje do poprzedniego kodu sprawia, że zmiany do modelu i zapisuje go do pliku.
+## <a name="save-to-a-file"></a>Zapisz do pliku
+
+Dodaje do poprzedniego kodu sprawia, że zmiany do modelu i zapisuje go do pliku.
 
 ```csharp
 using (Transaction t =

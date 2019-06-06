@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540875"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745198"
 ---
 # <a name="code-analysis-application-errors"></a>Błędy aplikacji analizy kodu
 
@@ -46,8 +46,8 @@ Ta sekcja jest odniesieniem komunikaty o błędach, które są generowane przez 
 |[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: Typ "*TypeName*"zawiera właściwość i pole o tej samej nazwie"*PropertyFieldName*"|
 |[CA0066](ca0066.md)|Wartość "*VersionID*" udostępniane **dla przełącznika/targetframeworkversion** nie jest rozpoznawaną wersją.|
 |[CA0067](ca0067.md)|Nie znaleziono katalogu.|
-|[CA0068](ca0068.md)|Debugowanie nie można odnaleźć informacji dla zestawu docelowego *"AssemblyName"*.|
-|[CA0069](ca0069.md)|Za pomocą alternatywnej platformy. *FrameworkVersion1* nie został odnaleziony. Za pomocą *FrameworkVersion2* zamiast tego. Aby uzyskać najlepsze wyniki analizy upewnij się, że zainstalowano poprawną .NET Framework.|
+|[CA0068](ca0068.md)|Debugowanie nie można odnaleźć informacji dla zestawu docelowego *"AssemblyName"* .|
+|[CA0069](ca0069.md)|Za pomocą alternatywnej platformy. *FrameworkVersion1* nie został odnaleziony. Za pomocą *FrameworkVersion2* zamiast tego. Aby uzyskać najlepsze wyniki analizy upewnij się, że zainstalowano poprawną wersję.|
 |[CA0070](ca0070.md)|Nie można załadować zestawu lub typu z powodu uprawnień zabezpieczeń.|
 |[CA0501](ca0501.md)|Nie można odczytać raportu wyjściowego.|
 |[CA0502](ca0502.md)|Nieobsługiwany język.|
