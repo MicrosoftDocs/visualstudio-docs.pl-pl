@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045345"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746255"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
@@ -76,7 +76,7 @@ Ponadto debuger wyszukuje pliki symboli w następujących lokalizacjach:
 
      Serwery symboli, które mogą obejmować:
 
-     **Serwery publiczne symboli firmy Microsoft**: Aby debugować awarię, która występuje podczas wywoływania biblioteki DLL systemu lub do biblioteki innych firm, często muszą system *.pdb* plików. System *.pdb* pliki zawierają symbole dla Windows dll, *.exe* plików i sterowników urządzeń. Możesz uzyskać symbole dla systemów operacyjnych Windows, MDAC, IIS i ISA i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z publicznych serwerów symboli firmy Microsoft.
+     **Serwery publiczne symboli firmy Microsoft**: Aby debugować awarię, która występuje podczas wywoływania biblioteki DLL systemu lub do biblioteki innych firm, często muszą system *.pdb* plików. System *.pdb* pliki zawierają symbole dla Windows dll, *.exe* plików i sterowników urządzeń. Możesz uzyskać symbole dla systemów operacyjnych Windows, MDAC, IIS, ISA i .NET Framework z publicznych serwerów symboli firmy Microsoft.
 
      **Serwery w sieci wewnętrznej lub na komputerze lokalnym symboli**: Twój zespół lub firmy można tworzyć serwery symboli dla własnych produktów i jako pamięci podręcznej dla symboli ze źródeł zewnętrznych. Możesz mieć serwer symboli na własnym komputerze.
 
