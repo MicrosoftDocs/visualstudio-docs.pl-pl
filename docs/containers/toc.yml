@@ -7,8 +7,10 @@
     - name: Szybki start
       expanded: true
       items:
-        - name: Narzędzia kontenerów w programie Visual Studio
+        - name: Aplikacja platformy ASP.NET Core w kontenerze
           href: container-tools.md
+        - name: Aplikacja jednostronicowa platformy React.js w kontenerze
+          href: container-tools-react.md
     - name: Samouczki
       expanded: true
       items:
