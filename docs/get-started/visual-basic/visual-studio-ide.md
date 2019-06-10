@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966687"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820658"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Witamy w środowisku IDE programu Visual Studio | Visual Basic
 
@@ -30,7 +30,7 @@ Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konso
 
 ::: moniker range=">=vs-2019"
 
-[![](media/vs-2019/ide-overview.png "Visual Studio IDE")](media/vs-2019/ide-overview.png#lightbox)
+[![Visual Studio IDE 2019 r](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -306,7 +306,7 @@ Przyjrzyjmy się temu bliżej i Utwórz prosty program.
 
    ![Debuguj > Uruchom bez debugowania menu](../media/overview-start-without-debugging.png)
 
-   Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!**. Masz teraz uruchomionej aplikacji.
+   Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!** . Masz teraz uruchomionej aplikacji.
 
    ![Okno konsoli](../media/overview-console-window.png)
 
@@ -373,7 +373,7 @@ Przyjrzyjmy się temu bliżej i Utwórz prosty program.
 
    ![Debuguj > Uruchom bez debugowania menu](media/vs-2019/start-without-debugging.png)
 
-   Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!**. Masz teraz uruchomionej aplikacji.
+   Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!** . Masz teraz uruchomionej aplikacji.
 
    ![Okno konsoli](../media/vs-2019/overview-console-window.png)
 
@@ -418,7 +418,7 @@ Po pierwsze możemy zmienić nazwę `name` zmiennej:
 
    Należy zauważyć, że szare pole pojawia się wokół zmienną i żarówka pojawia się na marginesie.
 
-3. Wybierz ikonę żarówki, aby wyświetlić dostępnych [szybkie akcje](../../ide/quick-actions.md). Wybierz **Zmień nazwę "name" do "username"**.
+3. Wybierz ikonę żarówki, aby wyświetlić dostępnych [szybkie akcje](../../ide/quick-actions.md). Wybierz **Zmień nazwę "name" do "username"** .
 
    ![Zmień nazwę akcji w programie Visual Studio](media/rename-quick-action.png)
 

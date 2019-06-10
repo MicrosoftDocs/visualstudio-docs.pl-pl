@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445198"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820985"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć rozwiązanie programu Visual Studio z szablonu. Kluczowym elementem rozwiązania jest diagramem definicji DSL, który jest przechowywany w DslDefinition.dsl. W definicji DSL definiuje klasy i kształty język DSL. Po zmodyfikowaniu i dodawane do tych elementów, można dodać kod programu, aby dostosować DSL bardziej szczegółowo.
@@ -99,7 +99,7 @@ Aby utworzyć nowego języka specyficznego dla domeny, należy utworzyć nowe ro
 
  Jeśli uruchamianie rozwiązania, które utworzono z **minimalny języka** szablonu, eksperymentalne programu Visual Studio będzie wyglądać następująco:
 
- ![](../modeling/media/dsl_min.png)
+ ![Domeny określonego języka przykładowe drzewa w programie Visual Studio](../modeling/media/dsl_min.png)
 
  Poeksperymentuj z narzędzia. Tworzenie elementów i łączyć je.
 

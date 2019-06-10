@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b43aa4dcb754b2df67b58b09ab3a9920c552acdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f2aa8515dbe444ea3968714400b751d661b2a81
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844919"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820443"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące Pióro w programie Blend
 W poniższej tabeli przedstawiono skróty, które służy do modyfikowania ścieżki, podczas tworzenia go **pióra** narzędzie ![pióro](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Można również użyć **pióra** narzędzia, aby dodać lub usunąć punkty w istniejącej ścieżki lub połączyć dwa istniejące ścieżki.
@@ -27,8 +27,8 @@ W poniższej tabeli przedstawiono skróty, które służy do modyfikowania ście
 |Przenieś stycznej punkt końcowy w całym nowy punkt w przyrostach co 15 stopni|Kliknij, aby utworzyć nowy punkt, a następnie przytrzymaj naciśnięty **Shift**+**Alt** i przeciągnij przed zwolnieniem przycisku myszy|![Przenieś stycznej punkt końcowy w całym nowy punkt w przyrostach co 15 stopni](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowania pióra|
 |Zmniejsz tangens na punkt końcowy do zerowej długości|Kliknij punkt końcowy|![Zmniejsz tangens na punkt końcowy do zerowej długości](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowania pióra|
 |Dodano nowy punkt do istniejącej ścieżki|Kliknij ścieżkę lokalizacji, w którym ma nowy punkt|![Dodano nowy punkt do istniejącej ścieżki](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> Wskaźnik insert pióra|
-|Usuwanie punktu ze ścieżki|Umieść kursor nad istniejącego punktu i kliknij przycisk|![](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Wskaźnik usuwania pióra|
-|Zamknij ścieżkę róg sharp|Kliknij punkt początkowy|![Usuwanie punktu ze ścieżki](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Zamknij kursor pióra|
+|Usuwanie punktu ze ścieżki|Umieść kursor nad istniejącego punktu i kliknij przycisk|![Usuń punkt ze ścieżki](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Wskaźnik usuwania pióra|
+|Zamknij ścieżkę róg sharp|Kliknij punkt początkowy|![Zamknij ścieżkę z ostry kąt](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Zamknij kursor pióra|
 |Zamknij ścieżkę to krzywa w prawym górnym rogu|Kliknij punkt początkowy i przeciągnij, aby zmodyfikować uchwytu stycznej przed zwolnieniem przycisku myszy|![Zamknij ścieżkę to krzywa w prawym górnym rogu](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Zamknij kursor pióra|
 |Utwórz sharp rogu podczas dołączania dwie ścieżki|Wybierz dwie ścieżki, kliknij przycisk **pióra** narzędzia, kliknij punkt końcowy w jednej ze ścieżek a następnie kliknij punkt końcowy w innej ścieżki|![Utwórz sharp rogu podczas dołączania dwie ścieżki](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Wskaźnik sprzężenia pióra|
 |Utwórz smooth rogu podczas dołączania dwie ścieżki|Wybierz dwie ścieżki, kliknij przycisk **pióra** narzędzia, kliknij punkt końcowy w jednej ze ścieżek a następnie przeciągnij punkt końcowy w innej ścieżki|![Utwórz smooth rogu podczas dołączania dwie ścieżki](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Wskaźnik sprzężenia pióra|

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847480"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820565"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Program Blend for Visual Studio — omówienie
 
@@ -60,7 +60,7 @@ Możesz utworzyć obiekty, wybierając narzędzie i rysowanie w obszarze kompozy
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Pole wyszukiwania** wpisać **wyszukiwania** polu, aby filtrować listę zasobów.|
+|![Pole wyszukiwania zasobów](../designers/media/b1_1.png)|**Pole wyszukiwania** wpisać **wyszukiwania** polu, aby filtrować listę zasobów.|
 |![Tryb siatki i tryb listy](../designers/media/b1_2.png)|**Tryb siatki i tryb listy** przełączać się między **trybu siatki** widoku i **tryb listy** widoku zasobów.|
 |![Kategorie zasobów](../designers/media/b1_3.png)|**Kategorie zasobów** kliknij kategorię lub podkategorię, aby wyświetlić listę zasobów w tej kategorii.|
 |![Style](../designers/media/b1_4.png)|**Style** Pokaż wszystkie style, które są zawarte w słowniku zasobów.|
@@ -115,7 +115,7 @@ To okno umożliwia wyświetlanie i modyfikowanie właściwości obiektu. Można 
 |![Przestrzeń kolorów RGB](../designers/media/b1_12.png)|**Przestrzeń kolorów RGB** modyfikacji koloru, dopasowując wartości **R**, **G**, lub **B** (czerwony, zielony, niebieski) edytory liczb.|
 |![Kanał alfa](../designers/media/b1_13.png)|**Kanał alfa** zmodyfikuj wartość alfa przy użyciu numeru edytora obok **A**.|
 |![Konwertuj kolor na zasób](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Konwertuj kolor na zasób** Konwertuj wybrany kolor na zasób koloru. Zasoby koloru są dostępne po kliknięciu na karcie Zasoby kolorów.|
-|![](../designers/media/b1_15.png)|**Wartość szesnastkowa** wyświetlić wartość szesnastkową kolor wyświetlany.|
+|![Wartość szesnastkowa kolorów](../designers/media/b1_15.png)|**Wartość szesnastkowa** wyświetlić wartość szesnastkową kolor wyświetlany.|
 |![Objaśnienie 16](../designers/media/b5_label_16.png)|**Suwak gradientu** pojawia się tylko wtedy, gdy wybrano pędzla gradientu.|
 |![Pokaż zaawansowane właściwości](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Pokaż zaawansowane właściwości** kategorii właściwości, które są rzadko używane.|
 

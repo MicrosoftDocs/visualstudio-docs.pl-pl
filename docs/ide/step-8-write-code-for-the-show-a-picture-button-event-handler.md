@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2e67692daed4d00b841b7472e7d13ede0ca500
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61bb5391f52bcfc587664259821d02ff2786acd3
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420413"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820691"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku obrazu
 
@@ -87,7 +87,7 @@ IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu.
         >
         >  `If OpenFileDialog1.ShowDialog() = DialogResult.OK Then`
 
-    9. Teraz Dodaj jeszcze jeden wiersz kodu. Możesz to wpisać (lub skopiuj i wklej ją), ale należy wziąć pod uwagę, dodaj go za pomocą technologii IntelliSense. Im więcej znasz technologię IntelliSense, tym szybciej można napisać własny kod. Ostateczna `showButton_Click()` metoda wygląda podobnie do następującej. (Wybierz **VB** kartę, aby wyświetlić wersję kodu w Visual Basic.)
+    9. Teraz Dodaj jeszcze jeden wiersz kodu. Możesz to wpisać (lub skopiuj i wklej ją), ale należy wziąć pod uwagę, dodaj go za pomocą technologii IntelliSense. Im więcej znasz technologię IntelliSense, tym szybciej można napisać własny kod. Ostateczna `showButton_Click()` metoda wygląda podobnie do następującej.
 
          [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]
          [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]

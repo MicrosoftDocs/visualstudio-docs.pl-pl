@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899339"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820436"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
 
@@ -93,8 +93,8 @@ Kształtów i ścieżek należy używać grafiki wektorowej, więc ich przeskalo
 |||||
 |-|-|-|-|
 |![Dwa kształty przed łączenie](../designers/media/b1_1.png)|Dwa kształty przed łączenie|![INTERSECT](../designers/media/b1_4.png)|INTERSECT|
-|![Wyklucz nakładanie](../designers/media/b1_2.png)|Różne|![](../designers/media/b1_5.png)|Wyklucz nakładanie|
-|![Odejmowanie](../designers/media/b1_3.png)|Dzielenie|![](../designers/media/b1_6.png)|Odejmowanie|
+|![Różne](../designers/media/b1_2.png)|Różne|![Wyklucz nakładanie](../designers/media/b1_5.png)|Wyklucz nakładanie|
+|![Dzielenie](../designers/media/b1_3.png)|Dzielenie|![Odejmowanie](../designers/media/b1_6.png)|Odejmowanie|
 
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy dzięki określeniu ścieżki: Połącz ścieżki](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 

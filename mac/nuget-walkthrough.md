@@ -3,19 +3,19 @@ title: Dołączanie pakietu NuGet w projekcie
 description: W tym dokumencie opisano, jak dołączyć pakietu NuGet w projekcie Xamarin. Jego przeprowadzi wyszukiwanie i pobieranie pakietu, a także wprowadzenie do funkcji integracji środowiska IDE.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692326"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820612"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Uwzględnione pakietu NuGet w projekcie
 
-NuGet jest najbardziej popularnych Menedżer pakietów dla programowania na platformie .NET i wbudowanej w program Visual Studio dla komputerów Mac i Visual Studio na Windows. Można wyszukiwać i dodawać pakiety do projektów Xamarin.iOS i Xamarin.Android przy użyciu dowolnego środowiska IDE.
+NuGet jest najbardziej popularnych Menedżer pakietów dla programowania na platformie .NET i wbudowanej w program Visual Studio dla komputerów Mac i Visual Studio na Windows. Można wyszukiwać i dodawać pakiety usługi Xamarin projektów .NET Core i ASP.NET, przy użyciu dowolnego środowiska IDE.
 
 W tym artykule opisano, jak dołączyć pakietu NuGet w projekcie i pokazuje łańcuch narzędzi, który sprawia, że proces jest bezproblemowe.
 
@@ -31,7 +31,7 @@ Najpierw utwórz projekt o nazwie `HelloNuget` tak jak przedstawiono poniżej. W
 
 ## <a name="adding-a-package"></a>Dodawanie pakietu
 
-Otwórz w programie Visual Studio dla komputerów Mac projektu, kliknij prawym przyciskiem myszy **pakietów** folderu w **konsoli rozwiązania** i wybierz **Dodawanie pakietów**:
+Otwórz w programie Visual Studio dla komputerów Mac projektu, kliknij prawym przyciskiem myszy **pakietów** folderu w **konsoli rozwiązania** i wybierz pozycję **Dodawanie pakietów NuGet**:
 
 ![Dodaj nową akcję kontekstu pakietu NuGet](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ Po otwarciu przez okna ładuje listę pakietów z domyślnego źródła pakietu:
 
 ![Lista pakietów NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Użyj pola wyszukiwania w prawym górnym rogu, aby znaleźć określony pakiet, na przykład `azure`. Po znalezieniu pakietu, który chcesz użyć, zaznacz go i kliknij **Dodaj pakiet** przycisk, aby rozpocząć instalację.
+Użyj pola wyszukiwania w prawym górnym rogu, aby znaleźć określony pakiet, na przykład `azure mobile`. Po znalezieniu pakietu, który chcesz użyć, zaznacz go i kliknij **Dodaj pakiet** przycisk, aby rozpocząć instalację.
 
-[Dodaj pakiet NuGet platformy Azure](media/nuget-walkthrough-AddPackages2.png)
+![Dodaj pakiet NuGet platformy Azure](media/nuget-walkthrough-AddPackages2.png)
 
 Po pobraniu pakietu zostanie dodany do projektu. Rozwiązanie zmieni się w następujący sposób:
 
@@ -77,9 +77,9 @@ Kliknij prawym przyciskiem myszy **pakietów** dostęp do menu kontekstowego:
 
 ![Menu pakietów](media/nuget-walkthrough-PackagesMenu.png)
 
-* **Dodaj pakiety** — powoduje otwarcie okna, aby dodać więcej pakietów do projektu.
-* **Aktualizacja** — sprawdza, czy serwer źródłowy dla każdego pakietu i pobiera wszystkie nowsze wersje.
-* **Przywróć** — pliki do pobrania wszystkie brakujące pakiety (bez aktualizowania istniejące pakiety do nowszych wersji).
+*   **Dodawanie pakietów NuGet** — powoduje otwarcie okna, aby dodać więcej pakietów do projektu.
+*   **Aktualizacja** — sprawdza, czy serwer źródłowy dla każdego pakietu i pobiera wszystkie nowsze wersje.
+*   **Przywróć** — pliki do pobrania wszystkie brakujące pakiety (bez aktualizowania istniejące pakiety do nowszych wersji).
 
 Aktualizacja opcje przywracania są również dostępne na poziomie rozwiązania i wpływają na wszystkie projekty w rozwiązaniu.
 

@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962016"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820312"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Użyj klas potwierdzeń testów jednostkowych
 
@@ -45,7 +45,7 @@ Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> klasy do 
 
 Jeśli piszesz nowy assert klasy wyjątku, dziedziczą z klasy bazowej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> aby ułatwić identyfikację wyjątku, ponieważ wystąpił błąd asercji zamiast nieoczekiwany wyjątek zgłaszany w kodzie testowym lub produkcyjnym.
 
-Dekoracji metodę testową z <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> atrybutu, jeśli chcesz, aby metody testowej, aby sprawdzić, czy faktycznie jest zgłaszany wyjątek oczekujesz, że będzie zgłaszany przez metodę w kodzie aplikacji.
+Aby sprawdzić, czy faktycznie jest zgłaszany wyjątek oczekujesz, że będzie zgłaszany przez metodę w kodzie aplikacji, użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> metody.
 
 ## <a name="see-also"></a>Zobacz także
 

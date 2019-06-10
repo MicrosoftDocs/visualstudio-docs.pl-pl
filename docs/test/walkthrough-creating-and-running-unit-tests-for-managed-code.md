@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401729"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820922"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -179,19 +179,23 @@ Masz teraz projekt za pomocą metod, które można przetestować. W tym artykule
 
 ## <a name="create-the-test-class"></a>Utwórz klasę testową
 
-Tworzenie klasy testowej, aby sprawdzić `BankAccount` klasy. Możesz użyć *UnitTest1.cs* pliku, który został wygenerowany przez szablon projektu, ale nadaj plikowi i klasie bardziej opisowe nazwy. Możesz to zrobić w jednym kroku, zmiana nazwy pliku w **Eksploratora rozwiązań**.
+Tworzenie klasy testowej, aby sprawdzić `BankAccount` klasy. Możesz użyć *UnitTest1.cs* pliku, który został wygenerowany przez szablon projektu, ale nadaj plikowi i klasie bardziej opisowe nazwy.
 
 ### <a name="rename-a-file-and-class"></a>Zmień nazwę pliku i klasy
 
 1. Aby zmienić nazwę pliku, w **Eksploratora rozwiązań**, wybierz opcję *UnitTest1.cs* plik z projektu BankTests. Z menu kliknij prawym przyciskiem myszy, wybierz **Zmień nazwę**, a następnie zmień nazwę pliku do *BankAccountTests.cs*.
 
-   ::: moniker range="vs-2017"
+::: moniker range="vs-2017"
 
-   W oknie dialogowym, które się pojawi, wybierz **nie**.
+2. Aby zmienić nazwę klasy, wybierz opcję **tak** w oknie dialogowym, które pojawia się i pyta, czy też zmienić nazwę odwołania do elementu kodu.
 
-   ::: moniker-end
+::: moniker-end
 
-2. Aby zmienić nazwę klasy, umieść kursor na `UnitTest1` w edytorze kodu i naciśnij klawisz **F2** (lub kliknij prawym przyciskiem myszy i wybierz pozycję **Zmień nazwę**). Wpisz **BankAccountTests** , a następnie naciśnij klawisz **Enter**.
+::: moniker range=">=vs-2019"
+
+2. Aby zmienić nazwę klasy, umieść kursor na `UnitTest1` w edytorze kodu, kliknij prawym przyciskiem myszy, a następnie wybierz **Zmień nazwę**. Wpisz **BankAccountTests** , a następnie naciśnij klawisz **Enter**.
+
+::: moniker-end
 
 *BankAccountTests.cs* plik zawiera teraz następujący kod:
 
@@ -336,7 +340,6 @@ Utwórz metodę testową, aby zweryfikować poprawne zachowanie w sytuacji, gdy 
 
 ```csharp
 [TestMethod]
-[ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 {
     // Arrange
@@ -344,14 +347,12 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
     double debitAmount = -100.00;
     BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
 
-    // Act
-    account.Debit(debitAmount);
-
-    // Assert is handled by the ExpectedException attribute on the test method.
+    // Act and assert
+    Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
 }
 ```
 
-Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> atrybutu do potwierdzenia, że zgłoszono poprawny wyjątek. Atrybut powoduje, że test zakończył się niepowodzeniem, chyba że <xref:System.ArgumentOutOfRangeException> zgłaszany. Jeśli zmodyfikujesz tymczasowo testowaną metodę Aby zgłosić generyczny więcej wyjątek <xref:System.ApplicationException> gdy kwota debet jest mniejsza niż zero, test działa poprawnie&mdash;oznacza to, nie powiedzie się.
+Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> metody do potwierdzenia, że zgłoszono poprawny wyjątek. Ta metoda powoduje, że test zakończył się niepowodzeniem, chyba że <xref:System.ArgumentOutOfRangeException> zgłaszany. Jeśli zmodyfikujesz tymczasowo testowaną metodę Aby zgłosić generyczny więcej wyjątek <xref:System.ApplicationException> gdy kwota debet jest mniejsza niż zero, test działa poprawnie&mdash;oznacza to, nie powiedzie się.
 
 Aby przetestować przypadek, gdy wybierana kwota jest większa niż saldo, wykonaj następujące czynności:
 
@@ -361,7 +362,7 @@ Aby przetestować przypadek, gdy wybierana kwota jest większa niż saldo, wykon
 
 3. Ustaw `debitAmount` na liczbę większą niż saldo.
 
-Uruchomione dwóch metod testowych pokazuje, czy testy działają poprawnie.
+Uruchamianie dwóch testów i sprawdź, czy zostaną pomyślnie.
 
 ### <a name="continue-the-analysis"></a>Kontynuuj analizę
 
@@ -387,20 +388,20 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
 Następnie należy zmodyfikować dwie instrukcje warunkowe w `Debit` metody:
 
 ```csharp
-    if (amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
-    }
+if (amount > m_balance)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
+}
 
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
-    }
+if (amount < 0)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
+}
 ```
 
 ### <a name="refactor-the-test-methods"></a>Refaktoryzuj metody testowe
 
-Usuń `ExpectedException` atrybutu metody testowania i zamiast tego, przechwytujemy zgłoszony wyjątek i sprawdź skojarzone komunikat. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Metoda zapewnia możliwość porównania dwóch ciągów.
+Refaktoryzuj metody testowe, usuwając wywołanie <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>. Opakować wywołanie `Debit()` w `try/catch` blokowania, catch określony wyjątek, który oczekuje się i sprawdź komunikat skojarzony. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Metoda zapewnia możliwość porównania dwóch ciągów.
 
 Teraz `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` może wyglądać następująco:
 
@@ -418,7 +419,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
@@ -448,7 +449,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);

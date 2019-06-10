@@ -1,5 +1,5 @@
 ---
-title: Łączenie z danymi w bazie danych programu Access (formularze Windows)
+title: Łączenie z danymi w bazie danych programu Access (Windows Forms)
 ms.date: 02/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff2fbc41a3e5a9388a3cae7776a22c8671703d1f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568537"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820409"
 ---
-# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (formularze Windows)
+# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (Windows Forms)
 
-Można połączyć z bazą danych programu Access (albo *.mdf* pliku lub *accdb* plików) za pomocą programu Visual Studio. Po zdefiniowaniu połączenia, dane są wyświetlane w **źródeł danych** okna. Stamtąd można przeciągnąć tabele lub widoki na formularze.
+Można połączyć z bazą danych programu Access (albo *.mdb* pliku lub *accdb* plików) za pomocą programu Visual Studio. Po zdefiniowaniu połączenia, dane są wyświetlane w **źródeł danych** okna. Stamtąd można przeciągnąć tabele lub widoki na formularze.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby korzystać z tych procedur, potrzebny jest projekt aplikacji Windows Forms i jednej bazie danych programu Access (*accdb* plików) lub bazy danych programu Access 2000-2003 (*.mdb* pliku). Wykonaj procedurę, która odnosi się do typu Twojego pliku.
+Aby korzystać z tych procedur, potrzebny jest projekt aplikacji Windows Forms i jednej bazie danych programu Access (*accdb* plików) lub bazy danych programu Access 2000-2003 ( *.mdb* pliku). Wykonaj procedurę, która odnosi się do typu Twojego pliku.
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Tworzenie zestawu danych dla pliku accdb
 
@@ -51,7 +51,7 @@ Możesz połączyć się z bazami danych utworzonymi za pomocą programu Access 
 
    **Dodaj połączenie** zostanie otwarte okno dialogowe.
 
-7. Jeśli **źródła danych** nie jest ustawiony na **plik bazy danych programu Microsoft Access (OLE DB)**, wybierz opcję **zmiany** przycisku.
+7. Jeśli **źródła danych** nie jest ustawiony na **plik bazy danych programu Microsoft Access (OLE DB)** , wybierz opcję **zmiany** przycisku.
 
    **Zmień źródło danych** zostanie otwarte okno dialogowe. Na liście źródeł danych, wybierz opcję **plik bazy danych programu Microsoft Access**. W **dostawcy danych** listę rozwijaną, wybierz opcję **.NET Framework Data Provider for OLE DB**, a następnie wybierz **OK**.
 
@@ -91,7 +91,7 @@ Utwórz zestaw danych, uruchamiając **Kreatora konfiguracji źródła danych**.
 
 6. Na **wybierz połączenie danych** wybierz opcję **nowe połączenie** Aby skonfigurować nowe połączenie danych.
 
-7. Jeśli źródło danych jest **plik bazy danych programu Microsoft Access (OLE DB)**, wybierz opcję **zmiany** otworzyć **Zmień źródło danych** okno dialogowe, a następnie wybierz **firmy Microsoft Dostęp do pliku bazy danych**, a następnie wybierz pozycję **OK**.
+7. Jeśli źródło danych jest **plik bazy danych programu Microsoft Access (OLE DB)** , wybierz opcję **zmiany** otworzyć **Zmień źródło danych** okno dialogowe, a następnie wybierz **firmy Microsoft Dostęp do pliku bazy danych**, a następnie wybierz pozycję **OK**.
 
 8. W **nazwa pliku bazy danych**, określ ścieżkę i nazwę *.mdb* pliku chcesz nawiązać połączenie, a następnie wybierz **OK**.
 

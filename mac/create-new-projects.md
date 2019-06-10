@@ -3,40 +3,53 @@ title: Tworzenie nowych projektów i rozwiązań
 description: W tym artykule opisano sposób tworzenia projektów i rozwiązań w programie Visual Studio dla komputerów Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 04/02/2019
+ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 045d92365501b888e56ce4ae397331e597b5b33a
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983634"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820744"
 ---
-# <a name="creating-new-projects-and-solutions"></a>Tworzenie nowych projektów i rozwiązań
+# <a name="creating-a-new-project"></a>Tworzenie nowego projektu
 
-## <a name="creating-new-projects-and-solutions-from-a-template"></a>Tworzenie nowych projektów i rozwiązań z szablonu
+## <a name="opening-the-project-creation-dialog"></a>Otwierając okno dialogowe tworzenia projektu
 
-Można tworzyć rozwiązania w dowolnym momencie za pomocą wstępnie zdefiniowany szablon. Począwszy od programu Visual Studio 2019 dla komputerów Mac, wybierz **New** z okna rozpoczęcia. Alternatywnie, przejdź do **Plik > nowe rozwiązanie**. Wybierz wymagane platform(y) i wymagany szablon:
+Istnieje kilka sposobów, aby utworzyć nowy projekt w programie Visual Studio dla komputerów Mac. Przy pierwszym otwarciu programu Visual Studio dla komputerów Mac, zostanie wyświetlony ekran powitalny. W tym miejscu można wybrać **New** co spowoduje przejście do ekranu tworzenia projektu.
 
-![Tworzenie nowych rozwiązań](media/projects-and-solutions-image0.png)
+> [!TIP]
+> Ponadto na ekranie powitalnym, można również otworzyć i wyszukaj ostatnie projekty i rozwiązania. Możesz również otworzyć ostatnich projektów, przechodząc do paska menu i wybierając **Plik > najnowsze rozwiązania**
 
-Spowoduje to utworzenie rozwiązania, które mogą zawierać jeden lub wiele projektów, w zależności od typu wybranego szablonu.
+![Ekran powitalny zawierający Utwórz nowy projekt](media/first-run-project.png)
 
-Eksplorator rozwiązań można nawigować przy użyciu akcji kontekstu lub na pasku menu.
+Jeśli program Visual Studio for Mac jest już otwarty z rozwiązaniem, który został załadowany, można utworzyć nowe rozwiązanie, przechodząc do paska menu i wybierając **Plik > nowe rozwiązanie**. Tworzenie nowego rozwiązania w ten sposób spowoduje zamknięcie rozwiązania, który jest już załadowany.
 
-Aby dodać nowy projekt do rozwiązania, kliknij prawym przyciskiem myszy nazwę rozwiązania, a następnie wybierz **Dodaj > Dodaj nowy projekt** Aby wyświetlić okno dialogowe nowego projektu:
+## <a name="creating-a-new-project-from-a-template"></a>Tworzenie nowego projektu z szablonu
 
-![Dodaj nowy projekt](media/projects-and-solutions-image4.png)
+**Nowy projekt** okno dialogowe, domyślnie pokaże posortowane według ostatnio używanych szablonów *ostatnio używanych*.
 
-Tej metody dodawania nowych projektów, można skorzystać z możliwości udostępniania kodu środowiska Xamarin. Dodawanie projektu udostępnionego lub szablonu przenośnej biblioteki do istniejącego rozwiązania zapewnia sposób zawierają wszelka logika dla wielu platform, które mogą być używane w innych projektów w rozwiązaniu. Aby uzyskać więcej informacji na temat tworzenia aplikacji dla wielu platform, zobacz [odpowiednim przewodniku](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
+Jeśli chcesz użyć szablonu ostatnie, można wybrać z listy kategorii po lewej stronie okna dialogowego. Każda kategoria zawiera kilka szablonów projektów służących do wyboru. Kliknięcie typu projektu, można wyświetlić opis po prawej stronie ekranu.
 
-## <a name="opening-recent-solutions"></a>Otwieranie najnowsze rozwiązania.
+![Nowy ekran projektu](media/project-creation-screen.png)
 
-Okno uruchamiania programu Visual Studio Wyświetla listę ostatnich projektów, które odbywała się wcześniej praca na:
+## <a name="configuring-your-new-project"></a>Konfigurowanie nowego projektu
 
-![Ostatnie sekcji rozwiązania strony powitalnej](media/create-new-projects-recent.png)
+Po wybraniu szablonu projektu następującym zrzucie ekranu wykonasz wszelkie czynności konfiguracyjne wymagane do skonfigurowania projektu; to może się różnić od typu projektu.
 
-Można filtrować tę listę w polu filtru lub usunąć poszczególne elementy z listy.
+Wszystkie projekty wymagają nowego projektu oraz lokalizację do zapisania plików. Jeśli projekt jest częścią nowego rozwiązania, zamiast dodawania go do istniejącego rozwiązania, nazwy rozwiązania będzie również wymagane.
+
+Opcjonalnie na tym etapie można również skonfigurować opcje kontroli źródła Git. Poniższy rysunek jest przykładem ostatnim etapem konfiguracji dla projektu .NET Core:
+
+![Konfigurowanie nowego projektu](media/configure-new-project.png)
+
+## <a name="adding-additional-projects-to-a-solution"></a>Dodawanie dodatkowe projekty do rozwiązania
+
+Możesz dodać dodatkowe projekty do rozwiązania, kliknij prawym przyciskiem myszy rozwiązanie, w konsoli rozwiązania, a następnie wybierając opcję **Dodaj > Dodaj nowy projekt** lub **Dodaj > Dodaj istniejący projekt**.
+
+Dodawanie nowego projektu poprowadzi Cię przez proces tworzenia projektu, jak pokazano na [konfigurowania nowego projektu](#configuring-your-new-project).
+
+Wybierając pozycję Dodaj istniejący projekt umożliwia przeglądanie w poszukiwaniu istniejącego projektu na komputerze i dodaj go do rozwiązania.
 
 ## <a name="see-also"></a>Zobacz także
 

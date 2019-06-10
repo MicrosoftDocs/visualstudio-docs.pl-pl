@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442378"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820911"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
@@ -21,7 +21,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
 > [!NOTE]
 > SDK przekształcania szablonu tekstu i programu Visual Studio do modelowania SDK są instalowane automatycznie podczas instalowania określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Wizualizacja i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co można zrobić za pomocą języka dotyczącego określonej domeny?
 
@@ -137,11 +137,11 @@ Możesz uruchomić rozwiązanie DSL, zaraz po jego utworzeniu. Później można 
 
 Eksperymentalne programu Visual Studio będzie wyglądać następująco:
 
-![](../modeling/media/dsl_min.png)
+![Domeny określonego języka przykładowe drzewa w programie Visual Studio](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Zawartość modelu
 
-Zawartość pliku, który jest wystąpieniem DSL jest nazywany *modelu*. Model zawiera *modelu*<em>elementy</em> i *łącza* między elementami. Określa, jakie typy elementów modelu w definicji DSL i łącza może znajdować się w modelu. Na przykład w utworzone na podstawie szablonu minimalnego języka DSL, istnieje jeden typ elementu modelu i jednego typu łącza.
+Zawartość pliku, który jest wystąpieniem DSL jest nazywany *modelu*. Model zawiera *modelu* <em>elementy</em> i *łącza* między elementami. Określa, jakie typy elementów modelu w definicji DSL i łącza może znajdować się w modelu. Na przykład w utworzone na podstawie szablonu minimalnego języka DSL, istnieje jeden typ elementu modelu i jednego typu łącza.
 
 W definicji DSL można określić, jak model pojawia się na diagramie. Możesz wybrać spośród różnych stylów kształtów i łączników. Można określić, czy niektóre kształty są widoczne w innych kształtów.
 
@@ -392,7 +392,7 @@ Zmień nazwę istniejącej klasy domeny i relacje. Na przykład począwszy od de
 
  Aby zainstalować język DSL na swoim komputerze, tak aby nie trzeba używać doświadczalnym wystąpieniu programu Visual Studio, można użyć tej samej procedury.
 
- Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
+ Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="Reset"></a> Usuwanie starego eksperymentalne językami DSL
  Jeśli utworzono językami DSL eksperymentalnych, które nie są już potrzebne, można usunąć z komputera, resetując wystąpienie eksperymentalne programu Visual Studio.

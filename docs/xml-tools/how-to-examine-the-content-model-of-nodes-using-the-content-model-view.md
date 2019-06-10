@@ -1,5 +1,5 @@
 ---
-title: Badanie modelu zawartości węzłów przy użyciu widoku modelu zawartości w Projektancie schematu XML
+title: Sprawdź węzłów przy użyciu widoku modelu zawartości w Projektancie schematu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfefc7d6aaa40d628cc0ee9d582fddf65adb411e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001896"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820463"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Instrukcje: Badanie modelu zawartości węzłów przy użyciu widoku modelu zawartości
 
@@ -39,6 +39,6 @@ W tym temacie opisano sposób zapoznaj się z węzłów za pomocą [widoku model
 
 7. Kliknij w dowolnym węźle `purchaseOrder` elementu i spójrz na pasku nawigacji, aby zobaczyć, gdzie w zestawie schematów wybrany węzeł znajduje się.
 
-8. Kliknij przycisk **Pokaż dokumentacji** przycisk na pasku narzędzi XSD, aby przełączyć zawiera. Możesz również prawym przyciskiem myszy powierzchnię projektu, aby przełączyć się z dokumentacją.
+8. Kliknij przycisk **Pokaż dokumentacji** przycisk na pasku narzędzi XSD, aby przełączyć dokumentacji. Możesz również prawym przyciskiem myszy powierzchnię projektu, aby przełączyć się z dokumentacją.
 
-9. Kliknij przycisk Rick `purchaseOrder` a następnie wybierz węzeł **Generowanie XML przykładowe** można znaleźć w dokumencie wystąpienia XML.
+9. Kliknij prawym przyciskiem myszy `purchaseOrder` a następnie wybierz węzeł **Generowanie XML przykładowe** można znaleźć w dokumencie wystąpienia XML.

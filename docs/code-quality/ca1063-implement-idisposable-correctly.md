@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842006"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820626"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
 
@@ -52,7 +52,7 @@ ms.locfileid: "65842006"
 
 Naruszenie któregokolwiek z tych wzorców wyzwala ostrzeżenie CA1063.
 
-Każdy niezapieczętowany typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu należy podać swój własny `protected virtual void Dispose(bool)` metody. `Dispose()` należy wywołać `Dipose(true)`, i powinny wywoływać finalizator `Dispose(false)`. Jeśli utworzysz niezamknięty typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu, należy zdefiniować `Dispose(bool)` i wywołać go. Aby uzyskać więcej informacji, zobacz [wyczyścić niezarządzane zasoby (.NET — przewodnik)](/dotnet/standard/garbage-collection/unmanaged) i [wzorzec usuwania](/dotnet/standard/design-guidelines/dispose-pattern).
+Każdy niezapieczętowany typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu należy podać swój własny `protected virtual void Dispose(bool)` metody. `Dispose()` należy wywołać `Dispose(true)`, i powinny wywoływać finalizator `Dispose(false)`. Jeśli utworzysz niezamknięty typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu, należy zdefiniować `Dispose(bool)` i wywołać go. Aby uzyskać więcej informacji, zobacz [wyczyścić niezarządzane zasoby (.NET — przewodnik)](/dotnet/standard/garbage-collection/unmanaged) i [wzorzec usuwania](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Domyślnie ta reguła przegląda tylko typy widoczne na zewnątrz, ale jest to [konfigurowalne](#configurability).
 
