@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e1c84aecf40e9a4fd0b58ee046dad93cec9f059
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715083"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820298"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie kompilacji i debugowania zadań rozwoju "Otwórz Folder"
 
@@ -313,7 +313,7 @@ Odczytywanie ustawień *.gitignore* pliku są stosowane do katalogu nadrzędnego
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie kodu bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Otwórz Folder projektów w języku C++](/cpp/build/non-msbuild-projects)
-- [Projekty CMake w języku C++](/cpp/build/cmake-tools-for-visual-cpp)
+- [Otwieranie folderu projektów na potrzeby języka C++](/cpp/build/open-folder-projects-cpp)
+- [Projekty CMake dlaC++](/cpp/build/cmake-projects-in-visual-studio)
 - [NMAKE — dokumentacja](/cpp/build/reference/nmake-reference)
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
