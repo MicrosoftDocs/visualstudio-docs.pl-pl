@@ -6,20 +6,21 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2093d6d0f6d123bf6d904b225c17714a98c5ee9a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971456"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835893"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie programu Visual Studio dla komputerów Mac
 
-Istnieje wiele produktów platformy Xamarin, które umożliwiają tworzenie aplikacji dla wielu platform, w tym aplikacje autonomiczne, takimi jak Visual Studio dla komputerów Mac.
-
-Ten przewodnik służy do odinstalowania każdego produktu oddzielnie, przechodząc do odpowiedniej sekcji lub za pomocą skryptów w [skryptu odinstalowania](#uninstall-script) sekcję dotyczącą dezinstalacji wszystko.
+Ten przewodnik służy do odinstalowania poszczególnych składników w programie Visual Studio dla komputerów Mac indywidualnie, przechodząc do odpowiedniej sekcji lub za pomocą skryptów w [skryptu odinstalowania](#uninstall-script) sekcję dotyczącą dezinstalacji wszystko.
 
 Jeśli użytkownik wcześniej mieli Xamarin Studio zainstalowany na komputerze może być również konieczne postępuj zgodnie z instrukcjami w [jego odinstalowanie platformy Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) przewodnika następujące kroki.
+
+> [!NOTE]
+> Te informacje tylko usunie 2019 usługi Visual Studio lub 2017 dla komputerów Mac z poziomu Twojej maszyny. Aby odinstalować program Visual Studio Code, zobacz [ten problem](https://github.com/Microsoft/vscode/issues/52151) Aby uzyskać szczegółowe informacje.
 
 ## <a name="uninstall-script"></a>Odinstaluj skryptu
 
@@ -49,7 +50,7 @@ Aby uruchomić skrypt, wykonaj następujące czynności:
     cd /location/of/file
     ```
 
-3. Wykonywalny skrypt i uruchom ją za pomocą **"sudo"**:
+3. Wykonywalny skrypt i uruchom ją za pomocą **"sudo"** :
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
@@ -71,7 +72,7 @@ Aby uruchomić skrypt, wykonaj następujące czynności:
     cd /location/of/file
     ```
 
-3. Wykonywalny skrypt i uruchom ją za pomocą **"sudo"**:
+3. Wykonywalny skrypt i uruchom ją za pomocą **"sudo"** :
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
@@ -103,7 +104,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-Można również usunąć następującego katalogu zawierającego różnych Xamarin plików i folderów. Jednak przed wykonaniem należy pamiętać, że ten katalog zawiera Android kluczy podpisywania. Aby uzyskać więcej informacji można znaleźć w sekcji  **[odinstalowywania zestawu Android SDK i zestawu SDK Java](#uninstall-android-sdk-and-java-sdk)**:
+Można również usunąć następującego katalogu zawierającego różnych Xamarin plików i folderów. Jednak przed wykonaniem należy pamiętać, że ten katalog zawiera Android kluczy podpisywania. Aby uzyskać więcej informacji można znaleźć w sekcji  **[odinstalowywania zestawu Android SDK i zestawu SDK Java](#uninstall-android-sdk-and-java-sdk)** :
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin

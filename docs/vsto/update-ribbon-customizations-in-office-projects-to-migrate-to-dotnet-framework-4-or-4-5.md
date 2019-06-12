@@ -1,5 +1,5 @@
 ---
-title: Aktualizowanie dostosowań Wstążki w projektach pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
+title: Aktualizacja dostosowań Wstążki w projektach pakietu Office migracji do platformy .NET Framework 4, 4.5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 03424ecb477a32ecff31a83d341a6eef178a31e0
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446933"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836077"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizowanie dostosowań Wstążki w projektach pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
   Jeśli projekt zawiera dostosowania wstążki, który został utworzony przy użyciu **Wstążka (Projektant graficzny)** elementu projektu, należy wprowadzić następujące zmiany do kodu projektu, zmiana platformy docelowej na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później.

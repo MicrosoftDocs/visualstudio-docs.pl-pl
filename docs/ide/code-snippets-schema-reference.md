@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974985"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836111"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
 
@@ -632,7 +632,11 @@ Określa typ obiektu. `Object` Element jest używany do identyfikowania elementu
 | - |-----------------|
 |[Object — element](../ide/code-snippets-schema-reference.md#object-element)|Definiuje pola obiektów fragmentu kodu, które można edytować.|
 
- Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu.
+Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Na przykład:
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>URL — element
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office Excel klawiatura, ustawienia klawiatury Microsoft Office — okno dialogowe
+title: Office Excel klawiatury, ustawienia klawiatury, okno dialogowe Opcje
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63f3bfc9295501d5f9b8f0267037302cdbb04a76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 090e943df2b61352c2342218c3c71c8f0e60eaad
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970220"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836036"
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel klawiatura, ustawienia klawiatury Microsoft Office — okno dialogowe
   Program Microsoft Office Excel i programu Visual Studio jednocześnie obsługiwać klawiszy skrótów. Uruchomić ten sam klawisz skrótu dla różnych poleceń w programie Excel, jak i w programie Visual Studio. Gdy program Excel jest otwarty w projekcie na poziomie dokumentu, w programie Visual Studio, tylko jedną aplikację naraz otrzymuje polecenia klawiszy skrótów. Domyślnie program Visual Studio odbiera wszystkie polecenia klawiszy skrótów, ale możesz wprowadzać ich otrzymywania, gdy dokument ma fokus, wybierając w programie Excel **dynamiczny schemat klawiatury**.

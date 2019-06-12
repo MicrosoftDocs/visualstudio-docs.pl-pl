@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Wywoływanie modelu obiektów klienta SharePoint w rozszerzeniu Eksploratora serwera | Dokumentacja firmy Microsoft'
+title: 'Eksplorator serwera: Rozszerzanie węzła połączeń SharePoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430454"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835939"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: Wywoływanie modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera
   W tym instruktażu pokazano, jak wywołać modelu obiektu klienta SharePoint z rozszerzeniem dla **połączeń SharePoint** w węźle **Eksploratora serwera**. Aby uzyskać więcej informacji o sposobie używania modelu obiektu klienta SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -240,7 +240,7 @@ Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, ab
 
     2. W **Dodawanie połączenia programu SharePoint** okna dialogowego wprowadź adres URL witryny programu SharePoint, do którego chcesz połączyć, a następnie wybierz **OK** przycisku.
 
-         Aby określić witrynę programu SharePoint na komputerze deweloperskim, wpisz **http://localhost**.
+         Aby określić witrynę programu SharePoint na komputerze deweloperskim, wpisz **http://localhost** .
 
 3. Rozwiń węzeł połączenia lokacji (która zawiera adres URL witryny), a następnie rozwiń węzeł lokacji podrzędnej (na przykład **witryny zespołu**).
 

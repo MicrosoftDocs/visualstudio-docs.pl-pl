@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 960c2b546abe3554a5912efde9bd09bb5b2189b7
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260474"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835959"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodów
 
@@ -32,7 +32,7 @@ Na poniższej liście przedstawiono kod wyników metryk, które oblicza programu
 
 - **Złożoność Cyklomatyczna** -mierzy strukturalnych złożoności kodu. Zostanie utworzony, obliczając liczbę różne ścieżki przepływu programu. Program, który zawiera przepływ sterowania złożonych wymaga więcej testów do osiągnięcia pokrycia kodu dobre i jest mniej łatwego w utrzymaniu. Aby uzyskać więcej informacji, zobacz [Wikipedia wpis dla złożoność cyklomatyczna](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Głębokość dziedziczenia** — wskazuje liczbę różnych klas dziedziczących od siebie nawzajem, aż do klasy bazowej. Głębokość dziedziczenia jest podobny do klasy sprzężenia, w tym zmiany w klasie bazowej może mieć wpływ na dowolne klasy dziedziczone. Im większa tej liczby, bardziej dziedziczenia i wyższa potencjalnych modyfikacje klasy bazowej spowodować podziału zmianie. Głębokość dziedziczenia niską wartość jest prawidłowy, i o wysokiej wartości jest nieodpowiedni. 
+- **Głębokość dziedziczenia** — wskazuje liczbę różnych klas dziedziczących od siebie nawzajem, aż do klasy bazowej. Głębokość dziedziczenia jest podobny do klasy sprzężenia, w tym zmiany w klasie bazowej może mieć wpływ na dowolne klasy dziedziczone. Im większa tej liczby, bardziej dziedziczenia i wyższa potencjalnych modyfikacje klasy bazowej spowodować podziału zmianie. Głębokość dziedziczenia niską wartość jest prawidłowy, i o wysokiej wartości jest nieodpowiedni.
 
 - **Klasa sprzężenia** -mierzy sprzężenia unikatowy klasy za pomocą parametrów, zmienne lokalne, zwracanych typów, wywołania metody, wystąpień generyczny lub szablonu, klas bazowych, implementacji interfejsu, pól zdefiniowanych dla typów zewnętrznych i Atrybut dekoracji. Projektowania oprogramowania dobre nakazują, typów i metod powinni mieć wysoką spójność i mało sprzężenia. Sprzężenie wysoki wskazuje projekt, który jest trudny do ponownego użycia i utrzymywać ze względu na jej wielu współzależności na inne typy. Aby uzyskać więcej informacji, zobacz [sprzężenia klas](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) wpis w blogu.
 
@@ -43,9 +43,7 @@ Na poniższej liście przedstawiono kod wyników metryk, które oblicza programu
 
 ## <a name="anonymous-methods"></a>Metody anonimowe
 
-*Metody anonimowej* jest po prostu metody, która nie ma nazwy. Metody anonimowe są najczęściej używane do przekazywania bloku kodu jako parametr delegata. Wyniki metryk dla metody anonimowej, która jest zadeklarowana w elemencie członkowskim, na przykład metodę lub metodę dostępu, są skojarzone z elementu członkowskiego, która deklaruje metodę. Nie są one skojarzone z elementem członkowskim, który wywołuje metodę.
-
-Aby uzyskać więcej informacji na temat sposobu metryki kodu traktuje metod anonimowych, zobacz [metody anonimowe i analiza kodu](../code-quality/anonymous-methods-and-code-analysis.md).
+*Metody anonimowej* jest po prostu metody, która nie ma nazwy. Metody anonimowe są najczęściej używane do przekazywania bloku kodu jako parametr delegata. Metryki kodu w wyniku metody anonimowej, który jest zadeklarowany wewnątrz elementu członkowskiego, takie jak metody lub metody dostępu są skojarzone z elementem członkowskim, który deklaruje metodę. Nie są one skojarzone z elementem członkowskim, który wywołuje metodę.
 
 ## <a name="generated-code"></a>Wygenerowany kod
 

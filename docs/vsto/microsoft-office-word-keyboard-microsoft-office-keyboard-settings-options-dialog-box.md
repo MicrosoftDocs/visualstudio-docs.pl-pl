@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office Word klawiatura, ustawienia klawiatury Microsoft Office — okno dialogowe
+title: Klawiatury programu Word pakietu Office, ustawienia klawiatury, okno dialogowe Opcje
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6506fec976822ea4a4e675c9961395c952a7a35f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970308"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835981"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word klawiatura, ustawienia klawiatury Microsoft Office — okno dialogowe
   Microsoft Word pakietu Office i programu Visual Studio jednocześnie obsługiwać klawiszy skrótów. Uruchomić ten sam klawisz skrótu dla różnych poleceń w programie Word i w programie Visual Studio. Gdy program Word jest otwarty w projekcie na poziomie dokumentu, w programie Visual Studio, tylko jedną aplikację naraz otrzymuje polecenia klawiszy skrótów. Domyślnie program Visual Studio odbiera wszystkie polecenia klawiszy skrótów, ale możesz wprowadzać Word ich otrzymywania, gdy dokument ma fokus, wybierając **dynamiczny schemat klawiatury**.
