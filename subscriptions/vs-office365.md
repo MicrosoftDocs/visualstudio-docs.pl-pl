@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści usługi Office 365, objęte niektóre subskrypcje programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263125"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032825"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Usługi Office 365 ProPlus w subskrypcji programu Visual Studio
 
-Tworzenie najlepszych. Pracę z dowolnego miejsca dzięki aplikacjom, które zawsze są aktualizowane. Office 365 ProPlus to subskrypcję, która pochodzi z aplikacji — wersja premium, takich jak Word, Excel, PowerPoint, OneNote, programu Outlook, wydawcy i dostępu (wydawcy i dostępny na komputerze tylko dostęp). Aplikacje można zainstalować na wielu urządzeniach, w tym komputerów z systemem Mac, tabletach Ipad, iPhone, tabletów z systemem Android i telefonach z systemem Android. Usługi Office 365 również jest dostarczany z usług, takich jak 1TB miejsca do magazynowania w usłudze OneDrive, 60 minut Skype na miesiąc i Microsoft Czat i telefonicznej pomocy technicznej. Dzięki subskrypcji Uzyskaj najnowsze wersje aplikacji i automatycznie otrzymywać aktualizacje, gdy wystąpią.
+Tworzenie najlepszych. Pracę z dowolnego miejsca dzięki aplikacjom, które zawsze są aktualizowane. Office 365 ProPlus to subskrypcję, która pochodzi z aplikacji — wersja premium, takich jak Word, Excel, PowerPoint, OneNote, programu Outlook, wydawcy i dostępu (wydawcy i dostępny na komputerze tylko dostęp). Aplikacje można zainstalować na wielu urządzeniach, w tym komputerów z systemem Mac, tabletach Ipad, iPhone, tabletów z systemem Android i telefonach z systemem Android. Dzięki subskrypcji Uzyskaj najnowsze wersje aplikacji i automatycznie otrzymywać aktualizacje, gdy wystąpią.
 
 ## <a name="getting-started-with-office-365-proplus"></a>Wprowadzenie do usługi Office 365 ProPlus
 
@@ -52,13 +52,13 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Yes          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Tak          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                            |  Brak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
-| Visual Studio Dev Essentials | Brak  | Niedostępne |Brak |
+|  |
 
 <sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & usług dla deweloperów BizSpark, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), MCT Software & Services, Wyobraź sobie, Microsoft Partner Network.*
 

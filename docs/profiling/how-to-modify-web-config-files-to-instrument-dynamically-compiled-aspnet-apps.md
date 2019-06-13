@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Modyfikowanie plików Web.Config do Instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET | Dokumentacja firmy Microsoft'
+title: 'Plik Web.Config: Instrument & profil dynamiczne skompilowanej aplikacji internetowej platformy ASP.NET'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e1e0f6377da52a0f1b26a6f50db44efc9a847f30
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422922"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032948"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Instrukcje: Modyfikowanie plików web.config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci web ASP.NET
 Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody Instrumentacji narzędzi profilowania do zbierania danych o chronometrażu, dane alokacji pamięci .NET i danych o okresie istnienia obiektu platformy .NET z dynamicznie kompilowany [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.
@@ -59,7 +59,7 @@ Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody 
 
    | Nazwa atrybutu | Wartość atrybutu |
    |--------------------| - |
-   | **Nazwa** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
+   | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **Kultury** | **Neutral** |
 

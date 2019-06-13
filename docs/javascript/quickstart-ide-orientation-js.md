@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2c20f25b005e738769d1c8663387f0a427e5dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9d776c061982b60640944737b27cda927f79e59
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62841047"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033169"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -37,7 +37,7 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 Pierwszą rzeczą, jaką zobaczysz po uruchomieniu programu Visual Studio jest oknem rozpoczęcia. W oknie uruchamiania zaprojektowano w celu ułatwienia Ci "kod" szybciej. Posiada opcji, aby zamknąć lub zapoznaj się z kodu, otwórz istniejący projekt lub rozwiązanie, Utwórz nowy projekt lub po prostu otwórz folder, który zawiera kilka plików kodu.
 
-[![](media/vs-2019/start-window.png "Okno uruchamiania w programie Visual Studio 2019 r.")](media/vs-2019/start-window.png)
+[![Okno uruchamiania w programie Visual Studio 2019 r.](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Jeśli używasz programu Visual Studio po raz pierwszy, listy ostatnich projektów jest pusta.
 

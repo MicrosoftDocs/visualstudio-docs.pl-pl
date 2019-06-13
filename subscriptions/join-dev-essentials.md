@@ -7,19 +7,34 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Informacje na temat programu Visual Studio Dev Essentials i jak się zarejestrować.
 searchscope: VS Subscription
-ms.openlocfilehash: 3f193d2f1d2f2f1f031773dcde3b2a209f8eebb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dc900de5f20c48f683c0dc27f7c9645bd38fcc0
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833988"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033104"
 ---
-# <a name="how-to-join-visual-studio-dev-essentials"></a>Jak połączyć program Visual Studio Dev Essentials
+# <a name="visual-studio-dev-essentials"></a>Visual Studio Dev Essentials
 
 Visual Studio Dev Essentials zapewnia wszystko, czego potrzebujesz do tworzenia i wdrażania aplikacji na dowolnej platformie. Za pomocą narzędzia stanu grafiki, możliwości chmury, szkolenia i pomoc techniczna jest naszym najbardziej kompleksowa bezpłatna dla deweloperów jaka kiedykolwiek się pojawiła.
 
 Odwiedź stronę [Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) Aby dowiedzieć się więcej o tym, który znajduje się w członkostwa w programie Visual Studio Dev Essentials.
 
+## <a name="opt-in-to-visual-studio-dev-essentials"></a>Zezwalaj na korzystanie z programu Visual Studio Dev Essentials
+
 Gdy wszystko będzie gotowe zarejestrować, wystarczy kliknąć [Dołącz lub uzyskaj dostęp teraz](https://my.visualstudio.com/Benefits?wt.mc_id=o~msft~vscom~devessentials-hero~mt689&campaign=o~msft~vscom~devessentials-hero~mt689) przycisku.
 
 To wszystko jest do niego.
+
+## <a name="opt-out-of-visual-studio-dev-essentials"></a>Opt out of Visual Studio Dev Essentials
+
+Jeśli chcesz zrezygnować z programu Visual Studio Dev Essentials, wykonaj następujące kroki:
+
+1. Przejdź do [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+2. Zaloguj się do Twojej subskrypcji.  (Uzyskaj Pomoc [logowania](signing-in.md).)
+3. Po pomyślnym zalogowaniu zostanie wyświetlona lista bieżących subskrypcji.
+4. W wierszu skojarzone z programu Visual Studio Dev Essentials, kliknij przycisk **Opuść program** w kolumnie linki po prawej.
+5. Pojawi się okno podręczne. Wybierz **potwierdzić**.
+
+    > [!NOTE]
+    > Powracające do programu Visual Studio Dev Essentials jest bardzo proste.  Po prostu wykonaj kroki od 1 do 5 i kliknij **Dołącz do programu Visual Studio Dev Essentials** znajdujący się u góry kolumny łącza. Następnie kliknij przycisk **Potwierdź**.

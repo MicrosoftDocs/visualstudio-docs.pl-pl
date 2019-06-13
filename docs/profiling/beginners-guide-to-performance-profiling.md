@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688512"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033035"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Miara wydajności aplikacji, analizując użycie procesora CPU
 Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **użycie procesora CPU** karta Narzędzia diagnostyczne, aby uzyskać dane wydajności dotyczące Twojej aplikacji. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
@@ -148,6 +148,9 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
 
     ![Diagnostyka narzędzi ścieżka aktywna](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
+
+    > [!NOTE]
+    > Jeśli zostanie wyświetlony kod w drzewie wywołań oznaczonego jako "uszkodzony" Kod lub "unwalkable stos", oznacza to, że śledzenie zdarzeń dla Windows (ETW) zdarzenia prawdopodobnie zostały usunięte. Spróbuj Kolekcjonowanie śladu tego samego po raz drugi w celu rozwiązania problemu.
 
 ## <a name="view-external-code"></a>Pokaż kod zewnętrzny
 

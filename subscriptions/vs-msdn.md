@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zarejestruj się otrzymać Subskrypcja magazynu MSDN Magazine zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c659bdd7eb2eee0d1899eab5d5df850a5206e92
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947370"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032840"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Korzyść MSDN Magazine w subskrypcji programu Visual Studio
 
@@ -52,7 +52,7 @@ Wersja cyfrowa jest dostępne dla członków programu Visual Studio Dev Essentia
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Drukowane edition                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Drukowane edition                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
 |Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze)   | Azure |Niedostępne      |  Nie dotyczy         |
-|Visual Studio Dev Essentials| Nie dotyczy |Wersja cyfrowa       |  Tak|
+||
 
 <sup>1</sup>*wydrukowana wersji:  Nie do odsprzedaży, Visual Studio Industry Partner (VSIP) ekwiwalentu pełnego wymiaru czasu, Microsoft Partner Network (przedsiębiorstwo), Imagine (Premium).*
 

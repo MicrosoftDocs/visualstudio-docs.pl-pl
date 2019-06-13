@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat konta dewelopera Windows, które są dołączone do subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978725"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032741"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera Windows w subskrypcji programu Visual Studio
 
@@ -55,8 +55,8 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dołączono                                                            |Tak|
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                            |  Nie dotyczy|
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              |  Niedostępne                                            |  Nie dotyczy|
-| Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne                                            |  Nie dotyczy|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
+||
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży, ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów. Nie obejmuje:  Wyobraź sobie sieci Microsoft Partner Network (MPN), najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), MCT Software & Services.*
 

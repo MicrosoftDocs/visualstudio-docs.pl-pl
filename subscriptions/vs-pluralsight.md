@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Więcej informacji na temat subskrypcji szkolenia Pluralsight, które są dołączone do wybranej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0b4211fbba6a5f1602906a281869b40068f3d6f1
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: cc96d9c088a270342be792a2e7514e172a72ea45
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225500"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032777"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight, w ramach subskrypcji programu Visual Studio
 
@@ -72,9 +72,9 @@ W poniższej tabeli przedstawiono, jakie korzyści z subskrypcji w witrynie Plur
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 miesiące    | Tak<sup>2</sup> |
 |              Visual Studio Test Professional (Standard)              |    Licencjonowania zbiorowego, handlu detalicznego     |   3 miesiące    | Nie |
 |                      Platformy MSDN (standardowa)                       |    Licencjonowania zbiorowego, handlu detalicznego     |   3 miesiące    | Nie |
-|                     Visual Studio Dev Essentials                     |        Nie dotyczy         |   1 miesiąc    |       Nie       |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) |       Azure       | Niedostępne |       Nie dotyczy       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       Nie dotyczy       |
+||
 
 <sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat wyróżnienia RZUTOWANIA korzyści dostępne w wybranych subskrypcjach programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805339"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032894"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Wyróżnij RZUTOWANIA korzyści w ramach subskrypcji programu Visual Studio
 
@@ -52,7 +52,7 @@ Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełn
    >
    > *Firma Microsoft obecnie przeglądania Twoje żądanie dotyczące aktywacji i dostępu, aby wyróżnić RZUTOWANIA. Powrót po awarii z mnie usłyszysz w nie więcej niż 48 godzin.*
    >
-   > *Najlepszym rozwiązaniem,*
+   > *Najlepszym rozwiązaniem,* 
    > *Greg*
 
 Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający pomyślne utworzenie konta usługi i pytaniem, możesz kliknąć link aktywacyjny, aby zakończyć proces aktywacji.
@@ -72,7 +72,7 @@ Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający
    > - Samouczek wideo — [skonfigurować Portfolio](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - Samouczek wideo — [Dodawanie aplikacji](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Najlepszym rozwiązaniem,*
+   > *Najlepszym rozwiązaniem,* 
    > *Greg*
 
    > [!NOTE]
@@ -86,7 +86,6 @@ Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                             |  Brak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak           |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
-| Visual Studio Dev Essentials | Brak  | Niedostępne | Brak |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 

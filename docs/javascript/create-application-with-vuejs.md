@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226043"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033142"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzia Node.js dla programu Visual Studio
 
@@ -169,7 +169,15 @@ Te kroki wymagają vue-cli 3.0, która jest obecnie dostępna w wersji beta.
 
 #### <a name="build-with-vue-cli-30"></a>Tworzenie za pomocą vue-cli 3.0
 
-Wystąpił nieznany problem z vue — interfejs wiersza polecenia 3.0 zapobiega Automatyzowanie procesu kompilacji. Za każdym razem, spróbuj odświeżyć folderu wwwroot, musisz uruchomić polecenie `npm run build` w folderze aplikacji klienckiej.
+Wystąpił nieznany problem z vue — interfejs wiersza polecenia 3.0 może uniemożliwić Automatyzowanie procesu kompilacji. Za każdym razem, spróbuj odświeżyć folderu wwwroot, musisz uruchomić polecenie `npm run build` w folderze aplikacji klienckiej.
+
+Alternatywnie można utworzyć projektu vue-cli 3.0 jako zdarzenie sprzed kompilacji za pomocą właściwości projektu programu ASP.NET. Kliknij prawym przyciskiem myszy projekt, wybierz polecenie **właściwości**i zawiera następujące polecenia w **kompilacji** na karcie **wiersz polecenia zdarzenia sprzed kompilacji** pola tekstowego.
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>Ograniczenia
 

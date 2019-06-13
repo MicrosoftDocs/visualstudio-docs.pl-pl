@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji usługi Power BI Pro, dołączone do wybranej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948822"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031973"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w ramach subskrypcji programu Visual Studio
 
@@ -69,12 +69,12 @@ Aby korzystać z usługi Power BI Pro, należy skonfigurować konto lub zaloguj 
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes|
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak|
 | Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Niedostępne                                                            |Nie dotyczy         |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                            |Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne       |  Tak|
-| Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne |Nie dotyczy|
 | Program Visual Studio Enterprise (miesięcznych w chmurze) | Azure                                       | Niedostępne                                  |Nie dotyczy|
+||
 
 <sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).  Nie obejmuje:  Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
 

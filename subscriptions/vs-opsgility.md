@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat umiejętności mi się — obsługiwane przez korzyści szkolenie Opsgility dołączone do wybranej subskrypcji programu Visual Studio.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947009"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032822"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Umiejętności mnie w górę - działającemu korzyści szkolenie Opsgility w subskrypcji programu Visual Studio
 
@@ -39,8 +39,8 @@ Wybrane subskrypcje programu Visual Studio obejmują dostęp do szkolenia wykwal
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 miesiące                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | 3 miesiące                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne | Nie dotyczy  |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
+||
 
 *Nie obejmuje:  Microsoft Partner Network (MPN), najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Certified Trainer, BizSpark, Imagine, NFR, ekwiwalentu pełnego wymiaru czasu*
 

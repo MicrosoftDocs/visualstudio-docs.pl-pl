@@ -1,25 +1,25 @@
 ---
 title: Instalowanie i używanie programu Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy
-description: Ten dokument zawiera listę hostów, które muszą być na liście dozwolonych w taki sposób, aby zezwolić na program Visual Studio for Mac (i jego obciążeń, w tym Xamarin) do pracy w środowisku firmowym.
+description: Ten dokument zawiera listę hostów, które muszą być dozwolone w zaporze, aby zezwolić na program Visual Studio for Mac (i jego obciążeń, w tym Xamarin) do pracy w środowisku firmowym.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 446baf89dacfe7b742e3da3307711435495c8da4
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997958"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033188"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy
 
-Jeśli Ty lub Twoja organizacja korzysta z środki bezpieczeństwa, takie jak Zapora lub serwer proxy, następnie istnieją adresy URL domen, które możesz chcieć "dozwolonych" i porty i protokoły, które można otworzyć, aby mieć najlepsze wyniki, podczas instalacji i używania Visual Stu dio dla systemów Mac i usług platformy Azure.
+Jeśli Twoja organizacja używa środki bezpieczeństwa, takie jak Zapora lub serwer proxy, a następnie istnieją, domen, może wystąpić konieczność dodania do "Zezwalaj na liście" i porty i protokoły, które może chcesz otworzyć, aby mieć najlepsze wyniki, podczas instalacji i używania Vis Usługa rejestrowania dostępu użytkowników Studio dla komputerów Mac i usług platformy Azure.
 
-- [**Zainstaluj program Visual Studio dla komputerów Mac**](#install-visual-studio-for-mac): Te tabele zawierają adresy URL do listy dozwolonych adresów, tak, aby mieć dostęp do wszystkich funkcji i obciążeń programu Visual Studio dla komputerów Mac.
+- [**Zainstaluj program Visual Studio dla komputerów Mac**](#install-visual-studio-for-mac): Te tabele zawierają domen, które muszą zezwalać na łączność, tak aby mieć dostęp do wszystkich funkcji i obciążeń programu Visual Studio dla komputerów Mac.
 
-- [**Użyj programu Visual Studio dla komputerów Mac**](#use-visual-studio-for-mac): Te tabele zawierają adresy URL do listy dozwolonych adresów, tak, aby mieć dostęp do wszystkich usług i funkcji, które chcesz.
+- [**Użyj programu Visual Studio dla komputerów Mac**](#use-visual-studio-for-mac): Te tabele zawierają domen, które muszą zezwalać na łączność, tak aby mieć dostęp do powiązanych funkcji.
 
 ## <a name="install-visual-studio-for-mac"></a>Zainstaluj program Visual Studio dla komputerów Mac
 
@@ -50,7 +50,7 @@ Ponieważ programu Visual Studio dla komputerów Mac, Instalator pobierze z ró�
 
 ## <a name="use-visual-studio-for-mac"></a>Use Visual Studio for Mac
 
-Aby upewnić się, że masz dostęp do wszystkich funkcji, które są potrzebne w programie Visual Studio dla komputerów Mac podczas używany serwer proxy lub zapora, firma Microsoft zaleca umieszczeniu na białej liście następujących domen i portów.
+Aby upewnić się, że masz dostęp do wszystkich funkcji, które są potrzebne w programie Visual Studio dla komputerów Mac podczas używany serwer proxy lub zapora, zaleca się dodanie następujących domen i portów do listy dozwolone dostępu.
 
 ### <a name="general"></a>Ogólne
 

@@ -1,5 +1,5 @@
 ---
-title: Przewodnik po funkcjach wdrożenia
+title: Pierwsze spojrzenie na wdrażanie
 description: Poznaj opcje wdrażania aplikacji w programie Visual Studio.
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261983"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032558"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrażanie w programie Visual Studio
 
@@ -40,7 +40,7 @@ Zobacz, przewodniki Szybki Start i samouczków, aby uzyskać instrukcje krok po 
 
 Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoczęcia wdrożenia etapowego, w którym inne narzędzie służy do wdrażania końcowego.
 
-- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, **Python**, i.** .NET Core**: Narzędzie publikowania do wdrożenia w lokalnym folderze. Opcje dostępne są zależne od typu aplikacji. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli wcześniej nie skonfigurowano żadnych profilów publikowania, musisz kliknąć **Utwórz nowy profil**.) Następnie wybierz pozycję **folderu**. Aby uzyskać więcej informacji, zobacz [wdrażanie w lokalnym folderze](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, **Python**, i. **.NET Core**: Narzędzie publikowania do wdrożenia w lokalnym folderze. Opcje dostępne są zależne od typu aplikacji. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli wcześniej nie skonfigurowano żadnych profilów publikowania, musisz kliknąć **Utwórz nowy profil**.) Następnie wybierz pozycję **folderu**. Aby uzyskać więcej informacji, zobacz [wdrażanie w lokalnym folderze](quickstart-deploy-to-local-folder.md).
 
     ![Wybierz polecenie Publikuj](../deployment/media/quickstart-publish.png)
 
@@ -120,6 +120,16 @@ Aby umożliwić bardziej wyrafinowane projektowanie i testowanie przez wdrożeni
 ## <a name="continuous-deployment"></a>Ciągłe wdrażanie
 
 Potoki usługi Azure umożliwia włączanie ciągłego wdrażania aplikacji. Aby uzyskać więcej informacji, zobacz [potoki Azure](/azure/devops/pipelines/index?view=vsts) i [Wdróż na platformie Azure](/azure/devops/deploy-azure/index?view=vsts).
+
+## <a name="deploy-a-sql-database"></a>Wdrażanie bazy danych SQL
+
+- [Zmień platformę docelową i Opublikuj projekt bazy danych (SQL Server Data Tools (SSDT))](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Wdrażanie projektu usług analizy (serwera SQL SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Wdrażanie projektów Integration Services (SSIS) i pakiety](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [Tworzenie i wdrażanie do lokalnej bazy danych](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Wdrożenia dla innych typów aplikacji
 

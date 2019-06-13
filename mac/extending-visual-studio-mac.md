@@ -3,15 +3,15 @@ title: Rozszerzanie programu Visual Studio dla komputerów Mac
 description: Program Visual Studio dla komputerów Mac funkcje i możliwości można rozszerzyć za pomocą modułów o nazwie pakiety rozszerzeń. Pierwsza część tego przewodnika tworzy prosty programu Visual Studio pakiet rozszerzeń dla komputerów Mac do wstawienia datę i godzinę do dokumentu. Drugiej części tego przewodnika przedstawiono podstawy system pakietu rozszerzeń i niektóre z podstawowych interfejsów API, które stanowią podstawę programu Visual Studio dla komputerów Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1753eef9987bc59be55298489e10c5698eb944cc
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983166"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033123"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozszerzanie programu Visual Studio dla komputerów Mac
 
@@ -28,7 +28,7 @@ Aby pakiet rozszerzenia do tworzenia w programie Visual Studio dla komputerów M
 Zaletą ten projekt jest, czy Visual Studio for Mac jest rozszerzalny — istnieje wiele punktów rozszerzenia, które mogą być wbudowane w system za pomocą niestandardowego rozszerzenia pakietów. Bieżące pakiety rozszerzeń przykłady obsługi C# i F#debugera narzędzia i szablony projektów.
 
 > [!NOTE]
-> **Uwaga**: Jeśli masz projekt dodatku producent, który został utworzony przed Maker dodatek 1.2, chcesz przeprowadzić migrację projektu, co zostało opisane w krokach [tutaj](https://mhut.ch/addinmaker/1.2).
+> Jeśli masz projekt dodatku producent, który został utworzony przed Maker dodatek 1.2, chcesz przeprowadzić migrację projektu, co zostało opisane w krokach [tutaj](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ W tej sekcji omówiono różne pliki, generowane przez twórcę dodatku i wymaga
 
 ## <a name="attribute-files"></a>Atrybut plików
 
-Pakiety rozszerzeń są przechowywane metadane dotyczące ich nazwy, wersji, zależności i inne informacje w języku C# atrybutów. Twórca dodatku tworzy dwa pliki `AddinInfo.cs` i `AssemblyInfo.cs` przechowywać i organizować te informacje. Pakiety rozszerzeń musi mieć unikatowy identyfikator i przestrzeń nazw określona w ich *atrybutu Addin*:
+Pakiety rozszerzeń są przechowywane metadane dotyczące ich nazwy, wersji, zależności i inne informacje w języku C# atrybutów. Twórca dodatku tworzy dwa pliki `AddinInfo.cs` i `AssemblyInfo.cs` przechowywać i organizować te informacje. Pakiety rozszerzeń musi mieć unikatowy identyfikator i przestrzeń nazw określona w ich  *`Addin` atrybut*:
 
 ```csharp
 [assembly:Addin (
@@ -46,7 +46,7 @@ Pakiety rozszerzeń są przechowywane metadane dotyczące ich nazwy, wersji, zal
 )]
 ```
 
-Pakiety rozszerzeń również zadeklarować zależności na pakietów rozszerzeń, których właścicielem punktów rozszerzeń, które są podłączane. Te są automatycznie określane w czasie kompilacji.
+Pakiety rozszerzeń również zadeklarować zależności na pakietów rozszerzeń, których właścicielem punktów rozszerzenia, które są podłączane do niej, które są automatycznie określane w czasie kompilacji.
 
 Ponadto dodatkowe informacje można dodać za pomocą dodatku węzeł odniesienia w konsoli rozwiązania dla projektu, jak pokazano w poniższej ilustracji:
 
@@ -81,10 +81,10 @@ Rozszerzenia poleceń są definiowane przez dodawanie wpisów do `/MonoDevelop/I
 
 Atrybut ścieżki, która określa punkt rozszerzenia, że jest ona w tym przypadku podłączania, zawiera węzeł rozszerzenia `/MonoDevelop/Ide/Commands/Edit`. Ponadto działa jako węzeł nadrzędny węzła do polecenia. Węzeł polecenie ma następujące atrybuty:
 
-* **Identyfikator** — Określa identyfikator dla tego polecenia. Identyfikatory poleceń musi być zadeklarowany jako elementy członkowskie wyliczenia i służą do łączenia poleceń do CommandItems.
-* **_etykieta** — tekst, który ma być wyświetlany w menu.
-* **_opis** — tekst, który ma być wyświetlany jako etykietka narzędzia dla przycisków paska narzędzi.
-* **defaultHandler** -Określa `CommandHandler` klasę, która obsługuje polecenie
+* `id` -Określa identyfikator dla tego polecenia. Identyfikatory poleceń musi być zadeklarowany jako elementy członkowskie wyliczenia i służą do łączenia poleceń do CommandItems.
+* `_label` — Tekst, który będzie wyświetlany w menu.
+* `_description` — Tekst, który będzie wyświetlany jako etykietka narzędzia dla przycisków paska narzędzi.
+* `defaultHandler` -Określa `CommandHandler` klasę, która obsługuje polecenie
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -96,7 +96,7 @@ Rozszerzenie CommandItem, które podłącza się do `/MonoDevelop/Ide/MainMenu/E
 </Extension>
 ```
 
-CommandItem umieszcza polecenie określonego w atrybucie jego identyfikator do menu. Rozszerza to CommandItem `/MonoDevelop/Ide/MainMenu/Edit` punktu rozszerzenia, co sprawia, że etykieta polecenia pojawiają się w **Menu Edycja**. Należy pamiętać, że **identyfikator** CommandItem odpowiada identyfikator węzła polecenia `InsertDate`. Jeśli masz zamiar usunąć CommandItem **Wstaw datę** znikała opcję z Menu Edycja.
+CommandItem umieszcza polecenie określony w jej `id` atrybutu do menu. Rozszerza to CommandItem `/MonoDevelop/Ide/MainMenu/Edit` punktu rozszerzenia, co sprawia, że etykieta polecenia pojawiają się w **Menu Edycja**. Należy pamiętać, że identyfikator w CommandItem identyfikatorowi węzła polecenia `InsertDate`. Jeśli usuniesz CommandItem **Wstaw datę** znikała opcję z Menu Edycja.
 
 ### <a name="command-handlers"></a>Programy obsługi poleceń
 
@@ -129,7 +129,7 @@ public enum DateInserterCommands
 }
 ```
 
-To wiąże ze sobą, polecenie i CommandItem — CommandItem wywołuje polecenie, w przypadku wybrania CommandItem z **Menu Edycja**.
+Polecenie i CommandItem teraz są powiązane ze sobą — CommandItem wywołuje polecenie, w przypadku wybrania CommandItem z **Menu Edycja**.
 
 ## <a name="ide-apis"></a>Interfejsy API w środowisku IDE
 
@@ -158,6 +158,35 @@ Aby uzyskać informacji na temat zakresu obszarów, które są dostępne dla roz
 * Refaktoryzacja
 * Wykonanie procedury obsługi
 * Wyróżnianie składni
+
+## <a name="extending-the-new-editor"></a>Rozszerzanie nowego edytora
+
+Program Visual Studio for Mac [wprowadzono nowy edytor tekstu cocoa dla natywnego interfejsu użytkownika](https://aka.ms/vs/mac/editor/learn-more) z programu Visual Studio na Windows korzystających z tej samej warstwy edytora.
+
+Jedną z wielu zalet udostępnianie edytora między Visual Studio i Visual Studio dla komputerów Mac jest kodem przeznaczonym dla edytora programu Visual Studio można dostosować tak, aby uruchomić w programie Visual Studio dla komputerów Mac.
+
+> [!NOTE]
+> Nowy edytor obsługuje tylko C# plików w tej chwili. Innych języków i formatów plików zostanie otwarty w edytorze starszej wersji. Starszy Edytor jednak wykonania niektórych z Visual Studio Edytor interfejsów API opisane poniżej.
+
+### <a name="visual-studio-editor-overview"></a>Edytor programu Visual Studio — omówienie
+
+![Architektura edytora programu Visual Studio](media/vs-editor-architecture.png)
+
+Przed dotknięciem rozszerzenia szczegóły specyficzne dla programu Visual Studio dla komputerów Mac, warto dowiedzieć się więcej o udostępnionych edytora, sam. Poniżej przedstawiono kilka zasobów, które mogą także pogłębianie takie informacje:
+
+* [Struktura Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
+* [MEF w edytorze](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Wewnątrz edytora](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
+* [Punkty rozszerzeń usługi językowej i edytora](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Wideo z wprowadzeniem do architektury edytora](https://www.youtube.com/watch?v=PkYVztKjO9A)
+
+Przy użyciu tych zasobów w kasie, są podstawowe pojęcia, które trzeba znać [ `ITextBuffer` ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) i [ `ITextView` ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview):
+
+* `ITextBuffer` Jest reprezentacją tekst, który może ulec zmianie w pamięci. `CurrentSnapshot` Właściwość `ITextBuffer` zwraca *niezmienialnych* reprezentujący bieżącą zawartość buforu wystąpienie `ITextSnapshot`. Po edycji w buforze, właściwość CurrentSnapshot jest aktualizowany do najnowszej wersji. Analizatory można sprawdzić migawki tekst na żadnym z wątków i jego zawartość jest gwarantowane, nigdy nie ulegną zmianie.
+
+* `ITextView` Reprezentacja interfejsu użytkownika jak `ITextBuffer` jest renderowany na ekranie kontrolka edytora. Ma odwołania do buforu tekstu, a także `Caret`, `Selection`i innych pojęć związanych z interfejsem użytkownika.
+
+Dla danego [ `MonoDevelop.Ide.Gui.Document` ](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5), możesz pobrać skojarzone bazowego `ITextBuffer` i `ITextView` za pośrednictwem `Document.GetContent<ITextBuffer>()` i `Document.GetContent<ITextView>()` odpowiednio.
 
 ## <a name="additional-information"></a>Dodatkowe informacje
 

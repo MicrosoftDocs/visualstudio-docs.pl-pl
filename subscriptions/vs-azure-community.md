@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści społeczności platformy Azure, zawarte w wybranych subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: afeed3f51e9a7ac00885906711c943f63896c80e
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948327"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032264"
 ---
 # <a name="azure-community"></a>Społeczność platformy Azure
 
@@ -51,11 +51,10 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Jeden rok    |    Tak     |
 |                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Jeden rok    |    Tak     |
-|                              Visual Studio Test Professional (Standard)                               |    Licencjonowania zbiorowego, handlu detalicznego     |   Jeden rok    |    Tak     |
+|                              Visual Studio Test Professional (Standard)                               |    Licencjonowania zbiorowego, handlu detalicznego     |   Jeden rok    |    Yes     |
 |                                       Platformy MSDN (standardowa)                                       |    Licencjonowania zbiorowego, handlu detalicznego     |   Jeden rok    |    Tak     |
 | Program Visual Studio Enterprise (miesięcznych w chmurze), program Visual Studio Professional (miesięcznych w chmurze), NFR<sup>1</sup> |        Wszystkie        | Niedostępne |     Nie     |
-|                                     Visual Studio Dev Essentials                                      |        Brak        | Niedostępne |     Nie     |
-|                                                                                                       |                   |               |            |
+
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży Microsoft ekwiwalentu pełnego wymiaru czasu, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 

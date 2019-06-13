@@ -1,5 +1,5 @@
 ---
-title: Debuger systemu windows | Dokumentacja firmy Microsoft
+title: Sprawdzanie danych przy użyciu debugera systemu windows | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de19d073a3002c777c0458a99381ee943d297944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e14f1864452edd00237164e14af74330e3c209f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852504"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033005"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>Dowiedz się więcej o debuger Windows w programie Visual Studio
+# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Sprawdzanie danych przy użyciu okien debugera programu Visual Studio
 
 Podczas debugowania programu, można otworzyć większość okien debugera. Aby wyświetlić listę okien debugera, ustaw punkt przerwania, a następnie rozpocząć debugowanie. Po osiągnięciu punktu przerwania i wykonywanie zatrzymuje kliknij **Debuguj > Windows**.
 
