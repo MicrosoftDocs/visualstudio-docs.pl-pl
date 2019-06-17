@@ -7,40 +7,42 @@ ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: a4a4f2f4fd4ce6cd88d11979a21e4e9184adfca8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c692cf8907fcd232b7ba442cea351664bc8dd407
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988483"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043598"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>Instrukcje: Ustawianie wielu projektów startowych
+# <a name="set-multiple-startup-projects"></a>Ustawianie wielu projektów startowych
 
-Program Visual Studio for Mac umożliwia określenie sposobu więcej niż jeden projekt jest uruchomiona podczas debugowania i uruchamiania rozwiązania.
+Program Visual Studio for Mac pozwala określić, że więcej niż jednego projektu powinna być uruchamiana podczas debugowania i uruchamiania rozwiązania.
 
 ## <a name="to-set-multiple-startup-projects"></a>Aby ustawić wiele projektów startowych
 
-1. W **konsoli rozwiązania**, wybierz rozwiązanie (najwyższy węzeł).
+1. W konsoli rozwiązania należy wybrać rozwiązanie (najwyższy węzeł).
 
-2. Wybierz menu kontekstowe (kliknij prawym przyciskiem myszy) węzła rozwiązania, a następnie wybierz **Ustaw projekty startowe...** .
+2. Kliknij prawym przyciskiem myszy węzeł rozwiązania, a następnie wybierz pozycję **Ustaw projekty startowe**:
 
-   ![Menu kontekstowe projektów uruchamiania zestawu](media/startup-proj-ctx-menu.png)
+   ![Wybrany zestaw projektów startowych](media/startup-proj-ctx-menu.png)
 
-3. **Tworzenie konfiguracji uruchomienia rozwiązania** zostanie wyświetlone okno dialogowe. To okno dialogowe utworzy nową nazwanego rozwiązania Uruchom konfigurację dla Twojego rozwiązania. Można nadać dowolną nazwę możesz na przykład, domyślna nazwa to `Multiple Projects`.
+3. **Tworzenie konfiguracji uruchomienia rozwiązania** zostanie otwarte okno dialogowe. To okno dialogowe umożliwia tworzenie nowych nazwane Uruchom Konfiguracja rozwiązania dla Twojego rozwiązania. Można użyć dowolnej nazwy, którą chcesz. Nazwa domyślna to `Multiple Projects`.
 
-   ![Tworzenie okna dialogowego konfiguracji uruchamiania rozwiązania](media/create-sln-run-config.png)
+   ![Tworzenie konfiguracji uruchomienia rozwiązania, okno dialogowe](media/create-sln-run-config.png)
 
-4. Kliknij przycisk **Tworzenie konfiguracji przebiegu**. **Opcje rozwiązania** zostanie otwarte okno dialogowe z nowego rozwiązania uruchomienia wybranej konfiguracji.
+4. Wybierz **Tworzenie konfiguracji przebiegu**. **Opcje rozwiązania** zostanie otwarte okno dialogowe z nowego rozwiązania uruchomienia wybranej konfiguracji:
 
    ![Okno dialogowe Opcje rozwiązania](media/sln-options-run-config-multi-projects.png)
 
-5. Wybierz projekty, które ma być uruchamiany podczas debugowania i uruchamiania aplikacji w programie Visual Studio dla komputerów Mac.
+5. Wybierz projekty, które ma być uruchamiany podczas debugowania i uruchamiania aplikacji w programie Visual Studio dla komputerów Mac:
 
-   ![Okno dialogowe Opcje rozwiązania przy użyciu skonfigurowanego konfiguracji uruchamiania](media/sln-options-run-config-multi-projects-configured.png)
+   ![Okno dialogowe Opcje rozwiązania z wybranych projektów](media/sln-options-run-config-multi-projects-configured.png)
 
-6. Kliknij przycisk **OK**. Okno dialogowe zostanie odrzucony, a nowa konfiguracja rozwiązania uruchamiania jest ustawiony jako aktywnej konfiguracji przebiegu.
+6. Kliknij przycisk **OK**. Nowa konfiguracja rozwiązania uruchamiania jest ustawiony jako aktywnej konfiguracji przebiegu:
 
-   ![Rozwiązanie z wieloma projektami skonfigurowany do debugowania uruchamiane lub](media/startup-project-configured.png) widać, że dwa projekty są skonfigurowane do uruchamiania, ponieważ oba projekty znajdują się w **bold** w **konsoli rozwiązania**. Na pasku narzędzi nowej konfiguracji uruchomieniowej jest skonfigurowany jako bieżącą konfigurację uruchamiania rozwiązania.
+   ![Rozwiązanie z wieloma projektami skonfigurowany tak, aby uruchomić debugowania lub nie działa](media/startup-project-configured.png)
+
+   Widać, że dwa projekty są skonfigurowane do uruchamiania, ponieważ oba projekty są **bold** w konsoli rozwiązania. Na pasku narzędzi nowej konfiguracji uruchomieniowej jest ustawiona jako bieżąca konfiguracja Uruchom rozwiązanie.
 
 ## <a name="next-steps"></a>Następne kroki
 

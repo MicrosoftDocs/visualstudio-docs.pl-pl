@@ -4,22 +4,22 @@ description: Przegląd Nawigacja, analizy kodu jednostki testowania i inne funkc
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.date: 03/26/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f623fd040bdd06b4d9de7c2258c6e907e2953edf
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973368"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043423"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Przewodnik dotyczący programu Visual Studio zwiększa produktywność C# deweloperów
 
-Dowiedz się, jak Visual Studio zwiększa wydajność deweloperów niż kiedykolwiek wcześniej. Skorzystaj z zalet naszej wydajność i produktywność ulepszenia, takie jak nawigacja do dekompilowanych zestawów, nazwa zmiennej sugestie, podczas wpisywania widok hierarchii w **Eksplorator testów**, przejdź do wszystkich (**Ctrl** + **T**) przejdź do pliku/typu/elementu członkowskiego/symbolu deklaracji, inteligentnej **pomocnika wyjątków**, styl konfiguracji i wymuszania i wiele operacji refaktoryzacji kodu oraz poprawki kodu.
+Dowiedz się, jak Visual Studio zwiększa wydajność deweloperów niż kiedykolwiek wcześniej. Skorzystaj z zalet naszej wydajność i produktywność ulepszenia, takie jak nawigacja do dekompilowanych zestawów, nazwa zmiennej sugestie, podczas wpisywania widok hierarchii w **Eksplorator testów**, przejdź do wszystkich (**Ctrl** + **T**) przejdź do pliku/typu/elementu członkowskiego/symbolu deklaracji, inteligentnej **pomocnika wyjątków**, konfiguracja stylu kodu i wymuszania i wiele operacji refaktoryzacji i kodu poprawki.
 
 ## <a name="im-used-to-keyboard-shortcuts-from-a-different-editor"></a>Z przyzwyczajenia używam skróty klawiaturowe od innego edytora
 
@@ -29,7 +29,7 @@ Dowiedz się, jak Visual Studio zwiększa wydajność deweloperów niż kiedykol
 
 ::: moniker-end
 
-Jeśli podchodzisz z innego środowiska IDE lub środowisko programistyczne, należy zmienić schemat klawiatury do *programu Visual Studio Code* lub *ReSharper (Visual Studio)*:
+Jeśli podchodzisz z innego środowiska IDE lub środowisko programistyczne, należy zmienić schemat klawiatury do *programu Visual Studio Code* lub *ReSharper (Visual Studio)* :
 
 ![Schematy klawiatury programu Visual Studio](../ide/media/VS2017Guide-Keyboard.png)
 
@@ -47,34 +47,34 @@ Dostępne są następujące popularne skróty programu Visual Studio:
 | **F12** (również **Ctrl**+**kliknij**) | Przejdź do definicji | Przejdź do której jest zdefiniowany symbol |
 | **Ctrl**+**F12** | Przejdź do implementacji | Przechodzenie z typem bazowym lub elementu członkowskiego do jej różnych implementacji |
 | **SHIFT**+**F12** | Znajdź wszystkie odwołania | Zobacz wszystkie symboli lub literału odwołania |
-| **Ctrl**+**.** (również **Alt**+**wprowadź** w profilu C#) | Szybkie akcje i operacje refaktoryzacji | Zobacz, jaki kod poprawki, akcje generowania kodu, refaktoryzacji lub innych szybkie akcje są dostępne na wybór pozycji lub kod kursora |
+| **Ctrl**+ **.** (również **Alt**+**wprowadź** w profilu C#) | Szybkie akcje i operacje refaktoryzacji | Zobacz, jaki kod poprawki, akcje generowania kodu, refaktoryzacji lub innych szybkie akcje są dostępne na wybór pozycji lub kod kursora |
 | **Ctrl**+**D** | Duplikuj wiersz | Duplikuje wiersz kodu, w którym znajduje się kursor (dostępne w **programu Visual Studio 2017 w wersji 15.6** i nowsze) |
-| **Shift**+**Alt**+**+**/**-** | Rozwijania/zwijania zaznaczenia | Zwiększa lub zmniejsza bieżące zaznaczenie w edytorze (dostępne w **programu Visual Studio 2017 w wersji 15.5** i nowsze) |
-| **SHIFT** + **Alt** + **.** | Wstaw dalej pasującego karetki | Dodaje zaznaczenia i karetki w następnej lokalizacji, która pasuje do bieżącego zaznaczenia (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
+| **Shift**+**Alt**+ **+** / **-** | Rozwijania/zwijania zaznaczenia | Zwiększa lub zmniejsza bieżące zaznaczenie w edytorze (dostępne w **programu Visual Studio 2017 w wersji 15.5** i nowsze) |
+| **SHIFT** + **Alt** +  **.** | Wstaw dalej pasującego karetki | Dodaje zaznaczenia i karetki w następnej lokalizacji, która pasuje do bieżącego zaznaczenia (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
 | **CTRL**+**funkcji pytania i odpowiedzi** | Wyszukaj | Wyszukaj wszystkie ustawienia programu Visual Studio |
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |
 | **Ctrl**+**F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |
-| **CTRL**+**K**,**D** (profil domyślny) lub **Ctrl**+**E**,**D**  (Profilu w języku C#) | [Formatuj dokument](code-styles-and-quick-actions.md#format-document-command) | Czyści formatowanie naruszeń w pliku na podstawie nowego wiersza, odstępy i ustawienia wcięć |
-| **CTRL**+**\\**,**Ctrl**+**E** (profil domyślny) lub **Ctrl** + **W**,**E** (profilu w języku C#) | Wyświetl listę błędów | Zobacz wszystkie błędy w dokumencie, projekt lub rozwiązanie |
+| **CTRL**+**K**,**D** (profil domyślny) lub **Ctrl**+**E**,**D**  (Profilu w języku C#) | Formatuj dokument | Czyści formatowanie naruszeń w pliku na podstawie nowego wiersza, odstępy i ustawienia wcięć |
+| **CTRL**+ **\\** ,**Ctrl**+**E** (profil domyślny) lub **Ctrl** + **W**,**E** (profilu w języku C#) | Wyświetl listę błędów | Zobacz wszystkie błędy w dokumencie, projekt lub rozwiązanie |
 | **Alt** + **PgUp/PgDn** | Przejdź do następnego/poprzedniego wydania | Przejdź do poprzedniego/dalej błąd, ostrzeżenie, sugestii w dokumencie (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
 
 > [!NOTE]
 > Niektóre rozszerzenia unbind powiązania klawiszy programu Visual Studio domyślną. Aby użyć poleceń powyżej, Przywróć usługi powiązania klawiszy programu Visual Studio domyślne, przechodząc do **narzędzia** > **Import i eksport ustawień** > **Resetuj wszystkie ustawienia**  lub **narzędzia** > **opcje** > **klawiatury** > **resetowania**.
 
-Aby uzyskać więcej informacji na temat poleceń i skrótów klawiaturowych, zobacz [skróty klawiaturowe](../ide/tips-and-tricks-for-visual-studio.md).
+Aby uzyskać więcej informacji na temat poleceń i skrótów klawiaturowych, zobacz [skróty wydajności](../ide/productivity-shortcuts.md) i [skróty klawiaturowe popularnych](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md).
 
 ## <a name="navigate-quickly-to-files-or-types"></a>Szybko przechodzić do plików lub typów
 
-Program Visual Studio 2017 zawiera funkcję o nazwie **przejdź do wszystkich** (**Ctrl**+**T**). **Przejdź do wszystkich** pozwala na szybkie przejście do pliku, typu, składowej lub deklaracji symbolu.
+Program Visual Studio zawiera funkcję o nazwie **przejdź do wszystkich** (**Ctrl**+**T**). **Przejdź do wszystkich** pozwala na szybkie przejście do pliku, typu, składowej lub deklaracji symbolu.
 
 - Zmień lokalizację tego paska wyszukiwania lub wyłącz podgląd na żywo nawigacji za pomocą **koło zębate** ikony.
 - Filtrowanie wyników, takich jak przy użyciu składni `t mytype`.
 - Ograniczyć wyszukiwanie do bieżącego dokumentu.
-- Dopasowywanie Camelcase jest obsługiwane.
+- Pisane dopasowania wielkości liter jest obsługiwane.
 
 ![Przejdź do wszystkich w programie Visual Studio](../ide/media/VS2017Guide-go-to-all.png)
 
-## <a name="enforce-code-style-rules-on-a-codebase"></a>Wymuszanie reguł stylu kodu na bazie kodu
+## <a name="enforce-code-style-rules"></a>Wymuszanie reguł stylu kodu
 
 Możesz użyć *.editorconfig* plik skodyfikować Konwencji kodowania i ich podróży z źródła.
 
@@ -92,7 +92,7 @@ Możesz użyć *.editorconfig* plik skodyfikować Konwencji kodowania i ich podr
 
 ::: moniker-end
 
-- Wypróbuj [rozszerzenia IntelliCode dla programu Visual Studio](/visualstudio/intellicode/intellicode-visual-studio). To rozszerzenie eksperymentalne wnioskuje style kodu z istniejącego kodu, a następnie tworzy niepusty *.editorconfig* plików za pomocą preferencji stylu kodu już zdefiniowane.
+- Wypróbuj [rozszerzenia IntelliCode dla programu Visual Studio](/visualstudio/intellicode/intellicode-visual-studio). Rozszerzenie IntelliCode wnioskuje style kodu z istniejącego kodu, a następnie tworzy niepusty *.editorconfig* plików za pomocą preferencji stylu kodu już zdefiniowane.
 
 - Zapoznaj się z [opcjami Konwencji kodowania .NET](editorconfig-code-style-settings-reference.md) dokumentacji.
 
@@ -100,9 +100,21 @@ Możesz użyć *.editorconfig* plik skodyfikować Konwencji kodowania i ich podr
 
 ![Wymuszanie stylu kodu w programie Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
+::: moniker range="vs-2019"
+
+## <a name="code-cleanup"></a>Oczyszczanie kodu
+
+Program Visual Studio oferuje na żądanie formatowania pliku kodu, w tym preferencji stylu kodu, w ramach **oczyszczania kodu** funkcji. Aby uruchomić kod czyszczenia, kliknij ikonę miotła w dolnej części edytora lub naciśnij klawisz **Ctrl**+**K**, **Ctrl**+**E**.
+
+![Przycisk Wyczyść kod w Visual Studio 2019 r.](media/execute-code-cleanup.png)
+
+Oprócz formatowania pliku dla miejsca do magazynowania, wcięcia, masę, **oczyszczania kodu** dotyczy także style zaznaczonego kodu. Preferencje dotyczące każdego stylu kodu są odczytywane z [pliku EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), jeśli nie masz projektu lub z [ustawienia stylu kodu](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) w **opcje** okno dialogowe.
+
+::: moniker-end
+
 ## <a name="refactorings-and-code-fixes"></a>Poprawki refaktoryzacji i kodu
 
-Program Visual Studio jest dostarczany z dużą liczbą operacji refaktoryzacji, akcji generowania kodu i poprawek kodu. Czerwone faliste linie reprezentującego błędy, zielone symbole reprezentują ostrzeżenia i trzy kropki znajdujące się szare reprezentują sugestie kodu. Poprawki kodu dostępu, można przez kliknięcie żarówki lub ikonę śrubokręt lub naciskając **Ctrl**+**.** lub **Alt**+**wprowadź**. Każda poprawka jest powiązana z okno podglądu, który pokazuje różnice kodu na żywo, sposobu działania poprawki.
+Program Visual Studio jest dostarczany z wiele operacji refaktoryzacji, akcji generowania kodu i poprawek kodu. Czerwone faliste linie reprezentującego błędy, zielone symbole reprezentują ostrzeżenia i trzy kropki znajdujące się szare reprezentują sugestie kodu. Poprawki kodu dostępu, można przez kliknięcie żarówki lub ikonę śrubokręt lub naciskając **Ctrl**+ **.** lub **Alt**+**wprowadź**. Każda poprawka jest powiązana z okno podglądu, który pokazuje różnice kodu na żywo, sposobu działania poprawki.
 
 Popularne szybkich poprawek i operacje refaktoryzacji obejmują:
 
@@ -147,7 +159,7 @@ Program Visual Studio oferuje wiele funkcji, aby pomóc wyszukiwanie i [Nawiguj 
 
 ## <a name="improved-intellisense"></a>Ulepszona funkcja IntelliSense
 
-Pobierz [rozszerzenia IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) można pobrać [uzupełnianie kodu oparte na kontekście](/visualstudio/intellicode/intellicode-visual-studio) zamiast po prostu uzyskać alfabetyczną listę. Możesz również uczyć [modelu niestandardowego IntelliSense](/visualstudio/intellicode/custom-model-faq) oparte na bibliotekach specyficznego dla domeny.
+Pobierz [IntelliCode dla programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) można pobrać [uzupełnianie kodu oparte na kontekście](/visualstudio/intellicode/intellicode-visual-studio) zamiast po prostu uzyskać alfabetyczną listę. Możesz również uczyć [modelu niestandardowego IntelliSense](/visualstudio/intellicode/custom-model-faq) oparte na bibliotekach specyficznego dla domeny.
 
 ## <a name="unit-testing"></a>Testowanie jednostek
 
@@ -169,7 +181,7 @@ Oto niektóre z możliwości debugowania programu Visual Studio:
 
 - Możliwość wyszukiwania ciągu w ramach **Obejrzyj**, **Autos**, i **lokalne** systemu windows.
 - *Uruchom do kliknięcia*, pozwalającej umieść obok wiersza kodu, osiągnięty zieloną ikonę "play", który pojawia się i uruchomić program, aż do osiągnięcia tego wiersza.
-- **Pomocnika wyjątków**, która umieszcza na najwyższym poziomie w oknie dialogowym, na przykład zmienna, która jest najważniejsze informacje `null` w `NullReferenceException`.
+- **Pomocnika wyjątków**, która umieszcza najważniejsze informacje na najwyższym poziomie w oknie dialogowym, na przykład zmienna, która jest `null` w `NullReferenceException`.
 - [Krok ponownie debugowanie](../debugger/view-historical-application-state.md), który umożliwia wrócić do poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, tak jak w przeszłości.
 - [Debugowanie migawki](/azure/application-insights/app-insights-snapshot-debugger), który umożliwia badanie stanu aplikacji internetowej na żywo w tej chwili Wystąpił wyjątek (musi być na platformie Azure).
 
@@ -178,7 +190,7 @@ Oto niektóre z możliwości debugowania programu Visual Studio:
 ::: moniker range="vs-2017"
 
 - *Uruchom do kliknięcia*, pozwalającej umieść obok wiersza kodu, osiągnięty zieloną ikonę "play", który pojawia się i uruchomić program, aż do osiągnięcia tego wiersza.
-- **Pomocnika wyjątków**, która umieszcza na najwyższym poziomie w oknie dialogowym, na przykład zmienna, która jest najważniejsze informacje `null` w `NullReferenceException`.
+- **Pomocnika wyjątków**, która umieszcza najważniejsze informacje na najwyższym poziomie w oknie dialogowym, na przykład zmienna, która jest `null` w `NullReferenceException`.
 - [Krok ponownie debugowanie](../debugger/view-historical-application-state.md), który umożliwia wrócić do poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, tak jak w przeszłości.
 - [Debugowanie migawki](/azure/application-insights/app-insights-snapshot-debugger), który umożliwia badanie stanu aplikacji internetowej na żywo w tej chwili Wystąpił wyjątek (musi być na platformie Azure).
 
@@ -209,9 +221,9 @@ Poniżej przedstawiono listę funkcji edytora i produktywności, aby wprowadzić
 | Funkcja | Szczegóły | Jak włączyć |
 |-|-|-|
 | Zlokalizuj plik w Eksploratorze rozwiązań | Wyróżnia aktywnego pliku w **Eksploratora rozwiązań** | **Narzędzia** > **opcje** > **projekty i rozwiązania** > **Śledź aktywny element w Eksploratorze rozwiązań** |
-| Dodaj dyrektywy Using dla typów odwołań do zestawów i pakietów NuGet | Pokazuje błąd ikona żarówki z poprawki kodu, aby zainstalować pakiet NuGet dla typu bez odwołań | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Sugeruj dyrektywy Using dla typów w zestawach referencyjnych** i **Sugeruj dyrektywy Using dla typów w pakietach NuGet** |
-| Włączanie pełnej analizy rozwiązania | Zobacz wszystkie błędy w rozwiązaniu w **lista błędów** | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Włączanie pełnej analizy rozwiązania** |
-| Włącz nawigację do dekompilowanych źródeł | Zezwalaj na przechodzenie do definicji na typy/członków ze źródeł zewnętrznych i użyj decompiler użyciu narzędzia do dekompilacji do wyświetlenia treści metod | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Włącz nawigację do dekompilowanych źródeł** |
+| Dodaj dyrektywy Using dla typów odwołań do zestawów i pakietów NuGet | Pokazuje błąd ikona żarówki z poprawki kodu, aby zainstalować pakiet NuGet dla typu bez odwołań | **Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **zaawansowane**   >  **Sugeruj dyrektywy Using dla typów w zestawach referencyjnych** i **Sugeruj dyrektywy Using dla typów w pakietach NuGet** |
+| Włączanie pełnej analizy rozwiązania | Zobacz wszystkie błędy w rozwiązaniu w **lista błędów** | **Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **zaawansowane**   >  **Włączanie pełnej analizy rozwiązania** |
+| Włącz nawigację do dekompilowanych źródeł | Zezwalaj na przechodzenie do definicji na typy/członków ze źródeł zewnętrznych i użyj decompiler użyciu narzędzia do dekompilacji do wyświetlenia treści metod | **Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **zaawansowane**   >  **Włącz nawigację do dekompilowanych źródeł** |
 | Tryb uzupełniania/sugestii | Zmienia zachowanie uzupełnianie przez funkcję IntelliSense. Deweloperom tła IntelliJ zwykle użyć innych niż domyślne ustawień w tym miejscu. | **Menu** > **Edytuj** > **IntelliSense** > **Przełącz tryb uzupełniania** |
 | [Funkcja CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Wyświetla kod informacje i zmieniać historię w edytorze. (Formant CodeLens źródła wskaźniki nie są dostępne w programie Visual Studio Community edition.) | **Narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >   **Funkcja CodeLens** |
 | [Fragmenty kodu](../ide/visual-csharp-code-snippets.md) | Pomoc namiastki wspólnej standardowy kod | Wpisz nazwy fragmentu kodu i naciśnij klawisz **kartę** dwa razy. |

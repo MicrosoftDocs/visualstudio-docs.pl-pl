@@ -109,7 +109,7 @@
             - name: Omówienie
               displayName: Tutorial 1 Picture viewer
               href: ../ide/tutorial-1-create-a-picture-viewer.md
-            - name: Krok 1. Utwórz projekt aplikacji Windows Forms
+            - name: Krok 1. Tworzenie projektu aplikacji Windows Forms
               href: ../ide/step-1-create-a-windows-forms-application-project.md
             - name: Krok 2. Uruchamianie programu
               href: ../ide/step-2-run-your-program.md
@@ -257,7 +257,7 @@
               href: how-to-export-a-texture-that-contains-mipmaps.md
             - name: Eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa
               href: how-to-export-a-texture-that-has-premultiplied-alpha.md
-            - name: Eksportowanie tekstury do użycia z Direct2D lub JavaScript aplikacji
+            - name: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
               href: how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
     - name: Biblioteka obrazów programu Visual Studio
       href: the-visual-studio-image-library.md

@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: cdef82a8601cb2c9b0b4d3e4cad4071241f239a8
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820923"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043375"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
-Aby uzyskać więcej informacji na temat klawiatura — ułatwienia dostępu, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md) i [jak: Używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Możesz uzyskać dostęp szereg [polecenia](reference/visual-studio-commands.md) i systemu windows w programie Visual Studio, wybierając odpowiednie skróty klawiaturowe. Ta strona zawiera listę domyślnych skrótów poleceń dla **ogólne** profil, który być może wybrano podczas instalowania programu Visual Studio. Niezależnie od wybranego profilu, możesz [identyfikowanie skrótu](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) dla polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **Klawiatury**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
 
-Można uzyskać dostęp do różnych poleceń i okien w programie Visual Studio, wybierając odpowiednie skróty klawiaturowe. Ta strona zawiera listę domyślnych skrótów dla **ogólne** profil, który być może wybrano podczas instalowania programu Visual Studio. Niezależnie od wybranego profilu, możesz zidentyfikować skrót dla polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **klawiatury**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
+Aby uzyskać listę typowych skrótów klawiaturowych i innych informacji o wydajności Zobacz:
 
-Aby uzyskać listę typowych skrótów klawiaturowych i innych informacji o wydajności, zobacz [domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klawiatury porady](../ide/tips-and-tricks-for-visual-studio.md), i [ Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md).
+- [Skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Wskazówki dotyczące klawiatury](../ide/productivity-shortcuts.md)
+- [Wskazówki dotyczące produktywności](../ide/productivity-features.md).
+
+Aby uzyskać więcej informacji na temat ułatwień dostępu w programie Visual Studio, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md) i [jak: Używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -1150,5 +1154,4 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons)
-- [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
+- [Polecenia programu Visual Studio](reference/visual-studio-commands.md)

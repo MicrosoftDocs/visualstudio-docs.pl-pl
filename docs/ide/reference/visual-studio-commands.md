@@ -12,20 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789373"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043585"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio — Polecenia
 
-Polecenia programu Visual Studio umożliwiają wywołanie polecenia za pomocą **polecenia** oknie **bezpośrednie** oknie lub **Find/Command** pole. W każdym przypadku znak większości (`>`) jest używany do wskazania, że polecenia zamiast operacji wyszukiwania lub debugowania jest wykonanie czynności opisanych.
+Możesz użyć poleceń programu Visual Studio w **polecenia** oknie **bezpośrednie** oknie lub **Find/Command** pole. W każdym przypadku znak większości (`>`) wskazuje, czy użyć polecenia zamiast operacji wyszukiwania lub debugowania jest zgodny.
 
-Można znaleźć pełną listę polecen i ich składnię w **Keyboard, Environment Options** okno dialogowe.
+Pełną listę polecen i ich składnię można znaleźć na **klawiatury** strony w **narzędzia** > **opcje**  >   **Środowisko**.
 
-Znak ucieczki dla poleceń programu Visual Studio jest znak daszka (^), co oznacza, że znak następujący bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Może to służyć do osadzania prostych znaków cudzysłowu ("), spacji, ukośników wiodących, daszków lub innych znaków literałowych w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład
+W zlokalizowanych wersjach środowiska IDE można wprowadzać nazwy poleceń w języku macierzystym środowiska IDE lub w języku angielskim. Na przykład można wpisać albo `File.NewFile` lub `Fichier.NouveauFichier` w środowisku IDE francuskim, aby wykonać to samo polecenie.
+
+Wiele poleceń ma aliasy. Aby uzyskać listę aliasów poleceń, zobacz [polecenia aliasy](../../ide/reference/visual-studio-command-aliases.md). Aby polecenie skrótów klawiaturowych, zobacz [domyślne skróty klawiaturowe w programie Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="escape-character"></a>Znak ucieczki
+
+Znak ucieczki dla poleceń programu Visual Studio są daszka (^). Znak ucieczki oznacza, że znak natychmiast po jego jest interpretowany dosłownie, a nie jako znak kontrolny. Może to służyć do osadzania prostych znaków cudzysłowu ("), spacji, ukośników wiodących, daszków lub innych znaków literałowych w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład:
 
 ```
 >Edit.Find ^^t /regex
@@ -33,11 +39,9 @@ Znak ucieczki dla poleceń programu Visual Studio jest znak daszka (^), co oznac
 
 Daszek działa tak samo, czy wewnątrz lub poza znaki cudzysłowu. Jeśli znak daszka jest ostatnim znakiem w wierszu, jest on ignorowany.
 
-W zlokalizowanych wersjach środowiska IDE można wprowadzać nazwy poleceń w języku macierzystym środowiska IDE lub w języku angielskim. Na przykład można wpisać albo `File.NewFile` lub `Fichier.NouveauFichier` w środowisku IDE francuskim, aby wykonać to samo polecenie.
+## <a name="commands-with-arguments"></a>Polecenia z argumentami
 
-Wiele poleceń ma aliasy. Aby uzyskać listę aliasów poleceń, zobacz [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md).
-
-Poniższe polecenia mogą mieć, argumenty i/lub przełączników.
+Następujące polecenia wykonaj argumentów lub przełączników:
 
 | Nazwa polecenia | Opis |
 | - | - |
@@ -74,8 +78,8 @@ Poniższe polecenia mogą mieć, argumenty i/lub przełączników.
 | [Przełącz punkt przerwania](../../ide/reference/toggle-breakpoint-command.md) | Włącza punkt przerwania lub wyłączyć, w zależności od bieżącego stanu w bieżącej lokalizacji w pliku. |
 | [Czujka, polecenie](../../ide/reference/watch-command.md) | Tworzy i otwiera określone wystąpienie **Obejrzyj** okna. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Znajdź/Command — pole](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

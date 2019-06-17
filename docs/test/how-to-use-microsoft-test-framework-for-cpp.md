@@ -1,18 +1,18 @@
 ---
 title: Używanie struktury testów jednostkowych Microsoft dla języka C++
-ms.date: 05/20/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934489"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132130"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Użyj testów jednostkowych Microsoft Framework dla języka C++ w programie Visual Studio
 
@@ -28,9 +28,9 @@ W niektórych przypadkach, na przykład podczas testowania — eksportowane funk
 
 1. Zmodyfikuj właściwości projektu, aby uwzględnić pliki nagłówkowe i bibliotek, które są wymagane dla testów jednostkowych.
 
-   1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu dla programu, które testujesz, a następnie wybierz **właściwości** > **właściwości konfiguracji**  >  **Katalogi VC ++**.
+   1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu dla programu, które testujesz, a następnie wybierz **właściwości** > **właściwości konfiguracji**  >  **Katalogi VC ++** .
 
-   2. Kliknij strzałkę w dół w następujących wierszach i wybierz polecenie  **\<Edytuj >**. Należy dodać te ścieżki:
+   2. Kliknij strzałkę w dół w następujących wierszach i wybierz polecenie  **\<Edytuj >** . Należy dodać te ścieżki:
 
       | Katalog | Właściwość |
       |-| - |
@@ -39,7 +39,7 @@ W niektórych przypadkach, na przykład podczas testowania — eksportowane funk
 
 2. Dodaj plik testu jednostkowego języka C++:
 
-   - Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy element**  >  **C++ pliku (.cpp)**.
+   - Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy element**  >  **C++ pliku (.cpp)** .
 
 ## <a name="write-the-tests"></a>Pisanie testów
 

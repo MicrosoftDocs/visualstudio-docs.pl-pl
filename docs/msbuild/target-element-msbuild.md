@@ -1,6 +1,6 @@
 ---
 title: Docelowy Element (MSBuild) | Dokumentacja firmy Microsoft
-ms.date: 03/13/2017
+ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e48d28f5270cd43da22d070f30706ce75a1655c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b9910a677f5442e10c62a0623043033edd899c3
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939303"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141177"
 ---
 # <a name="target-element-msbuild"></a>TARGET — element (MSBuild)
 Zawiera zestaw zadań dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonania po kolei.
@@ -85,6 +85,8 @@ Zawiera zestaw zadań dla [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 
 ## <a name="remarks"></a>Uwagi
  Pierwszy element docelowy do wykonania jest określona w czasie wykonywania. Obiekty docelowe mogą mieć zależności na innych celów. Na przykład cel wdrożenia jest zależny od docelowej dla kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Aparat wykonuje zależności w kolejności, w jakiej występują w `DependsOnTargets` atrybutu, od lewej do prawej. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).
+
+ Program MSBuild jest kolejność importu zależnej od i ostatnia definicja obiektu docelowego z określonym `Name` atrybut jest definicja używana.
 
  Obiekt docelowy jest wykonywane tylko raz podczas kompilacji, nawet wtedy, gdy więcej niż jeden element docelowy ma zależność od jej.
 

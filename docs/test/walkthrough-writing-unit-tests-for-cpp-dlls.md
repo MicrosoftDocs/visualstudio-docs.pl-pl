@@ -1,18 +1,18 @@
 ---
 title: 'Instrukcje: Pisanie testów jednostkowych dla bibliotek DLL języka C++'
-ms.date: 05/01/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226274"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132152"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: Pisanie testów jednostkowych dla bibliotek DLL języka C++
 
@@ -152,13 +152,9 @@ Poniższe kroki pokazują jak utworzyć projekt DLL w programie Visual Studio 20
 
 1. Dodaj projekt biblioteki DLL do odwołań projektu dla projektu testowego:
 
-   1. Otwórz właściwości projektu testowego i wybierz polecenie **wspólne właściwości** > **szablon i odwołania**.
+   1. Kliknij prawym przyciskiem myszy węzeł projektu testu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **odwołania**.
 
-        ![Właściwości projektu C++ | Szablon i odwołania](../test/media/utecpp08.png)
-
-   2. Wybierz **Dodaj nowe odwołanie**.
-
-        W **Dodaj odwołanie** okna dialogowego pole, zaznacz projekt DLL i wybierz **Dodaj**.
+   2. W **Dodaj odwołanie** okna dialogowego pole, zaznacz projekt DLL i wybierz **Dodaj**.
 
         ![Właściwości projektu C++ | Dodaj nowe odwołanie](../test/media/utecpp09.png)
 

@@ -399,7 +399,7 @@
                       href: ide/reference/move-type-to-matching-file.md
                     - name: Podciąganie elementów członkowskich
                       href: ide/reference/pull-members-up.md
-                    - name: Wyrażenie regularne uzupełnianie za pomocą funkcji IntelliSense
+                    - name: Uzupełnianie wyrażeń regularnych za pomocą funkcji IntelliSense
                       href: ide/reference/regex-completion-through-intellisense.md
                     - name: Usuwanie nieosiągalnego kodu
                       href: ide/reference/remove-unreachable-code.md
@@ -417,23 +417,6 @@
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Przewodnik: generowanie kodu na podstawie użycia'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: Porady i wskazówki
-              items:
-                - name: Wskazówki dotyczące produktywności
-                  href: ide/productivity-tips-for-visual-studio.md
-                - name: Skróty klawiaturowe
-                  items:
-                    - name: Skróty klawiaturowe
-                      href: ide/tips-and-tricks-for-visual-studio.md
-                    - name: Identyfikowanie i dostosowywanie skrótów klawiaturowych
-                      href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-                    - name: Skróty klawiaturowe dla często używanych poleceń
-                      href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
-                    - name: Wszystkie skróty klawiaturowe
-                      href: ide/default-keyboard-shortcuts-in-visual-studio.md
-                - name: 'Wskazówki dla deweloperów języka C#'
-                  displayName: ReSharper
-                  href: ide/csharp-developer-productivity.md
             - name: IntelliSense
               items:
                 - name: Korzystanie z funkcji IntelliSense
@@ -677,6 +660,20 @@
       href: extensibility/visual-studio-sdk.md
     - name: Analizowanie i modelowanie architektury...
       href: modeling/analyze-and-model-your-architecture.md
+    - name: Porady i wskazówki
+      items:
+        - name: Funkcje produktywności
+          href: ide/productivity-features.md
+        - name: Skróty zwiększające produktywność
+          href: ide/productivity-shortcuts.md
+        - name: 'Wskazówki dla deweloperów języka C#'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: Dostosowywanie skrótów klawiaturowych
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: Używanie wyłącznie klawiatury
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
     - name: Personalizowanie
       items:
         - name: Dostosowywanie środowiska IDE
@@ -685,6 +682,7 @@
         - name: 'Szybki start: Personalizowanie motywu i kolorów tekstu'
           href: ide/quickstart-personalize-the-ide.md
         - name: Ustawienia środowiska
+          displayName: profiles
           href: ide/environment-settings.md
         - name: Zsynchronizowane ustawienia
           href: ide/synchronized-settings-in-visual-studio.md
@@ -704,7 +702,7 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Zarządzanie narzędziami zewnętrznymi
           href: ide/managing-external-tools.md
-    - name: Wydajność
+    - name: Wydajność programu Visual Studio
       items:
         - name: Optymalizacja wydajności
           href: ide/optimize-visual-studio-performance.md
@@ -720,14 +718,95 @@
           href: ide/reference/accessibility-features-of-visual-studio.md
         - name: Ustawianie opcji ułatwień dostępu środowiska IDE
           href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: Używanie wyłącznie klawiatury
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
         - name: Porady i wskazówki związane z ułatwieniami dostępu
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: Tematy pomocy
   items:
+    - name: Skróty klawiaturowe
+      items:
+        - name: Popularne polecenia
+          displayName: keyboard shortcuts
+          href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
+        - name: Wszystkie polecenia
+          displayName: keyboard commands
+          href: ide/default-keyboard-shortcuts-in-visual-studio.md
+    - name: Visual Studio — Polecenia
+      items:
+        - name: Tematy pomocy
+          displayName: Visual Studio commands
+          href: ide/reference/visual-studio-commands.md
+        - name: Aliasy poleceń
+          href: ide/reference/visual-studio-command-aliases.md
+        - name: Dodaj istniejący element — Polecenie
+          href: ide/reference/add-existing-item-command.md
+        - name: Dodaj istniejący projekt — Polecenie
+          href: ide/reference/add-existing-project-command.md
+        - name: Dodaj nowy element — Polecenie
+          href: ide/reference/add-new-item-command.md
+        - name: Alias — Polecenie
+          href: ide/reference/alias-command.md
+        - name: Evaluate Statement — Polecenie
+          href: ide/reference/evaluate-statement-command.md
+        - name: Find — Polecenie
+          href: ide/reference/find-command.md
+        - name: Znajdź w plikach — Polecenie
+          href: ide/reference/find-in-files-command.md
+        - name: Przejdź do — Polecenie
+          href: ide/reference/go-to-command.md
+        - name: Import i eksport ustawień — Polecenie
+          href: ide/reference/import-and-export-settings-command.md
+        - name: Lista stosu wywołań — Polecenie
+          href: ide/reference/list-call-stack-command.md
+        - name: Lista dezasemblacji — Polecenie
+          href: ide/reference/list-disassembly-command.md
+        - name: Lista pamięci — Polecenie
+          href: ide/reference/list-memory-command.md
+        - name: Lista modułów — Polecenie
+          href: ide/reference/list-modules-command.md
+        - name: Lista rejestrów — Polecenie
+          href: ide/reference/list-registers-command.md
+        - name: Lista źródeł — Polecenie
+          href: ide/reference/list-source-command.md
+        - name: Lista wątków — Polecenie
+          href: ide/reference/list-threads-command.md
+        - name: Zapisuj dane wyjściowe okna Polecenie — Polecenie
+          href: ide/reference/log-command-window-output-command.md
+        - name: Nowy plik — Polecenie
+          href: ide/reference/new-file-command.md
+        - name: Otwórz plik — Polecenie
+          href: ide/reference/open-file-command.md
+        - name: Otwórz projekt — Polecenie
+          href: ide/reference/open-project-command.md
+        - name: Print — Polecenie
+          href: ide/reference/print-command.md
+        - name: Szybkie wyrażenie kontrolne — Polecenie
+          href: ide/reference/quick-watch-command.md
+        - name: Zastąp — Polecenie
+          href: ide/reference/replace-command.md
+        - name: Zastąp w plikach — Polecenie
+          href: ide/reference/replace-in-files-command.md
+        - name: Ustaw bieżący proces
+          href: ide/reference/set-current-process.md
+        - name: Ustaw bieżącą ramkę stosu — Polecenie
+          href: ide/reference/set-current-stack-frame-command.md
+        - name: Ustaw bieżący wątek — Polecenie
+          href: ide/reference/set-current-thread-command.md
+        - name: Ustaw Radix — Polecenie
+          href: ide/reference/set-radix-command.md
+        - name: Shell — Polecenie
+          href: ide/reference/shell-command.md
+        - name: ShowWebBrowser — Polecenie
+          href: ide/reference/showwebbrowser-command.md
+        - name: Uruchomienie — Polecenie
+          href: ide/reference/start-command.md
+        - name: Ścieżka symboli — Polecenie
+          href: ide/reference/symbol-path-command.md
+        - name: Przełącz punkt przerwania — Polecenie
+          href: ide/reference/toggle-breakpoint-command.md
+        - name: Wyrażenie kontrolne — Polecenie
+          href: ide/reference/watch-command.md
     - name: Ogólne elementy interfejsu użytkownika
       displayName: Windows and dialogs
       items:
@@ -1012,81 +1091,6 @@
           href: ide/reference/upgrade-devenv-exe.md
         - name: '-UseEnv (devenv.exe)'
           href: ide/reference/useenv-devenv-exe.md
-    - name: Visual Studio — Polecenia
-      items:
-        - name: Tematy pomocy
-          displayName: Visual Studio commands
-          href: ide/reference/visual-studio-commands.md
-        - name: Visual Studio — Aliasy poleceń
-          href: ide/reference/visual-studio-command-aliases.md
-        - name: Dodaj istniejący element — Polecenie
-          href: ide/reference/add-existing-item-command.md
-        - name: Dodaj istniejący projekt — Polecenie
-          href: ide/reference/add-existing-project-command.md
-        - name: Dodaj nowy element — Polecenie
-          href: ide/reference/add-new-item-command.md
-        - name: Alias — Polecenie
-          href: ide/reference/alias-command.md
-        - name: Evaluate Statement — Polecenie
-          href: ide/reference/evaluate-statement-command.md
-        - name: Find — Polecenie
-          href: ide/reference/find-command.md
-        - name: Znajdź w plikach — Polecenie
-          href: ide/reference/find-in-files-command.md
-        - name: Przejdź do — Polecenie
-          href: ide/reference/go-to-command.md
-        - name: Import i eksport ustawień — Polecenie
-          href: ide/reference/import-and-export-settings-command.md
-        - name: Lista stosu wywołań — Polecenie
-          href: ide/reference/list-call-stack-command.md
-        - name: Lista dezasemblacji — Polecenie
-          href: ide/reference/list-disassembly-command.md
-        - name: Lista pamięci — Polecenie
-          href: ide/reference/list-memory-command.md
-        - name: Lista modułów — Polecenie
-          href: ide/reference/list-modules-command.md
-        - name: Lista rejestrów — Polecenie
-          href: ide/reference/list-registers-command.md
-        - name: Lista źródeł — Polecenie
-          href: ide/reference/list-source-command.md
-        - name: Lista wątków — Polecenie
-          href: ide/reference/list-threads-command.md
-        - name: Zapisuj dane wyjściowe okna Polecenie — Polecenie
-          href: ide/reference/log-command-window-output-command.md
-        - name: Nowy plik — Polecenie
-          href: ide/reference/new-file-command.md
-        - name: Otwórz plik — Polecenie
-          href: ide/reference/open-file-command.md
-        - name: Otwórz projekt — Polecenie
-          href: ide/reference/open-project-command.md
-        - name: Print — Polecenie
-          href: ide/reference/print-command.md
-        - name: Szybka czujka — Polecenie
-          href: ide/reference/quick-watch-command.md
-        - name: Zastąp — Polecenie
-          href: ide/reference/replace-command.md
-        - name: Zastąp w plikach — Polecenie
-          href: ide/reference/replace-in-files-command.md
-        - name: Ustaw bieżący proces
-          href: ide/reference/set-current-process.md
-        - name: Ustaw bieżącą ramkę stosu — Polecenie
-          href: ide/reference/set-current-stack-frame-command.md
-        - name: Ustaw bieżący wątek — Polecenie
-          href: ide/reference/set-current-thread-command.md
-        - name: Ustaw Radix — Polecenie
-          href: ide/reference/set-radix-command.md
-        - name: Shell — Polecenie
-          href: ide/reference/shell-command.md
-        - name: ShowWebBrowser — Polecenie
-          href: ide/reference/showwebbrowser-command.md
-        - name: Uruchomienie — Polecenie
-          href: ide/reference/start-command.md
-        - name: Ścieżka symboli — Polecenie
-          href: ide/reference/symbol-path-command.md
-        - name: Przełącz punkt przerwania — Polecenie
-          href: ide/reference/toggle-breakpoint-command.md
-        - name: Czujka — Polecenie
-          href: ide/reference/watch-command.md
     - name: Zabezpieczenia
       items:
         - name: Tworzenie bezpiecznych aplikacji

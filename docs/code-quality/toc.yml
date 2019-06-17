@@ -17,7 +17,7 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Najczęściej zadawane pytania
           href: analyzers-faq.md
-    - name: Analizatory binarny (statycznej analizy kodu)
+    - name: Analizatory danych binarnych (statyczna analiza kodu)
       items:
         - name: Omówienie
           displayName: 'static code analysis, binary analysis'
@@ -28,7 +28,7 @@
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Konfiguracja
           items:
-            - name: Konfigurowanie analizy kodu dla binarnego analizatorów
+            - name: Konfigurowanie analizy kodu dla analizatorów danych binarnych
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
             - name: Włączanie automatycznej analizy kodu
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -111,11 +111,11 @@
           items:
             - name: Omówienie
               href: configure-fxcop-analyzers.md
-            - name: Opcje polecenia EditorConfig
+            - name: Opcje EditorConfig
               href: fxcop-analyzer-options.md
         - name: Najczęściej zadawane pytania
           href: fxcop-analyzers-faq.md
-    - name: Migracja z analizy statycznej do analizatory FxCop analizujące kod
+    - name: Migracja z analizy statycznej do analizatorów FxCop
       items:
         - name: Omówienie
           href: fxcop-analyzers.yml
@@ -137,7 +137,7 @@
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: Zasady zaewidencjonowania
       items:
-        - name: Jak utworzyć lub zaktualizować ewidencjonowanie zasad
+        - name: Jak utworzyć lub zaktualizować zasady ewidencjonowania
           href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
         - name: Implementowanie zasad ewidencjonowania analizy kodu
           href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
@@ -188,11 +188,11 @@
               href: native-recommended-rules-rule-set.md
             - name: Zestaw reguł zabezpieczeń dla zarządzanego kodu
               href: security-rules-rule-set-for-managed-code.md
-        - name: Ostrzeżenia dotyczące zarządzanego kodu
+        - name: Ostrzeżenia dotyczące kodu zarządzanego
           items:
             - name: Omówienie
               href: code-analysis-for-managed-code-warnings.md
-            - name: Ostrzeżenia dzięki CheckId
+            - name: Ostrzeżenia według identyfikatora CheckId
               href: code-analysis-warnings-for-managed-code-by-checkid.md
             - name: Ostrzeżenia dotyczące kryptografii
               items:
@@ -798,14 +798,14 @@
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: Zestawy reguł dla kodu w języku C++
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-    - name: Użycie adnotacji SAL w celu zmniejszenia liczby błędów kodu
+    - name: Korzystanie z adnotacji SAL w celu zmniejszenia liczby błędów kodu
       items:
         - name: Omówienie
           displayName: SAL annotations
           href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
         - name: Zrozumienie SAL
           href: understanding-sal.md
-        - name: Dodawanie adnotacji do parametrów funkcji i zwracane wartości
+        - name: Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
           href: annotating-function-parameters-and-return-values.md
         - name: Dodawanie adnotacji do zachowania funkcji
           href: annotating-function-behavior.md
@@ -813,15 +813,15 @@
           href: annotating-structs-and-classes.md
         - name: Dodawanie adnotacji do zachowania blokującego
           href: annotating-locking-behavior.md
-        - name: 'Określ, kiedy i gdzie warunków stosowania adnotacji'
+        - name: Określanie miejsca i warunków stosowania adnotacji
           href: specifying-when-and-where-an-annotation-applies.md
         - name: Funkcje wewnętrzne
           href: intrinsic-functions.md
         - name: Najlepsze praktyki i przykłady (SAL)
           href: best-practices-and-examples-sal.md
-    - name: Określanie dodatkowych informacji o kodzie za pomocą funkcji __analysis_assume
+    - name: Określanie dodatkowych informacji o kodzie za pomocą funkcji _analysis_assume
       href: how-to-specify-additional-code-information-by-using-analysis-assume.md
-    - name: C++Podstawowe wytyczne ostrzeżenia
+    - name: Ostrzeżenia kontrolerów podstawowych wytycznych dotyczących języka C++
       items:
         - name: Omówienie
           displayName: C++ core guidelines checker warnings
@@ -980,7 +980,7 @@
           href: C26497.md
         - name: C26498
           href: C26498.md
-    - name: C /C++ ostrzeżenia
+    - name: Ostrzeżenia C/C++
       items:
         - name: Omówienie
           displayName: C++ warnings

@@ -1,6 +1,7 @@
 ---
-title: 'Instrukcje: Używanie wyłącznie klawiatury'
-description: Dowiedz się, jak używać kombinacji klawiszy skrótów domyślny ułatwia nawigowanie do kodu w programie Visual Studio zintegrowane środowisko programistyczne (IDE).
+title: Używanie programu Visual Studio bez użycia myszy
+titleSuffix: ''
+description: Dowiedz się, jak nawigować i pisanie kodu w ramach programu Visual Studio zintegrowane środowisko programistyczne (IDE), po prostu przy użyciu klawiatury.
 ms.date: 05/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,18 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1bd20b8ad9e4682cfd5fbe4d93dc55e5dc081d
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 885785c8910bdb0f03643c64eca29415bf2afb17
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820596"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043513"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Instrukcje: Używanie wyłącznie klawiatury
+# <a name="how-to-use-the-keyboard-exclusively"></a>Jak używanie wyłącznie klawiatury
 
-Skróty klawiaturowe ułatwia łatwiejszą nawigacją środowiska IDE programu Visual Studio i kodu. Przyjrzymy się na kilka sposobów, bardziej efektywne wykorzystanie skróty klawiaturowe.
+Skróty klawiaturowe może ułatwić Przejdź środowiska IDE programu Visual Studio oraz pisania kodu. Ten artykuł opisuje kilka sposobów, bardziej efektywne wykorzystanie skróty klawiaturowe.
 
-Aby uzyskać pełną listę skrótów klawiaturowych w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje na skróty klawiaturowe są dostępne dla innych produktów firmy Microsoft, zobacz [ https://www.microsoft.com/accessibility/ ](http://go.microsoft.com/fwlink/?LinkID=40400).
+Aby uzyskać pełną listę poleceń skrótów klawiaturowych w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ::: moniker range="vs-2017"
 
@@ -40,23 +41,19 @@ Aby uzyskać pełną listę skrótów klawiaturowych w programie Visual Studio, 
 
 ## <a name="toolbox-controls"></a>Kontrolki przybornika
 
-Za pomocą klawiatury, można dodać kontrolki w przyborniku do formularza lub projektanta.
-
-### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Aby dodać formanty z przybornika projektanta z klawiatury
+Aby dodać kontrolkę w przyborniku formularz lub Projektant bez użycia myszy:
 
 1. Na pasku menu wybierz **widoku** > **przybornika**.
 
 2. Użyj **Ctrl**+**Strzałka w górę** lub **Ctrl**+**Strzałka w dół** kluczy, aby poruszać się między sekcje  **Przybornik** kartę.
 
-3. Użyj **Strzałka w górę** klucza lub **Strzałka w dół** klawisz, aby poruszać się między kontrolki.
+3. Użyj **Strzałka w górę** klucza lub **Strzałka w dół** klawisz, aby poruszać się między kontrolek w sekcji.
 
 4. Po wybraniu kontrolki, użyj **Enter** klawisz, aby dodać formant do formularza lub projektanta.
 
 ## <a name="dialog-box-options"></a>Opcje okien dialogowych
 
-Możesz poruszać się między opcje w oknie dialogowym i zmienić ustawienia opcji za pomocą klawiatury.
-
-### <a name="set-dialog-box-options-from-the-keyboard"></a>Ustaw opcje w oknach dialogowych z klawiatury
+Aby poruszać się między opcje w oknie dialogowym i zmienić ustawienia opcji za pomocą klawiatury:
 
 1. Użyj **kartę** lub **Shift**+**kartę** można przenieść w górę i w dół za pomocą formantów w oknie dialogowym.
 
@@ -72,17 +69,13 @@ Możesz poruszać się między opcje w oknie dialogowym i zmienić ustawienia op
 
    - Siatki używaj klawiszy strzałek aby przejść. W przypadku list rozwijanych w siatkach, użyj **Shift**+**Alt**+**Strzałka w dół** do wyświetlania elementów, a następnie użyj **Strzałkawgórę** i **Strzałka w dół** klucze, aby zmienić wybrany element.
 
-## <a name="window-and-file-navigation"></a>Okno i plik nawigacji
-
-Istnieje kilka metod, których można użyć klawiatury do przenoszenia między otwarte narzędzia i okna dokumentu. Można również przenosić i dokowanie okien narzędzi w różnych lokalizacjach za pomocą klawiatury.
-
-### <a name="navigate-among-windows-and-files-in-the-ide"></a>Nawigowanie między systemem windows i plików w środowisku IDE
+## <a name="navigate-between-windows-and-files"></a>Przechodzenie między systemem windows i plików
 
 - Aby poruszać się między plikami w edytora lub projektanta, wybierz opcję **Ctrl**+**kartę** skrót klawiaturowy do wyświetlenia Nawigator IDE z **aktywnych plików** wybrane. Wybierz **Enter** klawisz, aby przejść do pliku wyróżnione.
 
 - Aby poruszać się między okien narzędzi zadokowanych, wybierz opcję **Alt**+**F7** skrót klawiaturowy do wyświetlenia Nawigator IDE z **Active narzędzie Windows** wybrane. Wybierz **Enter** klucza, przejdź do wyróżnionego okna.
 
-### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Aby przenieść i dokowanie okien narzędzi z klawiatury
+## <a name="move-and-dock-tool-windows"></a>Przenoszenie i dokowanie okien narzędzi
 
 1. Przejdź do okna narzędzi, który chcesz przenieść, a następnie ustawić fokus.
 
@@ -109,3 +102,4 @@ Istnieje kilka metod, których można użyć klawiatury do przenoszenia między 
 * [Identyfikowanie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
 * [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+* [Ułatwienia dostępu w produktach firmy Microsoft](https://www.microsoft.com/accessibility/)

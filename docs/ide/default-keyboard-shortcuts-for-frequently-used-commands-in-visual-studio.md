@@ -7,19 +7,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96f9f56c2b73b8f3c39635c81019cd01fa8a69a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946939"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043325"
 ---
-# <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio
+# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Popularne skrótów klawiaturowych dla programu Visual Studio
 
 Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do często używanych poleceń w Visual Studio. Aby uzyskać pełną listę poleceń, które mają domyślne skróty, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
+*Global* kontekst oznacza, że skrót jest stosowane w dowolnym oknie Narzędzie w programie Visual Studio.
+
 > [!NOTE]
-> Możesz wyszukać skrót dla dowolnego polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **klawiatury**.
+> Możesz [wyszukać skrót](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) dla dowolnego polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **klawiatury**.
 
 ## <a name="build"></a>Kompilacja
 
@@ -38,7 +40,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |Debug.BreakAll|**Ctrl + Alt + Break** [globalny]|
 |Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9** [globalny]|
 |Debug.Exceptions|**Ctrl + Alt + E** [globalny]|
-|Debug.QuickWatch|**Ctrl + Alt + Q** [globalny]<br /><br /> lub **Shift + F9** [globalny]|
+|Debug.QuickWatch|**Ctrl + Alt + Q** [globalny]<br /><br />lub **Shift + F9** [globalny]|
 |Debug.Restart|**Ctrl + Shift + F5** [globalny]|
 |Debug.RunToCursor|**CTRL + F10** [globalny]|
 |Debug.SetNextStatement|**Ctrl + Shift + F10** [globalny]|
@@ -54,13 +56,13 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 
 |Polecenia|Skróty klawiaturowe [konteksty]|
 |--------------| - |
-|Edit.BreakLine|**Wprowadź** [Edytor tekstu, Projektant raportów, Windows Forms Designer]<br /><br /> lub **Shift + Enter** [Edytor tekstu]|
+|Edit.BreakLine|**Wprowadź** [Edytor tekstu, Projektant raportów, Windows Forms Designer]<br /><br />lub **Shift + Enter** [Edytor tekstu]|
 |Edit.CollapseToDefinitions|**CTRL + M**, **klawisze Ctrl + O** [Edytor tekstu]|
 |Edit.CommentSelection|**CTRL + K**, **klawisze Ctrl + C** [Edytor tekstu]|
-|Edit.CompleteWord|**Alt + Strzałka w prawo** [Edytor tekstu, Workflow Designer]<br /><br /> lub **klawisze Ctrl + spacja** [Edytor tekstu, Workflow Designer]<br /><br /> lub **Ctrl + K**, **W** [Workflow Designer]<br /><br /> lub **Ctrl + K, Ctrl + W** [Workflow Designer]|
-|Edit.Copy|**CTRL + C** [globalny]<br /><br /> lub **Ctrl + Insert** [globalny]|
-|Edit.Cut|**CTRL + X** [globalny]<br /><br /> lub **Shift + Delete** [globalny]|
-|Edit.Delete|**Usuń** [globalny, Team Explorer]<br /><br /> lub **Shift + Delete** [sekwencji, Diagram, Diagram aktywności UML, Diagram warstwy]<br /><br /> lub **klawisze Ctrl + Delete** [Diagram klas]|
+|Edit.CompleteWord|**Alt + Strzałka w prawo** [Edytor tekstu, Workflow Designer]<br /><br />lub **klawisze Ctrl + spacja** [Edytor tekstu, Workflow Designer]<br /><br />lub **Ctrl + K**, **W** [Workflow Designer]<br /><br />lub **Ctrl + K, Ctrl + W** [Workflow Designer]|
+|Edit.Copy|**CTRL + C** [globalny]<br /><br />lub **Ctrl + Insert** [globalny]|
+|Edit.Cut|**CTRL + X** [globalny]<br /><br />lub **Shift + Delete** [globalny]|
+|Edit.Delete|**Usuń** [globalny, Team Explorer]<br /><br />lub **Shift + Delete** [sekwencji, Diagram, Diagram aktywności UML, Diagram warstwy]<br /><br />lub **klawisze Ctrl + Delete** [Diagram klas]|
 |Edit.Find|**CTRL + F** [globalny]|
 |Edit.FindAllReferences|**SHIFT + F12** [globalny]|
 |Edit.FindinFiles|**Ctrl + Shift + F** [globalny]|
@@ -78,14 +80,14 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |Edit.LineCut|**CTRL + L** [Edytor tekstu]|
 |Edit.LineDownExtendColumn|**Shift + Alt + Strzałka w dół strzałkę** [Edytor tekstu]|
 |Edit.LineOpenAbove|**Ctrl + Enter** [Edytor tekstu]|
-|Edit.ListMembers|**CTRL + J** [Edytor tekstu, Workflow Designer]<br /><br /> lub **Ctrl + K, Ctrl + L** [Workflow Designer]<br /><br /> lub **Ctrl + K, L** [Workflow Designer]|
+|Edit.ListMembers|**CTRL + J** [Edytor tekstu, Workflow Designer]<br /><br />lub **Ctrl + K, Ctrl + L** [Workflow Designer]<br /><br />lub **Ctrl + K, L** [Workflow Designer]|
 |Edit.NavigateTo|**CTRL +** [globalny]|
 |Edit.OpenFile|**Ctrl + Shift + G** [globalny]|
 |Edit.OvertypeMode|**Wstaw** [Edytor tekstu]|
-|Edit.ParameterInfo|**Ctrl + Shift + spacja** [Edytor tekstu, Workflow Designer]<br /><br /> lub **Ctrl + K, Ctrl + P** [Workflow Designer]<br /><br /> lub **Ctrl + K, P** [Workflow Designer]|
-|Edit.Paste|**CTRL + V** [globalny]<br /><br /> lub **Shift + Insert** [globalny]|
+|Edit.ParameterInfo|**Ctrl + Shift + spacja** [Edytor tekstu, Workflow Designer]<br /><br />lub **Ctrl + K, Ctrl + P** [Workflow Designer]<br /><br />lub **Ctrl + K, P** [Workflow Designer]|
+|Edit.Paste|**CTRL + V** [globalny]<br /><br />lub **Shift + Insert** [globalny]|
 |Edit.PeekDefinition|**ALT + F12** [Edytor tekstu]|
-|Edit.Redo|**CTRL + Y** [globalny]<br /><br /> lub **Shift + Alt + Backspace** [globalny]<br /><br /> lub **Ctrl + Shift + Z** [globalny]|
+|Edit.Redo|**CTRL + Y** [globalny]<br /><br />lub **Shift + Alt + Backspace** [globalny]<br /><br />lub **Ctrl + Shift + Z** [globalny]|
 |Edit.Replace|**CTRL + H** [globalny]|
 |Edit.SelectAll|**CTRL + A** [globalny]|
 |Edit.SelectCurrentWord|**CTRL + W** [Edytor tekstu]|
@@ -97,7 +99,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |Edit.ToggleCompletionMode|**Ctrl + Alt + spacja** [Edytor tekstu]|
 |Edit.ToggleOutliningExpansion|**CTRL + M, Ctrl + M** [Edytor tekstu]|
 |Edit.UncommentSelection|**CTRL + K, Ctrl + U** [Edytor tekstu]|
-|Edit.Undo|**CTRL + Z** [globalny]<br /><br /> lub **klawisze Alt + Backspace** [globalny]|
+|Edit.Undo|**CTRL + Z** [globalny]<br /><br />lub **klawisze Alt + Backspace** [globalny]|
 |Edit.WordDeleteToEnd|**CTRL + Delete** [Edytor tekstu]|
 |Edit.WordDeleteToStart|**Ctrl + Backspace** [Edytor tekstu]|
 
@@ -142,7 +144,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |--------------| - |
 |View.ClassView|**Ctrl + Shift + C** [globalny]|
 |View.EditLabel|**F2** [globalny]|
-|View.ErrorList|**CTRL +\\, Ctrl + E** [globalny]<br /><br /> lub **Ctrl +\\, E** [globalny]|
+|View.ErrorList|**CTRL +\\, Ctrl + E** [globalny]<br /><br />lub **Ctrl +\\, E** [globalny]|
 |View.NavigateBackward|**CTRL +-** [globalny]|
 |View.NavigateForward|**Ctrl + Shift +-** [globalny]|
 |View.ObjectBrowser|**Ctrl + Alt + J** [globalny]|
@@ -150,11 +152,11 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**Ctrl + Alt + S** [globalny]|
-|View.ShowSmartTag|**Ctrl+.** [Globalny]<br /><br /> lub **Shift + Alt + F10** [globalny, HTML Editor Design View]|
+|View.ShowSmartTag|**Ctrl+.** [Globalny]<br /><br />lub **Shift + Alt + F10** [globalny, HTML Editor Design View]|
 |View.SolutionExplorer|**Ctrl + Alt + L** [globalny]|
 |View.TfsTeamExplorer|**CTRL +\\, Ctrl + M** [globalny]|
 |View.Toolbox|**Ctrl + Alt + X** [globalny]|
-|View.ViewCode|**Wprowadź** [Diagram klas]<br /><br /> lub **F7** [Projektant ustawień]|
+|View.ViewCode|**Wprowadź** [Diagram klas]<br /><br />lub **F7** [Projektant ustawień]|
 |View.ViewDesigner|**SHIFT + F7** [widok źródła edytora HTML]|
 
 ## <a name="window"></a>Okno
@@ -170,3 +172,4 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 ## <a name="see-also"></a>Zobacz także
 
 - [Identyfikowanie i dostosowywanie skrótów klawiaturowych w programie Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Wszystkie skróty klawiaturowe w programie Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

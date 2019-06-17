@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226359"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132194"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL Visual C++
 
@@ -81,7 +81,7 @@ Rozpocznij od utworzenia nowego projektu testu. Na **pliku** menu, wybierz **New
 
 ::: moniker range="vs-2019"
 
-W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **nowy projekt**. W **Dodaj nowy projekt** okno dialogowe, zestaw **języka** do C++ i w polu wyszukiwania wpisz "DLL". Z listy wyników wybierz **aplikacji testów jednostkowych (Windows Universal - C++/CX)**.
+W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **nowy projekt**. W **Dodaj nowy projekt** okno dialogowe, zestaw **języka** do C++ i w polu wyszukiwania wpisz "DLL". Z listy wyników wybierz **aplikacji testów jednostkowych (Windows Universal - C++/CX)** .
 
 ![Utwórz projekt RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -94,7 +94,7 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
 
 ::: moniker-end
 
-1. W **Dodaj nowy projekt** okna dialogowego wybierz **biblioteki DLL (platformy uwp)**.
+1. W **Dodaj nowy projekt** okna dialogowego wybierz **biblioteki DLL (platformy uwp)** .
 
 2. Dodaj następujący kod do *RooterLib.h* pliku:
 
@@ -152,13 +152,9 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
 
 1. Dodaj RooterLib projektu RooterLibTests.
 
-   1. W **Eksploratora rozwiązań**, wybierz **RooterLibTests** projektu, a następnie wybierz **odwołania** w menu skrótów.
+   1. W **Eksploratora rozwiązań**, wybierz **RooterLibTests** projektu, a następnie wybierz **Dodaj** > **odwołania** na skrót menu.
 
-   2. Na **właściwości projektu RooterLib** okna dialogowego rozwiń **wspólne właściwości** i wybierz polecenie **szablon i odwołania**.
-
-   3. Wybierz **Dodaj nowe odwołanie**
-
-   4. W **Dodaj odwołanie** okna dialogowego rozwiń **rozwiązania** , a następnie wybierz **projektów**. Następnie wybierz pozycję **RouterLib** elementu.
+   1. W **Dodaj odwołanie** okna dialogowego wybierz **projektów**. Następnie wybierz pozycję **RouterLib** elementu.
 
 2. Uwzględnić plik nagłówka RooterLib w *unittest1.cpp*.
 

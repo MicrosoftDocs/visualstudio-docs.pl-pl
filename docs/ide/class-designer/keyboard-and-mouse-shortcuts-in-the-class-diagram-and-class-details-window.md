@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37c56a14e5ac4358be53baa41094c23253608bbb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975063"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043040"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Skróty myszy i klawiatury w oknie Diagram klas i szczegóły klasy
 
@@ -103,3 +103,6 @@ Aby przejść za pomocą następujących klawiszy **szczegóły klasy** okna:
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie i konfigurowanie składowych typów](creating-and-configuring-type-members.md)
+- [Jak używanie wyłącznie klawiatury](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Domyślne skróty klawiaturowe w programie Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Skróty klawiaturowe w programie Blend](../../designers/keyboard-shortcuts-in-blend.md)

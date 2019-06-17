@@ -1,6 +1,6 @@
 ---
 title: Elementy docelowe programu MSBuild | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, targets
@@ -10,17 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c927e30475223a00548ea6344ca7a41fbac3c1e2
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004575"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141153"
 ---
 # <a name="msbuild-targets"></a>Obiekty docelowe w programie MSBuild
+
 Obiekty docelowe grupują zadania w określonej kolejności i pozwól, aby być uwzględniona na mniejsze jednostki proces kompilacji. Na przykład jeden element docelowy może usunąć wszystkie pliki w katalogu wyjściowym, aby przygotować się do kompilacji, podczas gdy inny kompiluje dane wejściowe dla projektu i umieszcza je w pusty katalog. Aby uzyskać więcej informacji na temat zadań, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 ## <a name="declare-targets-in-the-project-file"></a>Deklarowanie obiektów docelowych w pliku projektu
+
  Obiekty docelowe są deklarowane w pliku projektu za pomocą [docelowej](../msbuild/target-element-msbuild.md) elementu. Na przykład następujący kod XML tworzy obiekt docelowy o nazwie konstrukcji, która następnie wywołuje CSC — zadanie z typem elementu kompilacji.
 
 ```xml
@@ -42,8 +44,13 @@ Obiekty docelowe grupują zadania w określonej kolejności i pozwól, aby być 
 
  Jeśli AfterBuild wykonuje, wyświetla tylko "drugie wystąpienie".
 
+ Program MSBuild jest kolejność importu zależnych od ustawień lokalnych, a ostatnia definicja obiektu docelowego jest definicja używana.
+
 ## <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
- Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Istnieje kilka sposobów, aby określić kolejność, w które elementy docelowe, uruchom.
+
+ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym.
+ 
+ Istnieje kilka sposobów, aby określić kolejność, w które elementy docelowe, uruchom.
 
 - Cele początkowe
 
@@ -60,6 +67,7 @@ Obiekt docelowy nigdy nie będzie uruchamiany dwa razy podczas pojedynczej kompi
 Aby uzyskać szczegóły i dodatkowe informacje o docelowym kolejność kompilacji, zobacz [kolejność kompilacji docelowej](../msbuild/target-build-order.md).
 
 ## <a name="target-batching"></a>Przetwarzaniu wsadowym obiektów docelowych
+
 Element docelowy może mieć `Outputs` atrybut, który określa metadane w postaci %(\<metadanych >). Jeśli tak, MSBuild uruchamia docelowej jeden raz dla każdej wartości unikatowe metadane, grupowania lub "przetwarzanie wsadowe" elementy, które mają tę wartość metadanych. Na przykład
 
 ```xml
@@ -91,10 +99,12 @@ Reference: 4.0
  Przetwarzaniu wsadowym obiektów docelowych rzadko jest używany w kompilacjach do rzeczywistego. Przetwarzanie wsadowe zadań jest bardziej powszechne. Aby uzyskać więcej informacji, zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).
 
 ## <a name="incremental-builds"></a>Kompilacje przyrostowe
+
  Kompilacje przyrostowe to kompilacje, które są zoptymalizowane pod kątem tak, aby obiekty docelowe z pliki wyjściowe są aktualne w odniesieniu do odpowiadające im pliki wejściowe nie są wykonywane. Element docelowy może mieć jednocześnie `Inputs` i `Outputs` atrybutów, wskazujące elementy docelowego wartością wejściową, a elementy generowane jako dane wyjściowe.
 
  Jeśli wszystkie elementy wyjściowe są aktualne, program MSBuild pomija element docelowy, co znacznie zwiększa szybkość kompilacji. Jest to kompilacja przyrostowa, obiektu docelowego. Jeśli tylko niektóre pliki są aktualne, program MSBuild wykonuje element docelowy bez elementy aktualne. Jest to nazywane częściową kompilacją przyrostową elementu docelowego. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md).
 
 ## <a name="see-also"></a>Zobacz także
+
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [Instrukcje: Użyj tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

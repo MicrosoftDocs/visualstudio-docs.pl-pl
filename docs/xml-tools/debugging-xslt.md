@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67ea95e3c52daed03acfe451f353edc039e1fecb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838483"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043535"
 ---
 # <a name="debugging-xslt"></a>Debugowanie kodu XSLT
 
@@ -25,7 +25,7 @@ Przechodzenie do, pominięcie lub przechodzenie krok po kroku z kodu, można wyk
 Po rozpoczęciu debugowania, debuger XSLT otwiera systemu windows, aby pokazać, że dokument wejściowy i XSLT danych wyjściowych.
 
 > [!NOTE]
-> Debuger XSLT jest dostępna tylko w wersji Enterprise programu Visual Studio.
+> Debuger XSLT jest dostępna tylko w wersjach Professional i Enterprise programu Visual Studio.
 
 ## <a name="debug-from-the-xml-editor"></a>Debuguj z poziomu edytora XML
 

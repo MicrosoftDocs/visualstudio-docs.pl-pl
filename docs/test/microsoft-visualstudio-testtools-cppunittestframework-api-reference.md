@@ -1,18 +1,18 @@
 ---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
-ms.date: 11/04/2017
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820766"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132141"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API reference
 
@@ -25,7 +25,8 @@ W tym temacie wymieniono publiczne elementy członkowskie `Microsoft::VisualStud
 Nagłówek i lib ścieżki są konfigurowane automatycznie w projekcie testowym natywnych.
 
 ## <a name="In_this_topic"></a> W tym temacie
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [Tworzenie klasy testów i metody](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- Dodaje atrybuty zdefiniowane przy użyciu co najmniej jeden `TEST_METHOD_ATTRIBUTE` makra do metody testowej *testClassName*.
+ Dodaje atrybuty zdefiniowane przy użyciu co najmniej jeden `TEST_METHOD_ATTRIBUTE` makra do metody testowej *testMethodName*.
 
  A `TEST_METHOD_ATTRIBUTE` — makro definiuje atrybut o nazwie *attributeName* i wartość *wartość atrybutu attributeValue*.
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  A `TEST_MODULE_ATTRIBUTE` — makro definiuje atrybut o nazwie *attributeName* i wartość *wartość atrybutu attributeValue*.
 
 #### <a name="pre_defined_attributes"></a> Wstępnie zdefiniowanych atrybutów
- Makra mogą zastąpić te makra wstępnie zdefiniowanych atrybutów `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE`, lub `TEST_MODULE_ATTRIBUTE` opisanych powyżej.
+
+ Te makra wstępnie zdefiniowanych atrybutów są dostarczane jako udogodnienie dla typowych przypadków. Można zastąpić makra `TEST_METHOD_ATTRIBUTE` opisanych powyżej.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- Definiuje atrybut o nazwie `Owner` i wartość atrybutu *ownerAlias*.
+ Definiuje `TEST_METHOD_ATTRIBUTE` o nazwie `Owner` i wartość atrybutu *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- Definiuje atrybut o nazwie `Description` i wartość atrybutu *opis*.
+ Definiuje `TEST_METHOD_ATTRIBUTE` o nazwie `Description` i wartość atrybutu *opis*.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- Definiuje atrybut o nazwie `Priority` i wartość atrybutu *priorytet*.
+ Definiuje `TEST_METHOD_ATTRIBUTE` o nazwie `Priority` i wartość atrybutu *priorytet*.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- Definiuje atrybut o nazwie `WorkItem` i wartość atrybutu *workItem*.
+ Definiuje `TEST_METHOD_ATTRIBUTE` o nazwie `WorkItem` i wartość atrybutu *workItem*.
 
 ```cpp
 TEST_IGNORE()
 ```
 
- Definiuje atrybut o nazwie `Ignore` i wartość atrybutu `true`.
+ Definiuje `TEST_METHOD_ATTRIBUTE` o nazwie `Ignore` i wartość atrybutu `true`.
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

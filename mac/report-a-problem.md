@@ -6,12 +6,12 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 04fc7b1f7ac0505d8d4daf8c3a7836dd48cfad14
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501096"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132185"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Jak zgłosić problem w programie Visual Studio dla komputerów Mac
 
@@ -42,9 +42,6 @@ Aby zgłosić problem z programem Visual Studio dla komputerów Mac, wybierz **P
    ![Wyszukiwanie i głosuj na podobne problemy](media/report-problem-image4.png)
 
 1. Jeśli nie znajdziesz problem pojawił się, wybierz opcję **zgłosić nowy Problem** z boku ekranu.
-
-   > [!NOTE]
-   > **Zgłosić nowy Problem** przycisk pojawia się tylko w programie Visual Studio dla komputerów Mac interfejsu dla społeczności deweloperów. Nie można zgłosić problem bezpośrednio na [społeczności deweloperów](https://developercommunity.visualstudio.com/) witryny sieci Web.
 
 1. Utwórz opisowy tytuł problemu, który pomoże nam skierować go poprawne w programie Visual Studio dla komputerów Mac zespołu.
 

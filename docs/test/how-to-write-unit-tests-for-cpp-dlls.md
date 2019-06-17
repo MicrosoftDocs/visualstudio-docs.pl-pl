@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226068"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132165"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Pisanie testów jednostkowych dla bibliotek DLL C++ w programie Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "65226068"
 
   2. Wybierz **właściwości konfiguracji** > **ogólne**.
 
-  3. Ustaw **typu konfiguracji** do **biblioteka statyczna (.lib)**.
+  3. Ustaw **typu konfiguracji** do **biblioteka statyczna (.lib)** .
 
   Przejdź do procedury [połączyć testy z plikami obiektu lub biblioteki](#objectRef).
 
@@ -68,17 +68,15 @@ ms.locfileid: "65226068"
 
       ::: moniker-end
 
-  2. W **Eksploratora rozwiązań**, w menu skrótów projektu testów wybierz **odwołania**. Projekt **właściwości** zostanie otwarte okno.
+  1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy dla projektu testowego, a następnie wybierz **Dodaj** > **odwołania**.
 
-  3. Wybierz **wspólne właściwości** > **szablon i odwołania**, a następnie wybierz **Dodaj nowe odwołanie** przycisku.
-
-  4. Wybierz **projektów**, a następnie projekt ma zostać przetestowana.
+  1. Wybierz **projektów**, a następnie projekt ma zostać przetestowana.
 
        Wybierz **Dodaj** przycisku.
 
-  5. W oknie właściwości dla projektu testów Dodaj lokalizację testowanego projektu Dołącz katalogi.
+  1. W oknie właściwości dla projektu testów Dodaj lokalizację testowanego projektu Dołącz katalogi.
 
-       Wybierz **właściwości konfiguracji** > **katalogi VC ++** > **katalogi plików nagłówkowych**.
+       Wybierz **właściwości konfiguracji** > **katalogi VC ++**  > **katalogi plików nagłówkowych**.
 
        Wybierz **Edytuj**, a następnie Dodaj nagłówek katalogu testowanego projektu.
 
@@ -112,7 +110,7 @@ ms.locfileid: "65226068"
 
        Wybierz **Edytuj**i Dodaj ścieżkę katalogu **.obj** lub **.lib** plików. Ścieżka zazwyczaj mieści się w folderze kompilacji testowanego projektu.
 
-  5. Wybierz **właściwości konfiguracji** > **katalogi VC ++** > **katalogi plików nagłówkowych**.
+  5. Wybierz **właściwości konfiguracji** > **katalogi VC ++**  > **katalogi plików nagłówkowych**.
 
        Wybierz **Edytuj**, a następnie Dodaj nagłówek katalogu testowanego projektu.
 
@@ -124,7 +122,7 @@ ms.locfileid: "65226068"
 
    1. W **Eksploratora rozwiązań**, w menu skrótów testowanego projektu wybierz **właściwości**. Projekt **właściwości** zostanie otwarte okno.
 
-   2. Wybierz **właściwości konfiguracji** > **katalogi VC ++**.
+   2. Wybierz **właściwości konfiguracji** > **katalogi VC ++** .
 
    3. Edytuj katalogi dołączonych i bibliotek:
 
@@ -135,7 +133,7 @@ ms.locfileid: "65226068"
 
 2. Dodaj plik testu jednostkowego języka C++:
 
-   - W **Eksploratora rozwiązań**, w menu skrótów projektu wybierz **Dodaj** > **nowy element** > **testu jednostkowego języka C++**.
+   - W **Eksploratora rozwiązań**, w menu skrótów projektu wybierz **Dodaj** > **nowy element** > **testu jednostkowego języka C++** .
 
    Przejdź do [pisanie testów jednostkowych](#addTests).
 

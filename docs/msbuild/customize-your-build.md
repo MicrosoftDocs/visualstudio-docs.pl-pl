@@ -1,6 +1,6 @@
 ---
 title: Dostosowywanie kompilacji | Dokumentacja firmy Microsoft
-ms.date: 06/14/2017
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778104"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141169"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 
@@ -93,7 +93,7 @@ Załóżmy, że ta struktura standardowe rozwiązanie:
     \Project2Tests
 ```
 
-Może być wskazane zastosowanie właściwości wspólne dla wszystkich projektów *(1)*, typowe właściwości *src* projektów *(2-src)* oraz typowe właściwości  *Testowanie* projektów *(2-test)*.
+Może być wskazane zastosowanie właściwości wspólne dla wszystkich projektów *(1)* , typowe właściwości *src* projektów *(2-src)* oraz typowe właściwości  *Testowanie* projektów *(2-test)* .
 
 Aby poprawnie scalić "wewnętrzny" pliki programu MSBuild (*2 src* i *2 test*) z plikiem "zewnętrzny" (*1*), należy wziąć pod uwagę, o których raz MSBuild znajduje *Directory.Build.props* plik przestanie dalsze skanowanie. Aby kontynuować skanowanie i scalić do zewnętrznego pliku, umieść ten kod w obu plikach wewnętrzny:
 
@@ -107,6 +107,36 @@ Podsumowanie w MSBuild, ogólne podejście jest następująca:
 - Aby kontrolować proces skanowania scalania, należy użyć `$(DirectoryBuildPropsPath)` i `$(ImportDirectoryBuildProps)`
 
 Lub po prostu: pierwszy *Directory.Build.props* , nie importuje wszystko to, gdzie zatrzymuje programu MSBuild.
+
+### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>Wybieranie między Dodawanie właściwości do pliku .props i .targets
+
+Program MSBuild jest kolejność importu zależnej od i ostatnia definicja właściwości (lub `UsingTask` lub docelowa) jest definicja używane.
+
+Korzystając z jawnych importów, można importować z *.props* lub *.targets* pliku w dowolnym momencie. W tym miejscu jest powszechnie używanych Konwencji:
+
+- *.props* pliki są importowane wcześnie w poleceniu importu.
+
+- *.TARGETS* pliki są importowane w kolejności kompilacji.
+
+Ta konwencja jest wymuszana przez `<Project Sdk="SdkName">` importuje (oznacza to, że importowanie *Sdk.props* wykorzystasz, zanim wszystkie zawartość pliku, następnie *Sdk.targets* pochodzi ostatniego, po dokonaniu wszystkich zawartości Plik).
+
+Podejmując decyzję umieścić właściwości, należy użyć następujących ogólnych wytycznych:
+
+- Wiele właściwości nie ma znaczenia, gdzie one są zdefiniowane, ponieważ nie są zastępowane i będzie można ich odczytać tylko w czasie wykonywania.
+
+- W przypadku zachowanie, które mogą być dostosowane na platformie pojedynczego projektu, należy ustawić wartości domyślne w *.props* plików.
+
+- Należy unikać ustawiania właściwości zależnych *.props* pliki, odczytując wartości właściwości prawdopodobnie dostosowane, ponieważ dostosowania nie nastąpi aż MSBuild odczytuje projektu użytkownika.
+
+- Ustaw właściwości zależne *.targets* plików, ponieważ będzie wznowiona dostosowania z indywidualnymi projektami.
+
+- Jeśli musisz zastąpić właściwości odbywa się w *.targets* pliku po wszystkie dostosowania projektu użytkownika miał(a) Pan(i) zaczęły obowiązywać. Należy zachować ostrożność podczas przy użyciu pochodne właściwości; pochodne właściwości może być konieczne można także zastąpić.
+
+- Uwzględnij elementy w *.props* plików (można korzystać we właściwości). Wszystkie właściwości są wziąć pod uwagę przed dowolny element, tak aby dostosowania właściwości projektu użytkownika uzyskać pobierane i daje możliwość projektu użytkownika `Remove` lub `Update` dowolny element dołączonych za pomocą importowania.
+
+- Definiowanie elementów docelowych w *.targets* plików. Jednak jeśli *.targets* plików zaimportowanych przez zestaw SDK, należy pamiętać, że w tym scenariuszu sprawia, że zastępowanie docelowej trudniejsze, ponieważ projekt użytkownika nie ma miejsce do jej zastąpienie domyślnie.
+
+- Jeśli to możliwe najpierw Dostosowywanie właściwości w czasie oceny za pośrednictwem zmiana właściwości wewnątrz elementu docelowego. Ta wytyczna ułatwia ładowania projektu i zrozumieć, jakie jest zastosowanie.
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
@@ -138,7 +168,7 @@ przed ich zawartość i
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-później. Dzięki temu zainstalowanych zestawów SDK rozszerzyć logikę kompilacji popularnych typów projektów.
+później. Ta Konwencja umożliwia zainstalowanych zestawów SDK rozszerzyć logikę kompilacji popularnych typów projektów.
 
 Tej samej struktury katalogów jest przeszukiwany w `$(MSBuildUserExtensionsPath)`, czyli do folderu na użytkownika *%LOCALAPPDATA%\Microsoft\MSBuild*. Pliki umieszczone w tym folderze zostaną zaimportowane dla wszystkich kompilacji odpowiedniego typu projektu, uruchom w ramach poświadczeń użytkownika. Możesz wyłączyć rozszerzenia użytkownika przez ustawienie właściwości o nazwie po importowania pliku we wzorcu `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Na przykład ustawienie `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` do `false` uniemożliwiłyby importowania `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 

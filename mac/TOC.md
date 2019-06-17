@@ -71,8 +71,8 @@
 ## [Dostępne obciążenia](workloads.md)
 ## ASP.NET Core
 ### [Obsługa platformy .NET Core](net-core-support.md)
-### [Wprowadzenie do platformy ASP.NET Core](asp-net-core.md)
-### [Tworzenie aplikacji w programie Visual Studio dla komputerów Mac programu ASP.NET Core](building-asp-net-core.md)
+### [Wprowadzenie do korzystania z platformy ASP.NET Core](asp-net-core.md)
+### [Tworzenie aplikacji platformy ASP.NET Core w programie Visual Studio dla komputerów Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript i TypeScript](javascript.md)
 ## Azure
@@ -83,7 +83,7 @@
 ## Projektowanie gier w środowisku Unity
 ### [Projektowanie gier w środowisku Unity](unity-tools.md)
 ### [Konfiguracja](setup-vsmac-tools-unity.md)
-### [Wprowadzenie do aparatu Unity](unity-walkthrough.md)
+### [Wprowadzenie do korzystania z Unity](unity-walkthrough.md)
 ### [Używanie narzędzi Unity Tools](using-vsmac-tools-unity.md)
 ### [Używanie platformy .NET 4.x w środowisku Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Dziennik Zmian](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
@@ -97,3 +97,6 @@
 ## [Zgłaszanie problemu](report-a-problem.md)
 ## [Rozwiązywanie problemów: Dlaczego nie mogę wyświetlić wszystkich szablonów?](troubleshooting-no-templates.md)
 ## [Rozwiązywanie problemów: Podczas pobierania informacji występują błędy aktualizatora](updater-troubleshooting.md)
+
+# [Uwagi do wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Preview Release Notes (Informacje o wersji zapoznawczej)](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
