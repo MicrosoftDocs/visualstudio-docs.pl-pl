@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746530"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159945"
 ---
 # <a name="output-window"></a>Okno wyniku
 
@@ -67,7 +67,7 @@ Niektóre funkcje środowiska IDE i polecenia wywoływanego w [okna polecenia](.
 
 Można również zaprogramować aplikacje do zapisywania komunikatów diagnostycznych w czasie wykonywania dla **dane wyjściowe** okienka. Aby to zrobić, należy użyć elementów członkowskich <xref:System.Diagnostics.Debug> klasy lub <xref:System.Diagnostics.Trace> klasy w <xref:System.Diagnostics> przestrzeni nazw interfejsu API platformy .NET. Elementy członkowskie <xref:System.Diagnostics.Debug> klasy dane wyjściowe podczas tworzenia konfiguracji debugowania z rozwiązania lub projektu; członkowie <xref:System.Diagnostics.Trace> klasy, dane wyjściowe podczas kompilowania konfiguracji Debug i Release. Aby uzyskać więcej informacji, zobacz [komunikaty diagnostyczne w oknie danych wyjściowych](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-W języku C++, można tworzyć niestandardowych kroków kompilacji i zdarzenia kompilacji, którego ostrzeżenia i błędy są wyświetlane i uwzględniane w **dane wyjściowe** okienka. Naciskając **F1** w wierszu danych wyjściowych, możesz wyświetlić odpowiedniego tematu Pomocy. Aby uzyskać więcej informacji, zobacz [formatowania danych wyjściowych niestandardowego kroku kompilacji](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
+W języku C++, można tworzyć niestandardowych kroków kompilacji i zdarzenia kompilacji, którego ostrzeżenia i błędy są wyświetlane i uwzględniane w **dane wyjściowe** okienka. Naciskając **F1** w wierszu danych wyjściowych, możesz wyświetlić odpowiedniego tematu Pomocy. Aby uzyskać więcej informacji, zobacz [formatowania danych wyjściowych niestandardowego kroku kompilacji](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Zachowanie przewijania
 

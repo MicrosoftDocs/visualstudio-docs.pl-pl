@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745818"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160163"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -92,7 +92,7 @@ Niektóre składniki na liście mogą nie być wyświetlane, w zależności od w
 
 - Składnik, który korzysta z najnowszej wersji framework jest niezgodny z projektem, który jest przeznaczony dla starszej wersji.
 
-   Aby uzyskać informacje o zmienianiu wersji platformy docelowej projektu, zobacz [jak: Docelowa wersja framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Aby uzyskać informacje o zmienianiu wersji platformy docelowej projektu, zobacz [Framework przeznaczonych dla Przegląd](visual-studio-multi-targeting-overview.md).
 
 - Składnik, który używa .NET Framework 4 jest niezgodny z projektem, który jest przeznaczony dla .NET Framework 4.5.
 

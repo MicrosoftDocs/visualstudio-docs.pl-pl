@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715248"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160172"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio
 
@@ -37,11 +37,11 @@ Test jednostkowy C++ projektów pomocy technicznej [CodeLens](../ide/find-code-c
 
 **Visual Studio 2017 i nowsze (wszystkie wersje)**
 
-- **Google Test Adapter** jest dołączony jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Ma ona szablon projektu, można dodać do rozwiązania za pośrednictwem **Dodaj nowy projekt** menu kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań**i opcje, które można skonfigurować za pomocą **narzędzia**  >  **Opcje**. Aby uzyskać więcej informacji, zobacz [porady: Użyj platformy Google Test w programie Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Google Test Adapter** jest dołączony jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Ma ona szablon projektu, można dodać do rozwiązania za pośrednictwem **Dodaj nowy projekt** menu kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań**i opcje, które można skonfigurować za pomocą **narzędzia**  >  **Opcje**. Aby uzyskać więcej informacji, zobacz [jak: Użyj platformy Google Test w programie Visual Studio](how-to-use-google-test-for-cpp.md).
 
-- **Boost.Test** jest dołączony jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Jest zintegrowana z usługą **Eksplorator testów** , ale obecnie nie ma szablonu projektu, w związku z tym musi być ręcznie skonfigurowany. Aby uzyskać więcej informacji, zobacz [porady: Używanie narzędzia Boost.Test w programie Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** jest dołączony jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Jest zintegrowana z usługą **Eksplorator testów** , ale obecnie nie ma szablonu projektu, w związku z tym musi być ręcznie skonfigurowany. Aby uzyskać więcej informacji, zobacz [jak: Używanie narzędzia Boost.Test w programie Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- **Narzędzia CTest** pomoc techniczna jest uwzględniona w [narzędzia CMake dla programu Visual Studio](/cpp/build/cmake-tools-for-visual-cpp) składnika, który jest częścią programu **programowanie aplikacji klasycznych w języku C++** obciążenia. Jednak narzędzia CTest nie jest jeszcze w pełni zintegrowana z **Eksplorator testów**. Aby uzyskać więcej informacji, zobacz [porady: Używanie narzędzia CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
+- **Narzędzia CTest** pomoc techniczna jest uwzględniona w  **C++ narzędzia CMake** składnik, który jest częścią programu **programowanie aplikacji klasycznych przy użyciu C++**  obciążenia. Jednak narzędzia CTest nie jest jeszcze w pełni zintegrowana z **Eksplorator testów**. Aby uzyskać więcej informacji, zobacz [jak: Używanie narzędzia CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 i starsze**
 

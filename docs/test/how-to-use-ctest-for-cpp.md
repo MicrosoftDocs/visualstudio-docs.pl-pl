@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 1bd42d29842bde5f5f0ce70c64561e0ce77b33a4
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 0b6c4eb391014342a18ec3fe56a03a651463105c
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043474"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160089"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Jak używać narzędzia CTest dla C++ w programie Visual Studio 2017 i nowsze
 
-CMake (co obejmuje narzędzia CTest) jest zintegrowana w środowisku IDE programu Visual Studio domyślnie jako część **programowanie aplikacji klasycznych w języku C++** obciążenia. Jeśli musisz zainstalować go na komputerze, Otwórz program Instalator programu Visual Studio, kliknij pozycję **programowanie aplikacji klasycznych przy użyciu C++**  przycisk, a następnie kliknij przycisk **Modyfikuj**. Sprawdź [narzędzia CMake dla elementu wizualnego C++ ](/cpp/ide/cmake-tools-for-visual-cpp) pod listą składników obciążenia.
+CMake (co obejmuje narzędzia CTest) jest zintegrowana w środowisku IDE programu Visual Studio domyślnie jako część **programowanie aplikacji klasycznych w języku C++** obciążenia. Jeśli musisz zainstalować go na komputerze, Otwórz program Instalator programu Visual Studio, kliknij pozycję **programowanie aplikacji klasycznych przy użyciu C++**  przycisk, a następnie kliknij przycisk **Modyfikuj**. Wybierz  **C++ narzędzia CMake dla Windows** pod listą składników obciążenia.
 
 ## <a name="to-write-tests"></a>Do pisania testów
 
-Obsługa CMake w programie Visual Studio nie obejmują systemu projektu programu Visual Studio. W związku z tym zapisu i Konfigurowanie narzędzia CTest testów, tak samo jak w każdym środowisku CMake. Aby uzyskać więcej informacji na temat używania narzędzia CMake w programie Visual Studio, zobacz [narzędzia CMake w języku Visual C++](/cpp/ide/cmake-tools-for-visual-cpp).
+Obsługa CMake w programie Visual Studio nie obejmują systemu projektu programu Visual Studio. W związku z tym zapisu i Konfigurowanie narzędzia CTest testów, tak samo jak w każdym środowisku CMake. Aby uzyskać więcej informacji na temat używania narzędzia CMake w programie Visual Studio, zobacz [projektów CMake w programie Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 
 ## <a name="to-run-tests"></a>Aby uruchomić testy
 

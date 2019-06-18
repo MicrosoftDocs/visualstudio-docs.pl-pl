@@ -1,38 +1,40 @@
 ---
 title: Konfigurowanie testów jednostkowych przy użyciu pliku .runsettings
-ms.date: 02/28/2018
+ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746557"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160202"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku
 
 Testy jednostkowe w programie Visual Studio, można skonfigurować za pomocą *.runsettings* pliku. Na przykład można zmienić wersję platformy .NET, na którym są uruchamiane testy, katalog dla wyników testów lub dane, które są zbierane podczas przebiegu testu.
 
-Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie wymaga żadnej specjalnej konfiguracji, nie potrzebujesz *.runsettings* pliku. Najbardziej powszechnym zastosowaniem programu *.runsettings* plik jest w celu dostosowania [analiza pokrycia kodu](../test/customizing-code-coverage-analysis.md).
+Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie wymaga żadnej specjalnej konfiguracji, nie potrzebujesz *.runsettings* pliku. Typowym zastosowaniem *.runsettings* plik jest w celu dostosowania [analiza pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="specify-a-run-settings-file"></a>Określ plik parametrów uruchomieniowych
 
 Ustawienia plików może służyć do konfigurowania testów, które są uruchamiane z przebiegu [wiersza polecenia](vstest-console-options.md), środowiska IDE lub w [utworzyć przepływ pracy](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) przy użyciu planów testowych platformy Azure lub Team Foundation Server (TFS).
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>Określ plik parametrów uruchomieniowych w środowisku IDE
+### <a name="ide"></a>IDE
 
-Wybierz **testu** > **ustawienia testu** > **zaznacz plik ustawień testu** , a następnie wybierz *.runsettings*pliku. Plik pojawi się na **ustawienia testu** menu, a można wybrać lub usunąć jej zaznaczenie. Zaznaczona, plik parametrów uruchomieniowych ma zastosowanie zawsze, gdy wybierzesz **Analizuj pokrycie kodu**.
+Aby określić plik parametrów uruchomieniowych w IDE, wybierz pozycję **testu** > **ustawienia testu** > **zaznacz plik ustawień testu**, a następnie wybierz pozycję *.runsettings* pliku.
 
 ![Wybierz menu Plik ustawień testu w programie Visual Studio](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>Określ plik parametrów uruchomieniowych w wierszu polecenia
+Plik pojawi się na **ustawienia testu** menu, a można wybrać lub usunąć jej zaznaczenie. Zaznaczona, plik parametrów uruchomieniowych ma zastosowanie zawsze, gdy wybierzesz **Analizuj pokrycie kodu**.
 
-Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe* i określić plik ustawień za pomocą **Settings** parametru.
+### <a name="command-line"></a>Wiersz polecenia
+
+Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe*i określić plik ustawień za pomocą **Settings** parametru.
 
 1. Uruchom wiersz polecenia programisty dla programu Visual Studio:
 
@@ -52,6 +54,12 @@ Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe* i określi�
 
    ```cmd
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
+
+   lub
+
+   ```cmd
+   vstest.console.exe --settings:test.runsettings test.dll
    ```
 
 Aby uzyskać więcej informacji, zobacz [opcje wiersza poleceń VSTest.Console.exe](vstest-console-options.md).
@@ -174,7 +182,7 @@ W kolejnych sekcjach szczegółowo elementy *.runsettings* pliku.
 |Węzeł|Domyślny|Wartości|
 |-|-|-|
 |**ResultsDirectory**||Katalog, w którym są umieszczane wyniki testu.|
-|**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />To ustawienie określa wersję środowiska testów jednostkowych, które są używane do odnajdowania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` w przypadku źródeł platformy .NET Core `FrameworkUap10` dla platformy uniwersalnej systemu Windows na podstawie źródeł, `Framework45` dla platformy .NET Framework 4.5 lub nowszym, `Framework40` dla programu .NET Framework 4.0, i `Framework35` programu .NET Framework 3.5.<br /><br />To ustawienie określa wersję środowiska testów jednostkowych, które są używane do odnajdowania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.<br /><br />Jeżeli pominięto `TargetFrameworkVersion` elementu z *.runsettings* pliku, platforma automatycznie określa framework w wersji oparte na skompilowane pliki binarne.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|fałsz, prawda|
 |**TestAdaptersPaths**||Jedną lub więcej ścieżek do katalogu, w którym znajdują się TestAdapters|
@@ -263,5 +271,6 @@ Te ustawienia są właściwe dla adaptera testowego, który uruchamia metody tes
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Konfigurowanie przebieg testu](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio test zadań (plany testów platformy Azure)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

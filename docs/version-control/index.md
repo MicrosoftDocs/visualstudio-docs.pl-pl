@@ -2,7 +2,7 @@
 layout: LandingPage
 title: Kontrola wersji
 description: Przewodnik Wprowadzenie do kontroli wersji w programie Visual Studio
-keywords: 'VSTS, TFS, Version Control'
+keywords: VSTS, TFS, Version Control
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,7 +11,13 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-  - multiple
+- multiple
+ms.openlocfilehash: 805fe86fcbebdfeb3747dd593d9abbf0f641212d
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160019"
 ---
 # <a name="version-control-in-visual-studio"></a>Kontrola wersji w programie Visual Studio
 
@@ -30,7 +36,7 @@ Git to obecnie najczęściej używany system kontroli wersji i szybko staje się
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
+                            <img width="48" height="48" alt="Git logo" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -48,7 +54,7 @@ Git to obecnie najczęściej używany system kontroli wersji i szybko staje się
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
+                            <img width="48" height="48" alt="Git logo" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,7 +72,7 @@ Git to obecnie najczęściej używany system kontroli wersji i szybko staje się
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
+                            <img width="48" height="48" alt="Git logo" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -91,7 +97,7 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
+                            <img width="48" height="48" alt="Visual Studio logo" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -109,7 +115,7 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
+                            <img width="48" height="48" alt="Visual Studio logo" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -127,7 +133,7 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
+                            <img width="48" height="48" alt="Visual Studio logo" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
                         </div>
                     </div>
                     <div class="cardText">

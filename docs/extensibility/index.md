@@ -8,12 +8,12 @@ ms.date: 10/31/2018
 ms.topic: landing-page
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 81ba8dfd0c82c1d52933de4a0666cd40c379ee8c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c9f524889da41662cec28f82100c36cec90e608b
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353790"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160130"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Dokumentacja rozszerzalności programu Visual Studio
 
@@ -29,7 +29,7 @@ Program Visual Studio zapewnia wiele opcji rozszerzalności. Można rozszerzyć 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/logos/logo_VS.svg" alt="" />
+                            <img src="/media/logos/logo_VS.svg" alt="Visual Studio logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -47,7 +47,7 @@ Program Visual Studio zapewnia wiele opcji rozszerzalności. Można rozszerzyć 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_extensions.svg" alt="" />
+                            <img src="/media/common/i_extensions.svg" alt="Extensions icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -65,7 +65,7 @@ Program Visual Studio zapewnia wiele opcji rozszerzalności. Można rozszerzyć 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_tools.svg" alt="" />
+                            <img src="/media/common/i_tools.svg" alt="Tools icon" />
                         </div>
                     </div>
                     <div class="cardText">

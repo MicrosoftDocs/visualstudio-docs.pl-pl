@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a5778764bb065ae6da53016c2c9bbb557db20c51
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 5d4f4f462e95610b24da2958142d3d4bb8bad528
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847378"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160107"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 
@@ -1418,6 +1418,8 @@ Na poniższej liście przedstawiono reguły formatowania Konwencji dostępne w p
         - csharp_space_between_method_declaration_empty_parameter_list_parentheses
         - csharp_space_between_method_call_name_and_opening_parenthesis
         - csharp_space_between_method_call_empty_parameter_list_parentheses
+        - csharp_space_after_comma
+        - csharp_space_after_dot
     - [Opcje opakowywania](#wrapping)
         - csharp_preserve_single_line_statements
         - csharp_preserve_single_line_blocks
@@ -1859,6 +1861,8 @@ W poniższej tabeli przedstawiono nazwy reguł, właściwe języki, wartości do
 | csharp_space_between_method_declaration_empty_parameter_list_parentheses | C# | false | 15.7 |
 | csharp_space_between_method_call_name_and_opening_parenthesis | C# | false | 15.7 |
 | csharp_space_between_method_call_empty_parameter_list_parentheses | C# | false | 15.7 |
+| csharp_space_after_comma | C# | true | | 
+| csharp_space_after_dot | C# | false | |
 
 **csharp\_space\_after_cast**
 
@@ -2125,6 +2129,36 @@ void Goo(int x)
 }
 ```
 
+**csharp_space_after_comma**
+
+- Gdy ta reguła jest ustawiona na **true**, Wstaw spację po przecinku.
+- Gdy ta reguła jest ustawiona na **false**, Usuń miejsca po przecinku.
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_after_comma = true
+int[] x = new int[] { 1, 2, 3, 4, 5 };
+
+// csharp_space_after_comma = false
+int[] x = new int[] { 1,2,3,4,5 }
+```
+
+**csharp_space_after_dot**
+
+- Gdy ta reguła jest ustawiona na **true**, Wstaw odstęp po kropce.
+- Gdy ta reguła jest ustawiona na **false**, usunąć odstęp po kropce.
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_after_dot = true
+this. Goo();
+
+// csharp_space_after_dot = false
+this.Goo();
+```
+
 Przykład *.editorconfig* pliku:
 
 ```ini
@@ -2141,6 +2175,8 @@ csharp_space_around_binary_operators = before_and_after
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
 csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_after_comma = true
+csharp_space_after_dot = false
 ```
 
 #### <a name="wrapping"></a>Opcje opakowywania
@@ -2341,6 +2377,8 @@ csharp_space_around_binary_operators = before_and_after
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
 csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_after_comma = true
+csharp_space_after_dot = false
 
 # Wrapping preferences
 csharp_preserve_single_line_statements = true

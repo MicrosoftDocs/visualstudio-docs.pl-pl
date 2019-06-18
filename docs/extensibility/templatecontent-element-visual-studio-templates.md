@@ -13,12 +13,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71911ee480daa965dfbc3df43ea2e76cf2021d08
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a4ddbdeeaecdb832b2601992272de9d76f4bdcb
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316635"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160004"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent — Element (szablony Visual Studio)
 
@@ -81,7 +81,7 @@ Hierarchia elementów:
     </TemplateData>
     <TemplateContent>
         <Project File="MyStarterKit.csproj">
-            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.cs</ProjectItem>
             <ProjectItem>Form1.Designer.cs</ProjectItem>
             <ProjectItem>Program.cs</ProjectItem>
             <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>

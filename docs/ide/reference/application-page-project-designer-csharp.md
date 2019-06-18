@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744993"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160063"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 
@@ -61,7 +61,7 @@ Dla projektu .NET Core przeznaczonego dostępnych wersji może wyglądać nastę
 > [!NOTE]
 > Wstępnie wymagane pakiety wymienione w [wstępnie wymagane składniki, okno dialogowe](../../ide/reference/prerequisites-dialog-box.md) są ustawiane automatycznie przy pierwszym otwarciu okna dialogowego. Jeśli użytkownik zmieni później platformę docelową projektu, musisz wybrać wstępnie wymagane składniki ręcznie, aby dopasować do nowej platformy docelowej.
 
-Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [Framework przeznaczonych dla Przegląd](../../ide/visual-studio-multi-targeting-overview.md).
+Aby uzyskać więcej informacji, zobacz [Framework przeznaczonych dla Przegląd](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Typ danych wyjściowych**
 
