@@ -226,11 +226,7 @@
             - name: 'Określanie ikony aplikacji (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Określanie platformy docelowej
-              items:
-                - name: Wielowersyjność kodu — omówienie
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: Określanie wersji docelowej programu .NET Framework
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: Tworzenie szablonów
               items:
                 - name: Tworzenie szablonów projektów i elementów
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Zmień nazwę
                       href: ide/reference/rename.md
+                    - name: Dzielenie i scalanie instrukcji if
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: Synchronizowanie przestrzeni nazw i nazwy folderu
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: Synchronizacja typu i nazwy pliku
                       href: ide/reference/sync-type-and-file.md
                     - name: Używanie typu jawnego

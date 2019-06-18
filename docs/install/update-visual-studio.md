@@ -2,7 +2,7 @@
 title: Aktualizowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak zaktualizować program Visual Studio do najnowszej wersji, krok po kroku.
-ms.date: 06/15/2019
+ms.date: 06/18/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b495587d6107a06ef5d36e614c892e226011aa
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: c28a7ecb7d7f1cf7be52f7d77af9551b94236233
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160032"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195102"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizacja programu Visual Studio do najnowszej wersji
 
@@ -28,7 +28,7 @@ ms.locfileid: "67160032"
 
 Firma Microsoft zachęca do aktualizacji do maksymalnie [najnowszej wersji](/visualstudio/releasenotes/vs2017-relnotes/) programu Visual Studio 2017, tak aby zawsze uzyskać najnowsze funkcje, poprawki i udoskonalenia.
 
-A jeśli chcesz wypróbować nasze najnowszej wersji, należy wziąć pod uwagę pobieranie [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) zamiast tego.
+A jeśli chcesz wypróbować nasze najnowszej wersji, należy rozważyć pobranie i zainstalowanie [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) zamiast tego.
 
 > [!IMPORTANT]
 > Musisz zalogować się za pomocą konta mającego uprawnienia administracyjne, aby zainstalować, zaktualizować lub zmodyfikuj program Visual Studio. Aby uzyskać więcej informacji, zobacz [uprawnienia użytkownika i program Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -164,6 +164,8 @@ Jeśli zostanie wybrane ignorowanie powiadomienie, program Visual Studio przesta
 
 Firma Microsoft zachęca do aktualizacji do maksymalnie [najnowszej wersji](/visualstudio/releases/2019/release-notes/) programu Visual Studio 2019 r, tak aby zawsze uzyskać najnowsze funkcje, poprawki i udoskonalenia.
 
+Jeśli jeszcze nie zainstalowano programu Visual Studio 2019 r, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+
 > [!IMPORTANT]
 > Musisz zalogować się za pomocą konta mającego uprawnienia administracyjne, aby zainstalować, zaktualizować lub zmodyfikuj program Visual Studio. Aby uzyskać więcej informacji, zobacz [uprawnienia użytkownika i program Visual Studio](../ide/user-permissions-and-visual-studio.md).
 >
@@ -263,6 +265,7 @@ Można sprawdzić dostępność aktualizacji, a następnie zainstaluj go przy u�
 ## <a name="see-also"></a>Zobacz także
 
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Aktualizacja programu Visual Studio znajduje się w obsługi punktu odniesienia](update-servicing-baseline.md)
 * [Aktualizacja programu Visual Studio dla komputerów Mac](/visualstudio/mac/update)
 * [Modyfikowanie programu Visual Studio](modify-visual-studio.md)
 * [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)

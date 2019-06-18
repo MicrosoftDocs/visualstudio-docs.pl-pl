@@ -1,6 +1,6 @@
 ---
 title: Znaki specjalne w programie MSBuild | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - escape characters
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7af1f137624c0af1fce02fde524d7fb4178cbad
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: cf312c1b73dbed58cc261c77a74555d00b0b04ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65084056"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195060"
 ---
 # <a name="msbuild-special-characters"></a>Znaki specjalne w MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rezerwuje niektórych znaków specjalnych w określonych kontekstach. Masz tylko takie znaki ucieczki, aby ich używać dosłownie w kontekście, w którym są one zarezerwowane. Na przykład znak gwiazdki ma specjalne znaczenie tylko w `Include` i `Exclude` atrybuty definicji elementu i w wywołaniach `CreateItem`. Jeśli chcesz, aby znak gwiazdki, aby pojawiało się jako znak gwiazdki w jednym z tych kontekstach, musisz wyjść z niego. W każdym kontekście wystarczy wpisać gwiazdkę, w której ma się pojawić.
@@ -32,7 +32,7 @@ ms.locfileid: "65084056"
 |%|%25|Odwoływanie się do metadanych|
 |$|%24|Właściwości odwołania|
 |@|%40|Odwołujący się listy elementów|
-|&#96;|%27|Warunki i inne wyrażenia|
+|'|%27|Warunki i inne wyrażenia|
 |;|%3B|Separator listy|
 |?|%3F|Znak symbolu wieloznacznego dla nazwy plików w `Include` i `Exclude` atrybutów|
 |*|%2A|Znak symbolu wieloznacznego do użytku w nazwach plików w `Include` i `Exclude` atrybutów|

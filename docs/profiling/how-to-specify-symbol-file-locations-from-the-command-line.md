@@ -59,4 +59,4 @@ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narz
 
  Dodaje następujące polecenie w wierszu polecenia VSPerfReport *C:\Projects\Symbols* katalog do ścieżki wyszukiwania przy użyciu **symbolpath** opcji.
 
- **VSPerfReport***MyApp* **której /SymbolPath:C:\Projects\Symbols .exe**
+ **VSPerfReport**  *MyApp* **której /SymbolPath:C:\Projects\Symbols .exe**

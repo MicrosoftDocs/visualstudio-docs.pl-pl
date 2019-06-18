@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0d49223d61e3c72f2726b89de99ba9c092ddefe
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793506"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195263"
 ---
 # <a name="find-references-in-your-code"></a>Znajdowanie odwołań w kodzie
 
@@ -48,7 +48,7 @@ Domyślnie odwołania są pogrupowane według projektu, następnie zgodnie z def
 **Definicja** i **projektu** są używane dwie domyślne grupowania, ale możesz dodać inne, wybierając **grupowanie** polecenia menu kliknij prawym przyciskiem myszy lub kontekst wybranego elementu. Dodawanie więcej grupowań mogą być przydatne, jeśli rozwiązanie ma wiele plików i ścieżek.
 
 ## <a name="filter-by-reference-type-in-net"></a>Filtruj według typu odwołania na platformie .NET
-W C# lub Visual Basic okno Znajdź odwołania zawiera rodzaj kolumny, których wymieniono znaleziono typ odwołania. Ta kolumna może służyć do filtrowania według typu odwołania, klikając ikonę filtru, który pojawia się po najechaniu kursorem na nagłówek kolumny. Odwołania można filtrować według odczytu, zapisu, odwołania i NameOnly.
+W C# lub Visual Basic okno Znajdź odwołania zawiera rodzaj kolumny, których wymieniono znaleziono typ odwołania. Ta kolumna może służyć do filtrowania według typu odwołania, klikając ikonę filtru, który pojawia się po najechaniu kursorem na nagłówek kolumny. Odwołania można filtrować według odczytu, zapisu, odwołanie, nazwy, Namespace i typu.
 
 ![Znajdź rodzaj okna odwołania do kolumny ](../ide/media/vside_findallreferencesKind.png)
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 516f3d87efd61189a3890f7e83064a96adad7e2d
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037386"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195235"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
@@ -61,15 +61,15 @@ W warunkach, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `ms
 
 **Włącz opcję tylko mój kod**: Debuger wyświetla i kroki kod użytkownika ("Mój kod"), ignorując kod systemowy i inny kod, który zoptymalizowano lub w którym nie ma symboli debugowania.
 
-- **Ostrzegaj w przypadku braku kodu użytkownika przy uruchomieniu (tylko kod zarządzany)**:   Gdy debugowanie się rozpocznie się za pomocą włączono opcję tylko mój kod, opcja ta ostrzega, jeśli brak kodu użytkownika ("Mój kod").
+- **Ostrzegaj w przypadku braku kodu użytkownika przy uruchomieniu (tylko kod zarządzany)** :   Gdy debugowanie się rozpocznie się za pomocą włączono opcję tylko mój kod, opcja ta ostrzega, jeśli brak kodu użytkownika ("Mój kod").
 
 **Włączyć program .NET Framework krokowe wykonywanie źródła**: Pozwala debugerowi na wkroczenie do źródła .NET Framework. Włączenie tej opcji spowoduje automatyczne wyłączenie tylko mój kod. Symbole środowiska .NET framework będą pobierane do lokalizacji pamięci podręcznej. Zmienić lokalizację pamięci podręcznej za pomocą **opcje** okno dialogowe **debugowanie** kategorii **symbole** strony.
 
-**Przekrocz nad właściwościami i operatorami (tylko kod zarządzany)**: Sprawia, że debuger wchodzi we właściwości i operatory w kodzie zarządzanym.
+**Przekrocz nad właściwościami i operatorami (tylko kod zarządzany)** : Sprawia, że debuger wchodzi we właściwości i operatory w kodzie zarządzanym.
 
 **Włącz obliczanie właściwości i inne niejawne wywołania funkcji**: Włącza funkcję automatycznej oceny właściwości i niejawne funkcja wywołuje w oknach zmiennych i **QuickWatch** okno dialogowe.
 
-- **Wywołaj funkcję konwersji ciągu na obiektach w oknach zmiennych (C# i tylko kod JavaScript)**: Wykonuje wywołanie niejawnej konwersji ciągu podczas szacowania wartości obiektów w oknach zmiennych. Wynik jest wyświetlany jako ciąg, nie nazwę typu. Dotyczy to tylko podczas debugowania kodu C#. To ustawienie może być zastąpiona przez atrybut DebuggerDisplay (zobacz [korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).
+- **Wywołaj funkcję konwersji ciągu na obiektach w oknach zmiennych (C# i tylko kod JavaScript)** : Wykonuje wywołanie niejawnej konwersji ciągu podczas szacowania wartości obiektów w oknach zmiennych. Wynik jest wyświetlany jako ciąg, nie nazwę typu. Dotyczy to tylko podczas debugowania kodu C#. To ustawienie może być zastąpiona przez atrybut DebuggerDisplay (zobacz [korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).
 
 **Włącz obsługę serwera źródłowego**: Nakazuje debugerowi programu Visual Studio pobranie plików źródłowych z serwerów źródłowych, które implementują SrcSrv (`srcsrv.dll`) protokołu. Team Foundation Server i Debugging Tools for Windows to dwa serwery źródłowe implementujące ten protokół. Aby uzyskać więcej informacji o konfiguracji SrcSrv, zobacz [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) dokumentacji. Ponadto zobacz [określanie plików symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
@@ -78,7 +78,7 @@ W warunkach, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `ms
 
 - **Drukowanie komunikatów diagnostycznych serwera źródłowego w oknie danych wyjściowych**:   Po włączeniu obsługi serwera źródłowego, to ustawienie powoduje włączenie ekranu diagnostycznego.
 
-- **Zezwalaj serwerowi źródłowemu na częściowo zaufane zestawy (tylko kod zarządzany)**:   Po włączeniu obsługi serwera źródłowego, ustawienie to zastępuje domyślne zachowanie niepobierania źródeł dla zestawów częściowej relacji zaufania.
+- **Zezwalaj serwerowi źródłowemu na częściowo zaufane zestawy (tylko kod zarządzany)** :   Po włączeniu obsługi serwera źródłowego, ustawienie to zastępuje domyślne zachowanie niepobierania źródeł dla zestawów częściowej relacji zaufania.
 
 - **Zawsze uruchamiaj niezaufane polecenia serwera źródłowego bez monitowania użytkownika o**:   Po włączeniu obsługi serwera źródłowego, ustawienie to zastępuje domyślne zachowanie monitowania użytkownika podczas uruchamiania polecenia niezaufanych.
 
@@ -89,7 +89,7 @@ W warunkach, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `ms
 
 - **Należą do uwierzytelniania usługi Git Credential Manager dla wszystkich żądań dotyczących Linku źródłowego**:   Obsługa Linku źródłowego jest włączona, gdy żądanie Linku źródłowego niepowodzenia uwierzytelniania, Visual Studio wywołuje program Git Credential Manager.
 
-**Zaznaczanie całego wiersza dla punktów przerwania i bieżącej instrukcji (tylko C++)**: Gdy debuger wyróżnia punkt przerwania lub bieżącą instrukcję, wyróżnia cały wiersz.
+**Zaznaczanie całego wiersza dla punktów przerwania i bieżącej instrukcji (tylko C++)** : Gdy debuger wyróżnia punkt przerwania lub bieżącą instrukcję, wyróżnia cały wiersz.
 
 **Wymagaj plików źródłowych Aby dokładnie dopasować oryginalną wersję**: Nakazuje debugerowi sprawdzenie, czy plik źródłowy jest zgodny z wersją kodu źródłowego użytego do utworzenia pliku wykonywalnego, który debugujesz. Jeśli wersja nie jest zgodna, wyświetlany jest monit o znalezienie pasującego źródła. Jeśli zgodne źródło nie zostanie znaleziony, nie można wyświetlić kodu źródłowego podczas debugowania.
 
@@ -97,17 +97,17 @@ W warunkach, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `ms
 
 **Pokaż nieprzetworzoną strukturę obiektów w oknach zmiennych**: Wyłącza wszystkie dostosowania widoku struktury obiektu. Aby uzyskać więcej informacji na temat dostosowania widoków, zobacz [Tworzenie niestandardowych widoków obiektów .managed](../debugger/create-custom-views-of-dot-managed-objects.md).
 
-**Pomijanie optymalizacji JIT przy ładowaniu modułu (tylko kod zarządzany)**: Wyłącza optymalizację JIT kodu zarządzanego, gdy moduł jest załadowany a JIT kompilowana w czasie, gdy jest dołączony debuger. Wyłączenie optymalizacji może ułatwić debugowanie pewnych problemów, ale kosztem wydajności. Jeśli używasz tylko mój kod, pomijanie JIT optymalizacji może spowodować niebędący kodem użytkownika do wyświetlania jako kod użytkownika ("Mój kod"). Aby uzyskać więcej informacji, zobacz [JIT Optymalizacja i debugowanie](../debugger/jit-optimization-and-debugging.md).
+**Pomijanie optymalizacji JIT przy ładowaniu modułu (tylko kod zarządzany)** : Wyłącza optymalizację JIT kodu zarządzanego, gdy moduł jest załadowany a JIT kompilowana w czasie, gdy jest dołączony debuger. Wyłączenie optymalizacji może ułatwić debugowanie pewnych problemów, ale kosztem wydajności. Jeśli używasz tylko mój kod, pomijanie JIT optymalizacji może spowodować niebędący kodem użytkownika do wyświetlania jako kod użytkownika ("Mój kod"). Aby uzyskać więcej informacji, zobacz [JIT Optymalizacja i debugowanie](../debugger/jit-optimization-and-debugging.md).
 
-**Włącz debugowanie kodu JavaScript dla platformy ASP.NET (przeglądarki Chrome, krawędzi i programu Internet Explorer)**: Włącza debugera skryptów w przypadku aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane. Wyłącz tę opcję, aby przywrócić starsze zachowanie.
+**Włącz debugowanie kodu JavaScript dla platformy ASP.NET (przeglądarki Chrome, krawędzi i programu Internet Explorer)** : Włącza debugera skryptów w przypadku aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane. Wyłącz tę opcję, aby przywrócić starsze zachowanie.
 
-**Włącz narzędzia deweloperskie przeglądarki Edge dla aplikacji JavaScript platformy uniwersalnej systemu Windows (wersja eksperymentalna)**: Umożliwia developer tools dla aplikacji JavaScript platformy uniwersalnej systemu Windows w programie Edge.
+**Włącz narzędzia deweloperskie przeglądarki Edge dla aplikacji JavaScript platformy uniwersalnej systemu Windows (wersja eksperymentalna)** : Umożliwia developer tools dla aplikacji JavaScript platformy uniwersalnej systemu Windows w programie Edge.
 
 **Włącz starsze debugera języka JavaScript w przeglądarce Chrome dla platformy ASP.NET**: Włącza starsze debugera skryptów JavaScript w przeglądarce Chrome dla aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane.
 
 **Użyj eksperymentalne sposób, aby uruchomić debugowanie kodu JavaScript w przeglądarce Chrome, podczas uruchamiania programu Visual Studio jako Administrator**: Zawiera informacje dla programu Visual Studio, aby spróbować nowy sposób uruchamiania dla programu Chrome podczas debugowania kodu JavaScript.
 
-**Ładuj eksporty dll (tylko natywne)**: Ładuje tabele eksportu bibliotek dll. Informacje o symbolach tabel eksportu biblioteki dll może być przydatne, jeśli pracujesz z Windows wiadomości, procedur Windows (WindowProcs), obiektami COM, lub organizowanie lub dowolną biblioteką dll, dla której nie masz symboli. Odczytywanie pliku dll informacji o eksportowaniu pewne nadmiarowe obciążenie. Dlatego ta funkcja jest domyślnie wyłączona.
+**Ładuj eksporty dll (tylko natywne)** : Ładuje tabele eksportu bibliotek dll. Informacje o symbolach tabel eksportu biblioteki dll może być przydatne, jeśli pracujesz z Windows wiadomości, procedur Windows (WindowProcs), obiektami COM, lub organizowanie lub dowolną biblioteką dll, dla której nie masz symboli. Odczytywanie pliku dll informacji o eksportowaniu pewne nadmiarowe obciążenie. Dlatego ta funkcja jest domyślnie wyłączona.
 
 Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, użyj `dumpbin /exports`. Symbole są dostępne dla każdej biblioteki dll systemu 32-bitowego. Czytając `dumpbin /exports` danych wyjściowych, możesz zobaczyć dokładną nazwę funkcji, w tym znaki inne niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji tabel eksportu biblioteki dll, może pojawić się obcięte gdzie indziej w debugerze. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [dumpbin/EXPORTS](/cpp/build/reference/dash-exports).
 
@@ -126,9 +126,9 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, uż
 
 **Użyj starszego C# i ewaluatory wyrażeń VB**: Debuger użyje programu Visual Studio 2013 C# lub ewaluatory wyrażeń języka Visual Basic zamiast ewaluatory wyrażeń opartych na programie Visual Studio 2015 Roslyn.
 
-**Ostrzegaj, gdy niestandardowe wizualizatory debugera względem potencjalnie niebezpiecznych procesów (tylko kod zarządzany)**: Program Visual Studio ostrzega o tym, kiedy używasz wizualizatora niestandardowego debugera działający kod w debugowanym procesie, ponieważ może być uruchomiony niebezpieczny kod.
+**Ostrzegaj, gdy niestandardowe wizualizatory debugera względem potencjalnie niebezpiecznych procesów (tylko kod zarządzany)** : Program Visual Studio ostrzega o tym, kiedy używasz wizualizatora niestandardowego debugera działający kod w debugowanym procesie, ponieważ może być uruchomiony niebezpieczny kod.
 
-**Włącz alokatora sterty debugowania Windows (tylko natywne)**: Włącza na stercie systemu windows, lepszą diagnostykę sterty. Włączenie tej opcji będzie mieć wpływ na wydajność debugowania.
+**Włącz alokatora sterty debugowania Windows (tylko natywne)** : Włącza na stercie systemu windows, lepszą diagnostykę sterty. Włączenie tej opcji będzie mieć wpływ na wydajność debugowania.
 
 **Włączanie debugowania interfejsu użytkownika narzędzia dla XAML**: Dynamiczne drzewo wizualne i windows Live Eksplorowanie właściwość pojawi się po rozpoczęciu debugowania (**F5**) typu obsługiwanych projektu. Aby uzyskać więcej informacji, zobacz [właściwości sprawdzić XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md).
 
@@ -146,13 +146,17 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, uż
 
 - **Włącz natywną funkcję Edytuj i Kontynuuj**: Możesz użyć edycji i kontynuowania funkcji podczas debugowania kodu natywnego języka C++. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
 
-- **Zastosuj zmiany przy kontynuowaniu (tylko natywne)**: Program Visual Studio kompiluje i automatycznie stosuje żadnych zmian w kodzie oczekujących, wprowadzone podczas kontynuując proces w stanie przerwania. Jeśli nie jest zaznaczone, możesz zastosować zmiany, przy użyciu **zastosowanie zmian kodu** w obszarze **debugowania** menu.
+- **Zastosuj zmiany przy kontynuowaniu (tylko natywne)** : Program Visual Studio kompiluje i automatycznie stosuje żadnych zmian w kodzie oczekujących, wprowadzone podczas kontynuując proces w stanie przerwania. Jeśli nie jest zaznaczone, możesz zastosować zmiany, przy użyciu **zastosowanie zmian kodu** w obszarze **debugowania** menu.
 
-- **Ostrzeżenie o nieodświeżonym kodzie (tylko natywne)**:   Pobierz ostrzeżenia o nieodświeżonym kodzie.
+- **Ostrzeżenie o nieodświeżonym kodzie (tylko natywne)** :   Pobierz ostrzeżenia o nieodświeżonym kodzie.
 
 **Pokaż Uruchom do kliknięcia przycisku w edytorze podczas debugowania**: Gdy ta opcja jest zaznaczona, [uruchamianie do kliknięcia](../debugger/debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) przycisk będzie wyświetlany podczas debugowania.
 
 **Automatycznie Zamknij konsolę, po zatrzymaniu debugowania**: Zawiera informacje dla programu Visual Studio, aby zamknąć konsolę na końcu sesji debugowania.
+
+::: moniker range=">= vs-2019" 
+**Włącz Obliczanie wyrażenia szybkie (tylko kod zarządzany)** : Umożliwia debugera próby oceny szybciej symulując wykonywanie prostych właściwości i metod.
+::: moniker-end
 
 ## <a name="options-available-in-older-versions-of-visual-studio"></a>Opcje dostępne w starszych wersjach programu Visual Studio
 
@@ -162,7 +166,7 @@ Jeśli używasz starszej wersji programu Visual Studio może istnieć pewne doda
 
 **Operacja unwind na stosie wywołań dotycząca nieobsłużonych wyjątków**: Powoduje, że **stos wywołań** okna, aby wycofać stos wywołań do punktu przed wystąpieniem nieobsługiwanego wyjątku.
 
-**Ostrzegaj, jeśli brak symboli podczas uruchamiania (tylko natywne)**: Wyświetla okno dialogowe ostrzeżenia podczas debugowania programu, dla którego debuger nie ma żadnych informacji o symbolach.
+**Ostrzegaj, jeśli brak symboli podczas uruchamiania (tylko natywne)** : Wyświetla okno dialogowe ostrzeżenia podczas debugowania programu, dla którego debuger nie ma żadnych informacji o symbolach.
 
 **Ostrzegaj, jeśli debugowanie skryptów jest wyłączone w momencie uruchomienia**: Wyświetla okno dialogowe ostrzeżenia, gdy debuger jest uruchamiany z wyłączonym debugowaniem skryptów.
 

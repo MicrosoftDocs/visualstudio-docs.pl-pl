@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715281"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195293"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Przewodnik: Analizowanie kodu zarządzanego pod względem wad kodu
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Wskazówki: Użyj statycznej analizy kodu do znalezienia usterek kodu
 
 W tym przewodniku będzie analizować zarządzanego projektu pod względem wad kodu za pomocą narzędzia analizy kodu.
 
-Ten przewodnik przeprowadzi Cię przez proces przy użyciu analizy kodu, aby analizować swoje zestawy kodu zarządzanego na platformie .NET dla zapewnienia zgodności z wytycznymi projektowania platformy .NET.
+Ten przewodnik przeprowadzi Cię przez proces analizowania swoje zestawy kodu zarządzanego na platformie .NET dla zapewnienia zgodności z wytycznymi projektowania platformy .NET przy użyciu statycznej analizy kodu.
 
 ## <a name="create-a-class-library"></a>Utwórz bibliotekę klas
 
