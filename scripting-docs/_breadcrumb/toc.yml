@@ -12,7 +12,7 @@
           items: null
         - name: Interfejsy wykonywania skryptów systemu Windows
           tocHref: /scripting/winscript/
-          topicHref: /scripting/winscript/windows-scripting-interfaces
+          topicHref: /scripting/winscript/windows-script-interfaces
           items:
             - name: Tematy pomocy
               tocHref: /scripting/winscript/reference/
