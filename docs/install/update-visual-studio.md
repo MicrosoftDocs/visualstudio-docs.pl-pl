@@ -15,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27074b20aafe046d03b11f92d49b6af1a01c3067
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253671"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67290659"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizacja programu Visual Studio do najnowszej wersji
 
 ::: moniker range="vs-2017"
 
-Firma Microsoft zachęca do aktualizacji do maksymalnie [najnowszej wersji](/visualstudio/releasenotes/vs2017-relnotes/) programu Visual Studio 2017, tak aby zawsze uzyskać najnowsze funkcje, poprawki i udoskonalenia.
+Firma Microsoft zachęca do aktualizacji do maksymalnie [aktualną wersją](/visualstudio/releasenotes/vs2017-relnotes/) programu Visual Studio 2017, tak aby zawsze uzyskać najnowsze funkcje, poprawki i udoskonalenia.
 
 A jeśli chcesz wypróbować nasze najnowszej wersji, należy rozważyć pobranie i zainstalowanie [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) zamiast tego.
 
@@ -162,7 +162,7 @@ Jeśli zostanie wybrane ignorowanie powiadomienie, program Visual Studio przesta
 
 ::: moniker range="vs-2019"
 
-Firma Microsoft zachęca do aktualizacji do maksymalnie [najnowszej wersji](/visualstudio/releases/2019/release-notes/) programu Visual Studio 2019 r, tak aby zawsze uzyskać najnowsze funkcje, poprawki i udoskonalenia.
+Firma Microsoft zachęca do aktualizacji do maksymalnie [aktualną wersją](/visualstudio/releases/2019/release-notes/) programu Visual Studio 2019 r, tak aby zawsze uzyskać najnowsze funkcje, poprawki i udoskonalenia.
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio 2019 r, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
 
@@ -264,6 +264,7 @@ Można sprawdzić dostępność aktualizacji, a następnie zainstaluj go przy u�
 
 ## <a name="see-also"></a>Zobacz także
 
+* [Instalowanie programu Visual Studio wersje side-by-side](install-visual-studio-versions-side-by-side.md)
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualizacja programu Visual Studio znajduje się w obsługi punktu odniesienia](update-servicing-baseline.md)
 * [Aktualizacja programu Visual Studio dla komputerów Mac](/visualstudio/mac/update)

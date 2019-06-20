@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820298"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291042"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie kompilacji i debugowania zadań rozwoju "Otwórz Folder"
 
@@ -33,7 +32,6 @@ Dostosowywanie bez projektu bazę kodu przy użyciu następujących *.json* plik
 |-|-|
 |*tasks.vs.json*|Określenie niestandardowych poleceń kompilacji i przełączniki kompilatora i dowolnego (bez kompilacji powiązane) zadania.<br>Udostępnianych za pośrednictwem **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy element menu **skonfigurować zadania**.|
 |*launch.vs.json*|Określ argumenty wiersza polecenia do debugowania.<br>Udostępnianych za pośrednictwem **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy element menu **ustawienia debugowania i uruchamiania**.|
-|*VSWorkspaceSettings.json*|Ogólne ustawienia, które mogą mieć wpływ na zadania i uruchamiania. Na przykład zdefiniowanie `envVars` w *VSWorkspaceSettings.json* dodaje zmienne środowiska określonego zewnętrznie uruchamianie poleceń.<br>Ten plik można tworzyć ręcznie.|
 
 Te *.json* pliki znajdują się w ukrytym folderze o nazwie *.vs* w folderze głównym kodu. *Tasks.vs.json* i *launch.vs.json* pliki są tworzone przez program Visual Studio na zgodnie z potrzebami, po wybraniu **skonfigurować zadania** lub **debugowania Ustawienia i uruchamiania** do pliku lub folderu w **Eksploratora rozwiązań**. Te *.json* pliki są ukryte, ponieważ użytkownicy zwykle nie chcesz zaewidencjonować je w kontroli źródła. Jednak jeśli chcesz mieć możliwość sprawdzania ich do kontroli źródła, przeciągnij pliki w folderze głównym w bazie kodu, gdzie są one widoczne.
 
@@ -193,7 +191,7 @@ Wiele *tasks.vs.json* pliki mogą znajdować się w głównych i podkatalogi baz
 - Katalog nadrzędny bieżący katalog do katalogu głównego.
 - Ustawienia plików w katalogu głównym.
 
-Mają zastosowanie następujące reguły agregacji *tasks.vs.json* i *VSWorkspaceSettings.json* plików. Instrukcje dotyczące sposobu ustawienia w innym pliku są agregowane zobacz sekcję odpowiednie dla tego pliku, w tym artykule.
+Mają zastosowanie następujące reguły agregacji *tasks.vs.json*. Instrukcje dotyczące sposobu ustawienia w innym pliku są agregowane zobacz sekcję odpowiednie dla tego pliku, w tym artykule.
 
 ### <a name="properties-for-tasksvsjson"></a>Właściwości pliku tasks.vs.json
 
@@ -289,10 +287,6 @@ Po zapisaniu tego pliku nazwa nowej konfiguracji, który pojawia się na liście
 
 > [!NOTE]
 > `configurations` Tablicy właściwości *launch.vs.json* są odczytywane z dwóch lokalizacji pliku&mdash;katalog główny bazie kodu i *.vs* katalogu. Jeśli występuje konflikt, pierwszeństwo mają wartość w *.vs\launch.vs.json*.
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Zdefiniuj ustawienia obszaru roboczego w VSWorkspaceSettings.json
-
-Można określić ogólne ustawienia, które mogą mieć wpływ na zadania i uruchamiane w programie *VSWorkspaceSettings.json* pliku. Na przykład, jeśli zdefiniujesz `envVars` w *VSWorkspaceSettings.json*, program Visual Studio dodaje zmienne środowiskowe określony do poleceń, które są uruchamiane na zewnątrz. Aby użyć tego pliku, musisz utworzyć go ręcznie.
 
 ## <a name="additional-settings-files"></a>Pliki dodatkowe ustawienia
 

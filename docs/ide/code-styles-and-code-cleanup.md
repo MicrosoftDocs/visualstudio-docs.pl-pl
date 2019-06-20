@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2ebad946d62016199212cfeaae54c32db74d4c
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 6144e5bf26436e7010e773fa7ac03ad24ad7c490
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64558294"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67290993"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
@@ -90,9 +90,14 @@ Dla C# ma plików kodu programu Visual Studio 2019 **oczyszczania kodu** przycis
 > [!TIP]
 > Zasady skonfigurowane za pomocą ważność **Brak** nie uczestniczyć w oczyszczania kodu, ale mogą być stosowane osobno za pośrednictwem **szybkie akcje i Refaktoryzacje** menu.
 
-Najpierw należy skonfigurować style kodu, które chcesz zastosować (w jednym z dwóch profilów) w **skonfigurować oczyszczania kodu** okno dialogowe. Aby otworzyć to okno dialogowe, kliknij strzałkę obok ikony miotła oczyszczania kodu, a następnie wybierz **skonfigurować oczyszczania kodu**. Lub naciśnij **Ctrl**+**K**, **Ctrl**+**Q**.
+Najpierw należy skonfigurować style kodu, które chcesz zastosować (w jednym z dwóch profilów) w **skonfigurować oczyszczania kodu** okno dialogowe. Aby otworzyć to okno dialogowe, kliknij strzałkę obok ikony miotła oczyszczania kodu, a następnie wybierz **skonfigurować oczyszczania kodu**.  
 
 ![Konfigurowanie oczyszczania kodu w Visual Studio 2019 r.](media/configure-code-cleanup.png)
+
+Po skonfigurowaniu oczyszczania kodu, możesz kliknąć ikonę miotła albo naciśnij **Ctrl**+**K**, **Ctrl**+**E** do uruchomienia kod czyszczenia. Można również uruchomić oczyszczania kodu dla całego projektu lub rozwiązania. Kliknij prawym przyciskiem myszy nazwę projektu lub rozwiązania w **Eksploratora rozwiązań**, wybierz opcję **analizy i oczyszczania kodu**, a następnie wybierz **Uruchom oczyszczanie kodu**.
+
+
+![Uruchamianie czyszczenia kodu dla całego projektu lub rozwiązania](media/run-code-cleanup-project-solution.png)
 
 Jeśli chcesz, aby Twoje ustawienia stylu kodu mają być stosowane w każdym razem, gdy plik jest zapisywany, może Cię zainteresować [oczyszczania kodu przy zapisywaniu](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave) rozszerzenia.
 

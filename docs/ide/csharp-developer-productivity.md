@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f623fd040bdd06b4d9de7c2258c6e907e2953edf
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 3b65b8bc50fb56ea4749852371ffde8f25bb7827
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043423"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291009"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Przewodnik dotyczący programu Visual Studio zwiększa produktywność C# deweloperów
 
@@ -57,6 +57,8 @@ Dostępne są następujące popularne skróty programu Visual Studio:
 | **CTRL**+**K**,**D** (profil domyślny) lub **Ctrl**+**E**,**D**  (Profilu w języku C#) | Formatuj dokument | Czyści formatowanie naruszeń w pliku na podstawie nowego wiersza, odstępy i ustawienia wcięć |
 | **CTRL**+ **\\** ,**Ctrl**+**E** (profil domyślny) lub **Ctrl** + **W**,**E** (profilu w języku C#) | Wyświetl listę błędów | Zobacz wszystkie błędy w dokumencie, projekt lub rozwiązanie |
 | **Alt** + **PgUp/PgDn** | Przejdź do następnego/poprzedniego wydania | Przejdź do poprzedniego/dalej błąd, ostrzeżenie, sugestii w dokumencie (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
+| **CTRL**+**K**, **/** | Przełącz jednowierszowego komentarza lub usuń znaczniki komentarza | To polecenie dodaje lub usuwa pojedynczy wiersz komentarza w zależności od tego, czy zaznaczenie jest już oznaczone jako |
+| **Ctrl**+**Shift**+ **/** | Przełącz blok komentarza lub usuń znaczniki komentarza | To polecenie dodaje lub usuwa blokowania komentarze, w zależności od wybranego |
 
 > [!NOTE]
 > Niektóre rozszerzenia unbind powiązania klawiszy programu Visual Studio domyślną. Aby użyć poleceń powyżej, Przywróć usługi powiązania klawiszy programu Visual Studio domyślne, przechodząc do **narzędzia** > **Import i eksport ustawień** > **Resetuj wszystkie ustawienia**  lub **narzędzia** > **opcje** > **klawiatury** > **resetowania**.
@@ -107,6 +109,10 @@ Możesz użyć *.editorconfig* plik skodyfikować Konwencji kodowania i ich podr
 Program Visual Studio oferuje na żądanie formatowania pliku kodu, w tym preferencji stylu kodu, w ramach **oczyszczania kodu** funkcji. Aby uruchomić kod czyszczenia, kliknij ikonę miotła w dolnej części edytora lub naciśnij klawisz **Ctrl**+**K**, **Ctrl**+**E**.
 
 ![Przycisk Wyczyść kod w Visual Studio 2019 r.](media/execute-code-cleanup.png)
+
+Można również uruchomić oczyszczania kodu dla całego projektu lub rozwiązania. Kliknij prawym przyciskiem myszy nazwę projektu lub rozwiązania w **Eksploratora rozwiązań**, wybierz opcję **analizy i oczyszczania kodu**, a następnie wybierz **Uruchom oczyszczanie kodu**.
+
+![Uruchamianie czyszczenia kodu dla całego projektu lub rozwiązania](media/run-code-cleanup-project-solution.png)
 
 Oprócz formatowania pliku dla miejsca do magazynowania, wcięcia, masę, **oczyszczania kodu** dotyczy także style zaznaczonego kodu. Preferencje dotyczące każdego stylu kodu są odczytywane z [pliku EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), jeśli nie masz projektu lub z [ustawienia stylu kodu](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) w **opcje** okno dialogowe.
 
