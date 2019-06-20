@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431842"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255982"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Często zadawane pytania dotyczące debugowania migawek w programie Visual Studio
 
@@ -169,7 +169,7 @@ Dla usługi App Service:
     - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
     > [!WARNING]
-    > Zmiany w ustawieniach aplikacji zostanie zainicjowana ponowne uruchomienie aplikacji. Szczegółowe informacje o ustawieniach aplikacji można znaleźć [tutaj](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings). 
+    > Zmiany w ustawieniach aplikacji zostanie zainicjowana ponowne uruchomienie aplikacji. Aby uzyskać więcej informacji na temat ustawień aplikacji, zobacz [skonfigurować aplikację usługi App Service w witrynie Azure portal](/azure/app-service/web-sites-configure).
 
 Dla usługi AKS:
 1. Aktualizacja z pliku Dockerfile, aby usunąć sekcje odpowiadające [Visual Studio Snapshot Debugger w obrazach Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).

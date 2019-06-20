@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9d82e3ace2cc26022a5ae39c690c5018a6325360
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261960"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253896"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla wtyczki EditorConfig
 
@@ -46,7 +46,7 @@ Na poniższej liście przedstawiono dopuszczalne wartości i można określić w
 - \* (Użyj tej wartości, aby określić wszystkie symbole)
 - — przestrzeń nazw
 - class
-- struktura 
+- struktura
 - interface
 - enum
 - property
@@ -209,6 +209,8 @@ Po zamknięciu i ponownym otwarciu pliku kodu, zamiast wyświetlanie sugestii w 
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Konwencje języka](editorconfig-language-conventions.md)
+- [Konwencje formatowania](editorconfig-formatting-conventions.md)
 - [Konwencje nazewnictwa platformy Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
-- [Konwencje dotyczące formatowania i języka .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Tworzenie przenośnych niestandardowy Edytor opcji](../ide/create-portable-custom-editor-options.md)
+- [.NET coding convention ustawienia dla wtyczki EditorConfig](editorconfig-code-style-settings-reference.md)

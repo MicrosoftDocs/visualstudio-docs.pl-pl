@@ -2,7 +2,7 @@
 title: Aktualizowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak zaktualizować program Visual Studio do najnowszej wersji, krok po kroku.
-ms.date: 06/18/2019
+ms.date: 06/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c28a7ecb7d7f1cf7be52f7d77af9551b94236233
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 27074b20aafe046d03b11f92d49b6af1a01c3067
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195102"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253671"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizacja programu Visual Studio do najnowszej wersji
 
@@ -164,7 +164,7 @@ Jeśli zostanie wybrane ignorowanie powiadomienie, program Visual Studio przesta
 
 Firma Microsoft zachęca do aktualizacji do maksymalnie [najnowszej wersji](/visualstudio/releases/2019/release-notes/) programu Visual Studio 2019 r, tak aby zawsze uzyskać najnowsze funkcje, poprawki i udoskonalenia.
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio 2019 r, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio 2019 r, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
 
 > [!IMPORTANT]
 > Musisz zalogować się za pomocą konta mającego uprawnienia administracyjne, aby zainstalować, zaktualizować lub zmodyfikuj program Visual Studio. Aby uzyskać więcej informacji, zobacz [uprawnienia użytkownika i program Visual Studio](../ide/user-permissions-and-visual-studio.md).

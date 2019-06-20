@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0bb0bdc4354274349076263f3302956f7123680b
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845993"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253992"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig
 
@@ -55,7 +55,7 @@ Edytor programu Visual Studio obsługuje podstawowy zestaw [właściwości Edito
 - Wstaw\_final_newline
 - root
 
-Ustawienia edytora EditorConfig są obsługiwane we wszystkich językach obsługiwanych przez program Visual Studio, z wyjątkiem XML. Ponadto obsługuje EditorConfig [styl kodu](../ide/editorconfig-code-style-settings-reference.md) i [nazewnictwa](../ide/editorconfig-naming-conventions.md) konwencje dotyczące języka C# i Visual Basic.
+Ustawienia edytora EditorConfig są obsługiwane we wszystkich językach obsługiwanych przez program Visual Studio, z wyjątkiem XML. Ponadto obsługuje EditorConfig [styl kodu](../ide/editorconfig-code-style-settings-reference.md) Konwencji, w tym [języka](../ide/editorconfig-language-conventions.md), [formatowanie](../ide/editorconfig-formatting-conventions.md), i [nazewnictwa](../ide/editorconfig-naming-conventions.md) konwencje C# i Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Dodawanie i usuwanie plików EditorConfig
 
@@ -175,7 +175,6 @@ Zakres usługi konwencje EditorConfig można kontrolować przez ustawienie ```ro
 ## <a name="see-also"></a>Zobacz także
 
 - [Konwencje stylu kodu .NET](../ide/editorconfig-code-style-settings-reference.md)
-- [Konwencje nazewnictwa platformy .NET](../ide/editorconfig-naming-conventions.md)
 - [Obsługa wtyczki EditorConfig dla usługi w języka](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Funkcje edytora kodu](writing-code-in-the-code-and-text-editor.md)

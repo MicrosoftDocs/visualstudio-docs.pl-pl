@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714473"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258133"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing — często zadawane pytania
 
@@ -197,15 +197,6 @@ Testy, które zależą od tych wartości może zakończyć się niepowodzeniem, 
 Można tworzyć rozwiązania, nawet wtedy, gdy nie jest wprowadzanie zmian, jeśli proces kompilacji rozwiązania generuje kod źródłowy, który jest częścią samego rozwiązania, a pliki docelowe kompilacji ma odpowiednie wejściami i wyjściami, określony. Obiekty docelowe powinien być podawany listy danych wejściowych i wyjściowych, aby program MSBuild mógł kontrole odpowiedniej aktualności i ustalić, czy wymagana jest nowa kompilacja.
 
 Live Unit Testing uruchamia kompilację, gdy wykryje, że zostały zmienione pliki źródłowe. Ponieważ kompilacji rozwiązania generuje pliki źródłowe, Live Unit Testing zostanie wyświetlony w pętli nieskończonej kompilacji. Jeśli jednak dane wejściowe i wyjściowe, obiektu docelowego są zaznaczone rozpoczęciu Live Unit Testing drugą kompilację (po wykryciu nowo wygenerowanych plików źródłowych z poprzedniej kompilacji), spowoduje przerwanie dostęp do najaktualniejszych kompilacji, ponieważ będzie sprawdza dane wejściowe i wyjściowe Wskazuje, że wszystko jest aktualne.  
-
-## <a name="lightweight-solution-load"></a>Uproszczone ładowanie rozwiązań
-
-**Jak odbywa się testowanie współpracują z funkcję uproszczone ładowanie rozwiązań jednostek na żywo?**
-
-Obecnie Live Unit Testing nie działa dobrze z funkcję uproszczone ładowanie rozwiązań. Działa tylko wtedy, gdy co najmniej jeden z projektów testów jest ładowany. W tym czasie nie będzie działać, ponieważ zależy od co najmniej jeden z projektów testów odwołujące się do adaptera testowego (MSTest, xUnit i NUnit) Live Unit Testing ładowany.
-
-> [!NOTE]
-> Uproszczone ładowanie rozwiązań nie jest już dostępne w programie Visual Studio 2017 w wersji 15.5 i nowszych wersjach. W programie Visual Studio 2017 w wersji 15.5 i nowszych dużych rozwiązań, które zawierają zarządzany kod obciążenia znacznie szybciej niż wcześniej, nawet bez uproszczone ładowanie rozwiązań.
 
 ## <a name="new-process-coverage"></a>Nowy proces pokrycia
 

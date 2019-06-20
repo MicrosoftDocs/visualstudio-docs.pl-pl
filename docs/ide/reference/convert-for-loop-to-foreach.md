@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811900"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261711"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refaktoryzacja do konwersji między pętla, a Instrukcja foreach
 
@@ -43,11 +43,11 @@ Przyczyny, należy przekonwertować [dla](/dotnet/csharp/language-reference/keyw
 
 1. Umieść swoje punkt wstawiania w `for` — słowo kluczowe.
 
-1. Naciśnij klawisz **Ctrl**+**.** lub kliknij przycisk śrubokręt ![ikonę śrubokręt](../media/screwdriver-icon.png) ikonę na marginesie pliku kodu.
+1. Naciśnij klawisz **Ctrl**+ **.** lub kliknij przycisk śrubokręt ![ikonę śrubokręt](../media/screwdriver-icon.png) ikonę na marginesie pliku kodu.
 
    ![Konwertuj na foreach menu](media/convert-to-foreach.png)
 
-1. Wybierz **Konwertuj na pętlę "foreach"**. Lub wybierz **podgląd zmian** otworzyć [podgląd zmian](../../ide/preview-changes.md) okna dialogowego, a następnie wybierz **Zastosuj**.
+1. Wybierz **Konwertuj na pętlę "foreach"** . Lub wybierz **podgląd zmian** otworzyć [podgląd zmian](../../ide/preview-changes.md) okna dialogowego, a następnie wybierz **Zastosuj**.
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Konwertuj instrukcję foreach do pętli for
 
@@ -71,16 +71,16 @@ Przyczyny, należy przekonwertować [foreach](/dotnet/csharp/language-reference/
 
 1. Umieść swoje punkt wstawiania w `foreach` lub `For Each` — słowo kluczowe.
 
-1. Naciśnij klawisz **Ctrl**+**.** lub kliknij przycisk śrubokręt ![ikonę śrubokręt](../media/screwdriver-icon.png) ikonę na marginesie pliku kodu.
+1. Naciśnij klawisz **Ctrl**+ **.** lub kliknij przycisk śrubokręt ![ikonę śrubokręt](../media/screwdriver-icon.png) ikonę na marginesie pliku kodu.
 
    ![Konwertuj na menu](media/convert-to-for.png)
 
-1. Wybierz **Konwertuj na pętlę "for"**. Lub wybierz **podgląd zmian** otworzyć [podgląd zmian](../../ide/preview-changes.md) okna dialogowego, a następnie wybierz **Zastosuj**.
+1. Wybierz **Konwertuj na pętlę "for"** . Lub wybierz **podgląd zmian** otworzyć [podgląd zmian](../../ide/preview-changes.md) okna dialogowego, a następnie wybierz **Zastosuj**.
 
 1. Ponieważ refaktoryzacji wprowadza nową zmienną liczbę iteracji **Zmień nazwę** pojawi się okno w prawym górnym rogu edytora. Jeśli chcesz wybrać inną nazwę zmiennej, wpisz go w, a następnie naciśnij klawisz **Enter** lub wybierz **Zastosuj** w **Zmień nazwę** pole. Jeśli nie chcesz wybrać nową nazwę, naciśnij klawisz **Esc** lub wybierz **Zastosuj** odrzucać **Zmień nazwę** pole.
 
 > [!NOTE]
-> Aby uzyskać C#, kod wygenerowany przez te operacje refaktoryzacji używa jawnego typu lub [var](/dotnet/csharp/language-reference/keywords/var) dla typu elementów w kolekcji. Typ w wygenerowanym kodzie jawnych lub niejawnych, zależy od ustawienia stylu kodu, które znajdują się w zakresie. Te ustawienia konkretnego stylu kodu są konfigurowane na poziomie komputera, w obszarze **narzędzia** > **opcje** > **edytora tekstów**  >  **C#**  >  **Styl kodu** > **ogólne** > **\'var " Preferencje**, lub na poziomie rozwiązania w [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types) pliku. Jeśli zmienisz ustawienia stylu kodu w **opcje**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
+> Aby uzyskać C#, kod wygenerowany przez te operacje refaktoryzacji używa jawnego typu lub [var](/dotnet/csharp/language-reference/keywords/var) dla typu elementów w kolekcji. Typ w wygenerowanym kodzie jawnych lub niejawnych, zależy od ustawienia stylu kodu, które znajdują się w zakresie. Te ustawienia konkretnego stylu kodu są konfigurowane na poziomie komputera, w obszarze **narzędzia** > **opcje** > **edytora tekstów**  >  **C#**  >  **Styl kodu** > **ogólne** >  **\'var " Preferencje**, lub na poziomie rozwiązania w [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) pliku. Jeśli zmienisz ustawienia stylu kodu w **opcje**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
 
 ## <a name="see-also"></a>Zobacz także
 
