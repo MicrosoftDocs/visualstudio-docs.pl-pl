@@ -80,6 +80,10 @@
 ### [Wprowadzenie do usługi Azure Functions](azure-functions.md)
 ### [Samouczek: Azure Functions](azure-functions-lab.md)
 ### [Usługi połączone](connected-services.md)
+## Docker
+### [Rozpoczynanie pracy z platformą Docker](docker-quickstart.md)
+### [Tworzenie aplikacji z wieloma kontenerami przy użyciu narzędzia Docker Compose](docker-multi-container.md)
+
 ## Projektowanie gier w środowisku Unity
 ### [Projektowanie gier w środowisku Unity](unity-tools.md)
 ### [Konfiguracja](setup-vsmac-tools-unity.md)

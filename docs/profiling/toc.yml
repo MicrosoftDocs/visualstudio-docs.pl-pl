@@ -24,9 +24,9 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Przewodniki z instrukcjami
   items:
-    - name: Analizowanie użycia procesora CPU
+    - name: Użycie procesora
       href: cpu-usage.md
-    - name: Analizowanie użycia pamięci
+    - name: Użycie pamięci
       items:
         - name: Analizowanie użycia pamięci
           href: analyze-memory-usage.md
@@ -48,7 +48,7 @@
       href: javascript-memory.md
     - name: Analizowanie czasu odpowiedzi interfejsu użytkownika HTML
       href: html-ui-responsiveness.md
-    - name: Używanie Eksploratora wydajności
+    - name: Eksplorator wydajności
       items:
         - name: Używanie Eksploratora wydajności
           href: performance-explorer.md
@@ -56,7 +56,7 @@
           href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
         - name: Narzędzia do oceny wydajności — omówienie
           items:
-            - name: Narzędzia do oceny wydajności — omówienie
+            - name: Omówienie narzędzi do oceny wydajności
               href: overviews-performance-tools.md
             - name: Sesja wydajności — omówienie
               href: performance-session-overview.md
@@ -78,7 +78,7 @@
               href: performance-session-properties.md
             - name: Profilowanie i bezpieczeństwo systemu Windows Vista
               href: profiling-and-windows-vista-security.md
-        - name: Narzędzia do oceny wydajności — wprowadzenie
+        - name: Wprowadzenie
           items:
             - name: Narzędzia do oceny wydajności — wprowadzenie
               href: getting-started-with-performance-tools.md
@@ -88,7 +88,7 @@
               href: how-to-collect-performance-data-for-a-web-site.md
             - name: Ręczne tworzenie sesji wydajności
               href: how-to-manually-create-performance-sessions.md
-        - name: Konfigurowanie sesji wydajności
+        - name: Konfiguracja
           items:
             - name: Konfigurowanie sesji wydajności
               href: configuring-performance-sessions.md
@@ -96,7 +96,7 @@
               href: how-to-reference-windows-symbol-information.md
             - name: Wybieranie metod zbierania
               href: how-to-choose-collection-methods.md
-            - name: Zbieranie statystyk wydajności za pomocą próbkowania
+            - name: Zbieranie statystyk wydajności
               items:
                 - name: Zbieranie statystyk wydajności za pomocą próbkowania
                   href: collecting-performance-statistics-by-using-sampling.md
@@ -106,7 +106,7 @@
                   href: how-to-collect-line-level-sampling-data.md
             - name: Zbieranie danych alokacji pamięci .NET i okresu istnienia
               href: collecting-dotnet-memory-allocation-and-lifetime-data.md
-            - name: Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji
+            - name: Zbieranie szczegółowych danych o chronometrażu
               items:
                 - name: Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji
                   href: collecting-detailed-timing-data-by-using-instrumentation.md
@@ -124,7 +124,7 @@
               href: collecting-thread-and-process-concurrency-data.md
             - name: Zbieranie danych o interakcji między warstwami
               href: collecting-tier-interaction-data.md
-            - name: Zbieranie dodatkowych danych o wydajności
+            - name: Dodatkowe dane o wydajności
               items:
                 - name: Zbieranie dodatkowych danych o wydajności
                   href: collecting-additional-performance-data.md
@@ -148,7 +148,7 @@
               href: how-to-specify-the-dotnet-framework-runtime.md
         - name: Sterowanie zbieraniem danych
           items:
-            - name: Sterowanie zbieraniem danych
+            - name: Jak sterować zbieraniem danych
               href: controlling-data-collection.md
             - name: Rozpoczynanie i zatrzymywanie zbierania danych o wydajności
               href: how-to-start-and-end-performance-data-collection.md
@@ -162,11 +162,11 @@
               href: how-to-limit-instrumentation-to-specific-functions.md
             - name: Wykluczanie lub uwzględnianie krótkich funkcji z instrumentacji
               href: how-to-exclude-or-include-short-functions-from-instrumentation.md
-        - name: Analizowanie danych dotyczących narzędzi do oceny wydajności
+        - name: Dane dotyczące narzędzi do oceny wydajności
           items:
             - name: Analizowanie danych dotyczących narzędzi do oceny wydajności
               href: analyzing-performance-tools-data.md
-            - name: Korzystanie z reguł wydajności do analizowania danych
+            - name: Reguły wydajności na potrzeby analizy
               items:
                 - name: Korzystanie z reguł wydajności do analizowania danych
                   href: using-performance-rules-to-analyze-data.md
@@ -176,13 +176,13 @@
                   href: how-to-configure-performance-rules.md
                 - name: Reguły wydajności — dokumentacja
                   items:
-                    - name: Reguły wydajności — dokumentacja
+                    - name: Omówienie reguł wydajności — dokumentacja
                       href: performance-rules-reference.md
                     - name: Reguły wydajności według identyfikatora
                       href: performance-rules-by-id.md
                     - name: Reguły wydajności dotyczące użycia programu .NET Framework
                       items:
-                        - name: Reguły wydajności dotyczące użycia programu .NET Framework
+                        - name: Omówienie reguł wydajności dotyczących użycia programu .NET Framework
                           href: dotnet-framework-usage-performance-rules.md
                         - name: 'DA0001: Użyj klasy StringBuilder do konkatenacji'
                           href: da0001-use-stringbuilder-for-concatenations.md
@@ -216,15 +216,15 @@
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Reguły wydajności pamięci i stronicowania
                       items:
-                        - name: Reguły wydajności pamięci i stronicowania
+                        - name: Omówienie reguł wydajności pamięci i stronicowania
                           href: memory-and-paging-performance-rules.md
                         - name: 'DA0014: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
                         - name: 'DA0017: Intensywne stronicowanie aktywnej pamięci na dysk'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
-                    - name: Reguły korzystania z narzędzi profilowania
+                    - name: Reguły użycia narzędzi profilowania
                       items:
-                        - name: Reguły korzystania z narzędzi profilowania
+                        - name: Omówienie reguł użycia narzędzi profilowania
                           href: profiling-tools-usage-rules.md
                         - name: 'DA0002: Brak biblioteki VSPerfCorProf.dll'
                           href: da0002-vsperfcorprof-dll-is-missing.md
@@ -242,7 +242,7 @@
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Reguły wydajności monitorowania zasobu
                       items:
-                        - name: Reguły wydajności monitorowania zasobu
+                        - name: Omówienie reguł wydajności monitorowania zasobu
                           href: resource-monitoring-performance-rules.md
                         - name: 'DA0501: Średnie użycie procesora przez profilowany proces'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
@@ -258,13 +258,13 @@
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Widoki raportu wydajności
               items:
-                - name: Widoki raportu wydajności
+                - name: Omówienie widoków raportu wydajności
                   href: performance-report-views.md
                 - name: Raport dotyczący wydajności — omówienie
                   href: performance-report-overview.md
                 - name: Widok typowych danych
                   items:
-                    - name: Widok typowych danych
+                    - name: Omówienie widoków typowych danych
                       href: common-data-views.md
                     - name: Widok procesu
                       href: process-view.md
@@ -288,9 +288,9 @@
                       href: function-details-view.md
                     - name: Zdarzenia śledzenia dla systemu Windows (ETW) — Raport
                       href: event-tracing-for-windows-etw-report.md
-                - name: Widoki danych metody próbkowania profilera
+                - name: Widok danych metody próbkowania profilera
                   items:
-                    - name: Widoki danych metody próbkowania profilera
+                    - name: Omówienie widoków danych metody próbkowania profilera
                       href: profiler-sampling-method-data-views.md
                     - name: Widok podsumowania — dane próbkowania
                       href: summary-view-sampling-data.md
@@ -308,7 +308,7 @@
                       href: instruction-pointers-ips-view-sampling-data.md
                 - name: Widok danych metody instrumentacji
                   items:
-                    - name: Widok danych metody instrumentacji
+                    - name: Omówienie widoków danych metody instrumentacji
                       href: instrumentation-method-data-views.md
                     - name: Widok podsumowania — dane instrumentacji
                       href: summary-view-instrumentation-data.md
@@ -322,7 +322,7 @@
                       href: functions-view-instrumentation-data.md
                 - name: Widoki danych pamięci platformy .NET
                   items:
-                    - name: Widoki danych pamięci platformy .NET
+                    - name: Omówienie widoków danych pamięci platformy .NET
                       href: dotnet-memory-data-views.md
                     - name: Widok podsumowania — dane pamięci platformy .NET
                       href: summary-view-dotnet-memory-data.md
@@ -352,7 +352,7 @@
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: Widok danych kontencji zasobów
                   items:
-                    - name: Widok danych kontencji zasobów
+                    - name: Omówienie widoków danych kontencji zasobów
                       href: resource-contention-data-views.md
                     - name: Widok podsumowania — widok rywalizacji o zasoby
                       href: summary-view-resource-contention-view.md
@@ -378,11 +378,11 @@
                       href: instruction-pointers-ips-view-contention-data.md
                 - name: Widok interakcji warstwowej
                   items:
-                    - name: Widok interakcji warstwowej
+                    - name: Omówienie widoku interakcji warstwowych
                       href: tier-interaction-views.md
                     - name: Widok interakcji warstwowych
                       href: tier-interactions-view.md
-            - name: Dostosowywanie widoków raportów narzędzi wydajności
+            - name: Dostosowywanie widoków
               items:
                 - name: Dostosowywanie widoków raportów narzędzi wydajności
                   href: customizing-performance-tools-report-views.md
@@ -400,7 +400,7 @@
                   href: how-to-filter-profiling-tools-report-views-to-display-just-my-code.md
         - name: Porównywanie plików danych dotyczących wydajności
           items:
-            - name: Porównywanie plików danych dotyczących wydajności
+            - name: Omówienie porównywania plików danych dotyczących wydajności
               href: comparing-performance-data-files.md
             - name: Porównywanie plików danych dotyczących wydajności
               href: how-to-compare-performance-data-files.md
@@ -408,7 +408,7 @@
           href: saving-symbol-information-with-performance-data-files.md
         - name: Zapisywanie i eksportowanie danych dotyczących narzędzi wydajności
           href: saving-and-exporting-performance-tools-data.md
-        - name: Używanie narzędzi profilowania w wierszu polecenia
+        - name: Narzędzia profilowania w wierszu polecenia
           items:
             - name: Używanie narzędzi profilowania w wierszu polecenia
               href: using-the-profiling-tools-from-the-command-line.md
@@ -420,11 +420,11 @@
               href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
             - name: Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
               href: adding-tier-interaction-data-from-the-command-line.md
-            - name: Profilowanie wiersza polecenia aplikacji autonomicznych
+            - name: Aplikacje autonomiczne
               items:
                 - name: Profilowanie wiersza polecenia aplikacji autonomicznych
                   href: command-line-profiling-of-stand-alone-applications.md
-                - name: Zbieranie statystyk aplikacji dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
+                - name: Zbieranie statystyk aplikacji dla aplikacji autonomicznych
                   items:
                     - name: Zbieranie statystyk aplikacji dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
                       href: collecting-application-statistics-for-stand-alone-applications.md
@@ -434,7 +434,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
                     - name: Dołączanie profilera do autonomicznej aplikacji natywnej i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
-                - name: Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia profilera
+                - name: Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej
                   items:
                     - name: Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia profilera
                       href: collecting-detailed-timing-data-for-a-stand-alone-application.md
@@ -442,7 +442,7 @@
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
                     - name: Instrumentowanie autonomicznego składnika natywnego i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
                       href: how-to-instrument-a-native-component-and-collect-timing-data.md
-                - name: Zbieranie danych współbieżności dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
+                - name: Zbieranie danych współbieżności dla aplikacji autonomicznych
                   items:
                     - name: Zbieranie danych współbieżności dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
                       href: collecting-concurrency-data-for-stand-alone-applications.md
@@ -454,7 +454,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
                     - name: Dołączanie profilera do natywnej aplikacji autonomicznej i zbieranie danych współbieżności przy użyciu wiersza polecenia
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
-                - name: Zbieranie danych pamięci .NET Framework dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
+                - name: Zbieranie danych pamięci .NET Framework dla aplikacji autonomicznych
                   items:
                     - name: Zbieranie danych pamięci .NET Framework dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
                       href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
@@ -466,19 +466,19 @@
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
                 - name: 'Przewodnik: Profilowanie wiersza polecenia przy użyciu próbkowania'
                   href: walkthrough-command-line-profiling-using-sampling.md
-            - name: Profilowanie wiersza polecenia aplikacji internetowych ASP.NET
+            - name: Aplikacje internetowe ASP.NET
               items:
                 - name: Profilowanie wiersza polecenia aplikacji internetowych ASP.NET
                   href: command-line-profiling-of-aspnet-web-applications.md
                 - name: Szybkie profilowanie witryny internetowej za pomocą polecenia VSPerfASPNETCmd
                   href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
-                - name: Zbieranie statystyk aplikacji dla aplikacji internetowych ASP.NET przy użyciu metody próbkowania profilera z wiersza polecenia
+                - name: Zbieranie statystyk aplikacji dla aplikacji internetowych ASP.NET przy użyciu metody próbkowania profilera
                   items:
                     - name: Zbieranie statystyk aplikacji dla aplikacji internetowych ASP.NET przy użyciu metody próbkowania profilera z wiersza polecenia
                       href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
                     - name: Dołączanie profilera do aplikacji internetowej ASP.NET w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Zbieranie szczegółowych danych o chronometrażu dla aplikacji internetowej ASP.NET przy użyciu metody instrumentacji profilera z wiersza polecenia
+                - name: Zbieranie szczegółowych danych o chronometrażu dla aplikacji internetowej ASP.NET przy użyciu metody instrumentacji profilera
                   items:
                     - name: Zbieranie szczegółowych danych o chronometrażu dla aplikacji internetowej ASP.NET przy użyciu metody instrumentacji profilera z wiersza polecenia
                       href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
@@ -486,13 +486,13 @@
                       href: how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md
                     - name: Instrumentacja dynamicznie skompilowanej aplikacji internetowej ASP.NET i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera
                       href: how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md
-                - name: Zbieranie danych współbieżności dla aplikacji internetowej ASP.NET przy użyciu wiersza polecenia profilera
+                - name: Zbieranie danych współbieżności dla aplikacji internetowej ASP.NET
                   items:
                     - name: Zbieranie danych współbieżności dla aplikacji internetowej ASP.NET przy użyciu wiersza polecenia profilera
                       href: collecting-concurrency-data-for-an-aspnet-web-application.md
                     - name: Dołączanie profilera do aplikacji internetowej ASP.NET w celu zbierania danych współbieżności przy użyciu wiersza polecenia
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Zbieranie danych pamięci z aplikacji internetowej ASP.NET przy użyciu wiersza polecenia profilera
+                - name: Zbieranie danych pamięci z aplikacji internetowej ASP.NET
                   items:
                     - name: Zbieranie danych pamięci z aplikacji internetowej ASP.NET przy użyciu wiersza polecenia profilera
                       href: collecting-memory-data-from-an-aspnet-web-application.md
@@ -516,7 +516,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
                     - name: Dołączanie profilera do usługi natywnej w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody instrumentacji z poziomu wiersza polecenia profilera
+                - name: Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody instrumentacji
                   items:
                     - name: Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody instrumentacji z poziomu wiersza polecenia profilera
                       href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
@@ -524,7 +524,7 @@
                       href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
                     - name: Instrumentowanie usługi natywnej i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera
                       href: how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
-                - name: Zbieranie danych współbieżności dla usługi przy użyciu wiersza polecenia profilera
+                - name: Zbieranie danych współbieżności dla usługi
                   items:
                     - name: Zbieranie danych współbieżności dla usługi przy użyciu wiersza polecenia profilera
                       href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
@@ -532,7 +532,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
                     - name: Dołączanie profilera do usługi natywnej w celu zbierania danych współbieżności przy użyciu wiersza polecenia
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Zbieranie danych pamięci z usług .NET Framework przy użyciu wiersza polecenia profilera
+                - name: Zbieranie danych pamięci z usług .NET Framework
                   items:
                     - name: Zbieranie danych pamięci z usług .NET Framework przy użyciu wiersza polecenia profilera
                       href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
@@ -542,7 +542,7 @@
                       href: how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md
             - name: Tworzenie raportów profilera z poziomu wiersza polecenia
               items:
-                - name: Tworzenie raportów profilera z poziomu wiersza polecenia
+                - name: Omówienie tworzenia raportów profilera z poziomu wiersza polecenia
                   href: creating-profiler-reports-from-the-command-line.md
                 - name: Tworzenie podstawowych raportów profilowania z poziomu wiersza polecenia
                   href: creating-basic-profiling-reports-from-the-command-line.md
@@ -560,7 +560,7 @@
               href: how-to-install-the-stand-alone-profiler.md
             - name: Narzędzia profilowania wiersza polecenia — dokumentacja
               items:
-                - name: Narzędzia profilowania wiersza polecenia — dokumentacja
+                - name: Omówienie narzędzi profilowania wiersza polecenia — dokumentacja
                   href: command-line-profiling-tools-reference.md
                 - name: VSInstr
                   href: vsinstr.md
@@ -638,11 +638,11 @@
           href: profiling-on-hpc-high-performance-computing-clusters.md
         - name: Interfejsy API narzędzi profilowania
           items:
-            - name: Interfejsy API narzędzi profilowania
+            - name: Omówienie interfejsów API narzędzi profilowania
               href: profiling-tools-apis.md
             - name: Natywne interfejsy API profilera Visual Studio — odwołanie
               items:
-                - name: Natywne interfejsy API profilera Visual Studio — odwołanie
+                - name: Dokumentacja interfejsów API profilera programu Visual Studio (natywnych) — omówienie
                   href: visual-studio-profiler-api-reference-native.md
                 - name: CommentMarkAtProfile
                   href: commentmarkatprofile.md
@@ -670,7 +670,7 @@
           href: troubleshooting-performance-tools-issues.md
     - name: Concurrency Visualizer
       items:
-        - name: Concurrency Visualizer
+        - name: Omówienie narzędzia Concurrency Visualizer
           href: concurrency-visualizer.md
         - name: Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
           href: common-patterns-for-poorly-behaved-multithreaded-applications.md
@@ -678,7 +678,7 @@
           href: utilization-navigator.md
         - name: Widok wykorzystania
           items:
-            - name: Widok wykorzystania
+            - name: Omówienie widoku wykorzystania
               href: utilization-view.md
             - name: Wykres wykorzystania CPU
               href: cpu-utilization-graph.md
@@ -696,7 +696,7 @@
               href: gpu-activity-other-processes.md
         - name: Widok wątków (Parallel Performance)
           items:
-            - name: Widok wątków (Parallel Performance)
+            - name: Omówienie widoku wątków (Parallel Performance)
               href: threads-view-parallel-performance.md
             - name: Raport profilowania czasu blokowania
               href: blocking-time-profile-report.md
@@ -760,7 +760,7 @@
               href: zoom-control-threads-view.md
         - name: Widok rdzeni
           items:
-            - name: Widok rdzeni
+            - name: Omówienie widoku rdzeni
               href: cores-view.md
             - name: Widok rdzeni — Legenda
               href: cores-view-legend.md
@@ -774,7 +774,7 @@
           href: advanced-settings-dialog-box-concurrency-visualizer.md
         - name: Znaczniki Concurrency Visualizer
           items:
-            - name: Znaczniki Concurrency Visualizer
+            - name: Omówienie znaczników narzędzia Concurrency Visualizer
               href: concurrency-visualizer-markers.md
             - name: Znaczniki typu flaga
               href: flag-markers.md
@@ -786,13 +786,13 @@
               href: visualizing-eventsource-events-as-markers.md
         - name: Concurrency Visualizer SDK
           items:
-            - name: Concurrency Visualizer SDK
+            - name: Omówienie zestawu Concurrency Visualizer SDK
               href: concurrency-visualizer-sdk.md
             - name: Korzystanie ze znaczników zestawu SDK narzędzia Concurrency Visualizer
               href: how-to-use-the-concurrency-visualizer-markers-sdk.md
             - name: Odwołanie do biblioteki C++
               items:
-                - name: Odwołanie do biblioteki C++
+                - name: Odwołanie do biblioteki C++ — omówienie
                   href: cpp-library-reference.md
                 - name: Przestrzeń nazwy współbieżności (Concurrency Visualizer)
                   items:
@@ -830,7 +830,7 @@
                           href: marker-importance-enumeration.md
             - name: Odwołanie do biblioteki C
               items:
-                - name: Odwołanie do biblioteki C
+                - name: Odwołanie do biblioteki C — omówienie
                   href: c-library-reference.md
                 - name: CvCreateDefaultMarkerSeriesOfDefaultProvider — Funkcja
                   href: cvcreatedefaultmarkerseriesofdefaultprovider-function.md
