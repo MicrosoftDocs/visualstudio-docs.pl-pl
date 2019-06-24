@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bb0bdc4354274349076263f3302956f7123680b
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253992"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328805"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig
 
@@ -59,11 +59,11 @@ Ustawienia edytora EditorConfig są obsługiwane we wszystkich językach obsług
 
 ## <a name="add-and-remove-editorconfig-files"></a>Dodawanie i usuwanie plików EditorConfig
 
-Dodawanie polecenia EditorConfig plik do projektu lub codebase nie konwertuje istniejące style na nowe licencje. Na przykład jeśli masz wcięcia w pliku, które są formatowane przy użyciu kart i Dodaj plik wtyczki EditorConfig, który wcięcia ze spacjami, znaki wcięcia nie są automatycznie konwertowane na spacje. Jednak wszelkie nowe wiersze kodu są sformatowane zgodnie z plików EditorConfig. Ponadto jeśli formatowania dokumentu (**Edytuj** > **zaawansowane** > **Formatuj dokument** lub **Ctrl** + **K**, **Ctrl**+**D**), ustawienia w pliku EditorConfig są stosowane do istniejących wierszy kodu.
+Podczas dodawania pliku EditorConfig do projektu lub codebase, wszelkie nowe wiersze kodu są sformatowane zgodnie z plików EditorConfig. Jednak dodawania pliku EditorConfig nie konwertować istniejące style nowe licencje do momentu formatowania dokumentu. Na przykład jeśli masz wcięcia w pliku, które są formatowane przy użyciu kart, a następnie dodaj plik wtyczki EditorConfig, który wcięcia ze spacjami, znaki wcięcia nie są automatycznie konwertowane na spacje. Podczas formatowania dokumentu (**Edytuj** > **zaawansowane** > **Formatuj dokument** lub **Ctrl** + **K**, **Ctrl**+**D**), ustawienia w pliku EditorConfig są stosowane do istniejących wierszy kodu.
 
-Usuwanie pliku EditorConfig z projektu lub bazie kodu, musisz zamknąć i ponownie otworzyć wszystkie pliki Otwórz kod, aby przywrócić ustawienia globalne edytora dla nowych wierszy kodu.
+Jeśli usuwanie pliku EditorConfig z projektu lub codebase i chcesz, aby nowe wiersze kodu formatowana zgodnie z ustawieniami edytora globalne, musisz zamknąć i ponownie otworzyć wszystkie pliki otwarte kodu.
 
-### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Aby dodać plik wtyczki EditorConfig do projektu lub rozwiązania
+### <a name="add-an-editorconfig-file-to-a-project"></a>Dodawanie pliku EditorConfig do projektu
 
 1. Otwórz projekt lub rozwiązanie w programie Visual Studio. Wybierz węzeł projektu lub rozwiązania, w zależności od tego, czy Twoje *.editorconfig* ustawienia dotyczą wszystkich projektów w rozwiązaniu lub jedna z tych metod. Możesz również wybrać folder, w projekcie lub rozwiązaniu, aby dodać *.editorconfig* plik.
 
@@ -71,34 +71,27 @@ Usuwanie pliku EditorConfig z projektu lub bazie kodu, musisz zamknąć i ponown
 
    **Dodaj nowy element** zostanie otwarte okno dialogowe.
 
-1. W kategorii po lewej stronie, wybierz **ogólne**, a następnie wybierz **plik tekstowy** szablonu. W **nazwa** tekstu wprowadź `.editorconfig` , a następnie wybierz **Dodaj**.
+1. W polu wyszukiwania, wyszukaj **editorconfig**.
+
+   Dwa **editorconfig pliku** szablony elementu są wyświetlane w wynikach wyszukiwania.
+
+   ![Szablony elementów pliku EditorConfig w programie Visual Studio](media/editorconfig-item-templates.png)
+
+1. Wybierz **editorconfig pliku (ustawienie domyślne)** szablon, aby dodać plik wtyczki EditorConfig wstępnie wypełnione przy użyciu dwa podstawowe opcje polecenia EditorConfig styl wcięcia i rozmiar. Lub wybierz **editorconfig pliku (.NET)** szablon, aby dodać plik wtyczki EditorConfig wstępnie wypełnione przy użyciu domyślnego [stylu kodu .NET, formatowania i konwencje nazewnictwa](../ide/editorconfig-code-style-settings-reference.md).
 
    *.Editorconfig* plik pojawia się w Eksploratorze rozwiązań, a zostanie on otwarty w edytorze.
 
-   ![pliku .editorconfig w Eksploratorze rozwiązań](media/editorconfig-in-solution-explorer.png)
+   ![pliku .editorconfig w Eksploratorze rozwiązań i edytora](media/editorconfig-dotnet.png)
 
-1. Przeprowadź edycję pliku zgodnie z potrzebami, na przykład:
-
-   ```ini
-   root = true
-
-   [*.{cs,vb}]
-   indent_size = 4
-   trim_trailing_whitespace = true
-
-   [*.cs]
-   csharp_new_line_before_open_brace = methods
-   ```
+1. Przeprowadź edycję pliku zgodnie z potrzebami.
 
 ### <a name="other-ways-to-add-an-editorconfig-file"></a>Inne sposoby dodawania pliku EditorConfig
 
 Istnieje kilka innych sposobów, w pliku EditorConfig można dodać do projektu:
 
-- Zainstaluj [rozszerzeń usługi językowej EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) można łatwo dodać pustą *.editorconfig* plik do projektu. Po zainstalowaniu tego rozszerzenia, po prostu wybierz **Dodaj** > **pliku .editorconfig** menu kontekście lub kliknij prawym przyciskiem myszy węzeł rozwiązania, węzeł projektu lub dowolnym folderze w usłudze  **Eksplorator rozwiązań**. To rozszerzenie również zwiększa doświadczenie w edytowaniu dla *.editorconfig* pliku.
+- [Funkcja wnioskowania kodu](/visualstudio/intellicode/code-style-inference) z IntelliCode dla programu Visual Studio wnioskuje style kodu z istniejącego kodu. Następnie tworzy pusty plik wtyczki EditorConfig za pomocą preferencji stylu kodu już zdefiniowane.
 
-   ![Dodawanie pliku .editorconfig z rozszerzeniem](media/editorconfig-extension-add.png)
-
-- Wypróbuj [rozszerzenia IntelliCode](/visualstudio/intellicode/intellicode-visual-studio). To rozszerzenie eksperymentalne wnioskuje style kodu z istniejącego kodu, a następnie tworzy niepusty *.editorconfig* plików za pomocą preferencji stylu kodu już zdefiniowane.
+- Począwszy od programu Visual Studio 2019 r można [Generowanie pliku EditorConfig na podstawie własnych ustawień styl kodu](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) w **narzędzia** > **opcje**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Pierwszeństwo i hierarchii plików
 

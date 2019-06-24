@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 6144e5bf26436e7010e773fa7ac03ad24ad7c490
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: c31a04d5471224ed8433bba70baa5bd1dae9125e
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290993"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328763"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
@@ -30,8 +30,7 @@ Można zdefiniować kod stylu ustawień projektów za pomocą [pliku EditorConfi
 
 ::: moniker range=">=vs-2019"
 
-Możesz ręcznie wypełnić pliku EditorConfig lub możesz automatycznie wygenerować plik, w oparciu o ustawienia stylu kodu został ustawiony w programie Visual Studio **opcje** okno dialogowe C# lub Edytor tekstu Visual Basic. Ta strona opcji znajduje się w temacie **narzędzia** > **opcje** > **edytora tekstów** > [**C#** lub  **Podstawowe**] > **styl kodu** > **ogólne**.
-Kliknij przycisk **Generowanie pliku .editorconfig w ustawieniach** do automatycznego generowania stylem kodowania *.editorconfig* pliku na podstawie ustawień w tym **opcje** strony.
+Możesz ręcznie wypełnić pliku EditorConfig lub możesz automatycznie wygenerować plik, w oparciu o ustawienia stylu kodu, które są wybrane w programie Visual Studio **opcje** okno dialogowe. Ta strona opcji znajduje się w temacie **narzędzia** > **opcje** > **edytora tekstów** > [**C#** lub  **Podstawowe**] > **styl kodu** > **ogólne**. Kliknij przycisk **Generowanie pliku .editorconfig w ustawieniach** do automatycznego generowania stylem kodowania *.editorconfig* pliku na podstawie ustawień w tym **opcje** strony.
 
 ![Generowanie plików editorconfig na podstawie ustawień w Visual Studio 2019 r.](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -90,12 +89,11 @@ Dla C# ma plików kodu programu Visual Studio 2019 **oczyszczania kodu** przycis
 > [!TIP]
 > Zasady skonfigurowane za pomocą ważność **Brak** nie uczestniczyć w oczyszczania kodu, ale mogą być stosowane osobno za pośrednictwem **szybkie akcje i Refaktoryzacje** menu.
 
-Najpierw należy skonfigurować style kodu, które chcesz zastosować (w jednym z dwóch profilów) w **skonfigurować oczyszczania kodu** okno dialogowe. Aby otworzyć to okno dialogowe, kliknij strzałkę obok ikony miotła oczyszczania kodu, a następnie wybierz **skonfigurować oczyszczania kodu**.  
+Najpierw należy skonfigurować style kodu, które chcesz zastosować (w jednym z dwóch profilów) w **skonfigurować oczyszczania kodu** okno dialogowe. Aby otworzyć to okno dialogowe, kliknij strzałkę obok ikony miotła oczyszczania kodu, a następnie wybierz **skonfigurować oczyszczania kodu**.
 
 ![Konfigurowanie oczyszczania kodu w Visual Studio 2019 r.](media/configure-code-cleanup.png)
 
 Po skonfigurowaniu oczyszczania kodu, możesz kliknąć ikonę miotła albo naciśnij **Ctrl**+**K**, **Ctrl**+**E** do uruchomienia kod czyszczenia. Można również uruchomić oczyszczania kodu dla całego projektu lub rozwiązania. Kliknij prawym przyciskiem myszy nazwę projektu lub rozwiązania w **Eksploratora rozwiązań**, wybierz opcję **analizy i oczyszczania kodu**, a następnie wybierz **Uruchom oczyszczanie kodu**.
-
 
 ![Uruchamianie czyszczenia kodu dla całego projektu lub rozwiązania](media/run-code-cleanup-project-solution.png)
 

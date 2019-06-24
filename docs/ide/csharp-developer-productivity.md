@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3b65b8bc50fb56ea4749852371ffde8f25bb7827
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: bd36b75f3df640df0e1910fb3a7a52d17c37d30f
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291009"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328776"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Przewodnik dotyczący programu Visual Studio zwiększa produktywność C# deweloperów
 
@@ -78,31 +78,27 @@ Program Visual Studio zawiera funkcję o nazwie **przejdź do wszystkich** (**Ct
 
 ## <a name="enforce-code-style-rules"></a>Wymuszanie reguł stylu kodu
 
-Możesz użyć *.editorconfig* plik skodyfikować Konwencji kodowania i ich podróży z źródła.
+Można użyć pliku EditorConfig skodyfikowanie Konwencji kodowania i ich podróży z źródła.
 
-::: moniker range="vs-2017"
+![Wymuszanie stylu kodu w programie Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
-- Możesz zainstalować [rozszerzenia usługi w języka EditorConfig](https://aka.ms/editorconfig), który można łatwo dodawać i edytować *.editorconfig* pliku w programie Visual Studio.
+- Dodaj domyślną lub. Styl NET EditorConfig plik do projektu, wybierając **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, wyszukaj "editorconfig". Wybierz jedną z **editorconfig pliku** elementu szablony, a następnie wybierz **Dodaj**.
 
-::: moniker-end
+   ![Szablony elementów polecenia EditorConfig w programie Visual Studio](media/editorconfig-item-templates.png)
 
 ::: moniker range=">=vs-2019"
 
-- Automatycznie twórz *.editorconfig* plik z ustawienia stylu kodu w **narzędzia** > **opcje** > **Edytor tekstu**  > **C#** > **Styl kodu**.
+- Automatycznie twórz *.editorconfig* ustawienia stylu kodu w oparciu o plik **narzędzia** > **opcje** > **tekstu Edytor** > **C#** > **styl kodu**.
 
    ![Generowanie pliku .editorconfig z ustawień w 2019 programu VS](media/vs-2019/generate-editorconfig-file.png)
 
 ::: moniker-end
 
-- Wypróbuj [rozszerzenia IntelliCode dla programu Visual Studio](/visualstudio/intellicode/intellicode-visual-studio). Rozszerzenie IntelliCode wnioskuje style kodu z istniejącego kodu, a następnie tworzy niepusty *.editorconfig* plików za pomocą preferencji stylu kodu już zdefiniowane.
+- [Funkcja wnioskowania kodu](/visualstudio/intellicode/code-style-inference) z IntelliCode dla programu Visual Studio wnioskuje style kodu z istniejącego kodu. Następnie tworzy pusty plik wtyczki EditorConfig za pomocą preferencji stylu kodu już zdefiniowane.
 
-- Zapoznaj się z [opcjami Konwencji kodowania .NET](editorconfig-code-style-settings-reference.md) dokumentacji.
+Zapoznaj się z [opcjami Konwencji kodowania .NET](editorconfig-code-style-settings-reference.md) dokumentacji zawiera również przykład całego pliku EditorConfig.
 
-- Zobacz [to gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) przykład *.editorconfig* pliku.
-
-![Wymuszanie stylu kodu w programie Visual Studio](../ide/media/VSGuide_CodeStyle.png)
-
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="code-cleanup"></a>Oczyszczanie kodu
 
@@ -124,18 +120,19 @@ Program Visual Studio jest dostarczany z wiele operacji refaktoryzacji, akcji ge
 
 Popularne szybkich poprawek i operacje refaktoryzacji obejmują:
 
-- *Zmiana nazwy*
-- *Wyodrębnianie metody*
-- *Zmiana sygnatury metody*
-- *Generowanie konstruktora*
-- *Generowanie metody*
-- *Przeniesienie typu do pliku*
-- *Dodaj sprawdzanie wartości Null*
-- *Dodaj parametr*
-- *Usuń niepotrzebne użycia*
-- *Pętla foreach do zapytań LINQ lub metoda LINQ*
-- *Obudowach elementów członkowskich*
-- Aby uzyskać więcej informacji, zobacz [funkcjom generowania kodu](code-generation-in-visual-studio.md)
+- Zmień nazwę
+- Wyodrębnij metodę
+- Zmiana sygnatury metody
+- Generowanie konstruktora
+- Generuj metodę
+- Przeniesienie typu do pliku
+- Dodaj sprawdzanie wartości Null
+- Dodaj parametr
+- Usuń niepotrzebne użycia
+- Pętla foreach do zapytań LINQ lub metoda LINQ
+- Obudowach elementów członkowskich
+
+Aby uzyskać więcej informacji, zobacz [funkcjom generowania kodu](code-generation-in-visual-studio.md).
 
 Możesz [zainstalować analizatory FxCop analizujące kod](../code-quality/install-fxcop-analyzers.md) do problemów z kodem flagi. Ewentualnie zapisu własnych refaktoryzacji lub kod naprawy w [analizatorów Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 
@@ -165,7 +162,7 @@ Program Visual Studio oferuje wiele funkcji, aby pomóc wyszukiwanie i [Nawiguj 
 
 ## <a name="improved-intellisense"></a>Ulepszona funkcja IntelliSense
 
-Pobierz [IntelliCode dla programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) można pobrać [uzupełnianie kodu oparte na kontekście](/visualstudio/intellicode/intellicode-visual-studio) zamiast po prostu uzyskać alfabetyczną listę. Możesz również uczyć [modelu niestandardowego IntelliSense](/visualstudio/intellicode/custom-model-faq) oparte na bibliotekach specyficznego dla domeny.
+Użyj IntelliCode dla programu Visual Studio, aby pobrać [uzupełnianie kodu oparte na kontekście](/visualstudio/intellicode/intellicode-visual-studio) zamiast po prostu uzyskać alfabetyczną listę. Możesz również uczyć [modelu niestandardowego IntelliSense](/visualstudio/intellicode/custom-model-faq) oparte na bibliotekach specyficznego dla domeny.
 
 ## <a name="unit-testing"></a>Testowanie jednostek
 

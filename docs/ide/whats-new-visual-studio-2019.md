@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976235"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328828"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -33,9 +33,9 @@ Za pomocą programu Visual Studio 2019 r uzyskasz najlepsze w swojej klasie narz
 
 Poniżej przedstawiono podsumowanie wysokiego poziomu what's new:
 
-* **[Twórz](#develop)**: Zachowanie, ukierunkowanych i produktywności z lepszą wydajność, oczyszczania błyskawiczne kodu i lepsze wyniki wyszukiwania.
-* **[Współpraca](#collaborate)**: Korzystaj naturalne współpracy przy użyciu Git pierwszego przepływu pracy w czasie rzeczywistym, edytowanie i debugowanie, i przeglądów kodu po prawej stronie w programie Visual Studio.
-* **[Debugowanie](#debug)**: Wyróżnij i przejdź do określonej wartości, optymalizacja zużycia pamięci i automatycznych migawek wykonywania aplikacji.
+* **[Twórz](#develop)** : Zachowanie, ukierunkowanych i produktywności z lepszą wydajność, oczyszczania błyskawiczne kodu i lepsze wyniki wyszukiwania.
+* **[Współpraca](#collaborate)** : Korzystaj naturalne współpracy przy użyciu Git pierwszego przepływu pracy w czasie rzeczywistym, edytowanie i debugowanie, i przeglądów kodu po prawej stronie w programie Visual Studio.
+* **[Debugowanie](#debug)** : Wyróżnij i przejdź do określonej wartości, optymalizacja zużycia pamięci i automatycznych migawek wykonywania aplikacji.
 
 Aby uzyskać pełną listę wszystkich elementów, co nowego w tej wersji, zobacz [informacje o wersji](/visualstudio/releases/2019/release-notes/).
 
@@ -90,7 +90,7 @@ Oczyszczanie będzie formatowania kodu i stosowanie poprawek kodu zgodnie z suge
 
 Kolekcje programów naprawiających można także zapisać jako profil. Na przykład jeśli mają niewielki zestaw programów naprawiających docelowych, które są często stosowane podczas kodowania, a następnie mają inny kompleksowy zestaw programów naprawiających, aby przesłać wniosek przed przeglądu kodu, można skonfigurować profile, aby rozwiązać te różne zadania.
 
-   ![Zrzut ekranu przedstawiający nowy formant oczyszczania kodu w Visual Studio 2019 r.](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Zrzut ekranu przedstawiający kontroli oczyszczania kodu Konfigurowanie w programie Visual Studio 2019 r.](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Świadomość renderowania (PMA) monitora
 

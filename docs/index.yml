@@ -8,12 +8,6 @@ metadata:
   description: Dowiedz się, jak używać programu Visual Studio do opracowywania aplikacji, usług i narzędzi w języku wybranym dla dowolnej platformy lub urządzenia.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-  ms.translationtype: MT
-  ms.contentlocale: pl-PL
-  ms.lasthandoff: 06/07/2019
-  ms.locfileid: "66463219"
 highlightedContent:
   items:
   - title: Konfiguracja i instalacja
@@ -161,21 +155,54 @@ additionalContent:
   - title: Pakiety robocze
     items:
     - title: Sieć Web i chmura
-      summary: "[Tworzenie aplikacji sieci Web](/aspnet/) </br>\n[Programowanie na platformie Azure i zarządzanie](azure/index.yml) </br>\n[Python](python/index.yml) </br>\n[Node.js](javascript/index.yml) </br>\n[Przechowywanie i przetwarzanie danych](data-tools/index.md) </br>\n[Do nauki o danych](python/data-science-and-analytical-applications-workload.md) </br>\n[Programowanie Office/Sharepoint](https://developer.microsoft.com/office/docs) \n"
+      links:
+      - text: Tworzenie aplikacji sieci Web
+        url: /aspnet/
+      - text: Programowanie na platformie Azure i zarządzanie
+        url: azure/index.yml
+      - text: Python
+        url: python/index.yml
+      - text: Node.js
+        url: javascript/index.yml
+      - text: Magazynowanie i przetwarzanie danych
+        url: data-tools/index.md
+      - text: Do nauki o danych
+        url: python/data-science-and-analytical-applications-workload.md
+      - text: Programowanie Office/Sharepoint
+        url: https://developer.microsoft.com/office/docs)
     - title: Windows
-      summary: >
-        [Programowanie aplikacji klasycznych .NET](/dotnet/framework/develop-client-apps) </br>
-
-        [Programowanie na platformie uniwersalnej Windows](cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) </br>
-
-        [Programowanie aplikacji Windows w języku C++](/cpp/windows/desktop-applications-visual-cpp)
+      links:
+      - text: Programowanie aplikacji klasycznych .NET
+        url: /dotnet/framework/develop-client-apps
+      - text: Programowanie na platformie uniwersalnej Windows
+        url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
+      - text: Programowanie aplikacji Windows w języku C++
+        url: /cpp/windows/desktop-applications-visual-cpp)
     - title: Programy mobilne i gry
-      summary: "[Tworzenie aplikacji mobilnych przy użyciu platformy .NET (Xamarin)](/xamarin/) </br>\n[Programowanie gier za pomocą aparatu Unity](cross-platform/visual-studio-tools-for-unity.md) </br>\n[Tworzenie aplikacji mobilnych za pomocą języka JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (Visual Studio 2017 i tylko 2015) </br>\n[Tworzenie aplikacji mobilnych w języku C++](/visualstudio/cross-platform/) </br>\n[Programowanie gier w języku C++](/windows/uwp/gaming/e2e) \n"
+      links:
+      - text: Tworzenie aplikacji mobilnych przy użyciu platformy .NET (Xamarin)
+        url: /xamarin/
+      - text: Programowanie gier za pomocą aparatu Unity
+        url: cross-platform/visual-studio-tools-for-unity.md
+      - text: Tworzenie aplikacji mobilnych za pomocą języka JavaScript
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)
+        note: (Visual Studio 2017 and 2015 only)
+      - text: Tworzenie aplikacji mobilnych w języku C++
+        url: /visualstudio/cross-platform/
+      - text: Programowanie gier w języku C++
+        url: /windows/uwp/gaming/e2e)
     - title: Inne zestawy narzędzi
-      summary: >
-        [Programowanie rozszerzeń programu Visual Studio](extensibility/index.md) </br>
-
-        [Programowanie dla systemu Linux przy użyciu języka C++](/cpp/linux/) </br>
-
-        [Programowanie dla wielu platform .NET core](/dotnet/core/)
+      links:
+      - text: Programowanie rozszerzeń programu Visual Studio
+        url: extensibility/index.md
+      - text: Programowanie dla systemu Linux przy użyciu języka C++
+        url: /cpp/linux/
+      - text: Programowanie dla wielu platform .NET core
+        url: /dotnet/core/)
   footer: '[Blogi](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [zgłaszanie problemów](ide/talk-to-us.md)  -  [Społeczność deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+ms.openlocfilehash: 3a705504ba90c4745cd8c61c303f8b21568d399b
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309663"

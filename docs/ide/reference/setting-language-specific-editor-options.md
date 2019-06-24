@@ -11,46 +11,39 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ee5bb8d69cf3482105150f4ec62cb6ad167d7a
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 750af5101dfdf9d040457873be9d40d4a9da55e1
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531555"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328979"
 ---
-# <a name="setting-language-specific-editor-options"></a>Ustawianie opcji edytora specyficznych dla języka
+# <a name="set-language-specific-editor-options"></a>Ustawianie opcji edytora specyficznych dla języka
 
-Visual Studio oferuje szeroką gamę tekst opcji edytora, które dotyczą konkretnych języków programowania. Można skonfigurować opcje w **opcje** okno dialogowe, które jest dostępny z **narzędzia** menu. Można również skonfigurować niektóre ustawienia edytora na projekt codebase — podstawie lub przez utworzenie pliku EditorConfig. Zobacz [tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig](../../ide/create-portable-custom-editor-options.md).
+Visual Studio oferuje szeroką gamę tekst opcji edytora, które dotyczą konkretnych języków programowania. Można skonfigurować opcje w **opcje** okno dialogowe, które jest dostępny z **narzędzia** menu. Można również skonfigurować niektóre ustawienia edytora na projekt — lub baza kodu — podstawy przez [Tworzenie pliku EditorConfig](../../ide/create-portable-custom-editor-options.md).
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>Ustawienia dostępne w oknie dialogowym Opcje
 
- [Opcje, Edytor tekstów, Basic (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)
+[Opcje, Edytor tekstów, Basic (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)\
+W tym artykule opisano ustawienia konstrukcje zakończenia, reformatowanie kodu, tworzenia konspektów i sugestie korekty błędów, między innymi kodu języka Visual Basic.
 
- W tym artykule opisano ustawienia konstrukcje zakończenia, reformatowanie kodu, tworzenia konspektów i sugestie korekty błędów, między innymi dla [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] kodu.
+[Opcje, Edytor tekstu, C/C++, formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md)\
+W tym artykule opisano tworzenie konspektu, wcięcia, szybkie informacje i inne ustawienia dla kodu C i C++.
 
- [Opcje, Edytor tekstów, C/C++, Formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md)
+[Options, Text Editor, C/C++, Advanced](../../ide/reference/options-text-editor-c-cpp-advanced.md)\
+W tym artykule opisano ustawienia dla plików bazy danych i technologii IntelliSense podczas korzystania z C i C++.
 
- W tym artykule opisano tworzenie konspektu, wcięcia, szybkie informacje i inne ustawienia dla kodu C i C++.
+[Opcje, Edytor tekstu, C#, formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md)\
+Tym artykule opisano ustawienia wcięć, formatowania nowego wiersza i zawijania tekstu, między innymi C#.
 
- [Opcje, Edytor tekstów, C/C++, Zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md)
+[Zaawansowane opcje, Edytor tekstu, C#](../../ide/reference/options-text-editor-csharp-advanced.md)\
+Opisano elementy konspektu, błędów i ustawienia komentarzy dokumentacji XML C#.
 
- W tym artykule opisano ustawienia dla plików bazy danych i technologii IntelliSense podczas korzystania z C i C++.
+[Opcje, Edytor tekstu, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)\
+W tym artykule opisano ustawienia, które określają, jak lista dokańczania IntelliSense zachowuje się podczas pracy w C# kodu.
 
- [Opcje, Edytor tekstów, C#, Formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md)
-
- Tym artykule opisano ustawienia wcięć, formatowania nowego wiersza i zawijania tekstu, między innymi C#.
-
- [Opcje, Edytor tekstów, C#, Zaawansowane](../../ide/reference/options-text-editor-csharp-advanced.md)
-
- Opisano elementy konspektu, błędów i ustawienia komentarzy dokumentacji XML C#.
-
- [Opcje, Edytor tekstów, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)
-
- W tym artykule opisano ustawienia, które określają, jak lista dokańczania IntelliSense zachowuje się podczas pracy w C# kodu.
-
- [Opcje, Edytor tekstów, XAML, Formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md)
-
- Zawiera opis ustawień rozmieszczenia elementów i atrybutów w dokumentach w języku XAML.
+[Opcje, Edytor tekstu, XAML, formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md)\
+Zawiera opis ustawień rozmieszczenia elementów i atrybutów w dokumentach w języku XAML.
 
 ## <a name="see-also"></a>Zobacz także
 

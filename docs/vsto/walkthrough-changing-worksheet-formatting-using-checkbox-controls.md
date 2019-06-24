@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Zmiana formatowania arkusza za pomocą formantów CheckBox'
+title: Zmiana formatowania arkusza za pomocą formantów CheckBox
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438616"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328702"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Przewodnik: Zmiana formatowania arkusza za pomocą formantów CheckBox
   W tym instruktażu przedstawiono podstawy używania pola wyboru w arkuszu kalkulacyjnym programu Microsoft Office Excel, aby zmienić formatowanie. Użyjesz narzędzi programistycznych pakietu Office w programie Visual Studio do tworzenia i dodać kod do projektu. Aby wyświetlić wynik, jako przykład ukończone, zobacz przykład formanty programu Excel w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).

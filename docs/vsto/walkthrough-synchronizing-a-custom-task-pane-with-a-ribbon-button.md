@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki'
+title: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443970"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328335"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Przewodnik: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki
   Ten przewodnik przedstawia sposób tworzenia niestandardowego okienka zadań, które użytkownicy mogą ukryć lub wyświetlić, klikając przycisk przełącznika na Wstążce. Należy zawsze utworzyć elementu interfejsu użytkownika, takie jak przycisk, który można kliknąć, aby wyświetlić lub ukryć niestandardowego okienka zadań, ponieważ aplikacje Microsoft Office nie umożliwiają domyślne użytkownikom wyświetlanie lub ukrywanie niestandardowych okienek zadań.
@@ -71,7 +71,7 @@ ms.locfileid: "63443970"
 
 1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)**.
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)** .
 
 3. Zmień nazwę nowego wstążki do **ManageTaskPaneRibbon**i kliknij przycisk **Dodaj**.
 

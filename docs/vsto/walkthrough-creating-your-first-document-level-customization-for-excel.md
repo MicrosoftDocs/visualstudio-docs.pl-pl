@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel'
+title: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3f9763fd670495de9ae4ef8b35a282d644ffe4d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438525"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328387"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Excel. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy wybrany skoroszyt jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny skoroszyt jest otwarty.
@@ -73,13 +73,13 @@ ms.locfileid: "63438525"
 
    - *FirstWorkbookCustomization*xlsx — reprezentuje skoroszyt programu Excel w projekcie. Zawiera wszystkie arkusze i wykresy.
 
-   - Sheet1 (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla pierwszego arkusza w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).
+   - Sheet1 ( *.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla pierwszego arkusza w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).
 
-   - Sheet2 — (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla drugiego arkusza w skoroszycie.
+   - Sheet2 — ( *.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla drugiego arkusza w skoroszycie.
 
-   - Sheet3 — (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla trzeciego arkusza w skoroszycie.
+   - Sheet3 — ( *.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla trzeciego arkusza w skoroszycie.
 
-   - Ten skoroszyt (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — zawiera powierzchnię projektu i kodu w przypadku dostosowań na poziomie skoroszytu. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).
+   - Ten skoroszyt ( *.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — zawiera powierzchnię projektu i kodu w przypadku dostosowań na poziomie skoroszytu. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).
 
      Plik kodu Arkusz1 zostanie automatycznie otwarty w projektancie.
 

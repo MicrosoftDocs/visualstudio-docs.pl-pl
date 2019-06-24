@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432274"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309794"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Zagnieżdżanie plików w Eksploratorze rozwiązań
 
@@ -86,19 +86,42 @@ Ten dostawca działa podobnie jak **extensionToExtension** dostawcy, ale tylko r
 
 ### <a name="the-addedextension-provider"></a>Dostawca addedExtension
 
-Ten dostawca zagnieżdżony pliki z rozszerzeniem dodatkowe w obszarze plik bez dodatkowego rozszerzenia. Dodatkowe rozszerzenia może wystąpić tylko na końcu Pełna nazwa pliku. Rozważmy następujący przykład:
+Ten dostawca zagnieżdżony pliki z rozszerzeniem dodatkowe w obszarze plik bez dodatkowego rozszerzenia. Dodatkowe rozszerzenia może wystąpić tylko na końcu Pełna nazwa pliku.
+
+Rozważmy następujący przykład:
 
 ![addedExtension przykładowych reguł](media/filenesting_addedextension.png) ![efekt przykład addedExtension](media/filenesting_addedextension_effect.png)
 
 * *File.HTML.CSS* jest zagnieżdżony w *file.html* z powodu **addedExtension** reguły
 
+> [!NOTE]
+> Nie określisz żadnych rozszerzeń plików dla `addedExtension` reguły; automatycznie ma zastosowanie do wszystkich rozszerzeń plików. Oznacza to, że dowolny plik z taką samą nazwę i rozszerzenie jako innego pliku, a także dodatkowe rozszerzenia po stronie jest zagnieżdżona w ramach innego pliku. Nie można ograniczyć wpływ tego dostawcy, aby tylko określone rozszerzenia plików.
+
 ### <a name="the-pathsegment-provider"></a>Dostawca pathSegment
 
-Ten dostawca zagnieżdżony pliki z rozszerzeniem dodatkowe w obszarze plik bez dodatkowego rozszerzenia. Dodatkowe rozszerzenia może wystąpić tylko w środku Pełna nazwa pliku. Rozważmy następujący przykład:
+Ten dostawca zagnieżdżony pliki z rozszerzeniem dodatkowe w obszarze plik bez dodatkowego rozszerzenia. Dodatkowe rozszerzenia może wystąpić tylko w środku Pełna nazwa pliku.
+
+Rozważmy następujący przykład:
 
 ![pathSegment przykładowych reguł](media/filenesting_pathsegment.png) ![efekt przykład pathSegment](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* jest zagnieżdżony w *jquery.js* z powodu **pathSegment** reguły
+
+> [!NOTE]
+> - Jeśli nie określisz żadnych określonych rozszerzeń plików dla `pathSegment` zasada, ma zastosowanie do wszystkich rozszerzeń plików. Oznacza to każdy plik z taką samą nazwę i rozszerzenie jako innego pliku, a także dodatkowe rozszerzenia w środku jest zagnieżdżony w ramach innego pliku.
+> - Można ograniczyć wpływ `pathSegment` regułę do określonych rozszerzeń plików, określając je w następujący sposób:
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>Dostawca allExtensions
 

@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych'
+title: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a827e688e260adcb93e81b55520c747dd99ed0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86e289ad8a316f7026d6fda46bb3e424164437fb
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421744"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329016"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Przewodnik: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych
   W tym przewodniku przedstawiono podstawowe informacje dotyczące za pomocą przycisków radiowych w arkuszu kalkulacyjnym programu Microsoft Office Excel, aby dać użytkownikowi możliwość szybkiego przełączania się między opcjami. W tym przypadku opcje zmieniają styl wykresu.
@@ -57,7 +57,7 @@ ms.locfileid: "63421744"
 
 4. Dodaj następujące dane do **danych wykresu** z komórki A4 jest lewy górny róg i E8 prawym dolnym rogu.
 
-   ||1.|Q2|K3|KWARTAŁ 4|
+   ||1\.|Q2|K3|KWARTAŁ 4|
    |-|--------|--------|--------|--------|
    |Zachód|500|550|550|600|
    |Wschodnie Stany|600|625|675|700|

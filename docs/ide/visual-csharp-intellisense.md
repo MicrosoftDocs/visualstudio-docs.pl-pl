@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581973"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328842"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -86,7 +86,7 @@ Podczas wpisywania [zastąpienia](/dotnet/csharp/language-reference/keywords/ove
 
 ### <a name="ai-enhanced-intellisense"></a>Ulepszone sztucznej Inteligencji IntelliSense
 
-Możesz zainstalować eksperymentalne [rozszerzenia IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) dla programu Visual Studio, który zapewnia ulepszone sztucznej inteligencji na liście uzupełniania IntelliSense. To rozszerzenie przewiduje najprawdopodobniej poprawne interfejsu API do użycia zamiast po prostu prezentowanie alfabetyczną listę elementów członkowskich. Aby zapewnić dynamiczne listy używa Twojego bieżący kontekst kodu i wzorce.
+[Visual Studio IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) zapewnia ulepszone sztucznej inteligencji na liście uzupełniania IntelliSense. Rozszerzenie IntelliCode przewiduje się, że najbardziej prawdopodobne Popraw interfejsu API do użycia zamiast po prostu prezentowanie alfabetyczną listę elementów członkowskich. Aby zapewnić dynamiczne listy używa Twojego bieżący kontekst kodu i wzorce.
 
 ## <a name="automatic-code-generation"></a>Automatyczne generowanie kodu
 
@@ -124,7 +124,7 @@ Czerwone faliste podkreślenie pojawia się w obszarze każdej Niezdefiniowany i
 
 - Kliknij przycisk Niezdefiniowany identyfikator. A **szybkie akcje** żarówki błąd pojawia się w obszarze identyfikator. Kliknij żarówkę błędu.
 
-- Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisz **Ctrl**+**.** (**Ctrl** + kropka).
+- Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisz **Ctrl**+ **.** (**Ctrl** + kropka).
 
 - Kliknij prawym przyciskiem myszy Niezdefiniowany identyfikator, a następnie kliknij przycisk **szybkie akcje i Refaktoryzacje**.
 
@@ -158,7 +158,7 @@ Jeśli użytkownik naciśnie klawisz **kartę**, technologia IntelliSense automa
 Jeśli użytkownik naciśnie klawisz **kartę**, zastępczych metodę o prawidłowej sygnaturze funkcji IntelliSense i umieszcza kursor w ciele obsługi zdarzenia.
 
 > [!NOTE]
-> Użyj **Nawiguj wstecz** polecenie **widoku** menu (**Ctrl**+**-**) aby wrócić do zdarzenia Obsługa instrukcji.
+> Użyj **Nawiguj wstecz** polecenie **widoku** menu (**Ctrl**+ **-** ) aby wrócić do zdarzenia Obsługa instrukcji.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook'
+title: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fa86c07ba964ca918c7ad225d5152b31a2e1d9ae
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440887"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328347"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
   W tym instruktażu przedstawiono sposób wyświetlania unikatowego wystąpienia niestandardowego okienka zadań z każdej wiadomości e-mail, który został utworzony lub otwarty. Użytkowników można wyświetlić lub ukryć niestandardowego okienka zadań, za pomocą przycisku na Wstążce każdej wiadomości e-mail.
@@ -90,7 +90,7 @@ ms.locfileid: "63440887"
 
 1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)**.
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)** .
 
 3. Zmień nazwę nowego wstążki do **ManageTaskPaneRibbon**i kliknij przycisk **Dodaj**.
 

@@ -2,7 +2,7 @@
 title: Podręcznik administratora programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się więcej o sposobie wdrażania programu Visual Studio w środowisku przedsiębiorstwa.
-ms.date: 05/22/2019
+ms.date: 06/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037509"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328793"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
@@ -40,7 +40,7 @@ Przed wdrożeniem programu Visual Studio w organizacji istnieją pewne decyzje i
 
 * Zdecyduj, na potrzeby obsługi.
 
-  Jeśli Twoja firma wymaga pozostać na funkcję, ale nadal jest już ustawiona chce otrzymywać regularne aktualizacje obsługi, planuje użyć obsługi linii bazowej. Aby uzyskać więcej informacji, zobacz ***opcje pomocy technicznej dla klientów, Enterprise i Professional*** części [cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) strony.
+  Jeśli Twoja firma wymaga pozostać na funkcję, ale nadal jest już ustawiona chce otrzymywać regularne aktualizacje obsługi, planuje użyć obsługi linii bazowej. Aby uzyskać więcej informacji, zobacz ***opcje pomocy technicznej dla klientów, Enterprise i Professional*** części [cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) stronie, jak również [jak: Aktualizacja programu Visual Studio znajduje się w linię bazową obsługi](update-servicing-baseline.md) strony.
 
   Jeśli użytkownik chce zastosować aktualizacje obsługi wraz z aktualizacji zbiorczej funkcji, można wybrać najnowsze elementy.
 
@@ -62,7 +62,7 @@ Przed wdrożeniem programu Visual Studio w organizacji istnieją pewne decyzje i
 
 * Zdecyduj, na potrzeby obsługi.
 
-  Jeśli Twoja firma wymaga pozostać na funkcję, ale nadal jest już ustawiona chce otrzymywać regularne aktualizacje obsługi, planuje użyć obsługi linii bazowej. Aby uzyskać więcej informacji, zobacz ***obsługę starszych wersji programu Visual Studio*** części [cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) strony.
+  Jeśli Twoja firma wymaga pozostać na funkcję, ale nadal jest już ustawiona chce otrzymywać regularne aktualizacje obsługi, planuje użyć obsługi linii bazowej. Aby uzyskać więcej informacji, zobacz ***obsługę starszych wersji programu Visual Studio*** części [cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) stronie, jak również [jak: Aktualizacja programu Visual Studio znajduje się w linię bazową obsługi](update-servicing-baseline.md) strony.
 
   Jeśli użytkownik chce zastosować aktualizacje obsługi wraz z aktualizacji zbiorczej funkcji, można wybrać najnowsze elementy.
 

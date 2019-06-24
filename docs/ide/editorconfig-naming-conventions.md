@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d82e3ace2cc26022a5ae39c690c5018a6325360
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253896"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309823"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla wtyczki EditorConfig
 
@@ -25,7 +25,7 @@ Konwencje nazewnictwa powinny być uporządkowane od najbardziej specyficznych d
 
 Dla każdego konwencji nazewnictwa należy określić symbole, których on obowiązuje, styl nazewnictwa i ważność wymuszania Konwencji, za pomocą właściwości opisanych poniżej. Kolejność właściwości nie jest ważna.
 
-Aby rozpocząć, wybierz tytuł dla tej reguły nazewnictwa, która będzie używana we wszystkich właściwości, które są potrzebne do w pełni opisu reguły. Na przykład `public_members_must_be_capitalized` jest dobrą nazwę opisową dla reguły nazewnictwa. Będziemy się odwoływać do tytułu, wybierz jako **< namingRuleTitle\>**  w kolejnych sekcjach.
+Aby rozpocząć, wybierz tytuł dla tej reguły nazewnictwa, która będzie używana we wszystkich właściwości, które są potrzebne do w pełni opisu reguły. Na przykład `public_members_must_be_capitalized` jest dobrą nazwę opisową dla reguły nazewnictwa. Ta strona będzie odnosił się do tytułu, wybierz jako **< namingRuleTitle\>**  w kolejnych sekcjach.
 
 ## <a name="symbols"></a>Symbole
 
@@ -116,7 +116,7 @@ Reguły nazewnictwa odpowiada podpisów, które mają *wszystkich* Modyfikatory 
 
 ## <a name="style"></a>Styl
 
-Teraz, stwierdziliśmy grupy symbole, aby zastosować regułę nazewnictwa opisujemy musi stylu nazewnictwa. Styl może być, czy nazwa ma niektórych prefiks lub sufiks określonych, lub że poszczególnych wyrazów w nazwie są rozdzielone znakiem niektórych. Można również określić styl wielkość liter. Właściwości stylu ma następujący format:
+Teraz, gdy zidentyfikowaliśmy grupy symbole, aby zastosować regułę nazewnictwa, wystarczy opisać stylu nazewnictwa. Styl może być, czy nazwa ma niektórych prefiks lub sufiks określonych, lub że poszczególnych wyrazów w nazwie są rozdzielone znakiem niektórych. Można również określić styl wielkość liter. Właściwości stylu ma następujący format:
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
@@ -174,6 +174,14 @@ error | Gdy nie trwa występuje ten styl, Pokaż błąd kompilatora w **lista b�
 
 > [!NOTE]
 > Nie masz do kompilowania projektu, aby można było wyświetlić naruszenia reguły nazewnictwa. Pojawiają się jako edycji kodu w **lista błędów** lub sugestię.
+
+## <a name="default-naming-styles"></a>Domyślne style nazewnictwa
+
+Jeśli nie określisz żadnych niestandardowych reguł nazewnictwa, program Visual Studio używa następujących domyślnych stylów:
+
+- Dla klasy, struktury, wyliczenia, właściwości i zdarzeń za pomocą `public`, `private`, `internal`, `protected`, lub `protected_internal` ułatwień dostępu, domyślny styl nazewnictwa jest pisanymi wielkimi literami.
+
+- W przypadku interfejsów z `public`, `private`, `internal`, `protected`, lub `protected_internal` ułatwień dostępu, domyślny styl nazewnictwa jest pisanymi wielkimi literami z prefiksem wymagane **I**.
 
 ## <a name="example"></a>Przykład
 

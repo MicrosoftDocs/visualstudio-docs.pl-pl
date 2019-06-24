@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Dodawanie formantów do dokumentów w czasie wykonywania w dodatku narzędzi VSTO'
+title: Dodawanie formantów do dokumentów w czasie wykonywania w dodatku narzędzi VSTO
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982421"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328399"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Przewodnik: Dodawanie formantów do dokumentów w czasie wykonywania w dodatku narzędzi VSTO
   Aby dodać formanty dowolnego otwartego dokumentu Microsoft Word pakietu Office, za pomocą dodatku narzędzi VSTO. W tym instruktażu przedstawiono sposób użycia wstążki umożliwiające użytkownikom dodawanie <xref:Microsoft.Office.Tools.Word.Controls.Button> lub <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.
@@ -62,7 +62,7 @@ ms.locfileid: "62982421"
 
 1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)**.
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)** .
 
 3. Zmień nazwę nowego wstążki do **MyRibbon**i kliknij przycisk **Dodaj**.
 
