@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6465724fe14d43781730abc25b050ae0bcd2d2b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a12838db0687fd7ebe20a5c576db0e06ece49107
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317481"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342399"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Pobiera kontekst dokumentu, który odnosi się do tego kontekstu kodu. Kontekst dokumentu reprezentuje pozycji w pliku źródłowym, która odnosi się do kodu źródłowego, który wygenerował tę instrukcję.
@@ -41,10 +41,10 @@ int GetDocumentContext( 
 
 ## <a name="parameters"></a>Parametry
 `ppSrcCxt`\
-[out] Zwraca [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiekt, który odnosi się do kontekstu kodu.
+[out] Zwraca [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiekt, który odnosi się do kontekstu kodu. Jeśli `S_OK` zwróceniem tego powinien być non -`null`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Aparat debugowania powinna zwrócić kod błędu takich jak `E_FAIL` podczas `out` parametr jest `null` przykład w przypadku kontekstu kodu nie położenie skojarzone źródło.
 
 ## <a name="remarks"></a>Uwagi
  Ogólnie rzecz biorąc kontekstu dokumentu mogą być uważane za pozycji w pliku źródłowym kontekst kodu jest pozycji w strumieniu wykonywania instrukcji kodu.

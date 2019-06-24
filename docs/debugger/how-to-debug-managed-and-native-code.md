@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 3dfdc230a4dc873cc9a068e2f641da022018aff3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8e62b9a99f178a45466ff8afa46753981be61424
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679397"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342383"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: Debugowanie C# i C++ w tej samej sesji debugowania
 
@@ -58,14 +58,14 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
     Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **pusty projekt**, wybierz **szablony**, następnie wybierz **Utwórz nowy pusty projekt** dla języka C ++. W oknie dialogowym wybierz **Utwórz**. Następnie wpisz nazwę, takich jak **Mixed_Mode_Debugging** i kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** dialogowego **Visual C++**, wybierz **innych**, a następnie w środkowym okienku wybierz **pusty projekt**. Następnie wpisz nazwę, takich jak **Mixed_Mode_Debugging** i kliknij przycisk **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** dialogowego **Visual C++** , wybierz **innych**, a następnie w środkowym okienku wybierz **pusty projekt**. Następnie wpisz nazwę, takich jak **Mixed_Mode_Debugging** i kliknij przycisk **OK**.
     ::: moniker-end
 
     Jeśli nie widzisz **pusty projekt** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
 
     Program Visual Studio tworzy projekt.
 
-1. W **nowy projekt** dialogowego **Visual C++**, wybierz opcję **innych**, a następnie wybierz pozycję **pusty projekt** w środkowym okienku.
+1. W **nowy projekt** dialogowego **Visual C++** , wybierz opcję **innych**, a następnie wybierz pozycję **pusty projekt** w środkowym okienku.
 
 1. W **nazwa** wpisz **Mixed_Mode_Debugging**, a następnie wybierz pozycję **OK**.
 
@@ -73,7 +73,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 
 1. W **Eksploratora rozwiązań**, wybierz opcję **pliki źródłowe**, a następnie wybierz pozycję **projektu** > **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy **pliki źródłowe** i wybierz **Dodaj** > **nowy element**.
 
-1. W **nowy element** okno dialogowe, wybierz opcję **plik C++ (.cpp)**. Typ **Mixed_Mode.cpp** w **nazwa** , a następnie wybierz opcję **Dodaj**.
+1. W **nowy element** okno dialogowe, wybierz opcję **plik C++ (.cpp)** . Typ **Mixed_Mode.cpp** w **nazwa** , a następnie wybierz opcję **Dodaj**.
 
     Program Visual Studio dodaje nowy plik C++ **Eksploratora rozwiązań**.
 
@@ -85,7 +85,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 
 1. W **Eksploratora rozwiązań**, wybierz opcję **pliki nagłówkowe**, a następnie wybierz pozycję **projektu** > **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy **pliki nagłówkowe** i wybierz **Dodaj** > **nowy element**.
 
-1. W **nowy element** okno dialogowe, wybierz opcję **plik nagłówka (.h)**. Typ **Mixed_Mode.h** w **nazwa** , a następnie wybierz opcję **Dodaj**.
+1. W **nowy element** okno dialogowe, wybierz opcję **plik nagłówka (.h)** . Typ **Mixed_Mode.h** w **nazwa** , a następnie wybierz opcję **Dodaj**.
 
    Program Visual Studio dodaje nowy plik nagłówkowy do **Eksploratora rozwiązań**.
 
@@ -119,7 +119,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 
 1. W obszarze **właściwości konfiguracji** w okienku po lewej stronie wybierz **konsolidatora** > **zaawansowane**i w menu rozwijanym obok **punkt wejścia nie**, wybierz opcję **nie**. Jeśli konieczna była zmiana jego **nie**, wybierz opcję **Zastosuj**.
 
-1. W obszarze **właściwości konfiguracji**, wybierz opcję **ogólne**i w menu rozwijanym obok **typu konfiguracji**, wybierz opcję **Biblioteka dynamiczna (dll)**. Wybierz **Zastosuj**, a następnie wybierz pozycję **OK**.
+1. W obszarze **właściwości konfiguracji**, wybierz opcję **ogólne**i w menu rozwijanym obok **typu konfiguracji**, wybierz opcję **Biblioteka dynamiczna (dll)** . Wybierz **Zastosuj**, a następnie wybierz pozycję **OK**.
 
    ![Przełącz się do macierzystych bibliotek DLL](../debugger/media/mixed-mode-set-as-native-dll.png)
 
@@ -137,7 +137,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
     Następnie wpisz nazwę, takich jak **Mixed_Mode_Calling_App** i kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (. Program .NET Framework)** lub **konsoli aplikacji (.NET Core)**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (. Program .NET Framework)** lub **konsoli aplikacji (.NET Core)** .
 
     Następnie wpisz nazwę, takich jak **Mixed_Mode_Calling_App** i kliknij przycisk **OK**.
     ::: moniker-end
@@ -200,7 +200,7 @@ W większości wersji programu Visual Studio, począwszy od programu Visual Stud
    >[!NOTE]
    >Domyślnie *launchSettings.json* znajduje się w *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Jeśli *launchSettings.json* nie istnieje, wybierz **Mixed_Mode_Calling_App** projektu w **Eksploratora rozwiązań** , a następnie wybierz **właściwości** ikonę, lub kliknij prawym przyciskiem myszy projekt i wybierz pozycję **właściwości**. Tymczasowe zmiany w **debugowania** kartę i skompiluj projekt. Spowoduje to utworzenie *launchSettings.json* pliku. Cofnąć zmiany wprowadzone w **debugowania** kartę.
 
-1. W *lauchsettings.json* plików, Dodaj następujący wiersz:
+1. W *launchsettings.json* plików, Dodaj następujący wiersz:
 
     ```csharp
     "nativeDebugging": true

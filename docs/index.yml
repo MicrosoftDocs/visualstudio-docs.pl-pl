@@ -169,7 +169,7 @@ additionalContent:
       - text: Do nauki o danych
         url: python/data-science-and-analytical-applications-workload.md
       - text: Programowanie Office/Sharepoint
-        url: https://developer.microsoft.com/office/docs)
+        url: https://developer.microsoft.com/office/docs
     - title: Windows
       links:
       - text: Programowanie aplikacji klasycznych .NET
@@ -177,7 +177,7 @@ additionalContent:
       - text: Programowanie na platformie uniwersalnej Windows
         url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
       - text: Programowanie aplikacji Windows w języku C++
-        url: /cpp/windows/desktop-applications-visual-cpp)
+        url: /cpp/windows/desktop-applications-visual-cpp
     - title: Programy mobilne i gry
       links:
       - text: Tworzenie aplikacji mobilnych przy użyciu platformy .NET (Xamarin)
@@ -185,12 +185,12 @@ additionalContent:
       - text: Programowanie gier za pomocą aparatu Unity
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: Tworzenie aplikacji mobilnych za pomocą języka JavaScript
-        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
         note: (Visual Studio 2017 and 2015 only)
       - text: Tworzenie aplikacji mobilnych w języku C++
         url: /visualstudio/cross-platform/
       - text: Programowanie gier w języku C++
-        url: /windows/uwp/gaming/e2e)
+        url: /windows/uwp/gaming/e2e
     - title: Inne zestawy narzędzi
       links:
       - text: Programowanie rozszerzeń programu Visual Studio
@@ -198,11 +198,11 @@ additionalContent:
       - text: Programowanie dla systemu Linux przy użyciu języka C++
         url: /cpp/linux/
       - text: Programowanie dla wielu platform .NET core
-        url: /dotnet/core/)
+        url: /dotnet/core/
   footer: '[Blogi](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [zgłaszanie problemów](ide/talk-to-us.md)  -  [Społeczność deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html)'
-ms.openlocfilehash: 3a705504ba90c4745cd8c61c303f8b21568d399b
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6f4c489f0a3c5ccf5b62f9541cba615f10742
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309663"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328819"

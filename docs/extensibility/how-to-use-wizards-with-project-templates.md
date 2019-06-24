@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352041"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342415"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Instrukcje: Korzystanie z kreatorów z szablonami projektu
 
@@ -68,7 +68,7 @@ Poniższa procedura przedstawia sposób tworzenia niestandardowego kreatora, kt�
 
 3. Dodaj zestaw jako zasobu w projekcie VSIX. Otwórz *source.extension.vsixmanifest* plik i wybierz **zasoby** kartę. W **Dodaj nowy zasób** oknie dla **typu** wybierz **Microsoft.VisualStudio.Assembly**, dla **źródła** wybierz **A Projekt w bieżącym rozwiązaniu**oraz **projektu** wybierz **MyProjectWizard**.
 
-4. Dodaj następujące odwołania do projektu VSIX. (W **Eksploratora rozwiązań**, w węźle projektu VSIX wybierz **odwołania**, kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj odwołanie**.) W **Dodaj odwołanie** okna dialogowego w **Framework** kartę, Znajdź **formularzy System.Windows** zestawu i wybierz ją. Teraz wybierz **rozszerzenia** kartę. Znajdź **EnvDTE** zestawu i wybierz ją. Również znaleźć **Microsoft.VisualStudio.TemplateWizardInterface** zestawu i wybierz ją. Kliknij przycisk **OK**.
+4. Dodaj następujące odwołania do projektu VSIX. (W **Eksploratora rozwiązań**, w węźle projektu VSIX wybierz **odwołania**, kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj odwołanie**.) W **Dodaj odwołanie** okna dialogowego w **Framework** kartę, Znajdź **formularzy System.Windows** zestawu i wybierz ją. Również znaleźć i wybrać **systemu** i **System.Drawing** zestawów. Teraz wybierz **rozszerzenia** kartę. Znajdź **EnvDTE** zestawu i wybierz ją. Również znaleźć **Microsoft.VisualStudio.TemplateWizardInterface** zestawu i wybierz ją. Kliknij przycisk **OK**.
 
 5. Dodaj klasę dla Kreatora wdrażania w projekcie VSIX. (W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu VSIX i wybierz **Dodaj**, następnie **nowy element**, następnie **klasy**.) Nazwa klasy **WizardImplementation**.
 
@@ -157,7 +157,7 @@ Poniższa procedura przedstawia sposób tworzenia niestandardowego kreatora, kt�
 
    - <xref:System.Object> Tablicę, która zawiera zestaw parametrów przekazanych do kreatora przez program Visual Studio.
 
-     Ten przykład dodaje wartości parametru z formularza wejściowego użytkownika do <xref:System.Collections.Generic.Dictionary%602> parametru. Każde wystąpienie `$custommessage$` parametru w projekcie zostanie zastąpione tekstem wprowadzonym przez użytkownika. Dodaj następujące zestawy do projektu: **System** i **System.Drawing**.
+     Ten przykład dodaje wartości parametru z formularza wejściowego użytkownika do <xref:System.Collections.Generic.Dictionary%602> parametru. Każde wystąpienie `$custommessage$` parametru w projekcie zostanie zastąpione tekstem wprowadzonym przez użytkownika.
 
 7. Teraz Utwórz **UserInputForm**. W *WizardImplementation.cs* plików, Dodaj następujący kod na końcu `WizardImplementation` klasy.
 
