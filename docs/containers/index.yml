@@ -1,15 +1,9 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 0a2bd64f423740f8f03961d20969201c438df7a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819519"
 documentType: LandingData
 title: Narzędzia kontenerów w programie Visual Studio
 metadata:
   title: Dokumentacja narzędzi tworzenia kontenera platformy docker
-  description: Dowiedz się, jak tworzyć i zarządzać nimi opartych na kontenerach aplikacjami i usługami. Pobierz dokumentację, przykładowy kod, samouczki i inne materiały.
+  description: 'Dowiedz się, jak tworzyć i zarządzać nimi opartych na kontenerach aplikacjami i usługami. Pobierz dokumentację, przykładowy kod, samouczki i inne materiały.'
   author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
@@ -18,113 +12,113 @@ metadata:
   ms.date: 02/15/2019
   ms.author: ghogen
 sections:
-- title: ''
-  items:
-  - type: paragraph
-    text: Zapoznaj się z platformy Docker i Kubernetes narzędzi i usług platformy Azure do zarządzania projektami programistycznymi opartych na kontenerach.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: ''
     items:
-    - href: container-tools.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: 'Szybki start: Platforma Docker w programie Visual Studio'
-    - href: tutorial-multicontainer.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: Wieloma kontenerami w celu aplikacji przy użyciu rozwiązania Docker Compose
-    - href: /visualstudio/install/build-tools-container
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: Uruchamianie narzędzia do kompilacji w kontenerze
-    - href: tutorial-kubernetes-tools.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
-      title: Visual Studio Tools for Kubernetes
-- title: .NET Core
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: Zapoznaj się z platformy Docker i Kubernetes narzędzi i usług platformy Azure do zarządzania projektami programistycznymi opartych na kontenerach.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: container-tools.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: 'Szybki start: Platforma Docker w programie Visual Studio'
+          - href: tutorial-multicontainer.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: Wieloma kontenerami w celu aplikacji przy użyciu rozwiązania Docker Compose
+          - href: /visualstudio/install/build-tools-container
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Uruchamianie narzędzia do kompilacji w kontenerze
+          - href: tutorial-kubernetes-tools.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_kubernetes.svg'
+            title: Visual Studio Tools for Kubernetes
+  - title: .NET Core
     items:
-    - href: /dotnet/core/docker/intro-net-docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      title: Wprowadzenie do platform .NET i Docker
-    - href: /dotnet/core/docker/docker-basics-dotnet-core
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: Dowiedz się, podstawy platformy Docker
-    - href: /dotnet/core/docker/building-net-docker-images
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: Build Docker Images
-    - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_web.svg
-      title: ASP.NET Container Tools
-    - href: https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_azure.svg
-      title: Wdrażanie w usłudze Azure Container Registry
-    - href: /dotnet/standard/containerized-lifecycle-architecture/
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-      title: Przewodnik dotyczący architektury Mikrousług
-- title: Azure
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /dotnet/core/docker/intro-net-docker
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
+            title: Wprowadzenie do platform .NET i Docker
+          - href: /dotnet/core/docker/docker-basics-dotnet-core
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: 'Dowiedz się, podstawy platformy Docker'
+          - href: /dotnet/core/docker/building-net-docker-images
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Build Docker Images
+          - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_web.svg'
+            title: ASP.NET Container Tools
+          - href: 'https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
+            title: Wdrażanie w usłudze Azure Container Registry
+          - href: /dotnet/standard/containerized-lifecycle-architecture/
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+            title: Przewodnik dotyczący architektury Mikrousług
+  - title: Azure
     items:
-    - href: /azure/aks
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/ContainerService.svg
-      title: Usługa Azure Kubernetes Service (AKS)
-    - href: /azure/dev-spaces
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg
-      title: Azure Dev Spaces
-    - href: /azure/container-instances/container-instances-tutorial-prepare-app
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/ContainerInstances.svg
-      title: Usługa Azure Container Instances
-    - href: /azure/container-registry/
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/container-registry.svg
-      title: Azure Container Registry
-    - href: /azure/docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: Platformy docker na platformie Azure
-- title: Wideo
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /azure/aks
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/ContainerService.svg'
+            title: Usługa Azure Kubernetes Service (AKS)
+          - href: /azure/dev-spaces
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg'
+            title: Azure Dev Spaces
+          - href: /azure/container-instances/container-instances-tutorial-prepare-app
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/ContainerInstances.svg'
+            title: Usługa Azure Container Instances
+          - href: /azure/container-registry/
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/container-registry.svg'
+            title: Azure Container Registry
+          - href: /azure/docker
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: Platformy docker na platformie Azure
+  - title: Wideo
     items:
-    - href: https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_video.svg
-      title: 'Channel 9: Rozwój platformy docker'
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: 'https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_video.svg'
+            title: 'Channel 9: Rozwój platformy docker'
