@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d5e59a74d67bd7dc6afed622863f4e501fe95bee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548248"
 documentType: LandingData
 title: Narzędzia Visual Studio Tools for AI
 metadata:
@@ -18,32 +12,32 @@ metadata:
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
-  description: Visual Studio Tools for AI jest zintegrowane środowisko projektowe do tworzenia, testowania i wdrażania rozwiązań uczenia głębokiego. Dowiedz się, jak używać narzędzia sztucznej Inteligencji z naszych przewodników Szybki Start, samouczków i przykładów.
+  description: 'Visual Studio Tools for AI jest zintegrowane środowisko projektowe do tworzenia, testowania i wdrażania rozwiązań uczenia głębokiego. Dowiedz się, jak używać narzędzia sztucznej Inteligencji z naszych przewodników Szybki Start, samouczków i przykładów.'
 sections:
-- title: 5-minutowe Przewodniki Szybki Start
-  items:
-  - type: paragraph
-    text: 'Dowiedz się, jak uruchamiać rozwiązania uczenia głębokiego przy użyciu:'
-  - type: list
-    style: icon48
+  - title: 5-minutowe Przewodniki Szybki Start
     items:
-    - image:
-        src: media/Tensorflow_logo.png
-      text: TensorFlow i Python
-      href: tensorflow-local.md
-- title: Samouczki krok po kroku
-  items:
-  - type: paragraph
-    text: 'Dowiedz się, jak tworzyć rozwiązania do uczenia głębokiego:'
-  - type: list
-    style: ordered
+      - type: paragraph
+        text: 'Dowiedz się, jak uruchamiać rozwiązania uczenia głębokiego przy użyciu:'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: media/Tensorflow_logo.png
+            text: TensorFlow i Python
+            href: tensorflow-local.md
+  - title: Samouczki krok po kroku
     items:
-    - html: <a href="/visualstudio/ai/tensorflow-vm">Uczenie modelu TensorFlow w chmurze</a>
-- title: Przykłady
-  items:
-  - type: list
-    style: unordered
-    className: spaced noBullet
+      - type: paragraph
+        text: 'Dowiedz się, jak tworzyć rozwiązania do uczenia głębokiego:'
+      - type: list
+        style: ordered
+        items:
+          - html: <a href="/visualstudio/ai/tensorflow-vm">Uczenie modelu TensorFlow w chmurze</a>
+  - title: Przykłady
     items:
-    - html: <a href="https://github.com/Microsoft/samples-for-ai">Repozytorium przykładów</a>
-    - html: <a href="https://gallery.cortanaintelligence.com/projects">Galeria usługi Machine Learning</a>
+      - type: list
+        style: unordered
+        className: spaced noBullet
+        items:
+          - html: '<a href="https://github.com/Microsoft/samples-for-ai">Repozytorium przykładów</a>'
+          - html: '<a href="https://gallery.cortanaintelligence.com/projects">Galeria usługi Machine Learning</a>'
