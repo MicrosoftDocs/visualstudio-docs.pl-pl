@@ -1,18 +1,18 @@
 ---
 title: Zarządzaj subskrypcjami programu Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać możliwości subskrypcji programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833974"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365430"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -125,6 +125,12 @@ Informacje kontaktowe i preferencji można łatwo zmienić w Twoim profilu.
    > [!div class="mx-imgBorder"]
    > ![Edytowanie informacji o profilu](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>Ustawianie preferencji komunikacji
+Jeśli chcesz otrzymywać okresowe aktualizacje dotyczące subskrypcji i korzyści, w tym comiesięczny biuletyn subskrypcji programu Visual Studio [Zaktualizuj preferencje](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) przez zaznaczenie pola dla subskrypcji programu Visual Studio w sieci Profil programu Visual Studio. Można zmieniać tych preferencji i anulować w dowolnym momencie. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Ustawianie preferencji](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Łączenie z moją subskrypcję do istniejących usług DevOps platformy Azure lub subskrypcji platformy Azure
 
 Jeśli możesz zalogować się do subskrypcji przy użyciu osobistego konta Microsoft (MSA) i masz subskrypcję obejmującą usługom DevOps platformy Azure lub Microsoft Azure przy użyciu konta służbowego zarządzane przez platformę Azure, możesz połączyć dwie subskrypcje. To jest nazywane "kontem alternatywnych" i pozwala zachować przy użyciu konta Microsoft Zaloguj się do Twojej subskrypcji, a jednocześnie ma dostęp do istniejących zasobów platformy Azure, usługom DevOps platformy Azure lub IDE, które są skojarzone z Twojej szkoły lub kont służbowych.

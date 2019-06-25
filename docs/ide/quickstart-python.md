@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953962"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365295"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki start: Tworzenie pierwszej aplikacji sieci web języka Python za pomocą programu Visual Studio
 
@@ -177,8 +177,6 @@ Teraz możesz dodać ilość kodu języka Python do wdrożenia aplikacji sieci w
     ::: moniker range=">=vs-2019"
     ![Ustawienie plik startowy dla projektu w Eksploratorze rozwiązań](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
-
-1. Kliknij prawym przyciskiem myszy *app.py* w **Eksploratora rozwiązań** i wybierz **Ustaw jako plik startowy**. To polecenie Określa plik kodu, można uruchomić w języku Python, podczas uruchamiania aplikacji.
 
 2. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**. Następnie wybierz pozycję **debugowania** kartę i ustawić **numer portu** właściwość `4449`. Ten krok zapewnia, że program Visual Studio otworzy w przeglądarce za pomocą `localhost:4449` do dopasowania `app.run` argumentów w kodzie.
 

@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614516"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365398"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
@@ -49,7 +49,7 @@ Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych 
 
  Aby ustawić punkt przerwania w kodzie źródłowym, kliknij na marginesie po lewej stronie obok wiersza kodu. Możesz również wybrać wiersza i naciśnij klawisz **F9**, wybierz opcję **debugowania** > **Przełącz punkt przerwania**, lub kliknij prawym przyciskiem myszy i wybierz polecenie **punktuprzerwania**  >  **Wstaw punkt przerwania**. Punkt przerwania pojawia się jako czerwona kropka na lewym marginesie.
 
-W C# automatycznie wyróżniony kod, punkt przerwania i bieżącej linii wykonywania. Dla kodu C++, można włączyć wyróżnianie punktu przerwania i bieżącej linii, wybierając **narzędzia** (lub **debugowania**) > **opcje**  >   **Debugowanie** >  **Podświetl cały wiersz źródła dla punktów przerwania i bieżącej instrukcji (tylko C++)**.
+W C# automatycznie wyróżniony kod, punkt przerwania i bieżącej linii wykonywania. Dla kodu C++, można włączyć wyróżnianie punktu przerwania i bieżącej linii, wybierając **narzędzia** (lub **debugowania**) > **opcje**  >   **Debugowanie** >  **Podświetl cały wiersz źródła dla punktów przerwania i bieżącej instrukcji (tylko C++)** .
 
  ![Ustaw punkt przerwania](../debugger/media/basicbreakpoint.png "podstawowego punktu przerwania")
 
@@ -144,9 +144,9 @@ Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [meto
 
 4. Dodaj następujące polecenie, aby **nazwy funkcji** i zaznacz **C++** języka.
 
-    ```C++
-    ((my_class *) 0xcccccccc)->my_method
-    ```
+   ```cpp
+   ((my_class *) 0xcccccccc)->my_method
+   ```
 
 ::: moniker range=">= vs-2019"
 
@@ -167,7 +167,7 @@ Punkty przerwania danych w programie .NET Core, nie będzie działać dla:
 - Właściwości, które nie są rozwijane w etykietce narzędzia, zmienne lokalne, automatyczne, lub okno czujki
 - Zmienne statyczne
 - Klasy z atrybutu DebuggerTypeProxy
-- Pola wewnątrz struktury 
+- Pola wewnątrz struktury
 
 ::: moniker-end
 
@@ -189,11 +189,12 @@ Punkty przerwania danych nie działają w następujących warunkach:
 - Proces, który nie jest debugowany, zapisuje w lokalizacji pamięci.
 - Lokalizacja pamięci jest współużytkowana przez dwa lub więcej procesów.
 - Lokalizacja pamięci jest aktualizowana w jądrze. Na przykład, jeśli pamięć jest przekazywana do Windows 32-bitowych `ReadFile` funkcji, pamięć zostanie zaktualizowana z trybu jądra, debuger nie spowodują przerwania działania aktualizacji.
+- Gdzie wyrażenia kontrolnego jest większy niż 4 bajty na 32-bitowym sprzęcie i 8 bajtów w 64-bitowym sprzęcie. Jest to ograniczenie x86 architektury.
 
->[!NOTE]
->- Punkty przerwania danych są zależne od adresów pamięci. Adres zmiennej zmiany między jedną sesją debugowania do następnego, dzięki czemu punkty przerwania danych są automatycznie wyłączane na koniec każdej sesji debugowania.
+> [!NOTE]
+> - Punkty przerwania danych są zależne od adresów pamięci. Adres zmiennej zmiany między jedną sesją debugowania do następnego, dzięki czemu punkty przerwania danych są automatycznie wyłączane na koniec każdej sesji debugowania.
 >
->- Jeśli punkt przerwania danych zostanie ustawiony na zmiennej lokalnej, punkt przerwania pozostaje włączony nawet gdy funkcja skończy działanie, ale adres pamięci nie ma już zastosowania, więc zachowanie punktu przerwania są nieprzewidywalne. Jeśli punkt przerwania danych zostanie ustawiony na zmiennej lokalnej, należy usunąć lub wyłącz punkt przerwania przed końcem działania funkcji.
+> - Jeśli punkt przerwania danych zostanie ustawiony na zmiennej lokalnej, punkt przerwania pozostaje włączony nawet gdy funkcja skończy działanie, ale adres pamięci nie ma już zastosowania, więc zachowanie punktu przerwania są nieprzewidywalne. Jeśli punkt przerwania danych zostanie ustawiony na zmiennej lokalnej, należy usunąć lub wyłącz punkt przerwania przed końcem działania funkcji.
 
 ## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Zarządzanie punktami przerwania w oknie punktów przerwania
 
@@ -273,7 +274,7 @@ Po wybraniu **wyrażenia warunkowego**, możesz wybrać dwa warunki: **Ma warto�
 
 3. Dodaj nowy punkt przerwania w punkcie, który chcesz zbadać; na przykład, gdy obiekt jest do dodania do kolekcji. Kliknij prawym przyciskiem myszy punkt przerwania i wybierz **warunki**.
 
-4. Użyj Identyfikatora obiektu w **wyrażenia warunkowego** pola. Na przykład jeśli zmienna `item` jest obiektem, który ma zostać dodany do kolekcji, wybierz opcję **ma wartość true** i typ **elementu == $\<n >**, gdzie \<n > jest numer Identyfikatora obiektu .
+4. Użyj Identyfikatora obiektu w **wyrażenia warunkowego** pola. Na przykład jeśli zmienna `item` jest obiektem, który ma zostać dodany do kolekcji, wybierz opcję **ma wartość true** i typ **elementu == $\<n >** , gdzie \<n > jest numer Identyfikatora obiektu .
 
    Wykonywanie zostanie przerwane w momencie gdy ten obiekt ma być dodana do kolekcji.
 

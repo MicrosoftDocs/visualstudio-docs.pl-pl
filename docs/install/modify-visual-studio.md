@@ -3,7 +3,7 @@ title: Modyfikowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak modyfikowanie programu Visual Studio krok po kroku.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 03/30/2018
+ms.date: 06/25/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a08a14d8d07248efdcac759852a38777745e9a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951591"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365402"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio, dodając lub usuwając obciążenia i składniki
 
@@ -47,6 +47,9 @@ Poniżej przedstawiono sposób.
 
 >[!IMPORTANT]
 >Aby zainstalować, zaktualizować lub zmodyfikuj program Visual Studio, musisz zalogować się przy użyciu konta z uprawnieniami administracyjnymi. Aby uzyskać więcej informacji, zobacz [uprawnienia użytkownika i program Visual Studio](../ide/user-permissions-and-visual-studio.md).
+
+>[!TIP]
+> W poniższej procedurze przyjęto, że masz połączenie z Internetem. Aby uzyskać więcej informacji na temat sposobu modyfikowania wcześniej utworzony [instalacji w trybie offline](create-an-offline-installation-of-visual-studio.md) programu Visual Studio, zobacz [kontrolowania aktualizacji z wdrożeniami programu Visual Studio sieciowymi programami wykorzystującymi](controlling-updates-to-visual-studio-deployments.md) strony.
 
 ::: moniker range="vs-2017"
 
@@ -122,4 +125,6 @@ Jeśli nie chcesz zainstalować obciążenia, aby dostosować instalację progra
 
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Aktualizacja programu Visual Studio znajduje się w obsługi punktu odniesienia](update-servicing-baseline.md)
+* [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)

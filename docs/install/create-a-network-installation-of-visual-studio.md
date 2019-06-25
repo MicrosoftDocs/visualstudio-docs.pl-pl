@@ -1,7 +1,7 @@
 ---
 title: Utworzenie instalacji sieciowej
 description: Dowiedz się, jak utworzyć punkt instalacji sieciowej dla wdrażania programu Visual Studio w przedsiębiorstwie.
-ms.date: 03/30/2019
+ms.date: 04/26/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974102"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365336"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
-Zazwyczaj administrator przedsiębiorstwa tworzy punkt instalacji sieci do wdrożenia na klienckich stacjach roboczych. Zaprojektowaliśmy programu Visual Studio umożliwiają buforowania plików dla wstępnej instalacji oraz wszystkie aktualizacje produktu w jednym folderze. (Ten proces jest również określany jako _tworzenie układu_.) 
+Zazwyczaj administrator przedsiębiorstwa tworzy punkt instalacji sieci do wdrożenia na klienckich stacjach roboczych. Zaprojektowaliśmy programu Visual Studio umożliwiają buforowania plików dla wstępnej instalacji oraz wszystkie aktualizacje produktu w jednym folderze. (Ten proces jest również określany jako _tworzenie układu_.)
 
 Firma Microsoft wykonane to dlatego, że stacje robocze klienta można użyć tej samej lokalizacji sieci do zarządzania ich instalacji, nawet jeśli ich jeszcze nie zostało zaktualizowane do obsługi najnowszej aktualizacji.
 
@@ -145,13 +145,13 @@ Poniżej przedstawiono kilka przykładów sposobu tworzenia niestandardowego uk�
 * Aby pobrać dwóch obciążeń i wszystkie jego zalecane składniki:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * Aby pobrać dwóch obciążeń i wszystkie ich zalecanych i opcjonalnych składników, uruchom polecenie:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -225,11 +225,7 @@ Podczas instalacji z układu, zawartość, która jest zainstalowana jest uzyski
 
 Jeśli użyto `--wait` parametru, a następnie w zależności od wyniku operacji, `%ERRORLEVEL%` zmienna środowiskowa jest ustawiony na jedną z następujących wartości:
 
-  | **Wartość** | **wynik** |
-  | --------- | ---------- |
-  | 0 | Operacja została ukończona pomyślnie |
-  | 3010 | Operacja ukończona pomyślnie, ale instalacja wymaga ponownego uruchomienia, zanim będzie można jej używać. |
-  | Inne | Wystąpił błąd warunek — Sprawdź dzienniki Aby uzyskać więcej informacji |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>Aktualizowanie układu instalacji sieciowej
 
@@ -241,9 +237,9 @@ Podczas aktualizacji produktów są dostępne, może okazać się konieczne [akt
 
 > [!NOTE]
 > Programów inicjujących w programie Visual Studio, które są dostępne na [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) Pobierz i zainstaluj najnowszą wersję programu Visual Studio, który jest dostępny zawsze, gdy są uruchamiane.
-> 
+>
 > Dlatego możesz pobrać program Visual Studio *programu inicjującego* już dziś i uruchom go sześciu miesięcy od teraz, instaluje wersję programu Visual Studio, są aktualne w momencie, uruchom program inicjujący.
-> 
+>
 > Jednak jeśli tworzysz *układ* i zainstaluj go z niej, układ instaluje określoną wersję programu Visual Studio, który istnieje w układzie. Mimo że nowszej wersji może istnieć w trybie online, otrzymasz wersji programu Visual Studio, który jest w układzie.
 
 ::: moniker-end
@@ -252,9 +248,9 @@ Podczas aktualizacji produktów są dostępne, może okazać się konieczne [akt
 
 > [!NOTE]
 > Programów inicjujących w programie Visual Studio, które są dostępne na [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) Pobierz i zainstaluj najnowszą wersję programu Visual Studio, który jest dostępny zawsze, gdy są uruchamiane.
-> 
+>
 > Dlatego możesz pobrać program Visual Studio *programu inicjującego* już dziś i uruchom go sześciu miesięcy od teraz, instaluje wersję programu Visual Studio, są aktualne w momencie, uruchom program inicjujący.
-> 
+>
 > Jednak jeśli tworzysz *układ* i zainstaluj go z niej, układ instaluje określoną wersję programu Visual Studio, który istnieje w układzie. Mimo że nowszej wersji może istnieć w trybie online, otrzymasz wersji programu Visual Studio, który jest w układzie.
 
 ::: moniker-end
@@ -267,13 +263,14 @@ Jeśli wystąpi problem z instalacją w trybie offline, chcielibyśmy się dowie
 
 Oferujemy również [ **Czat na żywo** ](https://visualstudio.microsoft.com/vs/support/#talktous) opcję pomocy technicznej (tylko język angielski) w przypadku problemów związanych z instalacją.
 
-Inne opcje pomocy technicznej dostępne, mamy zbyt. Aby uzyskać listę, zobacz nasze [Porozmawiaj z nami](../ide/talk-to-us.md) strony.
+Inne opcje pomocy technicznej dostępne, mamy zbyt. Aby uzyskać listę, zobacz nasze [opinii](../ide/feedback-options.md) strony.
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
-* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
+- [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+- [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+- [Cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
+- [Aktualizacja programu Visual Studio znajduje się w obsługi punktu odniesienia](update-servicing-baseline.md)
+- [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f6e7c09eee52bd2ac48ccf5c51da59066ca72288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa728615f74d8422b1e0c7a9cdd531281bc18e32
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974121"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365243"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 
@@ -182,6 +182,7 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie instalacji sieciowej programu Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
+- [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 - [Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio](../install/install-certificates-for-visual-studio-offline.md)
 - [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
