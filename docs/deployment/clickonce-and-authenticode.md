@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf482d5ae90894e66e790423b514cc349701f8
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900551"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67399018"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 *Authenticode* to technologia firmy Microsoft, która używa branżowego standardu kryptografii do podpisywania kodu aplikacji przy użyciu certyfikatów cyfrowych, które zweryfikowania autentyczności wydawcy aplikacji. Za pomocą kodu Authenticode dla wdrożenia aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zmniejsza ryzyko konia trojańskiego. Koń trojański jest wirus lub występuje inne szkodliwe program, który złośliwy firm zniesławiającej jako program wiarygodnego źródła ustanowione, godne zaufania. Podpisywanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą certyfikatu cyfrowego jest opcjonalny krok, aby sprawdzić, czy zestawów i plików nie były modyfikowane.
@@ -33,7 +33,7 @@ ms.locfileid: "62900551"
 ## <a name="authenticode-and-code-signing"></a>Authenticode i podpisywanie kodu
  A *certyfikatu cyfrowego* jest plik, który zawiera publicznego i prywatnego klucza kryptograficznego, wraz z metadanych opisujących wydawcy do której certyfikat został wystawiony i agencja, który wystawił certyfikat.
 
- Istnieją różne typy certyfikatów Authenticode. Każdy z nich jest skonfigurowany dla różnych typów rejestracji. Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, konieczne jest posiadanie certyfikatu Authenticode, który jest prawidłowy do podpisywania kodu. Jeśli spróbujesz zarejestrować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu innego typu certyfikatu, takie jak certyfikat cyfrowy poczty e-mail nie będzie ono działać. Aby uzyskać więcej informacji, zobacz [wprowadzenie do podpisywania kodu](http://go.microsoft.com/fwlink/?LinkId=179452).
+ Istnieją różne typy certyfikatów Authenticode. Każdy z nich jest skonfigurowany dla różnych typów rejestracji. Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, konieczne jest posiadanie certyfikatu Authenticode, który jest prawidłowy do podpisywania kodu. Jeśli spróbujesz zarejestrować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu innego typu certyfikatu, takie jak certyfikat cyfrowy poczty e-mail nie będzie ono działać. Aby uzyskać więcej informacji, zobacz [wprowadzenie do podpisywania kodu](https://docs.microsoft.com/windows/desktop/seccrypto/cryptography-tools).
 
  Można uzyskać certyfikat podpisywania w jeden z trzech sposobów kodu:
 
