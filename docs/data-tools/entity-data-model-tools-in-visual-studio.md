@@ -8,18 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eace6e7f3d970de5aa0ab0e74530d3182af0e177
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567196"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412296"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools w programie Visual Studio
 
 Entity Framework to technologii mapowania obiektowo relacyjny, który umożliwia deweloperom platformy .NET pracować z danymi relacyjnymi przy użyciu obiektów specyficznych dla domeny. Dzięki temu większa część kodu dostępu do danych, który programiści muszą zwykle tworzyć, nie jest już potrzebna. Entity Framework jest zalecane mapowania obiektowo relacyjny (ORM), modelowanie technologii nowych aplikacji .NET.
 
-Entity Framework Tools są przeznaczone do tworzenia aplikacji Entity Framework (EF). Pełną dokumentację programu Entity Framework jest tutaj: [EF Core i programem EF 6](/ef/).
+Entity Framework Tools są przeznaczone do tworzenia aplikacji Entity Framework (EF). Pełną dokumentację programu Entity Framework jest tutaj: [Przegląd — EF 6](/ef/ef6/).
+
+  > [!NOTE]
+  > Entity Framework Tools, opisana na tej stronie są używane do generowania *edmx* pliki, które nie są obsługiwane w programie EF Core. Aby wygenerować z modelu platformy EF Core z istniejącej bazy danych, zobacz [odwrotnego Engineering — EF Core](/ef/core/managing-schemas/scaffolding). Aby uzyskać więcej informacji na temat różnic między programów EF 6 i programem EF Core, zobacz [Porównanie programów EF 6 i programem EF Core](/ef/efcore-and-ef6/).
 
 Za pomocą narzędzi Entity Framework Tools można utworzyć *modelu koncepcyjnego* z istniejącej bazy danych, następnie graficznie wizualizowanie i edytować model koncepcyjny. Alternatywnie można graficznie najpierw utworzyć model koncepcyjny, a następnie wygeneruj bazy danych, która obsługuje model. W obu przypadkach można automatycznie aktualizować modelu, gdy podstawowe zmiany bazy danych i automatycznie wygenerować kod warstwy obiektu dla aplikacji. Generowanie bazy danych i generowania kodu warstwy obiektu są możliwe do dostosowania.
 
