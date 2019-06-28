@@ -2,64 +2,45 @@
 title: What's new in subskrypcje programu Visual Studio
 description: Poznaj nowe i zaktualizowane funkcje, które służą do zarządzania subskrypcjami programu Visual Studio.
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 06/27/2019
 searchscope: VS Subscription
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 647009d7e01cc821bdf4fa6a573e6caa73cb7794
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259485"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465121"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s Nowość w subskrypcji programu Visual Studio
 
-Firma Microsoft aktualizuje pakiet korzyści subskrypcji często, aby zwiększyć jej użyteczność dla Ciebie. Czytaj dalej, aby więcej informacji na temat najnowszych funkcji, co kwartał posortowane.
+Firma Microsoft aktualizuje pakiet korzyści subskrypcji często, aby zwiększyć jej użyteczność dla Ciebie. Również wybierzemy ulepszenia do naszego subskrybenta i subskrypcji portali zarządzania, aby zapewnić możliwie najlepsze środowisko.  Czytaj dalej, aby zapoznaj się z najnowszymi funkcjami i aktualizacjami, co kwartał posortowane.
 
-## <a name="2018-q2-april-june"></a>II kwartał 2018 r. (kwiecień–czerwiec)
+## <a name="2019-q1-january-march"></a>2019, KW1 (styczeń – marzec)
 
-Poniżej przedstawiono krótkie przypomnienie o what's new in Q2.
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Maksymalne użycie dodane do [portal administratora subskrypcji](https://manage.visualstuido.com)
+Nowa funkcja w portalu administratora subskrypcji programu Visual Studio pomaga śledzić, ile subskrypcje zostały zakupione i przypisać i identyfikuje szczytowa liczba subskrypcji każdego poziomu przypisanej, zarówno w zeszłym roku, jak i przez cały czas w czas trwania umów. Może to pomóc w ułatwią zrozumienie bieżącego użycia subskrypcji i planowanie przyszłych zakupów. 
 
-### <a name="cloud-administrators"></a>Administratorzy chmury
+  > [!div class="mx-imgBorder"]
+  > ![Maksymalne użycie Menu](_img/maximum-usage/maximum-usage-menu.png)
 
-Dodaliśmy nowe funkcje dla administratorów chmury, który ułatwia zarządzanie subskrypcjami chmury:
+Widać również uruchomione historię przypisania, w tym zakupów i przydziałów.   
 
-* [**Zbiorcze przypisania**](/visualstudio/subscriptions/assign-license#bulk-assignments): Dodaj i przekaż wielu subskrybentów zbiorczo.
+Aby uzyskać więcej informacji, zapoznaj się z naszym [maksymalne wykorzystanie](maximum-usage.md) artykułu. 
 
-  ![Dodaj wielu użytkowników, korzystając z przycisku Dodaj zbiorczo](media/bulk-add-multiple-subscribers.png)
+## <a name="2019-q2-april-june"></a>II kwartał 2019 r. (kwiecień–czerwiec)
 
-* [**Export**](/visualstudio/subscriptions/exporting-subscriptions): Wyeksportować listę użytkowników i szczegółowe informacje o ich przypisania. Listę takich może okazać się przydatne śledzić zadania i daty wygaśnięcia.
+### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio z subskrypcjami GitHub Enterprise
+//Build konferencji w maju firma Microsoft ogłosiła, że klienci z umową Enterprise Agreement mogą teraz kupować subskrypcje programu Visual Studio, które obejmują GitHub Enterprise.  Jest łatwym sposobem uzyskania subscriptoins programu Visual Studio i GitHub Enterprise dla pojedynczego niższej cenie.  
 
-   ![Eksportuj listę subskrybentów do programu Excel, korzystając z przycisku eksportu](media/export-subscriber-list-to-csv.png)
+GitHub Enterprise jest dostępna z subskrypcjami programu Visual Studio Enterprise i Visual Studio Professional zakupione w ramach umowy Enterprise Agreement. Istnieje również "podniesienie" oferta, która pozwala na dodawanie GitHub Enterprise, nawet jeśli nie termin odnowienia umowy Enterprise agreement, jest.
 
-* [**Bulk edit**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-using-bulk-edit): Edytuj informacje o subskrypcji z wielu subskrybentów zbiorczo.
+Aby dowiedzieć się więcej na temat korzyści, opcji i cen, odwiedź https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
-  ![Edytowanie wielu użytkowników, korzystając z przycisku edycji zbiorczej](media/bulk-edit-multiple-subscribers.png)
-
-* Poznaj nowe pola, które są dostępne w [ **Dodaj subskrypcję** środowisko](assign-license.md):
-
-  * **Wiadomość e-mail z powiadomieniem**: Jeśli organizacja nie korzysta z usługi Azure AD i chcesz użyć innego adresu e-mail dla powiadomień innego niż adres e-mail logowania, można dodać.
-
-    ![Dodaj nowy adres e-mail powiadamiania](media/add-new-subscriber-notification-email.png)
-
-  * **Preferencje dotyczące komunikacji**: Wybierz język, który ma być używany do wysyłania wiadomości e-mail dotyczących przypisania.
-
-    ![Zmień język do użycia podczas wysyłania wiadomości e-mail z powiadomieniem](media/change-subscriber-communication-preference.png)
-
-  * **Dodaj odwołanie**: Dodaj notatki odwołania do subskrypcji, którymi zarządzasz.
-
-    ![Dodaj notatki odwołania do każdej subskrypcji](media/add-subscriber-reference-notes.png)
-
-* [**Wyślij ponownie wiadomość e-mail dotycząca przypisania**](resend-assignment-email.md): Wyślij ponownie wiadomość e-mail z powiadomieniem, dla każdego, kto na liście subskrybenta i dowolną liczbę razy, ile chcesz.
-
-  ![Wyślij ponownie wiadomość e-mail dotyczącą aktywacji do żadnego użytkownika lub wielu użytkowników zawsze wtedy, gdy chcesz](media/resend-subscriber-activation-emails.png)
-
-* [**Filtr**](search-license.md): Organizowanie i filtrowanie danych subskrybenta w taki sposób, aby najlepiej spełniały potrzeby.
-
-  ![Filtrować danych subskrybenta, w oparciu o dostępne pola](media/filter-subscriber-data.png)
+Jeśli Twoja organizacja ma już program Visual Studio z subskrypcjami GitHub Enterprise, możesz dowiedzieć się więcej [Zarządzanie programu Visual Studio z usługą GitHub Enterprise](assign-github.md) subskrypcje w naszej dokumentacji.  
 
 I to wszystko teraz!
 

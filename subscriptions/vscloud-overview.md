@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Wypożyczać program Visual Studio Professional lub Visual Studio Enterprise na podstawie miesiąca na miesiąc lub roczna, nie długoterminowej umowy.
 searchscope: VS Subscription
-ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177558"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465127"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji chmury programu Visual Studio Professional i Visual Studio Enterprise
 
-Możesz kupić [subskrypcji programu Visual Studio Professional i Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) z [Visual Studio Marketplace](https://marketplace.visualstudio.com). Są to tak zwane **"subskrypcje usług w chmurze"**.
+Możesz kupić [subskrypcji programu Visual Studio Professional i Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) z [Visual Studio Marketplace](https://marketplace.visualstudio.com). Są to tak zwane **"subskrypcje usług w chmurze"** .
 
 [Porównaj korzyści z subskrypcji chmury i ceny](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -28,7 +28,7 @@ Możesz kupić [subskrypcji programu Visual Studio Professional i Visual Studio 
 * Do rozliczania zakupów, potrzebujesz [subskrypcji platformy Azure](https://azure.microsoft.com/pricing/purchase-options/). Możesz [Zarejestruj](https://portal.azure.com) przed pierwszym zakupem lub podczas pierwszego zakupu w witrynie Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Kto może kupić subskrypcje chmury programu Visual Studio?
-Każda osoba mająca [dostęp właściciela i współautor](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) na platformie Azure subskrypcja kupić subskrypcje w chmurze.
+Każda osoba mająca [właściciela](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administratora usługi](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), lub [współadministrator](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) dostęp do subskrypcji platformy Azure można kupić subskrypcje w chmurze.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Jak kupić subskrypcje chmury
 

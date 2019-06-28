@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: cdcfd381d74af4e3a11f96518ab3f31e79995978
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 4ed7af80583e5c0890e0b0e6d631f99d77943cd8
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614541"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465093"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 
@@ -118,6 +118,12 @@ Korzystając z projektów aplikacji konsoli .NET Framework, opcję, aby dodać o
 5. Przełącz się do programu Visual Studio, aby wyświetlić punkt przerwania, sprawdź wartości i tak dalej.
 
    ![Punkt przerwania](media/edit-and-refresh/breakpoint-console.png)
+
+## <a name="container-reuse"></a>Ponowne użycie kontenerów
+
+Podczas cyklu rozwoju Visual Studio tylko ponownie kompiluje obrazów kontenerów i samego kontenera po zmianie pliku Dockerfile, ale jeśli nie, ponownie używa kontenerów z poprzedniego uruchomienia.
+
+Jeśli ręcznie zmodyfikowano kontenera i chcesz ponownie uruchomić za pomocą obrazu kontenera czystą użycia **kompilacji** > **czysty** polecenia w programie Visual Studio, a następnie Skompiluj w zwykły sposób.
 
 ## <a name="summary"></a>Podsumowanie
 

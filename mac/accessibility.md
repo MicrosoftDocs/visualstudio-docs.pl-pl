@@ -57,7 +57,7 @@ Ustawienie **pełny dostęp za pomocą klawiatury** do **wszystkich kontrolek** 
 
 Aby włączyć lub wyłączyć naciśnij VoiceOver  **&#8984; + F5**
 
-Polecenia voiceOver pojawiają się w tym przewodniku jako **VO + * klucz*** zgodnie z którą **VO** odwołuje się do modyfikator w **VoiceOver narzędzie** aplikacji. Modyfikator domyślny jest **Ctrl + Alt**. Na przykład, w zależności od Twojego modyfikator VoiceOver **VO + M** oznacza **Ctrl + Alt + M**. Celu skrócenia programu, klawisze kursora będzie nazywany **po lewej stronie** i **po prawej stronie**itp.
+Polecenia voiceOver pojawiają się w tym przewodniku jako **VO + *klucz*** zgodnie z którą **VO** odwołuje się do modyfikator w **VoiceOver narzędzie** aplikacji. Modyfikator domyślny jest **Ctrl + Alt**. Na przykład, w zależności od Twojego modyfikator VoiceOver **VO + M** oznacza **Ctrl + Alt + M**. Celu skrócenia programu, klawisze kursora będzie nazywany **po lewej stronie** i **po prawej stronie**itp.
 
 Aby przejść z programu Visual Studio dla komputerów Mac interfejsu użytkownika, należy użyć następujących kombinacji klawiszy:
 
