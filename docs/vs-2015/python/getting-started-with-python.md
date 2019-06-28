@@ -60,7 +60,7 @@ Następujące zasoby pomogą Ci rozpocząć pracę:
 
 - [Przewodnik instalacji](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Wprowadzenie rozpoczęcie pracy i deep dive krótkie filmy wideo](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- (Instalacja i funkcje wersji demonstracyjnej (27 min)]https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- (Instalacja i funkcje wersji demonstracyjnej (27 min)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentacja](https://github.com/Microsoft/PTVS/wiki)  
 
 Należy pamiętać, że program Visual Studio nie obecnie zapewnia oznacza, że do utworzenia autonomicznego pliku wykonywalnego przy użyciu języka Python, co oznacza programu przy użyciu osadzonych interpreter języka Python. Istnieją różne środki w ramach społeczności języka Python w tym celu zgodnie z opisem na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [możliwego do osadzenia pliku Zip przy użyciu CPython](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
