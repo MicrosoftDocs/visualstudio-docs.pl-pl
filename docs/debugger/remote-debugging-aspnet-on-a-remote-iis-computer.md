@@ -54,10 +54,10 @@ Ten artykuł zawiera instrukcje dotyczące konfigurowania podstawowej konfigurac
 1. Utwórz nową aplikację sieci web platformy ASP.NET Core. 
 
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 r, wpisz **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, wybierz **szablony**, następnie wybierz **tworzenie Nowa aplikacja internetowa ASP.NET Core** . Nadaj projektowi nazwę w oknie dialogowym **MyASPApp**, a następnie wybierz **Utwórz**. Następnie wybierz pozycję **aplikacji sieci Web (Model-View-Controller)**, a następnie wybierz **Utwórz**.
+    W programie Visual Studio 2019 r, wpisz **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, wybierz **szablony**, następnie wybierz **tworzenie Nowa aplikacja internetowa ASP.NET Core** . Nadaj projektowi nazwę w oknie dialogowym **MyASPApp**, a następnie wybierz **Utwórz**. Następnie wybierz pozycję **aplikacji sieci Web (Model-View-Controller)** , a następnie wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    W programie Visual Studio 2017, wybierz **Plik > Nowy > Projekt**, a następnie wybierz **Visual C# > sieci Web > Aplikacja sieci Web programu ASP.NET Core**. W sekcji Szablony ASP.NET Core wybierz **aplikacji sieci Web (Model-View-Controller)**. Upewnij się, że jest zaznaczony platformy ASP.NET Core 2.1, który **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** jest ustawiona na **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.
+    W programie Visual Studio 2017, wybierz **Plik > Nowy > Projekt**, a następnie wybierz **Visual C# > sieci Web > Aplikacja sieci Web programu ASP.NET Core**. W sekcji Szablony ASP.NET Core wybierz **aplikacji sieci Web (Model-View-Controller)** . Upewnij się, że jest zaznaczony platformy ASP.NET Core 2.1, który **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** jest ustawiona na **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.
     ::: moniker-end
 
 4. Otwórz plik About.cshtml.cs i ustaw punkt przerwania `OnGet` — metoda (w szablonach starsze HomeController.cs zamiast tego otworzyć i ustaw punkt przerwania w `About()` metody).
@@ -213,7 +213,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
 7. Kliknij przycisk **dołączyć**.
 
-8. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwy komputera zdalnego >**.
+8. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwy komputera zdalnego >** .
 
     Powinna zostać wyświetlona strona sieci web platformy ASP.NET.
 
