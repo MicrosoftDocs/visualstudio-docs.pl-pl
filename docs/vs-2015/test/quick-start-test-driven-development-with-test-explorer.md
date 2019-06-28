@@ -39,7 +39,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
    1. Utwórz projekt testu.  
   
-        W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic**, **Visual C#**, lub **Visual C++**, a następnie wybierz **testu**.  
+        W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic**, **Visual C#** , lub **Visual C++** , a następnie wybierz **testu**.  
   
         Wybierz **projektu testu jednostkowego**.  
   
@@ -76,7 +76,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
 2. Utwórz projekt testu.  
   
-   - W **nowy projekt** okno dialogowe, wybierz **Visual C#**, **testu** , a następnie wybierz **projektu testu jednostkowego**.  
+   - W **nowy projekt** okno dialogowe, wybierz **Visual C#** , **testu** , a następnie wybierz **projektu testu jednostkowego**.  
   
         ![Nowe projekty kodu i testowanie](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -124,7 +124,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
 7. Wybierz elementy w obszarze **ślad stosu** aby zobaczyć, gdzie test nie powiódł się.  
   
-   ![Testów jednostkowych Test Explorer z wyświetlonym nie powiodło się. ] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![Testów jednostkowych Test Explorer z wyświetlonym nie powiodło się.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
    Na tym etapie utworzono test i procedurę zastępczą, którą zmodyfikujesz, aby test zakończy się pomyślnie.  
   
@@ -145,7 +145,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
      Test zakończy się pomyślnie.  
   
-     ![Jednostka Test Explorer z wyświetlonym testu wynikiem pozytywnym. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+     ![Jednostka Test Explorer z wyświetlonym testu wynikiem pozytywnym. ](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodaj testy, aby rozszerzyć zakres danych wejściowych  
   
@@ -287,4 +287,4 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
      Kod nadal przechodzi wszystkie testy.  
   
-     ![Eksplorator testów jednostkowych pokazujący 3 testy zakończone pomyślnie. ] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Eksplorator testów jednostkowych pokazujący 3 testy zakończone pomyślnie. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
