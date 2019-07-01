@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54d786e721e151140cac2fa822ddbd04de6073ae
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983363"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493651"
 ---
 # <a name="understanding-build-configurations"></a>Ogólne informacje o konfiguracjach kompilacji
 
@@ -22,7 +22,7 @@ Każda platforma ma konfiguracji specyficznych dla jego kompilacji.
 
 ## <a name="solution-configurations"></a>Konfiguracje rozwiązania
 
-Podobnie konfiguracje projektu konfiguracje rozwiązania są używane do tworzenia konfiguracje niestandardowe dla całego projektu. Za pomocą **mapowania konfiguracji** karcie **kompilacji > konfiguracje** elementu, można przypisać konfigurację docelową dla każdego elementu rozwiązania, jak pokazano w poniższej ilustracji:
+Podobnie konfiguracje projektu konfiguracje rozwiązania są używane do tworzenia konfiguracje niestandardowe dla całego projektu. Za pomocą **mapowania konfiguracji** karcie **kompilacji > konfiguracje** elementu, można przypisać konfigurację docelową dla każdego elementu rozwiązania, jak pokazano na poniższej ilustracji:
 
 ![Opcje mapowania konfiguracji](media/projects-and-solutions-image3.png)
 
@@ -36,7 +36,7 @@ W programie Visual Studio dla komputerów Mac, zamiast ustawiać projekt startow
 
 ![Uruchom konfigurację, listy rozwijanej](media/projects-and-solutions-image8.png)
 
-Konfigurację uruchomieniową jest zestawem opcji wykonywania z nazwą i kilka konfiguracji, które są zdefiniowane w projekcie do różnych celów. Uruchom konfiguracje są definiowane na poziomie projektu, a domyślny zostaną utworzone automatycznie dla każdego projektu pliku wykonywalnego, mimo że można dodać dowolną liczbę wymaganych. Niektóre typy projektu automatycznie generować dodatkowe konfiguracje wykonywania. Na przykład projekty systemu watchOS mogą generować  _konfiguracje podstawowe informacje i powiadomienia._
+Konfigurację uruchomieniową jest zestawem opcji wykonywania z nazwą i kilka konfiguracji, które są zdefiniowane w projekcie do różnych celów. Uruchom konfiguracje są definiowane na poziomie projektu, a domyślny zostaną utworzone automatycznie dla każdego projektu pliku wykonywalnego, mimo że można dodać dowolną liczbę wymaganych. Niektóre typy projektu automatycznie generować dodatkowe konfiguracje wykonywania. Na przykład projekty systemu watchOS mogą generować _konfiguracje podstawowe informacje i powiadomienia._
 
 Konfiguracje można współużytkowane z innymi deweloperami (w takim przypadku konfiguracje będą przechowywane w pliku .csproj) lub przechowywane lokalnie (w takim przypadku będą przechowywane w pliku .user).
 

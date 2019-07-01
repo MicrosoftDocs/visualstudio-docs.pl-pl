@@ -1,6 +1,6 @@
 ---
 title: Dodawanie adnotacji struktur i klas
-ms.date: 11/04/2016
+ms.date: 06/28/2019
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -24,14 +24,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571423"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493633"
 ---
 # <a name="annotating-structs-and-classes"></a>Dodawanie adnotacji struktur i klas
+
 Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą funkcji adnotacje, przypominają invariants — jest uznawana za tę prawdziwe dowolnego wywołania funkcji i funkcji wejścia/wyjścia, która obejmuje otaczającej strukturze jako parametr lub wartość wyniku.
 
 ## <a name="struct-and-class-annotations"></a>Struktury i klasy adnotacji
@@ -75,6 +76,39 @@ Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą fu
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
+
+## <a name="example"></a>Przykład
+
+```cpp
+#include <sal.h>
+// For FIELD_OFFSET macro
+#include <windows.h>
+
+// This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
+_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+struct MyBuffer
+{
+    static int MaxBufferSize;
+    
+    _Field_z_
+    const char* name;
+    
+    int firstField;
+
+    // ... other fields
+
+    _Field_range_(1, MaxBufferSize)
+    int bufferSize;
+    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    int buffer[0];
+};
+```
+
+Informacje w tym przykładzie:
+
+- `_Field_z_` jest odpowiednikiem `_Null_terminated_`.  `_Field_z_` dla nazwy pola określa, że pole nazwy jest ciąg zakończony znakiem null.
+- `_Field_range_` Aby uzyskać `bufferSize` Określa, że wartość `bufferSize` powinny być w ciągu 1 i `MaxBufferSize` (oba włącznie).
+- Wyniki zakończenia `_Struct_size_bytes_` i `_Field_size_` adnotacje są równoważne. Struktury lub klasy, które mają podobny układ `_Field_size_` jest łatwiej odczytywać i utrzymywania, ponieważ ma ona mniejszą liczbę odwołań i obliczeń niż równowartość `_Struct_size_bytes_` adnotacji. `_Field_size_` nie wymaga konwersji na rozmiar w bajtach. Jeśli rozmiar w bajtach jest jedyną opcją, na przykład dla pola wskaźnika void `_Field_size_bytes_` mogą być używane. Jeśli oba `_Struct_size_bytes_` i `_Field_size_` istnieje, oba będą dostępne dla narzędzia. Jest to narzędzie co należy zrobić, jeśli dwa adnotacji nie zgadzają się.
 
 ## <a name="see-also"></a>Zobacz też
 

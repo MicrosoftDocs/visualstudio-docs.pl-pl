@@ -2,23 +2,24 @@
 title: Subskrypcje programu Visual Studio — korzyści dla subskrybenta
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 02/12/2018
+manager: lank
+ms.date: 06/28/2019
 ms.topic: conceptual
 description: Dowiedz się więcej o korzyściach zawarte w Twojej subskrypcji programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427796"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493743"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Korzyści zawarte w Twojej subskrypcji programu Visual Studio
 
-Subskrypcje programu Visual Studio oferują najbardziej wszechstronny zestaw zasobów, które umożliwiają tworzenie, wdrażanie i zarządzanie nimi wspaniałych aplikacji na Twoje ulubione platformy i urządzenia, w tym Windows, iOS, Android i Linux.  Określone korzyści będą się różnić w zależności od rodzaju posiadanej subskrypcji.  Aby zapewnić maksymalną wartość dla subskrybentów, korzyści zapewniane są okresowo zmieniane miarę wprowadzania dostosowań skoncentrować się na technologiach najnowsze i najbardziej przydatne, materiałów szkoleniowych i korzyści dostępnych dla partnerów.
+Subskrypcje programu Visual Studio (dawniej subskrypcje MSDN) oferują najbardziej wszechstronny zestaw zasobów, które umożliwiają tworzenie, wdrażanie i zarządzanie nimi wspaniałych aplikacji na Twoje ulubione platformy i urządzenia, w tym Windows, iOS, Android i Linux.  Określone korzyści będą się różnić w zależności od rodzaju posiadanej subskrypcji.  Aby zapewnić maksymalną wartość dla subskrybentów, korzyści zapewniane są okresowo zmieniane miarę wprowadzania dostosowań skoncentrować się na technologiach najnowsze i najbardziej przydatne, materiałów szkoleniowych i korzyści dostępnych dla partnerów.
 
-Korzyści są podzielone na trzy kategorie:
+
+Korzyści są podzielone na trzy kategorie w [portal dla subskrybentów](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:).
 
 ## <a name="tools"></a>Narzędzia
 Kategoria narzędzi zapewnia dostęp do szerokiej gamy korzyści, w tym sztandarowe korzyści, takich jak [środowiska IDE programu Visual Studio](vs-ide-benefit.md), [usługom DevOps platformy Azure](vs-azure-devops.md), i [Azure](vs-azure.md).  W zależności od poziomu subskrypcji również zobaczysz Windows i konta dewelopera Office 365, Visual Studio App Center i korzyści oferowanych przez partnerów, takich jak WhiteSource Bolt i ModernRequirements.
@@ -30,7 +31,7 @@ Ułatwiają ciągłe zwiększyć swoje umiejętności wykorzystać i na bieżąc
 - Platforma Microsoft Azure dla deweloperów platformy .net i innych wspaniałych treści organizowanego przez firmę Pluralsight
 - Analiza danych dla deweloperów od DataCamp
 - Projektowanie rozwiązań z zakresu bazy danych programu SQL Server w witrynie Microsoft Virtual Academy
-- LinkedIn Learning przeniesienie dostęp do osób, szczegółowych informacji i umiejętności, których potrzebujesz do programu excel.
+- LinkedIn Learning zapewnia dostęp do osób, szczegółowych informacji i umiejętności, których potrzebujesz do programu excel.
 
 ## <a name="support"></a>Pomoc techniczna
 Jako subskrybent programu Visual Studio również masz dostęp do różnych rodzajów pomocy technicznej w przypadku, gdy masz pytania lub potrzebujesz pomocy technicznej.

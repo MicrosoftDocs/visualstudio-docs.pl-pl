@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424304"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493657"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy przypadków użycia UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,11 +170,11 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
  ![Przypadek użycia pokazujący liczebność wiele do wielu](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Do stanu, że kilka aktorów tej samej klasy mogą brać udział w pojedyncze wystąpienie przypadek użycia, na końcu aktora skojarzenie, aby ustawić liczebności ** 1... \\***.  
+- Do stanu, że kilka aktorów tej samej klasy mogą brać udział w pojedyncze wystąpienie przypadek użycia, na końcu aktora skojarzenie, aby ustawić liczebności **1..\*** .  
   
    Na ilustracji skorzystać z co najmniej jeden restauracji wypełniając takiej samej kolejności posiłku.  
   
-- Aby pokazać, że każdego aktora mogą uczestniczyć w tym samym czasie w kilka wystąpień przypadek użycia, na końcu przypadków użycia skojarzenie, aby ustawić liczebności **\\***.  
+- Aby pokazać, że każdego aktora mogą uczestniczyć w tym samym czasie w kilka wystąpień przypadek użycia, na końcu przypadków użycia skojarzenie, aby ustawić liczebności **\*** .  
   
    Na ilustracji każdy restauracji mogą pracować na spełniające więcej niż jedno ustawienie kolejności w danym momencie.  
   
@@ -190,11 +190,11 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
    - **1** stwierdzić, że dokładnie jedno wystąpienie tej roli uczestniczy w każdym odnośniku.  
   
-   - **1..\\** * do co najmniej jedno wystąpienie tej roli uczestniczyć w każdym odnośniku stanu.  
+   - **1..\***  do co najmniej jedno wystąpienie tej roli uczestniczyć w każdym odnośniku stanu.  
   
    - **od 0 do 1** do stanu, że udział jest opcjonalna.  
   
-   - **\\** * Aby stwierdzać, że zero lub więcej wystąpień tej roli uczestniczyć w linku.  
+   - **\*** do stanu, w którym zero lub więcej wystąpień tej roli uczestniczyć w linku.  
   
 > [!NOTE]
 > Wiele zespołów nie należy umieszczać informacje liczebność na diagramy przypadków użycia, pozostawiając Liczebność punktów na wartość domyślną 1. Zamiast tego zapewniają informacje przedstawione w osobnym opisy przypadki użycia. W takim przypadku zostaną ukryte wszystkich Liczebność punktów diagramy przypadków użycia.  

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933125"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493723"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Wprowadzenie do platformy ASP.NET Core
 
@@ -234,7 +234,7 @@ Upewnij się zakończyć wszystkie cztery kroki pomyślnie upewnij się, że pom
 
 Ten przewodnik zapewniła wprowadzenie do platformy ASP.NET Core. Opisuje co to jest, kiedy należy używać i podano informacje na temat używania go w programie Visual Studio dla komputerów Mac.
 Więcej informacji na temat następnych kroków w tym miejscu można znaleźć w następujących przewodnikach:
-- [Platforma ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) docs.
+- [Platforma ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc) docs.
 - [Tworzenie usług zaplecza dla natywnych aplikacji mobilnych](/aspnet/core/mobile/native-mobile-backend), który pokazuje, jak utworzyć usługę REST, za pomocą platformy ASP.NET Core dla aplikacji platformy Xamarin.Forms.
 - [Praktyczne laboratorium platformy ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
