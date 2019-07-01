@@ -3,21 +3,23 @@ title: Team Foundation Version Control (TFVC)
 description: Nawiązywanie połączenia z programu Visual Studio dla komputerów Mac w Team Foundation Server/DevOps platformy Azure za pomocą Team Foundation Version Control (TFVC).
 author: conceptdev
 ms.author: crdun
-ms.date: 04/28/2019
+ms.date: 06/25/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 52b40f8dbf24dd1e712bd0481e36f39cfcc1fc7d
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746333"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67398999"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Team Foundation Version Control
 
 > [!NOTE]
 > Aby uzyskać najlepsze wyniki kontroli wersji w systemie macOS zaleca się przy użyciu narzędzia Git zamiast Team Foundation Version Control (TFVC). Git jest obsługiwana w programie Visual Studio dla komputerów Mac i jest to opcja domyślna, w przypadku repozytoriów hostowanych w Team Foundation Server (TFS) / DevOps platformy Azure. Aby dowiedzieć się więcej o korzystaniu z usługi Git przy użyciu infrastruktury DevOps programu TFS/Azure, zobacz [Konfigurowanie repozytorium Git](/visualstudio/mac/set-up-git-repository) artykułu.
+>
+> Jeśli wcześniej używano rozszerzenia TFVC wersję zapoznawczą programu Visual Studio dla komputerów Mac, go nie jest już obsługiwana w przypadku uaktualniania do programu Visual Studio 2019 dla komputerów Mac.
 
 Repozytoriów platformy Azure oferuje dwa modele kontroli wersji: [Git](/azure/devops/repos/git/?view=azure-devops), rozproszony system kontroli wersji, a [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), wersjami w sposób scentralizowany system kontroli.
 
@@ -110,10 +112,12 @@ Aby dowiedzieć się więcej na temat polecenia wymienione w tym miejscu lub inn
 
 > [!NOTE]
 > Aby uzyskać najlepsze wyniki kontroli wersji w systemie macOS zaleca się przy użyciu narzędzia Git zamiast Team Foundation Version Control (TFVC). Git jest obsługiwana w programie Visual Studio dla komputerów Mac i jest to opcja domyślna, w przypadku repozytoriów hostowanych w Team Foundation Server (TFS) / DevOps platformy Azure. Aby dowiedzieć się więcej o korzystaniu z usługi Git przy użyciu infrastruktury DevOps programu TFS/Azure, zobacz [Konfigurowanie repozytorium Git](/visualstudio/mac/set-up-git-repository) artykułu.
+>
+> Jeśli wcześniej używano rozszerzenia TFVC wersję zapoznawczą programu Visual Studio dla komputerów Mac, go nie jest już obsługiwana w przypadku uaktualniania do programu Visual Studio 2019 dla komputerów Mac.
 
 W programie Visual Studio dla komputerów Mac rozszerzenia galerii ma rozszerzenie kontroli wersji Team Foundation, które udostępnia ograniczoną obsługę nawiązać połączenia z programem TFVC. Rozszerzenie nie jest obsługiwana i ma kilka znanych problemów, dzięki czemu Twoje doświadczenia mogą się różnić w przypadku korzystania z niego.
 
-Aby zainstalować rozszerzenie, uruchom program Visual Studio dla komputerów Mac, a następnie wybierz **programu Visual Studio > rozszerzenia** menu. W **galerii** zaznacz **kontroli wersji > kontroli wersji Team Foundation dla TFS i usługi Azure DevOps** i kliknij przycisk **instalacji...** :
+Aby zainstalować rozszerzenie, uruchom program Visual Studio dla komputerów Mac, a następnie wybierz **programu Visual Studio > rozszerzenia** menu. W **galerii** zaznacz **kontroli wersji > kontroli wersji Team Foundation dla TFS i usługi Azure DevOps** i kliknij przycisk **instalacji...**:
 
 ![Menedżer rozszerzeń](media/tfvc-install.png)
 
@@ -121,13 +125,13 @@ Postępuj zgodnie z monitami, aby zainstalować rozszerzenie. Po zainstalowaniu,
 
 ### <a name="updating-the-extension"></a>Trwa aktualizowanie rozszerzenia
 
-Okresowo są wprowadzone aktualizacje z rozszerzeniem TFVC. Dostęp do aktualizacji, wybierz **programu Visual Studio > rozszerzenia...**  z menu i wybierzesz **aktualizacje** kartę. Zaznacz rozszerzenie na liście i naciśnij klawisz **aktualizacji** przycisku:
+Okresowo są wprowadzone aktualizacje z rozszerzeniem TFVC. Dostęp do aktualizacji, wybierz **programu Visual Studio > rozszerzenia...** z menu i wybierzesz **aktualizacje** kartę. Zaznacz rozszerzenie na liście i naciśnij klawisz **aktualizacji** przycisku:
 
 Naciśnij klawisz **zainstalować** w następnym oknie dialogowym odinstalowanie starego pakietu i instalacja nowego.
 
 ### <a name="using-the-extension"></a>Przy użyciu rozszerzenia
 
-Po zainstalowaniu rozszerzenia wybierz **kontroli wersji > DevOps programu TFS/platformy Azure > Otwórz ze zdalnego repozytorium...**  elementu menu.
+Po zainstalowaniu rozszerzenia wybierz **kontroli wersji > DevOps programu TFS/platformy Azure > Otwórz ze zdalnego repozytorium...** elementu menu.
 
 ![Element menu, aby otworzyć rozszerzenia](media/tfvc-source-control-explorer-devops.png)
 

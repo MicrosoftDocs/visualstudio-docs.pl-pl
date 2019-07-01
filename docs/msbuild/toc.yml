@@ -8,9 +8,9 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: Pojęcia dotyczące programu MSBuild
       items:
-        - name: Pojęcia dotyczące programu MSBuild
+        - name: Pojęcia dotyczące programu MSBuild — omówienie
           href: msbuild-concepts.md
-        - name: Właściwości programu MSBuild
+        - name: Właściwości
           items:
             - name: Właściwości programu MSBuild
               href: msbuild-properties.md
@@ -22,7 +22,7 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Funkcje właściwości
               href: property-functions.md
-        - name: Elementy programu MSBuild
+        - name: Items
           items:
             - name: Elementy programu MSBuild
               href: msbuild-items.md
@@ -36,7 +36,7 @@
               href: item-definitions.md
             - name: Funkcje elementów
               href: item-functions.md
-        - name: Obiekty docelowe w programie MSBuild
+        - name: Obiekty docelowe
           items:
             - name: Obiekty docelowe w programie MSBuild
               href: msbuild-targets.md
@@ -56,7 +56,7 @@
               href: how-to-clean-a-build.md
             - name: Odwoływanie się do zestawu SDK projektu MSBuild
               href: how-to-use-project-sdk.md
-        - name: Zadania programu MSBuild
+        - name: Zadania
           items:
             - name: Zadania programu MSBuild
               href: msbuild-tasks.md
@@ -66,7 +66,7 @@
               href: how-to-ignore-errors-in-tasks.md
             - name: Kompilacja projektu zawierającego zasoby
               href: how-to-build-a-project-that-has-resources.md
-            - name: Zadania wbudowane programu MSBuild
+            - name: Zadania wbudowane
               items:
                 - name: Zadania wbudowane programu MSBuild
                   href: msbuild-inline-tasks.md
@@ -76,7 +76,7 @@
               href: msbuild-roslyncodetaskfactory.md
         - name: Porównanie właściwości i elementów
           href: comparing-properties-and-items.md
-        - name: Znaki specjalne w programie MSBuild
+        - name: Znaki specjalne
           items:
             - name: Znaki specjalne w programie MSBuild
               href: msbuild-special-characters.md
@@ -84,11 +84,11 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Użycie znaków zarezerwowanych XML w plikach projektu
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Pojęcia zaawansowane dotyczące programu MSBuild
+    - name: Pojęcia zaawansowane
       items:
         - name: Pojęcia zaawansowane dotyczące programu MSBuild
           href: msbuild-advanced-concepts.md
-        - name: Przetwarzanie wsadowe w programie MSBuild
+        - name: Tworzenie partii
           items:
             - name: Przetwarzanie wsadowe w programie MSBuild
               href: msbuild-batching.md
@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: Przekształcenia w programie MSBuild
           href: msbuild-transforms.md
-        - name: Integracja z programem Visual Studio (MSBuild)
+        - name: Integracja z programem Visual Studio
           items:
             - name: Integracja z programem Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Rejestrowanie rozszerzeń środowiska .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Równoległe tworzenie wielu projektów za pomocą narzędzia MSBuild
+        - name: Równoległe kompilowanie wielu projektów
           items:
             - name: Równoległe tworzenie wielu projektów za pomocą narzędzia MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -116,11 +116,11 @@
               href: using-multiple-processors-to-build-projects.md
             - name: Efektywne używanie pamięci podczas kompilowania dużych projektów
               href: using-memory-efficiently-when-you-build-large-projects.md
-        - name: Przegląd wielowersyjności kodu w programie MSBuild
+        - name: Wielowersyjność kodu
           items:
             - name: Przegląd wielowersyjności kodu w programie MSBuild
               href: msbuild-multitargeting-overview.md
-            - name: Zestaw narzędzi MSBuild (ToolsVersion)
+            - name: Zestaw narzędzi (ToolsVersion)
               items:
                 - name: Zestaw narzędzi MSBuild (ToolsVersion)
                   href: msbuild-toolset-toolsversion.md
@@ -132,7 +132,7 @@
               href: msbuild-target-framework-and-target-platform.md
             - name: Rozwiązywanie zestawów w czasie projektowania
               href: resolving-assemblies-at-design-time.md
-            - name: Konfigurowanie obiektów docelowych i zadań
+            - name: Konfiguracja obiektów docelowych i zadania
               items:
                 - name: Konfigurowanie obiektów docelowych i zadań
                   href: configuring-targets-and-tasks.md
@@ -142,7 +142,7 @@
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: Śledzenie plików
           items:
-            - name: Śledzenie plików
+            - name: Śledzenie plików — omówienie
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -166,9 +166,9 @@
           href: customize-your-build.md
         - name: Najlepsze praktyki w programie MSBuild
           href: msbuild-best-practices.md
-    - name: Logowanie w programie MSBuild
+    - name: Rejestrowanie
       items:
-        - name: Logowanie w programie MSBuild
+        - name: Logowanie w programie MSBuild — omówienie
           href: logging-in-msbuild.md
         - name: Uzyskiwanie dzienników kompilacji za pomocą narzędzia MSBuild
           href: obtaining-build-logs-with-msbuild.md
@@ -186,11 +186,11 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: Odwołanie do narzędzia MSBuild
       items:
-        - name: Odwołanie do narzędzia MSBuild
+        - name: Dokumentacja dotycząca programu MSBuild — omówienie
           href: msbuild-reference.md
         - name: Odwołanie do schematu pliku projektu MSBuild
           items:
-            - name: Odwołanie do schematu pliku projektu MSBuild
+            - name: Dokumentacja dotycząca schematu pliku projektu programu MSBuild — omówienie
               href: msbuild-project-file-schema-reference.md
             - name: Choose — Element (MSBuild)
               href: choose-element-msbuild.md
@@ -236,13 +236,13 @@
               href: usingtask-element-msbuild.md
             - name: When — Element (MSBuild)
               href: when-element-msbuild.md
-        - name: Odwołanie do zadania MSBuild
+        - name: Dokumentacja zadań
           items:
-            - name: Odwołanie do zadania MSBuild
+            - name: Dokumentacja dotycząca zadań programu MSBuild — omówienie
               href: msbuild-task-reference.md
-            - name: Zadania narzędzia MSBuild właściwe dla Visual C++
+            - name: Zadania właściwe dla języka Visual C++
               items:
-                - name: Zadania narzędzia MSBuild właściwe dla Visual C++
+                - name: Zadania programu MSBuild właściwe dla języka Visual C++ — omówienie
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake — Zadanie
                   href: bscmake-task.md
@@ -438,15 +438,15 @@
           href: msbuild-well-known-item-metadata.md
         - name: Pliki odpowiedzi MSBuild
           href: msbuild-response-files.md
-        - name: Odwołanie do WPF MSBuild
+        - name: Dokumentacja dotycząca podsystemu WPF
           items:
-            - name: Odwołanie do WPF MSBuild
+            - name: Dokumentacja dotycząca programu MSBuild w podsystemie WPF — omówienie
               href: wpf-msbuild-reference.md
             - name: WPF — Pliki .Targets
               href: wpf-dot-targets-files.md
-            - name: Odwołanie do zadania WPF MSBuild
+            - name: Dokumentacja dotycząca zadań podsystemu WPF
               items:
-                - name: Odwołanie do zadania WPF MSBuild
+                - name: Dokumentacja dotycząca zadań programu MSBuild w podsystemie WPF — omówienie
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier — Zadanie
                   href: fileclassifier-task.md
