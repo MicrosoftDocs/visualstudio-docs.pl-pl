@@ -64,7 +64,7 @@ dotnet_separate_import_directive_groups = true
 | **Nazwa reguły** | dotnet_sort_system_directives_first |
 | **Właściwe języki** | C# i Visual Basic |
 | **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` -Sortowanie Microsoft.* i System.* `using` dyrektywy alfabetycznie i umieścić je przed innymi za pomocą dyrektywy.<br /><br />`false` -Należy umieszczać Microsoft.* i System.* `using` dyrektyw przed innymi `using` dyrektywy. |
+| **Wartości** | `true` - Sortowanie System.* `using` dyrektywy alfabetycznie i umieścić je przed innymi za pomocą dyrektywy.<br /><br />`false` - Należy umieszczać System.* `using` dyrektyw przed innymi `using` dyrektywy. |
 | **Visual Studio domyślną** | `true` |
 
 Przykłady kodu:
