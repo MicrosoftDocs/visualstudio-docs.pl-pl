@@ -4,13 +4,14 @@ hide_bc: true
 title: Visual Studio Products | Microsoft Docs
 description: Zapoznaj się z produktów z rodziny Visual Studio.
 ms.topic: landing-page
+ms.date: 07/02/2019
 searchScope: []
-ms.openlocfilehash: d103e0a92aebe077549f6be9f7da8666b5c6e4cd
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: c69773721e9dce61674dc1436ff0ca94452156d8
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160101"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552894"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -67,7 +68,7 @@ ms.locfileid: "67160101"
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage">
+                                                    <div class="cardImage"> 
                                                         <img data-scaleimage="./images/vs-code.svg" src="./images/vs-code.svg" alt="Visual Studio Code" />
                                                     </div>
                                                 </div>

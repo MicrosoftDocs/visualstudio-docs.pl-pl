@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019 r.
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328828"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552865"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -41,8 +41,8 @@ Aby uzyskać pełną listę wszystkich elementów, co nowego w tej wersji, zobac
 
 ## <a name="develop"></a>Programowanie
 
-Oszczędzaj czas dzięki nowym funkcjom.
-<br><br>
+Wyświetl poniższy klip wideo, aby dowiedzieć się więcej na temat sposobu możesz zaoszczędzić czas dzięki nowym funkcjom. <br><br>*Długość wideo: 3.00 minut*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Udoskonalonej funkcji wyszukiwania
@@ -104,8 +104,8 @@ Aby uzyskać więcej informacji, zobacz [lepsze środowisko wielu monitorów z p
 
 ## <a name="collaborate"></a>Współpraca
 
-Sił do rozwiązywania problemów.
-<br><br>
+Wyświetl poniższy klip wideo, aby dowiedzieć się więcej na temat jak możesz połączyć w zespół do rozwiązywania problemów. <br><br>*Długość wideo: 4.22 minut*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>Przepływ pracy w chmurze
@@ -142,8 +142,8 @@ Aby uzyskać więcej informacji, zobacz [przeglądów kodu przy użyciu rozszerz
 
 ## <a name="debug"></a>Debugowanie
 
-Zero, przy użyciu precyzyjnego określania wartości docelowej.
-<br><br>
+Wyświetl następujący film wideo, aby dowiedzieć się więcej o jak można zero przy użyciu precyzyjnego określania wartości docelowej, podczas debugowania. <br><br>*Długość wideo: 3.54 minut*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>Wzrost wydajności

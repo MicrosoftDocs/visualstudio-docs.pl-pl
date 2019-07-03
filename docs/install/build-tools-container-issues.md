@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 21486fb42f689fbdd5876353a0d99b8f818cf817
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9953a1c58ea6ddd13ca0555959ed621905ba710a
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974413"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552885"
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy z kontenerami
 
@@ -53,6 +53,7 @@ Następujące znane problemy, które występują po zainstalowaniu programu Visu
 Korzystając z narzędzia Build Tools kontenera, mogą wystąpić następujące znane problemy. Aby zobaczyć, czy problemy zostały rozwiązane w przypadku innych znanych problemach, odwiedź stronę https://developercommunity.visualstudio.com.
 
 * IntelliTrace może nie działać w [Niektóre scenariusze](https://github.com/Microsoft/vstest/issues/940) w kontenerze.
+* W starszych wersjach platformy Docker for Windows domyślny rozmiar obrazu kontenera jest tylko 20 GB, a nie zmieści się narzędzia Build Tools. Postępuj zgodnie z [instrukcjami, aby zmienić rozmiar obrazu](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/container-storage#image-size) do 127 GB lub więcej.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
