@@ -6,12 +6,12 @@ description: Zapoznaj się z produktów z rodziny Visual Studio.
 ms.topic: landing-page
 ms.date: 07/02/2019
 searchScope: []
-ms.openlocfilehash: c69773721e9dce61674dc1436ff0ca94452156d8
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: 540ae18ba242e7ba5628c92c5709db5502b4e6e9
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552894"
+ms.locfileid: "67559682"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -69,7 +69,7 @@ ms.locfileid: "67552894"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage"> 
-                                                        <img data-scaleimage="./images/vs-code.svg" src="./images/vs-code.svg" alt="Visual Studio Code" />
+                                                        <img data-scaleimage="./images/vs-code-logo.svg" src="./images/vs-code-logo.svg" alt="Visual Studio Code" /><-->
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

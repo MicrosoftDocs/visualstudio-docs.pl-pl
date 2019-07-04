@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 51ac13718beaf01340b51e1fa3c5a7022f159d96
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820612"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559773"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Uwzględnione pakietu NuGet w projekcie
 
@@ -77,9 +77,9 @@ Kliknij prawym przyciskiem myszy **pakietów** dostęp do menu kontekstowego:
 
 ![Menu pakietów](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Dodawanie pakietów NuGet** — powoduje otwarcie okna, aby dodać więcej pakietów do projektu.
-*   **Aktualizacja** — sprawdza, czy serwer źródłowy dla każdego pakietu i pobiera wszystkie nowsze wersje.
-*   **Przywróć** — pliki do pobrania wszystkie brakujące pakiety (bez aktualizowania istniejące pakiety do nowszych wersji).
+* **Dodawanie pakietów NuGet** — powoduje otwarcie okna, aby dodać więcej pakietów do projektu.
+* **Aktualizacja** — sprawdza, czy serwer źródłowy dla każdego pakietu i pobiera wszystkie nowsze wersje.
+* **Przywróć** — pliki do pobrania wszystkie brakujące pakiety (bez aktualizowania istniejące pakiety do nowszych wersji).
 
 Aktualizacja opcje przywracania są również dostępne na poziomie rozwiązania i wpływają na wszystkie projekty w rozwiązaniu.
 

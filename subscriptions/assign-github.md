@@ -7,12 +7,12 @@ ms.date: 04/23/2019
 ms.topic: conceptual
 description: Zarządzanie subskrypcjami w Visual Studio i pakiet GitHub
 searchscope: VS Subscription
-ms.openlocfilehash: a775317029db1a2be3b01411955ae197c7df6873
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: aa57363cd9ae9be490004c7f182c49bdaa7f2e6c
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64946664"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559657"
 ---
 # <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Zarządzanie subskrypcjami programu Visual Studio z usługą GitHub Enterprise
 
@@ -44,9 +44,9 @@ Ponieważ ten proces jest bardziej złożone, może potrwać kilka dni, po subsk
 
 GitHub jest dostępna jako oparte na chmurze GitHub.com, albo w środowisku lokalnym GitHub Enterprise Server.  Procesy do zarządzania dwie wersje różnią się.  GitHub oferuje różne tematy pomocy i przewodniki administratora w celu zarządzania subskrypcjami GitHub Enterprise.  Udostępniliśmy łącza do tematów wybranych poniżej.  
 
-### <a name="githubspanspancom"></a>GitHub<span></span>.com 
+### <a name="githubcom"></a>GitHub.com 
 
-Aby uzyskać więcej informacji na temat zarządzania GitHub<span></span>.com, sprawdź następujące tematy, na [pomocy usługi GitHub](https://help.github.com/en).
+Aby uzyskać więcej informacji na temat zarządzania GitHub.com, sprawdź następujące tematy w [pomocy usługi GitHub](https://help.github.com/en).
 - [Pełną listę tematów pomocy](https://help.github.com/en)
 - [Zarządzanie członkostwa w Twojej organizacji](https://help.github.com/en/articles/managing-membership-in-your-organization)
 > - [Zapraszanie użytkowników do dołączenia do organizacji](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
@@ -72,11 +72,13 @@ Pomocy usługi GitHub oferuje różne przewodniki administratora w odpowiedzi na
 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Możesz znaleźć odpowiedzi na pytania na szeroką gamę z tematami dotyczącymi usługi GitHub [pomocy usługi GitHub](https://help.github.com/en).
--  Uzyskaj pomoc od innych użytkowników usługi GitHub w [Forum społeczności usługi GitHub](https://github.community/).
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
--  Pobierz [pomocy technicznej](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
+
+- Możesz znaleźć odpowiedzi na pytania na szeroką gamę z tematami dotyczącymi usługi GitHub [pomocy usługi GitHub](https://help.github.com/en).
+- Uzyskaj pomoc od innych użytkowników usługi GitHub w [Forum społeczności usługi GitHub](https://github.community/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Pobierz [pomocy technicznej](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
 
 ## <a name="next-steps"></a>Następne kroki
+
 Aby uzyskać więcej informacji na temat zarządzania subskrypcjami programu Visual Studio z usługą GitHub Enterprise, zapoznaj się z programu Visual Studio [portalu administratora subskrypcji](https://visualstudio.microsoft.com/subscriptions-administration/).

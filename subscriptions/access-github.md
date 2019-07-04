@@ -7,12 +7,12 @@ ms.date: 04/15/2019
 ms.topic: conceptual
 description: Informacje na temat nowego programu Visual Studio + pakiet GitHub
 searchscope: VS Subscription
-ms.openlocfilehash: 086314029561c7b0c14ac1d6ef09d7cb3a4d85ee
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: 89048ec35e37f2b8bba1b7ab0da07ae504dca2f4
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64946658"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559710"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Wprowadzenie do subskrypcji programu Visual Studio z usługą GitHub Enterprise  
 
@@ -76,12 +76,13 @@ Odp.:  Wraz z systemem GitHub Enterprise subskrypcji pojawi się na pełną subs
 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Możesz znaleźć odpowiedzi na pytania na szeroką gamę z tematami dotyczącymi usługi GitHub [pomocy usługi GitHub](https://help.github.com/en).
--  Uzyskaj pomoc od innych użytkowników usługi GitHub w [Forum społeczności usługi GitHub](https://github.community/).
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
--  Pobierz [pomocy technicznej](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
+- Możesz znaleźć odpowiedzi na pytania na szeroką gamę z tematami dotyczącymi usługi GitHub [pomocy usługi GitHub](https://help.github.com/en).
+- Uzyskaj pomoc od innych użytkowników usługi GitHub w [Forum społeczności usługi GitHub](https://github.community/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Pobierz [pomocy technicznej](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
 
 
 ## <a name="next-steps"></a>Następne kroki
+
 Jeśli jesteś nowym użytkownikiem usługi GitHub, zapoznaj się z [laboratorium Learning GitHub](https://lab.github.com/), który przeprowadzi Cię przez szereg przyjemny i praktyczne projektów, współużytkowania pomocne opinii po drodze.

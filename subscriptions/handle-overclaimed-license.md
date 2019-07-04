@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą rozwiązać nadmiernej liczby zgłoszonych subskrypcji
 searchscope: VS Subscription
-ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: d8209385ca7b1b070fd67116411814f15a8c0df8
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945138"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559738"
 ---
 # <a name="overallocated-subscriptions"></a>Subskrypcje z nadmierną
 
@@ -47,4 +47,5 @@ Jeśli Twoja organizacja ma umowy Enterprise Agreement (EA), administratorzy bę
 Dowiedz się więcej o zarządzaniu [subskrypcji programu Visual Studio z usługą GitHub Enterprise](assign-github.md).
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).

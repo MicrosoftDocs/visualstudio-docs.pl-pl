@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d78e7dcd7dfd203a15510037b277b8c2633805e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038669"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559667"
 ---
 # <a name="fxcop-rule-port-status"></a>Stan portu reguł programu FxCop
 
 Jeśli wcześniej używano statycznej analizy kodu w poprzedniej wersji programu Visual Studio, możesz się zastanawiać, której te zasady są dostępne w bieżącej implementacji jako [analizatory FxCop analizujące kod](install-fxcop-analyzers.md). Ta strona zawiera listę reguł, które są przenoszone, a także tych, które nie zostały wydajnej i tego, czy istnieją plany do portu je.
 
-## <a name="ported-rules"></a>Przenieść reguły
+## <a name="ported-rules"></a>Przeniesione reguły
 
 [Stronę z dokumentacją dotyczącą wygenerowany automatycznie](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) w analizatorów roslyn repozytorium zawiera najbardziej aktualną listę reguł, które wydajnej analizatory FxCop analizujące kod. Ta strona ma również dodatkowe informacje, takie jak czy zasada jest domyślnie włączona, a jeśli ma skojarzoną *poprawki kodu*. ([Poprawki kodu](../ide/quick-actions.md) dostępnych poprawek jednym kliknięciem w menu ikona żarówki z funkcją w programie Visual Studio.)
 
@@ -67,8 +67,8 @@ Identyfikator reguły | Tytuł
 [CA1063](ca1063-implement-idisposable-correctly.md) | Poprawnie zaimplementuj interfejs IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | Wyjątki powinny być publiczne
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach
-CA1066 | Typ {0} powinny implementować IEquatable<T> ponieważ zastępuje ona równa się
-CA1067 | Zastąp Object.Equals(object) podczas implementowania IEquatable<T>
+CA1066 | Typ {0} powinny implementować IEquatable\<T >, ponieważ zastępuje ona równa się
+CA1067 | Zastąp Object.Equals(object) podczas implementowania IEquatable\<T >
 CA1068 | Token anulowania parametry muszą pochodzić ostatni
 CA1200 | Należy unikać cref tagi z prefiksem
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Nie przekazuj literałów jako zlokalizowanych parametrów

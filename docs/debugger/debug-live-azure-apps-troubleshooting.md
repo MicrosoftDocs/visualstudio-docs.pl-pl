@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a04d5761d7b67c58dc71b185e6d5db0b80c766
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.openlocfilehash: e3c66ba4a5031326ec288d3a5f2f3c4851d17ca6
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346879"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559768"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
 
@@ -189,7 +189,7 @@ Dzienniki agenta można znaleźć w następujących lokalizacjach:
 Dzienniki Instrumentacji można znaleźć w następujących lokalizacjach:
 
 - App Services:
-  - Rejestrowanie błędów jest automatycznie przesyłany do D:\Home\LogFiles\eventlog.xml, są oznaczone zdarzenia << nazwa dostawcy = "Instrumentacji aparatu" / / >> lub "Produkcyjne punkty przerwania"
+  - Rejestrowanie błędów jest automatycznie przesyłany do D:\Home\LogFiles\eventlog.xml, są oznaczone zdarzenia `<Provider Name="Instrumentation Engine" />` lub "Produkcyjne punkty przerwania"
 - VM/VMSS:
   - Zaloguj się do maszyny Wirtualnej, a następnie otwórz Podgląd zdarzeń.
   - Otwórz następujący widok: *Dzienniki Windows > Aplikacja*.
