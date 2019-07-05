@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316337"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559758"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017
 
@@ -180,9 +180,9 @@ Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w we
 
 Niektóre rozszerzenia opartym na MSI wdrażania szablonów typowe lokalizacje szablonu, takie jak następujące katalogi:
 
-- **\<Katalog instalacyjny usługi Visual Studio > \Common7\IDE\\< ProjectTemplates/elementów >**
+- **\<Katalog instalacyjny usługi Visual Studio > \Common7\IDE\\< ProjectTemplates/elementów\>**
 
-- **\<Katalog instalacyjny usługi Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/elementów >**
+- **\<Katalog instalacyjny usługi Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/elementów\>**
 
 Rozszerzenie wykonuje wdrożenie oparte na MSI, musisz ręcznie wygenerować manifest szablonu i upewnij się, że jest ona objęta Instalator rozszerzenia. Porównaj przykłady vstman wymienionych powyżej i [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
