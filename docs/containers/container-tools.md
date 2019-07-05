@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 446e4d7e7ce8fd8803f394dfb2f4525445457471
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c7d09f3a318049e8392f744d946138e59509470a
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745090"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586627"
 ---
 # <a name="quickstart-docker-in-visual-studio"></a>Szybki start: Platforma Docker w programie Visual Studio
 
@@ -32,4 +32,3 @@ ms.locfileid: "66745090"
 * [Tworzenie kontenerów za pomocą programu Visual Studio](/visualstudio/containers)
 * [Rozwiązywanie problemów z programowania Visual Studio z platformą Docker](troubleshooting-docker-errors.md)
 * [Repozytorium programu Visual Studio kontenera narzędzi w witrynie GitHub](https://github.com/Microsoft/DockerTools)
-

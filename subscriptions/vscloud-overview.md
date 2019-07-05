@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Wypożyczać program Visual Studio Professional lub Visual Studio Enterprise na podstawie miesiąca na miesiąc lub roczna, nie długoterminowej umowy.
 searchscope: VS Subscription
-ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 3dc72dbc801679e9baa4bc54b0343270d2f00a29
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465127"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586901"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji chmury programu Visual Studio Professional i Visual Studio Enterprise
 
@@ -103,7 +103,6 @@ Odp.: Subskrypcje roczne zakupiony w danym miesiącu są naliczane od razu za ca
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>PYT.: Co zrobić, jeśli chcę, aby zmniejszyć liczbę subskrypcji dla moich klientów?
 
 Odp.: Administrator nadal może zmniejszyć liczbę subskrypcji, odwiedzając stronę https://manage.visualstudio.com i postępując zgodnie z instrukcjami w tym artykule do zmniejszenia liczby subskrypcji. System będzie *nie* Generowanie środki i rozliczane proporcjonalnie. Zwrot należy skontaktować się z zespołu rozliczeń platformy Azure.
-
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>PYT.: Jeśli anuluję moją subskrypcję, I będzie można kupić inną subskrypcję później roczna w chmurze?
 Odp.:  Mimo że nie będzie można kupić inną subskrypcję roczna w chmurze, istnieje wiele opcji zakupu subskrypcji programu Visual Studio.  Dowiedz się więcej o [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).

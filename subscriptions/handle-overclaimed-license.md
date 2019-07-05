@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą rozwiązać nadmiernej liczby zgłoszonych subskrypcji
 searchscope: VS Subscription
-ms.openlocfilehash: d8209385ca7b1b070fd67116411814f15a8c0df8
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559738"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587000"
 ---
 # <a name="overallocated-subscriptions"></a>Subskrypcje z nadmierną
 
@@ -42,7 +42,6 @@ Jeśli Twoja organizacja ma umowy Enterprise Agreement (EA), administratorzy bę
 > Jeśli nigdy nie został zakupu za te subskrypcje subskrypcji programu Visual Studio z usługą GitHub Enterprise są przypisywane przez administratorów subskrypcji programu Visual Studio, nie będą one widoczne dla administratorów GitHub Enterprise w organizacji. Aby upewnić się, subskrypcje GitHub Enterprise są widoczne, zakupu, w tym **co najmniej jeden** programu Visual Studio Professional z usługą GitHub Enterprise lub Visual Studio Enterprise z subskrypcją GitHub Enterprise należy pierwszy czas przypisanej subskrypcji.  
 >
 > Jest odpowiedzialny za klienta, aby upewnić się, że dla każdej subskrypcji usługi GitHub, która jest przypisana odpowiedniego programu Visual Studio z subskrypcją usługi GitHub, przypisana w portalu zarządzania do są nadal zgodne wymagania licencyjne dla tego Subskrypcja.
-
 
 Dowiedz się więcej o zarządzaniu [subskrypcji programu Visual Studio z usługą GitHub Enterprise](assign-github.md).
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309794"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587024"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Zagnieżdżanie plików w Eksploratorze rozwiązań
 
@@ -110,7 +110,8 @@ Rozważmy następujący przykład:
 > [!NOTE]
 > - Jeśli nie określisz żadnych określonych rozszerzeń plików dla `pathSegment` zasada, ma zastosowanie do wszystkich rozszerzeń plików. Oznacza to każdy plik z taką samą nazwę i rozszerzenie jako innego pliku, a także dodatkowe rozszerzenia w środku jest zagnieżdżony w ramach innego pliku.
 > - Można ograniczyć wpływ `pathSegment` regułę do określonych rozszerzeń plików, określając je w następujący sposób:
->    ```
+>
+>    ```json
 >    "pathSegment": {
 >       "add": {
 >         ".*": [

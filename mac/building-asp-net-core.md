@@ -5,22 +5,20 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 640622a54daa6dd92a16b40741d26e5e68f937b7
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253801"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586831"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Tworzenie aplikacji w programie Visual Studio dla komputerów Mac programu ASP.NET Core 
-
 
 Platforma ASP.NET Core to architektura typu open source i dla wielu platform służąca do tworzenia nowoczesnych oparte na chmurze aplikacji połączonych z Internetem, takich jak aplikacje sieci web i usług, aplikacji IoT oraz zapleczy aplikacji mobilnych. Aplikacje platformy ASP.NET Core mogą być uruchamiane [platformy .NET Core](https://www.microsoft.com/net/core/platform) lub środowiska uruchomieniowego .NET Framework. Została zaprojektowana do zapewnienia architektura deweloperska zoptymalizowane aplikacje, które są wdrażane w chmurze lub lokalnie. Składa się z modułowej składniki przy minimalnym obciążeniu, więc Zachowaj elastyczność podczas konstruowania rozwiązania. Można tworzyć i uruchamiać aplikacje dla wielu platform ASP.NET Core na Windows, Mac i Linux. Platforma ASP.NET Core to "open source" na [GitHub](https://github.com/aspnet/home).
 
 W tym laboratorium należy utworzyć i eksplorowanie aplikacji ASP.NET Core z programem Visual Studio dla komputerów Mac.
 
 ## <a name="objectives"></a>Cele
-
 
 > [!div class="checklist"]
 > * Tworzenie aplikacji internetowej platformy ASP.NET Core

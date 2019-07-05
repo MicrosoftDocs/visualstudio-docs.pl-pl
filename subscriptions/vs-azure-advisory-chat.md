@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak zastosować korzyści użycia Chat doradztwa technicznego dotyczącego platformy Azure, uwzględniony w subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033173"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586978"
 ---
 # <a name="azure-advisory-chat"></a>Czat z doradcą Azure Advisor
 
@@ -42,7 +42,6 @@ Azure doradztwa technicznego dotyczącego Rozmowa jest prosty w użyciu.
 | Visual Studio Professional (standardowy, miesięczną w chmurze) programu Visual Studio Enterprise (miesięczne chmury, NFR<sup>1</sup>) |        Wszystkie        | Niedostępne |     Nie     |
 |                                          Visual Studio Test Professional (Standard)                                          |        Wszystkie        | Niedostępne |     Nie     |
 |                                                  Platformy MSDN (standardowa)                                                   |        Wszystkie        | Niedostępne |     Nie     |
-
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego) Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 

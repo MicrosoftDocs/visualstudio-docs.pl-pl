@@ -7,12 +7,12 @@ ms.date: 04/15/2019
 ms.topic: conceptual
 description: Informacje na temat nowego programu Visual Studio + pakiet GitHub
 searchscope: VS Subscription
-ms.openlocfilehash: 89048ec35e37f2b8bba1b7ab0da07ae504dca2f4
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 7871496cf427d3e610693391d80693852d71c64e
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559710"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586564"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Wprowadzenie do subskrypcji programu Visual Studio z usługą GitHub Enterprise  
 
@@ -74,14 +74,12 @@ Odp.:  Jeśli używasz usługi GitHub Enterprise Server, możesz kliknąć **pom
 
 Odp.:  Wraz z systemem GitHub Enterprise subskrypcji pojawi się na pełną subskrypcję programu Visual Studio.  Pojawi się wszystkie korzyści, takich jak pliki do pobrania oprogramowania, usług w chmurze, pomoc techniczną i korzyści dla partnerów zawarte w tych subskrypcjach, tak samo jak Jeśli subskrypcja została zakupiona oddzielnie.
 
-
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Możesz znaleźć odpowiedzi na pytania na szeroką gamę z tematami dotyczącymi usługi GitHub [pomocy usługi GitHub](https://help.github.com/en).
 - Uzyskaj pomoc od innych użytkowników usługi GitHub w [Forum społeczności usługi GitHub](https://github.community/).
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
 - Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
 - Pobierz [pomocy technicznej](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
-
 
 ## <a name="next-steps"></a>Następne kroki
 

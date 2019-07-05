@@ -4,12 +4,12 @@ description: Dowiedz się, jak zarządzać więcej niż jednego kontenera i komu
 author: bytesguy
 ms.author: adhartle
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 76c55a43540e2f8ab791b4530044c0ab4da4ecdc
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196406"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586805"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Utwórz wiele kontenerów aplikacji przy użyciu rozwiązania Docker Compose
 
@@ -82,14 +82,14 @@ Obecnie dostępne są dwa projekty ASP.NET w naszym rozwiązaniu i są konfiguro
    ```
 
 1. W *Index.cshtml* Dodaj wiersz, aby wyświetlić `ViewData["Message"]` tak, aby plik będzie wyglądać podobnie do poniższego kodu:
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ Obecnie dostępne są dwa projekty ASP.NET w naszym rozwiązaniu i są konfiguro
       ```
 
 1. Teraz w projekcie interfejsu API sieci Web, Dodaj kod do kontrolera wartości, aby dostosować komunikat zwrócony przez interfejs API dla wywołania dodane z *webfrontend*:
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ Obecnie dostępne są dwa projekty ASP.NET w naszym rozwiązaniu i są konfiguro
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. Ustaw `docker-compose` projekt jako projekt startowy, a następnie przejdź do **Uruchom > Rozpocznij debugowanie**. Jeśli wszystko jest poprawnie skonfigurowane, zostanie wyświetlony komunikat "Hello webfrontend i webapi (z wartością 1).":
 
 ![Uruchamianie rozwiązania do kontenerów multi platformy docker](media/docker-multicontainer-debug.png)

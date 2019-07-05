@@ -17,17 +17,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d466dec85a0bdf242120ef5e88a0d5f5d2ac48e
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 04f33f3852f051e1f492cb2b6dca44fcdb260e11
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934516"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587015"
 ---
 # <a name="custombuild-task"></a>Zadanie CustomBuild
 
 Narzędzia kompilatora Visual C++, jest zawijany cmd.exe. Ta klasa jest pochodną [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), ale nie używa pliku śledzenia odnajdywania zależnościach plików. Wszystkie zależności powinien być jawnie określony jako AdditionalDependencies dla kompilacji przyrostowej działa prawidłowo.
-
 
 ## <a name="parameters"></a>Parametry
 

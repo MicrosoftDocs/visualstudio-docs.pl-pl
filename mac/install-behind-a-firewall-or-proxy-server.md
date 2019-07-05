@@ -6,17 +6,16 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 6f3afd51cf4109f07107e60d61565c9126fc5ee7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 7e7e8c3cd5f3ffded3387deb896df18d5b2ec705
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032785"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586883"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy
 
 Jeśli Twoja organizacja używa środki bezpieczeństwa, takie jak Zapora lub serwer proxy, a następnie istnieją, domen, może wystąpić konieczność dodania do "Zezwalaj na liście" i porty i protokoły, które może chcesz otworzyć, aby mieć najlepsze wyniki, podczas instalacji i używania Vis Usługa rejestrowania dostępu użytkowników Studio dla komputerów Mac i usług platformy Azure.
-
 
 - [**Zainstaluj program Visual Studio dla komputerów Mac**](#install-visual-studio-for-mac): Te tabele zawierają domen, które muszą zezwalać na łączność, tak aby mieć dostęp do wszystkich funkcji i obciążeń programu Visual Studio dla komputerów Mac.
 
@@ -79,7 +78,7 @@ Aby upewnić się, że masz dostęp do wszystkich funkcji, które są potrzebne 
 
 | Domain | Porty|Cel|
 | ----------------------|------------------|------------------|
-| api.nuget.org | 80/443|Interfejs API programu NuGet|
+| api.nuget.org | 80/443|Interfejs API narzędzia NuGet|
 | secure.aadcdn.microsoftonline-p.com |80/443| Dostawcy tożsamości|
 
 ### <a name="android-projects"></a>Projekty systemu android
