@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 391cddd0214abf1eea9e4dc20f2222a46fff6f08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63258f74f295078828d9af2f1f6d8fc2d500b8da
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963861"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624491"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Zarządzanie rolami w usługach Azure cloud services z programem Visual Studio
 Po utworzeniu usługi w chmurze platformy Azure, możesz dodać nowe role do niego lub usuwać istniejące role. Można także zaimportować istniejący projekt i przekonwertować go do roli. Na przykład można zaimportować aplikację sieci web platformy ASP.NET i określić jako rola sieć web.
@@ -50,24 +50,26 @@ Jeśli usunąć rolę z projektu usługi w chmurze, ale później zdecydujesz do
 
 Na przykład można usunąć roli usługi sieci web, a później zdecydujesz się tę rolę z powrotem dodać do rozwiązania. Jeśli to zrobisz, wystąpi błąd. Aby uniknąć tego błędu, należy dodać `<LocalResources>` elementu objętego następujący kod XML do `ServiceDefinition.csdef` pliku. Użyj nazwy roli usługi sieci web, która zostanie ponownie dodane do projektu jako część atrybut nazwy  **\<LocalStorage >** elementu. W tym przykładzie nazwa roli usługi sieci web jest **WCFServiceWebRole1**.
 
-    <WebRole name="WCFServiceWebRole1">
-        <Sites>
-          <Site name="Web">
-            <Bindings>
-              <Binding name="Endpoint1" endpointName="Endpoint1" />
-            </Bindings>
-          </Site>
-        </Sites>
-        <Endpoints>
-          <InputEndpoint name="Endpoint1" protocol="http" port="80" />
-        </Endpoints>
-        <Imports>
-          <Import moduleName="Diagnostics" />
-        </Imports>
-       <LocalResources>
-          <LocalStorage name="WCFServiceWebRole1.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
-       </LocalResources>
-    </WebRole>
+```xml
+<WebRole name="WCFServiceWebRole1">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <LocalResources>
+      <LocalStorage name="WCFServiceWebRole1.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
+    </LocalResources>
+</WebRole>
+```
 
 ## <a name="next-steps"></a>Następne kroki
 - [Konfigurowanie ról usługi w chmurze platformy Azure przy użyciu programu Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md)

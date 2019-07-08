@@ -9,24 +9,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 2e5bd615e83c56a257e093c42fca2a98c5a3efd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ad49cc9efd97fbd51159a0527ee1dc7aa2e25b6
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427445"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623973"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (skrypt programu Windows PowerShell)
 ## <a name="syntax"></a>Składnia
 Publikuje projektu sieci web do witryny sieci Web platformy Azure. Skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
 
-    Publish-WebApplicationWebSite
-    –Configuration <configuration>
-    -SubscriptionName <subscriptionName>
-    -WebDeployPackage <packageName>
-    -DatabaseServerPassword @{Name = "name"; Password = "password"}
-    -SendHostMessagesToOutput
-    -Verbose
+```
+Publish-WebApplicationWebSite
+–Configuration <configuration>
+-SubscriptionName <subscriptionName>
+-WebDeployPackage <packageName>
+-DatabaseServerPassword @{Name = "name"; Password = "password"}
+-SendHostMessagesToOutput
+-Verbose
+```
 
 ## <a name="configuration"></a>Konfiguracja
 Ścieżka do pliku konfiguracji JSON opisujące szczegóły wdrożenia.
@@ -93,27 +95,29 @@ Aby uzyskać pełne wyjaśnienie sposobu użyć skryptu, aby utworzyć środowis
 
 Plik konfiguracji JSON określa szczegóły co ma zostać wdrożony. Zawiera informacje, określone podczas tworzenia projektu, takie jak nazwa i nazwa użytkownika dla witryny sieci Web. Obejmuje również bazę danych do aprowizacji, jeśli istnieje. Poniższy kod przedstawia przykładowy plik konfiguracji JSON:
 
-    {
-        "environmentSettings": {
-            "webSite": {
-                "name": "WebApplication10554",
+```json
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "WebApplication10554",
+            "location": "West US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "WebApplication10554_db",
+                "serverName": "iss00brc88",
+                "user": "sqluser2",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
                 "location": "West US"
-            },
-            "databases": [
-                {
-                    "connectionStringName": "DefaultConnection",
-                    "databaseName": "WebApplication10554_db",
-                    "serverName": "iss00brc88",
-                    "user": "sqluser2",
-                    "password": "",
-                    "edition": "",
-                    "size": "",
-                    "collation": "",
-                    "location": "West US"
-                }
-            ]
-        }
+            }
+        ]
     }
+}
+```
 
 Można edytować plik JSON konfiguracji do zmiany, co jest wdrażana. Sekcja witryny sieci Web jest wymagana, ale sekcja bazy danych jest opcjonalna.
 

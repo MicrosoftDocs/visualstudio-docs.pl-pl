@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 8f7044c44278410e1fc800e0e974847c090da0e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963160"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624157"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -96,7 +96,7 @@ Ponieważ folderów w kontenerach obiektów blob są foldery wirtualne, nie moż
 
 Można filtrować obiektów blob, które są wyświetlane, określając Wspólny prefiks.
 
-Na przykład, jeśli wprowadzony prefiks **hello** w polu tekstowym filtru, a następnie wybierz **Execute** (**!**) są wyświetlane tylko obiekty BLOB, które zaczynają się ciągiem "hello" przycisku.
+Na przykład, jeśli wprowadzony prefiks **hello** w polu tekstowym filtru, a następnie wybierz **Execute** ( **!** ) są wyświetlane tylko obiekty BLOB, które zaczynają się ciągiem "hello" przycisku.
 
 ![Pole tekstowe filtru](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -185,7 +185,7 @@ Tabela są zorganizowane według jednostek (pokazane w wierszach) i właściwoś
 
 W Projektancie tabel, otwórz menu skrótów dla jednostki (pojedynczy wiersz) lub właściwości (jedną komórkę), a następnie wybierz **Edytuj**.
 
-    ![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Dodaj lub Edytuj jednostkę tabeli](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Jednostki w jednej tabeli nie są wymagane do tego samego zestawu właściwości (kolumny). Mieć na uwadze następujące ograniczenia na wyświetlanie i edytowanie danych w tabeli:
 

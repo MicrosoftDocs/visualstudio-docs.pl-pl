@@ -34,7 +34,6 @@
 ### [Profesjonalne programowanie](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Subskrypcja magazynu MSDN Magazine](vs-msdn.md)
 ### [Korzyści związane z pomocą techniczną](technical-support.md)

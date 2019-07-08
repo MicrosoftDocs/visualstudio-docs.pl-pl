@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62ff05de5cfd6dfa01f8e93f22f9ac09b8e61575
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353391"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624482"
 ---
 # <a name="dynamically-add-menu-items"></a>Dynamiczne dodawanie elementów menu
 Można dodać elementów menu w czasie wykonywania, określając `DynamicItemStart` polecenia Flaga w definicji symbolu zastępczego przycisku w tabeli poleceń programu Visual Studio (*vsct*) plik, a następnie definiowanie (kod) liczba elementów menu do wyświetlenia i Obsługa polecenia. Po załadowaniu pakietu VSPackage, symbol zastępczy jest zastępowany elementów menu dynamiczne.
@@ -320,15 +320,15 @@ Można dodać elementów menu w czasie wykonywania, określając `DynamicItemSta
 
 Teraz można wdrożyć predykatu dopasowania. Należy określić dwie rzeczy: po pierwsze, czy identyfikator polecenia jest prawidłowa (jest większe niż lub równa identyfikator zadeklarowany polecenia) i drugiego, czy określa możliwe projektu (jest on mniejszy niż liczba projektów w rozwiązaniu).
 
-    ```csharp
-    private bool IsValidDynamicItem(int commandId)
-    {
-        // The match is valid if the command ID is >= the id of our root dynamic start item
-        // and the command ID minus the ID of our root dynamic start item
-        // is less than or equal to the number of projects in the solution.
-        return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
-    }
-    ```
+```csharp
+private bool IsValidDynamicItem(int commandId)
+{
+    // The match is valid if the command ID is >= the id of our root dynamic start item
+    // and the command ID minus the ID of our root dynamic start item
+    // is less than or equal to the number of projects in the solution.
+    return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
+}
+```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Ustaw pakietu VSPackage załadować tylko wtedy, gdy rozwiązanie zawiera wiele projektów
  Ponieważ **Ustaw projekt startowy** polecenia nie ma sensu, chyba że aktywne rozwiązanie ma więcej niż jeden projekt, możesz ustawić Twojego pakietu VSPackage, można automatycznie załadować tylko w takim przypadku. Możesz użyć <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> wraz z kontekstu interfejsu użytkownika <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>. W *DynamicMenuPackage.cs* pliku Dodaj następujące atrybuty do klasy DynamicMenuPackage:

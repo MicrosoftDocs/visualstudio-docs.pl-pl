@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 598ced6d3e924ecf1d2826be6a6976f56c02afa5
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552448"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624067"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługi w chmurze platformy Azure może mieć jedną lub więcej procesów roboczych lub role sieci web. Dla każdej roli musisz zdefiniować sposób konfigurowania tej roli, a także skonfigurować, jak działa tej roli. Aby dowiedzieć się więcej na temat ról w usługach cloud services, zobacz wideo [wprowadzenie do usług Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -235,21 +235,20 @@ W tej sekcji przedstawiono sposób programowego dostępu do magazynu lokalnego p
 
 Poniższy kod przedstawia przykład sposobu wpisywanie tekstu do pliku w magazynie lokalnym. Zastąp &lt;LocalStorageName > Symbol zastępczy odpowiednią wartość.
 
-    ```csharp
-    // Retrieve an object that points to the local storage resource
-    LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
+```csharp
+// Retrieve an object that points to the local storage resource
+LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
 
-    //Define the file name and path
-    string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
-    String filePath = Path.Combine(paths);
+//Define the file name and path
+string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
+String filePath = Path.Combine(paths);
 
-    using (FileStream writeStream = File.Create(filePath))
-    {
-        Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
-        writeStream.Write(textToWrite, 0, textToWrite.Length);
-    }
-
-    ```
+using (FileStream writeStream = File.Create(filePath))
+{
+    Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
+    writeStream.Write(textToWrite, 0, textToWrite.Length);
+}
+```
 
 ### <a name="find-a-file-written-to-local-storage"></a>Znajdź plik zapisany w magazynie lokalnym
 

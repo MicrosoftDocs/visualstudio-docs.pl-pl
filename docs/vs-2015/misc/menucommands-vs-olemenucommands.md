@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000953"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624457"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
-Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design.MenuCommand> lub <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu i impementling procedur obsługi zdarzeń właściwe. W większości przypadków można użyć <xref:System.ComponentModel.Design.MenuCommand>, zgodnie z szablonu projektu pakietu VSPackage, ale może od czasu do czasu może być konieczne użycie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design.MenuCommand> lub <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> object i Implementowanie obsługi zdarzeń odpowiednie. W większości przypadków można użyć <xref:System.ComponentModel.Design.MenuCommand>, zgodnie z szablonu projektu pakietu VSPackage, ale może od czasu do czasu może być konieczne użycie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
  Można ich używać poleceń, że udostępnia pakietu VSPackage środowiska IDE programu musi być widoczne i włączone przed użytkownikiem. Po utworzeniu polecenia w pliku vsct za pomocą szablonu projektu pakietu Visual Studio są widoczne i włączone domyślnie. Ustawienie niektórych flag poleceń, takich jak `DynamicItemStart`, można zmienić domyślne zachowanie. Widoczność, włączony stan i inne właściwości polecenia można także zmienić w kodzie w czasie wykonywania, uzyskując dostęp do <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiekt, który jest skojarzony z poleceniem.  
   
@@ -115,7 +115,7 @@ Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      Tworzenie wielu angażowania polecenia tego samego GUID:ID, które mają różne elementy nadrzędne powoduje, że menu pojawią się w wielu lokalizacjach. Aby uzyskać więcej informacji, zobacz [CommandPlacements](../extensibility/commandplacements-element.md) elementu.  
   
     Aby uzyskać więcej informacji na temat grup poleceń i element nadrzędny, zobacz [tworzenia wielokrotnego użytku, do grup przycisków](../extensibility/creating-reusable-groups-of-buttons.md).  
   

@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: d19084e9cfc9813434f5e68829345440763df7e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f63872d3578a8abe03887bfc8bf188ba83f0b1d
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572239"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624079"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
 ## <a name="overview"></a>Omówienie
 Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w programie Visual Studio **projektanta tabel**, utworzyć ciągu filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowany przez usługi danych WCF i przypomina klauzulę WHERE języka SQL, ale są wysyłane do usługi tabeli za pomocą żądania HTTP. **Projektanta tabel** obsługuje poprawne kodowanie, więc aby odfiltrować wartość żądanej właściwości, należy podać tylko nazwę właściwości, operator porównania, wartości kryteriów i opcjonalnie, wartość logiczna operatora w polu filtru. Nie muszą zawierać opcję zapytania $filter, jak gdyby były konstruuje adres URL do wykonywania zapytań w tabeli za pomocą [dokumentacja interfejsu API REST usług Storage](http://go.microsoft.com/fwlink/p/?LinkId=400447).
 
-Usługi danych WCF opierają się na [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Aby uzyskać szczegółowe informacje na temat opcję zapytania filtra systemu (**$filter**), zobacz [specyfikacji Konwencji identyfikatora URI OData](http://go.microsoft.com/fwlink/p/?LinkId=214806).
+Usługi danych WCF opierają się na [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Aby uzyskać szczegółowe informacje na temat opcję zapytania filtra systemu ( **$filter**), zobacz [specyfikacji Konwencji identyfikatora URI OData](http://go.microsoft.com/fwlink/p/?LinkId=214806).
 
 ## <a name="comparison-operators"></a>Operatory porównania
 Następujące operatory logiczne są obsługiwane dla wszystkich typów właściwości:
@@ -48,45 +48,63 @@ Podczas filtrowania właściwości ciągu stała typu string należy ją ująć 
 
 Poniższy przykład filtr **PartitionKey** i **RowKey** właściwości; dodatkowe niekluczowych również można dodawać właściwości ciągu filtru:
 
-    PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
+PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
 
 Każde wyrażenie filtru można ująć w nawiasach, chociaż nie jest wymagane:
 
-    (PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
+(PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
 
 Pamiętaj, że usługa Table service nie obsługuje symboli wieloznacznych zapytania nie są obsługiwane w Projektancie tabel albo. Można jednak wykonać Dopasowywanie przy użyciu operatorów porównania na żądaną prefiks prefiksów. Poniższy przykład zwraca jednostki z LastName właściwość rozpoczynająca się od litery "A":
 
-    LastName ge 'A' and LastName lt 'B'
+```
+LastName ge 'A' and LastName lt 'B'
+```
 
 ## <a name="filtering-on-numeric-properties"></a>Filtrowanie według właściwości liczbowych
 Aby filtrować liczbą całkowitą lub zmiennoprzecinkową, określ liczbę bez znaku cudzysłowu.
 
 W tym przykładzie zwraca wszystkie jednostki z właściwością wiek, którego wartość jest większa niż 30:
 
-    Age gt 30
+```
+Age gt 30
+```
 
 W tym przykładzie zwraca wszystkie jednostki z właściwością AmountDue, którego wartość jest mniejsza niż lub równe 100.25:
 
-    AmountDue le 100.25
+```
+AmountDue le 100.25
+```
 
 ## <a name="filtering-on-boolean-properties"></a>Filtrowanie według właściwości logiczne
 Aby odfiltrować wartość logiczną, określ **true** lub **false** bez znaków cudzysłowu.
 
 Poniższy przykład zwraca wszystkie jednostki, w których ustawiono właściwość IsActive **true**:
 
-    IsActive eq true
+```
+IsActive eq true
+```
 
 Można także napisać to wyrażenie filtru, bez operatora logicznego. W poniższym przykładzie Usługa Table service zwróci wszystkich jednostek w przypadku IsActive **true**:
 
-    IsActive
+```
+IsActive
+```
 
 Aby zwrócić wszystkie jednostki, której IsActive ma wartość false, należy użyć not — operator:
 
-    not IsActive
+```
+not IsActive
+```
 
 ## <a name="filtering-on-datetime-properties"></a>Filtrowanie według właściwości daty/godziny
 Aby filtrować wartości daty/godziny, należy określić **daty/godziny** — słowo kluczowe, następuje Stała daty/godziny w znaki pojedynczego cudzysłowu. Stała daty/godziny musi być w formacie UTC połączone, zgodnie z opisem w [formatowanie wartości daty/godziny](http://go.microsoft.com/fwlink/p/?LinkId=400449).
 
 Poniższy przykład zwraca jednostki, w którym właściwość CustomerSince jest równa 10 lipca 2008:
 
-    CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```
+CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```

@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a74c77d4b2e4e75379adec8738ab92270596e3
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900234"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624524"
 ---
 # <a name="create-bootstrapper-packages"></a>Tworzenie niestandardowych pakietów programu inicjującego
-Setup program jest generycznym Instalatorem, który można skonfigurować, aby wykrywać i instalować składników pakietu redystrybucyjnego, takich jak Instalator Windows (*.msi*) plików i programów wykonywalnych. Instalator jest również znany jako program inicjujący. Jest programowane za pomocą zestawu manifestów XML, które określają metadane w celu zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub warunek wstępny, który pojawia się w **wymagania wstępne** okno dialogowe ClickOnce jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu, które opisują sposób instalacji wstępnie wymaganego składnika.
+Setup program jest generycznym Instalatorem, który można skonfigurować, aby wykrywać i instalować składników pakietu redystrybucyjnego, takich jak Instalator Windows ( *.msi*) plików i programów wykonywalnych. Instalator jest również znany jako program inicjujący. Jest programowane za pomocą zestawu manifestów XML, które określają metadane w celu zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub warunek wstępny, który pojawia się w **wymagania wstępne** okno dialogowe ClickOnce jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu, które opisują sposób instalacji wstępnie wymaganego składnika.
 
 Program inicjujący najpierw wykrywa, czy dowolny z wymagań wstępnych są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw program inicjujący wyświetli umów licencyjnych. Po drugie, po użytkownik akceptuje umów licencyjnych, rozpocznie się instalacja dla wymagań wstępnych. W przeciwnym razie jeśli zostaną wykryte wszystkie wymagania wstępne, program inicjujący tylko uruchamia Instalatora aplikacji.
 
@@ -43,36 +43,44 @@ Aby utworzyć pakiet bootstrapper, masz do tworzenie manifestu produktu i, dla k
 
 Po utworzeniu tych plików, należy umieścić plik manifestu produktu w folderze o nazwie niestandardowy program inicjujący. Plik manifestu pakietu przechodzi do folderu nazwanego na podstawie lokalizacji. Na przykład w przypadku pliku manifestu pakietu do redystrybucji w języku angielskim, należy umieścić plik w folderze o nazwie en. Powtórz ten proces dla poszczególnych ustawień regionalnych, takich jak ja w języku japońskim i "de" dla języka niemieckiego. Końcowe niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.
 
-    ```xml
-    CustomBootstrapperPackage
-      product.xml
-      CustomBootstrapper.msi
-      de
-        eula.rtf
-        package.xml
-      en
-        eula.rtf
-        package.xml
-      ja
-        eula.rtf
-        package.xml
-    ```
+```
+CustomBootstrapperPackage
+  product.xml
+  CustomBootstrapper.msi
+  de
+    eula.rtf
+    package.xml
+  en
+    eula.rtf
+    package.xml
+  ja
+    eula.rtf
+    package.xml
+```
 
 Następnie skopiuj przeznaczone do redystrybucji pliki do folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).
 
-    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 lub
 
-    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 Możesz również określić lokalizacje folderu Bootstrapper z **ścieżki** wartość w następującym kluczu rejestru:
 
-    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
 
 W systemach 64-bitowych należy użyć następującego klucza rejestru:
 
-    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
 
 Każdy składnik redystrybucyjny jest wyświetlany w podfolderze katalogu pakietów. Produkt manifestu i redystrybucyjne pliki muszą być umieszczane w tym podfolderze. Zlokalizowane wersje składników i wykazu manifestów muszą być umieszczane w podfolderach nazwanych zgodnie z nazwami kultur.
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808503"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624193"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: Używanie funkcji edytora XML
 
@@ -30,7 +30,7 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
 
      Nowy plik jest otwarty w edytorze. Ten plik zawiera deklarację XML domyślne `<?xml version="1.0" encoding="utf-8">`.
 
-3. W oknie dialogowym właściwości dokumentu, kliknij przycisk przeglądania (**...** ) na **schematów** pola.
+3. W oknie dialogowym właściwości dokumentu, kliknij przycisk przeglądania ( **...** ) na **schematów** pola.
 
      **Schematy XSD** zostanie wyświetlone okno dialogowe.
 
@@ -58,7 +58,7 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
 
     - **Pracownik** można dodać elementu głównego.
 
-2. Wybierz **<!--** można dodać węzeł komentarzy i naciśnij klawisz **Enter**.
+2. Wybierz  **&lt;!--** można dodać węzeł komentarzy i naciśnij klawisz **Enter**.
 
      Edytor wstawia tagu końcowego komentarz i umieszcza kursor między tagiem początkowym i końcowym w komentarz.
 
@@ -70,7 +70,7 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
 
 5. Typ `>` zamknięcie tagu.
 
-6. Edytor dodaje tag końcowy. Tag końcowy zostanie dodany z linią falistą wskazujący błąd sprawdzania poprawności. **Etykietki narzędzia** wyświetlany jest komunikat: **Element "pracownik" ma niekompletną zawartość. Oczekiwano 'ID'**.
+6. Edytor dodaje tag końcowy. Tag końcowy zostanie dodany z linią falistą wskazujący błąd sprawdzania poprawności. **Etykietki narzędzia** wyświetlany jest komunikat: **Element "pracownik" ma niekompletną zawartość. Oczekiwano 'ID'** .
 
 7. Typ `<` i wybierz **identyfikator** z listy elementów członkowskich. Następnie wpisz `>`.
 
@@ -86,7 +86,7 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
 
 10. Wróć do pliku XML i Zastąp **abc** tekstem **123**.
 
-     Faliste podkreślenie i **etykietki narzędzia** zostaną wyczyszczone w obszarze wartości elementu Identyfikatora. **Etykietki narzędzia** dla elementu end pracowników tag teraz wyświetlany jest komunikat: **Element "pracownik" ma niekompletną zawartość. Oczekiwano "Data zatrudnienia"**.
+     Faliste podkreślenie i **etykietki narzędzia** zostaną wyczyszczone w obszarze wartości elementu Identyfikatora. **Etykietki narzędzia** dla elementu end pracowników tag teraz wyświetlany jest komunikat: **Element "pracownik" ma niekompletną zawartość. Oczekiwano "Data zatrudnienia"** .
 
 11. Umieść kursor po identyfikatorze tagu końcowego, wpisz w `<`, wybierz opcję **Data zatrudnienia** z listy członków, a następnie wpisz w `>`.
 
@@ -106,7 +106,7 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
 
 1. Z **pliku** menu, wybierz opcję **Zapisz jako**.
 
-     **Zapisz plik jako** zostanie wyświetlone okno dialogowe. Domyślna nazwa pliku jest *"XMLFile1"*.
+     **Zapisz plik jako** zostanie wyświetlone okno dialogowe. Domyślna nazwa pliku jest *"XMLFile1"* .
 
 2. Wprowadź nazwę pliku i lokalizację dokumentu XML, a następnie kliknij przycisk **Zapisz**.
 

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 75c5607043e83ece8ae95b770e8e50b6ab8fbc26
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: 1c7d4b2cb910a6e6ee55ecb783fe124958d251e2
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552908"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624118"
 ---
 # <a name="install-build-tools-into-a-container"></a>Zainstaluj narzędzia kompilacji do kontenera
 
@@ -89,7 +89,7 @@ Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po p
    ```
 
    > [!WARNING]
-   > Jeśli podstawowy obraz bezpośrednio w programie microsoft/windowsservercore lub mcr.microsoft.com/windows/servercore (zobacz [syndykaty Microsoft katalogu kontenera](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)), .NET Framework nie może być poprawnie zainstalowany i jest brak błędu instalacji wskazane. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Należy również zauważyć, że obrazy, które są oznaczone wersji 4.7.2 lub później użyć programu PowerShell jako domyślny `SHELL`, co spowoduje `RUN` i `ENTRYPOINT` instrukcjami, aby zakończyć się niepowodzeniem.
+   > Jeśli podstawowy obraz bezpośrednio w programie microsoft/windowsservercore lub mcr.microsoft.com/windows/servercore (zobacz [syndykaty Microsoft katalogu kontenera](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)), .NET Framework nie może być poprawnie zainstalowany i jest brak błędu instalacji wskazane. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Należy również zauważyć, że obrazy, które są oznaczone wersji 4.7.2 lub później użyć programu PowerShell jako domyślny `SHELL`, co spowoduje `RUN` i `ENTRYPOINT` instrukcjami, aby zakończyć się niepowodzeniem.
    >
    > Visual Studio 2017, wersja, należy zachować 15,8 lub starszym (dowolny produkt) nie zostaną prawidłowo zainstalowane na mcr.microsoft.com/windows/servercore:1809 lub nowszej. Nie jest wyświetlany błąd.
    >

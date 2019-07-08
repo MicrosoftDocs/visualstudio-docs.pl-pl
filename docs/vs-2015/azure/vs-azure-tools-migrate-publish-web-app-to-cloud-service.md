@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 2bd574fe6a3a75a46d827f459bbbdf0f3c4f807e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca84f1edfc3290fe53e00a5b7f8c85f07b0c66b
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952861"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624181"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji internetowej w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 
@@ -58,9 +58,9 @@ Jeśli masz parametry połączenia dla aplikacji sieci web, która korzysta z lo
 
 1. Tworzenie chmury niezbędnych kont magazynu i usługi w subskrypcji platformy Azure, zgodnie z opisem na [przygotować się do publikowania lub wdrażania aplikacji platformy Azure z programu Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. W programie Visual Studio, kliknij prawym przyciskiem myszy projekt aplikacji, a następnie wybierz **publikowanie w usłudze Microsoft Azure...**  (jest to różni się od polecenie "Publikuj...".).
-1. W **publikowanie aplikacji platformy Azure** wyświetlany, zaloguj się przy użyciu konta z subskrypcją platformy Azure, a następnie wybierz pozycję **Dalej >**.
+1. W **publikowanie aplikacji platformy Azure** wyświetlany, zaloguj się przy użyciu konta z subskrypcją platformy Azure, a następnie wybierz pozycję **Dalej >** .
 1. W **Ustawienia > typowe ustawienia** , a następnie wybierz docelową usługę w chmurze z **usługi w chmurze** listy rozwijanej, wraz z konfiguracjami oraz wybranego środowiska.
-1. W **Ustawienia > Ustawienia zaawansowane**, wybierz konto magazynu do użycia, a następnie wybierz **Dalej >**.
+1. W **Ustawienia > Ustawienia zaawansowane**, wybierz konto magazynu do użycia, a następnie wybierz **Dalej >** .
 1. W **diagnostyki**, określ, czy chcesz wysłać informacje do usługi Application Insights.
 1. Wybierz **Dalej >** można wyświetlić podsumowanie, następnie wybierz pozycję **Publikuj** rozpocząć wdrażanie.
 1. Program Visual Studio zostanie otwarte okno Dziennik aktywności, gdzie możesz śledzić postęp:
@@ -77,13 +77,13 @@ Wszystkie typy aplikacji, które można uruchomić w przeglądarce, na połącze
 
 Poniższa tabela zawiera szczegółowe informacje dotyczące uruchamiania aplikacji na platformie Azure:
 
-   | Typ aplikacji sieci Web | Uruchamianie na platformie Azure |
-   | --- | --- | --- |
-   | Aplikacja internetowa platformy ASP.NET<br/>(w tym MVC 2 MVC 3, MVC 4) | Wybierz adres URL w **wdrożenia** karta **dziennik aktywności platformy Azure**. |
-   | ASP.NET pusta aplikacja sieci Web | Jeśli masz domyślny `.aspx` strony w aplikacji, wybierz adres URL w **wdrożenia** karta **dziennik aktywności platformy Azure**. Aby przejść do innej strony, wprowadź następujący adres URL w przeglądarce: `<deployment_url>/<page_name>.aspx` |
-   | Aplikacja Silverlight<br/>Aplikacji biznesowych Silverlight<br/>Aplikacja nawigacji Silverlight | Przejdź do określonej strony aplikacji przy użyciu następującej postaci adresu URL: `<deployment_url>/<page_name>.aspx` |
-    Aplikacja usługi WCF<br/>Aplikacja usługi przepływu pracy WCF | Ustaw `.svc` pliku jako stronę startową w projekcie usługi WCF. Następnie przejdź do `<deployment_url>/<service_file>.svc` |
-   | ASP.NET Dynamic jednostek<br/>ASP.NET Dynamic Data Linq do SQL | Zaktualizuj parametry połączenia, zgodnie z opisem w następnej sekcji. Następnie przejdź do `<deployment_url>/<page_name>.aspx`. Dla programu Linq to SQL należy użyć usługi Azure SQL database. |
+| Typ aplikacji sieci Web | Uruchamianie na platformie Azure |
+| --- | --- |
+| Aplikacja internetowa platformy ASP.NET<br/>(w tym MVC 2 MVC 3, MVC 4) | Wybierz adres URL w **wdrożenia** karta **dziennik aktywności platformy Azure**. |
+| ASP.NET pusta aplikacja sieci Web | Jeśli masz domyślny `.aspx` strony w aplikacji, wybierz adres URL w **wdrożenia** karta **dziennik aktywności platformy Azure**. Aby przejść do innej strony, wprowadź następujący adres URL w przeglądarce: `<deployment_url>/<page_name>.aspx` |
+| Aplikacja Silverlight<br/>Aplikacji biznesowych Silverlight<br/>Aplikacja nawigacji Silverlight | Przejdź do określonej strony aplikacji przy użyciu następującej postaci adresu URL: `<deployment_url>/<page_name>.aspx` |
+| Aplikacja usługi WCF<br/>Aplikacja usługi przepływu pracy WCF | Ustaw `.svc` pliku jako stronę startową w projekcie usługi WCF. Następnie przejdź do `<deployment_url>/<service_file>.svc` |
+| ASP.NET Dynamic jednostek<br/>ASP.NET Dynamic Data Linq do SQL | Zaktualizuj parametry połączenia, zgodnie z opisem w następnej sekcji. Następnie przejdź do `<deployment_url>/<page_name>.aspx`. Dla programu Linq to SQL należy użyć usługi Azure SQL database. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Zaktualizuj parametry połączenia dla jednostek dynamiczne ASP.NET
 
