@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614436"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586818"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i Konfigurowanie narzędzia umożliwiające tworzenie za pomocą systemu iOS
 
@@ -66,7 +66,6 @@ Aby zainstalować i używać zdalnego agenta do tworzenia kodu dla systemu iOS, 
 
    Zainstaluj 8.11.3 wersję środowiska Node.js na komputerze Mac. Jeśli zainstalujesz pakiet Node.js, powinien mu towarzyszyć npm w wersji 5.6.0. Należy pamiętać, że inne wersje środowiska Node.js i narzędzie npm mogą nie obsługiwać niektóre moduły używane w vcremote agenta zdalnego, co może powodować niepowodzenie instalacji vcremote.
 
-
 ## <a name="Install"></a> Zainstaluj agenta zdalnego dla systemu iOS
 
 Po zainstalowaniu programu Visual C++ for Cross-Platform Mobile Development w Visual Studio może komunikować się z [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), zdalnego agenta uruchomionego na komputerze Mac do transferu plików, tworzenie i uruchamianie aplikacji systemu iOS oraz wysyłania poleceń do debugowania.
@@ -79,7 +78,7 @@ Przed zainstalowaniem agenta zdalnego, upewnij się, że zostały spełnione [wy
 
    `sudo npm install -g --unsafe-perm vcremote`
 
-   Globalne instalacji (**-g**) przełącznik jest zalecane, ale nie jest wymagane.
+   Globalne instalacji ( **-g**) przełącznik jest zalecane, ale nie jest wymagane.
 
    Podczas instalacji vcremote zainstalowano i włączono tryb dewelopera na komputerze Mac. [Homebrew](https://brew.sh/) i dwa pakiety npm vcremote lib i vcremote utils, są również instalowane. Po zakończeniu instalacji jest bezpiecznie zignorować ostrzeżenia dotyczące pominiętych opcjonalne zależności.
 
@@ -142,7 +141,7 @@ Aby połączyć się z agentem zdalnym z programu Visual Studio, należy określ
 
 1. Na pasku menu programu Visual Studio, wybierz **narzędzia**, **opcje**.
 
-1. W **opcje** okna dialogowego rozwiń **Międzyplatformowe**, **C++**, **iOS**.
+1. W **opcje** okna dialogowego rozwiń **Międzyplatformowe**, **C++** , **iOS**.
 
 1. W **nazwy hosta** i **portu** wprowadź wartości określonych przez agenta zdalnego, po jego uruchomieniu. Nazwa hosta może zawierać nazwy DNS lub adres IP Twojego komputera Mac. Domyślny port to 3030.
 
@@ -159,7 +158,7 @@ Aby połączyć się z agentem zdalnym z programu Visual Studio, należy określ
 
    Jeśli skojarzenie nie powiedzie się, sprawdź, czy agent zdalny jest uruchomiony, wykonując kroki opisane w [uruchomić agenta zdalnego](#Start). Jeśli zbyt dużo czasu minęło od czasu wygenerowania agenta zdalnego numeru PIN, wykonaj kroki opisane w [Generowanie nowego zabezpieczającego numeru PIN](#GeneratePIN) na komputerach Mac i spróbuj wykonać operację ponownie. Jeśli używasz nazwę hosta komputera Mac, spróbuj użyć adresu IP w **nazwy hosta** zamiast tego pola.
 
-1. Zaktualizuj nazwę folderu, w **zdalny katalog główny** pola, aby wskazać folder, używane przez agenta zdalnego w domu (*~*) katalogu na komputerze Mac. Domyślnie zdalny agent używa /Users/`username`/vcremote jako zdalny katalog główny.
+1. Zaktualizuj nazwę folderu, w **zdalny katalog główny** pola, aby wskazać folder, używane przez agenta zdalnego w domu ( *~* ) katalogu na komputerze Mac. Domyślnie zdalny agent używa /Users/`username`/vcremote jako zdalny katalog główny.
 
 1. Wybierz **OK** można zapisać ustawień połączenia zdalnego parowania.
 
