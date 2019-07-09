@@ -1,18 +1,18 @@
 ---
 title: EditorConfig
 description: Przy użyciu pliku editorconfig umożliwia spójne projektu kodowania stylów w programie Visual Studio dla komputerów Mac.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a628f4635373dd9bd02eeefa01697fedaeb170c1
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983459"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691581"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Tworzenie i edytowanie niestandardowego pliku EditorConfig
 
@@ -123,7 +123,7 @@ csharp_new_line_before_open_brace = none
 
 Ustawienie `root` do `true` flagi ten plik jako plik najważniejsze bazy kodu i wyżej `.editorconfig` pliki projektu są ignorowane, jak wyjaśniono w [Zastąp ustawienia EditorConfig](#override-editorconfig-settings) sekcji.
 
-Każda sekcja jest wskazywane przez kwadratowe (**[**) nawiasów i określa informacje na temat typów plików, następujące właściwości powinny odnoszą się do.
+Każda sekcja jest wskazywane przez kwadratowe ( **[** ) nawiasów i określa informacje na temat typów plików, następujące właściwości powinny odnoszą się do.
 
 W powyższym przykładzie niektóre ustawienia są stosowane do wszystkich plików w projekcie, a inne są dodawane tylko do plików języka C#. Poniższe zrzuty ekranu Pokaż przed i po nim `.editorconfig` ustawienia zostały zastosowane:
 

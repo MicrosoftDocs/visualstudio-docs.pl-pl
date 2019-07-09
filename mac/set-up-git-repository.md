@@ -1,16 +1,16 @@
 ---
 title: Konfigurowanie repozytorium Git
 description: Przy użyciu narzędzia Git i Subversion w programie Visual Studio dla komputerów Mac.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fbee486a2e0263621f501b511d62abddbda8059
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938471"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692393"
 ---
 # <a name="set-up-a-git-repository"></a>Konfigurowanie repozytorium Git
 

@@ -1,18 +1,18 @@
 ---
 title: 'Samouczek: Azure Functions'
 description: Użycie usługi Azure functions w programie Visual Studio dla komputerów Mac.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aebee9f649f183995f209568d78ef08fbde1ef1a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986500"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692890"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: Wprowadzenie do usługi Azure Functions
 
@@ -243,7 +243,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
     }
     ```
 
-1. Również zaktualizować **punktu wejścia** właściwości w dolnej części pliku przy użyciu metody o nazwie **"Add2"**, takie jak pokazano poniżej. To jest, aby zilustrować, że ścieżka **interfejsu api/Moduł dodający...**  może mapować do odpowiedniej metody o dowolnej nazwie (**Add2** poniżej).
+1. Również zaktualizować **punktu wejścia** właściwości w dolnej części pliku przy użyciu metody o nazwie **"Add2"** , takie jak pokazano poniżej. To jest, aby zilustrować, że ścieżka **interfejsu api/Moduł dodający...**  może mapować do odpowiedniej metody o dowolnej nazwie (**Add2** poniżej).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -299,7 +299,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 
     ![Adres URL dla protokołu Http, funkcje](media/azure-functions-lab-image31.png)
 
-1. Wróć do okna przeglądarki i przejdź do **http://localhost:7071/api/Adder/3/5**.
+1. Wróć do okna przeglądarki i przejdź do **http://localhost:7071/api/Adder/3/5** .
 
 1. Tym razem działania metody ponownie, ściągając parametrów ze ścieżki i produkcji to suma.
 
@@ -348,7 +348,7 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
 
 1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
 
-1. Na karcie przeglądarki przejdź do **http://localhost:7071/api/Process/4/6**. Spowoduje to umieszczenie kolejną wiadomość do kolejki po pewnym czasie powinno spowodować kolejnego wiersza, które są dodawane do tabeli.
+1. Na karcie przeglądarki przejdź do **http://localhost:7071/api/Process/4/6** . Spowoduje to umieszczenie kolejną wiadomość do kolejki po pewnym czasie powinno spowodować kolejnego wiersza, które są dodawane do tabeli.
 
 1. Wróć do **terminalu** , zwracając uwagę na żądanie przychodzące dla **4 + 6**.
 
@@ -381,11 +381,11 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
 
 1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
 
-1. Na karcie przeglądarki, Odśwież adres URL w **http://localhost:7071/api/Process/4/6**. Ponieważ istnieje wiersz tabeli dla tego rekordu, powinien zostać zwrócony natychmiast i bez błędów. Ponieważ nie ma żadnych danych wyjściowych HTTP, zostaną wyświetlone dane wyjściowe w terminalu.
+1. Na karcie przeglądarki, Odśwież adres URL w **http://localhost:7071/api/Process/4/6** . Ponieważ istnieje wiersz tabeli dla tego rekordu, powinien zostać zwrócony natychmiast i bez błędów. Ponieważ nie ma żadnych danych wyjściowych HTTP, zostaną wyświetlone dane wyjściowe w terminalu.
 
     ![Końcowych danych wyjściowych przedstawiający wiersz tabeli już istnieje](media/azure-functions-lab-image33.png)
 
-1. Aktualizacja adresu URL, aby odzwierciedlić kombinację nie testowano, takich jak **http://localhost:7071/api/Process/5/7**. Należy zauważyć komunikat w terminalu, co oznacza, że wiersz tabeli nie znaleziono (zgodnie z oczekiwaniami).
+1. Aktualizacja adresu URL, aby odzwierciedlić kombinację nie testowano, takich jak **http://localhost:7071/api/Process/5/7** . Należy zauważyć komunikat w terminalu, co oznacza, że wiersz tabeli nie znaleziono (zgodnie z oczekiwaniami).
 
     ![Nowy proces przedstawiający końcowych danych wyjściowych](media/azure-functions-lab-image34.png)
 

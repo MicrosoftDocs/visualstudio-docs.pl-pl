@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986865"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693014"
 ---
 # <a name="code-snippets"></a>Fragmenty kodu
 
-Fragmenty, często nazywane kodu _kodu szablonów_, są przydatne w przypadku wydajne programowanie, ponieważ umożliwiają one wstawiania i edytowanie wstępnie napisana bloków kodu. Za pomocą fragmentów kodu może być wygodne do szybkiego dodawania typowych wzorców, lub nawet w przypadku nauki nowych wzorców, gdy deweloper wiesz składni. Istnieją szablony przewidziane C#, F#, HTML, XML, Python i Razor.
+Fragmenty, często nazywane kodu _kodu szablonów_, są przydatne w przypadku wydajne programowanie, ponieważ umożliwiają one wstawiania i edytowanie wstępnie napisana bloków kodu. Za pomocą fragmentów kodu może być wygodne do szybkiego dodawania typowych wzorców, lub nawet w przypadku nauki nowych wzorców, gdy deweloper wiesz składni. Istnieją szablony przewidziane C#, F#, HTML, XML, Python i Razor.
 
 W tej sekcji wyjaśniono, jak utworzyć, wstawić i używanie fragmentów kodu w kodzie.
 
@@ -30,7 +30,7 @@ Istnieje kilka różnych sposobów dodawanie fragmentów kodu, z których niekt�
 
   [![Fragmenty kodu w przyborniku](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Wstaw polecenie Szablony** &ndash; klucz nie istnieje obecnie domyślnego powiązania zestawu do wstawiania szablonu. Aby go utworzyć, przejdź do **programu Visual Studio > Preferencje > klucz powiązania** i wyszukaj `template`. Dzięki temu, dodając odpowiednią powiązanie klucza w polu Edytuj powiązania, kliknij przycisk **Zastosuj**:
+- **Wstaw polecenie Szablony** &ndash; klucz nie istnieje obecnie domyślnego powiązania zestawu do wstawiania szablonu. Aby go utworzyć, przejdź do **programu Visual Studio > Preferencje > klucz powiązania** i wyszukaj `template`. Dzięki temu, dodając odpowiednią powiązanie klucza w polu Edytuj powiązania, kliknij przycisk **Zastosuj**:
 
   ![Polecenie szablonu krawędziowe](media/source-editor-image15.png)
 

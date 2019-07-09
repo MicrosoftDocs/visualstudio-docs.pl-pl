@@ -1,17 +1,17 @@
 ---
 title: Debugowanie — wizualizacje danych
 description: Debugowanie jest typowe i jest to konieczne, część programowania. Program Visual Studio dla komputerów Mac zawiera cały zestaw funkcji Łatwe debugowanie. W tym artykule patrzy na wizualizacje danych, które mogą być wyświetlane podczas sprawdzania obiektów w debugerze.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984402"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691733"
 ---
 # <a name="data-visualizations"></a>Wizualizacje danych
 

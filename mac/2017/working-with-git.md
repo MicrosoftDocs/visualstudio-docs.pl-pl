@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: ba98312617aaf636ee388ec97f47c14ede75507d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d18ef3d693c3906c1312cfecb8da605c6a27226
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986540"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692967"
 ---
 # <a name="working-with-git"></a>Praca z usługą Git
 
@@ -59,7 +59,7 @@ Umożliwiają one następujące akcje:
 
 ## <a name="switching-branches"></a>Przełączanie gałęzi
 
-Domyślnie pierwszej gałęzi, które są tworzone w repozytorium jest znany jako **wzorzec** gałęzi. Nie ma pod względem technicznym żadnych różnic między głównej gałęzi i inne, ale gałąź główna jest tą, która jest w większości przypadków traktować w zespołów programistycznych jako gałąź "live" lub "produkcja".
+Domyślnie pierwszej gałęzi, które są tworzone w repozytorium jest znany jako **wzorzec** gałęzi. Nie ma pod względem technicznym żadnych różnic między głównej gałęzi i inne, ale gałąź główna jest tą, która jest w większości przypadków traktować w zespołów programistycznych jako gałąź "live" lub "produkcja".
 
 Niezależnie od wiersza rozwoju mogą być tworzone przez Rozgałęzianie poza głównego (lub dowolnej innej gałęzi istotnego dla badania). Dzięki temu można nowej wersji głównej gałęzi w punkcie w czasie, co do tworzenia aplikacji, niezależnie od co to jest "live". Korzystając z odgałęzień w ten sposób jest często używana na potrzeby funkcji podczas tworzenia oprogramowania
 

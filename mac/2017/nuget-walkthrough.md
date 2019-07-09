@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697597"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692800"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Uwzględnione pakietu NuGet w projekcie
 
@@ -43,7 +43,7 @@ Po otwarciu przez okna ładuje listę pakietów z domyślnego źródła pakietu:
 
 ![Lista pakietów NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Użyj pola wyszukiwania w prawym górnym rogu, aby znaleźć określony pakiet, na przykład `azure`. Po znalezieniu pakietu, który chcesz użyć, zaznacz go i kliknij **Dodaj pakiet** przycisk, aby rozpocząć instalację.
+Użyj pola wyszukiwania w prawym górnym rogu, aby znaleźć określony pakiet, na przykład `azure`. Po znalezieniu pakietu, który chcesz użyć, zaznacz go i kliknij **Dodaj pakiet** przycisk, aby rozpocząć instalację.
 
 [Dodaj pakiet NuGet platformy Azure](media/nuget-walkthrough-AddPackages2.png)
 
@@ -57,7 +57,7 @@ Po pobraniu pakietu zostanie dodany do projektu. Rozwiązanie zmieni się w nast
 
 Po dodaniu pakietu NuGet i odwołania do projektu, zaktualizowany, można programować względem interfejsy API, co w przypadku dowolnego odwołania do projektu.
 
-Upewnij się, Dodaj wymagane `using` dyrektywy na początku pliku:
+Upewnij się, Dodaj wymagane `using` dyrektywy na początku pliku:
 
 ```csharp
 using Newtonsoft.Json;

@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436910"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692841"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Instrukcje: Określanie lokalizacji plików symboli z wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narz
   
 2. Użyj następującej składni, aby ustawić **_NT_SYMBOL_PATH** zmiennej środowiskowej lub opcji symbolpath VSPerfReport:  
   
-    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **SRV\***  *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     gdzie *LocalStore* to ścieżka katalogu lokalnego, który został utworzony.  
   
@@ -62,4 +62,4 @@ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narz
   
  Następujące polecenie w wierszu polecenia VSPerfReport dodaje C:\Projects\Symbols katalog do ścieżki wyszukiwania, używając **symbolpath** opcji.  
   
- **VSPerfReport***MyApp* **której /SymbolPath:C:\Projects\Symbols .exe**
+ **VSPerfReport**  *MyApp* **której /SymbolPath:C:\Projects\Symbols .exe**

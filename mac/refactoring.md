@@ -1,17 +1,17 @@
 ---
 title: Refaktoryzacja kodu
 description: Rafinacja kodu za pomocą programu Visual Studio dla komputerów Mac i szybkie akcje.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937927"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691297"
 ---
 # <a name="refactoring"></a>Refaktoryzacja
 
@@ -57,7 +57,7 @@ Ikona, który jest wyświetlany, gdy dostępna jest szybka akcja oznacza wskazan
 
 - Żarówki i śrubokręty są wyświetlane na lewym marginesie edytor, gdy Przenieś karetkę do wiersza kodu, dla których dostępna jest szybka akcja.
 
-- Naciśnij klawisz **opcji (⌥)**+**Enter** dowolnym miejscu w wierszu, aby wyświetlić listę dostępnych szybkie akcje i refaktoryzacje.
+- Naciśnij klawisz **opcji (⌥)** +**Enter** dowolnym miejscu w wierszu, aby wyświetlić listę dostępnych szybkie akcje i refaktoryzacje.
 
 ![Wyświetl elementy kontekstu](media/refactoring-context-action.png)
 

@@ -3,14 +3,14 @@ title: Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 description: Ten przewodnik opisuje jak używać programu Visual Studio dla komputerów Mac Tools for Unity rozszerzenia
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966030"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692220"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 
@@ -26,7 +26,7 @@ Alternatywnie program Visual Studio for Mac może być otwierany przez skrypt ni
 
 ## <a name="unity-documentation-access"></a>Dostęp do dokumentacji aparatu Unity
 
-Visual Studio dla komputerów Mac Tools for Unity zawiera skrót do uzyskiwania dostępu do dokumentacji interfejsu API aparatu Unity. Aby uzyskać dostęp do dokumentacji interfejsu API aparatu Unity w programie Visual Studio dla komputerów Mac, umieść kursor nad interfejsu API aparatu Unity, aby poznać i naciśnij klawisz **⌘ polecenia + "**.
+Visual Studio dla komputerów Mac Tools for Unity zawiera skrót do uzyskiwania dostępu do dokumentacji interfejsu API aparatu Unity. Aby uzyskać dostęp do dokumentacji interfejsu API aparatu Unity w programie Visual Studio dla komputerów Mac, umieść kursor nad interfejsu API aparatu Unity, aby poznać i naciśnij klawisz **⌘ polecenia + "** .
 
 ## <a name="intellisense-for-unity-messages"></a>Funkcja IntelliSense dla komunikatów Unity
 Aparat Unity emituje komunikaty do obiekt MonoBehaviour skryptów, dzięki czemu deweloperzy mogą pisać kod, który reaguje na komunikaty, takie jak OnMouseDown, OnTriggerEnter itp. Ponieważ nie są to wirtualne metody w klasie bazowej obiekt MonoBehaviour, niektórych środowisk IDE, takie jak narzędzia MonoDevelop nie mają funkcji uzupełniania kodu dla komunikatów Unity.
@@ -61,7 +61,7 @@ Jednak program Visual Studio dla komputerów Mac Tools for Unity rozszerza jej f
 
 ## <a name="adding-new-unity-files-and-folders"></a>Dodawanie nowych plików Unity i folderów
 
-Podczas gdy można zawsze dodawaj nowe pliki do projektu środowiska Unity w programie Unity editor, Visual Studio for Mac umożliwia łatwe tworzenie nowych skrypty Unity, programów do cieniowania i folderów z poziomu programu Visual Studio.
+Chociaż można zawsze dodawaj nowe pliki do projektu środowiska Unity w programie Unity editor, Visual Studio for Mac umożliwia łatwe tworzenie nowych Unity skryptów, programów do cieniowania, struktury, wyliczenia i folderów z poziomu programu Visual Studio.
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>Dodaj nowy skrypt języka C# obiekt MonoBehaviour
 

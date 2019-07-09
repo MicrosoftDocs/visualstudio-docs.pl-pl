@@ -1,18 +1,18 @@
 ---
 title: Razor
 description: Informacje na temat obsługi razor w aplikacji asp.net core w programie Visual Studio dla komputerów Mac
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 181059ae2985f570ad1dc0749045e39ed4ec1e7e
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 9e5a3f61ee7065a0615a381bdcc03dafc3566893
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624517"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691268"
 ---
 # <a name="razor"></a>Razor
 
@@ -51,8 +51,8 @@ Aplikacje sieci web razor składają się z następujących składników:
 ### <a name="pages-folder"></a>Folder stron
 
 Folder stron w projekcie jest, gdzie można znaleźć na stronach sieci web, wraz z kodem dla każdego:
-*    A * *.cshtml* w pliku kodu znaczników HTML i składni Razor.
-*    A * *. cshtml.cs* plików dla Twojego C# związanym z kodem obsługi zdarzenia strony.
+* A * *.cshtml* w pliku kodu znaczników HTML i składni Razor.
+* A * *. cshtml.cs* plików dla Twojego C# związanym z kodem obsługi zdarzenia strony.
 
 Pliki obsługi mają nazwy rozpoczynające się od znaku podkreślenia. Na przykład pliku _Layout.cshtml konfiguruje elementy interfejsu użytkownika dla wszystkich stron. Ten plik konfiguruje menu nawigacji w górnej części strony i informacje o prawach autorskich w dolnej części strony. Aby uzyskać więcej informacji, zobacz [układu w programie ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
 

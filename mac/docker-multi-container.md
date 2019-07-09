@@ -1,15 +1,15 @@
 ---
 title: Samouczek — tworzenie wiele kontenerów aplikacji przy użyciu rozwiązania Docker Compose
 description: Dowiedz się, jak zarządzać więcej niż jednego kontenera i komunikować się między nimi w programie Visual Studio dla komputerów Mac
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: 76c55a43540e2f8ab791b4530044c0ab4da4ecdc
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 7570788b50a83d9a74657408d4f38fbce21bd1c3
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586805"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691705"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Utwórz wiele kontenerów aplikacji przy użyciu rozwiązania Docker Compose
 

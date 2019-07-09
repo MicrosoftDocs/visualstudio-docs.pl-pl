@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981679"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692342"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Przewodnik: Złożone powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawowe informacje o złożone powiązanie danych w projekcie na poziomie dokumentu. Pola w bazie danych Northwind programu SQL Server można powiązać wiele komórek w arkuszu programu Microsoft Office Excel.
@@ -174,7 +174,7 @@ ms.locfileid: "62981679"
 
 1. Zaznacz komórkę w obiekcie listy.
 
-    W dolnej części listy z gwiazdką pojawi się nowy wiersz (**\\***) w pierwszej komórki nowego wiersza.
+    W dolnej części listy z gwiazdką pojawi się nowy wiersz ( **\*** ) w pierwszej komórki nowego wiersza.
 
 2. Dodaj następujące informacje w pusty wiersz.
 

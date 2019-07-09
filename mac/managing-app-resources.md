@@ -1,16 +1,16 @@
 ---
 title: Zarządzanie zasobami aplikacji
 description: Ten artykuł zawiera łącza do różnych przewodniki, których opisano sposób zarządzania zasobami aplikacji dla wielu platform w programie Visual Studio dla komputerów Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: e4182bdcc8e2a97b152d5548b07cd03a152607ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982719"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692855"
 ---
 # <a name="managing-app-resources"></a>Zarządzanie zasobami aplikacji
 
