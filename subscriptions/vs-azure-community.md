@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści społeczności platformy Azure, zawarte w wybranych subskrypcjach programu Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: e83056baa47e4a0145a3d8bb8e6c1e1987b4967a
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586944"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784701"
 ---
 # <a name="azure-community"></a>Społeczność platformy Azure
 
@@ -49,7 +48,7 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 
 |                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Podlega odnowieniu? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Jeden rok    |    Tak     |
+|                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Jeden rok    |    Yes     |
 |                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Jeden rok    |    Tak     |
 |                              Visual Studio Test Professional (Standard)                               |    Licencjonowania zbiorowego, handlu detalicznego     |   Jeden rok    |    Tak     |
 |                                       Platformy MSDN (standardowa)                                       |    Licencjonowania zbiorowego, handlu detalicznego     |   Jeden rok    |    Tak     |

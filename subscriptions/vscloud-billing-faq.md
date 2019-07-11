@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dla subskrypcji w chmurze.
-searchscope: VS Subscription
-ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54fa25cfe7387f04797335f544f0ba647fd0a8e7
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810534"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785084"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Chmura subskrypcji programu Visual Studio często zadawane pytania dotyczące rozliczeń
 

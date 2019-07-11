@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informacje dla dostawców rozwiązań w chmurze o tym, jak kupić i zarządzać subskrypcjami chmury programu Visual Studio dla swoich klientów.
-searchscope: VS Subscription
-ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eed13a25c76cdacdd86923a1d4519d29374d25e
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978513"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784911"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kupowanie i zarządzać subskrypcjami chmury programu Visual Studio dla klientów
 
@@ -80,8 +79,8 @@ Oto jak interpretować, co widać na ten arkusz kalkulacyjny:
 
 | Kategoria miernika    |   Nazwa                 |  Jednostki                                |           Co to jest                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  Subskrypcja                         | Miesięczna subskrypcja programu Visual Studio Enterprise   |
-| Visual Studio     | Professional Edition           |  Subskrypcja                         | Miesięczna subskrypcja programu Visual Studio Professional |
+| Visual Studio     | Enterprise             |  Subscription                         | Miesięczna subskrypcja programu Visual Studio Enterprise   |
+| Visual Studio     | Professional Edition           |  Subscription                         | Miesięczna subskrypcja programu Visual Studio Professional |
 
 Firma Microsoft oferuje 5% rabatu na 6. jednostki, którego kupujesz każdego miesiąca w każdej subskrypcji programu Visual Studio (dla danego klienta). Dlatego zobaczysz dwa wiersze dla każdej opcji subskrypcji. Jeden wiersz zawiera "Wartość minimalna" 0, co powinno następuje interpretacja jako podstawa dla jednostek 1 do 5. Innych wierszy pokazuje "Wartość minimalna" 5, dlatego ceny z rabatem 5%, która ma zastosowanie do 6 jednostek i nowszych.
 

@@ -3,17 +3,16 @@ title: What's new in subskrypcje programu Visual Studio
 description: Poznaj nowe i zaktualizowane funkcje, które służą do zarządzania subskrypcjami programu Visual Studio.
 ms.custom: ''
 ms.date: 06/27/2019
-searchscope: VS Subscription
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 85c327a2690096aa0786b4851348657d2295a223
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465121"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784894"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s Nowość w subskrypcji programu Visual Studio
 
@@ -34,7 +33,7 @@ Aby uzyskać więcej informacji, zapoznaj się z naszym [maksymalne wykorzystani
 ## <a name="2019-q2-april-june"></a>II kwartał 2019 r. (kwiecień–czerwiec)
 
 ### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio z subskrypcjami GitHub Enterprise
-//Build konferencji w maju firma Microsoft ogłosiła, że klienci z umową Enterprise Agreement mogą teraz kupować subskrypcje programu Visual Studio, które obejmują GitHub Enterprise.  Jest łatwym sposobem uzyskania subscriptoins programu Visual Studio i GitHub Enterprise dla pojedynczego niższej cenie.  
+//Build konferencji w maju firma Microsoft ogłosiła, że klienci z umową Enterprise Agreement mogą teraz kupować subskrypcje programu Visual Studio, które obejmują GitHub Enterprise.  Jest łatwym sposobem uzyskania subskrypcji programu Visual Studio i GitHub Enterprise dla pojedynczego niższej cenie.  
 
 GitHub Enterprise jest dostępna z subskrypcjami programu Visual Studio Enterprise i Visual Studio Professional zakupione w ramach umowy Enterprise Agreement. Istnieje również "podniesienie" oferta, która pozwala na dodawanie GitHub Enterprise, nawet jeśli nie termin odnowienia umowy Enterprise agreement, jest.
 

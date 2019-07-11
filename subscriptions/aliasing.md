@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/02/2018
 ms.topic: conceptual
 description: Logowanie może zakończyć się niepowodzeniem, jeśli są używane aliasy lub przyjazne nazwy
-searchscope: VS Subscription
-ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7285c1ede495a1aa2603216f2a9e9fe9f89331ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946183"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783691"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem przy użyciu aliasów
 
@@ -110,7 +109,7 @@ Można korzystać z instrukcji przedstawionych w temacie [przypisywanie subskryb
 
 Po przypisaniu subskrypcji do subskrybenta, otrzymają one wiadomość e-mail z prośbą ich do [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) z zalet korzyści z subskrypcji.  Podczas próby logowania, logowania subskrypcji programu Visual Studio zakończy się niepowodzeniem z o błędzie informujący, że konto nie został rozpoznany.  Przed logując się do [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) występują, poproś subskrybentom wykonaj te instrukcje.  Jeśli to konieczne, możesz użyć tej funkcji [szablonu](#notifying-your-subscribers-using-personal-accounts) powiadomić subskrybenta, po przypisaniu subskrypcji.
 
-1. Przejdź do https://my.visualstudio.comi kliknij przycisk **Utwórz nowe konto Microsoft**.
+1. Przejdź do https://my.visualstudio.com i kliknij przycisk **Utwórz nowe konto Microsoft**.
 
 2. Wypełnij pola:
    - Wprowadź adres e-mail, która otrzymała powitalnej wiadomości E-mail w Someone@example.com okno

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści Concierge Chat uwzględniony w subskrypcjach programu Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 9141da640cf0a181c462f1f9af5c3e8fe70a3fb4
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 043ced3654c8bf43feebcc584fb46bb033d96e78
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586910"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784623"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -43,7 +42,7 @@ Uzyskiwanie pomocy za pośrednictwem usługi Konsjerż — Rozmowa jest bardzo p
 | Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Yes          |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                              |  Yes          |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                              |  Tak          |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży, Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Nie obejmuje:  Ekwiwalentu pełnego wymiaru czasu, Imagine najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN).*

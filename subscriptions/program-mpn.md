@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Szczegółowe informacje dotyczące subskrypcji, które są oferowane, jakie zasady są stosowane i ilu subskrypcji są oferowane w programie MPN.
-searchscope: VS Subscription
-ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 5b31cc6ef83583074920e5544b0551aa14edf1d5
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805303"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785001"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Subskrypcje programu Visual Studio jest oferowana dla partnerów w programie Microsoft Partner Network (MPN)
 Partnerzy, którzy Zdobądź kompetencję lub kto kupować Action Pack w programie MPN to kwalifikujących się do korzystania z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane na poszczególnych użytkowników, a także obowiązują tylko wtedy, gdy jest przypisany do określonego nazwanego użytkownika, który działa w przypadku firmy partnera.
@@ -47,7 +46,7 @@ Niezależnie od tego, ile kompetencji zdobywa partnera liczba subskrypcji progra
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Subskrypcje dla partnerów zakupu Action Pack
 Partnerzy z kompetencją nie kwalifikują się do zakupu Action Pack. Tylko jeden Action Pack można zakupić dla każdego partnera.
 
-Przy użyciu pakietu akcji zdobywa partnera **3 subskrypcje programu Visual Studio Professional (MPN)**. Visual Studio Professional (MPN) to oferta typu niestandardowego, bez dostępnych na rynku odpowiedniej wartości wyrażonej w rynku. Oto, co jest zawarte w:
+Przy użyciu pakietu akcji zdobywa partnera **3 subskrypcje programu Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) to oferta typu niestandardowego, bez dostępnych na rynku odpowiedniej wartości wyrażonej w rynku. Oto, co jest zawarte w:
 - Program Visual Studio Professional — tylko najnowsza wersja
 - — Windows najnowszej wersji Enterprise tylko służące do tworzenia i testowania tylko
 - System Windows Server — najnowszej wersji tylko na potrzeby tworzenia i testowania tylko

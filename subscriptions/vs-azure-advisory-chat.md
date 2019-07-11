@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak zastosować korzyści użycia Chat doradztwa technicznego dotyczącego platformy Azure, uwzględniony w subskrypcjach programu Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 970e7543d8e39b5e8afafb964a99ef568e704ec0
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586978"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784760"
 ---
 # <a name="azure-advisory-chat"></a>Czat z doradcą Azure Advisor
 
@@ -38,7 +37,7 @@ Azure doradztwa technicznego dotyczącego Rozmowa jest prosty w użyciu.
 
 |                                                      Poziom subskrypcji                                                      |     Kanały      |    Korzyść    | Podlega odnowieniu? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, Retail |   Jeden rok    |    Yes     |
+|                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, Retail |   Jeden rok    |    Tak     |
 | Visual Studio Professional (standardowy, miesięczną w chmurze) programu Visual Studio Enterprise (miesięczne chmury, NFR<sup>1</sup>) |        Wszystkie        | Niedostępne |     Nie     |
 |                                          Visual Studio Test Professional (Standard)                                          |        Wszystkie        | Niedostępne |     Nie     |
 |                                                  Platformy MSDN (standardowa)                                                   |        Wszystkie        | Niedostępne |     Nie     |

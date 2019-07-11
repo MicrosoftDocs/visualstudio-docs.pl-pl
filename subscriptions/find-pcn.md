@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/29/2017
 ms.topic: conceptual
 description: Dowiedz się, jak znaleźć Twoje publicznego numeru klienta (PCN) lub Numer autoryzacyjny
-searchscope: VS Subscription
-ms.openlocfilehash: b24654828cb0e44d6e064c01825feaaaff4558b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa9c10548f13094ab6f2c0959e8996cb308015f2
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946132"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783504"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Jak znaleźć Moje "Publiczny numer klienta" (PCN) lub Numer autoryzacyjny?
 

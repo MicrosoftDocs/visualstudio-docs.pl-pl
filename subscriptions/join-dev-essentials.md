@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 02/13/2018
 ms.topic: conceptual
 description: Informacje na temat programu Visual Studio Dev Essentials i jak się zarejestrować.
-searchscope: VS Subscription
-ms.openlocfilehash: 4dc900de5f20c48f683c0dc27f7c9645bd38fcc0
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 9a21a5821e07e5214de52b390a507474d38b6842
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033104"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785124"
 ---
 # <a name="visual-studio-dev-essentials"></a>Visual Studio Dev Essentials
 

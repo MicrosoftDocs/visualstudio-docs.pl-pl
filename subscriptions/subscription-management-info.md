@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/13/2018
 ms.topic: conceptual
 description: Więcej informacji dotyczących zarządzania subskrypcjami
-searchscope: VS Subscription
-ms.openlocfilehash: 8b5c0840c8ef3576b070e190302c111d84440f4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02f7dd98e183801a47b88759f817a20917997acb
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427497"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784814"
 ---
 # <a name="learn-about-subscription-management"></a>Dowiedz się więcej o zarządzaniu subskrypcjami
 

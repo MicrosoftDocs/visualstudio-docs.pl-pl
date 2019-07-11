@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści usługi Office 365, objęte niektóre subskrypcje programu Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 1ef768ea09e156f2fb60d2125303fd85f208adac
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032825"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784534"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Usługi Office 365 ProPlus w subskrypcji programu Visual Studio
 
@@ -52,7 +51,7 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Tak          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Yes          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                            |  Brak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |
