@@ -1,60 +1,59 @@
 ---
 title: IDebugSymbolProvider::GetNextAddress | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider::GetNextAddress
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: e1bf0798e0f49d9e7b2871c5601f966bc282b186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62421453"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Pobiera adres debugowania, występującego z adresu podanego debugowania w metodzie.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Składnia
-
-```cpp
-HRESULT GetNextAddress( 
-   IDebugAddress*  pAddress,
-   BOOL            fStatementOnly,
-   IDebugAddress** ppAddress
-);
-```
-
-```csharp
-int GetNextAddress( 
-   IDebugAddress     pAddress,
-   bool              fStatementOnly,
-   out IDebugAddress ppAddress
-);
-```
-
-#### <a name="parameters"></a>Parametry
- `pAddress`
-
- [in] Podany adres debugowania.
-
- `fStatementOnly`
-
- [in] W przypadku opcji TRUE ogranicza adresy debugowania do pojedynczej instrukcji.
-
- `ppAddress`
-
- [out] Zwraca następny adres debugowania.
-
-## <a name="return-value"></a>Wartość zwracana
- Zwraca prawidłową `HRESULT`, zazwyczaj S_OK.
-
-## <a name="see-also"></a>Zobacz też
-- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+Pobiera adres debugowania, występującego z adresu podanego debugowania w metodzie.  
+  
+## <a name="syntax"></a>Składnia  
+  
+```cpp#  
+HRESULT GetNextAddress(   
+   IDebugAddress*  pAddress,  
+   BOOL            fStatementOnly,  
+   IDebugAddress** ppAddress  
+);  
+```  
+  
+```csharp  
+int GetNextAddress(   
+   IDebugAddress     pAddress,  
+   bool              fStatementOnly,  
+   out IDebugAddress ppAddress  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametry  
+ `pAddress`  
+ [in] Podany adres debugowania.  
+  
+ `fStatementOnly`  
+ [in] W przypadku opcji TRUE ogranicza adresy debugowania do pojedynczej instrukcji.  
+  
+ `ppAddress`  
+ [out] Zwraca następny adres debugowania.  
+  
+## <a name="return-value"></a>Wartość zwracana  
+ Zwraca prawidłową `HRESULT`, zazwyczaj S_OK.  
+  
+## <a name="see-also"></a>Zobacz też  
+ [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
