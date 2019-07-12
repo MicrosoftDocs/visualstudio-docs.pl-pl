@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0df1be486da0b4a199c642e2318c0ed08f2b1eb8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402061"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64825079"
 ---
 # <a name="idiasymbolgetconsttype"></a>IDiaSymbol::get_constType
 Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika jest stałe.

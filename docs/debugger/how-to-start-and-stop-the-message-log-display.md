@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f1fd5a7b7951056f65604bdea67eddcc3e696da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906412"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64825013"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Instrukcje: Uruchamianie i zatrzymywanie wyświetlania dziennika komunikatów
 Gdy [widoku komunikatów](../debugger/messages-view.md) okno jest aktywne, **Rozpocznij rejestrowanie** lub **Zatrzymaj rejestrowanie** wyboru pojawia się w programie Spy ++ **wiadomości** menu i odpowiadające **Rozpocznij rejestrowanie** lub **Zatrzymaj rejestrowanie** przycisku paska narzędzi stanie się aktywny.

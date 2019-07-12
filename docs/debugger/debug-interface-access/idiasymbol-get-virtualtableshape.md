@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef18d56bb993ee5761bb59dcf5fb0758d44f4d61
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401380"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64822716"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 Pobiera interfejs symbol typu tabeli wirtualnej dla typu zdefiniowanego przez użytkownika.

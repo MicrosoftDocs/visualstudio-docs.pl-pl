@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4616751a6d0e78a1d27afb1e3553109cd82d3ec7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402197"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64793933"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
 Pobiera flagę określającą, czy symbol odwołuje się pod adresem kod.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac1547228be6312126bb48602e3a77fed0b3c25
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399931"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64811191"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 Pobiera flagę wskazującą, czy moduł został skompilowany przy użyciu [/hotpatch (Utwórz obraz Hotpatchable)](/cpp/build/reference/hotpatch-create-hotpatchable-image) przełącznika kompilatora.

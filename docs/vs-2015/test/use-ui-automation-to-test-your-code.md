@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695309"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825545"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,23 +297,23 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - **Edytor kodu:**
 
-    - Ręcznie Dodaj kod dla formantów w teście, zgodnie z opisem w [akcji kontrolki UI kodowania i właściwości](#actions) w tym temacie.
+  - Ręcznie Dodaj kod dla formantów w teście, zgodnie z opisem w [akcji kontrolki UI kodowania i właściwości](#actions) w tym temacie.
 
-    - Po utworzeniu kodowanego testu interfejsu użytkownika, można zmodyfikować, aby była opartych na danych. Aby uzyskać więcej informacji, zobacz [tworzenie ze kodowanego testu interfejsu użytkownika](../test/creating-a-data-driven-coded-ui-test.md).
+  - Po utworzeniu kodowanego testu interfejsu użytkownika, można zmodyfikować, aby była opartych na danych. Aby uzyskać więcej informacji, zobacz [tworzenie ze kodowanego testu interfejsu użytkownika](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać testu oczekiwania dla określonych zdarzeń, takiego jak okno pojawia się pasek postępu zniknąć i tak dalej. Aby to zrobić, należy dodać odpowiednią metodę UITestControl.WaitForControlXXX(). Aby uzyskać pełną listę dostępnych metod, zobacz [wprowadzania kodowanego interfejsu użytkownika testy oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Na przykład kodowane testy interfejsu użytkownika, która czeka na formant włączyć przy użyciu metody WaitForControlEnabled zobacz [instruktażu: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+  - Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać testu oczekiwania dla określonych zdarzeń, takiego jak okno pojawia się pasek postępu zniknąć i tak dalej. Aby to zrobić, należy dodać odpowiednią metodę UITestControl.WaitForControlXXX(). Aby uzyskać pełną listę dostępnych metod, zobacz [wprowadzania kodowanego interfejsu użytkownika testy oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Na przykład kodowane testy interfejsu użytkownika, która czeka na formant włączyć przy użyciu metody WaitForControlEnabled zobacz [instruktażu: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-    - Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HTML5, które są dołączone do programu Internet Explorer 9 i Internet Explorer 10. Aby uzyskać więcej informacji, zobacz [za pomocą kontrolek HTML5 w kodowanych testach interfejsu użytkownika](../test/using-html5-controls-in-coded-ui-tests.md).
+  - Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HTML5, które są dołączone do programu Internet Explorer 9 i Internet Explorer 10. Aby uzyskać więcej informacji, zobacz [za pomocą kontrolek HTML5 w kodowanych testach interfejsu użytkownika](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    - **Wskazówki dotyczące kodowania kodowanego testu interfejsu użytkownika:**
+  - **Wskazówki dotyczące kodowania kodowanego testu interfejsu użytkownika:**
 
-        - [Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)
+    - [Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)
 
-        - [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
+    - [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
 
-        - [Testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [Testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-        - [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="generatedCode"></a> Wygenerowany kod
  Po wybraniu **Generuj kod**, tworzonych jest kilka fragmentów kodu:

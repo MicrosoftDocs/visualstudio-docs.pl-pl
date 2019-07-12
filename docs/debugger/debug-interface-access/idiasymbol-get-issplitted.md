@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee91134997dad5f5361de6b07af1a99dfc420f5e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401247"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64794583"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 Pobiera flagę określającą, czy symbol danych został podzielony na agregacji lub kolekcji innych symboli; Kompilator traktuje jako osobne jednostki, symbole, nawet jeśli są one naprawdę częścią symbol większe.

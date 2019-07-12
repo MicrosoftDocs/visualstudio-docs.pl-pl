@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f6bd74400146e1c2ea98daf27d6d97fc639cc13
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346814"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825565"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
@@ -72,7 +72,7 @@ Wartości tych właściwości, określ nazwy folderów w obszarze `$(VCTargetsPa
 
 ### <a name="add-a-new-platform-toolset"></a>Dodaj nowy zestaw narzędzi platformy
 
-Aby dodać nowy zestaw narzędzi, na przykład "MyToolset" dla istniejącego platformy Win32, Utwórz *MyToolset* folderze `$(VCTargetsPath)`  *\\platform\\Win32\\ PlatformToolsets\\*i Utwórz *Toolset.props* i *Toolset.targets* w nim plików.
+Aby dodać nowy zestaw narzędzi, na przykład "MyToolset" dla istniejącego platformy Win32, Utwórz *MyToolset* folderze `$(VCTargetsPath)`  *\\platform\\Win32\\ PlatformToolsets\\* i Utwórz *Toolset.props* i *Toolset.targets* w nim plików.
 
 Każda nazwa folderu, w obszarze *PlatformToolsets* pojawia się w **właściwości projektu** okna dialogowego jako dostępne **zestawu narzędzi platformy** dla określonej platformy, jak pokazano poniżej:
 
@@ -82,7 +82,7 @@ Tworzenie podobnych *MyToolset* folderów i *Toolset.props* i *Toolset.targets* 
 
 ### <a name="add-a-new-platform"></a>Dodaj nową platformę
 
-Aby dodać nową platformę, na przykład "MyPlatform", Utwórz *MyPlatform* folderze `$(VCTargetsPath)`  *\\platform\\*i Utwórz  *Platform.default.props*, *Platform.props*, i *Platform.targets* w nim plików. Również utworzyć `$(VCTargetsPath)`  *\\platform\\*<strong><em>MyPlatform</em></strong>*\\PlatformToolsets\\*  folderze i utworzyć co najmniej jeden zestaw narzędzi w nim.
+Aby dodać nową platformę, na przykład "MyPlatform", Utwórz *MyPlatform* folderze `$(VCTargetsPath)`  *\\platform\\* i Utwórz  *Platform.default.props*, *Platform.props*, i *Platform.targets* w nim plików. Również utworzyć `$(VCTargetsPath)`  *\\platform\\* <strong><em>MyPlatform</em></strong> *\\PlatformToolsets\\*  folderze i utworzyć co najmniej jeden zestaw narzędzi w nim.
 
 Wszystkie nazwy folderów w obszarze *platform* folderu dla każdego `$(ApplicationType)` i `$(ApplicationTypeRevision)` pojawiają się w środowisku IDE jako dostępne **platformy** opcji dla projektu.
 
@@ -153,13 +153,13 @@ Mimo że zestaw narzędzi można zastąpić procesu całej kompilacji, zwykle po
 
 - `$(VCTargetsPath)`\\*Microsoft.CppCommon.targets*
 
-   Ten plik definiuje głównej części procesu kompilacji natywnej, a także importuje:
+  Ten plik definiuje głównej części procesu kompilacji natywnej, a także importuje:
 
-   - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
 
-   - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
+  - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -324,7 +324,7 @@ Pliki .tlog wiersza polecenia zawierają informacje dotyczące wierszy polecenia
 
 *Odczyt* .tlog plików (\*pliki.Read.\*. tlog) zawierają informacje dotyczące plików źródłowych i ich zależności.
 
-Daszek (**^**) na początku wiersza wskazuje co najmniej jedno źródło. Źródła, które współużytkują ten sam zależności oddzielonych pionowy pasek (**\|**).
+Daszek ( **^** ) na początku wiersza wskazuje co najmniej jedno źródło. Źródła, które współużytkują ten sam zależności oddzielonych pionowy pasek ( **\|** ).
 
 Pliki zależności są wyświetlane po źródeł, każdą w osobnym wierszu. Wszystkie nazwy plików są pełne ścieżki.
 
@@ -349,7 +349,7 @@ Nie jest wymagane do zapisu nazwy plików napisane wielkimi literami, ale jest w
 
 *Zapis* .tlog (\*.write.\*. plików tlog) połączenia źródeł i danych wyjściowych.
 
-Daszek (**^**) na początku wiersza wskazuje co najmniej jedno źródło. Wiele źródeł oddzielonych pionowy pasek (**\|**).
+Daszek ( **^** ) na początku wiersza wskazuje co najmniej jedno źródło. Wiele źródeł oddzielonych pionowy pasek ( **\|** ).
 
 Pliki wyjściowe, utworzony na podstawie źródła powinny być wymienione po źródeł, każdą w osobnym wierszu. Wszystkie nazwy plików muszą być pełnych ścieżek.
 
@@ -470,7 +470,7 @@ Pliki reguły muszą zostać dodane do `PropertyPageSchema` grupy elementów:
 
 Dokument CPS obsługuje inne wartości dla typu kontekstu, ale nie są one używane w projektach języka Visual C++.
 
-Jeśli reguła powinna być widoczna w więcej niż jednym kontekście, Użyj średników (**;**) do oddzielenia wartości kontekst, jak pokazano poniżej:
+Jeśli reguła powinna być widoczna w więcej niż jednym kontekście, Użyj średników ( **;** ) do oddzielenia wartości kontekst, jak pokazano poniżej:
 
 ```xml
 <PropertyPageSchema Include="$(MyFolder)\MyRule.xml">
@@ -588,7 +588,7 @@ Aktualizator używa tych kryteriów, aby zdecydować, czy lub nie można uaktual
 
 1. Właściwość `_UpgradePlatformToolsetFor_<safe_toolset_name>` jest zdefiniowana dla bieżącego zestawu narzędzi, a jego wartość nie jest równa bieżącego zestawu narzędzi.
 
-   W tych nazw właściwości  *\<safe_toolset_name >* reprezentuje nazwę zestawu narzędzi za pomocą wszystkie znaki inne niż alfanumeryczne, zastąpiona podkreśleniem (**\_**).
+   W tych nazw właściwości  *\<safe_toolset_name >* reprezentuje nazwę zestawu narzędzi za pomocą wszystkie znaki inne niż alfanumeryczne, zastąpiona podkreśleniem ( **\_** ).
 
 Po uaktualnieniu projektu uczestniczy w *przekierowania rozwiązania*. Aby uzyskać więcej informacji, zobacz [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2).
 
