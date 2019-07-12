@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977323"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852236"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Instrukcje: Korzystanie z zestawów SDK projektu MSBuild
 
@@ -56,7 +56,15 @@ Podczas obliczania wartości projektu [!INCLUDE[vstecmsbuild](../extensibility/i
     </Project>
     ```
 
-    Niejawne import jest dodawany do górnej i dolnej części projektu, zgodnie z powyższym opisem.  Format `Sdk` atrybut jest `Name[/Version]` gdzie wersja jest opcjonalne.  Na przykład można określić `My.Custom.Sdk/1.2.3`.
+    Niejawne import jest dodawany do górnej i dolnej części projektu, zgodnie z powyższym opisem.
+    
+    Aby określić określoną wersję zestawu SDK można dołączyć ją do `Sdk` atrybutu:
+
+    ```xml
+    <Project Sdk="My.Custom.Sdk/1.2.3">
+        ...
+    </Project>
+    ```
 
     > [!NOTE]
     > Ta funkcja jest obecnie jedynym sposobem obsługiwanych, aby odwoływać się do projektu zestawu SDK w programie Visual Studio dla komputerów Mac.

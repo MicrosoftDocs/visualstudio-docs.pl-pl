@@ -1,6 +1,6 @@
 ---
 title: Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388548"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852169"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji proste — wartości skalarnych, a wskaźniki do struktur i klas — i większość typów buforów.  Ten artykuł zawiera również typowe wzorce użycia na potrzeby adnotacji. Dla dodatkowych adnotacji that are related to funkcji, zobacz [zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
@@ -285,6 +288,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
      Wskaźnik do tablicy o zakończony znakiem null, dla której wyrażenie `p`  -  `_Curr_` (oznacza to, że `p` minus `_Curr_`) jest definiowany przez odpowiedni język standardowych.  Elementy w programach starszych niż program `p` nie trzeba mieć prawidłowy stan wstępnego i musi być w stanie po prawidłowy.
 
 ## <a name="optional-pointer-parameters"></a>Parametry opcjonalne wskaźnika
+
  Kiedy zawiera adnotację parametru wskaźnika `_opt_`, oznacza to, że parametr może mieć wartości null. W przeciwnym razie adnotacja wykonuje taka sama jak wersja, która nie obejmuje `_opt_`. W tym miejscu znajduje się lista `_opt_` wariantów adnotacji parametru wskaźnika:
 
 ||||
@@ -384,6 +388,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
    Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametr przekazany przez odwołanie.
 
 ## <a name="output-reference-parameters"></a>Parametry odwołania danych wyjściowych
+
  Zazwyczaj jest używane, parametru odwołania dla parametrów wyjściowych.  Dla parametrów odwołania proste dane wyjściowe — na przykład `int&`—`_Out_` zapewnia semantykę, poprawna.  Jednak, gdy wartość wyjściowa jest wskaźnikiem — na przykład `int *&`— adnotacje równoważne wskaźnika, takich jak `_Outptr_ int **` nie zapewniają poprawne semantyki.  Aby zwięźle wyrazić semantykę parametrów odwołania danych wyjściowych dla typów wskaźnika, należy użyć tych złożonych adnotacji:
 
  **Adnotacje i opisów**
@@ -445,13 +450,62 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
      Wynik musi być w stanie po prawidłowy, ale może mieć wartości null w stanie post. Wskazuje nieprawidłowy bufor `s` bajtów prawidłowe elementy.
 
 ## <a name="return-values"></a>Wartości zwrócone
+
  Wartość zwracana przez funkcję przypomina `_Out_` parametru, ale jest na innym poziomie de-reference i nie trzeba wziąć pod uwagę koncepcji wskaźnik do wyniku.  Dla następujących adnotacji, wartość zwracana jest obiektem adnotacjami — skalarną, wskaźnik do struktury lub wskaźnik do buforu. Adnotacje mieć tą samą semantyką jako odpowiednie `_Out_` adnotacji.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>Parametry ciągu formatu
+
+- `_Printf_format_string_` Wskazuje, że parametr jest do użytku w ciągu formatu `printf` wyrażenia.
+
+     **Przykład**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` Wskazuje, że parametr jest do użytku w ciągu formatu `scanf` wyrażenia.
+
+     **Przykład**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` Wskazuje, że parametr jest do użytku w ciągu formatu `scanf_s` wyrażenia.
+
+     **Przykład**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>Inne typowe adnotacji
+
  **Adnotacje i opisów**
 
 - `_In_range_(low, hi)`
@@ -490,6 +544,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Powiązane zasoby
+
  [Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Zobacz też

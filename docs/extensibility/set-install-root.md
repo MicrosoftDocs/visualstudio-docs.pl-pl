@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17bc1936d077e379ff9eca7460fab1a3a37722
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338409"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852204"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Instalowanie poza folderem rozszerzeń
+# <a name="install-outside-the-extensions-folder"></a>Instalowanie poza folderem rozszerzeń
 
-Począwszy od programu Visual Studio 2017 i VSIX v3 (wersja 3) jest teraz obsługiwane Instalowanie rozszerzenia zasobów poza folderem rozszerzeń. Obecnie następujących lokalizacji są włączone jako lokalizacje prawidłowej instalacji (gdzie [INSTALLDIR] jest mapowany do katalogu instalacyjnego w wystąpieniu programu Visual Studio):
+Począwszy od programu Visual Studio 2017 i rozszerzeniu VSIX v3 (wersja 3), rozszerzenie zasoby mogą być instalowane poza folderem rozszerzeń. Obecnie następujących lokalizacji są włączone jako lokalizacje prawidłowej instalacji (gdzie [INSTALLDIR] jest mapowany do katalogu instalacyjnego w wystąpieniu programu Visual Studio):
 
 * \MSBuild [INSTALLDIR]
 * [INSTALLDIR] \Xml\Schemas
@@ -25,9 +25,10 @@ Począwszy od programu Visual Studio 2017 i VSIX v3 (wersja 3) jest teraz obsłu
 * \Licenses [INSTALLDIR]
 * \Common7\IDE\ReferenceAssemblies [INSTALLDIR]
 * \Common7\IDE\RemoteDebugger [INSTALLDIR]
-* \Common7\IDE\VC\VCTargets [INSTALLDIR]
+* \Common7\IDE\VC\VCTargets [INSTALLDIR] (tylko obsługiwane w programie Visual Studio 2017; przestarzałe 2019 usługi Visual Studio lub nowszy)
 
->**Uwaga:** VSIX format nie umożliwiają instalowanie poza strukturą folderu instalacji programu VS.
+> [!NOTE]
+> VSIX format nie zezwala na instalowanie poza strukturą folderu instalacji programu Visual Studio. 
 
 W celu obsługi instalacji tych katalogów, VSIX musi być zainstalowany "dla wystąpienia na komputerze". Tę można włączyć, zaznaczając pole wyboru "wszystkich użytkowników" w Projektancie extension.vsixmanifest:
 
@@ -49,7 +50,8 @@ Spowoduje to dodanie niektórych metadanych do odpowiednich `ProjectReference` w
  </ProjectReference>
 ```
 
->**Uwaga:** Możesz bezpośrednio edytować plik .csproj, jeśli użytkownik sobie tego życzy.
+> [!NOTE]
+> Możesz bezpośrednio edytować plik .csproj, jeśli użytkownik sobie tego życzy.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Jak ustawić podrzędną w ramach InstallRoot
 

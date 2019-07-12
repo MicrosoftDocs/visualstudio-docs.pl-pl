@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852095"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852224"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Błędy i ostrzeżenia debugowania — Okna dialogowe
 Poniżej przedstawiono błędy i ostrzeżenia oknach dialogowych, które można napotkać podczas debugowania aplikacji.
@@ -37,6 +37,8 @@ Poniżej przedstawiono błędy i ostrzeżenia oknach dialogowych, które można 
  [Nie można zmienić wartości, okno dialogowe](../debugger/cannot-change-value-dialog-box.md)
 
  [Debuger nie może wyświetlić kodu źródłowego lub dezasemblacji](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+ 
+ [Debuger usług uruchomionych za mało pamięci](../debugger/error-debugger-services-no-memory.md)
 
  [Plik wykonywalny sesji debugowania, okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md)
 
