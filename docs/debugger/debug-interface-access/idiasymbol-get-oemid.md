@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91d6097fd558ee3fd4e61485eb53cd25a0b7c6a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399252"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64796042"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 Pobiera wartość Identyfikatora producenta sprzętu (OEM) dla symbolu.
