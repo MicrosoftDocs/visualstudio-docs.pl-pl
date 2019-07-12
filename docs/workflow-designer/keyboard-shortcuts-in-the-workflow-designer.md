@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2143b67297ba2e4bd2751054b789274595505cb3
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431888"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825508"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
 
@@ -79,11 +79,11 @@ Domyślnie w edytorze wyrażeń w Projektancie przepływu pracy, zastosowanie ma
 
 - Ponowne mapowanie skróty klawiaturowe dla następujących poleceń nie ma znaczenia. Domyślne skróty klawiaturowe można używać tylko dostępu do tych poleceń podczas edycji wyrażenia.
 
-   - Wytnij
-   - Kopiuj
-   - Wklej
-   - Zaznacz wszystko
-   - Cofnij
-   - Wykonaj ponownie
+  - Wytnij
+  - Kopiuj
+  - Wklej
+  - Zaznacz wszystko
+  - Cofnij
+  - Wykonaj ponownie
 
 - Aby ponownie zamapować skróty klawiaturowe dla poleceń edycji wyrażenia w Projektancie przepływu pracy w programie Visual Studio, należy edytować skróty w zakresie projektanta przepływów pracy. Zmiany wprowadzone w zakresie Edytor tekstu nie automatycznie dotyczą projektanta przepływów pracy. Jeśli chcesz ponownie zmapować skróty w obu miejscach, należy najpierw zastosować zmiany dwukrotnie (raz dla każdego zakresu).

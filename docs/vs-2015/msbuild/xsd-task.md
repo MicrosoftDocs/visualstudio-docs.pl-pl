@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114967"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826242"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ Opakowuje narzędzie definicji schematu XML (xsd.exe), które generuje pliki sch
   
      Opcjonalnie **ciąg** parametru.  
   
-     Lista opcji określonych w wierszu polecenia. Na przykład "*/option1 /option2 /option#*". Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez inne **XSD** parametru zadania.  
+     Lista opcji określonych w wierszu polecenia. Na przykład " */option1 /option2 /option#* ". Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez inne **XSD** parametru zadania.  
   
 - **GenerateFromSchema**  
   
-     Opcjonalnie **ciąg** parametru.  
-  
-     Określa typy, które są generowane na podstawie określonego schematu.  
-  
-     Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.  
-  
-    - **classes** - **/classes**  
-  
-    - **dataset** - **/dataset**  
+  Opcjonalnie **ciąg** parametru.  
+
+  Określa typy, które są generowane na podstawie określonego schematu.  
+
+  Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.  
+
+  - **classes** -  **/classes**  
+
+  - **dataset** -  **/dataset**  
   
 - **Język**  
   

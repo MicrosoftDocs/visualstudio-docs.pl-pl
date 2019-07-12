@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c470d5d4001238c9a803f0b6598fbedf9d346bc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936915"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824194"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy zależności: wskazówki
 
@@ -107,9 +107,9 @@ Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej arch
 |Usuń zależności, które nie powinny istnieć|Kliknij zależności, a następnie naciśnij klawisz **Usuń**.|
 |Zmień lub ogranicz kierunek zależności|Ustaw jego **kierunek** właściwości.|
 |Tworzenie nowych zależności|Użyj **zależności** i **zależność dwukierunkowa** narzędzia.<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, kliknij przycisk **wskaźnik** narzędzi lub naciśnij klawisz **ESC** klucza.|
-|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione zależności Namespace** właściwości. Użyj średnika (**;**) do oddzielenia przestrzeni nazw.|
-|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione przestrzenie nazw** właściwości. Użyj średnika (**;**) do oddzielenia przestrzeni nazw.|
-|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw w warstwie **wymagane przestrzenie nazw** właściwości. Użyj średnika (**;**) do oddzielenia przestrzeni nazw.|
+|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione zależności Namespace** właściwości. Użyj średnika ( **;** ) do oddzielenia przestrzeni nazw.|
+|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione przestrzenie nazw** właściwości. Użyj średnika ( **;** ) do oddzielenia przestrzeni nazw.|
+|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw w warstwie **wymagane przestrzenie nazw** właściwości. Użyj średnika ( **;** ) do oddzielenia przestrzeni nazw.|
 
 ### <a name="Improving"></a> Zwiększanie struktury kodu
 
@@ -141,7 +141,7 @@ Aby pomóc Ci zidentyfikować warstw i zależności lub wdasz z członkami zespo
 
 - Zmień kolory warstw i zależności.
 
-    - Wybierz jeden lub więcej warstw i zależności, kliknij prawym przyciskiem myszy, a następnie kliknij **właściwości**. W **właściwości** oknie edycji **kolor** właściwości.
+  - Wybierz jeden lub więcej warstw i zależności, kliknij prawym przyciskiem myszy, a następnie kliknij **właściwości**. W **właściwości** oknie edycji **kolor** właściwości.
 
 ## <a name="Validate"></a> Sprawdź poprawność kodu na podstawie diagramu
 

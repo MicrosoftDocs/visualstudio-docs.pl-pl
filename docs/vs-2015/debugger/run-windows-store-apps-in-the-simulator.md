@@ -14,14 +14,14 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683544"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823846"
 ---
-# <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie Windows Store apps w symulatorze
+# <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie aplikacji ze Sklepu Windows w symulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komputerowa, która symuluje aplikacji Windows Store. Można uruchamiać aplikacje i symulacji typowe touch i obrót zdarzeń na komputerze deweloperskim. Możesz również, rozmiar ekranu fizycznego i rozwiązania, który chcesz emulować i symulowanie właściwości połączenia sieciowego.  
@@ -55,30 +55,30 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
  Ustawia tryb interakcji do ściśnięcie i powiększania gestów dwóch palców.  
   
 - ![Cel finger symulatora dwóch](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
-  
-    - Ikonę docelową double wskazuje lokalizację, z dwoma palcami na ekranie urządzenia.  
-  
-    - Przesuń mysz, aby umieścić ikony na obiekcie na ekranie urządzenia.  
-  
-    - Obrót kółkiem myszy do tyłu lub do przodu, aby zmienić symulowane odległość między dwoma palcami przed ściśnięcie lub powiększenia.  
-  
+
+  - Ikonę docelową double wskazuje lokalizację, z dwoma palcami na ekranie urządzenia.  
+
+  - Przesuń mysz, aby umieścić ikony na obiekcie na ekranie urządzenia.  
+
+  - Obrót kółkiem myszy do tyłu lub do przodu, aby zmienić symulowane odległość między dwoma palcami przed ściśnięcie lub powiększenia.  
+
 - ![Ściśnięcie, powiększania i obracania elementów docelowych](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
-  
-    - Naciśnij przycisk z lewej strony i Obróć koło z poprzednimi wersjami (w stronę ty) aby powiększyć (uszczypnięcia).  
-  
-    - Naciśnij przycisk z lewej strony i obrót kółkiem myszy do przodu (od siebie), aby pomniejszyć (Powiększenie).  
+
+  - Naciśnij przycisk z lewej strony i Obróć koło z poprzednimi wersjami (w stronę ty) aby powiększyć (uszczypnięcia).  
+
+  - Naciśnij przycisk z lewej strony i obrót kółkiem myszy do przodu (od siebie), aby pomniejszyć (Powiększenie).  
   
 ## <a name="object-rotation"></a>Obracanie obiektu  
  **Obróć emulacji dotykowej** przycisk ustawia tryb interakcji gestów obrotu, używając dwóch palców.  
   
 - Przesuń mysz, aby umieścić ikony na obiekcie na ekranie urządzenia.  
   
-    - Obrót kółkiem myszy do tyłu lub do przodu, aby zmienić orientację symulowane dwóch palców przed obracania obiektu.  
-  
+  - Obrót kółkiem myszy do tyłu lub do przodu, aby zmienić orientację symulowane dwóch palców przed obracania obiektu.  
+
 - Naciśnij przycisk z lewej strony i Obróć koło z poprzednimi wersjami (w stronę ty) aby obrócić obiekt przeciwnie do ruchu wskazówek zegara. Obracając kółkiem myszy jedną z ikon dwóch docelowej obraca się wokół drugiego, aby wskazać względne obrotu.  
-  
-    - Naciśnij przycisk z lewej strony i obrót kółkiem myszy do przodu (od siebie), aby obrócić obiekt z ruchem wskazówek zegara.  
-  
+
+  - Naciśnij przycisk z lewej strony i obrót kółkiem myszy do przodu (od siebie), aby obrócić obiekt z ruchem wskazówek zegara.  
+
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Włączanie lub wyłączanie zawsze najważniejsze tryb  
  Możesz ustawić okno symulatora, aby być zawsze na wierzchu. **Oknie Przełącz** przycisku Włącza lub wyłącza **zawsze na wierzchu** tryb okno symulatora.  
   

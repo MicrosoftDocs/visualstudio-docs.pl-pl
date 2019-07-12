@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7527cb029374ae8246c827b057800b751c377d12
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 098aa9499dd4c1073377ed6aa5e8fa2a6fb37ca8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327838"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823869"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik testowania wtyczek kontroli kodu źródłowego
 Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli źródła przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Rozbudowane przegląd typowych obszarów, testowania, a także niektórych bardziej skomplikowanych obszarów, które może być problematyczne, jest dostępna. W tym omówieniu nie stanowi wyczerpującej listy przypadków testowych.
@@ -53,43 +53,43 @@ Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli �
 
 - [Obszar testowy 1: dodawanie do kontroli kodu źródłowego i otwieranie z poziomu kontroli kodu źródłowego](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    - Wielkość 1a: Dodaj rozwiązanie do kontroli źródła
+  - Wielkość 1a: Dodaj rozwiązanie do kontroli źródła
 
-    - Wielkość 1b: Otwórz rozwiązanie z kontroli źródła
+  - Wielkość 1b: Otwórz rozwiązanie z kontroli źródła
 
-    - Przypadek 1c: Dodaj rozwiązanie z kontroli źródła
+  - Przypadek 1c: Dodaj rozwiązanie z kontroli źródła
 
 - [Obszar testowy 2: pobieranie z kontroli kodu źródłowego](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
 - [Obszar testowy 3: wyewidencjonowywanie i cofanie wyewidencjonowania](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    - Przypadek 3: Zapoznaj się z / Cofnij wyewidencjonowanie
+  - Przypadek 3: Zapoznaj się z / Cofnij wyewidencjonowanie
 
-    - Wielkości liter 3a: Wyewidencjonuj
+  - Wielkości liter 3a: Wyewidencjonuj
 
-    - Wielkość 3b: Wyewidencjonowanie bez połączenia
+  - Wielkość 3b: Wyewidencjonowanie bez połączenia
 
-    - Przypadek 3c: Edytuj zapytanie/zapytanie Zapisz (QEQS)
+  - Przypadek 3c: Edytuj zapytanie/zapytanie Zapisz (QEQS)
 
-    - Zamierzone, Zapisz 3d: Dyskretnej wyewidencjonowania
+  - Zamierzone, Zapisz 3d: Dyskretnej wyewidencjonowania
 
-    - Wielkość 3e: Cofnij wyewidencjonowanie
+  - Wielkość 3e: Cofnij wyewidencjonowanie
 
 - [Obszar testowy 4: ewidencjonowanie](../../extensibility/internals/test-area-4-check-in.md)
 
-    - Wielkość 4a: Zmodyfikowane elementy
+  - Wielkość 4a: Zmodyfikowane elementy
 
-    - Wielkość 4b: Trwa dodawanie plików
+  - Wielkość 4b: Trwa dodawanie plików
 
-    - W przypadku 4c: Dodawanie projektów
+  - W przypadku 4c: Dodawanie projektów
 
 - [Obszar testowy 5: zmiana kontroli kodu źródłowego](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    - Wielkość 5a: powiązania
+  - Wielkość 5a: powiązania
 
-    - Wielkość 5b: Usuń powiązanie
+  - Wielkość 5b: Usuń powiązanie
 
-    - W przypadku 5c: ponowne wiązanie
+  - W przypadku 5c: ponowne wiązanie
 
 - [Obszar testowy 6: usuwanie](../../extensibility/internals/test-area-6-delete.md)
 
@@ -97,9 +97,9 @@ Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli �
 
 - [Obszar testowy 8: przełączanie wtyczki](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    - 8a przypadków: Automatyczna zmiana
+  - 8a przypadków: Automatyczna zmiana
 
-    - 8b przypadków: Oparte na rozwiązaniach zmiany
+  - 8b przypadków: Oparte na rozwiązaniach zmiany
 
 ## <a name="see-also"></a>Zobacz też
 - [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)

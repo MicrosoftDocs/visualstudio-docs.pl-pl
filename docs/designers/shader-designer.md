@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893017"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823868"
 ---
 # <a name="shader-designer"></a>Shader Designer
 
@@ -52,7 +52,7 @@ Ta sekcja zawiera opis sposobu dodawania modułu cieniującego DGSL do projektu 
 
 2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu C++, do którego chcesz dodać programu do cieniowania, a następnie wybierz **Dodaj** > **nowy element**.
 
-3. W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz pozycję **wizualny wykres modułu cieniującego (.dgsl)**.
+3. W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz pozycję **wizualny wykres modułu cieniującego (.dgsl)** .
 
    > [!NOTE]
    > Jeśli nie widzisz **grafiki** kategorii **Dodaj nowy element** okna dialogowego, a **obrazów i modeli 3W edytory** zainstalowany składnik, graficzne elementy nie są obsługiwane. dla danego typu projektu.
@@ -109,17 +109,17 @@ Użyj **wybierz** tryb do dodawania, usuwania, zmienić położenie, łączenie 
 
 - Oto jak:
 
-   - Aby dodać węzła do wykresu, wybierz ją w **przybornika** i przenieś go do powierzchni projektowej.
+  - Aby dodać węzła do wykresu, wybierz ją w **przybornika** i przenieś go do powierzchni projektowej.
 
-   - Aby usunąć węzeł z wykresu, wybierz ją, a następnie naciśnij klawisz **Usuń**.
+  - Aby usunąć węzeł z wykresu, wybierz ją, a następnie naciśnij klawisz **Usuń**.
 
-   - Aby zmienić położenie węzeł, zaznacz ją, a następnie przenieś go do nowej lokalizacji.
+  - Aby zmienić położenie węzeł, zaznacz ją, a następnie przenieś go do nowej lokalizacji.
 
-   - Aby połączyć z dwoma węzłami, Przenieś terminalu danych wyjściowych z jednym węzłem do terminal wejścia innego węzła. Może być połączona tylko terminale, które mają niezgodne typy. Linię między terminali Pokazuje połączenia.
+  - Aby połączyć z dwoma węzłami, Przenieś terminalu danych wyjściowych z jednym węzłem do terminal wejścia innego węzła. Może być połączona tylko terminale, które mają niezgodne typy. Linię między terminali Pokazuje połączenia.
 
-   - Aby usunąć połączenie, w menu skrótów dla jednej z połączonych terminali, wybierz **Przerwij linki**.
+  - Aby usunąć połączenie, w menu skrótów dla jednej z połączonych terminali, wybierz **Przerwij linki**.
 
-   - Aby skonfigurować właściwości węzła, wybierz węzeł, a następnie w **właściwości** okna, określ nowe wartości właściwości.
+  - Aby skonfigurować właściwości węzła, wybierz węzeł, a następnie w **właściwości** okna, określ nowe wartości właściwości.
 
 ### <a name="preview-shaders"></a>Programy do cieniowania (wersja zapoznawcza)
 
@@ -168,7 +168,7 @@ Aby obrócić kształt, naciśnij i przytrzymaj **Alt**, a następnie wybrać do
 
 Zanim użyjesz modułu cieniującego w swojej aplikacji, należy go wyeksportować w formacie, który rozumie DirectX.
 
-Programy do cieniowania można wyeksportować jako kod źródłowy języka HLSL lub kodu bajtowego skompilowanego modułu cieniującego. Kod źródłowy języka HLSL jest eksportowany do pliku tekstowego, który ma *.hlsl* rozszerzenie nazwy pliku. Kod bajtowy programu do cieniowania można albo pierwotne plik binarny, który został wyeksportowany *.cso* rozszerzenie nazwy pliku lub do nagłówka C++ (*.h*) plików, które koduje kodu bajtowego programu cieniującego w tablicy.
+Programy do cieniowania można wyeksportować jako kod źródłowy języka HLSL lub kodu bajtowego skompilowanego modułu cieniującego. Kod źródłowy języka HLSL jest eksportowany do pliku tekstowego, który ma *.hlsl* rozszerzenie nazwy pliku. Kod bajtowy programu do cieniowania można albo pierwotne plik binarny, który został wyeksportowany *.cso* rozszerzenie nazwy pliku lub do nagłówka C++ ( *.h*) plików, które koduje kodu bajtowego programu cieniującego w tablicy.
 
 Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [jak: Eksport cieniowania](../designers/how-to-export-a-shader.md).
 
@@ -182,8 +182,8 @@ Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania
 |Zaznacz wszystkie|**Ctrl**+**A**|
 |Usuń bieżące zaznaczenie|**Delete**|
 |Anuluj bieżące zaznaczenie|**Znak ucieczki** (**Esc**)|
-|Powiększanie|**CTRL**+**kółkiem myszy do przodu**<br /><br /> Znak plus (**+**)|
-|Pomniejszanie|**CTRL**+**obrót kółkiem myszy do tyłu**<br /><br /> Znak minus (**-**)|
+|Powiększanie|**CTRL**+**kółkiem myszy do przodu**<br /><br /> Znak plus ( **+** )|
+|Pomniejszanie|**CTRL**+**obrót kółkiem myszy do tyłu**<br /><br /> Znak minus ( **-** )|
 |Przesuń w górę powierzchni projektowej|**Obrót kółkiem myszy do tyłu**<br /><br /> **PageDown**|
 |Przesuń w dół na powierzchnię projektową|**Obrót kółkiem myszy do przodu**<br /><br /> **PageUp**|
 |Przesuń w lewo powierzchni projektowej|**SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **Obrót kółkiem myszy w lewo**<br /><br /> **Shift**+**PageDown**|

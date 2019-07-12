@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2eb167a323371c3503429f56bc1537a95f3f86b7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432588"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822077"
 ---
 # <a name="shader-designer"></a>Shader Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz dodać cieniowanie tak, aby, a następnie wybierz **Dodaj**, **nowy element**.  
   
-2. W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz pozycję **wizualny wykres modułu cieniującego (.dgsl)**.  
+2. W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz pozycję **wizualny wykres modułu cieniującego (.dgsl)** .  
   
 3. Określ **nazwa** pliku programu do cieniowania i **lokalizacji** której ma zostać utworzony.  
   
@@ -93,17 +93,17 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 - Oto jak:  
   
-    - Aby dodać węzła do wykresu, wybierz ją w **przybornika** i przenieś go do powierzchni projektowej.  
-  
-    - Aby usunąć węzeł z wykresu, zaznacz ją i naciśnij klawisz Delete.  
-  
-    - Aby zmienić położenie węzeł, zaznacz ją, a następnie przenieś go do nowej lokalizacji.  
-  
-    - Aby połączyć z dwoma węzłami, Przenieś terminalu danych wyjściowych z jednym węzłem do terminal wejścia innego węzła. Może być połączona tylko terminale, które mają niezgodne typy. Linię między terminali Pokazuje połączenia.  
-  
-    - Aby usunąć połączenie, w menu skrótów dla jednej z połączonych terminali, wybierz **Przerwij linki**.  
-  
-    - Aby skonfigurować właściwości węzła, wybierz węzeł, a następnie w **właściwości** okna, określ nowe wartości właściwości.  
+  - Aby dodać węzła do wykresu, wybierz ją w **przybornika** i przenieś go do powierzchni projektowej.  
+
+  - Aby usunąć węzeł z wykresu, zaznacz ją i naciśnij klawisz Delete.  
+
+  - Aby zmienić położenie węzeł, zaznacz ją, a następnie przenieś go do nowej lokalizacji.  
+
+  - Aby połączyć z dwoma węzłami, Przenieś terminalu danych wyjściowych z jednym węzłem do terminal wejścia innego węzła. Może być połączona tylko terminale, które mają niezgodne typy. Linię między terminali Pokazuje połączenia.  
+
+  - Aby usunąć połączenie, w menu skrótów dla jednej z połączonych terminali, wybierz **Przerwij linki**.  
+
+  - Aby skonfigurować właściwości węzła, wybierz węzeł, a następnie w **właściwości** okna, określ nowe wartości właściwości.  
   
 ### <a name="previewing-shaders"></a>Wyświetlanie podglądu programów do cieniowania  
  Aby lepiej zrozumieć, jak cieniowania pojawi się w aplikacji, można skonfigurować, jak Twoja efekt jest przeglądany. Zbliżenie aplikacji, można wybrać jedną z kilku kształtów do renderowania, skonfiguruj tekstury i inne parametry materiału, Włącz animacji opartych na czasie efekty i zbadać pod różnymi kątami w wersji zapoznawczej.  

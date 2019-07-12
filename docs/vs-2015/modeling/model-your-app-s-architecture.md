@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9e5de52fbe15049f4acb3dacf236bfe9f4ecc92
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417778"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823263"
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -244,9 +244,9 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
 - Model głównych składników oraz ich wzajemne relacje. Może to być klasy lub składniki i interfejsy, za pomocą skojarzeń i zależności między nimi. Elementy zazwyczaj można podzielić na dwie kategorie:  
   
-    - Elementy, które muszą być replikowane przez dewelopera w każdej części kodu, w których wzorzec jest używany. Typy szablonów służy do opisywania tych. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
-  
-    - Elementy opisujące klasy framework, które należy używać projektanta.  
+  - Elementy, które muszą być replikowane przez dewelopera w każdej części kodu, w których wzorzec jest używany. Typy szablonów służy do opisywania tych. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
+
+  - Elementy opisujące klasy framework, które należy używać projektanta.  
   
 - Model interakcji między częściami, za pomocą diagramów sekwencji lub działania.  
   

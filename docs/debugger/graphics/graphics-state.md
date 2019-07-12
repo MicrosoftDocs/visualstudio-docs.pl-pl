@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d75dbc03d95b0460c0adc5c62c2a831ac7271e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388616"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823774"
 ---
 # <a name="graphics-state"></a>Stan grafiki
 Okna stanu grafiki programu Visual Studio diagnostyki ułatwia zrozumienie stanu grafiki, który jest aktywny w momencie bieżącego zdarzenia, takie jak wywołania rysowania.
@@ -36,11 +36,11 @@ Okna stanu grafiki programu Visual Studio diagnostyki ułatwia zrozumienie stanu
 
 - W oknie stanu w prawym górnym lewym tuż poniżej tytułu wybierz przycisk, który odpowiada styl widoku stanu, którego chcesz użyć.
 
-    - **Pokaż widok stanu danych wejściowych interfejsu API**
+  - **Pokaż widok stanu danych wejściowych interfejsu API**
 
-    - **Pokaż widok stanu logicznego**
+  - **Pokaż widok stanu logicznego**
 
-    - **Pokaż widok stanu Pinned**
+  - **Pokaż widok stanu Pinned**
 
 > [!IMPORTANT]
 > Trzeba przypiąć stanu w **Pokaż interfejsu API danych wejściowych w stanie** lub **stanu logicznego Pokaż** widoków dla niego będzie wyświetlana w **Pokaż przypięte widok stanu**.

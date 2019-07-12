@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d2fd53b3dc1237e9d31daf0e80fff3ddf5f1475
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982632"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821951"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 Wymagania i modele architektury można użyć, aby ułatwić organizowanie testów systemu i jego składników. Praktyka ta pomaga zagwarantować, że testowania wymagań które są ważne dla użytkowników i innych zainteresowanych stron i pomaga szybko aktualizować testów, gdy zmienią się wymagania. Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], można także utrzymać łącza między modele i testy.
@@ -46,9 +46,9 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
 
 - Podstawowy oddzielnych testów na oddzielnych klauzul postcondition. Na przykład utworzyć osobne testów do powiadamiania restauracji kolejności i do celów płatności odbiorcy. Ten rozdział ma następujące zalety:
 
-    - Zmiany w różnych aspektów wymagania często występują, niezależnie od siebie. Dzieląc testy na różnych aspektach w ten sposób, możesz ułatwić aktualizowanie testów, gdy zmienią się wymagania.
+  - Zmiany w różnych aspektów wymagania często występują, niezależnie od siebie. Dzieląc testy na różnych aspektach w ten sposób, możesz ułatwić aktualizowanie testów, gdy zmienią się wymagania.
 
-    - Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.
+  - Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.
 
 - Podczas projektowania testy, należy oddzielić wybór danych testowych, od kodu lub skryptu, który określa, czy osiągnięte zostały postcondition. Na przykład może być testu z prostą funkcją arytmetyczne: Dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego należy projektować skryptu jako: Wybierz dane wejściowe mnożenia danych wyjściowych przez siebie i sprawdź, czy wynik jest oryginalne dane wejściowe. Ten styl umożliwia różne dane wejściowe testu bez wprowadzania zmian w głównej części testu.
 

@@ -8,12 +8,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bd51e99f59f22eb31252be2a41c3b3fb5e89f846
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c07fb0887ae01ec917b39f5d7537d5a78fb5a4c6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077254"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825358"
 ---
 # <a name="animations-for-visual-studio"></a>Animacje dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "60077254"
 
 - **Czas i szybkość są ważne** aby zapewnić szybki i fizyczne możesz też przejść:
 
-    - Ukończ animowane przejścia w ciągu pół sekundy (500 ms).
+  - Ukończ animowane przejścia w ciągu pół sekundy (500 ms).
 
-    - Animacje, które wystąpiłyby często konieczne Działaj wystarczająco szybko, że nie przerwań się przepływu pracy użytkownika.
+  - Animacje, które wystąpiłyby często konieczne Działaj wystarczająco szybko, że nie przerwań się przepływu pracy użytkownika.
 
-    - Animacje nie należy więc szybko lub jarring, jest trudny do zrozumienia, ale nie działa tak wolno fakt, że jeden cierpliwy przejścia zakończyć.
+  - Animacje nie należy więc szybko lub jarring, jest trudny do zrozumienia, ale nie działa tak wolno fakt, że jeden cierpliwy przejścia zakończyć.
 
-    - Użyj zmiennej czasu, aby podkreślić wagę. Na przykład podczas przechodzenia przez sekwencję elementów na diagramie klasy, szybkości za pomocą przejścia między elementami, a następnie spowolnić skoncentrować się na istotnych elementów.
+  - Użyj zmiennej czasu, aby podkreślić wagę. Na przykład podczas przechodzenia przez sekwencję elementów na diagramie klasy, szybkości za pomocą przejścia między elementami, a następnie spowolnić skoncentrować się na istotnych elementów.
 
 - **Użyj stopniowego ułatwianie nieliniowych** z jednego stanu do innego, co daje poczucie cicha i fizyczne przenoszenie
 
@@ -49,13 +49,13 @@ ms.locfileid: "60077254"
 
 - **Gdy są wyświetlane stan lub postęp** za pośrednictwem animacji:
 
-    - Zatrzymaj, przedstawiający toku ruchu, gdy nie jest przechodzenia do przodu bazowego procesu.
+  - Zatrzymaj, przedstawiający toku ruchu, gdy nie jest przechodzenia do przodu bazowego procesu.
 
-    - Rozróżnia nieokreślony procesów z określania procesów.
+  - Rozróżnia nieokreślony procesów z określania procesów.
 
-    - Sprawdź, czy animacja ma do zidentyfikowania stanów zakończenia i błędów.
+  - Sprawdź, czy animacja ma do zidentyfikowania stanów zakończenia i błędów.
 
-    - Należy zminimalizować użycie animacji efekt, które informacje o stanie i upewnij się, że mają one prawdziwych wartości, zapewniając dodatkowe informacje rzeczywistego użycia. Przykłady obejmują zmiany stanu przejściowego i zagrożeń
+  - Należy zminimalizować użycie animacji efekt, które informacje o stanie i upewnij się, że mają one prawdziwych wartości, zapewniając dodatkowe informacje rzeczywistego użycia. Przykłady obejmują zmiany stanu przejściowego i zagrożeń
 
 #### <a name="do-not"></a>Nie:
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 334898fe9bb6ec5a7dcd84e081f99994e18ccb89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2b6029002e62f5b13f5fc40bc24f817364c148
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565163"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821661"
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnianie plików mdf
 
@@ -95,9 +95,9 @@ Można również zmodyfikować połączenie programu SQL Server Express do użyc
 
 - W programie Visual Studio Otwórz projekt bez jego uaktualnieniem.
 
-    - Aby uruchomić projekt, wybierz **F5** klucza.
+  - Aby uruchomić projekt, wybierz **F5** klucza.
 
-    - Aby edytować bazy danych, otwórz *.mdf* w pliku **Eksploratora rozwiązań**i rozwiń węzeł w **Eksploratora serwera** do pracy z bazą danych.
+  - Aby edytować bazy danych, otwórz *.mdf* w pliku **Eksploratora rozwiązań**i rozwiń węzeł w **Eksploratora serwera** do pracy z bazą danych.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Aby program SQL Server Express domyślny aparat bazy danych
 

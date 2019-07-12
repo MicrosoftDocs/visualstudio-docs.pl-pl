@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f12a4071a15372da7c71836ae303e40d6858f3f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933604"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824427"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -140,14 +140,14 @@ Co ważne ustawienie może być konieczne ustawienie jest `FUNCTIONS_EXTENSION_V
 ## <a name="available-function-templates"></a>Szablony z dostępnych funkcji
 
 - **Wyzwalacz usługi GitHub** — reagowanie na zdarzenia występujące w repozytoriach usługi GitHub. Aby uzyskać więcej informacji, zobacz [artykułu usługi Azure Functions w witrynie GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Twórca komentarza usługi GitHub — ta funkcja będzie działać, gdy odbierze element webhook usługi GitHub dla problemu lub żądania ściągnięcia i doda komentarz.
-    - Element WebHook usługi GitHub — będzie można uruchomić tej funkcji, gdy odbierze element webhook usługi GitHub.
+  - Twórca komentarza usługi GitHub — ta funkcja będzie działać, gdy odbierze element webhook usługi GitHub dla problemu lub żądania ściągnięcia i doda komentarz.
+  - Element WebHook usługi GitHub — będzie można uruchomić tej funkcji, gdy odbierze element webhook usługi GitHub.
 
 - **HTTP** — wyzwalanie wykonywania kodu za pomocą żądania HTTP. Istnieją jawne szablonów dla następujących wyzwalaczy HTTP:
-    - Wyzwalacz http
-    - HTTP GET CRUD
-    - CRUD POST protokołu HTTP
-    - Wyzwalacz protokołu HTTP z parametrami
+  - Wyzwalacz http
+  - HTTP GET CRUD
+  - CRUD POST protokołu HTTP
+  - Wyzwalacz protokołu HTTP z parametrami
 
 - **Czasomierz** — wykonywanie oczyszczania lub innych zadań wsadowych na ze wstępnie zdefiniowanym harmonogramem. Ten szablon ma dwa pola: nazwę i harmonogramu jest wyrażeniem CRON 6 pól. Aby uzyskać więcej informacji, zobacz [usługi Azure functions artykuł na czas](/azure/azure-functions/functions-create-scheduled-function)
 

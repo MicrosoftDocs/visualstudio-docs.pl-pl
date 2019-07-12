@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993487"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821940"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Instrukcje: Dodawanie obsługi przeciągania i upuszczania
 
@@ -126,13 +126,13 @@ Aby odnaleźć formaty, w których jest dostępne informacje o źródle przecią
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` — W tym właściwości niesie ze sobą wersje serializacji obiektów źródłowych zwykle w wielu formatach. Są najbardziej przydatne funkcje:
 
-    - diagramEventArgs.Data.GetDataFormats() — zawiera listę formatów, w których mogą dekodować przeciągany obiekt. Na przykład, jeśli użytkownik przeciąga pliku z pulpitu, dostępne formaty obejmują nazwę pliku ("`FileNameW`").
+  - diagramEventArgs.Data.GetDataFormats() — zawiera listę formatów, w których mogą dekodować przeciągany obiekt. Na przykład, jeśli użytkownik przeciąga pliku z pulpitu, dostępne formaty obejmują nazwę pliku ("`FileNameW`").
 
-    - `diagramEventArgs.Data.GetData(format)` -Dekoduje przeciągany obiekt w określonym formacie. Obiekt do odpowiedniego typu rzutowania. Na przykład:
+  - `diagramEventArgs.Data.GetData(format)` -Dekoduje przeciągany obiekt w określonym formacie. Obiekt do odpowiedniego typu rzutowania. Przykład:
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         Obiekty, takie jak odwołania do magistrali modelu ze źródła mogą również przesyłać w format niestandardowy. Aby uzyskać więcej informacji, zobacz [sposób wysyłania magistrali odwołania do modelu w operacji przeciągania i upuszczania](#to-send-an-object-from-a-source-dsl).
+    Obiekty, takie jak odwołania do magistrali modelu ze źródła mogą również przesyłać w format niestandardowy. Aby uzyskać więcej informacji, zobacz [sposób wysyłania magistrali odwołania do modelu w operacji przeciągania i upuszczania](#to-send-an-object-from-a-source-dsl).
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` — Użyj tej właściwości, jeśli użytkownicy mają przeciągnij elementy z języka DSL lub modelu UML. Element grupy prototypu zawiera jeden lub więcej obiektów, łączy i ich wartości właściwości. Służy również wklejanie i kiedy dodajesz element z przybornika. W prototyp obiektów i ich typy są identyfikowane przez identyfikator Guid. Na przykład ten kod umożliwia użytkownikowi przenoszenie elementów klas z Eksploratora modelu UML lub diagramu UML:
 
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)
-- [Wdrażanie rozwiązań dla języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md)
+- [Wdrażanie rozwiązań dla języka specyficznego dla domeny](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

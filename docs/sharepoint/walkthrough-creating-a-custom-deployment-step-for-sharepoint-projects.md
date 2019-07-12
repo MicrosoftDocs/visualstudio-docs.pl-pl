@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401094"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825632"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
   Podczas wdrażania projektu programu SharePoint, programu Visual Studio wykonuje szereg kroków wdrożenia w określonej kolejności. Program Visual Studio obejmuje wiele kroków wdrożenia wbudowanych, ale można także tworzyć własne.
@@ -29,9 +29,9 @@ ms.locfileid: "66401094"
 
 - Tworzenie rozszerzenia programu Visual Studio, który wykonuje dwa główne zadania:
 
-    - Rozszerzenie określa niestandardowego kroku wdrożenia do uaktualnienia rozwiązań programu SharePoint.
+  - Rozszerzenie określa niestandardowego kroku wdrożenia do uaktualnienia rozwiązań programu SharePoint.
 
-    - Rozszerzenie tworzy rozszerzenia projektu, który definiuje nową konfigurację wdrożenia, czyli zestaw kroków wdrażania, które są wykonywane dla danego projektu. Nowej konfiguracji wdrożenia zawiera krok wdrażania niestandardowego i kilka kroków wdrażania wbudowanych.
+  - Rozszerzenie tworzy rozszerzenia projektu, który definiuje nową konfigurację wdrożenia, czyli zestaw kroków wdrażania, które są wykonywane dla danego projektu. Nowej konfiguracji wdrożenia zawiera krok wdrażania niestandardowego i kilka kroków wdrażania wbudowanych.
 
 - Utwórz dwa niestandardowych poleceń programu SharePoint, które wywołuje zestawu rozszerzeń. Polecenia programu SharePoint są metody, które można wywoływać za pomocą zestawów rozszerzenie użycia interfejsów API w modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 

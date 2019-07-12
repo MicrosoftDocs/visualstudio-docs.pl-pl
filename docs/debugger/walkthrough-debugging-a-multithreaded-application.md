@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406940"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821588"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Wyświetl wątki w debugerze programu Visual Studio za pomocą okna wątki (C#, Visual Basic, C++)
 W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który debugujesz. Aby uzyskać szczegółowe instrukcje dotyczące sposobu używania **wątków** okna, zobacz [instruktażu: Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).
@@ -101,9 +101,9 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który d
 
 - Wykonaj jedną z następujących czynności:
 
-    - Kliknij dwukrotnie wątek.
+  - Kliknij dwukrotnie wątek.
 
-    - Kliknij prawym przyciskiem myszy wątku, a następnie wybierz pozycję **Przełącz do wątku**.
+  - Kliknij prawym przyciskiem myszy wątku, a następnie wybierz pozycję **Przełącz do wątku**.
 
 ## <a name="group-and-sort-threads"></a>Grupowanie i sortowanie wątków
  Grupowanie wątków nagłówek pojawia się w tabeli dla każdej grupy. Nagłówek zawiera opis grupy, takie jak **wątku roboczego** lub **wątki bez flagi**, a kontrolka drzewa. Wątki elementu członkowskiego każdej grupy pojawiają się pod nagłówkiem grupy. Jeśli chcesz ukryć wątków członka grupy, formant drzewa Aby zwinąć grupy.

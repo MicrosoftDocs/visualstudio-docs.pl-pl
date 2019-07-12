@@ -9,14 +9,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1ecb5981a8111f3fca013d3b5f115155ac7baf89
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690032"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824845"
 ---
-# <a name="working-with-elements-in-xaml-designer"></a>Praca z elementami w Projektancie XAML
+# <a name="working-with-elements-in-xaml-designer"></a>Praca z elementami w projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w XAML, w kodzie lub przy użyciu projektanta XAML. W tym temacie opisano sposób pracy z elementami w Projektancie XAML w programie Visual Studio lub Blend for Visual Studio.  
@@ -30,11 +30,11 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
   
 - W Projektancie XAML wykonaj jedną z następujących czynności:  
   
-    - Kliknij dwukrotnie element **przybornika** (lub w przyborniku wybierz element i naciśnij klawisz Enter).  
-  
-    - Przeciągnij element z **przybornika** do obszaru kompozycji.  
-  
-    - W **przybornika**, wybierz jedno z narzędzi do rysowania (na przykład [elipsy](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) lub [prostokąt](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), a następnie narysuj element aktywnego panelu.  
+  - Kliknij dwukrotnie element **przybornika** (lub w przyborniku wybierz element i naciśnij klawisz Enter).  
+
+  - Przeciągnij element z **przybornika** do obszaru kompozycji.  
+
+  - W **przybornika**, wybierz jedno z narzędzi do rysowania (na przykład [elipsy](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) lub [prostokąt](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), a następnie narysuj element aktywnego panelu.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Zmiana kolejności warstw elementów  
  Jeśli istnieją dwa elementy w obszarze kompozycji w Projektancie XAML, jeden element pojawi się przed innymi w kolejności warstw. W dolnej części listy elementów w konspekt dokumentu okna jest elementem najbardziej z przodu (z wyjątkiem kiedy **wyznacza indeks** ustawiono właściwość elementu). Po włożeniu element do strony, formularza lub kontener układu elementu automatycznie znajduje się przed inne elementy w elemencie aktywny kontener. Aby zmienić kolejność elementów, można użyć **kolejności** poleceń lub przeciągnąć elementy w drzewie obiektów w okno konspektu dokumentu.  

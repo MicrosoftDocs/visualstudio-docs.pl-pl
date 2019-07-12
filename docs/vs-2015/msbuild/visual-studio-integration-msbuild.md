@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683857"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825422"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,9 +134,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Zwolnij projekt**.  
   
-     Projekt jest oznaczony jako **(niedostępna)**.  
+     Projekt jest oznaczony jako **(niedostępna)** .  
   
-2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Edytuj \<plik projektu >**.  
+2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Edytuj \<plik projektu >** .  
   
      Plik projektu zostanie otwarty w edytorze XML programu Visual Studio.  
   
@@ -160,13 +160,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 - Odwołania do zestawów:  
   
-     System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveAssemblyReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ReferencePath`. Każdy z tych elementów powinien mieć specyfikację elementu (wartość `Include` atrybutu elementu) zawierającą pełną ścieżkę do odwołania. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z następującymi nowymi metadanymi:  
-  
-    - `CopyLocal`, wskazujące, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw wartość true lub false.  
-  
-    - `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.  
-  
-    - `ResolvedFrom`, ustawiona na "{TargetFrameworkDirectory}", jeśli została rozwiązana z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] katalogu.  
+  System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveAssemblyReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ReferencePath`. Każdy z tych elementów powinien mieć specyfikację elementu (wartość `Include` atrybutu elementu) zawierającą pełną ścieżkę do odwołania. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z następującymi nowymi metadanymi:  
+
+  - `CopyLocal`, wskazujące, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw wartość true lub false.  
+
+  - `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.  
+
+  - `ResolvedFrom`, ustawiona na "{TargetFrameworkDirectory}", jeśli została rozwiązana z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] katalogu.  
   
 - Odniesienia modelu COM:  
   

@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 80b5021af7047725f4b8cb31f55bcbfea800cf93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5497b0a343960e3f9e7e606e45c41f188b2bdcba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971789"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823645"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: Tworzenie prostego C# aplikacji konsoli w programie Visual Studio
 
@@ -49,7 +49,7 @@ Aby rozpocząć, utworzymy C# projekt aplikacji. Typ projektu jest dostarczany z
 2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
    (Też nacisnąć klawisz **Ctrl**+**Shift**+**N**).
 
-3. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **C#**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **Aplikacja konsoli (.NET Core)**. Następnie Nazwij plik ***Kalkulator***.
+3. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **C#** , a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **Aplikacja konsoli (.NET Core)** . Następnie Nazwij plik ***Kalkulator***.
 
    ![Szablon projektu aplikacji (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE konsoli](./media/new-project-csharp-calculator-console-app.png)
 
@@ -165,22 +165,22 @@ Kontynuujmy, dodając bardziej złożonego zestawu Kalkulator kodu do projektu.
         {
             static void Main(string[] args)
             {
-                // Declare variables and then initialize to zero
+                // Declare variables and then initialize to zero.
                 int num1 = 0; int num2 = 0;
 
-                // Display title as the C# console calculator app
+                // Display title as the C# console calculator app.
                 Console.WriteLine("Console Calculator in C#\r");
                 Console.WriteLine("------------------------\n");
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.WriteLine("Type a number, and then press Enter");
                 num1 = Convert.ToInt32(Console.ReadLine());
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.WriteLine("Type another number, and then press Enter");
                 num2 = Convert.ToInt32(Console.ReadLine());
 
-                // Ask the user to choose an option
+                // Ask the user to choose an option.
                 Console.WriteLine("Choose an option from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -188,7 +188,7 @@ Kontynuujmy, dodając bardziej złożonego zestawu Kalkulator kodu do projektu.
                 Console.WriteLine("\td - Divide");
                 Console.Write("Your option? ");
 
-                // Use a switch statement to do the math
+                // Use a switch statement to do the math.
                 switch (Console.ReadLine())
                 {
                     case "a":
@@ -204,7 +204,7 @@ Kontynuujmy, dodając bardziej złożonego zestawu Kalkulator kodu do projektu.
                         Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
                         break;
                 }
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press any key to close the Calculator console app...");
                 Console.ReadKey();
             }
@@ -288,7 +288,7 @@ Zmieńmy kod służący do obsługi tego błędu.
 1. Zastąp go następującym kodem:
 
    ```csharp
-            // Ask the user to enter a non-zero divisor until they do so
+            // Ask the user to enter a non-zero divisor until they do so.
                 while (num2 == 0)
                 {
                     Console.WriteLine("Enter a non-zero divisor: ");
@@ -317,9 +317,9 @@ Aby naprawić ten błąd, możemy refaktoryzować kod, który wcześniej wpisano
 
 #### <a name="revise-the-code"></a>Popraw kod
 
-Zamiast polegać na `program` klasy do obsługi całego kodu, firma Microsoft będzie podzielić naszą aplikację dwóch klas: `calculator` i `program`.
+Zamiast polegać na `program` klasy do obsługi całego kodu, firma Microsoft będzie podzielić naszą aplikację dwóch klas: `Calculator` i `Program`.
 
-`calculator` Klasy będzie obsługiwać większość pracy obliczeń i `program` klasy będzie obsługiwać interfejs użytkownika i przechwytywania błędów pracy.
+`Calculator` Klasy będzie obsługiwać większość pracy obliczeń i `Program` klasy będzie obsługiwać interfejs użytkownika i przechwytywania błędów pracy.
 
 Zaczynajmy.
 
@@ -334,16 +334,16 @@ Zaczynajmy.
 
     ```
 
-1. Następnie dodaj nową `calculator` klasy w następujący sposób:
+1. Następnie dodaj nową `Calculator` klasy w następujący sposób:
 
     ```csharp
     class Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
         {
-            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
 
-            // Use a switch statement to do the math
+            // Use a switch statement to do the math.
             switch (op)
             {
                 case "a":
@@ -356,13 +356,13 @@ Zaczynajmy.
                     result = num1 * num2;
                     break;
                 case "d":
-                    // Ask the user to enter a non-zero divisor
+                    // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {
                         result = num1 / num2;
                     }
                     break;
-                // Return text for an incorrect option entry
+                // Return text for an incorrect option entry.
                 default:
                     break;
             }
@@ -372,7 +372,7 @@ Zaczynajmy.
 
     ```
 
-1. Następnie należy dodać nowy `program` klasy w następujący sposób:
+1. Następnie należy dodać nowy `Program` klasy w następujący sposób:
 
     ```csharp
     class Program
@@ -380,18 +380,18 @@ Zaczynajmy.
         static void Main(string[] args)
         {
             bool endApp = false;
-            // Display title as the C# console calculator app
+            // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
             Console.WriteLine("------------------------\n");
 
             while (!endApp)
             {
-                // Declare variables and set to empty
+                // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
                 double result = 0;
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
                 numInput1 = Console.ReadLine();
 
@@ -402,7 +402,7 @@ Zaczynajmy.
                     numInput1 = Console.ReadLine();
                 }
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.Write("Type another number, and then press Enter: ");
                 numInput2 = Console.ReadLine();
 
@@ -413,7 +413,7 @@ Zaczynajmy.
                     numInput2 = Console.ReadLine();
                 }
 
-                // Ask the user to choose an operator
+                // Ask the user to choose an operator.
                 Console.WriteLine("Choose an operator from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -439,11 +439,11 @@ Zaczynajmy.
 
                 Console.WriteLine("------------------------\n");
 
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 if (Console.ReadLine() == "n") endApp = true;
 
-                Console.WriteLine("\n"); // Friendly linespacing
+                Console.WriteLine("\n"); // Friendly linespacing.
             }
             return;
         }
@@ -486,9 +486,9 @@ namespace Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
         {
-            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
 
-            // Use a switch statement to do the math
+            // Use a switch statement to do the math.
             switch (op)
             {
                 case "a":
@@ -501,13 +501,13 @@ namespace Calculator
                     result = num1 * num2;
                     break;
                 case "d":
-                    // Ask the user to enter a non-zero divisor
+                    // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {
                         result = num1 / num2;
                     }
                     break;
-                // Return text for an incorrect option entry
+                // Return text for an incorrect option entry.
                 default:
                     break;
             }
@@ -520,18 +520,18 @@ namespace Calculator
         static void Main(string[] args)
         {
             bool endApp = false;
-            // Display title as the C# console calculator app
+            // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
             Console.WriteLine("------------------------\n");
 
             while (!endApp)
             {
-                // Declare variables and set to empty
+                // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
                 double result = 0;
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
                 numInput1 = Console.ReadLine();
 
@@ -542,7 +542,7 @@ namespace Calculator
                     numInput1 = Console.ReadLine();
                 }
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.Write("Type another number, and then press Enter: ");
                 numInput2 = Console.ReadLine();
 
@@ -553,7 +553,7 @@ namespace Calculator
                     numInput2 = Console.ReadLine();
                 }
 
-                // Ask the user to choose an operator
+                // Ask the user to choose an operator.
                 Console.WriteLine("Choose an operator from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -579,11 +579,11 @@ namespace Calculator
 
                 Console.WriteLine("------------------------\n");
 
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 if (Console.ReadLine() == "n") endApp = true;
 
-                Console.WriteLine("\n"); // Friendly linespacing
+                Console.WriteLine("\n"); // Friendly linespacing.
             }
             return;
         }

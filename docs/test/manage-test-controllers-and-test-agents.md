@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788755"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824240"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 
@@ -186,25 +186,25 @@ Po dodaniu ról dla aplikacji do ustawień testu dla programu Visual Studio, mo�
 
 - Brak nie jest dostępny agent dla roli, która musi uruchamiać testy. Nie można uruchomić testy. Możesz wykonać jedną z następujących czynności, a następnie ponownie uruchom testy:
 
-    - Możesz poczekać, aż agent stanie się dostępny dla tej roli uruchomić testy.
+  - Możesz poczekać, aż agent stanie się dostępny dla tej roli uruchomić testy.
 
-    - Jeśli istnieją agenci, którzy są w trybie offline, może służyć do tej roli, można ponownie uruchomić agenta tak, że jest ona dostępna.
+  - Jeśli istnieją agenci, którzy są w trybie offline, może służyć do tej roli, można ponownie uruchomić agenta tak, że jest ona dostępna.
 
-    - Można dodać innego agenta o prawidłowych właściwościach dla tej roli do kontrolera testów.
+  - Można dodać innego agenta o prawidłowych właściwościach dla tej roli do kontrolera testów.
 
-    - Można zmienić właściwości agenta dla tej roli w ustawieniach testowych, aby włączyć innych agentów, które chcesz użyć.
+  - Można zmienić właściwości agenta dla tej roli w ustawieniach testowych, aby włączyć innych agentów, które chcesz użyć.
 
 - Agent nie jest dostępny dla co najmniej jedną rolę, systemem adapterów danych diagnostycznych. Testy mogą być uruchamiane, ale nie można uruchomić adaptera danych diagnostycznych. Można uruchomić testy bez karty danych diagnostycznych lub możesz wykonać jedną z następujących czynności i ponownie uruchomić testy:
 
-    - Możesz poczekać, aż agent stanie się dostępny dla tych ról.
+  - Możesz poczekać, aż agent stanie się dostępny dla tych ról.
 
-    - Jeśli istnieją agenci, którzy są w trybie offline, który może służyć do tej roli, należy zmienić stan agenta na online za pomocą **administrowanie kontrolerem testów** na **testu** menu. Ponadto trzeba będzie ponownie uruchomić agenta, jeśli został odłączony od kontrolera.
+  - Jeśli istnieją agenci, którzy są w trybie offline, który może służyć do tej roli, należy zmienić stan agenta na online za pomocą **administrowanie kontrolerem testów** na **testu** menu. Ponadto trzeba będzie ponownie uruchomić agenta, jeśli został odłączony od kontrolera.
 
-    - Upewnij się, że żadnych agentów, które mogą wymagać dla tego przebiegu testu nie zajęty przeprowadzaniem testów. Możesz sprawdzić stan wszelkich agentów z **administrowanie kontrolerem testów** na **testu** menu.
+  - Upewnij się, że żadnych agentów, które mogą wymagać dla tego przebiegu testu nie zajęty przeprowadzaniem testów. Możesz sprawdzić stan wszelkich agentów z **administrowanie kontrolerem testów** na **testu** menu.
 
-    - Można dodać innego agenta o prawidłowych właściwościach dla roli do kontrolera testów.
+  - Można dodać innego agenta o prawidłowych właściwościach dla roli do kontrolera testów.
 
-    - Można zmienić właściwości agenta dla roli w ustawieniach testu, aby włączyć innych agentów, których chcesz użyć.
+  - Można zmienić właściwości agenta dla roli w ustawieniach testu, aby włączyć innych agentów, których chcesz użyć.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Ładowanie testów z zestawów podpisanych z opóźnieniem
 

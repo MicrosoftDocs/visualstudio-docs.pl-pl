@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797767"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825853"
 ---
 # <a name="resource-details-view---contention-data"></a>Widok szczegółów zasobów — dane rywalizacji
 Widok szczegółów zasobów przedstawia wykres osi czasu blokowania zdarzeń, które były spowodowane przez rywalizacji za pośrednictwem wybranego zasobu. Blokowanie zdarzenie występuje, gdy wątek jest zmuszony do zawieszenia wykonania, ponieważ inny wątek został zablokowany dostęp do zasobu.
@@ -36,9 +36,9 @@ Widok szczegółów zasobów przedstawia wykres osi czasu blokowania zdarzeń, k
 
 - Wykonaj jedną z następujących czynności:
 
-    - Kliknij przycisk **Pomniejsz** aby powrócić do poprzedniego poziomu powiększenia.
+  - Kliknij przycisk **Pomniejsz** aby powrócić do poprzedniego poziomu powiększenia.
 
-    - Kliknij przycisk **resetowania powiększenia** do wyświetlenia wszystkich osi czasu w widoku.
+  - Kliknij przycisk **resetowania powiększenia** do wyświetlenia wszystkich osi czasu w widoku.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Aby wyświetlić stos wywołań zdarzenia
 

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520c31f671aee05663a5471aca05cfe06313b168
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f2de40c520bca0ea04f50ec782fec2dda531172e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847034"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822068"
 ---
 # <a name="proxy-authorization-required"></a>Wymagana autoryzacja serwera proxy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Aby rozwiązać ten problem, spróbuj wykonać co najmniej jeden z następujący
 
 - Jeśli powyższy krok nie rozwiąże problemu, może to być spowodowane serwera proxy nie jest wyświetlany monit o poświadczenia dla http://go.microsoft.com adresy, ale jest to spowodowane *. adresów visualStudio.com. Na tych serwerach należy dodać następujące adresy URL do listy dozwolonych, aby odblokować wszystkie w scenariuszach logowania w programie Visual Studio:
 
-    - *.windows.net
+  - *.windows.net
 
-    - *.microsoftonline.com
+  - *.microsoftonline.com
 
-    - *.visualstudio.com
+  - *.visualstudio.com
 
-    - *.microsoft.com
+  - *.microsoft.com
 
-    - *.live.com
+  - *.live.com
 
 - Możesz usunąć http://go.microsoft.com adresów z listy dozwolonych, aby w oknie dialogowym uwierzytelniania serwera proxy, pojawia się dla obu http://go.microsoft.com adres i punkty końcowe serwera, po ponownym uruchomieniu programu Visual Studio.
 

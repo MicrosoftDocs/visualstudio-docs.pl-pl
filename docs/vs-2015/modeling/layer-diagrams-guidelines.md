@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4a4b607adcd4aab4c5b70f02cb28f06219c7d655
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440994"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823708"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy warstw: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,9 +101,9 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
 |Usuń zależności, które nie powinny istnieć|Kliknij zależności, a następnie naciśnij klawisz **Usuń**.|  
 |Zmień lub ogranicz kierunek zależności|Ustaw jego **kierunek** właściwości.|  
 |Tworzenie nowych zależności|Użyj **zależności** i **zależność dwukierunkowa** narzędzia.<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, kliknij przycisk **wskaźnik** narzędzi lub naciśnij klawisz **ESC** klucza.|  
-|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione zależności Namespace** właściwości. Użyj średnika (**;**) do oddzielenia przestrzeni nazw.|  
-|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione przestrzenie nazw** właściwości. Użyj średnika (**;**) do oddzielenia przestrzeni nazw.|  
-|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw w warstwie **wymagane przestrzenie nazw** właściwości. Użyj średnika (**;**) do oddzielenia przestrzeni nazw.|  
+|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione zależności Namespace** właściwości. Użyj średnika ( **;** ) do oddzielenia przestrzeni nazw.|  
+|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione przestrzenie nazw** właściwości. Użyj średnika ( **;** ) do oddzielenia przestrzeni nazw.|  
+|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw w warstwie **wymagane przestrzenie nazw** właściwości. Użyj średnika ( **;** ) do oddzielenia przestrzeni nazw.|  
   
 ### <a name="Improving"></a> Zwiększanie struktury kodu  
  Refaktoryzacji zmiany dotyczą poprawy nie wpływają na sposób działania aplikacji, które ułatwia kodu do zmiany i rozszerzać w przyszłości. Kod dobrze jest projekt, który jest łatwy do diagramu warstwowego warstwę abstrakcji.  
@@ -134,7 +134,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
   
 - Zmień kolory warstw i zależności.  
   
-    - Wybierz jeden lub więcej warstw i zależności, kliknij prawym przyciskiem myszy, a następnie kliknij **właściwości**. W **właściwości** oknie edycji **kolor** właściwości.  
+  - Wybierz jeden lub więcej warstw i zależności, kliknij prawym przyciskiem myszy, a następnie kliknij **właściwości**. W **właściwości** oknie edycji **kolor** właściwości.  
   
 ## <a name="Validate"></a> Sprawdź poprawność kodu na podstawie diagramu  
  Po zakończeniu edycji diagramu, użytkownik może sprawdzić jego poprawność kodu ręcznie w dowolnym momencie lub automatycznie każdym uruchomieniu lokalnej kompilacji lub [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].  

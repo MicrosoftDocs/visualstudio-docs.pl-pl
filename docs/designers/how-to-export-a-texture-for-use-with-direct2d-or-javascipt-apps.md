@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459205"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824614"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub JavaScript aplikacji
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
 
 Potok zawartości obrazu może generować tekstury, które są zgodne z konwencjami renderowania wewnętrznego w Direct2D. Tekstury tego rodzaju są odpowiednie do użycia w aplikacjach, które używają Direct2D oraz w aplikacjach platformy uniwersalnej systemu Windows utworzone przy użyciu języka JavaScript.
 
@@ -25,11 +25,11 @@ Ten dokument przedstawia te działania:
 
 - Konfigurowanie potoku zawartości obrazu do generowania tekstury, którego można używać w aplikacji Direct2D lub JavaScript.
 
-    - Generowanie skompresowanego bloku *.dds* pliku.
+  - Generowanie skompresowanego bloku *.dds* pliku.
 
-    - Generowanie wstępnie przemnożonego kanału alfa.
+  - Generowanie wstępnie przemnożonego kanału alfa.
 
-    - Wyłącz Generowanie mipmappingu.
+  - Wyłącz Generowanie mipmappingu.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Konwencje renderowania w Direct2D
 
@@ -39,11 +39,11 @@ Tekstury, które są używane w kontekście Direct2D muszą spełniać te wewnę
 
 - Tekstury muszą być dostarczane w *.dds* format przy użyciu jednej z tych formatów kompresji blokowej:
 
-   - Kompresja bc1_unorm
+  - Kompresja bc1_unorm
 
-   - Kompresja bc2_unorm
+  - Kompresja bc2_unorm
 
-   - Kompresja bc3_unorm
+  - Kompresja bc3_unorm
 
 - Mipmapy nie są obsługiwane.
 
@@ -53,12 +53,12 @@ Tekstury, które są używane w kontekście Direct2D muszą spełniać te wewnę
 
 2. Skonfigurować pliku tekstury, jest przetwarzany przez potok zawartości obrazu. W **Eksploratora rozwiązań**, otwórz menu skrótów dla utworzonego właśnie pliku tekstury, a następnie wybierz **właściwości**. Na **właściwości konfiguracji** > **ogólne** ustaw **typu elementu** właściwości **potok zawartości obrazu**. Upewnij się, że **zawartości** właściwość jest ustawiona na **tak** i **Wyłącz z kompilacji** ustawiono **nie**, a następnie wybierz  **Zastosuj** przycisku. **Potok zawartości obrazu** zostanie wyświetlona strona właściwości konfiguracji.
 
-3. Ustaw format wyjściowy na jeden z formatów skompresowanego bloku. Na **właściwości konfiguracji** > **potok zawartości obrazu** > **ogólne** ustaw **skompresować**właściwość **kompresja bc3_unorm (/ compress: BC3_UNORM)**. Możesz wybrać dowolny z innych formantów BC1, BC2 lub BC3 formatów w zależności od wymagań. Direct2D nie obsługuje obecnie tekstur BC4, BC5, BC6 lub BC7 tekstury. Aby uzyskać więcej informacji o różnych formatach kompresji Blokowej, zobacz [Block kompresji (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
+3. Ustaw format wyjściowy na jeden z formatów skompresowanego bloku. Na **właściwości konfiguracji** > **potok zawartości obrazu** > **ogólne** ustaw **skompresować**właściwość **kompresja bc3_unorm (/ compress: BC3_UNORM)** . Możesz wybrać dowolny z innych formantów BC1, BC2 lub BC3 formatów w zależności od wymagań. Direct2D nie obsługuje obecnie tekstur BC4, BC5, BC6 lub BC7 tekstury. Aby uzyskać więcej informacji o różnych formatach kompresji Blokowej, zobacz [Block kompresji (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
 
    > [!NOTE]
    > Format kompresji, który jest określony, określa format pliku, który jest wytwarzany przez potok zawartości obrazu. Stanowi to odmianę **Format** właściwości obrazu źródłowego w edytorze obrazu, który określa format pliku obrazu źródłowego, ponieważ przechowywane na dysku — czyli *formatu roboczego*. Nie ma zazwyczaj format roboczy był skompresowany.
 
-4. Konfigurowanie potoku zawartości obrazu do generowania danych wyjściowych, która używa wstępnie przemnożonego kanału alfa. Na **właściwości konfiguracji** > **potok zawartości obrazu** > **ogólne** ustaw **przekonwertować wstępnie przemnożonego alfa format** właściwości **tak (/ generatepremultipliedalpha)**.
+4. Konfigurowanie potoku zawartości obrazu do generowania danych wyjściowych, która używa wstępnie przemnożonego kanału alfa. Na **właściwości konfiguracji** > **potok zawartości obrazu** > **ogólne** ustaw **przekonwertować wstępnie przemnożonego alfa format** właściwości **tak (/ generatepremultipliedalpha)** .
 
 5. Konfigurowanie potoku zawartości obrazu tak, aby nie generować mipmap. Na **właściwości konfiguracji** > **potok zawartości obrazu** > **ogólne** ustaw **Generuj Mips** właściwości **nie**.
 

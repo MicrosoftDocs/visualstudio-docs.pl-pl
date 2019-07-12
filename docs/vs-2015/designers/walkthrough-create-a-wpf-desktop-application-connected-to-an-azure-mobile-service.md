@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693555"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824547"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Przewodnik: Tworzenie aplikacji WPF pulpitu podłączone do usługi mobilnej Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Przewodnik: Tworzenie aplikacji klasycznej WPF podłączonej do usługi mobilnej platformy Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych aplikacja komputerowa, która używa usług Azure Mobile do przechowywania i przekazywania danych.  
@@ -28,9 +28,9 @@ Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych 
   
 - Aktywne konto Microsoft Azure.  
   
-    - Użytkownik może Załóż bezpłatne konto próbne [tutaj](https://azure.microsoft.com/pricing/free-trial/).  
-  
-    - Możesz aktywować [korzyści dla subskrybentów MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Subskrypcji sieci MSDN zapewnia środki na korzystanie z każdego miesiąca, używanego do płatne usługi platformy Azure.  
+  - Użytkownik może Załóż bezpłatne konto próbne [tutaj](https://azure.microsoft.com/pricing/free-trial/).  
+
+  - Możesz aktywować [korzyści dla subskrybentów MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Subskrypcji sieci MSDN zapewnia środki na korzystanie z każdego miesiąca, używanego do płatne usługi platformy Azure.  
   
 ## <a name="create-a-project-and-add-references"></a>Tworzenie projektu i dodawanie odwołań  
  Pierwszym krokiem jest utworzenie projektu WPF i Dodaj pakiet NuGet, która umożliwia nawiązanie połączenia z usługą Azure Mobile Services.  

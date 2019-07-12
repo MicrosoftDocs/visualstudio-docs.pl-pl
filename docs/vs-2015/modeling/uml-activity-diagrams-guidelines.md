@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439737"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823577"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramy aktywności UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
  Można określić, jak elementy w buforze są przechowywane przez ustawienie właściwości węzeł obiektu:  
   
 - Ustaw **porządkowanie** właściwości:  
-  
-    - **Nieuporządkowana** do określania kolejności losowej lub nieokreślony. (Ustawienie domyślne)  
-  
-    - **Uporządkowane** można określić kolejność, zgodnie z określonym kluczem.  
-  
-    - **FIFO** do określania kolejności pierwszy w zasadzie.  
-  
-    - **LIFO** do określania kolejności ostatni na wejściu,.  
-  
+
+  - **Nieuporządkowana** do określania kolejności losowej lub nieokreślony. (Ustawienie domyślne)  
+
+  - **Uporządkowane** można określić kolejność, zgodnie z określonym kluczem.  
+
+  - **FIFO** do określania kolejności pierwszy w zasadzie.  
+
+  - **LIFO** do określania kolejności ostatni na wejściu,.  
+
 - Ustaw **górną granicę** właściwość, aby określić maksymalną liczbę obiektów, które mogą być zawarte w buforze. Wartość domyślna to *. Oznacza to, że nie ma żadnego limitu.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Opisujący przepływ danych z wejścia i wyjścia  
@@ -299,7 +299,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
   
  Oprocentowanie jest double sprzed.  
   
- Styl formalnej, można napisać warunków końcowych odwołujące się do określonych atrybutów danych omówione w akcjach. Na przykład:  
+ Styl formalnej, można napisać warunków końcowych odwołujące się do określonych atrybutów danych omówione w akcjach. Przykład:  
   
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`  
   
@@ -317,7 +317,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
   
 - Możesz ustawić **jest synchroniczne** właściwość akcji, aby wskazać, czy Twoje działanie ma oczekiwać na zakończenie operacji.  
   
-    - Jeśli ustawisz **jest synchroniczne** na wartość false, wskazujesz, że przepływ może w dalszym następnej akcji przed ukończeniem operacji o nazwie. Dane wyjściowe nie powinna definiować numerów PIN lub dane wychodzące przepływy z akcji.  
+  - Jeśli ustawisz **jest synchroniczne** na wartość false, wskazujesz, że przepływ może w dalszym następnej akcji przed ukończeniem operacji o nazwie. Dane wyjściowe nie powinna definiować numerów PIN lub dane wychodzące przepływy z akcji.  
   
 ## <a name="Concurrent"></a> Przepływy współbieżne  
  Możesz użyć **węzła rozwidlenia** i **dołączyć węzła** do opisania dwa lub więcej wątków działań, które mogą być wykonywane w tym samym czasie.  

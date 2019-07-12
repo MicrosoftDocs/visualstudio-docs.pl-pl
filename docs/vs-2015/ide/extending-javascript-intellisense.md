@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441465"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824929"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozszerzanie JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Funkcja rozszerzalność JavaScript IntelliSense umożliwia dostosowywanie wynik
   
  Mechanizmu automatycznego odnajdowania umożliwia usłudze języka automatycznie znaleźć rozszerzenia, które należy wykonać Konwencję nazewnictwa plików *libraryname*. intellisense.js i które znajdują się w tym samym katalogu co biblioteki w celu zastosowanie rozszerzenia. Na przykład prawidłowe rozszerzenie biblioteki jQuery będzie jQuery.intellisense.js. Dla bardziej restrykcyjne jQuery rozszerzeń można użyć nazwy plików, np. jQuery-1.7.1.intellisense.js (z rozszerzeniem specyficzny dla wersji) lub jQuery.ui.intellisense.js (rozszerzenie biblioteki jQuery o określonym zakresie). Najbardziej restrykcyjną wersję rozszerzenia jest używana, jeśli znaleziono więcej niż jedno rozszerzenie dla danej biblioteki.  
   
- Jeśli chcesz użyć rozszerzenia dla wszystkie pliki projektu JavaScript, można zamiast tego dodać rozszerzenie do grupy odwołań. Istnieją różne typy grup odwołań, albo takie, które zawierają odwołań niejawnych, które zawierają odwołania dedykowanych procesów roboczych. Aby dodać rozszerzenie, zazwyczaj należy dodać plik jako grupę niejawne odwołanie, albo **niejawna (Windows)**, **niejawna (sieć Web)**. Odwołań niejawnych znajdują się w zakresie dla każdego pliku .js otwartego w edytorze kodu. Korzystając z tej metody, należy dodać rozszerzenie i pliku który jest uzupełniające rozszerzenia.  
+ Jeśli chcesz użyć rozszerzenia dla wszystkie pliki projektu JavaScript, można zamiast tego dodać rozszerzenie do grupy odwołań. Istnieją różne typy grup odwołań, albo takie, które zawierają odwołań niejawnych, które zawierają odwołania dedykowanych procesów roboczych. Aby dodać rozszerzenie, zazwyczaj należy dodać plik jako grupę niejawne odwołanie, albo **niejawna (Windows)** , **niejawna (sieć Web)** . Odwołań niejawnych znajdują się w zakresie dla każdego pliku .js otwartego w edytorze kodu. Korzystając z tej metody, należy dodać rozszerzenie i pliku który jest uzupełniające rozszerzenia.  
   
  Użyj **IntelliSense** strony **opcje** okno dialogowe, aby dodać rozszerzenie jako grupa odwołań. Możesz uzyskać dostęp **IntelliSense** strony, wybierając **narzędzia**, **opcje** na pasku menu, a następnie wybierając **edytora tekstów**, **JavaScript**, **IntelliSense**, **odwołania**. Aby uzyskać więcej informacji na temat grup odwołań, zobacz [JavaScript IntelliSense](../ide/javascript-intellisense.md) i [opcje, Edytor tekstu, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
@@ -147,9 +147,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `paramComments`. Zwraca tablicę reprezentujący komentarzy dla każdego parametru w funkcji. Elementy członkowskie tablicy obejmują:  
   
-    - `name`. Zwraca ciąg reprezentujący nazwę parametru.  
-  
-    - `comment`. Zwraca ciąg, który zawiera komentarz parametru.  
+  - `name`. Zwraca ciąg reprezentujący nazwę parametru.  
+
+  - `comment`. Zwraca ciąg, który zawiera komentarz parametru.  
   
 ### <a name="FunctionHelp"></a> functionHelp właściwości  
  Zwraca pomocy dla tej funkcji. Ta właściwość jest dostępna dla `signaturehelp` obiektem zdarzenia.  
@@ -162,47 +162,47 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `signatures`. Odczyt/zapis. Pobiera lub ustawia tablicę sygnatur funkcji. Każdy element w tablicy jest `signature` obiektu. Niektóre `signature` właściwości, takie jak `locid`, odpowiadają na typowe [komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md) atrybutów.  
   
-     Elementy członkowskie `signature` obiektu obejmują:  
-  
-    - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje funkcji.  
-  
+  Elementy członkowskie `signature` obiektu obejmują:  
+
+  - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje funkcji.  
+
+  - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
+
+  - `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
+
+  - `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
+
+  - `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.  
+
+  - `params`. Odczyt/zapis. Pobiera lub ustawia tablicę parametrów funkcji. Każdy element w tablicy parametrów jest `parameter` obiekt, który ma właściwości, które odpowiadają na następujące atrybuty [ \<param >](../ide/param-javascript.md) elementu:  
+
+    - `name`. Odczyt/zapis. Zwraca ciąg reprezentujący nazwę parametru.  
+
+    - `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ parametru.  
+
+    - `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
+
+    - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje parametr.  
+
     - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
-  
+
+    - `optional`. Odczyt/zapis. Zwraca ciąg, który wskazuje, czy parametr jest opcjonalny. `true` Wskazuje, że parametr jest opcjonalny; `false` wskazuje, że nie jest.  
+
+  - `returnValue`. Odczyt/zapis. Pobiera lub ustawia obiekt o zwracanej wartości właściwości, które odpowiadają na następujące atrybuty [ \<zwraca >](../ide/returns-javascript.md) elementu:  
+
+    - `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ zwracany.  
+
+    - `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
+
+    - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje wartość zwracaną.  
+
+    - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
+
     - `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
-  
+
     - `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
-  
+
     - `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.  
-  
-    - `params`. Odczyt/zapis. Pobiera lub ustawia tablicę parametrów funkcji. Każdy element w tablicy parametrów jest `parameter` obiekt, który ma właściwości, które odpowiadają na następujące atrybuty [ \<param >](../ide/param-javascript.md) elementu:  
-  
-        - `name`. Odczyt/zapis. Zwraca ciąg reprezentujący nazwę parametru.  
-  
-        - `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ parametru.  
-  
-        - `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
-  
-        - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje parametr.  
-  
-        - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
-  
-        - `optional`. Odczyt/zapis. Zwraca ciąg, który wskazuje, czy parametr jest opcjonalny. `true` Wskazuje, że parametr jest opcjonalny; `false` wskazuje, że nie jest.  
-  
-    - `returnValue`. Odczyt/zapis. Pobiera lub ustawia obiekt o zwracanej wartości właściwości, które odpowiadają na następujące atrybuty [ \<zwraca >](../ide/returns-javascript.md) elementu:  
-  
-        - `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ zwracany.  
-  
-        - `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
-  
-        - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje wartość zwracaną.  
-  
-        - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
-  
-        - `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
-  
-        - `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
-  
-        - `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.  
   
 ### <a name="ParentObject"></a> parentObject właściwości  
  Zwraca wartość obiektu nadrzędnego dla funkcji członkowskiej. Na przykład w przypadku `document.getElementByID`, `parentObject` zwraca `document` obiektu. Ta właściwość jest dostępna dla `signaturehelp` obiektem zdarzenia.  

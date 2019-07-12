@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321357"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823806"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -63,35 +63,35 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 
 * Zestawy, które tylko zostały zainstalowane w GAC:
 
-   Te zestawy są teraz instalowane w ramach <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Te foldery są częścią procesu programu Visual Studio ścieżkach sondowania.
+  Te zestawy są teraz instalowane w ramach <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Te foldery są częścią procesu programu Visual Studio ścieżkach sondowania.
 
 * Zestawy, które zostały zainstalowane w ścieżce sondowanie i pamięci podręcznej GAC:
 
-   * Kopiowanie w GAC został usunięty z instalacji.
-   * A *.pkgdef* plik został dodany do określenia pozycji podstawowego kodu dla zestawu.
+  * Kopiowanie w GAC został usunięty z instalacji.
+  * A *.pkgdef* plik został dodany do określenia pozycji podstawowego kodu dla zestawu.
 
-      Na przykład:
+    Przykład:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      W czasie wykonywania w podsystemie pkgdef programu Visual Studio scala te wpisy w pliku konfiguracji środowiska uruchomieniowego procesu programu Visual Studio (w obszarze *[VSAPPDATA]\devenv.exe.config*) jako [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementy. Jest to zalecany sposób umożliwić procesu programu Visual Studio, Znajdź w swoim zestawie, ponieważ eliminuje przeszukiwania sondowania ścieżek.
+    W czasie wykonywania w podsystemie pkgdef programu Visual Studio scala te wpisy w pliku konfiguracji środowiska uruchomieniowego procesu programu Visual Studio (w obszarze *[VSAPPDATA]\devenv.exe.config*) jako [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementy. Jest to zalecany sposób umożliwić procesu programu Visual Studio, Znajdź w swoim zestawie, ponieważ eliminuje przeszukiwania sondowania ścieżek.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reagowanie na tej istotnej zmiany
 
 * Jeśli rozszerzenie jest uruchomiona w ramach procesu programu Visual Studio:
 
-   * Twój kod będzie szukać zestawów podstawowych programu Visual Studio.
-   * Należy rozważyć użycie *.pkgdef* plik, aby określić ścieżkę do zestawów, jeśli to konieczne.
+  * Twój kod będzie szukać zestawów podstawowych programu Visual Studio.
+  * Należy rozważyć użycie *.pkgdef* plik, aby określić ścieżkę do zestawów, jeśli to konieczne.
 
 * Jeśli rozszerzenie działa poza procesem programu Visual Studio:
 
-   Należy wziąć pod uwagę wyszukiwanie zestawów podstawowych programu Visual Studio w obszarze <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* używanie mechanizmu rozpoznawania pliku lub zestawu konfiguracji.
+  Należy wziąć pod uwagę wyszukiwanie zestawów podstawowych programu Visual Studio w obszarze <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* używanie mechanizmu rozpoznawania pliku lub zestawu konfiguracji.
 
 ## <a name="change-reduce-registry-impact"></a>Zmiana: Ograniczenia wpływu rejestru
 

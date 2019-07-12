@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7917bdd3b7a94af605b2626016c9a9a725fa2b29
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb4066d9728dd633492b05e4cc872dbdd8a91b5c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310796"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823591"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Tekst interfejsu użytkownika i pomoc dotyczącą programu Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a> Tekst interfejsu użytkownika i terminologia
@@ -191,11 +191,11 @@ ms.locfileid: "66310796"
 
 - Kilka pytań, które Zadaj sobie pytanie, podczas tworzenia komunikatu o błędzie:
 
-    - Jak rozwiązać problem z tym błędem samodzielnie określić użytkownika?
+  - Jak rozwiązać problem z tym błędem samodzielnie określić użytkownika?
 
-    - Użytkownik używa tego samego słownictwa jako błąd?
+  - Użytkownik używa tego samego słownictwa jako błąd?
 
-    - Jest to błąd ambigious lub udostępnione w wielu sytuacjach? Jeśli tak, jak możesz prowadzą użytkowników do rozwiązania, które są im potrzebne?
+  - Jest to błąd ambigious lub udostępnione w wielu sytuacjach? Jeśli tak, jak możesz prowadzą użytkowników do rozwiązania, które są im potrzebne?
 
 #### <a name="build-errors"></a>Błędy kompilacji
  Ponieważ program Visual Studio jest narzędziem do projektowania oprogramowania, wiele z jego składników ma kompilacji, konwertowania lub kodowanie krok, aby przekonwertować pracy dewelopera do postaci binarnej. Takiej konwersji może powodować błędy, gdy kompilator nie może przetworzyć nieprawidłowo utworzone pliki lub opcje kompilatora nie zostały prawidłowo ustawione.

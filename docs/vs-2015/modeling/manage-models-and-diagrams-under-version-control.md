@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 76e8c92707279979cec6406bd1bcd5ad44a1f315
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680291"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825782"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Zarządzanie modelami i diagramami w ramach kontroli wersji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Zarządzać różne wersje usługi projektów i diagramów modelowania, łączni
   
 - Każdy diagram jest przechowywany w dwóch plikach. Na przykład diagram klas ma:  
   
-    - **DiagramName.classdiagram** — Jeśli ten plik zostaje usunięty lub uszkodzony, diagram zostanie utracony, ale klasy i stowarzyszenia będą nadal istnieć w modelu i będą widoczne w Eksploratorze modelu UML.  
-  
-    - **DiagramName.classdiagram.layout** — Jeśli ten plik zostanie usunięty, kształty będą nadal pojawiać się na diagramie, ale utracą swoje rozmiary i położenie. Każdy plik układu jest zależny od pliku diagramu. Aby sprawdzić, kliknij przycisk [+] obok pliku diagramu w Eksploratorze rozwiązań.  
+  - **DiagramName.classdiagram** — Jeśli ten plik zostaje usunięty lub uszkodzony, diagram zostanie utracony, ale klasy i stowarzyszenia będą nadal istnieć w modelu i będą widoczne w Eksploratorze modelu UML.  
+
+  - **DiagramName.classdiagram.layout** — Jeśli ten plik zostanie usunięty, kształty będą nadal pojawiać się na diagramie, ale utracą swoje rozmiary i położenie. Każdy plik układu jest zależny od pliku diagramu. Aby sprawdzić, kliknij przycisk [+] obok pliku diagramu w Eksploratorze rozwiązań.  
   
 > [!NOTE]
 > Jest to ważne, aby zachować spójność między plikami. Na przykład, jeśli używasz kontroli źródła do wycofania zmian w pliku .uml, należy wycofać odpowiednie zmiany. * diagram i .layout pliki w tym samym czasie. Elementy reprezentowane w. \*plik diagramu zostaną utracone, jeśli nie są one również reprezentowane w pliku .uml.  
@@ -55,9 +55,9 @@ Zarządzać różne wersje usługi projektów i diagramów modelowania, łączni
   
 - Aby ułatwić, upewnij się, że zmieniasz tylko pakiet, który użytkownik pracuje na:  
   
-    - Ustaw **LinkedPackage** właściwość klasy, składnika lub diagram przypadków użycia UML.  
-  
-    - W Eksploratorze modelu UML przeciągnij działanie lub interakcję do pakietu natychmiast po jej utworzeniu. Element ten pojawi się w Eksploratorze modelu UML podczas tworzenia pierwszego węzła w diagramie sekwencji lub działania.  
+  - Ustaw **LinkedPackage** właściwość klasy, składnika lub diagram przypadków użycia UML.  
+
+  - W Eksploratorze modelu UML przeciągnij działanie lub interakcję do pakietu natychmiast po jej utworzeniu. Element ten pojawi się w Eksploratorze modelu UML podczas tworzenia pierwszego węzła w diagramie sekwencji lub działania.  
   
 - Aby ułatwić śledzenie pakietów, Zmień nazwę plików pakietu, aby odzwierciedlić rzeczywiste nazwy pakietów.  
   

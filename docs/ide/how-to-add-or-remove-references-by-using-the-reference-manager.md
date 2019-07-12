@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160163"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825487"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -105,33 +105,33 @@ Dodawanie odwołań do pliku do danych wyjściowych innego projektu w tym samym 
 
 - Przenoszenie lub kopiowanie zestawu do jednej z następujących lokalizacji:
 
-   - Katalog aktualnego projektu. (Zestawy te można znaleźć przy użyciu **Przeglądaj** karty.)
+  - Katalog aktualnego projektu. (Zestawy te można znaleźć przy użyciu **Przeglądaj** karty.)
 
-   - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć przy użyciu **projektów** karty.)
+  - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć przy użyciu **projektów** karty.)
 
-    \- lub —
+  \- lub —
 
 - Ustaw klucz rejestru, który określa lokalizację zestawów do wyświetlenia:
 
-   W przypadku 32-bitowym systemie operacyjnym należy dodać jeden z następujących kluczy rejestru.
+  W przypadku 32-bitowym systemie operacyjnym należy dodać jeden z następujących kluczy rejestru.
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   Dla 64-bitowym systemie operacyjnym należy dodać jeden z następujących kluczy rejestru w gałęzi rejestru 32-bitowych.
+  Dla 64-bitowym systemie operacyjnym należy dodać jeden z następujących kluczy rejestru w gałęzi rejestru 32-bitowych.
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>*  jest najniższa wersja framework, która ma zastosowanie. Jeśli *\<VersionMinimum\>* jest w wersji 3.0, foldery określone w *AssemblyFoldersEx* zastosowanie do projektów przeznaczonych dla platformy .NET Framework 3.0 lub nowszej.
+  *\<VersionMinimum\>*  jest najniższa wersja framework, która ma zastosowanie. Jeśli *\<VersionMinimum\>* jest w wersji 3.0, foldery określone w *AssemblyFoldersEx* zastosowanie do projektów przeznaczonych dla platformy .NET Framework 3.0 lub nowszej.
 
-   *\<AssemblyLocation\>*  to katalog zestawów, które mają być wyświetlane w **Dodaj odwołanie** okno dialogowe, na przykład *C:\MyAssemblies*.
+  *\<AssemblyLocation\>*  to katalog zestawów, które mają być wyświetlane w **Dodaj odwołanie** okno dialogowe, na przykład *C:\MyAssemblies*.
 
-   Tworzenie klucza rejestru w `HKEY_LOCAL_MACHINE` węzła umożliwia wszystkim użytkownikom przeglądanie zestawów w określonej lokalizacji w **Dodaj odwołanie** okno dialogowe. Tworzenie klucza rejestru w `HKEY_CURRENT_USER` węzeł ma wpływ tylko ustawienia dla bieżącego użytkownika.
+  Tworzenie klucza rejestru w `HKEY_LOCAL_MACHINE` węzła umożliwia wszystkim użytkownikom przeglądanie zestawów w określonej lokalizacji w **Dodaj odwołanie** okno dialogowe. Tworzenie klucza rejestru w `HKEY_CURRENT_USER` węzeł ma wpływ tylko ustawienia dla bieżącego użytkownika.
 
-   Otwórz **Dodaj odwołanie** ponownie okno dialogowe. Zestawy powinny pojawić się na **.NET** kartę. Jeśli nie, upewnij się, że zestawy znajdują się w określonym *AssemblyLocation* katalogu, uruchom ponownie program Visual Studio i spróbuj ponownie.
+  Otwórz **Dodaj odwołanie** ponownie okno dialogowe. Zestawy powinny pojawić się na **.NET** kartę. Jeśli nie, upewnij się, że zestawy znajdują się w określonym *AssemblyLocation* katalogu, uruchom ponownie program Visual Studio i spróbuj ponownie.
 
 ## <a name="projects-tab"></a>Karta projekty
 

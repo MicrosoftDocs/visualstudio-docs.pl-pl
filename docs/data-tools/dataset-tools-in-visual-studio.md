@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715214"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821368"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawów danych w programie Visual Studio
 
@@ -75,13 +75,13 @@ Program Visual Studio zapewnia narzędzia w celu uproszczenia pracy z zestawami 
 
 - Użyj **Kreator konfiguracji TableAdapter** określić zapytanie lub procedura składowana, która wypełnia zestawu danych i jakie operacje bazy danych (update, delete itd.) do zaimplementowania. Aby uzyskać więcej informacji zobacz następujące tematy:
 
-    - [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Edytowanie danych w zestawach danych](../data-tools/edit-data-in-datasets.md)
+  - [Edytowanie danych w zestawach danych](../data-tools/edit-data-in-datasets.md)
 
-    - [Weryfikowanie danych w zestawach danych](../data-tools/validate-data-in-datasets.md)
+  - [Weryfikowanie danych w zestawach danych](../data-tools/validate-data-in-datasets.md)
 
-    - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
+  - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
 
 - Zapytania i wyszukiwać dane w zestawie danych. Aby uzyskać więcej informacji, zobacz [zestawów danych zapytania](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] Włącza [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) nad danymi w <xref:System.Data.DataSet> obiektu. Aby uzyskać więcej informacji, zobacz [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

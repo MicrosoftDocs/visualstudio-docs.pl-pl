@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 90c080b62be8f3aba128b26aafe9d2b6e30446f5
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 0ddb6173095b8d4fd552e108f458a271321511c7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586800"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823304"
 ---
 # <a name="language-conventions"></a>Konwencje języka
 
@@ -56,36 +56,36 @@ Ważność | Efekt
 Reguły stylów w tej sekcji dotyczą zarówno C# i Visual Basic.
 
 - ["This." i "Me."](#this-and-me)
-   - dotnet\_style\_qualification\_for_field
-   - dotnet\_style\_qualification\_for_property
-   - dotnet\_style\_qualification\_for_method
-   - dotnet\_style\_qualification\_for_event
+  - dotnet\_style\_qualification\_for_field
+  - dotnet\_style\_qualification\_for_property
+  - dotnet\_style\_qualification\_for_method
+  - dotnet\_style\_qualification\_for_event
 - [Słowa kluczowe języka zamiast framework wpisz nazwy odwołań do typu](#language-keywords)
-   - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
-   - polecenia DotNet\_styl\_wstępnie zdefiniowanych\_typu\_dla\_member_access
+  - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
+  - polecenia DotNet\_styl\_wstępnie zdefiniowanych\_typu\_dla\_member_access
 - [Preferencje modyfikator](#normalize-modifiers)
-   - dotnet\_style\_require\_accessibility_modifiers
-   - csharp\_preferred\_modifier_order
-   - visual\_basic\_preferred\_modifier_order
-   - polecenia DotNet\_styl\_tylko do odczytu\_pola
+  - dotnet\_style\_require\_accessibility_modifiers
+  - csharp\_preferred\_modifier_order
+  - visual\_basic\_preferred\_modifier_order
+  - polecenia DotNet\_styl\_tylko do odczytu\_pola
 - [Preferencje nawiasów](#parentheses-preferences)
-   - polecenia DotNet\_styl\_nawiasów\_w\_arytmetyczne\_binarne\_operatorów
-   - polecenia DotNet\_styl\_nawiasów\_w\_innych\_binarne\_operatorów
-   - polecenia DotNet\_styl\_nawiasów\_w\_innych\_operatorów
-   - polecenia DotNet\_styl\_nawiasów\_w\_relacyjnych\_binarne\_operatorów
+  - polecenia DotNet\_styl\_nawiasów\_w\_arytmetyczne\_binarne\_operatorów
+  - polecenia DotNet\_styl\_nawiasów\_w\_innych\_binarne\_operatorów
+  - polecenia DotNet\_styl\_nawiasów\_w\_innych\_operatorów
+  - polecenia DotNet\_styl\_nawiasów\_w\_relacyjnych\_binarne\_operatorów
 - [Preferencje wyrażeń poziom](#expression-level-preferences)
-   - dotnet\_style\_object_initializer
-   - dotnet\_style\_collection_initializer
-   - dotnet\_style\_explicit\_tuple_names
-   - polecenia DotNet\_styl\_Preferuj\_wywnioskować\_tuple_names
-   - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
-   - polecenia DotNet\_styl\_Preferuj\_automatycznie\_właściwości
-   - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
-   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
-   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
+  - dotnet\_style\_object_initializer
+  - dotnet\_style\_collection_initializer
+  - dotnet\_style\_explicit\_tuple_names
+  - polecenia DotNet\_styl\_Preferuj\_wywnioskować\_tuple_names
+  - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
+  - polecenia DotNet\_styl\_Preferuj\_automatycznie\_właściwości
+  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
+  - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
+  - dotnet\_style\_prefer\_conditional\_expression\_over\_return
 - ["Null" Sprawdzanie preferencje](#null-checking-preferences)
-   - dotnet\_style\_coalesce_expression
-   - dotnet\_style\_null_propagation
+  - dotnet\_style\_coalesce_expression
+  - dotnet\_style\_null_propagation
 
 ### <a name="this-and-me"></a>"This." i "Me." Kwalifikatory
 
@@ -949,30 +949,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 Reguły stylów w tej sekcji odnoszą się do języka C# tylko.
 
 - [Typy jawne i niejawne](#implicit-and-explicit-types)
-   - CSharp\_styl\_var\_dla\_wbudowane\_in_types
-   - csharp\_style\_var\_when\_type\_is_apparent
-   - CSharp\_styl\_var_elsewhere
+  - CSharp\_styl\_var\_dla\_wbudowane\_in_types
+  - csharp\_style\_var\_when\_type\_is_apparent
+  - CSharp\_styl\_var_elsewhere
 - [Elementy członkowskie z wyrażeniem w treści](#expression-bodied-members)
-   - csharp\_style\_expression\_bodied_methods
-   - csharp\_style\_expression\_bodied_constructors
-   - csharp\_style\_expression\_bodied_operators
-   - csharp\_style\_expression\_bodied_properties
-   - csharp\_style\_expression\_bodied_indexers
-   - csharp\_style\_expression\_bodied_accessors
+  - csharp\_style\_expression\_bodied_methods
+  - csharp\_style\_expression\_bodied_constructors
+  - csharp\_style\_expression\_bodied_operators
+  - csharp\_style\_expression\_bodied_properties
+  - csharp\_style\_expression\_bodied_indexers
+  - csharp\_style\_expression\_bodied_accessors
 - [Dopasowanie do wzorca](#pattern-matching)
-   - CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jest\_z\_cast_check
-   - CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jako\_z\_null_check
+  - CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jest\_z\_cast_check
+  - CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jako\_z\_null_check
 - [Śródwierszowe deklaracje zmiennych](#inlined-variable-declarations)
-   - csharp\_style\_inlined\_variable_declaration
+  - csharp\_style\_inlined\_variable_declaration
 - [Preferencje wyrażeń poziom](#expression-level-preferences)
-   - csharp\_prefer\_simple\_default_expression
-   - CSharp\_styl\_zdekonstruowana\_variable_declaration
-   - csharp\_style\_pattern\_local\_over\_anonymous_function
+  - csharp\_prefer\_simple\_default_expression
+  - CSharp\_styl\_zdekonstruowana\_variable_declaration
+  - csharp\_style\_pattern\_local\_over\_anonymous_function
 - ["Null" Sprawdzanie preferencje](#null-checking-preferences)
-   - csharp\_style\_throw_expression
-   - csharp\_style\_conditional\_delegate_call
+  - csharp\_style\_throw_expression
+  - csharp\_style\_conditional\_delegate_call
 - [Preferencje bloku kodu](#code-block-preferences)
-   - CSharp\_prefer_braces
+  - CSharp\_prefer_braces
 
 ### <a name="implicit-and-explicit-types"></a>Typy jawne i niejawne
 

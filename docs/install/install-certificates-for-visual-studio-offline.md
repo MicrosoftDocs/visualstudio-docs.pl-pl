@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974738"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826284"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio
 
@@ -132,23 +132,23 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
 
 ::: moniker range="vs-2017"
 
-3. Pliki p12, w tym folderze każdego zawierają pośredniego certyfikatu i certyfikatu głównego. Certyfikaty zainstalowane zostały większości systemów, które są aktualne z usługą Windows Update.
+3\. Pliki p12, w tym folderze każdego zawierają pośredniego certyfikatu i certyfikatu głównego. Certyfikaty zainstalowane zostały większości systemów, które są aktualne z usługą Windows Update.
 
 * **ManifestSignCertificates.p12** zawiera:
-    * Pośredniego certyfikatu: **Podpisywanie 2011 UPW kodu firmy Microsoft**
-        * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
-    * Certyfikat główny: **Microsoft główny urząd certyfikacji 2011**
-        * Wymagany w systemach Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
+  * Pośredniego certyfikatu: **Podpisywanie 2011 UPW kodu firmy Microsoft**
+    * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
+  * Certyfikat główny: **Microsoft główny urząd certyfikacji 2011**
+    * Wymagany w systemach Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
 * **ManifestCounterSignCertificates.p12** zawiera:
-    * Pośredniego certyfikatu: **Microsoft Time-Stamp PCA 2010**
-        * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
-    * Certyfikat główny: **Microsoft główny urząd certyfikacji 2010**
-        * Wymagany dla systemów Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
+  * Pośredniego certyfikatu: **Microsoft Time-Stamp PCA 2010**
+    * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
+  * Certyfikat główny: **Microsoft główny urząd certyfikacji 2010**
+    * Wymagany dla systemów Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
 * **Vs_installer_opc. SignCertificates.p12** zawiera:
-    * Pośredniego certyfikatu: **Podpisywanie UPW kodu firmy Microsoft**
-        * Wymagane we wszystkich systemach. Należy pamiętać, że systemy za pomocą wszystkie aktualizacje stosowane z witryny Windows Update nie mogą mieć ten certyfikat.
-    * Certyfikat główny: **Microsoft główny urząd certyfikacji**
-        * Wymagana. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
+  * Pośredniego certyfikatu: **Podpisywanie UPW kodu firmy Microsoft**
+    * Wymagane we wszystkich systemach. Należy pamiętać, że systemy za pomocą wszystkie aktualizacje stosowane z witryny Windows Update nie mogą mieć ten certyfikat.
+  * Certyfikat główny: **Microsoft główny urząd certyfikacji**
+    * Wymagana. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
 
 **Aktualizacja**: Dla programu Visual Studio 2017 w wersji Preview należy zachować 15,8 2 lub nowszego, Instalator programu Visual Studio wymaga tylko certyfikaty główne do zainstalowania w systemie.
 
@@ -157,20 +157,20 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.p12** zawiera:
-    * Pośredniego certyfikatu: **Podpisywanie 2011 UPW kodu firmy Microsoft**
-        * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
-    * Certyfikat główny: **Microsoft główny urząd certyfikacji 2011**
-        * Wymagany w systemach Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
+  * Pośredniego certyfikatu: **Podpisywanie 2011 UPW kodu firmy Microsoft**
+    * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
+  * Certyfikat główny: **Microsoft główny urząd certyfikacji 2011**
+    * Wymagany w systemach Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
 * **ManifestCounterSignCertificates.p12** zawiera:
-    * Pośredniego certyfikatu: **Microsoft Time-Stamp PCA 2010**
-        * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
-    * Certyfikat główny: **Microsoft główny urząd certyfikacji 2010**
-        * Wymagany dla systemów Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
+  * Pośredniego certyfikatu: **Microsoft Time-Stamp PCA 2010**
+    * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
+  * Certyfikat główny: **Microsoft główny urząd certyfikacji 2010**
+    * Wymagany dla systemów Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
 * **Vs_installer_opc. SignCertificates.p12** zawiera:
-    * Pośredniego certyfikatu: **Podpisywanie UPW kodu firmy Microsoft**
-        * Wymagane we wszystkich systemach. Należy pamiętać, że systemy za pomocą wszystkie aktualizacje stosowane z witryny Windows Update nie mogą mieć ten certyfikat.
-    * Certyfikat główny: **Microsoft główny urząd certyfikacji**
-        * Wymagana. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
+  * Pośredniego certyfikatu: **Podpisywanie UPW kodu firmy Microsoft**
+    * Wymagane we wszystkich systemach. Należy pamiętać, że systemy za pomocą wszystkie aktualizacje stosowane z witryny Windows Update nie mogą mieć ten certyfikat.
+  * Certyfikat główny: **Microsoft główny urząd certyfikacji**
+    * Wymagana. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
 
 Instalator programu Visual Studio wymaga tylko certyfikaty główne do zainstalowania w systemie.
 
@@ -188,7 +188,7 @@ Jest jednym ze sposobów, aby sprawdzić instalację systemu wykonaj następują
   a. Kliknij przycisk **pliku**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
   b. Kliknij dwukrotnie **certyfikaty**, wybierz opcję **konto komputera**, a następnie kliknij przycisk **dalej**.<br/>
   c. Wybierz **komputera lokalnego**, kliknij przycisk **Zakończ**, a następnie kliknij przycisk **OK**.<br/>
-  d. Rozwiń **certyfikaty (komputer lokalny)**.<br/>
+  d. Rozwiń **certyfikaty (komputer lokalny)** .<br/>
   e. Rozwiń **zaufane główne urzędy certyfikacji**, a następnie wybierz pozycję **certyfikaty**.<br/>
     * Sprawdź tę listę pod kątem certyfikatów głównych niezbędne.<br/>
 

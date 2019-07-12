@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433335"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825592"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
 
 - `UI` Projekt zawiera przykładowe pracy kontrolki formularza, powiązany z język DSL. Jednak nie będzie ona działać po zostały zmienione w definicji DSL. `UI` Projekt zawiera:  
 
-    - Klasy Windows Forms o nazwie `ModelViewControl`.  
+  - Klasy Windows Forms o nazwie `ModelViewControl`.  
 
-    - Plik o nazwie `DataBinding.cs` zawierający dodatkowe częściową definicję `ModelViewControl`. Aby wyświetlić jego zawartość w **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku i wybierz polecenie **Wyświetl kod**.  
+  - Plik o nazwie `DataBinding.cs` zawierający dodatkowe częściową definicję `ModelViewControl`. Aby wyświetlić jego zawartość w **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku i wybierz polecenie **Wyświetl kod**.  
 
 ### <a name="about-the-ui-project"></a>Temat projektu interfejsu użytkownika  
  Po zaktualizowaniu pliku definicji DSL, aby określić własne DSL, trzeba będzie zaktualizować kontrolki na `UI` projektu DSL. W odróżnieniu od `Dsl` i `DslPackage` projektami, na przykład `UI` projektu nie jest generowany na podstawie `DslDefinitionl.dsl`. Możesz dodać .TT — pliki do generowania kodu, jeśli chcesz, mimo że nie jest objęty w tym przewodniku.  
@@ -241,9 +241,9 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
 
 1. W widoku Projekt FarmControl.cs zaznacz pole proste, takie jak nazwa, rozmiar lub IsOrganic.  
 
-2. W oknie właściwości rozwiń **powiązania danych** , a następnie otwórz **(zaawansowane)**.  
+2. W oknie właściwości rozwiń **powiązania danych** , a następnie otwórz **(zaawansowane)** .  
 
-     W **formatowanie i powiązywanie zaawansowane** okna dialogowego, w obszarze **tryb aktualizacji źródła danych**, wybierz **onpropertychanged —**.  
+     W **formatowanie i powiązywanie zaawansowane** okna dialogowego, w obszarze **tryb aktualizacji źródła danych**, wybierz **onpropertychanged —** .  
 
 3. Skompiluj i uruchom rozwiązanie.  
 

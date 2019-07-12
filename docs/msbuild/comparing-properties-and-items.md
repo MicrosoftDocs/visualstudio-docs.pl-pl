@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569683"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825901"
 ---
 # <a name="compare-properties-and-items"></a>Porównanie właściwości i elementów
 Właściwości programu MSBuild i elementy zarówno służą do przekazywania informacji do zadań, oceny warunków i przechowywania wartości, które można się odwoływać w całym pliku projektu.
@@ -93,15 +93,15 @@ To nie jest jednak całą historię. Jeśli jest zdefiniowana właściwość, de
 
 - W fazie obliczania kompilacji:
 
-    - Właściwości są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane. Wartości właściwości w $(PropertyName) formularza zostaną rozwinięte w wyrażeniach. Ustawiono wartość właściwości rozszerzonej wyrażenia.
+  - Właściwości są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane. Wartości właściwości w $(PropertyName) formularza zostaną rozwinięte w wyrażeniach. Ustawiono wartość właściwości rozszerzonej wyrażenia.
 
-    - Definicje elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości już zostały rozszerzone w wyrażeniach. Metadane wartości są ustawiane na rozwinięty wyrażeń.
+  - Definicje elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości już zostały rozszerzone w wyrażeniach. Metadane wartości są ustawiane na rozwinięty wyrażeń.
 
-    - Typy elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Wartości elementów w @(ItemType) formularza zostaną rozwinięte. Przekształceń elementów również są rozwijane. W wyrażeniach w już zostały rozszerzone funkcje właściwości i wartości. Wartości elementów listy i metadanych są ustawiane na rozwinięty wyrażenia.
+  - Typy elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Wartości elementów w @(ItemType) formularza zostaną rozwinięte. Przekształceń elementów również są rozwijane. W wyrażeniach w już zostały rozszerzone funkcje właściwości i wartości. Wartości elementów listy i metadanych są ustawiane na rozwinięty wyrażenia.
 
 - W fazie wykonanie procesu kompilacji:
 
-    - Właściwości i elementy, które są zdefiniowane w ramach obiekty docelowe są oceniane razem w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane, i wartości właściwości zostaną rozwinięte w wyrażeniach. Wartości elementów i przekształceń elementów również są rozwijane. Wartości właściwości elementu typu wartości i wartości metadanych są ustawione na rozwinięty wyrażeń.
+  - Właściwości i elementy, które są zdefiniowane w ramach obiekty docelowe są oceniane razem w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane, i wartości właściwości zostaną rozwinięte w wyrażeniach. Wartości elementów i przekształceń elementów również są rozwijane. Wartości właściwości elementu typu wartości i wartości metadanych są ustawione na rozwinięty wyrażeń.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Subtelnych efektów kolejność obliczania
 W fazie oceny kompilacji oceny właściwości poprzedza obliczania wartości elementu. Niemniej jednak właściwości mogą mieć wartości, które wydają się zależy od wartości elementu. Rozważmy poniższy skrypt.

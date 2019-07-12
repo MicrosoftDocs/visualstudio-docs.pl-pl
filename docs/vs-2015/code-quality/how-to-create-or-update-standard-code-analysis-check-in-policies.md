@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436852"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825815"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Instrukcje: Tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Możesz wymagać, można uruchomić analizę kodu dla wszystkich projektów kodu
   
 - Z **Uruchom ten zestaw reguł** listy, użyj jednej z następujących metod:  
   
-    - Wybierz zestaw standardowych reguł firmy Microsoft.  
-  
-    - Aby wybrać niestandardowego zestawu reguł, kliknij przycisk  **\<wybierz zestaw reguł z kontroli źródła... >** , a następnie wpisz ścieżkę kontroli wersji, reguły, ustaw w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - Aby uzyskać więcej informacji o sposobie tworzenia i wdrażania reguły niestandardowe zasady ewidencjonowania, zobacz [Implementowanie niestandardowych zaewidencjonowania zasad dla zarządzanego kodu](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+  - Wybierz zestaw standardowych reguł firmy Microsoft.  
+
+  - Aby wybrać niestandardowego zestawu reguł, kliknij przycisk  **\<wybierz zestaw reguł z kontroli źródła... >** , a następnie wpisz ścieżkę kontroli wersji, reguły, ustaw w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - Aby uzyskać więcej informacji o sposobie tworzenia i wdrażania reguły niestandardowe zasady ewidencjonowania, zobacz [Implementowanie niestandardowych zaewidencjonowania zasad dla zarządzanego kodu](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie zasad zaewidencjonowania analizy kodu i korzystanie z nich](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038176"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821637"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezen
   
 - [Metadane elementu](#BKMK_ItemMetadata)  
   
-    - [Odwoływanie się do metadanych elementu w pliku projektu](#BKMK_ReferencingItemMetadata)  
-  
-    - [Metadane dobrze znanego elementu](#BKMK_WellKnownItemMetadata)  
-  
-    - [Przekształcanie typów elementów przy użyciu metadanych](#BKMK_Transforming)  
+  - [Odwoływanie się do metadanych elementu w pliku projektu](#BKMK_ReferencingItemMetadata)  
+
+  - [Metadane dobrze znanego elementu](#BKMK_WellKnownItemMetadata)  
+
+  - [Przekształcanie typów elementów przy użyciu metadanych](#BKMK_Transforming)  
   
 - [Definicje elementów](#BKMK_ItemDefinitions)  
   
 - [Atrybuty elementów w ItemGroup obiektu docelowego](#BKMK_AttributesWithinTargets)  
   
-    - [Usuń atrybut](#BKMK_RemoveAttribute)  
-  
-    - [KeepMetadata Attribute](#BKMK_KeepMetadata)  
-  
-    - [RemoveMetadata Attribute](#BKMK_RemoveMetadata)  
-  
-    - [Atrybut KeepDuplicates](#BKMK_KeepDuplicates)  
+  - [Usuń atrybut](#BKMK_RemoveAttribute)  
+
+  - [KeepMetadata Attribute](#BKMK_KeepMetadata)  
+
+  - [RemoveMetadata Attribute](#BKMK_RemoveMetadata)  
+
+  - [Atrybut KeepDuplicates](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a> Tworzenie pozycji przechowywanych w pliku projektu  
  Możesz deklarować elementów w pliku projektu jako element podrzędny elementy [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Nazwa elementu podrzędnego jest typ elementu. `Include` Atrybut elementu określa elementy (pliki) do uwzględnienia z tego typu elementu. Na przykład, następujący kod XML tworzy typ elementu, który nosi nazwę `Compile`, który zawiera dwa pliki.  
@@ -96,7 +96,7 @@ Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezen
   
 - ? wieloznaczny pasuje do pojedynczego znaku.  
   
-- * Wieloznacznego dopasowuje zero lub więcej znaków.  
+- \* Wieloznacznego dopasowuje zero lub więcej znaków.  
   
 - ** Ścieżka częściowa pasuje do sekwencji znaków symboli wieloznacznych.  
   

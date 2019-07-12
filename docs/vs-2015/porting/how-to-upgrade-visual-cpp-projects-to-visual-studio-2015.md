@@ -12,14 +12,14 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c998433ca96c46f6a24b75aec5d3a2a95912b786
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696442"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823295"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Instrukcje: Aktualizacja projektów Visual C++ w Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Instrukcje: Uaktualnianie projektów programu Visual C++ do programu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dokumentacja Najpóźniejsza dla programu Visual Studio 2017, zobacz [przewodnik przenoszenia Visual C++ i uaktualniania](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
@@ -36,12 +36,12 @@ Przy pierwszym otwarciu projektu Visual C++, który został utworzony we wcześn
 
 - Jeśli projekt (.vcxproj) został utworzony w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], lub [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] dostępne są dwie opcje:
 
-    - Można pominąć tę aktualizację. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] załaduje projekt bez wprowadzania żadnych zmian, jeśli ma on dostęp do narzędzi Visual C++ w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], lub [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Można otworzyć ten dostęp przez zainstalowanie wersji programu Visual Studio, którego projekt został utworzony za pomocą na tym samym komputerze, który ma [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Aby uzyskać więcej informacji, zobacz [zainstalowanie wersji programu Visual Studio Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
+  - Można pominąć tę aktualizację. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] załaduje projekt bez wprowadzania żadnych zmian, jeśli ma on dostęp do narzędzi Visual C++ w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], lub [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Można otworzyć ten dostęp przez zainstalowanie wersji programu Visual Studio, którego projekt został utworzony za pomocą na tym samym komputerze, który ma [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Aby uzyskać więcej informacji, zobacz [zainstalowanie wersji programu Visual Studio Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
 
-    - Można zaktualizować projekt, umożliwiając [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zmian, które są opisane w dalszej części tego tematu. Jeśli masz więcej niż jeden projekt języka Visual C++ w swoim rozwiązaniu, należy zaktualizować wszystkie z nich.
+  - Można zaktualizować projekt, umożliwiając [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zmian, które są opisane w dalszej części tego tematu. Jeśli masz więcej niż jeden projekt języka Visual C++ w swoim rozwiązaniu, należy zaktualizować wszystkie z nich.
 
-        > [!NOTE]
-        > Jeśli aktualizacja zostanie odrzucona po wyświetleniu monitu, projekt można zaktualizować później, wybierając **Aktualizuj projekt VC ++** na **projektu** menu. Jeśli polecenie nie jest widoczna, następnie aktualizacja nie jest wymagana.
+    > [!NOTE]
+    > Jeśli aktualizacja zostanie odrzucona po wyświetleniu monitu, projekt można zaktualizować później, wybierając **Aktualizuj projekt VC ++** na **projektu** menu. Jeśli polecenie nie jest widoczna, następnie aktualizacja nie jest wymagana.
 
 ## <a name="upgrading-a-visual-c-project"></a>Uaktualnienie projektu Visual C++
  Jeśli zezwolisz programowi [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] automatycznie zaktualizować projekt, zmiany te są wykonywane:

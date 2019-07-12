@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyść platformy Azure, zawarte w Twojej subskrypcji programu Visual Studio.
-ms.openlocfilehash: 12f547e195ed5585a6c29b061ad57f0cf1392c3c
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784661"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823744"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Dzięki platformie Microsoft Azure w ramach subskrypcji programu Visual Studio
 
@@ -23,15 +23,15 @@ Jako subskrybent programu Visual Studio mogą używać programu Microsoft Azure,
 
 |                 Poziom subskrypcji / Program                 |           Korzyść           |                         Podlega odnowieniu?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     150 USD środków miesięcznie     |                             Tak                             ||
+|              Visual Studio Enterprise Standard               |     150 USD środków miesięcznie     |                             Yes                             ||
 |               Visual Studio Enterprise miesięczna               |        Niedostępne        |                                                             |
 |             Visual Studio Professional Standard              |     50 USD środków miesięcznie      |                             Tak
 |              Visual Studio Professional miesięczna              |        Niedostępne        |                                                             |
-|                    Visual Studio Test Pro                    |     50 USD środków miesięcznie      |                             Yes                             |
+|                    Visual Studio Test Pro                    |     50 USD środków miesięcznie      |                             Tak                             |
 |                        Platformy MSDN                        |     miesięczne środki w wysokości 100 USD     |                             Tak                             |
-|               Visual Studio Enterprise - NFR\*               |     150 USD środków miesięcznie     |                             Yes                             |
+|               Visual Studio Enterprise - NFR\*               |     150 USD środków miesięcznie     |                             Tak                             |
 |                Visual Studio Enterprise - FTE                |     150 USD środków miesięcznie     |                             Tak                             |
-|     Visual Studio Enterprise — sieci Microsoft Partner Network     |     150 USD środków miesięcznie     |                             Tak                             |
+|     Visual Studio Enterprise — sieci Microsoft Partner Network     |     150 USD środków miesięcznie     |                             Yes                             |
 |    Visual Studio Professional — sieci Microsoft Partner Network    |        Niedostępne        |                                                             |
 |        Visual Studio Enterprise — Imagine (standardowa)         |        Niedostępne        |                                                             |
 |         Visual Studio Enterprise — Imagine (Premium)         |        Niedostępne        |                                                             |
@@ -107,7 +107,7 @@ Jeśli uważasz, że błąd otrzymujesz tę wiadomość e-mail, skontaktuj się 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 
 - Potrzebujesz pomocy przy użyciu platformy Azure?  Zapoznaj się z tymi zasobami:
-    - Pomoc techniczna: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-    - [Dokumentacja platformy Azure](/azure/)
+  - Pomoc techniczna: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+  - [Dokumentacja platformy Azure](/azure/)
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
 - Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

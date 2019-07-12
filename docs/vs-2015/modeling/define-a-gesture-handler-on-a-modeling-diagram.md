@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433160"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825929"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definiowanie procedury obsługi gestów na diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,34 +282,34 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
 - `ShapeElement target`. Kształt lub diagram, na którym użytkownik przenosi coś.  
   
-     `ShapeElement` jest klasą we wdrażaniu, która jest podporządkowana narzędziu UML narzędzia do modelowania. Aby zmniejszyć ryzyko wprowadzenia modelu UML i diagramów w niespójnym stanie, firma Microsoft zaleca, aby używać metody tej klasy bezpośrednio. Zamiast tego, owiń element w `IShape`, a następnie użyj metod opisanych w [wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).  
-  
-    - Aby uzyskać `IShape`:  
-  
-        ```  
-        IShape targetIShape = target.CreateIShape(target);  
-        ```  
-  
-    - Aby uzyskać element modelu, który jest określony przez przeciąganie lub operację dwukrotnego kliknięcia:  
-  
-        ```  
-        IElement target = targetIShape.Element;  
-        ```  
-  
-         Można rzutować to do bardziej określonego typu elementu.  
-  
-    - Aby uzyskać magazyn modeli UML, który zawiera UML model:  
-  
-        ```  
-        IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
-        ```  
-  
-    - Aby uzyskać dostęp do hosta i usługodawcy:  
-  
-        ```  
-        target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
-        ```  
+    `ShapeElement` jest klasą we wdrażaniu, która jest podporządkowana narzędziu UML narzędzia do modelowania. Aby zmniejszyć ryzyko wprowadzenia modelu UML i diagramów w niespójnym stanie, firma Microsoft zaleca, aby używać metody tej klasy bezpośrednio. Zamiast tego, owiń element w `IShape`, a następnie użyj metod opisanych w [wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).  
+
+  - Aby uzyskać `IShape`:  
+
+      ```  
+      IShape targetIShape = target.CreateIShape(target);  
+      ```  
+
+  - Aby uzyskać element modelu, który jest określony przez przeciąganie lub operację dwukrotnego kliknięcia:  
+
+      ```  
+      IElement target = targetIShape.Element;  
+      ```  
+
+        You can cast this to a more specific type of element.  
+
+  - Aby uzyskać magazyn modeli UML, który zawiera UML model:  
+
+      ```  
+      IModelStore modelStore =   
+        targetIShape.Element.GetModelStore();   
+      ```  
+
+  - Aby uzyskać dostęp do hosta i usługodawcy:  
+
+      ```  
+      target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
+      ```  
   
 - `DiagramDragEventArgs eventArgs`. Ten parametr niesie ze sobą serializowany formularz z obiektem źródłowym operacji przeciągania:  
   

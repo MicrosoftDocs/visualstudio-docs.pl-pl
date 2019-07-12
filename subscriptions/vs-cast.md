@@ -6,12 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat wyróżnienia RZUTOWANIA korzyści dostępne w wybranych subskrypcjach programu Visual Studio
-ms.openlocfilehash: 9ee1468534e9f0c68465f841bd43e5fac0229780
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784648"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823682"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Wyróżnij RZUTOWANIA korzyści w ramach subskrypcji programu Visual Studio
 
@@ -97,8 +97,8 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy dotyczącej korzystania z wyróżnić RZUTOWANIA?  Zapoznaj się z tymi zasobami:
-    - [Prześlij żądanie pomocy technicznej](https://casthighlight.com/support/)
-    - [Getting Started Guide (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+  - [Prześlij żądanie pomocy technicznej](https://casthighlight.com/support/)
+  - [Getting Started Guide (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
 - Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835939"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824163"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: Wywoływanie modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera
   W tym instruktażu pokazano, jak wywołać modelu obiektu klienta SharePoint z rozszerzeniem dla **połączeń SharePoint** w węźle **Eksploratora serwera**. Aby uzyskać więcej informacji o sposobie używania modelu obiektu klienta SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -27,9 +27,9 @@ ms.locfileid: "66835939"
 
 - Tworzenie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia, która rozszerza **połączeń SharePoint** węźle **Eksploratora serwera** w następujący sposób:
 
-    - Dodaje rozszerzenie **galerii składników Web Part** węźle każdy węzeł witryny programu SharePoint w **Eksploratora serwera**. Ten nowy węzeł zawiera węzły podrzędne, które reprezentują każdego składnika Web Part w galerii składników Web Part w witrynie.
+  - Dodaje rozszerzenie **galerii składników Web Part** węźle każdy węzeł witryny programu SharePoint w **Eksploratora serwera**. Ten nowy węzeł zawiera węzły podrzędne, które reprezentują każdego składnika Web Part w galerii składników Web Part w witrynie.
 
-    - Rozszerzenie definiuje nowy typ węzła, który reprezentuje wystąpienie składnika Web Part. Ten nowy typ węzła jest podstawą dla węzłów podrzędnych w nowym **galerii składników Web Part** węzła. Nowy typ węzła składnika Web Part wyświetla informacje w **właściwości** okna o składnika Web Part, który reprezentuje węzeł.
+  - Rozszerzenie definiuje nowy typ węzła, który reprezentuje wystąpienie składnika Web Part. Ten nowy typ węzła jest podstawą dla węzłów podrzędnych w nowym **galerii składników Web Part** węzła. Nowy typ węzła składnika Web Part wyświetla informacje w **właściwości** okna o składnika Web Part, który reprezentuje węzeł.
 
 - Tworzenie pakietu Visual Studio rozszerzenia (VSIX), aby wdrożyć rozszerzenie.
 

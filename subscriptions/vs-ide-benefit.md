@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/03/2019
 ms.topic: conceptual
 description: Dowiedz się, jak pobrać i zainstalować program Visual Studio IDE, zawarte w Twojej subskrypcji programu Visual Studio.
-ms.openlocfilehash: fa01d3f9e5ffe12f4fbe7216750f14feaa1052e4
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784577"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824656"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Za pośrednictwem korzyści z programu Visual Studio 2019 r.
 
@@ -64,8 +64,8 @@ Aby pobrać IDE:
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
-| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dostępne                                                            |  Yes          |
+| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes          |
+| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Yes         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
 
@@ -78,6 +78,6 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy przy użyciu programu Visual Studio IDE, zapoznaj się z tymi zasobami:
-    - Pomoc techniczna: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [Dokumentacja](/visualstudio/)
+  - Pomoc techniczna: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [Dokumentacja](/visualstudio/)
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).

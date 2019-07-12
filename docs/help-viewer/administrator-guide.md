@@ -3,17 +3,17 @@ title: Podręcznik administratora programu Podgląd pomocy
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972996"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825125"
 ---
 # <a name="help-viewer-administrator-guide"></a>Podręcznik administratora programu Podgląd pomocy
 
@@ -114,7 +114,7 @@ Następnie należy spakować zawartości, aby można było wdrożyć na komputer
 
 #### <a name="to-package-the-content"></a>Aby spakować zawartość
 
-1. Utwórz folder do skopiowania do niego zawartość na potrzeby późniejszego wdrożenia. Na przykład: *C:\VSHelp*.
+1. Utwórz folder do skopiowania do niego zawartość na potrzeby późniejszego wdrożenia. Przykład: *C:\VSHelp*.
 
 2. Otwórz *cmd.exe* z uprawnieniami administratora.
 

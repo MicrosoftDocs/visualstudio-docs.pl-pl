@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6e96325edd3a17a09437e093590cc02a55504a5
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777642"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825828"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasa ze źródła.
@@ -44,15 +44,15 @@ Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki s
 
 - **GenerateFromSchema**
 
-     Opcjonalnie **ciąg** parametru.
+  Opcjonalnie **ciąg** parametru.
 
-     Określa typy, które są generowane na podstawie określonego schematu.
+  Określa typy, które są generowane na podstawie określonego schematu.
 
-     Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.
+  Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.
 
-    - **classes** - **/classes**
+  - **classes** -  **/classes**
 
-    - **dataset** - **/dataset**
+  - **dataset** -  **/dataset**
 
 - **Język**
 

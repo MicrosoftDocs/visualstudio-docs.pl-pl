@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676591"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825526"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Sprawdź poprzednie Stany aplikacji przy użyciu funkcji IntelliTrace krok do tyłu w programie Visual Studio (Visual Studio Enterprise)
 
@@ -36,7 +36,7 @@ W tym samouczku wykonasz następujące czynności:
 
 1. Otwórz **narzędzia** > **opcje** > **IntelliTrace** ustawienia i wybierz opcję **IntelliTrace zdarzenia i migawki** .
 
-    Począwszy od Visual Studio Enterprise 2017 w wersji 15.9 2 (wersja zapoznawcza), ta opcja jest **migawki IntelliTrace (zarządzany i natywny)**.
+    Począwszy od Visual Studio Enterprise 2017 w wersji 15.9 2 (wersja zapoznawcza), ta opcja jest **migawki IntelliTrace (zarządzany i natywny)** .
 
     ![Włącz tryb migawki i zdarzenia IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "migawki i zdarzenia IntelliTrace włączyć tryb")
 
@@ -119,8 +119,8 @@ Wpływ na ogólną wydajność wykonywania krokowego zależy od aplikacji. Koszt
 
 * Podczas procesu aplikacji migawki w aplikacji korzystającej z utrwalonego pliku mapowane w pamięci, proces z migawką utrzymuje blokady na wyłączność plików zamapowanych w pamięci (nawet po procesie nadrzędnym został wydany blokady). Inne procesy mogą nadal odczytywać, ale nie zapisywać do pliku mapowanych na pamięć.
 
-    Obejście problemu:
-    * Wyczyść wszystkie migawki poprzez zakończenie sesji debugowania.
+  Obejście problemu:
+  * Wyczyść wszystkie migawki poprzez zakończenie sesji debugowania.
 
 * Podczas debugowania aplikacji, na których proces składa się z dużą liczbą regionów unikatowy pamięci, takie jak aplikacja, która ładuje dużej liczby bibliotek DLL, może mieć wpływ przechodzenie krok po kroku wydajności przy użyciu migawek włączone. Ten problem zostanie rozwiązany w przyszłej wersji systemu Windows. Jeśli występuje ten problem, skontaktowanie się z nami pod adresem stepback@microsoft.com.
 

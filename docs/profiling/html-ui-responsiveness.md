@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: cc7c049e0b1c5962b831e9084685b205acda38fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8dac5c929289b9a891f7dc5cb1bf803e1abd5b3a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433459"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826111"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML Universal Windows Apps
 W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikacjach przy użyciu Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępne dla uniwersalnych aplikacji dla Windows.
@@ -254,9 +254,9 @@ if (performance.mark && performance.measure) {
 
 - Wyświetlanie godziny rozpoczęcia przybliżony czas trwania i zakończenia zdarzenia w widoku osi czasu i siatki. Oś czasu wykresu szczegółowe informacje można wyświetlić okresy od 30 milisekund do 30 sekund w zależności od stanu powiększenia widoku siatki. Aby uzyskać wartości czasu trwania:
 
-    - Całkowity czas reprezentuje czas trwania zdarzenia, łącznie z elementami podrzędnymi zdarzeń. W widoku siatki ta wartość pojawia się jako pierwsza.
+  - Całkowity czas reprezentuje czas trwania zdarzenia, łącznie z elementami podrzędnymi zdarzeń. W widoku siatki ta wartość pojawia się jako pierwsza.
 
-    - Wyłączny czas reprezentują czas trwania zdarzenia, nie wliczając dzieci zdarzeń. W widoku siatki ta wartość jest wyświetlana w nawiasach.
+  - Wyłączny czas reprezentują czas trwania zdarzenia, nie wliczając dzieci zdarzeń. W widoku siatki ta wartość jest wyświetlana w nawiasach.
 
 - Rozwiń zdarzenia w hierarchii, aby wyświetlić elementy podrzędne zdarzenia. Elementy podrzędne zdarzeń są inne zdarzenia, które są wywoływane przez zdarzenie nadrzędne. Na przykład zdarzenie modelu DOM może być detektorów zdarzeń, które są wyświetlane jako elementy podrzędne. Odbiornik zdarzeń mogą mieć inne zdarzenia, które są wynikiem, takich jak zdarzenia układu.
 
@@ -264,12 +264,12 @@ if (performance.mark && performance.measure) {
 
 - Wyświetl szczegóły każdego zdarzenia w okienku szczegółów (w okienku po prawej stronie). Właściwości różnią się w zależności od określonego zdarzenia, jak pokazują powyższe przykłady:
 
-    - Czasomierze, detektorów zdarzeń (zdarzenia DOM) i wywołania zwrotne ramek animacji **funkcji wywołania zwrotnego** właściwość zawiera również link do lokalizacji kodu źródłowego, wraz z nazwą zdarzenia funkcji obsługi lub wywołania zwrotnego.
+  - Czasomierze, detektorów zdarzeń (zdarzenia DOM) i wywołania zwrotne ramek animacji **funkcji wywołania zwrotnego** właściwość zawiera również link do lokalizacji kodu źródłowego, wraz z nazwą zdarzenia funkcji obsługi lub wywołania zwrotnego.
 
-    - Czasomierze, detektorów zdarzeń (zdarzenia DOM), układ zdarzenia i wywołania zwrotne ramek animacji oznaczone kolorami podsumowanie wybranego zdarzenia i jego elementy podrzędne są wyświetlane w **podsumowanie całkowitego czasu** sekcji (pierścień oznaczone kolorami). Każdy wycinek oznaczone kolorami obrazu reprezentuje typ zdarzenia. Etykietki narzędzi, podaj nazwę typu zdarzenia.
+  - Czasomierze, detektorów zdarzeń (zdarzenia DOM), układ zdarzenia i wywołania zwrotne ramek animacji oznaczone kolorami podsumowanie wybranego zdarzenia i jego elementy podrzędne są wyświetlane w **podsumowanie całkowitego czasu** sekcji (pierścień oznaczone kolorami). Każdy wycinek oznaczone kolorami obrazu reprezentuje typ zdarzenia. Etykietki narzędzi, podaj nazwę typu zdarzenia.
 
-    > [!TIP]
-    > Wykres szczegóły osi czasu i **podsumowanie całkowitego czasu** może pomóc w identyfikacji obszarów do optymalizacji. Jeśli jedno z tych widoków zawiera dużą liczbę małych zadań, zdarzenie może być kandydatem do optymalizacji. Na przykład aplikacja może być odświeżanie elementów DOM często skutkuje dużą liczbą układ i analizuje zdarzenia w formacie HTML. Dzięki temu można zoptymalizować wydajność, przetwarzanie wsadowe tych prac.
+  > [!TIP]
+  > Wykres szczegóły osi czasu i **podsumowanie całkowitego czasu** może pomóc w identyfikacji obszarów do optymalizacji. Jeśli jedno z tych widoków zawiera dużą liczbę małych zadań, zdarzenie może być kandydatem do optymalizacji. Na przykład aplikacja może być odświeżanie elementów DOM często skutkuje dużą liczbą układ i analizuje zdarzenia w formacie HTML. Dzięki temu można zoptymalizować wydajność, przetwarzanie wsadowe tych prac.
 
 ### <a name="FilterTimelineDetails"></a> Szczegóły osi czasu filtru
  Wyświetl szczegóły osi czasu, aby konkretne zdarzenie można filtrować, wybierając **filtr, aby zdarzenia** z menu kontekstowego dla określonego zdarzenia. Po wybraniu tej opcji, widok osi czasu i siatki są ograniczone do wybranego zdarzenia. Wybór w wykres wykorzystania procesora CPU również zakresów do określonego zdarzenia.

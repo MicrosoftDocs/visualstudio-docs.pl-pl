@@ -8,12 +8,12 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 07d650e127b5f15abbfac8aef179bb9e01a36297
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 24ea04e59178248c7a9795a2f928c311ba83db2e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096494"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824076"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Narzędzi programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ ms.locfileid: "60096494"
 
 - Sprawdź, czy przyciski, polecenia i linki polecenia, które Uruchom interfejs użytkownika do przechwycenia danych wejściowych użytkownika kończy się wielokropek **[...]** .
 
-     Przykłady:
+  Przykłady:
 
-    - **[Zaawansowane...]**  przycisku w oknie dialogowym.
+  - **[Zaawansowane...]**  przycisku w oknie dialogowym.
 
-    - Opcje polecenia w menu Narzędzia (**Narzędzia > Opcje**) nie powinno być wyświetlane wielokropek, ponieważ uruchomienie okna dialogowego, sama jest celem polecenia.
+  - Opcje polecenia w menu Narzędzia (**Narzędzia > Opcje**) nie powinno być wyświetlane wielokropek, ponieważ uruchomienie okna dialogowego, sama jest celem polecenia.
 
 - Sprawdź, czy interfejs użytkownika zawiera nie skróty, z wyjątkiem warunków będące standardami branżowymi. Na przykład HTML ani TCP/IP nie trzeba województw, chociaż za mało pamięci (mało pamięci) oraz dane osobowe (identyfikowalne dane osobowe) należy.
 
@@ -147,9 +147,9 @@ ms.locfileid: "60096494"
 
 - Jeśli pole jest wymagane pola, które muszą być określone jako takie, sprawdź:
 
-    - tło ustawioną na `Environment.ControlEditRequiredBackground` i ustawiono pierwszego planu `Environment.ControlEditRequiredHintText`
+  - tło ustawioną na `Environment.ControlEditRequiredBackground` i ustawiono pierwszego planu `Environment.ControlEditRequiredHintText`
 
-    - czy jest tekst wskazówki w kontrolce, która jest wyświetlana jako **"\<wymagane >"**
+  - czy jest tekst wskazówki w kontrolce, która jest wyświetlana jako **"\<wymagane >"**
 
 #### <a name="button-controls"></a>formanty przycisków
 
@@ -171,11 +171,11 @@ ms.locfileid: "60096494"
 
 - Sprawdź, czy kolory programu VS, używane są:
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - Sprawdź, czy hiperłącza niebieski podkreślony nie, chyba że osadzony w akapicie.
 

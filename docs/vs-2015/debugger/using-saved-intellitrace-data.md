@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684390"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823462"
 ---
 # <a name="using-saved-intellitrace-data"></a>Korzystanie z zapisanych danych funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +59,11 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
 - Jeśli plik .iTrace jest dołączony do elementu roboczego Team Foundation Server, wykonaj następujące kroki w elemencie roboczym:  
   
-    - W obszarze **wszystkie łącza**, Znajdź plik .iTrace. Otwórz go.  
-  
-         \- lub —  
-  
-    - W obszarze **kroki odtwarzania**, wybierz **IntelliTrace** łącza.  
+  - W obszarze **wszystkie łącza**, Znajdź plik .iTrace. Otwórz go.  
+
+        \- or -  
+
+  - W obszarze **kroki odtwarzania**, wybierz **IntelliTrace** łącza.  
   
 > [!TIP]
 > Jeśli plik IntelliTrace został zamknięty podczas debugowania, możesz uruchomić go w łatwy sposób. Przejdź do **debugowania** menu, wybierz **IntelliTrace**, **Pokaż podsumowanie dziennika**. Można również wybrać **Pokaż podsumowanie dziennika** w **IntelliTrace** okna. Jest on dostępny tylko podczas debugowania przy użyciu funkcji IntelliTrace.  
@@ -85,7 +85,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
 - Wybierz nagłówek kolumny, aby posortować dane.  
   
-- Użyj pola wyszukiwania do filtrowania danych. Zwykłe wyszukiwanie tekstu działa we wszystkich kolumnach, z wyjątkiem kolumn czasowych. Można także filtrować wyszukiwania do określonej kolumny za pomocą jednego filtru na kolumnę. Wpisz nazwę kolumny bez spacji, dwukropka (**:**) ani wartości wyszukiwania. Postępuj zgodnie z tym przy użyciu średnika (**;**) aby dodać inną wartość w kolumnie i wyszukiwania.  
+- Użyj pola wyszukiwania do filtrowania danych. Zwykłe wyszukiwanie tekstu działa we wszystkich kolumnach, z wyjątkiem kolumn czasowych. Można także filtrować wyszukiwania do określonej kolumny za pomocą jednego filtru na kolumnę. Wpisz nazwę kolumny bez spacji, dwukropka ( **:** ) ani wartości wyszukiwania. Postępuj zgodnie z tym przy użyciu średnika ( **;** ) aby dodać inną wartość w kolumnie i wyszukiwania.  
   
      Na przykład, aby znaleźć zdarzenia wydajności, które zawierają wyraz "wolne" w **opis** kolumny, wpisz:  
   
@@ -161,7 +161,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
 1. Skopiuj identyfikator korelacji SharePoint z jej źródła.  
   
-    Na przykład:  
+    Przykład:  
   
     ![IntelliTrace &#45; błąd SharePoint &#45; identyfikator korelacji](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c84cfcde4a5ffac1e1563a4d2b141bd6240b772
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430340"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821987"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part
   W programie Visual Studio, można użyć **połączeń SharePoint** węźle **Eksploratora serwera** do wyświetlania składników w witrynach programu SharePoint. Jednak **Eksploratora serwera** nie jest wyświetlany domyślnie niektóre składniki. W tym przewodniku możesz rozszerzać **Eksploratora serwera** tak, aby wyświetlał galerii składników Web Part na każdy połączony witryny programu SharePoint.
@@ -29,9 +29,9 @@ ms.locfileid: "63430340"
 
 - Tworzenie rozszerzenia programu Visual Studio, który rozszerza **Eksploratora serwera** w następujący sposób:
 
-    - Dodaje rozszerzenie **galerii składników Web Part** węźle każdy węzeł witryny programu SharePoint w **Eksploratora serwera**. Ten nowy węzeł zawiera węzły podrzędne, które reprezentują każdego składnika Web Part w galerii składników Web Part w witrynie.
+  - Dodaje rozszerzenie **galerii składników Web Part** węźle każdy węzeł witryny programu SharePoint w **Eksploratora serwera**. Ten nowy węzeł zawiera węzły podrzędne, które reprezentują każdego składnika Web Part w galerii składników Web Part w witrynie.
 
-    - Rozszerzenie definiuje nowy typ węzła, który reprezentuje wystąpienie składnika Web Part. Ten nowy typ węzła jest podstawą dla węzłów podrzędnych w nowym **galerii składników Web Part** węzła. Nowy typ węzła składnika Web Part wyświetla informacje w **właściwości** okna składnik Web Part, który reprezentuje informacje. Typ węzła zawiera również element menu skrótu niestandardowego, który służy jako punkt wyjścia do wykonywania innych zadań, które odnoszą się do składnika Web Part.
+  - Rozszerzenie definiuje nowy typ węzła, który reprezentuje wystąpienie składnika Web Part. Ten nowy typ węzła jest podstawą dla węzłów podrzędnych w nowym **galerii składników Web Part** węzła. Nowy typ węzła składnika Web Part wyświetla informacje w **właściwości** okna składnik Web Part, który reprezentuje informacje. Typ węzła zawiera również element menu skrótu niestandardowego, który służy jako punkt wyjścia do wykonywania innych zadań, które odnoszą się do składnika Web Part.
 
 - Utwórz dwa niestandardowych poleceń programu SharePoint, które wywołuje zestawu rozszerzeń. Polecenia programu SharePoint są metody, które można wywoływać za pomocą zestawów rozszerzenie użycia interfejsów API w modelu obiektów serwera dla programu SharePoint. W tym instruktażu utworzysz polecenia pobierają informacje składnika Web Part w lokalnej witrynie programu SharePoint na komputerze deweloperskim. Aby uzyskać więcej informacji, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -338,7 +338,7 @@ ms.locfileid: "63430340"
 
     2. W **Dodawanie połączenia programu SharePoint** okna dialogowego wprowadź adres URL witryny programu SharePoint, do którego chcesz połączyć, a następnie wybierz **OK** przycisku.
 
-         Aby określić witrynę programu SharePoint na komputerze deweloperskim, wprowadź **http://localhost**.
+         Aby określić witrynę programu SharePoint na komputerze deweloperskim, wprowadź **http://localhost** .
 
 3. Rozwiń węzeł połączenia lokacji (która zawiera adres URL witryny), a następnie rozwiń węzeł lokacji podrzędnej (na przykład **witryny zespołu**).
 

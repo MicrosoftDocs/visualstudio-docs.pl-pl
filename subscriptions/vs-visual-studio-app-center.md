@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści programu Visual Studio App Center uwzględniony w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 858cb55a81f8bfc59b017c58a6737a7de235dbdf
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784872"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826213"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center w subskrypcji programu Visual Studio
 
@@ -41,10 +41,10 @@ Wprowadzenie do programu Visual Studio App Center jest proste.
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, NFR<sup>1</sup> | Dołączono       |  Tak          |
-| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dołączono                                                            |Yes |
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Yes |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Tak |
+| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, NFR<sup>1</sup> | Dołączono       |  Yes          |
+| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dołączono                                                            |Tak |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Tak |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Yes |
 ||
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży, Wyobraź sobie ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP), sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego).*
@@ -66,7 +66,7 @@ Teraz można uzyskać dostęp do portalu usługi App Center i utworzyć konto.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy dotyczącej platformy App Center?
-    - Uzyskaj porady i odpowiedzi od zespołu roboczego aplikacji w [Centrum pomocy Centrum aplikacji](https://intercom.help/appcenter/).
-    - Zapoznaj się z pełną [dokumentacji platformy App Center](/appcenter/)
+  - Uzyskaj porady i odpowiedzi od zespołu roboczego aplikacji w [Centrum pomocy Centrum aplikacji](https://intercom.help/appcenter/).
+  - Zapoznaj się z pełną [dokumentacji platformy App Center](/appcenter/)
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
 - Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

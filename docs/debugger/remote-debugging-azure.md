@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407789"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824440"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Zdalne debugowanie platformy ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio
 
@@ -60,10 +60,10 @@ Debugowanie między dwoma komputerami połączonymi za pośrednictwem serwera pr
 1. Tworzenie nowej aplikacji platformy ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 r, wpisz **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, wybierz **szablony**, następnie wybierz **tworzenie Nowa aplikacja internetowa ASP.NET Core** . Nadaj projektowi nazwę w oknie dialogowym **MyASPApp**, a następnie wybierz **Utwórz**. Następnie wybierz pozycję **aplikacji sieci Web (Model-View-Controller)**, a następnie wybierz **Utwórz**.
+    W programie Visual Studio 2019 r, wpisz **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, wybierz **szablony**, następnie wybierz **tworzenie Nowa aplikacja internetowa ASP.NET Core** . Nadaj projektowi nazwę w oknie dialogowym **MyASPApp**, a następnie wybierz **Utwórz**. Następnie wybierz pozycję **aplikacji sieci Web (Model-View-Controller)** , a następnie wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    W programie Visual Studio 2017, wybierz **Plik > Nowy > Projekt**, a następnie wybierz **Visual C# > sieci Web > Aplikacja sieci Web programu ASP.NET Core**. W sekcji Szablony ASP.NET Core wybierz **aplikacji sieci Web (Model-View-Controller)**. Upewnij się, że jest zaznaczony platformy ASP.NET Core 2.1, który **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** jest ustawiona na **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.
+    W programie Visual Studio 2017, wybierz **Plik > Nowy > Projekt**, a następnie wybierz **Visual C# > sieci Web > Aplikacja sieci Web programu ASP.NET Core**. W sekcji Szablony ASP.NET Core wybierz **aplikacji sieci Web (Model-View-Controller)** . Upewnij się, że jest zaznaczony platformy ASP.NET Core 2.1, który **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** jest ustawiona na **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.
     ::: moniker-end
 
 1. Otwórz plik About.cshtml.cs i ustaw punkt przerwania `OnGet` — metoda (w szablonach starsze HomeController.cs zamiast tego otworzyć i ustaw punkt przerwania w `About()` metody).
@@ -108,9 +108,9 @@ Ten artykuł zawiera instrukcje dotyczące konfigurowania podstawowej konfigurac
 
 * Jeśli chcesz, aby uzyskać pomoc, aby upewnić się, że Twoja aplikacja jest skonfigurowana, wdrożeniu i poprawne działanie w usługach IIS tak, aby można było debugować, wykonaj wszystkie kroki przedstawione w tym temacie.
 
-    * Przed rozpoczęciem wykonaj wszystkie kroki opisane w [instalacji i uruchomienia usług IIS](/azure/virtual-machines/windows/quick-create-portal).
+  * Przed rozpoczęciem wykonaj wszystkie kroki opisane w [instalacji i uruchomienia usług IIS](/azure/virtual-machines/windows/quick-create-portal).
 
-    * Po otwarciu portu 80 w sieciowej grupie zabezpieczeń również otworzyć [Popraw portu](#bkmk_openports) dla zdalnego debugera (4024 lub 4022). Dzięki temu nie trzeba otworzyć go później.
+  * Po otwarciu portu 80 w sieciowej grupie zabezpieczeń również otworzyć [Popraw portu](#bkmk_openports) dla zdalnego debugera (4024 lub 4022). Dzięki temu nie trzeba otworzyć go później.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Zaktualizuj ustawienia zabezpieczeń przeglądarki w systemie Windows Server
 
@@ -251,7 +251,7 @@ Pobierz wersję narzędzi remote tools, który odpowiada używanej wersji progra
 
 7. Kliknij przycisk **dołączyć**.
 
-8. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwy komputera zdalnego >**.
+8. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwy komputera zdalnego >** .
 
     Powinna zostać wyświetlona strona sieci web platformy ASP.NET.
 9. W działającej aplikacji platformy ASP.NET, kliknij link, aby **o** strony.

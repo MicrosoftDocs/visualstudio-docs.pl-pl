@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476592"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824507"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmienianie projektu przy użyciu wizualizacji i modelowania
 
@@ -81,10 +81,10 @@ W poniższej tabeli opisano role, które mogą pełnić te narzędzia wielu i r�
 
 ||**Modelowanie wymagań użytkowników**|**Modelowanie procesów biznesowych**|**Architektura i projektowanie**|**Kod — Wizualizacja i eksploracja**|**Weryfikacja**|
 |------|-|-|-|-|-|
-|Diagram języka specyficznego dla domeny (DSL)|Yes|Yes|Yes|||
-|Diagram zależności, sprawdzanie poprawności warstwy|||Tak|Yes|Tak|
-|Mapy kodu|||Yes|Yes|Tak|
-|Projektant klasy (oparty na kodzie)||||Yes||
+|Diagram języka specyficznego dla domeny (DSL)|Yes|Yes|Tak|||
+|Diagram zależności, sprawdzanie poprawności warstwy|||Yes|Yes|Tak|
+|Mapy kodu|||Tak|Yes|Tak|
+|Projektant klasy (oparty na kodzie)||||Tak||
 
 Aby narysować diagramy zależności, należy utworzyć projekt modelowania jako część nowego lub istniejącego rozwiązania. Te diagramy należy utworzyć w projekcie modelowania.
 Elementy na diagramach zależności znajdują się w projekcie modelowania, ale nie są one przechowywane we wspólnym modelu. Mapy kodu i diagramy klas .NET utworzone na podstawie kodu istnieje poza projektem modelowania.
@@ -355,11 +355,11 @@ Diagram klas ma następujące cechy główne:
 
 - Typy takie jak klasy, interfejsy i wyliczenia:
 
-    - A *klasy* jest definicji obiektów, które mają szczególne strukturalnych szczególnymi cechami strukturalnymi i.
+  - A *klasy* jest definicji obiektów, które mają szczególne strukturalnych szczególnymi cechami strukturalnymi i.
 
-    - *Interfejsu* definiuje część widocznych zewnętrznych zachowań obiektu.
+  - *Interfejsu* definiuje część widocznych zewnętrznych zachowań obiektu.
 
-    - *Wyliczenie* jest klasyfikatorem, który zawiera listę wartości literałów.
+  - *Wyliczenie* jest klasyfikatorem, który zawiera listę wartości literałów.
 
 - *Atrybuty* to wartości pewnego typu, opisujące każde wystąpienie *klasyfikatora*. Klasyfikator to ogólna nazwa dla typów, składników, przypadków użycia i nawet aktorów.
 

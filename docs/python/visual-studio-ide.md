@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957518"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826168"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w środowisku IDE programu Visual Studio | Python
 
@@ -27,16 +27,16 @@ Visual Studio *zintegrowanego środowiska programistycznego* to twórczych uruch
 Ten obraz pokazuje programu Visual Studio Otwórz projekt języka Python i kilkoma oknami narzędzi kluczy, które będą prawdopodobnie używane:
 
 - [**Eksplorator rozwiązań** ](../ide/solutions-and-projects-in-visual-studio.md) (prawym górnym rogu) umożliwia wyświetlanie, przejść i zarządzanie plikami kodu. **Eksplorator rozwiązań** ułatwiają organizowanie kodu za pomocą tych plików do grupowania [rozwiązania i projekty](/visualstudio/get-started/tutorial-projects-solutions).
-    - Wraz z **Eksploratora rozwiązań** jest [ **środowiska Python**](managing-python-environments-in-visual-studio.md), gdzie zarządzać różnych interpreterów języka Python, które są zainstalowane na tym komputerze.
+  - Wraz z **Eksploratora rozwiązań** jest [ **środowiska Python**](managing-python-environments-in-visual-studio.md), gdzie zarządzać różnych interpreterów języka Python, które są zainstalowane na tym komputerze.
 
-    ::: moniker range=">=vs-2019"
-    - Możesz również otwarty i uruchom kod języka Python w folderze bez tworzenia plików projektu i rozwiązania Visual Studio. Aby uzyskać więcej informacji, zobacz [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md).
-    ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  - Możesz również otwarty i uruchom kod języka Python w folderze bez tworzenia plików projektu i rozwiązania Visual Studio. Aby uzyskać więcej informacji, zobacz [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md).
+  ::: moniker-end
 
 - [Okna edytora](../ide/writing-code-in-the-code-and-text-editor.md) (center), gdzie prawdopodobnie spędzisz większość czasu, wyświetla zawartość pliku. To jest, gdy użytkownik [edycji kodu w języku Python](editing-python-code-in-visual-studio.md)nawigować do kodu struktury i ustawiać punkty przerwania podczas debugowania sesji. Za pomocą języka Python, możesz również wybrać kod i naciśnij klawisze Ctrl + Enter, aby uruchomić ten kod w [okna interaktywnego REPL](python-interactive-repl-in-visual-studio.md).
 
 - [Okno danych wyjściowych](../ide/reference/output-window.md) (na dole na środku) jest, gdzie program Visual Studio wysyła powiadomienia, takich jak debugowanie i komunikaty o błędach, ostrzeżenia, komunikaty o stanie publikowania i. Każde źródło komunikatu ma osobnej karcie.
-    - A [okna interaktywnego REPL języka Python](python-interactive-repl-in-visual-studio.md) pojawia się w tym samym regionie co okno danych wyjściowych.
+  - A [okna interaktywnego REPL języka Python](python-interactive-repl-in-visual-studio.md) pojawia się w tym samym regionie co okno danych wyjściowych.
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (prawy dolny róg) umożliwia śledzenie elementów roboczych i udostępnianie kodu z innymi osobami przy użyciu technologii kontroli wersji, takich jak [Git](https://git-scm.com/) i [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
@@ -93,6 +93,10 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
     Począwszy od programu Visual Studio 2019 r można otworzyć folderu zawierającego kod języka Python w celu korzystania z funkcji, takich jak technologia IntelliSense i debugowanie bez konieczności tworzenia projektu programu Visual Studio Code.
 ::: moniker-end
+
+- [Współpraca przy użyciu programu Visual Studio](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+  
+    Visual Studio funkcja udostępniania na żywo umożliwia zespołowe przeprowadzanie edytowania i debugowania z innymi osobami w czasie rzeczywistym, niezależnie od tego, jakiego języka programowania używasz lub typów aplikacji, którą tworzysz. 
 
 - [Interaktywna pętla REPL języka Python](python-interactive-repl-in-visual-studio.md)
 

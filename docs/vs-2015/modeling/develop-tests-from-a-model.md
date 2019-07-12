@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692246"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823329"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
   
 - Podstawowy oddzielnych testów na oddzielnych klauzul postcondition. Na przykład utworzyć osobne testów do powiadamiania restauracji kolejności i do celów płatności odbiorcy. Ten rozdział ma następujące zalety:  
   
-    - Zmiany w różnych aspektów wymagania często występują, niezależnie od siebie. Dzieląc testy na różnych aspektach w ten sposób, możesz ułatwić aktualizowanie testów, gdy zmienią się wymagania.  
-  
-    - Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.  
+  - Zmiany w różnych aspektów wymagania często występują, niezależnie od siebie. Dzieląc testy na różnych aspektach w ten sposób, możesz ułatwić aktualizowanie testów, gdy zmienią się wymagania.  
+
+  - Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.  
   
 - Podczas projektowania testy, należy oddzielić wybór danych testowych, od kodu lub skryptu, który określa, czy osiągnięte zostały postcondition. Na przykład może być testu z prostą funkcją arytmetyczne: Dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego należy projektować skryptu jako: Wybierz dane wejściowe mnożenia danych wyjściowych przez siebie i sprawdź, czy wynik jest oryginalne dane wejściowe. Ten styl umożliwia różne dane wejściowe testu bez wprowadzania zmian w głównej części testu.  
   

@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342201"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824941"
 ---
 # <a name="command-implementation"></a>Implementacja poleceń
 Aby zaimplementować polecenia w VSPackage, należy wykonać następujące zadania:
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - Jeśli implementacja jednej z metod rozpoznaje zarówno identyfikatora GUID, a polecenie, a następnie metoda powinna być ustawiona na pole flag poleceń każdego polecenia (w `prgCmds` parametr) przy użyciu następujących <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flag:
 
-    - `OLECMDF_SUPPORTED`: Polecenie jest obsługiwane.
+  - `OLECMDF_SUPPORTED`: Polecenie jest obsługiwane.
 
-    - `OLECMDF_INVISIBLE`: Polecenie nie powinny być widoczne.
+  - `OLECMDF_INVISIBLE`: Polecenie nie powinny być widoczne.
 
-    - `OLECMDF_LATCHED`: Polecenie jest przełączona w i prawdopodobnie zostały zaewidencjonowane.
+  - `OLECMDF_LATCHED`: Polecenie jest przełączona w i prawdopodobnie zostały zaewidencjonowane.
 
-    - `OLECMDF_ENABLED`: Polecenie jest włączone.
+  - `OLECMDF_ENABLED`: Polecenie jest włączone.
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`: Polecenie powinna być ukryta, jeśli jest wyświetlana w menu skrótów.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: Polecenie powinna być ukryta, jeśli jest wyświetlana w menu skrótów.
 
-    - `OLECMDF_NINCHED`: Polecenie kontroler menu i nie jest włączona, ale jego menu rozwijane listy nie jest pusta i jest nadal dostępna. (Ta flaga jest rzadko używany).
+  - `OLECMDF_NINCHED`: Polecenie kontroler menu i nie jest włączona, ale jego menu rozwijane listy nie jest pusta i jest nadal dostępna. (Ta flaga jest rzadko używany).
 
 - Jeśli polecenie została zdefiniowana w *vsct* plik z `TextChanges` Flaga, ustaw następujące parametry:
 
-    - Ustaw `rgwz` elementu `pCmdText` parametr nowego tekstu polecenia.
+  - Ustaw `rgwz` elementu `pCmdText` parametr nowego tekstu polecenia.
 
-    - Ustaw `cwActual` elementu `pCmdText` parametru, aby rozmiar ciągu polecenia.
+  - Ustaw `cwActual` elementu `pCmdText` parametru, aby rozmiar ciągu polecenia.
 
 Upewnij się również, że bieżący kontekst nie jest funkcją usługi automation, chyba że polecenie jest przeznaczony specjalnie do obsługi funkcji automatyzacji.
 

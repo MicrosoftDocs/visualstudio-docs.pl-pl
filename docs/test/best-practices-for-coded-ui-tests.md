@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822979"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826081"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika
 
@@ -62,11 +62,11 @@ Interfejsy użytkownika, która jest często zmieniać podczas programowania. Ot
 
 - Jeśli w kontrolce wystąpi potwierdzenie, że nie jest już prawidłowy:
 
-    - Usuń metodę, która zawiera potwierdzenie.
+  - Usuń metodę, która zawiera potwierdzenie.
 
-    - Usuń wywołanie tej metody z metody testowej.
+  - Usuń wywołanie tej metody z metody testowej.
 
-    - Dodawanie nowej asercji przeciągając przycisk krzyżyka do kontrolki interfejsu użytkownika, otwórz mapę interfejsu użytkownika i Dodaj nowe potwierdzenie.
+  - Dodawanie nowej asercji przeciągając przycisk krzyżyka do kontrolki interfejsu użytkownika, otwórz mapę interfejsu użytkownika i Dodaj nowe potwierdzenie.
 
 Aby uzyskać więcej informacji na temat sposobu rejestrowania kodowane testy interfejsu użytkownika, zobacz [automatyzacji w użyciu interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md).
 

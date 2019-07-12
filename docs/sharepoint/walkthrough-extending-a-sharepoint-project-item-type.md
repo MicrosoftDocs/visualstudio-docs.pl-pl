@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430343"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825983"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Przewodnik: Rozszerzanie typu elementu projektu SharePoint
   Możesz użyć **Model usługi łączności danych biznesowych** elementu projektu, aby utworzyć model usługi łączności danych biznesowych (BDC) w programie SharePoint. Domyślnie podczas tworzenia modelu przy użyciu tego elementu projektu danych w modelu jest niewidoczne dla użytkowników. Należy także utworzyć listy zewnętrznej w SharePoint, aby umożliwić użytkownikom wyświetlanie danych.
@@ -28,9 +28,9 @@ ms.locfileid: "63430343"
 
 - Tworzenie rozszerzenia programu Visual Studio, który wykonuje dwa główne zadania:
 
-    - Generuje listę zewnętrzną, która wyświetla dane w modelu usługi BDC. Rozszerzenie wykorzystuje model obiektów dla systemu projektu programu SharePoint do generowania *Elements.xml* pliku, który definiuje listę. On również dodaje plik do projektu tak, że jest wdrażany wraz z modelu usługi BDC.
+  - Generuje listę zewnętrzną, która wyświetla dane w modelu usługi BDC. Rozszerzenie wykorzystuje model obiektów dla systemu projektu programu SharePoint do generowania *Elements.xml* pliku, który definiuje listę. On również dodaje plik do projektu tak, że jest wdrażany wraz z modelu usługi BDC.
 
-    - Dodaje element menu skrótów do **Model usługi łączności danych biznesowych** elementy w projektu **Eksploratora rozwiązań**. Deweloperzy mogą kliknąć element menu w celu wygenerowania listy zewnętrznej dla modelu usługi łączności danych biznesowych.
+  - Dodaje element menu skrótów do **Model usługi łączności danych biznesowych** elementy w projektu **Eksploratora rozwiązań**. Deweloperzy mogą kliknąć element menu w celu wygenerowania listy zewnętrznej dla modelu usługi łączności danych biznesowych.
 
 - Tworzenie pakietu Visual Studio rozszerzenia (VSIX) do wdrażania zestawu rozszerzeń.
 

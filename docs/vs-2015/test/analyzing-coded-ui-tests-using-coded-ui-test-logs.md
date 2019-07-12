@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7040b4dd07eebb4332634d5d8ffc1d9bc8d8c06b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90e8e85882225fbecb4947de234081ccfc26fbbb
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686481"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824214"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analiza dzienników zakodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,35 +34,35 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
   
 - Docelowa wersja .NET Framework 4 z pliku App.config, nie jest obecne w projekcie testowym  
   
-    - Otwórz **QTAgent32_40.exe.config** pliku.  
-  
-         Domyślnie ten plik znajduje się w  **\<drvie >: \Program Files (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Na poziom dziennika, który ma, należy zmodyfikować wartość EqtTraceLevel.  
-  
-         Zapisz plik.  
-  
+  - Otwórz **QTAgent32_40.exe.config** pliku.  
+
+    Domyślnie ten plik znajduje się w  **\<drvie >: \Program Files (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Na poziom dziennika, który ma, należy zmodyfikować wartość EqtTraceLevel.  
+
+    Zapisz plik.  
+
 - Docelowa wersja .NET Framework 4.5 w pliku App.config, nie jest obecne w projekcie testowym  
   
-    - Otwórz **QTAgent32.exe.config** pliku.  
-  
-         Domyślnie ten plik znajduje się w  **\<drvie >: \Program Files (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Zmień wartość EqtTraceLevel na poziom dziennika, który ma.  
-  
-         Zapisz plik.  
+  - Otwórz **QTAgent32.exe.config** pliku.  
+
+    Domyślnie ten plik znajduje się w  **\<drvie >: \Program Files (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Zmień wartość EqtTraceLevel na poziom dziennika, który ma.  
+
+    Zapisz plik.  
   
 - Plik App.config w projekcie testowym  
   
-    - Otwórz plik App.config w projekcie.  
-  
-         Dodaj następujący kod w węźle Konfiguracja:  
-  
-         `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
+  - Otwórz plik App.config w projekcie.  
+
+    Dodaj następujący kod w węźle Konfiguracja:  
+
+    `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
 - Włączanie rejestrowania z sam kod testu  
   
-    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+  - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2. Uruchom kodowany test interfejsu użytkownika, aby wyświetlić dziennik  
  Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do **QTAgent32.exe.config** pliku w miejscu, zostanie wyświetlony w wynikach Eksploratora testów znajduje się link danych wyjściowych. Pliki dziennika są tworzone, nie tylko w przypadku, gdy test zakończy się niepowodzeniem, ale także w przypadku udanych testów, gdy poziom śledzenia jest ustawiona na "pełne."  

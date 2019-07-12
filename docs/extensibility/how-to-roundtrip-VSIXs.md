@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324900"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826028"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Instrukcje: Dzięki rozszerzenia jest zgodny z programu Visual Studio 2017 i Visual Studio 2015
 
@@ -57,8 +57,8 @@ Jeśli projekt zawiera *project.json* pliku:
 * Zanotuj odwołania w *project.json*.
 * Z **Eksploratora rozwiązań**, Usuń *project.json* pliku z projektem. Spowoduje to usunięcie *project.json* plików i usuwa go z projektu.
 * Dodaj odwołania do NuGet z powrotem w do projektu:
-    * Kliknij prawym przyciskiem myszy **rozwiązania** i wybierz polecenie **Zarządzaj pakietami NuGet dla rozwiązania**.
-    * Program Visual Studio automatycznie tworzy *packages.config* plik.
+  * Kliknij prawym przyciskiem myszy **rozwiązania** i wybierz polecenie **Zarządzaj pakietami NuGet dla rozwiązania**.
+  * Program Visual Studio automatycznie tworzy *packages.config* plik.
 
 > [!NOTE]
 > Jeśli projekt zawiera pakiety EnvDTE, ich może być konieczne do dodania, klikając prawym przyciskiem myszy **odwołania** wybierając **Dodaj odwołanie do** oraz dodawania odpowiednich odwołań. Za pomocą pakietów NuGet może tworzyć błędy podczas próby utworzenia Twojego projektu.
@@ -165,7 +165,7 @@ Zdecydowanie zaleca się odwołania do zmodyfikowanych plików csproj otwarty po
 
 * Dodaj dodatkowe instrukcje warunkowe, aby `<import>` znaczniki, które mają odwołania Microsoft.VSSDK.BuildTools. Wstaw `'$(VisualStudioVersion)' != '14.0' And` na wierzchu instrukcja warunku. Te instrukcje będą wyświetlane w nagłówku i stopce pliku csproj jest niewielki.
 
-Na przykład:
+Przykład:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />

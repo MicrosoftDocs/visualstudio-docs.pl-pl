@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01d004491feedff26c350cd7d40c544bc6b6de0f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402544"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "64783749"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 Ustawia adres obciążenia dla pliku wykonywalnego, który odpowiada symboli w tym magazynie symboli.

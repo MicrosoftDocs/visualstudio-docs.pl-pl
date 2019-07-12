@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978406"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823369"
 ---
 # <a name="developer-community-data-privacy"></a>Prywatność danych w społeczności deweloperów
 
@@ -64,24 +64,24 @@ Jeśli **Zgłoś problem** jest inicjowane z programu Visual Studio, zbierane s�
 
 - W sieci Web debugera pliki dziennika, jeśli nie istnieją:
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+  - *%TEMP%\vscode-chrome-debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%TEMP%\vscode-edge-debug.txt*
+  - *%TEMP%\vscode-edge-debug.txt*
 
 - Zrzut ekranu, jeśli chcesz dołączyć
 
 - Rejestrowanie danych, jeśli chcesz uwzględnić nagranie, w tym:
 
-   - Kroki umożliwiające odtworzenie problemu
+  - Kroki umożliwiające odtworzenie problemu
 
-   - Plik śledzenia ETL
+  - Plik śledzenia ETL
 
-   - Plik zrzutu
+  - Plik zrzutu
 
-    > [!NOTE]
-    > Możesz usunąć dowolne danych rejestrowania, które nie chcesz przesłać przed przesłaniem raportu.
+  > [!NOTE]
+  > Możesz usunąć dowolne danych rejestrowania, które nie chcesz przesłać przed przesłaniem raportu.
 
 ## <a name="see-also"></a>Zobacz także
 

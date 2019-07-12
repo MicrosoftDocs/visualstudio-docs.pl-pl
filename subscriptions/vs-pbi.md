@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji usługi Power BI Pro, dołączone do wybranej subskrypcji programu Visual Studio.
-ms.openlocfilehash: db6f9ec6fd37101dbf4353ff5cf6eda3ec4d4323
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784507"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824633"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w ramach subskrypcji programu Visual Studio
 
@@ -68,10 +68,10 @@ Aby korzystać z usługi Power BI Pro, należy skonfigurować konto lub zaloguj 
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak|
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes|
 | Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Niedostępne                                                            |Nie dotyczy         |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                            |Nie dotyczy         |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne       |  Yes|
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne       |  Tak|
 | Program Visual Studio Enterprise (miesięcznych w chmurze) | Azure                                       | Niedostępne                                  |Nie dotyczy|
 ||
 
@@ -110,9 +110,9 @@ Odp.:  Nie.  Korzyści z usługi Power BI Pro nie można dodać do dzierżawach 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy przy użyciu usługi Power BI Pro?
-    - Zapoznaj się z [dokumentacji online](/power-bi/).
-    - Problemy z rejestracją?  Zapoznaj się z [rejestrację w usłudze Power BI jako użytkownik indywidualny](/power-bi/service-self-service-signup-for-power-bi)
-    - Poznaj najważniejsze problemy, Uzyskaj pomoc od społeczności lub Wyślij bilet pomocy technicznej na [stronę pomocy technicznej](https://powerbi.microsoft.com/support/).
+  - Zapoznaj się z [dokumentacji online](/power-bi/).
+  - Problemy z rejestracją?  Zapoznaj się z [rejestrację w usłudze Power BI jako użytkownik indywidualny](/power-bi/service-self-service-signup-for-power-bi)
+  - Poznaj najważniejsze problemy, Uzyskaj pomoc od społeczności lub Wyślij bilet pomocy technicznej na [stronę pomocy technicznej](https://powerbi.microsoft.com/support/).
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
 - Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
 

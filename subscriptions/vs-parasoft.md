@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję Parasoft wirtualizacji/SOA Test Professional zawarte w Twojej subskrypcji programu Visual Studio.
-ms.openlocfilehash: d8204820c4651de8ea034f531f52efbfb8cd4a18
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784517"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824641"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft wirtualizacji/SOAtest Professional Desktop w subskrypcji programu Visual Studio
 
@@ -85,7 +85,7 @@ Przetestuj wcześniej i częściej.  Symuluj i Testuj zachowanie niedostępny el
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy dotyczącej produktów Parasoft?  Zapoznaj się z tymi zasobami:
-    - Pomoc techniczna:  https://www.parasoft.com/support/
-    - Parasoft Centrum zasobów:  https://www.parasoft.com/resources/
+  - Pomoc techniczna:  https://www.parasoft.com/support/
+  - Parasoft Centrum zasobów:  https://www.parasoft.com/resources/
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
 - Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

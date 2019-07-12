@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7dda5f0f9d613a2e6704b0f8b1f688c76a759752
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 926c9f329ccea8e38c60d4ca05cb1542df725414
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705905"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825874"
 ---
 # <a name="troubleshooting-code-coverage"></a>Pokrycie kodu — wyszukiwanie błędów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,11 +113,11 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
   
 - **Błąd w wyrażeniu regularnym**  
   
-     Każdy ciąg znaków w pliku jest wyrażeniem regularnym. Przejrzyj każdy z nich w poszukiwaniu błędów, a w szczególności zwróć uwagę na:  
-  
-    - Niedopasowane nawiasy (...) lub nawiasy \\(...) \\). Jeśli chcesz dopasować nawiasy w ciągu wyszukiwania, musisz dodać przed nimi znak ucieczki. Na przykład, aby dopasować użycie funkcji: `.*MyFunction\(double\)`  
-  
-    - Gwiazdka lub plus na początku wyrażenia. Aby dopasować dowolny ciąg znaków, należy użyć kropki poprzedzającej gwiazdkę: `.*`  
+  Każdy ciąg znaków w pliku jest wyrażeniem regularnym. Przejrzyj każdy z nich w poszukiwaniu błędów, a w szczególności zwróć uwagę na:  
+
+  - Niedopasowane nawiasy (...) lub nawiasy \\(...) \\). Jeśli chcesz dopasować nawiasy w ciągu wyszukiwania, musisz dodać przed nimi znak ucieczki. Na przykład, aby dopasować użycie funkcji: `.*MyFunction\(double\)`  
+
+  - Gwiazdka lub plus na początku wyrażenia. Aby dopasować dowolny ciąg znaków, należy użyć kropki poprzedzającej gwiazdkę: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Niestandardowy plik .runsettings z niepoprawnymi wykluczeniami  
  Analiza  

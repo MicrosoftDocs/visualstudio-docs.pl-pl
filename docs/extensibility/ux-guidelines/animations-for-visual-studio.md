@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a99ddbe8bf1b98ce6f2fabc32b9597cd02a704e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f113bf8d9a77e8569126a6f0c7d96f1fe4f0eea
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337023"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825243"
 ---
 # <a name="animations-for-visual-studio"></a>Animacje dla programu Visual Studio
 ## <a name="animation-fundamentals"></a>Podstawy animacji
@@ -25,13 +25,13 @@ Wykonaj te zasady, aby zapewnić style animacji spójne i przyjazny dla użytkow
 
 - **Czas i szybkość są ważne** aby zapewnić szybki i fizyczne możesz też przejść:
 
-    - Ukończ animowane przejścia w ciągu pół sekundy (500 ms).
+  - Ukończ animowane przejścia w ciągu pół sekundy (500 ms).
 
-    - Animacje, które wystąpiłyby często konieczne Działaj wystarczająco szybko, że nie przerwań się przepływu pracy użytkownika. Obejrzyj animacje w pętli i dostosować czas, dopóki pozornie prawo.
+  - Animacje, które wystąpiłyby często konieczne Działaj wystarczająco szybko, że nie przerwań się przepływu pracy użytkownika. Obejrzyj animacje w pętli i dostosować czas, dopóki pozornie prawo.
 
-    - Nie powinien być animacji, więc szybko lub jarring, jest trudny do zrozumienia, ale nie działa tak wolno fakt, że jeden cierpliwy przejścia zakończyć.
+  - Nie powinien być animacji, więc szybko lub jarring, jest trudny do zrozumienia, ale nie działa tak wolno fakt, że jeden cierpliwy przejścia zakończyć.
 
-    - Użyj zmiennej czasu, aby podkreślić wagę. Na przykład podczas przechodzenia przez sekwencję elementów na diagramie klasy, szybkości za pomocą przejścia między elementami, a następnie spowolnić skoncentrować się na istotnych elementów.
+  - Użyj zmiennej czasu, aby podkreślić wagę. Na przykład podczas przechodzenia przez sekwencję elementów na diagramie klasy, szybkości za pomocą przejścia między elementami, a następnie spowolnić skoncentrować się na istotnych elementów.
 
 - **Użyj stopniowego ułatwianie nieliniowych** z jednego stanu do innego, co daje poczucie cicha i fizyczne przenoszenie.
 
@@ -47,13 +47,13 @@ Wykonaj te zasady, aby zapewnić style animacji spójne i przyjazny dla użytkow
 
 - **Gdy są wyświetlane stan lub postęp** za pośrednictwem animacji:
 
-    - Zatrzymaj Wyświetlanie postępu przenoszenia podczas przesuwania nie bazowego procesu.
+  - Zatrzymaj Wyświetlanie postępu przenoszenia podczas przesuwania nie bazowego procesu.
 
-    - Rozróżnia nieokreślony procesów z określania procesów.
+  - Rozróżnia nieokreślony procesów z określania procesów.
 
-    - Sprawdź, czy animacja ma do zidentyfikowania stanów zakończenia i błędów.
+  - Sprawdź, czy animacja ma do zidentyfikowania stanów zakończenia i błędów.
 
-    - Należy zminimalizować użycie animacji efekt, które informacje o stanie i upewnij się, że mają one prawdziwych wartości, zapewniając dodatkowe informacje rzeczywistego użycia. Przykłady obejmują zmiany stanu przejściowego i zagrożeń
+  - Należy zminimalizować użycie animacji efekt, które informacje o stanie i upewnij się, że mają one prawdziwych wartości, zapewniając dodatkowe informacje rzeczywistego użycia. Przykłady obejmują zmiany stanu przejściowego i zagrożeń
 
 #### <a name="animation-donts"></a>Animacja — ostrzeżenia:
 

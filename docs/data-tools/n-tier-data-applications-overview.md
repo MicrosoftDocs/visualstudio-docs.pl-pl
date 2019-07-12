@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566474"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821902"
 ---
 # <a name="n-tier-data-applications-overview"></a>Omówienie aplikacji N-warstwowa danych
 *N-warstwowa* dane aplikacji są aplikacje danych, które są rozdzielone na wiele *warstwy*. Ich inne nazwy to „aplikacje rozproszone” i „aplikacje wielowarstwowe”. Aplikacje n-warstwowe dzielą przetwarzanie na dyskretne warstwy, które są rozkładane między klienta i serwer. Podczas tworzenia aplikacji uzyskujących dostęp do danych należy jednoznacznie odseparować różne warstwy tworzące aplikację.
@@ -49,11 +49,11 @@ Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej za pomocą odw
 
 - Składniki i logika dostępu do danych, w tym:
 
-    - [TableAdapters](create-and-configure-tableadapters.md) i [DataAdapter i DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+  - [TableAdapters](create-and-configure-tableadapters.md) i [DataAdapter i DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    - Obiektowe reprezentacje danych, takie jak [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) klas jednostek.
+  - Obiektowe reprezentacje danych, takie jak [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) klas jednostek.
 
-    - Wspólne usługi aplikacji, takie jak uwierzytelnianie, autoryzacja i personalizacja.
+  - Wspólne usługi aplikacji, takie jak uwierzytelnianie, autoryzacja i personalizacja.
 
 Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w środkowej warstwie aplikacji n-warstwowej.
 

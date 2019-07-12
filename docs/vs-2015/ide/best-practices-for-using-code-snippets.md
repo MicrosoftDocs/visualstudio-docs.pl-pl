@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 75c1e08125e67dc5a76d2e62d22f010abd22f418
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685667"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823431"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze praktyki dotyczące korzystania z wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ W kodzie we fragmencie kodu pokazano tylko najbardziej podstawową metodą coś 
   
 - Otworzyć wszystkie pliki pobrane fragment kodu w Notatniku lub edytorze XML programu Visual Studio i uważnie przeczytać przed zainstalowaniem ich. Zwróć uwagę na następujące kwestie:  
   
-    - Fragment kodu uszkodzenie systemu, jeśli zostanie wykonana. Należy uważnie przeczytać kodu źródłowego, przed jego uruchomieniem.  
-  
-    - Blok adresu URL pomocy plik fragmentu kodu może zawierać adresy URL, których wykonanie pliku złośliwy skrypt lub wyświetlić obraźliwe witryny sieci Web.  
-  
-    - Fragment może zawierać odwołania, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mógł zostać pobrany na komputer, z którego został pobrany fragmentu kodu. Fragment kodu może następnie wprowadzić wywołanie do metody odwołania, który jest wykonywany złośliwego kodu. Aby zabezpieczyć się przed takimi atakami, należy sprawdzić bloki Importy i odwołania do pliku fragmentu kodu.  
+  - Fragment kodu uszkodzenie systemu, jeśli zostanie wykonana. Należy uważnie przeczytać kodu źródłowego, przed jego uruchomieniem.  
+
+  - Blok adresu URL pomocy plik fragmentu kodu może zawierać adresy URL, których wykonanie pliku złośliwy skrypt lub wyświetlić obraźliwe witryny sieci Web.  
+
+  - Fragment może zawierać odwołania, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mógł zostać pobrany na komputer, z którego został pobrany fragmentu kodu. Fragment kodu może następnie wprowadzić wywołanie do metody odwołania, który jest wykonywany złośliwego kodu. Aby zabezpieczyć się przed takimi atakami, należy sprawdzić bloki Importy i odwołania do pliku fragmentu kodu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Fragmenty kodu IntelliSense w języku Visual Basic](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   

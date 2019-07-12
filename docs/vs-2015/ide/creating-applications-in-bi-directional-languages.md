@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701181"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826195"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Tworzenie aplikacji w językach dwukierunkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Visual Studio umożliwia tworzenie aplikacji, które poprawnie wyświetlania tek
   
 - **Kolejność czytania od prawej do lewej** kontrolki wprowadzania tekstu, użyj w programie Visual Studio używają domyślnie kolejność czytania od lewej do prawej. W większości przypadków można użyć standardowego gestów Windows Aby przełączać kolejność czytania. Na przykład można nacisnąć klawisz Shift Ctrl + Strzałka w prawo, aby przełączyć okno właściwości aby obsługiwać kolejność czytania od prawej do lewej dla wartości właściwości.  
   
-     Jednak kolejność czytania od prawej do lewej jest nieobsługiwane wszędzie, gdzie w programie Visual Studio. Wyjątki obejmują:  
-  
-    - Pola wyboru, listy rozwijane i inne formanty w oknach dialogowych programu Visual Studio należy zawsze używać kolejność czytania od lewej do prawej.  
-  
-    - Edytor kodu (i edytora tekstów) nie obsługuje kolejność czytania od prawej do lewej. Można wprowadzić tekst w języku dwukierunkową kolejność odczytu jest jednak zawsze od lewej do prawej.  
+  Jednak kolejność czytania od prawej do lewej jest nieobsługiwane wszędzie, gdzie w programie Visual Studio. Wyjątki obejmują:  
+
+  - Pola wyboru, listy rozwijane i inne formanty w oknach dialogowych programu Visual Studio należy zawsze używać kolejność czytania od lewej do prawej.  
+
+  - Edytor kodu (i edytora tekstów) nie obsługuje kolejność czytania od prawej do lewej. Można wprowadzić tekst w języku dwukierunkową kolejność odczytu jest jednak zawsze od lewej do prawej.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Nazewnictwo rzeczy przy użyciu arabski lub hebrajski tekstu  
  Tekst arabski lub hebrajski można użyć, aby przypisać nazwy do folderów, zmiennych lub innych obiektów. Jeśli pracujesz w języku arabskim, można użyć znaków arabskich Kashida i znaków diakrytycznych.  

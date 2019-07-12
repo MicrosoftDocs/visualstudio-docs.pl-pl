@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: fc5dbc6b483313d169a80dc66550dce80a147c96
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493657"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823840"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy przypadków użycia UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,13 +115,13 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
 - Tworzenie **aktorów** do reprezentowania klasy osoby, organizacje, innych systemów, oprogramowania lub urządzeń, które współdziałają z systemu lub podsystemu.  
   
-    - Aby dowiedzieć się, jak narysować aktorów i innych elementów, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
-  
-    - Dla każdego zestawu różne cele zidentyfikować aktorów według ich typu lub roli, mimo że osób fizycznych lub jednostki mogą być takie same. Na przykład restauracji i odbiorcy są oddzielne aktorzy, nawet jeśli pracownik restauracji czasami może być klientem.  
+  - Aby dowiedzieć się, jak narysować aktorów i innych elementów, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+
+  - Dla każdego zestawu różne cele zidentyfikować aktorów według ich typu lub roli, mimo że osób fizycznych lub jednostki mogą być takie same. Na przykład restauracji i odbiorcy są oddzielne aktorzy, nawet jeśli pracownik restauracji czasami może być klientem.  
   
 - Tworzenie **przypadki użycia** dla każdego cele, które każdego aktora stara się osiągnąć za pomocą systemu.  
   
-    - Nazwij i opisz przypadki użycia w wyrazy, które może zrozumieć aktora, zamiast warunki wdrożenia.  
+  - Nazwij i opisz przypadki użycia w wyrazy, które może zrozumieć aktora, zamiast warunki wdrożenia.  
   
 - Użyj **skojarzenia** połączyć aktorów z przypadkami użycia.  
   

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd55a95675505648179161ae3fb7cacea6a83104
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951329"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825073"
 ---
 # Instrukcje: Znajdowanie tematów w spisie treści
 
@@ -31,7 +31,7 @@ W **zawartość** karcie, można użyć spisu treści (TOC) można znaleźć inf
 
 ## Wyfiltruj spis treści
 
-Można filtrować TOC w celu zwężenia zakresu tematów, które pojawiają się w **zawartość** kartę. Tytuły pojawiają się na liście, tylko wtedy, gdy zawierają katalog główny składnika, który określono. Na przykład jeśli określisz "Rozwiązywanie problemów" jako filtr, tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów" są wyświetlane. Węzły, których tytuły nie zawierają wyrażenia są zwinięte do pojedynczego węzła z wielokropkiem (**...** ).
+Można filtrować TOC w celu zwężenia zakresu tematów, które pojawiają się w **zawartość** kartę. Tytuły pojawiają się na liście, tylko wtedy, gdy zawierają katalog główny składnika, który określono. Na przykład jeśli określisz "Rozwiązywanie problemów" jako filtr, tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów" są wyświetlane. Węzły, których tytuły nie zawierają wyrażenia są zwinięte do pojedynczego węzła z wielokropkiem ( **...** ).
 
 1. Wybierz **zawartość** kartę.
 

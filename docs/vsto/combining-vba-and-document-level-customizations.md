@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447156"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826024"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Łączenie VBA i dostosowywanie na poziomie dokumentu
   Za pomocą języka Visual Basic for Applications (VBA) kodu w dokumencie, który jest częścią dostosowywania poziomie dokumentu dla programu Microsoft Office Word lub Microsoft Office Excel. Możesz wywołać kod VBA w dokumencie z zestawu dostosowywania lub projektu w celu włączenia kodu z VBA w dokumencie w celu wywołania kodu w zestaw dostosowania można skonfigurować.
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - Dokument musi mieć jedną z następujących rozszerzeń nazw plików:
 
-    - Dla programu Word: *.docm* lub *.doc*
+  - Dla programu Word: *.docm* lub *.doc*
 
-    - Dla programu Excel: *.xlsm*, *xltm*, *xls*, lub *.xlt*
+  - Dla programu Excel: *.xlsm*, *xltm*, *xls*, lub *.xlt*
 
 - Dokument już musi zawierać projekt VBA, który zawiera kod VBA.
 

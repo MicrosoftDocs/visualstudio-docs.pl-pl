@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c788a9ae126530484efc5f693505fc34c2793768
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441025"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824221"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Instrukcje: Otwieranie modelu z pliku w kodzie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
   
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    - Jeśli nie są widoczne w obszarze **.NET** karcie **Add References** okno dialogowe, kliknij przycisk **Przeglądaj** kartę i przejdź do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
+  - Jeśli nie są widoczne w obszarze **.NET** karcie **Add References** okno dialogowe, kliknij przycisk **Przeglądaj** kartę i przejdź do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
 - Zestaw DSL, który można znaleźć w folderze bin projektu DSL. Jego nazwa ma zwykle postać: *NazwaFirmy*. *YourProject*`.Dsl.dll`.  
   

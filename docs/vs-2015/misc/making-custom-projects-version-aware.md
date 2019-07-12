@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422729"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825687"
 ---
 # <a name="making-custom-projects-version-aware"></a>Tworzenie niestandardowych projektów rozpoznający wersje
 W systemie niestandardowego projektu można zezwolić projektów tego typu są ładowane w wielu wersjach programu Visual Studio. Projekty tego typu mogą również uniemożliwić ładowanie we wcześniejszej wersji programu Visual Studio. Można również włączyć tego projektu w celu zidentyfikowania się względem nowszej wersji. w przypadku, gdy projekt wymaga naprawy, konwersji i wycofywania.  
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - Logmessage — funkcja ma następujące ErrorLevels:  
   
-    - Usługa 0 jest wszelkie informacje, które chcesz śledzić.  
-  
-    - 1 jest ostrzeżenie.  
-  
-    - 2 dotyczy błąd  
-  
-    - dla elementu formatującego raportu jest 3. Po uaktualnieniu projektu dziennika słowo "Konwertowane" raz, a nie zlokalizujesz wyraz.  
+  - Usługa 0 jest wszelkie informacje, które chcesz śledzić.  
+
+  - 1 jest ostrzeżenie.  
+
+  - 2 dotyczy błąd  
+
+  - dla elementu formatującego raportu jest 3. Po uaktualnieniu projektu dziennika słowo "Konwertowane" raz, a nie zlokalizujesz wyraz.  
   
 - Jeśli projekt nie wymaga żadnych naprawy lub uaktualnienia, program Visual Studio wygeneruje plik dziennika tylko wtedy, gdy system projektu ma zarejestrowane ostrzeżenie lub błąd podczas UpgradeProject_CheckOnly lub UpgradeProjectFlavor_CheckOnly metod.

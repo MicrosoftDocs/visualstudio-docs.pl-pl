@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści LinkedIn Learning dołączone jako część subskrypcji LinkedIn Premium zawarte w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 50a8b518866e7756f57513832f5c075b1c86201b
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784568"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824798"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning korzyści w ramach subskrypcji programu Visual Studio
 
@@ -109,7 +109,7 @@ Odp.:  Nie, oferta LinkedIn Learning jest dostępna tylko dla nowych subskrybent
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy dotyczącej LinkedIn Learning?  Zapoznaj się z tymi zasobami:
-    - Pomoc dotycząca [za pomocą usługi LinkedIn Learning](https://www.linkedin.com/help/learning).
-    - Pomoc w przypadku ogólnych pytań na temat [LinkedIn](https://www.linkedin.com/help/linkedin) takich jak tworzenie kont i profilów oraz utrzymanie sieci.
+  - Pomoc dotycząca [za pomocą usługi LinkedIn Learning](https://www.linkedin.com/help/learning).
+  - Pomoc w przypadku ogólnych pytań na temat [LinkedIn](https://www.linkedin.com/help/linkedin) takich jak tworzenie kont i profilów oraz utrzymanie sieci.
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
 - Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

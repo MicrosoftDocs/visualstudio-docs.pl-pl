@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045606"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821682"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +55,13 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Aby ustawić właściwości projektu w wierszu polecenia  
   
-- Użyj **/property** przełącznik z właściwości i wartości właściwości. Na przykład:  
+- Użyj **/property** przełącznik z właściwości i wartości właściwości. Przykład:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - lub —  
+     \- lub —  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -75,7 +75,7 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - or-  
+   \- lub —  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  

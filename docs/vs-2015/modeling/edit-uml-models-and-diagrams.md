@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442968"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823190"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Edytowanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
   
      \- lub —  
   
-- Na **projektanci architektury** narzędzi, kliknij znak plus (**+**) lub znak minus (**-**), lub wybierz poziom powiększenia.  
+- Na **projektanci architektury** narzędzi, kliknij znak plus ( **+** ) lub znak minus ( **-** ), lub wybierz poziom powiększenia.  
   
 ## <a name="Searching"></a> Wyszukiwanie w diagramie  
  Funkcja szybkiego wyszukiwania zawiera elementy na diagramie. Należy ustawić **przeszukania:** do **bieżący dokument**.  
@@ -294,9 +294,9 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
   
 - Albo kliknij prawym przyciskiem myszy element w **Eksploratora modelu UML** lub na diagram, a następnie kliknij przycisk **usunięte z modelu**.  
   
-    - Element został usunięty z każdy diagram, na którym jest wyświetlana.  
-  
-    - Każda relacja, która kończy się na ten element jest również usunięte z modelu.  
+  - Element został usunięty z każdy diagram, na którym jest wyświetlana.  
+
+  - Każda relacja, która kończy się na ten element jest również usunięte z modelu.  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>Aby usunąć relację z modelu  
   

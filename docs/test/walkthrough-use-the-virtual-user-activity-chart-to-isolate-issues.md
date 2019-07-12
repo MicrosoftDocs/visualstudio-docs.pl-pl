@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976221"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825772"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: Za pomocą wykresu wirtualnego aktywności użytkownika umożliwiającego Wyizolowanie problemów
 
@@ -30,9 +30,9 @@ Wykres aktywności wirtualnych użytkowników umożliwia wizualizowanie aktywno�
 
 - Wykonaj następujące procedury:
 
-    - [Rejestrowanie i uruchamianie testu wydajności sieci web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+  - [Rejestrowanie i uruchamianie testu wydajności sieci web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    - [Tworzenie i uruchamianie testu obciążenia](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Tworzenie i uruchamianie testu obciążenia](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otwórz rozwiązanie ColorWebApp utworzony w poprzednich — wskazówki
 
@@ -69,7 +69,7 @@ Po uruchomić test obciążenia i zebrane dane o aktywności wirtualnego użytko
 
 3. W **Powiększ do okresu czasu** narzędzie poniżej **wykres aktywności wirtualnych użytkowników**, dostosować po lewej stronie i prawego suwaki, dopóki oba są Zamknij, aby ikona naruszenia progu. Spowoduje to zmianę skali czasu w **wykres aktywności wirtualnych użytkowników**
 
-4. W **Legenda szczegółów**, zaznacz pole wyboru dla **(Podświetl błędy)**. Należy zauważyć, że jest wyróżniona wirtualnego użytkownika, który spowodował naruszenie progu.
+4. W **Legenda szczegółów**, zaznacz pole wyboru dla **(Podświetl błędy)** . Należy zauważyć, że jest wyróżniona wirtualnego użytkownika, który spowodował naruszenie progu.
 
 5. W **filtrowanie wyników** panelu, usuń zaznaczenie pól wyboru dla **Pokaż pomyślne wyniki** i **HttpError** , ale pozostawić **ValidationRuleError**zaznaczone pole wyboru.
 

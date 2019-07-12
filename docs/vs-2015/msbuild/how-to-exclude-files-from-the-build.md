@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440065"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821613"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Instrukcje: Wykluczanie plików z kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63440065"
 W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów jako dane wejściowe dla kompilacji. Jednak może być jeden plik w katalogu lub w katalogu w zestawie zagnieżdżonych katalogów, których nie chcesz dodać jako dane wejściowe dla kompilacji. Można jawnie wykluczone tego pliku lub katalogu, z listy danych wejściowych. W projekcie, który chcesz uwzględnić w pewnych okolicznościach również może być plikiem. Można jawnie zadeklarować warunków, w których plik jest uwzględniony w kompilacji.  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Wykluczanie pliku lub katalogu dane wejściowe dla kompilacji  
- Element listy są pliki wejściowe dla kompilacji. Elementy, które mają zostać uwzględnione są deklarowane, oddzielnie lub jako grupę za pomocą `Include` atrybutu. Na przykład:  
+ Element listy są pliki wejściowe dla kompilacji. Elementy, które mają zostać uwzględnione są deklarowane, oddzielnie lub jako grupę za pomocą `Include` atrybutu. Przykład:  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -45,7 +45,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     - lub —  
+     \- lub —  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     - lub —  
+     \- lub —  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  

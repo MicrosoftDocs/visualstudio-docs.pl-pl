@@ -1,5 +1,5 @@
 ---
-title: Praca z elementami w Projektancie XAML
+title: Praca z elementami w projektancie XAML
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844045"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823828"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Praca z elementami w projektancie XAML
 
@@ -43,15 +43,15 @@ Aby zmiana kolejności warstw, wykonaj jedną z następujących czynności:
 
 - Kliknij prawym przyciskiem myszy element w okno konspektu dokumentu lub obszaru kompozycji, dla którego chcesz zmienić kolejności warstw, wskaż **kolejności**, a następnie kliknij jedną z następujących czynności:
 
-   - **Przesuń na wierzch** można przenieść elementu do przodu kolejności.
+  - **Przesuń na wierzch** można przenieść elementu do przodu kolejności.
 
-   - **Przesuń do przodu** można przenieść elementu do przodu o jeden poziom w kolejności.
+  - **Przesuń do przodu** można przenieść elementu do przodu o jeden poziom w kolejności.
 
-   - **Wyślij do tyłu** wysyłać wstecz o jeden poziom elementów w kolejności.
+  - **Wyślij do tyłu** wysyłać wstecz o jeden poziom elementów w kolejności.
 
-   - **Przesuń na spód** do wysyłania elementu aż do tyłu kolejności.
+  - **Przesuń na spód** do wysyłania elementu aż do tyłu kolejności.
 
-   Zmiana **wyznacza indeks** właściwość **układ** sekcji w oknie dialogowym właściwości. Nakładających się elementów **wyznacza indeks** właściwości mają pierwszeństwo przed kolejność elementów wyświetlane w oknie konspekt dokumentu. Element, który ma wyższe **wyznacza indeks** wartość pojawia się na wierzchu, gdy nakładania się elementów.
+  Zmiana **wyznacza indeks** właściwość **układ** sekcji w oknie dialogowym właściwości. Nakładających się elementów **wyznacza indeks** właściwości mają pierwszeństwo przed kolejność elementów wyświetlane w oknie konspekt dokumentu. Element, który ma wyższe **wyznacza indeks** wartość pojawia się na wierzchu, gdy nakładania się elementów.
 
 ## <a name="change-the-alignment-of-an-element"></a>Zmienianie wyrównania elementu
 

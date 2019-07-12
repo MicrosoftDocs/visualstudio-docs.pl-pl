@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690549"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825396"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Instrukcje: Dodawanie obsługi przeciągania i upuszczania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Możesz dodać procedury obsługi zdarzeń przeciągania i upuszczania do DSL, t
   
 - Pierwsze dwie sekcje opisują alternatywne metody definiowania obsługi gestu:  
   
-    - [Definiowanie procedury obsługi gestu za pomocą metod zastępowanie ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, i innych metod, które mogą zostać przesłonięte.  
-  
-    - [Definiowanie procedury obsługi gestu za pomocą MEF](#MEF). Użyj tej metody, jeśli chcesz, aby deweloperów innych firm, aby można było zdefiniować własne programy obsługi DSL. Użytkowników można zainstalować rozszerzenia innych firm, po nich zainstalować DSL.  
+  - [Definiowanie procedury obsługi gestu za pomocą metod zastępowanie ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, i innych metod, które mogą zostać przesłonięte.  
+
+  - [Definiowanie procedury obsługi gestu za pomocą MEF](#MEF). Użyj tej metody, jeśli chcesz, aby deweloperów innych firm, aby można było zdefiniować własne programy obsługi DSL. Użytkowników można zainstalować rozszerzenia innych firm, po nich zainstalować DSL.  
   
 - [Sposób dekodowania przeciąganego elementu](#extracting). Elementy można przeciągać z dowolnym oknie lub na pulpicie, a także z języka DSL.  
   
@@ -140,7 +140,7 @@ using System.Linq;
   
   - diagramEventArgs.Data.GetDataFormats() — zawiera listę formatów, w których mogą dekodować przeciągany obiekt. Na przykład, jeśli użytkownik przeciąga pliku z pulpitu, dostępne formaty obejmują nazwę pliku ("`FileNameW`").  
   
-  - `diagramEventArgs.Data.GetData(format)` — Dekoduje przeciągany obiekt w określonym formacie. Obiekt do odpowiedniego typu rzutowania. Na przykład:  
+  - `diagramEventArgs.Data.GetData(format)` — Dekoduje przeciągany obiekt w określonym formacie. Obiekt do odpowiedniego typu rzutowania. Przykład:  
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   

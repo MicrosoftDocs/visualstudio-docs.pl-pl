@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445658"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823563"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramy sekwencji UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
   
 - Należy pamiętać, wyjątki lub rozwiązań alternatywnych, wykonanych jako alternatywę dla typowej sekwencji wyświetlane. Na przykład "klienta można pominąć resztę tej sekwencji."  
   
-    - Należy rozważyć użycie fragmentów bardziej formalne alternatywę do tego rodzaju Uwaga. Zobacz [opisujące struktury sterujące przy użyciu fragmentów](#Fragments)  
+  - Należy rozważyć użycie fragmentów bardziej formalne alternatywę do tego rodzaju Uwaga. Zobacz [opisujące struktury sterujące przy użyciu fragmentów](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>Przy wyborze rozwiązania zakres diagramu  
  Należy być niejasne, o jaki diagram jest przeznaczony do wyświetlenia.  
@@ -372,13 +372,13 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
   
 - Kliknij prawym przyciskiem myszy komunikat, który chcesz przenieść, a następnie kliknij przycisk **Przenieś do diagramu**.  
   
-     Visual Studio:  
-  
-    - Zastępuje przy interakcji ze strony za pomocą wybranego komunikatu i wszelkie uzupełniające wiadomości.  
-  
-    - Przenosi wiadomości zamieniono nowy diagram sekwencji.  
-  
-    - Tworzy łącze między wykorzystanie interakcji i nowy diagram sekwencji.  
+  Visual Studio:  
+
+  - Zastępuje przy interakcji ze strony za pomocą wybranego komunikatu i wszelkie uzupełniające wiadomości.  
+
+  - Przenosi wiadomości zamieniono nowy diagram sekwencji.  
+
+  - Tworzy łącze między wykorzystanie interakcji i nowy diagram sekwencji.  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>Aby przejść do sekwencji odwołuje się wykorzystanie interakcji  
   

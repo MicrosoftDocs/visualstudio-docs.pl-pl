@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685321"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824256"
 ---
 # <a name="how-to-use-the-threads-window"></a>Instrukcje: Korzystanie z okna wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, na któr
   
 - Wykonaj jedną z następujących czynności:  
   
-    - Kliknij dwukrotnie wątek.  
-  
-    - Kliknij prawym przyciskiem myszy wątku, a następnie kliknij przycisk **Przełącz do wątku**.  
-  
-         Żółta strzałka pojawia się obok nowego aktywnego wątku. Szare zarys Strzałka identyfikuje wątku, w którym wykonanie przerwało pracę debugera.  
+  - Kliknij dwukrotnie wątek.  
+
+  - Kliknij prawym przyciskiem myszy wątku, a następnie kliknij przycisk **Przełącz do wątku**.  
+
+    Żółta strzałka pojawia się obok nowego aktywnego wątku. Szare zarys Strzałka identyfikuje wątku, w którym wykonanie przerwało pracę debugera.  
   
 ## <a name="grouping-and-sorting-threads"></a>Grupowanie i sortowanie wątków  
  Grupowanie wątków nagłówek pojawia się w tabeli dla każdej grupy. Nagłówek zawiera opis grupy, na przykład "Wątek procesu roboczego" lub "Bez flagi wątki", a kontrolka drzewa. Wątki elementu członkowskiego każdej grupy pojawiają się pod nagłówkiem grupy. Jeśli chcesz ukryć wątków członka grupy, można użyć kontrolki drzewa, aby zwinąć grupy.  
@@ -116,11 +116,11 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, na któr
   
 - Na pasku narzędzi u góry **wątków** okna, przejdź do **wyszukiwania** pole, a następnie:  
   
-    - Należy wpisać wyszukiwany ciąg, a następnie naciśnij klawisz ENTER.  
-  
-         \- lub —  
-  
-    - Kliknij przycisk listy rozwijanej obok **wyszukiwania** polu, a następnie wybierz wyszukiwany ciąg z poprzedniego wyszukiwania.  
+  - Należy wpisać wyszukiwany ciąg, a następnie naciśnij klawisz ENTER.  
+
+    \- lub —  
+
+  - Kliknij przycisk listy rozwijanej obok **wyszukiwania** polu, a następnie wybierz wyszukiwany ciąg z poprzedniego wyszukiwania.  
   
 - (Opcjonalnie) Aby dołączyć pełny stos wywołań wyszukiwania, wybierz **stos wywołań wyszukiwania**.  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439938"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826260"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET Debugging: Wymagania systemowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ W tym temacie opisano wymagania dotyczące oprogramowania i zabezpieczeń dla [!
   
 - Debugowanie lokalne, w którym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i aplikacji sieci Web, uruchom na tym samym komputerze. Istnieją dwie wersje tego scenariusza:  
   
-    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod znajduje się w systemie plików.  
-  
-    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod znajduje się w witrynie sieci Web usług IIS.  
+  - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod znajduje się w systemie plików.  
+
+  - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod znajduje się w witrynie sieci Web usług IIS.  
   
 - Zdalne debugowanie, w którym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] działa na komputerze klienckim i debugować aplikację internetową, która jest uruchomiona na komputerze serwera zdalnego.  
   

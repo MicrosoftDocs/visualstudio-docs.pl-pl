@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: f4e62d23684695c938061c178d7af078bfccfc27
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 9902b62b7d62ae2490bc8c32848ffea657f0963d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692463"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824405"
 ---
 # <a name="understanding-build-configurations"></a>Ogólne informacje o konfiguracjach kompilacji
 
@@ -51,21 +51,21 @@ Działania innych niż `MainLauncher` będzie musiała mieć `Exported=true` dod
 Poniższa lista zawiera przykładowe dane, które mogą zostać uwzględnione w konfiguracji uruchamiania:
 
 * Regularne projektu .NET
-    * Alternatywne uruchamianie aplikacji
-    * Argumenty początkowe
-    * Katalog roboczy
-    * Zmienne środowiskowe
-    * Opcje środowiska uruchomieniowego mono (do użycia tylko wtedy, gdy jest uruchomiona na Mono)
+  * Alternatywne uruchamianie aplikacji
+  * Argumenty początkowe
+  * Katalog roboczy
+  * Zmienne środowiskowe
+  * Opcje środowiska uruchomieniowego mono (do użycia tylko wtedy, gdy jest uruchomiona na Mono)
 * Projekt dla systemu android
-    * Punkt wejścia (działanie, usługi, odbiorcy)
-    * Argumenty metody konwersji i danych
+  * Punkt wejścia (działanie, usługi, odbiorcy)
+  * Argumenty metody konwersji i danych
 * Projekt dla systemu iOS
-    * Tryb (normalny, pobieranie w tle)
+  * Tryb (normalny, pobieranie w tle)
 * Projekt rozszerzenia systemu iOS
-    * Uruchamianie aplikacji: domyślne lub niestandardowe
+  * Uruchamianie aplikacji: domyślne lub niestandardowe
 * WatchKit project
-    * Tryb (rzut oka, powiadomień)
-    * Ładunek powiadomienia
+  * Tryb (rzut oka, powiadomień)
+  * Ładunek powiadomienia
 
 ## <a name="see-also"></a>Zobacz także
 

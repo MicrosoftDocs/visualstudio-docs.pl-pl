@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079015"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823610"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Tekst interfejsu użytkownika i pomoc dotyczącą programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -193,11 +193,11 @@ ms.locfileid: "60079015"
 
 - Kilka pytań, które Zadaj sobie pytanie, podczas tworzenia komunikatu o błędzie:
 
-    - Jak rozwiązać problem z tym błędem samodzielnie określić użytkownika?
+  - Jak rozwiązać problem z tym błędem samodzielnie określić użytkownika?
 
-    - Użytkownik używa tego samego słownictwa jako błąd?
+  - Użytkownik używa tego samego słownictwa jako błąd?
 
-    - Jest to błąd ambigious lub udostępnione w wielu sytuacjach? Jeśli tak, jak możesz prowadzą użytkowników do rozwiązania, które są im potrzebne?
+  - Jest to błąd ambigious lub udostępnione w wielu sytuacjach? Jeśli tak, jak możesz prowadzą użytkowników do rozwiązania, które są im potrzebne?
 
 #### <a name="build-errors"></a>Błędy kompilacji
  Ponieważ program Visual Studio jest narzędziem do projektowania oprogramowania, wiele z jego składników ma kompilacji, konwertowania lub kodowanie krok, aby przekonwertować pracy dewelopera do postaci binarnej. Takiej konwersji może powodować błędy, gdy kompilator nie może przetworzyć nieprawidłowo utworzone pliki lub opcje kompilatora nie zostały prawidłowo ustawione.

@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/11/2017
 ms.topic: conceptual
 description: Jak przypisać subskrypcje programu Visual Studio do użytkowników końcowych, dla partnerów MPN.
-ms.openlocfilehash: 50a0784c9a2d71f6af4f4ff2e6b98233db62dab8
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785117"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823197"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Zarządzanie subskrypcjami programu Visual Studio oferowane za pośrednictwem programu Microsoft Partner Network (MPN)
 
@@ -60,7 +60,7 @@ Microsoft Action Pack subskrybenta i subskrypcji programu Visual Studio
 - Szczegóły dotyczące programu Microsoft Partner Network [subskrypcje programu Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions)
 
 - Microsoft Partner Network [Podręcznik administratora programu, aby oprogramowanie i Online Services — korzyści](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
-    - PG 6 — przypisywanie ról kontaktu i subskrypcji programu Visual Studio dla Action Pack
+  - PG 6 — przypisywanie ról kontaktu i subskrypcji programu Visual Studio dla Action Pack
 
 > [!NOTE]
 > Technical Preview rola Osoba kontaktowa ds jest wymagana dla subskrypcji programu Visual Studio

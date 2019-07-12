@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117658"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823536"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,17 +57,17 @@ Edytuj i Kontynuuj obsługuje większość typów zmian kodu w treści metod. Wi
   
 - Debugowanie kodu LINQ w pewnych okolicznościach. Aby uzyskać więcej informacji, zobacz [debugowania LINQ](../debugger/debugging-linq.md).  
   
-    - Przechwytuje zmienną, która nie została przechwycona wcześniej.  
-  
-    - Zmiana typu wyrażenia zapytania (np. Wybierz = > Wybierz nowy {A =};)  
-  
-    - Usuwanie `where` zawierający aktywnej instrukcji.  
-  
-    - Usuwanie `let` zawierający aktywnej instrukcji.  
-  
-    - Usuwanie `join` zawierający aktywnej instrukcji.  
-  
-    - Usuwanie `orderby` zawierający aktywnej instrukcji.  
+  - Przechwytuje zmienną, która nie została przechwycona wcześniej.  
+
+  - Zmiana typu wyrażenia zapytania (np. Wybierz = > Wybierz nowy {A =};)  
+
+  - Usuwanie `where` zawierający aktywnej instrukcji.  
+
+  - Usuwanie `let` zawierający aktywnej instrukcji.  
+
+  - Usuwanie `join` zawierający aktywnej instrukcji.  
+
+  - Usuwanie `orderby` zawierający aktywnej instrukcji.  
   
 - Debugowanie trybu mieszanego (natywnego/zarządzanego).  
   

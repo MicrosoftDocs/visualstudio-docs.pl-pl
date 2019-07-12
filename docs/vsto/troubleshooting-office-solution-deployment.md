@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694980"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821298"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Rozwiązywanie problemów z wdrażaniem rozwiązań Office
   Ten temat zawiera informacje o tym, jak rozwiązać typowe problemy, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.
@@ -73,9 +73,12 @@ ms.locfileid: "65694980"
 
 2. Na **aplikacji** wybierz **informacje o zestawie**.
 
-3. W pierwszym **wersji zestawu** Wprowadź znak gwiazdki (\*), a następnie wybierz **OK** przycisku.
+3. Zbiór numer poprawki, trzecim polu **wersji zestawu**, do symbolu wieloznacznego (\*). Na przykład "1.0. *".  Następnie wybierz **OK** przycisku.
 
    Po zmianie wersji zestawu, można kontynuować podpisać zestaw silną nazwą, a Fusion załaduje najbardziej aktualną wersję dostosowania.
+
+ [!NOTE]
+> Począwszy od programu Visual Studio 2017, jeśli podjęto próbę użycia symbole wieloznaczne w wersji zestawu błąd kompilacji zostanie przeprowadzona.  Jest to spowodowane symbole wieloznaczne w wersji zestawu spowoduje przerwanie MSBuild deterministyczne funkcji. Usuń symbole wieloznaczne z wersji zestawu lub wyłącz determinizm pojawi się instrukcja.  Aby dowiedzieć się więcej o funkcji deterministyczna, zobacz: [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md) i [Dostosowywanie kompilacji](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Instalacja kończy się niepowodzeniem, jeśli identyfikator URI zawiera znaki, które nie są US-ASCII
  Podczas publikowania rozwiązania do pakietu Office do lokalizacji HTTP/HTTPS/FTP, ścieżka nie może zawierać dowolne znaki Unicode, których nie ma w US-ASCII. Znaki te mogą spowodować niespójne działanie Instalatora. Znaki US-ASCII ścieżki instalacji.

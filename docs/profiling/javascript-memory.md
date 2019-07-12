@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d41fbe3233c3564af5cab93c8adfeaa7cc3bc24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446305"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826099"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizowanie użycia pamięci języka JavaScript w aplikacjach platformy UWP
 Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwiają zrozumienia użycia pamięci i znaleźć przecieki pamięci w aplikacjach platformy uniwersalnej systemu Windows stworzona z myślą o Windows przy użyciu języka JavaScript. Obsługiwane aplikacje to aplikacje for Universal Windows Apps.
@@ -255,14 +255,14 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
 
   Aby filtrować informacje różnicowe między migawkami, wybierz jedną z **zakres** filtrów w górnej części różnicowej widoków.
 
-- **Obiekty pozostałe z migawki #\<numer >**. Ten filtr przedstawiono różnice między obiektami dodawane do sterty lub usuwane ze sterty w porównaniu z migawką będącą punktem odniesienia i poprzednią migawkę. Na przykład pokazuje, podsumowania migawki +205 /-195 liczba obiektów, ten filtr opisano dziesięć obiektów, które zostały dodane, ale nie zostaną usunięte.
+- **Obiekty pozostałe z migawki #\<numer >** . Ten filtr przedstawiono różnice między obiektami dodawane do sterty lub usuwane ze sterty w porównaniu z migawką będącą punktem odniesienia i poprzednią migawkę. Na przykład pokazuje, podsumowania migawki +205 /-195 liczba obiektów, ten filtr opisano dziesięć obiektów, które zostały dodane, ale nie zostaną usunięte.
 
   > [!TIP]
   > Aby wyświetlić najbardziej przydatnych informacji, w tym filtrze, wykonaj czynności opisane w [izolowania przeciek pamięci](#isolate-a-memory-leak).
 
-- **Obiekty dodane między migawka nr\<numer > i #\<numer >**. Filtr ten pokazuje wszystkie obiekty dodane do sterty z poprzednią migawkę.
+- **Obiekty dodane między migawka nr\<numer > i #\<numer >** . Filtr ten pokazuje wszystkie obiekty dodane do sterty z poprzednią migawkę.
 
-- **Wszystkie obiekty w migawce #\<numer >**. Ustawienie tego filtru nie odfiltrować wszystkie obiekty na stosie.
+- **Wszystkie obiekty w migawce #\<numer >** . Ustawienie tego filtru nie odfiltrować wszystkie obiekty na stosie.
 
   Aby wyświetlić odwołania do obiektów, które nie są zgodne z bieżącą **zakres** filtr, wybierz opcję **Pokaż niezgodne odwołania** na liście ustawień ![listy ustawień&#45;listy w analizatorze pamięci ](../profiling/media/js_mem_settings.png "JS_Mem_Settings") w prawym górnym rogu okienka. Jeśli to ustawienie jest włączone, niezgodne odwołania są wyświetlane z tekstem szary.
 
@@ -355,11 +355,11 @@ if (performance && performance.mark) {
 
 - Wyszukaj obiekty, które zostaną zachowane przypadkowo w pamięci w po użytkownik ma przeszedł do nowej strony, która jest typową przyczyną problemów z pamięcią. Na przykład:
 
-    - Niepoprawne użycie [adresu URL. CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) funkcji może spowodować, że ten problem.
+  - Niepoprawne użycie [adresu URL. CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) funkcji może spowodować, że ten problem.
 
-    - Niektóre obiekty mogą dostarczać `dispose` metody i zalecenia dotyczące użycia. Na przykład, należy wywołać `dispose` na [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) wywołanie listy `createFiltered` metody i następnie opuścić stronę.
+  - Niektóre obiekty mogą dostarczać `dispose` metody i zalecenia dotyczące użycia. Na przykład, należy wywołać `dispose` na [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) wywołanie listy `createFiltered` metody i następnie opuścić stronę.
 
-    - Może być konieczne usunięcie co najmniej jednego odbiornika zdarzeń. Aby uzyskać więcej informacji, zobacz [odbiorników zdarzeń DOM widoku](/visualstudio/debugger/quickstart-debug-html-and-css).
+  - Może być konieczne usunięcie co najmniej jednego odbiornika zdarzeń. Aby uzyskać więcej informacji, zobacz [odbiorników zdarzeń DOM widoku](/visualstudio/debugger/quickstart-debug-html-and-css).
 
 - Obejrzyj w dalszej części [ten film wideo](https://channel9.msdn.com/Events/Build/2013/3-316) z konferencji Build 2013 o analizatora pamięci JavaScript.
 
@@ -367,8 +367,8 @@ if (performance && performance.mark) {
 
 - Rozważ tymczasowe modyfikowanie kodu do izolowania problemów. Na przykład możesz chcieć:
 
-    - Analizator pamięci, należy użyć poleceń `console.takeSnapshot` i `performance.mark`. (Zobacz [skojarzyć kodu źródłowego z danymi użycia pamięci](#associate-source-code-with-memory-usage-data).)
+  - Analizator pamięci, należy użyć poleceń `console.takeSnapshot` i `performance.mark`. (Zobacz [skojarzyć kodu źródłowego z danymi użycia pamięci](#associate-source-code-with-memory-usage-data).)
 
-         Można użyć tych poleceń, aby wyizolować problemy, które nie izolować, ręcznie wykonując migawkę sterty.
+    Można użyć tych poleceń, aby wyizolować problemy, które nie izolować, ręcznie wykonując migawkę sterty.
 
-    - Utwórz obiekt testowy i Śledź ją w widokach analizatora pamięci JavaScript, takie jak widok typów. Na przykład można dołączyć bardzo dużego obiektu do innego obiektu, aby zobaczyć, czy konkretny obiekt lub element został zebranych elementów bezużytecznych.
+  - Utwórz obiekt testowy i Śledź ją w widokach analizatora pamięci JavaScript, takie jak widok typów. Na przykład można dołączyć bardzo dużego obiektu do innego obiektu, aby zobaczyć, czy konkretny obiekt lub element został zebranych elementów bezużytecznych.

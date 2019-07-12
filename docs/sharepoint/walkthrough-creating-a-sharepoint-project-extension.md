@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430413"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825803"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Przewodnik: Tworzenie rozszerzenia projektu SharePoint
   W tym instruktażu pokazano, jak można utworzyć rozszerzenia dla projektów programu SharePoint. Rozszerzenie projektu można użyć w celu reagowania na zdarzenia na poziomie projektu na przykład w przypadku projektu jest dodane, usunięte lub zmieniono jego nazwę. Można również dodać właściwości niestandardowe lub reagować po zmianie wartości właściwości. W przeciwieństwie do rozszerzenia elementu projektu projektu rozszerzenia nie może być skojarzony z określonego typu projektu programu SharePoint. Podczas tworzenia rozszerzenia projektu rozszerzenia ładuje po otwarciu dowolnego rodzaju projektu programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -30,11 +30,11 @@ ms.locfileid: "63430413"
 
 - Tworzenie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia dla projektów programu SharePoint, które wykonuje następujące czynności:
 
-    - Dodaje właściwość niestandardowego projektu do okna właściwości. Właściwość ma zastosowanie do każdego projektu programu SharePoint.
+  - Dodaje właściwość niestandardowego projektu do okna właściwości. Właściwość ma zastosowanie do każdego projektu programu SharePoint.
 
-    - Używa modelu obiektu projektu programu SharePoint, aby dodawać zamapowany folder do projektu.
+  - Używa modelu obiektu projektu programu SharePoint, aby dodawać zamapowany folder do projektu.
 
-    - Używa [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modelu obiektu automatyzacji (DTE), aby usunąć zmapowany folder z projektu.
+  - Używa [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modelu obiektu automatyzacji (DTE), aby usunąć zmapowany folder z projektu.
 
 - Tworzenie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) do wdrażania zestawu rozszerzeń właściwości projektu.
 

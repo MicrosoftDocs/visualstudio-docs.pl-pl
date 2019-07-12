@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42a6eec4b6478f9a789c81311fdfdec4e664cb8a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975609"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825959"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu
 
@@ -31,7 +31,7 @@ Podczas lokalizacji plików można przystosować do aplikacji, możesz pomyśle�
 
 - Znajdowanie dostępnej lokalizacji. Użytkownicy mogą nie mieć dostępu do *Program Files* folderu na komputerze, dlatego przechowywanie plików za pomocą aplikacji plików może nie działają.
 
-- Znajdowanie w bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (*C:\\*) nie jest bezpieczna. W przypadku danych aplikacji zaleca się *dane aplikacji* folderu. Dla danych poszczególnych użytkowników aplikacji można utworzyć pliku dla każdego użytkownika w *dokumenty* folderu.
+- Znajdowanie w bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (*C:\\* ) nie jest bezpieczna. W przypadku danych aplikacji zaleca się *dane aplikacji* folderu. Dla danych poszczególnych użytkowników aplikacji można utworzyć pliku dla każdego użytkownika w *dokumenty* folderu.
 
 - Przy użyciu prawidłowej nazwy pliku. Możesz użyć <xref:System.Windows.Forms.OpenFileDialog> i <xref:System.Windows.Forms.SaveFileDialog> formantów, aby zmniejszyć prawdopodobieństwo nieprawidłowych nazw plików. Należy pamiętać, że między czasie użytkownik wybierze plik i czas, w kodzie manipuluje pliku, plik może być usunięty. Ponadto użytkownik nie może mieć uprawnienia do zapisu do pliku.
 
@@ -61,11 +61,11 @@ Fragmenty kodu IntelliSense instalowane przez Visual Studio nie są w sobie zagr
 
 - Otworzyć wszystkie pliki pobrane fragment kodu w Notatniku lub edytorze XML programu Visual Studio i uważnie przeczytać przed zainstalowaniem ich. Zwróć uwagę na następujące kwestie:
 
-    - Fragment kodu uszkodzenie systemu, jeśli zostanie wykonana. Należy uważnie przeczytać kodu źródłowego, przed jego uruchomieniem.
+  - Fragment kodu uszkodzenie systemu, jeśli zostanie wykonana. Należy uważnie przeczytać kodu źródłowego, przed jego uruchomieniem.
 
-    - Blok adresu URL pomocy plik fragmentu kodu może zawierać adresy URL, których wykonanie pliku złośliwy skrypt lub wyświetlić obraźliwe witryny sieci Web.
+  - Blok adresu URL pomocy plik fragmentu kodu może zawierać adresy URL, których wykonanie pliku złośliwy skrypt lub wyświetlić obraźliwe witryny sieci Web.
 
-    - Fragment może zawierać odwołania, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mógł zostać pobrany na komputer, z którego został pobrany fragmentu kodu. Fragment kodu może następnie wprowadzić wywołanie do metody odwołania, który jest wykonywany złośliwego kodu. Aby zabezpieczyć się przed takimi atakami, należy sprawdzić bloki Importy i odwołania do pliku fragmentu kodu.
+  - Fragment może zawierać odwołania, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mógł zostać pobrany na komputer, z którego został pobrany fragmentu kodu. Fragment kodu może następnie wprowadzić wywołanie do metody odwołania, który jest wykonywany złośliwego kodu. Aby zabezpieczyć się przed takimi atakami, należy sprawdzić bloki Importy i odwołania do pliku fragmentu kodu.
 
 ## <a name="see-also"></a>Zobacz także
 

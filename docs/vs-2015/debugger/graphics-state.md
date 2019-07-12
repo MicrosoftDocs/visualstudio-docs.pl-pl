@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe97461800d6f6e6eb285dd7eddb610ab2f5b5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420067"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825575"
 ---
 # <a name="graphics-state"></a>Stan grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ Okna stanu grafiki programu Visual Studio diagnostyki ułatwia zrozumienie stanu
 ##### <a name="to-change-the-state-view"></a>Aby zmienić widok stanu  
   
 - W oknie stanu w prawym górnym lewym tuż poniżej tytułu wybierz przycisk, który odpowiada styl widoku stanu, którego chcesz użyć.  
-  
-    - **Pokaż widok stanu danych wejściowych interfejsu API**  
-  
-    - **Pokaż widok stanu logicznego**  
-  
-    - **Pokaż widok stanu Pinned**  
+
+  - **Pokaż widok stanu danych wejściowych interfejsu API**  
+
+  - **Pokaż widok stanu logicznego**  
+
+  - **Pokaż widok stanu Pinned**  
   
 > [!IMPORTANT]
 > Trzeba przypiąć stanu w **Pokaż interfejsu API danych wejściowych w stanie** lub **stanu logicznego Pokaż** widoków dla niego będzie wyświetlana w **Pokaż przypięte widok stanu**.  

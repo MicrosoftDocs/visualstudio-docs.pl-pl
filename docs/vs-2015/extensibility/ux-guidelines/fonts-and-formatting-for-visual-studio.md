@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075821"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824051"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Zastąp `Microsoft.VisualStudio.Shell.11.0` z bieżącą wersją biblioteki dll MPF.)
 
- Aby wyświetlić okno dialogowe, należy wywołać "**ShowModal()**" w klasie za pośrednictwem **ShowDialog()**. **ShowModal()** ustawia poprawny stan modalny w powłoce, zapewnia okna dialogowego elastycznego jest wyśrodkowane okno nadrzędne i tak dalej.
+ Aby wyświetlić okno dialogowe, należy wywołać "**ShowModal()** " w klasie za pośrednictwem **ShowDialog()** . **ShowModal()** ustawia poprawny stan modalny w powłoce, zapewnia okna dialogowego elastycznego jest wyśrodkowane okno nadrzędne i tak dalej.
 
  Kod jest w następujący sposób:
 
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Większe nagłówki (czcionka środowiska x 155% lub nowszej) można kolorowe do tych celów:
 
-    - Aby zapewnić estetyczny podpisu w interfejsie użytkownika Visual Studio
+  - Aby zapewnić estetyczny podpisu w interfejsie użytkownika Visual Studio
 
-    - Aby zwrócić uwagę na określonym obszarze
+  - Aby zwrócić uwagę na określonym obszarze
 
-    - Oferowanie zwolnienia z kolor tekstu standardowego środowiska szary/czarny ciemny
+  - Oferowanie zwolnienia z kolor tekstu standardowego środowiska szary/czarny ciemny
 
 - Kolor w nagłówkach należy korzystać z istniejących programu Visual Studio kolory firmowe, przede wszystkim purpurowy głównej #FF68217A.
 

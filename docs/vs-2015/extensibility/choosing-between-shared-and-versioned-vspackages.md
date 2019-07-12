@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685340"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821982"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Wybieranie między udostępnionymi i wersjonowanymi pakietami VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Różne wersje programu Visual Studio mogą współistnieć na tym samym kompute
   
 - Dzięki Twojego pakietu VSPackage zgodny z wieloma wersjami [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dostępne są tak zrobić na dwa sposoby:  
   
-    - Limit Twojego pakietu VSPackage za pomocą funkcji najstarszą wersję programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] która jest obsługiwana.  
-  
-    - Usługi pakietu VSPackage, aby dostosować je do wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , w którym jest uruchomiona. Następnie, jeśli zapytania dla nowszej usługi nie powiedzie się, Twoje pakietu VSPackage zaoferować innych usług, które są obsługiwane w starszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  - Limit Twojego pakietu VSPackage za pomocą funkcji najstarszą wersję programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] która jest obsługiwana.  
+
+  - Usługi pakietu VSPackage, aby dostosować je do wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , w którym jest uruchomiona. Następnie, jeśli zapytania dla nowszej usługi nie powiedzie się, Twoje pakietu VSPackage zaoferować innych usług, które są obsługiwane w starszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 - Zarejestruj swoje pakietu VSPackage odpowiednio. Aby uzyskać więcej informacji, zobacz [Rejestracja pakietu VSPackage](../extensibility/internals/vspackage-registration.md) i [zarządzane Rejestracja pakietu VSPackage](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   

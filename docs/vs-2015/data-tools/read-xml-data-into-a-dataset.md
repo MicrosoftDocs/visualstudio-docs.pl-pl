@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692555"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825893"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,9 +147,9 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
   
 - Dwa <xref:System.Windows.Forms.Button> kontrolki.  
   
-    - Jeden przycisk odczytuje plik XML do zestawu danych i wyświetla go w <xref:System.Windows.Forms.DataGridView> kontroli.  
-  
-    - Drugi przycisk wyodrębnia schematu z zestawu danych, a także za pośrednictwem <xref:System.IO.StringWriter> wyświetla go w <xref:System.Windows.Forms.TextBox> kontroli.  
+  - Jeden przycisk odczytuje plik XML do zestawu danych i wyświetla go w <xref:System.Windows.Forms.DataGridView> kontroli.  
+
+  - Drugi przycisk wyodrębnia schematu z zestawu danych, a także za pośrednictwem <xref:System.IO.StringWriter> wyświetla go w <xref:System.Windows.Forms.TextBox> kontroli.  
   
 #### <a name="to-add-controls-to-the-form"></a>Aby dodać formanty do formularza  
   

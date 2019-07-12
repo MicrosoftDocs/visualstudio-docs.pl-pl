@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 48b9bbc596e97215654ff48c72298242a47f603e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704533"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825458"
 ---
 # <a name="javascript-memory"></a>Pamięć języka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,14 +282,14 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
   Aby filtrować informacje różnicowe między migawkami, wybierz jedną z **zakres** filtrów w górnej części różnicowej widoków.  
   
-- **Obiekty pozostałe z migawki #\<numer >**. Ten filtr przedstawiono różnice między obiektami dodawane do sterty lub usuwane ze sterty w porównaniu z migawką będącą punktem odniesienia i poprzednią migawkę. Na przykład pokazuje, podsumowania migawki +205 /-195 liczba obiektów, ten filtr opisano dziesięć obiektów, które zostały dodane, ale nie zostaną usunięte.  
+- **Obiekty pozostałe z migawki #\<numer >** . Ten filtr przedstawiono różnice między obiektami dodawane do sterty lub usuwane ze sterty w porównaniu z migawką będącą punktem odniesienia i poprzednią migawkę. Na przykład pokazuje, podsumowania migawki +205 /-195 liczba obiektów, ten filtr opisano dziesięć obiektów, które zostały dodane, ale nie zostaną usunięte.  
   
   > [!TIP]
   > Aby wyświetlić najbardziej przydatnych informacji, w tym filtrze, wykonaj czynności opisane w [izolowania przeciek pamięci](#Isolate).  
   
-- **Obiekty dodane między migawka nr\<numer > i #\<numer >**. Filtr ten pokazuje wszystkie obiekty dodane do sterty z poprzednią migawkę.  
+- **Obiekty dodane między migawka nr\<numer > i #\<numer >** . Filtr ten pokazuje wszystkie obiekty dodane do sterty z poprzednią migawkę.  
   
-- **Wszystkie obiekty w migawce #\<numer >**. Ustawienie tego filtru nie odfiltrować wszystkie obiekty na stosie.  
+- **Wszystkie obiekty w migawce #\<numer >** . Ustawienie tego filtru nie odfiltrować wszystkie obiekty na stosie.  
   
   Aby wyświetlić odwołania do obiektów, które nie są zgodne z bieżącą **zakres** filtr, wybierz opcję **Pokaż niezgodne odwołania** na liście ustawień ![listy ustawień&#45;listy w analizatorze pamięci ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") w prawym górnym rogu okienka. Jeśli to ustawienie jest włączone, niezgodne odwołania są wyświetlane z tekstem szary.  
   
@@ -380,13 +380,13 @@ if (performance && performance.mark) {
   
 - Gdy przyczyną problemu pamięci jest trudne do zidentyfikowania, za pomocą różnych widoków (na przykład Dominatorów i typy) do wyszukania commonalities, zwłaszcza w celu identyfikowania jednego obiektu (lub kilku obiektów), mogą zawierać odwołania do wielu innych obiektów, które pojawiają się na Widok.  
   
-- Wyszukaj obiekty, które zostaną zachowane przypadkowo w pamięci w po użytkownik ma przeszedł do nowej strony, która jest typową przyczyną problemów z pamięcią. Na przykład:  
+- Wyszukaj obiekty, które zostaną zachowane przypadkowo w pamięci w po użytkownik ma przeszedł do nowej strony, która jest typową przyczyną problemów z pamięcią. Przykład:  
   
-    - Niepoprawne użycie [adresu URL. CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) funkcji może spowodować, że ten problem.  
-  
-    - Niektóre obiekty mogą dostarczać `dispose` metody i zalecenia dotyczące użycia. Na przykład, należy wywołać `dispose` na [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) wywołanie listy `createFiltered` metody i następnie opuścić stronę.  
-  
-    - Może być konieczne usunięcie co najmniej jednego odbiornika zdarzeń. Aby uzyskać więcej informacji, zobacz [odbiorników zdarzeń DOM widoku](../debugger/view-dom-event-listeners.md).  
+  - Niepoprawne użycie [adresu URL. CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) funkcji może spowodować, że ten problem.  
+
+  - Niektóre obiekty mogą dostarczać `dispose` metody i zalecenia dotyczące użycia. Na przykład, należy wywołać `dispose` na [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) wywołanie listy `createFiltered` metody i następnie opuścić stronę.  
+
+  - Może być konieczne usunięcie co najmniej jednego odbiornika zdarzeń. Aby uzyskać więcej informacji, zobacz [odbiorników zdarzeń DOM widoku](../debugger/view-dom-event-listeners.md).  
   
 - Obejrzyj w dalszej części [ten film wideo](http://channel9.msdn.com/Events/Build/2013/3-316) z konferencji Build 2013 o analizatora pamięci JavaScript.  
   
@@ -394,11 +394,11 @@ if (performance && performance.mark) {
   
 - Rozważ tymczasowe modyfikowanie kodu do izolowania problemów. Na przykład możesz chcieć:  
   
-    - Analizator pamięci, należy użyć poleceń `console.takeSnapshot` i `performance.mark`. (Zobacz [skojarzyć kodu źródłowego z danymi użycia pamięci](#JSConsoleCommands).)  
-  
-         Można użyć tych poleceń, aby wyizolować problemy, które nie izolować, ręcznie wykonując migawkę sterty.  
-  
-    - Utwórz obiekt testowy i Śledź ją w widokach analizatora pamięci JavaScript, takie jak widok typów. Na przykład można dołączyć bardzo dużego obiektu do innego obiektu, aby zobaczyć, czy konkretny obiekt lub element został zebranych elementów bezużytecznych.  
-  
+  - Analizator pamięci, należy użyć poleceń `console.takeSnapshot` i `performance.mark`. (Zobacz [skojarzyć kodu źródłowego z danymi użycia pamięci](#JSConsoleCommands).)  
+
+    Można użyć tych poleceń, aby wyizolować problemy, które nie izolować, ręcznie wykonując migawkę sterty.  
+
+  - Utwórz obiekt testowy i Śledź ją w widokach analizatora pamięci JavaScript, takie jak widok typów. Na przykład można dołączyć bardzo dużego obiektu do innego obiektu, aby zobaczyć, czy konkretny obiekt lub element został zebranych elementów bezużytecznych.  
+
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

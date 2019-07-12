@@ -12,20 +12,20 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403256"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821831"
 ---
-# <a name="accessing-stored-font-and-color-settings"></a>Uzyskiwanie dostępu do przechowywanych czcionkę i kolor ustawienia
+# <a name="accessing-stored-font-and-color-settings"></a>Uzyskiwanie dostępu do przechowywanych ustawień czcionek i kolorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Zintegrowanego środowiska programistycznego (IDE) przechowuje zmodyfikowane ustawienia czcionek i kolorów w rejestrze. Możesz użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu uzyskać dostępu do tych ustawień.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Aby zainicjować stanu trwałości czcionki i kolory  
- Informacje o czcionek i kolorów są przechowywane według kategorii w następującej lokalizacji rejestru: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], gdzie  *\<CategoryGUID >* to kategoria identyfikatora GUID.  
+ Informacje o czcionek i kolorów są przechowywane według kategorii w następującej lokalizacji rejestru: [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<wersji programu Visual Studio >* \FontAndColors\\  *\<CategoryGUID >* ], gdzie  *\<CategoryGUID >* to kategoria identyfikatora GUID.  
   
  W związku z tym aby zainicjować trwałości, pakietu VSPackage musi:  
   
@@ -35,16 +35,16 @@ ms.locfileid: "63403256"
   
 - Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metodę, aby otworzyć kategorii w celu jego utrwalenia przy użyciu identyfikatora GUID danej kategorii i flagi trybu jako argumenty.  
   
-     Tryb, określony przez `fFlags` argument, jest tworzony z wartości w <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> wyliczenia. W tym trybie kontrolki:  
-  
-    - Ustawienia, które mogą być udostępniane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.  
-  
-    - Wszystkie ustawienia lub tylko te, które zmodyfikować użytkowników i które można odzyskać <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.  
-  
-    - Sposób propagowanie zmian ustawień użytkownika.  
-  
-    - Format wartości kolorów, które są używane.  
-  
+  Tryb, określony przez `fFlags` argument, jest tworzony z wartości w <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> wyliczenia. W tym trybie kontrolki:  
+
+  - Ustawienia, które mogą być udostępniane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.  
+
+  - Wszystkie ustawienia lub tylko te, które zmodyfikować użytkowników i które można odzyskać <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.  
+
+  - Sposób propagowanie zmian ustawień użytkownika.  
+
+  - Format wartości kolorów, które są używane.  
+
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Aby używać stanu trwałości czcionki i kolory  
  Utrwalanie czcionki i kolory obejmuje:  
   

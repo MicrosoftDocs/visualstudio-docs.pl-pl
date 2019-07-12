@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 4a34076d06bfceb741b987377487a97291e8f726
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 042f7c74057de9a00ae59d5e08a77100c5f30e3c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931581"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824378"
 ---
 # <a name="editor-behavior"></a>Zachowanie edytora
 
@@ -22,9 +22,9 @@ Edytor zachowania można ustawić uruchamianie kodu do sformatowania, jak jest p
 * Formatowanie kodu na bieżąco jest wyzwalana przez naciśnięcie znaków, takich jak rozdzielonych średnikami lub nawiasy klamrowe, które będą emulować preferencje formatowania, które są ustawione.
 * Możesz również format pliku, zapisując go, co umożliwia pisanie kodu, zgodnie z potrzebami i pozostawia odpowiedzialny za formatowanie kodu według stawki ustalonej przez preferencje istniejącego środowiska IDE.
 * Wcięcia można ustawić na wartość None, Auto, lub inteligentne. Te należy wykonać następujące czynności:
-   * Brak — ustawia karetkę do początku następnego wiersza
-   * Auto — ustawia karetkę do tej samej kolumny w następnym wierszu
-   * Blokada Smart - wcięcia w następującym wierszu na podstawie kodu
+  * Brak — ustawia karetkę do początku następnego wiersza
+  * Auto — ustawia karetkę do tej samej kolumny w następnym wierszu
+  * Blokada Smart - wcięcia w następującym wierszu na podstawie kodu
 * Zachowanie dzielącego wyrazy różni się od systemów operacyjnych, a do celów nawigacji, Edytor tekstu musi wiedzieć, gdzie słów rozpoczynać się ani kończyć. Formatowanie może być równa systemu Unix lub Windows.
 
 Można również ustawić reguły formatowania dla XML, CSS, HTML i JSON.

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676700"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821528"
 ---
 # <a name="use-roslyn-analyzers"></a>Używanie analizatorów Roslyn
 
@@ -110,40 +110,40 @@ Istnieje wiele sposobów, aby pominąć naruszeń reguł:
 
 - Z **analizy** menu
 
-   Wybierz **analizy** > **Uruchom analizę kodu i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami nazywane "określania poziomu odniesienia".
+  Wybierz **analizy** > **Uruchom analizę kodu i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami nazywane "określania poziomu odniesienia".
 
 - Z **Eksploratora rozwiązań**
 
-   Aby pominąć naruszenie w **Eksploratora rozwiązań**, Ustaw ważność reguły **Brak**.
+  Aby pominąć naruszenie w **Eksploratora rozwiązań**, Ustaw ważność reguły **Brak**.
 
 - Z **edytorze zestawu reguł**
 
-   Aby pominąć to naruszenie z edytora zestawu reguł, usuń zaznaczenie pola obok jego nazwy lub ustaw **akcji** do **Brak**.
+  Aby pominąć to naruszenie z edytora zestawu reguł, usuń zaznaczenie pola obok jego nazwy lub ustaw **akcji** do **Brak**.
 
 - Z **Edytor kodu**
 
-   Aby pominąć naruszenie zasad w edytorze kodu, umieść kursor w wierszu kodu za pomocą naruszenie, a następnie naciśnij klawisz **Ctrl**+ **.** Aby otworzyć **szybkie akcje** menu. Wybierz **Pomiń CAXXXX** > **w źródle/w pliku pominięć**.
+  Aby pominąć naruszenie zasad w edytorze kodu, umieść kursor w wierszu kodu za pomocą naruszenie, a następnie naciśnij klawisz **Ctrl**+ **.** Aby otworzyć **szybkie akcje** menu. Wybierz **Pomiń CAXXXX** > **w źródle/w pliku pominięć**.
 
-   ![Pomiń diagnostyki w menu Szybkie akcje](media/suppress-diagnostic-from-editor.png)
+  ![Pomiń diagnostyki w menu Szybkie akcje](media/suppress-diagnostic-from-editor.png)
 
 - Z **lista błędów**
 
-   Można pominąć Diagnostyka jednej lub wielu z **lista błędów** , wybierając do pominięcia, a następnie kliknij prawym przyciskiem myszy i wybierając **Pomiń** > **Source/In w Pliku pominięć**.
+  Można pominąć Diagnostyka jednej lub wielu z **lista błędów** , wybierając do pominięcia, a następnie kliknij prawym przyciskiem myszy i wybierając **Pomiń** > **Source/In w Pliku pominięć**.
 
-   - Jeśli zostanie pominięty **w źródłowej**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd C# [ostrzeżenie #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) lub Visual Basic [#Disable Ostrzeżenie](/dotnet/visual-basic/language-reference/directives/directives) dyrektywę, który zostanie dodany do kodu źródłowego.
+  - Jeśli zostanie pominięty **w źródłowej**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd C# [ostrzeżenie #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) lub Visual Basic [#Disable Ostrzeżenie](/dotnet/visual-basic/language-reference/directives/directives) dyrektywę, który zostanie dodany do kodu źródłowego.
 
-      ![Dodawanie ostrzeżenie #pragma w pliku kodu w wersji zapoznawczej](media/pragma-warning-preview.png)
+    ![Dodawanie ostrzeżenie #pragma w pliku kodu w wersji zapoznawczej](media/pragma-warning-preview.png)
 
-   - Jeśli wybierzesz **w pliku pominięć**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut, który jest dodawany do pliku pominięć globalnych.
+  - Jeśli wybierzesz **w pliku pominięć**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut, który jest dodawany do pliku pominięć globalnych.
 
-      ![Dodawanie atrybutu SuppressMessage do pliku pominięć w wersji zapoznawczej](media/preview-changes-in-suppression-file.png)
+    ![Dodawanie atrybutu SuppressMessage do pliku pominięć w wersji zapoznawczej](media/preview-changes-in-suppression-file.png)
 
-   W **podgląd zmian** okno dialogowe, wybierz opcję **Zastosuj**.
+  W **podgląd zmian** okno dialogowe, wybierz opcję **Zastosuj**.
 
-   > [!NOTE]
-   > Jeśli nie widzisz **Pomiń** opcji menu w **Eksploratora rozwiązań**, naruszenia prawdopodobnie pochodzi z kompilacji i analizy nie na żywo. **Lista błędów** Wyświetla diagnostyki lub reguła naruszeń z obu analizy kodu na żywo i kompilacji. Ponieważ diagnostyki kompilacji mogą być nieaktualne, na przykład, jeśli zakończeniu edycji kodu, aby naprawić naruszenie, ale nie został ponownie skompilowany, nie można ukryć te Diagnostyka z **lista błędów**. Diagnostyka z analizy na żywo lub funkcja IntelliSense, są zawsze aktualne z bieżącego źródła i można pominąć z **lista błędów**. Aby wykluczyć *kompilacji* diagnostyki z zaznaczenia, Przełącz **lista błędów** Filtr źródła z **kompilacja + IntelliSense** do **Intellisense tylko**. Następnie wybierz diagnostyki, które chcesz pominąć i postępować zgodnie z opisem w poprzedniej sekcji.
-   >
-   > ![Filtr źródła listy błędów w programie Visual Studio](media/error-list-filter.png)
+  > [!NOTE]
+  > Jeśli nie widzisz **Pomiń** opcji menu w **Eksploratora rozwiązań**, naruszenia prawdopodobnie pochodzi z kompilacji i analizy nie na żywo. **Lista błędów** Wyświetla diagnostyki lub reguła naruszeń z obu analizy kodu na żywo i kompilacji. Ponieważ diagnostyki kompilacji mogą być nieaktualne, na przykład, jeśli zakończeniu edycji kodu, aby naprawić naruszenie, ale nie został ponownie skompilowany, nie można ukryć te Diagnostyka z **lista błędów**. Diagnostyka z analizy na żywo lub funkcja IntelliSense, są zawsze aktualne z bieżącego źródła i można pominąć z **lista błędów**. Aby wykluczyć *kompilacji* diagnostyki z zaznaczenia, Przełącz **lista błędów** Filtr źródła z **kompilacja + IntelliSense** do **Intellisense tylko**. Następnie wybierz diagnostyki, które chcesz pominąć i postępować zgodnie z opisem w poprzedniej sekcji.
+  >
+  > ![Filtr źródła listy błędów w programie Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Użycie wiersza polecenia
 

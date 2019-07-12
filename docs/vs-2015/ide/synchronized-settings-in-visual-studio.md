@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678862"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825655"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronizacja ustawień w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Korzystając z tego samego konta personalizacji zalogować się do programu Visu
 
 - Następujące opcje w **narzędzia &#124; opcje** strony:
 
-    - **Motyw** i pasek wielkość liter ustawienia, w menu **środowiska**, **ogólne** strony opcji
+  - **Motyw** i pasek wielkość liter ustawienia, w menu **środowiska**, **ogólne** strony opcji
 
-    - Wszystkie ustawienia na **środowiska**, **czcionki i kolory** strony opcji
+  - Wszystkie ustawienia na **środowiska**, **czcionki i kolory** strony opcji
 
-    - Wszystkie skróty klawiaturowe, na **środowiska**, **klawiatury** strony opcji
+  - Wszystkie skróty klawiaturowe, na **środowiska**, **klawiatury** strony opcji
 
-    - Wszystkie ustawienia na **środowiska, karty i Windows** strony opcji
+  - Wszystkie ustawienia na **środowiska, karty i Windows** strony opcji
 
-    - Wszystkie ustawienia na **środowiska**, **uruchamiania** strony opcji
+  - Wszystkie ustawienia na **środowiska**, **uruchamiania** strony opcji
 
-    - Wszystkie ustawienia na **edytora tekstów** Opcje strony
+  - Wszystkie ustawienia na **edytora tekstów** Opcje strony
 
 - Wszystkie ustawienia w Projektancie XAML Opcje strony
 

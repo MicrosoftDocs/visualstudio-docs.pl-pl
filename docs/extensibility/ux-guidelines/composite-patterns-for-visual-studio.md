@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ecf0e87a954afc2577c5e374bd22ac9da024be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 918368ff9ce8f9d0363d3ae0cba85e55dc361086
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335403"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824605"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfiguracjach. Oto niektóre z najważniejszych wzorce złożone w programie Visual Studio, w odniesieniu do spójności:
@@ -226,7 +226,7 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 
 - **Zawsze** spróbuj utworzyć wskaźnik, który zawiera podsumowanie informacji o dostępnych. Rozważ podanie liczbę elementów danych dostępnych (na przykład, "3 odwołania do" zamiast po prostu odwołania do"") lub traktować inny sposób podsumowywania danych.
 
-    - W przypadkach, gdy dane dla wskaźnika nie zawsze być obliczane i wyświetlane natychmiast należy wziąć pod uwagę opiniowania progresywnego jako wartości są obliczane. Na przykład należy wziąć pod uwagę animowanie zmian, które odzwierciedlają aktualizacji dostępnych danych, podobnie jak sposób, w jaki Kafelek na żywo poczty e-mail na Windows Phone odświeża jako liczba wzrasta nieprzeczytanych wiadomości e-mail.
+  - W przypadkach, gdy dane dla wskaźnika nie zawsze być obliczane i wyświetlane natychmiast należy wziąć pod uwagę opiniowania progresywnego jako wartości są obliczane. Na przykład należy wziąć pod uwagę animowanie zmian, które odzwierciedlają aktualizacji dostępnych danych, podobnie jak sposób, w jaki Kafelek na żywo poczty e-mail na Windows Phone odświeża jako liczba wzrasta nieprzeczytanych wiadomości e-mail.
 
 - **Nigdy nie** dodanie wskaźników więcej niż użytkownik rozsądnie może zająć do danego elementu zawartości. Wskaźniki otoczenia powinny być przydatne bez konieczności interakcji użytkownika. Wskaźniki utratę ich otoczenie, jeśli wymagają one przepełnienie i inne formanty zarządzania w celu dostosowania ich do widoku.
 
@@ -235,11 +235,11 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 
 - **Zawsze** wymaga od użytkownika do wykonania niektórych jawne gest, aby otworzyć dodatkowej zawartości. Typowe gestów Otwórz obejmują:
 
-    - **Po wskazaniu wskaźnikiem:** etykietki narzędzi lub nieinterakcyjnych informacyjny zawartości
+  - **Po wskazaniu wskaźnikiem:** etykietki narzędzi lub nieinterakcyjnych informacyjny zawartości
 
-    - **Polecenie jawne:** prezentera wbudowane
+  - **Polecenie jawne:** prezentera wbudowane
 
-    - **Kliknij dwukrotnie otoczenia wskaźnika:** Okno podręczne CodeLens
+  - **Kliknij dwukrotnie otoczenia wskaźnika:** Okno podręczne CodeLens
 
 - **Zawsze** odrzucić zawartość szczegółów zawsze wtedy, gdy użytkownik naciśnie klawisz Esc.
 

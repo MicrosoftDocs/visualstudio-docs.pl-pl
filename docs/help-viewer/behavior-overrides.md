@@ -3,17 +3,17 @@ title: Przesłonięcia menedżera zawartości pomocy
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557580"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825093"
 ---
 # <a name="help-content-manager-overrides"></a>Przesłonięcia menedżera zawartości pomocy
 

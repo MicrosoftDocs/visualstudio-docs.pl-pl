@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: efcabf9c7dc201f95515cd24bf3a14727f7149fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421824"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823956"
 ---
 # <a name="just-my-code"></a>Tylko mój kod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
 ### <a name="BKMK_NET_Exception_behavior"></a> Zachowanie wyjątku  
  Jeśli wystąpi nieobsługiwany wyjątek w kodzie niezwiązanych z użytkownikiem, debuger przerywa w wierszu w kodzie użytkownika, w którym został wygenerowany wyjątek.  
   
- Włączenie wyjątku pierwszej szansy wyjątki wiersz kodu użytkownika jest wyróżniony w kolorze zielonym. Stos wywołań Wyświetla ramka z adnotacją etykietą **[kod zewnętrzny]**.  
+ Włączenie wyjątku pierwszej szansy wyjątki wiersz kodu użytkownika jest wyróżniony w kolorze zielonym. Stos wywołań Wyświetla ramka z adnotacją etykietą **[kod zewnętrzny]** .  
   
 ## <a name="BKMK_C___Just_My_Code"></a> Tylko mój kod w języku C++  
   
@@ -122,10 +122,10 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Funkcja|Wymagana. Określa jedną lub więcej funkcji jako funkcje niezwiązanych z użytkownikiem.|  
+|Funkcja|Wymagany. Określa jedną lub więcej funkcji jako funkcje niezwiązanych z użytkownikiem.|  
 |`Name`|Wymagana. ECMA 262 sformatowane wyrażeń regularnych, określając nazwę pełne działanie do dopasowania. Na przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> Nakazuje debugerowi, że wszystkie metody w `MyNS::MyClass` należy uznać za kod niezwiązany z użytkownikiem. W dopasowaniu jest uwzględniana wielkość liter.|  
-|`Module`|Opcjonalna. ECMA 262 sformatowane wyrażeń regularnych, określić pełną ścieżkę do modułu zawierający funkcję. Dopasowanie jest rozróżniana wielkość liter.|  
-|`Action`|Wymagana. Jedną z następujących wartości rozróżniana wielkość liter:<br /><br /> -   `NoStepInto`  — Nakazuje debugerowi na wkroczenie za pośrednictwem funkcji dopasowany.<br />-   `StepInto`  — informuje debuger, aby wejść do funkcji dopasowane zastąpienie wszelkich innych `NoStepInto` dopasowane funkcji.|  
+|`Module`|Opcjonalny. ECMA 262 sformatowane wyrażeń regularnych, określić pełną ścieżkę do modułu zawierający funkcję. Dopasowanie jest rozróżniana wielkość liter.|  
+|`Action`|Wymagany. Jedną z następujących wartości rozróżniana wielkość liter:<br /><br /> -   `NoStepInto`  — Nakazuje debugerowi na wkroczenie za pośrednictwem funkcji dopasowany.<br />-   `StepInto`  — informuje debuger, aby wejść do funkcji dopasowane zastąpienie wszelkich innych `NoStepInto` dopasowane funkcji.|  
   
 ### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Dostosowywanie zachowania dotyczącego stosu wywołań  
  Można określić moduły, pliki źródłowe i funkcji, które mają być traktowane jako kod niezwiązany z użytkownikiem w stosy wywołań, określając je w `*.natjmc` plików.  
@@ -161,7 +161,7 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Name`|Wymagana. Pełna ścieżka moduł lub moduły. Można używać symboli wieloznacznych Windows `?` (zero lub jeden znak) i `*` (zero lub więcej znaków). Na przykład<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> Nakazuje debugerowi Traktuj wszystkie moduły w `\3rdParty\UtilLibs` na dowolnym dysku jako kodu zewnętrznego.|  
-|`Company`|Opcjonalna. Nazwa firmy, która publikuje moduł, który jest osadzony w pliku wykonywalnym. Ten atrybut służy do odróżniania modułów.|  
+|`Company`|Opcjonalny. Nazwa firmy, która publikuje moduł, który jest osadzony w pliku wykonywalnym. Ten atrybut służy do odróżniania modułów.|  
   
  **Atrybuty elementu pliku**  
   
@@ -173,7 +173,7 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagana. W pełni kwalifikowaną nazwę funkcji, które mają być traktowane jako kodu zewnętrznego.|  
+|`Name`|Wymagane. W pełni kwalifikowaną nazwę funkcji, które mają być traktowane jako kodu zewnętrznego.|  
 |`Module`|Opcjonalna. Nazwa lub pełną ścieżkę do modułu, która zawiera funkcję. Ten atrybut służy do odróżniania funkcji o tej samej nazwie.|  
 |`ExceptionImplementation`|Po ustawieniu `true`, stos wywołań Wyświetla funkcja, która zgłosiła wyjątek, a nie z tej funkcji.|  
   
@@ -222,9 +222,9 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
 - Jeśli `debugger` — słowo kluczowe zostanie napotkany w:  
   
-    - **LibraryCode** kod, debuger zawsze przerywa pracę.  
-  
-    - **UnrelatedCode** kod, debuger nie zatrzymuje.  
+  - **LibraryCode** kod, debuger zawsze przerywa pracę.  
+
+  - **UnrelatedCode** kod, debuger nie zatrzymuje.  
   
 ### <a name="BKMK_JS_Exception_behavior"></a> Zachowanie wyjątku  
  Jeśli wystąpi nieobsługiwany wyjątek w:  
