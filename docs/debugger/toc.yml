@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: Debuger nie może wyświetlić kodu źródłowego lub dezasemblacji
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: Za mało pamięci w usługach debugera
+              href: error-debugger-services-no-memory.md
             - name: Wykonywalny dla sesji debugowania — Okno dialogowe
               href: executable-for-debugging-session-dialog-box.md
             - name: 'Edytuj i kontynuuj (C++), okno dialogowe'
