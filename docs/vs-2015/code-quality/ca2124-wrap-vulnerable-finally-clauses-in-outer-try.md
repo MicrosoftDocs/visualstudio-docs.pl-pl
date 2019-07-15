@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 755cce18afcad3fde621fb5a960cc780906afe51
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: de2bd0bfbf60ef717e00daaa668475cb43a9d35c
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385995"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890943"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Opakuj podatne na przejęcie klauzule finally w zewnętrzny blok try
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63385995"
  Ta zasada lokalizuje `try` / `finally` bloki w kodzie, który jest przeznaczony dla wersji 1.0 i 1.1 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , mogą być narażone na filtry wyjątków złośliwego obecne w stosie wywołań. Jeśli poufnych operacje, takie jak personifikacji występują w bloku try, zgłaszany jest wyjątek, filtr, można wykonać przed `finally` bloku. Na przykład personifikacji oznacza to, że filtr jest wykonywany jako nazwa spersonifikowanego użytkownika. Filtry są obecnie implementable tylko w języku Visual Basic.
 
 > [!WARNING]
-> **Uwaga** w wersji 2.0 lub nowszej [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], środowisko wykonawcze automatycznie chroni `try` / `catch` /  `finally` uniemożliwiaj filtry wyjątków złośliwy, jeśli wystąpi resetowania bezpośrednio w metodzie, która zawiera bloku wyjątków.
+> W wersji 2.0 lub nowszej [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], środowisko wykonawcze automatycznie chroni `try` / `catch` /  `finally` uniemożliwiaj filtry wyjątków złośliwy, gdy następuje bezpośrednio w metodzie, zawiera blok wyjątku.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Umieść nieopakowane `try` / `finally` w zewnętrzny blok try. Zobacz drugim przykładzie poniżej. Zmusza to `finally` do wykonania przed uruchomieniem kodu filtru.

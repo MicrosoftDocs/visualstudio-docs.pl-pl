@@ -9,16 +9,16 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784492"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890313"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migracja rozszerzalności projektanta XAML
 
-Począwszy od programu Visual Studio 2019 wersji 16.1 w publicznej wersji zapoznawczej, Projektant XAML obsługuje dwie różne architektury służące: Architektura projektanta izolacji i nowszą architektury powierzchni izolacji. Ten proces przejścia architektury jest wymagany do obsługi środowisk uruchomieniowych docelowych, które nie mogą być hostowane w procesie .NET Framework. Przejście do architektury powierzchni izolacji wprowadza zmiany powodujące niezgodność w modelu rozszerzeń innych firm. W tym artykule opisano zmiany.
+W programie Visual Studio 2019 r, Projektant XAML obsługuje dwie różne architektury służące: Architektura projektanta izolacji i nowszą architektury powierzchni izolacji. Ten proces przejścia architektury jest wymagany do obsługi środowisk uruchomieniowych docelowych, które nie mogą być hostowane w procesie .NET Framework. Przejście do architektury powierzchni izolacji wprowadza zmiany powodujące niezgodność w modelu rozszerzeń innych firm. W tym artykule opisano te zmiany, które są dostępne w kanale 16.2 2019 r w usłudze Visual Studio (wersja zapoznawcza).
 
 **Izolacja projektanta** jest używany przez projektanta WPF dla projektów przeznaczonych dla platformy .NET Framework i obsługuje *. design.dll* rozszerzenia. Kod użytkownika, bibliotek kontrolek i rozszerzeń innych firm, które zostały załadowane w procesie zewnętrznym (*XDesProc.exe*) oraz rzeczywisty kod projektanta i panele projektanta.
 
@@ -47,7 +47,7 @@ Gdy bibliotek kontrolek innych firm są kompilowane dla rzeczywistego docelowe �
 
 Model rozszerzalności powierzchni izolacji nie pozwala na rozszerzenia są zależne od rzeczywistego formantu biblioteki, a w związku z tym, rozszerzenia nie może odwoływać się do typów z biblioteki kontroli. Na przykład *MyLibrary.designtools.dll* nie powinny mieć zależność *MyLibrary.dll*.
 
-Takie zależności zostały najczęściej, gdy rejestrowanie metadanych dla typów za pomocą atrybutu tabel. Kod rozszerzenia, który odwołuje się do biblioteki formantów typy bezpośrednio za pośrednictwem [typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) w języku Visual Basic) zostanie zastąpiony w nowych interfejsów API za pomocą nazw opartej na ciągach typu:
+Takie zależności zostały najczęściej, gdy rejestrowanie metadanych dla typów za pomocą atrybutu tabel. Kod rozszerzenia, który odwołuje się do biblioteki formantów typy bezpośrednio za pośrednictwem [typeof](/dotnet/csharp/language-reference/keywords/typeof) lub [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) zostanie zastąpiony w nowych interfejsów API za pomocą nazw opartej na ciągach typu:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -62,7 +62,7 @@ public class AttributeTableProvider : IProvideAttributeTable
   {
     get
     {
-      AttributeTableBuilder builder = new AttributeTableBuilder();
+      var builder = new AttributeTableBuilder();
       builder.AddCustomAttributes("MyLibrary.MyControl", new DescriptionAttribute(Strings.MyControlDescription);
       builder.AddCustomAttributes("MyLibrary.MyControl", new FeatureAttribute(typeof(MyControlDefaultInitializer));
       return builder.CreateTable();
@@ -96,6 +96,14 @@ End Class
 
 Dostawców funkcji są implementowane w zestawach, rozszerzenia i załadowany w procesie programu Visual Studio. `FeatureAttribute` będą nadal odwoływać się bezpośrednio przy użyciu typów dostawców funkcji [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
+Obecnie obsługiwane są następujące dostawców funkcji:
+
+* `DefaultInitializer`
+* `AdornerProvider`
+* `ContextMenuProvider`
+* `ParentAdapter`
+* `PlacementAdapter`
+
 Ponieważ dostawców funkcji zostaną załadowane w procesie różni się od rzeczywistej środowiska uruchomieniowego bibliotek kodu i kontroli, nie są już możliwość bezpośredniego dostępu do obiektów w czasie wykonywania. Zamiast tego należy przekonwertować takie interakcje przy użyciu odpowiednich interfejsów API opartych na modelu. Interfejs API modelu została zaktualizowana, a dostęp do <xref:System.Type> lub <xref:System.Object> jest albo nie będą już dostępne lub został zastąpiony `TypeIdentifier` i `TypeDefinition`.
 
 `TypeIdentifier` Określa ciąg bez identyfikowania typu nazwy zestawu. A `TypeIdenfifier` mógł zostać rozpoznany `TypeDefinition` do zapytania dodatkowych informacji o typie. `TypeDefinition` Nie można buforować wystąpień w kodzie rozszerzenia.
@@ -105,7 +113,7 @@ TypeDefinition type = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("MyLibrary.MyControl"));
 TypeDefinition buttonType = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("System.Windows.Controls.Button"));
-if (type != null && buttonType != type.IsSubclassOf(buttonType))
+if (type?.IsSubclassOf(buttonType) == true)
 {
 }
 ```
@@ -174,7 +182,7 @@ Interfejsy API, używanego przez `ModelItem` zamiast <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Znane typy pierwotne, takie jak `Int32`, `String`, lub `Thickness` mogą być przekazywane do interfejsu API modelu w postaci wystąpień w .NET Framework i zostanie przekonwertowana na odpowiadający mu obiekt środowiska uruchomieniowego procesu docelowego. Przykład:
+Znane typy pierwotne, takie jak `Int32`, `String`, lub `Thickness` mogą być przekazywane do interfejsu API modelu w postaci wystąpień w .NET Framework i zostanie przekonwertowana na odpowiadający mu obiekt środowiska uruchomieniowego procesu docelowego. Na przykład:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -203,6 +211,8 @@ Public Class MyControlDefaultInitializer
     End Sub
 End Class
 ```
+
+Więcej przykładów kodu są dostępne w [rozszerzalności przykłady, języka xaml designer w-](https://github.com/microsoft/xaml-designer-extensibility-samples) repozytorium.
 
 ## <a name="limited-support-for-designdll-extensions"></a>Ograniczona obsługa. design.dll rozszerzenia
 

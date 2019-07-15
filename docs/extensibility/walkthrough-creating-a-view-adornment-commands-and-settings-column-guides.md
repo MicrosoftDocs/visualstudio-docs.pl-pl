@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8e69801797ed40c206f828499efb234a97791cb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd8a133623cdaa266591b7b23cba7fdc57ca284b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312664"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890587"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Utwórz widok zakończeń, poleceń i ustawień (prowadnice kolumn)
 Możesz rozszerzyć o edytorze tekstu/kodu programu Visual Studio z poleceniami i efekty widoku. W tym artykule pokazano, jak rozpocząć pracę z funkcją popularne rozszerzenie prowadnice kolumn. Prowadnice kolumn są wizualnie światła linii w widoku edytora tekstów w celu zarządzania swój kod, aby szerokości kolumn określonych. W szczególności sformatowany kod może być ważne dla przykładów dokumentów, wpisów w blogu lub raporty o błędach.
@@ -28,7 +28,8 @@ W tym przewodniku możesz:
 
   Możesz wypróbować wersję funkcji prowadnice kolumn z tej galerii Visual Studio[rozszerzenia](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
 
-  **UWAGA**: W tym przewodniku dużą ilość kodu Wklej kilka plików, generowane przez Szablony rozszerzenia programu Visual Studio. Ale wkrótce w tym przewodniku będzie odnosił się do ukończone rozwiązanie w witrynie GitHub wraz z innymi przykładami rozszerzenia. Kompletny kod jest nieco inne w zawierającym ikony poleceń rzeczywiste zamiast generictemplate ikony.
+  > [!NOTE]
+  > W tym przewodniku dużą ilość kodu Wklej kilka plików, generowane przez Szablony rozszerzenia programu Visual Studio. Ale wkrótce w tym przewodniku będzie odnosił się do ukończone rozwiązanie w witrynie GitHub wraz z innymi przykładami rozszerzenia. Kompletny kod jest nieco inne w zawierającym ikony poleceń rzeczywiste zamiast generictemplate ikony.
 
 ## <a name="get-started"></a>Wprowadzenie
 Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Został on uwzględniony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e99e0d3e8f212b2fdab52188b8c765610d9ac2f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901251"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890924"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: Pisanie wizualizatora w języku C\#
 W tym instruktażu pokazano, jak pisanie prostego wizualizatora przy użyciu języka C#. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu okna komunikatu Windows forms. Ten Wizualizator prostego ciągu nie jest szczególnie przydatne w sobie, ale pokazuje podstawowe kroki, które należy wykonać, aby utworzyć bardziej użyteczny, wizualizatorów dla innych typów danych.
@@ -38,10 +38,10 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 1. Utwórz nowy projekt biblioteki klas.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **biblioteki klas**, wybierz **szablony**, następnie wybierz **Utwórz nową bibliotekę klas (.NET Standard)**. W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **biblioteki klas**, wybierz **szablony**, następnie wybierz **Utwórz nową bibliotekę klas (.NET Standard)** . W oknie dialogowym wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** dialogowego **Visual C#** , wybierz **.NET Standard**, a następnie w środkowym okienku wybierz **biblioteki klas (. NET Standard)**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** dialogowego **Visual C#** , wybierz **.NET Standard**, a następnie w środkowym okienku wybierz **biblioteki klas (. NET Standard)** .
     ::: moniker-end
 
 2. Wpisz odpowiednią nazwę biblioteki klas, taką jak `MyFirstVisualizer`, a następnie kliknij przycisk **Utwórz** lub **OK**.
@@ -170,10 +170,10 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj**, a następnie kliknij przycisk **nowy projekt**.
 
     ::: moniker range=">=vs-2019"
-    W polu wyszukiwania wpisz **aplikacja konsolowa**, wybierz **szablony**, następnie wybierz **Utwórz nową aplikację konsoli (.NET Framework)**. W oknie dialogowym wybierz **Utwórz**.
+    W polu wyszukiwania wpisz **aplikacja konsolowa**, wybierz **szablony**, następnie wybierz **Utwórz nową aplikację konsoli (.NET Framework)** . W oknie dialogowym wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (. Program .NET Framework)**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (. Program .NET Framework)** .
     ::: moniker-end
 
 2. Wpisz odpowiednią nazwę biblioteki klas, taką jak `MyTestConsole`, a następnie kliknij przycisk **Utwórz** lub **OK**.
@@ -202,7 +202,8 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 
 2. Edytuj nazwę z pliku Program.cs na bardziej opisową, takich jak TestConsole.cs.
 
-    **Uwaga** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmieni deklaracji klasy w TestConsole.cs, aby dopasować nazwę nowego pliku.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia deklaracji klasy w TestConsole.cs, aby dopasować nazwę nowego pliku.
 
 3. W TestConsole.cs, Dodaj następujący kod do `using` instrukcji:
 
@@ -241,7 +242,7 @@ Najpierw należy utworzyć nowy projekt biblioteki klas.
 
 1. Na **pliku** menu, wybierz **nowy > Projekt**.
 
-2. W **nowy projekt** dialogowego **Visual C#**, wybierz opcję **.NET Standard**.
+2. W **nowy projekt** dialogowego **Visual C#** , wybierz opcję **.NET Standard**.
 
 3. W środkowym okienku wybierz **biblioteki klas**.
 
@@ -257,7 +258,7 @@ Najpierw należy utworzyć nowy projekt biblioteki klas.
 
 2. W menu skrótów wybierz **Dodaj** a następnie kliknij przycisk **nowy element**.
 
-3. W **Dodaj nowy element** dialogowego **elementy Visual C#**, wybierz opcję **uproszczony Wizualizator debugowania**.
+3. W **Dodaj nowy element** dialogowego **elementy Visual C#** , wybierz opcję **uproszczony Wizualizator debugowania**.
 
 4. W **nazwa** wpisz odpowiednią nazwę, takich jak SecondVisualizer.cs.
 

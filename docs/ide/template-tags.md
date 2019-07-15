@@ -1,5 +1,6 @@
 ---
 title: Dodawanie lub edytowanie tagów szablonów projektu
+description: Dowiedz się, jak dodać lub edytować znaczniki szablonów projektu w programie Visual Studio.
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
@@ -12,36 +13,36 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 4a5113fa7f420d58892e2737ec9196422486490e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038663"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891137"
 ---
 # <a name="add-tags-to-project-templates"></a>Dodawanie tagów do szablonów projektu
 
-Począwszy od [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.1 w wersji 2 (wersja zapoznawcza), można dodać języka, platformy i tagi typu projektu do szablonów projektu. Znaczniki są używane w dwóch miejscach w oknie dialogowym Nowy projekt:
+Począwszy od [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.1 w wersji 2 (wersja zapoznawcza), można dodać języka, platformy i tagi typu projektu do szablonów projektu. 
 
-- Tagi są wyświetlane w polu Opis szablonu
+Znaczniki są używane w dwóch miejscach w **nowy projekt** okno dialogowe:
+
+- Tagi są wyświetlane w polu Opis szablonu.
 
    ![Szablon projektu przy użyciu tagów w oknie dialogowym Nowy projekt](media/npd-item-with-template-tags.png)
 
-- Tagi włączyć szablon, przeszukiwanie i filtrowane
+- Tagi umożliwiają szablonu, przeszukiwanie i filtrowane.
 
    ![Wyszukiwanie i filtrowanie w oknie dialogowym Nowy projekt](media/npd-search-and-filter.png)
 
-Możesz dodawać znaczniki, aktualizując *.vstemplate* pliku XML przy użyciu szablonu tagi utworzone w programie Visual Studio lub tworząc szablon niestandardowy tagów. Znaczniki szablonu są wyświetlane tylko w programie Visual Studio 2019 r okna dialogowego Nowy projekt. Nie wpływają one na renderowanie szablonu w poprzednich wersjach programu Visual Studio.
+Możesz dodawać znaczniki, aktualizując *.vstemplate* pliku XML. Można użyć znaczników szablonu, które są wbudowane w program Visual Studio lub tworzyć tagi szablonu niestandardowego. Tagi szablonu są wyświetlane tylko w programie Visual Studio 2019 **nowy projekt** okno dialogowe. Znaczniki szablonu nie wpływają na to, jak szablon renderuje we wcześniejszych wersjach programu Visual Studio.
 
 ## <a name="add-or-edit-tags"></a>Dodawanie lub edytowanie tagów
 
-Możesz chcieć dodać lub edytować znaczniki do szablonu projektu *.vstemplate* XML po użytkownik:
+Możesz chcieć dodać lub edytować znaczniki do szablonu projektu *.vstemplate* XML, gdy należy wykonać jedną z następujących czynności:
 
-* [Utwórz nowy szablon projektu](/visualstudio/ide/how-to-create-project-templates) za pomocą Kreatora Eksportuj szablon
-
-* [Aktualizowanie istniejącego szablonu projektu](/visualstudio/ide/how-to-update-existing-templates)
-
-* [Utwórz nowy szablon projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+* [Utwórz nowy szablon projektu](/visualstudio/ide/how-to-create-project-templates) za pomocą Kreatora eksportowania szablonu.
+* [Aktualizowanie istniejącego szablonu projektu](/visualstudio/ide/how-to-update-existing-templates).
+* [Utwórz nowy szablon projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template).
 
 ## <a name="syntax"></a>Składnia
 
@@ -53,7 +54,7 @@ Możesz chcieć dodać lub edytować znaczniki do szablonu projektu *.vstemplate
 
 ## <a name="attributes"></a>Atrybuty
 
-Następujące atrybuty są opcjonalne i dla użytkowników zaawansowanych scenariuszy.
+Następujące atrybuty opcjonalne można użyć w scenariuszach zaawansowanych użytkowników:
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -78,17 +79,19 @@ Brak.
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Wymagane) Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Wymagane) Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** okno dialogowe lub **Dodaj nowy element** okno dialogowe.|
 
 ## <a name="text-value"></a>Wartość tekstowa
 
-Wartość tekstowa jest wymagany, chyba że `Package` i `ID` atrybuty są używane.
+Wartość tekstowa jest wymagany, chyba że używasz `Package` i `ID` atrybutów.
 
 Tekst zawiera nazwę szablonu.
 
 ## <a name="built-in-tags"></a>Wbudowane tagi
 
-Program Visual Studio oferuje listę wbudowanych tagów, po dodaniu, renderowanie zlokalizowanych zasobów. Poniżej przedstawiono listę wbudowanych tagów i odpowiadające im wartości w nawiasach.
+Program Visual Studio udostępnia listę wbudowanych tagów. Podczas dodawania tag wbudowany tag renderuje zlokalizowanych zasobów. 
+
+Na poniższej liście przedstawiono wbudowane tagi, które są dostępne w programie Visual Studio. Odpowiadające im wartości są wyświetlane w nawiasach.
 
 | Język | Platforma | Typ projektu |
 | -- | -- | -- |
@@ -110,7 +113,7 @@ Program Visual Studio oferuje listę wbudowanych tagów, po dodaniu, renderowani
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie pokazano metadanych dla szablonu projektu dla wizualizacji C# aplikacji.
+W poniższym przykładzie pokazano metadanych dla szablonu projektu dla wizualizacji C# aplikacji:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -147,4 +150,4 @@ W poniższym przykładzie pokazano metadanych dla szablonu projektu dla wizualiz
 - [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
 - [Tworzenie szablonów projektów i elementów](/visualstudio/ide/creating-project-and-item-templates)
 - [Dostosowywanie szablonów projektów i elementów](/visualstudio/ide/customizing-project-and-item-templates)
-- [Wprowadzenie do szablonu projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Rozpoczynanie pracy przy użyciu szablonu projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)

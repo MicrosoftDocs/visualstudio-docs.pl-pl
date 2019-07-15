@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: becbd47ca49f44a84a2f58be9f2185e3d61b099b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0ba4a5c52bf972236914c06ec9672653fbde9cea
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335337"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891046"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
 ## <a name="BKMK_ImageUseInVisualStudio"></a> Użyj obrazu w programie Visual Studio
@@ -23,7 +23,8 @@ ms.locfileid: "66335337"
 
 - **Ikony**. Małe obrazy, które pojawiają się w poleceń, hierarchii, szablonów i tak dalej. Domyślny rozmiar ikony używane w programie Visual Studio jest PNG 16 x 16. Automatycznie generowane przez usługę obraz ikony Generowanie formacie XAML obsługi HDPI.
 
-     **UWAGA:** Gdy obrazy są używane w systemie menu, nie należy tworzyć ikony dla każdego polecenia. Zapoznaj się z [menu i poleceń dla programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) aby zobaczyć, czy polecenie powinna pojawić się ikony.
+    > [!NOTE]
+    > Gdy obrazy są używane w systemie menu, nie należy tworzyć ikony dla każdego polecenia. Zapoznaj się z [menu i poleceń dla programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) aby zobaczyć, czy polecenie powinna pojawić się ikony.
 
 - **Miniatury.** Obrazy używane w obszarze (wersja zapoznawcza) okno dialogowe, takich jak okna dialogowego Nowy projekt.
 

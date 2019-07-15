@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824328"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891041"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Formatowanie odwołania (skalowanie/pogrubienie)
  Niektóre okna dialogowe wymaga określonego tekstu pogrubienie lub rozmiar niż czcionka środowiska. Wcześniej czcionki większy niż czcionka środowiska zostały zakodowane jako "`environment font +2`" lub podobne. Korzystania z fragmentów kodu podanego obsługuje monitorów o dużej rozdzielczości i upewnij się, że tekst wyświetlany zawsze znajduje się na właściwy rozmiar i grubość (na przykład lub Semilight światła).
 
-> **Uwaga: Przed zastosowaniem formatowania, upewnij się, są następujące wskazówki w [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Przed zastosowaniem formatowania, upewnij się, są następujące wskazówki w [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). **
 
  Aby skalować czcionka środowiska, należy ustawić styl TextBlock lub etykiety, jak wskazano. Każda z tych fragmentów kodu, prawidłowo używana, spowoduje wygenerowanie poprawne czcionki, w tym odpowiedni rozmiar i grubość odmiany.
 

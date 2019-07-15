@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312300"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890970"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Typowe wzorce kontrolki dla programu Visual Studio
 ## <a name="BKMK_CommonControls"></a> Formanty standardowe
@@ -296,7 +296,8 @@ Wytyczne dotyczące przy użyciu przycisku:
 #### <a name="graphical-buttons"></a>Przyciski graficzne
 Niektóre przyciski należy zawsze używać graficzny i nigdy nie dołączaj tekstu, aby zaoszczędzić miejsce i uniknąć problemów z lokalizacji. Są one często używane w innych sortowanie list i formanty pola wyboru.
 
-> **Uwaga:** Użytkownicy muszą kartę w tych przycisków (nie ma żadnych kluczy dostępu), więc umieść je w kolejności rozsądne. Mapa `name` właściwości przycisku akcję, która zajmuje się tak, aby czytniki zawartości ekranu poprawnie interpretować Akcja przycisku.
+> [!NOTE]
+> Użytkownicy muszą kartę w tych przycisków (nie ma żadnych kluczy dostępu), więc umieść je w kolejności rozsądne. Mapa `name` właściwości przycisku akcję, która zajmuje się tak, aby czytniki zawartości ekranu poprawnie interpretować Akcja przycisku.
 
 | Funkcja | Przycisk |
 | --- | --- |

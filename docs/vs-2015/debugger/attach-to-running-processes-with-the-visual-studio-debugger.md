@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15b9921514f76d788430c1eda66603e9fc446361
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65702643"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891027"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,8 @@ Ta funkcja umożliwia debugowanie aplikacji, które są uruchomione na komputerz
 
    1. Wpisz nazwę w **kwalifikator** pola listy.
 
-      >**Uwaga** Jeśli w kolejnych krokach, nie możesz się połączyć przy użyciu nazwy komputera zdalnego, użyj adresu IP. (Numer portu może pojawić się automatycznie po wybraniu procesu. Możesz również wprowadzić go ręcznie. Na poniższej ilustracji 4020 jest domyślnym portem dla zdalnego debugera).
+      > [!NOTE]
+      > Jeśli w kolejnych krokach, nie możesz się połączyć przy użyciu nazwy komputera zdalnego, należy używać adresu IP. (Numer portu może pojawić się automatycznie po wybraniu procesu. Możesz również wprowadzić go ręcznie. Na poniższej ilustracji 4020 jest domyślnym portem dla zdalnego debugera).
 
    2. Kliknij strzałkę listy rozwijanej, dołączone do **kwalifikator** pola listy, a następnie wybierz nazwę komputera, z listy rozwijanej.
 

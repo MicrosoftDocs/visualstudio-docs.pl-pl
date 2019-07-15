@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688155"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890468"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: Pisanie wizualizatora w języku C\#
 
@@ -39,7 +39,7 @@ Wizualizator kodu muszą być umieszczone w bibliotece DLL, który będzie odczy
 
 1. Na **pliku** menu, wybierz **New** a następnie kliknij przycisk **nowy projekt**.
 
-2. W **nowy projekt** dialogowego **typu projektu**s, wybierz opcję **Visual C#**.
+2. W **nowy projekt** dialogowego **typu projektu**s, wybierz opcję **Visual C#** .
 
 3. W **szablony** wybierz **biblioteki klas**.
 
@@ -196,7 +196,8 @@ Wizualizator kodu muszą być umieszczone w bibliotece DLL, który będzie odczy
 
 2. Edytuj nazwę z pliku Program.cs na bardziej opisową, takich jak TestConsole.cs.
 
-    **Uwaga** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie zmieni deklaracji klasy w TestConsole.cs, aby dopasować nazwę nowego pliku.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie zmienia deklaracji klasy w TestConsole.cs, aby dopasować nazwę nowego pliku.
 
 3. W TestConsole.cs, Dodaj następujący kod do `using` instrukcji:
 
@@ -234,7 +235,7 @@ Wizualizator kodu muszą być umieszczone w bibliotece DLL, który będzie odczy
 
 1. Na **pliku** menu, wybierz **Dodaj** a następnie kliknij przycisk **nowy projekt**.
 
-2. W **Dodaj nowy projekt** dialogowego **typu projektu**s, wybierz opcję **Visual C#**.
+2. W **Dodaj nowy projekt** dialogowego **typu projektu**s, wybierz opcję **Visual C#** .
 
 3. W **szablony** wybierz **biblioteki klas**.
 

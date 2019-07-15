@@ -11,18 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c489fcc3c845ae6421706f7d660083f2e5422e19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341331"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891124"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Ponowne formatowanie kodu w starszej wersji usługi językowej
 
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kod źródłowy może ponownie sformatowane, przez normalizowanie stosowania wcięć i białe znaki. Może to obejmować wstawiania lub usuwając spacje lub tabulatory na początku każdego wiersza, dodawanie nowych wierszy między liniami lub zastępowania miejsca do magazynowania za pomocą karty lub kart przy użyciu miejsc do magazynowania.
 
->**Uwaga:** Wstawiając lub usuwając znaki nowego wiersza może mieć wpływ na znaczników, takich jak punkty przerwania i zakładki, ale dodając lub usuwając spacje lub tabulatory nie ma wpływu na znaczników.
+> [!NOTE]
+> Wstawiając lub usuwając znaki nowego wiersza może mieć wpływ na znaczników, takich jak punkty przerwania i zakładki, ale dodając lub usuwając spacje lub tabulatory nie ma wpływu na znaczników.
 
 Użytkownicy mogą uruchamiać operację reformatting, wybierając **Formatuj zaznaczenie** lub **Formatuj dokument** z **zaawansowane** menu **Edytuj**menu. Operacja reformatting mogą być też wywoływane po wstawieniu fragmentu kodu lub określonego znaku. Na przykład po wpisaniu zamykającego nawiasu klamrowego w języku C# wszystko pomiędzy otwierający nawias klamrowy dopasowania i zamknij nawiasów klamrowych jest automatycznie z wcięciami, aby zapewnić odpowiedni poziom.
 

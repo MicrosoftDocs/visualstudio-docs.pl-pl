@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c29158be17320e8d7f842386a00c44ac86bf5513
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c3d67bddced5e7d335f019273f8c008da6c8e59
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550774"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890654"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze platformy Azure lub maszynie wirtualnej w programie Visual Studio
 
@@ -39,7 +39,8 @@ Emulator usługi Azure Compute symuluje i jest uruchamiana w środowisku lokalny
 
 3. Krok za pośrednictwem aplikacji, wybierając polecenia na **debugowania** menu i ustawiania punktów przerwania w kodzie. Podczas wykonywania kroków za pomocą aplikacji w debugerze okienka zostaną zaktualizowane o bieżący stan aplikacji. Gdy zatrzymasz debugowanie, wdrażanie aplikacji zostaną usunięte. Jeśli aplikacja zawiera rolę sieci web i ustawiono właściwość akcji uruchamiania do uruchomienia przeglądarki sieci web, programu Visual Studio uruchamia aplikację sieci web w przeglądarce. Jeśli zmienisz liczbę wystąpień roli w konfiguracji usługi, należy zatrzymać usługi w chmurze i ponownie uruchom debugowanie tak, aby można było debugować te nowe wystąpienia roli.
 
-    **Uwaga:** Po zatrzymaniu działania lub debugowania usługi emulatora obliczeń lokalnych i emulatora magazynu nie są zatrzymane. Należy zatrzymać je jawnie przy użyciu obszaru powiadomień.
+    > [!NOTE]
+    > Po zatrzymaniu działania lub debugowania usługi emulatora obliczeń lokalnych i emulatora magazynu nie są zatrzymane. Należy zatrzymać je jawnie przy użyciu obszaru powiadomień.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Debugowanie usługi w chmurze na platformie Azure
 
@@ -145,7 +146,8 @@ Projekty języka Visual Studio ASP.NET oferuje opcję, aby utworzyć maszynę wi
 
     ![Utwórz okno dialogowe projektu sieci web platformy ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Uwaga:** Zostanie wyświetlony monit do logowania się do konta platformy Azure, jeśli jeszcze nie zostało to zrobione.
+    > [!NOTE]
+    > Zostanie wyświetlony monit do logowania się do konta platformy Azure, jeśli jeszcze nie zostało to zrobione.
 
 3. Wybierz różne ustawienia dla maszyny wirtualnej, a następnie wybierz pozycję **OK**. Zobacz [maszyn wirtualnych](http://go.microsoft.com/fwlink/?LinkId=623033) Aby uzyskać więcej informacji.
 

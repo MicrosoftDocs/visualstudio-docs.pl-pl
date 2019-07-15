@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Wypożyczać program Visual Studio Professional lub Visual Studio Enterprise na podstawie miesiąca na miesiąc lub roczna, nie długoterminowej umowy.
-ms.openlocfilehash: 77e088c42578dcd48f24c2f057c6304cd96c4b73
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 557f23a6ffa4af39dce2e9716a56ea0e99875f82
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785079"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891068"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji chmury programu Visual Studio Professional i Visual Studio Enterprise
 
@@ -27,7 +27,7 @@ Możesz kupić [subskrypcji programu Visual Studio Professional i Visual Studio 
 * Do rozliczania zakupów, potrzebujesz [subskrypcji platformy Azure](https://azure.microsoft.com/pricing/purchase-options/). Możesz [Zarejestruj](https://portal.azure.com) przed pierwszym zakupem lub podczas pierwszego zakupu w witrynie Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Kto może kupić subskrypcje chmury programu Visual Studio?
-Każda osoba mająca [właściciela](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administratora usługi](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), lub [współadministrator](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) dostęp do subskrypcji platformy Azure można kupić subskrypcje w chmurze.
+Każda osoba mająca [właściciela](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administratora usługi](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription), lub [współadministrator](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) dostęp do subskrypcji platformy Azure można kupić subskrypcje w chmurze.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Jak kupić subskrypcje chmury
 

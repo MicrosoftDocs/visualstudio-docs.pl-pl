@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 85c327a2690096aa0786b4851348657d2295a223
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784894"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891074"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s Nowość w subskrypcji programu Visual Studio
 
@@ -20,7 +20,7 @@ Firma Microsoft aktualizuje pakiet korzyści subskrypcji często, aby zwiększy�
 
 ## <a name="2019-q1-january-march"></a>2019, KW1 (styczeń – marzec)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Maksymalne użycie dodane do [portal administratora subskrypcji](https://manage.visualstuido.com)
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Maksymalne użycie dodane do [portal administratora subskrypcji](https://manage.visualstudio.com)
 Nowa funkcja w portalu administratora subskrypcji programu Visual Studio pomaga śledzić, ile subskrypcje zostały zakupione i przypisać i identyfikuje szczytowa liczba subskrypcji każdego poziomu przypisanej, zarówno w zeszłym roku, jak i przez cały czas w czas trwania umów. Może to pomóc w ułatwią zrozumienie bieżącego użycia subskrypcji i planowanie przyszłych zakupów. 
 
   > [!div class="mx-imgBorder"]

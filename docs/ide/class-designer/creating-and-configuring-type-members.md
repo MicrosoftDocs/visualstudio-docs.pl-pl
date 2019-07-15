@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 819a347f41b8cb07085e126747596d4bf6de1bc3
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746927"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891154"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Tworzenie i konfigurowanie składowych typu w Projektancie klas
 
@@ -122,7 +122,8 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 
 4. Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
 
-     **Uwaga:** Skróty klawiaturowe można również użyć do tworzenia elementów członkowskich. Aby uzyskać więcej informacji, zobacz [skróty myszy i klawiaturowe w diagramie klas i szczegóły klasy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+    > [!NOTE]
+    > Skróty klawiaturowe można również użyć do tworzenia elementów członkowskich. Aby uzyskać więcej informacji, zobacz [skróty myszy i klawiaturowe w diagramie klas i szczegóły klasy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modyfikowanie składowych typu
 

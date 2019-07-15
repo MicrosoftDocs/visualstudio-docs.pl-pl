@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823462"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891090"
 ---
 # <a name="using-saved-intellitrace-data"></a>Korzystanie z zapisanych danych funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
   
   - W obszarze **wszystkie łącza**, Znajdź plik .iTrace. Otwórz go.  
 
-        \- or -  
+    \- lub —  
 
   - W obszarze **kroki odtwarzania**, wybierz **IntelliTrace** łącza.  
   

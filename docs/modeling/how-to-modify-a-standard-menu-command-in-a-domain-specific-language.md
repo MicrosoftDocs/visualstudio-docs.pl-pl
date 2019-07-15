@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263696"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890597"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Instrukcje: Modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 
@@ -65,7 +65,8 @@ Utwórz nowy plik, który zawiera deklarację częściowe klasy zestawu poleceń
     { internal partial class Language1CommandSet { ...
     ```
 
-     **Uwaga** Jeżeli szablon pliku klasy został użyty do utworzenia nowego pliku, należy usunąć przestrzeni nazw i nazwę klasy.
+    > [!NOTE]
+    > Jeśli szablon pliku klasy został użyty do utworzenia nowego pliku, należy poprawić przestrzeni nazw i nazwę klasy.
 
 ## <a name="override-the-command-methods"></a>Przesłaniaj metody polecenia
 

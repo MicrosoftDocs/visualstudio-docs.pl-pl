@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 372c30caa15ef8783aa1fead479087e7618e707b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442362"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890660"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Instrukcje: Dodawanie polecenia do menu skrótów
 
@@ -167,7 +167,8 @@ Polecenie klasę zestawu jest tworzony na podstawie <xref:Microsoft.VisualStudio
 
      `{ internal partial class Language1CommandSet { ...`
 
-     **Uwaga** Jeśli szablon klasy jest używany do utworzenia nowego pliku, należy poprawić przestrzeni nazw i nazwę klasy.
+     > [!NOTE]
+     > Jeśli szablon klasy jest używany do utworzenia nowego pliku, należy usunąć przestrzeni nazw i nazwę klasy.
 
 Kod zestawu poleceń zazwyczaj konieczne zaimportuj następujące przestrzenie nazw:
 
@@ -334,7 +335,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **W menu nie ma polecenia:**
 
-- Polecenie pojawi się tylko w przypadku debugowania wystąpienia programu Visual Studio, dopóki nie zostanie zainstalowany pakiet języka DSL. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
+- Polecenie pojawi się tylko w przypadku debugowania wystąpienia programu Visual Studio, dopóki nie zostanie zainstalowany pakiet języka DSL. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
 - Upewnij się, że eksperymentalne przykładu ma poprawne rozszerzenie nazwy pliku dla tego języka DSL. Aby sprawdzić rozszerzenie nazwy pliku, otwórz DslDefinition.dsl w głównym wystąpieniu programu Visual Studio. Następnie w Eksplorator DSL, kliknij prawym przyciskiem myszy węzeł edytora, a następnie kliknij polecenie Właściwości. W oknie dialogowym właściwości zbadać właściwości FileExtension.
 
@@ -362,7 +363,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Instrukcje: Modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Wdrażanie rozwiązań dla języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md)
+- [Wdrażanie rozwiązań dla języka specyficznego dla domeny](msi-and-vsix-deployment-of-a-dsl.md)
 - [Przykładowy kod: Diagramy obwodu](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
