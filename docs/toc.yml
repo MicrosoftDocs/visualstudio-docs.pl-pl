@@ -16,15 +16,6 @@
   items:
     - name: Instalowanie programu Visual Studio
       href: install/install-visual-studio.md
-    - name: Konta personalizacji
-      items:
-        - name: Logowanie do programu Visual Studio
-          displayName: personalization accounts
-          href: ide/signing-in-to-visual-studio.md
-        - name: Praca z wieloma kontami użytkowników
-          href: ide/work-with-multiple-user-accounts.md
-        - name: Rozszerzanie wersji próbnej lub aktualizowanie licencji
-          href: ide/how-to-unlock-visual-studio.md
     - name: Instalowanie w trybie offline
       items:
         - name: Tworzenie instalacji w trybie offline programu Visual Studio
@@ -61,8 +52,6 @@
           items:
             - name: Tworzenie instalacji sieciowej programu Visual Studio
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: Aktualizowanie instalacji sieciowej programu Visual Studio
-              href: install/update-a-network-installation-of-visual-studio.md
             - name: Kwestie dotyczące sieci
               items:
                 - name: Instalowanie i używanie programu Visual Studio za zaporą lub serwerem proxy
@@ -77,28 +66,32 @@
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
             - name: Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
               href: install/set-defaults-for-enterprise-deployments.md
-            - name: Wyłączanie lub przenoszenie pamięci podręcznej pakietów
-              href: install/disable-or-move-the-package-cache.md
-            - name: Sterowanie aktualizacjami na potrzeby wdrożeń programu Visual Studio
-              href: install/controlling-updates-to-visual-studio-deployments.md
-            - name: Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
-              href: install/update-servicing-baseline.md
-        - name: Zarządzanie instalacjami
+            - name: Wdrażanie podglądu pomocy
+              items:
+                - name: Podręcznik administratora programu Podgląd Pomocy
+                  href: help-viewer/administrator-guide.md
+                - name: Argumenty wiersza poleceń Menedżera zawartości pomocy
+                  href: help-viewer/command-line-arguments.md
+                - name: Przesłonięcia Menedżera zawartości Pomocy
+                  href: help-viewer/behavior-overrides.md
+        - name: Zarządzanie instalacjami i aktualizowanie ich
           items:
             - name: Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
               href: install/tools-for-managing-visual-studio-instances.md
+            - name: Aktualizowanie instalacji sieciowej programu Visual Studio
+              href: install/update-a-network-installation-of-visual-studio.md
+            - name: Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
+              href: install/update-servicing-baseline.md
+            - name: Sterowanie aktualizacjami na potrzeby wdrożeń programu Visual Studio
+              href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: Zarządzanie zmianami ładunku pakietu
+              href: install/changed-payloads.md
+            - name: Wyłączanie lub przenoszenie pamięci podręcznej pakietów
+              href: install/disable-or-move-the-package-cache.md
         - name: Zarządzanie subskrypcjami
           items:
             - name: 'Subskrypcje programu Visual Studio: przegląd dla administratorów'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Wdrażanie podglądu pomocy
-          items:
-            - name: Podręcznik administratora programu Podgląd Pomocy
-              href: help-viewer/administrator-guide.md
-            - name: Argumenty wiersza poleceń Menedżera zawartości pomocy
-              href: help-viewer/command-line-arguments.md
-            - name: Przesłonięcia Menedżera zawartości Pomocy
-              href: help-viewer/behavior-overrides.md
         - name: Tematy pomocy
           items:
             - name: Identyfikatory obciążeń i składników programu Visual Studio
@@ -126,8 +119,6 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-            - name: Zmiany ładunku pakietu
-              href: install/changed-payloads.md
             - name: Numery wersji i daty wydania programu Visual Studio
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Korzystanie z programu Visual Studio z poziomu maszyny wirtualnej platformy Azure
@@ -718,6 +709,15 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Zarządzanie narzędziami zewnętrznymi
           href: ide/managing-external-tools.md
+        - name: Konta personalizacji
+          items:
+            - name: Logowanie do programu Visual Studio
+              displayName: personalization accounts
+              href: ide/signing-in-to-visual-studio.md
+            - name: Praca z wieloma kontami użytkowników
+              href: ide/work-with-multiple-user-accounts.md
+            - name: Rozszerzanie wersji próbnej lub aktualizowanie licencji
+              href: ide/how-to-unlock-visual-studio.md
     - name: Wydajność programu Visual Studio
       items:
         - name: Optymalizacja wydajności
