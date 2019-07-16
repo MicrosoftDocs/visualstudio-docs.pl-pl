@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184923"
 ---
-# <a name="adapting-legacy-code-to-the-editor"></a>Dostosowanie kodem Legacy do edytora
+# <a name="adapting-legacy-code-to-the-editor"></a>Dostosowanie starszego kodu do edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Edytor programu Visual Studio zawiera wiele funkcji, które można wywołać z istniejącymi elementami kodu. Poniższe instrukcje przedstawiają sposób dostosowania jako składnik MEF nie, na przykład pakietu VSPackage, korzystanie z funkcji edytora. Instrukcje pokazują również jak używać kart usług edytora kodu zarówno zarządzanego i niezarządzanego.  

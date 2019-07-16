@@ -11,13 +11,13 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160536"
 ---
-# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Ciągi podstawienia używane w. Pkgdef i. Pliki Pkgundef
+# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Ciągi podstawienia używane w plikach .Pkgdef i .Pkgundef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można użyć ciągów podstawienia wymienione poniżej w pkgdef i pkgundef plików, należy zdefiniować dla programu Visual Studio isolated shell aplikacji.  

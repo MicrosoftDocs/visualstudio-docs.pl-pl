@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bee6368931dc47b78186ec870039ab292960fa77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163322"
 ---
 # <a name="set-radix-command"></a>Ustaw Radix — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Debug.SetRadix [10 | 16 | hex | dec]
   
 ## <a name="arguments"></a>Argumenty  
  `10` lub `16` lub `hex` lub `dec`  
- Opcjonalna. Wskazuje dziesiętne (10 lub gru) lub liczba szesnastkowa (16 lub szesnastkowych). Jeśli argument jest pominięty, zwracany jest bieżąca wartość podstawy.  
+ Opcjonalny. Wskazuje dziesiętne (10 lub gru) lub liczba szesnastkowa (16 lub szesnastkowych). Jeśli argument jest pominięty, zwracany jest bieżąca wartość podstawy.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie środowiska, aby wyświetlić wartości całkowite w formacie szesnastkowym.  

@@ -10,15 +10,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968438"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68176878"
 ---
 ## <a name="azure-development-build-tools"></a>Narzędzia do kompilacji programowanie na platformie Azure
 
-**ID:** Microsoft.VisualStudio.Workload.AzureBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.AzureBuildTools
 
 **Opis:** Zadania programu MSBuild i elementy docelowe do tworzenia aplikacji platformy Azure.
 
@@ -62,7 +62,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Narzędzia programistyczne pro
 
 ## <a name="data-storage-and-processing-build-tools"></a>Przechowywanie i przetwarzanie danych narzędzia do kompilacji
 
-**ID:** Microsoft.VisualStudio.Workload.DataBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.DataBuildTools
 
 **Opis:** Tworzenie projektów bazodanowych SQL Server
 
@@ -83,7 +83,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy s
 
 ## <a name="net-desktop-build-tools"></a>Narzędzia kompilacji klasycznej platformy .NET
 
-**ID:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
 **Opis:** Narzędzia do tworzenia aplikacji WPF, Windows Forms i aplikacji konsolowych przy użyciu C#, Visual Basic i F#.
 
@@ -125,7 +125,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilator F# | 15.8.27825.0 |
 
 ## <a name="msbuild-tools"></a>Narzędzia MSBuild
 
-**ID:** Microsoft.VisualStudio.Workload.MSBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.MSBuildTools
 
 **Opis:** Zapewnia narzędzia wymagane do kompilowania aplikacji opartych na platformie MSBuild.
 
@@ -139,7 +139,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języków C# i Vi
 
 ## <a name="net-core-build-tools"></a>Narzędzia kompilacji platformy .NET core
 
-**ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
 **Opis:** Narzędzia do tworzenia aplikacji przy użyciu platformy .NET Core, ASP.NET Core, HTML/JavaScript i kontenerów.
 
@@ -155,7 +155,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0 – 1.1 narzędzia programis
 
 ## <a name="nodejs-build-tools"></a>Narzędzia do kompilacji node.js
 
-**ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
 **Opis:** Zadania MSBuild i elementy docelowe do tworzenia skalowalnych sieci aplikacji przy użyciu platformy Node.js i asynchronicznego oparte na zdarzeniach środowiska uruchomieniowego JavaScript.
 
@@ -168,7 +168,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 zestawu SDK | 1
 
 ## <a name="officesharepoint-build-tools"></a>Narzędzia do kompilacji pakietu Office/SharePoint
 
-**ID:** Microsoft.VisualStudio.Workload.OfficeBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.OfficeBuildTools
 
 **Opis:** Twórz dodatki pakietu Office i programu SharePoint i dodatków narzędzi VSTO.
 
@@ -208,7 +208,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Narzędzia programistyczne pro
 
 ## <a name="universal-windows-platform-build-tools"></a>Narzędzia do kompilacji Universal Windows Platform
 
-**ID:** Microsoft.VisualStudio.Workload.UniversalBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
 **Opis:** Zapewnia narzędzia wymagane do kompilowania aplikacji uniwersalnych platformy Windows.
 
@@ -243,7 +243,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="visual-c-build-tools"></a>Narzędzi Visual C++ build tools
 
-**ID:** Microsoft.VisualStudio.Workload.VCTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.VCTools
 
 **Opis:** Twórz aplikacje pulpitu Windows przy użyciu zestawu narzędzi Microsoft C++, ATL lub MFC.
 
@@ -289,7 +289,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="visual-studio-extension-development"></a>Programowanie rozszerzeń programu Visual Studio
 
-**ID:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
 **Opis:** Narzędzia do tworzenia dodatków i rozszerzeń dla programu Visual Studio, w tym nowe polecenia, analizatory kodu i okna narzędzi.
 
@@ -315,7 +315,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 w wersji 15.9 v14
 
 ## <a name="web-development-build-tools"></a>Narzędzia kompilacji programowanie sieci Web
 
-**ID:** Microsoft.VisualStudio.Workload.WebBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.WebBuildTools
 
 **Opis:** Zadania programu MSBuild i elementy docelowe do tworzenia aplikacji sieci web.
 
@@ -360,7 +360,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0 – 1.1 narzędzia programis
 
 ## <a name="mobile-development-with-net"></a>Tworzenie aplikacji mobilnych przy użyciu platformy .NET
 
-**ID:** Microsoft.VisualStudio.Workload.XamarinBuildTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
 **Opis:** Narzędzia do tworzenia aplikacji dla wielu platform dla systemów iOS, Android i Windows przy użyciu C# i F#.
 

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba84f3ec67acf44cab35f3c7761159839e4ef5bb
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156111"
 ---
 # <a name="multiple-categories-are-present"></a>Obecne są liczne kategorie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -18,11 +18,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185280"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Przełączniki wiersza polecenia Devenv dla programowania pakietu VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60118048"
   
 |Przełącznik wiersza polecenia|Opis|  
 |--------------------------|-----------------|  
-|/safemode|Uruchamia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie awaryjnym, ładowanie tylko domyślne środowisko IDE i usługi. Przełącznik/safemode uniemożliwia załadowanie, kiedy wszystkich innych pakietów VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoczyna się, co pozwala na zapewnienie stabilne wykonywania.<br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów.|  
+|/ safemode|Uruchamia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie awaryjnym, ładowanie tylko domyślne środowisko IDE i usługi. Przełącznik/safemode uniemożliwia załadowanie, kiedy wszystkich innych pakietów VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoczyna się, co pozwala na zapewnienie stabilne wykonywania.<br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów.|  
 |/resetskippkgs|Czyści wszystkie pominąć opcje ładowania, które zostały dodane przez użytkowników, którzy chcą uniknąć ładowanie pakietów VSPackage problematyczne, następnie rozpoczyna [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Obecność tagu SkipLoading powoduje wyłączenie ładowania pakietu VSPackage. Czyszczenie tagu włączające ładowania pakietu VSPackage.<br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów.|  
 |/rootsuffix|Uruchamia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] za pomocą alternatywnej lokalizacji. Następujące polecenie jest uruchamiane przez skrót utworzony przez [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Instalatora:<br /><br /> Devenv /RootSuffix exp<br /><br /> W tym przypadku exp identyfikuje lokalizację przy użyciu określonego sufiksu, na przykład 10.0Exp zamiast 10.0. Wystąpienie eksperymentalne umożliwia debugowanie pakietu VSPackage niezależnie od wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używanym do pisania kodu.<br /><br /> Ten przełącznik może być dowolny ciąg, który identyfikuje lokalizacji, do której zostały utworzone przy użyciu VSRegEx.exe. Aby uzyskać więcej informacji, zobacz [wystąpienie doświadczalne](../extensibility/the-experimental-instance.md).|  
 |/splash|Pokazuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ekran powitalny w zwykły sposób, a następnie wyświetli okno wiadomości przed wyświetleniem głównego środowiska IDE. W oknie komunikatu umożliwia badanie ekran powitalny, pod kątem ikoną produktu pakietu VSPackage, przykład.<br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów.|  

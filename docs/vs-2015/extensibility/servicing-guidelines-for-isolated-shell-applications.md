@@ -12,13 +12,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159271"
 ---
-# <a name="servicing-guidelines-for-isolated-shell-applications"></a>Wytyczne dotyczące aplikacji Isolated Shell obsługi
+# <a name="servicing-guidelines-for-isolated-shell-applications"></a>Wytyczne dotyczące obsługi aplikacji w programie Shell (izolowanym)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas dystrybucji aplikacji powłoki programu Visual Studio, izolowany musi umożliwiać udostępnienia aktualizacji oprogramowania dla aplikacji po jej zainstalowaniu. Aby to zrobić, należy zainstalować aplikację przy użyciu pliku Instalatora Microsoft (MSI). Tego rodzaju instalacji umożliwia aktualizacji oprogramowania firmy Microsoft pozwala na redystrybucję, sieci Web, Pobierz i używane przez klientów bez konieczności interwencji niestandardowych.  

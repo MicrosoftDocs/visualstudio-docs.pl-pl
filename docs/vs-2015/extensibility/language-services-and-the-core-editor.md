@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180304"
 ---
-# <a name="language-services-and-the-core-editor"></a>Usługi języka oraz podstawowy edytor
+# <a name="language-services-and-the-core-editor"></a>Usługi językowe oraz edytor podstawowy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Edytory w programie Visual Studio są często skojarzone z usługą language. Między innymi usługi językowej zapewnia kolorowanie składni, uzupełniania instrukcji, funkcja IntelliSense i formatowania tekstu.  
@@ -27,12 +27,12 @@ Edytory w programie Visual Studio są często skojarzone z usługą language. Mi
   
  Aby uzyskać więcej informacji, zobacz [określająca, które edytora otwiera plik w projekcie](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Usługi języka oraz podstawowy edytor  
+## <a name="language-services-and-the-core-editor"></a>Usługi językowe oraz edytor podstawowy  
  Przez zaimplementowanie usługi językowej, można kontrolować sposób wyświetlania danych w widoku dokumentu. Usługa języka zawiera informacje i zachowanie, które są specyficzne dla danego języka, takich jak Visual C++. Kiedy utworzyć buforu tekstu i określić rozszerzenie nazwy pliku dla dokumentu, który jest otwierany, bufor tekstowy określa usługa językowa skojarzony z tym rozszerzeniem nazwy pliku z klucza rejestru, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors \\\Extensions {YourLanguageService GUID}. Standardowa pakietu VSPackage, następnie ładowania procedury ładowania usługi pakietu VSPackage i tworzone jest wystąpienie usługi języka.  
   
  Usługa podstawowy język jest wyświetlany na poniższej ilustracji.  
   
- ![Language Service Model graphic](../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+ ![Grafika przedstawiająca usługi Model języka](../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 Obiekty usługi podstawowej Edytor i język  
   
  Obiekt danych dokumentu na podstawowy edytor nosi nazwę bufor tekstowy i jest reprezentowana przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu. Obiekt widoku dokumentu nosi nazwę widoku tekstu i jest reprezentowana przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> obiektu. Te dwa obiekty współpracują ze sobą za pośrednictwem usługi języka, aby zapewnić spójny widok podstawowy edytor. Informacje z buforu tekstowego i wyświetla widok tekstu w oknie dokumentu o nazwie okna kodu. Dokument okna Kod jest zarządzany przez Menedżera okien kodu.  

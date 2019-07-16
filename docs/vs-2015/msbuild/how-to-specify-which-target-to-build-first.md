@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178341"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Instrukcje: Określanie pierwszego obiektu docelowego do kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
   
 #### <a name="to-specify-one-initial-target"></a>Aby określić jeden element docelowy początkowej  
   
-- Określ domyślny element docelowy w `InitialTargets` atrybutu `Project` elementu. Na przykład:  
+- Określ domyślny element docelowy w `InitialTargets` atrybutu `Project` elementu. Przykład:  
   
    `<Project InitialTargets="Clean">`  
   
@@ -64,7 +64,7 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Aby użyć pierwszy element docelowy inny niż domyślny element docelowy  
   
-- Określ element docelowy jako pierwszy przy użyciu docelowej **/target** przełącznik wiersza polecenia. Na przykład:  
+- Określ element docelowy jako pierwszy przy użyciu docelowej **/target** przełącznik wiersza polecenia. Przykład:  
   
      `msbuild file.proj /target:Clean`  
   
@@ -77,4 +77,4 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
 ## <a name="see-also"></a>Zobacz też
   [MSBuild](msbuild.md)  
  [Obiekty docelowe](../msbuild/msbuild-targets.md)   
- [Instrukcje: Czyszczenie kompilacji](../msbuild/how-to-clean-a-build.md)
+ [Instrukcje: czyszczenie kompilacji](../msbuild/how-to-clean-a-build.md)

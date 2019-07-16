@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150841"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileassociation —&gt; — Element (aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,10 +45,10 @@ Określa rozszerzenie pliku do skojarzenia z aplikacją.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`extension`|Wymagana. Rozszerzenie pliku, który ma zostać skojarzony z aplikacją.|  
-|`description`|Wymagana. Opis typu plików do użytku przez powłokę.|  
-|`progid`|Wymagana. Nazwa, który unikatowo identyfikuje typ pliku.|  
-|`defaultIcon`|Wymagana. Określa ikonę do używania z plików z tego rozszerzenia. Plik ikony musi być określona za pomocą [ \<Plik > Element](../deployment/file-element-clickonce-application.md) w ramach [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md) zawierający ten element.|  
+|`extension`|Wymagane. Rozszerzenie pliku, który ma zostać skojarzony z aplikacją.|  
+|`description`|Wymagany. Opis typu plików do użytku przez powłokę.|  
+|`progid`|Wymagane. Nazwa, który unikatowo identyfikuje typ pliku.|  
+|`defaultIcon`|Wymagane. Określa ikonę do używania z plików z tego rozszerzenia. Plik ikony musi być określona za pomocą [ \<Plik > Element](../deployment/file-element-clickonce-application.md) w ramach [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md) zawierający ten element.|  
   
 ## <a name="remarks"></a>Uwagi  
  Ten element musi zawierać odwołanie do przestrzeni nazw XML "urn: schemas-microsoft-com:clickonce.v1". Jeśli `<fileAssociation>` element jest używany, musi być późniejsza `<application>` elementu w jego element nadrzędny [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md).  

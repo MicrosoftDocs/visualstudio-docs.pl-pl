@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f64335451e7352a7452941bf95d65f9057b57a77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150410"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,5 +62,5 @@ pSession->findSymbolByRVAEx( rva, SymTagFunction, &pFunc, &disp );
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

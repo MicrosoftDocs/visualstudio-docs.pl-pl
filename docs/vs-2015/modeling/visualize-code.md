@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2d5803544e4e7279179929c7c04a3792e4dd9318
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183869"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +42,8 @@ Aby pomóc Ci zrozumieć istniejący kod i opisać swoją aplikację, można uż
 |||  
 |-|-|  
 |**Poznaj kodu i jej relacje:**<br /><br /> Mapowanie relacji między określonych fragmentów kodu.<br /><br /> Zobacz Omówienie relacji w kodzie dla całego rozwiązania.<br /><br /> **Uwaga**: W tej wersji programu Visual Studio termin *mapy kodu* jest używana zamiast *wykres zależności*.|-   [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
-|**Zrozumienie struktury klasy:**<br /><br /> Umożliwia wizualizację struktury klas w projekcie, tworząc diagramów klas z kodu.|[Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
-|**Opisz projektowania wysokiego poziomu systemu, a następnie walidować kod dla tego projektu:**<br /><br /> Opisz projektowania wysokiego poziomu systemu i jego zależności zamierzone, tworząc diagramów warstwowych. Walidować kod dla tego projektu, aby upewnić się, że zależności w kodzie zachować spójność z projektem.|-   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|  
+|**Zrozumienie struktury klasy:**<br /><br /> Umożliwia wizualizację struktury klas w projekcie, tworząc diagramów klas z kodu.|[Instrukcje: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
+|**Opisz projektowania wysokiego poziomu systemu, a następnie walidować kod dla tego projektu:**<br /><br /> Opisz projektowania wysokiego poziomu systemu i jego zależności zamierzone, tworząc diagramów warstwowych. Walidować kod dla tego projektu, aby upewnić się, że zależności w kodzie zachować spójność z projektem.|-   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|  
 |**Komunikują się wymagania użytkownika i architektury:**<br /><br /> Modelowanie wymagań użytkowników i architektura systemu oprogramowania za pomocą rysowania na poniższych diagramach UML: działanie, składnika, klasy, sekwencja i przypadek użycia.|-   [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)<br />-   [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)<br />-   [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  

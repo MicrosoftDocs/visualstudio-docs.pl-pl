@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157869"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Instrukcje: Uruchamianie procesu roboczego w ramach konta użytkownika
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Instrukcje: Uruchamianie procesu roboczego z konta użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] proces roboczy (aspnet_wp.exe lub w3wp.exe) w ramach konta użytkownika, wykonaj następujące kroki.  
@@ -86,4 +86,4 @@ Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp
 13. Kliknij przycisk **OK** zamknąć **tymczasowe ASP.NET pliki właściwości** okno dialogowe.  
   
 ## <a name="see-also"></a>Zobacz też  
-[ASP.NET Debugging: Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md)  
+[Debugowanie ASP.NET: Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md)  

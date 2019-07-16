@@ -12,11 +12,11 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155030"
 ---
 # <a name="creating-project-types"></a>Tworzenie typów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Możesz rozszerzyć [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , tworząc n
  [Decyzje projektowe dotyczące typów projektów](../../extensibility/internals/project-type-design-decisions.md)  
  W tym artykule omówiono elementów, trwałość pliku projektu i decyzje projektowe mechanika zobowiązania, które należy podjąć przed utworzeniem nowego typu projektu.  
   
- [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)  
  Omówienie kroków, które należy wykonać, aby utworzyć nowy typ projektu, który obsługuje zadań programistycznych jako edytowanie kodu i kompilowanie, tworzenie, debugowanie i wdrażanie aplikacji w projekcie.  
   
  [Tworzenie wystąpień projektów przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  

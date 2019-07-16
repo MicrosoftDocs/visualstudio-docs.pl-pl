@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157427"
 ---
 # <a name="clickonce-application-manifest"></a>Manifest aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikacji jest
   
 |Element|Opis|Atrybuty|  
 |-------------|-----------------|----------------|  
-|[\<zestaw > Element](../deployment/assembly-element-clickonce-application.md)|Wymagana. Element najwyższego poziomu.|`manifestVersion`|  
-|[\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-application.md)|Wymagana. Określa podstawowy zestaw z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md)|Określa wymagania dotyczące zabezpieczeń aplikacji.|Brak|  
-|[\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md)|Wymagana. Określa punkt wejścia kodu aplikacji.|`name`|  
-|[\<dependency> Element](../deployment/dependency-element-clickonce-application.md)|Wymagana. Identyfikuje poszczególne zależności wymagane do uruchomienia aplikacji. Opcjonalnie określa zestawy, które muszą być wstępnie zainstalowane.|Brak|  
-|[\<file> Element](../deployment/file-element-clickonce-application.md)|Opcjonalna. Identyfikuje każdy plik nonassembly, który jest używany przez aplikację. Może zawierać dane izolacji Component Object Model (COM) skojarzone z plikiem.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
-|[\<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md)|Opcjonalna. Określa rozszerzenie pliku do skojarzenia z aplikacją.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
+|[\<assembly>, element](../deployment/assembly-element-clickonce-application.md)|Wymagane. Element najwyższego poziomu.|`manifestVersion`|  
+|[\<assemblyIdentity>, element](../deployment/assemblyidentity-element-clickonce-application.md)|Wymagana. Określa podstawowy zestaw z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<trustInfo>, element](../deployment/trustinfo-element-clickonce-application.md)|Określa wymagania dotyczące zabezpieczeń aplikacji.|Brak|  
+|[\<entryPoint>, element](../deployment/entrypoint-element-clickonce-application.md)|Wymagane. Określa punkt wejścia kodu aplikacji.|`name`|  
+|[\<dependency>, element](../deployment/dependency-element-clickonce-application.md)|Wymagane. Identyfikuje poszczególne zależności wymagane do uruchomienia aplikacji. Opcjonalnie określa zestawy, które muszą być wstępnie zainstalowane.|Brak|  
+|[\<file>, element](../deployment/file-element-clickonce-application.md)|Opcjonalny. Identyfikuje każdy plik nonassembly, który jest używany przez aplikację. Może zawierać dane izolacji Component Object Model (COM) skojarzone z plikiem.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<fileAssociation>, element](../deployment/fileassociation-element-clickonce-application.md)|Opcjonalna. Określa rozszerzenie pliku do skojarzenia z aplikacją.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>Uwagi  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Pliku manifestu aplikacji identyfikuje aplikacje wdrożone za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Aby uzyskać więcej informacji na temat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], zobacz [wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md).  

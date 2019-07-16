@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 508d1fe33046f6051c9c5c1b8e54036e78ae7d2f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193341"
 ---
 # <a name="vcmessage-task"></a>VCMessage — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

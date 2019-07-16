@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_sourceFileId | Microsoft Docs
+title: Idialinenumber::get_sourcefileid — | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 23e1d2dafc570e31d8fa4a1dcbe84b575ce851cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152017"
 ---
 # <a name="idialinenumbergetsourcefileid"></a>IDiaLineNumber::get_sourceFileId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

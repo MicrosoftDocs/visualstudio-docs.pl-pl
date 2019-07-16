@@ -14,11 +14,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9c128475ad9f5cb71b98325bbece4e524507a08b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179786"
 ---
 # <a name="miscellaneous-files-project"></a>Projekt Różne pliki
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

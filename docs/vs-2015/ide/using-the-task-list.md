@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179353"
 ---
 # <a name="using-the-task-list"></a>Korzystanie z listy zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Użyj **listy zadań** do śledzenia komentarzy do kodu, które używać tokenó
   
      [Okno dialogowe Opcje listy zadań, środowisko,](../ide/reference/task-list-environment-options-dialog-box.md) jest wyświetlana.  
   
-     ![Visual Studio Task List](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")  
+     ![Lista zadań w programie Visual Studio](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")  
   
 3. W **tokenów** kategorii w **nazwa** polu tekstowym wprowadź nazwę tokenu, na przykład "błąd".  
   
@@ -113,7 +113,7 @@ Użyj **listy zadań** do śledzenia komentarzy do kodu, które używać tokenó
   
 2. W **opcje** po otwarciu okna dialogowego **edytora tekstów**.  
   
-3. W obszarze **C/C++**, wybierz **widoku**, a następnie ustaw **Wylicz zadania komentarza** do **False**.  
+3. W obszarze **C/C++** , wybierz **widoku**, a następnie ustaw **Wylicz zadania komentarza** do **False**.  
   
 ## <a name="shortcuts"></a> Skróty  
  A *skrótów* to zakładka w kodzie, który jest śledzona w **listy zadań**; ma inną ikonę niż regularne zakładki. Kliknij dwukrotnie skrót **listy zadań** można przejść do odpowiedniej lokalizacji w kodzie.  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cadf4a0b525e5603247748edd63516dc26d8a0b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187758"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Opis&gt; — Element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,10 +46,10 @@ Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i 
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`publisher`|Wymagana. Określa nazwę firmy, używane do umieszczenia ikony w Windows **Start** menu i **apletu Dodaj lub usuń programy** w Panelu sterowania, gdy wdrożenie jest skonfigurowane do instalacji.|  
-|`product`|Wymagana. Identyfikuje Pełna nazwa produktu. Używane jako tytuł na ikonę zainstalowane w Windows **Start** menu.|  
-|`suiteName`|Opcjonalna. Identyfikuje podfolder w `publisher` folderu w Windows **Start** menu.|  
-|`supportUrl`|Opcjonalna. Określa adres URL pomocy technicznej, która jest wyświetlana w **apletu Dodaj lub usuń programy** w Panelu sterowania. Skrót do tego adresu URL tworzona jest również obsługę aplikacji w Windows **Start** menu, gdy wdrożenie jest skonfigurowane do instalacji.|  
+|`publisher`|Wymagane. Określa nazwę firmy, używane do umieszczenia ikony w Windows **Start** menu i **apletu Dodaj lub usuń programy** w Panelu sterowania, gdy wdrożenie jest skonfigurowane do instalacji.|  
+|`product`|Wymagane. Identyfikuje Pełna nazwa produktu. Używane jako tytuł na ikonę zainstalowane w Windows **Start** menu.|  
+|`suiteName`|Opcjonalny. Identyfikuje podfolder w `publisher` folderu w Windows **Start** menu.|  
+|`supportUrl`|Opcjonalny. Określa adres URL pomocy technicznej, która jest wyświetlana w **apletu Dodaj lub usuń programy** w Panelu sterowania. Skrót do tego adresu URL tworzona jest również obsługę aplikacji w Windows **Start** menu, gdy wdrożenie jest skonfigurowane do instalacji.|  
   
 ## <a name="remarks"></a>Uwagi  
  Opis elementu jest wymagany we wszystkich konfiguracjach wdrażania.  

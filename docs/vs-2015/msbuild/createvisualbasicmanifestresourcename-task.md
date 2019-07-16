@@ -1,5 +1,5 @@
 ---
-title: CreateVisualBasicManifestResourceName Task | Microsoft Docs
+title: Createvisualbasicmanifestresourcename — zadanie | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d923c83c513ff33b971e1b5ca77109d6ff057db7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184063"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

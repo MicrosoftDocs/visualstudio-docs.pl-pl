@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dc4af6ef3b2ffc89ec0e69a6dd63923f5c55ffe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155538"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries — Funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** cvmarkers.h  
   
- **Unicode:** CvCreateMarkerSeriesW  
+ **Unicode:** Cvcreatemarkerseriesw —  
   
- **ANSI:** CvCreateMarkerSeriesA  
+ **ANSI:** Cvcreatemarkerseriesa —  
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154820"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Właściwości operacji w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Na diagramie klas UML, można dodać *operacji* do klasy i interfejsy. Operacja 
 |      Właściwość       |   Domyślne    |                                                                                                                                                                                 Opis                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      **Nazwa**       | (Nowa nazwa) |                                                                                                                                                                Powinny być unikatowe w obrębie typu zawierającego.                                                                                                                                                                 |
-|   **Parametry**    |    (Brak)    |      Listę, która ma postać <em>nazwa</em>**:**<em>typu</em>**,** <em>nazwa</em>**:**  <em>Typ</em>**,...** Kliknij przycisk **[...]**  edytowanie listy.<br /><br /> Typy mogą być typy pierwotne oraz typy, które są zdefiniowane w modelu. Jeśli wprowadzasz nazwę dla nowego typu w tej właściwości, typ zostanie dodany do **nieokreślonym** części Eksploratora modelu UML.      |
+|   **Parametry**    |    (Brak)    |      Listę, która ma postać <em>nazwa</em> **:** <em>typu</em> **,** <em>nazwa</em> **:**  <em>Typ</em> **,...** Kliknij przycisk **[...]**  edytowanie listy.<br /><br /> Typy mogą być typy pierwotne oraz typy, które są zdefiniowane w modelu. Jeśli wprowadzasz nazwę dla nowego typu w tej właściwości, typ zostanie dodany do **nieokreślonym** części Eksploratora modelu UML.      |
 |   **Zwracany typ**   |    (Brak)    |                                                                               **(Brak)** , lub typem pierwotnym lub typem, który jest zdefiniowany w modelu. Jeśli wprowadzasz nazwę dla nowego typu w tej właściwości, typ zostanie dodany do **nieokreślonym** części Eksploratora modelu UML.                                                                                |
 | **Warunków końcowych**  |    (Brak)    |                                                                                                                         Opcjonalny warunek określający relację między stan systemu przed i po wykonaniu operacji.                                                                                                                         |
 |  **Warunki wstępne**  |    (Brak)    |                                                                                                                            Opcjonalny warunek określający założeń dotyczących stanu systemu przed rozpoczęciem operacji rozpoczyna wykonywanie.                                                                                                                            |

@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151038"
 ---
 # <a name="create-an-android-native-activity-app"></a>Tworzenie aplikacji systemu Android działania natywnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Podczas instalowania Visual C++ for Cross-Platform Mobile Development opcji prog
   
 1. Otwórz program Visual Studio. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
   
-2. W **nowy projekt** dialogowego **szablony**, wybierz **Visual C++**, **Międzyplatformowe**, a następnie wybierz  **Aplikacja klasy Nativeactivity (Android)** szablonu.  
+2. W **nowy projekt** dialogowego **szablony**, wybierz **Visual C++** , **Międzyplatformowe**, a następnie wybierz  **Aplikacja klasy Nativeactivity (Android)** szablonu.  
   
 3. Nadaj aplikacji nazwę, takich jak `MyAndroidApp`, a następnie wybierz **OK**.  
   

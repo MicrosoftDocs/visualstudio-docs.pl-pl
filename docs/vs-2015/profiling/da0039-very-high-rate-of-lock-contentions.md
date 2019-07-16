@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14192551543bdfd5cc352ed4c7c45fa95630dcd3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156424"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Bardzo wysoki współczynnik rywalizacji o blokadę
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0039: Ba
 |Identyfikator reguły|DA0039|  
 |Kategoria|Sposób użycia programu .NET framework|  
 |Metod profilowania|Próbkowania<br /><br /> Oprzyrządowanie<br /><br /> Pamięć .NET|  
-|Komunikat|Odbywa się bardzo wysoki współczynnik rywalizacji o blokadę platformy .NET. Zbadaj przyczynę tych rywalizacji, uruchamiając profil współbieżność.|  
+|Message|Odbywa się bardzo wysoki współczynnik rywalizacji o blokadę platformy .NET. Zbadaj przyczynę tych rywalizacji, uruchamiając profil współbieżność.|  
 |Typ reguły|Ostrzeżenie|  
   
  Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 25 próbek do wyzwolenia tej reguły.  

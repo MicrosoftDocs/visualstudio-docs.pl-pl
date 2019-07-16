@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159632"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Tworzenie elementów i relacji w modelach UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4. Ustaw właściwości każdy koniec relacji. Są zawsze dwa `MemberEnds`. Na przykład:  
+4. Ustaw właściwości każdy koniec relacji. Są zawsze dwa `MemberEnds`. Przykład:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158992"
 ---
 # <a name="navigate-the-uml-model"></a>Nawigowanie po modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Ten temat wprowadza główne typy modelu UML.
 |Typ atrybutu|Czego to zapewnia dostęp do|Więcej informacji|  
 |--------------------|----------------------------------|----------------------|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (w Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Bieżący diagram fokusowy.|[Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
-|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (in Microsoft.VisualStudio.Modeling.Sdk.[version].dll)|Pozwala na pogrupowanie zmian w transakcje.|[Łączenie aktualizacji modelu UML za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md)|  
+|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (w Microsoft.VisualStudio.Modeling.Sdk. [wersja] .dll)|Pozwala na pogrupowanie zmian w transakcje.|[Łączenie aktualizacji modelu UML za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md)|  
 |Microsoft.VisualStudio.Shell .SVsServiceProvider<br /><br /> (w Microsoft.VisualStudio.Shell.Immutable. [wersja] .dll)|Host [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Z tego miejsca można uzyskać dostęp, plików, projektów i innych aspektów.|[Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
   
 ### <a name="to-get-the-context"></a>Aby uzyskać kontekst  

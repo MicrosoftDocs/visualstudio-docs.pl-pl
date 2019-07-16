@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157064"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Metody anonimowe i analiza kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ class Class
   
  Klasa może zawierać metodę anonimową wbudowane, która przypisuje wartość do pola, które ma wiele konstruktorów. W tym przypadku ostrzeżeń i metryki są skojarzone z wszystkie konstruktory, chyba że ten konstruktor jest dołączony do innego konstruktora w tej samej klasie.  
   
- Na przykład w następującej klasy wszelkie ostrzeżenia, które znajdują się w deklaracji **anonymousMethod** powinien być wywoływany przed **Class(int)** i **Class(string)** , ale nie względem **Class()**.  
+ Na przykład w następującej klasy wszelkie ostrzeżenia, które znajdują się w deklaracji **anonymousMethod** powinien być wywoływany przed **Class(int)** i **Class(string)** , ale nie względem **Class()** .  
   
 ```vb  
   

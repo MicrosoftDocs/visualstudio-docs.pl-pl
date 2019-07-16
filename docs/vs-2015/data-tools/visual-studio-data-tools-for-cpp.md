@@ -11,13 +11,13 @@ ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146594"
 ---
-# <a name="visual-studio-data-tools-for-c"></a>Narzędzia Visual Studio data tools dla języka C++
+# <a name="visual-studio-data-tools-for-c"></a>Narzędzia do obsługi danych programu Visual Studio dla języka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Natywnych języka C++ często może zapewnić największą wydajność, gdy uzyskują dostęp do źródeł danych. Jednak dane narzędzia dla aplikacji w języku C++ w programie Visual Studio nie są tak zaawansowane jak w przypadku aplikacji .NET. Na przykład okna źródeł danych nie można ich przeciąganie i upuszczanie źródeł danych na powierzchnię projektu C++. Jeśli potrzebujesz warstwa obiektowo relacyjny, należy napisać własny lub użyj innej firmy.  To samo dotyczy funkcji wiązania danych, mimo że aplikacje korzystające z biblioteki MFC można użyć niektórych klas baz danych, wraz z dokumentami i widokami, przechowywanie danych w pamięci i wyświetlania ich do użytkownika. Aby uzyskać więcej informacji, zobacz [dostęp do danych w programie Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
@@ -42,7 +42,7 @@ Natywnych języka C++ często może zapewnić największą wydajność, gdy uzys
   
 4. Pobierz przykładowy zestaw SDK Windows ODBC i Rozpakuj go do nowej lokalizacji. Niniejszy przykład pokazuje podstawowe polecenia ODBC, które służą do łączenia z bazą danych i polecenia oraz kwerend problem. Dowiedz się więcej na temat tych funkcji w [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Podczas pierwszego ładowania rozwiązania (jest w folderze C++), programu Visual Studio będzie oferować uaktualniania rozwiązania do bieżącej wersji programu Visual Studio. Kliknij przycisk **Tak**.  
   
-5. Aby korzystać z natywnego klienta, należy jej plik nagłówkowy i plik lib. Te pliki zawierają funkcje i definicje specyficzne dla programu SQL Server poza funkcje ODBC, zdefiniowane w sql.h. W **projektu** > **właściwości** > **katalogi VC ++**, Dodaj katalog dołączania następujące czynności:  
+5. Aby korzystać z natywnego klienta, należy jej plik nagłówkowy i plik lib. Te pliki zawierają funkcje i definicje specyficzne dla programu SQL Server poza funkcje ODBC, zdefiniowane w sql.h. W **projektu** > **właściwości** > **katalogi VC ++** , Dodaj katalog dołączania następujące czynności:  
   
    **\<dysk systemowy >: \Program Files\Microsoft SQL Server\110\SDK\Include** i ten katalog biblioteki:  
   

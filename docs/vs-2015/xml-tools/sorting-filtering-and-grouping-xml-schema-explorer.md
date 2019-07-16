@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150667"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortowanie, filtrowanie i grupowanie (Eksplorator schematu XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ W tym temacie opisano opcje, które są dostępne za pośrednictwem **opcje grup
   
 - **Pokaż pliki schematu**.  
   
-- **Pokaż Kompozytory (sekwencji/wyboru/all)**.  
+- **Pokaż Kompozytory (sekwencji/wyboru/all)** .  
   
 ## <a name="sorting-options"></a>Opcje sortowania  
  Dostępne są następujące opcje sortowania. Wartość domyślna to **sortowania według typu**. Sortuj według opcji nie dotyczą plików i przestrzeni nazw.  

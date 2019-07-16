@@ -9,11 +9,11 @@ caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147185"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

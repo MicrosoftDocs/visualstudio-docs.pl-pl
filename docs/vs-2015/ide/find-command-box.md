@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160678"
 ---
 # <a name="findcommand-box"></a>Find/Command — Pole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ Można wyszukać tekst i uruchomić polecenia programu Visual Studio z **Find/Co
   
  **Find/Command** pole zachowa ostatnie 20 elementów, które wprowadzono i wyświetla je na liście rozwijanej. Możesz przejść przez listę, wybierając klawisze strzałek.  
   
- ![Find&#47;Command Box](../ide/media/findcommandbox.png "FindCommandBox")  
+ ![Znajdź&#47;polecenia pole](../ide/media/findcommandbox.png "FindCommandBox")  
 Find/Command — Pole  
   
 ## <a name="searching-for-text"></a>Wyszukiwanie tekstu  
  Domyślnie, gdy Określ tekst w **Find/Command** pole, a następnie wybierz ENTER klucza, Visual Studio wyszukuje bieżące okno narzędzia lub dokumentu, korzystając z opcji, które są określone w **Znajdź w plikach**okno dialogowe. Aby uzyskać więcej informacji, zobacz [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md).  
   
 ## <a name="entering-commands"></a>Wprowadzenie poleceń  
- Do użycia **Find/Command** pole, aby wystawić pojedynczej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] polecenie lub alias zamiast wyszukiwania tekstu, należy wprowadzić [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] polecenia poprzedzone znakiem symbol większe niż (>). Na przykład:  
+ Do użycia **Find/Command** pole, aby wystawić pojedynczej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] polecenie lub alias zamiast wyszukiwania tekstu, należy wprowadzić [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] polecenia poprzedzone znakiem symbol większe niż (>). Przykład:  
   
 ```  
 >File.NewFile c:\temp\MyFile /t:"General\Text File"  

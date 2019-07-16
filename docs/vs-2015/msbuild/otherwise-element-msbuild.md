@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acf285c895e5160e850b6bc8f20f920279a5e26c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154790"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ ms.locfileid: "59659283"
 Określa blok kodu do wykonania w przypadku i tylko wtedy, gdy warunki wszystkich `When` zwrócić elementy `false`.  
   
  \<Project>  
- \<Choose>  
+ \<Wybierz >  
  \<Gdy >  
- \<Choose>  
+ \<Wybierz >  
  ...  
  \<W przeciwnym razie >  
- \<Choose>  
+ \<Wybierz >  
  ...  
   
 ## <a name="syntax"></a>Składnia  
@@ -60,7 +60,7 @@ Określa blok kodu do wykonania w przypadku i tylko wtedy, gdy warunki wszystkic
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `Otherwise` elementu.|  
+|[Wybierz opcję](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `Otherwise` elementu.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Może wynosić zero lub więcej `ItemGroup` elementów w `Otherwise` elementu.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Może wynosić zero lub więcej `PropertyGroup` elementów w `Otherwise` elementu.|  
   
@@ -68,7 +68,7 @@ Określa blok kodu do wykonania w przypadku i tylko wtedy, gdy warunki wszystkic
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania.|  
+|[Wybierz opcję](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania.|  
   
 ## <a name="remarks"></a>Uwagi  
  Może istnieć tylko jeden `Otherwise` element `Choose` elementu, a musi być ostatnim elementem.  

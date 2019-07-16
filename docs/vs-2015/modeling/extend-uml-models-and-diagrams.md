@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182862"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Rozszerzanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w którym można rozszerzyć
   
  Aby uzyskać więcej informacji, zobacz [Generowanie plików z modelu UML](../modeling/generate-files-from-a-uml-model.md).  
   
-## <a name="team-foundation-server-integration"></a>Team Foundation Server Integration  
+## <a name="team-foundation-server-integration"></a>Integracja z Team Foundation Server  
  Możesz łączyć elementy robocze z elementami modelu i programowy dostęp do połączonych elementów.  
   
  Programiści narzędzie Fabrikam pisać narzędziem, które generuje harmonogram pracy dla każdego projektu lotniczego. Elementy robocze w harmonogramie są połączone z elementami modelu.  

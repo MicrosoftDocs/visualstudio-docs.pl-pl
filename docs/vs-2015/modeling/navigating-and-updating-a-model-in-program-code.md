@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158954"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Nawigowanie i aktualizowanie modelu w kodzie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu ustawiać ich właś
  `store.ElementDirectory.GetElement(elementId);`  
   
 ## <a name="metadata"></a> Uzyskiwanie dostępu do informacji o klasie  
- Można uzyskać informacji na temat klas, relacje i innych aspektów definicji DSL. Na przykład:  
+ Można uzyskać informacji na temat klas, relacje i innych aspektów definicji DSL. Przykład:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -235,7 +235,7 @@ using (Transaction t =
   
  Istnieją trzy sposoby, w których można utworzyć wystąpienie relacji. Każda z tych trzech metod działa tak samo:  
   
-- Ustaw właściwość obiekt pełniący rolę źródłową. Na przykład:  
+- Ustaw właściwość obiekt pełniący rolę źródłową. Przykład:  
   
   - `familyTree.People.Add(edward);`  
   

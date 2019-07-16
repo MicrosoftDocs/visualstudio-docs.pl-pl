@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2279a193b173924b45f42172281e106370131023
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157737"
 ---
 # <a name="editing-xslt-style-sheets"></a>Edytowanie arkuszy stylów XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Edytor XML może również edytowanie arkuszy stylów XSLT. Można korzystać z 
  **Wyświetlanie danych wyjściowych z XSLT**  
  Umożliwia wykonywanie transformacji XSL i wyświetlanie danych wyjściowych w edytorze XML. Aby uzyskać więcej informacji, zobacz [jak: Wykonywanie transformacji XSLT w edytorze XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).  
   
- **Debug XSLT**  
+ **Debugowanie kodu XSLT**  
  Można uruchomić debuger XSLT z pliku XSLT w edytorze XML. Debuger obsługuje ustawianie punktów przerwania w pliku XSLT, wyświetlając stan wykonania XSLT i tak dalej. Kursor jest zmienna XSLT wywołuje etykietka narzędzia z wartością zmiennej. Debuger może służyć do debugowania arkuszy stylów lub Aby debugować skompilowanych przekształcenia XSL wywoływane z innej aplikacji. Aby uzyskać więcej informacji, zobacz [profilowanie XSLT](../xml-tools/debugging-xslt.md).  
   
 ## <a name="see-also"></a>Zobacz też  

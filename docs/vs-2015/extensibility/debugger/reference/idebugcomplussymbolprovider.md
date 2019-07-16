@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b70701aa9c4b339749554601e2a565c17697c6a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186516"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|Aktualizuje symbole debugowania w pamięci z tymi strumienia określone dane.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Sh.h  
+ Nagłówek: SH.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

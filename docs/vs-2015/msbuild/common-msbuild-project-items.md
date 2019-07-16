@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160405"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ W [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], element jest nazwane
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
 |DependentUpon|Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji.|  
-|AutoGen|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE).|  
+|Automatyczne generowanie|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE).|  
 |Łącze|Opcjonalny ciąg. Ścieżka notational wyświetlany, gdy plik znajduje się fizycznie poza wpływają na pliku projektu.|  
 |Widoczne|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy mają być wyświetlane w pliku w **Eksploratora rozwiązań** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy należy skopiować plik do katalogu wyjściowego. Dostępne są następujące wartości:<br /><br /> 1.  nigdy nie<br />2.  zawsze<br />3.  PreserveNewest|  

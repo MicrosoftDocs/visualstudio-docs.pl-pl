@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c31e1d17137fd0e801bb506c280a83285c311b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181572"
 ---
 # <a name="how-to--with-text-templates"></a>How to ... with — Szablony tekstowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Szablony tekstu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wygodny sposób g
   
 ### <a name="generate-files-from-a-complex-model"></a>Generowanie plików z modelu złożonego  
   
-- Rozważ tworzenie języka specyficznego dla domeny (DSL), do reprezentowania modelu. To ułatwia znacznie można zapisać szablonów, ponieważ używają typów i właściwości, które odzwierciedlają nazwy elementów w modelu. Nie masz przeanalizować pliku lub przechodzić węzłów XML. Na przykład:  
+- Rozważ tworzenie języka specyficznego dla domeny (DSL), do reprezentowania modelu. To ułatwia znacznie można zapisać szablonów, ponieważ używają typów i właściwości, które odzwierciedlają nazwy elementów w modelu. Nie masz przeanalizować pliku lub przechodzić węzłów XML. Przykład:  
   
      `foreach (Book book in this.Library) { ... }`  
   

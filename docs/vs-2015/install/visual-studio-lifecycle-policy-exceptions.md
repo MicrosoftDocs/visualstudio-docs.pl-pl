@@ -10,13 +10,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180239"
 ---
-# <a name="visual-studio-lifecycle-policy-exceptions"></a>Wyjątki od zasad cyklu życia programu Visual Studio
+# <a name="visual-studio-lifecycle-policy-exceptions"></a>Wyłączenia dotyczące zasad korzystania z oprogramowania Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Program Visual Studio obejmuje zestaw kompilatorów, języków i środowisk, w tym uruchomieniowych, oraz inne zasoby umożliwiające wdrożenie go na wielu platformach Microsoft. Jako udogodnienie dla klientów program Visual Studio może zainstalować określone zestawy Microsoft SDK i inne składniki Microsoft, które są przeznaczone na te platformy Microsoft i ułatwiają ich obsługę. Te składniki mogą być licencjonowane i obsługiwane zgodnie z oddzielnymi postanowieniami i zasadami.  
@@ -31,15 +31,15 @@ Program Visual Studio obejmuje zestaw kompilatorów, języków i środowisk, w t
 |[.NET 4.5.1](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|.NET 4.5.1 MT Pack (Classic)<br /><br /> .NET 4.5.1 Multi-targeting Pack (Store)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> .NET 4.5.1 Redist<br /><br /> .NET 4.5.1 Redist Language Packs<br /><br /> Zestaw SDK dla platformy .NET 4.5.1|  
 |[ASP.NET Web Stack](http://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web API<br /><br /> ASP.NET Web API 2<br /><br /> ASP.NET Web Pages 2<br /><br /> ASP.NET Web Pages 3|  
 |[Entity Framework 6](http://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
-|[Exchange 2013](http://go.microsoft.com/fwlink/?LinkId=328950)|Exchange Web Services|  
+|[Programu Exchange 2013](http://go.microsoft.com/fwlink/?LinkId=328950)|Exchange Web Services|  
 |[Microsoft OWIN](http://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
-|[Microsoft Web Developer Tools 2013](http://go.microsoft.com/fwlink/?LinkId=328952)|Microsoft Web Developer Tools 2013|  
+|[Dodatek Microsoft Web Developer Tools 2013](http://go.microsoft.com/fwlink/?LinkId=328952)|Microsoft Web Developer Tools 2013|  
 |Aktualizacje tych składników są rozpowszechniane za pośrednictwem pakietu NuGet i nie podlegają standardowym zasadom cyklu życia produktów firmy Microsoft.  Zobacz [ http://docs.nuget.org/ ](http://docs.nuget.org/) Aby uzyskać więcej informacji.|JSON Web Token Handler dla programu Microsoft .NET Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Struktura optymalizacji sieci Web<br /><br /> WebGrease|  
 |[ODataLib](http://go.microsoft.com/fwlink/?LinkId=328954)|ODataLib|  
 |[Office 2013](http://support.microsoft.com/lifecycle/?p1=16674)|Zestaw SDK Open XML|  
-|[Online Services Policy](http://support.microsoft.com/gp/OSSLpolicy)|Zestaw SDK usługi Microsoft Ads|  
+|[Zasady dotyczące usług online](http://support.microsoft.com/gp/OSSLpolicy)|Zestaw SDK usługi Microsoft Ads|  
 |[SharePoint 2013](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=sharepoint%20server%202013&Filter=FilterNO)|Składnik klienta programu SharePoint<br /><br /> SharePoint Foundation 2013<br /><br /> Rozszerzenia Windows Identity Foundation|  
-|[Silverlight 5](http://support.microsoft.com/lifecycle/?p1=16278)<br /><br /> <br />> Zobacz też: [http://support.microsoft.com/gp/lifean45](http://support.microsoft.com/gp/lifean45)|Środowisko uruchomieniowe Silverlight 5<br /><br /> Zestaw SDK środowiska Silverlight 5|  
+|[Program Silverlight 5](http://support.microsoft.com/lifecycle/?p1=16278)<br /><br /> <br />> Zobacz też: [http://support.microsoft.com/gp/lifean45](http://support.microsoft.com/gp/lifean45)|Środowisko uruchomieniowe Silverlight 5<br /><br /> Zestaw SDK środowiska Silverlight 5|  
 |[SQL Server 2008 R2](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202008%20R2&Filter=FilterNO)|Typy SQL System CLR (SQL Server 2008 R2)|  
 |[SQL Server 2012](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Narzędzia wiersza polecenia SQL<br /><br /> Usługa językowa SQL — IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> Typy SQL System CLR (SQL Server 2012)<br /><br /> SQLDOM|  
 |[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Narzędzia wiersza polecenia SQL<br /><br /> Usługa językowa SQL — IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> Typy SQL System CLR (SQL Server 2014)<br /><br /> SQLDOM|  

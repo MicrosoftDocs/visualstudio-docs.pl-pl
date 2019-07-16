@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbbbd27cfe7d720349592050419f5c73d1843c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160228"
 ---
 # <a name="shutdown"></a>Zamykanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

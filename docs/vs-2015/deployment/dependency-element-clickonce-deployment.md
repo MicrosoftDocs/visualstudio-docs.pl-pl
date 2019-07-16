@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187783"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;zależność&gt; — Element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,22 +83,22 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`preRequisite`|Opcjonalna. Określa, że ten zestaw powinna już istnieć w pamięci podręcznej GAC. Prawidłowe wartości to `true` i `false`. Jeśli `true`i określony zestaw nie istnieje w pamięci podręcznej GAC, aplikacja nie może uruchomić.|  
-|`visible`|Opcjonalna. Określa tożsamość aplikacji najwyższego poziomu, łącznie z jej zależnościami. Używane wewnętrznie przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] na potrzeby zarządzania i aktywacji aplikacji.|  
-|`dependencyType`|Wymagana. Relacja między tą zależnością i aplikacji. Prawidłowe wartości to:<br /><br /> -   `install`. Składnik stanowi oddzielną instalacją od bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację.|  
+|`preRequisite`|Opcjonalny. Określa, że ten zestaw powinna już istnieć w pamięci podręcznej GAC. Prawidłowe wartości to `true` i `false`. Jeśli `true`i określony zestaw nie istnieje w pamięci podręcznej GAC, aplikacja nie może uruchomić.|  
+|`visible`|Opcjonalny. Określa tożsamość aplikacji najwyższego poziomu, łącznie z jej zależnościami. Używane wewnętrznie przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] na potrzeby zarządzania i aktywacji aplikacji.|  
+|`dependencyType`|Wymagany. Relacja między tą zależnością i aplikacji. Prawidłowe wartości to:<br /><br /> -   `install`. Składnik stanowi oddzielną instalacją od bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację.|  
 |`codebase`|Opcjonalna. Pełna ścieżka do manifestu aplikacji.|  
-|`size`|Opcjonalna. Rozmiar manifest aplikacji, w bajtach.|  
+|`size`|Opcjonalny. Rozmiar manifest aplikacji, w bajtach.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Wymagana. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama, jak opisano w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.  
+ Wymagane. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama, jak opisano w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Name`|Wymagana. Określa nazwę aplikacji.|  
-|`Version`|Wymagana. Określa numer wersji aplikacji, w następującym formacie: `major.minor.build.revision`|  
-|`publicKeyToken`|Wymagana. Określa ciąg szesnastkowy 16 znaków, który reprezentuje ostatnie 8 bajtów Skrót SHA-1 klucza publicznego, w ramach której aplikacja lub zestaw jest podpisany. Klucz publiczny używany do podpisywania musi wynosić 2048 bitów lub nowszej.|  
-|`processorArchitecture`|Wymagana. Określa procesor. Prawidłowe wartości to `x86` dla Windows 32-bitowe i `IA64` dla Windows 64-bitowych.|  
-|`Language`|Opcjonalna. Określa część dwóch kodów języka zestawu. Na przykład: EN-US, który oznacza dla języka angielskiego (US). Wartość domyślna to `neutral`. Tego elementu jest `asmv2` przestrzeni nazw.|  
+|`Version`|Wymagany. Określa numer wersji aplikacji, w następującym formacie: `major.minor.build.revision`|  
+|`publicKeyToken`|Wymagany. Określa ciąg szesnastkowy 16 znaków, który reprezentuje ostatnie 8 bajtów Skrót SHA-1 klucza publicznego, w ramach której aplikacja lub zestaw jest podpisany. Klucz publiczny używany do podpisywania musi wynosić 2048 bitów lub nowszej.|  
+|`processorArchitecture`|Wymagany. Określa procesor. Prawidłowe wartości to `x86` dla Windows 32-bitowe i `IA64` dla Windows 64-bitowych.|  
+|`Language`|Opcjonalny. Określa część dwóch kodów języka zestawu. Na przykład: EN-US, który oznacza dla języka angielskiego (US). Wartość domyślna to `neutral`. Tego elementu jest `asmv2` przestrzeni nazw.|  
 |`type`|Opcjonalna. Dla zapewnienia zgodności z Windows side-by-side zainstalować technologii. Jest to jedyna wartość dozwolone `win32`.|  
   
 ## <a name="hash"></a>hash  
@@ -123,7 +123,7 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
 |---------------|-----------------|  
 |`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jest `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-## <a name="dsigdigestvalue"></a>dsig:DigestValue  
+## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
  `dsig:DigestValue` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestValue` Element nie ma żadnych atrybutów. Jego wartość tekstowa jest obliczana wartość skrótu dla określonego pliku.  
   
 ## <a name="remarks"></a>Uwagi  
@@ -185,4 +185,4 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<dependency> Element](../deployment/dependency-element-clickonce-application.md)
+ [\<dependency>, element](../deployment/dependency-element-clickonce-application.md)

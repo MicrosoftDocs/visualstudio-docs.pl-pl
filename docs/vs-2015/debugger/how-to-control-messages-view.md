@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66e7b546b507f1f96dbd4aa4a62b4db501eff2fc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185161"
 ---
 # <a name="how-to-control-messages-view"></a>Instrukcje: Kontrolowanie widoku komunikatów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

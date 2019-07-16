@@ -1,5 +1,5 @@
 ---
-title: Ports | Microsoft Docs
+title: Porty | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,11 +12,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73003e00fef5c37db4a702e7a4a1121600673844
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153690"
 ---
 # <a name="ports"></a>Porty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

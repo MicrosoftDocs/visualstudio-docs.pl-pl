@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155521"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>Instrukcje: Zmień lokalizację instrumentowanych danych binarnych
+# <a name="how-to-relocate-instrumented-binaries"></a>Instrukcje: Zmienianie lokalizacji instrumentowanych danych binarnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas Instrumentacji sondy są wstawiane do plików binarnych do pomiaru wydajności aplikacji. Wybierając Zmień lokalizację instrumentowanych danych binarnych kopię oryginalny plik binarny jest Instrumentacji i umieścić w określonej lokalizacji. Ta opcja jest przydatna, jeśli nie chcesz, aby program profilujący do zmiany nazwy oryginalny plik binarny. Jeśli plik binarny nie został przeniesiony, jest zastępowany oryginalną wersję pliku binarnego.  

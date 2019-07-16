@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ea2881cfebaf10d7a72e8651214cf3a6f64debae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164671"
 ---
-# <a name="customizing-t4-text-transformation"></a>Dopasowanie przekształcenia tekstu T4
+# <a name="customizing-t4-text-transformation"></a>Dopasowanie transformacji tekstu T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Szablony tekstowe są funkcją [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] umożliwiającą generować kod programu lub innych plików tekstowych, proces przekształcenia. Za pomocą [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)], można rozszerzyć proces przekształcania szablonu domyślnego, dostosowując procesora dyrektywy szablonu tekstu lub hosta szablonu tekstu.  

@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145372"
 ---
 # <a name="utilization-view"></a>Widok wykorzystania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Widok wykorzystania** Wyświetla informacje o procesorze CPU, procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces. Pokazuje średnie wykorzystanie przez proces analizy, proces bezczynny, proces systemowy i inne procesy, które są uruchomione w systemie, wraz z upływem czasu. Nie pokazuje, które określonych core jest aktywny w dowolnym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50 procent w określonym czasie, ten widok przedstawia jednego rdzenia logicznego wykorzystywane. Widok jest generowany przez podzielenie podczas profilowania na segmenty krótki czas. Dla każdego segmentu wykres, które to średnia liczba wątków procesów, które są wykonywane na rdzenie logiczne, w tym przedziale.  
   
- ![CPU Utilization View](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
+ ![Widok wykorzystania CPU](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
   
  Na wykresie widać, czas (na osi x) i średni rdzenie logiczne, które są wykorzystywane przez proces docelowy, proces bezczynności i proces systemowy. (Proces bezczynny pokazuje bezczynnych rdzeni. Proces systemowy jest procesem w Windows, które może wykonywać pracę w imieniu innych procesów). Pozostałe procesy, które są uruchomione na koncie systemu w celu wykorzystania pozostałe rdzenie.  
   

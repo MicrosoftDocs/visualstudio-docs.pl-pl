@@ -26,11 +26,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158315"
 ---
 # <a name="using-intellisense"></a>Korzystanie z IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Funkcja IntelliSense jest ogólnym terminem dla wielu funkcji: Wyświetl listę 
   
  Parametr pogrubiony wskazuje następny parametr, który jest wymagany podczas wprowadzania funkcji. Dla przeciążonych funkcji klawisze strzałek w górę i w dół umożliwiają wyświetlenie informacji o alternatywnych parametrach przeciążeń funkcji.  
   
- ![Parameter Info](../ide/media/vs2015-param-info.png "VS2015_param_Info")  
+ ![Informacje o parametrach](../ide/media/vs2015-param-info.png "VS2015_param_Info")  
   
  Gdy opisujesz funkcje i parametry za pomocą komentarzy dokumentacji XML, komentarze będą wyświetlane jako informacje o parametrach. Aby uzyskać więcej informacji, zobacz [podawania komentarzy kodu XML](../ide/supplying-xml-code-comments.md).  
   
@@ -78,7 +78,7 @@ Funkcja IntelliSense jest ogólnym terminem dla wielu funkcji: Wyświetl listę 
   
  Jeżeli funkcja jest przeciążona, mechanizm IntelliSense może nie wyświetlać informacji dla wszystkich postaci przeciążenia.  
   
- Można wyłączyć szybkie informacje w C++, ustawiając **narzędzia / Opcje / Edytor tekstu/C/C + +/ zaawansowane/Auto Quick Info** do `false`.  
+ Można wyłączyć szybkie informacje C++ , ustawiając **narzędzia / Opcje / Edytor tekstu/C/C++zaawansowane/Auto Quick Info** do `false`.  
   
 ## <a name="complete-word"></a>Dokończ wyraz  
  Dokończ wyraz uzupełnia pozostałą część zmiennej, polecenia lub nazwy funkcji, po wprowadzeniu dostatecznej liczby znaków, aby odróżnić termin. Można wywołać Complete Word klikając **Edycja/IntelliSense/Dokończ wyraz**, wpisując CTRL + SPACE lub klikając **Dokończ wyraz** na listwie narzędziowej edytora.  
@@ -103,6 +103,6 @@ MessageBox( hWnd, "String literal|") )
   
 ## <a name="see-also"></a>Zobacz też  
  [IntelliSense specyficzne dla języka Visual Basic](../ide/visual-basic-specific-intellisense.md)   
- [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)   
+ [Funkcja IntelliSense programu Visual C#](../ide/visual-csharp-intellisense.md)   
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [Stosowanie komentarzy kodu XML](../ide/supplying-xml-code-comments.md)

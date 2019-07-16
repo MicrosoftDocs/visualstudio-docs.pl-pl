@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158636"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Przewodnik: Debugowanie arkusza stylów XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Kroki opisane w tym przewodniku pokazują, jak za pomocą debugera XSLT. Kroki o
   
     Arkusz stylów jest otwarty w edytorze XML.  
   
-3. Kliknij przycisk przeglądania (**...** ) na **dane wejściowe** pola w oknie właściwości dokumentu.  
+3. Kliknij przycisk przeglądania ( **...** ) na **dane wejściowe** pola w oknie właściwości dokumentu.  
   
 4. Zlokalizuj plik books.xml, a następnie kliknij przycisk **Otwórz**.  
   

@@ -1,5 +1,5 @@
 ---
-title: VSPerfReport | Microsoft Docs
+title: VSPerfReport | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148230"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Opcje|Opis|  
 |-------------|-----------------|  
 |**U**|Dane wyjściowe raportu i konsoli przekierowane dane wyjściowe są zapisywane jako Unicode. Musi być pierwsza opcja określona.|  
-|**Podsumowanie:**[*typy*]|Tworzy jeden lub więcej typów raportów.<br /><br /> -   `All` — wszystkie typy raportów są generowane.<br />-   `CallerCallee` -relacje nadrzędne/podrzędne między funkcjami.<br />-   `Function` — funkcje wywoływane.<br />-   `CallTree` -hierarchię wywołanych funkcji.<br />-   `Counter` — wszystkie znaczniki wraz z wydajności Windows wartości liczników.<br />-   `Ip` — instrukcje profilowania.<br />-   `Life` -okresów istnienia przydzielonych obiektów (dostępne, gdy zostały zebrane dane alokacji).<br />-   `Line` źródła danych profilu wiersza kodu.<br />-   `Header` -Raport zawiera informacje o pliku nagłówka.<br />-   `Mark` wszystkie znaczniki.<br />-   `Module` -Moduły profilowania.<br />-   `Process` -profilowanych procesów.<br />-   `Thread` -profilowanych wątków.<br />-   `Type` -przydzielonych typów.<br />-   `Contention` -rywalizacje o zasoby.<br />-   `RuleWarnings` -problemy z wydajnością reguły<br />-   `ETW` — wszystkie zdarzenia śledzenie zdarzeń dla Windows (ETW) zebranych podczas uruchomienia profilowania. Plik etl danych musi być w jej oryginalnej lokalizacji lub do katalogu zawierającego plik .vsp lub .vsps.|  
+|**Podsumowanie:** [*typy*]|Tworzy jeden lub więcej typów raportów.<br /><br /> -   `All` — wszystkie typy raportów są generowane.<br />-   `CallerCallee` -relacje nadrzędne/podrzędne między funkcjami.<br />-   `Function` — funkcje wywoływane.<br />-   `CallTree` -hierarchię wywołanych funkcji.<br />-   `Counter` — wszystkie znaczniki wraz z wydajności Windows wartości liczników.<br />-   `Ip` — instrukcje profilowania.<br />-   `Life` -okresów istnienia przydzielonych obiektów (dostępne, gdy zostały zebrane dane alokacji).<br />-   `Line` źródła danych profilu wiersza kodu.<br />-   `Header` -Raport zawiera informacje o pliku nagłówka.<br />-   `Mark` wszystkie znaczniki.<br />-   `Module` -Moduły profilowania.<br />-   `Process` -profilowanych procesów.<br />-   `Thread` -profilowanych wątków.<br />-   `Type` -przydzielonych typów.<br />-   `Contention` -rywalizacje o zasoby.<br />-   `RuleWarnings` -problemy z wydajnością reguły<br />-   `ETW` — wszystkie zdarzenia śledzenie zdarzeń dla Windows (ETW) zebranych podczas uruchomienia profilowania. Plik etl danych musi być w jej oryginalnej lokalizacji lub do katalogu zawierającego plik .vsp lub .vsps.|  
 |**Xml**|Dane wyjściowe raportu w formacie XML.|  
 |**CallTrace**|Tworzy listę wejście funkcji i wyjścia, zdarzenia ETW i znaczników.|  
 |**ClearPackedSymbols**|Usuwa wcześniej osadzone symbole z pliku danych profilera. Uruchom następujące polecenie przed uruchomieniem PackSymbols na sekundę czasu.|  
@@ -72,14 +72,14 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Opcje|Opis|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`][,`callee`]]|Pokaż tylko użytkowników wywołań funkcji aplikacji; Ukryj wywołań systemowych.<br /><br /> -Brak parametrów - ukryć wszystkie funkcje system.<br />-   `caller` — Pokaż jeden poziom funkcji systemu, które wywołują funkcje aplikacji.<br />-   `callee` — Pokaż jeden poziom funkcji systemu, które są wywoływane przez funkcje aplikacji użytkownika.|  
-|**Godzina rozpoczęcia:**[*wartość*]|Wyświetla tylko dane zebrane po wartości (w milisekundach).|  
-|**EndTime:**[*wartość*]|Wyświetla tylko dane zebrane przed wartością (w milisekundach).|  
+|**JustMyCode**[ **:** [`caller`] [,`callee`]]|Pokaż tylko użytkowników wywołań funkcji aplikacji; Ukryj wywołań systemowych.<br /><br /> -Brak parametrów - ukryć wszystkie funkcje system.<br />-   `caller` — Pokaż jeden poziom funkcji systemu, które wywołują funkcje aplikacji.<br />-   `callee` — Pokaż jeden poziom funkcji systemu, które są wywoływane przez funkcje aplikacji użytkownika.|  
+|**Godzina rozpoczęcia:** [*wartość*]|Wyświetla tylko dane zebrane po wartości (w milisekundach).|  
+|**EndTime:** [*wartość*]|Wyświetla tylko dane zebrane przed wartością (w milisekundach).|  
 |**FilterFile:** `VSPFFile`|Określa lokalizację pliku filtru, który został wygenerowany z okna Raport dotyczący wydajności programu Visual Studio.|  
-|**MsFilter:**[*godzina rozpoczęcia, czas trwania*]|Wyświetla tylko dane z `starttime` aż do długości `duration` (w milisekundach).|  
-|**Proces:**[*pid*]|Wyświetla tylko dane z określonego procesu.|  
-|**Wątek:**[*threadid*]|Wyświetla tylko dane z określonego wątku.|  
-|**Wątek:**[*identyfikator_wątku, identyfikator_procesu*]|Wyświetla tylko dane z określonego wątku skojarzone z określonym procesem.|  
+|**MsFilter:** [*godzina rozpoczęcia, czas trwania*]|Wyświetla tylko dane z `starttime` aż do długości `duration` (w milisekundach).|  
+|**Proces:** [*pid*]|Wyświetla tylko dane z określonego procesu.|  
+|**Wątek:** [*threadid*]|Wyświetla tylko dane z określonego wątku.|  
+|**Wątek:** [*identyfikator_wątku, identyfikator_procesu*]|Wyświetla tylko dane z określonego wątku skojarzone z określonym procesem.|  
   
 ## <a name="difference-report-options"></a>Opcje raportu różnicy  
  W poniższej tabeli opisano opcje porównywania plików raportu.  
@@ -87,9 +87,9 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Opcje|Opis|  
 |-------------|-----------------|  
 |**Diff**  `vspfile1 vspfile2`|Porównaj dwa pliki (.vsp lub .vsps) pliki raportu. Opcje podsumowania zostaną zignorowane przy użyciu opcji różnic.|  
-|**Diff:**[*wartość*]|Poniżej tej wartości progowe różnicę między dwiema wartościami zostaną zignorowane. Ponadto nowe dane o wartościach poniżej tego progu nie będą wyświetlane.|  
-|**DiffTable:**[*tablename*]|Użyj tej konkretnej tabeli do porównywania plików. Wartość domyślna to tabeli funkcji.|  
-|**DiffColumn:**[*columnname*]|Użyj tej wartości porównania określonej kolumny. Wartość domyślna to kolumna procentu próbki wyłączne.|  
+|**Diff:** [*wartość*]|Poniżej tej wartości progowe różnicę między dwiema wartościami zostaną zignorowane. Ponadto nowe dane o wartościach poniżej tego progu nie będą wyświetlane.|  
+|**DiffTable:** [*tablename*]|Użyj tej konkretnej tabeli do porównywania plików. Wartość domyślna to tabeli funkcji.|  
+|**DiffColumn:** [*columnname*]|Użyj tej wartości porównania określonej kolumny. Wartość domyślna to kolumna procentu próbki wyłączne.|  
 |**QueryDiffTables**|Listę prawidłowych tabel i kolumn dla tych dwóch plików raportu, pod warunkiem.|  
   
 ## <a name="see-also"></a>Zobacz też  

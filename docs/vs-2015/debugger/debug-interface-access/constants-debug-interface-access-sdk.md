@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 931e1ab46793a5ff7e0434949330eaf4dbc820e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164430"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Stałe (Zestaw SDK dostępu do interfejsu debugowania)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Te stałe typu string może służyć do identyfikowania różnych sekcji plik b
   
 |Macro|Wartość|  
 |-----------|-----------|  
-|`DiaTable_Symbols`|L"Symbols"|  
+|`DiaTable_Symbols`|L "Symbole"|  
 |`DiaTable_Sections`|L "Sekcji"|  
-|`DiaTable_SrcFiles`|L"SourceFiles"|  
+|`DiaTable_SrcFiles`|L "Pliki_źródłowe"|  
 |`DiaTable_LineNums`|L "LineNumbers"|  
-|`DiaTable_SegMap`|L"SegmentMap"|  
+|`DiaTable_SegMap`|L "SegmentMap"|  
 |`DiaTable_Dbg`|L "Dbg"|  
 |`DiaTable_InjSrc`|L "InjectedSource"|  
 |`DiaTable_FrameData`|L"FrameData"|  

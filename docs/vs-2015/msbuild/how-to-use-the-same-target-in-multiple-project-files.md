@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178321"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Instrukcje: Użycie tej samej wartości docelowej w wielu plikach projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md
   
 1. Zdefiniuj w importowania pliku projektu, wszystkie właściwości i elementy, które są używane jako parametry dla właściwości i elementy w projekcie zaimportowane.  
   
-2. Użyj `Import` element Importowanie projektu. Na przykład:  
+2. Użyj `Import` element Importowanie projektu. Przykład:  
   
      `<Import Project="MyCommon.targets"/>`  
   

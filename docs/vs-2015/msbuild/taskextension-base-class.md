@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c8e4823ae9a997feae15836962d0c5b8a1f2aa1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182338"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension — Klasa podstawowa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

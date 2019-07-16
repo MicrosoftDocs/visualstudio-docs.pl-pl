@@ -18,16 +18,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6ff05e7e8cc74eacb00b5ec8ff42bd48faaa12c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159193"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Wykorzystanie funkcji String.Split i String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Znaczące wykorzystanie funkcji String.Split i String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0013|  
+Identyfikator reguły | DA0013 ZNACZĄCE |  
 |Category|.NET Framework Usage Guidance|  
 | Profilowanie metody | Próbkowanie |  
 | Komunikat | Rozważ ograniczenie użycia funkcji String.Split i String.Substring. |  

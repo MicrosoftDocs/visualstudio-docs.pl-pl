@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188986"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Zadaniach PackageFiles&gt; — Element (program inicjujący)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "54783852"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`CopyAllPackageFiles`|Opcjonalna. Jeśli ustawiono `false`, Instalator pobierze tylko pliki, do których odwołuje się z `Command` elementu. Jeśli ustawiono `true`, wszystkie pliki zostaną pobrane.<br /><br /> Jeśli ustawiono `IfNotHomesite`, Instalator będzie działa tak samo tak, jakby `False` Jeśli `ComponentsLocation` jest ustawiona na `HomeSite`, a w przeciwnym razie zostanie działa tak samo tak, jakby `True`. To ustawienie może być przydatne zezwolenie na pakiety, które znajdują się programów inicjujących można wykonać swoje własne zachowanie w przypadku scenariusza HomeSite.<br /><br /> Wartość domyślna to `true`.|  
+|`CopyAllPackageFiles`|Opcjonalny. Jeśli ustawiono `false`, Instalator pobierze tylko pliki, do których odwołuje się z `Command` elementu. Jeśli ustawiono `true`, wszystkie pliki zostaną pobrane.<br /><br /> Jeśli ustawiono `IfNotHomesite`, Instalator będzie działa tak samo tak, jakby `False` Jeśli `ComponentsLocation` jest ustawiona na `HomeSite`, a w przeciwnym razie zostanie działa tak samo tak, jakby `True`. To ustawienie może być przydatne zezwolenie na pakiety, które znajdują się programów inicjujących można wykonać swoje własne zachowanie w przypadku scenariusza HomeSite.<br /><br /> Wartość domyślna to `true`.|  
   
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile` Element jest elementem podrzędnym `PackageFiles` elementu. A `PackageFiles` element musi mieć co najmniej jeden `PackageFile` elementu.  
@@ -60,7 +60,7 @@ ms.locfileid: "54783852"
 |---------------|-----------------|  
 |`Name`|Wymagana. Nazwa pliku pakietu. Jest to nazwa która `Command` elementu, będzie stanowiła odwołanie podczas definiuje warunki, w których pakiet instaluje. Ta wartość jest również używana jako klucz do `Strings` tabelę, aby pobrać zlokalizowana nazwa, która narzędzia takie jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] będzie używany do opisania pakietu.|  
 |`HomeSite`|Opcjonalna. Lokalizacja pakietu na serwerze zdalnym, jeśli nie jest dołączony do Instalatora.|  
-|`CopyOnBuild`|Opcjonalna. Określa, czy program inicjujący należy skopiować plik pakietu na dysku w czasie kompilacji. Wartość domyślna to true.|  
+|`CopyOnBuild`|Opcjonalny. Określa, czy program inicjujący należy skopiować plik pakietu na dysku w czasie kompilacji. Wartość domyślna to true.|  
 |`PublicKey`|Zaszyfrowany klucz publiczny podpisu certyfikatu pakietu. Jeśli wymagane `HomeSite` jest używany; w przeciwnym razie opcjonalne.|  
 |`Hash`|Opcjonalna. Skrót SHA1 pliku pakietu. Służy to sprawdzić integralność pliku w czasie instalacji. Jeśli nie można obliczyć skrótu identyczne z pliku pakietu, pakietu nie zostanie zainstalowana.|  
   

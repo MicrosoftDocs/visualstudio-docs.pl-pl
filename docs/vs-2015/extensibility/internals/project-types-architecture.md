@@ -11,11 +11,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 775656d2190a36f62c2b047c1ff7f1e02575c1ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154145"
 ---
 # <a name="project-types-architecture"></a>Architektura typów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

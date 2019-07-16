@@ -7,11 +7,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147943"
 ---
 # <a name="vsix-color-compiler"></a>Kompilator kolorów VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -134,7 +134,7 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
 ## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia  
  **Składnia**  
   
- VsixColorCompiler \<XML file> \<PkgDef file> \<Optional Args>  
+ VsixColorCompiler \<pliku XML > \<pliku PkgDef > \<argumentów opcjonalnych >  
   
  **Argumenty**  
   
@@ -142,7 +142,7 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
 |-|-|-|  
 |**Nazwa przełącznika**|**Uwagi**|**Wymagane lub opcjonalne**|  
 |Nienazwane (plik XML)|To jest pierwszy parametr nienazwany i ścieżkę do pliku XML do konwersji.|Wymagane|  
-|Nienazwane (plik .pkgdef)|To jest drugi parametr bez nazwy i ścieżki wyjściowej dla pliku .pkgdef wygenerowany.<br /><br /> Wartość domyślna: \<XML Filename>.pkgdef|Optional|  
+|Nienazwane (plik .pkgdef)|To jest drugi parametr bez nazwy i ścieżki wyjściowej dla pliku .pkgdef wygenerowany.<br /><br /> Wartość domyślna: \<Nazwa pliku XML > .pkgdef|Optional|  
 |/noLogo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
 |/?|Wydrukuj informacje pomocy.|Optional|  
 |/help|Wydrukuj informacje pomocy.|Optional|  
@@ -151,7 +151,7 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
   
 - VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
-- VsixColorCompiler D:\xml\colors.xml /noLogo  
+- / Nologo VsixColorCompiler D:\xml\colors.xml  
   
 ## <a name="notes"></a>Uwagi  
   

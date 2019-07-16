@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184092"
 ---
 # <a name="comparing-properties-and-items"></a>Porównanie właściwości i elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

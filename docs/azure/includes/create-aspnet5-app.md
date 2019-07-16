@@ -8,17 +8,17 @@ ms.author: ghogen
 ms.topic: include
 ms.date: 05/21/2018
 ms.custom: include file
-ms.openlocfilehash: 09458cf2fa6e8600464732953443a71ac3ca2948
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20bb8f62e4718dd75fd25d78d7e42dd5234572a9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819997"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68146993"
 ---
-1. Wybierz z menu programu Visual Studio **Plik > Nowy > Projekt**.
-2. W obszarze **szablony** części **nowy projekt** okno dialogowe, wybierz opcję **Visual C# > sieci Web**.
+1. W menu programu Visual Studio wybierz **pliku** > **New** > **projektu**.
+2. W **szablony** części **nowy projekt** okno dialogowe, wybierz opcję **Visual C#**   >  **Web**.
 3. Wybierz **aplikacji sieci Web platformy ASP.NET Core**.
-4. Nazwij swoją nową aplikację (lub wykonać domyślnie) i wybierz **OK**.
+4. Wprowadź nazwę dla nowej aplikacji (lub użyj domyślnej nazwy), a następnie wybierz pozycję **OK**.
 5. Wybierz **aplikacji sieci Web**.
-6. Sprawdź **włączyć obsługę platformy Docker** pole wyboru.
-7. Wybierz typ kontenera (Windows lub Linux) i kliknij **OK**.
+6. Wybierz **włączyć obsługę platformy Docker** pole wyboru.
+7. Wybierz typ kontenera (Windows lub Linux), a następnie wybrać **OK**.

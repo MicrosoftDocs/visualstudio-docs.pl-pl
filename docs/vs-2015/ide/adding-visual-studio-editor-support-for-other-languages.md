@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148247"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Dodawanie obsługi innych języków w edytorze programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,13 +74,13 @@ Informacje na temat jak edytor programu Visual Studio obsługuje odczytu ani naw
 
 |Nazwa folderu|Opis|
 |-----------------|-----------------|
-|\\*\<Nazwa języka >*|Folder języka. Zastąp  *\<Nazwa języka >* nazwą języka. Na przykład **\Matlab**.|
+|\\ *\<Nazwa języka >*|Folder języka. Zastąp  *\<Nazwa języka >* nazwą języka. Na przykład **\Matlab**.|
 |\Syntaxes|Folder gramatyki. Zawiera pliki .json gramatyki języka, takich jak **Matlab.json**.|
 |\Snippets|Folder fragmentów kodu. Zawiera fragmenty kodu dla języka.|
 
- W Windows, % userprofile % jest rozpoznawana jako ścieżka: c:\Users\\*\<nazwa użytkownika >*. Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.
+ W Windows, % userprofile % jest rozpoznawana jako ścieżka: c:\Users\\ *\<nazwa użytkownika >* . Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.
 
  Aby uzyskać szczegółowe informacje o sposobie tworzenia gramatyki TextMate, zobacz [TextMate — wprowadzenie do gramatyki języka: Jak dodawać, wyróżnianie składni kodu źródłowego osadzonych w kodzie HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [informacje na temat tworzenia gramatyki języka i motywu niestandardowego dla pakietu Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Zobacz też
- [Visual Studio 2013, przejdź do ulepszenia](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [instruktażu: Creating a Code Snippet](../ide/walkthrough-creating-a-code-snippet.md) [instruktażu: Wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013, przejdź do ulepszenia](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [instruktażu: Creating a Code Snippet](../ide/walkthrough-creating-a-code-snippet.md) [instruktażu: wyświetlanie uzupełniania składni](../extensibility/walkthrough-displaying-statement-completion.md)

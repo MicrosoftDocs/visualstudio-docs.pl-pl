@@ -18,11 +18,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: f7820947921e584d96d7f9e7299b70410b3d0587
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157141"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Analiza jakości kodu C/C++ za pomocą analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Możesz poprawić kod C/C++ za pomocą analizy kodu w programie Visual Studio, a
 |||  
 |-|-|  
 |[Analiza kodu C/C++ — przegląd](../code-quality/code-analysis-for-c-cpp-overview.md)|Dowiedz się więcej o funkcjach narzędzie do analizy kodu.|  
-|[Szybki Start: Analiza kodu C/c++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Poznaj podstawowe zasady analizy kodu C/c++.|  
+|[Szybki start: Analiza kodu C/c++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Poznaj podstawowe zasady analizy kodu C/c++.|  
 |[Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)|Określ reguły do uruchamiania w projekcie lub rozwiązaniu.|  
 |[Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++](../code-quality/using-the-cpp-core-guidelines-checkers.md)|Dodaj moduły sprawdzania podstawowych wytycznych dotyczących języka C++ do projektu.|  
 |[Instrukcje: Ustawianie właściwości analizy kodu dla projektów C/C++](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)|W tym artykule opisano ustawienia konfiguracji dla analizy kodu.|  

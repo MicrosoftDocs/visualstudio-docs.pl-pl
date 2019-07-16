@@ -15,11 +15,11 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183947"
 ---
 # <a name="projects"></a>Projekty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ W programie Visual Studio, projekty są kontenerami, używanych przez deweloper�
  [Projekty internetowe](../../extensibility/internals/web-projects.md)  
  W tym artykule wyjaśniono projektu sieci Web, który z kolei tworzyć aplikacje sieci Web.  
   
- [Generowanie nowego projektu: Za kulisami, część jednego](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) i [Generowanie nowego projektu: Kulisami część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [Generowanie nowego projektu: Za kulisami, część jednego](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) i [Generowanie nowego projektu: szczegółowe informacje (część druga)](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  W tym artykule wyjaśniono, jakie rzeczywiście występuje podczas tworzenia nowego projektu.  
   
  [Przykłady VSSDK](../../misc/vssdk-samples.md)  

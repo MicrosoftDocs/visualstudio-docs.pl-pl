@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160184"
 ---
-# <a name="install-sql-server-sample-databases"></a>Instalowanie programu SQL Server przykładowych baz danych
+# <a name="install-sql-server-sample-databases"></a>Instalowanie przykładowych baz danych programu SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Przykładowe bazy danych są przydatne do eksperymentowania z zapytań SQL i LINQ, powiązań danych, modelowania programu Entity Framework i tak dalej.  Każdy produkt bazy danych ma swój własny przykładowych baz danych. Są dwa popularne przykładowej bazy danych SQL Server, Northwind i AdventureWorks.  

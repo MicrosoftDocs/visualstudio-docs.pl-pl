@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a09a62a2e6b94dbccda3afce4bdd286270149c15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756704"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68150035"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ HRESULT findChildren ( 
  Metoda ta jest identyczna z wywoływaniem [idiasession::findchildren —](../../debugger/debug-interface-access/idiasession-findchildren.md) metody za pomocą tego symbolu jako pierwszy parametr.  
   
 ## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
  [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
  [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [Idiasession::findchildren —](../../debugger/debug-interface-access/idiasession-findchildren.md)   

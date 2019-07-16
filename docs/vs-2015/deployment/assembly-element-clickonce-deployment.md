@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b77cfacf3dca2c2cc20d674f79929e9958a16d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155737"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;zestaw&gt; — Element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Element najwyższego poziomu do manifestu wdrażania.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`manifestVersion`|Wymagana. Ten atrybut musi być równa `1.0`.|  
+|`manifestVersion`|Wymagany. Ten atrybut musi być równa `1.0`.|  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie kodu pokazano `assembly` elementu w manifeście wdrożenia dla aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.  
@@ -67,4 +67,4 @@ Element najwyższego poziomu do manifestu wdrażania.
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<zestaw > Element](../deployment/assembly-element-clickonce-application.md)
+ [\<assembly>, element](../deployment/assembly-element-clickonce-application.md)

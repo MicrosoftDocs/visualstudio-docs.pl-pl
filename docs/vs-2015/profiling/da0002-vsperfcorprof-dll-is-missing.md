@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5723506415a0ddbf816b896e23e93eaa706bf7e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158724"
 ---
-# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: Brakuje VSPerfCorProf.dll
+# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: Brak biblioteki VSPerfCorProf.dll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0002|  
+Identyfikator reguły | DA0002 |  
 | Kategoria | Profilowanie użycia narzędzia |  
 | Profilowanie metody | Profilowanie przy użyciu narzędzia wiersza polecenia narzędzia VSPerfCmd i VSPerfASPNETCmd |  
 | Komunikat | Wydaje się, że plik został zebrany bez odpowiedniego ustawienia zmiennych środowiskowych poleceniem VSPerfCLREnv.cmd. Symbole dla zarządzanych danych binarnych mogą nie być rozpoznawane. |  

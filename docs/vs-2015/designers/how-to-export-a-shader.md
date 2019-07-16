@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176483"
 ---
-# <a name="how-to-export-a-shader"></a>Instrukcje: Eksport cieniowania
+# <a name="how-to-export-a-shader"></a>Instrukcje: Eksportowanie cieniowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie pokazano, jak wyeksportować modułu cieniującego kierowane wykres modułu cieniującego języka (DGSL) służy w swojej aplikacji za pomocą projektanta modułu cieniującego.  

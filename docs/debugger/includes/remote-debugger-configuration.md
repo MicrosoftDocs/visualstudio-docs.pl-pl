@@ -13,18 +13,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902889"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149172"
 ---
 1. Na komputerze zdalnym, należy znaleźć i uruchomić **zdalny debuger** z **Start** menu. 
    
    Jeśli nie masz uprawnienia administracyjne na komputerze zdalnym, kliknij prawym przyciskiem myszy **zdalny debuger** aplikacji i wybierz **Uruchom jako administrator**. W przeciwnym razie po prostu ją uruchomić normalnie.
 
-   Może to być różne wersje *msvsmon.exe* w *x64*, *x32*, lub w innych folderach. Upewnij się, że jest uruchomiona wersja potrzebne do debugowania aplikacji. 
+   Jeśli planujesz dołączyć do procesu, który działa jako administrator, lub jest uruchomiona w ramach innego użytkownika konta (np. usługi IIS), kliknij prawym przyciskiem myszy **zdalny debuger** aplikacji i wybierz **Uruchom jako administrator**. Aby uzyskać więcej informacji, zobacz [uruchomić zdalny debuger jako administrator](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
    
 1. Po raz pierwszy uruchomić zdalny debuger (lub został wcześniej skonfigurowany) **Konfiguracja zdalnego debugowania** pojawi się okno dialogowe.  
   

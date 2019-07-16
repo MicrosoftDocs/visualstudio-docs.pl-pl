@@ -17,13 +17,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178785"
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Instrukcje: Wizualizacja skojarzenia kolekcji (Projektant klas)
+# <a name="how-to-visualize-a-collection-association-class-designer"></a>Instrukcje: Wizualizacja skojarzeń kolekcji (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Właściwości i pola, które są kolekcjami innych typów mogą być wyświetlane na diagramie klas jako skojarzenia kolekcji. W przeciwieństwie do regularnych skojarzenia, która wyświetla pole lub właściwość jako linia klasy będącej właścicielem — łączenie typu pola, skojarzenia kolekcji jest wyświetlana jako linia klasy będącej właścicielem — łączenie typu modułu zbierającego dane.  

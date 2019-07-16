@@ -24,11 +24,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178928"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Wyświetlanie danych w debugerze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

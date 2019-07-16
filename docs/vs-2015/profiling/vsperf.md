@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145290"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |||  
 |-|-|  
 |**App: {AppName}**|Uruchamia program profilujący i czeka, aż do określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` Aby wyświetlić nazwę aplikacji i Pełna_nazwa_pakietu zainstalowanych aplikacji.|  
-|**/package:{PackageFullName}**|Uruchamia program profilujący i czeka, aż do określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` Aby wyświetlić nazwę aplikacji i Pełna_nazwa_pakietu zainstalowanych aplikacji.|  
+|**/ pakietu: {Pełna_nazwa_pakietu}**|Uruchamia program profilujący i czeka, aż do określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` Aby wyświetlić nazwę aplikacji i Pełna_nazwa_pakietu zainstalowanych aplikacji.|  
 |**/js**|Wymagane na potrzeby profilowania aplikacji JavaScript.<br /><br /> Zbieranie danych wydajności z aplikacji JavaScript.<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.|  
-|**/noclr**|Opcjonalna. Nie zbieraj danych CLR.<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.<br /><br /> Optymalizacja, symboli zarządzanych, nie zostanie rozwiązany.|  
+|**/noclr**|Opcjonalny. Nie zbieraj danych CLR.<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.<br /><br /> Optymalizacja, symboli zarządzanych, nie zostanie rozwiązany.|  
 |**/listapps**|Lista zainstalowanych aplikacji, nazwy i PackageFullNames.|  
   
 ## <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikacje klasyczne systemu Windows 8 i tylko w aplikacji systemu Windows Server 2012  
@@ -62,7 +62,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |||  
 |-|-|  
 |**/ Dołącz: {identyfikator PID&#124;ProcessName} [, PID&#124;ProcessName]...**|Zbiera dane z określonych procesów.<br /><br /> Użyj Menedżera zadań, aby wyświetlić identyfikator procesu (PID) i nazwy działających aplikacji procesu.|  
-|**/file:{ReportName}**|Opcjonalna. Określa plik wyjściowy (zastąpi istniejący plik).<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.|  
+|**/ file:{ReportName}**|Opcjonalna. Określa plik wyjściowy (zastąpi istniejący plik).<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.|  
 |**/ pause**|Wstrzymaj zbieranie danych.|  
 |**/Resume**|Wznów zbieranie danych.|  
 |**/ stop**|Zatrzymaj zbieranie danych, a następnie Zakończ działanie procesów docelowych.|  

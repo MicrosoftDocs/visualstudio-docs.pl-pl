@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184374"
 ---
 # <a name="command-handling"></a>Obsługa poleceń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Edytor mogą definiować nowych poleceń. Polecenia są zwykle wyświetlane w me
 ## <a name="adding-commands-to-the-editor-context-menu"></a>Dodawanie poleceń do Menu kontekstowe edytora  
  Aby dodać polecenie do menu kontekstowego, należy najpierw zdefiniować zestaw poleceń menu należących do określonej grupy. Poniższy przykład pochodzi z pliku vsct wygenerowane jako część tego przewodnika [instruktażu: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
+ \<Menu identyfikator guid = "guidCustomEditorCmdSet" id = "IDMX_RTF" priorytet = "0x0000" type = "Kontekst" >  
   
  \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
   
- \<Strings>  
+ \<Ciągi >  
   
  \<ButtonText > Menu kontekstowe CustomEditor\</ButtonText >  
   
@@ -41,7 +41,7 @@ Edytor mogą definiować nowych poleceń. Polecenia są zwykle wyświetlane w me
   
  \</ Ciągi >  
   
- \</Menu>  
+ \</ Menu >  
   
  \</ Menu >  
   

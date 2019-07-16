@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904461"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143522"
 ---
 Narzędzie Web Deploy 3.6 dla serwerów do hostingu udostępnia funkcje dodatkowe czynności konfiguracyjne, które umożliwiają tworzenie pliku ustawień publikowania w interfejsie użytkownika.
 
@@ -18,7 +18,7 @@ Narzędzie Web Deploy 3.6 dla serwerów do hostingu udostępnia funkcje dodatkow
 
 3. Jeśli nie został jeszcze zainstalowany **narzędzia i skrypty zarządzania usługami IIS**, zainstalowanie go teraz.
 
-    Przejdź do **Wybieranie ról serwera** > **serwer sieci Web (IIS)** > **narzędzia do zarządzania**, a następnie wybierz pozycję **skrypty zarządzania usługami IIS Narzędzia i** roli, kliknij przycisk **dalej**, a następnie zainstaluj rolę.
+    Przejdź do **Wybieranie ról serwera** > **serwer sieci Web (IIS)**  > **narzędzia do zarządzania**, a następnie wybierz pozycję **skrypty zarządzania usługami IIS Narzędzia i** roli, kliknij przycisk **dalej**, a następnie zainstaluj rolę.
 
     ![Zainstaluj narzędzia i skrypty zarządzania usługami IIS](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
 
@@ -26,4 +26,4 @@ Narzędzie Web Deploy 3.6 dla serwerów do hostingu udostępnia funkcje dodatkow
 
 4. (Opcjonalnie) Sprawdź, czy narzędzie Web Deploy działa poprawnie, otwierając **Panel sterowania > System i Zabezpieczenia > Narzędzia administracyjne > usługi** i upewnij się, że **Usługa agenta wdrażania sieci Web** działa ( Nazwa usługi jest inny w starszych wersjach).
 
-    Jeśli nie jest uruchomiona usługa agenta, należy ją uruchomić. Jeśli nie ma go na wszystkich, przejdź do strony **Panel sterowania > programy > Odinstaluj program**, Znajdź **Microsoft Web Deploy \<wersji >**. Możliwość **zmiany** instalacji i upewnij się, że wybierasz **zostanie zainstalowana na lokalnym dysku twardym** składników Web Deploy. Wykonaj kroki instalacji zmiany.
+    Jeśli nie jest uruchomiona usługa agenta, należy ją uruchomić. Jeśli nie ma go na wszystkich, przejdź do strony **Panel sterowania > programy > Odinstaluj program**, Znajdź **Microsoft Web Deploy \<wersji >** . Możliwość **zmiany** instalacji i upewnij się, że wybierasz **zostanie zainstalowana na lokalnym dysku twardym** składników Web Deploy. Wykonaj kroki instalacji zmiany.

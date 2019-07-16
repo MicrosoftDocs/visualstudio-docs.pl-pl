@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160295"
 ---
-# <a name="saving-symbol-information-with-performance-data-files"></a>Zapisywanie informacji o symbolach w plików danych dotyczących wydajności
+# <a name="saving-symbol-information-with-performance-data-files"></a>Zapisywanie informacji o symbolach w plikach danych dotyczących wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Jeśli używasz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE) do przeanalizowania plików i planujesz przenoszenia pliku VSP na innym komputerze, należy ustawić wydajność ustawienia projektu, aby zapisać lub *serializacji* symboli w Plik raportu. Zwiększa rozmiar pliku raportu. Serializacja symboli jest dwóch powodów:  
@@ -60,7 +60,7 @@ Jeśli używasz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego śro
 ## <a name="repacking-symbols"></a>Przepakowaniu symboli  
  Jeśli chcesz ponownie spakować symboli do raportu, możesz to zrobić za pomocą narzędzia wiersza polecenia VsPerfReport. Użyj następujących wierszy polecenia:  
   
- VsPerfReport -clearpackedsymbols filename.vsp  
+ VsPerfReport — clearpackedsymbols filename.vsp  
   
  VsPerfReport — packsymbols-summary: all filename.vsp  
   

@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b800fbd2f39d75f110a059c70b87a203eb72e7d6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157674"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Instrukcje: Ustawianie nazw wątków w kodzie zarządzanym
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Instrukcje: Ustawianie nazwy wątku w kodzie zarządzanym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nazwy wątków jest możliwe w dowolnej wersji programu Visual Studio. Nazewnictwo wątku jest przydatne do śledzenia wątków w **wątków** okna. Ponieważ **wątków** okno nie jest dostępna w wersjach programu Visual Studio Express, wątek nazewnictwa ma niewielkie narzędzie w wersji Express.  

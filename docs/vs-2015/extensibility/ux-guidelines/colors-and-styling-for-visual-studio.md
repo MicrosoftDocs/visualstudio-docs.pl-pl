@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176961"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Pomocnik klasy i metody dla kodu zarządzanego
  Dla kodu zarządzanego Biblioteka środowiska pakietu zarządzanego powłoki (Microsoft.VisualStudio.Shell.12.0.dll) zawiera kilka klas pomocniczych, które umożliwia korzystanie z motywów kolorów.
 
- Metody pomocnicze w **Microsoft.VisualStudio.Shell.VsColors** zawierają klasy w MPF **GetThemedGDIColor()** i **GetThemedWPFColor()**. Tych metod pomocniczych zwraca wartość koloru motywu wpisu jako System.Drawing.Color lub System.Windows.Media.Color, ma być używany w WinForms lub WPF UI.
+ Metody pomocnicze w **Microsoft.VisualStudio.Shell.VsColors** zawierają klasy w MPF **GetThemedGDIColor()** i **GetThemedWPFColor()** . Tych metod pomocniczych zwraca wartość koloru motywu wpisu jako System.Drawing.Color lub System.Windows.Media.Color, ma być używany w WinForms lub WPF UI.
 
 ```
 IVsUIShell5 shell5;

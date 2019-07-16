@@ -13,11 +13,11 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177440"
 ---
 # <a name="using-and-providing-services"></a>Korzystanie z usług i dostarczanie ich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage 
  [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md)  
  Przedstawia informacje o ważnych elementów usługi Visual Studio.  
   
- [Instrukcje: Uzyskiwanie usługi](../extensibility/how-to-get-a-service.md)  
+ [Instrukcje: uzyskiwanie usługi](../extensibility/how-to-get-a-service.md)  
  W tym artykule omówiono sposób żądania (Używanie) usługi.  
   
- [Instrukcje: Oferuje usługi](../extensibility/how-to-provide-a-service.md)  
+ [Instrukcje: dostarczanie usługi](../extensibility/how-to-provide-a-service.md)  
  W tym artykule omówiono sposób zapewniania usług.  
   
- [Instrukcje: Zapewniają usługi asynchronicznego programu Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Instrukcje: dostarczanie asynchronicznej usługi programu Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  W tym artykule omówiono sposób obsługi asynchronicznego.  
   
- [Instrukcje: Rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md)  
+ [Instrukcje: rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md)  
  W tym artykule omówiono typowe problemy i przedstawia informacje o rozwiązaniach do nich.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180232"
 ---
 # <a name="process-view---contention-data"></a>Widok procesu — dane rywalizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147243"
 ---
 # <a name="blocking-time-profile-report"></a>Raport profilowania czasu blokowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Profilu, raportów Obejmij zagregowane dane czasu blokowania stosy wywołań, kt
 |Wystąpienia|Liczba wystąpień wywołania blokowania dla przedziału czasu widoczne.|  
 |Czas blokowania włącznych|Łączny czas spędzony na dla wszystkich stosów, które składają się na tym poziomie drzewo stosu wywołań blokowania. Numer (włącznie) jest sumą własny czas blokowania dla tej funkcji i wyłączny czas blokowania dla wszystkich jego węzłów podrzędnych.|  
 |Czas blokowania wyłącznych|Całkowity czas blokowania spędzonego w taki sposób, w której ta funkcja jest najniższy poziom stosu wywołań. Wpis stosu wywołań unikatowy, która ma wysoką własny czas blokowania może być funkcja zainteresowania.|  
-|API/Wait Category|Pokazano tylko dla funkcji na najniższym poziomie stosu wywołań. W przypadku, gdy zostanie rozpoznany podpis wywołania blokowania, znajduje się nazwa blokowania interfejsu API. Jeśli podpis nie zostanie rozpoznany, który jest zgłaszany przez jądro informacje.|  
+|Kategoria oczekiwania/API|Pokazano tylko dla funkcji na najniższym poziomie stosu wywołań. W przypadku, gdy zostanie rozpoznany podpis wywołania blokowania, znajduje się nazwa blokowania interfejsu API. Jeśli podpis nie zostanie rozpoznany, który jest zgłaszany przez jądro informacje.|  
 |Szczegóły|W pełni kwalifikowana nazwa funkcji. Obejmuje to liczba wierszy, gdy będzie ona dostępna.|  
   
 ### <a name="synchronization"></a>Synchronizacja  
