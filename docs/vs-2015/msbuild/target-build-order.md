@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144276"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

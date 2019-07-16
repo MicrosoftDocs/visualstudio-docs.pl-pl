@@ -10,11 +10,11 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 469478f05546a32bb890f759d3d00cb447b54d2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145895"
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Programowanie dla rozszerzenia Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

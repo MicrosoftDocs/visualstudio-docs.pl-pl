@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9cb81f17abd1e7891dc3f78a85d6d1276991f070
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145278"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,12 +33,12 @@ ms.locfileid: "54762998"
 |------------|-----------------|  
 |**/ Przykładowe** lub **/s**|Profile witryny sieci Web przy użyciu metody próbkowania. **/ Przykładowe** jest domyślną metodą. / Przykładowe nie można używać z **/Trace**.|  
 |**/ Trace** lub   **/t**|Profile witryny sieci Web przy użyciu metody instrumentacji. / Śledzenia nie można używać z **/Sample**.|  
-|**/ Pamięci**[**:**`Type`] lub **/m**[**:**{**a**&#124;**l**}]|Służą do profilowania alokacji pamięci i opcjonalnie profile czasów istnienia obiektów (wyrzucania elementów bezużytecznych). **/ Pamięci** mogą być używane z pobieranie próbek lub metody instrumentacji.<br /><br /> *Typ* może być jedną z następujących czynności:<br /><br /> -   **Alokacja** (lub **a**) zbiera tylko dane alokacji pamięci.<br />-   **okres istnienia** (lub **l**) zbiera dane okresu istnienia alokacji i obiektu pamięci.<br /><br /> Wartość domyślna `Type` jest **alokacji**.|  
+|**/ Pamięci**[ **:** `Type`] lub **/m**[ **:** {**a**&#124;**l**}]|Służą do profilowania alokacji pamięci i opcjonalnie profile czasów istnienia obiektów (wyrzucania elementów bezużytecznych). **/ Pamięci** mogą być używane z pobieranie próbek lub metody instrumentacji.<br /><br /> *Typ* może być jedną z następujących czynności:<br /><br /> -   **Alokacja** (lub **a**) zbiera tylko dane alokacji pamięci.<br />-   **okres istnienia** (lub **l**) zbiera dane okresu istnienia alokacji i obiektu pamięci.<br /><br /> Wartość domyślna `Type` jest **alokacji**.|  
 |**/ Porada** lub **/i**|Dodaje szczegółowe żądania programu ASP.NET i informacje o wywołaniach ADO.NET do danych profilowania. **/ Porada** mogą być używane z pobieranie próbek lub metody instrumentacji, i mogą być używane z **/Memory** opcji.|  
-|**/ Output:** `File` lub   **/o:**`File`|Określa ścieżkę i nazwę pliku danych (Vsp) profilowania.|  
+|**/ Output:** `File` lub   **/o:** `File`|Określa ścieżkę i nazwę pliku danych (Vsp) profilowania.|  
 |**/ NoWait** lub **/n**|Zwraca polecenie prompt natychmiast dzięki dodatkowe polecenia mogą być używane w oknie wiersza polecenia. Należy wpisać **polecenie VSPerfASPNETCmd/shutdown** w osobnym wierszu polecenia, aby wyłączyć profilowania.|  
-|**/PackSymbols**[:{**on**&#124;**off**}or   **/p**[:{**on**&#124;**off**}|Osadza symbole (nazwy funkcji i parametru itp.) w profilowania (.vsp) danych.|  
-|**/ Shutdown:** `Website`lub   **/d:**`Website`|Włącza profilowanie wyłączone. Użyj jako jedyną opcją, w wierszu polecenia po zakończeniu korzystania z **flagi/nowait** opcji do uruchomienia profilowania, lub jeśli program profilujący zakończy się nieoczekiwanie. Określ ten sam adres url, którego używano w oryginalnym **VSPerfASPNETCmd** polecenia.|  
+|**/ PackSymbols**[: {**na**&#124;**poza**} lub **/p**[: {**na**&#124;**poza**}|Osadza symbole (nazwy funkcji i parametru itp.) w profilowania (.vsp) danych.|  
+|**/ Shutdown:** `Website`lub   **/d:** `Website`|Włącza profilowanie wyłączone. Użyj jako jedyną opcją, w wierszu polecenia po zakończeniu korzystania z **flagi/nowait** opcji do uruchomienia profilowania, lub jeśli program profilujący zakończy się nieoczekiwanie. Określ ten sam adres url, którego używano w oryginalnym **VSPerfASPNETCmd** polecenia.|  
 |`Website`|Adres url witryny sieci Web do profilowania.|  
   
 ## <a name="see-also"></a>Zobacz też  

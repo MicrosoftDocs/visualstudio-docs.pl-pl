@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556414"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68147230"
 ---
 > [!WARNING]
 > Po włączeniu diagnostykę dla istniejącej roli wszystkie rozszerzenia, które zostały skonfigurowane są wyłączone, gdy pakiet jest wdrażany. Należą do nich następujące elementy:

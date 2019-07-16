@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkFrame::searchForReturnAddressStart | Microsoft Docs
+title: Idiastackwalkframe::searchforreturnaddressstart — | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2d34c4f10679d6f0702dead5352ddf088704b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150179"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,5 +49,5 @@ HRESULT searchForReturnAddressStart ( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
+ [Idiastackwalkframe —](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

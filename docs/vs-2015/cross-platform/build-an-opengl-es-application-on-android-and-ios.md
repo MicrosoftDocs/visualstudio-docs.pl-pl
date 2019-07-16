@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151169"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Tworzenie aplikacji OpenGL ES w systemach Android i iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Po zainstalowaniu Visual C++ for Cross-Platform Mobile Development opcji, można
   
 1. Otwórz program Visual Studio. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
   
-2. W **nowy projekt** dialogowego **szablony**, wybierz **Visual C++**, **Międzyplatformowe**, a następnie wybierz  **Aplikacja OpenGLES (Android, iOS)** szablonu.  
+2. W **nowy projekt** dialogowego **szablony**, wybierz **Visual C++** , **Międzyplatformowe**, a następnie wybierz  **Aplikacja OpenGLES (Android, iOS)** szablonu.  
   
 3. Nadaj aplikacji nazwę, takich jak `MyOpenGLESApp`, a następnie wybierz **OK**.  
   

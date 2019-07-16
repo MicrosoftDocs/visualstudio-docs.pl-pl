@@ -1,5 +1,5 @@
 ---
-title: VSPerfCmd | Microsoft Docs
+title: Narzędzia VSPerfCmd | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148219"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ VSPerfCmd [/U] [/options]
 |[Uruchom](../profiling/launch.md) **:** *pliku wykonywalnego*|Uruchamia określoną aplikację i rozpoczyna się profilowanie.|  
 |[Argumenty](../profiling/args.md) **:** *argumenty*|Określa argumenty wiersza polecenia do przekazania do uruchomionej aplikacji.|  
 |[Console](../profiling/console.md)|Uruchamia określone polecenie w nowym oknie wiersza polecenia.|  
-|[Dołącz](../profiling/attach.md) **:** *PID*[ **,** _PID_]|Rozpoczyna się profilowanie określonych procesów. Procesy można zidentyfikować za pomocą identyfikatora procesu lub nazwę procesu.|  
+|[Dołącz](../profiling/attach.md) **:** *IDENTYFIKATOR PID*[ **,** _PID_]|Rozpoczyna się profilowanie określonych procesów. Procesy można zidentyfikować za pomocą identyfikatora procesu lub nazwę procesu.|  
 |[Odłącz](../profiling/detach.md)[ **:** _PID_[,_PID_]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować za pomocą identyfikatora procesu lub nazwę procesu. Jeśli żaden proces nie zostanie określony, profilowanie zostało zatrzymane dla wszystkich procesów.|  
 |[GC](../profiling/gc-vsperfcmd.md)[ **:** {**alokacji**`&#124;`**okres istnienia**}]|Służy do zbierania danych pamięci .NET alokacji i obiekt okresu istnienia. Za pomocą tylko **VSPerfCmdLaunch** opcji.|  
   
@@ -89,7 +89,7 @@ VSPerfCmd [/U] [/options]
 |**Administrator:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Uruchamia, zatrzymuje, instaluje lub odinstalowuje składnik usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver).|  
 |**Administrator:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Włącza lub wyłącza automatyczne uruchamianie usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver) po ponownym uruchomieniu.|  
   
-## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
+## <a name="vsperfcmd-driver"></a>Driver/Driver narzędzia VSPerfCmd  
  **Driver/Driver narzędzia VSPerfCmd** opcja jest obecnie przestarzała. Użyj **VsPerfCmdAdmin** opcje dla tej funkcji.  
   
 ## <a name="see-also"></a>Zobacz też  

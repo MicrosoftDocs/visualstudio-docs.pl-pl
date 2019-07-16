@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0ee0ee9938ba2529afd7ea437c56761e1768e8cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756728"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68150012"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ HRESULT findChildrenEx ( 
  Ta metoda jest rozszerzona wersja [idiasymbol::findchildren —](../../debugger/debug-interface-access/idiasymbol-findchildren.md).  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2.h  
   
  Biblioteka: diaguids.lib  
   
  DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
  [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
  [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [Idiasession::findchildren —](../../debugger/debug-interface-access/idiasession-findchildren.md)   

@@ -11,11 +11,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd11e57c8e2ec03da1dcfa9ff76b3b3ec2ded5e9
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149304"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

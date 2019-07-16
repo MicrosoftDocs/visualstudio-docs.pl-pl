@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68141883"
 ---
 # <a name="function-details-view"></a>Widok szczegółów funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "54784473"
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Exclusive**|-Ilość metryki wydajności, który wystąpił podczas wykonywania treści funkcji.|  
+|**Wyłączne**|-Ilość metryki wydajności, który wystąpił podczas wykonywania treści funkcji.|  
 |**W wywołaniach**|-Ilość metryki wydajności, który wystąpił w funkcje, które wywołały wybranej funkcji.|  
 |**Całkowita (włącznie)**|— W sumie **wyłączne** i **wywołań w** wartości.|  
   
