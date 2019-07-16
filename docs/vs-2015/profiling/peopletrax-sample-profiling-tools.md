@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e8984f37709f0f24722ae65a04972f940e955ff9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195538"
 ---
 # <a name="peopletrax-sample-profiling-tools"></a>PeopleTrax Przykład (narzędzia profilowania)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

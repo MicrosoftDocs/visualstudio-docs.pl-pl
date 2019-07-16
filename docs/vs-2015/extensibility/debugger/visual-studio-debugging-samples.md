@@ -13,11 +13,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19144365a428fdde8915f481ce8d12841bddc003
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185266"
 ---
 # <a name="visual-studio-debugging-samples"></a>Przykłady debugowania w programie Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

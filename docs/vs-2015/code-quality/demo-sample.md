@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201434"
 ---
 # <a name="demo-sample"></a>Przykład
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Ten poniższe procedury pokazują, jak utworzyć przykład dla [instruktażu: An
   
 2. W **typów projektów** listy drzewa, jeśli program Visual C++ nie jest językiem domyślnym w programie VS rozwiń **inne języki**.  
   
-3. Rozwiń **Visual C++**, a następnie kliknij przycisk **ogólne**.  
+3. Rozwiń **Visual C++** , a następnie kliknij przycisk **ogólne**.  
   
 4. W **szablony**, kliknij przycisk **pusty projekt**.  
   
@@ -56,13 +56,13 @@ Ten poniższe procedury pokazują, jak utworzyć przykład dla [instruktażu: An
   
 3. W **ogólne** listy, zaznacz tekst w kolumnie obok **rozszerzenie docelowe**, a następnie wpisz **.lib**.  
   
-4. W **domyślne wartości projektu**, kliknij kolumnę **typu konfiguracji**, a następnie kliknij przycisk **biblioteki statycznej (lib)**.  
+4. W **domyślne wartości projektu**, kliknij kolumnę **typu konfiguracji**, a następnie kliknij przycisk **biblioteki statycznej (lib)** .  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Dodawanie pliku nagłówka i źródła do projektu CodeDefects  
   
 1. W Eksploratorze rozwiązań rozwiń **CodeDefects**, kliknij prawym przyciskiem myszy **pliki nagłówkowe**, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy element**.  
   
-2. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **kodu**, a następnie kliknij przycisk **plik nagłówka (.h)**.  
+2. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **kodu**, a następnie kliknij przycisk **plik nagłówka (.h)** .  
   
 3. W **nazwa** wpisz **Bug.cpp** a następnie kliknij przycisk **Dodaj**.  
   
@@ -170,13 +170,13 @@ Ten poniższe procedury pokazują, jak utworzyć przykład dla [instruktażu: An
   
 6. W **ogólne** listy, zaznacz tekst w kolumnie obok **rozszerzenie docelowe**, a następnie wpisz **.lib**.  
   
-7. W **domyślne wartości projektu**, kliknij kolumnę **typu konfiguracji**, a następnie kliknij przycisk **biblioteki statycznej (lib)**.  
+7. W **domyślne wartości projektu**, kliknij kolumnę **typu konfiguracji**, a następnie kliknij przycisk **biblioteki statycznej (lib)** .  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Dodaj plik nagłówkowy i plik źródłowy do projektu adnotacji  
   
 1. W Eksploratorze rozwiązań rozwiń **adnotacje**, kliknij prawym przyciskiem myszy **pliki nagłówkowe**, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy element**.  
   
-2. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **plik nagłówka (.h)**.  
+2. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **plik nagłówka (.h)** .  
   
 3. W **nazwa** wpisz **annotations.h** a następnie kliknij przycisk **Dodaj**.  
   

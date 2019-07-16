@@ -11,15 +11,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: b25272f38a12497201ddb79df04bad551ce99f74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962426"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68177590"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Edytor Visual Studio core (dołączone do programu Visual Studio Team Explorer 2017)
 
-**ID:** Microsoft.VisualStudio.Workload.CoreEditor
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.CoreEditor
 
 **Opis:** Visual Studio podstawowe funkcje powłoki, w tym kodu uwzględniającej składnię, edycji i kontroli kodu źródłowego i zarządzanie elementami roboczymi.
 

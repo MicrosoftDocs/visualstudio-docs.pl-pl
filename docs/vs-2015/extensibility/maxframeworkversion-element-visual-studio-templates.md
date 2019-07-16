@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a1c27e42574429dbb6b2eaeb140db484bf29db5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194327"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,5 +78,5 @@ Określa maksymalną wersję programu .NET Framework, która jest wymagana przez
  W tym przykładzie maksymalna wersja systemu .NET Framework, która jest wymagana przez szablon, reprezentowane przez `MaxFrameworkVersion`, to 3.5. Powyższego szablonu będą wyświetlane tylko po wybraniu 3.0 lub 3.5 w **wersji platformy docelowej** pole w **Dodaj nowy projekt** okno dialogowe.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

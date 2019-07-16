@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157884"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Instrukcje: Widok Otwórz komunikatów w Znajdź okno
+# <a name="how-to-open-messages-view-from-find-window"></a>Instrukcje: Otwieranie widoku komunikatów z poziomu okna Znajdowanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Może okazać się łatwe w użyciu **Znajdź okno** okno dialogowe, aby wybrać okno docelowego, a następnie otwórz widok komunikatów tego okna.  

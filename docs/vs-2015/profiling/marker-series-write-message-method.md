@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f759ea679af818d85dd365f5615ce4fc664df89a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200738"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message — Metoda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

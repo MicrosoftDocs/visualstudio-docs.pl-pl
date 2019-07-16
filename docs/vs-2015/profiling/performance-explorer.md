@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155508"
 ---
 # <a name="performance-explorer"></a>Eksplorator wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

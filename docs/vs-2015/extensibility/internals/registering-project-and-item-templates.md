@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185834"
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablonów projektów i elementów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
 |Nazwa|Typ|Opis|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Domyślna nazwa projektów tego rodzaju.|  
-|Nazwa wyświetlana|REG_SZ|Identyfikator zasobu o nazwie mają zostać pobrane satelitarną bibliotekę DLL jest zarejestrowany w ramach pakietów.|  
+|DisplayName|REG_SZ|Identyfikator zasobu o nazwie mają zostać pobrane satelitarną bibliotekę DLL jest zarejestrowany w ramach pakietów.|  
 |Package|REG_SZ|Identyfikator klasy pakiet, który został zarejestrowany w ramach pakietów.|  
 |ProjectTemplatesDir|REG_SZ|Domyślna ścieżka pliku szablonu projektu. Pliki szablonu projektu są wyświetlane przez **nowy projekt** szablonu.|  
   

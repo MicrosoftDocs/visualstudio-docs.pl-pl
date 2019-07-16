@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0690d37e90f910300f75880387a3f3ec44783206
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154929"
 ---
 # <a name="visual-studio-template-reference"></a>Odwołanie do szablonu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Poniższe łącza zawierają informacje na temat różnych aspektów [!INCLUDE[v
  <xref:Microsoft.VisualStudio.TemplateWizard> W tym artykule opisano <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu i powiązanych typów.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Instrukcje: Create Project Templates](../ide/how-to-create-project-templates.md)
+ [Instrukcje: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md)
 
- [Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)
+ [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
 
  [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
 

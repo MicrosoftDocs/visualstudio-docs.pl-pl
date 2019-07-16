@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188854"
 ---
 # <a name="code-snippets"></a>Wstawki kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ finally
   
 ```  
   
- Ten fragment kodu można wstawić, klikając **Wstaw fragment kodu** w menu kontekstowe okna kodu, następnie **Visual C#**, a następnie wpisz `tryf`, karty lub użytkownik może wpisać `tryf` i naciśnij klawisz TAB + TAB.  
+ Ten fragment kodu można wstawić, klikając **Wstaw fragment kodu** w menu kontekstowe okna kodu, następnie **Visual C#** , a następnie wpisz `tryf`, karty lub użytkownik może wpisać `tryf` i naciśnij klawisz TAB + TAB.  
   
  Przykład fragmentu kodu z funkcji Otocz przez: w języku C++ skrót `if` może służyć jako fragment wstawiania lub z funkcji Otocz przez fragment kodu. Jeśli wybierzesz wiersz kodu (na przykład `return FALSE;`), a następnie kliknij przycisk **Otocz**, następnie **Jeśli**, fragment kodu jest rozwinięty wokół linii:  
   

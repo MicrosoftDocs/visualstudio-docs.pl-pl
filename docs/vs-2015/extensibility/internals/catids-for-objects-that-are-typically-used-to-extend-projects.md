@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162083"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>Identyfikatory CATID obiektów, które są zwykle używane do rozszerzania projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 'DA0501: Średnie użycie Procesora przez profilowany proces. | Microsoft Docs'
+title: 'DA0501: Średnie użycie procesora przez profilowany proces | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,17 +14,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1462ac73e599b870f015a02998c069f7613be0ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155775"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Średnie użycie Procesora przez profilowany proces.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Średnie użycie procesora przez profilowany proces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA501|  
-|Category|Resource Monitoring|  
+Identyfikator reguły | DA501 |  
+| Kategoria | Monitorowanie zasobów |  
 | Metoda profilowania | Wszystkie |  
 | Komunikat | Średnie użycie procesora CPU przez proces poddawany profilowaniu. |  
 | Typ reguły | Informacji |  

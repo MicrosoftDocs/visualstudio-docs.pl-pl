@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1f9ea0c6f2eede11100a4956ef4c63b20c6fa9a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193569"
 ---
 # <a name="symbol-locations"></a>Lokalizacje symboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ Większość symbole mają określonej lokalizacji w pliku obrazu. Lokalizacja s
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)   
  [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
- [IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)   
- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)   
+ [Idiasymbol::get_bitposition —](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)   
+ [Idiasymbol::get_length —](../../debugger/debug-interface-access/idiasymbol-get-length.md)   
  [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
- [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)   
- [IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)   
- [IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)   
- [IDiaSymbol::get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
- [IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
- [IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
- [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
+ [Idiasymbol::get_offset —](../../debugger/debug-interface-access/idiasymbol-get-offset.md)   
+ [Idiasymbol::get_registerid —](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)   
+ [Idiasymbol::get_relativevirtualaddress —](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)   
+ [Idiasymbol::get_slot —](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
+ [Idiasymbol::get_token —](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
+ [Idiasymbol::get_value —](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
+ [Idiasymbol::get_virtualaddress —](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
  [Locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md)   
  [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

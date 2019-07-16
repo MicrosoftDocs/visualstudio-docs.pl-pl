@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165781"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Przewodnik: Wyświetlanie parowanych nawiasów klamrowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,4 +125,4 @@ Możesz zaimplementować opartych na języku funkcje, takie jak parowanie nawias
 4. Po umieszczeniu karetki przed otwierający nawias klamrowy, powinien być wyróżniony tego nawiasów i zamknij nawiasów. Gdy umieścisz kursor zaraz po Zamknij nawias klamrowy, powinien być wyróżniony tego nawiasów i otwierający nawias klamrowy dopasowania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

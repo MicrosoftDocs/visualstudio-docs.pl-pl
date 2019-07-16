@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158662"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Kosztowna funkcja GetHashCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0010: Ko
 |Identyfikator reguły|DA0010|  
 |Kategoria|Sposób użycia programu .NET framework|  
 |Metod profilowania|Próbkowania<br /><br /> Pamięć .NET|  
-|Komunikat|Funkcje GetHashCode powinny być tanie i nie alokować wszystkie pamięci. Mniejsza złożoność funkcji wartości skrótu, jeśli jest to możliwe.|  
+|Message|Funkcje GetHashCode powinny być tanie i nie alokować wszystkie pamięci. Mniejsza złożoność funkcji wartości skrótu, jeśli jest to możliwe.|  
 |Typ komunikatu|Ostrzeżenie|  
   
 ## <a name="cause"></a>Przyczyna  

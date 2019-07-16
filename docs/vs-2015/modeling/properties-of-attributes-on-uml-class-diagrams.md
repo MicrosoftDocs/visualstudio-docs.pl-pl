@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154863"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Właściwości atrybutów w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Na diagramie klas UML, można dodać *atrybuty* do klasy i interfejsy. Atrybut d
 |    **Jest typu liść**    |    False     |                                                                                                                                                                    W przypadku opcji true go nie ma umożliwić ponowna definicja tego atrybutu w typach pochodnych.                                                                                                                                                                     |
 |  **Jest tworzony**   |    False     |                                                                                                              W przypadku opcji true ten atrybut jest obliczany od innych atrybutów. Na przykład po przekątnej, obliczana na podstawie szerokości i wysokości. Szczegółowe informacje, należy napisać w **opis** lub dołączonego komentarza.                                                                                                              |
 |  **Opis**  |   (pusty)    |                                                                                                                                                                        Aby uzyskać ogólne informacje o lub do definiowania ograniczeń na podstawie wartości w atrybucie.                                                                                                                                                                        |
-| **Liczebność**  |      1       | **1** — ten atrybut ma pojedynczą wartość dla określonego typu.<br /><br /> **od 0 do 1** — ten atrybut może mieć wartość `null`.<br /><br /> **\\**\* -wartość tego atrybutu to zbiór wartości.<br /><br /> **1..\\**  \* — wartość tego atrybutu jest kolekcja, która zawiera co najmniej jedną wartość.<br /><br /> *n* **...** *m* — wartość tego atrybutu jest kolekcja, która zawiera między *n* i *m* wartości. |
+| **Liczebność**  |      1       | **1** — ten atrybut ma pojedynczą wartość dla określonego typu.<br /><br /> **od 0 do 1** — ten atrybut może mieć wartość `null`.<br /><br /> **\\** \* -wartość tego atrybutu to zbiór wartości.<br /><br /> **1..\\**  \* — wartość tego atrybutu jest kolekcja, która zawiera co najmniej jedną wartość.<br /><br /> *n* **...** *m* — wartość tego atrybutu jest kolekcja, która zawiera między *n* i *m* wartości. |
 |  **Jest uporządkowany**   |    False     |                                                                                                                                                                    W przypadku opcji true kolekcji formularzy uporządkowanej listy. Aby uzyskać **liczebność** więcej niż 1.                                                                                                                                                                     |
 |   **Jest unikatowa**   |    False     |                                                                                                                                                                W przypadku opcji true istnieją zduplikowane wartości w kolekcji. Aby uzyskać **liczebność** więcej niż 1.                                                                                                                                                                |
 

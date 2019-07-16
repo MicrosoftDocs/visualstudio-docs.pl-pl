@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03fd9b6fd794320faf76119616900b79d5bf4333
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187858"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008: Kilka zebranych próbek
+# <a name="da0008-few-samples-collected"></a>DA0008: Zebrano kilka próbek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0008|  
+Identyfikator reguły | DA0008 |  
 | Kategoria | Profilowanie użycia narzędzia |  
 | Metoda profilowania | Próbkowanie |  
 | Komunikat | Zebrano tylko kilka przykładów. Należy wziąć pod uwagę dłużej przebiegu lub zwiększenie częstotliwości próbkowania dla uzyskania bardziej znaczących wyników. |  

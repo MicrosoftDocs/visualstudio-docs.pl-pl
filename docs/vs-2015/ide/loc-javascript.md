@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186100"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;Lokalizacja&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Określa lokalizację i typ pliku sidecar, który zawiera zlokalizowane informac
   
 #### <a name="parameters"></a>Parametry  
  `filename`  
- Opcjonalna. Nazwa głównego pliku sidecar, który zawiera informacje o lokalizacji dla kultury neutralnej. Gdy program Visual Studio wyszukuje informacji o lokalizacji, próbuje znaleźć wersji kulturowych tego pliku. Na przykład jeśli `filename` jest jquery.xml, Visual Studio wyszukuje poprawnego folderu specyficzne dla kultury (na przykład Japonia) w tej samej lokalizacji co plik .js, który zawiera `<loc>` elementu. Klient zlokalizuje folderu specyficzne dla kultury, sprawdza, czy istnieje plik jquery.xml w nim. Jeśli nie może odnaleźć prawidłowego pliku, zamiast tego używa zasady lokalizacji zasobów zarządzanych. Wartością domyślną dla `filename` jest nazwa bieżącego pliku, ale z rozszerzeniem .xml zamiast js.  
+ Opcjonalny. Nazwa głównego pliku sidecar, który zawiera informacje o lokalizacji dla kultury neutralnej. Gdy program Visual Studio wyszukuje informacji o lokalizacji, próbuje znaleźć wersji kulturowych tego pliku. Na przykład jeśli `filename` jest jquery.xml, Visual Studio wyszukuje poprawnego folderu specyficzne dla kultury (na przykład Japonia) w tej samej lokalizacji co plik .js, który zawiera `<loc>` elementu. Klient zlokalizuje folderu specyficzne dla kultury, sprawdza, czy istnieje plik jquery.xml w nim. Jeśli nie może odnaleźć prawidłowego pliku, zamiast tego używa zasady lokalizacji zasobów zarządzanych. Wartością domyślną dla `filename` jest nazwa bieżącego pliku, ale z rozszerzeniem .xml zamiast js.  
   
  `format`  
  Opcjonalna. Typ pliku sidecar używane dla lokalizacji. Użyj `messagebundle` Aby określić pakiety komunikat zdefiniowany przez metadane Otwórz Ajax. `messagebundle` jest to zalecany format. Jednak ten format nie jest obsługiwany w Microsoft Ajax lub pliki .winmd. Użyj `vsdoc` do określenia standardowym formacie lokalizacji środowiska .NET Framework, który jest używany przez Microsoft Ajax i środowiska wykonawczego Windows. Ten atrybut jest opcjonalny. `vsdoc` jest to format domyślny.  

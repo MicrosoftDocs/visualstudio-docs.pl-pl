@@ -29,13 +29,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185485"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze internetowym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas debugowania aplikacji ASP.NET uruchomionych na serwerze sieci Web, może pojawić się ten komunikat o błędzie: Nie można rozpocząć debugowania na serwerze sieci Web.

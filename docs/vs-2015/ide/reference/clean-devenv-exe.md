@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e1c32e062cf2a5406f235133fb646a16d21707cb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59646792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190407"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  `FileName`  
  Wymagana. Pełna ścieżka i nazwa pliku rozwiązania lub pliku projektu.  
   
- /project `ProjName`  
- Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.  
+ / Project `ProjName`  
+ Opcjonalny. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.  
   
  / projectconfig `ProjConfigName`  
- Opcjonalna. Nazwa projektu kompilacji konfiguracji, który będzie używany podczas czyszczenia `/project` o nazwie.  
+ Opcjonalny. Nazwa projektu kompilacji konfiguracji, który będzie używany podczas czyszczenia `/project` o nazwie.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta opcja wykonuje taką samą funkcję jak **czyste rozwiązanie** polecenia menu w ramach zintegrowanego środowiska programistycznego (IDE).  

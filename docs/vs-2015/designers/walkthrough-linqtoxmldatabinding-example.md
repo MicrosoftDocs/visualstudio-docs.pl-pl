@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 379c95e4de7831c833d8d82d48643a9da10be323
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187481"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>Przewodnik: LinqToXmlDataBinding Example
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Przewodnik: LinqToXmlDataBinding — przykład
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten przewodnik zawiera opis elementu linqtoxmldatabinding — przykład i omówiono bardziej interesującej zawartości jego dwa pliki podstawowego źródła L2DBForm.xaml i L2DBForm.xaml.cs.  
@@ -50,4 +50,4 @@ Ten przewodnik zawiera opis elementu linqtoxmldatabinding — przykład i omówi
   
 ## <a name="see-also"></a>Zobacz też  
  [Powiązanie danych WPF za pomocą LINQ to XML — przykład](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
- [Instrukcje: Kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+ [Instrukcje: kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

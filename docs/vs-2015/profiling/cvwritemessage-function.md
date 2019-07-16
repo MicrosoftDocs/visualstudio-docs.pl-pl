@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6a364498306758f8c2f01de741aed50166cc8f4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202238"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage — Funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ HRESULT CvWriteMessageExVA(
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** cvmarkers.h  
   
- **Unicode:** CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW  
+ **Unicode:** Cvwritemessagew —, cvwritemessageexvw — cvwritemessagevw —, cvwritemessageexw —,  
   
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA  
   

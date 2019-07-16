@@ -13,11 +13,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188835"
 ---
 # <a name="registering-a-legacy-language-service"></a>Rejestrowanie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Poniższe sekcje zawierają listę wpisów rejestru dla różnych języków opcj
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
 |(Domyślnie)|REG_SZ|*\<GUID>*|Identyfikator GUID usługi języka.|  
-|LangResID|REG_DWORD|0x0-0xffff|Ciąg identyfikatora zasobów (ResID) dla nazwy języka zlokalizowanego tekstu.|  
+|LangResID|REG_DWORD|0x0 0xffff|Ciąg identyfikatora zasobów (ResID) dla nazwy języka zlokalizowanego tekstu.|  
 |Package|REG_SZ|*\<GUID>*|Identyfikator GUID pakietu VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Określa, czy **uzupełniania instrukcji** opcji na liście **opcje** okno dialogowe są włączone.|  
 |ShowSmartIndent|REG_DWORD|0-1|Określa, czy możliwość dokonania wyboru **inteligentne** wcięcia w **opcje** okno dialogowe jest włączona.|  
@@ -88,8 +88,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
 |(Domyślnie)|REG_SZ|Atrybut resID|Zlokalizowana wyświetlana nazwa ta strona opcji. Nazwa może zawierać tekst dosłowny lub #`nnn`, gdzie `nnn` jest identyfikator zasobu ciągu w towarzyszącej bibliotece DLL z określonego pakietu VSPackage.|  
-|Package|REG_SZ|*GUID*|Identyfikator GUID pakietu VSPackage, który implementuje ta strona opcji.|  
-|Strona|REG_SZ|*GUID*|Identyfikator GUID strony właściwości, do żądania z pakietu VSPackage, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metody. Jeśli tego wpisu rejestru nie jest obecny, klucz rejestru w tym artykule opisano węzła nie strony.|  
+|Package|REG_SZ|*IDENTYFIKATOR GUID*|Identyfikator GUID pakietu VSPackage, który implementuje ta strona opcji.|  
+|Strona|REG_SZ|*IDENTYFIKATOR GUID*|Identyfikator GUID strony właściwości, do żądania z pakietu VSPackage, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metody. Jeśli tego wpisu rejestru nie jest obecny, klucz rejestru w tym artykule opisano węzła nie strony.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -121,7 +121,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|*GUID*|Identyfikator GUID usługi Usługa języka domyślnego dla tego typu rozszerzenia nazwy pliku.|  
+|(Domyślnie)|REG_SZ|*IDENTYFIKATOR GUID*|Identyfikator GUID usługi Usługa języka domyślnego dla tego typu rozszerzenia nazwy pliku.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -140,7 +140,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|  
 |(Domyślnie)|REG_SZ|""|Nieużywane; Możesz umieścić swoją nazwę, w tym miejscu dla dokumentacji.|  
 |DefaultToolboxTab|REG_SZ|""|Nazwa na karcie przybornika, aby ustawić domyślną, gdy edytora jest aktywny.|  
-|Nazwa wyświetlana|REG_SZ|Atrybut resID|Nazwa do wyświetlenia w **Otwórz za pomocą** okno dialogowe. Nazwa jest identyfikator ciągu zasobu lub nazwę formatu standardowego.|  
+|DisplayName|REG_SZ|Atrybut resID|Nazwa do wyświetlenia w **Otwórz za pomocą** okno dialogowe. Nazwa jest identyfikator ciągu zasobu lub nazwę formatu standardowego.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Używany do **Otwórz za pomocą** polecenia menu. Jeśli chcesz wyświetlić listę domyślnego edytora tekstu, na liście dostępnych edytorów dla określonego typu pliku, ta wartość 1.|  
 |LinkedEditorGUID|REG_SZ|*\<GUID>*|Używane dla dowolnej usługi języka, który można otworzyć pliku z obsługą stronę kodową. Na przykład po otwarciu pliku txt przy użyciu **Otwórz za pomocą** polecenia i opcje są dostarczane do Edytor kodu źródłowego za pomocą oraz bez kodowania.<br /><br /> GUID określony nazwę podklucza który jest stroną kodową fabryki edytora; połączone GUID określony tego wpisu rejestru to fabryki edytora regularne. Celem tego wpisu jest, że jeśli IDE nie można otworzyć pliku przy użyciu domyślnego edytora, IDE podejmie próbę użycia edytora dalej na liście. Ten edytor dalej nie powinien być fabryka edytora strony kodowej, ponieważ tej fabryki edytora jest zasadniczo taki sam jak fabryka edytora, który uległ awarii.|  
 |Package|REG_SZ|*\<GUID>*|Identyfikator GUID pakietu VSPackage ResID nazwę wyświetlaną.|  

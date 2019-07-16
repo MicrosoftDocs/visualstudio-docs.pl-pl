@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData | Microsoft Docs
+title: Idiaenumframedata — | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b3e2436d4b4eed6ac86591821090c89a538e06b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190783"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -104,11 +104,11 @@ void ShowFrameData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** Dia2.h  
+ **Nagłówek:** dia2.h  
   
  **Biblioteka:** diaguids.lib  
   
- **DLL:** msdia80.dll  
+ **Biblioteka DLL:** msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

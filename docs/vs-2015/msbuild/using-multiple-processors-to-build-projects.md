@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192855"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Używanie wielu procesorów w projektach kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186268"
 ---
 # <a name="how-to-update-existing-templates"></a>Instrukcje: Aktualizowanie istniejących szablonów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Po utworzeniu szablonu i Kompresuj pliki w pliku zip, można zmodyfikować szabl
   
 4. Otwierać, modyfikować i Zapisz plik .vstemplate XML do obsługi zachowanie zaktualizowane lub nowe pliki. Aby uzyskać więcej informacji na temat schematu .vstemplate, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md). Aby uzyskać więcej informacji na temat co można sparametryzować w plikach źródłowych, zobacz [parametry szablonu](../ide/template-parameters.md)  
   
-5. Wybierz pliki do szablonu, kliknij prawym przyciskiem myszy, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Wybrane pliki są kompresowane w pliku zip.  
+5. Wybierz pliki do szablonu, kliknij prawym przyciskiem myszy, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)** . Wybrane pliki są kompresowane w pliku zip.  
   
 6. W tym samym katalogu co stary plik zip, należy umieścić nowy plik zip.  
   
@@ -66,6 +66,6 @@ Po utworzeniu szablonu i Kompresuj pliki w pliku zip, można zmodyfikować szabl
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Parametry szablonu](../ide/template-parameters.md)   
  [Instrukcje: Tworzenie pakietów startowych](../ide/how-to-create-starter-kits.md)

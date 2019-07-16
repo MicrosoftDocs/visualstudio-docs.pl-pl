@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194078"
 ---
 # <a name="parent-element"></a>Element nadrzędny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,8 +36,8 @@ Element nadrzędny przycisk lub pola kombi mogą być tylko grupy. Nadrzędny me
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagana. Identyfikator polecenia dla identyfikatora GUID/identyfikator GUID.|  
-|identyfikator|Wymagana. Identyfikator polecenia identyfikator GUID/ID.|  
+|Identyfikator GUID|Wymagane. Identyfikator polecenia dla identyfikatora GUID/identyfikator GUID.|  
+|identyfikator|Wymagane. Identyfikator polecenia identyfikator GUID/ID.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak  

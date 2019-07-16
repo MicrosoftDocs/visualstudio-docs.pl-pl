@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156529"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Wystąpił błąd modelu DCOM podczas próby skontaktowania się z komputerem zdalnym. Odmowa dostępu.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Zdalne debugowanie używa modelu DCOM do komunikacji między komputerami lokalny
   
 - Debuger jest ustawiona na **macierzysty tryb zgodności** lub **trybu zgodności zarządzanej** jest zaewidencjonowany **narzędzia / Opcje / Debugowanie** strony  
   
-- Debugowany zarządzany kod C++ (C + +/ CLI) kod.  
+- Debugowania zarządzanego C++ (C++sposób niezamierzony) kod.  
   
 - W programie Visual Studio 2013 gdy **Włączanie natywnego Edytuj i Kontynuuj** jest zaewidencjonowany **narzędzia / Opcje / Debugowanie** strony  
   

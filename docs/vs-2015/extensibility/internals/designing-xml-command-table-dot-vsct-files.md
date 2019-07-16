@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196848"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Projektowanie tabeli poleceń XML (. Pliki Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -119,7 +119,7 @@ Pliku XML polecenia tabeli (vsct) opisano układ i wygląd elementów polecenia 
   
  Podczas tworzenia aplikacji możliwe jest dla wielu projektów pakietu VSPackage zostać utworzona i zarejestrowana w gałęzi rejestru eksperymentalnych, który może prowadzić do mylące nieładu w IDE. Aby rozwiązać ten problem, możesz zresetować eksperymentalne gałęzi do domyślnych ustawień do usuwania wszystkich zarejestrowanych pakietów VSPackage i wszelkie zmiany, które mogły zostać wprowadzone do środowiska IDE. Aby zresetować eksperymentalne hive, narzędzie CreateExpInstance.exe dostarczanego z Visual Studio SDK. Można znaleźć na stronie  
   
- **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
+ **% PROGRAMFILES (x 86) %\Visual Studio \<wersji > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
   
  Uruchom narzędzie przy użyciu wiersza polecenia **/reset CreateExpInstance**. Należy pamiętać, że to narzędzie spowoduje usunięcie z doświadczalnych hive wszystkie zarejestrowane, nie jest zainstalowane przy użyciu pakietów VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   

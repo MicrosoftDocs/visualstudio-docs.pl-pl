@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180327"
 ---
 # <a name="keybinding-element"></a>KeyBinding, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ KeyBinding, element określa skróty klawiaturowe dla poleceń.
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |Identyfikator GUID|Wymagana.|  
-|identyfikator|Wymagana.|  
-|edytor|Wymagana. Identyfikator GUID edytora wskazuje Kontekst edycyjny, dla którego ten skrót klawiaturowy zostanie uaktywniona. Wartość zakresu globalnego powiązania jest "guidVSStd97".|  
-|key1|Wymagana. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i VK_constants.|  
-|mod1|Opcjonalna. Dowolna kombinacja CTRL, ALT i SHIFT, rozdzielone spacjami.|  
-|key2|Opcjonalna. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i VK_constants.|  
+|identyfikator|Wymagany.|  
+|edytor|Wymagane. Identyfikator GUID edytora wskazuje Kontekst edycyjny, dla którego ten skrót klawiaturowy zostanie uaktywniona. Wartość zakresu globalnego powiązania jest "guidVSStd97".|  
+|klucz1|Wymagane. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i VK_constants.|  
+|mod1|Opcjonalny. Dowolna kombinacja CTRL, ALT i SHIFT, rozdzielone spacjami.|  
+|key2|Opcjonalny. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i VK_constants.|  
 |mod2|Opcjonalna. Dowolna kombinacja CTRL, ALT i SHIFT, rozdzielone spacjami.|  
 |Emulator|Opcjonalna.|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
