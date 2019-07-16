@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8398f07cf6fa6bd2702b2d84ab0d29dcd614ed32
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157800"
 ---
 # <a name="replace-in-files-command"></a>Zastąp w plikach — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
   
 ## <a name="arguments"></a>Argumenty  
  `findwhat`  
- Wymagana. Tekst do dopasowania.  
+ Wymagany. Tekst do dopasowania.  
   
  `replacewith`  
  Wymagana. Tekst do podstawienia w dopasowany tekst.  
@@ -50,19 +50,19 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  Opcjonalna. Dopasowuje występują tylko wtedy, gdy po wielkich i małych liter dokładnie odpowiadać określone w `findwhat` argumentu.  
   
  /ext: `extensions`  
- Opcjonalna. Określa rozszerzenia plików dla plików do przeszukania.  
+ Opcjonalny. Określa rozszerzenia plików dla plików do przeszukania.  
   
  /Keep lub /k  
- Opcjonalna. Określa, że wszystkie zmodyfikowane pliki są pozostawione otwarte.  
+ Opcjonalny. Określa, że wszystkie zmodyfikowane pliki są pozostawione otwarte.  
   
  /lookin: `searchpath`  
- Opcjonalna. Katalog do przeszukania. Jeśli ścieżka zawiera spacje, należy ująć w znaki cudzysłowu pełną ścieżkę.  
+ Opcjonalny. Katalog do przeszukania. Jeśli ścieżka zawiera spacje, należy ująć w znaki cudzysłowu pełną ścieżkę.  
   
  / Options lub/t  
- Opcjonalna. Wyświetla listę bieżących ustawień opcji wyszukiwania, a nie wyszukiwania.  
+ Opcjonalny. Wyświetla listę bieżących ustawień opcji wyszukiwania, a nie wyszukiwania.  
   
  /regex lub/r  
- Opcjonalna. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji, które reprezentują wzorców tekstu, a nie jako znaki literału. Aby uzyskać pełną listę znaki wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).  
+ Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji, które reprezentują wzorców tekstu, a nie jako znaki literału. Aby uzyskać pełną listę znaki wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).  
   
  / Reset i/e  
  Opcjonalna. Zwraca opcje wyszukiwania do ustawień domyślnych, a nie wyszukiwania.  
@@ -81,10 +81,10 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  Opcjonalna. Wyświetla wyniki zastąpienia w **Znajdź wyniki 2** okna.  
   
  /Wild lub/l  
- Opcjonalna. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji do reprezentowania znaku lub sekwencji znaków.  
+ Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji do reprezentowania znaku lub sekwencji znaków.  
   
  opcji lub Wn  
- Opcjonalna. Wyszukiwanie tylko całe wyrazy.  
+ Opcjonalny. Wyszukiwanie tylko całe wyrazy.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie wyszukuje `btnCancel` i zastępuje go tekstem `btnReset` w .cls wszystkie pliki znajdujące się w folderze "Moje projekty programu visual studio" i wyświetla informacje dotyczące zastępowania w **Znajdź wyniki 2** okna.  

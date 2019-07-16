@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159624"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ A *dekoratora* jest ikona albo wiersz tekstu, który pojawia się na kształcie 
   
 1. Dodaj właściwość domeny obliczeniowej do klasy domeny. W **właściwości** okna, ustaw następujące wartości:  
   
-     **IsBrowsable =**`False`**— spowoduje to ukrycie właściwości użytkownika**  
+     **IsBrowsable =** `False` **— spowoduje to ukrycie właściwości użytkownika**  
   
-     **Rodzaj =**`Calculated`**— oznacza to, że zapewni kod, który oblicza swoją wartość**  
+     **Rodzaj =** `Calculated` **— oznacza to, że zapewni kod, który oblicza swoją wartość**  
   
      **Nazwa** na przykład **DecoratorControl**  
   

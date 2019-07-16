@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e8910109720733439f05f52cb5afaf340198902
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148079"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>Właściwości dynamiczne klasy XAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

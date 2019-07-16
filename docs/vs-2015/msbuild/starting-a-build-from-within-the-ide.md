@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94685a2b06b14c232d9e1f79a1d7440e1ceb765b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161342"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Uruchamianie kompilacji w środowisku IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Niestandardowe systemy projektu muszą używać <xref:Microsoft.VisualStudio.She
   
  Jeśli system projektu modyfikuje zmienne środowiskowe, jego musi ustawić NodeAffinity kompilacji outofproc. Oznacza to, że nie można używać obiektów hosta, ponieważ wymagają one węzła w proc.  
   
-## <a name="using-ivsbuildmanageraccessor"></a>Using IVSBuildManagerAccessor  
+## <a name="using-ivsbuildmanageraccessor"></a>Przy użyciu IVSBuildManagerAccessor  
  Poniższy kod przedstawia metodę, którą system projektu może użyć do uruchomienia kompilacji:  
   
 ```  

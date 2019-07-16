@@ -12,13 +12,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d79281e2fef6a7ae77a2ba6c8375f47dc6520b3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155978"
 ---
-# <a name="test-area-5-change-source-control"></a>Obszar testowy 5: Zmień kontrolę źródła
+# <a name="test-area-5-change-source-control"></a>Obszar testowy 5: zmiana kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła, za pośrednictwem **Zmień kontrolę źródła** polecenia.  

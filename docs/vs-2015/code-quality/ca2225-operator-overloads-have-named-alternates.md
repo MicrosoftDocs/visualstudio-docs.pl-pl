@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201616"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Przeciążenia operatorów mają nazwane elementy alternatywne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "54786583"
 |+ (binarnych)|+|+ (binarnych)|Dodaj|
 |+=|+=|+=|Dodaj|
 |&|Oraz|&|BitwiseAnd|
-|&=|And=|&=|BitwiseAnd|
+|&=|I =|&=|BitwiseAnd|
 |&#124;|Lub|&#124;|BitwiseOr|
 |&#124;=|Lub =|&#124;=|BitwiseOr|
 |--|Brak|--|Dekrementacja|
@@ -53,7 +53,7 @@ ms.locfileid: "54786583"
 |/=|/=|/=|Dzielenie|
 |==|=|==|Równa się|
 |^|XOR|^|XOR|
-|^=|Xor=|^=|XOR|
+|^=|XOR =|^=|XOR|
 |>|>|>|{1&gt;Compare&lt;1}|
 |>=|>=|>=|{1&gt;Compare&lt;1}|
 |++|Brak|++|Inkrementacja|
@@ -75,8 +75,8 @@ ms.locfileid: "54786583"
 |-(binarnych)|-(binarnych)|-(binarnych)|Odejmowanie|
 |-=|Brak|-=|Odejmowanie|
 |true|IsTrue|Brak|IsTrue (właściwość)|
-|-(jednoargumentowy)|Brak|-|Negate|
-|+ (jednoargumentowy)|Brak|+|Plus|
+|-(jednoargumentowy)|Brak|-|negate —|
+|+ (jednoargumentowy)|Brak|+|znak plus|
 |false|IsFalse|False|IsTrue (właściwość)|
 
  N/d == nie mogą być przeciążone w wybranym języku.

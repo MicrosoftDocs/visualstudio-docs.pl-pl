@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202251"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Użyj klasy StringBuilder do konkatenacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0001: U�
 |Identyfikator reguły|DA0001|  
 |Kategoria|Sposób użycia programu .NET framework|  
 |Metod profilowania|Próbkowania<br /><br /> Oprzyrządowanie|  
-|Komunikat|Należy wziąć pod uwagę przy użyciu klasy StringBuilder do konkatenacji ciągów|  
+|Message|Należy wziąć pod uwagę przy użyciu klasy StringBuilder do konkatenacji ciągów|  
 |Typ komunikatu|Ostrzeżenie|  
   
 ## <a name="cause"></a>Przyczyna  

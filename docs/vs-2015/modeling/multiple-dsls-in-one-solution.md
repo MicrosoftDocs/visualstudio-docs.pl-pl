@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159013"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Wiele języków DSL w jednym rozwiązaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Można spakować kilka języków DSL w ramach jednego rozwiązania, tak, aby zai
   
 2. Łączenie języków DSL manifesty VSIX:  
   
-   1. Otwórz _YourVsixProject_**\source.extension.manifest**.  
+   1. Otwórz _YourVsixProject_ **\source.extension.manifest**.  
   
    2. Dla każdego języka DSL, wybierz **Dodaj zawartość** i Dodaj:  
   
@@ -59,7 +59,7 @@ Można spakować kilka języków DSL w ramach jednego rozwiązania, tak, aby zai
   
 3. Skompiluj rozwiązanie.  
   
-   Wynikowy VSIX zainstaluje zarówno językami DSL. Można je przetestować, naciskając klawisz F5 lub wdrożyć _YourVsixProject_**\bin\Debug\\\*.vsix**.  
+   Wynikowy VSIX zainstaluje zarówno językami DSL. Można je przetestować, naciskając klawisz F5 lub wdrożyć _YourVsixProject_ **\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

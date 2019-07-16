@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156322"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Instrukcje: Stosowanie cieniowania do modelu 3-D
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Instrukcje: Stosowanie cieniowania do modelu 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie przedstawiono sposób stosowanie cieniowania kierowane wykres modułu cieniującego języka (DGSL) do modelu 3D za pomocą edytora modelu.  
@@ -40,7 +40,7 @@ W tym dokumencie przedstawiono sposób stosowanie cieniowania kierowane wykres m
   
    ![3&#45;scen D, które przedstawiono efekt kolor podstawowy](../designers/media/digit-3d-model-effect.png "cyfrę 3D — Model-efektu")  
   
-   Po zastosowaniu cieniowania do modelu, możesz go otworzyć w projektancie programu do cieniowania, wybierając modelu, a następnie w **właściwości** okna w **(zaawansowane)** właściwość **efekt**grupy właściwości, wybierając wielokropek (**...** ) przycisku.  
+   Po zastosowaniu cieniowania do modelu, możesz go otworzyć w projektancie programu do cieniowania, wybierając modelu, a następnie w **właściwości** okna w **(zaawansowane)** właściwość **efekt**grupy właściwości, wybierając wielokropek ( **...** ) przycisku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md)   

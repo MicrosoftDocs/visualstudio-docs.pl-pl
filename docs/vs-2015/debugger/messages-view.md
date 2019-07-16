@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157491"
 ---
 # <a name="messages-view"></a>Widok komunikatów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Każde okno ma strumienia skojarzonych komunikatów. Okno widoku komunikatów wy
   
  Typowe okno widoku komunikatów pojawia się poniżej. Pamiętaj, że pierwsza kolumna zawiera uchwyt okna, a druga kolumna zawiera kod komunikatu (wyjaśnione w [kody komunikatów](../debugger/message-codes.md)). Zdekodowany komunikat parametrów i zwracanych wartości są po prawej stronie.  
   
- ![Spy&#43;&#43; Messages View](../debugger/media/spy-messagesview.png "Spy++_MessagesView")  
+ ![Szpieguj&#43; &#43; widoku komunikatów](../debugger/media/spy-messagesview.png "Spy ++ _MessagesView")  
 Widok komunikatów programu Spy ++  
   
 ## <a name="procedures"></a>Procedury  

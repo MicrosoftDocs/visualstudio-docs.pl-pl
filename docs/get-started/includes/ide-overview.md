@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952619"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68148384"
 ---
 Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konsola uruchamianie służy do edytowania, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debugera, większości środowisk IDE podać, program Visual Studio obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i wiele innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 
@@ -23,7 +23,7 @@ Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konso
 
 ::: moniker range="vs-2019"
 
-[![](../media/vs-2019/ide-overview.png "Visual Studio IDE")](../media/vs-2019/ide-overview.png#lightbox)
+[![Visual Studio IDE 2019 r](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -197,7 +197,7 @@ Przyjrzyjmy się temu bliżej i Utwórz prosty program.
 
    ![Debuguj > Uruchom bez debugowania menu](../media/overview-start-without-debugging.png)
 
-   Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!**. Masz teraz uruchomionej aplikacji.
+   Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!** . Masz teraz uruchomionej aplikacji.
 
    ![Okno konsoli](../media/overview-console-window.png)
 
@@ -266,7 +266,7 @@ Przyjrzyjmy się temu bliżej i Utwórz prosty program.
 
    ![Debuguj > Uruchom bez debugowania menu](../media/overview-start-without-debugging.png)
 
-   Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!**. Masz teraz uruchomionej aplikacji.
+   Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!** . Masz teraz uruchomionej aplikacji.
 
    ![Okno konsoli](../media/vs-2019/overview-console-window.png)
 
@@ -313,7 +313,7 @@ Po pierwsze możemy zmienić nazwę `name` zmiennej:
 
 ::: moniker range="vs-2017"
 
-3. Wybierz ikonę żarówki, aby wyświetlić dostępnych [szybkie akcje](../../ide/quick-actions.md). Wybierz **Zmień nazwę "name" do "username"**.
+3. Wybierz ikonę żarówki, aby wyświetlić dostępnych [szybkie akcje](../../ide/quick-actions.md). Wybierz **Zmień nazwę "name" do "username"** .
 
    ![Zmień nazwę akcji w programie Visual Studio](../media/rename-quick-action.png)
 
@@ -325,7 +325,7 @@ Po pierwsze możemy zmienić nazwę `name` zmiennej:
 
 ::: moniker range=">=vs-2019"
 
-3. Wybierz ikonę żarówki, aby wyświetlić dostępnych [szybkie akcje](../../ide/quick-actions.md). Wybierz **Zmień nazwę "name" do "username"**.
+3. Wybierz ikonę żarówki, aby wyświetlić dostępnych [szybkie akcje](../../ide/quick-actions.md). Wybierz **Zmień nazwę "name" do "username"** .
 
    ![Zmień nazwę akcji w programie Visual Studio](../media/vs-2019/rename-quick-action.png)
 

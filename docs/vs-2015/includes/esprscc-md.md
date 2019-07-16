@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 449113708a66340b7ed3ef94437aae0c26a26731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "65674213"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68152210"
 ---
 Kontrola wersji programu Team Foundation

@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1d0170d11ffaba831fdd68caa7249d0002526414
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157838"
 ---
-# <a name="how-to-refresh-the-view"></a>Instrukcje: Odśwież widok
+# <a name="how-to-refresh-the-view"></a>Instrukcje: Odświeżanie widoku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spy ++ tworzy "migawkę" tabel systemowych i odświeża widoku na podstawie tych informacji. Należy okresowo odświeżać widoków systemu. Jeśli masz narzędzie Spy ++ widok Otwórz i nie mają odświeżyć widok, nie zobaczysz te procesy, wątki i systemu windows, które następnie są tworzone. Ponadto możesz zobaczyć elementy, które już istnieją. **Odśwież** polecenie jest dostępne dla wszystkich widoków z wyjątkiem widoku komunikatów.  

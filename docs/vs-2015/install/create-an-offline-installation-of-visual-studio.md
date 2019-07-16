@@ -14,13 +14,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186018"
 ---
-# <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji Offline programu Visual Studio
+# <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [Tworzenie instalacji offline programu Visual Studio](/visualstudio/install/create-an-offline-installation-of-visual-studio) lub [Tworzenie instalacji sieciowej programu Visual Studio](/visualstudio/install/create-a-network-installation-of-visual-studio).

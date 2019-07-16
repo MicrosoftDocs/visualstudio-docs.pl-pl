@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 48f1b0c0860f8dfc38a83856570cdcdfa6f6ffc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201734"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Właściwości nie powinny zwracać tablic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "54786796"
  Aby naprawić naruszenie tej zasady, ustawić właściwość jako metodę lub zmień wartość właściwości do zwrócenia kolekcji.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Atrybuty mogą zawierać właściwości, które zwracają tablice, ale nie może zawierać właściwości, które zwracają kolekcje. Można pominąć ostrzeżenia, które jest wywoływane dla właściwości atrybutu, która jest pochodną klasy [System.Attribute] (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) klasy. W przeciwnym razie nie Pomijaj ostrzeżeń dla tej reguły.
+ Atrybuty mogą zawierać właściwości, które zwracają tablice, ale nie może zawierać właściwości, które zwracają kolekcje. Można pominąć ostrzeżenia, które jest wywoływane dla właściwości atrybutu, która jest pochodną ([klasy System.Attribute]<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) klasy. W przeciwnym razie nie Pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example-violation"></a>Przykład naruszenia
 

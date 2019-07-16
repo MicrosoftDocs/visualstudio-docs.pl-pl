@@ -30,11 +30,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 66a895b48051ed8797644b36d6f6663e1e35a8e6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145671"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Dodatkowe informacje na temat błędów w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Projektant klas nie śledzi lokalizację plików źródłowych sposób modyfikow
  [Praca z kodem Visual C++ (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md)  
  Zawiera informacje o wyświetlaniu C++ na diagramie klasy dotyczące rozwiązywania problemów.  
   
- [Visual Studio Class Designer Forum](http://go.microsoft.com/fwlink/?LinkId=160754)  
+ [Forum projektanta klas programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754)  
  Udostępnia forum w razie pytań dotyczących projektanta klas.  
   
 ## <a name="see-also"></a>Zobacz też  
