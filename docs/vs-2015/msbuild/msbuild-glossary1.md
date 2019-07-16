@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154840"
 ---
 # <a name="msbuild-glossary"></a>Słownik programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Te warunki są używane do opisywania aparatu Microsoft Build Engine (MSBuild) i
 
  Zobacz *projektu, podrzędne*.
 
- Warunek
+ condition
 
  Warunkowo; można zdefiniować wiele elementów MSBuild oznacza to, że `Condition` atrybutu jest wyświetlany w elemencie. Zawartość elementów warunkowych jest ignorowana, chyba, że warunek to `true`. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).
 
@@ -102,7 +102,7 @@ Te warunki są używane do opisywania aparatu Microsoft Build Engine (MSBuild) i
 
  Zdolność do aplikacji lub zestawu projekt przeznaczony dla wielu różnych CLR i struktury z programu MSBuild i Visual Studio.
 
- Profil
+ profile
 
  Podzbiór pełny framework. Służy to zminimalizować ilość, które muszą zostać pobrane na maszynę.
 
@@ -170,7 +170,7 @@ Te warunki są używane do opisywania aparatu Microsoft Build Engine (MSBuild) i
 
  Zobacz *właściwości, rejestr*.
 
- Docelowy
+ target
 
  Obiekt docelowy grupowanie zadań w określonej kolejności i udostępnia sekcje pliku projektu jako punkty wejścia do procesu kompilacji. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).
 
