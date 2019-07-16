@@ -11,13 +11,13 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203899"
 ---
-# <a name="intellisense-hosting"></a>IntelliSense Hosting
+# <a name="intellisense-hosting"></a>Hosting funkcji IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Program Visual Studio umożliwia hostowanie funkcji IntelliSense. Umożliwia hostowanie IntellSense udostępni funkcję IntelliSense dla kodu, który nie jest obsługiwany przez Edytor tekstu Visual Studio.  
@@ -43,7 +43,7 @@ Program Visual Studio umożliwia hostowanie funkcji IntelliSense. Umożliwia hos
 |IHF_FORCECOMMITTOCONTEXT|Jeśli ta flaga jest ustawiona, muszą zostać zaktualizowane buforu kontekstu hosta umożliwia flagi tylko do odczytu dla buforu kontekstu, które mają być ignorowane i zmiany, aby kontynuować.|  
 |IHF_OVERTYPE|Edytowanie (podmiotu lub w kontekście) ma się odbywać w trybie zastępowania.|  
   
-#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit and IVsIntellisenseHost.AfterCompletorCommit  
+#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit i IVsIntellisenseHost.AfterCompletorCommit  
  Te metody wywołania zwrotnego są wywoływane przez okna ukończenia, przed i po zatwierdzone, aby umożliwić przetwarzanie końcowe i wstępnego przetwarzania tekstu.  
   
 #### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  

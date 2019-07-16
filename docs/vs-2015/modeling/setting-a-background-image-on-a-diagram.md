@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189400"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Ustawienie obrazu tła w diagramie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wizualizacji i modelowania SDK ob
   
 11. Jeśli brakuje Resources.Designer.cs, kliknij plik Resources.resx w **Eksploratora rozwiązań**.  
   
-12. W oknie **Właściwości** ustaw właściwość `Custom Tool` na `ResXFileCodeGenerator`.   
+12. W oknie **Właściwości** ustaw właściwość `Custom Tool` na `ResXFileCodeGenerator`.  
   
 13. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt Dsl, wskaż **Dodaj**i kliknij przycisk **nowy Folder**.  
   
