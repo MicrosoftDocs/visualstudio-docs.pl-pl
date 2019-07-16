@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 092eeb8f3c4621d98e0432b87b5c3218b51ac35b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54786285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201858"
 ---
 # <a name="filtered-completion-lists-in-visual-basic"></a>Filtrowane listy uzupełniania w Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

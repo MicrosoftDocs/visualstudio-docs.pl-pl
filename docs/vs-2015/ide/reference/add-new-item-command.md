@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0ba7820bfa6df7273f170b2222d6a55e685e445e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203693"
 ---
 # <a name="add-new-item-command"></a>Dodaj nowy element — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
   
 ## <a name="arguments"></a>Argumenty  
  `filename`  
- Opcjonalna. Ścieżka i nazwa pliku elementu do dodania do rozwiązania.  
+ Opcjonalny. Ścieżka i nazwa pliku elementu do dodania do rozwiązania.  
   
 ## <a name="switches"></a>Przełączniki  
  /t: `templatename`  
- Opcjonalna. Określa typ pliku ma zostać utworzony. Jeśli nazwa szablonu nie zostanie określony, domyślnie tworzone jest plikiem tekstowym.  
+ Opcjonalny. Określa typ pliku ma zostać utworzony. Jeśli nazwa szablonu nie zostanie określony, domyślnie tworzone jest plikiem tekstowym.  
   
  T:`templatename` składnię argumentu odzwierciedla informacji znajdujących się w **Dodaj nowy element rozwiązania** okno dialogowe. Należy wprowadzić pełną kategorii, typu pliku, oddzielając nazwy kategorii z typu pliku za ukośnik odwrotny, po którym następuje (`\`) i nawiasami cały ciąg w cudzysłowie.  
   
@@ -49,7 +49,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```  
   
  / e: `editorname`  
- Opcjonalna. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument jest określony, ale nazwa edytora nie został podany, **Otwórz za pomocą** pojawi się okno dialogowe.  
+ Opcjonalny. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument jest określony, ale nazwa edytora nie został podany, **Otwórz za pomocą** pojawi się okno dialogowe.  
   
  / E:`editorname` składnię argumentu używa nazw edytora, w jakiej występują w **Otwórz okno dialogowe za pomocą**, ujęty w znaki cudzysłowu.  
   

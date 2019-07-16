@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183344"
 ---
 # <a name="customizing-the-editor"></a>Dopasowywanie edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ Formatowanie, karty, czcionki i kolory, funkcja IntelliSense i wiele innych funk
 ## <a name="in-this-section"></a>W tej sekcji  
  Te tematy wyjaśniają, jak dostosować wygląd i zachowanie edytora tekstu i kodu.  
   
- [Instrukcje: Zmiana wielkości liter w edytorze](../ide/how-to-change-text-case-in-the-editor.md)  
+ [Instrukcje: Zmiana wielkości liter w Edytorze](../ide/how-to-change-text-case-in-the-editor.md)  
  Wyjaśnia, jak zmiana wielkości liter w kodzie.  
   
- [Instrukcje: Zarządzaj Windows edytora](../ide/how-to-manage-editor-windows.md)  
+ [Instrukcje: Zarządzanie oknami edytora](../ide/how-to-manage-editor-windows.md)  
  Pokazuje, jak do manipulowania okna edytora.  
   
  [Instrukcje: Zarządzanie trybami edytora](../ide/how-to-manage-editor-modes.md)  

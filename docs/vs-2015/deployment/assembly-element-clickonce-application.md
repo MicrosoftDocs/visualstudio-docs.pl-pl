@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d619b8b3cd81e5b00fc689077a95ade08f4d7eed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183482"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;zestaw&gt; — Element (aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Element najwyższego poziomu w manifeście aplikacji.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`manifestVersion`|Wymagana. `manifestVersion` Atrybutu musi być równa `1.0`.|  
+|`manifestVersion`|Wymagany. `manifestVersion` Atrybutu musi być równa `1.0`.|  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie kodu pokazano `assembly` elementu w manifeście aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Ten przykład kodu jest częścią większego przykładu przewidzianego w [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).  
@@ -74,4 +74,4 @@ Element najwyższego poziomu w manifeście aplikacji.
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<zestaw > Element](../deployment/assembly-element-clickonce-deployment.md)
+ [\<assembly>, element](../deployment/assembly-element-clickonce-deployment.md)

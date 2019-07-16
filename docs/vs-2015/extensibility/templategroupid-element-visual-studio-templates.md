@@ -14,11 +14,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53d1f6628ff9df48879a34417b7d89223d848dd8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186435"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,18 +60,18 @@ Określa, jakiego typu Projekt szablonów elementów będą widoczne w. Ten elem
   
  Wartość `TemplateGroupID` element jest używany razem z rejestracji systemu projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<numer wersji >* \Projects\\) Filtr szablonów, które pojawiają się w **Dodaj nowy element** okno dialogowe.  
   
-|Visual C++ Value|Znaczenie|  
+|Visual C++ wartość|Znaczenie|  
 |------------------------|-------------|  
-|VC-Native|Używany do natywnych projektów. Również domyślnie, jeśli nie można ustalić typu projektu.|  
-|VC-Managed|Używane dla zarządzanych (/ clr) projektów|  
+|Natywne VC|Używany do natywnych projektów. Również domyślnie, jeśli nie można ustalić typu projektu.|  
+|Zarządzane VC|Używane dla zarządzanych (/ clr) projektów|  
 |VC-Windows|Używane dla wszystkich projektów, których platformą docelową będzie system windows (natywnego/zarządzanego/magazyn)|  
 |WinRT-Native-UAP|Używane w projektach magazynu systemu Windows 10|  
 |CodeSharing-Native|Używane w projektach elementu Shared|  
-|WinRT-Native-6.3|Używane w projektach Store Windows 8.1|  
-|WinRT-Native-Phone-6.3|Używany do projektów Windows Phone 8.1|  
+|WinRT Native 6.3|Używane w projektach Store Windows 8.1|  
+|WinRT Native-Phone-6.3|Używany do projektów Windows Phone 8.1|  
 |WinRT-Native|Używany do projektów Windows 8.0 Store|  
 |VC-Android|Używane w projektach systemu Android|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

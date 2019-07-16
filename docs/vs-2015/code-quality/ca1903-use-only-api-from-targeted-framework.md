@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189079"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko interfejsu API platformy docelowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1903: U�
 |||  
 |-|-|  
 |Gdy jest platforma docelowa|Uruchamiany na użycia elementów członkowskich wprowadzone w systemie|  
-|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|  
-|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
+|.NET Framework 2.0|.NET framework 2.0 z dodatkiem SP1, .NET Framework 2.0 z dodatkiem SP2|  
+|.NET Framework 3.0|.NET framework 2.0 z dodatkiem SP1, .NET Framework 2.0 z dodatkiem SP2, .NET Framework 3.0 z dodatkiem SP1, .NET Framework 3.0 z dodatkiem SP2|  
 |Program .NET Framework 3,5|.NET Framework 3.5 SP1|  
 |Program .NET Framework 4|Brak|  
   

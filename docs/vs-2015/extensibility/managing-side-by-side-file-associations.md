@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b8ca68aec180c51a170fd6ecce58237a5b306705
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194395"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Zarządzanie równoległymi skojarzeniami plików
 
@@ -53,7 +53,7 @@ Jeśli chcesz, aby wiele VSPackages side-by-side, aby użyć tego samego rozszer
 
   **Akcja niestandardowa wiersze tabeli, które określają najnowszą wersję programu Visual Studio**
 
-  |Akcja|Typ|Źródło|Cel|
+  |Akcja|Typ|Source|Cel|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -61,7 +61,7 @@ Jeśli chcesz, aby wiele VSPackages side-by-side, aby użyć tego samego rozszer
 
   **InstallExecuteSequence wiersze tabeli, które określają najnowszą wersję programu Visual Studio**
 
-  |Akcja|Warunek|Sekwencja|
+  |Akcja|Warunek|Sequence|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 I NOT (DEVENV_EXE_2003 LUB DEVENV_EXE_2005)|410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 I NIE DEVENV_EXE_2005|420|

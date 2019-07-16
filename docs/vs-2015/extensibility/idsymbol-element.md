@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7db4e686b5e105b0ea0aa80783137093679d4cad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203965"
 ---
 # <a name="idsymbol-element"></a>IDSymbol, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,8 +36,8 @@ ms.locfileid: "54771704"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|nazwa|Wymagana. Nazwa symbolu identyfikator.|  
-|value|Wymagana. Wartość liczbowa Identyfikatora symbolu identyfikator.|  
+|nazwa|Wymagane. Nazwa symbolu identyfikator.|  
+|value|Wymagane. Wartość liczbowa Identyfikatora symbolu identyfikator.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d69bbe2145648c1bdb993cb6a4e45b26ae602b2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203502"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Klawisze skrótów (Podgląd Pomocy)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Możesz przejść w Podglądzie pomocy firmy Microsoft, za pomocą klawiszy skr�
 |Nawigatorów|ALT + F<br /><br /> -LUB-<br /><br /> Ctrl + Shift + F|Wyświetlanie **ulubione** kartę.|  
 |Nawigatorów|ALT + S<br /><br /> -LUB-<br /><br /> Ctrl + E<br /><br /> -LUB-<br /><br /> Ctrl + Shift + S|Wyświetlanie **wyszukiwania** kartę.|  
 |Nawigatorów|ALT + M<br /><br /> -LUB-<br /><br /> Ctrl + Shift + M|Wyświetlanie **zarządzanie zawartością** kartę.|  
-|Temat|Klawisz Menu skrótów<br /><br /> LUB<br /><br /> Shift + F10|Wyświetlić menu skrótów dla bieżącego elementu interfejsu użytkownika.|  
+|Temat|Klawisz Menu skrótów<br /><br /> LUB<br /><br /> SHIFT + F10|Wyświetlić menu skrótów dla bieżącego elementu interfejsu użytkownika.|  
 |Temat|Strzałka w górę|Przewiń do początku dokumentu o jeden wiersz w danym momencie.|  
 |Temat|Strzałka w dół|Przewiń do końca dokumentu o jeden wiersz w danym momencie.|  
 |Temat|Page Up|Przewiń do początku dokumentu o jeden ekran w czasie.|  
@@ -61,10 +61,10 @@ Możesz przejść w Podglądzie pomocy firmy Microsoft, za pomocą klawiszy skr�
 |Temat|Ctrl + Tab|Przełącz się na kartach, od lewej do prawej.|  
 |Temat|Ctrl + Shift + Tab|Przełącz się na kartach, od prawej do lewej.|  
 |Temat|Ctrl + W|Zamknij bieżącą kartę.|  
-|Temat|Ctrl + *Number*|Przejdź do karty określonych gdzie *numer* zakresu od 1 do 9 i wskazuje, której karcie w sekwencji.|  
-|Temat|Ctrl +Alt + F4|Zamknij inne zawartości karty.|  
-|Temat|Ctrl + Shift + Plus Sign|Zwiększa powiększenie przy 10%.|  
-|Temat|Ctrl + Minus Sign|Zmniejsza powiększenie przy 10%.|  
+|Temat|CTRL + *numer*|Przejdź do karty określonych gdzie *numer* zakresu od 1 do 9 i wskazuje, której karcie w sekwencji.|  
+|Temat|Ctrl + Alt + F4|Zamknij inne zawartości karty.|  
+|Temat|Ctrl + Shift + znak Plus|Zwiększa powiększenie przy 10%.|  
+|Temat|Ctrl + znak Minus|Zmniejsza powiększenie przy 10%.|  
 |Temat|Ctrl + 0 (zero)|Zmień powiększenie do 100%.|  
 |Indeks|Tab|Przenieść fokus z pozycji — słowo kluczowe do listy — słowo kluczowe.|  
 |Indeks|Ctrl + K|Przełącz między wpisami przedstawiający, które zawierają słowo kluczowe, które określisz i wpisy rozpoczynających się od słowa kluczowego, określ.|  
@@ -79,7 +79,7 @@ Możesz przejść w Podglądzie pomocy firmy Microsoft, za pomocą klawiszy skr�
 |Wyszukaj|Esc|Wyczyść pole tekstowe wyszukiwania.|  
 |Opcje aplikacji Viewer|ALT + T|Zmień fokus na **rozmiar tekstu** listy.|  
 |Opcje aplikacji Viewer|ALT + S|Zmień fokus na **maksymalna liczba wyników wyszukiwania** listy.|  
-|Opcje aplikacji Viewer|Alt + H|Zmień fokus na **zapisanych wpisów historycznych maksymalna** listy.|  
+|Opcje aplikacji Viewer|ALT + H|Zmień fokus na **zapisanych wpisów historycznych maksymalna** listy.|  
 |Opcje aplikacji Viewer|ALT + E|Zaznacz lub wyczyść **zawartości Zawrzyj w języku angielskim we wszystkich kartach nawigacji i żądaniach F1** pole wyboru, jeśli jest włączone.|  
 |Opcje aplikacji Viewer|ALT + O|Zaznacz lub wyczyść **przejdź do trybu online, aby sprawdzić, czy są dostępne aktualizacje zawartości** pole wyboru.|  
 |Znajdowanie|Enter|Zmień fokus do następnego elementu.|  
@@ -96,7 +96,7 @@ Możesz przejść w Podglądzie pomocy firmy Microsoft, za pomocą klawiszy skr�
 |Ctrl + L|Resetuj układ podglądu pomocy domyślny układ i zamknięcie wszystkich kart tematu.|  
 |Ctrl + Tab|Pierwszego naciśnięcia klawisza przenosi fokus do **wybór karty** menu. Następnym naciśnięciu klawisza przenosi fokus na elemencie menu u góry, a kolejne naciśnięć klawiszy oferowanie fokusu elementów menu w kolejności od góry do dołu. Po aktywowaniu elementu menu klawisza Enter sprawia, że, element aktywną kartę.|  
 |Ctrl + Shift + Tab|Pierwszego naciśnięcia klawisza przenosi fokus do **wybór karty** menu. Następnym naciśnięciu klawisza przenosi fokus do dołu elementu menu, a kolejne naciśnięć klawiszy oferowanie fokusu elementów menu w kolejności od dołu do góry. Po aktywowaniu elementu menu klawisza Enter sprawia, że, element aktywną kartę.|  
-|Alt + I, Alt + S, Alt + C, Alt + F, Alt + M|Tych klawiszy skrótów nie działają w przypadku kart nawigacji i zarządzaniu zawartością oddokowana.|  
+|ALT + I Alt + S, Alt + C, Alt + F, Alt + M|Tych klawiszy skrótów nie działają w przypadku kart nawigacji i zarządzaniu zawartością oddokowana.|  
   
  **Zarządzanie zawartością**  
   

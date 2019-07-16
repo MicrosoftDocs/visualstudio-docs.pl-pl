@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201843"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Instrukcje: Tworzenie szablonów elementów wielu plików
+# <a name="how-to-create-multi-file-item-templates"></a>Instrukcje: Tworzenie szablonów elementów obejmujących wiele plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Szablony elementów może określić tylko jeden element, ale czasami element składa się z wielu plików. Na przykład szablon elementu formularzy Windows w języku Visual Basic wymaga następujących trzech plików:  
@@ -53,7 +53,7 @@ Szablony elementów może określić tylko jeden element, ale czasami element sk
   
      Gdy element pochodzące z tego szablonu zostanie dodany do projektu, nazwy plików będzie zależeć od nazwy, wpisany przez użytkownika w **Dodaj nowy element** okno dialogowe.  
   
-3. Wybierz pliki do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Wybrane pliki są kompresowane w pliku zip.  
+3. Wybierz pliki do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)** . Wybrane pliki są kompresowane w pliku zip.  
   
 4. Umieść plik zip w lokalizacji szablonów elementów użytkownika. Domyślnie katalog jest \My Studio *wersji*\Templates\ItemTemplates\\. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   

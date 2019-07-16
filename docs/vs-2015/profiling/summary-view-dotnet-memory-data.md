@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe6d3982828d1e2a8ae4aeaba3d89b1b75f4f9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193319"
 ---
 # <a name="summary-view---net-memory-data"></a>Widok podsumowania - dane pamięci platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4b956fb09681f6f4a1f916f4b108028f69f009cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200899"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 ```  
   
 ## <a name="arguments"></a>Argumenty  
- /build  
+ / Build  
  Tworzy projekt określony przez `/project` `ProjName`.  
   
  / clean  
@@ -49,20 +49,20 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
  /rebuild  
  Czyści, a następnie kompiluje projekt określony przez `/project` `ProjName`.  
   
- /deploy  
+ / deploy  
  Określa, czy wdrożony po kompilacji lub skompiluj ponownie projekt.  
   
  `SolnConfigName`  
- Wymagana. Nazwa konfiguracji rozwiązania, które zostaną zastosowane do rozwiązania o nazwie w `SolutionName`.  
+ Wymagany. Nazwa konfiguracji rozwiązania, które zostaną zastosowane do rozwiązania o nazwie w `SolutionName`.  
   
  `SolutionName`  
  Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.  
   
- /project `ProjName`  
+ / Project `ProjName`  
  Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.  
   
  / projectconfig `ProjConfigName`  
- Opcjonalna. Nazwa projektu kompilacji konfiguracji, które mają być stosowane do `/project` o nazwie.  
+ Opcjonalny. Nazwa projektu kompilacji konfiguracji, które mają być stosowane do `/project` o nazwie.  
   
 ## <a name="remarks"></a>Uwagi  
   

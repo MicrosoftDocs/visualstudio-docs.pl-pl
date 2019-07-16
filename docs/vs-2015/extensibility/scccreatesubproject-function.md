@@ -13,11 +13,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c2f28d8bb9ebc440db69085324becb6a96c19afe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200194"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

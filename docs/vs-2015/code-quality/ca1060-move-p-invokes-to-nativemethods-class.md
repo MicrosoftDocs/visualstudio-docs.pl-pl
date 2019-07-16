@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: f47fa4326da9914171e5014decbd6d6923c2f02e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200483"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś metody P/Invoke do klasy NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "54785452"
  [!code-csharp[FxCop.Design.NativeMethods#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethods/cs/FxCop.Design.NativeMethods.cs#1)]
  [!code-vb[FxCop.Design.NativeMethods#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethods/vb/FxCop.Design.NativeMethods.vb#1)]
 
-## <a name="safenativemethods-example"></a>SafeNativeMethods Example
+## <a name="safenativemethods-example"></a>Przykład SafeNativeMethods
 
 ### <a name="description"></a>Opis
  Metody P/Invoke, które mogą bezpiecznie łączyć się z dowolnej aplikacji i które nie mają żadnych efektów ubocznych powinien znajdować się w klasie o nazwie **SafeNativeMethods**. Nie masz uprawnień na żądanie i nie trzeba płacić większej uwagi, do której zostaną wywołane.

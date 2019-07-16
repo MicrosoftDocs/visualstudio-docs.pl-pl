@@ -12,18 +12,18 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6eb76eba76567f2966323d4058c9e752cb6fb69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200982"
 ---
 # <a name="providing-automation-for-vspackages"></a>Zapewnianie automatyzacji pakietów VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Istnieją dwa główne sposoby zapewnienia automatyzacji z pakietów VSPackage: wdrażając obiektów specyficznych dla pakietu VSPackage i wdrażając obiektów automatyzacji w wersji standard. Ogólnie rzecz biorąc są one używane razem do rozszerzenia modelu automatyzacji środowiska.  
   
-## <a name="vspackage-specific-objects"></a>VSPackage-Specific Objects  
+## <a name="vspackage-specific-objects"></a>Obiektów specyficznych dla pakietu VSPackage  
  Niektóre miejsca, w ramach modelu automatyzacji wymagają podania obiektów automatyzacji, które są unikatowe dla Twojego pakietu VSPackage. Na przykład nowe projekty wymagają różnych obiektów, które zawiera tylko Twojego pakietu VSPackage. Nazwy tych obiektów są wprowadzane w rejestrze i pobierane za pośrednictwem wywołania w środowisku `DTE` obiektu.  
   
  Obiektów specyficznych dla pakietu VSPackage można także uzyskać, gdy konsumenta automatyzacji używa obiektu, dostępne za pośrednictwem właściwości obiektu standardowego obiektu. Na przykład standardowy `Window` obiekt ma `Object` właściwość, powszechnie znane jako `Windows.Object` właściwości. Gdy konsumenci wywołana `Window.Object` w oknie, zaimplementowane w swojej pakietu VSPackage, możesz przesłać obiekt automatyzacji określonego własnego projektu.  

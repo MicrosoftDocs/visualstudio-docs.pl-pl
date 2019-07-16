@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 84c7a173bf0b7f5b3dc2187c0c8574819b2317a9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176908"
 ---
 # <a name="message-markers"></a>Znaczniki komunikatu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -11,13 +11,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204191"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Instrukcje: Wyzwolenie zdarzenia po utracie fokusu przez Edytor
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Instrukcje: Wyzwalanie zdarzeń po utracie fokusu przez edytor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Czasami zachodzi konieczność wiadomo, kiedy redaktorem traci fokus ramki okna. Na przykład może być konieczne pobierania kodu z okna kodu, po edytor nie ma już fokusu w nim. Poniższa procedura zawiera kroki, które trzeba wykonać, aby otrzymać powiadomienie o Edytorze utraci fokus.  

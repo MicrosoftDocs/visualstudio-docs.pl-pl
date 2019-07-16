@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192819"
 ---
 # <a name="start"></a>Uruchamianie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **CrossSession**&#124;**CS**  
  Włącza między procesami profilowania. Nazwy opcji **CrossSession** i **CS** są obsługiwane.  
   
- **Użytkownik:**[`domain\`]`username`  
+ **Użytkownik:** [`domain\`]`username`  
  Umożliwia dostęp klienta do monitora z określonego konta.  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Status**  
  **Stan** dotyczy procesy, które są profilowane. Wyświetla listę procesów i wątków oraz ich bieżącego stanu profilowania (wł. / wył.). Na przykład, jeśli proces zostanie zatrzymana **stan** nie wskaże, to w raporcie. **Stan** opisano proces albo jest profilowane czy nie.  
   
- **Zamknięcie**[**:**`Timeout`]  
+ **Zamknięcie**[ **:** `Timeout`]  
  Wyłącza profilera.  
   
 ## <a name="example"></a>Przykład  

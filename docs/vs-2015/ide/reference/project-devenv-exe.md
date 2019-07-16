@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 398d92065b1ff1b5447017c7a21fc0def1e0da52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200888"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 ```  
   
 ## <a name="arguments"></a>Argumenty  
- /build  
+ / Build  
  Tworzy projekt określony przez `/project` `ProjName`.  
   
  / clean  
@@ -46,20 +46,20 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  /rebuild  
  Czyści, a następnie kompiluje projekt określony przez `/project` `ProjName`.  
   
- /deploy  
+ / deploy  
  Określa, czy wdrożony po kompilacji lub skompiluj ponownie projekt.  
   
  `SolnConfigName`  
  Wymagana. Nazwa konfiguracji rozwiązania, które zostaną zastosowane do rozwiązania o nazwie w `SolutionName`.  
   
  `SolutionName`  
- Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.  
+ Wymagane. Pełna ścieżka i nazwa pliku rozwiązania.  
   
- /project `ProjName`  
- Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.  
+ / Project `ProjName`  
+ Opcjonalny. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.  
   
  / projectconfig `ProjConfigName`  
- Opcjonalna. Nazwa projektu kompilacji konfiguracji, które mają być stosowane do `/project` o nazwie.  
+ Opcjonalny. Nazwa projektu kompilacji konfiguracji, które mają być stosowane do `/project` o nazwie.  
   
 ## <a name="remarks"></a>Uwagi  
   

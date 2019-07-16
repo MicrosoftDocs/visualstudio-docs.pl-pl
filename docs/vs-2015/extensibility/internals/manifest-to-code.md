@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192639"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,14 +33,14 @@ Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjm
 |/imageIdClass|Nazwa imageIdClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyImageIds. \<Lang Ext >|Optional|  
 |/monikerClass|Nazwa monikerClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h. To jest ignorowany dla języka VSCT.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyMonikers. \<Lang Ext >|Optional|  
 |/classAccess|Modyfikator dostępu dla imageIdClass i monikerClass. Sprawdź, czy modyfikator dostępu jest prawidłowy dla danego języka. To jest ignorowany dla opcji języka VSCT.<br /><br /> Wartość domyślna: Public|Optional|  
-|/ Namespace|Przestrzeń nazw zdefiniowana w otokę kodu. To jest ignorowany dla opcji języka VSCT. Albo "." lub "::" są separatory prawidłowy obszar nazw, niezależnie od opcji wybranym języku.<br /><br /> Wartość domyślna: MyImages|Optional|  
+|/ Namespace|Przestrzeń nazw zdefiniowana w otokę kodu. To jest ignorowany dla opcji języka VSCT. Albo "." lub "::" są separatory prawidłowy obszar nazw, niezależnie od opcji wybranym języku.<br /><br /> Wartość domyślna: Mojeobrazy|Optional|  
 |/noLogo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
 |/?|Wydrukuj informacje pomocy.|Optional|  
 |/help|Wydrukuj informacje pomocy.|Optional|  
   
  **Przykłady**  
   
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
+- /Manifest:D:\MyManifest.imagemanifest ManifestToCode w/Language: CSharp  
   
 - / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   

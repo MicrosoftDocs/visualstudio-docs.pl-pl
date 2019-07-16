@@ -16,13 +16,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 95fc42cd3d13a0613e865b8a0294c74ca016155c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178805"
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Instrukcje: Wyświetlanie dziedziczenia między typami (Projektant klas)
+# <a name="how-to-view-inheritance-between-types-class-designer"></a>Instrukcje: Wyświetlanie dziedziczenia pomiędzy typami (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Jeśli istnieje między typem podstawowym i jego typów pochodnych na diagramie klasy w Projektancie klas, można znaleźć relacji dziedziczenia. Aby utworzyć relację dziedziczenia, jeśli nie istnieją między dwoma typami, zobacz [jak: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md).  

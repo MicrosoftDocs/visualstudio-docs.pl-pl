@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193506"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punkt wejścia&gt; — Element (aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../i
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`name`|Opcjonalna. Ta wartość nie jest używana przez program .NET Framework.|  
+|`name`|Opcjonalny. Ta wartość nie jest używana przez program .NET Framework.|  
   
  `entryPoint` zawiera następujące elementy.  
   
@@ -70,7 +70,7 @@ Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../i
  `processorArchitecture` Atrybutu tego elementu i `processorArchitecture` atrybutowi określonemu w `assemblyIdentity` innych miejscach w aplikacji manifestu musi być zgodny.  
   
 ## <a name="commandline"></a>Wiersz polecenia  
- Wymagana. Musi być obiektem podrzędnym obiektu `entryPoint` elementu. Go nie ma elementów podrzędnych i ma następujące atrybuty.  
+ Wymagane. Musi być obiektem podrzędnym obiektu `entryPoint` elementu. Go nie ma elementów podrzędnych i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  

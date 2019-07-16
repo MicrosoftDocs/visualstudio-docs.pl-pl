@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8273e17f5a132d4be2394bd0dc75b15b7204316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205881"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>Nie ma do pokazania żadnej aktywności dysku (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

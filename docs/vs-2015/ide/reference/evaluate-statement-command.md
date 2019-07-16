@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f774458eb63d9e56b99a635e7b32309375a903ef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199364"
 ---
 # <a name="evaluate-statement-command"></a>Evaluate Statement — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Debug.EvaluateStatement text
   
 ## <a name="arguments"></a>Argumenty  
  `text`  
- Wymagana. Instrukcja do oceny.  
+ Wymagane. Instrukcja do oceny.  
   
 ## <a name="remarks"></a>Uwagi  
  Okno służące do wprowadzania **EvaluateStatement** polecenie Określa, czy znak równości (=) jest interpretowany jako operator porównania lub operator przypisania.  

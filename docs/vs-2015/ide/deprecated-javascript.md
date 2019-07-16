@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b93a2b4dcc541f32c16766da0dd9dd19a4fdfe0d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54759759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177815"
 ---
 # <a name="ltdeprecatedgt-javascript"></a>&lt;przestarzałe&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Określa zaniechanej funkcji lub metody.
  Opcjonalna. Identyfikator informacji o lokalizacji na temat funkcji lub metody. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Identyfikator typu zależy od formatu określonego w [ \<lokalizacja >](../ide/loc-javascript.md) elementu.  
   
  `description`  
- Opcjonalna. Opis funkcji lub metody, która jest on przestarzały.  
+ Opcjonalny. Opis funkcji lub metody, która jest on przestarzały.  
   
 ## <a name="remarks"></a>Uwagi  
  Elementy adnotować funkcje, które obejmują `<deprecated>`, musi być umieszczony w ciele funkcji przed wszystkimi instrukcjami. Gdy funkcja zostanie oznaczony jako przestarzały, zaleca się, zastąp jego [ \<podsumowania >](../ide/summary-javascript.md) element z `<deprecated>` elementu.  

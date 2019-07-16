@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179215"
 ---
 # <a name="core-interfaces"></a>Interfejsy podstawowe
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
   
 - [Konteksty](#Contexts)  
   
-- [Core Server](#CoreServer)  
+- [W trybie Server Core](#CoreServer)  
   
 - [Aparaty debugowania](#DebugEngines)  
   
@@ -95,14 +95,14 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |---------------|--------------------|-----------------|  
 |[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|Reprezentuje pozycję początkową instrukcji kodu.|  
 |[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|Rozszerza [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) interfejsu, aby umożliwić pobieranie interfejsy modułu i procesu.|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|Reprezentuje pozycji w dokumencie.|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, NIEMCY|Reprezentuje pozycji w dokumencie.|  
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Reprezentuje kontekst w którym można obliczyć wartości wyrażenia.|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Reprezentuje początkową lokalizację w pamięci w procentach kolekcja bajtów.|  
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Reprezentuje kontekst ramki stosu w punkt przerwania lub wyjątku.|  
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Reprezentuje kontekst ramki stosu w punkt przerwania lub wyjątku.|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Reprezentuje wyliczenia w zestawie kontekstów kodu.|  
   
-## <a name="CoreServer"></a> Core Server  
+## <a name="CoreServer"></a> W trybie Server Core  
  Te interfejsy reprezentują maszyny, na którym jest debugowany program. Są one zaimplementowane przez [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] , ale może być wywoływany do przez aparaty debugowania.  
   
 |Interface|Zaimplementowane przez|Opis|  
@@ -129,12 +129,12 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Wysyłane przez DE, żądanie dokumentu do otwarcia.|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Przedstawia strumień dezasemblowany instrukcje z dokumentu.|  
-|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, DE|Reprezentuje dokument, dostarczone przez DE, określając nazwę i identyfikator klasy (CLSID).|  
+|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, NIEMCY|Reprezentuje dokument, dostarczone przez DE, określając nazwę i identyfikator klasy (CLSID).|  
 |[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE, EE|Reprezentuje sumy kontrolnej dla dokumentu debugowania i umożliwia przekazanie sumę kontrolną między składnikami.|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|Reprezentuje kontekst dokumentu, położenie w obrębie dokumentu odpowiadający szczególnym kontekście instrukcji i kod.|  
-|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, DE|Reprezentuje pozycję Ogólne w dokumencie.|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, NIEMCY|Reprezentuje kontekst dokumentu, położenie w obrębie dokumentu odpowiadający szczególnym kontekście instrukcji i kod.|  
+|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, NIEMCY|Reprezentuje pozycję Ogólne w dokumencie.|  
 |[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|Reprezentuje pozycji w pliku źródłowym jako przesunięcie znaku.|  
-|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|Reprezentuje dokument tekstowy, dostarczone przez DE (pochodną [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), podając faktycznego tekstu.|  
+|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, NIEMCY|Reprezentuje dokument tekstowy, dostarczone przez DE (pochodną [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), podając faktycznego tekstu.|  
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Wysyłane przez DE, aby określić zmiany w pliku źródłowego, który znajduje się w pamięci.|  
   
 ## <a name="Events"></a> Zdarzenia  
@@ -165,7 +165,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|DE|Wysyłany, DE, gdy moduł jest załadowany lub zwolnione.|  
 |[IDebugNoSymbolsEvent2](../../../extensibility/debugger/reference/idebugnosymbolsevent2.md)|DE|Sygnały [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugera interfejsu użytkownika, aby ostrzec użytkownika, że symbole nie można zlokalizować dla uruchomionego pliku wykonywalnego.|  
 |[IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)|DE|Wysyłany przez DE wyświetlone IDE dowolny ciąg.|  
-|[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)|VS, DE|Wysyłane przez port do komunikowania się zdarzenia portu dla dowolnego odbiornika.|  
+|[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)|VS, NIEMCY|Wysyłane przez port do komunikowania się zdarzenia portu dla dowolnego odbiornika.|  
 |[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE, PS|Wysyłane przez port lub DE, po utworzeniu procesu.|  
 |[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE, PS|Proces został zniszczony wysyłane przez port lub Niemcy.|  
 |[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE, PS|Wysyłane przez DE lub port, gdy program został utworzony.|  

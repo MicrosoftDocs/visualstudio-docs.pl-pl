@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d6c14a268ef58dec31f65fe73e176eac8f690d9c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157757"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu kontekstowe (Eksplorator schematu XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,5 +114,5 @@ Następujące elementy menu kontekstowego są używane do wykonywania wyszukiwan
 |**Pokaż wszystkie odwołania**|Wyszukuje i wyróżnia wszystkie odwołania (grupy, które mają `ref="selectedGroup"`) do wybranej grupy.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)   
+ [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)   
  [Wyszukiwanie zestawu schematów](../xml-tools/searching-the-schema-set.md)
