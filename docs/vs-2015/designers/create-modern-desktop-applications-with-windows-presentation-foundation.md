@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 03f76f8538a9519dfc314cf400a577424c900788
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162632"
 ---
-# <a name="create-modern-desktop-applications-with-windows-presentation-foundation"></a>Tworzenie nowoczesnych aplikacji klasycznych przy użyciu programu Windows Presentation Foundation
+# <a name="create-modern-desktop-applications-with-windows-presentation-foundation"></a>Tworzenie nowoczesnych aplikacji klasycznych przy użyciu platformy Windows Presentation Foundation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) w programie Visual Studio 2015 oferuje deweloperom jednolity model programowania do tworzenia nowoczesnych aplikacji klasycznych line-of-business na Windows.  

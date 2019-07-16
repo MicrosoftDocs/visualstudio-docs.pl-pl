@@ -12,11 +12,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b68c9f4bbaed73603c46fc0beab77a308b8933d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203859"
 ---
 # <a name="adding-project-and-project-item-templates"></a>Dodawanie szablonów projektów i elementów projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,10 +52,10 @@ Podczas tworzenia własnych typów projektu musi udostępniać pomoc techniczną
  Wyświetla listę identyfikatorów CatID obiektów, które służą do rozszerzania [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], i [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] systemy projektów.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Instrukcje: Otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Instrukcje: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)  
  Instrukcje krok po kroku do otwierania elementu wewnętrznie powiązany z określonego edytora dla projektu.  
   
- [Instrukcje: Otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)  
+ [Instrukcje: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)  
  Instrukcje krok po kroku do otwierania Edytora standardowego.  
   
  [Podtypy projektów](../../extensibility/internals/project-subtypes.md)  

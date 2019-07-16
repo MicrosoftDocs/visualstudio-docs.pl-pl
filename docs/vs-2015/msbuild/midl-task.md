@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191558"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Opcjonalnie **ciąg** parametru.  
   
-     Listę opcji wiersza polecenia. Na przykład **"**_/option1 /option2 /option#_". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez inne parametry zadania MIDL.  
+     Listę opcji wiersza polecenia. Na przykład **"** _/option1 /option2 /option#_ ". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez inne parametry zadania MIDL.  
   
      Aby uzyskać więcej informacji, zobacz "Odwołanie do wiersza polecenia MIDL" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
@@ -144,7 +144,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Jeśli `true`, sprawdza, czy wartości wyliczeniowe są w dopuszczalnym zakresie.  
   
-     Aby uzyskać więcej informacji, zobacz **/Error enum** opcji w wierszu polecenia Pomoc (**/?**) dla midl.exe.  
+     Aby uzyskać więcej informacji, zobacz **/Error enum** opcji w wierszu polecenia Pomoc ( **/?** ) dla midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
@@ -260,7 +260,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Opcjonalnie **String []** parametru.  
   
-     Określa co najmniej jeden *definiuje*; oznacza to, nazwę i wartość do przekazania do preprocesora C jako opcjonalną Jeśli przez `#define` dyrektywy. Formularz każdego Definiuj jest, *nazwa [= value]*.  
+     Określa co najmniej jeden *definiuje*; oznacza to, nazwę i wartość do przekazania do preprocesora C jako opcjonalną Jeśli przez `#define` dyrektywy. Formularz każdego Definiuj jest, *nazwa [= value]* .  
   
      Aby uzyskać więcej informacji, zobacz **/D** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **UndefinePreprocessorDefinitions** parametru w tej tabeli.  
   
@@ -345,7 +345,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/ENV** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
-- **TrackerLogDirectory**  
+- **Katalog TrackerLogDirectory**  
   
      Opcjonalnie `String` parametru.  
   

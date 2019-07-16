@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cc543a07176f307641c53a2ef3e132881821ce7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162156"
 ---
 # <a name="define-element"></a>Define, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Definiuje symbol pary nazw i wartości. Ten symbol może zostać oceniony przez 
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|nazwa|Wymagana. Nazwa symbolu:<br /><br /> name="Mode"|  
-|value|Wymagana. Wartość symbolu:<br /><br /> value="Standard"|  
-|Warunek|Opcjonalna. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|nazwa|Wymagany. Nazwa symbolu:<br /><br /> Nazwa = "Tryb"|  
+|value|Wymagana. Wartość symbolu:<br /><br /> wartość = "Standardowy"|  
+|Warunek|Opcjonalny. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  

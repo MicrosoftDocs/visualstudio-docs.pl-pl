@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d361e5231d72df81fae164818bbe8341442c9f89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199175"
 ---
 # <a name="list-disassembly-command"></a>Lista dezasemblacji — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  Opcjonalna. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.  
   
  /endaddress: `expression` [i] / e: `expression`  
- Opcjonalna. Adres, w którym można zatrzymać dezasemblacji.  
+ Opcjonalny. Adres, w którym można zatrzymać dezasemblacji.  
   
- /codebytes:`yes`&#124;`no` [or] /bytes:`yes`&#124;`no` [or] /b:`yes`&#124;`no`  
+ /codebytes:`yes` &#124; `no` [i] /bytes:`yes` &#124; `no` [i] / b:`yes`&#124;`no`  
  Opcjonalna. Wskazuje, czy mają być wyświetlane bajty kodu. Wartość domyślna to `no`.  
   
- /source:`yes`&#124;`no` [or] /s:`yes`&#124;`no`  
+ / source:`yes` &#124; `no` [i] / s:`yes`&#124;`no`  
  Opcjonalna. Wskazuje, czy ma być wyświetlany kod źródłowy. Wartość domyślna to `no`.  
   
- /symbolnames:`yes`&#124;`no` [or] /names:`yes`&#124;`no` [or] /n:`yes`&#124;`no`  
+ /symbolnames:`yes` &#124; `no` [i] /names:`yes` &#124; `no` [i] / n:`yes`&#124;`no`  
  Opcjonalna. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartość domyślna to `yes`.  
   
- [/linenumbers:`yes`&#124;`no`]  
- Opcjonalna. Umożliwia wyświetlanie numerów wierszy skojarzonych z kodem źródłowym. Przełącznik/Source musi mieć wartość `yes` na używanie przełącznika /linenumbers.  
+ [/ linenumbers:`yes`&#124;`no`]  
+ Opcjonalny. Umożliwia wyświetlanie numerów wierszy skojarzonych z kodem źródłowym. Przełącznik/Source musi mieć wartość `yes` na używanie przełącznika /linenumbers.  
   
 ## <a name="example"></a>Przykład  
   

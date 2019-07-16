@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 42e6b035d80e240ddc67aa0a028d84c8c5541313
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200842"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

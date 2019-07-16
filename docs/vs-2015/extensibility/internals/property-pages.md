@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a45e4a98326fe829b8f87a4ecfce669118cd9d0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205778"
 ---
 # <a name="property-pages"></a>Strony właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Okno dialogowe strony właściwości projektu o strukturze format i drzewa pola
   
   Drugi typ strony właściwości wyświetlane w hostach przykłady postaci siatki właściwości, jak pokazano na poniższym zrzucie ekranu.  
   
-  ![VC Propery Pages](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+  ![Strony właściwości VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
   Okno dialogowe strony właściwości z siatki właściwości  
   
   Interfejsy `IVSMDPropertyBrowser` i `IVSMDPropertyGrid` (deklaracja w vsmanaged.h) są używane do tworzenia i wypełniania siatki właściwości, w ramach lub oknie dialogowym.  

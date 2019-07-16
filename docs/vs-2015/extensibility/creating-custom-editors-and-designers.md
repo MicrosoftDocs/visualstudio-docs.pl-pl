@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197411"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,10 +72,10 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać 
      Jeśli mogą być osadzone, należy utworzyć okno hosta zewnętrznego edytora, a następnie wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metody i ustaw <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wartość wyliczenia do `DP_External`. Jeśli Edytor nie może zostać osadzony, IDE automatycznie utworzy oddzielne okno dla niego.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przewodnik: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Przewodnik: tworzenie edytora niestandardowego](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Wyjaśnia, jak utworzyć niestandardowy Edytor.  
   
- [Przewodnik: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Przewodnik: dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Opis sposobu dodawania funkcji do edytora niestandardowego.  
   
  [Inicjowanie projektanta i konfiguracja metadanych](../extensibility/designer-initialization-and-metadata-configuration.md)  

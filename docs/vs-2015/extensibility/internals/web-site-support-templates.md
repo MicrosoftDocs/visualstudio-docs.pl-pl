@@ -11,11 +11,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200965"
 ---
 # <a name="web-site-support-templates"></a>Szablony pomocy technicznej dotyczącej witryn internetowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60044378"
   
  Jeśli ciąg nie jest obecny, system projektu sieci Web spróbuje określić domyślny język na podstawie rozszerzeń atrybut i plik języka strony dodane do projektu sieci Web przez szablon projektu szablon.  
   
-## <a name="project-templates"></a>Project Templates  
+## <a name="project-templates"></a>Szablony projektów  
  Szablony projektów witryny sieci Web są używane do tworzenia nowych witryn sieci Web w odpowiedzi na **nową witrynę sieci Web** polecenie **pliku** menu. Obecnie obsługiwane są trzy typy projektu witryny sieci Web:  
   
 - Pusta witryna internetowa projektów  
@@ -82,7 +82,7 @@ ms.locfileid: "60044378"
   
      Strona HTML dla nowej usługi sieci Web. Atrybut Language określa język codebehind, a atrybut CodeBehind określa pliku zależnego zawierające kod codebehind skojarzonego z tą usługą.  
   
-- Usługa. *extension*  
+- Usługa. *Rozszerzenie*  
   
      Plik zależny, który implementuje klasa usługi. Określa język codebehind *rozszerzenia* tego pliku.  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60044378"
 ### <a name="new-class"></a>Nowa klasa  
  Ten szablon tworzy nowy plik źródłowy, który definiuje pustą klasę w odpowiedzi na **Dodaj nową klasę** polecenia.  
   
-- Klasa. *extension*  
+- Klasa. *Rozszerzenie*  
   
      Plik źródłowy, który implementuje pustą klasę. Określa język codebehind *rozszerzenia* tego pliku.  
   
@@ -149,7 +149,7 @@ ms.locfileid: "60044378"
   
      Począwszy od zawartość strony sieci Web. Ta strona sieci Web ma skojarzony plik codebehind plik zależne.  
   
-- Plik CodeBehind. *extension*  
+- Plik CodeBehind. *Rozszerzenie*  
   
      Plik zależny, który implementuje klasa formularz sieci Web. Określa język codebehind *rozszerzenia* tego pliku.  
   

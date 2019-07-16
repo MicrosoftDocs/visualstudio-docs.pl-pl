@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9093b35cc444fc0b346f81a91d20afe73bd476cd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160426"
 ---
 # <a name="calltarget-task"></a>CallTarget — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

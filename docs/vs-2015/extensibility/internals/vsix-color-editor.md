@@ -1,5 +1,5 @@
 ---
-title: VSIX Color Editor | Microsoft Docs
+title: Edytor kolorów VSIX | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
@@ -7,18 +7,18 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197241"
 ---
 # <a name="vsix-color-editor"></a>Edytor kolorów VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i edytować kolorów niestandardowych dla programu Visual Studio. Narzędzie można również wygenerować klucze zasobu motywu, czemu kolory, można użyć w kodzie. To narzędzie jest przydatne do tworzenia rozszerzenia programu Visual Studio, który obsługuje motywów kolorów. To narzędzie może otwierać pliki .pkgdef i XML. Visual Studio motywy (.vstheme plików) może służyć za pomocą rozszerzenia kolor Edytor programu Visual Studio, zmieniając rozszerzenie pliku .xml. Ponadto pliki .vstheme można importować do bieżącego pliku .xml.  
   
- ![VSIX Color Editor Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX Color Editor Hero")  
+ ![Główny Edytor kolorów VSIX](../../extensibility/internals/media/vsix-color-editor-hero.png "Hero Edytor kolorów VSIX")  
   
  **Pliki definicji pakietów**  
   
@@ -55,7 +55,7 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
    **Krok 1. Określ nazwy kategorii i tokenu dla nowych tokenów kolorów.**  
   
-   Preferowany nazewnictwa schemat jest VSColor **[Category] [typ interfejsu użytkownika] [Stan]**. Nie należy używać słowa "color" w nazwach VSColor, ponieważ jest nadmiarowy.  
+   Preferowany nazewnictwa schemat jest VSColor **[Category] [typ interfejsu użytkownika] [Stan]** . Nie należy używać słowa "color" w nazwach VSColor, ponieważ jest nadmiarowy.  
   
    Nazwy kategorii zapewniają logiczne grupowanie i powinien być zdefiniowany jako wąskiego, jak to możliwe. Na przykład nazwa okna jednego narzędzia może być nazwa kategorii, ale nazwa całej działalności zespołu lub projektu zespołu nie jest. Grupowanie wpisy na kategorie zapobiega rozróżnienie kolory o takiej samej nazwie.  
   
@@ -115,7 +115,7 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
   Wartości kolorów są wyświetlane w pary tła/pierwszego planu, za pomocą "None" wskazujący, że nie został zdefiniowany kolor. Uwaga: Jeśli kolor, który nie ma pary kolor tła/kolor tekstu, tylko tła musi być zdefiniowany.  
   
-  ![VSIX Color Editor Color Values](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX Color Editor Color Values")  
+  ![Wartości kolorów Edytor kolorów VSIX](../../extensibility/internals/media/vsix-color-editor-color-values.png "wartości kolorów Edytor kolorów VSIX")  
   
   Aby edytować token kolorów, wybierz pozycję kolor motywu (kolumna) tego tokenu. Dodaj wartość koloru, wpisując wartość szesnastkowy koloru w formacie ARGB 8-cyfrowy, wprowadzając nazwę kolorów systemowych w komórce, lub przy użyciu menu rozwijanego, aby wybrać żądany kolor przy użyciu zestawu suwaków lub Podaj listę kolorów systemowych.  
   

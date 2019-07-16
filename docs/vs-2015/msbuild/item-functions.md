@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192897"
 ---
 # <a name="item-functions"></a>Funkcje elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

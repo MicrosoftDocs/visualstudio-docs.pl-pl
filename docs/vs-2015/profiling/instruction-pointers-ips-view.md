@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c6dcd6da21d83203f2e22472aaeb226f65e8475
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191538"
 ---
 # <a name="instruction-pointers-ips-view"></a>Widok wskaźników instrukcji (IP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

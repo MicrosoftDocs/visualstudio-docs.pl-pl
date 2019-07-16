@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7db4296a8fa4146a52d167bce3d8b051aa3ca073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204650"
 ---
-# <a name="drop-down-bar"></a>Listę rozwijaną paska
+# <a name="drop-down-bar"></a>Pasek list rozwijanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pasek listy rozwijanej znajduje się w górnej części okna kodu i zawiera dwie listy rozwijanej.  
@@ -25,7 +25,7 @@ Pasek listy rozwijanej znajduje się w górnej części okna kodu i zawiera dwie
 ## <a name="drop-down-bar-interfaces"></a>Interfejsy listę rozwijaną paska  
  W [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], na przykład pasek lista rozwijana zawiera listy dla [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] elementów i [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] elementy członkowskie funkcji, jak pokazano na poniższej ilustracji.  
   
- ![Drop&#45;down Bars](../extensibility/media/vsdropdown-bar.gif "vsDropdown_bar")  
+ ![Upuść&#45;dół paski](../extensibility/media/vsdropdown-bar.gif "vsDropdown_bar")  
 Listę rozwijaną paska  
   
  Podczas implementowania pasek listy rozwijanej, dostępne są cztery interfejsy podstawowe znaczenie:  

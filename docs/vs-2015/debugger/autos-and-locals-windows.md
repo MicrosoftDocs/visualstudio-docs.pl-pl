@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161736"
 ---
-# <a name="autos-and-locals-windows"></a>Zmiennych automatycznych i zmiennych lokalnych Windows
+# <a name="autos-and-locals-windows"></a>Okna zmiennych automatycznych i zmiennych lokalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Autos** okna (podczas debugowania, **CTRL + ALT + V, A**, lub **debugowanie / Windows / samochody**) i **lokalne** okna (podczas debugowania,  **CTRL + ALT + V, L**, lub **debugowanie / Windows / zmienne lokalne**) są bardzo przydatne, gdy użytkownik chce zobaczyć wartości zmiennych podczas debugowania. **Lokalne** jest wyświetlana w oknie zmiennych, które są zdefiniowane w zakresie lokalnym jest ogólnie funkcję lub metodę, która jest aktualnie wykonywane. **Autos** jest wyświetlana w oknie zmiennych używanych wokół bieżącego wiersza (miejsce, w której debuger został zatrzymany). Dokładnie wyświetlane zmienne, które różni się w różnych językach. Zobacz, jakie zmienne są wyświetlane w oknie Autos? poniżej.  
@@ -114,7 +114,7 @@ private static int subtractVars(int i, int j)
   
  Ustaw punkt przerwania na int `x = sumVars(a, b) + subtractVars(c, d);` wiersza.  
   
- Rozpocznij debugowanie, a podczas wykonywania przerywa w pierwszym punkcie przerwania, naciśnij klawisz **F10 (Step Over)**. Powinien zostać wyświetlony następujący w **Autos** okna:  
+ Rozpocznij debugowanie, a podczas wykonywania przerywa w pierwszym punkcie przerwania, naciśnij klawisz **F10 (Step Over)** . Powinien zostać wyświetlony następujący w **Autos** okna:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   

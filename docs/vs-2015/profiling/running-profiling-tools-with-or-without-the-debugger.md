@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191672"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Program Visual Studio teraz oferuje możliwość wyboru wydajności narzędzia, 
   
 1. Otwórz projekt w programie Visual Studio.  
   
-2. Na **debugowania** menu, wybierz **Profiler wydajności...** (Klawisz skrótu: Alt + F2).  
+2. Na **debugowania** menu, wybierz **Profiler wydajności...** (Klawisz skrótu: ALT + F2).  
   
 3. Na stronie diagnostyki uruchamiania wybierz co najmniej jedno narzędzie do uruchamiania w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do typu projektu, systemu operacyjnego i język programowania. Po wybraniu narzędziem diagnostycznym, opcje narzędzi, których nie można uruchomić w tej samej sesji diagnostycznej są wyłączone. Poniżej przedstawiono wybrane opcje może wyglądać dla aplikacji w języku C# Windows Universal:  
   

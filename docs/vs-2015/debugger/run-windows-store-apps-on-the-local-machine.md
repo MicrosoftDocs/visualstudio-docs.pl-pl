@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031d764b95aa0f292702dde6167e0be9826270bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196325"
 ---
-# <a name="run-windows-store-apps-on-the-local-machine"></a>Uruchom Windows Store apps na lokalnym komputerze
+# <a name="run-windows-store-apps-on-the-local-machine"></a>Uruchamianie aplikacji ze Sklepu Windows na maszynie lokalnej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content")  
@@ -52,7 +52,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
   
 - W projektach C++ i JavaScript, rozwiń węzeł **właściwości konfiguracji** węzła, kliknij przycisk **debugowanie**, a następnie wybierz pozycję **debuger lokalny** z **debugera Aby uruchomić** listy.  
   
-     ![C&#43;&#43; and JavaScript project properties page](../debugger/media/vsrun-cpp-js-projprop-local.png "VSRUN_CPP_JS_ProjProp_Local")  
+     ![C&#43; &#43; i strony właściwości projektu JavaScript](../debugger/media/vsrun-cpp-js-projprop-local.png "VSRUN_CPP_JS_ProjProp_Local")  
   
 ## <a name="BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor"></a> Jak przełączać się między aplikacji Windows Store i programu Visual Studio na pojedynczy monitor  
  **Aby przełączyć się z uruchomionego wystąpienia aplikacji Windows Store programu Visual Studio**  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159480"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Wstawianie kontrolek i modyfikowanie ich zachowania w programie Projektant XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Kontrolki umożliwiają użytkownikom na interakcję z aplikacją. Można użyć
 ## <a name="Insert"></a> Dodawanie formantów do obszaru kompozycji  
  Można przeciągać formantów z **zasoby** panelu na **obszaru kompozycji**, a następnie zmodyfikuj je w **właściwości** okna.  
   
- ![Blend &#45; Assets &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
+ ![Program Blend &#45; zasoby &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
   
  W tych filmach wideo pokazano, jak korzystać z niektórych bardziej powszechne kontrolek.  
   

@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND_EX | Microsoft Docs
+title: FIELD_KIND_EX | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,11 +11,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6384ea963fe1da145cacc0be46b5989f7bc610
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198754"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ public enum enum_FIELD_KIND_EX
  Pole zawiera zmienną klasy.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Sh.h  
+ Nagłówek: SH.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
