@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2 | Microsoft Docs
+title: IEnumDebugFrameInfo2 | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6cc6a0ff332fd6feac72ce4abf38b5319e63c913
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161011"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ IEnumDebugFrameInfo2 : IUnknown
  Program Visual Studio pobiera ten interfejs jako pierwszy krok do obsługi punktu przerwania, wyjątek lub wstrzymania wygenerowaną przez użytkowników na debugowanego programu. Lista [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury reprezentuje bieżący stos wywołań, przy użyciu bieżącego wywołania funkcji na początku listy i funkcja najstarsze wywołania na końcu listy. Każdy `FRAMEINFO` reprezentuje ramkę stosu, kontekst, w którym mogą być obliczane wyrażenia, oraz znasz zmiennych lokalnych.  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

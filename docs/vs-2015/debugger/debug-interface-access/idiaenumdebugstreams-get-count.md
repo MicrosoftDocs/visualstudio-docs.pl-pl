@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::get_Count | Microsoft Docs
+title: Idiaenumdebugstreams::get_count — | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238fa1386184f7ce6b0cd0ce54334fb52f29a638
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187342"
 ---
 # <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

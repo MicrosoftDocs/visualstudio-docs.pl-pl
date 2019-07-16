@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177969"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Wprowadzenie do debugowania w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Program Visual Studio 2015 zapewnia bogaty zestaw zintegrowanych kompilacja proj
 
  Po prostu zaczynasz pracę, użyj **debugowania** i **x86** jako konfigurację kompilacji i platformy, odpowiednio. Gdy wszystko będzie gotowe do kodowania i debugowania, zmień konfigurację, aby **wersji** i określania elementów docelowych określonej platformy. (Starsze wersje programu Visual Studio, pod warunkiem **AnyCPU** domyślna platforma dla projektów kodu .net.)
 
- Uwaga: Podczas kompilowania projektu wartości Konfiguracja i platforma również służą do określenia, jakie ścieżkę katalogu projektu służy do przechowywania pliku wykonywalnego. Zazwyczaj jest to  **\<ścieżkę do projektu >\\< Nazwa projektu\>\\< configuration\>\\< platforma\>**. Na przykład projektu z konfiguracją `Debug` i platformie `x86` będzie można znaleźć w obszarze `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Może to być przydatne w przypadku własnych narzędzi lub skryptów, które zarządzają tymi skompilowane pliki wykonywalne.
+ Uwaga: Podczas kompilowania projektu wartości Konfiguracja i platforma również służą do określenia, jakie ścieżkę katalogu projektu służy do przechowywania pliku wykonywalnego. Zazwyczaj jest to  **\<ścieżkę do projektu >\\< Nazwa projektu\>\\< configuration\>\\< platforma\>** . Na przykład projektu z konfiguracją `Debug` i platformie `x86` będzie można znaleźć w obszarze `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Może to być przydatne w przypadku własnych narzędzi lub skryptów, które zarządzają tymi skompilowane pliki wykonywalne.
 
 ### <a name="building-your-code"></a>Tworzenie kodu
  Za pomocą kompilacji skonfigurowane nadszedł czas na faktyczne utworzenie projektu. Najprostszym sposobem, aby to zrobić, można nacisnąć klawisz F7, ale można również uruchomić kompilację, wybierając **kompilacji -> Kompiluj rozwiązanie** z menu głównego.

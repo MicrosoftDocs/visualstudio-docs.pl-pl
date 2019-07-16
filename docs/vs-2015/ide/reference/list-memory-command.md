@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 884dda624d5405ec017b544afd223be0bebc97e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199158"
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,10 +43,10 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  Opcjonalna. Wyświetl pamięć jako znaki odpowiadający bajtów pamięci, ANSI lub Unicode.  
   
  / Liczba:`number`  
- Opcjonalna. Określa liczbę bajtów pamięci, aby wyświetlić, zaczynając od `expression`.  
+ Opcjonalny. Określa liczbę bajtów pamięci, aby wyświetlić, zaczynając od `expression`.  
   
  / Format:`formattype`  
- Opcjonalna. Formatowanie typ do wyświetlania informacji o pamięci w **pamięci** okna; może być OneByte TwoBytes, FourBytes, EightBytes, Float (32-bitowa) lub dwukrotnie (64-bitowe). Jeśli OneByte `/Unicode` jest niedostępny.  
+ Opcjonalny. Formatowanie typ do wyświetlania informacji o pamięci w **pamięci** okna; może być OneByte TwoBytes, FourBytes, EightBytes, Float (32-bitowa) lub dwukrotnie (64-bitowe). Jeśli OneByte `/Unicode` jest niedostępny.  
   
  /Hex&#124;Signed&#124;Unsigned  
  Opcjonalna. Określa format wyświetlania liczb: jak podpisem, bez znaku lub szesnastkową.  
@@ -71,9 +71,9 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |**d**|Debug.listmemory —|  
 |**da**|Debug.listmemory — /Ansi|  
 |**db**|Debug.listmemory — /Format:OneByte|  
-|**dc**|Debug.listmemory — /Format:FourBytes /Ansi|  
+|**Kontroler domeny**|Debug.listmemory — /Format:FourBytes /Ansi|  
 |**dd**|Debug.listmemory — /Format:FourBytes|  
-|**df**|Debug.listmemory — /Format:Float|  
+|**DF**|Debug.listmemory — /Format:Float|  
 |**dq**|Debug.listmemory — /Format:EightBytes|  
 |**du**|Debug.listmemory — /Unicode|  
   

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155713"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Tworzenie aplikacji ClickOnce z wiersza poleceń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ W [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], można kompi
 ## <a name="publishing-properties"></a>Właściwości publikowania  
  Gdy będziesz publikować aplikację w powyższych procedurach następujące właściwości są wstawiane do pliku projektu, w Kreatorze publikacji. Te właściwości bezpośrednio wpływają na sposób, w jaki [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji są generowane.  
   
- In CmdLineDemo.vbproj / CmdLineDemo.csproj:  
+ W CmdLineDemo.vbproj / CmdLineDemo.csproj:  
   
 ```  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  
@@ -163,9 +163,9 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |Opcja adresu URL|Opis|  
 |----------------|-----------------|  
 |`PublishURL`|Wymagane, jeśli w przypadku publikowania aplikacji ClickOnce do witryny sieci Web.|  
-|`InstallURL`|Opcjonalna. Ustaw tę opcję, adres URL, jeśli witryna instalacji różni się od `PublishURL`. Na przykład można ustawić `PublishURL` ścieżka FTP i zestaw `InstallURL` do adresu URL sieci Web.|  
-|`SupportURL`|Opcjonalna. Ustaw tę opcję, adres URL, jeśli witrynie pomocy technicznej jest inny niż `PublishURL`. Na przykład można ustawić `SupportURL` do witryny sieci Web pomocy technicznej klienta w firmie.|  
-|`UpdateURL`|Opcjonalna. Ustaw tę opcję, adres URL, jeśli lokalizacji aktualizacji różni się od `InstallURL`. Na przykład można ustawić `PublishURL` ścieżka FTP i zestaw `UpdateURL` do adresu URL sieci Web.|  
+|`InstallURL`|Opcjonalny. Ustaw tę opcję, adres URL, jeśli witryna instalacji różni się od `PublishURL`. Na przykład można ustawić `PublishURL` ścieżka FTP i zestaw `InstallURL` do adresu URL sieci Web.|  
+|`SupportURL`|Opcjonalny. Ustaw tę opcję, adres URL, jeśli witrynie pomocy technicznej jest inny niż `PublishURL`. Na przykład można ustawić `SupportURL` do witryny sieci Web pomocy technicznej klienta w firmie.|  
+|`UpdateURL`|Opcjonalny. Ustaw tę opcję, adres URL, jeśli lokalizacji aktualizacji różni się od `InstallURL`. Na przykład można ustawić `PublishURL` ścieżka FTP i zestaw `UpdateURL` do adresu URL sieci Web.|  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 820d74a9dced29dc237c4bf182419abcb7d503b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194922"
 ---
-# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Duża częstotliwość odzyskiwania pamięci Gen 2
+# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Duża częstotliwość odzyskiwania pamięci 2. generacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0022|  
+Identyfikator reguły | DA0022 |  
 |Category|.NET Framework Usage|  
 | Metoda profilowania | Wszystkie |  
 | Komunikat | Istnieje stosunkowo wysoki stopień Gen 2 wyrzucania elementów bezużytecznych występuje. Jeśli zgodnie z projektem, większość struktur danych programu są przydzielane i utrwalane na dłuższy czas, to nie jest zazwyczaj problem. Jednak w przypadku niezamierzonego to zachowanie aplikacji może być przypinanie obiektów. Jeśli nie masz pewności, można gromadzić .NET pamięć alokacji danych i obiekt informacji o czasie życia poznać wzorce przydzielania pamięci, które Twoja aplikacja używa. |  

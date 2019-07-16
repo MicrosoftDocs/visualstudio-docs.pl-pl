@@ -14,11 +14,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196760"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Określanie, który edytor służy do otwierania pliku w projekcie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Gdy użytkownik otwiera plik w projekcie, środowiska przechodzi przez proces so
   
  Projekt różne pliki oświadczeń wszystkie pliki, które nie są żądane przez inne projekty. W ten sposób niestandardowych edytorów otwierać dokumenty przed standardowych edytorów je otworzyć. Jeśli projekt różne pliki oświadczeń pliku, środowisko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodę, aby otworzyć go za pomocą edytora standardowego. Środowiska sprawdza jego wewnętrzną listę zarejestrowanych edytory dla jednego, który obsługuje .rtf — pliki. Ta lista znajduje się w rejestrze pod następujący klucz:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
   
  Środowiska sprawdza również identyfikatory klasy w kluczu HKEY_CLASSES_ROOT\CLSID dla obiektów, które mają DocObject podklucza. Jeśli rozszerzenie pliku znajduje się tam, wbudowana wersja aplikacji, takiego jak Microsoft Word, zostanie utworzony w miejscu, w programie Visual Studio. Te obiekty dokumentu musi być złożone plików, które implementują <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> musi implementować interfejs lub obiekt <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfejsu.  
   

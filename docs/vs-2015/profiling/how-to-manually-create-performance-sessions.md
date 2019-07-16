@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192830"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Instrukcje: Ręczne tworzenie sesji wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

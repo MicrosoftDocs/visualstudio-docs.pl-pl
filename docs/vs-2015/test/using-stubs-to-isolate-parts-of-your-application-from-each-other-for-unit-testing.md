@@ -9,11 +9,11 @@ caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185716"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb86a15e73ac2410ad763acd3b361e4a82bc44f1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199079"
 ---
 # <a name="new-file-command"></a>Nowy plik — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
  Opcjonalna. Nazwa pliku. Jeśli nazwa nie zostanie podany, zostanie podana nazwa domyślna. Jeśli nazwa szablonu nie ma na liście, zostanie utworzony plik tekstowy.  
   
 ## <a name="switches"></a>Przełączniki  
- /t:`templatename`  
+ t:`templatename`  
  Opcjonalna. Określa typ pliku ma zostać utworzony.  
   
  T:`templatename` argument składni odzwierciedla informacji znajdujących się w oknie dialogowym Nowy plik. Wprowadź nazwę kategorii, a następnie znakiem ukośnika odwrotnego (`\`) i szablonu, nazwy i ująć cały ciąg w cudzysłowie.  

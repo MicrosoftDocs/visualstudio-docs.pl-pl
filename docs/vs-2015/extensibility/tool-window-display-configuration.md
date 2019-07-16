@@ -12,13 +12,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186394"
 ---
-# <a name="tool-window-display-configuration"></a>Konfiguracja ekranu okna narzędzi
+# <a name="tool-window-display-configuration"></a>Konfiguracja wyświetlania okna narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kiedy pakietu VSPackage rejestruje okna narzędzi, domyślne położenie, rozmiar, styl dokowania i inne informacje o widoczności określono opcjonalnych wartości. Aby uzyskać więcej informacji na temat rejestrowanie okna narzędzi, zobacz [narzędzie Windows w rejestrze](../extensibility/tool-windows-in-the-registry.md)  
@@ -40,8 +40,8 @@ HKEY_LOCAL_MACHINE\
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
 |Nazwa|REG_SZ|"Krótką nazwę miejsce"|Krótka nazwa opisująca okna narzędzia. Używany tylko w przypadku odwołania w rejestrze.|  
-|float|REG_SZ|"X1, Y1, X2, Y2"|Cztery wartości rozdzielonych przecinkami. X1, Y1 jest współrzędnych w lewym górnym rogu okna narzędzia. X2, Y2 jest współrzędną prawym dolnym rogu. Wszystkie wartości są we współrzędnych ekranu.|  
-|Styl|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Połączone"<br /><br /> "Tabbed"<br /><br /> "AlwaysFloat"|Słowo kluczowe określający początkowej wyświetlenia stanu okna narzędzi.<br /><br /> "MDI" = zadokowane okna MDI.<br /><br /> "Float" = liczb zmiennoprzecinkowych.<br /><br /> "Połączone" = powiązanym z innego okna (określony we wpisie okno).<br /><br /> "Z kartami" = w połączeniu z innego okna narzędzi.<br /><br /> "AlwaysFloat" = nie może być zadokowane.<br /><br /> Aby uzyskać więcej informacji zobacz sekcję uwagi poniżej.|  
+|Float|REG_SZ|"X1, Y1, X2, Y2"|Cztery wartości rozdzielonych przecinkami. X1, Y1 jest współrzędnych w lewym górnym rogu okna narzędzia. X2, Y2 jest współrzędną prawym dolnym rogu. Wszystkie wartości są we współrzędnych ekranu.|  
+|Styl|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Połączone"<br /><br /> "Z kartami"<br /><br /> "AlwaysFloat"|Słowo kluczowe określający początkowej wyświetlenia stanu okna narzędzi.<br /><br /> "MDI" = zadokowane okna MDI.<br /><br /> "Float" = liczb zmiennoprzecinkowych.<br /><br /> "Połączone" = powiązanym z innego okna (określony we wpisie okno).<br /><br /> "Z kartami" = w połączeniu z innego okna narzędzi.<br /><br /> "AlwaysFloat" = nie może być zadokowane.<br /><br /> Aby uzyskać więcej informacji zobacz sekcję uwagi poniżej.|  
 |Okno|REG_SZ|*\<GUID>*|Identyfikator GUID okna, do którego okna narzędzi mogą być połączone lub z zakładkami. Identyfikator GUID może należeć do jednej z własnego systemu windows, czy systemu windows w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |Orientacja|REG_SZ|"Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Dolnej"|Zobacz sekcję uwagi poniżej.|  
 |DontForceCreate|REG_DWORD|0 lub 1|Gdy ten wpis jest obecny, a jego wartość nie wynosi zero, okno jest załadowany, ale nie natychmiast wyświetlone.|  
@@ -109,4 +109,4 @@ HKEY_LOCAL_MACHINE\
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [VSPackage Essentials](../misc/vspackage-essentials.md)
+ [Podstawowe informacje dotyczące pakietu VSPackage](../misc/vspackage-essentials.md)

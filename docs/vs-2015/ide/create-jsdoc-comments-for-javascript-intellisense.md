@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4d300651731b38b9b86421d36d9de169dc6464d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188792"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Tworzenie komentarzy JSDoc na potrzeby funkcji IntelliSense języka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Funkcja IntelliSense w programie Visual Studio Wyświetla informacje, które mo�
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | @deprecated  |              @deprecated *Opis elementu*              |                                   Określa zaniechanej funkcji lub metody.                                   |
 | @description |             @description *Opis elementu*              |                              Określa opis funkcji lub metody.                               |
-|    @param    | @param {*type*} *parameterName*<em>description</em> | Określa informacje dla parametru w funkcji lub metody.<br /><br /> Obsługuje również TypeScript @paramTag. |
+|    @param    | @param {*typu*} *parameterName*<em>opis</em> | Określa informacje dla parametru w funkcji lub metody.<br /><br /> Obsługuje również TypeScript @paramTag. |
 |  @property   |          @property {*typu*} *propertyName*          |   Określa informacje, w tym opis, pola lub elementu członkowskiego, który jest zdefiniowany w obiekcie.    |
 |   @returns   |                  @returns {*typu*}                  |           Określa wartość zwracaną.<br /><br /> TypeScript, można użyć @returnType zamiast @returns.           |
 |   @summary   |               @summary *Opis elementu*                |                   Określa opis funkcji lub metody (taka sama jak @description).                   |

@@ -11,11 +11,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e4d47a72adf787f5d560374e1c44743004d25f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203240"
 ---
 # <a name="providing-automation-for-code"></a>Zapewnianie automatyzacji kodu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

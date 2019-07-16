@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195525"
 ---
 # <a name="performance-explorer-window"></a>Okno Eksploratora wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

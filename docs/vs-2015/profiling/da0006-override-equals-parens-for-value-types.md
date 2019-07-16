@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2229edad7ff338251fea23740343e23f87aa2792
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158678"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Przesłoń metodę Equals() dla typów wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0006|  
+Identyfikator reguły | DA0006 |  
 |Category|.NET Framework Usage|  
 | Metody Profiiling | Próbkowanie |  
 | Komunikat | Przesłoń metodę Equals i operator równości dla typów wartości. |  

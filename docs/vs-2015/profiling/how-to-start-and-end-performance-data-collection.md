@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15c6d6c904bbab27bac541894ed6cd4f9e1f80f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202677"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>Instrukcje: Rozpoczęcia i zakończenia zbierania danych o wydajności
+# <a name="how-to-start-and-end-performance-data-collection"></a>Instrukcje: Rozpoczynanie i zatrzymywanie zbierania danych wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Docelowe dane binarne, które chcesz należy dodać do profilu do sesji wydajności przed rozpoczęciem profilowania. Aby dodać element docelowy, kliknij prawym przyciskiem myszy **obiektów docelowych** w **Eksplorator wydajności**, a następnie kliknij przycisk **Dodaj binarne docelowej**. W **Dodaj binarne docelowej** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**. Zostanie dodany nowy plik binarny.  

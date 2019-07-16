@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a550b4a6634604594da0893e3f420fd9c38ca3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181019"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Można skompilować projekt, do uruchamiania na *platformę docelową*, czyli ko
   
 - [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (zawarte w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
   
-- The [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
   
 - [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (zawarte w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
   

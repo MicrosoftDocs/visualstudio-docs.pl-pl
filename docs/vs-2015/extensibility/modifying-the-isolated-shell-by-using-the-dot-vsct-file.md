@@ -11,11 +11,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c106a04e809e772ac3b8a77192fb2f101161e9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194234"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modyfikowanie programu Isolated Shell przy użyciu. Pliku Vsct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

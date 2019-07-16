@@ -14,11 +14,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1b6e74caa9eedd42e25339d62f5837ccfe82d001
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204378"
 ---
 # <a name="file-status-code-enumerator"></a>Moduł wyliczający kod stanu pliku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

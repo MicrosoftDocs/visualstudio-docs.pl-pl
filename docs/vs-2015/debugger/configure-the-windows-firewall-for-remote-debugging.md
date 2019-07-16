@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161541"
 ---
-# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Skonfiguruj zaporę Windows do zdalnego debugowania
+# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie opisano sposób skonfigurowania zapory w celu włączenia debugowania zdalnego na komputerach z następującymi systemami operacyjnymi:  
@@ -80,8 +80,8 @@ W tym temacie opisano sposób skonfigurowania zapory w celu włączenia debugowa
 |-|-|-|-|  
 |**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|  
 |3702|Wychodzące|UDP|Wymagana w przypadku odnajdywania zdalnego debugera.|  
-|4020||TCP|For VS 2015. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual przypisania portów debugera zdalnego Studio.|  
-|4021||TCP|For VS 2015. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual przypisania portów debugera zdalnego Studio.|  
+|4020||TCP|Dla programu VS 2015. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual przypisania portów debugera zdalnego Studio.|  
+|4021||TCP|Dla programu VS 2015. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual przypisania portów debugera zdalnego Studio.|  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging-with-managed-or-native-compatibility-mode"></a>Porty na komputerze zdalnym, które umożliwiają zdalne debugowanie w trybie zgodności zarządzane lub natywne  
   
@@ -89,7 +89,7 @@ W tym temacie opisano sposób skonfigurowania zapory w celu włączenia debugowa
 |-|-|-|-|  
 |**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|  
 |135, 139, 445|Wychodzące|TCP|Wymagana.|  
-|137, 138|Wychodzące|UDP|Wymagana.|  
+|137, 138|Wychodzące|UDP|Wymagane.|  
 |500, 4500|Wychodzące|UDP|Wymagane, jeśli zasady domeny wymaga komunikacji sieciowej, można wykonać przy użyciu protokołu IPSec.|  
 |80|Wychodzące|TCP|Wymagane na potrzeby debugowania na serwerze sieci Web.|  
   

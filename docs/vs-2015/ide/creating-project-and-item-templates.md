@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bfcfadf13074c3fc1dc82fce51f449453ca03b11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201911"
 ---
 # <a name="creating-project-and-item-templates"></a>Tworzenie szablonów projektów i elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Szablony projektu i elementu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewn
  Zestawy startowe są rozszerzone przez szablony, które mogą być współużytkowane z innymi członkami społeczności. Zestaw startowy zawiera przykłady kodu, które kompilują, dokumentację i inne zasoby, aby pomóc użytkownikom poznać nowe narzędzia i techniki programowania, podczas tworzenia użytecznych, rzeczywistych aplikacji. Podstawowe zawartości i procedury zestawu startowego są identyczne z tymi szablonami. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie pakietów startowych](../ide/how-to-create-starter-kits.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Create Project Templates](../ide/how-to-create-project-templates.md)   
+ [Instrukcje: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)   
  [Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)   
  [Parametry szablonu](../ide/template-parameters.md)   
  [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)   

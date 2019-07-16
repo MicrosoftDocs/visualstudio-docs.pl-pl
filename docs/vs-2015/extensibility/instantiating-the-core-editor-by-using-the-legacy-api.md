@@ -11,13 +11,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203911"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Utworzenie wystąpienia podstawowy edytor za pomocą starszej wersji interfejsu API
+# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Tworzenie wystąpienia edytora podstawowego przy użyciu starszej wersji interfejsu API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Edytor jest odpowiedzialny za edycji funkcji, takich jak wstawianie, usuwanie, kopiowanie i wklejanie tekstu. Łączy te funkcje z udostępnianych przez usługi w języka, takich jak tekst, kolorowanie, wcięcia i instrukcji IntelliSense.  
@@ -69,4 +69,4 @@ Edytor jest odpowiedzialny za edycji funkcji, takich jak wstawianie, usuwanie, k
 ## <a name="see-also"></a>Zobacz też  
  [W edytorze podstawowych](../extensibility/inside-the-core-editor.md)   
  [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)   
- [Przewodnik: Tworzenie edytorze podstawowych i rejestrowanie typu pliku w edytorze](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [Przewodnik: tworzenie edytora podstawowego i rejestrowanie typu pliku edytora](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

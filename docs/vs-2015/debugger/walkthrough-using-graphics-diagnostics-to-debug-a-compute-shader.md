@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186934"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Przewodnik: Używanie Graphics Diagnostics do debugowania cieniowania obliczenia
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Przewodnik: używanie diagnostyki grafiki do debugowania cieniowania obliczenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu przedstawiono sposób korzystania z narzędzi Visual Studio diagnostyki grafiki do zbadania cieniowania obliczenia, które generuje nieprawidłowe wyniki.  

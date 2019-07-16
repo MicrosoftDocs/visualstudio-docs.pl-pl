@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196949"
 ---
 # <a name="creating-options-pages"></a>Tworzenie stron opcji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

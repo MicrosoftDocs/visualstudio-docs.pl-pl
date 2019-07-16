@@ -12,11 +12,11 @@ caps.latest.revision: 49
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c5df1ce1721c63b5c5cfc3c5b94929da088660f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184881"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Dodawanie paska narzędzi do okna narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi do okna narzędzi.
   
      Powinien pojawić się narzędzi (wygląda jak ikona domyślna), u góry po lewej części okna narzędzia tuż poniżej tytułu.  
   
-3. Na pasku narzędzi kliknij ikonę, aby wyświetlić komunikat **TWTestCommandPackage wewnątrz TWToolbar.TWTestCommand.MenuItemCallback()**.  
+3. Na pasku narzędzi kliknij ikonę, aby wyświetlić komunikat **TWTestCommandPackage wewnątrz TWToolbar.TWTestCommand.MenuItemCallback()** .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md)

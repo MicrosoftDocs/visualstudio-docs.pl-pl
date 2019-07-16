@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184359"
 ---
 # <a name="command-flag-element"></a>Command Flag, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Modyfikuje odpowiedniego elementu nadrzędnego.
 |DontCache|Środowisko projektowe nie będzie buforować `QueryStatus` wyników metod dla tego polecenia.<br /><br /> Menu oznacza to kontroler menu, nie będzie buforować tekst jego elementów menu. Należy użyć tej flagi, gdy menu zawiera dynamiczne elementy lub elementy mające dynamiczny tekst.<br /><br /> Prawidłowe dla: `Button`, `Menu`|  
 |DynamicItemStart|Wskazuje początek listy dynamicznej. Dzięki temu środowisko w celu utworzenia listy kolejno wywołując `QueryStatus` metoda dla elementów listy, dopóki nie zostanie zwrócony flagi OLECMDERR_E_UNSUPPORTED. Działa to dobrze sprawdza się w elementy takie, jak ostatnio używanych (MRU) listy i listy okna.<br /><br /> Obowiązuje dla: `Button`|  
 |DynamicVisibility|Widoczność polecenia można zmienić, modyfikując `QueryStatus` metody lub za pomocą identyfikatora GUID, który znajduje się w kontekście `VisibilityConstraints` sekcji.<br /><br /> Ma zastosowanie do poleceń, które są wyświetlane w menu i na paskach narzędzi okna, ale nie na paski narzędzi najwyższego poziomu, które znajdują się w głównym oknie. Elementy paska narzędzi najwyższego poziomu mogą być wyłączone, ale nie jest to ukryty, gdy flaga OLECMDF_INVISIBLE jest zwracany z `QueryStatus` metody. Mogą być ukrywane polecenia paska narzędzi, które pojawiają się na paskach narzędzi okna.<br /><br /> W menu ta flaga wskazuje także, czy go powinny być automatycznie ukrywane podczas jej elementy członkowskie są ukryte. Ta flaga jest zazwyczaj przypisany do podmenu, ponieważ menu najwyższego poziomu już to zachowanie.<br /><br /> Ta flaga powinna być połączone z `DefaultInvisible` flagi.<br /><br /> Prawidłowe dla: `Button`, `Combo`, `Menu`|  
-|FilterKeys|Zobacz temat filtrowania klucze w ramach [Combo, Element](../extensibility/combo-element.md).<br /><br /> Obowiązuje dla: `Combo`|  
+|KlawiszeFiltru|Zobacz temat filtrowania klucze w ramach [Combo, Element](../extensibility/combo-element.md).<br /><br /> Obowiązuje dla: `Combo`|  
 |FixMenuController|Jeśli to polecenie jest ustawiony na kontroler menu, polecenie jest zawsze domyślnie; oznacza to, że polecenie jest zaznaczone, zawsze wtedy, gdy wybrano przycisk menu kontrolera. Jeśli kontroler menu `TextIsAnchorCommand` Flaga, a następnie kontroler menu pobiera również jego tekstu polecenia, który ma `FixMenuController` flagi.<br /><br /> Powinien mieć tylko jedno polecenie na kontrolerze menu `FixMenuController` flagi. Jeśli więcej niż jednego polecenia, dlatego jest oznaczona, ostatnie polecenie w menu staje się domyślnego polecenia.<br /><br /> Obowiązuje dla: `Button`|  
 |IconAndText|Pokaż ikonę i tekst w menu i paska narzędzi.<br /><br /> Prawidłowe dla: `Button`, `Combo`, `Menu`|  
 |NoAutoComplete|Funkcja autouzupełniania jest wyłączona.<br /><br /> Obowiązuje dla: `Combo`|  

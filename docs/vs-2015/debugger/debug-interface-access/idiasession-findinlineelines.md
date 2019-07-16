@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6603186fd35b1bc2a1ba4ccf2bf5ce052e3d6d65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165660"
 ---
 # <a name="idiasessionfindinlineelines"></a>IDiaSession::findInlineeLines
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,6 +44,6 @@ HRESULT findInlineeLines ( 
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
  [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

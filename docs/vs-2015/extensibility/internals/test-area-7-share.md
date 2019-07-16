@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203131"
 ---
 # <a name="test-area-7-share"></a>Obszar testowy 7: Udostępnij
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

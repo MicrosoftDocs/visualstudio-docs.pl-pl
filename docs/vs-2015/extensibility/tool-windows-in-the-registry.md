@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cedb95ccd98c3d5bd5e05086cfd1b53b0f97cd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186385"
 ---
-# <a name="tool-windows-in-the-registry"></a>Narzędzie Windows w rejestrze
+# <a name="tool-windows-in-the-registry"></a>Okna narzędzi w rejestrze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Należy zarejestrować pakietów VSPackage, zapewniające okien narzędzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jako narzędzie dostawców okna. Narzędzie okien utworzone za pomocą szablonu pakietu Visual Studio w tym domyślnie. Dostarczających okno narzędzia ma klucze rejestru systemu, które określają atrybuty widoczności, takie jak domyślny rozmiar okna narzędzia i lokalizację, identyfikator GUID okna, które służy jako okienko narzędzi i styl dokowania.  
@@ -43,4 +43,4 @@ Należy zarejestrować pakietów VSPackage, zapewniające okien narzędzi [!INCL
  Drugi klucz opcjonalne ToolWindows\Visibility, określa identyfikator GUID w faktycznej poleceń, które wymagają okna narzędzi, aby były widoczne. W tym przypadku nie istnieją żadne polecenia nie określono. Aby uzyskać więcej informacji, zobacz [konfiguracji wyświetlania okna narzędzia](../extensibility/tool-window-display-configuration.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [VSPackage Essentials](../misc/vspackage-essentials.md)
+ [Podstawowe informacje dotyczące pakietu VSPackage](../misc/vspackage-essentials.md)

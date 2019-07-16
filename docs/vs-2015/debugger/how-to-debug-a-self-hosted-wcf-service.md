@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e58acc6323f396f9b0755e84b369ce0fdf413c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185179"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Instrukcje: Debugowanie hostowania samoobsługowego WCF usługi
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Instrukcje: Debugowanie samodzielnie hostowanej usługi WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A *usługi hosta samodzielnego* to usługa WCF, która nie jest uruchamiane w usługach IIS, Host usługi WCF, lub [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serwera projektowego. Najprostszym sposobem na debugowanie hostowania samoobsługowego WCF jest skonfigurowanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do uruchomienia klienta i serwera, po wybraniu **Rozpocznij debugowanie** na **debugowania** menu.  

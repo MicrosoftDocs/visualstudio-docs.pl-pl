@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184697"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flagi bitowe używane przez określone polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmo
 |`SCC_DIFF_QD_TIME`|0x0040|Głębokość kolejki przez sygnaturę daty i godziny pliku.|  
 |`SCC_DIFF_QUICK_DIFF`|0x0070|Jest to maskę użytych do sprawdzenia wszystkie flagi bitowe głębokość kolejki. Nie powinny być przekazywane do funkcji; trzy flagi bitowe głębokość kolejki wzajemnie się wykluczają. Głębokość kolejki zawsze oznacza nie wyświetlania interfejsu użytkownika.|  
   
-## <a name="populatelist-flag"></a>PopulateList Flag  
+## <a name="populatelist-flag"></a>Flaga PopulateList  
  Ta flaga jest używana przez [SccPopulateList](../extensibility/sccpopulatelist-function.md) w `fOptions` parametru.  
   
 |Flaga|Wartość|Opis|  
@@ -67,7 +67,7 @@ Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmo
 |SCC_PDL_RECURSIVE|0x0001|Rekursywnie sprawdzić wszystkie katalogi w ramach każdego danego katalogu.|  
 |SCC_PDL_INCLUDEFILES|0x0002|Nazwy załączonych plików w procesie badania.|  
   
-## <a name="openproject-flags"></a>OpenProject Flags  
+## <a name="openproject-flags"></a>Flagi OpenProject  
  Te flagi są używane przez [SccOpenProject](../extensibility/sccopenproject-function.md) w `dwFlags` parametru.  
   
 |Wartość opcji|Wartość|Opis|  

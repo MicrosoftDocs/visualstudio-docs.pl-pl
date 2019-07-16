@@ -6,20 +6,20 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/02/2019
+ms.date: 05/21/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 4687c9f5d522276b223b1f0af68e2dba02082f1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 331653e30107de20b275eae55d0bce1bcd0a40b8
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962627"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68176829"
 ---
 ## <a name="test-controller"></a>Kontroler testów
 
-**ID:** Microsoft.VisualStudio.Workload.TestController
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.TestController
 
 **Opis:** Można rozprowadzać zautomatyzowane testy na wielu komputerach
 

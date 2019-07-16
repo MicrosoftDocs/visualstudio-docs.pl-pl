@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6102fd8eace3db19e44a0214ce7ce98278b53eea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198209"
 ---
-# <a name="debugger-navigation-sample-code-javascript"></a>Przykładowy kod nawigacji (JavaScript) debugera
+# <a name="debugger-navigation-sample-code-javascript"></a>Przykładowy kod nawigacji debugera (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kod w tym temacie jest przykładowy plik dla [kontrolować wykonywanie w trakcie sesji debugowania (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) tematu.  

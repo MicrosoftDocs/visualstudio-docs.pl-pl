@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194945"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplikacja 32-bitowa działa w procesie granicach pamięci zarządzanej
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Działająca aplikacja 32-bitowa zbliżyła się do limitu pamięci zarządzanej dla procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0018|  
+Identyfikator reguły | DA0018 |  
 | Kategoria | Profilowanie użycia narzędzia |  
 | Metoda profilowania | Próbkowanie |  
 | Komunikat | Zarządzane alokacji pamięci, zbliża się limit domyślny dla procesu 32-bitowych. Aplikacja może być powiązane z pamięci. |  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e0a4a8482dc1c2c66a45902f2f3382b179b46b13
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199119"
 ---
 # <a name="list-source-command"></a>Lista źródeł — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,19 +36,19 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
   
 ## <a name="switches"></a>Przełączniki  
  / Liczba:`number`  
- Opcjonalna. Określa liczbę wierszy do wyświetlenia.  
+ Opcjonalny. Określa liczbę wierszy do wyświetlenia.  
   
  / Bieżąca  
  Opcjonalna. Pokazuje bieżący wiersz.  
   
- /File:`filename`  
- Opcjonalna. Ścieżka pliku do wyświetlenia. Jeśli nazwa pliku nie zostanie określony, polecenie wyświetla kod źródłowy dla wiersza bieżącej instrukcji.  
+ / Pliku:`filename`  
+ Opcjonalny. Ścieżka pliku do wyświetlenia. Jeśli nazwa pliku nie zostanie określony, polecenie wyświetla kod źródłowy dla wiersza bieżącej instrukcji.  
   
  / Linii:`number`  
- Opcjonalna. Pokazuje określonego numeru wiersza.  
+ Opcjonalny. Pokazuje określonego numeru wiersza.  
   
  / ShowLineNumbers:`yes|no`  
- Opcjonalna. Określa, czy wyświetlanie numerów wierszy.  
+ Opcjonalny. Określa, czy wyświetlanie numerów wierszy.  
   
 ## <a name="remarks"></a>Uwagi  
   

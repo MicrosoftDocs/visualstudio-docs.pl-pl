@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1072d38adac020a1b9976d17f98ddf8882d7cb22
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178820"
 ---
 # <a name="index-search-tips"></a>Wskazówki dotyczące wyszukiwania w Indeksie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

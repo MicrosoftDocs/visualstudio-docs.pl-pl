@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c409175fb39207bc0e83a521577ad6d641731691
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204869"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Poniżej przedstawiono interfejsy obsługi symboli dla [!INCLUDE[vsipsdk](../../
 |[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|SP|Podstawowy interfejs dla dowolnego typu, który można określić w czasie wykonywania.|  
 |[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|SP|Reprezentuje dynamiczne pole dla [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) obiektu.|  
 |[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)|SP|Reprezentuje typ wyliczenia.|  
-|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|Sp|Rozszerza typy dostępnych pól, które obsługują elementy ogólne kodu zarządzanego.|  
+|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|SP|Rozszerza typy dostępnych pól, które obsługują elementy ogólne kodu zarządzanego.|  
 |[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|SP|Klasa bazowa dla wszystkich pól; reprezentuje opis symbolu lub typu.|  
 |[IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)|SP|Reprezentuje definicję pola dla kodu zarządzanego typu ogólnego.|  
 |[IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)|SP|Reprezentuje wystąpienie pola dla kodu zarządzanego typu ogólnego.|  

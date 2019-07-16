@@ -11,11 +11,11 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201958"
 ---
 # <a name="walkthrough-outlining"></a>Przewodnik: Tworzenie konspektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,4 +134,4 @@ Możesz zaimplementować opartych na języku funkcje, takie jak tworzenie konspe
 4. Powinna istnieć konspektu region, który zawiera oba nawiasów klamrowych. Można kliknąć przycisk z lewej strony otwierający nawias klamrowy znak MINUS, aby zwinąć konspektu regionu. Gdy region jest zwinięte, symbol wielokropka (...) powinien pojawić się po lewej stronie Zwinięty region, a okno podręczne zawierające tekst **umieść tekst** powinien zostać wyświetlony po umieszczeniu wskaźnika na wielokropek.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

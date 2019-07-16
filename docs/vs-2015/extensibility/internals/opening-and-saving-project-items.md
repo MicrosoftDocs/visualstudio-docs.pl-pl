@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158066"
 ---
 # <a name="opening-and-saving-project-items"></a>Otwieranie i zapisywanie elementów projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Po dodaniu nowych typów projektów, należy zarządzać otwieranie i zapisywani
  [Wyświetlanie plików przy użyciu polecenia Otwórz za pomocą](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  Zapewnia szczegółowe, krok po kroku wyjaśnienie sposobu obsługi IDE **Otwórz za pomocą** polecenie otwarcia pliku, który ma kilka wybór standardowych edytorów monitowania.  
   
- [Instrukcje: Otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Instrukcje: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)  
  Instrukcje krok po kroku do określania, że pliki określonego typu projektu powinien zostać otwarty przy użyciu edytora specyficznych dla projektu.  
   
- [Instrukcje: Otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)  
+ [Instrukcje: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)  
  Instrukcje krok po kroku do określania sposobu włączania IDE otworzyć Edytor standardowy dla plików typu projektu.  
   
- [Instrukcje: Otwieranie edytorów dla otwartych dokumentów](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [Instrukcje: otwieranie edytorów dla otwartych dokumentów](../../extensibility/how-to-open-editors-for-open-documents.md)  
  Instrukcje krok po kroku można otworzyć edytora specyficznych dla projektu, dla otwartego pliku.  
   
  [Zapisywanie standardowego dokumentu](../../extensibility/internals/saving-a-standard-document.md)  

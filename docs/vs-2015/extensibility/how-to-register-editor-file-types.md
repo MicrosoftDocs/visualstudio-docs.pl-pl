@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204118"
 ---
-# <a name="how-to-register-editor-file-types"></a>Instrukcje: Typy plików edytora rejestru
+# <a name="how-to-register-editor-file-types"></a>Instrukcje: Rejestrowanie typów plików edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atrybutów rejestracji w ramach [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] zarządzanych klas framework (MPF) pakietu. W przypadku wdrażania pakietu w trybie macierzystym [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], można także napisać skrypt rejestru, który rejestruje edytora i rozszerzenia skojarzone.  

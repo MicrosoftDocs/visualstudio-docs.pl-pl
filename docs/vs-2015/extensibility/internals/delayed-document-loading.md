@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196869"
 ---
 # <a name="delayed-document-loading"></a>Opóźnione ładowanie dokumentu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ Po użytkownik ponownie otwiera rozwiązanie programu Visual Studio, większoś�
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Testowanie rozszerzeń, aby zobaczyć, wymusić inicjowania  
  Nie ma żadnych widoczne sygnalizacji, aby wskazać, czy dokument został zainicjowany, dzięki czemu może być trudne dowiedzieć się, jeśli rozszerzenie jest wymuszenie inicjowania. Można ustawić klucz rejestru, który ułatwia weryfikacji, ponieważ sprawia, że tytuł każdego dokumentu, który nie jest w pełni zainicjowany do nazwy zawierają tekst `[Stub]` w tytule.  
   
- W **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** ustaw **StubTabTitleFormatString** do  **{0} [Stub]**.
+ W **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** ustaw **StubTabTitleFormatString** do  **{0} [Stub]** .

@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184333"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,16 +40,16 @@ CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzgl
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagana. Identyfikator guid zestawu poleceń, zgodnie z definicją w [Symbols, Element](../extensibility/symbols-element.md).|  
-|identyfikator|Wymagana. Identyfikator menu, grupy lub polecenie, aby umieścić zgodnie z definicją w `Symbols Element`.|  
-|priority|Wymagana. Określa położenie visual elementu w jego elementu nadrzędnego.|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Identyfikator GUID|Wymagane. Identyfikator guid zestawu poleceń, zgodnie z definicją w [Symbols, Element](../extensibility/symbols-element.md).|  
+|identyfikator|Wymagane. Identyfikator menu, grupy lub polecenie, aby umieścić zgodnie z definicją w `Symbols Element`.|  
+|priority|Wymagane. Określa położenie visual elementu w jego elementu nadrzędnego.|  
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Nadrzędny|Wymagana. Menu lub grupy, która hostuje element które mają być umieszczone.|  
+|Nadrzędny|Wymagany. Menu lub grupy, która hostuje element które mają być umieszczone.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   

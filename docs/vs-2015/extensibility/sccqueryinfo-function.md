@@ -1,5 +1,5 @@
 ---
-title: SccQueryInfo Function | Microsoft Docs
+title: Funkcja SccQueryInfo | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199983"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

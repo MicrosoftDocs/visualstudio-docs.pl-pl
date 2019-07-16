@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7b491cf06528b67c96f90f314210e61800e0cab1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200341"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Użyj porządkowego ustawienia właściwości StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ ms.locfileid: "54762762"
  Jest bezpieczne pominąć ostrzeżenie od tej reguły, gdy do biblioteki lub aplikacji jest przeznaczony dla ograniczonej odbiorców lokalnych lub semantykę bieżącej kultury, które powinny być używane.
 
 ## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md) [CA1307: Specify StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+ [Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md) [CA1307: Określ argument StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

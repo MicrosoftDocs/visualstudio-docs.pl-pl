@@ -11,15 +11,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 1e9ac9e8371c1dab482fd16ce4d10e8982ba1aee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968399"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68177645"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Edytor Visual Studio core (dostarczane z Visual Studio Enterprise 2017)
 
-**ID:** Microsoft.VisualStudio.Workload.CoreEditor
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.CoreEditor
 
 **Opis:** Visual Studio podstawowe funkcje powłoki, w tym kodu uwzględniającej składnię, edycji i kontroli kodu źródłowego i zarządzanie elementami roboczymi.
 
@@ -32,7 +32,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Program Visual Studio
 
 ## <a name="azure-development"></a>Programowanie na platformie Azure
 
-**ID:** Microsoft.VisualStudio.Workload.Azure
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Azure
 
 **Opis:** Zestawy SDK platformy Azure, narzędzia i projekty do tworzenia aplikacji w chmurze obsługuje tworzenie zasobów i kompilowania kontenerów platformy Docker.
 
@@ -128,7 +128,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ## <a name="data-storage-and-processing"></a>Magazynowanie i przetwarzanie danych
 
-**ID:** Microsoft.VisualStudio.Workload.Data
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Data
 
 **Opis:** Łączenie, opracowywanie i testowanie rozwiązań danych przy użyciu programu SQL Server, usługa Azure Data Lake lub usługi Hadoop.
 
@@ -191,7 +191,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F#Obsługa pulpitu języka | 1
 
 ## <a name="data-science-and-analytical-applications"></a>Aplikacje do analizy i przetwarzania danych
 
-**ID:** Microsoft.VisualStudio.Workload.DataScience
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.DataScience
 
 **Opis:** Języki i narzędzia do tworzenia aplikacji do analizy danych, w tym języka Python, R i F#.
 
@@ -236,7 +236,7 @@ Microsoft.VisualStudio.Component.Windows81SDK | Zestaw SDK systemu Windows 8.1 |
 
 ## <a name="net-desktop-development"></a>Programowanie aplikacji klasycznych dla platformy .NET
 
-**ID:** Microsoft.VisualStudio.Workload.ManagedDesktop
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.ManagedDesktop
 
 **Opis:** Tworzenie WPF, Windows Forms i aplikacji konsolowych przy użyciu C#, Visual Basic i F#.
 
@@ -319,7 +319,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET i tworzenie a
 
 ## <a name="game-development-with-unity"></a>Programowanie gier za pomocą aparatu Unity
 
-**ID:** Microsoft.VisualStudio.Workload.ManagedGame
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.ManagedGame
 
 **Opis:** Twórz gry 2D i 3D za pomocą aparatu Unity, zaawansowane Międzyplatformowe środowisko programistyczne.
 
@@ -339,7 +339,7 @@ Component.UnityEngine.x86 | Unity 5.6 32-bitowych edytora | 15.6.27406.0 | Zalec
 
 ## <a name="linux-development-with-c"></a>Programowanie dla systemu Linux przy użyciu języka C++
 
-**ID:** Microsoft.VisualStudio.Workload.NativeCrossPlat
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NativeCrossPlat
 
 **Opis:** Twórz i Debuguj aplikacje działające w środowisku systemu Linux.
 
@@ -359,7 +359,7 @@ Component.MDD.Linux.GCC.arm | Osadzonych i IoT rozwoju | 15.6.27309.0 | Optional
 
 ## <a name="desktop-development-with-c"></a>Programowanie aplikacji klasycznych w języku C++
 
-**ID:** Microsoft.VisualStudio.Workload.NativeDesktop
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NativeDesktop
 
 **Opis:** Twórz aplikacje pulpitu Windows przy użyciu zestawu narzędzi Microsoft C++, ATL lub MFC.
 
@@ -422,7 +422,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="game-development-with-c"></a>Programowanie gier w języku C++
 
-**ID:** Microsoft.VisualStudio.Workload.NativeGame
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NativeGame
 
 **Opis:** Użyj pełnych możliwości języka C++, aby tworzyć profesjonalne gry obsługiwane przez program DirectX, Unreal i Cocos2d.
 
@@ -481,7 +481,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="mobile-development-with-c"></a>Tworzenie aplikacji mobilnych w języku C++
 
-**ID:** Microsoft.VisualStudio.Workload.NativeMobile
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NativeMobile
 
 **Opis:** Twórz aplikacje Międzyplatformowe dla systemów iOS, Android lub Windows przy użyciu języka C++.
 
@@ -512,7 +512,7 @@ Component.MDD.IOS | Narzędzia programistyczne dla systemu iOS C++ | 15.0.26621.
 
 ## <a name="net-core-cross-platform-development"></a>Programowanie dla wielu platform .NET core
 
-**ID:** Microsoft.VisualStudio.Workload.NetCoreTools
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NetCoreTools
 
 **Opis:** Twórz aplikacje dla wielu platform przy użyciu platformy .NET Core, ASP.NET Core, HTML/JavaScript i kontenerów, w tym obsługę platformy Docker.
 
@@ -583,7 +583,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Obsługa usług IIS w cza
 
 ## <a name="mobile-development-with-net"></a>Tworzenie aplikacji mobilnych przy użyciu platformy .NET
 
-**ID:** Microsoft.VisualStudio.Workload.NetCrossPlat
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NetCrossPlat
 
 **Opis:** Twórz aplikacje Międzyplatformowe dla systemów iOS, Android i Windows za pomocą platformy Xamarin.
 
@@ -633,7 +633,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Narzędzia platformy Windows
 
 ## <a name="aspnet-and-web-development"></a>ASP.NET i tworzenie aplikacji internetowych
 
-**ID:** Microsoft.VisualStudio.Workload.NetWeb
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NetWeb
 
 **Opis:** Twórz aplikacje sieci web za pomocą programu ASP.NET, ASP.NET Core, HTML/JavaScript i kontenerów, w tym obsługę platformy Docker.
 
@@ -730,7 +730,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 ## <a name="nodejs-development"></a>Tworzenia aplikacji node.js
 
-**ID:** Microsoft.VisualStudio.Workload.Node
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Node
 
 **Opis:** Tworzenie skalowalnych aplikacji sieciowych przy użyciu platformy Node.js i asynchronicznego oparte na zdarzeniach środowiska uruchomieniowego JavaScript. 
 
@@ -756,7 +756,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 w wersji 15.9 v14
 
 ## <a name="officesharepoint-development"></a>Programowanie Office/SharePoint
 
-**ID:** Microsoft.VisualStudio.Workload.Office
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Office
 
 **Opis:** Tworzenie dodatków narzędzi VSTO za pomocą pakietu Office i programu SharePoint dodatków oraz rozwiązań programu SharePoint C#, VB i JavaScript.
 
@@ -824,7 +824,7 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.277
 
 ## <a name="python-development"></a>Programowanie w języku Python
 
-**ID:** Microsoft.VisualStudio.Workload.Python
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Python
 
 **Opis:** Edytowanie, debugowanie, opracowywanie interakcyjne oraz kontrola źródła dla języka Python.
 
@@ -911,7 +911,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | Wymagania wstępne dotyczące narzę
 
 ## <a name="universal-windows-platform-development"></a>Opracowywanie zawartości dla platformy Windows Universal
 
-**ID:** Microsoft.VisualStudio.Workload.Universal
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.Universal
 
 **Opis:** Tworzenie aplikacji uniwersalnych platformy Windows za pomocą C#, VB, JavaScript lub opcjonalnie C++.
 
@@ -981,7 +981,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="visual-studio-extension-development"></a>Programowanie rozszerzeń programu Visual Studio
 
-**ID:** Microsoft.VisualStudio.Workload.VisualStudioExtension
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
 **Opis:** Twórz dodatki i rozszerzenia dla programu Visual Studio, w tym nowe polecenia, analizatory kodu i okna narzędzi.
 
@@ -1025,7 +1025,7 @@ Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Narzędzia arc
 
 ## <a name="mobile-development-with-javascript"></a>Tworzenie aplikacji mobilnych za pomocą języka JavaScript
 
-**ID:** Microsoft.VisualStudio.Workload.WebCrossPlat
+**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.WebCrossPlat
 
 **Opis:** Twórz aplikacje systemu Android, iOS i platformy uniwersalnej systemu Windows przy użyciu narzędzi Tools for Apache Cordova.
 

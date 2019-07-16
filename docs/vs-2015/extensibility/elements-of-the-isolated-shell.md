@@ -11,13 +11,13 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204605"
 ---
-# <a name="elements-of-the-isolated-shell"></a>Elementy programu Isolated Shell
+# <a name="elements-of-the-isolated-shell"></a>Elementy programu Shell (izolowanego)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można zmodyfikować ustawień rejestru, ustawienia środowiska wykonawczego i punkt wejścia aplikacji w Twojej aplikacji isolated shell i jego vsct, .pkgdef, and.pkgundef plików.  
@@ -54,7 +54,7 @@ Można zmodyfikować ustawień rejestru, ustawienia środowiska wykonawczego i p
 ## <a name="the-vsct-file"></a>. Pliku Vsct  
  Pliku vsct pozwala określić, które standardowe elementy interfejsu użytkownika usługi Visual Studio są dostępne w aplikacji. Aby uzyskać więcej informacji, zobacz [. Pliki Vsct](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md).  
   
-## <a name="the-pkgundef-file"></a>The .Pkgundef File  
+## <a name="the-pkgundef-file"></a>. Pliku Pkgundef  
  Aplikacja jest zainstalowana na komputerze, na którym jest już zainstalowany program Visual Studio, kopię wpisów rejestru programu Visual Studio są tworzone dla aplikacji. Domyślnie aplikacja używa pakietów VSPackage, które są już zainstalowane na komputerze. Pliku pkgundef pozwala wykluczyć wpisy rejestru w celu usuwania określonych elementów powłoki programu Visual Studio lub rozszerzenia z aplikacji. Aby uzyskać więcej informacji, zobacz [. Pliki Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  
   
  Pliku pkgundef pozwala wykluczyć wpisy rejestru w celu usuwania określonych elementów powłoki programu Visual Studio lub rozszerzenia z aplikacji. Aby uzyskać więcej informacji, zobacz [. Pliki Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829c7a0193ce2742959f677e95dd4a499997cf5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763874"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149843"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ HRESULT get_acceleratorPointerTags(
  [in] Rozmiar tablicy danych wyjściowych `pPointerTags`.  
   
  `pcnt`  
- [out] Liczba tagów wskaźnika akceleratora w funkcji klasy zastępczej akceleratora C++ AMP.  
+ [out] Liczba tagów wskaźnika akceleratora w C++ funkcji klasy zastępczej akcelerator AMP.  
   
  `pPointerTags`  
- [out] A `DWORD` wskaźnika tablicy, który zostanie wypełniony kolorem wartości tagów wskaźnika akceleratora w funkcji klasy zastępczej akceleratora C++ AMP.  
+ [out] A `DWORD` wskaźnika tablicy, który zostanie wypełniony kolorem wartości tagów wskaźnika akceleratora w C++ funkcji klasy zastępczej akcelerator AMP.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  

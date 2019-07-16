@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176682"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Instrukcje: Tworzenie szablonów wielu projektów
+# <a name="how-to-create-multi-project-templates"></a>Instrukcje: Tworzenie szablonów obejmujących wiele projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. Gdy projekt oparty na szablonie wieloprojektowym jest tworzona na podstawie **nowy projekt** okno dialogowe, każdy projekt w szablonie zostanie dodany do rozwiązania.  
@@ -56,7 +56,7 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- `TemplateContent` Element zawiera `ProjectCollection` element, który ma co najmniej jeden `ProjectTemplateLink` elementy, które definiują ścieżki do plików .vstemplate uwzględnione projektów. Na przykład:  
+- `TemplateContent` Element zawiera `ProjectCollection` element, który ma co najmniej jeden `ProjectTemplateLink` elementy, które definiują ścieżki do plików .vstemplate uwzględnione projektów. Przykład:  
   
   ```  
   <TemplateContent>  
@@ -85,7 +85,7 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
   
 3. Utwórz główny plik .vstemplate szablonu, który zawiera metadane szablonu wieloprojektowego. Aby uzyskać więcej informacji Zobacz pierwszy przykład w poniższej sekcji.  
   
-4. Wybierz pliki i foldery do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Pliki i foldery są kompresowane w pliku zip.  
+4. Wybierz pliki i foldery do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)** . Pliki i foldery są kompresowane w pliku zip.  
   
 5. Umieść plik zip szablonu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katalogu szablonu projektu. Domyślnie ten katalog jest \My Studio *wersji*\Templates\ProjectTemplates\\.  
   
@@ -151,8 +151,8 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
- [Instrukcje: Create Project Templates](../ide/how-to-create-project-templates.md)   
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Instrukcje: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)   
+ [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Solutionfolder — Element (szablony Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
  [ProjectTemplateLink, element (szablony Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

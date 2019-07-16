@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7745eea3f5b3264016a25defd696a9b85f2e9fb4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191072"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ int EnumNestedClasses(
 ## <a name="remarks"></a>Uwagi  
  Każdy element wyliczenia jest [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Obiekt opisujący klasę zagnieżdżoną.  
   
- Zagnieżdżona klasa jest klasą zdefiniowane wewnątrz innej klasy. Na przykład:  
+ Zagnieżdżona klasa jest klasą zdefiniowane wewnątrz innej klasy. Przykład:  
   
 ```  
 class RootClass {  

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d3b5389bb080dee6e550c4bc0e6c035fd15db2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154330"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: Stałe krytyczne pod względem zabezpieczeń powinny być przezroczyste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

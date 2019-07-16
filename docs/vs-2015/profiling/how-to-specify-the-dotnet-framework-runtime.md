@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f631e8639c1004fa2cb005da3b6c8bcb27f1a9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203412"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Instrukcje: Określanie środowiska wykonawczego .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Instrukcje: Określanie środowiska uruchomieniowego programu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wraz z wydaniem [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], aplikacje mogą się składać z modułów, które zostały utworzone przy użyciu różnych wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] środowiska wykonawczego. Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools profilowanie pierwszego środowiska uruchomieniowego, który jest ładowany przez aplikację. Można określić czasu wykonywania, aby przeprowadzić profilowanie, podczas uruchamiania aplikacji przy użyciu profilera i dołączenia programu profilującego do aplikacji już uruchomionego.  

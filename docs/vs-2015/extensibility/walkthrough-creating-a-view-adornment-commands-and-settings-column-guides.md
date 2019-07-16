@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0cab24a373595ca1257cbdaa50c009eefa713ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148838"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Tworzenie zakończeń, poleceń i ustawień widoku (prowadnice kolumn)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Możesz rozszerzyć o edytorze tekstu/kodu programu Visual Studio z poleceniami 
 
 W tym instruktażu wykonasz następujące czynności:
 
-- Create a VSIX project
+- Utwórz projekt VSIX
 - Dodaj zakończeń widoku edytora
 - Dodano obsługę zapisywanie i pobieranie ustawień (w przypadku gdy w celu ich kolor i Rysuj prowadnice kolumn)
 - Dodawanie poleceń (Dodawanie/usuwanie kolumn, zmienianie ich koloru)
@@ -751,7 +751,7 @@ Pliku vsct deklaruje poleceń i ich gdzie, wraz z ikon i tak dalej. Zastąp zawa
 
 ```
 
-**GUIDS**. Dla programu Visual Studio można znaleźć inne programy obsługi polecenia i wywołaj je należy upewnić się, że pakiet, który jest identyfikatorem GUID zadeklarowanych w pliku vsct (skopiowany z powyższych pasuje do pakietu, którego identyfikator GUID jest zadeklarowana w pliku ColumnGuideCommandsPackage.cs (generowany na podstawie szablonu elementu projektu) ). Jeśli używasz ponownie tego przykładu kodu, należy się, że masz inny identyfikator GUID, tak aby nie powodują konfliktów z każdego, kto może skopiować ten kod.
+**IDENTYFIKATORY GUID**. Dla programu Visual Studio można znaleźć inne programy obsługi polecenia i wywołaj je należy upewnić się, że pakiet, który jest identyfikatorem GUID zadeklarowanych w pliku vsct (skopiowany z powyższych pasuje do pakietu, którego identyfikator GUID jest zadeklarowana w pliku ColumnGuideCommandsPackage.cs (generowany na podstawie szablonu elementu projektu) ). Jeśli używasz ponownie tego przykładu kodu, należy się, że masz inny identyfikator GUID, tak aby nie powodują konfliktów z każdego, kto może skopiować ten kod.
 
 Znajdź ten wiersz w ColumnGuideCommandsPackage.cs i skopiuj identyfikator GUID znajdujące znaki cudzysłowu:
 

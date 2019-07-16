@@ -14,11 +14,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d07a62027b494242d3c25aba00fbd5f4d75df78b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193912"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,6 +99,6 @@ Klasyfikuje szablon do podkategorii wartości określonej w `ProjectType` elemen
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [ProjectType, element (szablony Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)
