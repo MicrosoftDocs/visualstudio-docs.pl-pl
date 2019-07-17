@@ -690,6 +690,14 @@
                   href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
                 - name: 'CA3147: Oznaczanie procedur obsługi zleceń za pomocą tokenu ValidateAntiForgeryToken'
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                - name: 'CA5361: Nie wyłączaj użycia silnej kryptografii w pakiecie SChannel'
+                  href: ca5361.md
+                - name: 'CA5364: Nie używaj przestarzałych protokołów zabezpieczeń'
+                  href: ca5364.md
+                - name: 'CA5378: Nie wyłączaj protokołów ServicePointManagerSecurityProtocols'
+                  href: ca5378.md
+                - name: 'CA5386: Unikaj kodowania na stałe wartości SecurityProtocolType'
+                  href: ca5386.md
             - name: Ostrzeżenia dotyczące wykorzystania
               items:
                 - name: Omówienie

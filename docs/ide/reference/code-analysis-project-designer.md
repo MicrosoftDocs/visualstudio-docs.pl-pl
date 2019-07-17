@@ -26,13 +26,13 @@ Zawiera narzędzie do analizy kodu, które możesz zdecydować się na kodzie. I
 
 ## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
 
- Włącz Analysis\ kodu
+ Włącz Analysis kodu\
  Włącza lub wyłącza analizy kodu dla projektu.
 
  Projektowanie Rules\
  Włącza lub wyłącza reguły projektowania. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
- Rules\ globalizacji
+ Rules globalizacji\
  Włącza lub wyłącza reguły globalizacji. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
  Współdziałanie Rules\
@@ -41,25 +41,25 @@ Zawiera narzędzie do analizy kodu, które możesz zdecydować się na kodzie. I
  Łatwość konserwacji Rules\
  Włącza lub wyłącza reguły utrzymania kodu. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
- Rules\ mobilności
+ Rules mobilności\
  Włącza lub wyłącza reguły dotyczące przenoszenia. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
- Rules\ nazewnictwa
+ Rules nazewnictwa\
  Włącza lub wyłącza reguły nazewnictwa. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
- Rules\ wydajności
+ Rules wydajności\
  Włącza lub wyłącza reguły wydajności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
  Przenośność Rules\
  Włącza lub wyłącza reguły dotyczące przenośności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
- Rules\ niezawodności
+ Rules niezawodności\
  Włącza lub wyłącza reguły dotyczące niezawodności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
- Rules\ zabezpieczeń
+ Rules zabezpieczeń\
  Włącza lub wyłącza reguły zabezpieczeń. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
- Rules\ użycia
+ Rules użycia\
  Włącza lub wyłącza reguły użycia. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
 
 ## <a name="see-also"></a>Zobacz także
