@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak zastosować korzyści użycia Chat doradztwa technicznego dotyczącego platformy Azure, uwzględniony w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 970e7543d8e39b5e8afafb964a99ef568e704ec0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784760"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250840"
 ---
 # <a name="azure-advisory-chat"></a>Czat z doradcą Azure Advisor
 
@@ -23,11 +23,11 @@ Azure doradztwa technicznego dotyczącego Rozmowa jest prosty w użyciu.
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Znajdź Kafelek Chat doradztwa technicznego dotyczącego usługi Azure w sekcji pomocy technicznej, a następnie kliknij przycisk **Porozmawiaj teraz**.
     > [!div class="mx-imgBorder"]
-    > ![Azure Advisory Chat Tile](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > ![Czat z doradcą Azure kafelka](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
 3. Zobaczysz powiadomienie, że usługa jest obecnie oferowana w języku angielskim tylko z wyjątkiem pomoc techniczna dotycząca problemów z konta, rozliczeń i subskrypcji.  Kliknij przycisk **Kontynuuj**.
     > [!div class="mx-imgBorder"]
-    > ![Azure Advisory Chat Disclaimer](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > ![Czat z doradcą Azure zrzeczenie odpowiedzialności](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. To wszystko jest do niego.  Zostanie otwarte okno rozmowy i zostanie wyświetlony stan z informacją o tym, gdzie jesteś w kolejce.  Swojej rozmowy będą odbierane przez następny dostępny eksperta.
     > [!div class="mx-imgBorder"]
@@ -37,9 +37,9 @@ Azure doradztwa technicznego dotyczącego Rozmowa jest prosty w użyciu.
 
 |                                                      Poziom subskrypcji                                                      |     Kanały      |    Korzyść    | Podlega odnowieniu? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, Retail |   Jeden rok    |    Tak     |
+|                                      Visual Studio Enterprise (standardowa)                                       | VL, Azure, Retail |   Jeden rok    |    Yes     |
 | Visual Studio Professional (standardowy, miesięczną w chmurze) programu Visual Studio Enterprise (miesięczne chmury, NFR<sup>1</sup>) |        Wszystkie        | Niedostępne |     Nie     |
-|                                          Visual Studio Test Professional (Standard)                                          |        Wszystkie        | Niedostępne |     Nie     |
+|                                          Visual Studio Test Professional (standardowa)                                          |        Wszystkie        | Niedostępne |     Nie     |
 |                                                  Platformy MSDN (standardowa)                                                   |        Wszystkie        | Niedostępne |     Nie     |
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego) Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*

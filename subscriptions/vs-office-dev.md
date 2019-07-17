@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści Office 365 dla deweloperów, zawarte w Twojej subskrypcji programu Visual Studio.
-ms.openlocfilehash: 86a4ba86b8da06107436005daba8a4728c2c1fa5
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 9b31b1d1195e47dcf1f38351306a0c59a4472298
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784537"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250816"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Korzyści z subskrypcji dewelopera Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -27,7 +27,7 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio otrzymują korzyści
 
 4. Kliknij pozycję **Aktywuj** link w dolnej części kafelka korzyści.
    > [!div class="mx-imgBorder"]
-   > ![Office 365 Dev Benefit Tile](_img/vs-office-dev/vs-office-dev-tile.png)
+   > ![Kafelek korzyści dla deweloperów usługi Office 365](_img/vs-office-dev/vs-office-dev-tile.png)
 
 5. Następnym krokiem jest, aby utworzyć konto.  Pojawi się swoją nazwę i adres e-mail logowania.
 6. Wybierz swój kraj.
@@ -65,9 +65,9 @@ Aby dowiedzieć się więcej na temat subskrypcji dewelopera Office 365, zapozna
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono      |  Tak          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dołączono                                                            |Tak         |
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Nie dotyczy         |
+| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono      |  Tak          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Dołączono                                                            |Tak         |
+| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              | Nie dotyczy         |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 ||

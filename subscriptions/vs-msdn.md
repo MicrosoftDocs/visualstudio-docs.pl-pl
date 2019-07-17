@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zarejestruj się otrzymać Subskrypcja magazynu MSDN Magazine zawarte w Twojej subskrypcji programu Visual Studio.
-ms.openlocfilehash: 7e0c55c3283fe99bf74ce9c633ff5c31c4fe801b
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8bc38545ce497c0f8f85dfe74db841ef1ae4ee78
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784558"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250786"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Korzyść MSDN Magazine w subskrypcji programu Visual Studio
 
@@ -46,9 +46,9 @@ Wersja cyfrowa jest dostępne dla członków programu Visual Studio Dev Essentia
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> |Drukowane edition       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Drukowane edition                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Drukowane edition                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> |Drukowane edition       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Drukowane edition                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Drukowane edition                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Drukowane edition                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
 |Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze)   | Azure |Niedostępne      |  Nie dotyczy         |
 ||

@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat konta dewelopera Windows, które są dołączone do subskrypcji programu Visual Studio.
-ms.openlocfilehash: 2a70cba2fa8feaaa256f76bd77a29535ca1940ea
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 37718671d2b0287920b3b1dbce36ab61affbf223
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784454"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250756"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera Windows w subskrypcji programu Visual Studio
 
@@ -50,9 +50,9 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono       |  Tak|
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dołączono                                                            |Tak|
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                            |  Nie dotyczy|
+| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono       |  Tak|
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Dołączono                                                            |Tak|
+| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                            |  Nie dotyczy|
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              |  Niedostępne                                            |  Nie dotyczy|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 ||

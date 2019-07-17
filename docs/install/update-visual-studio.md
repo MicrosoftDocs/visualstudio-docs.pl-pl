@@ -2,7 +2,7 @@
 title: Aktualizowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak zaktualizować program Visual Studio do najnowszej wersji, krok po kroku.
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290659"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250576"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizacja programu Visual Studio do najnowszej wersji
 
@@ -200,7 +202,7 @@ Poniżej przedstawiono sposób aktualizacji Visual&nbsp;Studio&nbsp;2019 r.
 
 Można sprawdzić dostępność aktualizacji, a następnie zainstaluj go przy użyciu paska menu lub pola wyszukiwania w programie Visual Studio 2019 r.
 
-### <a name="open-visual-studio"></a>Open Visual Studio
+### <a name="open-visual-studio"></a>Otwórz program Visual Studio
 
 1. Od Windows **Start** menu, wybierz **Visual Studio 2019**.
 
@@ -224,7 +226,7 @@ Można sprawdzić dostępność aktualizacji, a następnie zainstaluj go przy u�
 
    Visual Studio aktualizacji zostanie zamknięty, a następnie ponownie otworzy.
 
-### <a name="in-visual-studio"></a>In Visual Studio
+### <a name="in-visual-studio"></a>W programie Visual Studio
 
 1. Na pasku menu wybierz **pomocy**, a następnie wybierz **sprawdzać dostępność aktualizacji**.
 
@@ -257,6 +259,27 @@ Można sprawdzić dostępność aktualizacji, a następnie zainstaluj go przy u�
 1. W **aktualizacji pobrane i gotowe do zainstalowania** okna dialogowego wybierz **aktualizacji**.
 
    Visual Studio aktualizacji zostanie zamknięty, a następnie ponownie otworzy.
+
+## <a name="customize-update-settings"></a>Dostosowywanie ustawień aktualizacji
+
+Ustawienia aktualizacji w programie Visual Studio można dostosować na różne sposoby, takie jak przez zmianę trybu instalacji i wybierając opcję automatycznego pobierania.
+
+Istnieją dwa tryby instalacji do wyboru:
+
+* **Zainstaluj podczas pobierania**
+* **Pobierz wszystko, a następnie zainstaluj**
+
+Można również wybrać **automatycznego pobierania aktualizacji** ustawienie, które zezwala na aktualizacje do pobrania, gdy komputer jest w stanie bezczynności.
+
+Oto jak:
+
+1. Na pasku menu wybierz **narzędzia** > **opcje**.
+
+2. Rozwiń **środowiska**, a następnie wybierz **aktualizacje produktu**.
+
+    ![Ustawienia aktualizacji w programie Visual Studio](media/vs-2019/update-settings-options.png)
+
+3. Wybierz tryb instalacji i opcji automatycznego pobierania, która ma usługi aktualizacji programu Visual Studio.
 
 ::: moniker-end
 

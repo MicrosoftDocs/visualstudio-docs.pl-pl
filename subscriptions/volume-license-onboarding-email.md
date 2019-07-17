@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 3/14/2018
 ms.topic: conceptual
 description: Przykład dołączania komunikacji udostępniane Administratorzy centrum VLSC
-ms.openlocfilehash: 137b12d99829069c23d7688d92a62ac2050ec960
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8fc0ae640655b3d2911a53f7e36af7022f853db7
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784720"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250851"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>Dołączanie do wiadomości e-mail dla administratorów
 

@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 02/13/2018
 ms.topic: conceptual
 description: Informacje na temat programu Visual Studio Dev Essentials i jak się zarejestrować.
-ms.openlocfilehash: 9a21a5821e07e5214de52b390a507474d38b6842
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 11f69c6fd9530b7dc1383988f1698b3508430f94
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785124"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250634"
 ---
 # <a name="visual-studio-dev-essentials"></a>Visual Studio Dev Essentials
 
@@ -25,7 +25,7 @@ Gdy wszystko będzie gotowe zarejestrować, wystarczy kliknąć [Dołącz lub uz
 
 To wszystko jest do niego.
 
-## <a name="opt-out-of-visual-studio-dev-essentials"></a>Opt out of Visual Studio Dev Essentials
+## <a name="opt-out-of-visual-studio-dev-essentials"></a>Zrezygnować z programu Visual Studio Dev Essentials
 
 Jeśli chcesz zrezygnować z programu Visual Studio Dev Essentials, wykonaj następujące kroki:
 

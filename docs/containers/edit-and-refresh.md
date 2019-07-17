@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: d4ac06d07fd6e59ea8db2ead13c0dc493e36b282
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 70f78f1e7ed05f771e188fe922fef769a38799f9
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890670"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250439"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze Docker
 
@@ -131,4 +131,3 @@ Dowiedz się, jak [Rozwiązywanie problemów z programowania Visual Studio Docke
 * Aby skompilować i wdrożyć kontener platformy Docker, zobacz [Integracja z platformą Docker dla usługi Azure potoków](https://aka.ms/dockertoolsforvsts).
 * Dla indeksu artykułów systemu Windows Server i serwer Nano Server, zobacz [informacje o kontenerze Windows](https://aka.ms/containers).
 * Dowiedz się więcej o [usługi Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) i przejrzyj [dokumentacji usługi Azure Kubernetes Service](/azure/aks).
-

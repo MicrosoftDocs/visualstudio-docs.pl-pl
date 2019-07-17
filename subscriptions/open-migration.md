@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/02/2018
 ms.topic: conceptual
 description: Więcej informacji na temat migracji otwierania i licencji Open do portalu administratora subskrypcji programu Visual Studio.
-ms.openlocfilehash: 54cb828f71f8b3771eef49693fab540ab27eb2eb
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 3e8859cc3b66933133c193ecd0f095939ccf7e77
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784404"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250605"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Otwórz i Open License migracji do nowego portalu programu Visual Studio subskrypcje administracji
 

@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 03/28/2018
 ms.topic: conceptual
 description: Konfigurowanie administratorów w przypadku subskrypcji chmury
-ms.openlocfilehash: 2d16dd72e9b3866f8d8608ecae26a5a215d2610b
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 85371dd77b99fc5013843bb815082cc0f84cff33
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783582"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250690"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Skonfiguruj administratorów w przypadku subskrypcji chmury programu Visual Studio
 

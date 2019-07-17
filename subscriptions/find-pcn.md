@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/29/2017
 ms.topic: conceptual
 description: Dowiedz się, jak znaleźć Twoje publicznego numeru klienta (PCN) lub Numer autoryzacyjny
-ms.openlocfilehash: fa9c10548f13094ab6f2c0959e8996cb308015f2
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: ed9604d31a52aab8fa52a48ec627fc7ae7ec3288
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783504"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250678"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Jak znaleźć Moje "Publiczny numer klienta" (PCN) lub Numer autoryzacyjny?
 

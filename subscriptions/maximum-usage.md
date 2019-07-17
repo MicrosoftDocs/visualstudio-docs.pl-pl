@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Dowiedz się, jak wyświetlić maksymalną liczbę przypisanych subskrypcji w portalu administracyjnym
-ms.openlocfilehash: 402bd55549055ba6584cf89538e9a4f6195bec30
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 0442671a6cdb24e394e6c2a47c935ae894cca354
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784461"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250753"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Za pomocą funkcji maksymalnego użycia, aby śledzić liczbę przypisanych subskrypcji
 

@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą obsługiwać wygasłe subskrypcje programu Visual Studio
-ms.openlocfilehash: 52e27761478fe11374b31999ebed0203e6d2bcc0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 0b47c18ffc826a755aeafbfc2621aef890afaf37
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783428"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250390"
 ---
 # <a name="handling-expired-subscriptions"></a>Obsługa wygasłe subskrypcje
 
