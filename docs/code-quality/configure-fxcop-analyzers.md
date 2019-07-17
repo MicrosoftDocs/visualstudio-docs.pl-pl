@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie analizatory FxCop analizujące kod przy użyciu pliku editorconfig
+title: Konfigurowanie analizatorów FxCop za pomocą editorconfig
 ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,29 +9,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac751b7ec130b6bfbb18752c02b491b6c342f172
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816934"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300607"
 ---
-# <a name="configure-fxcop-analyzers"></a>Konfigurowanie analizatory FxCop analizujące kod
+# <a name="configure-fxcop-analyzers"></a>Konfigurowanie analizatorów FxCop
 
-[Analizatory FxCop analizujące kod](install-fxcop-analyzers.md) składają się z najważniejszych reguły "FxCop" ze statycznej analizy kodu, przekonwertować analizatorów Roslyn. Analizatory kodu FxCop analizujące kod można skonfigurować na dwa sposoby:
+[Analizatory FxCop](install-fxcop-analyzers.md) składają się z najważniejszych reguł "FxCop" z analizy kodu statycznego, przekonwertowane na analizatory Roslyn. Analizatory kodu FxCop można skonfigurować na dwa sposoby:
 
-- Za pomocą [zestaw reguł](#fxcop-analyzer-rule-sets), które pozwala włączyć lub wyłączyć regułę i ustaw ważności dla poszczególnych reguł naruszenia.
+- [Zestaw reguł](#fxcop-analyzer-rule-sets), który umożliwia włączenie lub wyłączenie reguły i ustawienie ważności dla poszczególnych naruszeń reguł.
 
-- Począwszy od wersji 2.6.3 [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) za pośrednictwem pakietu NuGet [pliku .editorconfig](#editorconfig-file). [Konfigurowalne opcje](fxcop-analyzer-options.md) uściślić części, które umożliwiają Twojej bazy kodu do analizy.
+- Począwszy od wersji 2.6.3 pakietu NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) , za pomocą [pliku. editorconfig](#editorconfig-file). [Konfigurowalne opcje](fxcop-analyzer-options.md) pozwalają dostroić, które części bazy kodu mają być analizowane.
 
 > [!TIP]
-> Aby uzyskać informacje o różnicach między FxCop statycznej analizy kodu i analizatory FxCop analizujące kod, zobacz [analizatory FxCop analizujące kod często zadawane pytania dotyczące](fxcop-analyzers-faq.md).
+> Aby uzyskać informacje o różnicach między statyczną analizą kodu FxCop i analizatorami FxCop, zobacz temat analizy [FxCop — często zadawane pytania](fxcop-analyzers-faq.md).
 
-## <a name="fxcop-analyzer-rule-sets"></a>Zestawy reguł analizatora programu FxCop
+## <a name="fxcop-analyzer-rule-sets"></a>Zestawy reguł analizatora FxCop
 
-Jednym ze sposobów konfigurowania analizatory FxCop analizujące kod jest za pomocą XML *zestaw reguł*. Zestaw reguł jest grupowania reguł analizy kodu, które identyfikują docelowe problemy i określone warunki. Zestawy reguł pozwalają włączyć lub wyłączyć regułę i ustaw ważności dla poszczególnych reguł naruszenia.
+Jednym ze sposobów konfigurowania analizatorów FxCop jest użycie *zestawu reguł*XML. Zestaw reguł jest grupą reguł analizy kodu, które identyfikują problemy skierowane i określone warunki. Zestawy reguł umożliwiają włączenie lub wyłączenie reguły oraz ustawienie ważności dla poszczególnych naruszeń reguł.
 
-Pakiet NuGet analizatora FxCop zawiera zestawy wstępnie zdefiniowanych reguł dla następujących kategorii:
+Pakiet NuGet analizatora FxCop zawiera wstępnie zdefiniowane zestawy reguł dla następujących kategorii reguł:
 
 - projekt
 - dokumentacja
@@ -42,30 +42,30 @@ Pakiet NuGet analizatora FxCop zawiera zestawy wstępnie zdefiniowanych reguł d
 - zabezpieczenia
 - wykorzystanie
 
-Aby uzyskać więcej informacji, zobacz [zestawów reguł na potrzeby analizatorów Roslyn](analyzer-rule-sets.md).
+Aby uzyskać więcej informacji, zobacz [zestawy reguł dla analizatorów Roslyn](analyzer-rule-sets.md).
 
-## <a name="editorconfig-file"></a>Plik wtyczki EditorConfig
+## <a name="editorconfig-file"></a>Plik EditorConfig
 
-Można skonfigurować zasady działania analizatora, dodając pary klucz wartość do [.editorconfig](https://editorconfig.org) pliku. Plik konfiguracji może być [specyficzne dla projektu](#per-project-configuration) lub może być [udostępnionego](#shared-configuration) między dwóch lub więcej projektów.
+Reguły analizatora można skonfigurować przez dodanie par klucz-wartość do pliku [editorconfig](https://editorconfig.org) . Plik konfiguracji może być [specyficzny dla projektu](#per-project-configuration) lub może być [współużytkowany](#shared-configuration) przez dwa lub więcej projektów.
 
-### <a name="per-project-configuration"></a>Konfiguracja dla projektu
+### <a name="per-project-configuration"></a>Konfiguracja na projekt
 
-Aby włączyć configuration analyzer na podstawie pliku .editorconfig dla określonego projektu, Dodaj *.editorconfig* plik do katalogu głównego projektu.
+Aby włączyć editorconfig konfigurację analizatora dla określonego projektu, Dodaj plik *. editorconfig* do katalogu głównego projektu.
 
 > [!TIP]
-> Pliku .editorconfig można dodać do projektu, klikając prawym przyciskiem myszy nad projektem w **Eksploratora rozwiązań** i wybierając polecenie **Dodaj** > **nowy element**. W **Dodaj nowy element** oknie wprowadź **editorconfig** w polu wyszukiwania. Wybierz **editorconfig pliku (ustawienie domyślne)** szablonu i wybierz polecenie **Dodaj**.
+> Do projektu można dodać plik. editorconfig, klikając prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierając polecenie **Dodaj** > **nowy element**. W oknie **Dodaj nowy element** wprowadź **editorconfig** w polu wyszukiwania. Wybierz szablon **plik editorconfig (domyślnie)** , a następnie wybierz pozycję **Dodaj**.
 >
-> ![Dodaj element editorconfig do projektu programu Visual Studio](media/add-editorconfig-file.png)
+> ![Dodaj element editorconfig do projektu w programie Visual Studio](media/add-editorconfig-file.png)
 
-Obecnie nie jest hierarchiczna obsługiwane dla plików .editorconfig "łączenie", który istnieje na poziomach innego katalogu, na przykład poziom rozwiązania i projektu.
+Obecnie nie ma żadnych hierarchicznej obsługi dla "łączenia" plików editorconfig, które istnieją na różnych poziomach katalogu, na przykład na poziomie rozwiązania i projektu.
 
 ### <a name="shared-configuration"></a>Konfiguracja udostępniona
 
-Możesz udostępnić pliku .editorconfig dla analizatora konfiguracji między dwóch lub więcej projektów, ale wymaga pewnych dodatkowych kroków.
+Można udostępnić plik. editorconfig dla konfiguracji analizatora między co najmniej dwa projekty, ale wymaga to kilku dodatkowych kroków.
 
-1. Zapisz *.editorconfig* do wspólnej lokalizacji.
+1. Zapisz plik *. editorconfig* w wspólnej lokalizacji.
 
-2. Tworzenie *.props* pliku o następującej zawartości:
+2. Utwórz plik *. props* o następującej zawartości:
 
    ```xml
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -78,7 +78,7 @@ Możesz udostępnić pliku .editorconfig dla analizatora konfiguracji między dw
    </Project>
    ```
 
-3. Dodaj wiersz, aby Twoje *.csproj* lub *.vbproj* plik do zaimportowania *.props* pliku utworzonego w poprzednim kroku. Ten wiersz musi być umieszczony przed wszystkie wiersze, które importują analizatora FxCop *.props* plików. Na przykład, jeśli plik .props nosi nazwę *editorconfig.props*:
+3. Dodaj wiersz do pliku *. csproj* lub *. vbproj* , aby zaimportować plik *. props* , który został utworzony w poprzednim kroku. Ten wiersz musi być umieszczony przed wszystkimi wierszami, które zaimportują Analizator FxCop *. props* Files. Na przykład, jeśli plik. props ma nazwę *editorconfig. props*:
 
    ```xml
    ...
@@ -87,14 +87,14 @@ Możesz udostępnić pliku .editorconfig dla analizatora konfiguracji między dw
    ...
    ```
 
-4. Ponownie Załaduj projekt.
+4. Załaduj ponownie projekt.
 
 > [!NOTE]
-> Starszych reguł programu FxCop (statycznej analizy kodu programu FxCop) nie można skonfigurować przy użyciu pliku editorconfig.
+> Nie można skonfigurować starszych reguł FxCop (statycznej analizy kodu FxCop) przy użyciu pliku. editorconfig.
 
-## <a name="option-scopes"></a>Opcja zakresów
+## <a name="option-scopes"></a>Zakresy opcji
 
-Każdą opcję można skonfigurować dla wszystkich reguł, kategoria reguł (na przykład nazewnictwa lub projektu) lub określonej reguły.
+Każdą opcję można skonfigurować dla wszystkich reguł, dla kategorii reguł (na przykład nazewnictwa lub projektowania) lub dla określonej reguły.
 
 ### <a name="all-rules"></a>Wszystkie reguły
 
@@ -102,25 +102,26 @@ Składnia służąca do konfigurowania opcji dla wszystkich reguł jest następu
 
 |Składnia|Przykład|
 |-|-|
-| dotnet_code_quality. OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
+| dotnet_code_quality. OptionName = optionvalue | `dotnet_code_quality.api_surface = public` |
 
-### <a name="category-of-rules"></a>Kategoria reguły
+### <a name="category-of-rules"></a>Kategoria reguł
 
-Składnia służąca do konfigurowania opcji *kategorii* reguł (na przykład nazewnictwa, projektu lub wydajność) jest w następujący sposób:
-
-|Składnia|Przykład|
-|-|-|
-| dotnet_code_quality.RuleCategory.OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
-
-### <a name="specific-rule"></a>Określonej reguły
-
-Składnia służąca do konfigurowania opcji określonej reguły jest następująca:
+Składnia służąca do konfigurowania opcji dla *kategorii* reguł (na przykład nazewnictwa, projektowania lub wydajności) jest następująca:
 
 |Składnia|Przykład|
 |-|-|
-| dotnet_code_quality.RuleId.OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+| dotnet_code_quality. RuleCategory. optionName = optionvalue | `dotnet_code_quality.Naming.api_surface = public` |
+
+### <a name="specific-rule"></a>Określona reguła
+
+Składnia służąca do konfigurowania opcji dla określonej reguły jest następująca:
+
+|Składnia|Przykład|
+|-|-|
+| dotnet_code_quality. RuleId. optionName = optionvalue | `dotnet_code_quality.CA1040.api_surface = public` |
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Analyzer configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
-- [Analizatory FxCop analizujące kod](install-fxcop-analyzers.md)
+- [Konfiguracja analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
+- [Analizatory FxCop](install-fxcop-analyzers.md)
+- [Konwencje kodowania .NET dla EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

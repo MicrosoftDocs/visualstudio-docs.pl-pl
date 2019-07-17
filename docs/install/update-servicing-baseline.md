@@ -1,7 +1,7 @@
 ---
 title: Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
-description: Dowiedz się, jak zaktualizować program Visual Studio, pozostając na obsługi linii bazowej.
-ms.date: 05/22/2019
+description: Dowiedz się, jak aktualizować program Visual Studio przy zachowaniu planu bazowego obsługi.
+ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
@@ -12,64 +12,67 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bf167c46e9b7dd9317278c7ce388977c4cc9428a
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250331"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300543"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
 
-Visual Studio 2019 będzie miał częste aktualizacje podczas jego [cyklu życia produktu](/visualstudio/productinfo/release-rhythm#release-channel-updates). Aktualizacje zawierają zarówno aktualizacji wersji pomocniczej (na przykład z 16.0 do 16.1), które mogą dodawać nowych funkcji i składników oraz obsługi aktualizacji (na przykład z 16.0.4 do 16.0.5), które zawierają tylko docelowe poprawki dotyczące problemów krytycznych.
+Program Visual Studio jest często aktualizowany w ramach cyklu życia produktu. Istnieją dwa typy aktualizacji: 
 
-Administratorzy przedsiębiorstwa można wybrać opcję zachowania klientów obsługi linii bazowej. Obsługi punktu odniesienia jest obsługiwane w przypadku obsługi aktualizacji dla roku ostatnie wydanie następnej obsługi linii bazowej.
+* **Drobne aktualizacje**&mdash;wersji na przykład 16,0 do 16,1&mdash;, które obejmują nowe funkcje i składniki.  
+* **Obsługa aktualizacji**— na przykład 16.0.4 do 16.0.5 — które obejmują tylko rozwiązania przeznaczone do rozwiązywania problemów krytycznych.
 
-Opcji obsługi linii bazowej zapewnia deweloperom i administratorom większą elastyczność i możliwość przyjmuje nowe funkcje, poprawki usterek i składników zawartych w nowe aktualizacje pomocnicze. Pierwszy obsługi punkt odniesienia jest 16.0.x. Aby uzyskać więcej informacji, zobacz [opcje pomocy technicznej dla subskrypcji enterprise i professional klientów](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+Administratorzy przedsiębiorstwa mogą zdecydować się na utrzymanie klientów w linii bazowej obsługi. Linia bazowa obsługi jest obsługiwana w przypadku aktualizacji z obsługą przez rok poza wersją kolejnej linii bazowej obsługi.
 
-## <a name="how-to-get-onto-a-servicing-baseline"></a>Jak się dostać się do obsługi punktu odniesienia
+Opcja linia bazowa obsługi zapewnia deweloperom i administratorom większą elastyczność w zakresie wdrażania nowych funkcji, poprawek błędów lub składników uwzględnionych w nowych aktualizacjach pomocniczych. Pierwsza linia bazowa obsługi to 16.0. x. Aby uzyskać więcej informacji, zobacz [Opcje pomocy technicznej dla klientów korporacyjnych i Professional](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
 
-Aby rozpocząć korzystanie z obsługi linii bazowej, Pobierz program inicjujący Instalatora programu Visual Studio rozwiązane w wersji z [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). Programów inicjujących zawierają łącza do konfiguracji produktu, obciążeń i składników dla tej określonej wersji.
+## <a name="how-to-get-onto-a-servicing-baseline"></a>Jak uzyskać dostęp do linii bazowej obsługi
+
+Aby zacząć korzystać z linii bazowej obsługi, Pobierz stały program inicjujący Instalatora programu Visual Studio z [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). Program inicjujący ma linki do konfiguracji produktu, obciążeń i składników dla tej konkretnej wersji.
 
 > [!NOTE]
-> Uważaj odróżnić program inicjujący rozwiązane w wersji standard programów inicjujących. Standardowa programów inicjujących są skonfigurowane do używania najnowszych dostępnych wersji programu Visual Studio. Standardowa boostrappers ma numeru w nazwie pliku (na przykład 123456789.exe vs_enterprise__123456789) po pobraniu z My.VisualStudio.com.
+> Należy zachować ostrożność w odróżnieniu od programu inicjującego o stałej wersji i standardowych programów inicjujących. Standardowe programy inicjujące są skonfigurowane do korzystania z najnowszej dostępnej wersji programu Visual Studio. Standardowa boostrappers ma numer w nazwie pliku (na przykład vs_enterprise__123456789-123456789. exe), gdy są pobierane z usługi My.VisualStudio.com.
 
-Podczas instalacji Administratorzy przedsiębiorstwa muszą skonfigurować swoich klientów, aby uniemożliwić klientom aktualizowanie do najnowszej wersji. Klientów można skonfigurować na wiele sposobów:
-- [Zmiana `channelUri` ustawienia w pliku konfiguracyjnym odpowiedzi](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network) używać manifestu kanału w układzie lub folderu lokalnego.
-- [Modyfikowanie identyfikator channelUri za pośrednictwem wiersza polecenia wykonywania](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet) przy użyciu nieistniejącego pliku.
-- [Ustawianie zasad w systemie klienta w celu wyłączenia aktualizacji](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating), aby uniemożliwić klientom korzystającym z samoaktualizacji.
+Podczas instalacji Administratorzy przedsiębiorstwa muszą skonfigurować swoich klientów, aby uniemożliwić aktualizowanie ich przez klientów do najnowszej wersji. Można to zrobić na kilka sposobów:
+- [Zmień ustawienie w pliku konfiguracji odpowiedzi, aby użyć manifestu kanału w układzie lub folderze lokalnym. `channelUri` ](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network)
+- [Zmodyfikuj identyfikator channeluri za pomocą wykonania wiersza polecenia](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet) , aby użyć nieistniejącego pliku.
+- [Ustaw zasady w systemie klienta, aby wyłączyć aktualizacje](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating), aby uniemożliwić klientom samoaktualizacji.
 
-### <a name="install-a-servicing-baseline-on-a-network"></a>Instalowanie obsługi linii bazowej w sieci
+### <a name="install-a-servicing-baseline-on-a-network"></a>Zainstaluj linię bazową obsługi w sieci
 
-Administratorzy mogą używać instalację układu sieci należy zmodyfikować `channelUri` wartość w *response.json* plik układu użyć *channelmanifest.json* plik znajdujący się w tym samym folderze. Kroki do wykonania, można zobaczyć [kontrolowania aktualizacji z wdrożeniami programu Visual Studio sieciowymi programami wykorzystującymi](controlling-updates-to-visual-studio-deployments.md). Zmiana `channelUri` wartość umożliwia klientom wyszukać aktualizacje w lokalizacji układu.
+Administratorzy, którzy korzystają z instalacji układu sieciowego, powinni `channelUri` zmodyfikować wartość w pliku *Response. JSON* w układzie, aby użyć pliku *channelmanifest. JSON* znajdującego się w tym samym folderze. Aby zapoznać się z krokami do wykonania, zobacz [Kontrola aktualizacji do wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md). `channelUri` Zmiana wartości umożliwia klientom wyszukiwanie aktualizacji w lokalizacji układu.
 
-### <a name="install-a-servicing-baseline-via-the-internet"></a>Instalowanie obsługi linii bazowej, za pośrednictwem Internetu
+### <a name="install-a-servicing-baseline-via-the-internet"></a>Zainstaluj linię bazową obsługi za pośrednictwem Internetu
 
-W przypadku instalacji z internetowymi, dodać `--channelUri` z kanałem nieistniejącej manifestu do wiersza polecenia używane do uruchomienia Instalatora. Powoduje to wyłączenie programu Visual Studio z przy użyciu najnowszej wersji aktualizacji. Oto przykład:
+W przypadku instalacji internetowej należy dodać `--channelUri` z nieistniejącego manifestu kanału do wiersza polecenia używanego do uruchamiania Instalatora. Spowoduje to wyłączenie programu Visual Studio z poziomu najnowszej dostępnej wersji dla aktualizacji. Oto przykład:
 
 ```cmd
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
 ```
 
-### <a name="use-policy-settings-to-disable-clients-from-updating"></a>Aby wyłączyć aktualizowanie za pomocą ustawień zasad
+### <a name="use-policy-settings-to-disable-clients-from-updating"></a>Korzystanie z ustawień zasad w celu wyłączania aktualizacji klientów
 
-Inną opcją w celu kontrolowania aktualizacji na kliencie jest [wyłączyć powiadomienia o aktualizacji](controlling-updates-to-visual-studio-deployments.md). Użyj tej opcji, jeśli nie zmieniono wartość Identyfikator channelUri w instalacji. Będzie on Ręczne wyłączanie klienta z otrzymywania linków do najnowszej wersji. Program inicjujący rozwiązane w wersji nadal konieczne jest zaktualizowanie do określonej wersji na komputerze klienckim.
+Inna opcja kontrolowania aktualizacji na kliencie polega na wyłączeniu [powiadomień o aktualizacji](controlling-updates-to-visual-studio-deployments.md). Użyj tej opcji, jeśli wartość Identyfikator channeluri nie została zmieniona podczas instalacji. Klient nie będzie mógł odbierać linków do najnowszej dostępnej wersji. Program inicjujący o stałej wersji jest nadal niezbędny do zaktualizowania do określonej wersji na kliencie.
 
-## <a name="how-to-stay-on-a-servicing-baseline"></a>Jak zawsze włączone obsługi punktu odniesienia
+## <a name="how-to-stay-on-a-servicing-baseline"></a>Jak pozostać w punkcie odniesienia obsługi
 
-Gdy dostępna jest aktualizacja dla obsługi linii bazowej, rozwiązane w wersji programu inicjującego pliki są udostępniane do obsługi aktualizacji w [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
+Gdy dostępna jest aktualizacja linii bazowej obsługi, pliki programu inicjującego z ustalonymi wersjami są udostępniane dla aktualizacji obsługi w witrynie [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-Aby zainstalować administratorom wdrażanie za pomocą układu sieci, administrator będzie chcesz zaktualizować [lokalizacja układu](update-a-network-installation-of-visual-studio.md). Klienci, którzy są instalowane z lokalizacji będą otrzymywać powiadomienia aktualizacji. Jeśli aktualizacja musi zostać wdrożone na klientach, postępuj zgodnie z [w instrukcjach](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Podczas modyfikowania "response.json" dla aktualizacji, nie należy dodawać dodatkowych obciążeń, składników lub języków. Zarządzanie ustawieniami tych musi odbywać się jako "Modyfikuj" wdrożenie po aktualizacji produktu.
+W przypadku administratorów, którzy wdrażają program przy użyciu instalacji układu sieciowego, administrator powinien zaktualizować [lokalizację układu](update-a-network-installation-of-visual-studio.md). Klienci instalowani z lokalizacji otrzymają powiadomienia o aktualizacji. Jeśli aktualizacja musi zostać wdrożona na klientach, wykonaj [te instrukcje](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Po zmodyfikowaniu pliku Response. JSON dla aktualizacji nie należy dodawać dodatkowych obciążeń, składników ani języków. Zarządzanie tymi ustawieniami musi odbywać się w ramach wdrożenia "Modify" po aktualizacji produktu.
 
-Instalację z Internetu uruchom nowy program inicjujący poprawionej wersji za pomocą `--channelUri` parametrem manifestu kanału nie istnieje na komputerze klienckim. Jeśli aktualizacja jest wdrażana w trybie cichym lub pasywnym, należy użyć dwóch oddzielnych poleceń:
+W przypadku instalacji internetowej Uruchom nowy program inicjujący stałej wersji z `--channelUri` parametrem wskazującym nieistniejący manifest kanału na komputerze klienckim. Jeśli aktualizacja została wdrożona w trybie cichym lub pasywnym, użyj dwóch oddzielnych poleceń:
 
-1. Aktualizacja Instalatora programu Visual Studio:
+1. Aktualizowanie Instalatora programu Visual Studio:
 
     ```cmd
     vs_enterprise.exe --quiet --update
     ```
 
-2. Aktualizacja aplikacji Visual Studio:
+2. Aktualizowanie samej aplikacji Visual Studio:
 
     ```cmd
     vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
@@ -83,6 +86,6 @@ Instalację z Internetu uruchom nowy program inicjujący poprawionej wersji za p
 * [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)
-* [Jak definiować ustawienia w pliku odpowiedzi](automated-installation-with-response-file.md)
+* [Jak zdefiniować ustawienia w pliku odpowiedzi](automated-installation-with-response-file.md)
 * [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
+* [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)

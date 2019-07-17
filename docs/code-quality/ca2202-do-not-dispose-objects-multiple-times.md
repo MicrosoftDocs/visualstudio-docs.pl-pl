@@ -1,6 +1,6 @@
 ---
 title: 'CA2202: Nie likwiduj obiektów wielokrotnie'
-ms.date: 11/04/2016
+ms.date: 07/16/2019
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed2edd83918a9e4bc89543d1217d51e5e87f00c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796835"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300601"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nie likwiduj obiektów wielokrotnie
 
@@ -28,33 +28,33 @@ ms.locfileid: "62796835"
 |TypeName|DoNotDisposeObjectsMultipleTimes|
 |CheckId|CA2202|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
 
-Implementacja metody zawiera ścieżki kodu, które powodują wielokrotne wywołania do <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> lub równoważnika, na przykład użycie metody Close() na niektórych typów, w tym obiekcie.
+Implementacja metody zawiera ścieżki kodu, które mogą spowodować wielokrotne wywołania <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> lub równoważne metody Dispose, takie jak metoda Close () dla niektórych typów, w tym samym obiekcie.
 
 ## <a name="rule-description"></a>Opis reguły
 
-A implementowana prawidłowo <xref:System.IDisposable.Dispose%2A> metoda może być wywoływana wiele razy bez zgłoszenia wyjątku. Jednak to nie jest gwarantowana i aby uniknąć generowania <xref:System.ObjectDisposedException?displayProperty=fullName> nie powinien wywoływać <xref:System.IDisposable.Dispose%2A> więcej niż jeden raz na obiekcie.
+Prawidłowo zaimplementowaną <xref:System.IDisposable.Dispose%2A> metodę można wywołać wiele razy bez zgłaszania wyjątku. Nie jest to jednak gwarantowane i aby uniknąć generowania <xref:System.ObjectDisposedException?displayProperty=fullName> , nie należy wywoływać <xref:System.IDisposable.Dispose%2A> więcej niż jeden raz w obiekcie.
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA2000: Likwiduj obiekty przed utratą zakresu](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+- [CA2000: Usuń obiekty przed utratą zakresu](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, zmień wdrożenie tak oznacza niezależnie od tego, ścieżka kodu <xref:System.IDisposable.Dispose%2A> jest wywoływana tylko raz dla obiektu.
+Aby naprawić naruszenie tej zasady, należy zmienić implementację, tak aby niezależnie od ścieżki <xref:System.IDisposable.Dispose%2A> kodu jest wywoływana tylko raz dla obiektu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły. Nawet wtedy, gdy <xref:System.IDisposable.Dispose%2A> dla obiektu jest znany jako bezpiecznie wywoływana wiele razy, implementacja mogą ulec zmianie w przyszłości.
+Nie pomijaj ostrzeżeń dla tej reguły. Nawet wtedy <xref:System.IDisposable.Dispose%2A> , gdy dla obiektu wiadomo, że jest on bezpiecznie wielokrotnie wywoływany, implementacja może ulec zmianie w przyszłości.
 
 ## <a name="example"></a>Przykład
 
-Zagnieżdżone `using` instrukcji (`Using` w języku Visual Basic) może spowodować naruszenie ostrzeżenie CA2202. Jeśli zasób interfejsu IDisposable zagnieżdżonych wewnętrzny `using` instrukcja zawiera zasób zewnętrzny `using` instrukcji `Dispose` metoda zagnieżdżonych zasobów zwalnia zawartego zasobu. Jeśli taka sytuacja ma miejsce, `Dispose` metoda zewnętrznego `using` instrukcji podejmie próbę usunięcia jego zasób po raz drugi.
+Instrukcje `using` zagnieżdżone (`Using` w Visual Basic) mogą spowodować naruszenia ostrzeżenia CA2202. Jeśli zasób IDisposable zagnieżdżonej instrukcji wewnętrznej `using` zawiera zasób instrukcji zewnętrznej `using` , `Dispose` Metoda zagnieżdżonego zasobu zwalnia zawartego zasobu. Gdy wystąpi taka sytuacja, `Dispose` Metoda instrukcji zewnętrznej `using` próbuje usunąć zasób po raz drugi.
 
-W poniższym przykładzie <xref:System.IO.Stream> obiektu, który jest tworzony w zewnętrznym przy użyciu instrukcji jest zwalniany na końcu wewnętrzny przy użyciu instrukcji w metodzie Dispose <xref:System.IO.StreamWriter> obiekt, który zawiera `stream` obiektu. Na koniec zewnętrzny `using` instrukcji `stream` obiektu jest zwalniany po raz drugi. Drugie wydanie stanowi naruszenie CA2202.
+W poniższym przykładzie <xref:System.IO.Stream> obiekt tworzony w instrukcji zewnętrznej using jest wydawany na końcu wewnętrznej instrukcji using w metodzie <xref:System.IO.StreamWriter> Dispose obiektu, który zawiera `stream` obiekt. Na końcu instrukcji `using` `stream` zewnętrznej obiekt jest wydawany po raz drugi. Druga wersja stanowi naruszenie CA2202.
 
 ```csharp
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
@@ -68,7 +68,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 
 ## <a name="example"></a>Przykład
 
-Aby rozwiązać ten problem, należy użyć `try` / `finally` bloku zamiast zewnętrzny `using` instrukcji. W `finally` blokowania, upewnij się, że `stream` zasobów nie ma wartości null.
+Aby rozwiązać ten problem, należy użyć `try` / `finally` bloku zamiast instrukcji zewnętrznej `using` . Upewnij się, `stream` że zasób nie ma wartości null w bloku.`finally`
 
 ```csharp
 Stream stream = null;
@@ -83,10 +83,12 @@ try
 }
 finally
 {
-    if(stream != null)
-        stream.Dispose();
+    stream?.Dispose();
 }
 ```
+
+> [!TIP]
+> Powyższa składnia jest operatorem warunkowym o [wartości null.](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-) `?.`
 
 ## <a name="see-also"></a>Zobacz także
 

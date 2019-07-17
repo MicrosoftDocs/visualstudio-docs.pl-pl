@@ -1,12 +1,12 @@
 ---
 title: Numery wersji i daty wydania programu Visual Studio
 titleSuffix: ''
-description: Lista wydane wersje i numerów kompilacji dla programu Visual Studio, posortowane według daty.
+description: Lista wydanych wersji i numery kompilacji dla programu Visual Studio, posortowane według daty.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 07/10/2019
+ms.date: 07/16/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e9ed79d26c5bbb88aa28cbb8d23c82b29b3e1de
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: ba25676233391b8822f99f512e8a58936e1a9a5c
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785036"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300577"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -27,10 +27,11 @@ ms.locfileid: "67785036"
 
 ## <a name="visual-studio-2019"></a>Visual Studio 2019
 
-W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio 2019 r, do daty.
+W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Visual Studio 2019.
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.0 | Wersja zapoznawcza 4 | 16 lipca 2019 | 16.2.29111.141 |
 | 16.1.6 | Wydanie | 9 lipca 2019 r. | 16.1.29102.190 |
 | 16.0.6 | Wydanie | 9 lipca 2019 r. | 16.0.28803.540 |
 | 16.1.5 | Wydanie | 2 lipca 2019 r. | 16.1.29025.244 |
@@ -44,36 +45,36 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 16.1.0 | Wydanie | 21 maja 2019 r. | 16.1.28917.181 |
 | 16.2.0 | Wersja zapoznawcza 1 | 21 maja 2019 r. | 16.2.28917.182 |
 | 16.0.4 | Wydanie | 14 maja 2019 r. | 16.0.28803.452 |
-| 16.1.0 | Wersja zapoznawcza 3 | 6 maja 2019 r. | 16.1.28902.138 |
+| 16.1.0 | Wersja zapoznawcza 3 | 6 maja 2019 | 16.1.28902.138 |
 | 16.0.3 | Wydanie | 30 kwietnia 2019 r. | 16.0.28803.352 |
-| 16.1.0 | Preview 2 | 23 kwietnia 2019 r. | 16.1.28822.285 |
+| 16.1.0 | Preview 2 | 23 kwietnia 2019 | 16.1.28822.285 |
 | 16.0.2 | Wydanie | 18 kwietnia 2019 r. | 16.0.28803.202 |
-| 16.1.0 | Wersja zapoznawcza 1 | 10 kwietnia 2019 r. | 16.1.28809.33 |
+| 16.1.0 | Wersja zapoznawcza 1 | 10 kwietnia 2019 | 16.1.28809.33 |
 | 16.0.1 | Wydanie | 9 kwietnia 2019 r. | 16.0.28803.156 |
 | 16.0.1 | Wersja zapoznawcza 1 | 9 kwietnia 2019 r. | 16.0.28803.156 |
 | 16.0.0 | Wydanie | 2 kwietnia 2019 r. | 16.0.28729.10 |
 | 16.0.0 | Wersja zapoznawcza 5 | 2 kwietnia 2019 r. | 16.0.28729.10 |
-| 16.0.0 | W wersji Release Candidate 4 (RC.4) | 26 marca 2019 r. | 16.0.28721.148 |
-| 16.0.0 | 4\.4 (wersja zapoznawcza) | 26 marca 2019 r. | 16.0.28721.148 |
-| 16.0.0 | W wersji Release Candidate 3 (RC.3) | 19 marca 2019 r. | 16.0.28714.193 |
-| 16.0.0 | 4\.3 w wersji zapoznawczej | 19 marca 2019 r. | 16.0.28714.193 |
-| 16.0.0 | Wersja Release Candidate 2 (RC.2) | 12 marca 2019 r. | 16.0.28711.60 |
-| 16.0.0 | 4\.2 (wersja zapoznawcza) | 12 marca 2019 r. | 16.0.28711.60 |
-| 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6 marca 2019 r. | 16.0.28705.295 |
-| 16.0.0 | Wyświetl podgląd 4.1 Svc1 | 6 marca 2019 r. | 16.0.28705.295 |
-| 16.0.0 | W wersji Release Candidate 1 (RC.1) | 5 marca 2019 r. | 16.0.28701.123 |
-| 16.0.0 | Podgląd 4.1 | 5 marca 2019 r. | 16.0.28701.123 |
-| 16.0.0 | W wersji Release Candidate (RC) | 27 lutego 2019 r. | 16.0.28625.133 |
-| 16.0.0 | Wersja zapoznawcza 4 | 27 lutego 2019 r. | 16.0.28625.133 |
-| 16.0.0 | Wersja zapoznawcza 3 | 13 lutego 2019 r. | 16.0.28608.199 |
-| 16.0.0 | 2\.2 w wersji zapoznawczej | 5 lutego 2019 r. | 16.0.28602.52 |
-| 16.0.0 | 2\.1 w wersji zapoznawczej | 31 stycznia 2019 r. | 16.0.28529.54 |
-| 16.0.0 | Preview 2 | 23 stycznia 2019 r. | 16.0.28522.59 |
-| 16.0.0 | 1\.1 (wersja zapoznawcza) | 10 grudnia 2018 r. | 16.0.28408.50 |
+| 16.0.0 | Release Candidate 4 (RC. 4) | 26 marca 2019 | 16.0.28721.148 |
+| 16.0.0 | Wersja zapoznawcza 4,4 | 26 marca 2019 | 16.0.28721.148 |
+| 16.0.0 | Wersja Release Candidate 3 (RC. 3) | 19 marca 2019 | 16.0.28714.193 |
+| 16.0.0 | Wersja zapoznawcza 4,3 | 19 marca 2019 | 16.0.28714.193 |
+| 16.0.0 | Wersja Release Candidate 2 (RC. 2) | 12 marca 2019 r. | 16.0.28711.60 |
+| 16.0.0 | Wersja zapoznawcza 4,2 | 12 marca 2019 r. | 16.0.28711.60 |
+| 16.0.0 | Release Candidate 1 Svc1 (RC. 1 Svc1) | 6 marca 2019 | 16.0.28705.295 |
+| 16.0.0 | Wersja zapoznawcza 4,1 Svc1 | 6 marca 2019 | 16.0.28705.295 |
+| 16.0.0 | Wersja Release Candidate 1 (RC. 1) | 5 marca 2019 | 16.0.28701.123 |
+| 16.0.0 | Wersja zapoznawcza 4,1 | 5 marca 2019 | 16.0.28701.123 |
+| 16.0.0 | Release Candidate (RC) | 27 lutego 2019 | 16.0.28625.133 |
+| 16.0.0 | Wersja zapoznawcza 4 | 27 lutego 2019 | 16.0.28625.133 |
+| 16.0.0 | Wersja zapoznawcza 3 | 13 lutego 2019 | 16.0.28608.199 |
+| 16.0.0 | Wersja zapoznawcza 2,2 | 5 lutego 2019 r. | 16.0.28602.52 |
+| 16.0.0 | Wersja zapoznawcza 2,1 | 31 stycznia 2019 | 16.0.28529.54 |
+| 16.0.0 | Preview 2 | 23 stycznia 2019 | 16.0.28522.59 |
+| 16.0.0 | Wersja zapoznawcza 1,1 | 10 grudnia 2018 | 16.0.28408.50 |
 | 16.0.0 | Wersja zapoznawcza 1 | 4 grudnia 2018 r. | 16.0.28329.73 |
 
 > [!NOTE]
-> Aby uzyskać listy numerów kompilacji i daty wydania w poprzedniej wersji, zobacz [programu Visual Studio 2017 numery wersji i daty wydania](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)
+> Aby uzyskać listę numerów kompilacji i daty wydania dla poprzedniej wersji, zobacz [Visual Studio 2017 Build Numbers and Data Release](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)
 
 ::: moniker-end
 
@@ -92,16 +93,16 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.9.12 | Wydanie | 14 maja 2019 r. | 15.9.28307.665 |
 | 15.0.23 | Wydanie | 14 maja 2019 r. | 15.0.26228.85 |
 | 15.9.11 | Wydanie | 2 kwietnia 2019 r. | 15.9.28307.586 |
-| 15.9.10 | Wydanie | 25 marca 2019 r. | 15.9.28307.557 |
+| 15.9.10 | Wydanie | 25 marca 2019 | 15.9.28307.557 |
 | 15.9.9 | Wydanie | 12 marca 2019 r. | 15.9.28307.518 |
 | 15.0.22 | Wydanie | 12 marca 2019 r. | 15.0.26228.76 |
-| 15.9.8 | Wydanie | 5 marca 2019 r. | 15.9.28307.481 |
+| 15.9.8 | Wydanie | 5 marca 2019 | 15.9.28307.481 |
 | 15.9.7 | Wydanie | 12 lutego 2019 r. | 15.9.28307.423 |
 | 15.0.21 | Wydanie | 12 lutego 2019 r. | 15.0.26228.73 |
-| 15.9.6 | Wydanie | 24 stycznia 2019 r. | 15.9.28307.344 |
-| 15.9.5 | Wydanie | 8 stycznia 2019 r. | 15.9.28307.280 |
-| 15.9.4 | Wydanie | 11 grudnia 2018 r. | 15.9.28307.222 |
-| 15.0.20 | Wydanie | 11 grudnia 2018 r. | 15.0.26228.64 |
+| 15.9.6 | Wydanie | 24 stycznia 2019 | 15.9.28307.344 |
+| 15.9.5 | Wydanie | 8 stycznia 2019 | 15.9.28307.280 |
+| 15.9.4 | Wydanie | 11 grudnia 2018 | 15.9.28307.222 |
+| 15.0.20 | Wydanie | 11 grudnia 2018 | 15.0.26228.64 |
 | 15.9.3 | Wydanie | 28 listopada 2018 r. | 15.9.28307.145 |
 | 15.9.2 | Wydanie | 19 listopada 2018 r. | 15.9.28307.108 |
 | 15.9.1 | Wydanie | 15 listopada 2018 r. | 15.9.28307.105 |
@@ -241,7 +242,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.0.0 | Wydanie | 7 marca 2017 r. | 15.0.26228.4 |
 
 > [!NOTE]
-> Aby uzyskać więcej informacji na temat numerów kompilacji i wydania dla następnej wersji programu Visual Studio, zobacz [Visual Studio 2019 numery wersji i daty wydania](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019) strony.
+> Aby uzyskać więcej informacji o numerach kompilacji i datach wydania dla kolejnej wersji programu Visual Studio, zapoznaj się z informacjami na stronie [numery kompilacji i daty wydania programu Visual studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019) .
 
 ::: moniker-end
 
