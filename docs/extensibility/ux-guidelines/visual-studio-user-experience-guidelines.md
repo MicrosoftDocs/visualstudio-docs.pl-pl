@@ -1,5 +1,5 @@
 ---
-title: Wskazówki dotyczące interfejsu użytkownika programu Visual Studio | Dokumentacja firmy Microsoft
+title: Wskazówki dotyczące środowiska użytkownika programu Visual Studio | Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
@@ -8,22 +8,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f82142a66ad5c967e8f790e6dc70fca6b53496
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f01ddcd75aa02a9444f014898efd114ebdcd59d6
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310758"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315123"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika w programie Visual Studio
-W przypadku projektowania nowych funkcji programu Visual Studio, postępuj zgodnie z programu Visual Studio wskazówki dotyczące interfejsu użytkownika. Te wytyczne zawierają informacje o typowych modeli użytkownika i wzorce interakcji, umożliwiające projektantów nowe interfejsy użytkownika (UI) można utworzyć funkcji użytkownika, które są bezproblemową i spójną w środowisku deweloperskim.
+Postępuj zgodnie z instrukcjami dotyczącymi środowiska użytkownika programu Visual Studio, jeśli projektujesz nowe funkcje programu Visual Studio. Te wytyczne zawierają informacje o typowych modelach użytkowników i wzorcach interakcji, dzięki którym projektanci nowych interfejsów użytkownika mogą tworzyć środowiska użytkownika, które są bezproblemowe i spójne w środowisku programistycznym.
 
-W przypadku tworzenia oprogramowania dla produktów firmy Microsoft, Dowiedz się, jak używać tych zasobów:
+Jeśli tworzysz oprogramowanie dla produktów firmy Microsoft, Dowiedz się, jak korzystać z tych zasobów:
 
-- [Windows User Experience Interaction Guidelines](https://developer.microsoft.com/windows/desktop) są jego podstawy for Windows desktop zachowania i wyglądu.
+- [Wskazówki dotyczące interakcji użytkownika systemu Windows](https://docs.microsoft.com/windows/win32/uxguide/guidelines) to podstawy zachowania i wyglądu pulpitu systemu Windows.
 
-- Te wytyczne programu Visual Studio, które znajdują się wytyczne specyficzne dla platformy, zastępujące ogólne wytyczne Windows wszędzie, gdzie jest to odpowiednie dla naszego środowiska.
+- Te wskazówki dotyczące programu Visual Studio, które są wskazówkami specyficznymi dla platformy, które zastępują ogólne wytyczne systemu Windows, tam gdzie jest to odpowiednie dla środowiska.
 
-- [Kontrolek i wzorce dla aplikacji platformy UWP](/windows/uwp/design/controls-and-patterns) są odwołaniem pojawiających się wzorców, które mogą być używane w niektórych przypadkach, w programie Visual Studio.
+- [Kontrolki i wzorce dla aplikacji platformy UWP](/windows/uwp/design/controls-and-patterns) są odwołaniem do nowych wzorców, które mogą być używane w niektórych wystąpieniach w programie Visual Studio.
 
-Te wytyczne podają informacje o tym, co należy zrobić podczas projektowania dla programu Visual Studio, a w niektórych przypadkach informacje na temat jak to zrobić również jest dołączony. Aby uzyskać bardziej szczegółowe informacje o implementacji i Dowiedz się więcej o określonych interfejsów programowania aplikacji (API), które umożliwiają pisanie kodu dla rozwiązania, które integrują się w programie Visual Studio zintegrowane środowisko projektowe (IDE), należy użyć [Programu visual Studio Software Development Kit (SDK)](../visual-studio-sdk.md).
+Te wskazówki zawierają informacje o tym, co należy zrobić podczas projektowania programu Visual Studio, a w niektórych przypadkach należy również zapoznać się z informacjami dotyczącymi tego, jak to zrobić. Aby uzyskać bardziej szczegółowe informacje o implementacji i poznać konkretne interfejsy programowania aplikacji (API), które umożliwiają pisanie kodu dla rozwiązań, które integrują się z zintegrowanym środowiskiem programistycznym (IDE) programu Visual Studio, użyj [wizualizacji Studio Software Development Kit (SDK)](../visual-studio-sdk.md).

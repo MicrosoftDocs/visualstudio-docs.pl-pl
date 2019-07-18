@@ -1,51 +1,51 @@
 ---
-title: Konfigurowanie administratorów dla subskrypcji w chmurze | Dokumentacja firmy Microsoft
+title: Konfigurowanie administratorów dla subskrypcji chmury | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 03/28/2018
+manager: lank
+ms.date: 07/17/2019
 ms.topic: conceptual
-description: Konfigurowanie administratorów w przypadku subskrypcji chmury
-ms.openlocfilehash: 85371dd77b99fc5013843bb815082cc0f84cff33
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Konfigurowanie administratorów dla subskrypcji chmury
+ms.openlocfilehash: 62a350e6061444e3c75878dfd89739011c4641d5
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250690"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315203"
 ---
-# <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Skonfiguruj administratorów w przypadku subskrypcji chmury programu Visual Studio
+# <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Konfigurowanie administratorów dla subskrypcji programu Visual Studio w chmurze
 
-Subskrypcje programu Visual Studio Cloud są zarządzane przez administratorów. Osoby te mogą przypisywanie subskrypcji, edytować przypisania, Dodaj lub usuń subskrypcje i wykonywać inne zadania zarządzania subskrypcją.
+Subskrypcje programu Visual Studio w chmurze są zarządzane przez administratorów. Osoby te mogą przypisywać subskrypcje, edytować przypisania, dodawać i usuwać subskrypcje oraz wykonywać inne zadania związane z zarządzaniem subskrypcjami.
 
-## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>Właściciel subskrypcji platformy Azure jest pierwszą administratora
+## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>Właścicielem subskrypcji platformy Azure jest pierwszy administrator
 
-Po zakupie subskrypcji chmury programu Visual Studio, jako właściciel subskrypcji platformy Azure, używany do robienia zakupów, są automatycznie konfigurujesz jako administrator dla tych subskrypcji.
+Gdy kupujesz subskrypcje w chmurze programu Visual Studio, jako właściciel subskrypcji platformy Azure używanej do dokonywania zakupów, zostanie on automatycznie skonfigurowany jako administrator dla tych subskrypcji.
 
-Możesz kupić subskrypcje w chmurze za pośrednictwem [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions), kontaktując się dostawca rozwiązań w chmurze. Jeśli kupujesz za pośrednictwem programu Visual Studio Marketplace, na końcu doświadczenia podczas zakupu, użytkownik będzie miał możliwość zarządzania użytkownikami. Wybranie, czy opcja spowoduje przejście do portalu zarządzania subskrypcjami programu Visual Studio — [ https://manage.visualstudio.com ](https://manage.visualstudio.com).
+Subskrypcje chmury można zakupić za pomocą [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)lub skontaktować się z dostawcą rozwiązań w chmurze. Jeśli kupujesz za pomocą Visual Studio Marketplace, pod koniec korzystania z zakupu będziesz mieć możliwość zarządzania użytkownikami. Wybranie tej opcji spowoduje przejście do portalu administracyjnego subskrypcji programu Visual Studio — [https://manage.visualstudio.com](https://manage.visualstudio.com).
 
-Po dokonaniu zakupu subskrypcji, możesz odwiedzić stronę [portalu zarządzania](https://manage.visualstudio.com) w dowolnym momencie. Tak. wystarczy zalogować się do portalu i wybierz odpowiednią subskrypcję platformy Azure w lewym górnym rogu i rogu.
+Po zakupieniu subskrypcji możesz w dowolnym momencie odwiedzić [Portal administracyjny](https://manage.visualstudio.com) . Po prostu zaloguj się do portalu i wybierz odpowiednią subskrypcję platformy Azure w lewym górnym rogu.
 
-Jako właściciel subskrypcji platformy Azure używane do zakupu subskrypcji w chmurze można także przypisać administratorów.
+Jako właściciel subskrypcji platformy Azure używanej do zakupu subskrypcji w chmurze możesz także przypisać dodatkowych administratorów.
 
 ## <a name="add-administrators"></a>Dodaj administratorów
 
 Aby dodać administratorów:
 
-1. Nawiązać połączenie z witryny Azure Portal pod [portal.azure.com](https://portal.azure.com).
-2. Zaloguj się przy użyciu konta, którego użyto do zakupu subskrypcji chmury programu Visual Studio.
-3. W okienku nawigacji po lewej stronie, przewiń w dół do **Zarządzanie kosztami i rozliczenia**.
-4. W **Moje subskrypcje** , wybierz subskrypcję platformy Azure, którego użyto w celu dokonania zakupu.
-5. Kliknij przycisk **kontroli dostępu**, który znajduje się w górnej części listy w okienku nawigacji po lewej stronie.
-6. Kliknij przycisk **Dodaj** kartę w górnej części strony.
-7. W okienku staną się po prawej stronie kliknij nazwę subskrybenta, którego chcesz dokonać administrator.
-8. Kliknij pozycję **roli** listy rozwijanej w górnej części okienka, przewiń w dół i wybierz **Administrator dostępu użytkowników**.
-9. Kliknij polecenie **Zapisz**.
+1. Połącz się z witryną Azure Portal pod adresem [Portal.Azure.com](https://portal.azure.com).
+2. Zaloguj się przy użyciu konta użytego do zakupu subskrypcji programu Visual Studio w chmurze.
+3. W lewym okienku nawigacji przewiń w dół do **Cost Management i**rozliczeń.
+4. Z listy **Moje subskrypcje** wybierz subskrypcję platformy Azure, która została użyta do dokonania zakupu.
+5. Kliknij pozycję **Kontrola dostępu**, która znajduje się w górnej części listy w okienku nawigacji po lewej stronie.
+6. Kliknij kartę **Dodaj** w górnej części strony.
+7. Kliknij przycisk **Dodaj przypisanie roli**.
+8. W okienku po prawej stronie kliknij listę rozwijaną **rola** w górnej części okienka, przewiń w dół i wybierz pozycję **administrator dostępu użytkowników**.
+9. Na liście użytkowników przewiń w dół do użytkownika, który ma być administratorem, i wybierz go. 
+10. Kliknij polecenie **Zapisz**.
+11. Kliknij kartę **przypisania ról** , aby sprawdzić, czy wybrany użytkownik jest teraz widoczny jako administrator dostępu użytkownika.
 
-Subskrybent wyznaczonych pojawia się w środku strony, a ich rolą jest wyświetlany jako "Administrator dostępu użytkowników".
-
-Nowy administrator może teraz zalogować do [portalu zarządzania](https://manage.visualstudio.com), wybrać tej samej subskrypcji platformy Azure, którego użyto do zakupu subskrypcji chmury z listy w górnym lewym rogu strony i rozpocząć zarządzanie tymi Subskrypcje.
+Nowy administrator może teraz zalogować się do [portalu administracyjnego](https://manage.visualstudio.com), wybrać tę samą subskrypcję platformy Azure, która została użyta do zakupu subskrypcji w chmurze z listy w lewym górnym rogu strony i rozpocząć zarządzanie tymi subskrypcjami.
 
 > [!NOTE]
-> Jeśli użytkownicy z dostępem do edycji Twoje subskrypcje w chmurze, które nie nawiązują jako Administratorzy, mogą mieć role w podstawowym subskrypcji platformy Azure, umożliwiające zarządzanie subskrypcjami. Te role obejmują: właścicielem, współautorem, administrator usługi lub współadministratora. Aby uzyskać więcej informacji, odwiedź stronę [dodać menedżerów rozliczeń](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).
+> Jeśli widzisz użytkowników z dostępem, aby edytować subskrypcje chmury, które nie zostały ustanowione jako administratorzy, mogą oni mieć role w podstawowej subskrypcji platformy Azure, które umożliwiają im zarządzanie subskrypcjami. Role te obejmują: właściciel, współautor, administrator usługi lub współadministrator. Aby uzyskać więcej informacji, odwiedź stronę [Dodawanie menedżerów](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts)rozliczeń.
 
-Aby uzyskać informacje dotyczące subskrypcji chmury programu Visual Studio, zobacz [Przegląd](vscloud-overview.md) w ramach zakupu subskrypcji w chmurze. Aby kupić subskrypcje chmury programu Visual Studio, odwiedź Visual Studio Marketplace na [ https://marketplace.visualstudio.com/subscriptions ](https://marketplace.visualstudio.com/subscription).
+Informacje o subskrypcjach programu Visual Studio Cloud można znaleźć w sekcji [Omówienie](vscloud-overview.md) kupowania subskrypcji. Aby kupić subskrypcje programu Visual Studio w chmurze, odwiedź Visual Studio Marketplace [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)pod adresem.
