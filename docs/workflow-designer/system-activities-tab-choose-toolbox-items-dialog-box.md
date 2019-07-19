@@ -43,7 +43,7 @@ Wyświetla nazwy działania przepływu pracy w danym momencie zarejestrowany na 
 Namespace\
 Wyświetla hierarchii obszaru nazw .NET, który definiuje strukturę działania.
 
-Name\ zestawu
+Name zestawu\
 Wyświetla nazwę i wersję zestawu .NET, który zawiera działania.
 
 Directory\
