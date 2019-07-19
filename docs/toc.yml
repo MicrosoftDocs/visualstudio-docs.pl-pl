@@ -575,6 +575,8 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Praca z plikami XML i XSLT
           href: xml-tools/xml-tools-in-visual-studio.md
+        - name: Programowanie przy użyciu kontenerów
+          href: containers/index.yml
         - name: Tworzenie pełnych aplikacji
           items:
             - name: Projektowanie aplikacji z ułatwieniami dostępu
