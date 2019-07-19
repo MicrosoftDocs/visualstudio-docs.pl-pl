@@ -16,91 +16,91 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b20cf3692cf76f602eb11b0a53a1669c919f1679
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043570"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345744"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Używanie wyrażeń regularnych w programie Visual Studio
 
-Program Visual Studio używa [wyrażeń regularnych programu .NET](/dotnet/standard/base-types/regular-expressions) do znajdowania i zamieniania tekstu.
+Program Visual Studio używa [wyrażeń regularnych programu .NET](/dotnet/standard/base-types/regular-expressions) do znajdowania i zastępowania tekstu.
 
 ## <a name="regular-expression-examples"></a>Przykłady wyrażeń regularnych
 
-Poniższe tabele zawiera znaki wyrażenia regularnego, operatory, konstrukcje i przykłady wzorca. Aby pełniejsze informacje, zobacz [język wyrażeń regularnych](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+Poniższa tabela zawiera niektóre znaki wyrażenia regularnego, operatory, konstrukcje i przykłady wzorców. Aby uzyskać bardziej szczegółowe informacje, zobacz [Język wyrażeń regularnych](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 |Cel|Wyrażenie|Przykład|
 |-------------|----------------|-------------|
-|Dopasowuje dowolny pojedynczy znak (oprócz podziału wiersza). Aby uzyskać więcej informacji, zobacz [dowolny znak](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` pasuje "aro" w "around" i "abo" w "about" ale nie "acro" w "w".|
-|Dopasowuje zero lub więcej wystąpień poprzedniego wyrażenia (dopasowuje tak dużą liczbę znaków, jak to możliwe). Aby uzyskać więcej informacji, zobacz [dopasowuje zero lub więcej razy](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` pasuje "r" w "rack", "ar" w "ark" i "aar" w "aardvark"|
+|Dopasowuje dowolny pojedynczy znak (poza podziałem wiersza). Aby uzyskać więcej informacji, zobacz [dowolny znak](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` pasuje "aro" w "around" i "abo" w "about" ale nie "acro" w "w".|
+|Dopasowuje zero lub więcej wystąpień poprzedniego wyrażenia (dopasowuje tyle znaków jak to możliwe). Aby uzyskać więcej informacji, zobacz [dopasowanie zero lub więcej razy](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` pasuje "r" w "rack", "ar" w "ark" i "aar" w "aardvark"|
 |Dopasowuje dowolny znak zero lub więcej razy (symbol wieloznaczny \*)|.*|`c.*e` pasuje do "cke" w "racket", "comme" w "comment" i "code" w "code"|
-|Pasuje jedno lub więcej wystąpień poprzedniego wyrażenia (dopasowuje tak dużą liczbę znaków, jak to możliwe). Aby uzyskać więcej informacji, zobacz [Dopasuj jeden lub więcej razy](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e.+d` pasuje do "eed" w "feeder" ale nie "ed".|
+|Dopasowuje jedno lub więcej wystąpień poprzedniego wyrażenia (dopasowuje dowolną liczbę znaków, jak to możliwe). Aby uzyskać więcej informacji, zobacz [dopasowanie jeden lub więcej razy](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e.+d` pasuje do "eed" w "feeder" ale nie "ed".|
 |Dopasowuje dowolny znak jeden lub więcej razy (symbol wieloznaczny?)|.+|`e.+e` pasuje do "eede" w "feeder" ale nie "ee".|
-|Dopasowuje zero lub więcej wystąpień poprzedniego wyrażenia (dopasowuje tak małą znaków, jak to możliwe). Aby uzyskać więcej informacji, zobacz [dopasowania zero lub więcej razy (dopasowanie z opóźnieniem)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`e.*?e` pasuje do "ee" w "feeder" ale nie do "eede".|
-|Pasuje jedno lub więcej wystąpień poprzedniego wyrażenia (dopasowuje tak małą znaków, jak to możliwe). Aby uzyskać więcej informacji, zobacz [dopasować jeden lub więcej razy (dopasowanie z opóźnieniem)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e.+?e` pasuje "do ente" i "erprise" w "enterprise", ale nie całego słowa "enterprise".|
-|Zakotwiczenia ciągu dopasowania do [początek wiersza lub ciągu](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car` Dopasowuje słowa "samochód" tylko wtedy, gdy pojawia się na początku wiersza.|
-|Zakotwiczenia ciągu dopasowania do [koniec wiersza](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`end\r?$` pasuje do "end" tylko wtedy, gdy pojawia się na końcu wiersza.|
+|Dopasowuje zero lub więcej wystąpień poprzedniego wyrażenia (dopasowuje się jak najmniejsza liczba znaków). Aby uzyskać więcej informacji, zobacz [dopasowanie zero lub więcej razy (dopasowanie z opóźnieniem)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`e.*?e` pasuje do "ee" w "feeder" ale nie do "eede".|
+|Dopasowuje jedno lub więcej wystąpień poprzedniego wyrażenia (dopasowanie możliwie najmniejszej liczby znaków). Aby uzyskać więcej informacji, zobacz [dopasowanie jeden lub więcej razy (dopasowanie z opóźnieniem)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e.+?e` pasuje "do ente" i "erprise" w "enterprise", ale nie całego słowa "enterprise".|
+|Zakotwiczenie ciągu dopasowania do [początku wiersza lub ciągu](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car` Dopasowuje słowa "samochód" tylko wtedy, gdy pojawia się na początku wiersza.|
+|Zakotwiczenie ciągu dopasowania do [końca wiersza](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`end\r?$` pasuje do "end" tylko wtedy, gdy pojawia się na końcu wiersza.|
 |Zakotwiczenia ciągu dopasowania na końcu pliku|$|`end$` pasuje do "end" tylko wtedy, gdy pojawia się na końcu pliku.|
 |Dopasuj jeden dowolny znak, które są dostępne w zestawie|[abc]|`b[abc]` pasuje do "ba", "bb" i "bc".|
 |Dopasuj dowolny znak zakresu znaków|[a-f]|`be[n-t]` Dopasowuje "bet" w "between", "ben" w "beneath" i "bes" w "beside", ale nie "below".|
-|Przechwytywanie i niejawne numerowanie wyrażenia zawartgoe w nawiasach|()|`([a-z])X\1` pasuje "do aXa" i "bXb", ale nie "aXb". "\1" odnosi się do pierwszej grupy wyrażenie "[a-z]".|
+|Przechwytywanie i niejawne numerowanie wyrażenia zawartgoe w nawiasach|()|`([a-z])X\1` pasuje "do aXa" i "bXb", ale nie "aXb". "\1" odnosi się do pierwszej grupy wyrażenie "[a-z]". Aby uzyskać więcej informacji, zobacz [Przechwytywanie grup i wzorców](#capture-groups-and-replacement-patterns)zastąpień. |
 |Unieważnienie dopasowania|(?! ABC)|`real(?!ity)` pasuje do członu "real" w słowach "realty" i "really", ale nie w "reality". W "realityreal" danych znajdzie także drugi "prawdziwy" (ale nie pierwszy "prawdziwy").|
-|Dopasowuje dowolny znak, który nie znajduje się w danym zestawie znaków. Aby uzyskać więcej informacji, zobacz [grupa znaków negatywnych](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^ abc]|`be[^n-t]` pasuje "do bef" w "przed", "beh" w "za" i "bel" w "below", ale nie "beneath".|
+|Dopasowuje dowolny znak, który nie znajduje się w danym zestawie znaków. Aby uzyskać więcej informacji, zobacz [Grupa znaków negatywnych](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^ abc]|`be[^n-t]` pasuje "do bef" w "przed", "beh" w "za" i "bel" w "below", ale nie "beneath".|
 |Dopasowuje wyrażenie przed lub po symbolu|&#124;|`(sponge\|mud) bath` pasuje "sponge bath" i "mud bath."|
 |[Znak ucieczki](/dotnet/standard/base-types/character-escapes-in-regular-expressions) po ukośniku odwrotnym| \\ |`\^` pasuje do znaku ^.|
-|Określ liczbę wystąpień poprzedzającego znaku lub grupy. Aby uzyskać więcej informacji, zobacz [odpowiada dokładnie n razy](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, gdzie "n" to liczba wystąpień|`x(ab){2}x` odpowiada "xababx" i `x(ab){2,3}x` odpowiada "xababx" i "xabababx", ale nie "xababababx".|
-|[Dopasowuje tekst w kategorii Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Aby uzyskać więcej informacji dotyczących klas znaków Unicode, zobacz [właściwości znaków standardu Unicode standardowe 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, gdzie "X" jest numerem kodu Unicode.|`\p{Lu}` pasuje do "T" i "D" w "Thomas Doe".|
-|[Dopasuj granicę wyrazu](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (poza klasą znak `\b` określa granicy słowa i wewnątrz znak klasy `\b` określa backspace.)|`\bin` pasuje do "w" w "wewnątrz" ale nie "pinto".|
-|Dopasuj podział wiersza (czyli znak powrotu karetki następuje nowy wiersz)|\r?\n|`End\r?\nBegin` pasuje do "Koniec" i "Początek" tylko wtedy, gdy "Koniec" jest ostatnim ciągiem w wierszu a "Początek" jest pierwszym ciągiem w następnym wierszu.|
-|Pasuje do żadnego [znak wyrazu](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd` Dopasowuje "add" i "a1d" ale nie "d".|
-|Pasuje do żadnego [biały znak](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` pasuje do frazy "Interfejs publiczny".|
-|Pasuje do żadnego [znak cyfry dziesiętnej](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` pasuje i "3" w "3456", "2" w 23" i"1"w"1".|
+|Określ liczbę wystąpień poprzedzającego znaku lub grupy. Aby uzyskać więcej informacji, zobacz [dopasowanie dokładnie n razy](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, gdzie "n" jest liczbą wystąpień|`x(ab){2}x` odpowiada "xababx" i `x(ab){2,3}x` odpowiada "xababx" i "xabababx", ale nie "xababababx".|
+|[Dopasowuje tekst w kategorii Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Aby uzyskać więcej informacji na temat klas znaków Unicode, zobacz [Unicode Standard 5,2 Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, gdzie "X" jest numerem kodu Unicode.|`\p{Lu}` pasuje do "T" i "D" w "Thomas Doe".|
+|[Dopasowuje granicę słowa](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (poza klasą znak `\b` określa granicy słowa i wewnątrz znak klasy `\b` określa backspace.)|`\bin` pasuje do "w" w "wewnątrz" ale nie "pinto".|
+|Dopasowuje podział wiersza (oznacza to, że znak powrotu karetki następuje po nowym wierszu)|\r?\n|`End\r?\nBegin` pasuje do "Koniec" i "Początek" tylko wtedy, gdy "Koniec" jest ostatnim ciągiem w wierszu a "Początek" jest pierwszym ciągiem w następnym wierszu.|
+|Dopasowuje dowolny [znak słowa](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd` Dopasowuje "add" i "a1d" ale nie "d".|
+|Dopasowuje dowolny [znak odstępu](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` pasuje do frazy "Interfejs publiczny".|
+|Dopasowuje dowolny [znak cyfry dziesiętnej](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` pasuje i "3" w "3456", "2" w 23" i"1"w"1".|
 |Dopasowuje znak Unicode|\uXXXX gdzie XXXX określa wartość znaku Unicode.|`\u0065` Dopasowuje znak "e".|
 |Dopasuj identyfikator|\b [\_\w-[0-9]] [\_\w]*\b|Dopasowuje "type1", ale nie "& type1" lub "#define".|
 |Dopasuj ciąg w cudzysłowie|((\\".+?\\")&#124;('.+?'))|Dopasowuje dowolny ciąg w pojedynczym lub podwójnym cudzysłowie.|
-|Dopasuj liczbę szesnastkową|\b0[xX]([0-9a-fA-F]+\)\b|Dopasowuje "0xc67f", ale nie "0xc67g".|
+|Dopasuj liczbę szesnastkową|\b0 [XX] ([0-9A-FA-F] +\)\b|Pasuje do "0xc67f", ale nie "0xc67g".|
 |Dopasuj liczby całkowite i miejsca dziesiętne|\b[0-9]*\\.\*[0-9]+\b|Dopasowuje "1,333".|
 
 > [!TIP]
 > W systemach operacyjnych Windows większość linii kończyć się "\r\n" (znak powrotu karetki następuje nowy wiersz). Te znaki nie są widoczne, ale są obecne w edytorze i są przekazywane do usługi wyrażenie regularne .NET.
 
-## <a name="capture-groups-and-replacement-patterns"></a>Grupy przechwytywania i wzorce zamieniania
+## <a name="capture-groups-and-replacement-patterns"></a>Przechwyć grupy i wzorce zastępujące
 
-Grupa przechwytywania wyznacza podwyrażenia wyrażeń regularnych i przechwytuje podciągu ciągu wejściowego. Można użyć przechwyconych grupach w wyrażeniach regularnych, sama (na przykład, aby wyszukać powtarzające się wyrazy), lub we wzorcu zamieniania. Aby uzyskać szczegółowe informacje, zobacz [grupowania konstrukcje w wyrażeniach regularnych](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions).
+Grupa przechwytywania wyznacza Podwyrażenie wyrażenia regularnego i przechwytuje podciąg ciągu wejściowego. Przechwyconych grup można użyć w wyrażeniu regularnym (na przykład w celu wyszukania Powtórzonego słowa) lub w wzorcu zastępczym. Aby uzyskać szczegółowe informacje, zobacz [grupowanie konstrukcji w wyrażeniach regularnych](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions).
 
-Aby utworzyć grupę przechwytywania numerowaną, należy ująć Podwyrażenie przy użyciu nawiasów we wzorcu wyrażenia regularnego. Przechwytywania są automatycznie numerowane od lewej do prawej strony, na podstawie pozycji nawiasu otwierającego w wyrażeniu regularnym. Dostęp do przechwyconej grupy:
+Aby utworzyć numerowaną grupę przechwytywania, umieść Podwyrażenie z nawiasami we wzorcu wyrażenia regularnego. Przechwytywanie są numerowane automatycznie od lewej do prawej w oparciu o pozycję nawiasu otwierającego w wyrażeniu regularnym. Aby uzyskać dostęp do przechwyconej grupy:
 
-- **w wyrażeniach regularnych**: Użyj `\number`. Na przykład `\1` w wyrażeniu regularnym `(\w+)\s\1` odwołuje się do pierwszej grupy przechwytywania `(\w+)`.
+- **w wyrażeniu regularnym**: Użyj `\number`. Na przykład, `\1` w wyrażeniu `(\w+)\s\1` regularnym odwołuje się do `(\w+)`pierwszej grupy przechwytywania.
 
-- **we wzorcu zamieniania znak**: Użyj `$number`. Na przykład grupowanych wyrażenia regularnego `(\d)([a-z])` definiuje dwie grupy: pierwsza grupa zawiera pojedynczą cyfrą dziesiętną, a drugiej grupy pojedynczy znak między **a** i **z**. Wyrażenie wyszukuje cztery dopasowań w następujący ciąg: **1a 2b 3c 4d**. Ciąg zastępujący `z$1` odwołuje się do pierwszej grupy (`$1`) i konwertuje ciąg na **z1 z2 z3 z4**.
+- **w wzorcu wymiany**: Użyj `$number`. Na przykład grupowanych wyrażenia regularnego `(\d)([a-z])` definiuje dwie grupy: pierwsza grupa zawiera pojedynczą cyfrą dziesiętną, a drugiej grupy pojedynczy znak między **a** i **z**. Wyrażenie umożliwia znalezienie czterech dopasowań w następującym ciągu: **1a 2b 3C 4D**. Ciąg `z$1` zamienny odwołuje się tylko do pierwszej`$1`grupy () i konwertuje ciąg na **Z1 Z2 Z3 Z4**.
 
-Na poniższej ilustracji przedstawiono wyrażenia regularnego `(\w+)\s\1` i ciąg zastępujący `$1`. Wyrażenia regularnego i wzorzec zamieniania odwoływać się do pierwszej grupy przechwytywania, automatycznie numerowanych 1. Po wybraniu **Zamień wszystkie** w **szybkiego zamieniania** okno dialogowe w programie Visual Studio, należy powtórzyć wyrazy są usuwane z powieści.
+Na poniższej ilustracji przedstawiono wyrażenie `(\w+)\s\1` regularne i ciąg `$1`zastępczy. Zarówno wyrażenie regularne, jak i wzorzec zastępczy odwołują się do pierwszej grupy przechwytywania, która jest automatycznie numerowana 1. Po wybraniu opcji **Zamień wszystkie** w oknie dialogowym **szybkie zamienianie** w programie Visual Studio powtórzone słowa są usuwane z tekstu.
 
-![Szybkie zamienianie przedstawiający grupa przechwytywania numerowanej w programie Visual Studio](media/numbered-capture-group.png)
-
-> [!TIP]
-> Upewnij się, że **Użyj wyrażeń regularnych** przycisk jest zaznaczony w **szybkiego zamieniania** okno dialogowe.
-
-### <a name="named-capture-groups"></a>Funkcji przechwytywania o nazwie grupy
-
-Zamiast polegania na automatycznego numerowania grupy przechwytywania, możesz nadać mu nazwę. Składnia dla funkcji przechwytywania o nazwie grupy jest `(?<name>subexpression)`.
-
-Nazwanych grup przechwytywania, takich jak numerowanych grup przechwytywania, może być używany w wyrażeniu regularnym, samego lub we wzorcu zamieniania. Aby uzyskać dostęp do grupy funkcji przechwytywania o nazwie:
-
-- **w wyrażeniach regularnych**: Użyj `\k<name>`. Na przykład `\k<repeated>` w wyrażeniu regularnym `(?<repeated>\w+)\s\k<repeated>` odwołuje się do grupy przechwytywania, który nosi nazwę `repeated` i którego cząstkowe jest `\w+`.
-
-- **we wzorcu zamieniania znak**: Użyj `${name}`. Na przykład `${repeated}`.
-
-Na przykład na poniższej ilustracji przedstawiono wyrażenia regularnego `(?<repeated>\w+)\s\k<repeated>` i ciąg zastępujący `${repeated}`. Wyrażenia regularnego i wzorzec zamieniania odwołują się do grupy przechwytywania o nazwie `repeated`. Po wybraniu **Zamień wszystkie** w **szybkiego zamieniania** okno dialogowe w programie Visual Studio, należy powtórzyć wyrazy są usuwane z powieści.
-
-![Szybkie zamienianie przedstawiający funkcji przechwytywania o nazwie grupy w programie Visual Studio](media/named-capture-group.png)
+![Szybkie zastępowanie przedstawiające numerowaną grupę przechwytywania w programie Visual Studio](media/numbered-capture-group.png)
 
 > [!TIP]
-> Upewnij się, że **Użyj wyrażeń regularnych** przycisk jest zaznaczony w **szybkiego zamieniania** okno dialogowe.
+> Upewnij się, że w oknie dialogowym **szybkie zamienianie** jest zaznaczone pole wyboru **Użyj wyrażeń regularnych** .
 
-Aby uzyskać więcej informacji na temat funkcji przechwytywania o nazwie grup, zobacz [o nazwie dopasowane podwyrażenia](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions). Aby uzyskać więcej informacji na temat wyrażeń regularnych, które są używane we wzorcach zamieniania, zobacz [podstawienia w wyrażeniach regularnych](/dotnet/standard/base-types/substitutions-in-regular-expressions).
+### <a name="named-capture-groups"></a>Nazwane grupy przechwytywania
+
+Zamiast polegać na automatycznym numerowaniu grupy przechwytywania, można nadać jej nazwę. Składnia nazwanej grupy przechwytywania to `(?<name>subexpression)`.
+
+Nazwane grupy przechwytywania, takie jak numerowane grupy przechwytywania, mogą być używane wewnątrz wyrażenia regularnego lub w wzorcu zamiennym. Aby uzyskać dostęp do nazwanej grupy przechwytywania:
+
+- **w wyrażeniu regularnym**: Użyj `\k<name>`. Na przykład `\k<repeated>` w wyrażeniu `(?<repeated>\w+)\s\k<repeated>` regularnym odwołuje się do grupy przechwytywania o `repeated` nazwie i której Podwyrażenie `\w+`ma wartość.
+
+- **w wzorcu wymiany**: Użyj `${name}`. Na przykład `${repeated}`.
+
+Na przykład na poniższej ilustracji przedstawiono wyrażenie `(?<repeated>\w+)\s\k<repeated>` regularne i ciąg `${repeated}`zastępczy. Zarówno wyrażenie regularne, jak i zastępczy wzorzec odwołują się do `repeated`grupy przechwytywania o nazwie. Po wybraniu opcji **Zamień wszystkie** w oknie dialogowym **szybkie zamienianie** w programie Visual Studio powtórzone słowa są usuwane z tekstu.
+
+![Szybkie zastępowanie przedstawiające nazwaną grupę przechwytywania w programie Visual Studio](media/named-capture-group.png)
+
+> [!TIP]
+> Upewnij się, że w oknie dialogowym **szybkie zamienianie** jest zaznaczone pole wyboru **Użyj wyrażeń regularnych** .
+
+Aby uzyskać więcej informacji na temat nazwanych grup przechwytywania, zobacz [nazwane Podwyrażenie dopasowane](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions). Aby uzyskać więcej informacji na temat wyrażeń regularnych, które są używane w wzorcach zamiennych, zobacz [podstawienia w wyrażeniach regularnych](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="see-also"></a>Zobacz także
 

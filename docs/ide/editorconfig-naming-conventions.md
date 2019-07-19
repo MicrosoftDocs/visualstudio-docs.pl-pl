@@ -1,5 +1,5 @@
 ---
-title: .NET nazewnictwa konwencje dla plików EditorConfig
+title: Konwencje nazewnictwa platformy .NET dla plików EditorConfig
 ms.date: 11/20/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,40 +10,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309823"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345705"
 ---
-# <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla wtyczki EditorConfig
+# <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla EditorConfig
 
-Konwencje nazewnictwa dotyczą nazewnictwa elementów kodu, takich jak klasy, właściwości i metody. Na przykład można określić, czy publiczne elementy Członkowskie musi być napisane wielkimi literami lub że metod asynchronicznych może kończyć się "Async". Te zasady można wymusić, określając je w [pliku .editorconfig](../ide/create-portable-custom-editor-options.md). Naruszeń zasady nazewnictwa są wyświetlane w **lista błędów** lub jako sugestię w obszarze nazwy, w zależności od ważności można wybrać dla tej reguły. Nie ma potrzeby do skompilowania projektu, aby można było wyświetlić naruszenia.
+Konwencje nazewnictwa dotyczą nazw elementów kodu, takich jak klasy, właściwości i metody. Na przykład można określić, że publiczne składowe muszą być pisane wielkimi literami lub że metody asynchroniczne muszą kończyć się "Async". Te reguły można wymusić, określając je w [pliku. editorconfig](../ide/create-portable-custom-editor-options.md). Naruszenia reguły nazewnictwa pojawiają się w **Lista błędów** lub jako sugestia pod nazwą, w zależności od ważności wybranej dla reguły. Nie ma potrzeby kompilowania projektu w celu wyświetlenia naruszeń.
 
-Konwencje nazewnictwa powinny być uporządkowane od najbardziej specyficznych do najmniej specyficznych dla w pliku EditorConfig. Pierwszą regułę napotkano, które mogą być stosowane jest tylko reguła, która jest stosowana. Jednak w przypadku wielu reguł *właściwości* o takiej samej nazwie ostatnio odnaleziono pierwszeństwo ma właściwość o tej nazwie. Aby uzyskać więcej informacji, zobacz [plików hierarchii i pierwszeństwo](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+Dla każdej konwencji nazewnictwa należy określić symbole, do których ma zastosowanie, styl nazewnictwa i ważność wymuszania Konwencji przy użyciu właściwości opisanych poniżej. Kolejność właściwości nie jest ważna.
 
-Dla każdego konwencji nazewnictwa należy określić symbole, których on obowiązuje, styl nazewnictwa i ważność wymuszania Konwencji, za pomocą właściwości opisanych poniżej. Kolejność właściwości nie jest ważna.
-
-Aby rozpocząć, wybierz tytuł dla tej reguły nazewnictwa, która będzie używana we wszystkich właściwości, które są potrzebne do w pełni opisu reguły. Na przykład `public_members_must_be_capitalized` jest dobrą nazwę opisową dla reguły nazewnictwa. Ta strona będzie odnosił się do tytułu, wybierz jako **< namingRuleTitle\>**  w kolejnych sekcjach.
+Aby rozpocząć, wybierz tytuł reguły nazewnictwa, która będzie używana we wszystkich właściwościach, które są potrzebne do pełnego opisywania reguły. Na przykład `public_members_must_be_capitalized` jest dobrą, opisową nazwą Reguły nazewnictwa. Ta strona będzie odnosić się do tytułu wybranego jako **< namingRuleTitle\>**  w poniższych sekcjach.
 
 ## <a name="symbols"></a>Symbole
 
-Najpierw należy zidentyfikować grupy symbole, aby zastosować regułę nazewnictwa. Ta właściwość ma następujący format:
+Najpierw Zidentyfikuj grupę symboli, do której ma zostać zastosowana reguła nazewnictwa. Ta właściwość ma następujący format:
 
 `dotnet_naming_rule.<namingRuleTitle>.symbols = <symbolTitle>`
 
-Nadaj nazwę grupie symbole, zastępując **< symbolTitle\>**  wartością opisowy tytuł, na przykład `public_symbols`. Użyjesz **< symbolTitle\>**  wartości w nazwach trzy właściwości, które opisują, która symboli reguła jest stosowana do (rodzaje symboli, poziomów ułatwień dostępu i Modyfikatory).
+Nadaj nazwę grupie symboli, zastępując **< wartość symbolTitle\>**  nazwą opisową, na przykład. `public_symbols` Wartość **< symbolTitle\>**  jest używana w trzech nazwach właściwości, które opisują, do których symboli stosowana jest reguła (rodzaje symboli, poziomy ułatwień dostępu i modyfikatory).
 
 ### <a name="kinds-of-symbols"></a>Rodzaje symboli
 
-Aby opisać rodzaj symbole, aby zastosować regułę nazewnictwa, należy określić właściwość w następującym formacie:
+Aby opisać rodzaj symboli, do których ma zostać zastosowana reguła nazewnictwa, określ właściwość w następującym formacie:
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-Na poniższej liście przedstawiono dopuszczalne wartości i można określić wiele wartości, rozdzielając je przecinkami.
+Na poniższej liście przedstawiono dozwolone wartości i można określić wiele wartości, rozdzielając je przecinkami.
 
-- \* (Użyj tej wartości, aby określić wszystkie symbole)
+- \*(Użyj tej wartości, aby określić wszystkie symbole)
 - — przestrzeń nazw
 - class
 - struktura
@@ -61,22 +59,22 @@ Na poniższej liście przedstawiono dopuszczalne wartości i można określić w
 
 ### <a name="accessibility-levels-of-symbols"></a>Poziomy ułatwień dostępu symboli
 
-Aby opisać poziomów ułatwień dostępu symboli ma być stosowana reguła nazewnictwa, należy określić nazwę właściwości w następującym formacie:
+Aby opisać poziomy ułatwień dostępu do symboli, do których ma zastosowanie reguła nazewnictwa, określ nazwę właściwości w następującym formacie:
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-Na poniższej liście przedstawiono dopuszczalne wartości i można określić wiele wartości, rozdzielając je przecinkami.
+Na poniższej liście przedstawiono dozwolone wartości i można określić wiele wartości, rozdzielając je przecinkami.
 
-- \* (Ta wartość służy do określenia wszystkich poziomów ułatwień dostępu)
+- \*(Użyj tej wartości, aby określić wszystkie poziomy ułatwień dostępu)
 - public
-- wewnętrzny lub friend
+- wewnętrzny lub zaprzyjaźniony
 - private
 - protected
-- chronione\_wewnętrznego lub protected_friend
+- chroniona\_wewnętrzna lub protected_friend
 - prywatne\_chronione
 - local
 
-   `local` Poziom dostępności dotyczy symbole zdefiniowane wewnątrz metody. Jest to przydatne w przypadku Definiowanie konwencji nazewnictwa dla symboli, dostępności, której nie można określić w kodzie. Na przykład, jeśli określisz `applicable_accessibilities = local` na konwencji nazewnictwa dla stałych (`required_modifiers = const`), reguła dotyczy tylko stałe zdefiniowane wewnątrz metody, a nie te, które zdefiniowane w typie.
+   Poziom `local` dostępności ma zastosowanie do symboli zdefiniowanych w ramach metody. Jest to przydatne w przypadku definiowania konwencji nazewnictwa dla symboli, których dostępność nie może być określona w kodzie. Na przykład, jeśli określisz `applicable_accessibilities = local` konwencję nazewnictwa dla stałych (`required_modifiers = const`), reguła dotyczy tylko stałych zdefiniowanych w ramach metody, a nie tych zdefiniowanych w typie.
 
    ```csharp
    class TypeName
@@ -92,13 +90,13 @@ Na poniższej liście przedstawiono dopuszczalne wartości i można określić w
    }
    ```
 
-### <a name="symbol-modifiers-optional"></a>Modyfikatory symbol (opcjonalnie)
+### <a name="symbol-modifiers-optional"></a>Modyfikatory symboli (opcjonalnie)
 
-Aby opisać modyfikatorów symbole ma być stosowana reguła nazewnictwa, należy określić nazwę właściwości w następującym formacie:
+Aby opisać Modyfikatory symboli, do których ma zastosowanie reguła nazewnictwa, określ nazwę właściwości w następującym formacie:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Poniższej przedstawiono listę dopuszczalnych wartości (Oddziel wiele wartości przecinkami):
+Na poniższej liście przedstawiono dozwolone wartości (Rozdziel wiele wartości przecinkami):
 
 - `abstract` lub `must_inherit`
 - `async`
@@ -107,85 +105,101 @@ Poniższej przedstawiono listę dopuszczalnych wartości (Oddziel wiele wartośc
 - `static` lub `shared`
 
    > [!NOTE]
-   > Jeśli masz regułę nazewnictwa dla `static` lub `shared` symboli, zostanie ono również zastosowane do `const` symboli, ponieważ są one niejawnie statyczne. Jeśli nie chcesz `static` nazewnictwa reguła była stosowana do `const` symbole, Utwórz oddzielne regułę nazewnictwa `const` symboli.
+   > Jeśli masz regułę nazewnictwa dla `static` symboli lub `shared` , są one również stosowane do `const` symboli, ponieważ są one niejawnie statyczne. Jeśli nie chcesz `static` , aby reguła nazewnictwa miała zastosowanie `const` do symboli, utwórz oddzielną regułę `const` nazewnictwa dla symboli.
 
-Reguły nazewnictwa odpowiada podpisów, które mają *wszystkich* Modyfikatory określone w `required_modifiers`. Jeśli pominiesz tę właściwość, jest używana domyślna wartość pusta lista, oznacza to, brak określonych modyfikatorów wymaganych do dopasowania. Oznacza to, że symbol modyfikatorów nie mają wpływu na informację, czy ta reguła jest stosowana.
+Reguła nazewnictwa dopasowuje podpisy, które mają *wszystkie* Modyfikatory `required_modifiers`określone w. W przypadku pominięcia tej właściwości zostanie użyta wartość domyślna pustej listy, co oznacza, że dla dopasowania nie są wymagane określone modyfikatory. Oznacza to, że Modyfikatory symbolu nie mają wpływu na to, czy ta reguła jest stosowana.
 
 > [!TIP]
-> Nie określaj wartości `*` dla `required_modifiers`. Zamiast tego po prostu pominąć `required_modifiers` właściwość całkowicie i reguły nazewnictwa, które będą stosowane do dowolnego rodzaju modyfikator.
+> Nie określaj wartości `*` parametru for `required_modifiers`. Zamiast tego wystarczy pominąć `required_modifiers` Właściwość całkowicie i reguła nazewnictwa będzie stosowana do dowolnego rodzaju modyfikatora.
 
 ## <a name="style"></a>Styl
 
-Teraz, gdy zidentyfikowaliśmy grupy symbole, aby zastosować regułę nazewnictwa, wystarczy opisać stylu nazewnictwa. Styl może być, czy nazwa ma niektórych prefiks lub sufiks określonych, lub że poszczególnych wyrazów w nazwie są rozdzielone znakiem niektórych. Można również określić styl wielkość liter. Właściwości stylu ma następujący format:
+Teraz, po zidentyfikowaniu grupy symboli, do której ma zostać zastosowana reguła nazewnictwa, można opisać styl nazewnictwa. Styl może być, że nazwa ma określony prefiks lub określony sufiks lub że poszczególne wyrazy w nazwie są oddzielone określonym znakiem. Możesz również określić styl kapitalizacji. Właściwość Style ma następujący format:
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
-Nadaj nazwę stylu, zastępując **< styleTitle\>**  wartością opisowy tytuł, na przykład `first_word_upper_case_style`. Użyjesz **< styleTitle\>**  wartości nazw właściwości, które opisują styl nazewnictwa (prefiks, sufiks, znak separatora słowa i wielkości liter). Użyj co najmniej jeden z tych właściwości w celu opisania własnego stylu.
+Nadaj stylowi nazwę, zastępując < wartość **styleTitle\>**  nazwą opisową, na przykład. `first_word_upper_case_style` **< Wartość styleTitle\>**  w nazwach właściwości, które opisują styl nazewnictwa (prefiks, sufiks, znak separatora słów i wielkie litery). Aby opisać styl, Użyj co najmniej jednej z tych właściwości.
 
-### <a name="require-a-prefix"></a>Wymagany prefiks
+### <a name="require-a-prefix"></a>Wymagaj prefiksu
 
-Aby określić, że nazwy symboli musi zaczynać się niektórych znaków, należy użyć tej właściwości:
+Aby określić, że nazwy symboli muszą zaczynać się od określonych znaków, Użyj tej właściwości:
 
 `dotnet_naming_style.<styleTitle>.required_prefix = <prefix>`
 
-### <a name="require-a-suffix"></a>Wymagaj sufiks
+### <a name="require-a-suffix"></a>Wymagaj sufiksu
 
-Aby określić, czy nazwy symboli musi się kończyć niektórych znaków, należy użyć tej właściwości:
+Aby określić, że nazwy symboli muszą kończyć się niektórymi znakami, Użyj tej właściwości:
 
 `dotnet_naming_style.<styleTitle>.required_suffix = <suffix>`
 
-### <a name="require-a-certain-word-separator"></a>Wymagaj separator wyrazów
+### <a name="require-a-certain-word-separator"></a>Wymagaj określonego separatora wyrazów
 
-Aby określić, że poszczególne wyrazy w nazwy symboli muszą być oddzielone znakiem niektórych, użyj tej właściwości:
+Aby określić, że poszczególne wyrazy w nazwach symboli muszą być oddzielone określonym znakiem, Użyj tej właściwości:
 
 `dotnet_naming_style.<styleTitle>.word_separator = <separator character>`
 
-### <a name="require-a-capitalization-style"></a>Wymagaj styl wielkość liter
+### <a name="require-a-capitalization-style"></a>Wymagaj stylu wielką literą
 
-Aby określić styl określonego wielkość liter nazwy symboli, użyj tej właściwości:
+Aby określić określony styl wielką literą dla nazw symboli, Użyj tej właściwości:
 
 `dotnet_naming_style.<styleTitle>.capitalization = <value>`
 
-Dopuszczalne wartości dla tej właściwości to:
+Dozwolone wartości tej właściwości to:
 
 - pascal_case
 - camel_case
 - pierwszy\_word_upper
-- wszystkie\_górny
+- wszystkie\_wielkie litery
 - all_lower
 
 > [!NOTE]
-> Należy określić stylu pisania wielkimi jako część usługi nazewnictwa styl, w przeciwnym razie własnego stylu nazewnictwa może być ignorowane.
+> Należy określić styl kapitalizacji jako część stylu nazewnictwa. w przeciwnym razie styl nazewnictwa może zostać zignorowany.
 
 ## <a name="severity"></a>Ważność
 
-Aby opisać ważność naruszenie reguły nazewnictwa, należy określić właściwość w następującym formacie:
+Aby opisać ważność naruszenia reguły nazewnictwa, należy określić właściwość w następującym formacie:
 
 `dotnet_naming_rule.<namingRuleTitle>.severity = <value>`
 
-W poniższej tabeli przedstawiono wartości dozwoloną ważności i ich znaczenie:
+W poniższej tabeli przedstawiono dozwolone wartości ważności i znaczenie:
 
 Ważność | Efekt
 ------------ | -------------
-Brak lub silent | Gdy nie trwa występuje ten styl, nie pokazuj żadnych dla użytkownika; jednak automatycznie wygenerowany kod poniżej tego stylu.
-Sugestia | Gdy nie trwa występuje ten styl, wyświetlane użytkownikowi jako sugestię jako bazowego kropki na pierwszych dwóch znaków. Nie ma ona wpływu w czasie kompilacji.
-warning | Gdy nie trwa występuje ten styl, Pokaż ostrzeżenia kompilatora w **lista błędów**.
-error | Gdy nie trwa występuje ten styl, Pokaż błąd kompilatora w **lista błędów**.
+Brak lub dyskretny | Gdy ten styl nie jest przestrzegany, nie pokazuj niczego użytkownikowi; jednak automatycznie wygenerowany kod jest zgodny z tym stylem.
+Propozycje | Gdy ten styl nie jest przestrzegany, Pokaż go użytkownikowi jako sugestię, jako punkty bazowe na pierwszych dwóch znakach. Nie ma ona wpływu na czas kompilacji.
+warning | Gdy ten styl nie jest przestrzegany, Pokaż Ostrzeżenie kompilatora w **Lista błędów**.
+error | Gdy ten styl nie jest przestrzegany, Pokaż błąd kompilatora w **Lista błędów**.
 
 > [!NOTE]
-> Nie masz do kompilowania projektu, aby można było wyświetlić naruszenia reguły nazewnictwa. Pojawiają się jako edycji kodu w **lista błędów** lub sugestię.
+> Nie jest konieczne Kompilowanie projektu w celu wyświetlenia naruszeń reguły nazewnictwa. Są one wyświetlane jako kod jest edytowany w **Lista błędów** lub w formie sugestii.
+
+## <a name="rule-order"></a>Kolejność reguł
+
+::: moniker range="vs-2017"
+
+Konwencje nazewnictwa powinny być uporządkowane z najbardziej specyficznych dla najmniej określonych w pliku EditorConfig. Pierwsza napotkana reguła jest jedyną zastosowanym regułą. Jeśli jednak istnieje wiele *Właściwości* reguł o tej samej nazwie, pierwszeństwo ma właściwość ostatnio znaleziona o tej nazwie. Aby uzyskać więcej informacji, zobacz [Hierarchia plików i pierwszeństwo](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Począwszy od programu Visual Studio 2019 w wersji 16,2, kolejność, w której reguły nazewnictwa są zdefiniowane w pliku EditorConfig, nie ma znaczenia. Zamiast tego program Visual Studio automatycznie porządkuje reguły nazewnictwa zgodnie z definicją samych reguł. [Rozszerzenie usługi językowej EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) może analizować plik EditorConfig i zgłaszać przypadki, w których kolejność sortowania reguł w pliku różni się od tego, co kompilator będzie używać w czasie wykonywania.
+
+Jeśli używasz wcześniejszej wersji programu Visual Studio, konwencje nazewnictwa powinny być uporządkowane z najbardziej specyficznych dla najmniej określonych w pliku EditorConfig. Pierwsza napotkana reguła jest jedyną zastosowanym regułą. Jeśli jednak istnieje wiele *Właściwości* reguł o tej samej nazwie, pierwszeństwo ma właściwość ostatnio znaleziona o tej nazwie. Aby uzyskać więcej informacji, zobacz [Hierarchia plików i pierwszeństwo](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
 
 ## <a name="default-naming-styles"></a>Domyślne style nazewnictwa
 
-Jeśli nie określisz żadnych niestandardowych reguł nazewnictwa, program Visual Studio używa następujących domyślnych stylów:
+Jeśli nie określisz żadnych niestandardowych reguł nazewnictwa, program Visual Studio używa następujących stylów domyślnych:
 
-- Dla klasy, struktury, wyliczenia, właściwości i zdarzeń za pomocą `public`, `private`, `internal`, `protected`, lub `protected_internal` ułatwień dostępu, domyślny styl nazewnictwa jest pisanymi wielkimi literami.
+- W przypadku klas, struktur, wyliczeń, właściwości i zdarzeń z `public`, `private`, `internal`, `protected`, lub `protected_internal` dostępności, domyślny styl nazewnictwa to przypadek Pascal.
 
-- W przypadku interfejsów z `public`, `private`, `internal`, `protected`, lub `protected_internal` ułatwień dostępu, domyślny styl nazewnictwa jest pisanymi wielkimi literami z prefiksem wymagane **I**.
+- W przypadku interfejsów `public`z `private`, `internal` `protected_internal` , `protected`,, lub dostępności, domyślny styl nazewnictwa jest przypadek Pascal z wymaganym prefiksem **I**.
 
 ## <a name="example"></a>Przykład
 
-Następujące *.editorconfig* plik zawiera konwencji nazewnictwa, która określa, czy właściwości publiczne, metody, pola, zdarzenia i delegatów musi być napisane wielkimi literami. Należy zauważyć, że tę konwencję nazewnictwa określa wiele rodzajów symbolu, aby zastosować regułę, użyj przecinka, aby oddzielić wartości.
+Następujący plik *. editorconfig* zawiera konwencję nazewnictwa, która określa, że właściwości publiczne, metody, pola, zdarzenia i Delegaty muszą być pisane wielkimi literami. Należy zauważyć, że ta konwencja nazewnictwa określa wiele rodzajów symboli, do których ma zostać zastosowana reguła, przy użyciu przecinka do oddzielenia wartości.
 
 ```ini
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -201,24 +215,24 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-Poniższy zrzut ekranu przedstawia efekt tę konwencję nazewnictwa w edytorze. Dwie zmienne publicznych zostały nazwane bez użycia wielkich liter w pierwszej litery. Jeden jest `const`, a jeden jest `readonly`. Ponieważ nazewnictwa reguła ma zastosowanie tylko do `readonly` symbole tylko `readonly` zmienna zawiera sugestię reguły nazewnictwa.
+Poniższy zrzut ekranu przedstawia efekt tej konwencji nazewnictwa w edytorze. Dwie zmienne publiczne zostały nazwane bez użycia wielkich liter. Jeden to a `const`, a jest. `readonly` Ponieważ reguła nazewnictwa dotyczy `readonly` tylko symboli, `readonly` tylko zmienna pokazuje sugestię reguły nazewnictwa.
 
 ![Sugestia reguły nazewnictwa](media/editorconfig-naming-rule-suggestion.png)
 
-Teraz zmienimy ważności naruszenia można `warning`:
+Teraz zmień ważność naruszenia na `warning`:
 
 ```ini
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Po zamknięciu i ponownym otwarciu pliku kodu, zamiast wyświetlanie sugestii w obszarze naruszenie nazwy zostanie wyświetlony zielony falista i ostrzeżenia w **lista błędów**:
+Jeśli zamkniesz i otworzysz ponownie plik kodu, a nie zobaczysz sugestii pod naruszeniem nazw, zobaczysz zieloną falistej oraz ostrzeżenie w **Lista błędów**:
 
 ![Ostrzeżenie reguły nazewnictwa](media/editorconfig-naming-rule-warning.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Konwencje języka](editorconfig-language-conventions.md)
+- [Konwencje językowe](editorconfig-language-conventions.md)
 - [Konwencje formatowania](editorconfig-formatting-conventions.md)
-- [Konwencje nazewnictwa platformy Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
-- [Tworzenie przenośnych niestandardowy Edytor opcji](../ide/create-portable-custom-editor-options.md)
+- [Konwencje nazewnictwa Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
+- [Tworzenie przenośnych opcji edytora niestandardowego](../ide/create-portable-custom-editor-options.md)
 - [.NET coding convention ustawienia dla wtyczki EditorConfig](editorconfig-code-style-settings-reference.md)

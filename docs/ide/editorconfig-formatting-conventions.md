@@ -1,6 +1,6 @@
 ---
-title: Konwencje formatowania .NET dla wtyczki EditorConfig
-ms.date: 06/17/2019
+title: Konwencje formatowania platformy .NET dla EditorConfig
+ms.date: 07/17/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,42 +13,42 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3218e819d8f94cf760cdc75d6bfa6d29d0a29568
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ccebfc38d5170920fe3f3c37ee77aabaf660a3b8
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823340"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345668"
 ---
 # <a name="formatting-conventions"></a>Konwencje formatowania
 
-Konwencje formatowania dla wtyczki EditorConfig dla programu Visual Studio można podzielić na dwie kategorie:
+Konwencje formatowania dla EditorConfig dla programu Visual Studio należą do następujących kategorii:
 
 - [Ustawienia formatowania platformy .NET](#net-formatting-settings)
 
-- [Ustawienia formatowania C#](#c-formatting-settings)
+- [C#ustawienia formatowania](#c-formatting-settings)
 
 ## <a name="rule-format"></a>Format reguły
 
-Zasady konwencje formatowania mają następujący format:
+Reguły dla Konwencji formatowania mają następujący format:
 
 `rule_name = value`
 
-Dla wielu reguł, należy określić albo `true` (Preferuj ten styl) lub `false` (nie Preferuj kwalifikatora ten styl) dla `value`. Dla innych reguł, należy określić wartość taką jak `flush_left` lub `before_and_after` do opisania, kiedy i gdzie stosować regułę. Nie określaj ważność.
+W przypadku wielu reguł należy określić jeden `true` (Preferuj ten styl) lub `false` (nie Preferuj tego stylu) dla `value`. W przypadku innych reguł należy określić wartość taką jak `flush_left` lub `before_and_after` , aby opisać, kiedy i gdzie należy zastosować regułę. Nie określisz ważności.
 
 ## <a name="net-formatting-settings"></a>Ustawienia formatowania platformy .NET
 
-Reguły formatowania w tej sekcji dotyczą C# i kodu języka Visual Basic.
+Reguły formatowania w tej sekcji dotyczą kodu C# i Visual Basic.
 
 - [Organizuj użycia](#organize-using-directives)
   - dotnet_sort_system_directives_first
   - dotnet_separate_import_directive_groups
 
-### <a name="organize-using-directives"></a>Organizowanie dyrektyw using
+### <a name="organize-using-directives"></a>Organizuj dyrektywy using
 
-Te reguły formatowania dotyczą, sortowanie i wyświetlanie `using` dyrektyw i `Imports` instrukcji.
+Te reguły formatowania dotyczą sortowania i wyświetlania `using` dyrektyw i `Imports` instrukcji.
 
-Przykład *.editorconfig* pliku:
+Przykładowy plik *. editorconfig* :
 
 ```ini
 # .NET formatting settings
@@ -62,10 +62,10 @@ dotnet_separate_import_directive_groups = true
 |||
 |-|-|
 | **Nazwa reguły** | dotnet_sort_system_directives_first |
-| **Właściwe języki** | C# i Visual Basic |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
+| **Odpowiednie języki** | C# i Visual Basic |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
 | **Wartości** | `true` - Sortowanie System.* `using` dyrektywy alfabetycznie i umieścić je przed innymi za pomocą dyrektywy.<br /><br />`false` - Należy umieszczać System.* `using` dyrektyw przed innymi `using` dyrektywy. |
-| **Visual Studio domyślną** | `true` |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -81,15 +81,15 @@ using Octokit;
 using System.Threading.Tasks;
 ```
 
-#### <a name="dotnetseparateimportdirectivegroups"></a>polecenia DotNet\_oddzielnych\_zaimportować\_dyrektywy\_grup
+#### <a name="dotnetseparateimportdirectivegroups"></a>grupy\_dyrektywy\_\_dotyczącejimportowaniaoddzielnychdotnet\_
 
 |||
 |-|-|
 | **Nazwa reguły** | dotnet_separate_import_directive_groups |
-| **Właściwe języki** | C# i Visual Basic |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.5 |
-| **Wartości** | `true` — Umieść pusty wiersz między `using` grupy dyrektywy.<br /><br />`false` -Należy umieszczać pusty wiersz między `using` grupy dyrektywy. |
-| **Visual Studio domyślną** | `false` |
+| **Odpowiednie języki** | C# i Visual Basic |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15.5 |
+| **Wartości** | `true`— Należy umieścić pusty wiersz między `using` grupami dyrektyw.<br /><br />`false`— Nie umieszczaj pustego wiersza między `using` grupami dyrektyw. |
+| **Domyślne dla programu Visual Studio** | `false` |
 
 Przykłady kodu:
 
@@ -106,9 +106,9 @@ using System.Threading.Tasks;
 using Octokit;
 ```
 
-## <a name="c-formatting-settings"></a>Ustawienia formatowania C#
+## <a name="c-formatting-settings"></a>C#ustawienia formatowania
 
-Reguły formatowania w tej sekcji dotyczą tylko kodu C#.
+Reguły formatowania w tej sekcji mają zastosowanie tylko do C# kodu.
 
 - [Opcje nowego wiersza](#new-line-options)
   - csharp_new_line_before_open_brace
@@ -122,29 +122,41 @@ Reguły formatowania w tej sekcji dotyczą tylko kodu C#.
   - csharp_indent_case_contents
   - csharp_indent_switch_labels
   - csharp_indent_labels
+  - csharp_indent_block_contents
+  - csharp_indent_braces
+  - csharp_indent_case_contents_when_block
 - [Opcje odstępów](#spacing-options)
   - csharp_space_after_cast
   - csharp_space_after_keywords_in_control_flow_statements
-  - csharp_space_between_method_declaration_parameter_list_parentheses
-  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_parentheses
   - csharp_space_before_colon_in_inheritance_clause
   - csharp_space_after_colon_in_inheritance_clause
   - csharp_space_around_binary_operators
+  - csharp_space_between_method_declaration_parameter_list_parentheses
   - csharp_space_between_method_declaration_empty_parameter_list_parentheses
-  - csharp_space_between_method_call_name_and_opening_parenthesis
+  - csharp_space_between_method_declaration_name_and_open_parenthesis
+  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_method_call_empty_parameter_list_parentheses
+  - csharp_space_between_method_call_name_and_opening_parenthesis
   - csharp_space_after_comma
+  - csharp_space_before_comma
   - csharp_space_after_dot
-- [Opcje opakowywania](#wrap-options)
+  - csharp_space_before_dot
+  - csharp_space_after_semicolon_in_for_statement
+  - csharp_space_before_semicolon_in_for_statement
+  - csharp_space_around_declaration_statements
+  - csharp_space_before_open_square_brackets
+  - csharp_space_between_empty_square_brackets
+  - csharp_space_between_square_brackets
+- [Opcje zawijania](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
 
 ### <a name="new-line-options"></a>Opcje nowego wiersza
 
-Te reguły formatowania dotyczą stosowania nowych wierszy w celu formatowania kodu.
+Te reguły formatowania dotyczą korzystania z nowych wierszy do formatowania kodu.
 
-Przykład *.editorconfig* pliku:
+Przykładowy plik *. editorconfig* :
 
 ```ini
 # CSharp formatting settings:
@@ -158,17 +170,17 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-#### <a name="csharpnewlinebeforeopenbrace"></a>CSharp\_nowe\_wiersza\_przed\_open_brace
+#### <a name="csharpnewlinebeforeopenbrace"></a>CSharp\_nowy\_wierszprzed\_open_brace\_
 
-Ta zasada dotyczy czy otwierający nawias klamrowy `{` należy umieścić w tym samym wierszu, jak kod powyżej, lub w nowym wierszu. Dla tej reguły, należy określić **wszystkich**, **Brak**, lub jeden lub więcej kodu, elementy takie jak **metody** lub **właściwości**, aby zdefiniować, kiedy ta reguła powinny być stosowane. Aby określić wiele elementów kodu, oddziel je przecinkami (,).
+Ta zasada `{` ma wpływ na to, czy otwierający nawias klamrowy powinien być umieszczony w tym samym wierszu co poprzedni kod, czy w nowym wierszu. Dla tej reguły należy określić **wszystkie**, **Brak**lub co najmniej jeden element kodu, taki jak **metody** lub **Właściwości**, aby określić, kiedy ta reguła ma być stosowana. Aby określić wiele elementów kodu, rozdziel je przecinkami (,).
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_new_line_before_open_brace |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `all` — Wymagają nawiasy klamrowe w nowym wierszu dla wszystkich wyrażeń (styl "Allman").<br /><br />`none` — Wymagają klamrowe, aby być w tym samym wierszu, aby uzyskać wszystkie wyrażenia ("K & R").<br /><br />`accessors`, `anonymous_methods`, `anonymous_types`, `control_blocks`, `events`, `indexers`, `lambdas`, `local_functions`, `methods`, `object_collection_array_initializers`, `properties`, `types` -Wymagane nawiasy klamrowe w nowym wierszu dla element określony kod (styl "Allman"). |
-| **Visual Studio domyślną** | `all` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `all`-Wymagaj nawiasów klamrowych w nowym wierszu dla wszystkich wyrażeń (styl "Allman").<br /><br />`none`-Wymagaj nawiasów klamrowych w tym samym wierszu dla wszystkich wyrażeń ("K & R").<br /><br />`accessors`, `anonymous_methods` `anonymous_types` ,`indexers`,,,, ,`object_collection_array_initializers`,,, ,`types`— Wymagaj nawiasów klamrowych, aby znajdować się w nowym wierszu dla `properties` `local_functions` `lambdas` `control_blocks` `events` `methods` określony element kodu (styl "Allman"). |
+| **Domyślne dla programu Visual Studio** | `all` |
 
 Przykłady kodu:
 
@@ -190,15 +202,15 @@ void MyMethod() {
 }
 ```
 
-#### <a name="csharpnewlinebeforeelse"></a>CSharp\_nowe\_wiersza\_before_else
+#### <a name="csharpnewlinebeforeelse"></a>CSharp\_nowy\_wierszbefore_else\_
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_new_line_before_else |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` — Umieść `else` instrukcji w nowym wierszu.<br /><br />`false` — Umieść `else` instrukcji w tym samym wierszu. |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Umieść `else` instrukcje w nowym wierszu.<br /><br />`false`-Umieść `else` instrukcje w tym samym wierszu. |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -219,15 +231,15 @@ if (...) {
 }
 ```
 
-#### <a name="csharpnewlinebeforecatch"></a>CSharp\_nowe\_wiersza\_before_catch
+#### <a name="csharpnewlinebeforecatch"></a>CSharp\_nowy\_wierszbefore_catch\_
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_new_line_before_catch |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` — Umieść `catch` instrukcji w nowym wierszu.<br /><br />`false` — Umieść `catch` instrukcji w tym samym wierszu. |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Umieść `catch` instrukcje w nowym wierszu.<br /><br />`false`-Umieść `catch` instrukcje w tym samym wierszu. |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -248,15 +260,15 @@ try {
 }
 ```
 
-#### <a name="csharpnewlinebeforefinally"></a>CSharp\_nowe\_wiersza\_before_finally
+#### <a name="csharpnewlinebeforefinally"></a>CSharp\_nowy\_wierszbefore_finally\_
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_new_line_before_finally |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` — Wymagają `finally` instrukcji jako po zamykający nawias klamrowy w nowym wierszu.<br /><br />`false` — Wymagają `finally` instrukcji w tym samym wierszu co zamykającego nawiasu klamrowego. |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Wymagaj `finally` instrukcji w nowym wierszu po nawiasie zamykającym.<br /><br />`false`-Wymagaj `finally` instrukcji w tym samym wierszu co zamykający nawias klamrowy. |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -282,15 +294,15 @@ try {
 }
 ```
 
-#### <a name="csharpnewlinebeforemembersinobjectinitializers"></a>CSharp\_nowe\_wiersza\_przed\_członków\_w\_object_initializers
+#### <a name="csharpnewlinebeforemembersinobjectinitializers"></a>CSharp\_nowy\_wierszprzedelementami\_członkowskimi\_wobject_initializers\_\_
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_new_line_before_members_in_object_initializers |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` — Wymagają członkowie inicjatorów obiektów w osobnych wierszach<br /><br />`false` — Wymagają członkowie inicjatorów obiektów na tym samym wierszu |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Wymagane składowe inicjatorów obiektów muszą znajdować się w osobnych wierszach<br /><br />`false`-Wymagane składowe inicjatorów obiektów powinny znajdować się w tym samym wierszu |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -309,15 +321,15 @@ var z = new B()
 }
 ```
 
-#### <a name="csharpnewlinebeforemembersinanonymoustypes"></a>CSharp\_nowe\_wiersza\_przed\_członków\_w\_anonymous_types
+#### <a name="csharpnewlinebeforemembersinanonymoustypes"></a>CSharp\_nowy\_wierszprzedelementami\_członkowskimi\_wanonymous_types\_\_
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_new_line_before_members_in_anonymous_types |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` — Wymagają składowe typów anonimowych w osobnych wierszach<br /><br />`false` — Wymagają składowe typów anonimowych, w tym samym wierszu |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Wymagaj elementów członkowskich typu anonimowego w osobnych wierszach<br /><br />`false`-Wymagane składowe typów anonimowych mogą znajdować się w tym samym wierszu |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -341,10 +353,10 @@ var z = new
 |||
 |-|-|
 | **Nazwa reguły** | csharp_new_line_between_query_expression_clauses |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` — Wymagają elementy klauzule wyrażenia zapytania, aby wprowadzić w oddzielnych wierszach<br /><br />`false` — Wymagają elementy klauzule wyrażenia zapytania w tym samym wierszu |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Wymagaj elementów klauzul wyrażeń zapytania w osobnych wierszach<br /><br />`false`-Wymagaj elementów klauzul wyrażeń zapytania, aby znajdować się w tym samym wierszu |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -361,9 +373,9 @@ var q = from a in e from b in e
 
 ### <a name="indentation-options"></a>Opcje wcięć
 
-Te reguły formatowania dotyczą użytkowania wcięcia w celu formatowania kodu.
+Te reguły formatowania dotyczą użycia wcięć do formatowania kodu.
 
-Przykład *.editorconfig* pliku:
+Przykładowy plik *. editorconfig* :
 
 ```ini
 # CSharp formatting settings:
@@ -371,19 +383,22 @@ Przykład *.editorconfig* pliku:
 csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents_when_block = true
 ```
 
-#### <a name="csharpindentcasecontents"></a>csharp\_indent\_case_contents
+#### <a name="csharpindentcasecontents"></a>CSharp\_wcięcie\_case_contents
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_indent_case_contents |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` -Wcięcie `switch` zamierzone, Zapisz zawartość<br /><br />`false` -Nie wcięcie `switch` zamierzone, Zapisz zawartość |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`— Wcięcie `switch` zawartości przypadku<br /><br />`false`-Nie Wetnij `switch` zawartości wielkości liter |
+| **Domyślne dla programu Visual Studio** | `true` |
 
-- Gdy ta reguła jest ustawiona na **true**, i.
+- Gdy ta reguła ma **wartość true**, i.
 - Gdy ta reguła jest ustawiona na **false**, d.
 
 Przykłady kodu:
@@ -416,15 +431,15 @@ switch(c) {
 }
 ```
 
-#### <a name="csharpindentswitchlabels"></a>csharp\_indent\_switch_labels
+#### <a name="csharpindentswitchlabels"></a>CSharp\_wcięcie\_switch_labels
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_indent_switch_labels |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` -Wcięcie `switch` etykiety<br /><br />`false` -Nie wcięcie `switch` etykiety |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Wcięcia `switch` etykiet<br /><br />`false`— Nie Wetnij `switch` etykiet |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -456,15 +471,15 @@ default:
 }
 ```
 
-#### <a name="csharpindentlabels"></a>csharp\_indent_labels
+#### <a name="csharpindentlabels"></a>CSharp\_indent_labels
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_indent_labels |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `flush_left` -Etykiety są umieszczane w skrajnej lewej kolumnie<br /><br />`one_less_than_current` -Etykiety są umieszczane w jednej mniej wcięcie bieżącego kontekstu<br /><br />`no_change` -Etykiety są umieszczane w tej samej wcięcie jako bieżący kontekst |
-| **Visual Studio domyślną** | `no_change` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `flush_left`-Etykiety są umieszczane w kolumnie z lewej strony<br /><br />`one_less_than_current`-Etykiety są umieszczane w jednym z niższych wcięć w bieżącym kontekście<br /><br />`no_change`-Etykiety są umieszczane w tym samym powiększeniu co bieżący kontekst |
+| **Domyślne dla programu Visual Studio** | `no_change` |
 
 Przykłady kodu:
 
@@ -509,28 +524,114 @@ class C
 }
 ```
 
+#### <a name="csharpindentblockcontents"></a>csharp_indent_block_contents
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_indent_block_contents |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true` - <br /><br />`false` -  |
+| **Domyślne dla programu Visual Studio** | `true` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_indent_block_contents = true
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+
+// csharp_indent_block_contents = false
+static void Hello()
+{
+Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentbraces"></a>csharp_indent_braces
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_indent_braces |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true` - <br /><br />`false` -  |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_indent_braces = true
+static void Hello()
+    {
+    Console.WriteLine("Hello");
+    }
+
+// csharp_indent_braces = false
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentcasecontentswhenblock"></a>csharp_indent_case_contents_when_block
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_indent_case_contents_when_block |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true` - <br /><br />`false` -  |
+| **Domyślne dla programu Visual Studio** | `true` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_indent_case_contents_when_block = true
+case 0:
+    {
+        Console.WriteLine("Hello");
+        break;
+    }
+
+// csharp_indent_case_contents_when_block = false
+case 0:
+{
+    Console.WriteLine("Hello");
+    break;
+}
+```
+
 ### <a name="spacing-options"></a>Opcje odstępów
 
-Te reguły formatowania dotyczy użycia znaków spacji do formatowania kodu.
+Te reguły formatowania dotyczą używania znaków spacji do formatowania kodu.
 
-Przykład *.editorconfig* pliku:
+Przykładowy plik *. editorconfig* :
 
 ```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_space_after_cast = true
 csharp_space_after_keywords_in_control_flow_statements = true
-csharp_space_between_method_declaration_parameter_list_parentheses = true
-csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 csharp_space_before_colon_in_inheritance_clause = true
 csharp_space_after_colon_in_inheritance_clause = true
 csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
-csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_after_comma = true
+csharp_space_before_comma = false
 csharp_space_after_dot = false
+csharp_space_before_dot = false
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_around_declaration_statements = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_square_brackets = false
 ```
 
 #### <a name="csharpspaceaftercast"></a>CSharp\_miejsca\_after_cast
@@ -538,10 +639,10 @@ csharp_space_after_dot = false
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_after_cast |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` — Wymagają odstęp między rzutowanie, jak i wartość<br /><br />`false` — Wymagają _nie_ odstęp między rzutowanie, jak i wartość |
-| **Visual Studio domyślną** | `false` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Umieść znak spacji między rzutem a wartością<br /><br />`false`-Usuń odstęp między rzutem a wartością |
+| **Domyślne dla programu Visual Studio** | `false` |
 
 Przykłady kodu:
 
@@ -558,10 +659,10 @@ int y = (int)x;
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_after_keywords_in_control_flow_statements |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` — Wymagają spację po słowem kluczowym w instrukcji przepływu sterowania takich jak `for` pętli<br /><br />`false` — Wymagają _nie_ spację po słowem kluczowym w instrukcji przepływu sterowania, takich jak `for` pętli |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Umieść znak spacji po słowie kluczowym w instrukcji przepływu sterowania, takiej jak `for` pętla<br /><br />`false`-Usuń spację po słowie kluczowym w instrukcji przepływu sterowania, `for` takiej jak pętla |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -573,57 +674,17 @@ for (int i;i<x;i++) { ... }
 for(int i;i<x;i++) { ... }
 ```
 
-#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
-
-|||
-|-|-|
-| **Nazwa reguły** | csharp_space_between_method_declaration_parameter_list_parentheses |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` -Umieścić znak spacji po nawiasie otwierającym, a także przed zamykającym w liście parametrów deklaracji metody<br /><br />`false` -Nie zostanie znaków spacji po nawiasie otwierającym, a także przed zamykającym w liście parametrów deklaracji metody |
-| **Visual Studio domyślną** | `false` |
-
-Przykłady kodu:
-
-```csharp
-// csharp_space_between_method_declaration_parameter_list_parentheses = true
-void Bark( int x ) { ... }
-
-// csharp_space_between_method_declaration_parameter_list_parentheses = false
-void Bark(int x) { ... }
-```
-
-#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
-
-|||
-|-|-|
-| **Nazwa reguły** | csharp_space_between_method_call_parameter_list_parentheses |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` -Umieścić znak spacji po nawiasie otwierającym, a także przed nawiasem zamykającym wywołania metody<br /><br />`false` -Nie zostanie znaków spacji po nawiasie otwierającym, a także przed nawiasem zamykającym wywołania metody |
-| **Visual Studio domyślną** | `false` |
-
-Przykłady kodu:
-
-```csharp
-// csharp_space_between_method_call_parameter_list_parentheses = true
-MyMethod( argument );
-
-// csharp_space_between_method_call_parameter_list_parentheses = false
-MyMethod(argument);
-```
-
 #### <a name="csharpspacebetweenparentheses"></a>csharp_space_between_parentheses
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_between_parentheses |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `control_flow_statements` -Umieścić spację między nawiasów instrukcji przepływu sterowania<br /><br />`expressions` — Umieść odstęp między nawiasy, wyrażeń<br /><br />`type_casts` — Umieść odstęp między nawiasy w rzutowania typów |
-| **Visual Studio domyślną** | `false` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `control_flow_statements`-Umieść miejsce między nawiasami instrukcji przepływu sterowania<br /><br />`expressions`-Miejsce między nawiasami wyrażenia<br /><br />`type_casts`-Umieść miejsce między nawiasami w rzutach typu |
+| **Domyślne dla programu Visual Studio** | `false` |
 
-Możesz pominąć tę regułę lub użyć wartości innej niż `control_flow_statements`, `expressions`, lub `type_casts`, to ustawienie nie ma zastosowania.
+Jeśli pominięto tę regułę lub użyjesz wartości innej niż `control_flow_statements`, `expressions`lub `type_casts`, to ustawienie nie jest stosowane.
 
 Przykłady kodu:
 
@@ -638,15 +699,15 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
-#### <a name="csharpspacebeforecolonininheritanceclause"></a>csharp\_space\_before\_colon\_in\_inheritance_clause
+#### <a name="csharpspacebeforecolonininheritanceclause"></a>CSharp\_spację\_\_przed\_dwukropkiemw\_inheritance_clause
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_before_colon_in_inheritance_clause |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.7 |
-| **Wartości** | `true` — Wymagają spację przed dwukropkiem w przypadku baz lub interfejsy w deklaracji typu<br /><br />`false` — Wymagają _nie_ spację przed dwukropkiem w przypadku baz lub interfejsy w deklaracji typu |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,7 |
+| **Wartości** | `true`-Umieść znak spacji przed dwukropkiem dla baz lub interfejsów w deklaracji typu<br /><br />`false`-Usuń spację przed dwukropkiem dla baz lub interfejsów w deklaracji typu |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -674,15 +735,15 @@ class C: I
 }
 ```
 
-#### <a name="csharpspaceaftercolonininheritanceclause"></a>csharp\_space\_after\_colon\_in\_inheritance_clause
+#### <a name="csharpspaceaftercolonininheritanceclause"></a>CSharp\_spację\_\_po\_dwukropkuw\_inheritance_clause
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_after_colon_in_inheritance_clause |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.7 |
-| **Wartości** | `true` — Wymagają spację po dwukropku w przypadku baz lub interfejsów w deklaracji typu<br /><br />`false` — Wymagają _nie_ spację po dwukropku w przypadku baz lub interfejsy w deklaracji typu |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,7 |
+| **Wartości** | `true`-Umieść znak spacji po dwukropku dla baz lub interfejsów w deklaracji typu<br /><br />`false`-Usuń spację po dwukropku dla podstaw lub interfejsów w deklaracji typu |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -710,17 +771,17 @@ class C :I
 }
 ```
 
-#### <a name="csharpspacearoundbinaryoperators"></a>CSharp\_miejsca\_wokół\_binary_operators
+#### <a name="csharpspacearoundbinaryoperators"></a>CSharp\_miejsce\_wokółbinary_operators\_
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_around_binary_operators |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.7 |
-| **Wartości** | `before_and_after` -Wstaw spację przed i po nim operatora binarnego<br /><br />`none` -Usuń odstępy przed i po operatora binarnego<br /><br />`ignore` -Ignoruj spacje dookoła operatorów dwuargumentowych |
-| **Visual Studio domyślną** | `before_and_after` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,7 |
+| **Wartości** | `before_and_after`-Wstaw spację przed i po operatorze Binary<br /><br />`none`-Usuń odstępy przed i po operatorze Binary<br /><br />`ignore`-Ignoruj odstępy dookoła operatorów binarnych |
+| **Domyślne dla programu Visual Studio** | `before_and_after` |
 
-Możesz pominąć tę regułę, czy używać wartości innych niż `before_and_after`, `none`, lub `ignore`, to ustawienie nie ma zastosowania.
+Jeśli pominięto tę regułę lub używasz wartości innej niż `before_and_after`, `none`lub `ignore`, ustawienie nie jest stosowane.
 
 Przykłady kodu:
 
@@ -735,15 +796,35 @@ return x*(x-y);
 return x  *  (x-y);
 ```
 
+#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_between_method_declaration_parameter_list_parentheses |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Umieść znak spacji po nawiasie otwierającym i przed nawiasem zamykającym listy parametrów deklaracji metody<br /><br />`false`-Usuń znaki spacji po nawiasie otwierającym i przed nawiasem zamykającym listy parametrów deklaracji metody |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_between_method_declaration_parameter_list_parentheses = true
+void Bark( int x ) { ... }
+
+// csharp_space_between_method_declaration_parameter_list_parentheses = false
+void Bark(int x) { ... }
+```
+
 #### <a name="csharpspacebetweenmethoddeclarationemptyparameterlistparentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_between_method_declaration_empty_parameter_list_parentheses |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.7 |
-| **Wartości** | `true` -Wstaw spację wewnątrz nawiasów listy parametrów empty deklaracji — metoda<br /><br />`false` -Usuń odstęp wewnątrz nawiasów listy parametrów empty deklaracji — metoda |
-| **Visual Studio domyślną** | `false` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,7 |
+| **Wartości** | `true`-Wstaw odstęp wewnątrz nawiasów listy pustych parametrów dla deklaracji metody<br /><br />`false`-Usuń spację w nawiasach listy pustych parametrów dla deklaracji metody |
+| **Domyślne dla programu Visual Studio** | `false` |
 
 Przykłady kodu:
 
@@ -771,40 +852,43 @@ void Goo(int x)
 }
 ```
 
-#### <a name="csharpspacebetweenmethodcallnameandopeningparenthesis"></a>csharp_space_between_method_call_name_and_opening_parenthesis
+#### <a name="csharpspacebetweenmethoddeclarationnameandopenparenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
 
 |||
 |-|-|
-| **Nazwa reguły** | csharp_space_between_method_call_name_and_opening_parenthesis |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.7 |
-| **Wartości** | `true` -Wstaw spację między nazwę wywołanie metody i nawias otwierający<br /><br />`false` -Usuń spację między nazwę wywołanie metody i nawias otwierający |
-| **Visual Studio domyślną** | `false` |
+| **Nazwa reguły** | csharp_space_between_method_declaration_name_and_open_parenthesis |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Umieść znak spacji między nazwą metody i nawiasem otwierającym w deklaracji metody<br /><br />`false`-Usuń znaki spacji między nazwą metody i nawiasem otwierającym w deklaracji metody |
+| **Domyślne dla programu Visual Studio** | `false` |
 
 Przykłady kodu:
 
 ```csharp
-// csharp_space_between_method_call_name_and_opening_parenthesis = true
-void Goo()
-{
-    Goo (1);
-}
+// csharp_space_between_method_declaration_name_and_open_parenthesis = true
+void M () { }
 
-void Goo(int x)
-{
-    Goo ();
-}
+// csharp_space_between_method_declaration_name_and_open_parenthesis = false
+void M() { }
+```
 
-// csharp_space_between_method_call_name_and_opening_parenthesis = false
-void Goo()
-{
-    Goo(1);
-}
+#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
 
-void Goo(int x)
-{
-    Goo();
-}
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_between_method_call_parameter_list_parentheses |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Umieść znak spacji po nawiasie otwierającym i przed nawiasem zamykającym wywołania metody<br /><br />`false`-Usuń znaki spacji po nawiasie otwierającym i przed nawiasem zamykającym wywołania metody |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_between_method_call_parameter_list_parentheses = true
+MyMethod( argument );
+
+// csharp_space_between_method_call_parameter_list_parentheses = false
+MyMethod(argument);
 ```
 
 #### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
@@ -812,10 +896,10 @@ void Goo(int x)
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_between_method_call_empty_parameter_list_parentheses |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.7 |
-| **Wartości** | `true` -Wstaw spację wewnątrz nawiasów listy pusty argument<br /><br />`false` -Usuń odstęp wewnątrz nawiasów listy pusty argument |
-| **Visual Studio domyślną** | `false` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,7 |
+| **Wartości** | `true`-Wstaw odstęp wewnątrz nawiasów listy pustych argumentów<br /><br />`false`-Usuń spację w nawiasach listy pustych argumentów |
+| **Domyślne dla programu Visual Studio** | `false` |
 
 Przykłady kodu:
 
@@ -843,14 +927,50 @@ void Goo(int x)
 }
 ```
 
+#### <a name="csharpspacebetweenmethodcallnameandopeningparenthesis"></a>csharp_space_between_method_call_name_and_opening_parenthesis
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_between_method_call_name_and_opening_parenthesis |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,7 |
+| **Wartości** | `true`-Wstaw spację między nazwą wywołania metody i nawiasem otwierającym<br /><br />`false`-Usuń spację między nazwą wywołania metody i nawiasem otwierającym |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_between_method_call_name_and_opening_parenthesis = true
+void Goo()
+{
+    Goo (1);
+}
+
+void Goo(int x)
+{
+    Goo ();
+}
+
+// csharp_space_between_method_call_name_and_opening_parenthesis = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
 #### <a name="csharpspaceaftercomma"></a>csharp_space_after_comma
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_after_comma |
-| **Właściwe języki** | C# |
-| **Wartości** | `true` -Wstaw spację po przecinku<br /><br />`false` -Usuń miejsca po przecinku |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Wstaw odstęp po przecinku<br /><br />`false`-Usuń spację po przecinku |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -862,14 +982,33 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 int[] x = new int[] { 1,2,3,4,5 }
 ```
 
+#### <a name="csharpspacebeforecomma"></a>csharp_space_before_comma
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_before_comma |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Wstaw odstęp przed przecinkiem<br /><br />`false`-Usuń odstęp przed przecinkiem |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_before_comma = true
+int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
+
+// csharp_space_before_comma = false
+int[] x = new int[] { 1, 2, 3, 4, 5 };
+```
+
 #### <a name="csharpspaceafterdot"></a>csharp_space_after_dot
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_space_after_dot |
-| **Właściwe języki** | C# |
-| **Wartości** | `true` -Wstaw odstęp po kropce<br /><br />`false` -Usuń miejsce po kropce |
-| **Visual Studio domyślną** | `false` |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Wstaw odstęp po kropce<br /><br />`false`-Usuń odstęp po kropce |
+| **Domyślne dla programu Visual Studio** | `false` |
 
 Przykłady kodu:
 
@@ -881,11 +1020,144 @@ this. Goo();
 this.Goo();
 ```
 
-### <a name="wrap-options"></a>Opcje opakowywania
+#### <a name="csharpspacebeforedot"></a>csharp_space_before_dot
 
-Te reguły formatowania dotyczą użytkowania pojedynczych wierszy w porównaniu z osobnych wierszach instrukcji i bloków kodu.
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_before_dot |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Wstaw odstęp przed kropką <br /><br />`false`-Usuń odstęp przed kropką |
+| **Domyślne dla programu Visual Studio** | `false` |
 
-Przykład *.editorconfig* pliku:
+Przykłady kodu:
+
+```csharp
+// csharp_space_before_dot = true
+this .Goo();
+
+// csharp_space_before_dot = false
+this.Goo();
+```
+
+#### <a name="csharpspaceaftersemicoloninforstatement"></a>csharp_space_after_semicolon_in_for_statement
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_after_semicolon_in_for_statement |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Wstaw odstęp po każdym średniku w `for` instrukcji<br /><br />`false`-Usuń odstęp po każdym średniku w `for` instrukcji |
+| **Domyślne dla programu Visual Studio** | `true` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_after_semicolon_in_for_statement = true
+for (int i = 0; i < x.Length; i++)
+
+// csharp_space_after_semicolon_in_for_statement = false
+for (int i = 0;i < x.Length;i++)
+```
+
+##### <a name="csharpspacebeforesemicoloninforstatement"></a>csharp_space_before_semicolon_in_for_statement
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_before_semicolon_in_for_statement |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Wstawiaj spację przed każdym średnikiem w `for` instrukcji <br /><br />`false`-Usuń odstęp przed każdym średnikiem w `for` instrukcji |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_before_semicolon_in_for_statement = true
+for (int i = 0 ; i < x.Length ; i++)
+
+// csharp_space_before_semicolon_in_for_statement = false
+for (int i = 0; i < x.Length; i++)
+```
+
+#### <a name="csharpspacearounddeclarationstatements"></a>csharp_space_around_declaration_statements
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_around_declaration_statements |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `ignore`— Nie usuwaj dodatkowych znaków spacji w instrukcjach deklaracji<br /><br />`false`-Usuń dodatkowe znaki spacji w instrukcjach deklaracji |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_around_declaration_statements = ignore
+int    x    =    0   ;
+
+// csharp_space_around_declaration_statements = false
+int x = 0;
+```
+
+#### <a name="csharpspacebeforeopensquarebrackets"></a>csharp_space_before_open_square_brackets
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_before_open_square_brackets |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Wstaw spację przed otwierającymi nawiasami kwadratowymi`[` <br /><br />`false`-Usuń spację przed otwierającymi nawiasami kwadratowymi`[` |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_before_open_square_brackets = true
+int [] numbers = new int [] { 1, 2, 3, 4, 5 };
+
+// csharp_space_before_open_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweenemptysquarebrackets"></a>csharp_space_between_empty_square_brackets
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_between_empty_square_brackets |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Wstaw odstęp między pustymi nawiasami kwadratowymi`[ ]` <br /><br />`false`-Usuń odstęp między pustymi nawiasami kwadratowymi`[]` |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_between_empty_square_brackets = true
+int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
+
+// csharp_space_between_empty_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweensquarebrackets"></a>csharp_space_between_square_brackets
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_space_between_square_brackets |
+| **Odpowiednie języki** | C# |
+| **Wartości** | `true`-Wstaw znaki spacji w niepustych nawiasach kwadratowych`[ 0 ]` <br /><br />`false`-Usuń spacje w nawiasach kwadratowych, które nie są puste`[0]` |
+| **Domyślne dla programu Visual Studio** | `false` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_space_between_square_brackets = true
+int index = numbers[ 0 ];
+
+// csharp_space_between_square_brackets = false
+int index = numbers[0];
+```
+
+### <a name="wrap-options"></a>Opcje zawijania
+
+Te reguły formatowania dotyczą korzystania z pojedynczych wierszy w oddzielnym wierszu dla instrukcji i bloków kodu.
+
+Przykładowy plik *. editorconfig* :
 
 ```ini
 # CSharp formatting settings:
@@ -899,10 +1171,10 @@ csharp_preserve_single_line_blocks = true
 |||
 |-|-|
 | **Nazwa reguły** | csharp_preserve_single_line_statements |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` -Pozostaw instrukcje i deklaracje składowych w tym samym wierszu<br /><br />`false` -Pozostaw instrukcje i deklaracje składowych w różnych wierszach |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`-Pozostaw instrukcje i deklaracje składowych w tym samym wierszu<br /><br />`false`— Pozostaw instrukcje i deklaracje składowych w różnych wierszach |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -920,10 +1192,10 @@ string name = "John";
 |||
 |-|-|
 | **Nazwa reguły** | csharp_preserve_single_line_blocks |
-| **Właściwe języki** | C# |
-| **Wprowadzono wersji** | Visual Studio 2017 w wersji 15.3 |
-| **Wartości** | `true` -Pozostaw blok kodu w pojedynczym wierszu<br /><br />`false` -Pozostaw blok kodu w osobnych wierszach |
-| **Visual Studio domyślną** | `true` |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2017 w wersji 15,3 |
+| **Wartości** | `true`— Pozostaw blok kodu w pojedynczym wierszu<br /><br />`false`— Pozostaw blok kodu w osobnych wierszach |
+| **Domyślne dla programu Visual Studio** | `true` |
 
 Przykłady kodu:
 
@@ -940,6 +1212,6 @@ public int MyProperty
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Konwencje języka](editorconfig-language-conventions.md)
+- [Konwencje językowe](editorconfig-language-conventions.md)
 - [Konwencje nazewnictwa](editorconfig-naming-conventions.md)
 - [.NET coding convention ustawienia dla wtyczki EditorConfig](editorconfig-code-style-settings-reference.md)
