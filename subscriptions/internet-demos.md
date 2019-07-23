@@ -3,15 +3,15 @@ title: Korzystanie z kluczy produktów do obsługi pokazów internetowych za po�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Dowiedz się, jak używać kluczy produktów do obsługi pokazów internetowych za pośrednictwem usług terminalowych i włączania dostępu RDS
-ms.openlocfilehash: 41057496dc42761fcad7c1ebe69b646dfddf16cc
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315569"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377968"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Pokazy internetowe za pośrednictwem usług terminalowych
 Za pomocą subskrypcji programu Visual Studio możesz zapewnić użytkownikom końcowym dostęp do pokazów internetowych programów za pośrednictwem usług terminalowych (Windows Server 2003 lub Windows Server 2008) lub Usługi pulpitu zdalnego (system Windows Server 2008 R2 i nowsze). Do 200 anonimowych użytkowników może jednocześnie uzyskać dostęp do demonstracji w ten sposób. Demonstracja nie może korzystać z danych produkcyjnych. Subskrybenci programu Visual Studio mają licencję na prezentowanie aplikacji użytkownikom końcowym. Ta prezentacja internetowa korzystająca z usług terminalowych lub Usługi pulpitu zdalnego (RDS) jest jedynym scenariuszem, w którym użytkownicy końcowi bez subskrypcji programu Visual Studio mogą korzystać z aplikacji demonstracyjnej, gdy oprogramowanie jest licencjonowane za pośrednictwem wizualizacji Subskrypcje Studio.
@@ -35,5 +35,7 @@ Użytkownicy końcowi mogą łączyć się z dostępem do aplikacji za pośredni
 - Klucze produktów umożliwiające nawiązywanie połączeń użytkowników muszą zostać uzyskane przez subskrybenta programu Visual Studio.
 
 ## <a name="next-steps"></a>Następne kroki
-Jeśli potrzebujesz instrukcji dotyczących konfigurowania licencjonowania usług pulpitu zdalnego na serwerze, zobacz [Konfiguracja licencjonowania usług pulpitu zdalnego w systemie Windows server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Jeśli masz jakieś pytania, odwiedź [forum usług pulpit zdalny Microsoft Services](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
+Jeśli potrzebujesz wskazówek dotyczących wdrażania usług pulpitu zdalnego, zapoznaj się z wieloczęściową serią w blogu dotyczącą **wdrożenia sesji programu usługi pulpitu zdalnego (RDS) 2012** na stronie https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 
+
+Jeśli masz jakieś pytania, odwiedź [forum usług pulpit zdalny Microsoft Services](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
 

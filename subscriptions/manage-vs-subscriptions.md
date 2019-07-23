@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać subskrypcje programu Visual Studio
-ms.openlocfilehash: 817471d32daf2b360423d68f7958fc74e1871a3a
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315151"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378063"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -74,8 +74,6 @@ Informacje o kontakcie i preferencje można łatwo zmienić w Twoim profilu.
 4. Po sfinalizowaniu zmian kliknij przycisk **Zapisz**.
 5. Kliknij przycisk **Wstecz** w przeglądarce, aby powrócić do strony korzyści.
 
-   > [!div class="mx-imgBorder"]
-   > ![Edytowanie informacji o profilu](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="setting-communications-preferences"></a>Ustawianie preferencji komunikacji
 Jeśli chcesz otrzymywać okresowe aktualizacje dotyczące subskrypcji i korzyści, w tym biuletyn comiesięcznych subskrypcji programu Visual Studio, [zaktualizuj swoje preferencje](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) , zaznaczając pole wyboru subskrypcje programu Visual Studio w profilu programu Visual Studio. . Możesz zmienić te Preferencje i anulować subskrypcję w dowolnym momencie. 
@@ -94,9 +92,6 @@ Aby dodać alternatywne konto:
 2. Kliknij kartę **subskrypcje** .
 3. W obszarze **Linki pokrewne**wybierz pozycję **Dodaj alternatywne konto**.
 4. Wprowadź adres e-mail konta służbowego, a następnie kliknij przycisk **Dodaj**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Alternatywne konto](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
 Po dodaniu alternatywnego konta możesz je zaktualizować lub usunąć w dowolnym momencie, klikając kartę **subskrypcje** i wybierając odpowiednią opcję w sekcji **Linki pokrewne** .
 

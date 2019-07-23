@@ -1,17 +1,17 @@
 ---
 title: Korzystanie z kluczy produktów | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/20/2019
 ms.topic: conceptual
 description: Dowiedz się, jak uzyskiwać klucze produktów i zarządzać nimi w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 0b5c1470938f49ffe2b1ddf72851c2f20cd241f8
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315263"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377691"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcjach programu Visual Studio
 
@@ -43,12 +43,17 @@ Jeśli zatwierdzono maksymalną liczbę kluczy dostępnych dla subskrypcji w ci�
 Nasze badania pokazują, że większość subskrybentów jest objęta liczbą kluczy produktów uwzględnionych w ich subskrypcji. Jeśli potrzebujesz dodatkowych kluczy, możesz przesłać żądanie za pomocą Visual Studio Subscription [klienta](https://visualstudio.microsoft.com/subscriptions/support/) i będzie ono uznawane za zatwierdzenie w zależności od wielkości liter.
 
 ## <a name="accessing-product-keys"></a>Uzyskiwanie dostępu do kluczy produktu
-Musisz się zalogować do subskrypcji programu Visual Studio, aby wyświetlić klucze produktów. Poszczególne klucze produktu można znaleźć, wybierając niebieskie łącze **Uzyskaj klucz** dla określonego produktu na stronie [pliki do pobrania](https://my.visualstudio.com/downloads) , jak pokazano poniżej.  Wszystkie klucze są również dostępne w agregacji na stronie [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) . Jeśli istnieje wiele kluczy dla pojedynczego produktu, w kolumnie uwagi zostanie wyświetlona informacja, która ułatwia zidentyfikowanie, który klucz ma być używany.
-> [!div class="mx-imgBorder"]
-> ![Pobierz klucz ze strony plików do pobrania](_img/product-keys/download-get-key.png)
+Musisz się zalogować do subskrypcji programu Visual Studio, aby wyświetlić klucze produktów. Poszczególne klucze produktu można znaleźć, wybierając niebieskie łącze **Uzyskaj klucz** dla określonego produktu na stronie [pliki do pobrania](https://my.visualstudio.com/downloads) , jak pokazano poniżej.  Jeśli istnieje wiele kluczy dla pojedynczego produktu, w kolumnie uwagi zostanie wyświetlona informacja, która ułatwia zidentyfikowanie, który klucz ma być używany.
 
 Niektóre produkty łączą wiele wersji produktu w jeden plik do pobrania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
 Niektóre klucze są udostępniane automatycznie, takie jak klucze "static", których można użyć dowolną liczbę razy, ponieważ aktywacja nie jest wymagana. Inne klucze muszą zostać przejęte przez wybranie linku **Pobierz klucz** dla produktu.
+> [!div class="mx-imgBorder"]
+> ![Pobierz klucz ze strony plików do pobrania](_img/product-keys/download-get-key.png)
+
+Wszystkie klucze są również dostępne w agregacji na stronie [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) . Na tej stronie można znaleźć klucze statyczne, które działają dla wszystkich użytkowników produktu, uzyskać klucze niestandardowe tylko do użytku, sprawdzić stan limitów roszczeń i wyeksportować wszystkie klucze produktów. 
+
+> [!div class="mx-imgBorder"]
+> ![Strona klucze produktu](_img/product-keys/product-keys-page.png)
 
 W zależności od produktu dostępne są różne typy kluczy.
 
@@ -72,7 +77,5 @@ Klucz można przejąć ze strony pobierania produktu lub można wyszukać wymaga
 
 ## <a name="next-steps"></a>Następne kroki
 Aby zgłosić klucze, odwiedź https://my.visualstudio.com/productkeys stronę.  
-
 Dowiedz się [, jak znaleźć i zgłosić klucze](find-keys.md).
-
 Możesz również zapoznać się z tematami dotyczącymi używania kluczy produktów do obsługi [pokazów internetowych](internet-demos.md).
