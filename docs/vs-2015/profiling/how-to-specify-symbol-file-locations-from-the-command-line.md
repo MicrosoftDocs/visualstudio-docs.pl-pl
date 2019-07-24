@@ -48,7 +48,7 @@ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narz
   
 2. Użyj następującej składni, aby ustawić **_NT_SYMBOL_PATH** zmiennej środowiskowej lub opcji symbolpath VSPerfReport:  
   
-    **SRV\***  *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **SRV\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     gdzie *LocalStore* to ścieżka katalogu lokalnego, który został utworzony.  
   
@@ -58,7 +58,7 @@ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narz
 ## <a name="example"></a>Przykład  
  Następujące zestawy wiersza polecenia **_NT_SYMBOL_PATH** zmiennej środowiskowej, aby serwer symboli Windows i lokalnego katalogu, który **C:\Symbols**.  
   
- **Ustaw _NT_SYMBOL_PATH = srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
+ **Ustaw  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
   
  Następujące polecenie w wierszu polecenia VSPerfReport dodaje C:\Projects\Symbols katalog do ścieżki wyszukiwania, używając **symbolpath** opcji.  
   
