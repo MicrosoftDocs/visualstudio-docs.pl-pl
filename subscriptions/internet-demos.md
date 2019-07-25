@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Dowiedz się, jak używać kluczy produktów do obsługi pokazów internetowych za pośrednictwem usług terminalowych i włączania dostępu RDS
-ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 19faa64b7eeaebc1b92ca965f686795b31e00e7e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377968"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493385"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Pokazy internetowe za pośrednictwem usług terminalowych
 Za pomocą subskrypcji programu Visual Studio możesz zapewnić użytkownikom końcowym dostęp do pokazów internetowych programów za pośrednictwem usług terminalowych (Windows Server 2003 lub Windows Server 2008) lub Usługi pulpitu zdalnego (system Windows Server 2008 R2 i nowsze). Do 200 anonimowych użytkowników może jednocześnie uzyskać dostęp do demonstracji w ten sposób. Demonstracja nie może korzystać z danych produkcyjnych. Subskrybenci programu Visual Studio mają licencję na prezentowanie aplikacji użytkownikom końcowym. Ta prezentacja internetowa korzystająca z usług terminalowych lub Usługi pulpitu zdalnego (RDS) jest jedynym scenariuszem, w którym użytkownicy końcowi bez subskrypcji programu Visual Studio mogą korzystać z aplikacji demonstracyjnej, gdy oprogramowanie jest licencjonowane za pośrednictwem wizualizacji Subskrypcje Studio.
@@ -38,4 +38,3 @@ Użytkownicy końcowi mogą łączyć się z dostępem do aplikacji za pośredni
 Jeśli potrzebujesz wskazówek dotyczących wdrażania usług pulpitu zdalnego, zapoznaj się z wieloczęściową serią w blogu dotyczącą **wdrożenia sesji programu usługi pulpitu zdalnego (RDS) 2012** na stronie https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 
 
 Jeśli masz jakieś pytania, odwiedź [forum usług pulpit zdalny Microsoft Services](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
-

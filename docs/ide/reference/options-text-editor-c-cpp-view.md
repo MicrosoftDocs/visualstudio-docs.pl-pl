@@ -1,5 +1,5 @@
 ---
-title: Wyświetl opcje, Edytor tekstu, C/C++
+title: Opcje, Edytor tekstu, C/C++, widok
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,53 +8,53 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.View
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f4705b6326a3a2968084ecbd1bd385954528017
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15952c8262ea1e8dec1e89816a5887f9bfe9bf6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817768"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461270"
 ---
-# <a name="options-text-editor-cc-view"></a>Wyświetl opcje, Edytor tekstu, C/C++
+# <a name="options-text-editor-cc-view"></a>Opcje, Edytor tekstu, C/C++, widok
 
-Użyj tych stron właściwości, aby zmienić domyślne zachowanie edytora kodu, podczas programowania w języku C lub C++.
+Za pomocą tych stron właściwości można zmienić domyślne zachowanie edytora kodu podczas programowania w języku C lub C++.
 
-Aby uzyskać dostęp do tej strony właściwości, wybierz **narzędzia** > **opcje** i rozwiń **Edytor tekstu**, następnie **C/C++**, a następnie wybierz pozycję **Widoku**.
+Aby uzyskać dostęp do tej strony właściwości, wybierz**Opcje** **Narzędzia** > i rozwiń **Edytor tekstu**, a następnie **C/C++** , a następnie wybierz pozycję **Widok**.
 
-## <a name="code-squiggles"></a>Faliste linie kodu
+## <a name="code-squiggles"></a>Zawijanie kodu
 
-Można włączać lub wyłączać następujących ustawień, aby zarządzać sposobem, w tekst, który Edytor obsługuje faliste linie kodu dla C i C++:
+Można włączać lub wyłączać następujące ustawienia, aby zarządzać sposobem, w jaki Edytor tekstu obsługuje zygzaki kodu dla C++C i:
 
-- **Makra w regionach pominięte przeglądania** — definiuje sposób wyróżnić makra, które znajdują się wewnątrz pominięto regionów za pomocą bazy danych przeglądania, takich jak makra, których definicje zawierają nawiasy klamrowe.
+- **Makra w pominiętych regionach przeglądania** — definiuje sposób wyróżniania makr, które znajdują się w pominiętych regionach przez bazę danych przeglądania, takie jak makra, których definicje zawierają nawiasy klamrowe.
 
-- **Makra można przekonwertować na constexpr** — definiuje sposób wyróżnić definicji makra, które mogą być konwertowane na `constexpr` definicje.
+- **Makra konwertowane na wyrażenie constexpr** — definiuje sposób wyróżniania definicji makr, które mogą `constexpr` być konwertowane na definicje.
 
 ## <a name="inactive-code"></a>Kod nieaktywny
 
-- **Pokaż nieaktywne bloki** -nieaktywne bloki preprocesora, jest pokolorowany inaczej.
+- **Pokaż nieaktywne bloki** — nieaktywne bloki preprocesora są kolorowane w inny sposób.
 
-- **Wyłącz nieprzezroczystość nieaktywnego kodu** — pełny kolor zamiast nieprzezroczystości, jest używany dla bloków nieaktywnego kodu.
+- **Wyłącz** nieprzezroczystość nieaktywnego kodu — pełny kolor, a nie krycie, jest używany dla nieaktywnych bloków kodu.
 
-- **Procent krycia nieaktywnego kodu** — procent krycia dla bloków nieaktywnego kodu.
+- **Procent** nieprzezroczystości nieaktywnego kodu — procent krycia dla nieaktywnych bloków kodu.
 
 ## <a name="miscellaneous"></a>Różne
 
-- **Wyliczanie zadań w komentarzach** — "open source" Skanuj pliki pod kątem tokenów programu VS i raportuj je w oknie Lista zadań.
+- **Wyliczanie zadań komentarzy** — Skanuj pliki Open Source dla programu vs i zgłoś je w oknie Lista zadań.
 
-- **Podświetl pasujące tokeny** — wyróżnienia otaczający nawiasy lub składnię, która pasuje, gdy kursor znajduje się.
+- Wyróżnij pasujące tokeny — Wyróżnij otaczające nawiasy lub składnię pasujące do miejsca, w którym znajduje się kursor.
 
 ## <a name="outlining"></a>Tworzenie konspektu
 
-- **Włącz konspekt** — przejdź do trybu konspektu po otwarciu pliku.
+- **Włącz tworzenie konspektu — umożliwia** wprowadzanie trybu konspektu podczas otwierania pliku.
 
-- **Konspekt obszarów Pragma** — automatyczne tworzenie konspektu `#pragma` bloki regionów.
+- **Zakreśl regiony dyrektywy** pragma `#pragma` — automatycznie konspekty bloków regionów.
 
-- **Konspekt bloków instrukcji** — automatycznie konspekt bloków instrukcji.
+- **Konspekt bloków instrukcji** — automatyczne konspekty bloków instrukcji.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refaktoryzacja języka C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [Refaktoryzacja w C++ (blog VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)

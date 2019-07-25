@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377751"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493121"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Tworzenie niestandardowych szablonów projektów i elementów
 
@@ -35,7 +35,6 @@ W przypadku scenariuszy tworzenia podstawowego szablonu należy używać **Ekspo
      Szablon generuje plik klasy, ikonę, plik *. vstemplate* , edytowalny plik projektu o nazwie *ProjectTemplate. vbproj* lub *ProjectTemplate. csproj*i niektóre pliki, które są zwykle generowane przez inne typy projektów, takie jak  *plik resources. resx* , plik *AssemblyInfo* i plik *. Settings* . Każdy plik kodu zawiera typowe podstawieniach parametrów, gdzie jest to odpowiednie.
 
 ![wybór projektu szablonu projektu](media/project-template-selection.png)
-
 
 2. Dodawanie i usuwanie elementów z projektu, co jest wymagane dla projektu. Nie usuwaj edytowalnego pliku projektu, pliku *AssemblyInfo* ani pliku *. vstemplate* .
 

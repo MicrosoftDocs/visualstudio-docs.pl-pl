@@ -1,83 +1,84 @@
 ---
 title: Zaawansowane ustawienia kompilatora (Visual Basic) — Okno dialogowe
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792234"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461465"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Zaawansowane ustawienia kompilatora (Visual Basic) — Okno dialogowe
 
-Użyj **ustawienia AdvancedCompiler** okna dialogowego **projektanta projektu** określić najbardziej zaawansowane właściwości konfiguracji kompilacji projektu. To okno dialogowe dotyczy tylko dla projektów języka Visual Basic.
+Za pomocą okna dialogowego **Ustawienia AdvancedCompiler** **projektanta projektu** można określić zaawansowane właściwości kompilacji — konfiguracja. To okno dialogowe dotyczy tylko projektów Visual Basic.
 
-## <a name="to-access-this-dialog-box"></a>Dostęp do tego okna dialogowego
+## <a name="to-access-this-dialog-box"></a>Aby uzyskać dostęp do tego okna dialogowego
 
-1. W **Eksploratora rozwiązań**, wybierz węzeł projektu (nie **rozwiązania** węzła).
+1. W **Eksplorator rozwiązań**wybierz węzeł projektu (nie węzeł **rozwiązania** ).
 
-2. Na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** pojawi się, kliknij przycisk **skompilować** kartę.
+2. W menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **kompilacja** .
 
-3. Na [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), wybierz opcję **konfiguracji** i **platformy**. W uproszczonych konfiguracjach kompilacji **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Zestaw debugowania i zwalniania konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. Na [stronie kompilacja, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)wybierz **konfigurację** i platformę. W uproszczonych konfiguracjach kompilacji listy **konfiguracji** i **platformy** nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md)debugowania i wydania.
 
-4. Kliknij przycisk **zaawansowane opcje kompilacji**.
+4. Kliknij pozycję **Zaawansowane opcje kompilacji**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="optimizations"></a>Optymalizacje
 
- Następujące opcje określają optymalizacje, które można w niektórych przypadkach zmniejszyć pliku programu, napisać program, który działają szybciej i przyspieszyć proces kompilacji.
+ Poniższe opcje określają optymalizacje, które w niektórych przypadkach sprawiają, że plik programu jest mniejszy, szybsze działanie programu lub przyspieszenie procesu kompilacji.
 
-**Usuń sprawdzenia przepełnienia liczb całkowitych**
+**Usuń sprawdzanie przepełnienia liczby całkowitej**
 
-To pole wyboru jest wyczyszczone, domyślnie, aby włączyć sprawdzanie przepełnienia liczby całkowitej. Zaznacz to pole wyboru, aby usunąć sprawdzanie przepełnienia liczby całkowitej. Jeśli wybierzesz to pole wyboru, obliczeń na liczbach całkowitych może przebiegać szybciej. Jednak usunięcie przepełnienie sprawdzanie i dane typu pojemności przepełnienie niepoprawne wyniki mogą być przechowywane bez błędu są zgłaszane.
+To pole wyboru jest domyślnie wyczyszczone, aby włączyć sprawdzanie przepełnienia liczby całkowitej. Zaznacz to pole wyboru, aby usunąć sprawdzanie przepełnienia liczby całkowitej. Jeśli zaznaczysz to pole wyboru, obliczenia liczby całkowitej mogą być szybsze. Jeśli jednak usuniesz sprawdzanie przeciążenia i przepełnienie pojemności typu danych, nieprawidłowe wyniki mogą być przechowywane bez zgłaszania błędu.
 
-Jeśli przepełnienie warunki są sprawdzane i przepełnienia liczby całkowitej operacji, <xref:System.OverflowException> wyjątku. Jeśli przepełnienie warunki nie są zaznaczone, przepełnienia operacji całkowitą nie zgłasza wyjątku.
+Jeśli sprawdzane są warunki przepełnienia, a operacja całkowita przekracza przepływ <xref:System.OverflowException> , zostanie zgłoszony wyjątek. Jeśli warunki przepełnienia nie są zaznaczone, operacje typu Integer przekraczają wyjątek.
 
 **Włącz optymalizacje**
 
-To pole wyboru jest wyczyszczone, domyślnie, aby wyłączyć optymalizacje kompilatora. Zaznacz to pole wyboru, aby włączyć optymalizacje kompilatora. Plik wyjściowy był optymalizacje kompilatora, mniejszy, szybszy i bardziej wydajne. Jednak ponieważ optymalizacje kodu zmiana położenia w pliku wyjściowym, optymalizacje kompilatora może utrudnić debugowanie.
+To pole wyboru jest domyślnie wyczyszczone, aby wyłączyć optymalizacje kompilatora. Zaznacz to pole wyboru, aby włączyć optymalizacje kompilatora. Optymalizacje kompilatora sprawiają, że plik wyjściowy jest mniejszy, szybszy i bardziej wydajny. Jednakże, ponieważ optymalizacje powodują ponowne rozmieszczanie kodu w pliku wyjściowym, optymalizacje kompilatora mogą utrudniać debugowanie.
 
- **Adres podstawowy DLL**
+ **Adres podstawowy biblioteki DLL**
 
- To pole tekstowe wyświetla domyślny adres podstawowy DLL w formacie szesnastkowym. W projektach biblioteki klas i Biblioteka kontrolek można użyć tego pola tekstowego, aby określić adres podstawowy, który będzie używany podczas tworzenia biblioteki DLL.
+ To pole tekstowe wyświetla domyślny adres bazy DLL w formacie szesnastkowym. W obszarze Biblioteka klas i projekty bibliotek formantów można użyć tego pola tekstowego, aby określić adres podstawowy, który ma być używany podczas tworzenia biblioteki DLL.
 
  **Generuj informacje o debugowaniu**
 
- Wybierz **Brak**, **pełne**, lub **tylko do pdb** z listy. **Brak** Określa, że żadne informacje debugowania będą generowane. **Pełne** Określa, że pełne informacje debugowania będą generowane, i **tylko do pdb** Określa, czy powinny być generowane tylko wtedy PDB, informacje o debugowaniu. Wartość domyślna tej opcji to **pełne**.
+ Z listy wybierz opcję **Brak**, **pełna**lub **PDB** . **Brak** określa, że nie są generowane żadne informacje debugowania. **Pełna** określa, że mają zostać wygenerowane pełne informacje o debugowaniu, a **PDB-tylko** określa, że powinny być generowane tylko informacje debugowania PDB. Wartość domyślna tej opcji jest **pełna**.
 
 ## <a name="compilation-constants"></a>Stałe kompilacji
 
-Stałe kompilacji warunkowej ma efekt jest podobny do korzystania z [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) dyrektywy preprocesora w źródle pliku, z tą różnicą, że stałe zdefiniowane są publiczne i zastosować do wszystkich plików w projekcie. Możesz użyć stałe kompilacji warunkowej, wraz z [#If... Then... #Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) dyrektywy, aby warunkowo skompilować pliki źródłowe. Zobacz [kompilacji warunkowej](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).
+Stałe kompilacji warunkowej mają efekt podobny do tego w przypadku używania dyrektywy preprocesora [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) w pliku źródłowym, z wyjątkiem tego, że stałe są zdefiniowane i mają zastosowanie do wszystkich plików w projekcie. Możesz użyć stałych kompilacji warunkowej razem z [#If... Następnie... #Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) dyrektywa do kompilowania plików źródłowych warunkowo. Zobacz [Kompilacja warunkowa](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).
 
  **Zdefiniuj stałą DEBUG**
 
- Domyślnie to pole wyboru jest zaznaczone, określając, że można ustawić stałą DEBUG.
+ To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała debugowania.
 
  **Zdefiniuj stałą TRACE**
 
- Domyślnie to pole wyboru jest zaznaczone, określając, że można ustawić stałą TRACE.
+ To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała śledzenia.
 
  **Stałe niestandardowe**
 
- Wprowadź wszelkie stałe niestandardowych dla aplikacji w taki sposób, w tym polu tekstowym. Wpisy powinny być rozdzielone przecinkami, za pomocą tego formularza: **Nazwa1 = "Wartość1," Nazwa2 = "Wartość2", nazwa3 = "Wartość3"**.
+ Wprowadź dowolne niestandardowe stałe dla aplikacji w tym polu tekstowym. Wpisy powinny być rozdzielane przecinkami, przy użyciu tego formularza: **Name1 = "wartość1", NAME2 = "wartość2", nazwa3 = "wartość3"** .
 
 ## <a name="other-settings"></a>Inne ustawienia
 
 **Generuj zestawy serializacji**
 
-To ustawienie określa, czy kompilator utworzy zestawy serializacji XML. Zestawy serializacji mogą zwiększyć wydajność uruchamiania klasy <xref:System.Xml.Serialization.XmlSerializer> jeśli używano tej klasy do serializacji typów w kodzie. Wartość domyślna tej opcji to **automatycznie**. **Automatyczne** Określa, że zestawy serializacji będą generowane tylko wtedy, gdy znasz <xref:System.Xml.Serialization.XmlSerializer> do kodowania typów w kodzie do XML. **Wyłącz** Określa, że zestawy serializacji nigdy nie są generowane, niezależnie od tego, czy kod używa <xref:System.Xml.Serialization.XmlSerializer>. **Na** Określa, że zestawy serializacji zawsze będą generowane. Zestawy serializacji noszą `TypeName`. XmlSerializers.dll.
+To ustawienie określa, czy kompilator ma tworzyć zestawy serializacji XML. Zestawy serializacji mogą zwiększyć wydajność <xref:System.Xml.Serialization.XmlSerializer> uruchamiania, jeśli użyto tej klasy do serializacji typów w kodzie. Wartość domyślna tej opcji to **Auto.** **Automatycznie** określa, że zestawy serializacji mają być generowane tylko wtedy, <xref:System.Xml.Serialization.XmlSerializer> gdy zostały użyte do kodowania typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to <xref:System.Xml.Serialization.XmlSerializer>, czy kod używa. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll.
 
 ## <a name="see-also"></a>Zobacz także
 

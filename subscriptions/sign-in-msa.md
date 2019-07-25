@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Jak zalogować się do Visual Studio Subscription za pomocą konta Microsoft (MSA)
-ms.openlocfilehash: 3f90dec91530cbcb559dfb950a8e7d43faf274b2
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315590"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493079"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Logowanie się do subskrypcji programu Visual Studio za pomocą konta Microsoft (MSA)
 
@@ -29,7 +29,6 @@ W tym artykule przedstawiono kroki logowania za pomocą konta Microsoft (MSA).
 3. Wprowadź hasło.
 4. Kliknij przycisk **Zaloguj**.
 5. Na tym etapie powinna zostać wyświetlona strona "korzyści".
-
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q--im-unable-to-sign-in-using-my-msa"></a>PYTANIA  Nie mogę zalogować się przy użyciu konta MSA.  

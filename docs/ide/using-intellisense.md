@@ -1,5 +1,5 @@
 ---
-title: Informacje o parametrach, listę elementów członkowskich i szybkie informacje
+title: Informacje o parametrach, Lista członków i szybkie informacje
 ms.date: 05/25/2018
 ms.topic: conceptual
 f1_keywords:
@@ -15,91 +15,102 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32e62131b2a66052ad4712b434c7b6f2b89065d0
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821709"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493287"
 ---
-# <a name="intellisense-in-visual-studio"></a>Funkcja IntelliSense w programie Visual Studio
+# <a name="intellisense-in-visual-studio"></a>Technologia IntelliSense w programie Visual Studio
 
-Funkcja IntelliSense jest pomoc uzupełniania kodu, która obejmuje pewną liczbę funkcji: Wyświetl listę członków, informacje o parametrach, szybkie informacje i Dokończ wyraz. Te funkcje pozwalają dowiedzieć się więcej o kodzie, którego używasz, śledzić parametry wpisywania i dodawać wywołania do właściwości i metod za pomocą tylko kilku naciśnięć klawiszy.
+IntelliSense to pomoc dla uzupełniania kodu, która obejmuje wiele funkcji: Wyświetlanie listy członków, informacji o parametrach, szybkich informacji i kompletnego wyrazu. Te funkcje pozwalają dowiedzieć się więcej o kodzie, którego używasz, śledzić parametry, które wpisujesz, i dodawać wywołania do właściwości i metod za pomocą tylko kilku naciśnięć klawiszy.
 
-Wiele aspektów IntelliSense jest specyficzne dla języków. Aby uzyskać więcej informacji na temat technologii IntelliSense dla różnych języków, zobacz tematy wymienione w [Zobacz też](#see-also) sekcji.
+Wiele aspektów IntelliSense jest specyficzne dla języków. Aby uzyskać więcej informacji na temat technologii IntelliSense dla różnych języków, zobacz tematy wymienione w sekcji [Zobacz też](#see-also) .
 
 ## <a name="list-members"></a>Lista składników
 
-Lista prawidłowych elementów członkowskich z typu (lub przestrzeni nazw) pojawia się po wpisaniu znaku wyzwalacza (na przykład kropki (`.`) w kodzie zarządzanym lub `::` w języku C++). Jeśli będziesz kontynuować wpisywanie znaków, lista jest filtrowana w celu uwzględnienia tylko do elementów członkowskich, które zaczynają się od tych znaków, gdy początku *wszelkie* programu word w ramach nazwa zaczyna się od tych znaków. Funkcja IntelliSense wykonuje również "format camel case" dopasowanie, więc nazwę elementu członkowskiego, aby wyświetlić dopasowania można po prostu wpisz pierwszą literę każdego wyrazu formacie camelcase.
+Lista prawidłowych członków z typu (lub przestrzeni nazw) pojawia się po wpisaniu znaku wyzwalacza (na przykład kropki (`.`) w kodzie zarządzanym lub `::` w programie C++). Jeśli będziesz kontynuować wpisywanie znaków, lista jest filtrowana w celu uwzględnienia tylko elementów członkowskich, które zaczynają się od tych znaków lub gdzie początek *dowolnego* wyrazu w nazwie zaczyna się od tych znaków. Technologia IntelliSense wykonuje również dopasowanie "notacji CamelCase Case", więc można po prostu wpisać pierwszą literę każdego wyrazu notacji CamelCase w nazwie elementu członkowskiego, aby zobaczyć dopasowania.
 
-Po wybraniu elementu, Wstaw go w kodzie, naciskając klawisz **kartę** lub wciśnięcia spacji. Jeśli wybierzesz element i wpiszesz kropkę, element pojawia się, a po nim kropka, co wywołuje kolejną listę elementów członkowskich. Po wybraniu elementu, ale przed jego wstawieniem, otrzymasz szybkie informacje na jego temat.
+Po wybraniu elementu można wstawić go do kodu, naciskając klawisz **Tab** lub wpisując spację. Jeśli wybierzesz element i wpiszesz kropkę, element pojawia się, a po nim kropka, co wywołuje kolejną listę elementów członkowskich. Po wybraniu elementu, ale przed jego wstawieniem, otrzymasz szybkie informacje na jego temat.
 
-Na liście składowych ikona po lewej stronie reprezentuje typ składowej, taki jak przestrzeń nazw, klasa, funkcja lub zmienna. Aby uzyskać listę ikon, zobacz [ikony w widoku klas i przeglądarki obiektów](../ide/class-view-and-object-browser-icons.md). Lista może być dość długa, więc możesz nacisnąć przycisk **PgUp** i **PgDn** można przenieść w górę lub w dół na liście.
+Na liście składowych ikona po lewej stronie reprezentuje typ składowej, taki jak przestrzeń nazw, klasa, funkcja lub zmienna. Aby zapoznać się z listą ikon, zobacz [Widok klasy i Przeglądarka obiektów ikon](../ide/class-view-and-object-browser-icons.md). Lista może być dość długa, więc można nacisnąć klawisze **PgUp** i **PgDn** , aby przejść w górę lub w dół na liście.
 
 ![Lista elementów członkowskich programu Visual Studio](../ide/media/vs2015_intellisense.png)
 
-Możesz wywołać **List Members** funkcję ręcznie, wpisując **Ctrl**+**"j"**, wybierając **Edytuj**  >  **IntelliSense** > **List Members**, lub wybierając **List Members** na listwie narzędziowej edytora. Gdy jest wywoływana w pustym wierszu lub poza rozpoznawalnym zasięgiem, na liście wyświetlane są symbole w globalnej przestrzeni nazw.
+Można wywołać funkcję **listy członków** ręcznie, wpisując **Ctrl**+**J**, wybierając **Edytuj** > **członków listy** **IntelliSense** > lub wybierając **członków listy** na pasku narzędzi edytora. Gdy jest wywoływana w pustym wierszu lub poza rozpoznawalnym zasięgiem, na liście wyświetlane są symbole w globalnej przestrzeni nazw.
 
-Aby wyłączyć członków listy domyślnie (tak że nie są wyświetlane, chyba że specjalnego wywołania), przejdź do **narzędzia** > **opcje** > **wszystkie języki**i usuń zaznaczenie opcji **automatyczna lista członków**. Jeśli chcesz wyłączyć członków listy tylko dla określonego języka, przejdź do strony **ogólne** ustawień dla tego języka.
+Aby wyłączyć członków listy domyślnie (tak, aby nie były wyświetlane, chyba że jest to określone), przejdź do pozycji **Narzędzia** > **Opcje** > **wszystkie języki** i usuń zaznaczenie pozycji autolista **członków**. Jeśli chcesz wyłączyć członków listy tylko dla określonego języka, przejdź do ustawień **ogólnych** dla tego języka.
 
-Można również przejść do trybu sugestii, w którym tylko wpisany tekst jest umieszczony w kodzie. Na przykład, jeśli wpiszesz identyfikator, który nie jest na liście i naciśnij klawisz **kartę**, uzupełniania tryb wpis zastąpi wpisany identyfikator. Aby przełączyć między trybem uzupełniania a trybem sugestii, naciśnij klawisz **Ctrl**+**Alt**+**miejsca**, lub wybierz **Edytuj**  >  **IntelliSense** > **Przełącz tryb uzupełniania**.
+Można również przejść do trybu sugestii, w którym tylko wpisany tekst jest umieszczony w kodzie. Na przykład, jeśli wprowadzisz identyfikator, który nie znajduje się na liście, i naciśniesz klawisz **Tab**, w trybie uzupełniania wpis zastąpi wpisanego identyfikatora. Aby przełączać się między trybem ukończenia i trybem sugestii, naciśnij klawisz **Ctrl**+**Alt**+**spacja**lub wybierz opcję **Edytuj** > Tryb uzupełniania funkcji**IntelliSense** > .
 
 ## <a name="parameter-info"></a>Informacje o parametrach
 
 Informacje o parametrach zawierają informacje na temat liczby, nazw i typów parametrów wymaganych przez metodę, parametr typu ogólnego atrybutu (w języku C#) lub szablon (w języku C++).
 
-Parametr pogrubiony wskazuje następny parametr, który jest wymagany podczas wprowadzania funkcji. Dla przeciążonych funkcji, można użyć **się** i **dół** klawiszy strzałek, aby wyświetlić informacje alternatywnych parametrach przeciążeń funkcji.
+Parametr pogrubiony wskazuje następny parametr, który jest wymagany podczas wprowadzania funkcji. W przypadku przeciążonych funkcji można użyć klawiszy strzałek w **górę** i **w dół** , aby wyświetlić alternatywne informacje o parametrach przeciążeń funkcji.
 
 ![Informacje o parametrach](../ide/media/vs2015_param_info.png)
 
-Gdy opisujesz funkcje i parametry za pomocą komentarzy dokumentacji XML, komentarze będą wyświetlane jako informacje o parametrach. Aby uzyskać więcej informacji, zobacz [komentarzy kodu XML, podaj](reference/generate-xml-documentation-comments.md).
+Gdy opisujesz funkcje i parametry za pomocą komentarzy dokumentacji XML, komentarze będą wyświetlane jako informacje o parametrach. Aby uzyskać więcej informacji, zobacz [dostarczanie komentarzy do kodu XML](reference/generate-xml-documentation-comments.md).
 
-Można ręcznie wywołać Parameter Info, wybierając **Edytuj** > **IntelliSense** > **Parameter Info**, naciskając klawisz **Ctrl**  + **Shift**+**miejsca**, lub wybierając **Parameter Info** na listwie narzędziowej edytora.
+Można ręcznie wywołać informacje o parametrach poprzez wybranie opcji **Edytuj** > **Informacje o parametrach** **IntelliSense** > , naciskając **klawisze CTRL**+**SHIFT**+**Space**lub przez Wybieranie przycisku **Informacje o parametrach** na pasku narzędzi edytora.
 
 ## <a name="quick-info"></a>Szybkie informacje
 
 Szybkie informacje wyświetlają pełną deklarację dla każdego identyfikatora w kodzie.
 
-![Szybkie informacje w programie Visual Studio](../ide/media/vs2015_quick_info.png)
+![Szybkie informacje programu Visual Studio](../ide/media/vs2015_quick_info.png)
 
-Po zaznaczeniu elementu członkowskiego w **List Members** polu pojawiają się również szybkie informacje.
+Po wybraniu elementu członkowskiego z pola **członków listy** pojawiają się również szybkie informacje.
 
-![Informacje o parametrach w C&#35; plik kodu](../ide/media/vs2015_paraminfo.png)
+![Informacje o parametrach w&#35; pliku kodu języka C](../ide/media/vs2015_paraminfo.png)
 
-Można ręcznie wywołać Quick Info, wybierając **Edytuj** > **IntelliSense** > **Quick Info**, naciskając klawisz **Ctrl** + **I**, lub wybierając **Quick Info** na listwie narzędziowej edytora.
+Szybkie informacje można wywołać ręcznie, wybierając pozycję **Edytuj** > **szybkie informacje** **IntelliSense** > , naciskając klawisz **Ctrl**+**i**lub wybierając przycisk **szybkie informacje** w edytorze. pasku narzędzi.
 
 Jeżeli funkcja jest przeciążona, mechanizm IntelliSense może nie wyświetlać informacji dla wszystkich postaci przeciążenia.
 
-Można wyłączyć szybkie informacje dla kodu C++, przechodząc do **narzędzia** > **opcje** > **edytora tekstów** > **C / C++** > **zaawansowane**i ustawienie **Auto Quick Info** do `false`.
+C++ Szybkie informacje można wyłączyć dla kodu, przechodząc do**opcji** >  **Narzędzia** > **Edytor** > tekstu**C/C++**  > Advanced i ustawienie Auto  **Szybkie informacje** do `false`.
 
 ## <a name="complete-word"></a>Dokończ wyraz
 
-Dokończ wyraz uzupełnia reszty zmiennej, polecenia lub nazwą funkcji, po wprowadzeniu dostatecznej liczby znaków, aby odróżnić termin. Można wywołać Dokończ wyraz, wybierając **Edytuj** > **IntelliSense** > **Dokończ wyraz**, naciskając klawisz **Ctrl** + **Miejsca**, lub wybierając **Dokończ wyraz** na listwie narzędziowej edytora.
+Po wprowadzeniu wystarczającej liczby znaków, aby odróżnić ten wyraz, kończy się pozostałą częścią zmiennej, polecenia lub nazwy funkcji. Możesz wywołać kompletny wyraz, wybierając opcję **Edytuj** > **kompletny wyraz** **IntelliSense** > , naciskając klawisz **Ctrl**+lub wybierając przycisk **Ukończ wyraz** na stronie pasek narzędzi edytora.
 
 ## <a name="intellisense-options"></a>Opcje IntelliSense
 
-Opcje IntelliSense są domyślnie włączone. Aby je wyłączyć, wybierz opcję **narzędzia** > **opcje** > **edytora tekstów** i usuń zaznaczenie opcji **informacje o parametrach**lub **automatyczna lista członków** Jeśli nie chcesz, aby funkcja listy członków.
+Opcje IntelliSense są domyślnie włączone. Aby je wyłączyć, wybierz opcje **Narzędzia** > **Edytor tekstu** i usuń zaznaczenie**opcji** >  **Informacje o parametrach** lub **Lista członków listy** , jeśli nie chcesz, aby lista członków była dostępna.
 
-## <a name="troubleshoot-intellisense"></a>Rozwiązywanie problemów IntelliSense
+## <a name="intellisense-icons"></a>Ikony IntelliSense
+Ikony w IntelliSense mogą przekazać dodatkowe znaczenie za pomocą modyfikatorów ikon. Są to gwiazdki, kiery i blokady warstwowe na ikonie obiektu, która odpowiednio przekazuje ochronę, wewnętrzną lub prywatną.
+
+|    Ikona    |    Ułatwienia dostępu    |    Opis    |
+|------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Public Icon — modyfikator](../ide/media/intellisensePublicNoModifier.png)       |    Klasa publiczna    |    Dostęp nie jest ograniczony.   |
+| ![Modyfikator ikony chronionej](../ide/media/intellisenseProtectedModifier.png)       |    Klasa chroniona    |    Dostęp jest ograniczony do zawierającej klasy lub typów pochodzących od klasy zawierającej.    |
+| ![Modyfikator chronionej ikony wewnętrznej](../ide/media/intellisenseProtectedInternalModifier.png)       |    Chroniona Klasa wewnętrzna    |    Dostęp jest ograniczony do bieżącego zestawu lub typów pochodzących od klasy zawierającej.    |
+| ![Wewnętrzny modyfikator ikon](../ide/media/intellisenseInternalModifier.png)       |    Wewnętrzna klasa    |    Dostęp jest ograniczony do bieżącego zestawu.    |
+|![Prywatny modyfikator ikon](../ide/media/intellisensePrivateModifier.png)        |    Klasa prywatna    |    Dostęp jest ograniczony do zawierającej klasy lub typów pochodzących od klasy zawierającej w bieżącym zestawie. (Dostępne od C# 7,2).    |
+
+## <a name="troubleshoot-intellisense"></a>Rozwiązywanie problemów z funkcją IntelliSense
 
 W niektórych przypadkach opcje IntelliSense mogą nie działać zgodnie z oczekiwaniami.
 
-**Kursor znajduje się poniżej błędu w kodzie.** Nie można używać funkcji IntelliSense, jeśli występuje niedokończona funkcja lub inny błąd występuje w kodzie powyżej kursora, ponieważ IntelliSense może nie być w stanie przeanalizować elementów kodu. Można naprawić ten problem, zakomentowując odpowiedni kod.
+**Kursor znajduje się poniżej błędu kodu.** Korzystanie z technologii IntelliSense może być niemożliwe, jeśli w kodzie powyżej kursora występuje niepełna funkcja lub inny błąd, ponieważ technologia IntelliSense może nie być w stanie przeanalizować elementów kodu. Można naprawić ten problem, zakomentowując odpowiedni kod.
 
 **Kursor znajduje się w komentarzu do kodu.** Nie można użyć funkcji IntelliSense, jeśli kursor znajduje się w komentarzu w pliku źródłowym.
 
-**Kursor znajduje się w literale ciągu.** Nie można używać funkcji IntelliSense, jeśli kursor znajduje się w znaki cudzysłowu wokół literału ciągu, jak w poniższym przykładzie:
+**Kursor znajduje się w literale ciągu.** Nie można użyć funkcji IntelliSense, jeśli kursor znajduje się w cudzysłowie wokół literału ciągu, jak w poniższym przykładzie:
 
 ```cpp
 MessageBox( hWnd, "String literal|")
 ```
 
-**Opcje automatyczne są wyłączone.** Domyślnie technologia IntelliSense działa automatycznie, ale można je wyłączyć. Nawet jeśli automatyczne uzupełnianie instrukcji jest wyłączone, można wywołać funkcję mechanizmu IntelliSense.
+**Opcje automatyczne są wyłączone.** Domyślnie technologia IntelliSense działa automatycznie, ale można ją wyłączyć. Nawet jeśli automatyczne uzupełnianie instrukcji jest wyłączone, można wywołać funkcję mechanizmu IntelliSense.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
 - [Funkcja IntelliSense dla języka JavaScript](../ide/javascript-intellisense.md)
-- [Pisanie i Refaktoryzacja kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [Podaj komentarzy kodu XML](reference/generate-xml-documentation-comments.md)
+- [Kod zapisu i refaktoryzacji (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Dostarczanie komentarzy do kodu XML](reference/generate-xml-documentation-comments.md)
