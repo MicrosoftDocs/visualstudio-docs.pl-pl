@@ -1,6 +1,7 @@
 ---
 title: Okno dialogowe Opcje, Projekty i rozwiązania, Kompilowanie i uruchamianie
 ms.date: 07/14/2017
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
@@ -9,55 +10,55 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0f24dc1afa875183f03e15e46cc2331f27cbf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996837"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461391"
 ---
-# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Okno dialogowe Opcje: Projekty i rozwiązania \> kompilowanie i uruchamianie
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Opcje — okno dialogowe: Kompilowanie i \> uruchamianie projektów i rozwiązań
 
-W tym oknie można określić maksymalną liczbę C++ lub C# projektów, które można tworzyć w tym samym czasie, niektóre domyślne tworzenia zachowań, a niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji, należy zaznaczyć **narzędzia** > **opcje** rozwiń **projekty i rozwiązania**, a następnie wybierz **kompilowanie i uruchamianie**.
+W tym oknie dialogowym można określić maksymalną liczbę C++ lub C# projekty, które mogą być kompilowane w tym samym czasie, niektóre domyślne zachowania kompilacji i niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji, wybierz**Opcje** **Narzędzia** > rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz opcję **Kompiluj i uruchom**.
 
-**Maksymalna liczba równoległych projektów kompilacji**
+**Maksymalna liczba równoległych kompilacji projektów**
 
-Określa maksymalną liczbę C++ i C# projektów, które można tworzyć w tym samym czasie. Aby zoptymalizować proces kompilacji, maksymalną liczbę równolegle kompilowanych projektów automatycznie jest równa liczbie procesorów na komputerze. Wartość maksymalna to 32.
+Określa maksymalną liczbę C++ i C# projekty, które mogą być kompilowane w tym samym czasie. Aby zoptymalizować proces kompilacji, Maksymalna liczba kompilacji projektów równoległych jest automatycznie ustawiana na liczbę procesorów danego komputera. Wartość maksymalna to 32.
 
-**Tylko tworzyć projekty startowe i zależności przy uruchomieniu**
+**Kompiluj tylko projekty startowe i zależności przy uruchomieniu**
 
-Tworzy tylko projekt startowy i jego zależności, gdy używasz **F5** klucza **debugowania** > **Rozpocznij debugowanie** polecenie menu lub odpowiednich poleceń w **kompilacji** menu. Jeśli nie jest zaznaczone, wszystkie projekty i zależności są kompilowane.
+Kompiluje tylko projekt startowy i jego zależności przy użyciu klawisza **F5** , polecenia **debugowania** > **Rozpocznij debugowanie** lub odpowiednich poleceń w menu **kompilacja** . W przypadku usunięcia zaznaczenia wszystkie projekty i zależności są kompilowane.
 
-**Przy starcie, gdy projekty są nieaktualne**
+**Przy uruchomieniu, gdy projekty są nieaktualne**
 
-*Dotyczy tylko projektów w języku C++.*
+*Dotyczy tylko C++ projektów.*
 
-Podczas uruchamiania projektu za pomocą **F5** lub **debugowania** > **Rozpocznij debugowanie** polecenie domyślne ustawienie **Monituj o kompilacji** Wyświetla komunikat, jeżeli plik konfiguracyjny jest nieaktualna. Wybierz **kompilacji zawsze** do skompilowania projektu, za każdym razem, gdy jest uruchomiony. Wybierz **nigdy nie Kompiluj** pominąć wszystkie kompilacje automatyczne po uruchomieniu projektu.
+W przypadku uruchamiania projektu z poleceniem **F5** lub **Debuguj** > **Rozpocznij debugowanie** , w **wierszu** ustawienia domyślnego zostanie wyświetlony komunikat o błędzie, jeśli konfiguracja projektu jest nieaktualna. Wybierz pozycję **zawsze Kompiluj** , aby skompilować projekt przy każdym uruchomieniu. Wybierz pozycję **nigdy Kompiluj** , aby pominąć wszystkie kompilacje automatyczne, gdy projekt jest uruchomiony.
 
-**Uruchom następujący skrypt, podczas kompilacji lub występują błędy związane z wdrażaniem**
+**Przy uruchomieniu, gdy wystąpią błędy kompilacji lub wdrożenia**
 
-*Dotyczy tylko projektów w języku C++.*
+*Dotyczy tylko C++ projektów.*
 
-Podczas uruchamiania projektu za pomocą **F5** lub **debugowania** > **Rozpocznij debugowanie** polecenie domyślne ustawienie **Prompt uruchomić**wyświetla komunikat, jeżeli projekt powinien być uruchamiany nawet wtedy, gdy kompilacja nie powiodła się. Wybierz **uruchamiania starej wersji** można automatycznie uruchomić ostatnią dobrą kompilacją, co może spowodować niezgodności między uruchomiony kod i kod źródłowy. Wybierz **nie uruchamiaj** Aby pominąć komunikat.
+Podczas uruchamiania projektu z poleceniem **F5** lub **Debuguj** > **Rozpocznij debugowanie** , **monit** ustawienia domyślnego o uruchomienie wyświetla komunikat, jeśli projekt powinien zostać uruchomiony, nawet jeśli kompilacja nie powiodła się. Wybierz pozycję **Uruchom starą wersję** , aby automatycznie uruchomić ostatnią dobrą kompilację, co może spowodować niezgodność między uruchomionym kodem a kodem źródłowym. Wybierz  pozycję nie uruchamiaj, aby pominąć komunikat.
 
-**W przypadku nowych rozwiązań Użyj obecnie wybranego projektu jako projekt startowy**
+**W przypadku nowych rozwiązań Użyj obecnie wybranego projektu jako projektu startowego**
 
-Gdy ta opcja jest ustawiona, nowych rozwiązań Użyj obecnie wybranego projektu jako projekt startowy.
+Gdy ta opcja jest ustawiona, nowe rozwiązania używają aktualnie wybranego projektu jako projektu startowego.
 
-**Program MSBuild poziom szczegółowości danych wyjściowych kompilacji dla projektu**
+**Poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild**
 
-Określa, ile informacji z procesu kompilacji jest wyświetlany w **dane wyjściowe** okna.
+Określa, ile informacji z procesu kompilacji jest wyświetlanych w oknie **danych wyjściowych** .
 
-**Poziom szczegółowości pliku dziennika MSBuild projektu kompilacji**
+**Poziom szczegółowości pliku dziennika kompilacji projektu programu MSBuild**
 
-*Dotyczy tylko projektów w języku C++.*
+*Dotyczy tylko C++ projektów.*
 
-Określa, ile informacji ma są zapisywane do pliku dziennika kompilacji, który znajduje się w folderze  *\\ \<nazwa_projektu > \Debug\\\<nazwa_projektu > .log*.
+Określa, ile informacji jest zapisywana w pliku dziennika kompilacji, który znajduje się w  *\\ \<ProjectName > \debug.\\\<ProjectName >. log*.
 
 ## <a name="see-also"></a>Zobacz także
 

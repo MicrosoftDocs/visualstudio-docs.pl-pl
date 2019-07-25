@@ -1,5 +1,6 @@
 ---
 title: Wprowadzanie zmiennej lokalnej
+description: Wygeneruj zmienną lokalną, aby zastąpić istniejące wyrażenie. Zaznacz wyrażenie, kliknij prawym przyciskiem myszy i wybierz menu szybkie akcje i refaktoryzacje, wybierz pozycję Wprowadź wartość lokalna dla (wszystkie wystąpienia) wyrażenia "Expression".
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -7,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541041"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483696"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Wprowadzanie zmiennej lokalnej w programie Visual Studio
 
@@ -22,11 +23,11 @@ Dotyczy to generowanie kodu:
 
 - Visual Basic
 
-**Co:** Pozwala natychmiast wygenerować zmienną lokalną, aby zastąpić istniejące wyrażenia.
+**Whatman** Umożliwia natychmiastowe wygenerowanie zmiennej lokalnej w celu zastąpienia istniejącego wyrażenia.
 
-**Kiedy:** Masz kod, który można łatwo wykorzystać także później, jakby był w zmiennej lokalnej.
+**Czasie** Masz kod, który może być łatwo ponownie wykorzystany później, jeśli był w zmiennej lokalnej.
 
-**Dlaczego:** Możesz skopiować i Wklej kod wiele razy z niej korzystać w różnych miejscach, jednak byłoby lepiej wykonać tę operację jeszcze raz, przechowuje wynik w zmiennej lokalnej i użyć zmiennej lokalnej przez cały.
+**Zalet** Można kopiować i wklejać kod wielokrotnie, aby używać go w różnych lokalizacjach, jednak lepszym rozwiązaniem jest wykonanie operacji raz, zapisanie wyniku w zmiennej lokalnej i użycie zmiennej lokalnej w całym.
 
 ## <a name="how-to"></a>Instrukcje
 
@@ -43,14 +44,14 @@ Dotyczy to generowanie kodu:
 2. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
       - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-      - Kliknij ikonę ![śrubokręt](media/screwdriver.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu za pomocą wyrażenia wyróżnione.
+      - Kliknij ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z wyróżnionym wyrażeniem.
 
    ![Wprowadzenie lokalnego (wersja zapoznawcza)](media/local-preview-cs.png)
 
-3. Wybierz **wprowadź element lokalny dla (wszystkich wystąpień), "wyrażenia"** z menu rozwijanego.
+3. Wybierz pozycję **wprowadź lokalne dla (wszystkie wystąpienia)** z menu rozwijanego.
 
    > [!TIP]
    > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.

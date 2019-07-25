@@ -1,84 +1,87 @@
 ---
-title: Krok 6. Dodawanie problemu odejmowania
+title: Krok 6. Dodawanie zadania z odejmowaniem
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d429d2921f252e97bfe7c233a9fe963f7f91299b
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996649"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416550"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie problemu odejmowania
-W szóstej części tego samouczka dodasz problem odejmowania i Dowiedz się, jak wykonywać następujące zadania:
+# <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie zadania z odejmowaniem
+W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, jak wykonywać następujące zadania:
 
-- Store wartości odejmowania.
+- Zapisz wartości odejmowania.
 
-- Wygeneruj liczby losowe dla problemu (i należy się upewnić, że odpowiedź na pytanie od 0 do 100).
+- Generuj liczby losowe dla problemu (i upewnij się, że odpowiedź należy do zakresu od 0 do 100).
 
-- Zaktualizuj metodę, która sprawdza odpowiedzi, tak aby sprawdzała zbyt nowy problem odejmowania.
+- Zaktualizuj metodę, która sprawdza odpowiedzi, aby sprawdzić, czy jest to również nowy problem odejmowania.
 
-- Zaktualizuj swoje czasomierza <xref:System.Windows.Forms.Timer.Tick> program obsługi zdarzeń, aby obsługi zdarzeń wypełniał poprawną odpowiedź, gdy skończy się czas.
+- Zaktualizuj procedurę obsługi <xref:System.Windows.Forms.Timer.Tick> zdarzeń czasomierza, tak aby program obsługi zdarzeń wypełniał poprawną odpowiedź, gdy skończy się czas.
 
 ## <a name="to-add-a-subtraction-problem"></a>Aby dodać problem odejmowania
 
-1. Dodawanie dwóch zmiennych całkowitych dla problemu odejmowania do formularza, między zmiennych całkowitych dla problemu dodawania oraz czasomierzem. Kod powinien wyglądać następująco.
+1. Dodaj dwie zmienne całkowite dla problemu odejmowania do formularza, między zmiennymi całkowitymi dla problemu dodawania i czasomierzem. Kod powinien wyglądać podobnie do poniższego.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
 
-     Nazwy nowych zmiennych całkowitych —**odjemna** i **odjemnik**— nie terminy programistyczne. Są to tradycyjne nazwy stosowane w operacjach arytmetycznych dla liczby, która jest odejmowana (odjemnik) i liczby, od której odjemnik jest odejmowany (odjemna). Różnica to odjemna minus odjemnik. Można użyć innych nazw, ponieważ Twój program nie wymaga określonych nazw zmiennych, formantów, składników lub metody. Należy przestrzegać reguł, takich jak nazw od cyfr, ale zazwyczaj można użyć nazwy, takie jak x1, x2, x3 i x4. Jednak nazwy rodzajowe wprowadzać czytelność kodu i problemów śledzenie jest prawie niemożliwe. Aby zachować nazwy zmiennych, unikatowe i pomocne, użyjesz to tradycyjne nazwy stosowane dla mnożenia (którą mnożona jest mnożna × mnożnik = produkt) i dzielenia (dzielnik ÷ dzielna = iloraz) później w tym samouczku.
+     Nazwy nowych zmiennych liczb całkowitych —**odjemna** i **odjemnik**— nie są terminami programowania. Są to tradycyjne nazwy arytmetyczne dla liczby, która jest odejmowana (odjemnik) i liczba, z której jest odejmowany odjemnik (odjemna). Różnica to odjemna minus odjemnik. Można użyć innych nazw, ponieważ program nie wymaga określonych nazw dla zmiennych, formantów, składników lub metod. Należy przestrzegać reguł, takich jak nierozpoczynanie nazw z cyframi, ale zazwyczaj można używać nazw takich jak x1, X2, x3 i x4. Jednak nazwy ogólne utrudniają odczytywanie i rozwiązywanie problemów niemal niemożliwe do śledzenia. Aby zachować unikatową i użyteczność nazw zmiennych, należy użyć tradycyjnych nazw dla mnożenia (multiplicand × mnożnik = Product) i dzielenia (dzielną ÷ dzielnik = iloraz) w dalszej części tego samouczka.
 
-     Następnie zmodyfikujesz `StartTheQuiz()` metodę, aby dostarczyć losowe wartości dla problemu odejmowania.
+     Następnie zmodyfikujesz `StartTheQuiz()` metodę, aby zapewnić losowe wartości problemu odejmowania.
 
 2. Dodaj następujący kod po komentarzu "Wypełnij problem odejmowania".
 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
 
-     Aby uniemożliwić ujemne odpowiedzi dla problemu odejmowania, ten kod używa <xref:System.Random.Next> metody <xref:System.Random> nieco klasy inaczej od jak odbywa się na problem dodawania. Kiedy nadasz `Next()` metoda dwie wartości, wybiera liczbę losową, która jest większa niż lub równa pierwszej wartości i mniejsza niż ten drugi. Poniższy kod wybiera losową liczbę z zakresu od 1 do 100 i zapisuje ją w zmiennej odjemna.
+     Aby zapobiec negatywnej odpowiedzi na problem odejmowania, ten kod używa <xref:System.Random.Next> metody <xref:System.Random> klasy a nieco inaczej niż w przypadku problemu z dodawaniem. Po nadaniu `Next()` metodu dwie wartości wybierają liczbę losową, która jest większa lub równa pierwszej wartości i mniejsza od drugiej. Poniższy kod wybiera liczbę losową z przestawu od 1 do 100 i zapisuje ją w zmiennej odjemna.
 
      [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]
 
-     Możesz wywołać `Next()` metody klasy Random nosi nazwę "randomizer" wcześniej w tym samouczku na wiele sposobów. Metody, które można wywołać w więcej niż jeden sposób, są określane jako przeciążone, a następnie korzystać z technologii IntelliSense, aby zapoznać się z nimi. Ponownie Przyjrzyj się etykietka narzędzia okna technologii IntelliSense dla `Next()` metody.
+     Można wywołać `Next()` metodę klasy losowej o nazwie "randomer" wcześniej w tym samouczku, na wiele sposobów. Metody, które można wywołać w więcej niż jednym sposobie, są określane jako przeciążone i można użyć funkcji IntelliSense, aby poznać ją. Ponownie Obejrzyj etykietkę narzędzia okna IntelliSense dla `Next()` metody.
 
-     ![Etykietka narzędzia okna technologii IntelliSense](../ide/media/express_overloads.png)
-**IntelliSense** etykietka narzędzia okna
+     ![Etykietka narzędzia](../ide/media/express_overloads.png)
+**okna narzędzi IntelliSense** okna IntelliSense
 
-     Etykietka narzędzia pokazuje **(+ 2 overload(s))** , co oznacza, że można wywołać `Next()` metody na dwa inne sposoby. Przeciążenia zawierają różną liczbę lub typy argumentów, tak że każde działa nieco inaczej od siebie nawzajem. Na przykład metoda może przyjmować jeden argument, a jeden z jej przeciążeń może być liczbą całkowitą i ciąg. Możesz wybrać poprawne przeciążenie oparte na co chcesz zrobić. Po dodaniu kod, aby `StartTheQuiz()` metody, więcej informacji znajduje się w oknie technologii IntelliSense zaraz po wprowadzeniu `randomizer.Next(`. Aby przechodzić między przeciążeniami, wybierz opcję **Strzałka w górę** i **strzałkę w dół** klucze, jak pokazano na poniższej ilustracji:
+     Etykietka narzędzia pokazuje **(+ 2 przeciążenia**), co oznacza, że można wywołać `Next()` metodę na dwa inne sposoby. Przeciążenia zawierają różne liczby lub typy argumentów, dzięki czemu działają nieco inaczej od siebie. Na przykład metoda może przyjmować jeden argument Integer, a jedno z jego przeciążeń może przyjmować liczbę całkowitą i ciąg. Należy wybrać poprawne Przeciążenie w zależności od tego, co ma być wykonywane. Po dodaniu kodu do `StartTheQuiz()` metody w oknie IntelliSense pojawiają się dodatkowe informacje, które wkrótce wprowadzisz. `randomizer.Next(` Aby przechodzić przez przeciążenia, wybierz klawisze **Strzałka w górę** i **Strzałka w dół** , jak pokazano na poniższej ilustracji:
 
-     ![Przeciążenie dla następnego&#40; &#41; metody w technologii IntelliSense](../ide/media/express_nextoverload.png) przeciążenia dla **Next()** method in Class metoda **IntelliSense**
+     ![Przeciążenie metody Next&#40; &#41; w funkcji przeciążenia](../ide/media/express_nextoverload.png) funkcji IntelliSense dla metody **Next ()** w **technologii IntelliSense**
 
-     W tym przypadku chcesz wybrać ostatnie przeciążenie, ponieważ można określić wartości minimalne i maksymalne.
+     W takim przypadku należy wybrać ostatnie Przeciążenie, ponieważ można określić wartości minimalne i maksymalne.
 
-3. Modyfikowanie `CheckTheAnswer()` metodę sprawdzania, czy poprawną odpowiedź odejmowania.
+3. `CheckTheAnswer()` Zmodyfikuj metodę, aby sprawdzić poprawność odejmowania.
 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     W języku Visual C# `&&` jest `logical and` operatora. W języku Visual Basic, równorzędny operator to `AndAlso`. Te operatory wskazują "Jeśli suma addend1 i addend2 jest równa wartości sumy NumericUpDown i jeśli odjemna minus odjemnik jest równa wartości różnicy NumericUpDown." `CheckTheAnswer()` Metoda zwraca `true` tylko wtedy, gdy odpowiedzi na dodawanie i problemy odejmowania są poprawne.
+     W C#wizualizacji `&&` , jest `logical and` operatorem. W Visual Basic, odpowiednik operatora to `AndAlso`. Te operatory wskazują, czy suma addend1 i addend2 jest równa wartości sumy NumericUpDown i jeśli odjemna minus odjemnik jest równa wartości różnicy NumericUpDown ". `CheckTheAnswer()` Metoda zwraca`true` tylko wtedy, gdy odpowiedzi na dodanie i problemy z odejmowaniem są poprawne.
 
-4. Zastąp ostatnią część programu obsługi zdarzeń Tick timera następującym kodem, tak aby wypełnił poprawną odpowiedź, gdy skończy się czas.
+4. Zamień ostatnią część programu obsługi zdarzeń taktu czasomierza na następujący kod, tak aby wypełniał poprawną odpowiedź, gdy skończy się czas.
 
      [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]
 
-5. Zapisz i uruchom kod.
+5. Zapisz i Uruchom swój kod.
 
-     Program obejmuje problem odejmowania, jak pokazano na następującym rysunku:
+     Program zawiera problem odejmowania, jak pokazano na poniższej ilustracji:
 
-     ![Quiz matematyczny z problemem odejmowania](../ide/media/express_addsubtract.png)
-**kwizu matematycznego z limitem** z problemem odejmowania
+     ![Quiz matematyczny z rozjęciem](../ide/media/express_addsubtract.png)
+**quizu matematycznego** z problemem odejmowania
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [kroku 7: Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 7: Dodawanie problemów](../ide/step-7-add-multiplication-and-division-problems.md)mnożenia i dzielenia.
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodawanie obsługi zdarzeń Enter dla formantów NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodaj programy obsługi zdarzeń Enter dla formantów](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)NumericUpDown.

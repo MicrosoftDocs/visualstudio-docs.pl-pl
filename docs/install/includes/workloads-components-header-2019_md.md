@@ -1,17 +1,17 @@
 ---
 author: TerryGLee
 ms.author: tglee
-ms.date: 05/21/2019
+ms.date: 07/23/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 4af670f7e815d8ad0634c4457acd2149c15caad5
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: a69bd345c13e70cdd246c4bccd50b28b2f0305f8
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68176835"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68481525"
 ---
-Po ustawieniu współzależności w manifeście VSIX tylko należy określić identyfikatory składników. Użyj tabel na tej stronie, aby określić zależności minimalnej składnika. W niektórych scenariuszach to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych przypadkach może oznaczać, możesz określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [jak: Migrowanie projektów rozszerzalności do programu Visual Studio](../../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
+Po ustawieniu współzależności w manifeście VSIX tylko należy określić identyfikatory składników. Użyj tabel na tej stronie, aby określić minimalną zależność składnika. W niektórych scenariuszach to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych przypadkach może oznaczać, możesz określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [How to: Migruj Projekty rozszerzalności na stronę](../../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) programu Visual Studio.
 
-Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](../use-command-line-parameters-to-install-visual-studio.md) strony. I dla listy, obciążenie i identyfikatorów składników dla innych produktów, zobacz [identyfikatory obciążeń i składników programu Visual Studio](../workload-and-component-ids.md) strony.
+Aby uzyskać więcej informacji o sposobach korzystania z tych identyfikatorów, zobacz stronę [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](../use-command-line-parameters-to-install-visual-studio.md) . Aby uzyskać listę identyfikatorów obciążeń i składników dla innych produktów, zobacz stronę [obciążenia i identyfikatory składników programu Visual Studio](../workload-and-component-ids.md) .

@@ -1,82 +1,85 @@
 ---
 title: Strona publikowania, Projektant projektu
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968893"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461640"
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
-**Publikuj** strony **projektanta projektu** służy do konfigurowania właściwości dla wdrażania ClickOnce.
 
- Aby uzyskać dostęp do **Publikuj** wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **publikowania** kartę.
+Strona **Publikowanie** **projektanta projektu** służy do konfigurowania właściwości wdrażania ClickOnce.
+
+ Aby uzyskać dostęp do strony **Publikowanie** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **Publikowanie** .
 
 > [!NOTE]
-> Niektóre właściwości ClickOnce, opisane w tym miejscu można również ustawić **PublishWizard**, która jest dostępna z **kompilacji** menu lub przez kliknięcie przycisku **PublishWizard** przycisk na to Strona.
+> Niektóre z opisanych tutaj właściwości ClickOnce można także ustawić w **PublishWizard**, dostępne w menu **kompilacja** lub klikając przycisk **PublishWizard** na tej stronie.
 
 ## <a name="uielement-list"></a>Lista elementów UI
+
  **Lokalizacja folderu publikowania**
 
- Określa lokalizację, w którym aplikacja została opublikowana. Może być ścieżką dysku (`C:\deploy\myapplication`), udział pliku (`\\server\myapplication`), lub na serwerze FTP (`ftp://ftp.microsoft.com/myapplication`). Należy pamiętać, że tekst musi znajdować się w **lokalizację publikowania** polu w kolejności do przeglądania (**...** ) przycisku do pracy.
+ Określa lokalizację, w której aplikacja jest publikowana. Może to być ścieżka dysku (`C:\deploy\myapplication`), udział plików (`\\server\myapplication`) lub serwer FTP (`ftp://ftp.microsoft.com/myapplication`). Zwróć uwagę, że tekst musi być obecny w polu **Lokalizacja publikowania** , aby można było wykonać przycisk Przeglądaj ( **...** ).
 
  **Adres URL folderu instalacji**
 
- Opcjonalna. Określa witryny sieci Web, do której przejdzie do zainstalowania aplikacji. Jest to konieczne, tylko gdy różni się od **lokalizację publikowania**, na przykład, jeśli aplikacja została opublikowana serwer przejściowy.
+ Opcjonalny. Określa witrynę sieci Web, do której użytkownicy przejdą w celu zainstalowania aplikacji. Jest to konieczne tylko wtedy, gdy różni się od **lokalizacji publikowania**, na przykład po opublikowaniu aplikacji na serwerze przejściowym.
 
- **Tryb i ustawienia instalacji**
+ **Tryb instalacji i ustawienia**
 
- Określa, czy aplikacja jest uruchamiana bezpośrednio z **lokalizację publikowania** (gdy **aplikacja jest dostępna online tylko** wybrano) lub jest zainstalowana i dodać do **Start**  menu i **apletu Dodaj lub usuń programy** elementu w **Panelu sterowania** (gdy **aplikacja jest dostępna w trybie offline oraz** jest zaznaczona).
+ Określa, czy aplikacja jest uruchamiana bezpośrednio z **lokalizacji publikowania** (gdy **aplikacja jest dostępna w trybie online** jest zaznaczona) lub jest zainstalowana i dodawana do menu **Start** oraz do apletu **Dodaj lub usuń programy** w **Panel sterowania** (gdy **aplikacja jest dostępna w trybie offline, a także** jest zaznaczona).
 
- W przypadku aplikacji przeglądarki WPF sieci web **aplikacja jest dostępna w trybie offline oraz** opcja jest wyłączona, ponieważ takie aplikacje są dostępne tylko w trybie online.
+ W przypadku aplikacji przeglądarki sieci Web WPF **aplikacja jest dostępna w trybie offline** , a opcja jest wyłączona, ponieważ takie aplikacje są dostępne tylko w trybie online.
 
  **Pliki aplikacji**
 
- Zostanie otwarte okno dialogowe pliki aplikacji, które służy do określania, jak i gdzie poszczególne pliki są zainstalowane.
+ Otwiera okno dialogowe pliki aplikacji, w którym można określić, w jaki sposób i gdzie są instalowane poszczególne pliki.
 
  **Wymagania wstępne**
 
- Zostanie otwarte okno dialogowe wymagań wstępnych, które służy do określania wstępnie wymagane składniki, takie jak .NET Framework, można zainstalować wraz z aplikacją.
+ Otwiera okno dialogowe wymagania wstępne, które służy do określania składników wymaganych wstępnie, takich jak .NET Framework, które mają być instalowane razem z aplikacją.
 
  **Aktualizacje**
 
- Zostanie otwarte okno dialogowe aktualizacji aplikacji, które służy do określania zachowania aktualizacji dla aplikacji. Nie jest dostępna, gdy **aplikacja jest dostępna online tylko** jest zaznaczone.
+ Otwiera okno dialogowe aktualizacje aplikacji, w którym można określić zachowanie aktualizacji dla aplikacji. Niedostępne, gdy **aplikacja jest dostępna tylko w trybie online** jest zaznaczona.
 
  **Opcje**
 
- Otwiera okno dialogowe Opcje publikowania, który jest używany do określenia dodatkowych zaawansowane opcje publikowania.
+ Otwiera okno dialogowe Opcje publikowania, które służy do określania dodatkowych opcji publikowania zaawansowanego.
 
- **Opublikuj wersję**
+ **Wersja publikacji**
 
- Ustawia numer wersji publikowania dla aplikacji; Po zmianie numeru wersji, aplikacja została opublikowana jako aktualizację. Każda część wersję publikacji (**głównych**, **pomocnicza**, **kompilacji**, **poprawki**) może mieć maksymalną wartość 65355 (<xref:System.UInt16.MaxValue>), Maksymalna dozwolona przez <xref:System.Version>.
+ Ustawia numer wersji publikacji dla aplikacji; po zmianie numeru wersji aplikacja zostanie opublikowana jako aktualizacja. Każda część wersji publikacji (**główna**, pomocnicza , **kompilacja**, **poprawka**) może mieć maksymalną wartość 65355 (<xref:System.UInt16.MaxValue>), maksymalną dozwoloną przez. <xref:System.Version>
 
  Po zainstalowaniu więcej niż jedna wersja aplikacji przy użyciu technologii ClickOnce, instalacja przemieszcza inne wersje aplikacji do folderu o nazwie archiwum, w lokalizacji publikowania, który określisz. Archiwizowanie starszych w ten sposób utrzymuje katalogu instalacyjnyego folderów z wcześniejszych wersji.
 
- **Automatycznie zwiększ numer poprawki przy każdej publikacji**
+ **Automatycznie Zwiększ numer poprawki przy każdej publikacji**
 
- Opcjonalna. Po wybraniu tej opcji (ustawienie domyślne), **poprawki** część numeru wersji publikowania jest zwiększany o jeden każdym opublikowaniu aplikacji. To powoduje, że aplikacja opublikowana jako aktualizację.
+ Opcjonalny. Gdy ta opcja jest zaznaczona (wartość domyślna), część **poprawki** numeru wersji publikacji jest zwiększana o jeden po opublikowaniu aplikacji. Powoduje to opublikowanie aplikacji jako aktualizacji.
 
  **Kreator publikacji**
 
- Zostanie otwarty Kreator publikacji. Kończenie pracy Kreatora publikacji ma taki sam skutek jak działa **Publikuj** polecenie **kompilacji** menu.
+ Otwiera Kreatora publikacji. Ukończenie działania Kreatora publikacji ma taki sam skutek jak uruchomienie polecenia **Publikuj** w menu **kompilacja** .
 
  **Publikuj teraz**
 
- Publikuje aplikacji przy użyciu bieżących ustawień. Odpowiednikiem **Zakończ** znajdujący się w **PublishWizard**.
+ Publikuje aplikację przy użyciu bieżących ustawień. Odpowiednik przycisku **Zakończ** w **PublishWizard**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Publikowanie aplikacji ClickOnce](../../deployment/publishing-clickonce-applications.md)
 - [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

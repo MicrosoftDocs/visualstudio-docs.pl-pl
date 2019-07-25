@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430885"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416736"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Określanie niestandardowych zdarzeń kompilacji w programie Visual Studio
 
@@ -24,11 +24,11 @@ Określając to zdarzenie kompilacji niestandardowej, może automatycznie urucho
 
  Aby uzyskać szczegółowe informacje o języku programowania, którego używasz zobacz następujące tematy:
 
-- Visual Basic —[jak: Określanie zdarzeń kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic —[How to: Określ zdarzenia kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C#i F#—[jak: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C#i F#--[How to: Określ zdarzenia kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
 
-- Visual C++ —[określanie zdarzeń kompilacji](/cpp/ide/specifying-build-events).
+- Visual C++ —[określanie zdarzeń kompilacji](/cpp/build/specifying-build-events).
 
 ## <a name="syntax"></a>Składnia
 
@@ -60,4 +60,4 @@ Zdarzenia kompilacji postępuj zgodnie z tej samej składni jako polecenia syste
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)
 - [Okno dialogowe wiersz polecenia zdarzenia/po kompilacji — Zdarzenie sprzed kompilacji](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Znaki specjalne w MSBuild](../msbuild/msbuild-special-characters.md)
-- [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)
+- [Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)

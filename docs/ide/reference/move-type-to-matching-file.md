@@ -1,5 +1,6 @@
 ---
 title: Przeniesienie typu do pasującego refaktoryzacji pliku
+description: Przenieś typ do oddzielnego pliku o tej samej nazwie. Kliknij prawym przyciskiem myszy typ, wybierz polecenie szybkie akcje i refaktoryzacje, a następnie wybierz pozycję <TypeName>Przenieś typ do. cs.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e3b12f6a19ea64e43f7a5e00e3c795cc7358e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540758"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483652"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Przeniesienie typu do pasującego pliku refaktoryzacji
 
@@ -25,11 +26,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** Umożliwia przeniesienie wybranego typu do osobnego pliku o takiej samej nazwie.
+**Whatman** Umożliwia przeniesienie wybranego typu do oddzielnego pliku o tej samej nazwie.
 
-**Kiedy:** W tym samym pliku, który chcesz oddzielić masz wiele klas, struktur, interfejsów, itp.
+**Czasie** Istnieje wiele klas, struktur, interfejsów itp. w tym samym pliku, który ma zostać rozdzielony.
 
-**Dlaczego:** Wprowadzenie do wielu typów, w tym samym pliku może utrudnić znaleźć tych typów. Przenosząc typów plików o takiej samej nazwie, kod staje się bardziej czytelny i łatwiejszą nawigacją.
+**Zalet** Umieszczenie wielu typów w tym samym pliku może utrudnić znalezienie tych typów. Przenosząc typów plików o takiej samej nazwie, kod staje się bardziej czytelny i łatwiejszą nawigacją.
 
 ## <a name="how-to"></a>Instrukcje
 
@@ -45,7 +46,7 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - Naciśnij klawisz **Ctrl**+**.**
+   - Naciśnij klawisz **Ctrl**+ **.**
    - Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **szybkie akcje i operacje refaktoryzacji**
 
 1. Wybierz **przeniesienie typu do *TypeName*.cs** z menu, gdzie *TypeName* jest nazwa typu, który wybrano.

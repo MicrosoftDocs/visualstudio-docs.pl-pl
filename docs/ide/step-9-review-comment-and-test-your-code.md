@@ -1,36 +1,39 @@
 ---
-title: Krok 9. Przejrzyj, komentowanie i testowanie kodu
+title: Krok 9. Przeglądanie, komentowanie i testowanie kodu
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 899b4ffee17849bf1165def3025506eb75d940a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8ad984f82d6d3bdcabf3a5a6952751cfa944a0eb
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435434"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416618"
 ---
-# <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przejrzyj, komentowanie i testowanie kodu
-Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób, w jaki program zachowuje się jest komentarz. To ułatwia komuś, kto czyta swój kod, aby zrozumieć, jak działa. Dodawanie komentarzy do kodu to dobry sposób na. W języku Visual C# dwie kreski ułamkowe (/ /) oznaczają wiersz jako komentarz. W języku Visual Basic pojedynczy cudzysłów (') służy do oznaczania wiersza jako komentarz. Po dodaniu komentarza, przetestuj swój program. Jest dobrą praktyką, aby uruchomić i przetestować kod często podczas pracy nad swoimi projektami, aby można było wyłapać i rozwiązać wszelkie problemy wcześnie, zanim kod stanie się bardziej skomplikowane. Jest to nazywane *iteracyjne testowanie*.
+# <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przeglądanie, komentowanie i testowanie kodu
+Następnie Dodaj komentarz do kodu. Komentarz to Uwaga, która nie zmienia sposobu zachowania programu. Ułatwia to osobie odczytującej Twój kod, aby zrozumieć, co robi. Dodawanie komentarzy do kodu jest dobrym wykonywaćem do uzyskania. W wizualizacji C#dwa ukośniki (//) oznaczają wiersz jako komentarz. W Visual Basic znak pojedynczego cudzysłowu (') służy do oznaczania linii jako komentarz. Po dodaniu komentarza Przetestuj swój program. Dobrym rozwiązaniem jest częste uruchamianie i testowanie kodu podczas pracy nad projektami, dzięki czemu możesz wychwycić i rozwiązać wszelkie problemy wcześniej, zanim kod będzie bardziej skomplikowany. Jest to nazywane *testami iteracyjnymi*.
 
- Stworzyłeś właśnie coś, co działa, a mimo że nie jest jeszcze zrobione, już można załadować obrazu. Przed Dodaj komentarz do kodu i przetestowaniem go Poświęć czas, aby zapoznać się z pojęciami kodu, ponieważ będą często używane następujące pojęcia:
+ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrobione, może już załadować obraz. Przed dodaniem komentarza do kodu i przetestowania go, należy zapoznać się z pojęciami dotyczącymi kodu, ponieważ często będziesz używać tych koncepcji:
 
-- Po dwukrotnym kliknięciu **Pokaż obraz** znajdujący się w **Windows Forms Designer**, IDE automatycznie dodaje *metoda* do kodu programu.
+- Po dwukrotnym kliknięciu przycisku **Pokaż obraz** w **Projektant formularzy systemu Windows**, IDE automatycznie dodaliśmy *metodę* do kodu programu.
 
-- Metody to sposób organizowania kodu: To, jak kod jest zgrupowany razem.
+- Metody organizowania kodu: Jest to sposób grupowania kodu.
 
-- W większości przypadków, metoda wykonuje kilka rzeczy w określonej kolejności, jak Twoja `showButton_Click()` metoda Wyświetla okno dialogowe, a następnie ładująca obraz.
+- W większości przypadków Metoda wykonuje niewielką liczbę rzeczy w określonej kolejności, jak `showButton_Click()` w przypadku, gdy metoda pokazuje okno dialogowe, a następnie ładuje obraz.
 
-- Metoda składa się z kodu *instrukcji*, lub linii kodu. Myśl o metodzie, aby powiązać ze sobą instrukcji kodu.
+- Metoda składa się z *instrukcji*kodu lub wierszy kodu. Należy traktować metodę jako sposób łączenia instrukcji kodu.
 
-- Po wykonaniu metody lub *o nazwie*, instrukcji w metodzie są wykonywane w kolejności, jedna po drugiej, począwszy od pierwszej.
+- Gdy metoda jest wykonywana lub *wywoływana*, instrukcje w metodzie są wykonywane w kolejności, jeden po drugim, zaczynając od pierwszego.
 
-   Oto przykład instrukcji.
+   Poniżej znajduje się przykład instrukcji.
 
   ```csharp
   pictureBox1.Load(openFileDialog1.FileName);
@@ -40,54 +43,54 @@ Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób,
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Instrukcje są na tym, co sprawia, że Twoje programy robią pewne rzeczy. W języku Visual C# instrukcja zawsze kończy się średnikiem. W języku Visual Basic koniec wiersza jest końcem instrukcji. (Średnik nie jest potrzebny w języku Visual Basic). Poprzednia instrukcja nakazuje swoje <xref:System.Windows.Forms.PictureBox> kontroli można załadować pliku, który użytkownik wybrał ze **OpenFileDialog** składnika.
+   Instrukcje sprawiają, że programy działają w programie. W wizualizacji C#, instrukcja zawsze jest zakończona średnikiem. Na Visual Basic końcem wiersza jest koniec instrukcji. (Nie jest wymagany średnik w Visual Basic). Poprzednia instrukcja instruuje <xref:System.Windows.Forms.PictureBox> formant do załadowania pliku wybranego przez użytkownika ze składnikiem **OpenFileDialog** .
 
-  ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# -5 wideo](http://go.microsoft.com/fwlink/?LinkId=205206). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+  ![link do wideo](../data-tools/media/playvideo.gif)dla wersji wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Utwórz przeglądarkę obrazów w C# pliku wideo 5.](http://go.microsoft.com/fwlink/?LinkId=205206) Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ## <a name="to-add-comments"></a>Aby dodać komentarze
 
-1. Dodaj poniższy komentarz do kodu.
+1. Dodaj do kodu następujący komentarz.
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
 
     > [!NOTE]
-    > Twoje **showButton** przycisku <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń jest zakończony i działa. Rozpocząłeś pisanie kodu, rozpoczynając od `if` instrukcji. `if` Instrukcja jest, jak sprawdzić program, "Sprawdź to jedno i jeśli to PRAWDA, wykonaj te akcje". W tym przypadku powiesz programowi w taki sposób, aby otworzyć **Otwórz plik** okno dialogowe, a jeśli użytkownik wybierze plik i wybierze **OK** przycisk, załadował ten pliku w **PictureBox**.
+    > Program  obsługi <xref:System.Windows.Forms.Control.Click> zdarzeń przycisku showButton jest teraz zakończony i działa. Rozpoczęto pisanie kodu, rozpoczynając `if` od instrukcji. `if` Instrukcja to sposób informowania programu, "Sprawdź to i jeśli jest prawdziwe, wykonaj te akcje". W takim przypadku Użytkownik poinformuje program, aby otworzył okno dialogowe **Otwórz plik** , a jeśli użytkownik wybierze plik, a następnie kliknie przycisk **OK** , Załaduj ten plik w elemencie **PictureBox**.
 
     > [!TIP]
-    > IDE zostało zbudowane ułatwia pisanie kodu, i *fragmenty kodu* jest jednym ze sposobów, tak. Wstawka to skrót, który rozwija się w małych blokach kodu.
+    > Środowisko IDE zostało skompilowane, aby ułatwić pisanie kodu, a *fragmenty kodu* są jednym ze sposobów. Fragment kodu jest skrótem, który jest rozwinięty w niewielkim bloku.
     >
-    >  Możesz zobaczyć wszystkie dostępne wstawki. Na pasku menu wybierz **narzędzia** > **Menedżera wstawek kodu**. Dla języka Visual C# `if` fragmentu kodu znajduje się w **Visual C#** . Dla języka Visual Basic `if` fragmenty znajdują się w **instrukcje warunkowe i pętle** > **wzorców kodu**. Można użyć tego menedżera do przeglądania istniejących wstawek lub dodać własne wstawki.
+    >  Zobaczysz wszystkie dostępne fragmenty kodu. Na pasku menu wybierz kolejno pozycje **Narzędzia** > **fragmenty kodu Menedżer**. Dla wizualizacji C#, `if` fragment kodu znajduje się w **wizualizacji C#**  . W przypadku Visual Basic, `if` fragmenty kodu są w **warunkach i pętle** > **wzorców kodów**. Za pomocą tego menedżera można przeglądać istniejące fragmenty kodu lub dodawać własne fragmenty kodu.
     >
-    >  Aby uaktywnić wstawkę podczas wpisywania kod, wpisz ją, a następnie wybierz **kartę** klucza. Wiele fragmentów są wyświetlane w **IntelliSense** okna, dlatego możesz wybrać **kartę** dwa razy: najpierw do wybrania wstawki z **IntelliSense** okna, a następnie poinformowania Środowisko IDE przeznaczone do użycia do fragmentu kodu. (Technologia IntelliSense obsługuje `if` fragment kodu, ale nie `ifelse` fragmentu kodu.)
+    >  Aby uaktywnić fragment kodu przy wpisywaniu tekstu, wpisz go i wybierz klawisz **Tab** . Wiele fragmentów kodu pojawia się w oknie **IntelliSense** , co oznacza, że wybierasz klawisz **Tab** dwa razy: najpierw, aby wybrać wstawkę z okna **IntelliSense** , a następnie wskazać, że IDE używa tego fragmentu kodu. (Technologia IntelliSense obsługuje `if` fragment kodu, ale `ifelse` nie fragment kodu).
 
-2. Przed uruchomieniem programu należy zapisać program, wybierając **Zapisz wszystko** przycisku paska narzędzi, który wygląda następująco.
+2. Przed uruchomieniem programu Zapisz swój program, wybierając przycisk **Zapisz wszystkie** paski narzędzi, który pojawia się w następujący sposób.
 
-     ![Zapisz wszystkie przyciski paska narzędzi](../ide/media/express_iconsaveall.png)
-**Zapisz wszystko** przycisku
+     ![Przycisk Zapisz wszystkie paski](../ide/media/express_iconsaveall.png)
+narzędzi przycisk**Zapisz wszystko**
 
-     Alternatywnie, aby zapisać swój program, na pasku menu, wybierz **pliku** > **Zapisz wszystko**. Jest najlepszym rozwiązaniem jest zapisywać wcześnie i często.
+     Alternatywnie, aby zapisać program, na pasku menu wybierz kolejno opcje **plik** > **Zapisz wszystkie**. Najlepszym rozwiązaniem jest wczesne i częste zapisywanie.
 
-     Gdy jest uruchomiona, Twój program powinien wyglądać jak na poniższym obrazie.
+     Po uruchomieniu program powinien wyglądać jak na poniższej ilustracji.
 
-     ![Obraz podglądu](../ide/media/express_pictureviewerdonerun.png)
-**Picture Viewer**
+     ![Przeglądarka obrazów przeglądarka obrazów ](../ide/media/express_pictureviewerdonerun.png)
 
-## <a name="to-test-your-program"></a>Aby przetestować swój program
 
-1. Wybierz **F5** klucza, lub wybierz **Rozpocznij debugowanie** przycisku paska narzędzi.
+## <a name="to-test-your-program"></a>Aby przetestować program
 
-2. Wybierz **Pokaż obraz** przycisk, aby uruchomić napisany właśnie kod. Najpierw program otworzy **Otwórz plik** okno dialogowe. Sprawdź, czy filtry są widoczne w **pliki typu** listy rozwijanej w dolnej części okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy, które są dostarczane z systemem operacyjnym Windows w Twojej *Moje dokumenty* folderu, wewnątrz *My Pictures\Sample Pictures* folderu.
+1. Wybierz klawisz **F5** lub wybierz przycisk paska narzędzi **Rozpocznij debugowanie** .
+
+2. Wybierz przycisk **Pokaż obraz** , aby uruchomić właśnie napisany kod. Po pierwsze program otwiera okno dialogowe **Otwórz plik** . Sprawdź, czy Twoje filtry są wyświetlane na liście rozwijanej **Pliki typu** u dołu okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy dostarczane z systemem operacyjnym Windows w folderze *Moje dokumenty* w folderze *Moje obrazy Pictures\Sample* .
 
     > [!NOTE]
-    > Jeśli nie widzisz żadnych obrazów w **wybierz plik obrazu** okno dialogowe, upewnij się, że **wszystkie pliki (*.\*)**  filtr jest zaznaczony na liście rozwijanej u dołu po prawej stronie okna dialogowego.
+    > Jeśli nie widzisz żadnych obrazów w oknie dialogowym **Wybierz plik obrazu** , upewnij się, że na liście rozwijanej w prawym dolnym rogu okna dialogowego jest zaznaczona opcja filtr **wszystkie pliki (\**.)** .
 
-3. Zdjęcia i pojawia się w obiekcie PictureBox. Spróbuj zmienić rozmiar formularza przeciągając jego obramowania. Ponieważ Twoje PictureBox zadokowano wewnątrz elementu TableLayoutPanel, który sam jest zadokowany wewnątrz formularza, Twój obszar obrazu będzie zmieniany tak jak szerokość całego formularza i wypełni najważniejsze 90 procent firm z formularza. Dlatego możesz używać <xref:System.Windows.Forms.TableLayoutPanel> i <xref:System.Windows.Forms.FlowLayoutPanel> kontenerów: Prowadzą użyłeś pojemników, gdy użytkownik zmienia jego rozmiar formularza.
+3. Załaduj obraz i pojawia się w elemencie PictureBox. Następnie spróbuj zmienić rozmiar formularza, przeciągając jego obramowania. Ponieważ element PictureBox jest zadokowany wewnątrz elementu TableLayoutPanel, który sam jest zadokowany w formularzu, obszar obrazu zmieni się w taki sposób, aby był tak szeroki jak formularz, i wypełni górne 90 procent formularza. Dlatego użyto <xref:System.Windows.Forms.TableLayoutPanel> kontenerów i <xref:System.Windows.Forms.FlowLayoutPanel> : Użytkownicy zachowują rozmiar formularza poprawnie, gdy zmienia jego rozmiary.
 
-     Teraz większe zdjęcia wykraczają poza granice przeglądarki obrazów. W następnym kroku dodasz kod, aby obrazy mieściły się w oknie.
+     Teraz większe obrazy wykraczają poza obramowania przeglądarki obrazów. W następnym kroku dodasz kod umożliwiający dopasowanie obrazów do okna.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 10: Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 10: Napisz kod dla dodatkowych przycisków i pola](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)wyboru.
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8: Napisz kod dla programu obsługi](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)zdarzeń przycisku Pokaż obraz.

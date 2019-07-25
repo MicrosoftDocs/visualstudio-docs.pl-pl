@@ -1,6 +1,7 @@
 ---
 title: Zarządzanie podpisywaniem zestawu i manifestu
 ms.date: 02/17/2017
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -8,69 +9,69 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538244"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461499"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Zarządzanie podpisywaniem zestawu i manifestu
 
-Podpisywania silnymi zawiera składnik oprogramowania globalnie unikatową tożsamość. Silne nazwy są używane w celu zagwarantowania, że zestaw nie sfałszowane przez kogoś innego i upewnij się, że składnika, zależności i instrukcji konfiguracji mapowania na poprawne składnik, a wersja składnika.
+Podpisywanie silnej nazwy daje składnikowi oprogramowania unikatowy identyfikator globalny. Silne nazwy są używane w celu zagwarantowania, że zestaw nie może być sfałszowany przez kogoś innego, i upewnić się, że zależności składników i instrukcje konfiguracji są mapowane na poprawną wersję składnika i składnika.
 
-Silna nazwa składa się z tożsamości zestawu (nazwa prosty tekst, numeru wersji i informacji o kulturze) oraz token klucza publicznego i podpisu cyfrowego.
+Silna nazwa składa się z tożsamości zestawu (prostej nazwy tekstu, numeru wersji i informacji o kulturze) oraz tokenu klucza publicznego i podpisu cyfrowego.
 
-Aby uzyskać informacje na temat podpisywania zestawów w projektach Visual Basic i C#, zobacz [tworzenia i używania zestawów o silnych nazwach](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
+Aby uzyskać informacje na temat podpisywania zestawów w C# Visual Basic i projektach, zobacz [Tworzenie i używanie zestawów o silnej nazwie](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Dla informacji na temat podpisywania zestawów w elemencie wizualnym C++ projektów, zobacz [zestawy o silnych nazwach (C++sposób niezamierzony)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Aby uzyskać informacje na temat podpisywania zestawów C++ w projektach wizualnych, zobacz [zestawy oC++silnych nazwach (/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
-> Podpisywanie silnej nazwy nie chroni przed odtwarzania zestaw. Aby zapewnić ochronę przed odtwarzania, zobacz [Dotfuscator Community](dotfuscator/index.md).
+> Podpisywanie silnej nazwy nie chroni przed odtwarzaniem przez proces odtwarzania zestawu. Aby chronić przed odwróceniem, zobacz [społeczność Dotfuscator](dotfuscator/index.md).
 
-## <a name="asset-types-and-signing"></a>Typy zasobów i podpisywania
+## <a name="asset-types-and-signing"></a>Typy zasobów i podpisywanie
 
-Można podpisać manifesty aplikacji i zestawy .NET:
+Można podpisywać zestawy .NET i manifesty aplikacji:
 
-- Pliki wykonywalne (*.exe*)
+- Pliki wykonywalne ( *. exe*)
 
-- Manifesty aplikacji (*. exe.manifest*)
+- Manifesty aplikacji ( *. exe. manifest*)
 
-- Manifesty wdrożenia (*.application*)
+- Manifesty wdrożenia ( *. Application*)
 
-- Współużytkowane zestawy składników (*.dll*)
+- Współużytkowane zestawy składników ( *. dll*)
 
-Utwórz następujące typy zasobów:
+Podpisz następujące typy zasobów:
 
-1. Zestawy, jeśli chcesz wdrożyć je w globalnej pamięci podręcznej zestawów (GAC).
+1. Zestawy, które mają zostać wdrożone w globalnej pamięci podręcznej zestawów (GAC).
 
-2. Manifesty aplikacji i wdrażania ClickOnce. Program Visual Studio umożliwia podpisywania domyślnie w przypadku tych aplikacji.
+2. Aplikacje ClickOnce i manifesty wdrożenia. Program Visual Studio umożliwia podpisywanie domyślnie dla tych aplikacji.
 
-3. Podstawowe zestawy międzyoperacyjne, które są używane do współdziałania COM. Narzędzia TLBIMP wymusza silne nazwy podczas tworzenia podstawowego zestawu międzyoperacyjnego z biblioteki typów COM.
+3. Podstawowe zestawy międzyoperacyjności, które są używane na potrzeby współdziałania modelu COM. Narzędzie TLBIMP wymusza silne nazewnictwo podczas tworzenia podstawowego zestawu międzyoperacyjnego na podstawie biblioteki typów modelu COM.
 
-Ogólnie rzecz biorąc nie powinien utworzyć pliki wykonywalne. Składnik silnej nazwy nie mogą odwoływać się bez — nazwie składnik wdrożoną wraz z aplikacją. Visual Studio nie podpisuje plików wykonywalnych aplikacji, ale zamiast tego podpisuje manifest aplikacji, które wskazuje do pliku wykonywalnego o nazwie weak. Należy unikać podpisywania składników, które są prywatne do aplikacji, ponieważ podpisywanie może utrudnić zarządzanie zależnościami.
+Ogólnie rzecz biorąc nie należy podpisywać plików wykonywalnych. Silnie nazwany składnik nie może odwoływać się do niesilnie nazwanego składnika wdrożonego z aplikacją. Program Visual Studio nie podpisuje plików wykonywalnych aplikacji, ale zamiast tego rejestruje manifest aplikacji, który wskazuje na plik wykonywalny o słabym kodzie. Należy unikać podpisywania składników, które są prywatne dla aplikacji, ponieważ podpisywanie może utrudniać zarządzanie zależnościami.
 
-## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Jak zarejestrować zestaw w programie Visual Studio
+## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Jak podpisać zestaw w programie Visual Studio
 
-Podpisywania aplikacji lub składnika przy użyciu **podpisywanie** karty w oknie właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**). Wybierz **podpisywanie** kartę, a następnie wybierz **Podpisz zestaw** pole wyboru.
+Aplikację lub składnik należy podpisać przy użyciu karty  podpisywanie okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Wybierz kartę  podpisywanie, a następnie zaznacz pole wyboru **podpisz zestaw** .
 
-Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, nowe pliki klucza są zawsze tworzone w *PFX* formatu. Należy nazwę i hasło dla nowego pliku.
+Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, nowe pliki kluczy są zawsze tworzone w formacie *PFX* . Musisz mieć nazwę i hasło dla nowego pliku.
 
 > [!WARNING]
-> Zawsze należy chronić Twojego pliku klucza o hasło, aby uniemożliwić korzystanie z jej przez kogoś innego. Możesz również klucze można zabezpieczyć przy użyciu dostawców lub magazynów certyfikatów.
+> Należy zawsze chronić plik klucza przy użyciu hasła, aby uniemożliwić innym osobom korzystanie z niego. Klucze można także zabezpieczyć za pomocą dostawców lub magazynów certyfikatów.
 
-Możesz też wskazać w kluczu już utworzony. Aby uzyskać więcej informacji na temat tworzenia kluczy, zobacz [tworzenia pary kluczy publiczny prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+Możesz również wskazać klucz, który został już utworzony. Aby uzyskać więcej informacji na temat tworzenia kluczy, zobacz [Tworzenie pary kluczy publiczny-prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
-Jeśli masz tylko dostęp do klucza publicznego, służy podpisywanie opóźnione mają być odroczone przypisywanie klucza. Włączanie opóźnione podpisywanie, wybierając **opóźnienie logowania tylko** pole wyboru. Projekt podpisywane z opóźnieniem nie zostanie uruchomiona, a nie można go debugować. Jednakże, możesz pominąć weryfikacji podczas programowania przy użyciu [narzędzie silnych nazw Sn.exe](/dotnet/framework/tools/sn-exe-strong-name-tool) z `-Vr` opcji.
+Jeśli masz tylko dostęp do klucza publicznego, możesz użyć podpisywania opóźnień, aby odroczyć przypisanie klucza. Aby włączyć podpisywanie opóźnień, należy zaznaczyć pole wyboru **Opóźnij tylko znak** . Projekt podpisany z opóźnieniem nie jest uruchomiony i nie można go debugować. Można jednak pominąć weryfikację podczas opracowywania przy użyciu [Narzędzia do silnej nazwy SN. exe](/dotnet/framework/tools/sn-exe-strong-name-tool) z `-Vr` opcją.
 
-Aby uzyskać informacje dotyczące podpisywania manifestów, zobacz [jak: Podpisywanie manifestów aplikacji i wdrożenia](../ide/how-to-sign-application-and-deployment-manifests.md).
+Aby uzyskać informacje na temat podpisywania manifestów [, zobacz How to: Podpisywanie aplikacji i manifestów](../ide/how-to-sign-application-and-deployment-manifests.md)wdrożenia.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Zestawy o silnych nazwach (C++sposób niezamierzony)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+- [Zestawy o silnych nazwach (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

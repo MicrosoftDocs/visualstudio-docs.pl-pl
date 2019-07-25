@@ -1,69 +1,69 @@
 ---
-title: Options, Text Editor, JavaScript, Project
+title: Opcje, Edytor tekstu, JavaScript, projekt
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df602b7ffa8f5109d8bbca827e59d6e1fd62c504
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778176"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461677"
 ---
-# <a name="options-text-editor-javascript-project"></a>Options, Text Editor, JavaScript, Project
+# <a name="options-text-editor-javascript-project"></a>Opcje, Edytor tekstu, JavaScript, projekt
 
-Użyj **projektu** strony **opcje** okno dialogowe, aby określić opcje projektu JavaScript w edytorze kodu. Dostępu do tej strony, na pasku menu wybierz **narzędzia** > **opcje**, a następnie rozwiń węzeł **edytora tekstów** > **językaJavaScript**  >  **Projektu**.
+Na stronie **projekt** okna dialogowego **Opcje** można określić opcje projektu JavaScript w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz**Opcje** **Narzędzia** > , a następnie rozwiń**projekt** **Edytor** > tekstu**JavaScript** > .
 
-## <a name="project-analysis-options"></a>Opcje analizy projektów
+## <a name="project-analysis-options"></a>Opcje analizy projektu
 
-Te opcje określają, jak edytor analizuje projektów, raporty diagnostyczne i sugeruje ulepszenia. Zaznacz lub wyczyść opcje, aby określić sposób obsługi tych sytuacji w edytorze.
+Te opcje określają, jak edytor analizuje projekty, raporty diagnostyczne i sugeruje ulepszenia. Zaznacz lub usuń zaznaczenie opcji, aby określić, jak edytor obsługuje te sytuacje.
 
-### <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+### <a name="uielement-list"></a>Lista elementów UIElement
 
 - **Analizuj tylko projekty zawierające pliki otwarte w edytorze**
-- **Zgłaszaj tylko diagnostykę dla plików otwartych w edytorze**
-- **Zaproponuj możliwych ulepszeń, które nie są poprawki**
+- **Tylko Diagnostyka raportów dla plików otwartych w edytorze**
+- **Sugeruj możliwe udoskonalenia, które nie są poprawkami**
 
-## <a name="virtual-projects-in-solution-explorer"></a>Projekty wirtualne w Eksploratorze rozwiązań
+## <a name="virtual-projects-in-solution-explorer"></a>Projekty wirtualne w Eksplorator rozwiązań
 
-Te opcje pozwalają wybrać, czy do wyświetlenia projekty wirtualne, gdy rozwiązanie jest załadowany lub nie załadowano.
+Te opcje pozwalają zdecydować, czy mają być wyświetlane projekty wirtualne w przypadku załadowania lub załadowania rozwiązania.
 
 ## <a name="compile-on-save"></a>Kompiluj przy zapisywaniu
 
-Te opcje określają, czy pliki TypeScript, które nie są częścią projektu automatycznie są kompilowane. Zaznacz pole wyboru, a następnie wybierz typ generacji kodu do użycia.
+Te opcje określają, czy pliki TypeScript, które nie są częścią projektu, są kompilowane automatycznie. Zaznacz pole wyboru, a następnie wybierz typ generowania kodu, który ma być używany.
 
-### <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+### <a name="uielement-list"></a>Lista elementów UIElement
 
 - **Użyj generowania kodu AMD dla modułów, które nie są częścią projektu**
-- **Użyj CommonJS generowanie kodu dla modułów, które nie są częścią projektu**
-- **Użyj generowania kodu wyjścia dla modułów, które nie są częścią projektu**
-- **Użyj generowania kodu systemu dla modułów, które nie są częścią projektu**
+- **Użyj generowania kodu CommonJS dla modułów, które nie są częścią projektu**
+- **Użyj generowania kodu UMD dla modułów, które nie są częścią projektu**
+- **Użyj generowania kodu systemowego dla modułów, które nie są częścią projektu**
 - **Użyj generowania kodu ES2015 dla modułów, które nie są częścią projektu**
 
-## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>W wersji ECMAScript dla plików, które nie są częścią projektu
+## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>Wersja języka ECMAScript dla plików, które nie są częścią projektu
 
-Te opcje można wybrać wersję ECMAScript dla plików, które nie są częścią projektu. Możesz wybrać między **ECMAScript 3**, **ECMAScript 5**, lub **ECMAScript 6**.
+Te opcje umożliwiają wybranie wersji języka ECMAScript dla plików, które nie są częścią projektu. Można wybrać między **ECMAScript 3**, **ECMAScript 5**lub **ECMAScript 6**.
 
-## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>Użyciu emisji JSX dla plików TSX, które nie są częścią projektu
+## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>JSX Emituj dla plików TSX, które nie są częścią projektu
 
-Te opcje określają, w jaki sposób traktuje pliki TypeScript, które nie są częścią projektu w edytorze.
+Te opcje określają, jak edytor traktuje pliki TypeScript, które nie są częścią projektu.
 
-### <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+### <a name="uielement-list"></a>Lista elementów UIElement
 
 |Opcja|Opis|
 |------------|-----------------|
-|**Platforma react**|Gdy ta opcja jest zaznaczona, Edytor kodu emituje *js* rozszerzenie pliku.|
-|**Preserve**|Gdy ta opcja jest zaznaczona, Edytor kodu, elementy JSX jako część danych wyjściowych i emituje *jsx* rozszerzenie pliku.|
+|**Platforma reagowania**|Gdy ta opcja jest zaznaczona, Edytor kodu emituje rozszerzenie pliku *. js* .|
+|**Preserve**|Gdy ta opcja jest zaznaczona, Edytor kodu utrzymuje JSX jako część danych wyjściowych i emituje rozszerzenie pliku *. JSX* .|
 
 ## <a name="see-also"></a>Zobacz także
 

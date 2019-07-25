@@ -1,6 +1,7 @@
 ---
 title: 'Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)'
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -9,48 +10,48 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549336"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461510"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)
 
-Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skryptów, makr lub innych działań jako część procesu kompilacji. Zdarzenia prekompilacyjnego występują przed kompilacji; zdarzenia postkompilacyjnego występują po kompilacji.
+Zdarzenia kompilacji w Visual Basic mogą służyć do uruchamiania skryptów, makr lub innych akcji w ramach procesu kompilacji. Zdarzenia przed kompilacją są wykonywane przed kompilacją; zdarzenia po kompilacji występują po kompilacji.
 
-Tworzenie zdarzenia są określone w **zdarzenia kompilacji** dostępne okno dialogowe **skompilować** strony **projektanta projektu**.
+Zdarzenia kompilacji są określone w oknie dialogowym **zdarzenia kompilacji** dostępne na stronie **kompilacja** **projektanta projektu**.
 
 > [!NOTE]
-> Visual Basic Express nie obsługuje zapis zdarzeń kompilacji. Jest to obsługiwane tylko w przypadku pełnego produktu Visual Studio.
+> Visual Basic Express nie obsługuje wprowadzania zdarzeń kompilacji. Jest to obsługiwane tylko w pełnym produkcie Visual Studio.
 
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>Jak określić zdarzenia sprzed kompilacji i po kompilacji
+## <a name="how-to-specify-pre-build-and-post-build-events"></a>Jak określić zdarzenia przed kompilacją i po kompilacji
 
-### <a name="to-specify-a-build-event"></a>Aby określić zdarzenia kompilacji
+### <a name="to-specify-a-build-event"></a>Aby określić zdarzenie kompilacji
 
 1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
-2. Kliknij przycisk **skompilować** kartę.
+2. Kliknij kartę **kompilacja** .
 
-3. Kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.
+3. Kliknij przycisk **Kompiluj zdarzenia** , aby otworzyć okno dialogowe **zdarzenia kompilacji** .
 
-4. Wprowadź argumenty wiersza polecenia dla akcji kompilacji przed lub po kompilacji, a następnie kliknij przycisk **OK**.
-
-    > [!NOTE]
-    > Dodaj `call` instrukcji przed poleceniami wszystkich wykonywanych po kompilacji, które są uruchamiane *.bat* plików. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
+4. Wprowadź argumenty wiersza polecenia dla akcji przed kompilacją lub po kompilacji, a następnie kliknij przycisk **OK**.
 
     > [!NOTE]
-    > Jeśli zdarzenia sprzed kompilacji lub po kompilacji nie zostanie ukończone pomyślnie, możesz zakończyć działanie kompilacji przez akcję zdarzenia zakończyć pracę z kodem niż zero (0), co oznacza pomyślne akcji.
+    > Dodaj instrukcję przed wszystkimi poleceniami po kompilacji, które uruchamiają pliki *. bat.* `call` Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Przykład: Jak zmienić informacje manifestu za pomocą zdarzenia mające miejsce po kompilacji
+    > [!NOTE]
+    > Jeśli wydarzenie przed kompilacją lub po kompilacji nie zakończy się pomyślnie, możesz przerwać kompilację, aby zakończyć działanie zdarzenia z kodem innym niż zero (0), co oznacza pomyślne wykonanie akcji.
 
-Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu operacyjnego w aplikacji manifestu za pomocą *.exe* polecenia wywoływane z zdarzenia postkompilacyjnego ( *. exe.manifest* pliku w projekcie katalog). Wersja minimalna wersja systemu operacyjnego jest Czteroczęściowy numer, takich jak 4.10.0.0. Aby to zrobić, polecenia zmieni `<dependentOS>` sekcji manifestu:
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Przykład: Jak zmienić informacje manifestu przy użyciu zdarzenia po kompilacji
+
+Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjnego w manifeście aplikacji przy użyciu polecenia *. exe* wywoływanego z zdarzenia po kompilacji (plik *. exe. manifest* w katalogu projektu). Minimalna wersja systemu operacyjnego to czterocyfrowy numer, taki jak 4.10.0.0. W tym celu polecenie zmieni `<dependentOS>` sekcję manifestu:
 
 ```xml
 <dependentOS>
@@ -60,13 +61,13 @@ Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu op
 </dependentOS>
 ```
 
-### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Aby utworzyć polecenie .exe, aby zmienić manifest aplikacji
+### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Aby utworzyć polecenie. exe w celu zmiany manifestu aplikacji
 
-1. Utwórz aplikację konsolową dla polecenia. Z **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.
+1. Utwórz aplikację konsolową dla polecenia. W menu **plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **projekt**.
 
-2. W **nowy projekt** dialogowym **języka Visual Basic** węzła, wybierz opcję **Windows** a następnie **aplikację Konsolową** szablonu. Nadaj projektowi nazwę `ChangeOSVersionVB`.
+2. W oknie dialogowym **Nowy projekt** w węźle **Visual Basic** wybierz pozycję **Windows** , a następnie szablon **aplikacja konsoli** . Nadaj nazwę projektowi `ChangeOSVersionVB`.
 
-3. W *Module1.vb*, Dodaj następujący wiersz do drugiego `Imports` instrukcji w górnej części pliku:
+3. W *Module1. vb*Dodaj następujący wiersz do innych `Imports` instrukcji w górnej części pliku:
 
    ```vb
    Imports System.Xml
@@ -115,48 +116,48 @@ Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu op
    End Sub
    ```
 
-   Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżką do manifestu aplikacji (czyli folderu, w którym proces kompilacji tworzy manifest, zwykle  *\<nazwa_projektu > .publish*). Drugi argument jest nowa wersja systemu operacyjnego.
+   Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżką do manifestu aplikacji (czyli folder, w którym proces kompilacji tworzy manifest, zazwyczaj  *\<ProjectName >. publish*). Drugi argument to nowa wersja systemu operacyjnego.
 
 5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
-6. Kopiuj *.exe* plik do katalogu, takie jak *C:\TEMP\ChangeOSVersionVB.exe*.
+6. Skopiuj plik *. exe* do katalogu, takiego jak *C:\TEMP\ChangeOSVersionVB.exe*.
 
-   Następnie wywołaj to polecenie zdarzenie po kompilacji, aby zmienić manifest aplikacji.
+   Następnie Wywołaj to polecenie w zdarzeniu po kompilacji, aby zmienić manifest aplikacji.
 
-### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Aby wywołać zdarzenie po kompilacji, aby zmienić manifest aplikacji
+### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Aby wywołać zdarzenie po kompilacji w celu zmiany manifestu aplikacji
 
-1. Tworzenie aplikacji Windows dla projektu, które mają zostać opublikowane. Z **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.
+1. Utwórz aplikację systemu Windows dla projektu do opublikowania. W menu **plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **projekt**.
 
-2. W **nowy projekt** dialogowym **języka Visual Basic** węzła, wybierz opcję **pulpitu Windows** a następnie **aplikacja formularzy Windows** szablonu. Nadaj projektowi nazwę `VBWinApp`.
-3. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+2. W oknie dialogowym **Nowy projekt** w węźle **Visual Basic** wybierz pozycję **Windows Desktop** , a następnie szablon **aplikacji Windows Forms** . Nadaj nazwę projektowi `VBWinApp`.
+3. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
-4. W **projektanta projektu**, przejdź do **Publikuj** strony, a następnie ustaw **publikowania lokalizacji** do *C:\TEMP*.
+4. W **projektancie projektu**przejdź do strony **Publikowanie** i ustaw **lokalizację publikowania** na *C:\Temp*.
 
-5. Opublikuj projekt, klikając **Publikuj teraz**.
+5. Opublikuj projekt, klikając pozycję **Opublikuj teraz**.
 
-     Plik manifestu zostanie utworzone i umieścić w *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Aby wyświetlić manifest, kliknij prawym przyciskiem myszy plik, a następnie kliknij przycisk **Otwórz za pomocą**, następnie kliknij przycisk **wybierz program, z listy**, a następnie kliknij przycisk **Notatnik**.
+     Plik manifestu zostanie skompilowany i umieszczony w *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Aby wyświetlić manifest, kliknij prawym przyciskiem myszy plik, a następnie kliknij polecenie **Otwórz za pomocą**, a następnie kliknij pozycję **Wybierz program z listy**, a następnie kliknij przycisk **Notatnik**.
 
-     Wyszukaj w pliku `<osVersionInfo>` elementu. Na przykład może być wersji:
+     Wyszukaj w pliku `<osVersionInfo>` element. Na przykład wersja może być:
 
     ```xml
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. W **projektanta projektu**, przejdź do **skompilować** kartę, a następnie kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.
+6. W **projektancie projektu**przejdź do karty **kompilacja** , a następnie kliknij przycisk **Kompiluj zdarzenia** , aby otworzyć okno dialogowe **zdarzenia kompilacji** .
 
-7. W **wiersz polecenia zdarzenia po kompilacji** wprowadź następujące polecenie:
+7. W polu **wiersz polecenia zdarzenia po kompilacji** wprowadź następujące polecenie:
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     Podczas tworzenia projektu, to polecenie zmieni się w manifeście aplikacji wersja minimalna wersja systemu operacyjnego na 5.1.2600.0.
+     Podczas kompilowania projektu to polecenie zmieni minimalną wersję systemu operacyjnego w manifeście aplikacji na 5.1.2600.0.
 
-     `$(TargetPath)` — Makro określa pełną ścieżkę do pliku wykonywalnego tworzona. W związku z tym *.manifest $(TargetPath)* określą manifestem aplikacji utworzonym w *bin* katalogu. Publikowanie skopiuje tego manifestu do lokalizacji publikowania, które zostały ustawione wcześniej.
+     `$(TargetPath)` Makro wyraża pełną ścieżkę do tworzonego pliku wykonywalnego. W związku z tym *$ (TargetPath). manifest* określi manifest aplikacji utworzony w katalogu *bin* . Opublikowanie spowoduje skopiowanie tego manifestu do lokalizacji publikowania, która została ustawiona wcześniej.
 
-8. Opublikuj projekt ponownie. Przejdź do **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.
+8. Opublikuj projekt ponownie. Przejdź do strony **Publikowanie** , a następnie kliknij pozycję **Opublikuj teraz**.
 
-     Ponownie wyświetlić manifest. Aby wyświetlić manifest, przejdź do katalogu publikowania, kliknij prawym przyciskiem myszy plik, a następnie kliknij przycisk **Otwórz za pomocą** i następnie **wybierz program, z listy**, a następnie kliknij przycisk **Notatnik**.
+     Ponownie Wyświetl manifest. Aby wyświetlić manifest, przejdź do katalogu publikowania, kliknij plik prawym przyciskiem myszy i kliknij polecenie **Otwórz za pomocą** , a następnie **Wybierz program z listy**, a następnie kliknij przycisk **Notatnik**.
 
-     Wersja powinien mieć teraz treść:
+     Wersja powinna teraz zostać odczytana:
 
     ```xml
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
@@ -166,5 +167,5 @@ Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu op
 
 - [Strona kompilowania, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md)
-- [Okno dialogowe wiersz polecenia zdarzenia/po kompilacji — zdarzenie prekompilacyjne](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Instrukcje: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [Zdarzenie przed kompilacją/wiersz polecenia zdarzenia po kompilacji](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Instrukcje: Określ zdarzenia kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md)

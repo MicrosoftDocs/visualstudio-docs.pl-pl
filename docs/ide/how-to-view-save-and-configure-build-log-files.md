@@ -1,70 +1,70 @@
 ---
-title: 'Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji | Microsoft Docs'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e40f414b3b3ea6bc151ef036deb0b5d80464ba46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429148"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415573"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 
-Po skompilowaniu projektu w środowisku IDE programu Visual Studio można wyświetlić informacje o tej kompilacji w **dane wyjściowe** okna. Za pomocą tych informacji, można na przykład rozwiązywania problemów dotyczących niepowodzenia kompilacji. 
+Po skompilowaniu projektu w środowisku IDE programu Visual Studio można wyświetlić informacje o tej kompilacji w oknie **danych wyjściowych** . Korzystając z tych informacji, można na przykład rozwiązać problem z niepowodzeniem kompilacji. 
 
-- Dla projektów języka C++, można również wyświetlić te same informacje w *.txt* pliku, który został utworzony i zapisywane automatycznie. 
+- W C++ przypadku projektów można także wyświetlić te same informacje w pliku *txt* , który został utworzony i zapisany automatycznie. 
 
-- W przypadku projektów kodu zarządzanego, można kliknąć w oknie danych wyjściowych kompilacji, a następnie naciśnij klawisz **Ctrl**+**S**. Visual Studio wyświetli monit o lokalizację do zapisania informacji z **dane wyjściowe** okna do *.txt* pliku. 
+- W przypadku projektów kodu zarządzanego można kliknąć w oknie kompilacja wyjściowa i nacisnąć **klawisze CTRL**+**S**. Program Visual Studio poprosi o lokalizację, aby zapisać informacje z okna **danych wyjściowych** w pliku *txt* . 
 
-Aby określić, jakiego rodzaju informacje mają być wyświetlane dotyczące każdej kompilacji umożliwia także środowiska IDE.
+Możesz również użyć IDE, aby określić, jakiego rodzaju informacje mają być wyświetlane dla każdej kompilacji.
 
-Jeśli tworzysz dowolny rodzaj projektu przy użyciu programu MSBuild, możesz utworzyć *.txt* plik, aby zapisać informacje o kompilacji. Aby uzyskać więcej informacji, zobacz [dzienniki kompilacji Uzyskaj](../msbuild/obtaining-build-logs-with-msbuild.md).
+W przypadku kompilowania dowolnego rodzaju projektu przy użyciu programu MSBuild można utworzyć plik *txt* , aby zapisać informacje o kompilacji. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
 
-## <a name="to-view-the-build-log-file-for-a-c-project"></a>Aby wyświetlić plik dziennika kompilacji dla projektu w języku C++
+## <a name="to-view-the-build-log-file-for-a-c-project"></a>Aby wyświetlić plik dziennika kompilacji dla C++ projektu
 
-1. W **Eksplorator Windows** lub **Eksploratora plików**, otwórz następujący plik:  *\\...\Visual Studio \<wersji\>\Projects\\ < nazwa_projektu\>\\< nazwa_projektu\>\Debug\\< nazwa_projektu\>txt*
+1. W **Eksploratorze Windows** lub **Eksploratorze plików**Otwórz następujący plik:  *\\. ..\Visual Studio \<w wersji\>\Projects\\<\\ProjectName <\> ProjectName\>\debug.\\<ProjectName\>. txt*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Aby utworzyć plik dziennika kompilacji dla projektu kodu zarządzanego
 
-1. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
+1. Na pasku menu wybierz polecenie **Kompiluj** > **kompilację rozwiązania**.
 
-2. W **dane wyjściowe** kliknij gdzieś w tekście.
+2. W oknie **dane wyjściowe** kliknij gdziekolwiek w tekście.
 
-3. Naciśnij klawisz **Ctrl**+**S**.
+3. Naciśnij **klawisze CTRL**+**S**.
 
-   Visual Studio wyświetli monit dla lokalizacji zapisać dane wyjściowe kompilacji.
+   Program Visual Studio poprosi o lokalizację, w której mają zostać zapisane dane wyjściowe kompilacji.
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Aby zmienić ilość informacji zawartych w dzienniku kompilacji
 
 1. Na pasku menu wybierz **narzędzia** > **opcje**.
 
-2. Na **projekty i rozwiązania** wybierz **kompilowanie i uruchamianie** strony.
+2. Na stronie **projekty i rozwiązania** wybierz stronę **kompilacja i uruchomienie** .
 
-3. W **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** , wybierz jedną z następujących wartości, a następnie wybierz **OK** przycisku.
+3. Na liście **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** wybierz jedną z następujących wartości, a następnie wybierz przycisk **OK** .
 
     |Poziom szczegółowości|Opis|
     | - |-----------------|
-    |**cichy**|Wyświetla podsumowanie kompilacji tylko.|
-    |**Minimalny**|Wyświetla podsumowanie kompilacji i błędy, ostrzeżenia i komunikaty, które są podzielone jako bardzo ważne.|
-    |**Normalny**|Wyświetla podsumowanie kompilacji; błędy, ostrzeżenia i komunikaty, które są klasyfikowane jako bardzo ważne; i główne kroki kompilacji. Taki poziom szczegółowości będzie najczęściej używany.|
-    |**Szczegółowe**|Wyświetla podsumowanie kompilacji; błędy, ostrzeżenia i komunikaty, które są klasyfikowane jako bardzo ważne; wszystkie kroki kompilacji; i komunikatów, które są podzielone od normalnych znaczenie.|
-    |**Diagnostyka**|Wyświetla wszystkie dane, które jest dostępne dla kompilacji. Taki poziom szczegółowości można użyć do debugowania problemów ze skryptami niestandardowej kompilacji i inne problemy z kompilacją.|
+    |**Otoczeniu**|Wyświetla podsumowanie tylko kompilacji.|
+    |**Mniejsze**|Wyświetla podsumowanie kompilacji i błędów, ostrzeżeń i komunikatów, które są skategoryzowane jako bardzo ważne.|
+    |**Typow**|Wyświetla podsumowanie kompilacji; błędy, ostrzeżenia i komunikaty, które są klasyfikowane jako bardzo ważne; i główne kroki kompilacji. Ten poziom szczegółów będzie używany najczęściej.|
+    |**Szczegółowości**|Wyświetla podsumowanie kompilacji; błędy, ostrzeżenia i komunikaty, które są klasyfikowane jako bardzo ważne; wszystkie kroki kompilacji; i wiadomości, które są podzielone na normalne znaczenie.|
+    |**Diagnostyce**|Wyświetla wszystkie dane, które są dostępne dla kompilacji. Możesz użyć tego poziomu szczegółowości, aby pomóc w debugowaniu problemów z niestandardowymi skryptami kompilacji i innymi problemami z kompilacją.|
 
-     Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje, projekty i rozwiązania, kompilowanie i uruchamianie](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) i <xref:Microsoft.Build.Framework.LoggerVerbosity>.
+     Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) oraz <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Należy przebudować projekt, aby zmiany zaczęły obowiązywać **dane wyjściowe** okna (wszystkie projekty) i  *\<nazwa_projektu > .txt* pliku (tylko dla projektów C++).
+    > Musisz ponownie skompilować projekt, aby zmiany zaczęły obowiązywać w oknie **danych wyjściowych** (wszystkie projekty) iC++  *\<pliku ProjectName >. txt* (tylko projekty).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Twórz i czyść projekty i rozwiązania w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)
