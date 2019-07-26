@@ -54,9 +54,9 @@
       items:
         - name: 'Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 'Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów'
+        - name: 'Przewodnik: Programowanie oparte na testach'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Korzystanie z elementów członkowskich Microsoft.VisualStudio.TestTools.UnitTesting w testach jednostkowych
+        - name: Korzystanie z interfejsu API MSTest w testach jednostkowych
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Korzystanie z klas potwierdzeń
           href: using-the-assert-classes.md
@@ -74,11 +74,11 @@
           items:
             - name: Tworzenie testu jednostkowego opartego na danych
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 'Przewodnik: Definiowanie źródła danych przy użyciu pliku konfiguracji'
+            - name: Definiowanie źródła danych przy użyciu pliku konfiguracji
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Testy jednostkowe metod ogólnych
           href: unit-tests-for-generic-methods.md
-        - name: Konfigurowanie testów jednostkowych pod kątem starszej wersji programu .NET Framework
+        - name: Konfigurowanie testów jednostkowych pod kątem starszej wersji programu .NET
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: Testy jednostkowe dla kodu w języku C/C++
       items:

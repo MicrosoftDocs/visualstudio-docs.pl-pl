@@ -1,6 +1,7 @@
 ---
 title: Strona kompilacji, Projektant projektu (C#)
 ms.date: 06/20/2017
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -13,91 +14,135 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791672"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461454"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
-Użyj **kompilacji** strony **projektanta projektu** do określania właściwości konfiguracji kompilacji projektu. Ten temat dotyczy [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] wyłącznie dla projektów.
 
-Aby uzyskać dostęp do **kompilacji** wybierz węzeł projektu (nie **rozwiązania** węźle) w **Eksploratora rozwiązań**. Następnie wybierz **widoku**, **stron właściwości** w menu. Gdy pojawi się w Projektancie projektu, wybierz **kompilacji** kartę.
+Użyj strony **kompilacja** **projektanta projektu** , aby określić właściwości konfiguracji kompilacji projektu. Ta strona ma zastosowanie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tylko do projektów.
+
+Aby uzyskać dostęp do strony **kompilacja** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz **Widok**, **strony właściwości** w menu. Gdy zostanie wyświetlony Projektant projektu, wybierz kartę **kompilacja** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="configuration-and-platform"></a>Konfiguracja i platforma
+
 Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.
 
 > [!NOTE]
-> Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. Dlatego te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Zestaw debugowania i zwalniania konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md).
+> W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. W związku z tym te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md)debugowania i wydania.
 
-**Konfiguracja** określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Te ustawienia mogą mieć **aktywna (debugowanie)** (to jest wartość domyślna), **debugowania**, **wersji**, lub **wszystkie konfiguracje**.
+**Konfiguracja**
 
-**Platforma** określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawieniem domyślnym jest **aktywna (dowolny procesor CPU)** . Możesz zmienić aktywną platformę przy użyciu **programu Configuration Manager**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).
+Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia mogą być **aktywne (Debugowanie)** (jest to ustawienie domyślne), **debugowanie**, **wydanie**lub **wszystkie konfiguracje**.
+
+**Platformach**
+
+Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienie domyślne jest **aktywne (dowolny procesor)** . Możesz zmienić aktywną platformę przy użyciu **Configuration Manager**. Aby uzyskać więcej informacji, zobacz [jak: Utwórz i Edytuj konfiguracje](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Ogólne
-Poniższe opcje umożliwiają skonfigurowanie kilku ustawień kompilatora języka C#.
 
-**Symbole kompilacji warunkowej** określa symbole, na którym ma zostać wykonana zostanie kompilacja warunkowa. Oddziel symbole średnikiem (";"). Aby uzyskać więcej informacji, zobacz [/ define (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
+Poniższe opcje umożliwiają skonfigurowanie kilku C# ustawień kompilatora.
 
-**Zdefiniuj stałą DEBUG** definiuje DEBUG jako symbol w kodzie źródłowym wszystkich plików w aplikacji. Wybranie tej opcji jest równoważne użyciu `/define:DEBUG` opcji wiersza polecenia.
+**Symbole kompilacji warunkowej**
 
-**Zdefiniuj stałą TRACE** definiuje TRACE jako symbol w kodzie źródłowym wszystkich plików w aplikacji. Wybranie tej opcji jest równoważne użyciu `/define:TRACE` opcji wiersza polecenia.
+Określa symbole, na których ma zostać wykonana Kompilacja warunkowa. Oddzielaj symbole średnikami (";"). Aby uzyskać więcej informacji, zobacz [/defineC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
 
-**Platforma docelowa** Określa procesor, która ma zostać użyty przez plik wyjściowy. Wybierz **x86** dla dowolnej 32-bitowym procesorze zgodnego z Intel, wybierz **x64** dla dowolnego 64-bitowy procesor zgodnego z Intel, wybierz **ARM** dla procesorów ARM lub wybierz  **Dowolny procesor CPU** do określenia, czy akceptowalny jest każdy procesor. **Dowolny procesor CPU** jest wartością domyślną dla projektów, ponieważ umożliwia aplikacji, aby działała na najszerszym zakresie sprzętu.
+**Zdefiniuj stałą DEBUG**
 
-Aby uzyskać więcej informacji, zobacz [/platform (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+Definiuje debugowanie jako symbol we wszystkich plikach kodu źródłowego w aplikacji. Wybranie tego jest równoważne użyciu `/define:DEBUG` opcji wiersza polecenia.
 
-**Preferuj 32-bitowe** Jeśli **Preferuj 32 bitowe** pole wyboru jest zaznaczone, aplikacja działa jako aplikacja 32-bitowa w 32-bitowych i 64-bitowych wersjach systemu Windows. Jeśli pole wyboru jest wyczyszczone, aplikacja działa jako aplikacja 32-bitowego na 32-bitowe wersje systemu Windows i jako aplikacji 64-bitowych w 64-bitowych wersjach systemu Windows.
+**Zdefiniuj stałą TRACE**
 
-W przypadku uruchomienia aplikacji jako aplikacji 64-bitowej podwaja się rozmiar wskaźnika, i z innych bibliotek, które są wyłącznie 32-bitowe, mogą wystąpić problemy ze zgodnością. Jest to przydatne do uruchamiania aplikacji 64-bitowych, tylko wtedy, gdy potrzebuje więcej niż 4 GB pamięci lub 64-bitowe instrukcje stanowią istotnie poprawiającą wydajność.
+Definiuje śledzenie jako symbol we wszystkich plikach kodu źródłowego w aplikacji. Wybranie tego jest równoważne użyciu `/define:TRACE` opcji wiersza polecenia.
+
+**Obiekt docelowy platformy**
+
+Określa procesor, który ma być przeznaczony dla pliku wyjściowego. Wybierz opcję **x86** dla dowolnego 32-bitowego procesora zgodnego z technologią Intel, wybierz **x64** dla dowolnego 64-bitowego procesora zgodnego z technologią Intel, wybierz pozycję **ARM** dla procesorów ARM lub wybierz **dowolny** procesor, aby określić, że każdy z procesorów jest akceptowalny. **Każdy procesor** jest wartością domyślną dla projektów, ponieważ umożliwia uruchamianie aplikacji na najszerszym zakresie sprzętu.
+
+Aby uzyskać więcej informacji, zobacz [/platformC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+
+**Preferuj 32-bitowe**
+
+Jeśli pole wyboru **Prefer32-bitowy** jest zaznaczone, aplikacja działa jako aplikacja 32-bitowa na 32-bitowej i 64-bitowej wersji systemu Windows. Jeśli to pole wyboru jest wyczyszczone, aplikacja działa jako aplikacja 32-bitowa w 32-bitowych wersjach systemu Windows i jako aplikacja 64-bit w systemie 64-bitowe wersje systemu Windows.
+
+Jeśli aplikacja jest uruchamiana jako aplikacja 64-bitowa, rozmiar wskaźnika podwaja się i problemy ze zgodnością mogą wystąpić w przypadku innych bibliotek, które są wyłącznie 32-bitowe. Warto uruchamiać aplikacje 64-bitowe tylko wtedy, gdy potrzebują więcej niż 4 GB pamięci lub instrukcje 64-bitowe zapewniają znaczący wzrost wydajności.
 
 To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następujące warunki:
 
-- Na **Stroka kompilacji**, **platformę docelową** listy jest ustawiona na **dowolny Procesor**.
+- Na **stronie kompilacja**na liście **docelowy platformy** jest ustawiona wartość **dowolny procesor CPU**.
 
-- Na **strony aplikacji**, **typ danych wyjściowych** lista określa, że projekt jest aplikacją.
+- Na **stronie aplikacja**na liście **typ wyjścia** określa, że projekt jest aplikacją.
 
-- Na **strony aplikacji**, **platformę docelową** lista określa .NET Framework 4.5.
+- Na **stronie aplikacja**lista **platform docelowych** określa .NET Framework 4,5.
 
-**Zezwalaj na niebezpieczny kod** umożliwia kod, który używa [niebezpieczne](/dotnet/csharp/language-reference/keywords/unsafe) — słowo kluczowe, aby skompilować. Aby uzyskać więcej informacji, zobacz [/ unsafe (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
+**Zezwalaj na niebezpieczny kod**
 
-**Optymalizuj kod** Włącza lub wyłącza optymalizacje wykonywane przez kompilator, aby plik wyjściowy był mniejszy, szybszy i bardziej wydajne. Aby uzyskać więcej informacji, zobacz [/ optimize (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
+Zezwala na kompilowanie kodu [](/dotnet/csharp/language-reference/keywords/unsafe) , który używa niebezpiecznego słowa kluczowego. Aby uzyskać więcej informacji, zobacz [/UNSAFEC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
+
+**Optymalizuj kod**
+
+Włącza lub wyłącza optymalizacje wykonywane przez kompilator, aby plik wyjściowy był mniejszy, szybszy i bardziej wydajny. Aby uzyskać więcej informacji, zobacz [/OptimizeC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
 
 ## <a name="errors-and-warnings"></a>Błędy i ostrzeżenia
-Poniższe ustawienia są używane do skonfigurowania opcji błędów i ostrzeżeń dla procesu kompilacji.
 
-**Poziom ostrzeżeń** określa poziom wyświetlania ostrzeżeń kompilatora. Aby uzyskać więcej informacji, zobacz [/ warn (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).
+Poniższe ustawienia służą do konfigurowania opcji błędu i ostrzeżenia dla procesu kompilacji.
 
-**Pomijanie ostrzeżeń** blokuje zdolność kompilatora do generowania co najmniej jedno ostrzeżenie. Oddziel wiele numerów ostrzeżeń przecinkami lub średnikami. Aby uzyskać więcej informacji, zobacz [/nowarn (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).
+**Poziom ostrzeżeń**
+
+Określa poziom wyświetlania ostrzeżeń kompilatora. Aby uzyskać więcej informacji, zobacz [/warnC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).
+
+**Pomiń ostrzeżenia**
+
+Blokuje możliwość generowania co najmniej jednego ostrzeżenia przez kompilator. Oddziel wiele numerów ostrzeżeń przecinkami lub średnikami. Aby uzyskać więcej informacji, zobacz [/nowarnC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).
 
 ## <a name="treat-warnings-as-errors"></a>Traktuj ostrzeżenia jako błędy
-Poniższe ustawienia są używane do określania, które ostrzeżenia są traktowane jako błędy. Wybierz jedną z poniższych opcji, aby wskazać, pod jakimi warunkami ma zostać zwrócony błąd, jeśli kompilacja napotka ostrzeżenie. Aby uzyskać więcej informacji, zobacz [/warnaserror (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**Brak** nie traktuje ostrzeżeń jako błędy.
+Poniższe ustawienia służą do określania, które ostrzeżenia są traktowane jako błędy. Wybierz jedną z następujących opcji, aby wskazać, w których warunkach ma zostać zwrócony błąd, gdy kompilacja napotka ostrzeżenie. Aby uzyskać więcej informacji, zobacz [/warnaserrorC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**Określone ostrzeżenia** traktuje określone ostrzeżenia jako błędy. Oddziel wiele numerów ostrzeżeń przecinkami lub średnikami.
+**Brak**
 
-**Wszystkie** traktuje wszystkie ostrzeżenia jako błędy.
+Nie traktuje żadnych ostrzeżeń jako błędów.
+
+**Określone ostrzeżenia**
+
+Traktuje określone ostrzeżenia jako błędy. Oddziel wiele numerów ostrzeżeń przecinkami lub średnikami.
+
+**Całą**
+
+Traktuje wszystkie ostrzeżenia jako błędy.
 
 ## <a name="output"></a>Dane wyjściowe
-Następujące ustawienia są używane do skonfigurowania opcji wyjściowych dla procesu kompilacji.
 
-**Ścieżka wyjściowa** Określa położenie plików wyjściowych dla tej konfiguracji projektu. Wprowadź ścieżkę produktu kompilacji w tym polu lub wybierz **Przeglądaj** przycisk, aby określić ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzasz ścieżkę bezwzględną, jego zostanie zapisana jako względna. Domyślna ścieżka to bin\Debug lub bin\Release\\.
+Poniższe ustawienia służą do konfigurowania opcji danych wyjściowych dla procesu kompilacji.
 
-Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. **Kompilacji** polecenia **debugowania** menu (F5) umieszcza kompilację w lokalizacji debugowania bez względu na to **ścieżkę wyjściową** określisz. Jednak **kompilacji** polecenia **kompilacji** menu umieszcza go w miejscu określonym przez użytkownika. Aby uzyskać więcej informacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../../ide/understanding-build-configurations.md).
+**Ścieżka wyjściowa**
 
-**Plik dokumentacji XML** Określa nazwę pliku do dokumentacji, które będą przetwarzane komentarze. Aby uzyskać więcej informacji, zobacz [/doc (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option).
+Określa lokalizację plików wyjściowych dla konfiguracji projektu. Wprowadź ścieżkę do danych wyjściowych kompilacji w tym polu lub wybierz przycisk **Przeglądaj** , aby określić ścieżkę. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug lub bin\Release\\.
 
-**Zarejestruj dla współdziałania COM** wskazuje, że Twoją zarządzaną aplikacją udostępni obiektu COM (wywołalne opakowanie COM), który umożliwia obiektu COM na interakcję z Twoją zarządzaną aplikacją. **Typ danych wyjściowych** właściwość [strony aplikacji](../../ide/reference/application-page-project-designer-visual-basic.md) z **projektanta projektu** dla tej aplikacji musi być równa **biblioteki klas** w kolejność dla **Zarejestruj dla współdziałania COM** aby była dostępna właściwość. Aby uzyskać przykładową klasę, którą można umieścić w swojej [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] aplikacji i udostępniać jako obiekt COM, zobacz [klasa COM — przykład](/dotnet/csharp/programming-guide/interop/example-com-class).
+W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Polecenie **Build** z menu **Debuguj** (F5) umieści kompilację w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Build** z menu **kompilacja** umieszcza je w określonej lokalizacji. Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../../ide/understanding-build-configurations.md).
 
-**Generuj zestaw serializacji** Określa, czy kompilator będzie używał narzędzie generatora serializatora XML (Sgen.exe) do tworzenia zestawów serializacji XML. Zestawy serializacji mogą zwiększyć wydajność uruchamiania klasy <xref:System.Xml.Serialization.XmlSerializer> Jeśli ta klasa jest używana do serializacji typów w kodzie. Domyślnie ta opcja jest ustawiona na **automatycznie**, która określa, że zestawy serializacji będą generowane tylko wtedy, gdy używasz <xref:System.Xml.Serialization.XmlSerializer> do kodowania typów w kodzie do XML. **Wyłącz** Określa, że zestawy serializacji nigdy nie są generowane, niezależnie od tego, czy kod używa <xref:System.Xml.Serialization.XmlSerializer>. **Na** Określa, że zestawy serializacji zawsze będą generowane. Zestawy serializacji noszą `TypeName`. XmlSerializers.dll. Aby uzyskać więcej informacji, zobacz [narzędzie generatora serializatora XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+**Plik dokumentacji XML**
 
-**Zaawansowane** kliknij, aby wyświetlić [zaawansowane kompilacji okno dialogowe Ustawienia (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) okno dialogowe.
+Określa nazwę pliku, do którego zostaną przetworzone komentarze dokumentacji. Aby uzyskać więcej informacji, zobacz [/docC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option).
 
-## <a name="see-also"></a>Zobacz też
+**Rejestracja w celu współdziałania z modelem COM**
+
+Wskazuje, że aplikacja zarządzana uwidacznia obiekt COM (otoka COM, która jest wywoływana), która umożliwia obiektowi COM współpracujące z zarządzaną aplikacją. Właściwość **Typ danych wyjściowych** na [stronie aplikacji](../../ide/reference/application-page-project-designer-visual-basic.md) **projektanta projektu** dla tej aplikacji musi być ustawiona na wartość **Biblioteka klas** , aby właściwość **register dla elementu com** była dostępna. Aby zapoznać się z przykładową klasą, którą [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] można uwzględnić w aplikacji i uwidocznić jako obiekt com, zobacz [przykład klasy com](/dotnet/csharp/programming-guide/interop/example-com-class).
+
+**Generuj zestaw serializacji**
+
+Określa, czy kompilator będzie używać narzędzie XML Serializer Generator (Sgen. exe) do tworzenia zestawów serializacji XML. Zestawy serializacji mogą zwiększyć wydajność <xref:System.Xml.Serialization.XmlSerializer> uruchamiania, jeśli użyto tej klasy do serializacji typów w kodzie. Domyślnie ta opcja jest ustawiona na wartość **automatycznie**, co oznacza, że zestawy serializacji są generowane tylko wtedy, gdy używane <xref:System.Xml.Serialization.XmlSerializer> jest kodowanie typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to <xref:System.Xml.Serialization.XmlSerializer>, czy kod używa. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll. Aby uzyskać więcej informacji, zobacz [narzędzie XML Serializer Generator (Sgen. exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+
+**Zaawansowane**
+
+Kliknij, aby wyświetlić okno dialogowe [Zaawansowane ustawienia kompilacji (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) okna dialogowego.
+
+## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)
 - [Opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index)
