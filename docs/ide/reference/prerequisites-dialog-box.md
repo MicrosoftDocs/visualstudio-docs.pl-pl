@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fc9e728c409684d7b0160fcb521d7bc2a2aa1d
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 3ab3cb844f518ef5fae553010fe4a800c09d170a
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461717"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533387"
 ---
 # <a name="prerequisites-dialog-box"></a>Wstępnie wymagane składniki — Okno dialogowe
 
@@ -36,6 +36,9 @@ Aby uzyskać dostęp do okna dialogowego, wybierz węzeł projektu w **Eksplorat
 |**Pobierz wstępnie wymagane składniki z witryny sieci Web dostawcy składników**|Określa, że wstępnie wymagane składniki mają być instalowane z witryny sieci Web dostawcy. Jest to opcja domyślna.|
 |**Pobierz wstępnie wymagane składniki z tej samej lokalizacji co moja aplikacja**|Określa, że wstępnie wymagane składniki mają być instalowane z tej samej lokalizacji, w której znajduje się aplikacja. Spowoduje to skopiowanie wszystkich wstępnie wymaganych pakietów do lokalizacji publikowania. Aby opcja działała, składniki muszą się znajdować na komputerze deweloperskim.|
 |**Pobierz wstępnie wymagane składniki z następującej lokalizacji**|Określa, że wstępnie wymagane składniki mają być instalowane z wprowadzonej lokalizacji. Możesz użyć przycisku **Przeglądaj** , aby wybrać lokalizację.|
+
+> [!NOTE]
+> Aby uzyskać informacje na temat miejsca, w którym należy wprowadzić wymagania wstępne, zobacz [Tworzenie pakietów](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages)programu inicjującego.
 
 ## <a name="prerequisites-information"></a>Informacje o wymaganiach wstępnych
 

@@ -1,6 +1,6 @@
 ---
 title: Pierwsze spojrzenie na wdrażanie
-description: Poznaj opcje wdrażania aplikacji w programie Visual Studio.
+description: Dowiedz się więcej na temat opcji wdrażania aplikacji w programie Visual Studio.
 ms.custom: mvc
 ms.date: 01/29/2019
 ms.topic: quickstart
@@ -23,125 +23,129 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032558"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533357"
 ---
-# <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrażanie w programie Visual Studio
+# <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
-Wdrażanie aplikacji, usług lub składników, rozpowszechnianie ich w celu instalacji na innych komputerach, urządzeniach lub serwerów lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz. (Wiele typów aplikacji obsługuje inne narzędzia wdrażania takich jak wdrażanie z wiersza polecenia lub NuGet, które nie zostały opisane w tym miejscu).
+Przez wdrożenie aplikacji, usługi lub składnika, należy go rozesłać do instalacji na innych komputerach, urządzeniach lub serwerach lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz. (Wiele typów aplikacji obsługuje inne narzędzia do wdrażania, takie jak wdrażanie wiersza polecenia lub NuGet, które nie zostały opisane w tym miejscu).
 
-Zobacz, przewodniki Szybki Start i samouczków, aby uzyskać instrukcje krok po kroku wdrożenia. Aby uzyskać przegląd wszystkich opcji wdrażania, zobacz [jakie opcje publikowania są dla mnie najlepsza?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
+Zapoznaj się z przewodnikami Szybki Start i samouczkami, aby uzyskać instrukcje krok po kroku. Aby zapoznać się z omówieniem opcji wdrożenia, zobacz, [jakie opcje publikowania są odpowiednie dla mnie?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
-## <a name="deploy-to-local-folder"></a>Wdrażanie na folder lokalny
+## <a name="deploy-to-local-folder"></a>Wdróż w folderze lokalnym
 
-Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoczęcia wdrożenia etapowego, w którym inne narzędzie służy do wdrażania końcowego.
+Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoczęcia wdrożenia etapowego, w którym jest używane inne narzędzie do wdrożenia końcowego.
 
-- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, **Python**, i. **.NET Core**: Narzędzie publikowania do wdrożenia w lokalnym folderze. Opcje dostępne są zależne od typu aplikacji. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli wcześniej nie skonfigurowano żadnych profilów publikowania, musisz kliknąć **Utwórz nowy profil**.) Następnie wybierz pozycję **folderu**. Aby uzyskać więcej informacji, zobacz [wdrażanie w lokalnym folderze](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**i. **Rdzeń netto**: Użyj narzędzia do publikowania do wdrożenia w folderze lokalnym. Dokładne dostępne opcje zależą od typu aplikacji. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli nie skonfigurowano wcześniej żadnych profilów publikowania, należy kliknąć przycisk **Utwórz nowy profil**). Następnie wybierz **folder**. Aby uzyskać więcej informacji, zobacz [wdrażanie w folderze lokalnym](quickstart-deploy-to-local-folder.md).
 
-    ![Wybierz polecenie Publikuj](../deployment/media/quickstart-publish.png)
+    ![Wybierz pozycję Publikuj](../deployment/media/quickstart-publish.png)
 
-- **Windows desktop** możesz opublikować aplikację pulpitu Windows, w folderze za pomocą wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). Dla C++/CLR, zobacz [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dla języka C /C++, zobacz [wdrażanie aplikacji natywnych przy użyciu projektu instalacji](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Pulpit systemu Windows** Aplikację klasyczną systemu Windows można opublikować w folderze przy użyciu wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). Aby C++uzyskać więcej, zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dlaC++języka C/, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu Instalatora](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-- **ASP.NET**, **platformy ASP.NET Core**, **Python**, i **Node.js**: Publikowanie w usłudze Azure App Service lub Azure App Service dla systemu Linux (przy użyciu kontenerów) przy użyciu jednej z następujących metod.
+- **ASP.NET**, **ASP.NET Core**, **Python**i **Node. js**: Publikowanie w usłudze Azure App Service lub Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
 
-  - Ciągła (lub automatycznych) wdrożenia aplikacji, użyj DevOps platformy Azure za pomocą [potoki Azure](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+  - Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-  - Jednorazowe (lub ręczne) wdrożenia aplikacji, należy użyć **Publikuj** narzędzia w programie Visual Studio.
+  - W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio.
 
-  Do wdrożenia, który zapewnia dostosować konfigurację serwera, można również użyć **Publikuj** narzędzia do wdrażania aplikacji na maszynie wirtualnej platformy Azure.
+  W przypadku wdrażania, które zapewnia bardziej dostosowaną konfigurację serwera, można także użyć narzędzia do **publikowania** do wdrożenia aplikacji na maszynie wirtualnej platformy Azure.
 
-  Aby użyć **Publikuj** narzędzia, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) W oknie dialogowym publikowania wybierz **usługi App Service** lub **maszyn wirtualnych platformy Azure**, a następnie wykonaj kroki konfiguracji.
+  Aby użyć narzędzia do **publikowania** , kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań i wybierz polecenie **Publikuj**. (Jeśli wcześniej skonfigurowano wszystkie profile publikowania, należy kliknąć przycisk **Utwórz nowy profil**). W oknie dialogowym Publikowanie wybierz opcję **App Service** lub **Azure Virtual Machines**, a następnie postępuj zgodnie z procedurami konfiguracji.
 
-  ![Usługa Azure App Service wybierz](../deployment/media/quickstart-publish-azure.png "wybierz usługi Azure App Service")
+  ![Wybierz Azure App Service](../deployment/media/quickstart-publish-azure.png "Wybierz Azure App Service")
 
-  Począwszy od programu Visual Studio 2017 w wersji 15.7, można wdrażać aplikacje platformy ASP.NET Core **usługi App Service dla systemu Linux**.
+  Począwszy od programu Visual Studio 2017 w wersji 15,7, można wdrożyć aplikacje ASP.NET Core w **App Service dla systemu Linux**.
 
-  Dla aplikacji w języku Python, zobacz też [językiem Python — publikowanie w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+  W przypadku aplikacji w języku Python Zobacz również sekcję [Publikowanie w języku Python, aby uzyskać Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
-  Szybkie wprowadzenie, zobacz [Opublikuj na platformie Azure](quickstart-deploy-to-azure.md) i [publikowania w systemie Linux](quickstart-deploy-to-linux.md). Zobacz też [publikowanie aplikacji platformy ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Do wdrożenia przy użyciu narzędzia Git, zobacz [ciągłe wdrażanie platformy ASP.NET Core na platformie Azure przy użyciu narzędzia Git](/aspnet/core/publishing/azure-continuous-deployment).
+  Aby zapoznać się z krótkim wprowadzeniem, zobacz [Publikowanie na platformie Azure](quickstart-deploy-to-azure.md) i [Publikowanie w systemie Linux](quickstart-deploy-to-linux.md). Zobacz też temat [publikowanie aplikacji ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Aby uzyskać wdrożenie przy użyciu narzędzia Git, zobacz [ciągłe wdrażanie ASP.NET Core na platformie Azure za pomocą narzędzia Git](/aspnet/core/publishing/azure-continuous-deployment).
 
-  Aby uzyskać informacje na temat importowania profilu publikowania w usłudze Azure App Service w programie Visual Studio, zobacz [importowanie ustawień publikowania i wdrażanie na platformie Azure](../deployment/tutorial-import-publish-settings-azure.md).
+  Aby uzyskać informacje na temat importowania profilu publikowania z programu Azure App Service do programu Visual Studio, zobacz [Importowanie ustawień publikowania i wdrażanie na platformie Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
   > [!NOTE]
-  > Jeśli nie masz już konto platformy Azure, możesz to zrobić [Zarejestruj się tutaj](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
+  > Jeśli nie masz jeszcze konta platformy Azure, możesz [zarejestrować się tutaj](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-## <a name="publish-to-web-or-deploy-to-network-share"></a>Publikuj w sieci Web lub wdrożyć do udziału sieciowego
+## <a name="publish-to-web-or-deploy-to-network-share"></a>Publikowanie w Internecie lub wdrażanie w udziale sieciowym
 
-- **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, i **Python**: Narzędzie publikowania do wdrożenia w witrynie sieci Web przy użyciu protokołu FTP lub narzędzie Web Deploy. Aby uzyskać więcej informacji, zobacz [Wdrażanie witryny sieci web,](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node. js**i **Python**: Za pomocą narzędzia do publikowania można wdrożyć w witrynie sieci Web za pomocą protokołu FTP lub Web Deploy. Aby uzyskać więcej informacji, zobacz [wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md).
 
-    W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) W narzędziu do publikowania wybierz opcję ma i postępuj zgodnie z instrukcjami konfiguracji.
+    W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli wcześniej skonfigurowano wszystkie profile publikowania, należy kliknąć przycisk **Utwórz nowy profil**). W narzędziu do publikowania wybierz żądaną opcję i wykonaj kroki konfiguracji.
 
     ![Choose IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png)
 
-    Aby uzyskać informacje na temat importowania profilu publikowania w programie Visual Studio, zobacz [importowanie ustawień publikowania i wdrażanie w usługach IIS](../deployment/tutorial-import-publish-settings-iis.md).
+    Aby uzyskać informacje na temat importowania profilu publikowania w programie Visual Studio, zobacz [Importowanie ustawień publikowania i wdrażanie w usługach IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    Można także wdrożyć aplikacji ASP.NET i usług na wiele różnych sposobów. Aby uzyskać więcej informacji, zobacz [usług i aplikacji sieci web ASP.NET wdrażanie](http://www.asp.net/aspnet/overview/deployment).
+    Możesz również wdrożyć aplikacje i usługi ASP.NET na wiele innych sposobów. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji i usług sieci web ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Windows desktop** możesz opublikować aplikację pulpitu Windows, na serwerze sieci web lub w sieciowym udziale plików za pomocą wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). Dla C++/CLR, zobacz [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dla języka C /C++, zobacz [wdrażanie aplikacji natywnych przy użyciu projektu instalacji](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Pulpit systemu Windows** Można opublikować aplikację klasyczną systemu Windows na serwerze sieci Web lub sieciowym udziale plików przy użyciu wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). Aby C++uzyskać więcej, zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dlaC++języka C/, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu Instalatora](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
-## <a name="publish-to-microsoft-store"></a>Publikowanie Microsoft Store
+## <a name="publish-to-microsoft-store"></a>Publikuj w Microsoft Store
 
-W programie Visual Studio można utworzyć pakiety aplikacji do wdrożenia w Microsoft Store.
+W programie Visual Studio można tworzyć pakiety aplikacji do wdrożenia w Microsoft Store.
 
-- **UWP**: Można Tworzenie pakietu dla aplikacji i wdróż je przy użyciu elementów menu. Aby uzyskać więcej informacji, zobacz [pakietu aplikacji platformy uniwersalnej systemu Windows przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **PLATFORMY UWP**: Możesz spakować aplikację i wdrożyć ją za pomocą elementów menu. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji platformy UWP przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Tworzenie pakietu aplikacji](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows desktop**: Można wdrożyć Microsoft Store przy użyciu Desktop Bridge począwszy od programu Visual Studio 2017 w wersji 15.4. Aby to zrobić, Rozpocznij od utworzenia projekt pakietu aplikacji Windows. Aby uzyskać więcej informacji, zobacz [pakietu aplikacji klasycznej dla Microsoft Store (mostek pulpitu)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Pulpit systemu Windows**: Program można wdrożyć do Microsoft Store za pomocą mostka programu Desktop rozpoczynającego się w programie Visual Studio 2017 w wersji 15,4. Aby to zrobić, Zacznij od utworzenia projektu pakietu aplikacji systemu Windows. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji klasycznych dla Microsoft Store (mostek Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
-    ![Mostek pulpitu](../deployment/media/feature-tour-desktop-bridge.png)
+    ![Mostek Desktop](../deployment/media/feature-tour-desktop-bridge.png)
 
-## <a name="deploy-to-a-device-uwp"></a>Wdrażanie na urządzenia z systemem (Windows UWP)
+## <a name="deploy-to-a-device-uwp"></a>Wdrażanie na urządzeniu (platformy UWP)
 
-Jeśli wdrażasz aplikacji platformy uniwersalnej systemu Windows na potrzeby testowania na urządzeniu, zobacz [uruchamianie aplikacji platformy UWP na komputerze zdalnym w programie Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
+Jeśli wdrażasz aplikację platformy UWP do testowania na urządzeniu, zobacz [Uruchamianie aplikacji platformy UWP na maszynie zdalnej w programie Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="create-an-installer-package-windows-desktop"></a>Tworzenie pakietu Instalatora (Windows wersja klasyczna)
+## <a name="create-an-installer-package-windows-desktop"></a>Tworzenie pakietu Instalatora (Windows Desktop)
 
-Jeśli potrzebujesz bardziej złożonej instalacji aplikacji pulpitu niż [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) można zapewnić, możesz utworzyć pakiet Instalatora Windows (pliku instalacyjnego MSI i EXE) lub niestandardowego programu inicjującego.
+Jeśli potrzebujesz większej złożonej instalacji aplikacji klasycznej niż zapewnianie technologii [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) , możesz utworzyć pakiet Instalator Windows (plik instalacyjny MSI lub exe) lub niestandardowy program inicjujący.
 
-- Pakiet instalacyjny opartym na MSI można utworzyć przy użyciu [WiX zestawu narzędzi Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Jest to zestaw narzędzi wiersza polecenia.
+- Pakiet Instalatora oparty na instalatorze MSI można utworzyć przy użyciu [rozszerzenia zestawu narzędzi WIX](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset). Jest to zestaw narzędzi wiersza polecenia.
 
-- Pakiet Instalatora MSI i EXE mogą być tworzone za pomocą [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z Flexera oprogramowania. InstallShield mogą być używane z programu Visual Studio 2017 i nowsze wersje (Community Edition nie obsługiwane). Pamiętaj, że InstallShield Limited Edition nie jest już dołączony do Visual Studio i nie jest obsługiwana w programie Visual Studio 2017 i nowszych wersjach; Skontaktuj się z [oprogramowania Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o przyszłych dostępności.
+   ::: moniker range=">=vs-2019"
+   W przypadku programu Visual Studio 2019 Pobierz [rozszerzenie WIX zestawu narzędzi programu Visual studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
+   ::: moniker-end
 
-- Pakiet Instalatora MSI i EXE mogą być tworzone za pomocą projektu Instalatora (vdproj). Aby użyć tej opcji, należy zainstalować [projektów Instalatora programu Visual Studio rozszerzenia](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Pakiet Instalatora MSI lub EXE można utworzyć przy użyciu narzędzia [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z oprogramowania Flexera. Program InstallShield może być używany z programem Visual Studio 2017 i nowszymi wersjami (wersja Community nie jest obsługiwana). Należy pamiętać, że program InstallShield Limited Edition nie jest już dołączony do programu Visual Studio i nie jest obsługiwany w programie Visual Studio 2017 i nowszych wersjach. Zapoznaj się z [oprogramowaniem Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) na temat przyszłej dostępności.
 
-- Można także zainstalować wstępnie wymagane składniki aplikacji komputerowych, konfigurując Instalator ogólny, który jest znany jako program inicjujący. Aby uzyskać więcej informacji, zobacz [wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md).
+- Pakiet Instalatora MSI lub EXE można utworzyć przy użyciu projektu konfiguracji (VDPROJ). Aby użyć tej opcji, zainstaluj [rozszerzenie projekty Instalator programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
-## <a name="deploy-to-test-lab"></a>Wdrażanie laboratorium testowego
+- Wstępnie wymagane składniki dla aplikacji klasycznych można również zainstalować, konfigurując Instalator generyczny, który jest znany jako program inicjujący. Aby uzyskać więcej informacji, zobacz [wymagania wstępne dotyczące wdrażania aplikacji](../deployment/application-deployment-prerequisites.md).
 
-Aby umożliwić bardziej wyrafinowane projektowanie i testowanie przez wdrożenie aplikacji w środowiskach wirtualnych. Aby uzyskać więcej informacji, zobacz [testów w środowisku laboratoryjnym](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
+## <a name="deploy-to-test-lab"></a>Wdróż w laboratorium testowym
+
+Możesz włączyć bardziej zaawansowane programowanie i testowanie, wdrażając aplikacje w środowiskach wirtualnych. Aby uzyskać więcej informacji, zobacz [test w środowisku laboratoryjnym](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
 ## <a name="continuous-deployment"></a>Ciągłe wdrażanie
 
-Potoki usługi Azure umożliwia włączanie ciągłego wdrażania aplikacji. Aby uzyskać więcej informacji, zobacz [potoki Azure](/azure/devops/pipelines/index?view=vsts) i [Wdróż na platformie Azure](/azure/devops/deploy-azure/index?view=vsts).
+Za pomocą Azure Pipelines można włączyć ciągłe wdrażanie aplikacji. Aby uzyskać więcej informacji, zobacz [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) i [wdrażania na platformie Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deploy-a-sql-database"></a>Wdrażanie bazy danych SQL
 
 - [Zmień platformę docelową i Opublikuj projekt bazy danych (SQL Server Data Tools (SSDT))](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
 
-- [Wdrażanie projektu usług analizy (serwera SQL SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+- [Wdróż projekt Analysis Services (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
 
-- [Wdrażanie projektów Integration Services (SSIS) i pakiety](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+- [Wdróż projekty i pakiety usług Integration Services (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
 
-- [Tworzenie i wdrażanie do lokalnej bazy danych](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
+- [Kompilowanie i wdrażanie w lokalnej bazie danych](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
-## <a name="deployment-for-other-app-types"></a>Wdrożenia dla innych typów aplikacji
+## <a name="deployment-for-other-app-types"></a>Wdrożenie dla innych typów aplikacji
 
 | Typ aplikacji | Scenariusz wdrażania | Łącze |
 | --- | --- | --- |
-| **Aplikacja pakietu Office** | Możesz opublikować dodatek dla pakietu Office w programie Visual Studio. | [Wdrażanie i publikowanie dodatku pakietu Office](https://dev.office.com/docs/add-ins/publish/publish) |
-| **Usługa WCF lub OData** | Inne aplikacje mogą używać usług WCF RIA, które są wdrażane na serwerze sieci web. | [Tworzenie i wdrażanie usług danych WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch nie jest już obsługiwany począwszy od programu Visual Studio 2017, ale nadal można wdrożyć z programu Visual Studio 2015 i starszych wersji. | [Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **Aplikacja pakietu Office** | Dodatek dla pakietu Office można opublikować w programie Visual Studio. | [Wdrażanie i publikowanie dodatku dla pakietu Office](https://dev.office.com/docs/add-ins/publish/publish) |
+| **Usługa WCF lub OData** | Inne aplikacje mogą używać usług WCF RIA wdrożonych na serwerze sieci Web. | [Opracowywanie i wdrażanie Usługi danych programu WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **LightSwitch** | LightSwitch nie jest już obsługiwany w programie Visual Studio 2017, ale nadal można ją wdrożyć z poziomu programu Visual Studio 2015 lub starszej wersji. | [Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku wykonano krótkie omówienie opcji wdrażania dla różnych aplikacji.
+W tym samouczku zawarto krótkie zapoznaj się z opcjami wdrażania dla różnych aplikacji.
 
 > [!div class="nextstepaction"]
-> [Jakie opcje publikowania są dla mnie odpowiednia?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)
+> [Jakie opcje publikowania są odpowiednie dla mnie?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)
