@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać subskrypcje programu Visual Studio
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378063"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493355"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -73,7 +73,6 @@ Informacje o kontakcie i preferencje można łatwo zmienić w Twoim profilu.
 3. Na karcie **informacje** można zmienić nazwę, adres e-mail, kraj/region, zdjęcie profilu i preferencje kontaktu. Na karcie **Preferencje** możesz wybrać preferowany język, wzorce daty i godziny, strefę czasową i motyw interfejsu użytkownika.
 4. Po sfinalizowaniu zmian kliknij przycisk **Zapisz**.
 5. Kliknij przycisk **Wstecz** w przeglądarce, aby powrócić do strony korzyści.
-
 
 ### <a name="setting-communications-preferences"></a>Ustawianie preferencji komunikacji
 Jeśli chcesz otrzymywać okresowe aktualizacje dotyczące subskrypcji i korzyści, w tym biuletyn comiesięcznych subskrypcji programu Visual Studio, [zaktualizuj swoje preferencje](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) , zaznaczając pole wyboru subskrypcje programu Visual Studio w profilu programu Visual Studio. . Możesz zmienić te Preferencje i anulować subskrypcję w dowolnym momencie. 
