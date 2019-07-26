@@ -18,7 +18,6 @@
 #### [Logowanie przy użyciu kont służbowych](sign-in-work.md)
 #### [Logowanie przy użyciu usługi GitHub](sign-in-github.md)
 #### [Alternatywne tożsamości](vs-alternate-identity.md)
-#### [Logowanie przy użyciu aliasów](aliasing.md)
 #### [Problemy z logowaniem](sign-in-issues.md)
 #### [Anonimizacje danych subskrybentów](anonymization.md)
 ### [Omówienie portalu subskrypcji](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [Pokazy internetowe](internet-demos.md)
 ## Administratorzy
 ### [Obowiązki administratora](admin-responsibilities.md)
+#### [Zapasy przedprodukcyjne](admin-inventory.md)
+#### [Zarządzanie dużymi zespołami i zleceniobiorcami zewnętrznymi](manage-teams.md)
+#### [Śledzenie przypisań użytkowników i przetwarzanie zamówień](assignments-orders.md)
 ### [Licencjonowanie zbiorowe](volume-license-admins.md)
 ### Dołączanie organizacji
 #### [Dołączanie po migracji](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [Nadmierne alokacje](handle-overclaimed-license.md)
 #### [Maksymalne użycie](maximum-usage.md)
 #### [Wygasłe subskrypcje](handle-expired-license.md)
+#### [Subskrybenci korzystający z aliasów](aliasing.md)
 #### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
 ### [Zarządzanie Visual Studio z usługą GitHub Enterprise](assign-github.md)
 ## Resources
