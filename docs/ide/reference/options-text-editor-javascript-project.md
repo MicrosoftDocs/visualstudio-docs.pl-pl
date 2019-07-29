@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df602b7ffa8f5109d8bbca827e59d6e1fd62c504
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461677"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605929"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opcje, Edytor tekstu, JavaScript, projekt
 
-Na stronie **projekt** okna dialogowego **Opcje** można określić opcje projektu JavaScript w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz**Opcje** **Narzędzia** > , a następnie rozwiń**projekt** **Edytor** > tekstu**JavaScript** > .
+Na stronie **projekt** okna dialogowego **Opcje** można określić opcje JavaScript i projektu TypeScript w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz**Opcje** **Narzędzia** > , a następnie rozwiń węzeł **Edytor** > tekstu**JavaScript/TypeScript** >  **.**
 
 ## <a name="project-analysis-options"></a>Opcje analizy projektu
 

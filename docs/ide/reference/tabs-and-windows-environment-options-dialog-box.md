@@ -10,17 +10,13 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6055f71ee90fee451cad78552a3f853a28b808cd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945118"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605889"
 ---
-# <a name="options-dialog-box-environment--tabs-and-windows"></a>Okno dialogowe Opcje: Środowisko \> karty i Windows
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Opcje — okno dialogowe: Karty \> i okna środowiska
 
-Użyj tej strony, aby ustawić opcje dla systemu windows, jak z kartami zachowują się w okienku Edytora i zachowanie okien narzędzi. Aby uzyskać więcej informacji, zobacz [dostosowywanie układów okien w programie Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-### <a name="see-also"></a>Zobacz także
-
-- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
+Ta strona służy do ustawiania opcji zachowania okienek z kartami w okienku Edytora oraz sposobu zachowania okien narzędzi. Aby uzyskać więcej informacji, zobacz [Dostosowywanie układów okien w programie Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)

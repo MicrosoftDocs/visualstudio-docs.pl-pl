@@ -17,25 +17,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e65894fffd9c6786c19a337fc386f45fb9d203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 146aef659290df4302cc3bbb3d24a5bf6f1f01c8
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540670"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605637"
 ---
-# <a name="options-dialog-box-environment--international-settings"></a>Okno dialogowe Opcje: Środowisko \> ustawienia międzynarodowe
+# <a name="options-dialog-box-environment--international-settings"></a>Opcje — okno dialogowe: Ustawienia \> międzynarodowe środowiska
 
-Strona Ustawienia międzynarodowe pozwala zmienić domyślny język, jeśli masz więcej niż jedną wersję językową zintegrowanego środowiska programistycznego (IDE) zainstalowane na tym komputerze. Dostęp do tego okna dialogowego wybierając **opcje** z **narzędzia** menu, a następnie wybierając **ustawienia międzynarodowe** z **środowiska** folderu.
+Strona Ustawienia międzynarodowe umożliwia zmianę języka domyślnego w przypadku, gdy na komputerze jest zainstalowana więcej niż jedna wersja językowa zintegrowanego środowiska programistycznego (IDE). Możesz uzyskać dostęp do tego okna dialogowego, wybierając **Opcje** z menu **Narzędzia** , a następnie wybierając **Ustawienia międzynarodowe** z folderu **środowiska** .
 
 **Język**
 
-Wyświetla listę dostępnych języków w wersjach językowych zainstalowany produkt. Wiele języków, produktów lub mieszanym językiem instalacji produktów, któremu udostępniono środowiska, wybór języka jest zmieniana na **taki sam jak Microsoft Windows**.
+Wyświetla listę języków dostępnych dla zainstalowanych wersji językowych produktu. Jeśli wiele języków produktów lub instalacja języka mieszanego współużytkuje środowisko, wybór języka zostanie zmieniony na **taki sam, jak system Microsoft Windows**.
 
 > [!CAUTION]
-> W systemie z wieloma językami zainstalowanymi w narzędziach kompilacji Visual C++ (cl.exe, link.exe, nmake.exe, bscmake.exe i powiązane pliki) nie dotyczy to ustawienie. Te narzędzia użyć wersji dla ostatnich zainstalowany język. Narzędzia do kompilacji dla zainstalowanych wcześniej języka są zastępowane, ponieważ narzędzi kompilacji Visual C++ nie używają modelu satelitarnej biblioteki DLL.
+> W systemie z zainstalowanymi wieloma językami narzędzia Visual C++ Build Tools (CL. exe, link. exe, NMAKE. exe, BSCMAKE. exe i powiązane pliki) nie wpływają na to ustawienie. Narzędzia te korzystają z wersji dla ostatniego zainstalowanego języka. Narzędzia kompilacji dla zainstalowanego wcześniej języka są zastępowane, ponieważ narzędzia do kompilacji C++ wizualizacji nie używają modelu satelitarnej biblioteki DLL.
 
 ### <a name="see-also"></a>Zobacz także
 
 - [Zainstaluj pakiety językowe](../../install/install-visual-studio.md#step-6---install-language-packs-optional)
-- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

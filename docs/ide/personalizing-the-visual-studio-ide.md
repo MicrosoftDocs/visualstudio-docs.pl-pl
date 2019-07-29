@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953299"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606084"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 
@@ -27,28 +27,28 @@ Możesz wybrać domyślną kolekcję ustawień optymalizujący programu Visual S
 
 ## <a name="general-environment-options"></a>Opcji środowiska ogólnego
 
-Wiele opcji personalizacji są udostępniane za pośrednictwem [opcje środowiska](../ide/reference/environment-options-dialog-box.md) okno dialogowe. Istnieją dwa sposoby dostępu to okno dialogowe:
+Wiele opcji personalizacji są udostępniane za pośrednictwem [opcje środowiska](../ide/reference/general-environment-options-dialog-box.md) okno dialogowe. Istnieją dwa sposoby dostępu to okno dialogowe:
 
 - Na pasku menu wybierz **narzędzia** > **opcje**, a jeśli jeszcze nie jest rozwinięta, rozwiń węzeł **środowiska** węzła.
 
-- Naciśnij klawisz **Ctrl**+**Q**, typ **środowiska** w wyszukiwaniu, a następnie wybierz **środowiska--> Ogólne** z wyniki.
+- Naciśnij **klawisze CTRL**+**Q**, wpisz **środowisko** w polu wyszukiwania, a następnie wybierz **środowisko > Ogólne** z wyników.
 
 > [!TIP]
-> Gdy pojawi się okno dialogowe Opcje, możesz nacisnąć przycisk **F1** Aby uzyskać pomoc dotyczącą różne ustawienia na tej stronie.
+> Gdy zostanie wyświetlone okno dialogowe Opcje, możesz nacisnąć klawisz **F1** , aby uzyskać pomoc dotyczącą różnych ustawień na tej stronie.
 
 ## <a name="environment-color-themes"></a>Motywy kolorów środowiska
 
-Aby zmienić motyw kolorów między jasny i ciemny niebieski, typ **środowiska** do wyszukiwania, a następnie wybierz **środowiska--> Ogólne**. W **opcje** okno dialogowe, zmiana **motyw kolorów** opcji.
+Aby zmienić motyw kolorów między jasnymi, ciemnymi i niebieskimi, wpisz **środowisko** w polu wyszukiwania, a następnie wybierz **środowisko > Ogólne**. W **opcje** okno dialogowe, zmiana **motyw kolorów** opcji.
 
-Aby zmienić opcje kolorowanie w edytorze, wpisz **środowiska** do wyszukiwania, a następnie wybierz **środowiska--> czcionki i kolory**. Zobacz [jak: Zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Aby zmienić opcje kolorowania w edytorze, wpisz **środowisko** w polu wyszukiwania, a następnie wybierz **środowisko > czcionki i kolory**. Zobacz [How to: Zmień czcionki i kolory](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Wielkość liter w wyrazie menu głównego
 
-Możesz zmienić menu głównego wielkość liter w wyrazie między **wielkimi literami** ("plik") i **wersalikami** ("plik"). Typ **środowiska** w polu wyszukiwania, wybierz **środowiska--> Ogólne**, a następnie zmień **dotyczą stylów przypadków tytuł paska menu** opcji.
+Możesz zmienić menu głównego wielkość liter w wyrazie między **wielkimi literami** ("plik") i **wersalikami** ("plik"). Wpisz **środowisko** w polu wyszukiwania, wybierz pozycję **środowisko > Ogólne**, a następnie zmień opcję **Zastosuj styl wielkości liter w tytule do paska menu** .
 
 ### <a name="customize-menus-and-toolbars"></a>Dostosowywanie menu i pasków narzędzi
 
-Aby dodać lub usunąć elementy menu lub paska narzędzi, zobacz [jak: Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Aby dodać lub usunąć elementy menu lub pasków narzędzi [, zobacz How to: Dostosowywanie menu i pasków narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ::: moniker range="vs-2017"
 
@@ -70,5 +70,5 @@ Można dostosować **narzędzia** menu, aby uruchomić narzędzia zewnętrzne. A
 
 - [Ustawienia środowiska](environment-settings.md)
 - [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
-- [Szybki start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Szybki start: Pierwsze spojrzenie na środowisko IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Dostosowywanie programu Visual Studio dla komputerów Mac w środowisku IDE](/visualstudio/mac/customizing-the-ide)

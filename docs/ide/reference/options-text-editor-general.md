@@ -3,21 +3,25 @@ title: Opcje, edytor tekstów, ogólne
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
-- VS.ToolsOptionsPages.Text_Editor.SQL.General
-- vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.XOML.General
-- VS.ToolsOptionsPages.Text_Editor.SQL
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- vs.toolsoptionspages.text_editor
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.General
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
+- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
+- VS.ToolsOptionsPages.Text_Editor.SQL
+- VS.ToolsOptionsPages.Text_Editor.SQL.General
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL
+- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - Code Editor
@@ -29,66 +33,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3b23edb73ee08762ae8e3efaea4f883693aaacbd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531931"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606016"
 ---
-# <a name="options-text-editor-general"></a>Opcje, edytor tekstów, ogólne
+# <a name="options-dialog-box-text-editor--general"></a>Opcje — okno dialogowe: Edytor \> tekstu — ogólne
 
-To okno dialogowe umożliwia zmianę ustawień globalnych dla edytora kodu i tekstu programu Visual Studio. Aby wyświetlić to okno dialogowe, wybierz **opcje** na **narzędzia** menu, rozwiń węzeł **edytora tekstów** folder, a następnie wybierz **ogólne**.
+To okno dialogowe pozwala zmienić ustawienia globalne programu Visual Studio Code i edytora tekstu. Aby wyświetlić to okno dialogowe, wybierz opcję **Opcje** w menu **Narzędzia** , rozwiń folder **Edytor tekstu** , a następnie wybierz pozycję **Ogólne**.
 
 ## <a name="settings"></a>Ustawienia
 
-### <a name="drag-and-drop-text-editing"></a>Przeciąganie i upuszczanie edycji tekstu
+### <a name="drag-and-drop-text-editing"></a>Edytowanie tekstu metodą "przeciągnij i upuść"
 
-Gdy zaznaczone, umożliwia przenoszenie tekstu, wybierając ją i przeciągając je za pomocą myszy do innej lokalizacji w obrębie bieżącego dokumentu lub dowolnego otwartego dokumentu.
+Gdy ta opcja jest zaznaczona, umożliwia przeniesienie tekstu, zaznaczając go i przeciągając myszą do innej lokalizacji w bieżącym dokumencie lub dowolnym innym otwartym dokumencie.
 
-### <a name="automatic-delimiter-highlighting"></a>Automatyczne wyróżnianie ograniczników
+### <a name="automatic-delimiter-highlighting"></a>Automatyczne Wyróżnianie ogranicznika
 
-Po wybraniu znaki ogranicznika, oddzielające parametry lub par wartości elementu, a także parowanych nawiasów klamrowych, zostały wyróżnione.
+Gdy jest zaznaczone, znaki ogranicznika oddzielające parametry lub pary element-wartość, a także pasujące nawiasy klamrowe, są wyróżnione.
 
-### <a name="track-changes"></a>Śledzenie zmian
+### <a name="track-changes"></a>Śledź zmiany
 
-Po wybraniu edytora kodu żółta linia pionowa pojawia się w margines zaznaczania, aby oznaczyć kodu, które uległy zmianie od czasu ostatniego został zapisany plik. Po zapisaniu zmian pionowe linie stają się zielony.
+Po wybraniu edytora kodu w marginesie zaznaczenia zostanie wyświetlona pionowa żółta linia, aby oznaczyć kod zmieniony od czasu ostatniego zapisania pliku. Po zapisaniu zmian linie pionowe stają się kolorem zielonym.
 
-### <a name="auto-detect-utf-8-encoding-without-signature"></a>Automatyczne wykrywanie kodowania bez podpisu UTF-8
+### <a name="auto-detect-utf-8-encoding-without-signature"></a>Automatyczne wykrywanie kodowania UTF-8 bez podpisu
 
-Domyślnie Edytor wykrywa, kodowanie, wyszukując znaczniki kolejności bajtów lub tagi zestaw znaków. Jeśli nie zostanie znaleziony w bieżącym dokumencie, Edytor kodu próbuje Autowykrywanie UTF-8 kodowania przez skanowanie sekwencji bajtów. Aby wyłączyć automatycznego wykrywania kodowania, usuń zaznaczenie tej opcji.
+Domyślnie Edytor wykrywa kodowanie, wyszukując znaczniki kolejności bajtów lub Tagi charset. Jeśli żaden z nich nie zostanie znaleziony w bieżącym dokumencie, Edytor kodu podejmie próbę automatycznego wykrycia kodowania UTF-8 przez skanowanie sekwencji bajtów. Aby wyłączyć Autowykrywanie kodowania, usuń zaznaczenie tej opcji.
 
-### <a name="follow-project-coding-conventions"></a>Postępuj zgodnie z Konwencji kodowania projektu
+### <a name="follow-project-coding-conventions"></a>Przestrzegaj konwencji kodowania projektu
 
-Po wybraniu określonego Konwencji kodowania projektu musi zostać zastąpiona Konwencji kodowania, używane w osobistych projektach.
+Po wybraniu zasady kodowania określone dla projektu zastępują wszelkie konwencje kodowania używane w Twoich projektach osobistych.
 
-### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Włącz kliknięcie myszą wykonać polecenie Przejdź do definicji
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Włącz kliknięcie myszą, aby wykonać operację przejdź do definicji
 
-Wybranie tej opcji, możesz nacisnąć przycisk **Ctrl** i umieść kursor nad elementem, a następnie kliknij przycisk myszy. To spowoduje przejście do definicji wybranego elementu. Istnieje również możliwość albo **Alt** lub **Ctrl** + **Alt** z **klawisz modyfikujący użyj** listy rozwijanej.
+Po zaznaczeniu można nacisnąć klawisz **Ctrl** i umieścić kursor nad elementem, a następnie klikając myszą. Wykonanie tej operacji spowoduje przejście do definicji wybranego elementu. Możesz również wybrać **Alt** lub **Ctrl** + **Alt** z listy rozwijanej **Użyj klawisza modyfikującego** .
 
-Wybierz **Otwórz definicję w widoku podglądu** pole wyboru, aby wyświetlić w oknie definicji elementu, bez konieczności opuszczania Twojej bieżącej lokalizacji w edytorze kodu.
+Zaznacz pole wyboru **Otwórz definicję w widoku wglądu** , aby wyświetlić definicję elementu w oknie bez nawigowania do bieżącej lokalizacji w edytorze kodu.
 
 ## <a name="display"></a>Monitor
 
-### <a name="selection-margin"></a>Margines zaznaczania
+### <a name="selection-margin"></a>Margines zaznaczenia
 
-Po wybraniu Wyświetla pionowego marginesu wzdłuż lewej krawędzi obszaru tekstu edytora. Możesz kliknąć margines w ten sposób, aby zaznaczyć cały wiersz tekstu, lub kliknij i przeciągnij, aby zaznaczyć następujące po sobie wierszy tekstu.
+Po wybraniu Wyświetla pionowy margines wzdłuż lewej krawędzi obszaru tekstowego edytora. Możesz kliknąć ten margines, aby zaznaczyć cały wiersz tekstu, lub kliknij i przeciągnij, aby zaznaczyć kolejne wiersze tekstu.
 
-|Margines zaznaczania na|Margines zaznaczania wyłączone|
+|Margines zaznaczenia na|Margines zaznaczenia jest wyłączony|
 | - | - |
-|![HTMLpageSelectionMarginOn — zrzut ekranu](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff — zrzut ekranu](../../ide/reference/media/vxselmaroff.gif)|
+|![Zrzut ekranu HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Zrzut ekranu HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Margines wskaźnika
 
-Po wybraniu Wyświetla pionowego marginesu poza lewej krawędzi obszaru tekstu edytora. Po kliknięciu tego marginesie są wyświetlane ikonę i etykietkę narzędzia, które są powiązane z tekstu. Na przykład punkt przerwania lub zadania skróty listy są wyświetlane w margines wskaźnika. Wskaźnik marży informacje nie są drukowane.
+Po wybraniu Wyświetla pionowy margines poza lewą krawędzią obszaru tekstowego edytora. Po kliknięciu tego marginesu zostanie wyświetlona ikona i etykietka narzędzia, które są powiązane z tekstem. Na przykład skróty do punktów przerwania lub listy zadań pojawiają się na marginesie wskaźnika. Informacje o marginesie wskaźnika nie są drukowane.
 
 ### <a name="highlight-current-line"></a>Wyróżnij bieżący wiersz
 
-Po wybraniu Wyświetla szary prostokąt wokół linii kodu, w którym znajduje się kursor.
+Po wybraniu Wyświetla szare pole wokół wiersza kodu, w którym znajduje się kursor.
 
 ### <a name="show-structure-guide-lines"></a>Pokaż linie prowadnic struktury
 
-Po wybraniu wyświetlane pionowe linie w edytorze tego wiersza się przy użyciu bloków kodu ze strukturą, co pozwala łatwo identyfikować poszczególnych bloków kodu.
+Po wybraniu linie pionowe pojawiają się w edytorze, który jest wierszem ze strukturą bloków kodu, dzięki czemu można łatwo identyfikować poszczególne bloki kodu.
 
 ## <a name="see-also"></a>Zobacz także
 

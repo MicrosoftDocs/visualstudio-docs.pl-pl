@@ -1,5 +1,5 @@
 ---
-title: Odwołanie do konta opcje
+title: Informacje o opcjach kont
 ms.date: 12/10/2018
 ms.topic: reference
 f1_keywords:
@@ -10,41 +10,40 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792904"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604894"
 ---
-# <a name="accounts-environment-options-dialog-box"></a>Konta, środowisko, opcje, okno dialogowe
+# <a name="accounts-environment-options-dialog-box"></a>Konta, środowisko, Opcje — okno dialogowe
 
-Ta strona służy do ustawiania różne opcje związane z kontami, których używasz do logowania do programu Visual Studio.
+Ta strona służy do ustawiania różnych opcji związanych z kontami używanymi do logowania się w programie Visual Studio.
 
 ## <a name="personalization-account"></a>Konto personalizacji
 
-### <a name="synchronize-settings-across-devices"></a>Synchronizacja ustawień między urządzeniami
+### <a name="synchronize-settings-across-devices"></a>Synchronizuj ustawienia między urządzeniami
 
-Użyj tej opcji, aby określić, czy synchronizację ustawień między wieloma maszynami. Aby uzyskać więcej informacji, zobacz [zsynchronizowane ustawienia](../../ide/synchronized-settings-in-visual-studio.md).
+Użyj tej opcji, aby określić, czy synchronizować ustawienia na wielu maszynach. Aby uzyskać więcej informacji, zobacz [Ustawienia zsynchronizowane](../../ide/synchronized-settings-in-visual-studio.md).
 
 ### <a name="enable-device-code-flow"></a>Włącz przepływ kodu urządzenia
 
-Gdy ta opcja jest zaznaczona, zmienia się zachowanie programu Visual Studio po wybraniu **Dodaj konto** na **pliku** > **ustawienia konta** strony. Zamiast zobaczyć **Zaloguj się do swojego konta** stronie zostanie wyświetlone okno dialogowe, które udostępnia adres URL i kodu Wklej w przeglądarce sieci web Zaloguj się. Ta opcja jest przydatna w przypadkach, w których nie możesz zalogować do programu Visual Studio w zwykły sposób, na przykład, jeśli używasz starszej wersji programu Internet Explorer, czy Zapora ogranicza dostęp. Aby uzyskać więcej informacji, zobacz [Praca z wieloma kontami użytkownika](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
+Gdy ta opcja jest zaznaczona, zachowanie programu Visual Studio zmienia się po wybraniu opcji **Dodaj konto** na stronie**Ustawienia konta** **pliku** > . Zamiast wyświetlania strony **logowania do konta** zostanie wyświetlone okno dialogowe z adresem URL i kodem do wklejenia do przeglądarki sieci Web w celu zalogowania się. Ta opcja jest przydatna w przypadkach, gdy nie można zalogować się do programu Visual Studio w zwykły sposób, na przykład jeśli używasz starszej wersji programu Internet Explorer lub Zapora ogranicza dostęp. Aby uzyskać więcej informacji, zobacz [Praca z wieloma kontami użytkownika](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
 
 ## <a name="registered-azure-clouds"></a>Zarejestrowane chmury platformy Azure
 
-W tej sekcji przedstawiono wystąpienia platformy Azure w chmurze, czy masz dostęp do za pośrednictwem jednego lub większej liczby kont, których używasz do logowania do programu Visual Studio. Na przykład może być dostęp do prywatnej wystąpienie platformy Azure w centrum danych firmy. Lub możesz mieć dostęp do platformy Azure, takich jak Azure wystąpienia suwerennych lub dla instytucji rządowych w Stanach Zjednoczonych (Chiny) lub Azure Dla instytucji rządowych. Wystąpienia globalnego chmury platformy Azure są wyświetlane domyślnie na liście, a nie można go usunąć.
+W tej sekcji przedstawiono wystąpienia chmury platformy Azure, do których masz dostęp, za pomocą co najmniej jednego konta używanego do logowania się w programie Visual Studio. Na przykład możesz mieć dostęp do prywatnego wystąpienia platformy Azure w centrum danych firmy. Możesz też mieć dostęp do suwerennego lub rządowego wystąpienia platformy Azure, takiego jak Azure Chiny 21 Vianet lub Azure USA Zarządowi. Globalne wystąpienie chmury platformy Azure zostanie wyświetlone na liście domyślnie i nie można go usunąć.
 
-Zarejestruj się dodatkowe platformy Azure w chmurze, wybierając **Dodaj** przycisku. **Dodawanie nowej chmury Azure** okno dialogowe wyświetla kilka wystąpień dobrze znanych chmury platformy Azure, możesz nawiązać połączenie, lub wprowadź adres URL prywatnego punkt końcowy platformy Azure.
+Zarejestruj dodatkową chmurę platformy Azure, wybierając przycisk **Dodaj** . W oknie dialogowym **Dodawanie nowej chmury platformy Azure** wyświetlane są kilka dobrze znanych wystąpień w chmurze platformy Azure, z którymi można nawiązać połączenie, lub możesz wprowadzić adres URL do prywatnego punktu końcowego platformy Azure.
 
-![Dodaj nowe wystąpienie w chmurze platformy Azure](media/add-new-azure-cloud.png)
+![Dodaj nowe wystąpienie chmury platformy Azure](media/add-new-azure-cloud.png)
 
-Po zarejestrowaniu dodatkowe chmurze platformy Azure, możesz wybrać, jaka chmura platformy Azure, aby logować się po zalogowaniu do programu Visual Studio.
+Po zarejestrowaniu dodatkowej chmury platformy Azure Możesz wybrać chmurę platformy Azure, do której chcesz się zalogować po zalogowaniu się do programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Synchronizacja ustawień na wielu komputerach](../synchronized-settings-in-visual-studio.md)
+- [Synchronizowanie ustawień na wielu komputerach](../synchronized-settings-in-visual-studio.md)
 - [Logowanie do programu Visual Studio](../signing-in-to-visual-studio.md)
 - [Praca z wieloma kontami użytkowników](../work-with-multiple-user-accounts.md)
 - [Ustawienia środowiska](../environment-settings.md)
-- [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)

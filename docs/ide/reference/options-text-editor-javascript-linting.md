@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c026d1e12734391b73daffde0357c82ebc529e2
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461330"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605969"
 ---
-# <a name="options-text-editor-javascript-linting"></a>Opcje, Edytor tekstu, JavaScript, Zaznaczanie błędów
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Opcje — okno dialogowe: Edytor \> tekstu JavaScript/TypeScript \> Zaznaczanie błędów
 
-Za pomocą strony **Zaznaczanie błędów** okna dialogowego **Opcje** można ustawić opcje analizowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz**Opcje** **Narzędzia** > , a następnie rozwiń **Edytor** > tekstu**JavaScript** > **Zaznaczanie błędów**.
+Za pomocą strony **Zaznaczanie błędów** okna dialogowego **Opcje** można ustawić opcje analizowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz**Opcje** **Narzędzia** > , a następnie rozwiń **Edytor** > tekstu**JavaScript/TypeScript** > **Zaznaczanie błędów**.
 
 ## <a name="eslint-settings"></a>Ustawienia ESLint
 
-Te opcje umożliwiają włączenie statycznej analizy kodu JavaScript i wybranie plików, które są analizowane. Aby uzyskać więcej informacji na temat ESLint, zobacz [ESLint.org](https://eslint.org/).
+Te opcje umożliwiają włączenie statycznej analizy kodu JavaScript i języka TypeSCript oraz wybór plików, które są analizowane. Aby uzyskać więcej informacji na temat ESLint, zobacz [ESLint.org](https://eslint.org/).
 
 ### <a name="uielement-list"></a>Lista elementów UIElement
 

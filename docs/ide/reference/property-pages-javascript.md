@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd951c180d23f4798fd797ee36a2bac9ca422ea1
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461354"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605934"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 
@@ -57,7 +57,7 @@ Użyj następujących opcji, aby ustawić ogólne właściwości projektu.
 
  Określa lokalizację plików wyjściowych dla konfiguracji projektu. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, ścieżka bezwzględna zostanie zapisana w projekcie. Ścieżka domyślna to bin\Debug.
 
- W przypadku korzystania z uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Gdy klikniesz pozycję **Debuguj**, **Rozpocznij debugowanie** (lub naciśnij klawisz F5), kompilacja jest umieszczana w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Kompiluj rozwiązanie** w menu **kompilacja** umieszcza je w określonej lokalizacji. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz **Narzędzia**, **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, wybierz pozycję **Ogólne**, a następnie wyczyść pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** . Zapewnia to ręczną kontrolę nad wszystkimi wartościami konfiguracji oraz o tym, czy została skompilowana wersja Debug lub Release.
+ W przypadku korzystania z uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Po kliknięciu przycisku **Debuguj** > **Rozpocznij debugowanie** (lub naciśnij klawisz **F5**) kompilacja jest umieszczana w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Kompiluj rozwiązanie** w menu **kompilacja** umieszcza je w określonej lokalizacji. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz **Narzędzia** > **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, wybierz pozycję **Ogólne**, a następnie wyczyść pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** . Zapewnia to ręczną kontrolę nad wszystkimi wartościami konfiguracji oraz o tym, czy została skompilowana wersja Debug lub Release.
 
  **Język domyślny**
 
@@ -82,7 +82,7 @@ Aby ustawić właściwości zachowania debugowania w projekcie, należy użyć n
 
 **Uruchom aplikację**
 
-Określa, czy uruchomić aplikację po naciśnięciu klawisza F5 lub kliknięciu przycisku **Debuguj**, **Rozpocznij debugowanie**. Wybierz pozycję **tak** , aby uruchomić aplikację. w przeciwnym razie wybierz pozycję **nie**. Jeśli wybierzesz opcję **nie**, nadal możesz debugować aplikację, jeśli używasz innej metody do jej uruchamiania.
+Określa, czy aplikacja ma zostać uruchomiona po naciśnięciu klawisza **F5** lub kliknięcia przycisku **Debuguj** > **Rozpocznij debugowanie**. Wybierz pozycję **tak** , aby uruchomić aplikację. w przeciwnym razie wybierz pozycję **nie**. Jeśli wybierzesz opcję **nie**, nadal możesz debugować aplikację, jeśli używasz innej metody do jej uruchamiania.
 
 **Typ debugera**
 

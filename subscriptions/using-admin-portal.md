@@ -1,75 +1,61 @@
 ---
-title: Korzystanie z portalu administratora | Portal Marketplace programu Visual Studio
+title: Rozpoczynanie pracy z portalem administracyjnym subskrypcji | Visual Studio Marketplace
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
-description: Dowiedz się, jak zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora.
-ms.openlocfilehash: 6da1f0ce52e810a7652dd306ff5a6e44404b76f7
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
+ms.openlocfilehash: f3b11a0a0977fff8a6c89f565adffb1cac49e2ad
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784792"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605708"
 ---
-# <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Korzystanie z portalu administratora subskrypcji programu Visual Studio
+# <a name="get-started-with-the-visual-studio-subscriptions-administration-portal"></a>Wprowadzenie do portalu administracyjnego subskrypcji programu Visual Studio
+Pamiętaj o tym, gdy używasz portalu administratora subskrypcji programu Visual Studio:
+- **Subskrypcje programu Visual Studio są licencjonowane na użytkownika.** Każdy subskrybent może korzystać z oprogramowania na tyle, ile komputerów jest potrzebnych do tworzenia i testowania.
+- **Przypisz tylko jeden poziom subskrypcji dla każdego subskrybenta**, odpowiadający subskrypcji programu Visual Studio zakupionej przez Twoją organizację. Jeśli masz subskrybentów z przypisanym więcej niż jednym poziomem subskrypcji, Edytuj swoje ustawienia tak, aby zawierały tylko jeden z nich.
+- **Poziom subskrypcji subskrybenta będzie musiał zostać zaktualizowany** , gdy subskrypcja zostanie uaktualniona (po zakupie licencji "krok do końca") lub odnowienia na niższym poziomie.
+- **Nie udostępniaj subskrypcji między subskrybentami.** Subskrypcje muszą być przypisane do nazwanych osób.  Przypisanie subskrypcji do zespołów nie jest dozwolone.  Musisz przypisać subskrypcję do każdego, kto korzysta ze wszystkich lub części korzyści z subskrypcji (oprogramowanie do programowania i testowania, Microsoft Azure, uczenie elektroniczne itp.).
 
-Miej to na uwadze, korzystając z portalu administratora subskrypcji Visual Studio:
-
-- **Subskrypcje programu Visual Studio są licencjonowane na poszczególnych użytkowników.** Każdy subskrybent może korzystać z oprogramowania na komputerach w razie potrzeby tworzenia i testowania.
-- **Przypisanie poziomu tylko jedną subskrypcję dla każdego subskrybenta**, odpowiadające subskrypcji programu Visual Studio zakupione w Twojej organizacji. W przypadku subskrybentów z więcej niż jeden poziom subskrypcji przypisane, Edytuj ich ustawienia, aby udzielić użytkownikom tylko jedną.
-- **Poziom subskrypcji subskrybenta będą musiały zostać zaktualizowane** po uaktualnieniu (po zakupie licencji "podniesienie") lub odnowienia na niższym poziomie subskrypcji.
-- **Nie należy udostępniać subskrypcji od subskrybentów.** Dla każdego, kto używa całość lub część korzyści z subskrypcji (oprogramowanie do tworzenia i testowania Microsoft Azure e-learning, itp.), należy przypisać subskrypcję.
+## <a name="access-to-the-portal"></a>Dostęp do portalu
+Jeśli jesteś główną osobą kontaktową lub skontaktujesz się z umową w organizacji, zostanie automatycznie zainicjowany dostęp do portalu po skonfigurowaniu umowy licencjonowania zbiorowego. Otrzymasz komunikat powitalny wyzwalany przez system, który wskaże adres e-mail używany do logowania się do portalu. Po zalogowaniu użytkownik zostanie automatycznie skonfigurowany jako administrator i będzie mógł zacząć zarządzać subskrypcjami i innymi administratorami. 
 
 ## <a name="administrator-roles"></a>Role administratorów
+Istnieją dwie różne role, które znajdują się w nowym portalu administratora subskrypcji programu Visual Studio dla klientów korzystających z licencjonowania zbiorowego. Role te są podobne do roli kontakt podstawowy/powiadomienie i rola Menedżer subskrypcji w VLSC.
 
-Istnieją dwie różne role, które istnieją w portalu nowego administratora subskrypcji programu Visual Studio dla klientów licencjonowania zbiorowego. Te role są podobne do roli podstawowej/kontaktowej i rolę Menedżer subskrypcji w witrynie VLSC już dziś.
+**Administratorzy:** Po pierwszym skonfigurowaniu organizacji główna lub informacja kontaktowa jest domyślnie administratora. Osoba kontaktowa podstawowa lub kontaktowa może wybrać opcję przypisania dodatkowych administratorów lub administratorów. Administrator może dodawać i usuwać innych administratorów oraz subskrybentów. Jeśli w systemie istnieje więcej niż dwóch administratorów, administrator może usunąć wszystkie z nich oprócz ostatnich dwóch z nich w celu zabezpieczenia.
 
-**Superadministratorzy:** Po skonfigurowaniu organizacji, główna osoba kontaktowa lub kontaktowa staje się super admin domyślnie. Skontaktuj się z podstawowej maszyny wirtualnej lub uwagi można przypisać dodatkowe superadministratorów lub administratorów. Super admin dodawać i usuwać innych administratorów, a także subskrybentów. Jeśli istnieje więcej niż dwóch superadministratorzy w systemie, superadministrator umożliwia usunięcie wszystkich ostatnie dwa zabezpieczeń.
+**Administratorzy** Administrator można skonfigurować tylko przez administratora. Administrator może zarządzać subskrybentami w umowach, z którymi przypisuje administrator.
 
-**Administratorzy:** Administrator może można skonfigurować tylko przez administratora administratora. Administrator może zarządzać subskrybentów w ramach umów, na które super admin przypisuje do nich.
-
-## <a name="getting-started"></a>Wprowadzenie
-
-Aby korzystać z portalu administratora do zarządzania subskrypcjami dla Twojej organizacji, należy najpierw dodać organizacji do portalu.  Po zakończeniu dołączania, warto zapoznać się ze strony subskrybentów i szczegółowe informacje, jak są, gdzie znajdziesz, narzędzia i informacje potrzebne do wykonania zadania związane z zarządzaniem subskrypcją.
-
-### <a name="onboarding"></a>Dołączanie do
-
-Jeśli Twoja organizacja jest gotowy do dodania do portalu administratora subskrypcji Visual Studio zostanie wysłana wiadomość e-mail główna osoba kontaktowa i kontaktowa zaproszeniem do ukończenia procesu dołączania. Poniższe szczegóły przedstawiono kroki, które należy podjąć dołączyć do nowego portalu. Jeśli chcesz wskazówki procesu, zapoznaj się z tą [dołączania administratora wideo](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) bądź [artykuł pomocy technicznej](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "procesu migracji administratora subskrypcje Studio Visual").
-
-1. **Przy szukaniu numeru PCN i zaloguj się:**
-    - W wiadomości e-mail podstawowej i osoba kontaktowa są dostarczane za pomocą unikatowego linku i trzy ostatnie cyfry dla swojego publicznego numeru klienta (PCN). * 
-    - Aby uzyskać cały numer PCN, musisz zalogować się do centrum VLSC głównej osoby kontaktowej (można znaleźć instrukcje dotyczące lokalizacji numer PCN). 
-    - Po uzyskaniu numer PCN, ich należy wybrać ich unikatowego linku, co spowoduje wyświetlenie monitu do logowania. Będą mogli logować się przy użyciu konta Microsoft (MSA) lub konto służbowe (jeśli Twojej organizacji w usłudze AAD), jeśli Twoja organizacja nie znajduje się w usłudze AAD. 
-    - Następnie należy wprowadź numer PCN. 
-2. **Konfigurowanie administratorów usługi.** Po wprowadzeniu numerów PCN, zostaną zarejestrowane jako superadministrator w nowym systemie i będzie można dodać inne superadministratorzy i Administratorzy (wcześniej znanej jako menedżerowie subskrypcji). Aby uniknąć utraty dostępu, to należy wykonać przed datą migracji Twojej organizacji. 
-3. **Uzyskiwanie dostępu do nowego portalu zarządzania subskrypcjami.**  Po zmigrowaniu organizacji wiadomości e-mail będą wysyłane do nowo dodanego superadministratorzy i Administratorzy zapraszając ich dostęp do nowego portalu i zarządzania subskrypcjami.  
-
-> [!NOTE]
-> Jeśli główna osoba kontaktowa lub kontaktowa odbierze więcej niż jeden adres e-mail, oznacza to, że mają więcej niż jeden numer PCN. Muszą się ukończyć proces, korzystając z unikatowego linku dla numeru PCN, do którego odwołuje się każdego email.*
-
-Jeśli potrzebujesz mają zostać dodane do nowego portalu programu Visual Studio subskrypcje administracji i nie masz pewności, będącego kontakt podstawowy/uwagi, można znaleźć te informacje po zarejestrowaniu się [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Przyjrzyj się [znaleźć Twojej głównej osoby kontaktowej](find-primary-contact.md) temacie kroki, aby znaleźć podstawowy/uwagi dotyczące przejrzenia przez osobę kontaktową w witrynie VLSC.
-Jeśli możesz już skonfigurowano jako administrator, a następnie możesz też przejść bezpośrednio do [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com).
-
-### <a name="understanding-the-subscribers-page"></a>Informacje o stronie subskrybentów
-Po przypisaniu subskrypcji, na karcie subskrybentów zawiera szczegółowe informacje na temat subskrybentów, w tym:
+## <a name="the-subscribers-page"></a>Strona Subskrybenci
+Po przypisaniu subskrypcji karta Subskrybenci zawiera szczegółowe informacje dotyczące subskrybentów, w tym:
 - Imię i nazwisko każdego subskrybenta.
-- Adres e-mail dla tego użytkownika.
-- Poziom subskrypcji, która ma przypisane do nich.
-- Data ich subskrypcja została przypisana do nich.
-- Data wygaśnięcia dla swojej subskrypcji.
-- Opcjonalny opis.
-- Wskazanie, czy pliki do pobrania dla subskrybentów został włączony lub wyłączony.
+- Adres e-mail tego użytkownika.
+- Przypisany do nich poziom subskrypcji.
+- Data, do której przypisano swoją subskrypcję.
+- Data wygaśnięcia subskrypcji.
+- Opcjonalny opis tekstu.
+- Wskazanie, czy pobieranie subskrybentów zostało włączone czy wyłączone.
 - Kraj, w którym się znajdują.
-- Swoje preferencje językowe dla wiadomość e-mail dotycząca przypisania komunikacji z portalu administratora.
-- Pole opcjonalne dla inny adres e-mail używany do komunikacji logowania.
+- Preferencja języka dla wiadomości e-mail z powiadomieniem o przypisaniu z portalu administracyjnego.
+- Opcjonalne pole dla innego adresu e-mail używanego do komunikacji niż logowanie.
 
-Na lewym rogu tej strony znajdują się dodatkowe informacje o liczbie licencji subskrypcji zakupionych przypisane i nadal dostępne w Twojej organizacji, dla każdej umowy.
+Po lewej stronie tej strony zobaczysz dodatkowe informacje o liczbie licencji subskrypcji zakupionych, przypisanych i nadal dostępnych w organizacji dla każdej umowy.
 > [!div class="mx-imgBorder"]
-> ![Strona subskrybentów portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> ![Strona subskrybentów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
-### <a name="understanding-the-details-page"></a>Informacje o stronie szczegółów
-Aby uzyskać więcej informacji o umowie, że jest wyświetlana wybierz kartę szczegółów. Wskazuje ono na stan umowy, Zakup konto, szczegóły organizacji, głównymi osobami kontaktowymi (firmy Microsoft VLSC), superadministratorzy (jeśli jest dostępny) i inne istotne informacje.
+## <a name="the-details-page"></a>Strona szczegółów
+Aby uzyskać więcej informacji na temat umowy, którą przeglądasz, wybierz kartę Szczegóły. Pokazuje stan umowy, konto zakupu, szczegóły organizacji, administratorów i inne odpowiednie informacje.
 > [!div class="mx-imgBorder"]
-> ![Strona szczegółów w portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
+> ![Strona szczegółów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
+
+## <a name="next-steps"></a>Następne kroki
+Dowiedz się więcej o odpowiedzialności dla administratorów:
+- [Przegląd obowiązków administracyjnych](admin-responsibilities.md)
+- [Spis środowiska przedprodukcyjnego](admin-inventory.md)
+- [Zarządzanie dużymi zespołami i zleceniobiorcami zewnętrznymi](manage-teams.md)
+- [Śledzenie przypisań użytkowników i przetwarzanie zamówień](assignments-orders.md)
+- Używanie [maksymalnego użycia](maximum-usage.md) do śledzenia zobowiązań zakupu

@@ -1,106 +1,101 @@
 ---
 title: Ogólne, środowisko, opcje — Okno dialogowe
-ms.date: 03/28/2019
+ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
-- VS.Message.0x800a002e
-- VS.ToolsOptionsPages.Environment.General
 - VS.Environment.General
+- VS.Message.0x800a002e
+- VS.OptionsDialog.Environment
+- VS.ToolsOptionsPages.Environment
+- VS.ToolsOptionsPages.Environment.General
 helpviewer_keywords:
-- MRU lists
-- windows, customizing
-- MDI, environment options
-- speed, environment animation
-- File menu
-- menus, customizing
-- Windows menu customizing
-- status bars, displaying
-- IDE, startup options
-- editors, autocompletion
+- recently used file lists
+- Windows menu, customizing
+- status bar, displaying
 - Options dialog box, General Environment
 - General Environment Options dialog box
+- Environment Options dialog box
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790138"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605444"
 ---
-# <a name="options-dialog-box-environment--general"></a>Okno dialogowe Opcje: Środowisko \> ogólne
+# <a name="options-dialog-box-environment--general"></a>Opcje — okno dialogowe: Środowisko \> ogólne
 
-Użyj tej strony, aby zmienić motywy kolorów, ustawienia paska stanu i skojarzenia rozszerzeń plików, między innymi do zintegrowanego środowiska programistycznego (IDE). Możesz uzyskać dostęp **opcje** okno dialogowe, otwierając **narzędzia** menu, wybierając **opcje**, otwierając **środowiska** folder i następnie Wybieranie **ogólne** strony. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe.
+Ta strona służy do zmiany motywów kolorów, ustawień paska stanu i skojarzeń rozszerzeń plików między innymi opcjami dla zintegrowanego środowiska programistycznego (IDE). Dostęp do okna dialogowego **Opcje** można uzyskać, otwierając menu **Narzędzia** , wybierając **Opcje**, otwierając folder **środowiska** , a następnie wybierając stronę **Ogólne** . Jeśli ta strona nie jest wyświetlana na liście, zaznacz pole wyboru **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** .
 
 ## <a name="visual-experience"></a>Środowisko wizualne
 
 **Motyw kolorów**
 
-Wybierz **niebieski**, **światła**, **ciemny**, lub **niebieski (dodatkowy kontrast)** motyw kolorów IDE.
+Wybierz motyw koloru **niebieski**, **jasny**, **ciemny**lub **niebieski (dodatkowy kontrast)** dla środowiska IDE.
 
-Można zainstalować dodatkowe predefiniowane motywy i utworzyć motywy dostosowane pobierając i instalując **Edytor motywów kolorystycznych programu Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w **motyw kolorów** pola listy.
+Możesz zainstalować dodatkowe wstępnie zdefiniowane motywy i utworzyć niestandardowe motywy, pobierając i instalując **Edytor motywów kolorów programu Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia w polu listy **motywu kolorów** zostaną wyświetlone dodatkowe motywy koloru.
 
-**Zastosuj wielkość liter, ustawianie stylów na pasku menu**
+**Zastosuj styl wielkości liter dla tytułu do paska menu**
 
-Menu Użyj wielkimi literami style domyślnie. Usuń zaznaczenie tej opcji spowoduje użycie wszystkie wielkie litery style zamiast tego.
+Menu domyślnie używają stylu wielkości liter. Usuń zaznaczenie tej opcji, aby zamiast tego użyć wszystkich wielkich stylów.
 
 ::: moniker range=">=vs-2019"
 
-**Optymalizowanie renderowania na ekranach o różnych pikseli gęstości (wymaga ponownego uruchomienia)**
+**Optymalizacja renderowania dla ekranów o różnych gęstościach pikseli (wymaga ponownego uruchomienia)**
 
-Ta opcja włącza lub wyłącza — monitorowanie punktów na cal (DPI) świadomości (lub *PMA*). Po włączeniu PMA interfejsu użytkownika programu Visual Studio pojawia się wyraźny w dowolnych współczynnik skali wyświetlania monitor i konfiguracją DPI, z uwzględnieniem na wiele monitorów. Aby włączyć PMA, musisz mieć systemu Windows 10 kwietnia 2018 r. Zaktualizuj lub nowszej i .NET Framework 4,8 lub nowszej. (Ta opcja pojawia się wyszarzonym Jeśli te dwa wymagania wstępne nie są spełnione.)
+Ta opcja włącza lub wyłącza funkcję rozpoznawania punktów na cal (DPI) (lub *PMA*). Gdy PMA jest włączona, interfejs użytkownika programu Visual Studio jest bardziej wyrazisty w dowolnym monitorze monitora wyświetlania ekranu i konfiguracji DPI, w tym na wielu monitorach. Aby włączyć PMA, wymagana jest aktualizacja systemu Windows 10 z kwietnia 2018 lub nowsza i .NET Framework 4,8 lub nowsza. (Ta opcja jest wyświetlana w kolorze szarym, jeśli te dwa wymagania wstępne nie są spełnione).
 
 > [!TIP]
-> - Windows 10 ma ustawienie informujący, że **Windows Pozwól spróbować naprawić aplikacji, aby nie były one rozmyte**. Włączenie tego ustawienia Windows **na** ma niewielki wpływ, jeśli masz **optymalizacji renderowania na ekranach o różnych pikseli gęstości** zaznaczoną opcją.
-> - Windows 10 zawiera również **Rozwiązywanie problemów ze zgodnością programu**. Nie zaleca się próby naprawienia wyglądu programu Visual Studio za pomocą tego narzędzia do rozwiązywania problemów.
+> - System Windows 10 ma ustawienie informujące o tym, że **system Windows próbuje naprawić aplikacje, tak aby nie były zamazane**. Włączenie **tego ustawienia systemu** Windows ma niewielki efekt, jeśli jest zaznaczone pole wyboru **Optymalizuj Render dla ekranów z inną gęstością pikseli** .
+> - System Windows 10 zawiera również **Narzędzie do rozwiązywania problemów ze zgodnością programu**. Nie zalecamy próby naprawienia wyglądu programu Visual Studio za pomocą tego narzędzia do rozwiązywania problemów.
 
 ::: moniker-end
 
-**Automatycznie Dostosuj wygląd bazując na wydajności klienta**
+**Automatycznie Dostosuj środowisko wizualne na podstawie wydajności klienta**
 
-Określa, czy program Visual Studio ustawia dostosowania środowisko wizualne automatycznie, lub jawnie ustaw dostosowania. To dostosowanie może zmienić sposób wyświetlania kolorów z gradientów kolorów prostego lub jego może ograniczyć użycie animacji w menu lub okna podręcznego.
+Określa, czy program Visual Studio ustawia automatyczne dopasowanie do wizualizacji, czy też ustawia się w sposób jawny. Ta korekta może zmienić sposób wyświetlania kolorów z gradientów na płaskie kolory lub ograniczyć użycie animacji w menu lub oknach podręcznych.
 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 ma ustawienie informujący, że **Windows Pozwól spróbować naprawić aplikacji, aby nie były one rozmyte**. Włączenie tego ustawienia **na** jest zalecane, jeśli program Visual Studio pojawia się rozmyte na monitorze. Rozważ uaktualnienie do [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), która znacznie ulepszono przejrzystości wyświetlania ponieważ punktów — monitorowanie, na aplikację świadomą CAL.
+> System Windows 10 ma ustawienie informujące o tym, że **system Windows próbuje naprawić aplikacje, tak aby nie były zamazane**. Włączenie **tego ustawienia jest** zalecane, jeśli program Visual Studio wydaje się zamazany na monitorze. Rozważ uaktualnienie do [programu Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), która znacznie poprawiła czytelność ekranu, ponieważ jest to liczba punktów monitora na aplikację obsługującą cal.
 
 ::: moniker-end
 
-**Włącz bogate doświadczenia**
+**Włącz rozbudowane środowisko klienta**
 
-Włącza pełne wizualne środowisko programu Visual Studio, w tym w gradientach i animacji. Usuń zaznaczenie tej opcji, podczas korzystania z połączeniami pulpitu zdalnego lub starszych kart graficznych, ponieważ te funkcje mogą mieć niskiej wydajności w tych przypadkach. Ta opcja jest dostępna tylko wtedy, gdy usuniesz zaznaczenie **automatycznie Dostosuj wygląd bazując na kliencie** opcji.
+Umożliwia pełne środowisko wizualne programu Visual Studio, w tym gradienty i animacje. Wyczyść tę opcję w przypadku używania połączeń Pulpit zdalny lub starszych kart graficznych, ponieważ te funkcje mogą mieć w takich przypadkach niską wydajność. Ta opcja jest dostępna tylko w przypadku usunięcia zaznaczenia opcji **automatycznie Dostosuj środowisko wizualne na podstawie klienta** .
 
-**Użyj sprzętowego przyspieszania grafiki, jeśli jest dostępny**
+**Użyj sprzętowego przyspieszania grafiki, jeśli jest dostępne**
 
-Używa sprzętowego przyspieszania grafiki, jeśli jest on dostępny, zamiast przyspieszenie oprogramowania.
+Używa sprzętowego przyspieszania grafiki, jeśli jest dostępne, a nie przyspieszenia oprogramowania.
 
 ## <a name="other"></a>Inne
 
-**Elementów do wyświetlenia w menu Okno**
+**Elementy do wyświetlenia w menu okna**
 
-Dostosowuje liczbę przedziałów, które pojawiają się na liście Windows **okna** menu. Wprowadź liczbę między 1 a 24. Wartość domyślna to 10.
+Dostosowuje liczbę okien, które są wyświetlane na liście systemu Windows w menu **okno** . Wprowadź liczbę z zakresu od 1 do 24. Wartość domyślna to 10.
 
 **Elementy wyświetlane na listach ostatnio używanych**
 
-Dostosowuje liczbę niedawno używanych projektów i plików, które pojawiają się na **pliku** menu. Wprowadź liczbę między 1 a 24. Wartość domyślna to 10. Jest to prosty sposób pobierania niedawno używanych projektów i plików.
+Dostosowuje liczbę ostatnio używanych projektów i plików, które są wyświetlane w menu **plik** . Wprowadź liczbę z zakresu od 1 do 24. Wartość domyślna to 10. Jest to prosty sposób na pobranie niedawno używanych projektów i plików.
 
 **Pokaż pasek stanu**
 
-Wyświetla na pasku stanu. Na pasku stanu znajduje się w dolnej części okna środowiska IDE i wyświetla informacje o postępie trwające operacje.
+Wyświetla pasek stanu. Pasek stanu znajduje się u dołu okna IDE i wyświetla informacje o postępie trwających operacji.
 
-**Przycisk Zamknij dotyczy tylko aktywnego okna narzędzi**
+**Przycisk zamykania ma wpływ tylko na aktywne okno narzędzi**
 
-Określa, że w przypadku **Zamknij** kliknięty przycisk tylko okna narzędzi, które ma fokus został zamknięty i nie wszystkie okien narzędzi zadokowanych zestawu. Domyślnie ta opcja jest zaznaczona.
+Określa, że po kliknięciu przycisku **Zamknij** tylko okno narzędzia z fokusem jest zamknięte, a nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja jest zaznaczona.
 
-**Przycisk Ukryj automatycznie dotyczy tylko aktywnego okna narzędzi**
+**Przycisk Autoukrywanie ma wpływ tylko na aktywne okno narzędzi**
 
-Określa, że w przypadku **Autoukrywanie** przycisku, okna narzędzi, który ma fokus jest ukryta, automatycznie, a nie wszystkich okien narzędzi zadokowanych zestawu. Domyślnie ta opcja nie jest zaznaczona.
+Określa, że po  kliknięciu przycisku Autoukrywanie tylko okno narzędzia z fokusem jest ukryte automatycznie i nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja nie jest zaznaczona.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
 - [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)

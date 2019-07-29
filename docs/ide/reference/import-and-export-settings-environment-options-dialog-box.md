@@ -10,17 +10,13 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312038f14da876fae91b8d65e47235adeb1d14ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d683185927cf6b184c112df559a7da38da4a1662
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778508"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605591"
 ---
-# <a name="options-dialog-box-environment--import-and-export-settings"></a>Okno dialogowe Opcje: Środowisko \> Import i eksport ustawień
+# <a name="options-dialog-box-environment--import-and-export-settings"></a>Opcje — okno dialogowe: Ustawienia \> importowania i eksportowania środowiska
 
-Ta strona służy do określenia, gdzie jest zapisywany plik ustawień użytkownika. Aby uzyskać więcej informacji na temat ustawień, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-### <a name="see-also"></a>Zobacz także
-
-- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
+Użyj tej strony, aby określić miejsce zapisania pliku ustawień użytkownika. Aby uzyskać więcej informacji na temat ustawień, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).

@@ -10,27 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f67c00173db998b32d0a012af55428b87d1eda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0f14d830c9b0c3d091ffc380f64c128b8b79b83
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950911"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605916"
 ---
-# <a name="options-dialog-box-environment--startup"></a>Okno dialogowe Opcje: Środowisko \> uruchamiania
+# <a name="options-dialog-box-environment--startup"></a>Opcje — okno dialogowe: Uruchamianie \> środowiska
 
 ::: moniker range="vs-2017"
 
-Ta strona służy do Dostosuj stronę początkową programu Visual Studio lub ustawiania akcji różne domyślne, podczas uruchamiania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Dostosowywanie uruchamiania](../../ide/customizing-the-start-page-for-visual-studio.md).
+Użyj tej strony, aby dostosować stronę początkową programu Visual Studio lub ustawić inną akcję domyślną podczas uruchamiania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Dostosowywanie uruchamiania](../../ide/customizing-the-start-page-for-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Ta strona służy do ustawiania akcji różne domyślne podczas uruchamiania programu Visual Studio. W **podczas uruchamiania, należy otworzyć** , wybierz z **rozpoczęcia okna** (który umożliwia otwarcie nowego lub istniejącego projektu), **najnowsze rozwiązania**, lub **pusty środowisko**.
+Użyj tej strony, aby ustawić inną akcję domyślną podczas uruchamiania programu Visual Studio. Na **stronie podczas uruchamiania Otwórz** listę, wybierz z **okna uruchamiania** (co pozwala otworzyć nowy lub istniejący projekt), najnowsze **rozwiązanie**lub **puste środowisko**.
 
 ::: moniker-end
-
-## <a name="see-also"></a>Zobacz także
-
-- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

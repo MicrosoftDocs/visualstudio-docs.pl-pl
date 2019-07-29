@@ -15,39 +15,35 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: a67e909dc43f17e12dd63b7a8a3b2e8a4afacc5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969049"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605895"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 
-Możesz użyć **Szybkie uruchamianie** do szybkiego wyszukiwania i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony menu. Nie można użyć **Szybkie uruchamianie** wyszukiwania kodu i symbole. **Szybkie uruchamianie** pole wyszukiwania znajduje się w prawym górnym rogu paska menu i jest dostępny, naciskając klawisz **Ctrl**+**Q**. W polu wpisz ciąg wyszukiwania. Do wyszukiwania ciągów zawierających @, użyj ”@@”. 
+Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony i menu. Nie można użyć **szybkiego uruchamiania** do wyszukiwania kodu i symboli. Pole wyszukiwania **szybkiego uruchamiania** znajduje się w prawym górnym rogu paska menu i jest dostępne przez naciśnięcie **klawiszy CTRL**+**Q**. W polu wpisz ciąg wyszukiwania. Do wyszukiwania ciągów zawierających @, użyj ”@@”.
 
-**Szybkie uruchamianie** jest włączona domyślnie po zainstalowaniu programu Visual Studio. Na pasku menu, można wyświetlić lub ukryć **Szybkie uruchamianie** , wybierając **narzędzia** > **opcje**. Rozwiń **środowisk** węzła, a następnie wybierz **Szybkie uruchamianie**. Zaznacz lub wyczyść **Włącz pasek Szybkie uruchamianie** pole wyboru. Można również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
+**Szybkie uruchamianie** jest domyślnie włączone podczas instalowania programu Visual Studio. Na pasku menu można pokazać lub ukryć pasek **Szybkie uruchamianie** , wybierając pozycję **Narzędzia** > **Opcje**. Rozwiń węzeł **środowiska** , a następnie wybierz polecenie **Szybkie uruchamianie**. Zaznacz lub wyczyść pole wyboru **Włącz szybkie uruchamianie** . Możesz również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
 
 ## <a name="category-list"></a>Lista kategorii
 
-Szybkie uruchomieni wyszukiwania są wyświetlane w czterech kategorii: **Większość ostatnio używane**, **menu**, **opcje**, i **otwarte dokumenty**, wraz z liczbą elementów w kategorii. Przechodzenie za pośrednictwem wyników wyszukiwania według kategorii, wybierz **Ctrl**+**Q** kluczy, aby wyświetlić wszystkie wyniki z kategorii dalej. Po wyświetleniu ostatnia Kategoria **Ctrl**+**Q** pokazano kilka wyniki z każdej kategorii. Naciśnij klawisz **Ctrl**+**Shift**+**Q** do nawigowania do kategorii w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
+Wyniki wyszukiwania szybkiego uruchamiania są wyświetlane w czterech kategoriach: **Ostatnio używane**, **menu**, **Opcje**i **otwarte dokumenty**wraz z liczbą elementów w kategorii. Aby przechodzić przez wyniki wyszukiwania według kategorii, wybierz klawisze **Ctrl**+**Q** , aby wyświetlić wszystkie wyniki z kolejnej kategorii. Po wyświetleniu ostatniej kategorii **Ctrl**+**Q** pokazuje kilka wyników z każdej kategorii. Naciśnij **klawisze CTRL**+**SHIFT**+**Q** , aby przejść przez kategorie w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
 
-Można użyć następujących skrótów, aby ograniczyć wyszukiwanie do określonej kategorii.
+Możesz użyć następujących skrótów, aby ograniczyć wyszukiwanie do określonych kategorii.
 
-|Kategoria|Skrót|Opis skrótów|
+|Kategoria|Skrót|Opis skrótu|
 |--------------|--------------| - |
-|Ostatnio używane|@mru<br /><br /> Na przykład:`@mru font`|Wyświetla maksymalnie pięć elementów, które **ostatnio używane**.|
+|Ostatnio używane|@mru<br /><br /> Na przykład:`@mru font`|Wyświetla maksymalnie pięć elementów, które były **ostatnio używane**.|
 |Menu|@menu<br /><br /> Na przykład:`@menu project`|Ogranicza wyszukiwanie do elementów menu.|
-|Opcje|@opt<br /><br /> Na przykład:`@opt font`|Ogranicza wyszukiwanie do ustawienia w **opcje** okno dialogowe.|
-|Dokumenty|@doc<br /><br /> Na przykład:`@doc program.cs`|Ogranicza wyszukiwanie do nazw plików oraz ścieżek otwarte dokumenty kryteriów wyszukiwania, ale nie wyszukuje tekst wewnątrz same pliki.|
+|Opcje|@opt<br /><br /> Na przykład:`@opt font`|Ogranicza wyszukiwanie do ustawień w oknie dialogowym **Opcje** .|
+|Dokumenty|@doc<br /><br /> Na przykład:`@doc program.cs`|Ogranicza wyszukiwanie do nazw plików i ścieżek otwartych dokumentów dla kryteriów wyszukiwania, ale nie przeszukuje tekstu wewnątrz samych plików.|
 
 > [!NOTE]
-> Klawisze skrótów można zmienić na **ogólne** > **klawiatury** strony w **opcje** okno dialogowe.
+> Skróty**klawiaturowe** można zmienić na stronie **Ogólne** > w oknie dialogowym **Opcje** .
 
 ## <a name="show-previous-results"></a>Pokaż poprzednie wyniki
 
-Domyślnie termin wyszukiwania, które można wprowadzić nie są utrwalane między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczone, jeśli wyszukasz termin, przesuń kursor poza **Szybkie uruchamianie** obszaru, a następnie przejdź kopii. Do przechowywania wyników wyszukiwania, przejdź do **opcje** okna dialogowego wybierz **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki poprzedniego wyszukiwania gdy pasek Szybkie uruchamianie jest aktywny.** Pole wyboru. Następnym razem, przeprowadź wyszukiwanie lub pozostaw obszaru szybkiego uruchamiania, a wrócić, szybkiego uruchamiania będzie zachowują wyszukiwany termin, ostatnio używane i również wyświetlanie wyników wyszukiwania.
-
-## <a name="see-also"></a>Zobacz także
-
-- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
+Wprowadzony termin wyszukiwania nie jest domyślnie utrwalany między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczony, jeśli szukasz terminu, Przenieś kursor poza obszar **szybkiego uruchamiania** , a następnie wróć. Aby zachować wyniki wyszukiwania, przejdź do okna dialogowego **Opcje** , wybierz pozycję **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki wyszukiwania z poprzedniego wyszukiwania, gdy szybkie uruchamianie jest aktywowane.** pole wyboru. Przy następnym przeszukiwaniu pozostaw obszar szybkie uruchamianie i Wróć, szybkie uruchamianie spowoduje zachowanie ostatniego użytego terminu wyszukiwania, a także wyświetlenie wyników wyszukiwania.

@@ -1,24 +1,38 @@
 ---
-title: Eksportowanie informacji o subskrypcji | Dokumentacja firmy Microsoft
+title: Eksportowanie informacji o subskrypcji | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 03/14/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
-description: Dowiedz się, jak wyeksportować listę subskrybentów i szczegółowe informacje dotyczące ich przydziały subskrypcji.
-ms.openlocfilehash: 02081a0b36b2baf769396c13a2ae69f9af5be58b
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Dowiedz się, jak wyeksportować listę subskrybentów i szczegółowe informacje o ich przypisaniach subskrypcji.
+ms.openlocfilehash: f5fbdb69f9961c9ec80910387c0549cfbc182729
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783512"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605566"
 ---
-# <a name="exporting-subscription-information"></a>Eksportowanie informacji o subskrypcji
+# <a name="export-subscription-information"></a>Eksportowanie informacji o subskrypcji
+W [portalu Administratration](https://manage.visualstudio.com)subskrypcji programu Visual Studio można wyeksportować listę subskrybentów oraz szczegóły dotyczące ich przypisań. Te informacje obejmują nazwę, adres e-mail, alternatywny adres e-mail, poziom subskrypcji, datę przypisania, stan aktywacji, datę wygaśnięcia, pole odwołania, czy pliki do pobrania są włączone, kraj, język, stan subskrypcji i subskrypcja Ident.  Lista zostanie wyeksportowana jako plik CSV i można ją łatwo otworzyć w programie Microsoft Excel, aby utworzyć wykresy, przestawianie i inne artefakty.
 
-W ramach subskrypcji programu Visual Studio [portal administratora](https://manage.visualstudio.com), można wyeksportować listę użytkowników i szczegółowe informacje o ich przypisania. Informacje te obejmują ich nazwy, adres e-mail, alternatywny adres e-mail, poziom subskrypcji, dat, stan aktywacji, datę wygaśnięcia, odwołanie do pola, pliki do pobrania włączone, kraj, języka, stan subskrypcji i identyfikator GUID subskrypcji.
+Wszystkie informacje o subskrybencie w jednym miejscu mogą pomóc Ci w następujących kwestiach:
+- Uzyskaj ogólny widok, który subskrypcje są używane przez zespół i/lub lokalizację w całej organizacji.
+- Opracowywanie planów i budżetów na potrzeby przyszłych zakupów w ramach subskrypcji. 
+- Zachęć użytkowników, którzy mają przypisane subskrypcje do aktywacji.
+- Przejmij akcję proaktywnie przed wygaśnięciem subskrypcji.  
+- Określ, gdzie subskrypcje mogą być nadmiarowe. 
 
-Ta funkcja jest przydatna dla kilku scenariuszy, takich jak śledzenia przypisań i daty wygaśnięcia. Jeśli na przykład są przenoszone z zakazy do identyfikatorów GUID, które śledzą przypisania subskrypcji, umożliwia ten raport przy użyciu formuły Wyszukaj.pionowo w programie Microsoft Excel odpowiednio dopasowania subskrybentów.
-
-Aby przeprowadzić eksportu, po prostu wybierz **wyeksportować** kartę, a plik zostanie pobrany na komputer lokalny. Plik będzie zawierać nazwę umowy, który zawiera subskrypcji użytkownika, a także datę eksportu.
+## <a name="export-your-subscriptions"></a>Eksportowanie subskrypcji
+Aby przeprowadzić eksport:
+1. Zaloguj się do [portalu administracyjnego](https://manage.visualstudio.com).
+2. Wybierz kartę **Eksportuj** . plik zostanie pobrany na komputer lokalny. Plik będzie zawierać nazwę umowy zawierającej subskrypcje użytkowników, a także datę eksportu.
 > [!div class="mx-imgBorder"]
-> ![Eksportuj subskrybentów](_img/exporting-subscriptions/exporting-subscriptions.png)
+> ![Eksportowanie subskrybentów](_img/exporting-subscriptions/exporting-subscriptions.png)
+
+## <a name="next-steps"></a>Następne kroki
+- Aby uzyskać więcej informacji na temat zarządzania subskrypcjami, zobacz te pomocne tematy:
+    - [Wygasłe subskrypcje](handle-expired-license.md)
+    - [Nadmierne alokacje](handle-overclaimed-license.md)
+    - [Maksymalne użycie](maximum-usage.md)
+- Potrzebujesz pomocy w zakresie zarządzania subskrypcjami?  Skontaktuj się z [pomocą techniczną programu Visual Studio Administration i subscriptions](https://visualstudio.microsoft.com/support/support-overview-vs).

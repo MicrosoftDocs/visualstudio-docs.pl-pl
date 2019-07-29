@@ -1,37 +1,37 @@
 ---
-title: Osobistych adresów E-mail wyświetlany w witrynie VLSC
+title: Osobiste wiadomości e-mail wyświetlane w VLSC
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/23/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
-description: Subskrypcje programu Visual Studio — dlaczego widzę Hotmail lub Gmail adresy moich subskrybentów?
-ms.openlocfilehash: acba6b5c1b5efac80590d02e3c813650962b4892
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Subskrypcje programu Visual Studio — Dlaczego widzę adresy Hotmail i Gmail dla subskrybentów?
+ms.openlocfilehash: 8418a177e793f0b4fe9a5019d2cf62fa724312ff
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250721"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605755"
 ---
-# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Subskrypcje programu Visual Studio — dlaczego widzę adresy Hotmail lub Gmail moich subskrybentów?
-
-Jak firmy migracji z woluminu licencjonowania Service Center (VLSC) do nowego programu Visual Studio [portal administratora subskrypcji](https://manage.visualstudio.com), Administratorzy mogą być zaskoczeniem, się okazać, że "Sign in adres E-mail" dla niektórych subskrybentów Pokazuje 3 strony adres e-mail, takich jak Hotmail, Gmail lub Yahoo.  Aby uzyskać więcej informacji, zapoznaj się z [ten film wideo](https://www.youtube.com/watch?v=1op-i1zEMfY&t=0s&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=6).
+# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Subskrypcje programu Visual Studio — Dlaczego widzę adresy Hotmail i Gmail dla subskrybentów?
+Po przeprowadzeniu migracji z witryny Volume Licensing Service Center (VLSC) do nowego [portalu administratora subskrypcji](https://manage.visualstudio.com)programu Visual Studio Administratorzy mogli stwierdzić, że adres e-mail logowania dla niektórych subskrybentów pokazuje adres e-mail innej firmy adres, taki jak Hotmail, Gmail lub Yahoo.  Aby uzyskać więcej informacji, zapoznaj się z [tym wideo](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
 
 ## <a name="cause"></a>Przyczyna
+Ten scenariusz występuje ze względu na procesy logowania skojarzone ze starszym doświadczeniem subskrybenta MSDN. Użytkownicy zostali zmigrowani z witryny Volume License Service Center (VLSC) do portalu administracyjnego subskrypcji programu Visual Studio bez żadnych modyfikacji. Administratorzy mogą nie wiedzieć, że użytkownicy korzystali z kont osobistych w celu uzyskania dostępu do korzyści z subskrypcji. Przed migracją subskrybentów programu Visual Studio, które zostały wykonane w 2016, były dwie akcje wymagane do pomyślnego użycia Visual Studio Subscription:
+1. Administrator "przypisał" subskrypcję do indywidualnego subskrybenta przy użyciu służbowego adresu e-mail.
+2. Subskrybent "aktywowany" w ramach subskrypcji.
 
-W tym scenariuszu występuje z powodu procesów logowania, które zostały skojarzone z ze starszej wersji środowiska dla subskrybentów MSDN. Użytkownicy, zostały poddane migracji z woluminu licencji Service Center (VLSC) do nowego portalu bez modyfikacji. Administratorzy mogą nie zostać pamiętać, że użytkownicy tej pory było używane konta osobiste na dostęp do korzyści z subskrypcji. Przed migracji dla subskrybentów programu Visual Studio, które zostały wykonane na 2016, istniały dwie akcje wymagane, aby pomyślnie korzystać z subskrypcji programu Visual Studio:
-1. Administrator "przypisane" subskrypcji do poszczególnych subskrybentów przy użyciu ich służbowego adresu e-mail.
-2. Subskrybent "aktywowano" subskrypcji.
-
-Podczas procesu aktywacji subskrybenta: Konto Microsoft (MSA) była wymagana do logowania. Jeśli subskrybent nie podejmuje próby wykonania swojego konta służbowego (np. tasha@contoso.com) wiadomość MSA, ich można utworzyć nowego konta Microsoft lub wykorzystać istniejącą grupę. Pozwoliło to odnotować "Sign in adresu E-mail" jest inny niż "Przypisane do adresów E-mail".
+Podczas procesu aktywacji subskrybenta: Konto Microsoft (MSA) było wymagane do zalogowania się. Jeśli subskrybent nie podjął próby przeprowadzenia konta służbowego (np. tasha@contoso.com) jako elementu MSA, może utworzyć nowy element MSA lub wykorzystać istniejący. W związku z tym "adres E-mail logowania" jest inny niż przypisany do adresu E-mail.
 
 > [!NOTE]
-> Nowe środowisko dla subskrybentów na [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) obsługuje zarówno służbowe, jak i konto Microsoft (MAA) typów tożsamości.
+> Nowe środowisko subskrybenta w [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) systemie obsługuje typy tożsamości: służbowe i konto Microsoft (MAA).
 
-Na koniec ponieważ migracja administrator trwa dane z witryny VLSC dotyczące "Logowanie w adresie E-mail subskrybenta" do wypełnienia nowego środowiska zarządzania subskrybenta, zmigrowanych niedawno Administratorzy może zostać wyświetlony te wcześniej niezauważona kont osobistych, ze względu na zmiany interfejsu użytkownika, które uwidocznić te informacje.
+Na koniec ponieważ migracja przez administratora dotyczyła danych z usługi VLSC w odniesieniu do adresu E-mail subskrybenta, aby wypełnić nowe środowisko zarządzania subskrybentami, niedawno zmigrowani Administratorzy mogli zobaczyć te wcześniej niezauważalne konta osobiste ze względu na zmiany w interfejsie użytkownika, które te informacje były widoczne.
 
 ## <a name="solution"></a>Rozwiązanie
+Aby rozwiązać ten problem, należy edytować informacje o subskrybencie w celu zaktualizowania ich adresów e-mail logowania.  Zmiany mogą być wprowadzane dla indywidualnych subskrybentów lub zbiorczo. Aby uzyskać pełne informacje, zobacz [Edytowanie subskrypcji](edit-license.md).
 
-Aby rozwiązać ten problem, należy edytować informacje subskrybenta do zaktualizowania ich adresy e-mail logowania.  Można wprowadzić zmiany dla poszczególnych subskrybentów lub zbiorczo. Aby uzyskać pełne informacje, odwiedź [edytowanie subskrypcji](edit-license.md).
+##  <a name="next-steps"></a>Następne kroki
+- Jeśli Zaktualizowano adresy e-mail subskrybentów, można powiadomić ich, że informacje logowania zostały zmienione.  Otrzymają także wiadomość e-mail z zaktualizowanymi informacjami.
+- Przydatne może być odfiltrowanie [listy subskrybentów](search-license.md) w organizacji, aby wyszukać wszelkie adresy e-mail logowania, które mogą wymagać zmiany.  
 
-Po zaktualizowaniu adresy e-mail subskrybentów można powiadamiać o tym, że zmienił się informacjami logowania.  Również otrzymają wiadomość e-mail przy użyciu zaktualizowanych informacji.

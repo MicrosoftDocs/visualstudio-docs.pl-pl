@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe rozszerzenia, środowisko, opcje
+title: Rozszerzenia, środowisko, Opcje — okno dialogowe
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,33 +10,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d2ddf174255a7db85e3eb61d71472748287be90
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790854"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605867"
 ---
-# <a name="options-dialog-box-environment--extensions"></a>Okno dialogowe Opcje: Środowisko \> rozszerzenia
+# <a name="options-dialog-box-environment--extensions"></a>Opcje — okno dialogowe: Rozszerzenia \> środowiska
 
-Ta strona służy do ustawiania opcji jak wykonuje aktualizacje w programie Visual Studio i jak rozszerzenia są aktualizowane i odnalezione.
+Ta strona służy do ustawiania opcji wykonywania aktualizacji przez program Visual Studio oraz sposobu aktualizowania i odnajdowania rozszerzeń.
 
 ## <a name="automatically-check-for-updates"></a>Automatycznie sprawdzaj dostępność aktualizacji
 
-Po zaznaczeniu tej opcji, program Visual Studio Okresowo sprawdzaj aktualizacje samego, zainstalowanych zestawów SDK i narzędzi i rozszerzeń dla i wyświetlać powiadomienia na pasku menu, gdy są dostępne aktualizacje. Aby uzyskać więcej informacji, zobacz [zaktualizować program Visual Studio](../../install/update-visual-studio.md).
+Po zaznaczeniu tej opcji program Visual Studio będzie okresowo sprawdzał dostępność aktualizacji, zainstalowanych zestawów SDK i narzędzi oraz rozszerzeń oraz wyświetlać powiadomienia na pasku menu, gdy są dostępne aktualizacje. Aby uzyskać więcej informacji, zobacz [Aktualizowanie programu Visual Studio](../../install/update-visual-studio.md).
 
-## <a name="automatically-update-extensions"></a>Automatyczne aktualizowanie rozszerzeń
+## <a name="automatically-update-extensions"></a>Automatycznie Aktualizuj rozszerzenia
 
-Po zaznaczeniu tej opcji, aktualizacje i rozszerzenia są wprowadzane bez monitowania użytkownika. Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Po zaznaczeniu tej opcji aktualizacje rozszerzeń są wprowadzane bez monitowania. Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
-## <a name="load-per-user-extensions-when-running-as-administrator"></a>Załaduj rozszerzenia dla poszczególnych użytkowników podczas uruchamiania jako administrator
+## <a name="load-per-user-extensions-when-running-as-administrator"></a>Załaduj rozszerzenia na użytkownika podczas uruchamiania jako administrator
 
 Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="additional-extension-galleries"></a>Dodatkowe galerie rozszerzeń
 
-Funkcja przedsiębiorstwa, która umożliwia obsługę galerie własnościowych rozszerzeń. Aby uzyskać więcej informacji, zobacz [galerie prywatne](../../extensibility/private-galleries.md).
-
-## <a name="see-also"></a>Zobacz także
-
-- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
+Funkcja Enterprise, która umożliwia obsługę galerii rozszerzeń własnościowych. Aby uzyskać więcej informacji, zobacz [prywatne galerie](../../extensibility/private-galleries.md).

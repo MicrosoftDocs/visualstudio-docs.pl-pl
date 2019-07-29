@@ -1,93 +1,49 @@
 ---
-title: Przypisywanie licencji do subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
-author: TerryGLee
-ms.author: tglee
-manager: jillfra
-ms.date: 07/16/2018
+title: Przypisywanie licencji do subskrypcji programu Visual Studio | Microsoft Docs
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do subskrybentów
-ms.openlocfilehash: 6e9eb19ce4f9947f730bcd32be5ddcc931770bde
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8125c5cbad2ff44dabbf1b0c5014c313d75d2e71
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783538"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604713"
 ---
-# <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Przypisz licencje w portal administratora subskrypcji programu Visual Studio
+# <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie licencji w portalu administratora subskrypcji programu Visual Studio
+Jako administrator subskrypcji programu Visual Studio można używać portalu administracyjnego do przypisywania subskrypcji do poszczególnych użytkowników i grup użytkowników.
 
-Jako administratora subskrypcji programu Visual Studio z portalu administratora służy do przypisywania subskrypcji do poszczególnych użytkowników i grup użytkowników.
+W przypadku grup użytkowników można przypisywać do nich subskrypcje pojedynczo lub używać funkcji [zbiorczego dodawania](assign-license-bulk.md) , aby szybko i łatwo przekazywać listy subskrybentów i ich informacje o subskrypcji.
 
-Dla grup użytkowników, można przypisać subskrypcji do nich jedną w czasie, lub użyj **zbiorcze Dodawanie** funkcja można szybko i łatwo przekazać listę subskrybentów i informacjami o subskrypcji.
+## <a name="add-a-single-subscriber"></a>Dodaj pojedynczego abonenta
+Poniżej przedstawiono sposób przypisywania licencji subskrypcyjnej programu Visual Studio do nowego użytkownika, dzięki czemu mogą oni uzyskać dostęp do korzyści z subskrypcji.
 
-## <a name="individual-assignments"></a>Poszczególne przypisania
-
-Poniżej przedstawiono sposób przypisać licencję subskrypcji programu Visual Studio do nowego użytkownika, dzięki czemu mogą uzyskiwać dostęp do korzyści z subskrypcji.
-
-1. Zaloguj się do [portal administratora](https://manage.visualstudio.com).
-
-2. Aby przypisać licencję do pojedynczego subskrybenta programu Visual Studio, w górnej części tej tabeli, wybierz pozycję **Dodaj**.
+1. Zaloguj się do [portalu administracyjnego](https://manage.visualstudio.com).
+2. Aby przypisać licencję do pojedynczego subskrybenta programu Visual Studio, w górnej części tabeli wybierz pozycję **Dodaj**.
    > [!div class="mx-imgBorder"]
-   > ![Dodaj pojedynczego subskrybenta](media/add-single-subscriber.png)
-
-3. Wprowadź informacje w polach formularza dla nowych subskrybentów. Jeśli Twoja organizacja używa usługi Azure Active Directory, w tym polu działa jako funkcja wyszukiwania można znaleźć osób w bieżącym katalogu, dzięki czemu można wybrać właściwy użytkownik z wyników wyszukiwania. Po wybraniu tej osobie, ich nazwy, zaloguj się poczty e-mail i powiadomienie e-mail zostaną wypełnione automatycznie.
+   > ![Dodaj pojedynczego abonenta](media/add-single-subscriber.png)
+3. Wprowadź informacje w polach formularza dla nowego subskrybenta. Jeśli Twoja organizacja używa Azure Active Directory, pole **name** działa jako funkcja wyszukiwania, aby znaleźć osoby w bieżącym katalogu, dzięki czemu można wybrać odpowiedniego użytkownika z wyników wyszukiwania. Po wybraniu tej osoby wiadomość e-mail z logowaniem i wiadomości e-mail z powiadomieniem będą automatycznie wypełniane.
    > [!div class="mx-imgBorder"]
-   > ![Dodaj nowy adres e-mail powiadamiania](media/add-new-subscriber-notification-email.png)
+   > ![Szczegóły subskrybenta](_img/assign-license-add/subscriber-details.png)
 
-    Jeśli chcesz, aby mieć dostęp do plików do pobrania oprogramowania, po zalogowaniu się do tego subskrybenta [portalu subskrypcji programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że pozostawisz przełącznik pliki do pobrania, włączone w **ustawienia pobierania** sekcja. Jeśli chcesz wyłączyć pliki do pobrania, użytkownik nie ma dostępu do plików do pobrania oprogramowania, ale będą nadal mieć dostęp do wszystkich innych korzyści objętych subskrypcją.
+    Jeśli chcesz, aby ten subskrybent miał dostęp do pobierania oprogramowania po zalogowaniu się do [portalu subskrypcji programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że włączono przełącznik pobierania w sekcji **ustawienia pobierania** . Jeśli zdecydujesz się wyłączyć pobieranie, użytkownik nie będzie miał dostępu do pobierania oprogramowania, ale nadal będzie miał dostęp do wszystkich innych korzyści uwzględnionych w subskrypcji.
    > [!div class="mx-imgBorder"]
    > ![Dostęp do plików do pobrania](media/access-to-downloads.png)
 
-    Jeśli chcesz zmienić język, w którym subskrybent otrzymuje informacje, możesz zrobić to w **preferencje dotyczące komunikacji** sekcji.
+       If you'd like to add your own reference notes to the subscription, you can do so in the **Add reference** section.
    > [!div class="mx-imgBorder"]
-   > ![Zmień język do użycia podczas wysyłania wiadomości e-mail z powiadomieniem](media/change-subscriber-communication-preference.png)
+   > ![Dodawanie własnych notatek referencyjnych do każdej subskrypcji](media/add-subscriber-reference-notes.png)
 
-    Jeśli chcesz dodać notatki odwołania do subskrypcji, możesz zrobić to w **Dodaj odwołanie do** sekcji.
+    Po zakończeniu wybierania opcji i wprowadzaniu danych dla subskrybenta wybierz pozycję **Dodaj** w dolnej części okna **Dodawanie subskrybenta** .
    > [!div class="mx-imgBorder"]
-   > ![Dodaj notatki odwołania do każdej subskrypcji](media/add-subscriber-reference-notes.png)
+   > ![Wybierz przycisk Dodaj](media/add-button.png)
 
-    Gdy ukończysz pracę wybierając opcje i wprowadzania danych dla subskrybenta, wybierz **Dodaj** w dolnej części **Dodaj subskrybenta** staną się.
-   > [!div class="mx-imgBorder"]
-   > ![Kliknij przycisk Dodaj](media/add-button.png)
+4. Po dodaniu subskrybenta wiadomość E-mail z przypisaniem zostanie automatycznie wysłana do nowego subskrybenta z dodatkowymi instrukcjami. W dowolnym momencie możesz wysłać wiadomość E-mail z przypisaniem, wybierając abonenta i klikając przycisk **Wyślij ponownie** w górnym menu.
 
-4. Po dodaniu subskrybenta, wiadomość e-mail dotycząca przypisania będzie automatycznie wysyłane do nowych subskrybentów z dalszymi instrukcjami. Możesz wysłać wiadomość e-mail dotycząca przypisania w dowolnym momencie ponownie, wybierając subskrybenta i klikając **Wyślij ponownie** przycisku w menu u góry.
-   > [!div class="mx-imgBorder"]
-   > ![Wyślij ponownie wiadomość e-mail dotyczącą aktywacji do żadnego użytkownika lub wielu użytkowników zawsze wtedy, gdy chcesz](media/resend-subscriber-activation-emails.png)
+## <a name="next-steps"></a>Następne kroki
+- Masz dużo użytkowników do dodania?  Dowiedz się, jak przypisać subskrypcje do [wielu subskrybentów](assign-license-bulk.md).
+- Czy potrzebujesz pomocy?  Skontaktuj się z [pomocą techniczną programu Visual Studio Administration i subscriptions](https://visualstudio.microsoft.com/support/support-overview-vs).
 
-## <a name="bulk-assignments"></a>Zbiorcze przypisania
-
-1. Aby dodać wielu subskrybentów w tym samym czasie, przejdź do **Zarządzanie subskrybentów** kartę. Na Wstążce u góry kliknij **zbiorcze Dodawanie**.
-   > [!div class="mx-imgBorder"]
-   > ![Dodaj wielu subskrybentów](media/add-multiple-subscribers.png)
-
-2. Przypisz zbiorczo używa szablonu programu Microsoft Excel, można przekazać subskrybentów. W oknie dialogowym Przekaż wielu subskrybentów kliknij **Pobierz** pobrać szablon.
-   > [!div class="mx-imgBorder"]
-   > ![Pobierz szablon programu Excel, aby przesłać wielu subskrybentów](media/download-template-upload-subscribers.png)
-   >
-   > [!NOTE]
-   > Zawsze należy pobrać najnowszą wersję tego szablonu. Jeśli używasz starszej wersji, przekazywanie zbiorcze może zakończyć się niepowodzeniem.
-
-3. W arkuszu kalkulacyjnym programu Excel Wypełnij pola informacjami dla użytkowników indywidualnych, które chcesz przypisać subskrypcje. (*Odwołania* pole jest opcjonalne.) Zapisz plik lokalnie w przypadku, gdy wszystko będzie gotowe.
-
-   Aby zapewnić bezproblemowe przekazywania, należy stosować poniższe najlepsze rozwiązania:
-
-    - Upewnij się, że żadne pole formularza będzie zawierać przecinków.
-    - Usuwaj odstępy przed i po nim pola formularza.
-    - Upewnij się, nazwy użytkownika nie zawierają dodatkowe spacje między nazwami legalną dwuczęściową pierwszy lub ostatni (na przykład, jeśli osoba ma dwuczęściowej nazwy pierwszej, takie jak "Może być użytkownikami są Maggie", jego należy wpisać jako "MaggieMay", ponieważ system nie będzie trim dodatkowe miejsce.)
-
-4. Wróć do portalu administratora subskrypcji programu Visual Studio. W **Przekaż wielu subskrybentów** okno dialogowe, kliknij przycisk **Przeglądaj**.
-   > [!div class="mx-imgBorder"]
-   > ![Przejdź do zapisany szablon, aby Przekaż wielu subskrybentów](media/bulk-add-browse-saved-template.png)
-
-5. Przejdź do pliku programu Excel, który został zapisany, a następnie kliknij przycisk **OK**.
-   > [!div class="mx-imgBorder"]
-   > ![Przekaż szablon programu Excel, aby przesłać wielu subskrybentów](media/bulk-upload-subscribers.png)
-
-    Pojawi się okno dialogowe postępu przekazywania.
-
-    Jeśli szablon zawiera błędy, przekazywanie zakończy się niepowodzeniem, a zostaną wyświetlone błędy, aby użytkownik może poprawić szablonu i ponów próbę przekazywania masowego.
-   > [!div class="mx-imgBorder"]
-   > ![Komunikat o błędzie w przypadku niepowodzenia przekazywania wielu subskrybentów](media/bulk-add-template-failed.png)
-
-    Jeśli przekazywanie zakończy się pomyślnie, zobaczysz listę subskrybentów i komunikat z potwierdzeniem.
-   > [!div class="mx-imgBorder"]
-   > ![Komunikat z potwierdzeniem Jeśli przekazywanie wielu subskrybentów zakończy się powodzeniem.](media/bulk-add-template-success.png)

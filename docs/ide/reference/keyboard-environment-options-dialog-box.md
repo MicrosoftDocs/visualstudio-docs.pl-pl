@@ -10,17 +10,13 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 313c955a6e7e12f1021e78d6280c5d586f5d617d
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970151"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605520"
 ---
-# <a name="options-dialog-box-environment--keyboard"></a>Okno dialogowe Opcje: Środowisko \> klawiatury
+# <a name="options-dialog-box-environment--keyboard"></a>Opcje — okno dialogowe: Klawiatura \> środowiskowa
 
-Ta strona służy do ustawiania mapowania klawiatury. Aby uzyskać więcej informacji na temat mapowań zobacz [określenie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
-
-## <a name="see-also"></a>Zobacz także
-
-- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
+Ta strona służy do ustawiania mapowań klawiatury. Aby uzyskać więcej informacji na temat mapowań, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

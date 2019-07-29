@@ -16,20 +16,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23067475c8c5ff4d858ade8443946f7d9c73afc
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461336"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605988"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Opcje, edytor tekstu, JavaScript, formatowanie
-Na stronie **Formatowanie** okna dialogowego **Opcje** można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz **Narzędzia**, **Opcje**, a następnie rozwiń **Edytor tekstu**, **JavaScript**i **Formatowanie**.
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Opcje — okno dialogowe: Formatowanie JavaScript \> \> edytora tekstu
+
+Na stronie **Formatowanie** okna dialogowego **Opcje** można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz**Opcje** **Narzędzia** > , a następnie rozwiń pozycję **Edytor** > tekstu**JavaScript/TypeScript** > **Formatowanie**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>Automatyczne formatowanie
- Te opcje określają, kiedy formatowanie jest wykonywane w widoku **źródła** .
+
+Te opcje określają, kiedy formatowanie jest wykonywane w widoku **źródła** .
 
 ### <a name="uielement-list"></a>Lista elementów UI
 
@@ -42,9 +44,10 @@ Na stronie **Formatowanie** okna dialogowego **Opcje** można ustawić opcje for
 |**Formatuj przy wklejaniu**|Gdy ta opcja jest zaznaczona, Edytor kodu ponownie sformatuje kod po wklejeniu go do edytora. Edytor używa aktualnie zdefiniowanych reguł formatowania. Jeśli ta opcja nie jest zaznaczona, Edytor używa oryginalnego formatowania wklejonego kodu.|
 
 ## <a name="new-lines"></a>Nowe wiersze
- Te opcje określają, czy Edytor kodu umieszcza otwierający nawias klamrowy dla funkcji i bloków sterujących w nowym wierszu.
 
-### <a name="uielement-list"></a>Lista elementów UI
+Te opcje określają, czy Edytor kodu umieszcza otwierający nawias klamrowy dla funkcji i bloków sterujących w nowym wierszu.
+
+### <a name="uielement-list"></a>Lista elementów UIElement
 
 |Opcja|Opis|
 |------------|-----------------|
@@ -52,9 +55,10 @@ Na stronie **Formatowanie** okna dialogowego **Opcje** można ustawić opcje for
 |**Umieść otwierający nawias klamrowy w nowym wierszu dla bloków sterowania**|Gdy ta opcja jest zaznaczona, Edytor kodu przenosi nawias otwierający, który jest skojarzony z blokiem sterowania (na przykład `if` `while` bloki sterujące) do nowego wiersza.|
 
 ## <a name="spacing"></a>Odstępy
- Te opcje określają, jak spacje są wstawiane w widoku **źródła** .
 
-### <a name="uielement-list"></a>Lista elementów UI
+Te opcje określają, jak spacje są wstawiane w widoku **źródła** .
+
+### <a name="uielement-list"></a>Lista elementów UIElement
 
 |Opcja|Opis|
 |------------|-----------------|
@@ -65,6 +69,6 @@ Na stronie **Formatowanie** okna dialogowego **Opcje** można ustawić opcje for
 |**Wstaw spację po słowie kluczowym function dla funkcji anonimowych**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje spację po `function` słowie kluczowym dla funkcji anonimowych.|
 |**Wstaw spację po otwarciu i przed zamknięciem niepustego nawiasu**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po nawiasie otwierającym i przed nawiasem zamykającym, jeśli znaki niepuste są obecne w nawiasach.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

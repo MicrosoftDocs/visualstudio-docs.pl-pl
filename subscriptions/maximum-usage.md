@@ -6,20 +6,18 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Dowiedz się, jak wyświetlić maksymalną liczbę przypisanych subskrypcji w portalu administracyjnym
-ms.openlocfilehash: a662aba65d166b2690b268c6d87247a7ff415b3b
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493368"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605497"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Śledzenie liczby przypisanych subskrypcji przy użyciu funkcji maksymalnego użycia
-
 Nowa funkcja portalu administracyjnego subskrypcji programu Visual Studio pomaga śledzić liczbę subskrybowanych i przypisanych subskrypcji oraz określać szczytową liczbę subskrypcji każdego przypisanego poziomu, zarówno w ciągu ostatniego roku, jak i w całej czas trwania umów. 
 
 ## <a name="view-your-maximum-usage"></a>Wyświetlanie maksymalnego użycia
 Aby wyświetlić szczytową liczbę subskrypcji przypisanych do dowolnej umowy i poziomu subskrypcji:
-
 1. Wybierz umowę do wyświetlenia na liście rozwijanej w lewym górnym rogu portalu. (Jeśli masz tylko jedną umowę, zostanie ona już zaznaczona).
 2. Kliknij kartę **maksymalne użycie** .  
     > [!div class="mx-imgBorder"]
@@ -41,8 +39,7 @@ Na przykład w powyższej tabeli można zobaczyć, że w dniu 12/13/2018 wystąp
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>PYTANIA Jak informacje o maksymalnym użyciu różnią się od informacji o przypisaniu dostępnych w sekcji "przegląd" po lewej stronie portalu?
-
-Odp.:  Informacje zawarte w tym omówieniu przedstawiają bieżące przypisania i dostępne subskrypcje dla poszczególnych poziomów subskrypcji.  Może to być bardzo różne od maksymalnej liczby subskrypcji przypisanych do umowy w dowolnym momencie.  Funkcja maksymalnego użycia pozwala zobaczyć, kiedy zostały osiągnięte maksymalne poziomy assignnment i jakie są poziomy.  Jest to ważne rozróżnienie, ponieważ opłaty za subskrypcje są naliczane na podstawie maksymalnej liczby subskrypcji przypisanych w dowolnym momencie w roku. 
+Odp.:  Informacje zawarte w tym omówieniu przedstawiają *bieżące* przypisania i dostępne subskrypcje dla poszczególnych poziomów subskrypcji.  Może to być bardzo różne od maksymalnej liczby subskrypcji przypisanych do umowy w bieżącym roku lub w okresie obowiązywania umowy.  Funkcja maksymalnego użycia pozwala zobaczyć, kiedy zostały osiągnięte maksymalne poziomy assignnment i jakie są poziomy.  Jest to ważne rozróżnienie, ponieważ opłaty za subskrypcje są naliczane na podstawie maksymalnej liczby subskrypcji przypisanych w dowolnym momencie w roku. 
 
 ## <a name="resources"></a>Zasoby
 - [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://aka.ms/vslicensing)
@@ -50,4 +47,5 @@ Odp.:  Informacje zawarte w tym omówieniu przedstawiają bieżące przypisania 
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="next-steps"></a>Następne kroki
-Jeśli masz jakieś pytania dotyczące przypisań subskrypcji lub innych aspektów portalu administracyjnego, skontaktuj się https://visualstudio.microsoft.com/subscriptions/support/ z pomocą techniczną. 
+- Jeśli masz jakieś pytania dotyczące przypisań subskrypcji lub innych aspektów portalu administracyjnego, skontaktuj się https://visualstudio.microsoft.com/subscriptions/support/ z pomocą techniczną. 
+- Dowiedz się więcej o tym, co należy zrobić, Jeśli przypiszesz więcej zakupionych subskrypcji, nazywanych [nadmiernymi alokacjami](handle-overclaimed-license.md).
