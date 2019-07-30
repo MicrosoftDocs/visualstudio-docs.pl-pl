@@ -10,94 +10,190 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e5bc02948d410d465d7ac1be798ff17ebc5daaf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821511"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661818"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 
 Dziennik zmian w programie Visual Studio Tools for Unity.
 
-## <a name="2020"></a>2.0.2.0
+## <a name="2200"></a>2.2.0.0
 
-wydana 2 kwietnia 2019 r.
+Wydana 25 lipca 2019
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Ocena:**
+
+  - Stała Inspekcja przy użyciu typów IntPtr.
+
+- **Debuger:**
+
+  - Stała obsługa catchpoints i punktów przerwania funkcji.
+
+## <a name="2130"></a>2.1.3.0
+
+Wydanie 9 lipca 2019
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Debuger:**
+
+  - Dodano obsługę przechwytywania podklas wyjątków.
+
+  - Dodano obsługę protokołu MDS 2,51.
+
+- **Integracja:**
+
+  - Dodano obsługę plików asmdef.
+
+  - Przełącz do trybu zmiany nazwy, gdy plik zostanie dodany z szablonu (aby naśladować zachowanie edytora Unity).
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integracja:**
+
+  - Stała obsługa nieprawidłowych komunikatów podczas komunikowania się z graczami aparatu Unity.
+
+- **Ocena:**
+
+  - Stała obsługa przestrzeni nazw w wyrażeniach.
+
+## <a name="2120"></a>2.1.2.0
+
+Wydanie 2 lipca 2019
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Ocena:**
+
+  - Naprawiono raportowanie błędów z wyrażeniami niemożliwymi do przeanalizowania.
+
+## <a name="2110"></a>2.1.1.0
+
+Wydana 27 czerwca 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Integracja:**
 
-  - Dodano obsługę automatycznego odświeżania bazy danych zasobów firmy Unity na zapisanie. To jest domyślnie włączona i wyzwoli ponowną kompilację po stronie platformy Unity podczas zapisywania skryptu w programie Visual Studio. Można wyłączyć tę funkcję w Tools\Options\Tools, aby zapisać AssetDatabase Unity\Refresh Unity na.
+  - Zaktualizowano interfejs API o bezzachowań do 2019,1.
 
-  - Dodano obsługę ustawiania instalacji preferowanego środowiska unity dokumentację w trybie offline.
+### <a name="bug-fixes"></a>Poprawki błędów
 
-  - Menu kontekstowe dodanych funkcji nowego edytora.
+- **Integracja:**
+
+  - Stała wydajność Eksploratora projektów środowiska Unity.
+
+  - Naprawiono ostrzeżenia i błędy raportowane w przypadku włączenia uproszczonej kompilacji.
+
+  - Stała wydajność lekkiej kompilacji.
+
+## <a name="2100"></a>2.1.0.0
+
+Wydana 20 czerwca 2019
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integracja:**
+
+  - Wyłączono pełną kompilację dla projektów środowiska Unity, na korzyść używania błędów i ostrzeżeń funkcji IntelliSense. Istotny aparat Unity tworzy rozwiązanie programu Visual Studio z projektami biblioteki klas, które reprezentują, co Unity działa wewnętrznie. Z tego powodu wynik kompilacji w programie Visual Studio nigdy nie jest używany lub nie jest wybierany przez środowisko Unity, ponieważ ich potok kompilacji jest zamknięty. Kompilowanie w programie Visual Studio jest samo zużywanie zasobów. Jeśli potrzebujesz pełnej kompilacji, ponieważ masz narzędzia lub Instalatora, które od niego zależą, możesz wyłączyć tę optymalizację (ustawienia/narzędzia dla aparatu Unity/wyłączyć pełną kompilację projektów).
+  
+  - Dodano obsługę pakietów Unity w UPE. Widoczne są tylko pakiety, do których istnieją odwołania (przy użyciu manifest. JSON w folderze Packages) i pakiety lokalne (osadzone w folderze Packages).
+
+## <a name="2021"></a>2.0.2.1
+
+Wydana 30 maja 2019
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integracja:**
+
+  - Dodano niestandardową ikonę dla celów wykonywania środowiska Unity.
+
+## <a name="2020"></a>2.0.2.0
+
+Wydanie 2 kwietnia 2019
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integracja:**
+
+  - Dodano obsługę automatycznego odświeżania bazy danych zasobów aparatu Unity przy zapisywaniu. Ta funkcja jest domyślnie włączona i wyzwala ponowną kompilację po stronie aparatu Unity podczas zapisywania skryptu w programie Visual Studio. Tę funkcję można wyłączyć w programie Tools\Options\Tools for Unity\Refresh Unity AssetDatabase przy zapisywaniu.
+
+  - Dodano obsługę ustawiania preferowanej instalacji aparatu Unity dla dokumentacji w trybie offline.
+
+  - Dodano menu kontekstowe dla nowego edytora.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Debuger:**
 
-  - Naprawiono zestawu inspekcji filtrowania i ramki za pomocą klatek puste.
+  - Stałe filtrowanie zestawów i inspekcja ramek z pustymi ramkami.
 
 ## <a name="2011"></a>2.0.1.1
- wydana 26 marca 2019 r.
+ 
+ Wydana 26 marca 2019
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Integracja:**
 
-  - Tymczasowo wprowadzić Mono domyślne, a tylko można używać debugera dla tej wersji bardzo szczegółowych.
+  - Tymczasowo Ustaw mono jako domyślny i możliwy do użycia debuger dla tej bardzo konkretnej wersji.
 
 ## <a name="2006"></a>2.0.0.6
 
-wydana 26 marca 2019 r.
+Wydana 26 marca 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Integracja:**
 
-  - Dodano obsługę "Dołącz do aparatu Unity i Odtwórz".
+  - Dodano obsługę funkcji "Dołącz do środowiska Unity i Play".
 
 ## <a name="2005"></a>2.0.0.5
 
-wydana 20 marca 2019 r.
+Wydana 20 marca 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Generowanie projektu:**
 
-  - Zachowaj właściwości zewnętrznych podczas przetwarzania pliku rozwiązania.
+  - Zachowaj właściwości zewnętrzne podczas przetwarzania pliku rozwiązania.
 
 ## <a name="2004"></a>2.0.0.4
 
-wydana 5 marca 2019 r.
+Wydana 5 marca 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Integracja:**
 
-  - Zaktualizowano ScriptableObject interfejsu API.
+  - Zaktualizowano interfejs API ScriptableObject.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Integracja:**
 
-  - Usunięto przestrzeni nazw za pomocą szablonów.
+  - Usunięto przestrzenie nazw z szablonów.
 
 ## <a name="2003"></a>2.0.0.3
- wydana 5 marca 2019 r.
+ 
+ Wydana 5 marca 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Generowanie projektu:**
 
-  - Pola publiczne i serializacji nie jest już spowoduje ostrzeżenia. Firma Microsoft została automatycznie pominąć ostrzeżenia kompilatora CS0649 i IDE0051 w projektów aparatu Unity, utworzone te komunikaty.
+  - Pola publiczne i serializowane nie będą już powodowały ostrzeżeń. W projektach Unity, które utworzyły te komunikaty, zostały pominięte ostrzeżenia kompilatora CS0649 i IDE0051.
 
 - **Integracja:**
 
-  - Monit, aby dołączyć do konkretne wystąpienie, jeśli działa więcej ten jeden proces aparatu Unity.
+  - Monituj o dołączenie do określonego wystąpienia, jeśli więcej niż jeden proces Unity jest uruchomiony.
 
 - **Ocena:**
 
@@ -107,58 +203,58 @@ wydana 5 marca 2019 r.
 
 - **Debuger:**
 
-  - Naprawiono odczytywanie atrybutem niestandardowym argumentów nazwanych, używając starej wersji protokołu.
+  - Stały odczyt atrybutu niestandardowego dla nazwanych argumentów w przypadku używania starych wersji protokołu.
 
 ## <a name="2002"></a>2.0.0.2
 
-wydana 4 lutego 2019 r.
+Wydana 4 lutego 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Integracja:**
 
-  - Zaktualizowano obiekt MonoBehaviour interfejsu API.
+  - Zaktualizowano interfejs API z zachowaniem.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Debuger:**
 
-  - Naprawiono ustawiania pierwotnych wartości w debugerze.
+  - Naprawiono wartości pierwotne w debugerze.
 
 ## <a name="2001"></a>2.0.0.1
 
-wydanie: 4 grudnia 2018 r.
+Wydanie 4 grudnia 2018
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Integracja:**
 
-  - Naprawiono zawierania własny pakiet instalacji.
+  - Stałe zawiera samodzielne pakiety instalacji.
 
 ## <a name="2000"></a>2.0.0.0
- wydanie: 4 grudnia 2018 r.
+ Wydanie 4 grudnia 2018
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Debuger:**
 
-  - Zastąpione debugerze Unity na komputerze Mac ten sam debuger aparatu Unity core z Windows.
+  - Zamieniono debuger Unity na komputerze Mac z tym samym debugerem podstawowego aparatu Unity z systemu Windows.
 
-  - Zastąpione NRefactory na rzecz Roslyn do obliczenia wyrażenia.
+  - Zamieniono NRefactory na korzyść Roslyn na potrzeby oceny wyrażenia.
 
-  - Dodano obsługę dla wskaźników: wyłuskanie rzutowania i arytmetyka wskaźnika (Unity 2018.2 + i nowego środowiska uruchomieniowego są wymagana dla tego).
+  - Dodano obsługę wskaźników: dereferencja, rzutowania lub arytmetycznego wskaźnika (w tym celu wymagane są zarówno środowisko Unity 2018.2 + i nowe środowisko uruchomieniowe).
 
-  - Dodano obsługę widoku wskaźnika tablicy (na przykład w języku C++). Wykonaj wyrażenie wskaźnika, a następnie dołącz przecinek i liczbę elementów, które mają być wyświetlane.
+  - Dodano obsługę widoku wskaźnika tablicy (jak w programie C++). Wypełnij wyrażenie wskaźnika, a następnie Dołącz przecinek i liczbę elementów, które chcesz zobaczyć.
 
-  - Dodano obsługę konstrukcji asynchronicznej.
+  - Dodano obsługę konstrukcji asynchronicznych.
 
-  - Dodano obsługę zmienne pseudo (identyfikatorów wyjątków i obiektu).
+  - Dodano obsługę pseudo zmiennych (wyjątków i identyfikatorów obiektów).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Debuger:**
 
-  - Obliczanie wyrażenia stałej z wyrażeniami źle sformułowane lub nieobsługiwany.
+  - Obliczanie stałych wyrażeń z nieprawidłowo sformułowanymi lub nieobsługiwanymi wyrażeniami.
 
 ## <a name="1700"></a>1.7.0.0
 

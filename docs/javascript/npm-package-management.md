@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17b373e38d9a808ea830f758c28bea1218bb0b69
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6d9fd531016a4ac5784f927641a181ac05e4c9ae
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446353"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661864"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
 
@@ -29,6 +29,9 @@ Visual Studio można łatwo korzystać z polecenia npm npm i problem za pomocą 
 * [Użyj `.npm` polecenia w oknie interaktywne Node.js](#interactive)
 
 Te funkcje współdziałają ze sobą i synchronizować z system projektu i *package.json* pliku w projekcie.
+
+> [!Important]
+> NPM oczekuje folderu *node_modules* i pliku *Package. JSON* w katalogu głównym projektu. Jeśli struktura folderów aplikacji jest inna, można eitehr [otworzyć projekt jako folder](npm-package-management.md) lub zaktualizować strukturę folderów, jeśli chcesz zarządzać pakietami npm przy użyciu programu Visual Studio.
 
 ## <a name="npmInstallWindow"></a> Zainstaluj pakiety za pomocą Eksploratora rozwiązań
 

@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786554"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662061"
 ---
-# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing w programie Visual Studio
+# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing z programem Visual Studio
 
 Ponieważ tworzysz aplikację Live Unit Testing automatycznie wykonuje w tle, wszystkie objęte testy jednostek i przedstawia wyniki i pokrycie kodu na żywo w programie Visual Studio IDE w czasie rzeczywistym. Jak można zmodyfikować kod, Live Unit Testing zapewnia informacje zwrotne na wpływ zmiany na istniejące testy i czy nowego kodu po dodaniu zgodnie z co najmniej jeden z istniejących testów. To delikatnie przypomni, do pisania testów jednostkowych, podczas wprowadzania poprawek lub dodawanie nowych funkcji.
 
 > [!NOTE]
-> Live Unit Testing jest dostępna dla C# i projektach języka Visual Basic, przeznaczonych dla platformy .NET Core lub .NET Framework w Enterprise Edition dla programu Visual Studio.
+> Live Unit Testing jest dostępny dla C# i Visual Basic projektów przeznaczonych dla platformy .NET Core lub .NET Framework w wersji Enterprise programu Visual Studio.
 
 Korzystając z Live Unit Testing dla testów, Live Unit Testing utrzymuje dane o stanie testów. Możliwość użycia danych umożliwia Live Unit Testing można oferują doskonałą wydajność podczas uruchamiania testów dynamicznie w odpowiedzi na zmiany w kodzie.
 
@@ -30,11 +30,11 @@ Live Unit Testing działa z trzech struktur testowania jednostek popularne, wymi
 
 |Struktury testowej  |Minimalna wersja programu Visual Studio karty  |Minimalna wersja Framework  |
 |---------|---------|---------|
-|xUnit.net |2.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio |xunit 1.9.2 |
+|xUnit.net |2\.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio |xunit 1.9.2 |
 |Rozszerzenie NUnit |NUnit3TestAdapter wersji 3.5.1 |Wersja 3.5.0 NUnit |
-|MSTest |MSTest.TestAdapter 1.1.4-preview |1.0.5-preview rozwiązań MSTest.TestFramework |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |1\.0.5-preview rozwiązań MSTest.TestFramework |
 
-Jeśli masz starszą MSTest na podstawie projekty testowe, które odwołują się do `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i nie chcesz przejść do nowszych pakietów MSTest NuGet, przeprowadź uaktualnienie do programu Visual Studio 2017 w wersji 15.4 lub nowszej.
+Jeśli masz starsze projekty testów bazujące na MSTest, które `Microsoft.VisualStudio.QualityTools.UnitTestFramework` są odwoływane i nie chcesz przenosić do nowszych pakietów NuGet MSTest, przeprowadź uaktualnienie do programu Visual Studio 2017 w wersji 15,4 lub nowszej.
 
 W niektórych przypadkach może być konieczne jawne Przywracanie pakietów NuGet, odwołują się projekty w rozwiązaniu aby Live Unit Testing do pracy. Możesz to zrobić, wykonując jawną kompilację rozwiązania (wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio) lub przywracając pakiety (rozwiązanie Kliknij prawym przyciskiem myszy rozwiązanie i wybierz pozycję **Przywróć pakiety NuGet**) przed włączeniem życia Unit Testing.
 
@@ -145,7 +145,7 @@ Istnieją pewne różnice między Live Unit Testing automatyczne uruchamianie i 
 
 - Uruchamianie i debugowanie testów z okna Eksploratora testów uruchamia regularne plików binarnych, a Live Unit Testing są uruchamiane instrumentowanych danych binarnych.
 - Live Unit Testing nie powoduje utworzenia nowej domeny aplikacji, aby uruchomić testy, ale raczej uruchamia testy z domyślnej domeny. Testy uruchamiane z **Eksplorator testów** okna Tworzenie nowej domeny aplikacji.
-- Live Unit Testing uruchamia testy w każdym zestawie testów po kolei. Po uruchomieniu wielu testów z **Eksplorator testów** okna i **Uruchom testy równolegle** przycisk jest zaznaczony, testy są uruchamiane równolegle.
+- Live Unit Testing uruchamia testy w każdym zestawie testów po kolei. W oknie **Eksplorator testów** można wybrać opcję uruchamiania wielu testów równolegle.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing i dużych rozwiązań
 
@@ -166,7 +166,7 @@ Po uruchomieniu Live Unit Testing, aby wybrać poszczególnych projektów testó
 
 **Wykluczanie indywidualnych testów z oknem edytora kodu**
 
-Do dołączania lub wykluczania metody poszczególnych testach, można użyć okna edytora kodu. Kliknij prawym przyciskiem myszy na sygnaturze metody testowej w oknie edytora kodu, a następnie wybierz pozycję **testów na żywo** > **obejmują [wybranej metody]**, **testów na żywo**  >  **Wykluczyć [wybranej metody]**, lub **testów na żywo** > **wykluczyć wszystkie elementy oprócz [wybranej metody]**, gdzie "wybrane metody" to nazwa Metoda wybrane w oknie kodu.
+Do dołączania lub wykluczania metody poszczególnych testach, można użyć okna edytora kodu. Kliknij prawym przyciskiem myszy na sygnaturze metody testowej w oknie edytora kodu, a następnie wybierz pozycję **testów na żywo** > **obejmują [wybranej metody]** , **testów na żywo**  >  **Wykluczyć [wybranej metody]** , lub **testów na żywo** > **wykluczyć wszystkie elementy oprócz [wybranej metody]** , gdzie "wybrane metody" to nazwa Metoda wybrane w oknie kodu.
 
 **Programowe wykluczanie testów**
 

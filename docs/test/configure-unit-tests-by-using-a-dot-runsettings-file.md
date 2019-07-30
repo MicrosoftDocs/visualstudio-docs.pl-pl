@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie testów jednostkowych przy użyciu pliku .runsettings
+title: Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings
 ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,46 +7,46 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: c291eb614a69d88116c6af228304e19a6295bba2
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160202"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662027"
 ---
-# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku
+# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
-Testy jednostkowe w programie Visual Studio, można skonfigurować za pomocą *.runsettings* pliku. Na przykład można zmienić wersję platformy .NET, na którym są uruchamiane testy, katalog dla wyników testów lub dane, które są zbierane podczas przebiegu testu.
+Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu pliku *. runsettings* . Na przykład można zmienić wersję platformy .NET, w której testy są uruchamiane, katalog dla wyników testu lub dane, które są zbierane podczas przebiegu testowego.
 
-Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie wymaga żadnej specjalnej konfiguracji, nie potrzebujesz *.runsettings* pliku. Typowym zastosowaniem *.runsettings* plik jest w celu dostosowania [analiza pokrycia kodu](../test/customizing-code-coverage-analysis.md).
+Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie jest wymagana żadna specjalna konfiguracja, nie jest potrzebny plik *. runsettings* . Typowym zastosowaniem pliku *. runsettings* jest dostosowanie [analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="specify-a-run-settings-file"></a>Określ plik parametrów uruchomieniowych
 
-Ustawienia plików może służyć do konfigurowania testów, które są uruchamiane z przebiegu [wiersza polecenia](vstest-console-options.md), środowiska IDE lub w [utworzyć przepływ pracy](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) przy użyciu planów testowych platformy Azure lub Team Foundation Server (TFS).
+Pliki parametrów uruchomieniowych mogą służyć do konfigurowania testów uruchamianych z [wiersza polecenia](vstest-console-options.md)w środowisku IDE lub w [przepływie pracy kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) przy użyciu Azure test PLANS lub Team Foundation Server (TFS).
 
 ### <a name="ide"></a>IDE
 
-Aby określić plik parametrów uruchomieniowych w IDE, wybierz pozycję **testu** > **ustawienia testu** > **zaznacz plik ustawień testu**, a następnie wybierz pozycję *.runsettings* pliku.
+Aby określić plik parametrów uruchomieniowych w środowisku IDE **, wybierz pozycję** > Testuj**Ustawienia** > testu**Wybierz plik ustawień testu**, a następnie wybierz plik *. runsettings* .
 
-![Wybierz menu Plik ustawień testu w programie Visual Studio](media/select-test-settings-file.png)
+![Menu wybierz plik ustawień testu w programie Visual Studio](media/select-test-settings-file.png)
 
-Plik pojawi się na **ustawienia testu** menu, a można wybrać lub usunąć jej zaznaczenie. Zaznaczona, plik parametrów uruchomieniowych ma zastosowanie zawsze, gdy wybierzesz **Analizuj pokrycie kodu**.
+Plik jest wyświetlany w menu **Ustawienia testu** i można go zaznaczyć lub usunąć jego zaznaczenie. Gdy jest zaznaczone, plik parametrów uruchomieniowych ma zastosowanie zawsze, gdy wybierzesz opcję **Analizuj pokrycie kodu**.
 
 ### <a name="command-line"></a>Wiersz polecenia
 
-Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe*i określić plik ustawień za pomocą **Settings** parametru.
+Aby uruchomić testy z wiersza polecenia, należy użyć *VSTest. Console. exe*i określić plik ustawień przy użyciu parametru **/Settings** .
 
 1. Uruchom wiersz polecenia programisty dla programu Visual Studio:
 
    ::: moniker range="vs-2017"
 
-   Na Windows **Start** menu, wybierz **programu Visual Studio 2017** > **wiersz polecenia programisty dla programu VS 2017**.
+   W menu **Start** systemu Windows wybierz pozycję **Visual Studio 2017** > **wiersz polecenia dla deweloperów dla programu vs 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Na Windows **Start** menu, wybierz **Visual Studio 2019** > **wiersz polecenia programisty dla programu VS 2019**.
+   W menu **Start** systemu Windows wybierz pozycję **Visual Studio 2019** > **wiersz polecenia dla deweloperów dla programu vs 2019**.
 
    ::: moniker-end
 
@@ -62,27 +62,27 @@ Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe*i określić
    vstest.console.exe --settings:test.runsettings test.dll
    ```
 
-Aby uzyskać więcej informacji, zobacz [opcje wiersza poleceń VSTest.Console.exe](vstest-console-options.md).
+Aby uzyskać więcej informacji, zobacz [Opcje wiersza polecenia VSTest. Console. exe](vstest-console-options.md).
 
 ## <a name="customize-tests"></a>Dostosowywanie testów
 
-Aby dostosować testy przy użyciu *.runsettings* plików, wykonaj następujące kroki:
+Aby dostosować testy przy użyciu pliku *. runsettings* , wykonaj następujące kroki:
 
-1. Dodaj plik XML do rozwiązania programu Visual Studio i zapisz go jako *test.runsettings*.
-
-   > [!TIP]
-   > Nazwa pliku nie ma znaczenia, tak długo, jak używać rozszerzenia *.runsettings*.
-
-1. Zastąp zawartość pliku XML z przykładu, który następuje po, a następnie go dostosowywać, odpowiednio do potrzeb.
-
-1. Na **testu** menu, wybierz **ustawienia testu** > **zaznacz plik ustawień testu**. Przejdź do *.runsettings* utworzonego pliku, a następnie wybierz **OK**.
+1. Dodaj plik XML do rozwiązania Visual Studio i Zapisz go jako *test. runsettings*.
 
    > [!TIP]
-   > Można utworzyć więcej niż jeden *.runsettings* plików w rozwiązaniu, a następnie wybierz jeden z nich jako aktywny plik ustawień testowych, zgodnie z potrzebami.
+   > Nazwa pliku nie ma znaczenia, o ile używasz rozszerzenia *runsettings*.
 
-## <a name="example-runsettings-file"></a>Przykład *.runsettings* pliku
+1. Zamień zawartość pliku na kod XML z poniższego przykładu i dostosuj go zgodnie z wymaganiami.
 
-Następujący kody XML pokazuje zawartość typowej *.runsettings* pliku. Każdy element pliku jest opcjonalny, ponieważ ma on wartość domyślną.
+1. W menu **test** wybierz pozycję **Ustawienia** > testu**Wybierz plik ustawień testu**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
+
+   > [!TIP]
+   > W rozwiązaniu można utworzyć więcej niż jeden plik *. runsettings* i wybrać jeden z nich jako aktywny plik ustawień testu.
+
+## <a name="example-runsettings-file"></a>Przykład pliku *. runsettings*
+
+Poniższy kod XML przedstawia zawartość typowego pliku *. runsettings* . Każdy element pliku jest opcjonalny, ponieważ ma wartość domyślną.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -160,9 +160,9 @@ Następujący kody XML pokazuje zawartość typowej *.runsettings* pliku. Każdy
 </RunSettings>
 ```
 
-## <a name="elements-of-a-runsettings-file"></a>Elementy *.runsettings* pliku
+## <a name="elements-of-a-runsettings-file"></a>Elementy pliku *. runsettings*
 
-W kolejnych sekcjach szczegółowo elementy *.runsettings* pliku.
+Poniższe sekcje zawierają szczegółowe informacje o elementach pliku *. runsettings* .
 
 ### <a name="run-configuration"></a>Uruchom konfigurację
 
@@ -177,21 +177,21 @@ W kolejnych sekcjach szczegółowo elementy *.runsettings* pliku.
 </RunConfiguration>
 ```
 
-**RunConfiguration** element może zawierać następujące elementy:
+Element **RunConfiguration** może zawierać następujące elementy:
 
 |Węzeł|Domyślny|Wartości|
 |-|-|-|
-|**ResultsDirectory**||Katalog, w którym są umieszczane wyniki testu.|
-|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` w przypadku źródeł platformy .NET Core `FrameworkUap10` dla platformy uniwersalnej systemu Windows na podstawie źródeł, `Framework45` dla platformy .NET Framework 4.5 lub nowszym, `Framework40` dla programu .NET Framework 4.0, i `Framework35` programu .NET Framework 3.5.<br /><br />To ustawienie określa wersję środowiska testów jednostkowych, które są używane do odnajdowania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.<br /><br />Jeżeli pominięto `TargetFrameworkVersion` elementu z *.runsettings* pliku, platforma automatycznie określa framework w wersji oparte na skompilowane pliki binarne.|
+|**ResultsDirectory**||Katalog, w którym są umieszczane wyniki testów.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10`w przypadku `FrameworkUap10` źródeł .NET Core dla źródeł opartych na platformy UWP `Framework45` , dla .NET Framework 4,5 i wyższych `Framework40` , dla .NET Framework 4,0 i `Framework35` .NET Framework 3,5.<br /><br />To ustawienie określa wersję struktury testów jednostkowych używanej do odnajdywania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.<br /><br />W przypadku pominięcia `TargetFrameworkVersion` elementu z pliku *. runsettings* platforma automatycznie określa wersję platformy opartą na skompilowanych plikach binarnych.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|fałsz, prawda|
-|**TestAdaptersPaths**||Jedną lub więcej ścieżek do katalogu, w którym znajdują się TestAdapters|
-|**MaxCpuCount**|1|To ustawienie kontrolki stopień równoległe wykonywanie testów, gdy Uruchamianie testów jednostek, przy użyciu dostępnych rdzeni na maszynie. Aparatu wykonywania testów jest uruchamiana jako osobnego procesu na każdym dostępnym rdzeniu i zapewnia każdego rdzenia kontenera za pomocą testów do uruchomienia. Kontener może być zestaw, biblioteki DLL lub odpowiedniego artefaktu. Kontener testu jest jednostką planowania. W każdym kontenerze testy są uruchamiane zgodnie ze struktury testowej. Jeśli istnieje wiele kontenerów, następnie jako przetwarza zakończenia wykonywania testów w kontenerze mają one następny dostępny kontener.<br /><br />Może być MaxCpuCount:<br /><br />n, gdzie 1 < = n < = liczba rdzeni: maksymalnie n procesy są uruchomione<br /><br />n, gdzie n = dowolna inna wartość: liczba uruchomionych procesów może zawierać maksymalnie liczbę dostępnych rdzeni|
-|**TestSessionTimeout**||Umożliwia użytkownikom zakończyć sesję testową, gdy przekracza ona danego limitu czasu. Ustawienie limitu czasu zapewnia, że zasoby są również używane i sesje testów są ograniczone do określonym czasie. To ustawienie jest dostępne w **programu Visual Studio 2017 w wersji 15.5** i nowszych.|
+|**TestAdaptersPaths**||Co najmniej jedna ścieżka do katalogu, w którym znajduje się TestAdapters|
+|**MaxCpuCount**|1|To ustawienie określa stopień równoległego wykonywania testów podczas uruchamiania testów jednostkowych przy użyciu dostępnych rdzeni na komputerze. Aparat wykonywania testu jest uruchamiany jako proces odrębny dla każdego dostępnego rdzenia i zapewnia każdy rdzeń kontenera z testami do uruchomienia. Kontener może być zestawem, biblioteką DLL lub odpowiednim artefaktem. Kontener testowy jest jednostką planowania. W każdym kontenerze testy są uruchamiane zgodnie z platformą testową. Jeśli istnieje wiele kontenerów, a następnie procesy ukończyą wykonywanie testów w kontenerze, otrzymają następny dostępny kontener.<br /><br />MaxCpuCount może:<br /><br />n, gdzie 1 < = n < = liczba rdzeni: uruchomiono do n procesów<br /><br />n, gdzie n = jakakolwiek inna wartość: liczba uruchomionych procesów może być równa liczbie dostępnych rdzeni|
+|**TestSessionTimeout**||Umożliwia użytkownikom zakończenie sesji testowej, gdy przekroczy określony limit czasu. Ustawienie limitu czasu zapewnia, że zasoby są dobrze zużywane, a sesje testowe są ograniczone do określonego czasu. To ustawienie jest dostępne w programie **Visual Studio 2017 w wersji 15,5** lub nowszej.|
 
-### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptery danych diagnostycznych (kolektory danych)
+### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptery danych diagnostycznych (moduły zbierające dane)
 
-**DataCollectors** element określa ustawienia adapterów danych diagnostycznych. Adaptery danych diagnostycznych zbierać dodatkowe informacje na temat środowiska i testowanej aplikacji. Każdy adapter ma ustawienia domyślne, a następnie trzeba podać ustawienia, jeśli nie chcesz użyć wartości domyślnych.
+Element datacollects określa ustawienia adapterów danych diagnostycznych. Adaptery danych diagnostycznych zbierają dodatkowe informacje o środowisku i testowanej aplikacji. Każda karta ma ustawienia domyślne i tylko wtedy, gdy nie chcesz używać ustawień domyślnych.
 
 #### <a name="code-coverage-adapter"></a>Adapter pokrycia kodu
 
@@ -214,9 +214,9 @@ Moduł zbierający dane pokrycia kodu tworzy dziennik z zapisami, które częśc
 
 #### <a name="video-data-collector"></a>Moduł zbierający dane wideo
 
-Moduł zbierający dane wideo przechwytuje rejestrowania ekranu, gdy testy są uruchamiane. To nagranie jest przydatne podczas rozwiązywania problemów testy interfejsu użytkownika. Moduł zbierający dane wideo jest dostępna w **programu Visual Studio 2017 w wersji 15.5** i nowszych.
+Moduł zbierający dane wideo przechwytuje nagrywanie ekranu, gdy testy są uruchamiane. To nagranie jest przydatne do rozwiązywania problemów z testami interfejsu użytkownika. Moduł zbierający dane wideo jest dostępny w programie **Visual Studio 2017 w wersji 15,5** lub nowszej.
 
-Aby dostosować każdy inny rodzaj adapterów danych diagnostycznych, należy użyć [pliku ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+Aby dostosować każdy inny typ adapterów danych diagnostycznych, należy użyć [pliku ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -228,7 +228,7 @@ Aby dostosować każdy inny rodzaj adapterów danych diagnostycznych, należy u�
 </TestRunParameters>
 ```
 
-Parametry przebiegu testu umożliwiają definiowanie zmiennych i wartości, które są dostępne dla testów w czasie wykonywania. Dostęp do parametrów przy użyciu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> właściwości:
+Parametry przebiegu testowego zapewniają sposób definiowania zmiennych i wartości, które są dostępne dla testów w czasie wykonywania. Dostęp do parametrów przy użyciu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> właściwości:
 
 ```csharp
 [TestMethod]
@@ -238,9 +238,9 @@ public void HomePageTest()
 }
 ```
 
-Aby użyć parametrów przebiegu testu, Dodaj prywatnej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pola i publiczny <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> właściwości do klasy testowej.
+Aby użyć parametrów przebiegu testowego, Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole prywatne i Właściwość <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> publiczną do klasy testowej.
 
-### <a name="mstest-run-settings"></a>MSTest parametrów uruchomieniowych
+### <a name="mstest-run-settings"></a>MSTest Parametry uruchomieniowe
 
 ```xml
 <MSTest>
@@ -254,23 +254,23 @@ Aby użyć parametrów przebiegu testu, Dodaj prywatnej <xref:Microsoft.VisualSt
 </MSTest>
 ```
 
-Te ustawienia są właściwe dla adaptera testowego, który uruchamia metody testowe, które mają <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atrybutu.
+Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody testowe mające <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atrybut.
 
 |Konfiguracja|Domyślny|Wartości|
 |-|-|-|
-|**ForcedLegacyMode**|false|W programie Visual Studio 2012 Adapter karty MSTest został zoptymalizowany umożliwiają szybsze i bardziej skalowalne. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** Aby użyć starszego adaptera testowego.<br /><br />Na przykład możesz użyć tego ustawienia, jeśli masz *app.config* plik określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
-|**IgnoreTestImpact**|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz [testy, które można uruchamiać od czasu poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|
-|**SettingsFile**||Można określić plik ustawień testu do użycia przez adapter MSTest. Można również określić plik ustawień testu, wybierając **Test** > **ustawienia testu** > **wybierz plik ustawień testu**.<br /><br />Jeśli ta wartość jest podana, należy także ustawić **ForcedlegacyMode** do **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**KeepExecutorAliveAfterLegacyRun**|false|Po zakończeniu przebiegu testu MSTest jest zamykany. Żaden proces, który jest uruchamiany jako część testu jest także skasowane. Jeśli chcesz utrzymać aktywność modułu wykonania testu, ustaw wartość **true**. Na przykład można użyć tego ustawienia do zachowania działania przeglądarki między kodowane testy interfejsu użytkownika.|
-|**DeploymentEnabled**|true|Jeśli wartość jest ustawiona na **false**, elementy wdrożenia, które zostały określone w metodzie testowej, nie są kopiowane do katalogu wdrażania.|
-|**CaptureTraceOutput**|true|Można zapisywać do śledzenia debugowania z metody testu przy użyciu <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
-|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Aby zachować deployment directory po przebiegu testu, ustaw tę wartość na **false**.|
-|**MapInconclusiveToFailed**|false|Jeśli test zakończy się ze stanem niejednoznaczny, jest mapowany do stanu pominięto w **Eksploratora testów**. Jeśli chcesz, aby testy niejednoznaczne być pokazywany jako zakończony niepowodzeniem, ustaw wartość **true**.|
-|**InProcMode**|false|Jeśli chcesz, aby testy będą uruchamiane w tym samym procesie co MSTest adapter, ustaw tę wartość na **true**. To ustawienie zapewnia mniejszy przyrost wydajności. Ale jeśli test kończy się z powodu wyjątku, pozostałe testy nie działa.|
-|**AssemblyResolution**|false|Można określić ścieżki do dodatkowych zestawów, podczas znajdowania i uruchamiania testów jednostkowych. Na przykład użyj tych ścieżek dla zestawów zależności, które nie znajdują się w tym samym katalogu co zestaw testów. Aby określić ścieżkę, należy użyć **ścieżkę katalogu** elementu. Ścieżki może zawierać zmienne środowiskowe.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**ForcedLegacyMode**|false|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli masz plik *App. config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
+|**IgnoreTestImpact**|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|
+|**SettingsFile**||W tym miejscu możesz określić plik ustawień testu, który ma być używany z kartą MSTest. Możesz również określić plik ustawień testu **, wybierając** > **Ustawienia** > testu testu**Wybierz plik ustawień testu**.<br /><br />Jeśli określisz tę wartość, musisz także ustawić **ForcedlegacyMode** na **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**KeepExecutorAliveAfterLegacyRun**|false|Po zakończeniu przebiegu testu MSTest jest zamykany. Każdy proces, który jest uruchamiany jako część testu, również zostanie zamknięty. Jeśli chcesz zatrzymać program wykonujący testy, ustaw wartość na **true**. Można na przykład użyć tego ustawienia, aby zachować działanie przeglądarki między kodowanymi testami interfejsu użytkownika.|
+|**DeploymentEnabled**|true|W przypadku ustawienia wartości **false**elementy wdrożenia określone w metodzie testowej nie są kopiowane do katalogu wdrożenia.|
+|**CaptureTraceOutput**|true|Możesz pisać do śledzenia debugowania z metody testowej przy użyciu <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
+|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Aby zachować katalog wdrożenia po przebiegu testu, należy ustawić tę wartość na **false**.|
+|**MapInconclusiveToFailed**|false|Jeśli test zakończy się nieniejednoznacznie, jest mapowany do stanu pominięty w **Eksploratorze testów**. Jeśli chcesz, aby testy niejednoznaczne były wyświetlane jako nieudane, ustaw wartość na **true**.|
+|**Inprocmode**|false|Jeśli chcesz, aby testy były uruchamiane w tym samym procesie co karta MSTest, ustaw tę wartość na **true**. To ustawienie zapewnia mniejszy przyrost wydajności. Ale jeśli test kończy się wyjątkiem, pozostałe testy nie są uruchamiane.|
+|**AssemblyResolution**|false|Można określić ścieżki do dodatkowych zestawów podczas znajdowania i uruchamiania testów jednostkowych. Na przykład użyj tych ścieżek dla zestawów zależności, które nie znajdują się w tym samym katalogu, co zestaw testowy. Aby określić ścieżkę, użyj elementu **ścieżki katalogu** . Ścieżki mogą zawierać zmienne środowiskowe.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Konfigurowanie przebieg testu](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
+- [Konfigurowanie przebiegu testowego](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio test zadań (plany testów platformy Azure)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+- [Zadanie testowe programu Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

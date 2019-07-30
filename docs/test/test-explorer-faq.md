@@ -14,18 +14,29 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429511"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662007"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Gdzie jest Grupuj według cech w programie Visual Studio 2019?
+Ta grupa cech została przeniesiona jako kolumna. W przypadku hierarchii z obsługą wielowarstwową i dostosowywalną w programie Visual Studio 2019 w wersji 16,2, firma Microsoft uważa, że cechy takie jak tworzenie grup nie wymagały złożoności wizualnej. Oczekujemy na opinię na temat tego projektu. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+Na razie możesz kliknąć prawym przyciskiem myszy kolumnę w Eksploratorze testów i wybrać kolumny. Sprawdź kolumnę cech i pojawi się w Eksploratorze testów. Teraz można filtrować tę kolumnę według interesujących Cię cech.
+
+![Wyświetlenie filtru kolumny](media/vs-2019/trait-column.png)
+![cech kolumny cech](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
+
 ## <a name="dynamic-test-discovery"></a>Odnajdywanie testów dynamiczne
 
-**Eksplorator testów nie jest odnajdywanie Moje testy, które są definiowane dynamicznie. (Na przykład teorii, niestandardowych kart, niestandardowe cech, #ifdefs itp.) Jak odnajdywanie, te testy?**
+**Eksplorator testów nie odnajduje moich testów, które są definiowane dynamicznie. (Na przykład teorii, niestandardowych kart, niestandardowe cech, #ifdefs itp.) Jak odnajdywanie, te testy?**
 
 Skompiluj projekt i upewnij się, odnajdywanie na podstawie zestawu jest włączona w programie **narzędzia** > **opcje** > **testu**.
 
@@ -91,7 +102,7 @@ Ikony obok projektu, Namespace i klasa grupowania wyświetlić stan testów w ra
 
 **Nie ma już filtru "Ścieżka pliku" w polu wyszukiwania Eksploratora testów.**
 
-Filtr ścieżki pliku w **Eksplorator testów** pole wyszukiwania została usunięta w programie Visual Studio 2017 wersji 15.7. Ta funkcja była o niskim użyciu i Eksplorator testów może pobrać szybszych metod testowych, pomijając tej funkcji. Daj nam znać, jeśli ta zmiana przerywa przepływ rozwoju, przesyłając swoje opinie na [społeczności deweloperów](https://developercommunity.visualstudio.com/).
+Filtr ścieżka pliku w polu wyszukiwania programu **Test Explorer** został usunięty z programu Visual Studio 2017 w wersji 15,7. Ta funkcja ma niskie użycie i Eksplorator testów może szybciej pobrać metody testowe, pozostawiając tę funkcję. Daj nam znać, jeśli ta zmiana przerywa przepływ rozwoju, przesyłając swoje opinie na [społeczności deweloperów](https://developercommunity.visualstudio.com/).
 
 ## <a name="remove-undocumented-interfaces"></a>Usuń nieudokumentowane interfejsy
 
@@ -116,11 +127,11 @@ Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do ko
 
 ## <a name="uwp-testcontainer-was-not-found"></a>Nie można odnaleźć TestContainer platformy uniwersalnej systemu Windows
 
-**Moje testy platformy uniwersalnej systemu Windows nie są wykonywane w programie Visual Studio 2017 wersji 15.7 lub nowszej.**
+**Moje testy platformy UWP nie są już wykonywane w programie Visual Studio 2017 w wersji 15,7 lub nowszej.**
 
 Ostatnie projekty testowe platformy uniwersalnej systemu Windows, określ właściwość kompilacji platformy testu, która pozwala zwiększyć wydajność do identyfikowania aplikacje testowe. W przypadku projektu testowego platformy uniwersalnej systemu Windows, który został zainicjowany przed Visual Studio w wersji 15.7 może zostać wyświetlony ten błąd wystąpił w **dane wyjściowe** > **testy**:
 
-**System.AggregateException: Wystąpił co najmniej jednego błędu. ---> System.InvalidOperationException: Nie można odnaleźć następującego obiektu TestContainer {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync > d__61.MoveNext()**
+**System.AggregateException: Wystąpił co najmniej jeden błąd. ---> System. InvalidOperationException: Nie znaleziono {} następującego testcontainer w firmie Microsoft. VisualStudio. TestWindow. Controller. TestContainerProvider \<GetTestContainerAsync > d__61. MoveNext ()**
 
 Aby naprawić ten błąd:
 

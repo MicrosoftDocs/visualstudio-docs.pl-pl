@@ -1,5 +1,5 @@
 ---
-title: Namesearchoptions — | Dokumentacja firmy Microsoft
+title: Namesearchoptions — | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855150"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661806"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
-Określa opcje wyszukiwania dla nazwy symboli i plików.
+Określa opcje wyszukiwania dla nazw symboli i plików.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,20 +43,20 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Elementy
-`nsNone` Nie określono opcji.
+`nsNone`Nie określono żadnych opcji.
 
-`nsfCaseSensitive` Stosuje musi odpowiadać nazwie uwzględniana wielkość liter.
+`nsfCaseSensitive`Stosuje dopasowanie nazw z uwzględnieniem wielkości liter.
 
-`nsfCaseInsensitive` Stosuje dopasowanie bez uwzględniania wielkości liter nazwy.
+`nsfCaseInsensitive`Stosuje dopasowanie nazw bez uwzględniania wielkości liter.
 
-`nsfFNameExt` Traktuje nazw jako ścieżki, a następnie stosuje musi odpowiadać nazwie nazwa_pliku.Ext.
+`nsfFNameExt`Traktuje nazwy jako ścieżki i stosuje dopasowanie nazwy pliku. ext.
 
-`nsfRegularExpression` Stosuje dopasowanie liter nazwy przy użyciu gwiazdki (*) i znaki zapytania (?) jako symboli wieloznacznych.
+`nsfRegularExpression`Stosuje dopasowanie nazwy z uwzględnieniem wielkości liter przy użyciu gwiazdek (*) i znaków zapytania (?) jako symboli wieloznacznych. (Inne typowe znaki wyrażenia regularnego nie są obsługiwane).
 
-`nsfUndecoratedName` Dotyczy tylko symbole, które mają zarówno niedekorowanego i nazw ozdobionych.
+`nsfUndecoratedName`Dotyczy tylko symboli, które mają nazwy niedekoracyjne i dekoracyjne.
 
 ## <a name="remarks"></a>Uwagi
-Wartości z tego wyliczenia są przekazywane do następujących metod:
+Wartości z tego wyliczenia są przesyłane do następujących metod:
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 
@@ -65,7 +65,7 @@ Wartości z tego wyliczenia są przekazywane do następujących metod:
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: dia2.h
+Nagłówek: dia2. h
 
 ## <a name="see-also"></a>Zobacz też
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)

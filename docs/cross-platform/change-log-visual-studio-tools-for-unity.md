@@ -1,7 +1,7 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, Windows) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 07/29/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,208 +10,232 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 365476e0e87f5bb8c71041ad8afbdd7db6e6f952
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821338"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661960"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 
 Dziennik zmian w programie Visual Studio Tools for Unity.
 
-## <a name="4110"></a>4.1.1.0
+## <a name="4201"></a>4.2.0.1
 
-wydana 24 maja 2019 r.
+Wydana 24 lipca 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Integracja:**
 
-  - Zaktualizowano obiekt MonoBehaviour interfejsu API do 2019.1.
+  - Dodano nową opcję w celu utworzenia dowolnego typu plików z Eksploratora projektów aparatu Unity.
+  
+  - Popraw buforowanie diagnostyczne podczas korzystania z szybkich kompilacji dla projektów Unity.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Integracja:**
 
-  - Naprawiono raportowania ostrzeżenia i błędy w danych wyjściowych po włączeniu uproszczonego kompilacji.
+  - Rozwiązano problem, gdy rozszerzenie pliku nie zostało obsłużone przez dowolny dobrze znany Edytor.
 
-  - Naprawiono lightweight wydajność kompilacji.
+  - Stała obsługa rozszerzeń niestandardowych w Eksploratorze projektów aparatu Unity.
+
+  - Naprawiono ustawienia zapisywania poza głównym oknem dialogowym.
+
+  - Usunięto starszą zależność Microsoft. VisualStudio. MPF.
+
+## <a name="4110"></a>4.1.1.0
+
+Wydana 24 maja 2019
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integracja:**
+
+  - Zaktualizowano interfejs API o bezzachowań do 2019,1.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integracja:**
+
+  - Naprawiono ostrzeżenia i błędy raportowane w przypadku włączenia uproszczonej kompilacji.
+
+  - Stała wydajność lekkiej kompilacji.
 
 ## <a name="4100"></a>4.1.0.0
 
-wydana 21 maja 2019 r.
+Wydana 21 maja 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Integracja:**
 
-  - Dodano obsługę nową partię interfejsu API, aby załadować ponownie projekty szybciej.
+  - Dodano obsługę nowego interfejsu API usługi Batch do szybszego ponownego ładowania projektów.
 
-  - Wyłączone pełnej kompilacji dla projektów aparatu Unity, na rzecz błędy funkcji IntelliSense i ostrzeżenia. W rzeczywistości Unity tworzy rozwiązania programu Visual Studio z projekty bibliotek klas, które reprezentują Unity czynności wewnętrznie. Po uwzględnieniu wynik kompilacji w programie Visual Studio nigdy nie jest używany ani odebrane przez aparat Unity, zgodnie z ich potoku kompilacji jest zamknięty. Tworzenie w programie Visual Studio jest po prostu zużywają zasoby nic za darmo. Jeśli potrzebujesz pełnej kompilacji, ponieważ dysponujesz narzędziami lub Instalator, który zależy od niego, można wyłączyć tego rodzaju optymalizacji (Narzędzia/opcje/Tools for Unity/wyłączyć pełna kompilacja projektów).
+  - Wyłączono pełną kompilację dla projektów środowiska Unity, na korzyść używania błędów i ostrzeżeń funkcji IntelliSense. Istotny aparat Unity tworzy rozwiązanie programu Visual Studio z projektami biblioteki klas, które reprezentują, co Unity działa wewnętrznie. Z tego powodu wynik kompilacji w programie Visual Studio nigdy nie jest używany lub nie jest wybierany przez środowisko Unity, ponieważ ich potok kompilacji jest zamknięty. Kompilowanie w programie Visual Studio jest samo zużywanie zasobów. Jeśli potrzebujesz pełnej kompilacji, ponieważ masz narzędzia lub Instalatora, które od niego zależą, możesz wyłączyć tę optymalizację (Narzędzia/Opcje/narzędzia dla aparatu Unity/wyłączyć pełną kompilację projektów).
 
-  - Automatycznie pokazuj Eksploratora projektów aparatu Unity (UPE) podczas ładowania projektu środowiska Unity. UPE będzie zadokowany obok Eksploratora rozwiązań.
+  - Automatycznie pokazuj Eksplorator projektów środowiska Unity (UPE) po załadowaniu projektu środowiska Unity. UPE zostanie zadokowany obok Eksplorator rozwiązań.
 
-  - Zaktualizowano mechanizm Ekstrakcja Nazwa projektu za pomocą aparatu Unity 2019.x.
+  - Zaktualizowany mechanizm wyodrębniania nazw projektów z użyciem aparatu Unity. x.
 
-  - Dodano obsługę pakietów Unity w UPE. Tylko odwołanie do pakietów (przy użyciu manifest.json w ```Packages``` folderu) i pakiety lokalnego (osadzone w ```Packages``` folder) są widoczne.
+  - Dodano obsługę pakietów Unity w UPE. Widoczne są tylko pakiety, do których istnieją odwołania ( ```Packages``` przy użyciu manifest. JSON w folderze) i ```Packages``` pakiety lokalne (osadzone w folderze).
 
 - **Generowanie projektu:**
 
-  - Zachowaj właściwości zewnętrznych podczas przetwarzania pliku rozwiązania.
+  - Zachowaj właściwości zewnętrzne podczas przetwarzania pliku rozwiązania.
 
 - **Ocena:**
 
-  - Dodano obsługę nazwy kwalifikowanej aliasu (tylko globalnej przestrzeni nazw obecnie). Dlatego Ewaluator wyrażeń akceptuje teraz typów przy użyciu global::namespace.type formularza.
+  - Dodano obsługę nazw kwalifikowanych aliasem (tylko globalna przestrzeń nazw dla teraz). Dlatego ewaluatora wyrażeń akceptuje teraz typy przy użyciu formularza Global:: Namespace. Type.
 
-  - Dodano obsługę ```pointer[index]``` formularza, który jest identyczny semantycznie wskaźnika cofnięcia odwołania ```*(pointer+index)``` formularza.
+  - Dodano obsługę ```pointer[index]``` formularza, która jest semantycznie identyczna z formularzem dereferencji ```*(pointer+index)``` wskaźnika.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Integracja:**
 
-  - Rozwiązano problemy zależności z Microsoft.VisualStudio.MPF.
+  - Rozwiązano problemy zależności z Microsoft. VisualStudio. MPF.
 
-  - Dołącz stały player platformy uniwersalnej systemu Windows bez żadnego projektu załadowanego.
+  - Stała dołączanie odtwarzacza platformy UWP bez załadowania żadnego projektu.
 
-  - Odświeżanie bazy danych trwałych automatyczne programu Visual Studio nie został jeszcze dołączony.
+  - Naprawiono automatyczne odświeżenie bazy danych zasobów, gdy program Visual Studio nie został jeszcze dołączony.
 
-  - Rozwiązano problemy motyw z etykiety i pola wyboru.
+  - Rozwiązano problemy motywu z etykietami i polami wyboru.
 
 - **Debuger:**
 
-  - Naprawiono przechodzenie krok po kroku, za pomocą konstruktorów statycznych.
+  - Naprawiono wykonywanie kroków przy użyciu konstruktorów statycznych.
 
 ## <a name="4005"></a>4.0.0.5
 
-wydana 27 lutego 2019 r.
+Wydana 27 lutego 2019
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Integracja:**
 
-  - Naprawiono wykrywania wersji programu Visual Studio z pakietu instalacyjnego.
+  - Rozwiązano wykrywanie wersji programu Visual Studio za pomocą pakietu instalacyjnego.
 
-  - Usunąć nieużywane zestawy z pakietu instalacyjnego.
+  - Usunięto nieużywane zestawy z pakietu instalacyjnego.
 
 ## <a name="4004"></a>4.0.0.4
 
-wydana 13 lutego 2019 r.
+Wydanie 13 lutego 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Integracja:**
 
-  - Dodano obsługę poprawnie wykryty Unity przetwarza podczas instalacji i Zezwalaj na aparat Instalatora w celu ulepszenia obsługi blokad plików.
+  - Dodano obsługę w celu prawidłowego wykrywania procesów Unity podczas instalacji i Zezwalanie aparatowi instalacji na lepsze obsłudze blokad plików.
 
-  - Zaktualizowano ScriptableObject interfejsu API.
+  - Zaktualizowano interfejs API ScriptableObject.
 
 ## <a name="4003"></a>4.0.0.3
 
-wydana 31 stycznia 2019 r.
+Wydanie 31 stycznia 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Generowanie projektu:**
 
-  - Pola publiczne i serializacji nie jest już spowoduje ostrzeżenia. Firma Microsoft została automatycznie pominąć ostrzeżenia kompilatora CS0649 i IDE0051 w projektów aparatu Unity, utworzone te komunikaty.
+  - Pola publiczne i serializowane nie będą już powodowały ostrzeżeń. W projektach Unity, które utworzyły te komunikaty, zostały pominięte ostrzeżenia kompilatora CS0649 i IDE0051.
 
 - **Integracja:**
 
-  - Ulepszone środowisko użytkownika do wyświetlania Unity editor, jak i odtwarzacz wystąpienia (windows są teraz o zmiennym rozmiarze, użyj jednolitego marginesy i wyświetlić uchwyt zmiany rozmiaru). Dodano informacje identyfikatora procesu dla aparatu Unity edytorów.
+  - Ulepszono środowisko użytkownika do wyświetlania wystąpień edytora i odtwarzacza Unity (system Windows jest teraz zmieniany, użyj jednolitych marginesów i Wyświetl uchwyt zmiany rozmiaru). Dodano informacje o identyfikatorze procesu dla edytorów aparatu Unity.
 
-  - Zaktualizowano obiekt MonoBehaviour interfejsu API.
+  - Zaktualizowano interfejs API z zachowaniem.
 
 - **Ocena:**
 
   - Dodano obsługę funkcji lokalnych.
 
-  - Dodano obsługę zmienne pseudo (identyfikatorów wyjątków i obiektu).
+  - Dodano obsługę pseudo zmiennych (wyjątków i identyfikatorów obiektów).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Integracja:**
 
-  - Rozwiązano problem z moniker obrazów i motywów.
+  - Rozwiązano problem z obrazami i motywami monikerów.
 
-  - Tylko zapis do okna danych wyjściowych podczas debugowania, gdy automatycznego odświeżania bazy danych zasobów.
+  - Podczas autoodświeżania bazy danych zasobów należy zapisywać do Okno Dane wyjściowe podczas debugowania.
 
-  - Naprawiono występują opóźnienia interfejsu użytkownika za pomocą Kreatora klasa MonoBehaviour filtrowania.
+  - Stałe opóźnienia interfejsu użytkownika przy filtrowaniu kreatora.
 
 - **Debuger:**
 
-  - Naprawiono odczytywanie atrybutem niestandardowym argumentów nazwanych, używając starej wersji protokołu.
+  - Stały odczyt atrybutu niestandardowego dla nazwanych argumentów w przypadku używania starych wersji protokołu.
 
 ## <a name="4002"></a>4.0.0.2
 
-wydana 23 stycznia 2019 r.
+Wydanie 23 stycznia 2019
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Integracja:**
 
-  - Naprawiono Generowanie eksperymentalne kompilacji.
+  - Naprawiono eksperymentalną generację kompilacji.
 
-  - Obsługa zdarzeń pliku stały projektu aby zminimalizować wykorzystanie wątku interfejsu użytkownika.
+  - Stała obsługa zdarzeń w pliku projektu w celu zminimalizowania siły interfejsu użytkownika.
 
-  - Dostawca stały uzupełniania ze zmianami wsadowej tekstu.
+  - Dostawca stałego uzupełniania z wsadowymi zmianami tekstu.
 
 - **Debuger:**
 
-  - Naprawiono wyświetlania komunikatów debugowania użytkownika dołączonego debugera.
+  - Naprawiono wyświetlanie komunikatów debugowania użytkownika w dołączonym debugerze.
 
 ## <a name="4001"></a>4.0.0.1
 
-wydana 10 grudnia 2018 r.
+Wydanie 10 grudnia 2018
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Ocena:**
 
-  - Zastąpione NRefactory na rzecz Roslyn do obliczenia wyrażenia.
+  - Zamieniono NRefactory na korzyść Roslyn na potrzeby oceny wyrażenia.
 
-  - Dodano obsługę dla wskaźników: wyłuskanie rzutowania i arytmetyka wskaźnika (Unity 2018.2 + i nowego środowiska uruchomieniowego są wymagana dla tego).
+  - Dodano obsługę wskaźników: dereferencja, rzutowania lub arytmetycznego wskaźnika (w tym celu wymagane są zarówno środowisko Unity 2018.2 + i nowe środowisko uruchomieniowe).
 
-  - Dodano obsługę widoku wskaźnika tablicy (na przykład w języku C++). Wykonaj wyrażenie wskaźnika, a następnie dołącz przecinek i liczbę elementów, które mają być wyświetlane.
+  - Dodano obsługę widoku wskaźnika tablicy (jak w programie C++). Wypełnij wyrażenie wskaźnika, a następnie Dołącz przecinek i liczbę elementów, które chcesz zobaczyć.
 
-  - Dodano obsługę konstrukcji asynchronicznej.
+  - Dodano obsługę konstrukcji asynchronicznych.
 
 - **Integracja:**
 
-  - Dodano obsługę automatycznego odświeżania bazy danych zasobów firmy Unity na zapisanie. To jest domyślnie włączona i wyzwoli ponowną kompilację po stronie platformy Unity podczas zapisywania skryptu w programie Visual Studio. Można wyłączyć tę funkcję w Tools\Options\Tools, aby zapisać AssetDatabase Unity\Refresh Unity na.
+  - Dodano obsługę automatycznego odświeżania bazy danych zasobów aparatu Unity przy zapisywaniu. Ta funkcja jest domyślnie włączona i wyzwala ponowną kompilację po stronie aparatu Unity podczas zapisywania skryptu w programie Visual Studio. Tę funkcję można wyłączyć w programie Tools\Options\Tools for Unity\Refresh Unity AssetDatabase przy zapisywaniu.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 - **Integracja:**
 
-  - Stałych Mostek aktywacji, jeśli program Visual Studio nie jest wybrany jako preferowanego edytora zewnętrznych.
+  - Stała aktywacja mostka, gdy program Visual Studio nie jest wybrany jako preferowany edytor zewnętrzny.
 
-  - Obliczanie wyrażenia stałej z wyrażeniami źle sformułowane lub nieobsługiwany.
+  - Obliczanie stałych wyrażeń z nieprawidłowo sformułowanymi lub nieobsługiwanymi wyrażeniami.
 
 ## <a name="4000"></a>4.0.0.0
 
-wydanie: 4 grudnia 2018 r.
+Wydanie 4 grudnia 2018
 
 ### <a name="new-features"></a>Nowe funkcje
 
 - **Integracja:**
 
-  - Dodano obsługę programu Visual Studio 2019 r (potrzebujesz przynajmniej 2018.3 Unity, aby uzyskać możliwość używania 2019 usługi Visual Studio jako edytora skryptu zewnętrznego).
+  - Dodano obsługę programu Visual Studio 2019 (potrzebujesz co najmniej aparatu Unity 2018,3, aby można było używać programu Visual Studio 2019 jako zewnętrznego edytora skryptów).
 
-  - Przyjęte programu Visual Studio Usługa obrazów i katalog, z pełnym wsparciem dla HDPI skalowania, doskonałe obrazów pikseli i motywów.
+  - Przyjęto, że usługa obrazów programu Visual Studio i wykaz mają pełną obsługę skalowania HDPI, obrazów doskonałych pikseli i motywów.
 
 ### <a name="deprecated-features"></a>Przestarzałe funkcje
 
 - **Integracja:**
 
-  - Idąc dalej, program Visual Studio Tools for Unity, obsługują tylko Unity 5.2 + (przy użyciu mechanizmu Unity wbudowanej integracji programu Visual Studio).
+  - Przechodząc do przodu, Visual Studio Tools for Unity będzie obsługiwał tylko środowisko Unity 5.2 + (z wbudowaną integracją programu Visual Studio).
 
-  - Idąc dalej, program Visual Studio Tools for Unity, obsługują tylko Visual Studio 2015 +.
+  - W przyszłości program Visual Studio Tools for Unity obsługuje tylko program Visual Studio 2015 +.
 
-  - Usunąć starszej wersji usługi językowej, błąd listy z paskiem stanu.
+  - Usunięto starszą wersję usługi językowej, listę błędów i pasek stanu.
 
-  - Usunięte kreatora klasa Monobehaviour szybkich (na rzecz obsługi dedykowanych intellisense).
+  - Usunięto Kreatora szybkiego działania (na korzyść dedykowanej obsługi technologii IntelliSense).
 
 ## <a name="3903"></a>3.9.0.3
 
@@ -221,7 +245,7 @@ wydana 28 listopada 2018 r.
 
 - **Integracja:**
 
-  - Naprawiono intellisense i ponowne załadowanie problemy projektu podczas dodawania lub usuwania skryptów znajdujących się w bardzo pierwszego projektu.
+  - Stałe ponowne ładowanie projektu i problemy z technologią IntelliSense podczas dodawania lub usuwania skryptów znajdujących się w pierwszym projekcie.
 
 ## <a name="3902"></a>3.9.0.2
 
@@ -894,7 +918,7 @@ Wydana 8 września 2015 r.
 
 - Naprawiono odwołania do zestawów UnityEngine i UnityEditor dla aplikacji Windows Store.
 
-- Naprawiono błąd przy przechodzeniu w debugerze: Nie można przejść, ogólny wyjątek.
+- Naprawiono błąd podczas wykonywania kroku w debugerze: Nie można wykonać kroku, wyjątek ogólny.
 
 - Stałej liczby trafień punkty przerwania w programie Visual Studio 2015.
 
@@ -975,13 +999,13 @@ Wydana 2 kwietnia 2015 r.
 
   - Zainstaluj program Visual Studio Tools dla pakietu Unity dla aparatu Unity 5.
 
-- **Dokumentacja:** Zwiększ wydajność Generowanie dokumentacji.
+- **Łączoną** Poprawa wydajności generowania dokumentacji.
 
-- **Kreatorów:** Obsługa nowych metod MonoBehavior Unity 4.6 i aparatu Unity 5.
+- **Kreatorów:** Obsługa nowych metod antyzachowań dla aparatu Unity 4,6 i aparatu Unity 5.
 
-- **Unity:** Flagi niebezpieczne wyszukiwania i niestandardowych definiuje .rsp — pliki podczas generowania pliku projektu.
+- **Unity:** Wyszukiwanie niebezpiecznych flag i niestandardowych definiuje w plikach. rsp podczas generowania pliku projektu.
 
-- **INTERFEJS UŻYTKOWNIKA:** Dodano program Visual Studio Tools for Unity **opcje** okna dialogowego w programie Visual Studio.
+- **INTERFEJS UŻYTKOWNIKA:** Dodano okno dialogowe **opcji** Visual Studio Tools for Unity w programie Visual Studio.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -1015,13 +1039,13 @@ Wydana 2 kwietnia 2015 r.
 
   - Wyślij dzienniki konsoli Unity do listy błędów programu VS.
 
-- **Dokumentacja:** Generowanie dokumentacji poprawne dla nowej dokumentacji aparatu unity.
+- **Łączoną** Poprawna generacja dokumentacji dotycząca nowej dokumentacji aparatu Unity.
 
-- **Projekt:** Przenieś i Zmień nazwy plików .meta Unity w razie potrzeby, nawet w przypadku folderów.
+- **Projektu** Przenieś i Zmień nazwę plików Unity. meta w razie konieczności, nawet w folderach.
 
-- **Kreatorów:** Popraw kolejność parametrów metody MonoBehavior podczas generowania kodu.
+- **Kreatorów:** Popraw kolejność parametrów metody z zachowaniem wartości podczas generowania kodu.
 
-- **INTERFEJS UŻYTKOWNIKA:** Obsługa kompozycji programu Visual Studio ikony i menu kontekstowego.
+- **INTERFEJS UŻYTKOWNIKA:** Obsługuj motywy programu Visual Studio dla menu kontekstowego i ikon.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 (wersja zapoznawcza)
 Wydana 12 listopada 2014 r.
@@ -1375,21 +1399,21 @@ Wydana 25 marca 2013
 
 - Usunięto usterkę występującą 48 UV: wpisywanie podwójny cudzysłów czasami generuje błąd i przerwanie wszystkich funkcji (uzupełnianie kodu, wyróżnianie składni itp.).
 
-- Usunięto usterkę występującą UV 46: Zduplikowany plik otwarty skryptu (UnityScript), po kliknięciu błąd listy z programu Visual Studio.
+- Naprawiono usterkę UVS-46: Zduplikowany otwarty plik skryptu (UnityScript) podczas klikania Lista błędów programu Visual Studio.
 
-- Usunięto usterkę występującą 42 UV: Logo łączność platformy Unity na pasku stanu nie obsługuje zdarzenia myszy w VS 2012.
+- Naprawiono usterkę UVS-42: Logo łączności Unity na pasku stanu nie obsługuje zdarzeń myszy w programie VS 2012.
 
-- Usunięto usterkę występującą UV 44: CTRL + SHIFT + Q nie jest dostępna w wersji VS 2012 dla szybkich klas Monobehaviour.
+- Naprawiono usterkę UVS-44: Naciśnięcie klawiszy CTRL + SHIFT + Q nie jest dostępne w programie VS 2012 w przypadku szybkich zachowań.
 
-- Usunięto usterkę występującą UV 40: Wybrane elementy w Eksploratorze projektów aparatu Unity były nieczytelne w przypadku, gdy okno jest nieaktywne VS2012 motywu "ciemny".
+- Naprawiono usterkę UVS-40: Nie można odczytać wybranych elementów w Eksploratorze projektów aparatu Unity, gdy okno jest nieaktywne w motywie VS2012 "ciemny".
 
-- Usunięto usterkę występującą UV 39: Wydać tokenizację ciągów o zmienionym znaczeniu.
+- Naprawiono usterkę UVS-39: Wydaj tokenizowanie ciągi ucieczki.
 
-- Usunięto usterkę występującą 35 UV: Wywołaj ToString obiektów, podczas sprawdzania zmiennych.
+- Naprawiono usterkę UVS-35: Wywołaj ToString dla obiektów podczas inspekcji zmiennych.
 
-- Usunięto usterkę występującą UV 27: Przejdź do symbolu okna sprzeczność z takimi "" ciemny w VS2012.
+- Naprawiono usterkę UVS-27: Przejdź do okna symboli niespójności z motywem "ciemny" w VS2012.
 
-- Usunięto usterkę występującą UV-11: Zmienne lokalne w koprocedury.
+- Naprawiono usterkę UVS-11: Elementy lokalne w procedurach wspólnych.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 — wydanie beta
 Ogólnie, 9 marca 2013
@@ -1496,9 +1520,9 @@ Wydana 3 październik 2012
 
 - Ustala, jak typy są przeszukiwane w załadowanych zestawów do obliczenia wyrażenia.
 
-- Usunięto usterkę występującą UV 21: Ocena przydziału obiektów Unity nie ma znaczenia.
+- Naprawiono usterkę UVS-21: Obliczanie przydziału obiektów Unity nie ma żadnego wpływu.
 
-- Usunięto usterkę występującą UV 21: Nieprawidłowy wskaźnik podczas obliczania wywołanie metody do interfejsu API aparatu Unity matematyczne.
+- Naprawiono usterkę UVS-21: Nieprawidłowy wskaźnik podczas oceny wywołania metody do interfejsu API Math usługi Unity.
 
 ## <a name="1080"></a>1.0.8.0
 

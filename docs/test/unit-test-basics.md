@@ -1,5 +1,5 @@
 ---
-title: Podstawowe informacje dotyczące testowania jednostek
+title: Podstawy testów jednostkowych
 ms.date: 06/06/2019
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: c4d129d823c662a96a2186ea24989922d4af7442
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820751"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661965"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -30,15 +30,15 @@ Eksplorator testów można również uruchomić innych firm i open source, struk
 
 Aby zapoznać się z wprowadzeniem do testów jednostkowych, które umożliwia przejście bezpośrednio do kodowania zobacz jeden z tych tematów:
 
-- [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Szybki start: Programowanie sterowane testami za pomocą Eksploratora testów](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
 ## <a name="the-mybank-solution-example"></a>Przykład rozwiązania MyBank
 
-W tym artykule używamy rozwoju fikcyjnej aplikacji o nazwie `MyBank` jako przykład. Nie musisz rzeczywisty kod, aby uprościć wyjaśnienia, w tym temacie. Metody testowe są napisane w języku C# i przedstawiane za pomocą Frameworka testów jednostkowych firmy Microsoft dla kodu zarządzanego. Jednakże pojęcia można łatwo przenosić do innych języków i struktur.
+W tym artykule używamy programowania fikcyjnej aplikacji o nazwie `MyBank` jako przykładu. Nie musisz rzeczywisty kod, aby uprościć wyjaśnienia, w tym temacie. Metody testowe są napisane w języku C# i przedstawiane za pomocą Frameworka testów jednostkowych firmy Microsoft dla kodu zarządzanego. Jednakże pojęcia można łatwo przenosić do innych języków i struktur.
 
 ![Rozwiązanie MyBank](../test/media/ute_mybanksolution.png)
 
@@ -78,20 +78,20 @@ Teraz, gdy jakiś kod, nadszedł czas na testowanie.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Tworzenie projektów testów jednostkowych i metod testowych
 
-Często jest szybsze generowanie projektu testu jednostkowego i wycinków testów jednostkowych w kodzie. Lub możesz utworzyć projekt testów jednostkowych i testów ręcznie w zależności od wymagań. Jeśli chcesz utworzyć testy jednostkowe z 3 framework innej firmy, można użyć jednego z tych rozszerzeń zainstalowano: [Rozszerzenie NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) lub [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
+Często jest szybsze generowanie projektu testu jednostkowego i wycinków testów jednostkowych w kodzie. Lub możesz utworzyć projekt testów jednostkowych i testów ręcznie w zależności od wymagań. Jeśli chcesz utworzyć testy jednostkowe za pomocą struktury innej firmy, konieczne będzie zainstalowanie jednego z tych rozszerzeń: [Nunit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) lub [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generowanie projektu testów jednostkowych i testów jednostkowych wycinków
 
-1. W oknie edytora kodu, kliknij prawym przyciskiem myszy i wybierz polecenie [ **Utwórz testy jednostkowe** ](create-unit-tests-menu.md) z menu podręcznego.
+1. W oknie Edytor kodu kliknij prawym przyciskiem myszy i wybierz polecenie [**Utwórz testy jednostkowe**](create-unit-tests-menu.md) z menu dostępnego po kliknięciu prawym przyciskiem myszy.
 
    ![W oknie edytora wyświetlić menu kontekstowe](../test/media/createunittestsrightclick.png)
 
    > [!NOTE]
-   > **Utwórz testy jednostkowe** polecenia menu jest dostępna tylko dla kodu zarządzanego, który jest przeznaczony dla .NET Framework (ale nie platformy .NET Core).
+   > Polecenie **Utwórz testy jednostkowe** jest dostępne tylko dla kodu zarządzanego, który jest przeznaczony dla .NET Framework (ale nie do programu .NET Core).
 
 2. Kliknij przycisk **OK** zaakceptować ustawienia domyślne, aby utworzyć testy jednostkowe lub zmienić wartości używane do tworzenia i nazwij projekt testów jednostkowych i testów jednostkowych. Możesz wybrać kod, który jest domyślnie dodawany do metody testów jednostkowych.
 
-    ![Testy jednostkowe, okno dialogowe Tworzenie w programie Visual Studio](../test/media/create-unit-tests.png)
+    ![Okno dialogowe Tworzenie testów jednostkowych w programie Visual Studio](../test/media/create-unit-tests.png)
 
 3. Wycinki kodu testu jednostki są tworzone w nowy projekt testu jednostki dla wszystkich metod w klasie.
 
@@ -105,7 +105,7 @@ Projekt testu jednostkowego zwykle odzwierciedla strukturę projektu pojedynczeg
 
 **Aby dodać projekt testu jednostkowego do rozwiązania:**
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie i wybierz **Dodaj** > **New** **projektu**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj** > **Nowy** **projekt**.
 
 ::: moniker range="vs-2017"
 
@@ -120,9 +120,9 @@ Projekt testu jednostkowego zwykle odzwierciedla strukturę projektu pojedynczeg
 
 ::: moniker range=">=vs-2019"
 
-2. Użyj pola wyszukiwania szablonu projektu można znaleźć test jednostkowy projekt szablon ze środowiskiem testowym, którego chcesz użyć.
+2. Użyj pola wyszukiwania szablonu projektu, aby znaleźć szablon projektu testów jednostkowych dla środowiska testowego, którego chcesz użyć.
 
-3. Na następnej stronie nadaj projektowi nazwę. Aby przetestować `Accounts` projektu z naszym przykładzie nazwać projektu `AccountsTests`.
+3. Na następnej stronie Nadaj projektowi nazwę. Aby przetestować `Accounts` projekt naszego przykładu, można nazwać projekt `AccountsTests`.
 
 ::: moniker-end
 
@@ -230,9 +230,19 @@ Można również filtrować testy w dowolnym widoku, pasujący tekst w polu wysz
 
 ![Uruchom testy z paska narzędzi Eksploratora testów](../test/media/ute_toolbar.png)
 
-Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Po uruchomieniu zestawu testów, podsumowanie przebiegu testu zostanie wyświetlony u dołu **Eksploratora testów** okna. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku. Wybierz **Otwórz Test** menu kliknij prawym przyciskiem myszy (klawiatury: **F12**) aby wyświetlić kod źródłowy dla wybranych testów.
+Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Po uruchomieniu zestawu testów, podsumowanie przebiegu testu zostanie wyświetlony u dołu **Eksploratora testów** okna. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku. Wybierz **Otwórz test** z menu dostępnego po kliknięciu prawym przyciskiem myszy (klawiatura: **F12**) Aby wyświetlić kod źródłowy wybranego testu.
+
+::: moniker range="vs-2017"
 
 Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów w menu Ustawienia na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
+
+::: moniker-end
 
 ### <a name="run-tests-after-every-build"></a>Uruchamianie testów po każdej kompilacji
 
@@ -257,9 +267,9 @@ Aby uzyskać więcej informacji, zobacz [Uruchamianie testów jednostkowych w Ek
 
 ## <a name="qa"></a>PYTANIA I ODPOWIEDZI
 
-**PYT.: Jak debugować testy jednostkowe?**
+**PYTANIA Jak mogę Debuguj testy jednostkowe?**
 
-**ODP.:** Użyj **Eksplorator testów** do uruchamiania sesji debugowania dla testów. Krokowe wykonywanie kodu za pomocą debugera programu Visual Studio bezproblemowe przejście i z powrotem między testami jednostek a testowanego projektu. Aby rozpocząć debugowanie:
+**Z** Użyj **Eksploratora testów** , aby rozpocząć sesję debugowania dla testów. Krokowe wykonywanie kodu za pomocą debugera programu Visual Studio bezproblemowe przejście i z powrotem między testami jednostek a testowanego projektu. Aby rozpocząć debugowanie:
 
 1. W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.
 
@@ -270,15 +280,15 @@ Aby uzyskać więcej informacji, zobacz [Uruchamianie testów jednostkowych w Ek
 
 Dowiedz się więcej szczegółów o [debugowanie testów jednostkowych](../debugger/debugger-feature-tour.md).
 
-**PYT.: Jeśli używam TDD, jak I generowanie kodu na podstawie moich testów?**
+**PYTANIA Jeśli korzystam z programu TDD, jak wygenerować kod na podstawie testów?**
 
-**ODP.:** Użyj funkcji IntelliSense do generowania klasy i metody w kodzie projektu. Napisze instrukcję w metodzie badania, która wywołuje klasy lub metody, która ma zostać wygenerowany, a następnie otwórz menu funkcji IntelliSense w wywołaniu. Jeśli wywołanie konstruktora dla nowej klasy, wybierz **Generuj nowy typ** menu i wykonaj polecenia kreatora, aby wstawić klasy w projekcie kodu. W przypadku wywołania do metody, wybierz **wygenerować nową metodę** menu funkcji IntelliSense.
+**Z** Użyj funkcji IntelliSense, aby generować klasy i metody w kodzie projektu. Napisze instrukcję w metodzie badania, która wywołuje klasy lub metody, która ma zostać wygenerowany, a następnie otwórz menu funkcji IntelliSense w wywołaniu. Jeśli wywołanie konstruktora dla nowej klasy, wybierz **Generuj nowy typ** menu i wykonaj polecenia kreatora, aby wstawić klasy w projekcie kodu. W przypadku wywołania do metody, wybierz **wygenerować nową metodę** menu funkcji IntelliSense.
 
 ![Generowanie Menu IntelliSense Stub — metoda](../test/media/ute_generatemethodstubintellisense.png)
 
-**PYT.: Można utworzyć testów, które przyjmują wiele zestawów danych jako dane wejściowe, aby uruchomić test?**
+**PYTANIA Czy można utworzyć testy jednostkowe, które pobierają wiele zestawów danych jako dane wejściowe do uruchomienia testu?**
 
-**ODP.:** Tak. *Metody testowe opartych na danych* pozwala testować zakres wartości z metodą testową pojedyncza jednostka. Użyj `DataSource` atrybut metody testowej, który określa źródło danych i tabelę, która zawiera wartości zmiennych, które mają zostać przetestowane.  W treści metody, przypisz wartości wierszy do zmiennych, przy użyciu `TestContext.DataRow[` *ColumnName* `]` indeksatora.
+**Z** Tak. *Metody testowe opartych na danych* pozwala testować zakres wartości z metodą testową pojedyncza jednostka. Użyj `DataSource` atrybut metody testowej, który określa źródło danych i tabelę, która zawiera wartości zmiennych, które mają zostać przetestowane.  W treści metody, przypisz wartości wierszy do zmiennych, przy użyciu `TestContext.DataRow[` *ColumnName* `]` indeksatora.
 
 > [!NOTE]
 > Te procedury dotyczą tylko metody testowe, które piszesz za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego. Jeśli używasz innej struktury, zajrzyj do dokumentacji framework równoważne funkcje.
@@ -308,9 +318,9 @@ Metoda opartego na atrybutach jest uruchamiane jeden raz dla każdego wiersza w 
 
 Dowiedz się więcej o [testów jednostkowych opartych na danych](../test/how-to-create-a-data-driven-unit-test.md).
 
-**PYT.: Można przeglądać jaka część mojego kodu jest testowana za Moje testy jednostkowe?**
+**PYTANIA Czy mogę sprawdzić, jaka część mojego kodu jest testowana przez testy jednostkowe?**
 
-**ODP.:** Tak. Można określić ilość swój kod, który jest aktualnie testowany przez nasze testy jednostkowe za pomocą narzędzia pokrycia kodu programu Visual Studio. Języki macierzystymi i zarządzanymi i wszystkich platform testów jednostkowych, które mogą być uruchamiane przez strukturę testu jednostki są obsługiwane.
+**Z** Tak. Można określić ilość swój kod, który jest aktualnie testowany przez nasze testy jednostkowe za pomocą narzędzia pokrycia kodu programu Visual Studio. Języki macierzystymi i zarządzanymi i wszystkich platform testów jednostkowych, które mogą być uruchamiane przez strukturę testu jednostki są obsługiwane.
 
 Można uruchomić pokrycie kodów w wybranych testach albo we wszystkich testach w rozwiązaniu. **Wyniki pokrycia kodu** okno wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.
 
@@ -322,9 +332,9 @@ Wyniki pokrycia są wyświetlane w **wyniki pokrycia kodu** okna.
 
 Dowiedz się więcej o [pokrycia kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
-**PYT.: Czy można przetestować metod, w środowisku mój kod, który ma zależności zewnętrznych?**
+**PYTANIA Czy mogę przetestować metody w moim kodzie, który ma zależności zewnętrzne?**
 
-**ODP.:** Tak. Jeśli masz program Visual Studio Enterprise, Microsoft Fakes może służyć za pomocą metody testowe, które należy zapisać przy użyciu struktur testów jednostek dla kodu zarządzanego.
+**Z** Tak. Jeśli masz program Visual Studio Enterprise, Microsoft Fakes może służyć za pomocą metody testowe, które należy zapisać przy użyciu struktur testów jednostek dla kodu zarządzanego.
 
 Microsoft Fakes używa dwa podejścia do tworzenia klas zastępczych dla zależności zewnętrznych:
 
@@ -336,9 +346,9 @@ W obu metod użyjesz wygenerowanego delegatów wywołania metody zależności do
 
 Dowiedz się więcej o [izolowanie metody testów jednostkowych with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**PYT.: Aby utworzyć testy jednostkowe mogą używać innych struktur testów jednostek?**
+**PYTANIA Czy można używać innych platform testów jednostkowych do tworzenia testów jednostkowych?**
 
-**ODP.:** Tak, wykonaj następujące kroki, aby [znajdować i instalować innych struktur](../test/install-third-party-unit-test-frameworks.md). Po ponownym uruchomieniu programu Visual Studio ponownie otwórz rozwiązanie do utworzenia testów jednostkowych, a następnie wybierz zainstalowany struktur w tym miejscu:
+**Z** Tak, wykonaj następujące kroki, aby [znaleźć i zainstalować inne platformy](../test/install-third-party-unit-test-frameworks.md). Po ponownym uruchomieniu programu Visual Studio ponownie otwórz rozwiązanie do utworzenia testów jednostkowych, a następnie wybierz zainstalowany struktur w tym miejscu:
 
 ![Wybierz inne zainstalowane testów jednostkowych](../test/media/createunittestsdialogextensions.png)
 
