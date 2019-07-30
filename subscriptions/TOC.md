@@ -71,8 +71,9 @@
 #### [Film wideo dotyczący dołączania](https://youtu.be/plSu6fpi7UI)
 ### Korzystanie z portalu administracyjnego
 #### [Omówienie](using-admin-portal.md)
-#### [Przypisywanie subskrypcji](assign-license.md)
-#### [Ponowne wysyłanie wiadomości e-mail dotyczących przypisania](resend-assignment-email.md)
+#### Przypisywanie subskrypcji
+##### [Dodawanie pojedynczych użytkowników](assign-license.md)
+##### [Dodawanie wielu użytkowników](assign-license-bulk.md)
 #### [Edytowanie subskrypcji](edit-license.md)
 #### [Usuwanie subskrypcji](delete-license.md)
 #### [Wyszukiwanie subskrypcji](search-license.md)
@@ -84,7 +85,7 @@
 #### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
 ### [Zarządzanie Visual Studio z usługą GitHub Enterprise](assign-github.md)
 ## Resources
-### [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://aka.ms/vslicensing)
+### [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://aka.ms/vslicensing)
 ### [Porównanie opcji i cen subskrypcji](https://visualstudio.microsoft.com/vs/pricing)
 ### [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)
 ### [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
