@@ -1,69 +1,59 @@
 ---
-title: MSDN Magazine korzyści w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+title: Korzyść MSDN Magazine w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
-description: Zarejestruj się otrzymać Subskrypcja magazynu MSDN Magazine zawarte w Twojej subskrypcji programu Visual Studio.
-ms.openlocfilehash: 8bc38545ce497c0f8f85dfe74db841ef1ae4ee78
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Zarejestruj się, aby uzyskać subskrypcję magazynu MSDN w ramach subskrypcji programu Visual Studio.
+ms.openlocfilehash: 0cc6757a77536a7bd8073418be8729802e8aaaae
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250786"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681575"
 ---
-# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Korzyść MSDN Magazine w subskrypcji programu Visual Studio
+# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Korzyść z usługi MSDN Magazine w subskrypcjach programu Visual Studio
+Kompleksowa funkcjonalność technologii firmy Microsoft dla praktycznych rozwiązań dla rzeczywistych problemów.  W zależności od subskrypcji Użytkownik jest uprawniony do wydrukowanego magazynu lub wczesnego dostępu do wersji cyfrowej.
 
-Kompleksowy opis technologii firmy Microsoft oraz praktyczne rozwiązania prawdziwych problemów.  W zależności od Twojej subskrypcji są uprawnieni do drukowanego magazynu, lub wczesny dostęp do wersji cyfrowej.
-
-## <a name="activation-steps"></a>Procedurę aktywacji
-Kroki, aby aktywować swoje korzyści zależą od wybranej wersji.
-
-### <a name="digital-edition"></a>Wersja cyfrowa
-Wersja cyfrowa jest dostępne dla członków programu Visual Studio Dev Essentials.
-
-1. Aby uzyskać dostęp do cyfrowego wydanie magazynu MSDN, zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Znajdź Kafelek magazynu MSDN Magazine w sekcji Projektowanie Professional, a następnie kliknij przycisk **dostępu**.
-
-### <a name="printed-edition"></a>Drukowane edition
-1. Aby zacząć, odbierać z subskrypcji MSDN Magazine, zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2. Znajdź Kafelek magazynu MSDN Magazine w sekcji Projektowanie Professional, a następnie kliknij **Subskrybuj** na kafelku Subskrypcja magazynu MSDN Magazine. (Kliknij pozycję "!" w prawym dolnym rogu Kafelek, aby uzyskać dostęp wersja cyfrowa.)
+## <a name="activation-steps"></a>Kroki aktywacji
+1. Aby utworzyć subskrybenta w witrynie MSDN Magazine, [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)Zaloguj się do.
+2. Znajdź kafelek usługi MSDN Magazine w sekcji Programowanie profesjonalne, a następnie kliknij pozycję **dostęp**.
+3. Na stronie Magazyn MSDN wybierz preferowany typ subskrypcji.  Wersję Digital Edition możesz bezpłatnie wybrać bez opłat, niezależnie od tego, gdzie się znajdują.  Wydrukowana wersja jest dostępna bezpłatnie dla rezydentów Stanów Zjednoczonych.  Opłaty za wysyłkę mają zastosowanie do wersji drukowanych wysyłanych do adresów innych niż US.
    > [!div class="mx-imgBorder"]
-   > ![MSDN Magazine korzyści kafelka](_img/vs-msdn/vs-msdn-tile.png)
-
-3. Na stronie magazynu MSDN Magazine wybierz typ preferowanych subskrypcji.  Możesz wybrać wersja cyfrowa bez dodatkowych opłat, niezależnie od miejsca zamieszkania.  Wersja drukowana jest dostępna bezpłatnie dla mieszkańcy USA.  Wysyłanie opłaty za drukowane wersje wysyłany na adresy-US.
+   > ![Subskrypcje usługi MSDN Magazine](_img/vs-msdn/vs-msdn-subs-page-resized.png)
+4. Podaj żądane informacje kontaktowe, a następnie kliknij przycisk **Prześlij**.  (Wybrana wersja wybranego magazynu zostanie wyświetlona w sekcji subskrypcja magazynu).  Jeśli wybrano wersję wydrukowaną, pierwsza z nich będzie **mieć wartość tak!  Chcę bezpłatnie**otrzymywać 1 rok (12 problemów) usługi MSDN Magazine.)
    > [!div class="mx-imgBorder"]
-   > ![MSDN Magazine korzyści z subskrypcji](_img/vs-msdn/vs-msdn-subs-page-resized.png)
+   > ![Profil korzyści MSDN Magazine](_img/vs-msdn/vs-msdn-profile.png)
+5. To wszystko.  W zależności od wybranej wersji magazynu należy zacząć otrzymywać wydrukowane czasopisma lub wiadomości e-mail z linkami do najnowszych wersji online przy użyciu kolejnej wersji.  Zadowolony!
 
-4. Podaj żądane informacje kontaktowe, a następnie kliknij przycisk **przesyłania**.  (Wersja magazyn, które wybrano pojawia się w sekcji Subskrypcja magazynu.  Jeśli została wybrana opcja drukowanych edition, pierwsza opcja będzie odczytywał element **tak!  Chcę otrzymywać 1 rok (12 zagadnień) magazynu MSDN Magazine za darmo**.)
-   > [!div class="mx-imgBorder"]
-   > ![MSDN Magazine korzyści profilu](_img/vs-msdn/vs-msdn-profile.png)
-
-5. To wszystko jest do niego.  Zależności od instalowanej wersji magazynu została wybrana opcja albo zaczną odbieranie czasopisma drukowanych lub wiadomości e-mail wraz z łączami do najnowszej wersji online z następnej wersji.  Ciesz się!
-
-## <a name="eligibility"></a>Uprawnienie
-
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
+## <a name="eligibility"></a>Kryteria
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> |Drukowane edition       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Drukowane edition                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Drukowane edition                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Drukowane edition                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
-|Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze)   | Azure |Niedostępne      |  Nie dotyczy         |
+| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> |Wersja drukowana       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Wersja drukowana                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Wersja drukowana                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Wersja drukowana                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
+|Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna)   | Azure |Niedostępne      |  Nie dotyczy         |
 ||
 
-<sup>1</sup>*wydrukowana wersji:  Nie do odsprzedaży, Visual Studio Industry Partner (VSIP) ekwiwalentu pełnego wymiaru czasu, Microsoft Partner Network (przedsiębiorstwo), Imagine (Premium).*
+<sup></sup>1*wersja wydrukowana:    Nie do odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), pełnego poziomu, Microsoft Partner Network (Enterprise), Wyobraź sobie (Premium).*
 
-*Wersja cyfrowa: MCT Software & Services, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).*
+*Wydanie cyfrowe: MCT Software & Services, najbardziej cennych profesjonalistów (MVP), dyrektora regionalnego (RD).*
 
-*Nie obejmuje:  Wyobraź sobie (metoda standardowa), BizSpark, MCT Software & Services dla deweloperów*
+*Wyklucza  Wyobraź sobie (standard), BizSpark, MCT Software & Services Developer*
 
 > [!NOTE]
-> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) nowych klientów do przeglądania różnych opcji zakupu programu Visual Studio.
 
-Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
+Nie masz pewności, której subskrypcji używasz?  Połącz się z, [AbywyświetlićwszystkiesubskrypcjeprzypisanedoTwojegoadresue-mail. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
-- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Następne kroki
+Zapoznaj się z bardziej profesjonalnymi możliwościami deweloperskimi w ramach subskrypcji:
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [DataCamp](vs-datacamp.md)

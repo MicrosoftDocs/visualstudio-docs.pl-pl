@@ -22,7 +22,7 @@
 #### [Anonimizacje danych subskrybentów](anonymization.md)
 ### [Omówienie portalu subskrypcji](using-the-subscriber-portal.md)
 ### [Zarządzanie subskrypcjami](manage-vs-subscriptions.md)
-### Zalety
+### Korzyści
 #### Narzędzia
 ##### [Środki na korzystanie z platformy Azure](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
@@ -62,9 +62,7 @@
 #### [Zapasy przedprodukcyjne](admin-inventory.md)
 #### [Zarządzanie dużymi zespołami i zleceniobiorcami zewnętrznymi](manage-teams.md)
 #### [Śledzenie przypisań użytkowników i przetwarzanie zamówień](assignments-orders.md)
-### [Licencjonowanie zbiorowe](volume-license-admins.md)
 ### Dołączanie organizacji
-#### [Dołączanie po migracji](post-migration-onboarding.md)
 #### [Migracja licencji Open i Open License](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [Subskrypcje chmury](cloud-admin.md)
@@ -84,7 +82,7 @@
 #### [Subskrybenci korzystający z aliasów](aliasing.md)
 #### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
 ### [Zarządzanie Visual Studio z usługą GitHub Enterprise](assign-github.md)
-## Resources
+## Zasoby
 ### [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://aka.ms/vslicensing)
 ### [Porównanie opcji i cen subskrypcji](https://visualstudio.microsoft.com/vs/pricing)
 ### [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)

@@ -3,15 +3,15 @@ title: Dostępność produktu na potrzeby pobierania oprogramowania w subskrypcj
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informacje o dostępności produktu w ramach pobierania oprogramowania dla subskrypcji programu Visual Studio
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315602"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681692"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Dostępność produktu na potrzeby pobierania oprogramowania w ramach subskrypcji programu Visual Studio
 W ramach korzyści dla subskrybenta masz dostęp do szerokiego zakresu pobierania oprogramowania.
@@ -38,4 +38,5 @@ Liczba i typ pobieranych danych zależy od poziomu subskrypcji i członkostwa w 
 Nie masz pewności, której subskrypcji używasz?  Połącz się z, [AbywyświetlićwszystkiesubskrypcjeprzypisanedoTwojegoadresue-mail. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
 ## <a name="next-steps"></a>Następne kroki
-Niektóre pliki do pobrania mogą wymagać klucza produktu, aby można było je zainstalować i aktywować.  Zapoznaj się z artykułem dotyczącym kluczy produktów, aby uzyskać szczegółowe informacje na temat uzyskiwania i zarządzania kluczami produktów. 
+- Niektóre pliki do pobrania mogą wymagać klucza produktu, aby można było je zainstalować i aktywować.  Zapoznaj się z artykułem dotyczącym [kluczy produktów](product-keys.md) , aby uzyskać szczegółowe informacje na temat uzyskiwania i zarządzania kluczami produktów. 
+- Dowiedz się, jak [pobrać oprogramowanie](download-software.md).

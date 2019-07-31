@@ -5,25 +5,25 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 06/13/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 05c41988282cb5f6ae643b1abdb05c0b4b0e5c9b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 325489f243e6942cf02df406937f4d19cd21ed0d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461876"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681739"
 ---
 # <a name="net-core-support"></a>Obsługa platformy .NET Core
 
 W poniższej tabeli opisano wersje programu .NET Core obsługiwane przez stabilną i zapoznawczą wersję Visual Studio dla komputerów Mac:
 
-Wersja zestaw .NET Core SDK |Visual Studio dla komputerów Mac 8,1 (stabilne) | Visual Studio dla komputerów Mac 8,2 (stabilne) | Visual Studio dla komputerów Mac 8,3 (wersja zapoznawcza) |
+| Wersja zestaw .NET Core SDK |Visual Studio dla komputerów Mac 8,1 (stabilne) | Visual Studio dla komputerów Mac 8,2 (stabilne) | Visual Studio dla komputerów Mac 8,3 (wersja zapoznawcza) |
 |---------|---------|---------|---------|
 |v 2.1.0-v 2.1.5 XX | | | |
 |v 2.1.600 + |✔︎|✔︎|✔︎|
 |v 2.2.1-v 2.2.1 XX | | | |
 |v2.2.200 + |✔︎|✔︎|✔︎|
 |v 3.0 < wersja zapoznawcza 3 | | | |
-|v 3.0 w wersji zapoznawczej 3, 4, 5 |✔︎|✔︎|✔ ︎ ︎|︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎
+|v 3.0 w wersji zapoznawczej 3, 4, 5 |✔︎|✔︎|✔︎|
 |v 3.0 (wersja zapoznawcza 6 +) | |✔︎|✔︎|
 
 > [!IMPORTANT]

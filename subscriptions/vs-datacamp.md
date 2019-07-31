@@ -1,88 +1,87 @@
 ---
-title: Zwiększ swoje umiejętności do nauki o danych już dzisiaj za pomocą korzyści DataCamp w wybranych subskrypcjach programu Visual Studio. | Microsoft Docs
+title: Jeszcze dziś zwiększ swoje umiejętności nauki dotyczące danych dzięki korzyściom z używania datacamp w wybranych subskrypcjach programu Visual Studio. | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
-description: Więcej informacji na temat subskrypcja szkoleń DataCamp, które są dołączone do wybranej subskrypcji programu Visual Studio.
-ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+description: Dowiedz się więcej o subskrypcji szkoleniowej usługi datacamp dołączonej do wybranych subskrypcji programu Visual Studio.
+ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825350"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681641"
 ---
-# <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w subskrypcji programu Visual Studio
+# <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa datacamp w subskrypcjach programu Visual Studio
+Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do datacamp.  W przypadku usługi datacamp możesz poznać wszystkie potrzebne umiejętności analizy danych. Możesz wybrać, kiedy i w jaki sposób uczysz. W przypadku braku oprogramowania do zainstalowania i braku specjalnych wymagań sprzętowych nauka uczenia danych jest łatwiejsze niż kiedykolwiek.
 
-Uprawnione subskrypcje programu Visual Studio obejmują subskrypcje DataCamp.  Za pomocą DataCamp możesz dowiedzieć się, wszystkie dane do analizy umiejętności potrzebnych przy użyciu przeglądarki. Uzyskasz wybierz, kiedy i zdobytą wiedzę. Oprogramowanie i znikają specjalne wymagania sprzętowe nauki do nauki o danych jest łatwiejsze niż kiedykolwiek.
-
-Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji programu Visual Studio.
-
-## <a name="activation-steps"></a>Procedurę aktywacji
-
+## <a name="activation-steps"></a>Kroki aktywacji
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Znajdź Kafelek korzyści DataCamp w kategorii "Programowanie Professional", a następnie kliknij **Aktywuj**.
+2. Znajdź kafelek korzyści z korzystania z programu datacamp w kategorii "Programowanie profesjonalne" i kliknij pozycję **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp Benefit Tile](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![Kafelek korzyści z datacamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
-3. Na stronie DataCamp można utworzyć nowe konto.  Można wprowadzić adres e-mail i hasło lub zaloguj się przy użyciu istniejącego konta z usługi Facebook, LinkedIn i Google.  Gdy podano informacje logowania, kliknij przycisk **wprowadzenie**.
-   > [!div class="mx-imgBorder"]
-   > ![DataCamp Utwórz nowe konto](_img/vs-datacamp/vs-datacamp-create-account.png)
-   >
+3. Na stronie datacamp można utworzyć nowe konto.  Możesz wprowadzić adres e-mail i hasło lub zalogować się przy użyciu istniejących kont w serwisie Facebook, LinkedIn lub Google.  Po udostępnieniu informacji dotyczących logowania kliknij pozycję **Rozpocznij**.
+
    > [!NOTE]
-   > Po rozpoczęciu tworzenia konta, może zostać wyświetlony następujący komunikat o błędzie: "NIESTETY!  Kod promocyjny jest: nieprawidłowy lub wygasł."  Dzieje się tak, ponieważ po utworzeniu kodu promocyjnego wygasa po upływie kilku minut.  Jeśli zostanie wyświetlony ten komunikat, po prostu zwrócenia do [korzyści](https://my.visualstudio.com/benefits) strony, a następnie kliknij pozycję **Aktywuj** łącze na kafelku DataCamp korzyści.
+   > Po rozpoczęciu tworzenia konta może zostać wyświetlony następujący komunikat o błędzie: NIESTETY!  Kod promocyjny jest nieprawidłowy lub wygasł.  Dzieje się tak, ponieważ podczas tworzenia kodu promocyjnego wygasa on po kilku minutach.  Jeśli zostanie wyświetlony ten komunikat, po prostu Wróć do strony [korzyści](https://my.visualstudio.com/benefits) i kliknij link **Aktywuj** na kafelku korzyści datacamp.
 
-4. Po utworzeniu konta możesz wybrać ścieżkę nauki.  Opcje obejmują:
-    - Nauka języka R do analizy danych
-    - Rozpocznij nauki języka Python do analizy danych
-    - Rozwijać swoje umiejętności wykorzystać do nauki o danych
+4. Po utworzeniu konta możesz wybrać ścieżkę szkoleniową.  Opcje obejmują:
+    - Uczenie języka R na potrzeby nauki o danych
+    - Rozpocznij naukę języka Python w celu nauki o danych
+    - Opracowywanie analizy danych zestawu umiejętności
 
-   Wystarczy kliknąć z wybranej ścieżki, aby rozpocząć pracę.
+   Po prostu kliknij wybraną ścieżkę, aby rozpocząć pracę.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp wybierz ścieżkę](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![Datacamp — wybór ścieżki](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
-5. Po wybraniu ścieżki Możesz ulepszyć swoje ścieżki szkoleniowej, wybierając pozycję celu.  Na przykład jeśli wybrana ścieżka "Tworzenie usługi danych do analizy zestawu umiejętności", zostaną wyświetlone następujące opcje. Wybierz jedną z opcji, lub kliknij przycisk **nie mam pewności.  Pokaż wszystkie ścieżki kariery** utworzyć szersze ścieżki.
+5. Po wybraniu ścieżki możesz dokładniej udoskonalić ścieżkę szkoleniową, wybierając cel.  Na przykład w przypadku wybrania ścieżki "opracowywanie analizy danych zestawu umiejętności" zostaną wyświetlone następujące opcje. Wybierz opcję lub kliknij **nie mam pewności.  Pokaż wszystkie ścieżki** kariery, aby utworzyć szersze ścieżki.
    > [!div class="mx-imgBorder"]
    > ![DataCamp Data Science Skillset](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-6. Na podstawie ścieżki i opcje, które zostały wybrane, zobaczysz wybór ścieżki kariery.  Kliknij pozycję **Zarejestruj** przycisk ścieżki wybór.
+6. W zależności od wybranej ścieżki i opcji zobaczysz wybór ścieżek kariery.  Kliknij przycisk **zarejestruj** , aby wybrać wybraną ścieżkę.
    > [!div class="mx-imgBorder"]
-   > ![Ścieżki kariery DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![Śledzenie kariery w usłudze datacamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
 
-7. Po zarejestrowaniu się w swojej ścieżce, zostanie otwarty pierwszy kurs w tej ścieżce.  Samouczek wyjaśniające, jak korzystać z kursu, zostaną wyświetlone w tym nawigacji i wykonując ćwiczenia kursu.
+7. Po zarejestrowaniu się na ścieżce zostanie otwarty pierwszy kurs z tej ścieżki.  Zobaczysz samouczek wyjaśniający, jak korzystać z kursu, w tym nawigacją i wykonywaniem ćwiczeń kursowych.
 
    > [!div class="mx-imgBorder"]
-   > ![Wprowadzenie do DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![Wprowadzenie datacamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-Można zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  Po prostu odwiedź [ http://www.datacamp.com ](http://www.datacamp.com)i zaloguj się.  Zostanie wyświetlony pulpit nawigacyjny i może wznowić działanie prawa szkolenia którym została wstrzymana. Po prostu kliknij **kontynuować śledzenie**.
+Możesz zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  Po prostu [http://www.datacamp.com](http://www.datacamp.com)odwiedź stronę i zaloguj się.  Zobaczysz pulpit nawigacyjny i będzie można wznowić szkolenia w miejscu, w którym zostało wstrzymane. Po prostu kliknij pozycję **Kontynuuj śledzenie**.
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp kontynuować szkolenie](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![Dalsze szkolenia dotyczące datacamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
-## <a name="eligibility"></a>Uprawnienie
-
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
+## <a name="eligibility"></a>Kryteria
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | 3-miesięcznym                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | 3-miesięcznym                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
-| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 3 miesiące                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
 
-<sup>1</sup>*obejmuje:  Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup></sup>1*obejmuje:    Nie do odsprzedaży (NFR), EKWIWALENTu, najbardziej cennych specjalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 
 > [!NOTE]
-> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) nowych klientów do przeglądania różnych opcji zakupu programu Visual Studio.
 
-Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
+Nie masz pewności, której subskrypcji używasz?  Połącz się z, [AbywyświetlićwszystkiesubskrypcjeprzypisanedoTwojegoadresue-mail. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy dotyczącej korzystania z DataCamp?  Zapoznaj się z tymi zasobami:
-  - [Społeczność DataCamp](https://www.datacamp.com/community/tutorials), fora i samouczki.
-  - [Centrum pomocy DataCamp](https://support.datacamp.com/hc), gdzie Wyszukaj tematy pomocy technicznej i zobacz pytania użytkownika żądania.
+- Potrzebujesz pomocy przy korzystaniu z usługi datacamp?  Zapoznaj się z następującymi zasobami:
+  - [Społeczność datacamp](https://www.datacamp.com/community/tutorials), z forów i samouczków.
+  - [Centrum pomocy](https://support.datacamp.com/hc)programu datacamp, w którym tematy pomocy technicznej dotyczące wyszukiwania i zobacz prośby o zażądanie użytkownika.
   - [Prześlij żądanie pomocy technicznej](https://support.datacamp.com/hc/requests/new)
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
-- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Następne kroki
+Zapoznaj się z bardziej profesjonalnymi możliwościami deweloperskimi w ramach subskrypcji:
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [Magazyn MSDN](vs-msdn.md)

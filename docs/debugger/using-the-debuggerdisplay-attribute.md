@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie niestandardowych informacji o użyciu DebuggerDisplay | Dokumentacja firmy Microsoft
+title: Wyświetlanie informacji niestandardowych za pomocą DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,67 +12,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929607"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680586"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Polecić debugerowi, co pokazano przy użyciu atrybutu DebuggerDisplay (C#, Visual Basic F#, C++sposób niezamierzony)
-<xref:System.Diagnostics.DebuggerDisplayAttribute> Kontroluje sposób wyświetlania obiektu, właściwość lub pole w oknach zmiennych debugera. Ten atrybut może dotyczyć typy delegatów, właściwości, pola i zestawy.
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Określ debuger, który ma być wyświetlany przy użyciu atrybutu DebuggerDisplayC#(, Visual Basic F#, C++,/CLI)
+<xref:System.Diagnostics.DebuggerDisplayAttribute> Kontroluje sposób wyświetlania obiektu, właściwości lub pola w zmiennych debugera systemu Windows. Ten atrybut może być stosowany do typów, delegatów, właściwości, pól i zestawów. W przypadku zastosowania do typu podstawowego atrybut ma zastosowanie również do podklasy.
 
-`DebuggerDisplay` Atrybut ma jeden argument, czyli ciąg tekstowy, który ma być wyświetlana w kolumnie wartość dla wystąpienia typu. Ten ciąg może zawierać nawiasy klamrowe (`{` i `}`). Tekst w parę nawiasów klamrowych jest oceniane jako pola, właściwości lub metody.
+`DebuggerDisplay` Atrybut ma jeden argument, który jest ciągiem, który ma być wyświetlany w kolumnie wartość dla wystąpień typu. Ten ciąg może zawierać nawiasy klamrowe `}`(`{` i). Tekst w parze nawiasów klamrowych jest obliczany jako pole, właściwość lub metoda.
 
-Jeśli klasa ma zastąpione `ToString()` metoda, debuger używa przeciążonej zamiast domyślnego `{<typeName>}`. W związku z tym jeśli zastępowano `ToString()` metoda, debuger używa przeciążonej zamiast domyślnego`{<typeName>}`, i nie trzeba używać `DebuggerDisplay`. Jeśli używasz zarówno `DebuggerDisplay` atrybut ma pierwszeństwo przed zastąpione `ToString()` metody.
+Jeśli klasa ma przesłoniętą `ToString()` metodę, debuger używa zastąpionej metody zamiast wartości domyślnej. `{<typeName>}` W takim przypadku w przypadku zastąpienia `ToString()` metody debuger używa zastąpionej metody zamiast wartości domyślnej`{<typeName>}`i nie trzeba używać `DebuggerDisplay`. Jeśli używasz obu, `DebuggerDisplay` atrybut ma pierwszeństwo przed zastąpioną `ToString()` metodą.
 
-Czy tym niejawne ocenia debuger `ToString()` wywołanie zależy od ustawień użytkownika w **narzędzia / Opcje / Debugowanie** okno dialogowe. Visual Basic nie implementuje tym niejawne `ToString()` oceny.
+Czy debuger szacuje to niejawne `ToString()` wywołanie zależnie od ustawienia użytkownika w oknie dialogowym **Narzędzia/Opcje/debugowanie** . Visual Basic nie implementuje tej niejawnej `ToString()` oceny.
 
 > [!IMPORTANT]
-> Jeśli **pokazywanie nieprzetworzonej struktury obiektów w oknach zmiennych** zaznaczono pole wyboru w **narzędzia/Opcje / Debugowanie** okno dialogowe, a następnie `DebuggerDisplay` atrybut jest ignorowany.
+> Jeśli pole wyboru **Pokaż nieprzetworzoną strukturę obiektów w zmiennych oknach** jest zaznaczone w oknie dialogowym **Narzędzia/Options/debugowanie** `DebuggerDisplay` , atrybut jest ignorowany.
 
 > [!NOTE]
-> Dla kodu natywnego, ten atrybut jest obsługiwany tylko C++sposób niezamierzony kodu.
+> W przypadku kodu natywnego ten atrybut jest obsługiwany tylko C++w kodzie/CLI.
 
-W poniższej tabeli przedstawiono niektóre możliwości wykorzystania `DebuggerDisplay` atrybutu i przykładowe dane wyjściowe.
+W poniższej tabeli przedstawiono niektóre możliwe zastosowania `DebuggerDisplay` atrybutu i przykładowych danych wyjściowych.
 
-|Atrybut|Dane wyjściowe znajdujących się w kolumnie wartości|
+|Atrybut|Dane wyjściowe pojawiają się w kolumnie Value|
 |---------------| - |
-|`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Używane w danym typie z polami `x` i `y`.|`x = 5 y = 18`|
-|`[DebuggerDisplay("String value is {getString()}")]`Składnia parametru może się różnić między językami. W związku z tym jej używać z rozwagą.|`String value is [5, 6, 6]`|
+|`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Używane dla typu z polami `x` i. `y`|`x = 5 y = 18`|
+|`[DebuggerDisplay("String value is {getString()}")]`Składnia parametru może się różnić w różnych językach. Z tego względu należy z nich korzystać.|`String value is [5, 6, 6]`|
 
-`DebuggerDisplay` Ponadto można zaakceptować nazwanych parametrów.
+`DebuggerDisplay`może również akceptować nazwane parametry.
 
 |Parametry|Cel|
 |----------------|-------------|
-|`Name`, `Type`|Parametry te mają wpływ na **nazwa** i **typu** kolumn w oknach zmiennych. (One może być równa ciągów za pomocą tej samej składni jako Konstruktor.) Nadużywanie tych parametrów lub korzystanie z nich nieprawidłowo, może spowodować mylące danych wyjściowych.|
-|`Target`, `TargetTypeName`|Określa typ docelowy, gdy ten atrybut jest używany na poziomie zestawu.|
+|`Name`, `Type`|Te parametry mają wpływ na kolumny **nazw** i **typów** zmiennych okien. (Mogą być ustawiane na ciągi przy użyciu tej samej składni co Konstruktor). Użycie tych parametrów lub nieprawidłowe użycie ich może spowodować mylące wyprowadzanie danych wyjściowych.|
+|`Target`, `TargetTypeName`|Określa typ docelowy, gdy atrybut jest używany na poziomie zestawu.|
 
-Plik autoexp.cs używa atrybutu DebuggerDisplay na poziomie zestawu. Plik autoexp.cs Określa rozszerzenia domyślne używane przez program Visual Studio dla obiektów platformy .NET. Można przejrzeć plik autoexp.cs przykładów dotyczących sposobów używania atrybutu DebuggerDisplay lub można modyfikować i skompiluj plik autoexp.cs, aby zmienić domyślne rozszerzenia. Pamiętaj utworzyć kopię zapasową pliku autoexp.cs, przed przystąpieniem do modyfikacji.
+Plik autoexp.cs używa atrybutu DebuggerDisplay na poziomie zestawu. Plik autoexp.cs określa domyślne rozszerzenia, które program Visual Studio używa dla obiektów .NET. Można przejrzeć plik autoexp.cs, aby poznać przykłady użycia atrybutu DebuggerDisplay lub zmodyfikować i skompilować plik autoexp.cs, aby zmienić domyślne rozszerzenia. Przed przystąpieniem do modyfikacji należy wykonać kopię zapasową pliku autoexp.cs.
 
-Aby skompilować autoexp.cs, otwórz się wiersz polecenia dla deweloperów dla VS2015 i uruchom następujące polecenia
+Aby skompilować autoexp.cs, Otwórz wiersz polecenia dla deweloperów dla programu VS2015 i uruchom następujące polecenia
 
 ```cmd
 cd <directory containing autoexp.cs>
 csc /t:library autoexp.cs
 ```
 
-Zmiany autoexp.dll będą pobierane w następnej sesji debugowania.
+Zmiany w autoexp. dll zostaną pobrane w następnej sesji debugowania.
 
 ## <a name="using-expressions-in-debuggerdisplay"></a>Używanie wyrażeń w DebuggerDisplay
-Mimo że można użyć wyrażenia ogólnych między nawiasami klamrowymi w atrybutu DebuggerDisplay, to rozwiązanie nie jest zalecane.
+Chociaż można użyć wyrażenia ogólnego między nawiasami klamrowymi w atrybucie DebuggerDisplay, ta metoda nie jest zalecana.
 
-Ogólne wyrażenia w DebuggerDisplay ma niejawne dostęp do `this` wskaźnik dla bieżącego wystąpienia na typ docelowy. Wyrażenie nie ma dostępu do aliasów, zmienne lokalne lub wskaźników. Jeśli wyrażenie odwołuje się do właściwości, atrybutów na te właściwości nie są przetwarzane. Na przykład C# kodu `[DebuggerDisplay("Object {count - 2}")]` zostanie wyświetlony `Object 6` Jeśli pole `count` został 8.
+Wyrażenie ogólne w DebuggerDisplay ma niejawny dostęp do `this` wskaźnika dla bieżącego wystąpienia tylko typu docelowego. Wyrażenie nie ma dostępu do aliasów, zmiennych lokalnych ani wskaźników. Jeśli wyrażenie odwołuje się do właściwości, atrybuty tych właściwości nie są przetwarzane. Na przykład C# kod `[DebuggerDisplay("Object {count - 2}")]` będzie wyświetlany `Object 6` , jeśli pole `count` miało wartość 8.
 
 Używanie wyrażeń w DebuggerDisplay może prowadzić do następujących problemów:
 
-- Ocenianie wyrażenia jest najbardziej kosztownych operacji w debugerze i wyrażenie jest obliczane na każdym razem, gdy jest on wyświetlany. Może to spowodować problemy z wydajnością w krokowe wykonywanie kodu. Na przykład wyrażenie złożone, który służy do wyświetlania wartości w kolekcji lub na liście może być bardzo wolno po dużą liczbę elementów.
+- Ocenianie wyrażeń jest najtańszą operacją w debugerze, a wyrażenie jest oceniane za każdym razem, gdy jest wyświetlany. Może to spowodować problemy z wydajnością podczas stopniowego wykonywania kodu. Na przykład złożone wyrażenie, które jest używane do wyświetlania wartości w kolekcji lub listy, może być bardzo wolne, gdy liczba elementów jest duża.
 
-- Wyrażenia są obliczane przez ewaluatora wyrażeń języka bieżącej ramki stosu a nie przez ewaluatora języka, w którym został zapisany wyrażenia. Może to spowodować nieprzewidywalne skutki, gdy języki są różne.
+- Wyrażenia są oceniane przez ewaluatora wyrażeń w języku bieżącej ramki stosu, a nie przez ewaluatora języka, w którym zapisano wyrażenie. Może to spowodować nieprzewidywalne wyniki, gdy języki są różne.
 
-- Obliczenia wyrażenia można zmienić stanu aplikacji. Na przykład wyrażenie, które ustawia wartości właściwości mutuje wartość właściwości wykonywanie kodu.
+- Obliczenie wyrażenia może zmienić stan aplikacji. Na przykład wyrażenie ustawiające wartość właściwości jest mutacją wartości właściwości w wykonywanym kodzie.
 
-  Jednym ze sposobów, aby ograniczyć możliwe problemy obliczania wyrażenia jest utworzenie właściwości prywatnej, który wykonuje operację i zwraca ciąg. Atrybut DebuggerDisplay następnie wyświetlić wartość tej właściwości prywatnej. Poniższy przykład implementuje tego wzorca:
+  Jednym ze sposobów zmniejszenia możliwych problemów dotyczących oceny wyrażeń jest utworzenie prywatnej właściwości, która wykonuje operację i zwraca ciąg. Atrybut DebuggerDisplay może następnie wyświetlić wartość tej właściwości prywatnej. Poniższy przykład implementuje ten wzorzec:
 
 ```csharp
 [DebuggerDisplay("{DebuggerDisplay,nq}")]
@@ -90,14 +90,14 @@ public sealed class MyClass
 }
 ```
 
-", Nq" sufiks informuje ewaluatora wyrażenia, aby usunąć znaki cudzysłowu, podczas wyświetlania wartości końcowej (nq = nie cudzysłowów).
+Sufiks ", NQ" informuje ewaluatora wyrażeń, aby usunąć cudzysłowy podczas wyświetlania końcowej wartości (NQ = brak cudzysłowów).
 
 ## <a name="example"></a>Przykład
-Poniższy przykład kodu pokazuje sposób użycia `DebuggerDisplay`, wraz z `DebuggerBrowseable` i `DebuggerTypeProxy`. Podczas wyświetlania w oknie zmiennych debugera, takie jak **Obejrzyj** oknie tworzy ekspansja, która wygląda w następujący sposób:
+Poniższy przykład kodu pokazuje, jak używać `DebuggerDisplay`razem z `DebuggerBrowseable` i `DebuggerTypeProxy`. Gdy wyświetlane w oknie zmiennych debugera, takie jak okno **czujki** , tworzy rozszerzenie, które wygląda następująco:
 
 |**Nazwa**|**Wartość**|**Typ**|
 |--------------|---------------|--------------|
-|Key|"trzy"|Obiekt {ciąg}|
+|Key|trzecim|obiekt {String}|
 |Wartość|3|Obiekt {int}|
 
 ```csharp

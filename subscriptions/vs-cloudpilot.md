@@ -1,87 +1,86 @@
 ---
-title: Korzyść CloudPilot w subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+title: CloudPilot korzyści w ramach subskrypcji programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
-description: Więcej informacji na temat korzyści CloudPilot dostępne w wybranych subskrypcjach programu Visual Studio
-ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+description: Poznaj korzyści CloudPilot dostępne w wybranych subskrypcjach programu Visual Studio
+ms.openlocfilehash: 6fec81e4f4345c77bdff7dd08bf2615d6fe45ad4
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825917"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681657"
 ---
-# <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcji programu Visual Studio
+# <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcjach programu Visual Studio
+Przenieś swoje aplikacje do Microsoft Azure w kilku prostych krokach. W ciągu kilku minut Sprawdź, czy wszystkie wymagane kody zostały zmienione w dół do wiersza kodu w celu pomyślnej migracji: Kontenery, maszyny wirtualne, App Services, SQL Azure i/lub SQL MI. Następnie należy przeprowadzić migrację aplikacji na platformę Azure przy użyciu kreatorów korzystających z funkcji ASR, DMA i DMS.
 
-Przenieś swoje aplikacje w systemie Microsoft Azure w kilku prostych krokach. W ciągu kilku minut Zidentyfikuj wszystkich wymaganych zmian w kodzie w dół do wiersza kodu do pomyślnej migracji do: Kontenery, maszyn wirtualnych, usług App Services, SQL Azure i/lub wystąpienia Zarządzanego SQL. Następnie migrowanie aplikacji na platformie Azure przy użyciu kreatorów, wykorzystując usługi ASR, DMA i usługi DMS.
+## <a name="overview"></a>Omówienie
+CloudPilot, według UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szybkiego i łatwego przenoszenia aplikacji na platformę Azure.  W części czasu można przeprowadzić ręczną ocenę, CloudPilot precyzyjnie określa koszty migracji usługi Azure PaaS & IaaS i zawiera szczegółowe zalecenia, w dół do wiersza kodu, na temat tego, jakie zmiany w kodzie muszą zostać wprowadzone w celu uruchomienia aplikacji w chmurze. CloudPilot pomaga w wstępnej ocenie nakładu migracji w chmurze i planowaniu rozwoju w procesie ponownego refaktoryzacji przez oferowanie szczegółowych zmian na poziomie kodu dla chmury oraz w końcowym testowaniu z kontrolkami technologii korporacyjnych i jazd.
 
-CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szybko i łatwo Przenieś aplikacje na platformie Azure.  W zaledwie ułamku czasu, jaki zajęłoby ręcznej oceny CloudPilot dokładnie określa koszty migracji usługi Azure PaaS i IaaS i zawiera szczegółowe zalecenia w dół do wiersza kodu, dotyczące zmian w kodzie potrzebne dla aplikacji do uruchamiania w chmurze. CloudPilot pomaga w początkowej oceny nakład pracy migracji chmury i projektowania, planowania w procesie ponownego factoring, zapewniając szczegółowe zmiany na poziomie kodu w chmurze i w finalnych testów przed formantów technologii przedsiębiorstwa i zasady.
-
-## <a name="activation-steps"></a>Procedurę aktywacji
-
+## <a name="activation-steps"></a>Kroki aktywacji
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Znajdź Kafelek korzyści CloudPilot w kategorii "Narzędzia", a następnie kliknij **uzyskać kod**.
+2. Znajdź kafelek CloudPilot korzyść w kategorii "Tools" (narzędzia), a następnie kliknij pozycję **Pobierz kod**.
 
    > [!div class="mx-imgBorder"]
-   > ![Kafelek CloudPilot korzyści](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
+   > ![Kafelek korzyści CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
 
-0. Zobaczysz, że zostały pomyślnie pobrane komunikat z informacją o tym kodzie.  Kliknij przycisk **Aktywuj**, w tym momencie nastąpi przekierowanie do strony CloudPilot, gdzie można kontynuować proces aktywacji.  (Jeśli użytkownik nie chce Aktywuj teraz, możesz zawsze możesz wrócić do kafelka CloudPilot w portalu subskrypcji programu.  Link "Pobierz kod" zostanie zmieniona na "Aktywuj", a kliknięcie jej spowoduje przejście do następnego kroku w procesie aktywacji).
+0. Zobaczysz komunikat informujący, że kod został pomyślnie pobrany.  Kliknij pozycję **Aktywuj**, w którym momencie nastąpi przekierowanie do strony CloudPilot, na której można kontynuować proces aktywacji.  (Jeśli nie zdecydujesz się na aktywację teraz, zawsze możesz wrócić do kafelka CloudPilot w portalu subskrypcji.  Łącze "Pobierz kod" zmieni się na "Aktywuj", a kliknięcie spowoduje przejście do następnego kroku w procesie aktywacji.
 
-0. Zapoznaj się z zalet CloudPilot prace programistyczne.  Gdy wszystko będzie gotowe, kliknij przycisk **Aktywuj** przycisku.
+0. Zapoznaj się z korzyściami z usługi CloudPilot na potrzeby prac programistycznych.  Gdy wszystko będzie gotowe, kliknij przycisk **Aktywuj** .
 
    > [!div class="mx-imgBorder"]
    > ![Strona docelowa CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
 
-0. Aby utworzyć konto i aktywować swoją subskrypcję CloudPilot, wypełnij informacje kontaktowe w formularzu sieci web, a następnie kliknij przycisk **ZAREJESTRUJ**.
+0. Aby utworzyć konto i aktywować subskrypcję usługi CloudPilot, Wypełnij informacje kontaktowe w formularzu sieci Web, a następnie kliknij pozycję **Utwórz konto**.
 
    > [!div class="mx-imgBorder"]
    > ![Strona rejestracji CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-register.png)
 
    > [!NOTE]
-   > Aktywacje korzyści CloudPilot są ograniczone do 10, jednej organizacji, skorzystać z dowolnej kombinacji subskrypcji programu Visual Studio Enterprise lub Visual Studio Professional.  Jeśli ma już użyte aktywacje dziesięć Twojej organizacji, będzie można aktywować korzyść CloudPilot i otrzymasz wiadomość e-mail z UnifyCloud dodatkowych informacji.
+   > Aktywacje korzyści z korzystania z usługi CloudPilot są ograniczone do dziesięciu jednostek na organizację, z dowolnej kombinacji Visual Studio Enterprise lub Visual Studio Professional subskrypcji.  Jeśli liczba dziesięciu aktywacji w organizacji została już zużyta, nie będzie można aktywować korzyści z usługi CloudPilot i otrzymasz wiadomość e-mail od UnifyCloud z dodatkowymi informacjami.
 
-0. Następnie zostanie wyświetlona strona produktu umożliwiający zapoznanie się z CloudPilot.  Kliknij przycisk **przejdź do CloudPilot** w prawym górnym rogu, aby przejść do portalu CloudPilot.
+0. Następnie zobaczysz stronę produktu, która została zaprojektowana w celu zapoznania się z CloudPilot.  Kliknij pozycję **Przejdź do CloudPilot** w prawym górnym rogu, aby przejść do portalu CloudPilot.
 
     > [!div class="mx-imgBorder"]
-    > ![CloudPilot Product Page](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
+    > ![Strona produktu CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0. To wszystko!  Zostaną wyświetlone w portalu CloudPilot i wszystko będzie gotowe rozpocząć korzystanie z subskrypcji CloudPilot, aby przenieść swoje aplikacje w systemie Microsoft Azure.
+0. To wszystko!  Zobaczysz Portal CloudPilot i będziesz gotowy rozpocząć korzystanie z subskrypcji usługi CloudPilot w celu przeniesienia aplikacji do Microsoft Azure.
 
-0. Zaraz po pomyślnym utworzeniu konta otrzymasz wiadomość e-mail od potwierdzający pomyślne utworzenie konta usługi VSS UnifyCloud działu pomocy technicznej.
+0. Po pomyślnym utworzeniu konta otrzymasz wiadomość e-mail z pomocy technicznej usługi VSS UnifyCloud, potwierdzając pomyślne utworzenie konta.
 
     > [!div class="mx-imgBorder"]
     > ![Wiadomość E-mail z potwierdzeniem CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-email.png)
 
-## <a name="eligibility"></a>Uprawnienie
+## <a name="eligibility"></a>Kryteria
 
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | 2 licencji 90 dni bez ograniczeń skanowania       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 1 licencja 30 dni, jedno skanowanie                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak           |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
-| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
-| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, | 2 licencje, 90 dni, nieograniczone skanowania       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | 1 Licencja, 30 dni, jedno skanowanie                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Brak           |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
 
-<sup>1</sup>*obejmuje:  Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup></sup>1*obejmuje:    Nie do odsprzedaży (NFR), EKWIWALENTu, najbardziej cennych specjalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 
 > [!NOTE]
-> Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) nowych klientów do przeglądania różnych opcji zakupu programu Visual Studio.
 
-Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
+Nie masz pewności, której subskrypcji używasz?  Połącz się z, [AbywyświetlićwszystkiesubskrypcjeprzypisanedoTwojegoadresue-mail. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy dotyczącej korzystania z CloudPilot?  Zapoznaj się z tymi zasobami:
-  - [Skontaktuj się z pomocą UnifyCloud](https://www.unifycloud.com/contacts/) dla zapytania o UnifyCloud produktów.
+- Potrzebujesz pomocy przy korzystaniu z usługi CloudPilot?  Zapoznaj się z następującymi zasobami:
+  - [Skontaktuj się z UnifyCloud](https://www.unifycloud.com/contacts/) , aby uzyskać informacje o produktach UnifyCloud.
   - [Podręcznik użytkownika CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
   - [Prześlij żądanie pomocy technicznej](https://support.datacamp.com/hc/requests/new)
 
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
-- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli nie została już aktywowana korzyść platformy Azure, która pochodzi z Twoją subskrypcją, odwiedź stronę [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a następnie kliknij przycisk na platformie Azure kafelka w kategorii narzędzi do konfigurowania subskrypcji platformy Azure i Zrealizuj swoje środki na korzystanie z platformy Azure.
+Jeśli nie aktywowano jeszcze korzyści platformy Azure powiązanej z Twoją subskrypcją, [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) odwiedź witrynę Azure Portal i kliknij ją w obszarze Kategoria narzędzia, aby skonfigurować subskrypcję platformy Azure i wykorzystać środki na korzystanie z platformy Azure.

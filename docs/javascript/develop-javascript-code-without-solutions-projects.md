@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1541f3608aef33cbd286a8c96257eb191712e245
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960580"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681293"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Tworzenie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań lub projektów
 
-Począwszy od programu Visual Studio 2017 możesz [tworzenie kodu bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), która umożliwia otwieranie folderu kodu i od razu zacząć korzystać z pomocy technicznej Zaawansowany edytor, takie jak IntelliSense, wyszukiwanie, Refaktoryzacja, debugowania i innych. Poza tymi funkcjami Node.js Tools for Visual Studio dodaje obsługę tworzenia plików TypeScript, Zarządzanie pakietami npm i uruchamiania skryptów npm.
+Począwszy od programu Visual Studio 2017, można [opracowywać kod bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), dzięki czemu można otwierać foldery kodu i od razu zacząć pracę z zaawansowaną obsługą edytora, taką jak IntelliSense, wyszukiwanie, Refaktoryzacja, debugowanie i nie tylko. Poza tymi funkcjami Node.js Tools for Visual Studio dodaje obsługę tworzenia plików TypeScript, Zarządzanie pakietami npm i uruchamiania skryptów npm.
 
-Aby rozpocząć, wybierz **pliku** > **Otwórz** > **folderu** na pasku narzędzi. Eksplorator rozwiązań zawiera wszystkie pliki w folderze, a następnie można otworzyć dowolne pliki, aby rozpocząć edycję. W tle programu Visual Studio indeksuje pliki, aby włączyć npm, kompilacji i funkcji debugowania.
+Aby rozpocząć, wybierz pozycję **plik** > **Otwórz** > **folder** na pasku narzędzi. Eksplorator rozwiązań zawiera wszystkie pliki w folderze, a następnie można otworzyć dowolne pliki, aby rozpocząć edycję. W tle programu Visual Studio indeksuje pliki, aby włączyć npm, kompilacji i funkcji debugowania.
 
 > [!IMPORTANT]
-> Wiele funkcji opisanych w tym artykule, w tym Integracja z menedżerem npm wymaga programu Visual Studio 2017 w wersji należy zachować 15,8 lub nowszej wersji.
+> Wiele funkcji opisanych w tym artykule, łącznie z integracją npm, wymaga programu Visual Studio 2017 w wersji 15,8 lub nowszej.
 
 ## <a name="npm-integration"></a>Integracja z menedżerem npm
 
@@ -77,6 +77,7 @@ Jeśli żaden z obsługiwanych platform są rozpoznawane, narzędzia test runner
 * Mocha ([mochajs.org](http://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Taśmy ([github.com/substack/tape](https://github.com/substack/tape))
+* On ([jestjs.IO](https://jestjs.io/))
 
 Po otwarciu Eksploratora testów (wybierz **testu** > **Windows** > **Eksplorator testów**), Visual Studio wykrywa i wyświetla testów.
 
