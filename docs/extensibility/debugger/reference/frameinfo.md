@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eb6a4a9f7408e5bcd03da464bfbc8ade3fa39e7e
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344463"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681098"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
-W tym artykule opisano ramki stosu.
+Opisuje ramkę stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -65,49 +65,49 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `m_dwValidFields`\
-Kombinacja flag z [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) wyliczenia, która określa, które pola są wypełniane.
+Kombinacja flag z wyliczenia [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) , która określa, które pola są wypełnione.
 
 `m_bstrFuncName`\
-Nazwa funkcji skojarzone z ramki stosu.
+Nazwa funkcji skojarzona z ramką stosu.
 
 `m_bstrReturnType`\
-Zwracany typ ramki stosu.
+Zwracany typ skojarzony z ramką stosu.
 
 `m_bstrArgs`\
-Argumenty do funkcji skojarzonych z ramki stosu.
+Argumenty funkcji skojarzonej z ramką stosu.
 
 `m_bstrLanguage`\
 Język, w którym funkcja jest zaimplementowana.
 
 `m_bstrModule`\
-Nazwa modułu ramki stosu.
+Nazwa modułu skojarzona z ramką stosu.
 
 `m_addrMin`\
-Adres minimalny stos fizycznych.
+Minimalny adres fizycznego stosu.
 
 `m_addrMAX`\
-Adres maksymalnej stosu fizycznych.
+Maksymalny adres fizycznego stosu.
 
 `m_pFrame`\
-[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) obiekt, który reprezentuje tej ramki stosu.
+Obiekt [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , który reprezentuje tę ramkę stosu.
 
-`m_pFrame`\
-[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) obiekt, który reprezentuje moduł, który zawiera tej ramki stosu.
-
-`m_fHasDebugInfo`\
-Niezerowa Koniunkcja (`TRUE`) Jeśli informacje o debugowaniu istnieje w podanej ramce.
+`m_pModule`\
+Obiekt [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , który reprezentuje moduł, który zawiera tę ramkę stosu.
 
 `m_fHasDebugInfo`\
-Niezerowa Koniunkcja (`TRUE`) Jeśli ramka stosu jest skojarzony z kodem, który nie jest już prawidłowy.
+Wartość niezerowa (`TRUE`), jeśli w danej ramce istnieją informacje o debugowaniu.
 
-`m_fHasDebugInfo`\
-Niezerowa Koniunkcja (`TRUE`), jeśli ramka stosu jest oznaczona przez Menedżer debugowania sesji (SDM).
+`m_fStaleCode`\
+Wartość niezerowa (`TRUE`), jeśli Ramka stosu jest skojarzona z kodem, który nie jest już prawidłowy.
+
+`m_fAnnotatedFrame`\
+Wartość niezerowa (`TRUE`), jeśli Ramka stosu ma adnotację z menedżerem debugowania sesji (SDM).
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metodę, aby wypełnić. Ta struktura również znajduje się na liście, który jest zawarty w [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfejs, który z kolei jest zwracany z wywołania [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) metody.
+Ta struktura jest przenoszona do metody [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) do wypełnienia. Ta struktura również znajduje się na liście zawartej w interfejsie [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) , który z kolei jest zwracany przez wywołanie metody [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: Msdbg. h
 
 Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
