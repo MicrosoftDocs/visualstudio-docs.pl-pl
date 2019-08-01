@@ -2,38 +2,41 @@
 title: Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a397646823d133b66e66bb2bb5d10c2ae358ae53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10d1dcd4cb4a4dfca76d8af3fe6690076d91c72c
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430867"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416684"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
-Teraz możesz przystąpić do wykonania czterech pozostałych metod. Możesz skopiować i wkleić ten kod, ale jeśli chcesz dowiedzieć się maksymalnie dużo z tego samouczka, wpisz kod i korzystać z technologii IntelliSense.
+Teraz wszystko jest gotowe do wykonania innych czterech metod. Możesz skopiować i wkleić ten kod, ale jeśli chcesz poznać większość z tego samouczka, wpisz kod i użyj funkcji IntelliSense.
 
- Ten kod dodaje funkcje do dodanych wcześniej przycisków. Bez tego kodu przyciski nie robią niczego. Przyciski używają kodu w ich <xref:System.Windows.Forms.Control.Click> zdarzenia (a pola wyboru używają <xref:System.Windows.Forms.CheckBox.CheckedChanged> zdarzeń) do różnych akcji podczas aktywacji formantów. Na przykład `clearButton_Click` zdarzenia, które uaktywnia się po wybraniu **Wyczyść obraz** przycisk, partycje powoduje usunięcie bieżącego obrazu poprzez ustawienie jego **obraz** właściwość **null**(ewentualnie **nic**). Każde zdarzenie w kodzie zawiera komentarze objaśniające, co dany kod realizuje.
+ Ten kod dodaje funkcję do przycisków, które zostały dodane wcześniej. Bez tego kodu przyciski nie wykonują żadnych czynności. Przyciski używają kodu w swoich <xref:System.Windows.Forms.Control.Click> zdarzeniach (a pole wyboru <xref:System.Windows.Forms.CheckBox.CheckedChanged> używa zdarzenia) do wykonywania różnych czynności podczas aktywowania kontrolek. Na `clearButton_Click` przykład zdarzenie, które aktywuje się po wybraniu przycisku **Wyczyść obraz** , powoduje wymazanie bieżącego obrazu przez ustawienie jego właściwości **Image** na **wartość null** (lub **Nothing**). Każde zdarzenie w kodzie zawiera komentarze objaśniające, jak działa kod.
 
- ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# -5 wideo](http://go.microsoft.com/fwlink/?LinkId=205206). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif)dla wersji wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Utwórz przeglądarkę obrazów w C# pliku wideo 5.](http://go.microsoft.com/fwlink/?LinkId=205206) Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 > [!NOTE]
-> Najlepszym rozwiązaniem jest: Zawsze komentarz w kodzie. Komentarze są informacjami dla osoby, które można odczytać i poświęcić czas na zrozumienie kodu. Wszystko w wierszu komentarza jest ignorowane przez program. W języku Visual C# wiersz komentarza tworzy się przez wpisanie dwóch ukośników na początku (/ /), a w języku Visual Basic wiersz komentarza tworzy się, zaczynając od pojedynczego cudzysłowu (').
+> Najlepszym rozwiązaniem jest: Zawsze Skomentuj swój kod. Komentarze są informacjami dla osoby, które mają być odczytane, i warto pamiętać o tym, aby kod był zrozumiały. Wszystkie elementy w wierszu komentarza są ignorowane przez program. W wizualizacji C#możesz dodać komentarz do wiersza, wpisując dwa ukośniki do przodu (//), a w Visual Basic skomentować linię, zaczynając od pojedynczego cudzysłowu (').
 
 ## <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>Aby napisać kod dla dodatkowych przycisków i pola wyboru
 
-- Dodaj następujący kod, aby Twoje **Form1** pliku z kodem (*Form1.cs* lub *Form1.vb*). Wybierz **VB** kartę, aby wyświetlić kod języka Visual Basic.
+- Dodaj następujący kod do pliku kodu **Form1** (*Form1.cs* lub *Form1. vb*). Wybierz kartę **VB** , aby wyświetlić kod Visual Basic.
 
      [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]
      [!code-csharp[VbExpressTutorial1Step9_10#2](../ide/codesnippet/CSharp/step-10-write-code-for-additional-buttons-and-a-check-box_1.cs)]
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 11: Uruchamianie programu i próbowanie innych funkcji](../ide/step-11-run-your-program-and-try-other-features.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 11: Uruchom program i wypróbuj inne funkcje](../ide/step-11-run-your-program-and-try-other-features.md).
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 9: Przejrzyj, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 9: Przejrzyj, Skomentuj i Przetestuj swój kod](../ide/step-9-review-comment-and-test-your-code.md).

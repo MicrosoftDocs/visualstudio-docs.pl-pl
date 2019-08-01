@@ -8,31 +8,31 @@ helpviewer_keywords:
 - builds [Visual Studio], common directory
 - common directory
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1e669789d2117b4bd2ee550dfffb147e46620c4
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547822"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416744"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Instrukcje: Kompilowanie do wspólnego katalogu wyjściowego
 
-Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kompilacje poszczególnych projektów w rozwiązaniu w jego własnym folderze wewnątrz rozwiązania. Można zmienić ścieżki danych wyjściowych kompilacji projektów, aby wymusić wszystkie dane wyjściowe mają być umieszczone w tym samym folderze.
+Domyślnie program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kompiluje każdy projekt w rozwiązaniu we własnym folderze w ramach rozwiązania. Można zmienić ścieżki wyjściowe kompilacji projektów, aby wymusić umieszczenie wszystkich danych wyjściowych w tym samym folderze.
 
-## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Aby umieścić wszystkie rozwiązania w dane wyjściowe wspólnego katalogu
+## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Aby umieścić wszystkie dane wyjściowe rozwiązania w wspólnym katalogu
 
-1. Polecenie jednego projektu w rozwiązaniu.
+1. Kliknij jeden projekt w rozwiązaniu.
 
-2. Na **projektu** menu, kliknij przycisk **właściwości**.
+2. W menu **projekt** kliknij polecenie **Właściwości**.
 
-3. W zależności od typu projektu, kliknij w dowolnym **skompilować** karty lub **kompilacji** , a następnie ustaw **ścieżkę wyjściową** do folderu, do użycia dla wszystkich projektów w rozwiązaniu.
+3. W zależności od typu projektu kliknij kartę **kompilacja** lub kartę **kompilacja** , a następnie ustaw **ścieżkę wyjściową** do folderu, który ma być używany dla wszystkich projektów w rozwiązaniu.
 
-4. Powtórz kroki 1 – 3 dla wszystkich projektów w rozwiązaniu.
+4. Powtórz kroki 1-3 dla wszystkich projektów w rozwiązaniu.
 
 ## <a name="see-also"></a>Zobacz także
 

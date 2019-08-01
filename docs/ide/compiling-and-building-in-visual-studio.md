@@ -7,17 +7,17 @@ helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e943e43e93d7906c799b5ac5056f062d2522907f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe8528b9e6ad302319f1fb1ebb010c7f55b93932
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976468"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416595"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Skompilować i utworzyć w programie Visual Studio
 
@@ -25,7 +25,7 @@ Podczas kompilowania kodu źródłowego, aparat kompilacji tworzy zespołów i w
 
 Przez kompilacjom kodu, można szybko zidentyfikować błędy kompilacji, takie jak niepoprawna składnia, błędnie napisane słowa kluczowe i wpisz niezgodności. Można także wykryć i poprawić błędy czasu wykonywania, takie jak błędy logiczne i semantyczne, tworząc i uruchamianiu wersji debugowania kodu.
 
-Pomyślnej kompilacji sprawdza, czy kod źródłowy aplikacji zawiera poprawną składnię i że może rozpoznać wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki. Generowany jest plik wykonywalny aplikacji mogą być testowane dla prawidłowego działania w obu [debugowania środowiska](../debugger/index.md) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po aplikacji zostało w pełni przetestowane, można kompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego procesu, zobacz [instruktażu: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md).
+Pomyślnej kompilacji sprawdza, czy kod źródłowy aplikacji zawiera poprawną składnię i że może rozpoznać wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki. Generowany jest plik wykonywalny aplikacji mogą być testowane dla prawidłowego działania w obu [debugowania środowiska](../debugger/index.md) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po aplikacji zostało w pełni przetestowane, można kompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego [procesu, zobacz Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md).
 
 Używasz jednej z następujących metod do tworzenia aplikacji: środowiska IDE programu Visual Studio, narzędzia wiersza polecenia programu MSBuild i potoków usługi Azure:
 
@@ -44,7 +44,7 @@ Dokumentacja w tej sekcji przechodzi w stan więcej szczegółowych informacji z
 
 Podczas tworzenia projektu Visual Studio stworzył domyślne konfiguracje kompilacji dla projektu i rozwiązania, które zawiera projekt.  Te konfiguracje definiują sposób rozwiązania i projekty są zbudowane i wdrażane. W szczególności, konfiguracje projektu są unikatowe dla platformy docelowej (na przykład Windows lub Linux) i typ (na przykład debug i release) kompilacji. Te konfiguracje można edytować, jednak, a także mogą tworzyć własne konfiguracje, zgodnie z potrzebami.
 
-Pierwszy wprowadzenie do tworzenia w środowisku IDE, zobacz [instruktażu: Tworzenie aplikacji](walkthrough-building-an-application.md).
+Pierwsze wprowadzenie do kompilowania w środowisku IDE zawiera [Przewodnik: Kompilowanie aplikacji](walkthrough-building-an-application.md).
 
 Następnie możesz zapoznać się [kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) Aby dowiedzieć się więcej o dostosowywaniu różne aspekty można wprowadzić do procesu. Możliwe modyfikacje obejmują [zmiany katalogu danych wyjściowych](how-to-change-the-build-output-directory.md), [Określanie niestandardowych zdarzeń kompilacji](specifying-custom-build-events-in-visual-studio.md), [Zarządzanie zależności projektu](how-to-create-and-remove-project-dependencies.md), [Zarządzanie rejestr kompilacji pliki](how-to-view-save-and-configure-build-log-files.md), i [pomijanie ostrzeżeń kompilatora](how-to-suppress-compiler-warnings.md).
 

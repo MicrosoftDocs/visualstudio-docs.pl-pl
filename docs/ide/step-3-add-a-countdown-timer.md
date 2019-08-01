@@ -1,60 +1,63 @@
 ---
-title: Krok 3. Dodawanie czasomierza odliczania
+title: Krok 3. Dodawanie czasomierza odliczającego w dół
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86e19e99bc6732ddadabdb3e308dcf8e0def41fa
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430768"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416711"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczania
-W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę sekund, które pozostają uczestnikowi quizu do zakończenia.
+# <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczającego w dół
+W trzeciej części tego samouczka dodasz czasomierz odliczania, aby śledzić liczbę sekund, które pozostaną na zakończenie przez program quizu.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu.
 
-## <a name="to-add-a-countdown-timer"></a>Aby dodać minutnik
+## <a name="to-add-a-countdown-timer"></a>Aby dodać czasomierz odliczania
 
-1. Dodaj zmienną całkowitą o nazwie **timeLeft**, podobnie jak w poprzedniej procedurze. Kod powinien wyglądać następująco.
+1. Dodaj zmienną całkowitą o nazwie **timeleft**, tak jak w poprzedniej procedurze. Kod powinien wyglądać podobnie do poniższego.
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
-     Teraz potrzebujesz metody, która faktycznie zlicza sekundy, takiej jak timer, który wywołuje zdarzenie po upływie czasu, który określisz.
+     Teraz potrzebna jest metoda, która faktycznie zlicza sekundy, takie jak czasomierz, który wywołuje zdarzenie po upływie określonego czasu.
 
-2. W oknie projektu, Przenieś <xref:System.Windows.Forms.Timer> z kontrolować **składniki** kategorii **przybornika** do formularza.
+2. W oknie projektowania Przenieś <xref:System.Windows.Forms.Timer> kontrolkę z kategorii **składniki** **przybornika** do formularza.
 
-     Ten formant jest widoczny w szarym obszarze w dolnej części okna projektu.
+     Kontrolka pojawia się w szarym obszarze u dołu okna projektowania.
 
-3. W formularzu Wybierz **timer1** ikonę, która właśnie dodany i ustaw jego **interwał** właściwości **1000**.
+3. Na formularzu Wybierz dodaną ikonę **Timer1** i ustaw jej właściwość **Interval** na **1000**.
 
-     Ponieważ wartość interwału jest w milisekundach, wartość 1000 powoduje, że <xref:System.Windows.Forms.Timer.Tick> zdarzenia co sekundę.
+     Ponieważ wartość interwału wynosi milisekundy, wartość 1000 powoduje, że <xref:System.Windows.Forms.Timer.Tick> zdarzenie jest uruchamiane co sekundę.
 
-4. W formularzu, kliknij dwukrotnie **czasomierza** kontrolować, lub wybierz go, a następnie wybierz **Enter** klucza.
+4. W formularzu kliknij dwukrotnie formant **Timer** lub wybierz go, a następnie wybierz klawisz **Enter** .
 
-     Edytor kodu pojawi się i wyświetli metodę dla programu obsługi zdarzeń Tick, który właśnie został dodany.
+     Zostanie wyświetlony Edytor kodu i zostanie wyświetlona Metoda programu obsługi zdarzeń Tick, który właśnie został dodany.
 
 5. Dodaj następujące instrukcje do nowej metody obsługi zdarzeń.
 
      [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
      [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
 
-     Oparte na elementy dodane przez Ciebie, czasomierz sprawdza co sekundę, czy czas się skończył się poprzez określenie czy **timeLeft** zmienną całkowitą jest większa niż 0. Jeśli tak jest, czas jest nadal pozostaje. Timer najpierw odejmuje 1 od timeLeft, a następnie aktualizuje **tekstu** właściwość **timeLabel** formantu, aby pokazać uczestnikowi quizu, ile sekund pozostało.
+     Na podstawie dodanych przez Ciebie operacji czasomierz sprawdza każdą sekundę, czy czas został uruchomiony przez określenie, czy zmienna **timeleft** Integer jest większa od 0. Jeśli tak jest, czas nadal pozostaje. Czasomierz najpierw odejmuje 1 od timeLeft, a następnie aktualizuje właściwość **Text** formantu **timeLabel** , aby pokazać pozostałą liczbę sekund.
 
-     Jeżeli czas się skończy, timer się zatrzyma i zmieni tekst **timeLabel** kontrolować tak, aby pokazywał **czasu!** Okno komunikatu informuje, że quiz się skończył, i odpowiedź jest odsłonięta — w tym przypadku przez dodanie elementów addend1 i addend2. **Włączone** właściwość **startButton** kontrolki jest ustawiona na **true** tak, aby uczestnik mógł uruchomić kolejny quiz.
+     Jeśli czas nie zostanie przekroczony, czasomierz zatrzyma się i zmieni tekst kontrolki **timeLabel** , aby wyświetlić **czas** pracy. W oknie komunikatu ogłoszono quiz, a odpowiedź jest ujawniana — w tym przypadku przez dodanie addend1 i addend2. Właściwość **Enabled** formantu **startButton** jest ustawiona na **wartość true** , aby można było zacząć korzystać z innego quizu.
 
-     Właśnie dodałeś `if else` instrukcję, która wskazuje, jak sprawdzić programy do podejmowania decyzji. `if else` Instrukcji wygląda podobnie do następującej.
+     Właśnie dodano `if else` instrukcję, która jest poinformowania programów, aby podejmować decyzje. `if else` Instrukcja wygląda następująco.
 
     > [!NOTE]
-    > Poniższy przykład jest wyłącznie do celów informacyjnych — nie należy dodawać go do projektu.
+    > Poniższy przykład dotyczy tylko ilustracji — nie należy dodawać go do projektu.
 
     ```vb
     If (something that your program will check) Then
@@ -79,30 +82,30 @@ W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę s
     }
     ```
 
-     Przyjrzyj się bliżej instrukcji, które zostały dodane w `else` bloku, aby wyświetlić odpowiedź na problem dodawania.
+     Dokładnie zapoznaj się z instrukcją dodaną w `else` bloku, aby wyświetlić odpowiedź na problem dodawania.
 
      [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]
      [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]
 
-     Wykonywanie instrukcji `addend1 + addend2` razem dodaje wartości w dwóch zmiennych. Pierwsza część (`sum.Value`) używa **wartość** właściwości formantu sumy NumericUpDown, aby wyświetlić poprawną odpowiedź. Umożliwia tę samą właściwość później sprawdzić odpowiedzi do quizu.
+     Instrukcja `addend1 + addend2` dodaje wartości w obu zmiennych jednocześnie. Pierwsza część (`sum.Value`) używa właściwości **wartość** kontrolki sum NumericUpDown, aby wyświetlić poprawną odpowiedź. Użyj tej samej właściwości później, aby sprawdzić odpowiedzi dla quizu.
 
-     Quizu mogą łatwiej wpisywać liczby przy użyciu <xref:System.Windows.Forms.NumericUpDown> formantu, dlatego używasz takiego odpowiedzi na problemy matematyczne. Wszystkie potencjalne odpowiedzi są liczbami całkowitymi od 0 do 100. Pozostawiając wartości domyślne **Minimum**, **maksymalna**, i **DecimalPlaces** właściwości, należy zapewnić, że quizu nie można wprowadzić liczbę miejsc dziesiętnych, liczby, ujemne lub numery, które są zbyt wysokie. (Jeśli chcesz umożliwić uczestnikom quizu wprowadzanie wartości 3,141, ale nie 3.1415, można ustawić **DecimalPlaces** właściwość 3.)
+     Program Quiz uczestnikom może łatwiej wprowadzać liczby przy użyciu <xref:System.Windows.Forms.NumericUpDown> kontrolki, co oznacza, że można ją użyć do odpowiedzi na problemy matematyczne. Wszystkie potencjalne odpowiedzi są liczbami całkowitymi od 0 do 100. Pozostawiając wartości domyślne właściwości **minimum**, **maksimum**i **DecimalPlaces** , upewnij się, że w uczestnikom quizu nie można wprowadzać cyfr dziesiętnych, liczb ujemnych ani liczb, które są zbyt duże. (Jeśli chcesz zezwolić uczestnikomowi quizu na wprowadzenie 3,141, ale nie 3,1415, możesz ustawić właściwość **DecimalPlaces** na 3).
 
-6. Dodaj trzy wiersze na końcu `StartTheQuiz()` metody, aby kod wyglądał następująco.
+6. Dodaj trzy wiersze na końcu `StartTheQuiz()` metody, tak aby kod wyglądał następująco.
 
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
      [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
 
-     Teraz, kiedy quiz się rozpoczyna, **timeLeft** zmienna jest ustawiona na 30 i **tekstu** właściwość **timeLabel** kontrolki jest ustawiona na 30 sekund. A następnie <xref:System.Windows.Forms.Timer.Start> metoda formant Timer rozpoczyna odliczanie do zera. (Quiz nie sprawdza odpowiedzi jeszcze — to przychodzi dalej.)
+     Teraz po rozpoczęciu quizu zmienna **timeleft** jest ustawiona na wartość 30, a właściwość **Text** kontrolki **timeLabel** jest ustawiona na 30 sekund. <xref:System.Windows.Forms.Timer.Start> Następnie metoda formantu Timer zaczyna odliczanie. (Quiz nie sprawdza jeszcze odpowiedzi — jest to kolejne.)
 
-7. Zapisz swój program, uruchom go, a następnie wybierz **Start** przycisku w formularzu.
+7. Zapisz swój program, uruchom go, a następnie wybierz przycisk **Start** w formularzu.
 
-     Timer rozpoczyna odliczanie. Gdy skończy się czas, kończy się quiz i pojawia się odpowiedź. Na poniższej ilustracji przedstawiono quiz w toku.
+     Czasomierz zaczyna liczyć w dół. Po uruchomieniu quizu zostanie zakończona i zostanie wyświetlona odpowiedź. Na poniższej ilustracji przedstawiono Quiz w toku.
 
-     ![Quiz matematyczny w toku](../ide/media/express_addcountdown.png) quiz matematyczny w toku
+     ![Quiz matematyczny w](../ide/media/express_addcountdown.png) toku jest w toku
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 4: Dodawanie metody CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 4: Dodaj metodę](../ide/step-4-add-the-checktheanswer-parens-method.md)metody CheckTheAnswer ().
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Utwórz losowy problem](../ide/step-2-create-a-random-addition-problem.md)z dodaniem.

@@ -1,5 +1,6 @@
 ---
 title: Wyodrębnij metodę
+description: Zmień fragment kodu na własny metodę, wybierając kod i wpisując CTRL + R, Ctrl + M.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -12,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc1e96bed6c3f7fac857262644765d383de37482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791035"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483671"
 ---
 # <a name="extract-a-method-refactoring"></a>Wyodrębnij także refaktoryzację — metoda
 
@@ -27,11 +28,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** Pozwala włączyć fragment kodu do własnej metody.
+**Whatman** Umożliwia włączenie fragmentu kodu w osobnym metodzie.
 
-**Kiedy:** Masz fragmentu istniejący kod w jakiejś metodzie, która musi zostać wywołana z innej metody.
+**Czasie** Istnieje fragment istniejącego kodu w pewnej metodzie, który musi zostać wywołany z innej metody.
 
-**Dlaczego:** Można kopiujesz/wklejasz kod, ale, co może spowodować dublowania. Lepszym rozwiązaniem jest Refaktoryzacja tego fragmentu do jego własnej metody, która może być wywoływany za darmo przez jakąkolwiek inną metodę.
+**Zalet** Można skopiować/wkleić ten kod, ale może to prowadzić do duplikacji. Lepszym rozwiązaniem jest Refaktoryzacja tego fragmentu do jego własnej metody, która może być wywoływany za darmo przez jakąkolwiek inną metodę.
 
 ## <a name="how-to"></a>Instrukcje
 
@@ -49,7 +50,7 @@ Ta Refaktoryzacja mają zastosowanie do:
 
    - **Keyboard**
       - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + M**. (Należy pamiętać, że skrót klawiaturowy może różnić się w oparciu o profilu, który wybrano.)
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Wyodrębnij metodę** z menu podręcznego okna podglądu.
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Wyodrębnij metodę** z menu podręcznego okna podglądu.
    - **Myszy**
       - Wybierz **Edytuj > Refaktoryzuj > Wyodrębnij metodę**.
       - Kliknij prawym przyciskiem myszy ten kod, a następnie wybierz pozycję **Refaktoryzuj > Wyodrębnianie > Wyodrębnij metodę**.

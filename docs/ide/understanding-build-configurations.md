@@ -1,5 +1,5 @@
 ---
-title: O konfiguracjach kompilacji
+title: Opis konfiguracji kompilacji
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -21,77 +21,77 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 453e27df58e8a12baa3821def6c66fc1391401d3
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821760"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416961"
 ---
-# <a name="understand-build-configurations"></a>O konfiguracjach kompilacji
+# <a name="understand-build-configurations"></a>Opis konfiguracji kompilacji
 
-Można przechowywać różne konfiguracje rozwiązania i projektu właściwości mają zostać użyte w różne rodzaje kompilacji. Tworzenie, wybierz, zmodyfikować lub usunąć konfigurację, można użyć **programu Configuration Manager**. Aby otworzyć go na pasku menu, wybierz **kompilacji** > **programu Configuration Manager**, lub po prostu wpisz **konfiguracji** w polu wyszukiwania. Można również użyć **konfiguracje rozwiązania** listy na **standardowa** narzędzi, aby wybrać konfigurację, lub otworzyć **programu Configuration Manager**.
-
-> [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [kompilowanie konfiguracji w programie Visual Studio dla komputerów Mac](/visualstudio/mac/configurations).
+Można przechowywać różne konfiguracje rozwiązań i właściwości projektu do użycia w różnych rodzajach kompilacji. Aby utworzyć, wybrać, zmodyfikować lub usunąć konfigurację, można użyć **Configuration Manager**. Aby go otworzyć, na pasku menu wybierz opcję **Kompiluj** > **Configuration Manager**lub po prostu wpisz **konfigurację** w polu wyszukiwania. Możesz również użyć listy **konfiguracje rozwiązania** na pasku narzędzi **Standardowy** , aby wybrać konfigurację lub otworzyć **Configuration Manager**.
 
 > [!NOTE]
-> Jeśli nie można znaleźć rozwiązania ustawień konfiguracji na pasku narzędzi, a nie ma dostępu do **programu Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] mogą być stosowane ustawienia środowiska deweloperskiego. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie konfiguracjami z zastosowaniem ustawień dewelopera Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Konfiguracje kompilacji w programie Visual Studio dla komputerów Mac](/visualstudio/mac/configurations).
 
-Domyślnie, debugowania i konfiguracje wydania znajdują się w projektach, które są tworzone za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonów. Konfiguracja debugowania obsługuje debugowanie aplikacji, a konfiguracja wydania tworzy wersję aplikacji, które można wdrożyć. Aby uzyskać więcej informacji, zobacz [jak: Zestaw debugowania i zwalniania konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md). Można również utworzyć niestandardowe rozwiązanie konfiguracji i konfiguracje projektu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
+> [!NOTE]
+> Jeśli nie możesz znaleźć ustawień konfiguracji rozwiązania na pasku narzędzi i nie można uzyskać dostępu do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Configuration Manager, można zastosować ustawienia tworzenia. Aby uzyskać więcej informacji, zobacz [jak: Zarządzaj konfiguracjami z zastosowaniem](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)ustawień dewelopera Visual Basic.
+
+Domyślnie konfiguracje debugowania i wydawania są zawarte w projektach, które są tworzone za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonów. Konfiguracja debugowania obsługuje debugowanie aplikacji, a konfiguracja wydania kompiluje wersję aplikacji, którą można wdrożyć. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md)debugowania i wydania. Można również tworzyć niestandardowe konfiguracje rozwiązań i konfiguracje projektu. Aby uzyskać więcej informacji, zobacz [jak: Utwórz i Edytuj konfiguracje](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Konfiguracje rozwiązania
 
-Konfiguracja rozwiązania określa, jak projekty w rozwiązaniu są kompilowane i wdrażane. Do modyfikowania konfiguracji rozwiązania lub zdefiniuj nowe, w **programu Configuration Manager**w obszarze **Konfiguracja rozwiązania aktywnego**, wybierz **Edytuj** lub **New** .
+Konfiguracja rozwiązania określa sposób kompilowania i wdrażania projektów w rozwiązaniu. Aby zmodyfikować konfigurację rozwiązania lub zdefiniować nową, w **Configuration Manager**w obszarze **Konfiguracja aktywnego rozwiązania**wybierz pozycję **Edytuj** lub **Nowy**.
 
-Każdy wpis **projektu kontekstów** pole w konfiguracji rozwiązania reprezentuje projektu w rozwiązaniu. Dla każdej kombinacji **Konfiguracja rozwiązania aktywnego** i **aktywną platformą rozwiązania**, można ustawić sposób użycia każdego projektu. (Aby uzyskać więcej informacji na temat platformy rozwiązania, zobacz [omówienie platformy kompilacji](../ide/understanding-build-platforms.md).)
+Każdy wpis w polu **konteksty projektu** w konfiguracji rozwiązania reprezentuje projekt w rozwiązaniu. Dla każdej kombinacji **aktywnej konfiguracji rozwiązania** i **aktywnej platformy rozwiązania**można ustawić, jak każdy projekt jest używany. (Aby uzyskać więcej informacji na temat platform rozwiązań, zobacz [Omówienie platform kompilacji](../ide/understanding-build-platforms.md)).
 
 > [!NOTE]
-> Po zdefiniowaniu nowa konfiguracja rozwiązania i wybierz **Utwórz nowe konfiguracje projektu** pole wyboru [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie przypisuje nowej konfiguracji do wszystkich projektów. Podobnie, kiedy należy zdefiniować nowa platforma rozwiązania i wybrać **Utwórz nowe platformy projektu** pole wyboru [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie przypisuje nową platformę do wszystkich projektów. Jeśli dodasz projekt, który jest przeznaczony dla nowych platform, Visual Studio dodaje również tej platformy do listy platformy rozwiązania oraz przypisuje go do wszystkich projektów.
+> Podczas definiowania nowej konfiguracji rozwiązania i zaznacz pole wyboru **Utwórz nowe konfiguracje projektu** , program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie przypisze nową konfigurację do wszystkich projektów. Podobnie podczas definiowania nowej platformy rozwiązań i zaznacz pole wyboru **Utwórz nowe platformy projektu** , program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie przypisze nową platformę do wszystkich projektów. Ponadto, jeśli dodasz projekt, który jest przeznaczony dla nowej platformy, program Visual Studio doda tę platformę do listy platform rozwiązań i przypisze ją do wszystkich projektów.
 >
-> Nadal można zmodyfikować ustawienia dla każdego projektu.
+> Można nadal modyfikować ustawienia dla każdego projektu.
 
-Konfiguracja rozwiązania aktywnego także kontekst środowiska IDE. Na przykład, jeśli pracujesz nad projektem i konfiguracją Określa, że będzie on kompilowany do urządzenia przenośnego, **przybornika** wyświetla tylko te elementy, których można użyć w projekcie urządzenia przenośnego.
+Aktywna Konfiguracja rozwiązania zapewnia również kontekst dla środowiska IDE. Na przykład jeśli pracujesz nad projektem i konfiguracja określa, że zostanie on skompilowany dla urządzenia przenośnego, w przyborniku zostaną wyświetlone  tylko elementy, które mogą być używane w projekcie urządzenia przenośnego.
 
 ## <a name="project-configurations"></a>Konfiguracje projektu
- Konfiguracja i platforma projekt jest ukierunkowany używanych ze sobą, aby określić właściwości do użycia, gdy jest on oparty. Projekt może mieć inny zestaw definicji właściwości dla każdej kombinacji konfiguracji i platformy. Aby zmodyfikować właściwości projektu, można użyć stron jej właściwości. (W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.)
+ Konfiguracja i platforma, do których elementy docelowe projektu są używane razem, aby określić właściwości, które mają być używane podczas kompilowania. Projekt może mieć inny zestaw definicji właściwości dla każdej kombinacji konfiguracji i platformy. Aby zmodyfikować właściwości projektu, można użyć jego stron właściwości. (W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Właściwości**.)
 
- Dla każdej konfiguracji projektu można zdefiniować właściwości zależne od konfiguracji, zgodnie z potrzebami. Na przykład dla konkretnej kompilacji, można ustawić elementy projektu, które zostaną dołączone i jakie dane wyjściowe pliki zostaną utworzone, gdzie będzie umieścić i jak będzie optymalizowany.
+ Dla każdej konfiguracji projektu, w razie potrzeby, można zdefiniować zależne od konfiguracji właściwości. Na przykład dla konkretnej kompilacji można określić, które elementy projektu zostaną uwzględnione i jakie pliki wyjściowe zostaną utworzone, gdzie zostaną umieszczone i jak zostaną one zoptymalizowane.
 
- Konfiguracje projektu mogą się znacznie różnić. Właściwości w jednej konfiguracji może na przykład określić, że jego plik wyjściowy można zoptymalizować zajmować minimalna ilość miejsca, podczas gdy innej konfiguracji może określić, że jego plik wykonywalny zostanie uruchomiona przy maksymalnej prędkości.
+ Konfiguracje projektu mogą się różnić znacznie. Na przykład właściwości jednej konfiguracji mogą określać, że jej plik wyjściowy ma być zoptymalizowany pod kątem minimalnej ilości miejsca, podczas gdy inna konfiguracja może określać, że jej pliki wykonywalne są uruchamiane z maksymalną szybkością.
 
- Konfiguracje projektu są przechowywane przez rozwiązanie — nie przez użytkownika, dzięki czemu mogą być współużytkowane przez zespół.
+ Konfiguracje projektu są przechowywane przez rozwiązanie — nie przez użytkownika, tak aby mogły być współużytkowane przez zespół.
 
- Mimo że zależności projektu są niezależne od konfiguracji, zostanie utworzona tylko projekty, które są określone w aktywnej konfiguracji rozwiązania.
+ Chociaż zależności projektu są niezależne od konfiguracji, zostaną skompilowane tylko projekty, które są określone w aktywnej konfiguracji rozwiązania.
 
-## <a name="how-visual-studio-assigns-project-configurations"></a>Jak przypisuje konfiguracje projektu w programie Visual Studio
- Podczas definiowania nowa konfiguracja rozwiązania i nie Kopiuj ustawień z istniejącego programu Visual Studio przypisuje domyślne konfiguracje projektu przy użyciu następujących kryteriów. Kryteria są obliczane w podanej kolejności.
+## <a name="how-visual-studio-assigns-project-configurations"></a>Jak program Visual Studio przypisuje konfiguracje projektu
+ Podczas definiowania nowej konfiguracji rozwiązania i kopiowania ustawień z istniejącej usługi program Visual Studio używa następujących kryteriów do przypisywania domyślnych konfiguracji projektu. Kryteria są oceniane w podanej kolejności.
 
-1. Jeśli projekt ma nazwę konfiguracji (*\<Nazwa konfiguracji > \<nazwa platformy >*) czy dokładnie pasuje nazwę Nowa konfiguracja rozwiązania tej konfiguracji jest przypisany. Nazwy konfiguracji nie jest rozróżniana wielkość liter.
+1. Jeśli projekt ma nazwę konfiguracji ( *\<nazwa konfiguracji > \<nazwa platformy >* ), która dokładnie odpowiada nazwie nowej konfiguracji rozwiązania, ta konfiguracja zostanie przypisana. W nazwach konfiguracji nie jest rozróżniana wielkość liter.
 
-2. Jeśli projekt zawiera nazwy konfiguracji, w której części nazwy konfiguracji odpowiada nowa konfiguracja rozwiązania, tej konfiguracji jest przypisany, czy część platformy jest zgodny, czy nie.
+2. Jeśli projekt ma nazwę konfiguracji, w której część nazwy konfiguracji jest zgodna z nową konfiguracją rozwiązania, ta konfiguracja jest przypisana, niezależnie od tego, czy część platformy jest zgodna.
 
-3. Jeśli nadal nie ma dopasowania, pierwsza konfiguracja, który znajduje się w projekcie zostanie przypisany.
+3. Jeśli nadal nie ma dopasowania, pierwsza konfiguracja wymieniona w projekcie jest przypisana.
 
-## <a name="how-visual-studio-assigns-solution-configurations"></a>Jak platforma Azure przypisuje konfiguracje rozwiązania
- Po utworzeniu konfiguracji projektu (w **programu Configuration Manager**, wybierając **New** z menu rozwijanego w **konfiguracji** kolumny dla tego projektu) i Wybierz **Utwórz nowe konfiguracje rozwiązania** pole wyboru, Visual Studio szuka Konfiguracja rozwiązania o nazwie podobne do skompilowania projektu na każdej z obsługiwanych platform. W niektórych przypadkach program Visual Studio zmienia nazwę istniejącego konfiguracje rozwiązania lub definiuje nowe.
+## <a name="how-visual-studio-assigns-solution-configurations"></a>Jak program Visual Studio przypisuje konfiguracje rozwiązań
+ Podczas tworzenia konfiguracji projektu (w **Configuration Manager**, wybierając pozycję **Nowy** w menu rozwijanym w kolumnie **Konfiguracja** dla tego projektu), a następnie zaznacz pole wyboru **Utwórz nowe konfiguracje rozwiązania** , Wizualizacja Studio szuka konfiguracji rozwiązania podobnej do kompilacji, aby skompilować projekt na każdej platformie, którą obsługuje. W niektórych przypadkach program Visual Studio zmienia nazwy istniejących konfiguracji rozwiązania lub definiuje nowe.
 
- Program Visual Studio przypisuje konfiguracje rozwiązania przy użyciu następujących kryteriów.
+ Program Visual Studio używa następujących kryteriów do przypisywania konfiguracji rozwiązań.
 
-- Jeśli Konfiguracja projektu nie określa platformy lub określa tylko jedną platformę, następnie konfiguracji rozwiązania, którego nazwa jest zgodny z typem nowa konfiguracja projektu jest znalezione lub dodane. Domyślna nazwa tej konfiguracji rozwiązania nie ma nazwy platformy; ma postać  *\<Nazwa konfiguracji projektu >*.
+- Jeśli konfiguracja projektu nie określa platformy lub określa tylko jedną platformę, wówczas zostanie znaleziona lub dodana konfiguracja rozwiązania, której nazwa jest zgodna z nową konfiguracją projektu. Domyślna nazwa tego rozwiązania nie zawiera nazwy platformy; przyjmuje  *\<nazwę konfiguracji projektu formularza >* .
 
-- Jeśli projekt obsługuje wiele platform, Konfiguracja rozwiązania jest znaleźć lub dodano dla każdej z obsługiwanych platform. Nazwa każdej konfiguracji rozwiązania obejmuje zarówno nazwę konfiguracji projektu i platformy, a ma postać  *\<Nazwa konfiguracji projektu > \<nazwa platformy >*.
+- Jeśli projekt obsługuje wiele platform, zostanie znaleziona lub dodana konfiguracja rozwiązania dla każdej z obsługiwanych platform. Nazwa każdej konfiguracji rozwiązania obejmuje zarówno nazwę konfiguracji projektu, jak i nazwę platformy, a także ma  *\<nazwę konfiguracji projektu formularza \<> nazwa platformy >* .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)
+- [Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)
 - [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)
-- [Odwołanie kompilacji C/C++](/cpp/build/reference/c-cpp-building-reference)
-- [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)
-- [Kompilowanie konfiguracji (Visual Studio dla komputerów Mac)](/visualstudio/mac/configurations)
+- [Dokumentacja CC++ /Build](/cpp/build/reference/c-cpp-building-reference)
+- [Przełączniki wiersza polecenia devenv](../ide/reference/devenv-command-line-switches.md)
+- [Konfiguracje kompilacji (Visual Studio dla komputerów Mac)](/visualstudio/mac/configurations)

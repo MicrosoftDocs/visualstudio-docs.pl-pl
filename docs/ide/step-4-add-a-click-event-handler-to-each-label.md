@@ -2,18 +2,21 @@
 title: Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bdc4c106ff8d6f1740fb53e0e3552f64b069fb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38de06027104f6764c932ec6de4c76138e957ea
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949097"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416635"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 
@@ -25,19 +28,19 @@ Gra w dopasowywanie działa w następujący sposób:
 
 3. Jeśli ikony pasują, pozostają widoczne. Jeśli tak nie jest, obie ikony są ukrywane ponownie.
 
-   Aby uzyskać program umożliwiał pracę w ten sposób, należy dodać <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń, który zmienia kolor wybranej etykiety.
+   Aby program działał w ten sposób, należy dodać <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń, który zmienia kolor wybranej etykiety.
 
-## <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać obsługę zdarzeń kliknięcia do każdej etykiety
+## <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać program obsługi zdarzeń kliknięcia do każdej etykiety
 
-1. Otwórz formularz w **Windows Forms Designer**. W **Eksploratora rozwiązań**, wybierz *Form1.cs* lub *Form1.vb*. Na pasku menu wybierz **widoku** > **projektanta**.
+1. Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksplorator rozwiązań**wybierz pozycję *Form1.cs* lub *Form1. vb*. Na pasku menu wybierz polecenie**Projektant** **widoków** > .
 
-2. Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie przytrzymaj naciśnięty **Ctrl** klucza wciśnięty pozostałe etykiety, aby je wybrać. Pamiętaj, że każda etykieta jest zaznaczona.
+2. Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie naciśnij i przytrzymaj klawisz **Ctrl** podczas wybierania każdej z pozostałych etykiet, aby je wybrać. Pamiętaj, że każda etykieta jest zaznaczona.
 
-3. Wybierz **zdarzenia** przycisk na pasku narzędzi w **właściwości** okna, aby wyświetlić **zdarzenia** strony w **właściwości** okna. Przewiń w dół do **kliknij** zdarzeń, a następnie wprowadź **label_Click** w polu, jak pokazano na poniższej ilustracji.
+3. Wybierz przycisk **zdarzenia** na pasku narzędzi w oknie **Właściwości** , aby wyświetlić stronę **zdarzenia** w oknie **Właściwości** . Przewiń w dół do zdarzenia kliknij, a **następnie** wprowadź **label_Click** w polu, jak pokazano na poniższej ilustracji.
 
      ![Okno Właściwości pokazujące zdarzenie Kliknij](../ide/media/express_labelclick.png)
 
-4. Wybierz **Enter** klucza. IDE dodaje `Click` wywołuje program obsługi zdarzeń `label_Click()` z kodem i przyczepia go do każdej etykiety w formularzu.
+4. Wybierz klawisz **Enter** . IDE dodaje `Click` procedurę obsługi zdarzeń o nazwie `label_Click()` do kodu i przechwytuje ją do każdej etykiety w formularzu.
 
 5. Wypełnij resztę kodu w następujący sposób:
 
@@ -45,17 +48,17 @@ Gra w dopasowywanie działa w następujący sposób:
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
 
     > [!NOTE]
-    > Jeśli skopiujesz i wkleisz `label_Click()` blok kodu, a nie wprowadzasz kod ręcznie, upewnij się zastąpić istniejącą `label_Click()` kodu. W przeciwnym razie otrzymasz zduplikowany blok kodu.
+    > Jeśli skopiujesz i wkleisz `label_Click()` blok kodu zamiast ręcznie wprowadzić kod, pamiętaj, aby zastąpić istniejący `label_Click()` kod. W przeciwnym razie otrzymasz zduplikowany blok kodu.
 
     > [!NOTE]
-    > Być może rozpoznajesz `object sender` w górnej części programu obsługi zdarzeń jako ten sam używany w [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md) samouczka. Możesz podłączone kontrolą inną etykietę zdarzenia do metody obsługi pojedynczego zdarzenia kliknięcia, wywoływana jest metoda ten sam, niezależnie od tego, którą etykietę wybierze użytkownik. Metoda obsługi zdarzeń musi wiedzieć, którą etykietę wybrano, więc używa nazwy `sender` Aby zidentyfikować formant etykiety. Pierwszy wiersz metody mówi programowi, że nie jest obiekt rodzajowy, ale konkretnie formant etykiety i że używa on nazwy `clickedLabel` dostęp do właściwości i metod etykiety.
+    > Można rozpoznać `object sender` w górnej części programu obsługi zdarzeń jako ten sam użyty [w samouczku 2: Utwórz samouczek kwizu](../ide/tutorial-2-create-a-timed-math-quiz.md) matematycznego z limitem czasu. Ponieważ podłączono różne zdarzenia klikania kontrolek do pojedynczej metody obsługi zdarzeń, taka sama metoda jest wywoływana niezależnie od tego, która etykieta zostanie wybrana przez użytkownika. Metoda obsługi zdarzeń musi wiedzieć, która etykieta została wybrana, więc używa nazwy `sender` do identyfikowania kontrolki etykieta. Pierwszy wiersz metody nakazuje programowi, że nie jest to tylko obiekt generyczny, ale w oddzielnym formancie etykiety i że używa nazwy `clickedLabel` w celu uzyskania dostępu do właściwości i metod etykiet.
 
-     Metoda ta najpierw sprawdza, czy `clickedLabel` został pomyślnie przekonwertowany (rzutowany) z obiektu na formant etykiety. Jeśli nie, ma wartość `null` (C#) lub `Nothing` (Visual Basic), a nie chcesz wykonać pozostałej części kodu w metodzie. Następnie metoda sprawdza kolor tekstu wybranej etykiety za pomocą etykiety **ForeColor** właściwości. Jeśli kolor tekstu etykiety jest czarny, oznacza to, że ikona jest już wybrana, a metoda jest wykonana. (Właśnie to `return` wykonuje instrukcja: Mówi programowi, aby zatrzymał wykonywanie metody.) W przeciwnym razie ikona nie została wybrana, więc program zmienia kolor tekstu etykiety na czarny.
+     Ta metoda najpierw sprawdza, `clickedLabel` czy pomyślnie przeprowadzono konwersję (CAST) z obiektu do kontrolki etykieta. Jeśli to się nie powiedzie, ma wartość `null` (C#) lub `Nothing` (Visual Basic) i nie chcesz wykonywać pozostałej części kodu w metodzie. Następnie metoda sprawdza kolor tekstu wybranej etykiety przy użyciu właściwości **ForeColor** etykiety. Jeśli kolor tekstu etykiety jest czarny, oznacza to, że ikona jest już wybrana, a metoda jest wykonana. (To jest działanie `return` instrukcji: Mówi, że program zatrzymał wykonywanie metody.) W przeciwnym razie ikona nie została wybrana, więc program zmienia kolor tekstu etykiety na czarny.
 
-6. Na pasku menu wybierz **pliku** > **Zapisz wszystko** Aby zapisać postęp, a następnie na pasku menu wybierz **debugowania** > **Start Debugowanie** Aby uruchomić program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.
+6. Na pasku menu wybierz kolejno opcje **plik** > **Zapisz wszystko** , aby zapisać postęp, a następnie na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie** , aby uruchomić program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodaj odwołania do](../ide/step-5-add-label-references.md)etykiet.
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3. Przypisz losowo ikonę do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).

@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686552"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416641"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu w języku Visual Basic i C# w aplikacjach Store przy użyciu programu Visual Studio statycznej analizy kodu
 
@@ -51,7 +51,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
 1. Kliknij prawym przyciskiem myszy nazwę projektu w Eksploratorze rozwiązań, a następnie wybierz **właściwości**.
 
-2. Na stronie właściwości projektu, wybierz opcję **analizy kodu** , a następnie wybierz **Włącz analizę kodu podczas kompilacji (definiuje stałą analizy)**.
+2. Na stronie właściwości projektu, wybierz opcję **analizy kodu** , a następnie wybierz **Włącz analizę kodu podczas kompilacji (definiuje stałą analizy)** .
 
    Rozwiązania jest kompilowana i uruchomieniu analizy kodu. Wyniki są wyświetlane w oknie analizy kodu.
 
@@ -98,12 +98,12 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 ## <a name="BKMK_Warnings"></a> Ostrzeżenia analizy kodu w języku Visual Basic i C#
  Analiza kodu generuje następujące ostrzeżenia:
 
- [CA1001: Typy, które posiadają pola usuwalne powinny być usuwalne](https://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001 Typy, które są własnością pól, powinny być jednorazowe](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Usuwaj puste finalizatory](https://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821 Usuń puste finalizatory](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: Pola możliwe do rozporządzania należy rozporządzać](https://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213 Pola jednorazowe powinny zostać usunięte](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Zaimplementuj konstruktory serializacji](https://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: Implementuj konstruktory serializacji](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231 Operator przeciążenia jest równy przy przesłanianiu wartości ValueType. Equals](https://msdn.microsoft.com/library/ms182359.aspx)

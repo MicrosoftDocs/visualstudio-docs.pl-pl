@@ -11,68 +11,68 @@ helpviewer_keywords:
 ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c6cdfc62885133d82911c7336d011804e9a322d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c5399411998f4a03468f2dedccfd660eaf8de11
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817600"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461821"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opcje, edytor tekstu, C/C++, zaawansowane
 
-Zmieniając tych opcji, możesz zmienić zachowanie związane z technologii IntelliSense i bazy danych przeglądania w przypadku programowania w języku C lub C++.
+Zmieniając te opcje, można zmienić zachowanie związane z technologią IntelliSense i bazą danych przeglądania podczas programowania w języku C lub C++.
 
-Dostępu do tej strony, w **opcje** rozwiń w lewym okienku w oknie dialogowym **edytora tekstów**, rozwiń węzeł **C/C++**, a następnie wybierz **zaawansowane**.
+Aby uzyskać dostęp do tej strony, w oknie dialogowym **Opcje** w okienku po lewej stronie rozwiń pozycję **Edytor tekstu**, rozwiń węzeł **C++C/** , a następnie wybierz pozycję **Zaawansowane**.
 
 > [!NOTE]
 > Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="browsingnavigation"></a>Przeglądanie nawigacji
+## <a name="browsingnavigation"></a>Przeglądanie/Nawigacja
 
-Nigdy nie należy wybrać te opcje, z wyjątkiem w rzadkich przypadkach, gdy rozwiązanie jest tak duża, że działanie bazy danych wykorzystuje niedopuszczalne ilość zasobów systemowych.
+Nigdy nie należy wybierać tych opcji, z wyjątkiem rzadkich przypadków, w których rozwiązanie jest tak duże, że działanie bazy danych zużywa nieakceptowalną ilość zasobów systemowych.
 
-**Wyłączanie bazy danych**
+**Wyłącz bazę danych**
 
-Wszystkie przypadki użycia przeglądania bazy danych (SDF), wszystkie inne opcje przeglądania/nawigacji i wszystkie funkcje IntelliSense, z wyjątkiem kodu # Autouzupełnianie include są wyłączone.
+Użycie bazy danych przeglądania kodu (SDF), wszystkie inne opcje przeglądania/nawigacji oraz wszystkie funkcje IntelliSense z wyjątkiem #include autouzupełniania są wyłączone.
 
 **Wyłącz aktualizacje bazy danych**
 
-Baza danych zostanie otwarty tylko do odczytu, a będzie można wykonać żadnych aktualizacji, ponieważ edytowania plików. Większość funkcji będzie nadal działać. Jednak ponieważ zmiany zostaną wprowadzone, dane staną się nieaktualne i niepoprawne wyniki.
+Baza danych zostanie otwarta tylko do odczytu, a żadne aktualizacje nie będą wykonywane, gdy pliki są edytowane. Większość funkcji będzie nadal działała. Jednak po wprowadzeniu zmian dane staną się nieaktualne i otrzymasz nieprawidłowe wyniki.
 
-**Wyłącz automatyczne aktualizacje bazy danych**
+**Wyłącz autoaktualizacje bazy danych**
 
-Baza danych przeglądania kodu nie będzie aktualizowana automatycznie, gdy pliki źródłowe zostaną zmodyfikowane. Jednak jeśli otworzysz **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Skanuj ponownie rozwiązanie**, wszystkie nieaktualne pliki będą sprawdzane i bazy danych zostaną zaktualizowane.
+Baza danych przeglądania kodu nie zostanie automatycznie zaktualizowana, gdy pliki źródłowe zostaną zmodyfikowane. Jeśli jednak otworzysz **Eksplorator rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Skanuj ponownie rozwiązanie**, wszystkie nieaktualne pliki zostaną zaznaczone, a baza danych zostanie zaktualizowana.
 
 **Wyłącz niejawne pliki**
 
-Baza danych przeglądania kodu nie zbiera danych z plików, które nie są określone w projekcie. Projekt zawiera pliki źródłowe i pliki nagłówkowe, które są jawnie określone. Niejawne pliki dołączane przez jawne plików (na przykład afxwin.h windows.h i atlbase.h). Normalnie system znajdzie te pliki i również indeksuje je dla różnych funkcji przeglądania (w tym przejdź do). Jeśli ta opcja jest wybrana, pliki te nie są indeksowane, a niektóre funkcje nie są dostępne dla nich. Jeśli ta opcja "Wyłącz niejawne czyszczenie" i "Wyłącz zewnętrzne zależności" również niejawnie są wybierane.
+Baza danych przeglądania kodu nie zbiera danych dla plików, które nie są określone w projekcie. Projekt zawiera pliki źródłowe i pliki nagłówkowe, które są jawnie określone. Pliki niejawne są zawarte w jawnych plikach (na przykład afxwin. h, Windows. h i atlbase. h). Zwykle system znajduje te pliki, a także indeksuje je pod kątem różnych funkcji przeglądania (w tym do przejścia do). W przypadku wybrania tej opcji te pliki nie są indeksowane, a niektóre funkcje nie są dla nich dostępne. W przypadku wybrania tej opcji "Wyłącz niejawne czyszczenie" i "Wyłącz zależności zewnętrzne" również są wybierane niejawnie.
 
 **Wyłącz niejawne czyszczenie**
 
-Baza danych przeglądania kodu nie wyczyścić Konfigurowanie niejawnych plików, które nie są już używane. Tej opcji uniemożliwia niejawne pliki usuwany z bazy danych, gdy są one już używane. Na przykład jeśli dodasz `#include` dyrektywy, który odwołuje się mapi.h do jednego z plików źródłowych, mapi.h zostanie znalezione i indeksowane. Jeśli następnie usuniesz #include i pliku nie jest odwoływać się gdzie indziej, informacje o nim zostaną usunięte po pewnym czasie, chyba że wybierzesz tę opcję. (Zobacz **interwał ponownego skanowania rozwiązania** opcję.) Ta opcja jest ignorowana, gdy jawnie Skanuj ponownie rozwiązanie.
+Baza danych przeglądania kodu nie czyści niejawnych plików, które nie są już przywoływane. Ta opcja uniemożliwia usuwanie niejawnych plików z bazy danych, gdy nie są one już używane. Na przykład, jeśli dodasz `#include` dyrektywę, która odwołuje się do interfejsu MAPI. h do jednego z plików źródłowych, zostanie znaleziony i zindeksowany MAPI. h. Jeśli następnie usuniesz #include i plik nie jest przywoływany w innym miejscu, informacje na jego temat zostaną ostatecznie usunięte, chyba że wybierzesz tę opcję. (Zobacz opcja **interwału ponownego skanowania** ). Ta opcja jest ignorowana, gdy użytkownik jawnie skanuje ponownie rozwiązanie.
 
 **Wyłącz foldery zależności zewnętrznych**
 
-Folder zewnętrznych zależności, dla każdego projektu nie jest tworzony lub aktualizowany. W **Eksploratora rozwiązań**, każdy projekt zawiera folder zewnętrznych zależności, który zawiera wszystkie niejawne pliki dla tego projektu. Jeśli ta opcja jest wybrana, nie jest wyświetlany ten folder.
+Folder zależności zewnętrznych dla każdego projektu nie został utworzony ani zaktualizowany. W **Eksplorator rozwiązań**każdy projekt zawiera folder zależności zewnętrznych, który zawiera wszystkie niejawne pliki dla tego projektu. Jeśli wybierzesz tę opcję, ten folder nie zostanie wyświetlony.
 
-**Ponowne utworzenie bazy danych**
+**Utwórz ponownie bazę danych**
 
-Utwórz ponownie przeglądania przy następnym uruchomieniu ładuje rozwiązanie bazy danych skalują się od kodu. Jeśli ta opcja jest wybrana, plik bazy danych SDF zostanie usunięty podczas następnego ładowania rozwiązania, powodując w bazie danych do odtworzenia i indeksowane wszystkich plików.
+Utwórz ponownie bazę danych przeglądania kodu od momentu następnego ładowania rozwiązania. W przypadku wybrania tej opcji plik bazy danych SDF zostanie usunięty podczas następnego ładowania rozwiązania, co spowoduje ponowne utworzenie bazy danych i wszystkie pliki indeksowane.
 
-**Interwał ponownego skanowania rozwiązania**
+**Przeskanuj ponownie interwał rozwiązania**
 
-Zadanie "Przeskanuj teraz ponownie rozwiązanie" zaplanowano dla interwału, który określisz. Należy określić zakresu od 0 do 5000 minut. Wartość domyślna to 60 minut. Gdy rozwiązanie jest ponownie skanowana, sygnatury czasowe pliku jest sprawdzany w celu określenia, czy plik został zmieniony poza IDE. (Zmiany wprowadzone w środowisku IDE, są automatycznie śledzone, i pliki są aktualizowane). Niejawnie dołączone pliki są sprawdzane w celu określenia, czy są one wszystkie nadal istnieje odwołanie.
+Zaplanowano zadanie "Skanuj ponownie rozwiązanie teraz" dla określonego interwału. Należy określić wartość z zakresu od 0 do 5000 minut. Wartość domyślna to 60 minut. Gdy rozwiązanie jest ponownie skanowane, sygnatury czasowe plików są sprawdzane w celu określenia, czy plik został zmieniony poza IDE. (Zmiany wprowadzone w środowisku IDE są automatycznie śledzone i pliki są aktualizowane). Niejawnie dołączone pliki są sprawdzane w celu ustalenia, czy są one nadal przywoływane.
 
 ## <a name="diagnostic-logging"></a>Rejestrowanie diagnostyczne
 
-Te opcje są dostarczane w przypadku, gdy firma Microsoft prosi o zaawansowanych informacji w celu zdiagnozowania problemu. Rejestrowanie informacji nie jest przydatne w przypadku użytkowników, a firma Microsoft zaleca, aby pozostawić ją wyłączoną.
+Te opcje są dostępne w przypadku, gdy firma Microsoft prosi o zebranie zaawansowanych informacji w celu zdiagnozowania problemu. Informacje o rejestrowaniu nie są przydatne dla użytkowników i zalecamy pozostawienie wyłączone.
 
-**Włączanie rejestrowania**
+**Włącz rejestrowanie**
 
-Umożliwia rejestrowanie diagnostyczne w oknie danych wyjściowych.
+Włącza rejestrowanie diagnostyczne do okna danych wyjściowych.
 
 **Poziom rejestrowania**
 
@@ -80,131 +80,131 @@ Ustaw poziom szczegółowości dziennika, od 0 do 5.
 
 **Filtr rejestrowania**
 
-Filtry wyświetlane typy zdarzeń za pomocą maski bitów.
+Filtruje wyświetlane typy zdarzeń przy użyciu maski bitowej.
 
-Ustaw za pomocą Suma dowolnych z następujących opcji:
+Ustaw przy użyciu sumy spośród następujących opcji:
 
-- 0 - Brak
+- 0 — brak
 
-- 1 — Ogólne
+- 1 — ogólne
 
-- 2 - bezczynności (%)
+- 2 — bezczynne
 
-- 4 — elementów roboczych
+- 4 — element roboczy
 
-- 8 - IntelliSense
+- 8 — IntelliSense
 
-- 16 - ACPerf
+- 16 — ACPerf
 
-- 32 - ClassView
+- 32 – ClassView
 
 ## <a name="fallback-location"></a>Lokalizacja rezerwowa
 
-Lokalizacji rezerwowej to, gdzie umieścić pliki obsługi SDF i funkcja IntelliSense (na przykład iPCH), gdy nie jest używana w lokalizacji głównej (tego samego katalogu jako rozwiązanie). Taka sytuacja może wystąpić, użytkownik nie ma uprawnień do zapisu do katalogu rozwiązania lub katalog rozwiązania jest powolne urządzenia. Domyślną lokalizację rezerwową znajduje się w katalogu temp użytkownika.
+Lokalizacja rezerwowa to miejsce, w którym pliki obsługi SDF i IntelliSense (na przykład iPCH) są umieszczane, gdy lokalizacja podstawowa (w tym samym katalogu jako rozwiązanie) nie jest używana. Taka sytuacja może wystąpić, jeśli użytkownik nie ma uprawnień do zapisu w katalogu rozwiązania lub katalog rozwiązania znajduje się na wolnym urządzeniu. Domyślna lokalizacja rezerwowa znajduje się w katalogu Temp użytkownika.
 
 **Zawsze używaj lokalizacji rezerwowej**
 
-Wskazuje, że kod bazy danych plików przeglądania i IntelliSense zawsze powinny być przechowywane w folderze wskazanym jako swojej "Lokalizacja rezerwowa", nie razem z plikiem .sln. IDE nigdy nie próbuje umieścić pliki SDF lub iPCH obok katalogu rozwiązania i będzie zawsze używać rezerwowej lokalizacji.
+Wskazuje, że pliki bazy danych przeglądania kodu i IntelliSense powinny być zawsze przechowywane w folderze określonym jako "Lokalizacja rezerwowa", a nie obok pliku. sln. IDE nigdy nie podejmie próby umieszczenia plików SDF lub iPCH obok katalogu rozwiązania i zawsze będzie używać lokalizacji rezerwowej.
 
-**Nie ostrzegaj o wykorzystaniu lokalizacji rezerwowej**
+**Nie Ostrzegaj, jeśli użyto lokalizacji rezerwowej**
 
-Nie ma informacji lub zostanie wyświetlony monit, jeśli jest używany "Lokalizacja rezerwowa". Normalnie IDE poinformuje, jeśli znajdował się na użycie rezerwowej lokalizacji. Ta opcja powoduje wyłączenie tego ostrzeżenia.
+Jeśli zostanie użyta opcja "Lokalizacja rezerwowa", nie masz informacji o tym, czy zostanie wyświetlony monit. Zwykle IDE będzie informować o tym, czy musiał używać lokalizacji rezerwowej. Ta opcja powoduje wyłączenie tego ostrzeżenia.
 
 **Lokalizacja rezerwowa**
 
-Ta wartość służy jako lokalizacja pomocnicza do przechowywania kodu, przeglądanie bazy danych lub pliki IntelliSense. Domyślnie katalog tymczasowy jest swojej lokalizacji rezerwowej. Spowoduje to utworzenie środowiska IDE podkatalogu w określonej ścieżki (lub katalogu temp), która zawiera nazwę rozwiązania oraz skrót pełnej ścieżki do rozwiązania, co pozwala uniknąć problemów z nazwy rozwiązania, które są identyczne.
+Ta wartość jest używana jako lokalizacja dodatkowa do przechowywania bazy danych przeglądania kodu lub plików IntelliSense. Domyślnie katalog tymczasowy jest lokalizacją rezerwową. IDE utworzy podkatalog w określonej ścieżce (lub katalogu Temp), który zawiera nazwę rozwiązania wraz z skrótem pełnej ścieżki do rozwiązania, co pozwala uniknąć problemów z identycznymi nazwami rozwiązań.
 
 ## <a name="intellisense"></a>IntelliSense
 
-**Auto Quick Info**
+**Autoszybkie informacje**
 
-Pozwala etykietek narzędzi Szybkieinfo, gdy przesuniesz wskaźnik myszy nad tekstem.
+Włącza etykietki narzędzi sekcji szybkich informacji po przesunięciu wskaźnika nad tekstem.
 
-**Wyłącz IntelliSense**
+**Wyłącz funkcję IntelliSense**
 
-Wyłącza wszystkie funkcje IntelliSense. IDE nie powoduje utworzenia VCPkgSrv.exe procesów do obsługi technologii IntelliSense żądań i żadne funkcje IntelliSense będzie działać (skrócone informacje, lista członków Autouzupełnianie, Param pomocy). Kolorowanie semantyczne i wyróżnianie odwołań są również wyłączone. Opcja ta nie wyłączenie funkcji przeglądania, które polegać wyłącznie na bazie danych (w tym oknie paska nawigacyjnego, ClassView i właściwości).
+Wyłącza wszystkie funkcje IntelliSense. IDE nie tworzy procesów VCPkgSrv. exe do obsługi żądań IntelliSense, a żadne funkcje IntelliSense nie będą działały (sekcji szybkich informacji, Lista członków, funkcja autouzupełniania, Pomoc dotycząca parametrów). Kolorowanie semantyczne i wyróżnianie odwołań również jest wyłączone. Ta opcja nie powoduje wyłączenia funkcji przeglądania, które są zależne wyłącznie od bazy danych (w tym pasek nawigacyjny, ClassView i okno właściwości).
 
-**Wyłącz automatyczne aktualizowanie**
+**Wyłącz autoaktualizowanie**
 
-Aktualizowanie IntelliSense jest opóźnione, dopóki rzeczywistego żądania dla technologii IntelliSense. To opóźnienie może spowodować dłuższy czas wykonania pierwszej operacji IntelliSense dla pliku, ale może być pomocne ustawić tę opcję na maszynach bardzo wolno lub ograniczonych zasobach. Jeśli ta opcja jest wybrana, dodatkowo niejawnie należy wybierać opcje "Wyłącz Error Reporting" i "Wyłącz zygzaki".
+Aktualizacja IntelliSense jest opóźniona, dopóki nie zostanie wykonane rzeczywiste żądanie dotyczące technologii IntelliSense. To opóźnienie może skutkować dłuższym czasem wykonywania pierwszej operacji IntelliSense na pliku, ale może być przydatne, aby ustawić tę opcję na maszynach o bardzo niskiej lub ograniczonej ilości zasobów. W przypadku wybrania tej opcji można również niejawnie wybrać opcje "Wyłącz raportowanie błędów" i "Wyłącz zawijania".
 
-**Wyłączyć raportowanie błędów**
+**Wyłącz raportowanie błędów**
 
-Wyłącza raportowanie błędów IntelliSense przez zygzaki i okno Lista błędów. Dodatkowo wyłącza analizowanie w tle skojarzone z raportowania błędów. Jeśli ta opcja jest wybrana, dodatkowo niejawnie należy wybrać opcję "Wyłącz zygzaki".
+Wyłącza raportowanie błędów funkcji IntelliSense przez zygzaki i okno Lista błędów. Wyłącza również analizę w tle, która jest skojarzona z raportowaniem błędów. W przypadku wybrania tej opcji można również niejawnie wybrać opcję "Wyłącz Zawijanie".
 
 **Wyłącz zygzaki**
 
-Wyłącza zygzaki sygnalizujące błędy IntelliSense. Czerwone "zygzaki" nie pokazuj w oknie edytora, ale błąd będzie nadal występować w oknie Lista błędów.
+Wyłącza opcję zygzaków błędów funkcji IntelliSense. Czerwony "zygzaks" nie jest wyświetlany w oknie edytora, ale błąd nadal pojawia się w oknie Lista błędów.
 
-**Automatycznie Dostosuj maksymalny buforowanych jednostek tłumaczenia**
+**Autodopasowanie Max Cached translation Units**
 
-Maksymalna liczba jednostek tłumaczenia, które będą znajdować się aktywne w dowolnym momencie dla żądań IntelliSense. Należy określić wartość z przedziału od 2 do 15. Ten numer bezpośrednio związana z oczekiwaną maksymalną liczbę procesów VCPkgSrv.exe, które będą uruchamiane (dla danego wystąpienia programu Visual Studio). Wartość domyślna to 2, ale jeśli masz dostępnej pamięci, można zwiększyć tę wartość i prawdopodobnie osiągnąć nieco większą wydajność w technologii IntelliSense.
+Maksymalna liczba jednostek translacji, które będą przechowywane w dowolnym momencie w przypadku żądań IntelliSense. Należy określić wartość z przedziału od 2 do 15. Ta liczba bezpośrednio odnosi się do maksymalnej liczby procesów VCPkgSrv. exe, które będą uruchamiane (dla danego wystąpienia programu Visual Studio). Wartość domyślna to 2, ale jeśli masz dostępną pamięć, możesz zwiększyć tę wartość i zapewnić nieco lepszą wydajność funkcji IntelliSense.
 
-Aby uzyskać więcej informacji na temat jednostek tłumaczenia, zobacz [etapy translacji](/cpp/preprocessor/phases-of-translation).
+Aby uzyskać więcej informacji na temat jednostek translacji, zobacz [etapy tłumaczenia](/cpp/preprocessor/phases-of-translation).
 
-**Wyłącz # Autouzupełnianie include**
+**Wyłącz funkcję Autowypełniania #include**
 
-Wyłącza automatyczne uzupełnianie `#include` instrukcji.
+Wyłącza Autouzupełnianie `#include` instrukcji.
 
-**Użyj ukośnik w # Autouzupełnianie include**
+**Użyj ukośnika do przodu w #include Autouzupełnianie**
 
-Wyzwala automatyczne uzupełnianie `#include` instrukcji po "/" jest używany. Domyślnym ogranicznikiem jest odwrotny "\'. Kompilator można zaakceptować albo, więc ta opcja umożliwia określenie używa bazy kodu.
+Wyzwala Autouzupełnianie instrukcji `#include` , gdy jest używana wartość "/". Domyślny ogranicznik to ukośnik odwrotny\'. Kompilator może zaakceptować jedną z tych opcji, aby określić, do czego służy kod podstawowy.
 
-**Wyłącz agresywne listy**
+**Wyłącz agresywną listę elementów członkowskich**
 
-Listę elementów członkowskich nie jest wyświetlany podczas wpisywania nazwy typu lub zmiennej. Lista jest wyświetlana tylko wtedy, gdy możesz wpisać znaki zatwierdzające zgodnie z definicją w **znaki zatwierdzania List składowych** opcji.
+Lista elementów członkowskich nie jest wyświetlana podczas wpisywania nazwy typu lub zmiennej. Lista zostanie wyświetlona tylko po wpisaniu jednego z znaków zatwierdzenia, jak zdefiniowano w opcji **zatwierdzanie znaków listy składowych** .
 
-**Wyłącz słowa kluczowe List elementu członkowskiego**
+**Wyłącz słowa kluczowe list elementów członkowskich**
 
-Słowa kluczowe języka, takich jak `void`, `class`, `switch` nie pojawiają się w elementu członkowskiego listy sugestii.
+Słowa kluczowe języka, `void`takie `class`jak `switch` ,, nie są wyświetlane na listach elementów członkowskich.
 
-**Wyłącz fragmenty kodu List składowych**
+**Wyłącz fragmenty kodu list składowych**
 
-Fragmenty kodu nie są wyświetlane w elementu członkowskiego listy sugestii.
+Fragmenty kodu nie są wyświetlane na listach elementów członkowskich.
 
-**Tryb filtrowania listy składowych**
+**Tryb filtru listy elementów członkowskich**
 
-Ustawia typ algorytm dopasowania. **Rozmyte** znajduje najbardziej możliwe jest zgodny, ponieważ używa ona algorytm, który jest podobny do sprawdzania pisowni, aby znaleźć dopasowania, które są podobne, ale nie są identyczne. **Inteligentne filtrowanie** odpowiada podciągów, nawet jeśli nie są one na początku wyrazu. **Prefiks** jest zgodny tylko na podciągi identyczne, rozpoczynające się od słowa.
+Ustawia typ zgodnego algorytmu. **Rozmyte** Znajdowanie najbardziej możliwych dopasowań, ponieważ używa algorytmu podobnego do sprawdzania pisowni, aby znaleźć dopasowania, które są podobne, ale nie identyczne. **Inteligentne filtrowanie** dopasowuje podciągi, nawet jeśli nie znajdują się na początku wyrazu. **Prefiks** tylko pasuje do identycznych podciągów, które zaczynają się na początku wyrazu.
 
 **Wyłącz kolorowanie semantyczne**
 
-Wyłącza wszystkie kolorowania kodu, z wyjątkiem słów kluczowych języka, ciągi i komentarze.
+Wyłącza wszystkie kolorowanie kodu z wyjątkiem słów kluczowych, ciągów i komentarzy języka.
 
-**Znaki zatwierdzania List składowych**
+**Znaki zatwierdzania listy składowych**
 
-Określa znaki, które powodują obecnie podświetlony sugestii listę elementów członkowskich do zatwierdzenia. Można dodać lub usunąć znaki z tej listy.
+Określa znaki, które powodują zatwierdzenie listy aktualnie wyróżnionych elementów członkowskich. Możesz dodawać lub usuwać znaki z tej listy.
 
-**Zatwierdzanie List składowych inteligentne**
+**Zatwierdzenie listy elementów członkowskich Smart**
 
-Dodaje wiersz po wybraniu klawisza Enter na końcu pełnego wpisanego wyrazu.
+Dodaje wiersz po wybraniu klawisza Enter na końcu w pełni wpisanego wyrazu.
 
-**Włącz członka listy kropki na strzałkę**
+**Włącz listę elementów członkowskich z kropką na strzałkę**
 
-Zastępuje "." strzałką "->" Jeśli jest to wymagane na liście składowych.
+Zastępuje znak "." elementem "->", jeśli jest to możliwe dla listy elementów członkowskich.
 
 ## <a name="references"></a>Odwołania
 
 **Wyłącz Rozwiązywanie**
 
-Ze względu na wydajność "Znajdź wszystkie odwołania" wyświetli nieprzetworzone wyniki wyszukiwania tekstowego domyślnie zamiast wykorzystania IntelliSense do weryfikacji każdej możliwości. Można wyczyść to pole wyboru dla bardziej precyzyjne wyniki na wszystkich operacji wyszukiwania. Aby filtrować na podstawie na wyszukiwanie, otwórz menu skrótów dla listy wyników, a następnie wybierz "Resolve wyniki".
+Ze względu na wydajność polecenie "Znajdź wszystkie odwołania" domyślnie wyświetla nieprzetworzone wyniki wyszukiwania tekstu, a nie za pomocą technologii IntelliSense, aby zweryfikować każdy kandydat. Możesz wyczyścić to pole wyboru, aby uzyskać dokładniejsze wyniki dla wszystkich operacji znajdowania. Aby odfiltrować według przeszukiwania, otwórz menu skrótów dla listy wyników, a następnie wybierz polecenie "Rozwiąż wyniki".
 
 **Ukryj niepotwierdzone**
 
-Ukryj niepotwierdzone elementów w wynikach "Znajdź wszystkie odwołania". Jeśli nie ustawiono "Wyłącz rozwiązywanie" opcji, należy umożliwia tę opcję, ukrywanie niepotwierdzone elementów w wynikach.
+Ukryj niepotwierdzone elementy w wynikach "Znajdź wszystkie odwołania". W przypadku ustawienia opcji "Wyłącz rozpoznawanie" można użyć tej opcji do ukrycia niepotwierdzonych elementów w wynikach.
 
 **Wyłącz podświetlanie odwołań**
 
-Domyślnie po wybraniu jakiś tekst wszystkich wystąpień tego samego tekstu są automatycznie wyróżnione w bieżącym dokumencie. Tę funkcję można wyłączyć, ustawiając **Wyłącz podświetlanie odwołań** do **True**.
+Domyślnie po zaznaczeniu tekstu wszystkie wystąpienia tego samego tekstu są automatycznie wyróżniane w bieżącym dokumencie. Tę funkcję można wyłączyć, ustawiając **opcję Wyłącz podświetlanie odwołań** na **wartość true**.
 
 ## <a name="text-editor"></a>Edytor tekstu
 
-**Włącz umieszczanie w nawiasach klamrowych**
+**Włącz opcję Otocz za pomocą nawiasów klamrowych**
 
-Jeśli włączone, można otoczyć zaznaczony tekst w nawiasach klamrowych, wpisując "{" do edytora tekstów.
+Jeśli ta funkcja jest włączona, można ująć zaznaczony tekst za pomocą nawiasów klamrowych, wpisując "{" w edytorze tekstu.
 
-**Włącz umieszczanie w nawiasach**
+**Włącz funkcję Otocz za pomocą nawiasów**
 
-Jeśli włączone, można otoczyć zaznaczony tekst w nawiasach, wpisując "(" do edytora tekstów.
+Jeśli ta funkcja jest włączona, można ująć zaznaczony tekst za pomocą nawiasów, wpisując znak "(" w edytorze tekstu.
 
 ## <a name="see-also"></a>Zobacz też
 

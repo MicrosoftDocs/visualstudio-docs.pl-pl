@@ -1,110 +1,110 @@
 ---
-title: IntelliSense dla C++
+title: C++Technologia
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f92a1c9e39013c9c9cc0a320169f12e0c075b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0acaea4cf01d9c0158dfbf6d9feab37238f88f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582764"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461705"
 ---
-# <a name="visual-c-intellisense-features"></a>Funkcje programu Visual C++ IntelliSense
+# <a name="visual-c-intellisense-features"></a>Funkcje C++ IntelliSense języka Visual
 
-Funkcja IntelliSense jest nazwą nadaną zestaw funkcji, które kodowania bardziej wygodne. IntelliSense dla języka C++ jest dostępna dla autonomicznych plików oraz jak w przypadku plików, które są częścią projektu w języku C++. W projektach dla wielu platform, niektóre funkcje IntelliSense są dostępne w *.cpp* i *.c* pliki w projekcie współdzielonym kodem, nawet wtedy, gdy jesteś w kontekście systemu Android lub iOS.
+IntelliSense to nazwa nadana zestawowi funkcji, które sprawiają, że kodowanie jest wygodniejsze. Funkcja IntelliSense C++ dla jest dostępna dla autonomicznych plików, a także dla plików, które są częścią C++ projektu. W projektach międzyplatformowych niektóre funkcje IntelliSense są dostępne w plikach *CPP* i *c* w projekcie kodu udostępnionego, nawet gdy jesteś w kontekście systemu Android lub iOS.
 
-Ten artykuł zawiera omówienie funkcji C++ IntelliSense funkcji. Aby uzyskać informacje na temat konfigurowania projektu dla technologii IntelliSense i rozwiązywania problemów, zobacz [skonfigurować projekt języka C++ dla technologii IntelliSense](visual-cpp-intellisense-configuration.md).
+Ten artykuł zawiera omówienie funkcji C++ IntelliSense. Aby uzyskać informacje na temat sposobu konfigurowania projektu dla funkcji IntelliSense i rozwiązywania problemów, zobacz [Konfigurowanie C++ projektu dla IntelliSense](visual-cpp-intellisense-configuration.md).
 
-## <a name="intellisense-features-in-c"></a>Funkcje IntelliSense w języku C++
+## <a name="intellisense-features-in-c"></a>Funkcje IntelliSense wC++
 
-Funkcja IntelliSense jest nazwą nadaną zestaw funkcji, które kodowania bardziej wygodne. Ponieważ różne osoby mają różne pomysłów dotyczących co to jest wygodne, praktycznie wszystkie funkcje IntelliSense może być włączone lub wyłączone w **opcje** dialogowego **edytora tekstów**  >  **C/C++** > **zaawansowane**. **Opcje** okno dialogowe jest dostępne z **narzędzia** menu na pasku menu.
+IntelliSense to nazwa nadana zestawowi funkcji, które sprawiają, że kodowanie jest wygodniejsze. Ponieważ różne osoby mają różne pomysły dotyczące tego, co jest wygodne, praktycznie wszystkie funkcje IntelliSense można włączyć lub wyłączyć w oknie dialogowym **Opcje** , w obszarze **Edytor** > tekstu**C/C++**   >  **Zaawansowane**. Okno dialogowe **Opcje** jest dostępne w menu **Narzędzia** na pasku menu.
 
-![Okno dialogowe opcji narzędzi](../ide/media/sintellisensecpptoolsoptions.PNG)
+![Opcje narzędzia — okno dialogowe](../ide/media/sintellisensecpptoolsoptions.PNG)
 
-Elementy menu i skróty klawiaturowe, które pokazano na poniższej ilustracji umożliwia dostęp do funkcji IntelliSense.
+Można użyć elementów menu i skrótów klawiaturowych przedstawionych na poniższym obrazie, aby uzyskać dostęp do funkcji IntelliSense.
 
-![Menu funkcji IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
+![Menu IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
-## <a name="statement-completion-and-member-list"></a>Listy uzupełniania i elementów członkowskich — instrukcja
+## <a name="statement-completion-and-member-list"></a>Uzupełnianie instrukcji i lista elementów członkowskich
 
-Po uruchomieniu, wpisując słowo kluczowe, typ, funkcji, nazwa zmiennej lub inny element program, który kompilator rozpoznaje, edytor oferuje Dokończ wyraz dla Ciebie.
+Po rozpoczęciu wpisywania słowa kluczowego, typu, funkcji, nazwy zmiennej lub innego elementu programu, który jest rozpoznawany przez kompilator, Edytor oferuje ukończenie tego słowa.
 
-Aby uzyskać listę ikon i ich znaczenie, zobacz [ikony w widoku klas i przeglądarki obiektów](../ide/class-view-and-object-browser-icons.md).
+Aby zapoznać się z listą ikon i ich znaczenia, zobacz [Widok klasy i Przeglądarka obiektów ikon](../ide/class-view-and-object-browser-icons.md).
 
-![Program Visual C&#43; &#43; okna Dokończ wyraz](../ide/media/vs2015_cpp_complete_word.png)
+![Okno uzupełniające słowo języka Visual C&#43; &#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-Przy pierwszym wywołaniu listy członków pokazywane są tylko elementy członkowskie, które są dostępne dla bieżącego kontekstu. Jeśli użytkownik naciśnie klawisz **Ctrl**+**"j"** po tym pokazuje wszystkie elementy członkowskie, niezależnie od tego, w ułatwienia dostępu. Jeśli wywołujesz ją raz trzeci, wyświetlany jest jeszcze większą listę elementów programu. Można wyłączyć listy członków w **opcje** dialogowego **edytora tekstów** > **C/C++** > **ogólne**  >  **Automatyczna lista członków**.
+Przy pierwszym wywołaniu listy elementów członkowskich wyświetlane są tylko te elementy, które są dostępne dla bieżącego kontekstu. Po naciśnięciu klawisza **Ctrl**+**J** po tym wyświetli wszystkie elementy członkowskie, niezależnie od dostępności. Jeśli wywołajesz go w trzecim czasie, zostanie wyświetlona jeszcze szerszej listy elementów programu. Listę elementów członkowskich można wyłączyć w oknie dialogowym **Opcje** , w obszarze **Edytor** > tekstu**CC++/**  >  > ogólne**elementy członkowskie listy rozwijanej**.
 
-![Visual C&#43;&#43; Member List](../ide/media/vs2015_cpp_list_members.png)
+![Lista elementów&#43; &#43; członkowskich Visual C](../ide/media/vs2015_cpp_list_members.png)
 
-## <a name="parameter-help"></a>Parametr pomocy
+## <a name="parameter-help"></a>Pomoc dotycząca parametrów
 
-Po wpisaniu nawiasu otwierającego wywołania funkcji lub nawiasu ostrego w deklaracji zmiennej szablonu klasy Edytor pokazuje niewielki przedział z typami parametrów dla każdego przeciążenia funkcji ani konstruktora. Parametr "bieżący"&mdash;na podstawie lokalizacji kursora&mdash;jest pogrubioną czcionką. Można wyłączyć, informacje o parametrach w **opcje** dialogowego **edytora tekstów** > **C/C++** > **ogólne**  >  **Informacje o parametrach**.
+Po wpisaniu otwierającego nawiasu klamrowego wywołania funkcji lub nawiasu kątowego w deklaracji zmiennej szablonu klasy, Edytor pokazuje małe okno z typami parametrów dla każdego przeciążenia funkcji lub konstruktora. Parametr&mdash;"Current" oparty na lokalizacji&mdash;kursora jest pogrubiony. Informacje o parametrach można wyłączyć w oknie dialogowym **Opcje** , w obszarze **Edytor** > tekstu**C/C++**  > **Ogólne** > **Informacje o parametrach**.
 
-![Program Visual C&#43; &#43; parametr pomocy](../ide/media/vs_2015_cpp_param_help.png)
+![Pomoc parametru&#43; &#43; języka Visual C](../ide/media/vs_2015_cpp_param_help.png)
 
 ## <a name="quick-info"></a>Szybkie informacje
 
-Po umieszczeniu kursora myszy nad zmienną wbudowane, który zawiera informacje o typie i nagłówek, w którym zdefiniowano typ zostanie wyświetlone okno małe. Umieść kursor nad wywołanie funkcji, aby zobaczyć podpisu funkcji. Można wyłączyć szybkie informacje w **opcje** dialogowego **edytora tekstów** > **C/C++** > **zaawansowane**  >  **Auto Quick Info**.
+Po umieszczeniu wskaźnika myszy nad zmienną wyświetlane jest małe okno, w którym są wyświetlane informacje o typie i nagłówku, w którym jest zdefiniowany typ. Umieść kursor nad wywołaniem funkcji, aby zobaczyć podpis funkcji. Szybkie informacje można wyłączyć w oknie dialogowym **Opcje** , w obszarze **Edytor** > tekstu > **C/C++** **Zaawansowane** > **autoszybkie informacje**.
 
-![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
+![Visual C&#43; &#43; sekcji szybkich informacji](../ide/media/vs2015_cpp_quickinfo.png)
 
-## <a name="error-squiggles"></a>Zygzaki sygnalizujące błędy
+## <a name="error-squiggles"></a>Zygzaki błędów
 
-Faliste linie w elemencie programu, (zmienna, słowo kluczowe, nawias klamrowy, wpisz nazwę i tak dalej) Wywołaj zwrócić uwagę na komunikat o błędzie lub potencjalnych błędów w kodzie. Zielony fala pojawi się podczas pisania deklaracją do przodu, aby przypomnieć, że nadal należy napisać implementację. Purpurowa wężyk w projekcie udostępnionym jest wyświetlany błąd w kodzie, który nie jest obecnie aktywny, na przykład podczas pracy w kontekście Windows, ale wprowadzenie tekstu, która byłaby błędu w kontekście systemu Android. Czerwona fala wskazuje błąd kompilatora lub ostrzeżenie w aktywnej kod, który należy do czynienia z.
+Zygzaky w elemencie programu (zmienna, słowo kluczowe, nawiasy, nazwa typu itd.) wywołują uwagi do błędu lub potencjalnego błędu w kodzie. Zielony zygzak pojawia się podczas pisania deklaracji do przodu, aby przypominać, że nadal trzeba napisać implementację. Purpurowy zygzak pojawia się w projekcie udostępnionym, gdy występuje błąd w kodzie, który nie jest obecnie aktywny, na przykład podczas pracy w kontekście systemu Windows, ale wprowadź coś, co może być błędem w kontekście systemu Android. Czerwona zygzak wskazuje błąd kompilatora lub ostrzeżenie w aktywnym kodzie, z którym należy się zająć.
 
-![Visual C&#43;&#43; error squiggles](../ide/media/vs2015_cpp_error_quiggles.png)
+![Wizualny&#43; &#43; błąd Visual C](../ide/media/vs2015_cpp_error_quiggles.png)
 
-### <a name="code-colorization-and-fonts"></a>Czcionki i kolorowanie kodu
+### <a name="code-colorization-and-fonts"></a>Kolorowanie i czcionki kodu
 
-Można zmienić domyślne kolory i czcionki w programie **opcje** dialogowego **środowiska** > **czcionki i kolory**. Możesz zmienić czcionki dla wielu interfejsu użytkownika systemu windows, w tym miejscu nie tylko edytora. Ustawienia, które są specyficzne dla języka C++ zaczynają się od "C++"; inne ustawienia dotyczą wszystkich języków.
+Domyślne kolory i czcionki można zmienić w oknie dialogowym **Opcje** , w obszarze**czcionki i kolory** **środowiska** > . Czcionki dla wielu okien interfejsu użytkownika można zmienić w tym miejscu, a nie tylko w edytorze. Ustawienia specyficzne dla C++ rozpoczynające się od "C++"; Pozostałe ustawienia dotyczą wszystkich języków.
 
-## <a name="cross-platform-intellisense"></a>Funkcja IntelliSense dla wielu platform
+## <a name="cross-platform-intellisense"></a>Technologia IntelliSense dla wielu platform
 
-W projekcie współdzielonym kodem niektóre funkcje IntelliSense, takie jak zygzaki są dostępne nawet wtedy, gdy użytkownik pracuje w kontekście systemu Android. Jeśli piszesz kodu, które mogłyby spowodować błąd w projekcie jest nieaktywny, funkcja IntelliSense wyświetla nadal faliste linie, ale znajdują się w innym kolorze niż zygzaki błędy w bieżącym kontekście.
+W projekcie udostępnionego kodu niektóre funkcje IntelliSense, takie jak zygzaki, są dostępne nawet podczas pracy w kontekście systemu Android. Jeśli piszesz jakiś kod, który mógłby spowodować błąd w nieaktywnym projekcie, funkcja IntelliSense nadal będzie wyświetlać zygzaki, ale są one w innym kolorze niż zygzaky dla błędów w bieżącym kontekście.
 
-Należy wziąć pod uwagę aplikacja OpenGLES, który został skonfigurowany do kompilacji dla systemów Android i iOS. Na ilustracji przedstawiono kod udostępniony edytowany. Na tej ilustracji jest aktywny projekt **iOS.StaticLibrary**:
+Weź pod uwagę aplikację OpenGL, która jest skonfigurowana do kompilowania dla systemów Android i iOS. Ilustracja przedstawia kod współużytkowany, który jest edytowany. Na tym obrazie aktywnym projektem jest **iOS. StaticLibrary**:
 
-![dla systemu iOS jest wybrany jako aktywnego projektu.](../ide/media/intellisensecppcrossplatform2.png)
+![System iOS jest wybrany jako aktywny projekt.](../ide/media/intellisensecppcrossplatform2.png)
 
-Zapamiętaj poniższe:
+Zwróć uwagę na następujące kwestie:
 
-- `#ifdef` Gałęzi w wierszu 6 jest wygaszone, aby wskazać region nieaktywne, ponieważ `__ANDROID__` nie jest zdefiniowany dla projektu systemu iOS.
+- Gałąź w wierszu 6 jest wyszarzona, aby wskazać nieaktywny region, ponieważ `__ANDROID__` nie jest zdefiniowana dla projektu systemu iOS. `#ifdef`
 
-- Zmienna powitanie, w wierszu 11 jest inicjowana z identyfikatorem `HELLO`, dla której istnieje czerwona fala. Jest to spowodowane nie identyfikatora `HELLO` jest zdefiniowana w projekcie aktualnie aktywne dla systemu iOS.
+- Zmienna Greeting w wierszu 11 jest inicjowana z identyfikatorem `HELLO`, który ma teraz czerwony zygzak. Wynika to z faktu `HELLO` , że żaden identyfikator nie jest zdefiniowany w obecnie aktywnym projekcie systemu iOS.
 
-- Wierszu 12 ma purpurowy wężyk na identyfikator `BYE` ponieważ ten identyfikator nie jest zdefiniowany w (obecnie) nieaktywne **Android.NativeActivity** projektu. Mimo że ten wiersz kompiluje, gdy dla systemu iOS jest aktywnym projektem, nie będzie kompilacji, gdy systemu Android jest aktywnym projektem. Ponieważ jest to kod udostępniony, powinien Popraw kod, nawet jeśli skompilowany w aktualnie aktywnej konfiguracji.
+- Wiersz 12 ma purpurowy Zygzak na identyfikatorze `BYE` , ponieważ ten identyfikator nie jest zdefiniowany w bieżącym projekcie **systemu Android. Native** . Mimo że ten wiersz jest kompilowany, gdy system iOS jest aktywnym projektem, nie będzie kompilować, gdy system Android jest aktywnym projektem. Ponieważ jest to kod współużytkowany, należy poprawić kod, mimo że kompiluje się w aktualnie aktywnej konfiguracji.
 
-Jeśli zmienisz aktywny projekt systemu Android, zmień zygzaki:
+W przypadku zmiany aktywnego projektu na system Android zmiany są zmieniane:
 
-- `#else` Gałęzi w wierszu 8 jest wygaszone, aby wskazać region nieaktywne, ponieważ `__ANDROID__` jest zdefiniowany dla projektu dla systemu Android.
+- Gałąź w wierszu 8 jest wyszarzona, aby wskazać nieaktywny region, ponieważ `__ANDROID__` jest zdefiniowana dla projektu systemu Android. `#else`
 
-- Zmienna powitanie, w wierszu 11 jest inicjowana z identyfikatorem `HELLO`, mającym wężyk purpurowy. Jest to spowodowane nie identyfikatora `HELLO` jest zdefiniowana w projekcie obecnie nieaktywne dla systemu iOS.
+- Zmienna Greeting w wierszu 11 jest inicjowana z identyfikatorem `HELLO`, który ma purpurowy zygzak. Wynika to z faktu `HELLO` , że żaden identyfikator nie jest zdefiniowany w aktualnie nieaktywnym projekcie systemu iOS.
 
-- Wiersz 12 ma czerwona fala na identyfikatorze `BYE` ponieważ ten identyfikator nie jest zdefiniowana w aktywnym projekcie.
+- Wiersz 12 ma czerwony zygzak o identyfikatorze `BYE` , ponieważ ten identyfikator nie jest zdefiniowany w aktywnym projekcie.
 
 ## <a name="intellisense-for-stand-alone-files"></a>Funkcja IntelliSense dla plików autonomicznych
 
-Po otwarciu pojedynczy plik poza jakiegokolwiek projektu, będzie nadal się pojawiać IntelliSense. Można włączyć lub wyłączyć określonych funkcji IntelliSense w **opcje** dialogowego **edytora tekstów** > **C/C++**  >  **Zaawansowane**. Aby skonfigurować ustawienia funkcji IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądanie dla plików nienależących do projektu** sekcji.
+Po otwarciu pojedynczego pliku poza projektem nadal uzyskasz funkcję IntelliSense. W oknie dialogowym **Opcje** można włączać lub wyłączać określone funkcje IntelliSense, w obszarze **Edytor** > tekstu > **C/C++** **Advanced**. Aby skonfigurować funkcję IntelliSense dla pojedynczych plików, które nie są częścią projektu, zapoznaj się z sekcją **IntelliSense i przeglądanie dla plików** nienależących do projektu.
 
-![Program Visual C&#43; &#43; intellisense pojedynczego pliku](../ide/media/vs2015_cpp_single_file_intellisense.png)
+![Funkcja IntelliSense&#43; &#43; pojedynczego pliku języka Visual C](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
-Domyślnie pojedynczy plik IntelliSense używane tylko standardowe obejmują katalogi w celu znalezienia plików nagłówkowych. Aby dodać dodatkowe katalogi, otwórz menu skrótów na **rozwiązania** węzeł i Dodaj katalog na **debugować kod źródłowy** listy, jak pokazano na następującym rysunku:
+Domyślnie funkcja IntelliSense z pojedynczym plikiem używa tylko standardowych katalogów include do znajdowania plików nagłówkowych. Aby dodać dodatkowe katalogi, otwórz menu skrótów w węźle **rozwiązanie** i Dodaj katalog do listy **kod źródłowy debugowania** , jak pokazano na poniższej ilustracji:
 
-![Dodanie ścieżki do pliku nagłówka.](../ide/media/intellisensedebugyourcode.jpg)
+![Dodawanie ścieżki do pliku nagłówkowego.](../ide/media/intellisensedebugyourcode.jpg)
 
-## <a name="enable-or-disable-features"></a>Włącz lub wyłącz funkcje
+## <a name="enable-or-disable-features"></a>Włączanie lub wyłączanie funkcji
 
-Ponieważ różne osoby mają różne pomysłów dotyczących co to jest wygodne, praktycznie wszystkie funkcje IntelliSense może być włączone lub wyłączone w **opcje** dialogowego **edytora tekstów**  >  **C/C++** > **zaawansowane**. **Opcje** okno dialogowe jest dostępne z **narzędzia** menu na pasku menu.
+Ponieważ różne osoby mają różne pomysły dotyczące tego, co jest wygodne, praktycznie wszystkie funkcje IntelliSense można włączyć lub wyłączyć w oknie dialogowym **Opcje** , w obszarze **Edytor** > tekstu**C/C++**   >  **Zaawansowane**. Okno dialogowe **Opcje** jest dostępne w menu **Narzędzia** na pasku menu.
 
-![Okno dialogowe opcji narzędzi](../ide/media/sintellisensecpptoolsoptions.PNG)
+![Opcje narzędzia — okno dialogowe](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
-- [Konfigurowanie projektu w języku C++ dla funkcji IntelliSense](visual-cpp-intellisense-configuration.md)
+- [Konfigurowanie C++ projektu dla funkcji IntelliSense](visual-cpp-intellisense-configuration.md)

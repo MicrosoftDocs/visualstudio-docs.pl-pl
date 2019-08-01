@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/22/2019
+ms.date: 07/23/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cdab0458d67bb13ffdd456e2e50e86d290444f3c
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: c0f7f52b79c1c6e165aabe19df8848361a096653
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177678"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461610"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Identyfikatory obciążeń i składników programu Visual Studio
 
@@ -44,13 +44,13 @@ Kliknij nazwy wersji w tabeli poniżej, aby wyświetlić dostępne obciążenia 
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
-Aby uzyskać więcej informacji na temat używania tych list, zobacz [Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) strony i [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) strony.
+Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) i [instrukcje: Migrowanie projektów rozszerzalności do strony](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) programu Visual Studio 2017.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-**Zaktualizowano do programu [16.1 wydania](/visualstudio/releases/2019/release-notes/)**
+**Zaktualizowano w [wersji 16,2](/visualstudio/releases/2019/release-notes/)**
 
 | **Wersja** | **ID** | **Opis** |
 | ----------- | ------ | --------------- |
@@ -59,13 +59,13 @@ Aby uzyskać więcej informacji na temat używania tych list, zobacz [Użyj para
 | [Visual&nbsp;Studio Community&nbsp;2019](workload-component-id-vs-community.md?vs-2019) | Microsoft.VisualStudio.Product.Community | Bezpłatne, w pełni funkcjonalne środowisko IDE dla uczniów, typu open source i indywidualnych deweloperów |
 | [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2019](workload-component-id-vs-team-explorer.md?vs-2019) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcja z Team Foundation Server i usługom DevOps platformy Azure bez zestawu narzędzi dewelopera programu Visual Studio |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2019](workload-component-id-vs-build-tools.md?vs-2019) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umożliwia tworzenie natywnych i zarządzanych aplikacji opartych na platformie MSBuild bez konieczności używania środowiska IDE programu Visual Studio. Dostępne są opcje instalacji kompilatorów języka Visual C++ i bibliotek, MFC, ATL i C + +/ interfejsu wiersza polecenia. |
-| [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2019](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie zautomatyzowanych testów i testów obciążenia |
-| [Wizualne&nbsp;obciążenia Studio&nbsp;testu&nbsp;2019 kontrolera](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Można rozprowadzać zautomatyzowane testy na wielu komputerach |
+| [Agent&nbsp;testowy&nbsp;programu Visual Studio 2019&nbsp;](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie zautomatyzowanych testów i testów obciążenia |
+| [Kontroler&nbsp;&nbsp;testówobciążenia&nbsp;programu Visual Studio 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Można rozprowadzać zautomatyzowane testy na wielu komputerach |
 
-Aby uzyskać więcej informacji na temat używania tych list, zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) strony i [jak: Migrowanie projektów rozszerzalności do programu Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) strony.
+Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) i [instrukcje: Migruj Projekty rozszerzalności na stronę](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) programu Visual Studio.
 
 > [!NOTE]
-> Aby uzyskać listę obciążenia i identyfikatory składników dla wcześniejszych wersji, zobacz [identyfikatory obciążeń i składników programu Visual Studio 2017](workload-and-component-ids.md?view=vs-2017)
+> Aby uzyskać listę identyfikatorów obciążeń i składników dla poprzedniej wersji, zobacz artykuł dotyczący [obciążeń i składników programu Visual Studio 2017](workload-and-component-ids.md?view=vs-2017)
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Aby uzyskać więcej informacji na temat używania tych list, zobacz [użyć par
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Podręcznik administratora usługi Visual Studio dla programu Visual Studio](visual-studio-administrator-guide.md)
+* [Przewodnik administratora programu Visual Studio dla programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
 * [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)

@@ -1,79 +1,82 @@
 ---
-title: Krok 6. Nazw kontrolkom przycisków
+title: Krok 6. Nadawanie nazw kontrolkom przycisków
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dbee780f2153003e870dbe0dbbb15b721a009df
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2051ac669c52480d62ee0d0a79c5a165bff502fc
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442018"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416606"
 ---
-# <a name="step-6-name-your-button-controls"></a>Krok 6. Nazw kontrolkom przycisków
-Jest tylko jedna <xref:System.Windows.Forms.PictureBox> w formularzu. Po dodaniu, IDE automatycznie nadał mu **pictureBox1**. Jest tylko jedna <xref:System.Windows.Forms.CheckBox>, który nosi **checkBox1**. Wkrótce będzie pisanie kodu i ten kod będzie odnosić się do CheckBox i PictureBox. Ponieważ istnieje tylko jeden z tych kontrolek, będzie wiadomo, co oznacza wyświetlenie **pictureBox1** lub **checkBox1** w kodzie.
+# <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
+W formularzu występuje tylko <xref:System.Windows.Forms.PictureBox> jeden. Po dodaniu, IDE automatycznie nazywa go **PictureBox1**. Istnieje tylko jeden <xref:System.Windows.Forms.CheckBox>o nazwie **checkBox1**. Wkrótce napiszesz kod i ten kod będzie się odnosił do pola CheckBox i PictureBox. Ponieważ istnieje tylko jedna z tych kontrolek, wiadomo, co oznacza, gdy zobaczysz **PictureBox1** lub **checkBox1** w kodzie.
 
 > [!NOTE]
-> W języku Visual Basic domyślną literą dowolnej nazwę formantu jest zakończenie początkowej, więc nazwy to **PictureBox1**, **CheckBox1**i tak dalej.
+> W Visual Basic domyślną pierwszą literą każdej nazwy kontrolki jest Inicjał, więc nazwy to **PictureBox1**, **checkBox1**i tak dalej.
 
- Dostępne są cztery przyciski w formularzu i IDE nadaje im **button1**, **button2**, **button3**, i **button4**. Patrząc tylko na ich aktualne nazwy, nie wiesz, który przycisk to **Zamknij** przycisk i który z nich jest **Pokaż obraz** przycisku. Dlatego właśnie nadawanie formantom przycisków bardziej czytelnych nazw jest pomocne.
+ W formularzu znajdują się cztery przyciski i IDE o nazwie im **Button1**, **Button2**, **button3**i **button4**. Po prostu patrząc na swoje bieżące nazwy nie wiesz, który przycisk jest przyciskiem **Close** i który jest przyciskiem **Pokaż obraz** . Z tego względu, jeśli przycisk steruje bardziej informacyjnymi nazwami, pomocne są.
 
- ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 3](http://go.microsoft.com/fwlink/?LinkId=205213) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# -3 wideo](http://go.microsoft.com/fwlink/?LinkId=205202). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif)dla wersji wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 3](http://go.microsoft.com/fwlink/?LinkId=205213) lub [samouczek 1: Utwórz przeglądarkę obrazów w C# pliku wideo 3.](http://go.microsoft.com/fwlink/?LinkId=205202) Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
-## <a name="to-name-your-button-controls"></a>Aby nazwać formanty przycisków
+## <a name="to-name-your-button-controls"></a>Aby nazwać kontrolki przycisku
 
-1. W formularzu Wybierz **Zamknij** przycisku. (Jeśli nadal masz zaznaczone wszystkie przyciski, wybierz opcję **Esc** klawisz, aby anulować zaznaczenie.) Przewijanie w **właściwości** okna, aż zobaczysz **(nazwa)** właściwości. ( **(Nazwa)** właściwość jest u góry, gdy właściwości są w kolejności alfabetycznej.) Zmień nazwę na **closeButton**, jak pokazano na poniższej ilustracji.
+1. W formularzu wybierz przycisk **Zamknij** . (Jeśli nadal masz zaznaczone wszystkie przyciski, wybierz klawisz **ESC** , aby anulować wybór). Przewiń w oknie **Właściwości** do momentu wyświetlenia właściwości **(Name)** . (Właściwość **(Name)** znajduje się najbliżej góry, gdy właściwości są alfabetyczne.) Zmień nazwę na **CloseButton**, jak pokazano na poniższej ilustracji.
 
-     ![Okno właściwości z nazwą closeButton](../ide/media/express_setnameproperty.png)
-**właściwości** okno z **closeButton** nazwy
+     ![Okno właściwości przy użyciu okna](../ide/media/express_setnameproperty.png)
+**Właściwości** nazwy CloseButton z nazwą **CloseButton**
 
     > [!NOTE]
-    > Jeśli spróbujesz zmienić nazwę przycisku na **closeButton**, ze spacją między wyrazami przycisk i zamykania, środowisko IDE wyświetla komunikat o błędzie: "Wartość właściwości jest nieprawidłowa." Miejsca do magazynowania (i kilka innych znaków) są niedozwolone w nazwach formantów.
+    > Jeśli spróbujesz zmienić nazwę przycisku na **CloseButton**, z odstępem między wyrazami Zamknij i przycisk, IDE wyświetli komunikat o błędzie: "Wartość właściwości jest nieprawidłowa." Spacje (i kilka innych znaków) nie są dozwolone w nazwach kontrolek.
 
-2. Zmień nazwę inne trzy przyciski na **backgroundButton**, **clearButton**, i **showButton**. Możesz sprawdzić nazwy, wybierając przycisk listy rozwijanej selektora kontroli w **właściwości** okna. Pojawiają się nowe nazwy przycisków.
+2. Zmień nazwy pozostałych trzech przycisków na **backgroundButton**, **clearButton**i **showButton**. Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w oknie **Właściwości** . Pojawią się nowe nazwy przycisków.
 
-3. Kliknij dwukrotnie **Pokaż obraz** przycisku w formularzu. Jako alternatywę, wybierz **Pokaż obraz** znajdujący się na formularzu, a następnie wybierz **Enter** klucza. Po wykonaniu, IDE otwiera dodatkową kartę w oknie głównym o nazwie **Form1.cs** (**Form1.vb** Jeśli używasz języka Visual Basic). Ta karta przedstawia plik kodu za formularzem, jak pokazano na poniższej ilustracji.
+3. Kliknij dwukrotnie przycisk **Pokaż obraz** w formularzu. Alternatywnie wybierz przycisk **Pokaż obraz** na formularzu, a następnie wybierz klawisz **Enter** . Gdy to zrobisz, IDE otworzy dodatkową kartę w oknie głównym o nazwie **Form1.cs** (**Form1. vb** , jeśli używasz Visual Basic). Na tej karcie jest wyświetlany plik kodu znajdujący się za formularzem, jak pokazano na poniższej ilustracji.
 
-     ![Karta Form1.CS z Visual C&#35; kodu](../ide/media/express_showbuttoncode.png)
-**Form1.cs** kartę z wizualizacją C# kodu
+     ![Karta Form1.cs z kartą Visual&#35; C](../ide/media/express_showbuttoncode.png)
+Code**Form1.cs** z kodem C# wizualizacji
 
-4. Skup się na niniejszej części kodu. (Wybierz **VB** karcie poniżej, jeśli używasz języka Visual Basic, aby wyświetlić wersję kodu w Visual Basic.)
+4. Skup się na tej części kodu. (Wybierz kartę **VB** poniżej, jeśli używasz Visual Basic do wyświetlania Visual Basic wersji kodu).
 
      [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]
      [!code-csharp[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]
 
-     Szukasz w kodzie o nazwie `showButton_Click()`. IDE dodane to do kodu formularza podczas otwierania pliku kodu dla **showButton** przycisku. W czasie projektowania podczas otwierania pliku kodu dla formantu w formularzu, kod jest generowany dla formantu, jeśli jeszcze nie istnieje. Ten kod, znany jako *metoda*, jest uruchamiany, gdy uruchamianie programu i wybraniu formantu - w takim przypadku **Pokaż obraz** przycisku.
+     Przeglądasz kod o nazwie `showButton_Click()`. Środowisko IDE zostało dodane do kodu formularza podczas otwierania pliku kodu dla przycisku **showButton** . W czasie projektowania, gdy otworzysz plik kodu dla formantu w formularzu, kod jest generowany dla kontrolki, jeśli jeszcze nie istnieje. Ten kod, znany jako *Metoda*, jest uruchamiany po uruchomieniu programu i wybraniu kontrolki — w tym przypadku przycisk **Pokaż obraz** .
 
     > [!NOTE]
-    > W tym samouczku został uproszczony kod języka Visual Basic, która jest generowana automatycznie przez usunięcie wszystkiego w nawiasach `()`. Zawsze, gdy ten problem wystąpi, możesz usunąć ten sam kod. Program będzie działać w obu kierunkach. Dla pozostałej części samouczków wszelki automatycznie wygenerowany kod jest uproszczony w miarę możliwości.
+    > W tym samouczku wygenerowany automatycznie kod Visual Basic został uproszczony przez usunięcie wszystkich elementów między nawiasami `()`. W każdym przypadku można usunąć ten sam kod. Program będzie działał w dowolny sposób. W pozostałej części samouczków każdy automatycznie wygenerowany kod jest uproszczony zawsze, gdy jest to możliwe.
 
-5. Wybierz **Windows Forms Designer** karcie ponownie (**Form1.cs [projekt]** w elemencie wizualnym C#, **Form1.vb [projekt]** w języku Visual Basic), a następnie otwórz plik kodu dla  **Wyczyść obraz** przycisk, aby utworzyć metodę dla niego w kodzie formularza. Powtórz tę czynność dla pozostałych dwóch przycisków. Za każdym razem IDE dodaje nową metodę do pliku kodu formularza.
+5. Wybierz ponownie kartę **Projektant formularzy systemu Windows** (**Form1.cs [projekt]** w wizualizacji C#, **formularz Form1. vb [projekt]** w Visual Basic), a następnie otwórz plik kodu dla przycisku **Wyczyść obraz** , aby utworzyć dla niego metodę w kodzie formularza. Powtórz tę czynność dla pozostałych dwóch przycisków. Za każdym razem IDE dodaje nową metodę do pliku kodu formularza.
 
-6. Aby dodać jedną metodę, otwórz plik kodu dla **wyboru** w kontrolce **Windows Forms Designer** się IDE doda `checkBox1_CheckedChanged()` metody. Metoda ta jest wywoływana zawsze wtedy, gdy użytkownik zaznacza lub czyści pole wyboru.
+6. Aby dodać jeszcze jedną metodę, Otwórz plik kodu dla kontrolki **CheckBox** w **Projektant formularzy systemu Windows** , aby umożliwić `checkBox1_CheckedChanged()` IDE dodanie metody. Ta metoda jest wywoływana za każdym razem, gdy użytkownik zaznaczy lub wyczyści to pole wyboru.
 
     > [!NOTE]
-    > Podczas pracy z programem, często przechodzisz między Edytorem kodu a **Windows Forms Designer**. IDE ułatwia nawigowanie w projekcie. Użyj **Eksploratora rozwiązań** otworzyć **Windows Forms Designer** przez dwukrotne kliknięcie *Form1.cs* w elemencie wizualnym C# lub *Form1.vb* w Visual Basic lub na pasku menu wybierz **widoku** > **projektanta**.
+    > Podczas pracy z programem często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby **otworzyć Projektant formularzy systemu Windows** przez dwukrotne kliknięcie *Form1.cs* w C# wizualizacji lub *Form1. vb* w Visual Basic lub na pasku menu wybierz**Projektant** **widoków** > .
 
-     Poniżej przedstawiono nowy kod wyświetlany w edytorze kodu.
+     Poniżej przedstawiono nowy kod widoczny w edytorze kodu.
 
      [!code-vb[VbExpressTutorial1Step6#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
      [!code-csharp[VbExpressTutorial1Step6#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
 
-     Pięć metod, które zostały dodane są nazywane *procedury obsługi zdarzeń*, ponieważ program wywołuje je zawsze, gdy występuje zdarzenie (na przykład użytkownika, wybranie przycisku lub zaznaczenie pola).
+     Pięć metod, które zostały dodane, nazywają *programy obsługi zdarzeń*, ponieważ program wywołuje je za każdym razem, gdy występuje zdarzenie (takie jak użytkownik wybierający przycisk lub zaznaczenie pola).
 
-     Podczas przeglądania kodu dla formantu w IDE w czasie projektowania, Visual Studio dodaje metodę programu obsługi zdarzeń dla formantu, jeśli go tam jeszcze nie. Na przykład po dwukrotnym kliknięciu przycisku środowisko IDE dodaje program obsługi zdarzeń dla jego <xref:System.Windows.Forms.Control.Click> zdarzeń, (które jest wywoływane, gdy użytkownik naciśnie przycisk). Po dwukrotnym kliknięciu pola wyboru IDE dodaje program obsługi zdarzeń dla jego <xref:System.Windows.Forms.CheckBox.CheckedChanged> zdarzeń, (które jest wywoływane zawsze wtedy, gdy użytkownik zaznacza lub czyści pole).
+     Gdy przeglądasz kod kontrolki w środowisku IDE w czasie projektowania, Visual Studio dodaje metodę programu obsługi zdarzeń dla kontrolki, jeśli taka nie istnieje. Na przykład po dwukrotnym kliknięciu przycisku IDE dodaje procedurę obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenia (która jest wywoływana za każdym razem, gdy użytkownik wybierze przycisk). Po dwukrotnym kliknięciu pola wyboru, IDE dodaje procedurę obsługi zdarzeń dla <xref:System.Windows.Forms.CheckBox.CheckedChanged> zdarzenia (która jest wywoływana za każdym razem, gdy użytkownik wybierze lub usunie pole).
 
-     Po dodaniu programu obsługi zdarzeń dla formantu, można powrócisz do niego w dowolnym momencie z **Windows Forms Designer** przez dwukrotne kliknięcie formantu lub na pasku menu, wybierając **widoku**  >  **Kodu**.
+     Po dodaniu programu obsługi zdarzeń dla formantu można wrócić do niego w dowolnym momencie z **Projektant formularzy systemu Windows** przez dwukrotne kliknięcie kontrolki lub na pasku menu, wybierając polecenie **Wyświetl** > **kod**.
 
-     Nazwy są ważne podczas kompilowania programów, a metody (w tym programy obsługi zdarzeń) mogą mieć dowolną nazwę, która ma. Po dodaniu programu obsługi zdarzeń z IDE, tworzy on nazwę na podstawie nazwy formantu i przetwarzanego zdarzenia. Na przykład zdarzenie kliknięcia dla przycisku o nazwie **showButton** nosi nazwę `showButton_Click()` metody obsługi zdarzeń. Ponadto, nawiasy otwierające i zamykające `()` są zwykle dodawane po nazwie metody aby wskazać, że metody są przedmiotem. Jeśli zdecydujesz, aby zmienić nazwę zmiennej kodu, kliknij prawym przyciskiem myszy na zmiennej w kodzie, a następnie wybierz **Refaktoryzuj** > **Zmień nazwę**. Wszystkie wystąpienia tej zmiennej w kodzie są zmieniane. Zobacz [Refaktoryzacja zmiany nazwy](../ide/reference/rename.md) Aby uzyskać więcej informacji.
+     Nazwy są ważne podczas tworzenia programów, a metody (w tym programy obsługi zdarzeń) mogą mieć dowolną nazwę. Po dodaniu programu obsługi zdarzeń przy użyciu IDE tworzy on nazwę na podstawie nazwy kontrolki i obsługiwanego zdarzenia. Na przykład zdarzenie kliknięcia dla przycisku o nazwie **showButton** jest nazywane `showButton_Click()` metodą obsługi zdarzeń. Ponadto nawiasy `()` otwierające i zamykające są zwykle dodawane po nazwie metody, aby wskazać, że metody są omawiane. Jeśli zdecydujesz się zmienić nazwę zmiennej kodu, kliknij prawym przyciskiem myszy zmienną w kodzie, a następnie wybierz pozycję Refaktoryzacja  > **Zmień nazwę**. Nazwy wszystkich wystąpień tej zmiennej w kodzie. Aby uzyskać więcej informacji, zobacz [Refaktoryzacja zmiany nazwy](../ide/reference/rename.md) .
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [kroku 7: Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 7: Dodaj składniki okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md).
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodaj formanty do formularza](../ide/step-5-add-controls-to-your-form.md).

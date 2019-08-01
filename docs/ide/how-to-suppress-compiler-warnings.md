@@ -3,23 +3,23 @@ title: Pomijanie ostrzeżeń kompilatora dla projektów i pakiety NuGet
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549314"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415787"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Instrukcje: Pomijanie ostrzeżeń kompilatora
 
-W dzienniku kompilacji mogą declutter przez filtrowanie jednego lub więcej rodzajów ostrzeżeń kompilatora. Na przykład możesz chcieć przejrzeć tylko niektóre z danych wyjściowych, który jest generowany, gdy poziom szczegółowości dziennika kompilacji jest ustawiona na **normalny**, **szczegółowe**, lub **diagnostycznych**. Aby uzyskać więcej informacji na temat poziomu szczegółowości, zobacz [jak: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
+W dzienniku kompilacji mogą declutter przez filtrowanie jednego lub więcej rodzajów ostrzeżeń kompilatora. Na przykład możesz chcieć przejrzeć tylko niektóre z danych wyjściowych, który jest generowany, gdy poziom szczegółowości dziennika kompilacji jest ustawiona na **normalny**, **szczegółowe**, lub **diagnostycznych**. Aby uzyskać więcej informacji o szczegółowości, zobacz [How to: Wyświetlanie, zapisywanie i konfigurowanie plików](../ide/how-to-view-save-and-configure-build-log-files.md)dziennika kompilacji.
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Pomiń określone ostrzeżenia dla wizualizacji C# lub F\#
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Pomijanie określonych ostrzeżeń dla C# wizualizacji lub F\#
 
 Użyj **kompilacji** stronę właściwości i pomijanie określonych ostrzeżeń dla C# i F# projektów.
 
@@ -63,7 +63,7 @@ W tym przykładzie pokazano, jak edytować *.vbproj* pliku pomija określone ost
 
 1. Na pasku menu wybierz **projektu** > **Zwolnij projekt**.
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótu lub kliknij prawym przyciskiem myszy dla projektu, a następnie wybierz **Edytuj \<nazwa_projektu > .vbproj**.
+1. W **Eksplorator rozwiązań**otwórz prawym przyciskiem myszy lub menu skrótów dla projektu, a następnie wybierz polecenie **Edytuj \<ProjectName >. vbproj**.
 
     XML pliku projektu zostanie otwarty w edytorze kodu.
 
@@ -132,6 +132,6 @@ W niektórych przypadkach można pominąć ostrzeżenia kompilatora NuGet dla je
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)
+- [Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)
 - [Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)

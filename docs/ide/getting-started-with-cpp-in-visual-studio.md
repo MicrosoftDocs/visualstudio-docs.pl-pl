@@ -6,17 +6,17 @@ ms.date: 12/04/2017
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 0caebc01e2a1db85a38f967b47226e998cfc69d6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043395"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461687"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 
@@ -28,19 +28,19 @@ Nie trzeba znać przy użyciu języka C++, aby ukończyć ten przewodnik Szybki 
 
 ::: moniker range="vs-2017"
 
-W tym samouczku potrzebujesz kopii programu Visual Studio 2017 z **programowanie aplikacji klasycznych w języku C++** zainstalowanym obciążeniem. Szybki przewodnik dotyczący instalacji, zobacz [Instalowanie obsługi języka C++ w programie Visual Studio](/cpp/build/vscpp-step-0-installation).
+Aby wykonać te czynności, potrzebna jest kopia programu Visual Studio 2017 z programowaniem dla **komputerów C++ stacjonarnych z** zainstalowanym obciążeniem. Szybki przewodnik dotyczący instalacji, zobacz [Instalowanie obsługi języka C++ w programie Visual Studio](/cpp/build/vscpp-step-0-installation).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-W tym samouczku potrzebujesz kopii programu Visual Studio 2019 r przy użyciu **programowanie aplikacji klasycznych w języku C++** zainstalowanym obciążeniem. Szybki przewodnik dotyczący instalacji, zobacz [Instalowanie obsługi języka C++ w programie Visual Studio](/cpp/build/vscpp-step-0-installation).
+Aby wykonać te czynności, potrzebna jest kopia programu Visual Studio 2019 z programowaniem dla **komputerów C++ stacjonarnych z** zainstalowanym obciążeniem. Szybki przewodnik dotyczący instalacji, zobacz [Instalowanie obsługi języka C++ w programie Visual Studio](/cpp/build/vscpp-step-0-installation).
 
 ::: moniker-end
 
 ## <a name="create-a-console-app"></a>tworzenie aplikacji konsoli
 
-Jeśli nie jest jeszcze uruchomiona, Otwórz program Visual Studio.
+Jeśli jeszcze nie działa, Otwórz program Visual Studio.
 
 ::: moniker range="vs-2017"
 
@@ -52,9 +52,9 @@ Po otwarciu programu Visual Studio, można wyświetlić trzy podstawowe części
 
 ::: moniker range=">=vs-2019"
 
-Po otwarciu programu Visual Studio, w oknie uruchamiania pojawia się jako pierwsza. Wybierz **Kontynuuj bez konieczności pisania kodu** otworzyć środowisko programistyczne.
+Po otwarciu programu Visual Studio zostanie wyświetlone okno uruchamiania. Wybierz pozycję **Kontynuuj bez kodu** , aby otworzyć środowisko programistyczne.
 
-Zobaczysz trzy podstawowe części IDE: narzędzie systemu windows, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędziowe są zadokowane po lewej i prawej stronie okna aplikacji. Pole wyszukiwania, pasek menu i standardowy pasek narzędzi znajdują się u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
+Zobaczysz trzy podstawowe części środowiska IDE: okna narzędzi, menu i paski narzędzi oraz przestrzeń okna głównego. Okna narzędziowe są zadokowane po lewej i prawej stronie okna aplikacji. Pole wyszukiwania, pasek menu i standardowy pasek narzędzi znajdują się u góry. Podczas ładowania rozwiązania lub projektu, Edytory i projektanci pojawiają się w centralnym obszarze okna aplikacji. Podczas opracowywania aplikacji spędzasz najwięcej czasu w tym obszarze centralnym.
 
 ::: moniker-end
 
@@ -107,7 +107,7 @@ Następnie dodaj kod, aby wyświetlić wyraz "Hello" w oknie konsoli.
    using namespace std;
    ```
 
-   Należy zauważyć, jak kod został wprowadzony pojawiły się polem. To pole zawiera sugestie automatycznego uzupełniania dla wprowadzanych znaków. Tego część funkcji C++ IntelliSense, co zapewnia monity kodowania, w tym elementów członkowskich klasy lub interfejsu i informacje o parametrach. Można również użyć fragmentów kodu, które są wstępnie zdefiniowane bloków kodu. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md) i [fragmenty kodu](../ide/code-snippets.md).
+   Należy zauważyć, jak kod został wprowadzony pojawiły się polem. To pole zawiera sugestie Autouzupełniania dotyczące wprowadzonych znaków. Tego część funkcji C++ IntelliSense, co zapewnia monity kodowania, w tym elementów członkowskich klasy lub interfejsu i informacje o parametrach. Można również użyć fragmentów kodu, które są wstępnie zdefiniowane bloków kodu. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md) i [fragmenty kodu](../ide/code-snippets.md).
 
    ![Naprawiono kodu w edytorze](../ide/media/get-started-cpp-cout-fix.png)
 
@@ -176,5 +176,5 @@ Gratulujemy ukończenie tego przewodnika Szybki Start!
 ## <a name="see-also"></a>Zobacz także
 
 - [Za pomocą programu Visual Studio IDE do tworzenia klasycznych aplikacji języka C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Przewodnik: Tworzenie prostej aplikacji przy użyciu C# lub Visual Basic](../get-started/csharp/tutorial-wpf.md)
+- [Przewodnik: Tworzenie prostej aplikacji z C# lub Visual Basic](../get-started/csharp/tutorial-wpf.md)
 - [Funkcje produktywności w programie Visual Studio](../ide/productivity-features.md)

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie instalacji w trybie offline
 description: Dowiedz się, jak zainstalować program Visual Studio w trybie offline, gdy zawodne połączenie z Internetem lub niskiej przepustowości.
-ms.date: 04/16/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: aa728615f74d8422b1e0c7a9cdd531281bc18e32
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 616c27f16b4fca9be6f8dab3cdf70fafae52f193
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365243"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483505"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 
@@ -33,20 +33,20 @@ Został zaprojektowany programu Visual Studio 2017 działają poprawnie w kilku 
 
 ::: moniker range="vs-2019"
 
-Został zaprojektowany Visual Studio 2019 r działają poprawnie w kilku różnych konfiguracjach sieci i komputerów. Chociaż zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)&mdash;który to mały plik i pozwala na bieżąco ze wszystkimi najnowsze poprawki i funkcje&mdash;rozumiemy, że użytkownik może okazać się niemożliwe.
+Program Visual Studio 2019 został zaprojektowany tak, aby działał prawidłowo w różnych konfiguracjach sieci i komputerów. Chociaż zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)&mdash;który to mały plik i pozwala na bieżąco ze wszystkimi najnowsze poprawki i funkcje&mdash;rozumiemy, że użytkownik może okazać się niemożliwe.
 
 ::: moniker-end
 
-Na przykład może być zawodne połączenia internetowego lub taki, który ma o niskiej przepustowości. Jeśli tak, możesz skorzystać z kilku opcji: Można użyć nowej "Pobierz wszystko, a następnie zainstaluj" funkcję, aby pobrać pliki, przed zainstalowaniem lub wiersza polecenia można użyć do utworzenia lokalnej pamięci podręcznej plików.
+Na przykład może być zawodne połączenia internetowego lub taki, który ma o niskiej przepustowości. Jeśli tak, masz kilka opcji: Aby pobrać pliki przed zainstalowaniem programu, można użyć nowej funkcji "Pobierz wszystko, a następnie zainstalować" lub użyć wiersza polecenia w celu utworzenia lokalnej pamięci podręcznej plików.
 
 > [!NOTE]
-> Jeśli jesteś administratorem przedsiębiorstwa, który chce wykonać wdrożenie programu Visual Studio do sieci z stacje robocze klienta, które są zaporą z Internetu, zobacz nasze [Tworzenie instalacji sieciowej programu Visual Studio](../install/create-a-network-installation-of-visual-studio.md) i [Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio](../install/install-certificates-for-visual-studio-offline.md) stron.
+> Jeśli jesteś administratorem przedsiębiorstwa, który chce wykonać wdrożenie programu Visual Studio w sieci stacji roboczych klienta, które są chronione przez Internet, zobacz artykuł [Tworzenie instalacji sieciowej programu Visual Studio](../install/create-a-network-installation-of-visual-studio.md) i [Instalowanie certyfikatów wymagane dla stron instalacji w trybie offline programu Visual Studio](../install/install-certificates-for-visual-studio-offline.md) .
 
 ## <a name="use-the-download-all-then-install-feature"></a>Użyj "Pobierz wszystko, a następnie zainstaluj" funkcji
 
 ::: moniker range="vs-2017"
 
-[**Nowość w wersji 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Po pobraniu Instalatora sieci web, wybierz nową **Pobierz wszystko, a następnie zainstaluj** opcji Instalatora programu Visual Studio. Następnie kontynuuj instalację.
+[**Nowość w wersji 15,8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Po pobraniu Instalatora sieci Web wybierz opcję Nowy **Pobierz wszystko, a następnie zainstaluj** z Instalator programu Visual Studio. Następnie kontynuuj instalację.
 
    !["Pobierz wszystko, a następnie zainstaluj" opcja](media/download-all-then-install.png)
 
@@ -54,16 +54,16 @@ Na przykład może być zawodne połączenia internetowego lub taki, który ma o
 
 ::: moniker range="vs-2019"
 
-Po pobraniu Instalatora sieci web, wybierz nową **Pobierz wszystko, a następnie zainstaluj** opcji Instalatora programu Visual Studio. Następnie kontynuuj instalację.
+Po pobraniu Instalatora sieci Web wybierz opcję Nowy **Pobierz wszystko, a następnie zainstaluj** z Instalator programu Visual Studio. Następnie kontynuuj instalację.
 
    !["Pobierz wszystko, a następnie zainstaluj" opcja](media/vs-2019/download-all-then-install-from-installer.png)
 
 ::: moniker-end
 
-Został zaprojektowany "Pobierz wszystko, a następnie zainstaluj" funkcji tak, aby Visual Studio można pobrać jako pojedyncza instalacja na tym samym komputerze, na którym został pobrany. Dzięki temu można bezpiecznie odłączyć od sieci web przed zainstalowaniem programu Visual Studio.
+Zaprojektowano funkcję "Pobierz wszystko, a następnie zainstaluj", aby można było pobrać program Visual Studio jako pojedynczą instalację dla tego samego komputera, na którym został pobrany. Dzięki temu można bezpiecznie rozłączyć się z siecią Web przed zainstalowaniem programu Visual Studio.
 
 > [!IMPORTANT]
-> Nie używaj "Pobierz wszystko, a następnie zainstaluj" funkcję umożliwiającą tworzenie pamięci podręcznej offline, który chcesz przenieść na inny komputer. Nie ustalono, aby działać w ten sposób. <br><br>Jeśli chcesz utworzyć pamięci podręcznej offline, aby zainstalować program Visual Studio na innym komputerze, zobacz [użyć wiersza polecenia, aby utworzyć lokalną pamięć podręczną](#use-the-command-line-to-create-a-local-cache) części tej strony, aby uzyskać informacje o sposobie tworzenia lokalnej pamięci podręcznej lub [Create sieci instalacji programu Visual Studio](../install/create-a-network-installation-of-visual-studio.md) strony, aby uzyskać informacje na temat tworzenia pamięci podręcznej sieci.
+> Nie należy używać funkcji "Pobierz wszystko, a następnie zainstaluj", aby utworzyć pamięć podręczną w trybie offline, która ma zostać przetransferowana na inny komputer. Nie została zaprojektowana do pracy w ten sposób. <br><br>Jeśli chcesz utworzyć pamięć podręczną w trybie offline, aby zainstalować program Visual Studio na innym komputerze, zapoznaj się z sekcją [Korzystanie z wiersza polecenia w celu utworzenia lokalnej pamięci](#use-the-command-line-to-create-a-local-cache) podręcznej tej strony, aby uzyskać informacje na temat sposobu tworzenia lokalnej pamięci podręcznej lub [tworzenia instalacji sieciowej programu Visual ](../install/create-a-network-installation-of-visual-studio.md)Na stronie Studio znajduje się więcej informacji na temat tworzenia pamięci podręcznej sieci.
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Użyj wiersza polecenia, aby utworzyć lokalną pamięć podręczną
 
@@ -102,12 +102,12 @@ Rozpocznij, pobierając program inicjujący Instalatora programu Visual Studio d
 Musi mieć połączenie internetowe, aby ukończyć ten krok.
 
 > [!IMPORTANT]
-> Po zainstalowaniu programu Visual Studio Community, należy aktywować go w ciągu 30 dni od instalacji. Wymaga to dostępu do Internetu.
+> W przypadku instalowania programu Visual Studio Community należy aktywować go w ciągu 30 dni od instalacji. Wymaga to dostępu do Internetu.
 
 Otwórz wiersz polecenia i użyj jednego z poleceń w poniższych przykładach. Przykłady, które są wymienione w tym miejscu przyjęto założenie, że korzystasz z wersji Community programu Visual Studio; Dostosuj polecenia odpowiednie dla posiadanej wersji.
 
 > [!TIP]
-> Aby uniknąć błąd, upewnij się, że Twoje pełną ścieżkę instalacji jest mniejszy niż 80 znaków.
+> Aby zapobiec wystąpieniu błędu, upewnij się, że pełna ścieżka instalacji jest krótsza niż 80 znaków.
 
 - Dla sieci web platformy .NET i programowanie aplikacji klasycznych dla platformy .NET Uruchom polecenie:
 
@@ -133,8 +133,19 @@ Otwórz wiersz polecenia i użyj jednego z poleceń w poniższych przykładach. 
     vs_community.exe --layout c:\vslayout --lang en-US
     ```
 
-  > [!NOTE]
-  > Pełny układ programu Visual Studio wymaga co najmniej 35 GB miejsca na dysku. Zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) informacje na temat tworzenia układu z tylko te składniki, którą chcesz zainstalować.
+::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Pełny układ programu Visual Studio wymaga co najmniej 35 GB miejsca na dysku. Aby uzyskać więcej informacji, zobacz [wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs/). Aby uzyskać informacje na temat sposobu tworzenia układu tylko z składnikami, które chcesz zainstalować, zobacz [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+   > [!NOTE]
+   > Pełny układ programu Visual Studio wymaga co najmniej 35 GB miejsca na dysku. Aby uzyskać więcej informacji, zobacz [wymagania systemowe](/visualstudio/releases/2019/system-requirements/). Aby uzyskać informacje na temat sposobu tworzenia układu tylko z składnikami, które chcesz zainstalować, zobacz [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 Jeśli chcesz zainstalować język inny niż angielski, zmień `en-US` regionalne z [listę ustawień regionalnych języka](#list-of-language-locales). Następnie należy użyć [listą składników i dostępności obciążeń](workload-and-component-ids.md) dodatkowo dostosować pamięci podręcznej instalacji.
 

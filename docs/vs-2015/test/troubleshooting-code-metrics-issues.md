@@ -1,34 +1,36 @@
 ---
-title: Rozwiązywanie problemów z kodem metryki | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów z metrykami kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 caps.latest.revision: 6
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8a3ccfa22ba248ba094b99f25ea1478ec378f4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a02dbc4840729d5004b0815175f626fc8760711
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144889"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416967"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Rozwiązywanie problemów związanych z metrykami kodów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Niektóre następujące problemy mogą występować w przypadku zbierać metryki kodu:  
-  
-- [Zmiany w obliczeniach złożoności kodu programu Visual Studio 2010](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
-  
-## <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a> Zmiany w obliczeniach złożoności kodu programu Visual Studio 2010  
- Dla tej samej funkcji metryki złożoności kodu są obliczane w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] może różnić się od metryki obliczana na podstawie wcześniejszych wersjach [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] w następujących sytuacjach:  
-  
-- Funkcja zawiera jeden lub więcej bloki catch. W poprzednich wersjach [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], catch bloki nie zostały uwzględnione w obliczeniach. W [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], złożoność każdego bloku catch zostanie dodany do złożoność funkcji.  
-  
-- Funkcja zawiera instrukcję switch (Select Case w języku Visual Basic). Kompilator różnice między [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] i wcześniejszych wersji może generować niektóre instrukcje switch, zawierające przypadków należą do różnych kod MSIL.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+Podczas zbierania metryk kodu mogą wystąpić następujące problemy:
+
+- [Zmiany w obliczeniach złożoności kodu w programie Visual Studio 2010](#Changes_in_Visual_Studio_2010_code_complexity_calculations)
+
+## <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a>Zmiany w obliczeniach złożoności kodu w programie Visual Studio 2010
+
+Dla tej samej funkcji Metryka złożoności kodu obliczana w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] programie może różnić się od metryki obliczonej przez wcześniejsze [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wersje programu w następujących sytuacjach:
+
+- Funkcja zawiera jeden lub więcej bloków catch. W poprzednich wersjach programu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]bloki catch nie zostały uwzględnione w obliczeniach. W [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]programie złożoność każdego bloku catch jest dodawana do złożoności funkcji.
+
+- Funkcja zawiera przełącznik (Wybieranie wielkości liter w języku VB). Różnice kompilatora między [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] programem i wcześniejszymi wersjami mogą generować różne kody MSIL dla niektórych instrukcji switch, które zawierają przypadki przechodzenia między elementami.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

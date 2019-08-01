@@ -8,47 +8,47 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25eebad9efc70e4fda45131e232983e81961625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bcc560c1e0cabd222da68e98de18d7b8bef6ec6
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840372"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483409"
 ---
 # <a name="how-to-edit-xml-files"></a>Instrukcje: Edytowanie plików XML
 
-Edytor XML jest nowym edytorze plików XML. Może służyć autonomiczny plik XML lub plik skojarzony z projektu programu Visual Studio. Edytor XML jest skojarzony z następujących rozszerzeń pliku: *.config*, *.dtd*, *.xml*, *XSD*, *.xdr*, *XSL*, *.xslt*, i *.vssettings*. Edytor XML jest powiązany z pliku innego typu ma nie określonych Edytor zarejestrowany i zawiera zawartość DTD lub XML.
+Edytor XML jest nowym edytorem plików XML. Może być używany w autonomicznym pliku XML lub w pliku skojarzonym z projektem programu Visual Studio. Edytor XML jest skojarzony z następującymi rozszerzeniami plików: *. config*, *. DTD*, *. XML*, *. xsd*, *. XDR*, *. xsl*, *. XSLT*i *. vssettings*. Edytor XML jest również skojarzony z innym typem pliku, który nie ma określonego edytora, i zawiera zawartość XML lub DTD.
 
 > [!NOTE]
-> XHTML dokumentów są obsługiwane w edytorze HTML.
+> Dokumenty XHTML są obsługiwane przez Edytor HTML.
 
 Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
-## <a name="add-a-new-xml-file-to-a-project"></a>Dodaj nowy plik XML do projektu
+## <a name="add-a-new-xml-file-to-a-project"></a>Dodawanie nowego pliku XML do projektu
 
-1. Z **projektu** menu, wybierz opcję **Dodaj nowy element**.
+1. W menu **projekt** wybierz polecenie **Dodaj nowy element**.
 
-2. Wybierz **pliku XML** z **szablony** okienka.
+2. Wybierz pozycję **plik XML** w okienku **Szablony** .
 
-3. Wprowadź nazwę pliku w **nazwa** pole i naciśnij klawisz **Dodaj**.
+3. Wprowadź nazwę pliku w polu **Nazwa** i naciśnij przycisk **Dodaj**.
 
-   Plik XML jest dodawany do projektu i zostanie otwarty w edytorze XML. Ten plik zawiera domyślne deklaracji XML, `<?xml version="1.0" encoding="utf-8" ?>`.
+   Plik XML zostanie dodany do projektu i otwarty w edytorze XML. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8" ?>`.
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Dodawanie istniejącego pliku XML do projektu
 
-1. Z **projektu** menu, wybierz opcję **Dodaj istniejący element**.
+1. W menu **projekt** wybierz pozycję **Dodaj istniejący element**.
 
-   **Dodaj istniejący element** pojawi się okno dialogowe.
+   Pojawi się okno dialogowe **Dodaj istniejący element** .
 
-2. Wybierz plik XML i naciśnij klawisz **Dodaj**.
+2. Wybierz plik XML i naciśnij przycisk **Dodaj**.
 
 ## <a name="create-a-new-xml-or-xslt-file"></a>Utwórz nowy plik XML lub XSLT
 
-1. Z **pliku** menu, wybierz opcję **New**.
+1. Z menu **plik** wybierz polecenie **Nowy**.
 
-   **Nowy plik** pojawi się okno dialogowe.
+   Pojawi się okno dialogowe **nowy plik** .
 
-2. Wybierz **pliku XML** Aby utworzyć nowy plik XML; lub wybierz **pliku XSLT** do utworzenia nowego arkusza stylów XSLT.
+2. Wybierz **plik XML** , aby utworzyć nowy plik XML; lub wybierz opcję **plik XSLT** , aby utworzyć nowy arkusz stylów XSLT.
 
 3. Kliknij przycisk **Otwórz**.
 
@@ -56,11 +56,11 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 ::: moniker range="vs-2017"
 
-1. Z **pliku** menu, wybierz opcję **New** > **projektu**.
+1. Z menu **plik** wybierz pozycję **Nowy** > **projekt**.
 
    **Nowy projekt** pojawi się okno dialogowe.
 
-2. Wybierz język kodu, co pozwala wybierz **pusty projekt**.
+2. Wybierz wybrany język kodu, a następnie wybierz szablon **pusty projekt (.NET Framework)** .
 
 3. Kliknij przycisk **OK**.
 
@@ -68,9 +68,9 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 ::: moniker range=">=vs-2019"
 
-1. Z **pliku** menu, wybierz opcję **New** > **projektu**.
+1. Z menu **plik** wybierz pozycję **Nowy** > **projekt**.
 
-2. Wprowadź **pusty projekt** w polu wyszukiwania szablonu wybierz **pusty projekt (.NET Framework)** szablonu, a następnie kliknij **dalej**.
+2. W polu wyszukiwania szablonu wprowadź **pusty projekt** , wybierz szablon **pusty projekt (.NET Framework)** , a następnie kliknij przycisk **dalej**.
 
 3. Kliknij przycisk **Utwórz**.
 
@@ -78,10 +78,10 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 4. Dodaj pliki XML do projektu.
 
-   Edytor XML znajduje schematy dodanych do tego projektu i używa ich do walidacji i IntelliSense w dowolnym XML, schematu lub pliki XSLT, które możesz edytować, gdy ten projekt jest otwarty.
+   Edytor XML znajduje schematy dodawane do tego projektu i używa ich do sprawdzania poprawności i IntelliSense w dowolnym pliku XML, schemacie lub XSLT, który można edytować, gdy ten projekt jest otwarty.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytor XML](../xml-tools/xml-editor.md)
 - [Właściwości dokumentu XML, okno właściwości](../xml-tools/xml-document-properties-properties-window.md)
-- [Instrukcje: Tworzenie schematu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Instrukcje: Tworzenie schematu XML na podstawie dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

@@ -9,39 +9,41 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+helpviewer_keywords:
+- add missing usings
+ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531632"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416482"
 ---
-# <a name="generate-usings-in-visual-studio"></a>Generowanie z użycia w programie Visual Studio
+# <a name="add-missing-usings-in-visual-studio"></a>Dodaj brakujące użycia w programie Visual Studio
 
 Dotyczy to generowanie kodu:
 
 - C#
 
-**Co:** Umożliwia to natychmiastowe dodanie odpowiednie Importy lub [za pomocą instrukcji](/dotnet/csharp/language-reference/keywords/using-statement) kopiowania i wklejony kod.
+**Whatman** Umożliwia natychmiastowe dodanie niezbędnych instrukcji Imports lub [using](/dotnet/csharp/language-reference/keywords/using-statement) dla kodu kopiowania i wklejania.
 
-**Kiedy:** Jest to powszechną praktyką było skopiować kod z różnych miejsc w projekcie lub innych źródeł, a następnie wklej je do nowego kodu. Tej szybkiej akcji znajduje brakujące importuje oświadczenia dotyczące kopiowania i wklejony kod, a następnie wyświetla je dodać.
+**Czasie** Typowym sposobem jest skopiowanie kodu z różnych miejsc w projekcie lub w innych źródłach i wklejenie go do nowego kodu. Ta szybka akcja znajduje brakujące instrukcje Imports dla kodu kopiowania i wklejania, a następnie prosi o ich dodanie.
 
-**Dlaczego:** Szybka akcja automatycznie doda odpowiednie Importy, dlatego nie musisz ręcznie skopiować `using` instrukcji, których potrzebuje Twój kod.
+**Zalet** Ponieważ szybka akcja automatycznie dodaje wymagane Importy, nie trzeba ręcznie kopiować `using` instrukcji wymaganych przez kod.
 
-## <a name="generate-usings-refactoring"></a>Generowanie refaktoryzacji deklaracje Using
+## <a name="add-missing-usings-refactoring"></a>Dodaj brakujące składniki przy użyciu refaktoryzacji
 
-1. Skopiuj kod z plikiem i wklej go do nowej bez uwzględniania niezbędne `using` instrukcji. Błąd wynikowe towarzyszy poprawki kodu, który dodaje brakujący `using` instrukcji.
+1. Skopiuj kod z pliku i wklej go do nowego, bez uwzględniania niezbędnych `using` instrukcji. Wynikiem błędu jest dołączenie poprawki kodu, która dodaje brakujące `using` instrukcje.
 
     > [!NOTE]
-    > Należy włączyć tę sugestię w **Narzędzia > Opcje > Edytor tekstu > C# > Zaawansowane > przy użyciu dyrektywy**.
+    > Tę sugestię należy włączyć w obszarze **narzędzia > opcje > edytorze tekstów > C# > Advanced > przy użyciu dyrektyw**.
 
-2. Wybierz klawisze Ctrl +. Aby otworzyć **szybkie akcje i Refaktoryzacje** menu.
+2. Wybierz kombinację klawiszy CTRL +. , aby otworzyć menu **szybkie akcje i operacje refaktoryzacji** .
 
     ![Generowanie deklaracji using](media/generate-using-codefix.png)
 
-3. Wybierz **przy użyciu \<użytkownikowi\>;** można dodać brakujące odwołania.
+3. Wybierz **pozycję \<przy użyciu\>odwołania;** aby dodać brakujące odwołanie.
 
-    ![Generowanie wyników deklaracje Using](media/generate-using-result.png)
+    ![Generuj wynik użycia](media/generate-using-result.png)
 
 ## <a name="see-also"></a>Zobacz także
 

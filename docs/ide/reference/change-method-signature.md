@@ -1,5 +1,6 @@
 ---
 title: Refaktoryzuj podpis metody
+description: Usuń lub Zmień kolejność parametrów metody. Kliknij prawym przyciskiem myszy metodę, wybierz pozycję szybkie akcje i refaktoryzacje, a następnie wybierz pozycję Zmień sygnaturę.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e8332cb8fb39c47f4e46a7d306b2673ff61b9e9
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791165"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483745"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Zmień podpis metody refaktoryzacji
 
@@ -28,11 +29,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** Umożliwia usunięcie lub zmiana kolejności parametrów metody.
+**Whatman** Umożliwia usunięcie lub zmianę kolejności parametrów metody.
 
-**Kiedy:** Chcesz przenieść lub usunąć parametr metody, która jest obecnie używana w różnych lokalizacjach.
+**Czasie** Chcesz przenieść lub usunąć parametr metody, który jest aktualnie używany w różnych lokalizacjach.
 
-**Dlaczego:** Możesz można ręcznie usuń i kolejność parametrów, a następnie Znajdź wszystkie wywołania do tej metody i zmień je pojedynczo, ale która może prowadzić do błędów.  To narzędzie refaktoryzacji będzie automatycznie wykonywać zadania.
+**Zalet** Można ręcznie usunąć i zmienić kolejność parametrów, a następnie znaleźć wszystkie wywołania tej metody i wprowadzić je jeden do jednego, ale może to prowadzić do błędów.  To narzędzie refaktoryzacji będzie automatycznie wykonywać zadania.
 
 ## <a name="how-to"></a>Instrukcje
 
@@ -50,7 +51,7 @@ Ta Refaktoryzacja mają zastosowanie do:
 
    - **Keyboard**
       - Naciśnij klawisz **Ctrl + R**, następnie **klawisze Ctrl + V**.  (Należy pamiętać, że skrót klawiaturowy może różnić się w oparciu o profilu, który wybrano.)
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Zmień podpis** z menu podręcznego okna podglądu.
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Zmień podpis** z menu podręcznego okna podglądu.
    - **Myszy**
       - Wybierz **Edytuj > Refaktoryzuj > Usuń parametry**.
       - Wybierz **Edytuj > Refaktoryzuj > Zmień kolejność parametrów**.

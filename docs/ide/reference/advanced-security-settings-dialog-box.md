@@ -1,41 +1,42 @@
 ---
 title: Zaawansowane ustawienia zabezpieczeń — Okno dialogowe
 ms.date: 06/27/2018
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - vs.err.debug_in_zone_no_hostproc
 helpviewer_keywords:
 - Advanced Security Settings dialog box
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4e28cb084c82690059293fc988204201242abf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1fcc3d09e43fc5358cbe507c5045c16cc9f8cf9
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792118"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461862"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Zaawansowane ustawienia zabezpieczeń — Okno dialogowe
 
-To okno dialogowe umożliwia określenie ustawień zabezpieczeń dotyczące debugowania w strefie.
+To okno dialogowe umożliwia określenie ustawień zabezpieczeń związanych z debugowaniem w strefie.
 
-![Okno dialogowe Zaawansowane ustawienia zabezpieczeń w programie Visual Studio](../media/advanced-security-settings.png)
+![Zaawansowane ustawienia zabezpieczeń — okno dialogowe w programie Visual Studio](../media/advanced-security-settings.png)
 
-Aby otworzyć to okno dialogowe, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **zabezpieczeń** kartę. Na **zabezpieczeń** wybierz opcję **włączenia ustawień zabezpieczeń technologii ClickOnce**, kliknij przycisk **to częściowo zaufanych aplikacji**, a następnie kliknij przycisk **zaawansowane**.
+Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy zostanie wyświetlony **Projektant projektu** , kliknij kartę **zabezpieczenia** . Na stronie **zabezpieczenia** wybierz opcję **Włącz ustawienia zabezpieczeń ClickOnce**, kliknij **to jest aplikacja częściowej relacji zaufania**, a następnie kliknij przycisk **Zaawansowane**.
 
-## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+## <a name="uielement-list"></a>Lista elementów UIElement
 
-**Przyznać aplikacji dostęp do witryny pochodzenia**
+**Przyznaj aplikacji dostęp do jej lokalizacji pochodzenia**
 
-Jeśli wybierzesz to pole wyboru, aplikacja może wykorzystywać udziału witryny sieci Web lub serwera, na którym została opublikowana. Domyślnie ta opcja jest zaznaczona.
+Jeśli zaznaczysz to pole wyboru, aplikacja będzie mogła uzyskać dostęp do witryny sieci Web lub udziału serwera, na którym została opublikowana. Domyślnie ta opcja jest zaznaczona.
 
-**Debuguj aplikację tak, jakby zostały pobrane z następującego adresu URL**
+**Debuguj tę aplikację tak, jakby była pobrana z następującego adresu URL**
 
-Jeśli trzeba umożliwić aplikacji dostęp do witryny sieci Web lub serwera udziału odpowiadający **adres URL instalacji** określone na **Publikuj** wpisz tutaj tego adresu URL. Ta opcja jest dostępna tylko wtedy, gdy **przyznać aplikacji dostęp do witryny pochodzenia** jest zaznaczone.
+Jeśli musisz zezwolić aplikacji na dostęp do witryny sieci Web lub udziału serwera odpowiadającego adresowi **URL instalacji** określonym na stronie **publikowania** , wprowadź tutaj ten adres URL. Ta opcja jest dostępna tylko w przypadku wybrania opcji **Udziel dostępu aplikacji do jej lokalizacji pochodzenia** .
 
 ## <a name="see-also"></a>Zobacz także
 

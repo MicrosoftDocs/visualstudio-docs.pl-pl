@@ -1,6 +1,7 @@
 ---
-title: Rozwiązywanie problemów i twórz dzienniki na potrzeby problemów programu MSBuild
+title: Rozwiązywanie problemów i Tworzenie dzienników dla programu MSBuild
 ms.date: 06/27/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
@@ -14,38 +15,38 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c3db56ac7ea60ce88beae6698c974ac91373ed00
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518239"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461482"
 ---
-# <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Rozwiązywanie problemów i twórz dzienniki na potrzeby problemów programu MSBuild
+# <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Rozwiązywanie problemów i Tworzenie dzienników dla programu MSBuild
 
-Poniższe procedury ułatwia diagnozowanie problemów kompilacji w projekcie programu Visual Studio, a jeśli to konieczne, tworzy plik dziennika, aby wysłać do firmy Microsoft w celu zbadania problemu.
+Poniższe procedury mogą pomóc zdiagnozować problemy z kompilacją w projekcie programu Visual Studio i w razie potrzeby utworzyć dziennik do wysłania do firmy Microsoft w celu zbadania problemu.
 
-## <a name="a-property-value-is-ignored"></a>Wartość właściwości jest ignorowane.
+## <a name="a-property-value-is-ignored"></a>Wartość właściwości jest ignorowana.
 
-Jeśli właściwość projektu wydaje się być równa określonej wartości, ale nie ma wpływu na kompilację, wykonaj następujące kroki:
+Jeśli właściwość projektu jest ustawiona na określoną wartość, ale nie ma wpływu na kompilację, wykonaj następujące kroki:
 
-1. Otwórz program Visual Studio wiersza polecenia dewelopera odpowiadający Twojej wersji programu Visual Studio.
-1. Uruchom następujące polecenie, po podstawieniu wartości dla ścieżka rozwiązania, konfiguracji i nazwa projektu:
+1. Otwórz wiersz polecenia dla deweloperów programu Visual Studio, który odnosi się do używanej wersji programu Visual Studio.
+1. Uruchom następujące polecenie po podpisaniu wartości dla ścieżki rozwiązania, konfiguracji i nazwy projektu:
 
     ```cmd
     msbuild /p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /pp:out.xml MyProject.vcxproj
     ```
 
-    To polecenie tworzy plik projektu msbuild "wstępnie przetworzony" (out.xml). Możesz wyszukiwać tego pliku dla konkretnej właściwości zobaczyć, w którym jest zdefiniowana.
+    To polecenie tworzy "wstępnie przetworzony plik projektu programu MSBuild (out. xml). Możesz wyszukać ten plik pod kątem konkretnej właściwości, aby zobaczyć, gdzie jest zdefiniowana.
 
-Ostatnia definicja właściwości jest zużywa kompilacji. Jeśli właściwość jest ustawiona, dwa razy, druga wartość zastępuje pierwszy. Program MSBuild oblicza również, projekt w kilku przebiegów:
+Ostatnią definicją właściwości jest to, czego używa kompilacja. Jeśli właściwość jest ustawiona dwukrotnie, druga wartość zastępuje pierwszy. Ponadto MSBuild ocenia projekt w kilku przebiegach:
 
 - PropertyGroups i Importy
 - ItemDefinitionGroups
 - ItemGroups
 - Obiekty docelowe
 
-W związku z tym podane w następującej kolejności:
+W związku z tym w następującej kolejności:
 
 ```xml
 <PropertyGroup>
@@ -64,11 +65,11 @@ W związku z tym podane w następującej kolejności:
 </PropertyGroup>
 ```
 
-Wartość "MyMetadata" dla elementu "Mójplik.txt" zostaną ocenione "B" podczas kompilacji (nie "A" i nie jest pusty)
+Wartość "metadanych" elementu "Webfile. txt" zostanie oceniona jako "B" podczas kompilacji (nie "A", a nie puste)
 
-## <a name="incremental-build-is-building-more-than-it-should"></a>Tworzy więcej niż powinien kompilacja przyrostowa
+## <a name="incremental-build-is-building-more-than-it-should"></a>Kompilacja przyrostowa kompiluje więcej niż powinien
 
-Jeśli program MSBuild jest niepotrzebnie ponownie skompilować projektu lub elementu projektu, tworzy plik dziennika kompilacji szczegółowe lub binarne. Można przeszukiwać dziennik dla pliku, który został skompilowany lub niepotrzebnie skompilowany. Dane wyjściowe wyglądają następująco:
+Jeśli program MSBuild niepotrzebnie ponownie kompiluje projekt lub element projektu, Utwórz szczegółowy lub binarny dziennik kompilacji. Możesz wyszukać w dzienniku plik, który został zbudowany lub skompilowany niepotrzebnie. Dane wyjściowe wyglądają następująco:
 
 ```output
   Task "CL"
@@ -88,7 +89,7 @@ Jeśli program MSBuild jest niepotrzebnie ponownie skompilować projektu lub ele
   Debug\Project1.tlog\CL.write.1.tlog
 ```
 
-Jeśli tworzysz w środowisku IDE programu Visual Studio (przy użyciu szczegółowych danych wyjściowych okna poziom szczegółowości), **okno danych wyjściowych** Wyświetla przyczyny, dlaczego każdy projekt jest nieaktualny:
+W przypadku kompilowania w środowisku IDE programu Visual Studio (ze szczegółowym ustawieniem szczegółowości okna danych wyjściowych) **okno dane wyjściowe** Wyświetla przyczynę nieaktualności poszczególnych projektów:
 
 ```output
 1>------ Up-To-Date check: Project: Project1, Configuration: Debug Win32 ------
@@ -96,10 +97,10 @@ Jeśli tworzysz w środowisku IDE programu Visual Studio (przy użyciu szczegó�
 1>Project is not up-to-date: build input 'f:\test\project1\project1\project1.h' was modified after the last build finished.
 ```
 
-## <a name="create-a-binary-msbuild-log"></a>Tworzy plik dziennika msbuild binarne
+## <a name="create-a-binary-msbuild-log"></a>Tworzenie binarnego dziennika programu MSBuild
 
 1. Otwórz wiersz polecenia dla deweloperów dla używanej wersji programu Visual Studio
-1. W wierszu polecenia Uruchom jedno z następujących poleceń. (Pamiętaj, aby użyć rzeczywistych wartości projektu i konfiguracji.):
+1. W wierszu polecenia Uruchom jedno z następujących poleceń. (Należy pamiętać, aby użyć rzeczywistego projektu i wartości konfiguracji):
 
     ```cmd
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
@@ -111,16 +112,16 @@ Jeśli tworzysz w środowisku IDE programu Visual Studio (przy użyciu szczegó�
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
     ```
 
-Plik Msbuild.binlog zostanie utworzony w katalogu, w którym uruchomiono program MSBuild z. Można przeglądać i przeszukiwać je za pomocą [ze strukturą Podgląd dziennika Msbuild](http://www.msbuildlog.com/).
+Plik MSBuild. binlog zostanie utworzony w katalogu, w którym uruchomiono program MSBuild. Można je wyświetlić i przeszukać przy użyciu [podglądu dzienników struktury programu MSBuild](http://www.msbuildlog.com/).
 
 ## <a name="create-a-detailed-log"></a>Tworzenie szczegółowego dziennika
 
-1. W menu głównym programu Visual Studio, przejdź do **narzędzia** > **opcje** > **projekty i rozwiązania** >**kompilacji i uruchom**.
-1. Ustaw **poziom szczegółowości kompilacji projektu programu Msbuild** do **szczegółowe** w obu polach kombi. Formanty górnej jeden kompilacja poziom szczegółowości w **okno danych wyjściowych** i drugi określa poziom szczegółowości w \<projectname\>pliku log, który jest tworzony w katalogu pośrednim każdego projektu podczas Kompilacja.
-1. Z wiersza polecenia dla deweloperów programu Visual Studio wprowadź jedną z tych poleceń, zastępując rzeczywistych wartości ścieżki i konfiguracji:
+1. Z menu głównego programu Visual Studio wybierz kolejno pozycje **Narzędzia** > **Opcje** > **projekty i rozwiązania** >**kompilacja i uruchomienie**.
+1. Ustaw **poziom szczegółowości kompilacji projektu programu MSBuild** na **szczegółowy** w obu polach kombi. Kontrolka Top 1 kompiluje poziom szczegółowości w **okno dane wyjściowe** , a druga kontrola w \<pliku ProjectName\>. log, który jest tworzony w katalogu pośrednim każdego projektu, podczas kompilacji.
+2. W wierszu polecenia programu Visual Studio Developer wprowadź jedno z tych poleceń, zastępując rzeczywistą ścieżkę i wartości konfiguracji:
 
     ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln 
+    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
     lub
@@ -129,4 +130,4 @@ Plik Msbuild.binlog zostanie utworzony w katalogu, w którym uruchomiono program
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /fl MyProject.vcxproj
     ```
 
-    Plik Msbuild.log zostanie utworzony w katalogu, w którym uruchomiono program msbuild z.
+    Plik MSBuild. log zostanie utworzony w katalogu, w którym uruchomiono program MSBuild.

@@ -1,5 +1,6 @@
 ---
-title: Konwertuj pętlę foreach na LINQ
+title: Konwertuj pętlę Foreach na LINQ
+descritpion: Convert any foreach loop that uses an IEnumerable to a LINQ query or a LINQ call form (also known as a LINQ method).
 ms.date: 02/20/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,43 +10,43 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: baa1f32bb981e6d244555baef2a00d03933cdd6c
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531845"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483723"
 ---
-# <a name="convert-a-foreach-loop-to-linq"></a>Konwertuj pętlę foreach na LINQ
+# <a name="convert-a-foreach-loop-to-linq"></a>Konwertuj pętlę Foreach na LINQ
 
 Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 
-**Co:** Pozwala łatwo przekształcać swoje *foreach* pętli, która korzysta z elementu IEnumerable zapytania LINQ lub formularz rozmowy LINQ (znany także jako metoda LINQ).
+**Whatman** Pozwala łatwo skonwertować pętlę *foreach* , która używa interfejsu IEnumerable do zapytania LINQ lub formularza wywołania LINQ (znanego również jako metoda LINQ).
 
-**Kiedy:** Pętla foreach, która używa elementu IEnumerable, i chcesz, aby tej pętli do odczytu jako zapytania LINQ.
+**Czasie** Masz pętlę Foreach, która używa interfejsu IEnumerable, i chcesz, aby ta pętla była odczytywana jako zapytanie LINQ.
 
-**Dlaczego:** Wolisz używać składni LINQ, zamiast pętli foreach. [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) wykonuje zapytanie w języku najwyższej jakości konstruowania w C#. LINQ można zmniejszyć ilość kodu w pliku, uczynienie go łatwiejszym do odczytywania i zezwolić na różnych źródeł danych mają podobne wzorców wyrażenia zapytania.
+**Zalet** Wolisz używać składni LINQ zamiast pętli Foreach. [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) wykonuje zapytanie w konstrukcji języka pierwszej klasy w C#. LINQ może zmniejszyć ilość kodu w pliku, ułatwić odczytywanie kodu i zezwalanie innym źródłom danych na podobne wzorce wyrażeń zapytań.
 
 > [!NOTE]
-> Składni LINQ to zazwyczaj mniej wydajne niż pętli foreach. Warto wiedzieć, wszelkie kosztem wydajności, który może wystąpić, gdy używasz LINQ, można zwiększyć czytelność kodu.
+> Składnia LINQ jest zwykle mniej wydajna niż Pętla foreach. Warto wiedzieć, jakie wady wydajności mogą wystąpić podczas korzystania z programu LINQ w celu poprawienia czytelności kodu.
 
-## <a name="convert-a-foreach-loop-to-linq-refactoring"></a>Konwertuj pętlę foreach na refaktoryzacji LINQ
+## <a name="convert-a-foreach-loop-to-linq-refactoring"></a>Konwertuj pętlę Foreach na refaktoryzację LINQ
 
-1. Umieść kursor w `foreach` — słowo kluczowe.
+1. Umieść kursor w `foreach` słowie kluczowym.
 
-    ![Instrukcja foreach przy użyciu interfejsu IEnumerable — przykład](media/convert-foreach-to-LINQ.png)
+    ![Foreach przy użyciu przykładu interfejsu IEnumerable](media/convert-foreach-to-LINQ.png)
 
-2. Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+2. Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
 
-   ![Konwertuj na przykład menu LINQ](media/convert-foreach-to-LINQ-codefix.png)
+   ![Przykład konwersji do menu LINQ](media/convert-foreach-to-LINQ-codefix.png)
 
-3. Wybierz **przekonwertować LINQ** lub **przekonwertować Linq (wywołanie formularz)**.
+3. Wybierz pozycję **Konwertuj na LINQ** lub **Konwertuj na LINQ (formularz wywołania)** .
 
-   ![Przykład wyniku zapytania LINQ](media/convert-foreach-to-LINQ-result.png)
+   ![Przykładowy wynik zapytania LINQ](media/convert-foreach-to-LINQ-result.png)
 
-   ![Przykładowy wynik formularza wywołanie LINQ](media/convert-foreach-to-LINQ-callform-result.png)
+   ![Przykład wyniku formularza wywołania LINQ](media/convert-foreach-to-LINQ-callform-result.png)
 
 ### <a name="sample-code"></a>Przykładowy kod
 

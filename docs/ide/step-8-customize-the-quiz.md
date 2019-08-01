@@ -1,33 +1,46 @@
 ---
-title: Krok 8. Dostosowywanie kwizu
+title: Krok 8. Dostosowywanie testu
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e4ecd650b931fe5d79ca4617022fba8577fbd39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1868cd30cc41187ac995e71ee86d81dd0fb83d5a
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996242"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416466"
 ---
-# <a name="step-8-customize-the-quiz"></a>Krok 8. Dostosowywanie kwizu
-W ostatniej części tego samouczka dowiesz się o kilka sposobów na dostosowywanie kwizu i rozszerzają co już znasz. Na przykład zastanów się, jak program stwarza problemy dzielenia losowych, w których odpowiedź jest nigdy nie ułamek. Aby dowiedzieć się więcej, należy wyłączyć `timeLabel` kontrolować różne kolory i przypisz quizu wskazówką.
+# <a name="step-8-customize-the-quiz"></a>Krok 8. Dostosowywanie testu
+W ostatniej części samouczka zapoznajesz się z innymi sposobami dostosowywania quizu i rozwinięcia tego, co już znasz. Na przykład należy zastanowić się, jak program tworzy losowe problemy dotyczące dzielenia, dla których odpowiedź nigdy nie jest częścią. Aby dowiedzieć się więcej, `timeLabel` Zmień kolor kontrolki na inny i nadaj wskazówkę quizu.
 
-## <a name="to-customize-the-quiz"></a>Dostosowywanie kwizu
+## <a name="to-customize-the-quiz"></a>Aby dostosować Quiz
 
-- Kiedy tylko pięć sekund pozostają w quizie, Włącz **timeLabel** kontrolować red przez ustawienie jego **BackColor** właściwości (`timeLabel.BackColor = Color.Red;`). Resetuj kolor po umieszczeniu quizu.
+- Gdy tylko pięć sekund pozostanie w quizie, Zmień wartość kontrolki **timeLabel** na czerwony, ustawiając jej właściwość **BackColor**
 
-- Daj quizu wskazówkę, odtwarzanie dźwięku w momencie poprawną odpowiedź do <xref:System.Windows.Forms.NumericUpDown> kontroli. (Należy napisać program obsługi zdarzeń dla każdego formantu <xref:System.Windows.Forms.NumericUpDown.ValueChanged> zdarzenie, które są generowane w każdym przypadku, gdy osoba wypełniająca quiz zmienia wartość kontrolki.)
+```csharp
+timeLabel.BackColor = Color.Red;
+```
+
+```vb
+timeLabel.BackColor = Color.Red
+```
+
+Zresetuj kolor, gdy quiz jest ustawiony na wartość.
+
+- Nadaj quizowi wskazówkę, odtwarzając dźwięk po wprowadzeniu odpowiedniej odpowiedzi do <xref:System.Windows.Forms.NumericUpDown> kontrolki. (Należy napisać procedurę obsługi zdarzeń dla każdego <xref:System.Windows.Forms.NumericUpDown.ValueChanged> zdarzenia kontrolki, które jest wyzwalane za każdym razem, gdy osoba przyjmująca Quiz zmieni wartość kontrolki).
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby pobrać pełną wersję quizu, zobacz [przykładowy samouczek quiz matematyczny pełną](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+- Aby pobrać kompletną wersję quizu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
-- Aby przejść do następnego samouczka, zobacz [Tutorial 3: Utwórz pasujący obiekt typu gier](../ide/tutorial-3-create-a-matching-game.md).
+- Aby przejść do następnego samouczka, zobacz [samouczek 3: Utwórz pasującą grę](../ide/tutorial-3-create-a-matching-game.md).
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [kroku 7: Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 7: Dodawanie problemów](../ide/step-7-add-multiplication-and-division-problems.md)mnożenia i dzielenia.

@@ -1,82 +1,43 @@
 ---
-title: Obowiązki administratora | Portal Marketplace programu Visual Studio
+title: Obowiązki administratora | Visual Studio Marketplace
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 03/13/2018
+ms.author: lank
+manager: lank
+ms.date: 07/20/2019
 ms.topic: conceptual
-description: Więcej informacji na temat obowiązków administratorów subskrypcji.
-ms.openlocfilehash: 3930717252771721cb3f15d7ecaa8dda1810fa85
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Dowiedz się więcej na temat obowiązków administratorów subskrypcji.
+ms.openlocfilehash: eb5a557d19aafdd36ccf175ec4fc37e482091f80
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250407"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415614"
 ---
-# <a name="overview-of-administrator-responsibilities"></a>Omówienie obowiązki administratora
-Jako administrator możesz mieć możliwość zarządzania subskrypcjami dla Twojej organizacji.  Rola administratora są obowiązków, aby upewnić się, że subskrypcje są zarządzane zgodnie z postanowieniami licencyjnymi. W tym artykule opisano obowiązki, korzyści i ograniczenia dotyczące roli administratora.
+# <a name="overview-of-administrator-responsibilities"></a>Przegląd obowiązków administracyjnych
+Jako administrator możesz zarządzać subskrypcjami dla swojej organizacji.  Rola administratora przenosi również obowiązki, aby upewnić się, że subskrypcje są zarządzane zgodnie z postanowieniami licencyjnymi. W tym artykule opisano obowiązki, korzyści i ograniczenia roli administratora.
 
-## <a name="roles--responsibilities"></a>Role i obowiązki
-Administrator programu Visual Studio ma cztery obowiązki klucza:
+## <a name="roles--responsibilities"></a>Role & obowiązki
+Administrator programu Visual Studio ma cztery kluczowe obowiązki:
 
-1. **Dowiedz się, korzyści i ograniczenia subskrypcji programu Visual Studio.** Poprawnie opis korzyści można umożliwiają zmniejszenie wydatków na sprzęt, korzystając z usług w chmurze i zmniejszyć koszty oprogramowania z licencjami na użytkownika w środowiskach produkcji wstępnej. 
-2. **Przypisywanie subskrypcji programu Visual Studio do określonych, o nazwie osoby i wsparcia użycia.** Twoja Umowa wymaga, że subskrypcje programu Visual Studio można przypisać do określonych, nazwanych użytkowników indywidualnych. Należy wykonać dalsze czynności z Twojej przypisanych użytkowników indywidualnych, aby zapewnić dostęp i w pełni korzystać z zalet dostępnych w ramach subskrypcji programu Visual Studio.
-3. **Dokładnego spisu w środowisku produkcji wstępnej.** Jest to istotne, aby upewnić się, że wszyscy użytkownicy, którzy współpracują z programu Visual Studio, licencjonowane oprogramowanie są odpowiednio licencjonowane własnej subskrypcji programu Visual Studio. 
-4. **Śledź zmiany przypisania użytkownika i uzyskiwanie dodatkowych licencji zgodnie z harmonogramem.** Microsoft wolumin Licencjonowania umowy i umowy MPSA zapewniają większą elastyczność w sposób używania i przypisywanie subskrypcji programu Visual Studio. W zamian powinny śledzić zmiany do użycia oprogramowania i przypisań użytkowników oraz przetwarzać zamówienia dla dodatkowych licencji zgodnie z harmonogramem, opisanych w umowie.
+1. **Poznaj korzyści i ograniczenia dotyczące subskrypcji programu Visual Studio.** Prawidłowo zrozumienie korzyści może umożliwić zredukowanie kosztów sprzętu przy użyciu usług Cloud Services i zmniejszenie kosztów oprogramowania z licencjami na użytkownika dla środowisk przedprodukcyjnych. 
+2. **Przypisywanie subskrypcji programu Visual Studio do określonych, nazwanych osób i zachęcanie do użycia.** Kontrakt wymaga, aby subskrypcje programu Visual Studio były przypisane do określonych, nazwanych użytkowników. Zapoznaj się z przypisanymi osobami, aby upewnić się, że uzyskują dostęp i w pełni korzystaj z korzyści oferowanych w ramach subskrypcji programu Visual Studio.
+3. **Dokładny spis środowiska przedprodukcyjnego.** Jest to niezbędne do zapewnienia, że wszyscy użytkownicy, którzy współpracują z programem Visual Studio — licencjonowane oprogramowanie, mają odpowiednie licencje na swoją własną subskrypcję programu Visual Studio. 
+4. **Śledzenie zmian przypisań użytkowników i uzyskiwanie dodatkowych licencji zgodnie z harmonogramem.** Umowy licencjonowania zbiorowego firmy Microsoft (VL) i MPSA zapewniają elastyczność w zakresie używania i przypisywania subskrypcji programu Visual Studio. W przypadku usługi Return należy śledzić zmiany użycia oprogramowania i przypisań użytkowników oraz zlecenia przetwarzania dla dodatkowych licencji zgodnie z harmonogramem przedstawionym w umowie.  Aby zapewnić tę odpowiedzialność, raport o maksymalnym [użyciu](maximum-usage.md) można uruchomić w portalu administracyjnym Visual Studio Subscription. 
 
 ## <a name="benefits-and-limitations"></a>Zalety i ograniczenia
-Subskrypcje programu Visual Studio pozwalają rozwoju członkom zespołu zainstalować i korzystać z oprogramowania do projektowania, rozwoju, testowania, oceny i pokazują innego oprogramowania. Oprogramowania Visual Studio subskrypcji nie ma licencji w środowiskach produkcyjnych.
+Subskrypcje programu Visual Studio umożliwiają członkom zespołu deweloperów Instalowanie i używanie oprogramowania do projektowania, opracowywania, testowania, analizowania i prezentowania innego oprogramowania. Oprogramowanie subskrypcji programu Visual Studio nie jest licencjonowane w środowiskach produkcyjnych.
 
-|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                                          |                         |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Licencjonowanie oparte na użytkownika                     | Platformy MSDN i wszystkie poziomy subskrypcji programu Visual Studio są licencjonowane na poszczególnych użytkowników. Każdy członek zespołu rozwoju będą wchodzić w interakcje (instalowania, konfigurowania i uzyskać dostęp) przy użyciu oprogramowania dołączone do tych produktów i usług wymaga własnej subskrypcji programu Visual Studio.                                                                                                                                                                                                                                                                                                                                  |
-| Nieograniczone instalacjami                  | Każdy użytkownik mający licencję może zainstalować użyć oprogramowania na dowolnej liczbie urządzeń do projektowania, rozwoju, testowania, oceny i pokazują oprogramowania. Wyjątkiem jest Microsoft Office, która ma licencję na jednym pulpicie. Visual Studio licencjonowane oprogramowanie można instalować i używane w pracy, strona główna, szkoły i na urządzeniach w siedzibie klienta lub na dedykowanym sprzęcie hostowana przez inną firmę.                                                                                                                                                                                                                                  |
-| Nie jest przeznaczona dla środowisk produkcyjnych | Oprogramowania subskrypcji Visual Studio nie ma licencji w środowiskach produkcyjnych, łącznie z dowolnym środowisku używane przez użytkowników końcowych przez więcej niż testy odbiorcze lub informacji zwrotnych dotyczących środowiska, nawiązywanie połączenia z produkcyjnej bazy danych, obsługa odzyskiwania po awarii lub Produkcja kopii zapasowej lub używanego w środowisku produkcyjnym podczas okresów nasilonej aktywności. Wyjątki od tej reguły zawierają określone korzyści do określonych poziomów subskrypcji, opisane w temacie [Visual Studio oficjalnym dokumencie dotyczącym licencjonowania](https://aka.ms/vslicensing).                                                                                            |
-| Ponowne przypisanie licencji                     | Gdy użytkownik opuści zespół i nie wymaga już licencję, może zmienić przypisanie licencji, po upływie 90 dni. Po ponownym przypisaniu licencji żadnych kluczy produktów, które były już używane będą nadal dostępne, ale nie zostaną zastąpione. Dla organizacji, które mają umowy Enterprise Agreement (EA) zostaną zresetowane wszystkie korzyści, które były używane przez oryginalnego użytkownika, takie jak szkolenie w witrynie Pluralsight.                                                                                                                                                                                                                                                 |
-| Wyjątek dla użytkowników końcowych                  | Na końcu projektów rozwoju oprogramowania użytkownicy końcowi zwykle przejrzeć aplikacji i określić, czy spełnia wymagane kryteria dla wersji. Ten proces jest nazywany akceptacji użytkownika, testy Akceptacyjne. Członkowie zespołu, takie jak sponsora biznesowych lub Menedżer produktu może działać jako serwery proxy dla użytkowników końcowych. Użytkownicy końcowi, którzy nie mają subskrypcji programu Visual Studio mogą uzyskiwać dostęp do oprogramowania dla UAT, gdy podczas korzystania z oprogramowania, w przeciwnym razie spełnia wszystkie Visual Studio postanowienia licencyjne. Jest to rzadkie, że ktoś którego podstawową rolą jest projektowania, opracowywania lub testowania oprogramowania również zakwalifikowanie jako użytkownik"end". |
+| Licencjonowanie na podstawie użytkownika                     | Platformy MSDN i wszystkie poziomy subskrypcji programu Visual Studio są licencjonowane na poszczególnych użytkowników. Każdy członek zespołu deweloperów, który będzie wchodzić w kontakt (Instalowanie, Konfigurowanie lub dostęp) do oprogramowania dołączonego do tych produktów i usług, wymaga własnej subskrypcji programu Visual Studio.                                                                                                                                                                                                                                                                                                                                  |
+| Instalacje nieograniczone                  | Każdy Licencjonowany Użytkownik może zainstalować oprogramowanie i korzystać z niego na dowolnej liczbie urządzeń, aby projektować, opracowywać, testować i prezentować oprogramowanie. Wyjątek jest Microsoft Office, który jest licencjonowany na jednym komputerze. Program Visual Studio — licencjonowane oprogramowanie może być instalowane i używane w pracy, w domu, w szkole i na urządzeniach w biurze klienta lub na dedykowanym sprzęcie hostowanym przez inną firmę.                                                                                                                                                                                                                                  |
+| Nie przeznaczone dla środowisk produkcyjnych | Oprogramowanie subskrypcji programu Visual Studio nie jest licencjonowane dla środowisk produkcyjnych, w tym wszystkich środowisk, do których użytkownicy końcowi uzyskują dostęp w środowisku produkcyjnym. Tworzenie kopii zapasowej produkcyjnej lub używanej do produkcji w trakcie szczytowych okresów działania. Wyjątki od tej usługi obejmują określone korzyści dotyczące pewnych poziomów subskrypcji, które opisano w dokumencie dotyczącym [licencjonowania programu Visual Studio](https://aka.ms/vslicensing).                                                                                            |
+| Ponowne przypisywanie licencji                     | Gdy użytkownik opuści zespół i nie będzie już wymagał licencji, można ponownie przypisać licencję po upływie 90 dni. Po ponownym przypisaniu licencji wszystkie klucze produktów, które były już używane, nadal będą dostępne, ale nie zostaną zastąpione. W przypadku organizacji z umowami Enterprise Agreement (EA) wszystkie korzyści, które były używane przez oryginalnego użytkownika, takie jak szkolenia Pluralsight, zostaną zresetowane.                                                                                                                                                                                                                                                 |
+| Wyjątek dla użytkowników końcowych                  | Na końcu projektu tworzenia oprogramowania użytkownicy końcowi zwykle przeglądają aplikację i określają, czy spełnia ona niezbędne kryteria wydania. Ten proces jest nazywany testowaniem akceptacji przez użytkownika (przeprowadzających). Członkowie zespołu, tacy jak sponsor biznesowy lub Menedżer produktu, mogą działać jako serwery proxy dla użytkowników końcowych. Użytkownicy końcowi, którzy nie mają subskrypcji programu Visual Studio, mogą uzyskać dostęp do oprogramowania dla programu przeprowadzających, jeśli w przeciwnym razie używanie oprogramowania jest zgodne ze wszystkimi postanowieniami licencyjnymi programu Visual Studio. Jest to rzadki, że ktoś, którego podstawową rolą jest projektowanie, opracowywanie lub testowanie oprogramowania, będzie również kwalifikować się jako "użytkownik końcowy". |
 
-## <a name="inventory-of-pre-production-environment"></a>Spis środowisko produkcji wstępnej
-Subskrypcje programu Visual Studio upraszcza zarządzanie zasobami przez zliczanie użytkowników, a nie urządzeń.
-
-Administratorzy usługi Visual Studio, należy przypisać subskrypcji programu Visual Studio do **określone, nazwanych użytkowników indywidualnych**. Konwencje nazewnictwa, takich jak Dev1, Dev2 lub Dev3 są **niedozwolone**.
-
-Oto kilka sposobów, aby uprościć tworzenie spisu w środowisku produkcji wstępnej:
-- Przejrzyj swoje przypisania użytkownika. Firma Microsoft udostępnia witryny sieci Web o nazwie [portalu administratora w usłudze Visual Studio](https://manage.visualstudio.com/) śledzi przydziały subskrypcji programu Visual Studio.
-- Użyj usługi Active Directory w środowisku lokalnym i w chmurze w do listy użytkowników. Zarządzanie dostępem użytkowników za pomocą usługi Active Directory może być możliwe do identyfikowania programowanie i testowanie użytkowników według ich członkostwa w katalogu.
-- Skorzystaj ze zautomatyzowanych narzędzi, systemów magazynowych. Również może być konieczne użycie narzędzia stanu zapasów oprogramowania, które ułatwiają zarządzanie zasobów oprogramowania i odróżnienia wstępne środowiska produkcyjne ze środowiska produkcyjnego z nich. Wielu klientów przy użyciu programu Microsoft System Center tworzy konwencji nazewnictwa, które ułatwiają Automatyzowanie tej części procesu spisu.
-- Uzyskaj pomoc dotyczącą ręcznego uzgadniania. Zarejestrować działu, aby ułatwić uzgadnianie użytkownikami projektowania i testowania przy użyciu środowiska tworzenia i testowania.
-
-## <a name="large-teams-and-external-contractors"></a>Duże zespoły i zewnętrznych wykonawców
-Administratorzy subskrypcji usługi Visual Studio jest odpowiedzialny za zapewnienie, że każdy użytkownik, który chcą korzystać z programu Visual Studio, licencjonowane oprogramowanie odpowiednio ma licencję za pomocą ich własnych subskrypcji programu Visual Studio.
-
-### <a name="internal-teams"></a>Zespoły wewnętrzne
-Zazwyczaj organizacjom nowoczesne oprogramowania obejmują zainteresowane strony z kilku grup. Identyfikacji kontaktów z każdej grupy, którzy mogą pomóc Ci śledzić użytkownika spisu i zmian.
-Każda organizacja jest inna, ale może zawierać listę typowych zespołów zajmujących się programowania:
-- Zespoły, inżynierii oprogramowania.
-- Zespoły biznesowe, w tym właściciele produktu i analitykom biznesowym.
-- Projektów zespołów zarządzania.
-- Zespoły jakości, w tym personel ds. kontroli jakości i testerów ręcznych.
-- Operacje IT, w tym przedprodukcyjnych i laboratorium zarządzających infrastrukturą.
-
-### <a name="external-contractors-and-partners"></a>Zewnętrznych wykonawców i partnerów
-Zewnętrznych wykonawców może być użycie licencji na nawiązanie połączenia ze środowiskiem licencję programu Visual Studio. Certyfikowani partnerzy firmy Microsoft może się pojawić kilka bezpłatnej subskrypcji programu Visual Studio do ich użytku wewnętrznego. Jednak te subskrypcje nie obejmują działania generowania przychodów, takie jak tworzenie niestandardowego oprogramowania dla klienta. Poproś partnerami, aby wysłać Ci certyfikowanych litery, która wyjaśnia licencji, które zaczynają i z nich mogą wymagać nabywania i wdrażania.
-
-## <a name="track-user-assignment-and-process-orders"></a>Śledzenie zamówień proces i przypisanie użytkownika
-Administratorzy subskrypcji usługi Visual Studio powinny śledzić użycie programu Visual Studio i przetwarzania zamówień składanych w dowolnym wzrost użycia zgodnie z harmonogramem, opisane w ich umowie licencjonowania zbiorowego lub Microsoft Products and umowy o świadczenie usług. Nowy portal administratora subskrypcji programu Visual Studio ma to uproszczona obsługa z przydatne tracker, wyświetlanie dostępnych i używanych licencji.
-
-### <a name="high-water-mark-of-usage"></a>Znacznik limitu górnego użycia
-**Zobowiązanie firmy do zakupu subskrypcji programu Visual Studio będą obowiązywać natychmiast, gdy:**
-- Licencja zostaje przypisana do użytkownika.
-- Użytkownik korzysta z oprogramowania Visual Studio.
-
-Sfinalizuj zakup zobowiązania jest określana przez **górnego limitu użycia**. Ten limit jest punkt wysokiej codzienne przypisania użytkownika lub użytkowników wchodzących w interakcję z oprogramowaniem Visual Studio, która kwota jest wyższa.
-
-1. Administratorzy subskrypcji usługi Visual Studio może zwiększyć górny limit użycia przez przypisywanie subskrypcji programu Visual Studio do osób.
-2. Administratorzy subskrypcji usługi Visual Studio może zmienić przypisanie subskrypcji od jednego abonenta, jeśli upłynęło 90 dni od czasu, oryginalnym przypisania. Aby uniknąć sztucznie górnego limitu, zawsze to zrobić, najpierw usunięcie istniejącej subskrypcji, a następnie dodanie nowego.
-3. Administratorzy subskrypcji usługi Visual Studio mogą zmienić poziom przypisana subskrypcja dla poszczególnych będzie stanowić spadek jedno przypisanie i zwiększenie w innym. Po zmniejszeniu subskrybenta przypisany poziom subskrypcji poszczególnych musisz natychmiast zaprzestać korzystania z i odinstalować wszystkie elementy, które znajduje się tylko w wyższego poziomu subskrypcji. 
-
-### <a name="cloud-subscriptions-open-license-or-open-value"></a>Subskrypcje w chmurze, licencji Open lub Open Value
-Może być przypisanie subskrypcji przy użyciu programu, np. subskrypcji Microsoft Cloud, Open License lub Open Value. Jeśli tak, musi przetwarzać zamówienia dla dodatkowych użytkowników w miesiącu, w którym użytkownicy (pracownicy lub zewnętrznych wykonawców) rozpocząć wchodzenie w interakcje z oprogramowaniem licencję programu Visual Studio.
-
-### <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise, MPSA i wybierz umowy
-Microsoft Enterprise Agreement (EA) i umowy MPSA Select Plus Agreement zapewniają większą elastyczność w sposób używania i licencji oprogramowania Visual Studio wraz z upływem czasu. Administratorzy usługi Visual Studio należy roczne True nakaz użycie licencji na oprogramowanie do górnego limitu użycia ustalone w okresie umowy.
+## <a name="next-steps"></a>Następne kroki
+Dowiedz się więcej o odpowiedzialności dla administratorów:
+- [Spis środowiska przedprodukcyjnego](admin-inventory.md)
+- [Zarządzaj dużymi zespołami i zewnętrznymi wykonawcami](manage-teams.md)
+- [Śledzenie przypisań użytkowników i zamówień procesów](assignments-orders.md)
+- Używanie [maksymalnego użycia](maximum-usage.md) do śledzenia zobowiązań zakupu

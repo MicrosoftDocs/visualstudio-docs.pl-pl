@@ -1,97 +1,100 @@
 ---
-title: Krok 2. Utwórz problem losowego dodawania
+title: Krok 2. Tworzenie zadania z dodawaniem losowych liczb
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8af04bc320201ad5f17613c850e0140eb2596b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430777"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416877"
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>Krok 2. Utwórz problem losowego dodawania
-W drugiej części tego samouczka należy quiz trudne, dodając zagadnienia matematyczne oparte na liczbach losowych. Możesz również utworzyć metodę, która nosi nazwę `StartTheQuiz()` i który wypełnia ona problemy i uruchamia minutnik. W dalszej części tego samouczka dodasz odejmowania, mnożenia i dzielenia problemów.
+# <a name="step-2-create-a-random-addition-problem"></a>Krok 2. Tworzenie zadania z dodawaniem losowych liczb
+W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie problemów matematycznych, które są oparte na liczbie losowej. Należy również utworzyć metodę o nazwie `StartTheQuiz()` i wypełniającą problemy i uruchamiając odliczanie czasomierza. W dalszej części tego samouczka dodasz problemy odejmowania, mnożenia i dzielenia.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu.
 
 ## <a name="to-create-a-random-addition-problem"></a>Aby utworzyć losowy problem dodawania
 
-1. W Projektancie formularza wybierz formularz (**Form1**).
+1. W projektancie formularzy wybierz formularz (**Form1**).
 
-2. Na pasku menu wybierz **widoku** > **kodu**.
+2. Na pasku menu wybierz polecenie **Wyświetl** > **kod**.
 
-     *Form1.cs* lub *Form1.vb* pojawia się, w zależności od języka programowania, którego używasz, dzięki czemu można wyświetlić kod związany z formularzem.
+     *Form1.cs* lub *Form1. vb* pojawia się w zależności od używanego języka programowania, aby można było wyświetlić kod związany z formularzem.
 
-3. Tworzenie <xref:System.Random> obiekt poprzez dodanie `new` instrukcji w górnej części kodu, podobnie do poniższego.
+3. Utwórz obiekt przez `new` dodanie instrukcji w górnej części kodu, tak jak poniżej. <xref:System.Random>
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
 
-     Zostały dodane do obiektu Random do formularza i nadano **randomizer**.
+     Do formularza został dodany losowy obiekt i nazwany się **losowo**obiekt.
 
-     `Random` jest znany jako obiekt. Prawdopodobnie słyszałeś już słowo, i Dowiedz się więcej na temat co to oznacza dla programowania w następnym samouczku. Teraz wystarczy pamiętać, że można użyć `new` instrukcji, aby utworzyć przyciski, etykiety, panele, okna Openfiledialog, Colordialog, SoundPlayer, Random i nawet formularze i te elementy są określane jako obiekty. Gdy uruchamiasz program, formularz zostaje uruchomiony, a kod związany z nim tworzy obiekt losowych i nadaje mu **randomizer**.
+     `Random`jest znany jako obiekt. Prawdopodobnie wysłuchuje ten wyraz wcześniej i dowiesz się więcej na temat tego, co oznacza programowanie w następnym samouczku. Na razie Pamiętaj, że możesz użyć `new` instrukcji, aby tworzyć przyciski, etykiety, panele, OpenFileDialogs, ColorDialog, SoundPlayer, losowo i nawet formularze, a te elementy są określane jako obiekty. Po uruchomieniu programu formularz jest uruchamiany, a związany z nim kod tworzy losowy obiekt i nazywa je **losowo**.
 
-     Wkrótce będziesz tworzyć metodę sprawdzania odpowiedzi, dlatego quiz musi używać zmiennych do przechowywania liczb losowych, który generuje dla każdego problemu. Zobacz [zmienne](/dotnet/visual-basic/programming-guide/language-features/variables/index) lub [typy](/dotnet/csharp/programming-guide/types/index). Aby prawidłowo używać zmiennych, musisz je zadeklarować, co oznacza utworzenie listy ich nazwy i typy danych.
+     Wkrótce utworzysz metodę w celu sprawdzenia odpowiedzi, więc quiz musi używać zmiennych do przechowywania liczb losowych generowanych dla każdego problemu. Zobacz [zmienne](/dotnet/visual-basic/programming-guide/language-features/variables/index) lub [typy](/dotnet/csharp/programming-guide/types/index). Aby prawidłowo używać zmiennych, należy je zadeklarować, co oznacza, że lista ich nazw i typów danych.
 
-4. Dodaj dwie zmienne liczby całkowitej do formularza i nazwij je **addend1** i **addend2**.
+4. Dodaj dwie zmienne całkowite do formularza i nadaj im nazwę **addend1** i **addend2**.
 
     > [!NOTE]
-    > Zmienną całkowitą jest znana jako int w języku C# lub liczba całkowita w języku Visual Basic. Tego typu zmienna przechowuje liczbę dodatnią lub ujemną od -2147483648 do 2147483647 i może przechowywać jedynie liczby całkowite, nie miejsca po przecinku.
+    > Zmienna typu Integer jest znana jako int in C# lub integer w Visual Basic. Ten rodzaj zmiennej przechowuje liczbę dodatnią lub ujemną od-2147483648 do 2147483647 i może przechowywać tylko liczby całkowite, nie dziesiętną.
 
-     Podobnej składni umożliwia dodawanie zmienna typu Liczba całkowita, jak dodać obiekt losowy, co ilustruje poniższy kod.
+     Używając podobnej składni, można dodać zmienną całkowitą w miarę dodawania losowego obiektu, jak pokazano w poniższym kodzie.
 
      [!code-csharp[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]
      [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]
 
-5. Dodaj metodę o nazwie `StartTheQuiz()` i który korzysta z obiektu Random <xref:System.Random.Next> metodę do pokazania liczb losowych w etykietach. `StartTheQuiz()` zostanie ostatecznie wypełni wszystkie problemy, a następnie uruchomi timer, więc Dodaj komentarz. Funkcja powinna wyglądać następująco.
+5. Dodaj metodę o nazwie `StartTheQuiz()` i, która używa <xref:System.Random.Next> metody losowego obiektu do wyświetlania liczb losowych w etykietach. `StartTheQuiz()`ostatecznie wprowadzi wszystkie problemy, a następnie uruchomi czasomierz, dodając komentarz. Funkcja powinna wyglądać następująco.
 
      [!code-csharp[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]
      [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]
 
-     Należy zauważyć, że po wprowadzeniu kropki (.) po `randomizer` w kodzie okno technologii IntelliSense otwiera i wyświetla wszystkie metody obiektu Random, które można wywoływać. Na przykład, IntelliSense wyświetla `Next()` metody w następujący sposób.
+     Zwróć uwagę, że po wprowadzeniu kropki (.) `randomizer` po wpisaniu w kodzie zostanie otwarte okno IntelliSense zawierające wszystkie metody losowego obiektu, które można wywołać. Na przykład technologia IntelliSense wyświetla listę `Next()` metody w następujący sposób.
 
-     ![Następna metoda](../ide/media/express_randomwhite.png) Next — metoda
+     ![Następna Metoda](../ide/media/express_randomwhite.png) Następna Metoda
 
-     Po wprowadzeniu kropkę po obiekcie, IntelliSense pokazuje listę członków obiektu, takie jak właściwości, metody i zdarzenia.
+     Po wprowadzeniu kropki po obiekcie funkcja IntelliSense wyświetla listę elementów członkowskich obiektu, takich jak właściwości, metody i zdarzenia.
 
     > [!NOTE]
-    > Kiedy używasz `Next()` metody z `Random` obiektu, na przykład gdy wywołujesz `randomizer.Next(50)`, otrzymujesz losową liczbę, która jest mniejsza niż 50 (od 0 do 49). W tym przykładzie jest wywoływana `randomizer.Next(51)`. Użyto 51 zamiast 50, aby dwie liczby losowe spowoduje dodanie do odpowiedzi, który jest z zakresu od 0 do 100. W przypadku przekazania 50 do `Next()` metody, wybiera ona numer od 0 do 49, więc najwyższa możliwa odpowiedź to 98, a nie 100. Po uruchomieniu pierwszych dwóch instrukcji w metodzie, wszystkich zmiennych dwie liczby całkowitej, **addend1** i **addend2**, zawiera losową liczbę z zakresu od 0 do 50. Ten zrzut ekranu pokazuje kod Visual C#, ale technologia IntelliSense działa tak samo dla języka Visual Basic.
+    > Gdy używasz `Next()` metody `Random` z obiektem, na przykład podczas wywoływania `randomizer.Next(50)`, otrzymasz liczbę losową o wartości mniejszej niż 50 (od 0 do 49). W tym przykładzie wywołano `randomizer.Next(51)`. Użyto 51, a nie 50, aby dwie liczby losowe dodali do odpowiedzi od 0 do 100. W przypadku przekazania 50 do `Next()` metody wybierana jest liczba od 0 do 49, więc największą możliwą odpowiedzią jest 98, nie 100. Po uruchomieniu pierwszych dwóch instrukcji w metodzie każda z dwóch zmiennych całkowitych, **addend1** i **addend2**, utrzymuje liczbę losową z zakresu od 0 do 50. Ten zrzut ekranu przedstawia C# kod wizualizacji, ale technologia IntelliSense działa tak samo jak w przypadku Visual Basic.
 
-     Przyjrzyj się bliżej tych instrukcji.
+     Zapoznaj się bliżej z tymi instrukcjami.
 
      [!code-csharp[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]
      [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]
 
-     Instrukcje ustawiają **tekstu** właściwości **plusLeftLabel** i **plusRightLabel** tak że wyświetlają one dwie liczby losowe. Należy użyć liczb całkowitych `ToString()` metodę, aby konwertować liczby na tekst. (W programowaniu ciąg oznacza tekst. Formanty etykiet wyświetlane tylko tekst, a nie liczby.
+     Instrukcje ustawiają właściwości **tekstu** **plusLeftLabel** i **plusRightLabel** , tak aby wyświetlały dwie liczby losowe. Aby przekonwertować liczby na tekst, `ToString()` należy użyć metody całkowitej. (W programowaniu ciąg oznacza tekst. Kontrolki etykiet wyświetlają tylko tekst, nie liczby.
 
-6. W oknie projektu kliknij dwukrotnie **Start** przycisku, lub wybierz go, a następnie wybierz **Enter** klucza.
+6. W oknie projektowania kliknij dwukrotnie przycisk **Start** lub wybierz go, a następnie wybierz klawisz **Enter** .
 
-     Gdy uczestnik quizu wybierze ten przycisk, quiz powinien się rozpocząć, a właśnie dodałeś program obsługi zdarzeń kliknięcie, aby zaimplementować to zachowanie.
+     Gdy użytkownik quizu wybierze ten przycisk, Quiz powinien zacząć pracę i po prostu dodał procedurę obsługi zdarzeń kliknięcia, aby zaimplementować to zachowanie.
 
 7. Dodaj dwie poniższe instrukcje.
 
      [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
      [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]
 
-     Pierwsza instrukcja wywołuje nową `StartTheQuiz()` metody. Druga instrukcja ustawia **włączone** właściwość **startButton** kontrolę **False** tak, aby osoba wypełniająca quiz nie może wybrać przycisku podczas quizu.
+     Pierwsza instrukcja wywołuje nową `StartTheQuiz()` metodę. Druga instrukcja ustawia właściwość **Enabled** formantu **startButton** na **wartość false** , aby nie można było wybrać przycisku w trakcie quizu.
 
-8. Zapisz swój kod, uruchom go, a następnie wybierz **Start** przycisku.
+8. Zapisz swój kod, uruchom go, a następnie wybierz przycisk **Start** .
 
-     Problem losowego dodawania pojawi się, jak pokazano na następującym rysunku.
+     Pojawia się losowy błąd dodawania, jak pokazano na poniższej ilustracji.
 
-     ![Problem losowego dodawania](../ide/media/express_additionproblem.png) losowy problem dodawania
+     ![Problem losowego](../ide/media/express_additionproblem.png) dodawania losowego problemu podczas dodawania
 
      W następnym kroku samouczka dodasz sumę.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 3: Dodawanie czasomierza odliczania](../ide/step-3-add-a-countdown-timer.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 3: Dodawanie czasomierza](../ide/step-3-add-a-countdown-timer.md)odliczania.
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Tworzenie projektu i dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Tworzenie projektu i Dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

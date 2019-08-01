@@ -5,31 +5,32 @@ ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
-author: gewarren
-ms.author: gewarren
+ms.technology: vs-ide-compile
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4675977872057010e4279f88739981505bf73e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be2f782d8dcdbf81ca2446a73ac7f13dea4f2ef9
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946874"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416769"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Instrukcje: Ustawianie wielu projektów startowych
 
-Program Visual Studio pozwala określić sposób więcej niż jeden projekt jest uruchamiany, gdy uruchamiasz debuger.
+Program Visual Studio umożliwia określenie, jak w momencie uruchamiania debugera ma być uruchamiany więcej niż jeden projekt.
 
 ## <a name="to-set-multiple-startup-projects"></a>Aby ustawić wiele projektów startowych
 
-1. W **Eksploratora rozwiązań**, wybierz rozwiązanie (najwyższy węzeł).
+1. W **Eksplorator rozwiązań**wybierz rozwiązanie (górny węzeł).
 
-2. Wybierz menu kontekstowe (kliknij prawym przyciskiem myszy) węzła rozwiązania, a następnie wybierz **właściwości**. **Strony właściwości rozwiązania** pojawi się okno dialogowe.
+2. Wybierz menu kontekstowe węzła rozwiązania (kliknij prawym przyciskiem myszy), a następnie wybierz polecenie **Właściwości**. Zostanie wyświetlone okno dialogowe **strony właściwości rozwiązania** .
 
-3. Rozwiń **wspólne właściwości** węzeł i wybierz polecenie **projekt startowy**.
+3. Rozwiń węzeł **wspólne właściwości** , a następnie wybierz **projekt startowy**.
 
-4. Wybierz **wiele projektów startowych** opcji i ustaw odpowiednie działania.
+4. Wybierz opcję **wiele projektów startowych** i ustaw odpowiednie akcje.
 
 ## <a name="see-also"></a>Zobacz także
 
