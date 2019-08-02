@@ -14,7 +14,7 @@
       href: ide/advanced-feature-overview.md
 - name: Instalacja
   items:
-    - name: Instalowanie programu Visual Studio
+    - name: Instalacja programu Visual Studio
       href: install/install-visual-studio.md
     - name: Instalowanie w trybie offline
       items:
@@ -123,7 +123,7 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Korzystanie z programu Visual Studio z poziomu maszyny wirtualnej platformy Azure
       href: install/using-visual-studio-vm.md
-    - name: Kontenery
+    - name: Containers
       items:
         - name: Instalowanie narzędzi do kompilacji w kontenerze
           href: install/build-tools-container.md
@@ -133,7 +133,7 @@
           href: install/build-tools-container-issues.md
     - name: Instalowanie Podglądu Pomocy
       href: help-viewer/installation.md
-- name: Przewodniki Szybki Start
+- name: Przewodniki Szybki start
   items:
     - name: Orientacja programu Visual Studio
       displayName: Feature tour
@@ -352,6 +352,8 @@
                     - name: Omówienie
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
+                    - name: Dodawanie kontroli pod kątem wartości null dla wszystkich parametrów
+                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Zmiana sygnatury metody
                       href: ide/reference/change-method-signature.md
                     - name: Konwertowanie typu anonimowego na klasę
@@ -398,7 +400,7 @@
                       href: ide/reference/regex-completion-through-intellisense.md
                     - name: Usuwanie nieosiągalnego kodu
                       href: ide/reference/remove-unreachable-code.md
-                    - name: Zmień nazwę
+                    - name: Zmiana nazwy
                       href: ide/reference/rename.md
                     - name: Sortowanie deklaracji using
                       href: ide/reference/sort-usings.md
@@ -724,7 +726,7 @@
               href: ide/how-to-unlock-visual-studio.md
     - name: Wydajność programu Visual Studio
       items:
-        - name: Optymalizacja wydajności
+        - name: Optymalizowanie wydajności
           href: ide/optimize-visual-studio-performance.md
         - name: Czas uruchamiania
           href: ide/optimize-visual-studio-startup-time.md
@@ -906,7 +908,7 @@
                   href: ide/reference/visual-basic-defaults-projects-options-dialog-box.md
                 - name: Ustawienia projektu VC++
                   href: ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
-                - name: Projekty internetowe
+                - name: Projekty sieci Web
                   href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Edytor tekstu
               items:
@@ -922,7 +924,7 @@
                       href: ide/reference/options-text-editor-all-languages-scroll-bars.md
                     - name: Karty
                       href: ide/reference/options-text-editor-all-languages-tabs.md
-                - name: Podstawowy
+                - name: Podstawowa
                   items:
                     - name: Zaawansowane
                       href: ide/reference/options-text-editor-basic-visual-basic.md
@@ -976,7 +978,7 @@
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: Zaznaczanie błędów
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: Projekt
+                    - name: Project
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:
@@ -998,7 +1000,7 @@
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: XAML Designer
               href: ide/reference/xaml-designer.md
-        - name: Okno wyniku
+        - name: Okno danych wyjściowych
           href: ide/reference/output-window.md
         - name: Właściwości projektu
           items:
@@ -1131,7 +1133,7 @@
           href: ide/reference/upgrade-devenv-exe.md
         - name: '-UseEnv (devenv.exe)'
           href: ide/reference/useenv-devenv-exe.md
-    - name: Zabezpieczenia
+    - name: Bezpieczeństwo
       items:
         - name: Tworzenie bezpiecznych aplikacji
           href: ide/securing-applications.md
@@ -1155,7 +1157,7 @@
               href: help-viewer/find-topics-index.md
             - name: Znajdowanie tematów w spisie treści
               href: help-viewer/find-topics-toc.md
-            - name: Wyszukaj
+            - name: Wyszukiwanie
               items:
                 - name: Wyszukiwanie tematów
                   href: help-viewer/find-topics.md
@@ -1178,7 +1180,7 @@
           href: ide/dotfuscator/install.md
         - name: Uaktualnianie programu Dotfuscator Community
           href: ide/dotfuscator/upgrades.md
-- name: Resources
+- name: Zasoby
   expanded: true
   items:
     - name: Co nowego w programie Visual Studio 2017
@@ -1191,7 +1193,7 @@
           href: /visualstudio/productinfo/release-rhythm/
         - name: Visual Studio 2017
           items:
-            - name: Informacje o bieżącej wersji
+            - name: Bieżące informacje o wersji
               href: /visualstudio/releasenotes/vs2017-relnotes/
             - name: Informacje o wersji zapoznawczej
               href: /visualstudio/releasenotes/vs2017-preview-relnotes/
@@ -1205,7 +1207,7 @@
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
         - name: Visual Studio 2019
           items:
-            - name: Informacje o bieżącej wersji
+            - name: Bieżące informacje o wersji
               href: /visualstudio/releases/2019/release-notes/
             - name: Informacje o wersji zapoznawczej
               href: /visualstudio/releases/2019/release-notes-preview/
