@@ -1,5 +1,5 @@
 ---
-title: Analiza kodu dla C i C++ — omówienie | Dokumentacja firmy Microsoft
+title: Analiza kodu dla języka CC++ — Omówienie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -22,34 +22,34 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698003"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740231"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu dla C/C++ — Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzie do analizy kodu C/C++ zawiera informacje dla deweloperów o możliwych wady kodu źródłowego języka C/C++. Typowe błędy kodowania zgłoszonej przez narzędzie obejmują przepełnienia buforów i pamięci surowej zainicjowane, wyłuskania wskaźnika o wartości null i przecieków pamięci i zasobów.  
+Narzędzie analityczneC++ c/Code zawiera informacje dla deweloperów o możliwych defektach w kodzie źródłowymC++ C/. Typowe błędy kodowania zgłoszone przez narzędzie obejmują przepełnienia buforów, niezainicjowaną pamięć, odwołania wskaźnika NULL oraz przecieki pamięci i zasobów.  
   
-## <a name="ide-integrated-development-environment-integration"></a>Integracja z IDE (zintegrowanym środowiskiem programistycznym)  
- Aby stał się naturalnym deweloperzy mogą korzystać z narzędzia do analizy, jego jest w pełni zintegrowana w ramach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Podczas procesu kompilacji wszelkie ostrzeżenia generowane dla kodu źródłowego są wyświetlane na liście błędów. Możesz przejść do kodu źródłowego, który spowodował ostrzeżenie, a można wyświetlić dodatkowe informacje na temat przyczyny oraz możliwe rozwiązania tego problemu.  
+## <a name="ide-integrated-development-environment-integration"></a>Integracja IDE (zintegrowane środowisko programistyczne)  
+ Aby ułatwić deweloperom korzystanie z narzędzia do analizy, jest w pełni zintegrowane w środowisku [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. W trakcie procesu kompilacji wszystkie ostrzeżenia wygenerowane dla kodu źródłowego pojawiają się w Lista błędów. Możesz przejść do kodu źródłowego, który spowodował ostrzeżenie, i można wyświetlić dodatkowe informacje o przyczynie problemu oraz ewentualnych rozwiązaniach.  
   
-## <a name="pragma-support"></a>#pragma pomocy technicznej  
- Deweloperzy mogą używać `#pragma` dyrektywy Traktuj ostrzeżenia jako błędy; Włącz lub wyłącz ostrzeżenia i pomijanie ostrzeżeń dla pojedynczych wierszy kodu. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie analizy kodu dla określonego języka C/C++ — ostrzeżenia](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a).  
+## <a name="pragma-support"></a>Obsługa #pragma  
+ Deweloperzy mogą używać `#pragma` dyrektywy do traktowania ostrzeżeń jako błędów, włączania lub wyłączania ostrzeżeń oraz pomijania ostrzeżeń dla poszczególnych wierszy kodu. Aby uzyskać więcej informacji, zobacz [jak: Włączać i wyłączać analizę kodu dlaC++ określonych](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a)ostrzeżeń C/Warning.  
   
 ## <a name="annotation-support"></a>Obsługa adnotacji  
- Adnotacje poprawić analizy kodu. Adnotacje zawierają dodatkowe informacje o warunkach wstępnych oraz po o parametrów funkcji i zwracanych typów. Aby uzyskać więcej informacji, zobacz [jak: Określanie dodatkowych informacji o kodzie za pomocą funkcji __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
+ Adnotacje poprawiają dokładność analizy kodu. Adnotacje zawierają dodatkowe informacje na temat parametrów funkcji i typów zwracanych. Aby uzyskać więcej informacji, zobacz [jak: Określ dodatkowe informacje o kodzie za pomocą __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
   
-## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Uruchom narzędzie do analizy jako część zasad ewidencjonowania  
- Można wymagać, że wszystkie źródła kodu zaewidencjonowania spełniały pewne zasady. W szczególności chcesz upewnić się, że analiza została uruchomiona jako krok najnowszych kompilacji, lokalne. Aby uzyskać więcej informacji na temat włączania zasad analizy kodu ewidencjonowania, zobacz [tworzyć i za pomocą zasad analizy kodu zaewidencjonowania](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
+## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Uruchom Narzędzie analizy jako część zasad ewidencjonowania  
+ Można wymagać, aby wszystkie operacje ewidencjonowania kodu źródłowego spełniały określone zasady. W szczególności chcesz upewnić się, że analiza została uruchomiona jako krok ostatniej kompilacji lokalnej. Aby uzyskać więcej informacji na temat włączania zasad zaewidencjonowania analizy kodu, zobacz [Tworzenie zasad ewidencjonowania analizy kodu i korzystanie](../code-quality/creating-and-using-code-analysis-check-in-policies.md) z nich  
   
-## <a name="team-build-integration"></a>Integracji kompilacji zespołu  
- Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie do analizy kodu jako krok z [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] procesu kompilacji. Aby uzyskać więcej informacji, zobacz [skompilować aplikację](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+## <a name="team-build-integration"></a>Integracja kompilacji zespołowej  
+ Możesz użyć zintegrowanych funkcji systemu kompilacji, aby uruchomić Narzędzie analizy kodu jako krok [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Kompilowanie aplikacji](/azure/devops/pipelines/index).  
   
 ## <a name="command-line-support"></a>Obsługa wiersza polecenia  
- Oprócz pełnej integracji w środowisku deweloperskim deweloperzy można także użyć narzędzia analizy z wiersza polecenia, jak pokazano w poniższym przykładzie:  
+ Oprócz pełnej integracji w środowisku programistycznym deweloperzy mogą również używać narzędzia do analizy z wiersza polecenia, jak pokazano w następującym przykładzie:  
   
  `C:\>cl /analyze Sample.cpp`

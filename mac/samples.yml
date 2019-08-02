@@ -1,0 +1,132 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Przykłady Visual Studio dla komputerów Mac
+metadata:
+  description: 'Przykładowe aplikacje, które współpracują z Visual Studio dla komputerów Mac.'
+  author: asb3993
+  ms.author: amburns
+  ms.date: 07/31/2019
+  ms.topic: sample
+abstract:
+  description: Przykładowe aplikacje i pokazy kodu platformy Xamarin ułatwiające rozpoczęcie kompilowania projektów przy użyciu Visual Studio dla komputerów Mac.
+sections:
+  - title: Xamarin.Forms
+    items:
+      - type: list
+        style: cards
+        className: cardsW
+        items:
+          - href: 'https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo/'
+            html: 'W tym przykładzie przedstawiono aplikację listy zadań do wykonania, która zapisuje dane w lokalnej bazie danych SQLite i uzyskuje dostęp do danych w tej bazie, utworzoną za pomocą zestawu narzędzi Xamarin.Forms.'
+            image:
+              src: media/samples/todo.png
+              href: 'https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo/'
+            title: Todo
+          - href: 'https://github.com/xamarinhq/app-myshoppe'
+            html: 'Pokazowa aplikacja, która umożliwia sprzedawcom śledzenie wyników sprzedaży, zarządzanie potencjalnymi klientami, wyświetlanie kontaktów, zarządzanie zamówieniami oraz przeglądanie katalogu produktów.'
+            image:
+              src: media/samples/myshoppe.png
+              href: 'https://github.com/xamarinhq/app-myshoppe'
+            title: My Shoppe
+          - href: 'https://github.com/xamarin/app-crm'
+            html: 'Pokazowa aplikacja, która umożliwia sprzedawcom śledzenie wyników sprzedaży, zarządzanie potencjalnymi klientami, wyświetlanie kontaktów, zarządzanie zamówieniami oraz przeglądanie katalogu produktów.'
+            image:
+              src: media/samples/crm.png
+              href: 'https://github.com/xamarin/app-crm'
+            title: Xamarin CRM
+  - title: Xamarin.Android
+    items:
+      - type: list
+        style: cards
+        className: cardsW
+        items:
+          - href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-googleio2014master/'
+            html: W przykładzie pokazano nowe interfejsy API języka Material Design wprowadzone w systemie Android Lollipop.
+            image:
+              src: media/samples/material-design.png
+              href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-googleio2014master/'
+            title: Material Design
+          - href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/googleplayservices/'
+            html: To rozwiązanie używa pakietu NuGet usług Google Play środowiska Xamarin w celu przedstawienia kilku sposobów korzystania z interfejsu API map.
+            image:
+              src: media/samples/gps.png
+              href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/googleplayservices/'
+            title: Usługi Google Play
+          - href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/userinterface-flashcardpager/'
+            html: 'W tym przykładzie przedstawiono sposób jednoczesnego użycia obiektów ViewPager i PagerTabStrip w celu zaimplementowania aplikacji, która przedstawia szereg problemów matematycznych na fiszkach.'
+            image:
+              src: media/samples/flash.png
+              href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/userinterface-flashcardpager/'
+            title: Flash Card Pager
+  - title: Xamarin.iOS
+    items:
+      - type: list
+        style: cards
+        className: cardsW
+        items:
+          - href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-arkitplacingobjects/'
+            html: Pokaz rzeczywistości rozszerzonej ARKit przedstawiający umieszczanie obiektów na wykrytych powierzchniach.
+            image:
+              src: media/samples/arkit.png
+              href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-arkitplacingobjects/'
+            title: ARKit (iOS 11)
+          - href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample/'
+            html: 'Nowe funkcje systemu iOS 11 w strukturze MapKit: grupowanie i rozdzielanie znaczników na podstawie poziomu powiększenia.'
+            image:
+              src: media/samples/mapkit.png
+              href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample/'
+            title: MapKit (iOS 11)
+          - href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-coremlazuremodel/'
+            html: Struktury Vision i CoreML systemu iOS 11 korzystające z modelu wyszkolonego przy użyciu usługi Azure Custom Vision Service.
+            image:
+              src: media/samples/coremlazure.png
+              href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-coremlazuremodel/'
+            title: Struktura CoreML i platforma Azure (iOS 11)
+  - title: Xamarin.Mac
+    items:
+      - type: list
+        style: cards
+        className: cardsW
+        items:
+          - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/hello-mac/'
+            html: Aplikacja Hello world ułatwiająca rozpoczęcie programowania dla komputerów Mac.
+            image:
+              src: media/samples/hellomac.png
+              href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/hello-mac/'
+            title: 'Witaj, Mac'
+          - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/maccontrols/'
+            html: Przykłady kontrolek interfejsu użytkownika aplikacji dla komputerów Mac.
+            image:
+              src: media/samples/controls.png
+              href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/maccontrols/'
+            title: MacControls
+          - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/macimages/'
+            html: Przykłady kontrolek interfejsu użytkownika aplikacji dla komputerów Mac.
+            image:
+              src: media/samples/images.png
+              href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/macimages/'
+            title: MacImages
+  - title: Wszystkie przykłady
+    items:
+      - type: list
+        style: cards
+        className: cardsW
+        items:
+          - href: 'https://docs.microsoft.com/samples/browse/?products=xamarin'
+            html: Pełny zestaw przykładowych aplikacji i pokazów kodu platformy Xamarin.
+            image:
+              src: media/samples/sample-download.svg
+              href: 'https://docs.microsoft.com/samples/browse/?products=xamarin'
+            title: Wszystkie przykłady środowiska Xamarin
+          - href: 'https://docs.microsoft.com/samples/browse/?products=aspnet-core'
+            html: Kompletny zestaw ASP.NET Core przykładowych aplikacji i pokazów kodu.
+            image:
+              src: media/samples/sample-download.svg
+              href: 'https://docs.microsoft.com/samples/browse/?products=aspnet-core'
+            title: Wszystkie przykłady ASP.NET Core
+          - href: 'https://docs.microsoft.com/samples/browse/?products=dotnet-core'
+            html: 'Kompletny zestaw przykładowych aplikacji i pokazów kodu platformy .NET Core. Należy zauważyć, że niektóre z tych przykładów mają wymagania specyficzne dla systemu Windows i dlatego nie zostaną uruchomione na Visual Studio dla komputerów Mac'
+            image:
+              src: media/samples/sample-download.svg
+              href: 'https://docs.microsoft.com/samples/browse/?products=dotnet-core'
+            title: Wszystkie przykłady dla platformy .NET Core

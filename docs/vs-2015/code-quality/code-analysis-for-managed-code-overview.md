@@ -1,5 +1,5 @@
 ---
-title: Analiza kodu dla zarządzanego kodu — omówienie | Dokumentacja firmy Microsoft
+title: Analiza kodu dla zarządzanego kodu — Omówienie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,34 +14,34 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5076ea34b1bcbd66239722bc8fb1a3edc4763162
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b4c22076a5f08b1b8f25722e5c3a5fef27b81b9e
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680617"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739987"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Analiza kodu dla zarządzanego kodu — Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje informacje o zestawach, takie jak naruszenia programowania i projektowania reguły określone w wytycznych projektowych programu Microsoft .NET Framework.  
+Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje informacje o zestawach, takie jak naruszenia reguł programowania i projektowania, które zostały określone w wytycznych dotyczących projektowania Microsoft .NET Framework.  
   
- Narzędzie do analizy reprezentuje kontrole wykonywane podczas analizy jako komunikaty ostrzegawcze. Komunikaty ostrzegawcze identyfikują wszystkie istotne błędy programowania i projektowania i gdy jest możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.  
+ Narzędzie do analizy reprezentuje kontrole wykonywane podczas analizy jako komunikaty ostrzegawcze. Komunikaty ostrzegawcze identyfikują wszelkie istotne problemy związane z programowaniem i projektowaniem oraz, gdy jest to możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.  
   
-## <a name="ide-integrated-development-environment-integration"></a>Integracja z IDE (zintegrowanym środowiskiem programistycznym)  
- Jako deweloper można uruchomić analizę kodu projektu automatycznie lub uruchomić ją ręcznie.  
+## <a name="ide-integrated-development-environment-integration"></a>Integracja IDE (zintegrowane środowisko programistyczne)  
+ Jako deweloper możesz automatycznie uruchomić analizę kodu w projekcie lub uruchomić ją ręcznie.  
   
- Aby uruchomić analizę kodu za każdym razem, tworzysz projekt, należy wybrać **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** na stronie właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Aby uruchomić analizę kodu przy każdej kompilacji projektu, zaznacz opcję **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** na stronie właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznej analizy](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)kodu.  
   
- Aby uruchomić analizę kodu ręcznie dla projektu, na **analizy** menu, kliknij przycisk **Uruchom analizę kodu dla**_ProjectName_. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Aby ręcznie uruchomić analizę kodu w projekcie, w menu **Analizuj** kliknij polecenie **Uruchom analizę kodu na**_ProjectName_. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznej analizy](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)kodu.  
   
 ## <a name="rule-sets"></a>Zestawy reguł  
- Reguły analizy kodu dla zarządzanego kodu są grupowane w *zestawów reguł*. Można użyć jednej standardowych zestawów reguł Microsoft lub można utworzyć niestandardowy zestaw reguł, aby spełnić szczególną potrzebę. Aby uzyskać więcej informacji, zobacz [przy użyciu zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).  
+ Reguły analizy kodu dla kodu zarządzanego są pogrupowane w *zestawy reguł*. Można użyć jednego z standardowych zestawów reguł firmy Microsoft lub można utworzyć niestandardowy zestaw reguł, aby spełnić konkretne potrzeby. Aby uzyskać więcej informacji, zobacz [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).  
   
-## <a name="in-source-suppression"></a>W pomijanie źródła  
- Często jest to użyteczne, aby wskazać, że ostrzeżenie nie ma zastosowania. Informuje dewelopera i inne osoby, które mogą później przejrzeć kod że ostrzeżenie zostało zbadane a następnie pominięte lub ignorowane.  
+## <a name="in-source-suppression"></a>W pominięciu źródła  
+ Często warto wskazać, że ostrzeżenie nie ma zastosowania. Informuje dewelopera i inne osoby, które mogą później przejrzeć kod, że ostrzeżenie zostało zbadane, a następnie pominięte lub zignorowane.  
   
- W pomijanie źródła ostrzeżeń, które jest implementowane za pomocą atrybutów niestandardowych. Aby pominąć ostrzeżenie, Dodaj atrybut `SuppressMessage` do kodu źródłowego, jak pokazano w poniższym przykładzie:  
+ W przypadku pominięcia źródła ostrzeżeń jest implementowana za poorednictwem atrybutów niestandardowych. Aby pominąć ostrzeżenie, Dodaj atrybut `SuppressMessage` do kodu źródłowego, jak pokazano w następującym przykładzie:  
   
  ```csharp
  [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -53,17 +53,17 @@ Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje in
   
  Aby uzyskać więcej informacji, zobacz [pomijanie ostrzeżeń przy użyciu atrybutu SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
   
-## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Uruchamianie analizy kodu jako części zasad ewidencjonowania  
- Jako organizacja można wymagać, aby wszystkie zaewidencjonowania spełniały pewne zasady. W szczególności chcesz upewnić się, że spełnione są następujące zasady:  
+## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Uruchom analizę kodu w ramach zasad ewidencjonowania  
+ Jako organizacja można wymagać, aby wszystkie zaewidencjonowania spełniały określone zasady. W szczególności chcesz upewnić się, że przestrzegasz następujących zasad:  
   
-- Nie było żadnych błędów kompilacji w kodzie, które zostały zaewidencjonowane.  
+- Brak błędów kompilacji w kodzie, który został zaewidencjonowany.  
   
 - Analiza kodu została uruchomiona jako część najnowszej kompilacji.  
   
-  Można to zrobić poprzez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu za pomocą zasad ewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Można to osiągnąć przez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [rozszerzanie jakości kodu za pomocą zasad ewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
-## <a name="team-build-integration"></a>Integracji kompilacji zespołu  
- Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie do analizy jako część procesu kompilacji. Aby uzyskać więcej informacji, zobacz [skompilować aplikację](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+## <a name="team-build-integration"></a>Integracja kompilacji zespołowej  
+ Możesz użyć zintegrowanych funkcji systemu kompilacji, aby uruchomić Narzędzie analizy jako część procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Kompilowanie aplikacji](/azure/devops/pipelines/index).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
