@@ -1,21 +1,21 @@
 ---
 title: Korzyść WhiteSource Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję usługi WhiteSource w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 99f6a74609b21fa7279113c97aabc9973782b7c1
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 4119e188a265660b805c1ce404cb909f600fb30a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681437"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787850"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource w subskrypcjach programu Visual Studio
 
-Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksowe raporty spisu i licencji dla wszystkich składników typu "open source" w kompilacji. Niektóre subskrypcje programu Visual Studio obejmują sześć miesięcy bezpłatnego dostępu.
+Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksowe raporty spisu i licencji dla wszystkich składników typu "open source" w kompilacji. 
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 
@@ -45,3 +45,5 @@ WhiteSource jest teraz dostępna bezpłatnie w Visual Studio Marketplace.
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
+## <a name="next-steps"></a>Następne kroki
+Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  Miesięczne środki na korzystanie z [platformy Azure](vs-azure.md)to osobista piaskownica do celów deweloperskich i testowych.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Informacje dla dostawców rozwiązań w chmurze dotyczące zakupu subskrypcji programu Visual Studio Cloud i zarządzania nimi dla klientów.
-ms.openlocfilehash: 57d54a14a9249c4ec792ce349076ba0ec77b4e15
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681120"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787744"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kup subskrypcje w chmurze programu Visual Studio dla klientów i zarządzaj nimi
 Partnerzy w programie [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) mogą kupować Visual Studio Enterprise i Visual Studio Professional subskrypcje w chmurze dla swoich klientów.
@@ -30,7 +30,6 @@ Musisz najpierw skonfigurować dzierżawcę klienta w centrum partnerskim i utwo
 Każda osoba z [dostępem właściciela lub](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) współautora do subskrypcji platformy Azure może zakupić subskrypcje programu Visual Studio.
 
 ## <a name="how-to-buy"></a>Jak kupić
-> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
 1. Zaloguj się do [Centrum partnerskiego firmy Microsoft](https://partnercenter.microsoft.com).
 0. Wybierz pozycję **klienci** i wybierz klienta, dla którego chcesz kupić.
@@ -50,7 +49,6 @@ Każda osoba z [dostępem właściciela lub](https://na01.safelinks.protection.o
 Po potwierdzeniu zakupu możesz wybrać pozycję **Zarządzaj** , aby przypisać subskrypcje użytkownikom końcowym klienta.  Możesz również uzyskać dostęp do portalu administracyjnego subskrypcji z Centrum partnerskiego, wybierając pozycję **Zarządzanie usługami**.  Poniżej znajdują się poniższe kroki lub wideo.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Jak zarządzać subskrypcjami w chmurze programu Visual Studio dla klienta
-> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
 1. Zaloguj się do [Centrum partnerskiego firmy Microsoft](https://partnercenter.microsoft.com).
 0. Wybierz pozycję **klienci** i nazwa klienta.
