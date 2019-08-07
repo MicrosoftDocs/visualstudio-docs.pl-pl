@@ -1,5 +1,6 @@
 ---
-title: Klawisze modyfikujące Pióro w programie Blend
+title: Klawisze modyfikujące pióro
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
@@ -8,35 +9,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2aa8515dbe444ea3968714400b751d661b2a81
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 7e68e06a371f039c7d08b56b89305b1fe932a54a
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820443"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822115"
 ---
-# <a name="pen-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące Pióro w programie Blend
-W poniższej tabeli przedstawiono skróty, które służy do modyfikowania ścieżki, podczas tworzenia go **pióra** narzędzie ![pióro](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Można również użyć **pióra** narzędzia, aby dodać lub usunąć punkty w istniejącej ścieżki lub połączyć dwa istniejące ścieżki.
+# <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Klawisze modyfikujące narzędzie pióra w Blend for Visual Studio
 
-|Do tej czynności|Zrób to|Wskaźnik|
+W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji ścieżki podczas tworzenia jej przy użyciu narzędzia ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png)pióra narzędzia pióra. Możesz również użyć narzędzia **pióro** , aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki.
+
+|Aby wykonać tę akcję|Zrób to|Przytrzymaj|
 | - |-------------|-------------|
-|Utwórz punkt można uruchomić odcinek prosty|Kliknij, aby utworzyć nowy punkt|![Utwórz punkt można uruchomić odcinek prosty](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Kursor pióra|
-|Utwórz punkt można uruchomić segmentu krzywej|Kliknij, aby utworzyć nowy punkt, a następnie przeciągnij, aby dopasować uchwytów przed zwolnieniem przycisku myszy|![Utwórz punkt można uruchomić segmentu krzywej](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Kursor pióra|
-|Dostosuj styczną ostatniego, bez ograniczenia smooth, dzięki czemu możesz podejmować ostry kąt|Kliknij, aby utworzyć nowy punkt, a następnie naciśnij klawisz **Alt** przed zwolnieniem przycisku myszy|![Dostosuj styczną ostatniego, bez ograniczenia smooth](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowania pióra|
-|Podział ostatniego tangens stycznej punktów końcowych działać niezależnie, dzięki czemu możesz podejmować ostry kąt|Kliknij, aby utworzyć nowy punkt, a następnie przytrzymaj naciśnięty **Alt** i przeciągnij przed zwolnieniem przycisku myszy|![Podziel ostatniego tangens tak, aby działać niezależnie i stycznej punktów końcowych](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowania pióra|
-|Przenieś stycznej punkt końcowy w całym nowy punkt w przyrostach co 15 stopni|Kliknij, aby utworzyć nowy punkt, a następnie przytrzymaj naciśnięty **Shift**+**Alt** i przeciągnij przed zwolnieniem przycisku myszy|![Przenieś stycznej punkt końcowy w całym nowy punkt w przyrostach co 15 stopni](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowania pióra|
-|Zmniejsz tangens na punkt końcowy do zerowej długości|Kliknij punkt końcowy|![Zmniejsz tangens na punkt końcowy do zerowej długości](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowania pióra|
-|Dodano nowy punkt do istniejącej ścieżki|Kliknij ścieżkę lokalizacji, w którym ma nowy punkt|![Dodano nowy punkt do istniejącej ścieżki](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> Wskaźnik insert pióra|
-|Usuwanie punktu ze ścieżki|Umieść kursor nad istniejącego punktu i kliknij przycisk|![Usuń punkt ze ścieżki](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Wskaźnik usuwania pióra|
-|Zamknij ścieżkę róg sharp|Kliknij punkt początkowy|![Zamknij ścieżkę z ostry kąt](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Zamknij kursor pióra|
-|Zamknij ścieżkę to krzywa w prawym górnym rogu|Kliknij punkt początkowy i przeciągnij, aby zmodyfikować uchwytu stycznej przed zwolnieniem przycisku myszy|![Zamknij ścieżkę to krzywa w prawym górnym rogu](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Zamknij kursor pióra|
-|Utwórz sharp rogu podczas dołączania dwie ścieżki|Wybierz dwie ścieżki, kliknij przycisk **pióra** narzędzia, kliknij punkt końcowy w jednej ze ścieżek a następnie kliknij punkt końcowy w innej ścieżki|![Utwórz sharp rogu podczas dołączania dwie ścieżki](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Wskaźnik sprzężenia pióra|
-|Utwórz smooth rogu podczas dołączania dwie ścieżki|Wybierz dwie ścieżki, kliknij przycisk **pióra** narzędzia, kliknij punkt końcowy w jednej ze ścieżek a następnie przeciągnij punkt końcowy w innej ścieżki|![Utwórz smooth rogu podczas dołączania dwie ścieżki](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Wskaźnik sprzężenia pióra|
-|Utwórz nową ścieżkę|Naciśnij i przytrzymaj **Ctrl** i kliknij poza Poprzednia ścieżka Aby zatrzymać Dodawanie punktów do poprzedniego ścieżki, a następnie kliknij lub przeciągnij, w której ma nową ścieżkę, aby rozpocząć|![Utwórz nową ścieżkę](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Wskaźnik start pióra|
+|Tworzenie punktu do uruchamiania segmentu linii prostej|Kliknij, aby utworzyć nowy punkt|![Tworzenie punktu do uruchamiania segmentu linii prostej](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Wskaźnik pióra|
+|Tworzenie punktu do uruchamiania segmentu linii zakrzywionych|Kliknij, aby utworzyć nowy punkt, a następnie przeciągnij, aby dostosować uchwyty styczne przed zwolnieniem przycisku myszy|![Tworzenie punktu do uruchamiania segmentu linii zakrzywionych](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Wskaźnik pióra|
+|Dostosuj ostatni tangens bez wygładzania, co pozwala na tworzenie ostrych rogów|Kliknij, aby utworzyć nowy punkt, a następnie naciśnij klawisz **Alt** przed zwolnieniem przycisku myszy|![Dostosuj ostatni tangens bez wygładzania](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowuje pióro|
+|Podziel ostatni tangens, tak aby punkty końcowe styczne działały niezależnie, co pozwala na tworzenie ostrych rogów|Kliknij, aby utworzyć nowy punkt, a następnie przytrzymaj klawisz **Alt** i przeciągnij przed zwolnieniem przycisku myszy|![Podziel ostatni tangens, tak aby punkty końcowe styczne działały niezależnie](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowuje pióro|
+|Przenieś punkt końcowy styczności wokół nowego punktu w przyrostach 15 stopni|Kliknij, aby utworzyć nowy punkt, a następnie przytrzymaj klawisz **SHIFT**+**Alt** i przeciągnij przed zwolnieniem przycisku myszy|![Przenieś punkt końcowy styczności wokół nowego punktu w przyrostach 15 stopni](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowuje pióro|
+|Zmniejsz tangens w punkcie końcowym do zerowej długości|Kliknij punkt końcowy|![Zmniejsz tangens w punkcie końcowym do zerowej długości](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowuje pióro|
+|Dodaj nowy punkt do istniejącej ścieżki|Kliknij ścieżkę w lokalizacji, w której ma się pojawić nowy punkt.|![Dodaj nowy punkt do istniejącej ścieżki](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> Wskaźnik wstawiania piórem|
+|Usuwanie punktu ze ścieżki|Umieść kursor na istniejącym punkcie i kliknij pozycję|![Usuń punkt ze ścieżki](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Wskaźnik usuwania pióra|
+|Zamknij ścieżkę z ostrym rogiem|Kliknij punkt początkowy|![Zamknij ścieżkę z ostrym rogiem](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Wskaźnik zamknięcia pióra|
+|Zamknij ścieżkę z wygładzoną krzywą w rogu|Kliknij punkt początkowy i przeciągnij, aby zmodyfikować uchwyt styczny przed zwolnieniem przycisku myszy.|![Zamknij ścieżkę z wygładzoną krzywą w rogu](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Wskaźnik zamknięcia pióra|
+|Utwórz ostry narożnik podczas sprzęgania dwóch ścieżek|Wybierz dwie ścieżki, kliknij narzędzie **pióro** , kliknij punkt końcowy jednej ze ścieżek, a następnie kliknij punkt końcowy innej ścieżki.|![Utwórz ostry narożnik podczas sprzęgania dwóch ścieżek](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Wskaźnik sprzężenia piórem|
+|Tworzenie gładkiego rogu podczas sprzęgania dwóch ścieżek|Wybierz dwie ścieżki, kliknij narzędzie **pióro** , kliknij punkt końcowy jednej ze ścieżek, a następnie przeciągnij punkt końcowy innej ścieżki.|![Tworzenie gładkiego rogu podczas sprzęgania dwóch ścieżek](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Wskaźnik sprzężenia piórem|
+|Utwórz nową ścieżkę|Przytrzymaj klawisz **Ctrl** i kliknij poza poprzednią ścieżką, aby zatrzymać dodawanie punktów do poprzedniej ścieżki, a następnie kliknij lub przeciągnij miejsce, w którym ma zostać rozpoczęta nowa ścieżka|![Utwórz nową ścieżkę](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Wskaźnik uruchamiania pióra|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Skróty klawiaturowe i klawisze modyfikujące](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Klawisze modyfikujące obszar kompozycji](../designers/artboard-modifier-keys-in-blend.md)
 - [Klawisze modyfikujące narzędzia Wybór bezpośredni](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 - [Rysowanie kształtów i ścieżek](../designers/draw-shapes-and-paths.md)

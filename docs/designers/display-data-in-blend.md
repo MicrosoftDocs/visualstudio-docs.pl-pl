@@ -1,5 +1,6 @@
 ---
-title: Wyświetlanie danych w programie Blend
+title: Wizualizowanie przykładowych danych w interfejsie użytkownika XAML
+titleSuffix: Blend for Visual Studio
 ms.date: 03/06/2018
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
@@ -8,50 +9,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a17f3db9aac8128218f82d3faa3ff1b62f9822a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fcec16b0f67d54766ae373fc52228792dc1f732
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898014"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822092"
 ---
-# <a name="display-data-in-blend"></a>Wyświetlanie danych w programie Blend
+# <a name="display-data-in-blend-for-visual-studio"></a>Wyświetlanie danych w Blend for Visual Studio
 
-Można wyświetlić przykładowe dane w projektanta, jak dostosować układ stron. Można wygenerować przykładowych danych, od podstaw lub przy użyciu istniejącej klasy. Można także nawiązać *dane na żywo* wyświetlany w aplikacji po jej uruchomieniu.
+Przykładowe dane można wyświetlić w projektancie w miarę dostosowywania układu stron. Przykładowe dane można generować od podstaw lub przy użyciu istniejącej klasy. Możesz również nawiązać połączenie z *danymi na żywo* , które pojawiają się w aplikacji po jej uruchomieniu.
 
 ## <a name="generate-sample-data"></a>Generowanie danych przykładowych
 
-Aby wygenerować dane przykładowe, należy otworzyć dokument XAML. W **danych** panelu, wybierz polecenie **utworzyć dane przykładowe** ![Utwórz przykładowe dane ikony](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) przycisk, a następnie wybierz **nowe dane przykładowe**.
+Aby wygenerować przykładowe dane, Otwórz dokument XAML. W panelu **dane** wybierz przycisk ikony](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) **Utwórz** ![przykładowe dane Utwórz przykładowe dane, a następnie wybierz pozycję **nowe przykładowe dane**.
 
-Definiują strukturę danych w **danych** panelu, a następnie powiązać elementy interfejsu użytkownika na każdej stronie.
+Zdefiniuj strukturę danych w panelu **dane** , a następnie powiąż ją z elementami interfejsu użytkownika na dowolnej stronie.
 
 ![Panel dane](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png)
 
-Przykładowe dane były wyświetlane na stronach sieci, podczas uruchamiania aplikacji, wybierz opcję **Opcje źródła danych** ![ikonę Opcje źródła danych](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png), a następnie wybierz **włączyć podczas uruchamiania aplikacji**.
+Jeśli chcesz, aby dane przykładowe były wyświetlane na stronach podczas uruchamiania aplikacji, wybierz pozycję ![ **Opcje źródła danych** ikona](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png)opcji źródła danych, a następnie wybierz opcję **Włącz podczas uruchamiania aplikacji**.
 
-![Włącz element menu podczas uruchamiania aplikacji](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
+![Włącz podczas uruchamiania elementu menu aplikacji](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
- **Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [utworzyć dane przykładowe od podstaw](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
-
- **Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [mieszanie się niektóre wiązania danych przy użyciu programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+**Obejrzyj krótkie wideo:** ![Ikona](../designers/media/bldadminconsoleinitialconfigicon.PNG) odtwarzania [Utwórz przykładowe dane od podstaw](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
 
 ## <a name="generate-sample-data-from-a-class"></a>Generowanie przykładowych danych z klasy
 
-Jeśli utworzono już klas, które opisują strukturę danych, można wygenerować przykładowych danych z nich.
+Jeśli już utworzono klasy opisujące strukturę danych, możesz generować przykładowe dane z nich.
 
-Aby wygenerować dane przykładowe z klasy, należy otworzyć dokument XAML, a następnie w polu **danych** panelu, kliknij przycisk **utworzyć dane przykładowe** ![Utwórz przykładowe dane ikony](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) przycisk, a następnie kliknij przycisk **Utworzyć dane przykładowe z klas**.
+Aby wygenerować przykładowe dane z klasy, Otwórz dokument XAML, a następnie w panelu **dane** kliknij przycisk](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) ikony **Utwórz** ![przykładowe dane Utwórz przykładowe dane, a następnie kliknij przycisk **Utwórz przykładowe dane z klasy**.
 
-**Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [utworzyć dane przykładowe z klasy](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
-
-**Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [mieszały się niektóre wiązania danych przy użyciu programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
-
-## <a name="show-live-data-in-a-wpf-application"></a>Pokaż dane na żywo w aplikacji WPF
-
-**Obejrzyj krótki film wideo:** ![Odtwórz ikonę](../designers/media/bldadminconsoleinitialconfigicon.PNG) [tworzenie źródła danych XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
-
-## <a name="show-live-data-in-a-store-or-phone-app"></a>Pokaż dane na żywo w app store lub telefonu
-
-Zobacz [pracy z plikami (XAML) i danych](/previous-versions/windows/apps/br229562(v=win.10)).
+**Obejrzyj krótkie wideo:** ![Ikona](../designers/media/bldadminconsoleinitialconfigicon.PNG) odtwarzania umożliwia [połączenie niektórych powiązań danych z programem Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="see-also"></a>Zobacz także
 

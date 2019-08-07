@@ -1,29 +1,50 @@
 ---
 title: Animowanie obiektów w projektancie XAML
-ms.date: 04/11/2018
+titleSuffix: Blend for Visual Studio
+ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: a5bd9c24351201d066f9055554468939df02b33e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b396c0428f9810fe41fa70aca7b52fba2dd4f5b
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927036"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822188"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animowanie obiektów w projektancie XAML
 
-Tworzenie animacji w krótkim przenoszenie obiektów lub zanikanie je wewnątrz i na zewnątrz.
+Blend for Visual Studio umożliwia łatwe tworzenie krótkich animacji, które przesuwają obiekty lub rozjaśniają je na przykład.
 
-Aby rozpocząć, Utwórz *scenorysu*. Scenorysu zawiera jeden lub więcej *osi czasu*. Ustaw *klatki kluczowe* na osi czasu, aby oznaczyć zmiany właściwości. Następnie po uruchomieniu animacji, program Blend argumentu zmiany właściwości w wyznaczonym okresie. Wynikiem jest płynne przejście. Można animować dowolnej właściwości, która należy do obiektu, nawet właściwości niewizualnej.
+Aby utworzyć animację, potrzebujesz scenorysu. Scenorys zawiera jedną lub więcej *osi czasu*. Ustaw *klatki kluczowe* na osi czasu, aby oznaczyć zmiany właściwości. Następnie po uruchomieniu animacji Blend for Visual Studio interpoluje zmiany właściwości w wydanym okresie czasu. Wynikiem jest płynne przejście. Można animować każdą właściwość, która należy do obiektu, nawet niewizualną właściwości.
 
-Na poniższej ilustracji przedstawiono scenorysu o nazwie **MoveUp**. Oś czasu zawiera ramkami kluczowymi, który oznacza X i Y pozycja prostokąta. Po uruchomieniu ta animacja prostokąta bezproblemową z jednego miejsca do drugiego.
+Poniższe obrazy przedstawiają scenorys o nazwie **Storyboard1**. Oś czasu zawiera ramki kluczowe, które oznaczają położenie X i Y prostokąta. Po uruchomieniu tej animacji prostokąt jest przenoszony z jednej pozycji do innej.
 
-![MoveUp scenorysu w Projektancie XAML](../designers/media/982f031a-74a3-414a-abc2-a0f41a741075.png)
+![Scenorys dla animacji w Blend for Visual Studio](../designers/media/storyboard-timeline.png)
+
+## <a name="create-an-animation"></a>Tworzenie animacji
+
+1. Aby utworzyć scenorys, wybierz przycisk **opcji scenorysu** w oknie **obiekty i oś czasu** , a następnie wybierz pozycję **Nowy**.
+
+   ![Dodawanie scenorysu w Blend for Visual Studio](media/new-storyboard.png)
+
+2. W oknie dialogowym **Tworzenie zasobu scenorysu** wprowadź nazwę scenorysu.
+
+3. W panelu **składniki** w widok Projekt Dodaj prostokąt do lewej dolnej strony strony.
+
+   ![Prostokąt w panelu elementy zawartości projektant XAML](media/add-rectangle.PNG)
+
+4. W oknie **obiekty i oś czasu** Przenieś żółty wskaźnik czasu do **3** sekund.
+
+   ![Wskaźnik czasu na osi czasu](media/timeline-indicator.PNG)
+
+5. W widok Projekt na stronie przeciągnij prostokąt do prawej strony strony.
+
+6. Naciśnij przycisk **Odtwórz** , aby obejrzeć prostokąt przeniesiony z lewej strony do prawej strony.
+
+Odtwarzaj inne zmiany w prostokącie w różnych punktach w czasie. Na przykład możesz zmienić kolor wypełnienia lub przerzucić orientację w okno Właściwości.
 
 ## <a name="see-also"></a>Zobacz także
 

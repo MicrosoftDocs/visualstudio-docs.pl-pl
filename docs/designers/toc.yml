@@ -2,7 +2,9 @@
   href: designing-user-interfaces.md
 - name: XAML
   items:
-    - name: Projektowanie XAML w programie Visual Studio
+    - name: Przegląd XAML
+      href: xaml-overview.md
+    - name: Projektowanie XAML w programie Visual Studio i narzędziu Blend
       href: designing-xaml-in-visual-studio.md
     - name: XAML Designer
       items:
@@ -15,45 +17,34 @@
           href: organize-objects-into-layout-containers-in-xaml-designer.md
         - name: Tworzenie i stosowanie zasobów
           href: how-to-create-and-apply-a-resource.md
-        - name: 'Przewodnik: Wiązanie z danymi w projektancie XAML'
+        - name: 'Przewodnik: Wiązanie z danymi'
           href: walkthrough-binding-to-data-in-xaml-designer.md
-        - name: Skróty klawiaturowe w projektancie XAML
-          href: keyboard-shortcuts-for-xaml-designer.md
         - name: Debugowanie lub wyłączanie kodu projektu
           href: debugging-or-disabling-project-code-in-xaml-designer.md
-        - name: Błędy i ostrzeżenia XAML
-          href: xaml-errors-warnings.md
-    - name: Blend for Visual Studio
-      items:
-        - name: Omówienie
-          displayName: Blend for Visual Studio
+        - name: Blend for Visual Studio
           href: creating-a-ui-by-using-blend-for-visual-studio.md
-        - name: Wstawianie kontrolek i modyfikowanie ich zachowania
-          href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
-        - name: 'Wstawianie obrazów, klipów wideo i klipów audio'
-          href: insert-images-videos-and-audio-clips-in-xaml-designer.md
-        - name: Rysowanie kształtów i ścieżek
+        - name: Rysowanie kształtów i ścieżek (Blend)
           href: draw-shapes-and-paths.md
-        - name: Modyfikowanie stylu obiektów w programie Blend
+        - name: Modyfikowanie stylu obiektów (Blend)
           href: modify-the-style-of-objects-in-blend.md
-        - name: Animowanie obiektów
+        - name: Animowanie obiektów (Blend)
           href: animate-objects-in-xaml-designer.md
-        - name: Wyświetlanie danych
+        - name: Wyświetlanie danych (Blend)
           href: display-data-in-blend.md
-        - name: Skróty klawiaturowe i klawisze modyfikujące
+        - name: Tematy pomocy
           items:
-            - name: Omówienie
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-            - name: Skróty klawiaturowe
+            - name: Błędy i ostrzeżenia XAML
+              href: xaml-errors-warnings.md
+            - name: Skróty klawiaturowe w projektancie XAML
+              href: keyboard-shortcuts-for-xaml-designer.md
+            - name: Skróty klawiaturowe w programie Blend
               href: keyboard-shortcuts-in-blend.md
-            - name: Klawisze modyfikujące obszar kompozycji
+            - name: Klawisze modyfikujące obszar kompozycji (Blend)
               href: artboard-modifier-keys-in-blend.md
-            - name: Klawisze modyfikujące pióro
+            - name: Klawisze modyfikujące pióro (Blend)
               href: pen-tool-modifier-keys-in-blend.md
-            - name: Klawisze modyfikujące narzędzie Direct Selection
+            - name: Klawisze modyfikujące narzędzie Wybór bezpośredni (Blend)
               href: direct-selection-tool-modifier-keys-in-blend.md
-        - name: Produkty i usługi związane z ułatwieniami dostępu dla narzędzia Blend
-          href: accessibility-products-and-services-blend.md
 - name: Windows Presentation Foundation (WPF)
   items:
     - name: Wprowadzenie

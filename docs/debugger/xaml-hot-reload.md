@@ -1,8 +1,7 @@
 ---
 title: Pisanie i debugowanie kodu XAML przy użyciu gorącego ponownego ładowania XAML
 description: Usługa XAML — ładowanie gorące lub Edycja i kontynuowanie XAML umożliwia wprowadzanie zmian w kodzie XAML podczas uruchamiania aplikacji
-ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -12,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711221"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822141"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio
 
-Hot reload programu Visual Studio XAML ułatwia tworzenie interfejsu użytkownika aplikacji WPF lub platformy UWP, dzięki czemu można wprowadzać zmiany w kodzie XAML, gdy aplikacja jest uruchomiona. Ta funkcja umożliwia przyrostowe kompilowanie i testowanie kodu XAML z korzyścią dla kontekstu danych uruchomionej aplikacji, stanu uwierzytelniania i innej skomplikowanej złożoności, która trudno się symulować w czasie projektowania.
+Usługa XAML Hot reload umożliwia tworzenie interfejsu użytkownika aplikacji WPF lub platformy UWP, dzięki czemu można wprowadzać zmiany w kodzie XAML, gdy aplikacja jest uruchomiona. Zapasowe ponowne ładowanie są dostępne zarówno w programie Visual Studio, jak i w Blend for Visual Studio. Ta funkcja umożliwia przyrostowe kompilowanie i testowanie kodu XAML z korzyścią dla kontekstu danych uruchomionej aplikacji, stanu uwierzytelniania i innej skomplikowanej złożoności, która trudno się symulować w czasie projektowania.
 
 Hot reload języka XAML jest szczególnie przydatny w następujących scenariuszach:
 
@@ -35,7 +34,7 @@ Hot reload języka XAML jest szczególnie przydatny w następujących scenariusz
 |Aplikacje uniwersalne systemu Windows (platformy UWP)|Windows 10 i nowsze, z [zestawem SDK systemu Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Hot reload programu Visual Studio XAML jest obecnie obsługiwany tylko w przypadku uruchamiania aplikacji w programie Visual Studio z dołączonym debugerem (**F5** lub **Start Debug**). Nie można włączyć tego środowiska przy użyciu funkcji *Dołącz do procesu*.
+> Hot reload programu Visual Studio XAML jest obecnie obsługiwany tylko w przypadku uruchamiania aplikacji w programie Visual Studio lub Blend for Visual Studio z dołączonym debugerem (**F5** lub **Start Debug**). Nie można włączyć tego środowiska przy użyciu funkcji [Dołącz do procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 ## <a name="known-limitations"></a>Znane ograniczenia
 
@@ -44,7 +43,7 @@ Poniżej przedstawiono znane ograniczenia dotyczące gorącego ładowania kodu X
 |Bieg|WPF|Platforma UWP|Uwagi|
 |-|-|-|-|
 |Zdarzenia okablowania do kontrolek, gdy aplikacja jest uruchomiona|Nieobsługiwane|Nieobsługiwane|Zobacz błąd: *Sprawdź, czy zdarzenie nie powiodło się*|
-|Tworzenie obiektów zasobów w słowniku zasobów, takich jak te znajdujące się w pliku/oknie lub pliku *App. XAML* aplikacji|Nieobsługiwane|Obsługiwane|Przykład: Dodawanie ```SolidColorBrush``` do słownika zasobów do użycia ```StaticResource```jako.</br>Uwaga: Zasoby statyczne, konwertery stylów i inne elementy zapisywane w słowniku zasobów mogą być stosowane/używane podczas korzystania z usługi XAML. Tylko tworzenie zasobu nie jest obsługiwane.</br> Zmiana właściwości słownik ```Source``` zasobów.| 
+|Tworzenie obiektów zasobów w słowniku zasobów, takich jak te znajdujące się w pliku/oknie lub pliku *App. XAML* aplikacji|Nieobsługiwane|Obsługiwane|Przykład: Dodawanie `SolidColorBrush` do słownika zasobów do użycia `StaticResource`jako.</br>Uwaga: Zasoby statyczne, konwertery stylów i inne elementy zapisywane w słowniku zasobów mogą być stosowane/używane podczas korzystania z usługi XAML. Tylko tworzenie zasobu nie jest obsługiwane.</br> Zmiana właściwości słownik `Source` zasobów.|
 |Dodawanie nowych kontrolek, klas, okien lub innych plików do projektu, gdy aplikacja jest uruchomiona|Nieobsługiwane|Nieobsługiwane|Brak|
 |Zarządzanie pakietami NuGet (Dodawanie/usuwanie/aktualizowanie pakietów)|Nieobsługiwane|Nieobsługiwane|Brak|
 |Zmiana powiązania danych korzystającego z rozszerzenia znacznika {x:Bind}|Brak|Obsługiwane w programie Visual Studio 2019 i jego nowszych wersjach|Nieobsługiwane w programie Visual Studio 2017 lub w poprzednich wersjach|

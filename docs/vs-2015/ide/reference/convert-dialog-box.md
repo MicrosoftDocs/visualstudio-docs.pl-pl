@@ -15,20 +15,20 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 8dfceb7ca6221a342a5adbc3b3fcd3c193e0109e
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "65705869"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822398"
 ---
 # <a name="convert-dialog-box"></a>Konwertowanie — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Okno dialogowe **Konwertuj** umożliwia wybranie narzędzia konwersji w celu utworzenia nowego projektu na podstawie starego, takiego jak tworzenie [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] projektu na podstawie projektu Visual Basic 6. Możesz również użyć konwertera [projektów programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465)dostępnego w witrynie sieci Web CodePlex, aby uaktualnić projekty utworzone w poprzednich wersjach programu Visual Studio.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)].  
-  
+ [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
+
 ## <a name="opening-the-convert-dialog-box"></a>Otwieranie okna dialogowego Konwertuj  
   
 #### <a name="to-access-the-convert-dialog-box"></a>Aby uzyskać dostęp do okna dialogowego Konwertuj  

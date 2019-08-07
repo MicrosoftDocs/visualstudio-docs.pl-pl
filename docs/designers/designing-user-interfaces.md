@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8367da357bd2ac53a4534cfffdd9332f4dc7aa
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7b326da843cb811cd3a57167d7e3e00c3ffa5f52
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711238"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821921"
 ---
 # <a name="design-user-interfaces"></a>Projektowanie interfejsów użytkownika
 
@@ -24,7 +24,7 @@ Interfejs użytkownika dla aplikacji można utworzyć i zaprojektować za pomoc�
 | Funkcje projektantów XAML w programie Visual Studio i Blend for Visual Studio | [Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md) |
 | Projektowanie dowolnej aplikacji opartej na języku XAML przy użyciu programu Visual Studio|[Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | Projektowanie dowolnej aplikacji opartej na języku XAML przy użyciu Blend for Visual Studio | [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md) |
+| Tworzenie interfejsu użytkownika XAML, gdy aplikacja jest uruchomiona przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio i Blend for Visual Studio | [Pisanie i debugowanie uruchomionego kodu XAML z gorącą funkcją XAML](../debugger/xaml-hot-reload.md) |
 | Projektowanie aplikacji klasycznych, które używają wersji WPF języka XAML | [Wprowadzenie do Windows Presentation Foundation](../designers/getting-started-with-wpf.md) |
 | Opracowywanie aplikacji DirectX w programie Visual Studio | [Praca z zasobami 3D dla gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md) |
 | Standardowe ikony dostępne dla programów | [Biblioteka obrazów programu Visual Studio](../designers/the-visual-studio-image-library.md) |
-| Tworzenie interfejsu użytkownika XAML, gdy aplikacja jest uruchomiona przy użyciu gorącego ponownego ładowania XAML | [Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio](../debugger/xaml-hot-reload.md) |

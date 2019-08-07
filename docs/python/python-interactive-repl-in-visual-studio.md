@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896899"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822390"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Praca z okno interaktywne języka Python
 
-Program Visual Studio udostępnia okno interaktywne odczytu oceny — Drukuj pętli (REPL) dla każdego środowiska Python, które poprawia REPL, możesz uzyskać za pomocą *python.exe* w wierszu polecenia. **Interactive** okna (otwartej z **widoku** > **Windows inne** > **&lt;środowiska&gt; Interaktywne** poleceń menu) pozwala wprowadzić dowolny kod Python i zobaczyć wyniki wprowadzenia. Ten sposób kodowania pomaga informacje i eksperymentować z interfejsów API i bibliotek oraz interaktywnie tworzyć działającego kodu, aby uwzględnić w swoich projektach.
+Program Visual Studio udostępnia okno interaktywne odczytu oceny — Drukuj pętli (REPL) dla każdego środowiska Python, które poprawia REPL, możesz uzyskać za pomocą *python.exe* w wierszu polecenia. **Interactive** okna (otwartej z **widoku** > **Windows inne** >  **&lt;środowiska&gt; Interaktywne** poleceń menu) pozwala wprowadzić dowolny kod Python i zobaczyć wyniki wprowadzenia. Ten sposób kodowania pomaga informacje i eksperymentować z interfejsów API i bibliotek oraz interaktywnie tworzyć działającego kodu, aby uwzględnić w swoich projektach.
 
 ![Okno interaktywne języka Python](media/interactive-window.png)
 
@@ -34,13 +34,13 @@ Program Visual Studio ma kilka trybów REPL języka Python do wyboru:
 
 W tym artykule opisano **standardowa** i **debugowania** REPL tryby. Szczegółowe informacje na temat trybów IPython, [Użyj środowiska IPython REPL](interactive-repl-ipython.md).
 
-Szczegółowy przewodnik dotyczący wraz z przykładami, w tym interakcji z edytorem takich jak **Ctrl**+**Enter**, zobacz [samouczek krok 3: Korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+Aby uzyskać szczegółowy przewodnik z przykładami, w tym interakcje z edytorem+, takie jak Ctrl [**Enter**, zobacz Samouczek krok 3: Użyj interaktywnego okna](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)REPL.
 
 ## <a name="open-an-interactive-window"></a>Otwórz okno interaktywne
 
 Istnieje kilka sposobów, aby otworzyć **Interactive** okna dla środowiska.
 
-Po pierwsze, przejdź do okna środowiska Python (**widoku** > **Windows inne** > **środowiska Python** lub **Ctrl** + **K** > **Ctrl**+**`**) i wybierz **interakcyjnego otwarte Okno** polecenia lub przycisku dla wybranego środowiska.
+Po pierwsze, przejdź do okna środowiska Python (**widoku** > **Windows inne** > **środowiska Python** lub **Ctrl** + **K** > **Ctrl**+ **`** ) i wybierz **interakcyjnego otwarte Okno** polecenia lub przycisku dla wybranego środowiska.
 
 ![Interaktywne łącza okna w oknie środowiska Python](media/interactive-window-opening.png)
 
@@ -56,7 +56,7 @@ Na koniec wybierz kod w pliku i użyć [ **Wyślij do środowiska interaktywnego
 
 ## <a name="interactive-window-options"></a>Opcje okna interaktywnego
 
-Można kontrolować różne aspekty **Interactive** okna za pośrednictwem **narzędzia** > **opcje** > **Python**  >  **Interaktywne Windows** (zobacz [opcje](python-support-options-and-settings-in-visual-studio.md)):
+Można kontrolować różne aspekty okna interaktywnego za pomocą**opcji** >  **Narzędzia** > **Python** > **Interactive Windows** (zobacz [Opcje](python-support-options-and-settings-in-visual-studio.md)):
 
 ![Opcje okno interaktywne języka Python](media/options-interactive-windows.png)
 
@@ -111,7 +111,11 @@ To polecenie jest przydatne w przypadku tworzenia kodu iteracji lub ewolucyjny, 
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
-Korzystając z pliku z kodem jak Notatnik, często mają małych blokach kodu, nad którym chcesz wysłać wszystkie na raz. Aby zgrupować kod, należy oznaczyć kod jako *komórkę kodu* , dodając komentarz, począwszy od `#%%` na początku komórka, która kończy się poprzedniego. Komórki kodu może być zwiniętego i rozwinięte i korzystać z funkcji **Ctrl**+**Enter** wewnątrz kodu komórka wysyła cały komórce **Interactive** okna i przenosi do kolejny.
+## <a name="work-with-code-cells"></a>Pracuj z komórkami kodu
+
+Komórki kodu mogą służyć do analizy danych i są obsługiwane przez różne edytory tekstu.
+
+Na przykład w przypadku używania pliku kodu jako ScratchPad często istnieje mały blok kodu, który ma być wysyłany jednocześnie. Aby zgrupować kod, należy oznaczyć kod jako *komórkę kodu* , dodając komentarz, począwszy od `#%%` na początku komórka, która kończy się poprzedniego. Komórki kodu może być zwiniętego i rozwinięte i korzystać z funkcji **Ctrl**+**Enter** wewnątrz kodu komórka wysyła cały komórce **Interactive** okna i przenosi do kolejny.
 
 Program Visual Studio wykrywa także komórki kodu, począwszy od komentarze, takich jak `# In[1]:`, czyli formatu podczas eksportowania notesu programu Jupyter jako plik w języku Python. Wykrywanie ułatwia uruchamianie notesu z [notesów usługi Azure](https://notebooks.azure.com/) , pobierając jako plik w języku Python, otwierając w programie Visual Studio i za pomocą **Ctrl**+**Enter**do uruchomienia każdej komórki.
 
@@ -121,4 +125,4 @@ Program Visual Studio wykrywa także komórki kodu, począwszy od komentarze, ta
 
 **Interactive** okno zawiera funkcję IntelliSense, na podstawie obiektów na żywo, w przeciwieństwie do edytora kodu, w którym IntelliSense opiera się na tylko analizę kodu źródłowego. Te sugestie dotyczą bardziej poprawny w **Interactive** okna, szczególnie w przypadku dynamicznie generowanego kodu. Wadą jest to, że funkcje za pomocą efekty uboczne (np. rejestrowanie komunikatów) może mieć wpływ na Twoje środowisko programistyczne.
 
-Jeśli to zachowanie jest to problem, Zmień ustawienia w obszarze **narzędzia** > **opcje** > **Python**  >   **Interaktywne Windows** w **trybem uzupełniania** grupy, zgodnie z opisem na [opcje — Opcje interaktywnych okien](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+W przypadku wystąpienia tego problemu zmień ustawienia w obszarze**Opcje** >  **narzędzi** > **Python** > **Interactive Windows** w grupie **Tryb uzupełniania** , zgodnie z opisem w temacie [Opcje — Interaktywne Opcje systemu Windows](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

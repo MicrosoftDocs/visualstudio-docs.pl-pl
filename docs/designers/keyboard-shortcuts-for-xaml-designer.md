@@ -1,53 +1,51 @@
 ---
-title: Skróty klawiaturowe w Projektancie XAML
+title: Skróty klawiaturowe w projektancie XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a3260733ce67cde32aa8800b160314cf1ed8bb
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896762"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821776"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Skróty klawiaturowe w projektancie XAML
 
-Skróty klawiaturowe w Projektancie XAML można przyspieszyć pracę przez ograniczenie akcji, która będzie wymagać wielu kliknięcia przycisku myszy do jednego klawisza skrótu.
+Skróty klawiaturowe w projektant XAML umożliwiają przyspieszenie pracy przez zredukowanie akcji wymagającej wielokrotnego kliknięcia przycisku myszy do jednego skrótu klawiaturowego.
 
-## <a name="element-shortcuts"></a>Skróty — element
+## <a name="element-shortcuts"></a>Skróty elementów
 
-Poniższa tabela zawiera listę skrótów klawiaturowych, które są dostępne do pracy z elementami w obszarze kompozycji.
+W tej tabeli przedstawiono skróty, które są dostępne do pracy z elementami w obszarze kompozycji.
 
-|**Aby wykonać tę akcję**|**W tym**|
+|**Aby wykonać tę akcję**|**Zrób to**|
 | - |-----------------|
-|Utwórz element|Naciśnij klawisz **Ctrl**+**N**|
-|Zduplikowany element|Naciśnij i przytrzymaj **Alt** i naciśnij klawisz strzałki.|
-|Edytowanie tekstu w kontrolce|Naciśnij klawisz **F2** (naciśnij klawisz **Esc** aby zakończyć)|
-|Wybierz jeden element|Naciśnij klawisz **kartę** do wybrania elementów w kolejności, są wyświetlane w dokumencie. (Możesz również wybrać elementy, używając klawiszy ze strzałkami.)|
-|Zaznaczanie wielu elementów|Naciśnij i przytrzymaj klawisz **Shift** podczas zaznaczania poszczególnych elementów|
-|Wybierz wiele elementów niesąsiadujące|Naciśnij i przytrzymaj klawisz **Ctrl** podczas wybierania elementów imię i nazwisko|
-|Przenieś wybrane elementy|Użyj klawiszy strzałek (możesz przytrzymać wciśnięty **Shift** zwiększyć odległość przenoszenia na naciśnięcie klawisza.)|
-|Obróć element w przyrostach co 15 stopni|Naciśnij i przytrzymaj **Shift** podczas obracanie elementu|
-|Wybierz wszystkie elementy|Naciśnij klawisz **Ctrl**+**A**|
-|Wyczyść zaznaczenie wszystkich elementów|Naciśnij klawisz **Ctrl**+**Shift**+**A**|
-|Pokazywanie lub ukrywanie elementu dojścia|Naciśnij klawisz **F9**|
-|Wybierz właściwość elementu|Wybrany element i skoncentrować się na oknie dialogowym właściwości, naciśnij **kartę**. (Użyj **Ctrl**+**kartę** Aby zmienić fokus w oknie dialogowym właściwości.) Wybierz wartości właściwości z listy rozwijanej, można użyć klawiszy strzałek.|
+|Utwórz element|Naciśnij **klawisze CTRL**+**N**|
+|Duplikowanie elementu|Przytrzymaj klawisz **Alt** i naciśnij klawisz strzałki.|
+|Edytowanie tekstu w kontrolce|Naciśnij klawisz **F2** (naciśnij klawisz **ESC** , aby wyjść)|
+|Wybierz pojedynczy element|Naciśnij klawisz **Tab** , aby wybrać elementy w kolejności, w której pojawiają się w dokumencie. (Można również wybrać elementy przy użyciu klawiszy strzałek).|
+|Wybierz wiele elementów|Naciśnij i przytrzymaj klawisz **SHIFT** podczas zaznaczania każdego elementu|
+|Zaznacz wiele elementów niesąsiadujących|Naciśnij i przytrzymaj klawisz **Ctrl** podczas zaznaczania pierwszego i ostatniego elementu|
+|Przenieś wybrane elementy|Naciśnij klawisze strzałek. (Można przytrzymać klawisz **SHIFT** , aby zwiększyć odległość na naciśnięcie klawisza).|
+|Obróć element w przyrostach o 15 stopniach|Przytrzymaj klawisz **SHIFT** podczas obracania elementu|
+|Zaznacz wszystkie elementy|Naciśnij **klawisze CTRL**+**A**|
+|Wyczyść zaznaczenie wszystkich elementów|Naciśnij klawisz **Ctrl**+**SHIFT**A+|
+|Pokaż lub Ukryj uchwyty elementu|Naciśnij klawisz **F9**|
+|Wybierz właściwość dla elementu|Po zaznaczeniu elementu i fokus na okno Właściwości naciśnij klawisz **Tab**. (Użyj **klawisza Ctrl**+, aby zmienić fokus na okno właściwości). Możesz użyć klawiszy strzałek, aby wybrać wartości właściwości z list rozwijanych.|
 
-## <a name="document-outline-window-shortcuts"></a>Skróty okna konspekt dokumentu
+## <a name="document-outline-window-shortcuts"></a>Skróty okna konspektu dokumentu
 
-W poniższej tabeli wymieniono te skróty, które są dostępne podczas pracy z elementami w okno konspektu dokumentu.
+W poniższej tabeli wymieniono skróty dostępne podczas pracy z elementami w oknie konspektu dokumentu.
 
-|**Aby wykonać tę akcję**|**W tym**|
+|**Aby wykonać tę akcję**|**Zrób to**|
 | - |-----------------|
-|Ukryj obiektów w obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|**CTRL**+**H**|
-|Pokaż obiekty na obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|**Shift**+**Ctrl**+**H**|
-|Blokowanie obiektów w obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|**Ctrl**+**L**|
-|Odblokowanie obiektów w obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|**Shift**+**Ctrl**+**L**|
+|Ukryj obiekty obszaru kompozycji, gdy fokus znajduje się w oknie konspektu dokumentu|**CTRL**+**H**|
+|Odkryj obiekty obszaru kompozycji, gdy fokus znajduje się w oknie konspektu dokumentu|**Shift**+**Ctrl** H+|
+|Zablokuj obiekty obszaru roboczego, gdy fokus znajduje się w oknie konspektu dokumentu|**Ctrl**L+|
+|Odblokuj obiekty obszarów roboczych, gdy fokus znajduje się w oknie konspektu dokumentu|**Shift**+**Ctrl** L+|
 
 ## <a name="see-also"></a>Zobacz także
 

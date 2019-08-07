@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5305ee8db1161415f038ec6cc149c9e88edb9589
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 7b88824e6be7dbb216aa14ca9a22fd692474ec2f
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377929"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787418"
 ---
 # <a name="language-conventions"></a>Konwencje języka
 
@@ -102,14 +102,14 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="dotnetstylequalificationforfield"></a>dotnet\_style\_qualification\_for_field
+#### <a name="dotnet_style_qualification_for_field"></a>dotnet\_style\_qualification\_for_field
 
 |||
 |-|-|
 | **Nazwa reguły** | dotnet_style_qualification_for_field |
 | **Identyfikator reguły** | IDE0003 i IDE0009 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`— Preferuj pola, które mają być poprzedzone `this.` w C# lub `Me.` w Visual Basic<br /><br />`false`— Preferuj pola  , do których `this.` nie ma być poprzedzone lub`Me.` |
+| **Wartości** | `true`— Preferuj pola, które mają być poprzedzone `this.` w C# lub `Me.` w Visual Basic<br /><br />`false`— Preferuj pola , do których `this.` nie ma być poprzedzone lub`Me.` |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -130,14 +130,14 @@ Me.capacity = 0
 capacity = 0
 ```
 
-#### <a name="dotnetstylequalificationforproperty"></a>dotnet\_style\_qualification\_for_property
+#### <a name="dotnet_style_qualification_for_property"></a>dotnet\_style\_qualification\_for_property
 
 |||
 |-|-|
 | **Nazwa reguły** | dotnet_style_qualification_for_property |
 | **Identyfikator reguły** | IDE0003 i IDE0009 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj właściwości, które mają być poprzedzone `this.` w C# lub `Me.` w Visual Basic<br /><br />`false`— Preferuj właściwości  , dla których `this.` nie ma być poprzedzone lub`Me.` |
+| **Wartości** | `true`-Preferuj właściwości, które mają być poprzedzone `this.` w C# lub `Me.` w Visual Basic<br /><br />`false`— Preferuj właściwości , dla których `this.` nie ma być poprzedzone lub`Me.` |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -158,14 +158,14 @@ Me.ID = 0
 ID = 0
 ```
 
-#### <a name="dotnetstylequalificationformethod"></a>dotnet\_style\_qualification\_for_method
+#### <a name="dotnet_style_qualification_for_method"></a>dotnet\_style\_qualification\_for_method
 
 |||
 |-|-|
 | **Nazwa reguły** | dotnet_style_qualification_for_method |
 | **Identyfikator reguły** | IDE0003 i IDE0009 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`-Preferuj metody, które mają być poprzedzone `this.` funkcją C# in `Me.` lub in Visual Basic.<br /><br />`false`-Preferuj metody  `this.` , które nie powinny być poprzedzone lub `Me.`. |
+| **Wartości** | `true`-Preferuj metody, które mają być poprzedzone `this.` funkcją C# in `Me.` lub in Visual Basic.<br /><br />`false`-Preferuj metody `this.` , które nie powinny być poprzedzone lub `Me.`. |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -186,14 +186,14 @@ Me.Display()
 Display()
 ```
 
-#### <a name="dotnetstylequalificationforevent"></a>dotnet\_style\_qualification\_for_event
+#### <a name="dotnet_style_qualification_for_event"></a>dotnet\_style\_qualification\_for_event
 
 |||
 |-|-|
 | **Nazwa reguły** | dotnet_style_qualification_for_event |
 | **Identyfikator reguły** | IDE0003 i IDE0009 |
 | **Odpowiednie języki** | C# i Visual Basic |
-| **Wartości** | `true`— Preferuj zdarzenia, które mają być poprzedzone `this.` w C# programie `Me.` lub w Visual Basic.<br /><br />`false`-Preferuj zdarzenia  `this.` , które nie powinny być poprzedzone lub `Me.`. |
+| **Wartości** | `true`— Preferuj zdarzenia, które mają być poprzedzone `this.` w C# programie `Me.` lub w Visual Basic.<br /><br />`false`-Preferuj zdarzenia `this.` , które nie powinny być poprzedzone lub `Me.`. |
 | **Domyślne dla programu Visual Studio** | `false:silent` |
 
 Przykłady kodu:
@@ -227,7 +227,7 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="dotnetstylepredefinedtypeforlocalsparametersmembers"></a>dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
+#### <a name="dotnet_style_predefined_type_for_locals_parameters_members"></a>dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
 
 |||
 |-|-|
@@ -255,7 +255,7 @@ Private _member As Integer
 Private _member As Int32
 ```
 
-#### <a name="dotnetstylepredefinedtypeformemberaccess"></a>wstępnie\_zdefiniowany\_Typ\_styludotnet dla\_member_access\_
+#### <a name="dotnet_style_predefined_type_for_member_access"></a>wstępnie\_zdefiniowany\_Typ\_styludotnet dla\_member_access\_
 
 |||
 |-|-|
@@ -304,7 +304,7 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-#### <a name="dotnetstylerequireaccessibilitymodifiers"></a>dotnet\_style\_require\_accessibility_modifiers
+#### <a name="dotnet_style_require_accessibility_modifiers"></a>dotnet\_style\_require\_accessibility_modifiers
 
 |||
 |-|-|
@@ -332,7 +332,7 @@ class MyClass
 }
 ```
 
-#### <a name="csharppreferredmodifierorder"></a>csharp_preferred_modifier_order
+#### <a name="csharp_preferred_modifier_order"></a>csharp_preferred_modifier_order
 
 |||
 |-|-|
@@ -356,7 +356,7 @@ class MyClass
 }
 ```
 
-#### <a name="visualbasicpreferredmodifierorder"></a>visual_basic_preferred_modifier_order
+#### <a name="visual_basic_preferred_modifier_order"></a>visual_basic_preferred_modifier_order
 
 |||
 |-|-|
@@ -379,7 +379,7 @@ Public Class MyClass
 End Class
 ```
 
-#### <a name="dotnetstylereadonlyfield"></a>dotnet_style_readonly_field
+#### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
 
 |||
 |-|-|
@@ -422,7 +422,7 @@ dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 ```
 
-#### <a name="dotnetstyleparenthesesinarithmeticbinaryoperators"></a>\_nawiasy\_styludotnet\_wbinary_operatorsarytmetycznym\_\_
+#### <a name="dotnet_style_parentheses_in_arithmetic_binary_operators"></a>\_nawiasy\_styludotnet\_wbinary_operatorsarytmetycznym\_\_
 
 |||
 |-|-|
@@ -451,7 +451,7 @@ Dim v = a + (b * c)
 Dim v = a + b * c
 ```
 
-#### <a name="dotnetstyleparenthesesinrelationalbinaryoperators"></a>\_nawiasy\_styludotnet\_wbinary_operatorsrelacyjnym\_\_
+#### <a name="dotnet_style_parentheses_in_relational_binary_operators"></a>\_nawiasy\_styludotnet\_wbinary_operatorsrelacyjnym\_\_
 
 |||
 |-|-|
@@ -480,7 +480,7 @@ Dim v = (a < b) = (c > d)
 Dim v = a < b = c > d
 ```
 
-#### <a name="dotnetstyleparenthesesinotherbinaryoperators"></a>\_nawiasy\_styludotnet\_w innychbinary_operators\_\_
+#### <a name="dotnet_style_parentheses_in_other_binary_operators"></a>\_nawiasy\_styludotnet\_w innychbinary_operators\_\_
 
 |||
 |-|-|
@@ -509,7 +509,7 @@ Dim v = a OrElse (b AndAlso c)
 Dim v = a OrElse b AndAlso c
 ```
 
-#### <a name="dotnetstyleparenthesesinotheroperators"></a>dotnet\_style\_parentheses\_in\_other_operators
+#### <a name="dotnet_style_parentheses_in_other_operators"></a>dotnet\_style\_parentheses\_in\_other_operators
 
 |||
 |-|-|
@@ -558,7 +558,7 @@ dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 dotnet_style_prefer_compound_assignment = true:suggestion
 ```
 
-#### <a name="dotnetstyleobjectinitializer"></a>dotnet\_style\_object_initializer
+#### <a name="dotnet_style_object_initializer"></a>dotnet\_style\_object_initializer
 
 |||
 |-|-|
@@ -588,7 +588,7 @@ Dim c = New Customer()
 c.Age = 21
 ```
 
-#### <a name="dotnetstylecollectioninitializer"></a>dotnet\_style\_collection_initializer
+#### <a name="dotnet_style_collection_initializer"></a>dotnet\_style\_collection_initializer
 
 |||
 |-|-|
@@ -622,7 +622,7 @@ list.Add(2)
 list.Add(3)
 ```
 
-#### <a name="dotnetstyleexplicittuplenames"></a>jawny\_\_tuple_namesstylu\_dotnet
+#### <a name="dotnet_style_explicit_tuple_names"></a>jawny\_\_tuple_namesstylu\_dotnet
 
 |||
 |-|-|
@@ -654,7 +654,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-#### <a name="dotnetstylepreferinferredtuplenames"></a>styl\_dotnet\_Preferuj\_tuple_nameswnioskowane\_
+#### <a name="dotnet_style_prefer_inferred_tuple_names"></a>styl\_dotnet\_Preferuj\_tuple_nameswnioskowane\_
 
 |||
 |-|-|
@@ -683,7 +683,7 @@ Dim tuple = (name, age)
 Dim tuple = (name:=name, age:=age)
 ```
 
-#### <a name="dotnetstylepreferinferredanonymoustypemembernames"></a>styl\_dotnet\_Preferuj\_wywnioskowany\_typanonimowy\_member_names\_
+#### <a name="dotnet_style_prefer_inferred_anonymous_type_member_names"></a>styl\_dotnet\_Preferuj\_wywnioskowany\_typanonimowy\_member_names\_
 
 |||
 |-|-|
@@ -712,7 +712,7 @@ Dim anon = New With {name, age}
 Dim anon = New With {.name = name, .age = age}
 ```
 
-#### <a name="dotnetstylepreferautoproperties"></a>styl\_dotnet\_Preferuj\_właściwościautoproperties\_
+#### <a name="dotnet_style_prefer_auto_properties"></a>styl\_dotnet\_Preferuj\_właściwościautoproperties\_
 
 |||
 |-|-|
@@ -755,7 +755,7 @@ Public ReadOnly Property Age As Integer
 End Property
 ```
 
-#### <a name="dotnetstylepreferisnullcheckoverreferenceequalitymethod"></a>\_preferowany\_styldotnet\_to sprawdzeniewartościnull\_względem\_metody równości\_odwołań\_\_\_
+#### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>\_preferowany\_styldotnet\_to sprawdzeniewartościnull\_względem\_metody równości\_odwołań\_\_\_
 
 |||
 |-|-|
@@ -790,7 +790,7 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
-#### <a name="dotnetstylepreferconditionalexpressionoverassignment"></a>dotnet\_style\_prefer\_conditional\_expression\_over_assignment
+#### <a name="dotnet_style_prefer_conditional_expression_over_assignment"></a>dotnet\_style\_prefer\_conditional\_expression\_over_assignment
 
 |||
 |-|-|
@@ -832,7 +832,7 @@ Else
 End If
 ```
 
-#### <a name="dotnetstylepreferconditionalexpressionoverreturn"></a>dotnet\_style\_prefer\_conditional\_expression\_over_return
+#### <a name="dotnet_style_prefer_conditional_expression_over_return"></a>dotnet\_style\_prefer\_conditional\_expression\_over_return
 
 |||
 |-|-|
@@ -872,7 +872,7 @@ Else
 End If
 ```
 
-#### <a name="dotnetstyleprefercompoundassignment"></a>styl\_dotnet\_Preferujprzypisanie\_złożone\_
+#### <a name="dotnet_style_prefer_compound_assignment"></a>styl\_dotnet\_Preferujprzypisanie\_złożone\_
 
 |||
 |-|-|
@@ -913,7 +913,7 @@ dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 ```
 
-#### <a name="dotnetstylecoalesceexpression"></a>dotnet\_style\_coalesce_expression
+#### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
 
 |||
 |-|-|
@@ -943,7 +943,7 @@ Dim v = If(x Is Nothing, y, x) ' or
 Dim v = If(x IsNot Nothing, x, y)
 ```
 
-#### <a name="dotnetstylenullpropagation"></a>dotnet\_style\_null_propagation
+#### <a name="dotnet_style_null_propagation"></a>dotnet\_style\_null_propagation
 
 |||
 |-|-|
@@ -975,7 +975,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 ## <a name="net-code-quality-settings"></a>Ustawienia jakości kodu platformy .NET
 
-Reguły jakości w tej sekcji dotyczą zarówno C# kodu, jak i Visual Basic. Są one używane do konfigurowania analizatorów kodu wbudowanych w środowisko programistyczne (IDE) programu Visual Studio. Informacje o konfigurowaniu analizatorów FxCop za pomocą pliku EditorConfig można znaleźć w temacie [Configure FxCop analizators](../code-quality/configure-fxcop-analyzers.md).
+Reguły jakości w tej sekcji dotyczą zarówno C# kodu, jak i Visual Basic. Są one używane do konfigurowania analizatorów kodu wbudowanych w zintegrowane środowisko programistyczne (IDE) programu Visual Studio. Informacje o konfigurowaniu analizatorów FxCop za pomocą pliku EditorConfig można znaleźć w temacie [Configure FxCop analizators](../code-quality/configure-fxcop-analyzers.md).
 
 - [Preferencje parametrów](#parameter-preferences)
   - parametry\_nieużywanej\_\_jakości\_kodu dotnet
@@ -992,7 +992,7 @@ Te reguły mogą pojawić się w pliku *. editorconfig* w następujący sposób:
 dotnet_code_quality_unused_parameters = all:suggestion
 ```
 
-#### <a name="dotnetcodequalityunusedparameters"></a>parametry\_nieużywanej\_\_jakości\_kodu dotnet
+#### <a name="dotnet_code_quality_unused_parameters"></a>parametry\_nieużywanej\_\_jakości\_kodu dotnet
 
 |||
 |-|-|
@@ -1065,6 +1065,7 @@ Reguły stylu w tej sekcji mają zastosowanie tylko do C# programu.
   - CSharp\_przy\_użyciu\_umieszczania dyrektywy
   - CSharp\_Preferuj\_statycznelocal_function\_
   - CSharp\_Preferuj\_prosteusing_statement\_
+  - styl\_CSharp\_Preferujswitch_expression\_
 
 ### <a name="implicit-and-explicit-types"></a>Typy niejawne i jawne
 
@@ -1080,7 +1081,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="csharpstylevarforbuiltintypes"></a>CSharp\_—\_WARIANCJA\_stylu dla\_skompilowanej\_in_types
+#### <a name="csharp_style_var_for_built_in_types"></a>CSharp\_—\_WARIANCJA\_stylu dla\_skompilowanej\_in_types
 
 |||
 |-|-|
@@ -1100,7 +1101,7 @@ var x = 5;
 int x = 5;
 ```
 
-#### <a name="csharpstylevarwhentypeisapparent"></a>CSharp\_—\_WARIANCJA\_stylu gdy\_typis_apparent\_
+#### <a name="csharp_style_var_when_type_is_apparent"></a>CSharp\_—\_WARIANCJA\_stylu gdy\_typis_apparent\_
 
 |||
 |-|-|
@@ -1120,7 +1121,7 @@ var obj = new Customer();
 Customer obj = new Customer();
 ```
 
-#### <a name="csharpstylevarelsewhere"></a>CSharp\_style\_var_elsewhere
+#### <a name="csharp_style_var_elsewhere"></a>CSharp\_style\_var_elsewhere
 
 |||
 |-|-|
@@ -1159,7 +1160,7 @@ csharp_style_expression_bodied_lambdas = true:silent
 csharp_style_expression_bodied_local_functions = false:silent
 ```
 
-#### <a name="csharpstyleexpressionbodiedmethods"></a>csharp\_style\_expression\_bodied_methods
+#### <a name="csharp_style_expression_bodied_methods"></a>csharp\_style\_expression\_bodied_methods
 
 |||
 |-|-|
@@ -1179,7 +1180,7 @@ public int GetAge() => this.Age;
 public int GetAge() { return this.Age; }
 ```
 
-#### <a name="csharpstyleexpressionbodiedconstructors"></a>csharp\_style\_expression\_bodied_constructors
+#### <a name="csharp_style_expression_bodied_constructors"></a>csharp\_style\_expression\_bodied_constructors
 
 |||
 |-|-|
@@ -1199,7 +1200,7 @@ public Customer(int age) => Age = age;
 public Customer(int age) { Age = age; }
 ```
 
-#### <a name="csharpstyleexpressionbodiedoperators"></a>csharp\_style\_expression\_bodied_operators
+#### <a name="csharp_style_expression_bodied_operators"></a>csharp\_style\_expression\_bodied_operators
 
 |||
 |-|-|
@@ -1221,7 +1222,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```
 
-#### <a name="csharpstyleexpressionbodiedproperties"></a>csharp\_style\_expression\_bodied_properties
+#### <a name="csharp_style_expression_bodied_properties"></a>csharp\_style\_expression\_bodied_properties
 
 |||
 |-|-|
@@ -1241,7 +1242,7 @@ public int Age => _age;
 public int Age { get { return _age; }}
 ```
 
-#### <a name="csharpstyleexpressionbodiedindexers"></a>\_wyrażenie\_CSharpstyle\_bodied_indexers
+#### <a name="csharp_style_expression_bodied_indexers"></a>\_wyrażenie\_CSharpstyle\_bodied_indexers
 
 |||
 |-|-|
@@ -1261,7 +1262,7 @@ public T this[int i] => _values[i];
 public T this[int i] { get { return _values[i]; } }
 ```
 
-#### <a name="csharpstyleexpressionbodiedaccessors"></a>csharp\_style\_expression\_bodied_accessors
+#### <a name="csharp_style_expression_bodied_accessors"></a>csharp\_style\_expression\_bodied_accessors
 
 |||
 |-|-|
@@ -1281,7 +1282,7 @@ public int Age { get => _age; set => _age = value; }
 public int Age { get { return _age; } set { _age = value; } }
 ```
 
-#### <a name="csharpstyleexpressionbodiedlambdas"></a>\_wyrażenie\_CSharpstyle\_bodied_lambdas
+#### <a name="csharp_style_expression_bodied_lambdas"></a>\_wyrażenie\_CSharpstyle\_bodied_lambdas
 
 |||
 |-|-|
@@ -1300,7 +1301,7 @@ Func<int, int> square = x => x * x;
 Func<int, int> square = x => { return x * x; };
 ```
 
-#### <a name="csharpstyleexpressionbodiedlocalfunctions"></a>wyrażenie\_\_styluCSharplocal_functions\_\_
+#### <a name="csharp_style_expression_bodied_local_functions"></a>wyrażenie\_\_styluCSharplocal_functions\_\_
 
 Począwszy od C# 7,0, C# obsługuje [funkcje lokalne](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Funkcje lokalne są prywatnymi metodami typu, które są zagnieżdżone w innym elemencie członkowskim.
 
@@ -1346,7 +1347,7 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="csharpstylepatternmatchingoveriswithcastcheck"></a>dopasowanie\_wzorcastylu\_CSharpzcast_check\_\_\_\_\_
+#### <a name="csharp_style_pattern_matching_over_is_with_cast_check"></a>dopasowanie\_wzorcastylu\_CSharpzcast_check\_\_\_\_\_
 
 |||
 |-|-|
@@ -1366,7 +1367,7 @@ if (o is int i) {...}
 if (o is int) {var i = (int)o; ... }
 ```
 
-#### <a name="csharpstylepatternmatchingoveraswithnullcheck"></a>dopasowanie\_\_wzorcastyluCSharp\_wporównaniu\_z\_null_check\_\_
+#### <a name="csharp_style_pattern_matching_over_as_with_null_check"></a>dopasowanie\_\_wzorcastyluCSharp\_wporównaniu\_z\_null_check\_\_
 
 |||
 |-|-|
@@ -1391,7 +1392,7 @@ if (s != null) {...}
 
 Ta zasada stylu ma wpływ `out` na to, czy zmienne są zadeklarowane wewnętrznie, czy nie. Począwszy od C# 7, można zadeklarować [zmienną out na liście argumentów wywołania metody](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), a nie w oddzielnej deklaracji zmiennej.
 
-#### <a name="csharpstyleinlinedvariabledeclaration"></a>csharp\_style\_inlined\_variable_declaration
+#### <a name="csharp_style_inlined_variable_declaration"></a>csharp\_style\_inlined\_variable_declaration
 
 |||
 |-|-|
@@ -1432,7 +1433,7 @@ Przykładowy plik *. editorconfig* :
 csharp_prefer_simple_default_expression = true:suggestion
 ```
 
-#### <a name="csharpprefersimpledefaultexpression"></a>CSharp\_Preferuj\_prostedefault_expression\_
+#### <a name="csharp_prefer_simple_default_expression"></a>CSharp\_Preferuj\_prostedefault_expression\_
 
 Ta zasada stylu ma wpływ na używanie [ `default` literału dla wyrażeń wartości domyślnych](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) , gdy kompilator może wywnioskować typ wyrażenia.
 
@@ -1467,7 +1468,7 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### <a name="csharpstylethrowexpression"></a>csharp\_style\_throw_expression
+#### <a name="csharp_style_throw_expression"></a>csharp\_style\_throw_expression
 
 |||
 |-|-|
@@ -1488,7 +1489,7 @@ if (s == null) { throw new ArgumentNullException(nameof(s)); }
 this.s = s;
 ```
 
-#### <a name="csharpstyleconditionaldelegatecall"></a>csharp\_style\_conditional\_delegate_call
+#### <a name="csharp_style_conditional_delegate_call"></a>csharp\_style\_conditional\_delegate_call
 
 |||
 |-|-|
@@ -1520,7 +1521,7 @@ Przykładowy plik *. editorconfig* :
 csharp_prefer_braces = true:silent
 ```
 
-#### <a name="csharppreferbraces"></a>CSharp\_Preferuj\_nawiasy klamrowe
+#### <a name="csharp_prefer_braces"></a>CSharp\_Preferuj\_nawiasy klamrowe
 
 |||
 |-|-|
@@ -1553,7 +1554,7 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:sil
 csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 ```
 
-#### <a name="csharpstyleunusedvalueexpressionstatementpreference"></a>csharp_style_unused_value_expression_statement_preference
+#### <a name="csharp_style_unused_value_expression_statement_preference"></a>csharp_style_unused_value_expression_statement_preference
 
 |||
 |-|-|
@@ -1578,7 +1579,7 @@ _ = System.Convert.ToInt32("35");
 var unused = Convert.ToInt32("35");
 ```
 
-#### <a name="csharpstyleunusedvalueassignmentpreference"></a>csharp_style_unused_value_assignment_preference
+#### <a name="csharp_style_unused_value_assignment_preference"></a>csharp_style_unused_value_assignment_preference
 
 |||
 |-|-|
@@ -1619,7 +1620,7 @@ csharp_style_prefer_index_operator = true:suggestion
 csharp_style_prefer_range_operator = true:suggestion
 ```
 
-#### <a name="csharpstylepreferindexoperator"></a>styl\_CSharp\_Preferujindex_operator\_
+#### <a name="csharp_style_prefer_index_operator"></a>styl\_CSharp\_Preferujindex_operator\_
 
 |||
 |-|-|
@@ -1641,7 +1642,7 @@ string[] names = { "Archimedes", "Pythagoras", "Euclid" };
 var index = names[names.Length - 1];
 ```
 
-#### <a name="csharpstylepreferrangeoperator"></a>styl\_CSharp\_Preferujrange_operator\_
+#### <a name="csharp_style_prefer_range_operator"></a>styl\_CSharp\_Preferujrange_operator\_
 
 |||
 |-|-|
@@ -1677,9 +1678,10 @@ csharp_style_pattern_local_over_anonymous_function = true:suggestion
 csharp_using_directive_placement = outside_namespace:silent
 csharp_prefer_static_local_function = true:suggestion
 csharp_prefer_simple_using_statement = true:suggestion
+csharp_style_prefer_switch_expression = true:suggestion
 ```
 
-#### <a name="csharpstyledeconstructedvariabledeclaration"></a>dekonstrukcja\_\_variable_declaration\_w stylu CSharp
+#### <a name="csharp_style_deconstructed_variable_declaration"></a>dekonstrukcja\_\_variable_declaration\_w stylu CSharp
 
 |||
 |-|-|
@@ -1707,7 +1709,7 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-#### <a name="csharpstylepatternlocaloveranonymousfunction"></a>csharp\_style\_pattern\_local\_over\_anonymous_function
+#### <a name="csharp_style_pattern_local_over_anonymous_function"></a>csharp\_style\_pattern\_local\_over\_anonymous_function
 
 Począwszy od C# 7,0, C# obsługuje [funkcje lokalne](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Funkcje lokalne są prywatnymi metodami typu, które są zagnieżdżone w innym elemencie członkowskim.
 
@@ -1736,7 +1738,7 @@ fibonacci = (int n) =>
 };
 ```
 
-#### <a name="csharpusingdirectiveplacement"></a>CSharp\_przy\_użyciu directive_placement
+#### <a name="csharp_using_directive_placement"></a>CSharp\_przy\_użyciu directive_placement
 
 |||
 |-|-|
@@ -1765,7 +1767,7 @@ namespace Conventions
 }
 ```
 
-#### <a name="csharppreferstaticlocalfunction"></a>CSharp\_Preferuj\_statycznelocal_function\_
+#### <a name="csharp_prefer_static_local_function"></a>CSharp\_Preferuj\_statycznelocal_function\_
 
 |||
 |-|-|
@@ -1799,14 +1801,14 @@ void M()
 }
 ```
 
-#### <a name="csharpprefersimpleusingstatement"></a>CSharp\_Preferuj\_prosteusing_statement\_
+#### <a name="csharp_prefer_simple_using_statement"></a>CSharp\_Preferuj\_prosteusing_statement\_
 
 |||
 |-|-|
 | **Nazwa reguły** | csharp_prefer_simple_using_statement |
 | **Identyfikator reguły** | IDE0063 |
 | **Odpowiednie języki** | C#8.0 + |
-| **Wartości** | `true`-Woli użyć prostej  `using` instrukcji<br /><br />`false`-Nie wolisz używać *prostej* `using` instrukcji |
+| **Wartości** | `true`-Woli użyć prostej `using` instrukcji<br /><br />`false`-Nie wolisz używać *prostej* `using` instrukcji |
 | **Domyślne dla programu Visual Studio** | `true:suggestion` |
 
 Przykłady kodu:
@@ -1817,6 +1819,40 @@ using var a = b;
 
 // csharp_prefer_simple_using_statement = false
 using (var a = b) { }
+```
+
+#### <a name="csharp_style_prefer_switch_expression"></a>styl\_CSharp\_Preferujswitch_expression\_
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_style_prefer_switch_expression |
+| **Identyfikator reguły** | IDE0066 |
+| **Odpowiednie języki** | C#8.0 + |
+| **Wartości** | `true`-Preferuj użycie `switch` wyrażenia (wprowadzone z C# 8,0)<br /><br />`false`-Woli użyć [instrukcji switch](/dotnet/csharp/language-reference/keywords/switch) |
+| **Domyślne dla programu Visual Studio** | `true:suggestion` |
+| **Wprowadzona wersja** | Visual Studio 2019 w wersji 16,2 |
+
+Przykłady kodu:
+
+```csharp
+// csharp_style_prefer_switch_expression = true
+return x switch
+{
+    1 => 1 * 1,
+    2 => 2 * 2,
+    _ => 0,
+};
+
+// csharp_style_prefer_switch_expression = false
+switch (x)
+{
+    case 1:
+        return 1 * 1;
+    case 2:
+        return 2 * 2;
+    default:
+        return 0;
+}
 ```
 
 ## <a name="see-also"></a>Zobacz także

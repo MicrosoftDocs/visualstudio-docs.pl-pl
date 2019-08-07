@@ -6,104 +6,102 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0401d810f5f97b0306290faff2cfeb1785ba14f
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893587"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821935"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizowanie obiektów w kontenery układów w projektancie XAML
 
-W tym artykule opisano panele układów i formantów w Projektancie XAML.
+W tym artykule opisano panele i kontrolki układu dla projektant XAML.
 
-Wyobraź sobie, gdzie ma się obiekty na stronie; obiekty, takie jak obrazy, przyciski i filmy wideo. Być może ma pojawiać się w wiersze i kolumny, w jednym wierszu w pionie lub w poziomie lub w stałym położeniu.
+Załóżmy, gdzie obiekty mają być wyświetlane na obiektach stron&mdash;, takich jak obrazy, przyciski i wideo. Być może chcesz, aby były wyświetlane w wierszach i kolumnach, w jednym wierszu w pionie lub w poziomie lub w stałej pozycji.
 
-Po został mieli Państwo możliwość zastanów się wygląd strony, wybierz panel układu. Wszystkich stron uruchomić przy użyciu jednego, ponieważ potrzebujesz czegoś, do którego można dodać obiektów. Domyślnie jest **siatki**, ale można to zmienić.
+Po dodaniu szansy myślisz, jak może wyglądać Strona, wybierz Panel układu. Wszystkie strony zaczynają się od siebie, ponieważ potrzebujesz czegoś, do którego chcesz dodać obiekty. Domyślnie jest to **Siatka**, ale można ją zmienić.
 
-Panele układów ułatwiają rozmieścić obiekty na stronie, ale ich nie więcej niż. One ułatwiają projektowanie dla różnych rozmiarów ekranu i rozwiązania. Jeśli użytkownicy uruchamiają aplikację, wszystko w panelu układu zmienia rozmiar do dopasowania powierzchnię ekranu urządzenia z systemem. Oczywiście jeśli nie chcesz układu w taki sposób, aby to zrobić, można zastąpić to zachowanie dla części układu lub całego układu. Właściwości height i width służy do kontrolowania, który.
+Panele układów ułatwiają rozmieszczanie obiektów na stronie, ale nie wykonują tych czynności. Ułatwiają one projektowanie dla różnych rozmiarów i rozdzielczości ekranu. Gdy użytkownicy uruchamiają aplikację, wszystko w panelu układu zmienia rozmiar tak, aby pasował do zawartości ekranu na urządzeniu. Oczywiście, jeśli nie chcesz, aby układ został przesłonięty, możesz przesłonić to zachowanie dla części układu lub całego układu. Możesz użyć właściwości Height i Width, aby to sterować.
 
 ## <a name="layout-panels"></a>Panele układów
 
-Twoja strona początkowa, wybierając jedną z tych paneli układu. Strona może mieć więcej niż jeden. Na przykład możesz zacząć od **siatki** Układ panelu, a następnie dodaj **StackPanel** do obszaru w **siatki** , dzięki czemu można rozmieścić formanty w pionie w tym elemencie.
+Rozpocznij swoją stronę, wybierając jeden z tych paneli układu. Strona może mieć więcej niż jeden. Na przykład możesz zacząć od panelu układu **siatki** , a następnie dodać **StackPanel** do obszaru w **siatce** , aby można było rozmieścić kontrolki w pionie w tym elemencie.
 
-Poniższe panele układów to najbardziej co jest często używane, ale istnieją inne osoby. Można je znaleźć w **przybornika** w programie Visual Studio lub **zasoby** panel w programie Blend for Visual Studio.
+Następujące panele układu są najczęściej używane, ale istnieją inne. Wszystkie te elementy można znaleźć w **przyborniku** w programie Visual Studio lub panelu **składniki** w Blend for Visual Studio.
 
 ### <a name="grid"></a>Siatka
 
-Rozmieść obiekty w wiersze i kolumny.
+Uporządkuj obiekty w wiersze i kolumny.
 
 ![Panel układu siatki](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
 ### <a name="uniformgrid"></a>UniformGrid
 
-Rozmieść obiekty w regionach równym lub jednolite, siatki. Ten panel to idealne narzędzie do porządkowanie listy obrazów.
+Rozmieść obiekty w równych lub jednorodnych regionach siatki. Ten panel doskonale nadaje się do porządkowania list obrazów.
+
+(Dostępne tylko dla projektów WPF).
 
 ![Panel układu UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-(Dostępne tylko dla projektów WPF).
-
 ### <a name="canvas"></a>Kanwa
 
-Rozmieść obiekty w jakikolwiek sposób, który ma. Jeśli użytkownicy uruchamiają aplikację, te elementy zostaną stałe pozycje, na ekranie.
+Rozmieść obiekty w dowolny sposób. Gdy użytkownicy uruchamiają aplikację, te elementy będą miały stałe pozycje na ekranie.
 
-![Panelu układu canvas](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
+![Panel układu kanwy](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
 
 ### <a name="stackpanel"></a>StackPanel
 
-Rozmieść obiekty w jednym wierszu, poziomo czy pionowo.
+Rozmieść obiekty w jednym wierszu w poziomie lub w pionie.
 
-![Panelu układu StackPanel](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png)
+![Panel układu StackPanel](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png)
 
 ### <a name="wrappanel"></a>WrapPanel
 
-Rozmieść obiekty sekwencyjnie od lewej do prawej. Gdy zespół zabraknie miejsca przy prawej krawędzi, jego *opakowuje* zawartość do następnego wiersza, i tak dalej od lewej do prawej, od góry do dołu. Można również ustawić orientacja zawijanego panelu pionie, tak aby obiekty przepływu od góry do dołu i od lewej do prawej.
+Rozmieść obiekty sekwencyjnie od lewej do prawej. Gdy panel nie jest widoczny w skrajnie prawej krawędzi, *zawija* zawartość do następnego wiersza i tak dalej, od lewej do prawej, od góry do dołu. Możesz również zmienić orientację panelu zawijania w pionie, aby obiekty były przesyłane z góry do dołu, od lewej do prawej.
 
 (Dostępne tylko dla projektów WPF).
 
-![Panelu układu WrapPanel](../designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png)
+![Panel układu kontrolce WrapPanel](../designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png)
 
 ### <a name="dockpanel"></a>DockPanel
 
-Rozmieszczanie obiektów, więc, że pozostają, lub *zadokować*, jednej krawędzi panelu.
+Rozmieść obiekty w taki sposób, abystały się one lub zadokowane, do jednej krawędzi panelu.
 
 (Dostępne tylko dla projektów WPF).
 
-![Panelu układu DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
+![Panel układu DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Obejrzyj krótki film wideo:** ![Przycisk odtwarzania](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF — DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Obejrzyj krótkie wideo:** ![Przycisk](../designers/media/bldadminconsoleinitialconfigicon.PNG) odtwarzania [— WPF — DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
-## <a name="layout-controls"></a>Formanty układu
+## <a name="layout-controls"></a>Kontrolki układu
 
-Możesz dodać obiekty do układu kontrolek także. Nie są one jako wiele funkcji, jak panel układu, ale mogą je znaleźć przydatne w niektórych scenariuszach.
+Możesz również dodać obiekty do kontrolek układu. Nie są one jako panel układu, ale mogą być przydatne w niektórych scenariuszach.
 
-Następujące elementy sterujące układu są najbardziej popularne, ale istnieją inne osoby. Można je znaleźć w **przybornika** w programie Visual Studio lub **zasoby** panel w programie Blend for Visual Studio.
+Następujące kontrolki układu są najbardziej popularne, ale istnieją inne. Wszystkie te elementy można znaleźć w **przyborniku** w programie Visual Studio lub panelu **składniki** w Blend for Visual Studio.
 
 ### <a name="border"></a>Obramowanie
 
-Utwórz obramowanie i/lub tło wokół obiektu. Można dodawać tylko jednego obiektu do **obramowania**. Jeśli chcesz zastosować krawędzi i tła dla więcej niż jednego obiektu, Dodaj panelu układu, aby **obramowania**. Następnie należy dodać obiekty do tego panel lub kontrolka.
+Utwórz obramowanie, tło lub oba elementy wokół obiektu. Do obramowania można dodać tylko jeden obiekt. Jeśli chcesz zastosować obramowanie lub tło dla więcej niż jednego obiektu, Dodaj panel układu do **obramowania**. Następnie Dodaj obiekty do tego panelu lub kontrolki.
 
-![Formant układu obramowania](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png)
+![Kontrolka układu obramowania](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png)
 
 ### <a name="popup"></a>Okno podręczne
 
-Pokaż informacje lub użytkownikom w oknie opcji. Można dodawać tylko jednego obiektu do **okno podręczne**. Domyślnie **okno podręczne** zawiera **siatki** , ale można ją zamienić.
+Pokaż informacje lub opcje dla użytkowników w oknie. Do **okna**podręcznego można dodać tylko jeden obiekt. Domyślnie **okno podręczne** zawiera siatkę, ale można to zmienić.
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-Pozwalają użytkownikom na przewiń w dół strony lub części strony. Można dodawać tylko jednego obiektu do **ScrollViewer** dzięki temu jest bardzo rozsądne, aby dodać panel układu, takich jak **siatki** lub **StackPanel**.
+Zezwól użytkownikom na przewijanie w dół strony lub obszaru strony. Można dodać tylko jeden obiekt do **ScrollViewer**, więc warto dodać Panel układu, taki jak **Siatka** lub **StackPanel**.
 
-![Scrollviewer — formant układu](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
+![Kontrolka układu ScrollViewer](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 
 ### <a name="viewbox"></a>Okno widoku
 
-Skalowanie obiektów, podobnie jak w przypadku Kontrolka powiększenia. Można dodawać tylko jednego obiektu do **Viewbox**. Jeśli chcesz zastosować ten efekt do więcej niż jednego obiektu, Dodaj panelu układu, aby **ViewBox**, a następnie dodać kontrolki do panelu układów.
+Skaluj obiekty w taki sam sposób, jak w przypadku kontrolki powiększenia. Do **Viewbox**można dodać tylko jeden obiekt. Jeśli chcesz zastosować ten efekt do więcej niż jednego obiektu, Dodaj panel układu do **Viewbox**, a następnie Dodaj kontrolki do tego panelu układu.
 
 (Dostępne tylko dla projektów WPF).
 
-![Formant okna widoku układu](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
+![Kontrolka układu ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
 ## <a name="see-also"></a>Zobacz także
 

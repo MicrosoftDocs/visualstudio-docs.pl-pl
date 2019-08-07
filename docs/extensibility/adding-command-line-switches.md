@@ -1,5 +1,5 @@
 ---
-title: Dodawanie przełączników wiersza polecenia | Dokumentacja firmy Microsoft
+title: Dodawanie przełączników wiersza polecenia | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,49 +13,49 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9c44864285f3e5701604379a110292c29d3f9b78
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352337"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821535"
 ---
 # <a name="add-command-line-switches"></a>Dodawanie przełączników wiersza polecenia
-Możesz dodać przełączniki wiersza polecenia, które są stosowane do Twojego pakietu VSPackage podczas *devenv.exe* jest wykonywany. Użyj <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> do deklarowania nazwę przełącznika i jego właściwości. W tym przykładzie przełącznika MySwitch zostanie dodany do podklasy pakietu VSPackage o nazwie **AddCommandSwitchPackage** bez argumentów i za pomocą pakietu VSPackage ładowane automatycznie.
+Można dodać przełączniki wiersza polecenia, które są stosowane do pakietu VSPackage podczas wykonywania *devenv. exe* . Użyj <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> , aby zadeklarować nazwę przełącznika i jego właściwości. W tym przykładzie przełącznik przełącznika zostanie dodany dla podklasy pakietu VSPackage o nazwie **AddCommandSwitchPackage** bez argumentów i z pakietu VSPackage załadowany automatycznie.
 
 ```csharp
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]
 ```
 
- Parametry nazwane są wyświetlane w następujących opisach.
+ Nazwane parametry są pokazane w następujących opisach.
 
 ||||
 |-|-|-|-|
 | Parametr | Opis|
-| Argumenty | Liczba argumentów dla przełącznika. Może być "*", lub Podaj listę argumentów. |
-| DemandLoad | Ładowanie pakietu VSPackage automatycznie, jeśli jest ono ustawione na 1, w przeciwnym razie jest ustawiona na 0. |
-| HelpString — | Pomoc ciąg lub identyfikator zasobu ciągu do wyświetlania o **devenv /?** . |
+| Argumenty | Liczba argumentów dla przełącznika. Może mieć wartość "*" lub listę argumentów. |
+| Na DemandLoad | Załaduj pakietu VSPackage automatycznie, jeśli jest ustawiona na 1, w przeciwnym razie ustaw wartość 0. |
+| HelpString | Ciąg pomocy lub identyfikator zasobu ciągu do wyświetlania z **devenv/?** . |
 | Nazwa | Przełącznik. |
 | PackageGuid | Identyfikator GUID pakietu. |
 
- Pierwsza wartość argumentów jest zwykle 0 lub 1. Specjalna wartość elementu "*" może służyć do wskazania, że całą pozostałą część wiersza polecenia jest argumentem. Może to być przydatne podczas debugowania scenariuszy, w którym użytkownik musi przejść w ciągu polecenia debugera.
+ Pierwsza wartość argumentów jest zwykle równa 0 lub 1. Specjalna wartość "*" może służyć do wskazania, że cały pozostała część wiersza polecenia jest argumentem. Może to być przydatne w scenariuszach debugowania, w których użytkownik musi przekazać ciąg poleceń debugera.
 
- Wartość DemandLoad jest albo `true` (1) lub `false` (0) oznacza, że pakietu VSPackage powinny być załadowane automatycznie.
+ Wartość na DemandLoad jest `true` (1) lub `false` (0) wskazuje, że pakietu VSPackage powinien zostać załadowany automatycznie.
 
- Wartość HelpString — jest identyfikator zasobu ciągu, który pojawia się w **devenv /?** Wyświetlanie pomocy. Ta wartość powinna być w formie "#nnn" gdzie nnn jest liczbą całkowitą. Wartość ciągu w pliku zasobów powinien kończyć się znakiem nowego wiersza.
+ Wartość HelpString jest IDENTYFIKATORem zasobu ciągu, który pojawia się w **devenv/?** Wyświetl pomoc. Ta wartość powinna mieć postać "#nnn", gdzie NNN jest liczbą całkowitą. Wartość ciągu w pliku zasobu powinna kończyć się znakiem nowego wiersza.
 
- Wartość nazwy jest nazwa przełącznika.
+ Wartość nazwa to nazwa przełącznika.
 
- Wartość PackageGuid jest identyfikator GUID pakietu, który implementuje ten przełącznik. IDE używa tego identyfikatora GUID w celu odnalezienia pakietu VSPackage w rejestrze, do której stosują się przełącznik wiersza polecenia.
+ Wartość PackageGuid jest identyfikatorem GUID pakietu, który implementuje ten przełącznik. IDE używa tego identyfikatora GUID, aby znaleźć pakietu VSPackage w rejestrze, do którego ma zastosowanie przełącznik wiersza polecenia.
 
-## <a name="retrieve-command-line-switches"></a>Pobieranie przełączniki wiersza polecenia
+## <a name="retrieve-command-line-switches"></a>Pobierz przełączniki wiersza polecenia
  Po załadowaniu pakietu można pobrać przełączniki wiersza polecenia, wykonując następujące kroki.
 
-1. W swojej VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementacji, wywołanie `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> można pobrać <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfejsu.
+1. W <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementacji programu pakietu VSPackage Wywołaj metodę `QueryService` w <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> celu uzyskania <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfejsu.
 
-2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> można pobrać przełączniki wiersza polecenia, które użytkownik wprowadził.
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> , aby pobrać przełączniki wiersza polecenia wprowadzone przez użytkownika.
 
-   Poniższy kod przedstawia sposób dowiedzieć się, czy przełącznik wiersza polecenia MySwitch została wprowadzona przez użytkownika:
+   Poniższy kod pokazuje, jak dowiedzieć się, czy przełącznik wiersza polecenia "onswitch" został wprowadzony przez użytkownika:
 
 ```csharp
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));
@@ -66,11 +66,11 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 ```
 
- Jest odpowiedzialny za sprawdzaj przełączniki wiersza polecenia w każdym razem, gdy jest ładowany do pakietu.
+ Ponosisz odpowiedzialność za sprawdzanie przełączników wiersza polecenia przy każdym załadowaniu pakietu.
 
 ## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
-- [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia devenv](../ide/reference/devenv-command-line-switches.md)
 - [Narzędzie CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [.Pkgdef files](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)
+- [.Pkgdef files](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

@@ -6,98 +6,96 @@ ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: bc22f9dcbe348f46ae624e5c06706d328633e784
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f588395284891bab61a575f088931e2fc244bce
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846078"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822102"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w projektancie XAML
 
-W wielu przypadkach nieobsłużonych wyjątków z **XAML** designer może być spowodowany przez kod projektu, próby uzyskania dostępu do właściwości lub metody, które zwracać różne wartości, i pracować w inny sposób, gdy aplikacja działa w projektancie. Rozwiązania tych wyjątków dzięki możliwości debugowania kodu projektu w innym wystąpieniu programu Visual Studio lub czasowo uniemożliwić wyjątki po wyłączeniu kodu projektu w projektancie.
+W wielu przypadkach Nieobsłużone wyjątki w projektant XAML mogą być spowodowane przez kod projektu próbujący uzyskać dostęp do właściwości lub metod, które zwracają różne wartości lub pracują w inny sposób, gdy aplikacja działa w projektancie. Te wyjątki można rozwiązać przez Debugowanie kodu projektu w innym wystąpieniu programu Visual Studio lub tymczasowe zapobieganie wyjątkom przez wyłączenie kodu projektu w projektancie.
 
-Zawiera kod projektu:
+Kod projektu obejmuje:
 
-- Kontrolki niestandardowe i kontrolki użytkownika
+- Formanty niestandardowe i kontrolki użytkownika
 
 - Biblioteki klas
 
 - Konwertery wartości
 
-- Powiązania względem danych czasu projektowania wygenerowane z kodu projektu
+- Powiązania z danymi czasu projektowania generowanymi na podstawie kodu projektu
 
-Po wyłączeniu kodu projektu programu Visual Studio zawiera symbole zastępcze. Na przykład programu Visual Studio zawiera nazwę właściwości do powiązania, gdzie dane są już dostępne lub symbol zastępczy dla formantu, który nie jest już uruchomiony.
+Gdy kod projektu jest wyłączony, Visual Studio Wyświetla symbole zastępcze. Na przykład program Visual Studio Wyświetla nazwę właściwości dla powiązania, gdzie dane nie są już dostępne, lub symbol zastępczy kontrolki, która nie jest już uruchomiona.
 
-![Nieobsługiwany wyjątek w oknie dialogowym](../designers/media/xaml_unhandledexception.png)
+![Okno dialogowe nieobsłużonego wyjątku](../designers/media/xaml_unhandledexception.png)
 
-## <a name="to-determine-if-project-code-is-causing-an-exception"></a>Aby określić, jeśli kod projektu powoduje wyjątek
+## <a name="to-determine-if-project-code-is-causing-an-exception"></a>Aby określić, czy kod projektu jest przyczyną wyjątku
 
-1. W oknie dialogowym nieobsługiwany wyjątek, wybierz **kliknij tutaj, aby załadować ponownie projektanta** łącza.
+1. W oknie dialogowym nieobsługiwany wyjątek wybierz **pozycję kliknij tutaj, aby ponownie załadować link projektanta** .
 
-2. Na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie** Aby skompilować i uruchomić aplikację.
+2. Na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie** , aby skompilować i uruchomić aplikację.
 
-     Jeśli aplikacja zostanie skompilowana i zostanie wykonane pomyślnie, wyjątek czasu projektowania może być spowodowane przez działanie kodu projektu w projektancie.
+     Jeśli aplikacja zostanie pomyślnie skompilowana i uruchomiona, wyjątek czasu projektowania może być spowodowany przez kod projektu uruchomiony w projektancie.
 
-## <a name="to-debug-project-code-running-in-the-designer"></a>Aby debugować kod projektu w Projektancie
+## <a name="to-debug-project-code-running-in-the-designer"></a>Aby debugować kod projektu uruchomiony w projektancie
 
-1. W oknie dialogowym nieobsługiwany wyjątek, wybierz **kliknij tutaj, aby wyłączyć uruchamianie kodu projektu i załadować ponownie projektanta** łącza.
+1. W oknie dialogowym nieobsługiwany wyjątek wybierz **pozycję kliknij tutaj, aby wyłączyć uruchamianie kodu projektu i ponownie załaduj projektanta** .
 
-2. W Menedżerze zadań Windows, wybierz **Zakończ zadanie** przycisk, aby zamknąć wszystkie wystąpienia projektanta XAML programu Visual Studio, które są aktualnie uruchomione.
+2. W Menedżerze zadań systemu Windows wybierz przycisk **Zakończ zadanie** , aby zamknąć wszystkie wystąpienia Projektant XAML programu Visual Studio, które są obecnie uruchomione.
 
-     ![Wystąpienia projektanta XAML w Menedżer zadań](../designers/media/xaml_taskmanager.png)
+     ![Wystąpienia projektanta XAML w taskmanager](../designers/media/xaml_taskmanager.png)
 
-3. W programie Visual Studio Otwórz stronę XAML, który zawiera kod lub formant, który chcesz debugować.
+3. W programie Visual Studio Otwórz stronę XAML, która zawiera kod lub kontrolkę, którą chcesz debugować.
 
 4. Otwórz nowe wystąpienie programu Visual Studio, a następnie otwórz drugie wystąpienie projektu.
 
 5. Ustaw punkt przerwania w kodzie projektu.
 
-6. W wystąpieniu programu Visual Studio, na pasku menu wybierz **debugowania** > **dołączyć do procesu**.
+6. W nowym wystąpieniu programu Visual Studio na pasku menu wybierz polecenie **Debuguj** > **Dołącz do procesu**.
 
-7. W **dołączyć do procesu** okna dialogowego w **dostępne procesy** , wybierz **XDesProc.exe**, a następnie wybierz **Dołącz** przycisku.
+7. W oknie dialogowym **Dołącz do procesu** na liście **dostępne procesy** wybierz **XDesProc. exe**, a następnie wybierz przycisk **Dołącz** .
 
      ![Proces projektanta XAML](../designers/media/xaml_attach.png)
 
      Jest to proces projektanta XAML w pierwszym wystąpieniu programu Visual Studio.
 
-8. W pierwszej kolejności programu Visual Studio, na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie**.
+8. W pierwszym wystąpieniu programu Visual Studio na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
 
-     Możesz teraz wejść w kodzie, w którym jest uruchomiony w projektancie.
+     Teraz możesz przejść do kodu działającego w projektancie.
 
-## <a name="to-disable-project-code-in-the-designer"></a>Aby wyłączyć kodu projektu w Projektancie
+## <a name="to-disable-project-code-in-the-designer"></a>Aby wyłączyć kod projektu w projektancie
 
-- W oknie dialogowym nieobsługiwany wyjątek, wybierz **kliknij tutaj, aby wyłączyć uruchamianie kodu projektu i załadować ponownie projektanta** łącza.
+- W oknie dialogowym nieobsługiwany wyjątek wybierz **pozycję kliknij tutaj, aby wyłączyć uruchamianie kodu projektu i ponownie załaduj projektanta** .
 
-- Możesz również na pasku narzędzi w **projektanta XAML**, wybierz **Wyłącz kod projektu** przycisku.
+- Alternatywnie na pasku narzędzi w **projektancie XAML**wybierz przycisk **Wyłącz kod projektu** .
 
      ![Przycisk Wyłącz kod projektu](../designers/media/xaml_disablecode.png)
 
-     Można przełączać się przycisk ponownie, aby ponownie włączyć kod projektu.
+     Można ponownie przełączyć przycisk, aby ponownie włączyć kod projektu.
 
     > [!NOTE]
-    > Dla projektów przeznaczonych dla ARM lub X64 procesorów, Visual Studio nie można uruchomić kod projektu w projektancie, więc **Wyłącz kod projektu** przycisk jest niedostępny w projektancie.
+    > W przypadku projektów przeznaczonych dla procesorów ARM lub x64 program Visual Studio nie może uruchomić kodu projektu w projektancie, dlatego przycisk **Wyłącz kod projektu** jest wyłączony w projektancie.
 
-- Jedną z opcji powoduje, że projektanta aby załadować ponownie, a następnie wyłącz cały kod dla skojarzonego projektu.
+- Każda opcja powoduje ponowne załadowanie projektanta, a następnie wyłączenie całego kodu dla skojarzonego projektu.
 
     > [!NOTE]
-    > Wyłączanie kodu projektu może prowadzić do utraty danych w czasie projektowania. Alternatywą jest, aby debugować kod uruchomiony w projektancie.
+    > Wyłączenie kodu projektu może prowadzić do utraty danych czasu projektowania. Alternatywą jest debugowanie kodu działającego w projektancie.
 
 ## <a name="control-display-options"></a>Opcje wyświetlania kontrolki
 
 > [!NOTE]
-> **Kontrolowanie opcji wyświetlania** jest dostępna tylko dla aplikacji Universal Windows Platform, których platformą docelową Windows 10 Fall Creators Update (kompilacja 16299) lub nowszej. **Opcje wyświetlania kontrolki** funkcja jest dostępna w programie Visual Studio 2017 w wersji 15.9 lub nowszej.
+> **Opcje wyświetlania kontrolki** są dostępne tylko dla aplikacji platforma uniwersalna systemu Windows, które są przeznaczone do aktualizacji Windows 10 dla twórców (kompilacja 16299) lub nowszych. Funkcja **opcji wyświetlania kontrolki** jest dostępna w programie Visual Studio 2017 w wersji 15,9 lub nowszej.
 
-W Projektancie XAML możesz zmienić opcje wyświetlania kontrolki, aby wyświetlić tylko kontrolek platformy z zestawu Windows SDK. Może to zwiększyć niezawodność projektanta XAML.
+W projektancie XAML można zmienić opcje wyświetlania kontrolki tak, aby wyświetlały tylko kontrolki platformy z Windows SDK. Może to poprawić niezawodność projektanta XAML.
 
-Aby zmienić opcje wyświetlania kontrolki, kliknij ikonę w lewej dolnej części okna projektanta, a następnie wybierz opcję w obszarze **opcje wyświetlania kontrolki**:
+Aby zmienić opcje wyświetlania kontroli, kliknij ikonę w lewym dolnym rogu okna projektanta, a następnie wybierz opcję w obszarze **Opcje wyświetlania kontrolki**:
 
 ![Opcje wyświetlania kontrolki](../designers/media/control_display_options.png)
 
-Po wybraniu **tylko formanty wyświetlania platformy**, formanty użytkownika klienta wszystkie kontrolki niestandardowe pochodzące z zestawów SDK, i uzyskać więcej informacji, nie będą renderować całości. Zamiast tego są zastępowane przez rezerwowy formanty, aby zademonstrować, rozmiar i położenie formantu.
+W przypadku wybrania opcji **tylko wyświetlanie kontrolek platformy**wszystkie kontrolki niestandardowe pochodzące z zestawów SDK, kontrolki użytkownika klienta i inne nie zostaną całkowicie wyrenderowane. Zamiast tego są one zastępowane przez kontrolki rezerwowe w celu pokazania rozmiaru i położenia formantu.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)
+- [Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

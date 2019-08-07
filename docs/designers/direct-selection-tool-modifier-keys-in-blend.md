@@ -1,5 +1,6 @@
 ---
-title: Bezpośrednie zaznaczenie klawisze modyfikujące w programie Blend
+title: Klawisze modyfikujące narzędzia Wybór bezpośredni
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -8,32 +9,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b606cbc3857ac1b30713e2c78b9c85045bcb42ff
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 088c66e73c912ef6f282b7addb8debcd73b766e5
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820388"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821823"
 ---
-# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Bezpośrednie zaznaczenie klawisze modyfikujące w programie Blend
-W poniższej tabeli przedstawiono skróty, które służy do modyfikowania kształt istniejące ścieżki **Zaznaczanie bezpośrednie** narzędzie ![narzędzia Zaznaczanie bezpośrednie](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Aby dodać lub usunąć punkty w istniejącej ścieżki lub Dołącz dwa istniejące ścieżki, użyj **pióra** narzędzia.
+# <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Wybór bezpośredni klawiszy modyfikujących narzędzia w Blend for Visual Studio
 
-|Do tej czynności|Zrób to|Wskaźnik|
+W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji kształtu istniejącej ścieżki przy użyciu narzędzia](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) **wybór bezpośredni** Zaznaczanie bezpośrednie narzędzia ![. Aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki, użyj narzędzia Pióro.
+
+|Aby wykonać tę akcję|Zrób to|Przytrzymaj|
 | - |-------------|-------------|
-|Wprowadź uchwytów są wyświetlane dla punktu na ścieżce|Kliknij przycisk punktu na ścieżce|![Wprowadź uchwytów są wyświetlane dla punktu na ścieżce](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Przesuń wskaźnik punktu|
-|Przenieś punkt na ścieżce|Przeciągnij punktu na ścieżce|![Przenieś punkt na ścieżce](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Przesuń wskaźnik punktu|
-|Wprowadź uchwytów są wyświetlane dla segmentu między dwoma punktami na ścieżce|Kliknij pozycję segment ścieżki|![Wprowadź uchwytów są wyświetlane dla segmentu między dwoma punktami na ścieżce](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Przesuń wskaźnik segmentu|
-|Przenieś segment między dwoma punktami na ścieżce|Przeciągnij segment ścieżki|![Przenieś segment między dwoma punktami na ścieżce](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Przesuń wskaźnik segmentu|
-|Zmień kąt tangens dla punktu na ścieżce|Kliknij punkt lub segment ścieżki, aby uchwytów są wyświetlane, a następnie przeciągnij jeden z punktów końcowych stycznej|![Zmień kąt tangens dla punktu na ścieżce](../designers/media/beb1a907-1e50-450c-aab3-4d7026f5e426.png)<br /><br /> Przesuń wskaźnik stycznej|
-|Wprowadzić punkt do sharp rogu lub Zmniejsz tangens od zera.|Umieść kursor nad punktem, naciśnij i przytrzymaj **Alt**, a następnie kliknij przycisk punkt|![Wprowadzić punkt do sharp rogu lub Zmniejsz tangens od zera.](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png)<br /><br /> Konwertowanie wskaźnika|
-|Wprowadź dowolnego zakątka sharp smooth (lub jeśli jest już smooth, zmień kąt krzywej przekazywanego w ramach punktu klikniętego)|Umieść kursor nad punktem, naciśnij i przytrzymaj **Alt**, a następnie przeciągnij punkt|![Wprowadź smooth dowolnego zakątka sharp](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png)<br /><br /> Konwertowanie wskaźnika|
-|Zmień segmentu krzywej do linii prostej|Umieść kursor nad segmentów w ścieżce, naciśnij i przytrzymaj **Alt**, a następnie kliknij pozycję segment|![Zmień segmentu krzywej do linii prostej](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Konwertuj segment wskaźnika|
-|Wykonaj segment i pochylić ją do krzywej do przekazywania pozycji wskaźnika|Umieść kursor nad segmentów w ścieżce, naciśnij i przytrzymaj **Alt**, a następnie przeciągnij segmentu|![Wykonaj segment i pochylić ją do krzywej do przekazywania pozycji wskaźnika](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Konwertuj segment wskaźnika|
-|Dopasuj jeden z punktów końcowych tangens niezależnie od drugiej strony|Zaznacz bezpośrednio punkt lub segment, przytrzymaj wciśnięty **Alt**, a następnie przeciągnij stycznej punktu końcowego|![Dopasuj jeden z punktów końcowych tangens niezależnie od drugiej strony](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> Konwertowanie wskaźnika stycznej|
+|Wyświetlanie uchwytów styczności dla punktu na ścieżce|Kliknij punkt na ścieżce|![Wyświetlanie uchwytów styczności dla punktu na ścieżce](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Wskaźnik przenoszenia punktu|
+|Przenoszenie punktu na ścieżce|Przeciąganie punktu na ścieżce|![Przenoszenie punktu na ścieżce](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Wskaźnik przenoszenia punktu|
+|Pojawiają się uchwyty styczne dla segmentu między dwoma punktami na ścieżce|Kliknij segment ścieżki|![Pojawiają się uchwyty styczne dla segmentu między dwoma punktami na ścieżce](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Przenieś wskaźnik segmentu|
+|Przenoszenie segmentu między dwoma punktami na ścieżce|Przeciągnij segment ścieżki|![Przenoszenie segmentu między dwoma punktami na ścieżce](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Przenieś wskaźnik segmentu|
+|Zmień kąt tangensa dla punktu na ścieżce|Kliknij punkt lub segment ścieżki, aby wyświetlić uchwyty styczne, a następnie przeciągnij jeden z punktów końcowych stycznych|![Zmień kąt styczności dla punktu na ścieżce](../designers/media/beb1a907-1e50-450c-aab3-4d7026f5e426.png)<br /><br /> Przesuń wskaźnik styczny|
+|Ustaw punkt w ostrym rogu lub Zmniejsz tangens do zera|Umieść kursor nad punktem, przytrzymaj klawisz **Alt**, a następnie kliknij punkt|![Ustaw punkt w ostrym rogu lub Zmniejsz tangens do zera](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png)<br /><br /> Konwertuj wskaźnik punktu|
+|Wygładzenie dowolnego ostrego rogu (lub, jeśli jest już gładkie, Zmień kąt krzywej w miarę przechodzenia przez kliknięty punkt)|Umieść kursor nad punktem, przytrzymaj klawisz **Alt**, a następnie przeciągnij punkt|![Sprawowanie wszelkich ostrych rogów](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png)<br /><br /> Konwertuj wskaźnik punktu|
+|Zmień segment krzywej na linię prostą|Umieść kursor nad segmentem w ścieżce, przytrzymaj klawisz **Alt**, a następnie kliknij segment.|![Zmień segment krzywej na linię prostą](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Konwertuj wskaźnik segmentu|
+|Zrób segment i zgina go do krzywej, aby przejść przez położenie wskaźnika|Umieść kursor nad segmentem w ścieżce, przytrzymaj klawisz **Alt**, a następnie przeciągnij segment|![Zrób segment i zgina go do krzywej, aby przejść przez położenie wskaźnika](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Konwertuj wskaźnik segmentu|
+|Dostosuj jeden koniec styczna niezależnie od drugiej strony|Bezpośredni — wybierz punkt lub segment, przytrzymaj klawisz **Alt**, a następnie przeciągnij punkt końcowy stycznej|![Dostosuj jeden koniec styczna niezależnie od drugiej strony](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> Konwertuj wskaźnik styczności|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Skróty klawiaturowe i klawisze modyfikujące](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Klawisze modyfikujące obszar kompozycji](../designers/artboard-modifier-keys-in-blend.md)
 - [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)
 - [Rysowanie kształtów i ścieżek](../designers/draw-shapes-and-paths.md)

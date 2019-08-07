@@ -10,28 +10,26 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58f83616985556d762ae05a0a97c6263e2e6d7a4
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892856"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821554"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Przewodnik: Wiązanie z danymi w projektancie XAML
 
-W Projektancie XAML można ustawić właściwości powiązania danych, przy użyciu obszaru roboczego i w oknie właściwości. W przykładzie w tym przewodniku pokazano, jak powiązać dane z kontrolką. W szczególności instruktażu przedstawiono sposób tworzenia prostego klasy koszyka zakupów, która ma [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) o nazwie `ItemCount`, a następnie wiążą `ItemCount` właściwości **tekstu** właściwości z [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) kontroli.
+W projektant XAML można ustawić właściwości powiązania danych przy użyciu obszaru kompozycji i okno Właściwości. W przykładzie w tym instruktażu pokazano, jak powiązać dane z kontrolką. W tym przewodniku pokazano, jak utworzyć prostą klasę koszyka zakupów o `ItemCount`nazwie [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) , `ItemCount` a następnie powiązać właściwość z właściwością **Text** formantu TextBlock. [](xref:Windows.UI.Xaml.Controls.TextBlock)
 
-## <a name="to-create-a-class-to-use-as-a-data-source"></a>Aby utworzyć klasę, aby użyć jako źródła danych
+## <a name="to-create-a-class-to-use-as-a-data-source"></a>Aby utworzyć klasę, która ma być używana jako źródło danych
 
 1. Na **pliku** menu, wybierz **New** > **projektu**.
 
-1. W **nowy projekt** okno dialogowe, wybierz opcję **Visual C#** lub **języka Visual Basic** węzła, rozwiń węzeł **pulpitu Windows** węzła, a następnie Wybierz **aplikacji WPF** szablonu.
+1. W oknie dialogowym **Nowy projekt** wybierz węzeł **Wizualizacja C#**  lub **Visual Basic** , rozwiń węzeł **pulpit systemu Windows** , a następnie wybierz szablon **Aplikacja WPF** .
 
-1. Nadaj projektowi nazwę **BindingTest**, a następnie wybierz **OK** przycisku.
+1. Nazwij projekt **BindingTest**, a następnie wybierz przycisk **OK** .
 
-1. Otwórz **MainWindow.xaml.cs** (lub **MainWindow.xaml.vb**) i Dodaj następujący kod. W języku C#, Dodaj kod w `BindingTest` przestrzeni nazw (przed ostatnim zamykającym w pliku). W języku Visual Basic wystarczy dodać nową klasę.
+1. Otwórz plik **MainWindow.XAML.cs** (lub **MainWindow. XAML. vb**) i Dodaj następujący kod. W C#programie Dodaj kod w `BindingTest` przestrzeni nazw (przed końcowym nawiasem zamykającym w pliku). W Visual Basic, po prostu Dodaj nową klasę.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -65,39 +63,39 @@ W Projektancie XAML można ustawić właściwości powiązania danych, przy uży
    End Class
    ```
 
-   Ten kod ustawia wartość 0 jako domyślna liczba elementów za pomocą [PropertyMetadata](/uwp/api/Windows.UI.Xaml.PropertyMetadata) obiektu.
+   Ten kod ustawia wartość 0 jako domyślną liczbę elementów przy użyciu obiektu [metodę PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata) .
 
-1. Na **pliku** menu, wybierz **kompilacji** > **Kompiluj rozwiązanie**.
+1. W menu **plik** wybierz polecenie **Kompiluj** > **kompilację rozwiązania**.
 
-## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Aby powiązać właściwości: ItemCount kontrolkę TextBlock
+## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Aby powiązać Właściwość ItemCount z kontrolką TextBlock
 
-1. W Eksploratorze rozwiązań Otwórz menu skrótów dla **MainWindow.xaml** i wybierz polecenie **Projektant widoków**.
+1. W Eksplorator rozwiązań otwórz menu skrótów dla **MainWindow. XAML** i wybierz polecenie **Projektant widoków**.
 
-1. W przyborniku wybierz [siatki](/uwp/api/Windows.UI.Xaml.Controls.Grid) kontroli i dodać go do formularza.
+1. W przyborniku wybierz kontrolkę [Siatka](xref:Windows.UI.Xaml.Controls.Grid) i Dodaj ją do formularza.
 
-1. Za pomocą `Grid` zaznaczone, w oknie dialogowym właściwości wybierz **New** znajdujący się obok **DataContext** właściwości.
+1. Po wybraniu w okno właściwości wybierz przycisk **Nowy** obok właściwości DataContext. `Grid`
 
-1. W **Wybieranie obiektu** okna dialogowego pole, upewnij się, że **Pokaż wszystkie zestawy** jest wyczyszczone pole wyboru, wybierz polecenie **ShoppingCart** w obszarze **BindingTest** przestrzeni nazw, a następnie wybierz **OK** przycisku.
+1. W oknie dialogowym **Wybieranie obiektu** upewnij się, że pole **wyboru Pokaż wszystkie zestawy** jest wyczyszczone, wybierz pozycję **ShoppingCart** w obszarze nazw **BindingTest** , a następnie wybierz przycisk **OK** .
 
-     Poniższa ilustracja przedstawia **Wybieranie obiektu** okno dialogowe z **ShoppingCart** wybrane.
+     Na poniższej ilustracji przedstawiono okno dialogowe **Wybieranie obiektu** z wybranym **ShoppingCart** .
 
-     ![Wybierz obiekt — okno dialogowe](../designers/media/blendselectobject.png)
+     ![Okno dialogowe Wybieranie obiektu](../designers/media/blendselectobject.png)
 
-1. W **przybornika**, wybierz `TextBlock` formantu, aby dodać go do formularza.
+1. W **przyborniku**wybierz `TextBlock` kontrolkę, aby dodać ją do formularza.
 
-1. Za pomocą `TextBlock` formant zaznaczony w oknie dialogowym właściwości wybierz znacznik właściwości po prawej stronie **tekstu** właściwości, a następnie wybierz **Utwórz powiązanie danych**. (Znacznik właściwości wygląda jak małe pole.)
+1. Po wybraniukontrolki w okno właściwości wybierz znacznik właściwości z prawej strony właściwości text, a następnie wybierz pozycję Utwórz powiązanie danych. `TextBlock` (Znacznik właściwości wygląda jak małe pole).
 
-1. W przypadku tworzenia powiązania danych okno dialogowe, w **ścieżki** wybierz **: ItemCount: (int32)** właściwości, a następnie wybierz **OK** przycisk.
+1. W oknie dialogowym Tworzenie powiązania danych w polu **ścieżka** wybierz właściwość **ItemCount: (Int32)** , a następnie wybierz przycisk **OK** .
 
-     Poniższa ilustracja przedstawia **Utwórz powiązanie danych** okno dialogowe z **: ItemCount** wybrane właściwości.
+     Na poniższej ilustracji przedstawiono okno dialogowe **Tworzenie powiązania danych** z wybraną właściwością **ItemCount** .
 
      ![Utwórz powiązanie danych — okno dialogowe](../designers/media/xaml_create_data_binding.png)
 
-1. Naciśnij klawisz **F5** do uruchomienia aplikacji.
+1. Naciśnij klawisz **F5** , aby uruchomić aplikację.
 
-     `TextBlock` Kontroli powinny pokazywać wartość domyślna 0 jako tekst.
+     `TextBlock` Kontrolka powinna wyświetlać wartość domyślną 0 jako tekst.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Dodaj konwerter wartości — okno dialogowe](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Okno dialogowe Dodawanie konwertera wartości](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)
