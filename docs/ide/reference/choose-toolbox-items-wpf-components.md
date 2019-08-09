@@ -12,76 +12,76 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744982"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869757"
 ---
-# <a name="choose-toolbox-items-wpf-components"></a>Wybierz elementy paska narzędzi, składniki WPF
+# <a name="choose-toolbox-items-wpf-components"></a>Wybieranie elementów przybornika, składniki WPF
 
-Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę formantów Windows Presentation Foundation (WPF), które są dostępne na komputerze lokalnym. Do wyświetlania tej listy, wybierz **wybierz elementy przybornika** z **narzędzia** menu, aby wyświetlić **wybierz elementy przybornika** okno dialogowe, a następnie wybierz jego **WPF Składniki** kartę. Aby posortować składniki na liście, wybierz nagłówek dowolnej kolumny.
+Na tej karcie okna dialogowego **Wybieranie elementów przybornika** zostanie wyświetlona lista kontrolek Windows Presentation Foundation (WPF) dostępnych na komputerze lokalnym. Aby wyświetlić tę listę, wybierz opcję **Wybierz elementy przybornika** z menu **Narzędzia** , aby wyświetlić okno dialogowe **Wybierz elementy przybornika** , a następnie wybierz kartę **składniki WPF** . Aby posortować składniki, zaznacz dowolny nagłówek kolumny.
 
-- Gdy zaznaczone jest pole wyboru obok składnika, ikona tych składników, będą wyświetlane w **przybornika**.
+- Po wybraniu pola wyboru obok składnika zostanie wyświetlona ikona tego składnika w **przyborniku**.
 
     > [!TIP]
-    > Aby dodać kontrolki WPF do dokumentu zawierającego projekt jest otwarty do edycji, przeciągnij jego **przybornika** ikony na powierzchnię projektową widoku. Domyślne znaczników i kodu dla składnika są wstawiane do projektu, możesz zmodyfikować. Aby uzyskać więcej informacji, zobacz [przybornika](../../ide/reference/toolbox.md).
+    > Aby dodać formant WPF do dokumentu projektu, który jest otwarty do edycji, przeciągnij jego ikonę **przybornika** na powierzchnię widok Projekt. Domyślne znaczniki i kod dla składnika są wstawiane do projektu, gotowe do modyfikacji. Aby uzyskać więcej informacji, zobacz [przybornika](../../ide/reference/toolbox.md).
 
-- Po wyczyszczeniu pola wyboru obok składnika odpowiednią ikonę zostaną usunięte z **przybornika**.
+- Gdy pole wyboru obok składnika jest wyczyszczone, odpowiadająca ikona zostanie usunięta z przybornika.
 
     > [!NOTE]
-    > Składniki .NET zainstalowany na tym komputerze pozostaną dostępne, czy ich ikony są wyświetlane w **przybornika**.
+    > Składniki platformy .NET zainstalowane na komputerze pozostają dostępne niezależnie od tego, czy ikony dla nich są wyświetlane w **przyborniku**.
 
-Kolumny na **składniki WPF** karta zawiera następujące informacje:
+Kolumny na karcie **składniki WPF** zawierają następujące informacje:
 
 **Nazwa**
 
-Wyświetla listę nazw kontrolek WPF, dla których wpisy znajdują się w rejestrze na komputerze.
+Wyświetla listę nazw formantów WPF, dla których wpisy istnieją w rejestrze komputera.
 
 **Namespace**
 
-Wyświetla hierarchię [interfejsu API platformy .NET](/dotnet/api/?view=netframework-4.7) przestrzeni nazw, który definiuje strukturę składnika. Sortuj w tej kolumnie, aby wyświetlić listę dostępnych składnikach w obrębie każdego obszaru nazw .NET zainstalowany na tym komputerze.
+Wyświetla hierarchię przestrzeni nazw [interfejsu API platformy .NET](/dotnet/api/?view=netframework-4.7) , która definiuje strukturę składnika. Sortuj według tej kolumny, aby wyświetlić listę składników dostępnych w ramach każdej przestrzeni nazw platformy .NET zainstalowanej na komputerze.
 
 **Nazwa zestawu**
 
-Wyświetla nazwę zestawu .NET, który zawiera przestrzeń nazw dla każdego składnika. Sortuj w tej kolumnie, aby wyświetlić listę przestrzeni nazw zawartych w każdym zestawie .NET zainstalowany na tym komputerze.
+Wyświetla nazwę zestawu .NET, który zawiera przestrzeń nazw dla każdego składnika. Sortuj według tej kolumny, aby wyświetlić listę przestrzeni nazw zawartych w każdym zestawie .NET zainstalowanym na komputerze.
 
-**Directory**
+**Katalogi**
 
-Wyświetla lokalizację zestawu .NET. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache. Aby uzyskać więcej informacji na temat globalnej pamięci podręcznej zestawów, zobacz [Praca z zestawami i Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Wyświetla lokalizację zestawu .NET. Domyślną lokalizacją dla wszystkich zestawów jest globalna pamięć podręczna zestawów. Aby uzyskać więcej informacji na temat globalnej pamięci podręcznej zestawów, zobacz [Work with assemblys and The Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
 ### <a name="filter"></a>Filtr
 
-Filtruje listę kontrolek WPF, w oparciu o ciąg, który należy podać w polu tekstowym. Wyświetlane są wszystkie dopasowania z dowolnego z czterech kolumn.
+Filtruje listę formantów WPF na podstawie ciągu podanym w polu tekstowym. Wyświetlane są wszystkie dopasowania z jednej z czterech kolumn.
 
-**Usuń zaznaczenie**
+**Wyczyść**
 
-Czyści ciągu filtru.
+Czyści ciąg filtru.
 
 **Przeglądaj**
 
-Otwiera **Otwórz** okno dialogowe, które umożliwia przejście do zespołów, które zawierają formanty WPF. Umożliwia ładowanie zestawów, które nie znajdują się w globalnej pamięci podręcznej zestawów.
+Otwiera okno dialogowe **otwieranie** , które umożliwia przejście do zestawów, które zawierają kontrolki WPF. Użyj tego do ładowania zestawów, które nie znajdują się w globalnej pamięci podręcznej zestawów.
 
 **Język**
 
-Pokazuje zlokalizowanego języka zestawu, który zawiera wybranej kontrolki WPF.
+Pokazuje zlokalizowany język zestawu, który zawiera wybraną kontrolkę WPF.
 
 ## <a name="limitations"></a>Ograniczenia
 
-Dodawanie niestandardowego formantu lub <xref:System.Windows.Controls.UserControl> do przybornika ma następujące ograniczenia:
+Dodawanie kontrolki niestandardowej lub <xref:System.Windows.Controls.UserControl> przybornika ma następujące ograniczenia:
 
-- Działa tylko w przypadku kontrolek niestandardowych, zdefiniowanych poza bieżącym projekcie.
+- Działa tylko w przypadku kontrolek niestandardowych zdefiniowanych poza bieżącym projektem.
 
-- Nie jest aktualizowany poprawnie po zmianie konfiguracji rozwiązania z debugowania na wydanie lub wersja do debugowania. Jest to spowodowane odwołania nie jest odwołanie do projektu, ale zamiast tego jest dla zestawu na dysku. Jeśli kontrolka jest częścią bieżącego rozwiązania, gdy zmienią się z poziomu pozycji Debuguj wydania, projekt w dalszym ciągu odwoływać się do kontroli wersji do debugowania.
+- Usługa nie jest aktualizowana prawidłowo w przypadku zmiany konfiguracji rozwiązania z debugowania na wydanie lub z wersji do debugowania. Wynika to z faktu, że odwołanie nie jest odwołaniem do projektu, ale jest przeznaczone dla zestawu na dysku. Jeśli formant jest częścią bieżącego rozwiązania, w przypadku zmiany z debugowania na wydanie, projekt nadal odwołuje się do wersji debugowania formantu.
 
-Ponadto, jeśli metadanych w czasie projektowania jest stosowany do formantu niestandardowego i metadane Określa, że <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> ustawiono `false`, formant nie jest wyświetlana w przyborniku.
+Ponadto, jeśli metadane czasu projektowania są stosowane do kontrolki niestandardowej, a metadane określają, że dla [Microsoft. Windows. Design. ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) jest ustawiona wartość `false`, formant nie jest wyświetlany w przyborniku.
 
-Możesz odwoływać się kontrolkom bezpośrednio w widoku XAML przez mapowanie przestrzeni nazw i zestawu dla formantu.
+Możesz odwoływać się do kontrolek bezpośrednio w widoku XAML, mapując przestrzeń nazw i zestaw dla kontrolki.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Przybornik](../../ide/reference/toolbox.md)
-- [Wprowadzenie do korzystania z platformy WPF](../../designers/getting-started-with-wpf.md)
+- [Rozpoczynanie pracy z aparatem WPF](../../designers/getting-started-with-wpf.md)

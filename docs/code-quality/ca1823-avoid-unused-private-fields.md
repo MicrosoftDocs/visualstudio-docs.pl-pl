@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d7f521927497a50779d77c4d7bdd8520ac222f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47a2ad3b64055584551a63a2333e29286783d8cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545257"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921359"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Unikaj nieużywanych pól prywatnych
 
@@ -28,25 +28,25 @@ ms.locfileid: "62545257"
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła jest zgłaszany, gdy istnieje pole private w kodzie, ale nie jest używany przez wszystkie ścieżce kodu.
+Ta reguła jest raportowana, gdy istnieje pole prywatne w kodzie, ale nie jest ono używane przez żadną ścieżkę kodu.
 
 ## <a name="rule-description"></a>Opis reguły
- Zostały wykryte pola prywatne, które w zestawie nie są widoczne jako dostępne.
+Zostały wykryte pola prywatne, które w zestawie nie są widoczne jako dostępne.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, usuń pole, lub Dodaj kod, który korzysta z niego.
+Aby naprawić naruszenie tej reguły, Usuń pole lub Dodaj kod, który go używa.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły.
+Można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Usuń nieużywane elementy lokalne](../code-quality/ca1804-remove-unused-locals.md)
 
- [CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61eced11a61b8da92d01d26c0e66ad5d9c49f72d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2dae77bf7783edc165305f9b3ba60969d4f126a8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778775"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922895"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Moduły wyliczające powinny być silnie typizowane
 
@@ -31,7 +31,7 @@ ms.locfileid: "62778775"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny lub chroniony implementuje <xref:System.Collections.IEnumerator?displayProperty=fullName> , ale nie udostępnia silnie typizowanej wersji <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> właściwości. Wyjątek od tej reguły są typy, które są uzyskiwane z następujących typów:
+Typ publiczny lub chroniony implementuje <xref:System.Collections.IEnumerator?displayProperty=fullName> , <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> ale nie zapewnia jednoznacznie wpisanej wersji właściwości. Typy, które pochodzą z następujących typów, są wykluczone z tej reguły:
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
@@ -40,23 +40,23 @@ ms.locfileid: "62778775"
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła wymaga <xref:System.Collections.IEnumerator> implementacji w celu dostarczenia silnie typizowanej wersji <xref:System.Collections.IEnumerator.Current%2A> właściwość tak, aby użytkownicy nie musieli rzutować wartości zwróconej na typ silny, używając funkcje, które są dostarczane przez interfejs. Reguła ta zakłada, że typ, który zawiera <xref:System.Collections.IEnumerator> zawiera kolekcję wystąpień typów mocniejszych niż <xref:System.Object>.
+Ta reguła wymaga <xref:System.Collections.IEnumerator> , aby implementacje zapewniały również silnie wpisaną <xref:System.Collections.IEnumerator.Current%2A> wersję właściwości, dzięki czemu użytkownicy nie muszą rzutować wartości zwracanej na typ Strong, gdy korzystają z funkcjonalności dostarczonej przez interfejs. Ta reguła zakłada, że typ, który <xref:System.Collections.IEnumerator> implementuje zawiera kolekcję wystąpień typu, który jest silniejszy niż. <xref:System.Object>
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, implementują właściwość interfejsu jawnego (Zadeklaruj go jako `IEnumerator.Current`). Dodaj publiczny silnie typizowanej wersji właściwości zadeklarowane jako `Current`, i zwraca obiekt silnie typizowanych.
+Aby naprawić naruszenie tej reguły, zaimplementuj jawnie Właściwość interfejsu (Zadeklaruj ją jako `IEnumerator.Current`). Dodaj publiczną silnie wpisaną wersję właściwości, zadeklarowaną jako `Current`i zwracającą silnie wpisaną obiekt.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, podczas implementowania oparte na obiekt modułu wyliczającego do użytku z kolekcją obiektów, takich jak drzewa binarnego. Typy, które rozszerzają Nowa kolekcja będzie Definiowanie silnie typizowanej modułu wyliczającego i ujawniać silnie typizowane właściwości.
+Pomiń ostrzeżenie z tej reguły podczas implementowania modułu wyliczającego opartego na obiektach do użycia z kolekcją opartą na obiektach, taką jak drzewo binarne. Typy, które zwiększają nową kolekcję, definiują silnie jednoznacznie zdefiniowany moduł wyliczający i uwidaczniają właściwość o jednoznacznie określonym typie.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia właściwy sposób implementacji silnie typizowaną <xref:System.Collections.IEnumerator> typu.
+Poniższy przykład ilustruje poprawny sposób implementacji typu silnie określonego <xref:System.Collections.IEnumerator> .
 
- [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
+[!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1035: Implementacje interfejsu ICollection mają silnie typizowane składowe](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+[CA1035: Implementacje ICollection mają jednoznacznie wpisane elementy członkowskie](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039: Listy są silnie typizowane](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039: Listy są silnie wpisane](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Zobacz także
 

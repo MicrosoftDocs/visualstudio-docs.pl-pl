@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc6db6dff5ee4c4e4d387399dbf79277046d6c02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b3c3fe41332d488d180ddafbedfe29da1a3855e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797449"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921787"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Nie używaj czasomierzy, które uniemożliwiają zmiany stanu zasilania
 
@@ -27,17 +27,17 @@ ms.locfileid: "62797449"
 |-|-|
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|
 |CheckId|CA1601|
-|Kategoria|Microsoft.Mobility|
+|Kategoria|Microsoft. Mobility|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Czasomierz został interwał występuje więcej niż jeden raz na sekundę.
+Czasomierz ma ustawiony interwał, który ma być wykonywany więcej niż jeden raz na sekundę.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie częściej niż jeden raz na sekundę lub użyj czasomierzy, które występować częściej niż jeden sondowania czas na sekundę. Wyższa częstotliwość działań okresowych sprawi, że procesor będzie zajęty, co zakłóci działanie czasomierzy bezczynności oszczędzających energię, które wyłączają ekran i dyski twarde.
+Nie sondowaj więcej niż jeden raz na sekundę lub użyj czasomierzy, które wystąpiły częściej niż jeden raz na sekundę. Wyższa częstotliwość działań okresowych sprawi, że procesor będzie zajęty, co zakłóci działanie czasomierzy bezczynności oszczędzających energię, które wyłączają ekran i dyski twarde.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ustaw czasomierz interwałów występuje mniej niż jeden raz na sekundę.
+Ustaw interwały czasomierza, które mają być wykonywane krócej niż jeden raz na sekundę.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Ta reguła ma być pomijana, tylko wtedy, gdy wyzwalania czasomierza więcej niż jeden raz na sekundę jest wymagany i zagadnienia dotyczące mobilności można bezpiecznie zignorować.
+Ta reguła powinna być pomijana tylko wtedy, gdy jest wymagane wyzwolenie czasomierza więcej niż jeden raz na sekundę, a zagadnienia dotyczące mobilności można bezpiecznie zignorować.

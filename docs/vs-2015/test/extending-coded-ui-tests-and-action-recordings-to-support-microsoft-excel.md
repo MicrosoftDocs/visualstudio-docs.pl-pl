@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel | Dokumentacja firmy Microsoft
+title: Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji do obsługi programu Microsoft Excel | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,74 +8,74 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a85676fca972bb0d2d91f5ffd7c7cbf95bfc68c8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6eb44970cc29198ad9044281e566727a64b893c8
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686391"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871564"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Struktura testowania kodowane testy interfejsu użytkownika i nagrywania akcji nie obsługuje Każdy przykładowy interfejs użytkownika. Nie obsługuje określonego interfejsu użytkownika, który ma zostać przetestowana. Na przykład nie można bezpośrednio utworzyć kodowany test interfejsu użytkownika lub nagranie akcji dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] arkusza kalkulacyjnego. Można jednak utworzyć własne rozszerzenie struktury kodowanych testów interfejsu użytkownika, obsługujące określonych interfejs użytkownika dzięki wykorzystaniu możliwości rozszerzania Framework kodowanego testu interfejsu użytkownika. Poniższy temat przedstawiono przykładowy sposób rozszerzyć środowisko obsługuje tworzenie kodowanych testów interfejsu użytkownika i nagrywania akcji dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Aby uzyskać więcej informacji na temat platform, które są obsługiwane, zobacz [obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
-  
- **Wymagania**  
-  
-- Visual Studio Enterprise  
-  
-  W tej sekcji przedstawiono kodowane rozszerzenia testu interfejsu użytkownika, który można nagrywać i odtwarzać testy w arkuszu kalkulacyjnym programu Excel. Każda część rozszerzenie zostało wyjaśnione w tej sekcji i w komentarzach do kodu dla deweloperów, którzy chcą tworzyć tylko takie rozszerzenie.  
-  
-  ![Architektura testu interfejsu użytkownika](../test/media/ui-testarch.png "UI_TestArch")  
-  Omówienie architektury  
-  
-## <a name="download-the-sample"></a>Pobierz przykład  
- Przykład składa się z czterema projektami w `CodedUIExtensibilitySample.sln` rozwiązania:  
-  
-- CodedUIextensibilitySample  
-  
-- ExcelCodedUIAddInHelper  
-  
-- ExcelUICommunicationHelper  
-  
-- SampleTestProject  
-  
-  Pobierz próbkę z tego [wpis w blogu](http://go.microsoft.com/fwlink/?LinkID=185592).  
-  
+Struktura testowania dla kodowanych testów interfejsu użytkownika i nagrań akcji nie obsługuje każdego możliwego interfejsu użytkownika. Może nie obsługiwać określonego interfejsu użytkownika, który ma zostać przetestowany. Na przykład nie można natychmiast utworzyć kodowanego testu interfejsu użytkownika lub rejestrowania akcji dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] arkusza kalkulacyjnego. Można jednak utworzyć własne rozszerzenie dla struktury kodowanego testu interfejsu użytkownika, która będzie obsługiwała konkretny interfejs użytkownika, wykorzystując rozszerzalność kodowanego środowiska testowania interfejsu użytkownika. Poniższy temat zawiera przykład sposobu rozszerzającej strukturę programu w celu obsługi tworzenia kodowanych testów interfejsu użytkownika i nagrań akcji dla programu [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Aby uzyskać więcej informacji na temat obsługiwanych platform, zobacz [obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
+
+ **Wymagania**
+
+- Visual Studio Enterprise
+
+  W tej sekcji przedstawiono rozszerzenie kodowanego testu interfejsu użytkownika, które umożliwia rejestrowanie i odtwarzanie testów w arkuszach programu Excel. Każda część rozszerzenia została omówiona w tej sekcji i komentarze do kodu dla deweloperów, którzy chcą utworzyć takie rozszerzenie.
+
+  ![Architektura testu interfejsu użytkownika](../test/media/ui-testarch.png "UI_TestArch") Przegląd architektury
+
+## <a name="download-the-sample"></a>Pobierz przykład
+ Przykład składa się z czterech projektów w `CodedUIExtensibilitySample.sln` rozwiązaniu:
+
+- CodedUIextensibilitySample
+
+- ExcelCodedUIAddInHelper
+
+- ExcelUICommunicationHelper
+
+- SampleTestProject
+
+  Pobierz przykład z tego [wpisu w blogu](http://go.microsoft.com/fwlink/?LinkID=185592).
+
 > [!NOTE]
-> Przykład jest przeznaczony do użytku z programem Microsoft Excel 2010. Próbki mogą działać z innymi wersjami programu Microsoft Excel, ale nie jest obecnie obsługiwane.  
-  
-## <a name="details-about-the-sample"></a>Szczegółowe informacje o przykładzie  
- Poniższe sekcje zawierają informacje o przykładu i jego strukturę.  
-  
-### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft dodatek programu Excel: ExcelCodedUIAddinHelper  
- Ten projekt zawiera dodatek, który działa w procesie programu Excel. Zobacz [przykładowy dodatek Excel dla kodowanych testów interfejsu użytkownika](../test/sample-excel-add-in-for-coded-ui-testing.md) krótki przegląd projektu dodatku.  
-  
- Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla programu Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
-  
-### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Komunikacja interfejsu użytkownika programu Excel: ExcelUIcommunicationHelper  
- Ten projekt zawiera `IExcelUICommunication` interfejsu i klasy informacje, które są używane do przekazywania danych między struktury testowania kodowanego interfejsu użytkownika i program Excel. Aby uzyskać więcej informacji, zobacz [interfejs komunikatora programu Excel przykładowe](../test/sample-excel-communicator-interface.md).  
-  
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Rozszerzenie testu kodowanego interfejsu użytkownika: CodedUIExentsibilitySample  
- Ten projekt zawiera niestandardowych klas, które są używane w testach arkusza programu Excel. Kod dla każdego z tych klas jest dość oczywiste. Jednak firma Microsoft zapewnia krótki opis każdej klasy niestandardowej. Aby uzyskać więcej informacji, zobacz [rozszerzenie kodowanych testów interfejsu użytkownika przykładowe dla programu Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
-  
-### <a name="deploying-your-add-in-and-extension"></a>Wdrażanie usługi dodatku i rozszerzenia  
- Po utworzeniu wszystkich projektów i obiekty, uruchom podane `CopyDrop.bat` pliku jako administrator. Kopiuje ten plik `ExcelCodedUIAddinHelper` plików DLL i pliku PDB do:  
-  
- "`%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\<version number>\UITestExtensionPackages\*.*`", gdzie numer wersji może być 11.0, 12.0 itp., zależnie od wersji programu Visual Studio.  
-  
- `ExcelUICommunicationHelper` DLL i pliku PDB, pliki są kopiowane do `"%ProgramFiles(x86)%\Microsoft Visual Studio <version number>\Common7\IDE\PrivateAssemblies”`.  
-  
- Może być konieczne dostosowanie ścieżki dokładna kopia, ale instalacja dodatkowych nie jest wymagane. Na komputerze 64-bitowym, należy użyć 32-bitowy wiersz polecenia programu Visual Studio Enterprise do uruchomienia `CopyDrop.bat` pliku.  
-  
-### <a name="testing-excel-with-the-sampletestproject"></a>Testowanie programu Excel z SampleTestProject  
- Możesz uruchomić test w projekcie testowym podana, który używa określonej wersji programu Excel może nie mieć, lub utworzenie projektu testowego i nagraj test własne. Aby uzyskać więcej informacji, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)   
- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+> Przykład jest przeznaczony do użycia z programem Microsoft Excel 2010. Przykład może współdziałać z innymi wersjami programu Microsoft Excel, ale nie jest obecnie obsługiwany.
+
+## <a name="details-about-the-sample"></a>Szczegóły przykładu
+ Poniższe sekcje zawierają informacje dotyczące przykładu i jego struktury.
+
+### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Dodatek programu Microsoft Excel: ExcelCodedUIAddinHelper
+ Ten projekt zawiera dodatek, który działa w procesie programu Excel. Zobacz [Przykładowy dodatek programu Excel dla kodowanych testów interfejsu użytkownika](../test/sample-excel-add-in-for-coded-ui-testing.md) , aby zapoznać się z krótkim omówieniem projektu dodatku.
+
+ Aby uzyskać więcej informacji, [zobacz Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).
+
+### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Komunikacja interfejsu użytkownika programu Excel: ExcelUIcommunicationHelper
+ Ten projekt zawiera `IExcelUICommunication` interfejs i klasy informacji, które są używane do przekazywania danych między strukturą kodowanego testowania interfejsu użytkownika i programem Excel. Aby uzyskać więcej informacji, zobacz [przykładowy interfejs programu Excel Communicator](../test/sample-excel-communicator-interface.md).
+
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Rozszerzenie kodowanego testu interfejsu użytkownika: CodedUIExentsibilitySample
+ Ten projekt zawiera klasy niestandardowe, które są używane w testach arkusza programu Excel. Kod dla każdej z tych klas jest dość oczywisty. Jednak udostępniamy Krótki opis każdej klasy niestandardowej. Aby uzyskać więcej informacji, zobacz [przykładowe rozszerzenie kodowanego testu interfejsu użytkownika dla programu Excel](../test/sample-coded-ui-test-extension-for-excel.md).
+
+### <a name="deploying-your-add-in-and-extension"></a>Wdrażanie dodatku i rozszerzenia
+ Po utworzeniu wszystkich projektów i obiektów Uruchom udostępniony `CopyDrop.bat` plik jako administrator. Ten plik kopiuje pliki `ExcelCodedUIAddinHelper` dll i PDB do programu:
+
+ "`%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\<version number>\UITestExtensionPackages\*.*`", gdzie numer wersji to 11,0, 12,0 itd. w oparciu o wersję programu Visual Studio.
+
+ Pliki dll i PDB są kopiowane do `"%ProgramFiles(x86)%\Microsoft Visual Studio <version number>\Common7\IDE\PrivateAssemblies”`programu. `ExcelUICommunicationHelper`
+
+ Może być konieczne dostosowanie dokładnej ścieżki kopii, ale nie jest wymagana żadna dodatkowa Instalacja. Na komputerze 64-bitowym należy użyć wiersza polecenia 32-bit Visual Studio Enterprise, aby uruchomić `CopyDrop.bat` plik.
+
+### <a name="testing-excel-with-the-sampletestproject"></a>Testowanie programu Excel przy użyciu SampleTestProject
+ Test można uruchomić w podanym projekcie testowym, który używa określonej wersji programu Excel, która nie istnieje, lub utworzyć własny projekt testowy i nagrać test własny. Aby uzyskać więcej informacji, zobacz [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
+
+## <a name="see-also"></a>Zobacz także
+
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
+- [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
+- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
+- [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
+- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

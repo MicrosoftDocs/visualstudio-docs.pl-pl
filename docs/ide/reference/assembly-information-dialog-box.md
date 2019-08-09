@@ -12,42 +12,57 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c5420839d97fb62797d0f739ce62da4d14b340b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744885"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870766"
 ---
 # <a name="assembly-information-dialog-box"></a>Informacje o zestawie — Okno dialogowe
-**Informacje o zestawie** okno dialogowe służy do określania wartości atrybutów globalnej .NET Framework, które są przechowywane w pliku AssemblyInfo tworzone automatycznie w projekcie. W **Eksploratora rozwiązań**, plik znajduje się w **mój projekt** w węźle [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (kliknij **Pokaż wszystkie pliki** do jego wyświetlania); znajduje się w obszarze  **Właściwości** w [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Aby uzyskać więcej informacji na temat atrybutów zestawu, zobacz [atrybuty](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
 
- Aby otworzyć to okno dialogowe, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **aplikacji** kartę. Na **aplikacji** kliknij **informacje o zestawie** przycisku.
+Okno dialogowe informacje o zestawie służy do określania wartości .NET Framework globalnych atrybutów zestawu, które są przechowywane w pliku AssemblyInfo tworzonym automatycznie przy użyciu projektu. W Eksplorator rozwiązań, plik AssemblyInfo znajduje się w węźle **My Project** dla Visual Basic projektów (kliknij przycisk **Pokaż wszystkie pliki** , aby go wyświetlić). W C# przypadku projektów znajduje się ona w obszarze **Właściwości**. Aby uzyskać więcej informacji, zobacz [atrybutyC#()](/dotnet/csharp/programming-guide/concepts/attributes/index).
 
-## <a name="uielement-list"></a>Lista elementów UI
- **Tytuł** Określa tytuł manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyTitleAttribute>.
+Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** wybierz polecenie **Właściwości**. Na stronie **aplikacja** wybierz przycisk **Informacje o zestawie** .
 
- **Opis** określa opcjonalny opis do manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyDescriptionAttribute>.
+## <a name="uielement-list"></a>Lista elementów UIElement
 
- **Firma** Określa nazwę firmy na potrzeby manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyCompanyAttribute>.
+**Tytuły**\
+Określa tytuł manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyTitleAttribute>do.
 
- **Produkt** Określa nazwę produktu do manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyProductAttribute>.
+**Zharmonizowan**\
+Określa opcjonalny opis manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyDescriptionAttribute>do.
 
- **O prawach autorskich** określa informacje o prawach autorskich do manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyCopyrightAttribute>.
+**Przedsiębiorstwo**\
+Określa nazwę firmy dla manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyCompanyAttribute>do.
 
- **Znak towarowy** określa znakiem towarowym firmy do manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyTrademarkAttribute>.
+Możesz ustawić lub zmienić wartość domyślną dla firmy w rejestrze. Wyszukaj wartość **RegisteredOrganization** w obszarze **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** lub **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion** klucz, w zależności od używanej wersji systemu Windows.
 
- **Wersja zestawu** Określa wersję zestawu. Odnosi się do <xref:System.Reflection.AssemblyVersionAttribute>.
+**Iloczyn**\
+Określa nazwę produktu dla manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyProductAttribute>do.
 
- **Wersja pliku** Określa numer wersji, która instruuje kompilator, aby użyć określonej wersji dla zasobu wersji pliku systemu Win32. Odnosi się do <xref:System.Reflection.AssemblyFileVersionAttribute>.
+**Prawo**\
+Określa informacje o prawach autorskich dla manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyCopyrightAttribute>do.
 
- **Identyfikator GUID** Unikatowy identyfikator GUID, który identyfikuje zestaw. Podczas tworzenia projektu Visual Studio generuje identyfikator GUID dla zestawu. Odnosi się do <xref:System.Guid>.
+**Handlowych**\
+Określa znak towarowy dla manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyTrademarkAttribute>do.
 
- **Niezależny od języka** Określa, które obsługuje zestaw kultury. Odnosi się do <xref:System.Resources.NeutralResourcesLanguageAttribute>. Wartość domyślna to **(Brak)** .
+**Wersja zestawu**\
+Określa numer wersji zestawu. Odnosi się <xref:System.Reflection.AssemblyVersionAttribute>do.
 
- **Wprowadź zestawu widoczne dla modelu COM** Określa, czy typy w zestawie będzie dostępna dla modelu COM. Odnosi się do <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
+**Wersja pliku**\
+Określa numer wersji, który instruuje kompilator, aby używał określonej wersji dla zasobu wersji plików Win32. Odnosi się <xref:System.Reflection.AssemblyFileVersionAttribute>do.
 
-## <a name="see-also"></a>Zobacz też
+**IDENT**\
+Unikatowy identyfikator GUID, który identyfikuje zestaw. Podczas tworzenia projektu program Visual Studio generuje identyfikator GUID dla zestawu. Odnosi się <xref:System.Guid>do.
+
+**Język neutralny**\
+Określa kulturę obsługiwaną przez zestaw. Odnosi się <xref:System.Resources.NeutralResourcesLanguageAttribute>do. Wartość domyślna to **(brak)** .
+
+**Ustaw zestaw COM jako widoczny**\
+Określa, czy typy w zestawie będą dostępne dla modelu COM. Odnosi się <xref:System.Runtime.InteropServices.ComVisibleAttribute>do.
+
+## <a name="see-also"></a>Zobacz także
 
 - [Strona aplikacji, Projektant projektu (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Atrybuty](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

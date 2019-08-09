@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd8ee08b53ef3f9216edcb67ebcdbe6c4978bb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10db644fe4cf65a7336ef8bd50dcf62e072e1c46
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778847"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922955"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Metody interfejsu powinny móc zostać wywołane przez typy podrzędne
 
@@ -28,26 +28,26 @@ ms.locfileid: "62778847"
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Niezapieczętowany typ widoczny na zewnątrz zapewnia jawną implementację metody interfejsu publicznego i nie dostarcza alternatywnej metody widocznej z zewnątrz o tej samej nazwie.
+Niezapieczętowany typ widoczny na zewnątrz zapewnia jawną implementację metody interfejsu publicznego i nie dostarcza alternatywnej metody widocznej z zewnątrz o tej samej nazwie.
 
 ## <a name="rule-description"></a>Opis reguły
- Należy wziąć pod uwagę typu podstawowego, który jawnie implementuje metodę interfejsu publicznego. Typ, który pochodzi od typu podstawowego mogą uzyskiwać dostęp do metody dziedziczony interfejs wyłącznie za pośrednictwem odwołanie do bieżącego wystąpienia (`this` w języku C#), jest rzutowane na interfejs. Jeśli typ pochodny reimplements (jawne) metoda dziedziczony interfejs, Podstawowa implementacja nie jest już możliwy. Wywołanie przez odwołanie do bieżącego wystąpienia wywoła pochodnej; Powoduje to rekursji i przepełnienie stosu ostateczną.
+Rozważmy typ podstawowy, który jawnie implementuje metodę interfejsu publicznego. Typ, który pochodzi od typu podstawowego, może uzyskać dostęp do dziedziczonej metody interfejsu tylko za pośrednictwem odwołania do bieżącego`this` wystąpienia C#(w), które jest rzutowane do interfejsu. Jeśli typ pochodny ponownie implementuje metodę dziedziczonego interfejsu (jawnie), nie można już uzyskać dostępu do implementacji podstawowej. Wywołanie przez odwołanie do bieżącego wystąpienia wywoła implementację pochodną; powoduje to rekursję i ostateczne przepełnienie stosu.
 
- Ta zasada zgłasza naruszenie dla jawnych implementacji <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> gdy jest to widoczne na zewnątrz `Close()` lub `System.IDisposable.Dispose(Boolean)` podana metoda.
+Ta zasada nie zgłasza naruszenia dla jawnej implementacji <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> , gdy podano zewnętrznie widoczną `Close()` lub `System.IDisposable.Dispose(Boolean)` metodę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, zaimplementuj nową metodę uwidacznia taką samą funkcjonalność, która jest widoczna dla typów pochodnych, lub zmień niejawne implementacji. Jeśli istotną zmianę, alternatywą jest zapewnienie typu zapieczętowany.
+Aby naprawić naruszenie tej reguły, zaimplementuj nową metodę, która uwidacznia te same funkcje i jest widoczna dla typów pochodnych lub Zmień na niejawną implementację. W przypadku akceptowalnej zmiany istotne jest, aby typ był zapieczętowany.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli metoda widoczna na zewnątrz, ma taką samą funkcjonalność, ale inną nazwę niż metoda jawnie implementowane.
+Jeśli podano zewnętrznie widoczną metodę, która ma taką samą funkcjonalność, ale inną niż jawnie zaimplementowaną metodę, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano typu, `ViolatingBase`, który narusza regułę i typu `FixedBase`, który zawiera poprawkę rozwiązującą naruszenia.
+Poniższy przykład pokazuje typ, `ViolatingBase`, który narusza regułę i typ, `FixedBase`, który pokazuje poprawkę dla naruszenia.
 
- [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
+[!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
 
 ## <a name="see-also"></a>Zobacz także
- [Interfejsy](/dotnet/csharp/programming-guide/interfaces/index)
+[Interfejsy](/dotnet/csharp/programming-guide/interfaces/index)

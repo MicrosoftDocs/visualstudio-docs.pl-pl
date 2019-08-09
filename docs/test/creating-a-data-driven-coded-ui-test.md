@@ -1,5 +1,5 @@
 ---
-title: Samouczek kodowanego testu interfejsu użytkownika opartego na danych
+title: Samouczek kodowanych testów interfejsu użytkownika opartych na danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3c9837f1babf3cb37d99eb1bb74c2c35c05eff9
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785451"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870319"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie opartych na danych kodowanego testu interfejsu użytkownika
 
@@ -64,11 +64,11 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
    }
    ```
 
-5. Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w metodzie testowej, powyżej, otwórz menu kontekstowe i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
+5. Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
 
     Wynik testu, który pokazuje, jeśli test zakończony powodzeniem lub niepowodzeniem jest wyświetlana w **Eksploratora testów** okna. Aby otworzyć okno Eksploratora testów z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.
 
-6. Ponieważ źródła danych można również o wprowadzenie wartości parametrów potwierdzenie — które są używane przez test, aby zweryfikować oczekiwane wartości — Dodajmy potwierdzenie można zweryfikować, czy sumę dwóch liczb jest poprawna. Umieść kursor w metodzie testowej, powyżej, otwórz menu kontekstowe i wybierz polecenie **Generuj kod dla kodowanego testu interfejsu użytkownika**, a następnie **Użyj Konstruktor kodowanego testu IU**.
+6. Ponieważ źródła danych można również o wprowadzenie wartości parametrów potwierdzenie — które są używane przez test, aby zweryfikować oczekiwane wartości — Dodajmy potwierdzenie można zweryfikować, czy sumę dwóch liczb jest poprawna. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Generuj kod dla kodowanego testu interfejsu**użytkownika, a następnie **Użyj konstruktora KODOWANEGO testu interfejsu użytkownika**.
 
     Mapowanie kontrolki tekstu w kalkulatorze, który wyświetla sumę.
 
@@ -92,7 +92,7 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
    }
    ```
 
-9. Sprawdź, czy test działa przy użyciu `ValidateSum()` metody. Umieść kursor w metodzie testowej, powyżej, otwórz menu kontekstowe i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
+9. Sprawdź, czy test działa przy użyciu `ValidateSum()` metody. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
 
      W tym momencie wszystkich wartości parametrów są definiowane w ich metod jako stałe. Następnie utworzymy zestaw danych umożliwiają naszym teście opartych na danych.
 
@@ -203,7 +203,7 @@ Powinien zostać wyświetlony testu za pomocą trzech iteracji, używając warto
 
 ### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Co to są atrybuty źródła danych dla innych typów źródła danych, takich jak program SQL Express lub XML?
 
-**ODP.:** W poniższej tabeli można użyć parametry źródła danych przykładowych, kopiując je do kodu i dokonując wymaganych dostosowaniach.
+**Z** W poniższej tabeli można użyć parametry źródła danych przykładowych, kopiując je do kodu i dokonując wymaganych dostosowaniach.
 
 **Typy źródeł danych i atrybuty**
 
@@ -227,15 +227,15 @@ Powinien zostać wyświetlony testu za pomocą trzech iteracji, używając warto
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>PYT.: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>PYTANIA Dlaczego nie mogę zmodyfikować kodu w pliku UIMap. Designer?
 
-**ODP.:** Dowolny kod zmiany wprowadzone w oknie *UIMapDesigner.cs* pliku zostaną zastąpione za każdym razem, gdy generowanie kodu za pomocą UIMap - kodowanego testu interfejsu użytkownika. W tym przykładzie i w większości przypadków, zmiany kodu wymaganego do włączenia testów korzystających ze źródła danych może przyjąć pliku z kodem źródłowym testu (czyli *CodedUITest1.cs*).
+**Z** Wszelkie zmiany kodu wprowadzone w pliku *UIMapDesigner.cs* zostaną nadpisywane przy każdym wygenerowaniu kodu za pomocą konstruktora kodowanego testu interfejsu użytkownika UIMap. W tym przykładzie i w większości przypadków, zmiany kodu wymaganego do włączenia testów korzystających ze źródła danych może przyjąć pliku z kodem źródłowym testu (czyli *CodedUITest1.cs*).
 
 Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować go do *UIMap.cs* plików i zmień jego nazwę. *UIMap.cs* pliku może służyć do zastępowania metod i właściwości w *UIMapDesigner.cs* pliku. Należy usunąć odniesienia do oryginalnej metody w kodowany *UITest.cs* plik i zastąp go nazwą metody o zmienionej nazwie.
 
 ## <a name="see-also"></a>Zobacz także
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
 - [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)

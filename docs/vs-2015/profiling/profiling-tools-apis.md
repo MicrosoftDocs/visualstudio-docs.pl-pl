@@ -1,5 +1,5 @@
 ---
-title: Interfejsy API narzędzi profilowania | Dokumentacja firmy Microsoft
+title: Interfejsy API narzędzia profilowania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,30 +9,30 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cabd90c249f4ea725987586874544de5772887ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2dc5477055969ca9c9424d5cd51f34f12a411579
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160364"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871596"
 ---
 # <a name="profiling-tools-apis"></a>Interfejsy API narzędzi profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz wstawić zarządzane lub natywne metody z interfejsów API [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools do kontroli zbierania danych profilowania. Ta sekcja opisuje metody interfejsów API oraz sposobu ich używania.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Dokumentacja interfejsów API profilera programu Visual Studio (natywnych)](../profiling/visual-studio-profiler-api-reference-native.md)  
- W tym artykule opisano metody C++ Profiling Tools.  
-  
- <xref:Microsoft.VisualStudio.Profiler>  
- W tym artykule opisano metody .NET Profiling Tools.  
-  
- [Przewodnik: Korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)  
- Dowiedz się, jak używać metod .NET Profiling Tools, w tym przykładzie ukończone.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)  
-  
-## <a name="see-also"></a>Zobacz też  
+Można wstawić metody zarządzane lub natywne interfejsów API [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzia profilowania, aby kontrolować zbieranie danych w ramach przebiegu profilowania. W tej sekcji opisano metody interfejsów API i opisano, jak ich używać.
+
+## <a name="in-this-section"></a>W tej sekcji
+ [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)\
+ Opisuje metody C++ narzędzia profilowania.
+
+ [Profilera](/previous-versions/ms242704(v=vs.140))\
+ Opisuje metody narzędzia profilowania .NET.
+
+ [Przewodnik: Korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)\
+ Dowiedz się, jak korzystać z metod narzędzia profilowania .NET w tym kompletnym przykładzie.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+ [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)
+
+## <a name="see-also"></a>Zobacz też
  [Eksplorator wydajności](../profiling/performance-explorer.md)

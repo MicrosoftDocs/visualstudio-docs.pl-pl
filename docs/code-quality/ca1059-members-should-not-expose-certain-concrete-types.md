@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ea06de685d5e73f55e3fa8921d6785bc222da87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f24881d04599677c5d45c93fc940286f115d593
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788627"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922510"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Składowe nie powinny ujawniać niektórych typów konkretnych
 
@@ -31,24 +31,24 @@ ms.locfileid: "62788627"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Widoczne na zewnątrz elementu członkowskiego jest określonego typu konkretnego udostępnia pewnych typów konkretnych za pomocą jednego z jego parametrów lub zwróć wartość. Obecnie ta zasada zgłasza narażenia następujących typów konkretnych:
+Widoczny na zewnątrz element członkowski jest określonym konkretnym typem lub uwidacznia niektóre konkretne typy za pomocą jednego z jego parametrów lub zwracanych wartości. Obecnie ta reguła zgłasza narażenie następujących typów konkretnych:
 
 - Typ pochodzący od <xref:System.Xml.XmlNode?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- Konkretny typ jest typem posiadającym pełną implementację i dlatego może zostać utworzone jego wystąpienie. Aby umożliwić powszechne użycie elementu członkowskiego, Zamień konkretny typ sugerowanego interfejsu. Dzięki temu elementu członkowskiego akceptować dowolny typ, który implementuje interfejs lub można użyć, gdzie oczekiwany jest typ, który implementuje interfejs.
+Konkretny typ jest typem posiadającym pełną implementację i dlatego może zostać utworzone jego wystąpienie. Aby umożliwić szerokie korzystanie z elementu członkowskiego, Zastąp konkretny typ proponowanym interfejsem. Dzięki temu członek może zaakceptować dowolny typ implementujący interfejs lub użyć, gdzie oczekiwany jest typ implementujący interfejs.
 
- W poniższej tabeli wymieniono docelowych konkretne typy i ich sugerowane zamiany.
+Poniższa tabela zawiera listę konkretnych określonych typów i ich sugerowanych zamienników.
 
-|Konkretny typ|Zastępczy|
+|Typ konkretny|Zastępc|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Przy użyciu interfejsu oddziela element członkowski z określonej implementacji źródła danych XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Użycie interfejsu oddziela element członkowski od określonej implementacji źródła danych XML.|
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić konkretny typ do sugerowanego interfejsu.
+Aby naprawić naruszenie tej reguły, Zmień konkretny typ na sugerowany interfejs.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć komunikat od tej reguły, jeśli określone funkcje zapewniane przez konkretny typ jest wymagany.
+Można bezpiecznie pominąć komunikat z tej reguły, jeśli wymagane są określone funkcje dostarczone przez konkretny typ.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1011: Należy rozważyć przekazywanie typów bazowych jako parametrów](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+[CA1011 Rozważ przekazywanie typów podstawowych jako parametrów](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

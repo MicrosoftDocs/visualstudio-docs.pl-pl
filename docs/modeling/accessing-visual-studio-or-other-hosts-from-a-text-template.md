@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26845b3878a89ea52a3f77f9a0a8d23363877edd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960466"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870688"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Dostęp do programu Visual Studio lub innych hostów z szablonu tekstowego
 
@@ -24,7 +24,7 @@ W szablonie tekstu można użyć metod i właściwości, które są udostępnian
 
 ## <a name="obtain-access-to-the-host"></a>Uzyskaj dostęp do hosta
 
-Aby uzyskać dostęp do hosta, należy ustawić `hostspecific="true"` w `template` dyrektywy. Teraz możesz używać `this.Host`, która ma typ <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> Typ ma elementów członkowskich, które umożliwia, na przykład, rozpoznawanie nazw plików i rejestrowanie błędów.
+Aby uzyskać dostęp do hosta, należy ustawić `hostspecific="true"` w `template` dyrektywy. Teraz można użyć `this.Host`, który ma typ [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Typ [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) zawiera elementy członkowskie, których można użyć do rozpoznawania nazw plików i błędów dzienników, na przykład.
 
 ### <a name="resolve-file-names"></a>Rozpoznawanie nazw plików
 

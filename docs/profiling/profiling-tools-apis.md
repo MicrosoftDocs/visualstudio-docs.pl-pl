@@ -1,5 +1,5 @@
 ---
-title: Interfejsy API narzędzi profilowania | Dokumentacja firmy Microsoft
+title: Interfejsy API narzędzia profilowania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
@@ -8,30 +8,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b1f0a56cc2aee3aafe31ca786d508d2162e50c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e724b9d5891d9e716be064e0b3b9404455c770fc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956368"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870293"
 ---
 # <a name="profiling-tools-apis"></a>Interfejsy API narzędzi profilowania
 
-Możesz wstawić zarządzane lub natywne metody z interfejsów API [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools do kontroli zbierania danych profilowania. Ta sekcja opisuje metody interfejsów API oraz sposobu ich używania.
+Można wstawić metody zarządzane lub natywne interfejsów API [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania, aby kontrolować zbieranie danych w ramach przebiegu profilowania. W tej sekcji opisano metody interfejsów API i opisano, jak ich używać.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 [Dokumentacja interfejsów API profilera programu Visual Studio (natywnych)](../profiling/visual-studio-profiler-api-reference-native.md)
 
-W tym artykule opisano metody C++ Profiling Tools.
+Opisuje metody C++ narzędzia profilowania.
 
-<xref:Microsoft.VisualStudio.Profiler>
+[Profiler](/previous-versions/ms242704(v=vs.140))
 
-W tym artykule opisano metody .NET Profiling Tools.
+Opisuje metody narzędzia profilowania .NET.
 
 [Przewodnik: Korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)
 
-Dowiedz się, jak używać metod .NET Profiling Tools, w tym przykładzie ukończone.
+Dowiedz się, jak korzystać z metod narzędzia profilowania .NET w tym kompletnym przykładzie.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e823a58d7a2be45c43305320bd32175de7a3fad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545397"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921318"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Pola typu wartości powinny być przenośne
 
@@ -27,17 +27,17 @@ ms.locfileid: "62545397"
 |-|-|
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
-|Kategoria|Microsoft.Portability|
-|Zmiana kluczowa|Przerywanie — Jeśli pola są widoczne poza zestawem.<br /><br /> Bez podziału — Jeśli pole nie jest widoczna spoza zestawu.|
+|Kategoria|Microsoft. przenośność|
+|Zmiana kluczowa|Przerywanie — Jeśli pole może być widoczne poza zestawem.<br /><br /> Bez przerywania — Jeśli pole nie jest widoczne poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła sprawdza, czy struktury, które są zadeklarowane za pomocą jawnego układu, zostaną prawidłowo wyrównane podczas przekazywania do kodu niezarządzanego w 64-bitowych systemach operacyjnych. IA-64 nie zezwala na dostępów do niewyrównanych pamięci i proces ulegnie awarii, jeśli to naruszenie nie został rozwiązany.
+Ta reguła sprawdza, czy struktury zadeklarowane za pomocą jawnego układu są wyrównane prawidłowo, gdy są przekazywane do kodu niezarządzanego w 64-bitowych systemach operacyjnych. IA-64 nie zezwala na niewyrównany dostęp do pamięci, a proces zostanie rozwiązany, jeśli to naruszenie nie zostanie naprawione.
 
 ## <a name="rule-description"></a>Opis reguły
- Struktury, które mają jawne układ, który zawiera niewyrównane pola powodują awarię na 64-bitowych systemach operacyjnych.
+Struktury, które mają jawny układ, który zawiera niewyrównane pola, powodują awarie w 64-bitowych systemach operacyjnych.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Wszystkie pola, które są mniejsze niż 8 bajtów musi mieć wartość przesunięcia, które są wielokrotnością ich rozmiar i pola, które są 8 bajtów lub więcej musi mieć przesunięcia, których to wielokrotność liczby 8. Innym rozwiązaniem jest użycie `LayoutKind.Sequential` zamiast `LayoutKind.Explicit`, jeśli jest to uzasadnione.
+Wszystkie pola, które są mniejsze niż 8 bajtów, muszą mieć przesunięcia, które są wielokrotnością rozmiaru, a pola, które mają 8 bajtów lub więcej, muszą mieć przesunięcia, które są wielokrotnością 8. Innym rozwiązaniem jest użycie `LayoutKind.Sequential` `LayoutKind.Explicit`zamiast, jeśli jest to uzasadnione.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- To ostrzeżenie powinno być pomijane, tylko wtedy, gdy wystąpi błąd.
+To ostrzeżenie powinno być pomijane tylko wtedy, gdy wystąpi błąd.

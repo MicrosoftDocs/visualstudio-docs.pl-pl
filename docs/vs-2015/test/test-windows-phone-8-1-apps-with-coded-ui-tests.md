@@ -1,5 +1,5 @@
 ---
-title: Testowanie za pomocą kodowanych testów interfejsu użytkownika Windows platformy UWP i 8.1 Phone | Dokumentacja firmy Microsoft
+title: Testowanie aplikacji dla telefonów z systemem Windows platformy UWP i 8,1 przy użyciu kodowanych testów interfejsu użytkownika | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,381 +8,381 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a862b01eb4fdbb654ce31419742c07ba22194ffa
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54570e4ec1368226e19b602cd715c3da3922bbb1
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705985"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871644"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testowanie aplikacji platformy UWP i 8.1 Phone systemu Windows za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla aplikacji platformy uniwersalnej systemu Windows, uruchamianych na urządzeniu przenośnym lub emulatorów i aplikacji opartych na XAML Phone 8.1.   
-  
-## <a name="create-a-simple-windows-phone-app"></a>Utwórz prostą aplikację Windows Phone  
-  
-1. Utwórz nowy projekt dla pustej aplikacji Windows Phone przy użyciu szablonu programu Visual C# lub Visual Basic.  
-  
-     ![Utwórz nową aplikację Windows Phone](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")  
-  
-2. W Eksploratorze rozwiązań Otwórz plik MainPage.xaml. Z przybornika przeciągnij formant przycisku i formant pola tekstowego na powierzchnię projektową.  
-  
-     ![Dodawanie i kształty do pliku MainPage.xaml](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")  
-  
-3. W oknie dialogowym właściwości nazwę kontrolki przycisku.  
-  
-     ![Nazwij kontrolkę przycisku](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")  
-  
-4. Nazwij formant pola tekstowego.  
-  
-     ![Nazwij formant pola tekstowego](../test/media/cuit-phone-nametesxtbox.png "CUIT_Phone_NameTesxtBox")  
-  
-5. Na powierzchni projektowej kliknij dwukrotnie formant przycisku, a następnie dodaj następujący kod:  
-  
-    ```csharp  
-    private void button_Click_1(object sender, RoutedEventArgs e)  
-    {  
-        this.textBox.Text = this.button.Name;  
-    }  
-  
-    ```  
-  
-    ```vb  
-    Public NotInheritable Class MainPage  
-        Inherits Page  
-  
-        Private Sub button_Click(sender As Object, e As RoutedEventArgs) Handles Button.Click  
-            Me.textBox.Text = Me.button.Name  
-        End Sub  
-    End Class  
-    ```  
-  
-6. Naciśnij klawisz F5, aby uruchomić aplikację Windows Phone w emulatorze i sprawdź, czy działa.  
-  
-     ![Uruchom Windows Phone app](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")  
-  
-7. Zamknij emulatora.  
-  
-## <a name="deploy-the-windows-phone-app"></a>Windows Phone wdrażanie aplikacji  
-  
-1. Przed kodowanego testu interfejsu użytkownika można mapować kontrolki aplikacji, musisz wdrożyć tę aplikację.  
-  
-     ![Wdrażanie Windows Phone app](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")  
-  
-     Zostanie uruchomiony emulator. Aplikacja jest teraz dostępna do testowania.  
-  
-     ![Aplikacja wdrożona w emulatorze](../test/media/cuit-phone-deployed.png "CUIT_Phone_Deployed")  
-  
-     Zachowaj emulator uruchomiony podczas tworzenie kodowanego testu interfejsu użytkownika.  
-  
-## <a name="create-a-coded-ui-test-for-the-windows-phone-app"></a>Tworzenie kodowanego testu interfejsu użytkownika dla aplikacji Windows Phone  
+Ten przewodnik służy do tworzenia testów interfejsu użytkownika dla aplikacji platformy UWP, które działają na urządzeniach przenośnych lub emulatorach oraz aplikacjach telefonujących opartych na języku XAML 8,1.
 
-[Jak utworzyć kodowane testy interfejsu użytkownika dla aplikacji uniwersalnych platformy Windows (UWP)?](#uwpapps)
-  
-1. Dodaj nowy projekt kodowanego testu interfejsu użytkownika do rozwiązania przy użyciu aplikacji Windows Phone.  
-  
-    ![Utwórz nowy kodowany test interfejsu użytkownika dla Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
-  
-2. Wybrać opcję Edytuj mapę interfejsu użytkownika przy użyciu narzędzia krzyżyk.  
-  
-    ![Generowanie kodowanego interfejsu użytkownika testu za pomocą wielu&#45;narzędzie włosów. ](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
-  
-3. Użyj narzędzia krzyżyk, aby wybrać aplikację, a następnie skopiuj wartość w aplikacji **AutomationId** właściwość, która będzie później używany do uruchomienia aplikacji w teście.  
-  
-    ![Skopiuj wartość AutomationId aplikacji](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
-  
-4. W emulatorze należy uruchomić aplikację i użyj narzędzia krzyżyk, aby wybrać formant przycisku. Następnie można dodać kontrolkę przycisku do mapy formantów interfejsu użytkownika.  
-  
-    ![Użyj krzyżowego&#45;narzędzie włosów do kontrolki mapy](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
-  
-5. Aby dodać formant pola tekstowego do mapy formantów interfejsu użytkownika, powtórz poprzedni krok.  
-  
-    ![Użyj krzyżowego&#45;włosów Mapa i narzędzia do kontrolki textbox](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
-  
-6. Generuj kod, aby utworzyć kod dla zmiany mapy formantów interfejsu użytkownika.  
-  
-    ![Generowanie kodu na podstawie konstruktora](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
-  
-7. Użyj narzędzia krzyżyk aby zaznaczyć formant pola tekstowego, a następnie wybierz **tekstu** właściwości.  
-  
-    ![Wybierz właściwość Text](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
-  
-8. Dodaj potwierdzenie. Będzie on używany w teście Aby sprawdzić, czy wartość jest poprawna.  
-  
-    ![Dodaj potwierdzenie do testu](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
-  
-9. Dodaj i wygeneruj kod dla metody assert.  
-  
-     ![Generuj kod dla potwierdzenia](../test/media/cuit-phone-generatecodeassertion.png "CUIT_Phone_GenerateCodeAssertion")  
-  
-10. **Visual C#**  
-  
-     W Eksploratorze rozwiązań Otwórz plik UIMap.Designer.cs, aby wyświetlić kod, który właśnie został dodany dla metody assert i formantów.  
-  
-     **Visual Basic**  
-  
-     W Eksploratorze rozwiązań Otwórz plik CodedUITest1.vb. W CodedUITestMethod1() przetestować kod metody, kliknij prawym przyciskiem myszy wywołanie metody asercji, do której została dodana automatycznie `Me.UIMap.AssertMethod1()` i wybierz polecenie **przejdź do definicji**. Spowoduje to otwarcie plik UIMap.Designer.vb w edytorze kodu, aby można było wyświetlić kod, który został dodany dla metody assert i formantów.  
-  
+## <a name="create-a-simple-windows-phone-app"></a>Tworzenie prostej aplikacji Windows Phone
+
+1. Utwórz nowy projekt dla pustej aplikacji Windows Phone przy użyciu szablonu wizualizacji C# lub Visual Basic.
+
+     ![Tworzenie nowej aplikacji Windows Phone](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")
+
+2. W Eksplorator rozwiązań otwórz MainPage. XAML. Z przybornika przeciągnij kontrolkę Button i kontrolkę TextBox do powierzchni projektowej.
+
+     ![Dodawanie kształty do MainPage. XAML](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")
+
+3. W okno Właściwości Nadaj formantowi przycisk.
+
+     ![Nazwij kontrolkę Button](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")
+
+4. Nadaj nazwę formantowi TextBox.
+
+     ![Nadaj nazwę formantowi TextBox](../test/media/cuit-phone-nametesxtbox.png "CUIT_Phone_NameTesxtBox")
+
+5. Na powierzchni projektanta kliknij dwukrotnie formant Button i Dodaj następujący kod:
+
+    ```csharp
+    private void button_Click_1(object sender, RoutedEventArgs e)
+    {
+        this.textBox.Text = this.button.Name;
+    }
+
+    ```
+
+    ```vb
+    Public NotInheritable Class MainPage
+        Inherits Page
+
+        Private Sub button_Click(sender As Object, e As RoutedEventArgs) Handles Button.Click
+            Me.textBox.Text = Me.button.Name
+        End Sub
+    End Class
+    ```
+
+6. Naciśnij klawisz F5, aby uruchomić aplikację Windows Phone w emulatorze i sprawdź, czy działa.
+
+     ![Uruchamianie aplikacji Windows Phone](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")
+
+7. Zamknij emulator.
+
+## <a name="deploy-the-windows-phone-app"></a>Wdrażanie aplikacji Windows Phone
+
+1. Zanim kodowany test interfejsu użytkownika będzie mógł zmapować kontrolki aplikacji, należy wdrożyć aplikację.
+
+     ![Wdrażanie aplikacji Windows Phone](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")
+
+     Emulator rozpocznie działanie. Aplikacja jest teraz dostępna do testowania.
+
+     ![Aplikacja wdrożona na emulatorze](../test/media/cuit-phone-deployed.png "CUIT_Phone_Deployed")
+
+     Kontynuuj działanie emulatora podczas tworzenia kodowanego testu interfejsu użytkownika.
+
+## <a name="create-a-coded-ui-test-for-the-windows-phone-app"></a>Tworzenie kodowanego testu interfejsu użytkownika dla aplikacji Windows Phone
+
+[Jak mogę utworzyć kodowane testy interfejsu użytkownika dla aplikacji platforma uniwersalna systemu Windows (platformy UWP)?](#uwpapps)
+
+1. Dodaj nowy kodowany projekt testu interfejsu użytkownika do rozwiązania za pomocą aplikacji Windows Phone.
+
+    ![Utwórz nowy kodowany test interfejsu użytkownika dla Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")
+
+2. Wybierz, aby edytować mapę interfejsu użytkownika za pomocą narzędzia krzyżyk.
+
+    ![Generowanie kodowanego testu interfejsu użytkownika&#45;za pomocą narzędzia krzyżyk.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")
+
+3. Użyj narzędzia krzyżyka, aby wybrać aplikację, a następnie skopiuj wartość właściwości **AutomationId** aplikacji, która zostanie użyta później do uruchomienia aplikacji w teście.
+
+    ![Skopiuj wartość AutomationId aplikacji](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")
+
+4. W emulatorze Uruchom aplikację i użyj narzędzia krzyżyka, aby zaznaczyć formant przycisku. Następnie Dodaj kontrolkę Button do mapy formantów interfejsu użytkownika.
+
+    ![Używanie narzędzia krzyżyk do mapowania formantów&#45;](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")
+
+5. Aby dodać kontrolkę TextBox do mapy formantów interfejsu użytkownika, Powtórz poprzedni krok.
+
+    ![Użyj narzędzia krzyżyk&#45;i Mapuj formant TextBox](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")
+
+6. Generuj kod, aby utworzyć kod dla zmian mapy formantów interfejsu użytkownika.
+
+    ![Generuj kod z konstruktora](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")
+
+7. Użyj narzędzia krzyżyk, aby zaznaczyć formant TextBox, a następnie wybierz właściwość **Text** .
+
+    ![Wybierz właściwość Text](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")
+
+8. Dodaj potwierdzenie. Zostanie ona użyta w teście, aby sprawdzić, czy wartość jest poprawna.
+
+    ![Dodaj potwierdzenie do testu](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")
+
+9. Dodaj i Generuj kod dla metody Assert.
+
+     ![Generuj kod dla potwierdzenia](../test/media/cuit-phone-generatecodeassertion.png "CUIT_Phone_GenerateCodeAssertion")
+
+10. **Visual C#**
+
+     W Eksplorator rozwiązań otwórz plik UIMap.Designer.cs, aby wyświetlić właśnie dodany kod dla metody Assert i kontrolek.
+
+     **Visual Basic**
+
+     W Eksplorator rozwiązań otwórz plik CodedUITest1. vb. W kodzie metody testowej okno CodedUITestMethod1 () kliknij prawym przyciskiem myszy wywołanie metody potwierdzenia, która została automatycznie dodana `Me.UIMap.AssertMethod1()` , i wybierz **Przejdź do definicji**. Spowoduje to otwarcie pliku UIMap. Designer. vb w edytorze kodu, dzięki czemu można wyświetlić kod dodany dla metody Assert i kontrolek.
+
     > [!WARNING]
-    > Nie należy modyfikować pliku UIMap.designer.cs lub UIMap.Designer.vb bezpośrednio. Jeśli to zrobisz, zmiany w pliku zostaną zastąpione każdorazowo, gdy test jest generowany.  
-  
-     **Assert — metoda**  
-  
-    ```csharp  
-    public void AssertMethod1()  
-    {  
-        #region Variable Declarations  
-        XamlEdit uITextBoxEdit = this.UIApp1Window.UITextBoxEdit;  
-        #endregion  
-  
-        // Verify that the 'Text' property of 'textBox' text box equals 'button'  
-        Assert.AreEqual(this.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text);  
-    }  
-    ```  
-  
-    ```vb  
-    Public Sub AssertMethod1()  
-        Dim uITextBoxEdit As XamlEdit = Me.UIApp1Window.UITextBoxEdit  
-  
-        'Verify that the 'Text' property of 'textBox' text box equals 'button'  
-        Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text)  
-    End Sub  
-    ```  
-  
-     **Kontrolki**  
-  
-    ```csharp  
-    #region Properties  
-    public virtual AssertMethod1ExpectedValues AssertMethod1ExpectedValues  
-    {  
-        get  
-        {  
-            if ((this.mAssertMethod1ExpectedValues == null))  
-            {  
-                this.mAssertMethod1ExpectedValues = new AssertMethod1ExpectedValues();  
-            }  
-            return this.mAssertMethod1ExpectedValues;  
-        }  
-    }  
-  
-    public UIApp1Window UIApp1Window  
-    {  
-        get  
-        {  
-            if ((this.mUIApp1Window == null))  
-            {  
-                this.mUIApp1Window = new UIApp1Window();  
-            }  
-            return this.mUIApp1Window;  
-        }  
-    }  
-    #endregion  
-  
-    #region Fields  
-    private AssertMethod1ExpectedValues mAssertMethod1ExpectedValues;  
-  
-    private UIApp1Window mUIApp1Window;  
-    #endregion  
-    ```  
-  
-    ```vb  
-    #Region "Properties"  
-    Public ReadOnly Property UIButtonButton() As XamlButton  
-        Get  
-            If (Me.mUIButtonButton Is Nothing) Then  
-                Me.mUIButtonButton = New XamlButton(Me)  
-                Me.mUIButtonButton.SearchProperties(XamlButton.PropertyNames.AutomationId) = "button"  
-            End If  
-            Return Me.mUIButtonButton  
-        End Get  
-    End Property  
-  
-    Public ReadOnly Property UITextBoxEdit() As XamlEdit  
-        Get  
-            If (Me.mUITextBoxEdit Is Nothing) Then  
-                Me.mUITextBoxEdit = New XamlEdit(Me)  
-                Me.mUITextBoxEdit.SearchProperties(XamlEdit.PropertyNames.AutomationId) = "textBox"  
-            End If  
-            Return Me.mUITextBoxEdit  
-        End Get  
-    End Property  
-    #End Region  
-  
-    #Region "Fields"  
-    Private mUIButtonButton As XamlButton  
-  
-    Private mUITextBoxEdit As XamlEdit  
-    #End Region  
-    ```  
-  
-11. W Eksploratorze rozwiązań Otwórz plik CodedUITest1.cs lub CodedUITest1.vb. Teraz można dodać kod do metody codeduttestmethod1 gdyż działania wymagane do uruchomienia testu. Za pomocą formantów dodanych do UIMap, aby dodać kod:  
-  
-    1. Uruchom aplikację Windows Phone za pomocą właściwości automatyzacji Identyfikatora poprzednio skopiowane do Schowka:  
-  
-       ```csharp  
-       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-       ```  
-  
-       ```vb  
-       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-       ```  
-  
-    2. Dodaj gest, aby dotknąć przycisku sterowania:  
-  
-       ```csharp  
-       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-       ```  
-  
-       ```vb  
-       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-       ```  
-  
-    3. Sprawdź, czy wywołanie metody assert, które zostało wygenerowane automatycznie przychodzi po uruchomieniu aplikacji, a następnie wybierz gest na przycisku:  
-  
-       ```csharp  
-       this.UIMap.AssertMethod1();  
-       ```  
-  
-       ```vb  
-       Me.UIMap.AssertMethod1()  
-       ```  
-  
-       Po dodaniu kodu metoda testu CodedUITestMethod1 powinna wyglądać następująco:  
-  
-    ```csharp  
-    [TestMethod]  
-    public void CodedUITestMethod1()  
-    {  
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.  
-  
-        // Launch the app.  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-  
-        // Tap the button.  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-  
-        this.UIMap.AssertMethod1();  
-    }  
-    ```  
-  
-    ```vb  
-    <CodedUITest>  
-    Public Class CodedUITest1  
-  
-        <TestMethod()>  
-        Public Sub CodedUITestMethod1()  
-            '              
-            ' To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.  
-            '  
-            ' Launch the app.  
-            XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App")  
-  
-            '// Tap the button.  
-            Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-  
-            Me.UIMap.AssertMethod1()  
-        End Sub  
-    ```  
-  
-## <a name="run-the-coded-ui-test"></a>Uruchom kodowany test interfejsu użytkownika  
-  
-1. Skompiluj test, a następnie uruchom test za pomocą narzędzia Eksplorator testów.  
-  
-     ![Skompiluj i uruchom test za pomocą Eksploratora testów](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")  
-  
-     Uruchamia aplikację Windows Phone, działanie naciśnięcie przycisku jest zakończona, a tekst w polu tekstowym właściwości jest wypełniana i sprawdzana za pomocą metody assert.  
-  
-     ![Uruchamianie testu systemu Windows Phone](../test/media/cuit-phone-runtestexplorerrunning.png "CUIT_Phone_RunTestExplorerRunning")  
-  
-     Po zakończeniu testu Eksplorator testów potwierdza, że test jest zaliczony.  
-  
-     ![Wyniki w Eksploratorze testów](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")  
-  
-## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Opartych na danych kodowanych testów interfejsu użytkownika dla aplikacji Windows Phone  
- Na potrzeby testowania różnych warunków, kodowany test interfejsu użytkownika można uruchamiać wiele razy z różnymi zestawami danych.  
-  
- Oparte na danych kodowanych testów interfejsu użytkownika dla Windows Phone są definiowane dla metody testowej przy użyciu atrybutu wiersza danych. W poniższym przykładzie, x i y Użyj wartości 1 i 2 dla pierwszej iteracji i -1 -2 dla drugiego iteracji testu.  
-  
-```  
-[DataRow(1, 2, DisplayName = "Add positive numbers")]  
-[DataRow(-1, -2, DisplayName = "Add negative numbers")]  
-[TestMethod]  
-public void DataDrivingDemo_MyTestMethod(int x, int y)  
-  
-```  
-  
-## <a name="q--a"></a>Pytania i odpowiedzi  
-  
-### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>PYT.: Trzeba wdrożyć aplikację Windows Phone w emulatorze do mapy formantów interfejsu użytkownika?  
- **A**: Tak, kodowanego testu interfejsu użytkownika wymaga, aby być uruchomiony emulator, a aplikacji można wdrożyć do niego. W przeciwnym razie zgłosi komunikat o błędzie informujący o tym, nie uruchomionego emulatora został odnaleziony.  
-  
-### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q: Testy można wykonać na tylko emulator, czy też korzystać urządzenia fizycznego?  
- **A**: Jedną z opcji jest obsługiwane. Element docelowy dla wykonywania testów jest zaznaczone, zmieniając typ emulatora lub wybierając urządzenie, na pasku narzędzi urządzenia. Jeśli urządzenie jest wybrane, niebieski Phone urządzenie musi być podłączone do jednego z portów USB komputera.  
-  
- ![Wybierz dla wersji emulatora lub urządzenia fizyczne](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  
-  
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>PYT.: Dlaczego nie widzę opcji zapisu mojego kodowanego testu interfejsu użytkownika w Generuj kod dla kodowanego testu interfejsu użytkownika okna dialogowego  
- **A**: Opcja zapisu nie jest obsługiwana dla aplikacji Windows Phone.  
-  
-### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>PYT.: Czy można utworzyć kodowany test interfejsu użytkownika, dla mojej aplikacji Windows Phone, na podstawie WinJS, Silverlight lub HTML5?  
- **A**: Nie, obsługiwane są tylko aplikacje na podstawie XAML.  
-  
-### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>PYT.: Czy mogę utworzyć kodowane testy interfejsu użytkownika dla mojej aplikacji Windows Phone w systemie, który nie jest uruchomiony, Windows 8.1 lub Windows 10?  
- **A**: Nie, szablony projekt kodowanego testu interfejsu użytkownika są dostępne tylko w Windows 8.1 i Windows 10. Aby utworzyć automatyzacji dla aplikacji uniwersalnych platformy Windows (UWP), należy systemu Windows 10.  
+    > Nie należy modyfikować pliku UIMap.designer.cs ani UIMap. Designer. vb bezpośrednio. W takim przypadku zmiany wprowadzone w pliku zostaną nadpisywane przy każdym wygenerowaniu testu.
 
-<a name="uwpapps"></a>  
-### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>PYT.: Jak utworzyć kodowane testy interfejsu użytkownika dla aplikacji uniwersalnych platformy Windows (UWP)?  
- **A**: W zależności od platformy, na którym testujesz aplikację platformy uniwersalnej systemu Windows należy utworzyć kodowane testy interfejsu użytkownika w jednym z następujących sposobów:  
-  
-- Aplikacja platformy uniwersalnej systemu Windows, uruchomiony na komputerze lokalnym zostanie uruchomiony jako Store app. Aby to przetestować, należy użyć **projekt kodowanego interfejsu użytkownika testu (Windows)** szablonu. Aby znaleźć ten szablon, podczas tworzenia nowego projektu, przejdź do **Windows**, **Universal** węzła. Lub przejdź do **Windows**, **systemu Windows 8**, **Windows** węzła.  
-  
-- Uruchamianie na urządzeniu przenośnym lub w emulatorze aplikacji platformy UWP działa jako aplikację na telefon. Aby to przetestować, należy użyć **projekt kodowanego interfejsu użytkownika testu (Windows Phone)** szablonu. Aby znaleźć ten szablon, podczas tworzenia nowego projektu, przejdź do **Windows**, **Universal** węzła. Lub przejdź do **Windows**, **systemu Windows 8**, **Windows Phone** węzła.  
-  
-  Po utworzeniu projektu, tworzenia testu pozostaje taka sama jak przed.  
-  
-### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>PYT.: Czy mogę wybrać formanty, które wykraczają poza emulator  
- **A**: Nie, Konstruktor nie wykryje je.  
-  
-### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>PYT.: Do kontrolki za pomocą urządzenia fizycznego telefonu mapy może używać konstruktora kodowanego testu interfejsu użytkownika?  
- **A**: Nie, Konstruktor tylko można mapować elementy interfejsu użytkownika, jeśli aplikacja została wdrożona w emulatorze.  
-  
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>PYT.: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?  
- **A**: Wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną każdorazowo zastąpione przy generowaniu kodu za pomocą UIMap — Konstruktora kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.  
-  
-### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>PYT.: Można uruchomić kodowany test interfejsu użytkownika w mojej aplikacji Windows Phone z wiersza polecenia?  
- **A**: Tak, użyj pliku runsettings określić urządzenie docelowe dla wykonywania testów. Na przykład:  
-  
- **/settings:devicetarget.runsettings "pathToYourCodedUITestDll" vstest.Console.exe**  
-  
- Przykładowy plik runsettings:  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<RunSettings>  
-<MSPhoneTest>  
-<!--to specify test execution on device, use a TargetDevice option as follows-->  
-<TargetDevice>Device</TargetDevice>  
-<!--to specify an emulator instead, use a TargetDevice option like below-->  
-<!--<TargetDevice>Emulator 8.1 WVGA 4 inch 512MB</TargetDevice>-->  
-</MSPhoneTest>  
-</RunSettings>  
-```  
-  
-### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>PYT.: Jakie są różnice między aplikacjami Windows Phone i kodowane testy interfejsu użytkownika dla aplikacji opartych na XAML Windows Store?  
- **A**: Poniżej przedstawiono niektóre podstawowe różnice:  
-  
-|Funkcja|Aplikacje Windows Store|Aplikacje Windows Phone|  
-|-------------|------------------------|------------------------|  
-|Element docelowy dla wykonywania testów|Komputerze lokalnym lub zdalnym. Komputer zdalny można określić, gdy automatyczny przypadek testowy można używać do uruchamiania testów. Zobacz [zautomatyzować przypadek testowy w programie Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Urządzenie lub emulator. Zobacz, [Pyt.: Testy można wykonać na tylko emulator, czy też korzystać urządzenia fizycznego? ](#TestingPhoneAppsCodedUI_EmulatorDevice) w tym temacie.|  
-|Wykonywanie z wiersza polecenia|Plik ustawień nie są wymagane do określenia docelowej.|Wymagany do określenia docelowej pliku Runsettings.|  
-|Wyspecjalizowane klasy formantów powłoki|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
-|Kontrolki WebView w aplikacji w języku XAML|Obsługiwane, jeśli używasz Html * wyspecjalizowane klasy do interakcji z elementów HTML. Zobacz <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Nieobsługiwane.|  
-|Wykonywanie zautomatyzowanych testów z MTM|Obsługiwane.|Nieobsługiwane.|  
-|Testy oparte na danych|Zobacz [testów opartych na danych](../test/creating-a-data-driven-coded-ui-test.md) informacje za pomocą zewnętrznych źródeł danych i przy użyciu źródła danych i atrybutu dla metody testowej.|Dane są określone w jednej linii, za pomocą atrybutu wiersza danych dla metody testowej. Zobacz [opartych na danych użyj kodowanych testów interfejsu użytkownika dla aplikacji Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) w tym temacie.|  
-  
-## <a name="external-resources"></a>Zasoby zewnętrzne  
- Blog programu Microsoft Visual Studio Application Lifecycle Management: [Za pomocą kodowanego interfejsu użytkownika do testowania aplikacji Windows Phone opartych na XAML](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
-  
-## <a name="see-also"></a>Zobacz też  
+     **Assert — Metoda**
+
+    ```csharp
+    public void AssertMethod1()
+    {
+        #region Variable Declarations
+        XamlEdit uITextBoxEdit = this.UIApp1Window.UITextBoxEdit;
+        #endregion
+
+        // Verify that the 'Text' property of 'textBox' text box equals 'button'
+        Assert.AreEqual(this.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text);
+    }
+    ```
+
+    ```vb
+    Public Sub AssertMethod1()
+        Dim uITextBoxEdit As XamlEdit = Me.UIApp1Window.UITextBoxEdit
+
+        'Verify that the 'Text' property of 'textBox' text box equals 'button'
+        Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text)
+    End Sub
+    ```
+
+     **Kontrolki**
+
+    ```csharp
+    #region Properties
+    public virtual AssertMethod1ExpectedValues AssertMethod1ExpectedValues
+    {
+        get
+        {
+            if ((this.mAssertMethod1ExpectedValues == null))
+            {
+                this.mAssertMethod1ExpectedValues = new AssertMethod1ExpectedValues();
+            }
+            return this.mAssertMethod1ExpectedValues;
+        }
+    }
+
+    public UIApp1Window UIApp1Window
+    {
+        get
+        {
+            if ((this.mUIApp1Window == null))
+            {
+                this.mUIApp1Window = new UIApp1Window();
+            }
+            return this.mUIApp1Window;
+        }
+    }
+    #endregion
+
+    #region Fields
+    private AssertMethod1ExpectedValues mAssertMethod1ExpectedValues;
+
+    private UIApp1Window mUIApp1Window;
+    #endregion
+    ```
+
+    ```vb
+    #Region "Properties"
+    Public ReadOnly Property UIButtonButton() As XamlButton
+        Get
+            If (Me.mUIButtonButton Is Nothing) Then
+                Me.mUIButtonButton = New XamlButton(Me)
+                Me.mUIButtonButton.SearchProperties(XamlButton.PropertyNames.AutomationId) = "button"
+            End If
+            Return Me.mUIButtonButton
+        End Get
+    End Property
+
+    Public ReadOnly Property UITextBoxEdit() As XamlEdit
+        Get
+            If (Me.mUITextBoxEdit Is Nothing) Then
+                Me.mUITextBoxEdit = New XamlEdit(Me)
+                Me.mUITextBoxEdit.SearchProperties(XamlEdit.PropertyNames.AutomationId) = "textBox"
+            End If
+            Return Me.mUITextBoxEdit
+        End Get
+    End Property
+    #End Region
+
+    #Region "Fields"
+    Private mUIButtonButton As XamlButton
+
+    Private mUITextBoxEdit As XamlEdit
+    #End Region
+    ```
+
+11. W Eksplorator rozwiązań otwórz plik CodedUITest1.cs lub CodedUITest1. vb. Teraz można dodać kod do metody CodedUTTestMethod1 dla akcji wymaganych do uruchomienia testu. Użyj kontrolek, które zostały dodane do UIMap w celu dodania kodu:
+
+    1. Uruchom aplikację Windows Phone przy użyciu właściwości identyfikatora automatyzacji skopiowanej wcześniej do schowka:
+
+       ```csharp
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");
+       ```
+
+       ```vb
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");
+       ```
+
+    2. Dodaj gest, aby nacisnąć kontrolkę Button:
+
+       ```csharp
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);
+       ```
+
+       ```vb
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)
+       ```
+
+    3. Upewnij się, że wywołanie metody Assert, która została wygenerowana automatycznie, nastąpi po uruchomieniu aplikacji, a następnie naciśnij pozycję gest na przycisku:
+
+       ```csharp
+       this.UIMap.AssertMethod1();
+       ```
+
+       ```vb
+       Me.UIMap.AssertMethod1()
+       ```
+
+       Po dodaniu kodu metoda testowa okno CodedUITestMethod1 powinna wyglądać następująco:
+
+    ```csharp
+    [TestMethod]
+    public void CodedUITestMethod1()
+    {
+        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+
+        // Launch the app.
+        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");
+
+        // Tap the button.
+        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);
+
+        this.UIMap.AssertMethod1();
+    }
+    ```
+
+    ```vb
+    <CodedUITest>
+    Public Class CodedUITest1
+
+        <TestMethod()>
+        Public Sub CodedUITestMethod1()
+            '
+            ' To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+            '
+            ' Launch the app.
+            XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App")
+
+            '// Tap the button.
+            Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)
+
+            Me.UIMap.AssertMethod1()
+        End Sub
+    ```
+
+## <a name="run-the-coded-ui-test"></a>Uruchamianie kodowanego testu interfejsu użytkownika
+
+1. Skompiluj test, a następnie uruchom test za pomocą Eksploratora testów.
+
+     ![Kompiluj i uruchamiaj test za pomocą Eksploratora testów](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")
+
+     Zostanie uruchomiona aplikacja Windows Phone, Akcja do naciśnięcia przycisku zostanie zakończona, a właściwość tekstowa pola tekstowego jest wypełniana i sprawdzana przy użyciu metody Assert.
+
+     ![Uruchamianie testu telefonu Winodws](../test/media/cuit-phone-runtestexplorerrunning.png "CUIT_Phone_RunTestExplorerRunning")
+
+     Po zakończeniu testu Eksplorator testów potwierdza, że test zakończył się.
+
+     ![Wyniki Eksploratora testów](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")
+
+## <a name="TestingPhoneAppsCodedUI_DataDriven"></a>Korzystanie z kodowanych testów interfejsu użytkownika opartych na danych na Windows Phone aplikacjach
+ Aby przetestować inne warunki, kodowany test interfejsu użytkownika może być uruchamiany wiele razy z różnymi zestawami danych.
+
+ Kodowane testy interfejsu użytkownika oparte na danych dla Windows Phone są definiowane przy użyciu atrybutu DataRow dla metody testowej. W poniższym przykładzie x i y używają wartości 1 i 2 dla pierwszej iteracji i-1 i-2 dla drugiej iteracji testu.
+
+```
+[DataRow(1, 2, DisplayName = "Add positive numbers")]
+[DataRow(-1, -2, DisplayName = "Add negative numbers")]
+[TestMethod]
+public void DataDrivingDemo_MyTestMethod(int x, int y)
+
+```
+
+## <a name="q--a"></a>Pytania i odpowiedzi
+
+### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>PYTANIA Czy muszę wdrożyć aplikację Windows Phone w emulatorze w celu zamapowania formantów interfejsu użytkownika?
+ ODP.: Tak, Konstruktor kodowanego testu interfejsu użytkownika wymaga uruchomienia emulatora i wdrożenia aplikacji. W przeciwnym razie zgłosi komunikat o błędzie informujący, że nie można odnaleźć działającego emulatora.
+
+### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a>PYTANIA Czy testy można wykonywać tylko na emulatorze, czy też użyć urządzenia fizycznego?
+ ODP.: Każda opcja jest obsługiwana. Element docelowy do wykonania testu jest wybierany przez zmianę typu emulatora lub wybranie urządzenia na pasku narzędzi urządzenia. Jeśli urządzenie jest zaznaczone, urządzenie niebieskie musi być podłączone do jednego z portów USB maszyny.
+
+ ![Wybierz wersję emulatora lub urządzenie physcial](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")
+
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>PYTANIA Dlaczego nie widzę opcji rejestrowania kodowanego testu interfejsu użytkownika w oknie dialogowym generowanie kodu dla kodowanego testu interfejsu użytkownika?
+ ODP.: Opcja rejestrowania nie jest obsługiwana w przypadku aplikacji Windows Phone.
+
+### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>PYTANIA Czy mogę utworzyć kodowany test interfejsu użytkownika dla aplikacji Windows Phone w oparciu o WinJS, Silverlight lub HTML5?
+ ODP.: Nie, obsługiwane są tylko aplikacje oparte na języku XAML.
+
+### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>PYTANIA Czy można tworzyć kodowane testy interfejsu użytkownika dla aplikacji Windows Phone w systemie, który nie jest uruchomiony Windows 8.1 lub Windows 10?
+ ODP.: Nie, szablony projektów kodowanego testu interfejsu użytkownika są dostępne tylko w systemach Windows 8.1 i Windows 10. Aby utworzyć automatyzację dla aplikacji platforma uniwersalna systemu Windows (platformy UWP), musisz mieć system Windows 10.
+
+<a name="uwpapps"></a>
+### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>PYTANIA Jak mogę utworzyć kodowane testy interfejsu użytkownika dla aplikacji platforma uniwersalna systemu Windows (platformy UWP)?
+ ODP.: W zależności od platformy, w której testowasz aplikację platformy UWP, Utwórz projekt kodowanego testu interfejsu użytkownika w jeden z następujących sposobów:
+
+- Aplikacja platformy UWP uruchomiona na komputerze lokalnym będzie działać jako aplikacja ze sklepu. Aby to przetestować, należy użyć szablonu **projektu kodowanego testu interfejsu użytkownika (Windows)** . Aby znaleźć ten szablon podczas tworzenia nowego projektu, przejdź do okna i **uniwersalnego** węzła. Lub przejdź do okna, systemu Windows **8**, węzła **systemu Windows** .
+
+- Aplikacja platformy UWP uruchomiona na urządzeniu przenośnym lub emulatorze będzie uruchamiana jako aplikacja dla telefonu. Aby to przetestować, należy użyć szablonu **projektu kodowanego testu interfejsu użytkownika (Windows Phone)** . Aby znaleźć ten szablon podczas tworzenia nowego projektu, przejdź do okna i **uniwersalnego** węzła. Lub przejdź do węzła **Windows**, **Windows 8** **Windows Phone** .
+
+  Po utworzeniu projektu tworzenie testu pozostaje tak samo jak poprzednio.
+
+### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>PYTANIA Czy mogę wybrać kontrolki, które znajdują się poza emulatorem?
+ ODP.: Nie, Konstruktor nie będzie wykrywał ich.
+
+### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>PYTANIA Czy można użyć konstruktora kodowanego testu interfejsu użytkownika do mapowania kontrolek za pomocą fizycznego urządzenia telefonicznego?
+ ODP.: Nie, Konstruktor może mapować tylko elementy interfejsu użytkownika, jeśli aplikacja została wdrożona do emulatora.
+
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>PYTANIA Dlaczego nie mogę zmodyfikować kodu w pliku UIMap. Designer?
+ ODP.: Wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną każdorazowo zastąpione przy generowaniu kodu za pomocą UIMap — Konstruktora kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.
+
+### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>PYTANIA Czy można uruchomić kodowany test interfejsu użytkownika w aplikacji Windows Phone z poziomu wiersza polecenia?
+ ODP.: Tak, użyj pliku runsettings, aby określić urządzenie docelowe dla wykonywania testów. Na przykład:
+
+ **VSTest. Console. exe "pathToYourCodedUITestDll"/Settings: devicetarget. runsettings**
+
+ Przykładowy plik runsettings:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+<MSPhoneTest>
+<!--to specify test execution on device, use a TargetDevice option as follows-->
+<TargetDevice>Device</TargetDevice>
+<!--to specify an emulator instead, use a TargetDevice option like below-->
+<!--<TargetDevice>Emulator 8.1 WVGA 4 inch 512MB</TargetDevice>-->
+</MSPhoneTest>
+</RunSettings>
+```
+
+### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>PYTANIA Jakie są różnice między kodowanymi testami interfejsu użytkownika dla aplikacji ze sklepu Windows opartych na języku XAML i aplikacji Windows Phone?
+ ODP.: Oto niektóre kluczowe różnice:
+
+|Funkcja|Aplikacje Windows Store|Aplikacje Windows Phone|
+|-------------|------------------------|------------------------|
+|Cel dla uruchomionych testów|Komputer lokalny lub zdalny. Komputery zdalne można określić w przypadku używania zautomatyzowanego przypadku testowego do uruchamiania testów. Zobacz [Automatyzowanie przypadku testowego w Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulator lub urządzenie. Zobacz, [Q: Czy testy można wykonywać tylko na emulatorze, czy też użyć urządzenia fizycznego? ](#TestingPhoneAppsCodedUI_EmulatorDevice) w tym temacie.|
+|Wykonywanie z wiersza polecenia|Plik ustawień nie jest wymagany do określenia celu.|Plik runsettings jest wymagany do określenia celu.|
+|Wyspecjalizowane klasy dla formantów powłoki|[DirectUIControl](/previous-versions/dn248208(v=vs.140))|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|
+|Kontrolka WebView w aplikacji XAML|Obsługiwane w przypadku używania specjalnych klas języka HTML * do współpracy z elementami HTML. Zobacz <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Nieobsługiwane.|
+|Wykonaj testy automatyczne z MTM|Obsługiwał.|Nieobsługiwane.|
+|Testy oparte na danych|Zobacz [testy oparte na danych](../test/creating-a-data-driven-coded-ui-test.md) , aby uzyskać informacje na temat używania zewnętrznych źródeł danych i używania atrybutu DataSource w metodzie testowej.|Dane są określane jako wbudowane, przy użyciu atrybutu DataRow dla metody testowej. Zobacz [Używanie kodowanych testów interfejsu użytkownika opartych na danych w aplikacjach Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) w tym temacie.|
+
+## <a name="external-resources"></a>Zasoby zewnętrzne
+ Blog dotyczący zarządzania cyklem życia aplikacji Microsoft Visual Studio: [Używanie kodowanego interfejsu użytkownika do testowania aplikacji Windows Phone opartych na języku XAML](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)
+
+## <a name="see-also"></a>Zobacz też
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)

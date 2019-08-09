@@ -1,5 +1,5 @@
 ---
-title: Edytowanie diagramów sekwencji UML przy użyciu interfejsu API UML | Dokumentacja firmy Microsoft
+title: Edytowanie diagramów sekwencji UML przy użyciu interfejsu API UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,245 +11,246 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0bebbb4e6dfe25ce9834595be11aad0fd1f1ba0
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442957"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871885"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Edytowanie diagramów sekwencji UML przy użyciu interfejsu API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Interakcja to sekwencję wiadomości między liniami życia. Interakcji są wyświetlane na diagramie sekwencji UML.  
-  
- Aby uzyskać szczegółowe informacje o interfejsie API, zobacz <xref:Microsoft.VisualStudio.Uml.Interactions?displayProperty=fullName>.  
-  
- Aby uzyskać bardziej ogólne wprowadzenie do pisania poleceń i program obsługi gestów do diagramów UML, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
-  
-## <a name="basic-code"></a>Podstawową kodu  
-  
-### <a name="namespace-imports"></a>Importuje Namespace  
- Należy uwzględnić następujące `using` instrukcji:  
-  
-```  
-using Microsoft.VisualStudio.Uml.Classes;  
-   // for basic UML types such as IPackage  
-using Microsoft.VisualStudio.Uml.Interactions;  
-   // for interaction types  
-using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-   // to create elements and use additional functions  
-```  
-  
- Jeśli tworzysz poleceń menu i procedury obsługi gestów, należy również:  
-  
-```  
-using System.ComponentModel.Composition;   
-   // for Import and Export  
-using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-   // for ICommandExtension  
-using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
-   // for diagrams and context  
-```  
-  
- Aby uzyskać więcej informacji, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
-  
-### <a name="getting-the-context"></a>Pobieranie kontekstu  
- Jeśli edytujesz interakcji w ramach obsługi polecenia lub gestu w diagramie sekwencji można uzyskać odwołania do kontekstu. Na przykład:  
-  
-```  
-[SequenceDesignerExtension]  
-[Export(typeof(ICommandExtension))]    
-public class MySequenceDiagramCommand : ICommandExtension  
-{  
-    [Import]  
-    public IDiagramContext Context { get; set; }  
-    public void QueryStatus (IMenuCommand command)  
-    {  
-      ISequenceDiagram sequenceDiagram =   
-          Context.CurrentDiagram as ISequenceDiagram;  
-         ...  
-```  
-  
-### <a name="generated-and-uml-sequence-diagrams"></a>Wygenerowany i diagramów sekwencji UML  
- Istnieją dwa rodzaje diagramów sekwencji: te, które zostały ręcznie utworzone w projekcie modelowania UML i tych, które zostały wygenerowane z kodu programu. Użyj `UmlMode` właściwość, aby dowiedzieć się, jaka sekwencja diagramu można mieć.  
-  
+Interakcja to sekwencja komunikatów między zestawem linii życia. Interakcja jest wyświetlana na diagramie sekwencji UML.
+
+ Aby uzyskać szczegółowe informacje o interfejsie API, zobacz [Microsoft. VisualStudio. UML.](/previous-versions/dd493373(v=vs.140))Interactions.
+
+ Aby zapoznać się z bardziej ogólnym wprowadzeniem do pisania poleceń i obsługi gestów dla diagramów UML, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+
+## <a name="basic-code"></a>Kod podstawowy
+
+### <a name="namespace-imports"></a>Importy przestrzeni nazw
+ Należy uwzględnić następujące `using` instrukcje:
+
+```
+using Microsoft.VisualStudio.Uml.Classes;
+   // for basic UML types such as IPackage
+using Microsoft.VisualStudio.Uml.Interactions;
+   // for interaction types
+using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;
+   // to create elements and use additional functions
+```
+
+ W przypadku tworzenia poleceń menu i programów obsługi gestów potrzebne są również następujące elementy:
+
+```
+using System.ComponentModel.Composition;
+   // for Import and Export
+using Microsoft.VisualStudio.Modeling.ExtensionEnablement;
+   // for ICommandExtension
+using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
+   // for diagrams and context
+```
+
+ Aby uzyskać więcej informacji, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+
+### <a name="getting-the-context"></a>Pobieranie kontekstu
+ Jeśli edytujesz interakcję jako część obsługi polecenia lub gestu w diagramie sekwencji, możesz uzyskać odwołanie do kontekstu. Przykład:
+
+```
+[SequenceDesignerExtension]
+[Export(typeof(ICommandExtension))]
+public class MySequenceDiagramCommand : ICommandExtension
+{
+    [Import]
+    public IDiagramContext Context { get; set; }
+    public void QueryStatus (IMenuCommand command)
+    {
+      ISequenceDiagram sequenceDiagram =
+          Context.CurrentDiagram as ISequenceDiagram;
+         ...
+```
+
+### <a name="generated-and-uml-sequence-diagrams"></a>Generowane diagramy sekwencji UML
+ Istnieją dwa rodzaje diagramów sekwencji: te, które są tworzone ręcznie w projekcie modelowania UML, oraz te, które zostały wygenerowane na podstawie kodu programu. Użyj właściwości `UmlMode` , aby odnaleźć diagram sekwencji.
+
 > [!NOTE]
-> Ta właściwość zwraca wartość FAŁSZ tylko w przypadku diagramy sekwencji wygenerowane z kodu za pomocą programu Visual Studio 2013 i starszych. Obejmuje to sekwencję wygenerowany kod, diagramy migracji z 2013 i starszych wersji. Ta wersja programu Visual Studio nie obsługuje generowania nowych diagramów sekwencji.  
-  
- Na przykład, jeśli chcesz utworzyć polecenie menu, która jest widoczna tylko na diagramach sekwencji UML a następnie `QueryStatus()` metoda może zawierać następującą instrukcję:  
-  
-```  
-command.Enabled = command.Visible =   
-      sequenceDiagram != null && sequenceDiagram.UmlMode;  
-```  
-  
- Sekwencji wygenerowane diagram, linii życia, wiadomości i inne elementy są prawie takie same jak w diagramie sekwencji UML. W modelu UML Store modelu ma główny, który jest Model, który jest właścicielem wszystkich innych elementów. Jednak wygenerowane interakcji istnieje w własnej Store modelu, który ma główną o wartości null:  
-  
-```  
-IModel rootModel = sequenceDiagram.ModelStore.Root;  
-    // !sequenceDiagram.UmlMode == (rootModel == null)  
-```  
-  
-## <a name="to-create-and-display-an-interaction"></a>Aby utworzyć i wyświetlić interakcji  
- Utwórz interakcji jako element podrzędny pakietu lub modelu.  
-  
- Na przykład jeśli tworzysz polecenie, które mogą być wykonywane na pusty diagram sekwencji, należy zawsze zacząć, sprawdzając, czy istnieje interakcja.  
-  
-```  
-public void Execute (IMenuCommand command)  
-{  
-    ISequenceDiagram sequenceDiagram =   
-         Context.CurrentDiagram as ISequenceDiagram;  
-    if (sequenceDiagram == null) return;  
-    // Get the diagram's interaction:  
-    IInteraction interaction = sequenceDiagram.Interaction;  
-    // A new sequence diagram might have no interaction:  
-    if (interaction == null)  
-    {  
-       // Get the home package or model of the diagram:  
-       IPackage parentPackage = sequenceDiagram.GetObject<IPackage>();  
-       interaction = parentPackage.CreateInteraction();  
-       // Display the interaction on the sequence diagram:  
-       sequenceDiagram.Bind(interaction);  
-    }   
-```  
-  
-## <a name="updating-an-interaction-and-its-layout"></a>Aktualizowanie interakcji i jego układ  
- Po zaktualizowaniu interakcji zawsze zakończyć operację, aktualizując jej układ przy użyciu jednej z następujących metod:  
-  
-- `ISequenceDiagram.UpdateShapePositions()` Ustawia położenie kształty, które niedawno zostało wstawionych lub przeniesiona i ich kształtów sąsiednich.  
-  
-- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` odrysowuje cały diagram. Parametr służy do określania położenia linie życia i/lub komunikaty.  
-  
-  Jest to szczególnie ważne podczas wstawiania nowych elementów lub Przenieś istniejące elementy. Nie będą w właściwe pozycje na diagramie do momentu, kiedy została wykonana jedna z tych operacji. Musisz wywołać jedną z tych operacji, po upływie szereg zmian.  
-  
-  Aby uniknąć bemusing użytkownika wykonującego cofania po polecenia, użyj `ILinkedUndoTransaction` należy ująć zmiany, a końcowe `Layout()` lub `UpdateShapePositions()` operacji. Na przykład:  
-  
-```  
-using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  
-{  
-  Interaction.CreateCombinedFragment(InteractionOperatorKind.Loop, messages);  
-  Diagram.UpdateShapePositions();  
-  transaction.Commit();  
-}  
-```  
-  
- Aby użyć `ILinkedUndoTransaction`, musisz wprowadzić tę deklarację klasy:  
-  
-```  
-[Import] ILinkedUndoContext LinkedUndoContext { get; set; }  
-```  
-  
- Aby uzyskać więcej informacji, zobacz [aktualizacji modelu UML łącza za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md).  
-  
-## <a name="building-an-interaction"></a>Tworzenie interakcji  
-  
-### <a name="to-create-lifelines"></a>Do utworzenia linii życia  
-  
-```  
-ILifeline lifeline = interaction.CreateLifeline();  
-```  
-  
- Linia życia reprezentuje element składnika, oznacza to, że wystąpienie typu. Na przykład jeśli interakcji jest używany do pokazywania, jak składnik deleguje komunikatów przychodzących do jego wewnętrznych części, linie życia może reprezentować portów i części składnika:  
-  
-```  
-foreach (IConnectableElement part in   
-            component.Parts  
-           .Concat<IConnectableElement>(component.OwnedPorts))  
-{  
-   ILifeline lifeline = interaction.CreateLifeline();  
-   lifeline.Represents = part;  
-}  
-```  
-  
- Jeśli interakcji zawiera dowolny zestaw obiektów, możesz też utworzyć właściwości lub innych `IConnectableElement` w samej interakcji:  
-  
-```  
-ILifeline lifeline = interaction.CreateLifeline();  
-IProperty property1 = interaction.CreateProperty();  
-property1.Type = model.CreateInterface();  
-property1.Type.Name = "Type 1";  
-lifeline.Represents = property1;  
-```  
-  
- Również Alternatywnie można ustawić nazwę i typ linii życia, bez powiązania go z elementem składnika:  
-  
-```  
-ILifeline lifeline = interaction.CreateLifeline();  
-lifeline.Name = "c1";  
-lifeline.SetInstanceType("Customer");  
-System.Diagnostics.Debug.Assert(  
-           lifeline.GetDisplayName() == "c1:Customer"  );  
-```  
-  
-### <a name="to-create-messages"></a>Aby utworzyć wiadomości  
- Aby utworzyć komunikat, należy zidentyfikować punkty wstawienia na źródłowej i docelowej linii życia. Na przykład:  
-  
-```  
-interaction.CreateMessage( sourceInsertionPoint,   
-                           targetInsertionPoint,   
-                           MessageKind.Complete,   
-                           MessageSort.ASynchCall)  
-```  
-  
- Aby utworzyć komunikat, który ma niezdefiniowane źródłowa lub docelowa niezdefiniowane:  
-  
-```  
-interaction.CreateLostFoundMessage(MessageKind.Found, insertionPoint);  
-```  
-  
- Istnieje kilka wiadomości, które można użyć, aby zidentyfikować punkty wstawienia na wszystkich kluczowych zagadnieniach na linii życia:  
-  
-|Metoda ILifeline|Umożliwia wstawianie w tym momencie|  
-|-------------------------|------------------------------------|  
-|`FindInsertionPointAtTop()`|Górnej linii życia.|  
-|`FindInsertionPointAtBottom()`|Na koniec linii życia.|  
-|`FindInsertionPointAfterMessage`<br /><br /> `(IMessage previous)`|Punkt natychmiast po określony komunikat.|  
-|`FindInsertionPointAfterExecutionSpecification`<br /><br /> `(IExecutionSpecification previous)`|Punkt, może być na linii życia lub na nadrzędny blok specyfikacji wykonywania.|  
-|`FindInsertionPointAfterInteractionUse`<br /><br /> `(IInteractionUse previous)`|Punkt następujące wykorzystanie interakcji.|  
-|`FindInsertionPointAfterCombinedFragment`<br /><br /> `(ICombinedFragment previous)`|Punkt następującego fragmentu w połączeniu.|  
-|`FindInsertionPoint(IExecutionSpecification block)`|Górnej części bloku wykonywania.|  
-|`FindInsertionPoint(IInteractionOperand fragment)`|Górnej operand połączonego fragmentu.|  
-  
- Podczas tworzenia wiadomości powinien zachować ostrożność, aby uniknąć Definiowanie komunikat, który będzie skrzyżowany kolejną wiadomość.  
-  
-### <a name="to-create-combined-fragments-and-interaction-uses"></a>Do utworzenia połączonego fragmentu i zastosowania interakcji  
- Można utworzyć połączonego fragmentu i używa interakcji, określając punkt wstawiania w poszczególnych linii życia, które muszą zostać uwzględnione w elementu. Należy zadbać, aby uniknąć określania zestaw punktów przecinających przez istniejącą wiadomość lub fragmentu.  
-  
-```  
-Interaction.CreateCombinedFragment(InteractionOperatorKind.Loop,   
-  Interaction.Lifelines.Select(lifeline => lifeline.FindInsertionPointAtTop()));  
-Interaction.CreateInteractionUse(  
-  Interaction.Lifelines.Select(lifeline => lifeline.FindInsertionPointAtTop()));  
-```  
-  
- Można również utworzyć połączony fragment, który obejmuje istniejącego zestawu komunikatów. Komunikaty muszą rozwijani w tej samej linii życia lub wykonanie bloku.  
-  
-```  
-ICombinedFragment cf = Interaction.CreateCombinedFragment(  
-  InteractionOperatorKind.Loop,  
-  Interaction.Lifelines.First().GetAllOutgoingMessages());  
-```  
-  
- Połączony fragment zawsze jest tworzony z jednym argumentem. Aby utworzyć nowy argument operacji, należy określić istniejące argument, który ma zostać wstawiony przed lub po oraz czy ma zostać wstawiony po nim lub przed nią:  
-  
-```  
-// Create an additional operand before the first  
-cf.CreateInteractionOperand(cf.Operands.First(), false);  
-// Create an additional operand after the last:  
-cf.CreateInteractionOperand(cf.Operands.Last(), true);  
-```  
-  
-## <a name="troubleshooting"></a>Rozwiązywanie problemów  
- Jeśli zmiany nie są wykonywane przy użyciu kształtów pojawi się w pozycji niepoprawne `UpdateShapePositions()` lub `Layout()` operacji.  
-  
- Inne problemy są spowodowane przez punkty wstawienia trwa niewyrównane, tak aby nowe wiadomości lub fragmentem musiałaby krzyżowego względem innych. Objawy może być, że odbywa się bez zmian lub zostanie zgłoszony wyjątek. Wyjątek nie może zostać zgłoszone do momentu `UpdateShapePositions()` lub `Layout()` operacja została wykonana.  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:Microsoft.VisualStudio.Uml.Interactions?displayProperty=fullName>   
- [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   
- [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
- [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md)   
- [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)   
- [Programowanie za pomocą interfejsu API UML](../modeling/programming-with-the-uml-api.md)
+> Ta właściwość zwraca wartość false tylko dla diagramów sekwencji generowanych na podstawie kodu przy użyciu Visual Studio 2013 i wcześniejszych. Obejmuje to diagramy sekwencji wygenerowane przez kod z 2013 i wcześniejszych. Ta wersja programu Visual Studio nie obsługuje generowania nowych diagramów sekwencji.
+
+ Na przykład jeśli chcesz wykonać polecenie menu, które jest widoczne tylko w diagramach sekwencji UML, `QueryStatus()` Metoda może zawierać następującą instrukcję:
+
+```
+command.Enabled = command.Visible =
+      sequenceDiagram != null && sequenceDiagram.UmlMode;
+```
+
+ Na wygenerowanym diagramie sekwencji linie życia, wiadomości i inne elementy są w większości takie same jak na diagramie sekwencji UML. W modelu UML Magazyn modeli ma główny model, który jest właścicielem wszystkich innych elementów. Jednak wygenerowana interakcja istnieje w swoim własnym magazynie modeli, która ma korzeń o wartości null:
+
+```
+IModel rootModel = sequenceDiagram.ModelStore.Root;
+    // !sequenceDiagram.UmlMode == (rootModel == null)
+```
+
+## <a name="to-create-and-display-an-interaction"></a>Aby utworzyć i wyświetlić interakcję
+ Utwórz interakcję jako element podrzędny pakietu lub modelu.
+
+ Na przykład, Jeśli opracowujesz polecenie, które może być wykonane na pustym diagramie sekwencji, zawsze należy zacząć od sprawdzenia, czy interakcja istnieje.
+
+```
+public void Execute (IMenuCommand command)
+{
+    ISequenceDiagram sequenceDiagram =
+         Context.CurrentDiagram as ISequenceDiagram;
+    if (sequenceDiagram == null) return;
+    // Get the diagram's interaction:
+    IInteraction interaction = sequenceDiagram.Interaction;
+    // A new sequence diagram might have no interaction:
+    if (interaction == null)
+    {
+       // Get the home package or model of the diagram:
+       IPackage parentPackage = sequenceDiagram.GetObject<IPackage>();
+       interaction = parentPackage.CreateInteraction();
+       // Display the interaction on the sequence diagram:
+       sequenceDiagram.Bind(interaction);
+    }
+```
+
+## <a name="updating-an-interaction-and-its-layout"></a>Aktualizowanie interakcji i jej układu
+ Podczas aktualizowania interakcji należy zawsze zakończyć operację przez aktualizację układu przy użyciu jednej z następujących metod:
+
+- `ISequenceDiagram.UpdateShapePositions()`dostosowuje położenie kształtów, które zostały ostatnio wstawione lub przeniesione, oraz ich sąsiednich kształtów.
+
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])`Odświeża cały diagram. Można użyć parametru, aby określić zmiany położenia linii życia, wiadomości lub obu tych elementów.
+
+  Jest to szczególnie ważne podczas wstawiania nowych elementów lub przenoszenia istniejących elementów. Nie będą znajdować się w poprawnych położeniach na diagramie, dopóki nie zostanie wykonana jedna z tych operacji. Wystarczy tylko wywołać jedną z tych operacji na końcu serii zmian.
+
+  Aby uniknąć bemusing przez użytkownika, który wykonuje cofnięcie po poleceniu, użyj `ILinkedUndoTransaction` polecenia, aby zawrzeć zmiany i ostateczne `UpdateShapePositions()` `Layout()` lub operacje. Na przykład:
+
+```
+using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
+{
+  Interaction.CreateCombinedFragment(InteractionOperatorKind.Loop, messages);
+  Diagram.UpdateShapePositions();
+  transaction.Commit();
+}
+```
+
+ Aby użyć `ILinkedUndoTransaction`, należy wprowadzić tę deklarację w swojej klasie:
+
+```
+[Import] ILinkedUndoContext LinkedUndoContext { get; set; }
+```
+
+ Aby uzyskać więcej informacji, zobacz [łączenie aktualizacji modelu UML przy użyciu transakcji](../modeling/link-uml-model-updates-by-using-transactions.md).
+
+## <a name="building-an-interaction"></a>Tworzenie interakcji
+
+### <a name="to-create-lifelines"></a>Aby utworzyć linie życia
+
+```
+ILifeline lifeline = interaction.CreateLifeline();
+```
+
+ Linia życia reprezentuje element, który można podłączyć, czyli wystąpienie typu. Na przykład, jeśli interakcja służy do pokazywania, w jaki sposób składnik deleguje przychodzące komunikaty do jego części wewnętrznych, linie życia mogą reprezentować porty i części składnika:
+
+```
+foreach (IConnectableElement part in
+            component.Parts
+           .Concat<IConnectableElement>(component.OwnedPorts))
+{
+   ILifeline lifeline = interaction.CreateLifeline();
+   lifeline.Represents = part;
+}
+```
+
+ Alternatywnie, jeśli interakcja zawiera dowolny zestaw obiektów, można utworzyć właściwość lub inną `IConnectableElement` interakcję:
+
+```
+ILifeline lifeline = interaction.CreateLifeline();
+IProperty property1 = interaction.CreateProperty();
+property1.Type = model.CreateInterface();
+property1.Type.Name = "Type 1";
+lifeline.Represents = property1;
+```
+
+ Alternatywnie można ustawić nazwę i typ linii życia bez łączenia jej z elementem łączącym:
+
+```
+ILifeline lifeline = interaction.CreateLifeline();
+lifeline.Name = "c1";
+lifeline.SetInstanceType("Customer");
+System.Diagnostics.Debug.Assert(
+           lifeline.GetDisplayName() == "c1:Customer"  );
+```
+
+### <a name="to-create-messages"></a>Aby utworzyć komunikaty
+ Aby utworzyć komunikat, należy zidentyfikować punkty wstawiania w źródłowej i docelowej linii życia. Na przykład:
+
+```
+interaction.CreateMessage( sourceInsertionPoint,
+                           targetInsertionPoint,
+                           MessageKind.Complete,
+                           MessageSort.ASynchCall)
+```
+
+ Aby utworzyć komunikat z niezdefiniowanym źródłem lub niezdefiniowanym obiektem docelowym:
+
+```
+interaction.CreateLostFoundMessage(MessageKind.Found, insertionPoint);
+```
+
+ Istnieje kilka komunikatów, za pomocą których można identyfikować punkty wstawiania we wszystkich kluczowych punktach linii życia:
+
+|Metoda w ILifeline|Użyj jej do wstawienia w tym momencie|
+|-------------------------|------------------------------------|
+|`FindInsertionPointAtTop()`|Góra linii życia.|
+|`FindInsertionPointAtBottom()`|Dolna część linii życia.|
+|`FindInsertionPointAfterMessage`<br /><br /> `(IMessage previous)`|Punkt natychmiast po określonym komunikacie.|
+|`FindInsertionPointAfterExecutionSpecification`<br /><br /> `(IExecutionSpecification previous)`|Punkt może być w linii życia lub w bloku specyfikacji wykonywania nadrzędnego.|
+|`FindInsertionPointAfterInteractionUse`<br /><br /> `(IInteractionUse previous)`|Punkt po użyciu interakcji.|
+|`FindInsertionPointAfterCombinedFragment`<br /><br /> `(ICombinedFragment previous)`|Punkt po połączonym fragmencie.|
+|`FindInsertionPoint(IExecutionSpecification block)`|Góra bloku wykonywania.|
+|`FindInsertionPoint(IInteractionOperand fragment)`|Góra operandu połączonego fragmentu.|
+
+ Podczas tworzenia komunikatów należy zachować ostrożność, aby uniknąć definiowania komunikatu, który mógłby przekroczyć inny komunikat.
+
+### <a name="to-create-combined-fragments-and-interaction-uses"></a>Aby utworzyć połączone fragmenty i użycie interakcji
+ Połączone fragmenty i sposoby interakcji można tworzyć, określając punkt wstawiania dla każdej linii życia, która musi być objęta przez element. Należy unikać określania zestawu punktów, które przechodzą przez istniejący komunikat lub fragment.
+
+```
+Interaction.CreateCombinedFragment(InteractionOperatorKind.Loop,
+  Interaction.Lifelines.Select(lifeline => lifeline.FindInsertionPointAtTop()));
+Interaction.CreateInteractionUse(
+  Interaction.Lifelines.Select(lifeline => lifeline.FindInsertionPointAtTop()));
+```
+
+ Można również utworzyć połączony fragment obejmujący istniejący zestaw komunikatów. Wszystkie komunikaty muszą być źródła w tym samym bloku linii życia lub wykonania.
+
+```
+ICombinedFragment cf = Interaction.CreateCombinedFragment(
+  InteractionOperatorKind.Loop,
+  Interaction.Lifelines.First().GetAllOutgoingMessages());
+```
+
+ Połączony fragment jest zawsze tworzony z pojedynczym argumentem operacji. Aby utworzyć nowy operand, należy określić istniejący operand, który ma zostać wstawiony przed lub po, oraz czy chcesz wstawić po nim lub przed nim:
+
+```
+// Create an additional operand before the first
+cf.CreateInteractionOperand(cf.Operands.First(), false);
+// Create an additional operand after the last:
+cf.CreateInteractionOperand(cf.Operands.Last(), true);
+```
+
+## <a name="troubleshooting"></a>Rozwiązywanie problemów
+ Kształty będą wyświetlane w niepoprawnych położeniach, jeśli zmiany nie `UpdateShapePositions()` zostaną `Layout()` zakończone operacją lub.
+
+ Większość innych problemów jest spowodowanych przez niewyrównane punkty wstawiania, dzięki czemu nowe komunikaty lub fragmenty będą musiały przekroczyć inne elementy. Objawy mogą polegać na tym, że zmiany nie są wykonywane lub wyjątek jest zgłaszany. Wyjątek może nie być zgłaszany do `UpdateShapePositions()` momentu `Layout()` wykonania operacji lub.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Microsoft. VisualStudio. UML. Interactions](/previous-versions/dd493373(v=vs.140))
+- [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)
+- [Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+- [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md)
+- [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)
+- [Programowanie za pomocą interfejsu API UML](../modeling/programming-with-the-uml-api.md)

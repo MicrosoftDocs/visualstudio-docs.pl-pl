@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744602"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921567"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Usuwaj nieużywane zmienne lokalne
 
@@ -31,35 +31,35 @@ ms.locfileid: "66744602"
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda deklaruje zmienną lokalną, ale nie używa prawdopodobnie zmiennej, z wyjątkiem jako adresata w instrukcji przypisania. Do analizy przez tę regułę przetestowane zestawu muszą zostać skompilowane przy użyciu informacji o debugowaniu i plik bazy danych (PDB) programu skojarzone muszą być dostępne.
+Metoda deklaruje zmienną lokalną, ale nie używa zmiennej, z wyjątkiem ewentualnej odbiorcy instrukcji przypisania. Do analizy według tej reguły testowany zestaw musi być skompilowany przy użyciu informacji debugowania, a plik bazy danych programu (. pdb) musi być dostępny.
 
 ## <a name="rule-description"></a>Opis reguły
- Nieużywane zmienne lokalne i niepotrzebne przydziały zwiększają rozmiar zestawu i zmniejszają wydajność.
+Nieużywane zmienne lokalne i niepotrzebne przydziały zwiększają rozmiar zestawu i zmniejszają wydajność.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, usuń lub użyć zmiennej lokalnej.
+Aby naprawić naruszenie tej zasady, należy usunąć lub użyć zmiennej lokalnej.
 
 > [!NOTE]
-> C# Kompilatora Usuwa nieużywane zmienne lokalne podczas `optimize` opcja jest włączona.
+> C# Kompilator usuwa nieużywane zmienne lokalne, `optimize` gdy opcja jest włączona.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, jeśli zmienna kompilatora emitowane. Bezpieczne jest również Pomijaj ostrzeżeń dla tej reguły lub wyłączyć regułę, jeśli wydajność i konserwacja kodu nie są podstawowe kwestie.
+Pomiń ostrzeżenie z tej reguły, jeśli zmienna była emitowana przez kompilator. Można również bezpiecznie pominąć ostrzeżenie z tej reguły lub wyłączyć regułę, jeśli obsługa wydajności i kodu nie są zasadniczymi problemami.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje nieużywane zmienne lokalne.
+W poniższym przykładzie przedstawiono kilka nieużywanych zmiennych lokalnych.
 
- [!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
- [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
+[!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
+[!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1809: Unikaj zbyt wielu zmiennych lokalnych](../code-quality/ca1809-avoid-excessive-locals.md)
+[CA1809: Unikaj nadmiernych ustawień lokalnych](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)

@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68482f9dcb88bd87c65f749c821f4afe92089a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0c1afe7737e17d0f44f8cd1e59b0aa844dfe8fe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810675"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870544"
 ---
-# <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
+# <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą programu Visual Studio ModelBus
 
 Visual Studio ModelBus udostępnia metodę tworzenia łącza między modelami i z innych narzędzi modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Możesz utworzyć zintegrowany zestaw językami DSL.
 
@@ -46,7 +46,7 @@ Aby uzyskać dodatkowe informacje i przykładowy kod zobacz:
 
 5. Jeśli chcesz uzyskać dostęp do język DSL z szablonu tekstu, należy zmodyfikować AdapterManager.tt w nowym projekcie. Pomiń ten krok, jeśli chcesz uzyskać dostęp do język DSL od innego kodu, takich jak polecenia i procedury obsługi zdarzeń. Aby uzyskać więcej informacji, zobacz [przy użyciu programu Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
-   1. Zmień klasę bazową AdapterManagerBase do <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
+   1. Zmień klasę bazową AdapterManagerBase na [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)).
 
    2. Pod koniec pliku Wstaw ten atrybut dodatkowe przed klasy element AdapterManager:
 

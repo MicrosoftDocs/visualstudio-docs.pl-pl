@@ -1,5 +1,5 @@
 ---
-title: Generowanie kodu z diagramów klas UML | Dokumentacja firmy Microsoft
+title: Generowanie kodu na podstawie diagramów klas UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -16,225 +16,223 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa073c794e790974f7f749b9d6f2302e9ff0a230
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 23cefa3d072c2e582237152bff77a2271046053d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692517"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871827"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generowanie kodu na podstawie diagramów klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Studio, należy użyć **Generuj kod** polecenia. Domyślnie, polecenie generuje typ C# dla każdego wybranego typu UML. Można modyfikować i rozszerzać to zachowanie przez modyfikowanie lub kopiowanie szablonów tekstu, generujących kod. W modelu można określić różne zachowania dla typów, które są zawarte w różnych pakietach.  
+Aby wygenerować kod C# Visual .NET na podstawie diagramów klas UML w programie Visual Studio, użyj polecenia **Generuj kod** . Domyślnie, polecenie generuje typ C# dla każdego wybranego typu UML. Można modyfikować i rozszerzać to zachowanie przez modyfikowanie lub kopiowanie szablonów tekstu, generujących kod. W modelu można określić różne zachowania dla typów, które są zawarte w różnych pakietach.
 
- **Generuj kod** polecenia przystosowane jest do generowania kodu z wybranych przez użytkownika elementów oraz do generowania pliku dla każdej klasy UML lub innego elementu. Na przykład zrzut ekranu pokazuje dwa pliki C#, które zostały wygenerowane z dwóch klas UML.  
+ Polecenie **Generuj kod** jest szczególnie odpowiednie do generowania kodu z wybranych elementów przez użytkownika, a także do generowania jednego pliku dla każdej klasy UML lub innego elementu. Na przykład zrzut ekranu pokazuje dwa pliki C#, które zostały wygenerowane z dwóch klas UML.
 
- Alternatywnie, jeśli chcesz wygenerować kod, w którym wygenerowane pliki nie mają relacji 1:1 z elementami UML, można rozważyć napisanie szablonów tekstowych, które są wywoływane **Przekształć wszystkie szablony** polecenia. Aby uzyskać więcej informacji na temat tej metody, zobacz [Generowanie plików z modelu UML](../modeling/generate-files-from-a-uml-model.md).  
+ Alternatywnie, jeśli chcesz wygenerować kod, w którym wygenerowane pliki nie mają relacji 1:1 z elementami UML, możesz rozważyć zapisanie szablonów tekstowych, które są wywoływane za pomocą polecenia **Przekształć wszystkie szablony** . Aby uzyskać więcej informacji na temat tej metody, zobacz [generowanie plików z modelu UML](../modeling/generate-files-from-a-uml-model.md).
 
- ![Klasy UML, diagram i wygenerowanego C&#35; klasy plików. ](../modeling/media/oob-gencode1.png "oob_GenCode1")  
+ ![Diagram klas UML i wygenerowane&#35; pliki klasy C.](../modeling/media/oob-gencode1.png "oob_GenCode1")
 
- Aby uzyskać więcej informacji dotyczących diagramów klas UML w programie Visual Studio zobacz następujące tematy:  
+ Aby uzyskać więcej informacji na temat diagramów klas UML w programie Visual Studio, zobacz następujące tematy:
 
-- [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)  
+- [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)
 
-- [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)
 
-  Aby dowiedzieć się, które wersje programu Visual Studio obsługują diagramów klas UML, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Aby sprawdzić, które wersje programu Visual Studio obsługują diagramy klas UML, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="using-the-generate-code-command"></a>Korzystanie z polecenia Generuj Kod  
- W poniższej procedurze opisano domyślne zachowanie **Generuj kod** polecenia:  
+## <a name="using-the-generate-code-command"></a>Korzystanie z polecenia Generuj Kod
+ Poniższa procedura opisuje domyślne zachowanie polecenia **Generuj kod** :
 
-#### <a name="to-generate-a-separate-file-for-each-element"></a>Aby wygenerować osobny plik dla każdego elementu  
+#### <a name="to-generate-a-separate-file-for-each-element"></a>Aby wygenerować osobny plik dla każdego elementu
 
-1. Utwórz model UML zawierający klasy. Można również zastosować stereotypy do elementów modelu.  
+1. Utwórz model UML zawierający klasy. Można również zastosować stereotypy do elementów modelu.
 
-    Aby uzyskać więcej informacji, zobacz [domyślne przekształcenia generowania kodu](#default).  
+    Aby uzyskać więcej informacji, zobacz [domyślne przekształcenia generowania kodu](#default).
 
-2. Na diagramie klasy lub w **Eksploratora modelu UML**, wybierz elementy, z których chcesz wygenerować kod. Można wybrać jedną z następujących pozycji:  
+2. Na diagramie klasy lub w **Eksploratorze modelu UML**wybierz elementy, z których chcesz wygenerować kod. Można wybrać jedną z następujących pozycji:
 
-   - Określony zbiór elementów.  
+   - Określony zbiór elementów.
 
-   - Pakiet lub model, aby wygenerować kod z jego zawartości.  
+   - Pakiet lub model, aby wygenerować kod z jego zawartości.
 
-   - Diagram, aby zaznaczyć wszystkie elementy na diagramie.  
+   - Diagram, aby zaznaczyć wszystkie elementy na diagramie.
 
-3. Otwórz menu skrótów dla wybranego elementu, a następnie wybierz **Generuj kod**.  
+3. Otwórz menu skrótów dla wybranego elementu, a następnie wybierz polecenie **Generuj kod**.
 
-    Po raz pierwszy używasz **Generuj kod** w określonym modelu pojawi się okno dialogowe. To okno dialogowe pozwala edytować parametry generowania kodu modelu.  
+    Przy pierwszym użyciu **generowania kodu** w określonym modelu wyświetlane jest okno dialogowe. To okno dialogowe pozwala edytować parametry generowania kodu modelu.
 
-    Wybierz **OK** Jeśli nie masz pewności, że chcesz zmienić te parametry.  
+    Wybierz **przycisk OK** , chyba że wiesz, że chcesz zmienić te parametry.
 
-    Aby powrócić do tego okna dialogowego później, należy otworzyć **Eksploratora modelu UML**. Otwórz menu skrótów projektu modelowania, a następnie wybierz **zapasowych generowanie kodu**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie polecenia Generuj kod](#custom).  
+    Aby później powrócić do tego okna dialogowego, Otwórz **Eksplorator modelu UML**. Otwórz menu skrótów projektu modelowania, a następnie wybierz polecenie **Skonfiguruj generowanie kodu**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie polecenia Generuj kod](#custom).
 
-   Generowane są pliki zawierające kod C#. Domyślnie generowany jest plik dla każdego typu i pliki są generowane w projekcie biblioteki klas języka C#. Można jednak dostosować to zachowanie. Aby uzyskać więcej informacji, zobacz [Dostosowywanie polecenia Generuj kod](#custom).  
+   Generowane są pliki zawierające kod C#. Domyślnie generowany jest plik dla każdego typu i pliki są generowane w projekcie biblioteki klas języka C#. Można jednak dostosować to zachowanie. Aby uzyskać więcej informacji, zobacz [Dostosowywanie polecenia Generuj kod](#custom).
 
-   Pewne testy sprawdzania poprawności są stosowane do modelu w celu zapewnienia, że może on być przetłumaczony na C#. Jeśli testy te nie powiodą się, wyświetlany jest komunikat o błędzie i generowanie kodu nie jest wykonywane. Jeśli utworzono polecenie walidacji menu, kod nie będzie generowany dla każdego elementu, dla którego polecenie walidacji nie powiedzie się. Aby uzyskać więcej informacji, zobacz [definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md).  
+   Pewne testy sprawdzania poprawności są stosowane do modelu w celu zapewnienia, że może on być przetłumaczony na C#. Jeśli testy te nie powiodą się, wyświetlany jest komunikat o błędzie i generowanie kodu nie jest wykonywane. Jeśli utworzono polecenie walidacji menu, kod nie będzie generowany dla każdego elementu, dla którego polecenie walidacji nie powiedzie się. Aby uzyskać więcej informacji, zobacz [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md).
 
-## <a name="default"></a> Domyślne przekształcenia generacji kodu  
- Ta sekcja zawiera podsumowanie wyników, które są produkowane przez **Generuj kod** polecenia, chyba że Dostosowywanie polecenia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie polecenia Generuj kod](#custom).  
+## <a name="default"></a>Domyślne przekształcenia generowania kodu
+ Ta sekcja podsumowuje wyniki, które są generowane przez polecenie **Generuj kod** , chyba że zostanie dostosowane polecenie. Aby uzyskać więcej informacji, zobacz [Dostosowywanie polecenia Generuj kod](#custom).
 
-- Dla każdego typu wybranego w modelu UML tworzony jest jeden typ C#. Każdy typ jest umieszczany w osobnym pliku kodu w obszarze **GeneratedCode** folderu.  
+- Dla każdego typu wybranego w modelu UML tworzony jest jeden typ C#. Każdy typ jest umieszczany w osobnym pliku kodu w folderze **GeneratedCode** .
 
-- Jeśli typ UML jest zawarty w pakiecie, wygenerowany typ C# jest umieszczony wewnątrz przestrzeni nazw i jest on generowany w folderze, który ma taką samą nazwę jak przestrzeń nazw.  
+- Jeśli typ UML jest zawarty w pakiecie, wygenerowany typ C# jest umieszczony wewnątrz przestrzeni nazw i jest on generowany w folderze, który ma taką samą nazwę jak przestrzeń nazw.
 
-- Właściwość języka C# jest generowany dla każdego `Attribute` klasy UML.  
+- C# Właściwość jest generowana dla każdej `Attribute` klasy UML.
 
-- Metodę języka C# jest generowany dla każdego `Operation` typu UML.  
+- Dla C# każdego `Operation` typu UML jest generowana Metoda.
 
-- Pole C# jest generowane dla każdego skojarzenia nawigacyjnego, w którym uczestniczy klasa.  
+- Pole C# jest generowane dla każdego skojarzenia nawigacyjnego, w którym uczestniczy klasa.
 
-  Dodając stereotyp do każdego typu UML, można kontrolować więcej właściwości wygenerowanego typu C#.  
+  Dodając stereotyp do każdego typu UML, można kontrolować więcej właściwości wygenerowanego typu C#.
 
-|**Aby utworzyć ten typ C#**|**Narysuj ten typ UML**|**Zastosuj ten stereotyp**|  
-|---------------------------------|----------------------------|-------------------------------|  
-|Class|Class|\<Brak > lub<br /><br /> Klasa C#|  
-|Interface|Interface|\<Brak > lub<br /><br /> Interfejs C#|  
-|Wyliczenie|Wyliczenie|\<Brak > lub<br /><br /> Wyliczenie C#|  
-|Delegate|Class|Delegat C#|  
-|Struct|Class|Struktura C#|  
+|**Aby utworzyć ten C# typ**|**Rysuj ten typ UML**|**Zastosuj ten stereotyp**|
+|---------------------------------|----------------------------|-------------------------------|
+|Class|Class|\<Brak > lub<br /><br /> Klasa C#|
+|Interface|Interface|\<Brak > lub<br /><br /> Interfejs C#|
+|Wyliczenie|Wyliczenie|\<Brak > lub<br /><br /> Wyliczenie C#|
+|Delegate|Class|Delegat C#|
+|Struct|Class|Struktura C#|
 
-#### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Aby ustawić stereotyp na typie lub innym elemencie  
+#### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Aby ustawić stereotyp na typie lub innym elemencie
 
-1. Otwórz menu skrótów dla elementu w diagramie lub w **Eksploratora modelu UML**, a następnie wybierz **właściwości**.  
+1. Otwórz menu skrótów dla elementu na diagramie lub w **Eksploratorze modelu UML**, a następnie wybierz **Właściwości**.
 
-2. W **właściwości** okna, wybierz strzałkę listy rozwijanej w **Stereotypy** właściwości, a następnie zaznacz pole wyboru dla stereotypu, który chcesz zastosować.  
+2. W oknie **Właściwości** , wybierz strzałkę listy rozwijanej we właściwości stereotypy , a następnie zaznacz pole wyboru dla stereotypu, który chcesz zastosować.
 
    > [!TIP]
-   > Jeśli stereotypy języka C# nie są wyświetlane, włącz profil C# dla modelu lub pakietu, który zawiera stosowne elementy modelu. Wybierz pakiet lub korzeń modelu w **Eksploratora modelu UML**. Następnie w **właściwości** oknie Wybierz **profilu**, a następnie włącz profil C#.  
+   > Jeśli stereotypy języka C# nie są wyświetlane, włącz profil C# dla modelu lub pakietu, który zawiera stosowne elementy modelu. Wybierz pakiet lub katalog główny modelu w **Eksploratorze modelu UML**. Następnie w oknie **Właściwości** wybierz **profil**, a następnie Włącz C# profil.
 
-3. Rozwiń **Stereotypy** właściwość, aby wyświetlić dodatkowe właściwości, które można ustawić.  
+3. Rozwiń właściwości **stereotypy** , aby wyświetlić dodatkowe właściwości, które można ustawić.
 
-   **Opis** właściwości typów, atrybutów, operacji i skojarzeń są zapisywane w `<summary>` komentarzy w wygenerowanym kodzie. Elementy typu komentarz, są połączone z typami, które są zapisywane w `<remarks>` komentarzy.  
+   Właściwości **Description** typów, atrybutów, operacji i skojarzeń są zapisywane `<summary>` w komentarzach w wygenerowanym kodzie. Elementy komentarzy, które są połączone z typami, są `<remarks>` zapisywane w komentarzach.
 
-## <a name="varying-the-generated-code"></a>Różnicowanie wygenerowanego kodu  
- Wygenerowany kod zmienia się zależne od właściwości każdego typu, atrybutu lub operacji. Na przykład jeśli ustawisz **jest abstrakcyjny** właściwość klasy na wartość true, a następnie `abstract` — słowo kluczowe pojawi się na wygenerowanej klasy. Jeśli ustawisz **liczebność** atrybutu **0..\*** , a następnie wygenerowana właściwość będzie miał `IEnumerable<>` typu.  
+## <a name="varying-the-generated-code"></a>Różnicowanie wygenerowanego kodu
+ Wygenerowany kod zmienia się zależne od właściwości każdego typu, atrybutu lub operacji. Na przykład jeśli ustawisz właściwość **jest abstrakcyjna** klasy na true, `abstract` słowo kluczowe będzie wyświetlane w wygenerowanej klasie. Jeśli wartość **liczebności** atrybutu zostanie ustawiona na **\*0..** , wówczas wygenerowana właściwość będzie miała `IEnumerable<>` typ.
 
- Ponadto, każdy stereotyp zapewnia kilka dodatkowych właściwości, które można ustawiać. Te wartości są tłumaczone na odpowiednie słowa kluczowe w kodzie języka C#. Na przykład, jeśli właściwość jest ustawiona `Is Static` klasy to klasa C# będzie `static`.  
+ Ponadto, każdy stereotyp zapewnia kilka dodatkowych właściwości, które można ustawiać. Te wartości są tłumaczone na odpowiednie słowa kluczowe w kodzie języka C#. Na przykład, jeśli ustawisz właściwość `Is Static` klasy, C# Klasa będzie `static`.
 
- Aby ustawić te dodatkowe właściwości, zaznacz klasę lub inny element na diagramie. W oknie właściwości rozwiń **Stereotypy**, a następnie rozwiń stereotyp C#, takie jak **klasy C#** .  Dla klas te dodatkowe właściwości obejmują:  
+ Aby ustawić te dodatkowe właściwości, zaznacz klasę lub inny element na diagramie. W okno właściwości rozwiń pozycję **stereotypy**, a następnie rozwiń węzeł C# stereotyp, taki jak  **C# Klasa**.  Dla klas te dodatkowe właściwości obejmują:
 
-- Atrybuty CLR  
+- Atrybuty CLR
 
-- Jest częściowy  
+- Jest częściowy
 
-- Jest statyczny  
+- Jest statyczny
 
-- Jest niebezpieczny  
+- Jest niebezpieczny
 
-- Widoczność pakietu  
+- Widoczność pakietu
 
-  Każdy atrybut i operacja również ma właściwości stereotypu, które można ustawiać. Jeśli nie ma właściwości na nowym atrybucie, uruchom **Generuj kod**.  
+  Każdy atrybut i operacja również ma właściwości stereotypu, które można ustawiać. Jeśli właściwości nie są widoczne dla nowego atrybutu, uruchom polecenie **Generuj kod**.
 
-## <a name="custom"></a> Dostosowywanie polecenia Generuj kod  
- **Generuj kod** polecenie działa poprzez przekształcenie elementów modelu przy użyciu zestawu szablonów tekstu. Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).  
+## <a name="custom"></a>Dostosowywanie polecenia Generuj kod
+ Polecenie **Generuj kod** działa przez transformowanie elementów modelu przy użyciu zestawu szablonów tekstowych. Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).
 
- Szablony są określone w zestawie *powiązania szablonów tekstu*. Powiązanie szablonu tekstu określa, jaki szablon powinien być stosowany, gdzie ma zostać umieszczony wygenerowanych danych wyjściowych, a inne parametry **Generuj kod** polecenia.  
+ Szablony są określone w zestawie *powiązań szablonu tekstu*. Powiązanie szablonu tekstu określa, jaki szablon powinien być stosowany, gdzie powinny zostać umieszczone wygenerowane dane wyjściowe oraz inne parametry polecenia **Generuj kod** .
 
- Przy pierwszym uruchomieniu **Generuj kod** polecenie określonego modelu dołącza domyślny zestaw powiązań szablonu do korzenia modelu. Te powiązania dotyczą wszystkich elementów w modelu.  
+ Gdy po raz pierwszy uruchomisz polecenie **Generuj kod** w określonym modelu, dołączy on domyślny zestaw powiązań szablonu do elementu głównego modelu. Te powiązania dotyczą wszystkich elementów w modelu.
 
- Można jednak nadpisywać i rozszerzać domyślne powiązania, dołączając własne powiązania do pakietów, klas i innych elementów. Powiązanie stosuje się do wszystkich elementów zawartych w elemencie, do którego jest podłączone. Na przykład, chcąc przekształcić wszystkie typy wewnątrz danego pakietu przez różne zestawy szablonów, lub aby dane wyjściowe znalazły się w innym folderze, można dołączyć powiązania szablonów do pakietu.  
+ Można jednak nadpisywać i rozszerzać domyślne powiązania, dołączając własne powiązania do pakietów, klas i innych elementów. Powiązanie stosuje się do wszystkich elementów zawartych w elemencie, do którego jest podłączone. Na przykład, chcąc przekształcić wszystkie typy wewnątrz danego pakietu przez różne zestawy szablonów, lub aby dane wyjściowe znalazły się w innym folderze, można dołączyć powiązania szablonów do pakietu.
 
- Aby przeprowadzić inspekcję powiązań dołączonych do elementu modelu, wybierz przycisk wielokropka **[...]**  w **powiązania szablonów tekstu** właściwości w oknie dialogowym właściwości.  
+ Aby sprawdzić powiązania szablonu dołączone do elementu modelu, wybierz wielokropek **[...]** we właściwości **powiązania szablonu tekstu** w okno właściwości.
 
- **Generuj kod** polecenie jest stosowane do każdego elementu modelu, który wybrano szablonów. Dla każdego elementu zestaw zastosowanych szablonów jest połączonym zestawem szablonów, które są dołączone do jego kontenerów i zawierają korzeń modelu.  
+ Polecenie **Generuj kod** stosuje szablony do każdego elementu modelu, który został wybrany. Dla każdego elementu zestaw zastosowanych szablonów jest połączonym zestawem szablonów, które są dołączone do jego kontenerów i zawierają korzeń modelu.
 
- Jeśli dwa powiązania szablonów w zestawie mają taką samą nazwę, powiązanie w mniejszym kontenerze zastąpi powiązanie w większym kontenerze. Na przykład korzeń modelu ma powiązanie o nazwie **szablonu klasy**. Aby utworzyć własny szablon zastosowany do zawartości danego pakietu, zdefiniuj własny szablon powiązania o nazwie **szablonu klasy**.  
+ Jeśli dwa powiązania szablonów w zestawie mają taką samą nazwę, powiązanie w mniejszym kontenerze zastąpi powiązanie w większym kontenerze. Na przykład główny model ma powiązanie z **szablonem klasy**nazw. Aby własny szablon został zastosowany do zawartości określonego pakietu, zdefiniuj własne powiązanie szablonu, które ma **szablon klasy**nazwy.
 
- Do elementu modelu można zastosować więcej niż jeden szablon. Z każdego elementu modelu można wygenerować więcej niż jeden plik.  
+ Do elementu modelu można zastosować więcej niż jeden szablon. Z każdego elementu modelu można wygenerować więcej niż jeden plik.
 
 > [!NOTE]
-> Powiązania dołączone do korzenia modelu działają jako ustawienia domyślne dla wszystkich elementów w modelu. Aby wyświetlić te domyślne powiązania, otwórz **Eksploratora modelu UML**. Otwórz menu skrótów projektu modelowania, a następnie wybierz **zapasowych generowanie kodu**. Alternatywnie możesz wybrać korzeń modelu w Eksploratorze modelu UML. W oknie dialogowym właściwości wybierz **[...]**  w **powiązania szablonów tekstu** właściwości. Powiązania nie będą widoczne, dopóki nie używano **Generuj kod** polecenia co najmniej raz. Szablony powiązań nie mogą być dołączone do diagramu.  
+> Powiązania dołączone do korzenia modelu działają jako ustawienia domyślne dla wszystkich elementów w modelu. Aby wyświetlić te domyślne powiązania, Otwórz **Eksplorator modelu UML**. Otwórz menu skrótów projektu modelowania, a następnie wybierz pozycję **Skonfiguruj generowanie kodu**. Alternatywnie możesz wybrać katalog główny modelu w Eksploratorze modelu UML. W okno właściwości wybierz **[...]** we właściwości **powiązania szablonu tekstu** . Powiązania nie będą wyświetlane do momentu użycia polecenia **Generuj kod** co najmniej raz. Szablony powiązań nie mogą być dołączone do diagramu.
 
-#### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Aby dołączyć powiązanie szablony tekstu do pakietu lub innego elementu modelu  
+#### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Aby dołączyć powiązanie szablony tekstu do pakietu lub innego elementu modelu
 
-1. W **Eksploratora modelu UML**, otwórz menu skrótów dla elementu modelu, a następnie wybierz **właściwości**. Na ogół powiązania szablonów tekstu są dołączane do pakietu lub do korzenia modelu.  
+1. W **Eksploratorze modelu UML**Otwórz menu skrótów dla elementu modelu, a następnie wybierz **Właściwości**. Na ogół powiązania szablonów tekstu są dołączane do pakietu lub do korzenia modelu.
 
-2. W **właściwości** okna, wybierz przycisk wielokropka ( **[...]** ) w **powiązania szablonów tekstu** właściwości.  
+2. W oknie **Właściwości** wybierz przycisk wielokropka ( **[...]** ) we właściwości **powiązania szablonu tekstu** .
 
-    **Powiązania szablonów tekstu** pojawi się okno dialogowe.  
+    Zostanie wyświetlone okno dialogowe **powiązania szablonu tekstu** .
 
-3. Wybierz **Dodaj** Aby utworzyć nowe powiązanie szablonu tekstu.  
+3. Wybierz pozycję **Dodaj** , aby utworzyć nowe powiązanie szablonu tekstu.
 
-    \- lub —  
+    \- lub —
 
-    Wybierz istniejące powiązanie, aby je edytować.  
+    Wybierz istniejące powiązanie, aby je edytować.
 
-    Każde powiązanie szablonu definiuje, jak określony szablon powinien być stosowany do wybranego elementu modelu i innych elementów modelu, które szablon zawiera.  
+    Każde powiązanie szablonu definiuje, jak określony szablon powinien być stosowany do wybranego elementu modelu i innych elementów modelu, które szablon zawiera.
 
-4. W oknie dialogowym ustaw właściwości powiązania szablonu tekstu.  
+4. W oknie dialogowym ustaw właściwości powiązania szablonu tekstu.
 
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Opis**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Nazwa        |                                                                                                                                                                                                                                                  Nazwa dla tego powiązania. Aby zastąpić powiązanie odziedziczone z zawartego pakietu lub modelu, użyj takiej samej nazwy, jaką ma powiązanie, które chcesz zastąpić.                                                                                                                                                                                                                                                  |
    |     Zastąp      |                                                                                                                                                                                                                                                                                                      Jeśli ma wartość true, istniejący kod jest zastępowany.                                                                                                                                                                                                                                                                                                       |
-   |    Nazwa obiektu docelowego     | Nazwa pliku, który jest generowany.<br /><br /> Można wstawiać wyrażenia, w tym ciąg takich jak `{Name}` lub `{Owner.Name}`. Na przykład można napisać: `{Owner.Name}_{Name}`. Wyrażenie jest określane na elemencie modelu. Może używać właściwości elementów, lecz nie metod. Aby dowiedzieć się, jakie właściwości mogą być używane, Przyjrzyj się właściwościom typów w **Microsoft.VisualStudio.Uml.\*** . \*\*Ważne:\* \* `{Name}` lub `{Owner.Name}` mogą być używane tylko w **Nazwa docelowego** właściwości. Aby zmienić nazwę wygenerowanej klasy, musisz zmodyfikować szablon. Aby uzyskać więcej informacji, zobacz [Writing a Text Template](#writing). |
-   |    Ścieżka projektu    |                                                                      Określa ścieżkę do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pliki wyjściowe projektu, który będzie zawierać transformacji. Aby utworzyć nowy projekt skorzystaj z typowanych wartości. Wybierz przycisk wielokropka ( **[...]** ) aby wybrać istniejący projekt.<br /><br /> Jeśli projekt nie istnieje zostanie utworzony nowy. Będzie to projekt biblioteki klas języka C#.<br /><br /> Aby to zrobić, musisz wpisać nazwę projektu bezpośrednio. Możesz dołączyć makra zmiennej środowiska, takie jak %ProgramFiles% lub %LocalAppData%.                                                                       |
-   |  Katalog docelowy  |                                                                                          Folder, w którym generowany jest plik docelowy. Ścieżka jest względna w stosunku do folderu projektu.<br /><br /> Możesz użyć `{PackageStructure}` wyrażenie, aby wstawić ścieżkę, która odnosi się do nazw zawierających pakietów. Wartość domyślna to `\GeneratedCode\{PackageStructure}`. Można również dołączyć zmienne środowiskowe, takie jak %TEMP% lub %HomePath%. **Ważne:** `{PackageStructure}` mogą być używane tylko w **katalog docelowy** właściwości.                                                                                          |
+   |    Nazwa obiektu docelowego     | Nazwa pliku, który jest generowany.<br /><br /> Wyrażenia można wstawiać do tego ciągu, takiego jak `{Name}` lub `{Owner.Name}`. Można na przykład napisać: `{Owner.Name}_{Name}`. Wyrażenie jest określane na elemencie modelu. Może używać właściwości elementów, lecz nie metod. Aby znaleźć właściwości, które mogą być używane, zapoznaj się z właściwościami typów w **Microsoft. VisualStudio.\*UML.** . \*\*Ważne:\* \* lubmoże`{Owner.Name}` być używany tylko we właściwości **nazwy docelowej.** `{Name}` Aby zmienić nazwę wygenerowanej klasy, musisz zmodyfikować szablon. Aby uzyskać więcej informacji, zobacz [pisanie szablonu tekstu](#writing). |
+   |    Ścieżka projektu    |                                                                      Określa ścieżkę do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu, który będzie zawierać pliki wyjściowe transformacji. Aby utworzyć nowy projekt skorzystaj z typowanych wartości. Wybierz przycisk wielokropka ( **[...]** ), aby wybrać istniejący projekt.<br /><br /> Jeśli projekt nie istnieje zostanie utworzony nowy. Będzie to projekt biblioteki klas języka C#.<br /><br /> Aby to zrobić, musisz wpisać nazwę projektu bezpośrednio. Możesz dołączyć makra zmiennej środowiska, takie jak %ProgramFiles% lub %LocalAppData%.                                                                       |
+   |  Katalog docelowy  |                                                                                          Folder, w którym generowany jest plik docelowy. Ścieżka jest względna w stosunku do folderu projektu.<br /><br /> Możesz użyć `{PackageStructure}` wyrażenia, aby wstawić ścieżkę, która odnosi się do nazw pakietów zawierających. Wartość domyślna to `\GeneratedCode\{PackageStructure}`. Można również dołączyć zmienne środowiskowe, takie jak %TEMP% lub %HomePath%. **Ważne:** `{PackageStructure}` można używać tylko we właściwości **katalogu docelowego** .                                                                                          |
    | Ścieżka pliku szablonu |                                                                                                                                                           Szablon, który będzie wykonywał przekształcenia.<br /><br /> Można użyć dostarczonych szablonów lub stworzyć własne. Dostarczone szablony można znaleźć w następującej lokalizacji:<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
-5. Można dołączyć dowolną liczbę powiązań do elementu.  
+5. Można dołączyć dowolną liczbę powiązań do elementu.
 
-## <a name="writing"></a> Pisanie szablonu tekstowego  
- Można napisać własne szablony tekstu. Szablony tekstu mogą generować kod programu lub dowolnego innego rodzaju plik tekstowy.  
+## <a name="writing"></a>Pisanie szablonu tekstu
+ Można napisać własne szablony tekstu. Szablony tekstu mogą generować kod programu lub dowolnego innego rodzaju plik tekstowy.
 
- Firma Microsoft zaleca rozpoczynanie pracy od modyfikowania kopii szablonów standardowych. Szablony można skopiować z następujących lokalizacji:  
+ Firma Microsoft zaleca rozpoczynanie pracy od modyfikowania kopii szablonów standardowych. Szablony można skopiować z następujących lokalizacji:
 
- …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\  
+ …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\
 
- Informacje na temat szablonów tekstu można znaleźć w następujących tematach.  
+ Informacje na temat szablonów tekstu można znaleźć w następujących tematach.
 
-- Szablon tekstu jest prototypem wynikowego pliku i zawiera tekst wynikowy i kod programu, który odczytuje model. Aby uzyskać więcej informacji, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).  
+- Szablon tekstu jest prototypem wynikowego pliku i zawiera tekst wynikowy i kod programu, który odczytuje model. Aby uzyskać więcej informacji, zobacz sekcję [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).
 
-- Do nawigacji modelu UML w kodzie programu, należy użyć interfejsu API UML. Aby uzyskać więcej informacji, zobacz [nawigowanie po modelu UML](../modeling/navigate-the-uml-model.md) i [wykaz interfejsów API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
+- Do nawigacji modelu UML w kodzie programu, należy użyć interfejsu API UML. Aby uzyskać więcej informacji, zobacz [nawigowanie po modelu UML](../modeling/navigate-the-uml-model.md) i [dokumentacji interfejsu API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
-  Aby użyć szablonów z **Generuj kod** polecenia, trzeba dołączyć dyrektywę modelowania. Na przykład:  
+  Aby użyć szablonów z poleceniem **Generuj kod** , musisz uwzględnić dyrektywę modelowania. Na przykład:
 
-  `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`  
+  `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`
 
-  `ElementType` Atrybut definiuje typ elementu UML, do którego odnosi się ten szablon.  
+  `ElementType` Atrybut definiuje typ elementu UML, do którego ma zastosowanie ten szablon.
 
-  W szablonie `this` należy do tymczasowej klasy, która ma następujące właściwości:  
+  W szablonie `this` należy do tymczasowej klasy, która ma następujące właściwości:
 
-- `Element` = UML <xref:Microsoft.VisualStudio.Uml.Classes.IElement> , do którego zastosowano szablon.  
+- `Element`= [IELEMENT](/previous-versions/dd516035(v=vs.140)) UML, do którego jest stosowany szablon.
 
-- `Errors`: <xref:System.CodeDom.Compiler.CompilerErrorCollection>  
+- `Errors`: <xref:System.CodeDom.Compiler.CompilerErrorCollection>
 
-- `Host`: <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>  
+- `Host`: [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
-- `ModelBus`: <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>. Aby uzyskać więcej informacji, zobacz [modeli UML, integracja z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- `ModelBus`: [ModelBus](/previous-versions/ee904639(v=vs.140)). Aby uzyskać więcej informacji, zobacz [integrowanie modeli UML z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-- `ProfileName` = "C#Profile"  
+- `ProfileName` = "C#Profile"
 
-- `ServiceProvider`: <xref:System.IServiceProvider>  
+- `ServiceProvider`: <xref:System.IServiceProvider>
 
-- `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>.  
+- `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>.
 
-- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Jest to magazyn Visualization and Modeling SDK, w którym zaimplementowano UML ModelStore. Aby uzyskać UML <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore>, użyj `this.Element.GetModelStore()`.  
+- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Jest to magazyn Visualization and Modeling SDK, w którym zaimplementowano UML ModelStore. Aby uzyskać [IMODELSTORE](/previous-versions/ee789385(v=vs.140))UML, użyj `this.Element.GetModelStore()`.
 
-  Następujące punkty mogą okazać się pomocne podczas pisania szablonu tekstu. Te informacje są szczegółowo opisane w [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).  
+  Następujące punkty mogą okazać się pomocne podczas pisania szablonu tekstu. Te informacje są szczegółowo opisane w [szablonach generowanie kodu i tekst T4](../modeling/code-generation-and-t4-text-templates.md).
 
-- Można ustawić rozszerzenie nazwy pliku w wyniku w `Output` dyrektywy. Jeden `Output` dyrektywa jest wymagana w każdym szablonie tekstu.  
+- Można ustawić rozszerzenie nazwy pliku wyniku w `Output` dyrektywie. W `Output` każdym szablonie tekstowym jest wymagana jedna dyrektywa.
 
-- Niektóre zestawy są automatycznie dołączane do szablonu. Zestawy te obejmują na przykład: System.dll i Microsoft.VisualStudio.Uml.Interfaces.dll.  
+- Niektóre zestawy są automatycznie dołączane do szablonu. Zestawy te obejmują na przykład: System.dll i Microsoft.VisualStudio.Uml.Interfaces.dll.
 
-   Aby użyć innych zestawów w generowanym kodzie programu, należy użyć `Assembly` dyrektywy. Na przykład:  
+   Aby użyć innych zestawów w kodzie programu do generowania, należy użyć `Assembly` dyrektywy. Przykład:
 
-   `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`  
+   `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`
 
-- Niektóre przestrzenie nazw, takich jak `System` są automatycznie importowane do kodu źródłowego. W innych przestrzeniach nazw, można użyć `Import` dyrektywy w taki sam sposób, który zostanie wykorzystany `using` instrukcji. Na przykład:  
+- Niektóre przestrzenie nazw `System` , takie jak są automatycznie importowane do kodu programu. W przypadku innych przestrzeni nazw można użyć `Import` dyrektywy w taki sam sposób, jak w przypadku `using` użycia instrukcji. Na przykład:
 
-   `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`  
+   `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`
 
-   `<#@ Import Namespace="Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml" #>`  
+   `<#@ Import Namespace="Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml" #>`
 
-- Użyj `Include` dyrektywy, aby odwoływać się do tekstu z innego pliku.  
+- Użyj dyrektywy `Include` , aby odwołać się do tekstu innego pliku.
 
-- Części szablonu w nawiasach `<# ... #>` są wykonywane przez **Generuj kod** polecenia. Części szablonu poza tymi nawiasami są kopiowane do pliku wynikowego. Ważne jest, aby rozróżniać wygenerowany kod od wygenerowanego tekstu. Wygenerowany tekst może być w dowolnym języku.  
+- Części szablonu zawarte w nawiasach `<# ... #>` są wykonywane za pomocą polecenia **Generuj kod** . Części szablonu poza tymi nawiasami są kopiowane do pliku wynikowego. Ważne jest, aby rozróżniać wygenerowany kod od wygenerowanego tekstu. Wygenerowany tekst może być w dowolnym języku.
 
-- `<#= Expressions #>` obliczone i przekonwertowane na ciągi.  
+- `<#= Expressions #>`są oceniane i konwertowane na ciągi.
 
-## <a name="see-also"></a>Zobacz też  
- [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)   
- [Generowanie plików na podstawie modelu UML](../modeling/generate-files-from-a-uml-model.md)
+## <a name="see-also"></a>Zobacz też
+ [Diagramy klas UML: Diagramy referencyjne](../modeling/uml-class-diagrams-reference.md) [UML klasy: Wytyczne](../modeling/uml-class-diagrams-guidelines.md) [generowania plików z modelu UML](../modeling/generate-files-from-a-uml-model.md)

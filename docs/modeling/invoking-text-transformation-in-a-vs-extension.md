@@ -7,17 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43f071d73bef7d7b67988ccffb00b7ae7518b916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bf32a1722ec8029840566b7602ba78f84adb7ec
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810570"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870520"
 ---
-# <a name="invoking-text-transformation-in-a-vs-extension"></a>Wywoływanie transformacji tekstu w rozszerzeniu VS
-Jeśli piszesz rozszerzenie programu Visual Studio, takie jak polecenie menu lub [języka specyficznego dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), można użyć usługi tworzenia szablonów tekstowych do przekształcania szablonów tekstu. Pobierz <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> usługi i obsadź ją <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Wywoływanie transformacji tekstu w rozszerzeniu programu Visual Studio
 
-## <a name="getting-the-text-templating-service"></a>Pobieranie usługi szablonów tekstowych
+Jeśli piszesz rozszerzenie programu Visual Studio, takie jak polecenie menu lub [Język specyficzny dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), możesz użyć usługi Text tworzenia szablonów do przekształcania szablonów tekstowych. Pobierz usługę [STextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) i przerzutj ją na [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+
+## <a name="get-the-text-templating-service"></a>Pobierz usługę tekstu tworzenia szablonów
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -33,16 +34,17 @@ ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITex
 string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath));
 ```
 
-## <a name="passing-parameters-to-the-template"></a>Przekazywanie parametrów do szablonu
- Parametry można przekazać do szablonu. Wewnątrz szablonu, można uzyskać wartości parametrów, za pomocą `<#@parameter#>` dyrektywy.
+## <a name="pass-parameters-to-the-template"></a>Przekazywanie parametrów do szablonu
 
- Jeśli chodzi o typ parametru należy użyć typu, który jest możliwy do serializacji lub który może być organizowany. Oznacza to, że typ musi być zadeklarowany z <xref:System.SerializableAttribute>, lub musi pochodzić od <xref:System.MarshalByRefObject>. To ograniczenie jest konieczne, ponieważ szablon tekstowy jest wykonywany w oddzielnym elemencie AppDomain. Wszystkie typy wbudowane, takie jak **System.String** i **System.Int32** można serializować.
+ Parametry można przekazać do szablonu. Wewnątrz szablonu można uzyskać wartości parametrów za pomocą `<#@parameter#>` dyrektywy.
 
- Aby przekazać wartości parametru, kod wywołujący może umieścić wartości albo w `Session` słownika, lub <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ Jeśli chodzi o typ parametru należy użyć typu, który jest możliwy do serializacji lub który może być organizowany. Oznacza to, że typ musi być zadeklarowany <xref:System.SerializableAttribute>z lub musi pochodzić od. <xref:System.MarshalByRefObject> To ograniczenie jest konieczne, ponieważ szablon tekstowy jest wykonywany w oddzielnym elemencie AppDomain. Wszystkie typy wbudowane, takie jak **System. String** i **System. Int32** , można serializować.
+
+ Aby przekazać wartości parametrów, kod wywołujący może umieścić wartości w `Session` słowniku lub <xref:System.Runtime.Remoting.Messaging.CallContext>w.
 
  W poniższym przykładzie użyto obu tych metod, aby przekształcić krótki szablon tekstowy:
 
-```
+```csharp
 using Microsoft.VisualStudio.TextTemplating;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
 ...
@@ -74,9 +76,10 @@ string result = t4.ProcessTemplate("",
 ```
 
 ## <a name="error-reporting-and-the-output-directive"></a>Raportowanie błędów i dyrektywa wyjściowa
- Wszelkich błędy powstałe podczas przetwarzania będą wyświetlane w oknie błędów programu Visual Studio. Ponadto, użytkownik może być, określając wywołanie zwrotne, które implementuje poinformowany o błędach <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.
 
- Jeśli chcesz zapisać ciąg wyniku do pliku, warto wiedzieć, jakie rozszerzenie pliku i kodowanie określono w `<#@output#>` dyrektywy w szablonie. Te informacje również zostaną przekazane do wywołania zwrotnego. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 Output](../modeling/t4-output-directive.md).
+Wszystkie błędy powstające podczas przetwarzania będą wyświetlane w oknie błędu programu Visual Studio. Ponadto można otrzymywać powiadomienia o błędach przez określenie wywołania zwrotnego implementującego [ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110)).
+
+Jeśli chcesz zapisać ciąg wyniku do pliku, warto wiedzieć, jakie rozszerzenie pliku i kodowanie zostały określone w `<#@output#>` dyrektywie w szablonie. Te informacje również zostaną przekazane do wywołania zwrotnego. Aby uzyskać więcej informacji, zobacz [dyrektywa Output T4](../modeling/t4-output-directive.md).
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -118,7 +121,7 @@ class T4Callback : ITextTemplatingCallback
 }
 ```
 
- Kod może być testowany z plikiem szablonu, podobnym do następującego:
+Kod może być testowany z plikiem szablonu, podobnym do następującego:
 
 ```
 <#@output extension=".htm" encoding="ASCII"#>
@@ -127,14 +130,16 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- Ostrzeżenie kompilatora pojawią się w oknie błędów programu Visual Studio, a także wygeneruje wywołanie `ErrorCallback`.
+Ostrzeżenie kompilatora pojawi się w oknie błędów programu Visual Studio i wygeneruje również wywołanie `ErrorCallback`.
 
 ## <a name="reference-parameters"></a>Parametry odwołania
- Wartości z szablonu tekstowego można przekazać za pomocą parametru klasy, która jest pochodną <xref:System.MarshalByRefObject>.
 
-## <a name="related-topics"></a>Tematy pokrewne
- Aby wygenerować tekst ze wstępnie przetworzonego szablonu tekstu: Wywołaj `TransformText()` metoda wygenerowanej klasy. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Można przekazać wartości z szablonu tekstu przy użyciu klasy parametrów pochodnej od <xref:System.MarshalByRefObject>.
 
- Aby wygenerować tekst poza rozszerzeniem programu Visual Studio: Zdefiniuj niestandardowego hosta. Aby uzyskać więcej informacji, zobacz [przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md).
+## <a name="related-articles"></a>Pokrewne artykuły:
 
- Aby wygenerować kod źródłowy, który później zostanie skompilowany i wykonany: Wywołaj `t4.PreprocessTemplate()` metody <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+Aby wygenerować tekst ze wstępnie przetworzonego szablonu tekstu: Wywołaj `TransformText()` metodę wygenerowanej klasy. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+
+Aby wygenerować tekst poza rozszerzeniem programu Visual Studio: Zdefiniuj niestandardowego hosta. Aby uzyskać więcej informacji, zobacz [przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md).
+
+Aby wygenerować kod źródłowy, który później zostanie skompilowany i wykonany: Wywołaj metodę [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) z [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

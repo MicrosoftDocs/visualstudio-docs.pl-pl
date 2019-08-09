@@ -1,5 +1,5 @@
 ---
-title: Nawigowanie po modelu UML | Dokumentacja firmy Microsoft
+title: Nawigowanie po modelu UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,123 +11,124 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158992"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871772"
 ---
 # <a name="navigate-the-uml-model"></a>Nawigowanie po modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten temat wprowadza główne typy modelu UML.  
-  
-## <a name="the-model-elements-model-and-model-store"></a>Elementy modelu, Model i Store modelu  
- Typy zdefiniowane w zestawie **Microsoft.VisualStudio.Uml.Interfaces.dll** odnoszą się do typów zdefiniowanych w [specyfikacji UML wersji 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).  
-  
- Typy w specyfikacji UML są realizowane jako interfejsy w programie Visual Studio. Litera "I" jest dołączona do nazwy każdego typu. Na przykład: <xref:Microsoft.VisualStudio.Uml.Classes.IElement>, <xref:Microsoft.VisualStudio.Uml.Classes.IClass>, <xref:Microsoft.VisualStudio.Uml.Interactions.IInteraction>, <xref:Microsoft.VisualStudio.Uml.Classes.IOperation>.  
-  
- Wszystkie typy z wyjątkiem IElement dziedziczą właściwości z jednego lub kilku nadtypów.  
-  
-- Aby uzyskać podsumowanie typów modeli, zobacz [typy elementów modelu UML](../modeling/uml-model-element-types.md).  
-  
-- Aby uzyskać szczegółowe informacje o interfejsie API, zobacz [wykaz interfejsów API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
-  
-### <a name="relationships"></a>Relacje  
- Właściwości i relacje, które są zdefiniowane w specyfikacji UML są implementowane jako właściwości .NET.  
-  
- Większość relacje są można nawigować w obu kierunkach. Relacja odpowiada parze właściwości, z jedną właściwością w typie na każdym końcu. Na przykład właściwości `IElement.Owner` i `IElement.OwnedElements` stanowią dwa końce relacji. W związku z tym to wyrażenie będzie zawsze przyjmowało wartość true:  
-  
- `IElement c; ...  c.OwnedElements.All(x => x.Owner == c)`  
-  
- Wiele związków, takich jak IAssociation, również jest reprezentowanych przez obiekt, który może mieć własne właściwości.  
-  
- Jeśli usuniesz element z modelu, każda relacja, w której bierze jest automatycznie usuwana, a właściwość na drugim końcu jest aktualizowana.  
-  
- Jeśli specyfikacja UML przypisuje liczebność 0.. 1 do właściwości, może mieć wartość `null`. Liczebność z wartością maksymalną większą niż 1 oznacza, że właściwość .NET jest typu: `IEnumerable<`*Typ*`>`.  
-  
- Aby uzyskać więcej informacji dotyczących nakierowanych relacji, zobacz [nawigowanie po relacjach z UML API](../modeling/navigate-relationships-with-the-uml-api.md).  
-  
-### <a name="the-ownership-tree"></a>Drzewo własności  
- Model zawiera drzewo <xref:Microsoft.VisualStudio.Uml.Classes.IElement> obiektów. Każdy element ma właściwości `OwnedElements` i `Owner`.  
-  
- W większości przypadków obiekty docelowe `Owner` i `OwnedElements` właściwości odnoszą się również do innych właściwości, które mają bardziej szczegółowe nazwy. Na przykład każda operacja UML jest własnością klasy UML. W związku z tym <xref:Microsoft.VisualStudio.Uml.Classes.IOperation> ma właściwość o nazwie <xref:Microsoft.VisualStudio.Uml.Classes.IOperation.Class%2A>, a następnie w każdej <xref:Microsoft.VisualStudio.Uml.Classes.IOperation> obiektu `Class == Owner`.  
-  
- Jest elementem najwyższego drzewa, która nie ma właściciela, <xref:Microsoft.VisualStudio.Uml.AuxiliaryConstructs.IModel>. IModel jest zawarty w <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore>, w której jest <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore.Root%2A>.  
-  
- Każdy element modelu jest tworzony z właścicielem. Aby uzyskać więcej informacji, zobacz [tworzenie elementów i relacji w modelach UML](../modeling/create-elements-and-relationships-in-uml-models.md).  
-  
- ![Diagram klasy: Model, Diagram, kształt i Element](../modeling/media/uml-mm1.png "UML_MM1")  
-  
-## <a name="shapes-and-diagrams"></a>Kształty i diagramy  
- Elementy modelu UML mogą być wyświetlane na diagramach. Różne rodzaje diagramów mogą wyświetlić różne podtypy IElement.  
-  
- W niektórych przypadkach element może znajdować się na więcej niż jednym diagramie. Na przykład IUseCase element może mieć kilka elementów IShapes, które mogą być wyświetlane na jednym diagramie lub różnych diagramach.  
-  
- Kształty są rozmieszczone w drzewie. Krawędzie drzewa są reprezentowane przez właściwości ParentShape i ChildShapes. Diagramy są jedynymi kształtami, które nie mają elementów nadrzędnych. Kształty znajdujące się na powierzchni diagramu składają się z mniejszych części. Na przykład kształt klasy posiada przedziały dla atrybutów i operacji.  
-  
- Aby uzyskać więcej informacji na temat zdarzeń, zobacz [wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).  
-  
-## <a name="access-to-the-model-in-extensions"></a>Dostęp do modelu w rozszerzeniach  
- W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeń zdefiniowanych jako składniki MEF, można zadeklarować właściwości, które importują informacje z kontekstu, w którym jest uruchamiane rozszerzenie.  
-  
-|Typ atrybutu|Czego to zapewnia dostęp do|Więcej informacji|  
-|--------------------|----------------------------------|----------------------|  
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (w Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Bieżący diagram fokusowy.|[Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
-|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (w Microsoft.VisualStudio.Modeling.Sdk. [wersja] .dll)|Pozwala na pogrupowanie zmian w transakcje.|[Łączenie aktualizacji modelu UML za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md)|  
-|Microsoft.VisualStudio.Shell .SVsServiceProvider<br /><br /> (w Microsoft.VisualStudio.Shell.Immutable. [wersja] .dll)|Host [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Z tego miejsca można uzyskać dostęp, plików, projektów i innych aspektów.|[Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
-  
-### <a name="to-get-the-context"></a>Aby uzyskać kontekst  
- Zadeklaruj jeden lub oba z następujących interfejsów wewnątrz klasy rozszerzenia:  
-  
-```  
-[Import] public IDiagramContext DiagramContext { get; set; }  
-  
-```  
-  
- Managed Extensibility Framework (MEF), będą wiązać te definicje, w których można uzyskać bieżący diagram, Magazyn modeli, obiekt główny i tak dalej:  
-  
-```  
-IDiagram diagram = this.DiagramContext.CurrentDiagram;  
-IClassDiagram classDiagram = diagram as IClassDiagram;  
-       // or diagrams of other types  
-IModelStore modelStore = diagram.ModelStore;  
-IModel model = modelStore.Root;  
-foreach (IDiagram diagram in modelStore.Diagrams) {...}  
-foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}  
-```  
-  
-### <a name="to-get-the-current-selection"></a>Aby uzyskać bieżące zaznaczenie  
-  
-```  
-// All selected shapes and their elements  
-foreach (IShape shape in diagram.SelectedShapes)  
-{    
-   IDiagram selectedDiagram = shape as IDiagram;  
-   if (selectedDiagram != null)  
-   { // no shape selected - user right-clicked the diagram  
-     ... Context.CurrentDiagram ...  
-   }  
-   else  
-   {  
-     IElement selectedElement = shape.Element;  
-   ...}  
-// All selected shapes that display a specfic type of element  
-foreach (IShape<IInterface> in   
-   diagram.GetSelectedShapes<IInterface>())   
-{...}  
-```  
-  
-## <a name="accessing-another-model-or-diagrams"></a>Uzyskiwanie dostępu do innego modelu lub diagramów  
- Można:  
-  
-- Użyj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelu autobusu do tworzenia łączy między elementami w różnych modelach. Aby uzyskać więcej informacji, zobacz [modeli UML, integracja z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
-  
-- Załaduj projekt modelowania i diagramy w trybie tylko do odczytu bez uwidaczniania tego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).  
-  
-- Otwórz projekt modelowania i jego diagramów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a następnie uzyskać dostęp do zawartości. Aby uzyskać więcej informacji, zobacz [Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   
- [Programowanie za pomocą interfejsu API UML](../modeling/programming-with-the-uml-api.md)
+W tym temacie przedstawiono główne typy modelu UML.
+
+## <a name="the-model-elements-model-and-model-store"></a>Elementy modelu, model i magazyn modelu
+ Typy zdefiniowane w zestawie **Microsoft. VisualStudio. UML. Interfaces. dll** odpowiadają typom zdefiniowanym w [specyfikacji UML w wersji 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+
+ Typy w specyfikacji UML są realizowane jako interfejsy w programie Visual Studio. Litera "I" jest poprzedzona nazwą każdego typu. Na przykład: [IElement](/previous-versions/dd516035(v=vs.140)), [iClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
+
+ Wszystkie typy, z wyjątkiem IElement, dziedziczą właściwości z co najmniej jednego nadtypu.
+
+- Aby uzyskać podsumowanie typów modelu, zobacz [typy elementów modelu UML](../modeling/uml-model-element-types.md).
+
+- Aby uzyskać szczegółowe informacje o interfejsie API, zobacz [Dokumentacja interfejsu API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
+
+### <a name="relationships"></a>Relacje
+ Właściwości i relacje, które są zdefiniowane w specyfikacji UML, są implementowane jako właściwości platformy .NET.
+
+ Większość relacji jest nawigować w obu kierunkach. Relacja odnosi się do pary właściwości, z jedną właściwością dla typu na każdym końcu. Na przykład właściwości `IElement.Owner` i `IElement.OwnedElements` reprezentują dwa zakończenia relacji. W związku z tym wyrażenie będzie zawsze oceniane jako prawdziwe:
+
+ `IElement c; ...  c.OwnedElements.All(x => x.Owner == c)`
+
+ Wiele relacji, takich jak IAssociation, są również reprezentowane przez obiekt, który może mieć własne właściwości.
+
+ W przypadku usunięcia elementu z modelu każda relacja, w której staje się częścią, zostanie automatycznie usunięta, a właściwość na drugim końcu zostanie zaktualizowana.
+
+ Jeśli Specyfikacja UML przypisuje liczebność 0.. 1 do właściwości, może ona mieć wartość `null`. Liczebność z maksymalną liczbą większą niż 1 oznacza, że właściwość platformy .NET ma typ: `IEnumerable<`*Typ*`>`.
+
+ Aby uzyskać więcej informacji na temat przechodzenia między relacjami, zobacz [nawigowanie po relacjach za pomocą interfejsu API UML](../modeling/navigate-relationships-with-the-uml-api.md).
+
+### <a name="the-ownership-tree"></a>Drzewo własności
+ Model zawiera drzewo obiektów [IElement](/previous-versions/dd516035(v=vs.140)) . Każdy element ma właściwości `OwnedElements` i `Owner`.
+
+ W większości przypadków obiekty docelowe `Owner` i `OwnedElements` właściwości są również przywoływane przez inne właściwości, które mają bardziej szczegółowe nazwy. Na przykład każda operacja UML jest własnością klasy UML. W związku z tym [IOperation](/previous-versions/dd481186(v=vs.140)) ma właściwość o nazwie [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)i w każdym obiekcie `Class == Owner` [IOperation](/previous-versions/dd481186(v=vs.140)) ,.
+
+ Elementem najwyższego poziomu drzewa, który nie ma właściciela, jest `AuxiliaryConstructs.IModel`. IModel jest zawarty w `IModelStore`, w którym jest [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
+
+ Każdy element modelu jest tworzony z właścicielem. Aby uzyskać więcej informacji, zobacz [Tworzenie elementów i relacji w modelach UML](../modeling/create-elements-and-relationships-in-uml-models.md).
+
+ ![Diagram klas: Model, diagram, kształt i element](../modeling/media/uml-mm1.png)
+
+## <a name="shapes-and-diagrams"></a>Kształty i diagramy
+ Elementy w modelu UML mogą być wyświetlane na diagramach. Różne typy diagramów mogą wyświetlać różne podtypy IElement.
+
+ W niektórych przypadkach element może znajdować się na więcej niż jednym diagramie. Na przykład element IUseCase może mieć kilka IShapes, które mogą być wyświetlane na jednym diagramie lub różnych diagramach.
+
+ Kształty są ułożone w drzewie. Krawędzie drzewa są reprezentowane przez właściwości ParentShape i ChildShapes. Diagramy są jedynymi kształtami, które nie mają obiektów nadrzędnych. Kształty na powierzchni diagramu składają się z mniejszych części. Na przykład kształt klasy ma przedziały dla atrybutów i operacji.
+
+ Aby uzyskać więcej informacji na temat kształtów, zobacz [Wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).
+
+## <a name="access-to-the-model-in-extensions"></a>Dostęp do modelu w rozszerzeniach
+ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeniach zdefiniowanych jako składniki MEF można zadeklarować właściwości, które zaimportują informacje z kontekstu, w którym jest uruchamiane rozszerzenie.
+
+|Typ atrybutu|Do czego służy dostęp|Więcej informacji|
+|--------------------|----------------------------------|----------------------|
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (w Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. dll)|Bieżący diagram fokusu.|[Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|
+|Microsoft. VisualStudio. Modeling. ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (w Microsoft. VisualStudio. Modeling. Sdk. [wersja]. dll)|Umożliwia grupowanie zmian w transakcjach.|[Łączenie aktualizacji modelu UML za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md)|
+|Microsoft.VisualStudio.Shell .SVsServiceProvider<br /><br /> (w Microsoft. VisualStudio. Shell. unzmienna. [wersja]. dll)|Host [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Z tego miejsca możesz uzyskać dostęp do plików, projektów i innych aspektów.|[Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|
+
+### <a name="to-get-the-context"></a>Aby uzyskać kontekst
+ Zadeklaruj jeden lub oba z następujących interfejsów wewnątrz klasy rozszerzenia:
+
+```
+[Import] public IDiagramContext DiagramContext { get; set; }
+
+```
+
+ Managed Extensibility Framework (MEF) powiąże się z definicjami, z których można uzyskać bieżący diagram, Magazyn modeli, obiekt główny i tak dalej:
+
+```
+IDiagram diagram = this.DiagramContext.CurrentDiagram;
+IClassDiagram classDiagram = diagram as IClassDiagram;
+       // or diagrams of other types
+IModelStore modelStore = diagram.ModelStore;
+IModel model = modelStore.Root;
+foreach (IDiagram diagram in modelStore.Diagrams) {...}
+foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
+```
+
+### <a name="to-get-the-current-selection"></a>Aby pobrać bieżące zaznaczenie
+
+```
+// All selected shapes and their elements
+foreach (IShape shape in diagram.SelectedShapes)
+{
+   IDiagram selectedDiagram = shape as IDiagram;
+   if (selectedDiagram != null)
+   { // no shape selected - user right-clicked the diagram
+     ... Context.CurrentDiagram ...
+   }
+   else
+   {
+     IElement selectedElement = shape.Element;
+   ...}
+// All selected shapes that display a specfic type of element
+foreach (IShape<IInterface> in
+   diagram.GetSelectedShapes<IInterface>())
+{...}
+```
+
+## <a name="accessing-another-model-or-diagrams"></a>Uzyskiwanie dostępu do innego modelu lub diagramów
+ Można:
+
+- Użyj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelu Bus, aby utworzyć linki między elementami w różnych modelach. Aby uzyskać więcej informacji, zobacz [integrowanie modeli UML z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).
+
+- Załaduj projekt modelowania i diagramy w trybie tylko do odczytu bez uwidaczniania go w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsie użytkownika. Aby uzyskać więcej informacji, zobacz [Odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).
+
+- Otwórz projekt modelowania i jego diagramy w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a następnie uzyskaj dostęp do zawartości. Aby uzyskać więcej informacji, zobacz [otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
+
+## <a name="see-also"></a>Zobacz także
+
+- [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)
+- [Programowanie za pomocą interfejsu API UML](../modeling/programming-with-the-uml-api.md)

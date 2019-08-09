@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a52add4453276ebf415b47f7f50e74b51a573306
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b3789b5e786038c2bf1fe5e823a1b0fb4f7a7c9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546534"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922724"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Nie umieszczaj trwale w kodzie ciągów specyficznych dla ustawień regionalnych
 
@@ -30,28 +30,28 @@ ms.locfileid: "62546534"
 |-|-|
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |CheckId|CA1302|
-|Kategoria|Microsoft.Globalization|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Globalizacja|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda używa literał ciągu reprezentujący części ścieżki niektórych folderów systemowych.
+Metoda używa literału ciągu, który reprezentuje część ścieżki określonych folderów systemowych.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Environment.SpecialFolder?displayProperty=fullName> Wyliczenia zawiera elementy członkowskie, które odwołują się do folderów specjalnych systemu. Lokalizacje tych folderów mogą mieć różne wartości w różnych systemach operacyjnych, użytkownik może zmienić niektóre z tych lokalizacji i lokalizacje są zlokalizowane. Przykładem specjalny folder jest folder systemowy, który jest "C:\WINDOWS\system32" na [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] , ale "C:\WINNT\system32" na [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> Metoda zwraca lokalizacje, które są skojarzone z <xref:System.Environment.SpecialFolder> wyliczenia. Lokalizacje, które są zwracane przez <xref:System.Environment.GetFolderPath%2A> są zlokalizowane i odpowiednie dla danego komputera.
+<xref:System.Environment.SpecialFolder?displayProperty=fullName> Wyliczenie zawiera elementy członkowskie, które odwołują się do specjalnych folderów systemu. Lokalizacje tych folderów mogą mieć różne wartości w różnych systemach operacyjnych, użytkownik może zmienić niektóre lokalizacje, a lokalizacje są zlokalizowane. Przykładem folderu specjalnego jest folder systemowy "C:\Windows\System32" [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] , ale "C:\winnt\system32" w. [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)] Metoda zwraca lokalizacje, które są skojarzone <xref:System.Environment.SpecialFolder> z wyliczeniem. <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> Lokalizacje zwracane przez <xref:System.Environment.GetFolderPath%2A> są zlokalizowane i odpowiednie dla aktualnie uruchomionego komputera.
 
- Ta zasada tokenizes ścieżek folderów, które są pobierane za pomocą <xref:System.Environment.GetFolderPath%2A> metody na poziomy oddzielny katalog. Literał ciągu jest porównywany z tokenów. Jeśli zostanie znalezione dopasowanie, zakłada się, że metoda tworzy ciąg, który odwołuje się do lokalizacji w systemie, który jest skojarzony z tokenem. W przypadku przenoszenia i przeglądu możliwości lokalizacji używać <xref:System.Environment.GetFolderPath%2A> metodę, która pobierze lokalizacje folderów specjalnych systemu, zamiast literałów ciągów.
+Ta reguła tokenizes ścieżki folderów, które są pobierane przy użyciu <xref:System.Environment.GetFolderPath%2A> metody do oddzielnych poziomów katalogów. Każdy literał ciągu jest porównywany z tokenami. W przypadku znalezienia dopasowania przyjmuje się, że metoda kompiluje ciąg, który odwołuje się do lokalizacji systemowej skojarzonej z tokenem. W celu przenoszenia i lokalizowania należy użyć <xref:System.Environment.GetFolderPath%2A> metody, aby pobrać lokalizacje specjalnych folderów systemowych zamiast używać literałów ciągów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy pobrać lokalizacji przy użyciu <xref:System.Environment.GetFolderPath%2A> metody.
+Aby naprawić naruszenie tej zasady, należy pobrać lokalizację przy użyciu <xref:System.Environment.GetFolderPath%2A> metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, jeśli literał ciągu nie jest używana do odwoływania się do jednej z lokalizacji systemu, które jest skojarzone z można bezpiecznie <xref:System.Environment.SpecialFolder> wyliczenia.
+Jeśli literał ciągu nie jest używany do odwoływania się do jednej z lokalizacji systemowych skojarzonych z <xref:System.Environment.SpecialFolder> wyliczeniem, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład tworzy ścieżkę do wspólnego folderu dane aplikacji, która powoduje wygenerowanie ostrzeżenia trzy od tej reguły. Następnie przykład pobiera ścieżki przy użyciu <xref:System.Environment.GetFolderPath%2A> metody.
+Poniższy przykład tworzy ścieżkę folderu danych wspólnych aplikacji, który generuje trzy ostrzeżenia z tej reguły. Następnie przykład Pobiera ścieżkę przy użyciu <xref:System.Environment.GetFolderPath%2A> metody.
 
- [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
- [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
+[!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
+[!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1303: Nie przekazuj literałów jako parametrów zlokalizowanych](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
+[CA1303: Nie przekazuj literałów jako parametrów zlokalizowanych](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

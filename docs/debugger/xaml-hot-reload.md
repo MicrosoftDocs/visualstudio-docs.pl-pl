@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822141"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870999"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio
 
@@ -53,7 +53,7 @@ Poniżej przedstawiono znane ograniczenia dotyczące gorącego ładowania kodu X
 Podczas korzystania ze gorącego ładowania kodu XAML mogą występować następujące błędy.
 
 |Komunikat o błędzie|Opis|
-|-|-|-|
+|-|-|
 |Sprawdź, czy zdarzenie nie powiodło się|Błąd oznacza, że próbujesz obsłużyć zdarzenie do jednej z kontrolek, co nie jest obsługiwane, gdy aplikacja jest uruchomiona.|
 |Edycja XAML i Kontynuuj nie znalazła żadnych elementów do zaktualizowania.|Wystąpił błąd podczas edytowania kodu XAML, który nie może zostać zaktualizowany w aplikacji.</br> Ten błąd może być czasami naprawiony za pomocą działającej aplikacji, aby przejść do widoku, w którym jest używany kod XAML.</br> Czasami ten błąd oznacza, że nie można zastosować określonej zmiany, dopóki sesja debugowania nie zostanie ponownie uruchomiona. |
 |Ta zmiana nie jest obsługiwana podczas sesji debugowania.|Błąd oznacza, że próba zmiany nie jest obsługiwana przez kod XAML. Zatrzymaj sesję debugowania, wprowadź zmianę, a następnie ponownie uruchom sesję debugowania.|

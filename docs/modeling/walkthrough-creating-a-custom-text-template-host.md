@@ -13,21 +13,21 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 71b72b677e9735edb3254290055815885e543fa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9d2447d07d9faabb5fc7eabddafc328756056ca
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961992"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870659"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Przewodnik: Tworzenie niestandardowego hosta szablonu tekstowego
 
-A *hosta szablonu tekstowego* zapewnia środowisko, które umożliwia *aparatu przekształceń szablonu tekstu* do uruchomienia. Host jest odpowiedzialny za zarządzanie interakcją aparatu z systemem plików. Aparat lub *procesora dyrektywy* który wymaga pliku lub zestawu, może zażądać zasobu z hosta. Host następnie może przeszukiwać katalogi i globalną pamięć podręczną zestawu, aby zlokalizować żądany zasób. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).
+*Host szablonu tekstu* udostępnia środowisko, które umożliwia uruchamianie *aparatu transformacji szablonu tekstu* . Host jest odpowiedzialny za zarządzanie interakcją aparatu z systemem plików. *Procesor lub dyrektywa procesora* , które wymagają pliku lub zestawu mogą żądać zasobu od hosta. Host następnie może przeszukiwać katalogi i globalną pamięć podręczną zestawu, aby zlokalizować żądany zasób. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstu](../modeling/the-text-template-transformation-process.md).
 
-Jeśli chcesz użyć można napisać niestandardowego hosta *przekształcenia szablonu tekstu* funkcje poza programem Visual Studio lub jeśli chcesz zintegrować tę funkcjonalność z niestandardowymi narzędziami. Aby utworzyć niestandardowego hosta, należy utworzyć klasę, która dziedziczy po elemencie <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentacja poszczególnych metod, zobacz <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
+Możesz napisać hosta niestandardowego, jeśli chcesz użyć funkcji *transformacji szablonu tekstu* spoza programu Visual Studio lub chcesz zintegrować tę funkcję z narzędziami niestandardowymi. Aby utworzyć hosta niestandardowego, należy utworzyć klasę, która dziedziczy z [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Aby zapoznać się z dokumentacją poszczególnych metod, zobacz [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
 
 > [!WARNING]
-> Jeśli piszesz rozszerzenie programu Visual Studio lub pakietu, należy rozważyć użycie usługi szablonów tekstowych zamiast tworzenia własnego hosta. Aby uzyskać więcej informacji, zobacz [wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+> Jeśli piszesz rozszerzenie lub pakiet programu Visual Studio, rozważ użycie usługi Text tworzenia szablonów zamiast tworzenia własnego hosta. Aby uzyskać więcej informacji, zobacz [Wywoływanie transformacji tekstu w rozszerzeniu programu vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 W instruktażu przedstawiono następujące zagadnienia:
 
@@ -53,7 +53,7 @@ W tym przewodniku utworzysz niestandardowego hosta w wykonywalnej aplikacji, kt�
 
    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 i nowsze wersje**
+   - **Microsoft. VisualStudio. TextTemplating. Interfaces. 10.0 i nowsze wersje**
 
 3. Zastąp kod w pliku Program.cs lub Module1.vb następującym kodem:
 
@@ -714,19 +714,19 @@ W tym przewodniku utworzysz niestandardowego hosta w wykonywalnej aplikacji, kt�
    End Namespace
    ```
 
-4. Dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] tylko Otwórz **projektu** menu, a następnie kliknij przycisk **właściwości CustomHost**. W **obiekt początkowy** kliknij **CustomHost.Program**.
+4. Tylko [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] dla programu Otwórz menu **projekt** , a następnie kliknij pozycję **Właściwości CustomHost**. Na liście **obiekt uruchomieniowy** kliknij pozycję **CustomHost. program**.
 
 5. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
 
 6. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
-## <a name="test-the-custom-host"></a>Testowanie niestandardowego hosta
+## <a name="test-the-custom-host"></a>Testowanie hosta niestandardowego
 
 Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie uruchom niestandardowego hosta, przekaż mu nazwę szablonu tekstu i sprawdź, czy szablon jest przekształcany.
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Aby utworzyć szablon tekstowy w celu przetestowania niestandardowego hosta
 
-1. Utwórz plik tekstowy i nadaj mu nazwę `TestTemplate.tt`.
+1. Utwórz plik tekstowy i nadaj mu `TestTemplate.tt`nazwę.
 
      Do utworzenia pliku możesz użyć dowolnego edytora tekstów (na przykład Notatnika).
 
@@ -786,7 +786,7 @@ Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Zamiast wpisywać adres, możesz przejść do pliku CustomHost.exe w **Eksplorator Windows** i przeciągnąć plik do okna wiersza polecenia.
+    > Zamiast wpisywać adres, możesz przejść do pliku CustomHost. exe w **Eksploratorze Windows** , a następnie przeciągnąć plik do okna wiersza polecenia.
 
 3. Wpisz spację.
 
@@ -797,11 +797,11 @@ Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie 
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > Zamiast wpisywać adres, możesz przejść do pliku TestTemplate.tt w **Eksplorator Windows** i przeciągnąć plik do okna wiersza polecenia.
+    > Zamiast wpisywać adres, możesz przejść do pliku TestTemplate.tt w **Eksploratorze Windows** , a następnie przeciągnąć plik do okna wiersza polecenia.
 
      Aplikacja niestandardowego hosta uruchamia się i wykonuje proces przekształcania szablonu tekstu.
 
-5. W **Eksplorator Windows**, przejdź do folderu, w którym znajduje się plik TestTemplate.tt.
+5. W **Eksploratorze Windows**przejdź do folderu, który zawiera plik TestTemplate.tt.
 
      Ten folder zawiera także plik TestTemplate1.txt.
 
@@ -819,8 +819,8 @@ Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie 
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym przewodniku utworzono hosta przekształcania szablonu tekstu, który obsługuje podstawową funkcjonalność przekształcania. Możesz rozszerzyć hosta o obsługę szablonów tekstowych, które wywołują niestandardowe lub wygenerowane procesory dyrektyw. Aby uzyskać więcej informacji, zobacz [instruktażu: Łączenie hosta z generowanym procesorem dyrektywy](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+W tym przewodniku utworzono hosta przekształcania szablonu tekstu, który obsługuje podstawową funkcjonalność przekształcania. Możesz rozszerzyć hosta o obsługę szablonów tekstowych, które wywołują niestandardowe lub wygenerowane procesory dyrektyw. Aby uzyskać więcej informacji, [zobacz Przewodnik: Łączenie hosta z wygenerowanym procesorem](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)dyrektywy.
 
 ## <a name="see-also"></a>Zobacz także
 
-- <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
+- [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Za pomocą interfejsów API Profiler | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Korzystanie z interfejsów API profilera | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,42 +11,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428128"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870274"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Korzystanie z interfejsów API profilera
 
-Przewodnik używa aplikacji w języku C# do prezentują sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API narzędzi profilowania. Użyjesz interfejsów API profilera, aby ograniczyć ilość danych zebranych podczas profilowania instrumentacji.
+W tym przewodniku C# użyto aplikacji do zademonstrowania sposobu używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsów API narzędzia profilowania. Użyjesz interfejsów API profilera, aby ograniczyć ilość danych zbieranych podczas profilowania Instrumentacji.
 
- Kroki opisane w tym przewodniku dotyczą ogólnie aplikacji C/C++. Dla każdego języka będzie trzeba odpowiednio skonfigurować środowiska kompilacji.
+ Kroki opisane w tym instruktażu dotyczą zwykle aplikacji C/C++ . Dla każdego języka trzeba będzie odpowiednio skonfigurować środowisko kompilacji.
 
- Zazwyczaj powoduje rozpoczęcie analizowania wydajności aplikacji za pomocą profilowania próbki. Jeśli przykładowe profilowania nie zapewnia informacje manifestu "wąskie gardło", profilowanie Instrumentacji może zapewnić większy poziom szczegółowości. Profilowanie Instrumentacji jest bardzo przydatne w przypadku badania interakcji wątku.
+ Zazwyczaj należy rozpocząć analizowanie wydajności aplikacji przy użyciu profilowania przykładowych. Jeśli przykładowe Profilowanie nie zawiera informacji, które wykreślą wąskie gardło, profilowanie Instrumentacji może zapewnić wyższy poziom szczegółowości. Profilowanie Instrumentacji jest bardzo przydatne do badania interakcji wątku.
 
- Większy poziom szczegółowości oznacza jednak, że dane są zbierane. Może się okazać, że profilowanie Instrumentacji tworzy duże pliki danych. Ponadto Instrumentacji jest bardziej prawdopodobne wpłynąć na wydajność aplikacji. Aby uzyskać więcej informacji, zobacz [zrozumieć wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md) i [zrozumieć z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)
+ Jednak wyższy poziom szczegółowości oznacza, że zbierane są więcej danych. Może się okazać, że profilowanie Instrumentacji tworzy duże pliki danych. Ponadto Instrumentacja może mieć wpływ na wydajność aplikacji. Aby uzyskać więcej informacji, zobacz [Omówienie wartości danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md) i [Opis wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)
 
- Profilera Visual Studio umożliwia ograniczenie zbierania danych. Ten przewodnik udostępnia przykładowy sposób ograniczyć zbieranie danych przy użyciu interfejsów API profilera. Profilera Visual Studio zapewnia kontrolowanie zbierania danych z aplikacji interfejsu API.
+ Program Visual Studio profiler umożliwia ograniczenie zbierania danych. Ten Instruktaż zawiera przykład sposobu ograniczania zbierania danych przy użyciu interfejsów API profilera. Profiler programu Visual Studio udostępnia interfejs API służący do kontrolowania zbierania danych z poziomu aplikacji.
 
  ::: moniker range=">=vs-2019"
- Dla kodu natywnego programu Visual Studio profiler interfejsów API znajdują się w *VSPerf.dll*. Plik nagłówkowy *VSPerf.h*i bibliotekę importu *VSPerf.lib*, znajdują się w *programu Microsoft Visual Studio\2019\Team narzędzia Tools\PerfSDK* katalog.  Dla aplikacji 64-bitowych jest folder *Tools\x64\PerfSDK narzędzia Studio\2019\Team Visual firmy Microsoft*
+ W przypadku kodu natywnego interfejsy API profilera programu Visual Studio znajdują się w *VSPerf. dll*. Plik nagłówkowy, *VSPerf. h*i Biblioteka Imports *VSPerf. lib*znajdują się w katalogu *programu Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* .  W przypadku aplikacji 64-bitowych folder jest w *programie Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
  ::: moniker range="vs-2017"
- Dla kodu natywnego programu Visual Studio profiler interfejsów API znajdują się w *VSPerf.dll*. Plik nagłówkowy *VSPerf.h*i bibliotekę importu *VSPerf.lib*, znajdują się w *programu Microsoft Visual Studio\2017\Team narzędzia Tools\PerfSDK* katalog.  Dla aplikacji 64-bitowych jest folder *Tools\x64\PerfSDK narzędzia Studio\2017\Team Visual firmy Microsoft*
+ W przypadku kodu natywnego interfejsy API profilera programu Visual Studio znajdują się w *VSPerf. dll*. Plik nagłówkowy, *VSPerf. h*i Biblioteka Imports *VSPerf. lib*znajdują się w katalogu *programu Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* .  W przypadku aplikacji 64-bitowych folder jest w *programie Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
 
- Dla kodu zarządzanego, program profilujący interfejsów API znajdują się w *Microsoft.VisualStudio.Profiler.dll*. Ta biblioteka DLL znajduje się w *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* katalogu. Dla aplikacji 64-bitowych jest folder *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Profiler>.
+ W przypadku kodu zarządzanego interfejsy API profilera znajdują się w *pliku Microsoft. VisualStudio. Profiler. dll*. Ta biblioteka DLL znajduje się w katalogu *programu Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* . W przypadku aplikacji 64-bitowych folder jest w *programie Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Aby uzyskać więcej informacji, zobacz [Profiler](/previous-versions/ms242704(v=vs.140)).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- W tym przewodniku przyjęto założenie, że preferowanego środowiska deweloperskiego jest skonfigurowany do obsługi debugowania i pobierania próbek. Przegląd wymagań wstępnych można znaleźć w następujących tematach:
+ W tym instruktażu przyjęto założenie, że wybór środowiska programistycznego jest skonfigurowany do obsługi debugowania i próbkowania. W poniższych tematach omówiono wymagania wstępne:
 
 - [Instrukcje: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)
 
-- [Instrukcje: Informacje o symbolach Windows odwołania](../profiling/how-to-reference-windows-symbol-information.md)
+- [Instrukcje: Informacje o symbolach systemu Windows](../profiling/how-to-reference-windows-symbol-information.md)
 
- Domyślnie po uruchomieniu profilera, profiler zbiera dane na poziomie globalnym. Następujący kod na początku programu, włącza globalnego profilowania na wyłączone.
+ Domyślnie po uruchomieniu profilera profiler zbiera dane na poziomie globalnym. Poniższy kod na początku programu powoduje wyłączenie profilowania globalnego.
 
 ```csharp
 DataCollection.StopProfile(
@@ -54,16 +54,16 @@ ProfileLevel.Global,
 DataCollection.CurrentId);
 ```
 
- Można wyłączyć zbieranie danych w wierszu polecenia, bez korzystania z wywołania interfejsu API. W następujących krokach założono, środowiska kompilacji wiersza polecenia jest skonfigurowany do uruchamiania narzędzia profilowania i własne narzędzia programistyczne. W tym ustawienia wymagane dla VSInstr i narzędzia VSPerfCmd. Zobacz [wiersza polecenia, narzędzia profilowania](../profiling/using-the-profiling-tools-from-the-command-line.md).
+ Zbieranie danych można wyłączyć w wierszu polecenia bez użycia wywołania interfejsu API. W poniższych krokach przyjęto założenie, że środowisko kompilacji wiersza polecenia jest skonfigurowane do uruchamiania narzędzi profilowania i narzędzi deweloperskich. Obejmuje to ustawienia niezbędne dla VSInstr i VSPerfCmd. Zobacz [narzędzia profilowania wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md).
 
-## <a name="limit-data-collection-using-profiler-apis"></a>Ograniczenie zbierania danych przy użyciu interfejsów API profilera
+## <a name="limit-data-collection-using-profiler-apis"></a>Ograniczanie zbierania danych za pomocą interfejsów API profilera
 
-#### <a name="to-create-the-code-to-profile"></a>Aby utworzyć kod do profilu
+#### <a name="to-create-the-code-to-profile"></a>Aby utworzyć kod do profilowania
 
-1. Utwórz nowy projekt C# w programie Visual Studio, lub użyć kompilacji wiersza polecenia, w zależności od preferencji.
+1. Utwórz nowy C# projekt w programie Visual Studio lub użyj kompilacji wiersza polecenia, w zależności od preferencji.
 
     > [!NOTE]
-    > Musi odwoływać się do kompilacji *Microsoft.VisualStudio.Profiler.dll* biblioteki, na terenie *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* katalogu.
+    > Kompilacja musi odwoływać się do biblioteki *Microsoft. VisualStudio. Profiler. dll* znajdującej się w katalogu *programu Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* .
 
 2. Skopiuj i wklej następujący kod do projektu:
 
@@ -124,21 +124,21 @@ DataCollection.CurrentId);
     }
     ```
 
-#### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Do gromadzenia i wyświetlania danych w środowisku IDE programu Visual Studio
+#### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Aby zbierać i wyświetlać dane w środowisku IDE programu Visual Studio
 
-1. Otwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Do **analizy** menu wskaż **Profiler**, a następnie wybierz pozycję **nowa sesja wydajności**.
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Otwórz środowisko IDE. W menu **Analizuj** wskaż polecenie **Profiler**, a następnie wybierz pozycję **Nowa sesja wydajności**.
 
-2. Dodaj swoje skompilowanych plików binarnych do **cele** listy w **Eksplorator wydajności** okna. Kliknij prawym przyciskiem myszy **cele**, a następnie wybierz pozycję **Dodaj binarne docelowej**. Znajdź plik binarny w **Dodaj binarne docelowej** okno dialogowe, a następnie kliknij przycisk **Otwórz**.
+2. Dodaj skompilowany plik binarny do listy targets w oknie **Eksplorator wydajności** . Kliknij prawym przyciskiem myszy element **docelowy**, a następnie wybierz polecenie **Dodaj docelowy plik binarny**. Zlokalizuj plik binarny w oknie dialogowym **Dodaj docelowy plik binarny** , a następnie kliknij przycisk **Otwórz**.
 
-3. Wybierz **Instrumentacji** z **metoda** listy na **Eksplorator wydajności** paska narzędzi.
+3. Wybierz pozycję Instrumentacja z listy **Metoda** na pasku narzędzi **Eksplorator wydajności** .
 
-4. Kliknij przycisk **Uruchom za pomocą profilowania**.
+4. Kliknij przycisk **Uruchom z profilem**.
 
-    Program profilujący zostanie Instrumentacja wykonania pliku binarnego i utworzenia pliku raportu wydajności. Plik raportu wydajności będą wyświetlane w **raporty** węźle **Eksplorator wydajności**.
+    Profiler będzie Instrumentacją i wykonywaniem pliku binarnego oraz utworzyć plik raportu wydajności. Plik raportu wydajności zostanie wyświetlony w węźle **raporty** w **Eksplorator wydajności**.
 
 5. Otwórz wynikowy plik raportu wydajności.
 
-   Domyślnie po uruchomieniu profilera, program profilujący będzie zbierać dane na poziomie globalnym. Następujący kod na początku programu, włącza globalnego profilowania na wyłączone.
+   Domyślnie po uruchomieniu profilera Profiler będzie zbierać dane na poziomie globalnym. Poniższy kod na początku programu powoduje wyłączenie profilowania globalnego.
 
 ```csharp
 DataCollection.StopProfile(
@@ -146,31 +146,31 @@ ProfileLevel.Global,
 DataCollection.CurrentId);
 ```
 
-#### <a name="to-collect-and-view-data-at-the-command-line"></a>Do gromadzenia i wyświetlania danych w wierszu polecenia
+#### <a name="to-collect-and-view-data-at-the-command-line"></a>Aby zbierać i wyświetlać dane w wierszu polecenia
 
-1. Kompiluj wersję debugowania przykładowy kod, który został utworzony w procedurze "Tworzenie kodu do profil", we wcześniejszej części tego przewodnika.
+1. Skompiluj wersję Debug przykładowego kodu, który został utworzony w procedurze "Tworzenie kodu do profilu" wcześniej w tym instruktażu.
 
 2. Aby profilować aplikację zarządzaną, wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:
 
-     **VsPerfCLREnv /traceon**
+     **VsPerfCLREnv/TRACEON**
 
 3. Wpisz następujące polecenie: **VSInstr \<filename>.exe**
 
-4. Wpisz następujące polecenie: **/ OUTPUT polecenia VSPerfCmd:\<nazwa pliku > .vsp**
+4. Wpisz następujące polecenie: **VSPerfCmd/Start: Trace/Output:\<filename >. vsp**
 
 5. Wpisz następujące polecenie: **Narzędzia VSPerfCmd /globaloff**
 
-6. Wykonywanie programu.
+6. Wykonaj swój program.
 
 7. Wpisz następujące polecenie: **Narzędzia VSPerfCmd/shutdown**
 
-8. Wpisz następujące polecenie: **VSPerfReport /calltrace:\<filename>.vsp**
+8. Wpisz następujące polecenie: **VSPerfReport/calltrace:\<filename >. vsp**
 
-     ELEMENT. *csv* plik zostanie utworzony w bieżącym katalogu z wynikowe dane dotyczące wydajności.
+     Z. plik *CSV* jest tworzony w bieżącym katalogu z wynikowymi danymi o wydajności.
 
 ## <a name="see-also"></a>Zobacz także
 
-- <xref:Microsoft.VisualStudio.Profiler>
-- [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Profiler](/previous-versions/ms242704(v=vs.140))
+- [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)
-- [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
+- [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
