@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797528"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921811"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Nie używaj priorytetu procesu o wartości Bezczynny
 
@@ -27,17 +27,17 @@ ms.locfileid: "62797528"
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Kategoria|Microsoft.Mobility|
+|Kategoria|Microsoft. Mobility|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła jest uruchamiana podczas procesów są ustawione na `ProcessPriorityClass.Idle`.
+Ta reguła występuje, gdy procesy są ustawione `ProcessPriorityClass.Idle`na.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają `System.Diagnostics.ProcessPriorityClass.Idle` , zajmują Procesor, może być bezczynne, a zatem będą blokować stan wstrzymania.
+Nie należy ustawiać priorytetu procesu na Idle. Procesy, które `System.Diagnostics.ProcessPriorityClass.Idle` mają zajmować procesor CPU, gdy byłyby w stanie bezczynności, w związku z tym blokują zablokowanie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ustaw procesy `ProcessPriorityClass.BelowNormal`.
+Ustaw procesy na `ProcessPriorityClass.BelowNormal`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Ta reguła ma być pomijana, tylko wtedy, gdy priorytetu procesu bezczynności jest wymagany i zagadnienia dotyczące mobilności można bezpiecznie zignorować.
+Ta reguła powinna być pomijana tylko wtedy, gdy wymagany jest priorytet bezczynnego procesu, a zagadnienia dotyczące mobilności można bezpiecznie zignorować.

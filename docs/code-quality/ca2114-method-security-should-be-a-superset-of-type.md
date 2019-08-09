@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623416e557759ace1ad6403ef8ef977df01da39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545488"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921119"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Zabezpieczenie metody powinno być nadzbiorem typu
 
@@ -31,28 +31,28 @@ ms.locfileid: "62545488"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ ma zabezpieczenia deklaratywne, jeden z jego metody ma zabezpieczenia deklaratywne dla tego samego działania zabezpieczeń i akcji zabezpieczeń nie jest [zapotrzebowania na łącza](/dotnet/framework/misc/link-demands), i uprawnienia sprawdzana przez typ nie są podzbiorem uprawnienia sprawdzane przez metodę.
+Typ ma Zabezpieczenia deklaracyjne, a jedna z jej metod ma deklaracyjne zabezpieczenia dla tej samej akcji zabezpieczeń, a akcja zabezpieczeń nie jest [potrzebami konsolidacji](/dotnet/framework/misc/link-demands), a uprawnienia sprawdzane przez typ nie są podzbiorem uprawnień zaewidencjonowanych przez metodę.
 
 ## <a name="rule-description"></a>Opis reguły
- Metoda nie powinna mieć zarówno metody typu poziomie i zabezpieczenia deklaratywne dla tego samego działania. Dwa testy nie są połączone; dotyczy tylko żądanie poziom metody. Na przykład, jeśli typem zażąda uprawnień `X`, oraz jednej z jego metod zażąda uprawnień `Y`, kod nie musi mieć uprawnienie `X` wykonania metody.
+Metoda nie powinna mieć zarówno zabezpieczeń deklaratywnych na poziomie metody, jak i na poziomie typu dla tej samej akcji. Dwa kontrole nie są połączone; stosowane jest tylko żądanie na poziomie metody. Na przykład, jeśli typ wymaga uprawnień `X`, a jedna z jej metod wymaga uprawnień `Y`, kod nie musi mieć uprawnienia `X` do wykonywania metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Przejrzyj kod, aby upewnić się, że wymagane są obie akcje. Jeśli wymagane są obie akcje, upewnij się, że czynność na poziomie obejmuje zabezpieczeń określone na poziomie typu. Na przykład, jeśli danego typu zażąda uprawnień `X`, i jej metodę także musi żądać uprawnienia `Y`, metoda jawnie zażądać `X` i `Y`.
+Sprawdź swój kod, aby upewnić się, że obie akcje są wymagane. Jeśli wymagane są obie akcje, upewnij się, że akcja na poziomie metody obejmuje zabezpieczenia określone na poziomie typu. Na przykład, jeśli `X`typ wymaga uprawnień, a jego Metoda musi również mieć uprawnienia `Y`żądanie, metoda powinna jawnie wymagać `X` i `Y`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli metoda nie wymaga zabezpieczeń określone przez typ. Jednak to nie jest to zwykła scenariusz i mogą wskazywać na potrzeby przeglądu zachowania ostrożności podczas projektowania.
+Jeśli metoda nie wymaga zabezpieczeń określonych przez typ, bezpieczniej jest pominąć ostrzeżenie z tej reguły. Nie jest to jednak zwykły scenariusz i może wskazywać potrzebę dokładnego przeglądu projektu.
 
 ## <a name="example-1"></a>Przykład 1
 
-W poniższym przykładzie użyto uprawnienia dotyczące środowiska, aby zademonstrować niebezpieczeństwa naruszenie tej zasady. W tym przykładzie kodu aplikacji tworzy wystąpienia typu zabezpieczonego, zanim nastąpi odmowa uprawnień wymaganych przez typ. W przypadku rzeczywistych zagrożeń aplikacja będzie wymagać innym sposobem na uzyskanie wystąpienia obiektu.
+W poniższym przykładzie zastosowano uprawnienia środowiska w celu zademonstrowania zagrożeń naruszających tę regułę. W tym przykładzie kod aplikacji tworzy wystąpienie zabezpieczonego typu przed odmową uprawnienia wymaganego przez typ. W rzeczywistym scenariuszu zagrożeń aplikacja będzie wymagać innego sposobu uzyskania wystąpienia obiektu.
 
-W poniższym przykładzie zapotrzebowanie biblioteki uprawnienia dla typu zapisu i uprawnienia dla metody do odczytu.
+W poniższym przykładzie biblioteka wymaga uprawnień do zapisu dla typu i uprawnienia do odczytu dla metody.
 
 [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
 
 ## <a name="example-2"></a>Przykład 2
 
-Poniższy kod aplikacji przedstawia luk w zabezpieczeniach biblioteki przez wywołanie metody, nawet jeśli nie spełnia on wymagania zabezpieczeń na poziomie typu.
+Poniższy kod aplikacji demonstruje lukę w zabezpieczeniach biblioteki, wywołując metodę, mimo że nie spełnia wymagań zabezpieczeń na poziomie typu.
 
 [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
 
@@ -67,5 +67,5 @@ Ten przykład generuje następujące wyniki:
 ## <a name="see-also"></a>Zobacz także
 
 - [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)
-- [Zapotrzebowanie na łącza](/dotnet/framework/misc/link-demands)
+- [Wymagania dotyczące linków](/dotnet/framework/misc/link-demands)
 - [Dane i modelowanie](/dotnet/framework/data/index)

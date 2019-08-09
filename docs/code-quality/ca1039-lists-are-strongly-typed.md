@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d11afe8a3ea8fcae971461b8e33fc4771b74eb75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94b1e8134eb89e4ae78ec0ad6f07fd7406215185
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778903"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922841"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listy są silnie typizowane
 
@@ -32,43 +32,43 @@ ms.locfileid: "62778903"
 
 ## <a name="cause"></a>Przyczyna
 
-Publiczny lub chroniony typ implementuje <xref:System.Collections.IList?displayProperty=fullName> , ale udostępnia silnie typizowane metody dla co najmniej jednej z następujących czynności:
+Typ publiczny lub chroniony implementuje <xref:System.Collections.IList?displayProperty=fullName> , ale nie zapewnia metody silnie wpisanej dla co najmniej jednego z następujących elementów:
 
-- IList.Item
+- Element IList. Item
 
-- IList.Add
+- IList. Add
 
-- IList.Contains
+- IList. Contains
 
 - IList.IndexOf
 
-- IList.Insert
+- IList. Insert
 
-- IList.Remove
+- IList. Remove
 
 ## <a name="rule-description"></a>Opis reguły
 
-Ta reguła wymaga <xref:System.Collections.IList> implementacji w celu dostarczenia silnie typizowane składowe, dzięki czemu użytkownicy nie musieli rzutować argumentów na <xref:System.Object?displayProperty=fullName> wpisz podczas korzystania z funkcji dostępnych przez interfejs. <xref:System.Collections.IList> Interfejs jest implementowany przez kolekcje obiektów, które mogą być udostępniane przez indeks. Reguła ta zakłada, że typ, który zawiera <xref:System.Collections.IList> umożliwia zarządzanie kolekcją wystąpień typów mocniejszych niż <xref:System.Object>.
+Ta reguła wymaga <xref:System.Collections.IList> implementacji, aby zapewnić składowe o jednoznacznie określonym <xref:System.Object?displayProperty=fullName> typie, tak aby użytkownicy nie musieli rzutować argumentów na typ, gdy korzystają z funkcji dostarczonych przez interfejs. <xref:System.Collections.IList> Interfejs jest implementowany przez kolekcje obiektów, do których można uzyskać dostęp za pomocą indeksu. Ta reguła zakłada, że typ, który <xref:System.Collections.IList> implementuje zarządza kolekcją wystąpień typu, który jest silniejszy niż. <xref:System.Object>
 
-<xref:System.Collections.IList> implementuje <xref:System.Collections.ICollection?displayProperty=fullName> i <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejsów. W przypadku zaimplementowania <xref:System.Collections.IList>, musisz podać wymagane silnie typizowanych elementów członkowskich dla <xref:System.Collections.ICollection>. Jeśli obiekty z kolekcji rozszerzony <xref:System.ValueType?displayProperty=fullName>, należy podać element silnie typizowaną dla <xref:System.Collections.IEnumerable.GetEnumerator%2A> w celu uniknięcia spadek wydajności, jest spowodowany przez pakowania; nie jest to wymagane w przypadku obiektów kolekcji typu odwołania.
+<xref:System.Collections.IList>implementuje interfejsy <xref:System.Collections.IEnumerable?displayProperty=fullName>i. <xref:System.Collections.ICollection?displayProperty=fullName> W przypadku zaimplementowania <xref:System.Collections.IList>programu należy dostarczyć wymagane elementy członkowskie o jednoznacznie <xref:System.Collections.ICollection>określonym typie dla. Jeśli obiekty w kolekcji <xref:System.ValueType?displayProperty=fullName>są rozbudowane, należy zapewnić jednoznacznie wpisany <xref:System.Collections.IEnumerable.GetEnumerator%2A> element członkowski, aby uniknąć spadku wydajności, który jest spowodowany opakowaniem; nie jest to wymagane, gdy obiekty kolekcji są typu referencyjnego.
 
-Aby jest zgodne z tą regułą, należy zaimplementować składowych interfejsu jawnie przy użyciu nazwy w postaci InterfaceName.InterfaceMemberName, takich jak <xref:System.Collections.IList.Add%2A>. Elementy członkowskie interfejsu jawnego używania typów danych, które są zadeklarowane przez interfejs. Implementowanie silnie typizowanych elementów członkowskich przy użyciu nazwy elementu członkowskiego interfejsu, takiego jak `Add`. Zadeklaruj silnie typizowanych elementów członkowskich jako publiczne i można deklarować parametrów i zwracają wartości na typ silny, który jest zarządzany przez kolekcję. Silne typy Zastąp słabszych typów, takich jak <xref:System.Object> i <xref:System.Array> , są zadeklarowane przez interfejs.
+Aby zachować zgodność z tą regułą, należy zaimplementować elementy członkowskie interfejsu jawnie przy użyciu nazw w postaci InterfaceName. InterfaceMemberName, takich <xref:System.Collections.IList.Add%2A>jak. Jawne elementy członkowskie interfejsu używają typów danych zadeklarowanych przez interfejs. Zaimplementuj silnie wpisane elementy członkowskie przy użyciu nazwy składowej interfejsu, `Add`takiej jak. Zadeklaruj elementy członkowskie z jednoznacznie określonymi typami jako publiczne i zadeklaruj parametry i zwróć wartości jako typ silny, który jest zarządzany przez kolekcję. Silne typy zastępują słabsze typy, takie jak <xref:System.Object> i <xref:System.Array> , które są zadeklarowane przez interfejs.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, jawne Implementowanie <xref:System.Collections.IList> elementów członkowskich i dostarczają alternatywy silnie typizowanych elementów członkowskich, które zostały podane wcześniej. Dla kodu, który implementuje prawidłowo <xref:System.Collections.IList> interfejs i zapewnia wymagane silnie typizowanych elementów członkowskich, zobacz poniższy przykład.
+Aby naprawić naruszenie tej zasady, jawnie Zaimplementuj <xref:System.Collections.IList> członków i podaj silnie wpisane alternatywy dla elementów członkowskich, które zostały zanotowane wcześniej. W przypadku kodu, który poprawnie <xref:System.Collections.IList> implementuje interfejs i udostępnia wymagane elementy o jednoznacznie określonym typie, zapoznaj się z poniższym przykładem.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły w przypadku implementowania nowej kolekcji opartej na obiektach takich jak liście połączonej, których typy rozszerzające możliwości Nowa kolekcja określić silnego typu. Te typy powinny są zgodne z tą regułą i udostępnić silnie typizowanych elementów członkowskich.
+Pomijaj ostrzeżenie z tej reguły podczas implementowania nowej kolekcji opartej na obiektach, takiej jak lista połączona, gdzie typy, które poszerzają nową kolekcję, określają typ silny. Te typy powinny być zgodne z tą regułą i uwidaczniają silnie wpisaną składowe.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie typ `YourType` rozszerza <xref:System.Collections.CollectionBase?displayProperty=fullName>, podobnie jak wszystkie kolekcje silnie typizowane. <xref:System.Collections.CollectionBase> zapewnia jawną implementację <xref:System.Collections.IList> interfejsu. W związku z tym, należy tylko podać silnie typizowanych elementów członkowskich dla <xref:System.Collections.IList> i <xref:System.Collections.ICollection>.
+W poniższym przykładzie typ rozciąga `YourType` <xref:System.Collections.CollectionBase?displayProperty=fullName>się, ponieważ wszystkie kolekcje o jednoznacznie określonym typie powinny. <xref:System.Collections.CollectionBase>zapewnia jawną implementację <xref:System.Collections.IList> interfejsu. W związku z tym należy dostarczyć tylko elementy o jednoznacznie określonym <xref:System.Collections.IList> typie <xref:System.Collections.ICollection>dla i.
 
- [!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
+[!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1035: Implementacje interfejsu ICollection mają silnie typizowane składowe](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+[CA1035: Implementacje ICollection mają jednoznacznie wpisane elementy członkowskie](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1038: Moduły wyliczające powinny być silnie typizowane](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+[CA1038 Moduły wyliczające powinny być silnie wpisane](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>Zobacz także
 

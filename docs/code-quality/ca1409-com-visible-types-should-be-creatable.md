@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05dbe964a16f838088fe8b053d59c1916daf38f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4196cb91e1b866453de54347b8a67edd3dc2dc96
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546404"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921893"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Typy widoczne dla modelu COM powinny mieć możliwość utworzenia
 
@@ -27,27 +27,27 @@ ms.locfileid: "62546404"
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
-|Kategoria|Microsoft.Interoperability|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. współdziałanie|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Typ odwołania, który jest specjalnie oznaczony jako widoczny na Component Object Model (COM) zawiera publiczny konstruktor sparametryzowany, ale nie zawiera publicznego domyślnego (bezparametrowego) konstruktora.
+Typ referencyjny, który jest jawnie oznaczony jako widoczny dla Component Object Model (COM) zawiera publiczny, sparametryzowany Konstruktor, ale nie zawiera publicznego domyślnego (bezparametrowego) konstruktora.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie można utworzyć typu bez publicznego konstruktora domyślnego przez klientów modelu COM. Jednak typ nadal jest możliwy przez klientów modelu COM. Jeśli inny oznacza, że jest dostępny do utworzenia typu i przekazać go do klienta (na przykład w wyniku wartość zwracaną przez wywołanie metody).
+Nie można utworzyć typu bez publicznego konstruktora domyślnego przez klientów modelu COM. Jednak dla klientów modelu COM można nadal uzyskać dostęp do tego typu, jeśli jest dostępny inny sposób tworzenia typu i przekazywania go do klienta (na przykład za pośrednictwem wartości zwracanej wywołania metody).
 
- Reguła ignoruje typy, które są uzyskiwane z <xref:System.Delegate?displayProperty=fullName>.
+Reguła ignoruje typy, które są wyprowadzane z <xref:System.Delegate?displayProperty=fullName>.
 
- Domyślnie widoczny dla modelu COM są następujące: zestawy, typy publiczne, składowe publiczne wystąpienia w publicznych typach i wszystkich elementów członkowskich typów publicznych wartości.
+Domyślnie następujące elementy są widoczne dla modelu COM: zestawy, typy publiczne, składowe wystąpienia publicznego w typach publicznych oraz wszystkie elementy członkowskie publicznych typów wartości.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy dodać publicznego konstruktora domyślnego lub usunąć <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> z typu.
+Aby naprawić naruszenie tej reguły, Dodaj publiczny Konstruktor domyślny lub Usuń <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> z tego typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli podano inny sposób utworzyć i przekazać obiekt do klienta COM.
+Jeśli istnieją inne sposoby tworzenia i przekazywania obiektu do klienta COM, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1017: Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017 Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Zobacz także
 

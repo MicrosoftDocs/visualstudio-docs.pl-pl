@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58a7d726d08b80600e3351b6324733d6ffdcf611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 672efc49d712d9cd800bf53a2ca8487c96d502b6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444649"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871678"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Użycie programu Visual Studio ModelBus w szablonie tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Jeśli piszesz szablony tekstowe, które odczytują modelu, który zawiera [!INC
 
 - Język DSL, który jest elementem docelowym odwołania musi mieć kartę ModelBus, który jest skonfigurowany dla dostępu z poziomu szablonów tekstu. Jeśli język DSL jest również dostęp z innego kodu, ponownie skonfigurowane jest wymagana karta oprócz standardowej karty ModelBus.
 
-     Menedżera adapterów musi dziedziczyć <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> i muszą mieć atrybut `[HostSpecific(HostName)]`.
+     Menedżer adapterów musi dziedziczyć z [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)) i musi mieć atrybut `[HostSpecific(HostName)]`.
 
-- Szablon musi dziedziczyć <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
+- Szablon musi dziedziczyć po elemencie [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
 > [!NOTE]
 > Jeśli chcesz odczytać DSL modeli, które nie zawierają odwołań ModelBus, można użyć procesorów dyrektyw, które są generowane w projektach języka DSL. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do modeli z poziomu szablonów tekstu](../modeling/accessing-models-from-text-templates.md).
@@ -81,7 +81,7 @@ Jeśli piszesz szablony tekstowe, które odczytują modelu, który zawiera [!INC
 
 4. W AdapterManager.tt:
 
-    - Zmień deklarację elementu AdapterManagerBase, tak aby dziedziczył z <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
+    - Zmień deklarację elementu AdapterManagerBase tak, aby dziedziczył po [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)).
 
          `public partial class <#= dslName =>AdapterManagerBase :`
 
@@ -102,7 +102,7 @@ Jeśli piszesz szablony tekstowe, które odczytują modelu, który zawiera [!INC
 ## <a name="writing-a-text-template-that-can-resolve-modelbus-references"></a>Pisanie szablonu tekstu, który może rozpoznać odwołania ModelBus
  Zazwyczaj Rozpocznij od szablonu, który odczytuje i generuje pliki z "źródło" DSL. Ten szablon używa dyrektywy, który jest generowany w projekcie języka DSL źródło do odczytu źródła plików modelu w sposób opisany w [uzyskiwania dostępu do modeli z poziomu szablonów tekstu](../modeling/accessing-models-from-text-templates.md). Jednak źródło DSL zawiera ModelBus odwołania do "target" DSL. W związku z tym chcesz włączyć kod szablonu do rozpoznawania odwołań i dostępu do docelowych DSL. W związku z tym należy dostosować szablon, wykonaj następujące czynności:
 
-- Zmień klasę bazową szablonu do <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
+- Zmień klasę bazową szablonu na [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
 - Obejmują `hostspecific="true"` w dyrektywie szablonu.
 
@@ -163,7 +163,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 - Użyj `this.ModelBus` do uzyskania dostępu do ModelBus.
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Przewodnik: Testowanie szablonu tekstu, który używa ModelBus
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Przewodnik: Testowanie szablonu tekstu korzystającego z ModelBus
  W tym przewodniku należy wykonać następujące kroki:
 
 1. Skonstruuj dwóch języków DSL. Jednym języku DSL *konsumenta*, ma `ModelBusReference` właściwość, która może odwoływać się do innych DSL *dostawcy*.
@@ -184,7 +184,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. W definicji DSL diagramu, kliknij prawym przyciskiem myszy pustą część diagramu, który nie jest u góry, a następnie kliknij **Włącz Modelbus**.
 
-   - Jeśli nie widzisz **Włącz Modelbus**, należy pobrać i zainstalować rozszerzenie VMSDK ModelBus. Znajdź je w witrynie VMSDK: [Wizualizacja i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+   - Jeśli nie widzisz **Włącz Modelbus**, należy pobrać i zainstalować rozszerzenie VMSDK ModelBus. Znajdź ją w witrynie VMSDK: [Wizualizacja i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 3. W **Włącz Modelbus** okno dialogowe, wybierz opcję **udostępnienia tego języka DSL do ModelBus**, a następnie kliknij przycisk **OK**.
 
@@ -214,11 +214,11 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. W `T4ModelBusAdapter` projektu, Dodaj odwołanie do: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. `T4ModelBusAdapter` W projekcie Dodaj odwołanie do: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
 
 8. Open T4ModelBusAdapter\AdapterManager.tt:
 
-   1. Zmień klasę bazową AdapterManagerBase do <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>. Teraz ta część pliku podobny do następującego.
+   1. Zmień klasę bazową AdapterManagerBase na [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)). Teraz ta część pliku podobny do następującego.
 
        ```
        namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters

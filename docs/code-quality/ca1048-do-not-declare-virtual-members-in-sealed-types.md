@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84db1db9061eff1373ee3ad4f0316a1f3dba0474
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 430ed0b23d62bd46a9764bfb0a3834e0decd476b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778713"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922592"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Nie deklaruj wirtualnych składowych w typach zapieczętowanych
 
@@ -31,20 +31,20 @@ ms.locfileid: "62778713"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny jest zapieczętowany i deklaruje metodę, która jest zarówno `virtual` (`Overridable` w języku Visual Basic) i nie jest final. Ta zasada nie raportuje naruszenia typami delegatów, które muszą korzystać z tego wzoru.
+Typ publiczny jest zapieczętowany i deklaruje metodę, która jest zarówno `virtual` (`Overridable` w Visual Basic), a nie końcową. Ta reguła nie zgłasza naruszeń dla typów delegatów, które muszą być zgodne z tym wzorcem.
 
 ## <a name="rule-description"></a>Opis reguły
- Metody wirtualne są zadeklarowane w typach tak, aby typy dziedziczące mogły zmieniać implementację metod wirtualnych. Zgodnie z definicją nie może dziedziczyć od typu zapieczętowanego podjęcia metoda wirtualna w typie zapieczętowanym ta nie ma znaczenia.
+Metody wirtualne są zadeklarowane w typach tak, aby typy dziedziczące mogły zmieniać implementację metod wirtualnych. Według definicji nie można dziedziczyć z typu zapieczętowanego, co oznacza, że metoda wirtualna w typie zapieczętowanym nie ma znaczenia.
 
- Kompilatory języków Visual Basic i C# nie zezwalają na typy narusza tę regułę.
+Visual Basic i C# kompilatory nie zezwalają, aby typy naruszają tę regułę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, wprowadzić metody na niewirtualną lub zmień typ dziedziczone.
+Aby naprawić naruszenie tej reguły, ustaw metodę jako niewirtualną lub Zmień typ na dziedziczony.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Pozostawienie typ w jego bieżącym stanie może spowodować problemy z konserwacji i nie zapewnia żadnych korzyści.
+Nie pomijaj ostrzeżeń dla tej reguły. Pozostawienie tego typu w bieżącym stanie może spowodować problemy z konserwacją i nie zapewnia żadnych korzyści.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje typ, który narusza tę regułę.
+Poniższy przykład pokazuje typ, który narusza tę regułę.
 
- [!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]
+[!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]

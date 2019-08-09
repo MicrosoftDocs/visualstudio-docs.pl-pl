@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5dc7f7e62526050eeabdb91a557bbdf0fbcf6da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 888e1b5d551e357eb732dfe3f7661d51cbdf089d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779524"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923139"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Nie należy używać parametrów domyślnych
 
@@ -31,26 +31,26 @@ ms.locfileid: "62779524"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ widoczny na zewnątrz zawiera widoczne na zewnątrz metodę, która korzysta z domyślnego parametru.
+Typ widoczny na zewnątrz zawiera zewnętrznie widoczną metodę, która używa domyślnego parametru.
 
 ## <a name="rule-description"></a>Opis reguły
- Metody, z wykorzystaniem parametrów domyślnych są dozwolone w ramach Common Language Specification (CLS); jednak CLS umożliwia kompilatory ignorują wartości, które są przypisane do tych parametrów. Kod, który jest przeznaczony dla kompilatory, które będzie ignorować domyślne wartości parametrów należy jawnie określić argumenty dla każdego parametru domyślnego. Aby zapewnić odpowiednie zachowanie w językach programowania, metody, z wykorzystaniem parametrów domyślnych należy zastąpić przeciążeniami metod, które dostarczają parametry domyślne.
+Metody korzystające z parametrów domyślnych są dozwolone pod Common Language Specification (CLS); jednak specyfikacja CLS umożliwia kompilatorom ignorowanie wartości, które są przypisane do tych parametrów. Kod Zapisano dla kompilatorów, które ignorują domyślne wartości parametrów, muszą jawnie podawać argumenty dla każdego domyślnego parametru. Aby zachować zachowanie w różnych językach programowania, metody, które używają parametrów domyślnych, powinny być zastępowane przeciążeniami metod, które udostępniają parametry domyślne.
 
- Kompilator ignoruje wartości domyślne parametrów dla rozszerzenia zarządzane, dla języka C++, gdy uzyskuje dostęp do kodu zarządzanego. Kompilator języka Visual Basic obsługuje metody, które mają domyślne parametry, które używają [opcjonalnie](/dotnet/visual-basic/language-reference/modifiers/optional) — słowo kluczowe.
+Kompilator ignoruje wartości domyślnych parametrów dla rozszerzenia zarządzanego, C++ gdy uzyskuje dostęp do kodu zarządzanego. Kompilator Visual Basic obsługuje metody, które mają domyślne parametry, które używają [opcjonalnego](/dotnet/visual-basic/language-reference/modifiers/optional) słowa kluczowego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zastąpić metodę, która korzysta z domyślnych parametrów, które dostarczają parametry domyślne przeciążeniami metod.
+Aby naprawić naruszenie tej reguły, Zastąp metodę, która używa domyślnych parametrów z przeciążeniami metod, które dostarczają parametry domyślne.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy kod przedstawia metodę, która korzysta z domyślnych parametrów i przeciążone metody, które zapewniają podobne funkcje.
+Poniższy przykład przedstawia metodę, która używa parametrów domyślnych i przeciążonych metod, które zapewniają równoważną funkcjonalność.
 
- [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
+[!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1025: Zastąp powtarzające się argumenty tablicą params](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+[CA1025: Zastąp powtarzalne argumenty tablicą parametrów](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>Zobacz także
- [Niezależność od języka i składniki niezależne od języka](/dotnet/standard/language-independence-and-language-independent-components)
+[Niezależność od języka i składniki niezależne od języka](/dotnet/standard/language-independence-and-language-independent-components)

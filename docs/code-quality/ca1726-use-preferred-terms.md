@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 469025e5856f284f4d8887b351865a0304e4d35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797161"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921576"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Używaj preferowanych terminów
 
@@ -27,17 +27,17 @@ ms.locfileid: "62797161"
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Istotne — gdy wywoływane zestawów<br /><br /> Podziału non - gdy wywoływane w parametrach typu|
+|Zmiana kluczowa|Przerywanie — gdy są uruchamiane w zestawach<br /><br /> Rozdzielenie — gdy jest uruchamiany w parametrach typu|
 
 ## <a name="cause"></a>Przyczyna
 
-Nazwa widocznego na zewnątrz identyfikatora zawiera termin, dla którego istnieje alternatywny, preferowany zamiennik. Alternatywnie nazwa zawiera określenie Flag lub flag.
+Nazwa widocznego na zewnątrz identyfikatora zawiera termin, dla którego istnieje alternatywny, preferowany zamiennik. Lub nazwa zawiera flagę lub flagi warunku.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Ta reguła analizuje identyfikator na tokeny. Każdy pojedynczy token i ciągłe kombinację dwóch tokenu jest porównywany warunki, które są wbudowane w regule, jak i w sekcji uznane za przestarzałe słowników niestandardowych. W poniższej tabeli przedstawiono warunki, które są wbudowane w zasady i ich preferowany alternatyw.
+Ta reguła analizuje identyfikator w tokenach. Każdy pojedynczy token i każda ciągła kombinacja podwójnego tokenu jest porównywana z terminami, które są wbudowane w regułę i w sekcji przestarzałe w dowolnym słowniku niestandardowym. W poniższej tabeli przedstawiono warunki, które są wbudowane w regułę i ich preferowane alternatywy.
 
-|Przestarzałe termin|Preferowany termin|
+|Przestarzały termin|Preferowany termin|
 |-------------------|--------------------|
 |`Arent`|`AreNot`|
 |`Cancelled`|`Canceled`|
@@ -47,7 +47,7 @@ Ta reguła analizuje identyfikator na tokeny. Każdy pojedynczy token i ciągłe
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` lub `Flags`|Nie ma żadnych zastąpienie terminu. Nie używać.|
+|`Flag` lub `Flags`|Nie istnieje termin zastępczy. Nie używać.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|
@@ -65,10 +65,10 @@ Ta reguła analizuje identyfikator na tokeny. Każdy pojedynczy token i ciągłe
 |`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Zamień termin na preferowany termin alternatywny.
+Aby naprawić naruszenie tej zasady, należy zamienić termin na preferowany termin alternatywny.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, tylko wtedy, gdy nazwa identyfikatora jest zamierzone i dotyczy oryginalnej termin zamiast preferowany termin.
+Pomiń ostrzeżenie z tej reguły tylko wtedy, gdy nazwa identyfikatora jest zacelowa i odnosi się do oryginalnego terminu, a nie od preferowanego okresu.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)
+[Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)

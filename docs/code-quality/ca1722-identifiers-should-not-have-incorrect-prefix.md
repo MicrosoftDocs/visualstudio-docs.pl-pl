@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1d2aa6f0889216b39b891b042989f1c8c69692
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5daf51cd8bef4910a327b8e261f15332ad6522da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545987"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921620"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Identyfikatory nie powinny mieć nieprawidłowych prefiksów
 
@@ -31,20 +31,20 @@ ms.locfileid: "62545987"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Identyfikator ma niepoprawny prefiks.
+Identyfikator ma nieprawidłowy prefiks.
 
 ## <a name="rule-description"></a>Opis reguły
- Zgodnie z konwencją, tylko niektóre elementy programowania mają nazwy rozpoczynające się od określonego prefiksu.
+Zgodnie z konwencją, tylko niektóre elementy programowania mają nazwy rozpoczynające się od określonego prefiksu.
 
- Nazwy typów nie ma określonego prefiksu i nie powinien być poprzedzony "C". Ta zasada zgłasza naruszenia nazwy typów, takich jak "CMyClass" i nie raportuje naruszenia nazwy typów, takich jak "Pamięci podręcznej".
+Nazwy typów nie mają określonego prefiksu i nie powinny być poprzedzone znakiem "C". Ta reguła zgłasza naruszenia dla nazw typów, takich jak "CMyClass" i nie zgłasza naruszeń dla nazw typów, takich jak "Cache".
 
- Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Ten spójności zmniejsza nauki, wymagana na nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
+Konwencje nazewnictwa zapewniają typowy wygląd bibliotek przeznaczonych dla środowiska uruchomieniowego języka wspólnego. Ta spójność zmniejsza krzywą uczenia, która jest wymagana w przypadku nowych bibliotek oprogramowania i zwiększa zaufanie klienta, że biblioteka została opracowana przez kogoś, kto ma doświadczenie w tworzeniu kodu zarządzanego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Usuń prefiks z identyfikatorem.
+Usuń prefiks z identyfikatora.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1715: Identyfikatory powinny mieć poprawny prefiks](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+[CA1715 Identyfikatory powinny mieć poprawny prefiks](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

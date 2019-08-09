@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d4a194229ccbe6720f4c8097422691974ab64b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c144db920bfa04055c81227e4cc2c230ed2f097d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545475"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921332"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Unikaj niewywołanego kodu prywatnego
 
@@ -28,33 +28,33 @@ ms.locfileid: "62545475"
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Prywatne lub wewnętrzne elementu członkowskiego (poziomie zestawu) nie ma obiektów wywołujących w zestawie, nie jest wywoływany przez środowisko uruchomieniowe języka wspólnego i nie jest wywoływany przez delegata. Następujące elementy członkowskie nie są sprawdzane przez tę regułę:
+Element członkowski prywatny lub wewnętrzny (poziom zestawu) nie ma elementów wywołujących w zestawie, nie jest wywoływany przez środowisko uruchomieniowe języka wspólnego i nie jest wywoływany przez delegata. Następujące elementy członkowskie nie są sprawdzane przez tę regułę:
 
-- Elementy członkowskie interfejsu jawnego.
+- Jawne elementy członkowskie interfejsu.
 
 - Konstruktory statyczne.
 
 - Konstruktory serializacji.
 
-- Metody oznaczone atrybutami <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Metody oznaczone <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atrybutem <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>or.
 
-- Elementy członkowskie, które są zastąpień.
+- Elementy członkowskie, które są zastępują.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta zasada można raportów fałszywych alarmów, jeśli wystąpią punkty wejścia, które nie są identyfikowane przez logikę reguł. Ponadto kompilator może emitować Kod noncallable do zestawu.
+Ta reguła może zgłosić fałszywie dodatnie, jeśli występują punkty wejścia, które nie są obecnie identyfikowane przez logikę reguł. Ponadto kompilator może emitować niewywołujący kod do zestawu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Usuń kod noncallable lub Dodaj kod, który ją wywołuje.
+Aby naprawić naruszenie tej zasady, Usuń kod niewywołujący lub Dodaj kod, który go wywołuje.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły.
+Można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Usuń nieużywane elementy lokalne](../code-quality/ca1804-remove-unused-locals.md)

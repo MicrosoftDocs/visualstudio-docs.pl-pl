@@ -9,34 +9,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb9daee86fec058fca68740eaea3b9436e5570d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778544"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870745"
 ---
-# <a name="options-text-editor-f-code-fixes"></a>Opcje, Edytor tekstu, F#, poprawki kodu
+# <a name="options-text-editor--f--code-fixes"></a>Opcje: > F# Edytora tekstu > poprawek kodu
 
-Użyj **poprawek kodu** Strona opcji, aby określić ustawienia, które mogą pomóc zidentyfikować błędy kodu i oferowanie rozwiązań. Dostępu do tej opcji strony, wybierz **narzędzia** > **opcje**, a następnie wybierz **edytora tekstów**  >  **F#**  >  **Poprawki kodu**.
+Strona Opcje poprawek kodu służy do określania ustawień, które mogą ułatwić identyfikację błędów kodu i oferowanie rozwiązań. Aby uzyskać dostęp do tej strony opcji, wybierz**Opcje** **Narzędzia** > , a następnie wybierz**poprawki kodu** **edytora** > **F#**  > tekstu.
 
 ## <a name="code-fixes"></a>Poprawki kodu
 
-- **Uprość nazwy (usuwanie niepotrzebnych kwalifikatory)**
+- **Uproszczenie nazw (usuwanie niepotrzebnych kwalifikatorów)**
 
-   Jeśli to pole wyboru jest zaznaczone, w pełni kwalifikowane nazwy są uproszczone, gdy wymagania kwalifikacyjne nie są konieczne, takich jak dla elementu członkowskiego w przestrzeni nazw często używanych.
+  Jeśli to pole wyboru jest zaznaczone, w pełni kwalifikowane nazwy są uproszczone, gdy kwalifikacje nie są konieczne, na przykład dla elementu członkowskiego często używanej przestrzeni nazw.
 
-- **Otwarte instrukcje na najwyższym poziomie zawsze jest miejsce**
+- **Zawsze umieszczaj otwarte instrukcje na najwyższym poziomie**
 
-   Jeśli to pole wyboru jest zaznaczone, a następnie wpisz instrukcję otwarte w kodzie, zostanie ono przełączone na najwyższym poziomie.
+  Jeśli to pole wyboru jest zaznaczone i wpiszesz `open` instrukcję w kodzie, zostanie ona umieszczona na najwyższego poziomu.
 
 - **Usuń nieużywane otwarte instrukcje**
 
-   Jeśli to pole wyboru jest zaznaczone, otwarte instrukcje w bieżącym pliku, które nie są używane są usuwane.
+  Jeśli to pole wyboru jest zaznaczone, dokumenty są analizowane pod kątem nieużywanych `open` instrukcji, a do usuwania wszystkich nieużywanych `open` instrukcji zostanie wyświetlona żarówka z szybką [akcją](../quick-actions.md) .
 
-- **Analizowanie, a także sugerują poprawki dla nieużywanych wartości**
+- **Analizowanie i sugerowanie poprawek dla nieużywanych wartości**
 
-   Jeśli to pole wyboru jest zaznaczone, narzędzie rozpoznaje wartość, która nie jest używana w kodzie. Następnie po umieszczeniu wskaźnika myszy nad nieużywanej wartości zalecane sposoby używania wartości.
+  Jeśli to pole wyboru jest zaznaczone, narzędzie rozpoznaje wartość, która nie jest używana w kodzie. Po umieszczeniu wskaźnika myszy na nieużywanej wartości zalecane jest, aby użyć wartości.
 
 ## <a name="see-also"></a>Zobacz także
 

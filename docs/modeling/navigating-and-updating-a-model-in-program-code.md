@@ -9,41 +9,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15725508059dbd1c11d9abe1dfcd42d170d24b47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b53896e2c16980352d0ce223295c4e2dab08b9e1
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814797"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870529"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Nawigowanie po modelu i aktualizowanie go w kodzie programu
 
-Można napisać kod, aby tworzyć i usuwać elementy modelu ustawiać ich właściwości oraz tworzenia i usuwania łączy między elementami. Wszystkie zmiany, musi nastąpić w ramach transakcji. Jeśli elementy są wyświetlane na diagramie, diagram zostanie "rozwiązany" automatycznie na końcu transakcji.
+Można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiać ich właściwości oraz tworzyć i usuwać linki między elementami. Wszystkie zmiany muszą zostać wprowadzone w obrębie transakcji. Jeśli elementy są wyświetlane na diagramie, diagram zostanie automatycznie "rozwiązany" na końcu transakcji.
 
-## <a name="example"></a> Definicja DSL przykładowej
- Jest to główna część DslDefinition.dsl w przykładach w tym temacie:
+## <a name="example"></a>Przykładowa Definicja DSL
+ Jest to główna część DslDefinition. DSL dla przykładów w tym temacie:
 
- ![Diagramem definicji DSL &#45; model drzewa rodziny](../modeling/media/familyt_person.png)
+ ![Model drzewa rodziny &#45; diagramów definicji DSL](../modeling/media/familyt_person.png)
 
- Ten model jest wystąpienie tego języka DSL:
+ Ten model jest wystąpieniem tego języka DSL:
 
- ![Model drzewa rodziny Tudorów](../modeling/media/tudor_familytreemodel.png)
+ ![Model drzewa rodziny Tudor](../modeling/media/tudor_familytreemodel.png)
 
-### <a name="references-and-namespaces"></a>Odwołań i przestrzeni nazw
- Aby uruchomić kod, w tym temacie, należy odwołać:
+### <a name="references-and-namespaces"></a>Odwołania i przestrzenie nazw
+ Aby uruchomić kod w tym temacie, należy odwołać się do:
 
  `Microsoft.VisualStudio.Modeling.Sdk.11.0.dll`
 
- Twój kod użyje tej przestrzeni nazw:
+ Twój kod będzie używać tej przestrzeni nazw:
 
  `using Microsoft.VisualStudio.Modeling;`
 
- Ponadto jeśli piszesz kod w innym projekcie niż ten, w którym zdefiniowano DSL, należy zaimportować zestaw, który jest skompilowany na podstawie projektu Dsl.
+ Ponadto, jeśli piszesz kod w innym projekcie niż ten, w którym zdefiniowano element DSL, należy zaimportować zestaw, który jest skompilowany przez projekt DSL.
 
-## <a name="navigation"></a> Nawigacja modelu
+## <a name="navigation"></a>Nawigowanie po modelu
 
 ### <a name="properties"></a>Właściwości
- Właściwości domeny, które można zdefiniować w definicji DSL stają się właściwości, które są dostępne w kodzie programu:
+ Właściwości domeny zdefiniowane w definicji DSL stają się właściwościami, do których można uzyskać dostęp w kodzie programu:
 
  `Person henry = ...;`
 
@@ -51,28 +51,28 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu ustawiać ich właś
 
  `if (henry.Name.EndsWith("VIII")) ...`
 
- Jeśli chcesz ustawić właściwość, należy to zrobić w [transakcji](#transaction):
+ Jeśli chcesz ustawić właściwość, należy to zrobić wewnątrz [transakcji](#transaction):
 
  `henry.Name = "Henry VIII";`
 
- Jeśli w definicji DSL, właściwość firmy **rodzaj** jest **obliczona**, nie można go ustawić. Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).
+ Jeśli w definicji DSL jest **obliczana**wartość **rodzaju** właściwości, nie można jej ustawić. Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Relacje
- Relacje domeny, które można zdefiniować w definicji DSL stają się pary właściwości, jeden w klasie na każdym końcu relacji. Nazwy właściwości są wyświetlane na diagramie DslDefinition jako etykiety na ról na każdej stronie relacji. W zależności od Liczebność roli typ właściwości jest klasy na drugiej stronie relacji lub kolekcję tej klasy.
+ Relacje domeny zdefiniowane w definicji DSL stają się parami właściwości, jeden w klasie na każdym końcu relacji. Nazwy właściwości są wyświetlane na diagramie DslDefinition jako etykiety na rolach na każdej stronie relacji. W zależności od liczebności roli typ właściwości jest albo klasą na drugim końcu relacji, albo kolekcją tej klasy.
 
  `foreach (Person child in henry.Children) { ... }`
 
  `FamilyTreeModel ftree = henry.FamilyTreeModel;`
 
- Właściwości przeciwny końców relacji są zawsze odwrotność. Po utworzeniu lub usunięciu link właściwości roli na oba te elementy są aktualizowane. Poniższe wyrażenie (rozszerzenia, który używa `System.Linq`) ma zawsze wartość true dla relacji ParentsHaveChildren w przykładzie:
+ Właściwości na przeciwnych końcach relacji są zawsze wzajemnie powiązane. Po utworzeniu lub usunięciu linku są aktualizowane jego właściwości. Następujące wyrażenie (które używa rozszerzeń `System.Linq`) ma zawsze wartość true dla relacji ParentsHaveChildren w przykładzie:
 
  `(Person p) => p.Children.All(child => child.Parents.Contains(p))`
 
  `&& p.Parents.All(parent => parent.Children.Contains(p));`
 
- **ElementLinks**. Relacja jest również jest reprezentowanych przez element modelu o nazwie *łącze*, który jest wystąpieniem typu relacji domeny. Link ma zawsze element jedno źródło i element jeden element docelowy. Element źródłowy może być taki sam jak element docelowy.
+ **ElementLinks**. Relacja jest również reprezentowana przez element modelu o nazwie *link*, który jest wystąpieniem typu relacji domeny. Link zawsze ma jeden element źródłowy i jeden element docelowy. Element źródłowy i element docelowy mogą być takie same.
 
- Aby uzyskać dostęp, link i jego właściwości:
+ Możesz uzyskać dostęp do linku i jego właściwości:
 
  `ParentsHaveChildren link = ParentsHaveChildren.GetLink(henry, edward);`
 
@@ -80,35 +80,35 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu ustawiać ich właś
 
  `link == null || link.Parent == henry && link.Child == edward`
 
- Domyślnie nie więcej niż jedno wystąpienie relacji może połączyć jakaś para elementów modelu. Ale jeśli w definicji DSL `Allow Duplicates` flaga jest wartość true dla relacji, a następnie może istnieć więcej niż jednego połączenia i trzeba użyć `GetLinks`:
+ Domyślnie nie ma więcej niż jednego wystąpienia relacji, aby połączyć dowolną parę elementów modelu. Ale jeśli w definicji `Allow Duplicates` DSL flaga ma wartość true dla relacji, może istnieć więcej niż jedno łącze i należy użyć: `GetLinks`
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Istnieją również inne metody uzyskiwania dostępu do łączy. Na przykład:
+ Istnieją również inne metody uzyskiwania dostępu do linków. Na przykład:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
- **Ukryte role.** Jeśli w definicji DSL **wygenerowaniu właściwości** jest **false** dla określonej roli, nie ma właściwości nie jest generowany, która odnosi się do tej roli. Można nadal dostęp do linków i przechodzenie przez łącza za pomocą metod klasy relacji:
+ **Ukryte role.** Jeśli w definicji DSL, **jest generowana** przez właściwość **wartość false** dla określonej roli, nie jest generowana żadna właściwość odpowiadająca tej roli. Można jednak nadal uzyskiwać dostęp do linków i przechodzić przez linki przy użyciu metod relacji:
 
  `foreach (Person p in ParentsHaveChildren.GetChildren(henry)) { ... }`
 
- Przykład najczęściej używane dotyczy <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relacji łączy elementu modelu do kształtu, który wyświetla je na diagramie:
+ Najczęściej używanym przykładem jest <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relacja, która łączy element modelu z kształtem, który wyświetla go na diagramie:
 
  `PresentationViewsSubject.GetPresentation(henry)[0] as PersonShape`
 
-### <a name="the-element-directory"></a>Element katalogu
- Aby uzyskać dostęp wszystkie elementy w magazynie przy użyciu katalogu elementów:
+### <a name="the-element-directory"></a>Katalog elementu
+ Dostęp do wszystkich elementów w sklepie można uzyskać przy użyciu katalogu elementów:
 
  `store.ElementDirectory.AllElements`
 
- Dostępne są również metody służące do znajdowania elementów, takich jak następujące:
+ Istnieją również metody znajdowania elementów, takich jak następujące:
 
  `store.ElementDirectory.FindElements(Person.DomainClassId);`
 
  `store.ElementDirectory.GetElement(elementId);`
 
-## <a name="metadata"></a> Uzyskiwanie dostępu do informacji o klasie
- Można uzyskać informacji na temat klas, relacje i innych aspektów definicji DSL. Na przykład:
+## <a name="metadata"></a>Uzyskiwanie dostępu do informacji o klasie
+ Możesz uzyskać informacje na temat klas, relacji i innych aspektów definicji DSL. Na przykład:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -122,16 +122,16 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu ustawiać ich właś
 
  `DomainRoleInfo sourceRole = relationship.DomainRole[0];`
 
- Klas nadrzędnych elementów modelu są następujące:
+ Klasy nadrzędne elementów modelu są następujące:
 
 - ModelElement — wszystkie elementy i relacje są ModelElements
 
 - ElementLink — wszystkie relacje są ElementLinks
 
-## <a name="transaction"></a> Wykonaj zmiany wewnątrz transakcji
- Zmianie kodu źródłowego w Store, jego musi zrobić wewnątrz transakcji. Dotyczy to wszystkich elementów modelu, relacje, kształty, diagramy i ich właściwości. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Modeling.Transaction>.
+## <a name="transaction"></a>Wykonaj zmiany wewnątrz transakcji
+ Za każdym razem, gdy kod programu zmienia się w sklepie, musi to zrobić w ramach transakcji. Dotyczy to wszystkich elementów modelu, relacji, kształtów, diagramów i ich właściwości. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Modeling.Transaction>.
 
- Najwygodniejsza metoda zarządzania transakcji jest `using` instrukcji ujęta w `try...catch` instrukcji:
+ Najbardziej wygodną metodą zarządzania transakcję jest `using` instrukcja ujęta `try...catch` w instrukcji:
 
 ```
 Store store; ...
@@ -157,14 +157,14 @@ catch (Exception ex)
 }
 ```
 
- Można wprowadzić dowolną liczbę zmian w jednej transakcji. Możesz otworzyć nowe transakcje w aktywnej transakcji.
+ Można wprowadzić dowolną liczbę zmian w jednej transakcji. Możesz otworzyć nowe transakcje wewnątrz aktywnej transakcji.
 
- Aby zmiany były trwałe, należy `Commit` transakcji, zanim zostanie on usunięty. Jeśli wystąpi wyjątek, który nie jest wyłapywany wewnątrz transakcji, Store zostaną zresetowane do stanu przed wdrożeniem zmian.
+ Aby zmiany były trwałe, `Commit` należy wykonać transakcję przed jej usunięciem. Jeśli wystąpi wyjątek, który nie jest przechwytywany w ramach transakcji, magazyn zostanie zresetowany do stanu sprzed zmian.
 
-## <a name="elements"></a> Tworzenie elementów modelu
+## <a name="elements"></a>Tworzenie elementów modelu
  Ten przykład dodaje element do istniejącego modelu:
 
-```
+```csharp
 FamilyTreeModel familyTree = ...; // The root of the model.
 using (Transaction t =
     familyTree.Store.TransactionManager
@@ -182,98 +182,98 @@ using (Transaction t =
 }
 ```
 
- Ten przykład ilustruje te podstawowe punkty o utworzenie elementu:
+ Ten przykład ilustruje te zasadnicze kwestie dotyczące tworzenia elementu:
 
-- Utwórz nowy element w określonej partycji Store. W przypadku elementów modelu i relacji, ale nie do kształtów zwykle jest domyślną partycję.
+- Utwórz nowy element w określonej partycji magazynu. Dla elementów modelu i relacji, ale nie kształtów, jest to zazwyczaj partycja domyślna.
 
-- Wprowadź element docelowy relacji osadzania. W DslDefinition w tym przykładzie każda osoba musi być elementem docelowym FamilyTreeHasPeople relacja osadzania. Aby to osiągnąć, możemy ustawić właściwość roli FamilyTreeModel obiektu osoba lub dodać osoby do roli własności obiektu FamilyTreeModel.
+- Ustaw jako element docelowy relacji osadzania. W DslDefinition tego przykładu każda osoba musi być elementem docelowym osadzania relacji FamilyTreeHasPeople. Aby to osiągnąć, można ustawić właściwość roli FamilyTreeModel obiektu Person lub dodać osobę do właściwości rola osoby dla obiektu FamilyTreeModel.
 
-- Ustaw właściwości nowego elementu, szczególnie właściwość, dla którego `IsName` ma wartość true w DslDefinition. Ta flaga oznacza właściwość, która identyfikuje jednoznacznie elemencie jego właściciel. W tym przypadku właściwość Name ma tę flagę.
+- Ustaw właściwości nowego elementu, szczególnie właściwość, dla której `IsName` ma wartość true w DslDefinition. Ta flaga oznacza właściwość, która służy do unikatowego identyfikowania elementu w jego właścicielu. W tym przypadku właściwość name ma tę flagę.
 
-- Definicję DSL tego języka DSL muszą zostać załadowane do Store. Jeśli piszesz rozszerzenie, takie jak polecenie menu, zwykle będzie to już wartość true. W innych przypadkach możesz jawnie załadować modelu do Store lub użyj <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> go załadować. Aby uzyskać więcej informacji, zobacz [jak: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- Definicja DSL tego elementu DSL musi zostać załadowana do sklepu. Jeśli piszesz rozszerzenie, takie jak polecenie menu, zwykle będzie to prawdziwe. W innych przypadkach można jawnie załadować model do magazynu lub użyć [ModelBus](/previous-versions/ee904639(v=vs.140)) do jego załadowania. Aby uzyskać więcej informacji, zobacz [jak: Otwórz model z pliku w kodzie](../modeling/how-to-open-a-model-from-file-in-program-code.md)programu.
 
-  Po utworzeniu elementu w ten sposób kształt zostanie utworzony automatycznie (język DSL ma diagramu). Pojawi się on przypisany automatycznie lokalizacji usługi przy użyciu domyślnego kształt, kolor i inne funkcje. Jeśli chcesz kontrolować, gdzie i jak skojarzone kształt pojawia się, zobacz [Tworzenie elementu i jego kształt](#merge).
+  Po utworzeniu elementu w ten sposób tworzony jest automatycznie kształt (jeśli DSL ma diagram). Pojawia się w automatycznie przypisanej lokalizacji z domyślnym kształtem, kolorem i innymi funkcjami. Jeśli chcesz kontrolować miejsce i sposób wyświetlania skojarzonego kształtu, zobacz [Tworzenie elementu i jego kształtu](#merge).
 
-## <a name="links"></a> Tworzenie relacji łączy
- Istnieją dwie relacje zdefiniowane w przykładzie definicji DSL. Każda relacja *właściwości roli* w klasie na każdym końcu relacji.
+## <a name="links"></a>Tworzenie linków relacji
+ Istnieją dwie relacje zdefiniowane w przykładowej definicji DSL. Każda relacja definiuje *Właściwość roli* w klasie na każdym końcu relacji.
 
- Istnieją trzy sposoby, w których można utworzyć wystąpienie relacji. Każda z tych trzech metod działa tak samo:
+ Istnieją trzy sposoby, w których można utworzyć wystąpienie relacji. Każda z tych trzech metod ma ten sam skutek:
 
-- Ustaw właściwość obiekt pełniący rolę źródłową. Na przykład:
+- Ustaw właściwość obiektu pełniącego rolę źródłową. Na przykład:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Ustaw właściwość obiekt pełniący rolę docelową. Na przykład:
+- Ustaw właściwość docelowego obiektu pełniącego rolę. Na przykład:
 
   - `edward.familyTreeModel = familyTree;`
 
-       Liczebność ta rola jest `1..1`, dzięki czemu możemy przypisać wartość.
+       Liczebność tej roli to `1..1`, więc przypiszemy wartość.
 
   - `henry.Children.Add(edward);`
 
-       Liczebność ta rola jest `0..*`, dzięki czemu możemy dodać do kolekcji.
+       Liczebność tej roli jest `0..*`dodawana do kolekcji.
 
-- Jawnie tworzyć wystąpienie relacji. Na przykład:
+- Jawnie Utwórz wystąpienie relacji. Przykład:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
   - `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
-  Ostatnie metoda jest przydatna, jeśli chcesz ustawić właściwości relacji, sam.
+  Ostatnia metoda jest przydatna, jeśli chcesz ustawić właściwości relacji.
 
-  Po utworzeniu elementu w ten sposób jest tworzony automatycznie łącznika na diagramie, ale ma domyślne kształt, kolor i inne funkcje. Aby kontrolować sposób tworzenia łącznika skojarzone, zobacz [Tworzenie elementu i jego kształt](#merge).
+  Gdy tworzysz element w ten sposób, łącznik na diagramie jest tworzony automatycznie, ale ma domyślny kształt, kolor i inne funkcje. Aby kontrolować sposób tworzenia skojarzonego łącznika, zobacz [Tworzenie elementu i jego kształtu](#merge).
 
-## <a name="deleteelements"></a> Usuwanie elementów
+## <a name="deleteelements"></a>Usuwanie elementów
 
-Usuń element przez wywołanie metody `Delete()`:
+Usuń element, wywołując `Delete()`:
 
 `henry.Delete();`
 
 Ta operacja spowoduje również usunięcie:
 
-- Relacji łącza do i z elementem. Na przykład `edward.Parents` nie będą już miały `henry`.
+- Linki relacji do i z elementu. Na przykład `edward.Parents` nie będzie już zawierać `henry`.
 
-- Elementy w ról, dla którego `PropagatesDelete` flaga ma wartość true. Na przykład kształt, który wyświetla element zostaną usunięte.
+- Elementy w rolach, `PropagatesDelete` dla których flaga ma wartość true. Na przykład kształt wyświetlający element zostanie usunięty.
 
-Domyślnie każda relacja osadzania ma `PropagatesDelete` prawdziwe w roli docelowej. Usuwanie `henry` nie powoduje usunięcia `familyTree`, ale `familyTree.Delete()` spowoduje usunięcie wszystkich `Persons`.
+Domyślnie każda relacja osadzania ma `PropagatesDelete` wartość true w roli docelowej. Usunięcie `henry` nie powoduje `familyTree`usunięcia `familyTree.Delete()` ,`Persons`ale usunie wszystkie.
 
-Domyślnie `PropagatesDelete` nie jest prawdziwe dla ról relacje odniesienia.
+Domyślnie `PropagatesDelete` nie jest spełniony dla ról relacji odwołania.
 
-Może spowodować reguły usuwania pominąć propagacji określonych, gdy obiekt zostanie usunięty. Jest to przydatne, jeśli są podstawianie jednego elementu na inny. Należy podać identyfikator GUID co najmniej jedną rolę, dla których powinna nie propagowane usunięcia. Identyfikator GUID można uzyskać z klasy relacji:
+Można spowodować, że reguły usuwania pomijają określone propagacje po usunięciu obiektu. Jest to przydatne w przypadku podstawiania jednego elementu na inny. Należy podać identyfikator GUID jednej lub więcej ról, dla których usunięcie nie powinno być propagowane. Identyfikator GUID można uzyskać z klasy relacji:
 
 `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-(Tym konkretnym przykładzie miałaby żadnego efektu, ponieważ `PropagatesDelete` jest `false` dla ról `ParentsHaveChildren` relacji.)
+(Ten konkretny przykład nie ma żadnego efektu, ponieważ `PropagatesDelete` jest `false` `ParentsHaveChildren` dla ról relacji).
 
-W niektórych przypadkach usunięcie nie będzie mógł istnienie blokadę na element lub na element, który może zostać usunięty przez propagacji. Możesz użyć `element.CanDelete()` do sprawdzenia, czy element może zostać usunięty.
+W niektórych przypadkach usuwanie jest uniemożliwione przez istnienie blokady, elementu lub elementu, który zostałby usunięty przez propagację. Możesz użyć `element.CanDelete()` , aby sprawdzić, czy element może być usunięty.
 
-## <a name="deletelinks"></a> Usuwanie relacji łączy
- Możesz usunąć relację łącza przez usunięcie elementu z właściwości roli:
+## <a name="deletelinks"></a>Usuwanie linków relacji
+ Łącze relacji można usunąć, usuwając element z właściwości role:
 
  `henry.Children.Remove(edward); // or:`
 
  `edward.Parents.Remove(henry);  // or:`
 
- Można także jawnie usunąć łącze:
+ Łącze można również usunąć jawnie:
 
  `edwardHenryLink.Delete();`
 
- Wszystkie te trzy metody mają ten sam efekt. Należy użyć jednej z nich.
+ Wszystkie te trzy metody mają ten sam efekt. Wystarczy użyć jednego z nich.
 
- Jeśli rola ma liczebność od 0 do 1 lub 1.. 1, można ją ustawić, `null`, lub z inną wartością:
+ Jeśli rola ma wartość 0.. 1 lub 1.. 1 liczebność, można ustawić ją na `null`lub inną wartość:
 
- `edward.FamilyTreeModel = null;` lub:
+ `edward.FamilyTreeModel = null;`oraz
 
  `edward.FamilyTreeModel = anotherFamilyTree;`
 
-## <a name="reorder"></a> Zmiana kolejności łączy relacji
- Linki konkretną relację, które źródło lub przeznaczone dla elementu określonego modelu ma określonej kolejności. Pojawiają się w kolejności, w jakiej zostały dodane. Na przykład ta instrukcja zawsze da dzieci w tej samej kolejności:
+## <a name="reorder"></a>Zmiana kolejności linków relacji
+ Linki określonej relacji, które są źródłem lub są przeznaczone dla określonego elementu modelu, mają określoną sekwencję. Są one wyświetlane w kolejności, w jakiej zostały dodane. Na przykład ta instrukcja zawsze będzie zwracać elementy podrzędne w tej samej kolejności:
 
  `foreach (Person child in henry.Children) ...`
 
- Można zmienić kolejności linków:
+ Można zmienić kolejność linków:
 
  `ParentsHaveChildren link = GetLink(henry,edward);`
 
@@ -285,15 +285,15 @@ W niektórych przypadkach usunięcie nie będzie mógł istnienie blokadę na el
 
  `link.MoveBefore(role, nextLink);`
 
-## <a name="locks"></a> Blokady
- Zmiany może być niemożliwe przez blokadę. Można ustawić blokady na poszczególne elementy, partycji i magazyn. Jeśli dowolny z tych poziomów ma blokady uniemożliwiające rodzaju zmian, które mają być, może być wyjątek po użytkownik podejmie. Aby wykryć, czy blokady są ustawiane przy użyciu elementu. GetLocks(), który jest metodą rozszerzenia, która jest zdefiniowana w przestrzeni nazw <xref:Microsoft.VisualStudio.Modeling.Immutability>.
+## <a name="locks"></a>Zamki
+ Zmiany mogą być blokowane przez blokadę. Blokady można ustawić dla poszczególnych elementów, partycji i magazynu. Jeśli którykolwiek z tych poziomów ma blokadę uniemożliwiającą rodzaj zmiany, którą chcesz wprowadzić, wyjątek może zostać wygenerowany podczas próby. Można stwierdzić, czy blokady są ustawiane za pomocą elementu. GetLocks (), która jest metodą rozszerzenia, która jest zdefiniowana w przestrzeni nazw <xref:Microsoft.VisualStudio.Modeling.Immutability>.
 
- Aby uzyskać więcej informacji, zobacz [Definiowanie zasad blokowania do tworzenia segmentów tylko do odczytu](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
+ Aby uzyskać więcej informacji, zobacz [Definiowanie zasad blokowania w celu utworzenia segmentów tylko do odczytu](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
 
-## <a name="copy"></a> Kopiowanie i wklejanie
- Elementy lub grup elementów, które można skopiować <xref:System.Windows.Forms.IDataObject>:
+## <a name="copy"></a>Kopiuj i wklej
+ Elementy lub grupy elementów można kopiować do <xref:System.Windows.Forms.IDataObject>:
 
-```
+```csharp
 Person person = personShape.ModelElement as Person;
 Person adopter = adopterShape.ModelElement as Person;
 IDataObject data = new DataObject();
@@ -301,11 +301,11 @@ personShape.Diagram.ElementOperations
       .Copy(data, person.Children.ToList<ModelElement>());
 ```
 
- Elementy są przechowywane jako Zserializowany grup elementów.
+ Elementy są przechowywane jako Grupa elementów serializowanych.
 
- Elementy z IDataObject można scalić w modelu:
+ Elementy z IDataObject można scalać z modelem:
 
-```
+```csharp
 using (Transaction t = targetDiagram.Store.
         TransactionManager.BeginTransaction("paste"))
 {
@@ -313,15 +313,15 @@ using (Transaction t = targetDiagram.Store.
 }
 ```
 
- `Merge ()` można zaakceptować albo `PresentationElement` lub `ModelElement`. Jeśli zostanie nadana `PresentationElement`, można również określić położenie na diagramie docelowy jako trzeci parametr.
+ `Merge ()`może akceptować `PresentationElement` albo `ModelElement`lub. Jeśli jest to możliwe ,możnatakżeokreślićpozycjęnadiagramiedocelowymjakotrzeciparametr.`PresentationElement`
 
-## <a name="diagrams"></a> Nawigowanie i aktualizowanie diagramów
- W języku DSL elementu modelu domeny, który reprezentuje pojęcia, takie jak osoba lub utworu, różni się od elementu kształtu, który reprezentuje to, co widać na diagramie. Element modelu domeny przechowuje ważne właściwości i relacje pojęć. Element kształtu przechowuje rozmiar, położenie i kolor widoku obiektu na diagramie i układ jego składniki.
+## <a name="diagrams"></a>Nawigowanie i aktualizowanie diagramów
+ W DSL, element modelu domeny, który reprezentuje pojęcie takie jak osoba lub utwór, jest oddzielony od elementu Shape, który reprezentuje zawartość na diagramie. Element modelu domeny przechowuje ważne właściwości i relacje. Element Shape przechowuje rozmiar, położenie i kolor widoku obiektu na diagramie oraz układ części składnika.
 
 ### <a name="presentation-elements"></a>Elementy prezentacji
- ![Diagram klas typów podstawowych kształt i element](../modeling/media/dslshapesandelements.png)
+ ![Diagram klas podstawowych typów kształtu i elementu](../modeling/media/dslshapesandelements.png)
 
- W definicji DSL każdy element, który określisz tworzy klasę, która jest tworzony na podstawie jednej z następujących standardowych klas.
+ W definicji DSL każdy określony element tworzy klasę, która jest pochodną jednej z następujących klas standardowych.
 
 |Rodzaj elementu|Klasa bazowa|
 |-|-|
@@ -331,14 +331,14 @@ using (Transaction t = targetDiagram.Store.
 |Łącznik|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |Diagram|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 
- Element na diagramie zazwyczaj reprezentuje element modelu. Zazwyczaj (ale nie zawsze) <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> reprezentuje wystąpienie klasy domeny i <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> reprezentuje wystąpienie relacji domeny. <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> Relacji łączy kształtu węzła lub łącza do elementu modelu, który reprezentuje.
+ Element na diagramie zazwyczaj reprezentuje element modelu. Zwykle (ale nie zawsze) <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> reprezentuje wystąpienie klasy domeny, <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> a reprezentuje wystąpienie relacji domeny. <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> Relacja łączy węzeł lub kształt łącza z elementem modelu, który reprezentuje.
 
- Każdego węzła lub łącza należy kształt na jednym diagramie. Kształt łącza binarnego łączy dwa kształty węzła.
+ Każdy węzeł lub kształt łącza należy do jednego diagramu. Kształt linku binarnego łączy dwa kształty węzła.
 
- Kształty mogą mieć kształty podrzędne w dwóch zestawów. Kształt w `NestedChildShapes` zestawu jest ograniczona do obwiedni jego elementu nadrzędnego. Kształt w `RelativeChildShapes` listy może występować poza metodą lub częściowo poza granice elementu nadrzędnego — na przykład etykiety lub port. Nie ma diagramu `RelativeChildShapes` i nie `Parent`.
+ Kształty mogą mieć kształty podrzędne w dwóch zestawach. Kształt w `NestedChildShapes` zestawie jest ograniczony do obwiedni pola nadrzędnego. Kształt na `RelativeChildShapes` liście może pojawić się poza granicami elementu nadrzędnego lub poza nim, na przykład etykietę lub port. Diagram ma wartość nie `RelativeChildShapes` i nie `Parent`.
 
-### <a name="views"></a> Nawigacja pomiędzy kształty i elementów
- Elementy modelu domeny i elementy kształtu, które są powiązane przez <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relacji.
+### <a name="views"></a>Nawigowanie między kształtami i elementami
+ Elementy modelu domeny i elementy kształtu są powiązane <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> z relacją.
 
 ```csharp
 // using Microsoft.VisualStudio.Modeling;
@@ -350,7 +350,7 @@ PersonShape henryShape =
     .FirstOrDefault() as PersonShape;
 ```
 
- Tej samej relacji łączy relacji łączników na diagramie:
+ Te same powiązania relacji z łącznikami na diagramie:
 
 ```
 Descendants link = Descendants.GetLink(henry, edward);
@@ -360,7 +360,7 @@ DescendantConnector dc =
 // dc.FromShape == henryShape && dc.ToShape == edwardShape
 ```
 
- Ta relacja również linki do korzenia modelu do diagramu:
+ Ta relacja również łączy katalog główny modelu z diagramem:
 
 ```
 FamilyTreeDiagram diagram =
@@ -368,28 +368,28 @@ FamilyTreeDiagram diagram =
       .FirstOrDefault() as FamilyTreeDiagram;
 ```
 
- Aby uzyskać element modelu, reprezentowane przez kształty, należy użyć:
+ Aby uzyskać element modelu reprezentowane przez kształt, użyj:
 
  `henryShape.ModelElement as Person`
 
  `diagram.ModelElement as FamilyTreeModel`
 
-### <a name="navigating-around-the-diagram"></a>Nawigacja wokół diagramu
- Ogólnie rzecz biorąc nie jest zalecane, aby poruszać się między kształtów i łączników na diagramie. Jest lepszym rozwiązaniem nawigowanie po relacjach w modelu, przenoszenie między kształtów i łączników, tylko wtedy, gdy należy go zmieniać wygląd diagramu. Te metody połączyć kształty na każdym końcu łączników:
+### <a name="navigating-around-the-diagram"></a>Nawigowanie wokół diagramu
+ Ogólnie rzecz biorąc nie jest zalecane Nawigowanie między kształtami i łącznikami na diagramie. Lepszym rozwiązaniem jest nawigowanie po relacjach w modelu, przechodzenie między kształtami i łącznikami tylko wtedy, gdy jest to niezbędne do pracy nad wyglądem diagramu. Te metody łączą łączniki z kształtami na każdym końcu:
 
  `personShape.FromRoleLinkShapes, personShape.ToRoleLinkShapes`
 
  `connector.FromShape, connector.ToShape`
 
- Wiele kształtów są złożone; składają się kształt nadrzędny i jeden lub więcej warstw podrzędnych. Kształty, które są pozycjonowane względem innego kształtu są określane jako jego *dzieci*. Kiedy przesuwa się kształtu nadrzędnego, podrzędnego przenoszą się z nim.
+ Wiele kształtów to złożone; składają się one z kształtu nadrzędnego i co najmniej jednej warstwy podrzędnej. Kształty, które są pozycjonowane względem innego kształtu, są określane jako *elementy podrzędne*. Po przesunięciu kształtu nadrzędnego elementy podrzędne są z nim przenoszone.
 
- *Względna dzieci* może znajdować się poza obwiednią kształtu nadrzędnego. *Zagnieżdżone* elementy podrzędne są wyświetlane wyłącznie wewnątrz granice elementu nadrzędnego.
+ *Względne elementy podrzędne* mogą występować poza polem ograniczenia kształtu nadrzędnego. *Zagnieżdżone* elementy podrzędne są widoczne wyłącznie wewnątrz granic elementu nadrzędnego.
 
- Aby uzyskać najważniejsze zestaw kształtów na diagramie, należy użyć:
+ Aby uzyskać górny zestaw kształtów na diagramie, użyj:
 
  `Diagram.NestedChildShapes`
 
- Klas kształtów i łączników są:
+ Klasy nadrzędne kształtów i łączników są następujące:
 
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 
@@ -409,34 +409,34 @@ FamilyTreeDiagram diagram =
 
  --------- *YourConnector*
 
-### <a name="shapeProperties"></a> Właściwości kształtów i łączników
- W większości przypadków nie jest to niezbędne do zapewnienia jawnego zmiany do kształtów zewnętrznych. Zmiana elementy modelu "Napraw" zasady aktualizacji kształtów i łączników. Aby uzyskać więcej informacji, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
+### <a name="shapeProperties"></a>Właściwości kształtów i łączników
+ W większości przypadków nie trzeba wprowadzać jawnych zmian do kształtów. Po zmianie elementów modelu, reguły "Napraw" aktualizują kształty i łączniki. Aby uzyskać więcej informacji, zobacz [reagowanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
 
- Jednak warto wprowadzić pewne zmiany jawne do kształtów zewnętrznych we właściwościach, które są niezależne od elementów modelu. Na przykład można zmienić tych właściwości:
+ Jednak warto wprowadzić pewne jawne zmiany we właściwościach, które są niezależne od elementów modelu. Można na przykład zmienić następujące właściwości:
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -Określa wysokość i szerokość kształtu.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A>-Określa wysokość i szerokość kształtu.
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -pozycji względem nadrzędnego kształt lub diagram
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A>Pozycja względem kształtu nadrzędnego lub diagramu
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -zestaw pióra i pędzle, używany do rysowania kształtów lub łącznika
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A>-zestaw piór i pędzle używane do rysowania kształtu lub łącznika
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -sprawia, że kształt jest niewidoczna
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A>— sprawia, że kształt jest niewidoczny
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> -sprawia, że kształt jest widoczna po `Hide()`
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A>— sprawia, że kształt jest widoczny po`Hide()`
 
-### <a name="merge"></a> Tworzenie elementu i jego kształtu
+### <a name="merge"></a>Tworzenie elementu i jego kształtu
 
-Podczas tworzenia elementu i połączyć go do drzewa relacji osadzania kształt jest automatycznie tworzony i skojarzonych z nim. Odbywa się przez reguły "naprawa", które są wykonywane na końcu transakcji. Jednak kształtu pojawi się w lokalizacji przypisany automatycznie, a jego kształt, kolor i inne funkcje mają wartości domyślne. Do kontrolowania, jak jest tworzony kształt, służy funkcja scalania. Należy najpierw dodać elementy, które chcesz dodać do ElementGroup, a następnie scalić grupy do diagramu.
+Podczas tworzenia elementu i łączenia go z drzewem relacji osadzania kształt jest automatycznie tworzony i kojarzony z nim. Jest to realizowane przez reguły "Naprawa", które są wykonywane na końcu transakcji. Jednak kształt zostanie wyświetlony w automatycznie przypisanej lokalizacji, a jego kształt, kolor i inne funkcje będą mieć wartości domyślne. Aby kontrolować sposób tworzenia kształtu, można użyć funkcji merge. Najpierw należy dodać elementy, które mają zostać dodane do grupy elementów, a następnie scalić je z diagramem.
 
-Tej metody:
+Ta metoda:
 
-- Ustawia nazwę, jeśli przypisano właściwości jak nazwa elementu.
+- Ustawia nazwę, jeśli przypisano właściwość jako nazwę elementu.
 
-- Przestrzega wszelkie dyrektyw scalania określone w definicji DSL.
+- Obserwuje wszystkie dyrektywy scalania elementów określone w definicji DSL.
 
-W tym przykładzie tworzy kształt na pozycji myszy, gdy użytkownik kliknie dwukrotnie diagramu. W definicji DSL, w tym przykładzie `FillColor` właściwość `ExampleShape` została udostępniona.
+Ten przykład tworzy kształt w pozycji wskaźnika myszy, gdy użytkownik kliknie dwukrotnie diagram. W definicji DSL dla tego przykładu `FillColor` `ExampleShape` właściwość została uwidoczniona.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 partial class MyDiagram
@@ -469,18 +469,18 @@ partial class MyDiagram
 }
 ```
 
- Jeśli podasz więcej niż jeden kształt, Ustaw swoje położenie względne, za pomocą `AbsoluteBounds`.
+ Jeśli podano więcej niż jeden kształt, ustaw ich względne położenia przy `AbsoluteBounds`użyciu.
 
- Można również ustawić kolor i inne właściwości narażonych łączniki przy użyciu tej metody.
+ Możesz również ustawić kolor i inne uwidocznione właściwości łączników za pomocą tej metody.
 
-### <a name="use-transactions"></a>Użycie transakcji
- Kształty, łączników i diagramy są podtypów <xref:Microsoft.VisualStudio.Modeling.ModelElement> i na żywo w Store. W związku z tym należy zmiany do nich tylko wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [jak: Użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+### <a name="use-transactions"></a>Użyj transakcji
+ Kształty, łączniki i diagramy są podtypemi <xref:Microsoft.VisualStudio.Modeling.ModelElement> i na żywo w sklepie. W związku z tym należy wprowadzać w nich zmiany tylko wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [jak: Użyj transakcji, aby zaktualizować model](../modeling/how-to-use-transactions-to-update-the-model.md).
 
-## <a name="docdata"></a> Wyświetlanie dokumentów i danych dokumentu
- ![Diagram klas diagram standardowych typów](../modeling/media/dsldiagramsanddocs.png)
+## <a name="docdata"></a>Widok dokumentu i dane dokumentu
+ ![Diagram klas typów diagramu standardowego](../modeling/media/dsldiagramsanddocs.png)
 
-## <a name="store-partitions"></a>Partycje Store
- Gdy model jest ładowany, towarzyszący diagram jest ładowany w tym samym czasie. Zazwyczaj modelu są ładowane do Store.DefaultPartition, a zawartość diagram zostanie załadowana do innej partycji. Zwykle zawartość każda partycja jest ładowany i zapisane w oddzielnym pliku.
+## <a name="store-partitions"></a>Przechowuj partycje
+ Podczas ładowania modelu, towarzyszący diagram jest ładowany w tym samym czasie. Zazwyczaj model jest ładowany do magazynu. DefaultPartition, a zawartość diagramu jest załadowana do innej partycji. Zwykle zawartość każdej partycji jest ładowana i zapisywana w oddzielnym pliku.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56e6e7a53f5f8b07d1afc8b68ef641c576524316
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546075"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922055"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM
 
@@ -30,26 +30,26 @@ ms.locfileid: "62546075"
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
-|Kategoria|Microsoft.Interoperability|
+|Kategoria|Microsoft. współdziałanie|
 |Zmiana kluczowa|DependsOnFix|
 
 ## <a name="cause"></a>Przyczyna
- Typ widoczny Component Object Model (COM) pochodzi z typu, który nie jest widoczne dla modelu COM.
+Typ widoczny dla Component Object Model (COM) pochodzi z typu, który nie jest widoczny dla modelu COM.
 
 ## <a name="rule-description"></a>Opis reguły
- Gdy typem widoczne dla modelu COM, elementy członkowskie są dodawane w nowej wersji, należy przestrzegać ścisłe wytyczne w celu uniknięcia przerwanie klientów COM powiązanych do bieżącej wersji. Typ, który jest niewidoczna dla modelu COM przyjęto założenie, że nie trzeba należy wykonać następujące czynności COM wersji powoduje dodanie nowych elementów członkowskich. Jeśli jednak widoczne dla modelu COM typ pochodzi od typu niewidoczne COM i udostępnia interfejs klasy <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ClassInterfaceType> (ustawienie domyślne), wszystkie publiczne elementy członkowskie tego typu podstawowego (o ile są wyraźnie oznaczone jako COM niewidoczne, który zbyteczna) są widoczne dla modelu COM. Jeśli typ podstawowy dodaje nowych elementów członkowskich w kolejnej wersji, mogą przestać działać żadnych klientów COM, który należy powiązać interfejsu klasy typu pochodnego. Typy widoczne dla modelu COM powinny pochodzić tylko w typach widocznych dla modelu COM, aby zmniejszyć prawdopodobieństwo przerwanie klientów modelu COM.
+Gdy typ widoczny dla modelu COM dodaje członków w nowej wersji, musi przestrzegać ścisłych wytycznych, aby uniknąć przerwania klientów COM, które są powiązane z bieżącą wersją. Typ, który jest niewidoczny dla modelu COM, zakłada, że nie musi on być zgodny z regułami dotyczącymi obsługi wersji modelu COM podczas dodawania nowych elementów członkowskich. Jeśli jednak typ widoczny dla modelu COM pochodzi od typu niewidocznego dla modelu COM i uwidacznia Interfejs <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> klasy <xref:System.Runtime.InteropServices.ClassInterfaceType> lub (domyślnie), wszystkie publiczne elementy członkowskie typu podstawowego (chyba że są one jawnie oznaczone jako niewidoczne dla modelu COM, co byłoby nadmiarowe) są dostępne dla modelu COM. Jeśli typ podstawowy dodaje nowych członków w kolejnej wersji, każdy klient COM, który powiąże się z interfejsem klasy typu pochodnego może zostać zerwana. Typy widoczne dla modelu COM powinny dziedziczyć tylko z typów widocznych dla modelu COM, aby zmniejszyć prawdopodobieństwo przerwania klientów COM.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, ukrywanie typów podstawowych widoczne dla modelu COM lub typu pochodnego COM.
+Aby naprawić naruszenie tej reguły, Zmień typy podstawowe modelu COM widoczne lub niewidoczny typ pochodny COM.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje typ, który narusza regułę.
+Poniższy przykład pokazuje typ, który narusza regułę.
 
- [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>Zobacz także
 

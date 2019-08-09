@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c0aa3fe5c45e34445c49c4b3a5f0abad1e98739
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78917bcd4c67e1da205595bac07c8e0e5947318d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779340"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923055"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Oznacz atrybuty atrybutem AttributeUsage
 
@@ -34,29 +34,29 @@ ms.locfileid: "62779340"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- <xref:System.AttributeUsageAttribute?displayProperty=fullName> Atrybut nie jest obecny na atrybutu niestandardowego.
+<xref:System.AttributeUsageAttribute?displayProperty=fullName> Atrybut nie występuje w atrybucie niestandardowym.
 
 ## <a name="rule-description"></a>Opis reguły
- Podczas definiowania atrybutu niestandardowego, oznacz go za pomocą <xref:System.AttributeUsageAttribute> aby wskazać, gdzie w kodzie źródłowym atrybutu niestandardowego można zastosować. Znaczenie i zamierzone użycie atrybutu określi jego prawidłowe lokalizacje w kodzie. Na przykład można zdefiniować atrybut, który zawiera informacje o osobie, kto jest odpowiedzialny za utrzymanie i udoskonalanie poszczególnych typów w bibliotece, a odpowiedzialność jest zawsze przypisywana na poziomie typu. W takich przypadkach kompilatory należy włączyć atrybut na klas, wyliczeń i interfejsów, ale nie należy włączać na metody, zdarzenia lub właściwości. Procedury i zasady organizacji będzie określają, czy ten atrybut powinien być włączony na zestawach.
+Podczas definiowania atrybutu niestandardowego należy oznaczyć go przy użyciu <xref:System.AttributeUsageAttribute> , aby wskazać, gdzie w kodzie źródłowym można zastosować atrybut niestandardowy. Znaczenie i zamierzone użycie atrybutu określi jego prawidłowe lokalizacje w kodzie. Na przykład można zdefiniować atrybut, który identyfikuje osoby odpowiedzialne za utrzymanie i udoskonalenie każdego typu w bibliotece, a odpowiedzialność jest zawsze przypisana na poziomie typu. W takim przypadku kompilatory powinny włączyć atrybut dla klas, wyliczeń i interfejsów, ale nie powinien włączać go dla metod, zdarzeń lub właściwości. Zasady i procedury organizacyjne określają, czy atrybut powinien być włączony dla zestawów.
 
- <xref:System.AttributeTargets?displayProperty=fullName> Wyliczenie definiuje obiekty docelowe, które można określić atrybutu niestandardowego. Jeżeli pominięto <xref:System.AttributeUsageAttribute>, niestandardowy atrybut będzie obowiązywał dla wszystkich obiektów docelowych, zgodnie z definicją `All` wartość <xref:System.AttributeTargets> wyliczenia.
+<xref:System.AttributeTargets?displayProperty=fullName> Wyliczenie definiuje elementy docelowe, które można określić dla atrybutu niestandardowego. W przypadku pominięcia <xref:System.AttributeUsageAttribute>atrybut niestandardowy będzie prawidłowy dla wszystkich obiektów docelowych, zgodnie z <xref:System.AttributeTargets> definicją `All` wartości wyliczenia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy określić cele, dla atrybutu za pomocą <xref:System.AttributeUsageAttribute>. Zobacz poniższy przykład.
+Aby naprawić naruszenie tej reguły, określ elementy docelowe dla atrybutu przy użyciu <xref:System.AttributeUsageAttribute>. Zobacz Poniższy przykład.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Należy naprawić naruszenie tej zasady, zamiast wiadomości z wyjątkiem. Nawet wtedy, gdy atrybut inherits <xref:System.AttributeUsageAttribute>, atrybut powinien być obecny, aby uprościć zarządzanie kodu.
+Przed wykluczeniem komunikatu należy usunąć naruszenie tej reguły. Nawet jeśli atrybut dziedziczy <xref:System.AttributeUsageAttribute>, atrybut powinien być obecny, aby uprościć konserwację kodu.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie zdefiniowano dwa atrybuty. `BadCodeMaintainerAttribute` niepoprawnie pomija <xref:System.AttributeUsageAttribute> instrukcji i `GoodCodeMaintainerAttribute` poprawnie implementuje atrybut, który jest opisany wcześniej w tej sekcji. Należy pamiętać, że właściwość `DeveloperName` jest wymagana przez tę zasadę projektowania [CA1019: Zdefiniuj metody dostępu dla argumentów atrybutu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) i został uwzględniony, aby informacje były kompletne.
+W poniższym przykładzie zdefiniowano dwa atrybuty. `BadCodeMaintainerAttribute`niepoprawnie pomija <xref:System.AttributeUsageAttribute> instrukcję i `GoodCodeMaintainerAttribute` poprawnie implementuje atrybut opisany wcześniej w tej sekcji. Należy zauważyć, że `DeveloperName` właściwość jest wymagana przez CA1019 reguły [projektowania: Zdefiniuj metody dostępu dla argumentów](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) atrybutów i są one dołączane do kompletności.
 
- [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
- [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
+[!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
+[!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1019: Zdefiniuj metody dostępu dla argumentów atrybutu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+[CA1019 Zdefiniuj metody dostępu dla argumentów atrybutów](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1813: Unikaj niezapieczętowanych atrybutów](../code-quality/ca1813-avoid-unsealed-attributes.md)
+[CA1813: Unikaj niezapieczętowanych atrybutów](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c811c7e2b6ba06c716179469c8b038fd26b3b38a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b79483e8703ea297634d0d81d5449c09b58c9fb7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546036"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921982"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Nie używaj wartości AutoDual elementu ClassInterfaceType
 
@@ -30,33 +30,33 @@ ms.locfileid: "62546036"
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
-|Kategoria|Microsoft.Interoperability|
+|Kategoria|Microsoft. współdziałanie|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ widoczny Component Object Model (COM) jest oznaczony za pomocą <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> ustawioną wartość atrybutu `AutoDual` wartość <xref:System.Runtime.InteropServices.ClassInterfaceType>.
+Typ widoczny dla Component Object Model (com) jest oznaczony <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybutem ustawionym `AutoDual` na wartość <xref:System.Runtime.InteropServices.ClassInterfaceType>.
 
 ## <a name="rule-description"></a>Opis reguły
- Typy, które korzystają z podwójnych interfejsów, umożliwiają klientom powiązanie z określonym interfejsem. Wszelkie zmiany w przyszłej wersji układu typu lub wszelkich typów podstawowych spowodują przerwanie klientów COM powiązanych z interfejsem. Domyślnie jeśli <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybut nie zostanie określony, używany jest interfejs tylko do wysyłki.
+Typy, które korzystają z podwójnych interfejsów, umożliwiają klientom powiązanie z określonym interfejsem. Wszelkie zmiany w przyszłej wersji układu typu lub wszelkich typów podstawowych spowodują przerwanie klientów COM powiązanych z interfejsem. Domyślnie, jeśli <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybut nie jest określony, używany jest interfejs tylko do wysyłania.
 
- O ile nie jest oznaczony jako inaczej, wszystkie typy nierodzajowymi publiczne są widoczne dla modelu COM; wszystkie typy niepublicznych i ogólny są niewidoczne dla modelu COM.
+O ile nie zostanie oznaczona inaczej, wszystkie publiczne typy nieogólne są widoczne dla modelu COM. wszystkie typy niepubliczne i ogólne są niewidoczne dla modelu COM.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić wartość <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybutu `None` wartość <xref:System.Runtime.InteropServices.ClassInterfaceType> i jawnie definiują interfejs.
+Aby naprawić naruszenie tej reguły, Zmień wartość <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybutu `None` na wartość <xref:System.Runtime.InteropServices.ClassInterfaceType> i jawnie Zdefiniuj interfejs.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły, jeśli nie jest pewne, czy układu typu i jego typów podstawowych nie spowoduje zmiany w przyszłych wersjach.
+Nie pomijaj ostrzeżenia z tej reguły, chyba że nie ma pewności, że układ typu i jego typy podstawowe nie zmienią się w przyszłej wersji.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia klasę, która narusza regułę i ponownej deklaracji klasy, aby używać interfejsu jawnego.
+Poniższy przykład pokazuje klasę, która narusza regułę i ponowną deklarację klasy w celu użycia jawnego interfejsu.
 
- [!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
+[!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
+[!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1403: Typy automatycznego układu nie powinny być widoczne dla modelu COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+[CA1403: Typy Autoukładu nie powinny być widoczne dla modelu COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412: Oznacz interfejsy ComSource jako IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+[CA1412: Oznacz interfejsy ComSource jako IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>Zobacz także
 

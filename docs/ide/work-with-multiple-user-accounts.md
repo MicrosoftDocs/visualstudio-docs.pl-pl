@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483549"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870867"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -33,7 +33,7 @@ Zaloguj się do programu Visual Studio przy użyciu konto Microsoft lub konta or
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Uzyskaj dostęp do konta platformy Azure w Eksplorator serwera
 
-Naciśnij **klawisze CTRL**+**Alt**+**S** , aby otworzyć **Eksplorator serwera**. Rozwiń węzeł **platformy Azure** i zwróć uwagę, że zawiera on zasoby dostępne na koncie platformy Azure skojarzonym z kontem używanym do logowania się w programie Visual Studio. Wygląda podobnie do poniższej ilustracji:
+Aby otworzyć Eksplorator serwera, wybierz pozycję **Wyświetl** > **Eksplorator serwera** (lub, jeśli używasz [ustawień środowiska](../ide/environment-settings.md)"ogólne", naciśnij klawisze **Ctrl**+**Alt**+**S**). Rozwiń węzeł **platformy Azure** i zwróć uwagę, że zawiera on zasoby dostępne na koncie platformy Azure skojarzonym z kontem używanym do logowania się w programie Visual Studio. Wygląda podobnie do poniższej ilustracji:
 
 ![Eksplorator serwera z rozwiniętym węzłem platformy Azure](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
