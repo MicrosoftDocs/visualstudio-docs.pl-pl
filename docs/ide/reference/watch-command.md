@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789003"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925949"
 ---
 # <a name="watch-command"></a>Czujka — Polecenie
-Tworzy i otwiera określone wystąpienie **Obejrzyj** okna. Możesz użyć **Obejrzyj** okna do obliczania wartości zmiennych, wyrażenia i rejestry, aby edytować te wartości i zapisać wyniki.
+Tworzy i otwiera określone wystąpienie **Obejrzyj** okna. Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,12 +30,13 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `index`
 
- Wymagana. Liczba wystąpień okna czujki.
+`index`\
+Wymagane. Numer wystąpienia okna Czujka.
 
 ## <a name="remarks"></a>Uwagi
- `index` Musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 3 lub 4.
+
+Wartość `index` musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 3 lub 4.
 
 ## <a name="example"></a>Przykład
 
@@ -46,7 +47,7 @@ Debug.Watch[index]
 ## <a name="see-also"></a>Zobacz też
 
 - [Okna zmiennych automatycznych i zmiennych lokalnych](../../debugger/autos-and-locals-windows.md)
-- [Ustawianie wyrażenia kontrolnego na zmiennych przy użyciu wyrażenie kontrolne i QuickWatch Windows w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
+- [Ustaw kontrolkę na zmienne przy użyciu okien czujki i QuickWatch w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
 - [Pole znajdowania i polecenia](../../ide/find-command-box.md)

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203fc14097e0c6d2fbdaee1689deffdfe814eb63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f3c118b097dbcd9eba8a5755672bde9c11cb13a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541900"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920309"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Metody Dispose powinny wywoływać metodę Dispose klasy bazowej
 
@@ -29,29 +29,29 @@ ms.locfileid: "62541900"
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Typ, który implementuje <xref:System.IDisposable?displayProperty=fullName> dziedziczy z typu, który także implementuje <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Metoda dziedziczącej typu nie mogą wywoływać <xref:System.IDisposable.Dispose%2A> metodę typu nadrzędnego.
+Typ, który implementuje <xref:System.IDisposable?displayProperty=fullName> dziedziczy z typu, który również implementuje <xref:System.IDisposable>. Metoda typu dziedziczenia nie <xref:System.IDisposable.Dispose%2A> wywołuje metody typu nadrzędnego. <xref:System.IDisposable.Dispose%2A>
 
 ## <a name="rule-description"></a>Opis reguły
- Jeśli typ dziedziczy z typu usuwalnego, musi on wywołać <xref:System.IDisposable.Dispose%2A> metody typu podstawowego z w obrębie własnej <xref:System.IDisposable.Dispose%2A> metody. Wywołanie metody typu podstawowego usuwania gwarantuje, czy wszystkie zasoby utworzone przez typ bazowy są wydawane.
+Jeśli typ dziedziczy z typu jednorazowego, musi wywołać <xref:System.IDisposable.Dispose%2A> metodę typu podstawowego z poziomu własnej <xref:System.IDisposable.Dispose%2A> metody. Wywołanie metody Dispose typu podstawowego gwarantuje, że wszystkie zasoby utworzone przez typ podstawowy są wydane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy wywołać `base`.<xref:System.IDisposable.Dispose%2A> w swojej <xref:System.IDisposable.Dispose%2A> metody.
+Aby naprawić naruszenie tej reguły, wywołaj metodę `base`.<xref:System.IDisposable.Dispose%2A> <xref:System.IDisposable.Dispose%2A> w metodzie.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest to bezpieczne pominąć ostrzeżenie od tej reguły, jeśli wywołanie `base`.<xref:System.IDisposable.Dispose%2A> występuje, dokładniejsze wywoływania niż sprawdzanie reguły.
+W przypadku wywołania do `base`programu można bezpiecznie pominąć ostrzeżenie z tej reguły.<xref:System.IDisposable.Dispose%2A> występuje na bardziej szczegółowym poziomie wywoływania niż sprawdzanie reguł.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano typu `TypeA` implementującej <xref:System.IDisposable>.
+Poniższy przykład przedstawia typ `TypeA` , który implementuje. <xref:System.IDisposable>
 
- [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+[!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano typu `TypeB` który dziedziczy z typu `TypeA` i prawidłowo wywołuje jego <xref:System.IDisposable.Dispose%2A> metody.
+Poniższy przykład pokazuje typ `TypeB` , który dziedziczy po typie `TypeA` i prawidłowo wywołuje jego <xref:System.IDisposable.Dispose%2A> metodę.
 
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
+[!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
 ## <a name="see-also"></a>Zobacz także
 

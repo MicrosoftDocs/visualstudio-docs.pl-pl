@@ -18,15 +18,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb6bfc98d5ef6f7b3d3b6291ea55530325836d56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990050"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918956"
 ---
 # <a name="shell-command"></a>Shell — Polecenie
-Uruchamia programy wykonywalne z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Uruchamia programy wykonywalne z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]poziomu programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,50 +35,50 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `path`
+`path`
 
- Wymagana. Ścieżka i nazwa pliku do wykonania lub dokument, aby otworzyć. Pełna ścieżka jest wymagana, jeśli określony plik nie znajduje się w jednym z katalogów w zmiennej środowiskowej PATH.
+Wymagane. Ścieżka i nazwa pliku do wykonania lub dokumentu do otwarcia. Pełna ścieżka jest wymagana, jeśli określony plik nie znajduje się w jednym z katalogów w zmiennej środowiskowej PATH.
 
- `args`
+`args`
 
- Opcjonalna. Argumenty do przekazania do wywoływanej program.
+Opcjonalna. Wszystkie argumenty do przekazania do wywołanego programu.
 
 ## <a name="switches"></a>Przełączniki
- /commandwindow [i] / Command [i] /c [i] / cmd
+/commandwindow [lub]/Command [lub]/c [lub]/cmd
 
- Opcjonalna. Określa, czy dane wyjściowe dla pliku wykonywalnego, który jest wyświetlany w **polecenia** okna.
+Opcjonalna. Określa, że dane wyjściowe dla pliku wykonywalnego są wyświetlane w oknie **wiersza polecenia** .
 
- /dir:`folder` [or] /d: `folder`
+/dir:`folder` [lub]/d:`folder`
 
- Opcjonalna. Określa katalog roboczy, aby ustawić, gdy program jest uruchamiany.
+Opcjonalny. Określa katalog roboczy, który ma zostać ustawiony podczas uruchamiania programu.
 
- / outputwindow [i] / Output [i] out [i] /o
+/outputWindow [lub]/Output [lub]/out [lub]//o
 
- Opcjonalna. Określa, czy dane wyjściowe dla pliku wykonywalnego, który jest wyświetlany w **dane wyjściowe** okna.
+Opcjonalny. Określa, że dane wyjściowe dla pliku wykonywalnego są wyświetlane w oknie **danych wyjściowych** .
 
 ## <a name="remarks"></a>Uwagi
- Należy określić przełączników /c dir /o natychmiast po `Tools.Shell`. Cokolwiek określona po nazwę pliku wykonywalnego, który jest przekazywany do niego jako argumenty wiersza polecenia.
+Przełączniki/dir/o/c należy określić bezpośrednio po `Tools.Shell`. Wszystkie elementy określone po nazwie pliku wykonywalnego są przekazane do niego jako argumenty wiersza polecenia.
 
- Wstępnie zdefiniowane alias `Shell` mogą być używane zamiast `Tools.Shell`.
+Wstępnie zdefiniowanego `Shell` aliasu można użyć `Tools.Shell`zamiast.
 
 > [!CAUTION]
-> Jeśli `path` argument dostarcza ścieżkę katalogu, a także nazwę pliku, całą nazwę ścieżki należy ująć w cudzysłów literału ("" "), jak w następujących czynności:
+> `path` Jeśli argument zawiera ścieżkę do katalogu, a także nazwę pliku, należy ująć całą nazwę ścieżki w cudzysłowie literału ("" "), tak jak w poniższym:
 
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
- Każdy zestaw trzech podwójnego cudzysłowu ("" ") jest interpretowany przez `Shell` procesora jako znak, pojedynczy cudzysłów. W związku z tym, w poprzednim przykładzie przekazuje faktycznie poniższy ciąg ścieżki, aby `Shell` polecenia:
+Każdy zestaw trzech podwójnych cudzysłowów ("" ") jest interpretowany `Shell` przez procesor jako pojedynczy znak podwójnego cudzysłowu. W ten sposób powyższy przykład faktycznie przekazuje następujący ciąg ścieżki do `Shell` polecenia:
 
 ```cmd
 "C:\Program Files\SomeFile.exe"
 ```
 
 > [!CAUTION]
-> Jeśli użytkownik nie należy umieszczać ciąg ścieżki w cudzysłowie literału ("" "), pierwszą przestrzeń Windows będzie można użyć tylko część ciągu. Na przykład jeśli ciąg ścieżki powyżej nie zostały podane prawidłowo, Windows będzie szukać pliku o nazwie "Program" znajdujący się w katalogu głównym C:\. Plik wykonywalny C:\Program.exe była rzeczywiście dostępne, nawet jeśli jest on instalowane przez nielegalnego naruszeniem Windows podejmował próbę wykonania tego programu, zamiast programu żądaną "c:\Program Files\SomeFile.exe".
+> Jeśli ciąg ścieżki nie zostanie ujęty w cudzysłowy literału ("" "), system Windows będzie używać tylko części ciągu do pierwszego odstępu. Na przykład jeśli powyższy ciąg ścieżki nie został prawidłowo ujęty w cudzysłów, system Windows szuka pliku o nazwie "program" znajdującego się w C:\ Katalog główny. Jeśli plik wykonywalny C:\Program.exe był rzeczywiście dostępny, nawet jeden instalowany przez nielegalne manipulowanie, system Windows podejmie próbę wykonania tego programu zamiast żądanego programu "c:\Program Files\SomeFile.exe".
 
 ## <a name="example"></a>Przykład
- Następujące polecenie używa xcopy.exe można skopiować pliku `MyText.txt` do `Text` folderu. Dane wyjściowe z xcopy.exe jest wyświetlany w obu **okna polecenia** i **dane wyjściowe** okna.
+Następujące polecenie używa xcopy. exe do skopiowania pliku `MyText.txt` `Text` do folderu. Dane wyjściowe z xcopy. exe są wyświetlane zarówno w **oknie poleceń** , jak i w oknie **danych wyjściowych** .
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt

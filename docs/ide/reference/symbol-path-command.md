@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a7a59ca23dc444bcdc714ade2fce5bedb87e8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3792f3d6f86faf0b58e8cf8f1b76984ba3bd5d80
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945131"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925994"
 ---
 # <a name="symbol-path-command"></a>Ścieżka symboli — Polecenie
 Określa listę katalogów do wyszukiwania symboli w debugerze.
@@ -31,22 +31,22 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
 ## <a name="arguments"></a>Argumenty
- `pathname`
+`pathname`
 
- Opcjonalna. Rozdzielana średnikami lista ścieżek dla debugera do wyszukiwania symboli.
+Opcjonalny. Rozdzielana średnikami lista ścieżek dla debugera do wyszukiwania symboli.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli nie `pathname` jest określony, polecenie wyświetla listę bieżących ścieżek symboli.
+Jeśli wartość `pathname` nie jest określona, polecenie wyświetla listę bieżących ścieżek symboli.
 
 ## <a name="example"></a>Przykład
- Ten przykład dodaje dwie ścieżki do listy katalogów symboli.
+Ten przykład dodaje dwie ścieżki do listy katalogów symboli.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
 ## <a name="example"></a>Przykład
- Ten przykład wyświetla listą rozdzielaną średnikami dla bieżących ścieżek symboli.
+Ten przykład wyświetla listę rozdzielonych średnikami dla bieżących ścieżek symboli.
 
 ```
 Debug.SymbolPath

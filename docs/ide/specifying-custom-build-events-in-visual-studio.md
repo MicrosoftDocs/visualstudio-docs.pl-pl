@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416736"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918897"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Określanie niestandardowych zdarzeń kompilacji w programie Visual Studio
 
 Określając to zdarzenie kompilacji niestandardowej, może automatycznie uruchomić polecenia przed uruchomieniem kompilacji lub po jej zakończeniu. Na przykład, można uruchomić *.bat* plików przed uruchomieniem kompilacji lub skopiuj nowe pliki do folderu, po zakończeniu kompilacji. Zdarzenia kompilacji są uruchamiane tylko wtedy, gdy kompilacja pomyślnie osiągnie tych punktów w procesie kompilacji.
 
- Aby uzyskać szczegółowe informacje o języku programowania, którego używasz zobacz następujące tematy:
+Aby uzyskać szczegółowe informacje o języku programowania, którego używasz zobacz następujące tematy:
 
 - Visual Basic —[How to: Określ zdarzenia kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
@@ -34,7 +34,7 @@ Określając to zdarzenie kompilacji niestandardowej, może automatycznie urucho
 
 Zdarzenia kompilacji postępuj zgodnie z tej samej składni jako polecenia systemu DOS, ale makra umożliwia łatwiejsze tworzenie zdarzeń kompilacji. Aby uzyskać listę dostępnych makr, zobacz [okno dialogowe wiersz polecenia zdarzenia/po kompilacji — zdarzenia prekompilacyjnego](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
- Aby uzyskać najlepsze wyniki postępuj zgodnie z tymi porady dotyczące formatowania:
+Aby uzyskać najlepsze wyniki postępuj zgodnie z tymi porady dotyczące formatowania:
 
 - Dodaj `call` instrukcji przed wszystkich zdarzeń, które są uruchamiane kompilacji *.bat* plików.
 

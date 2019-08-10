@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557102"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919131"
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
 Wyświetla zawartość określonego zakresu pamięci.
@@ -32,50 +32,50 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `expression`
+`expression`
 
- Opcjonalna. Adres pamięci, od którego należy rozpocząć wyświetlanie pamięci.
+Opcjonalny. Adres pamięci, z którego ma zostać rozpoczęte wyświetlanie pamięci.
 
 ## <a name="switches"></a>Przełączniki
- /ANSI&#124;Unicode
+/ANSI&#124;Unicode
 
- Opcjonalna. Wyświetl pamięć jako znaki odpowiadający bajtów pamięci, ANSI lub Unicode.
+Opcjonalny. Wyświetl pamięć jako znaki odpowiadające bajtom pamięci, ANSI lub Unicode.
 
- / Liczba:`number`
+Liczbą`number`
 
- Opcjonalna. Określa liczbę bajtów pamięci, aby wyświetlić, zaczynając od `expression`.
+Opcjonalny. Określa liczbę bajtów pamięci do wyświetlenia, rozpoczynając `expression`od.
 
- / Format:`formattype`
+Formatowanie`formattype`
 
- Opcjonalna. Formatowanie typ do wyświetlania informacji o pamięci w **pamięci** okna; może być OneByte TwoBytes, FourBytes, EightBytes, Float (32-bitowa) lub dwukrotnie (64-bitowe). Jeśli OneByte `/Unicode` jest niedostępny.
+Opcjonalny. Typ formatu do wyświetlania informacji o pamięci w oknie **pamięci** ; może być OneByte, TwoBytes, FourBytes, EightBytes, float (32-bitowy) lub Double (64-bitowy). Jeśli jest używana OneByte, `/Unicode` jest niedostępna.
 
- /Hex&#124;Signed&#124;Unsigned
+/Hex&#124;Signed&#124;Unsigned
 
- Opcjonalna. Określa format wyświetlania liczb: jak podpisem, bez znaku lub szesnastkową.
+Opcjonalna. Określa format wyświetlania liczb: jako podpisane, niepodpisane lub szesnastkowe.
 
 ## <a name="remarks"></a>Uwagi
- Zamiast pisania się kompletna **Debug.listmemory —** polecenia wszystkich przełączników, można wywołać polecenia przy użyciu wstępnie zdefiniowanych aliasów z przełącznikami, niektórych ustawień do określonej wartości. Na przykład zamiast wprowadzania:
+Zamiast zapisywać kompletne polecenie **Debug. ListMemory —** ze wszystkimi przełącznikami, można wywołać polecenie przy użyciu wstępnie zdefiniowanych aliasów z określonymi przełącznikami ustawionymi na określone wartości. Na przykład zamiast wprowadzania:
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- można napisać:
+można napisać:
 
 ```cmd
 >df /Count:30 /Unicode
 ```
 
- W tym miejscu znajduje się lista dostępnych aliasów dla **Debug.listmemory —** polecenia:
+Poniżej znajduje się lista dostępnych aliasów dla polecenia **Debug. ListMemory —** :
 
 |Alias|Polecenia i przełączniki|
 |-----------| - |
 |**d**|Debug.listmemory —|
 |**da**|Debug.listmemory — /Ansi|
 |**db**|Debug.listmemory — /Format:OneByte|
-|**dc**|Debug.listmemory — /Format:FourBytes /Ansi|
-|**dd**|Debug.listmemory — /Format:FourBytes|
-|**df**|Debug.listmemory — /Format:Float|
+|**DC**|Debug.listmemory — /Format:FourBytes /Ansi|
+|**Dodaj**|Debug.listmemory — /Format:FourBytes|
+|**DF**|Debug. ListMemory —/format: float|
 |**dq**|Debug.listmemory — /Format:EightBytes|
 |**du**|Debug.listmemory — /Unicode|
 

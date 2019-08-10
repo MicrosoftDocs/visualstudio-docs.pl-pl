@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c66eab323f42ba3aa5392fed657e3afd3a6e5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b3ad3b30329d574145ce7de839a3e6c164df2d5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946833"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919082"
 ---
 # <a name="list-threads-command"></a>Lista wątków — Polecenie
 Wyświetla listę wątków w bieżącym programem.
@@ -31,12 +31,12 @@ Debug.ListThreads [index]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `index`
+`index`
 
- Opcjonalna. Wybiera wątku za pomocą jego indeksu do bieżącego wątku.
+Opcjonalny. Wybiera wątek według indeksu, który będzie bieżącym wątkiem.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli zostanie określony, `index` argument oznacza wskazany wątek jako bieżącego wątku. Znak gwiazdki (*) jest wyświetlana na liście obok bieżącego wątku.
+Gdy jest `index` określony, argument oznacza wskazany wątek jako bieżący wątek. Gwiazdka (*) jest wyświetlana na liście obok bieżącego wątku.
 
 ## <a name="example"></a>Przykład
 

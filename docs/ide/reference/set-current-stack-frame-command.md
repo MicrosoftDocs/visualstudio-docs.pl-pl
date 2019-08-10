@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eea69dc4d2931f66d4c6769667e23bdfb4eecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24880f997d604d3db11ae19a6220c2789da7648f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934529"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926074"
 ---
 # <a name="set-current-stack-frame-command"></a>Ustaw bieżącą ramkę stosu — Polecenie
-Umożliwia ustawienie ramki określonego stosu.
+Pozwala ustawić konkretną ramkę stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,9 +30,9 @@ Debug.SetCurrentStackFrame index
 ```
 
 ## <a name="arguments"></a>Argumenty
- `index`
+`index`
 
- Wymagana. Wybiera ramkę stosu według indeksu.
+Wymagana. Wybiera ramkę stosu według jej indeksu.
 
 ## <a name="example"></a>Przykład
 

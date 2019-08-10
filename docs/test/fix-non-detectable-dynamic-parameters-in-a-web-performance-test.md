@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003776"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918489"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Naprawa niewykrywalnych parametrów dynamicznych w teście wydajności sieci Web
 
@@ -237,7 +237,7 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
      ![Zastąp tekst za pomocą parametru](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Parametr QueryString *JScriptQuery.aspx* żądania jest aktualizowany za pomocą nowego parametru kontekstu:  CustomQueryString=jScriptQueryString___{{Param0}}.
+     Parametr QueryString w żądaniu *JScriptQuery. aspx* jest aktualizowany przy użyciu nowego parametru kontekstu:  CustomQueryString = jScriptQueryString___ {{Param0}}.
 
      ![Parametr dotyczą querystring](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,9 +249,9 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
 ## <a name="qa"></a>PYTANIA I ODPOWIEDZI
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>PYT.: Można ponownie uruchomić wykrywanie parametrów dynamicznych, jeśli Moja aplikacja sieci web zostanie zmodyfikowana?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>PYTANIA Czy mogę przeprowadzić ponowne uruchomienie wykrywania parametrów dynamicznych, jeśli moja aplikacja sieci Web zostanie zmodyfikowana?
 
- **ODP.:** Tak, użyj następującej procedury:
+**Z** Tak, użyj następującej procedury:
 
 1. Na pasku narzędzi wybierz **Przekształć dynamiczne parametry na parametry testu sieci Web** przycisku.
 
@@ -263,6 +263,6 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
 2. Zaznacz lub wyczyść pole wyboru obok parametrów dynamicznych, które chcesz automatycznie skorelować. Domyślnie sprawdzane są wszystkie parametry dynamiczne.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>PYT.: Należy skonfigurować program Visual Studio do wykrywania parametrów dynamicznych?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>PYTANIA Czy muszę skonfigurować program Visual Studio do wykrywania parametrów dynamicznych?
 
- **ODP.:** Domyślna konfiguracja programu Visual Studio jest do wykrywania parametrów dynamicznych podczas rejestrowania testu wydajności sieci web. Jednak jeśli masz skonfigurowane opcje programu Visual Studio, aby nie wykrywać dynamicznych parametrów lub testowana aplikacja sieci web modyfikowana dodatkowymi parametrami dynamicznych; nadal można uruchomić wykrywanie parametrów dynamicznych z edytora testu wydajności sieci Web.
+**Z** Domyślna konfiguracja programu Visual Studio wykrywa dynamiczne parametry podczas rejestrowania testu wydajności sieci Web. Jednak jeśli masz skonfigurowane opcje programu Visual Studio, aby nie wykrywać dynamicznych parametrów lub testowana aplikacja sieci web modyfikowana dodatkowymi parametrami dynamicznych; nadal można uruchomić wykrywanie parametrów dynamicznych z edytora testu wydajności sieci Web.

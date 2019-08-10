@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711274"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918170"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -169,7 +169,7 @@ Można zdefiniować własne poziomy hierarchii i według **stanu** , a następni
 |**Class**|Grupuje testy według klasy zawierającej.|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>Grupuj według cech
+### <a name="traits"></a>Cech
 
 Cechą jest zazwyczaj para nazwa kategorii/wartość, ale może to być również jedna kategoria. Cechy mogą być przypisywane do metod, które są identyfikowane jako metoda testowa przez strukturę testów jednostkowych. Struktura testów jednostkowych może definiować kategorie cech. Możesz dodać wartości do kategorii cech, aby zdefiniować własne pary nazwa/wartość kategorii. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.
 
@@ -187,7 +187,7 @@ W środowisku testów jednostkowych firmy Microsoft dla zarządzanych aplikacji 
 
 **Cechy struktury testów jednostkowych firmy Microsoft dlaC++**
 
- Zobacz [, jak używać struktury testów jednostkowych firmy Microsoft C++dla ](how-to-use-microsoft-test-framework-for-cpp.md)programu.
+Zobacz [, jak używać struktury testów jednostkowych firmy Microsoft C++dla ](how-to-use-microsoft-test-framework-for-cpp.md)programu.
 
 ## <a name="create-custom-playlists"></a>Tworzenie niestandardowych list odtwarzania
 
@@ -215,7 +215,7 @@ Lista odtwarzania zostanie otwarta na nowej karcie programu Test Explorer. Może
 
 ![Lista odtwarzania zostanie otwarta na osobnej karcie Eksploratora testów](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Aby dodać testy do listy odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. Kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj do listy odtwarzania** > **Nowa lista odtwarzania**. 
+**Aby dodać testy do listy odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. Kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj do listy odtwarzania** > **Nowa lista odtwarzania**.
 
 **Aby otworzyć listę odtwarzania**, wybierz ikonę listy odtwarzania na pasku narzędzi programu Visual Studio i wybierz wcześniej zapisany plik listy odtwarzania z menu.
 ::: moniker-end
@@ -229,7 +229,7 @@ Lista odtwarzania zostanie otwarta na nowej karcie programu Test Explorer. Może
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrowanie, sortowanie i zmiana rozmieszczenia kolumn testowych
 
-Kolumny można filtrować, sortować i zmieniać ich kolejność. 
+Kolumny można filtrować, sortować i zmieniać ich kolejność.
 * Aby odfiltrować do określonych cech, kliknij ikonę filtru w górnej części kolumny cechy.
 
   ![Filtr kolumn](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ Aby zdiagnozować Dlaczego metoda testowa trwa zbyt wiele czasu, wybierz metodę
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizuj pokrycie kodu testu jednostkowego
 
-Można określić ilość kodu produktu, który jest faktycznie testowany przez testy jednostkowe za pomocą narzędzia pokrycia kodu w programie Visual Studio. Można uruchomić pokrycie kodów w wybranych testach albo we wszystkich testach w rozwiązaniu.
+Można określić ilość kodu produktu, który jest faktycznie testowany przez testy jednostkowe za pomocą narzędzia pokrycia kodu w programie Visual Studio dostępnego w wersji Visual Studio Enterprise. Można uruchomić pokrycie kodów w wybranych testach albo we wszystkich testach w rozwiązaniu.
 
 Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu:
 
@@ -331,6 +331,8 @@ Testy można uruchomić z poziomu **Eksploratora testów**, klikając prawym prz
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
+|TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
 
 > [!NOTE]
 > Nie można uruchomić testu w klasie abstrakcyjnej, ponieważ testy są zdefiniowane tylko w klasach abstrakcyjnych i nie są tworzone. Aby uruchomić testy w klasach abstrakcyjnych, należy utworzyć klasę, która dziedziczy z klasy abstrakcyjnej.

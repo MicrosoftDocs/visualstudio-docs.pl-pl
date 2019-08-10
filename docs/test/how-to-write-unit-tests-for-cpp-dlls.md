@@ -7,34 +7,34 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132165"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926668"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Pisanie testów jednostkowych dla bibliotek DLL C++ w programie Visual Studio
 
- Istnieje kilka sposobów, aby przetestować kod biblioteki DLL, w zależności od tego, czy eksportuje ona funkcje, które mają zostać przetestowane. Wybierz jedną z następujących sposobów:
+Istnieje kilka sposobów, aby przetestować kod biblioteki DLL, w zależności od tego, czy eksportuje ona funkcje, które mają zostać przetestowane. Wybierz jedną z następujących sposobów:
 
- **Testy jednostkowe wywołać tylko funkcje, które są eksportowane z biblioteki DLL:** Dodaj osobny projekt testów, zgodnie z opisem w [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md). W projekcie testowym Dodaj odwołanie do projektu biblioteki DLL.
+**Testy jednostkowe tylko wywołują funkcje wyeksportowane z biblioteki DLL:** Dodaj oddzielny projekt testowy, zgodnie z opisem w temacie [Napisz testyC++jednostkowe dla C/](writing-unit-tests-for-c-cpp.md). W projekcie testowym Dodaj odwołanie do projektu biblioteki DLL.
 
- Przejdź do procedury [można odwoływać się do eksportowanych funkcji z projektu DLL](#projectRef).
+Przejdź do procedury [można odwoływać się do eksportowanych funkcji z projektu DLL](#projectRef).
 
- **Biblioteka DLL jest kompilowany jako plik .exe:** Dodaj osobny projekt testów. Połącz go z wyjściowym plikiem obiektu.
+**Biblioteka DLL została skompilowana jako plik. exe:** Dodaj osobny projekt testowy. Połącz go z wyjściowym plikiem obiektu.
 
- Przejdź do procedury [połączyć testy z plikami obiektu lub biblioteki](#objectRef).
+Przejdź do procedury [połączyć testy z plikami obiektu lub biblioteki](#objectRef).
 
- **Funkcje nieczłonkowskie wywołanie testy jednostki, które nie są eksportowane z biblioteki DLL i biblioteką DLL może być kompilowany jako biblioteka statyczna:** Zmień projekt DLL tak, aby był skompilowany do *.lib* pliku. Dodaj osobny projekt testów, który odwołuje się do testowanego projektu.
+**Testy jednostkowe wywołują funkcje nieczłonkowskie, które nie zostały wyeksportowane z biblioteki DLL, a Biblioteka DLL może być skompilowana jako Biblioteka statyczna:** Zmień projekt DLL tak, aby był kompilowany do pliku *. lib* . Dodaj osobny projekt testów, który odwołuje się do testowanego projektu.
 
- Takie podejście ma tę zaletę umożliwia testom używać członkowie wyeksportowane, ale nadal utrzymuje testy w osobnym projekcie.
+Takie podejście ma tę zaletę umożliwia testom używać członkowie wyeksportowane, ale nadal utrzymuje testy w osobnym projekcie.
 
- Przejdź do procedury [zmienić bibliotekę DLL do biblioteki statycznej](#staticLink).
+Przejdź do procedury [zmienić bibliotekę DLL do biblioteki statycznej](#staticLink).
 
- **Testy jednostkowe muszą wywoływać funkcje nieczłonkowskie, które nie są eksportowane, a kod musi być kompilowany jako biblioteka dołączana dynamicznie (DLL):** Dodawanie testów jednostkowych w tym samym projekcie, co kod produktu.
+**Testy jednostkowe muszą wywoływać funkcje nieczłonkowskie, które nie zostały wyeksportowane, a kod musi być skompilowany jako biblioteka dołączana dynamicznie (DLL):** Dodaj testy jednostkowe w tym samym projekcie, w którym znajduje się kod produktu.
 
- Przejdź do procedury [Aby dodać testy jednostkowe w tym samym projekcie](#sameProject).
+Przejdź do procedury [Aby dodać testy jednostkowe w tym samym projekcie](#sameProject).
 
 ## <a name="create-the-tests"></a>Tworzenie testów
 
@@ -58,17 +58,17 @@ ms.locfileid: "67132165"
 
       ::: moniker range="vs-2019"
 
-      1. Na **pliku** menu, wybierz **New** > **projektu**. W **Dodaj nowy projekt** okno dialogowe, zestaw **języka** do C++ i wpisz "test", w polu wyszukiwania. Następnie wybierz **natywny projekt testów jednostkowych**.
+      1. Na **pliku** menu, wybierz **New** > **projektu**. W oknie dialogowym **Dodawanie nowego projektu** Ustaw **Język** na C++ i wpisz "test" w polu wyszukiwania. Następnie wybierz **natywny projekt testów jednostkowych**.
 
       ::: moniker-end
 
       ::: moniker range="vs-2017"
 
-      1. Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Test** >  **C++ projektu testu jednostkowego**.
+      1. W menu **plik** wybierz polecenie **Nowy** > **projekt** > **test jednostkowy C++** projektu testowego. **C++** > >
 
       ::: moniker-end
 
-  1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy dla projektu testowego, a następnie wybierz **Dodaj** > **odwołania**.
+  1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt testowy, a następnie wybierz polecenie **Dodaj** > **odwołanie**.
 
   1. Wybierz **projektów**, a następnie projekt ma zostać przetestowana.
 
@@ -90,13 +90,13 @@ ms.locfileid: "67132165"
 
       ::: moniker range="vs-2019"
 
-      1. Na **pliku** menu, wybierz **New** > **projektu**. W **Dodaj nowy projekt** okno dialogowe, zestaw **języka** do C++ i wpisz "test", w polu wyszukiwania. Następnie wybierz **natywny projekt testów jednostkowych**.
+      1. Na **pliku** menu, wybierz **New** > **projektu**. W oknie dialogowym **Dodawanie nowego projektu** Ustaw **Język** na C++ i wpisz "test" w polu wyszukiwania. Następnie wybierz **natywny projekt testów jednostkowych**.
 
       ::: moniker-end
-      
+
       ::: moniker range="vs-2017"
 
-      1. Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Test** >  **C++ projektu testu jednostkowego**.
+      1. W menu **plik** wybierz polecenie **Nowy** > **projekt** > **test jednostkowy C++** projektu testowego. **C++** > >
 
       ::: moniker-end
 
@@ -174,6 +174,6 @@ ms.locfileid: "67132165"
 - [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
 - [Dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
-- [Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznieC++()](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importowanie i eksportowanie](/cpp/build/importing-and-exporting)
-- [Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Szybki start: Programowanie sterowane testami za pomocą Eksploratora testów](../test/quick-start-test-driven-development-with-test-explorer.md)

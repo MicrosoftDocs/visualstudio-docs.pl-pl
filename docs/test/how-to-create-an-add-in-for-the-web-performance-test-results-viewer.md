@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747244"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918199"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Instrukcje: Tworzenie dodatku dla podglądu wyników testu wydajności sieci Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Instrukcje: Utwórz dodatek dla przeglądarki Wyniki testów wydajności sieci Web
 
 Możesz rozszerzyć w interfejsie użytkownika dla **podglądu wyników testu wydajności sieci Web** przy użyciu następujących przestrzeni nazw:
 
@@ -24,7 +24,7 @@ Możesz rozszerzyć w interfejsie użytkownika dla **podglądu wyników testu wy
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Ponadto musisz dodać odwołanie do biblioteki DLL LoadTestPackage, która znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<wersji > \Enterprise\Common7\IDE\PrivateAssemblies* folder.
+Ponadto należy dodać odwołanie do biblioteki DLL LoadTestPackage, która znajduje się w folderze *% ProgramFiles (x86)% \ Microsoft Visual Studio\\\<w wersji > \Enterprise\Common7\IDE\PrivateAssemblies* .
 
 Aby rozszerzyć **podglądu wyników testu wydajności sieci Web**w interfejsie użytkownika, należy utworzyć dodatek programu Visual Studio i kontrolki użytkownika. W poniższych procedurach opisano sposób tworzenia dodatku, formantu użytkownika oraz sposób implementacji klas niezbędnych do rozszerzenia **podglądu wyników testu wydajności sieci Web**w interfejsie użytkownika.
 
@@ -37,21 +37,21 @@ Aby rozszerzyć **podglądu wyników testu wydajności sieci Web**w interfejsie 
 Utwórz lub Otwórz rozwiązanie spoza środowiska produkcyjnego, że możesz eksperymentować z zawierającego aplikację sieci web platformy ASP.NET i wydajności sieci web i obciążenia projektu testowego z jednego lub więcej testów wydajności sieci web dla aplikacji sieci web platformy ASP.NET.
 
 > [!NOTE]
-> Możesz utworzyć aplikację sieci web platformy ASP.NET i projekt zawierający testy wydajności sieci web zgodnie z instrukcjami opisanymi w testu wydajności sieci web i obciążenia [jak: Tworzenie nowego testu usługi internetowej](../test/how-to-create-a-web-service-test.md) i [Generowanie i uruchom kodowany internetowy test wydajnościowy](../test/generate-and-run-a-coded-web-performance-test.md).
+> Można utworzyć aplikację sieci Web ASP.NET oraz projekt testu obciążenia i wydajności sieci Web, który zawiera testy wydajności sieci Web, wykonując procedury [opisane w temacie How to: Utwórz test](../test/how-to-create-a-web-service-test.md) usługi sieci Web i Wygeneruj [i uruchom kodowany test wydajności sieci Web](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Utwórz dodatek programu Visual Studio
 
 Dodatek jest skompilowaną biblioteką DLL, która działa w programie Visual Studio zintegrowane środowisko programistyczne (IDE). Kompilacja pomaga chronić Twoje prawa własności intelektualnej i zwiększa wydajność. Chociaż dodatki można utworzyć ręcznie, może okazać się łatwiejszy w obsłudze **kreatora dodatków**. Ten kreator tworzy funkcjonalny, ale podstawowy dodatek, którą można uruchamiać natychmiast po utworzeniu. Po **kreatora dodatków** wygeneruje podstawowy program, można dodać do niego kod i go dostosować.
 
- **Kreatora dodatków** pozwala podać nazwę wyświetlaną i opis dla dodatku. Obie subskrypcje będą widoczne w **Add-In Manager**. Opcjonalnie może mieć kod Generuj kreatora, który dodaje do **narzędzia** menu polecenie, aby otworzyć dodatek. Możesz również wyświetlić niestandardowe **o** okno dialogowe dla dodatku. Po zakończeniu działania kreatora, masz nowy projekt, który ma tylko jedną klasę, która implementuje dodatek. Ta klasa ma nazwę Połącz.
+**Kreatora dodatków** pozwala podać nazwę wyświetlaną i opis dla dodatku. Obie subskrypcje będą widoczne w **Add-In Manager**. Opcjonalnie może mieć kod Generuj kreatora, który dodaje do **narzędzia** menu polecenie, aby otworzyć dodatek. Możesz również wyświetlić niestandardowe **o** okno dialogowe dla dodatku. Po zakończeniu działania kreatora, masz nowy projekt, który ma tylko jedną klasę, która implementuje dodatek. Ta klasa ma nazwę Połącz.
 
- Użyjesz **Add-In Manager** na końcu tego artykułu.
+Użyjesz **Add-In Manager** na końcu tego artykułu.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Aby utworzyć dodatek za pomocą Kreatora dodatek
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy projekt**.
 
-2. Utwórz nową **dodatku Visual Studio** projektu.
+2. Utwórz nowy projekt **dodatku programu Visual Studio** .
 
     Visual Studio **kreatora dodatków** rozpoczyna się.
 
@@ -111,7 +111,7 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy projekt**.
 
-2. Utwórz nową **Biblioteka kontrolek formularzy Windows** projektu.
+2. Utwórz nowy projekt **biblioteki formantów Windows Forms** .
 
 3. Z **przybornika**, przeciągnij <xref:System.Windows.Forms.DataGridView> na powierzchnię obiektu userControl1.
 
@@ -256,7 +256,7 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu WebPerfTestResultsViewerControl i wybierz **właściwości**.
 
-2. Wybierz **aplikacji** kartę, a następnie wybierz **platformę docelową** listy rozwijanej i wybierz pozycję **.NET Framework 4** (lub nowsza). Zamknij **właściwości** okna.
+2. Wybierz kartę **aplikacja** , a następnie wybierz listę rozwijaną **platforma** docelowa i wybierz pozycję **.NET Framework 4** (lub nowszy). Zamknij okno **Właściwości** .
 
    Jest to wymagane w celu obsługi odwołań biblioteki DLL, które są potrzebne do rozszerzania **podglądu wyników testu wydajności sieci Web**.
 
@@ -300,7 +300,7 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
             }
     ```
 
-## <a name="build-the-solution"></a>Skompiluj rozwiązanie
+## <a name="build-the-solution"></a>Kompilowanie rozwiązania
 
 - Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
 
@@ -314,21 +314,21 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 4. Wybierz **OK**.
 
-## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Uruchamianie testu wydajności sieci web przy użyciu podglądu wyników testu sieci Web
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Uruchamianie testu wydajności sieci Web za pomocą przeglądarki Wyniki testów sieci Web
 
 1. Uruchamianie testu wydajności sieci web, a następnie zostanie wyświetlony dodatku WebPerfTestResultsViewerAddin w nowej karcie zatytułowaną przykład, wyświetlaną w **Podgląd wyników testu wydajności sieci Web**.
 
 2. Wybierz kartę Aby wyświetlić właściwości przedstawione w formancie DataGridView.
 
-## <a name="net-security"></a>Zabezpieczenia platformy .net
+## <a name="net-security"></a>Zabezpieczenia platformy .NET
 
 Aby zwiększyć bezpieczeństwo poprzez uniemożliwienie automatycznego uaktywniania szkodliwych dodatków, program Visual Studio udostępnia ustawienia na **opcje narzędzi** stronę o nazwie **Dodaj dodatków/makr zabezpieczeń**.
 
 Ponadto ta strona opcji pozwala określić foldery, w których program Visual Studio szuka *. Dodatek* pliki rejestracji. Zwiększa to bezpieczeństwo pozwalając ograniczyć lokalizacje gdzie *. Dodatek* mogą być odczytywane pliki rejestracji. Pozwala to zapobiec złośliwego *. Dodatek* pliki z nieumyślnemu używaniu.
 
- **Ustawienia zabezpieczeń dodatku**
+**Ustawienia zabezpieczeń dodatku**
 
- Ustawienia na stronie opcje dla dodatku zabezpieczeń są następujące:
+Ustawienia na stronie opcje dla dodatku zabezpieczeń są następujące:
 
 - **Zezwalaj składnikom dodatku na ładowanie.** Domyślnie wybrana. Po wybraniu, dodatki mogą ładować w programie Visual Studio. Gdy nie dokonano zaznaczenia, dodatki mają zakaz załadunku w programie Visual Studio.
 

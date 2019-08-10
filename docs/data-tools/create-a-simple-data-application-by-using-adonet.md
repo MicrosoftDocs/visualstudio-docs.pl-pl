@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570123"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925702"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 
@@ -59,7 +59,7 @@ Tworzenie przykładowej bazy danych, wykonując następujące czynności:
 
 7. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
-     Po przez krótki czas odliczania zapytanie, a następnie są tworzone obiekty bazy danych. Baza danych zawiera dwie tabele: Klienta i zamówienia. Te tabele zawierają początkowo żadnych danych, ale możesz dodać dane po uruchomieniu aplikacji, który utworzysz. Baza danych zawiera również czterech prostych przechowywanych procedur.
+     Po przez krótki czas odliczania zapytanie, a następnie są tworzone obiekty bazy danych. Baza danych zawiera dwie tabele: Klient i zamówienia. Te tabele zawierają początkowo żadnych danych, ale możesz dodać dane po uruchomieniu aplikacji, który utworzysz. Baza danych zawiera również czterech prostych przechowywanych procedur.
 
 ## <a name="create-the-forms-and-add-controls"></a>Tworzenie formularzy i dodawanie formantów
 
@@ -90,9 +90,9 @@ Tworzenie przykładowej bazy danych, wykonując następujące czynności:
 |Przycisk|Name = btnGoToFillOrCancel|
 |Przycisk|Nazwa = btnExit|
 
- **Formularz NewCustomer**
+**Formularz NewCustomer**
 
- ![Dodawanie nowego klienta i złóż zamówienie](../data-tools/media/simpleappnewcust.png)
+![Dodawanie nowego klienta i złóż zamówienie](../data-tools/media/simpleappnewcust.png)
 
 |Formanty formularza NewCustomer|Właściwości|
 | - |----------------|
@@ -105,9 +105,9 @@ Tworzenie przykładowej bazy danych, wykonując następujące czynności:
 |Przycisk|Nazwa = btnAddAnotherAccount|
 |Przycisk|Nazwa = btnAddFinish|
 
- **Formularz FillOrCancel**
+**Formularz FillOrCancel**
 
- ![Wypełnij lub Anuluj zamówienia](../data-tools/media/simpleappcancelfill.png)
+![Wypełnij lub Anuluj zamówienia](../data-tools/media/simpleappcancelfill.png)
 
 |Formanty formularza FillOrCancel|Właściwości|
 | - |----------------|
@@ -120,16 +120,16 @@ Tworzenie przykładowej bazy danych, wykonując następujące czynności:
 |Przycisk|Nazwa = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Store parametry połączenia
- Gdy Twoja aplikacja próbuje otworzyć połączenie z bazą danych, aplikacja musi mieć dostęp do parametrów połączenia. Aby uniknąć wpisywania ciągu ręcznie w każdym formularzu, Przechowaj ciąg w *App.config* plik w projekcie i Utwórz metodę, która zwraca ciąg, gdy metoda jest wywoływana z jakiegokolwiek formularza w aplikacji.
+Gdy Twoja aplikacja próbuje otworzyć połączenie z bazą danych, aplikacja musi mieć dostęp do parametrów połączenia. Aby uniknąć wpisywania ciągu ręcznie w każdym formularzu, Przechowaj ciąg w *App.config* plik w projekcie i Utwórz metodę, która zwraca ciąg, gdy metoda jest wywoływana z jakiegokolwiek formularza w aplikacji.
 
- Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy **sprzedaży** połączenia danych w **Eksploratora serwera** i wybierając pozycję **właściwości**. Znajdź **ConnectionString** właściwości, następnie za pomocą **Ctrl**+**A**, **Ctrl**+**C**  zaznacz i skopiuj ciąg do Schowka.
+Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy **sprzedaży** połączenia danych w **Eksploratora serwera** i wybierając pozycję **właściwości**. Znajdź **ConnectionString** właściwości, następnie za pomocą **Ctrl**+**A**, **Ctrl**+**C**  zaznacz i skopiuj ciąg do Schowka.
 
 1. Jeśli używasz C#w **Eksploratora rozwiązań**, rozwiń węzeł **właściwości** węzła w ramach projektu, a następnie otwórz **Settings.settings** pliku.
     Jeśli używasz języka Visual Basic w **Eksploratora rozwiązań**, kliknij przycisk **Pokaż wszystkie pliki**, rozwiń węzeł **mój projekt** węzeł, a następnie otwórz **Settings.settings** pliku.
 
 2. W **nazwa** kolumny, wprowadź `connString`.
 
-3. W **typu** listy wybierz **(parametry połączenia)**.
+3. W **typu** listy wybierz **(parametry połączenia)** .
 
 4. W **zakres** listy wybierz **aplikacji**.
 

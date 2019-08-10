@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c019e98e7f1311b6521dff563cb8e7bb0a2356e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02e69a97468675cd6f7530793581c15717465d6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62544025"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921060"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Pieczętuj metody, które spełniają wymagania interfejsów prywatnych
 
@@ -35,40 +35,40 @@ ms.locfileid: "62544025"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Dziedziczny typ publiczny dostarcza zastępowalną implementację metody `internal` (`Friend` w języku Visual Basic) interfejsu.
+Dziedziczony typ publiczny zapewnia implementację `internal` metody w interfejsie (`Friend` w Visual Basic).
 
 ## <a name="rule-description"></a>Opis reguły
- Metody interfejsu muszą powszechnej dostępności, której nie można zmienić w typie implementującym. Interfejs wewnętrzny tworzy kontraktu, który nie jest przeznaczony do implementacji spoza zestawu, który definiuje interfejs. Publiczny typ, który implementuje metodę interfejsu wewnętrznego przy użyciu `virtual` (`Overridable` w języku Visual Basic) modyfikator umożliwia metody do zastąpienia przez typ pochodny, który znajduje się poza zestaw. Jeśli drugi typ w zestawie definiujące wywołuje metodę i oczekuje, że kontrakt wyłącznie wewnętrznym, zachowanie jest zagrożona podczas zamiast tego przesłonięte metody w zestawie poza jest wykonywany. Spowoduje to utworzenie luki w zabezpieczeniach.
+Metody interfejsu mają publiczny dostęp, którego nie można zmienić przez typ implementujący. Wewnętrzny interfejs tworzy kontrakt, który nie jest przeznaczony do wdrożenia poza zestawem, który definiuje interfejs. Typ publiczny implementujący metodę interfejsu wewnętrznego przy użyciu `virtual` modyfikatora (`Overridable` w Visual Basic) umożliwia przesłanianie metody przez typ pochodny, który znajduje się poza zestawem. Jeśli drugi typ w definicji zestawu wywołuje metodę i oczekuje kontraktu tylko wewnętrznego, zachowanie może zostać naruszone, gdy zamiast tego zostanie wykonana zastąpiona metoda w zewnętrznym zestawie. Powoduje to utworzenie luki w zabezpieczeniach.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, zapobiegania metody zastępowaniu spoza zestawu przy użyciu jednej z następujących czynności:
+Aby naprawić naruszenie tej zasady, należy zapobiec zastąpieniu metody poza zestaw przy użyciu jednego z następujących elementów:
 
-- Zmień typ deklarujący `sealed` (`NotInheritable` w języku Visual Basic).
+- Oznacz typ `sealed` deklarujący (`NotInheritable` w Visual Basic).
 
-- Zmień dostępność elementu typ deklarujący `internal` (`Friend` w języku Visual Basic).
+- Zmień dostępność typu deklarującego na `internal` (`Friend` w Visual Basic).
 
-- Usuń wszystkich konstruktorów publicznych z typ deklarujący.
+- Usuń wszystkie konstruktory publiczne z typu deklarującego.
 
-- Implementuje metody bez używania `virtual` modyfikator.
+- Zaimplementuj metodę bez użycia `virtual` modyfikatora.
 
-- Jawnie implementować metody.
+- Zaimplementuj metodę jawnie.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Bezpiecznie ostrzeżenia z tej reguły, jeśli po dokładnej przeglądu żadnych problemów z zabezpieczeniami istnieją, które może być możliwe, jeśli metoda zostanie przesłonięta spoza zestawu.
+Jeśli po dokładnym przejrzeniu Metoda zostanie przesłonięta poza zestawem, bezpieczniej jest pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example-1"></a>Przykład 1
- W poniższym przykładzie pokazano typu `BaseImplementation`, który narusza tę regułę.
+W poniższym przykładzie przedstawiono typ, `BaseImplementation`który narusza tę regułę.
 
- [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
- [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
- [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
+[!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
+[!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
+[!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
 
 ## <a name="example-2"></a>Przykład 2
- Poniższy przykład wykorzystuje metodę wirtualną wykonania poprzedniego przykładu.
+W poniższym przykładzie wykorzystuje implementację metody wirtualnej z poprzedniego przykładu.
 
- [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
- [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
- [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
+[!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
+[!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
+[!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
 
 ## <a name="see-also"></a>Zobacz także
 

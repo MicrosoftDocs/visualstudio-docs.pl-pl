@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571371"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919543"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Podstawowe reguły zasad projektowania dla zarządzanego kodu
-Można użyć reguły podstawowe reguły wskazówek dotyczących projektowania firmy Microsoft, równa się koncentrować na łatwiejsze do zrozumienia i użycia kodu. Powinien być dołączany do tej reguły, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymuszać najlepsze rozwiązania dla kodu, który jest łatwa w obsłudze.
+Za pomocą zestawu reguł podstawowych wytycznych dotyczących projektowania firmy Microsoft można skupić się na ułatwianiu zrozumienia i użycia kodu. Ten zestaw reguł należy dołączyć, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymusić najlepsze rozwiązania dla kodu, który jest łatwy do utrzymania.
 
- Podstawowe reguły wskazówek dotyczących projektowania obejmują wszystkie reguły w zestawie reguł reguły Recommeded Minimum firmy Microsoft. Aby uzyskać listę minimalne reguły, zobacz [zarządzany zalecany zestaw reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Podstawowe reguły wytycznych dotyczących projektowania obejmują wszystkie reguły w zestawie reguł minimalnych recommeded firmy Microsoft. Aby zapoznać się z listą minimalnych reguł, zobacz [zarządzane zalecane reguły zestawu reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
 
- W poniższej tabeli opisano wszystkie reguły w zestawie reguł podstawowe reguły wskazówek dotyczących projektowania firmy Microsoft.
+W poniższej tabeli opisano wszystkie reguły w zestawie reguł podstawowych wytycznych dotyczących projektowania firmy Microsoft.
 
 |Reguła|Opis|
 |----------|-----------------|

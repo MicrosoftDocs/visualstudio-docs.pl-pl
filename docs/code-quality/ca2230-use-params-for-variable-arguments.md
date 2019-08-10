@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 505aa8cdc1371a3bc288772d77b49eb7a50e9830
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541786"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920145"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Użyj elementu params dla argumentów zmiennych
 
@@ -31,23 +31,23 @@ ms.locfileid: "62541786"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny lub chroniony zawiera metodę publiczną lub chronioną, która używa `VarArgs` konwencji wywoływania.
+Typ publiczny lub chroniony zawiera metodę publiczną lub chronioną, która używa `VarArgs` konwencji wywoływania.
 
 ## <a name="rule-description"></a>Opis reguły
- `VarArgs` Konwencja wywołania jest używana z niektórych definicji metod, które przyjmują zmienną liczbę parametrów. Za pomocą metody `VarArgs` konwencji wywoływania nie jest Common Language Specification (CLS) zgodne i nie mogą być niedostępne w językach programowania.
+Konwencja `VarArgs` wywoływania jest używana z niektórymi definicjami metod, które pobierają zmienną liczbę parametrów. Metoda korzystająca `VarArgs` z konwencji wywoływania nie jest zgodna z Common Language Specification (CLS) i może nie być dostępna w różnych językach programowania.
 
- W języku C# `VarArgs` konwencja wywołania jest używany po liście parametrów metody kończy się `__arglist` — słowo kluczowe. Język Visual Basic nie obsługuje `VarArgs` wywoływania Konwencji i Visual C++ umożliwia jego użycia tylko w kod niezarządzany, który używa elipsy `...` notacji.
+W C#programie Konwencja `VarArgs` wywoływania jest używana, gdy `__arglist` lista parametrów metody zostanie zakończona słowem kluczowym. Visual Basic nie obsługuje `VarArgs` konwencji wywoływania, a Wizualizacja C++ pozwala jej używać tylko w niezarządzanym kodzie, który używa `...` notacji z elipsą.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady w języku C#, należy użyć [params](/dotnet/csharp/language-reference/keywords/params) słowa kluczowego zamiast `__arglist`.
+Aby naprawić naruszenie tej reguły w programie C#, należy użyć `__arglist`słowa kluczowego [params](/dotnet/csharp/language-reference/keywords/params) zamiast.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy kod przedstawia dwie metody, taki, który narusza regułę i taki, który spełnia reguły.
+Poniższy przykład przedstawia dwie metody, jeden, który narusza regułę i jeden, który spełnia regułę.
 
- [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
+[!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5422d8cb56a9df1fad40857f6802e55ebd11b2ed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3f9094b4d668df37c25da075d0cee590052f910d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675497"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919815"
 ---
 # <a name="optimizing-your-azure-code"></a>Optymalizacja kodu platformy Azure
 Podczas programowania używasz aplikacje korzystające z Microsoft Azure, istnieją pewne praktyk kodowania, które należy wykonać, aby pomóc uniknąć problemów z skalowalność aplikacji, zachowanie i wydajność w środowisku chmury. Firma Microsoft udostępnia narzędzia do analizy kodu platformy Azure, rozpoznaje i identyfikuje kilka z tych problemów często napotykanych i pomoże Ci je rozwiązać. Możesz pobrać narzędzia w programie Visual Studio za pomocą narzędzia NuGet.
@@ -34,7 +34,7 @@ Udostępnij swoje pomysły i opinie na [opinii analizy kodu Azure](http://go.mic
 ### <a name="reason"></a>Przyczyna
 Domyślnie tryb stanu sesji, które są określone w pliku web.config jest w trakcie. Ponadto jeśli żadnego wpisu określone w pliku konfiguracji, tryb stanu sesji domyślnie w procesie. Tryb w procesie przechowuje stanu sesji w pamięci na serwerze sieci web. Po ponownym uruchomieniu wystąpienia lub nowe wystąpienie jest używany do równoważenia obciążenia lub obsługę trybu failover, stan sesji, przechowywane w pamięci na serwerze sieci web nie są zapisywane. Ta sytuacja zapobiega aplikację jest skalowalna w chmurze.
 
-Stanu sesji programu ASP.NET obsługuje kilka opcji innego magazynu danych stanu sesji: InProc, StateServer, SQLServer, niestandardowe i Off. Zaleca się używać trybu niestandardowego do przechowywania danych na zewnętrznego magazynu stanu sesji, takie jak [dostawcy stanu sesji usługi Azure redis Cache](http://go.microsoft.com/fwlink/?LinkId=401521).
+Stan sesji ASP.NET obsługuje kilka różnych opcji magazynu dla danych stanu sesji: InProc, StateServer, SQLServer, Custom i off. Zaleca się używać trybu niestandardowego do przechowywania danych na zewnętrznego magazynu stanu sesji, takie jak [dostawcy stanu sesji usługi Azure redis Cache](http://go.microsoft.com/fwlink/?LinkId=401521).
 
 ### <a name="solution"></a>Rozwiązanie
 Jedno rozwiązanie zalecane jest przechowywanie stanu sesji usługi zarządzana pamięć podręczna. Dowiedz się, jak używać [dostawcy stanu sesji usługi Azure redis Cache](http://go.microsoft.com/fwlink/?LinkId=401521) do przechowywania Twojego stanu sesji. Można również przechowywanie stanu sesji w innych miejscach, aby upewnić się, że aplikacja jest skalowalna w chmurze. Aby dowiedzieć się więcej na temat rozwiązań alternatywnych, przeczytaj [trybów stanu sesji](https://msdn.microsoft.com/library/ms178586).
@@ -128,7 +128,7 @@ Zaletą korzystania z **OnMessage** w porównaniu do **Receive** jest, że użyt
 Jeśli wywołasz **Receive** bez użycia jego wartość domyślną, upewnij się, *ServerWaitTime* wartość jest więcej niż jedną minutę. Ustawienie *ServerWaitTime* na więcej niż jedną minutę zapobiega serwera limit czasu, zanim pełni odebraniu komunikatu.
 
 ### <a name="solution"></a>Rozwiązanie
-Zobacz poniższe przykłady kodu dla zalecanych użycia. Aby uzyskać więcej informacji, zobacz [QueueClient.OnMessage — metoda (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx)i [QueueClient.Receive — metoda (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
+Zobacz poniższe przykłady kodu dla zalecanych użycia. Aby uzyskać więcej informacji, zobacz [QueueClient. OnMessage Metoda (Microsoft. ServiceBus. Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) i [QueueClient. Receive — Metoda (Microsoft. ServiceBus. Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
 
 Aby zwiększyć wydajność platformy Azure infrastruktura obsługi komunikatów, zobacz wzorzec projektowy [asynchronicznej obsługi komunikatów Elementarz](https://msdn.microsoft.com/library/dn589781.aspx).
 
@@ -395,7 +395,7 @@ Store parametry połączenia w środowiskach platformy Azure i plików konfigura
 * W przypadku aplikacji sieci web obsługiwane przez usługi IIS umożliwiają przechowywanie parametrów połączenia pliku web.config.
 * W przypadku aplikacji ASP.NET vNext configuration.json do przechowywania używa parametrów połączenia.
 
-Aby uzyskać informacje na temat korzystania z plików konfiguracji, takich jak plik web.config lub app.config, zobacz [wskazówki dotyczące konfigurowania sieci Web platformy ASP.NET](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Aby uzyskać informacje, jak usługa Azure działania zmiennych środowiskowych, zobacz [witryny sieci Web systemu Azure: Sposób działania ciągów Application Strings and połączenia](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Aby uzyskać informacje na przechowywanie parametrów połączenia w kontroli źródła, zobacz [należy unikać umieszczania poufne informacje, takie jak parametry połączenia w plikach, które są przechowywane w repozytorium kodu źródłowego](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
+Aby uzyskać informacje na temat korzystania z plików konfiguracji, takich jak plik web.config lub app.config, zobacz [wskazówki dotyczące konfigurowania sieci Web platformy ASP.NET](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Aby dowiedzieć się, jak działają zmienne środowiskowe [platformy Azure, zobacz witryny sieci Web systemu Azure: Sposób działania](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)ciągów aplikacji i parametrów połączenia. Aby uzyskać informacje na przechowywanie parametrów połączenia w kontroli źródła, zobacz [należy unikać umieszczania poufne informacje, takie jak parametry połączenia w plikach, które są przechowywane w repozytorium kodu źródłowego](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Użyj pliku konfiguracji diagnostyki
 ### <a name="id"></a>ID
@@ -407,12 +407,12 @@ Zamiast konfigurować ustawienia diagnostyki w kodzie, takie jak za pomocą Micr
 Udostępnij swoje pomysły i opinie na [opinii analizy kodu Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Przyczyna
-Przed Azure SDK 2.5, (która korzysta z usługi Diagnostyka Azure 1.3), usługi Azure Diagnostics (WAD) może zostać skonfigurowany przy użyciu kilku różnych metod: dodanie go do obiektu blob konfiguracji w magazynie, przy użyciu kodu imperatywnego, konfiguracja deklaratywne lub wartość domyślną Konfiguracja. Jednak preferowany sposób, aby skonfigurować diagnostykę jest użycie plik konfiguracyjny XML (diagnostics.wadcfg lub diagnostics.wadcfgx dla zestawu SDK 2.5 i nowszych) w projekcie aplikacji. W tym podejściu pliku diagnostics.wadcfg całkowicie definiuje konfigurację można zaktualizować i ponownie wdrażana w momencie. Mieszanie korzystanie z pliku konfiguracji diagnostics.wadcfg przy użyciu metody programowe ustawienia konfiguracji za pomocą [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)lub [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)można klas wprowadzać w błąd. Zobacz [inicjowania lub zmiana konfiguracji diagnostyki Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) Aby uzyskać więcej informacji.
+Przed Azure SDK 2.5, (która korzysta z usługi Diagnostyka Azure 1.3), usługi Azure Diagnostics (WAD) może zostać skonfigurowany przy użyciu kilku różnych metod: dodanie go do obiektu blob konfiguracji w magazynie, przy użyciu kodu imperatywnego, konfiguracja deklaratywne lub wartość domyślną Konfiguracja. Jednak preferowanym sposobem skonfigurowania diagnostyki jest użycie pliku konfiguracji XML (Diagnostics. wadcfg lub Diagnostics. wadcfgx dla zestawu SDK 2,5 i nowszego) w projekcie aplikacji. W tym podejściu pliku diagnostics.wadcfg całkowicie definiuje konfigurację można zaktualizować i ponownie wdrażana w momencie. Mieszanie korzystanie z pliku konfiguracji diagnostics.wadcfg przy użyciu metody programowe ustawienia konfiguracji za pomocą [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)lub [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)można klas wprowadzać w błąd. Zobacz [inicjowania lub zmiana konfiguracji diagnostyki Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) Aby uzyskać więcej informacji.
 
 Począwszy od 1.3 WAD (dołączone do zestawu SDK Azure 2.5), już nie jest możliwe użycie kodu, aby skonfigurować diagnostykę. Co w efekcie można podać tylko konfiguracji podczas stosowania lub aktualizowania rozszerzenie diagnostyki.
 
 ### <a name="solution"></a>Rozwiązanie
-Korzystanie z projektanta konfiguracji diagnostyki, aby przenieść ustawienia diagnostyczne do pliku konfiguracji diagnostyki (diagnostics.wadcfg lub diagnostics.wadcfgx dla zestawu SDK 2.5 i nowszych). Zalecane jest również, że instalujesz program [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) i korzystać z najnowszych funkcji diagnostyki.
+Użyj projektanta konfiguracji diagnostyki do przenoszenia ustawień diagnostycznych do pliku konfiguracji diagnostyki (Diagnostics. wadcfg lub Diagnostics. wadcfgx dla zestawu SDK 2,5 i nowszego). Zalecane jest również, że instalujesz program [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) i korzystać z najnowszych funkcji diagnostyki.
 
 1. W menu skrótów dla roli, który chcesz skonfigurować wybierz polecenie Właściwości, a następnie wybierz kartę Konfiguracja.
 2. W **diagnostyki** sekcji, upewnij się, że **Włącz diagnostykę** pole wyboru jest zaznaczone.

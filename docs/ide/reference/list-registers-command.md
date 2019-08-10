@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1a2361534f167a0b88b3f1b5b38c005915243d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95edb5098d73e8fccb47f9f059473394afe5f542
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422968"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919109"
 ---
 # <a name="list-registers-command"></a>Lista rejestrów — Polecenie
-Wyświetla wartość wybranego rejestruje i pozwala zmodyfikować listę rejestrów, aby pokazać.
+Wyświetla wartość wybranych rejestrów i pozwala modyfikować listę rejestrów do wyświetlenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,33 +33,33 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Przełączniki
- / Wyświetlania [{`register`&#124;`registerGroup`} …]
+/Display [{`register`&#124;`registerGroup`}...]
 
- Wyświetla wartości określonego `register` lub `registerGroup`. Jeśli nie `register` lub `registerGroup` jest określony, wyświetlany jest domyślną listę rejestrów. Jeśli przełącznik nie zostanie określony, zachowanie jest takie same. Na przykład:
+Wyświetla wartości określonego `register` lub `registerGroup`. Jeśli nie `register` `registerGroup` jest określona, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Przykład:
 
- `Debug.ListRegisters /Display eax`
+`Debug.ListRegisters /Display eax`
 
- odpowiada wyrażeniu
+odpowiada wyrażeniu
 
- `Debug.ListRegisters eax`
+`Debug.ListRegisters eax`
 
- / List
+/List
 
- Wyświetla wszystkie zarejestrować grupy na liście.
+Wyświetla wszystkie grupy rejestrów na liście.
 
- / Obejrzyj [{`register`&#124;`registerGroup`} …]
+/Watch [{`register`&#124;`registerGroup`}...]
 
- Dodaje jeden lub więcej `register` lub `registerGroup` wartości do listy.
+Dodaje co najmniej jedną `register` `registerGroup` wartość do listy.
 
- / Cofnijwyrażeniekontrolne [{`register`&#124;`registerGroup`} …]
+/Unwatch [{`register`&#124;`registerGroup`}...]
 
- Usuwa jeden lub więcej `register` lub `registerGroup` wartości z listy.
+Usuwa co najmniej jedną `register` `registerGroup` z wartości z listy.
 
 ## <a name="remarks"></a>Uwagi
- Alias `r` mogą być używane zamiast `Debug.ListRegisters`.
+Alias `r` może być używany `Debug.ListRegisters`zamiast.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie użyto `Debug.ListRegisters` alias `r` do wyświetlania wartości grupy rejestru `Flags`.
+Ten przykład używa `Debug.ListRegisters` aliasu `r` , aby wyświetlić wartości grupy `Flags`rejestru.
 
 ```cmd
 r /Display Flags

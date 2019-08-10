@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4520649050e6e4004b2c8864d5c081897852826c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a716da8eb0fb1b741c302ed32408e63a4933567b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808369"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921138"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Usuń wywołania funkcji GC.KeepAlive
 
@@ -28,16 +28,16 @@ ms.locfileid: "62808369"
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
 |Kategoria|Microsoft.Reliability|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Użyj klasy `SafeHandle` , ale nadal zawiera wywołania `GC.KeepAlive`.
+Klasy używają `SafeHandle` , ale nadal zawierają wywołania `GC.KeepAlive`do.
 
 ## <a name="rule-description"></a>Opis reguły
- Jeśli są konwertowane na `SafeHandle` użycia, usunąć wszystkie wywołania `GC.KeepAlive` (obiekt). W tym przypadku klasy nie powinny wywołać `GC.KeepAlive`, zakładając, że nie ma finalizatora, ale korzystają z `SafeHandle` do ukończenia dojście systemu operacyjnego dla nich.  Chociaż koszt pozostawienie w wywołaniu `GC.KeepAlive` może być niewielkie, mierzony wydajność, wrażenie, wywołanie `GC.KeepAlive` jest konieczne lub wystarczające, aby rozwiązać problem, który może już nie istnieć sprawia, że kod jest trudniejsze okres istnienia Obsługa.
+Jeśli konwertujesz na `SafeHandle` użycie, Usuń wszystkie wywołania do `GC.KeepAlive` (Object). W takim przypadku klasy nie powinny mieć wywołania `GC.KeepAlive`, przy założeniu, że nie mają finalizatora, ale `SafeHandle` polegają na zakończeniu dojścia systemu operacyjnego.  Chociaż koszt opuszczenia w wywołaniu `GC.KeepAlive` może być nieistotny jako mierzony przez wydajność, postrzeganie, że `GC.KeepAlive` wywołanie jest niezbędne lub wystarczające, aby rozwiązać problem z okresem istnienia, który może już nie istnieć, sprawia, że kod jest trudniejszy do prowadzą.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Usuń wywołania `GC.KeepAlive`.
+Usuń wywołania do `GC.KeepAlive`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Można pominąć to ostrzeżenie, tylko wtedy, gdy nie jest technicznie poprawny do przekonwertowania na `SafeHandle` użycia w klasie.
+To ostrzeżenie można pominąć tylko wtedy, gdy nie jest technicznie poprawna `SafeHandle` do konwersji do użycia w klasie.

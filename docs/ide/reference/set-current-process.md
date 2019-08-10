@@ -11,15 +11,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8d4c23934ddb6a838344eb6252f6002a5ecf10d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934554"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926091"
 ---
 # <a name="set-current-process"></a>Ustaw bieżący proces
-Ustawia określony proces jako aktywny procesu w debugerze.
+Ustawia określony proces jako aktywny proces w debugerze.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,12 +28,12 @@ Debug.SetCurrentProcess index
 ```
 
 ## <a name="arguments"></a>Argumenty
- `index`
+`index`
 
- Wymagana. Indeks procesu.
+Wymagane. Indeks procesu.
 
 ## <a name="remarks"></a>Uwagi
- Podczas debugowania, ale tylko jeden proces jest aktywny w programie do usuwania błędów w dowolnym momencie można dołączyć do wielu procesów. Możesz użyć `SetCurrentProcess` polecenie, aby ustawić aktywny proces.
+Podczas debugowania można dołączyć do wielu procesów, ale tylko jeden proces jest aktywny w programie w danym momencie. Możesz użyć `SetCurrentProcess` polecenia, aby ustawić aktywny proces.
 
 ## <a name="example"></a>Przykład
 

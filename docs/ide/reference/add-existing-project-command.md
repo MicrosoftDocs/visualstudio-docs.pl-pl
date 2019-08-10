@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5a511e19394b397096a5a5ba2e339166454138e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792575"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926282"
 ---
 # <a name="add-existing-project-command"></a>Dodaj istniejący projekt — Polecenie
 Dodaje istniejący projekt do bieżącego rozwiązania.
@@ -30,17 +30,18 @@ File.AddExistingProject filename
 ```
 
 ## <a name="arguments"></a>Argumenty
- `filename` Opcjonalnie. Pełna ścieżka i projektu nazwa, z rozszerzeniem projekt, aby dodać do rozwiązania.
+`filename`\
+Opcjonalny. Pełna ścieżka i nazwa projektu, z rozszerzeniem, projektu do dodania do rozwiązania.
 
- Jeśli `filename` argument zawiera spacje, muszą być ujęte w znaki cudzysłowu.
+`filename` Jeśli argument zawiera spacje, musi być ujęty w cudzysłów.
 
- Jeśli nazwa pliku nie zostanie określony, polecenie spowoduje otwarcie okna dialogowego plików, dzięki czemu użytkownik może wybrać projekt.
+Jeśli nazwa pliku nie zostanie określona, polecenie spowoduje otwarcie okna dialogowego plików, dzięki czemu użytkownik może wybrać projekt.
 
 ## <a name="remarks"></a>Uwagi
- Automatyczne uzupełnianie próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.
+Funkcja automatycznego uzupełniania próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.
 
 ## <a name="example"></a>Przykład
- Ten przykład dodaje [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu TestProject1, do bieżącego rozwiązania.
+Ten przykład dodaje [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projekt, TestProject1 do bieżącego rozwiązania.
 
 ```cmd
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"

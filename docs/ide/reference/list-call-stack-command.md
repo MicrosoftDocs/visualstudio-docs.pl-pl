@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a122b9fbc97816b114ba2ff6274756f9e2093eef
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970060"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919165"
 ---
 # <a name="list-call-stack-command"></a>Lista stosu wywołań — Polecenie
 Wyświetla bieżący stos wywołań.
@@ -34,71 +34,73 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `index` Opcjonalnie. Ustawia bieżącej ramki stosu i nie wyświetla danych wyjściowych.
+
+`index`\
+Opcjonalny. Ustawia bieżącą ramkę stosu i nie wyświetla danych wyjściowych.
 
 ## <a name="switches"></a>Przełączniki
- Każdy przełącznik może być wywoływany przy użyciu jego wypełniony formularz lub krótka.
+Każdy przełącznik może być wywoływany przy użyciu kompletnego formularza lub krótkiej formy.
 
- / Liczba:`number` [i] / c:`number`
+/Count:`number` [lub]/c:`number`
 
- Opcjonalna. Maksymalna liczba stosy wywołań do wyświetlenia. Wartością domyślną jest nieograniczona.
+Opcjonalny. Maksymalna liczba stosów wywołań do wyświetlenia. Wartość domyślna to Unlimited.
 
- /ShowTypes:`yes`&#124;`no` [or] /T:`yes`&#124;`no`
+/ShowTypes:`yes` &#124; `no``yes`&#124;`no`
 
- Opcjonalna. Określa, czy mają być wyświetlane typy parametrów. Wartość domyślna to `yes`.
+Opcjonalny. Określa, czy mają być wyświetlane typy parametrów. Wartość domyślna to `yes`.
 
- /ShowNames:`yes`&#124;`no` [or] /N:`yes`&#124;`no`
+/ShowNames:`yes` &#124; `no``yes`&#124;`no`
 
- Opcjonalna. Określa, czy mają być wyświetlane nazwy parametrów. Wartość domyślna to `yes`.
+Opcjonalny. Określa, czy mają być wyświetlane nazwy parametrów. Wartość domyślna to `yes`.
 
- /ShowValues:`yes`&#124;`no` [or] /V:`yes`&#124;`no`
+/ShowValues:`yes` &#124; `no``yes`&#124;`no`
 
- Opcjonalna. Określa, czy mają być wyświetlane wartości parametrów. Wartość domyślna to `yes`.
+Opcjonalny. Określa, czy mają być wyświetlane wartości parametrów. Wartość domyślna to `yes`.
 
- / ShowModule:`yes` &#124; `no` [i] / m:`yes`&#124;`no`
+/ShowModule:`yes` &#124; `no``yes`&#124;`no`
 
- Opcjonalna. Określa, czy ma być wyświetlana nazwa modułu. Wartość domyślna to `yes`.
+Opcjonalny. Określa, czy ma być wyświetlana nazwa modułu. Wartość domyślna to `yes`.
 
- /ShowLineOffset:`yes`&#124;`no` [or] /#:`yes`&#124;`no`
+/ShowLineOffset:`yes` &#124; [lub]/#:`no``yes`&#124;`no`
 
- Opcjonalna. Określa, czy mają być wyświetlane przesunięcie wiersza. Wartość domyślna to `no`.
+Opcjonalna. Określa, czy ma być wyświetlane przesunięcie wiersza. Wartość domyślna to `no`.
 
- /ShowByteOffset:`yes`&#124;`no` [or] /B:`yes`&#124;`no`
+/ShowByteOffset:`yes`&#124;`no` [or] /B:`yes`&#124;`no`
 
- Opcjonalna. Określa, czy należy wyświetlać przesunięcie bajtu. Wartość domyślna to `no`.
+Opcjonalny. Określa, czy ma być wyświetlane przesunięcie bajtów. Wartość domyślna to `no`.
 
- / ShowLanguage:`yes` &#124; `no` [i] / l: wyświetlenie`yes`&#124;`no`
+/ShowLanguage:`yes` &#124; `no``yes`&#124;`no`
 
- Opcjonalna. Określa, czy mają być wyświetlane w języku. Wartość domyślna to `no`.
+Opcjonalna. Określa, czy ma być wyświetlany język. Wartość domyślna to `no`.
 
- /IncludeCallsAcrossThreads:`yes`&#124;`no` [or] /I:`yes`&#124;`no`
+/IncludeCallsAcrossThreads:`yes`&#124;`no` [or] /I:`yes`&#124;`no`
 
- Opcjonalna. Określa, czy dołączać wywołania do lub z innych wątków. Wartość domyślna to `no`.
+Opcjonalny. Określa, czy dołączać wywołania do lub z innych wątków. Wartość domyślna to `no`.
 
- /ShowExternalCode:`yes`&#124;`no`
+/ShowExternalCode:`yes`&#124;`no`
 
- Opcjonalna. Określa, czy mają być wyświetlane tylko mój kod dla stosu wywołań. Gdy tylko mój kod jest wyłączona, wyświetlany jest cały kod niezwiązany z użytkownikiem. Po włączeniu tylko mój kod niebędący kodem użytkownika jest wyświetlany jako `[external]` w danych wyjściowych stosu wywołań.
+Opcjonalny. Określa, czy Tylko mój kod ma być wyświetlana dla stosu wywołań. Gdy Tylko mój kod jest wyłączona, zostanie wyświetlony cały kod niebędący użytkownikiem. Gdy tylko mój kod jest włączona, kod niebędący użytkownikiem jest wyświetlany `[external]` jako w danych wyjściowych stosu wywołań.
 
- Wątek:`n`
+Nici`n`
 
- Opcjonalna. Przedstawia stos wywołań dla wątku `n`. Jeśli żaden wątek nie zostanie określony, wyświetla stos wywołań dla bieżącego wątku.
+Opcjonalny. Wyświetla stosu wywołań dla wątku `n`. Jeśli żaden wątek nie zostanie określony, program wyświetla stosu wywołań dla bieżącego wątku.
 
 ## <a name="remarks"></a>Uwagi
- Zmiany wprowadzone do argumentów lub przełączników dotyczą przyszłych wywołań tego polecenia. Jeśli wydawane Debug.ListCallStackby sam Wyświetla cały stos wywołań. Jeśli na przykład określić indeks
+Zmiany wprowadzone do argumentów lub przełączników stosują się do przyszłych wywołań tego polecenia. Jeśli zostanie wyświetlona wartość Debug. ListCallStackby, zostanie wyświetlony cały stos wywołań. Jeśli określisz indeks, na przykład
 
 ```cmd
 Debug.ListCallStack 2
 ```
 
- Bieżąca ramka stosu przybiera wartość do tej ramki (w tym przypadku drugiej ramki).
+następnie bieżąca Ramka stosu jest ustawiona na tę ramkę (w tym przypadku druga ramka).
 
- Możesz również zapisywać dane tego polecenia, używając jego wstępnie zdefiniowanych aliasów kb. Na przykład można wprowadzić
+Możesz również napisać to polecenie przy użyciu wstępnie zdefiniowanego aliasu KB. Na przykład możesz wprowadzić
 
 ```cmd
 kb 2
 ```
 
- można ustawić bieżącej ramki stosu do drugiego ramki.
+Aby ustawić bieżącą ramkę stosu na drugą klatkę.
 
 ## <a name="example"></a>Przykład
 

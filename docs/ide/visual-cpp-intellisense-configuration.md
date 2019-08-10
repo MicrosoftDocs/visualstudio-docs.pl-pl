@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461588"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925856"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
@@ -38,7 +38,7 @@ Jeśli uruchamiasz kompilacje poza środowiskiem IDE programu Visual Studio, a k
 
 ![Katalogi dołączania VC + +](media/vcpp-intellisense-include-paths.png)
 
- Aby wyświetlić bieżące wartości dla makr kompilacji, takich jak **VC_IncludePath**, zaznacz wiersz Uwzględnij katalogi i kliknij listę rozwijaną po prawej stronie. Następnie wybierz  **\<pozycję Edytuj >** i kliknij przycisk **makra** .
+Aby wyświetlić bieżące wartości dla makr kompilacji, takich jak **VC_IncludePath**, zaznacz wiersz Uwzględnij katalogi i kliknij listę rozwijaną po prawej stronie. Następnie wybierz  **\<pozycję Edytuj >** i kliknij przycisk **makra** .
 
 ### <a name="makefile-projects"></a>Projekty pliku reguł dla programu make
 
@@ -79,18 +79,18 @@ Aby sprawdzić, czy kompilator IntelliSense korzysta z poprawnych opcji kompilat
 Okno Dane wyjściowe będzie teraz wyświetlał wiersze poleceń, które są przesyłane do kompilatora IntelliSense. Oto przykładowe dane wyjściowe:
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 Te informacje mogą ułatwić zrozumienie, dlaczego technologia IntelliSense dostarcza niedokładne informacje. Na przykład, jeśli katalog dołączania projektu zawiera **$ (\Include)** , a dziennik diagnostyczny zawiera **/I\Include** jako ścieżkę dołączania, oznacza to, że **$ (NazwaMojejZmiennej)** nie został oceniony i został usunięty z ostatniej ścieżki dołączania .
@@ -110,10 +110,10 @@ Kompilacja IntelliSense nie tworzy plików binarnych, ale nadal może się nie p
 Komunikat o błędzie może polecić Włączenie śledzenia czasu projektowania:
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 W przypadku ustawienia zmiennej środowiskowej środowiskową TRACEDESIGNTIME na true i ponownego uruchomienia programu Visual Studio w katalogu% TEMP% zostanie wyświetlony plik dziennika, który może pomóc zdiagnozować błąd kompilacji.

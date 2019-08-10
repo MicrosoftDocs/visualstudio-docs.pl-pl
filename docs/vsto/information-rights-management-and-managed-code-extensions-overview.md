@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego
+title: Zarządzanie prawami do informacji & rozszerzenia kodu zarządzanego
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,31 +17,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca8f9d77681e3f11312e5e908a58ac2e292f581b
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177750"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872061"
 ---
-# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Zarządzanie prawami do informacji i przegląd rozszerzeń kodu zarządzanego
-  Program Microsoft Office Word i Microsoft Office Excel umożliwiają zarządzanie prawami informacji (IRM), funkcja, która może pomóc uniknąć nieupoważnione osoby z wyświetlania lub zmieniania informacji poufnych. Aby uzyskać szczegółowe informacje o tym, jak działa Zarządzanie prawami do informacji zobacz Pomoc w określonej aplikacji pakietu Office.
+# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego — Omówienie
+  Microsoft Office Word i Microsoft Office Excel udostępniają informacje Rights Management (IRM), funkcję, która może pomóc w zapobieganiu wyświetlaniu lub zmienianiu informacji poufnych przez nieautoryzowane osoby. Aby uzyskać szczegółowe informacje na temat sposobu działania Rights Management informacji, zobacz Pomoc w określonej aplikacji pakietu Office.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="run-code-behind-documents-with-restricted-permissions"></a>Uruchamianie kodu w tle dokumentów z ograniczonymi uprawnieniami
- Jeśli Twoje rozwiązanie zawiera dokument lub skoroszyt, który używa usługi IRM, domyślnie, Word i Excel nie zezwalają na jakiegokolwiek kodu do uruchomienia. Jeśli autor dokumentu lub mieć uprawnienie Pełna kontrola, można zmienić domyślne tak, aby Twoje rozwiązanie działa. Aby uzyskać więcej informacji, zobacz [jak: Zezwalanie kodu do uruchamiania w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
+## <a name="run-code-behind-documents-with-restricted-permissions"></a>Uruchamianie kodu w dokumentach z ograniczonymi uprawnieniami
+ Jeśli rozwiązanie zawiera dokument lub skoroszyt korzystający z usługi IRM, domyślnie programy Word i Excel nie zezwalają na uruchamianie żadnego kodu. Jeśli jesteś autorem dokumentu lub masz pełną kontrolę dostępu, możesz zmienić wartość domyślną, aby Twoje rozwiązanie zadziałało. Aby uzyskać więcej informacji, zobacz [jak: Zezwalaj na uruchamianie kodu w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
 
- IRM uniemożliwia korzystanie z <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> można pobrać lub manipulowania danymi, które są buforowane w dokumencie.
+ Usługa IRM uniemożliwia korzystanie <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> z programu do pobierania danych przechowywanych w pamięci podręcznej lub manipulowania nimi.
 
-## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Użytkownicy końcowi, aby ograniczyć uprawnienia do dokumentów, które używają rozszerzenia kodu zarządzanego
- Aby ograniczyć uprawnienia, każdy, kto ma dostęp Pełna kontrola do dokumentu lub skoroszytu w rozwiązaniu korzystać z funkcji IRM. Na przykład, jeśli użytkownik końcowy w dziale księgowości korzysta z rozwiązania, które automatycznie wypełni arkusza z danymi z bazy danych, ten użytkownik może chcieć zezwolić na dostęp zmiany tylko dla osób w dziale lub jej i dostęp do odczytu do innych osób. Gdy użytkownik dodaje ograniczonych uprawnień, domyślnie nie można uruchomić kod związany z arkusza i arkusza nie zostanie wypełniony danymi.
+## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Użytkownicy końcowi ograniczający uprawnienia do dokumentów korzystających z rozszerzeń kodu zarządzanego
+ Każda osoba, która ma pełny dostęp do dokumentu lub skoroszytu w rozwiązaniu, może używać usługi IRM do ograniczania uprawnień. Na przykład jeśli użytkownik końcowy w dziale księgowości korzysta z rozwiązania, które automatycznie wypełnia arkusz danymi z bazy danych, może być konieczne zezwolenie na zmianę dostępu tylko do osób w jego dziale i dostęp do odczytu innym osobom. Gdy użytkownik dodaje ograniczone uprawnienia, domyślnie kod związany z arkuszem nie może zostać uruchomiony, a arkusz nie zostanie wypełniony danymi.
 
- Aby rozwiązać ten problem, dostęp Pełna kontrola do dokumentu lub skoroszytu zmienić domyślne ustawienia uprawnień, aby zezwolić na dostęp programistyczny do modelu obiektów. Aby uzyskać więcej informacji, zobacz [jak: Zezwalanie kodu do uruchamiania w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
+ Aby rozwiązać ten problem, ktoś z dostępem Pełna kontrola do dokumentu lub skoroszytu musi zmienić domyślne ustawienia uprawnień, aby zezwolić na dostęp programistyczny do modelu obiektów. Aby uzyskać więcej informacji, zobacz [jak: Zezwalaj na uruchamianie kodu w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md)
-- [Ochrona za pomocą hasła w dokumentach pakietu Office](../vsto/password-protection-on-office-documents.md)
+- [Ochrona hasłem w dokumentach pakietu Office](../vsto/password-protection-on-office-documents.md)
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
-- [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

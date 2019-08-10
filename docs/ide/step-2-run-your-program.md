@@ -1,5 +1,5 @@
 ---
-title: Krok 2. Uruchom program
+title: Krok 2. Uruchamianie programu
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
@@ -8,54 +8,54 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 74f6d64d515ac7fab454b123686e671d9bcd1d2d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430793"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918932"
 ---
-# <a name="step-2-run-your-program"></a>Krok 2. Uruchom program
-Podczas tworzenia nowego rozwiązania, w rzeczywistości skompilowano program, który uruchamia. Większość nie robi jeszcze — po prostu wyświetla puste okno, które pokazuje **Form1** na pasku tytułu. Ale działał, zgodnie z którą chcesz dowiedzieć się.
+# <a name="step-2-run-your-program"></a>Krok 2. Uruchamianie programu
+Po utworzeniu nowego rozwiązania jest tworzony program, który jest uruchamiany. Jeszcze nie działa — po prostu wyświetla puste okno, które wyświetla **formularz Form1** na pasku tytułu. Jest to jednak uruchamiane, ponieważ wkrótce się znajdziesz.
 
- ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# -1 wideo](http://go.microsoft.com/fwlink/?LinkId=205199). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+![link do wideo](../data-tools/media/playvideo.gif)dla wersji wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: Utwórz przeglądarkę obrazów w C# pliku-wideo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ## <a name="to-run-your-program"></a>Aby uruchomić program
 
-1. Użyj jednej z następujących metod, aby uruchomić program.
+1. Użyj jednej z poniższych metod, aby uruchomić program.
 
-    - Wybierz **F5** klucza.
+    - Wybierz klawisz **F5** .
 
-    - Na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie**.
+    - Na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
 
-    - Na pasku narzędzi wybierz **Rozpocznij debugowanie** przycisku, który wygląda następująco.
+    - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie** , który pojawia się w następujący sposób.
 
-         ![Rozpocznij debugowanie przycisku paska narzędzi](../ide/media/express_icondebug.png)
-**Rozpocznij debugowanie** przycisku paska narzędzi
+         ![Przycisk paska narzędzi](../ide/media/express_icondebug.png)
+do debugowania Rozpocznij**debugowanie** — przycisk paska narzędzi
 
-2. Visual Studio uruchamia Twój program i okna o nazwie **Form1** pojawia się. Na poniższym diagramie przedstawiono program, że właśnie zbudowany. Program jest uruchomiony, a wkrótce dodasz do niej.
+2. Visual Studio uruchamia Twój program i pojawia się okno o nazwie **Form1** . Na poniższym diagramie przedstawiono program, który właśnie został skompilowany. Program jest uruchomiony i wkrótce zostanie dodany do niego.
 
-     ![Uruchomiony program aplikacji Windows formularza](../ide/media/express_firstrun.png)
-**Windows Forms** uruchomiony program aplikacji
+     ![Program aplikacji formularzy systemu Windows](../ide/media/express_firstrun.png)
+uruchamiany**Windows Forms** program aplikacji uruchomiony
 
-3. Wróć do programu Visual Studio zintegrowane środowisko programistyczne (IDE) i spójrz na nowy pasek narzędzi. Po uruchomieniu programu, na pasku narzędzi są wyświetlane dodatkowe przyciski. Te przyciski umożliwiają wykonywanie takich czynności jak zatrzymać i uruchomić program i pomagają śledzić wszystkie ewentualne błędy (usterki) może mieć. W tym przykładzie po prostu używamy go do uruchamiania i zatrzymywania programu.
+3. Wróć do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio i zapoznaj się z nowym paskiem narzędzi. Po uruchomieniu programu na pasku narzędzi są wyświetlane dodatkowe przyciski. Te przyciski umożliwiają wykonywanie takich czynności, jak zatrzymywanie i uruchamianie programu oraz śledzenie wszelkich błędów (usterek), które może on mieć. Na potrzeby tego przykładu używamy go do uruchamiania i zatrzymywania programu.
 
-     ![Pasek narzędzi debugowania](../ide/media/express_debugtoolbar.png)
-**debugowanie** paska narzędzi
+     ![Pasek narzędzi](../ide/media/express_debugtoolbar.png)
+debugowania paska narzędzi debugowania
 
-4. Użyj jednej z następujących metod, aby zatrzymać program.
+4. Użyj jednej z poniższych metod, aby zatrzymać program.
 
-    - Na pasku narzędzi wybierz **Zatrzymaj debugowanie** przycisku.
+    - Na pasku narzędzi wybierz przycisk **Zatrzymaj debugowanie** .
 
-    - Na pasku menu wybierz **debugowania** > **Zatrzymaj debugowanie**.
+    - Na pasku menu wybierz **Debuguj** > **Zatrzymaj debugowanie**.
 
-    - Wybierz **X** przycisk w prawym górnym rogu **Form1** okna.
+    - Wybierz przycisk **X** w górnym rogu okna **Form1** .
 
     > [!NOTE]
-    > Kiedy uruchamiasz program z wewnątrz IDE, jest wywoływana, debugowania, ponieważ jest to zazwyczaj Aby znaleźć i naprawić usterki (błędy) w programie. Chociaż program ten jest mały i naprawdę nic jeszcze nie, nadal jest to prawdziwy program. Postępuj zgodnie z tą samą procedurą, aby uruchomić i debugować inne programy. Aby dowiedzieć się więcej na temat debugowania, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
+    > Gdy uruchamiasz program z wewnątrz IDE, nazywa się to debugowanie, ponieważ zazwyczaj jest to konieczne do lokalizowania i naprawiania usterek (błędów) w programie. Mimo że ten program jest mały i nie wykonuje jeszcze żadnych czynności, nadal jest to rzeczywisty program. Wykonaj tę samą procedurę, aby uruchamiać i debugować inne programy. Aby dowiedzieć się więcej o debugowaniu, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 3: Ustaw właściwości](../ide/step-3-set-your-form-properties.md)formularza.
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Utwórz projekt Windows Forms aplikacji](../ide/step-1-create-a-windows-forms-application-project.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Utwórz projekt](../ide/step-1-create-a-windows-forms-application-project.md)aplikacji Windows Forms.

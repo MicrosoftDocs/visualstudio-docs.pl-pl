@@ -1,5 +1,5 @@
 ---
-title: Nie można nawiązać połączenia z programem Microsoft Visual Studio Monitor debugera zdalnego | Dokumentacja firmy Microsoft
+title: Nie można nawiązać połączenia z Monitor zdalnego debugowania Microsoft Visual Studio | Microsoft Docs
 ms.date: 08/24/2017
 ms.topic: reference
 f1_keywords:
@@ -15,140 +15,140 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ce4766f2afb148bbbc495d151b052de3334a47
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c42cdfc5c3f3c0267fdcbdfca8ddc4bb30663384
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407736"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924525"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
-Ten komunikat może wystąpić, ponieważ monitor debugera zdalnego jest nie prawidłowo skonfigurowane na komputerze zdalnym lub maszynie zdalnej jest niedostępny z powodu problemów z siecią lub obecności zapory.
+Ten komunikat może wystąpić, ponieważ Monitor zdalnego debugowania nie jest prawidłowo skonfigurowany na maszynie zdalnej lub maszyna zdalna jest niedostępna z powodu problemów z siecią lub obecności zapory.
 
 > [!IMPORTANT]
-> Jeśli uważasz, że ten komunikat został przesłany z powodu błędu w produkcie, [Zgłoś ten problem](../ide/how-to-report-a-problem-with-visual-studio.md) do programu Visual Studio. Jeśli potrzebujesz więcej pomocy, zobacz [Porozmawiaj z nami](../ide/talk-to-us.md) sposobów na kontakt z firmą Microsoft.
+> Jeśli uważasz, że ta wiadomość została odebrana z powodu błędu produktu, [Zgłoś ten problem](../ide/how-to-report-a-problem-with-visual-studio.md) w programie Visual Studio. Jeśli potrzebujesz więcej pomocy, zobacz [Porozmawiaj z nami](../ide/talk-to-us.md) sposobów na kontakt z firmą Microsoft.
 
-## <a name="specificerrors"></a>Co to jest komunikat szczegółowy komunikat o błędzie?
+## <a name="specificerrors"></a>Co to jest szczegółowy komunikat o błędzie?
 
-`Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` Jest ogólny komunikat. Zazwyczaj bardziej szczegółowy komunikat o błędzie, w której znajduje się w ciąg błędu i zidentyfikować przyczynę problemu lub Wyszukaj, aby dokładniej poprawki, może pomóc. Poniżej przedstawiono niektóre typowe komunikaty o błędach, które są dołączane do komunikatu o błędzie główne:
+`Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` Komunikat jest ogólny. Zwykle w ciągu błędu jest zawarty bardziej szczegółowy komunikat, który może pomóc w zidentyfikowaniu przyczyny problemu lub wyszukaniu bardziej dokładnej poprawki. Poniżej przedstawiono kilka typowych komunikatów o błędach, które są dołączane do głównego komunikatu o błędzie:
 
-- [Debuger nie może połączyć się z komputerem zdalnym. Debuger nie może rozpoznać określonej nazwy komputera](#cannot_connect)
-- [Żądanie połączenia zostało odrzucone przez debuger zdalny](#rejected)
-- [Nieprawidłowy dostęp do lokalizacji w pamięci](#invalid_access)
-- [Serwer nie jest z określoną nazwą, uruchomione na komputerze docelowym](#no_server)
-- [Nazwa żądanego była prawidłowa, ale można odnaleźć żadnych danych żądanego typu](#valid_name)
-- [Zdalny debuger programu Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem](#cant_connect_back)
+- [Debuger nie może nawiązać połączenia z komputerem zdalnym. Debuger nie mógł rozpoznać określonej nazwy komputera](#cannot_connect)
+- [Żądanie połączenia zostało odrzucone przez zdalny debuger](#rejected)
+- [Nieprawidłowy dostęp do lokalizacji pamięci](#invalid_access)
+- [Nie ma serwera o określonej nazwie uruchomionego na komputerze zdalnym](#no_server)
+- [Żądana nazwa jest prawidłowa, ale nie znaleziono danych żądanego typu](#valid_name)
+- [zdalny debuger programu Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem](#cant_connect_back)
 - [Odmowa dostępu](#access_denied)
-- [Wystąpił błąd określonego pakietu zabezpieczeń](#security_package)
+- [Wystąpił błąd specyficzny dla pakietu zabezpieczeń](#security_package)
 
-## <a name="cannot_connect"></a> Debuger nie może połączyć się z komputerem zdalnym. Debuger nie może rozpoznać określonej nazwy komputera
+## <a name="cannot_connect"></a>Debuger nie może nawiązać połączenia z komputerem zdalnym. Debuger nie mógł rozpoznać określonej nazwy komputera
 
-Spróbuj wykonać następujące kroki:
+Spróbuj wykonać następujące czynności:
 
-1. Upewnij się, że należy wprowadzić prawidłową nazwę komputera, a numer portu w **dołączyć do procesu** okno dialogowe lub we właściwościach projektu (do ustawiania właściwości, zobacz [te kroki](#server_incorrect)). Nazwa komputera musi mieć następujący format:
+1. Upewnij się, że wprowadzono prawidłową nazwę komputera i numer portu w oknie dialogowym **Dołącz do procesu** lub we właściwościach projektu (aby ustawić właściwości, zobacz [te kroki](#server_incorrect)). Nazwa komputera musi mieć następujący format:
 
     `computername:port`
 
     > [!NOTE]
-    > Numer portu musi być zgodny [numer_portu zdalny debuger](../debugger/remote-debugger-port-assignments.md), który *musi być uruchomiona* na komputerze docelowym.
+    > Numer portu musi być zgodny z [numerem portu zdalnego debugera](../debugger/remote-debugger-port-assignments.md), który *musi być uruchomiony* na maszynie docelowej.
 
-2. Jeśli nazwa komputera nie działa, spróbuj użyć adresu IP i numer portu w zamian.
+2. Jeśli nazwa komputera nie działa, wypróbuj zamiast niego adres IP i numer portu.
 
-3. Upewnij się, że wersja zdalny debuger działający na maszynie docelowej pasuje do używanej wersji programu Visual Studio. Aby uzyskać poprawną wersję zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
+3. Upewnij się, że wersja zdalnego debugera uruchomionego na maszynie docelowej jest zgodna z wersją programu Visual Studio. Aby uzyskać poprawną wersję zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
 
     > [!TIP]
-    > Jeśli jest podłączany do procesu i pomyślnego nawiązania połączenia, ale nie widzisz procesu, który ma, zaznacz **Pokaż procesy wszystkich pola wyboru Użytkownicy**. Spowoduje to wyświetlenie procesów jeśli nawiązano połączenie przy użyciu konta innego użytkownika.
+    > Jeśli dołączysz do procesu i nawiążesz połączenie, ale nie widzisz żądanego procesu, zaznacz **pole wyboru Pokaż procesy dla wszystkich użytkowników**. Spowoduje to wyświetlenie procesów, jeśli masz połączenie przy użyciu innego konta użytkownika.
 
-4. Jeśli te kroki nie umożliwiają rozwiązania tego błędu, zobacz [Maszyna zdalna nie jest dostępny](#dns).
+4. Jeśli te kroki nie rozwiązują tego błędu, zobacz, [że maszyna zdalna jest](#dns)nieosiągalna.
 
-## <a name="rejected"></a> Żądanie połączenia zostało odrzucone przez debuger zdalny
+## <a name="rejected"></a>Żądanie połączenia zostało odrzucone przez zdalny debuger
 
-W **dołączyć do procesu** okna dialogowego pole lub we właściwościach projektu upewnij się, że nazwy komputera zdalnego i numer portu pasuje numer portu i wyświetlane w oknie debugera zdalnego. Jeśli jest nieprawidłowy, napraw i spróbuj ponownie.
+W oknie dialogowym **Dołącz do procesu** lub we właściwościach projektu upewnij się, że nazwa komputera zdalnego i numer portu są zgodne z nazwą i numerem portu pokazanym w oknie debugera zdalnego. Jeśli jest nieprawidłowa, napraw i spróbuj ponownie.
 
-Jeśli te wartości są poprawne, a komunikat jest wspomniany **uwierzytelniania Windows** tryb, upewnij się, że debuger zdalny jest poprawny tryb uwierzytelniania (**Narzędzia > Opcje**).
+Jeśli te wartości są poprawne, a komunikat wymienia tryb **uwierzytelniania systemu Windows** , sprawdź, czy zdalny debuger znajduje się w poprawnym trybie uwierzytelniania (**Narzędzia > Opcje**).
 
-## <a name="invalid_access"></a> Nieprawidłowy dostęp do lokalizacji w pamięci
+## <a name="invalid_access"></a>Nieprawidłowy dostęp do lokalizacji pamięci
 
 Wystąpił błąd wewnętrzny. Uruchom ponownie program Visual Studio i spróbuj ponownie.
 
-## <a name="no_server"></a> Serwer nie jest z określoną nazwą, uruchomione na komputerze docelowym
+## <a name="no_server"></a>Nie ma serwera o określonej nazwie uruchomionego na komputerze zdalnym
 
-Program Visual Studio nie może połączyć się ze zdalnym debugerem. Ten komunikat może wystąpić z kilku powodów:
+Program Visual Studio nie może nawiązać połączenia ze zdalnym debugerem. Ten komunikat może wystąpić z kilku powodów:
 
-- Zdalny debuger może być uruchomiony w ramach konta innego użytkownika. Zobacz [następujące kroki](#user_accounts)
+- Zdalny debuger może być uruchomiony przy użyciu innego konta użytkownika. Zobacz [te kroki](#user_accounts)
 
-- Numer portu jest zablokowany na zaporze. Upewnij się, że Zapora jest [nie blokuje Twoje żądanie](#firewall), zwłaszcza, jeśli używasz zapory innych firm.
+- Port jest zablokowany przez zaporę. Upewnij się, że Zapora [nie blokuje żądania](#firewall), zwłaszcza jeśli używasz zapory innej firmy.
 
-- Wersja zdalnego debugera jest niezgodna z programu Visual Studio. Aby uzyskać poprawną wersję zdalnego debugera, zobacz [zdalnego debugowania](../debugger/remote-debugging.md)
+- Wersja debugera zdalnego nie jest zgodna z Visual Studio. Aby uzyskać poprawną wersję zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
 
-## <a name="valid_name"></a> Nazwa żądanego była prawidłowa, ale można odnaleźć żadnych danych żądanego typu
+## <a name="valid_name"></a>Żądana nazwa jest prawidłowa, ale nie znaleziono danych żądanego typu
 
-Komputer zdalny istnieje, ale Visual Studio nie może nawiązać zdalnego debugera. Ten komunikat może wystąpić z kilku powodów:
+Komputer zdalny istnieje, ale program Visual Studio nie może nawiązać połączenia ze zdalnym debugerem. Ten komunikat może wystąpić z kilku powodów:
 
-- Problemy z usługą DNS uniemożliwia nawiązanie połączenia. Zobacz [te kroki](#dns).
+- Problem z usługą DNS uniemożliwia połączenie. Zobacz [te kroki](#dns).
 
-- Zdalny debuger może być uruchomiony w ramach konta innego użytkownika. Postępuj zgodnie z [te kroki](#user_accounts).
+- Zdalny debuger może być uruchomiony przy użyciu innego konta użytkownika. Wykonaj [te kroki](#user_accounts).
 
-- Numer portu jest zablokowany na zaporze. Upewnij się, że Zapora jest [nie blokuje Twoje żądanie](#firewall), zwłaszcza, jeśli używasz zapory innych firm.
+- Port jest zablokowany przez zaporę. Upewnij się, że Zapora [nie blokuje żądania](#firewall), zwłaszcza jeśli używasz zapory innej firmy.
 
-- Wersja zdalnego debugera jest niezgodna z programu Visual Studio. Aby uzyskać poprawną wersję zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
+- Wersja debugera zdalnego nie jest zgodna z Visual Studio. Aby uzyskać poprawną wersję zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
 
-## <a name="cant_connect_back"></a> Zdalny debuger programu Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
+## <a name="cant_connect_back"></a>zdalny debuger programu Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
 
-Zdalny debuger może być uruchomiony w ramach konta innego użytkownika. Zdalny debuger, otwórz **Narzędzia > uprawnienia** można dodać użytkownika do zdalnego debugera uprawnień. Aby uzyskać więcej informacji, zobacz [debuger zdalny jest uruchomiony w ramach konta innego użytkownika](#user_accounts).
+Zdalny debuger może być uruchomiony przy użyciu innego konta użytkownika. W debugerze zdalnym otwórz pozycję **narzędzia > uprawnienia** , aby dodać użytkownika do uprawnień zdalnego debugera. Aby uzyskać więcej informacji, zobacz [zdalny debuger jest uruchomiony przy użyciu innego konta użytkownika](#user_accounts).
 
-Jeśli komunikat o błędzie zawiera również zapory, zapora na komputerze lokalnym może blokować komunikację z komputera zdalnego, wróć do programu Visual Studio. Zobacz [te kroki](#firewall).
+Jeśli komunikat o błędzie zawiera również zaporę, Zapora na komputerze lokalnym może uniemożliwiać komunikację z komputerem zdalnym z powrotem do programu Visual Studio. Zobacz [te kroki](#firewall).
 
-## <a name="access_denied"></a> Odmowa dostępu
+## <a name="access_denied"></a>Odmowa dostępu
 
-Może zostać wyświetlony ten błąd, jeśli zostanie podjęta próba debugowania na komputerze zdalnym 64-bitowym na komputerze 32-bitowych (nieobsługiwane).
+Ten błąd może pojawić się w przypadku próby debugowania na 64-bitowym komputerze zdalnym z komputera 32-bitowego (nieobsługiwane).
 
-## <a name="security_package"></a> Wystąpił błąd określonego pakietu zabezpieczeń
+## <a name="security_package"></a>Wystąpił błąd specyficzny dla pakietu zabezpieczeń
 
-Może to być problem starszych specyficzne dla Windows XP i Windows 7. Zobacz ten [informacji](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package).
+Może to być starszy problem dotyczący systemów Windows XP i Windows 7. Zobacz te [informacje](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package).
 
 ## <a name="causes-and-recommendations"></a>Przyczyny i zalecenia
 
-### <a name="dns"></a> Maszyna zdalna nie jest dostępny
+### <a name="dns"></a>Maszyna zdalna jest nieosiągalna
 
-Jeśli nie możesz się połączyć przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP zamiast tego. Możesz użyć `ipconfig` w wierszu polecenia na komputerze zdalnym, aby uzyskać adres IPv4. Jeśli używasz pliku HOSTS, sprawdź, czy jest poprawnie skonfigurowana.
+Jeśli nie można nawiązać połączenia przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP. Aby uzyskać adres `ipconfig` IPv4, można użyć w wierszu polecenia na komputerze zdalnym. Jeśli używasz pliku HOSTs, sprawdź, czy jest prawidłowo skonfigurowany.
 
-Jeśli ono zawiedzie, sprawdź, czy komputer zdalny jest dostępny w sieci ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) maszyny zdalnej). Debugowanie zdalne przez Internet nie jest obsługiwany, chyba że w niektórych scenariuszach Microsoft Azure.
+Jeśli to się nie powiedzie, sprawdź, czy komputer zdalny jest dostępny w sieci ([Wyślij polecenie ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) do maszyny zdalnej). Debugowanie zdalne przez Internet nie jest obsługiwane, z wyjątkiem niektórych Microsoft Azure scenariuszy.
 
-### <a name="server_incorrect"></a> Nazwa serwera jest niepoprawna lub oprogramowania innych firm nie zakłócają jest debugera zdalnego
+### <a name="server_incorrect"></a>Nazwa serwera jest niepoprawna lub oprogramowanie innych firm zakłóca zdalny debuger
 
-W programie Visual Studio Spójrz na właściwości projektu i upewnij się, że nazwa serwera jest prawidłowa. W tematach [C# i Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) i [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). W technologii ASP.NET, należy otworzyć **właściwości / Web / serwerów** lub **właściwości / Debug** w zależności od typu projektu.
+W programie Visual Studio Sprawdź właściwości projektu i upewnij się, że nazwa serwera jest poprawna. Zobacz tematy dotyczące [ C# i Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) i [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). W przypadku ASP.NET Otwórz **właściwości/sieci Web/serwery** lub **Właściwości/Debuguj** w zależności od typu projektu.
 
 > [!NOTE]
-> Dołączając do procesu, nie są używane ustawienia zdalne we właściwościach projektu.
+> W przypadku dołączania do procesu Ustawienia zdalne we właściwościach projektu nie są używane.
 
-Jeśli nazwa serwera jest poprawna, oprogramowanie antywirusowe lub zapory innych firm może blokować zdalnego debugera. Podczas lokalnego debugowania można to zrobić, ponieważ program Visual Studio jest 32-bitowej aplikacji, więc używa 64-bitowej wersji zdalnego debugera do debugowania 64-bitowych aplikacji. 32-bitowych i 64-bitowych procesów komunikacji za pośrednictwem sieci lokalnej na komputerze lokalnym. Żaden ruch sieciowy pozostawia komputera, ale istnieje możliwość, że oprogramowanie zabezpieczeń innych firm mogą blokować komunikacji.
+Jeśli nazwa serwera jest poprawna, oprogramowanie antywirusowe lub zapora innej firmy może blokować zdalny debuger. W przypadku debugowania lokalnego może to być spowodowane tym, że program Visual Studio jest aplikacją 32-bitową, więc używa wersji 64-bitowej zdalnego debugera do debugowania aplikacji 64-bitowych. Procesy 32-bitowe i 64-bitowe komunikują się przy użyciu sieci lokalnej na komputerze lokalnym. Żaden ruch sieciowy nie opuszcza komputera, ale istnieje możliwość, że oprogramowanie zabezpieczeń innej firmy może blokować komunikację.
 
-### <a name="user_accounts"></a> Debuger zdalny jest uruchomiony w ramach konta innego użytkownika
+### <a name="user_accounts"></a>Zdalny debuger działa na innym koncie użytkownika
 
-Zdalny debuger domyślnie przyjmuje tylko połączenia od użytkownika, który uruchomił zdalny debuger i członkowie grupy Administratorzy. Dodatkowym użytkownikom trzeba jawnie udzielić uprawnień.
+Zdalny debuger domyślnie akceptuje tylko połączenia od użytkownika, który uruchomił zdalny debuger i członków grupy Administratorzy. Dodatkowi użytkownicy muszą mieć jawnie przyznane uprawnienia.
 
 Problem można rozwiązać w jednym z następujących sposobów:
 
-- Dodaj użytkownika programu Visual Studio do zdalnego debugera uprawnień (w oknie zdalnego debugera, wybierz **Narzędzia > uprawnienia**).
+- Dodaj użytkownika programu Visual Studio do uprawnień zdalnego debugera (w oknie Debuger zdalny wybierz pozycję **narzędzia > uprawnienia**).
 
-- Na komputerze zdalnym Uruchom ponownie debuger zdalny w ramach tego samego konta użytkownika i hasło, którego używasz na komputerze programu Visual Studio.
+- Na komputerze zdalnym ponownie uruchom zdalny debuger w ramach tego samego konta użytkownika i hasła, które są używane na komputerze programu Visual Studio.
 
     > [!NOTE]
-    > Jeśli używasz zdalnego debugera na serwerze zdalnym, kliknij prawym przyciskiem myszy aplikację zdalny debuger i wybierz polecenie **Uruchom jako administrator** (lub, można uruchomić zdalnego debugera jako usługi). Jeśli nie używasz go na serwerze zdalnym, wystarczy ją uruchomić normalnie.
+    > Jeśli używasz zdalnego debugera na serwerze zdalnym, kliknij prawym przyciskiem myszy aplikację Remote Debugger i wybierz polecenie **Uruchom jako administrator** (lub, aby uruchomić zdalny debuger jako usługę). Jeśli nie jest uruchomiony na serwerze zdalnym, wystarczy uruchomić go normalnie.
 
-- Zdalny debuger można uruchomić z wiersza polecenia za pomocą **/ allow \<username >** parametru: `msvsmon /allow <username@computer>`.
+- Zdalny debuger można uruchomić z wiersza polecenia z parametrem  **\</Allow username >** :. `msvsmon /allow <username@computer>`
 
-- Alternatywnie możesz zezwolić użytkownikowi przeprowadzać debugowanie zdalne. W oknie zdalnego debugera, przejdź do **Narzędzia > Opcje** okna dialogowego. Po wybraniu **bez uwierzytelniania**, można sprawdzić **Zezwalaj dowolnemu użytkownikowi na debugowanie**. Należy jednak Użyj tej opcji tylko wtedy, gdy inne opcje się nie powieść lub jeśli korzystasz z sieci prywatnej.
+- Alternatywnie można zezwolić każdemu użytkownikowi na zdalne debugowanie. W oknie zdalnego debugera, przejdź do **Narzędzia > Opcje** okna dialogowego. Po wybraniu **bez uwierzytelniania**, można sprawdzić **Zezwalaj dowolnemu użytkownikowi na debugowanie**. Należy jednak spróbować wykonać tę opcję tylko wtedy, gdy inne opcje zakończą się niepowodzeniem lub jeśli jesteś w sieci prywatnej.
 
-### <a name="firewall"></a> Zapora na zdalnym komputerze nie zezwala na połączenia przychodzące do zdalnego debugera
+### <a name="firewall"></a>Zapora na maszynie zdalnej nie zezwala na połączenia przychodzące ze zdalnym debugerem
  Zapora na komputerze programu Visual Studio, a zapora na zdalnym komputerze musi być skonfigurowany do zezwalania na komunikację między Visual Studio i zdalnym debugerem. Aby uzyskać informacji o portach używa zdalnego debugera, zobacz [zdalnego przypisania portów debugera](../debugger/remote-debugger-port-assignments.md). Aby uzyskać informacje o konfigurowaniu zapory Windows, zobacz [skonfigurować zaporę Windows do zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 
 ### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>Wersja zdalnego debugera nie pasuje do wersji programu Visual Studio
  Wersję programu Visual Studio, które działają lokalnie musi być zgodna z wersją monitor debugera zdalnego działa na komputerze zdalnym. Aby rozwiązać ten problem, należy pobrać i zainstalować zgodną wersję monitor debugera zdalnego. Aby uzyskać poprawną wersję zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
 
 ### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Maszyny lokalne i zdalne mają tryby uwierzytelniania innego
- Maszyn lokalnych i zdalnych muszą używać tego samego trybu uwierzytelniania. Aby rozwiązać ten problem, upewnij się, że obie maszyny będą używać trybu uwierzytelniania. Można zmienić tryb uwierzytelniania. W oknie zdalnego debugera, przejdź do **Narzędzia > Opcje** okno dialogowe.
+ Maszyn lokalnych i zdalnych muszą używać tego samego trybu uwierzytelniania. Aby rozwiązać ten problem, upewnij się, że obie maszyny będą używać trybu uwierzytelniania. Można zmienić tryb uwierzytelniania. W oknie zdalny debuger przejdź do okna dialogowego **narzędzia > opcje** .
 
  Aby uzyskać więcej informacji na temat trybów uwierzytelniana, zobacz [omówienie uwierzytelniania Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).
 
@@ -162,7 +162,7 @@ Problem można rozwiązać w jednym z następujących sposobów:
  Może być konieczne przeprowadzać debugowanie zdalne w innym czasie lub Zmień harmonogram pracy w sieci inny czas.
 
 ## <a name="more-help"></a>Więcej pomocy
- Aby uzyskać pomoc w bardziej zdalnego debugera, otwórz stronę pomocy zdalny debuger (**Pomoc > użycie** w zdalnym debugerze).
+ Aby uzyskać więcej pomocy dotyczącej zdalnego debugera, Otwórz stronę pomocy zdalnego debugera (**pomoc > użyciu** w debugerze zdalnym).
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

@@ -26,27 +26,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461832"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926235"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
 
 Właściwości pliku można użyć, aby wskazać, jakie akcje powinien wykonać system projektu na plikach. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik ma zostać dodany do pakietu jako plik zasobów.
 
- Możesz wybrać dowolny plik w Eksplorator rozwiązań a następnie przejrzeć jego właściwości w okno Właściwości. Pliki JavaScript mają cztery właściwości: **Kopiuj do katalogu wyjściowego**, **akcji pakietu**, **nazwy pliku**i **ścieżki pliku**.
+Możesz wybrać dowolny plik w Eksplorator rozwiązań a następnie przejrzeć jego właściwości w okno Właściwości. Pliki JavaScript mają cztery właściwości: **Kopiuj do katalogu wyjściowego**, **akcji pakietu**, **nazwy pliku**i **ścieżki pliku**.
 
 ## <a name="file-properties"></a>Właściwości pliku
- W tej sekcji opisano właściwości typowe dla plików JavaScript.
+W tej sekcji opisano właściwości typowe dla plików JavaScript.
 
 ### <a name="copy-to-output-directory-property"></a>Kopiuj do właściwości katalogu wyjściowego
- Ta właściwość określa warunki, w których wybrany plik źródłowy zostanie skopiowany do katalogu wyjściowego. Wybierz opcję nie **Kopiuj** , jeśli plik nigdy nie będzie kopiowany do katalogu wyjściowego. Wybierz opcję **Kopiuj zawsze** , jeśli plik jest zawsze kopiowany do katalogu wyjściowego. Wybierz opcję **Kopiuj, jeśli nowszy** , jeśli plik ma być kopiowany tylko wtedy, gdy jest on nowszy niż istniejący plik o tej samej nazwie w katalogu wyjściowym.
+Ta właściwość określa warunki, w których wybrany plik źródłowy zostanie skopiowany do katalogu wyjściowego. Wybierz opcję nie **Kopiuj** , jeśli plik nigdy nie będzie kopiowany do katalogu wyjściowego. Wybierz opcję **Kopiuj zawsze** , jeśli plik jest zawsze kopiowany do katalogu wyjściowego. Wybierz opcję **Kopiuj, jeśli nowszy** , jeśli plik ma być kopiowany tylko wtedy, gdy jest on nowszy niż istniejący plik o tej samej nazwie w katalogu wyjściowym.
 
 ### <a name="package-action"></a>Akcja pakietu
- Właściwość **Akcja pakietu** wskazuje, co program Visual Studio wykonuje wraz z plikiem, gdy kompilacja jest wykonywana. **Akcja pakietu** może mieć jedną z kilku wartości:
+Właściwość **Akcja pakietu** wskazuje, co program Visual Studio wykonuje wraz z plikiem, gdy kompilacja jest wykonywana. **Akcja pakietu** może mieć jedną z kilku wartości:
 
 - **Brak** — plik nie jest uwzględniony w manifeście pakietu. Przykładem jest plik tekstowy, który zawiera dokumentację, taką jak plik Readme.
 
@@ -59,40 +59,40 @@ Właściwości pliku można użyć, aby wskazać, jakie akcje powinien wykonać 
 Wartość domyślna dla **akcji pakietu** zależy od rozszerzenia pliku dodawanego do rozwiązania.
 
 ### <a name="file-name-property"></a>Właściwość nazwy pliku
- Wyświetla nazwę pliku jako wartość tylko do odczytu. Aby zmienić nazwę pliku, należy kliknąć prawym przyciskiem myszy w Eksplorator rozwiązań i wybrać polecenie **Zmień nazwę**.
+Wyświetla nazwę pliku jako wartość tylko do odczytu. Aby zmienić nazwę pliku, należy kliknąć prawym przyciskiem myszy w Eksplorator rozwiązań i wybrać polecenie **Zmień nazwę**.
 
 ### <a name="full-path-property"></a>Właściwość pełnej ścieżki
- Wyświetla pełną ścieżkę do pliku jako wartość tylko do odczytu. Aby zmienić ścieżkę pliku, można przeciągnąć i upuścić plik w Eksplorator rozwiązań.
+Wyświetla pełną ścieżkę do pliku jako wartość tylko do odczytu. Aby zmienić ścieżkę pliku, można przeciągnąć i upuścić plik w Eksplorator rozwiązań.
 
 ## <a name="reference-file-properties"></a>Właściwości pliku referencyjnego
- W tej sekcji opisano właściwości typowe dla plików, do których odwołuje się aplikacja platformy UWP skompilowana przy użyciu języka JavaScript. Po wybraniu odwołania, takiego jak plik winmd, odwołanie do zestawu SDK, odwołanie projekt-do-projektu lub odwołanie do zestawu w Eksplorator rozwiązań, inne właściwości mogą być wyświetlane w okno Właściwości, zgodnie z typem pliku.
+W tej sekcji opisano właściwości typowe dla plików, do których odwołuje się aplikacja platformy UWP skompilowana przy użyciu języka JavaScript. Po wybraniu odwołania, takiego jak plik winmd, odwołanie do zestawu SDK, odwołanie projekt-do-projektu lub odwołanie do zestawu w Eksplorator rozwiązań, inne właściwości mogą być wyświetlane w okno Właściwości, zgodnie z typem pliku.
 
 ### <a name="culture"></a>Kultura
- Wyświetla język skojarzony z odwołaniem.
+Wyświetla język skojarzony z odwołaniem.
 
 ### <a name="file-type"></a>Typ pliku
- Wyświetla typ pliku odwołania.
+Wyświetla typ pliku odwołania.
 
 ### <a name="file-version"></a>Wersja pliku
- Wyświetla wersję pliku odwołania.
+Wyświetla wersję pliku odwołania.
 
 ### <a name="identity"></a>Tożsamość
- Wyświetla tożsamość odwołania, która jest używana w projekcie, który jest przechowywany w pliku projektu.
+Wyświetla tożsamość odwołania, która jest używana w projekcie, który jest przechowywany w pliku projektu.
 
 ### <a name="package"></a>Package
- Wyświetla nazwę manifestu pakietu skojarzonego z odwołaniem.
+Wyświetla nazwę manifestu pakietu skojarzonego z odwołaniem.
 
 ### <a name="resolved-path"></a>Rozwiązany ścieżka
- Wyświetla ścieżkę do odwołania, które jest używane w projekcie.
+Wyświetla ścieżkę do odwołania, które jest używane w projekcie.
 
 ### <a name="sdk-path"></a>Ścieżka zestawu SDK
- Wyświetla ścieżkę do pliku zestawu SDK, do którego istnieje odwołanie.
+Wyświetla ścieżkę do pliku zestawu SDK, do którego istnieje odwołanie.
 
 ### <a name="uri"></a>Adresu
- Wyświetla identyfikator URI, który musi być uwzględniony w plikach HTML lub JavaScript projektu, aby dołączyć plik jako plik źródłowy.
+Wyświetla identyfikator URI, który musi być uwzględniony w plikach HTML lub JavaScript projektu, aby dołączyć plik jako plik źródłowy.
 
 ### <a name="version"></a>Wersja
- Wyświetla wersję odwołania.
+Wyświetla wersję odwołania.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493331"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918788"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -65,7 +65,7 @@ Po prostu wywołaj refaktoryzację, naciskając **klawisze CTRL +.** i wybieraj�
 
 [Program Visual Studio rozszerzenia intellicode](/visualstudio/intellicode/) ulepsza działania związane z programowaniem oprogramowania przy użyciu sztucznej analizy (AI). Rozszerzenia intellicode pociągs 2 000 w projektach "open source"&mdash;w witrynie GitHub z ponad&mdash;100 gwiazdkami w celu wygenerowania własnych zaleceń.
 
- ![Animacja rozszerzenia intellicode w programie Visual Studio 2019](media/vs-2019/IntelliCode.gif)
+![Animacja rozszerzenia intellicode w programie Visual Studio 2019](media/vs-2019/IntelliCode.gif)
 
 Oto kilka sposobów, które program Visual Studio rozszerzenia intellicode może pomóc w zwiększeniu produktywności:
 
@@ -184,7 +184,7 @@ Dodaliśmy obsługę aplikacji ASP.NET (Core i Desktop), które działają na ma
 
 Aby uzyskać więcej informacji, zobacz Debugowanie [live ASP.NET Azure Apps przy użyciu strony Snapshot Debugger](../debugger/debug-live-azure-applications.md) i wprowadzenie do [debugowania czasu podróży dla Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) .
 
-### <a name="microsoft-edge-insider-support"></a>Obsługa niejawnego testera programu Microsoft Edge
+### <a name="microsoft-edge-insider-support"></a>Pomoc techniczna programu Microsoft Edge dla niejawnych testerów
 
 **Nowość w 16,2**: Możesz ustawić punkt przerwania w aplikacji JavaScript i rozpocząć sesję debugowania przy użyciu przeglądarki niejawnego [testera programu Microsoft Edge](https://www.microsoftedgeinsider.com/) . Gdy to zrobisz, program Visual Studio otworzy nowe okno przeglądarki z włączonym debugowaniem, którego można następnie użyć do przechodzenia przez aplikację JavaScript w programie Visual Studio.
 

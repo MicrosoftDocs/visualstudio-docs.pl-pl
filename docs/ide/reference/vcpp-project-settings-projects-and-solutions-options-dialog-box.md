@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461558"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918882"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
 
@@ -49,11 +49,11 @@ To okno dialogowe umożliwia definiowanie C++ ustawień kompilacji i projektu zw
 
  **Tak**
 
- Wyświetla listę zmiennych środowiskowych w pliku dziennika kompilacji. Ta opcja określa, że wszystkie zmienne środowiskowe podczas kompilacji C++ projektów są wyświetlane w pliku dziennika kompilacji.
+Wyświetla listę zmiennych środowiskowych w pliku dziennika kompilacji. Ta opcja określa, że wszystkie zmienne środowiskowe podczas kompilacji C++ projektów są wyświetlane w pliku dziennika kompilacji.
 
  **Znaleziono**
 
- Wyklucz zmienne środowiskowe z pliku dziennika kompilacji.
+Wyklucz zmienne środowiskowe z pliku dziennika kompilacji.
 
 ## <a name="build-timing"></a>Czas kompilacji
 
@@ -63,7 +63,7 @@ To okno dialogowe umożliwia definiowanie C++ ustawień kompilacji i projektu zw
 
  **Znaleziono**
 
- Wyłącza czas kompilacji.
+Wyłącza czas kompilacji.
 
 ## <a name="maximum-concurrent-c-compilations"></a>Maksymalna liczba C++ współbieżnych kompilacji
 

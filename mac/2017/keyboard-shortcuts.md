@@ -1,33 +1,33 @@
 ---
-title: Domyślne skróty klawiaturowe w programie Visual Studio dla komputerów Mac
-description: W tym artykule wymieniono domyślne skróty klawiaturowe w programie Visual Studio dla komputerów Mac
+title: Domyślne skróty klawiaturowe
+description: W tym artykule wymieniono domyślne skróty klawiaturowe w Visual Studio dla komputerów Mac
 ms.date: 03/14/2019
 author: bytesguy
-ms.author: adhartle
+ms.author: crdun
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 498cea9cdc32eab48d4f861f349e2076bb312bb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 371f1e93405d3034bda4259831cee27c6f52a40c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997171"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872240"
 ---
-# <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Domyślne skróty klawiaturowe w programie Visual Studio dla komputerów Mac
+# <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Domyślne skróty klawiaturowe w Visual Studio dla komputerów Mac
 
-Aby uzyskać informacje o klawiatura — ułatwienia dostępu, zobacz [jak: Korzystanie z nawigacji klawiatury](accessibility.md#how-to-use-keyboard-navigation).
+Aby uzyskać informacje o ułatwieniach dostępu [do klawiatury, zobacz How to: Użyj nawigacji](accessibility.md#how-to-use-keyboard-navigation)klawiaturowej.
 
-Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyciu odpowiednie skróty klawiaturowe. Ten dokument zawiera listę domyślnych skrótów dla **programu Visual Studio** schemat powiązanie klucza. Aby uzyskać więcej informacji na temat zmieniania schematu powiązanie klawiszy zobacz [dostosowywaniu środowiska IDE](customizing-the-ide.md#key-bindings). Można również dostosować skróty dla za pomocą polecenia **programu Visual Studio dla komputerów Mac** > **preferencje** element menu i wybierając pozycję **środowiska**  >  **Powiązań klucza** w **preferencje** okna.
+Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów Mac przy użyciu odpowiedniego skrótu klawiaturowego. Ten dokument zawiera listę domyślnych skrótów dla schematu powiązania klawiszy **programu Visual Studio** . Aby uzyskać więcej informacji na temat zmiany schematu powiązania kluczy, zobacz [Dostosowywanie środowiska IDE](customizing-the-ide.md#key-bindings). Możesz również dostosować skróty dla polecenia za pomocą elementu menu**preferencji** **Visual Studio dla komputerów Mac** > i wybierając opcję**powiązania klucza** **środowiska** > w oknie **preferencji** .
 
 > [!TIP]
-> Skróty wyświetlane w tym dokumencie i preferencje powiązanie klucza w programie Visual Studio dla komputerów Mac, są prezentowane za pomocą symboli, często używane w systemie macOS. Jeśli masz pewności co do symbolu, zapoznaj się z [tabeli loopkup symbole kluczy systemu macOS](#macos-key-symbols-lookup).
+> Skróty klawiaturowe wyświetlane w tym dokumencie i preferencje dotyczące powiązań klawiszy w Visual Studio dla komputerów Mac są prezentowane przy użyciu symboli często używanych w macOS. Jeśli nie masz pewności co do symbolu, zapoznaj się z [tabelą macOS Key Symbols loopkup](#macos-key-symbols-lookup).
 
-## <a name="code-navigation"></a>Nawigowanie po kodzie
+## <a name="code-navigation"></a>Nawigacja po kodzie
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Znajdź odwołania|**⇧⌘R**, **F12**|
-|Przejdź do deklaracji|**⌘D**, **F12**|
-|Następny błąd|**⌥⇧⇟**, **⇧⌘F12**|
+|Znajdź odwołania|**⇧ ⌘ R**, **F12**|
+|Przejdź do deklaracji|**⌘ D**, **F12**|
+|Następny błąd|**⌥ ⇧ ⇟**, **⇧ ⌘ F12**|
 |Następny problem w pliku|**⌥⇟**|
 |Poprzedni błąd|**⌥⇧⇞**|
 |Poprzedni problem w pliku|**⌥⇞**|
@@ -36,16 +36,16 @@ Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyci
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Włącz lub wyłącz punkt przerwania|**⌥⌘/**, **⌘F9**|
-|Pause|**⌥⌘P**, **⌥⌘L5**|
+|Włącz lub wyłącz punkt przerwania|**⌥ ⌘/** , **⌘ F9**|
+|Pause|**⌥ ⌘ P**, **⌥ ⌘ P5**|
 |Usuń wszystkie punkty przerwania|**⇧⌘F9**|
 |Uruchom do kursora|**⌘F10**|
 |Ustaw następną instrukcję|**⇧⌘F10**|
 |Pokaż następną instrukcję|**⌥\***|
-|Wkrocz|**⇧⌘I**, **⌘F11**|
-|Wyjdź|**⇧⌘U**, **⇧⌘F11**|
-|Przekrocz nad|**⇧⌘O**, **F10**|
-|Przełącz punkt przerwania|**⌘\\**, **F9**|
+|Wkrocz|**⇧ ⌘ I**, **⌘ F11**|
+|Wyjdź|**⇧ ⌘ U**, **⇧ ⌘ F11**|
+|Przekrocz nad|**⇧ ⌘ O**, **F10**|
+|Przełącz punkt przerwania|**⌘\\** , **F9**|
 |Wyświetl punkty przerwania|**⌥⌘B**|
 
 ## <a name="designer"></a>Projektant
@@ -58,50 +58,50 @@ Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyci
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Tryb edytowania ograniczenia|**⌘E**|
+|Tryb edycji ograniczenia|**⌘ E**|
 |Kopiuj|**⌘C**|
-|Wytnij|**⌘X**|
+|Wytnij|**⌘ X**|
 |Usuwanie|**⌘⌫**|
-|Formatuj dokument|**⌃I**|
+|Formatuj dokument|**⌃ I**|
 |Zwiększ wcięcie zaznaczenia|**⌘]**|
 |Wklej|**⌘V**|
 |Preferencje|**⌘,**|
 |Wykonaj ponownie|**⇧⌘Z**|
-|Zmień nazwę|**⌘R**, **F2**|
-|Zaznacz wszystko|**⌘A**|
-|Pokaż generowanie kodu|**⌘I**|
-|Przełącz wszystkie złożeń|**⌥⇧⌘↑**|
+|Zmień nazwę|**⌘ R**, **F2**|
+|Zaznacz wszystko|**⌘**|
+|Pokaż generowanie kodu|**⌘ I**|
+|Przełącz wszystkie zgięcia|**⌥⇧⌘↑**|
 |Przełącz definicje|**⌥⇧⌘↓**|
-|Toggle Fold|**⌥⇧⌘←**|
-|Przełącz komentarze do wierszy|**⌘/**|
+|Przełącz zgięcie|**⌥⇧⌘←**|
+|Przełącz Komentarze do wierszy|**⌘/**|
 |Cofnij|**⌘Z**|
-|Zmniejsz wcięcie zaznaczenia|**⌘[**|
-|Zaktualizuj ramki na podstawie ograniczeń|**⇧⌘R**|
+|Usuń wcięcie zaznaczenia|**⌘[**|
+|Aktualizuj ramkę z ograniczeń|**⇧⌘R**|
 
-## <a name="f-integration"></a>F#Integracja
+## <a name="f-integration"></a>F#Integration
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Wyczyść F# interaktywne|**⌃⌥C**|
-|Interaktywny F#|**⌃⌥F**|
-|Uruchom ponownie F# interaktywne|**⌃⌥R**|
-|Wyślij wiersz do F# Interactive|**⌃⌥L**|
-|Wyślij odwołania do F# Interactive|**⌃⌥P**|
-|Wyślij zaznaczenie do F# Interactive|**⌃⏎**|
+|Wyczyść F# interaktywny|**⌃ ⌥ C**|
+|F# Interactive|**⌃⌥F**|
+|Uruchom F# ponownie interaktywny|**⌃⌥R**|
+|Wyślij wiersz do F# interaktywnego|**⌃⌥L**|
+|Wyślij odwołania do F# interaktywnego|**⌃ ⌥ P**|
+|Wyślij zaznaczenie do F# interaktywnego|**⌃⏎**|
 
 ## <a name="file"></a>Plik
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Zamknij wszystkie|**⇧⌘W**|
-|Zamknij plik|**⌘W**|
-|Zamknij obszar roboczy|**⌥⌘W**|
-|Nowy plik|**⌘N**|
-|Nowe rozwiązanie|**⇧⌘N**|
-|Otwarcie|**⌘O**|
-|Drukuj|**⌘P**|
-|Zamknij|**⌘Q**|
-|Przywróć|**⌘U**|
+|Zamknij plik|**⌘ W**|
+|Zamknij obszar roboczy|**⌥ ⌘ W**|
+|Nowy plik|**⌘ N**|
+|Nowe rozwiązanie|**⇧ ⌘ N**|
+|Otwarcie|**⌘ O**|
+|Drukuj|**⌘ P**|
+|Spowoduje|**⌘ Q**|
+|Stan|**⌘ U**|
 |Zapisanie|**⌘S**|
 |Zapisz wszystko|**⇧⌘S**|
 
@@ -116,29 +116,29 @@ Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyci
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Implementuj komunikaty aparatu Unity|**⇧⌘M**|
-|Sprawdzanie|**⌥⌘I**|
+|Zaimplementuj komunikaty aparatu Unity|**⇧ ⌘ M**|
+|Skontrol|**⌥ ⌘ I**|
 
 ## <a name="project"></a>Projekt
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Dodaj pliki|**⌥⌘A**|
-|Kompilacja|**⌘K**, **⇧F6**|
-|Kompiluj wszystko|**⌘B**, **F6**|
-|czyszczenie|**⇧⌘K**|
-|Ponowna kompilacja|**⌃⌘K**|
-|Kompiluj wszystko ponownie|**⌃⌘B**|
-|Rozpocznij debugowanie|**⌘⏎**, **F5**|
-|Uruchom bez debugowania|**⌥⌘⏎**, **⌃F5**|
-|Zatrzymywanie|**⇧⌘⏎**, **⇧F5**|
+|Dodaj pliki|**⌥ ⌘ A**|
+|Kompilacja|**⌘ K**, **⇧ F6**|
+|Kompiluj wszystko|**⌘ B**, **F6**|
+|Czyst|**⇧ ⌘ K**|
+|Odtworzyć|**⌃ ⌘ K**|
+|Kompiluj ponownie wszystko|**⌃⌘B**|
+|Rozpocznij debugowanie|**⌘ ⏎**, **F5**|
+|Uruchom bez debugowania|**⌥ ⌘ ⏎**, **⌃ F5**|
+|Zatrzymywanie|**⇧ ⌘ ⏎**, **⇧ F5**|
 
 ## <a name="refactoring"></a>Refaktoryzacja
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Importuj Symbol|**⌃⌥␣**|
-|Szybka poprawka|**⌥⏎**|
+|Importuj symbol|**⌃⌥␣**|
+|Szybka naprawa|**⌥⏎**|
 
 ## <a name="search"></a>Wyszukaj
 
@@ -146,39 +146,39 @@ Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyci
 |-|-|
 |Polecenie|**⇧⌘P**|
 |Znajdź w plikach|**⇧⌘F**|
-|Znajdź następny|**⌘G**, **F3**|
-|Znajdź następne podobne zaznaczenie|**⌘E**, **⌘F3**|
-|Znajdź poprzedni|**⇧⌘G**, **⇧F3**|
+|Znajdź następny|**⌘ G**, **F3**|
+|Znajdź dalej podobne zaznaczenie|**⌘ E**, **⌘ F3**|
+|Znajdź poprzedni|**⇧ ⌘ G**, **⇧ F3**|
 |Znajdź poprzednie podobne zaznaczenie|**⇧⌘F3**|
-|Znajdowanie|**⌘F**|
-|Przejdź do pliku|**⇧⌘D**|
-|Przejdź do wiersza|**⌘L**|
+|Znajdowanie|**⌘ F**|
+|Przejdź do pliku|**⇧ ⌘ D**|
+|Przejdź do wiersza|**⌘ L**|
 |Przejdź do typu|**⇧⌘T**|
 |Przejdź do|**⌘.**|
 |Zastąp w plikach|**⌥⇧⌘F**|
-|Replace|**⌥⌘F**|
+|Replace|**⌥ ⌘ F**|
 
 ## <a name="text-editor"></a>Edytor tekstu
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Dokończ wyraz|**⌃␣**|
-|Usuń znak z lewej|**⌃H**|
+|Usuń lewy znak|**⌃ H**|
 |Usuń następny wyraz podrzędny|**⌃⌦**|
 |Usuń następny wyraz|**⌥⌦**|
 |Usuń poprzedni wyraz podrzędny|**⌃⌫**|
 |Usuń poprzednie słowo|**⌥⌫**|
-|Usuń znak po prawej|**⌃D**|
-|Usuń do końca wiersza|**⌃K**|
-|Dynamiczny|**⌃/**|
+|Usuń prawy znak|**⌃ D**|
+|Usuń do końca wiersza|**⌃ K**|
+|Dynamiczny dynamiczne|**⌃/**|
 |Rozszerz zaznaczenie|**⌥⇧↓**|
 |Rozszerz zaznaczenie|**⌥⇧↑**|
 |Rozszerz zaznaczenie do końca dokumentu|**⇧⌘↓**, **⇧⌘↘**|
-|Rozszerz zaznaczenie do początku dokumentu|**⇧⌘↑**, **⇧⌘↖**|
-|Rozszerz zaznaczenie do końca wiersza|**⇧↘**, **⇧⌘→**|
-|Rozszerz zaznaczenie do początku wiersza|**⇧↖**, **⇧⌘←**|
+|Rozszerz zaznaczenie do początku dokumentu|**⇧ ⌘ ↑**, **⇧ ⌘ ↖**|
+|Rozszerz zaznaczenie do końca linii|**⇧ ↘**, **⇧ ⌘ →**|
+|Rozszerz zaznaczenie do początku wiersza|**⇧ ↖**, **⇧ ⌘ ←**|
 |Rozszerz zaznaczenie do następnego wiersza|**⇧↓**|
-|Rozszerz zaznaczenie do następnego wyrazu|**⌥⇧→**|
+|Rozszerz zaznaczenie do następnego wyrazu|**⌥ ⇧ →**|
 |Rozszerz zaznaczenie o stronę w dół|**⇧⇟**|
 |Rozszerz zaznaczenie o stronę w górę|**⇧⇞**|
 |Rozszerz zaznaczenie do poprzedniego wiersza|**⇧↑**|
@@ -186,47 +186,47 @@ Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyci
 |Rozszerz zaznaczenie w lewo|**⇧←**|
 |Rozszerz zaznaczenie w prawo|**⇧→**|
 |Znajdź karetkę|**⌘\|**|
-|Przejdź jeden znak w lewo|**⌃B**|
-|Przejdź jeden znak w prawo|**⌃F**|
+|Przejdź o jeden znak w lewo|**⌃ B**|
+|Przejdź o jeden znak w prawo|**⌃ F**|
 |Przejdź do początku dokumentu|**⌘↑**|
-|Przejdź do początku wiersza|**⌘←**, **⌃A**|
+|Przejdź do początku wiersza|**⌘ ←**, **⌃**|
 |Przejdź na koniec dokumentu|**⌘↓**|
-|Przejdź na koniec wiersza|**⌘→**, **⌃E**|
+|Przejdź do końca wiersza|**⌘ →**, **⌃ E**|
 |Przejdź do pasującego nawiasu klamrowego|**⇧⌘\\**|
-|Przejdź do następnego wiersza|**⌃N**|
-|Przejdź do następnego wyrazu|**⌥→**|
-|Przejdź do poprzedniego wiersza|**⌃P**|
+|Przejdź do następnego wiersza|**⌃ N**|
+|Przejdź do następnego wyrazu|**⌥ →**|
+|Przejdź do poprzedniego wiersza|**⌃ P**|
 |Przejdź do poprzedniego wyrazu|**⌥←**|
-|Wstaw podział wiersza po karetce|**⌃O**|
-|Przesuń karetkę do EOL i Wstaw nowy wiersz|**⇧⏎**|
-|Przenieś wiersz lub zaznaczenie w dół|**⌥↓**|
-|Przenieś wiersz lub zaznaczenie w górę|**⌥↑**|
+|Wstaw podział wiersza po karetki|**⌃ O**|
+|Przenieś karetkę do EOL i Wstaw nowy wiersz|**⇧⏎**|
+|Przenieś wiersz lub wyróżniony wybór w dół|**⌥↓**|
+|Przenieś wiersz lub wyróżniony wybór w górę|**⌥↑**|
 |Przenieś do następnego użycia|**⌃⌥⌘↓**|
 |Przenieś do poprzedniego użycia|**⌃⌥⌘↑**|
 |Pokaż listę parametrów|**⌃⇧␣**|
 |Pokaż szybkie informacje|**⌘F1**|
-|Pokaż zakresy|**⌥⇧⌘P**|
+|Pokaż zakresy|**⌥ ⇧ ⌘ P**|
 |TRANSPONUJ znaki|**⌃T**|
-|OPAKOWYWANIE przy użyciu &lt;div.&gt;|**⌥⇧W**|
+|Zawijaj &lt;przy użyciu DIV&gt;|**⌥ ⇧ W**|
 
 ## <a name="view"></a>Widok
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
-|Centrum i dokumentu koncentracji uwagi|**⌃L**|
-|Dokument koncentracji uwagi|**F7**|
-|Pełny ekran|**⌃⌘F**|
+|Wyśrodkuj dokument i ustaw fokus|**⌃L**|
+|Dokument fokusu|**F7**|
+|Pełny ekran|**⌃ ⌘ F**|
 |Przejdź do następnego notesu|**⌥⌘→**|
-|Przejdź do poprzedniego notesu|**⌥⌘←**|
+|Przenieś do poprzedniego notesu|**⌥⌘←**|
 |Nawiguj wstecz|**⌃⌘←**|
-|Navigate Forward|**⌃⌘→**|
+|Przejdź do przodu|**⌃⌘→**|
 |Rozmiar normalny|**⌘0**|
 |Jedna kolumna edytora|**⌥⌘1**|
-|Pokaż następne|**⌥⌘↓**, **F8**|
-|Pokaż poprzednie|**⌥⌘↑**, **⇧F8**|
+|Pokaż następny|**⌥ ⌘ ↓**, **F8**|
+|Pokaż poprzedni|**⌥ ⌘ ↑**, **⇧ F8**|
 |Dwie kolumny edytora|**⌥⌘2**|
-|Powiększ|**⌘+**, **⌘=**|
-|Pomniejsz|**⌘-**, **⌘_**|
+|Powiększ|**⌘ +** , **⌘ =**|
+|Pomniejsz|**⌘-** , **⌘ _**|
 
 ## <a name="window"></a>Okno
 
@@ -236,40 +236,40 @@ Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyci
 |Aktywuj 2|**⌘2**|
 |Aktywuj 3|**⌘3**|
 |Aktywuj 4|**⌘4**|
-|Aktywuj 5|**⌘5**|
+|Aktywuj 5|**⌘ 5**|
 |Aktywuj 6|**⌘6**|
 |Aktywuj 7|**⌘7**|
 |Aktywuj 8|**⌘8**|
 |Aktywuj 9|**⌘9**|
-|Ukryj inne|**⌥⌘H**|
-|Hide Visual Studio|**⌘H**|
-|Minimalizowanie|**⌘M**|
-|Następny dokument|**⌘}**, **⌘F6**|
-|Poprzedni dokument|**⌘{**, **⇧⌘F6**|
+|Ukryj inne|**⌥ ⌘ H**|
+|Ukryj program Visual Studio|**⌘ H**|
+|Ogranicza|**⌘ M**|
+|Następny dokument|**⌘}** , **⌘ F6**|
+|Poprzedni dokument|**⌘ {** , **⇧ ⌘ F6**|
 |Przełącz do następnego dokumentu|**⌃⇥**|
 |Przełącz do następnej konsoli|**⌃⌥⇥**|
 |Przełącz do poprzedniego dokumentu|**⌃⇧⇥**|
 |Przełącz do poprzedniej konsoli|**⌃⌥⇧⇥**|
 
-## <a name="macos-key-symbols-lookup"></a>Wyszukiwanie symboli kluczy systemu macOS
+## <a name="macos-key-symbols-lookup"></a>Wyszukiwanie symboli klucza macOS
 
 |Symbol|Key|
 |-|-|
 |⌘|**Polecenie** (**cmd**)|
-|⌥|**Opcja** (**alt**)|
-|⇧|**SHIFT**|
-|⌃|**Kontrolka** (**ctrl**)
-|⇞|**Page Up** (**strona w górę**)|
-|⇟|**Page Down** (**Pg Dn**)|
+|⌥|**Opcja** (**Alt**)|
+|⇧|**Nocn**|
+|⌃|**Kontrolka** (**Ctrl**)
+|⇞|**Strona w górę** (**PG up**)|
+|⇟|**Strona w dół** (**PG DN**)|
 |⌫|**Usuń** (**Backspace**)|
-|⌦|**Usuń do przodu**|
+|⌦|**Usuwanie do przodu**|
 |⏎|**Return**|
 |←→↑↓|**Klawisze strzałek**|
 |↖|**Strona główna**|
 |↘|**End**|
-|␣|**SPACJA**|
+|␣|**Pasek miejsca**|
 |⇥|**Karta**|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Skróty klawiaturowe w programie Visual Studio (na Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)
+- [Skróty klawiaturowe w programie Visual Studio (w systemie Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

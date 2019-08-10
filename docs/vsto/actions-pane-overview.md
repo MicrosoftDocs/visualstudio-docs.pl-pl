@@ -1,5 +1,5 @@
 ---
-title: Okienko akcji ― omówienie
+title: Przegląd okienka Akcje
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,148 +15,148 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6cbade56f80d75e6ab8d735aaf586d45d2dedb42
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440384"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926671"
 ---
-# <a name="actions-pane-overview"></a>Okienko akcji ― omówienie
-  Okienka akcji jest dostosowywany **akcji dla dokumentów** okienka zadań, który jest dołączony do określonego dokumentu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel. W okienku Akcje znajduje się wewnątrz okienka zadań pakietu Office oraz inne okienka wbudowanego zadania, takie jak **źródła XML** okienka zadań w programie Excel lub **style i formatowanie** okienka zadań w programie Word. Formanty Windows Forms lub kontrolek WPF umożliwia projektowanie interfejsu użytkownika w okienku Akcje.
+# <a name="actions-pane-overview"></a>Przegląd okienka Akcje
+  Okienko akcji to dostosowywalne okienko zadań **Akcje dokumentu** , które jest dołączone do określonego Microsoft Office dokumentu programu Word Microsoft Office lub skoroszytu programu Excel. Okienko akcje jest hostowane wewnątrz okienka zadań pakietu Office wraz z innymi wbudowanymi okienkami zadań, takimi jak okienko zadań **Źródło XML** w programie Excel lub w okienku zadania **Style i formatowanie** w programie Word. Aby zaprojektować interfejs użytkownika okienka akcji, można użyć formantów Windows Forms lub formantów WPF.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Okienka akcji można utworzyć tylko w przypadku dostosowywania poziomie dokumentu dla programu Word lub Excel. Nie można utworzyć okienka akcji w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).
+ Okienko akcji można utworzyć tylko w przypadku dostosowania na poziomie dokumentu dla programu Word lub Excel. Nie można utworzyć okienka akcji w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [dostępność funkcji według aplikacji pakietu Office i typów projektów](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
-> W okienku Akcje różni się od niestandardowych okienek zadań. Niestandardowe okienka zadań są skojarzone z aplikacją, określony dokument. Możesz utworzyć niestandardowe okienka zadań w dodatkach VSTO niektórych aplikacji pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
+> Okienko akcje różni się od niestandardowych okienek zadań. Niestandardowe okienka zadań są skojarzone z aplikacją, a nie określonym dokumentem. W dodatkach narzędzi VSTO można tworzyć niestandardowe okienka zadań dla niektórych Microsoft Office aplikacji. Aby uzyskać więcej informacji, zobacz [niestandardowe okienka zadań](../vsto/custom-task-panes.md).
 
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Użyj kontrolek WPF w okienku akcji programu Excel? ](http://go.microsoft.com/fwlink/?LinkId=132763).
+ ![link do wideo](../vsto/media/playvideo.gif "link do wideo") Aby zapoznać się z pokrewną [prezentacją wideo, zobacz Jak mogę: Używać formantów WPF wewnątrz okienka akcji programu Excel? ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
-## <a name="display-the-actions-pane"></a>Wyświetl okienko akcji
- W okienku Akcje jest reprezentowany przez <xref:Microsoft.Office.Tools.ActionsPane> klasy. Podczas tworzenia projektów dokumentów wystąpienia tej klasy jest dostępna w kodzie, za pomocą `ActionsPane` pole `ThisWorkbook` (dla programu Excel) lub `ThisDocument` (dla programu Word) klasy w projekcie. Aby wyświetlić okienko akcji, należy dodać kontrolki Windows Forms z <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwość `ActionsPane` pola. Poniższy przykład kodu dodaje formant o nazwie `actions` w okienku Akcje.
+## <a name="display-the-actions-pane"></a>Wyświetlanie okienka Akcje
+ Okienko akcje jest reprezentowane przez <xref:Microsoft.Office.Tools.ActionsPane> klasę. Podczas tworzenia projektu na poziomie dokumentu wystąpienie tej klasy jest dostępne dla kodu przy użyciu `ActionsPane` pola `ThisWorkbook` klasy (dla programu Excel) lub `ThisDocument` (dla programu Word) w projekcie. Aby wyświetlić okienko akcje, Dodaj kontrolkę Windows Forms do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwości `ActionsPane` pola. Poniższy przykład kodu dodaje kontrolkę o nazwie `actions` do okienka Akcje.
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
 
- W okienku Akcje staje się widoczna w czasie wykonywania, gdy tylko dodasz formant do niego. Po wyświetleniu okienka działań może dynamicznie dodać lub usunąć kontrolki w odpowiedzi na działania użytkownika. Zwykle, możesz dodać kod, aby wyświetlić okienko akcji w `Startup` program obsługi zdarzeń `ThisDocument` lub `ThisWorkbook` tak, aby widoczne jest okienko akcji po użytkownik najpierw otwiera dokument. Jednak można wyświetlić w okienku Akcje tylko w odpowiedzi na akcję użytkownika w dokumencie. Na przykład może dodać kod, aby `Click` zdarzeń kontrolki do dokumentu.
+ Okienko akcje będzie widoczne w czasie wykonywania, gdy tylko jawnie dodasz do niego formant. Po wyświetleniu okienka Akcje można dynamicznie dodawać lub usuwać kontrolki w odpowiedzi na akcje użytkownika. Zazwyczaj należy dodać kod, aby wyświetlić okienko akcje w programie `Startup` `ThisDocument` obsługi zdarzeń lub `ThisWorkbook` tak, aby okienko akcje było widoczne, gdy użytkownik po raz pierwszy otworzy dokument. Może jednak być konieczne wyświetlenie okienka Akcje tylko w odpowiedzi na akcję użytkownika w dokumencie. Na przykład, można dodać kod do `Click` zdarzenia kontrolki dokumentu.
 
-### <a name="add-multiple-controls-to-the-actions-pane"></a>Dodawanie wielu formantów do okienka akcji
- Gdy dodasz wiele kontrolek w okienku Akcje powinien grupowanie kontrolek w kontrolce użytkownika, a następnie dodać formant użytkownika do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwości. Ten proces obejmuje następujące kroki:
+### <a name="add-multiple-controls-to-the-actions-pane"></a>Dodawanie wielu formantów do okienka Akcje
+ Po dodaniu wielu formantów do okienka Akcje należy zgrupować kontrolki w kontrolce użytkownika, a następnie dodać kontrolkę użytkownika do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwości. Ten proces obejmuje następujące kroki:
 
-1. Tworzenie interfejsu użytkownika (UI) w okienku Akcje, dodając **kontrolki okienka akcji** lub **kontrolki użytkownika** elementu do projektu. Oba te elementy obejmują niestandardowych formularzy Windows <xref:System.Windows.Forms.UserControl> klasy. **Kontrolki okienka akcji** i **kontrolki użytkownika** elementy są równoważne; jedyna różnica polega na ich nazwy.
+1. Utwórz interfejs użytkownika w okienku Akcje, dodając **kontrolkę okienko akcji** lub element **kontrolki użytkownika** do projektu. Oba te elementy zawierają niestandardową klasę <xref:System.Windows.Forms.UserControl> Windows Forms. Elementy **kontrolne okienka Akcje** i **kontrolki użytkownika** są równoważne; Jedyną różnicą jest ich nazwa.
 
-2. Dodaj formanty Windows Forms do <xref:System.Windows.Forms.UserControl> za pomocą projektanta lub napisanie kodu.
+2. Dodaj kontrolki Windows Forms do <xref:System.Windows.Forms.UserControl> programu przy użyciu projektanta lub pisząc kod.
 
    > [!NOTE]
-   > Można również dodać kontrolki WPF w okienku Akcje, dodając WPF <xref:System.Windows.Controls.UserControl> do formularzy Windows Forms <xref:System.Windows.Forms.UserControl>. Aby uzyskać więcej informacji, zobacz [WPF Użyj kontrolki w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md).
+   > Możesz również dodać formanty WPF do okienka Akcje przez dodanie WPF <xref:System.Windows.Controls.UserControl> do Windows Forms. <xref:System.Windows.Forms.UserControl> Aby uzyskać więcej informacji, zobacz [Korzystanie z formantów WPF w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md).
 
-3. Dodaje wystąpienie kontrolki użytkownika niestandardowego do formantów, które są zawarte w `ActionsPane` pole `ThisWorkbook` (dla programu Excel) lub `ThisDocument` (dla programu Word) klasy w projekcie.
+3. Dodaj wystąpienie niestandardowej kontrolki użytkownika do formantów, które są zawarte w `ActionsPane` polu `ThisWorkbook` klasy (dla programu Excel) lub `ThisDocument` (dla programu Word) w projekcie.
 
-   Aby uzyskać przykłady ilustrujące ten proces bardziej szczegółowo, zobacz [jak: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+   Przykłady demonstrujące ten proces bardziej szczegółowo znajdują się [w temacie How to: Dodaj okienko akcji do dokumentów programu Word lub skoroszytów](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)programu Excel.
 
-## <a name="hide-the-actions-pane"></a>Ukrywanie okienka akcji
- Mimo że <xref:Microsoft.Office.Tools.ActionsPane> klasa ma <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metody i <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> właściwości nie można usunąć okienka akcji z poziomu interfejsu użytkownika przy użyciu wszystkich członków <xref:Microsoft.Office.Tools.ActionsPane> samej klasy. Wywoływanie <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metody lub ustawienie <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> właściwości **false** powoduje ukrycie formantów w okienku akcji; nie ukrywa okienko zadań.
+## <a name="hide-the-actions-pane"></a>Ukryj okienko akcje
+ Chociaż Klasa ma metodę i <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> właściwość, nie można usunąć okienka Akcje z interfejsu <xref:Microsoft.Office.Tools.ActionsPane> użytkownika przy użyciu żadnych elementów członkowskich samej klasy. <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> <xref:Microsoft.Office.Tools.ActionsPane> Wywołanie metody lub ustawienie wartości false powoduje ukrycie tylko kontrolek w okienku Akcje; nie powoduje ukrycia okienka zadań. <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>
 
- Aby ukryć okienka zadań w Twoim rozwiązaniu, masz kilka opcji:
+ Aby ukryć okienko zadań w rozwiązaniu, masz kilka opcji:
 
-- Dla programu Word, ustaw <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> właściwość <xref:Microsoft.Office.Interop.Word.TaskPane> obiekt, który reprezentuje Akcje dokumentu okienku zadań w celu **false**. Poniższy przykład kodu jest przeznaczona do uruchamiania z `ThisDocument` klasy w projekcie.
+- Dla programu Word Ustaw <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> Właściwość <xref:Microsoft.Office.Interop.Word.TaskPane> obiektu, który reprezentuje okienko zadań akcje dokumentu na **wartość FAŁSZ**. Poniższy przykład kodu jest przeznaczony do uruchomienia z `ThisDocument` klasy w projekcie.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- Dla programu Excel, należy ustawić <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> właściwość <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> obiekt **false**. Poniższy przykład kodu jest przeznaczona do uruchamiania z `ThisWorkbook` klasy w projekcie.
+- Dla programu Excel Ustaw <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> Właściwość <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> obiektu na **false**. Poniższy przykład kodu jest przeznaczony do uruchomienia z `ThisWorkbook` klasy w projekcie.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
-- Dla programu Word lub Excel, można również ustawić <xref:Microsoft.Office.Core.CommandBar.Visible%2A> właściwości paska poleceń, reprezentujący w okienku zadań w celu **false**. Poniższy przykład kodu jest przeznaczona do uruchamiania z `ThisDocument` lub `ThisWorkbook` klasy w projekcie.
+- Dla programu Word lub Excel można alternatywnie ustawić <xref:Microsoft.Office.Core.CommandBar.Visible%2A> Właściwość paska poleceń, który reprezentuje okienko zadania, na **wartość FAŁSZ**. Poniższy przykład kodu jest przeznaczony do uruchamiania z `ThisDocument` lub `ThisWorkbook` klasy w projekcie.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
 
-### <a name="clear-the-actions-pane-when-the-document-is-opened"></a>W okienku Akcje należy wyczyścić, jeśli dokument jest otwarty
- Podczas zapisywania przez użytkownika dokumentu, gdy jest widoczne okienko akcji, w okienku Akcje jest widoczny za każdym razem, gdy dokument jest otwarty, czy w okienku Akcje zawiera wszystkie kontrolki. Jeśli użytkownik chce kontrolować gdy się pojawi, wywołaj <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> metody `ActionsPane` pole `Startup` program obsługi zdarzeń `ThisDocument` lub `ThisWorkbook` aby upewnić się, że w okienku Akcje nie jest widoczny, gdy dokument jest otwarty.
+### <a name="clear-the-actions-pane-when-the-document-is-opened"></a>Wyczyść okienko akcje, gdy dokument zostanie otwarty
+ Gdy użytkownik zapisuje dokument, gdy okienko akcje jest widoczne, okienko akcje jest widoczne za każdym razem, gdy dokument zostanie otwarty, niezależnie od tego, czy okienko akcje zawiera formanty. Jeśli chcesz kontrolować gdy pojawia się, wywołaj <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> metodę `ActionsPane` pola `ThisDocument` w programie `Startup` obsługi zdarzeń lub `ThisWorkbook` , aby upewnić się, że okienko akcje nie jest widoczne po otwarciu dokumentu.
 
-### <a name="determine-when-the-actions-pane-is-closed"></a>Określić po zamknięciu okienka akcji
- Nie ma żadnego zdarzenia, które jest wywoływane, gdy zamknięto w okienku Akcje. Mimo że <xref:Microsoft.Office.Tools.ActionsPane> klasa ma <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> zdarzeń, to zdarzenie nie jest inicjowane, gdy użytkownik końcowy zostanie zamknięte w okienku Akcje. Zamiast tego należy to zdarzenie jest zgłaszane w przypadku kontrolek w okienku Akcje są ukryte przez wywołanie metody <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metody lub przez ustawienie <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> właściwości **false**.
+### <a name="determine-when-the-actions-pane-is-closed"></a>Ustalanie, kiedy okienko akcji jest zamknięte
+ W przypadku zamknięcia okienka Akcje nie ma zdarzenia, które jest zgłaszane. <xref:Microsoft.Office.Tools.ActionsPane> Chociaż Klasa<xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> ma zdarzenie, to zdarzenie nie jest wywoływane, gdy użytkownik końcowy zamknie okienko akcje. Zamiast tego to zdarzenie jest zgłaszane, gdy kontrolki okienka Akcje są ukrywane przez wywołanie <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metody lub przez <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> ustawienie właściwości na **false**.
 
- Po zamknięciu przez użytkownika w okienku Akcje, użytkownik może wyświetlić ją ponownie, wykonując jedną z następujących procedur w interfejsie użytkownika (UI) aplikacji.
+ Gdy użytkownik zamknie okienko akcje, użytkownik może go wyświetlić ponownie, wykonując jedną z następujących procedur w interfejsie użytkownika aplikacji.
 
-##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Aby wyświetlić okienko akcji przy użyciu interfejsu użytkownika programu Word lub Excel
+##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Aby wyświetlić okienko akcje przy użyciu interfejsu użytkownika programu Word lub Excel
 
-1. Na wstążce kliknij **widoku** kartę.
+1. Na wstążce kliknij kartę **Widok** .
 
-2. W **Pokaż/Ukryj** grupy, kliknij przycisk **akcji dla dokumentów** przycisku przełączania.
+2. W grupie **Pokaż/Ukryj** kliknij przycisk Przełącz **Akcje dokumentu** .
 
-## <a name="program-actions-pane-events"></a>Zdarzenia w okienku akcji programu
- Można dodać wiele kontrolek użytkownika w okienku Akcje, a następnie napisać kod, aby reagować na zdarzenia w dokumencie przez pokazywania i ukrywania kontrolek użytkownika. Jeśli mapujesz elementy schematu XML w dokumencie, zawsze wtedy, gdy punkt wstawiania znajduje się w jednym z elementów XML można wyświetlić niektórych kontrolek użytkownika w okienku Akcje. Aby uzyskać więcej informacji, zobacz [jak: Mapowanie schematów z dokumentami programu Word w programie Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) i [jak: Mapowanie schematów z arkuszami w programie Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).
+## <a name="program-actions-pane-events"></a>Zdarzenia okienka Akcje programu
+ Do okienka Akcje można dodać wiele kontrolek użytkownika, a następnie napisać kod w celu reagowania na zdarzenia w dokumencie, pokazując i ukrywając kontrolki użytkownika. Jeśli mapujesz elementy schematu XML do dokumentu, możesz pokazać niektóre kontrolki użytkownika w okienku Akcje, gdy punkt wstawiania znajduje się w jednym z elementów XML. Aby uzyskać więcej informacji, zobacz [jak: Mapuj schematy na dokumenty programu Word w programie](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) Visual [Studio i instrukcje: Mapuj schematy do arkuszy w programie Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).
 
- Można także napisać kod, aby reagować na zdarzenia dowolnego obiektu, w tym kontrolki hosta, aplikacji lub zdarzeń dokumentów. Aby uzyskać więcej informacji, zobacz [instruktażu: Program w odniesieniu do zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
+ Możesz również napisać kod, aby odpowiedzieć na zdarzenia dowolnego obiektu, w tym zdarzenia kontroli hosta, aplikacji lub dokumentu. Aby uzyskać więcej informacji, [zobacz Przewodnik: Program przed zdarzeniami formantu](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)NamedRange.
 
-## <a name="bind-data-to-controls-on-the-actions-pane"></a>Wiązanie danych z kontrolkami w okienku Akcje
- Formanty w okienku akcji mają te same możliwości wiązania danych jako kontrolek na formularzach Windows Forms. Kontrolki można powiązać ze źródłami danych, takich jak zestawy danych, typizowanych zestawów danych i XML. Aby uzyskać więcej informacji, zobacz [powiązanie danych oraz Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
+## <a name="bind-data-to-controls-on-the-actions-pane"></a>Powiązywanie danych z kontrolkami w okienku Akcje
+ Kontrolki w okienku Akcje mają takie same możliwości powiązania danych jak kontrolki na Windows Forms. Można powiązać kontrolki ze źródłami danych, takimi jak zestawy danych, zestawy danych w określonym formacie i XML. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych i Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
- Możesz powiązać kontrolkami w okienku akcji i kontrolki do dokumentu do tego samego zestawu danych. Na przykład można utworzyć relacji wzorzec/szczegół między kontrolkami w okienku akcji i kontrolek w arkuszu. Aby uzyskać więcej informacji, zobacz [instruktażu: Wiązanie danych z kontrolkami w okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).
+ Można powiązać kontrolki w okienku Akcje i kontrolki na dokumencie z tym samym zestawem danych. Na przykład można utworzyć relację wzorzec/szczegóły między kontrolkami w okienku Akcje i kontrolkami w arkuszu. Aby uzyskać więcej informacji, [zobacz Przewodnik: Powiąż dane z kontrolkami w okienku](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)akcji programu Excel.
 
 ## <a name="validate-data-in-actions-pane-controls"></a>Sprawdzanie poprawności danych w kontrolkach okienka akcji
- Jeśli Wyświetla okno komunikatu w <xref:System.Windows.Forms.Control.Validating> programu obsługi zdarzeń formantu w okienku Akcje zdarzenia może zostać wywołane po raz drugi, gdy fokus z formantu do okna komunikatu. Aby uniknąć tego problemu, należy użyć <xref:System.Windows.Forms.ErrorProvider> formantu, aby wyświetlić komunikaty o błędach weryfikacji.
+ Jeśli zostanie wyświetlone okno komunikatu w <xref:System.Windows.Forms.Control.Validating> procedurze obsługi zdarzeń kontrolki w okienku Akcje, zdarzenie może zostać wywołane po przeniesieniu fokusu z formantu do okna komunikatu. Aby uniknąć tego problemu, użyj <xref:System.Windows.Forms.ErrorProvider> kontrolki, aby wyświetlić wszystkie komunikaty o błędach walidacji.
 
-## <a name="user-control-stacking-order"></a>Kontrolka użytkownika kolejność układania
- Jeśli używasz wielu kontrolek użytkownika, można napisać kod, aby prawidłowo stosu kontrolki użytkownika w okienku akcji czy jest zadokowany w pionie lub poziomie. Możesz ustawić kolejność kontrolki użytkownika w okienku akcji, używając <xref:Microsoft.Office.Tools.StackStyle> wyliczenie <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> właściwości. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)
+## <a name="user-control-stacking-order"></a>Kolejność układania formantów użytkownika
+ Jeśli używasz wielu kontrolek użytkownika, możesz napisać kod w celu prawidłowego stosu kontrolek użytkownika w okienku Akcje, niezależnie od tego, czy jest zadokowany pionowo czy poziomo. Kolejność układania formantów użytkownika w okienku Akcje można ustawić przy użyciu <xref:Microsoft.Office.Tools.StackStyle> wyliczenia <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> właściwości. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie układem kontrolek w](../vsto/how-to-manage-control-layout-on-actions-panes.md)okienkach akcji.
 
- <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> Właściwości można wziąć pod uwagę następujące <xref:Microsoft.Office.Tools.StackStyle> wartości wyliczenia.
+ Właściwość może przyjmować następujące <xref:Microsoft.Office.Tools.StackStyle> wartości wyliczania. <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>
 
 |Styl stosu|Definicja|
 |--------------------|----------------|
-|FromBottom|Stos w dolnej części okienka działań.|
-|FromLeft|Stack — z lewej strony, w okienku Akcje.|
-|FromRight|Stack — z prawej strony, w okienku Akcje.|
-|FromTop|Stosu, w górnej części okienka działań.|
-|Brak|Nie stosu zdefiniowane. kolejność jest kontrolowana przez dewelopera.|
+|FromBottom|Stos u dołu okienka Akcje.|
+|FromLeft|Stos z lewej strony okienka Akcje.|
+|FromRight|Stos z prawej strony okienka Akcje.|
+|FromTop|Stos w górnej części okienka Akcje.|
+|Brak|Nie zdefiniowano kolejności układania; zamówienie jest kontrolowane przez dewelopera.|
 
- Poniższy kod ustawia <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> właściwości stosu kontrolki użytkownika w górnej części okienka działań.
+ Poniższy kod ustawia <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> właściwość w celu stosu kontrolek użytkownika w górnej części okienka Akcje.
 
  [!code-csharp[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#10)]
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
-## <a name="anchor-controls"></a>Formanty zakotwiczenia
- Jeśli użytkownik zmieni rozmiar okienka Akcje w czasie wykonywania, formanty można zmienić rozmiar przy użyciu okienka działań. Możesz użyć <xref:System.Windows.Forms.Control.Anchor%2A> właściwości formantu Windows Forms z kontrolkami zakotwiczenia w okienku Akcje. Można również zakotwiczyć kontrolek Windows Forms na kontrolkę użytkownika w taki sam sposób. Aby uzyskać więcej informacji, zobacz [jak: Kotwiczenie formantów na formularzach Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
+## <a name="anchor-controls"></a>Kontrolki kotwic
+ Jeśli użytkownik zmieni rozmiar okienka Akcje w czasie wykonywania, kontrolki mogą zmieniać rozmiar w okienku Akcje. Za pomocą <xref:System.Windows.Forms.Control.Anchor%2A> właściwości kontrolki Windows Forms można zakotwiczyć kontrolki w okienku Akcje. Możesz również zakotwiczyć kontrolki Windows Forms w kontrolce użytkownika w taki sam sposób. Aby uzyskać więcej informacji, zobacz [jak: Kontrolki kotwicowe](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)na Windows Forms.
 
-## <a name="resize-the-actions-pane"></a>Zmień rozmiar okienka akcji
- Nie można bezpośrednio zmienić rozmiar <xref:Microsoft.Office.Tools.ActionsPane> ponieważ <xref:Microsoft.Office.Tools.ActionsPane> jest osadzony w okienku zadań. Jednak można zmienić programistycznie szerokość panelu zadań, ustawiając <xref:Microsoft.Office.Core.CommandBar.Width%2A> właściwość <xref:Microsoft.Office.Core.CommandBar> reprezentujący okienka zadań. Można zmienić wysokość okienka zadań, jeśli jest zadokowany poziomo lub jest liczb zmiennoprzecinkowych.
+## <a name="resize-the-actions-pane"></a>Zmień rozmiar okienka Akcje
+ Nie można bezpośrednio zmienić rozmiaru <xref:Microsoft.Office.Tools.ActionsPane> , <xref:Microsoft.Office.Tools.ActionsPane> ponieważ jest osadzony w okienku zadań. Można jednak programowo zmienić szerokość okienka zadań, ustawiając <xref:Microsoft.Office.Core.CommandBar.Width%2A> Właściwość <xref:Microsoft.Office.Core.CommandBar> , która reprezentuje okienko zadań. Możesz zmienić wysokość okienka zadań, jeśli jest zadokowana w poziomie lub w pionie.
 
- Programowe zmienianie rozmiaru w okienku zadań nie jest zalecane, ponieważ użytkownik powinien mieć możliwość wyboru rozmiar okienka zadań, który najlepiej odpowiada jego potrzebom. Jeśli należy zmienić rozmiar szerokość panelu zadań, można jednak użyć poniższego kodu do wykonania tego zadania.
+ Programowe zmienianie rozmiaru okienka zadań nie jest zalecane, ponieważ użytkownik powinien mieć możliwość wybrania rozmiaru okienka zadań, który najlepiej odpowiada potrzebom. Jednak w przypadku konieczności zmiany szerokości okienka zadań można użyć poniższego kodu do osiągnięcia tego zadania.
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
  [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]
 
-## <a name="reposition-the-actions-pane"></a>Zmienia położenie okienka akcji
- Nie można bezpośrednio zmienić położenie <xref:Microsoft.Office.Tools.ActionsPane> ponieważ jest osadzony w okienku zadań. Jednak programowo można przenieść w okienku zadań, ustawiając <xref:Microsoft.Office.Core.CommandBar.Position%2A> właściwość <xref:Microsoft.Office.Core.CommandBar> reprezentujący okienka zadań.
+## <a name="reposition-the-actions-pane"></a>Zmień położenie okienka Akcje
+ Nie można bezpośrednio zmienić położenia, <xref:Microsoft.Office.Tools.ActionsPane> ponieważ jest on osadzony w okienku zadań. Można jednak programowo przenieść okienko zadań przez ustawienie <xref:Microsoft.Office.Core.CommandBar.Position%2A> właściwości <xref:Microsoft.Office.Core.CommandBar> , która reprezentuje okienko zadań.
 
- Programowe zmienianie pozycji w okienku zadań nie jest zalecane, ponieważ użytkownik powinien mieć możliwość wybierz odpowiednią pozycję okienko zadań na ekranie, który najlepiej odpowiada jego potrzebom. Jeśli musisz przejść do określonej pozycji w okienku zadań, można jednak użyć poniższego kodu do wykonania tego zadania.
+ Programowo zmiana położenia okienka zadań nie jest zalecana, ponieważ użytkownik powinien mieć możliwość wybrania pozycji okienka zadań na ekranie, który najlepiej odpowiada jego potrzebom. Jeśli jednak musisz przenieść okienko zadań do określonego położenia, możesz użyć poniższego kodu, aby wykonać to zadanie.
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#100)]
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
-> Użytkownicy końcowi mogą ręcznie zmienić położenie okienka zadań w dowolnym momencie. Nie istnieje żaden sposób zapewnić, że w okienku zadań pozostaną zadokowany w położeniu wskazanej programowo. Jednak możesz sprawdzić zmiany orientacji i upewnij się, czy kontrolek w okienku Akcje są ułożone w odpowiednim kierunku. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md).
+> Użytkownicy końcowi mogą ręcznie zmieniać położenie okienka zadań w dowolnym momencie. Nie ma żadnego sposobu, aby upewnić się, że okienko zadań pozostanie zadokowane w miejscu, które będzie używane programowo. Można jednak sprawdzić zmiany orientacji i upewnić się, że kontrolki w okienku Akcje są ułożone w odpowiednim kierunku. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie układem kontrolek w](../vsto/how-to-manage-control-layout-on-actions-panes.md)okienkach akcji.
 
- Ustawienie <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> i <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> właściwości <xref:Microsoft.Office.Tools.ActionsPane> nie powoduje zmiany położenia, ponieważ <xref:Microsoft.Office.Tools.ActionsPane> obiekt jest osadzony w okienku zadań.
+ <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> Ustawieniewłaściwości<xref:Microsoft.Office.Tools.ActionsPane> inie<xref:Microsoft.Office.Tools.ActionsPane> powoduje zmiany położenia, ponieważ obiekt jest osadzony w okienku zadań. <xref:Microsoft.Office.Tools.ActionsPane.Top%2A>
 
- Jeśli nie jest zadokowany w okienku zadań, możesz ustawić <xref:Microsoft.Office.Core.CommandBar.Top%2A> i <xref:Microsoft.Office.Core.CommandBar.Left%2A> właściwości <xref:Microsoft.Office.Core.CommandBar> reprezentujący okienka zadań. Poniższy kod powoduje okienka zadań niezadokowane do lewego górnego rogu dokumencie.
+ Jeśli okienko zadań nie jest zadokowane, można ustawić <xref:Microsoft.Office.Core.CommandBar.Top%2A> właściwości <xref:Microsoft.Office.Core.CommandBar> i <xref:Microsoft.Office.Core.CommandBar.Left%2A> , które reprezentują okienko zadań. Poniższy kod przenosi niezadokowane okienko zadań do lewego górnego rogu dokumentu.
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Użyj kontrolek WPF w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md)
+- [Korzystanie z formantów WPF w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)
-- [Instrukcje: Dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Instrukcje: Dodawanie okienka akcji do dokumentów programu Word lub skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
-- [Przewodnik: Wiązanie danych z kontrolkami w okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)
-- [Przewodnik: Wiązanie danych z kontrolkami w okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)
-- [Instrukcje: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)
+- [Przewodnik: Powiązywanie danych z kontrolkami w okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)
+- [Przewodnik: Powiązywanie danych z kontrolkami w okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)
+- [Instrukcje: Zarządzanie układem kontrolek w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)

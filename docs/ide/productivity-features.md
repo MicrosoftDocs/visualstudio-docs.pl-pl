@@ -7,24 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046390"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919476"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Porady dotyczące wydajności dla programu Visual Studio
 
-W tym artykule omówiono porady dla programu Visual Studio, funkcji, które ułatwiają pisania, nawigowania i debugowania kodu, szybkie i skuteczne.
+W tym artykule omówiono wskazówki dotyczące funkcji programu Visual Studio, które ułatwiają szybkie i wydajniejsze pisanie, nawigowanie i debugowanie kodu.
 
-Aby dowiedzieć się, przydatne skrótów klawiaturowych, zobacz [skróty wydajności](../ide/productivity-shortcuts.md). Aby uzyskać pełną listę skrótów do poleceń, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Aby uzyskać informacje na temat przydatnych skrótów klawiaturowych, zobacz [skróty](../ide/productivity-shortcuts.md)dotyczące produktywności. Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="write-code"></a>Pisanie kodu
 
 Pisz kod szybciej, korzystając z następujących funkcji.
 
-- **Użyj poleceń wygody**. Program Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład można wybrać polecenie, aby łatwo zduplikowany wiersz kodu, bez konieczności kopiowania go, zmienić położenie kursora a następnie wklej go. Wybierz **Edytuj** > **zduplikowane** lub naciśnij **Ctrl**+**E**,**V**. Można również szybkiego poszerzenia lub kontrakt zaznaczonego tekstu, wybierając **Edytuj** > **zaawansowane** > **Rozwiń zaznaczenie** lub **Edytuj** > **zaawansowane** > **Zwiń zaznaczenie**, lub naciskając **Shift** + **Alt** + **=** lub **Shift**+**Alt** +  **-** .
+- **Użyj poleceń wygody**. Program Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład można wybrać polecenie, aby łatwo zduplikować wiersz kodu bez konieczności jego kopiowania, zmiany położenia kursora, a następnie wklejenia. Wybierz **Edytuj** > **zduplikowane** lub naciśnij **Ctrl**+**E**,**V**. Możesz również szybko rozwijać lub zwijać zaznaczenie tekstu, wybierając pozycję **Edytuj** > **Zaawansowane** > **Rozwiń zaznaczenie** lub **Edytuj** > kontrakt**Zaawansowany** >  **Zaznaczenie**lub naciśnięcie klawisza **SHIFT**+**Alt** + **=** lub **SHIFT**+**Alt**.+ **-**
 
 - **Korzystać z technologii IntelliSense**. Podczas wprowadzania kodu w edytorze, pojawi się informacje IntelliSense, takie jak lista członków, informacje o parametrach, szybkie informacje, pomoc podpisu i Dokończ wyraz. Funkcje te obsługują niepełne dopasowywanie tekstu. na przykład listy wyników dla List Members zawiera nie tylko wpisy, które rozpoczynają się od znaków czy zostały wprowadzone, ale także wpisy, które zawierają kombinacje znaków w dowolnym miejscu ich nazw. Aby uzyskać więcej informacji, zobacz [IntelliSense użyj](../ide/using-intellisense.md).
 
@@ -46,7 +46,7 @@ Pisz kod szybciej, korzystając z następujących funkcji.
 
 ## <a name="navigate-within-your-code"></a>Nawigowanie w kodzie
 
- Aby znaleźć i Przenieś do określonych lokalizacji w kodzie szybciej, można użyć różnych technik przetwarzania.
+Aby znaleźć i Przenieś do określonych lokalizacji w kodzie szybciej, można użyć różnych technik przetwarzania.
 
 - **Zakładki linii kodu**. Można użyć zakładek, aby szybko przechodzić do określonych wierszy kodu w pliku.
 
@@ -66,23 +66,23 @@ Możesz dodatkowo przeszukiwać środowisko IDE dla poleceń, plików i opcji, o
 
 - **Wyświetlenie tylko błędów, które mają adres**. Jeśli wybierzesz **filtru** znajdujący się na **lista błędów** narzędzi, można zmniejszyć liczbę błędów, które pojawiają się w **lista błędów** okna. Możesz wyświetlić tylko błędy w plikach, które są otwarte w edytorze, tylko błędy w bieżącym pliku lub tylko błędy w bieżącym projekcie. Można również wyszukiwać **lista błędów** okna, aby znaleźć określone błędy.
 
-- **Znajdowanie okien dialogowych, poleceń, opcji i**. W polu wyszukiwania wprowadź słowa kluczowe lub frazy dla elementów, które próbujesz znaleźć. Na przykład, poniższe opcje pojawiają się po wprowadzeniu **nowy projekt**:
+- **Znajdowanie okien dialogowych, poleceń menu, opcji i innych**. W polu wyszukiwania wprowadź słowa kluczowe lub frazy dla elementów, które próbujesz znaleźć. Na przykład następujące opcje są wyświetlane, jeśli wprowadzisz **Nowy projekt**:
 
    ::: moniker range="vs-2017"
 
    ![Szybkie uruchamianie wyniki "nowego projektu"](../ide/media/productivity_quicklaunch.png)
 
-   **Szybkie uruchamianie** Wyświetla łącza, aby utworzyć nowy projekt, aby dodać nowy element projektu, a także **projekty i rozwiązania** strony w **opcje** okno dialogowe, między innymi. Wyniki wyszukiwania, może również obejmować pliki projektu i okna narzędzi.
+   Przycisk **szybkiego uruchamiania** wyświetla linki umożliwiające utworzenie nowego projektu, dodanie nowego elementu do projektu i strony **projekty i rozwiązania** w oknie dialogowym **Opcje** , między innymi. Wyniki wyszukiwania mogą również obejmować pliki projektu i okna narzędzi.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Wyniki wyszukiwania dla "nowego projektu"](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![Wyniki wyszukiwania dla elementu "nowy projekt"](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Naciśnij klawisz **Ctrl**+**Q** przejść bezpośrednio do pola wyszukiwania.
+   Naciśnij klawisz **Ctrl**+**Q** , aby przejść bezpośrednio do pola wyszukiwania.
 
 ## <a name="debug-code"></a>Możliwe jest debugowanie kodu
 
@@ -114,13 +114,13 @@ Można szybko wyświetlić wiersz polecenia dla deweloperów lub innego narzędz
 
 ::: moniker range="vs-2017"
 
-1. W Eksploratorze Windows przejdź do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools*.
+1. W Eksploratorze Windows przejdź do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017 \ Visual Studio Tools*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. W Eksploratorze Windows przejdź do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*.
+1. W Eksploratorze Windows przejdź do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019 \ Visual Studio Tools*.
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ Można szybko wyświetlić wiersz polecenia dla deweloperów lub innego narzędz
 
 ## <a name="manage-files-toolbars-and-windows"></a>Zarządzanie plikami, paski narzędzi i systemu windows
 
-W dowolnym momencie może być działa w wielu plikach kodów i poruszać się między kilkoma oknami narzędzi, jak utworzyć aplikację. Możesz zachować zorganizowanym przy użyciu następujących wskazówek:
+W dowolnym momencie może być działa w wielu plikach kodów i poruszać się między kilkoma oknami narzędzi, jak utworzyć aplikację. Można organizować, korzystając z następujących wskazówek:
 
 - **Zachowaj pliki, które są często używane widoczne w edytorze**. Możesz przypiąć pliki po lewej stronie karty, by pozostały widoczne niezależnie od tego, ile plików jest otwarty w edytorze.
 
@@ -138,11 +138,11 @@ W dowolnym momencie może być działa w wielu plikach kodów i poruszać się m
 
    Można również zarządzać plikami łatwiej, tworząc inną instancję **Eksploratora rozwiązań** i przenosząc ją na inny monitor. Aby utworzyć inną instancję programu **Eksploratora rozwiązań**, otwórz menu skrótów na liście **Eksploratora rozwiązań**, a następnie wybierz **nowy widok Eksploratora rozwiązań**.
 
-- **Dostosowywanie czcionek, które są wyświetlane w programie Visual Studio**. Można zmienić krój czcionki, rozmiar i kolor, który jest używany dla tekstu w IDE. Na przykład możesz dostosować kolor elementów konkretnego kodu w edytorze i krój czcionki w narzędzie systemu windows lub w całej IDE. Aby uzyskać więcej informacji, zobacz [jak: Zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) i [jak: Zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Dostosowywanie czcionek, które są wyświetlane w programie Visual Studio**. Można zmienić krój czcionki, rozmiar i kolor, który jest używany dla tekstu w IDE. Na przykład możesz dostosować kolor elementów konkretnego kodu w edytorze i krój czcionki w narzędzie systemu windows lub w całej IDE. Aby uzyskać więcej informacji, zobacz [jak: Zmień czcionki i kolory](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) oraz [następujące instrukcje: Zmień czcionki i kolory w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Domyślne skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Instrukcje: Dostosowywanie menu i paski narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Instrukcje: Dostosowywanie menu i pasków narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [Przewodnik: Tworzenie prostej aplikacji](../get-started/csharp/tutorial-wpf.md)
 - [Ułatwienia dostępu, porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md)

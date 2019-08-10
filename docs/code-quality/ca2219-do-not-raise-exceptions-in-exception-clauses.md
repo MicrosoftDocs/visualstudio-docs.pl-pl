@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a644cf3dc934676a14f1c5c59a6582fcd45ae7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f8e949e21530654882cba99a7d9fedad8b5b59b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806657"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920268"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątków
 
@@ -28,26 +28,26 @@ ms.locfileid: "62806657"
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału, istotne|
+|Zmiana kluczowa|Bez przerywania, przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Wyjątek jest generowany z `finally`, filtr lub klauzuli fault.
+Wyjątek jest generowany z `finally`klauzuli, Filter lub Fault.
 
 ## <a name="rule-description"></a>Opis reguły
- Gdy wyjątek jest zgłaszany w klauzuli wyjątek, zwiększa znacznie utrudnia debugowanie.
+Gdy wyjątek jest zgłaszany w klauzuli wyjątku, znacznie zwiększa trudność debugowania.
 
- Gdy wyjątek jest zgłaszany w `finally` lub klauzuli fault ukrywa aktywny wyjątek, jeśli jest obecny. Dzięki temu można trudno wykrycie i zdebugowanie pierwotnego błędu.
+Gdy wyjątek jest zgłaszany w `finally` klauzuli lub Fault, nowy wyjątek ukrywa aktywny wyjątek, jeśli jest obecny. Powoduje to, że oryginalny błąd trudno wykryć i debugować.
 
- Gdy wyjątek jest zgłaszany w klauzuli filtru, środowisko uruchomieniowe dyskretnie przechwytuje wyjątek i powoduje, że filtr na wartość false. Nie istnieje żaden sposób odróżnić filtr oceny false, a wyjątek jest wyrzuca wyjątków z filtru. Utrudnia to wykrywanie i debugowanie błędów w logice filtru.
+Gdy wyjątek jest zgłaszany w klauzuli filtru, środowisko uruchomieniowe dyskretnie przechwytuje wyjątek i powoduje, że filtr jest obliczany na wartość false. Nie ma możliwości poinformowania o różnicy między filtrem a wartością false a błędem zgłaszanym przez filtr. Dzięki temu trudno wykrywać i debugować błędy w logice filtru.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać problem to naruszenie tej zasady, nie jawnie zgłaszała wyjątku z `finally`, filtr lub klauzuli fault.
+Aby rozwiązać ten problem, nie należy jawnie zgłosić wyjątku z `finally`klauzuli, Filter lub Fault.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Brak żadnych scenariuszy, w których wyjątek zgłaszany w klauzuli wyjątek zapewnia korzyści wykonywanie kodu.
+Nie pomijaj ostrzeżenia dla tej reguły. Nie ma scenariuszy, w których wyjątek zgłoszony w klauzuli wyjątku stanowi korzyść dla wykonywanego kodu.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+[CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>Zobacz także
- [Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)
+[Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)

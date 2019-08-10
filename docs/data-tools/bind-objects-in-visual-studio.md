@@ -1,5 +1,5 @@
 ---
-title: Dane powiązywanie obiektów niestandardowych
+title: Obiekty niestandardowe powiązane z danymi
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,19 +16,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9994d52c5ca39d744cf26dc019440e70e809ee8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824368"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925661"
 ---
-# <a name="bind-objects-as-data-sources-in-visual-studio"></a>Powiązanie obiektów jako źródła danych w programie Visual Studio
+# <a name="bind-objects-as-data-sources-in-visual-studio"></a>Powiązywanie obiektów jako źródeł danych w programie Visual Studio
 
-Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obiektów jako źródło danych w aplikacji. Jeśli chcesz przechowywać dane z bazy danych w obiekcie, który możesz powiązać formanty interfejsu użytkownika, zalecanym podejściem jest używać programu Entity Framework do generowania klasy lub klas. Entity Framework automatycznie generuje wszystkie standardowy śledzenia zmian kodu, co oznacza, że wszelkie zmiany lokalne obiekty automatycznie są zachowywane do bazy danych, po wywołaniu funkcji AcceptChanges w obiekcie DbSet. Aby uzyskać więcej informacji, zobacz [dokumentacja programu Entity Framework](https://ef.readthedocs.org/en/latest/).
+Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obiektów jako źródło danych w aplikacji. Jeśli chcesz przechowywać dane z bazy danych w obiekcie, który możesz powiązać formanty interfejsu użytkownika, zalecanym podejściem jest używać programu Entity Framework do generowania klasy lub klas. Entity Framework automatycznie generuje cały kod standardowego śledzenia zmian, co oznacza, że wszelkie zmiany w obiektach lokalnych są automatycznie utrwalane w bazie danych po wywołaniu metody AcceptChanges w obiekcie Nieogólnymi. Aby uzyskać więcej informacji, zobacz [dokumentacja programu Entity Framework](https://ef.readthedocs.org/en/latest/).
 
 > [!TIP]
-> Podejścia do powiązania obiektu, w tym artykule należy rozważyć tylko, jeśli aplikacja już opiera się na zestawach danych. Można również użyć tych metod, jeśli już znasz z zestawami danych, a dane, które będą przetwarzać jest tabelarycznym i nie jest zbyt złożony lub zbyt duży. Aby uzyskać przykład jeszcze prostsze, dotyczące ładowania danych bezpośrednio do obiektów przy użyciu elementu DataReader i ręczne aktualizowanie interfejsu użytkownika bez wiązania danych, zobacz [Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).
+> Podejścia do powiązania obiektów w tym artykule należy wziąć pod uwagę tylko wtedy, gdy aplikacja jest już oparta na zestawach danych. Możesz również użyć tych metod, jeśli znasz już zestawy danych, a dane, które będą przetwarzane, są tabelaryczne i nie są zbyt skomplikowane lub zbyt duże. Aby uzyskać przykład jeszcze prostsze, dotyczące ładowania danych bezpośrednio do obiektów przy użyciu elementu DataReader i ręczne aktualizowanie interfejsu użytkownika bez wiązania danych, zobacz [Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).
 
 ## <a name="object-requirements"></a>Wymagania dotyczące obiektu
 
@@ -38,7 +38,7 @@ Ogólnie rzecz biorąc niestandardowe obiekty nie wymagają żadnych określonyc
 
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Przykłady użycia niestandardowych obiektów jako źródła danych
 
-Istnieją sposoby niezliczone, aby zaimplementować logikę aplikacji, podczas pracy z obiektami jako źródło danych, SQL bazy danych są kilka standardowych operacji, które można uprościć za pomocą obiektów TableAdapter generowanych przez program Visual Studio. Tej stronie wyjaśniamy sposób implementacji tych standardowych procesów za pomocą adapterów TableAdapter. Nie ma służyć jako przewodnik w do tworzenia niestandardowych obiektów. Na przykład będzie zazwyczaj wykonywać następujące operacje standardowe niezależnie od konkretnej implementacji obiektów lub aplikacji logiki:
+Chociaż istnieją niezliczone sposoby implementacji logiki aplikacji podczas pracy z obiektami jako źródłem danych, w przypadku baz danych SQL istnieje kilka standardowych operacji, które można uprościć za pomocą obiektów TableAdapter utworzonych przez program Visual Studio. Na tej stronie wyjaśniono, jak zaimplementować te standardowe procesy przy użyciu TableAdapters. Nie jest on przeznaczony jako przewodnik tworzenia niestandardowych obiektów. Na przykład będzie zazwyczaj wykonywać następujące operacje standardowe niezależnie od konkretnej implementacji obiektów lub aplikacji logiki:
 
 - Ładowanie danych w obiektach (zazwyczaj z bazy danych).
 
@@ -63,7 +63,7 @@ W tym przykładzie dane zostały załadowane do obiektów za pomocą adapterów 
 Najprostszym sposobem załadowania niestandardowych obiektów z danymi jest wywołać `TableAdapter.GetData` metody w pętli poprzez Kolekcja wierszy w tabeli zwracanych danych i wypełnić każdego obiektu z wartościami w każdym wierszu. Możesz utworzyć `GetData` metodę zwracającą tabelę danych wypełnione dla dowolnego zapytania, które dodano do TableAdapter.
 
 > [!NOTE]
-> Program Visual Studio nazw zapytań TableAdapter `Fill` i `GetData` domyślnie, ale można zmienić tych nazw żadnych prawidłową nazwą metody.
+> Program Visual Studio domyślnie nazywa zapytania `Fill` `GetData` TableAdapter, ale można je zmienić na dowolną poprawną nazwę metody.
 
 Poniższy przykład pokazuje, jak w pętli poprzez wierszy w tabeli danych w celu wypełnienia obiektu z danymi:
 
@@ -72,11 +72,11 @@ Poniższy przykład pokazuje, jak w pętli poprzez wierszy w tabeli danych w cel
 
 ### <a name="create-a-typed-collection-of-objects"></a>Tworzenie typizowanego kolekcji obiektów
 
-Tworzenie klas kolekcji dla obiektów, lub użyj kolekcje wpisane, które są automatycznie udostępniane przez [BindingSource, składnik](/dotnet/framework/winforms/controls/bindingsource-component).
+Można tworzyć klasy kolekcji dla obiektów lub używać kolekcji z określonym typem, które są automatycznie dostarczane przez [Składnik BindingSource](/dotnet/framework/winforms/controls/bindingsource-component).
 
-Gdy tworzysz klasę kolekcji niestandardowej dla obiektów, zaleca się dziedziczenie z <xref:System.ComponentModel.BindingList%601>. Ta klasa ogólna zapewnia funkcje do administrowania kolekcji, a także możliwość wywoływać zdarzenia, które wysyłać powiadomienia do infrastruktury powiązanie danych w formularzach Windows Forms.
+Podczas tworzenia niestandardowej klasy kolekcji dla obiektów, zalecamy, aby dziedziczyć z <xref:System.ComponentModel.BindingList%601>. Ta klasa ogólna zapewnia funkcje do administrowania kolekcji, a także możliwość wywoływać zdarzenia, które wysyłać powiadomienia do infrastruktury powiązanie danych w formularzach Windows Forms.
 
-Automatycznie generowanej kolekcji w <xref:System.Windows.Forms.BindingSource> używa <xref:System.ComponentModel.BindingList%601> dla jego typizowaną kolekcją. Jeśli aplikacja nie wymaga dodatkowych funkcji, można zachować kolekcji w ramach <xref:System.Windows.Forms.BindingSource>. Aby uzyskać więcej informacji, zobacz <xref:System.Windows.Forms.BindingSource.List%2A> właściwość <xref:System.Windows.Forms.BindingSource> klasy.
+Automatycznie wygenerowana kolekcja w programie <xref:System.Windows.Forms.BindingSource> <xref:System.ComponentModel.BindingList%601> używa dla swojej kolekcji z określonym typem. Jeśli aplikacja nie wymaga dodatkowych funkcji, można zachować swoją kolekcję w ramach programu <xref:System.Windows.Forms.BindingSource>. Aby uzyskać więcej informacji, zobacz <xref:System.Windows.Forms.BindingSource.List%2A> właściwość <xref:System.Windows.Forms.BindingSource> klasy.
 
 > [!NOTE]
 > Jeśli Twoja kolekcja wymaga funkcji, nie został dostarczony przez implementację podstawową <xref:System.ComponentModel.BindingList%601>, należy utworzyć kolekcję niestandardową, więc można dodać do klasy, zgodnie z potrzebami.
@@ -98,10 +98,10 @@ Poniższy kod przedstawia sposób dodawania obiektów do typizowaną kolekcją w
 [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
 [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]
 
- Poniższy kod przedstawia sposób dodawania obiektów do typizowaną kolekcją, której dziedziczy <xref:System.ComponentModel.BindingList%601>:
+Poniższy kod przedstawia sposób dodawania obiektów do typizowaną kolekcją, której dziedziczy <xref:System.ComponentModel.BindingList%601>:
 
 > [!NOTE]
-> W tym przykładzie `Orders` kolekcji jest właściwością `Customer` obiektu.
+> W tym przykładzie `Orders` kolekcja jest właściwością `Customer` obiektu.
 
 [!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
 [!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]
@@ -118,7 +118,7 @@ Poniższy kod przedstawia sposób Znajdź i usuwanie obiektów z kontrolą typó
 [!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)]
 [!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]
 
-### <a name="display-object-data-to-users"></a>Wyświetl dane obiektów dla użytkowników
+### <a name="display-object-data-to-users"></a>Wyświetlanie danych obiektu dla użytkowników
 
 Aby wyświetlić dane w obiekty do użytkowników, tworzenie obiektu źródła danych przy użyciu **konfiguracji źródła danych** kreatora, a następnie przeciągnij indywidualne właściwości lub cały obiekt na formularz z **źródeł danych**okna.
 
@@ -128,7 +128,7 @@ Aby edytować danych w obiektach niestandardowych, które są powiązane z danym
 
 Jeśli aplikacja wymaga śledzenia zmian i stopniowe tylnej stronie proponowanych zmian do ich oryginalnych wartości, musisz zaimplementować tę funkcję w modelu obiektu. Przykłady sposobu tabel danych śledzenie pracy proponowane, zobacz <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A>, i <xref:System.Data.DataTable.GetChanges%2A>.
 
-### <a name="save-data-in-objects-back-to-the-database"></a>Zapisywanie danych w obiektach w bazie danych
+### <a name="save-data-in-objects-back-to-the-database"></a>Zapisz dane w obiektach z powrotem w bazie danych
 
 Zapisywanie danych w bazie danych przez przekazanie wartości z obiektu do TableAdapter dbdirect — metody.
 
@@ -140,7 +140,7 @@ Program Visual Studio tworzy dbdirect — metody, które mogą być wykonywane b
 |`TableAdapter.Update`|Aktualizuje istniejące rekordy w bazie danych. Metoda aktualizacji przyjmuje wartości oryginalnego i nowych kolumn jako parametry metody. Oryginalne wartości są używane do lokalizowania oryginalnego rekordu, a nowe wartości są używane na zaktualizowanie rekordu.<br /><br /> `TableAdapter.Update` Metoda umożliwia również uzgadniają zmiany w zestawie danych w bazie danych, wykonując <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, tablica lub <xref:System.Data.DataRow>określane jako parametry metody.|
 |`TableAdapter.Delete`|Usuwa istniejące rekordy z bazy danych oparte na oryginalnych wartości kolumny przekazanych jako parametry metody.|
 
-Aby zapisać dane z kolekcji obiektów, w pętli poprzez kolekcji obiektów (na przykład za pomocą pętli for dalej). Wyślij wartości dla każdego obiektu do bazy danych za pomocą TableAdapter dbdirect — metody.
+Aby zapisać dane z kolekcji obiektów, należy wykonać pętlę przez kolekcję obiektów (na przykład przy użyciu pętli for Next). Wyślij wartości dla każdego obiektu do bazy danych przy użyciu metod DBDirect TableAdapter.
 
 Poniższy przykład pokazuje, jak używać `TableAdapter.Insert` dbdirect — metody w celu dodania nowego klienta bezpośrednio do bazy danych:
 

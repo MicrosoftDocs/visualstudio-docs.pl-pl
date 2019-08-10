@@ -8,38 +8,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50543a1f0191847beb4f849d56517cd0f12a1f7c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 026916a86609f665fdb8329b9c9eacf147be51e3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408615"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924271"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikacja poziomów MIP
-W tym dokumencie przedstawiono sposób użycia **edytora obrazów** do generowania i modyfikowania *poziomów MIP* dla przestrzeni tekstury poziomu z Detail (poziomu).
+W tym dokumencie pokazano, jak za pomocą **edytora obrazów** wygenerować i zmodyfikować *poziomy MIP* dla poziomu (LOD) tekstury w miejscu.
 
 ## <a name="generating-mip-levels"></a>Generowanie poziomów MIP
- *Mipmapping* to technika, który jest używany do zwiększenia szybkości renderowania i zmniejszania artefaktów wygładzania na obiektach z teksturą przez wstępne Obliczanie i przechowywania kilku kopii tekstury różnych rozmiarów. Każda kopia, która jest znany jako poziom minimalnej ceny Importowej, jest połowę szerokości i wysokości poprzedniej kopii. Po wyrenderowaniu tekstury na powierzchni obiektu poziom MIP, który najlepiej odpowiada obszarowi miejsca na ekranie powierzchni teksturowanej, jest automatycznie wybierany. Oznacza to, że sprzęt graficzny nie musi odfiltrowywać zbyt dużych tekstur, aby utrzymać spójną jakość wizualną. Chociaż koszt pamięci przy przechowywaniu poziomów MIP jest około 33% wyższy niż samej oryginalnej tekstury, wydajności i jakości obrazu zyski uzasadnić ją.
+*Mipmapping* to technika, która służy do zwiększenia szybkości renderowania i zmniejszania artefaktów aliasów w obiektach z teksturą przez wstępne obliczenie i przechowywanie kilku kopii tekstury w różnych rozmiarach. Każda kopia, która jest znana jako poziom MIP, ma połowę szerokości i wysokości poprzedniej kopii. Gdy tekstura jest renderowana na powierzchni obiektu, jest automatycznie wybierana wartość MCI, która najlepiej odpowiada obszarowi miejsca na ekranie powierzchni tekstury. Oznacza to, że sprzęt graficzny nie musi odfiltrować dużych tekstur w celu utrzymania spójnej jakości wizualnej. Mimo że koszt pamięci na przechowywanie poziomów MIP wynosi około 33% więcej niż w przypadku oryginalnej samej tekstury, zyski wydajności i jakości obrazu są uzasadniane.
 
 #### <a name="to-generate-mip-levels"></a>Aby wygenerować poziomy MIP
 
-1. Rozpocznij od podstawowej tekstury, zgodnie z opisem w [jak: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md). Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są wartością potęgi liczby dwa, na przykład 256, 512, 1024 itd.
+1. Zacznij od podstawowej tekstury, zgodnie z opisem w [temacie How to: Utwórz teksturę](../designers/how-to-create-a-basic-texture.md)podstawową. Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są potęgami dwóch rozmiarów, na przykład 256, 512, 1024 i tak dalej.
 
-2. Generuj poziomy MIP. Na **tryb edytora obrazów** narzędzi, wybierz **zaawansowane** > **narzędzia** > **Generuj Mips**.
+2. Generuj poziomy MIP. Na pasku **narzędzi tryb edytora obrazów** wybierz pozycję**Narzędzia** >  **Zaawansowane** > **Generuj MIPS**.
 
-     Należy zauważyć, że **przejdź do następnego poziomu Mip** i **przejdź do poprzedniego poziomu Mip** przyciski będą teraz wyświetlane na **tryb edytora obrazów** paska narzędzi. Jeśli **właściwości** okno jest wyświetlane, należy również zauważyć, że właściwości tylko do odczytu **poziom Mip** i **liczba poziomów Mip** pojawiają się w oknie właściwości obrazu.
+     Należy zauważyć, że przyciski **Przejdź do następnego poziomu MIP** i **Przejdź do poprzedniego poziomu MIP** są teraz wyświetlane na pasku narzędzi **Tryb edytora obrazów** . Jeśli zostanie wyświetlone okno **Właściwości** , Zauważ, że właściwość tylko do odczytu na **poziomie MCI** i na **poziomie MCI** jest teraz wyświetlana we właściwościach obrazu.
 
 ## <a name="modifying-mip-levels"></a>Modyfikowanie poziomów MIP
- Aby uzyskać efekty specjalne lub zwiększyć jakość obrazu na określonym poziomie szczegółowości, można zmodyfikować indywidualnie każdy poziom MIP. Na przykład obiektowi z teksturą można nadać inny wygląd w odległości (większa odległość odpowiada mniejszym poziomom MIP) lub można zapewnić, że tekstury, które zawierają tekst lub symbole, pozostaną czytelne nawet na mniejszych poziomach MIP.
+Aby osiągnąć efekty specjalne lub zwiększyć jakość obrazu na określonych poziomach szczegółowości, można zmodyfikować każdy poziom MCI osobno. Na przykład można nadać obiektowi tekstury inny wygląd na odległość (większa odległość odpowiada mniejszym poziomom MIP) lub można zagwarantować, że tekstury, które zawierają tekst lub symbole, pozostaną czytelne nawet na mniejszych poziomach MCI.
 
-#### <a name="to-modify-an-individual-mip-level"></a>Aby zmodyfikować jeden poziom MCI
+#### <a name="to-modify-an-individual-mip-level"></a>Aby zmodyfikować indywidualny poziom MCI
 
-1. Zaznacz poziom MIP, który chcesz zmodyfikować. Na **tryb edytora obrazów** narzędzi, użyj **przejdź do następnego poziomu MIP** i **przejdź do poprzedniego poziomu MIP** przycisków, aby przenieść między poziomami MIP.
+1. Wybierz poziom MIP, który chcesz zmodyfikować. Na pasku narzędzi **Tryb edytora obrazów** Użyj przycisków **Przejdź do następnego MIP** i **Przejdź do poprzedniego poziomu MIP** , aby przejść między poziomami MCI.
 
-2. Po wybraniu poziom MIP, który chcesz zmodyfikować, można użyć narzędzi do rysowania go zmodyfikować bez zmiany zawartości innych poziomów MCI. Narzędzia do rysowania są dostępne na **edytora obrazów** paska narzędzi. Po wybraniu narzędzia, możesz zmienić jego właściwości w **właściwości** okna. Aby uzyskać informacji na temat narzędzi do rysowania i ich właściwości, zobacz [edytora obrazów](../designers/image-editor.md).
+2. Po wybraniu poziomu MIP, który chcesz zmodyfikować, można użyć narzędzi do rysowania, aby zmodyfikować go bez zmiany zawartości innych poziomów MIP. Narzędzia do rysowania są dostępne na pasku narzędzi **edytora obrazów** . Po wybraniu narzędzia można zmienić jego właściwości w oknie **Właściwości** . Aby uzyskać informacje o narzędziach rysowania i ich właściwościach, zobacz [Edytor obrazów](../designers/image-editor.md).
 
 > [!NOTE]
-> Jeśli nie trzeba modyfikować zawartość poszczególnych poziomów MIP — co możesz zrobić, aby uzyskać pewne efekty — firma Microsoft zaleca generowanie mipmap z tekstury źródłowej w czasie kompilacji. Pomaga to zapewnić, że poziomy MCI pozostają zsynchronizowane z teksturą źródła, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmap w czasie kompilacji, zobacz [jak: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
+> Jeśli nie trzeba modyfikować zawartości poszczególnych poziomów MIP, jak można osiągnąć pewne efekty — zalecamy generowanie mipmapy z tekstury źródłowej w czasie kompilacji. Pozwala to zagwarantować, że poziomy MCI pozostają zsynchronizowane ze teksturą źródłową, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmapy w czasie kompilacji, zobacz [How to: Wyeksportuj teksturę zawierającą mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
 ## <a name="see-also"></a>Zobacz także
 

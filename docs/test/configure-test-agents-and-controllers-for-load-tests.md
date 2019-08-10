@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461616"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918368"
 ---
-# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Omówienie agentów testowych i kontrolerów testów do uruchamiania testów obciążenia
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Przegląd agentów testowych i kontrolerów testów do uruchamiania testów obciążenia
 
 Program Visual Studio może generować symulowane obciążenia aplikacji za pomocą fizycznych lub maszyn wirtualnych. Te maszyny należy skonfigurować jako jednego kontrolera testów oraz jednego lub więcej agentów testowych. Agentów testowych i kontrolera testów służy do generowania obciążenia więcej niż jednym komputerze można wygenerować samodzielnie.
 
@@ -41,17 +41,17 @@ Taka architektura ma szereg zalet:
 
    **Konfiguracja lokalna:**
 
-  - Komputer1: Program Visual Studio, kontroler, agent.
+  - Maszyna1 Visual Studio, kontroler, Agent.
 
     ![Za pomocą kontrolera i agenta komputera lokalnego](./media/load-test-configa.png)
 
     **Typowa konfiguracja zdalna:**
 
-  - Komputery 1 i 2: Program Visual Studio (wielu testerów może używać tego samego kontrolera).
+  - Maszyna1 i 2: Program Visual Studio (wielu testerów może korzystać z tego samego kontrolera).
 
-  - KOMPUTER3: Kontroler (mogą być zainstalowani agenci).
+  - Machine3: Kontroler (może być również zainstalowany agent).
 
-  - Komputer 4 n: Agent lub agenci skojarzeni z kontrolerem na KOMPUTER3.
+  - Machine4-n: Agent lub agenci skojarzeni z kontrolerem w Machine3.
 
     ![Maszyny zdalne przy użyciu kontrolera i agentów](./media/load-test-configb.png)
 
@@ -69,17 +69,17 @@ Kontroler testów zapewnia ogólną architekturę wykonywania testów oraz zawie
 
 Agent testowy działa jako usługa, która nasłuchuje od kontrolera testów żądań rozpoczęcia nowego testu. Gdy agent testowy odbiera żądanie, Usługa agenta testowego uruchamia proces, w którym można uruchomić testy. Każdy agent testowy wykonuje ten sam test obciążeniowy.
 
- Administrator przypisuje agentom testowym wagi, według których są następnie rozkładane obciążenia. Na przykład jeśli agent testowy 1 ma wagę 30, agent testowy 2 wagę 70, a obciążenie zostanie ustawione na 1000 użytkowników, agent testowy 1 będzie symulował 300, a agent testowy 2 — 700 wirtualnych użytkowników. Zobacz [zarządzać kontrolerami testów i agentami testowymi za pomocą programu Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+Administrator przypisuje agentom testowym wagi, według których są następnie rozkładane obciążenia. Na przykład jeśli agent testowy 1 ma wagę 30, agent testowy 2 wagę 70, a obciążenie zostanie ustawione na 1000 użytkowników, agent testowy 1 będzie symulował 300, a agent testowy 2 — 700 wirtualnych użytkowników. Zobacz [zarządzać kontrolerami testów i agentami testowymi za pomocą programu Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
- Agent testowy przyjmuje zestaw testów i zestaw parametrów symulacji jako dane wejściowe. Kluczową koncepcją to, że testy są niezależne od komputera, na którym działają.
+Agent testowy przyjmuje zestaw testów i zestaw parametrów symulacji jako dane wejściowe. Kluczową koncepcją to, że testy są niezależne od komputera, na którym działają.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Kontroler testów i punkty połączenia agenta testowego
 
 Na poniższej ilustracji pokazano punkty połączenia między kontrolerem testów, agentem testowym i klientem. Przedstawia, które porty są używane dla połączeń przychodzących i wychodzących, a także ograniczenia zabezpieczeń używane na tych portach.
 
- ![Kontroler testów i test agent portów i zabezpieczeń](./media/test-controller-agent-firewall.png)
+![Porty kontrolerów testów i agentów testowych oraz zabezpieczenia](./media/test-controller-agent-firewall.png)
 
- Aby uzyskać więcej informacji, zobacz [Konfiguracja portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Aby uzyskać więcej informacji, zobacz [Konfiguracja portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Informacje dotyczące instalacji kontrolera i agenta testów
 

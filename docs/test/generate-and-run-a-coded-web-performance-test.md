@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002561"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918410"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generowanie i uruchamianie kodowanego testu wydajności sieci Web
 
@@ -84,17 +84,17 @@ Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci
 
 ## <a name="qa"></a>PYTANIA I ODPOWIEDZI
 
-### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>PYT.: Można uruchomić więcej niż jeden test naraz?
- **ODP.:** Tak, użyj menu kliknij prawym przyciskiem myszy (kontekstu) w **Eksploratora rozwiązań**.
+### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>PYTANIA Czy można uruchomić więcej niż jeden test jednocześnie?
+**Z** Tak, użyj menu kontekstowego kliknij prawym przyciskiem myszy w **Eksplorator rozwiązań**.
 
-### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>PYT.: Źródło danych należy dodać przed czy po wygenerowaniu kodowanego testu?
- **ODP.:** Łatwiej jest je dodać [źródła danych](../test/add-a-data-source-to-a-web-performance-test.md) przed wygenerowaniem kodowanego testu, ponieważ kod zostanie automatycznie wygenerowany dla Ciebie.
+### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>PYTANIA Czy należy dodać źródło danych przed czy po wygenerowaniu kodowanego testu?
+**Z** Łatwiej jest dodać [Źródło danych](../test/add-a-data-source-to-a-web-performance-test.md) przed wygenerowaniem kodowanego testu, ponieważ kod zostanie wygenerowany automatycznie.
 
- Po uruchomieniu testu kodowanego ze źródłem danych, można napotkać następujący komunikat o błędzie:
+Po uruchomieniu testu kodowanego ze źródłem danych, można napotkać następujący komunikat o błędzie:
 
- **Nie można uruchomić testu \<testu nazwy > na agencie \<nazwa komputera >: Odwołanie do obiektu nie zostały ustawione na wystąpienie obiektu.**
+**Nie można uruchomić \<testowej nazwy > na nazwie \<komputera agenta >: Odwołanie do obiektu nie jest ustawione na wystąpienie obiektu.**
 
- Taka sytuacja może wystąpić, ponieważ masz zdefiniowane dla klasy testowej, bez odpowiedniego DataBindingAttribute DataSourceAttribute. Aby rozwiązać ten problem, Dodaj odpowiedni DataBindingAttribute, usuń go lub Wypowiedz go z kodu.
+Taka sytuacja może wystąpić, ponieważ masz zdefiniowane dla klasy testowej, bez odpowiedniego DataBindingAttribute DataSourceAttribute. Aby rozwiązać ten problem, Dodaj odpowiedni DataBindingAttribute, usuń go lub Wypowiedz go z kodu.
 
-### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>PYT.: Reguły walidacji i wyodrębniania należy dodać przed czy po wygenerowaniu kodowanego testu?
- **ODP.:** Ułatwia to dodawanie reguł sprawdzania poprawności i reguł wyodrębniania przed wygenerowaniem zakodowanego testu; Jednak firma Microsoft zaleca użycie [kodowane testy interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) do celów sprawdzania poprawności.
+### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>PYTANIA Czy należy dodać reguły weryfikacji i wyodrębniania przed czy po wygenerowaniu kodowanego testu?
+**Z** Łatwiej jest dodać reguły sprawdzania poprawności i reguły wyodrębniania przed wygenerowaniem kodowanego testu; zaleca się jednak używanie [kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) do celów weryfikacji.

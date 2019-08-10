@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e88f22f25ff0620a88685dee93fd5658c302db74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806631"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920242"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Finalizatory powinny być chronione
 
@@ -28,22 +28,22 @@ ms.locfileid: "62806631"
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny implementuje finalizator, który nie określa rodziny dostępu (chroniony).
+Typ publiczny implementuje finalizator, który nie określa dostępu rodziny (chronione).
 
 ## <a name="rule-description"></a>Opis reguły
- Finalizatory muszą korzystać z modyfikatora dostępu „family”. Ta zasada jest wymuszana przez kompilatory C#, Visual Basic i Visual C++.
+Finalizatory muszą korzystać z modyfikatora dostępu „family”. Ta reguła jest wymuszana przez C#kompilatory, Visual Basic i C++ wizualizacje.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić finalizator dostępne rodziny.
+Aby naprawić naruszenie tej zasady, należy zmienić finalizator na dostęp do rodziny.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Ta zasada nie naruszone w dowolnym języku .NET wysokiego poziomu; można naruszone, jeśli piszesz języka Microsoft Intermediate Language.
+Tej reguły nie można naruszać w żadnym języku .NET wysokiego poziomu; można je naruszyć w przypadku pisania języka pośredniego firmy Microsoft.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662061"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923750"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing z programem Visual Studio
 
@@ -151,7 +151,7 @@ Istnieją pewne różnice między Live Unit Testing automatyczne uruchamianie i 
 
 Jeśli rozwiązanie ma projekty, co najmniej 10, podczas uruchamiania Live Unit Testing and nie ma żadnych utrwalonych danych lub po wybraniu **testu** > **Live Unit Testing**  >  **Resetowania czyste** opcję z menu najwyższego poziomu programu Visual Studio, Visual Studio wyświetla następujące okno dialogowe i ostrzega o tym, że dynamiczne wykonywanie dużej liczby testów w dużych projektów może poważnie obniżyć wydajność. Jeśli wybierzesz **OK**, Live Unit Testing uruchamia wszystkie testy w rozwiązaniu. Jeśli wybierzesz **anulować**, możesz wybrać testy do wykonania. Aby uzyskać informacje, jak to zrobić, zobacz następującą sekcję [Dołączanie i wykluczanie projekty testowe i metod testowych](#include-and-exclude-test-projects-and-test-methods).
 
- ![Live Unit Testing okno dialogowe dla dużych projektów](media/lut-large-project.png)
+![Live Unit Testing okno dialogowe dla dużych projektów](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>Dołączyć i wykluczyć projekty testowe i metod testowych
 

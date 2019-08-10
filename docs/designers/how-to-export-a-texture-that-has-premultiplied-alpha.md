@@ -8,42 +8,42 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c336db07eab794a6595cb2de9026c1269a33c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16448a53064844f1c75db8b7eaa58c2cf909a968
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893388"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924255"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Instrukcje: Eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa
 
-Potok zawartości obrazu może generować wstępnie przemnożone tekstury alfa z obrazu źródłowego. Mogą to być łatwiejszy w obsłudze i bardziej niezawodne niż tekstury, które nie zawierają wstępnie przemnożonego kanału alfa.
+Potok zawartości obrazu może generować wstępnie przemnożone tekstury alfa z obrazu źródłowego. Te funkcje mogą być prostsze i bardziej niezawodne niż tekstury, które nie zawierają wstępnie przemnożonego kanału alfa.
 
-Ten dokument przedstawia te działania:
+W tym dokumencie przedstawiono następujące działania:
 
-- Konfigurowanie obrazu źródłowego, który ma być przetwarzana przez potok zawartości obrazu.
+- Konfigurowanie obrazu źródłowego, który ma być przetwarzany przez potok zawartości obrazu.
 
-- Konfigurowanie potoku zawartości obrazu tak, aby generować wstępnie przemnożonego kanału alfa.
+- Konfigurowanie potoku zawartości obrazu w celu wygenerowania wstępnie przemnożonego kanału alfa.
 
-## <a name="premultiplied-alpha"></a>Wstępnie przemnożony kanał alfa
- Wstępnie przemnożony kanał alfa oferuje więcej korzyści niż konwencjonalny, inne niż wstępnie przemnożony kanał alfa, ponieważ lepiej przedstawia rzeczywiste interakcje światła z fizycznymi materiałami przez oddzielenie wkładu koloru teksela (koloru, który teksel dodaje do sceny) od jego przezroczystości (ilość podstawowego koloru, który przepuszcza). Zalety korzystania z wstępnie przemnożonego kanału alfa, należą:
+## <a name="premultiplied-alpha"></a>Wstępnie przemnożone alfa
+Wstępnie przemnożone alfa daje kilka korzyści w porównaniu do konwencjonalnych, niewstępnie przemnożonych alfa, ponieważ lepiej reprezentuje rzeczywistą interakcję światła z materiałami fizycznymi, oddzielając Texel od koloru (kolor dodany do scena) z jej przezroczystości (ilość koloru bazowego, którą umożliwia za pośrednictwem). Niektóre zalety korzystania z wstępnie przemnożonego kanału alfa są następujące:
 
-- Mieszanie z wstępnie przemnożonego kanału alfa jest operacją asocjacyjną; wynik mieszania wielu półprzezroczystych tekstur jest taki sam, niezależnie od kolejności, w jakiej tekstury są mieszane.
+- Mieszanie ze wstępnie przemnożonym alfa jest operacją asocjacyjną; wynik mieszania wielu przezroczystych tekstur jest taki sam, niezależnie od kolejności, w jakiej tekstury są mieszane.
 
-- Ze względu na charakter zespolony z wstępnie przemnożonego kanału alfa renderowanie przebiegu wielu obiektów przezroczystych jest uproszczone.
+- Ze względu na asocjacyjny charakter mieszania przy użyciu wstępnie przemnożonego kanału alfa jest uproszczone renderowanie wielu przebiegów przezroczystych obiektów.
 
-- Za pomocą wstępnie przemnożonego kanału alfa, zarówno czyste Mieszanie dodatków (przez ustawienie alfa na zero), jak i liniowo interpolowane mieszania można osiągnąć jednocześnie. Na przykład w systemie cząstek zmieszana addytywnie cząstka może stać się przezroczystą cząstką dymu, która jest zmieszana przy użyciu interpolacji liniowej. Bez wstępnie przemnożonego kanału alfa trzeba rysować cząsteczki pożaru oddzielnie od cząsteczek dymu i modyfikować stan renderowania między wywołaniami rysowania.
+- Za pomocą wstępnie przemnożonego kanału alfa, zarówno czysta mieszanie addytywne (poprzez ustawienie alfa na zero), jak i liniowo interpolowane mieszanie można osiągnąć jednocześnie. Na przykład w systemie cząsteczek, dostosowana mieszanina ognia może stać się przezroczystą cząstką dym, która jest zmieszana przy użyciu interpolacji liniowej. Bez wstępnie przemnożonego kanału alfa należy narysować cząstki pożarowe niezależnie od cząstek dymu i zmodyfikować stan renderowania między wywołaniami rysowania.
 
-- Kompresować tekstury, które używają wstępnie przemnożonego kanału alfa, z wyższą jakością niż te, które nie i nie wykazują odbarwionych krawędzi — lub "efektu halo" — będących wynikiem mieszania tekstur, które nie używają wstępnie przemnożonego kanału alfa.
+- Tekstury używające wstępnie przemnożonej kompresji alfa o wyższej jakości niż te, które nie są i nie wykazują odbarwnych krawędzi — lub "efektu otoczki", które mogą wynikać z mieszania tekstur, które nie używają wstępnie przemnożonego kanału alfa.
 
-#### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Aby utworzyć tekstury wykorzystującej wstępnie przemnożony kanał alfa
+#### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Aby utworzyć teksturę, która używa wstępnie przemnożonego kanału alfa
 
-1. Rozpocznij od podstawowej tekstury. Załaduj istniejący pliku obrazu lub utwórz je, zgodnie z opisem w [jak: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md).
+1. Zacznij od tekstury podstawowej. Załaduj istniejący plik obrazu lub utwórz go zgodnie z opisem w [temacie How to: Utwórz teksturę](../designers/how-to-create-a-basic-texture.md)podstawową.
 
-2. Skonfigurować pliku tekstury, jest przetwarzany przez potok zawartości obrazu. W **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku tekstury, a następnie wybierz **właściwości**. Na **właściwości konfiguracji** > **ogólne** ustaw **typu elementu** właściwości **potok zawartości obrazu**. Upewnij się, że **zawartości** właściwość jest ustawiona na **tak** i **Wyłącz z kompilacji** ustawiono **nie**, a następnie wybierz  **Zastosuj** przycisku. **Potok zawartości obrazu** zostanie wyświetlona strona właściwości konfiguracji.
+2. Skonfiguruj plik tekstury w taki sposób, aby był przetwarzany przez potok zawartości obrazu. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku tekstury, a następnie wybierz polecenie **Właściwości**. Na stronie**Ogólne** **Właściwości** > konfiguracji ustaw właściwość **Typ elementu** na **potok zawartości obrazu**. Upewnij się, że właściwość **Content** jest ustawiona na **wartość Yes (tak** ), **Wyklucz z kompilacji** jest ustawiony na **nie**, a następnie wybierz przycisk **Zastosuj** . Zostanie wyświetlona strona właściwości konfiguracja **potoku zawartości obrazu** .
 
-3. Konfigurowanie potoku zawartości obrazu, aby generować wstępnie przemnożonego kanału alfa. Na **właściwości konfiguracji** > **potok zawartości obrazu** > **ogólne** ustaw **przekonwertować wstępnie przemnożonego alfa format** właściwości **tak (/ generatepremultipliedalpha)**.
+3. Skonfiguruj potok zawartości obrazu w celu wygenerowania wstępnie przemnożonego kanału alfa. Na stronie > **Ogólne** potoku**zawartości obrazu** **Właściwości** > konfiguracji ustaw właściwość **Konwertuj na wstępnie przemnożony format alfa** na **wartość tak (/generatepremultipliedalpha)** .
 
 4. Wybierz **OK** przycisku.
 
-   Podczas budowania projektu potok zawartości obrazów konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który określiłeś, obejmuje to konwersję obrazu do wstępnie przemnożonego kanału alfa formatu — a wynik jest kopiowany do wyjściowego projektu katalog.
+   Podczas kompilowania projektu potok zawartości obrazów konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który określiłeś — obejmuje to konwersję obrazu na wstępnie przemnożony format alfa — a wynik jest kopiowany do danych wyjściowych projektu katalogi.

@@ -8,34 +8,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ba709e90de580aacda2034eca319a419583dac0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c2718c08b36ff9ef3ca8ae06f7d511cacb8fa73c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783693"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923656"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Instrukcje: Dodawanie węzłów wyników wyszukiwania zestawu schematu do obszaru roboczego
 
-W tym temacie został objaśniony sposób dodawania węzłów, które zostały wyróżnione **Eksploratora schematu XML** w wyniku wyszukiwania słów kluczowych, w obszarze roboczym.
+W tym temacie wyjaśniono, jak dodać węzły, które są wyróżnione w **Eksploratorze schematu XML** jako wynik wyszukiwania słowa kluczowego w obszarze roboczym.
 
 > [!NOTE]
-> Tylko globalne węzły mogą być dodawane do [obszaru roboczego](../xml-tools/xml-schema-designer-workspace.md).
+> Do [obszaru roboczego](../xml-tools/xml-schema-designer-workspace.md)można dodawać tylko węzły globalne.
 
- W tym przykładzie użyto przykładu [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-purchase-order-schema.md).
+W tym przykładzie zastosowano przykładowy [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 
-## <a name="to-add-schema-set-result-nodes"></a>Aby dodać węzłów wyników zestawu schematu
+## <a name="to-add-schema-set-result-nodes"></a>Aby dodać węzły wynikowe zestawu schematów
 
-1. Postępuj zgodnie z instrukcjami w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Wykonaj kroki opisane w [temacie How to: Tworzenie i edytowanie pliku](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)schematu XSD.
 
-2. W polu tekstowym wyszukiwania wpisz "purchaseOrder" [Eksplorator XML](../xml-tools/xml-schema-explorer.md) paska narzędzi i kliknij przycisk wyszukiwania.
+2. Wpisz "purchaseOrder" w polu tekstowym wyszukiwania na pasku narzędzi [Eksploratora XML](../xml-tools/xml-schema-explorer.md) i kliknij przycisk wyszukiwania.
 
-     ![Wyszukiwanie słów kluczowych Eksploratora schematu XML](../xml-tools/media/schemaexplorersearch.gif)
+     ![Wyszukiwanie słów kluczowych w Eksploratorze schematu XML](../xml-tools/media/schemaexplorersearch.gif)
 
-     Wyniki wyszukiwania zostaną wyróżnione w **Eksploratora schematu XML** i oznaczone przez znaczniki na pionowy pasek przewijania.
+     Wyniki wyszukiwania są wyróżniane w **Eksploratorze schematu XML** i oznaczone przez znaczniki na pionowym pasku przewijania.
 
-3. Dodaj wyniki wyszukiwania do obszaru roboczego, klikając **Dodaj wyróżnione węzły do obszaru roboczego** przycisk w okienku wyników podsumowania.
+3. Dodaj wyniki wyszukiwania do obszaru roboczego, klikając przycisk **Dodaj wyróżnione węzły do obszaru roboczego** w okienku wyniki podsumowania.
 
      ![Wynik wyszukiwania Eksploratora schematu XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     `purchaseOrder` Węzła i `PurchaseOrderType` węzła wyświetlane obok siebie na powierzchni projektowania [widoku wykresu](../xml-tools/graph-view.md). Ponieważ dwa węzły są powiązane ( `purchaseOrder` element jest `PurchaseOrderType` typu), Strzałka jest rysowana między nimi.
+     Węzeł i węzeł są wyświetlane obok siebie na powierzchni projektowej [widoku wykresu.](../xml-tools/graph-view.md) `purchaseOrder` `PurchaseOrderType` Ponieważ dwa węzły są powiązane ( `purchaseOrder` element jest `PurchaseOrderType` typu), zostanie narysowana strzałka między nimi.

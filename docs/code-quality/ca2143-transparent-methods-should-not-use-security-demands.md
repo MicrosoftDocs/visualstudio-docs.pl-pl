@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17160e5fd47491dddb22a28d4b3f7464ad3efb78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 532a10740b0617f32e4f970da8dc2a7e2807f792
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806792"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920469"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Metody przezroczyste nie powinny używać żądań zabezpieczeń
 
@@ -27,21 +27,21 @@ ms.locfileid: "62806792"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Przezroczystym typ lub metoda deklaratywne jest oznaczona za pomocą <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` żądanie lub wywołania metody <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> metody.
+Typ tranparent lub metoda jest deklaratywnie oznaczona z <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` zapotrzebowaniem <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> lub metoda wywołuje metodę.
 
 ## <a name="rule-description"></a>Opis reguły
- Przezroczysty kod zabezpieczeń nie powinien być odpowiedzialny za weryfikację zabezpieczeń operacji, a zatem nie powinien wymagać uprawnień. Przejrzysty pod względem bezpieczeństwa kod powinien używać pełnych żądań do podejmowania decyzji związanych z zabezpieczeniami, a kod krytyczny pod względem zabezpieczeń nie powinien opierać się na kodzie przezroczystym do wykonywania pełnego żądania. Zamiast tego powinien być bezpieczny krytyczny wszelki kod, który wykonuje sprawdzanie zabezpieczeń, takich jak wymogów bezpieczeństwa.
+Przezroczysty kod zabezpieczeń nie powinien być odpowiedzialny za weryfikację zabezpieczeń operacji, a zatem nie powinien wymagać uprawnień. Przejrzysty pod względem bezpieczeństwa kod powinien używać pełnych żądań do podejmowania decyzji związanych z zabezpieczeniami, a kod krytyczny pod względem zabezpieczeń nie powinien opierać się na kodzie przezroczystym do wykonywania pełnego żądania. Każdy kod, który wykonuje kontrole zabezpieczeń, na przykład wymagania dotyczące zabezpieczeń, powinien być w zamian bezpieczny-krytyczny.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ogólnie rzecz biorąc, aby naprawić naruszenie tej zasady, należy oznaczyć metody <xref:System.Security.SecuritySafeCriticalAttribute> atrybutu. Można również usunąć żądanie.
+Ogólnie rzecz biorąc, aby naprawić naruszenie tej zasady, oznacz metodę <xref:System.Security.SecuritySafeCriticalAttribute> atrybutem. Możesz również usunąć żądanie.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Reguła pliki na następujący kod, ponieważ metoda przezroczysta pod względem sprawia, że żądanie zabezpieczeń deklaratywnych.
+Pliki reguł w następującym kodzie, ponieważ metoda przezroczysta powoduje deklaratywne zapotrzebowanie na zabezpieczenia.
 
- [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
+[!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
 
 ## <a name="see-also"></a>Zobacz także
- [CA2142: Przezroczysty kod nie powinien być chroniony za pomocą żądań Linkdemand](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
+[CA2142 Kod przezroczysty nie powinien być chroniony za pomocą LinkDemands](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)

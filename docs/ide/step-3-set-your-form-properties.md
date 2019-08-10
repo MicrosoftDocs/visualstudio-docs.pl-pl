@@ -8,66 +8,66 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 941bf3329b0724e19048afa6c93a9a9c3762d1c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4e2742103585321b4f752a74e53253409e449bcf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430743"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918829"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
-Następnie użyj **właściwości** okna, aby zmienić wygląd formularza.
+Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 
- ![Link do wideo](../data-tools/media/playvideo.gif)wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# -1 wideo](http://go.microsoft.com/fwlink/?LinkId=205199). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+![link do wideo](../data-tools/media/playvideo.gif)dla wersji wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: Utwórz przeglądarkę obrazów w C# pliku-wideo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ## <a name="to-set-your-form-properties"></a>Aby ustawić właściwości formularza
 
-1. Pamiętaj, żeby widzieć **Windows Forms Designer**. W programie Visual Studio zintegrowane środowisko programistyczne (IDE), wybierz **Form1.cs [projekt]** karty (lub **Form1.vb [projekt]** kartę w języku Visual Basic).
+1. Upewnij się, że szukasz **Projektant formularzy systemu Windows**. W zintegrowanym środowisku programistycznym (IDE) programu Visual Studio wybierz kartę **Form1.cs [Design]** (lub kartę **Form1. vb [Design]** w Visual Basic).
 
-2. Wybierz dowolne miejsce wewnątrz formularza **Form1** aby go zaznaczyć. Przyjrzyj się **właściwości** okna, które powinno teraz pokazywać właściwości dla formularza. Formularze mają różne właściwości. Na przykład można ustawić pierwszego planu i kolor tła, tekst tytułu, który pojawia się w górnej części formularza, rozmiar formularza i inne właściwości.
-
-   > [!NOTE]
-   > Jeśli **właściwości** okno nie jest wyświetlane, Zatrzymaj program, wybierając kwadratowy **Zatrzymaj debugowanie** znajdujący się na pasku narzędzi lub zamknij okno. Jeśli program został zatrzymany, i nadal nie widzisz **właściwości** okna, na pasku menu wybierz **widoku** > **okno właściwości**.
-
-3. Po wybraniu formularza Znajdź **tekstu** właściwość **właściwości** okna. W zależności od tego, jak lista jest sortowana konieczne może być przewinięcie w dół. Wybierz **tekstu**, typ **Picture Viewer**, a następnie wybierz **Enter**.  Formularz powinien mieć teraz tekst **Picture Viewer** na pasku tytułu, a **właściwości** okno powinno wyglądać podobnie do poniższej ilustracji.
-
-    ![Okno właściwości](../ide/media/express_edittextproperty.png)
-   **właściwości** okna
+2. Wybierz dowolne miejsce wewnątrz formularza **Form1** , aby go zaznaczyć. Sprawdź okno **Właściwości** , które teraz powinno być wyświetlane właściwości formularza. Formularze mają różne właściwości. Na przykład można ustawić kolor pierwszego planu i tła, tekst tytułu, który pojawia się w górnej części formularza, rozmiar formularza i inne właściwości.
 
    > [!NOTE]
-   > Właściwości można porządkować według **kategorii** lub **alfabetycznie** widoku. Możesz przełączać się między tymi dwoma widokami, korzystając z przycisków w **właściwości** okna. W tym samouczku jest łatwiej znaleźć właściwości za pomocą **alfabetycznie** widoku.
+   > Jeśli okno **Właściwości** nie zostanie wyświetlone, Zatrzymaj program, wybierając kwadratowy przycisk **Zatrzymaj debugowanie** na pasku narzędzi lub po prostu Zamknij okno. Jeśli program jest zatrzymany i nadal nie widzisz okna **Właściwości** , na pasku menu wybierz**okno właściwości** **widoku** > .
 
-4. Wróć do **Windows Forms Designer**. Wybierz formularz przeciągnij prawy dolny uchwyt, który jest białym kwadracikiem w dolnym rogu formularza i pojawia się w następujący sposób.
+3. Po wybraniu formularza Znajdź właściwość **tekst** w oknie **Właściwości** . W zależności od tego, jak lista jest sortowana, może być konieczne przewinięcie w dół. Wybierz **tekst**, wpisz **Podgląd obrazów**, a następnie wybierz **klawisz ENTER**.  Formularz powinien teraz mieć **obraz** tekstu na pasku tytułu, a okno **Właściwości** powinno wyglądać podobnie do poniższej ilustracji.
 
-    ![Przeciągnij uchwyt](../ide/media/express_bottomrt_drag.png) przeciągnij uchwyt
+    ![Okno](../ide/media/express_edittextproperty.png)
+   **Właściwości** okno właściwości
 
-    Przeciągnij uchwyt, aby zmienić rozmiar formularza, aby formularz był szerszy i trochę wyższy.
+   > [!NOTE]
+   > Właściwości mogą być uporządkowane według **kategorii** lub widoku **alfabetycznego** . Można przełączać się między tymi dwoma widokami za pomocą przycisków w oknie **Właściwości** . W tym samouczku łatwiej jest znaleźć właściwości w widoku alfabetycznym .
 
-5. Przyjrzyj się **właściwości** okna i zwróć uwagę, że **rozmiar** właściwości została zmieniona. **Rozmiar** właściwość zmienia za każdym razem, możesz zmienić rozmiar formularza. Spróbuj przeciągnąć uchwyt formularza, aby zmienić jego rozmiar o około **550, 350** (nie trzeba być dokładnym), co powinno zadziałać dla tego projektu. Alternatywnie, można wprowadzić wartości bezpośrednio we **rozmiar** właściwości, a następnie wybierz **Enter** klucza.
+4. Wróć do **Projektant formularzy systemu Windows**. Wybierz prawy dolny uchwyt przeciągania, czyli mały biały kwadrat w prawym dolnym rogu formularza i pojawia się w następujący sposób.
 
-6. Ponownie uruchom program. Należy pamiętać, że można użyć dowolnej z następujących metod, aby uruchomić program.
+    ![Przeciągnij uchwyt](../ide/media/express_bottomrt_drag.png) przeciągania uchwytu
 
-   - Wybierz **F5** klucza.
+    Przeciągnij uchwyt, aby zmienić rozmiar formularza, tak aby forma była szersza i nieco większa.
 
-   - Na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie**.
+5. Sprawdź okno **Właściwości** i Zauważ, że właściwość **size** została zmieniona. Właściwość **size** zmienia się za każdym razem, gdy zmieniany jest rozmiar formularza. Spróbuj przeciągnąć uchwyt formularza, aby zmienić jego rozmiar na rozmiar formularza około **550, 350** (nie musi być dokładne), który powinien być dobrze przydatny dla tego projektu. Alternatywnie można wprowadzić wartości bezpośrednio we właściwości **size** , a następnie wybrać klawisz **Enter** .
 
-   - Na pasku narzędzi wybierz **Rozpocznij debugowanie** przycisku, który wygląda następująco.
+6. Uruchom ponownie program. Pamiętaj, że możesz użyć dowolnej z poniższych metod, aby uruchomić program.
 
-      ![Rozpocznij debugowanie przycisku paska narzędzi](../ide/media/express_icondebug.png)
-     **Rozpocznij debugowanie** przycisku paska narzędzi
+   - Wybierz klawisz **F5** .
 
-     Podobnie jak przedtem środowisko IDE kompiluje i uruchamia Twój program i zostanie wyświetlone okno.
+   - Na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
 
-7. Przed przejściem do następnego kroku, zatrzymuje program, ponieważ IDE nie pozwoli zmienić programu, gdy jest uruchomiona. Należy pamiętać, że można użyć dowolnej z następujących metod, aby zatrzymać program.
+   - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie** , który pojawia się w następujący sposób.
 
-   - Na pasku narzędzi wybierz **Zatrzymaj debugowanie** przycisku.
+      ![Przycisk paska narzędzi](../ide/media/express_icondebug.png)
+     do debugowania Rozpocznij**debugowanie** — przycisk paska narzędzi
 
-   - Na pasku menu wybierz **debugowania** > **Zatrzymaj debugowanie**.
+     Tak jak wcześniej, środowisko IDE kompiluje i uruchamia program, a okno pojawia się.
 
-   - Wybierz **X** przycisk w prawym górnym rogu **Form1** okna.
+7. Przed przejściem do następnego kroku Zatrzymaj program, ponieważ środowisko IDE nie pozwala na zmianę programu w trakcie jego działania. Pamiętaj, że możesz użyć dowolnej z poniższych metod, aby zatrzymać program.
+
+   - Na pasku narzędzi wybierz przycisk **Zatrzymaj debugowanie** .
+
+   - Na pasku menu wybierz **Debuguj** > **Zatrzymaj debugowanie**.
+
+   - Wybierz przycisk **X** w górnym rogu okna **Form1** .
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 4: Określić układ formularza z formantem TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 4: Układ formularza przy użyciu formantu](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)TableLayoutPanel.
 
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Uruchom program](../ide/step-2-run-your-program.md).

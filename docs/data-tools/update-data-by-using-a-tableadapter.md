@@ -18,35 +18,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61ebcd6c833b55f0769365b89274e35136c914f9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565863"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925348"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizowanie danych za pomocą adaptera TableAdapter
 
-Po danych w zestawie danych, został zmodyfikowany i zweryfikowany, zaktualizowane dane może wysyłać do bazy danych, wywołując `Update` metody [TableAdapter](../data-tools/create-and-configure-tableadapters.md). `Update` Metoda aktualizuje jednej tabeli danych i uruchamia odpowiednie polecenie (INSERT, UPDATE lub DELETE), na podstawie <xref:System.Data.DataRow.RowState%2A> każdego wiersza danych w tabeli. Gdy zestaw danych zawiera tabele powiązane relacjami, program Visual Studio generuje klasę TableAdapterManager, która służy do aktualizacji. Klasa TableAdapterManager gwarantuje, że aktualizacje zostały wprowadzone w odpowiedniej kolejności, na podstawie ograniczeń klucza obcego, które są zdefiniowane w bazie danych. Korzystając z formantów powiązanych z danymi, architektura wiązania z danymi tworzy zmienną składową klasy TableAdapterManager, o nazwie tableAdapterManager.
+Po zmodyfikowaniu i sprawdzeniu poprawności danych w zestawie danych można wysłać zaktualizowane dane z powrotem do bazy danych przez wywołanie `Update` metody [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Metoda aktualizuje pojedynczą tabelę danych i uruchamia poprawne polecenie (INSERT, Update lub Delete) na podstawie <xref:System.Data.DataRow.RowState%2A> każdego wiersza danych w tabeli. `Update` Gdy zestaw danych zawiera powiązane tabele, program Visual Studio generuje klasę TableAdapterManager, która jest używana do wykonywania aktualizacji. Klasa TableAdapterManager gwarantuje, że aktualizacje są wprowadzane w odpowiedniej kolejności na podstawie ograniczeń klucza obcego, które są zdefiniowane w bazie danych. W przypadku korzystania z kontrolek powiązanych z danymi architektura wiązania danych tworzy zmienną członkowską klasy TableAdapterManager o nazwie tableAdapterManager.
 
 > [!NOTE]
-> Podczas próby aktualizacji źródła danych przy użyciu zawartości zestawu danych można uzyskać błędów. Aby uniknąć błędów, zaleca się umieścić kod, który wywołuje karty `Update` metody w ramach `try` / `catch` bloku.
+> Podczas próby zaktualizowania źródła danych za pomocą zawartości zestawu danych można uzyskać błędy. Aby uniknąć błędów, zalecamy umieszczenie kodu `Update` , który wywołuje metodę adaptera `try` / `catch` w bloku.
 
- Dokładna procedura aktualizowanie źródła danych mogą się różnić w zależności od potrzeb biznesowych, ale obejmuje następujące kroki:
+Dokładna procedura aktualizowania źródła danych może się różnić w zależności od potrzeb firmy, ale obejmuje następujące kroki:
 
-1. Wywołaj karty `Update` method in Class metoda `try` / `catch` bloku.
+1. Wywołaj `Update` metodę adaptera `try` / w bloku.`catch`
 
-2. Jeśli wystąpił wyjątek, zlokalizuj wiersz danych, które spowodowały błąd.
+2. W przypadku przechwyconego wyjątku Znajdź wiersz danych, który spowodował błąd.
 
-3. Uzgodnij problem w danych wiersza (programowo, jeżeli jest to możliwe, lub poprzez przedstawienie nieprawidłowy wiersz użytkownikowi modyfikowanie), a następnie ponów próbę aktualizacji (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+3. Uzgodnij problem z wierszem danych (programowo, jeśli możesz lub przez przedstawienie nieprawidłowego wiersza użytkownikowi do modyfikacji), a następnie spróbuj ponownie wykonać aktualizację (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
 
 ## <a name="save-data-to-a-database"></a>Zapisywanie danych w bazie danych
 
-Wywołaj `Update` metody TableAdapter. Przekaż nazwę tabeli danych, który zawiera wartości, które mają być zapisane w bazie danych.
+Wywołaj `Update` metodę elementu TableAdapter. Przekaż nazwę tabeli danych zawierającą wartości, które mają być zapisywane w bazie danych.
 
 ### <a name="to-update-a-database-by-using-a-tableadapter"></a>Aby zaktualizować bazę danych za pomocą TableAdapter
 
-- Ujmij TableAdapter`Update` method in Class metoda `try` / `catch` bloku. Poniższy przykład pokazuje, jak aktualizować zawartość `Customers` tabelę `NorthwindDataSet` z poziomu `try` / `catch` bloku.
+- Ujmij`Update` metodę TableAdapter `try` w bloku./ `catch` Poniższy przykład pokazuje, jak `Customers` zaktualizować zawartość `NorthwindDataSet` tabeli z wewnątrz `try` / `catch` bloku.
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

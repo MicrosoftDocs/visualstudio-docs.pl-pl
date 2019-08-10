@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b73148800c60280ed72e0d5f8014cfe6b97d217
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dcef8fbfd61b8cd8c946f76d6fcb93dc46f1654
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542212"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920629"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Adnotacje przezroczystości składowych nie powinny powodować konfliktu
 
@@ -32,18 +32,18 @@ ms.locfileid: "62542212"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła jest uruchamiana, gdy element członkowski typu jest oznaczona za pomocą <xref:System.Security> atrybutu zabezpieczeń, który ma inną przezroczystości niż atrybutu zabezpieczeń kontenera elementu członkowskiego.
+Ta zasada jest wyzwalana, gdy element członkowski typu jest <xref:System.Security> oznaczony atrybutem zabezpieczeń, który ma inną przezroczystość niż atrybut zabezpieczeń kontenera elementu członkowskiego.
 
 ## <a name="rule-description"></a>Opis reguły
- Atrybuty przezroczystości są stosowane od elementów kodu o większym zakresie do elementów o mniejszym zakresie. Atrybuty przezroczystości elementów kodu z większym zakresem mają pierwszeństwo przed atrybutami przejrzystości elementów kodu, które są zawarte w pierwszym elemencie. Na przykład klasa, która jest oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute> atrybutu nie może zawierać metody oznaczonej za pomocą <xref:System.Security.SecuritySafeCriticalAttribute> atrybutu.
+Atrybuty przezroczystości są stosowane od elementów kodu o większym zakresie do elementów o mniejszym zakresie. Atrybuty przezroczystości elementów kodu z większym zakresem mają pierwszeństwo przed atrybutami przejrzystości elementów kodu, które są zawarte w pierwszym elemencie. Na przykład Klasa, która jest oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute> atrybutu, nie może zawierać metody oznaczonej <xref:System.Security.SecuritySafeCriticalAttribute> atrybutem.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać problem to naruszenie, usuń atrybut zabezpieczeń z elementu kodu, który ma niższy zakres, lub zmień jego atrybutu, aby być taka sama jak element zawierający kod.
+Aby rozwiązać ten problem, Usuń atrybut Security z elementu kodu, który ma niższy zakres, lub zmień jego atrybut na taki sam jak element kodu zawierającego.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń od tej reguły.
+Nie pomijaj ostrzeżeń z tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie metoda jest oznaczona atrybutem <xref:System.Security.SecuritySafeCriticalAttribute> atrybutu i jest elementem członkowskim klasy, która jest oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute> atrybutu. Atrybut bezpieczne zabezpieczeń powinny zostać usunięte.
+W poniższym przykładzie metoda jest oznaczona <xref:System.Security.SecuritySafeCriticalAttribute> atrybutem i jest składową klasy, która jest oznaczona <xref:System.Security.SecurityCriticalAttribute> atrybutem. Bezpieczny atrybut zabezpieczeń powinien zostać usunięty.
 
- [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]
+[!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]

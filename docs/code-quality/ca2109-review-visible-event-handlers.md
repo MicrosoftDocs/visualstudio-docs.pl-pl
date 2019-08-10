@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5ab1fac368f1da1ceea39df19b198a22d999c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee5b1d92a6c7a813eea6efb409d3c2a22f68547c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808292"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921125"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Przejrzyj widoczne procedury obsługi zdarzeń
 
@@ -31,35 +31,35 @@ ms.locfileid: "62808292"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Wykryto publiczną lub chronioną metodę obsługi zdarzeń.
+Wykryto publiczną lub chronioną metodę obsługi zdarzeń.
 
 ## <a name="rule-description"></a>Opis reguły
- Metoda widoczna na zewnątrz obsługi zdarzeń przedstawia informacje o problem z zabezpieczeniami, który wymaga wykonania przeglądu.
+Widoczna na zewnątrz metoda obsługi zdarzeń przedstawia problem z zabezpieczeniami, który wymaga przeglądu.
 
-Nie ujawniaj metody obsługi zdarzeń, chyba że jest to absolutnie konieczne. Program obsługi zdarzeń, typu delegata, która wywołuje metodę narażonych można dodać do dowolnego zdarzenia, tak długo, jak sygnatury procedury obsługi i zdarzenia są zgodne. Zdarzenia potencjalnie może zostać wywołane przez dowolny kod i często są wywoływane przez system wysoce zaufanym kod w odpowiedzi na działania użytkownika, takie jak kliknięcie przycisku. Dodawanie sprawdzania zabezpieczeń do metody obsługi zdarzeń nie uniemożliwia kodu rejestrowania programu obsługi zdarzeń, który wywołuje tę metodę.
+Nie ujawniaj metod obsługi zdarzeń, chyba że jest to absolutnie konieczne. Procedura obsługi zdarzeń, typ delegata, który wywołuje uwidocznioną metodę, można dodać do dowolnego zdarzenia, o ile program obsługi i podpisy zdarzeń pasują do siebie. Zdarzenia mogą być potencjalnie wywoływane przez dowolny kod i są często wywoływane przez wysoce zaufany kod systemowy w odpowiedzi na akcje użytkownika, takie jak kliknięcie przycisku. Dodanie kontroli zabezpieczeń do metody obsługi zdarzeń nie zapobiega zarejestrowaniu przez kod procedury obsługi zdarzeń, która wywołuje metodę.
 
- Żądanie nie może chronić niezawodne metody wywoływane przez program obsługi zdarzeń. Zabezpieczenia zapotrzebowania na pomoc zabezpieczyć kod z niezaufanych wywołujących badanie obiektów wywołujących w stosie wywołań. Kod, który dodaje procedurę obsługi zdarzeń do zdarzenia nie jest musi występować w stosie wywołań, po uruchomieniu metody obsługi zdarzeń. W związku z tym stos wywołań może mieć tylko bardzo zaufane obiekty wywołujące po wywołaniu metody obsługi zdarzeń. To powoduje, że zapotrzebowanie wprowadzone przez metodę programu obsługi zdarzeń została wykonana pomyślnie. Ponadto żądane uprawnienie może być oceniane pod po wywołaniu metody. Z tego względu ryzyko nie naprawianie naruszenie tej zasady może być oceniana tylko po zapoznaniu się z metody obsługi zdarzeń. Podczas przeglądania kodu należy wziąć pod uwagę następujące kwestie:
+Żądanie nie może mieć niezawodnej ochrony metody wywoływanej przez program obsługi zdarzeń. Wymagania dotyczące zabezpieczeń pomagają chronić kod przed niezaufanymi wywołaniami poprzez badanie wywołań w stosie wywołań. Kod, który dodaje procedurę obsługi zdarzeń do zdarzenia, nie musi być obecny na stosie wywołań, gdy są uruchamiane metody obsługi zdarzeń. W związku z tym stos wywołań może mieć tylko wysoce zaufanych wywołujących, gdy wywoływana jest metoda obsługi zdarzeń. Powoduje to, że wymagania wykonywane przez metodę obsługi zdarzeń powiodło się. Ponadto w przypadku wywołania metody żądanie może zostać potwierdzone. Z tego powodu ryzyko naprawienia naruszenia tej reguły można ocenić dopiero po przejrzeniu metody obsługi zdarzeń. Podczas przeglądania kodu należy wziąć pod uwagę następujące zagadnienia:
 
-- Powoduje obsługi zdarzenia wykonania żadnych operacji, które są niebezpieczne lub możliwe do wykorzystania, takich jak Potwierdzanie uprawnień lub uprawnienie kodu niezarządzanego z pominięciem?
+- Czy program obsługi zdarzeń wykonuje wszystkie operacje, które są niebezpieczne lub możliwe do wykorzystania, takie jak potwierdzenia uprawnień lub pominięcie uprawnienia do kodu niezarządzanego?
 
-- Co to są zagrożenia bezpieczeństwa, do i z kodu, ponieważ go można uruchomić w dowolnym momencie tylko bardzo zaufanych obiektów wywołujących w stosie?
+- Jakie są zagrożenia bezpieczeństwa i z kodu, ponieważ mogą być uruchamiane w dowolnym momencie z tylko wysoce zaufanymi wywołaniami na stosie?
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, przejrzyj metody, a następnie ocenić następujące czynności:
+Aby naprawić naruszenie tej zasady, przejrzyj metodę i Oceń następujące elementy:
 
-- Czy można utworzyć metody obsługi zdarzeń niepublicznych?
+- Czy można utworzyć metodę obsługi zdarzeń niepubliczną?
 
-- Czy jest możliwe przeniesienie wszystkich niebezpiecznych funkcji programu obsługi zdarzeń?
+- Czy można przenieść wszystkie niebezpieczne funkcje z programu obsługi zdarzeń?
 
-- Jeśli żądanie zabezpieczeń są nakładane, to można zrobić w inny sposób?
+- Czy w przypadku nałożenia żądania zabezpieczeń można to zrobić w inny sposób?
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń od tej reguły tylko po weryfikacji zabezpieczeń zachowania ostrożność aby upewnić się, że Twój kod nie stanowi zagrożenie bezpieczeństwa.
+Pomiń ostrzeżenie z tej reguły tylko po dokładnym przeglądzie zabezpieczeń, aby upewnić się, że kod nie stanowi zagrożenia dla bezpieczeństwa.
 
 ## <a name="example"></a>Przykład
- Poniższy kod przedstawia metodę obsługi zdarzeń, które precyzyjnego złośliwego kodu.
+Poniższy kod przedstawia metodę obsługi zdarzeń, która może być używana przez złośliwy kod.
 
- [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
+[!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
 
 ## <a name="see-also"></a>Zobacz także
 

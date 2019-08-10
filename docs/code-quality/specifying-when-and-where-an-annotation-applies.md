@@ -13,25 +13,25 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b94bd5dc40102bce073e42302e92b737b4e8b0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c7adb310db9eece1d8d4a2881057cc1acde1062
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825230"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923814"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Określanie warunków pojawiania się adnotacji
-W przypadku warunkowego adnotacji może wymagać innych adnotacji, aby określić, że do analizatora.  Na przykład jeśli funkcja zawiera zmienną, która może być synchroniczna lub asynchroniczna, funkcja zachowuje się w następujący sposób: W przypadku synchroniczne go zawsze ostatecznie zakończy się pomyślnie, ale w przypadku asynchronicznej go zgłasza błąd, jeśli nie powiedzie się natychmiast. Gdy funkcja jest wywoływana synchronicznie, wartość wyniku sprawdzania zapewnia żadnej wartości, aby analizator kodu, ponieważ nie będzie mieć zwracane.  Jednak gdy funkcja jest wywoływana asynchronicznie, a wynik funkcji nie jest zaznaczone, może wystąpić po poważnym błędzie. W tym przykładzie pokazano sytuację, w której można użyć `_When_` adnotacji — opisane w dalszej części tego artykułu — Aby włączyć sprawdzanie.
+Gdy adnotacja jest warunkowa, może wymagać innych adnotacji, aby określić, że do analizatora.  Na przykład, jeśli funkcja ma zmienną, która może być synchroniczna lub asynchroniczna, funkcja zachowuje się w następujący sposób: W przypadku synchronicznego, zawsze ostatecznie kończy się powodzeniem, ale w przypadku asynchronicznym zgłasza błąd, jeśli nie może natychmiast zakończyć się pomyślnie. Gdy funkcja jest wywoływana synchronicznie, sprawdzenie wartości wyniku nie zapewnia żadnej wartości dla analizatora kodu, ponieważ nie została zwrócona.  Jeśli jednak funkcja jest wywoływana asynchronicznie, a wynik funkcji nie jest zaznaczony, może wystąpić poważny błąd. Ten przykład ilustruje sytuację, w której można użyć `_When_` adnotacji — opisanej w dalszej części tego artykułu — aby włączyć sprawdzanie.
 
-## <a name="structural-annotations"></a>Adnotacje strukturalnych
- Do kontrolowania, kiedy i gdzie Zastosuj adnotacje, użyj następujących adnotacji strukturalnych.
+## <a name="structural-annotations"></a>Adnotacje strukturalne
+Aby określić, kiedy i gdzie mają być stosowane adnotacje, użyj następujących adnotacji strukturalnej.
 
 |Adnotacja|Opis|
 |----------------|-----------------|
-|`_At_(expr, anno-list)`|`expr` to wyrażenie zwracające l-wartością. Adnotacje w `anno-list` są stosowane do obiektu, który jest nazwany przez `expr`. Dla każdego wpisu `anno-list`, `expr` jest interpretowany w warunku wstępnego, jeśli adnotacja jest interpretowany w warunku wstępnego i jeśli warunek po adnotacja jest interpretowany w stanie po.|
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` to wyrażenie zwracające l-wartością. Adnotacje w `anno-list` są stosowane do obiektu, który jest nazwany przez `expr`. Dla każdego wpisu `anno-list`, `expr` jest interpretowany w warunku wstępnego, jeśli adnotacja jest interpretowany w warunku wstępnym, jeśli warunek po adnotacja jest interpretowany w stanie po.<br /><br /> `iter` to nazwa zmiennej, które są ograniczone do adnotacji (inclusive z `anno-list`). `iter` ma niejawnego typu `long`. Zmienne o identycznej nazwie w dowolnym otaczającego zakresu są ukryte przed oceny.<br /><br /> `elem-count` to wyrażenie obliczane do wartości całkowitej.|
-|`_Group_(anno-list)`|Adnotacje w `anno-list` wszystkie uznaje się za mieć żadnych kwalifikatorów, dotyczy adnotacji grupy, która jest stosowana do każdego adnotacji.|
-|`_When_(expr, anno-list)`|`expr` to wyrażenie, które mogą być konwertowane na `bool`. Gdy jest różna od zera (`true`), adnotacje, które są określone w `anno-list` są uważane za odpowiednie.<br /><br /> Domyślnie dla każdego wpisu `anno-list`, `expr` jest interpretowany jako przy użyciu wartości wejściowych, jeśli adnotacja jest warunkiem wstępnym, a jako przy użyciu wartości danych wyjściowych, jeśli adnotacja jest po warunku. Aby zastąpić domyślne, można użyć `_Old_` wewnętrzne podczas oceny po warunku, aby wskazać, że wartości wejściowe powinny być używane. **Uwaga:**  Adnotacje różnych może zostać włączona w wyniku za pomocą `_When_` Jeśli wartość modyfikowalną — na przykład `*pLength`— jest używana, ponieważ obliczony wynik `expr` w warunku wstępnym może różnić się od jego obliczony wynik w warunku po.|
+|`_At_(expr, anno-list)`|`expr`jest wyrażeniem, które zwraca lvalue. Adnotacje w `anno-list` są stosowane do obiektu, który jest nazwany przez `expr`. Dla każdej adnotacji `anno-list`w `expr` , jest interpretowany jako warunek wstępny, jeśli adnotacja jest interpretowana jako warunek wstępny, a w warunku post, jeśli adnotacja jest interpretowana w warunku post.|
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr`jest wyrażeniem, które zwraca lvalue. Adnotacje w `anno-list` są stosowane do obiektu, który jest nazwany przez `expr`. Dla każdej adnotacji `anno-list`w `expr` , jest interpretowany jako warunek wstępny, jeśli adnotacja jest interpretowana w warunku wstępnego i w warunku post, jeśli adnotacja jest interpretowana w warunku post.<br /><br /> `iter`jest nazwą zmiennej, która jest objęta zakresem adnotacji (włącznie z `anno-list`). `iter`ma typ `long`niejawny. Zmienne o identycznej nazwie w dowolnym zakresie otaczającym są ukryte przed oszacowaniem.<br /><br /> `elem-count`jest wyrażeniem, którego wynikiem jest liczba całkowita.|
+|`_Group_(anno-list)`|Adnotacje w `anno-list` programie są uważane za posiadające dowolny kwalifikator dotyczący adnotacji grupy, która jest stosowana do każdej adnotacji.|
+|`_When_(expr, anno-list)`|`expr`jest wyrażeniem, które można przekonwertować na `bool`. Jeśli wartość jest różna od zera (`true`), adnotacje określone w `anno-list` są uważane za odpowiednie.<br /><br /> Domyślnie dla każdej adnotacji w `anno-list`, `expr` jest interpretowana jako użycie wartości wejściowych, jeśli adnotacja jest warunkiem wstępnym, i jako wartość wyjściowa, jeśli adnotacja jest warunkiem post. Aby zastąpić wartość domyślną, można użyć `_Old_` wartości wewnętrznej podczas obliczania warunku końcowego, aby wskazać, że powinny być używane dane wejściowe. **Uwaga:**  Różne adnotacje mogą być włączane jako zgodne z użyciem `_When_` , jeśli wartość modyfikowalna — na przykład `*pLength`— jest uwzględniana, `expr` ponieważ wynikiem obliczania warunku wstępnego może być różnica w porównaniu z wynikami jego oceny warunkowej.|
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796803"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920801"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Opakuj podatne na przejęcie klauzule finally w zewnętrzny blok try
 
@@ -28,28 +28,28 @@ ms.locfileid: "62796803"
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- W wersjach 1.0 i 1.1 programu .NET Framework, metoda publiczna lub chroniona zawiera `try` / `catch` / `finally` bloku. `finally` Bloku pojawia się, aby zresetować stan zabezpieczeń i nie jest ujęty w `finally` bloku.
+W wersjach 1,0 i 1,1 .NET Framework `try` Metoda publiczna lub chroniona zawiera / `catch` / `finally` blok. `finally` Zostanie wyświetlony `finally` blok służący do resetowania stanu zabezpieczeń i nie jest on ujęty w bloku.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta zasada lokalizuje `try` / `finally` bloki w kodzie, który jest przeznaczony dla wersji 1.0 i 1.1 programu .NET Framework, które mogą być narażone na filtry wyjątków złośliwego obecne w stosie wywołań. Jeśli poufnych operacje, takie jak personifikacji występują w bloku try, zgłaszany jest wyjątek, filtr, można wykonać przed `finally` bloku. Na przykład personifikacji oznacza to, że filtr jest wykonywany jako nazwa spersonifikowanego użytkownika. Filtry są obecnie implementable tylko w języku Visual Basic.
+Ta zasada umożliwia zlokalizowanie `try` / `finally` bloków w kodzie, które są przeznaczone dla wersji 1,0 i 1,1 .NET Framework, które mogą być podatne na złośliwe filtry wyjątków obecne w stosie wywołań. Jeśli w bloku try występują poufne operacje, takie jak personifikacja, a wyjątek jest zgłaszany, filtr można wykonać przed `finally` blokiem. W przypadku przykładu personifikacji oznacza to, że filtr będzie wykonywany jako personifikowany użytkownik. Filtry są obecnie implementowane tylko w Visual Basic.
 
 > [!NOTE]
-> W wersji 2.0 i nowsze wersje programu .NET Framework, automatycznie chroni środowisko uruchomieniowe `try` / `catch` /  `finally` uniemożliwiaj filtry wyjątków złośliwy, gdy następuje bezpośrednio w metodzie, zawiera blok wyjątku.
+> W wersji 2,0 i nowszych `try` .NET Framework środowisko uruchomieniowe automatycznie chroni / `catch` /  `finally` blok przed złośliwymi filtrami wyjątków, jeśli Reset występuje bezpośrednio w metodzie, która zawiera blok wyjątków.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Umieść nieopakowane `try` / `finally` w zewnętrzny blok try. Zobacz drugim przykładzie poniżej. Zmusza to `finally` do wykonania przed uruchomieniem kodu filtru.
+Umieść niezapakowany `try` / wzewnętrznymblokutry`finally` . Zobacz drugi przykład poniżej. Wymusza `finally` to wykonanie przed filtrowaniem kodu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="pseudo-code-example"></a>Przykładowy pseudo-kod
+## <a name="pseudo-code-example"></a>Przykład pseudo kodu
 
 ### <a name="description"></a>Opis
 
-Poniższy pseudo-kod przedstawiono wzorzec wykryte przez tę regułę.
+Poniższy pseudo kodu ilustruje wzorzec wykryty przez tę regułę.
 
 ```csharp
 try {
@@ -63,7 +63,7 @@ finally {
 }
 ```
 
-Pseudo-poniższy kod przedstawia wzorzec służące do ochrony kodu i spełniają tej reguły.
+Poniższy pseudo kodu przedstawia wzorzec, którego można użyć do ochrony kodu i spełnienia tej reguły.
 
 ```csharp
 try {

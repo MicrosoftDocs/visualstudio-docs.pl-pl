@@ -1,49 +1,49 @@
 ---
-title: Włączanie subskrypcji programu Visual Studio dla komputerów Mac
-description: W tym artykule opisano, jak włączyć swoją subskrypcję i odblokowania funkcji w programie Visual Studio dla komputerów Mac za pomocą konta Microsoft
+title: Włączanie subskrypcji
+description: W tym artykule opisano sposób korzystania z konto Microsoft w celu włączenia funkcji subskrypcji i odblokowywania w programie Visual Studio dla komputerów Mac
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acef72e3e1768d0250e0dd7ff2b587277d133ec
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998247"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872314"
 ---
 # <a name="enable-subscription"></a>Włączanie subskrypcji
 
-Program Visual Studio for Mac oferuje trzy poziomy inną subskrypcję do wyboru, dostępna z jednego pobierania:
+Visual Studio dla komputerów Mac udostępnia trzy różne poziomy subskrypcji do wyboru, wszystkie dostępne z jednego pobrania:
 
 * Visual Studio Enterprise for Mac
 * Visual Studio Professional for Mac
 * Visual Studio Community for Mac
 
-Aby rozpocząć korzystanie z subskrypcji, zaloguj się do programu Visual Studio dla komputerów Mac, wykonując kroki opisane w [logowania się do programu Visual Studio dla komputerów Mac](signing-in.md) przewodnik. Logowanie aktywuje Twojej subskrypcji, która jest wyświetlana w oknie dialogowym konta:
+Aby rozpocząć korzystanie z subskrypcji, zaloguj się do Visual Studio dla komputerów Mac, wykonując czynności opisane w przewodniku " [Logowanie do Visual Studio dla komputerów Mac](signing-in.md) ". Zalogowanie aktywuje subskrypcję, która jest wyświetlana w oknie dialogowym konta:
 
 ![Pokaż okno dialogowe licencji użytkownika](media/user-accounts-login.png)
 
-## <a name="update-expired-licenses"></a>Wygasłe licencji
+## <a name="update-expired-licenses"></a>Aktualizuj wygasłe licencje
 
 Jeśli Twoja subskrypcja wygasła, masz dwie opcje:
 
-1. Odnów subskrypcję. Można odnowić subskrypcję, przechodząc do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).
+1. Odnów subskrypcję. Subskrypcję można odnowić, przechodząc do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)witryny.
 
-2. Jeśli masz inne konto z aktywną subskrypcją, możesz dodać go do programu Visual Studio dla komputerów Mac zgodnie z opisem w [Dodawanie wielu kont użytkowników](signing-in.md) artykułu. Visual Studio dla komputerów Mac wykrywa najlepszą dostępną licencję z wszystkich kont, które zostały dodane.
+2. Jeśli masz inne konto z aktywną subskrypcją, możesz je dodać do Visual Studio dla komputerów Mac zgodnie z opisem w artykule [Dodawanie wielu kont użytkowników](signing-in.md) . Visual Studio dla komputerów Mac wykryje najlepszą dostępną licencję ze wszystkich kont, które zostały dodane.
 
-## <a name="product-key-usage"></a>Użycie kluczy produktów
+## <a name="product-key-usage"></a>Użycie klucza produktu
 
-Obecnie nie istnieje sposób korzystanie z klucza produktu, umożliwiające włączenie uprawnień Professional lub Enterprise programu Visual Studio dla komputerów Mac. Aby użyć programu Visual Studio Enterprise for Mac lub Visual Studio Professional dla komputerów Mac, konieczne jest posiadanie odpowiednich [subskrypcji](https://visualstudio.microsoft.com/subscriptions/) i być [zalogowany](signing-in.md) środowiska IDE.
+Obecnie nie ma możliwości użycia klucza produktu w celu włączenia uprawnień Professional lub Enterprise do Visual Studio dla komputerów Mac. Aby użyć Visual Studio Enterprise dla komputerów Mac lub Visual Studio Professional dla komputerów Mac, musisz mieć odpowiednią [subskrypcję](https://visualstudio.microsoft.com/subscriptions/) i [zalogować](signing-in.md) się do środowiska IDE.
 
-## <a name="offline-activation"></a>Aktywacji w trybie offline
+## <a name="offline-activation"></a>Aktywacja w trybie offline
 
 > [!NOTE]
-> Aktywacji w trybie offline nie jest dostępna dla programu Visual Studio dla komputerów Mac.
-> Aby aktywować usługi Visual Studio 2017 for Mac Professional lub Enterprise subskrypcji, musisz można połączenie z Internetem podczas rejestrowania się w.
+> Aktywacja w trybie offline nie jest dostępna dla Visual Studio dla komputerów Mac.
+> Aby aktywować subskrypcję programu Visual Studio 2017 for Mac Professional lub Enterprise, musisz mieć połączenie z Internetem podczas logowania.
 
-Jeśli zakupiono Visual Studio Enterprise 2017 dla komputerów Mac dla maszyny bez połączenia z Internetem, mogą nadal używać programu Visual Studio dla komputerów Mac bez aktywacji, ale narzędzia Xamarin Inspector, Profiler środowiska Xamarin i nie są funkcje osadzone zespoły jest dostępna.
+Jeśli zakupiono Visual Studio Enterprise 2017 dla komputerów Mac dla maszyn bez połączenia z Internetem, można nadal korzystać z Visual Studio dla komputerów Mac bez aktywacji, ale funkcje Xamarin Inspector, Xamarin Profiler i osadzonych zestawów nie będą udostępnione.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zaloguj się do programu Visual Studio (w Windows)](/visualstudio/ide/signing-in-to-visual-studio)
+- [Logowanie do programu Visual Studio (w systemie Windows)](/visualstudio/ide/signing-in-to-visual-studio)

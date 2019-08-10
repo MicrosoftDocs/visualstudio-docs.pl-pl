@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67114c20a7fcf5e8ff01773d8777b23d3caf3d91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542327"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920659"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Metody muszą zachowywać spójną przezroczystość podczas nadpisywania metod bazowych
 
@@ -27,25 +27,25 @@ ms.locfileid: "62542327"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła jest uruchamiana, gdy metoda oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute> zastępuje metodę, która jest przezroczysta lub oznaczona za pomocą <xref:System.Security.SecuritySafeCriticalAttribute>. Reguła jest również uruchamiana, gdy metoda, która jest przezroczysta lub oznaczona za pomocą <xref:System.Security.SecuritySafeCriticalAttribute> zastępuje metodę, która jest oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute>.
+Ta reguła jest wyzwalana, gdy metoda oznaczona <xref:System.Security.SecurityCriticalAttribute> przy użyciu przesłonięć ma metodę, która jest przezroczysta <xref:System.Security.SecuritySafeCriticalAttribute>lub oznaczona przy użyciu. Zasada jest wyzwalana również wtedy, gdy metoda jest przezroczysta lub oznaczona <xref:System.Security.SecuritySafeCriticalAttribute> przy użyciu przesłonięć metody, która jest oznaczona <xref:System.Security.SecurityCriticalAttribute>za pomocą.
 
- Reguła jest stosowana podczas zastępowania metody wirtualnej lub implementującej interfejs.
+Reguła jest stosowana podczas zastępowania metody wirtualnej lub implementującej interfejs.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła jest uruchamiana na próby zmiany ułatwień dostępu zabezpieczeń metodę dalsze górę łańcucha dziedziczenia. Na przykład jeśli metoda wirtualna w klasie bazowej jest przezroczysty lub bezpieczny krytyczny, następnie klasy pochodnej musi zastąpić ją metoda przezroczysty lub bezpieczny krytyczny. Z drugiej strony Jeśli wirtualnej jest krytyczny dla bezpieczeństwa, klasy pochodnej musi zastąpić ją zabezpieczeń metody krytycznej. Ta sama zasada dotyczy implementacji metody interfejsu.
+Ta zasada jest uruchamiana przy próbie zmiany dostępu zabezpieczeń metody w celu dalszej części łańcucha dziedziczenia. Na przykład, jeśli metoda wirtualna w klasie bazowej jest przezroczysta lub bezpieczna-krytyczna, Klasa pochodna musi zastąpić ją metodą przezroczystą lub bezpieczną o krytycznym znaczeniu. Z drugiej strony, Jeśli wirtualna ma krytyczne zabezpieczenia, Klasa pochodna musi zastąpić ją metodą krytyczną zabezpieczeń. Ta sama reguła ma zastosowanie do implementowania metod interfejsu.
 
- Zasady przezroczystości są wymuszane, gdy kod jest skompilowana zamiast w czasie wykonywania w trybie JIT, tak, aby obliczenia przejrzystości nie ma informacji o typie dynamicznych. W związku z tym wynik obliczenia przejrzystości musi mieć możliwość można określić wyłącznie z typów statycznych jest kompilowany dokładnie na czas, niezależnie od typu dynamicznego.
+Reguły przezroczystości są wymuszane, gdy kod jest kompilowany w trybie JIT zamiast w środowisku uruchomieniowym, dzięki czemu Obliczanie przezroczystości nie ma informacji o typie dynamicznym. W związku z tym wynik obliczeń przezroczystości musi być możliwy do ustalenia wyłącznie z typów statycznych, które są kompilowane JIT, niezależnie od typu dynamicznego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, zmień przezroczystość metodę, która jest zastępowania metody wirtualnej lub implementującej interfejs do dopasowania przezroczystości, wirtualnej lub metody interfejsu.
+Aby naprawić naruszenie tej zasady, Zmień przezroczystość metody zastępującej metodę wirtualną lub implementując interfejs, aby dopasować przezroczystość metody wirtualnej lub interfejsu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń od tej reguły. Naruszenie tej zasady spowoduje w środowisku uruchomieniowym <xref:System.TypeLoadException> dla zestawów, które używać przezroczystości poziomu 2.
+Nie pomijaj ostrzeżeń z tej reguły. Naruszenia tej reguły spowodują powstanie środowiska uruchomieniowego <xref:System.TypeLoadException> dla zestawów, które używają przejrzystości poziomu 2.
 
 ## <a name="examples"></a>Przykłady
 
 ### <a name="code"></a>Kod
- [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
+[!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
 
 ## <a name="see-also"></a>Zobacz także
- [Kod o przezroczystym poziomie bezpieczeństwa, poziom 2](/dotnet/framework/misc/security-transparent-code-level-2)
+[Kod przezroczysty pod względem zabezpieczeń, poziom 2](/dotnet/framework/misc/security-transparent-code-level-2)

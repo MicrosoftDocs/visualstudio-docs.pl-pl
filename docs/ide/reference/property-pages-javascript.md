@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605934"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926195"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 
@@ -40,11 +40,11 @@ Użyj następujących opcji, aby wybrać konfigurację i platformę do wyświetl
 
  **Konfiguracja**
 
- Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia to **debugowanie** (domyślne), **wydanie**, **wszystkie konfiguracje**lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie konfiguracji debugowania i wydania w programie Visual](../../debugger/how-to-set-debug-and-release-configurations.md)Studio.
+Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia to **debugowanie** (domyślne), **wydanie**, **wszystkie konfiguracje**lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie konfiguracji debugowania i wydania w programie Visual](../../debugger/how-to-set-debug-and-release-configurations.md)Studio.
 
  **Platformach**
 
- Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia to **każdy procesor CPU** (domyślny dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji), **x64**, **ARM**, **x86**lub platformy zdefiniowanej przez użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie konfiguracji debugowania i wydania w programie Visual](../../debugger/how-to-set-debug-and-release-configurations.md)Studio.
+Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia to **każdy procesor CPU** (domyślny dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji), **x64**, **ARM**, **x86**lub platformy zdefiniowanej przez użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie konfiguracji debugowania i wydania w programie Visual](../../debugger/how-to-set-debug-and-release-configurations.md)Studio.
 
 ## <a name="general-page"></a>Strona ogólna
 
@@ -55,13 +55,13 @@ Użyj następujących opcji, aby ustawić ogólne właściwości projektu.
 
  **Ścieżka wyjściowa**
 
- Określa lokalizację plików wyjściowych dla konfiguracji projektu. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, ścieżka bezwzględna zostanie zapisana w projekcie. Ścieżka domyślna to bin\Debug.
+Określa lokalizację plików wyjściowych dla konfiguracji projektu. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, ścieżka bezwzględna zostanie zapisana w projekcie. Ścieżka domyślna to bin\Debug.
 
- W przypadku korzystania z uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Po kliknięciu przycisku **Debuguj** > **Rozpocznij debugowanie** (lub naciśnij klawisz **F5**) kompilacja jest umieszczana w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Kompiluj rozwiązanie** w menu **kompilacja** umieszcza je w określonej lokalizacji. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz **Narzędzia** > **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, wybierz pozycję **Ogólne**, a następnie wyczyść pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** . Zapewnia to ręczną kontrolę nad wszystkimi wartościami konfiguracji oraz o tym, czy została skompilowana wersja Debug lub Release.
+W przypadku korzystania z uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Po kliknięciu przycisku **Debuguj** > **Rozpocznij debugowanie** (lub naciśnij klawisz **F5**) kompilacja jest umieszczana w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Kompiluj rozwiązanie** w menu **kompilacja** umieszcza je w określonej lokalizacji. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz **Narzędzia** > **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, wybierz pozycję **Ogólne**, a następnie wyczyść pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** . Zapewnia to ręczną kontrolę nad wszystkimi wartościami konfiguracji oraz o tym, czy została skompilowana wersja Debug lub Release.
 
  **Język domyślny**
 
- Określa język domyślny dla projektu. Opcja język wybrana w polu **zegar, język i region** w panelu sterowania Określa preferowany język użytkownika. Określając język domyślny dla projektu, należy upewnić się, że określone domyślne zasoby językowe są używane, jeśli preferowany język użytkownika nie jest zgodny z zasobami języka udostępnianymi w aplikacji.
+Określa język domyślny dla projektu. Opcja język wybrana w polu **zegar, język i region** w panelu sterowania Określa preferowany język użytkownika. Określając język domyślny dla projektu, należy upewnić się, że określone domyślne zasoby językowe są używane, jeśli preferowany język użytkownika nie jest zgodny z zasobami języka udostępnianymi w aplikacji.
 
 ## <a name="debug-page"></a>Strona debugowania
 
@@ -72,7 +72,7 @@ Aby ustawić właściwości zachowania debugowania w projekcie, należy użyć n
 
  **Debuger do uruchomienia**
 
- Określa domyślnego hosta dla debugera.
+Określa domyślnego hosta dla debugera.
 
 - Wybierz pozycję **komputer lokalny** , aby uruchomić aplikację na komputerze hosta programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji na komputerze lokalnym](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 

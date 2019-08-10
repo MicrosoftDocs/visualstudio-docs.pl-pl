@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b5cc0920e56b9fc27ef120d3328f2ba528b54dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 521a44b432a5b8ea886b23aab6b39789efe3b1b0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796822"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920709"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Typy krytyczne pod względem zabezpieczeń nie mogą brać udziału w określaniu równoważności typów
 
@@ -27,21 +27,21 @@ ms.locfileid: "62796822"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ uczestniczy w równoważeniu typu i albo sam typ lub element członkowski lub pole o typie, jest oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute> atrybutu.
+Typ jest częścią równoważności typu i albo sam typ, albo element członkowski lub pole typu, jest oznaczone <xref:System.Security.SecurityCriticalAttribute> atrybutem.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła jest uruchamiana na wszystkich typach krytycznych lub typach zawierających metody krytyczne lub pola, które uczestniczą w równoważeniu typu. Gdy CLR wykryje taki typ, nie jest on ładować je za pomocą <xref:System.TypeLoadException> w czasie wykonywania. Zazwyczaj ta reguła uruchamiana jest tylko wtedy, gdy użytkownicy implementują równoważenie typu ręcznie, zamiast wykonać je, opierając się na otokach tlbimp i kompilatorach.
+Ta reguła jest uruchamiana na wszystkich typach krytycznych lub typach zawierających metody krytyczne lub pola, które uczestniczą w równoważeniu typu. Gdy środowisko CLR wykryje taki typ, nie załaduje go <xref:System.TypeLoadException> w czasie wykonywania. Zazwyczaj ta reguła uruchamiana jest tylko wtedy, gdy użytkownicy implementują równoważenie typu ręcznie, zamiast wykonać je, opierając się na otokach tlbimp i kompilatorach.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, usuń atrybut SecurityCritical.
+Aby naprawić naruszenie tej reguły, Usuń atrybut SecurityCritical.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższych przykładach pokazano interfejs, metody i pola, które spowodują wyzwolenie tej reguły.
+W poniższych przykładach pokazano interfejs, metodę i pole, które spowodują, że ta reguła zostanie uruchomiona.
 
- [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]
+[!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]
 
 ## <a name="see-also"></a>Zobacz także
- [Kod o przezroczystym poziomie bezpieczeństwa, poziom 2](/dotnet/framework/misc/security-transparent-code-level-2)
+[Kod przezroczysty pod względem zabezpieczeń, poziom 2](/dotnet/framework/misc/security-transparent-code-level-2)

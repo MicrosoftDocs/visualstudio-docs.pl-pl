@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c33db7e5237b8e31011689edb725c8ae0e905522
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77909627385a7aa2e41f87c23ec41dc8ac0e1a5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806779"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920358"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Pola niebędące stałymi nie powinny być widoczne
 
@@ -34,19 +34,19 @@ ms.locfileid: "62806779"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Statyczne pole publiczne lub chronione nie jest stały, ani nie jest tylko do odczytu.
+Publiczne lub chronione pole statyczne nie jest stałą ani nie jest tylko do odczytu.
 
 ## <a name="rule-description"></a>Opis reguły
- Pola statyczne, które nie są ani stałe, ani tylko do odczytu, nie obsługują wielowątkowości. Dostęp do takich pól musi być starannie kontrolowany i wymaga zaawansowanych technik programowania do synchronizowania dostępu do obiektu klasy. Ponieważ są to trudne umiejętności, aby dowiedzieć się więcej i główny i testowania taki obiekt stanowi swój własny wyzwania, pola statyczne najlepiej są używane do przechowywania danych, która nie zmienia. Ta reguła ma zastosowanie do bibliotek; aplikacje nie powinny uwidaczniać żadnych pól.
+Pola statyczne, które nie są ani stałe, ani tylko do odczytu, nie obsługują wielowątkowości. Dostęp do takiego pola musi być starannie kontrolowany i wymaga zaawansowanych technik programowania do synchronizowania dostępu do obiektu klasy. Ponieważ są one trudnymi umiejętnościami do uczenia się i opanowania, a testowanie takich obiektów stanowi własne wyzwania, pola statyczne są najlepiej używane do przechowywania danych, które nie są zmieniane. Ta reguła ma zastosowanie do bibliotek programu; aplikacje nie powinny ujawniać żadnych pól.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy pole statyczne, stałe, lub tylko do odczytu. Jeśli nie jest to możliwe, należy ponownie zaprojektować typu do użycia alternatywny mechanizm, takie jak właściwość metodą o bezpiecznych wątkach, która zarządza dostępem wątków z polem. Należy pamiętać, że problemy, takie jak Rywalizacja o blokady i zakleszczenia mogą mieć wpływ na wydajność i zachowanie biblioteki.
+Aby naprawić naruszenie tej reguły, ustaw stałą pole statyczne lub tylko do odczytu. Jeśli nie jest to możliwe, należy zaprojektować typ, aby użyć alternatywnego mechanizmu, takiego jak Właściwość bezpieczna wątkowo, która zarządza bezpiecznym wątkem dostępu do pola bazowego. Należy pamiętać, że problemy, takie jak rywalizacja o blokady i zakleszczenie, mogą mieć wpływ na wydajność i zachowanie biblioteki.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest to bezpieczne Pomijaj ostrzeżeń dla tej reguły, jeśli tworzysz aplikację i dlatego mają pełną kontrolę nad dostępem do typu, który zawiera pole statyczne. Projektanci biblioteki nie ma pomijać ostrzeżenie od tej reguły; za pomocą pola statyczne niestałe ułatwia korzystanie z biblioteki, które są trudne dla deweloperów, aby prawidłowo używać.
+Jeśli tworzysz aplikację i masz pełną kontrolę nad dostępem do typu, który zawiera pole statyczne, można bezpiecznie pominąć ostrzeżenie z tej reguły. Projektanci bibliotek nie powinny pomijać ostrzeżenia z tej reguły. Używanie pól statycznych innych niż stałe może sprawiać, że użycie biblioteki jest trudne do poprawnego użycia przez deweloperów.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje typ, który narusza tę regułę.
+Poniższy przykład pokazuje typ, który narusza tę regułę.
 
- [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
- [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]

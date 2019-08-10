@@ -1,5 +1,5 @@
 ---
-title: Klasy LINQ do SQL z dziedziczeniem pojedynczej tabeli (Projektant O-R)
+title: Klasy LINQ to SQL z dziedziczeniem pojedynczej tabeli (Projektant O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,43 +11,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c99023f57cec8b920518ac702cf5c71988a163c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262879"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925398"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie typu LINQ do klas SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
-[LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenie pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [jak: Skonfigurować dziedziczenie za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zawiera dane rzeczywiste, aby zademonstrować użycie dziedziczenie w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie klas LINQ to SQL przy użyciu dziedziczenia pojedynczej tabeli (Projektant O/R)
+[Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługują dziedziczenie pojedynczej tabeli, ponieważ są one zazwyczaj zaimplementowane w systemach relacyjnych. Ten przewodnik rozszerza się o ogólne kroki opisane w [temacie How to: Skonfiguruj dziedziczenie przy użyciu tematu projektanta](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) o/R i udostępnia pewne prawdziwe dane, aby zademonstrować użycie dziedziczenia [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]w programie.
 
- Z tego instruktażu należy wykonać następujące zadania:
+W tym instruktażu wykonasz następujące zadania:
 
-- Utwórz tabelę bazy danych i Dodaj do niego dane.
+- Utwórz tabelę bazy danych i Dodaj do niej dane.
 
-- Tworzenie aplikacji Windows Forms.
+- Utwórz aplikację Windows Formsową.
 
-- Dodaj [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] plik do projektu.
+- [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Dodaj plik do projektu.
 
-- Tworzenie nowych klas jednostek.
+- Utwórz nowe klasy jednostek.
 
-- Konfigurowanie do używania dziedziczenia klas jednostek.
+- Skonfiguruj klasy jednostek do używania dziedziczenia.
 
-- Zapytania odziedziczoną klasę.
+- Wykonaj zapytanie dotyczące dziedziczonej klasy.
 
-- Wyświetlanie danych w formularzu Windows.
+- Wyświetl dane w formularzu systemu Windows.
 
-## <a name="create-a-table-to-inherit-from"></a>Utwórz tabelę odziedziczone po
- Aby zobaczyć, jak działa dziedziczenie, należy utworzyć małą `Person` tabeli, użyj go jako klasę bazową, a następnie utwórz `Employee` obiektu, który dziedziczy z niego.
+## <a name="create-a-table-to-inherit-from"></a>Utwórz tabelę do dziedziczenia
+Aby zobaczyć, jak działa dziedziczenie, należy utworzyć `Person` małą tabelę, użyć jej jako klasy bazowej, a następnie `Employee` utworzyć obiekt, który z niego dziedziczy.
 
-### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Do utworzenia tabeli podstawowej, aby zademonstrować dziedziczenia
+### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Aby utworzyć tabelę bazową w celu zademonstrowania dziedziczenia
 
-1. W **Eksploratora serwera** lub **Eksplorator bazy danych**, kliknij prawym przyciskiem myszy **tabel** węzła i kliknij przycisk **Dodaj nową tabelę**.
+1. W **Eksplorator serwera** lub **Eksplorator bazy danych**, kliknij prawym przyciskiem myszy węzeł **tabele** , a następnie kliknij polecenie **Dodaj nową tabelę**.
 
     > [!NOTE]
-    > Można użyć bazy danych Northwind lub innej bazy danych można dodać do tabeli.
+    > Możesz użyć bazy danych Northwind lub innej bazy danych, do której można dodać tabelę.
 
-2. W **projektanta tabel**, Dodaj następujące kolumny w tabeli:
+2. W **Projektancie tabel**Dodaj następujące kolumny do tabeli:
 
     |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
     |-----------------|---------------|-----------------|
@@ -55,101 +55,101 @@ ms.locfileid: "66262879"
     |**Typ**|**int**|**True**|
     |**Imię**|**nvarchar(200)**|**False**|
     |**Nazwisko**|**nvarchar(200)**|**False**|
-    |**Menedżer**|**int**|**True**|
+    |**Menedżera**|**int**|**True**|
 
-3. Jako klucz podstawowy, należy ustawić kolumny Identyfikatora.
+3. Ustaw wartość kolumny ID jako klucz podstawowy.
 
-4. Zapisz tabelę i nadaj mu nazwę **osoby**.
+4. Zapisz tabelę i nadaj jej nazwę.
 
 ## <a name="add-data-to-the-table"></a>Dodawanie danych do tabeli
- Aby mogli zweryfikować, że dziedziczenie jest prawidłowo skonfigurowany, tabela musi niektóre dane dla każdej klasy w dziedziczeniu pojedynczej tabeli.
+Aby można było sprawdzić, czy dziedziczenie jest prawidłowo skonfigurowane, tabela wymaga pewnych danych dla każdej klasy w dziedziczeniu pojedynczej tabeli.
 
 ### <a name="to-add-data-to-the-table"></a>Aby dodać dane do tabeli
 
-1. Otwórz tabelę w widoku danych. (Kliknij prawym przyciskiem myszy **osoby** tabelę **Eksploratora serwera** lub **Eksplorator bazy danych** i kliknij przycisk **Pokaż dane tabeli**.)
+1. Otwórz tabelę w widoku danych. (Kliknij prawym przyciskiem myszy tabelę **osoby** w **Eksplorator serwera** lub **Eksplorator bazy danych** a następnie kliknij polecenie **Pokaż dane tabeli**.)
 
-2. Skopiuj następujące dane do tabeli. (Można go skopiować i następnie wkleić je do tabeli, wybierając cały wiersz w **wyniki** okienka.)
+2. Skopiuj następujące dane do tabeli. (Można go skopiować, a następnie wkleić do tabeli, zaznaczając cały wiersz w okienku **wyników** ).
 
     ||||||
     |-|-|-|-|-|
-    |**Identyfikator**|**Typ**|**Imię**|**Nazwisko**|**Menedżer**|
-    |**1**|**1**|**Anna**|**Wallace**|**NULL**|
+    |**Identyfikator**|**Typ**|**Imię**|**Nazwisko**|**Menedżera**|
+    |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
     |**4**|**2**|**Gatis**|**Ozolins**|**1**|
-    |**5**|**2**|**Andreas**|**Hauser**|**1**|
+    |**5**|**2**|**Panu**|**Hauser**|**1**|
     |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|
-    |**7**|**2**|**ALEXEY**|**Orekhov**|**2**|
+    |**7**|**2**|**Alexey**|**Orekhov**|**2**|
     |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|
-    |**9**|**2**|**Akończenie**|**Yee**|**2**|
+    |**9**|**2**|**Pism**|**Yee**|**2**|
     |**10**|**2**|**Fabricio**|**Noriega**|**3**|
-    |**11**|**2**|**Beata**|**Martin**|**3**|
+    |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Krzysztof**|**Kwok**|**3**|
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
- Teraz, po utworzeniu tabeli, należy utworzyć nowy projekt, aby zademonstrować Konfigurowanie dziedziczenia.
+Po utworzeniu tabeli Utwórz nowy projekt, aby zademonstrować Konfigurowanie dziedziczenia.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Aby utworzyć nową aplikację Windows Forms
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** > **projekt**.
 
-2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
+2. Rozwiń pozycję  **C# Wizualizacja** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
 
-3. W środkowym okienku wybierz **Windows Forms App** typ projektu.
+3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nadaj projektowi nazwę **InheritanceWalkthrough**, a następnie wybierz **OK**.
+4. Nazwij projekt **InheritanceWalkthrough**, a następnie wybierz przycisk **OK**.
 
-     **InheritanceWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.
+     Projekt **InheritanceWalkthrough** został utworzony i dodany do **Eksplorator rozwiązań**.
 
-## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Dodaj LINQ do SQL plik klasy do projektu
+## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Dodawanie pliku LINQ to SQL klas do projektu
 
-### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Aby dodać LINQ do SQL pliku do projektu
+### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Aby dodać plik LINQ to SQL do projektu
 
-1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
+1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-2. Kliknij przycisk **klasy LINQ do SQL** szablonu, a następnie kliknij przycisk **Dodaj**.
+2. Kliknij szablon **LINQ to SQL klasy** , a następnie kliknij przycisk **Dodaj**.
 
-     *Dbml* plik zostanie dodany do projektu i **O/R Designer** zostanie otwarty.
+     Plik *. dbml* jest dodawany do projektu i zostanie otwarty **Projektant o/R** .
 
-## <a name="create-the-inheritance-by-using-the-or-designer"></a>Tworzenie dziedziczenia za pomocą Projektanta obiektów relacyjnych
- Konfigurowanie dziedziczenia, przeciągając **dziedziczenia** obiektu z **przybornika** na powierzchnię projektu.
+## <a name="create-the-inheritance-by-using-the-or-designer"></a>Tworzenie dziedziczenia przy użyciu projektanta O/R
+Skonfiguruj dziedziczenie, przeciągając obiekt dziedziczenia z **przybornika** na powierzchnię projektu.
 
-### <a name="to-create-the-inheritance"></a>Aby utworzyć dziedziczenia
+### <a name="to-create-the-inheritance"></a>Aby utworzyć dziedziczenie
 
-1. W **Eksploratora serwera** lub **Eksplorator bazy danych**, przejdź do **osoby** tabelę, która została utworzona wcześniej.
+1. W **Eksplorator serwera** lub **Eksplorator bazy danych**przejdź do utworzonej wcześniej tabeli **Person** .
 
-2. Przeciągnij **osoby** tabeli na **O/R Designer** powierzchni projektowej.
+2. Przeciągnij tabelę **Person** na powierzchnię projektu **projektanta o/R** .
 
-3. Przeciągnij sekundy **osoby** tabeli na **O/R Designer** i zmień jego nazwę na **pracowników**.
+3. Przeciągnij drugą tabelę **osób** do **projektanta o/R** i zmień jej nazwę na **pracownika**.
 
-4. Usuń **Menedżera** właściwość **osoby** obiektu.
+4. Usuń właściwość **Menedżera** z obiektu **osoba** .
 
-5. Usuń **typu**, **identyfikator**, **FirstName**, i **LastName** właściwości z **pracowników** obiektu. (Innymi słowy, Usuń wszystkie właściwości, z wyjątkiem **Menedżera**.)
+5. Usuń właściwości **Type**, **ID**, **FirstName**i **LastName** z obiektu **Employee** . (Innymi słowy, Usuń wszystkie właściwości poza Menedżerem).
 
-6. Z **Object Relational Designer** karcie **przybornika**, Utwórz **dziedziczenia** między **osoby** i  **Pracownik** obiektów. Aby to zrobić, kliknij przycisk **dziedziczenia** pozycja **przybornika** i zwolnij przycisk myszy. Następnie kliknij przycisk **pracowników** obiektu a następnie **osoby** obiektu **O/R Designer**. Następnie wskazuje symbolu strzałki na linii dziedziczenia **osoby** obiektu.
+6. Na karcie **Object Relational Designer** przybornika Utwórzdziedziczenie między obiektami **osoby** i **pracownika** . Aby to zrobić, kliknij element **dziedziczenia** w **przyborniku** i zwolnij przycisk myszy. Następnie kliknij obiekt **Employee** , a następnie obiekt **osoba** w **Projektancie O/R**. Strzałka w linii dziedziczenia wskazuje obiekt **osoby** .
 
-7. Kliknij przycisk **dziedziczenia** linia na powierzchni projektowej.
+7. Kliknij linię **dziedziczenia** na powierzchni projektowej.
 
-8. Ustaw **właściwość rozróżniacza** właściwości **typu**.
+8. Ustaw właściwość **właściwości rozróżniacza** na **Typ**.
 
-9. Ustaw **wartość dyskryminatora klasy pochodnej** właściwości **2**.
+9. Ustaw właściwość **wartość rozróżniacza klasy pochodnej** na **2**.
 
-10. Ustaw **wartość dyskryminatora klasy podstawowej** właściwości **1**.
+10. Ustaw właściwość **wartość rozróżniacza klasy bazowej** na **1**.
 
-11. Ustaw **domyślne dziedziczenie** właściwości **osoby**.
+11. Ustaw **domyślną** Właściwość dziedziczenia na **Person**.
 
 12. Skompiluj projekt.
 
-## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Zapytanie odziedziczoną klasę i wyświetlić dane w formularzu
- Teraz dodasz kod do formularza, który odpytuje dla określonej klasy w modelu obiektów.
+## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Wykonaj zapytanie dotyczące dziedziczonej klasy i Wyświetl dane w formularzu
+Teraz można dodać kod do formularza, który wykonuje zapytania dotyczące określonej klasy w modelu obiektów.
 
-### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>Aby utworzyć zapytanie LINQ i wyświetlić wyniki na formularzu
+### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>Aby utworzyć zapytanie LINQ i wyświetlić wyniki w formularzu
 
-1. Przeciągnij **ListBox** na **Form1**.
+1. Przeciągnij element **ListBox** na **formularz Form1**.
 
-2. Kliknij dwukrotnie formularz, aby utworzyć `Form1_Load` programu obsługi zdarzeń.
+2. Kliknij dwukrotnie formularz, aby utworzyć `Form1_Load` procedurę obsługi zdarzeń.
 
-3. Dodaj następujący kod do `Form1_Load` program obsługi zdarzeń:
+3. Dodaj następujący kod do `Form1_Load` programu obsługi zdarzeń:
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -175,20 +175,20 @@ ms.locfileid: "66262879"
     ```
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
- Uruchom aplikację i sprawdź, czy rekordy wyświetlana w polu listy są wszyscy pracownicy (rekordy, które mają wartość 2 w ich **typu** kolumny).
+Uruchom aplikację i sprawdź, czy rekordy wyświetlane w polu listy to wszyscy pracownicy (rekordy mające wartość 2 w kolumnie **Typ** ).
 
 ### <a name="to-test-the-application"></a>Aby przetestować aplikację
 
 1. Naciśnij klawisz **F5**.
 
-2. Sprawdź, że tylko rekordy, które mają wartość 2 w ich **typu** kolumny są wyświetlane.
+2. Sprawdź, czy są wyświetlane tylko rekordy, które mają wartość 2 w kolumnie **Typ** .
 
-3. Zamknij formularz. (Na **debugowania** menu, kliknij przycisk **Zatrzymaj debugowanie**.)
+3. Zamknij formularz. (W menu **debugowanie** kliknij polecenie **Zatrzymaj debugowanie**).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Przewodnik: Tworzenie zapytań LINQ do klas SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Przewodnik: Tworzenie klas LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Instrukcje: Przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Instrukcje: Generowanie modelu obiektu w języku Visual Basic lubC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Instrukcje: Generuj model obiektów w Visual Basic lubC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

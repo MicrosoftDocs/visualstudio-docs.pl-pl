@@ -1,6 +1,6 @@
 ---
 title: zgłaszanie problemu
-description: Zawiera omówienie raportu narzędzie Problem i zawiera stany problem i definicje
+description: Zawiera omówienie narzędzia Zgłoś problem i zawiera Stany i definicje problemów
 ms.date: 11/15/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -9,127 +9,127 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309812"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925980"
 ---
 # <a name="overview-report-a-problem"></a>Przegląd: Zgłaszanie problemu
 
-Raport narzędzia Problem umożliwia społeczności deweloperów programu Visual Studio, aby przesyłać problemy. Każdej z nich raporty o problemach staje się elementu roboczego na naszych podstawowych inżynierii systemu, co pozwala na angażowanie bezpośrednio z naszych zespołów produktu, aby pomóc nam identyfikować i rozwiązywać problemy z atrakcyjnych. Twoja opinia przesłane zawierających rozbudowane informacje diagnostyczne jest krytyczne dla poprawy rodziny produktów Visual Studio. Naprawdę Doceniamy poświęcenie czasu na zgłaszanie problemów.
+Narzędzie Zgłoś problem umożliwia społeczności deweloperów programu Visual Studio przesyłanie problemów. Każdy z raportów o problemach zostanie elementem roboczym w naszym podstawowym systemie inżynieryjnym, dzięki czemu możesz bezpośrednio współpracować z naszymi zespołami produktów, aby pomóc nam identyfikować i rozwiązywać problemy. Twoja opinia złożona z rozbudowanymi informacjami diagnostycznymi ma kluczowe znaczenie dla usprawnienia rodziny produktów Visual Studio. Naprawdę doceniamy poświęcasz czas na zgłaszanie problemów.
 
-Ponadto można oddawać głosy na opinię z innym członkom społeczności, aby wyświetlić większej uwagi na problem i szybsze rozwiązanie problemu.
+Ponadto możesz głosować na opinie od innych członków społeczności, aby lepiej zadawać problemy i szybciej rozwiązać ten problem.
 
 ## <a name="problem-status"></a>Stan problemu
 
-Po zgłosić problem stany wskazują, gdzie materiałów przesłanych znajdują się w ich cyklu życia. Zgodnie z aplikacją Microsoft teams, Przejrzyj swoje opinie, mogą ustawić go przy użyciu właściwego stanu.  Śledź postęp raporty o problemach, odwołując się do stanów wymienione poniżej pod warunkiem wraz z ich znaczenia i kolor wskaźników.
+Po zgłoszeniu problemu Stany wskazują, gdzie Twoje zgłoszenia są w cyklu życia. W miarę jak zespół Microsoft Teams przegląda swoją opinię, ustawia odpowiedni stan.  Śledź postępy raportów o problemach, odwołując się do Stanów wymienionych poniżej, wraz z ich znaczeniem i wskaźnikami kolorów.
 
-![Nowy stan dla problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/New.jpg)
+![Nowy stan dla raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/New.jpg)
 
-**Nowe** wskazuje, że nowo zgłaszane usterki lub problem i nie uwzględniono w niej jeszcze.
-
-- - -
-
-![Stan problemu raportowanie społeczności deweloperów zaklasyfikowane](../ide/media/ProblemStates/Triaged.jpg)
-
-**Zaklasyfikowane** wskazuje, że wstępne kroki Moderowanie, tłumaczenia i początkowe sprawdzanie duplikatów ukończone. Bilet został przesłany do odpowiedniego zespołu inżynieryjnego wziąć pod uwagę.
+**Nowość** wskazuje, że usterka lub problem jest nowo zgłoszony i nie podjęto jeszcze żadnej akcji.
 
 - - -
 
-![W obszarze stanu brany pod uwagę w przypadku problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/UnderConsideration.jpg)
+![Stan zaklasyfikowany na potrzeby raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/Triaged.jpg)
 
-**Rozważany** wskazuje, że Microsoft dokonuje przeglądu problemu dla społeczności, wpływ i powoduje zwiększenie priorytetu go odpowiednio. Wpływ społeczności nie jest jasne lub znaczące jeszcze, będziemy monitorować problem w tym stanie.
-
-- - -
-
-![W obszarze Stan badania problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/UnderInvestigation.jpg)
-
-**W obszarze badania** wskazuje, że inżynierów aktywnie pracują nad jego problemu można znaleźć rozwiązania.
+**Zaklasyfikowany** wskazuje, że wstępne kroki, takie jak moderowanie, tłumaczenie i sprawdzanie początkowe dla duplikatów, są kompletne. Twój bilet został skierowany do odpowiedniego zespołu inżynieryjnego w celu uwzględnienia.
 
 - - -
 
-![Potrzebujesz więcej informacji o stanie problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/NeedMoreInfo.jpg)
+![Pod uwagę stan raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/UnderConsideration.jpg)
 
-**Potrzebujesz więcej informacji** wskazuje, że potrzebujemy więcej informacji diagnostycznych od Ciebie tak, aby firma Microsoft może przejść do przodu w badaniu.  [Dowiedz się, jak odpowiadać na żądania dalszych informacji.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
-
-- - -
-
-![Rozwiązany — oczekiwanie na wydanie stanu problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/FixedPendingRelease.jpg)
-
-**Stałe — oczekiwanie na wydanie** wskazuje, że istnieje rozwiązanie tego problemu i będzie on dostępny w nadchodzącej wersji zapoznawczej lub wersji.  Gdy poprawka stanie się dostępna w wersji zapoznawczej, ten problem zostanie oznaczony znacznikiem "fixed w" Określanie wersji zapoznawczej.
+**W obszarze rozważanie** wskazuje, że firma Microsoft przegląda Twój problem w celu uzyskania wpływu na społeczność i odpowiednio określi priorytet. Jeśli wpływ na społeczność nie jest jeszcze oczywisty lub znaczący, będziemy nadal monitorować ten problem w tym stanie.
 
 - - -
 
-![Zamknięte — stan stały dla problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/ClosedFixed.jpg)
+![W obszarze stan badania dla raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/UnderInvestigation.jpg)
 
-**Zamknięty — rozwiązany** wskazuje, że wydaliśmy poprawkę rozwiązującą ten problem. Problem jest teraz również oznaczane "rozwiązane w:" tag określania pełnej wersji.
-
-- - -
-
-![Zamknięty — duplikat stan problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/ClosedDuplicate.jpg)
-
-**Zamknięty — duplikat** wskazuje, że problem został już zgłoszony za pośrednictwem innego opinii. Firma Microsoft udostępni możesz za pomocą linku służącego do śledzenia oryginalny raport o problemie.
+**W obszarze badanie** wskazuje, że inżynierowie aktywnie badają swój problem, aby znaleźć rozwiązanie.
 
 - - -
 
-![Zamknięte — niższy priorytet stan problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/ClosedLowerPriority.jpg)
+![Potrzebujesz więcej informacji o stanie raportów o problemach w społeczności deweloperów](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Zamknięte — niższy priorytet** skoncentrować się na dostosowanie się w naszej społeczności deweloperów o najwyższej wartości, znaczenie przy określaniu priorytetów problemy związane z sobą największe skutki klienta. Mimo że firma Microsoft nie uda się rozwiązać problem związany z określonym w tej chwili, mieć pewność, że wszystkie Twoje opinie są cenne i pomagają poprawić program Visual Studio.
-
-- - -
-
-![Zamknięty — nie stan błędu w przypadku problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/ClosedNotABug.jpg)
-
-**Zamknięty — nie usterka** wskazuje, że firma Microsoft posiadany to funkcje zgłoszonych przez bieżący projekt.
+**Potrzeba więcej** informacji wskazuje, że potrzebujemy większej ilości danych diagnostycznych, aby umożliwić nam przechodzenie do badania.  [Dowiedz się, jak odpowiadać na żądania dalszych informacji.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
-![Zamknięty — nie ma wystarczającej ilości informacji o stan problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/ClosedNotEnoughInfo.jpg)
+![Stały stan wydania w przypadku raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/FixedPendingRelease.jpg)
 
-**Zamknięte — Brak wystarczającej ilości informacji** oznacza, że firma Microsoft nie ma wystarczających informacji, aby zbadać to dla Ciebie. Będziemy wszystkiego o ponowne rozpatrzenie opinii po udostępnieniu niezbędne informacje.
-
-- - -
-
-![Zamknięte — inny stan produktu dla problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
-
-**Zamknięte — inny produkt** wskazuje już Ustaliliśmy, że problem ma zastosowanie do innego produktu. Zobacz komentarz od firmy Microsoft, dla którego zewnętrzne produktu i wszystkie łącza pokrewne.
+**Stała wersja oczekująca** oznacza, że mamy poprawkę dotyczącą problemu i będzie ona dostępna w nadchodzącym podglądzie lub wersji.  Gdy poprawka zostanie udostępniona w wersji zapoznawczej, problem jest otagowany ze znacznikiem "Fixed in" określającym wersję zapoznawczą.
 
 - - -
 
-![Zamknięty — nie do naprawienia stan problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/ClosedWontFix.jpg)
+![Zamknięty — stan ustalony dla raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/ClosedFixed.jpg)
 
-**Zamknięty — nie do naprawienia** wskazuje, że firma Microsoft nie są należy wykonać ten problem, ze względu na czynników, takich jak brak wpływu wyrównania lub społeczności kierunek produktu. Zobacz komentarz od firmy Microsoft dla dowolnego dodatkowego wyjaśnienia.  Mimo że nie można rozwiązać tego konkretnego problemu, należy zapewnić, że wszystkie opinie są cenne i pomagają poprawić program Visual Studio.
+**Zamknięto —** oznacza, że firma Microsoft udostępniła poprawkę dotyczącą problemu. Problem jest również otagowany za pomocą tagu "Fixed in:" określającego wersję wydania.
+
+- - -
+
+![Zamknięto — zduplikowany stan dla raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/ClosedDuplicate.jpg)
+
+**Zamknięte — duplikat** wskazuje, że problem został już zgłoszony przez inną opinię. Udostępnimy link pozwalający śledzić oryginalny raport o problemach.
+
+- - -
+
+![Stan zamknięty — niższy priorytet dla raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/ClosedLowerPriority.jpg)
+
+**Zamknięty — niższy priorytet** Aby skoncentrować się na dodaniu poszczególnych użytkowników do społeczności deweloperów, najlepiej postanowimy o problemach z największym wpływem na klienta. Chociaż nie możemy rozwiązać tego konkretnego problemu w tym momencie, należy upewnić się, że wszystkie opinie są cenne i pomagają ulepszyć program Visual Studio.
+
+- - -
+
+![Zamknięto — nie ma stanu usterki dla raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/ClosedNotABug.jpg)
+
+**Zamknięte — nie jest to usterka** wskazująca, że raportowane funkcje są zależne od bieżącego projektu.
+
+- - -
+
+![Zamknięte — brak wystarczającej ilości informacji na potrzeby raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/ClosedNotEnoughInfo.jpg)
+
+**Zamknięte — brak wystarczającej** ilości informacji, aby zbadać to za Ciebie. Będziemy zadowoleni o ponownej analizie opinii po udostępnieniu wymaganych informacji.
+
+- - -
+
+![Zamknięte — inny stan produktu na potrzeby raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
+
+**Zamknięte — inny produkt** wskazuje, że problem dotyczy innego produktu. Zobacz komentarz od firmy Microsoft, dla którego produkt zewnętrzny i wszystkie powiązane linki.
+
+- - -
+
+![Zamknięte — nie można naprawić stanu raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/ClosedWontFix.jpg)
+
+**Zamknięte — nie można rozwiązać** tego problemu, ponieważ nie są one realizowane z powodu czynników takich jak wyrównanie kierunku produktu lub wpływ na społeczność. Aby dowiedzieć się więcej, zobacz komentarz od firmy Microsoft.  Chociaż nie jesteśmy w stanie rozwiązać tego problemu, należy upewnić się, że wszystkie opinie są cenne i pomagają ulepszyć program Visual Studio.
 
 - - -
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 
-### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Jak zwiększyć prawdopodobieństwo wprowadzenie szybko rozwiązać problem?
+### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Jak zwiększyć szansę szybkiego rozwiązywania problemu?
 
-Firma Microsoft zaleca, aby upewnić się, czy problem, który masz zamiar raport już nie został zgłoszony w wyszukiwaniu. Jeśli istniejący element dopasowania problemu możesz znaleźć, wykonaj i głosować w sprawie tego biletu problem.
+Zalecamy używanie wyszukiwania, aby upewnić się, że problem, który zamierzasz zgłosić, nie został jeszcze zgłoszony. Jeśli znajdziesz istniejący element pasujący do Twojego problemu, postępuj zgodnie z tym biletem problemu i zagłosuj na niego.
 
- Podaj informacje, które mogą pomóc nasze zespoły odtworzenia swój problem.  Informacje te obejmują potrzeby Odtwórz kroki, fragmenty kodu, zrzuty ekranu, nagrania odtwarzania, pliki dziennika i innych artefaktów.  Oto [jak zgłosić problem w programie Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
+Podaj wszystkie informacje, które możesz pomóc naszym zespołom odtworzyć to, czego masz.  Te informacje obejmują niezbędne kroki Odtwórz, fragmenty kodu, zrzuty ekranu, nagrania Odtwórz, pliki dziennika i inne artefakty.  Oto [Jak zgłosić problem w programie Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
-### <a name="how-is-my-feedback-prioritized"></a>Jak ma priorytet moje opinie
+### <a name="how-is-my-feedback-prioritized"></a>Jak ma zostać wystawiona opinia?
 
-Firma Microsoft otrzyma dużej liczby cenne problemów od naszych klientów. Aby upewnić się, że do każdego, udostępniamy o najwyższej wartości w naszej społeczności deweloperów, znaczenie przy określaniu priorytetów działań na opinie, które ma wpłynąć społeczności.
+Firma Microsoft otrzymuje dużą liczbę cennych problemów. Aby upewnić się, że będziemy korzystać z najlepszej wartości dla każdej z nich w naszej społeczności deweloperów, firma Microsoft ustala priorytety akcji na podstawie opinii mających największy wpływ na społeczność.
 
-Jeśli nie możemy osobiście reagować na opinie użytkowników, że firma Microsoft pełni docenić dane wejściowe. Mieć pewność, że Twoja opinia pobiera odpowiedni zespół.
+Jeśli nie możemy odpowiedzieć osobiście na Twoją opinię, pamiętaj, że w pełni cenimy dane wejściowe. Należy mieć pewność, że wszystkie opinie są przypadające na odpowiedni zespół.
 
-Naprawdę Doceniamy czas zainwestować w zapewnienie lepszego programu Visual Studio.
+W naszym czasie warto zainwestować w ulepszanie programu Visual Studio.
 
-### <a name="what-actions-can-i-take-if-im-not-satisfied-with-the-resolution"></a>Jakie akcje mogą muszę zrobić, jeśli nie mam zadowolony z rozwiązania?
+### <a name="what-actions-can-i-take-if-im-not-satisfied-with-the-resolution"></a>Jakie akcje można wykonać, jeśli nie jest to zalecane w przypadku rozwiązania?
 
-Nasze zespoły nie optymalne, aby zdiagnozować i rozwiązać problemy, które występują, jednak czasami może być po zakończeniu nie pełni nasze zalecenie. Komentarz po powrocie na opinie i Daj nam znać dokładnie, co nie jesteś zadowolony z, a spróbujemy najlepszych upewnij się, że firma Microsoft własnych potrzeb.
+Nasze zespoły najlepiej pasują do diagnozowania i rozwiązywania problemów, ale mogą wystąpić sytuacje, w których nie są w pełni spełnione nasze zalecenia. Wróć do informacji zwrotnych i daj nam znać, co Ci się nie zgadzasz, i wypróbujemy nasze najlepsze rozwiązanie, aby upewnić się, że spełnimy Twoje potrzeby.
 
-### <a name="how-will-i-get-notified-of-progress-on-my-feedback"></a>Jak będą otrzymywać powiadomienia o postępie dotyczącymi mojej opinii?
+### <a name="how-will-i-get-notified-of-progress-on-my-feedback"></a>Jak będzie otrzymywać powiadomienia o postępie opinii?
 
-Zespoły inżynierów firmy Microsoft będą komunikować się z Tobą, dodawania komentarzy do biletu opinii i zmiany jego stanu biletem, zgodnie z ich postęp. Poszukaj wiadomości e-mail z powiadomieniami, które są wysyłane po opublikowaniu zmian stanu biletu lub komentarz.  Możesz zarządzać częstotliwości powiadomień w ustawieniach profilu i preferencje klientów w witrynie społeczności deweloperów.
+Zespoły inżynierów firmy Microsoft będą komunikować się ze sobą, dodając komentarz do biletu informacji zwrotnych i zmieniając stan biletu w miarę postępu. Obejrzyj powiadomienia e-mail, które są wysyłane po zmianie stanu biletu lub opublikowaniu komentarza.  Możesz zarządzać częstotliwością powiadomień w ustawieniach profilu i preferencji w witrynie społeczności deweloperów.
 
-### <a name="why-cant-i-add-a-problem-for-visual-studio-ide-on-the-developer-community-website"></a>Dlaczego nie mogę dodać problem dla środowiska IDE programu Visual Studio w witrynie sieci Web społeczności deweloperów?
+### <a name="why-cant-i-add-a-problem-for-visual-studio-ide-on-the-developer-community-website"></a>Dlaczego nie mogę dodać problemu dla środowiska IDE programu Visual Studio w witrynie internetowej społeczności deweloperów?
 
-Zgłoszenie problemu za pomocą programu Visual Studio umożliwia informacje diagnostyczne automatycznie uwzględnione w raporcie. To podstawowe informacje, które zapewnia nasi inżynierowie zajmujący się kontekstu muszą być w pełni ułatwią zrozumienie problemu i pracy, aby rozwiązać ten problem.
+Zgłoszenie problemu za pomocą programu Visual Studio umożliwia automatyczne uwzględnienie informacji diagnostycznych w raporcie. Są to istotne informacje, które zapewniają inżynierom kontekst, aby w pełni zrozumieć swój problem i rozpocząć jego rozwiązywanie.
 
-Gdy raport za pomocą programu Visual Studio możesz mogą łatwo udostępniać rozbudowane informacje diagnostyczne z nami, takich jak duże pliki dziennika, informacje o awariach, zrzuty ekranu, nagrywania odtwarzania i innych artefaktów, które pomagają nam dostarczać szybciej rozdzielczości wyższej jakości do Ciebie.
+Gdy raport jest raportowany za pomocą programu Visual Studio, można w łatwy sposób udostępniać rozbudowane informacje diagnostyczne, takie jak duże pliki dziennika, informacje o awarii, zrzuty ekranu, nagrywanie Odtwórz i inne artefakty, które pomagają nam w szybszym dostarczaniu rozwiązań o wyższej jakości.

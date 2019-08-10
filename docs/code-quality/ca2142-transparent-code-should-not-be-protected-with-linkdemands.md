@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b05228ef22dee20506b728164d22976feb662ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf5bb8320a8876582cc325ecf973c83593777193
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545019"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920497"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Kod przezroczysty nie powinien być chroniony za pomocą żądań LinkDemand
 
@@ -27,20 +27,20 @@ ms.locfileid: "62545019"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda przezroczysta pod względem wymaga <xref:System.Security.Permissions.SecurityAction> lub inne żądanie zabezpieczeń.
+Metoda przezroczysta wymaga <xref:System.Security.Permissions.SecurityAction> lub innego żądania zabezpieczeń.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła jest uruchamiana na przezroczystych metodach, które wymaga elementu LinkDemands uzyskiwać do nich dostęp. Przezroczysty kod zabezpieczeń nie powinien być odpowiedzialny za weryfikację zabezpieczeń operacji, a zatem nie powinien wymagać uprawnień. Ponieważ metody przezroczyste powinna być zabezpieczeń neutralne, ich powinna nie ustawienie wszystkie decyzje dotyczące bezpieczeństwa. Ponadto bezpieczny kod krytyczny, który decyzje dotyczące zabezpieczeń, nie należy polegać na przejrzysty kod będzie mieć wcześniej podjętych decyzji.
+Ta zasada jest uruchamiana na przejrzystych metodach, które wymagają LinkDemands dostępu do nich. Przezroczysty kod zabezpieczeń nie powinien być odpowiedzialny za weryfikację zabezpieczeń operacji, a zatem nie powinien wymagać uprawnień. Ze względu na to, że przejrzyste metody mają być neutralne pod względem zabezpieczeń, nie powinny podejmować żadnych decyzji dotyczących zabezpieczeń. Ponadto bezpieczny kod krytyczny, który podejmuje decyzje w zakresie bezpieczeństwa, nie powinien polegać na przezroczystym kodzie, który wcześniej wprowadził takie rozstrzygnięcie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, usuń zapotrzebowania na łącza na metoda przezroczysta pod względem lub oznaczyć metody <xref:System.Security.SecuritySafeCriticalAttribute> sprawdza atrybut, jeśli działa zabezpieczeń, takie jak żądania kontroli zabezpieczeń.
+Aby naprawić naruszenie tej zasady, należy usunąć żądanie linku dla przezroczystej metody lub oznaczyć metodę atrybutem Attribute <xref:System.Security.SecuritySafeCriticalAttribute> , jeśli wykonuje kontrolę zabezpieczeń, na przykład wymagania dotyczące zabezpieczeń.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie reguła jest uruchamiana na metodzie, ponieważ metoda jest przejrzysta i jest oznaczona za pomocą LinkDemand <xref:System.Security.PermissionSet> zawierający <xref:System.Security.Permissions.SecurityAction>.
+W poniższym przykładzie reguła jest uruchamiana na metodzie, ponieważ metoda jest przezroczysta i jest oznaczona za pomocą LinkDemand <xref:System.Security.PermissionSet> , która <xref:System.Security.Permissions.SecurityAction>zawiera.
 
- [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
+[!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
 
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.

@@ -1,209 +1,209 @@
 ---
-title: Tworzenie aplikacji w programie Visual Studio dla komputerów Mac programu ASP.NET Core
-description: W tym artykule opisano sposób rozpoczęcia pracy z programem ASP.NET w programie Visual Studio dla komputerów Mac, w tym instalacji i tworzenia nowego projektu.
+title: Kompilowanie aplikacji ASP.NET Core
+description: W tym artykule opisano, jak rozpocząć pracę z usługą ASP.NET w Visual Studio dla komputerów Mac, w tym instalację i tworzenie nowego projektu.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: f0a2e8433877b3eb61228a886280707f3b4a37fe
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693143"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872895"
 ---
-# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Tworzenie aplikacji w programie Visual Studio dla komputerów Mac programu ASP.NET Core 
+# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Kompilowanie aplikacji ASP.NET Core w Visual Studio dla komputerów Mac
 
-Platforma ASP.NET Core to architektura typu open source i dla wielu platform służąca do tworzenia nowoczesnych oparte na chmurze aplikacji połączonych z Internetem, takich jak aplikacje sieci web i usług, aplikacji IoT oraz zapleczy aplikacji mobilnych. Aplikacje platformy ASP.NET Core mogą być uruchamiane [platformy .NET Core](https://www.microsoft.com/net/core/platform) lub środowiska uruchomieniowego .NET Framework. Została zaprojektowana do zapewnienia architektura deweloperska zoptymalizowane aplikacje, które są wdrażane w chmurze lub lokalnie. Składa się z modułowej składniki przy minimalnym obciążeniu, więc Zachowaj elastyczność podczas konstruowania rozwiązania. Można tworzyć i uruchamiać aplikacje dla wielu platform ASP.NET Core na Windows, Mac i Linux. Platforma ASP.NET Core to "open source" na [GitHub](https://github.com/aspnet/home).
+ASP.NET Core to platforma typu "open source" i międzyplatformowa do tworzenia nowoczesnych, opartych na chmurze aplikacji internetowych, takich jak aplikacje sieci Web i usługi, aplikacje IoT i frontony mobilne. Aplikacje ASP.NET Core mogą być uruchamiane w [środowisku .NET Core](https://www.microsoft.com/net/core/platform) lub w środowisku uruchomieniowym .NET Framework. Został zaprojektowany w celu zapewnienia zoptymalizowanego środowiska programistycznego dla aplikacji, które są wdrażane w chmurze lub działają lokalnie. Składa się z modularnych komponentów o minimalnym obciążeniu, dzięki czemu można zachować elastyczność podczas konstruowania rozwiązań. Możesz tworzyć i uruchamiać aplikacje ASP.NET Core na wielu platformach w systemach Windows, Mac i Linux. ASP.NET Core to Open Source w serwisie [GitHub](https://github.com/aspnet/home).
 
-W tym laboratorium należy utworzyć i eksplorowanie aplikacji ASP.NET Core z programem Visual Studio dla komputerów Mac.
+W tym laboratorium utworzysz i eksplorujesz aplikację ASP.NET Core przy użyciu Visual Studio dla komputerów Mac.
 
 ## <a name="objectives"></a>Cele
 
 > [!div class="checklist"]
-> * Tworzenie aplikacji internetowej platformy ASP.NET Core
-> * Zapoznaj się z platformy ASP.NET Core hostingu, konfiguracji i oprogramowanie pośredniczące modelu
-> * Debugowanie aplikacji sieci web ASP.NET Core
+> * Tworzenie aplikacji sieci Web ASP.NET Core
+> * Poznaj ASP.NET Core hosting, konfigurację i model oprogramowania pośredniczącego
+> * Debugowanie ASP.NET Core aplikacji sieci Web
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 - [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
-## <a name="intended-audience"></a>Odbiorców
+## <a name="intended-audience"></a>Zamierzone odbiorcy
 
-W tym laboratorium jest przeznaczona dla deweloperów, którzy są zaznajomieni z C#, ale doświadczenie nie jest wymagana.
+To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż głębokie środowisko nie jest wymagane.
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>Zadanie 1. Tworzenie nowej aplikacji platformy ASP.NET Core
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>Zadanie 1. Tworzenie nowej aplikacji ASP.NET Core
 
-1. Uruchom **programu Visual Studio dla komputerów Mac**.
+1. Uruchom **Visual Studio dla komputerów Mac**.
 
-2. Wybierz **Plik > nowe rozwiązanie**.
+2. Wybierz pozycję **plik > nowe rozwiązanie**.
 
-3. Wybierz **platformy .NET Core > App** kategorii i **aplikację sieci Web platformy ASP.NET Core (C#)** szablonu. Kliknij przycisk **Dalej**.
+3. Wybierz kategorię **aplikacji .NET Core >** i szablon **aplikacji sieci Web ASP.NET Core (C#)** . Kliknij przycisk **Dalej**.
 
     ![](media/netcore-image1.png)
 
-4. Wprowadź nazwę **"CoreLab"** i kliknij przycisk **Utwórz** do tworzenia projektu. Potrwa kilka minut, aby zakończyć.
+4. Wprowadź nazwę **"CoreLab"** i kliknij przycisk **Utwórz** , aby utworzyć projekt. Ukończenie tej czynności zajmie chwilę.
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Zadanie 2. Podróżujący rozwiązania
+## <a name="task-2-touring-the-solution"></a>Zadanie 2. Przewodnik po rozwiązaniu
 
-1. Domyślny szablon generuje rozwiązanie z jednym projektem platformy ASP.NET Core o nazwie **CoreLab**. Rozwiń węzeł projektu, aby udostępnić jego zawartość.
+1. Szablon domyślny spowoduje utworzenie rozwiązania z pojedynczym ASP.NET Core projektu o nazwie **CoreLab**. Rozwiń węzeł projektu, aby uwidocznić jego zawartość.
 
     ![](media/netcore-image3.png)
 
-2. Ten projekt jest zgodna paradygmat model-view-controller (MVC), zapewnienie wyraźny podział obowiązków między danych (modeli), prezentacji (widoki) i funkcje (kontrolery). Otwórz **HomeController.cs** plik wchodzącej w skład **kontrolerów** folderu.
+2. Ten projekt jest zgodny z odmianą modelu-View-Controller (MVC), aby zapewnić jasny podział obowiązków między danymi (modelami), prezentacją (widokami) i funkcją (controllers). Otwórz plik **HomeController.cs** z folderu **controllers** .
 
     ![](media/netcore-image4.png)
 
-3. **HomeController** klasy przez Konwencję — obsługuje wszystkie żądania przychodzące, które zaczyna się **/Home**. **Indeksu** obsługiwała żądania do głównego katalogu (takich jak `http://site.com/Home`) i innych metod obsługi żądań do swojej ścieżki o nazwie oparte na Konwencji, takich jak **About()** obsługiwanie żądań `http://site.com/Home/About`. Oczywiście jest to wszystkie konfigurowalne. Co warto jest fakt, że **HomeController** jest domyślny kontroler w nowym projekcie, dlatego żądania do katalogu głównego witryny (`http://site.com`) przechodził **indeks()** z  **HomeController** podobnie jak w przypadku żądań `http://site.com/Home` lub `http://site.com/Home/Index`.
+3. Klasa **HomeController** — według Konwencji — obsługuje wszystkie żądania przychodzące, które zaczynają się od **/Home**. Metoda **index** obsługuje żądania do katalogu głównego katalogu ( `http://site.com/Home`na przykład), a inne metody obsługują żądania do ich nazwanych ścieżek na podstawie Konwencji, takich jak **About ()** obsługują żądania do `http://site.com/Home/About`. Oczywiście wszystko to można skonfigurować. Jednym z nich jest to, że **HomeController** jest domyślnym kontrolerem w nowym projekcie, dlatego żądania kierowane do katalogu głównego witryny (`http://site.com`) przechodzą przez **indeks ()** **HomeController** , podobnie jak żądania do `http://site.com/Home` lub `http://site.com/Home/Index`.
 
     ![](media/netcore-image5.png)
 
-4. Projekt ma również **widoków** folder, który zawiera inne foldery, które mapowania na każdy kontroler (oraz jeden dla **Shared** widoków. Na przykład, Wyświetl plik CSHTML (rozszerzenie HTML) do **/Home/About** byłaby to ścieżka w **Views/Home/About.cshtml**. Otwórz ten plik.
+4. Projekt zawiera również folder **widoki** , który zawiera inne foldery, które są mapowane na każdy kontroler (a także jeden dla widoków **udostępnionych** . Na przykład, widok pliku CSHTML (rozszerzenie HTML) dla ścieżki **/Home/about** będzie w **widokach/Home/about. cshtml**. Otwórz ten plik.
 
     ![](media/netcore-image6.png)
 
-5. Ten plik CSHTML używa składni Razor do renderowania elementów HTML oparte na kombinacji standardowych tagów i wbudowany języka C#. Dowiedz się więcej o tym w [dokumentacji online](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+5. Ten plik CSHTML używa składnia Razor do renderowania HTML w oparciu o kombinację standardowych tagów i inline C#. Więcej informacji na ten temat można znaleźć w [dokumentacji online](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
     ![](media/netcore-image7.png)
 
-6. Rozwiązanie zawiera także **wwwroot** folder, który będzie katalog główny witryny sieci web. Możesz umieścić zawartości statycznej witryny, takiej jak CSS, obrazów i bibliotek JavaScript bezpośrednio w ścieżkach, o których mają one miały po wdrożeniu witryny.
+6. Rozwiązanie zawiera również folder **wwwroot** , który będzie katalogiem głównym witryny sieci Web. Możesz umieścić statyczną zawartość witryny, taką jak CSS, images i biblioteki JavaScript, bezpośrednio w ścieżkach, na które mają znajdować się podczas wdrażania lokacji.
 
     ![](media/netcore-image8.png)
 
-7. Dostępne są także różne pliki konfiguracji, które służą do zarządzania projektu, jego pakietów i aplikacji w czasie wykonywania. Na przykład, domyślna aplikacja [konfiguracji](https://docs.microsoft.com/aspnet/core/fundamentals/configuration) są przechowywane w **appsettings.json**. Jednak można zastąpić niektórych lub wszystkich tych ustawień na podstawie na środowisku, takie jak, zapewniając **appsettings. Development.JSON** plik **rozwoju** środowiska.
+7. Istnieją również różne pliki konfiguracji, które służą do zarządzania projektem, jego pakietami i aplikacją w środowisku uruchomieniowym. Na przykład domyślna [Konfiguracja](https://docs.microsoft.com/aspnet/core/fundamentals/configuration) aplikacji jest przechowywana w pliku **appSettings. JSON**. Można jednak zastąpić niektóre/wszystkie te ustawienia dla poszczególnych środowisk, na przykład przez udostępnienie **appSettings. Plik Development. JSON** dla środowiska **deweloperskiego** .
 
     ![](media/netcore-image9.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Zadanie 3. Zrozumienie, jak aplikacja jest obsługiwana
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Zadanie 3. Zrozumienie, w jaki sposób aplikacja jest hostowana
 
-1. Z **Eksploratora rozwiązań**, otwórz **Program.cs**. Jest to program inicjujący, który uruchomi aplikację.
+1. W **Eksplorator rozwiązań**Otwórz **program.cs**. Jest to program inicjujący, na którym będzie uruchamiana aplikacja.
 
     ![](media/netcore-image10.png)
 
-2. Gdy istnieją tylko dwa wiersze kodu w tym miejscu, są one istotne. Możemy podzielić je. Po pierwsze, nowy **WebHostBuilder** zostanie utworzony. Aplikacje platformy ASP.NET Core wymagają hosta, w której chcesz wykonać. Host musi implementować **IWebHost** interfejs, który udostępnia kolekcje funkcji i usług, a **Start** metody. Host jest zwykle tworzony przy użyciu wystąpienia **WebHostBuilder**, który tworzy i zwraca **WebHost** wystąpienia. **WebHost** odwołuje się do serwera, który będzie obsługiwać żądania.
+2. Chociaż w tym miejscu istnieje tylko dwa wiersze kodu, są one istotne. Podziel się nimi. Najpierw zostanie utworzony nowy **WebHostBuilder** . Aplikacje ASP.NET Core wymagają hosta, który ma zostać uruchomiony. Host musi implementować interfejs **IWebHost** , który uwidacznia kolekcje funkcji i usług oraz metodę startową. Host jest zwykle tworzony przy użyciu wystąpienia **WebHostBuilder**, które kompiluje i zwraca wystąpienie **webhost** . Serwer **webhost** odwołuje się do serwera, który będzie obsługiwał żądania.
 
     ![](media/netcore-image11.png)
 
-3. Gdy **WebHostBuilder** odpowiada dla tworzenia hosta, który spowoduje uruchomienie serwera aplikacji, wymaga zapewnienia serwera, który implementuje **IServer**. Domyślnie jest to  **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** , na podstawie serwera sieci web dla wielu platform dla platformy ASP.NET Core **libuv**, czyli bibliotekę asynchronicznych operacji We/Wy dla wielu platform.
+3. Mimo że **WebHostBuilder** jest odpowiedzialny za utworzenie hosta, który będzie mógł zainicjować serwer dla aplikacji, wymaga podania serwera implementującego **IServer**. Domyślnie jest to **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** , wieloplatformowy serwer sieci web dla ASP.NET Core oparty na **libuv**, który jest międzyplatformową biblioteką asynchronicznych operacji we/wy.
 
     ![](media/netcore-image12.png)
 
-4. Następnie serwera głównego zawartości jest ustawiony. Określa, gdzie wyszukiwania dla plików zawartości, takich jak pliki widoku składnika MVC. Domyślny katalog główny zawartości jest folder, w którym aplikacja jest uruchomiona.
+4. Następnie zostanie ustawiony katalog główny zawartości serwera. Określa miejsce, w którym wyszukuje pliki zawartości, takie jak pliki widoku MVC. Domyślnym katalogiem zawartości jest folder, z którego aplikacja jest uruchamiana.
 
     ![](media/netcore-image13.png)
 
-5. Jeśli aplikacja musi działać z serwerem sieci web usług Internet Information Services (IIS), **UseIISIntegration** metoda powinna być wywoływana w ramach tworzenia hosta. Aby to konfigurować serwera, takie jak **UseKestrel** jest. Usługi IIS za pomocą platformy ASP.NET Core, należy określić zarówno **UseKestrel** i **UseIISIntegration**. **Kestrel** jest przeznaczony do uruchamiania za serwerem proxy i nie powinny być wdrażane bezpośrednio połączonego z Internetem. **UseIISIntegration** określa usług IIS jako zwrotnego serwera proxy, ale jest to istotne tylko podczas uruchamiania na maszynach mających usług IIS. W przypadku wdrożenia aplikacji Windows, należy pozostawić go w. Go nie pogarszać inaczej.
+5. Jeśli aplikacja musi działać z serwerem sieci Web Internet Information Services (IIS), Metoda **UseIISIntegration** powinna być wywoływana w ramach konstruowania hosta. To nie konfiguruje serwera, na przykład **UseKestrel** . Aby używać usług IIS z ASP.NET Core, należy określić zarówno **UseKestrel** , jak i **UseIISIntegration**. **Kestrel** jest przeznaczony do uruchamiania za serwerem proxy i nie należy go wdrażać bezpośrednio do Internetu. **UseIISIntegration** określa usługi IIS jako serwer zwrotnego serwera proxy, ale jest to istotne tylko w przypadku uruchamiania na maszynach z usługami IIS. Jeśli aplikacja jest wdrażana w systemie Windows, należy ją pozostawić. Nie ma inaczej.
 
     ![](media/netcore-image14.png)
 
-6. Jest rozwiązaniem oczyszczarki do oddzielania ładowania ustawień uruchamiania aplikacji. Można to łatwo zrobić, **UseStartup** jest wywoływana, aby określić, że **uruchamiania** klasy jest wywoływany do ładowania ustawień i innych zadań uruchamiania, takich jak wstawianie oprogramowania pośredniczącego do potoku HTTP. Może mieć wielu **UseStartup** wywołania z założeniem, każdy z nich zastępuje poprzednie ustawienia zgodnie z potrzebami.
+6. Jest to przejrzyste rozwiązanie umożliwiające oddzielenie ładowania ustawień od uruchomienia aplikacji. Aby to ułatwić, **UseStartup** jest wywoływana, aby określić, że Klasa startowa ma zostać wywołana w celu załadowania ustawień i innych zadań uruchamiania, takich jak wstawianie oprogramowania pośredniczącego do potoku HTTP. Może istnieć wiele wywołań **UseStartup** z oczekiwaniami, że każdy z nich zastępuje poprzednie ustawienia, zgodnie z wymaganiami.
 
     ![](media/netcore-image15.png)
 
-7. Ostatnim krokiem w tworzeniu **IWebHost** jest wywołanie **kompilacji**.
+7. Ostatnim krokiem tworzenia **IWebHost** jest wywołanie metody **Build**.
 
     ![](media/netcore-image16.png)
 
-8. Podczas **IWebHost** klasy są wymagane do zaimplementowania nieblokującej na poziomie **Start**, projektów ASP.NET Core ma metodę rozszerzenia, o nazwie **Uruchom** to opakowuje  **Rozpocznij** z blokowanie kodu, dzięki czemu nie trzeba ręcznie uniemożliwić metody zamykania natychmiast.
+8. Gdy klasy **IWebHost** są wymagane do zaimplementowania **uruchamiania**bez blokowania, ASP.NET Core projekty mają metodę rozszerzającą o nazwie **Run** , która zawija się od kodu blokującego, aby nie trzeba było ręcznie uniemożliwiać metody z natychmiastowe wyjście.
 
     ![](media/netcore-image17.png)
 
-## <a name="task-4-running-and-debugging-the-application"></a>Zadanie 4. Uruchamianie i debugowanie aplikacji
+## <a name="task-4-running-and-debugging-the-application"></a>Zadanie 4: Uruchamianie i debugowanie aplikacji
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **CoreLab** węzeł projektu i wybierz pozycję **opcje**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu **CoreLab** i wybierz polecenie **Opcje**.
 
     ![](media/netcore-image18.png)
 
-2. **Opcje projektu** okno dialogowe zawiera wszystko, czego potrzebujesz, aby dostosować, jak zbudowane i uruchomić aplikację. Wybierz **Uruchom > konfiguracje > domyślna** węzła z lewego panelu.
+2. Okno dialogowe **Opcje projektu** zawiera wszystko, czego potrzebujesz, aby dostosować sposób kompilowania i uruchamiania aplikacji. Wybierz węzeł **Uruchom konfiguracje > > default** z panelu po lewej stronie.
 
-3. Sprawdź **Uruchom w konsoli zewnętrznej** i usuń zaznaczenie pola wyboru **Wstrzymaj dane wyjściowe konsoli**. Zazwyczaj samodzielnie hostowanej aplikacji nie miałoby jego konsoli, które są widoczne, ale zamiast tego będzie rejestrować wyników do **dane wyjściowe** konsoli. Na potrzeby tego laboratorium pokażemy je w oddzielnym oknie, mimo że nie trzeba to zrobić podczas normalnego rozwoju.
+3. Zaznacz opcję **Uruchom w konsoli zewnętrznej** i usuń zaznaczenie pola **Wstrzymaj dane wyjściowe konsoli**. Zwykle aplikacja samodzielnie hostowana nie będzie miała widocznej konsoli, ale zamiast tego rejestruje wyniki w konsoli wyjściowej . Na potrzeby tego laboratorium zobaczymy go również w osobnym oknie, chociaż nie trzeba tego robić podczas normalnego opracowywania.
 
 4. Kliknij przycisk **OK**.
 
     ![](media/netcore-image19.png)
 
-5. Naciśnij klawisz **F5** Aby skompilować i uruchomić aplikację. Alternatywnie, można wybrać **Uruchom > Rozpocznij debugowanie**.
+5. Naciśnij klawisz **F5** , aby skompilować i uruchomić aplikację. Alternatywnie możesz wybrać polecenie **uruchom > Rozpocznij debugowanie**.
 
-6. Program Visual Studio for Mac spowoduje uruchomienie dwa okna. Pierwsza to okna konsoli, która udostępnia wgląd w aplikację samodzielnie hostowanego serwera.
+6. Visual Studio dla komputerów Mac uruchomi dwa okna. Pierwszym z nich jest okno konsoli, które udostępnia widok aplikacji serwera samoobsługowego.
 
     ![](media/netcore-image20.png)
 
-7. Drugim jest zwykłym oknie przeglądarki do testowania witryny. Chodzi o przeglądarce wie, ta aplikacja może być hostowanych w dowolnym miejscu. Kliknij przycisk **o** można przejść do tej strony.
+7. Drugim jest typowym oknem przeglądarki, aby przetestować lokację. W odniesieniu do znanej przeglądarki ta aplikacja może być hostowana w dowolnym miejscu. Kliknij , aby przejść do tej strony.
 
     ![](media/netcore-image21.png)
 
-8. Między innymi informacje o stronie renderuje część tekstu, ustaw w kontrolerze.
+8. Na stronie informacje są renderowane niektóre elementy tekstowe ustawione w kontrolerze.
 
     ![](media/netcore-image22.png)
 
-9. Zachowaj oba okna otwarte i z powrotem do programu Visual Studio dla komputerów Mac. Otwórz **Controllers/HomeController.cs** Jeśli nie jest już otwarty.
+9. Zachowaj otwarte okna i wróć do Visual Studio dla komputerów Mac. Otwórz plik **controllers/HomeController. cs** , jeśli nie jest jeszcze otwarty.
 
     ![](media/netcore-image23.png)
 
-10. Ustaw punkt przerwania w pierwszym wierszu **o** metody. Można to zrobić, klikając na marginesie lub ustawia kursor myszy na wiersz i naciskając klawisz **F9**. Ten wiersz ustawia dane w **ViewData** kolekcji, który jest renderowany w stronę CSHTML pod **Views/Home/About.cshtml**.
+10. Ustaw punkt przerwania w pierwszym wierszu metody **about** . Możesz to zrobić, klikając margines lub ustawiając kursor w wierszu i naciskając klawisz **F9**. Ten wiersz ustawia niektóre dane w kolekcji **Viewdata** , które są renderowane na stronie cshtml w **widokach/Home/about. cshtml**.
 
     ![](media/netcore-image24.png)
 
-11. Wróć do przeglądarki i Odśwież informacje o stronie. Wywoła to punkt przerwania w programie Visual Studio dla komputerów Mac.
+11. Wróć do przeglądarki i Odśwież stronę informacje. Spowoduje to wyzwolenie punktu przerwania w Visual Studio dla komputerów Mac.
 
-12. Wskaźnik myszy nad **ViewData** elementu członkowskiego, aby wyświetlić jego dane. Można również rozwinąć jego elementów podrzędnych, aby wyświetlić dane zagnieżdżonych.
+12. Wskaźnik myszy nad składową **Viewdata** , aby wyświetlić jego dane. Możesz również rozwinąć jego podrzędne elementy członkowskie, aby zobaczyć zagnieżdżone dane.
 
     ![](media/netcore-image25.png)
 
-13. Usuń punkt przerwania aplikacji przy użyciu tej samej metody, użytego do ją dodać.
+13. Usuń punkt przerwania aplikacji, używając tej samej metody, która została użyta do dodania.
 
-14. Otwórz **Views/Home/About.cshtml**.
+14. Otwórz **Widok/Home/about. cshtml**.
 
-15. Zmień tekst **"dodatkowe"** do **"zmienione"** i Zapisz plik.
+15. Zmień tekst **"dodatkowy"** na **"zmieniony** " i Zapisz plik.
 
     ![](media/netcore-image26.png)
 
-16. Naciśnij klawisz **Kontynuuj** przycisk, aby kontynuować wykonywanie.
+16. Naciśnij przycisk **Kontynuuj** , aby kontynuować wykonywanie.
 
     ![](media/netcore-image27.png)
 
-17. Wróć do okna przeglądarki, aby zobaczyć zaktualizowany tekst. Ta zmiana może odbywać się w dowolnym momencie i nie wymagają punktu przerwania w debugerze. Odśwież przeglądarkę, jeśli nie widzisz, zmiany zostaną uwzględnione natychmiast.
+17. Wróć do okna przeglądarki, aby zobaczyć zaktualizowany tekst. Tę zmianę można wykonać w dowolnym momencie i niekoniecznie wymagało punktu przerwania debugera. Odśwież przeglądarkę, jeśli zmiany nie są widoczne bezpośrednio.
 
     ![](media/netcore-image28.png)
 
-18. Zamknij konsolę programu test w przeglądarce okna i aplikacji. Spowoduje to zatrzymanie debugowania, jak również.
+18. Zamknij okno przeglądarki testowej i konsolę aplikacji. Spowoduje to zatrzymanie debugowania.
 
-## <a name="task-5-application-startup-configuration"></a>Zadanie 5. Konfiguracja uruchamiania aplikacji
+## <a name="task-5-application-startup-configuration"></a>Zadanie 5: Konfiguracja uruchamiania aplikacji
 
-1. Z **Eksploratora rozwiązań**, otwórz **Startup.cs**. Można tutaj zauważyć pewne czerwone faliste linie początkowo jako pakiety NuGet są przywracane w tle i kompilator Roslyn tworzy pełny obraz zależności projektu.
+1. W **Eksplorator rozwiązań**Otwórz **Startup.cs**. Możesz zauważyć, że niektóre czerwone zygzaky początkowo jako pakiety NuGet są przywracane w tle, a kompilator Roslyn tworzy pełny obraz zależności projektu.
 
     ![](media/netcore-image29.png)
 
-2. Znajdź **uruchamiania** metody. Ta sekcja definiuje konfigurację wstępną dla aplikacji i gęsto spakowane. Omówmy tę kwestię w dół.
+2. Znajdź metodę **uruchamiania** . Ta sekcja definiuje początkową konfigurację aplikacji i jest gęsto spakowana. Rozbiciemy na siebie.
 
     ![](media/netcore-image30.png)
 
-3. Metoda rozpoczyna się od zainicjowania **ConfigurationBuilder** i ustawianie jego ścieżki podstawowej.
+3. Metoda zostanie wyłączona przez zainicjowanie **ConfigurationBuilder** i ustawienie jej ścieżki podstawowej.
 
     ![](media/netcore-image31.png)
 
-4. Następnie ładuje wymaganą **appsettings.json** pliku.
+4. Następnie ładuje wymagany plik **appSettings. JSON** .
 
     ![](media/netcore-image32.png)
 
-5. Po tym próbuje załadować określonego środowiska **appsettings.json** pliku, który spowoduje zastąpienie istniejących ustawień. Na przykład, jest podana **appsettings. Development.JSON** plik używany w tym konkretnym środowisku. Aby dowiedzieć się więcej o konfiguracji w programie ASP.NET Core, zapoznaj się z [dokumentację](https://docs.microsoft.com/aspnet/core/fundamentals/configuration).
+5. Następnie próbuje załadować plik **appSettings. JSON** specyficzny dla środowiska, który zastąpi istniejące ustawienia. Na przykład jest to udostępniona wartość **appSettings. Plik Development. JSON** używany w tym konkretnym środowisku. Aby dowiedzieć się więcej na temat konfiguracji w ASP.NET Core, zapoznaj [się z](https://docs.microsoft.com/aspnet/core/fundamentals/configuration)dokumentacją.
 
     ![](media/netcore-image34.png)
 
-6. Na koniec zmienne środowiskowe są dodawane do konstruktora konfiguracji i konfiguracji jest wbudowana i ustaw do użycia.
+6. Na koniec zmienne środowiskowe są dodawane do programu Configuration Builder, a konfiguracja jest skompilowana i ustawiana pod kątem użycia.
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>Zadanie 6. Wstawianie oprogramowania pośredniczącego aplikacji
+## <a name="task-6-inserting-application-middleware"></a>Zadanie 6: Wstawianie oprogramowania pośredniczącego aplikacji
 
-1. Znajdź **Konfiguruj** method in Class metoda **uruchamiania** klasy. Jest to, gdzie całe oprogramowanie pośredniczące jest skonfigurowany tak, że może być wstawiony do potoku HTTP i używane do przetwarzania każdego żądania do serwera. Gdy ta metoda jest wywoływana tylko raz, zawartość metody (takie jak **UseStaticFiles**) mogą być wykonywane na każde żądanie.
+1. Znajdź metodę **Configure** w klasie **Startup** . Jest to miejsce, w którym skonfigurowano wszystkie oprogramowanie pośredniczące, aby można je było wstawić do potoku HTTP i użyć do przetwarzania każdego żądania do serwera. Chociaż ta metoda jest wywoływana tylko raz, zawartość metod (takich jak **UseStaticFiles**) może być wykonywana dla każdego żądania.
 
     ![](media/netcore-image36.png)
 
-2. Można również dodać dodatkowe oprogramowanie pośredniczące do wykonania w ramach potoku. Dodaj poniższy kod po **aplikacji. UseStaticFiles** do automatycznego dodawania **X-Test** nagłówka do każdej odpowiedzi wychodzącej. Funkcja IntelliSense ułatwia wykonania kodu podczas wpisywania.
+2. Możesz również dodać kolejne oprogramowanie pośredniczące, które ma zostać wykonane w ramach potoku. Dodaj poniższy kod po **aplikacji. UseStaticFiles** do automatycznego dodawania nagłówka **X-test** do każdej odpowiedzi wychodzącej. Technologia IntelliSense pomoże Ci zakończyć kod w trakcie pisania.
 
     ```csharp
     app.Use(async (context, next) =>
@@ -213,34 +213,34 @@ W tym laboratorium jest przeznaczona dla deweloperów, którzy są zaznajomieni 
     });
     ```
 
-3. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
+3. Naciśnij klawisz **F5** , aby skompilować i uruchomić projekt.
 
-4. Możemy użyć przeglądarki, aby sprawdzić nagłówki, aby sprawdzić, czy są one dodawane. Poniższe instrukcje dotyczą programu Safari, ale możesz dzieje się tak samo [Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) lub [Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console).
+4. Możemy użyć przeglądarki do sprawdzenia nagłówków, aby sprawdzić, czy są one dodawane. Poniższe instrukcje dotyczą programu Safari, ale można to zrobić w przeglądarce [Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) lub [Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console).
 
-5. Po ładowane do przeglądarki przy lokacji, wybierz **Safari > Preferencje**.
+5. Gdy przeglądarka załaduje lokację, wybierz pozycję **Safari > Preferences (Preferencje**).
 
-6. Na **zaawansowane** karcie wyboru **pokazują tworzenie menu na pasku menu** i zamknij okno dialogowe.
+6. Na karcie **Zaawansowane** zaznacz opcję **Pokaż menu rozwijane na pasku menu** , a następnie zamknij okno dialogowe.
 
     ![](media/netcore-image37.png)
 
-7. Wybierz **opracowywanie > Pokaż zasoby strony**.
+7. Wybierz pozycję **opracowywanie > Pokaż zasoby strony**.
 
-8. Odświeżenie okna przeglądarki, tak aby narzędzi deweloperskich w nowo otwartym mogą śledzić i analizowania ruchu sieciowego i zawartości.
+8. Odśwież okno przeglądarki, aby nowo otwarte narzędzia programistyczne mogły śledzić i analizować ruch i zawartość.
 
-9. Strony HTML localhost renderowana przez serwer będzie elementu wybrane domyślnie.
+9. Stroną HTML localhost renderowaną przez serwer będzie element wybrany domyślnie.
 
     ![](media/netcore-image38.png)
 
-10. Rozwiń **paska bocznego szczegóły**.
+10. Rozwiń **pasek boczny szczegóły**.
 
     ![](media/netcore-image39.png)
 
-11. Przewiń do dołu paska bocznego, aby wyświetlić nagłówek odpowiedzi, wcześniej dodany w kodzie.
+11. Przewiń w dół paska bocznego, aby zobaczyć nagłówek odpowiedzi dodany we wcześniejszej części kodu.
 
     ![](media/netcore-image40.png)
 
-12. Zamknij okno przeglądarki i konsoli, jeśli jest spełniony.
+12. Zamknij okno przeglądarki i konsolę po spełnieniu.
 
 ## <a name="summary"></a>Podsumowanie
 
-W tym środowisku laboratoryjnym już wiesz, jak zacząć tworzenie aplikacji platformy ASP.NET Core z programem Visual Studio dla komputerów Mac. Jeśli chcesz, zapoznaj się z tworzeniem bardziej szczegółowy aplikacji bazy danych filmów, zobacz [Rozpoczynanie pracy z platformą ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc) samouczka.
+W tym laboratorium dowiesz się, jak rozpocząć tworzenie aplikacji ASP.NET Core przy użyciu Visual Studio dla komputerów Mac. Jeśli chcesz poznać tworzenie bardziej kompletnych aplikacji bazy danych filmów, zobacz samouczek wprowadzenie do [ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc) .

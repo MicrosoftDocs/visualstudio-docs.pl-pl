@@ -12,21 +12,21 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab90a2e03aae60f3027b61d1f3358c05f490ebdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e968879e10456137033f53d57f7351de5522fe46
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825269"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923777"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++
-SAL jest język adnotacji kodu źródłowego firmy Microsoft. Za pomocą funkcji adnotacje kodu źródłowego, możesz wprowadzać zamiar za kod jawnego. Narzędzia do analizy statycznej automatycznych dokładniej analizować kod znacznie mniejszej liczby wyników fałszywie dodatnich i fałszywych wyników negatywnych można również włączyć w tych adnotacji.
+SAL to język adnotacji kodu źródłowego firmy Microsoft. Przy użyciu adnotacji kodu źródłowego można wykonać zamiar za kodem jawnym. Te adnotacje umożliwiają również automatyczne analizowanie kodu przy użyciu narzędzi analitycznych statycznych, co znacznie mniej fałszywie dodatnich i fałszywych wartości ujemnych.
 
- Artykuły w tej sekcji dokumentacji aspektów SAL, zapewniają odwołanie SAL składni i przykłady jego użycia.
+Artykuły w tej sekcji dokumentacji omawiają aspekty SAL, zawierają odwołania do składni SAL i dają przykłady użycia.
 
 - [Informacje o języku SAL](../code-quality/understanding-sal.md)
 
-     Zawiera informacje i przykłady pokazujące podstawowe adnotacji SAL.
+     Zawiera informacje i przykłady pokazujące podstawowe adnotacje SAL.
 
 - [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)
 
@@ -34,19 +34,19 @@ SAL jest język adnotacji kodu źródłowego firmy Microsoft. Za pomocą funkcji
 
 - [Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
 
-     Wyświetla listę adnotacji SAL dla funkcji i zachowanie funkcji.
+     Wyświetla adnotacje SAL dla funkcji i zachowania funkcji.
 
 - [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)
 
-     Wyświetla listę adnotacji SAL, struktur i klas.
+     Wyświetla listę adnotacji SAL dla struktur i klas.
 
 - [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)
 
-     Wyjaśnia, jak korzystanie z adnotacji SAL mechanizmy blokady.
+     Wyjaśnia, jak używać adnotacji SAL z mechanizmami blokowania.
 
 - [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
-     Wyświetla listę adnotacji SAL, które określają warunek lub inne adnotacje SAL zakresu (umieszczania).
+     Wyświetla listę adnotacji SAL, które określają warunek lub zakres (położenie) innych adnotacji SAL.
 
 - [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)
 
@@ -54,10 +54,10 @@ SAL jest język adnotacji kodu źródłowego firmy Microsoft. Za pomocą funkcji
 
 - [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
 
-     Przykłady, które pokazują, jak korzystanie z adnotacji SAL. Wyjaśniono również typowych pułapek.
+     Zawiera przykłady, które pokazują, jak używać adnotacji SAL. Wyjaśniono również typowe pułapek.
 
 ## <a name="related-resources"></a>Powiązane zasoby
- [Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/?LinkId=251197)
+[Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Zobacz też
- [SAL 2.0 adnotacji dla sterowników Windows](http://go.microsoft.com/fwlink/?LinkId=250979)
+[Adnotacje SAL 2,0 dla sterowników systemu Windows](http://go.microsoft.com/fwlink/?LinkId=250979)

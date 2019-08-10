@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cd4a50ebf4c27213d288cbab33647931c4a399d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e94f8aa823fc7665144f1d774339d1c41f37edc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790277"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926244"
 ---
 # <a name="find-command"></a>Find — Polecenie
-Przeszukuje pliki za pomocą podzestawu opcji dostępnych w **Znajdź w plikach** karcie **Znajdź i Zamień** okna.
+Przeszukuje pliki za pomocą podzestawu opcji dostępnych na karcie **Znajdź w plikach** okna **Znajdź i Zamień** .
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,35 +31,47 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `findwhat` Wymagane. Tekst do dopasowania.
+`findwhat`Wymagane. Tekst do dopasowania.
 
 ## <a name="switches"></a>Przełączniki
- /Case lub /c atrybut opcjonalny. Dopasowuje występują tylko wtedy, gdy wielkich i małych liter dokładnie odpowiadać, określone w `findwhat` argumentu.
+/Case lub/c\
+Opcjonalny. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokładnie pasują do `findwhat` znaków określonych w argumencie.
 
- / doc lub /d atrybut opcjonalny. Wyszukuje w bieżącym dokumencie. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+/doc lub/d\
+Opcjonalny. Przeszukuje tylko bieżący dokument. Określ tylko jeden z dostępnych zakresów wyszukiwania `/doc`,, `/proc`, `/open`lub `/sel`.
 
- /markall lub /m atrybut opcjonalny. Umieszcza grafiki na każdy wiersz zawiera dopasowanie wyszukiwania w bieżącym dokumencie.
+/markall lub/m\
+Opcjonalna. Umieszcza grafikę w każdym wierszu, który zawiera dopasowanie wyszukiwania w bieżącym dokumencie.
 
- / Open lub /o atrybut opcjonalny. Przeszukuje wszystkie otwarte dokumenty, jakby pochodziły z jednego dokumentu. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+/Open lub/O\
+Opcjonalna. Przeszukuje wszystkie otwarte dokumenty, tak jakby były one jednym dokumentem. Określ tylko jeden z dostępnych zakresów wyszukiwania `/doc`,, `/proc`, `/open`lub `/sel`.
 
- / Options lub/t atrybut opcjonalny. Wyświetla listę bieżących ustawień opcji wyszukiwania, a nie wyszukiwania.
+/Options lub/t\
+Opcjonalna. Wyświetla listę bieżących ustawień opcji Znajdź i nie wykonuje wyszukiwania.
 
- /proc lub /p atrybut opcjonalny. Wyszukuje bieżącą procedurę. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+/proc lub/p\
+Opcjonalny. Przeszukuje tylko bieżącą procedurę. Określ tylko jeden z dostępnych zakresów wyszukiwania `/doc`,, `/proc`, `/open`lub `/sel`.
 
- / Reset lub /e atrybut opcjonalny. Zwraca opcje wyszukiwania do ustawień domyślnych, a nie wyszukiwania.
+/Reset lub/e\
+Opcjonalny. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwania.
 
- /SEL lub /s atrybut opcjonalny. Wyszukuje w bieżącym zaznaczeniu. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+/SEL lub/s\
+Opcjonalny. Przeszukuje tylko bieżące zaznaczenie. Określ tylko jeden z dostępnych zakresów wyszukiwania `/doc`,, `/proc`, `/open`lub `/sel`.
 
- /Up lub /u opcjonalne. Wyszukiwanie w bieżącej lokalizacji w pliku w kierunku początku pliku. Domyślnie wyszukiwanie rozpoczyna się w bieżącej lokalizacji w pliku i wyszukiwania na końcu pliku.
+/up lub/U\
+Opcjonalny. Wyszukuje z bieżącej lokalizacji pliku w kierunku początku pliku. Domyślnie wyszukiwania zaczynają się w bieżącej lokalizacji w pliku i wyszukuje na końcu pliku.
 
- /regex lub /r atrybut opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji, które reprezentują wzorców tekstu, a nie jako znaki literału. Aby uzyskać pełną listę znaki wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).
+/Regex lub/r\
+Opcjonalna. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji, które reprezentują wzorce tekstu, a nie znaki literału. Aby uzyskać pełną listę znaków wyrażenia regularnego, zobacz [wyrażenia regularne](../../ide/using-regular-expressions-in-visual-studio.md).
 
- /Wild lub/l atrybut opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argument jako notacji do reprezentowania znaku lub sekwencji znaków.
+/Wild lub/l\
+Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji do reprezentowania znaku lub sekwencji znaków.
 
- opcji lub Wn atrybut opcjonalny. Wyszukiwanie tylko całe wyrazy.
+/Word lub/w\
+Opcjonalny. Wyszukuje tylko całe wyrazy.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie przeprowadza wyszukiwanie dla słowa "somestring" w obecnie zaznaczonej sekcji kodu.
+W tym przykładzie jest wykonywane wyszukiwanie z uwzględnieniem wielkości liter dla słowa "someString" w aktualnie zaznaczonej sekcji kodu.
 
 ```cmd
 >Edit.Find somestring /sel /case

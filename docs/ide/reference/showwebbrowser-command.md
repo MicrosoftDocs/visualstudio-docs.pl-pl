@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950644"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926006"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser — Polecenie
 
@@ -31,24 +31,24 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `URL`
+`URL`
 
- Wymagana. Adres URL (Uniform Resource Locator) dla witryny sieci Web.
+Wymagana. Adres URL (Uniform Resource Locator) dla witryny sieci Web.
 
 ## <a name="switches"></a>Przełączniki
- / Nowy
+/new
 
- Opcjonalna. Określa, czy strona jest wyświetlana w nowym wystąpieniu przeglądarki sieci web.
+Opcjonalna. Określa, że strona pojawia się w nowym wystąpieniu przeglądarki sieci Web.
 
- /ext
+/ext
 
- Opcjonalna. Określa, czy strona jest wyświetlana w domyślnej przeglądarce sieci web poza IDE.
+Opcjonalny. Określa, że strona jest wyświetlana w domyślnej przeglądarce sieci Web poza IDE.
 
 ## <a name="remarks"></a>Uwagi
- Alias **showwebbrowser —** polecenie jest **Przejdź** lub **nav**.
+Alias dla polecenia **ShowWebBrowser —** to **Nawigacja** lub **Nawigacja**.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład wyświetla Microsoft Docs strony głównej w przeglądarce sieci web poza IDE. Jeśli wystąpienie przeglądarki sieci web jest już otwarty, jest używany; w przeciwnym razie jest uruchamiana nowe wystąpienie.
+Poniższy przykład przedstawia Microsoft Docs stronie głównej w przeglądarce sieci Web poza IDE. Jeśli wystąpienie przeglądarki sieci Web jest już otwarte, jest używane; w przeciwnym razie zostanie uruchomione nowe wystąpienie.
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext

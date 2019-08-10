@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806670"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920185"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Składowe powinny różnić się nie tylko zwracanym typem
 
@@ -31,19 +31,19 @@ ms.locfileid: "62806670"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Dwa publiczne lub chronione elementy członkowskie są opatrzone sygnaturami, które są identyczne, z wyjątkiem typu zwracanego.
+Dwa publiczne lub chronione elementy członkowskie mają podpisy identyczne z wyjątkiem typu zwracanego.
 
 ## <a name="rule-description"></a>Opis reguły
- Chociaż środowisko uruchomieniowe języka wspólnego pozwala na używanie typów zwracanych do rozróżnienia między inaczej identycznymi członkami, funkcja ta nie jest specyfikacja Common Language Specification, ani nie jest wspólną cechą języków programowania .NET. Gdy członkowie różnią się tylko typem zwracanym, deweloperów i narzędzia programistyczne mogą nie poprawnie ich rozróżnienie.
+Chociaż środowisko uruchomieniowe języka wspólnego zezwala na używanie typów zwracanych do rozróżnienia między identycznymi elementami członkowskimi, ta funkcja nie znajduje się w Common Language Specification ani nie jest powszechną funkcją języków programowania .NET. Gdy elementy członkowskie różnią się tylko typem zwracanym, deweloperzy i narzędzia programistyczne mogą nie rozróżnić się między nimi.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, zmiany projektu elementów członkowskich, tak, że są unikatowe, tylko na podstawie jego nazwy i typy parametrów ani nie ujawniaj elementów członkowskich.
+Aby naprawić naruszenie tej zasady, należy zmienić projekt elementów członkowskich tak, aby były unikatowe, na podstawie ich nazw i typów parametrów lub nie ujawniać elementów członkowskich.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład w języka Microsoft intermediate language (MSIL), zawiera typ, który narusza tę regułę. Należy zauważyć, że ta zasada nie naruszył przy użyciu języka C# lub Visual Basic.
+W poniższym przykładzie w języku pośrednim firmy Microsoft (MSIL) przedstawiono typ naruszający tę regułę. Należy zauważyć, że tej reguły nie można naruszać C# przy użyciu lub Visual Basic.
 
 ```
 .namespace UsageLibrary

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622097e4dd1408c46863098a8f29fe6666b64b2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1eb4c2535060f9a110d149e88ac2532e6ad1412
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808279"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921099"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Określ kierowanie dla argumentów ciągu P/Invoke
 
@@ -27,24 +27,24 @@ ms.locfileid: "62808279"
 |-|-|
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
-|Kategoria|Microsoft.Globalization|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Globalizacja|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Wywołania platformy elementu członkowskiego umożliwia częściowo zaufanych wywołań, ma parametr typu ciąg, a nie kieruje jawnie tego ciągu.
+Element członkowski wywołania platformy zezwala na częściowo zaufane obiekty wywołujące, ma parametr String i nie jest jawnie zorganizowany przez ciąg.
 
 ## <a name="rule-description"></a>Opis reguły
- Podczas konwersji z Unicode ANSI jest to możliwe, że nie wszystkie znaki Unicode mogą być reprezentowane w określonej strony kodowej ANSI. *Mapowanie najlepszego dopasowania* próbuje rozwiązać ten problem, zastępując znak znak, który nie może być reprezentowana. Używanie tej funkcji może spowodować potencjalne luki w zabezpieczeniach, ponieważ nie można kontrolować znak, który jest wybierany. Na przykład złośliwy kod celowo utworzyć ciąg Unicode, który zawiera znaki, które nie znajdują się na stronie konkretnego kodu, które są konwertowane na system plików, znaków specjalnych, takich jak ".." lub "/". Należy zauważyć, że sprawdzanie zabezpieczeń dla znaków specjalnych często występują przed ten ciąg jest konwertowany na ANSI.
+W przypadku konwersji z formatu Unicode na ANSI, istnieje możliwość, że nie wszystkie znaki Unicode mogą być reprezentowane na określonej stronie kodowej ANSI. *Najbardziej pasujące mapowanie* próbuje rozwiązać ten problem przez podstawianie znaku dla znaku, którego nie można reprezentować. Korzystanie z tej funkcji może spowodować potencjalną lukę w zabezpieczeniach, ponieważ nie można kontrolować wybranego znaku. Na przykład złośliwy kod może celowo utworzyć ciąg Unicode, który zawiera znaki, które nie znajdują się na określonej stronie kodowej, które są konwertowane na znaki specjalne systemu plików, takie jak ".." lub "/". Należy zauważyć, że sprawdzanie zabezpieczeń w przypadku znaków specjalnych często występuje przed konwersją ciągu na ANSI.
 
- Mapowanie najlepszego dopasowania jest ustawieniem domyślnym dla niezarządzanych konwersji WChar do MBajtów. Chyba że jawnie wyłącz mapowanie najlepszego dopasowania, Twój kod może zawierać luki w zabezpieczeniach możliwe do wykorzystania z powodu tego problemu.
+Mapowanie najlepiej dopasowane jest wartością domyślną dla konwersji niezarządzanej, WChar do MB. O ile nie wyłączysz jawnie mapowania najlepszego dopasowania, kod może zawierać lukę w zabezpieczeniach, z powodu tego problemu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, kieruje jawnie tego ciągu typów danych.
+Aby naprawić naruszenie tej zasady, należy jawnie zorganizować typy danych ciągu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia metodę, która narusza tę regułę, a następnie pokazano, jak naprawić naruszenia.
+Poniższy przykład przedstawia metodę, która narusza tę regułę, a następnie pokazuje, jak naprawić naruszenie.
 
- [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]
+[!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

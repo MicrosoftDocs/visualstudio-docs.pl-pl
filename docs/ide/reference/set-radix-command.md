@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952038"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926044"
 ---
 # <a name="set-radix-command"></a>Ustaw Radix — Polecenie
-Ustawia lub zwraca base numeryczne, używany do wyświetlania wartości całkowitych.
+Ustawia lub zwraca wartość numeryczną używaną do wyświetlania wartości całkowitych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,12 +30,12 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `10` lub `16` lub `hex` lub `dec`
+`10``16` lub lub`hex``dec`
 
- Opcjonalna. Wskazuje dziesiętne (10 lub gru) lub liczba szesnastkowa (16 lub szesnastkowych). Jeśli argument jest pominięty, zwracany jest bieżąca wartość podstawy.
+Opcjonalny. Wskazuje liczbę dziesiętną (10 lub gru) lub szesnastkową (16 lub szesnastkową). Jeśli argument jest pominięty, zostanie zwrócona bieżąca wartość podstawy.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie środowiska, aby wyświetlić wartości całkowite w formacie szesnastkowym.
+W tym przykładzie ustawiono środowisko do wyświetlania wartości całkowitych w formacie szesnastkowym.
 
 ```cmd
 >Debug.SetRadix hex

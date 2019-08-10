@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie podstawowego modelu 3D'
+title: 'Instrukcje: Tworzenie podstawowego modelu 3W'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
@@ -8,72 +8,72 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5f4bb3c6d429fb40d97e748798610e4e46262eb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894188"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924509"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Instrukcje: Tworzenie podstawowego modelu 3D
 
-W tym artykule przedstawiono sposób używania edytora modelu do tworzenia podstawowego modelu 3D. Omówione są następujące działania:
+W tym artykule pokazano, jak utworzyć podstawowy model 3W przy użyciu edytora modelu. Omówione są następujące działania:
 
 - Dodawanie obiektów do sceny
 
-- Wybieranie powierzchni i krawędzi
+- Wybieranie twarzy i krawędzi
 
-- Opcje przekształcania
+- Tłumaczenie wybranych opcji
 
-- Za pomocą **Podziel pierwszy plan** i **wyciągnij** narzędzia
+- Korzystanie z narzędzi do tworzenia i **wyciągnięcie kroju**
 
-- Za pomocą **triangulacja** polecenia
+- Korzystanie z polecenia triangulacja
 
 ## <a name="create-a-basic-3d-model"></a>Tworzenie podstawowego modelu 3D
- Edytor modelu do tworzenia i modyfikowania modeli 3D i sceny gry lub aplikacji. Poniższe kroki pokazują jak utworzyć uproszczony model 3D w domu za pomocą edytora modelu. Uproszczony model może służyć jako elementu zastępczego dla końcowego artystycznych, które są nadal tworzone, jako siatkę wykrywanie kolizji lub niska Szczegóły modelu ma być używany, gdy obiekt, który reprezentuje jest zbyt daleko do korzystania z renderowania bardziej szczegółowe.
+Możesz użyć edytora modelu, aby utworzyć i zmodyfikować modele 3D i sceny dla swojej gry lub aplikacji. Poniższe kroki pokazują, jak za pomocą edytora modelu utworzyć uproszczony model 3W dla domu. Model uproszczony może służyć jako autonomiczna dla końcowych zasobów grafiki, które są nadal tworzone, jako siatka do wykrywania kolizji lub jako model niskiego szczegółowości, który ma być używany, gdy obiekt, który reprezentuje, jest zbyt daleko, aby można było skorzystać z bardziej szczegółowego renderowania.
 
- Gdy skończysz, model powinien wyglądać następująco:
+Po zakończeniu model powinien wyglądać następująco:
 
- ![Ukończone modelu DOM uproszczony](../designers/media/gfx_model_demo_house_final.png)
+![Ukończony model uproszczonego](../designers/media/gfx_model_demo_house_final.png)
 
- Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
+Przed rozpoczęciem upewnij się, że okno **Właściwości** i **Przybornik** są wyświetlane.
 
-### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Aby utworzyć uproszczony model 3D w domu
+### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Aby utworzyć uproszczony model 3W dla domu
 
-1. Utwórz model 3D, z którą chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modelu do swojego projektu, zobacz sekcję pierwsze kroki w [edytora modelu](../designers/model-editor.md).
+1. Utwórz model 3W, z którym chcesz korzystać. Aby uzyskać informacje o sposobach dodawania modelu do projektu, zobacz sekcję Wprowadzenie w [Edytorze modelu](../designers/model-editor.md).
 
-2. Dodaj moduł do sceny. W **przybornika** okna, w obszarze **kształty**, wybierz opcję **modułu** i przenieś go do powierzchni projektowej.
+2. Dodaj moduł do sceny. W oknie **Przybornik** w obszarze **kształty**wybierz pozycję **moduł** , a następnie przenieś ją na powierzchnię projektu.
 
-3. Przełącz się do wyboru twarzy. Na pasku narzędzi edytora modelu wybierz **wybierz krój**.
+3. Przełącz się na wybór obszaru. Na pasku narzędzi Edytor modelu wybierz **pozycję Wybierz opcję**.
 
-4. Należy podzielić górnej części modułu. W przypadku trybu wyboru pierwszego planu wybierz moduł raz go uaktywnić dla zaznaczenia, a następnie wybierz górnej części modułu, aby zaznacz powierzchnię, najważniejsze. Na pasku narzędzi edytora modelu wybierz **Podziel pierwszy plan**. Spowoduje to dodanie nowe wierzchołki na początku modułu, który podzielić ją na cztery partycje równej wielkości.
+4. Podziel górną część modułu. W trybie zaznaczania ze stroną wybierz moduł jeden raz, aby aktywować go do wyboru, a następnie wybierz górną część modułu, aby zaznaczyć górną miarę. Na pasku narzędzi Edytor modelu wybierz opcjęPodziel na siebie. Spowoduje to dodanie nowych wierzchołków na górze modułu, który dzieli go na cztery partycje o równym rozmiarze.
 
-    ![Górnej części modułu zostały podzielone](../designers/media/gfx_model_demo_house_subdiv.png)
+    ![Górna część modułu została podzielona](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5. Wyciągnięcie dwóch sąsiednich boków modułu — na przykład frontonu i prawej stronie modułu. W trybu wyboru pierwszego planu wybierz moduł raz go uaktywnić dla zaznaczenia, a następnie wybierz polecenie po jednej stronie modułu. Naciśnij i przytrzymaj klawisz **Ctrl** klucza, wybierz inny boku modułu, która jest przyległa do strony, należy najpierw wybrać, a następnie na pasku narzędzi edytora modelu, wybierz **wyciągnij**.
+5. Wyciągnięcie dwóch sąsiadujących stron modułu — na przykład z przodu i po prawej stronie modułu. W trybie wyboru kroju wybierz moduł jeden raz, aby aktywować go do wyboru, a następnie wybierz jedną stronę modułu. Naciśnij i przytrzymaj klawisz **Ctrl** , wybierz inną stronę modułu, która znajduje się obok zaznaczonej pierwszej strony, a następnie na pasku narzędzi Edytor modelu wybierz polecenie **wyciągnięcie kroju**.
 
-    ![Boków modułu została wyrzucane.](../designers/media/gfx_model_demo_house_extrude.png)
+    ![Boki modułu zostały wywytłaczane](../designers/media/gfx_model_demo_house_extrude.png)
 
-6. Jedną z extrusions rozszerzyć. Wybierz jedną z twarzy, które właśnie, usunąć, a następnie na pasku narzędzi edytora modelu wybierz **Translate** narzędzia i Przenieś manipulator tłumaczenia w tym samym kierunku co wytłaczanie metali.
+6. Poszerzenie jednego z wytłoczeniów. Wybierz jedną z wysuniętych twarzy, a następnie na pasku narzędzi Edytor modelu wybierz narzędzie translacji i Przenieś Manipulator tłumaczenia w tym samym kierunku co wytłoczenie.
 
-    ![Dodatkowo ma zostały wyrzucane po jednej stronie modułu.](../designers/media/gfx_model_demo_house_extend.png)
+    ![Jedna strona modułu została przeprojektowana w dalszej części.](../designers/media/gfx_model_demo_house_extend.png)
 
-7. Przeprowadzić triangulację modelu. Na pasku narzędzi edytora modelu wybierz **zaawansowane** > **narzędzia** > **triangulacja**.
+7. Triangulacja modelu. Na pasku narzędzi Edytor modelu wybierz kolejno opcje **Zaawansowane** > **Narzędzia** > **triangulacja**.
 
-8. Utwórz dachu domu. Przełącz do trybu wyboru krawędzi, wybierając **krawędzi wybierz pozycję** na pasku narzędzi edytora modelu, a następnie wybierz moduł, aby ją uaktywnić. Naciśnij i przytrzymaj klawisz **Ctrl** klucza podczas zaznaczania krawędzi, które przedstawiono poniżej:
+8. Utwórz dach domu. Przejdź do trybu wyboru krawędzi, wybierając **pozycję Wybierz krawędź** na pasku narzędzi Edytor modelu, a następnie wybierz moduł, aby go uaktywnić. Naciśnij i przytrzymaj klawisz **Ctrl** podczas zaznaczania krawędzi, które są wyświetlane w tym miejscu:
 
-    ![Krawędzie, tworzące Szczyt dachu](../designers/media/gfx_model_demo_house_edges.png)
+    ![Krawędzie, które będą stanowić szczyt dachu](../designers/media/gfx_model_demo_house_edges.png)
 
-    Po wybraniu krawędzie, na pasku narzędzi edytora modelu, wybierz **Translate** narzędzia, a następnie przenieść manipulator tłumaczenia w górę, aby utworzyć dachu domu.
+    Po wybraniu krawędzi na pasku narzędzi Edytor modelu wybierz narzędzie Translacja, a następnie przenieś tłumaczenie Manipulator do góry, aby utworzyć dach domu.
 
-   Model DOM uproszczone zostało ukończone. Oto ponownie końcowego modelu z płaskim cieniowaniem stosowane:
+   Model uproszczonej konstrukcji został ukończony. Poniżej znajduje się ostateczny model z zastosowanym płaskim cieniowaniem:
 
-   ![Ukończone modelu DOM uproszczony](../designers/media/gfx_model_demo_house_final.png)
+   ![Ukończony model uproszczonego](../designers/media/gfx_model_demo_house_final.png)
 
-   Kolejnym krokiem może stosowanie cieniowania do modelu 3D. Aby uzyskać informacje, zobacz [jak: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   W następnym kroku można zastosować cieniowanie do tego modelu 3W. Aby uzyskać więcej informacji [, zobacz How to: Zastosuj cieniowanie do modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)3W.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Model terenu 3D](../designers/how-to-model-3-d-terrain.md)
+- [Instrukcje: Modelowanie terenów 3W](../designers/how-to-model-3-d-terrain.md)
 - [Edytor modelu](../designers/model-editor.md)
 - [Projektant cieniowania](../designers/shader-designer.md)

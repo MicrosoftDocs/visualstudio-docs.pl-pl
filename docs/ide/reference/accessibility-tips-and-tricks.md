@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea4d559921fc7cf387116d013906891c74a4ed8c
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822354"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919523"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Porady i wskazówki dotyczące ułatwień dostępu dla programu Visual Studio
 
@@ -29,7 +29,7 @@ Omówiono również sposób używania adnotacji w celu ujawniania przydatnych in
 
 ## <a name="save-your-ide-settings"></a>Zapisz ustawienia środowiska IDE
 
- Środowisko IDE można dostosować przez zapisanie układu okna, schematu mapowania klawiatury i innych preferencji. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Środowisko IDE można dostosować przez zapisanie układu okna, schematu mapowania klawiatury i innych preferencji. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="modify-your-ide-for-high-contrast-viewing"></a>Modyfikowanie środowiska IDE na potrzeby wyświetlania z wysokim kontrastem
 

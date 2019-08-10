@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816637"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923995"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Rozszerzony zestaw reguł poprawności dla zarządzanego kodu
-Reguły poprawności firmy Microsoft z rozszerzony zestaw reguł maksymalizuje błędy użycia logiki i struktury, które są zgłaszane przez analizę kodu. Dodatkowy nacisk jest kładziony na określone scenariusze, takie jak współdziałanie COM i aplikacji mobilnych. Należy rozważyć dołączenie tego zestawu, jeśli jeden z tych scenariuszy dotyczy projektu lub w celu znalezienia dodatkowych problemów w projekcie reguł.
+Zestaw reguł poprawności rozszerzonej firmy Microsoft maksymalizuje błędy użycia logiki i struktury, które są raportowane przez analizę kodu. Dodatkowy nacisk jest umieszczany w określonych scenariuszach, takich jak współdziałanie COM i aplikacje mobilne. Należy rozważyć uwzględnienie tego zestawu reguł, jeśli jeden z tych scenariuszy ma zastosowanie do Twojego projektu lub aby znaleźć dodatkowe problemy w projekcie.
 
- Reguły poprawności firmy Microsoft z rozszerzony zestaw reguł zawiera reguły, ustawionych w regule podstawowe reguły poprawności firmy Microsoft. Podstawowe reguły poprawności obejmują zasad ustawionych w regule reguł zalecanych Minimum firmy Microsoft. Aby uzyskać więcej informacji, zobacz [zestaw reguł podstawowych reguł poprawności dla kodu zarządzanego](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) i [zarządzany zalecany zestaw reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Zestaw reguł poprawnego rozszerzenia Microsoft Extended zawiera reguły, które znajdują się w zestawie reguł poprawności programu Microsoft Basic. Podstawowe reguły poprawności obejmują reguły, które znajdują się w minimalnym zalecanym zestawie reguł firmy Microsoft. Aby uzyskać więcej informacji, zobacz [podstawowe reguły poprawności zestaw reguł dla kodu zarządzanego](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) i [zarządzane zalecane reguły zestawu reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- W poniższej tabeli opisano wszystkie reguły w zestawie reguł reguły poprawności rozszerzone firmy Microsoft.
+W poniższej tabeli opisano wszystkie reguły w zestawie reguł poprawnych rozszerzonych firmy Microsoft.
 
 |Reguła|Opis|
 |----------|-----------------|

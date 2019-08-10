@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ręczne przeprowadzanie analizy kodu dla kodu zarządzanego'
+title: 'Instrukcje: Ręczne uruchamianie analizy kodu dla kodu zarządzanego'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 588f78c600aa7c78894a2e0bdc7f4443f4e86b31
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815854"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923968"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Instrukcje: Ręczne przeprowadzanie analizy kodu dla kodu zarządzanego
-Narzędzie do analizy kodu zapewnia informacje o możliwych usterek w kodzie źródłowym. Uruchom analizę kodu automatycznie każdej kompilacji projektu kodu i mogą również ręczne przeprowadzanie analizy kodu. Reguły, które są sprawdzane podczas uruchamiania analizy kodu są określone na stronie analizy kodu na stronach właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Instrukcje: Ręczne uruchamianie analizy kodu dla kodu zarządzanego
+Narzędzie do analizy kodu zawiera informacje o możliwych defektach w kodzie źródłowym. Można uruchomić analizę kodu automatycznie przy każdej kompilacji projektu kodu, a także przeprowadzić analizę kodu ręcznie. Reguły sprawdzane podczas uruchamiania analizy kodu są określone na stronie Analiza kodu na stronach właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Skonfiguruj analizę kodu dla projektu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)kodu zarządzanego.
 
 ### <a name="to-run-code-analysis-manually"></a>Aby ręcznie uruchomić analizę kodu
 
-1. W **Eksploratora rozwiązań**, kliknij projekt.
+1. W **Eksplorator rozwiązań**kliknij projekt.
 
-2. Na **analizy** menu, kliknij przycisk **Uruchom analizę kodu dla** *Nazwa projektu*.
+2. W menu **Analizuj** kliknij polecenie **Uruchom analizę kodu w** polu *Nazwa projektu*.

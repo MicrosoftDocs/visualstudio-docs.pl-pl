@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abe71337b5eb09d44ec6a244dc17e656768847a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79ebba23b26e0967bc29a79e719e02d834a29f1b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541054"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919850"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 Deklaracje P/Invoke nie powinny być bezpieczne-krytyczne
 
@@ -25,7 +25,7 @@ ms.locfileid: "62541054"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Deklaracja metody P/Invoke została oznaczona za pomocą <xref:System.Security.SecuritySafeCriticalAttribute>:
+Deklaracja P/Invoke została oznaczona jako <xref:System.Security.SecuritySafeCriticalAttribute>:
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -39,13 +39,13 @@ public class C
    }
 ```
 
- W tym przykładzie `C.Beep(...)` zostało oznaczone jako bezpieczne metody krytycznej zabezpieczeń.
+W tym przykładzie `C.Beep(...)` został oznaczony jako bezpieczna metoda zabezpieczeń.
 
 ## <a name="rule-description"></a>Opis reguły
- Metody są oznaczone jako SecuritySafeCritical, gdy wykonują operacje zależne od zabezpieczeń, ale mogą być również bezpiecznie używane przez kod przezroczystości. Jedną z podstawowych reguł zabezpieczeń modelu przezroczystości jest to, że przezroczysty kod nigdy nie może bezpośrednio wywołać kodu natywnego za pośrednictwem metody P/Invoke. Dlatego oznakowanie metody P/Invoke jako bezpiecznej-krytycznej pod względem zabezpieczeń nie umożliwi jej wywołania kodu przezroczystości i jest mylące dla analizy zabezpieczeń.
+Metody są oznaczone jako SecuritySafeCritical, gdy wykonują operacje zależne od zabezpieczeń, ale mogą być również bezpiecznie używane przez kod przezroczystości. Jedną z podstawowych reguł zabezpieczeń modelu przezroczystości jest to, że przezroczysty kod nigdy nie może bezpośrednio wywołać kodu natywnego za pośrednictwem metody P/Invoke. Dlatego oznakowanie metody P/Invoke jako bezpiecznej-krytycznej pod względem zabezpieczeń nie umożliwi jej wywołania kodu przezroczystości i jest mylące dla analizy zabezpieczeń.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby metoda P/Invoke stała się dostępna dla przejrzystego kodu, należy ujawnić dla niej bezpieczną-krytyczną pod względem zabezpieczeń metodę dla otoki:
+Aby metoda P/Invoke stała się dostępna dla przejrzystego kodu, należy ujawnić dla niej bezpieczną-krytyczną pod względem zabezpieczeń metodę dla otoki:
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers
@@ -65,4 +65,4 @@ class C
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.

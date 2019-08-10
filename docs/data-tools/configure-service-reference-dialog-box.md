@@ -14,96 +14,96 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ca5f71d386f48b36fcb1126a1e0467b40ef8d73
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 1cf4a809c1353f2fe30383a312f65b6c623083db
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745582"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925668"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfiguruj odwołanie do usługi — Okno dialogowe
 
-**Konfiguruj odwołanie do usługi** okno dialogowe umożliwia konfigurowanie zachowania usług Windows Communication Foundation (WCF).
+Okno dialogowe **Konfigurowanie odwołania do usługi** umożliwia skonfigurowanie zachowania usług Windows Communication Foundation (WCF).
 
-Aby uzyskać dostęp do **Konfiguruj odwołanie do usługi** odwoływać się okno dialogowe, kliknij prawym przyciskiem myszy, a usługa **Eksploratora rozwiązań** i wybierz polecenie **Konfiguruj odwołanie do usługi**. Okno dialogowe można również przejść, klikając **zaawansowane** znajdujący się w **okno dialogowe Dodaj odwołanie do usługi**.
+Aby uzyskać dostęp do okna dialogowego **Konfigurowanie odwołania do usługi** , kliknij prawym przyciskiem myszy odwołanie do usługi w **Eksplorator rozwiązań** i wybierz polecenie **Konfiguruj odwołanie do usługi**. Możesz również uzyskać dostęp do okna dialogowego, klikając przycisk **Zaawansowane** w oknie **dialogowym Dodaj odwołanie do usługi**.
 
 ## <a name="task-list"></a>Lista zadań
 
-- Aby zmienić adres, na którym jest hostowana usługa WCF, wprowadź nowy adres w **adres** pola.
+- Aby zmienić adres, w którym jest hostowana usługa WCF, wprowadź nowy adres w polu **adres** .
 
-- Aby zmienić poziom dostępu dla klas w klienta WCF, wybierz słowo kluczowe poziom dostępu w **poziom do wygenerowanych klas dostępu** listy.
+- Aby zmienić poziom dostępu dla klas w kliencie WCF, wybierz słowo kluczowe poziomu dostępu na liście **poziom dostępu dla wygenerowanych klas** .
 
-- Aby asynchroniczne wywoływanie metod klasy usługi WCF, wybierz pozycję **Eneruj operacje asynchroniczne** pole wyboru.
+- Aby asynchronicznie wywoływać metody usługi WCF, zaznacz pole wyboru **Generuj operacje asynchroniczne** .
 
-- Aby wygenerować typy kontraktu komunikatu w klienta WCF, wybierz **zawsze Generuj kontrakty komunikatów** pole wyboru.
+- Aby wygenerować typy kontraktów komunikatów w kliencie WCF, zaznacz pole wyboru **zawsze Generuj kontrakty komunikatów** .
 
-- Aby określić typy kolekcji list lub słownika dla klienta programu WCF, wybierz typy z **— typ kolekcji** i **słownikowy typ kolekcji** listy.
+- Aby określić typy kolekcji list lub słowników dla klienta WCF, wybierz typy z listy **Typ kolekcji** i **Typ kolekcji słownika** .
 
-- Aby wyłączyć, typ udostępniania, wyczyść **ponownie użyj typów w przywoływanych zestawach** pole wyboru. Aby włączyć udostępnianie dla podzbioru przywoływanych zestawach typu, wybierz **ponownie użyj typów w przywoływanych zestawach** pole wyboru, wybierz opcję **ponownie użyj typów w określonych przywoływanych zestawach**i wybierz żądany przywoływane w **przywoływane zestawy listy**.
+- Aby wyłączyć udostępnianie typów, wyczyść pole wyboru **Użyj ponownie typów w** przywoływanych zestawach. Aby włączyć udostępnianie typu dla podzbioru zestawów, do których się odwołuje, zaznacz pole wyboru **Użyj ponownie typów w** przywoływanych zestawach, wybierz pozycję **Użyj ponownie typów w określonych**przywoływanych zestawach i wybierz odpowiednie odwołania w **odwołaniach Lista zestawów**.
 
-## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+## <a name="uielement-list"></a>Lista elementów UIElement
 
- **Adres**
+**Adres**
 
- Aktualizuje adres sieci web, w której odwołanie do usługi szuka usługi. Na przykład podczas tworzenia aplikacji, usługa może być hostowana na serwerze rozwoju i później przenieść na serwerze produkcyjnym, przez co konieczna zmiana adresu.
-
-> [!NOTE]
-> Element adres nie jest dostępna podczas **Konfiguruj odwołanie do usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
-
- **Poziom dostępu do wygenerowanych klas**
-
- Określa poziom dostępu do kodu dotyczące klas klientów usługi WCF.
+Aktualizuje adres sieci Web, w którym odwołanie do usługi poszukuje usługi. Na przykład podczas opracowywania usługa może być hostowana na serwerze deweloperskim, a następnie przeniesiona na serwer produkcyjny, co wymaga zmiany adresu.
 
 > [!NOTE]
-> Dla projektów witryny sieci Web, ta opcja jest zawsze równa `Public` i nie można zmienić. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md).
+> Element Address jest niedostępny, gdy okno dialogowe **Konfigurowanie odwołania do usługi** jest wyświetlane w oknie **dialogowym Dodaj odwołanie do usługi**.
 
- **Generowanie operacji asynchronicznych**
+**Poziom dostępu do wygenerowanych klas**
 
- Określa, czy metody usługi WCF jest wywoływana synchronicznie (ustawienie domyślne) lub asynchronicznie.
-
- **Generuj operacje oparte na zadanie**
-
- Podczas pisania kodu asynchronicznego, ta opcja pozwala korzystać z Biblioteka zadań równoległych (TPL) wprowadzone za pomocą .NET 4. Zobacz [zadań Biblioteka równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
-
- **Zawsze Generuj kontrakty komunikatów**
-
- Określa, czy typy kontraktu komunikatu, są generowane dla klienta programu WCF. Aby uzyskać więcej informacji na temat kontraktów komunikatu zobacz [używanie kontraktów komunikatu](/dotnet/framework/wcf/feature-details/using-message-contracts).
-
- **Typ kolekcji**
-
- Określa typ kolekcji listy dla klienta programu WCF. Domyślny typ to <xref:System.Array>.
-
- **Słownikowy typ kolekcji**
-
- Określa słownikowy typ kolekcji dla klienta programu WCF. Domyślny typ to <xref:System.Collections.Generic.Dictionary%602>.
-
- **Użyj ponownie typów w przywoływanych zestawach**
-
- Określa, czy klient WCF podejmie próbę ponownego użycia, co już istnieje w przywoływanych zestawach zamiast generowania nowych typów, gdy usługa jest dodane lub zaktualizowane. Domyślnie ta opcja jest zaznaczona.
-
- **Użyj ponownie typów w wszystkich przywoływanych zestawach**
-
- Po wybraniu wszystkich typów w **listę zestawów do którego się odwoływano** są ponownie, jeśli jest to możliwe. Domyślnie ta opcja jest zaznaczona.
-
- **Ponownie użyj typów w określonych przywoływanych zestawach**
-
- W przypadku wybrania tylko wybranych typów w **listę zestawów do którego się odwoływano** są ponownie używane.
-
- **Listę przywoływanych zestawach**
-
- Zawiera listę przywoływanych zestawach dla projektu lub witryny sieci Web. Po wybraniu **ponownie użyj typów w określonych przywoływanych zestawach**, można zaznaczyć lub wyczyścić poszczególnych zespołów.
-
- **Dodaj odwołanie sieci Web**
-
- Wyświetla **Dodaj odwołanie sieci Web** okno dialogowe.
+Określa poziom dostępu kodu dla klas klienta WCF.
 
 > [!NOTE]
-> Ta opcja powinna używana tylko dla projektów przeznaczonych dla wersji 2.0 programu .NET Framework.
+> W przypadku projektów witryny sieci Web Ta opcja jest zawsze `Public` ustawiana na i nie można jej zmienić. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z usługą](../data-tools/troubleshooting-service-references.md).
+
+**Generuj operacje asynchroniczne**
+
+Określa, czy metody usługi WCF są wywoływane synchronicznie (wartość domyślna) czy asynchronicznie.
+
+**Generuj operacje oparte na zadaniach**
+
+Podczas pisania kodu asynchronicznego ta opcja umożliwia korzystanie z biblioteki zadań równoległych (TPL), która została wprowadzona w programie .NET 4. Zobacz [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
+
+**Zawsze Generuj kontrakty komunikatów**
+
+Określa, czy typy kontraktów komunikatów są generowane dla klienta WCF. Aby uzyskać więcej informacji na temat umów dotyczących komunikatów, zobacz [Używanie kontraktów komunikatów](/dotnet/framework/wcf/feature-details/using-message-contracts).
+
+**Typ kolekcji**
+
+Określa typ kolekcji listy dla klienta WCF. Domyślnym typem jest <xref:System.Array>.
+
+**Typ kolekcji słownika**
+
+Określa typ kolekcji słownika dla klienta WCF. Domyślnym typem jest <xref:System.Collections.Generic.Dictionary%602>.
+
+**Ponowne używanie typów w przywoływanych zestawach**
+
+Określa, czy klient WCF próbuje ponownie użyć tego, co już istnieje w przywoływanych zestawach, zamiast generować nowe typy w przypadku dodania lub zaktualizowania usługi. Domyślnie ta opcja jest zaznaczona.
+
+**Użyj ponownie typów we wszystkich przywoływanych zestawach**
+
+W przypadku wybrania tej listy wszystkie typy na **liście przywoływanych zestawów** są ponownie używane, jeśli jest to możliwe. Domyślnie ta opcja jest zaznaczona.
+
+**Użyj ponownie typów w określonych przywoływanych zestawach**
+
+Po wybraniu są ponownie używane tylko wybrane typy z **listy przywoływanych zestawów** .
+
+**Lista zestawów, do których się odwołuje**
+
+Zawiera listę zestawów, do których odwołuje się projekt lub witryna sieci Web. W przypadku wybrania opcji **Użyj ponownie typów w określonych**przywoływanych zestawach można wybrać lub wyczyścić poszczególne zestawy.
+
+**Dodaj odwołanie sieci Web**
+
+Wyświetla okno dialogowe **Dodawanie odwołania sieci Web** .
+
+> [!NOTE]
+> Tej opcji należy używać tylko w przypadku projektów przeznaczonych dla .NET Framework w wersji 2,0.
 >
 > [!NOTE]
-> **Dodaj odwołanie sieci Web** przycisk jest dostępny, gdy **Konfiguruj odwołanie do usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
+> Przycisk **Dodaj odwołanie sieci Web** jest dostępny tylko wtedy, gdy w oknie **dialogowym Dodaj odwołanie do usługi**zostanie wyświetlone okno dialogowe **Konfigurowanie odwołania do usługi** .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Dodaj odwołanie do usługi sieci web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Instrukcje: Dodawanie odwołania do usługi sieci Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Usługi Windows Communication Foundation i usługi danych programu WCF](../data-tools/configure-service-reference-dialog-box.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2417266da44c4af38e37eb8e0f67ac13a5a7823e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbb9d0127dd2ddb6668e72db8fa88124ec2b3c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808243"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921426"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Przejrzyj zabezpieczenia imperatywne
 
@@ -31,18 +31,18 @@ ms.locfileid: "62808243"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda używa imperatywnych zabezpieczeń i może konstruować uprawnienia za pomocą informacji o stanie lub wartości zwrotnych, które można zmienić, dopóki żądanie jest aktywne.
+Metoda używa imperatywnych zabezpieczeń i może konstruować uprawnienia za pomocą informacji o stanie lub wartości zwrotnych, które można zmienić, dopóki żądanie jest aktywne.
 
 ## <a name="rule-description"></a>Opis reguły
- Zabezpieczenia imperatywne używa obiektów zarządzanych do określania uprawnień i akcje zabezpieczeń podczas wykonywania kodu, w porównaniu do zabezpieczenia deklaratywne, który przechowuje atrybuty uprawnień i akcji w metadanych. Zabezpieczenia imperatywne jest bardzo elastyczny, ponieważ można ustawić stanu obiektu uprawnień i wybieranie akcji zabezpieczeń przy użyciu informacji, która nie jest dostępna do czasu wykonywania. Wraz z który elastyczność pochodzi ryzyko, że informacje środowiska uruchomieniowego, które można określić, że stan uprawnienia nie pozostaje bez zmian, tak długo, jak akcja jest aktywna.
+Zabezpieczenia bezwzględne wykorzystują zarządzane obiekty do określania uprawnień i akcji zabezpieczeń podczas wykonywania kodu w porównaniu z zabezpieczeniami deklaratywnymi, które używają atrybutów do przechowywania uprawnień i akcji w metadanych. Zasadnicze zabezpieczenia są bardzo elastyczne, ponieważ można ustawić stan obiektu uprawnień i wybrać akcje zabezpieczeń przy użyciu informacji, które nie są dostępne do czasu uruchomienia. Ze względu na to elastyczność wiąże się z ryzykiem, że informacje o środowisku uruchomieniowym, które są używane do określenia stanu uprawnienia, nie pozostaną bez zmian, dopóki ta akcja jest aktywna.
 
- Należy używać zabezpieczeń deklaracyjnych wszędzie, gdzie to możliwe. Wymagania związane z deklaratywnych są łatwiejsze do zrozumienia.
+Należy używać zabezpieczeń deklaracyjnych wszędzie, gdzie to możliwe. Wymagania deklaracyjne są łatwiejsze do zrozumienia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Przegląd wymagań zabezpieczenia imperatywne, aby upewnić się, czy stan uprawnienia nie polega na informacje, które można zmienić tak długo, jak uprawnienia, jest on używany.
+Zapoznaj się z niezależnymi wymaganiami dotyczącymi zabezpieczeń, aby upewnić się, że stan uprawnienia nie polega na informacjach, które mogą ulec zmianie, o ile uprawnienia są używane.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli uprawnienia nie zależy od zmieniających się danych. Jednak zaleca się zmiany imperatywne żądanie na odpowiadającą jej deklaratywne.
+Jeśli uprawnienie nie polega na zmienianiu danych, można bezpiecznie pominąć ostrzeżenie z tej reguły. Jednak lepiej jest zmienić pierwotne zapotrzebowanie na jego deklaratywny odpowiednik.
 
 ## <a name="see-also"></a>Zobacz także
 

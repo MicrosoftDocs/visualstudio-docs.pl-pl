@@ -128,84 +128,84 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 8f07650e47398b028460776f41557a3f853eaad3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852169"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919611"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
-W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji proste — wartości skalarnych, a wskaźniki do struktur i klas — i większość typów buforów.  Ten artykuł zawiera również typowe wzorce użycia na potrzeby adnotacji. Dla dodatkowych adnotacji that are related to funkcji, zobacz [zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
+W tym artykule opisano typowe zastosowania adnotacji dla prostych parametrów funkcji — skalarnych i wskaźników do struktur i klas — i większości rodzajów buforów.  W tym artykule przedstawiono również typowe wzorce użycia dla adnotacji. Aby uzyskać dodatkowe adnotacje dotyczące funkcji, zobacz [Dodawanie adnotacji do zachowania funkcji](../code-quality/annotating-function-behavior.md).
 
 ## <a name="pointer-parameters"></a>Parametry wskaźnika
- Dla adnotacji w poniższej tabeli gdy jest on adnotację parametru wskaźnika, analizator zgłasza błąd, jeśli wskaźnik jest równa null.  Dotyczy to wskaźniki i dowolnego elementu danych, który jest wskazywany.
+W przypadku adnotacji w poniższej tabeli, gdy wskaźnik jest dodawany do parametru wskaźnika, Analizator zgłosi błąd, jeśli wskaYnik ma wartość null.  Dotyczy to wskaźników i do dowolnego elementu danych, który jest wskazywany przez.
 
- **Adnotacje i opisów**
+**Adnotacje i opisy**
 
 - `_In_`
 
-     Oznacza stosowanym parametrów wejściowych, które są wartości skalarnych, struktury, wskaźniki do struktur i podobne.  Jawnie może być używana dla prostych wartości skalarnych.  Parametr musi być prawidłowy stan wstępnej i nie zostaną zmodyfikowane.
+     Adnotuj parametry wejściowe, które są skalarne, struktury, wskaźniki do struktur i podobne.  Jawnie może być używany w prostych wartościach skalarnych.  Parametr musi być prawidłowy w stanie sprzed i nie zostanie zmodyfikowany.
 
 - `_Out_`
 
-     Oznacza stosowanym parametrów danych wyjściowych, które są wartości skalarnych, struktury, wskaźniki do struktur i podobne.  Dotyczy to obiekt, który nie może zwracać wartość — na przykład, który jest przekazywany przez wartość skalarną.  Parametr musi być prawidłowy stan wstępnego, ale muszą być prawidłowe w stanie po.
+     Umożliwia dodawanie adnotacji do parametrów wyjściowych, które są skalarne, struktury, wskaźniki do struktur i podobne.  Nie stosuj tego do obiektu, który nie może zwrócić wartości — na przykład skalarnej, która jest przenoszona przez wartość.  Parametr nie musi być prawidłowy w stanie wstępnym, ale powinien być prawidłowy w stanie post-State.
 
 - `_Inout_`
 
-     Oznacza stosowanym parametru, która ma zostać zmieniona przez funkcję.  Muszą być prawidłowe w stanu przed i po stanie, ale przyjęto, że mają różne wartości przed i po wywołaniu. Należy zastosować do modyfikowalnych wartości.
+     Adnotuj parametr, który zostanie zmieniony przez funkcję.  Musi być prawidłowy zarówno w stanie sprzed, jak i w stanie, ale zakłada się, że mają różne wartości przed i po wywołaniu. Należy zastosować do modyfikowalnej wartości.
 
 - `_In_z_`
 
-     Wskaźnik na ciąg zakończony znakiem null, który jest używany jako dane wejściowe.  Ciąg musi być prawidłowy stan wstępnego.  Warianty `PSTR`, które już mają poprawne adnotacji, są preferowane.
+     Wskaźnik do ciągu zakończonego wartością null, który jest używany jako dane wejściowe.  Ciąg musi być prawidłowy w stanie sprzed.  Preferowane są warianty, które mają już poprawne adnotacje. `PSTR`
 
 - `_Inout_z_`
 
-     Wskaźnik do tablicy znaków zakończony znakiem null, która będzie modyfikowana.  Musi być prawidłową przed i po wywołaniu metody, ale przyjęto, że wartość uległy zmianie.  Terminator o wartości null, które mogą być przenoszone, ale mogą być używane tylko elementy do oryginalnej terminator o wartości null.
+     Wskaźnik do tablicy znaków zakończonych znakiem null, który zostanie zmodyfikowany.  Musi być on prawidłowy przed i po wywołaniu, ale przyjęto, że wartość została zmieniona.  Terminator o wartości null można przenieść, ale można uzyskać dostęp tylko do elementów do oryginalnego terminatora o wartości null.
 
 - `_In_reads_(s)`
 
      `_In_reads_bytes_(s)`
 
-     Wskaźnik do tablicy, który zostanie odczytany przez funkcję.  Tablica ma wielkość `s` elementów, które muszą być prawidłowe.
+     Wskaźnik do tablicy, który jest odczytywany przez funkcję.  Tablica zawiera elementy o rozmiarze `s` , które muszą być prawidłowe.
 
-     `_bytes_` Wariant zapewnia rozmiar w bajtach, zamiast elementów. Użyj tego, tylko wtedy, gdy rozmiar nie może być wyrażona jako elementy.  Na przykład `char` użyć ciągów `_bytes_` korzysta z wariantu tylko wtedy, gdy funkcja podobny `wchar_t` będzie.
+     `_bytes_` Wariant zawiera rozmiar w bajtach, a nie elementy. Użyj tego tylko, jeśli rozmiar nie może być wyrażony jako element.  Na przykład `char` ciągi `_bytes_` używają wariantu tylko wtedy, gdy Podobna funkcja, która używa `wchar_t` tej funkcji.
 
 - `_In_reads_z_(s)`
 
-     Wskaźnik do tablicy jest zakończony znakiem null, która ma rozmiar znane. Elementy do terminatora null — lub `s` przypadku nie terminatora null — musi być prawidłowy stan wstępnego.  Jeśli rozmiar jest znany w bajtach, skalowanie `s` przez wielkość elementu.
+     Wskaźnik do tablicy, która jest zakończona zerem i ma znany rozmiar. Elementy do terminatora o wartości null lub `s` Jeśli nie ma terminatora o wartości null — muszą być prawidłowe w stanie sprzed.  Jeśli rozmiar jest znany w bajtach, Skaluj `s` według rozmiaru elementu.
 
 - `_In_reads_or_z_(s)`
 
-     Wskaźnik do tablicy, który jest zakończony znakiem null lub ma znane rozmiaru i / lub. Elementy do terminatora null — lub `s` przypadku nie terminatora null — musi być prawidłowy stan wstępnego.  Jeśli rozmiar jest znany w bajtach, skalowanie `s` przez wielkość elementu.  (Używane dla `strn` rodziny.)
+     Wskaźnik do tablicy, która jest zakończona wartością null lub ma znany rozmiar lub oba te elementy. Elementy do terminatora o wartości null lub `s` Jeśli nie ma terminatora o wartości null — muszą być prawidłowe w stanie sprzed.  Jeśli rozmiar jest znany w bajtach, Skaluj `s` według rozmiaru elementu.  (Używany przez `strn` rodzinę).
 
 - `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
-     Wskaźnik do tablicy `s` elementów (w bajtach komp), które będą zapisywane przez funkcję.  Elementy tablicy nie trzeba mieć prawidłowy stan wstępnego i liczbę elementów, które są prawidłowe w stanie po jest nieokreślona.  W przypadku adnotacje na typ parametru są stosowane po stanie. Rozważmy na przykład, poniższy kod.
+     Wskaźnik do tablicy `s` elementów (centr. Bytes), który zostanie zapisany przez funkcję.  Elementy tablicy nie muszą być prawidłowe w stanie wstępnym, a liczba elementów, które są prawidłowe w stanie post, jest nieokreślona.  Jeśli istnieją adnotacje w typie parametru, są one stosowane w stanie post. Rozważmy na przykład poniższy kod.
 
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
 
-     W tym przykładzie obiekt wywołujący udostępnia bufor `size` elementy `p1`.  `MyStringCopy` sprawia, że niektóre z tych elementów prawidłowe. Co ważniejsze `_Null_terminated_` adnotacja `PWSTR` oznacza, że `p1` jest zakończony znakiem null w stanie po wydaniu.  W ten sposób liczbę elementów prawidłowe jest nadal dobrze zdefiniowanych, ale liczba określony element nie jest wymagana.
+     W tym przykładzie obiekt wywołujący udostępnia bufor `size` elementów dla. `p1`  `MyStringCopy`sprawia, że niektóre z tych elementów są prawidłowe. Co ważniejsze, `_Null_terminated_` Adnotacja na `PWSTR` oznacza, że `p1` jest zakończona wartością null w stanie post.  W ten sposób liczba prawidłowych elementów jest nadal zdefiniowana, ale określona liczba elementów nie jest wymagana.
 
-     `_bytes_` Wariant zapewnia rozmiar w bajtach, zamiast elementów. Użyj tego, tylko wtedy, gdy rozmiar nie może być wyrażona jako elementy.  Na przykład `char` użyć ciągów `_bytes_` korzysta z wariantu tylko wtedy, gdy funkcja podobny `wchar_t` będzie.
+     `_bytes_` Wariant zawiera rozmiar w bajtach, a nie elementy. Użyj tego tylko, jeśli rozmiar nie może być wyrażony jako element.  Na przykład `char` ciągi `_bytes_` używają wariantu tylko wtedy, gdy Podobna funkcja, która używa `wchar_t` tej funkcji.
 
 - `_Out_writes_z_(s)`
 
-     Wskaźnik do tablicy `s` elementów.  Elementy nie muszą znajdować się prawidłowy w stanu wstępnego.  W stanie po elementy się za pośrednictwem terminatora null — musi być obecny — muszą być prawidłowe.  Jeśli rozmiar jest znany w bajtach, skalowanie `s` przez wielkość elementu.
+     Wskaźnik do tablicy `s` elementów.  Elementy nie muszą być prawidłowe w stanie sprzed.  W Stanach końcowych elementy przez terminator wartości null, które muszą być obecne — muszą być prawidłowe.  Jeśli rozmiar jest znany w bajtach, Skaluj `s` według rozmiaru elementu.
 
 - `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
-     Wskaźnik do tablicy, która jest czytać i zapisywane w funkcji.  Jest on rozmiar `s` elementy i prawidłowy w stanie przed i po stanie.
+     Wskaźnik do tablicy, który jest odczytywany i zapisywana w funkcji.  Jego rozmiar `s` zawiera elementy i są prawidłowe w stanie sprzed i po nim.
 
-     `_bytes_` Wariant zapewnia rozmiar w bajtach, zamiast elementów. Użyj tego, tylko wtedy, gdy rozmiar nie może być wyrażona jako elementy.  Na przykład `char` użyć ciągów `_bytes_` korzysta z wariantu tylko wtedy, gdy funkcja podobny `wchar_t` będzie.
+     `_bytes_` Wariant zawiera rozmiar w bajtach, a nie elementy. Użyj tego tylko, jeśli rozmiar nie może być wyrażony jako element.  Na przykład `char` ciągi `_bytes_` używają wariantu tylko wtedy, gdy Podobna funkcja, która używa `wchar_t` tej funkcji.
 
 - `_Inout_updates_z_(s)`
 
-     Wskaźnik do tablicy jest zakończony znakiem null, która ma rozmiar znane. Elementy się za pośrednictwem terminatora null — musi być obecny — muszą być prawidłowe w stanu przed i po stanie.  Wartość w stanie po zakłada, że różni się od wartości w stanie wstępnego; obejmuje to lokalizacja terminator o wartości null. Jeśli rozmiar jest znany w bajtach, skalowanie `s` przez wielkość elementu.
+     Wskaźnik do tablicy, która jest zakończona zerem i ma znany rozmiar. Elementy w górę przez terminator o wartości null — które muszą być obecne — muszą być prawidłowe w stanie sprzed i po nim.  Wartość w stanie post jest zapuszczalna jako inna niż wartość w stanie sprzed; obejmuje to lokalizację terminatora o wartości null. Jeśli rozmiar jest znany w bajtach, Skaluj `s` według rozmiaru elementu.
 
 - `_Out_writes_to_(s,c)`
 
@@ -215,11 +215,11 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
 
      `_Out_writes_bytes_all_(s)`
 
-     Wskaźnik do tablicy `s` elementów.  Elementy nie muszą znajdować się prawidłowy w stanu wstępnego.  W stanie po, elementy do `c`- Ty element musi być prawidłowy.  Jeśli rozmiar jest znany w bajtach, skalowanie `s` i `c` przez wielkość elementu lub użyj `_bytes_` wariant, który jest zdefiniowany jako:
+     Wskaźnik do tablicy `s` elementów.  Elementy nie muszą być prawidłowe w stanie sprzed.  W stanie post elementy do `c`-th muszą być prawidłowe.  Jeśli rozmiar jest znany w bajtach, Skaluj `s` i `c` według rozmiaru `_bytes_` elementu lub użyj wariantu, który jest zdefiniowany jako:
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     Innymi słowy, każdy element, który znajduje się w buforze do `s` w stanie wstępnego jest prawidłowy w stanie po wydaniu.  Na przykład:
+     Innymi słowy, każdy element, który istnieje w buforze aż do `s` stanu sprzed, jest prawidłowy w stanie post.  Na przykład:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -227,13 +227,13 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Wskaźnik do tablicy, która jest zarówno odczytywana i zapisywana przez funkcję.  Jest on rozmiar `s` elementów, które musi być prawidłowy stan wstępnego, i `c` elementy muszą być prawidłowe w stanie po.
+     Wskaźnik do tablicy, który jest odczytywany i zapisywana przez funkcję.  Jest to element size `s` , który musi być prawidłowy w stanie sprzed i `c` elementy muszą być prawidłowe w stanie post.
 
-     `_bytes_` Wariant zapewnia rozmiar w bajtach, zamiast elementów. Użyj tego, tylko wtedy, gdy rozmiar nie może być wyrażona jako elementy.  Na przykład `char` użyć ciągów `_bytes_` korzysta z wariantu tylko wtedy, gdy funkcja podobny `wchar_t` będzie.
+     `_bytes_` Wariant zawiera rozmiar w bajtach, a nie elementy. Użyj tego tylko, jeśli rozmiar nie może być wyrażony jako element.  Na przykład `char` ciągi `_bytes_` używają wariantu tylko wtedy, gdy Podobna funkcja, która używa `wchar_t` tej funkcji.
 
 - `_Inout_updates_z_(s)`
 
-     Wskaźnik do tablicy jest zakończony znakiem null, która ma rozmiar znane. Elementy się za pośrednictwem terminatora null — musi być obecny — muszą być prawidłowe w stanu przed i po stanie.  Wartość w stanie po zakłada, że różni się od wartości w stanie wstępnego; obejmuje to lokalizacja terminator o wartości null. Jeśli rozmiar jest znany w bajtach, skalowanie `s` przez wielkość elementu.
+     Wskaźnik do tablicy, która jest zakończona zerem i ma znany rozmiar. Elementy w górę przez terminator o wartości null — które muszą być obecne — muszą być prawidłowe w stanie sprzed i po nim.  Wartość w stanie post jest zapuszczalna jako inna niż wartość w stanie sprzed; obejmuje to lokalizację terminatora o wartości null. Jeśli rozmiar jest znany w bajtach, Skaluj `s` według rozmiaru elementu.
 
 - `_Out_writes_to_(s,c)`
 
@@ -243,11 +243,11 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
 
      `_Out_writes_bytes_all_(s)`
 
-     Wskaźnik do tablicy `s` elementów.  Elementy nie muszą znajdować się prawidłowy w stanu wstępnego.  W stanie po, elementy do `c`- Ty element musi być prawidłowy.  Jeśli rozmiar jest znany w bajtach, skalowanie `s` i `c` przez wielkość elementu lub użyj `_bytes_` wariant, który jest zdefiniowany jako:
+     Wskaźnik do tablicy `s` elementów.  Elementy nie muszą być prawidłowe w stanie sprzed.  W stanie post elementy do `c`-th muszą być prawidłowe.  Jeśli rozmiar jest znany w bajtach, Skaluj `s` i `c` według rozmiaru `_bytes_` elementu lub użyj wariantu, który jest zdefiniowany jako:
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     Innymi słowy, każdy element, który znajduje się w buforze do `s` w stanie wstępnego jest prawidłowy w stanie po wydaniu.  Na przykład:
+     Innymi słowy, każdy element, który istnieje w buforze aż do `s` stanu sprzed, jest prawidłowy w stanie post.  Przykład:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -255,73 +255,73 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Wskaźnik do tablicy, która jest zarówno odczytywana i zapisywana przez funkcję.  Jest on rozmiar `s` elementów, które musi być prawidłowy stan wstępnego, i `c` elementy muszą być prawidłowe w stanie po.
+     Wskaźnik do tablicy, który jest odczytywany i zapisywana przez funkcję.  Jest to element size `s` , który musi być prawidłowy w stanie sprzed i `c` elementy muszą być prawidłowe w stanie post.
 
-     `_bytes_` Wariant zapewnia rozmiar w bajtach, zamiast elementów. Użyj tego, tylko wtedy, gdy rozmiar nie może być wyrażona jako elementy.  Na przykład `char` użyć ciągów `_bytes_` korzysta z wariantu tylko wtedy, gdy funkcja podobny `wchar_t` będzie.
+     `_bytes_` Wariant zawiera rozmiar w bajtach, a nie elementy. Użyj tego tylko, jeśli rozmiar nie może być wyrażony jako element.  Na przykład `char` ciągi `_bytes_` używają wariantu tylko wtedy, gdy Podobna funkcja, która używa `wchar_t` tej funkcji.
 
 - `_Inout_updates_all_(s)`
 
      `_Inout_updates_bytes_all_(s)`
 
-     Wskaźnik do tablicy, która jest zarówno odczytywana i zapisywana przez funkcję rozmiar `s` elementów. Zdefiniowane jako równoważne:
+     Wskaźnik do tablicy, który jest odczytywany i zapisywana przez funkcję elementów size `s` . Zdefiniowane jako równoważne:
 
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`
 
-     Innymi słowy, każdy element, który znajduje się w buforze do `s` w stanie wstępnego jest prawidłowy w stanie przed i po stanie.
+     Innymi słowy, każdy element, który istnieje w buforze do `s` w stanie wstępnym, jest prawidłowy w stanie sprzed i po nim.
 
-     `_bytes_` Wariant zapewnia rozmiar w bajtach, zamiast elementów. Użyj tego, tylko wtedy, gdy rozmiar nie może być wyrażona jako elementy.  Na przykład `char` użyć ciągów `_bytes_` korzysta z wariantu tylko wtedy, gdy funkcja podobny `wchar_t` będzie.
+     `_bytes_` Wariant zawiera rozmiar w bajtach, a nie elementy. Użyj tego tylko, jeśli rozmiar nie może być wyrażony jako element.  Na przykład `char` ciągi `_bytes_` używają wariantu tylko wtedy, gdy Podobna funkcja, która używa `wchar_t` tej funkcji.
 
 - `_In_reads_to_ptr_(p)`
 
-     Wskaźnik do tablicy, dla której wyrażenie `p`  -  `_Curr_` (oznacza to, że `p` minus `_Curr_`) jest definiowany przez odpowiedni język standardowych.  Elementy w programach starszych niż program `p` muszą być prawidłowe w stanie wstępnego.
+     Wskaźnik do tablicy, dla `p` której wyrażenie  -  `_Curr_` ( `p` czyli minus `_Curr_`) jest zdefiniowane za pomocą odpowiedniego standardu języka.  Elementy przed `p` muszą być prawidłowe w stanie sprzed.
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Wskaźnik do tablicy o zakończony znakiem null, dla której wyrażenie `p`  -  `_Curr_` (oznacza to, że `p` minus `_Curr_`) jest definiowany przez odpowiedni język standardowych.  Elementy w programach starszych niż program `p` muszą być prawidłowe w stanie wstępnego.
+     Wskaźnik do tablicy zakończonych znakiem null, dla którego wyrażenie `p`  -  `_Curr_` ( `p` czyli minus `_Curr_`) jest zdefiniowane przez odpowiedni standard języka.  Elementy przed `p` muszą być prawidłowe w stanie sprzed.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Wskaźnik do tablicy, dla której wyrażenie `p`  -  `_Curr_` (oznacza to, że `p` minus `_Curr_`) jest definiowany przez odpowiedni język standardowych.  Elementy w programach starszych niż program `p` nie trzeba mieć prawidłowy stan wstępnego i musi być w stanie po prawidłowy.
+     Wskaźnik do tablicy, dla `p` której wyrażenie  -  `_Curr_` ( `p` czyli minus `_Curr_`) jest zdefiniowane za pomocą odpowiedniego standardu języka.  Elementy przed `p` nie muszą być prawidłowe w stanie sprzed i muszą być prawidłowe w stanie post.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Wskaźnik do tablicy o zakończony znakiem null, dla której wyrażenie `p`  -  `_Curr_` (oznacza to, że `p` minus `_Curr_`) jest definiowany przez odpowiedni język standardowych.  Elementy w programach starszych niż program `p` nie trzeba mieć prawidłowy stan wstępnego i musi być w stanie po prawidłowy.
+     Wskaźnik do tablicy zakończonych znakiem null, dla którego wyrażenie `p`  -  `_Curr_` ( `p` czyli minus `_Curr_`) jest zdefiniowane przez odpowiedni standard języka.  Elementy przed `p` nie muszą być prawidłowe w stanie sprzed i muszą być prawidłowe w stanie post.
 
-## <a name="optional-pointer-parameters"></a>Parametry opcjonalne wskaźnika
+## <a name="optional-pointer-parameters"></a>Opcjonalne parametry wskaźnika
 
- Kiedy zawiera adnotację parametru wskaźnika `_opt_`, oznacza to, że parametr może mieć wartości null. W przeciwnym razie adnotacja wykonuje taka sama jak wersja, która nie obejmuje `_opt_`. W tym miejscu znajduje się lista `_opt_` wariantów adnotacji parametru wskaźnika:
+Gdy adnotacja parametru wskaźnika zawiera `_opt_`, wskazuje, że parametr może mieć wartość null. W przeciwnym razie adnotacja jest taka sama jak wersja, która nie `_opt_`zawiera. Poniżej znajduje się lista `_opt_` wariantów adnotacji parametrów wskaźnika:
 
 ||||
 |-|-|-|
 |`_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`|`_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`|`_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`|
 
-## <a name="output-pointer-parameters"></a>Parametry wskaźnika danych wyjściowych
- Parametry wskaźnika wyjściowe wymagają specjalnych Notacja do odróżniania null-ness na parametr i lokalizacji wskazanej.
+## <a name="output-pointer-parameters"></a>Parametry wskaźnika wyjściowego
+Parametry wskaźnika danych wyjściowych wymagają specjalnej notacji, aby odróżnić wartość null-stałość na parametrze i lokalizacji wskazywanej.
 
- **Adnotacje i opisów**
+**Adnotacje i opisy**
 
 - `_Outptr_`
 
-   Parametr nie może mieć wartości null, a w stanie po lokalizacji wskazanej nie może mieć wartości null i muszą być prawidłowe.
+   Parametr nie może mieć wartości null, a w stanie wskazywanym nie może mieć wartości null i musi być prawidłowy.
 
 - `_Outptr_opt_`
 
-   Parametr może mieć wartości null, ale w stanie po lokalizacji wskazanej nie może mieć wartości null i muszą być prawidłowe.
+   Parametr może mieć wartość null, ale w stanie wskazywanym nie może mieć wartości null i musi być prawidłowy.
 
 - `_Outptr_result_maybenull_`
 
-   Parametr nie może mieć wartości null, a następnie w stanie po lokalizacji wskazanej może mieć wartości null.
+   Parametr nie może mieć wartości null, a w stanie wskazywanym przez wartość null.
 
 - `_Outptr_opt_result_maybenull_`
 
-   Parametr może mieć wartości null, a następnie w stanie po lokalizacji wskazanej może mieć wartości null.
+   Parametr może mieć wartość null, a w stanie wskazywanym przez wpis wartość null.
 
-  W poniższej tabeli dodatkowe podciągi są wstawiane do nazwę adnotacji, aby bardziej szczegółowo. znaczenie adnotacji.  Różne podciągi są `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, i `_to_`.
+  W poniższej tabeli dodatkowe podciągi są wstawiane do nazwy adnotacji, aby dodatkowo zakwalifikować znaczenie adnotacji.  `_z`Różne podciągi to, `_buffer_` `_COM_`,, `_bytebuffer_`i `_to_`.
 
 > [!IMPORTANT]
-> Jeśli interfejs, który jest dodawanie adnotacji do modelu COM, należy użyć formy COM tych adnotacji. Nie należy używać adnotacje COM za pomocą dowolnego typu interfejsu.
+> Jeśli dodajesz Dodawanie adnotacji do interfejsu COM, użyj formularza COM tych adnotacji. Nie używaj adnotacji COM z żadnym innym interfejsem typu.
 
- **Adnotacje i opisów**
+**Adnotacje i opisy**
 
 - `_Outptr_result_z_`
 
@@ -331,7 +331,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
 
    `_Ouptr_opt_result_maybenull_z_`
 
-   Został zwrócony wskaźnik `_Null_terminated_` adnotacji.
+   Zwrócony wskaźnik ma `_Null_terminated_` adnotację.
 
 - `_COM_Outptr_`
 
@@ -341,7 +341,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
 
    `_COM_Outptr_opt_result_maybenull_`
 
-   Zwrócony wskaźnik ma semantykę COM i dlatego `_On_failure_` po warunek, że zwrócony wskaźnik ma wartość null.
+   Zwrócony wskaźnik ma semantykę modelu COM i w związku z tym `_On_failure_` przenosi warunek końcowy, który zwrócony wskaźnik ma wartość null.
 
 - `_Outptr_result_buffer_(s)`
 
@@ -351,7 +351,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
 
    `_Outptr_opt_result_bytebuffer_(s)`
 
-   Zwrócony wskaźnik wskazuje na prawidłową bufor o rozmiarze `s` elementów lub liczbę bajtów.
+   Zwrócony wskaźnik wskazuje prawidłowy bufor elementów rozmiaru `s` lub bajtów.
 
 - `_Outptr_result_buffer_to_(s, c)`
 
@@ -361,105 +361,105 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
 
    `_Outptr_opt_result_bytebuffer_to_(s,c)`
 
-   Zwrócony wskaźnik wskazuje bufor o rozmiarze `s` elementów lub liczbę bajtów, z których pierwszy `c` są prawidłowe.
+   Zwrócony wskaźnik wskazuje na bufor elementów rozmiaru `s` lub bajtów, z których pierwszy `c` jest prawidłowy.
 
-  Niektóre konwencje interfejsu zakładają, że parametry wyjściowe są zniesione w przypadku niepowodzenia.  Z wyjątkiem jawnie kodu COM formularze w poniższej tabeli są preferowane.  Dla kodu COM należy użyć odpowiedniej formularzy COM, które są wymienione w poprzedniej sekcji.
+  Niektóre konwencje interfejsu zakładają, że parametry wyjściowe są nullified w przypadku niepowodzenia.  W przypadku jawnego kodu COM formularze w poniższej tabeli są preferowane.  W przypadku kodu COM Użyj odpowiednich formularzy COM, które są wymienione w poprzedniej sekcji.
 
-  **Adnotacje i opisów**
+  **Adnotacje i opisy**
 
 - `_Result_nullonfailure_`
 
-   Modyfikuje innych adnotacji. Wynik jest ustawiany na wartość null, jeśli funkcja kończy się niepowodzeniem.
+   Modyfikuje inne adnotacje. Jeśli funkcja nie powiedzie się, wynik zostanie ustawiony na wartość null.
 
 - `_Result_zeroonfailure_`
 
-   Modyfikuje innych adnotacji. Wynik jest ustawiany na zero, jeśli funkcja zawiedzie.
+   Modyfikuje inne adnotacje. Jeśli funkcja nie powiedzie się, wynik zostanie ustawiony na zero.
 
 - `_Outptr_result_nullonfailure_`
 
-   Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametru — opcjonalne.
+   Zwrócony wskaźnik wskazuje prawidłowy bufor, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja się nie powiedzie. Adnotacja jest dla nieopcjonalnego parametru.
 
 - `_Outptr_opt_result_nullonfailure_`
 
-   Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametrem opcjonalnym.
+   Zwrócony wskaźnik wskazuje prawidłowy bufor, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja się nie powiedzie. Ta adnotacja jest dla opcjonalnego parametru.
 
 - `_Outref_result_nullonfailure_`
 
-   Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametr przekazany przez odwołanie.
+   Zwrócony wskaźnik wskazuje prawidłowy bufor, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja się nie powiedzie. Ta adnotacja dotyczy parametru Reference.
 
-## <a name="output-reference-parameters"></a>Parametry odwołania danych wyjściowych
+## <a name="output-reference-parameters"></a>Parametry odwołania wyjściowego
 
- Zazwyczaj jest używane, parametru odwołania dla parametrów wyjściowych.  Dla parametrów odwołania proste dane wyjściowe — na przykład `int&`—`_Out_` zapewnia semantykę, poprawna.  Jednak, gdy wartość wyjściowa jest wskaźnikiem — na przykład `int *&`— adnotacje równoważne wskaźnika, takich jak `_Outptr_ int **` nie zapewniają poprawne semantyki.  Aby zwięźle wyrazić semantykę parametrów odwołania danych wyjściowych dla typów wskaźnika, należy użyć tych złożonych adnotacji:
+Typowym zastosowaniem parametru reference jest dla parametrów wyjściowych.  W przypadku prostych parametrów odwołań wyjściowych — na `int&`przykład`_Out_` — zapewnia poprawną semantykę.  Jednak gdy wartość wyjściowa jest wskaźnikiem — na przykład `int *&`, równoważne adnotacje wskaźnika, takie jak `_Outptr_ int **` nie zapewniają właściwej semantyki.  Aby zwięzłie przedstawić semantykę parametrów referencyjnych wyjściowych dla typów wskaźnika, użyj następujących adnotacji złożonych:
 
- **Adnotacje i opisów**
+**Adnotacje i opisy**
 
 - `_Outref_`
 
-     Wynik musi być w stanie po prawidłowy i nie może mieć wartości null.
+     Wynik musi być prawidłowy w stanie post i nie może mieć wartości null.
 
 - `_Outref_result_maybenull_`
 
-     Wynik musi być w stanie po prawidłowy, ale może mieć wartości null w stanie po.
+     Wynik musi być prawidłowy w stanie post, ale może mieć wartość null w stanie post.
 
 - `_Outref_result_buffer_(s)`
 
-     Wynik musi być w stanie po prawidłowy i nie może mieć wartości null. Wskazuje nieprawidłowy bufor o rozmiarze `s` elementów.
+     Wynik musi być prawidłowy w stanie post i nie może mieć wartości null. Wskazuje prawidłowy bufor elementów size `s` .
 
 - `_Outref_result_bytebuffer_(s)`
 
-     Wynik musi być w stanie po prawidłowy i nie może mieć wartości null. Wskazuje nieprawidłowy bufor o rozmiarze `s` bajtów.
+     Wynik musi być prawidłowy w stanie post i nie może mieć wartości null. Wskazuje prawidłowy bufor wielkości `s` bajtów.
 
 - `_Outref_result_buffer_to_(s, c)`
 
-     Wynik musi być w stanie po prawidłowy i nie może mieć wartości null. Wskazuje bufor `s` elementów, z których pierwszy `c` są prawidłowe.
+     Wynik musi być prawidłowy w stanie post i nie może mieć wartości null. Wskazuje bufor `s` elementów, z których pierwszy `c` jest prawidłowy.
 
 - `_Outref_result_bytebuffer_to_(s, c)`
 
-     Wynik musi być w stanie po prawidłowy i nie może mieć wartości null. Wskazuje bufor `s` bajtów, z których pierwszy `c` są prawidłowe.
+     Wynik musi być prawidłowy w stanie post i nie może mieć wartości null. Wskazuje bufor `s` bajtów, z których pierwszy `c` jest prawidłowy.
 
 - `_Outref_result_buffer_all_(s)`
 
-     Wynik musi być w stanie po prawidłowy i nie może mieć wartości null. Wskazuje nieprawidłowy bufor o rozmiarze `s` prawidłowe elementy.
+     Wynik musi być prawidłowy w stanie post i nie może mieć wartości null. Wskazuje prawidłowy bufor `s` prawidłowych elementów.
 
 - `_Outref_result_bytebuffer_all_(s)`
 
-     Wynik musi być w stanie po prawidłowy i nie może mieć wartości null. Wskazuje nieprawidłowy bufor `s` bajtów prawidłowe elementy.
+     Wynik musi być prawidłowy w stanie post i nie może mieć wartości null. Wskazuje prawidłowy bufor `s` bajtów prawidłowych elementów.
 
 - `_Outref_result_buffer_maybenull_(s)`
 
-     Wynik musi być w stanie po prawidłowy, ale może mieć wartości null w stanie po. Wskazuje nieprawidłowy bufor o rozmiarze `s` elementów.
+     Wynik musi być prawidłowy w stanie post, ale może mieć wartość null w stanie post. Wskazuje prawidłowy bufor elementów size `s` .
 
 - `_Outref_result_bytebuffer_maybenull_(s)`
 
-     Wynik musi być w stanie po prawidłowy, ale może mieć wartości null w stanie po. Wskazuje nieprawidłowy bufor o rozmiarze `s` bajtów.
+     Wynik musi być prawidłowy w stanie post, ale może mieć wartość null w stanie post. Wskazuje prawidłowy bufor wielkości `s` bajtów.
 
 - `_Outref_result_buffer_to_maybenull_(s, c)`
 
-     Wynik musi być w stanie po prawidłowy, ale może mieć wartości null w stanie po. Wskazuje bufor `s` elementów, z których pierwszy `c` są prawidłowe.
+     Wynik musi być prawidłowy w stanie post, ale może mieć wartość null w stanie post. Wskazuje bufor `s` elementów, z których pierwszy `c` jest prawidłowy.
 
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
-     Wynik musi być w stanie po prawidłowy, ale może mieć wartości null w stanie post. Wskazuje bufor `s` bajtów, z których pierwszy `c` są prawidłowe.
+     Wynik musi być prawidłowy w stanie post, ale może mieć wartość null w stanie post. Wskazuje bufor `s` bajtów, z których pierwszy `c` jest prawidłowy.
 
 - `_Outref_result_buffer_all_maybenull_(s)`
 
-     Wynik musi być w stanie po prawidłowy, ale może mieć wartości null w stanie post. Wskazuje nieprawidłowy bufor o rozmiarze `s` prawidłowe elementy.
+     Wynik musi być prawidłowy w stanie post, ale może mieć wartość null w stanie post. Wskazuje prawidłowy bufor `s` prawidłowych elementów.
 
 - `_Outref_result_bytebuffer_all_maybenull_(s)`
 
-     Wynik musi być w stanie po prawidłowy, ale może mieć wartości null w stanie post. Wskazuje nieprawidłowy bufor `s` bajtów prawidłowe elementy.
+     Wynik musi być prawidłowy w stanie post, ale może mieć wartość null w stanie post. Wskazuje prawidłowy bufor `s` bajtów prawidłowych elementów.
 
 ## <a name="return-values"></a>Wartości zwrócone
 
- Wartość zwracana przez funkcję przypomina `_Out_` parametru, ale jest na innym poziomie de-reference i nie trzeba wziąć pod uwagę koncepcji wskaźnik do wyniku.  Dla następujących adnotacji, wartość zwracana jest obiektem adnotacjami — skalarną, wskaźnik do struktury lub wskaźnik do buforu. Adnotacje mieć tą samą semantyką jako odpowiednie `_Out_` adnotacji.
+Wartość zwracana przez funkcję jest podobna `_Out_` do parametru, ale jest na innym poziomie odwołującym się i nie trzeba traktować koncepcji wskaźnika do wyniku.  Dla następujących adnotacji wartość zwracana jest obiektem z adnotacjami — skalarnym, wskaźnikiem do struktury lub wskaźnikiem do buforu. Te adnotacje mają taką samą semantykę, jak `_Out_` odpowiednia adnotacja.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
-## <a name="format-string-parameters"></a>Parametry ciągu formatu
+## <a name="format-string-parameters"></a>Parametry formatu ciągu
 
-- `_Printf_format_string_` Wskazuje, że parametr jest do użytku w ciągu formatu `printf` wyrażenia.
+- `_Printf_format_string_`Wskazuje, że parametr jest ciągiem formatu do użycia w `printf` wyrażeniu.
 
      **Przykład**
 
@@ -474,7 +474,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
     }
     ```
 
-- `_Scanf_format_string_` Wskazuje, że parametr jest do użytku w ciągu formatu `scanf` wyrażenia.
+- `_Scanf_format_string_`Wskazuje, że parametr jest ciągiem formatu do użycia w `scanf` wyrażeniu.
 
      **Przykład**
 
@@ -489,24 +489,24 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
     }
     ```
 
-- `_Scanf_s_format_string_` Wskazuje, że parametr jest do użytku w ciągu formatu `scanf_s` wyrażenia.
+- `_Scanf_s_format_string_`Wskazuje, że parametr jest ciągiem formatu do użycia w `scanf_s` wyrażeniu.
 
      **Przykład**
 
     ```cpp
     int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
     {
-           va_list args; 
+           va_list args;
            va_start(args, format);
            int ret = vwscanf_s(format, args);
-           va_end(args); 
+           va_end(args);
            return ret;
     }
     ```
 
-## <a name="other-common-annotations"></a>Inne typowe adnotacji
+## <a name="other-common-annotations"></a>Inne typowe adnotacje
 
- **Adnotacje i opisów**
+**Adnotacje i opisy**
 
 - `_In_range_(low, hi)`
 
@@ -522,30 +522,30 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
 
      `_Field_range_(low, hi)`
 
-     Parametr, pole lub wynik jest z zakresu (włącznie) z `low` do `hi`.  Odpowiednikiem `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` mający zastosowanie do adnotacjami obiektu wraz z odpowiednią wstępnie stanu lub stanu końcowego warunków.
+     Parametr, pole lub wynik znajduje się w zakresie (włącznie) od `low` do. `hi`  `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` Równoważne, które jest stosowane do obiektu z adnotacjami wraz z odpowiednimi warunkami stanu sprzed lub po stanie.
 
     > [!IMPORTANT]
-    > Mimo że nazwy zawierają "in" i "out", semantyka `_In_` i `_Out_` czy **nie** dotyczy tych adnotacji.
+    > Chociaż nazwy zawierają wartości "in" i "out", semantyka `_In_` i `_Out_` nie mają zastosowania do tych adnotacji.
 
 - `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
-     Wartość adnotacjami jest dokładnie `expr`.  Odpowiednikiem `_Satisfies_(_Curr_ == expr)` mający zastosowanie do adnotacjami obiektu wraz z odpowiednią wstępnie stanu lub stanu końcowego warunków.
+     Wartość z adnotacjami jest dokładnie `expr`.  `_Satisfies_(_Curr_ == expr)` Równoważne, które jest stosowane do obiektu z adnotacjami wraz z odpowiednimi warunkami stanu sprzed lub po stanie.
 
 - `_Struct_size_bytes_(size)`
 
-     Ma zastosowanie do deklaracji struktury lub klasy.  Wskazuje, że prawidłowy obiekt tego typu mogą być większe niż zadeklarowanym typem z liczbą bajtów, które są określone przez `size`.  Na przykład:
+     Dotyczy deklaracji klasy lub struktury.  Wskazuje, że prawidłowy obiekt tego typu może być większy niż zadeklarowany typ, z liczbą bajtów podawaną przez `size`.  Na przykład:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
-     Rozmiar buforu w bajtach parametr `pM` typu `MyStruct *` zostaje następnie przeniesiony za:
+     Rozmiar buforu w bajtach parametru `pM` typu `MyStruct *` jest następnie traktowany jako:
 
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Powiązane zasoby
 
- [Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/?LinkId=251197)
+[Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Zobacz też
 

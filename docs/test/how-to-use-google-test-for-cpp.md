@@ -1,6 +1,6 @@
 ---
 title: Jak używać platformy Google Test dla języka C++
-description: Umożliwia tworzenie platformy Google Test C++ testów jednostkowych w programie Visual Studio.
+description: Użyj Google Test, aby C++ utworzyć testy jednostkowe w programie Visual Studio.
 ms.date: 05/06/2017
 ms.topic: conceptual
 ms.author: mblome
@@ -8,25 +8,25 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8e918878048eec7dae04b6d9269f664b9e99c567
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226337"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926753"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Jak używać platformy Google Test dla języka C++ w programie Visual Studio
 
-W programie Visual Studio 2017 i nowszych platformy Google Test jest zintegrowana w środowisku IDE programu Visual Studio jako część domyślnego **programowanie aplikacji klasycznych przy użyciu C++**  obciążenia. Aby sprawdzić, czy jest zainstalowany na komputerze, otwórz Instalator programu Visual Studio i Znajdź platformy Google Test pod listą składników obciążenia:
+W programie Visual Studio 2017 i nowszych Google test jest zintegrowana z programem Visual Studio IDE jako domyślny składnik **tworzenia pulpitu z C++**  obciążeniem. Aby sprawdzić, czy jest zainstalowany na komputerze, otwórz Instalator programu Visual Studio i Znajdź platformy Google Test pod listą składników obciążenia:
 
 ![Instalowanie platformy Google Test](media/cpp-google-component.png)
 
 ::: moniker range="vs-2019"
 
-## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Dodaj projekt Google Test w programie Visual Studio 2019 r.
+## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Dodawanie projektu Google Test w programie Visual Studio 2019
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania i wybierz **Dodaj** > **nowy projekt**.
-2. Ustaw **języka** do **C++** i typ **test** w polu wyszukiwania. Z listy wyników wybierz **projekt testowy Google**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
+2. Ustaw **Język** na **C++** i wpisz **test** w polu wyszukiwania. Z listy wyników wybierz pozycję **projekt Google test**.
 3. Nazwij projekt testowy, a następnie kliknij przycisk **OK**.
 
 ![Nowy projekt Google Test](media/vs-2019/cpp-gtest-new-project-vs2019.png)
@@ -35,10 +35,10 @@ W programie Visual Studio 2017 i nowszych platformy Google Test jest zintegrowan
 
 ::: moniker range="vs-2017"
 
-## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Dodaj projekt Google Test w programie Visual Studio 2017
+## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Dodawanie projektu Google Test w programie Visual Studio 2017
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania i wybierz **Dodaj** > **nowy projekt**.
-2. W okienku po lewej stronie wybierz **Visual C++**  > **testu** , a następnie wybierz **projekt testowy Google** w środkowym okienku.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
+2. W lewym okienku wybierz pozycję > **test** **wizualny C++**  , a następnie wybierz **Google test projekt** w środkowym okienku.
 3. Nazwij projekt testowy, a następnie kliknij przycisk **OK**.
 
 ![Nowy projekt Google Test](media/cpp-gtest-new-project.png)
@@ -49,13 +49,13 @@ W programie Visual Studio 2017 i nowszych platformy Google Test jest zintegrowan
 
 W **przetestować konfigurację projektu** wyświetlonym oknie dialogowym możesz wybrać projekt, którą chcesz przetestować. Po wybraniu projektu, Visual Studio dodaje odwołanie do wybranego projektu. Jeśli wybierzesz opcję Brak projektu, musisz ręcznie dodać odwołania do projektów, które mają zostać przetestowane. Wybierając między statyczne i dynamiczne łączenie plików binarnych platformy Google Test zagadnienia są takie same jak program w języku C++. Aby uzyskać więcej informacji, zobacz [biblioteki dll w programie Visual C++](/cpp/build/dlls-in-visual-cpp).
 
- ![Konfigurowanie projektu platformy Google Test](media/cpp-gtest-config.png)
+![Konfigurowanie projektu platformy Google Test](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>Ustawianie opcji dodatkowych
 
 W menu głównym wybierz **narzędzia** > **opcje** > **rozszerzenia Test Adapter for Google Test** można ustawić dodatkowe opcje. Zobacz dokumentację platformy Google Test, aby uzyskać więcej informacji o tych ustawieniach.
 
- ![Ustawienia projektu testowego Google](media/cpp-gtest-settings.png)
+![Ustawienia projektu testowego Google](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Dodaj dyrektywy #include
 

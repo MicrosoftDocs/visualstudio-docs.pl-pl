@@ -15,32 +15,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 412a8489c3d7092aa87803f7dd3af5c7495b17a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13c79a4cae482990369fc8218bf0b7226ab05942
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778622"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919057"
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
 
-Opcje to okno dialogowe umożliwia określenie, jak wszystkie pliki z określonych rozszerzeń plików będzie obsługiwany przez program Visual Studio zintegrowane środowisko programistyczne (IDE). Dla każdego **rozszerzenia** czy wprowadzasz, możesz wybrać środowisko edycji. Teraz można wybrać w edytorze IDE lub Projektant Otwórz dokumentów określonego typu. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **edytora tekstów** , a następnie wybierz węzeł **rozszerzenie pliku**.
+To okno dialogowe opcji pozwala określić, w jaki sposób wszystkie pliki z określonymi rozszerzeniami plików będą obsługiwane przez zintegrowane środowisko programistyczne (IDE) programu Visual Studio. Dla każdego wprowadzonego **rozszerzenia** możesz wybrać środowisko edycji. Dzięki temu można wybrać Edytor IDE lub projektanta, w którym będą otwierane dokumenty określonego typu. Aby wyświetlić te opcje, wybierz **Opcje** z menu **Narzędzia** , rozwiń węzeł **Edytor tekstu** , a następnie wybierz pozycję **rozszerzenie pliku**.
 
-Po wybraniu opcji "z kodowaniem", pojawi się okno dialogowe przy każdym otwarciu dokumentu tego typu, który służy do wybierania schemat kodowania dla tego dokumentu. Może to być przydatne w przypadku przygotowywania wersje dokumentów projektu do użytku na różnych platformach i w różnych językach docelowego.
+Po wybraniu opcji "z kodowaniem" zostanie wyświetlone okno dialogowe, które umożliwia wybranie schematu kodowania dla tego dokumentu. Może to być przydatne w przypadku przygotowywania wersji dokumentów projektu do użycia na różnych platformach lub w różnych językach docelowych.
 
-## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+## <a name="uielement-list"></a>Lista elementów UIElement
 
 **Rozszerzenie**
 
-Wpisz rozszerzenie pliku, którego edycji środowisko IDE, aby zdefiniować.
+Wpisz rozszerzenie pliku, którego środowisko edycji ma być zdefiniowane w IDE.
 
 **Edytor**
 
- Wybierz edytor środowiska IDE lub w dokumentach, które z tym plikiem rozszerzenie zostanie otwarty projektant. Po wybraniu opcji "za pomocą ncoding", pojawi się okno dialogowe przy każdym otwarciu takiego dokumentu, który służy do wybierania schemat kodowania.
+Wybierz Edytor IDE lub projektanta, w którym będą otwierane dokumenty z tym rozszerzeniem pliku. Po wybraniu opcji "with ncoding" zostanie wyświetlone okno dialogowe, które umożliwia wybranie schematu kodowania.
 
 **Add**
 
-Dodaje wpis, który zawiera określony **rozszerzenia** i **środowisko edytowania** do listy rozszerzeń.
+Dodaje wpis zawierający określone **rozszerzenie** i **środowisko edycji** do listy rozszerzeń.
 
 **Usuń**
 
@@ -50,13 +50,13 @@ Usuwa wybrany wpis z listy rozszerzeń.
 
 Wyświetla listę wszystkich rozszerzeń, dla których określono środowisko edycji.
 
-**Mapuj pliki bez rozszerzenia, aby**
+**Mapuj pliki bezrozszerzenia na**
 
-Wybierz tę opcję, jeśli chcesz określić sposób obsługi plików bez rozszerzeń IDE.
+Wybierz tę opcję, jeśli chcesz określić, w jaki sposób pliki bez rozszerzenia będą obsługiwane przez IDE.
 
-**Opcje pliku bez rozszerzenia**
+**Opcje pliku bezrozszerzającego**
 
-Zawiera tę samą listę jako **edytora**. Wybierz IDE edytora lub projektanta Otwórz dokumenty bez rozszerzeń plików.
+Zapewnia taką samą listę jak **Edytor**. Wybierz Edytor IDE lub projektanta, w którym będą otwierane dokumenty bez rozszerzeń plików.
 
 ## <a name="see-also"></a>Zobacz także
 

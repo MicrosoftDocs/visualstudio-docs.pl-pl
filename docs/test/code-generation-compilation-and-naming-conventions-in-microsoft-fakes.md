@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Fakes: Generowanie i kompilowanie kodu. konwencje nazewnictwa'
+title: 'Sztuczne firmy Microsoft: Generuj kod kompilacji & Konwencje nazewnictwa'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432289"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918461"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 
@@ -110,9 +110,9 @@ Generator kodu pozornego wygeneruje typy zastępcze i typy namiastki dla typów,
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Typy wewnętrzne w zestawach o silnej nazwie**
+**Typy wewnętrzne w zestawach o silnej nazwie**
 
- Jeśli zestawu typu shim ma silnej nazwy, i chcesz uzyskać dostęp do wewnętrznych typów zestawu:
+Jeśli zestawu typu shim ma silnej nazwy, i chcesz uzyskać dostęp do wewnętrznych typów zestawu:
 
 - Zarówno zestaw testowy i zestaw Pozorowany muszą posiadać silne nazwy.
 
@@ -179,11 +179,11 @@ Z projektów testów jednostkowych Dodaj odwołanie do skompilowanych zestawów 
 
 W środowisku kompilacji zespołowej wszystkie dane wyjściowe kompilacji są scalane w jednym katalogu. Jeśli wiele projektów używa substytutów, może się zdarzyć, że zestawy pozorne z różnych wersji nadpiszą. Na przykład TestProject1 elementów sztucznych *mscorlib.dll* z .NET Framework 2.0 i TestProject2 elementów sztucznych *mscorlib.dll* dla programu .NET Framework 4 zarówno dałaby do *mscorlib. Fakes.dll* zestaw elementów sztucznych.
 
- Aby uniknąć tego problemu, substytuty powinny automatycznie tworzyć nazwy zestawów pozorowanych z wersją kwalifikowaną dla odwołań do projektu bez podczas dodawania *.fakes* plików. Nazwa zestawu Pozorowanego wersją kwalifikowaną dołącza numer wersji, podczas tworzenia nazwy zestawu elementów sztucznych:
+Aby uniknąć tego problemu, substytuty powinny automatycznie tworzyć nazwy zestawów pozorowanych z wersją kwalifikowaną dla odwołań do projektu bez podczas dodawania *.fakes* plików. Nazwa zestawu Pozorowanego wersją kwalifikowaną dołącza numer wersji, podczas tworzenia nazwy zestawu elementów sztucznych:
 
- Biorąc pod uwagę zestaw MyAssembly i wersję 1.2.3.4 Nazwa zestawu Pozorowanego to MyAssembly.1.2.3.4.Fakes.
+Biorąc pod uwagę zestaw MyAssembly i wersję 1.2.3.4 Nazwa zestawu Pozorowanego to MyAssembly.1.2.3.4.Fakes.
 
- Możesz zmienić lub usunąć tę wersję przez edycję atrybutu wersja elementu zestaw w *.fakes*:
+Możesz zmienić lub usunąć tę wersję przez edycję atrybutu wersja elementu zestaw w *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Typ podkładek i klas zastępczych wpisz konwencje nazewnictwa
 
- **Przestrzenie nazw**
+**Przestrzenie nazw**
 
 - . Substytuty sufiks jest dodawany do przestrzeni nazw.
 

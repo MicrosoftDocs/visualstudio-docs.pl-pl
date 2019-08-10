@@ -7,19 +7,19 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 478efc77bd1fb14f6241e026cfe280355a90746a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560036"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919442"
 ---
 # <a name="best-practices-and-examples-sal"></a>Najlepsze praktyki i przykłady (SAL)
-Oto kilka sposobów, aby wykorzystać poza języka adnotacji kodu źródłowego (SAL) i uniknąć niektórych typowych problemów.
+Oto kilka sposobów, aby maksymalnie wykorzystać możliwości języka z adnotacjami kodu źródłowego (SAL) i uniknąć niektórych typowych problemów.
 
-## <a name="in"></a>\_W\_
+## <a name="_in_"></a>\_W\_
 
-Jeśli funkcja powinna zapisu do elementu, użyj `_Inout_` zamiast `_In_`. Jest to szczególnie istotne w przypadku zautomatyzowanych konwersja starsze makra na SAL. Przed SAL, wielu programistów używał makra w postaci komentarzy — makra, które zostały nazwane `IN`, `OUT`, `IN_OUT`, lub odmiany tych nazw. Mimo że firma Microsoft zaleca SAL przekonwertowanie tych makr, również zachęcamy do należy zachować ostrożność podczas ich konwersji, ponieważ kod mógł ulec zmianie, ponieważ prototyp oryginalnego zostało zapisane, a stare makro może nie odzwierciedlają, co dany kod realizuje. Należy zachować szczególną ostrożność o `OPTIONAL` komentarz makra, ponieważ często jest nieprawidłowo umieszczony — na przykład na problem po stronie przecinka.
+Jeśli funkcja powinna zapisywać w elemencie, użyj `_Inout_` `_In_`zamiast. Jest to szczególnie istotne w przypadku zautomatyzowanej konwersji ze starszych makr na SAL. Przed sal, wielu programistów używa makr jako komentarzy — makra o nazwach `IN` `OUT` `IN_OUT`,, lub odmianach tych nazw. Chociaż zalecamy przekonwertowanie tych makr na SAL, Zachęcamy również do pomyślnego przeprowadzenia konwersji, ponieważ kod może ulec zmianie od momentu zapisania oryginalnego prototypu, a stare makro może nie odzwierciedlać tego kodu. Należy zwrócić szczególną uwagę `OPTIONAL` na to, że makro komentarza jest często umieszczane nieprawidłowo — na przykład po niewłaściwej stronie przecinka.
 
 ```cpp
 
@@ -42,9 +42,9 @@ void Func2(_Inout_ PCHAR p1)
 }
 ```
 
-## <a name="opt"></a>\_opt\_
+## <a name="_opt_"></a>\_opt\_
 
-Jeśli obiekt wywołujący nie może przejść w pustym wskaźnikiem, użyj `_In_` lub `_Out_` zamiast `_In_opt_` lub `_Out_opt_`. Dotyczy to nawet w przypadku funkcji, która sprawdza poprawność parametrów i zwraca błąd, jeśli ma wartość NULL, gdy nie powinny być. Mimo że funkcja Sprawdź parametrem Nieoczekiwana pusta i zwraca bez problemu zmieniała jest dobrą praktyką programowania obrony, nie oznacza to, że adnotacja parametru może być opcjonalnie typu (`_*Xxx*_opt_`).
+Jeśli obiekt wywołujący nie może przekazać wskaźnika `_In_` o wartości null, użyj lub `_Out_` zamiast `_In_opt_` lub `_Out_opt_`. Ma to zastosowanie nawet do funkcji, która sprawdza jej parametry i zwraca błąd, jeśli ma wartość NULL, gdy nie powinna być. Chociaż posiadanie funkcji sprawdza jej parametr pod kątem nieoczekiwanej wartości NULL i jest bezpiecznie zwracać, dobrze jest dobrym praktycznym sposobem kodowania, nie oznacza to, że adnotacja parametru może być`_*Xxx*_opt_`typu opcjonalnego ().
 
 ```cpp
 
@@ -61,13 +61,13 @@ void Func2(_Out_ int *p1)
 }
 ```
 
-## <a name="predefensive-and-postdefensive"></a>\_Wstępnie\_obrony\_ i \_wpis\_obrony\_
+## <a name="_pre_defensive_-and-_post_defensive_"></a>\_Przed\_\_ obroną i\_ogłoszeniem\_obronnym\_
 
-Jeśli funkcja znajduje się na granicy zaufania i firma Microsoft zaleca używanie `_Pre_defensive_` adnotacji.  Modyfikator "obrony" modyfikuje pewne adnotacje wskazanie, że w momencie wywołania, interfejsu, które powinny być sprawdzane ściśle, ale w treści implementacji go powinien przyjęto założenie, nieprawidłowe parametry mogą być przekazywane. W takim przypadku `_In_ _Pre_defensive_` jest preferowany w granicy zaufania, aby wskazać, że chociaż obiekt wywołujący, otrzymają komunikat o błędzie, gdy podejmowana jest próba przekazania wartości NULL, treści funkcji będą analizowane tak, jakby parametru może być NULL, a wszystkie próby cofnąć odwołanie wskaźnika bez uprzedniego Sprawdzanie wartości NULL zostanie oflagowana.  A `_Post_defensive_` adnotacji jest również dostępne dla wywołań zwrotnych, gdzie zaufanego strona zakłada, że obiekt wywołujący, a niezaufanego kodu to dzwonić kodu.
+Jeśli funkcja pojawia się na granicy zaufania, zalecamy użycie `_Pre_defensive_` adnotacji.  Modyfikator "obrony" modyfikuje niektóre adnotacje, aby wskazać, że w punkcie wywołania interfejs powinien być dokładnie sprawdzony, ale w treści implementacji należy założyć, że można przekazywać nieprawidłowe parametry. W takim przypadku `_In_ _Pre_defensive_` jest preferowany na granicy zaufania, aby wskazać, że chociaż obiekt wywołujący otrzyma błąd, jeśli próbuje przekazać wartość null, treść funkcji zostanie przeanalizowana tak, jakby parametr może mieć wartość null, a wszystkie próby odwołujące się do wskaźnika bez uprzedniego sprawdzenie, czy dla wartości NULL zostanie oflagowane.  `_Post_defensive_` Adnotacja jest również dostępna do użycia w wywołaniach zwrotnych, w przypadku których zakłada się, że jest to obiekt wywołujący, a niezaufany kod jest wywoływanym kodem.
 
-## <a name="outwrites"></a>\_Limit\_zapisuje\_
+## <a name="_out_writes_"></a>\_Zapisy\_na zewnątrz\_
 
-W poniższym przykładzie pokazano wspólnej nadużycie `_Out_writes_`.
+Poniższy przykład ilustruje typowe nadużycie `_Out_writes_`.
 
 ```cpp
 
@@ -77,9 +77,9 @@ void Func1(_Out_writes_(size) CHAR *pb,
 );
 ```
 
-Adnotacja `_Out_writes_` oznacza, że masz bufora. Ma ona `cb` bajtów przydzielonych za pomocą pierwszego bajtu zainicjowana na wyjściu. Ta adnotacja nie jest ściśle problem i warto express przydzielony rozmiar. Jednak program nie nakazuje ile elementy są inicjowane przez funkcję.
+Adnotacja `_Out_writes_` oznacza, że masz bufor. Ma `cb` przydzieloną liczbę bajtów z pierwszym bajtem zainicjowanym przy zamykaniu. Ta Adnotacja nie jest ściśle zła i warto wyrazić przydzieloną wielkość. Nie informuje jednak o tym, ile elementów jest inicjowanych przez funkcję.
 
-W kolejnym przykładzie pokazano trzy sposoby poprawna, aby w pełni określić dokładny rozmiar zainicjowane część buforu.
+W następnym przykładzie pokazano trzy poprawne sposoby w pełni określić dokładny rozmiar zainicjowanej części buforu.
 
 ```cpp
 
@@ -98,9 +98,9 @@ void Func3(_Out_writes_(size) PSTR pb,
 );
 ```
 
-## <a name="out-pstr"></a>\_Limit\_ PSTR
+## <a name="_out_-pstr"></a>\_PSTR\_ out
 
-Korzystanie z `_Out_ PSTR` prawie zawsze jest nieprawidłowy. To jest interpretowane jako parametr wyjściowy, który wskazuje na buforu znaków i jest zakończony znakiem NULL.
+Użycie `_Out_ PSTR` jest niemal zawsze błędne. Jest interpretowany jako mający parametr wyjściowy, który wskazuje bufor znaków i jest zakończony znakiem NULL.
 
 ```cpp
 
@@ -111,11 +111,11 @@ void Func1(_Out_ PSTR pFileName, size_t n);
 void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
 ```
 
-Adnotacja, takich jak `_In_ PCSTR` to typowe i przydatne. Wskazuje ciągu wejściowego, który ma zakończenia o wartości NULL, ponieważ warunek wstępny elementu `_In_` umożliwia rozpoznawanie ciąg zakończony znakiem NULL.
+Adnotacja `_In_ PCSTR` taka jest powszechna i przydatna. Wskazuje ciąg wejściowy, który ma zakończenie o wartości null, ponieważ warunek wstępny `_In_` umożliwia rozpoznanie ciągu zakończonego wartością null.
 
-## <a name="in-wchar-p"></a>\_W\_ WCHAR * p
+## <a name="_in_-wchar-p"></a>\_W\_ WCHAR * p
 
-`_In_ WCHAR* p` Określa, czy jest wskaźnik danych wejściowych `p` wskazującej jeden znak. Jednak w większości przypadków to prawdopodobnie nie jest specyfikacja która jest przeznaczony. Zamiast tego co prawdopodobnie jest przeznaczony jest specyfikacja tablicą zakończoną znakiem NULL; Aby to zrobić, należy użyć `_In_ PWSTR`.
+`_In_ WCHAR* p`wskazuje, że istnieje wskaźnik `p` wejściowy wskazujący na jeden znak. Jednak w większości przypadków jest to prawdopodobnie nie jest to specyfikacja, która jest zamierzona. Zamiast tego najprawdopodobniej zamierzone jest określenie tablicy zakończonej zerem; w tym celu należy użyć `_In_ PWSTR`.
 
 ```cpp
 
@@ -126,7 +126,7 @@ void Func1(_In_ WCHAR* wszFileName);
 void Func2(_In_ PWSTR wszFileName);
 ```
 
-Brak prawidłowego określenia zakończenia o wartości NULL jest powszechne. To zrobić w odpowiednim `STR` wersji, aby zastąpić ten typ, jak pokazano w poniższym przykładzie.
+Brak prawidłowej specyfikacji zakończenia o wartości NULL jest wspólna. Użyj odpowiedniej `STR` wersji, aby zamienić typ, jak pokazano w poniższym przykładzie.
 
 ```cpp
 
@@ -143,9 +143,9 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 }
 ```
 
-## <a name="outrange"></a>\_Limit\_zakresu\_
+## <a name="_out_range_"></a>\_Zakres\_poza\_
 
-Jeśli parametr jest wskaźnik, a użytkownik chce wyrażenia zakresu wartość elementu, który jest wskazywany przez wskaźnik, należy użyć `_Deref_out_range_` zamiast `_Out_range_`. W poniższym przykładzie zakres * pcbFilled jest wyrażona, nie pcbFilled.
+Jeśli parametr jest wskaźnikiem i chcesz przedstawić zakres wartości elementu, który jest wskazywany przez wskaźnik, użyj `_Deref_out_range_` `_Out_range_`zamiast. W poniższym przykładzie zakres * pcbFilled jest wyrażony jako, a nie pcbFilled.
 
 ```cpp
 
@@ -164,11 +164,11 @@ void Func2(
 );
 ```
 
- `_Deref_out_range_(0, cbSize)` nie jest bezwzględnie konieczne w niektórych narzędzi, ponieważ można go wywnioskować na podstawie `_Out_writes_to_(cbSize,*pcbFilled)`, ale jest wyświetlany tutaj aby informacje były kompletne.
+`_Deref_out_range_(0, cbSize)`nie są absolutnie wymagane w przypadku niektórych narzędzi, ponieważ mogą być wywnioskowane `_Out_writes_to_(cbSize,*pcbFilled)`z, ale w tym miejscu są wyświetlane w celu kompletności.
 
-## <a name="wrong-context-in-when"></a>Nieprawidłowy kontekst w \_po\_
+## <a name="wrong-context-in-_when_"></a>Błędny kontekst w \_czasie\_
 
-Inny powszechnym błędem jest do użytku po stanie oceny warunków wstępnych. W poniższym przykładzie `_Requires_lock_held_` jest warunkiem wstępnym.
+Innym często używanym błędem jest użycie oceny końcowej w warunkach wstępnych. W poniższym przykładzie `_Requires_lock_held_` jest warunkiem wstępnym.
 
 ```cpp
 
@@ -181,11 +181,11 @@ _When_(flag == 0, _Requires_lock_held_(p->cs))
 int Func2(_In_ MyData *p, int flag);
 ```
 
- Wyrażenie `result` odnosi się do wartości stanu końcowego, która nie jest dostępna w stanie wstępnego.
+Wyrażenie `result` odwołuje się do wartości po stanie, która jest niedostępna w stanie sprzed.
 
-## <a name="true-in-success"></a>Wartość TRUE w \_sukces\_
+## <a name="true-in-_success_"></a>Prawda w \_sukcesie\_
 
-Jeśli funkcja się powiedzie, gdy zwracana wartość jest różna od zera, użyj `return != 0` jako warunek powodzenia zamiast `return == TRUE`. NonZero nie musi oznaczać równoważności do rzeczywistej wartości, który kompilator zapewnia `TRUE`. Parametr `_Success_` jest wyrażeniem, a poniższe wyrażenia są obliczane jako równoważne: `return != 0`, `return != false`, `return != FALSE`, i `return` bez parametrów lub porównań.
+Jeśli funkcja powiedzie się, gdy wartość zwracana jest różna od zera, `return != 0` Użyj jako warunku sukcesu `return == TRUE`zamiast. Wartość różna od zera nie musi oznaczać równoważności do wartości rzeczywistej, która zapewnia `TRUE`kompilator. Parametr `_Success_` jest wyrażeniem, a następujące wyrażenia są oceniane jako równoważne: `return != 0`, `return != false`, `return != FALSE`, i `return` bez parametrów i porównań.
 
 ```cpp
 
@@ -202,9 +202,9 @@ BOOL WINAPI TryEnterCriticalSection(
 );
 ```
 
-## <a name="reference-variable"></a>Odwołanie do zmiennej
+## <a name="reference-variable"></a>Zmienna odwołania
 
-Odwołanie do zmiennej, poprzednia wersja SAL używana dorozumianych wskaźnika jako cel adnotacji i wymagane dodanie `__deref` do adnotacji, które są dołączone do zmiennej odwołania. Ta wersja wykorzystuje samego obiektu i nie wymaga dodatkowych `_Deref_`.
+W przypadku zmiennej referencyjnej Poprzednia wersja sal używała wskaźnika implikowanego jako elementu docelowego adnotacji i wymaga dodania `__deref` do adnotacji, które są dołączone do zmiennej odwołania. Ta wersja używa samego obiektu i nie wymaga dodatkowych `_Deref_`.
 
 ```cpp
 
@@ -221,9 +221,9 @@ void Func2(
 );
 ```
 
-## <a name="annotations-on-return-values"></a>Adnotacje na wartości zwracane
+## <a name="annotations-on-return-values"></a>Adnotacje dla zwracanych wartości
 
-Poniższy przykład przedstawia typowy problem w zwracanej wartości adnotacji.
+Poniższy przykład przedstawia typowy problem w adnotacjach wartości zwracanej.
 
 ```cpp
 
@@ -234,15 +234,15 @@ _Out_opt_ void *MightReturnNullPtr1();
 _Ret_maybenull_ void *MightReturnNullPtr2();
 ```
 
-W tym przykładzie `_Out_opt_` mówi wskaźnik może mieć wartości NULL jako część warunku wstępnego. Jednak warunki wstępne nie można zastosować do wartości zwracanej. W tym przypadku jest poprawny adnotacji `_Ret_maybenull_`.
+W tym przykładzie mówi `_Out_opt_` , że wskaźnik może mieć wartość null w ramach warunku wstępnego. Nie można jednak zastosować warunków wstępnych do wartości zwracanej. W takim przypadku poprawną adnotacją jest `_Ret_maybenull_`.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Korzystanie z adnotacji SAL w celu zmniejszenia C /C++ wad kodu](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-[zrozumienie SAL](../code-quality/understanding-sal.md)
-[Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md) 
- [Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
-[Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)
-[Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md) 
- [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+[Korzystanie z adnotacji sal w celuC++ zmniejszenia liczby wad](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+języka C/Code w celu uzyskania adnotacji[sal](../code-quality/understanding-sal.md)
+[i zwracania wartości](../code-quality/annotating-function-parameters-and-return-values.md)
+[](../code-quality/annotating-function-behavior.md) 
+ [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)
+[Dodawanie adnotacji do zachowania](../code-quality/annotating-locking-behavior.md)
+blokowania[określające, kiedy i gdzie adnotacja stosuje](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 [funkcje wewnętrzne](../code-quality/intrinsic-functions.md)

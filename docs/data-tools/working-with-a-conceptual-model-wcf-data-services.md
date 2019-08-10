@@ -1,5 +1,5 @@
 ---
-title: Praca z modelem koncepcyjnym (WCF Data Services)
+title: Praca z modelem koncepcyjnym (Usługi danych programu WCF)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 677e423e456c448204d39a286509fa93aa5c57b8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745347"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925339"
 ---
-# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Praca z modelem koncepcyjnym (WCF Data Services)
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Korzystanie z modelu koncepcyjnego (Usługi danych programu WCF)
 
-Korzystając z modelu koncepcyjnego do opisu danych w bazie danych, można tworzyć zapytania danych przy użyciu obiektów zamiast konieczności translacji i z powrotem przez schemat bazy danych i modelu obiektu.
+W przypadku używania modelu koncepcyjnego do opisywania danych w bazie danych, można wysyłać zapytania o dane za pomocą obiektów, a nie do ich przetłumaczenia między schematem bazy danych i modelem obiektów.
 
- Za pomocą modeli koncepcyjnych z aplikacjami usług danych WCF. Poniższe tematy przedstawiają sposób wykonywania zapytań o dane za pośrednictwem modelu koncepcyjnego.
+Modeli koncepcyjnych można używać w aplikacjach Usługi danych programu WCF. W poniższych tematach przedstawiono sposób wykonywania zapytań dotyczących danych za pomocą modelu koncepcyjnego.
 
 | Temat | Opis |
 | - | - |
-| [Instrukcje: Wykonywanie zapytań usługi danych](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Pokazuje sposób tworzenia zapytań względem usługi danych z poziomu aplikacji .NET. |
-| [Instrukcje: Projekt wyników zapytania](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Pokazuje, jak zmniejszyć ilość danych zwracanych przez zapytanie usługi danych. |
+| [Instrukcje: Wykonaj zapytania dotyczące usługi danych](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Pokazuje, w jaki sposób wysyłać zapytania do usługi danych z aplikacji .NET. |
+| [Instrukcje: Wyniki zapytania projektu](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Pokazuje, jak zmniejszyć ilość danych zwracanych przez zapytanie usługi danych. |
 
- Korzystając z modelu koncepcyjnego, można określić, jakiego rodzaju dane jest prawidłowy w języku, który pasuje do Twojej domeny. Można zdefiniować prawidłowe dane w modelu, lub można dodać sprawdzanie poprawności do operacji wykonywanych w usłudze jednostki lub danych.
+Korzystając z modelu koncepcyjnego, można określić, jakiego rodzaju dane są prawidłowe w języku zgodnym z Twoją domeną. Można zdefiniować prawidłowe dane w modelu lub można dodać sprawdzanie poprawności operacji wykonywanych w ramach jednostki lub usługi danych.
 
- Poniższe tematy przedstawiają sposób dodawania sprawdzania poprawności do aplikacji WCF Data Services.
-
-|Temat|Opis|
-|-----------|-----------------|
-|[Instrukcje: Przechwytywanie wiadomości usługi danych](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Pokazuje, jak dodać sprawdzanie poprawności do operacji usługi danych.|
-
- W następujących tematach opisano sposób tworzenia, aktualizacji i usuwania danych, wykonując operacje na jednostkach.
+W poniższych tematach pokazano, jak dodać sprawdzanie poprawności do aplikacji Usługi danych programu WCF.
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Instrukcje: Dodawanie, modyfikowanie i usuwanie jednostek](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Pokazuje, jak tworzenie, aktualizowanie i usuwanie danych jednostki w usłudze danych.|
-|[Instrukcje: Definiowanie relacji jednostek](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Pokazuje, jak tworzyć lub zmieniać relacje w niej danych.|
+|[Instrukcje: Komunikaty usługi przechwytywania danych](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Pokazuje, jak dodać weryfikację do operacji usługi danych.|
+
+ W poniższych tematach przedstawiono sposób tworzenia, aktualizowania i usuwania danych przez wykonywanie operacji na jednostkach.
+
+|Temat|Opis|
+|-----------|-----------------|
+|[Instrukcje: Dodawanie, modyfikowanie i usuwanie jednostek](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Pokazuje, jak tworzyć, aktualizować i usuwać dane jednostki w usłudze danych.|
+|[Instrukcje: Definiowanie relacji między jednostkami](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Pokazuje, jak utworzyć lub zmienić relacje w usłudze danych.|
 
 ## <a name="see-also"></a>Zobacz także
 

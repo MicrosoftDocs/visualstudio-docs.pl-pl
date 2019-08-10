@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f48f9cba146251aee1a58ffc7a3403ed899c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bdb8ef315c9702cc10352368aba7202a8f29f7f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541470"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920000"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Podaj poprawne argumenty metod formatowania
 
@@ -32,22 +32,22 @@ ms.locfileid: "62541470"
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- `format` Ciąg argumentu przekazanego do metody takie jak <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, lub <xref:System.String.Format%2A?displayProperty=fullName> nie zawiera elementu format, który odpowiada każdemu obiektowi argumentu lub odwrotnie.
+Argument ciągu przesłany do metody, takiej jak <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>lub <xref:System.String.Format%2A?displayProperty=fullName> nie zawiera elementu formatu odpowiadającego każdemu argumentowi obiektu lub na odwrót. `format`
 
 ## <a name="rule-description"></a>Opis reguły
- Argumenty do metod, takich jak <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, i <xref:System.String.Format%2A> składają się z kilku następuje ciąg formatu <xref:System.Object?displayProperty=fullName> wystąpień. Ciąg formatu, który składa się z tekstu i elementów formatu osadzonego w postaci {indeksu [, wyrównanie] [: formatString]}. "index", jest liczony od zera liczba całkowita, która wskazuje, które obiektów do sformatowania. Jeśli obiekt nie ma odpowiedni indeks w ciągu formatu, obiekt zostanie zignorowany. Jeśli w obiekcie określonym przez "index" nie istnieje, <xref:System.FormatException?displayProperty=fullName> jest generowany w czasie wykonywania.
+Argumenty metod <xref:System.Console.WriteLine%2A>, takich jak, i <xref:System.Console.Write%2A> <xref:System.String.Format%2A> składają się z ciągu formatu, po którym następuje kilka <xref:System.Object?displayProperty=fullName> wystąpień. Ciąg formatu składa się z tekstu i osadzonych elementów formatu w formularzu {index [, Alignment] [: formatString]}. "index" to liczba całkowita oparta na zero, która wskazuje, które obiekty mają być sformatowane. Jeśli obiekt nie ma odpowiedniego indeksu w ciągu formatu, obiekt jest ignorowany. Jeśli obiekt określony przez element "index" nie istnieje, <xref:System.FormatException?displayProperty=fullName> jest generowany w czasie wykonywania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, podaje elementu formatu dla każdemu obiektowi argumentu i podać argument obiektu dla każdego elementu formatu.
+Aby naprawić naruszenie tej reguły, podaj element formatu dla każdego argumentu obiektu i podaj argument obiektu dla każdego elementu formatu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia dwa naruszenia reguły.
+W poniższym przykładzie przedstawiono dwa naruszenia reguły.
 
- [!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
- [!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]
+[!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
+[!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]

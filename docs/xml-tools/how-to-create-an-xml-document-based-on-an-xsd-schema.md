@@ -8,44 +8,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783333"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918564"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Instrukcje: Tworzenie dokumentu XML na podstawie schematu XSD
 
-**Generowanie XML przykładowe** funkcja generuje przykładowy plik XML na podstawie pliku schematu XML (XSD).
+Funkcja **Generuj przykładowy kod XML** generuje przykładowy plik XML na podstawie pliku schematu XML (XSD).
 
- Tej opcji można użyć w następujących scenariuszach:
+Tej opcji można użyć w następujących scenariuszach:
 
-- Aby poznać użycie różnych konstrukcji w schemacie.
+- Zrozumienie użycia różnych konstrukcji w schemacie.
 
-- Aby upewnić się, że schemat wykonuje co ma na celu.
+- , Aby upewnić się, że schemat jest przeznaczony do wykonania.
 
-**Generowanie XML przykładowe** funkcja jest dostępna tylko na elementy globalne i wymaga prawidłowego zestawu schematu XML.
+Funkcja **Generuj przykładowy kod XML** jest dostępna tylko dla elementów globalnych i wymaga prawidłowego zestawu schematu XML.
 
-Ta funkcja generuje zwykle ważnych dokumentów XML. Jednakże, jeśli schemat zawiera co najmniej jeden z następujących czynności, próbki mogą być nieprawidłowe:
+Ta funkcja zwykle generuje prawidłowe dokumenty XML. Jeśli jednak schemat zawiera co najmniej jeden z poniższych elementów, przykład może być nieprawidłowy:
 
-- `xs:key`, `xs:keyref`, I `xs:unique` ograniczenia tożsamości.
+- Ograniczenia tożsamości `xs:keyref`,i `xs:unique` . `xs:key`
 
-- `xs:pattern` zestawy reguł.
+- `xs:pattern`Facets.
 
-- Wyliczenia o `xs:QName` typu.
+- `xs:QName` Wyliczenia typu.
 
-- `xs:ENTITY`, `xs:ENTITIES`, i `xs:NOTATION` typów.
+- `xs:ENTITY`, `xs:ENTITIES`i .`xs:NOTATION`
 
-Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerowany tylko wtedy, gdy wyliczenia występują w schematu dla tego typu.
+Należy również pamiętać, `xs:base64Binary` że zawartość zostanie wygenerowana tylko wtedy, gdy w schemacie tego typu wystąpiły wyliczenia.
 
-## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Można wygenerować wystąpienia dokumentu XML na podstawie pliku XSD
+## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Aby wygenerować dokument wystąpienia XML na podstawie pliku XSD
 
-1. Postępuj zgodnie z instrukcjami w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Wykonaj kroki opisane w [temacie How to: Tworzenie i edytowanie pliku](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)schematu XSD.
 
-2. W [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), kliknij prawym przyciskiem myszy `PurchaseOrder` element globalny. Wybierz **wygenerować przykładowy kod XML**.
+2. W [Eksploratorze schematu XML](../xml-tools/xml-schema-explorer.md), kliknij `PurchaseOrder` prawym przyciskiem myszy element globalny. Wybierz pozycję **Generuj przykładowy kod XML**.
 
-     Po wybraniu tej opcji, PurchaseOrder. *xml* pliku o następującej zawartości XML przykładowych zostanie wygenerowany i otwarty w edytorze XML:
+     Po wybraniu tej opcji PurchaseOrder. plik *XML* z następującą przykładową zawartością XML zostanie wygenerowany i otwarty w edytorze XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

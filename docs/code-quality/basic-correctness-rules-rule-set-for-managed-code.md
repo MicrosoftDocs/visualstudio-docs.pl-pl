@@ -8,17 +8,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560054"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919568"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Podstawowy zestaw reguł poprawności dla zarządzanego kodu
-Zestaw reguł podstawowych reguł poprawności koncentruje się na błędów logicznych i typowych pomyłek popełnianych framework interfejsów API. Podstawowe reguły poprawności obejmują reguły w co najmniej zalecany zestaw reguł. Aby uzyskać więcej informacji, zobacz [zarządzany zalecany zestaw reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) należy dołączyć ten zestaw reguł, aby rozszerzyć listę ostrzeżeń, że minimalna zalecana raportu reguł.
+Zestaw reguł prawidłowości podstawowych reguł poprawności koncentruje się na błędach logiki i często występujących pomyłek w korzystaniu z interfejsów API platformy. Podstawowe reguły poprawności obejmują reguły w minimalnym zalecanym zestawie reguł. Aby uzyskać więcej informacji, zobacz [zarządzany zalecany reguły zestawu reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) należy uwzględnić ten zestaw reguł do rozwinięcia na liście ostrzeżeń, które są raportowane przez minimalne zalecane reguły.
 
- W poniższej tabeli opisano wszystkie reguły w zestawie reguł podstawowe reguły poprawności firmy Microsoft.
+Poniższa tabela zawiera opis wszystkich reguł w zestawie reguł poprawności podstawowych firmy Microsoft.
 
 |Reguła|Opis|
 |----------|-----------------|

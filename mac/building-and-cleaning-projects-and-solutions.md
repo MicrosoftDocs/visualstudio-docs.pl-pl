@@ -1,49 +1,49 @@
 ---
-title: Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio dla komputerów Mac
-description: W tym artykule opisano sposób tworzenia projektu w programie Visual Studio dla komputerów Mac
+title: Kompilowanie oraz oczyszczanie projektów i rozwiązań
+description: W tym artykule opisano sposób tworzenia projektu w Visual Studio dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 6ebe7bb7310129a666422dff5c5e7b86558f96d8
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: b69bdbacc9b6d8d19dd3ce7abbc9b2a822a48f07
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693148"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872268"
 ---
-# <a name="building-and-cleaning-projects-and-solutions"></a>Kompilowanie oraz Oczyszczanie projektów i rozwiązań
+# <a name="building-and-cleaning-projects-and-solutions"></a>Kompilowanie i czyszczenie projektów i rozwiązań
 
-Wykonaj kroki opisane w tym artykule, aby dowiedzieć się, jak tworzyć, ponownie utworzyć i oczyścić swoje rozwiązania i projektu.
+Wykonaj kroki opisane w tym artykule, aby dowiedzieć się, jak skompilować, skompilować i wyczyścić rozwiązanie i projekt.
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Do kompilacji, odbudować lub Wyczyść całe rozwiązanie
 
-Aby skompilować, odbudować lub Wyczyść całe rozwiązanie:
+Aby skompilować, skompilować lub wyczyścić całe rozwiązanie:
 
-1. Wybierz węzeł rozwiązania w konsoli rozwiązania:
+1. Wybierz węzeł rozwiązania w okienko rozwiązania:
 
-    ![Wybranie węzła rozwiązania](media/compiling-and-building-image1.png)
+    ![Wybieranie węzła rozwiązania](media/compiling-and-building-image1.png)
 
-2. W pasku Menu wybierz Menu kompilacji, a następnie wybierz jedno z następujących opcji:
+2. Wybierz menu Kompilacja na pasku menu, a następnie wybierz jedną z następujących opcji:
 
-    ![wybierając wszystkie elementy menu kompilacji](media/compiling-and-building-image2.png)
+    ![Wybieranie elementu menu Kompiluj wszystko](media/compiling-and-building-image2.png)
 
-    * **Kompiluj wszystko** -próbuje kompilacji wszystkie pliki w obrębie projektu, które zostały zmienione w projekcie od najnowszych kompilacji.
-    * **Kompiluj wszystko ponownie** — czyści rozwiązania, a następnie kompiluje go.
+    * **Kompiluj wszystko** — próbuje skompilować wszystkie pliki w projekcie, które uległy zmianie w projekcie od czasu ostatniej kompilacji.
+    * **Kompiluj ponownie wszystko** — czyści rozwiązanie, a następnie kompiluje je.
     * **Wyczyść wszystko** — usuwa wszystkie produkty kompilacji z rozwiązania.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Aby skompilować lub ponownie skompilować pojedynczego projektu
 
-1. W konsoli rozwiązania wybierz projekt.
+1. W okienko rozwiązania wybierz projekt.
 
-2. Na pasku menu wybierz polecenie Kompiluj, a następnie wybierz albo kompilacji [nazwa_projektu], [nazwa_projektu] odbudować lub wyczyścić [nazwa_projektu].
+2. Na pasku menu wybierz kompilacja, a następnie wybierz pozycję kompilacja [ProjectName], Skompiluj ponownie [ProjectName] lub wyczyść [ProjectName].
 
 ## <a name="to-stop-a-build"></a>Aby zatrzymać kompilację
 
-Aby zatrzymać kompilację, naciśnij czerwony kwadrat w obszarze stanu:
+Aby zatrzymać kompilację, naciśnij czerwony kwadrat w obszarze Stan:
 
-![Naciśnij klawisz czerwonego kwadratu można zatrzymać kompilacji](media/compiling-and-building-image3.png)
+![Naciśnij czerwony kwadrat, aby zatrzymać kompilację](media/compiling-and-building-image3.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Kompilowanie i czyszczenie projektów i rozwiązań (Visual Studio Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)
+- [Twórz i czyść projekty i rozwiązania (Visual Studio w systemie Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

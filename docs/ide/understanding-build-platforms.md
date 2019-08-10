@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c95a460f7e3003db5cdec67e5bf142295719a
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416928"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925828"
 ---
 # <a name="understand-build-platforms"></a>Opis platform kompilacji
 
@@ -30,9 +30,11 @@ Można przechowywać różne wersje rozwiązań i właściwości projektu, któr
 
 ## <a name="in-this-section"></a>W tej sekcji
 
- [Instrukcje: Konfiguracja projektów na platformach](../ide/how-to-configure-projects-to-target-platforms.md) docelowych wyjaśnia, jak skonfigurować projekt jako docelowy określonej platformy.
+[Instrukcje: Skonfiguruj projekty na platformach docelowych](../ide/how-to-configure-projects-to-target-platforms.md)\
+Wyjaśnia, jak skonfigurować projekt jako docelowy określonej platformy.
 
- [Instrukcje: Konfigurowanie projektów przeznaczonych do użycia](../ide/how-to-configure-projects-to-target-multiple-platforms.md) na wielu platformach wyjaśnia, jak skonfigurować projekt jako docelowy dla wielu platform.
+[Instrukcje: Skonfiguruj projekty na wiele platform docelowych](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+Wyjaśniono, jak skonfigurować projekt przeznaczony do użycia na wielu platformach.
 
 ## <a name="see-also"></a>Zobacz także
 

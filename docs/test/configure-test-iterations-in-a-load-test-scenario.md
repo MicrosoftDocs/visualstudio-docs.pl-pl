@@ -10,12 +10,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cce1da2d3cb20ca7f577c806d0506ffc0b947903
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783804"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918275"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurowanie iteracji testowych w scenariuszu testu obciążenia
 
@@ -32,18 +32,18 @@ Można określić maksymalną liczbę razy, które mają testów do uruchamiania
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
- W przypadku sekwencyjnych testu mieszanego jednej iteracji jest jeden przekazuj wszystkie testy w asortymencie. Dla wszystkich innych mieszanki testów każdego wykonania testu jest liczona jako iteracji. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+W przypadku sekwencyjnych testu mieszanego jednej iteracji jest jeden przekazuj wszystkie testy w asortymencie. Dla wszystkich innych mieszanki testów każdego wykonania testu jest liczona jako iteracji. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Jeśli test obciążenia jest test obciążenia opartego na czasie trwania i wygaśnięciu czasu trwania przed zakończeniem liczbę iteracji, test nadal zostanie zatrzymane. Jeśli test jest oparte na iteracji i iteracjami testu są spełnione przed iteracji w scenariuszu, test zostanie zatrzymane. Czas trwania jest konfigurowana przy użyciu **czas trwania uruchomienia** właściwość **właściwości** okna skojarzonych ustawieniach testu w teście obciążeniowym.
+Jeśli test obciążenia jest test obciążenia opartego na czasie trwania i wygaśnięciu czasu trwania przed zakończeniem liczbę iteracji, test nadal zostanie zatrzymane. Jeśli test jest oparte na iteracji i iteracjami testu są spełnione przed iteracji w scenariuszu, test zostanie zatrzymane. Czas trwania jest konfigurowana przy użyciu **czas trwania uruchomienia** właściwość **właściwości** okna skojarzonych ustawieniach testu w teście obciążeniowym.
 
- Po spełnieniu scenariusz liczby iteracji scenariusza przestanie działać, ale inne scenariusze active będą nadal działać.
+Po spełnieniu scenariusz liczby iteracji scenariusza przestanie działać, ale inne scenariusze active będą nadal działać.
 
 > [!NOTE]
 > Powiązane właściwości **unikatowe** właściwości w źródle danych testu sieci web, która przenosi sekwencyjnie przez dane, wiersz po wierszu, ale tylko jeden raz dla każdego rekordu. Aby uzyskać więcej informacji, zobacz [Dodawanie źródła danych do testu wydajności sieci web](../test/add-a-data-source-to-a-web-performance-test.md).
 
- **Maksymalna liczba iteracji testu** właściwość jest przydatna dla wielu różnych sytuacjach. Testerzy obciążenia wolą należy przeprowadzić testowanie oparte na iteracji, natomiast inne obciążenia testerów Preferuj przeprowadzenie testowania opartego na czasie trwania.
+**Maksymalna liczba iteracji testu** właściwość jest przydatna dla wielu różnych sytuacjach. Testerzy obciążenia wolą należy przeprowadzić testowanie oparte na iteracji, natomiast inne obciążenia testerów Preferuj przeprowadzenie testowania opartego na czasie trwania.
 
- ![Określanie iteracji testowych w scenariuszu](../test/media/loadtest_prop.png)
+![Określanie iteracji testowych w scenariuszu](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Aby określić, maksymalna liczba iteracji testu
 

@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a03096e92f2a5da98da2d1850f505c65eb5b6e27
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823446"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918621"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności wirtualnego użytkownika testów obciążenia w widoku szczegółów analizatora testu obciążenia
 
@@ -31,19 +31,19 @@ ms.locfileid: "62823446"
 > [!NOTE]
 > Przed uruchomieniem testu obciążeniowego, dla którego chcesz użyć **wykres szczegóły aktywności wirtualnych użytkowników**, należy sprawdzić, czy **przechowywanie informacji** właściwość jest ustawiona na  **AllIndividualDetails** opcji za pomocą edytora testu obciążenia wydajności.
 
- **Legenda szczegółów — Panel**
+**Legenda szczegółów — Panel**
 
- ![Legenda szczegółów — panel](../test/media/ltest_detailslegend.png)
+![Legenda szczegółów — panel](../test/media/ltest_detailslegend.png)
 
- Legenda szczegółów — panel jest widoczna w **wykres aktywności wirtualnych użytkowników**. Szczegóły legendy okienko pozwala filtrować testy, strony i transakcje na podstawie kilku różnych kryteriów. Na przykład możesz usunąć niektóre testy z widoku, lub Usuń wszystkie testy zakończone powodzeniem lub usunąć testów, których nie powiodła się z pewnych błędów. Można również usunąć wszystkie testy, które nie mają dzienniki.
+Legenda szczegółów — panel jest widoczna w **wykres aktywności wirtualnych użytkowników**. Szczegóły legendy okienko pozwala filtrować testy, strony i transakcje na podstawie kilku różnych kryteriów. Na przykład możesz usunąć niektóre testy z widoku, lub Usuń wszystkie testy zakończone powodzeniem lub usunąć testów, których nie powiodła się z pewnych błędów. Można również usunąć wszystkie testy, które nie mają dzienniki.
 
- Można wyróżnić testy, których nie powiodła się, powoduje wyświetlenie wszystkich testów zakończonych niepowodzeniem pokolorowane w kolorze czerwonym. Można również wyróżnić testy, które mają dzienników testu. Testy za pomocą dzienników będą kolorowane w kolorze zielonym.
+Można wyróżnić testy, których nie powiodła się, powoduje wyświetlenie wszystkich testów zakończonych niepowodzeniem pokolorowane w kolorze czerwonym. Można również wyróżnić testy, które mają dzienników testu. Testy za pomocą dzienników będą kolorowane w kolorze zielonym.
 
- **Filtrowanie wyników Panel**
+**Filtrowanie wyników Panel**
 
- ![Panel wyników filtrowania](../test/media/ltest_filterresults.png)
+![Panel wyników filtrowania](../test/media/ltest_filterresults.png)
 
- Panel wyników filtru jest widoczny w **wykres aktywności wirtualnych użytkowników**. Panel wyników filtrowania można filtrować od następujących czynników:
+Panel wyników filtru jest widoczny w **wykres aktywności wirtualnych użytkowników**. Panel wyników filtrowania można filtrować od następujących czynników:
 
 - **Pokaż tylko wyniki z dziennikami** wyświetla tylko wyniki, które mają dzienniki testów skojarzonych z nimi.
 
@@ -55,9 +55,9 @@ ms.locfileid: "62823446"
 
 |Zadania|Skojarzone tematy|
 |-|-|
-|**Uruchom test obciążenia:** Po utworzeniu testu obciążenia i skonfigurować go, aby włączyć zbieranie danych aktywności wirtualnego użytkownika, należy uruchomić test do czasu jego zakończenia w celu wyświetlenia **wykres aktywności wirtualnych użytkowników**.||
-|**Wyświetl wyniki testu obciążenia, które zawierają dane o aktywności użytkownika wirtualnego:** Po testu obciążenia zostało utworzone, skonfigurowane i zakończy działanie, można wyświetlić dane o aktywności wirtualnego użytkownika za pomocą **wykres aktywności wirtualnych użytkowników**.|-   [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Jak: Analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Wyizolować problemy z wydajnością w testach obciążenia:** Możesz użyć **wykres aktywności wirtualnych użytkowników** Aby wyizolować problemy z wydajnością w teście obciążenia.|-   [Wskazówki: Za pomocą wykresu aktywności wirtualnego użytkownika umożliwiającego Wyizolowanie problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Uruchom test obciążenia:** Po utworzeniu testu obciążenia i skonfigurowaniu go w celu umożliwienia zbierania danych aktywności wirtualnego użytkownika należy uruchomić test do momentu jego zakończenia, aby wyświetlić **Wykres aktywności wirtualnego użytkownika**.||
+|**Wyświetl wyniki testu obciążenia zawierające dane dotyczące wirtualnego działania użytkownika:** Po utworzeniu, skonfigurowaniu i zakończeniu testu obciążenia można wyświetlić dane dotyczące aktywności wirtualnego użytkownika za pomocą **wykresu aktywności wirtualnego użytkownika**.|-   [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Jak: Analizowanie, co robią Użytkownicy wirtualną podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Izolowanie problemów z wydajnością w testach obciążenia:** Za pomocą **wykresu aktywności wirtualnego użytkownika** można wyizolować problemy z wydajnością w teście obciążenia.|-   [Instruktaż Używanie wykresu aktywności wirtualnego użytkownika w celu wyizolowania problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461640"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926170"
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 
 Strona **Publikowanie** **projektanta projektu** służy do konfigurowania właściwości wdrażania ClickOnce.
 
- Aby uzyskać dostęp do strony **Publikowanie** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **Publikowanie** .
+Aby uzyskać dostęp do strony **Publikowanie** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **Publikowanie** .
 
 > [!NOTE]
 > Niektóre z opisanych tutaj właściwości ClickOnce można także ustawić w **PublishWizard**, dostępne w menu **kompilacja** lub klikając przycisk **PublishWizard** na tej stronie.
@@ -33,51 +33,51 @@ Strona **Publikowanie** **projektanta projektu** służy do konfigurowania wła�
 
  **Lokalizacja folderu publikowania**
 
- Określa lokalizację, w której aplikacja jest publikowana. Może to być ścieżka dysku (`C:\deploy\myapplication`), udział plików (`\\server\myapplication`) lub serwer FTP (`ftp://ftp.microsoft.com/myapplication`). Zwróć uwagę, że tekst musi być obecny w polu **Lokalizacja publikowania** , aby można było wykonać przycisk Przeglądaj ( **...** ).
+Określa lokalizację, w której aplikacja jest publikowana. Może to być ścieżka dysku (`C:\deploy\myapplication`), udział plików (`\\server\myapplication`) lub serwer FTP (`ftp://ftp.microsoft.com/myapplication`). Zwróć uwagę, że tekst musi być obecny w polu **Lokalizacja publikowania** , aby można było wykonać przycisk Przeglądaj ( **...** ).
 
  **Adres URL folderu instalacji**
 
- Opcjonalny. Określa witrynę sieci Web, do której użytkownicy przejdą w celu zainstalowania aplikacji. Jest to konieczne tylko wtedy, gdy różni się od **lokalizacji publikowania**, na przykład po opublikowaniu aplikacji na serwerze przejściowym.
+Opcjonalny. Określa witrynę sieci Web, do której użytkownicy przejdą w celu zainstalowania aplikacji. Jest to konieczne tylko wtedy, gdy różni się od **lokalizacji publikowania**, na przykład po opublikowaniu aplikacji na serwerze przejściowym.
 
  **Tryb instalacji i ustawienia**
 
- Określa, czy aplikacja jest uruchamiana bezpośrednio z **lokalizacji publikowania** (gdy **aplikacja jest dostępna w trybie online** jest zaznaczona) lub jest zainstalowana i dodawana do menu **Start** oraz do apletu **Dodaj lub usuń programy** w **Panel sterowania** (gdy **aplikacja jest dostępna w trybie offline, a także** jest zaznaczona).
+Określa, czy aplikacja jest uruchamiana bezpośrednio z **lokalizacji publikowania** (gdy **aplikacja jest dostępna w trybie online** jest zaznaczona) lub jest zainstalowana i dodawana do menu **Start** oraz do apletu **Dodaj lub usuń programy** w **Panel sterowania** (gdy **aplikacja jest dostępna w trybie offline, a także** jest zaznaczona).
 
- W przypadku aplikacji przeglądarki sieci Web WPF **aplikacja jest dostępna w trybie offline** , a opcja jest wyłączona, ponieważ takie aplikacje są dostępne tylko w trybie online.
+W przypadku aplikacji przeglądarki sieci Web WPF **aplikacja jest dostępna w trybie offline** , a opcja jest wyłączona, ponieważ takie aplikacje są dostępne tylko w trybie online.
 
  **Pliki aplikacji**
 
- Otwiera okno dialogowe pliki aplikacji, w którym można określić, w jaki sposób i gdzie są instalowane poszczególne pliki.
+Otwiera okno dialogowe pliki aplikacji, w którym można określić, w jaki sposób i gdzie są instalowane poszczególne pliki.
 
  **Wymagania wstępne**
 
- Otwiera okno dialogowe wymagania wstępne, które służy do określania składników wymaganych wstępnie, takich jak .NET Framework, które mają być instalowane razem z aplikacją.
+Otwiera okno dialogowe wymagania wstępne, które służy do określania składników wymaganych wstępnie, takich jak .NET Framework, które mają być instalowane razem z aplikacją.
 
  **Aktualizacje**
 
- Otwiera okno dialogowe aktualizacje aplikacji, w którym można określić zachowanie aktualizacji dla aplikacji. Niedostępne, gdy **aplikacja jest dostępna tylko w trybie online** jest zaznaczona.
+Otwiera okno dialogowe aktualizacje aplikacji, w którym można określić zachowanie aktualizacji dla aplikacji. Niedostępne, gdy **aplikacja jest dostępna tylko w trybie online** jest zaznaczona.
 
  **Opcje**
 
- Otwiera okno dialogowe Opcje publikowania, które służy do określania dodatkowych opcji publikowania zaawansowanego.
+Otwiera okno dialogowe Opcje publikowania, które służy do określania dodatkowych opcji publikowania zaawansowanego.
 
  **Wersja publikacji**
 
- Ustawia numer wersji publikacji dla aplikacji; po zmianie numeru wersji aplikacja zostanie opublikowana jako aktualizacja. Każda część wersji publikacji (**główna**, pomocnicza , **kompilacja**, **poprawka**) może mieć maksymalną wartość 65355 (<xref:System.UInt16.MaxValue>), maksymalną dozwoloną przez. <xref:System.Version>
+Ustawia numer wersji publikacji dla aplikacji; po zmianie numeru wersji aplikacja zostanie opublikowana jako aktualizacja. Każda część wersji publikacji (**główna**, pomocnicza, **kompilacja**, **poprawka**) może mieć maksymalną wartość 65355 (<xref:System.UInt16.MaxValue>), maksymalną dozwoloną przez. <xref:System.Version>
 
- Po zainstalowaniu więcej niż jedna wersja aplikacji przy użyciu technologii ClickOnce, instalacja przemieszcza inne wersje aplikacji do folderu o nazwie archiwum, w lokalizacji publikowania, który określisz. Archiwizowanie starszych w ten sposób utrzymuje katalogu instalacyjnyego folderów z wcześniejszych wersji.
+Po zainstalowaniu więcej niż jedna wersja aplikacji przy użyciu technologii ClickOnce, instalacja przemieszcza inne wersje aplikacji do folderu o nazwie archiwum, w lokalizacji publikowania, który określisz. Archiwizowanie starszych w ten sposób utrzymuje katalogu instalacyjnyego folderów z wcześniejszych wersji.
 
  **Automatycznie Zwiększ numer poprawki przy każdej publikacji**
 
- Opcjonalny. Gdy ta opcja jest zaznaczona (wartość domyślna), część **poprawki** numeru wersji publikacji jest zwiększana o jeden po opublikowaniu aplikacji. Powoduje to opublikowanie aplikacji jako aktualizacji.
+Opcjonalny. Gdy ta opcja jest zaznaczona (wartość domyślna), część **poprawki** numeru wersji publikacji jest zwiększana o jeden po opublikowaniu aplikacji. Powoduje to opublikowanie aplikacji jako aktualizacji.
 
  **Kreator publikacji**
 
- Otwiera Kreatora publikacji. Ukończenie działania Kreatora publikacji ma taki sam skutek jak uruchomienie polecenia **Publikuj** w menu **kompilacja** .
+Otwiera Kreatora publikacji. Ukończenie działania Kreatora publikacji ma taki sam skutek jak uruchomienie polecenia **Publikuj** w menu **kompilacja** .
 
  **Publikuj teraz**
 
- Publikuje aplikację przy użyciu bieżących ustawień. Odpowiednik przycisku **Zakończ** w **PublishWizard**.
+Publikuje aplikację przy użyciu bieżących ustawień. Odpowiednik przycisku **Zakończ** w **PublishWizard**.
 
 ## <a name="see-also"></a>Zobacz także
 

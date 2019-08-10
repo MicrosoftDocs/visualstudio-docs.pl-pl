@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3b17ad3449bebcab57344355f7cc7687ea6b19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca39cef1fb4f1bf1114673dd96a91a1ac8e105cc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541080"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919875"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Niezabezpieczone przetwarzanie w elemencie Design interfejsu API, dokumencie XML i czytniku tekstu dla kodu XML
 
@@ -22,30 +22,30 @@ ms.locfileid: "62541080"
 |TypeName|InsecureDTDProcessingInAPIDesign|
 |CheckId|CA3077|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Podczas projektowania interfejsu API pochodną klasy XMLDocument i klasy XMLTextReader, można w trosce o <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Za pomocą niezabezpieczonego wystąpień XmlReaderSettings, gdy odwołuje się do rozpoznawania jednostek zewnętrznych źródeł lub ustawiania wartości niebezpieczne w XML może prowadzić do ujawnienia informacji.
+Podczas projektowania interfejsu API pochodnego od XmlDocument i XMLTextReader należy mieć na <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>uwadze.  Używanie niezabezpieczonych wystąpień DTDProcessing w przypadku odwoływania się do lub rozpoznawania zewnętrznych źródeł jednostek lub ustawiania niezabezpieczonych wartości w kodzie XML może prowadzić do ujawnienia informacji.
 
 ## <a name="rule-description"></a>Opis reguły
- A *definicji typu dokumentu (DTD)* jest jeden z dwóch sposobów analizatora XML można określić ważności dokumentu, zgodnie z definicją [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła szuka właściwości i wystąpienia, gdzie niezaufanych danych jest akceptowany w celu otrzymania deweloperów o potencjalnych [ujawnienie informacji](/dotnet/framework/wcf/feature-details/information-disclosure) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataków. Ta zasada wyzwala, gdy:
+*Definicja typu dokumentu (DTD)* to jeden z dwóch sposobów, przez który parser XML może ustalić ważność dokumentu, zgodnie z definicją [organizacja World Wide Web Consortium (W3C) XML (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła umożliwia wyszukiwanie właściwości i wystąpień, w przypadku których niezaufane dane są akceptowane, aby ostrzec deweloperów o potencjalnych zagrożeniach związanych z [ujawnianiem informacji](/dotnet/framework/wcf/feature-details/information-disclosure) , co może prowadzić do ataków [typu "odmowa usługi" (DOS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Ta zasada wyzwala następujące wyzwalacze:
 
-- <xref:System.Xml.XmlDocument> lub <xref:System.Xml.XmlTextReader> klasy używać domyślnego programu rozpoznawania nazw wartości przetwarzanie elementu DTD.
+- <xref:System.Xml.XmlDocument>lub <xref:System.Xml.XmlTextReader> klasy używają domyślnych wartości programu rozpoznawania nazw do przetwarzania DTD.
 
-- Żaden konstruktor nie jest zdefiniowany dla obiektu XmlDocument klasy pochodne klasy XmlTextReader lub nie bezpieczne jest wykorzystywana do <xref:System.Xml.XmlResolver>.
+- Nie zdefiniowano konstruktora dla klas pochodnych XmlDocument lub XmlTextReader lub nie jest używana bezpieczna wartość dla <xref:System.Xml.XmlResolver>.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-- CATCH i przetwórz wszystkie wyjątki klasy XmlTextReader poprawnie, aby uniknąć ujawnienia informacji ścieżki.
+- Należy prawidłowo przechwycić i przetworzyć wszystkie wyjątki XmlTextReader, aby uniknąć ujawnienia informacji o ścieżce.
 
-- Użyj <xref:System.Xml.XmlSecureResolver>zamiast element XmlResolver do ograniczania zasobów, mogą uzyskiwać dostęp do klasy XmlTextReader.
+- Użyj <xref:System.Xml.XmlSecureResolver>zamiast XmlResolver, aby ograniczyć zasoby, do których XmlTextReader może uzyskać dostęp.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jeśli nie masz pewności, że dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z tego ostrzeżenia.
+Jeśli nie masz pewności, że dane wejściowe są znane z zaufanego źródła, nie pomijaj reguły z tego ostrzeżenia.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;

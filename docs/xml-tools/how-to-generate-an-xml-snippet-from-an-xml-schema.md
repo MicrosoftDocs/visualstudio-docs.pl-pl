@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825765"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926819"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML
 
-Edytor XML ma możliwość generowania fragmentów kodu XML na podstawie schematu języka (XSD) definicji schematu XML. Na przykład, jak podczas umieszczony obok nazwy elementu tworzenia pliku XML, możesz nacisnąć przycisk **kartę** do wypełniania elementu z danymi XML wygenerowany na podstawie informacji o schemacie dla tego elementu.
+Edytor XML ma możliwość generowania fragmentów kodu XML z schematu języka definicji schematu XML (XSD). Na przykład podczas tworzenia pliku XML, gdy jest umieszczony obok nazwy elementu, można nacisnąć klawisz **Tab** , aby wypełnić element danymi XML wygenerowanymi na podstawie informacji o schemacie dla tego elementu.
 
-Ta funkcja jest dostępna tylko w przypadku elementów. Ponadto obowiązują następujące reguły:
+Ta funkcja jest dostępna tylko dla elementów. Obowiązują również następujące reguły:
 
-- Element musi mieć powiązany typ schematu; oznacza to, że element musi być prawidłowa dla niektórych skojarzonego schematu. Typ schematu nie może być abstrakcyjny i typ musi zawierać wymaganych atrybutów i/lub wymaganych elementów podrzędnych.
+- Element musi mieć skojarzony typ schematu; oznacza to, że element musi być prawidłowy zgodnie z niezależnym schematem. Typ schematu nie może być abstrakcyjny, a typ musi zawierać wymagane atrybuty i/lub wymagane elementy podrzędne.
 
-- Bieżący element w edytorze może być pusty, bez atrybutów. Na przykład poniżej przedstawiono wszystkie ważne
+- Bieżący element w edytorze musi być pusty bez atrybutów. Na przykład wszystkie następujące są prawidłowe
 
   - `<Account`
 
@@ -31,68 +31,68 @@ Ta funkcja jest dostępna tylko w przypadku elementów. Ponadto obowiązują nas
 
   - `<Account></Account>`
 
-- Kursor musi znajdować się natychmiast na prawo od nazwy elementu.
+- Kursor musi znajdować się bezpośrednio z prawej strony nazwy elementu.
 
-Wygenerowany fragment kodu zawiera wszystkie wymagane atrybuty i elementy. Jeśli `minOccurs` jest większa niż jeden, minimalna wymagana liczba wystąpień tego elementu znajduje się we fragmencie, maksymalnie 100 wystąpień. Naprawiono dowolnej wartości znajdujące się w wyniku schematu w stałych wartości w tym fragmencie kodu. `xsd:any` i `xsd:anyAttribute` elementy są ignorowane i spowodować konstrukcje nie dodatkowe fragmentu kodu.
+Wygenerowany fragment kodu zawiera wszystkie wymagane atrybuty i elementy. Jeśli `minOccurs` jest większa niż jeden, wymagana minimalna liczba wystąpień tego elementu jest dołączana do fragmentu kodu, maksymalnie 100 wystąpień. Wszystkie ustalone wartości Znalezione w schemacie powodują stałe wartości w fragmencie kodu. `xsd:any`elementy `xsd:anyAttribute` i są ignorowane i nie powodują żadnych dodatkowych konstrukcji fragmentów kodu.
 
-Wartości domyślne są generowane i oznaczane jako wartości można edytować. Jeśli schemat określa wartość domyślną, ta wartość domyślna jest używana. Jednak jeśli wartości domyślne schematu jest pustym ciągiem, Edytor generuje wartości domyślne w następujący sposób:
+Wartości domyślne są generowane i zanotowane jako wartości edytowalne. Jeśli schemat określa wartość domyślną, używana jest ta wartość domyślna. Jeśli jednak wartość domyślna schematu jest pustym ciągiem, Edytor generuje wartości domyślne w następujący sposób:
 
-- Jeśli typ schematu zawiera wszystkie aspekty wyliczenia bezpośrednio lub pośrednio za pomocą dowolnego z elementów członkowskich typu złożenia, pierwsza wartość wyliczenia w modelu obiektów schematu jest używany jako domyślny.
+- Jeśli typ schematu zawiera wszelkie zestawy reguł wyliczenia, bezpośrednio lub pośrednio za pomocą któregokolwiek z elementów członkowskich typu Union pierwsza wartość wyliczana w modelu obiektu schematu jest używana jako domyślna.
 
-- Jeśli typ schematu, który jest typem niepodzielnym, Edytor pobiera typ niepodzielny i wstawia nazwę typu atomic. Dla typu prostego pochodnej używa podstawowego typu prostego. Typ listy Typ niepodzielny to `itemType`. Dla Unii, typ niepodzielny to typ niepodzielny pierwszego `memberType`.
+- Jeśli typ schematu jest typem niepodzielnym, Edytor pobiera typ niepodzielny i wstawia nazwę typu niepodzielnego. Dla pochodnego typu prostego używa podstawowego typu prostego. Dla typu listy typ niepodzielny to `itemType`. Dla Unii, typ niepodzielny jest typem niepodzielnym pierwszego `memberType`.
 
 ## <a name="example"></a>Przykład
 
- Kroki opisane w tej sekcji pokazują, jak za pomocą funkcji fragment kodu XML generowanych przez schematu edytora XML.
+Kroki opisane w tej sekcji przedstawiają sposób użycia funkcji fragmentu kodu XML wygenerowanego przez schemat w edytorze XML.
 
 > [!NOTE]
-> Przed rozpoczęciem tych procedur, należy zapisać plik schematu na komputerze lokalnym.
+> Przed rozpoczęciem tych procedur Zapisz plik schematu na komputerze lokalnym.
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go z schematu XML
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go ze schematem XML
 
-1. Na **pliku** menu wskaż **New**i kliknij przycisk **pliku**.
+1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij polecenie **plik**.
 
-2. Wybierz **pliku XML** w **szablony** okienku i kliknij przycisk **Otwórz**.
+2. W okienku **Szablony** wybierz pozycję **plik XML** , a następnie kliknij pozycję **Otwórz**.
 
-     Nowy plik jest otwarty w edytorze. Ten plik zawiera deklarację XML domyślne `<?xml version="1.0" encoding="utf-8">`.
+     Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">`.
 
-3. W oknie dialogowym właściwości dokumentu, kliknij przycisk przeglądania ( **...** ) na **schematów** pola.
+3. W oknie właściwości dokumentu kliknij przycisk przeglądania ( **...** ) w polu **schematy** .
 
-     **Schematy XSD** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **schematy XSD** .
 
 4. Kliknij przycisk **Dodaj**.
 
-     **Otwieranie schematu XSD** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **otwieranie schematu XSD** .
 
 5. Wybierz plik schematu, a następnie kliknij przycisk **Otwórz**.
 
 6. Kliknij przycisk **OK**.
 
-     Schemat XML jest teraz skojarzone z dokumentem XML.
+     Schemat XML jest teraz skojarzony z dokumentem XML.
 
-### <a name="to-generate-an-xml-snippet"></a>Aby wygenerować fragmentu kodu XML
+### <a name="to-generate-an-xml-snippet"></a>Aby wygenerować fragment kodu XML
 
-1. Typ `<` w okienku edytora.
+1. Wpisz `<` w okienku edytora.
 
-2. Lista elementów członkowskich Wyświetla możliwych elementów:
+2. Lista członków wyświetla możliwe elementy:
 
-     **! —** Aby dodać komentarz.
+     **!--** dodać komentarz.
 
-     **! DOCTYPE** można dodać typu dokumentu.
+     **! DOCTYPE** , aby dodać typ dokumentu.
 
-     **?** Aby dodać instrukcji przetwarzania.
+     **?** w celu dodania instrukcji przetwarzania.
 
-     **Skontaktuj się z pomocą** można dodać elementu głównego.
+     **Skontaktuj się** z nami, aby dodać element główny.
 
-3. Wybierz **skontaktuj się z pomocą** listę elementów członkowskich i naciśnij klawisz **Enter**.
+3. Wybierz pozycję **kontakt** z listy członków i naciśnij klawisz **Enter**.
 
-     Edytor dodaje tag początkowy `<Contact` i umieszcza kursor po nazwie elementu.
+     Edytor dodaje tag `<Contact` początkowy i ustawia kursor po nazwie elementu.
 
-4. Naciśnij klawisz **kartę** do generowania danych XML dla `Contact` elementu na podstawie jego schematu informacji.
+4. Naciśnij klawisz **Tab** , aby wygenerować dane XML `Contact` dla elementu na podstawie jego informacji o schemacie.
 
 ## <a name="input"></a>Dane wejściowe
 
- Następujący plik schematu jest używany przez instruktażu.
+Przewodnik zawiera następujący plik schematu.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -141,7 +141,7 @@ Wartości domyślne są generowane i oznaczane jako wartości można edytować. 
 
 ### <a name="output"></a>Dane wyjściowe
 
- Poniżej przedstawiono dane XML, który jest generowany na podstawie informacji schematu skojarzone z `Contact` elementu. Elementy są oznaczone jako `bold` wyznaczyć edytowalnego pola we fragmencie kodu XML.
+Poniżej przedstawiono dane XML, które są generowane na podstawie informacji o schemacie skojarzonych z `Contact` elementem. Elementy oznaczone jako `bold` Wyznacz pola edytowalne w fragmencie kodu XML.
 
 ```xml
 <Contact>
@@ -156,5 +156,5 @@ Wartości domyślne są generowane i oznaczane jako wartości można edytować. 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Fragmentów kodu XML](../xml-tools/xml-snippets.md)
-- [Instrukcje: Używanie fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Fragmenty kodu XML](../xml-tools/xml-snippets.md)
+- [Instrukcje: Użyj fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md)

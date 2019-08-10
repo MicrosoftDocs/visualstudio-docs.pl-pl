@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791847"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926337"
 ---
 # <a name="alias-command"></a>Alias — Polecenie
 Tworzy nowy alias dla kompletnego polecenia, kompletne polecenie i argumenty lub inny alias.
 
 > [!TIP]
-> Wpisywanie `>alias` bez żadnych argumentów Wyświetla bieżącą listę aliasów i ich definicje.
+> Wpisywanie `>alias` bez żadnych argumentów wyświetla bieżącą listę aliasów i ich definicje.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,36 +36,40 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `aliasname` Opcjonalnie. Nazwa nowego pola alias. Jeśli nie dostarczono żadnej wartości dla `aliasname`, zostanie wyświetlona lista bieżących aliasów i ich definicje.
+`aliasname`\
+Opcjonalna. Nazwa nowego aliasu. Jeśli nie podano wartości dla `aliasname`, zostanie wyświetlona lista bieżących aliasów i ich definicji.
 
- `aliasstring` Opcjonalnie. Pełna nazwa polecenia lub istniejący alias i wszystkie parametry, które chcesz utworzyć jako alias. Jeśli nie dostarczono żadnej wartości dla `aliasstring`, nazwa aliasu i ciągi aliasów dla określonych aliasów Wyświetla.
+`aliasstring`\
+Opcjonalny. Pełna nazwa polecenia lub istniejący alias oraz wszystkie parametry, które chcesz utworzyć jako alias. Jeśli nie podano wartości dla `aliasstring`, zostanie wyświetlona nazwa aliasu i ciąg aliasu dla określonego aliasu.
 
 ## <a name="switches"></a>Przełączniki
- / DELETE lub/DEL lub /d atrybut opcjonalny. Usuwa określony alias, usuwając go z automatycznego uzupełniania.
+/DELETE lub/del lub/d\
+Opcjonalny. Usuwa określony alias, usuwając go z autouzupełniania.
 
- / reset atrybut opcjonalny. Resetuje listę wstępnie zdefiniowanych aliasów pierwotne ustawienia. Oznacza to, że przywraca wszystkie wstępnie zdefiniowane aliasy i usuwa wszystkie aliasy zdefiniowane przez użytkownika.
+/Reset
+Opcjonalny. Resetuje listę wstępnie zdefiniowanych aliasów do jej oryginalnych ustawień. Oznacza to, że przywraca wszystkie wstępnie zdefiniowane aliasy i usuwa wszystkie aliasy zdefiniowane przez użytkownika.
 
 ## <a name="remarks"></a>Uwagi
- Ponieważ aliasy stanowią polecenia, muszą być umieszczone na początku wiersza polecenia.
+Ponieważ aliasy reprezentują polecenia, muszą one znajdować się na początku wiersza polecenia.
 
- Po wykonaniu tego polecenia, należy uwzględnić przełączniki natychmiast po poleceniu nie po aliasach, w przeciwnym razie sam przełącznik zostanie dołączony jako część ciąg aliasu.
+Po wydaniu tego polecenia, należy uwzględnić przełączniki natychmiast po poleceniu, nie po aliasach, w przeciwnym razie sam przełącznik zostanie dołączony jako część ciągu aliasu.
 
- `/reset` Przełącznik prosi o potwierdzenie zanim aliasy zostaną przywrócone. Brak żadnych krótkich form `/reset`.
+`/reset` Przełącznik monituje o potwierdzenie przed przywróceniem aliasów. Nie ma żadnej krótkiej formy `/reset`.
 
 ## <a name="examples"></a>Przykłady
- Ten przykład tworzy nowy alias `upper`, dla pełnego polecenia Edit.MakeUpperCase.
+W tym przykładzie tworzony jest nowy alias `upper`, dla pełnego polecenia Edit. MakeUpperCase.
 
 ```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
- W tym przykładzie Usuwa alias, `upper`.
+Ten przykład usuwa alias, `upper`.
 
 ```cmd
 >Tools.alias /delete upper
 ```
 
- W tym przykładzie wyświetla listę wszystkich bieżących aliasów i definicji.
+Ten przykład wyświetla listę wszystkich bieżących aliasów i definicji.
 
 ```cmd
 >Tools.Alias

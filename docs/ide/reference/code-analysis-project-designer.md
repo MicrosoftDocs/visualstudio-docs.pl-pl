@@ -13,57 +13,57 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3271befd714f1b07c357426a931d62a7a854cbec
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 3c31617def66499e29c4c2fc3e2a1804e7446d9c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "66745005"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926259"
 ---
 # <a name="code-analysis-project-designer"></a>Analiza kodu, Projektant projektu
 
-Zawiera narzędzie do analizy kodu, które możesz zdecydować się na kodzie. Informacje o Twoje zestawy zgłaszanej przez narzędzie, takie jak naruszenia reguł programowania i projektowania określonych w ustawach wytyczne dotyczące projektowania Microsoft .NET.
+Zawiera narzędzie do analizy kodu, które można wybrać do uruchomienia w kodzie. Narzędzie raportuje informacje o zestawach, takie jak naruszenia reguł programowania i projektowania określonych w Microsoft .NET wytycznych dotyczących projektowania.
 
-## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+## <a name="uielement-list"></a>Lista elementów UIElement
 
- Włącz Analysis kodu\
- Włącza lub wyłącza analizy kodu dla projektu.
+Włącz Analysis kodu\
+Włącza lub wyłącza analizę kodu dla projektu.
 
- Projektowanie Rules\
- Włącza lub wyłącza reguły projektowania. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Reguły projektowania \
+Włącza lub wyłącza reguły projektowania. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Rules globalizacji\
- Włącza lub wyłącza reguły globalizacji. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Reguły globalizacji \
+Włącza lub wyłącza reguły globalizacji. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Współdziałanie Rules\
- Włącza lub wyłącza reguły międzyoperacyjności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Reguły współdziałania \
+Włącza lub wyłącza reguły współdziałania. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Łatwość konserwacji Rules\
- Włącza lub wyłącza reguły utrzymania kodu. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Reguły utrzymania \
+Włącza lub wyłącza reguły utrzymania. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Rules mobilności\
- Włącza lub wyłącza reguły dotyczące przenoszenia. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Rules mobilności\
+Włącza lub wyłącza reguły mobilności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Rules nazewnictwa\
- Włącza lub wyłącza reguły nazewnictwa. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Rules nazewnictwa\
+Włącza lub wyłącza reguły nazewnictwa. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Rules wydajności\
- Włącza lub wyłącza reguły wydajności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Rules wydajności\
+Włącza lub wyłącza reguły wydajności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Przenośność Rules\
- Włącza lub wyłącza reguły dotyczące przenośności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Reguły przenośności \
+Włącza lub wyłącza reguły przenośności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Rules niezawodności\
- Włącza lub wyłącza reguły dotyczące niezawodności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Rules niezawodności\
+Włącza lub wyłącza reguły niezawodności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Rules zabezpieczeń\
- Włącza lub wyłącza reguły zabezpieczeń. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Rules zabezpieczeń\
+Włącza lub wyłącza reguły zabezpieczeń. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
- Rules użycia\
- Włącza lub wyłącza reguły użycia. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.
+Rules użycia\
+Włącza lub wyłącza reguły użycia. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analiza kodu zarządzanego — ostrzeżenia](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Analiza kodu zarządzanego — przegląd](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [Przewodnik: Analizowanie kodu zarządzanego pod względem wad kodu](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [Przewodnik: Analizowanie kodu zarządzanego pod kątem wad kodu](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

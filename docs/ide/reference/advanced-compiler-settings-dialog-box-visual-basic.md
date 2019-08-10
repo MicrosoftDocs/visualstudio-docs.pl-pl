@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461465"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919359"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Zaawansowane ustawienia kompilatora (Visual Basic) — Okno dialogowe
 
@@ -38,7 +38,7 @@ Za pomocą okna dialogowego **Ustawienia AdvancedCompiler** **projektanta projek
 
 ## <a name="optimizations"></a>Optymalizacje
 
- Poniższe opcje określają optymalizacje, które w niektórych przypadkach sprawiają, że plik programu jest mniejszy, szybsze działanie programu lub przyspieszenie procesu kompilacji.
+Poniższe opcje określają optymalizacje, które w niektórych przypadkach sprawiają, że plik programu jest mniejszy, szybsze działanie programu lub przyspieszenie procesu kompilacji.
 
 **Usuń sprawdzanie przepełnienia liczby całkowitej**
 
@@ -52,11 +52,11 @@ To pole wyboru jest domyślnie wyczyszczone, aby wyłączyć optymalizacje kompi
 
  **Adres podstawowy biblioteki DLL**
 
- To pole tekstowe wyświetla domyślny adres bazy DLL w formacie szesnastkowym. W obszarze Biblioteka klas i projekty bibliotek formantów można użyć tego pola tekstowego, aby określić adres podstawowy, który ma być używany podczas tworzenia biblioteki DLL.
+To pole tekstowe wyświetla domyślny adres bazy DLL w formacie szesnastkowym. W obszarze Biblioteka klas i projekty bibliotek formantów można użyć tego pola tekstowego, aby określić adres podstawowy, który ma być używany podczas tworzenia biblioteki DLL.
 
  **Generuj informacje o debugowaniu**
 
- Z listy wybierz opcję **Brak**, **pełna**lub **PDB** . **Brak** określa, że nie są generowane żadne informacje debugowania. **Pełna** określa, że mają zostać wygenerowane pełne informacje o debugowaniu, a **PDB-tylko** określa, że powinny być generowane tylko informacje debugowania PDB. Wartość domyślna tej opcji jest **pełna**.
+Z listy wybierz opcję **Brak**, **pełna**lub **PDB** . **Brak** określa, że nie są generowane żadne informacje debugowania. **Pełna** określa, że mają zostać wygenerowane pełne informacje o debugowaniu, a **PDB-tylko** określa, że powinny być generowane tylko informacje debugowania PDB. Wartość domyślna tej opcji jest **pełna**.
 
 ## <a name="compilation-constants"></a>Stałe kompilacji
 
@@ -64,21 +64,21 @@ Stałe kompilacji warunkowej mają efekt podobny do tego w przypadku używania d
 
  **Zdefiniuj stałą DEBUG**
 
- To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała debugowania.
+To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała debugowania.
 
  **Zdefiniuj stałą TRACE**
 
- To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała śledzenia.
+To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała śledzenia.
 
  **Stałe niestandardowe**
 
- Wprowadź dowolne niestandardowe stałe dla aplikacji w tym polu tekstowym. Wpisy powinny być rozdzielane przecinkami, przy użyciu tego formularza: **Name1 = "wartość1", NAME2 = "wartość2", nazwa3 = "wartość3"** .
+Wprowadź dowolne niestandardowe stałe dla aplikacji w tym polu tekstowym. Wpisy powinny być rozdzielane przecinkami, przy użyciu tego formularza: **Name1 = "wartość1", NAME2 = "wartość2", nazwa3 = "wartość3"** .
 
 ## <a name="other-settings"></a>Inne ustawienia
 
 **Generuj zestawy serializacji**
 
-To ustawienie określa, czy kompilator ma tworzyć zestawy serializacji XML. Zestawy serializacji mogą zwiększyć wydajność <xref:System.Xml.Serialization.XmlSerializer> uruchamiania, jeśli użyto tej klasy do serializacji typów w kodzie. Wartość domyślna tej opcji to **Auto.** **Automatycznie** określa, że zestawy serializacji mają być generowane tylko wtedy, <xref:System.Xml.Serialization.XmlSerializer> gdy zostały użyte do kodowania typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to <xref:System.Xml.Serialization.XmlSerializer>, czy kod używa. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll.
+To ustawienie określa, czy kompilator ma tworzyć zestawy serializacji XML. Zestawy serializacji mogą zwiększyć wydajność <xref:System.Xml.Serialization.XmlSerializer> uruchamiania, jeśli użyto tej klasy do serializacji typów w kodzie. Wartość domyślna tej opcji to auto. **Automatycznie** określa, że zestawy serializacji mają być generowane tylko wtedy, <xref:System.Xml.Serialization.XmlSerializer> gdy zostały użyte do kodowania typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to <xref:System.Xml.Serialization.XmlSerializer>, czy kod używa. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: Program dodatków narzędzi VSTO
+title: Dodatki narzędzi VSTO programu
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -32,44 +32,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 292852207a595d34f35a433a86f6554b5e68cf9e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425835"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872036"
 ---
-# <a name="program-vsto-add-ins"></a>Program dodatków narzędzi VSTO
-  Podczas rozszerzania aplikacji pakietu Microsoft Office, tworzenia dodatku narzędzi VSTO dla programów, piszesz kod bezpośrednio przed `ThisAddIn` klasy w projekcie. Ta klasa służy do wykonywania zadań, takich jak uzyskiwanie dostępu do modelu obiektów programu Microsoft Office aplikacji hosta, dostosowywanie interfejsu użytkownika (UI), aplikacji i udostępnianie obiektów w dodatku narzędzi VSTO dla programów do innych rozwiązań pakietu Office.
+# <a name="program-vsto-add-ins"></a>Dodatki narzędzi VSTO programu
+  Po rozbudowaniu aplikacji Microsoft Office przez utworzenie dodatku VSTO należy napisać kod bezpośrednio względem `ThisAddIn` klasy w projekcie. Ta klasa służy do wykonywania zadań, takich jak uzyskiwanie dostępu do modelu obiektów aplikacji hosta Microsoft Office, Dostosowywanie interfejsu użytkownika i udostępnianie obiektów w dodatku VSTO do innych rozwiązań pakietu Office.
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
- Niektóre aspekty pisanie kodu w projektach dodatku narzędzi VSTO różnią się od innych typów projektów w programie Visual Studio. Wiele z tych różnic jest spowodowana przez sposób Office modele obiektów są widoczne dla kodu zarządzanego. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
+ Niektóre aspekty pisania kodu w projektach dodatku narzędzi VSTO różnią się od innych typów projektów w programie Visual Studio. Wiele z tych różnic jest spowodowanych sposobem, w jaki modele obiektów pakietu Office są uwidocznione w kodzie zarządzanym. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
 
- Aby uzyskać ogólne informacje dotyczące dodatków narzędzi VSTO dla programów i innych typów rozwiązań, można utworzyć za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+ Aby uzyskać ogólne informacje na temat dodatków VSTO i innych typów rozwiązań, które można utworzyć przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio, zobacz temat Tworzenie [rozwiązań pakietu Office &#40;— Omówienie programu VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
-## <a name="use-the-thisaddin-class"></a>Użyj thisaddin — klasa
- Możesz rozpocząć pisanie kodu dodatku narzędzi VSTO dla programów w `ThisAddIn` klasy. Program Visual Studio automatycznie generuje tej klasy w *ThisAddIn.vb* (w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) lub *ThisAddIn.cs* (w języku C#) plik w projekcie dodatku narzędzi VSTO kodu. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Automatycznie tworzy tę klasę, podczas ładowania aplikacji Microsoft Office dodatku narzędzi VSTO dla programów.
+## <a name="use-the-thisaddin-class"></a>Korzystanie z klasy ThisAddIn
+ Możesz rozpocząć pisanie kodu dodatku VSTO w `ThisAddIn` klasie. Program Visual Studio automatycznie generuje tę klasę w pliku kodu *ThisAddIn. vb* (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) lub *ThisAddIn.cs* (in C#) w projekcie dodatku VSTO. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Automatycznie tworzy wystąpienie tej klasy, gdy aplikacja Microsoft Office ładuje dodatek narzędzi VSTO.
 
- Istnieją dwie domyślne obsługi zdarzeń w `ThisAddIn` klasy. Aby uruchomić kod, gdy jest ładowany dodatku narzędzi VSTO dla programów, Dodaj kod, aby `ThisAddIn_Startup` programu obsługi zdarzeń. Aby uruchomić kod przed dodatku narzędzi VSTO zwolniony, Dodaj kod, aby `ThisAddIn_Shutdown` programu obsługi zdarzeń. Aby uzyskać więcej informacji na temat tych programów obsługi zdarzeń, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+ W `ThisAddIn` klasie istnieją dwa domyślne programy obsługi zdarzeń. Aby uruchomić kod podczas ładowania dodatku VSTO, Dodaj kod do `ThisAddIn_Startup` programu obsługi zdarzeń. Aby uruchomić kod tuż przed wyładowaniem dodatku VSTO, Dodaj kod do `ThisAddIn_Shutdown` programu obsługi zdarzeń. Aby uzyskać więcej informacji na temat obsługi zdarzeń, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
-> W programie Outlook, domyślnie `ThisAddIn_Shutdown` program obsługi zdarzeń nie zawsze jest wywoływany podczas dodatku narzędzi VSTO jest zwalniana. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+> W programie Outlook domyślnie `ThisAddIn_Shutdown` program obsługi zdarzeń nie zawsze jest wywoływany, gdy dodatek narzędzi VSTO zostanie zwolniony. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
-### <a name="access-the-object-model-of-the-host-application"></a>Dostęp do modelu obiektów w aplikacji hosta
- Aby uzyskać dostęp do modelu obiektów w aplikacji hosta, należy użyć `Application` pole `ThisAddIn` klasy. To pole zwraca obiekt reprezentujący bieżące wystąpienie aplikacji hosta. W poniższej tabeli przedstawiono typ wartości zwracanej przez `Application` pola w każdym projekcie dodatku narzędzi VSTO.
+### <a name="access-the-object-model-of-the-host-application"></a>Dostęp do modelu obiektów aplikacji hosta
+ Aby uzyskać dostęp do modelu obiektów aplikacji hosta, użyj `Application` pola `ThisAddIn` klasy. To pole zwraca obiekt, który reprezentuje bieżące wystąpienie aplikacji hosta. W poniższej tabeli przedstawiono typ wartości zwracanej dla `Application` pola w każdym projekcie dodatku VSTO.
 
-|Aplikacja hosta|Zwracany typ wartości|
+|Aplikacja hosta|Typ wartości zwracanej|
 |----------------------|-----------------------|
 |Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|
 |Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|
 |Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|
-|Microsoft Office PowerPoint|<xref:Microsoft.Office.Interop.PowerPoint.Application>|
+|Microsoft Office PowerPoint|[Aplikacja](/previous-versions/office/developer/office-2010/ff764034(v=office.14))|
 |Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|
 |Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|
 |Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|
 
- Poniższy przykład kodu pokazuje sposób użycia `Application` pola, aby utworzyć nowy skoroszyt w dodatku narzędzi VSTO dla programu Microsoft Office Excel. W tym przykładzie jest przeznaczona do uruchamiania z `ThisAddIn` klasy.
+ Poniższy przykład kodu pokazuje, `Application` jak za pomocą pola utworzyć nowy skoroszyt w dodatku narzędzi VSTO dla programu Microsoft Office Excel. Ten przykład jest przeznaczony do uruchamiania z `ThisAddIn` klasy.
 
 ```vb
 Dim newWorkbook As Excel.Workbook = Me.Application.Workbooks.Add()
@@ -79,7 +79,7 @@ Dim newWorkbook As Excel.Workbook = Me.Application.Workbooks.Add()
 Excel.Workbook newWorkbook = this.Application.Workbooks.Add(System.Type.Missing);
 ```
 
- Aby zrobić to samo z poza `ThisAddIn` klasy, należy użyć `Globals` do dostępu do obiektu `ThisAddIn` klasy. Aby uzyskać więcej informacji na temat `Globals` obiektu, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Aby zrobić to samo z zewnątrz `ThisAddIn` klasy, `Globals` Użyj obiektu, aby uzyskać dostęp `ThisAddIn` do klasy. Aby uzyskać więcej informacji na `Globals` temat obiektu, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).
 
 ```vb
 Dim newWorkbook As Excel.Workbook = Globals.ThisAddIn.Application.Workbooks.Add()
@@ -89,66 +89,66 @@ Dim newWorkbook As Excel.Workbook = Globals.ThisAddIn.Application.Workbooks.Add(
 Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.Type.Missing);
 ```
 
- Aby uzyskać więcej informacji na temat modeli obiektów określonych aplikacji pakietu Microsoft Office zobacz następujące tematy:
+ Aby uzyskać więcej informacji na temat modeli obiektów określonych Microsoft Office aplikacji, zobacz następujące tematy:
 
 - [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)
 
-- [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
+- [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)
 
-- [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)
+- [Model obiektów programu Outlook — Omówienie](../vsto/outlook-object-model-overview.md)
 
-- [Rozwiązania InfoPath](../vsto/infopath-solutions.md)
+- [Rozwiązania programu InfoPath](../vsto/infopath-solutions.md)
 
-- [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md)
+- [Rozwiązania programu PowerPoint](../vsto/powerpoint-solutions.md)
 
 - [Rozwiązania projektu](../vsto/project-solutions.md)
 
-- [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)
+- [Model obiektów programu Visio — Omówienie](../vsto/visio-object-model-overview.md)
 
-### <a name="AccessingDocuments"></a> Dostęp do dokumentu, podczas uruchamiania aplikacji pakietu Office
- Nie wszystkie [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikacje automatycznie otworzyć dokument po uruchomieniu je i żaden [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikacje otworzyć dokument po ich uruchomieniu. W związku z tym, nie dodawaj kodu w `ThisAdd-In_Startup` programu obsługi zdarzeń, jeśli kod wymaga dokument jest otwarty. Zamiast tego należy dodać kod do zdarzenia, które wywołuje aplikacji pakietu Office, gdy użytkownik tworzy lub otwiera dokument. W ten sposób można gwarantuje, że dokument jest otwarty, zanim kod wykonuje operacje na nim.
+### <a name="AccessingDocuments"></a>Uzyskaj dostęp do dokumentu podczas uruchamiania aplikacji pakietu Office
+ Nie wszystkie [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikacje automatycznie otwierają dokument po ich uruchomieniu i żadna [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] z aplikacji nie otwiera dokumentu po jego uruchomieniu. W związku z tym nie należy dodawać `ThisAdd-In_Startup` kodu w programie obsługi zdarzeń, jeśli kod wymaga otwarcia dokumentu. Zamiast tego należy dodać ten kod do zdarzenia, które aplikacja pakietu Office zgłasza, gdy użytkownik tworzy lub otwiera dokument. Dzięki temu można zagwarantować, że dokument jest otwarty przed wykonaniem przez kod operacji na nim.
 
- Poniższy przykład kodu współpracuje z dokumentu programu Word, tylko wtedy, gdy użytkownik tworzy dokument lub otwiera istniejący dokument.
+ Poniższy przykład kodu działa z dokumentem w programie Word tylko wtedy, gdy użytkownik tworzy dokument lub otwiera istniejący dokument.
 
  [!code-csharp[Trin_WordAddIn_Menus#3](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#3)]
  [!code-vb[Trin_WordAddIn_Menus#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#3)]
 
-### <a name="thisaddin-members-to-use-for-other-tasks"></a>ThisAddIn członków do użycia w celu wykonania innych zadań
- Poniższa tabela opisuje innych typowych zadań i pokazuje, którzy członkowie `ThisAddIn` klasy, można użyć do wykonywania zadań.
+### <a name="thisaddin-members-to-use-for-other-tasks"></a>ThisAddIn członków do użycia z innymi zadaniami
+ W poniższej tabeli opisano inne typowe zadania i przedstawiono elementy członkowskie `ThisAddIn` klasy, których można użyć do wykonania zadań.
 
-|Zadanie|Element członkowski do użycia|
+|Zadanie|Członek do użycia|
 |----------|-------------------|
-|Uruchom kod, aby zainicjować dodatku narzędzi VSTO dla programów, gdy jest ładowany dodatku narzędzi VSTO.|Dodaj kod, aby `ThisAddIn_Startup` metody. Jest to domyślny program obsługi zdarzeń dla <xref:Microsoft.Office.Tools.AddInBase.Startup> zdarzeń. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).|
-|Uruchom kod, aby wyczyścić zasoby używane przez dodatek narzędzi VSTO dla programów przed dodatku narzędzi VSTO jest zwalniana.|Dodaj kod, aby `ThisAddIn_Shutdown` metody. Jest to domyślny program obsługi zdarzeń dla <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzeń. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md). **Uwaga:**  W programie Outlook, domyślnie `ThisAddIn_Startup` program obsługi zdarzeń nie zawsze jest wywoływany podczas dodatku narzędzi VSTO jest zwalniana. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).|
-|Wyświetlanie niestandardowego okienka zadań.|Użyj `CustomTaskPanes` pola. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).|
-|Udostępnianie obiektów w dodatku narzędzi VSTO dla programów do innych rozwiązań programu Microsoft Office.|Zastąp <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> metody. Aby uzyskać więcej informacji, zobacz [wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|
-|Dostosowywanie funkcji w systemie Microsoft Office, implementując interfejs rozszerzalności.|Zastąp <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metodę, aby zwrócić wystąpienia klasy, która implementuje interfejs. Aby uzyskać więcej informacji, zobacz [dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Uwaga:**  Aby dostosować interfejs użytkownika wstążki, możesz również zastąpić <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> metody.|
+|Uruchom kod, aby zainicjować dodatek VSTO po załadowaniu dodatku VSTO.|Dodaj kod do `ThisAddIn_Startup` metody. Jest to domyślny program obsługi zdarzeń dla <xref:Microsoft.Office.Tools.AddInBase.Startup> zdarzenia. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).|
+|Uruchom kod, aby wyczyścić zasoby używane przez dodatek VSTO przed wyładowaniem dodatku VSTO.|Dodaj kod do `ThisAddIn_Shutdown` metody. Jest to domyślny program obsługi zdarzeń dla <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzenia. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md). **Uwaga:**  W programie Outlook domyślnie `ThisAddIn_Startup` program obsługi zdarzeń nie zawsze jest wywoływany, gdy dodatek narzędzi VSTO zostanie zwolniony. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).|
+|Wyświetlanie niestandardowego okienka zadań.|`CustomTaskPanes` Użyj pola. Aby uzyskać więcej informacji, zobacz [niestandardowe okienka zadań](../vsto/custom-task-panes.md).|
+|Uwidacznianie obiektów w dodatku VSTO do innych rozwiązań Microsoft Office.|Zastąp <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> metody. Aby uzyskać więcej informacji, zobacz [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|
+|Dostosuj funkcję w systemie Microsoft Office, implementując interfejs rozszerzalności.|Zastąp <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metodę, aby zwrócić wystąpienie klasy, która implementuje interfejs. Aby uzyskać więcej informacji, zobacz [Dostosowywanie funkcji interfejsu użytkownika przy użyciu interfejsów rozszerzalności](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Uwaga:**  Aby dostosować interfejs użytkownika wstążki, można również zastąpić <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> metodę.|
 
-### <a name="understand-the-design-of-the-thisaddin-class"></a>Omówienie konstrukcji thisaddin — klasa
- W przypadku projektów, których platformą docelową [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], <xref:Microsoft.Office.Tools.AddIn> jest interfejsem. `ThisAddIn` Klasa pochodzi od <xref:Microsoft.Office.Tools.AddInBase> klasy. Ta klasa bazowa przekierowuje wszystkie wywołania do swoich elementów członkowskich do wewnętrzną implementację <xref:Microsoft.Office.Tools.AddIn> interfejsu w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+### <a name="understand-the-design-of-the-thisaddin-class"></a>Zrozumienie projektu klasy ThisAddIn
+ W projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], <xref:Microsoft.Office.Tools.AddIn> jest interfejsem. `ThisAddIn` Klasa pochodzi<xref:Microsoft.Office.Tools.AddInBase> od klasy. Ta klasa bazowa przekierowuje wszystkie wywołania do swoich elementów członkowskich do wewnętrznej implementacji <xref:Microsoft.Office.Tools.AddIn> interfejsu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]w.
 
- W projektach dodatku narzędzi VSTO dla programu Outlook `ThisAddIn` klasa pochodzi od `Microsoft.Office.Tools.Outlook.OutlookAddIn` klas w projektach przeznaczonych dla programu .NET Framework 3.5, a także z <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> w przypadku projektów, których platformą docelową [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Tych klas bazowych zapewniają nowe funkcje do obsługi regionów formularza. Aby uzyskać więcej informacji na temat regionów formularzy zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+ W projektach dodatku narzędzi VSTO `ThisAddIn` dla programu Outlook Klasa pochodzi `Microsoft.Office.Tools.Outlook.OutlookAddIn` od klasy w projektach, która jest przeznaczona dla .NET Framework 3,5 i z <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> w projektach, które są przeznaczone dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Te klasy bazowe zapewniają dodatkową funkcjonalność do obsługi regionów formularzy. Aby uzyskać więcej informacji na temat regionów formularzy, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
 
-## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Dostosowywanie interfejsu użytkownika aplikacji pakietu Microsoft Office
- Aplikacje interfejsu użytkownika pakietu Microsoft Office można dostosować programowo przy użyciu dodatku narzędzi VSTO. Można na przykład dostosowania wstążki, wyświetlić niestandardowego okienka zadań lub Utwórz region formularza niestandardowego w programie Outlook. Aby uzyskać więcej informacji, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
+## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Dostosowywanie interfejsu użytkownika aplikacji Microsoft Office
+ Można programowo dostosować interfejs użytkownika aplikacji Microsoft Office przy użyciu dodatku VSTO. Na przykład można dostosować Wstążkę, wyświetlić niestandardowe okienko zadań lub utworzyć niestandardowy region formularza w programie Outlook. Aby uzyskać więcej informacji, zobacz temat [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
 
- Program Visual Studio udostępnia projektantów i klas, które służą do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionach formularzy programu Outlook. Te klasy i projektanci pomoc, aby uprościć proces dostosowywania tych funkcji. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md), [projektanta wstążki](../vsto/ribbon-designer.md), i [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+ Program Visual Studio udostępnia projektantom i klasom, których można użyć do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionów formularzy programu Outlook. Te projektanci i klasy pomagają uprościć proces dostosowywania tych funkcji. Aby uzyskać więcej informacji, zobacz [niestandardowe okienka zadań](../vsto/custom-task-panes.md), [Projektant wstążki](../vsto/ribbon-designer.md)i [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md).
 
- Jeśli chcesz dostosować jeden z tych funkcji w taki sposób, że nie jest obsługiwana przez klasy i projektantów, można również dostosować te funkcje, implementując *interfejsu rozszerzalności* w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).
+ Jeśli chcesz dostosować jedną z tych funkcji w sposób, który nie jest obsługiwany przez klasy i projektantów, możesz również dostosować te funkcje, implementując *interfejs rozszerzalności* w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [Dostosowywanie funkcji interfejsu użytkownika przy użyciu interfejsów rozszerzalności](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).
 
- Ponadto można zmodyfikować dokumentów interfejsu użytkownika programu Word i skoroszytów programu Excel, generowania elementów hosta, które rozszerzają zachowanie dokumenty i skoroszyty. Pozwala na dodawanie formantów zarządzanego do dokumentów i arkuszy. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+ Ponadto można modyfikować interfejs użytkownika dokumentów programu Word i skoroszytów programu Excel, generując elementy hosta, które poszerzają zachowanie dokumentów i skoroszytów. Pozwala to na dodawanie formantów zarządzanych do dokumentów i arkuszy. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)w czasie wykonywania.
 
 ## <a name="call-code-in-vsto-add-ins-from-other-solutions"></a>Wywoływanie kodu w dodatkach VSTO z innych rozwiązań
- Obiekty można ujawnić w dodatku narzędzi VSTO dla programów do innych rozwiązań, w tym innych rozwiązań pakietu Office. Jest to przydatne, jeśli dodatku narzędzi VSTO dla programów udostępnia usługę, aby włączyć innych rozwiązań do użycia. Na przykład jeśli masz dodatku narzędzi VSTO dla programu Microsoft Office Excel wykonuje obliczenia na dane finansowe z usługi sieci web, innych rozwiązań może wykonywania tych obliczeń przez wywołanie dodatku narzędzi VSTO programu Excel w czasie wykonywania.
+ Można uwidocznić obiekty w dodatku narzędzi VSTO dla innych rozwiązań, w tym innych rozwiązań pakietu Office. Jest to przydatne, jeśli dodatek narzędzi VSTO udostępnia usługę, która umożliwia korzystanie z innych rozwiązań. Na przykład jeśli masz dodatek narzędzi VSTO dla programu Microsoft Office Excel, który wykonuje obliczenia dotyczące danych finansowych z usługi sieci Web, inne rozwiązania mogą wykonywać te obliczenia przez wywołanie dodatku VSTO programu Excel w czasie wykonywania.
 
- Aby uzyskać więcej informacji, zobacz [wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
+ Aby uzyskać więcej informacji, zobacz [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
-- [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
+- [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
-- [Przewodnik: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
-- [Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)
-- [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Przewodnik: Wywoływanie kodu w dodatku VSTO z poziomu języka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
+- [Dostosowywanie funkcji interfejsu użytkownika przy użyciu interfejsów rozszerzalności](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)
+- [Instrukcje: Tworzenie projektów pakietu Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)

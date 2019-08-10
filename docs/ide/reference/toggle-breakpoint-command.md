@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 214897a0f938d8ea52306b8f605948b38f196111
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 18473fbd8ee0f7c4b415880da61c86de0bae6fc5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944965"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925976"
 ---
 # <a name="toggle-breakpoint-command"></a>Przełącz punkt przerwania — Polecenie
 Włącza punkt przerwania lub wyłączyć, w zależności od bieżącego stanu w bieżącej lokalizacji w pliku.
@@ -31,10 +31,12 @@ Debug.ToggleBreakpoint [text]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `text` Opcjonalnie. Jeśli tekst jest określona, wiersz jest oznaczona jako nazwany punkt przerwania. W przeciwnym razie wiersz jest oznaczona jako nienazwane punkt przerwania, który przypomina co się stanie, gdy klawisz F9.
+
+`text`\
+Opcjonalny. Jeśli tekst jest określony, linia jest oznaczona jako nazwany punkt przerwania. W przeciwnym razie wiersz jest oznaczony jako nienazwany punkt przerwania, który jest podobny do tego, co się dzieje po naciśnięciu klawisza F9.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład zmienia bieżący punkt przerwania.
+Poniższy przykład przełącza bieżący punkt przerwania.
 
 ```
 >Debug.ToggleBreakpoint

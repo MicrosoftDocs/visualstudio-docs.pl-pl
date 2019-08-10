@@ -1,53 +1,53 @@
 ---
-title: 'Instrukcje: Otwieranie wielu rozwiązań w programie Visual Studio dla komputerów Mac'
-description: Dowiedz się, jak otworzyć więcej niż jednego rozwiązania w programie Visual Studio dla komputerów Mac i jak otworzyć więcej niż jedno wystąpienie aplikacji.
+title: 'Instrukcje: Otwórz wiele rozwiązań'
+description: Dowiedz się, jak otworzyć więcej niż jedno rozwiązanie w Visual Studio dla komputerów Mac i jak otworzyć więcej niż jedno wystąpienie aplikacji.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: 479ef72d2f14d0d1f9de5d193ca76ae2c6128daa
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 4d676f6109c97ae883473a35721f9207e72a6da4
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691387"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872363"
 ---
-# <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Otwórz wielu rozwiązań lub wystąpienia programu Visual Studio dla komputerów Mac
+# <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Otwórz wiele rozwiązań lub wystąpień Visual Studio dla komputerów Mac
 
-Domyślnie wszystkie aplikacje na komputerze Mac, w tym Visual Studio dla komputerów Mac, są _jednego wystąpienia_ aplikacji. Oznacza to, że jeśli aplikacji, którą chcesz używać jest już otwarty (zilustrowane kropka pod ikoną w obszarze dock), wybierając ikonę ponownie zostanie otwarty uruchomionego wystąpienia, a nie nowy. Jeśli potrzebujesz dodatkowych wystąpień aplikacji, możesz też monitować systemu, aby go otworzyć, zgodnie z opisem w [następnej sekcji](#open-a-second-instance-of-visual-studio-for-mac).
+Domyślnie wszystkie aplikacje na komputerze Mac, w tym Visual Studio dla komputerów Mac, są aplikacjami z _jednym wystąpieniem_ . Oznacza to, że jeśli aplikacja, która ma być używana, jest już otwarta (zilustrowana kropką pod ikoną w Docku), wybranie ikony ponownie spowoduje otwarcie uruchomionego wystąpienia, a nie nowego. Jeśli potrzebujesz dodatkowych wystąpień aplikacji, możesz monitować system o jego otwarcie, zgodnie z opisem w [następnej sekcji](#open-a-second-instance-of-visual-studio-for-mac).
 
-Ponadto po otwarciu rozwiązania, zachowanie domyślne jest Otwórz rozwiązanie w nowy obszar roboczy i Zamknij bieżący obszar roboczy (jeśli jest to konieczne). To zachowanie domyślne można przesłonić, przechowując bieżącego obszaru roboczego otwarte, zgodnie z opisem w [Otwórz drugie rozwiązanie](#open-a-second-solution-inside-a-single-instance) sekcji.
+Ponadto podczas otwierania rozwiązania domyślne zachowanie polega na otwarciu rozwiązania w nowym obszarze roboczym i zamknięciu bieżącego obszaru roboczego (w razie potrzeby). To zachowanie domyślne można zastąpić, pozostawiając otwarty bieżący obszar roboczy, zgodnie z opisem w sekcji [Otwórz drugie rozwiązanie](#open-a-second-solution-inside-a-single-instance) .
 
-## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Otwórz drugie wystąpienie programu Visual Studio dla komputerów Mac
+## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Otwórz drugie wystąpienie Visual Studio dla komputerów Mac
 
-Aby otworzyć drugie wystąpienie zintegrowanego środowiska programistycznego (IDE), kliknij prawym przyciskiem myszy ikonę programu Visual Studio w swoje dock lub **aplikacje** folder, a następnie wybierz **nowe wystąpienie**.
+Aby otworzyć drugie wystąpienie zintegrowanego środowiska programistycznego (IDE), kliknij prawym przyciskiem myszy ikonę programu Visual Studio w folderze Dock lub **Applications** , a następnie wybierz pozycję **nowe wystąpienie**.
 
-![Zrzut ekranu nowego wystąpienia opcji menu klikniętego prawym przyciskiem myszy ikonę programu Visual Studio](media/open-new-instance.png)
+![Zrzut ekranu przedstawiający opcję menu nowe wystąpienie na kliknięciu prawym przyciskiem myszy ikony programu Visual Studio](media/open-new-instance.png)
 
-## <a name="open-a-second-solution-inside-a-single-instance"></a>Otwórz drugie rozwiązanie wewnątrz pojedynczego wystąpienia
+## <a name="open-a-second-solution-inside-a-single-instance"></a>Otwórz drugie rozwiązanie w ramach jednego wystąpienia
 
-Aby otworzyć drugiego rozwiązań razem swoje pierwsze rozwiązanie, użyj następujących kroków:
+Aby otworzyć drugie rozwiązanie obok pierwszego rozwiązania, wykonaj następujące czynności:
 
-1. Swoje pierwsze rozwiązanie już jest otwarty, wybierz **pliku** > **Otwórz**.
-2. Przeglądaj system plików można znaleźć istniejącego rozwiązania.
-3. Wybierz **.sln** pliku, a następnie wybierz **opcje**:
+1. Gdy pierwsze rozwiązanie jest już otwarte, wybierz pozycję **plik** > **Otwórz**.
+2. Przejrzyj system plików, aby znaleźć istniejące rozwiązanie.
+3. Wybierz plik **. sln** , a następnie wybierz **Opcje**:
 
-    ![Zrzut ekranu programu Visual Studio dla komputerów Mac z plikiem .sln i opcji wyróżnionych](media/open-multiple-solutions-image3.png)
+    ![Zrzut ekranu przedstawiający Visual Studio dla komputerów Mac, z wyróżnionym plikiem. sln i opcjami](media/open-multiple-solutions-image3.png)
 
-4. Wyczyść **Zamknij bieżący obszar roboczy** pola:
+4. Wyczyść pole **Zamknij bieżący obszar roboczy** :
 
-    ![Zrzut ekranu opcji okno dialogowe, za pomocą Zamknij bieżący obszar roboczy wyczyszczone pole wyboru](media/open-multiple-solutions-image1.png)
+    ![Zrzut ekranu przedstawiający okno dialogowe Opcje z wyczyszczonym polem Zamknij bieżący obszar roboczy](media/open-multiple-solutions-image1.png)
 
-5. Wybierz **Otwórz** otworzyć drugim rozwiązaniem w konsoli rozwiązania.
+5. Wybierz pozycję **Otwórz** , aby otworzyć drugie rozwiązanie w okienko rozwiązania.
 
-Alternatywnie zostało ostatnio otwarte rozwiązanie, można użyć następujących czynności:
+Alternatywnie, jeśli ostatnio otwarto rozwiązanie, można wykonać następujące czynności:
 
 1. Przejdź do **pliku** > **najnowsze rozwiązania**.
 
-    ![Zrzut ekranu przedstawiający menu ostatnio używane rozwiązania](media/open-multiple-solutions-image2.png)
+    ![Zrzut ekranu przedstawiający menu ostatnich rozwiązań](media/open-multiple-solutions-image2.png)
 
-1. Naciśnij i przytrzymaj **Ctrl** klucza, a następnie wybierz rozwiązanie. Ta kombinacja otwiera drugie rozwiązanie, w konsoli rozwiązania.
+1. Naciśnij i przytrzymaj klawisz **Ctrl** i wybierz rozwiązanie. Ta kombinacja otwiera drugie rozwiązanie w okienko rozwiązania.
 
 ## <a name="related-video"></a>Pokrewne wideo
 

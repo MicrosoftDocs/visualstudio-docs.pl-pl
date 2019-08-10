@@ -7,34 +7,34 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132194"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925787"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL Visual C++
 
 W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla języka C++ bibliotek DLL z aplikacji platformy uniwersalnej Windows (UWP) przy użyciu Frameworka testów firmy Microsoft dla języka C++. Biblioteka DLL RooterLib pokazuje niejasne chwile teorii limit z calculus poprzez implementację funkcji, który oblicza oszacowanie pierwiastek kwadratowy z podanej liczbie. Biblioteki DLL, następnie mógłby być zawarty w aplikacji platformy uniwersalnej systemu Windows, która zawiera użytkownika fun rzeczy, które można wykonać za pomocą matematyczne.
 
- W tym temacie dowiesz się, jak używać jednostki testowania jako pierwszy krok w rozwoju. W tym podejściu najpierw napisać metodę testową, która sprawdza określone zachowanie w systemie, które testujesz, a następnie napisać kod, który przejdzie test. Wycofanie tej strategii, wprowadzając zmiany kolejności poniższych procedur, w pierwszej operacji zapisu kod, który chcesz przetestować, a następnie napisz testy jednostkowe.
+W tym temacie dowiesz się, jak używać jednostki testowania jako pierwszy krok w rozwoju. W tym podejściu najpierw napisać metodę testową, która sprawdza określone zachowanie w systemie, które testujesz, a następnie napisać kod, który przejdzie test. Wycofanie tej strategii, wprowadzając zmiany kolejności poniższych procedur, w pierwszej operacji zapisu kod, który chcesz przetestować, a następnie napisz testy jednostkowe.
 
- W tym temacie tworzy również jedno rozwiązanie Visual Studio i oddzielnych projektów dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie biblioteki DLL lub można utworzyć oddzielne rozwiązania dla testów jednostkowych i. BIBLIOTEKI DLL. Zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/how-to-use-microsoft-test-framework-for-cpp.md) zawiera porady na temat struktury, która do użycia.
+W tym temacie tworzy również jedno rozwiązanie Visual Studio i oddzielnych projektów dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie biblioteki DLL lub można utworzyć oddzielne rozwiązania dla testów jednostkowych i. BIBLIOTEKI DLL. Zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/how-to-use-microsoft-test-framework-for-cpp.md) zawiera porady na temat struktury, która do użycia.
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Tworzenie rozwiązania i projektu testu jednostkowego
 
 ::: moniker range="vs-2019"
 
-Rozpocznij od utworzenia nowego projektu testu. Na **pliku** menu, wybierz **New** > **projektu**. W **Utwórz nowy projekt** okno dialogowe, w polu wyszukiwania wpisz "test", a następnie ustaw **języka** do C++. Następnie wybierz **aplikacji testów jednostkowych (Windows Universal)** z listy szablonów projektu.
+Zacznij od utworzenia nowego projektu testowego. Na **pliku** menu, wybierz **New** > **projektu**. W oknie dialogowym **Tworzenie nowego projektu** wpisz "test" w polu wyszukiwania, a następnie ustaw **Język** na C++. Następnie wybierz **aplikacji testów jednostkowych (Windows Universal)** z listy szablonów projektu.
 
-   ![Tworzenie nowego projektu testowego platformy uniwersalnej systemu Windows](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+   ![Utwórz nowy projekt testu platformy UWP](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Rozpocznij od utworzenia nowego projektu testu. Na **pliku** menu, wybierz **New** > **projektu**. W **nowy projekt** okna dialogowego, rozwiń węzeł **zainstalowane** > **Visual C++**  i wybierz polecenie **Windows Universal**. Następnie wybierz **aplikacji testów jednostkowych (Windows Universal)** z listy szablonów projektu.
+Zacznij od utworzenia nowego projektu testowego. Na **pliku** menu, wybierz **New** > **projektu**. W oknie dialogowym **Nowy projekt** rozwiń węzeł **zainstalowane** >  **C++ wizualizacje** i wybierz pozycję **Windows Universal**. Następnie wybierz **aplikacji testów jednostkowych (Windows Universal)** z listy szablonów projektu.
 
 ::: moniker-end
 
@@ -81,14 +81,14 @@ Rozpocznij od utworzenia nowego projektu testu. Na **pliku** menu, wybierz **New
 
 ::: moniker range="vs-2019"
 
-W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **nowy projekt**. W **Dodaj nowy projekt** okno dialogowe, zestaw **języka** do C++ i w polu wyszukiwania wpisz "DLL". Z listy wyników wybierz **aplikacji testów jednostkowych (Windows Universal - C++/CX)** .
+W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**. W oknie dialogowym **Dodawanie nowego projektu** Ustaw **Język** na C++ i wpisz "dll" w polu wyszukiwania. Z listy wyników wybierz pozycję **aplikacja testów jednostkowych (Universal Windows- C++/CX)** .
 
 ![Utwórz projekt RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **nowy projekt**.
+W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**.
 
 ![Utwórz projekt RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
@@ -152,9 +152,9 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
 
 1. Dodaj RooterLib projektu RooterLibTests.
 
-   1. W **Eksploratora rozwiązań**, wybierz **RooterLibTests** projektu, a następnie wybierz **Dodaj** > **odwołania** na skrót menu.
+   1. W **Eksplorator rozwiązań**wybierz projekt **RooterLibTests** , a następnie wybierz polecenie **Dodaj** > **odwołanie** w menu skrótów.
 
-   1. W **Dodaj odwołanie** okna dialogowego wybierz **projektów**. Następnie wybierz pozycję **RouterLib** elementu.
+   1. W oknie dialogowym **Dodaj odwołanie** wybierz pozycję **projekty**. Następnie wybierz pozycję **RouterLib** elementu.
 
 2. Uwzględnić plik nagłówka RooterLib w *unittest1.cpp*.
 
