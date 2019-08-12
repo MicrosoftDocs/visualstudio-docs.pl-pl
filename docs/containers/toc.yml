@@ -26,6 +26,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Wdrażanie w usłudze Azure App Service
           href: deploy-app-service.md
+        - name: Wdrażanie w usłudze Docker Hub
+          href: deploy-docker-hub.md
         - name: Wyświetlanie i diagnozowanie kontenerów
           href: view-and-diagnose-containers.md
         - name: Konfigurowanie narzędzi kontenerów
