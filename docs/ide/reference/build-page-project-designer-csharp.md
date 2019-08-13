@@ -82,7 +82,7 @@ To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następu
 
 **Zezwalaj na niebezpieczny kod**
 
-Zezwala na kompilowanie kodu [](/dotnet/csharp/language-reference/keywords/unsafe) , który używa niebezpiecznego słowa kluczowego. Aby uzyskać więcej informacji, zobacz [/UNSAFEC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
+Zezwala na kompilowanie kodu [niebezpieczny](/dotnet/csharp/language-reference/keywords/unsafe) , który używa niebezpiecznego słowa kluczowego. Aby uzyskać więcej informacji, zobacz [/UNSAFEC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 
 **Optymalizuj kod**
 

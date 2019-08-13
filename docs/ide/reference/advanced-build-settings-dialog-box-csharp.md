@@ -50,7 +50,7 @@ Określa, czy raportować błędy kompilatora do firmy Microsoft. Jeśli zostani
 
 **Sprawdź, czy jest przepełnienie arytmetyczne/nadmiarowy**
 
-Określa, czy instrukcja arytmetyczna liczb całkowitych, która nie znajduje się [](/dotnet/csharp/language-reference/keywords/checked) w zakresie zaznaczonych lub niesprawdzonych słów kluczowych i powoduje, że wartość spoza zakresu typu danych spowoduje wystąpienie wyjątku czasu wykonywania. [](/dotnet/csharp/language-reference/keywords/unchecked) Aby uzyskać więcej informacji, zobacz [/CheckedC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+Określa, czy instrukcja arytmetyczna liczb całkowitych, która nie znajduje się [sprawdzone](/dotnet/csharp/language-reference/keywords/checked) w [niepowstrzymany](/dotnet/csharp/language-reference/keywords/unchecked) zakresie zaznaczonych lub niesprawdzonych słów kluczowych i powoduje, że wartość spoza zakresu typu danych spowoduje wystąpienie wyjątku czasu wykonywania. Aby uzyskać więcej informacji, zobacz [/CheckedC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
 
 **Nie Odwołuj się do biblioteki mscorlib. dll**
 

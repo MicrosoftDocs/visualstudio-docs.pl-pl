@@ -22,7 +22,7 @@ Przykładowe dane można wyświetlić w projektancie w miarę dostosowywania uk�
 
 ## <a name="generate-sample-data"></a>Generowanie danych przykładowych
 
-Aby wygenerować przykładowe dane, Otwórz dokument XAML. W panelu **dane** wybierz przycisk ikony](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) **Utwórz** ![przykładowe dane Utwórz przykładowe dane, a następnie wybierz pozycję **nowe przykładowe dane**.
+Aby wygenerować przykładowe dane, Otwórz dokument XAML. W panelu **dane** ![wybierz przycisk ikony](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) **Utwórz** przykładowe dane Utwórz przykładowe dane, a następnie wybierz pozycję **nowe przykładowe dane**.
 
 Zdefiniuj strukturę danych w panelu **dane** , a następnie powiąż ją z elementami interfejsu użytkownika na dowolnej stronie.
 
@@ -38,7 +38,7 @@ Jeśli chcesz, aby dane przykładowe były wyświetlane na stronach podczas uruc
 
 Jeśli już utworzono klasy opisujące strukturę danych, możesz generować przykładowe dane z nich.
 
-Aby wygenerować przykładowe dane z klasy, Otwórz dokument XAML, a następnie w panelu **dane** kliknij przycisk](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) ikony **Utwórz** ![przykładowe dane Utwórz przykładowe dane, a następnie kliknij przycisk **Utwórz przykładowe dane z klasy**.
+Aby wygenerować przykładowe dane z klasy, Otwórz dokument XAML, a następnie w panelu **dane** ![kliknij przycisk](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) ikony **Utwórz** przykładowe dane Utwórz przykładowe dane, a następnie kliknij przycisk **Utwórz przykładowe dane z klasy**.
 
 **Obejrzyj krótkie wideo:** ![Ikona](../designers/media/bldadminconsoleinitialconfigicon.PNG) odtwarzania umożliwia [połączenie niektórych powiązań danych z programem Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
