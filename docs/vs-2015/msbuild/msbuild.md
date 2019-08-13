@@ -132,7 +132,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </ItemGroup>  
 ```  
   
- Elementy mogą być deklarowane przy użyciu symboli wieloznacznych i mogą zawierać dodatkowe metadane dla bardziej zaawansowanych scenariuszy kompilacji. Aby uzyskać więcej informacji o elementach [](../msbuild/msbuild-items.md), zobacz Items.  
+ Elementy mogą być deklarowane przy użyciu symboli wieloznacznych i mogą zawierać dodatkowe metadane dla bardziej zaawansowanych scenariuszy kompilacji. Aby uzyskać więcej informacji o elementach [Przedmiotów](../msbuild/msbuild-items.md), zobacz Items.  
   
 ### <a name="BKMK_Tasks"></a>Widoku  
  Zadania są jednostkami kodu wykonywalnego [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , które są używane przez projekty do wykonywania operacji kompilacji. Na przykład zadanie może kompilować pliki wejściowe lub uruchomić narzędzie zewnętrzne. Zadania mogą być ponownie używane i mogą być współużytkowane przez różnych deweloperów w różnych projektach.  
@@ -162,7 +162,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </Target>  
 ```  
   
- W bardziej zaawansowanych scenariuszach obiekty docelowe mogą służyć do opisywania relacji między sobą i wykonywania analizy zależności, aby można było pominąć całe sekcje procesu kompilacji, jeśli ten element docelowy jest aktualny. Aby uzyskać więcej informacji o obiektach [](../msbuild/msbuild-targets.md)docelowych, zobacz targets.  
+ W bardziej zaawansowanych scenariuszach obiekty docelowe mogą służyć do opisywania relacji między sobą i wykonywania analizy zależności, aby można było pominąć całe sekcje procesu kompilacji, jeśli ten element docelowy jest aktualny. Aby uzyskać więcej informacji o obiektach [cele](../msbuild/msbuild-targets.md)docelowych, zobacz .  
   
 ## <a name="BKMK_BuildLogs"></a>Dzienniki kompilacji  
  Błędy kompilacji, ostrzeżenia i komunikaty można rejestrować w konsoli lub innym urządzeniu wyjściowym. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) i [Logowanie w programie MSBuild](../msbuild/logging-in-msbuild.md).  

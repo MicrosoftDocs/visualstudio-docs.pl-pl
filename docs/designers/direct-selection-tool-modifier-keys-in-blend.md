@@ -18,7 +18,7 @@ ms.locfileid: "68821823"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Wybór bezpośredni klawiszy modyfikujących narzędzia w Blend for Visual Studio
 
-W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji kształtu istniejącej ścieżki przy użyciu narzędzia](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) **wybór bezpośredni** Zaznaczanie bezpośrednie narzędzia ![. Aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki, użyj narzędzia Pióro.
+W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji kształtu istniejącej ścieżki przy użyciu narzędzia**wybór bezpośredni** narzędzia ![Zaznaczanie bezpośrednie](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) Aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki, użyj narzędzia Pióro.
 
 |Aby wykonać tę akcję|Zrób to|Przytrzymaj|
 | - |-------------|-------------|
