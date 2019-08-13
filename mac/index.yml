@@ -1,11 +1,11 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Visual Studio 2019 r dla komputerów Mac dokumentacji
+title: Dokumentacja programu Visual Studio 2019 dla komputerów Mac
 metadata:
-  description: W tym artykule przedstawiono funkcje programu Visual Studio dla komputerów Mac.
+  description: W tym artykule wprowadzono funkcje Visual Studio dla komputerów Mac.
   author: asb3993
   ms.author: amburns
-  ms.date: 04/02/2019
+  ms.date: 08/08/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac
   ms.technology: vs-ide-general
@@ -13,11 +13,11 @@ sections:
   - title: Rozpoczynanie pracy z programem Visual Studio dla komputerów Mac
     items:
       - type: paragraph
-        text: Zainstaluj i Dowiedz się więcej o programie Visual Studio dla komputerów Mac rozwoju środowiska IDE (Integrated).
+        text: Zainstaluj i Poznaj Visual Studio dla komputerów Mac zintegrowane środowisko programistyczne (IDE).
       - type: list
         style: cards
         className: cardsM
-        columns: 2
+        columns: 3
         items:
           - href: ~/installation.md
             html: <p></p>
@@ -29,10 +29,15 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/logos/logo_vs-mac.svg'
             title: Tour Visual Studio for Mac
-  - title: Jakie aplikacje można tworzyć?
+          - href: 'https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+            title: Visual Studio dla komputerów Mac — informacje o wersji
+  - title: Jakie aplikacje mogę skompilować?
     items:
       - type: paragraph
-        text: 'Z programem Visual Studio dla komputerów Mac możesz tworzyć witryny sieci Web za pomocą platformy ASP.NET Core i aplikacji przy użyciu platformy .NET Core, gry i aparat Unity i aplikacje mobilne dla systemów Android i iOS za pomocą platformy Xamarin. Azure można włączyć we własnych aplikacjach.'
+        text: 'Za pomocą Visual Studio dla komputerów Mac można tworzyć witryny sieci Web z ASP.NET Core i aplikacjami przy użyciu platformy .NET Core, gier z systemem Unity oraz aplikacji mobilnych dla systemów Android i iOS przy użyciu środowiska Xamarin. Platforma Azure może być dołączana do wszystkich aplikacji.'
       - type: list
         style: icon48
         items:
@@ -52,10 +57,10 @@ sections:
               src: 'https://docs.microsoft.com/media/logos/logo_xamarin.svg'
             text: Xamarin
             href: /xamarin/
-  - title: Jakich języków można użyć?
+  - title: Jakich języków mogę używać?
     items:
       - type: paragraph
-        text: 'Dzięki programowi Visual Studio for Mac można pisać w C#, F#, Razor, HTML5, CSS, Javascript i Typescript, XAML i XML.'
+        text: 'Za pomocą Visual Studio dla komputerów Mac można pisać w C#, F#, Razor, HTML5, CSS, JavaScript i TypeScript, XAML i XML.'
       - type: list
         style: icon48
         items:
@@ -79,32 +84,44 @@ sections:
               src: 'https://docs.microsoft.com/media/logos/logo_html5.svg'
             text: HTML/Razor
             href: ~/razor.md
-  - title: Pisanie kodu za pomocą programu Visual Studio dla komputerów Mac
+  - title: Napisz kod przy użyciu Visual Studio dla komputerów Mac
     items:
       - type: paragraph
-        text: 'Dowiedz się więcej o korzystaniu z programu Visual Studio do zapisu, kompilowania, debugowania i przechowywanie kodu.'
+        text: 'Dowiedz się więcej o używaniu programu Visual Studio do pisania, kompilowania, debugowania i przechowywania kodu.'
       - type: list
         style: cards
         className: cardsM
         columns: 3
         items:
           - href: ~/source-editor.md
-            html: '<p>Funkcja IntelliSense, refaktoryzacji i wyróżniania składni ulubionego języka.</p>'
+            html: '<p>Funkcja IntelliSense, refaktoryzacja i wyróżnianie składni dla ulubionego języka.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
             title: Pisanie kodu
           - href: ~/compiling-and-building.md
-            html: <p>Skonfiguruj kompilatora i skompiluj aplikację.</p>
+            html: <p>Skonfiguruj kompilator i skompiluj aplikację.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_build.svg'
             title: Kompilowanie i tworzenie kompilacji
           - href: ~/debugging.md
-            html: <p>Uruchom aplikację w debugerze do badania problemów.</p>
+            html: '<p>Uruchom aplikację w debugerze, aby zbadać problemy.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_debug.svg'
             title: Debugowanie
           - href: ~/version-control.md
-            html: '<p>Dostęp do usługi Azure DevOps, Git lub Subversion repozytoriów źródłowych.</p>'
+            html: '<p>Dostęp do repozytoriów źródłowych usługi Azure DevOps, Git lub Subversion.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
             title: Kontrola wersji
+  - title: Potrzebuję więcej pomocy
+    items:
+      - type: paragraph
+        text: Linki do innej przydatnej zawartości
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://visualstudio.microsoft.com/vs/support/mac/">Obsługa Visual Studio dla komputerów Mac — często zadawane pytania</a>'
+          - html: '<a href="https://visualstudio.microsoft.com/vs/pricing/">Cennik i subskrypcje</a>'
+          - html: '<a href="https://visualstudio.microsoft.com/vs/compare/">Porównaj wersje</a>'
+          - html: '<a href="https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac">Dostęp subskrybenta (w tym starsze pliki do pobrania)</a>'
+          - html: '<a href="https://code.visualstudio.com">Visual Studio Code</a>'

@@ -1,6 +1,6 @@
 ---
 title: Konwencje nazewnictwa platformy .NET dla plików EditorConfig
-ms.date: 11/20/2017
+ms.date: 08/07/2019
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345705"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957428"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla EditorConfig
 
@@ -165,7 +165,8 @@ W poniższej tabeli przedstawiono dozwolone wartości ważności i znaczenie:
 
 Ważność | Efekt
 ------------ | -------------
-Brak lub dyskretny | Gdy ten styl nie jest przestrzegany, nie pokazuj niczego użytkownikowi; jednak automatycznie wygenerowany kod jest zgodny z tym stylem.
+brak | Reguła została całkowicie pominięta.
+Refaktoryzacja lub dyskretna | Gdy ten styl nie jest przestrzegany, nie pokazuj niczego użytkownikowi; jednak automatycznie wygenerowany kod jest zgodny z tym stylem.
 Propozycje | Gdy ten styl nie jest przestrzegany, Pokaż go użytkownikowi jako sugestię, jako punkty bazowe na pierwszych dwóch znakach. Nie ma ona wpływu na czas kompilacji.
 warning | Gdy ten styl nie jest przestrzegany, Pokaż Ostrzeżenie kompilatora w **Lista błędów**.
 error | Gdy ten styl nie jest przestrzegany, Pokaż błąd kompilatora w **Lista błędów**.
