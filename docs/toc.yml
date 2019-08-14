@@ -996,6 +996,12 @@
                       href: ide/reference/options-text-editor-xml-formatting.md
                     - name: Różne
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: Projektant Windows Forms
+              items:
+                - name: Ogólne
+                  href: ide/reference/options-windows-forms-designer.md
+                - name: Dostosowywanie interfejsu użytkownika danych
+                  href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: XAML Designer
               href: ide/reference/xaml-designer.md
         - name: Okno wyniku

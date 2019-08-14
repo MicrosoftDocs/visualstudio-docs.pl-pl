@@ -93,6 +93,10 @@
                   href: l2dbform-xaml-cs-source-code.md
 - name: Windows Forms
   items:
+    - name: Projektant formularzy systemu Windows — omówienie
+      href: windows-forms-designer-overview.md
+    - name: Wprowadzenie do Projektanta formularzy systemu Windows
+      href: walkthrough-windows-forms-designer.md
     - name: 'Samouczek 1: tworzenie przeglądarki obrazów (C#)'
       items:
         - name: Omówienie
