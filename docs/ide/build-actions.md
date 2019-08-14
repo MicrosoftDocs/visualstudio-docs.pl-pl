@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061a3cce8d1d29b57c02de4506a809994bf12910
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: eac31e0fe12d703e11d286b629e7e690f641f4e3
+ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416498"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68981104"
 ---
 # <a name="build-actions"></a>Akcje kompilacji
 
@@ -30,13 +30,29 @@ Aby ustawić akcję kompilacji dla pliku, Otwórz właściwości pliku w oknie *
 
 ## <a name="build-action-values"></a>Wartości akcji kompilacji
 
-Niektóre akcje kompilacji dla C# plików projektu i Visual Basic są następujące:
+Niektóre z bardziej typowych akcji kompilacji dla C# plików projektu i Visual Basic są następujące:
 
-* **Brak** — plik nie jest częścią kompilacji w żaden sposób. Ta wartość może być używana dla plików dokumentacji, takich jak pliki Readme, na przykład.
-* **Kompiluj** — plik jest przesyłany do kompilatora jako plik źródłowy.
-* **Zawartość** — plik oznaczony jako **zawartość** może zostać pobrany jako strumień przez wywołanie <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. W przypadku projektów ASP.NET te pliki są uwzględniane jako część lokacji podczas jej wdrażania.
-* **Zasób osadzony** — plik jest przesyłany do kompilatora jako zasób, który ma zostać osadzony w zestawie. Możesz wywołać <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> , aby odczytać plik z zestawu.
-* **AdditionalFiles** — plik tekstowy nieźródłowy, który jest przesyłany do kompilatora C# lub Visual Basic jako dane wejściowe. Ta akcja kompilacji służy głównie do zapewnienia danych wejściowych [analizatorów](../code-quality/roslyn-analyzers-overview.md) , do których odwołuje się projekt w celu sprawdzenia jakości kodu. Aby uzyskać więcej informacji, zobacz [Używanie dodatkowych plików](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).
+|Akcja kompilacji | Typy projektów | Opis |
+|-|-|
+| **AdditionalFiles** | C#, Visual Basic | Plik tekstowy nieźródłowy, który jest przesyłany do kompilatora C# lub Visual Basic jako dane wejściowe. Ta akcja kompilacji służy głównie do zapewnienia danych wejściowych [analizatorów](../code-quality/roslyn-analyzers-overview.md) , do których odwołuje się projekt w celu sprawdzenia jakości kodu. Aby uzyskać więcej informacji, zobacz [Używanie dodatkowych plików](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
+| **ApplicationDefinition** | WPF | Plik, który definiuje aplikację. Podczas pierwszego tworzenia projektu jest to *App. XAML*. |
+| **CodeAnalysisDictionary** | .NET | Niestandardowy słownik słów używany przez analizę kodu do sprawdzania pisowni. Zobacz [How to: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
+| **Opracowania** | ile | Plik jest przesyłany do kompilatora jako plik źródłowy.|
+| **Zawartość** | .NET | Plik oznaczony jako **zawartość** może zostać pobrany jako strumień przez wywołanie <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. W przypadku projektów ASP.NET te pliki są uwzględniane jako część lokacji podczas jej wdrażania.|
+| **DesignData** | WPF | Używane dla plików ViewModel języka XAML, aby umożliwić wyświetlanie kontrolek użytkownika w czasie projektowania przy użyciu fikcyjnych typów i przykładowych danych. |
+| **DesignDataWithDesignTimeCreateable** | WPF | Podobnie jak **DesignData**, ale z rzeczywistymi typami.  |
+| **Zasób osadzony** | .NET | Plik jest przesyłany do kompilatora jako zasób, który ma zostać osadzony w zestawie. Możesz wywołać <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> , aby odczytać plik z zestawu.|
+| **EntityDeploy** | .NET | W przypadku plików Entity Framework (EF). edmx, które określają wdrożenie artefaktów EF. |
+| **Fakes** | .NET | Używane dla środowiska testowania sztucznej firmy Microsoft. Zobacz [Izolowanie testowanego kodu za pomocą](../test/isolating-code-under-test-with-microsoft-fakes.md) elementów sztucznych firmy Microsoft |
+| **Brak** | ile | Plik nie jest częścią kompilacji w żaden sposób. Ta wartość może być używana dla plików dokumentacji, takich jak pliki Readme, na przykład.|
+| **Strona** | WPF | Kompiluj plik XAML do pliku typu binary. BAML w celu przyspieszenia ładowania w czasie wykonywania. |
+| **Zasób** | WPF | Określa, aby osadzić plik w pliku zasobów manifestu zestawu z rozszerzeniem *. g.* Resources. |
+| **Cieniowan** | .NET | Używane dla pliku. akcesora, który zawiera listę skompilowanych nazw plików zestawu, po jednym w każdym wierszu. Dla każdego zestawu na liście Generuj klasy publiczne z nazwami `ClassName_Accessor` , które są podobnie jak oryginały, ale z metodami publicznymi, a nie metodami prywatnymi. Używany do testowania jednostkowego. |
+| **Ekran powitalny** | WPF | Określa plik obrazu, który będzie wyświetlany w czasie wykonywania, gdy aplikacja jest uruchamiana. |
+| **XamlAppDef** | Windows Workflow Foundation | Instruuje kompilację, aby kompilować plik XAML przepływu pracy w zestawie z osadzonym przepływem pracy. |
+
+> [!NOTE]
+> Dodatkowe akcje kompilacji mogą być definiowane przez dla określonych typów projektów, więc lista akcji kompilacji zależy od typu projektu i wartości, które nie znajdują się na liście.
 
 ## <a name="see-also"></a>Zobacz także
 
