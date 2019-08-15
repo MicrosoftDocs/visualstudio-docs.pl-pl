@@ -2,24 +2,22 @@
 title: Numery wersji i daty wydania programu Visual Studio
 titleSuffix: ''
 description: Lista wydanych wersji i numery kompilacji dla programu Visual Studio, posortowane według daty.
-keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/06/2019
+ms.date: 08/14/2019
 ms.topic: reference
-helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f07b8c0fc5317f6646868ad61ba61e42754a79c
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9da89a2964dc5c4f33d4a0619a1b93c901054d3b
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870721"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024538"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -31,6 +29,9 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.2 | Wydanie | 13 sierpnia 2019 | 16.2.29209.62 |
+| 16.3.0 | Preview 2 | 13 sierpnia 2019 | 16.3.29209.152 |
+| 16.0.7 | Wydanie | 13 sierpnia 2019 | 16.0.28803.571 |
 | 16.2.1 | Wydanie | 6 sierpnia 2019 r. | 16.2.29201.188 |
 | 16.2.0 | Wydanie | 24 lipca 2019 r. | 16.2.29123.88 |
 | 16.3.0 | Wersja zapoznawcza 1 | 24 lipca 2019 r. | 16.3.29123.89 |
@@ -89,6 +90,8 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.15 | Wydanie | 13 sierpnia 2019 | 15.9.28307.812 |
+| 15.0.26 | Wydanie | 13 sierpnia 2019 | 15.0.26228.96 |
 | 15.9.14 | Wydanie | 9 lipca 2019 r. | 15.9.28307.770 |
 | 15.0.25 | Wydanie | 9 lipca 2019 r. | 15.0.26228.92 |
 | 15.9.13 | Wydanie | 11 czerwca 2019 r. | 15.9.28307.718 |
