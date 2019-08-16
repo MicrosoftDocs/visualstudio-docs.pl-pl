@@ -8,14 +8,14 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f947d8a4994c8a515a707f34a07065358194e09
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950244"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490674"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Instrukcje: Utwórz ustawienie testu dla testu obciążenia rozłożonego
+# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Instrukcje: Utwórz plik ustawień testu dla testu obciążenia rozłożonego
 
 Konfigurowanie *ustawienia testu* dla testów obciążenia, dzięki czemu można rozprowadzić te testy na wielu komputerach przy użyciu agentów testowych i kontrolerów testów. Można również skonfigurować ustawienia testu do użycia *adapterów danych diagnostycznych*, które określają rodzaje danych, które mają być zbierane lub określają wpływ na maszyny testowe podczas uruchamiania testów obciążenia w programie Visual Studio.
 
@@ -39,9 +39,7 @@ Kontroler testów będzie miał agentów, które mogą być używane dla każdej
 
 Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozwiązaniu dla testów obciążenia, które mają być uruchamiane w programie Visual Studio.
 
-## <a name="create-a-test-setting-for-a-distributed-load-test"></a>Utwórz ustawienie testu dla testu obciążenia rozłożonego
-
-### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Aby dodać ustawienia testów dla rozłożonego testu obciążenia
+## <a name="create-a-test-settings-file"></a>Utwórz plik ustawień testu
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **elementy rozwiązania**, wskaż polecenie **Dodaj**, a następnie wybierz **nowy element**.
 
@@ -55,15 +53,9 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
      Nowy plik ustawień testowych pojawia się w **Eksploratora rozwiązań**w obszarze **elementy rozwiązania** folderu.
 
-    > [!NOTE]
-    > Lista ustawień testowych, które wyświetla Visual Studio Enterprise jest tworzony na podstawie listy plików ustawień testowych w **elementy rozwiązania** folderu. Na przykład, przetestuj pliki ustawień w **elementy rozwiązania** folderu są wyświetlane, gdy używasz **zaznacz aktywne ustawienia testu** opcja **Test** menu. Oznacza to, że po przeniesieniu pliku ustawień testu do innej lokalizacji w hierarchii rozwiązania może już służyć jako ustawienie testu w programie Visual Studio zintegrowanego środowiska programistycznego.
-
 5. **Ustawienia testu** zostanie wyświetlone okno dialogowe. **Ogólne** została zaznaczona strona.
 
      Można teraz edytować i zapisać wartości ustawień testu.
-
-    > [!NOTE]
-    > Wszystkich ustawień testu, tworzonych jest wymieniony jako wyborem dla **zaznacz aktywne ustawienia testu** i **Edytuj ustawienia testu** opcji na **Test** menu.
 
 6. W obszarze **nazwa**, wpisz nazwę ustawień testu.
 
@@ -125,14 +117,14 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
     |Adapter danych diagnostycznych|Używanie w testach obciążeniowych|Skojarzonego tematu|
     |-|-------------------------|-|
-    |**Serwer Proxy klienta ASP.NET dla IntelliTrace i wpływu Test:** Ten serwer proxy umożliwia zbieranie informacji na temat połączeń http od klienta do serwera sieci web dla adapterów danych diagnostycznych IntelliTrace i badanie wpływu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Jeśli nie ma określonych specjalnych potrzeb zbierania informacji systemowych maszyny agenta testowego nie zawierają tej karty. **Uwaga:**  Zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane. <br /><br /> Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||
-    |**IntelliTrace:** Można skonfigurować informacji diagnostycznych śledzenia, który jest przechowywany w pliku dziennika. Plik dziennika ma rozszerzenie *.tdlog*. Kiedy uruchamiasz test i krok testu zakończy się niepowodzeniem, można utworzyć usterkę. Plik dziennika, który zawiera śledzenia diagnostycznego jest automatycznie dołączany do tej usterki. Dane, które są zbierane w pliku dziennika zwiększają produktywność debugowania, skracając czas wymagany do odtworzenia i diagnozy błędu w kodzie. W tym dzienniku plików sesja lokalna może być odtworzona na innym komputerze. Zmniejsza to ryzyko, że błędu nie można odtworzyć.<br /><br /> Aby uzyskać więcej informacji, zobacz [danych zbierania IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona ważnej informacji](../test/media/vc364f3.gif)<br /><br /> Zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane i rejestrowane. Należy podjąć próbę używania karty IntelliTrace tylko w testach obciążenia, które nie trwają długo i nie używają wielu agentów testowych.|[Instrukcje: Zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
-    |**ASP.NET Profiler:** Można utworzyć ustawienie testu zawierające profilowania, ASP.NET, która zbiera dane dotyczące wydajności w aplikacji sieci web platformy ASP.NET.|Adapter danych diagnostycznych profilera ASP.NET profile proces Internet Information Services (IIS), dzięki czemu nie będą działać względem serwera wdrożeniowego sieci web. Profilowanie witryny sieci Web w teście obciążenia, musisz zainstalować agenta testowego na komputerze, na którym jest zasilany z usług IIS. Agent testowy nie będzie generować obciążenia, ale będzie wyłącznie agentem kolekcji. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|[Instrukcje: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawień testów](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Dziennik zdarzeń:** Można skonfigurować ustawienie testu, by obejmowało gromadzenie dzienników zdarzeń, które zostaną uwzględnione w wynikach testu.||[Instrukcje: Konfigurowanie zbierania zdarzeń dziennika przy użyciu ustawień testu](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
-    |**Emulacja sieci:** Można określić, że chcesz umieścić sztuczne obciążenie sieciowe w badaniu, korzystając z ustawienia testu. Emulacja sieci ma wpływ na komunikację do i z komputera poprzez emulację szybkości połączenia określonej sieci, takich jak połączenie dodzwaniane. **Uwaga:**  Emulacja sieci nie można zwiększyć szybkość połączenia sieciowego.|Karta emulacji sieci jest ignorowana przez testy obciążenia. Zamiast tego testy obciążenia używają ustawień, które są określone w mieszanym profilu sieciowym Scenariusz testów obciążenia.<br /><br /> Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
-    |**Informacje o systemie:** Ustawienia testu można skonfigurować pod kątem obejmujący informacje o systemie o maszynach, na których jest uruchamiany moduł zbierający dane diagnostyczne i informacje o systemie. Informacje o systemie jest określony w wynikach testu przy użyciu ustawień testu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Można zbierać informacje o systemie zarówno agentów obciążenia, jak i badanego systemu.|Do zebrania tych informacji jest wymagana żadna konfiguracja.|
-    |**Testowanie skutków:** Możesz zbierać informacje o tym, jakie zastosowano metody kodu aplikacji po uruchomieniu przypadku testowego. Może to służyć razem ze zmianami w kodzie aplikacji poczynionymi przez deweloperów do określenia, który test miały wpływ te zmiany deweloperskie.|Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||
-    |**Rejestrator wideo:** Możesz utworzyć nagranie wideo swojej sesji pulpitu, po uruchomieniu automatycznych testów. Może to być pomocne przy podglądzie akcji użytkownika dla kodowanego testu interfejsu użytkownika. Nagranie wideo może pomóc innym członkom zespołu wyizolować elementy aplikacji, które są trudne do odtworzenia. **Uwaga:**  Podczas zdalnego wykonywania testów Rejestrator wideo nie będzie działać, chyba że agent jest uruchomiony w trybie procesu interaktywnego.|![Ikona ważnej informacji](../test/media/vc364f3.gif) **ostrzeżenia:**  Nie zalecamy użycia karty Video Recorder do testów obciążenia.|[Instrukcje: Obejmują nagrań ekranu i głosu podczas testów przy użyciu ustawień testu](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**ASP.NET serwer proxy klienta dla IntelliTrace i wpływu na testowanie:** Ten serwer proxy umożliwia zbieranie informacji o wywołaniach http z klienta do serwera sieci Web dla IntelliTrace i adapterów danych diagnostycznych dotyczących wpływu testów.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Jeśli nie ma określonych specjalnych potrzeb zbierania informacji systemowych maszyny agenta testowego nie zawierają tej karty. **Ostrzeżenie**  Nie zaleca się używania karty IntelliTrace w testach obciążenia z powodu problemów występujących ze względu na dużą ilość zbieranych danych. <br /><br /> Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||
+    |**IntelliTrace** Można skonfigurować określone informacje śledzenia diagnostycznego, które są przechowywane w pliku dziennika. Plik dziennika ma rozszerzenie *.tdlog*. Kiedy uruchamiasz test i krok testu zakończy się niepowodzeniem, można utworzyć usterkę. Plik dziennika, który zawiera śledzenia diagnostycznego jest automatycznie dołączany do tej usterki. Dane, które są zbierane w pliku dziennika zwiększają produktywność debugowania, skracając czas wymagany do odtworzenia i diagnozy błędu w kodzie. W tym dzienniku plików sesja lokalna może być odtworzona na innym komputerze. Zmniejsza to ryzyko, że błędu nie można odtworzyć.<br /><br /> Aby uzyskać więcej informacji, zobacz [danych zbierania IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona ważnej informacji](../test/media/vc364f3.gif)<br /><br /> Zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane i rejestrowane. Należy podjąć próbę używania karty IntelliTrace tylko w testach obciążenia, które nie trwają długo i nie używają wielu agentów testowych.|[Instrukcje: Zbieraj dane IntelliTrace, aby ułatwić debugowanie trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
+    |**Profiler ASP.NET:** Można utworzyć ustawienie testu, które obejmuje profilowanie ASP.NET, które zbiera dane dotyczące wydajności w aplikacjach sieci Web ASP.NET.|Adapter danych diagnostycznych profilera ASP.NET profile proces Internet Information Services (IIS), dzięki czemu nie będą działać względem serwera wdrożeniowego sieci web. Profilowanie witryny sieci Web w teście obciążenia, musisz zainstalować agenta testowego na komputerze, na którym jest zasilany z usług IIS. Agent testowy nie będzie generować obciążenia, ale będzie wyłącznie agentem kolekcji. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|[Instrukcje: Konfigurowanie profilera ASP.NET na potrzeby testów obciążenia przy użyciu ustawień testu](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
+    |**Dziennik zdarzeń:** Można skonfigurować ustawienie testu, aby uwzględnić zbieranie dzienników zdarzeń, które zostaną uwzględnione w wynikach testu.||[Instrukcje: Konfigurowanie zbierania dzienników zdarzeń przy użyciu ustawień testu](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**Emulacja sieci:** Możesz określić, że chcesz umieścić sztuczne obciążenie sieciowe w teście przy użyciu ustawienia testu. Emulacja sieci ma wpływ na komunikację do i z komputera poprzez emulację szybkości połączenia określonej sieci, takich jak połączenie dodzwaniane. **Uwaga:**  Emulacji sieci nie można użyć do zwiększenia szybkości połączenia sieciowego.|Karta emulacji sieci jest ignorowana przez testy obciążenia. Zamiast tego testy obciążenia używają ustawień, które są określone w mieszanym profilu sieciowym Scenariusz testów obciążenia.<br /><br /> Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
+    |**Informacje o systemie:** Ustawienie testu można skonfigurować w taki sposób, aby obejmowało informacje o systemie maszyn, na których uruchomiono diagnostykę informacji o systemie i moduł zbierający dane. Informacje o systemie jest określony w wynikach testu przy użyciu ustawień testu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Można zbierać informacje o systemie zarówno agentów obciążenia, jak i badanego systemu.|Do zebrania tych informacji jest wymagana żadna konfiguracja.|
+    |**Wpływ na test:** Można zbierać informacje o tym, które metody kodu aplikacji były używane po uruchomieniu przypadku testowego. Może to służyć razem ze zmianami w kodzie aplikacji poczynionymi przez deweloperów do określenia, który test miały wpływ te zmiany deweloperskie.|Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||
+    |**Rejestrator wideo:** Możesz utworzyć nagranie wideo swojej sesji pulpitu podczas uruchamiania testu automatycznego. Może to być pomocne przy podglądzie akcji użytkownika dla kodowanego testu interfejsu użytkownika. Nagranie wideo może pomóc innym członkom zespołu wyizolować elementy aplikacji, które są trudne do odtworzenia. **Uwaga:**  Gdy testy są uruchamiane zdalnie, rejestrator wideo nie będzie działać, chyba że agent zostanie uruchomiony w trybie przetwarzania interaktywnego.|![Ostrzeżenie o](../test/media/vc364f3.gif) ważnej ikonie **:**  Nie zaleca się korzystania z karty rejestratora wideo na potrzeby testów obciążenia.|[Instrukcje: Uwzględnij nagrania ekranu i głosu podczas testów przy użyciu ustawień testu](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Wybierz **wdrożenia**.
 
@@ -154,9 +146,9 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
      **Skrypty instalacyjne i czyszczące** zostanie wyświetlona strona.
 
-    1. Wpisz lokalizację pliku skryptu w **skrypt instalacyjny** lub wybierz wielokropek (**...** ), aby zlokalizować konfigurację scenariusza.
+    1. Wpisz lokalizację pliku skryptu w **skrypt instalacyjny** lub wybierz wielokropek ( **...** ), aby zlokalizować konfigurację scenariusza.
 
-    2. Wpisz lokalizację pliku skryptu w **skrypt czyszczący** lub wybierz wielokropek (**...** ), aby zlokalizować czyszczenie scenariusza.
+    2. Wpisz lokalizację pliku skryptu w **skrypt czyszczący** lub wybierz wielokropek ( **...** ), aby zlokalizować czyszczenie scenariusza.
 
 24. Aby uruchomić testy przy użyciu innego hosta, wybierz **hosty**.
 
@@ -182,14 +174,11 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
 28. Aby zapisać ustawienia testu, wybierz **Zapisz jako**. Wpisz nazwę pliku, który ma w **nazwa obiektu**.
 
-    > [!NOTE]
-    > Jeśli musisz zmienić swoje ustawienia testu, wybierz opcję **Test** , a następnie wybierz **Edytuj ustawienia testu** i wskaż Ustawienia testu, które zostały utworzone.
-
-### <a name="to-remove-a-test-settings-from-your-solution"></a>Aby usunąć ustawienia testowe z rozwiązania
+## <a name="remove-a-test-settings-file-from-your-solution"></a>Usuwanie pliku ustawień testu z rozwiązania
 
 W obszarze **elementy rozwiązania** folderu w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy ustawienia testu, które chcesz usunąć, a następnie wybierz **Usuń**.
 
-Plik ustawień testowych jest usuwany z rozwiązania. Ta zmiana jest odzwierciedlana na liście wyborów dla **wybierz aktywne ustawienia testów** i **Edytuj ustawienia testu** opcji na **testu** menu.
+Plik ustawień testowych jest usuwany z rozwiązania.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: Migracja rozszerzalności projektanta XAML
+title: projektant XAML migracji rozszerzalności
 ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
@@ -9,45 +9,45 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890313"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024555"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migracja rozszerzalności projektanta XAML
 
-W programie Visual Studio 2019 r, Projektant XAML obsługuje dwie różne architektury służące: Architektura projektanta izolacji i nowszą architektury powierzchni izolacji. Ten proces przejścia architektury jest wymagany do obsługi środowisk uruchomieniowych docelowych, które nie mogą być hostowane w procesie .NET Framework. Przejście do architektury powierzchni izolacji wprowadza zmiany powodujące niezgodność w modelu rozszerzeń innych firm. W tym artykule opisano te zmiany, które są dostępne w kanale 16.2 2019 r w usłudze Visual Studio (wersja zapoznawcza).
+W programie Visual Studio 2019 Projektant XAML obsługuje dwie różne architektury: architekturę izolacji projektanta i nowszą architekturę izolacji powierzchni. To przejście architektury jest wymagane do obsługi docelowych środowisk uruchomieniowych, które nie mogą być hostowane w procesie .NET Framework. Przejście do architektury izolacji powierzchni wprowadza istotne zmiany w modelu rozszerzalności innych firm. W tym artykule opisano te zmiany, które są dostępne w programie Visual Studio 2019, począwszy od wersji 16,3.
 
-**Izolacja projektanta** jest używany przez projektanta WPF dla projektów przeznaczonych dla platformy .NET Framework i obsługuje *. design.dll* rozszerzenia. Kod użytkownika, bibliotek kontrolek i rozszerzeń innych firm, które zostały załadowane w procesie zewnętrznym (*XDesProc.exe*) oraz rzeczywisty kod projektanta i panele projektanta.
+**Izolacja projektanta** jest używana przez projektanta WPF dla projektów, które są przeznaczone dla .NET Framework i obsługuje rozszerzenia *. Design. dll* . Kod użytkownika, biblioteki formantów i rozszerzenia innych firm są ładowane w procesie zewnętrznym (*XDesProc. exe*) wraz z rzeczywistym kodem projektanta i panelami projektanta.
 
-**Urządzenia Surface izolacji** jest używany przez projektanta platformy uniwersalnej systemu Windows. Jest on również używany przez projektanta WPF dla projektów przeznaczonych dla platformy .NET Core. W przypadku izolacji powierzchni jedynym użytkownikiem biblioteki kodu i kontroli są ładowane w oddzielnym procesie, podczas projektanta i jej zespoły są ładowane w procesie programu Visual Studio (*DevEnv.exe*). Środowisko uruchomieniowe używane do wykonywania bibliotek kodu i kontroli użytkownika różni się od używanej przez program .NET Framework dla rzeczywistego projektanta i kodu rozszerzeń innych firm.
+**Izolacja powierzchni** jest używana przez projektanta platformy UWP. Jest on również używany przez projektanta WPF dla projektów przeznaczonych dla platformy .NET Core. W przypadku izolacji powierzchni są ładowane tylko biblioteki kodu użytkownika i kontroli w osobnym procesie, podczas gdy projektant i jego panele są załadowane w procesie programu Visual Studio (*DevEnv. exe*). Środowisko uruchomieniowe używane do wykonywania kodu użytkownika i bibliotek formantów jest inne niż używane przez .NET Framework dla bieżącego projektanta i kodu rozszerzalności innych firm.
 
-![rozszerzalność migracji architektury](media/xaml-designer-extensibility-migration-architecture.png)
+![Rozszerzalność — migracja — architektura](media/xaml-designer-extensibility-migration-architecture.png)
 
-Ta modyfikacja Architektura rozszerzenia innych firm nie były ładowane w tym samym procesie co bibliotek kontrolek innych firm. Rozszerzenia można już nie ma bezpośredniej zależności na bibliotek kontrolek lub uzyskać bezpośredni dostęp do środowiska wykonawczego obiektów. Rozszerzenia, które wcześniej zostały napisane dla przy użyciu architektury projektanta izolacji *Microsoft.Windows.Extensibility.dll* interfejsu API muszą być migrowane do nowego podejścia do pracy z architekturą powierzchni izolacji. W praktyce musisz być skompilowany nowych zestawów API rozszerzalności istniejące rozszerzenie. Dostęp do środowiska uruchomieniowego kontroli typów za pośrednictwem [typeof](/dotnet/csharp/language-reference/keywords/typeof) lub wystąpienia środowiska uruchomieniowego musi zostać zastąpione lub usunięty, ponieważ kontrolka biblioteki są obecnie ładowane w ramach innego procesu.
+Ze względu na to przejście do architektury rozszerzenia innych firm nie są już ładowane do tego samego procesu co biblioteki formantów innych firm. Rozszerzenia nie mogą już mieć bezpośrednich zależności od bibliotek formantów ani bezpośredniego dostępu do obiektów środowiska uruchomieniowego. Rozszerzenia, które zostały wcześniej napisano dla architektury izolacji projektanta przy użyciu interfejsu API *Microsoft. Windows. rozszerzalność. dll* , muszą zostać zmigrowane do nowego podejścia do pracy z architekturą izolacji powierzchni. W tym przypadku istniejące rozszerzenie będzie musiało zostać skompilowane pod kątem nowych zestawów interfejsów API rozszerzalności. Dostęp do typów kontroli środowiska uruchomieniowego za pomocą wystąpień [typeof](/dotnet/csharp/language-reference/keywords/typeof) lub uruchomieniowych musi zostać zamieniony lub usunięty, ponieważ biblioteki formantów są teraz ładowane w innym procesie.
 
-## <a name="new-extensibility-api-assemblies"></a>Nowych zestawów rozszerzeń interfejsu API
+## <a name="new-extensibility-api-assemblies"></a>Nowe zestawy interfejsów API rozszerzalności
 
-Nowe zestawy API rozszerzalności są podobne do istniejących zestawów API rozszerzalności, ale wykonać inny schemat nazewnictwa, aby odróżnić je. Podobnie aby odzwierciedlały nowe nazwy zestawu zmieniły się nazwy przestrzeni nazw.
+Nowe zestawy interfejsów API rozszerzalności są podobne do istniejących zestawów interfejsów API rozszerzalności, ale używają różnych schematów nazewnictwa, aby je odróżnić. Podobnie nazwy przestrzeni nazw zostały zmienione w celu odzwierciedlenia nowych nazw zestawów.
 
-| Projektanta izolacji zestawu interfejsów API            | Izolacja powierzchni interfejsu API zestawu                       |
+| Zestaw interfejsów API izolacji projektanta            | Zestaw interfejsu API izolacji powierzchni                       |
 |:------------------------------------------ |:---------------------------------------------------- |
 | Microsoft.Windows.Design.Extensibility.dll | Microsoft.VisualStudio.DesignTools.Extensibility.dll |
 | Microsoft.Windows.Design.Interaction.dll   | Microsoft.VisualStudio.DesignTools.Interaction.dll   |
 
-## <a name="new-file-extension-and-discovery"></a>Nowe rozszerzenie pliku i odnajdywania
+## <a name="new-file-extension-and-discovery"></a>Nowe rozszerzenie i odnajdowanie plików
 
-Zamiast używania *. design.dll* rozszerzenie, nowe powierzchni rozszerzenia zostanie odnaleziona przy użyciu pliku *. designtools.dll* rozszerzenie pliku. *. design.dll* i *. designtools.dll* rozszerzenia może istnieć w tym samym *projektowania* podfolderu.
+Zamiast używać rozszerzenia pliku *. Design. dll* , nowe rozszerzenia powierzchni będą odnajdywane przy użyciu rozszerzenia pliku *. DesignTools. dll* . rozszerzenia *. Design. dll* i *. DesignTools. dll* mogą znajdować się w tym samym podfolderze *projektu* .
 
-Gdy bibliotek kontrolek innych firm są kompilowane dla rzeczywistego docelowe środowisko uruchomieniowe (.NET Core i platformy uniwersalnej systemu Windows), *. designtools.dll* rozszerzenia zawsze powinna być skompilowana jako zestawu .NET Framework.
+Chociaż biblioteki formantów innych firm są kompilowane dla rzeczywistego docelowego środowiska uruchomieniowego (.NET Core lub platformy UWP), rozszerzenie *. DesignTools. dll* powinno być zawsze kompilowane jako zestaw .NET Framework.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Rozdzielenie atrybut tabel z typami środowiska wykonawczego
+## <a name="decouple-attribute-tables-from-runtime-types"></a>Oddziel Tabele atrybutów od typów środowiska uruchomieniowego
 
-Model rozszerzalności powierzchni izolacji nie pozwala na rozszerzenia są zależne od rzeczywistego formantu biblioteki, a w związku z tym, rozszerzenia nie może odwoływać się do typów z biblioteki kontroli. Na przykład *MyLibrary.designtools.dll* nie powinny mieć zależność *MyLibrary.dll*.
+Model rozszerzalności izolacji powierzchni nie zezwala na używanie rozszerzeń w przypadku rzeczywistych bibliotek kontroli i dlatego rozszerzenia nie mogą odwoływać się do typów z biblioteki formantów. Na przykład biblioteka. *DesignTools. dll* nie powinna być zależna od *biblioteki. dll*.
 
-Takie zależności zostały najczęściej, gdy rejestrowanie metadanych dla typów za pomocą atrybutu tabel. Kod rozszerzenia, który odwołuje się do biblioteki formantów typy bezpośrednio za pośrednictwem [typeof](/dotnet/csharp/language-reference/keywords/typeof) lub [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) zostanie zastąpiony w nowych interfejsów API za pomocą nazw opartej na ciągach typu:
+Takie zależności były najczęściej używane podczas rejestrowania metadanych dla typów za pośrednictwem tabel atrybutów. Kod rozszerzenia, który odwołuje się do typów bibliotek kontroli bezpośrednio za pośrednictwem [typeof](/dotnet/csharp/language-reference/keywords/typeof) lub GetType, jest zastępowany w nowych interfejsach API przy użyciu nazw typów opartych na ciągach: [](/dotnet/visual-basic/language-reference/operators/gettype-operator)
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -92,11 +92,11 @@ Public Class AttributeTableProvider
 End Class
 ```
 
-## <a name="feature-providers-and-model-api"></a>Dostawców funkcji i interfejs API modelu
+## <a name="feature-providers-and-model-api"></a>Dostawcy funkcji i interfejs API modelu
 
-Dostawców funkcji są implementowane w zestawach, rozszerzenia i załadowany w procesie programu Visual Studio. `FeatureAttribute` będą nadal odwoływać się bezpośrednio przy użyciu typów dostawców funkcji [typeof](/dotnet/csharp/language-reference/keywords/typeof).
+Dostawcy funkcji są zaimplementowani w zestawach rozszerzeń i załadowane w procesie programu Visual Studio. `FeatureAttribute`Program będzie nadal odwoływać się do typów dostawców funkcji bezpośrednio przy użyciu [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
-Obecnie obsługiwane są następujące dostawców funkcji:
+Obecnie obsługiwane są następujące dostawcy funkcji:
 
 * `DefaultInitializer`
 * `AdornerProvider`
@@ -104,9 +104,9 @@ Obecnie obsługiwane są następujące dostawców funkcji:
 * `ParentAdapter`
 * `PlacementAdapter`
 
-Ponieważ dostawców funkcji zostaną załadowane w procesie różni się od rzeczywistej środowiska uruchomieniowego bibliotek kodu i kontroli, nie są już możliwość bezpośredniego dostępu do obiektów w czasie wykonywania. Zamiast tego należy przekonwertować takie interakcje przy użyciu odpowiednich interfejsów API opartych na modelu. Interfejs API modelu została zaktualizowana, a dostęp do <xref:System.Type> lub <xref:System.Object> jest albo nie będą już dostępne lub został zastąpiony `TypeIdentifier` i `TypeDefinition`.
+Ponieważ dostawcy funkcji są obecnie załadowane w procesie innym niż rzeczywisty kod środowiska uruchomieniowego i biblioteki kontroli, nie mogą oni już bezpośrednio uzyskiwać dostępu do obiektów środowiska uruchomieniowego. Zamiast tego wszystkie takie interakcje muszą zostać przekonwertowane, aby można było korzystać z odpowiednich interfejsów API opartych na modelu. Interfejs API modelu został <xref:System.Type> zaktualizowany i dostęp do <xref:System.Object> niego lub nie jest już dostępny lub został zastąpiony programem `TypeIdentifier` i `TypeDefinition`.
 
-`TypeIdentifier` Określa ciąg bez identyfikowania typu nazwy zestawu. A `TypeIdenfifier` mógł zostać rozpoznany `TypeDefinition` do zapytania dodatkowych informacji o typie. `TypeDefinition` Nie można buforować wystąpień w kodzie rozszerzenia.
+`TypeIdentifier`reprezentuje ciąg bez nazwy zestawu identyfikującego typ. Można rozpoznać do zapytania, aby uzyskać dodatkowe informacje o typie. `TypeDefinition` `TypeIdenfifier` `TypeDefinition`wystąpienia nie mogą być buforowane w kodzie rozszerzenia.
 
 ```csharp
 TypeDefinition type = ModelFactory.ResolveType(
@@ -128,13 +128,13 @@ If type?.IsSubclassOf(buttonType) Then
 End If
 ```
 
-Interfejsy API są usuwane z zestawu rozszerzeń interfejsu API powierzchni izolacji:
+Interfejsy API usunięte z zestawu interfejsów API rozszerzalności izolacji powierzchni:
 
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
 
-Interfejsy API, używanego przez `TypeIdentifier` zamiast <xref:System.Type>:
+Interfejsy API używane `TypeIdentifier` <xref:System.Type>zamiast:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
@@ -150,12 +150,12 @@ Interfejsy API, używanego przez `TypeIdentifier` zamiast <xref:System.Type>:
 * `ParentAdpater.CanParent(ModelItem parent, Type childType)`
 * `ParentAdapter.RedirectParent(ModelItem parent, Type childType)`
 
-Interfejsy API, używanego przez `TypeIdentifier` zamiast <xref:System.Type> i nie obsługują już argumenty konstruktora:
+Interfejsy API, `TypeIdentifier` które używają <xref:System.Type> zamiast i nie obsługują już argumentów konstruktora:
 
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, CreateOptions options, params object[] arguments)`
 
-Interfejsy API, używanego przez `TypeDefinition` zamiast <xref:System.Type>:
+Interfejsy API używane `TypeDefinition` <xref:System.Type>zamiast:
 
 * `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
@@ -173,7 +173,7 @@ Interfejsy API, używanego przez `TypeDefinition` zamiast <xref:System.Type>:
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
 
-Interfejsy API, używanego przez `ModelItem` zamiast <xref:System.Object>:
+Interfejsy API używane `ModelItem` <xref:System.Object>zamiast:
 
 * `ModelItemCollection.Insert(int index, object value)`
 * `ModelItemCollection.Remove(object value)`
@@ -182,7 +182,12 @@ Interfejsy API, używanego przez `ModelItem` zamiast <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Znane typy pierwotne, takie jak `Int32`, `String`, lub `Thickness` mogą być przekazywane do interfejsu API modelu w postaci wystąpień w .NET Framework i zostanie przekonwertowana na odpowiadający mu obiekt środowiska uruchomieniowego procesu docelowego. Na przykład:
+Ponadto interfejsy `ModelItem` API, `SetValue` takie jak, obsługują tylko wystąpienia typów pierwotnych lub wbudowanych typów .NET Framework, które można przekonwertować dla docelowego środowiska uruchomieniowego. Obsługiwane są obecnie następujące typy:
+
+* Typy pierwotne .NET Framework `Boolean`: `Byte`, `Char`, `DateTime` ,,`Guid` ,`SByte` ,, ,,`Int64`, ,`Nullable` `Int16` `Double` `Enum` `Int32` , `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
+* Znane typy .NET Framework WPF (i typy pochodne): `Brush`, `Color`, `CompositeTransform` `EllipseGeometry` `EasingFunctionBase` `Duration` `CornerRadius`,,,, `EasingMode`, `FontFamily` ,,`Geometry` , `GeneralTransform` , `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
+
+Na przykład:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -212,10 +217,10 @@ Public Class MyControlDefaultInitializer
 End Class
 ```
 
-Więcej przykładów kodu są dostępne w [rozszerzalności przykłady, języka xaml designer w-](https://github.com/microsoft/xaml-designer-extensibility-samples) repozytorium.
+Więcej przykładów kodu jest dostępnych w repozytorium [XAML-Designer-rozszerzalności-Samples](https://github.com/microsoft/xaml-designer-extensibility-samples) .
 
-## <a name="limited-support-for-designdll-extensions"></a>Ograniczona obsługa. design.dll rozszerzenia
+## <a name="limited-support-for-designdll-extensions"></a>Ograniczona obsługa rozszerzeń. Design. dll
 
-Ewentualne *. designtools.dll* rozszerzenia został odnaleziony w bibliotece kontrolki, jest ładowany, pierwsze i odnajdywanie *. design.dll* rozszerzenia jest pomijany.
+Jeśli jakieś rozszerzenie *. DesignTools. dll* zostało odnalezione dla biblioteki formantów, zostanie ono najpierw załadowane i odnajdywanie dla rozszerzeń *. Design. dll* jest pomijane.
 
-Jeśli nie *. designtools.dll* rozszerzenia są obecne, ale *. design.dll* rozszerzenie zostanie znaleziony, próbuje załadować tego zestawu można wyodrębnić informacji o tabeli atrybutu do obsługi usługi języka XAML Edytor języka Basic i scenariuszy Inspektora właściwości. Ten mechanizm jest ograniczona w zakresie. Nie zezwala na ładowanie rozszerzeń projektanta izolacji wykonywanie dostawców funkcji, ale może zapewnić podstawowa pomoc techniczna dla istniejących bibliotek kontrolek WPF.
+Jeśli nie ma rozszerzenia. *DesignTools. dll* , ale znaleziono rozszerzenie *. Design. dll* , usługa języka XAML próbuje załadować ten zestaw w celu wyodrębnienia informacji z tabeli atrybutów do obsługi podstawowych scenariuszy edytora i Inspektora właściwości. Ten mechanizm jest ograniczony do zakresu. Nie zezwala na ładowanie rozszerzeń izolacji projektanta w celu wykonywania dostawców funkcji, ale może zapewnić podstawową pomoc techniczną dla istniejących bibliotek formantów WPF.

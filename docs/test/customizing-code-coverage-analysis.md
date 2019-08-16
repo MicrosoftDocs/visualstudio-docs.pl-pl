@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965558"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490629"
 ---
 # <a name="customize-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 
@@ -30,18 +30,38 @@ Aby dostosować pokrycie kodu, wykonaj następujące kroki:
 
 1. Dodaj plik parametrów uruchomieniowych do rozwiązania. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj** > **nowy element**i wybierz **pliku XML**. Zapisz plik pod nazwą takich jak *CodeCoverage.runsettings*.
 
-1. Dodaj zawartość z przykładowy plik na końcu tego artykułu, a następnie dostosować ją do swoich potrzeb zgodnie z opisem w kolejnych sekcjach.
+2. Dodaj zawartość z przykładowy plik na końcu tego artykułu, a następnie dostosować ją do swoich potrzeb zgodnie z opisem w kolejnych sekcjach.
 
-1. Wybierz plik parametrów uruchomieniowych na **testu** menu, wybierz **ustawienia testu** > **zaznacz plik ustawień testu**. Aby określić plik parametrów uruchomieniowych do uruchamiania testów z wiersza polecenia lub w przepływie pracy kompilacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+::: moniker range="vs-2017"
+
+3. Wybierz plik parametrów uruchomieniowych na **testu** menu, wybierz **ustawienia testu** > **zaznacz plik ustawień testu**. Aby określić plik parametrów uruchomieniowych do uruchamiania testów z wiersza polecenia lub w przepływie pracy kompilacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Aby wybrać plik parametrów uruchomieniowych, w **Eksploratorze testów**wybierz strzałkę na przycisku **Ustawienia** , a następnie wybierz pozycję **Wybierz plik ustawień**. Aby określić plik parametrów uruchomieniowych do uruchamiania testów z wiersza polecenia lub w przepływie pracy kompilacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
 
    Po wybraniu **Analizuj pokrycie kodu**, informacje o konfiguracji są odczytywane z pliku parametrów uruchomieniowych.
 
    > [!TIP]
    > Poprzednie wyniki pokrycia kodu i kolorowanie kodu nie są automatycznie ukrywane podczas uruchamiania testów czy aktualizowania kodu.
 
-Aby włączyć ustawienia niestandardowe i wyłączonym, usuń zaznaczenie lub zaznacz plik w **testu** > **ustawienia testu** menu.
+::: moniker range="vs-2017"
+
+Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wybierz plik w menu **Ustawienia testu** **testowego** > .
 
 ![Menu Ustawienia testu przy użyciu pliku ustawień niestandardowych](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wybierz plik z menu **Ustawienia** w **Eksploratorze testów**.
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>Określ ścieżki wyszukiwania symboli
 
@@ -89,7 +109,7 @@ Jeśli **Include** jest pusta, wówczas przetwarzanie pokrycia kodu obejmuje wsz
 
 Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są takie same jak symbole wieloznaczne. W szczególności:
 
-- **. \\** * odpowiada ciągowi dowolnych znaków
+- **. \***  dopasowuje ciąg znaków
 
 - **\\.** odpowiada kropce ".")
 

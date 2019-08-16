@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Wynajęcie Visual Studio Professional lub Visual Studio Enterprise w ciągu miesiąca do miesiąca lub rocznego, bez długoterminowej umowy.
-ms.openlocfilehash: 5844ac1e22346e8001f0a682848b36fdb6b3f8a5
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: dea2c32c5737cb5f2798b3d0ebdbd3398e1bc20b
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606112"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490692"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji Visual Studio Professional i Visual Studio Enterprise w chmurze
 Możesz kupić [Visual Studio Professional i Visual Studio Enterprise subskrypcje](https://visualstudio.microsoft.com/subscriptions/) w [Visual Studio Marketplace](https://marketplace.visualstudio.com). Są one nazywane **"subskrypcjami w chmurze"** .
@@ -89,7 +89,7 @@ Odp.:  Ta zmiana nie wpłynie na istniejących subskrybentów.
 Odp.:  Nie.  Twoje subskrypcje pozostaną na miejscu i będziesz mieć możliwość zarządzania nimi jak dzisiaj.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>PYTANIA Co zrobić, jeśli chcę zwiększyć liczbę subskrypcji dla moich klientów?
-Odp.: Dodatkowe subskrypcje roczne można zakupić w dowolnym momencie.  Zakupione roczne subskrypcje są rozliczone natychmiast przez cały rok i są ważne przez cały rok. 
+Odp.: Roczne subskrypcje, które zostały zakupione w danym miesiącu, są rozliczane natychmiast przez cały rok i są ważne przez cały rok. Z tego powodu można modyfikować liczbę licencji tylko w bieżącym miesiącu zakupu (opłata będzie ważna przez rok i naliczana za jeden rok). Nie jest już możliwe zwiększenie liczby subskrypcji poza miesiącem zakupu.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>PYTANIA Co zrobić, jeśli chcę zmniejszyć liczbę subskrypcji dla moich klientów?
 Odp.: Administrator może nadal zmniejszyć liczbę subskrypcji, odwiedzając https://manage.visualstudio.com i postępując zgodnie z instrukcjami w tym artykule, aby zmniejszyć liczbę subskrypcji. System *nie* będzie generował środków proporcjonalnie do naliczania opłat. Aby uzyskać zwrot pieniędzy, należy skontaktować się z zespołem ds. rozliczeń platformy Azure.

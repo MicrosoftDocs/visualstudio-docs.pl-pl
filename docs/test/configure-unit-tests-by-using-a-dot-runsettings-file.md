@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c291eb614a69d88116c6af228304e19a6295bba2
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: d9f47c54a530f58ea562fd942c1ef795bad37331
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662027"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490651"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -26,11 +26,25 @@ Pliki parametrów uruchomieniowych mogą służyć do konfigurowania testów uru
 
 ### <a name="ide"></a>IDE
 
-Aby określić plik parametrów uruchomieniowych w środowisku IDE **, wybierz pozycję** > Testuj**Ustawienia** > testu**Wybierz plik ustawień testu**, a następnie wybierz plik *. runsettings* .
+::: moniker range="vs-2017"
 
-![Menu wybierz plik ustawień testu w programie Visual Studio](media/select-test-settings-file.png)
+Aby określić plik parametrów uruchomieniowych w środowisku IDE, wybierz > pozycję Testuj **Ustawienia** > testu **Wybierz plik ustawień testu**, a następnie wybierz plik *. runsettings* .
 
-Plik jest wyświetlany w menu **Ustawienia testu** i można go zaznaczyć lub usunąć jego zaznaczenie. Gdy jest zaznaczone, plik parametrów uruchomieniowych ma zastosowanie zawsze, gdy wybierzesz opcję **Analizuj pokrycie kodu**.
+![Wybieranie menu plik ustawień testu w programie Visual Studio 2017](media/select-test-settings-file.png)
+
+Plik jest wyświetlany w menu Ustawienia testu i można go zaznaczyć lub usunąć jego zaznaczenie. Gdy jest zaznaczone, plik parametrów uruchomieniowych ma zastosowanie zawsze, gdy wybierzesz opcję **Analizuj pokrycie kodu**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Aby określić plik parametrów uruchomieniowych w środowisku IDE, w **Eksploratorze testów**wybierz strzałkę na przycisku **Ustawienia** , a następnie wybierz pozycję **Wybierz plik ustawień**. Przejdź do pliku *. runsettings* i wybierz go.
+
+![Wybieranie menu plik ustawień testu w programie Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+
+Plik jest wyświetlany w menu Ustawienia w Eksploratorze testów i można go zaznaczyć lub usunąć. Gdy jest zaznaczone, plik parametrów uruchomieniowych ma zastosowanie zawsze, gdy wybierzesz opcję **Analizuj pokrycie kodu**.
+
+::: moniker-end
 
 ### <a name="command-line"></a>Wiersz polecenia
 
@@ -73,9 +87,19 @@ Aby dostosować testy przy użyciu pliku *. runsettings* , wykonaj następujące
    > [!TIP]
    > Nazwa pliku nie ma znaczenia, o ile używasz rozszerzenia *runsettings*.
 
-1. Zamień zawartość pliku na kod XML z poniższego przykładu i dostosuj go zgodnie z wymaganiami.
+2. Zamień zawartość pliku na kod XML z poniższego przykładu i dostosuj go zgodnie z wymaganiami.
 
-1. W menu **test** wybierz pozycję **Ustawienia** > testu**Wybierz plik ustawień testu**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
+::: moniker range="vs-2017"
+
+3. W menu **test** wybierz pozycję **Ustawienia** > testu**Wybierz plik ustawień testu**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Aby wybrać plik parametrów uruchomieniowych, w **Eksploratorze testów**wybierz strzałkę na przycisku **Ustawienia** , a następnie wybierz pozycję **Wybierz plik ustawień**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
+
+::: moniker-end
 
    > [!TIP]
    > W rozwiązaniu można utworzyć więcej niż jeden plik *. runsettings* i wybrać jeden z nich jako aktywny plik ustawień testu.
@@ -94,7 +118,7 @@ Poniższy kod XML przedstawia zawartość typowego pliku *. runsettings* . Każd
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
+    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -260,7 +284,7 @@ Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody te
 |-|-|-|
 |**ForcedLegacyMode**|false|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli masz plik *App. config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|
-|**SettingsFile**||W tym miejscu możesz określić plik ustawień testu, który ma być używany z kartą MSTest. Możesz również określić plik ustawień testu **, wybierając** > **Ustawienia** > testu testu**Wybierz plik ustawień testu**.<br /><br />Jeśli określisz tę wartość, musisz także ustawić **ForcedlegacyMode** na **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||W tym miejscu możesz określić plik ustawień testu, który ma być używany z kartą MSTest. Możesz również określić plik ustawień testu [w menu Ustawienia](#ide).<br /><br />Jeśli określisz tę wartość, musisz także ustawić **ForcedlegacyMode** na **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Po zakończeniu przebiegu testu MSTest jest zamykany. Każdy proces, który jest uruchamiany jako część testu, również zostanie zamknięty. Jeśli chcesz zatrzymać program wykonujący testy, ustaw wartość na **true**. Można na przykład użyć tego ustawienia, aby zachować działanie przeglądarki między kodowanymi testami interfejsu użytkownika.|
 |**DeploymentEnabled**|true|W przypadku ustawienia wartości **false**elementy wdrożenia określone w metodzie testowej nie są kopiowane do katalogu wdrożenia.|
 |**CaptureTraceOutput**|true|Możesz pisać do śledzenia debugowania z metody testowej przy użyciu <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|

@@ -1,6 +1,6 @@
 ---
 title: Podstawy testów jednostkowych
-ms.date: 06/06/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e5529ae777fe1cee69e669ce20fb919eceb5ef
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925820"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490720"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -40,7 +40,12 @@ Aby zapoznać się z wprowadzeniem do testów jednostkowych, które umożliwia p
 
 W tym artykule używamy programowania fikcyjnej aplikacji o nazwie `MyBank` jako przykładu. Nie musisz rzeczywisty kod, aby uprościć wyjaśnienia, w tym temacie. Metody testowe są napisane w języku C# i przedstawiane za pomocą Frameworka testów jednostkowych firmy Microsoft dla kodu zarządzanego. Jednakże pojęcia można łatwo przenosić do innych języków i struktur.
 
+::: moniker range="vs-2017"
 ![Rozwiązanie MyBank](../test/media/ute_mybanksolution.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Rozwiązanie z banku 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
 
 Nasze pierwsza próba zaprojektować `MyBank` aplikacja zawiera składnik kont, który reprezentuje pojedyncze konto i jego transakcji z Bankiem i składnik bazy danych, który reprezentuje funkcję agregacji i zarządzanie nimi indywidualne konta.
 
@@ -69,7 +74,7 @@ public void Withdraw(double amount)
     }
     else
     {
-        throw new ArgumentException(amount, "Withdrawal exceeds balance!")
+        throw new ArgumentException(nameof(amount), "Withdrawal exceeds balance!");
     }
 }
 ```
@@ -84,18 +89,28 @@ Często jest szybsze generowanie projektu testu jednostkowego i wycinków testó
 
 1. W oknie Edytor kodu kliknij prawym przyciskiem myszy i wybierz polecenie [**Utwórz testy jednostkowe**](create-unit-tests-menu.md) z menu dostępnego po kliknięciu prawym przyciskiem myszy.
 
+   ::: moniker range="vs-2017"
    ![W oknie edytora wyświetlić menu kontekstowe](../test/media/createunittestsrightclick.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![W oknie edytora wyświetlić menu kontekstowe](../test/media/vs-2019/basics-create-unit-tests.png)
+   ::: moniker-end
 
    > [!NOTE]
    > Polecenie **Utwórz testy jednostkowe** jest dostępne tylko dla kodu zarządzanego, który jest przeznaczony dla .NET Framework (ale nie do programu .NET Core).
 
 2. Kliknij przycisk **OK** zaakceptować ustawienia domyślne, aby utworzyć testy jednostkowe lub zmienić wartości używane do tworzenia i nazwij projekt testów jednostkowych i testów jednostkowych. Możesz wybrać kod, który jest domyślnie dodawany do metody testów jednostkowych.
 
-    ![Okno dialogowe Tworzenie testów jednostkowych w programie Visual Studio](../test/media/create-unit-tests.png)
+   ![Okno dialogowe Tworzenie testów jednostkowych w programie Visual Studio](../test/media/create-unit-tests.png)
 
 3. Wycinki kodu testu jednostki są tworzone w nowy projekt testu jednostki dla wszystkich metod w klasie.
 
-    ![Testy jednostkowe są tworzone.](../test/media/createunittestsstubs.png)
+   ::: moniker range="vs-2017"
+   ![Testy jednostkowe są tworzone.](../test/media/createunittestsstubs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Testy jednostkowe są tworzone.](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
 
 4. Teraz przejdź od razu, aby dowiedzieć się, jak [Dodaj kod do metody testów jednostkowych](#write-your-tests) istotnych testu jednostkowego i wszelkie testy jednostkowe dodatkowe, które możesz zechcieć dodać do dokładnego przetestowania kodu.
 
@@ -218,9 +233,14 @@ public void My_Test ()
 
 Podczas tworzenia projektu testowego, testy są wyświetlane w **Eksploratora testów**. Jeśli **Eksplorator testów** nie jest widoczny, wybierz **testu** menu programu Visual Studio, wybierz **Windows**, a następnie wybierz **Eksplorator testów**.
 
+::: moniker range="vs-2017"
 ![Eksplorator testów jednostkowych](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Eksplorator testów jednostkowych](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
 
-Jak uruchomić, zapisać i ponownie uruchomić testy domyślny widok **Eksplorator testów** wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, **pomijane Testy** i **Esty nieuruchamiane**. Możesz wybrać nagłówek grupy, aby otworzyć widok, który wyświetla wszystkie testy w tej grupie.
+Podczas uruchamiania, zapisywania i ponownego uruchamiania testów, **Eksplorator testów** może wyświetlać wyniki w grupach **testów zakończonych niepowodzeniem**, testów **zakończonych pomyślnie**, **pominiętych testów** i **nieuruchomionych testów**. Na pasku narzędzi można wybrać różne opcje grupowania.
 
 Można również filtrować testy w dowolnym widoku, pasujący tekst w polu wyszukiwania na poziomie globalnym lub wybierając jeden z wstępnie zdefiniowanych filtrów. W dowolnym momencie można uruchomić żadnych ustawień testów. Wyniki przebiegu testu są natychmiast widoczny pasek Powodzenie/niepowodzenie u góry okna Eksploratora. Szczegóły wyniku metody testu są wyświetlane po wybraniu testu.
 
@@ -228,9 +248,14 @@ Można również filtrować testy w dowolnym widoku, pasujący tekst w polu wysz
 
 **Eksplorator testów** narzędzi ułatwia odnajdywanie, organizowanie i uruchamiać testy, które Cię interesuje.
 
+::: moniker range="vs-2017"
 ![Uruchom testy z paska narzędzi Eksploratora testów](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Uruchom testy z paska narzędzi Eksploratora testów](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
-Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Po uruchomieniu zestawu testów, podsumowanie przebiegu testu zostanie wyświetlony u dołu **Eksploratora testów** okna. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku. Wybierz **Otwórz test** z menu dostępnego po kliknięciu prawym przyciskiem myszy (klawiatura: **F12**) Aby wyświetlić kod źródłowy wybranego testu.
+Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Wybierz test, aby wyświetlić szczegóły tego testu w okienku Szczegóły testu. Wybierz **Otwórz test** z menu dostępnego po kliknięciu prawym przyciskiem myszy (klawiatura: **F12**) Aby wyświetlić kod źródłowy wybranego testu.
 
 ::: moniker range="vs-2017"
 
@@ -246,18 +271,33 @@ Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają
 
 ### <a name="run-tests-after-every-build"></a>Uruchamianie testów po każdej kompilacji
 
-> [!WARNING]
-> Uruchamianie testów jednostek po każdej kompilacji jest obsługiwane tylko w programie Visual Studio Enterprise.
+::: moniker range="vs-2017"
 
 |Przycisk|Opis|
 |-|-|
-|![Uruchom po kompilacji](../test/media/ute_runafterbuild_btn.png)|Aby uruchomić testy jednostkowe po każdej kompilacji lokalnej, wybierz **testu** w menu standardowym, wybierz **Uruchom testy po kompilacji** na **Eksplorator testów** paska narzędzi.|
+|![Uruchom po kompilacji](../test/media/ute_runafterbuild_btn.png)|Aby uruchomić testy jednostkowe po każdej kompilacji lokalnej, wybierz **test** w menu Standard, a następnie wybierz polecenie **Uruchom testy po kompilacji** na pasku narzędzi **Eksploratora testów** .|
+
+> [!NOTE]
+> Uruchamianie testów jednostkowych po każdej kompilacji wymaga programu Visual Studio 2017 Enterprise Edition lub Visual Studio 2019. W programie Visual Studio 2019 ta funkcja jest dostępna w wersjach Community i Professional, a także w wersji Enterprise.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Aby uruchomić testy jednostkowe po każdej kompilacji lokalnej, Otwórz ikonę ustawienia na pasku narzędzi Eksploratora testów i wybierz opcję **Uruchom testy po kompilacji**.
+
+::: moniker-end
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrowanie i grupowanie listy testów
 
-Jeśli masz dużą liczbę testów, można wpisać **Eksplorator testów** polu wyszukiwania, aby filtrować listę według określonego ciągu. Można ograniczyć zdarzenia filtru więcej, wybierając z listy filtrów.
+Jeśli masz dużą liczbę testów, możesz wpisać w polu wyszukiwania **Eksploratora testów** , aby odfiltrować listę według określonego ciągu. Można ograniczyć zdarzenia filtru więcej, wybierając z listy filtrów.
 
+::: moniker range="vs-2017"
 ![Przeszukaj kategorie filtru](../test/media/ute_searchfilter.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Przeszukaj kategorie filtru](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 |Przycisk|Opis|
 |-|-|
@@ -282,9 +322,14 @@ Dowiedz się więcej szczegółów o [debugowanie testów jednostkowych](../debu
 
 **PYTANIA Jeśli korzystam z programu TDD, jak wygenerować kod na podstawie testów?**
 
-**Z** Użyj funkcji IntelliSense, aby generować klasy i metody w kodzie projektu. Napisze instrukcję w metodzie badania, która wywołuje klasy lub metody, która ma zostać wygenerowany, a następnie otwórz menu funkcji IntelliSense w wywołaniu. Jeśli wywołanie konstruktora dla nowej klasy, wybierz **Generuj nowy typ** menu i wykonaj polecenia kreatora, aby wstawić klasy w projekcie kodu. W przypadku wywołania do metody, wybierz **wygenerować nową metodę** menu funkcji IntelliSense.
+**Z** Użyj szybkich akcji do wygenerowania klas i metod w kodzie projektu. Napisz instrukcję w metodzie testowej, która wywołuje klasę lub metodę, którą chcesz wygenerować, a następnie otwórz żarówki, która pojawia się pod błędem. Jeśli wywołanie jest konstruktorem nowej klasy, wybierz polecenie **Generuj typ** z menu i postępuj zgodnie z instrukcjami kreatora, aby wstawić klasę w projekcie kodu. Jeśli wywołanie jest metodą, wybierz polecenie **Generuj metodę** z menu IntelliSense.
 
-![Generowanie Menu IntelliSense Stub — metoda](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker range="vs-2017"
+![Menu Generuj szybką akcję klasy zastępczej](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Menu Generuj szybką akcję klasy zastępczej](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
 
 **PYTANIA Czy można utworzyć testy jednostkowe, które pobierają wiele zestawów danych jako dane wejściowe do uruchomienia testu?**
 
@@ -320,7 +365,7 @@ Dowiedz się więcej o [testów jednostkowych opartych na danych](../test/how-to
 
 **PYTANIA Czy mogę sprawdzić, jaka część mojego kodu jest testowana przez testy jednostkowe?**
 
-**Z** Tak. Można określić ilość swój kod, który jest aktualnie testowany przez nasze testy jednostkowe za pomocą narzędzia pokrycia kodu programu Visual Studio. Języki macierzystymi i zarządzanymi i wszystkich platform testów jednostkowych, które mogą być uruchamiane przez strukturę testu jednostki są obsługiwane.
+**Z** Tak. Można określić ilość kodu, który jest faktycznie testowany przez testy jednostkowe za pomocą narzędzia pokrycia kodu w programie Visual Studio w Visual Studio Enterprise. Języki macierzystymi i zarządzanymi i wszystkich platform testów jednostkowych, które mogą być uruchamiane przez strukturę testu jednostki są obsługiwane.
 
 Można uruchomić pokrycie kodów w wybranych testach albo we wszystkich testach w rozwiązaniu. **Wyniki pokrycia kodu** okno wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.
 
