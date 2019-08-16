@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945017"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551188"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
 
@@ -52,13 +52,14 @@ Można ustawić następujące wartości rejestru:
 
 | **Nazwa** | **Typ** | **Default** | **Opis** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Katalog, w której pakiet manifesty i, opcjonalnie, ładunki są przechowywane. Aby uzyskać więcej informacji, zobacz [wyłączone lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) strony. |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Zachowaj ładunków pakietu, nawet w przypadku, po ich zainstalowaniu. Możesz zmienić wartość dowolnym czasie. Wyłączanie zasad usuwa wszelkie ładunków pamięci podręcznej pakietu dla wystąpienia, napraw lub zmodyfikować. Aby uzyskać więcej informacji, zobacz [wyłączone lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) strony. |
-| `SharedInstallationPath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Katalog, w którym są zainstalowane niektórych pakietów współużytkowane przez wersje wystąpienia programu Visual Studio. Wartość można zmienić w dowolnym momencie, ale jej mają wpływ tylko na przyszłe instaluje. Nie należy przenieść wszystkie produkty zainstalowane do poprzedniej lokalizacji lub może nie działać poprawnie. |
+| `CachePath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Katalog, w której pakiet manifesty i, opcjonalnie, ładunki są przechowywane. Aby uzyskać więcej informacji, zobacz stronę [wyłączanie lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) . |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Zachowaj ładunków pakietu, nawet w przypadku, po ich zainstalowaniu. Możesz zmienić wartość dowolnym czasie. Wyłączanie zasad usuwa wszelkie ładunków pamięci podręcznej pakietu dla wystąpienia, napraw lub zmodyfikować. Aby uzyskać więcej informacji, zobacz stronę [wyłączanie lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) . |
+| `SharedInstallationPath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Katalog, w którym są zainstalowane niektórych pakietów współużytkowane przez wersje wystąpienia programu Visual Studio. Wartość można zmienić w dowolnym momencie, ale będzie to miało wpływ tylko na przyszłe instalacje. Wszelkie produkty już zainstalowane w starej lokalizacji nie mogą być przenoszone lub mogą nie działać prawidłowo. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Zapobiegaj automatycznym pobieraniu aktualizacji przez Instalatora dla wszystkich zainstalowanych produktów programu Visual Studio. Możesz zmienić wartość dowolnym czasie. |
 
 > [!IMPORTANT]
-> Jeśli zmienisz `CachePath` zasad rejestru po każdej instalacji programu, należy przenieść istniejące pamięci podręcznej pakietu do nowej lokalizacji i upewnij się, jest zabezpieczony tak, aby `SYSTEM` i `Administrators` mają pełną kontrolę i który `Everyone` ma dostęp do odczytu.
-> Nie można przenieść istniejące pamięci podręcznej lub ich zabezpieczaniem go może spowodować problemy z instalacji w przyszłości.
+> W `CachePath` przypadku zmiany zasad rejestru po dowolnych instalacjach należy przenieść istniejącą pamięć podręczną pakietu do nowej lokalizacji i upewnić się, że jest zabezpieczona `SYSTEM` , `Administrators` tak aby miała pełną kontrolę `Everyone` i ma dostęp do odczytu.
+> Niepowodzenie przenoszenia istniejącej pamięci podręcznej lub jej zabezpieczenia może spowodować problemy z przyszłymi instalacjami.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

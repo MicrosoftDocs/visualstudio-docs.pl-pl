@@ -1,6 +1,6 @@
 ---
 title: podstawowe zestawy międzyoperacyjne pakietu Office
-ms.date: 09/20/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,125 +14,127 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447092"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551686"
 ---
 # <a name="office-primary-interop-assemblies"></a>podstawowe zestawy międzyoperacyjne pakietu Office
 
-Aby korzystać z funkcji aplikacji pakietu Microsoft Office z projektu pakietu Office, należy użyć podstawowego zestawu międzyoperacyjnego (PIA) dla aplikacji. Zestaw PIA umożliwia interakcję z modelem obiektów opartym na modelu COM aplikacji pakietu Microsoft Office kodu zarządzanego.
+Aby korzystać z funkcji aplikacji Microsoft Office z projektu pakietu Office, należy użyć podstawowego zestawu międzyoperacyjnego (PIA) dla aplikacji. PIA umożliwia współdziałanie kodu zarządzanego z modelem obiektów opartym na modelu COM aplikacji Microsoft Office.
 
-Podczas tworzenia nowego projektu pakietu Office, Visual Studio dodaje odwołania do zestawów PIA, które są wymagane do skompilowania projektu. W niektórych scenariuszach może być konieczne, można dodać odwołania do dodatkowych zestawów PIA (na przykład, jeśli chcesz używać funkcji programu Microsoft Office Word w projekcie dla programu Microsoft Office Excel).
+[!include[Add-ins note](includes/addinsnote.md)]
 
-W tym temacie opisano następujące aspekty użycia zestawów Microsoft Office PIA w projektach pakietu Office:
+Podczas tworzenia nowego projektu pakietu Office Program Visual Studio dodaje odwołania do zestawów Pia, które są wymagane do skompilowania projektu. W niektórych scenariuszach może być konieczne dodanie odwołań do dodatkowych zestawów PIA (na przykład jeśli chcesz użyć funkcji programu Microsoft Office Word w projekcie dla Microsoft Office Excel).
 
-- [Oddzielne podstawowych zestawów międzyoperacyjnych do kompilowania i uruchamiania projektów](#separateassemblies)
+W tym temacie opisano następujące aspekty używania Microsoft Office zestawów PIA w projektach pakietu Office:
 
-- [Korzystać z funkcji wielu aplikacji pakietu Microsoft Office w jednym projekcie](#usingfeatures)
+- [Oddziel podstawowe zestawy międzyoperacyjności do kompilowania i uruchamiania projektów](#separateassemblies)
+
+- [Korzystanie z funkcji wielu Microsoft Office aplikacji w jednym projekcie](#usingfeatures)
 
 - [Pełna lista podstawowych zestawów międzyoperacyjnych dla aplikacji Microsoft Office](#pialist)
 
-Aby uzyskać więcej informacji na temat podstawowych usług międzyoperacyjnych, zobacz [podstawowe zestawy międzyoperacyjne](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
+Aby uzyskać więcej informacji na temat podstawowych zestawów międzyoperacyjnych, zobacz [podstawowe zestawy](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))międzyoperacyjności.
 
 <a name="separateassemblies"></a>
 
-## <a name="separate-primary-interop-assemblies-to-build-and-run-projects"></a>Oddzielne podstawowych zestawów międzyoperacyjnych do kompilowania i uruchamiania projektów
+## <a name="separate-primary-interop-assemblies-to-build-and-run-projects"></a>Oddziel podstawowe zestawy międzyoperacyjności do kompilowania i uruchamiania projektów
 
-Visual Studio używa różnych zestawów PIA na komputerze deweloperskim. Te różne zbiory zestawów znajdują się w następujących lokalizacjach:
+Program Visual Studio używa różnych zestawów zestawów Pia na komputerze deweloperskim. Te różne zestawy zestawów znajdują się w następujących lokalizacjach:
 
-- Folder w katalogu program files
+- Folder w katalogu Program Files
 
-  Te kopie zestawów są używane podczas pisania kodu i kompilacji projektów. Program Visual Studio automatycznie instaluje te zestawy.
+  Te kopie zestawów są używane podczas pisania kodu i kompilowania projektów. Program Visual Studio automatycznie instaluje te zestawy.
 
-- Global assembly cache
+- Globalna pamięć podręczna zestawów
 
-  Te kopie zestawów są używane podczas niektórych zadań deweloperskich, takich jak podczas uruchamiania lub debugowania projektów. Program Visual Studio nie może zainstalować i zarejestrować tych zestawów; możesz zrobić to samodzielnie.
+  Te kopie zestawów są używane podczas niektórych zadań programistycznych, na przykład podczas uruchamiania lub debugowania projektów. Program Visual Studio nie instaluje i nie rejestruje tych zestawów; musisz to zrobić samodzielnie.
 
-### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>Podstawowe zestawy międzyoperacyjne w katalogu program files
+### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>Podstawowe zestawy międzyoperacyjności w katalogu Program Files
 
-Po zainstalowaniu programu Visual Studio, zestawy PIA są automatycznie instalowane w lokalizacji w systemie plików, poza globalną pamięcią podręczną zestawów. Podczas tworzenia nowego projektu programu Visual Studio automatycznie dodaje odwołania do tych kopii zestawów PIA do projektu. Visual Studio używa tych kopii zestawów PIA, zamiast zestawów w globalnej pamięci podręcznej do rozpoznawania odwołań typu podczas rozwijania i budowania projektu.
+Podczas instalowania programu Visual Studio zestawów PIA są automatycznie instalowane do lokalizacji w systemie plików, poza globalną pamięcią podręczną zestawów. Podczas tworzenia nowego projektu program Visual Studio automatycznie dodaje odwołania do tych kopii zestawów Pia do projektu. Program Visual Studio używa tych kopii zestawów Pia zamiast zestawów w globalnej pamięci podręcznej zestawów, aby rozpoznać odwołania do typów podczas opracowywania i kompilowania projektu.
 
-Te kopie zestawów PIA pomagają programowi Visual Studio uniknąć kilka problemów projektowych, które mogą wystąpić, jeśli zarejestrowano różne wersje zestawów PIA w globalnej pamięci podręcznej.
+Te kopie zestawów Pia ułatwiają programowi Visual Studio uniknięcie kilku problemów programistycznych, które mogą wystąpić, gdy różne wersje zestawów PIA są zarejestrowane w globalnej pamięci podręcznej zestawów.
 
-Począwszy od programu Visual Studio 2017, te kopie zestawów PIA są instalowane następujące udostępnionych lokalizacji na komputerze deweloperskim:
+Począwszy od programu Visual Studio 2017, te kopie zestawów PIA są instalowane w następujących lokalizacjach udostępnionych na komputerze deweloperskim:
 
 - *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
 
-- (lub * % ProgramFiles (x86) %\Microsoft Studio\Shared\Visual Visual Studio Tools for Office\PIA\* na 64-bitowych systemach operacyjnych)
+- (lub *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* w 64-bitowych systemach operacyjnych)
 
 > [!NOTE]
-> W starszych wersjach programu Visual Studio zostanie zainstalowany tych zestawów PIA Visual Studio Tools for Office\PIA folderze * folderu % ProgramFiles % dla danej wersji programu Visual Studio.  
-> Na przykład: * % ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\*
+> W przypadku starszych wersji programu Visual Studio te zestawów Pia zostaną zainstalowane do folderu Visual Studio Tools dla Office\PIA w folderze *% ProgramFiles% dla tej wersji programu Visual Studio.  
+> Na przykład: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools dla Office\PIA\*
 
-### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Podstawowe zestawy międzyoperacyjne w globalnej pamięci podręcznej
+### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Podstawowe zestawy międzyoperacyjności w globalnej pamięci podręcznej zestawów
 
-Do wykonywania określonych zadań projektowania, musi być zainstalowane i zarejestrowane w globalnej pamięci podręcznej na komputerze deweloperskim zestawy PIA. Zazwyczaj zestawy PIA są instalowane automatycznie podczas instalowania pakietu Office na komputerze deweloperskim. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+Aby wykonać pewne zadania deweloperskie, zestawów Pia musi być zainstalowana i zarejestrowana w globalnej pamięci podręcznej zestawów na komputerze deweloperskim. Zazwyczaj zestawów PIA są instalowane automatycznie podczas instalowania pakietu Office na komputerze deweloperskim. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-Zestawy PIA pakietu Office nie są wymagane na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
+Na komputerach użytkowników końcowych nie są wymagane do uruchamiania rozwiązań pakietu Office. Aby uzyskać więcej informacji, zobacz [projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md).
 
 <a name="usingfeatures"></a>
 
-## <a name="use-features-of-multiple-microsoft-office-applications-in-a-single-project"></a>Korzystać z funkcji wielu aplikacji pakietu Microsoft Office w jednym projekcie
+## <a name="use-features-of-multiple-microsoft-office-applications-in-a-single-project"></a>Korzystanie z funkcji wielu Microsoft Office aplikacji w jednym projekcie
 
-Każdy szablon projektu pakietu Office w programie Visual Studio jest przeznaczona do pracy z pojedynczą aplikacją Microsoft Office. Aby korzystać z funkcji wielu aplikacji pakietu Microsoft Office lub korzystać z funkcji w aplikacji lub składnika, który nie ma projektu w programie Visual Studio, należy dodać odwołanie do wymaganych zestawów PIA.
+Każdy szablon projektu pakietu Office w programie Visual Studio jest przeznaczony do pracy z pojedynczą aplikacją Microsoft Office. Aby korzystać z funkcji w wielu aplikacjach Microsoft Office lub użyć funkcji w aplikacji lub składniku, który nie ma projektu w programie Visual Studio, należy dodać odwołanie do wymaganego zestawów Pia.
 
-W większości przypadków należy dodać odwołania do zestawów PIA, które są instalowane przez program Visual Studio w obszarze `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` katalogu. Te wersje zestawów są wyświetlane na **Framework** karcie **Menadżer odwołań** okno dialogowe. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+W większości przypadków należy dodać odwołania do zestawów Pia, które są instalowane przez program Visual Studio w `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` katalogu. Te wersje zestawów są wyświetlane na karcie **Struktura** okna dialogowego **Menedżer odwołań** . Aby uzyskać więcej informacji, zobacz [jak: Docelowa aplikacja pakietu Office przy](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)użyciu podstawowych zestawów międzyoperacyjnych.
 
-Jeśli masz zainstalowane i zarejestrowane zestawy PIA w globalnej pamięci podręcznej, te wersje zestawów są wyświetlane na **COM** karcie **Menadżer odwołań** okno dialogowe. Dodawanie odwołania do tych wersji zespołów, należy unikać, ponieważ istnieją pewne problemy projektowe, które mogą wystąpić podczas korzystania z nich. Na przykład, jeśli zarejestrowano różne wersje zestawów PIA w globalnej pamięci podręcznej zestawów, projekt będzie automatycznie wiązany wersji zestawu, która została zarejestrowana jako ostatnia — nawet jeśli określisz inną wersję zestawu na  **COM** karcie **Menadżer odwołań** okno dialogowe.
+Jeśli zainstalowano i zarejestrowano zestawów PIA w globalnej pamięci podręcznej zestawów, te wersje zestawów są wyświetlane na karcie **com** okna dialogowego **Menedżer odwołań** . Należy unikać dodawania odwołań do tych wersji zestawów, ponieważ występują pewne problemy z programowaniem, które mogą wystąpić podczas ich używania. Jeśli na przykład zarejestrowano różne wersje zestawów PIA w globalnej pamięci podręcznej zestawów, projekt zostanie automatycznie powiązany z wersją zestawu, który został zarejestrowany jako ostatni — nawet w przypadku określenia innej wersji zestawu na **modelu COM** . Karta okna dialogowego **Menedżer odwołań** .
 
 > [!NOTE]
-> Niektóre zestawy są automatycznie dodawane do projektu po dodaniu zestawu, który odwołuje się do nich. Na przykład odwołuje się do *zestawów Office.dll* i *Microsoft.Vbe.Interop.dll* zestawy są dodawane automatycznie po dodaniu odwołania do programu Word, Excel, Outlook, Microsoft Forms lub Graph zestawy.
+> Niektóre zestawy są dodawane do projektu automatycznie po dodaniu zestawu, który się do nich odwołuje. Na przykład odwołania do zestawów *Office. dll* i *Microsoft. VBE. Interop. dll* są dodawane automatycznie po dodaniu odwołania do zestawów programów Word, Excel, Outlook, Microsoft Forms lub Graph.
 
 <a name="pialist"></a>
 
-## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Podstawowe zestawy międzyoperacyjne dla aplikacji Microsoft Office
+## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Podstawowe zestawy międzyoperacyjności dla aplikacji Microsoft Office
 
-W poniższej tabeli wymieniono podstawowe zestawy międzyoperacyjne, które są dostępne dla [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+Poniższa tabela zawiera listę podstawowych zestawów międzyoperacyjnych, które [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)]są [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dostępne [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]dla i.
 
 <br/>
 
-|Aplikacja pakietu Office lub składnika|Podstawowy zestaw międzyoperacyjny nazwy|
+|Aplikacja lub składnik pakietu Office|Nazwa podstawowego zestawu międzyoperacyjnego|
 |-------------------------------------|-----------------------------------|
-|Biblioteka obiektów programu Microsoft Access 14.0<br /><br /> Biblioteka obiektów programu Microsoft Access 15.0|Microsoft.Office.Interop.Access.dll|
-|Microsoft Office 14.0 dostęp do bazy danych aparatu Object Library<br /><br /> Microsoft Office 15.0 dostępu do bazy danych aparatu Object Library|Microsoft.Office.Interop.Access.Dao.dll|
-|Biblioteka obiektów programu Microsoft Excel 14.0<br /><br /> Biblioteka obiektów programu Microsoft Excel 15.0|[Microsoft.Office.Interop.Excel.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
-|Microsoft Graph 14.0 Object Library (używany przez program PowerPoint, Access i Word dla wykresów)<br /><br /> Biblioteka obiektów programu Microsoft Graph 15.0|Microsoft.Office.Interop.Graph.dll|
-|Program Microsoft InfoPath 2.0 biblioteki typów (tylko program InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
-|Program Microsoft InfoPath XML Interop Assembly (tylko program InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|
-|Microsoft Office 14.0 Object Library (funkcje wspólne pakietu Office)<br /><br /> Biblioteki obiektów Microsoft Office 15.0 (funkcje wspólne pakietu Office)|office.dll|
-|Formantu widoku pakietu Microsoft Office Outlook (może służyć w stronach sieci Web i aplikacji dostępu do skrzynki odbiorczej)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Biblioteka obiektów programu Microsoft Outlook 14.0<br /><br /> Biblioteka obiektów programu Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
-|Biblioteka obiektów programu Microsoft PowerPoint 14.0<br /><br /> Biblioteka obiektów programu Microsoft PowerPoint 15.0|Microsoft.Office.Interop.PowerPoint.dll|
-|Biblioteka obiektów programu Microsoft Project 14.0<br /><br /> Biblioteka obiektów programu Microsoft Project 15.0|[Microsoft.Office.Interop.MSProject.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
-|Biblioteka obiektów programu Microsoft Publisher 14.0<br /><br /> Biblioteka obiektów programu Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|
-|Microsoft SharePoint Designer 14.0 Web Bibliotaka odwołań|Microsoft.Office.Interop.SharePointDesigner.dll|
-|Microsoft SharePoint Designer 14.0 obiektu strony Reference Library|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|2.0 biblioteki typów tagów inteligentnych Microsoft **Uwaga:**  Tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|
-|Program Microsoft Visio 14.0 Biblioteka typów<br /><br /> Biblioteki typów w programie Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|
-|Program Microsoft Visio 14.0 Zapisz jako biblioteki typów sieci Web<br /><br /> Program Microsoft Visio 15.0 Zapisz jako biblioteki typów sieci Web|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
-|Biblioteka typów kontroli rysunku programu Microsoft Visio 14.0<br /><br /> Biblioteka typów kontroli rysunku programu Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|
-|Biblioteka obiektów programu Microsoft Word 14.0<br /><br /> Biblioteka obiektów programu Microsoft Word 15.0|[Microsoft.Office.Interop.Word.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.word?view=word-pia)|
-|Microsoft Visual Basic dla aplikacji Extensibility 5.3|Microsoft.Vbe.Interop.dll|
+|Biblioteka obiektów programu Microsoft Access 14,0<br /><br /> Biblioteka obiektów programu Microsoft Access 15,0|Microsoft.Office.Interop.Access.dll|
+|Biblioteka obiektów aparatu bazy danych programu Microsoft Office 14,0<br /><br /> Biblioteka obiektów aparatu bazy danych programu Microsoft Office 15,0|Microsoft.Office.Interop.Access.Dao.dll|
+|Biblioteka obiektów programu Microsoft Excel 14,0<br /><br /> Biblioteka obiektów programu Microsoft Excel 15,0|[Microsoft.Office.Interop.Excel.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Biblioteka obiektów Microsoft Graph 14,0 (używana przez program PowerPoint, dostęp i program Word dla wykresów)<br /><br /> Biblioteka obiektów Microsoft Graph 15,0|Microsoft.Office.Interop.Graph.dll|
+|Biblioteka typów programu Microsoft InfoPath 2,0 (tylko dla programu InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Zestaw międzyoperacyjny programu Microsoft InfoPath XML (tylko dla programu InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|
+|Biblioteka obiektów Microsoft Office 14,0 (funkcja udostępniona przez pakiet Office)<br /><br /> Biblioteka obiektów Microsoft Office 15,0 (funkcja udostępniona przez pakiet Office)|office.dll|
+|Kontrolka widoku programu Outlook Microsoft Office (może być używana w stronach sieci Web i aplikacjach do uzyskiwania dostępu do Twojej skrzynki odbiorczej)|Microsoft.Office.Interop.OutlookViewCtl.dll|
+|Biblioteka obiektów programu Microsoft Outlook 14,0<br /><br /> Biblioteka obiektów programu Microsoft Outlook 15,0|[Microsoft.Office.Interop.Outlook.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Biblioteka obiektów programu Microsoft PowerPoint 14,0<br /><br /> Biblioteka obiektów programu Microsoft PowerPoint 15,0|Microsoft.Office.Interop.PowerPoint.dll|
+|Biblioteka obiektów programu Microsoft Project 14,0<br /><br /> Biblioteka obiektów programu Microsoft Project 15,0|[Microsoft.Office.Interop.MSProject.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Biblioteka obiektów programu Microsoft Publisher 14,0<br /><br /> Biblioteka obiektów programu Microsoft Publisher 15,0|Microsoft.Office.Interop.Publisher.dll|
+|Biblioteka odwołań obiektów sieci Web programu Microsoft SharePoint Designer 14,0|Microsoft.Office.Interop.SharePointDesigner.dll|
+|Biblioteka odwołań obiektów stron programu Microsoft SharePoint Designer 14,0|Microsoft.Office.Interop.SharePointDesignerPage.dll|
+|**Uwaga dotycząca** biblioteki typów Microsoft Smart Tags 2,0:  Tagi inteligentne są przestarzałe w [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] i [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|
+|Biblioteka typów programu Microsoft Visio 14,0<br /><br /> Biblioteka typów programu Microsoft Visio 15,0|Microsoft.Office.Interop.Visio.dll|
+|Microsoft Visio 14,0 Zapisz jako biblioteka typów sieci Web<br /><br /> Microsoft Visio 15,0 Zapisz jako biblioteka typów sieci Web|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
+|Biblioteka typów kontrolek rysowania programu Microsoft Visio 14,0<br /><br /> Biblioteka typów kontrolek rysowania programu Microsoft Visio 15,0|Microsoft.Office.Interop.VisOcx.dll|
+|Biblioteka obiektów programu Microsoft Word 14,0<br /><br /> Biblioteka obiektów programu Microsoft Word 15,0|[Microsoft.Office.Interop.Word.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Rozszerzalność Visual Basic for Applications firmy Microsoft 5,3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>Zestawy przekierowania powiązań
 
-Podczas instalowania i rejestrowania zestawów Office PIA w globalnej pamięci podręcznej zestawów (albo z pakietem Office, instalując pakiet redystrybucyjny dla zestawów PIA), zestawy przekierowania powiązań są również instalowane tylko w globalnej pamięci podręcznej. Te zestawy pomagają upewnić się, że poprawną wersję podstawowe zestawy międzyoperacyjne jest ładowany w czasie wykonywania.
+W przypadku instalowania i rejestrowania pakietu Office zestawów PIA w globalnej pamięci podręcznej zestawów (z pakietem Office lub przez zainstalowanie pakietu redystrybucyjnego dla zestawów PIA) zestawy przekierowania powiązań również są instalowane tylko w globalnej pamięci podręcznej zestawów. Te zestawy ułatwiają upewnienie się, że poprawna wersja podstawowych zestawów międzyoperacyjnych została załadowana w czasie wykonywania.
 
-Na przykład kiedy rozwiązanie odwołujące [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] zestawu, który jest uruchamiany na komputerze, który ma [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] wersji tego samego podstawowego zestawu międzyoperacyjnego, zestawu powiązania przekierowania nakazuje [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] środowiska uruchomieniowego do załadowania [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] Wersja podstawowy zestaw międzyoperacyjny.
+Na przykład, gdy rozwiązanie, które odwołuje [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] się do zestawu, działa na komputerze, [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] który ma wersję tego samego podstawowego zestawu międzyoperacyjnego, zestaw [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] przekierowania powiązania instruuje środowisko uruchomieniowe [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] , aby załadować wersja podstawowego zestawu międzyoperacyjnego.
 
-Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznego przekierowywania powiązań](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
+Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznego przekierowywania](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)powiązań.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Instrukcje: Docelowa aplikacja pakietu Office za poorednictwem zestawów podstawowych międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)
-- [Rozwiązania InfoPath](../vsto/infopath-solutions.md)
-- [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)
-- [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md)
+- [Rozwiązania programu InfoPath](../vsto/infopath-solutions.md)
+- [Model obiektów programu Outlook — Omówienie](../vsto/outlook-object-model-overview.md)
+- [Rozwiązania programu PowerPoint](../vsto/powerpoint-solutions.md)
 - [Rozwiązania projektu](../vsto/project-solutions.md)
-- [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)
-- [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
-- [Informacje ogólne &#40;programowanie Office w Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [Model obiektów programu Visio — Omówienie](../vsto/visio-object-model-overview.md)
+- [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)
+- [Ogólne informacje &#40;na temat programowania pakietu Office w programie Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)

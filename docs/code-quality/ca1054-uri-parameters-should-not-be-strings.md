@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 659ea1008cd70571d035d0b178d01587c6b2ba0d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0312c0e40f3addd7952c136e95f3756091ba4dcb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842067"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547392"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: Parametry identyfikatora URI nie powinny być ciągami
 
@@ -36,35 +36,35 @@ ms.locfileid: "65842067"
 
 ## <a name="cause"></a>Przyczyna
 
-Typ deklaruje metodę z parametrem ciągu, którego nazwa zawiera "uri", "Uri", "urn", "Urn", "url" lub "Url" i typ nie deklaruje odpowiadające przeciążenie, która przyjmuje <xref:System.Uri?displayProperty=fullName> parametru.
+Typ deklaruje metodę z parametrem ciągu, którego nazwa zawiera "URI", "URI", "urn", "urn", "URL" lub "URL", a typ nie deklaruje odpowiedniego przeciążenia, które pobiera <xref:System.Uri?displayProperty=fullName> parametr.
 
-Domyślnie ta reguła przegląda tylko typy widoczne na zewnątrz, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Ta reguła dzieli nazwę parametru na tokeny oparte na Konwencji camelcase i sprawdza, czy każdy token jest równa "uri", "Uri", "urn", "Urn", "url" lub "Url". Jeśli istnieje dopasowanie, reguła zakłada, że parametr reprezentuje identyfikator uniform resource identifier (URI). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. Jeśli metoda pobiera reprezentację ciągu identyfikatora URI, odpowiadające przeciążenie powinien być podany, pobierające wystąpienie z <xref:System.Uri> klasy, która udostępnia te usługi w bezpieczny sposób.
+Ta reguła dzieli nazwę parametru na tokeny na podstawie Konwencji notacji CamelCase wielkości liter i sprawdza, czy każdy token jest równy "URI", "URI", "urn", "urn", "URL" lub "URL". Jeśli istnieje dopasowanie, reguła zakłada, że parametr reprezentuje jednolity identyfikator zasobów (URI). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. Jeśli metoda przyjmuje ciąg reprezentujący identyfikator URI, należy dostarczyć odpowiednie Przeciążenie, które przyjmuje wystąpienie <xref:System.Uri> klasy, które udostępnia te usługi w bezpieczny i bezpieczny sposób.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Zmień parametr <xref:System.Uri> wpisz; to jest zmianą przerywającą. Alternatywnie, zapewnienia przeciążenia metody, która przyjmuje <xref:System.Uri> parameter; to zmian niepowodujących niezgodności.
+Aby naprawić naruszenie tej zasady, należy zmienić parametr na <xref:System.Uri> typ; jest to istotna zmiana. Alternatywnie Podaj Przeciążenie metody, która przyjmuje <xref:System.Uri> parametr; jest to nieprzerwana zmiana.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli parametr nie reprezentuje identyfikator URI.
+Jeśli parametr nie reprezentuje identyfikatora URI, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1054.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie pokazano typem `ErrorProne`, który narusza tę regułę, a typem `SaferWay`, odpowiadającej reguły.
+Poniższy przykład pokazuje typ, `ErrorProne`, który narusza tę regułę i `SaferWay`typ, który spełnia regułę.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)]
@@ -73,6 +73,6 @@ W poniższym przykładzie pokazano typem `ErrorProne`, który narusza tę reguł
 ## <a name="related-rules"></a>Powiązane reguły
 
 - [CA1056: Właściwości identyfikatora URI nie powinny być ciągami](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1055: Identyfikator URI zwracanych wartości nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234: Przekazuj obiekty System.Uri zamiast ciągów](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: Przeciążenia identyfikatora URI ciągu wywołują przeciążenia System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1055: Zwracane wartości identyfikatora URI nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234 Przekaż obiekty System. URI zamiast ciągów](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+- [CA1057: Przeciążenia identyfikatora URI ciągu wywołania system. URI overloads](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

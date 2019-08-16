@@ -1,6 +1,6 @@
 ---
 title: 'Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel'
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,27 +15,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f5de8be3463ff0e96d516c8dec592d0aff3cfc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981437"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548019"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel
-  Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dodatek poziomu aplikacji dla programu Microsoft Office Excel. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte skoroszyty.
+  W tym instruktażu wprowadzającym pokazano, jak utworzyć dodatek na poziomie aplikacji dla programu Microsoft Office Excel. Funkcje, które tworzysz w tym rodzaju rozwiązanie, są dostępne dla samej aplikacji, niezależnie od tego, które skoroszyty są otwarte.
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
 
+[!include[Add-ins note](includes/addinsnote.md)]
+
  W instruktażu przedstawiono następujące zagadnienia:
 
-- Tworzenie projektu dodatku narzędzi VSTO programu Excel dla programu Excel.
+- Tworzenie projektu dodatku VSTO dla programu Excel dla programu Excel.
 
-- Pisanie kodu, który używa modelu obiektów programu Excel Aby dodać tekst w skoroszycie, podczas zapisywania.
+- Pisanie kodu, który używa modelu obiektów programu Excel do dodawania tekstu do skoroszytu po jego zapisaniu.
 
-- Tworzenie i uruchamianie projektu, aby ją przetestować.
+- Kompilowanie i uruchamianie projektu w celu jego przetestowania.
 
-- Czyszczenie zakończone projektu tak, aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.
+- Czyszczenie ukończonego projektu, aby dodatek VSTO nie był już automatycznie uruchamiany na komputerze deweloperskim.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -44,98 +46,98 @@ ms.locfileid: "62981437"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Utwórz projekt
 
-#### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>Aby utworzyć nowy projekt dodatku narzędzi VSTO programu Excel w programie Visual Studio
+#### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>Aby utworzyć nowy projekt dodatku narzędzi VSTO dla programu Excel w programie Visual Studio
 
 1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.
+2. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-3. W okienku szablonów, rozwiń **Visual C#** lub **języka Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
+3. W okienku szablony rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
 
-4. W rozwiniętym okienku **Office/SharePoint** węzeł **dodatków pakietu Office** węzła.
+4. W rozwiniętym węźle **Office/SharePoint** wybierz węzeł **Dodatki pakietu Office** .
 
-5. Na liście szablonów projektu wybierz **programu Excel 2010 dodatków** lub **Excel 2013 dodatków**.
+5. Na liście szablonów projektu wybierz dodatek **excel 2010** , dodatek do programu Excel **2013**.
 
-6. W **nazwa** wpisz **FirstExcelAddIn**.
+6. W polu **Nazwa** wpisz **FirstExcelAddIn**.
 
 7. Kliknij przycisk **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstExcelAddIn** projektu i otwiera plik kodu ThisAddIn w edytorze.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tworzy projekt **FirstExcelAddIn** i otwiera plik kodu ThisAddIn w edytorze.
 
-## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Pisanie kodu, aby dodać tekst zapisany skoroszyt
- Następnie dodaj kod, aby plik kodu ThisAddIn. Nowy kod używa modelu obiektów programu Excel, aby wstawić standardowy tekst w pierwszym wierszu aktywnego arkusza. Aktywny arkusz jest arkusza, która jest otwarta, gdy użytkownik zapisuje skoroszyt. Domyślnie plik kodu ThisAddIn zawiera następujące wygenerowanego kodu:
+## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Napisz kod, aby dodać tekst do zapisanego skoroszytu
+ Następnie Dodaj kod do pliku kodu ThisAddIn. Nowy kod używa modelu obiektów programu Excel do wstawiania tekstu standardowego w pierwszym wierszu aktywnego arkusza. Aktywny arkusz jest arkuszem otwartym, gdy użytkownik zapisuje skoroszyt. Domyślnie plik kodu ThisAddIn zawiera następujący wygenerowany kod:
 
-- Częściową definicję `ThisAddIn` klasy. Ta klasa udostępnia punkt wejścia dla kodu i zapewnia dostęp do modelu obiektów programu Excel. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md). W pozostałej części `ThisAddIn` klasa jest zdefiniowana w pliku ukryty kod, który nie należy modyfikować.
+- Częściowa definicja `ThisAddIn` klasy. Ta klasa udostępnia punkt wejścia dla kodu i zapewnia dostęp do modelu obiektów programu Excel. Aby uzyskać więcej informacji, zobacz [dodatki narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md). Pozostała część `ThisAddIn` klasy jest zdefiniowana w ukrytym pliku kodu, który nie powinien być modyfikowany.
 
-- `ThisAddIn_Startup` i `ThisAddIn_Shutdown` procedury obsługi zdarzeń. Te procedury obsługi zdarzeń są wywoływane, gdy program Excel ładuje i zwalnia dodatku narzędzi VSTO dla programów. Użyj tych programów obsługi zdarzeń, można zainicjować dodatku narzędzi VSTO dla programów, podczas jego ładowania oraz aby wyczyścić zasoby używane przez dodatek programu, gdy jest zwolniony. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+- Programy obsługi `ThisAddIn_Shutdown` zdarzeń i.`ThisAddIn_Startup` Te programy obsługi zdarzeń są wywoływane, gdy program Excel ładuje i zwalnia dodatek narzędzi VSTO. Te programy obsługi zdarzeń umożliwiają zainicjowanie dodatku VSTO podczas jego ładowania oraz oczyszczenie zasobów używanych przez dodatek po jego zwolnieniu. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>Aby dodać wiersz tekstu do zapisanego skoroszytu
 
-1. W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Nowy kod definiuje zdarzenia obsługi dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzenie, które jest wywoływane, gdy skoroszyt jest zapisywany.
+1. W pliku kodu ThisAddIn Dodaj następujący kod do `ThisAddIn` klasy. Nowy kod definiuje procedurę obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzenia, które jest zgłaszane, gdy skoroszyt zostanie zapisany.
 
     Gdy użytkownik zapisuje skoroszyt, program obsługi zdarzeń dodaje nowy tekst na początku aktywnego arkusza.
 
     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]
 
-2. Jeśli używasz języka C#, Dodaj następujący kod wymagany do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod służy do łączenia `Application_WorkbookBeforeSave` programu obsługi zdarzeń z <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzeń.
+2. Jeśli używasz C#programu, Dodaj następujący kod wymagany do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod służy do łączenia `Application_WorkbookBeforeSave` programu obsługi zdarzeń <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> ze zdarzeniem.
 
     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]
 
-   Aby zmodyfikować skoroszytu, po zapisaniu go, w poprzednich przykładach kodu za pomocą następujących obiektów:
+   Aby zmodyfikować skoroszyt po jego zapisaniu, poprzednie przykłady kodu używają następujących obiektów:
 
-- `Application` Pole `ThisAddIn` klasy. `Application` Pole zwraca <xref:Microsoft.Office.Interop.Excel.Application> reprezentujący bieżące wystąpienie programu Excel.
+- `Application` Pole`ThisAddIn` klasy. `Application` Pole<xref:Microsoft.Office.Interop.Excel.Application> zwraca obiekt, który reprezentuje bieżące wystąpienie programu Excel.
 
-- `Wb` Parametrów programu obsługi zdarzeń <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzeń. `Wb` Parametr <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu, który reprezentuje zapisany skoroszyt. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).
+- Parametr programu obsługi zdarzeń <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> dla zdarzenia. `Wb` `Wb` Parametr<xref:Microsoft.Office.Interop.Excel.Workbook> jest obiektem, który reprezentuje zapisany skoroszyt. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).
 
-## <a name="test-the-project"></a>Projekt testowy
+## <a name="test-the-project"></a>Testowanie projektu
 
 ### <a name="to-test-the-project"></a>Aby przetestować projekt
 
-1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
+1. Naciśnij klawisz **F5** , aby skompilować i uruchomić projekt.
 
-     Gdy tworzysz projekt, kod jest kompilowany do zestawu, który znajduje się w folderze wyjściowym kompilacji dla projektu. Visual Studio tworzy również zestaw wpisów rejestru, umożliwiające wykrycie i załadowanie dodatku narzędzi VSTO dla programów Excel i konfiguruje ustawienia zabezpieczeń na komputerze deweloperskim, aby włączyć dodatek narzędzi VSTO dla programów do uruchomienia. Aby uzyskać więcej informacji, zobacz [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).
+     Podczas kompilowania projektu, kod jest kompilowany do zestawu, który jest dołączony do folderu danych wyjściowych kompilacji dla projektu. Program Visual Studio tworzy również zestaw wpisów rejestru, które umożliwiają programowi Excel odnajdywanie i ładowanie dodatku VSTO oraz Konfigurowanie ustawień zabezpieczeń na komputerze deweloperskim, aby umożliwić uruchomienie dodatku VSTO. Aby uzyskać więcej informacji, zobacz [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
 
 2. W programie Excel Zapisz skoroszyt.
 
-3. Sprawdź, czy następujący tekst został dodany do skoroszytu.
+3. Sprawdź, czy do skoroszytu został dodany następujący tekst.
 
-     **Ten tekst został dodany przy użyciu kodu.**
+     **Ten tekst został dodany za pomocą kodu.**
 
 4. Zamknij program Excel.
 
-## <a name="clean-up-the-project"></a>Czyszczenie projektu
- Po zakończeniu tworzenia projektu dodatku narzędzi VSTO zestaw, wpisy rejestru i ustawienia zabezpieczeń należy usunąć z komputera dewelopera. W przeciwnym razie dodatku narzędzi VSTO będzie kontynuował pracę każdym razem, gdy po otwarciu programu Excel na komputerze deweloperskim.
+## <a name="clean-up-the-project"></a>Wyczyść projekt
+ Po zakończeniu opracowywania projektu, Usuń zestaw dodatków VSTO, wpisy rejestru i ustawienia zabezpieczeń z komputera deweloperskiego. W przeciwnym razie dodatek narzędzi VSTO będzie nadal uruchamiany za każdym razem, gdy otworzysz program Excel na komputerze deweloperskim.
 
-### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Aby wyczyścić ukończone projektu na komputerze deweloperskim
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Aby wyczyścić ukończony projekt na komputerze deweloperskim
 
-1. W programie Visual Studio na **kompilacji** menu, kliknij przycisk **czyste rozwiązanie**.
+1. W programie Visual Studio w menu **kompilacja** kliknij pozycję **czyste rozwiązanie**.
 
 ## <a name="next-steps"></a>Następne kroki
- Teraz, gdy utworzono podstawowe dodatku narzędzi VSTO dla programu Excel, można dowiedzieć się więcej o tworzeniu dodatków narzędzi VSTO dla programów w tych tematach:
+ Po utworzeniu podstawowego dodatku narzędzi VSTO dla programu Excel można dowiedzieć się więcej na temat opracowywania dodatków VSTO z następujących tematów:
 
-- Ogólne zadań programistycznych, które można wykonywać w dodatkach VSTO: [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md).
+- Ogólne zadania programistyczne, które można wykonywać w dodatkach narzędzia VSTO: [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 
-- Zadania programowania, które są specyficzne dla dodatków narzędzi VSTO programu Excel: [Rozwiązania w programie Excel](../vsto/excel-solutions.md).
+- Zadania programistyczne specyficzne dla dodatków narzędzi VSTO programu Excel: [Rozwiązania programu Excel](../vsto/excel-solutions.md).
 
-- Za pomocą modelu obiektów programu Excel: [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).
+- Korzystanie z modelu obiektów programu Excel: [Model obiektów programu Excel — Omówienie](../vsto/excel-object-model-overview.md).
 
-- Dostosowywanie interfejsu użytkownika (UI) programu Excel, na przykład przez dodawanie kart niestandardowych do Wstążki lub tworzenia własnego niestandardowego okienka zadań: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
+- Dostosowanie interfejsu użytkownika (UI) programu Excel, na przykład przez dodanie karty niestandardowej do wstążki lub utworzenie własnego niestandardowego okienka zadań: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
 
 - Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu Excel: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
 
-- Wdrażanie dodatków narzędzi VSTO dla programu Excel: [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).
+- Wdrażanie dodatków narzędzi VSTO dla programu Excel: [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Rozwiązania programu Excel](../vsto/excel-solutions.md)
-- [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)
-- [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)
-- [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)
+- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)

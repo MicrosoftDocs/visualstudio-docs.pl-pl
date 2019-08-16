@@ -1,6 +1,6 @@
 ---
-title: Office development ― przykłady i przewodniki
-ms.date: 02/02/2017
+title: Przykłady i przewodniki dotyczące programowania pakietu Office
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,40 +20,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ba918ef2d2bdbc35f7e46b6b8553037d3e5d281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447105"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551683"
 ---
-# <a name="office-development-samples-and-walkthroughs"></a>Office development ― przykłady i przewodniki
-  Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i instrukcje krok po kroku instruktaży, które ilustrują składni, struktury i technik, które umożliwia tworzenie rozwiązań programu Microsoft Office.
+# <a name="office-development-samples-and-walkthroughs"></a>Przykłady i przewodniki dotyczące programowania pakietu Office
+  Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i Instruktaż krok po kroku przedstawiające składnię, strukturę i techniki używane do tworzenia rozwiązań Microsoft Office.
 
- Przykładowy kod jest przeznaczona do celów instruktażowych i nie należy używać w przypadku rozwiązań wdrożonych bez modyfikacji. W szczególności zabezpieczeń musi należy uwzględnić większa.
+ Przykładowy kod jest przeznaczony do celów instruktażowych i nie powinien być używany w wdrożonych rozwiązaniach bez żadnych modyfikacji. W szczególności należy zwrócić uwagę na bezpieczeństwo.
 
- Aby uzyskać informacji na temat zabezpieczania aplikacji, zobacz [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
+ Aby uzyskać informacje na temat zabezpieczania aplikacji, zobacz [bezpieczne rozwiązania pakietu Office](../vsto/securing-office-solutions.md).
 
-> [!NOTE]
-> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Office development ― przykłady](../vsto/office-development-samples.md)|Zawiera łącza do przykładowych aplikacji, które ilustrują użycie rozwoju pakietu Office i programu SharePoint w programie Visual Studio.|
-|[Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)|Zawiera przewodniki krok po kroku, które udostępniają wprowadzenie do narzędzi programistycznych pakietu Office w programie Visual Studio i pomoc, aby zilustrować, jak można zintegrować program Word aplikacje biznesowe pakietu Office.|
-|[Wskazówki dotyczące za pomocą programu Excel](../vsto/walkthroughs-using-excel.md)|Zawiera przewodniki krok po kroku, zapewnia wprowadzenie do narzędzi programistycznych pakietu Office w programie Visual Studio, które ułatwia zilustrowanie sposób integrowania programu Excel do aplikacji biznesowej pakietu Office.|
-|[Dane w wskazówki dotyczące rozwiązań pakietu Office](../vsto/data-in-office-solutions-walkthroughs.md)|Zawiera przewodniki krok po kroku, które pokazują, jak pracować z danymi w posiadanych rozwiązaniach.|
-|[Wskazówki dotyczące dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization-walkthroughs.md)|Zawiera przewodniki krok po kroku, które ilustrują, w jaki sposób dostosować interfejs użytkownika (UI) w aplikacji pakietu Microsoft Office.|
-|[Wskazówki dotyczące wdrażania i zabezpieczeń](../vsto/security-and-deployment-walkthroughs.md)|Zawiera przewodniki krok po kroku, które ilustrują, jak można ustawić zasady zabezpieczeń, aby zezwolić na rozwiązania w celu uruchomienia i jak można wdrażać rozwiązania.|
+|[Przykłady programowania dla pakietu Office](../vsto/office-development-samples.md)|Oferuje linki do przykładowych aplikacji, które ilustrują korzystanie z programowania pakietu Office i programu SharePoint w programie Visual Studio.|
+|[Wskazówki dotyczące korzystania z programu Word](../vsto/walkthroughs-using-word.md)|Zawiera instrukcje krok po kroku, które zawierają wprowadzenie do narzędzi programistycznych pakietu Office w programie Visual Studio i ułatwiają zilustrowanie sposobu integrowania programu Word z pakietem Office Business Applications.|
+|[Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)|Zawiera instrukcje krok po kroku, które zawierają wprowadzenie do narzędzi programistycznych pakietu Office w programie Visual Studio i ułatwiają zilustrowanie sposobu integrowania programu Excel z pakietem Office Business Applications.|
+|[Dane w przewodnikach rozwiązań pakietu Office](../vsto/data-in-office-solutions-walkthroughs.md)|Wyświetla listę przewodników krok po kroku, które ilustrują, jak korzystać z danych w rozwiązaniach.|
+|[Wskazówki dotyczące dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization-walkthroughs.md)|Wyświetla listę przewodników krok po kroku, które ilustrują, jak można dostosować interfejs użytkownika Microsoft Office aplikacji.|
+|[Przewodniki dotyczące zabezpieczeń i wdrażania](../vsto/security-and-deployment-walkthroughs.md)|Zawiera instrukcje krok po kroku, które ilustrują, jak można ustawić zasady zabezpieczeń, aby umożliwić działanie Twojego rozwiązania oraz jak można wdrożyć rozwiązanie.|
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Zawiera łącza do informacji na temat instalacji, szablony projektów, podstawowe zestawy międzyoperacyjne pakietu Office i what's new in Office development.|
-|[Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Wyjaśnia działanie kodu zarządzanego pracy rozwiązań pakietu Office z punktu widzenia programistów i użytkowników końcowych i zawiera informacje na temat zarządzanych kod działa w przypadku dokumentów pakietu Office i aplikacji.|
-|[Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)|Zawiera listę często zadawane pytania dotyczące programowania przy użyciu programowanie Office w Visual Studio i zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.|
-|[Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera łącza do informacji dotyczących sposobu tworzenia rozwiązania Microsoft Office i rolę zestawy w rozwiązaniu.|
-|[Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)|Omówienie okienka zadań poziomie dokumentu, wywoływana w okienku Akcje.|
+|[Wprowadzenie &#40;do programowania pakietu Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Zawiera łącza do informacji na temat instalacji, szablonów projektów, podstawowych zestawów międzyoperacyjnych pakietu Office oraz nowości w programowaniu pakietu Office.|
+|[Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Wyjaśnia, jak zarządzane rozwiązania pakietu Office Code działają od perspektywy dewelopera i użytkownika końcowego oraz zawierają informacje o tym, jak działa kod zarządzany z dokumentami i aplikacjami pakietu Office.|
+|[Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)|Wyświetla listę często zadawanych pytań dotyczących programowania w programie Visual Studio i zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.|
+|[Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera łącza do informacji o sposobach tworzenia rozwiązań Microsoft Office i o roli zestawów w rozwiązaniu.|
+|[Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)|Zawiera przegląd okienka zadań na poziomie dokumentu, zwanego okienkiem akcje.|

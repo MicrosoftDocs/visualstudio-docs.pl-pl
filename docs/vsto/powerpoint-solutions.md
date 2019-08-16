@@ -1,6 +1,6 @@
 ---
 title: Rozwiązania programu PowerPoint
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926434"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551470"
 ---
 # <a name="powerpoint-solutions"></a>Rozwiązania programu PowerPoint
   Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dodatków narzędzi VSTO dla programu Microsoft Office PowerPoint. Za pomocą dodatków VSTO można zautomatyzować program PowerPoint, zwiększyć funkcje programu PowerPoint lub dostosować interfejs użytkownika programu PowerPoint.
@@ -31,8 +31,7 @@ ms.locfileid: "68926434"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![link do wideo](../vsto/media/playvideo.gif "link do wideo") Aby zapoznać się z pokrewną [prezentacją wideo, zobacz Jak mogę: Utworzyć dodatek dla programu Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).
 

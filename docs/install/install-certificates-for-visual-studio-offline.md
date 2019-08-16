@@ -1,7 +1,7 @@
 ---
 title: Instalowanie certyfikatów wymaganych do instalacji w trybie offline
 description: Dowiedz się, jak zainstalować certyfikaty dla instalacji w trybie offline programu Visual Studio.
-ms.date: 03/30/2019
+ms.date: 08/08/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 74732249f5a82974f3df66df4b95357cdcf71c79
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c7139234ab9f36842e92ead9e43f8d0a0a71a00e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925808"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551199"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio
 
@@ -148,7 +148,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
   * Certyfikat pośredni: **Podpisywanie kodu firmy Microsoft — Asystent zgodności**
     * Wymagane we wszystkich systemach. Należy pamiętać, że systemy za pomocą wszystkie aktualizacje stosowane z witryny Windows Update nie mogą mieć ten certyfikat.
   * Certyfikat główny: **Urząd certyfikacji głównej firmy Microsoft**
-    * Wymagany. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
+    * Wymagana. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
 
 **Aktualizacja**: W przypadku programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej Instalator programu Visual Studio wymaga zainstalowania tylko certyfikatów głównych w systemie. Te certyfikaty są przechowywane w plikach. cer zamiast. p12.
 
@@ -164,7 +164,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
     * Wymagany dla systemów Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
 * **Vs_installer_opc. SignCertificates. cer** zawiera:
   * Certyfikat główny: **Urząd certyfikacji głównej firmy Microsoft**
-    * Wymagana. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
+    * Wymagany. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
 
 Instalator programu Visual Studio wymaga zainstalowania tylko certyfikatów głównych w systemie.
 

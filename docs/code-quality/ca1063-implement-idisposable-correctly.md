@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 837659ca24eb66995626668185500db7bc32bbd7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820626"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547376"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
 
@@ -30,75 +30,75 @@ ms.locfileid: "66820626"
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-<xref:System.IDisposable?displayProperty=nameWithType> Interfejsu nie jest zaimplementowana poprawnie. Możliwe przyczyny są między innymi:
+<xref:System.IDisposable?displayProperty=nameWithType> Interfejs nie został poprawnie zaimplementowany. Możliwe przyczyny tego obejmują:
 
-- <xref:System.IDisposable> jest reimplemented w klasie.
+- <xref:System.IDisposable>jest zaimplementowana w klasie.
 
-- Finalizowanie jest reoverridden.
+- `Finalize`zostanie ponownie zastąpiony.
 
-- Metody Dispose() zostanie zastąpiona.
+- `Dispose()`jest zastępowany.
 
-- Metoda Dispose() nie jest publiczna, [zapieczętowanego](/dotnet/csharp/language-reference/keywords/sealed), co najmniej o nazwie **Dispose**.
+- Metoda nie jest publiczna, [zapieczętowana](/dotnet/csharp/language-reference/keywords/sealed)ani nazywana **Dispose.** `Dispose()`
 
-- Dispose(bool) nie jest chroniony, wirtualny lub niezapieczętowane.
+- `Dispose(bool)`nie jest chroniony, wirtualny lub niezapieczętowany.
 
-- Niezapieczętowane typy metody Dispose() musi wywołać metody Dispose(true).
+- W niezapieczętowanych typach, `Dispose()` należy wywołać `Dispose(true)`.
 
-- W przypadku typów niezapieczętowanych implementacji Finalize niewywołujący jednego lub obu tych Dispose(bool) lub finalizator klasy bazowej.
+- W przypadku typów `Finalize` niezapieczętowanych implementacja nie wywołuje ani obu `Dispose(bool)` , ani ani do finalizatora klasy bazowej.
 
-Naruszenie któregokolwiek z tych wzorców wyzwala ostrzeżenie CA1063.
+Naruszenie jednego z tych wzorców wyzwala ostrzeżenie CA1063.
 
-Każdy niezapieczętowany typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu należy podać swój własny `protected virtual void Dispose(bool)` metody. `Dispose()` należy wywołać `Dispose(true)`, i powinny wywoływać finalizator `Dispose(false)`. Jeśli utworzysz niezamknięty typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu, należy zdefiniować `Dispose(bool)` i wywołać go. Aby uzyskać więcej informacji, zobacz [wyczyścić niezarządzane zasoby (.NET — przewodnik)](/dotnet/standard/garbage-collection/unmanaged) i [wzorzec usuwania](/dotnet/standard/design-guidelines/dispose-pattern).
+Każdy niezapieczętowany typ, który deklaruje i implementuje <xref:System.IDisposable> interfejs, musi udostępniać własną `protected virtual void Dispose(bool)` metodę. `Dispose()`należy wywołać `Dispose(true)`metodę, a finalizator powinien wywołać. `Dispose(false)` W przypadku utworzenia niezapieczętowanego typu, który deklaruje i implementuje <xref:System.IDisposable> interfejs, należy go zdefiniować `Dispose(bool)` i wywołać. Aby uzyskać więcej informacji, zobacz [Oczyszczanie zasobów niezarządzanych (Przewodnik po platformie .NET)](/dotnet/standard/garbage-collection/unmanaged) i [wzorca usuwania](/dotnet/standard/design-guidelines/dispose-pattern).
 
-Domyślnie ta reguła przegląda tylko typy widoczne na zewnątrz, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wszystkie <xref:System.IDisposable> typy powinny implementować [wzorzec usuwania](/dotnet/standard/design-guidelines/dispose-pattern) poprawnie.
+Wszystkie <xref:System.IDisposable> typy powinny poprawnie zaimplementować [wzorzec Dispose](/dotnet/standard/design-guidelines/dispose-pattern) .
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Sprawdź kod i określić, które z następujących rozwiązań rozwiąże to naruszenie:
+Sprawdź kod i ustal, które z następujących rozwiązań spowodują rozwiązanie tego naruszenia:
 
-- Usuń <xref:System.IDisposable> z listy interfejsów, które są implementowane przez danego typu, a także Przesłoń implementację metody Dispose w klasie bazowej, zamiast tego.
+- Usuń <xref:System.IDisposable> z listy interfejsów, które są implementowane przez typ, i Przesłoń implementację metody Dispose klasy podstawowej.
 
-- Usuń finalizator z typu, Przesłoń metodę Dispose (bool disposing) i umieść logikę finalizowania w ścieżce kodu, w którym "disposing" ma wartość false.
+- Usuń finalizator z typu, Przesłoń metodę Dispose (usuwanie bool) i umieść logikę finalizacji w ścieżce kodu, gdzie "Dispose" ma wartość false.
 
-- Przesłoń metodę Dispose (bool disposing) i umieść logikę rozporządzania w ścieżce kodu, w którym "disposing" ma wartość true.
+- Zastąp metodę Dispose (likwidacja bool) i umieść logikę usuwania w ścieżce kodu, w której wartość "Dispose" jest prawdziwa.
 
-- Upewnij się, że metody Dispose() jest zadeklarowany jako publiczny i [zapieczętowanego](/dotnet/csharp/language-reference/keywords/sealed).
+- Upewnij się, że metoda Dispose () jest zadeklarowana jako publiczna i [zapieczętowana](/dotnet/csharp/language-reference/keywords/sealed).
 
-- Zmiana nazwy Twojego metodę dispose, aby **Dispose** i upewnij się, że jest on zadeklarowany jako publiczny i [zapieczętowanego](/dotnet/csharp/language-reference/keywords/sealed).
+- Zmień nazwę metody Dispose na **Dispose** i upewnij się, że jest ona zadeklarowana jako publiczna i [zapieczętowana](/dotnet/csharp/language-reference/keywords/sealed).
 
-- Upewnij się, że Dispose(bool) został zadeklarowany jako chroniony, wirtualny i niezapieczętowany.
+- Upewnij się, że metoda Dispose (bool) jest zadeklarowana jako chroniona, wirtualna i niezapieczętowany.
 
-- Zmodyfikować Dispose() wywołuje metodę Dispose(true), następnie wywołuje <xref:System.GC.SuppressFinalize%2A> w bieżącym wystąpieniu obiektu (`this`, lub `Me` w języku Visual Basic), a następnie zwraca.
+- Zmodyfikuj metodę Dispose (), tak aby wywoła ona metodę Dispose (true) <xref:System.GC.SuppressFinalize%2A> , a następnie wywołuje w bieżącym`this`wystąpieniu obiektu `Me` (lub w Visual Basic), a następnie zwraca wartość.
 
-- Zmodyfikuj swoje finalizatora, tak, aby wywołuje metody Dispose(false), a następnie zwraca.
+- Zmodyfikuj finalizator, aby wywoływał metodę Dispose (false), a następnie zwraca wartość.
 
-- Jeśli utworzysz niezamknięty typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu, upewnij się, że implementacja <xref:System.IDisposable> jest zgodna z wzorcem, opisanego wcześniej w tej sekcji.
+- W przypadku utworzenia niezapieczętowanego typu, który deklaruje i implementuje <xref:System.IDisposable> interfejs, upewnij się, że <xref:System.IDisposable> implementacja jest zgodna ze wzorcem opisanym wcześniej w tej sekcji.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
 Nie pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1063.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
-## <a name="pseudo-code-example"></a>Przykładowy pseudo-kod
+## <a name="pseudo-code-example"></a>Przykład pseudo kodu
 
-Pseudo-poniższy kod stanowi przykład ogólne implementacji Dispose(bool) w klasie, która korzysta z zarządzanego i natywnego zasobów.
+Następujący pseudo kod zawiera ogólny przykład sposobu, w jaki Metoda Dispose (bool) powinna zostać zaimplementowana w klasie, która korzysta z zasobów zarządzanych i natywnych.
 
 ```csharp
 public class Resource : IDisposable
@@ -146,5 +146,5 @@ public class Resource : IDisposable
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Usuń wzorca (wytyczne dotyczące projektowania framework)](/dotnet/standard/design-guidelines/dispose-pattern)
-- [Oczyszczanie zasobów niezarządzanych (Przewodnik platformy .NET)](/dotnet/standard/garbage-collection/unmanaged)
+- [Dispose — wzorzec (wskazówki dotyczące projektowania struktury)](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Wyczyść niezarządzane zasoby (Przewodnik .NET)](/dotnet/standard/garbage-collection/unmanaged)

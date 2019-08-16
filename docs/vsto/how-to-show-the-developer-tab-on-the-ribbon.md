@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Pokazywanie karty dewelopera na Wstążce'
-ms.date: 02/02/2017
+title: 'Instrukcje: Pokaż kartę Deweloper na Wstążce'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,56 +13,58 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b6641cca4ef2288452b2f6959482b311a5b07a4
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418854"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551785"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Instrukcje: Pokazywanie karty dewelopera na Wstążce
-  Aby uzyskać dostęp do **Developer** karty na Wstążce aplikacji pakietu Office, musisz skonfigurować je, aby pokazywała tę kartę, ponieważ nie jest wyświetlane domyślnie. Na przykład musisz wyświetlić tę kartę, jeśli chcesz dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> do dostosowywania poziomie dokumentu dla programu Word.
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Instrukcje: Pokaż kartę Deweloper na Wstążce
+  Aby uzyskać dostęp do karty **deweloper** na Wstążce aplikacji pakietu Office, należy ją skonfigurować tak, aby wyświetlała tę kartę, ponieważ nie jest wyświetlana domyślnie. Na przykład należy wyświetlić tę kartę, jeśli chcesz dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> do dostosowania na poziomie dokumentu dla programu Word.
 
 > [!NOTE]
-> Niniejsze wytyczne mają zastosowanie do pakietu Office 2010 lub nowszej tylko aplikacji. Jeśli chcesz wyświetlić tę kartę w pakietu Microsoft Office 2007, zobacz następującą wersję tego tematu [jak: Pokazywanie karty dewelopera na wstążce](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> Te wskazówki dotyczą tylko aplikacji pakietu Office 2010 lub nowszych. Jeśli chcesz wyświetlić tę kartę w systemie 2007 Microsoft Office, zobacz następującą wersję tego tematu [, jak: Pokaż kartę Deweloper na Wstążce](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
-> Dostęp nie ma **Developer** kartę.
+> Dostęp nie ma karty **deweloper** .
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="to-show-the-developer-tab"></a>Aby wyświetlić kartę Deweloper
 
-1. Uruchom dowolną z aplikacji pakietu Office obsługiwaną przez ten temat. Zobacz **ma zastosowanie do:** Uwaga zamieszczona wcześniej w tym temacie.
+1. Uruchom dowolną z aplikacji pakietu Office obsługiwaną przez ten temat. Zobacz sekcję **dotyczy:** Zanotuj wcześniej w tym temacie.
 
-2. Na **pliku** kartę, wybrać **opcje** przycisku.
+2. Na karcie **plik** wybierz przycisk **Opcje** .
 
-     Poniższy rysunek przedstawia **pliku** kartę i **opcje** przycisku w pakiecie Office 2010.
+     Na poniższej ilustracji przedstawiono kartę **plik** i przycisk **Opcje** w pakiecie Office 2010.
 
-     ![Wybranie pliku, opcje w programie Outlook 2010](../vsto/media/vsto-office-file-tab.png "wybranie pliku, opcje w programie Outlook 2010")
+     ![Wybieranie pliku, opcje w programie Outlook 2010](../vsto/media/vsto-office-file-tab.png "Wybieranie pliku, opcje w programie Outlook 2010")
 
-     Poniższy rysunek przedstawia **pliku** kartę w programie Office 2013.
+     Na poniższej ilustracji przedstawiono kartę **plik** w pakiecie Office 2013.
 
-     ![Karta plik w programie Outlook 2013](../vsto/media/vsto-office2013-filetab.png "karta plik w programie Outlook 2013")
+     ![Karta plik w programie Outlook 2013](../vsto/media/vsto-office2013-filetab.png "Karta plik w programie Outlook 2013")
 
-     Poniższy rysunek przedstawia **opcje** przycisku w programie Office 2013.
+     Poniższy rysunek przedstawia przycisk **Opcje** w pakiecie Office 2013.
 
-     ![Przycisk Opcje w Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "przycisk Opcje w Outlook 2013 Preview")
+     ![Przycisk Opcje w programie Outlook 2013 (wersja] zapoznawcza) (../vsto/media/vsto-office2013-optionsbutton.png "Przycisk Opcje w programie Outlook 2013 (wersja") zapoznawcza)
 
-3. W _ApplicationName_**opcje** okna dialogowego wybierz **Dostosowywanie wstążki** przycisku.
+3. W oknie dialogowym**Opcje** _ApplicationName_wybierz przycisk **Dostosuj Wstążkę** .
 
-     Poniższy rysunek przedstawia **opcje** okno dialogowe i **Dostosowywanie wstążki** przycisku w programie Excel 2010. Lokalizacja tego przycisku jest podobna we wszystkich innych aplikacjach wymienionych w sekcji "Dotyczy" w górnej części tego tematu.
+     Na poniższej ilustracji przedstawiono okno dialogowe **Opcje** i przycisk **Dostosuj Wstążkę** w programie Excel 2010. Lokalizacja tego przycisku jest podobna we wszystkich innych aplikacjach wymienionych w sekcji "dotyczy" w górnej części tego tematu.
 
-     ![Dostosowany przycisk wstążki](../vsto/media/vsto-office2010-customizeribbonbutton.png "dostosowany przycisk wstążki")
+     ![Przycisk Dostosuj Wstążkę](../vsto/media/vsto-office2010-customizeribbonbutton.png "Przycisk Dostosuj Wstążkę")
 
-4. Na liście głównych zakładek, wybierz **Developer** pole wyboru.
+4. Na liście głównych kart, zaznacz pole wyboru **deweloper** .
 
-     Poniższy rysunek przedstawia **Developer** pole wyboru w programie Word 2010 oraz [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Lokalizacja tego pola wyboru jest podobna we wszystkich innych aplikacjach wymienionych w sekcji "Dotyczy" w górnej części tego tematu.
+     Poniższy rysunek przedstawia pole wyboru **deweloper** w programie Word 2010 i [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Lokalizacja tego pola wyboru jest podobna we wszystkich innych aplikacjach wymienionych w sekcji "dotyczy" w górnej części tego tematu.
 
-     ![Pole wyboru Deweloper w oknie dialogowym Opcje programu Word](../vsto/media/vsto-office2010-developercheckbox.png "pole wyboru Deweloper w oknie dialogowym Opcje programu Word")
+     ![Pole wyboru Deweloper w oknie dialogowym Opcje programu Word](../vsto/media/vsto-office2010-developercheckbox.png "Pole wyboru Deweloper w oknie dialogowym Opcje programu Word")
 
-5. Wybierz **OK** przycisk, aby zamknąć **opcje** okno dialogowe.
+5. Wybierz przycisk **OK** , aby zamknąć okno dialogowe **Opcje** .
 
 ## <a name="see-also"></a>Zobacz także
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)

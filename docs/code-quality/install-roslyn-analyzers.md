@@ -11,92 +11,92 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 284f33d9d7af885958ed13101e1449edc5c8f2be
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820828"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551089"
 ---
-# <a name="install-net-compiler-platform-analyzers"></a>Instalowanie analizatorów platformie kompilatora .NET
+# <a name="install-net-compiler-platform-code-analyzers"></a>Zainstaluj .NET Compiler Platform analizatorów kodu
 
-Program Visual Studio zawiera podstawowy zestaw platformy kompilatora .NET (*Roslyn*) analizatorów. Te analizatory są zawsze włączone. Można zainstalować dodatkowe analizatory jako pakietów NuGet lub jako rozszerzenia programu Visual Studio w *VSIX* plików.
+Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn*) analizatorów. Te analizatory są zawsze włączone. Możesz zainstalować dodatkowe analizatory jako pakiety NuGet lub jako rozszerzenia programu Visual Studio w plikach *VSIX* .
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Aby zainstalować pakiety analizatora NuGet
 
-1. Znajdź pakiet analizatora, które chcesz zainstalować na www.nuget.org.
+1. Znajdź pakiet analizatora, który chcesz zainstalować w systemie www.nuget.org.
 
-   Na przykład możesz chcieć [zainstalować analizatory Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) Aby sprawdzić swój kod pod kątem problemów zabezpieczeń i wydajności, między innymi. Ewentualnie Zainstaluj zestaw [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) do wyszukania problemów stylu w bazie kodu.
+   Na przykład może być konieczne [zainstalowanie analizatorów FxCop firmy Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) w celu sprawdzenia kodu pod kątem problemów z zabezpieczeniami i wydajnością, między innymi. Lub zainstaluj [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) , aby wyszukać problemy z stylem w bazie kodu.
 
-2. Zainstaluj pakiet w programie Visual Studio, za pomocą [Konsola Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) lub [interfejs użytkownika Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+2. Zainstaluj pakiet w programie Visual Studio przy użyciu [konsoli Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) lub [interfejsu użytkownika Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
-   > Strona www.nuget.org dla każdego pakietu analizatora zawiera polecenia, aby wkleić w **Konsola Menedżera pakietów**. Jest parzysta przydatną przycisk, aby skopiować tekst do Schowka.
+   > Strona www.nuget.org każdego pakietu analizatora pokazuje polecenie do wklejenia do **konsoli Menedżera pakietów**. Istnieje jeszcze przycisk przydatny do kopiowania tekstu do Schowka.
 
-   Zestawy analizatora są zainstalowane i są wyświetlane w **Eksploratora rozwiązań** w obszarze **odwołania** > **analizatory**.
+   Zestawy analizatora są zainstalowane i pojawiają się w **Eksplorator rozwiązań** w obszarze analizatory **odwołań** > .
 
-## <a name="to-install-vsix-analyzers"></a>Aby zainstalować VSIX analizatorów
+## <a name="to-install-vsix-analyzers"></a>Aby zainstalować analizatory VSIX
 
 ::: moniker range="vs-2017"
 
-1. W programie Visual Studio, wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+1. W programie Visual Studio wybierz pozycję **Narzędzia** > **rozszerzenia i aktualizacje**.
 
-   **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.
+   Zostanie otwarte okno dialogowe **rozszerzenia i aktualizacje** .
 
    > [!NOTE]
-   > Alternatywnie można znaleźć i pobrać rozszerzenia analizatora bezpośrednio z [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+   > Alternatywnie można znaleźć i pobrać rozszerzenie analizatora bezpośrednio z [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. W programie Visual Studio, wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami**.
+1. W programie Visual Studio wybierz pozycję **rozszerzenia** > **Zarządzanie rozszerzeniami**.
 
-   **Zarządzaj rozszerzeniami** zostanie otwarte okno dialogowe.
+   Zostanie otwarte okno dialogowe **Zarządzanie rozszerzeniami** .
 
    > [!NOTE]
-   > Alternatywnie można znaleźć i pobrać rozszerzenia analizatora bezpośrednio z [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+   > Alternatywnie można znaleźć i pobrać rozszerzenie analizatora bezpośrednio z [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 ::: moniker-end
 
-2. Rozwiń **Online** w okienku po lewej stronie, a następnie wybierz **Visual Studio Marketplace**.
+2. W lewym okienku rozwiń pozycję **online** , a następnie wybierz pozycję **Visual Studio Marketplace**.
 
-3. W polu wyszukiwania wpisz nazwę rozszerzenia analizatora, które chcesz zainstalować. Na przykład możesz chcieć [zainstalować analizatory Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) Aby sprawdzić swój kod pod kątem problemów zabezpieczeń i wydajności, między innymi.
+3. W polu wyszukiwania wpisz nazwę rozszerzenia analizatora, które chcesz zainstalować. Na przykład może być konieczne [zainstalowanie analizatorów FxCop firmy Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) w celu sprawdzenia kodu pod kątem problemów z zabezpieczeniami i wydajnością, między innymi.
 
-4. Wybierz **Pobierz**.
+4. Wybierz pozycję **Pobierz**.
 
-   Rozszerzenie zostanie pobrana.
+   Rozszerzenie jest pobierane.
 
-5. Wybierz **OK** aby zamknąć okno dialogowe, a następnie zamknij wszystkie wystąpienia programu Visual Studio, aby uruchomić **Instalator VSIX**.
+5. Wybierz **przycisk OK** , aby zamknąć okno dialogowe, a następnie zamknij wszystkie wystąpienia programu Visual Studio, aby uruchomić **Instalatora VSIX**.
 
-   **Instalator VSIX** zostanie otwarte okno dialogowe.
+   Zostanie otwarte okno dialogowe **Instalator VSIX** .
 
    ![Instalator VSIX dla analizy kodu firmy Microsoft](media/vsix-installer-code-analysis.png)
 
-6. Wybierz **Modyfikuj** aby rozpocząć instalację.
+6. Wybierz pozycję **Modyfikuj** , aby rozpocząć instalację.
 
-7. Po minucie lub dwóch kończy instalację. Wybierz **Zamknij**.
+7. Po minucie lub dwóch instalacjach zostanie zakończona. Wybierz pozycję **Zamknij**.
 
 8. Otwórz ponownie program Visual Studio.
 
 ::: moniker range="vs-2017"
 
-Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz opcję **narzędzia** > **rozszerzenia i aktualizacje**. W **rozszerzenia i aktualizacje** okno dialogowe, wybierz opcję **zainstalowane** kategorii po lewej stronie, a następnie Wyszukaj według nazwy rozszerzenia.
+Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz pozycję **Narzędzia** > **rozszerzenia i aktualizacje**. W oknie dialogowym **rozszerzenia i aktualizacje** wybierz zainstalowaną kategorię po lewej stronie, a następnie wyszukaj rozszerzenie według nazwy.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz opcję **rozszerzenia** > **Zarządzaj rozszerzeniami**. W **Zarządzaj rozszerzeniami** okno dialogowe, wybierz opcję **zainstalowane** kategorii po lewej stronie, a następnie Wyszukaj według nazwy rozszerzenia.
+Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz pozycję **rozszerzenia** > **Zarządzanie rozszerzeniami**. W oknie dialogowym **Zarządzanie rozszerzeniami** wybierz zainstalowaną kategorię po lewej stronie, a następnie wyszukaj rozszerzenie według nazwy.
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Używanie analizatorów Roslyn w programie Visual Studio](../code-quality/use-roslyn-analyzers.md)
+> [Korzystanie z analizatorów kodu w programie Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie analizatorów Roslyn w programie Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Zainstaluj analizatory FxCop analizujące kod](../code-quality/install-fxcop-analyzers.md)
+- [Przegląd analizatorów kodu w programie Visual Studio](../code-quality/roslyn-analyzers-overview.md)
+- [Zainstaluj analizatory FxCop](../code-quality/install-fxcop-analyzers.md)

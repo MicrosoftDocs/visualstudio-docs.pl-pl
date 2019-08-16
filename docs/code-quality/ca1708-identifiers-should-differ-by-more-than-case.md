@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 5098e2feadc6d67c466e31ab19d059ac70c7d833
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714258"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547397"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter
 
@@ -32,37 +32,37 @@ ms.locfileid: "66714258"
 
 ## <a name="cause"></a>Przyczyna
 
-Nazwy dwa typy, członków lub przestrzeni nazw FQDN parametrów są identyczne, gdy są one konwertowane na małe litery.
+Nazwy dwóch typów, elementów członkowskich, parametrów lub w pełni kwalifikowanych przestrzeni nazw są identyczne, gdy są konwertowane na małe litery.
 
-Domyślnie ta reguła przegląda tylko typy widoczne na zewnątrz, członków i przestrzenie nazw, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko widoczne na zewnątrz typy, elementy członkowskie i przestrzenie nazw, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Identyfikatory przestrzeni nazw, typów, elementów członkowskich i parametry nie mogą się różnić jedynie wielkością liter, ponieważ języki dla środowiska uruchomieniowego języka wspólnego nie muszą rozróżniać wielkości liter. Na przykład [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] to powszechnie używany język bez uwzględniania wielkości liter.
+Identyfikatory przestrzeni nazw, typów, elementów członkowskich i parametry nie mogą się różnić jedynie wielkością liter, ponieważ języki dla środowiska uruchomieniowego języka wspólnego nie muszą rozróżniać wielkości liter. Na przykład [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] jest szeroko używanym językiem bez uwzględniania wielkości liter.
 
-Ta reguła jest uruchamiana na tylko członków publicznie widoczne.
+Ta zasada jest uruchamiana tylko dla widocznych publicznie członków.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Wybierz nazwę, która jest unikatowa, gdy jest porównywana do innych identyfikatorów, bez uwzględniania wielkości liter.
+Wybierz unikatową nazwę, która jest porównywana z innymi identyfikatorami w sposób niezależny od wielkości liter.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły. Biblioteka może nie być można używać we wszystkich językach na platformie .NET.
+Nie pomijaj ostrzeżeń dla tej reguły. Biblioteka może nie być użyteczna we wszystkich dostępnych językach w programie .NET.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1708.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazewnictwa). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazywanie). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
-## <a name="example-of-a-violation"></a>Przykładem naruszenia
+## <a name="example-of-a-violation"></a>Przykład naruszenia
 
-W poniższym przykładzie pokazano naruszenie tej zasady.
+Poniższy przykład demonstruje naruszenie tej reguły.
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../code-quality/codesnippet/CSharp/ca1708-identifiers-should-differ-by-more-than-case_1.cs)]
 

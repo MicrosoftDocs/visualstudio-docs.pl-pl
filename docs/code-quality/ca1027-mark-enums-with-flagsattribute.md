@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdb8406d43f90414cf255abae6f1ca5f549e92e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 92b74bcf587492155445c500252ea10773a5978b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842482"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547799"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Oznacz typy wyliczeniowe atrybutem Flags
 
@@ -28,47 +28,47 @@ ms.locfileid: "65842482"
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Wartości wyliczenia są potęgi liczb lub kombinacji innych wartości, które są zdefiniowane w wyliczeniu, i <xref:System.FlagsAttribute?displayProperty=fullName> atrybut nie jest obecny. W celu zmniejszenia liczby wyników fałszywie dodatnich, ta reguła nie raportuje naruszenie dla wyliczenia, które mają wartości ciągłe.
+Wartości wyliczenia są potęgami dwóch lub są kombinacjami innych wartości, które są zdefiniowane w wyliczeniu, i <xref:System.FlagsAttribute?displayProperty=fullName> atrybut nie jest obecny. Aby zmniejszyć liczbę fałszywie dodatnich, ta reguła nie zgłasza naruszenia dla wyliczeń, które mają ciągłe wartości.
 
-Domyślnie ta reguła przegląda tylko wyliczenia publiczne, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko publiczne wyliczenia, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Zastosuj <xref:System.FlagsAttribute> z wyliczeniem, gdy jego stałe nazwane mogą zostać sensownie połączone. Rozważmy na przykład wyliczenie dni tygodnia w aplikacji, która przechowuje informacje o dostępnych zasobów który dzień. Jeśli dostępność każdego zasobu jest zaszyfrowana przy użyciu wyliczenia, które ma <xref:System.FlagsAttribute> obecne i dowolną kombinację dni, które mogą być reprezentowane. Bez atrybutu może być reprezentowany tylko jeden dzień tygodnia.
+Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Zastosuj <xref:System.FlagsAttribute> do wyliczenia, gdy jego nazwane stałe mogą być w znaczący sposób połączone. Rozważmy na przykład Wyliczenie dni tygodnia w aplikacji, która śledzi zasoby danego dnia. Jeśli dostępność każdego zasobu jest zakodowana przy użyciu wyliczenia, które <xref:System.FlagsAttribute> jest obecne, można przedstawić dowolną kombinację dni. Bez atrybutu, można przedstawić tylko jeden dzień tygodnia.
 
-W przypadku pól, które przechowują wyliczenia możliwych do łączenia wartości wyliczenia poszczególnych są traktowane jako grup bitów w polu. Dlatego takie pola są czasami określane jako *pola bitowe*. Aby połączyć wartości wyliczenia do przechowywania w pole bitowe, należy użyć logiczna operatorów warunkowych. Aby przetestować polem bitowym, aby ustalić, czy występuje wartość wyliczenia określonego, użyj operatorów logicznych logicznych. Pola bitowe do przechowywania i pobierania wartości wyliczenia połączone poprawnie każda wartość, która jest zdefiniowana w wyliczeniu musi być potęgą liczby dwa. Jeśli tak jest, wartość logiczna operatorów logicznych nie będzie można wyodrębnić wartości poszczególnych wyliczenia, które są przechowywane w polu.
+W przypadku pól, które przechowują wyliczenia do przydzielenia, poszczególne wartości wyliczenia są traktowane jako grupy bitów w polu. W związku z tym takie pola są czasami określane jako *pola bitowe*. Aby połączyć wartości wyliczenia dla magazynu w polu bitowym, użyj operatorów warunkowych Boolean. Aby przetestować pole bitowe w celu ustalenia, czy określona wartość wyliczenia jest obecna, użyj logicznych operatorów logicznych. W przypadku pola bitowego do poprawnego przechowywania i pobierania połączonych wartości wyliczenia każda wartość zdefiniowana w wyliczeniu musi być potęgą liczby dwa. O ile tak nie jest, logiczne operatory logiczne nie będą mogły wyodrębnić poszczególnych wartości wyliczenia, które są przechowywane w polu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy dodać <xref:System.FlagsAttribute> do wyliczenia.
+Aby naprawić naruszenie tej reguły, Dodaj <xref:System.FlagsAttribute> do wyliczenia.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Pomijaj ostrzeżeń dla tej reguły, jeśli nie chcesz, aby wartości wyliczenia możliwych do łączenia się.
+Pomiń ostrzeżenie z tej reguły, jeśli nie chcesz, aby wartości wyliczenia były możliwe do kombinacji.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1027.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie `DaysEnumNeedsFlags` jest wyliczeniem, który spełnia wymagania dotyczące korzystania z <xref:System.FlagsAttribute> , lecz nie ma go. `ColorEnumShouldNotHaveFlag` Wyliczenia nie ma wartości, które są potęgi liczby dwa, ale niepoprawnie Określa <xref:System.FlagsAttribute>. Narusza regułę [CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+W poniższym przykładzie jest wyliczeniem, które spełnia wymagania dotyczące korzystania `DaysEnumNeedsFlags` <xref:System.FlagsAttribute> z programu, ale nie ma go. Wyliczenie nie zawiera wartości, które są potęgami dwóch, ale nieprawidłowo określa <xref:System.FlagsAttribute>. `ColorEnumShouldNotHaveFlag` To narusza reguły [CA2217: Nie oznaczaj typów wyliczeniowych](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)atrybutem FlagsAttribute.
 
 [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA2217 Nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Zobacz także
 

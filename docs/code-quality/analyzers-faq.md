@@ -1,5 +1,5 @@
 ---
-title: Polecenia EditorConfig w porównaniu z analizatorów
+title: EditorConfig a analizatory
 ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,55 +9,55 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec9296f15c48cf3b327c78cd0ce7d57adafa002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571475"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547892"
 ---
-# <a name="analyzers-faq"></a>Analizatory — często zadawane pytania
+# <a name="code-analysis-faq"></a>Analiza kodu — często zadawane pytania
 
-Ta strona zawiera odpowiedzi na niektóre często zadawane pytania dotyczące analizatorów Roslyn w programie Visual Studio.
+Ta strona zawiera odpowiedzi na kilka często zadawanych pytań dotyczących analizy kodu na podstawie .NET Compiler Platform w programie Visual Studio.
 
-## <a name="roslyn-analyzers-versus-editorconfig"></a>Analizatory Roslyn w porównaniu z pliku editorconfig
+## <a name="code-analysis-versus-editorconfig"></a>Analiza kodu w porównaniu z EditorConfig
 
-**Q**: Należy użyć analizatorów Roslyn lub .editorconfig styl kodu?
+**P**: Czy należy używać analizy kodu lub EditorConfig do sprawdzania stylu kodu?
 
-**A**: Analizatory Roslyn i plików editorconfig pracy ręcznie dostępnych. Podczas definiowania stylów kodu [w pliku .editorconfig](../ide/editorconfig-code-style-settings-reference.md) lub na [edytora tekstów opcje](../ide/code-styles-and-quick-actions.md) strony, którą faktycznie konfigurujesz analizatorów Roslyn, które są wbudowane w program Visual Studio. Plików EditorConfig można również skonfigurować niektóre pakiety analizatora innych firm, takiego jak [analizatory FxCop analizujące kod](configure-fxcop-analyzers.md).
+ODP.: Analiza kodu i pliki. editorconfig są dostępne w ręku. Podczas definiowania stylów kodu [w pliku. editorconfig](../ide/editorconfig-code-style-settings-reference.md) lub na stronie [Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) , można faktycznie skonfigurować analizatory kodu, które są wbudowane w program Visual Studio. Plików EditorConfig można także użyć do skonfigurowania niektórych pakietów analizatora innych firm, takich jak [FxCop](configure-fxcop-analyzers.md).
 
-## <a name="editorconfig-versus-rule-sets"></a>Polecenia EditorConfig w porównaniu z zestawów reguł
+## <a name="editorconfig-versus-rule-sets"></a>EditorConfig a zestawy reguł
 
-**Q**: Należy skonfigurować Mój analizatory za pomocą zestawu reguł lub pliku .editorconfig?
+**P**: Czy należy skonfigurować moje analizatory przy użyciu zestawu reguł lub pliku. editorconfig?
 
-**A**: Zestawy reguł i plików editorconfig są wzajemnie wykluczających się sposoby konfigurowania analizatorów. One może współistnieć. [Zestawów reguł](analyzer-rule-sets.md) pozwalają włączyć i wyłączyć reguły i ustawienia ich ważności. Plików EditorConfig oferują inne sposoby, aby skonfigurować reguły. Dla analizatory FxCop analizujące kod plików editorconfig pozwalają [definiujący typy kodu do analizy, które](fxcop-analyzer-options.md). Analizatory, które są wbudowane w program Visual Studio, aby uzyskać plików editorconfig pozwalają [definiowania stylów preferowanych kodu](../ide/editorconfig-code-style-settings-reference.md) dla kodu.
+ODP.: Zestawy reguł i pliki. editorconfig są wzajemnie wykluczające się sposoby konfigurowania analizatorów. Mogą współistnieć. [Zestawy reguł](analyzer-rule-sets.md) umożliwiają włączanie i wyłączanie reguł oraz ustawianie ich ważności. Pliki EditorConfig oferują inne sposoby konfigurowania reguł. W przypadku analizatorów FxCop pliki. editorconfig umożliwiają [Definiowanie typów kodu do analizy](fxcop-analyzer-options.md). W przypadku analizatorów wbudowanych w program Visual Studio pliki editorconfig umożliwiają [Definiowanie preferowanych stylów kodu](../ide/editorconfig-code-style-settings-reference.md) dla bazy kodu.
 
-Oprócz zestawów reguł i plików editorconfig analizatory niektórych innych firm są skonfigurowane przy użyciu plików tekstowych, oznaczone jako [dodatkowe pliki](../ide/build-actions.md#build-action-values) dla C# i Kompilatory języka VB.
+Oprócz zestawów reguł i plików. editorconfig, Niektóre analizatory innych firm są konfigurowane przy użyciu plików tekstowych oznaczonych jako [dodatkowe pliki](../ide/build-actions.md#build-action-values) dla kompilatorów C# i VB.
 
 > [!NOTE]
-> Plików EditorConfig nie można skonfigurować reguły analizy kodu statycznego, mogą zestawów reguł.
+> Nie można używać plików EditorConfig do konfigurowania starszej analizy, natomiast zestawy reguł mogą.
 
-## <a name="analyzers-in-ci-builds"></a>Analizatory w kompilacjach ciągłej integracji
+## <a name="code-analysis-in-ci-builds"></a>Analiza kodu w kompilacjach CI
 
-**Q**: Analizatory działają w kompilacjach ciągłej integracji (CI)?
+**P**: Czy analiza kodu oparta na .NET Compiler Platform działa w kompilacjach ciągłej integracji (CI)?
 
-**A**: Tak. Analizatory, które są instalowane z pakietu NuGet, te zasady są [wymuszane w czasie kompilacji](roslyn-analyzers-overview.md#build-errors), w tym podczas kompilacji ciągłej integracji. Analizatory używanych w konfiguracji reguły względem kompilacje ciągłej integracji z obu [zestawów reguł](analyzer-rule-sets.md) i [plików editorconfig](configure-fxcop-analyzers.md). Obecnie analizatorów kodu, które są wbudowane w program Visual Studio nie są dostępne jako pakiet NuGet, a więc te zasady nie są wykonalne w kompilację o ciągłej integracji.
+ODP.: Tak. W przypadku analizatorów instalowanych z pakietu NuGet te reguły są wymuszane [w czasie kompilacji](roslyn-analyzers-overview.md#build-errors), w tym w trakcie kompilacji elementu konfiguracji. Analizatory używane w kompilacjach CI respektują konfigurację reguły z obu [zestawów reguł](analyzer-rule-sets.md) i [plików. editorconfig](configure-fxcop-analyzers.md). Obecnie analizatory kodu, które są wbudowane w program Visual Studio, nie są dostępne jako pakiet NuGet, dlatego te reguły nie są wymuszane w kompilacji CI.
 
-## <a name="ide-analyzers-versus-stylecop"></a>Analizatory IDE i StyleCop
+## <a name="ide-analyzers-versus-stylecop"></a>Analizatory IDE a StyleCop
 
-**Q**: Jaka jest różnica między analizatory StyleCop i analizatorów kodu programu Visual Studio IDE?
+**P**: Czym różnią się analizatory kodu IDE programu Visual Studio i analizatory StyleCop?
 
-**A**: Środowiska IDE programu Visual Studio zawiera wbudowane analizatorów, które poszukują zarówno kod stylu i jakości w przypadku problemów. Te zasady pomagają korzystać z nowych funkcji języka, jak długo będą one wprowadzone i poprawić łatwości utrzymania kodu. Analizatory IDE są ciągle aktualizowane wraz z każdą wersją programu Visual Studio.
+ODP.: Środowisko IDE programu Visual Studio zawiera wbudowane analizatory, które szukają zarówno stylu kodu, jak i problemów z jakością. Te reguły ułatwiają korzystanie z nowych funkcji języka w miarę ich wprowadzania i zwiększają łatwość utrzymania kodu. Analizatory IDE są stale aktualizowane wraz z każdą wersją programu Visual Studio.
 
-[Analizatory StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) są zainstalowane jako pakiet NuGet analizatory innych firm, które Sprawdzanie spójności stylu w kodzie. Ogólnie rzecz biorąc StyleCop reguły pozwalają na ustawienie preferencji dla kodu podstawowego nie wyróżniając jednego stylu zamiast innego.
+[Analizatory StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) to analizatory innych firm, które są instalowane jako pakiet NuGet, który sprawdza spójność stylu w kodzie. Ogólnie rzecz biorąc, reguły StyleCop umożliwiają ustawianie osobistych preferencji dla bazy kodu bez zalecania stosowania stylu na innym.
 
-## <a name="analyzers-versus-static-code-analysis"></a>Analizatory i statycznej analizy kodu
+## <a name="code-analyzers-versus-legacy-analysis"></a>Analizatory kodu i analiza starszej wersji
 
-**Q**: Jaka jest różnica między analizatory i statycznej analizy kodu?
+**P**: Jaka jest różnica między starszą analizą a analizą kodu na podstawie .NET Compiler Platform?
 
-**A**: Analizatory analizę kodu źródłowego w czasie rzeczywistym i podczas kompilacji, natomiast statycznej analizy kodu, analizuje pliki binarne po zakończeniu kompilacji. Aby uzyskać więcej informacji, zobacz [analizatorów Roslyn a statycznej analizy kodu](roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis) i [analizatory FxCop analizujące kod często zadawane pytania dotyczące](fxcop-analyzers-faq.md).
+Odp.: Analiza kodu oparta na .NET compiler platform analizuje kod źródłowy w czasie rzeczywistym i podczas kompilacji, natomiast Starsza analiza analizuje pliki binarne po zakończeniu kompilacji. Aby uzyskać więcej informacji, zobacz [Analiza na podstawie .NET compiler platform a Starsza analiza](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) i [FxCop — często zadawane pytania](fxcop-analyzers-faq.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie analizatorów](roslyn-analyzers-overview.md)
+- [Przegląd analizatorów](roslyn-analyzers-overview.md)
 - [.NET coding convention ustawienia dla wtyczki EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

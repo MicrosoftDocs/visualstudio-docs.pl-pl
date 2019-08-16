@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a574f7f77277255acf2150c218c3f4db061e75c
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604763"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547520"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: Statyczne typy posiadaczy powinny być statyczne lub NotInheritable
 
@@ -59,7 +59,7 @@ Pomiń ostrzeżenie z tej reguły tylko wtedy, gdy typ jest przeznaczony do dzie
 
 ## <a name="configurability"></a>Określając
 
-Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie za pomocą analizy kodu statycznego), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku EditorConfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku EditorConfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal

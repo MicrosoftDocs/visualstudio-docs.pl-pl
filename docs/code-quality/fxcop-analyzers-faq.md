@@ -1,5 +1,5 @@
 ---
-title: Analiza kodu programu FxCop i analizatory FxCop analizujące kod
+title: Analiza kodu FxCop i analizatory FxCop
 ms.date: 09/06/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,52 +9,52 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037266"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551115"
 ---
-# <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące programu FxCop i FxCop analizatorów
+# <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące analizatorów FxCop i FxCop
 
-Może być nieco mylące zrozumieć różnice między starszej wersji programu FxCop i FxCop analizatorów. Ten artykuł ma na celu niektórych pytań, które może mieć adres.
+Zrozumienie różnic między starszymi analizatorami FxCop i FxCop może być nieco trudne. Ten artykuł ma na celu rozwiązanie niektórych pytań, które mogą wystąpić.
 
-## <a name="whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers"></a>Jaka jest różnica między starszej wersji programu FxCop i FxCop analizatory?
+## <a name="whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers"></a>Jaka jest różnica między starszymi analizatorami FxCop i FxCop?
 
-Starszej wersji programu FxCop działa analizy po kompilacji w skompilowanym zestawie. Jest uruchamiana jako oddzielny plik wykonywalny, o nazwie **FxCopCmd.exe**. FxCopCmd.exe ładuje skompilowanego zestawu, przeprowadza analizy kodu i następnie przedstawia wyniki (lub *diagnostyki*).
+Starsza FxCop uruchamia analizę po kompilacji dla skompilowanego zestawu. Działa jako oddzielny plik wykonywalny o nazwie **plik FxCopCmd. exe**. Plik FxCopCmd. exe ładuje skompilowany zestaw, uruchamia analizę kodu, a następnie raportuje wyniki (lub *diagnostykę*).
 
-Analizatory FxCop analizujące kod opierają się na platformie kompilatora .NET ("Roslyn"). Możesz [je zainstalować jako pakiet NuGet](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) która odwołuje się projekt lub rozwiązanie. Analizatory FxCop analizujące kod, uruchom kod źródłowy na podstawie analizy podczas wykonywania kompilatora. Analizatory FxCop analizujące kod znajdują się w ramach procesu kompilatora albo **csc.exe** lub **vbc.exe**, i przeprowadzanie analizy, gdy projekt jest kompilowany. Wyniki analizatora są zgłaszane wraz z kompilatora wyników.
+Analizatory FxCop są oparte na .NET Compiler Platform ("Roslyn"). Należy [je zainstalować jako pakiet NuGet](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) , do którego odwołuje się projekt lub rozwiązanie. Analizatory FxCop uruchamiają analizę opartą na kodzie źródłowym podczas wykonywania kompilatora. Analizatory FxCop są hostowane w ramach procesu kompilatora, pliku **CSC. exe** lub **VBC. exe**i uruchamiają analizę po skompilowaniu projektu. Wyniki analizatora są raportowane wraz z wynikami kompilatora.
 
 > [!NOTE]
-> Możesz również [zainstalować analizatory FxCop analizujące kod jako rozszerzenie programu Visual Studio](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix). W tym przypadku analizatorów wykonać podczas wpisywania w edytorze kodu, ale nie są wykonywane w czasie kompilacji. Jeśli chcesz uruchomić analizatory FxCop analizujące kod w ramach ciągłej integracji (CI), zainstaluj je jako pakiet NuGet zamiast tego.
+> Można także [zainstalować analizatory FxCop jako rozszerzenie programu Visual Studio](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix). W takim przypadku analizatory są wykonywane podczas wpisywania w edytorze kodu, ale nie są wykonywane w czasie kompilacji. Jeśli chcesz uruchomić analizatory FxCop w ramach ciągłej integracji (CI), zamiast tego zainstaluj je jako pakiet NuGet.
 
-## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Polecenie Uruchom analizę kodu, czy działa analizatory FxCop analizujące kod?
+## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Czy polecenie uruchomienia analizy kodu uruchamia analizatory FxCop?
 
-Nie. Po wybraniu **analizy** > **Uruchom analizę kodu**, wykonuje statycznej analizy kodu lub starszej wersji programu FxCop. **Przeprowadź analizę kodu** nie ma wpływu na oparte na programie Roslyn analizatorów, w tym analizatory FxCop oparte na programie Roslyn.
+Nie. Po wybraniu opcji **Analizuj** > **analizę kodu uruchamiania**zostanie wykonana Starsza analiza. **Analiza kodu uruchamiania** nie ma wpływu na analizatory oparte na Roslyn, w tym analizatory FxCop z Roslyn.
 
-## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Właściwości projektu programu msbuild RunCodeAnalysis przeprowadza analizatory?
+## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Czy właściwość projektu MSBuild RunCodeAnalysis jest uruchamiana analizatory?
 
-Nie. **RunCodeAnalysis** właściwość w pliku projektu (na przykład *.csproj*) jest używana tylko w celu uruchomienia starszej wersji programu FxCop. Uruchamia zadanie msbuild po kompilacji, który wywołuje **FxCopCmd.exe**. Jest to równoważne z wybraniu **analizy** > **Uruchom analizę kodu** w programie Visual Studio.
+Nie. Właściwość **RunCodeAnalysis** w pliku projektu (na przykład *. csproj*) jest używana tylko do wykonywania starszych FxCop. Uruchamia zadanie programu MSBuild po kompilacji, które wywołuje **plik FxCopCmd. exe**. Jest to równoznaczne z wybraniem opcji **Analizuj** > **analizę kodu uruchamiania** w programie Visual Studio.
 
-## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>W jaki sposób następnie uruchomić analizatory FxCop analizujące kod?
+## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>Jak uruchomić analizatory FxCop?
 
-Aby uruchomić analizatory FxCop analizujące kod najpierw [zainstaluj pakiet NuGet](install-fxcop-analyzers.md) dla nich. Następnie budowania projektu lub rozwiązania z programu Visual Studio lub za pomocą programu msbuild. Ostrzeżenia i błędy, które generują analizatory FxCop analizujące kod pojawi się w **lista błędów** lub okna poleceń.
+Aby uruchomić analizatory FxCop, najpierw [Zainstaluj dla nich pakiet NuGet](install-fxcop-analyzers.md) . Następnie Skompiluj projekt lub rozwiązanie z programu Visual Studio lub przy użyciu programu MSBuild. Ostrzeżenia i błędy generowane przez analizatory FxCop będą wyświetlane w **Lista błędów** lub w oknie wiersza polecenia.
 
-## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Mimo został zainstalowany pakiet NuGet analizatory FxCop analizujące kod Pobierz jest ostrzeżenie CA0507
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Otrzymuję ostrzeżenie CA0507 nawet po zainstalowaniu pakietu NuGet analizatorów FxCop
 
-Jeśli zainstalowano analizatory FxCop analizujące kod, ale w dalszym ciągu uzyskać ostrzeżenie CA0507 **"" Uruchom analizę kodu"została zastąpiona analizatory FxCop analizujące kod, które są uruchamiane podczas kompilacji"**, może być konieczne ustawienie **RunCodeAnalysis**właściwości programu msbuild w pliku projektu, aby **false**. W przeciwnym razie statycznej analizy kodu będą wykonywane po każdej kompilacji.
+Jeśli zainstalowano analizatory FxCop, ale nadal pojawia się ostrzeżenie CA0507 **"" Uruchomienie analizy kodu "zostało zaniechane na rzecz analizatorów FxCop, które są uruchamiane podczas kompilacji"** , może być konieczne ustawienie właściwości **RunCodeAnalysis** MSBuild w pliku projektu na **wartość false**. W przeciwnym razie Starsza analiza zostanie wykonana po każdej kompilacji.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Które reguły wydajnej analizatory FxCop analizujące kod?
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Które reguły zostały przeanalizowane do analizatorów FxCop?
 
-Aby uzyskać informacje o tym, jakie reguły analizy kodu statycznego wydajnej [analizatory FxCop analizujące kod](install-fxcop-analyzers.md), zobacz [stanu portu reguł programu Fxcop](fxcop-rule-port-status.md).
+Aby uzyskać informacje o tym, które starsze reguły analizy zostały przeanalizowane do [analizatorów FxCop](install-fxcop-analyzers.md), zobacz [FxCop reguły stanu portu](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie analizatory platformie kompilatora .NET](roslyn-analyzers-overview.md)
+- [Omówienie analizatorów .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Wprowadzenie do analizatorów](fxcop-analyzers.yml)
-- [Zainstaluj analizatory FxCop analizujące kod](install-fxcop-analyzers.md)
+- [Zainstaluj analizatory FxCop](install-fxcop-analyzers.md)

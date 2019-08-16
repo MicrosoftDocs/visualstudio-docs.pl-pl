@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4157316756e4b180f6fb49082bf60927ddb43707
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 38d92194a5aa2b46a0cb65a1525bc01d9de67b86
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714797"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547360"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy nie powinny rozszerzać niektórych typów podstawowych
 
@@ -32,7 +32,7 @@ ms.locfileid: "66714797"
 
 ## <a name="cause"></a>Przyczyna
 
-Typ rozszerza jednym z następujących typów podstawowych:
+Typ rozszerza jeden z następujących typów podstawowych:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 - <xref:System.Xml.XmlDocument?displayProperty=fullName>
@@ -43,19 +43,19 @@ Typ rozszerza jednym z następujących typów podstawowych:
 - <xref:System.Collections.SortedList?displayProperty=fullName>
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-Domyślnie ta reguła przegląda tylko typy widoczne na zewnątrz, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wyjątki powinien pochodzić od <xref:System.Exception?displayProperty=fullName> lub jedna z jej podklasach w <xref:System> przestrzeni nazw.
+Wyjątki powinny pochodzić od <xref:System.Exception?displayProperty=fullName> lub jednej z jej podklas <xref:System> w przestrzeni nazw.
 
-Nie należy tworzyć podklasą <xref:System.Xml.XmlDocument> Jeśli chcesz utworzyć widok XML z bazowego źródła danych lub modelu obiektu.
+Nie należy tworzyć podklasy, <xref:System.Xml.XmlDocument> Jeśli chcesz utworzyć widok XML źródłowego modelu obiektów lub źródła danych.
 
-### <a name="non-generic-collections"></a>Inne niż ogólne kolekcje
+### <a name="non-generic-collections"></a>Kolekcje inne niż ogólne
 
-Użyj i/lub rozszerzyć kolekcje ogólne, jeśli to możliwe. Kolekcje ogólne w kodzie, nie zostanie rozszerzony, chyba że wcześniej wysłane.
+Używaj i/lub rozszerzając kolekcje ogólne wszędzie tam, gdzie to możliwe. Nie należy poszerzać kolekcji innych niż ogólne w kodzie, chyba że wcześniej zostały dostarczone.
 
-**Przykłady nieprawidłowe użycie**
+**Przykłady nieprawidłowego użycia**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -67,7 +67,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
-**Przykłady poprawne użycie**
+**Przykłady poprawnego użycia**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -81,18 +81,18 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, pobierają typ z innym typem bazowym lub kolekcję ogólną.
+Aby naprawić naruszenie tej reguły, należy utworzyć typ z innego typu podstawowego lub kolekcji ogólnej.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły za naruszenia o <xref:System.ApplicationException>. Bezpiecznie Pomijaj ostrzeżeń dla tej reguły za naruszenia o <xref:System.Xml.XmlDocument>. Jest bezpieczne pominąć ostrzeżenie dotyczące nieogólna kolekcja, jeśli kod został wydany wcześniej.
+Nie pomijaj ostrzeżenia z tej reguły dla naruszeń <xref:System.ApplicationException>. Można bezpiecznie pominąć ostrzeżenie z tej reguły dla naruszeń <xref:System.Xml.XmlDocument>. Można bezpiecznie pominąć ostrzeżenie o nieogólnej kolekcji, jeśli kod został wcześniej opublikowany.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1058.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).

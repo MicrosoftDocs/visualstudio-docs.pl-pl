@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfedb55c0dcdb1077faea03bca56488ab3da1525
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2763d7dd167ad0027509c44b8f9d43523f03976b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842467"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547796"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości, o ile to możliwe
 
@@ -35,57 +35,57 @@ ms.locfileid: "65842467"
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda ma nazwę, która rozpoczyna się od `Get`nie przyjmuje żadnych parametrów i zwraca wartość, która nie jest tablicą.
+Metoda ma nazwę rozpoczynającą się od `Get`, nie przyjmuje parametrów i zwraca wartość, która nie jest tablicą.
 
-Domyślnie ta reguła przegląda tylko publiczne i chronione metody, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko metody publiczne i chronione, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-W większości przypadków właściwości reprezentują danych i metod wykonywania akcji. Właściwości są dostępne, takich jak pola, co ułatwia ich używać. Metoda jest dobrym kandydatem do stają się właściwość, jeśli występuje jeden z tych warunków:
+W większości przypadków właściwości reprezentują dane i metody wykonują działania. Właściwości są dostępne, podobnie jak pola, które ułatwiają korzystanie z nich. Metoda jest dobrym kandydatem, aby stał się właściwością w przypadku obecności jednego z następujących warunków:
 
-- Nie przyjmuje żadnych argumentów i zwraca informacje o stanie obiektu.
+- Nie przyjmuje argumentów ani nie zwraca informacji o stanie obiektu.
 
-- Akceptuje pojedynczy argument można ustawić część stanu obiektu.
+- Akceptuje pojedynczy argument, aby ustawić część stanu obiektu.
 
-Właściwości, powinny zachowywać się tak, jakby są pola aplikacji; Jeśli metoda nie, nie należy zmienić właściwości. Metody są lepsze niż właściwości w następujących sytuacjach:
+Właściwości powinny zachowywać się tak, jakby były polami; Jeśli metoda nie może, nie powinna być zmieniana na właściwość. Metody są lepsze niż właściwości w następujących sytuacjach:
 
-- Metoda wykonuje czasochłonna operacja. Metoda jest perceivably wolniej niż czas, który jest wymagany, aby ustawić lub pobrać wartości pola.
+- Metoda wykonuje czasochłonną operację. Metoda jest postrzegana wolniej niż czas wymagany do ustawienia lub pobrania wartości pola.
 
-- Metoda przeprowadza konwersję. Uzyskiwanie dostępu do pola nie zwraca przekonwertowana wersja danych, które są przechowywane.
+- Metoda wykonuje konwersję. Uzyskanie dostępu do pola nie zwraca skonwertowanej wersji przechowywanych danych.
 
-- Metoda Get ma dostrzegalnych efekt uboczny. Podczas pobierania wartości pola nie generuje żadnych efektów ubocznych.
+- Metoda get ma zauważalny efekt uboczny. Pobieranie wartości pola nie powoduje wygenerowania żadnych efektów ubocznych.
 
-- Kolejność wykonywania jest ważna. Ustawienie wartości pola nie zależą od wystąpienia innych operacji.
+- Kolejność wykonywania jest ważna. Ustawienie wartości pola nie polega na wystąpieniu innych operacji.
 
-- Wywołanie metody dwa razy pod rząd tworzy różne wyniki.
+- Wywołanie metody dwa razy w wyniku sukcesu tworzy różne wyniki.
 
-- Metoda jest statyczna, ale zwraca obiekt, który może zostać zmieniona przez obiekt wywołujący. Podczas pobierania wartości pola nie zezwala na obiekt wywołujący, aby zmienić dane, które są przechowywane przez pole.
+- Metoda jest statyczna, ale zwraca obiekt, który może zostać zmieniony przez wywołującego. Pobieranie wartości pola nie zezwala obiektowi wywołującemu na zmianę danych przechowywanych w polu.
 
 - Metoda zwraca tablicę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy zmienić metodę z właściwością.
+Aby naprawić naruszenie tej reguły, Zmień metodę na właściwość.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Pomijaj ostrzeżeń dla tej reguły, jeśli metoda nie spełnia co najmniej jedną z wcześniej podanych kryteriów.
+Pomiń ostrzeżenie z tej reguły, jeśli metoda spełnia co najmniej jedno z wcześniej wymienionych kryteriów.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1024.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="control-property-expansion-in-the-debugger"></a>Rozszerzanie właściwości kontrolki w debugerze
 
-Jest jednym z powodów programistów należy unikać właściwość, ponieważ nie chcą debuger autoexpand go. Na przykład właściwość może obejmować przydzielanie dużego obiektu lub wywołanie metody P/Invoke, ale nie może rzeczywiście być wszelkie dostrzegalnych efekty uboczne.
+Jednym z powodów programiści nie należy używać właściwości, ponieważ nie chce, aby debuger miał Autorozszerzanie. Na przykład właściwość może polegać na przydzieleniu dużego obiektu lub wywołaniu P/Invoke, ale może nie mieć w rzeczywistości żadnych zauważalnych efektów ubocznych.
 
-Można zapobiec debugera przy użyciu właściwości autoexpanding, stosując <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Ten atrybut jest stosowany do właściwości wystąpienia można znaleźć w poniższym przykładzie.
+Można uniemożliwić debugerowi możliwość autorozszerzania właściwości poprzez zastosowanie <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Poniższy przykład pokazuje, że ten atrybut jest stosowany do właściwości wystąpienia.
 
 ```vb
 Imports System
@@ -135,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład zawiera kilka metod powinny być konwertowane do właściwości i kilku, należy nie, ponieważ mogą nie zachowywać się jak pola.
+Poniższy przykład zawiera kilka metod, które należy przekonwertować na właściwości, a kilka, które nie powinny, ponieważ nie zachowują się one jak pola.
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

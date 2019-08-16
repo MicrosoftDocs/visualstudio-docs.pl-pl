@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841964"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547180"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identyfikatory powinny mieć poprawny prefiks
 
@@ -32,35 +32,35 @@ ms.locfileid: "65841964"
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Przerywanie — gdy wywoływane na interfejsach.<br /><br /> Bez podziału — gdy wywoływane w parametrach typu ogólnego.|
+|Zmiana kluczowa|Przerywanie — gdy jest uruchamiany w interfejsach.<br /><br /> Rozdzielenie — gdy zostanie zgłoszone w parametrach typu ogólnego.|
 
 ## <a name="cause"></a>Przyczyna
 
-Nazwa interfejsu nie rozpoczyna się od wielkie litery "I".
+Nazwa interfejsu nie zaczyna się od wielkiej litery "I".
 
 —lub—
 
-Nazwa [parametr typu ogólnego](/dotnet/csharp/programming-guide/generics/generic-type-parameters) na typie lub metodzie nie zaczyna się od wielkiej litery t ".
+Nazwa [parametru typu ogólnego](/dotnet/csharp/programming-guide/generics/generic-type-parameters) w typie lub metodzie nie zaczyna się od wielkiej litery.
 
-Domyślnie ta reguła przegląda tylko interfejsy widoczne na zewnątrz, typy i metody, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko widoczne na zewnątrz interfejsy, typy i metody, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Według Konwencji nazwy niektórych elementów programowania zaczynać od określonego prefiksu.
+Według Konwencji nazwy niektórych elementów programistycznych zaczynają się od określonego prefiksu.
 
-Nazwy interfejsów powinna rozpoczynać się wielką który "I" następuje innego wielką literą. Ta zasada zgłasza naruszenia nazwy interfejsu, takie jak "MyInterface" i "IsolatedInterface".
+Nazwy interfejsów powinny zaczynać się wielką literą "I", po którym następuje inna Wielka litera. Ta reguła zgłasza naruszenia dla nazw interfejsów, takich jak "Moje Interface" i "IsolatedInterface".
 
-Nazwy parametrów typu ogólnego powinien zaczynać się wielką t "i opcjonalnie może następować innego wielką literą. Ta zasada zgłasza naruszenia nazwy parametru typu ogólnego, takie jak "V" i "Type".
+Nazwy parametrów typu ogólnego powinny zaczynać się wielką literą i opcjonalnie mogą następować inne wielkie litery. Ta reguła zgłasza naruszenia dla nazw parametrów typu ogólnego, takich jak "V" i "Type".
 
-Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Zmniejsza to nauki, jest wymagany dla nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
+Konwencje nazewnictwa zapewniają typowy wygląd bibliotek przeznaczonych dla środowiska uruchomieniowego języka wspólnego. Zmniejsza to krzywą uczenia, która jest wymagana w przypadku nowych bibliotek oprogramowania i zwiększa zaufanie klienta, że biblioteka została opracowana przez kogoś, kto ma doświadczenie w tworzeniu kodu zarządzanego.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Jeśli używasz tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu), można skonfigurować, które części kodu ta reguła analizuje. Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować elementy kodu, które ta reguła analizuje. Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
-### <a name="single-character-type-parameters"></a>Parametry typu pojedynczych znaków
+### <a name="single-character-type-parameters"></a>Parametry typu pojedynczego znaku
 
-Można skonfigurować, czy mają być wykluczone parametrów typu pojedynczych znaków od tej reguły. Na przykład, aby określić, że ta zasada *nie powinien* analizowania parametrów typu pojedynczych znaków, należy dodać jedną z następujących par klucz wartość do pliku .editorconfig w projekcie:
+Można określić, czy wykluczyć jednoznakowe parametry typu z tej reguły. Na przykład aby określić, że ta reguła *nie powinna* analizować parametrów typu jednoznakowego, Dodaj jedną z następujących par klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 # Package version 2.9.0 and later
@@ -71,49 +71,49 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> Ta reguła jest uruchamiana nigdy nie parametru typu o nazwie `T`, na przykład `Collection<T>`.
+> Ta reguła nigdy nie jest wyzwalana dla parametru `T`typu o nazwie, `Collection<T>`na przykład.
 
-### <a name="api-surface"></a>Powierzchni interfejsu API
+### <a name="api-surface"></a>Powierzchnia interfejsu API
 
-Części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Można skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazewnictwa).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazywanie).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Zmień nazwę identyfikatora, tak, aby poprawnie jest poprzedzana.
+Zmień nazwę identyfikatora tak, aby został poprawnie naprawiony.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
 Nie pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="interface-naming-example"></a>Przykład nazewnictwa interfejsu
+## <a name="interface-naming-example"></a>Przykład nazewnictwa interfejsów
 
-Poniższy fragment kodu przedstawia niepoprawnie nazwane interfejs:
+Poniższy fragment kodu przedstawia nieprawidłowy nazwany interfejs:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
-Poniższy fragment kodu usuwa wcześniejszego naruszenia praw przez dodanie przedrostka interfejsu prefiksem "I":
+Poniższy fragment kodu naprawia poprzednie naruszenie przez prefiks interfejsu za pomocą "I":
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
 
-## <a name="type-parameter-naming-example"></a>Przykład nazewnictwa parametr typu
+## <a name="type-parameter-naming-example"></a>Przykład nazewnictwa parametrów typu
 
-Poniższy fragment kodu przedstawia parametrem niepoprawnie nazwany typ ogólny:
+Poniższy fragment kodu przedstawia nieprawidłowy nazwany parametr typu generycznego:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
 
-Poniższy fragment kodu poprawki wcześniejszego naruszenia praw, dodając parametr typu ogólnego przy użyciu t ":
+Poniższy fragment kodu naprawia poprzednie naruszenie poprzez prefiks parametru typu ogólnego "t":
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]

@@ -1,6 +1,6 @@
 ---
 title: Rozwiązania programu Visio
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,44 +17,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2e47227f9da4e691575b7136011deff15db25db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 69d795fe9e4243bbce51e1e137bb6704492bae32
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438746"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551274"
 ---
 # <a name="visio-solutions"></a>Rozwiązania programu Visio
-  Program Visual Studio udostępnia szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft Office Visio. Za pomocą dodatków narzędzi VSTO dla programów Automatyzacja programu Visio, Rozszerz funkcje programu Visio lub dostosowywanie interfejsu użytkownika (UI) programu Visio.
+  Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dodatków narzędzi VSTO dla programu Microsoft Office Visio. Za pomocą dodatków VSTO można zautomatyzować program Visio, zwiększyć funkcjonalność programu Visio lub dostosować interfejs użytkownika programu Visio.
 
- Aby uzyskać więcej informacji na temat dodatków narzędzi VSTO zobacz [wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md) i [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md). Jeśli jesteś nowym programistą w pakiecie Microsoft Office, zobacz [wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).
+ Aby uzyskać więcej informacji na temat dodatków narzędzi VSTO, zobacz [wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md) i [architektury dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md). Jeśli jesteś nowym sposobem programowania przy użyciu Microsoft Office, zobacz Wprowadzenie [do &#40;programowania Office w programie Visual&#41;Studio](../vsto/getting-started-office-development-in-visual-studio.md).
 
  **Dotyczy:** Informacje przedstawione w tym temacie dotyczą projektów dodatku VSTO dla programu Visio 2010. Aby uzyskać więcej informacji, zobacz [Dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).
 
-> [!NOTE]
-> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="automate-visio-by-using-the-visio-object-model"></a>Automatyzowanie programu Visio za pomocą modelu obiektów programu Visio
- Model obiektów programu Visio udostępnia wiele klas, które służą do automatyzowania programu Visio do tworzenia diagramów, schematy organizacyjne, blokowe, osi czasu projektów, diagramy sieciowe, miejsca do magazynowania pakietu office i innym. Interfejs API umożliwia pisanie kodu w celu wykonywania typowych zadań:
+## <a name="automate-visio-by-using-the-visio-object-model"></a>Automatyzowanie programu Visio przy użyciu modelu obiektów programu Visio
+ Model obiektów programu Visio uwidacznia wiele klas, których można użyć do zautomatyzowania programu Visio do tworzenia diagramów schematów organizacyjnych, schematów blokowych, osi czasu projektu, diagramów sieci, miejsc biurowych i innych. Interfejs API umożliwia pisanie kodu w celu wykonywania typowych zadań:
 
-- Konstrukcja i położenie kształty i tekst w diagramach.
+- Konstruowanie i pozycjonowanie kształtów i tekstu w diagramach.
 
-- Zarządzanie zachowanie kształtu opartą na logice biznesowej i danych wprowadzonych przez użytkownika.
+- Zarządzanie zachowaniem kształtu na podstawie logiki biznesowej i danych wejściowych użytkownika.
 
-- Kontrolowanie wizualizacji diagramu, takich jak przesuwać i powiększać.
+- Wizualizacja diagramu kontroli, taka jak panoramowanie i powiększanie.
 
-- Dostosowywanie interfejsu użytkownika aplikacji.
+- Dostosuj interfejs użytkownika aplikacji.
 
-- Importowanie danych zewnętrznych do programu Visio, połączyć kształty i graficznej na stronie.
+- Zaimportuj dane zewnętrzne do programu Visio, połącz je z kształtami i wyświetlaj je graficznie na stronie.
 
-  Możesz wyświetlić procedury krok po kroku i przykłady dotyczące korzystania z modelu obiektów programu Visio do pracy z dokumentami i kształty w kodu [Praca z dokumentami Visio](../vsto/working-with-visio-documents.md) i [Praca z dokumentami Visio shapes](../vsto/working-with-visio-shapes.md).
+  Można wyświetlić procedury krok po kroku i przykłady kodu umożliwiające korzystanie z modelu obiektów programu Visio do pracy z dokumentami i kształtami w [pracy z dokumentami programu Visio](../vsto/working-with-visio-documents.md) i [pracy z kształtami programu Visio](../vsto/working-with-visio-shapes.md).
 
-  Dostęp do modelu obiektów programu Visio z dodatku narzędzi VSTO dla programów, należy użyć `Application` pole `ThisAddIn` klasy w projekcie. `Application` Pole zwraca `Microsoft.Office.Interop.Visio.Application` obiekt reprezentujący bieżące wystąpienie programu Visio. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).
+  Aby uzyskać dostęp do modelu obiektów programu Visio z dodatku VSTO, użyj `Application` pola `ThisAddIn` klasy w projekcie. `Application` Pole`Microsoft.Office.Interop.Visio.Application` zwraca obiekt, który reprezentuje bieżące wystąpienie programu Visio. Aby uzyskać więcej informacji, zobacz [dodatki narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md).
 
-  Gdy wywołujesz modelu obiektów programu Visio, należy użyć typów, które są dostarczane w podstawowego zestawu międzyoperacyjnego (PIA) dla programu Visio. PIA działa jako Most między kodu zarządzanego w dodatku narzędzi VSTO dla programów i model obiektów COM w programie Visio. Wszystkie typy w programie Visio PIA są zdefiniowane w `Microsoft.Office.Interop.Visio` przestrzeni nazw. Aby uzyskać więcej informacji na temat podstawowych usług międzyoperacyjnych, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).
+  Gdy wywołujesz model obiektów programu Visio, używasz typów, które są dostępne w podstawowym zestawie międzyoperacyjnym (PIA) dla programu Visio. PIA działa jako Most między zarządzanym kodem w dodatku VSTO i modelem obiektów COM w programie Visio. Wszystkie typy w programie Visio PIA są zdefiniowane w `Microsoft.Office.Interop.Visio` przestrzeni nazw. Aby uzyskać więcej informacji na temat podstawowych zestawów międzyoperacyjnych, zobacz temat [programowanie rozwiązań pakietu Office — omówienie &#40;programu VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/office-primary-interop-assemblies.md)
 
-## <a name="visio-object-model-overview"></a>Model obiektu Visio ― omówienie
- Możesz znaleźć omówienie modelu obiektów programu Visio w [model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md), który zawiera linki do dokumentacja modelu obiektów programu Visio i zestawy SDK.
+## <a name="visio-object-model-overview"></a>Model obiektów programu Visio — Omówienie
+ Przegląd modelu obiektów programu Visio można znaleźć w temacie [Omówienie modelu obiektów programu](../vsto/visio-object-model-overview.md)Visio, który obejmuje linki do odwołania do modelu obiektów programu Visio i zestawów SDK.
 
 ## <a name="customize-the-user-interface-of-visio"></a>Dostosowywanie interfejsu użytkownika programu Visio
  Interfejs użytkownika programu Visio ma następujące opcje dostosowywania.
@@ -63,16 +62,16 @@ ms.locfileid: "63438746"
 |----------|--------------------------|
 |Dostosuj Wstążkę.|[Wstążka — omówienie](../vsto/ribbon-overview.md)|
 
- Aby uzyskać informacji o dostosowywaniu interfejsu użytkownika programu Visio, zobacz dokumentację referencyjną VBA [Visio.UIObject](/office/vba/api/Visio.UIObject) klasy.
+ Aby uzyskać informacje na temat dostosowywania interfejsu użytkownika programu Visio, zobacz dokumentację referencyjną języka VBA dla klasy [Visio. UIObject](/office/vba/api/Visio.UIObject) .
 
 ## <a name="see-also"></a>Zobacz także
 - [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
-- [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Instrukcje: Tworzenie projektów pakietu Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)
-- [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)
+- [Podstawowe zestawy międzyoperacyjności pakietu Office](../vsto/office-primary-interop-assemblies.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
-- [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)
-- [Visio 2010 w rozwój pakietu Office](http://go.microsoft.com/fwlink/?LinkId=199017)
+- [Model obiektów programu Visio — Omówienie](../vsto/visio-object-model-overview.md)
+- [Visio 2010 w programowaniu pakietu Office](http://go.microsoft.com/fwlink/?LinkId=199017)

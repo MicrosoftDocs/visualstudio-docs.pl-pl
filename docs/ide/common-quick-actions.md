@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364010ad9470d4431e6407e40b6a6b1cc96476a
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483732"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551441"
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
@@ -159,7 +159,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>Usuń typ z wyrażenia wartości domyślnej
 
-Ta szybka akcja usuwa typ wartości z wyrażenia wartości domyślnej i używa [literału domyślnego](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) , gdy kompilator może wywnioskować typ wyrażenia.
+Ta szybka akcja usuwa typ wartości z wyrażenia wartości domyślnej i używa [literału domyślnego](/dotnet/csharp/language-reference/operators/default#default-literal) , gdy kompilator może wywnioskować typ wyrażenia.
 
 ```csharp
 // Before

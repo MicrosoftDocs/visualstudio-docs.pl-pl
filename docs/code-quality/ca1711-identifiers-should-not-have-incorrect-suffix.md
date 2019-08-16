@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9377dcf03bcbb8087d152ef98986f31c12c94c45
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 8b047669b962d5e38cd37132f84ae653ba30f9dc
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841928"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547295"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów
 
@@ -32,21 +32,21 @@ ms.locfileid: "65841928"
 
 ## <a name="cause"></a>Przyczyna
 
-Identyfikator ma niepoprawnego sufiksu.
+Identyfikator ma niepoprawny sufiks.
 
-Domyślnie ta reguła przegląda tylko identyfikatory widocznego na zewnątrz, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko widoczne na zewnątrz identyfikatory, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Według Konwencji nazwy typów, które rozszerzają pewne typy podstawowe lub implementują określone interfejsy lub typy pochodzące z tych typów, powinien kończyć się określonym zarezerwowanym sufiksem. Inne nazwy typów nie powinny używać tych zarezerwowanych sufiksów.
+Zgodnie z Konwencją, tylko nazwy typów, które poszerzają pewne typy podstawowe lub implementują określone interfejsy lub typy pochodzące z tych typów, powinny kończyć się określonymi zastrzeżonymi sufiksami. Inne nazwy typów nie powinny używać tych zarezerwowanych sufiksów.
 
-W poniższej tabeli wymieniono zarezerwowanym sufiksem i typy podstawowe i interfejsy, z którymi są skojarzone.
+W poniższej tabeli wymieniono zastrzeżone sufiksy i typy podstawowe oraz interfejsy, z którymi są skojarzone.
 
-|Suffix|Interfejs podstawowy|
+|Suffix|Typ podstawowy/interfejs|
 |------------|--------------------------|
 |Atrybut|<xref:System.Attribute?displayProperty=fullName>|
 |Kolekcja|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
-|Słownik|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
+|Dictionary|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |EventHandler|Delegat programu obsługi zdarzeń|
 |Wyjątek|<xref:System.Exception?displayProperty=fullName>|
@@ -55,35 +55,35 @@ W poniższej tabeli wymieniono zarezerwowanym sufiksem i typy podstawowe i inter
 |Stos|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Strumień|<xref:System.IO.Stream?displayProperty=fullName>|
 
-Ponadto następujące sufiksy powinny **nie** można użyć:
+Ponadto **nie** należy używać następujących sufiksów:
 
 - `Delegate`
 
 - `Enum`
 
-- `Impl` (Użyj `Core` zamiast)
+- `Impl`(Użyj `Core` zamiast tego)
 
-- `Ex` lub podobny sufiksu w odróżnieniu od starszej wersji tego samego typu
+- `Ex`lub podobnego sufiksu, aby odróżnić go od wcześniejszej wersji tego samego typu
 
-Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Zmniejsza to nauki, jest wymagany dla nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
+Konwencje nazewnictwa zapewniają typowy wygląd bibliotek przeznaczonych dla środowiska uruchomieniowego języka wspólnego. Zmniejsza to krzywą uczenia, która jest wymagana w przypadku nowych bibliotek oprogramowania i zwiększa zaufanie klienta, że biblioteka została opracowana przez kogoś, kto ma doświadczenie w tworzeniu kodu zarządzanego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Usuń sufiks z nazwą typu.
+Usuń sufiks z nazwy typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły, chyba że sufiksem ma jednoznaczną znaczenie w domenie aplikacji.
+Nie pomijaj ostrzeżenia z tej reguły, chyba że sufiks ma niejednoznaczne znaczenie w domenie aplikacji.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1711.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazewnictwa). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazywanie). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Powiązane reguły
 

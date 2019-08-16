@@ -1,8 +1,8 @@
 ---
-title: 'Instrukcje: Zainstalować Visual Studio Tools for Office runtime do dystrybucji'
+title: 'Instrukcje: Zainstaluj pakiet redystrybucyjny środowiska uruchomieniowego pakietu Office Visual Studio Tools'
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,45 +15,47 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41b6ec5c91fe9dc16a07703358ee0bb951efb490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5d9bb53fbdc3d6766dab47c654f0a43ad902b2f3
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412587"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551841"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Instrukcje: Zainstalować Visual Studio Tools for Office runtime do dystrybucji
-  Visual Studio 2010 Tools dla pakietu Office runtime musi być zainstalowane na każdym komputerze, uruchomionym rozwiązania, które są tworzone za pomocą Microsoft Office developer tools w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Środowisko uruchomieniowe jest instalowana automatycznie podczas instalowania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]i Microsoft Office. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Instrukcje: Zainstaluj pakiet redystrybucyjny środowiska uruchomieniowego pakietu Office Visual Studio Tools
+  Program Visual Studio 2010 Tools for Office Runtime musi być zainstalowany na każdym komputerze, na którym są uruchomione rozwiązania utworzone przy użyciu narzędzi deweloperskich Microsoft Office [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]w programie. Środowisko uruchomieniowe jest instalowane automatycznie podczas instalacji [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]programu, a Microsoft Office. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools scenariuszy instalacji pakietu Office Runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
- Konieczne może być następnie wykonaj poniższe instrukcje instalacji ręcznej w następujących sytuacjach:
+[!include[Add-ins note](includes/addinsnote.md)]
 
-- Musisz zainstalować [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] na serwerze. Na przykład chcesz użyć <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy na poziomie dokumentu rozwiązania na serwerze zarządzania.
+ Może być konieczne wykonanie ręcznej instrukcji instalacji poniżej w następujących sytuacjach:
 
-- Musisz zainstalować środowisko uruchomieniowe na komputerze, który ma już wszystkie inne wymagania wstępne dla rozwiązań pakietu Office, zainstalowane.
+- Należy zainstalować [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] na serwerze programu. Na przykład, chcesz użyć <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy do zarządzania rozwiązaniami na poziomie dokumentu na serwerze.
+
+- Musisz zainstalować środowisko uruchomieniowe na komputerze, na którym już zainstalowano wszystkie inne wymagania wstępne dotyczące rozwiązań pakietu Office.
 
     > [!NOTE]
-    > Musi być administratorem na komputerze deweloperskim, aby zainstalować program .NET Framework i [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+    > Musisz być administratorem na komputerze deweloperskim, aby zainstalować .NET Framework i [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Aby zainstalować Visual Studio Tools for Office runtime
+## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Aby zainstalować Visual Studio Tools dla środowiska uruchomieniowego pakietu Office
 
-1. Zainstaluj [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej.
+1. Zainstaluj program [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy.
 
-    - Aby pobrać [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], zobacz [Microsoft .NET Framework 4 (Instalator internetowy)](http://go.microsoft.com/fwlink/?LinkId=178957).
+    - Aby pobrać [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]program, zobacz [Microsoft .NET Framework 4 (Instalator sieci Web)](http://go.microsoft.com/fwlink/?LinkId=178957).
 
-    - Aby pobrać [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], zobacz [profil klienta programu Microsoft .NET Framework 4 (Instalator internetowy)](http://go.microsoft.com/fwlink/?LinkId=178958).
+    - Aby pobrać [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]program, zobacz [Microsoft .NET Framework 4 Client Profile (Instalator sieci Web)](http://go.microsoft.com/fwlink/?LinkId=178958).
 
-    - Aby pobrać [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], zobacz [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).
+    - Aby pobrać [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]program, zobacz [Microsoft .NET Framework 4,5](http://www.microsoft.com/download/details.aspx?id=30653).
 
-2. Uruchom *vstor_redist.exe* zainstalował [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+2. Uruchom program *vstor_redist. exe* , [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]aby zainstalować program.
 
-     Możesz pobrać te pliki Instalatora z [Visual Studio 2010 Tools dla pakietu Office runtime](http://go.microsoft.com/fwlink/?LinkId=140384). Wymagania wstępne dotyczące [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dopasowania wymagania wstępne dotyczące programu .NET Framework.
+     Pliki instalacyjne można pobrać z programu [Visual Studio 2010 Tools for Office Runtime](http://go.microsoft.com/fwlink/?LinkId=140384). Wymagania wstępne dotyczące [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] programu są zgodne z wymaganiami wstępnymi .NET Framework.
 
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zawiera pakietów językowych. W przypadku instalacji systemu Windows jest ustawiony na język inny niż angielski, można wyświetlić komunikaty czasu wykonywania, w tym samym języku, którego używasz dla Windows. Podobnie jeśli użytkownicy końcowi instalują [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , a następnie uruchom swoje rozwiązania w przypadku instalacji systemu Windows, które są ustawione na język inny niż angielski, środowisko uruchomieniowe komunikaty pojawią się w języku Windows. W niektórych przypadkach może być konieczne dodatkowe pakiety językowe. Na przykład może być konieczne dodatkowe pakiety językowe, jeśli Twoja kopia Windows używa więcej niż jedno ustawienie języka lub przełączanie na inny język, po zainstalowaniu już [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Można znaleźć pakietów językowych w [programu Microsoft Visual Studio 2010 Tools dla pakietu językowego programu Microsoft Office system (środowisko uruchomieniowe w wersji 4.0)](http://go.microsoft.com/fwlink/?LinkId=140386).
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Obejmuje pakiety językowe. Jeśli instalacja systemu Windows jest ustawiona na język inny niż angielski, można wyświetlić komunikaty środowiska uruchomieniowego w tym samym języku, który jest używany dla systemu Windows. Podobnie, jeśli użytkownicy końcowi zainstalują [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] i uruchamiają rozwiązania w instalacjach systemu Windows, które są ustawione na język inny niż angielski, komunikaty środowiska uruchomieniowego będą wyświetlane w tym samym języku co system Windows. W niektórych przypadkach mogą być potrzebne dodatkowe pakiety językowe. Na przykład mogą być potrzebne dodatkowe pakiety językowe, jeśli kopia systemu Windows korzysta z więcej niż jednego ustawienia języka lub przełączasz się do innego języka po zainstalowaniu programu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Pakiety językowe można znaleźć w witrynie [Microsoft Visual Studio 2010 Tools dla pakietu językowego systemu Microsoft Office System (wersja 4,0 Runtime)](http://go.microsoft.com/fwlink/?LinkId=140386).
 
 ## <a name="see-also"></a>Zobacz także
-- [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Wprowadzenie &#40;do programowania pakietu Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
 - [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
-- [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)

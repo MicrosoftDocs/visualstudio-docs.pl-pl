@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e7f333ae6f9e938261c0f91196120f3376d0388
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 74484c5f014c9a677c321a0d9fed649f016ea3c9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841587"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546884"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Przekazuj obiekty System.Uri zamiast ciągów
 
@@ -32,39 +32,39 @@ ms.locfileid: "65841587"
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
 
-Wykonano wywołanie do metody, która ma parametr typu ciąg, którego nazwa zawiera "uri", "Uri", "urn", "Urn", "url" lub "Url" i deklarujący typ metody zawiera odpowiadające przeciążenie metody, która ma <xref:System.Uri?displayProperty=fullName> parametru.
+Wykonano wywołanie metody, która ma parametr ciągu, którego nazwa zawiera "URI", "URI", "urn", "urn", "URL" lub "URL", a typ deklarujący metody zawiera odpowiednie Przeciążenie metody, która ma <xref:System.Uri?displayProperty=fullName> parametr.
 
-Domyślnie ta reguła przegląda tylko widocznych zewnętrznie metod i typów, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła przegląda tylko zewnętrznie widoczne metody i typy, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Nazwa parametru jest podzielony na tokeny oparte na Konwencji camelcase, a następnie każdy token jest sprawdzane w celu sprawdzenia, czy jest ona równa "uri", "Uri", "urn", "Urn", "url" lub "Url". W przypadku dopasowania parametru zakłada, że do reprezentowania identyfikatora uniform resource identifier (URI). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. <xref:System.Uri> Klasa udostępnia te usługi w bezpieczny sposób. Gdy istnieje możliwość wyboru między dwa przeciążenia, które różnią się tylko do reprezentacji identyfikatora URI, użytkownik powinien wybrać przeciążenia, które przyjmuje <xref:System.Uri> argumentu.
+Nazwa parametru jest dzielona na tokeny na podstawie Konwencji wielkości liter notacji CamelCase, a następnie sprawdzana jest wartość "URI", "URI", "urn", "urn", "URL" lub "URL". Jeśli istnieje dopasowanie, przyjęto, że parametr reprezentuje identyfikator URI (Uniform Resource Identifier). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. <xref:System.Uri> Klasa udostępnia te usługi w bezpieczny i bezpieczny sposób. Gdy istnieje wybór między dwoma przeciążeniami, które różnią się tylko reprezentacją identyfikatora URI, użytkownik powinien wybrać Przeciążenie przyjmujące <xref:System.Uri> argument.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy wywołać przeciążenia, które przyjmuje <xref:System.Uri> argumentu.
+Aby naprawić naruszenie tej reguły, wywołaj Przeciążenie przyjmujące <xref:System.Uri> argument.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli parametr typu ciąg nie reprezentuje identyfikator URI.
+Jeśli parametr ciągu nie reprezentuje identyfikatora URI, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca2234.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (użycie). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (użycie). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie pokazano metodę, `ErrorProne`, który narusza regułę i metody `SaferWay`, który prawidłowo wywołuje <xref:System.Uri> przeciążenia:
+Poniższy przykład przedstawia metodę, `ErrorProne`, która narusza regułę i metodę, `SaferWay` <xref:System.Uri> , która prawidłowo wywołuje Przeciążenie:
 
 [!code-vb[FxCop.Usage.PassUri#1](../code-quality/codesnippet/VisualBasic/ca2234-pass-system-uri-objects-instead-of-strings_1.vb)]
 [!code-cpp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CPP/ca2234-pass-system-uri-objects-instead-of-strings_1.cpp)]
@@ -72,7 +72,7 @@ W poniższym przykładzie pokazano metodę, `ErrorProne`, który narusza reguł�
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1057: Przeciążenia identyfikatora URI ciągu wywołują przeciążenia System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1057: Przeciążenia identyfikatora URI ciągu wywołania system. URI overloads](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
 - [CA1056: Właściwości identyfikatora URI nie powinny być ciągami](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 - [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA1055: Identyfikator URI zwracanych wartości nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA1055: Zwracane wartości identyfikatora URI nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

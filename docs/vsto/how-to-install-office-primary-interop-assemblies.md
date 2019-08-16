@@ -1,6 +1,6 @@
 ---
 title: 'Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office'
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,29 +13,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b6f701e3962a25e7239c829d409a3ad69a1833a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ee6755a2d795d2018136785986a5a346ddc07dc6
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419596"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551795"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office
-  Po zainstalowaniu pakietu Office, należy zainstalować podstawowe zestawy międzyoperacyjne Microsoft Office (PIA).
+  Zainstaluj Microsoft Office podstawowych zestawów międzyoperacyjnych (zestawów PIA) podczas instalacji pakietu Office.
 
-## <a name="to-install-the-pias-when-you-install-office"></a>Aby zainstalować PIA, podczas instalowania pakietu Office
+[!include[Add-ins note](includes/addinsnote.md)]
 
-1. Upewnij się, że została zainstalowana wersja programu .NET Framework, która nie jest starsza niż 2.0.
+## <a name="to-install-the-pias-when-you-install-office"></a>Aby zainstalować zestawów Pia podczas instalowania pakietu Office
 
-2. Zainstaluj program Microsoft Office i upewnij się, że **dodatkiem .NET Programmability Support** funkcji wybrano dla aplikacji, aby rozszerzyć (Ta funkcja jest dostępna w domyślnej instalacji).
+1. Upewnij się, że masz wersję .NET Framework, która nie jest starsza niż 2,0.
+
+2. Zainstaluj Microsoft Office i upewnij się, że dla aplikacji, które mają zostać rozszerzone, została wybrana funkcja **obsługi programowania .NET** (Ta funkcja jest uwzględniona w instalacji domyślnej).
 
     > [!WARNING]
-    > Domyślnie PIA firmy są osadzone w rozwiązaniu podczas kompilacji, dzięki czemu nie trzeba rozpowszechniać zestawów PIA dla użytkowników jako warunek wstępny do korzystania z dodatku narzędzi VSTO lub dostosowywania.
+    > Domyślnie narzędzie PIA jest osadzane w rozwiązaniu podczas jego kompilowania, aby nie trzeba było rozpowszechniać zestawów Pia do użytkowników jako wymaganie wstępne do korzystania z dodatku narzędzi VSTO lub dostosowywania.
 
 ## <a name="see-also"></a>Zobacz także
-- [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)
-- [Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Podstawowe zestawy międzyoperacyjności pakietu Office](../vsto/office-primary-interop-assemblies.md)
+- [Instrukcje: Docelowa aplikacja pakietu Office za poorednictwem zestawów podstawowych międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [Instrukcje: Zainstalować Visual Studio Tools for Office runtime do dystrybucji](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
-- [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Instrukcje: Zainstaluj pakiet redystrybucyjny środowiska uruchomieniowego pakietu Office Visual Studio Tools](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Wprowadzenie &#40;do programowania pakietu Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

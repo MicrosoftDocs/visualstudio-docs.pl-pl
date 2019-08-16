@@ -10,17 +10,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3231efbac4f4c101632e281fd54718e688bb885
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: a44465b5f3daf89e915a5f6f5e7abe6c856598e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195144"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546924"
 ---
-# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Omówienie analizy kodu dla kodu zarządzanego w programie Visual Studio
+# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Przegląd analizy kodu dla kodu zarządzanego w programie Visual Studio
 
-Program Visual Studio można wykonać analizy kodu dla kodu zarządzanego na dwa sposoby: za pomocą [binarne analizatory](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), znanego również jako analizy statycznej FxCop zestawów zarządzanych, a za pomocą nowoczesnych więcej [analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md). Analizatory Roslyn, z których analizy kodu na żywo podczas wpisywania, Zastąp analizy statycznej programu FxCop, który tylko analizuje kod po kompilacji.  
+Program Visual Studio może przeanalizować kod zarządzany na dwa sposoby: ze [starszą analizą](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), znaną również jako FxCop statycznej analizy zestawów zarządzanych i bardziej nowoczesnymi [analizatorami kodu](../code-quality/roslyn-analyzers-overview.md)opartymi na .NET compiler platform. Analizatory kodu oparte na .NET Compiler Platform, które analizują kod na żywo podczas pisania, Zastąp FxCopą statyczną analizę kodu statycznego, która analizuje tylko skompilowany kod.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md)
+- [Omówienie analizatorów opartych na .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md)

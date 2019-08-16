@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300607"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551146"
 ---
 # <a name="configure-fxcop-analyzers"></a>Konfigurowanie analizatorów FxCop
 
-[Analizatory FxCop](install-fxcop-analyzers.md) składają się z najważniejszych reguł "FxCop" z analizy kodu statycznego, przekonwertowane na analizatory Roslyn. Analizatory kodu FxCop można skonfigurować na dwa sposoby:
+[Analizatory FxCop](install-fxcop-analyzers.md) składają się z najważniejszych reguł "FxCop" ze starszej analizy, przekonwertowane do analizatorów kodu opartych na .NET compiler platform. Analizatory kodu FxCop można skonfigurować na dwa sposoby:
 
 - [Zestaw reguł](#fxcop-analyzer-rule-sets), który umożliwia włączenie lub wyłączenie reguły i ustawienie ważności dla poszczególnych naruszeń reguł.
 
 - Począwszy od wersji 2.6.3 pakietu NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) , za pomocą [pliku. editorconfig](#editorconfig-file). [Konfigurowalne opcje](fxcop-analyzer-options.md) pozwalają dostroić, które części bazy kodu mają być analizowane.
 
 > [!TIP]
-> Aby uzyskać informacje o różnicach między statyczną analizą kodu FxCop i analizatorami FxCop, zobacz temat analizy [FxCop — często zadawane pytania](fxcop-analyzers-faq.md).
+> Aby uzyskać informacje o różnicach między starszymi analizami i analizatorami FxCop, zobacz sekcję [analizatory FxCop — często zadawane pytania](fxcop-analyzers-faq.md).
 
 ## <a name="fxcop-analyzer-rule-sets"></a>Zestawy reguł analizatora FxCop
 
@@ -42,7 +42,7 @@ Pakiet NuGet analizatora FxCop zawiera wstępnie zdefiniowane zestawy reguł dla
 - zabezpieczenia
 - wykorzystanie
 
-Aby uzyskać więcej informacji, zobacz [zestawy reguł dla analizatorów Roslyn](analyzer-rule-sets.md).
+Aby uzyskać więcej informacji, zobacz [zestawy reguł dla analizatorów kodu](analyzer-rule-sets.md).
 
 ## <a name="editorconfig-file"></a>Plik EditorConfig
 
@@ -90,7 +90,7 @@ Można udostępnić plik. editorconfig dla konfiguracji analizatora między co n
 4. Załaduj ponownie projekt.
 
 > [!NOTE]
-> Nie można skonfigurować starszych reguł FxCop (statycznej analizy kodu FxCop) przy użyciu pliku. editorconfig.
+> Nie można skonfigurować starszych reguł FxCop przy użyciu pliku. editorconfig.
 
 ## <a name="option-scopes"></a>Zakresy opcji
 

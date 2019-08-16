@@ -1,9 +1,9 @@
 ---
-title: VBA dostępu, można utworzyć/otworzyć projekt systemu VSTO
+title: Dostęp VBA do tworzenia/otwierania projektu systemu narzędzi VSTO
 decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 titleSuffix: Visual Studio Tools for Microsoft Office
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
 - vst.project.vbawrongversion
@@ -19,93 +19,95 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c85a907b057118c28ea35b8a920337ecdad5ad01
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177658"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551544"
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Zapewnianie dostępu do VBA do utworzenia lub otwarcia Visual Studio Tools dla programu Microsoft Office project system
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Włącz dostęp do języka VBA, aby utworzyć lub otworzyć Visual Studio Tools dla projektu systemu Microsoft Office
 
-Musisz jawnie włączyć dostęp do programu Visual Basic for Applications (VBA) system projektu w programie Microsoft Office, można było utworzyć lub otworzyć Visual Studio Tools dla programu Microsoft Office project system.
+Aby można było utworzyć lub otworzyć Visual Studio Tools dla projektu systemu Microsoft Office, należy jawnie włączyć dostęp do systemu projektu Visual Basic for Applications (VBA) w programie Microsoft Office.
 
- Projektów deweloperskich Microsoft Office wymagają dostępu do języka Visual Basic for Applications (VBA) system projektu w programie Microsoft Office Word i Microsoft Office Excel, nawet jeśli projekty nie należy używać języka Visual Basic dla aplikacji. Obsługi w czasie projektowania formanty zarówno języka Visual Basic i C# projektów zależy od języka Visual Basic for Applications systemu projektu.
+ Projekty deweloperskie Microsoft Office wymagają dostępu do systemu projektu Visual Basic for Applications (VBA) w Microsoft Office Word i Microsoft Office Excel, nawet jeśli projekty nie używają Visual Basic for Applications. Obsługa kontrolek w czasie projektowania w ramach obu Visual Basic C# i projektów zależy od systemu projektu Visual Basic for Applications.
 
- Microsoft Office wirusów makr próba Automatyzacja języka Visual Basic for Applications systemu projektu jako środek do propagowania samodzielnie. Dzięki dostępowi do języka Visual Basic dla aplikacji, system projektu, należy usunąć ochronę, która pomaga zapobiegać rozprzestrzeniania się wirusów makr. Jednak zabezpieczeń makr normalne pozostaje w miejscu, dzięki czemu poziomu zabezpieczeń makr i listę zaufanych wydawców, obsługa dla aplikacji pakietu Office, które określi, czy dowolne makro jest uruchamiana na komputerze.
+ Niektóre Microsoft Office wirusy makr podejmują próbę zautomatyzowania systemu Visual Basic for Applications projektu jako środek do propagowania siebie. Przez umożliwienie dostępu do systemu projektu Visual Basic for Applications, należy usunąć ochronę, która pomaga zapobiegać rozproszeniu wirusów makr. Jednak normalne zabezpieczenia makr pozostają na miejscu, dlatego poziom zabezpieczeń makr i lista zaufanych wydawców obsługiwanych przez aplikacje pakietu Office określają, czy dowolne makro jest uruchamiane na komputerze.
 
 > [!NOTE]
-> Dotyczy to tylko na komputerze deweloperskim. Komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office po włączeniu tej opcji nie jest konieczne.
+> Dotyczy to tylko komputera deweloperskiego. Na komputerach użytkowników końcowych nie jest wymagana opcja uruchamiania rozwiązań pakietu Office.
 
- Należy pamiętać, że wyłączenie dostępu do języka Visual Basic dla aplikacji, system projektu na swój własny nie chronią przed wirusami, ale po prostu przestanie wirusów rozprzestrzenianiu się do innych dokumentów, jeśli komputer staje się coraz zainfekowany za pomocą makra Aplikacje antywirusowe. Opcja jest domyślnie wyłączona, jako dodatkową warstwę ochrony dla komputera, ale jej włączeniu nie wprowadzać na komputerze więcej podatny na wirusy Jeśli postępujesz zgodnie z najlepszych rozwiązań dotyczących zabezpieczeń.
+ Należy pamiętać, że wyłączenie dostępu do samodzielnego systemu Visual Basic for Applications projektu nie chroni przed wirusami, a po prostu pomaga w zatrzymaniu niektórych wirusów z rozproszeniem do innych dokumentów, jeśli komputer kiedykolwiek zostanie zainfekowany przez makro komputer. Opcja jest domyślnie wyłączona jako dodaną warstwę ochrony dla komputera, ale włączenie jej nie sprawia, że komputer jest bardziej podatny na wirusy, jeśli są stosowane najlepsze rozwiązania w zakresie zabezpieczeń.
 
- Najlepszą ochronę przed wirusami jest uruchomienie pakietu Office w dużej lub bardzo wysoki poziom zabezpieczeń, tylko ufać makra z weryfikacji, znanych źródeł, pakietu Office i na bieżąco, za pomocą poprawek zabezpieczeń i programy antywirusowe.
+ Najlepszą ochroną przed wirusami makr pakietu Office jest uruchamianie pakietu Office na wysokim lub bardzo wysokim poziomie zabezpieczeń, a jedynie ufają makrom ze zweryfikowanych, znanych źródeł i na bieżąco z poprawkami zabezpieczeń i skanerami wirusów.
 
- Można włączyć lub wyłączyć opcję **zaufania dostęp do projektu języka Visual Basic** ręcznie.
+ Można włączać lub wyłączać opcję **Ufaj dostępowi do Visual Basic Project** ręcznie.
 
- Jeśli widzisz błędy VBA lub COM, można naprawić instalację pakietu Office.
+ Instalację pakietu Office można naprawić, jeśli wystąpią błędy VBA lub COM.
 
-## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>Aby włączyć lub wyłączyć dostęp do projektów języka Visual Basic
+[!include[Add-ins note](includes/addinsnote.md)]
 
-1. Kliknij przycisk **pliku** kartę.
+## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>Aby włączyć lub wyłączyć dostęp do projektów Visual Basic
 
-2. Kliknij przycisk **opcje**.
+1. Kliknij kartę **plik** .
 
-3. Kliknij przycisk **Centrum zaufania**, a następnie kliknij przycisk **ustawienia Centrum zaufania**.
+2. Kliknij przycisk **Opcje**.
 
-4. W **Centrum zaufania**, kliknij przycisk **ustawienia makr**.
+3. Kliknij pozycję **Centrum zaufania**, a następnie kliknij pozycję **Ustawienia Centrum zaufania**.
 
-5. Zaznacz lub usuń zaznaczenie pola wyboru **ufają dostępu do modelu obiektu projektu VBA** Aby włączyć lub wyłączyć dostęp do projektów Visual Basic.
+4. W **Centrum zaufania**kliknij pozycję **Ustawienia makr**.
+
+5. Zaznacz lub usuń zaznaczenie **zaufania dostępu do modelu obiektów projektu VBA,** aby włączyć lub wyłączyć dostęp do projektów Visual Basic.
 
 6. Kliknij przycisk **OK**.
 
-### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Aby włączyć lub wyłączyć dostęp do projektów języka Visual Basic z systemu Microsoft Office 2007
+### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Aby włączyć lub wyłączyć dostęp do projektów Visual Basic przy użyciu systemu Microsoft Office 2007
 
-1. Na **narzędzia** menu w programie Word lub Excel, wskaż polecenie **— makro**, a następnie kliknij przycisk **zabezpieczeń**.
+1. W menu **Narzędzia** w programie Word lub Excel wskaż polecenie **makro**, a następnie kliknij pozycję **zabezpieczenia**.
 
-2. W **zabezpieczeń** okno dialogowe, kliknij przycisk **zaufanych wydawców** kartę.
+2. W oknie dialogowym **zabezpieczenia** kliknij kartę **Zaufani wydawcy** .
 
-3. Zaznacz, aby włączyć lub usuń zaznaczenie, aby wyłączyć, **zaufania dostęp do projektu języka Visual Basic**.
+3. Wybierz, aby włączyć, lub wyczyść, aby wyłączyć, **ufać dostępowi do Visual Basic projektu**.
 
 4. Kliknij przycisk **OK**.
 
 ## <a name="to-set-your-office-macro-security-level"></a>Aby ustawić poziom zabezpieczeń makr pakietu Office
 
-1. Kliknij przycisk **pliku** kartę.
+1. Kliknij kartę **plik** .
 
-2. Kliknij przycisk **opcje**.
+2. Kliknij przycisk **Opcje**.
 
-3. Kliknij przycisk **Centrum zaufania**, a następnie kliknij przycisk **ustawienia Centrum zaufania**.
+3. Kliknij pozycję **Centrum zaufania**, a następnie kliknij pozycję **Ustawienia Centrum zaufania**.
 
-4. W **Centrum zaufania**, kliknij przycisk **ustawienia makr**.
+4. W **Centrum zaufania**kliknij pozycję **Ustawienia makr**.
 
-5. W **ustawienia makr** wybierz odpowiednie ustawienie.
+5. W sekcji **Ustawienia makr** wybierz odpowiednie ustawienie.
 
 6. Kliknij przycisk **OK**.
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Aby ustawić poziom zabezpieczeń makr pakietu Office przy użyciu systemu Microsoft Office 2007
 
-1. Na **narzędzia** menu w programie Word lub Excel, wskaż polecenie **— makro**, a następnie kliknij przycisk **zabezpieczeń**.
+1. W menu **Narzędzia** w programie Word lub Excel wskaż polecenie **makro**, a następnie kliknij pozycję **zabezpieczenia**.
 
-2. Na **poziom zabezpieczeń** , a następnie wybierz odpowiednie ustawienie.
+2. Na karcie **poziom zabezpieczeń** wybierz odpowiednie ustawienie.
 
-    **Poziom zabezpieczeń** karta zawiera szczegóły dotyczące poszczególnych poziomów. Aby uzyskać więcej informacji zobacz temat "Poziomy zabezpieczeń makr" w Pomocy pakietu Office.
+    Karta **poziom zabezpieczeń** zawiera szczegółowe informacje o każdym poziomie. Aby uzyskać więcej informacji, zobacz temat "poziomy zabezpieczeń makr" w pomocy pakietu Office.
 
-### <a name="to-install-vba-with-the-2007-microsoft-office-system"></a>Aby zainstalować VBA przy użyciu systemu Microsoft Office 2007
+### <a name="to-install-vba-with-the-2007-microsoft-office-system"></a>Aby zainstalować język VBA w systemie 2007 Microsoft Office
 
-1. W Panelu sterowania, uruchom **apletu Dodaj lub usuń programy** lub **programy i funkcje**.
+1. W panelu sterowania uruchom **aplet Dodaj lub usuń programy** lub **programy i funkcje**.
 
-2. Wybieranie pakietu Office w **aktualnie zainstalowane programy** listy.
+2. Wybierz pozycję Office na liście **Aktualnie zainstalowane programy** .
 
-3. Kliknij przycisk **zmiany**.
+3. Kliknij przycisk **Zmień**.
 
-4. Wybierz **apletu Dodaj lub usuń funkcje**, a następnie kliknij przycisk **Kontynuuj**.
+4. Wybierz pozycję **Dodaj lub usuń funkcje**, a następnie kliknij przycisk **Kontynuuj**.
 
-5. Wybierz **Wybierz zaawansowane dostosowywanie aplikacji**, a następnie kliknij przycisk **dalej**.
+5. Wybierz pozycję **Wybierz zaawansowane dostosowywanie aplikacji**, a następnie kliknij przycisk **dalej**.
 
-6. Rozwiń **funkcje wspólne pakietu Office** w **wybierz opcje aktualizacji aplikacji i narzędzi** listy.
+6. Rozwiń pozycję **funkcje udostępnione pakietu Office** na liście **Wybierz Opcje aktualizacji dla aplikacji i narzędzi** .
 
-7. Otwórz menu rozwijanym obok **Visual Basic for Applications**, a następnie kliknij przycisk **Uruchom z mojego komputera**.
+7. Otwórz menu rozwijane obok **Visual Basic for Applications**, a następnie kliknij pozycję **Uruchom z mojego komputera**.
 
 8. Kliknij przycisk **Kontynuuj**.
 
@@ -113,15 +115,15 @@ Musisz jawnie włączyć dostęp do programu Visual Basic for Applications (VBA)
 
 ## <a name="to-repair-your-installation-of-office"></a>Aby naprawić instalację pakietu Office
 
-1. W Panelu sterowania, uruchom **apletu Dodaj lub usuń programy** lub **programy i funkcje**.
+1. W panelu sterowania uruchom **aplet Dodaj lub usuń programy** lub **programy i funkcje**.
 
-2. Wybierz wersję pakietu Office w **aktualnie zainstalowane programy** listy.
+2. Wybierz wersję pakietu Office z listy **aktualnie zainstalowanych programów** .
 
-3. Kliknij przycisk **zmiany**.
+3. Kliknij przycisk **Zmień**.
 
-4. Wybierz **ponownej instalacji lub naprawy**, a następnie kliknij przycisk **dalej**.
+4. Wybierz pozycję **Zainstaluj ponownie lub napraw**, a następnie kliknij przycisk **dalej**.
 
-5. Wybierz **Wykryj i napraw błędy instalacji pakietu Office**, a następnie kliknij przycisk **zainstalować**.
+5. Wybierz pozycję **Wykryj i napraw błędy w instalacji pakietu Office**, a następnie kliknij przycisk **Instaluj**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eee81a96e6841aa77e2056a95bd18979724b62e5
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c91de575abe8b19a5d8f6fca864e2bc452da7cb2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842396"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547643"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Magazyn typu wyliczeniowego powinien być typu Int32
 
@@ -35,53 +35,53 @@ ms.locfileid: "65842396"
 
 ## <a name="cause"></a>Przyczyna
 
-Nie jest podstawowym typem wyliczenia <xref:System.Int32?displayProperty=fullName>.
+Typ podstawowy wyliczenia nie <xref:System.Int32?displayProperty=fullName>jest.
 
-Domyślnie ta reguła przegląda tylko wyliczenia publiczne, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko publiczne wyliczenia, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Domyślnie <xref:System.Int32?displayProperty=fullName> typ danych jest używany do przechowywania wartości stałej. Mimo że możesz to zmienić, typ podstawowy, nie jest wymagane lub zalecane w przypadku większości scenariuszy. Żadnych korzyści istotnie poprawiającą wydajność odbywa się za pomocą typu danych, który jest mniejszy niż <xref:System.Int32>. Jeśli nie możesz użyć domyślnego typu danych, należy użyć jednej wspólnej systemu Language (CLS)-zgodnych typów całkowitych <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, lub <xref:System.Int64> aby upewnić się, że wszystkie wartości wyliczenia mogą być reprezentowane w Zgodne ze specyfikacją CLS języków programowania.
+Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Domyślnie <xref:System.Int32?displayProperty=fullName> typ danych jest używany do przechowywania wartości stałej. Mimo że można zmienić ten typ podstawowy, nie jest to konieczne ani zalecane w przypadku większości scenariuszy. Nie zostanie osiągnięty znaczący wzrost wydajności przy użyciu typu danych, który jest <xref:System.Int32>mniejszy niż. Jeśli nie można użyć domyślnego typu danych, należy <xref:System.Byte>użyć jednego z typów <xref:System.Int16> <xref:System.Int32>całkowitych zgodnych ze specyfikacją CLS (Common Language system),,, lub <xref:System.Int64> , aby upewnić się, że wszystkie wartości wyliczenia mogą być reprezentowane w Języki programowania zgodne ze specyfikacją CLS.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej reguły, chyba że występują problemy z rozmiar lub zgodność, należy użyć <xref:System.Int32>. W sytuacjach, gdzie <xref:System.Int32> nie jest wystarczająco duży, aby przechowywać wartości, użyj <xref:System.Int64>. Jeśli zgodność ze starszymi wersjami wymaga mniejszych typów danych, należy użyć <xref:System.Byte> lub <xref:System.Int16>.
+Aby naprawić naruszenie tej reguły, chyba że występują problemy z rozmiarem lub zgodnością <xref:System.Int32>, użyj programu. W sytuacjach, <xref:System.Int32> gdy nie jest wystarczająco duży, aby pomieścić wartości <xref:System.Int64>, użyj. Jeśli zgodność z poprzednimi wersjami wymaga mniejszego <xref:System.Byte> typu <xref:System.Int16>danych, użyj lub.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Pomijaj ostrzeżeń dla tej reguły, tylko wtedy, gdy problemy ze zgodnością z poprzednimi wersjami tego wymagają. W aplikacjach Niezachowanie zgodności z tą regułą, zazwyczaj nie powoduje problemów. W bibliotekach, gdy wymagana jest współdziałanie języków, brak zgodności z tą regułą może niekorzystnie wpłynąć na użytkowników.
+Pomiń ostrzeżenie z tej reguły tylko w przypadku, gdy wymagają to problemów ze zgodnością z poprzednimi wersjami. W aplikacjach niezgodność z tą regułą zwykle nie powoduje problemów. W bibliotekach, w których wymagane jest współdziałanie języków, niezgodność z tą regułą może mieć negatywny wpływ na użytkowników.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1028.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
-## <a name="example-of-a-violation"></a>Przykładem naruszenia
+## <a name="example-of-a-violation"></a>Przykład naruszenia
 
-Poniższy przykład przedstawia dwa wyliczenia, których nie należy używać zalecane odpowiedniego typu danych.
+W poniższym przykładzie przedstawiono dwa wyliczenia, które nie używają zalecanego bazowego typu danych.
 
 [!code-vb[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_1.vb)]
 [!code-csharp[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_1.cs)]
 
-## <a name="example-of-how-to-fix"></a>Przykład sposobu rozwiązania
+## <a name="example-of-how-to-fix"></a>Przykład naprawy
 
-Poniższy przykład naprawia wcześniejszego naruszenia praw, zmieniając odpowiedniego typu danych w celu <xref:System.Int32>.
+Poniższy przykład naprawia poprzednie naruszenie, zmieniając typ danych bazowych na <xref:System.Int32>.
 
 [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_2.cs)]
 [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1008: Typy wyliczeniowe powinny mieć wartości zerowej](../code-quality/ca1008-enums-should-have-zero-value.md)
-- [CA1027: Oznacz Typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Nie nadawaj wartościom wyliczenia nazwy "Reserved"](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1008 Wyliczenia powinny mieć wartość zerową](../code-quality/ca1008-enums-should-have-zero-value.md)
+- [CA1027 Oznacz typy wyliczeniowe atrybutem FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217 Nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1700: Nie Nazwij wartości wyliczeniowych "zarezerwowane"](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Nie określaj prefiksu wartości wyliczenia z nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -3,39 +3,39 @@ title: Zestawy reguł analizatora
 ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- analyzers, rule sets
+- analyzer packages, rule sets
 - rule sets for analyzers
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675486"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547941"
 ---
-# <a name="rule-sets-for-roslyn-analyzers"></a>Zestawy reguł na potrzeby analizatorów Roslyn
+# <a name="rule-sets-for-analyzer-packages"></a>Zestawy reguł dla pakietów analizatora
 
-Zestawy wstępnie zdefiniowanych reguł są dołączane do niektórych pakietów analizatora NuGet. Na przykład zestawy reguł, które są dołączone [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pakiet analizatora NuGet (począwszy od wersji 2.6.2) Włącz lub Wyłącz zasady na podstawie ich kategorii, takie jak zabezpieczenia, nazw, lub wydajność. Korzystanie z zestawów reguł można łatwo szybko wyświetlić tylko te naruszenia reguły, które odnoszą się do określonej kategorii reguły.
+Wstępnie zdefiniowane zestawy reguł są zawarte w niektórych pakietach analizatora NuGet. Na przykład zestawy reguł, które są dołączone do pakietu analizatora NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (począwszy od wersji 2.6.2), włączają lub wyłączają reguły oparte na ich kategorii, takie jak zabezpieczenia, nazewnictwo lub wydajność. Używanie zestawów reguł ułatwia szybkie wyświetlanie tylko naruszeń reguł, które odnoszą się do określonej kategorii reguł.
 
-W przypadku migrowania ze starszego "FxCop" statycznej analizy kodu do analizatorów Roslyn, te zestawy reguł umożliwiają kontynuowanie przy użyciu tej samej konfiguracji reguły, wcześniej używane.
+Jeśli migrujesz ze starszej analizy "FxCop" do analizy kodu opartej na .NET Compiler Platform, te zestawy reguł umożliwiają dalsze korzystanie z tych samych konfiguracji reguł, które zostały wcześniej użyte.
 
-## <a name="use-analyzer-rule-sets"></a>Korzystanie z zestawów reguł analizatora
+## <a name="use-analyzer-package-rule-sets"></a>Użyj zestawów reguł pakietu analizatora
 
-Po zakończeniu [zainstaluj pakiet analizatora NuGet](install-roslyn-analyzers.md), zlokalizuj wstępnie zdefiniowany zestaw reguł jego *zestawów reguł* katalogu. Na przykład, jeśli odwołujesz `Microsoft.CodeAnalysis.FxCopAnalyzers` analizatora pakietów, możesz znaleźć jej *zestawów reguł* katalogu na *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\ \<wersji\>\rulesets*. Stamtąd skopiować jednego lub więcej zestawów reguł, a następnie wklej je w katalogu, który zawiera projektu programu Visual Studio lub bezpośrednio do **Eksploratora rozwiązań**.
+Po [zainstalowaniu pakietu analizatora NuGet](install-roslyn-analyzers.md)Znajdź wstępnie zdefiniowany zestaw reguł w jego katalogu *zestawów reguł* . Jeśli na `Microsoft.CodeAnalysis.FxCopAnalyzers` przykład przywoływano pakiet analizatora, można znaleźć jego katalog *reguł* w lokalizacji *% USERPROFILE%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\\\< \rulesets\>* . Z tego miejsca Skopiuj jeden lub więcej zestawów reguł i wklej je w katalogu zawierającym projekt programu Visual Studio lub bezpośrednio do **Eksplorator rozwiązań**.
 
-Możesz również [Dostosuj zestaw wstępnie zdefiniowanych reguł](how-to-create-a-custom-rule-set.md) zgodnie z preferencjami. Na przykład zmienić ważność co najmniej jedną regułę tak, aby naruszeń są traktowane jako błędy lub ostrzeżenia w **lista błędów**.
+Możesz również [dostosować wstępnie zdefiniowany zestaw reguł](how-to-create-a-custom-rule-set.md) do preferencji. Na przykład można zmienić ważność jednej lub kilku reguł, aby naruszenia były wyświetlane jako błędy lub ostrzeżenia w **Lista błędów**.
 
 ## <a name="set-the-active-rule-set"></a>Ustaw aktywny zestaw reguł
 
-Proces ustawiania aktywny zestaw reguł jest nieco inne w zależności od tego, czy masz projekt .NET Core/.NET Standard lub projekt programu .NET Framework.
+Proces ustawiania aktywnego zestawu reguł jest nieco inny w zależności od tego, czy masz projekt .NET Core/. NET Standard lub projekt .NET Framework.
 
 ### <a name="net-core"></a>.NET Core
 
-Aby utworzyć regułę ustawić aktywny zestaw reguł dla analizy w projektach .NET Core lub .NET Standard, należy ręcznie dodać **CodeAnalysisRuleSet** właściwość do pliku projektu. Na przykład, poniższy kod ustawia fragment `HelloWorld.ruleset` jako aktywna reguła zestawu.
+Aby ustawić regułę zestawu aktywnych reguł dla analizy w projektach .NET Core lub .NET Standard, ręcznie Dodaj właściwość **CodeAnalysisRuleSet** do pliku projektu. Na przykład poniższy fragment kodu jest ustawiany `HelloWorld.ruleset` jako aktywny zestaw reguł.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -46,19 +46,19 @@ Aby utworzyć regułę ustawić aktywny zestaw reguł dla analizy w projektach .
 
 ### <a name="net-framework"></a>.NET Framework
 
-Aby aktywny zestaw reguł dla analizy w projektach .NET Framework zestaw reguł, kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz polecenie **właściwości**. Na stronach właściwości projektu, wybierz **analizy kodu** kartę. W obszarze **Uruchom ten zestaw reguł**, wybierz opcję **Przeglądaj**, a następnie wybierz odpowiednią regułę zestaw, który został skopiowany do katalogu projektu. Teraz widoczne tylko naruszeń zasady dla tych reguł, które są włączone w wybranym zestawem reguł.
+Aby ustawić regułę zestawu aktywnych reguł dla analizy w .NET Framework projekty, kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**. Na stronie właściwości projektu wybierz kartę **Analiza kodu** . W obszarze **Uruchom ten zestaw reguł**wybierz pozycję **Przeglądaj**, a następnie wybierz żądany zestaw reguł skopiowany do katalogu projektu. Teraz widzisz tylko naruszenia reguły dla tych reguł, które są włączone w wybranym zestawie reguł.
 
-## <a name="available-rule-sets"></a>Zestawy reguł dostępne
+## <a name="available-rule-sets"></a>Dostępne zestawy reguł
 
-Analizator wstępnie zdefiniowane zestawy reguł obejmują trzy zestawów reguł, które wpływają na wszystkie reguły w pakiecie&mdash;taki, który umożliwia ich wszystkich, taki, który wyłącza je wszystkie, a drugie honoruje każdej reguły domyślne ważności i włączenie ustawienia:
+Wstępnie zdefiniowane zestawy reguł analizatora obejmują trzy zestaw reguł, które mają wpływ na wszystkie reguły&mdash;w pakiecie, które włączają je wszystkie, ale te, które je wyłączyją, i są uznawane za wszystkie zasady ważności i ustawienia włączania każdej reguły:
 
-- AllRulesEnabled.ruleset
-- AllRulesDisabled.ruleset
-- AllRulesDefault.ruleset
+- AllRulesEnabled. zestaw reguł
+- AllRulesDisabled. zestaw reguł
+- AllRulesDefault. zestaw reguł
 
-Ponadto istnieją dwa zestawy reguł dla każdej kategorii reguły w pakiecie, takich jak wydajność czy zabezpieczeń. Jeden zestaw reguł włącza wszystkie reguły dla kategorii, a jeden zestaw reguł honoruje ważność i włączenie wartości domyślne dla każdej reguły w kategorii.
+Ponadto istnieją dwa zestawy reguł dla każdej kategorii reguł w pakiecie, takie jak wydajność lub zabezpieczenia. Jeden zestaw reguł włącza wszystkie reguły dla kategorii, a jeden zestaw reguł uwzględnia domyślne ważności i ustawienia włączania dla każdej reguły w kategorii.
 
-[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pakiet analizatora NuGet obejmuje zestawy reguł w ramach następujących kategorii, które dopasowanie zestawów reguł na dostępne dla starszej wersji "FxCop" statycznej analizy kodu:
+Pakiet analizatora NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) zawiera zestawy reguł dla następujących kategorii, które pasują do zestawów reguł dostępnych dla starszej analizy:
 
 - projekt
 - dokumentacja
@@ -72,7 +72,7 @@ Ponadto istnieją dwa zestawy reguł dla każdej kategorii reguły w pakiecie, t
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizatory — często zadawane pytania](analyzers-faq.md)
-- [Omówienie analizatory platformie kompilatora .NET](roslyn-analyzers-overview.md)
-- [Instalowanie analizatorów](install-roslyn-analyzers.md)
-- [Użyj analizatorów](use-roslyn-analyzers.md)
-- [Używanie zestawów reguł do grupowania reguł analizy kodu](using-rule-sets-to-group-code-analysis-rules.md)
+- [Omówienie analizatorów .NET Compiler Platform](roslyn-analyzers-overview.md)
+- [Zainstaluj analizatory](install-roslyn-analyzers.md)
+- [Korzystanie z analizatorów](use-roslyn-analyzers.md)
+- [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](using-rule-sets-to-group-code-analysis-rules.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf16a9edf25132aa8b58702f01563b8d7ccf109a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 44028caf027191846fa653db06abbe4027fdde8d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841492"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547092"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Nazwy właściwości nie powinny być takie same jak nazwy metod Get
 
@@ -35,44 +35,44 @@ ms.locfileid: "65841492"
 
 ## <a name="cause"></a>Przyczyna
 
-Nazwa elementu członkowskiego zaczyna się od "Get" i odpowiada nazwie właściwości. Na przykład typ, który zawiera metodę o nazwie "Getcolor —" i właściwość, która nosi nazwę "Color" może spowodować naruszenie reguły.
+Nazwa elementu członkowskiego rozpoczyna się od "Get" i w przeciwnym razie dopasowuje nazwę właściwości. Na przykład typ zawierający metodę o nazwie "GetColor" oraz właściwość o nazwie "Color" powoduje naruszenie reguły.
 
-Domyślnie ta reguła przegląda tylko właściwości i elementów członkowskich widocznych zewnętrznie, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko widoczne na zewnątrz elementy członkowskie i właściwości, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
 Metody „Get” i właściwości powinny mieć nazwy, które wyraźnie odróżniają ich funkcje.
 
-Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Ten spójności skraca czas, są wymagane, aby dowiedzieć się nowa Biblioteka oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
+Konwencje nazewnictwa zapewniają typowy wygląd bibliotek przeznaczonych dla środowiska uruchomieniowego języka wspólnego. Ta spójność skraca czas wymagany do nauczenia się nowej biblioteki oprogramowania i zwiększa zaufanie klienta, że biblioteka została opracowana przez kogoś, kto ma doświadczenie w tworzeniu kodu zarządzanego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Zmień nazwę, tak aby nazwę metody, która jest poprzedzony znakiem "Get" nie pasuje.
+Zmień nazwę tak, aby nie odpowiadała nazwie metody poprzedzonej prefiksem "Get".
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
 Nie pomijaj ostrzeżeń dla tej reguły.
 
 > [!NOTE]
-> Jeżeli metoda "Get" jest spowodowany przez zaimplementowanie interfejsu iextenderprovider — można wyłączyć to ostrzeżenie.
+> To ostrzeżenie może zostać wykluczone, jeśli metoda "Get" jest spowodowana przez implementację interfejsu interfejsu IExtenderProvider.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1721.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazewnictwa). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazywanie). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład zawiera metody i właściwości, które spełniają tej reguły.
+Poniższy przykład zawiera metodę i właściwość, która narusza tę regułę.
 
 [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
 [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1024: Korzystanie z właściwości, gdzie jest to odpowiednie](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Użyj właściwości, jeśli to konieczne](../code-quality/ca1024-use-properties-where-appropriate.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe62c830b7cd3454adbde8b1d3081af11ef1a6b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b0d5afd33ffb73c47b0f373f70c56166dbfced6d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841647"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547121"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Nazwy parametrów powinny być zgodne z deklaracją podstawową
 
@@ -32,9 +32,9 @@ ms.locfileid: "65841647"
 
 ## <a name="cause"></a>Przyczyna
 
-Nazwa parametru w zastąpienie metody jest niezgodna, nazwa parametru w deklaracji podstawowej metody lub nazwę parametru w deklaracji metody interfejsu.
+Nazwa parametru w przesłonięciu metody nie jest zgodna z nazwą parametru w podstawowej deklaracji metody lub nazwie parametru w deklaracji interfejsu metody.
 
-Domyślnie ta reguła przegląda tylko widocznych zewnętrznie metod, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła przegląda tylko zewnętrznie widoczne metody, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
@@ -42,18 +42,18 @@ Spójne nazywanie parametrów w zastąpieniu hierarchii zwiększa użyteczność
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Zmień nazwę parametru, aby pasować do deklaracji podstawowej. Poprawka jest istotną zmianę dla metody widoczne dla modelu COM.
+Aby naprawić naruszenie tej reguły, Zmień nazwę parametru tak, aby była zgodna z deklaracją podstawową. Poprawka jest istotną zmianą dla metod widocznych dla modelu COM.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły, z wyjątkiem metody widoczne dla modelu COM w bibliotekach, które wcześniej zostały wprowadzone do użytku.
+Nie pomijaj ostrzeżenia z tej reguły, z wyjątkiem metod widocznych dla modelu COM w bibliotekach, które zostały wcześniej dostarczone.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1725.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazewnictwa). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazywanie). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).

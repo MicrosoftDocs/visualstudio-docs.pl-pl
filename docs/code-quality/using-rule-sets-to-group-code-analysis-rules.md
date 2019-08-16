@@ -11,26 +11,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825087"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548025"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Używanie zestawów reguł do grupowania reguł analizy kodu
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Korzystanie z zestawów reguł do grupowania reguł analizy kodu
 
-Podczas konfigurowania analizy kodu w programie Visual Studio, możesz korzystać z listy wbudowanych *zestawów reguł*. Zestaw reguł jest grupowania reguł analizy kodu, które identyfikują docelowe problemy i określone warunki dla tego projektu. Na przykład można zastosować zestaw reguł, który jest przeznaczony do skanowania kodu w poszukiwaniu publicznie dostępnych interfejsów. Można także zastosować zestaw reguł, który zawiera wszystkie dostępne reguły.
+Podczas konfigurowania analizy kodu w programie Visual Studio można wybrać jedną z listy wbudowanych *zestawów reguł*. Zestaw reguł jest grupą reguł analizy kodu, które identyfikują problemy skierowane i określone warunki dla tego projektu. Na przykład można zastosować zestaw reguł przeznaczony do skanowania kodu dla publicznie dostępnych interfejsów API. Można również zastosować zestaw reguł, który zawiera wszystkie dostępne reguły.
 
-Można dostosować reguły ustawiona przez dodanie lub usunięcie reguł lub zmieniając reguły ważności do wyświetlania jako ostrzeżenia lub błędy w **lista błędów**. Dostosowane zestawy reguł mogą spełnić potrzeby konkretnego środowiska do tworzenia oprogramowania. Po dostosowaniu zestawu reguł z edytora zestawu reguł dostarcza wyszukiwania i filtrowania narzędzia pomocne w procesie.
+Zestaw reguł można dostosować, dodając lub usuwając reguły lub zmieniając jego wystąpienia tak, aby były wyświetlane jako ostrzeżenia lub błędy w **Lista błędów**. Dostosowane zestawy reguł mogą spełnić potrzeby konkretnego środowiska do tworzenia oprogramowania. Po dostosowaniu zestawu reguł Edytor zestawu reguł zawiera narzędzia do wyszukiwania i filtrowania, które ułatwiają proces.
 
-Zestawy reguł są dostępne dla [statycznej analizy kodu zarządzanego](how-to-configure-code-analysis-for-a-managed-code-project.md), [analizy kodu w języku C++](using-rule-sets-to-specify-the-cpp-rules-to-run.md), i [analizatorów Roslyn](analyzer-rule-sets.md).
+Zestawy reguł są dostępne dla [analizy kodu zarządzanego](analyzer-rule-sets.md), [starszej analizy kodu zarządzanego](how-to-configure-code-analysis-for-a-managed-code-project.md)i [ C++ analizy kodu](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
 ## <a name="rule-set-format"></a>Format zestawu reguł
 
-Zestaw reguł jest określona w formacie XML w *.ruleset* pliku. Reguły, które składają się z Identyfikatora i *akcji*, są pogrupowane według Identyfikatora analizator i przestrzeni nazw w pliku.
+Zestaw reguł jest określony w formacie XML w pliku zestawu *reguł* . Reguły, które składają się z identyfikatora i *akcji*, są pogrupowane według identyfikatora analizatora i przestrzeni nazw w pliku.
 
-Zawartość *.ruleset* pliku wygląda podobnie do tego kodu XML:
+Zawartość pliku. zestawu *reguł* wygląda podobnie do tego kodu XML:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,11 +54,11 @@ Zawartość *.ruleset* pliku wygląda podobnie do tego kodu XML:
 ```
 
 > [!TIP]
-> Ułatwia to [Edytuj zestaw reguł](../code-quality/working-in-the-code-analysis-rule-set-editor.md) w graficznym **Edytor zestawu reguł** niż ręcznie.
+> Łatwiej jest [edytować zestaw reguł](../code-quality/working-in-the-code-analysis-rule-set-editor.md) w **edytorze zestawu reguł** graficznych niż ręcznie.
 
-## <a name="specify-a-rule-set-for-a-project"></a>Określ zestaw reguł dla projektu
+## <a name="specify-a-rule-set-for-a-project"></a>Określanie zestawu reguł dla projektu
 
-Zestaw dla projektu określono za pomocą reguł **CodeAnalysisRuleSet** właściwość w pliku projektu programu Visual Studio. Na przykład:
+Zestaw reguł dla projektu jest określany przez właściwość **CodeAnalysisRuleSet** w pliku projektu programu Visual Studio. Na przykład:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

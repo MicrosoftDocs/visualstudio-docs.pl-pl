@@ -1,7 +1,7 @@
 ---
 title: Architektura rozwiązań pakietu Office w programie Visual Studio
 titleSuffix: ''
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,55 +15,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 187548a8510b3075c476a1309d1897eb60a647c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939927"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551880"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektura rozwiązań pakietu Office w programie Visual Studio
-  Tematy w tej sekcji Podaj informacje o współpracy rozwiązania utworzone przy użyciu narzędzi Office developer tools w programie Visual Studio.
+  Tematy w tej sekcji zawierają informacje dotyczące sposobu tworzenia rozwiązań utworzonych przy użyciu narzędzi Office Developer Tools w programie Visual Studio.
 
-> [!NOTE]
-> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-[Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
+[Architektura dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
 
-Opisuje działania dostosowań na poziomie dokumentów i sposób ich są postrzegane inaczej przez programistów i użytkowników końcowych.
+Opisuje sposób działania dostosowań na poziomie dokumentu oraz sposobu, w jaki są one postrzegane inaczej przez dewelopera i użytkownika końcowego.
 
 [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 
-W tym artykule opisano składniki dodatków narzędzi VSTO dla programów i jak są ładowane przez aplikacje.
+Opisuje składniki dodatków VSTO oraz sposób ich ładowania przez aplikacje.
 
-[Visual Studio Tools dla pakietu Office Runtime — Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md)
+[Visual Studio Tools dla środowiska uruchomieniowego pakietu Office — omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 
-W tym artykule opisano różne wersje środowiska uruchomieniowego, które jest używane dla rozwiązań pakietu Office.
+Opisuje różne wersje środowiska uruchomieniowego, które są używane dla rozwiązań pakietu Office.
 
 [Wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md)
 
-W tym artykule opisano klucze rejestru, które są wymagane na komputerach użytkowników końcowych wykrycie i załadowanie dodatków narzędzi VSTO.
+Opisuje klucze rejestru, które są wymagane na komputerach użytkowników końcowych w celu odnalezienia i załadowania dodatków narzędzi VSTO.
 
-[Przegląd właściwości niestandardowego dokumentu](../vsto/custom-document-properties-overview.md)
+[Przegląd właściwości dokumentu niestandardowego](../vsto/custom-document-properties-overview.md)
 
-W tym artykule wyjaśniono, jak działają niestandardowe właściwości dokumentu w dostosowaniach na poziomie dokumentu.
+Wyjaśnia, jak właściwości dokumentu niestandardowego działają w dostosowaniu na poziomie dokumentu.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-[Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
-Wprowadzenie do korzystania z Microsoft Office jest to platforma do tworzenia rozwiązań biznesowych.
+Zawiera wprowadzenie do korzystania z Microsoft Office jako platformy do tworzenia rozwiązań dla firm.
 
-[Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Wprowadzenie &#40;do programowania pakietu Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
-Zawiera łącza do informacji na temat konfigurowania komputera do utworzenia pakietu Office solutions, jak rozpocząć tworzenie rozwiązań i co zmieniło się od wcześniejszych wersji narzędzi Office developer Tools w programie Visual Studio.
+Zawiera łącza do informacji na temat konfigurowania komputera deweloperskiego do tworzenia rozwiązań pakietu Office, sposobu rozpoczęcia tworzenia rozwiązań oraz zmiany od wcześniejszych wersji narzędzi deweloperskich pakietu Office w programie Visual Studio.
 
 [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
 
-Zawiera łącza do informacji na temat tworzenia rozwiązań dla pakietu Office.
+Zawiera łącza do informacji na temat tworzenia rozwiązań pakietu Office.
 
-[Informacje ogólne &#40;programowanie Office w Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Ogólne informacje &#40;na temat programowania pakietu Office w programie Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
-Zawiera łącza do informacji o użytkowniku elementy interfejsu w projektach pakietu Office, aplikacje i manifesty wdrożenia dla projektów pakietu Office i interfejsy API w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+Zawiera łącza do informacji dotyczących elementów interfejsu użytkownika w projektach pakietu Office, manifestach aplikacji i wdrożenia dla projektów pakietu Office oraz interfejsów API [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]w programie.

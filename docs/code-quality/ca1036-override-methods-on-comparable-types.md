@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d08644ede6b9b28496cff585624ea37858afd49
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a4e04e1afdbecdc9c333ea43a52bff3123d448a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842288"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547622"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Przesłaniaj metody porównywalnych typów
 
@@ -28,28 +28,28 @@ ms.locfileid: "65842288"
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ implementuje <xref:System.IComparable?displayProperty=fullName> interfejsu i nie powoduje zastąpienia <xref:System.Object.Equals%2A?displayProperty=fullName> lub przeciążaj operator charakterystyczny dla równości, nierówności, mniejsze-niż, mniejsze niż-niż. Reguła nie raportuje naruszenie, jeśli typ dziedziczy implementacji interfejsu.
+Typ implementuje <xref:System.IComparable?displayProperty=fullName> interfejs i nie przesłania <xref:System.Object.Equals%2A?displayProperty=fullName> ani nie przeciąża operatora specyficznego dla języka pod kątem równości, nierówności, mniejszej niż lub większej niż. Zasada nie zgłasza naruszenia, jeśli typ dziedziczy tylko implementację interfejsu.
 
-Domyślnie ta reguła przegląda tylko typy publiczne i chronione, ale jest to [konfigurowalne](#configurability).
+Domyślnie ta reguła sprawdza tylko typy publiczne i chronione, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Typy, które definiują niestandardowej kolejności sortowania implementować <xref:System.IComparable> interfejsu. <xref:System.IComparable.CompareTo%2A> Metoda zwraca wartość całkowitą, która wskazuje właściwy porządek sortowania dla dwóch wystąpień tego typu. Ta reguła umożliwia określenie typów, które porządek sortowania. Ustawienie kolejności sortowania oznacza, że zwykłe znaczenia równości, nierówności, mniej-niż i większa-niż nie mają zastosowania. Gdy dostarczać implementację <xref:System.IComparable>, zazwyczaj należy także Przesłoń <xref:System.Object.Equals%2A> tak, aby zwraca wartości, które są zgodne z <xref:System.IComparable.CompareTo%2A>. Jeśli zastąpisz <xref:System.Object.Equals%2A> z kodowaniem są w języku, który obsługuje przeciążenia operatorów, należy również podać operatorów, które są zgodne z <xref:System.Object.Equals%2A>.
+Typy, które definiują niestandardowy porządek sortowania, <xref:System.IComparable> implementują interfejs. <xref:System.IComparable.CompareTo%2A> Metoda zwraca liczbę całkowitą, która wskazuje poprawną kolejność sortowania dla dwóch wystąpień typu. Ta reguła identyfikuje typy, które ustawiają kolejność sortowania. Ustawienie kolejności sortowania oznacza, że zwykłe znaczenie, nierówne, mniejsze niż i większe niż nie są stosowane. Po wprowadzeniu implementacji programu <xref:System.IComparable>, należy również przesłonić <xref:System.Object.Equals%2A> , aby zwracała wartości, które są spójne z <xref:System.IComparable.CompareTo%2A>. W przypadku zastąpienia <xref:System.Object.Equals%2A> i kodowania w języku, który obsługuje przeciążenia operatorów, należy również dostarczyć operatory, które są spójne z. <xref:System.Object.Equals%2A>
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy zastąpić <xref:System.Object.Equals%2A>. Jeśli język programowania obsługuje przeładowania operatora, należy podać następujące operatory:
+Aby naprawić naruszenie tej reguły, Przesłoń <xref:System.Object.Equals%2A>. Jeśli język programowania obsługuje przeciążanie operatora, należy podać następujące operatory:
 
-- op_equality —
-- op_inequality —
+- op_Equality
+- op_Inequality
 - op_LessThan
-- op_greaterthan —
+- op_GreaterThan
 
-W języku C# tokenów, które są używane do reprezentowania tych operatorów są następujące:
+W C#programie tokeny służące do reprezentowania tych operatorów są następujące:
 
 ```csharp
 ==
@@ -60,25 +60,25 @@ W języku C# tokenów, które są używane do reprezentowania tych operatorów s
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne ostrzeżenia reguły CA1036, gdy naruszenia przyczyną jest Brak operatorów i język programowania nie obsługuje przeładowania operatora, jak w przypadku za pomocą Visual Basic. Jeśli okaże się, że implementacja operatorów nie ma sensu w kontekście swojej aplikacji, jest również bezpiecznie Pomijaj ostrzeżeń dla tej reguły, gdy zostanie wyzwolony go na operatory porównania niż op_equality —. Jednak zawsze powinien przesłonić op_equality — i == — operator w razie przesłonięcia <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+Można bezpiecznie pominąć ostrzeżenie z reguły CA1036, gdy naruszenie jest spowodowane przez brakujące operatory, a język programowania nie obsługuje przeciążania operatora, tak jak w przypadku Visual Basic. Jeśli określisz, że implementacja operatorów nie ma sensu w kontekście aplikacji, można także bezpiecznie pominąć ostrzeżenie z tej reguły, gdy zostanie ona wykorzystana w przypadku operatorów równości innych niż op_Equality. Należy jednak zawsze przesłonić op_Equality i operator = = w przypadku przesłonięcia <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
-## <a name="configurability"></a>Konfigurowalne
+## <a name="configurability"></a>Określając
 
-Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+Jeśli uruchamiasz tę regułę z [analizatorów FxCop](install-fxcop-analyzers.md) (a nie ze starszą analizą), możesz skonfigurować, które części bazy kodu mają uruchamiać tę regułę, na podstawie ich dostępności. Na przykład aby określić, że reguła powinna być uruchamiana tylko względem powierzchni niepublicznego interfejsu API, Dodaj następującą parę klucz-wartość do pliku editorconfig w projekcie:
 
 ```ini
 dotnet_code_quality.ca1036.api_surface = private, internal
 ```
 
-Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [Konfigurowanie analizatorów FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="examples"></a>Przykłady
 
-Poniższy kod zawiera typ, który implementuje prawidłowo <xref:System.IComparable>. Komentarze w kodzie zidentyfikować metody, które spełniają różne reguły that are related to <xref:System.Object.Equals%2A> i <xref:System.IComparable> interfejsu.
+Poniższy kod zawiera typ, który jest poprawnie zaimplementowany <xref:System.IComparable>. Komentarze do <xref:System.Object.Equals%2A> kodu identyfikują metody, które spełniają różne reguły, które są związane <xref:System.IComparable> z i interfejsem.
 
 [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
-Poniższy kod aplikacji sprawdza zachowanie <xref:System.IComparable> implementacji, pokazaną wcześniej.
+Poniższy kod aplikacji testuje zachowanie <xref:System.IComparable> implementacji, która była pokazana wcześniej.
 
 [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 

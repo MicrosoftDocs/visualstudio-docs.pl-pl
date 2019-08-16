@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604869"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551059"
 ---
 # <a name="fxcop-rule-port-status"></a>Stan portu reguły FxCop
 
-Jeśli wcześniej użyto statycznej analizy kodu w poprzedniej wersji programu Visual Studio, możesz zastanawiać się, które z tych reguł są dostępne w bieżącej implementacji jako [analizatory FxCop](install-fxcop-analyzers.md). Ta strona zawiera listę reguł, które są portami, a także te, które nie zostały przełączone i czy istnieją plany portów.
+Jeśli wcześniej użyto statycznej analizy kodu w programie Visual Studio, możesz zastanawiać się, które z tych reguł są dostępne w bieżącej implementacji jako [analizatory FxCop](install-fxcop-analyzers.md). Ta strona zawiera listę reguł, które są portami, a także te, które nie zostały przełączone i czy istnieją plany portów.
 
 ## <a name="ported-rules"></a>Przeniesione reguły
 
@@ -208,7 +208,7 @@ Zestaw reguł, które nie zostały przełączone do [analizatorów FxCop](instal
 
 ### <a name="rules-that-may-be-ported"></a>Reguły, które mogą być przewoźny
 
-Następujące reguły analizy kodu statycznego FxCop nie zostały jeszcze zaimplementowane jako analizatory, ale nadal mogą być. Może to być spowodowane zablokowaniem przyczyny technicznej lub po prostu, że reguła ma niższy priorytet. Aby uzyskać więcej informacji o stanie przenoszenia poszczególnych reguł, kliknij link w kolumnie **Śledzenie problemów** .
+Następujące reguły FxCop starszej wersji nie zostały jeszcze zaimplementowane jako analizatory, ale nadal mogą być. Może to być spowodowane zablokowaniem przyczyny technicznej lub po prostu, że reguła ma niższy priorytet. Aby uzyskać więcej informacji o stanie przenoszenia poszczególnych reguł, kliknij link w kolumnie **Śledzenie problemów** .
 
 Identyfikator reguły | Problem ze śledzeniem
 --- | ---
@@ -271,7 +271,7 @@ Identyfikator reguły | Problem ze śledzeniem
 
 ### <a name="deprecated-rules"></a>Przestarzałe reguły
 
-Następujące reguły analizy kodu statycznego FxCop są przestarzałe i nie zostaną zaimplementowane jako analizatory. Aby uzyskać więcej informacji, możesz wyszukiwać według identyfikatora reguły (na przykład **CA1009**) na [stronie problemów](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)z usługą GitHub dla analizatorów Roslyn.
+Następujące reguły FxCop starszej wersji są przestarzałe i nie zostaną zaimplementowane jako analizatory. Aby uzyskać więcej informacji, możesz wyszukiwać według identyfikatora reguły (na przykład **CA1009**) na [stronie problemów](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)z usługą GitHub dla analizatorów Roslyn.
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

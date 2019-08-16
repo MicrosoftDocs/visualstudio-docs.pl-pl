@@ -1,6 +1,6 @@
 ---
 title: Tworzenie rozwiązań pakietu Office
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,89 +26,88 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440339"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551844"
 ---
 # <a name="build-office-solutions"></a>Tworzenie rozwiązań pakietu Office
-  Ogólnie rzecz biorąc kompilowanie i debugowanie projektów pakietu Office jest taka sama jak kompilowania i debugowania innych rodzajów projektów w programie Visual Studio, takich jak Windows Forms. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [skompilować i utworzyć w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+  Ogólnie rzecz biorąc, kompilowanie i Debugowanie projektów pakietu Office jest takie samo jak Kompilowanie i debugowanie innych typów projektów w programie Visual Studio, takich jak Windows Forms. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [Kompilowanie i kompilowanie w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
-> [!NOTE]
-> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="project-output-for-office-projects"></a>Dane wyjściowe projektu dla projektów pakietu Office
- Lokalizacja danych wyjściowych dla projektów pakietu Office jest *projectname*\bin\release lub *projectname*\bin\debug. Nie można przeprowadzić kompilacji do katalogu wdrażania.
+ Lokalizacją wyjściową dla projektów pakietu Office jest *ProjectName*\bin\Release lub *ProjectName*\bin\debug. Nie można skompilować do katalogu wdrożenia.
 
-### <a name="document-level-projects"></a>Projektów na poziomie dokumentu
- Podczas tworzenia projektów dokumentów w danych wyjściowych projektu obejmuje następujące elementy:
+### <a name="document-level-projects"></a>Projekty na poziomie dokumentu
+ Podczas kompilowania projektu na poziomie dokumentu w danych wyjściowych projektu zawarte są następujące elementy:
 
-- Kopię dokumentu projektu.
+- Kopia dokumentu projektu.
 
-- Zestaw projektu i wszystkie zestawy referencyjne, które mają ich **Kopiuj lokalnie** właściwością **true**.
+- Zestaw projektu i wszystkie zestawy, do których istnieją odwołania, których właściwość **copy Local** ma ustawioną **wartość true**.
 
-- Manifest aplikacji, który ma rozszerzenie nazwy pliku *.manifest*. Aby uzyskać więcej informacji, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+- Manifest aplikacji, który ma rozszerzenie nazwy pliku *. manifest*. Aby uzyskać więcej informacji, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
-- Manifest wdrożenia, który ma rozszerzenie nazwy pliku *.vsto*. Aby uzyskać więcej informacji, zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).
+- Manifest wdrożenia, który ma rozszerzenie nazwy pliku *VSTO*. Aby uzyskać więcej informacji, zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).
 
-- Bazę danych programu (*PDB*) pliku.
+- Plik bazy danych programu (*PDB*).
 
 > [!NOTE]
-> W przypadku tworzenia rozwiązania poziomu dokumentu do lokalizacji zdalnej, zamiast komputera lokalnego, należy dodać w pełni kwalifikowaną ścieżkę do listy zaufanych lokalizacji w Centrum zaufania w aplikacji. Aby uzyskać więcej informacji, zobacz sekcję o nazwie udzielanie zaufania do dokumentów w [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
+> Jeśli tworzysz rozwiązanie na poziomie dokumentu do lokalizacji zdalnej, a nie na komputerze lokalnym, Dodaj w pełni kwalifikowaną ścieżkę do listy zaufanych lokalizacji w centrum zaufania aplikacji. Aby uzyskać więcej informacji, zobacz sekcję o nazwie przyznawania zaufania do dokumentów w [bezpiecznych rozwiązaniach pakietu Office](../vsto/securing-office-solutions.md).
 
-### <a name="application-level-projects"></a>Projektów na poziomie aplikacji
- Podczas tworzenia dodatku narzędzi VSTO dla programów project w danych wyjściowych projektu obejmuje następujące elementy:
+### <a name="application-level-projects"></a>Projekty na poziomie aplikacji
+ Podczas kompilowania projektu dodatku VSTO następujące elementy są zawarte w danych wyjściowych projektu:
 
-- Zestaw projektu i wszystkie zestawy referencyjne, które mają ich **Kopiuj lokalnie** właściwością **true**.
+- Zestaw projektu i wszystkie zestawy, do których istnieją odwołania, których właściwość **copy Local** ma ustawioną **wartość true**.
 
-- Manifest aplikacji, który ma rozszerzenie nazwy pliku *.manifest*. Aby uzyskać więcej informacji, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+- Manifest aplikacji, który ma rozszerzenie nazwy pliku *. manifest*. Aby uzyskać więcej informacji, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
-- Manifest wdrożenia, który ma rozszerzenie nazwy pliku *.vsto*. Aby uzyskać więcej informacji, zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).
+- Manifest wdrożenia, który ma rozszerzenie nazwy pliku *VSTO*. Aby uzyskać więcej informacji, zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).
 
-- Bazę danych programu (*PDB*) w pliku zestawu projektu.
+- Plik bazy danych programu (*PDB*) dla zestawu projektu.
 
-  Proces kompilacji w projektach dodatku narzędzi VSTO tworzy również zestaw wpisów rejestru na komputerze deweloperskim, które są wymagane do załadowania dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
+  Proces kompilacji dla projektów dodatków VSTO tworzy również zestaw wpisów rejestru na komputerze deweloperskim, który jest wymagany do załadowania dodatku VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
-  W przypadku tworzenia projektu dodatku narzędzi VSTO dla programu Outlook zawierający regionów formularzy w procesie kompilacji dodaje następujące dodatkowe informacje do rejestru:
+  Jeśli kompilujesz projekt dodatku VSTO programu Outlook zawierający regiony formularzy, proces kompilacji dodaje do rejestru następujące informacje dodatkowe:
 
-- Klucz dla każdej klasy wiadomości, który jest skojarzony z co najmniej jeden region formularza.
+- Klucz dla każdej klasy komunikatów, która jest skojarzona z co najmniej jednym regionem formularza.
 
-- Wpis dla każdego regionu formularza i skojarzoną wartość, która reprezentuje nazwę dodatku narzędzi VSTO dla programu Outlook.
+- Wpis dla każdego regionu formularza i skojarzona wartość, która reprezentuje nazwę dodatku narzędzi VSTO dla programu Outlook.
 
-  Program Outlook musi tych informacji, aby załadować regionów formularza.
+  Program Outlook potrzebuje tych informacji do załadowania regionów formularza.
 
-## <a name="referenced-assemblies"></a>przywoływanych zestawach
- Możesz odwoływać się zestawów (w tym projekty bibliotek klas) z projektu kompilowanie rozwiązań pakietu Office. Co przywoływany zestaw ma właściwość o nazwie **Kopiuj lokalnie**. **Kopia lokalna** wskazuje, czy zestaw jest kopiowany do katalogu wyjściowego. Domyślnie jest ustawiona **true**. Co przywoływany zestaw, który ma **Kopiuj lokalnie** równa **true** jest kopiowany do katalogu wyjściowego.
+## <a name="referenced-assemblies"></a>Przywoływane zestawy
+ Można odwoływać się do zestawów (łącznie z projektami biblioteki klas) z projektu tworzenia rozwiązań pakietu Office. Każdy przywoływany zestaw ma właściwość o nazwie **copy Local**. **Copy Local** wskazuje, czy zestaw jest kopiowany do katalogu wyjściowego. Domyślnie jest ustawiona **wartość true**. Każdy przywoływany zestaw, który ma **kopię lokalną** ustawioną na **wartość true** , jest kopiowany do katalogu wyjściowego.
 
 ## <a name="security-during-the-build-process"></a>Zabezpieczenia w procesie kompilacji
- Program Visual Studio automatycznie konfiguruje ustawienia zabezpieczeń na komputerze deweloperskim udzielenia zaufania rozwiązaniu podczas procesu kompilacji. Dzięki temu rozwiązaniu była uruchamiana podczas jej debugowania.
+ Program Visual Studio automatycznie skonfiguruje ustawienia zabezpieczeń na komputerze deweloperskim, aby przyznać zaufanie do rozwiązania podczas procesu kompilacji. Pozwala to na uruchamianie rozwiązania podczas jego debugowania.
 
- Projekty pakietu Office za pomocą certyfikatów zweryfikować wydawcy. Program Visual Studio automatycznie tworzy tymczasowy certyfikat, aby zidentyfikować rozwiązań pakietu Office i konfiguruje na komputerze deweloperskim ufać certyfikatowi tymczasowych.
+ Projekty pakietu Office używają certyfikatów do zweryfikowania wydawcy. Program Visual Studio automatycznie tworzy tymczasowy certyfikat do identyfikowania rozwiązań pakietu Office i konfiguruje komputer deweloperski, aby ufać certyfikatowi tymczasowemu.
 
- Aby uzyskać więcej informacji, zobacz [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
+ Aby uzyskać więcej informacji, zobacz [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md).
 
-### <a name="network-projects"></a>Projekty sieci
- Jeśli lokalizacja zestawu lub dokumentu znajduje się w udziale sieciowym, aktualizacji zasady zabezpieczeń lokalnych (na poziomie użytkownika) nie jest wystarczająco, aby umożliwić uruchomienie rozwiązania. Administrator musi udzielić pełnego zaufania na poziomie komputera do zestawów i dokumenty, które są w udziale sieciowym, zanim rozwiązanie będzie uruchamiany. Aby uzyskać więcej informacji o sposobie ustawiania zasad zabezpieczeń, zobacz [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
+### <a name="network-projects"></a>Projekty sieciowe
+ Jeśli lokalizacja zestawu lub dokumentu znajduje się w udziale sieciowym, aktualizacja zasad zabezpieczeń lokalnych (na poziomie użytkownika) nie jest wystarczająca, aby można było uruchomić rozwiązanie. Przed uruchomieniem rozwiązania administrator musi udzielić pełnemu zaufania na poziomie komputera do zestawów i dokumentów znajdujących się w udziale sieciowym. Aby uzyskać więcej informacji na temat sposobu ustawiania zasad zabezpieczeń, zobacz [Secure Solutions Office](../vsto/securing-office-solutions.md).
 
- Dla projektów na poziomie dokumentu należy dodać w pełni kwalifikowaną lokalizację dokumentu do listy zaufanych folderów pakietu Office. Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
+ W przypadku projektów na poziomie dokumentu należy również dodać w pełni kwalifikowaną lokalizację dokumentu do listy zaufanych folderów pakietu Office. Aby uzyskać więcej informacji, zobacz [przyznawanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
 
-## <a name="change-the-platform-target"></a>Zmiana platformy docelowej
- Domyślnie platforma docelowa dla projektów pakietu Office jest **dowolny Procesor**. Zazwyczaj nie należy zmieniać tego ustawienia. Rozwiązań pakietu Office, które są tworzone za pomocą **dowolny Procesor** platformę docelową, ustawienia uruchamiania w 32-bitowych i 64-bitowych wersjach pakietu Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+## <a name="change-the-platform-target"></a>Zmień obiekt docelowy platformy
+ Domyślnie platforma docelowa platformy dla projektów pakietu Office to **dowolny procesor**. Zazwyczaj nie należy zmieniać tego ustawienia. Rozwiązania pakietu Office utworzone przy użyciu dowolnego ustawienia docelowej platformy **procesora CPU** działają w 32-bitowych i 64-bitowych wersjach firmy Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
- Platforma docelowa x64 należy ustawić tylko wtedy, gdy tworzysz rozwiązanie, które będzie uruchamiane tylko w 64-bitowe wersje programu Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], i rozwiązania wywołań natywnych interfejsów API w 64-bitowych. Aby uzyskać więcej informacji o zmienianiu ustawienie obiektu docelowego platformy, zobacz [jak: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).
+ Należy ustawić platformę docelową na x64 tylko wtedy, gdy tworzysz rozwiązanie, które będzie działać tylko w 64-bitowych wersjach firmy [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] Microsoft [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]lub, a rozwiązanie wywoła natywne, 64-bitowe interfejsy API. Aby uzyskać więcej informacji na temat zmiany ustawienia obiektu docelowego platformy [, zobacz How to: Skonfiguruj projekty na platformach](../ide/how-to-configure-projects-to-target-platforms.md)docelowych.
 
- Jeśli ustawisz x64 platformę docelową rozwiązania nie będzie działać w 32-bitowe wersje systemu Windows lub pakietu Office. X64 platformy docelowej wymaga rozwiązanie do uruchamiania w procesie 64-bitowym.
+ Jeśli ustawisz platformę docelową x64, rozwiązanie nie będzie działać w 32-bitowych wersjach systemu Windows lub Office. Obiekt docelowy platformy x64 wymaga, aby rozwiązanie było uruchamiane w procesie 64-bitowym.
 
-## <a name="use-the-clean-command"></a>Użyj polecenia Wyczyść
- Usuwanie plików projektu utworzonych na komputerze deweloperskim, można użyć **czysty** polecenie **kompilacji** menu w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. **Czysty** polecenie usuwa wszystkie pliki w lokalizacji wyjściowej kompilacji. Dla projektów na poziomie aplikacji **czysty** polecenie również usuwa wpisy z rejestru, które są tworzone przez proces kompilacji.
+## <a name="use-the-clean-command"></a>Użyj czystego polecenia
+ Aby usunąć skompilowane pliki projektu z komputera deweloperskiego, można użyć polecenia **Oczyść** w menu **kompilacja** w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Polecenie **Clean** usuwa wszystkie pliki w lokalizacji danych wyjściowych kompilacji. W przypadku projektów na poziomie aplikacji **czyste** polecenie usuwa również wpisy rejestru, które są tworzone przez proces kompilacji.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md)|Przedstawia informacje o zagadnieniach dotyczących debugowanie projektów pakietu Office.|
+|[Debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md)|Przedstawia problemy związane z debugowaniem projektów pakietu Office.|
 |[Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Pokazuje, jak utworzyć podstawowe dostosowanie poziomu dokumentu dla programu Excel.|
-|[Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Opisuje sposób ponownie włączyć dodatek narzędzi VSTO dla programów trudne lub nietrwałe wyłączono.|
-|[Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera łącza do informacji o tworzeniu rozwiązań pakietu Office i informacji na temat roli zestawy w rozwiązaniu.|
+|[Instrukcje: Ponownie włącz dodatek narzędzi VSTO, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|W tym artykule opisano, jak ponownie włączyć dodatek narzędzi VSTO, który jest trwały lub elastyczny.|
+|[Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera łącza do informacji na temat tworzenia rozwiązań pakietu Office oraz o roli zestawów w rozwiązaniu.|
