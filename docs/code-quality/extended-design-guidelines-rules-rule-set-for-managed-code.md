@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975901"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585077"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Rozszerzone wytyczne dotyczące reguł projektowania dla zarządzanego kodu
 
-Reguły wskazówek dotyczących projektowania firmy Microsoft rozszerzony zestaw reguł rozszerza reguły wskazówek dotyczących podstawowy projekt, aby zmaksymalizować użytecznością i utrzymaniem problemy, które są zgłaszane. Dodatkowy nacisk jest kładziony na wskazówki dotyczące nazewnictwa. Należy rozważyć dołączenie tego zestawu, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymusić najwyższych standardów tworzenia kodu, która jest łatwa w obsłudze reguł.
+Zestaw reguł dla rozszerzonych wytycznych projektowych firmy Microsoft jest rozszerzany na podstawowe reguły dotyczące wytycznych projektowych w celu zmaksymalizowania raportowanych problemów z użytecznością i konserwacją. Dodatkowy nacisk jest umieszczany w wytycznych dotyczących nazewnictwa. Należy rozważyć uwzględnienie tego zestawu reguł, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymusić najwyższe standardy do pisania kodu, który jest łatwy w obsłudze.
 
-Rozszerzone reguły wskazówek dotyczących projektowania obejmuje wszystkie podstawowe reguły wskazówek dotyczących projektowania firmy Microsoft. Podstawowe reguły wskazówek dotyczących projektowania obejmuje wszystkie reguły Zalecana minimalna firmy Microsoft. Aby uzyskać więcej informacji, zobacz [zestaw reguł podstawowych reguł wytycznych projektowych dla kodu zarządzanego](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) i [zarządzany zalecany zestaw reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Rozszerzone reguły wskazówek dotyczących projektowania obejmują wszystkie reguły w podstawowych zestawach [reguł dla wytycznych projektowych](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , które obejmują reguły z zestawu reguł [zarządzanych zalecanych reguł](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
-W poniższej tabeli opisano wszystkie reguły w zestawie reguł rozszerzone reguły wskazówek dotyczących projektowania się do firmy Microsoft.
+W poniższej tabeli opisano wszystkie reguły w zestawie reguł dla rozszerzonych wytycznych dotyczących projektowania firmy Microsoft.
 
 |Reguła|Opis|
 |----------|-----------------|

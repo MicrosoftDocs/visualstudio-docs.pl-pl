@@ -8,15 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2060c9c2db3dd3d60efb07b1e23c445a47d54b5d
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823546"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585060"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Zarządzane zalecane Reguły dla zarządzanego kodu
-Można użyć programu Microsoft zarządzany zalecany zestaw reguł skoncentrować się na najważniejszych problemów w kodzie zarządzanym, w tym potencjalnych luk w zabezpieczeniach, awarii aplikacji i inne istotne błędy logiki i projektowania. Należy dołączyć ten zestaw reguł w każdego niestandardowego zestawu reguł tworzonego dla projektów.
+
+Użyj zestawu reguł zalecanych przez firmę Microsoft, aby skoncentrować się na najważniejszych problemach w zarządzanym kodzie, takich jak potencjalne luki w zabezpieczeniach, awarie aplikacji oraz inne ważne błędy logiki i projektowania. Ten zestaw reguł zawiera wszystkie reguły w zestawie reguł dotyczących [zarządzanych minimalnych reguł](managed-minimum-rules-rule-set-for-managed-code.md) .
+
+Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzonego dla projektów.
 
 |Reguła|Opis|
 |----------|-----------------|

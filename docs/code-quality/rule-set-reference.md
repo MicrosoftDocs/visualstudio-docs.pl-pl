@@ -9,32 +9,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d746756bdbb6af5fa9d8758ffb984907e371b119
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550831"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585241"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Odwołanie zestawu reguł analizy kodu
 
-Podczas konfigurowania starszej analizy dla projektów kodu zarządzanego w programie Visual Studio można wybrać jedną z listy wbudowanych *zestawów reguł*. Można użyć jednego z tych zestawów reguł wbudowanych lub możesz [Dostosuj zestaw reguł](../code-quality/how-to-create-a-custom-rule-set.md) zgodnie z wymaganiami projektu.
-
-W tematach w tej sekcji opisano wbudowane reguły zestawów i zasady (lub ostrzeżenia) zawierają.
+Podczas konfigurowania starszej analizy dla projektów kodu zarządzanego w programie Visual Studio można wybrać jedną z listy wbudowanych *zestawów reguł*. Niektóre reguły są zawarte w więcej niż jednym z wbudowanych zestawów reguł, na przykład zestaw reguł prawidłowości podstawowych reguł poprawności zawiera reguły, które znajdują się w zestawie reguł zarządzanych zalecanych reguł.
 
 > [!NOTE]
 > Zestawy reguł w tej sekcji odnoszą się do starszej analizy. Aby uzyskać informacje o zestawach reguł dostępnych dla pakietów analizatora kodu, zobacz [Korzystanie z zestawów reguł z analizami kodu](analyzer-rule-sets.md).
 
-- [Zestaw reguł Wszystkie reguły](all-rules-rule-set.md)
-- [Zestaw podstawowych reguł poprawności dla kodu zarządzanego](basic-correctness-rules-rule-set-for-managed-code.md)
-- [Zestaw podstawowych reguł wytycznych projektowych dla kodu zarządzanego](basic-design-guideline-rules-rule-set-for-managed-code.md)
-- [Zestaw rozszerzonych reguł poprawności dla kodu zarządzanego](extended-correctness-rules-rule-set-for-managed-code.md)
-- [Zestaw rozszerzonych reguł wytycznych projektowych dla kodu zarządzanego](extended-design-guidelines-rules-rule-set-for-managed-code.md)
-- [Zestaw reguł globalizacji dla kodu zarządzanego](globalization-rules-rule-set-for-managed-code.md)
-- [Zarządzany minimalny zestaw reguł dla kodu zarządzanego](managed-minimum-rules-rule-set-for-managed-code.md)
-- [Zarządzany zalecany zestaw reguł dla kodu zarządzanego](managed-recommended-rules-rule-set-for-managed-code.md)
-- [Mieszany minimalny zestaw reguł](mixed-minimum-rules-rule-set.md)
-- [Mieszany zalecany zestaw reguł](mixed-recommended-rules-rule-set.md)
-- [Natywny minimalny zestaw reguł](native-minimum-rules-rule-set.md)
-- [Natywny zalecany zestaw reguł](native-recommended-rules-rule-set.md)
-- [Zestaw reguł zabezpieczeń dla kodu zarządzanego](security-rules-rule-set-for-managed-code.md)
+Można użyć jednego z tych zestawów reguł wbudowanych lub możesz [Dostosuj zestaw reguł](../code-quality/how-to-create-a-custom-rule-set.md) zgodnie z wymaganiami projektu. W przypadku dołączania wielu zestawów reguł, które zawierają tę samą regułę w zestawie reguł niestandardowych, ta reguła występuje tylko raz w zestawie reguł niestandardowych.
+
+W tematach w tej sekcji opisano wbudowane reguły zestawów i zasady (lub ostrzeżenia) zawierają.
+
+| Zestaw reguł | Uwzględnione reguły |
+| - | - |
+| [Wszystkie reguły](all-rules-rule-set.md) | Zawiera wszystkie dostępne reguły zarządzane C++ i |
+| [Podstawowe reguły poprawności](basic-correctness-rules-rule-set-for-managed-code.md) | Obejmuje zarządzane zalecane reguły oraz reguły dla błędów logiki i użycia struktury |
+| [Rozszerzone reguły poprawności](extended-correctness-rules-rule-set-for-managed-code.md) | Zawiera podstawowe reguły poprawności (w tym zarządzane zalecane reguły) oraz więcej reguł dla błędów logiki i użycia struktury |
+| [Podstawowe reguły dotyczące projektowania](basic-design-guideline-rules-rule-set-for-managed-code.md) | Obejmuje zarządzane zalecane reguły oraz reguły zapewniające, że można łatwo odczytywać, zrozumieć i konserwować kod |
+| [Reguły rozszerzonej wytyczne dotyczące projektowania](extended-design-guidelines-rules-rule-set-for-managed-code.md) | Zawiera podstawowe reguły dotyczące projektowania (w tym zarządzane zalecane reguły) oraz bardziej szczegółowe reguły, które koncentrują się na nazewnictwie |
+| [Reguły globalizacji](globalization-rules-rule-set-for-managed-code.md) | Zawiera reguły dotyczące problemów z globalizacją |
+| [Zarządzane reguły minimalne](managed-minimum-rules-rule-set-for-managed-code.md) | Zawiera cztery reguły dotyczące krytycznych problemów z kodem zarządzanym |
+| [Zarządzane zalecane reguły](managed-recommended-rules-rule-set-for-managed-code.md) | Obejmuje zarządzane reguły minimalne oraz więcej reguł dotyczących krytycznych problemów z kodem zarządzanym |
+| [Mieszane reguły minimalne](mixed-minimum-rules-rule-set.md) | Zawiera reguły dotyczące krytycznych problemów w C++ kodzie dla środowiska CLR |
+| [Mieszane zalecane reguły](mixed-recommended-rules-rule-set.md) | Zawiera mieszane reguły minimalne oraz więcej reguł dotyczących krytycznych problemów w C++ kodzie dla środowiska CLR |
+| [Natywne reguły minimalne](native-minimum-rules-rule-set.md) | Zawiera reguły dotyczące krytycznych problemów w kodzie natywnym |
+| [Zalecane reguły natywne](native-recommended-rules-rule-set.md) | Zawiera natywne reguły minimalne i więcej reguł dotyczących krytycznych problemów w kodzie natywnym |
+| [Reguły zabezpieczeń](security-rules-rule-set-for-managed-code.md) | Zawiera reguły dotyczące znajdowania luk w zabezpieczeniach |

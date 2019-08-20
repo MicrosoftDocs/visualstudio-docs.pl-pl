@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547941"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585138"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Zestawy reguł dla pakietów analizatora
 
 Wstępnie zdefiniowane zestawy reguł są zawarte w niektórych pakietach analizatora NuGet. Na przykład zestawy reguł, które są dołączone do pakietu analizatora NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (począwszy od wersji 2.6.2), włączają lub wyłączają reguły oparte na ich kategorii, takie jak zabezpieczenia, nazewnictwo lub wydajność. Używanie zestawów reguł ułatwia szybkie wyświetlanie tylko naruszeń reguł, które odnoszą się do określonej kategorii reguł.
 
-Jeśli migrujesz ze starszej analizy "FxCop" do analizy kodu opartej na .NET Compiler Platform, te zestawy reguł umożliwiają dalsze korzystanie z tych samych konfiguracji reguł, które zostały wcześniej użyte.
+Jeśli migrujesz ze starszej analizy "FxCop" do analizy kodu na podstawie .NET Compiler Platform, te zestawy reguł umożliwiają kontynuowanie korzystania z podobnych konfiguracji reguł do [tych, które zostały wcześniej użyte](rule-set-reference.md).
 
 ## <a name="use-analyzer-package-rule-sets"></a>Użyj zestawów reguł pakietu analizatora
 
@@ -58,7 +58,7 @@ Wstępnie zdefiniowane zestawy reguł analizatora obejmują trzy zestaw reguł, 
 
 Ponadto istnieją dwa zestawy reguł dla każdej kategorii reguł w pakiecie, takie jak wydajność lub zabezpieczenia. Jeden zestaw reguł włącza wszystkie reguły dla kategorii, a jeden zestaw reguł uwzględnia domyślne ważności i ustawienia włączania dla każdej reguły w kategorii.
 
-Pakiet analizatora NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) zawiera zestawy reguł dla następujących kategorii, które pasują do zestawów reguł dostępnych dla starszej analizy:
+Pakiet analizatora NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) zawiera zestawy reguł dla następujących kategorii:
 
 - projekt
 - dokumentacja

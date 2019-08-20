@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8280a60f1d265336d427079bdef6612b42ed4330
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68984194"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585332"
 ---
-# <a name="windows-forms-designer-overview"></a>Przegląd Projektant formularzy systemu Windows
+# <a name="windows-forms-designer-overview"></a>Projektant formularzy systemu Windows — omówienie
 
 Projektant formularzy systemu Windows w programie Visual Studio oferuje szybkie rozwiązanie programistyczne do tworzenia aplikacji opartych na Windows Forms. Projektant formularzy systemu Windows pozwala łatwo dodawać kontrolki do formularza, rozmieścić je i pisać kod dla swoich zdarzeń. Aby uzyskać więcej informacji na temat Windows Forms, zobacz [Windows Forms Omówienie](/dotnet/framework/winforms/windows-forms-overview).
 
@@ -39,7 +39,7 @@ Za pomocą projektanta można:
 
 - [Przegląd Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
 - [Kontrolki Windows Forms](/dotnet/framework/winforms/controls/)
-- [Ułatwienia dostępu dla formantów Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
 - [Dane wejściowe użytkownika w Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Powiązanie danych w Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Ulepszanie aplikacji Windows Forms](/dotnet/framework/winforms/advanced/)
+- <xref:System.Windows.Forms?displayProperty=fullName>Dokumentacja interfejsu API

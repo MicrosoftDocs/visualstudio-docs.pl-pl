@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e54a0957cb6b63c95c1cd914f7fc3eb72e581ac3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 64045221ad9200223264632d4bdbd33ff82d631f
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68984197"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585344"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Przewodnik: Wprowadzenie do Projektant formularzy systemu Windows
+# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Przewodnik: Wprowadzenie do Projektanta formularzy systemu Windows
 
 Projektant formularzy systemu Windows udostępnia wiele narzędzi do kompilowania aplikacji Windows Forms. W tym artykule przedstawiono sposób tworzenia aplikacji przy użyciu różnych narzędzi udostępnianych przez projektanta, w tym następujących zadań:
 
@@ -309,8 +309,10 @@ Aby użyć kontrolki DemoCalculator w aplikacji, należy ją umieścić w formul
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym artykule przedstawiono sposób konstruowania interfejsu użytkownika dla prostego kalkulatora. Aby kontynuować, można zwiększyć jej funkcjonalność przez implementację logiki kalkulatora. Lub przejdź do innego samouczka, w którym [tworzysz Podgląd obrazów przy użyciu Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
+W tym artykule przedstawiono sposób konstruowania interfejsu użytkownika dla prostego kalkulatora. Aby kontynuować, możesz przedłużyć jego funkcjonalność, implementując logikę kalkulatora, a następnie [publikując aplikację przy użyciu technologii ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Lub przejdź do innego samouczka, w którym [tworzysz Podgląd obrazów przy użyciu Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Kontrolki Windows Forms](/dotnet/framework/winforms/controls/)
 - [Ułatwienia dostępu dla formantów Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
+- [Publikowanie przy użyciu technologii ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

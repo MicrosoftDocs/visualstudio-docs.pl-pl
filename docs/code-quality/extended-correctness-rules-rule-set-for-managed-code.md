@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923995"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585108"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Rozszerzony zestaw reguł poprawności dla zarządzanego kodu
+
 Zestaw reguł poprawności rozszerzonej firmy Microsoft maksymalizuje błędy użycia logiki i struktury, które są raportowane przez analizę kodu. Dodatkowy nacisk jest umieszczany w określonych scenariuszach, takich jak współdziałanie COM i aplikacje mobilne. Należy rozważyć uwzględnienie tego zestawu reguł, jeśli jeden z tych scenariuszy ma zastosowanie do Twojego projektu lub aby znaleźć dodatkowe problemy w projekcie.
 
-Zestaw reguł poprawnego rozszerzenia Microsoft Extended zawiera reguły, które znajdują się w zestawie reguł poprawności programu Microsoft Basic. Podstawowe reguły poprawności obejmują reguły, które znajdują się w minimalnym zalecanym zestawie reguł firmy Microsoft. Aby uzyskać więcej informacji, zobacz [podstawowe reguły poprawności zestaw reguł dla kodu zarządzanego](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) i [zarządzane zalecane reguły zestawu reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Zestaw reguł poprawnego rozszerzenia Microsoft Extended zawiera reguły, które znajdują się w podstawowym zestawie reguł [poprawności](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) , który zawiera reguły, które znajdują się w zestawie reguł [zarządzanych zalecanych reguł](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
 W poniższej tabeli opisano wszystkie reguły w zestawie reguł poprawnych rozszerzonych firmy Microsoft.
 

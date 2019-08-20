@@ -8,15 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7bf9830e71abef04348307af4d841e7029afc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a83a9619084feb3346f5fe421530227a2cca7f9
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820601"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585294"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Zestaw reguł Mixed Minimum Rules
-Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problemów w projektach C++ obsługujących środowisko uruchomieniowe języka wspólnego, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji. Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów C++ obsługujących środowisko uruchomieniowe języka wspólnego.
+
+Mieszane reguły firmy Microsoft koncentrują się na najbardziej krytycznych problemach C++ w projektach, które obsługują środowisko uruchomieniowe języka wspólnego, w tym potencjalne luki w zabezpieczeniach i awarie aplikacji.
+
+Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzonego dla C++ projektów, które obsługują środowisko uruchomieniowe języka wspólnego.
 
 |Reguła|Opis|
 |----------|-----------------|
@@ -68,7 +71,7 @@ Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problem
 |[C6518](../code-quality/c6518.md)|Rozmiar obszaru do zapisu dla bufora bez możliwości zapisu|
 |[C6522](../code-quality/c6522.md)|Nieprawidłowy typ ciągu rozmiaru|
 |[C6525](../code-quality/c6525.md)|Nieosiągalna lokalizacja ciągu nieprawidłowy rozmiar|
-|[C6527](../code-quality/c6527.md)|Nieprawidłowa adnotacja: Właściwość "NeedsRelease" nie może być używana dla wartości typu void|
+|[C6527](../code-quality/c6527.md)|Nieprawidłowa Adnotacja: Właściwość "NeedsRelease" nie może być użyta dla wartości typu void|
 |[C6530](../code-quality/c6530.md)|Nierozpoznany styl ciągu formatu|
 |[C6540](../code-quality/c6540.md)|Użycie adnotacji atrybutów dla tej funkcji spowoduje unieważnienie wszystkich istniejących adnotacji __declspec|
 |[C6551](../code-quality/c6551.md)|Nieprawidłowa specyfikacja rozmiaru: nie można przeanalizować wyrażenia|
@@ -83,13 +86,13 @@ Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problem
 |[C28182](../code-quality/c28182.md)|Wyłuskanie wskaźnika o wartości NULL. Wskaźnik zawiera tę samą wartość NULL, tak jak innego wskaźnika.|
 |[C28202](../code-quality/c28202.md)|Niedozwolone odwołanie do niestatycznego elementu członkowskiego|
 |[C28203](../code-quality/c28203.md)|Niejednoznaczne odwołanie do składowej klasy.|
-|[C28205](../code-quality/c28205.md)|\_Powodzenie\_ lub \_na\_błąd\_ używane w niedozwolonym kontekście|
+|[C28205](../code-quality/c28205.md)|\_Powodzenie\_ lub \_wprzypadku\_niepowodzenia\_ używane w niedozwolonym kontekście|
 |[C28206](../code-quality/c28206.md)|Lewy argument operacji wskazuje na strukturę, użyj opcji "->"|
 |[C28207](../code-quality/c28207.md)|Lewy operand jest strukturą, użyj "."|
 |[C28210](../code-quality/c28210.md)|Adnotacje dla kontekstu __on_failure nie może być w jawnym kontekście pre|
 |[C28211](../code-quality/c28211.md)|Oczekiwano nazwy kontekstu statycznego dla SAL_context|
 |[C28212](../code-quality/c28212.md)|Oczekiwano wyrażenia wskaźnikowego dla adnotacji|
-|[C28213](../code-quality/c28213.md)|\_Użyj\_decl\_adnotacje\_ adnotacja musi być używana do odwołania, bez żadnych modyfikacji, wcześniejszej deklaracji.|
+|[C28213](../code-quality/c28213.md)|Adnotacja\_USEdecl\_adnotacji musi być używana do odwoływania się, bez modyfikacji, wcześniejszej deklaracji. \_\_|
 |[C28214](../code-quality/c28214.md)|Nazwy parametrów atrybutów muszą być p1... p9|
 |[C28215](../code-quality/c28215.md)|Nie można zastosować elementu typefix parametr, który ma już typefix|
 |[C28216](../code-quality/c28216.md)|Adnotacja checkReturn dotyczy tylko warunków końcowych dla określonego parametru funkcji.|
@@ -131,7 +134,7 @@ Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problem
 |[C28267](../code-quality/c28267.md)|Znaleziono błąd składni w adnotacjach adnotacji w funkcji.|
 |[C28272](../code-quality/c28272.md)|Adnotacja dla funkcji, parametr podczas badania jest niespójny z deklaracją funkcji|
 |[C28273](../code-quality/c28273.md)|W przypadku funkcji są niespójne z deklaracją funkcji|
-|[C28275](../code-quality/c28275.md)|Parametr \_— makro\_wartość\_ ma wartość null|
+|[C28275](../code-quality/c28275.md)|Parametr do \_wartości makra\_ma\_ wartość null.|
 |[C28279](../code-quality/c28279.md)|Dla symbolu znaleziono "begin" bez pasującego "end"|
 |[C28280](../code-quality/c28280.md)|Dla symbolu element "end" znaleziono bez pasującego "begin"|
 |[C28282](../code-quality/c28282.md)|Ciągi formatu muszą znajdować się w warunkach wstępnych|
@@ -139,7 +142,7 @@ Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problem
 |[C28286](../code-quality/c28286.md)|Dla funkcji, błąd składni w pobliżu końca|
 |[C28287](../code-quality/c28287.md)|Dla funkcji, błąd składni w \_na\_adnotacji () (Nierozpoznana nazwa parametru)|
 |[C28288](../code-quality/c28288.md)|Dla funkcji, błąd składni w \_na\_adnotacji () (Nieprawidłowa nazwa parametru)|
-|[C28289](../code-quality/c28289.md)|Dla funkcji: Elementy ReadableTo lub WritableTo nie miał elementu limit-spec jako parametru|
+|[C28289](../code-quality/c28289.md)|Dla funkcji: ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru|
 |[C28290](../code-quality/c28290.md)|Adnotacja dla funkcji zawierających więcej obiektów zewnętrznych niż rzeczywista liczba parametrów|
 |[C28291](../code-quality/c28291.md)|Post null/notnull na poziomie deref 0 jest bez znaczenia dla funkcji.|
 |[C28300](../code-quality/c28300.md)|Argumenty operacji wyrażenia o niezgodnych typach dla operatora|

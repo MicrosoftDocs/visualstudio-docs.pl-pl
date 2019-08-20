@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919543"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585088"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Podstawowe reguły zasad projektowania dla zarządzanego kodu
+
 Za pomocą zestawu reguł podstawowych wytycznych dotyczących projektowania firmy Microsoft można skupić się na ułatwianiu zrozumienia i użycia kodu. Ten zestaw reguł należy dołączyć, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymusić najlepsze rozwiązania dla kodu, który jest łatwy do utrzymania.
 
-Podstawowe reguły wytycznych dotyczących projektowania obejmują wszystkie reguły w zestawie reguł minimalnych recommeded firmy Microsoft. Aby zapoznać się z listą minimalnych reguł, zobacz [zarządzane zalecane reguły zestawu reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Podstawowe reguły wytycznych dotyczących projektowania obejmują wszystkie reguły w zestawie reguł [zalecanych przez zarządzane reguły](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 W poniższej tabeli opisano wszystkie reguły w zestawie reguł podstawowych wytycznych dotyczących projektowania firmy Microsoft.
 
