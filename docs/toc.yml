@@ -414,6 +414,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 'Nieużywane przypisania wartości, zmienne i parametry'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Zawijanie i wyrównywanie łańcuchów wywołań
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Opakowywanie, wcięcia i wyrównywanie parametrów'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Przewodnik: generowanie kodu na podstawie użycia'
