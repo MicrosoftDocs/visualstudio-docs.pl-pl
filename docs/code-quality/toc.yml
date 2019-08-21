@@ -162,31 +162,31 @@
           items:
             - name: Omówienie
               href: rule-set-reference.md
-            - name: Zestaw reguł All Rules
+            - name: Wszystkie reguły
               href: all-rules-rule-set.md
-            - name: Podstawowy zestaw reguł poprawności dla zarządzanego kodu
+            - name: Podstawowe reguły poprawności
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Podstawowe reguły zasad projektowania dla zarządzanego kodu
+            - name: Podstawowe reguły wskazówek dotyczących projektowania
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Rozszerzony zestaw reguł poprawności dla zarządzanego kodu
+            - name: Rozszerzone reguły poprawności
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Rozszerzone wytyczne dotyczące reguł projektowania dla zarządzanego kodu
+            - name: Rozszerzone reguły wskazówek dotyczących projektowania
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Zestaw reguł globalizacji dla zarządzanego kodu
+            - name: Reguły globalizacji
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Zarządzany minimalny zestaw reguł dla kodu zarządzanego
+            - name: Minimalne reguły kodu zarządzanego
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Zarządzane zalecane Reguły dla zarządzanego kodu
+            - name: Zalecane reguły kodu zarządzanego
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Zestaw reguł Mixed Minimum Rules
+            - name: Minimalne reguły kodu mieszanego
               href: mixed-minimum-rules-rule-set.md
-            - name: Zestaw reguł Mixed Recommended Rules
+            - name: Zalecane reguły kodu mieszanego
               href: mixed-recommended-rules-rule-set.md
-            - name: Zestaw reguł Native Minimum Rules
+            - name: Minimalne reguły kodu natywnego
               href: native-minimum-rules-rule-set.md
-            - name: Zestaw reguł macierzystych reguł zalecanych
+            - name: Zalecane reguły kodu natywnego
               href: native-recommended-rules-rule-set.md
-            - name: Zestaw reguł zabezpieczeń dla zarządzanego kodu
+            - name: Reguły zabezpieczeń
               href: security-rules-rule-set-for-managed-code.md
         - name: Pomijanie ostrzeżeń
           href: in-source-suppression-overview.md
