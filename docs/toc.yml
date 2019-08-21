@@ -350,8 +350,6 @@
                     - name: Omówienie
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
-                    - name: Dodawanie kontroli pod kątem wartości null dla wszystkich parametrów
-                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Zmiana sygnatury metody
                       href: ide/reference/change-method-signature.md
                     - name: Konwertowanie typu anonimowego na klasę
