@@ -107,7 +107,7 @@
       href: disable-dpi-awareness.md
     - name: Tematy pomocy
       items:
-        - name: Interfejs API System.Windows.Forms
+        - name: Interfejs API System.Windows.Forms >>
           href: /dotnet/api/system.windows.forms
     - name: Samouczki
       items:
