@@ -12,49 +12,50 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 97ecddfa317eb522a8ce29a53482df5581912dad
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66747627"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891242"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
-Ze względów bezpieczeństwa należy uruchomić program Visual Studio jako zwykły użytkownik zawsze, gdy jest to możliwe.
+Ze względów bezpieczeństwa należy uruchomić program Visual Studio jako zwykły użytkownik, jeśli jest to możliwe.
 
 > [!WARNING]
 > Należy również pamiętać, aby nie kompilować, uruchamiać lub debugować żadnego rozwiązania Visual Studio, które nie pochodzi od zaufanej osoby lub z zaufanej lokalizacji.
 
-Możesz tworzyć prawie wszystko w środowisku IDE programu Visual Studio jako zwykły użytkownik. Musisz mieć uprawnienia administratora w celu wykonania następujących zadań:
+Niemal wszystko to można zrobić w środowisku IDE programu Visual Studio jako zwykły użytkownik. Musisz mieć uprawnienia administratora, aby wykonać następujące zadania:
 
 |Obszar|Zadanie|Więcej informacji|
 |----------|----------| - |
 |Instalacja|Zainstaluj program Visual Studio.|[Instalowanie programu Visual Studio](../install/install-visual-studio.md)|
-||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości pomocy.|[Instalowanie i zarządzania lokalną zawartością Pomocy](../help-viewer/install-manage-local-content.md)|
-|Przybornik|Dodawanie klasycznych formantów COM do **przybornika**.|[Przybornik](../ide/reference/toolbox.md)|
-|Kompilowanie|Użyj zdarzenia mające miejsce po kompilacji, które rejestrują składnik.|[Omówienie niestandardowych kroków kompilacji i zdarzenia kompilacji](/cpp/build/understanding-custom-build-steps-and-build-events)|
-||Obejmują etapu rejestracji podczas kompilowania projektów języka C++.||
-|Debugowanie|Debugowanie aplikacji, które działają z podwyższonymi uprawnieniami.|[Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)|
-||Debugowanie aplikacji, które działają innego użytkownika konta, takich jak witryny sieci Web platformy ASP.NET.|[Debugowanie aplikacji ASP.NET i AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
-||Debugowanie w strefie dla aplikacji przeglądarki XAML (XBAP).|[Host WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
-||Korzystanie z emulatora do debugowania projektów usług w chmurze dla systemu Microsoft Azure.|[Debugowanie usługi w chmurze w programie Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
-||Konfigurowanie zapory dla zdalnego debugowania.|[Debugowanie zdalne](../debugger/remote-debugging.md)|
-|Narzędzia wydajności|Profilowanie aplikacji.|[Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)|
-|wdrażania|Wdrażanie aplikacji sieci web do programu Internet Information Services (IIS) na komputerze lokalnym.|[Wdrażanie aplikacji sieci web ASP.NET przy użyciu programu Visual Studio](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
+||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości pomocy.|[Instalowanie zawartości pomocy lokalnej i zarządzanie nią](../help-viewer/install-manage-local-content.md)|
+|Przybornik|Dodawanie klasycznych kontrolekcom do przybornika.|[Przybornik](../ide/reference/toolbox.md)|
+|Kompilowanie|Użyj zdarzeń po kompilacji, które rejestrują składnik.|[Zrozumienie niestandardowych kroków kompilacji i zdarzeń kompilacji](/cpp/build/understanding-custom-build-steps-and-build-events)|
+||Uwzględnij etap rejestracji podczas kompilowania C++ projektów.||
+|Debugowanie|Debuguj aplikacje, które działają z podniesionymi uprawnieniami.|[Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)|
+||Debuguj aplikacje, które działają na innym koncie użytkownika, takich jak ASP.NET websites.|[Debuguj aplikacje ASP.NET i AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
+||Debugowanie w strefie dla aplikacji przeglądarki XAML (XBAP).|[Host WPF (PresentationHost. exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
+||Użyj emulatora do debugowania projektów usług w chmurze dla Microsoft Azure.|[Debugowanie usługi w chmurze w programie Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
+||Skonfiguruj zaporę do zdalnego debugowania.|[Debugowanie zdalne](../debugger/remote-debugging.md)|
+|Narzędzia wydajności|Dołączanie do aplikacji z podwyższonym poziomem uprawnień.|[Początkujący Przewodnik dotyczący profilowania wydajności](../profiling/beginners-guide-to-performance-profiling.md)|
+||Użyj profilera procesora GPU.|[Profilowanie procesora GPU](../profiling/gpu-usage.md)|
+|wdrażania|Wdróż aplikację sieci Web do Internet Information Services (IIS) na komputerze lokalnym.|[Wdrażanie aplikacji sieci Web ASP.NET przy użyciu programu Visual Studio](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Uruchom program Visual Studio jako administrator
 
-Jeśli musisz uruchomić program Visual Studio jako administrator, wykonaj następujące kroki, aby otworzyć środowiska IDE:
+Jeśli musisz uruchomić program Visual Studio jako administrator, wykonaj następujące kroki, aby otworzyć środowisko IDE:
 
 > [!NOTE]
 > Te instrukcje dotyczą systemu Windows 10. Są one podobne do innych wersji systemu Windows.
 
 ::: moniker range="vs-2017"
 
-1. Otwórz **Start** menu, a następnie przewiń do programu Visual Studio 2017.
+1. Otwórz menu **Start** i przewiń do programu Visual Studio 2017.
 
-1. Z menu kliknij prawym przyciskiem myszy lub kontekst **programu Visual Studio 2017**, wybierz opcję **więcej** > **Uruchom jako administrator**.
+1. Z menu kontekstowego kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2017**wybierz polecenie **więcej** > **Uruchom jako administrator**.
 
    Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 
@@ -62,15 +63,15 @@ Jeśli musisz uruchomić program Visual Studio jako administrator, wykonaj nast�
 
 ::: moniker range=">=vs-2019"
 
-1. Otwórz **Start** menu, a następnie przewiń do programu Visual Studio 2019 r.
+1. Otwórz menu **Start** i przewiń do programu Visual Studio 2019.
 
-1. Z menu kliknij prawym przyciskiem myszy lub kontekst **Visual Studio 2019**, wybierz opcję **więcej** > **Uruchom jako administrator**.
+1. Z menu kontekstowego kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2019**wybierz polecenie **więcej** > **Uruchom jako administrator**.
 
    Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 
 ::: moniker-end
 
-Możesz również zmodyfikować skrót aplikacji, aby zawsze uruchamiane z uprawnieniami administracyjnymi.
+Możesz również zmodyfikować skrót aplikacji, aby zawsze był uruchamiany z uprawnieniami administracyjnymi.
 
 ## <a name="see-also"></a>Zobacz także
 

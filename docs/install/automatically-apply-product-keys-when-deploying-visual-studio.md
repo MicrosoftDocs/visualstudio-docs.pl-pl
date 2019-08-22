@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1cdc3d8516271cd397c1d22118ca21a92f78cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dabaf63e205d3e76432767743e323c90ed389846
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974218"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891305"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio
 
@@ -33,7 +33,7 @@ Zainstalowana wersja programu Visual Studio za pomocą klucza produktu można ak
 
 ::: moniker range="vs-2019"
 
-Zainstalowana wersja programu Visual Studio za pomocą klucza produktu można aktywować za pomocą `StorePID.exe` narzędzia na komputerach docelowych, w trybie dyskretnym. `StorePID.exe` to narzędzie program, instaluje się za pomocą programu Visual Studio 2019 r w następującej lokalizacji domyślnej: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE`
+Zainstalowana wersja programu Visual Studio za pomocą klucza produktu można aktywować za pomocą `StorePID.exe` narzędzia na komputerach docelowych, w trybie dyskretnym. `StorePID.exe`Program narzędziowy instalowany z programem Visual Studio 2019 w następującej lokalizacji domyślnej: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE`
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ W poniższym przykładzie przedstawiono polecenie stosowania licencji dla progra
 
 ::: moniker range="vs-2019"
 
-W poniższym przykładzie pokazano wiersza polecenia dotyczące stosowania licencji programu Visual Studio 2019 r Enterprise, która ma MPC 09260, klucz produktu `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`, założono domyślna lokalizacja instalacji:
+Poniższy przykład przedstawia wiersz polecenia służący do zastosowania licencji programu Visual Studio 2019 Enterprise, która ma MPC 09260, klucz `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`produktu i przyjmuje domyślną lokalizację instalacji:
 
 ```cmd
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 09260
@@ -100,6 +100,9 @@ Jeśli `StorePID.exe` pomyślnie dotyczy klucz produktu, funkcja zwraca `%ERRORL
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+> [!NOTE]
+> W celu rozwiązywania problemów z wystąpieniami wirtualnymi Uruchom polecenie *C:\Program Files \<(\>x86) \Microsoft Visual Studio w wersji \Common7\IDE\DDConfigCA.exe*.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950339"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891267"
 ---
 # <a name="template-parameters"></a>Parametry szablonu
 
@@ -31,7 +31,7 @@ Parametry szablonu są deklarowane w formacie $*parametru*$. Na przykład:
 
 - $guid5$
 
-### <a name="enable-parameter-substitution-in-templates"></a>Włączyć Podstawienie parametru w szablonach
+### <a name="enable-parameter-substitution-in-templates"></a>Włącz podstawianie parametrów w szablonach
 
 1. W *.vstemplate* pliku szablonu, zlokalizuj `ProjectItem` element, który odpowiada elementowi, dla którego chcesz włączyć podmianę parametrów.
 
@@ -45,20 +45,21 @@ Parametry szablonu są deklarowane w formacie $*parametru*$. Na przykład:
 
 ## <a name="reserved-template-parameters"></a>Zastrzeżone parametry szablonu
 
-Poniższa tabela zawiera listę zastrzeżonych parametrów szablonu, które mogą być używane przez dowolny szablon:
+W poniższej tabeli wymieniono zastrzeżone parametry szablonu, które mogą być używane przez dowolny szablon:
 
 |Parametr|Opis|
 |---------------|-----------------|
 |clrversion|Aktualna wersja środowiska uruchomieniowego języka wspólnego (CLR).|
-|ext_*|Dodaj `ext_` długości prefiksu do żadnych parametrów, aby odwołać się do zmiennych szablonu nadrzędnego. Na przykład `ext_safeprojectname`.|
+|ext_*|`ext_` Dodaj prefiks do dowolnego parametru, aby odwołać się do zmiennych szablonu nadrzędnego. Na przykład `ext_safeprojectname`.|
 |Identyfikator GUID [1 – 10]|Identyfikator GUID służący do zamienienia identyfikatora GUID w pliku projektu. Można określić maksymalnie 10 unikatowych identyfikatorów GUID (na przykład `guid1`).|
 |Nazwa elementu|Nazwa pliku, w którym jest używany parametr.|
 |NazwaKomputera|Bieżąca nazwa komputera (na przykład Computer01).|
 |projectname|Nazwa podana przez użytkownika podczas tworzenia projektu.|
 |registeredorganization|Wartość klucza rejestru z HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Główna przestrzeń nazw bieżącego projektu. Ten parametr dotyczy tylko szablonów elementów.|
-|safeitemname|Taki sam jak `itemname` , ale z wszystkich niebezpiecznych znaków i usunięte spacje.|
-|safeprojectname|Nazwa podana przez użytkownika, gdy projekt został utworzony, ale wszystkich niebezpiecznych znaków i usunięte spacje.|
+|safeitemname|Analogicznie `itemname` jak w przypadku wszystkich niebezpiecznych znaków i spacji zastępowanych znakami podkreślenia.|
+|safeitemrootname|Analogicznie `safeitemname`jak.|
+|safeprojectname|Nazwa podana przez użytkownika podczas tworzenia projektu, ale z usuniętymi wszystkimi niebezpiecznymi znakami i spacjami.|
 |czas|Bieżący czas w formacie DD/MM/RRRR 00:00:00.|
 |SpecificSolutionName|Nazwa rozwiązania. W razie wybrania opcji „Utwórz katalog rozwiązania”, `SpecificSolutionName` ma nazwę rozwiązania. Jeżeli „Utwórz katalog rozwiązania” nie jest zaznaczone, `SpecificSolutionName` jest pusta.|
 |USERDOMAIN|Bieżąca domena użytkownika.|
@@ -90,7 +91,7 @@ W poniższym przykładzie określono, że nazwa pliku wykonywalnego używa nazwy
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Przykład: Użyj bezpieczna Nazwa projektu dla nazwy przestrzeni nazw
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Przykład: Użyj bezpiecznej nazwy projektu dla nazwy przestrzeni nazw
 
 Aby użyć bezpieczna Nazwa projektu dla przestrzeni nazw w pliku klasy C#, należy użyć następującej składni:
 
@@ -120,5 +121,5 @@ W *.vstemplate* pliku szablonu projektu, obejmują `ReplaceParameters="true"` at
 
 - [Instrukcje: Zastępowanie parametrów w szablonie](how-to-substitute-parameters-in-a-template.md)
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
-- [Instrukcje: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
+- [Instrukcje: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md)
 - [Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)

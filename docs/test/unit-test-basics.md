@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490720"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891341"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -209,7 +209,7 @@ Aby uzyskać więcej informacji na temat struktur testów jednostek pochodzącyc
 
 ## <a name="set-timeouts-for-unit-tests"></a>Ustawianie limitów czasu dla testów jednostkowych
 
-Aby ustawić limit czasu dla metody testowej poszczególnych:
+Jeśli używasz platformy MSTest Framework, możesz użyć <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> , aby ustawić limit czasu dla indywidualnej metody testowej:
 
 ```csharp
 [TestMethod]

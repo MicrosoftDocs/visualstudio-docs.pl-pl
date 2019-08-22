@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d31f76a448933bb3809cd609ebd355c8e0a04b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 8b71d7040df5f971f320b9bb9999f9cacd0425e7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605951"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891278"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Opcje — okno dialogowe: Ogólne projekty i \> rozwiązania
 
@@ -70,11 +70,28 @@ Po wybraniu tego pola program Visual Studio wyświetla komunikat potwierdzenia p
 
 ## <a name="reopen-documents-on-solution-load"></a>Otwieraj ponownie dokumenty po załadowaniu rozwiązania
 
-**Wprowadzone w programie Visual Studio 2017 w wersji 15,8**
-
 Po wybraniu dokumenty, które zostały pozostawione, otwierają się przed zamknięciem rozwiązania, są automatycznie otwierane po otwarciu rozwiązania.
 
 Ponowne otwieranie niektórych typów plików lub projektantów może opóźnić ładowanie rozwiązania. Usuń zaznaczenie tej opcji, aby [zwiększyć wydajność ładowania rozwiązań](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) , jeśli nie chcesz przywrócić poprzedniego kontekstu rozwiązania.
+
+::: moniker range=">=vs-2019"
+
+## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Przywróć stan hierarchii projektu Eksplorator rozwiązań podczas ładowania rozwiązania
+
+Po wybraniu przywraca stan węzłów w Eksplorator rozwiązań w odniesieniu do tego, czy były rozwinięte czy zwinięte podczas ostatniego otwarcia rozwiązania. Wyłącz tę opcję, aby skrócić czas ładowania rozwiązania dla dużych rozwiązań.
+
+Jeśli wyłączysz tę opcję, prostym sposobem przejścia do aktywnego dokumentu w Eksplorator rozwiązań jest wybranie opcji **Synchronizuj z aktywnym dokumentem** na pasku narzędzi **Eksplorator rozwiązań** .
+
+![Synchronizuj z aktywnym dokumentem w Eksplorator rozwiązań](media/sync-active-document.png)
+
+## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Otwieranie plików projektu w stylu zestawu SDK przy użyciu dwukrotnego kliknięcia lub klawisza ENTER
+
+Gdy ta opcja jest zaznaczona, kliknij dwukrotnie węzeł projektu w Eksplorator rozwiązań lub wybierz węzeł projektu, a następnie naciśnij klawisz **Enter**, plik projektu (na przykład \*plik. csproj) zostanie otwarty jako XML w edytorze. Jest to prosty sposób na edytowanie pliku XML projektu bez konieczności najpierw zwalniania projektu, a następnie otwierania pliku projektu do edycji.
+
+> [!TIP]
+> Po zaznaczeniu tej opcji kliknij dwukrotnie węzeł projektu w Eksplorator rozwiązań lub wybierz go, a naciśnięcie klawisza **Enter** ma wpływ na rozwijanie lub zwijanie węzła.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 

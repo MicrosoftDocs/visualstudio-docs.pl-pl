@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2302
 - EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize
-ms.openlocfilehash: c833a60d98cbfd7eea3e3b673c7e60c6047a4ae9
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 1d7c87921a226b8918bfaa79fda6de85d710baa4
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083895"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891200"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize
 
@@ -27,38 +27,38 @@ ms.locfileid: "65083895"
 |TypeName|EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize|
 |CheckId|CA2302|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
 
-A <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> metody deserializacji został o nazwie lub do których odwołuje się i <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> właściwość może mieć wartości null.
+Metoda deserializacji została wywołana lub ma odwołanie <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> , a właściwość może mieć wartość null. <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>
 
 ## <a name="rule-description"></a>Opis reguły
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Ta reguła umożliwia znalezienie <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> metody deserializacji wywołuje lub odwołuje się kiedy <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> może mieć wartości null. Jeśli chcesz uniemożliwić wszelkie deserializacja przy użyciu <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> niezależnie od tego <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> właściwości, wyłącz tę regułę i [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)i włączyć regułę [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
+Ta zasada umożliwia <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> znalezienie wywołań metod deserializacji lub odwołań, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> gdy może mieć wartość null. Jeśli chcesz nie zezwalać na deserializacja z <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> niezależnie <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> od właściwości, wyłącz tę regułę i [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md), a następnie Włącz regułę [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-- Jeśli to możliwe, Użyj bezpiecznego serializator, i **nie można określić dowolny typ do deserializacji osobie atakującej**. Niektóre bezpieczniejsze serializatory obejmują:
+- Jeśli to możliwe, zamiast tego Użyj bezpiecznego serializatora i **nie Zezwalaj osobie atakującej na określenie dowolnego typu do deserializacji**. Niektóre bezpieczniejsze serializacji obejmują:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Nigdy nie używaj <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Jeśli musisz użyć typu program rozpoznawania nazw, ograniczyć typy po deserializacji do oczekiwanej listy.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>— Nigdy nie <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>używaj. Jeśli musisz użyć mechanizmu rozpoznawania typów, Ogranicz typy deserializowane do oczekiwanej listy.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET — Użyj TypeNameHandling.None. Jeśli musisz użyć innej wartości dla TypeNameHandling, ograniczyć po deserializacji typów do oczekiwanej listy przy użyciu niestandardowych ISerializationBinder.
-  - Protocol Buffers
-- Należy odporne serializowanych danych. Po serializacji podpisać kryptograficznie serializowanych danych. Przed deserializacji należy zweryfikować podpisu kryptograficznego. Ochrona klucza kryptograficznego zostały ujawnione i projektowanie pod kątem wymiany kluczy.
-- Ograniczenia typów po deserializacji. Implementowanie niestandardowego <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Przed deserializacji za pomocą <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>ustaw <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> właściwości wystąpienia niestandardowego <xref:System.Runtime.Serialization.SerializationBinder>. W zgodnym z przesłoniętą <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metody, jeśli typ jest nieoczekiwana i zgłosić wyjątek.
-  - Upewnij się, że wszystkie ścieżki kodu <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> zestawu właściwości.
+  - Newtonsoft Json.NET — Użyj TypeNameHandling. None. Jeśli musisz użyć innej wartości dla TypeNameHandling, Ogranicz typy deserializowane do oczekiwanej listy za pomocą niestandardowego ISerializationBinder.
+  - Bufory protokołu
+- Przekształć dane serializowane. Po serializacji należy kryptograficznie podpisywać serializowane dane. Przed deserializacji Sprawdź poprawność podpisu kryptograficznego. Ochrona klucza kryptograficznego przed ujawnieniem i projektowaniem na potrzeby rotacji kluczy.
+- Ogranicz typy deserializowane. Implementowanie niestandardowego <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Przed deserializacji z <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>należy <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> ustawić właściwość na wystąpienie niestandardowe <xref:System.Runtime.Serialization.SerializationBinder>. W przypadku przesłoniętej <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metody, jeśli typ jest nieoczekiwany, Zgłoś wyjątek, aby zatrzymać deserializacji.
+  - Upewnij się, że wszystkie ścieżki kodu <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> mają ustawioną właściwość.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;
@@ -231,6 +231,6 @@ End Class
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA2300: Nie używaj niezabezpieczonych Deserializator elementu](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
+[CA2300: Nie używaj niezabezpieczonego deserializacji BinaryFormatter](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
 
-[CA2301: Nie wywołuj BinaryFormatter.Deserialize bez uprzedniego ustawienia BinaryFormatter.Binder](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)
+[CA2301: Nie wywołuj BinaryFormatter. deserializacji bez wcześniejszego ustawienia BinaryFormatter. Binder](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)

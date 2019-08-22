@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918170"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891338"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -96,7 +96,7 @@ Aby uruchomić testy jednostkowe po każdej kompilacji lokalnej, Otwórz ikonę 
 
 ## <a name="view-test-results"></a>Wyświetl wyniki testu
 
-Podczas przeprowadzania, zapisywania i ponownego przeprowadzania testów Test Explorer wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, **testy pominięte** i **nie uruchomione Testy**. Uruchom Podsumowanie testu w dolnej części Eksploratora testów jest wyświetlane w okienku szczegółów.
+Podczas przeprowadzania, zapisywania i ponownego przeprowadzania testów Test Explorer wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, **testy pominięte** i **nie uruchomione Testy**. W okienku szczegółów u dołu lub stronie Eksploratora testów jest wyświetlane podsumowanie przebiegu testu.
 
 ### <a name="view-test-details"></a>Wyświetl szczegóły testu
 
@@ -181,7 +181,7 @@ W środowisku testów jednostkowych firmy Microsoft dla zarządzanych aplikacji 
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Kategoria właściciela jest definiowana przez strukturę testów jednostkowych i wymaga podania wartości ciągu właściciela.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Kategoria priorytetu jest definiowana przez strukturę testów jednostkowych i wymaga podania wartości całkowitej priorytetu.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Atrybut TestCategory umożliwia podanie kategorii bez wartości. Kategoria zdefiniowana przez atrybut TestCategory może być również kategorią atrybutu TestProperty.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Atrybut TestCategory umożliwia podanie kategorii bez wartości.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|Atrybut TestProperty umożliwia zdefiniowanie pary Category/wartość.|
 
 
@@ -215,7 +215,7 @@ Lista odtwarzania zostanie otwarta na nowej karcie programu Test Explorer. Może
 
 ![Lista odtwarzania zostanie otwarta na osobnej karcie Eksploratora testów](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Aby dodać testy do listy odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. Kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj do listy odtwarzania** > **Nowa lista odtwarzania**.
+**Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. Kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj do listy odtwarzania** > **Nowa lista odtwarzania**.
 
 **Aby otworzyć listę odtwarzania**, wybierz ikonę listy odtwarzania na pasku narzędzi programu Visual Studio i wybierz wcześniej zapisany plik listy odtwarzania z menu.
 ::: moniker-end
@@ -236,7 +236,7 @@ Kolumny można filtrować, sortować i zmieniać ich kolejność.
 
 * Aby zmienić kolejność kolumn, kliknij nagłówek kolumny i przeciągnij go w lewo lub w prawo.
 
-* Aby posortować kolumnę, kliknij nagłówek kolumny. Nie wszystkie kolumny mogą być sortowane.
+* Aby posortować kolumnę, kliknij nagłówek kolumny. Nie wszystkie kolumny mogą być sortowane. Możesz również sortować według pomocniczej kolumny, przytrzymując klawisz **SHIFT** i klikając nagłówek dodatkowej kolumny.
 
   ![Sortowanie kolumn](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
@@ -253,7 +253,7 @@ Aby odfiltrować według innych kryteriów:
 
 2. Wybierz nowe kryterium.
 
-3. Wprowadź wartość filtru między znakami cudzysłowu.
+3. Wprowadź wartość filtru między znakami cudzysłowu. Jeśli chcesz wyszukać dokładne dopasowanie w ciągu, a nie zawierającej dopasowania, użyj znaku równości (=) zamiast dwukropka (:).
 
 ::: moniker range="vs-2017"
 ![Filtruj testy w Eksploratorze testów](../test/media/ute_filtertestlist.png)
@@ -265,15 +265,28 @@ Aby odfiltrować według innych kryteriów:
 > [!NOTE]
 > Wyszukiwania są rozróżniane wielkości liter i pasują do określonego ciągu do dowolnej części wartości kryteriów.
 
+::: moniker range="vs-2017"
 |Kwalifikator|Opis|
 |-|-----------------|
 |**Cecha**|Wyszukuje dopasowania kategorii i wartości. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.|
 |**Project**|Wyszukuje dopasowania w nazwach projektów testowych.|
 |**Komunikat o błędzie**|Wyszukuje dopasowania w zdefiniowanych przez użytkownika komunikatach o błędach zwracanych przez nieudane potwierdzenia.|
 |**Ścieżka pliku**|Wyszukuje dopasowania w w pełni kwalifikowanych nazwach plików źródłowych testów.|
-|**W pełni kwalifikowana nazwa**|Wyszukuje dopasowania w w pełni kwalifikowanych nazwach plików przestrzeni nazw, klas i metod testowych.|
+|**W pełni kwalifikowana nazwa**|Przeszukuje w pełni kwalifikowaną nazwę testowanych przestrzeni nazw, klas i metod w celu dopasowania.|
 |**Output**|Wyszukuje komunikaty o błędach zdefiniowane przez użytkownika, które są zapisywane w standardowym wyjściu (stdout) lub w standardowym błędzie (stderr). Składnia służąca do określania komunikatów wyjściowych jest definiowana przez strukturę testów jednostkowych.|
 |**Wynik**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **Testy zakończone niepowodzeniem**, **pominięte testy**, **testy zakończone powodzeniem**.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Kwalifikator|Opis|
+|-|-----------------|
+|**State**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **Testy zakończone niepowodzeniem**, **pominięte testy**, **testy zakończone powodzeniem**.|
+|**Cech**|Wyszukuje dopasowania kategorii i wartości. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.|
+|**W pełni kwalifikowana nazwa**|Przeszukuje w pełni kwalifikowaną nazwę testowanych przestrzeni nazw, klas i metod w celu dopasowania.|
+|**Project**|Wyszukuje dopasowania w nazwach projektów testowych.|
+|**Struktura docelowa**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **Testy zakończone niepowodzeniem**, **pominięte testy**, **testy zakończone powodzeniem**.|
+|**Namespace**|Wyszukuje dopasowania w przestrzeniach nazw testów.|
+|**Class**|Wyszukuje dopasowania w nazwach klas testowych.|
+::: moniker-end
 
 Aby wykluczyć podzestaw wyników filtru, należy użyć następującej składni:
 
