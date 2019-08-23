@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461600"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976713"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji
 
@@ -36,18 +36,18 @@ Podpisywanie manifestów ClickOnce jest opcjonalne dla aplikacji opartych na pro
 Aby uzyskać informacje na temat tworzenia plików kluczy [, zobacz How to: Utwórz parę](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)kluczy publiczny-prywatny.
 
 > [!NOTE]
-> Program Visual Studio obsługuje tylko pliki kluczy wymiany informacji osobistych (PFX), które mają rozszerzenie *PFX* . Można jednak wybrać inne typy certyfikatów z magazynu certyfikatów systemu Windows bieżącego użytkownika, klikając **pozycję Wybierz ze sklepu** na stronie podpisywanie  właściwości projektu.
+> Program Visual Studio obsługuje tylko pliki kluczy wymiany informacji osobistych (PFX), które mają rozszerzenie *PFX* . Można jednak wybrać inne typy certyfikatów z magazynu certyfikatów systemu Windows bieżącego użytkownika, klikając **pozycję Wybierz ze sklepu** na stronie podpisywanie właściwości projektu.
 
 ## <a name="sign-using-a-certificate"></a>Logowanie przy użyciu certyfikatu
 
-1. Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Na karcie  podpisywanie wybierz pole wyboru Podpisz **manifesty ClickOnce** .
+1. Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Na karcie podpisywanie wybierz pole wyboru Podpisz **manifesty ClickOnce** .
 
 2. Kliknij przycisk **Wybierz ze sklepu** .
 
      Zostanie wyświetlone okno dialogowe **Wybierz certyfikat** i zostanie wyświetlona zawartość magazynu certyfikatów systemu Windows.
 
     > [!TIP]
-    > Jeśli klikniesz **pozycję kliknij tutaj, aby wyświetlić właściwości certyfikatu**, zostanie wyświetlone okno dialogowe **Szczegóły certyfikatu** . To okno dialogowe zawiera szczegółowe informacje o certyfikacie i zawiera dodatkowe opcje. Możesz kliknąć pozycję **Certyfikaty** , aby wyświetlić dodatkowe informacje pomocy.
+    > Jeśli klikniesz **pozycję kliknij tutaj, aby wyświetlić właściwości certyfikatu**, zostanie wyświetlone okno dialogowe **Szczegóły certyfikatu** . To okno dialogowe zawiera szczegółowe informacje o certyfikacie i opcjach dodatkowych. Kliknij pozycję **Certyfikaty** , aby wyświetlić dodatkowe informacje pomocy.
 
 3. Wybierz certyfikat, którego chcesz użyć do podpisania manifestów.
 
@@ -55,7 +55,7 @@ Aby uzyskać informacje na temat tworzenia plików kluczy [, zobacz How to: Utw�
 
 ## <a name="sign-using-an-existing-key-file"></a>Podpisz przy użyciu istniejącego pliku klucza
 
-1. Na stronie  podpisywanie wybierz pole wyboru Podpisz **manifesty ClickOnce** .
+1. Na stronie podpisywanie wybierz pole wyboru Podpisz **manifesty ClickOnce** .
 
 2. Kliknij przycisk **Wybierz z pliku** .
 
@@ -68,11 +68,14 @@ Aby uzyskać informacje na temat tworzenia plików kluczy [, zobacz How to: Utw�
 
      Pojawi się okno dialogowe **Wprowadź hasło, aby otworzyć plik** . (Jeśli plik *PFX* jest już przechowywany w magazynie certyfikatów systemu Windows lub nie jest chroniony hasłem, nie zostanie wyświetlony monit o wprowadzenie hasła).
 
-4. Wprowadź hasło, aby uzyskać dostęp do pliku klucza, a następnie naciśnij klawisz **Enter**.
+4. Wprowadź hasło, aby uzyskać dostęp do pliku klucza, a następnie wybierz klawisz **Enter**.
+
+> [!NOTE]
+> Plik *PFX* nie może zawierać informacji o łańcuchu certyfikatów. Jeśli tak się dzieje, wystąpi następujący błąd importowania: **Nie można znaleźć certyfikatu i klucza prywatnego do odszyfrowania**.
 
 ## <a name="sign-using-a-test-certificate"></a>Podpisywanie przy użyciu certyfikatu testowego
 
-1. Na stronie  podpisywanie wybierz pole wyboru Podpisz **manifesty ClickOnce** .
+1. Na stronie podpisywanie wybierz pole wyboru Podpisz **manifesty ClickOnce** .
 
 2. Aby utworzyć nowy certyfikat do testowania, kliknij przycisk **Utwórz certyfikat testowy** .
 
@@ -91,7 +94,7 @@ Domyślnie ClickOnce automatycznie generuje podpisane manifesty, chyba że co na
 
 1. Aby wygenerować niepodpisane manifesty zawierające wszystkie pliki w skrócie, należy najpierw opublikować aplikację ze podpisanymi manifestami. W związku z tym najpierw Podpisz manifesty ClickOnce, wykonując jedną z poprzednich procedur, a następnie Opublikuj aplikację.
 
-2. Na stronie  podpisywanie wyczyść pole wyboru Podpisz **manifesty ClickOnce** .
+2. Na stronie podpisywanie wyczyść pole wyboru Podpisz **manifesty ClickOnce** .
 
 3. Zresetuj wersję publikacji tak, aby była dostępna tylko jedna wersja aplikacji. Domyślnie program Visual Studio automatycznie zwiększa numer wersji publikacji przy każdym publikowaniu aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Ustaw wersję](../deployment/how-to-set-the-clickonce-publish-version.md)publikacji ClickOnce.
 
@@ -99,7 +102,7 @@ Domyślnie ClickOnce automatycznie generuje podpisane manifesty, chyba że co na
 
 ### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>Aby wygenerować niepodpisane manifesty i wykluczyć jeden lub więcej plików z wygenerowanego skrótu
 
-1. Na stronie  podpisywanie wyczyść pole wyboru Podpisz **manifesty ClickOnce** .
+1. Na stronie podpisywanie wyczyść pole wyboru Podpisz **manifesty ClickOnce** .
 
 2. Otwórz okno dialogowe **pliki aplikacji** i ustaw **skrót** do **wykluczenia** dla plików, które mają zostać wykluczone z wygenerowanego skrótu.
 
