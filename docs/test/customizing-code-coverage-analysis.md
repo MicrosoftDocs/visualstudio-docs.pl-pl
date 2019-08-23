@@ -1,18 +1,18 @@
 ---
 title: Dostosowywanie analizy pokrycia kodu
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490629"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976758"
 ---
 # <a name="customize-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 
@@ -34,26 +34,26 @@ Aby dostosować pokrycie kodu, wykonaj następujące kroki:
 
 ::: moniker range="vs-2017"
 
-3. Wybierz plik parametrów uruchomieniowych na **testu** menu, wybierz **ustawienia testu** > **zaznacz plik ustawień testu**. Aby określić plik parametrów uruchomieniowych do uruchamiania testów z wiersza polecenia lub w przepływie pracy kompilacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Wybierz plik parametrów uruchomieniowych na **testu** menu, wybierz **ustawienia testu** > **zaznacz plik ustawień testu**. Aby określić plik parametrów uruchomieniowych do uruchamiania testów z wiersza polecenia, zobacz [Konfigurowanie testów jednostkowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Aby wybrać plik parametrów uruchomieniowych, w **Eksploratorze testów**wybierz strzałkę na przycisku **Ustawienia** , a następnie wybierz pozycję **Wybierz plik ustawień**. Aby określić plik parametrów uruchomieniowych do uruchamiania testów z wiersza polecenia lub w przepływie pracy kompilacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Aby wybrać plik parametrów uruchomieniowych, w **Eksploratorze testów**wybierz strzałkę na przycisku **Ustawienia** , a następnie wybierz pozycję **Wybierz plik ustawień**. Aby określić plik parametrów uruchomieniowych do uruchamiania testów z wiersza polecenia, zobacz [Konfigurowanie testów jednostkowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
    Po wybraniu **Analizuj pokrycie kodu**, informacje o konfiguracji są odczytywane z pliku parametrów uruchomieniowych.
 
    > [!TIP]
-   > Poprzednie wyniki pokrycia kodu i kolorowanie kodu nie są automatycznie ukrywane podczas uruchamiania testów czy aktualizowania kodu.
+   > Wszystkie poprzednie wyniki pokrycia kodu i kolorowanie kodu nie są automatycznie ukrywane podczas uruchamiania testów lub aktualizowania kodu.
 
 ::: moniker range="vs-2017"
 
 Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wybierz plik w menu **Ustawienia testu** **testowego** > .
 
-![Menu Ustawienia testu przy użyciu pliku ustawień niestandardowych](../test/media/codecoverage-settingsfile.png)
+![Menu ustawień testu z niestandardowym plikiem ustawień w programie Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wy
 
 ### <a name="specify-symbol-search-paths"></a>Określ ścieżki wyszukiwania symboli
 
-Pokrycie kodu wymaga plików symboli ( *.pdb* plików) dla zestawów. Dla zestawów zbudowanych według rozwiązania pliki symboli są zwykle obecne obok plików binarnych, a pokrycie kodu działa automatycznie. Jednak w niektórych przypadkach można chcieć dołączyć odwołania do zestawów do analizy pokrycia kodu. W takich przypadkach *.pdb* plików mogą nie być w przylegającymi do plików binarnych ale można określić ścieżkę wyszukiwania symbolu w *.runsettings* pliku.
+Pokrycie kodu wymaga plików symboli ( *.pdb* plików) dla zestawów. W przypadku zestawów skompilowanych w ramach rozwiązania pliki symboli są zwykle obecne obok plików binarnych, a pokrycie kodu działa automatycznie. W niektórych przypadkach może zajść potrzeba dołączenia przywoływanych zestawów do analizy pokrycia kodu. W takich przypadkach *.pdb* plików mogą nie być w przylegającymi do plików binarnych ale można określić ścieżkę wyszukiwania symbolu w *.runsettings* pliku.
 
 ```xml
 <SymbolSearchPaths>
@@ -90,7 +90,7 @@ Określone zestawy można wykluczyć z analizy pokrycia kodu. Na przykład:
 </ModulePaths>
 ```
 
-Alternatywnie można określić zestawy, które powinny być włączone. Takie podejście ma tę wadę, że po dodaniu większej liczby zestawów do rozwiązania trzeba pamiętać, aby dodać je do listy:
+Alternatywnie można określić zestawy, które powinny być włączone. Takie podejście ma zwrot, że po dodaniu większej liczby zestawów do rozwiązania należy pamiętać, aby dodać je do listy:
 
 ```xml
 <ModulePaths>
@@ -101,17 +101,15 @@ Alternatywnie można określić zestawy, które powinny być włączone. Takie p
 </ModulePaths>
 ```
 
-Jeśli **Include** jest pusta, wówczas przetwarzanie pokrycia kodu obejmuje wszystkie zestawy, które są ładowane i dla których *.pdb* znajdują się pliki. Pokrycie kodu nie ma elementów, które odpowiadają klauzuli na liście **wykluczyć** listy.
-
-**Obejmują** jest przetwarzana przed **wykluczyć**.
+Jeśli **include** jest puste, przetwarzanie pokrycia kodu obejmuje wszystkie zestawy, które są ładowane i dla których można znaleźć pliki *. pdb* . Pokrycie kodu nie ma elementów, które odpowiadają klauzuli na liście **wykluczyć** listy. **Obejmują** jest przetwarzana przed **wykluczyć**.
 
 ### <a name="regular-expressions"></a>Wyrażenia regularne
 
-Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są takie same jak symbole wieloznaczne. W szczególności:
+Węzły include i Exclude używają wyrażeń regularnych, które nie są takie same jak symbole wieloznaczne. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Oto kilka przykładów:
 
 - **. \***  dopasowuje ciąg znaków
 
-- **\\.** odpowiada kropce ".")
+- **\\.** dopasowuje kropkę "."
 
 - **\\( \\)** odpowiada nawiasom ""
 
@@ -153,7 +151,10 @@ Na przykład:
 
 - **Źródło** — dopasowuje elementy według nazwy ścieżki pliku źródłowego, w której są zdefiniowane.
 
-- **Atrybut** — dopasowuje elementy, do których dołączono określony atrybut. Podaj pełną nazwę atrybutu, a zawierają "Atrybutu" na końcu nazwy.
+- **Atrybut** — dopasowuje elementy, do których dołączono określony atrybut. Określ pełną nazwę atrybutu, na przykład `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.
+
+  > [!TIP]
+  > Jeśli wykluczasz <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> atrybut, kod, który używa funkcji języka, `async`takich `await`jak `yield return`,,, i zaimplementowane właściwości, jest wykluczony z analizy pokrycia kodu. Aby wykluczyć faktycznie wygenerowany kod, należy wykluczyć <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> tylko atrybut.
 
 - **Funkcja** — dopasowuje procedury, funkcji lub metody w pełni kwalifikowanej nazwy. Aby dopasować nazwę funkcji, wyrażenie regularne musi odpowiadać w pełni kwalifikowanej nazwy funkcji, łącznie z przestrzeni nazw, nazwa klasy, nazwy metody i listą parametrów. Na przykład:
 
@@ -243,9 +244,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 

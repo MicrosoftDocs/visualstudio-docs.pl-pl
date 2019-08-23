@@ -1,5 +1,5 @@
 ---
-title: Synchronizacja ustawień
+title: Synchronizuj ustawienia
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
@@ -8,72 +8,72 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824812"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976727"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronizuj ustawienia programu Visual Studio na wielu komputerach
 
-Po zalogowaniu do programu Visual Studio na wielu komputerach przy użyciu tego samego konta personalizacji, ustawienia można synchronizować między komputerami.
+Po zalogowaniu się do programu Visual Studio na wielu komputerach przy użyciu tego samego konta personalizacji ustawienia można synchronizować między komputerami.
 
 ## <a name="synchronized-settings"></a>Zsynchronizowane ustawienia
 
-Domyślnie zsynchronizowane są następujące ustawienia:
+Domyślnie synchronizowane są następujące ustawienia:
 
-- Ustawienia środowiska deweloperskiego. Wybierz kolekcję ustawień przy pierwszym otwarciu programu Visual Studio, ale możesz zmienić wybór w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [ustawienia środowiska](../ide/environment-settings.md).
+- Ustawienia deweloperskie. Można wybrać kolekcję ustawień przy pierwszym otwarciu programu Visual Studio, ale można zmienić zaznaczenie w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [ustawienia środowiska](../ide/environment-settings.md).
 
-- Aliasy zdefiniowane przez użytkownika polecenia. Aby uzyskać więcej informacji o definiowaniu aliasów poleceń, zobacz [Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
+- Aliasy zdefiniowane przez użytkownika polecenia. Aby uzyskać więcej informacji o definiowaniu aliasów poleceń, zobacz [Visual Studio — Aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
 
-- Układów okien zdefiniowanych przez użytkownika w **okna** > **Zarządzanie układami okien** strony.
+- Układy okien zdefiniowane przez użytkownika w **oknie** > **Zarządzanie układami** okien.
 
-- Następujące opcje w **narzędzia** > **opcje** strony:
+- Następujące opcje na stronach**Opcje** **narzędzi** > :
 
-  - Motyw ustawienia i menu paska wielkość liter w wyrazie na **środowiska** > **ogólne** Strona opcji.
+  - Motyw i pasek menu ustawienia wielkości liter na stronie**Ogólne** opcje **środowiska** > .
 
-  - Wszystkie ustawienia na **środowiska** > **czcionki i kolory** Strona opcji.
+  - Wszystkie ustawienia na stronie opcje**czcionek i kolorów** **środowiska** > .
 
-  - Wszystkie skróty klawiaturowe w **środowiska** > **klawiatury** Strona opcji.
+  - Wszystkie skróty klawiaturowe na stronie opcje**klawiatury** **środowiska** > .
 
-  - Wszystkie ustawienia na **środowiska** > **karty i Windows** Strona opcji.
+  - Wszystkie ustawienia na kartach **środowiska** > i na stronie opcje**systemu Windows** .
 
-  - Wszystkie ustawienia na **środowiska** > **uruchamiania** Strona opcji.
+  - Wszystkie ustawienia na stronie opcje**uruchamiania** **środowiska** > .
 
-  - Wszystkie ustawienia na **edytora tekstów** Opcje strony, na przykład [preferencji stylu kodu](code-styles-and-code-cleanup.md).
+  - Wszystkie ustawienia na stronach opcje **edytora tekstu** , na przykład [Preferencje stylu kodu](code-styles-and-code-cleanup.md).
 
-  - Wszystkie ustawienia na **projektanta XAML** stronach opcji.
+  - Wszystkie ustawienia na stronach opcji **Projektant XAML** .
 
-## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Wyłącz zsynchronizowane ustawienia na określonym komputerze
+## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Wyłączanie ustawień synchronizowanych na określonym komputerze
 
-Synchronizacja ustawień dla programu Visual Studio są włączone domyślnie. Zsynchronizowane ustawienia na komputerze, można wyłączyć, przechodząc do **narzędzia** > **opcje** > **środowiska**  >   **Konta** strony i usuwając zaznaczenie pola wyboru **synchronizację ustawień między urządzeniami po zalogowaniu do programu Visual Studio**.
+Synchronizacja ustawień dla programu Visual Studio są włączone domyślnie. Zsynchronizowane ustawienia można wyłączyć na komputerze, przechodząc na stronę opcje **narzędzi** > **konta** **środowisko** > i usuwając zaznaczenie**opcji** >  **Synchronizuj ustawienia na urządzeniach, gdy zarejestrowano w programie Visual Studio**.
 
-Na przykład jeśli zdecydujesz się na synchronizację ustawień programu Visual Studio na komputerze "A", zmiany ustawień na komputerze "A" nie są wyświetlane na komputerze "B" lub "C". Komputery, "B" i "C", będą w dalszym ciągu synchronizacji ze sobą, ale nie z komputera "A".
+Na przykład jeśli zdecydujesz, że nie chcesz synchronizować ustawień programu Visual Studio na komputerze "A", wszelkie zmiany ustawień wprowadzone na komputerze "A" nie są wyświetlane na komputerze "B" lub na komputerze "C". Komputery "B" i "C" będą nadal synchronizowane ze sobą, ale nie z komputerem "A".
 
 > [!NOTE]
-> Jeśli nie zdecydujesz się na synchronizację ustawień przez usunięcie zaznaczenia tej opcji opcję w **narzędzia** > **opcje** > **środowiska**  >  **Kont** strony, inne wersje lub wersji programu Visual Studio, który znajduje się na tym samym komputerze nie ma wpływu. Instalacje side-by-side programu Visual Studio będzie synchronizować swoje ustawienia (o ile nie usuniesz zaznaczenie pola wyboru opcji, zbyt).
+> Jeśli nie zdecydujesz się synchronizować ustawień, usuń zaznaczenie opcji na stronie**Opcje** >  **narzędzi** > **konta** **środowisko** > , inne wersje lub wersje programu Visual Studio, które masz. na tym samym komputerze nie ma to wpływu. Te równoległe instalacje programu Visual Studio będą nadal synchronizować swoje ustawienia (o ile nie zostanie ponownie wybrana opcja).
 
-## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchronizacja ustawień w wersji i rodziny produktów Visual Studio
+## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchronizuj ustawienia w produktach i wersjach rodziny Visual Studio
 
-Ustawienia są synchronizowane z różnych wersji i wydań programu Visual Studio *side-by-side*. Ustawienia są synchronizowane między rodziny produktów Visual Studio, w tym program Blend for Visual Studio. Jednak poszczególnych rodziny produktów mogą mieć własne ustawienia, które nie są udostępniane za pomocą programu Visual Studio. Na przykład ustawienia specyficzne dla programu Blend for Visual Studio na komputerze, który "A" nie są współdzielone z programem Visual Studio na komputerach, "A" lub "B".
+Ustawienia są synchronizowane między wersjami i wersjami programu Visual Studio zainstalowanych *obok*siebie. Ustawienia są również synchronizowane między produktami rodziny Visual Studio, w tym Blend for Visual Studio. Jednak poszczególne produkty rodzinne mogą mieć własne ustawienia, które nie są udostępniane w programie Visual Studio. Na przykład ustawienia specyficzne dla Blend for Visual Studio na komputerze "A" nie są udostępniane w programie Visual Studio na komputerach "A" lub "B".
 
-## <a name="side-by-side-synchronized-settings"></a>Side-by-side zsynchronizowane ustawienia
+## <a name="side-by-side-synchronized-settings"></a>Ustawienia zsynchronizowane obok siebie
 
 ::: moniker range="vs-2017"
 
-Niektóre ustawienia, takie jak układ okna narzędzi nie są współużytkowane przez różne instalacje side-by-side programu Visual Studio. *CurrentSettings.vssettings* w pliku *%userprofile%\Documents\Visual Studio 2017\Settings* znajduje się w folderze specyficznych dla instalacji, która jest podobna do *%localappdata%\ Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
+Niektóre ustawienia, takie jak układ okna narzędzi, nie są współużytkowane przez różne instalacje równoległe programu Visual Studio. Plik *CurrentSettings. vssettings* w programie *%USERPROFILE%\Documents\Visual Studio 2017 \ Settings* znajduje się w folderze specyficznym dla instalacji podobnym do *%LocalAppData%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
 
 > [!NOTE]
-> Aby korzystać z nowych ustawień specyficznych dla instalacji, należy wykonać nowej instalacji. Podczas uaktualniania istniejącej instalacji programu Visual Studio używa istniejącej lokalizacji udostępnionej.
+> Aby użyć nowych ustawień specyficznych dla instalacji, należy przeprowadzić nową instalację. Po uaktualnieniu istniejącej instalacji programu Visual Studio korzysta ona z istniejącej udostępnionej lokalizacji.
 
-Jeśli obecnie masz instalacje side-by-side programu Visual Studio i chcesz używać nowej lokalizacji pliku ustawień specyficznych dla instalacji, wykonaj następujące czynności:
+Jeśli obecnie korzystasz z równoległych instalacji programu Visual Studio i chcesz użyć nowej lokalizacji pliku ustawień specyficznych dla instalacji, wykonaj następujące kroki:
 
-1. Uaktualnienie do programu Visual Studio 2017 w wersji 15.3 lub nowszej.
+1. Uaktualnij do programu Visual Studio 2017 w wersji 15,3 lub nowszej.
 
-2. Użyj **importu/eksportu ustawień** kreatora, aby wyeksportować wszystkie istniejące ustawienia do lokalizacji poza *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* folderu.
+2. Użyj **Kreatora importowania i eksportowania ustawień** , aby wyeksportować wszystkie istniejące ustawienia do niektórych lokalizacji poza folderem *%LocalAppData%\Microsoft\VisualStudio\15.0_xxxxxxxx* .
 
-3. Otwórz **wiersz polecenia programisty dla programu VS 2017** i uruchom `devenv /resetuserdata`.
+3. Otwórz **wiersz polecenia dla deweloperów programu VS 2017** i uruchom system `devenv /resetuserdata`.
 
 1. Otwórz program Visual Studio i zaimportuj zapisane ustawienia z wyeksportowanego pliku ustawień.
 
@@ -81,12 +81,16 @@ Jeśli obecnie masz instalacje side-by-side programu Visual Studio i chcesz uży
 
 ::: moniker range=">=vs-2019"
 
-Niektóre ustawienia, takie jak układ okna narzędzi nie są współużytkowane przez różne instalacje side-by-side programu Visual Studio. *CurrentSettings.vssettings* w pliku *%userprofile%\Documents\Visual Studio 2019\Settings* znajduje się w folderze specyficznych dla instalacji, która jest podobna do *%localappdata%\ Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
+Niektóre ustawienia, takie jak układ okna narzędzi, nie są współużytkowane przez różne instalacje równoległe programu Visual Studio. Plik *CurrentSettings. vssettings* w programie *%USERPROFILE%\Documents\Visual Studio 2019 \ Settings* znajduje się w folderze specyficznym dla instalacji podobnym do *%LocalAppData%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>Resetuj zsynchronizowane ustawienia
+
+Aby zresetować wszystkie ustawienia do ustawień domyślnych, zaloguj się do programu Visual Studio, a następnie wybierz pozycję **Narzędzia** > **Importuj i Eksportuj ustawienia** , aby otworzyć **Kreatora importowania i eksportowania ustawień**. Wybierz pozycję **Zresetuj wszystkie ustawienia** , a następnie postępuj zgodnie z pozostałymi krokami kreatora.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Ustawienia środowiska](../ide/environment-settings.md)
-- [Środowisko > okno dialogowe Opcje konta](reference/accounts-environment-options-dialog-box.md)
+- [Okno dialogowe Opcje kont > środowiska](reference/accounts-environment-options-dialog-box.md)

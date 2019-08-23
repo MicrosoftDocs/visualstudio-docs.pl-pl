@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b71d7040df5f971f320b9bb9999f9cacd0425e7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891278"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976735"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Opcje — okno dialogowe: Ogólne projekty i \> rozwiązania
 
@@ -78,18 +78,21 @@ Ponowne otwieranie niektórych typów plików lub projektantów może opóźnić
 
 ## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Przywróć stan hierarchii projektu Eksplorator rozwiązań podczas ładowania rozwiązania
 
-Po wybraniu przywraca stan węzłów w Eksplorator rozwiązań w odniesieniu do tego, czy były rozwinięte czy zwinięte podczas ostatniego otwarcia rozwiązania. Wyłącz tę opcję, aby skrócić czas ładowania rozwiązania dla dużych rozwiązań.
+Po wybraniu przywraca stan węzłów w Eksplorator rozwiązań w odniesieniu do tego, czy były rozwinięte czy zwinięte podczas ostatniego otwarcia rozwiązania. Usuń zaznaczenie tej opcji, aby skrócić czas ładowania rozwiązania dla dużych rozwiązań.
 
-Jeśli wyłączysz tę opcję, prostym sposobem przejścia do aktywnego dokumentu w Eksplorator rozwiązań jest wybranie opcji **Synchronizuj z aktywnym dokumentem** na pasku narzędzi **Eksplorator rozwiązań** .
-
-![Synchronizuj z aktywnym dokumentem w Eksplorator rozwiązań](media/sync-active-document.png)
+> [!TIP]
+> Jeśli wyłączysz tę opcję, prostym sposobem przejścia do aktywnego dokumentu w Eksplorator rozwiązań jest wybranie opcji **Synchronizuj z aktywnym dokumentem** na pasku narzędzi **Eksplorator rozwiązań** .
+>
+> ![Synchronizuj z aktywnym dokumentem w Eksplorator rozwiązań](media/sync-active-document.png)
 
 ## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Otwieranie plików projektu w stylu zestawu SDK przy użyciu dwukrotnego kliknięcia lub klawisza ENTER
 
-Gdy ta opcja jest zaznaczona, kliknij dwukrotnie węzeł projektu w Eksplorator rozwiązań lub wybierz węzeł projektu, a następnie naciśnij klawisz **Enter**, plik projektu (na przykład \*plik. csproj) zostanie otwarty jako XML w edytorze. Jest to prosty sposób na edytowanie pliku XML projektu bez konieczności najpierw zwalniania projektu, a następnie otwierania pliku projektu do edycji.
+Gdy ta opcja jest zaznaczona, kliknij dwukrotnie węzeł projektu w stylu zestawu SDK w Eksplorator rozwiązań lub wybierz go, a następnie naciśnij klawisz **Enter**, plik projektu (na przykład \*plik. csproj) zostanie otwarty jako XML w edytorze. Po zaznaczeniu tej opcji kliknij dwukrotnie węzeł projektu w stylu zestawu SDK w Eksplorator rozwiązań lub wybierz go, a naciśnięcie klawisza **Enter** ma wpływ na rozwijanie lub zwijanie węzła.
+
+Jeśli ta opcja nie jest zaznaczona i chcesz edytować plik projektu w stylu zestawu SDK, kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań a następnie wybierz polecenie **Edytuj plik projektu**. W przypadku innych typów projektów należy najpierw zwolnić projekt przed jego edycją w programie Visual Studio.
 
 > [!TIP]
-> Po zaznaczeniu tej opcji kliknij dwukrotnie węzeł projektu w Eksplorator rozwiązań lub wybierz go, a naciśnięcie klawisza **Enter** ma wpływ na rozwijanie lub zwijanie węzła.
+> *Projekt w stylu zestawu SDK*lub [zestaw SDK projektu](../../msbuild/how-to-use-project-sdk.md)ma nowszy, bardziej zoptymalizowany format pliku projektu, który został wprowadzony w programie MSBuild 15,0. Projekt `Sdk` wstyluzestawuSDK`<Project Sdk="Microsoft.NET.Sdk">`zawiera atrybut w elemencie,naprzykład.`Project` Program Visual Studio tworzy projekt w stylu zestawu SDK podczas tworzenia nowego projektu .NET Core z jednego z szablonów programu Visual Studio, na przykład.
 
 ::: moniker-end
 

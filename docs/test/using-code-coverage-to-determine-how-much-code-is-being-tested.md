@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416445"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976777"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -36,7 +36,12 @@ Funkcja pokrycia kodu jest dostępna tylko w wersji Visual Studio Enterprise.
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Analizowanie pokrycia kodu w ramach testów jednostkowych w Eksploratorze testów
 
+::: moniker range="vs-2017"
 1. W menu **test** wybierz polecenie **Analizuj pokrycie kodu**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. W **Eksploratorze testów**wybierz polecenie **Analizuj pokrycie kodu** z menu **uruchamiania** .
+::: moniker-end
 
 2. Aby zobaczyć, które wiersze zostały uruchomione, wybierz ![ikonę](../test/media/codecoverage-showcoloringicon.png) Pokaż kolorowanie pokrycia kodu. **Pokaż kolorowanie pokrycia kodu**.
 
@@ -103,7 +108,7 @@ Można chcieć wykluczyć określone elementy w kodzie z oceny pokrycia, jeśli 
 > [!TIP]
 > Wyłączenie klasy nie wyklucza jej klas pochodnych.
 
-Przykład:
+Na przykład:
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -226,7 +231,7 @@ Użyj następujących makr:
 
 `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
-- *Wykluczname* jest dowolną unikatową nazwą.
+- Wykluczname jest dowolną unikatową nazwą.
 
 - *FunctionName* jest w pełni kwalifikowaną nazwą funkcji. Może ona zawierać symbole wieloznaczne. Na przykład, aby wykluczyć wszystkie funkcje klasy, należy napisać`MyNamespace::MyClass::*`
 
