@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 593af04805870fcbd505d4004d9984d2a806f7a3
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681389"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000932"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio przez dodawanie lub usuwanie obciążeń i składników
 
@@ -127,4 +127,5 @@ Jeśli nie chcesz instalować obciążeń w celu dostosowania instalacji program
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualizowanie programu Visual Studio w punkcie odniesienia obsługi](update-servicing-baseline.md)
 * [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+* [Obciążenie & identyfikatorów składników](workload-and-component-ids.md)
 * [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)

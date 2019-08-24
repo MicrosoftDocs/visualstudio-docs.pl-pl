@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie i dostosowywanie narzędzi Windows | Dokumentacja firmy Microsoft
+title: Rozszerzanie i dostosowywanie okien narzędzi | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,42 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0eafb5a95151d6c3a805ad4d51c847f2fbe269d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af7cd4d7207251a3c0bd4268401b1e534929a483
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341144"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000891"
 ---
-# <a name="extend-and-customize-tool-windows"></a>Rozszerzanie i dostosowywanie okien narzędzi
-Visual Studio zawiera kilka różnych typów windows, na przykład okien, okien dokumentu i okno dialogowe systemu windows. Inne okna, takie jak **właściwości** oknie **dane wyjściowe** oknie i **listy zadań** oknie rodzaje okien narzędzi.
+# <a name="extend-and-customize-tool-windows"></a>Rozszerzone i dostosowane okna narzędzi
+Program Visual Studio udostępnia kilka różnych typów okien, na przykład okna narzędzi, okna dokumentów i okna dialogowe. Inne okna, takie jak okno **Właściwości** , okno **dane wyjściowe** i okno **Lista zadań** , są typami okien narzędzi.
 
 ## <a name="tool-windows"></a>Okna narzędzi
- Okna narzędzi w usłudze Visual Studio są zwykle tylko do odczytu systemu windows, które nie są oparte na plikach. W tym będą się różnić od okna dokumentów, które zawierają pliki w trybie odczytu i zapisu. **Przybornika**, **Eksploratora rozwiązań**, **właściwości** oknie i **przeglądarki sieci Web** to przykłady okien narzędzi.
+ Okna narzędzi programu Visual Studio są zwykle oknami tylko do odczytu, które nie są oparte na plikach. Różnią się one od okien dokumentu, które wyświetlają pliki w trybie odczytu i zapisu. **Przybornik**, **Eksplorator rozwiązań**, okno **Właściwości** i **przeglądarka sieci Web** są przykładami okien narzędzi.
 
- Aby dowiedzieć się, jak utworzyć okno prostego narzędzia, zobacz [Dodawanie okna narzędzi](../extensibility/adding-a-tool-window.md).
+ Aby dowiedzieć się, jak utworzyć proste okno narzędzi, zobacz [Dodawanie okna narzędzi](../extensibility/adding-a-tool-window.md).
 
- Aby zarejestrować okna narzędzi programu Visual Studio, zobacz [rejestrowanie okna narzędzi](../extensibility/registering-a-tool-window.md).
+ Aby zarejestrować okno narzędzi za pomocą programu Visual Studio, zobacz [Rejestrowanie okna narzędzi](../extensibility/registering-a-tool-window.md).
 
- Okna narzędzi są jednym wystąpieniu domyślnie, co oznacza, że tylko jedno wystąpienie okna narzędzia może być otwarty naraz. Po otwarciu okna narzędzi jednego wystąpienia zostanie zamknięte przed zamknięciem IDE. Po zamknięciu okna narzędzi jednego wystąpienia zmienia tylko jego widoczność. Można również utworzyć wiele wystąpień narzędzia windows tak, aby wiele wystąpień okna może być otwarty jednocześnie. Zobacz [utworzenie okna narzędzia obejmujące wiele wystąpień](../extensibility/creating-a-multi-instance-tool-window.md) Aby uzyskać więcej informacji.
+ Okna narzędzi są domyślnie jednym wystąpieniem, co oznacza, że w danym momencie może być otwarte tylko jedno wystąpienie okna narzędzi. Po otwarciu okna narzędzia z jednym wystąpieniem pozostaje otwarte do momentu zamknięcia środowiska IDE. Po zamknięciu okna narzędzia z pojedynczym wystąpieniem zmiany są zmieniane. Możesz również utworzyć okna narzędzi z wieloma wystąpieniami, aby można było otworzyć wiele wystąpień okna jednocześnie. Aby uzyskać więcej informacji, zobacz [Tworzenie okna narzędzi z wieloma wystąpieniami](../extensibility/creating-a-multi-instance-tool-window.md) .
 
- Okna narzędzi mogą być *dynamiczne*, co oznacza, że są one widoczne zawsze wtedy, gdy dotyczą ich powiązane kontekstu interfejsu użytkownika. Korzystanie z automatycznego widoczność można zaśmiecać okna w IDE. Aby uzyskać więcej informacji, zobacz [Otwieranie dynamicznego okna narzędzi](../extensibility/opening-a-dynamic-tool-window.md).
+ Okna narzędzi mogą być *dynamiczne*, co oznacza, że są widoczne przy każdym zastosowaniu powiązanego kontekstu interfejsu użytkownika. Funkcja autowidoczności może ograniczyć bałagan systemu Windows w środowisku IDE. Aby uzyskać więcej informacji, zobacz [Otwieranie okna narzędzia dynamicznego](../extensibility/opening-a-dynamic-tool-window.md).
 
- Okna narzędzi może być zadokowane, zmiennoprzecinkowego lub z kartami w ramce dokumentu. Ramka okna narzędzia są dostarczane przez środowisko IDE i jest używane do kontrolowania rozmiaru, lokalizacji, stan dokowania i inne właściwości trwałe. Zawartość jest wyświetlana w okienku okna narzędzia. Domyślnym rozmiarem i lokalizacją zastosować, tylko gdy okno narzędzia pierwszym otwarciu; Po utworzeniu tego stanu okna Narzędzie jest trwały.
+ Okna narzędzi mogą być zadokowane, przestawne lub z zakładkami w ramce dokumentu. Ramka okna narzędzi jest udostępniana przez środowisko IDE i służy do kontrolowania rozmiaru, lokalizacji, stanu dokowania i innych właściwości trwałych. W okienku okna narzędzi zostanie wyświetlona zawartość. Domyślny rozmiar i lokalizacja są stosowane tylko wtedy, gdy okno narzędzia jest otwierane jako pierwsze. gdy stan okna narzędzi zostanie utrwalony.
 
- Narzędzie okienka mogą hostowanie kontrolki użytkownika WPF i obsługiwać pasków narzędzi. Można zastąpić <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> właściwość zwraca uchwyt obsługiwanego formantu.
+ Okienka narzędzi okna narzędzia mogą hostować formanty użytkownika WPF i pomocnicze paski narzędzi. Można zastąpić <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> właściwość w celu zwrócenia uchwytu hostowanej kontrolki.
 
- Możesz dodać wiele różnych funkcji do okna narzędzi. Na przykład można dodać paska narzędzi: [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) lub menu skrótów: [Dodawanie menu skrótów w oknie narzędzia](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Można dodać kontrolkę wyszukiwania, która umożliwia wyszukiwanie elementów wewnątrz okna narzędzia: [Dodawanie wyszukiwania do okna narzędzi](../extensibility/adding-search-to-a-tool-window.md).
+ Do okien narzędzi można dodawać wiele różnych funkcji. Na przykład możesz dodać pasek narzędzi: [Dodaj pasek narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) lub menu skrótów: [Dodaj menu skrótów w oknie narzędzi](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Można dodać kontrolkę wyszukiwania, która pozwala wyszukiwać elementy w oknie narzędzia: [Dodaj wyszukiwanie do okna narzędzi](../extensibility/adding-search-to-a-tool-window.md).
 
- Można subskrybować zdarzenia okna narzędzia: [Subskrybowanie zdarzenia](../extensibility/subscribing-to-an-event.md).
+ Możesz subskrybować zdarzenia okna narzędzi: [Subskrybowanie zdarzenia](../extensibility/subscribing-to-an-event.md).
 
-## <a name="extend-existing-tool-windows"></a>Rozszerzanie istniejących narzędzi systemu windows
- Można dodać informacji o okna narzędzia do nowego **opcje** strony i nowe ustawienie na **właściwości** strony, zapisać **listy zadań** i **danych wyjściowych**  systemu windows. Aby uzyskać więcej informacji, zobacz [rozszerzyć okna właściwości, listy zadań, danych wyjściowych i opcji](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) i [rozszerzyć okna właściwości, listy zadań, danych wyjściowych i opcji](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).
+## <a name="extend-existing-tool-windows"></a>Rozwiń istniejące okna narzędzi
+ Możesz dodać informacje o oknie narzędzia do nowej strony **Opcje** i nowe ustawienie na stronie **Właściwości** , zapisywać w oknach **Lista zadań** i **danych wyjściowych** . Aby uzyskać więcej informacji, zobacz sekcję Rozpoznaj [okna właściwości, lista zadań, dane wyjściowe i opcje](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).
 
 ## <a name="modal-dialog-boxes"></a>Modalne okna dialogowe
- W rozszerzeniu Visual Studio, należy utworzyć modalnych okien dialogowych za pochodząca od <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, co pozwala na kontrolowanie ich i pozostałych interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [tworzenie i zarządzanie modalne okna dialogowe](../extensibility/creating-and-managing-modal-dialog-boxes.md).
+ W rozszerzeniu programu Visual Studio należy utworzyć modalne okna dialogowe, wynosząc <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>je z, co umożliwia kontrolowanie ich i pozostałej części interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Tworzenie modalnych okien dialogowych i zarządzanie nimi](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Tworzenie rozszerzenia za pomocą okna narzędziowego](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Rozwiń projekty](../extensibility/extending-projects.md)
+- [Rozszeranie rozwiązań](../extensibility/extending-solutions.md)

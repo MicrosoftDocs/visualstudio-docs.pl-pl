@@ -1,20 +1,20 @@
 ---
-title: Otwórz i Otwórz Zarządzanie zamówieniami licencji | Microsoft Docs
+title: Partnerzy zarządzający subskrypcjami programu Visual Studio dla klientów | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
-description: Dowiedz się więcej na temat zarządzania kolejnością subskrypcji za pomocą otwartych i otwartych programów licencjonowania.
-ms.openlocfilehash: ecbd5c4b861683742ec8b9e3d9fca571932ae887
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: Dowiedz się, jak partnerzy zarządzają subskrypcjami programu Visual Studio dla swoich klientów.
+ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605838"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000899"
 ---
-# <a name="open-and-open-license-management-for-new-orders"></a>Otwórz i Otwórz Zarządzanie licencjami dla nowych zamówień
-Aby zarządzać subskrypcjami w [portalu administracyjnym subskrypcji](https://manage.visualstudio.com)programu Visual Studio, należy wykonać kilka czynności. Proces będzie:
+# <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partnerzy zarządzający subskrypcjami w imieniu klientów
+Aby zarządzać subskrypcjami w [portalu administracyjnym subskrypcji](https://manage.visualstudio.com)programu Visual Studio, należy wykonać kilka kroków. Proces będzie:
 - Partnerzy umieściją w imieniu klienta nowe zamówienie, wprowadzając adres e-mail firmy klienta.
 - Klient otrzyma powiadomienie z zaproszeniem do przypisywania administratorów i uzyskiwania dostępu do subskrypcji w [portalu administracyjnym subskrypcji programu Visual Studio](https://manage.visualstudio.com).
 - Aby partnerzy mogli zarządzać subskrypcjami w imieniu klientów, będą musieli zarejestrować się w portalu administracyjnym. Poniżej znajdują się różne sposoby uzyskiwania dostępu do uzyskiwania dostępu.
@@ -38,6 +38,7 @@ Dotyczy to nowych partnerów umieszczających nowe otwarte zamówienia licencji,
 
 > [!NOTE]
 > Klient otrzyma wiadomość e-mail z powiadomieniem informującą o tym, że partner został dodany do licencji Open. Mogą oni wybrać opcję usunięcia dostępu partnera.
+
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nowi partnerzy odwiedzają Portal administratora subskrypcji programu Visual Studio bezpośrednio
 Ten scenariusz ma zastosowanie do nowych partnerów, którzy już umieścili nowe otwarte zamówienia licencji, ale którzy nie zostali zarejestrowani w [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) i przejdź bezpośrednio do [portalu administracyjnego subskrypcji programu Visual Studio](https://manage.visualstudio.com).  Wykonaj następujące kroki:
