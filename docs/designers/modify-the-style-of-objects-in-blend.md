@@ -85,7 +85,7 @@ W oknie [obiekty i oś czasu](../designers/creating-a-ui-by-using-blend-for-visu
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Przywracanie domyślnego stylu lub szablonu kontrolki
 
-Zaznacz kontrolkę, a następnie w oknie * * właściwości * * * * Znajdź właściwość **styl** lub **szablon** . Wybierz **Opcje zaawansowane**, a następnie w menu skrótów kliknij polecenie **Zresetuj** .
+Zaznacz kontrolkę, a następnie w oknie **właściwości** ** Znajdź właściwość **styl** lub **szablon** . Wybierz **Opcje zaawansowane**, a następnie w menu skrótów kliknij polecenie **Zresetuj** .
 
 ## <a name="visual-states"></a>Stany wizualne
 
