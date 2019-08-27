@@ -45,7 +45,7 @@ Funkcja pokrycia kodu jest dostępna tylko w wersji Visual Studio Enterprise.
 
 2. Aby zobaczyć, które wiersze zostały uruchomione, wybierz ![ikonę](../test/media/codecoverage-showcoloringicon.png) Pokaż kolorowanie pokrycia kodu. **Pokaż kolorowanie pokrycia kodu**.
 
-   Aby zmienić kolory lub użyć pogrubienia, wybierz**Opcje** >  **Narzędzia** > **czcionki i kolory** >  ****środowiska** > Pokaż ustawienia dla: Edytor**tekstu. W obszarze **Wyświetl elementy**Dostosuj elementy pokrycia.
+   Aby zmienić kolory lub użyć pogrubienia, wybierz**Opcje** > **Narzędzia** > **czcionki i kolory** > **środowiska** > **Pokaż ustawienia dla: Edytor**tekstu. W obszarze **Wyświetl elementy**Dostosuj elementy pokrycia.
 
 3. Jeśli wyniki wykażą niewielkie pokrycie, zbadaj części kodu, które nie są wykonywane, i napisz więcej testów, aby je pokryć. Zespoły deweloperów zazwyczaj dążą do około 80% pokrycia kodu. W niektórych sytuacjach dopuszczalne jest niższe zapotrzebowanie. Niższe zapotrzebowanie jest dopuszczalne np. tam, gdzie dany kod jest generowany na podstawie standardowego szablonu.
 
