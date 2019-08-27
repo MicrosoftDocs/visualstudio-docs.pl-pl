@@ -17,42 +17,42 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328793"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026468"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
-W środowiskach przedsiębiorstw Administratorzy systemu zazwyczaj wdrożyć instalacje do użytkowników końcowych z udziału sieciowego lub za pomocą oprogramowania do zarządzania systemami. Zaprojektowaliśmy aparat Instalatora programu Visual Studio do obsługi wdrożenia w przedsiębiorstwie, zapewniając możliwość tworzenia lokalizacji instalacji sieciowej, można wstępnie skonfigurować domyślne ustawienia instalacji, aby wdrożyć kluczy produktów podczas procesu instalacji administratorzy systemu i do zarządzania aktualizacjami produktu po pomyślne wdrożenie.
+W środowiskach korporacyjnych Administratorzy systemu zwykle wdrażają instalacje do użytkowników końcowych z udziału sieciowego lub oprogramowania do zarządzania systemami. Aparat instalacyjny programu Visual Studio został zaprojektowany w celu obsługi wdrażania w przedsiębiorstwie, zapewniając administratorom systemu możliwość tworzenia lokalizacji instalacji sieciowej w celu wstępnego skonfigurowania ustawień domyślnych instalacji, aby wdrożyć klucze produktów podczas instalacji. do zarządzania aktualizacjami produktów po pomyślnym wdrożeniu.
 
 Ten Przewodnik administratora wskazówki oparte na scenariuszach dotyczące wdrażania w przedsiębiorstwie w środowiskach sieciowych.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Przed wdrożeniem programu Visual Studio w organizacji istnieją pewne decyzje i zadania do wykonania:
+Przed wdrożeniem programu Visual Studio w całej organizacji należy wykonać kilka decyzji i wykonać zadania:
 
 ::: moniker range="vs-2019"
 
 * Upewnij się, że każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](/visualstudio/releases/2019/system-requirements/).
 
-* Zdecyduj, na potrzeby obsługi.
+* Zdecyduj na potrzeby obsługi.
 
-  Jeśli Twoja firma wymaga pozostać na funkcję, ale nadal jest już ustawiona chce otrzymywać regularne aktualizacje obsługi, planuje użyć obsługi linii bazowej. Aby uzyskać więcej informacji, zobacz ***opcje pomocy technicznej dla klientów, Enterprise i Professional*** części [cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) stronie, jak również [jak: Aktualizacja programu Visual Studio znajduje się w linię bazową obsługi](update-servicing-baseline.md) strony.
+  Jeśli firma musi pozostać w zestawie funkcji dłużej, ale nadal chce uzyskać regularne aktualizacje obsługi, należy zaplanować użycie podstawy obsługi. Aby uzyskać więcej informacji, zobacz sekcję ***Opcje pomocy technicznej dla klientów w wersji Enterprise i Professional*** na stronie [cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , a [także następujące czynności: Zaktualizuj program Visual Studio na stronie odniesienia](update-servicing-baseline.md) obsługi.
 
-  Jeśli użytkownik chce zastosować aktualizacje obsługi wraz z aktualizacji zbiorczej funkcji, można wybrać najnowsze elementy.
+  Jeśli planujesz zastosować aktualizacje obsługi razem z aktualizacjami funkcji zbiorczych, możesz wybrać najnowsze bity.
 
-* Decyduje o model aktualizacji.
+* Wybierz model aktualizacji.
 
-  Gdzie chcesz komputery klienckie indywidualnych, aby pobrać aktualizacje? W szczególności zdecyduj, czy użytkownik chce uzyskać aktualizacji z Internetu lub udziału lokalnego całej firmy. Następnie Jeśli zdecydujesz się użyć lokalnego udziału, zdecyduj, czy poszczególnych użytkowników można zaktualizować ich własnych klientów lub jeśli chcesz, aby administrator programowo zaktualizować klientów.
+  Gdzie poszczególne komputery klienckie mają pobierać aktualizacje? W celu zadecydowania, czy chcesz otrzymywać aktualizacje z Internetu, czy z udziału lokalnego w całej firmie. Następnie, jeśli zdecydujesz się użyć udziału lokalnego, zdecyduj, czy indywidualni użytkownicy mogą zaktualizować swoich klientów, czy chcesz programowo aktualizować klientów.
 
-* Zdecyduj, które [obciążenia i składniki](workload-and-component-ids.md?view=vs-2019) potrzebami firmy.
+* Decydowanie o [obciążeniach i składnikach](workload-and-component-ids.md?view=vs-2019) potrzebnych przez firmę.
 
-* Zdecyduj, czy ma być używany [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2019) (który upraszcza zarządzanie szczegóły w pliku skryptu).
+* Zdecyduj, czy chcesz użyć [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2019) (który upraszcza zarządzanie szczegółami w pliku skryptu).
 
-* Zdecyduj, jeśli chcesz włączyć zasad grupy, jeśli chcesz skonfigurować program Visual Studio, aby wyłączyć opinie klientów na poszczególnych komputerach.
+* Zdecyduj, czy chcesz włączyć zasady grupy, a jeśli chcesz skonfigurować program Visual Studio do wyłączania opinii klientów na poszczególnych komputerach.
 
 ::: moniker-end
 
@@ -60,58 +60,58 @@ Przed wdrożeniem programu Visual Studio w organizacji istnieją pewne decyzje i
 
 * Upewnij się, że każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](/visualstudio/productinfo/vs2017-system-requirements-vs/).
 
-* Zdecyduj, na potrzeby obsługi.
+* Zdecyduj na potrzeby obsługi.
 
-  Jeśli Twoja firma wymaga pozostać na funkcję, ale nadal jest już ustawiona chce otrzymywać regularne aktualizacje obsługi, planuje użyć obsługi linii bazowej. Aby uzyskać więcej informacji, zobacz ***obsługę starszych wersji programu Visual Studio*** części [cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) stronie, jak również [jak: Aktualizacja programu Visual Studio znajduje się w linię bazową obsługi](update-servicing-baseline.md) strony.
+  Jeśli firma musi pozostać w zestawie funkcji dłużej, ale nadal chce uzyskać regularne aktualizacje obsługi, należy zaplanować użycie podstawy obsługi. Aby uzyskać więcej informacji, zobacz sekcję ***Obsługa starszych wersji programu Visual Studio*** na stronie [cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , jak [również: Zaktualizuj program Visual Studio na stronie odniesienia](update-servicing-baseline.md) obsługi.
 
-  Jeśli użytkownik chce zastosować aktualizacje obsługi wraz z aktualizacji zbiorczej funkcji, można wybrać najnowsze elementy.
+  Jeśli planujesz zastosować aktualizacje obsługi razem z aktualizacjami funkcji zbiorczych, możesz wybrać najnowsze bity.
 
-* Decyduje o model aktualizacji.
+* Wybierz model aktualizacji.
 
-  Gdzie chcesz komputery klienckie indywidualnych, aby pobrać aktualizacje? W szczególności zdecyduj, czy użytkownik chce uzyskać aktualizacji z Internetu lub udziału lokalnego całej firmy. Następnie Jeśli zdecydujesz się użyć lokalnego udziału, zdecyduj, czy poszczególnych użytkowników można zaktualizować ich własnych klientów lub jeśli chcesz, aby administrator programowo zaktualizować klientów.
+  Gdzie poszczególne komputery klienckie mają pobierać aktualizacje? W celu zadecydowania, czy chcesz otrzymywać aktualizacje z Internetu, czy z udziału lokalnego w całej firmie. Następnie, jeśli zdecydujesz się użyć udziału lokalnego, zdecyduj, czy indywidualni użytkownicy mogą zaktualizować swoich klientów, czy chcesz programowo aktualizować klientów.
 
-* Zdecyduj, które [obciążenia i składniki](workload-and-component-ids.md?view=vs-2017) potrzebami firmy.
+* Decydowanie o [obciążeniach i składnikach](workload-and-component-ids.md?view=vs-2017) potrzebnych przez firmę.
 
-* Zdecyduj, czy ma być używany [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2017) (który upraszcza zarządzanie szczegóły w pliku skryptu).
+* Zdecyduj, czy chcesz użyć [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2017) (który upraszcza zarządzanie szczegółami w pliku skryptu).
 
-* Zdecyduj, jeśli chcesz włączyć zasad grupy, jeśli chcesz skonfigurować program Visual Studio, aby wyłączyć opinie klientów na poszczególnych komputerach.
+* Zdecyduj, czy chcesz włączyć zasady grupy, a jeśli chcesz skonfigurować program Visual Studio do wyłączania opinii klientów na poszczególnych komputerach.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-## <a name="step-1---download-visual-studio-product-files"></a>Krok 1 — pobieranie plików produktu Visual Studio
+## <a name="step-1---download-visual-studio-product-files"></a>Krok 1. Pobieranie plików produktu Visual Studio
 
-* [Wybieranie obciążenia i składniki](workload-and-component-ids.md?view=vs-2019) , którą chcesz zainstalować.
+* [Wybierz obciążenia i składniki](workload-and-component-ids.md?view=vs-2019) , które chcesz zainstalować.
 
-* [Utwórz udział sieciowy plików produktu Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2019).
+* [Utwórz udział sieciowy dla plików produktu Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2019).
 
-## <a name="step-2---build-an-installation-script"></a>Krok 2 — budowanie skrypt instalacyjny
+## <a name="step-2---build-an-installation-script"></a>Krok 2. Kompilowanie skryptu instalacji
 
-* Tworzenie skryptu instalacji, który używa [parametry wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) użytkownikom kontrolowania instalacji.
+* Utwórz skrypt instalacyjny, który używa [parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) do kontrolowania instalacji.
 
   >[!NOTE]
-  > Skrypty można uprościć za pomocą [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2019). Upewnij się utworzyć plik odpowiedzi, który zawiera Twoje domyślną opcją instalacji.
+  > Skrypty można uprościć przy użyciu [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2019). Upewnij się, że utworzono plik odpowiedzi zawierający domyślną opcję instalacji.
 
-* (Opcjonalnie) [Zastosuj klucz produktu licencji zbiorczej](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019) jako część instalacji skryptu, aby użytkownicy nie musieli aktywować oprogramowania oddzielnie.
+* Obowiązkowe [Zastosuj klucz produktu licencji zbiorczej](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019) w ramach skryptu instalacji, aby użytkownicy nie musieli osobno aktywować oprogramowania.
 
-* (Opcjonalnie) Aktualizowanie układu sieci, aby [kontrolowania, kiedy i gdzie w produkcie aktualizacje są dostarczane do użytkowników końcowych](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
+* Obowiązkowe Zaktualizuj układ sieci, aby [kontrolować czas i miejsce, w którym aktualizacje produktu są dostarczane do użytkowników końcowych](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
 
-* (Opcjonalnie) Ustawienia zasad rejestru, które wpływają na wdrażanie programu Visual Studio, takie jak zainstalowanym niektórych pakietów współużytkowane z innymi wersjami lub wystąpienia, [której pakiety są buforowane](set-defaults-for-enterprise-deployments.md?view=vs-2019) lub [tego, czy pakiety są buforowane](disable-or-move-the-package-cache.md?view=vs-2019).
+* Obowiązkowe Ustaw zasady rejestru mające wpływ na wdrożenie programu Visual Studio, takie jak miejsce, w którym są zainstalowane pewne pakiety, które są udostępniane z innymi wersjami lub wystąpieniami, w [których są buforowane pakiety](set-defaults-for-enterprise-deployments.md?view=vs-2019) lub [czy pakiety są buforowane](disable-or-move-the-package-cache.md?view=vs-2019).
 
-* (Opcjonalnie) Ustawianie zasad grupy. Możesz również [Konfigurowanie programu Visual Studio, aby wyłączyć opinie](../ide/visual-studio-experience-improvement-program.md) na poszczególnych komputerach.
+* Obowiązkowe Ustaw zasady grupy. Możesz również [skonfigurować program Visual Studio, aby wyłączyć Opinie klientów](../ide/visual-studio-experience-improvement-program.md) na poszczególnych komputerach.
 
-## <a name="step-3---deploy"></a>Krok 3 — wdrażanie
+## <a name="step-3---deploy"></a>Krok 3. wdrażanie
 
-* Użyj wybranej technologii wdrażania w celu wykonania skryptu na docelowych stacjach roboczych dla deweloperów.
+* Użyj wybranej technologii wdrażania, aby wykonać swój skrypt na docelowych stacjach roboczych deweloperów.
 
 ## <a name="step-4---deploy-updates"></a>Krok 4 — wdrażanie aktualizacji
 
 * [Odśwież lokalizacji sieciowej, z najnowszymi aktualizacjami](update-a-network-installation-of-visual-studio.md?view=vs-2019) do programu Visual Studio za pomocą polecenia używane w kroku 1 w regularnych odstępach czasu, aby dodać zaktualizowane składniki.
 
-  Należy zaktualizować program Visual Studio przy użyciu skryptu aktualizacji. Aby to zrobić, należy użyć [ `update` ](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) parametru wiersza polecenia.
+  Program Visual Studio można zaktualizować za pomocą skryptu aktualizacji. Aby to zrobić, użyj [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) parametru wiersza polecenia.
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5 — (opcjonalnie) za pomocą Visual Studio tools
+## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5 — (opcjonalnie) korzystanie z narzędzi Visual Studio Tools
 
 Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie nimi zainstalowanego programu Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019) na maszynach klienckich.
 
@@ -119,38 +119,38 @@ Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie 
 
 ::: moniker range="vs-2017"
 
-## <a name="step-1---download-visual-studio-product-files"></a>Krok 1 — pobieranie plików produktu Visual Studio
+## <a name="step-1---download-visual-studio-product-files"></a>Krok 1. Pobieranie plików produktu Visual Studio
 
-* [Wybieranie obciążenia i składniki](workload-and-component-ids.md?view=vs-2017) , którą chcesz zainstalować.
+* [Wybierz obciążenia i składniki](workload-and-component-ids.md?view=vs-2017) , które chcesz zainstalować.
 
-* [Utwórz udział sieciowy plików produktu Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2017).
+* [Utwórz udział sieciowy dla plików produktu Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2017).
 
-## <a name="step-2---build-an-installation-script"></a>Krok 2 — budowanie skrypt instalacyjny
+## <a name="step-2---build-an-installation-script"></a>Krok 2. Kompilowanie skryptu instalacji
 
-* Tworzenie skryptu instalacji, który używa [parametry wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) użytkownikom kontrolowania instalacji.
+* Utwórz skrypt instalacyjny, który używa [parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) do kontrolowania instalacji.
 
   >[!NOTE]
-  > Skrypty można uprościć za pomocą [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2017). Upewnij się utworzyć plik odpowiedzi, który zawiera Twoje domyślną opcją instalacji.
+  > Skrypty można uprościć przy użyciu [pliku odpowiedzi](automated-installation-with-response-file.md?view=vs-2017). Upewnij się, że utworzono plik odpowiedzi zawierający domyślną opcję instalacji.
 
-* (Opcjonalnie) [Zastosuj klucz produktu licencji zbiorczej](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017) jako część instalacji skryptu, aby użytkownicy nie musieli aktywować oprogramowania oddzielnie.
+* Obowiązkowe [Zastosuj klucz produktu licencji zbiorczej](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017) w ramach skryptu instalacji, aby użytkownicy nie musieli osobno aktywować oprogramowania.
 
-* (Opcjonalnie) Aktualizowanie układu sieci, aby [kontrolowania, kiedy i gdzie w produkcie aktualizacje są dostarczane do użytkowników końcowych](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
+* Obowiązkowe Zaktualizuj układ sieci, aby [kontrolować czas i miejsce, w którym aktualizacje produktu są dostarczane do użytkowników końcowych](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
 
-* (Opcjonalnie) Ustawienia zasad rejestru, które wpływają na wdrażanie programu Visual Studio, takie jak zainstalowanym niektórych pakietów współużytkowane z innymi wersjami lub wystąpienia, [której pakiety są buforowane](set-defaults-for-enterprise-deployments.md?view=vs-2019) lub [tego, czy pakiety są buforowane](disable-or-move-the-package-cache.md?view=vs-2017).
+* Obowiązkowe Ustaw zasady rejestru mające wpływ na wdrożenie programu Visual Studio, takie jak miejsce, w którym są zainstalowane pewne pakiety, które są udostępniane z innymi wersjami lub wystąpieniami, w [których są buforowane pakiety](set-defaults-for-enterprise-deployments.md?view=vs-2019) lub [czy pakiety są buforowane](disable-or-move-the-package-cache.md?view=vs-2017).
 
-* (Opcjonalnie) Ustawianie zasad grupy. Możesz również [Konfigurowanie programu Visual Studio, aby wyłączyć opinie](../ide/visual-studio-experience-improvement-program.md) na poszczególnych komputerach.
+* Obowiązkowe Ustaw zasady grupy. Możesz również [skonfigurować program Visual Studio, aby wyłączyć Opinie klientów](../ide/visual-studio-experience-improvement-program.md) na poszczególnych komputerach.
 
-## <a name="step-3---deploy"></a>Krok 3 — wdrażanie
+## <a name="step-3---deploy"></a>Krok 3. wdrażanie
 
-* Użyj wybranej technologii wdrażania w celu wykonania skryptu na docelowych stacjach roboczych dla deweloperów.
+* Użyj wybranej technologii wdrażania, aby wykonać swój skrypt na docelowych stacjach roboczych deweloperów.
 
 ## <a name="step-4---deploy-updates"></a>Krok 4 — wdrażanie aktualizacji
 
 * [Odśwież lokalizacji sieciowej, z najnowszymi aktualizacjami](update-a-network-installation-of-visual-studio.md?view=vs-2017) do programu Visual Studio za pomocą polecenia używane w kroku 1 w regularnych odstępach czasu, aby dodać zaktualizowane składniki.
 
-  Należy zaktualizować program Visual Studio przy użyciu skryptu aktualizacji. Aby to zrobić, należy użyć [ `update` ](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) parametru wiersza polecenia.
+  Program Visual Studio można zaktualizować za pomocą skryptu aktualizacji. Aby to zrobić, użyj [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) parametru wiersza polecenia.
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5 — (opcjonalnie) za pomocą Visual Studio tools
+## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5 — (opcjonalnie) korzystanie z narzędzi Visual Studio Tools
 
 Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie nimi zainstalowanego programu Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017) na maszynach klienckich.
 
@@ -162,7 +162,7 @@ Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie 
 
 * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
 * [Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio](install-certificates-for-visual-studio-offline.md)
-* [Importowanie lub eksportowanie konfiguracji instalacji](import-export-installation-configurations.md)
+* [Importuj lub Eksportuj konfiguracje instalacji](import-export-installation-configurations.md)
 * [Archiwa Instalatora programu Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/)
-* [Cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
-* [Ustawienia Załaduj synchroniczne](../extensibility/synchronously-autoloaded-extensions.md)
+* [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
+* [Synchroniczne ustawienia autoładowania](../extensibility/synchronously-autoloaded-extensions.md)

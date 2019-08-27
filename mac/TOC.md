@@ -31,6 +31,7 @@
 # Edytor źródeł
 ## [Funkcje edytora](source-editor.md)
 ## [Refaktoryzacja](refactoring.md)
+## [Funkcja IntelliSense](intellisense.md)
 ## [Komentarze](comments.md)
 ## [Zachowanie edytora](editor-behavior.md)
 ## [Komentarze do zadań](task-comments.md)
