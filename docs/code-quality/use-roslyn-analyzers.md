@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548040"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060445"
 ---
 # <a name="use-code-analyzers"></a>Korzystanie z analizatorów kodu
 
@@ -62,6 +62,18 @@ Aby zmienić aktywny zestaw reguł dla projektu, przejdź do karty **Analiza kod
 
 Można skonfigurować ważność reguł analizatora lub *diagnostyki*, jeśli [są instalowane analizatory](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet. W poniższej tabeli przedstawiono opcje ważności diagnostyki:
 
+
+::: moniker range="vs-2019"
+|Ważność|Zachowanie w czasie kompilacji|Zachowanie edytora|
+|-|-|-|
+|Błąd|Naruszenia są wyświetlane jako *Błędy* w **Lista błędów** i w danych wyjściowych kompilacji w wierszu polecenia i powodują niepowodzenie kompilacji.|Kod powodujący problemy jest podkreślony czerwoną falistej i oznaczony przez małe czerwone pole na pasku przewijania.|
+|Ostrzeżenie|Naruszenia są wyświetlane jako *ostrzeżenia* w **Lista błędów** i w danych wyjściowych kompilacji wiersza polecenia, ale nie powodują awarii kompilacji.|Kod powodujący problemy jest podkreślony zieloną falistej i jest oznaczony małym zielonym polem na pasku przewijania.|
+|Sugestia|Naruszenia są wyświetlane jako *komunikaty* w **Lista błędów**, a nie w danych wyjściowych kompilacji wiersza polecenia.|Kod powodujący problemy jest podkreślony szarym falistej i oznaczony przez małe szare pole na pasku przewijania.|
+|Automatycznie|Niewidoczny dla użytkownika.|Niewidoczny dla użytkownika. Diagnostyka jest jednak raportowana w aparacie diagnostyki IDE.|
+|Brak|Całkowicie pomijane.|Całkowicie pomijane.|
+::: moniker-end
+
+::: moniker range="< vs-2019"
 |Ważność|Zachowanie w czasie kompilacji|Zachowanie edytora|
 |-|-|-|
 |Błąd|Naruszenia są wyświetlane jako *Błędy* w **Lista błędów** i w danych wyjściowych kompilacji w wierszu polecenia i powodują niepowodzenie kompilacji.|Kod powodujący problemy jest podkreślony czerwoną falistej i oznaczony przez małe czerwone pole na pasku przewijania.|
@@ -69,6 +81,7 @@ Można skonfigurować ważność reguł analizatora lub *diagnostyki*, jeśli [s
 |Informacje o|Naruszenia są wyświetlane jako *komunikaty* w **Lista błędów**, a nie w danych wyjściowych kompilacji wiersza polecenia.|Kod powodujący problemy jest podkreślony szarym falistej i oznaczony przez małe szare pole na pasku przewijania.|
 |Hidden|Niewidoczny dla użytkownika.|Niewidoczny dla użytkownika. Diagnostyka jest jednak raportowana w aparacie diagnostyki IDE.|
 |Brak|Całkowicie pomijane.|Całkowicie pomijane.|
+::: moniker-end
 
 Ponadto można zresetować ważność reguły przez ustawienie jej jako **domyślnej**. Każda Diagnostyka ma domyślną ważność, która może być widoczna w oknie **Właściwości** .
 

@@ -1,8 +1,10 @@
 ---
 title: Funkcje ułatwień dostępu programu Visual Studio
-description: Dowiedz się więcej na temat funkcji ułatwień dostępu i narzędzi, które sprawić, że zarówno system operacyjny Windows, jak i pakiet dla deweloperów programu Visual Studio bardziej dostępny dla wszystkich użytkowników, w tym osobom niepełnosprawnym.
-ms.date: 08/22/2017
+description: Dowiedz się więcej na temat funkcji i narzędzi ułatwień dostępu, które ułatwiają dostęp do wszystkich systemów operacyjnych Windows i Visual Studio Developer Suite dla wszystkich użytkowników, w tym osób niepełnosprawnych.
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
@@ -12,19 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793160"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060373"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkcje ułatwień dostępu programu Visual Studio
 
-> [!TIP]
-> Aby dowiedzieć się więcej o najnowszych aktualizacjach ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
-
-Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje ułatwiają programu Visual Studio dostęp dla osób niepełnosprawnych:
+Oprócz funkcji i narzędzi ułatwień dostępu w systemie Windows następujące funkcje sprawiają, że program Visual Studio jest bardziej dostępny dla osób niepełnosprawnych:
 
 - Rozszerzenia narzędzi przycisk i tekst
 
@@ -37,23 +36,30 @@ Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje 
 - Automatyczne uzupełnianie metody i parametrów
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [ułatwień dostępu dla programu Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility).
-
-> [!IMPORTANT]
-> Informacje przedstawione w tej sekcji dotyczy tylko użytkowników licencjonujących produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, można użyć karty informacji zależnej od firmy Microsoft, dołączonej do pakietu oprogramowania lub mogą odwiedzić [skontaktuj się z nami stronę Microsoft Support](http://support.microsoft.com/ContactUs) i kliknij przycisk  **Znajdź oddziałów firmy Microsoft na całym świecie** łącza (w pobliżu dolnej części strony). Ta strona zawiera listę numerów telefonów i adresów dla firmy Microsoft pomoc techniczną. Możesz skontaktować się z oddziałem, aby dowiedzieć się, czy typy produktów i usług, które są opisane w tej sekcji są dostępne w Twojej okolicy. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
+> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [ułatwienia dostępu dla Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility).
 
 Więcej informacji znajduje się w następujących tematach:
 
 - [Instrukcje: Ustawianie opcji ułatwień dostępu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Instrukcje: Używanie wyłącznie klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Instrukcje: Używaj wyłącznie klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 - [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [Instrukcje: Zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Instrukcje: Zmień czcionki i kolory](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+
+> [!IMPORTANT]
+> Informacje na tej stronie mogą dotyczyć tylko użytkowników, którzy chcą uzyskać licencję na produkty firmy Microsoft w Stany Zjednoczone. Jeśli ten produkt został uzyskany poza Stany Zjednoczone, odwiedź witrynę internetową [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) , aby uzyskać listę numerów telefonów i adresów usług pomocy technicznej firmy Microsoft. Możesz skontaktować się z działem pomocy technicznej, aby dowiedzieć się, czy typ produktów i usług opisanych na tej stronie jest dostępny w Twoim regionie. Informacje o ułatwieniach dostępu są również dostępne w innych językach.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Aby dowiedzieć się więcej o najnowszych aktualizacjach dostępności, zobacz wpis w blogu dotyczący [ulepszeń ułatwień dostępu w programie Visual Studio 2017 w wersji 15,3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) .
+
+::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dostępność produktów i usług firmy Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+- [Produkty i usługi firmy Microsoft dotyczące ułatwień dostępu](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

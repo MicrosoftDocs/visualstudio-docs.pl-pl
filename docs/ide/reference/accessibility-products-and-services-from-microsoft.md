@@ -1,8 +1,10 @@
 ---
 title: Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
 description: Dowiedz się więcej o produktach i usługach firmy Microsoft, które mogą ułatwić dostęp do naszych systemów operacyjnych, programów i aplikacji wszystkim użytkownikom niepełnosprawnym.
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -19,30 +21,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 87416903b469293d292bfa4414d425c31d0c9154
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926269"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060390"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
 
-> [!TIP]
-> Aby dowiedzieć się więcej na temat ostatnich aktualizacji dostępności do programu Visual Studio, zobacz wpis w blogu dotyczący [ulepszeń ułatwień dostępu w programie Visual studio 2017 w wersji 15,3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) .
+Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. Ta strona zawiera informacje dotyczące funkcji, produktów i usług, dzięki którym system Microsoft Windows jest bardziej dostępny dla osób niepełnosprawnych.
 
-Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. Poniższe tematy zawierają informacje o funkcjach, produktach i usługach, które sprawiają, że system Microsoft Windows jest bardziej dostępny dla osób niepełnosprawnych:
-
-- [Funkcje ułatwień dostępu systemu Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
-
-- [Dokumentacja w formatach alternatywnych](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
-
-- [Obsługa klienta dla osób z upośledzeniem słuchu](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
-
-- [Aby uzyskać więcej informacji](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
-
-> [!NOTE]
-> Informacje w tym rozdziale mogą dotyczyć wyłącznie użytkowników, którzy uzyskali licencje na produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli ten produkt został uzyskany poza Stany Zjednoczone, możesz użyć karty informacji o przedstawicielstwach dołączonej do pakietu oprogramowania lub odwiedzić witrynę internetową [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) , aby uzyskać listę numerów telefonów usług pomocy technicznej firmy Microsoft i adres. Można się skontaktować z oddziałem firmy Microsoft i sprawdzić, czy produkty i usługi opisane w tym rozdziale są dostępne na danym terenie. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
+> [!IMPORTANT]
+> Informacje na tej stronie mogą dotyczyć tylko użytkowników, którzy chcą uzyskać licencję na produkty firmy Microsoft w Stany Zjednoczone. Jeśli ten produkt został uzyskany poza Stany Zjednoczone, odwiedź witrynę internetową [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) , aby uzyskać listę numerów telefonów i adresów usług pomocy technicznej firmy Microsoft. Możesz skontaktować się z działem pomocy technicznej, aby dowiedzieć się, czy typ produktów i usług opisanych na tej stronie jest dostępny w Twoim regionie. Informacje na temat ułatwień dostępu są dostępne w innych językach.
 
 ## <a name="windows"></a>Funkcje ułatwień dostępu systemu Windows
 
@@ -66,9 +57,8 @@ Osoby mające trudności z czytaniem lub obsługą materiałów drukowanych mog�
 
 Ponadto możesz uzyskać dodatkowe publikacje firmy Microsoft z usługi Learning Ally. Usługa Learning Ally dystrybuuje te dokumenty do zarejestrowanych, uprawnionych członków ich usługi dystrybucji. Aby uzyskać informacje o dostępności dokumentacji produktów Microsoft i książek w wydawnictwie Microsoft Press, skontaktuj się z:
 
-|Learning Ally|
-| - |
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Witryna sieci Web usługi [http://www.learningally.org](http://www.learningally.org/)Learning Ally:.|
+> Learning Ally<br />
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Witryna sieci Web usługi Learning Ally:[http://www.learningally.org](http://www.learningally.org/)
 
 Adresy sieci Web mogą ulec zmianie, dzięki czemu możesz nie być w stanie połączyć się z witryną sieci Web lub lokacjami wymienionymi tutaj.
 
@@ -86,7 +76,15 @@ Usługi pomocy technicznej firmy Microsoft podlegają cenom, warunkom i postanow
 
 Aby uzyskać więcej informacji na temat sposobu, w jaki technologia dostępna dla komputerów pomaga zwiększyć czas życia osób niepełnosprawnych, zobacz witrynę sieci Web [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) .
 
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Aby dowiedzieć się więcej na temat ostatnich aktualizacji dostępności do programu Visual Studio, zobacz wpis w blogu dotyczący [ulepszeń ułatwień dostępu w programie Visual studio 2017 w wersji 15,3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) .
+
+::: moniker-end
+
 ## <a name="see-also"></a>Zobacz także
 
 * [Zasoby do projektowania dostępnych aplikacji](../../ide/reference/resources-for-designing-accessible-applications.md)
 * [Funkcje ułatwień dostępu programu Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Ułatwienia dostępu dla Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility)
