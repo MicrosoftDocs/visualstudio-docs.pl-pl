@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957067"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154893"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5. Użyj szablonu projektu sieci Web Flask sond
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5. Użycie szablonu projektu sieci Web kolby sond
 
-**Poprzedniego kroku: [Pełny szablon projektu sieci Web Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Poprzedni krok: [Użyj szablonu projektu sieci Web pełnej kolby](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Po zrozumieniu szablon "Projekt sieci Web Flask" Visual Studio teraz zapoznanie się z trzeciej szablonu Flask "Sond Flask projektu sieci Web", która opiera się na tej samej bazy kodu.
 
@@ -34,7 +34,7 @@ W tym kroku dowiesz się, jak:
 
 Visual Studio udostępnia również szablon "Projekt sieci Web Flask/Jade sond", która wytwarza identyczną aplikację, ale używa aparatu tworzenia szablonów Jinja Jade rozszerzenia. Aby uzyskać więcej informacji, zobacz [krok 4 — szablon projektu sieci Web Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
-## <a name="step-5-1-create-the-project"></a>Krok 1 z 5 Utwórz projekt
+## <a name="step-5-1-create-the-project"></a>Krok 5-1: Utwórz projekt
 
 1. W programie Visual Studio, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **LearningFlask** rozwiązanie utworzone we wcześniejszej części tego samouczka, a następnie wybierz pozycję **Dodaj**  >   **Nowy projekt**. (, Jeśli chcesz użyć nowego rozwiązania, wybierz **pliku** > **New** > **projektu** zamiast.)
 
@@ -74,7 +74,7 @@ Visual Studio udostępnia również szablon "Projekt sieci Web Flask/Jade sond",
 
 Wspomniane wcześniej. Większość co to jest projekt utworzony z szablonu "Projekt sieci Web Flask sond" (i szablonów "Projekt sieci Web Flask/Jade sond") należy się zapoznać, jeśli zostały przedstawione z szablonów projektów w programie Visual Studio. Dodatkowe kroki w tym artykule podsumowanie bardziej znaczące zmiany i uzupełnienia, a mianowicie modeli danych i dodatkowe widoki.
 
-## <a name="step-5-2-understand-the-data-models"></a>Krok 2 z 5 Zrozumienie modeli danych
+## <a name="step-5-2-understand-the-data-models"></a>Krok 5-2: Zrozumienie modeli danych
 
 Modele danych dla aplikacji są klasy języka Python o nazwie sondowania i wyboru, które są zdefiniowane w *modeli /\_\_init\_\_.py*. Sondowaniu reprezentuje zapytania, dla którego kolekcję wystąpień wyboru reprezentują dostępne odpowiedzi. Sondowaniu przechowuje także całkowita liczba głosów (dla dowolnej), a metoda, aby obliczyć statystyki, które są używane do generowania widoków:
 
@@ -110,7 +110,7 @@ class Choice(object):
 
 Te modele danych są ogólne elementy abstrakcji, umożliwiające widoków aplikacji, aby pracować z różnego rodzaju kopii magazyny danych, które są opisane w następnym kroku.
 
-## <a name="step-5-3-understand-the-backing-data-stores"></a>Krok 3 z 5 Zrozumienie tworzenie kopii zapasowych magazynów danych
+## <a name="step-5-3-understand-the-backing-data-stores"></a>Krok 5-3: Zrozumienie magazynów danych zapasowych
 
 Aplikacja utworzona przez szablon "Projekt sieci Web Flask sond" można uruchomić względem magazynu danych w pamięci, usługa Azure table storage lub bazie danych Mongo DB.
 
@@ -232,11 +232,11 @@ Wywołanie `repository.add_sample_polls()` kończy się w jednym z konkretnym `R
 
 Po zakończeniu tego procesu, `redirect('/')` instrukcji w `seed` metoda wraca do strony głównej. Ponieważ `repository.get_polls` teraz zwraca obiekt danych warunkowego znaczniki *templates\index.html* teraz renderuje tabelę zawierającą ankiety.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pytanie: Jak jeden dodać nowe sonduje usługę do aplikacji?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Zainteresowany Jak jeden dodaje nowe sondy do aplikacji?
 
-Odpowiedź: Aplikacja, zgodnie z postanowieniami przy użyciu szablonu projektu nie zawiera funkcji do dodawania lub edytowania ankiety. Możesz zmodyfikować *models\samples.json* Aby utworzyć nowe dane inicjowania, ale oznacza to resetowanie magazynu danych. Aby zaimplementować funkcje edycji, musisz rozszerzyć `Repository` interfejsu klasy za pomocą metod, aby utworzyć niezbędne `Choice` i `Poll` wystąpień, implementować interfejs użytkownika w dodatkowych stron, które korzystają z tych metod.
+Udzielić Aplikacja określona za pomocą szablonu projektu nie zawiera funkcji do dodawania lub edytowania sondowań. Możesz zmodyfikować *models\samples.json* Aby utworzyć nowe dane inicjowania, ale oznacza to resetowanie magazynu danych. Aby zaimplementować funkcje edycji, musisz rozszerzyć `Repository` interfejsu klasy za pomocą metod, aby utworzyć niezbędne `Choice` i `Poll` wystąpień, implementować interfejs użytkownika w dodatkowych stron, które korzystają z tych metod.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Krok 5 — 4: Omówienie widoków szczegółów i wyniki sondowania
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Krok 5-4: Omówienie widoków szczegółów i wyników sondowania
 
 Większość widoków generowane przez Szablony "Projekt sieci Web Flask sond" i "Projekt sieci Web Flask/Jade sond", takie jak widoki informacje i skontaktuj się z stron, są bardzo podobne do widoków utworzonej przez szablon "Projekt sieci Web Flask" (lub "Projekt sieci Web Flask/Jade"), nad którą były prowadzone za pomocą wcześniej w tym samouczku. W poprzedniej sekcji także przedstawiono sposób implementacji na stronie głównej do pokazywania przycisku inicjowania lub listę sond.
 
@@ -346,7 +346,7 @@ def results(key):
 ## <a name="next-steps"></a>Następne kroki
 
 > [!Note]
-> Jeśli do kontroli źródła w toku w tym samouczku został zostały zatwierdzanie rozwiązania programu Visual Studio, teraz jest dobry moment, aby wykonać inną zatwierdzenia. Rozwiązania powinny odpowiadać kod źródłowy samouczek w witrynie GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
+> Jeśli do kontroli źródła w toku w tym samouczku został zostały zatwierdzanie rozwiązania programu Visual Studio, teraz jest dobry moment, aby wykonać inną zatwierdzenia. Twoje rozwiązanie powinno być zgodne z kodem źródłowym samouczka w witrynie GitHub: [Microsoft/Python — przykład — vs-Learning](https://github.com/Microsoft/python-sample-vs-learning-flask)-Kolba.
 
 Teraz zostały zbadane materiałami szablony "Pusty projekt sieci Web Flask", "Projekt sieci Web Flask [/Jade]" i "Sond projektu sieci Web Flask [/Jade]" w programie Visual Studio. Wiesz już, podstawy Flask, takich jak routing i korzystanie z widoków i szablonów i zostały już, jak używać tworzenie kopii zapasowych magazynów danych. Teraz można rozpocząć pracę w aplikacji sieci web własne z dowolną widoki i modele, które są potrzebne.
 
@@ -354,6 +354,6 @@ Uruchamianie aplikacji sieci web na komputerze deweloperskim jest tylko jeden kr
 
 - Wdrażanie aplikacji sieci web na serwerze produkcyjnym, takich jak usługa Azure App Service. Zobacz [publikowanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-- Dodaj implementację repozytorium, która używa innego magazynu danych na poziomie produkcyjnym, takich jak PostgreSQL, MySQL i SQL Server (które mogą być hostowane na platformie Azure). Można również użyć [zestawu Azure SDK dla języka Python](/python/azure/?view=azure-python) do pracy z usług Azure storage, takie jak tabele i obiektów blob, a także usługi Cosmos DB.
+- Dodaj implementację repozytorium, która używa innego magazynu danych na poziomie produkcyjnym, takich jak PostgreSQL, MySQL i SQL Server (które mogą być hostowane na platformie Azure). Można również użyć [zestawu Azure SDK dla języka Python](/azure/python/) do pracy z usług Azure storage, takie jak tabele i obiektów blob, a także usługi Cosmos DB.
 
-- Konfigurowanie potoku ciągłej integracji/ciągłego wdrażania usługi, takie jak DevOps platformy Azure. Oprócz Praca z kontrolą źródła (przy użyciu Azure repozytoriów GitHub i/lub gdzie indziej), można skonfigurować projekt DevOps platformy Azure do automatycznego uruchamiania testów jednostkowych jako warunek wstępny dla wersji i także skonfigurować potok do wdrażania na serwerze tymczasowym dla dodatkowe testy przed wdrożeniem w środowisku produkcyjnym. Azure DevOps, ponadto integruje się z usługą monitorowania rozwiązań, takich jak usługi App Insights i zamknięcie całego cyklu za pomocą narzędzi planowania agile. Aby uzyskać więcej informacji, zobacz [utworzyć potok ciągłej integracji/ciągłego Dostarczania dla języka Python za pomocą usługi Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts) i również ogólne [dokumentacji usługi Azure DevOps](/azure/devops/?view=vsts).
+- Konfigurowanie potoku ciągłej integracji/ciągłego wdrażania usługi, takie jak DevOps platformy Azure. Oprócz Praca z kontrolą źródła (przy użyciu Azure repozytoriów GitHub i/lub gdzie indziej), można skonfigurować projekt DevOps platformy Azure do automatycznego uruchamiania testów jednostkowych jako warunek wstępny dla wersji i także skonfigurować potok do wdrażania na serwerze tymczasowym dla dodatkowe testy przed wdrożeniem w środowisku produkcyjnym. Azure DevOps, ponadto integruje się z usługą monitorowania rozwiązań, takich jak usługi App Insights i zamknięcie całego cyklu za pomocą narzędzi planowania agile. Aby uzyskać więcej informacji, zobacz Tworzenie potoku ciągłej integracji/ciągłego wdrażania [dla języka Python za pomocą Azure DevOps projects](/azure/devops-project/azure-devops-project-python?view=vsts) a także ogólnej [dokumentacji usługi Azure DevOps](/azure/devops/?view=vsts).

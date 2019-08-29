@@ -1,23 +1,23 @@
 ---
-title: Narzędzia kontenerów programu Visual Studio właściwości kompilacji
+title: Właściwości kompilacji narzędzi kontenera programu Visual Studio
 author: ghogen
-description: Omówienie procesu kompilacji narzędzia kontenerów
+description: Przegląd procesu kompilacji narzędzi kontenera
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e3ce803f13b8dde82ffe71906e5f7a43a029dbb6
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 4bc6cb4221d85bd43b98b2ac36c34c919937960b
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67467414"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70152532"
 ---
-# <a name="container-tools-build-properties"></a>Narzędzia kontenerów właściwości kompilacji
+# <a name="container-tools-build-properties"></a>Właściwości kompilacji narzędzi kontenera
 
-Można dostosować, w jaki sposób program Visual Studio kompiluje projekty kontenera przez ustawienie właściwości, które korzysta z programu MSBuild do kompilowania projektu. Na przykład zmienić nazwę pliku Dockerfile, określ znaczniki i etykiety dla obrazów, należy podać dodatkowe argumenty przekazane do polecenia Docker i kontroli, czy niektóre optymalizacje wydajności, takie jak tworzenie poza program Visual Studio środowiska kontenera. Aby zapewnić, można również ustawić właściwości, takie jak nazwa pliku wykonywalnego do uruchomienia i argumenty wiersza polecenia debugowania.
+Możesz dostosować sposób, w jaki program Visual Studio kompiluje projekty kontenerów przez ustawienie właściwości używanych przez MSBuild do kompilowania projektu. Na przykład można zmienić nazwę pliku dockerfile, określić Tagi i etykiety dla obrazów, podać dodatkowe argumenty przekazane do poleceń platformy Docker i kontrolować, czy program Visual Studio wykonuje pewne optymalizacje wydajności, takie jak Kompilowanie poza środowisko kontenera. Możesz również ustawić właściwości debugowania, takie jak nazwa pliku wykonywalnego do uruchomienia, i argumenty wiersza polecenia do dostarczenia.
 
-Aby ustawić wartość właściwości, wyedytuj plik projektu. Załóżmy na przykład, nosi nazwę z pliku Dockerfile *MyDockerfile*. Możesz ustawić `DockerfileFile` właściwość w projekcie plików w następujący sposób.
+Aby ustawić wartość właściwości, edytuj plik projektu. Załóżmy na przykład, że pliku dockerfile ma nazwę *MyDockerfile*. `DockerfileFile` Właściwość w pliku projektu można ustawić w następujący sposób.
 
 ```xml
 <PropertyGroup>
@@ -25,32 +25,36 @@ Aby ustawić wartość właściwości, wyedytuj plik projektu. Załóżmy na prz
 </PropertyGroup>
 ```
 
-Ustawienie właściwości można dodać do istniejącej `PropertyGroup` elementu, lub jeśli nie istnieje, Utwórz nową `PropertyGroup` elementu.
+Możesz dodać ustawienie właściwości do istniejącego `PropertyGroup` elementu lub jeśli nie istnieje, Utwórz nowy `PropertyGroup` element.
 
-W poniższej tabeli przedstawiono dostępne dla projektów kontenera właściwości programu MSBuild.
+W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla projektów kontenerów.
 
 | Nazwa właściwości | Opis | Wartość domyślna  |
 |---------------|-------------|----------------|
-| DockerfileFile | W tym artykule opisano domyślne pliku Dockerfile, który będzie używany do uruchomienia kompilacji/kontenera dla projektu. Może to być także ścieżkę. | Dockerfile |
-| DockerfileTag | Tag, który będzie używany podczas tworzenia obrazu platformy Docker. Podczas debugowania, ": dev" jest dołączany do tagu. | Nazwa zestawu po obcięcie znaki inne niż alfanumeryczne z następującymi regułami: <br/> W przypadku cyfr wynikowe tag "image" jest wstawiony jako prefiksu (na przykład image2314) <br/> Jeśli wynikowe znacznik jest pustym ciągiem, "image" jest używany jako znacznik. |
-| DockerContext | Domyślny kontekst używany podczas tworzenia obrazu platformy Docker. | Ustaw przez program Visual Studio. |
-| ContainerDevelopmentMode | Określa, czy włączono optymalizacji "kompilacji na host" (debugowanie "Szybkie tryb").  Dozwolone wartości to **Fast** i **regularne**. | Szybka |
-| DockerDefaultTargetOS | Docelowy system operacyjny używany podczas tworzenia obrazu platformy Docker. | Ustaw przez program Visual Studio. |
-| DockerImageLabels | Domyślny zestaw etykiety zastosowane do obrazu platformy Docker. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |
-| ContainerVsDbgPath | Ścieżka do debugera VSDBG. | `%USERPROFILE%\vsdbg\vs2017u5` |
-| DockerfileBuildArguments | Dodatkowe argumenty przekazywane do polecenia kompilacji platformy Docker. | Nie dotyczy. |
-| DockerfileRunArguments | Dodatkowe argumenty przekazane do platformy Docker, uruchom polecenie. | Nie dotyczy. |
-| DockerfileRunEnvironmentFiles | Rozdzielana średnikami lista plików środowiska stosowane podczas uruchamiania platformy Docker. | Nie dotyczy. |
-| DockerfileFastModeStage | Etap pliku Dockerfile (oznacza to, że obiekt docelowy) do użycia podczas tworzenia obrazu w trybie debugowania. | Pierwszy etap, znaleziono w pliku Dockerfile (base) |
-| DockerDebuggeeProgram | Podczas debugowania, Debuger jest zobowiązany do uruchomienia tego pliku wykonywalnego. | Dla projektów .NET Core: dotnet, projektów programu .NET Framework dla programu ASP.NET: Nie dotyczy (usługi IIS zawsze są używane) |
-| DockerDebuggeeArguments | Podczas debugowania, Debuger jest zobowiązany do te argumenty przekazywane do uruchomionego pliku wykonywalnego. | Nie ma zastosowania do projektów programu .NET Framework dla programu ASP.NET |
-| DockerDebuggeeWorkingDirectory | Podczas debugowania, Debuger jest zobowiązany do używania tej ścieżki, jako katalog roboczy. | C:\app (Windows) lub App (Linux) |
-| DockerDebuggeeKillProgram | To polecenie jest używane do zatrzymania uruchomionego procesu w kontenerze. | Nie ma zastosowania do projektów programu .NET Framework dla programu ASP.NET |
+| DockerfileFile | Opisuje domyślny pliku dockerfile, który będzie używany do kompilowania/uruchamiania kontenera dla projektu. Może to być również ścieżka. | Pliku dockerfile |
+| DockerfileTag | Tag, który będzie używany podczas kompilowania obrazu platformy Docker. W debugowaniu ":d EV" jest dołączany do znacznika. | Nazwa zestawu po usunięciu znaków innych niż alfanumeryczne z następującymi regułami: <br/> Jeśli wynikowy tag to wszystkie wartości liczbowe, a następnie "Image" jest wstawiany jako prefiks (na przykład image2314) <br/> Jeśli wynikowy tag jest ciągiem pustym, oznacza to, że jako tag użyto elementu "Image". |
+| DockerContext | Domyślny kontekst używany podczas kompilowania obrazu platformy Docker. | Ustawione przez program Visual Studio. |
+| ContainerDevelopmentMode | Kontroluje, czy jest włączona optymalizacja "Kompiluj-on-host" (debugowanie w trybie szybkim).  Dozwolone wartości są **szybkie** i **regularne**. | Fast |
+| DockerDefaultTargetOS | Domyślny docelowy system operacyjny używany podczas kompilowania obrazu platformy Docker. | Ustawione przez program Visual Studio. |
+| DockerImageLabels | Domyślny zestaw etykiet stosowany do obrazu platformy Docker. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |
+| ContainerVsDbgPath | Ścieżka debugera VSDBG. | `%USERPROFILE%\vsdbg\vs2017u5` |
+| DockerfileBuildArguments | Dodatkowe argumenty przekazane do polecenia Docker Build. | Nie dotyczy. |
+| DockerfileRunArguments | Dodatkowe argumenty przekazane do polecenia Docker Run. | Nie dotyczy. |
+| DockerfileRunEnvironmentFiles | Rozdzielana średnikami lista plików środowiska zastosowanych podczas uruchamiania platformy Docker. | Nie dotyczy. |
+| DockerfileFastModeStage | Etap pliku dockerfile (czyli element docelowy), który ma być używany podczas kompilowania obrazu w trybie debugowania. | Pierwszy etap znaleziono w pliku dockerfile (podstawowy) |
+| DockerDebuggeeProgram | Podczas debugowania jest nakazuje debugerowi uruchomienie tego pliku wykonywalnego. | W przypadku projektów platformy .NET Core: dotnet, ASP.NET .NET Framework projekty: Nie dotyczy (program IIS jest zawsze używany) |
+| DockerDebuggeeArguments | Podczas debugowania, w debugerze jest nadawane przekazanie tych argumentów do uruchomionego pliku wykonywalnego. | Nie dotyczy projektów ASP.NET .NET Framework |
+| DockerDebuggeeWorkingDirectory | Podczas debugowania, w debugerze jest nakazuje użycie tej ścieżki jako katalogu roboczego. | C:\app (Windows) lub/App (Linux) |
+| DockerDebuggeeKillProgram | To polecenie służy do kasowania uruchomionego procesu w kontenerze. | Nie dotyczy projektów ASP.NET .NET Framework |
 
 ## <a name="next-steps"></a>Następne kroki
 
-Instrukcje dotyczące programu MSBuild ogólnie rzecz biorąc, zobacz właściwości [właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+Aby uzyskać ogólne informacje na temat właściwości programu MSBuild, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-[Program MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).
+[Docker Compose właściwości kompilacji](docker-compose-properties.md)
+
+[Ustawienia uruchamiania narzędzi kontenera](container-launch-settings.md)
+
+[Właściwości zarezerwowane i dobrze znane dla programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

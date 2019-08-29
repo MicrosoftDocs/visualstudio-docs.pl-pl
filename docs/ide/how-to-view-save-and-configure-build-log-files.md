@@ -1,6 +1,6 @@
 ---
 title: 'Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415573"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154811"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 
@@ -42,6 +42,8 @@ W przypadku kompilowania dowolnego rodzaju projektu przy użyciu programu MSBuil
 
    Program Visual Studio poprosi o lokalizację, w której mają zostać zapisane dane wyjściowe kompilacji.
 
+Dzienniki można również generować przez uruchomienie programu MSBuild bezpośrednio z wiersza polecenia przy użyciu `-fileLogger` opcji wiersza polecenia (`-fl`). Zobacz [Uzyskiwanie dzienników kompilacji za pomocą programu MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
+
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Aby zmienić ilość informacji zawartych w dzienniku kompilacji
 
 1. Na pasku menu wybierz **narzędzia** > **opcje**.
@@ -63,8 +65,11 @@ W przypadku kompilowania dowolnego rodzaju projektu przy użyciu programu MSBuil
     > [!IMPORTANT]
     > Musisz ponownie skompilować projekt, aby zmiany zaczęły obowiązywać w oknie **danych wyjściowych** (wszystkie projekty) iC++  *\<pliku ProjectName >. txt* (tylko projekty).
 
+## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Używanie dzienników binarnych w celu łatwiejszego przeglądania dużych plików dziennika
+
+Dzienniki binarne to opcjonalna funkcja projektów platformy .NET, która umożliwia bogatsze środowisko przeglądania dzienników, które może ułatwić znalezienie informacji w dużych dziennikach. Aby użyć dzienników binarnych, zainstaluj [narzędzia systemu projektu](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Aby uzyskać więcej informacji, [https://msbuildlog.com](https://msbuildlog.com) Zobacz i [dziennik binarny](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
+
 ## <a name="see-also"></a>Zobacz także
 
-- [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Twórz i czyść projekty i rozwiązania w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)

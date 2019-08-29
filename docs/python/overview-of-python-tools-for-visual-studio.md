@@ -11,18 +11,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043352"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154955"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
 Język Python jest popularnych języków programowania, które jest niezawodne, elastyczne, można łatwo dowiedzieć się, bezpłatnie do użycia we wszystkich systemach operacyjnych i obsługiwane przez społeczność deweloperów silne i wielu bezpłatnych bibliotek. Python obsługuje wszystkich sposobów rozwoju, w tym aplikacje sieci web, usług sieci web, aplikacje klasyczne, skryptów i obliczeń naukowych i jest używany przez wiele uniwersytety, analitykom, zwykłych deweloperów i podobne profesjonalnych deweloperów. Temat można znaleźć więcej informacji na temat języka na [python.org](https://www.python.org) i [języka Python dla początkujących](https://www.python.org/about/gettingstarted/).
 
-Visual Studio to zaawansowane środowisko IDE języka Python na Windows. Program Visual Studio udostępnia [typu open-source](https://github.com/Microsoft/ptvs) obsługę języka Python za pomocą **programowania w języku Python** i **do nauki o danych** obciążeń (Visual Studio 2017 i nowsze) i bezpłatne narzędzia języka Python dla programu Visual Studio rozszerzenia (Visual Studio 2015 i starsze).
+Visual Studio to zaawansowane środowisko IDE języka Python na Windows. Program Visual Studio zapewnia obsługę funkcji [Open Source](https://github.com/Microsoft/ptvs) dla języka Python za pomocą obciążeń związanych z programowaniem i analizą **danych** w języku **Python** (Visual Studio 2017 i nowszych) oraz rozszerzenia bezpłatnego Python Tools for Visual Studio (Visual Studio 2015 i starsze).
 
 Python nie jest obecnie obsługiwana w programie Visual Studio dla komputerów Mac, ale jest dostępna na komputerach Mac i Linux za pomocą programu Visual Studio Code (zobacz [pytań i odpowiedzi](#questions-and-answers)).
 
@@ -34,13 +34,13 @@ Aby rozpocząć pracę:
 - Przechodzą przez co najmniej jeden z przewodników Szybki Start, aby utworzyć projekt. Jeśli wiesz, skorzystaj z [tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- Przechodzą przez co najmniej jeden z przewodników Szybki Start, aby utworzyć projekt. Jeśli wiesz, skorzystaj z [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md) lub [tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
+- Przechodzą przez co najmniej jeden z przewodników Szybki Start, aby utworzyć projekt. Jeśli nie masz pewności, Zacznij od [przewodnika Szybki Start: Otwórz i uruchom kod w języku Python w](quickstart-05-python-visual-studio-open-folder.md) folderze lub [Utwórz aplikację internetową z kolbą](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 ::: moniker-end
 - Postępuj zgodnie z [działał z językiem Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) samouczek dotyczący środowiska pełnej end-to-end.
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Program Visual Studio obsługuje język Python w wersji 2.7, jak również w wersji 3.5 lub nowszym. Chociaż istnieje możliwość edytowania kodu napisanego w innych wersjach programu Python przy użyciu programu Visual Studio, tych wersji oficjalnie nie są obsługiwane i funkcje, takie jak IntelliSense i debugowanie może nie działać.
+> Program Visual Studio obsługuje język Python w wersji 2,7, a także wersję 3,5 i nowszą. Chociaż można użyć programu Visual Studio do edycji kodu pisanego w innych wersjach języka Python, te wersje nie są oficjalnie obsługiwane, a funkcje takie jak IntelliSense i debugowanie mogą nie zadziałać.
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Obsługa wielu interpretery
@@ -59,7 +59,7 @@ Użyj **Otwórz okno interaktywne** polecenie, aby uruchomić interaktywnie jęz
 Informacje dodatkowe:
 
 - [Zarządzanie środowiskami Python](managing-python-environments-in-visual-studio.md)
-- [Dokumentacja środowiska Python](python-environments-window-tab-reference.md)
+- [Dokumentacja środowisk Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zaawansowane edytowanie, IntelliSense i zrozumienie kodu
 
@@ -69,11 +69,11 @@ Program Visual Studio zapewnia najwyższej klasy Edytor języka Python obejmują
 
 Informacje dodatkowe:
 
-- Dokumentacja: [Edytowanie kodu w języku Python](editing-python-code-in-visual-studio.md)
-- Dokumentacja: [Formatowanie kodu](formatting-python-code.md)
-- Dokumentacja: [Refaktoryzacja kodu](refactoring-python-code.md)
-- Dokumentacja: [Użyj linter](linting-python-code.md)
-- Dokumentacja funkcji ogólne Visual Studio: [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
+- Docs [Edytuj kod języka Python](editing-python-code-in-visual-studio.md)
+- Docs [Formatowanie kodu](formatting-python-code.md)
+- Docs [Refaktoryzacja kodu](refactoring-python-code.md)
+- Docs [Użyj linter](linting-python-code.md)
+- Dokumentacja funkcji ogólnych programu Visual Studio: [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Okno interaktywne
 
@@ -88,16 +88,16 @@ Program Visual Studio obsługuje również IPython/Jupyter w rozwiązaniu REPL, 
 Informacje dodatkowe:
 
 - [Okno interaktywne](python-interactive-repl-in-visual-studio.md)
-- [Program IPython w programie Visual Studio](interactive-repl-ipython.md)
+- [IPython w programie Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>System projektów i szablonów projektów i elementów
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio 2019 obsługuje otwieranie folderu zawierającego kod Python i uruchamianie kodu bez tworzenia plików projektu i rozwiązania Visual Studio. Aby uzyskać więcej informacji, zobacz [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md). Istnieją jednak korzyści z korzystania z pliku projektu, zgodnie z opisem w tej sekcji.
+> Program Visual Studio 2019 obsługuje Otwieranie folderu zawierającego kod języka Python i uruchamianie tego kodu bez tworzenia plików projektu i rozwiązania programu Visual Studio. Aby uzyskać więcej informacji, [zobacz Szybki Start: Otwórz i uruchom kod w języku Python w](quickstart-05-python-visual-studio-open-folder.md)folderze. Istnieją jednak zalety korzystania z pliku projektu, zgodnie z opisem w tej sekcji.
 ::: moniker-end
 
-Program Visual Studio pomaga uprościć projekt wzrostem wraz z upływem czasu. A *projektu programu Visual Studio* to znacznie więcej niż strukturę folderów: zawiera omówienie różnych plików są używane i jak powiązane są ze sobą. Program Visual Studio pozwala odróżnić kodu aplikacji, przetestować kod, stron sieci web, JavaScript, skrypty kompilacji i tak dalej, które następnie umożliwiają odpowiednich plików funkcji. Rozwiązania programu Visual Studio ułatwia ponadto zarządzanie wielu powiązanych projektów, takich jak projektu języka Python i rozszerzenie projektu w języku C++.
+Program Visual Studio pomaga uprościć projekt wzrostem wraz z upływem czasu. *Projekt programu Visual Studio* jest znacznie więcej niż struktura folderów: zawiera informacje na temat sposobu używania różnych plików i sposobu ich powiązania ze sobą. Program Visual Studio pozwala odróżnić kodu aplikacji, przetestować kod, stron sieci web, JavaScript, skrypty kompilacji i tak dalej, które następnie umożliwiają odpowiednich plików funkcji. Rozwiązania programu Visual Studio ułatwia ponadto zarządzanie wielu powiązanych projektów, takich jak projektu języka Python i rozszerzenie projektu w języku C++.
 
 ![Rozwiązania programu Visual Studio zawierający projektów języka C++ i Python](media/projects-solution-explorer-two-projects.png)
 
@@ -107,12 +107,12 @@ Szablony projektów i elementów zautomatyzować proces konfigurowania różnych
 
 Informacje dodatkowe:
 
-- Dokumentacja: [Projekty Python](managing-python-projects-in-visual-studio.md)
-- Dokumentacja: [Dokumentacja dotycząca szablonów elementu](python-item-templates.md)
-- Dokumentacja: [Szablony projektów języka Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Dokumentacja: [Praca z C++ i Python](working-with-c-cpp-python-in-visual-studio.md)
-- Dokumentacja funkcji ogólne Visual Studio: [Szablony projektów i elementów](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Dokumentacja funkcji ogólne Visual Studio: [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Docs [Zarządzanie projektami języka Python](managing-python-projects-in-visual-studio.md)
+- Docs [Dokumentacja szablonów elementów](python-item-templates.md)
+- Docs [Szablony projektów języka Python](managing-python-projects-in-visual-studio.md#project-templates)
+- Docs [Współpraca z C++ programem i Python](working-with-c-cpp-python-in-visual-studio.md)
+- Dokumentacja funkcji ogólnych programu Visual Studio: [Szablony projektów i elementów](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Dokumentacja funkcji ogólnych programu Visual Studio: [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Oferujący debugowania
 
@@ -121,15 +121,15 @@ Jedną z mocnych programu Visual Studio jest jego zaawansowany debuger. Dla jęz
 ![Debuger programu Visual Studio dla języka Python, przedstawiający okno podręczne wyjątku](media/debugging-exception-popup.png)
 
 ::: moniker range=">=vs-2019"
-W programie Visual Studio 2019 r można uruchomić i możliwe jest debugowanie kodu bez pliku projektu programu Visual Studio. Zobacz [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md) przykład.
+W programie Visual Studio 2019 można uruchamiać i debugować kod bez pliku projektu programu Visual Studio. Zobacz [szybki start: Aby zapoznać się z przykładem, Otwórz](quickstart-05-python-visual-studio-open-folder.md) i uruchom kod Python w folderze.
 ::: moniker-end
 
 Informacje dodatkowe:
 
-- Dokumentacja: [Debugowanie języka Python](debugging-python-in-visual-studio.md)
-- Dokumentacja: [Debugowanie dla języków Python/C++ w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Dokumentacja: [Zdalne debugowanie w systemie Linux](debugging-python-code-on-remote-linux-machines.md)
-- Dokumentacja funkcji ogólne Visual Studio: [Przewodnik po funkcjach debugera programu Visual Studio](../debugger/debugger-feature-tour.md)
+- Docs [Debuguj Język Python](debugging-python-in-visual-studio.md)
+- Docs [Debugowanie dla języków Python/C++ w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Docs [Zdalne debugowanie w systemie Linux](debugging-python-code-on-remote-linux-machines.md)
+- Dokumentacja funkcji ogólnych programu Visual Studio: [Samouczek dotyczący funkcji debugera programu Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Narzędzia profilowania przy użyciu kompleksowe raportowanie
 
@@ -139,8 +139,8 @@ Profilowanie przedstawiono, jak jest zużywany czas w aplikacji. Visual Studio o
 
 Informacje dodatkowe:
 
-- Dokumentacja: [Narzędzia profilowania języka Python](profiling-python-code-in-visual-studio.md)
-- Dokumentacja funkcji ogólne Visual Studio: [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md). (Nie wszystkie funkcje profilowania programu Visual Studio są dostępne dla języka Python).
+- Docs [Narzędzia profilowania języka Python](profiling-python-code-in-visual-studio.md)
+- Dokumentacja funkcji ogólnych programu Visual Studio: [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md). (Nie wszystkie funkcje profilowania programu Visual Studio są dostępne dla języka Python).
 
 ## <a name="unit-testing-tools"></a>Narzędzia do testowania jednostkowego
 
@@ -150,14 +150,14 @@ Odkryj, uruchamianie i zarządzanie testami w Visual Studio **Eksplorator testó
 
 Informacje dodatkowe:
 
-- Dokumentacja: [Narzędzia do testowania jednostkowego w języku Python](unit-testing-python-in-visual-studio.md)
-- Dokumentacja funkcji ogólne Visual Studio: [Kod testu jednostkowego](../test/unit-test-your-code.md).
+- Docs [Narzędzia do testowania jednostkowego dla języka Python](unit-testing-python-in-visual-studio.md)
+- Dokumentacja funkcji ogólnych programu Visual Studio: [Testowanie jednostkowe kodu](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
 
-Bibliotek platformy Azure dla języka Python upraszczają korzystanie usług platformy Azure z aplikacji Windows, Mac OS X i Linux. Można ich użyć do tworzenia i zarządzania zasobami platformy Azure, a także połączyć się z usługami platformy Azure. 
+Biblioteki platformy Azure dla języka Python upraszczają używanie usług platformy Azure z poziomu aplikacji systemu Windows, Mac OS X i Linux. Można ich używać do tworzenia zasobów platformy Azure i zarządzania nimi, a także do nawiązywania połączeń z usługami platformy Azure. 
 
-Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](/python/azure/?view=azure-python) i [bibliotek platformy Azure dla języka Python](/python/azure/python-sdk-azure-overview?view=azure-python) .
+Aby uzyskać więcej informacji, zobacz [zestaw Azure SDK dla języka Python](/azure/python/) i [bibliotek platformy Azure dla języka Python](/azure/python/python-sdk-azure-overview) .
 
 ## <a name="questions-and-answers"></a>Pytania i odpowiedzi
 
@@ -180,7 +180,7 @@ A. Języka Python jest zwykle języku interpretowanych za pomocą którego kod j
 Funkcje języka Python można zainstalować w następujących wersjach programu Visual Studio, zgodnie z opisem w [Przewodnik instalacji](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2019 (wszystkie wersje)](https://visualstudio.microsoft.com/vs/)
-- Program Visual Studio 2017 (wszystkie wersje)
+- Visual Studio 2017 (wszystkie wersje)
 - Program Visual Studio 2015 (wszystkie wersje)
 - Visual Studio 2013 Community Edition
 - Visual Studio Express 2013 for Web i Update 2 lub nowszy
@@ -303,7 +303,7 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 
 <br/>
 
-1. Obsługa Git programu Visual Studio 2012 jest dostępny w Visual Studio Tools dla rozszerzenia cyfry, dostępne na [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
+1. Obsługa usługi git dla programu Visual Studio 2012 jest dostępna w Visual Studio Tools dla rozszerzenia git dostępnego na [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
 1. Wdrożenie do witryny sieci Web platformy Azure wymaga [zestawu Azure SDK dla platformy .NET 2.1 — Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855). Nowsze wersje nie obsługują programu Visual Studio 2010.
 

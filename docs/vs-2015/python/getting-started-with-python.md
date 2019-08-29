@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do języka Python | Dokumentacja firmy Microsoft
+title: Wprowadzenie przy użyciu języka Python | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -9,91 +9,91 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c5cea89b337f4da586ba4ca1954e49b96c84638
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575653"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154947"
 ---
 # <a name="getting-started-with-python"></a>Wprowadzenie do języka Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzia Python Tools for Visual Studio (narzędzi PTVS), to bezpłatny, [typu open-source](https://github.com/Microsoft/ptvs) dodatek dla programu Visual Studio środowisko zaawansowane Programowanie w języku Python.  
+Python Tools for Visual Studio (PTVS) to bezpłatna wtyczka typu ["Open Source](https://github.com/Microsoft/ptvs) " dla programu Visual Studio, która oferuje zaawansowane środowisko programistyczne języka Python.  
   
 ## <a name="python-the-language"></a>Język Python
   
-Język Python jest popularnych języków programowania, który jest używany przez wiele uniwersytety, analitykom, twórcom aplikacji skryptów, deweloperzy zwykłych i profesjonalnych deweloperów, pracy w aplikacji, witryn sieci web i usług w chmurze.
+Python to popularny język programowania używany przez wiele uniwersytetów, naukowców, skryptów aplikacji, dostępnych deweloperów i profesjonalnych deweloperów, pracę nad aplikacjami, witrynami sieci Web i usługami w chmurze.
 
-Język programowania Python jest jako:
+Język programowania to:
   
-- Niezawodne.
-- Zazwyczaj przydatne w przypadku skryptów szybkiego programów, skryptów aplikacji, aplikacje klasyczne, serwery sieci web, usług sieci web i obliczeń naukowych.
-- Do nauczenia i ma dobry projekt, aby zachęcać do dobrego kodowania (wiele uniwersytety użyć go wprowadzające kursy programowania).
-- Elastyczna Obsługa stylów programowania imperatywnego, funkcjonalności i zorientowane obiektowo.
-- Bezpłatne, a oprogramowanie typu open source.
-- Działa dobrze we wszystkich najważniejszych systemach operacyjnych.  
-- Obsługiwane przez wiele bezpłatnych, przydatne i dobrze zaprojektowane biblioteki.  
-- Obsługiwane przez mnóstwo dokumentacji, przykładów i społeczności deweloperów silne.  
+- Miarodaj.
+- Zazwyczaj przydatne w przypadku tworzenia skryptów szybkich programów, skryptów aplikacji, aplikacji klasycznych, serwerów sieci Web, usług sieci Web i obliczeń naukowych.
+- Łatwa do uczenia się i ma dobry projekt, aby zachęcić do dobrego kodowania (wiele uniwersytetów używa go do wprowadzenia kursów programistycznych).
+- Elastyczność, obsługa bezwzględnych, funkcjonalnych i zorientowanych na obiekty stylów programowania.
+- Bezpłatna i open source.
+- Działa prawidłowo we wszystkich głównych systemach operacyjnych.  
+- Obsługiwane przez wiele bezpłatnych, przydatnych i dobrze zaprojektowanych bibliotek.  
+- Obsługa wielu dokumentacji, przykładów i silnej społeczności deweloperów.  
 
-Aby dowiedzieć się więcej o języku, zacznij od [języka Python dla początkujących](https://www.python.org/about/gettingstarted/) w witrynie python.org.
+Aby dowiedzieć się więcej o języku, Zacznij od języka [Python dla początkujących](https://www.python.org/about/gettingstarted/) w witrynie Python.org.
 
-Do zainstalowania języka Python, samego, odwiedź stronę [ https://www.python.org/download/ ](https://www.python.org/download/).
+Aby zainstalować język Python, odwiedź [https://www.python.org/download/](https://www.python.org/download/)stronę.
 
 ## <a name="python-tools-for-visual-studio"></a>Narzędzia języka Python dla programu Visual Studio
   
-Python Tools for Visual Studio, które można zainstalować z [visualstudio.com](https://www.visualstudio.com/explore/python-vs), zapewniają następujące funkcje:  
+Python Tools for Visual Studio, którą można zainstalować z [VisualStudio.com](https://www.visualstudio.com/explore/python-vs), zapewniają następujące funkcje:  
   
 - Obsługa wielu interpreterów: różne wersje CPython, IronPython i IPython  
-- System projektu, niejawnie przejmuje strukturę folderów w kodzie języka Python, a także umożliwia jawną kontrolę, dzięki czemu można zidentyfikować kodu aplikacji, kodu testu, stron sieci web, JavaScript, skrypty kompilacji i tak dalej.  
-- Szablony projektu dla konsoli sieci web, Azure, nauki o danych i innych rodzajów projektów.    
+- System projektu, który niejawnie pobiera strukturę folderów kodu w języku Python, a także umożliwia jawną kontrolę, aby można było identyfikować kod aplikacji, kod testowy, strony sieci Web, skrypty języka JavaScript, skryptów kompilacji i tak dalej.  
+- Szablony projektów dla konsoli, sieci Web, platformy Azure, analizy danych i innych typów projektów.    
 - Zestaw Azure SDK dla języka Python (patrz poniżej)    
-- Zaawansowane edytowanie i kod zrozumienie funkcje w tym kolorowania, automatycznego uzupełniania dla całego kodu i bibliotek, pomocy dotyczącej sygnatur, widoku klas, przejdź do definicji i Znajdź wszystkie odwołania, refaktoryzacji i więcej.    
+- Zaawansowane funkcje edycji i zrozumienia kodu, w tym kolorowanie składni, Autouzupełnianie wszystkich kodów i bibliotek, pomoc w sygnaturach, Widok klas, przejdź do definicji, Znajdź wszystkie odwołania, refaktoryzacje i inne.    
 - Okno interaktywne (REPL)
-- Program IPython za pomocą wizualizacji danych.
-- Wsparcie dla języków IronPython i platformy .NET/WPF.    
-- Zaawansowane funkcje debugowania bez projektu programu Visual Studio, możliwość istniejącego pliku wykonywalnego, mieszany tryb debugowania zdalnego debugowania w systemie Linux/Windows/Mac i debugowanie w oknie interaktywnym.   
+- IPython z wizualizacjami danych.
+- Obsługa IronPython i .NET/WPF.    
+- Rozbudowane debugowanie bez projektu programu Visual Studio, możliwość istniejącego pliku wykonywalnego, debugowanie w trybie mieszanym, zdalne debugowanie do systemu Windows/Linux/Mac oraz debugowanie w oknie interaktywnym.   
 - Narzędzia profilowania.  
 - Narzędzia do testowania.  
   
 Następujące zasoby pomogą Ci rozpocząć pracę:
 
 - [Przewodnik instalacji](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
-- [Wprowadzenie rozpoczęcie pracy i deep dive krótkie filmy wideo](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
+- [Krótkie wideo z wprowadzeniem i głębokim szczegółowe](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
 - (Instalacja i funkcje wersji demonstracyjnej (27 min)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentacja](https://github.com/Microsoft/PTVS/wiki)  
 
-Należy pamiętać, że program Visual Studio nie obecnie zapewnia oznacza, że do utworzenia autonomicznego pliku wykonywalnego przy użyciu języka Python, co oznacza programu przy użyciu osadzonych interpreter języka Python. Istnieją różne środki w ramach społeczności języka Python w tym celu zgodnie z opisem na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [możliwego do osadzenia pliku Zip przy użyciu CPython](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
+Należy pamiętać, że program Visual Studio nie udostępnia teraz metody tworzenia autonomicznego pliku wykonywalnego przy użyciu języka Python, który zasadniczo oznacza program z osadzonym interpreterem języka Python. Jednak w ramach społeczności języka Python istnieją różne metody, które zostały opisane w artykule [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzanie w aplikacji natywnej, zgodnie z opisem w wpisie w blogu, [przy użyciu pliku zip](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)z możliwością osadzenia CPython.
   
-## <a name="building-ui-with-python"></a>Tworzenie interfejsu użytkownika za pomocą języka Python  
+## <a name="building-ui-with-python"></a>Tworzenie interfejsu użytkownika przy użyciu języka Python  
 
-Główne oferty tworzenia interfejsu użytkownika za pomocą języka Python jest [projektu Qt](https://www.qt.io/qt-for-application-development/), powiązań dla języka Python, znane jako [PySide (oficjalna powiązania)](http://wiki.qt.io/PySide) (Zobacz też [PySide pliki do pobrania](https://download.qt.io/official_releases/pyside/.)) i [PyQt](https://wiki.python.org/moin/PyQt). W chwili obecnej Obsługa w języku Python w programie Visual Studio nie ma żadnych określone narzędzia do tworzenia interfejsu użytkownika.
+Główną ofertą kompilowania interfejsu użytkownika przy użyciu języka Python jest [projekt QT](https://www.qt.io/qt-for-application-development/)z powiązaniami dla języka Python znanego jako [pyside (oficjalnego powiązania)](http://wiki.qt.io/PySide) (Zobacz też [pliki do pobrania pyside](https://download.qt.io/official_releases/pyside/.)) i [PyQt](https://wiki.python.org/moin/PyQt). W chwili obecnej Obsługa w języku Python w programie Visual Studio nie ma żadnych określone narzędzia do tworzenia interfejsu użytkownika.
 
 ## <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
   
-Zestaw Azure SDK dla języka Python, który obsługuje Windows, Mac i Linux, ułatwia korzystanie i zarządzanie nimi usług platformy Microsoft Azure. Zapoznaj się z poniższymi zasobami, aby uzyskać szczegółowe informacje: 
+Zestaw Azure SDK dla języka Python, który obsługuje systemy Windows, Mac i Linux, ułatwia korzystanie z usług Microsoft Azure i zarządzanie nimi. Aby uzyskać szczegółowe informacje, zobacz następujące zasoby: 
 
-- Aby zainstalować zestaw SDK, użyj [indeksu pakietów języka Python](https://pypi.python.org/pypi/azure) lub wykonaj [zainstalowania języka Python i zestawu SDK](https://azure.microsoft.com/documentation/articles/python-how-to-install/) w dokumentacji platformy Azure. 
-- [Zestaw Azure SDK dla Centrum deweloperów języka Python](https://azure.microsoft.com/develop/python/) mnóstwo pomocy instalacji do dokumentacji z samouczków.  Należy wykonać niektóre z najważniejszych:  
+- Aby zainstalować zestaw SDK, użyj [indeksu pakietu języka Python](https://pypi.python.org/pypi/azure) lub [Zainstaluj Język Python i zestaw SDK](https://docs.microsoft.com/azure/python/python-sdk-azure-install) w dokumentacji platformy Azure. 
+- [Zestaw Azure SDK dla Centrum deweloperów języka Python](https://azure.microsoft.com/develop/python/) zawiera wiele pomocy od instalacji do dokumentacji z samouczkami.  Poniżej przedstawiono niektóre najważniejsze elementy:  
 - Przewodniki z instrukcjami:
-  - [Obiekt Blob magazynu](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
-  - [Kolejki magazynu](https://azure.microsoft.com/develop/python/how-to-guides/queue-service/)  
+  - [Obiekt blob magazynu](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
+  - [Kolejka magazynu](https://azure.microsoft.com/develop/python/how-to-guides/queue-service/)  
   - [Tabela magazynu](https://azure.microsoft.com/develop/python/how-to-guides/table-service/)  
-  - [Kolejki usługi Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-queues/)
-  - [Usługa Service Bus tematów/subskrypcji](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-topics/) 
+  - [Kolejki Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-queues/)
+  - [Tematy Service Bus/subskrypcje](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-topics/) 
   - [Zarządzanie usługami](https://azure.microsoft.com/develop/python/how-to-guides/service-management/)  
 
-## <a name="scientific-computing"></a>Obliczeń naukowych
+## <a name="scientific-computing"></a>Obliczenia naukowe
 
-Oprócz wszystkich Python analityk danych bibliotek narzędzi Python Tools for Visual Studio obsługuje IPython i Notesy programu IPython, które mogą być hostowane na platformie Azure.
+Oprócz wszystkich bibliotek danych w języku Python, Python Tools for Visual Studio obsługuje notesy IPython i IPython, które mogą być hostowane na platformie Azure.
 
-Firma Microsoft zaleca uzyskiwanie IPython i naukowych bibliotek obliczeń (matplotlib, scipy, numpy itp.) z [uniwersytet kalifornijski, Irvine](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
+Zalecamy uzyskanie bibliotek IPython i naukowych obliczeniowych (matplotlib, scipy, numpy itp.) z [University of Kalifornii, Irvine](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
 ## <a name="see-also"></a>Zobacz też  
 
-[Wprowadzenie do narzędzi PTVS: Konfigurowanie programu Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[rozpoczęcie pracy z narzędziami PTVS: Rozpoczęcie kodowania (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[rozpoczęcie pracy z narzędziami PTVS: Edytowanie kodu](../python/getting-started-with-ptvs-editing-code.md)
-[rozpoczęcie pracy z narzędziami PTVS: Debugowanie](../python/getting-started-with-ptvs-debugging.md)
-[rozpoczęcie pracy z narzędziami PTVS: Interaktywny język Python](../python/getting-started-with-ptvs-interactive-python.md)
-[rozpoczęcie pracy z narzędziami PTVS: Tworzenie witryny sieci Web na platformie Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[PTVS — wprowadzenie: Konfigurowanie wprowadzenie programu Visual](../python/getting-started-with-ptvs-setting-up-visual-studio.md)Studio
+[za pomocą PTVS: Rozpocznij kodowanie (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[wprowadzenie z PTVS: Edytowanie wprowadzenie](../python/getting-started-with-ptvs-editing-code.md)kodu
+zapomocąPTVS[: Debugowanie](../python/getting-started-with-ptvs-debugging.md)wprowadzeniezapomocą[PTVS:
+ Interaktywna](../python/getting-started-with-ptvs-interactive-python.md)wprowadzenie Python
+[z PTVS: tworzenie witryny internetowej na platformie Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

@@ -14,43 +14,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ffbe1b7f293bc525aa03a536c0fa4fa55ce3e82a
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821588"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154862"
 ---
 # <a name="use-the-task-list"></a>Korzystanie z listy zadań
 
-Użyj **listy zadań** do śledzenia komentarzy do kodu, które używać tokenów, takich jak `TODO` i `HACK`, lub tokeny niestandardowe oraz zarządzania skrótami, które przejście bezpośrednio do wstępnie zdefiniowanej lokalizacji w kodzie. Kliknij element na liście, aby przejść do jego lokalizacji w kodzie źródłowym.
+Użyj **Lista zadań** do śledzenia komentarzy do kodu, które używają tokenów `HACK`, takich jak `TODO` i, lub tokenów niestandardowych, oraz do zarządzania skrótami, które przełączeją bezpośrednio do wstępnie zdefiniowanej lokalizacji w kodzie. Kliknij element na liście, aby przejść do jego lokalizacji w kodzie źródłowym.
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [zadań komentarzy (Visual Studio dla komputerów Mac)](/visualstudio/mac/task-comments).
+> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Komentarze zadań (Visual Studio dla komputerów Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>Okno Lista zadań
 
-Gdy **listy zadań** jest otwarty, wygląda na to, w dolnej części okna aplikacji.
+Gdy **Lista zadań** jest otwarty, pojawia się u dołu okna aplikacji.
 
-Aby otworzyć **listy zadań**, wybierz opcję **widoku** > **listy zadań**, lub naciśnij klawisze klawiatury **Ctrl** + **\\**,**T**.
+Aby otworzyć **Lista zadań**, wybierz **pozycję Wyświetl** > **Lista zadań**lub na klawiaturze naciśnij **klawisz Ctrl**+ **\\** ,**T**.
 
 ![okno listy zadań](../ide/media/vs2015_task_list.png)
 
-Aby zmienić kolejność sortowania listy, wybierz nagłówek dowolnej kolumny. Aby dalej zawęzić wyniki wyszukiwania, naciśnij klawisz **Shift** i kliknij nagłówek drugiej kolumny. Alternatywnie w menu skrótów wybierz **sortować według**, a następnie wybierz nagłówek. Aby dalej zawęzić wyniki wyszukiwania, naciśnij klawisz **Shift** i wybierz drugi nagłówek.
+Aby zmienić kolejność sortowania listy, wybierz nagłówek dowolnej kolumny. Aby dokładniej udoskonalić wyniki wyszukiwania, naciśnij klawisz **SHIFT** i kliknij nagłówek drugiej kolumny. Alternatywnie w menu skrótów wybierz polecenie **Sortuj według**, a następnie wybierz nagłówek. Aby dokładniej udoskonalić wyniki wyszukiwania, naciśnij klawisz **SHIFT** i wybierz drugi nagłówek.
 
-Aby pokazać lub ukryć kolumny, w menu skrótów wybierz **Pokaż kolumny**. Wybierz kolumny, które chcesz pokazać lub ukryć.
+Aby pokazać lub ukryć kolumny, w menu skrótów wybierz polecenie **Pokaż kolumny**. Wybierz kolumny, które chcesz pokazać lub ukryć.
 
-Aby zmienić kolejność kolumn, przeciągnij dowolny nagłówek kolumny do dowolnej lokalizacji.
+Aby zmienić kolejność kolumn, przeciągnij dowolny nagłówek kolumny do lokalizacji, której chcesz użyć.
 
 ## <a name="user-tasks"></a>Zadania użytkownika
 
-Funkcja zadania użytkownika został usunięty w programie Visual Studio 2015. Po otwarciu rozwiązania, na które ma dane zadania użytkownika z programu Visual Studio 2013 lub starszej, użytkownik zadań danych w Twojej *.suo* nie wpływa na plik, ale zadania użytkownika nie są wyświetlane na liście zadań.
+Funkcja zadania użytkownika została usunięta w programie Visual Studio 2015. Po otwarciu rozwiązania, które zawiera dane zadania użytkownika z Visual Studio 2013 i wcześniejszych, nie ma to zmian w danych zadania użytkownika w pliku *. suo* , ale zadania użytkownika nie są wyświetlane na liście zadań.
 
-Jeśli chcesz w dalszym ciągu uzyskać dostęp i zaktualizować swoje dane zadanie, otwórz projekt w programie Visual Studio 2013 i skopiuj zawartość każdego zadania użytkownika do narzędzia do zarządzania projektem preferowanych usługi (takie jak Team Foundation Server).
+Jeśli chcesz nadal uzyskiwać dostęp do danych zadania użytkownika i aktualizować je, Otwórz projekt w Visual Studio 2013 i skopiuj zawartość wszystkich zadań użytkownika do preferowanego narzędzia do zarządzania projektami (na przykład Team Foundation Server).
 
 ## <a name="tokens-and-comments"></a>Tokeny i komentarze
 
-Komentarz w kodzie poprzedzony przez znacznik komentarza i wstępnie zdefiniowany token pojawi się również w **listy zadań**. Na przykład, poniższy komentarz C# ma trzy oddzielne części:
+Komentarz w kodzie poprzedzony znacznikiem komentarza i wstępnie zdefiniowany token pojawia się również w **Lista zadań**. Na przykład, poniższy komentarz C# ma trzy oddzielne części:
 
 - Znacznik komentarza (`//`)
 
@@ -62,50 +62,53 @@ Komentarz w kodzie poprzedzony przez znacznik komentarza i wstępnie zdefiniowan
 // TODO: Load state from previously suspended application
 ```
 
-Ponieważ `TODO` jest wstępnie zdefiniowany token, ten komentarz jest wyświetlany jako `TODO` zadanie na liście.
+Ponieważ `TODO` jest wstępnie zdefiniowanym tokenem, ten komentarz jest `TODO` wyświetlany jako zadanie na liście.
+
+> [!NOTE]
+> Tokeny domyślne są dostępne tylko dla języków CC++/ C#, i VB. W przypadku innych języków zapoznaj się z sekcją **tokeny niestandardowe** .
 
 ### <a name="custom-tokens"></a>Tokeny niestandardowe
 
-Domyślnie program Visual Studio zawiera następujące tokeny: `HACK`, `TODO`, `UNDONE`, i `UnresolvedMergeConflict`. Nie są one uwzględniana wielkość liter. Można również utworzyć własne niestandardowe tokeny.
+Domyślnie program Visual Studio zawiera `HACK`następujące tokeny:, `TODO`, `UNDONE`i `UnresolvedMergeConflict`. Wielkość liter nie jest rozróżniana. Można również utworzyć własne niestandardowe tokeny.
 
-Aby utworzyć niestandardowy token:
+Aby utworzyć token niestandardowy:
 
 1. Na **narzędzia** menu, wybierz **opcje**.
 
-2. Otwórz **środowiska** folder, a następnie wybierz **listy zadań**.
+2. Otwórz folder **środowisko** , a następnie wybierz **Lista zadań**.
 
-   [Strona Opcje listy zadań](../ide/reference/task-list-environment-options-dialog-box.md) jest wyświetlana.
+   Zostanie wyświetlona [Strona opcje Lista zadań](../ide/reference/task-list-environment-options-dialog-box.md) .
 
-   ![Lista zadań w programie Visual Studio](../ide/media/vs2015_task_list_options.png)
+   ![Lista zadań programu Visual Studio](../ide/media/vs2015_task_list_options.png)
 
-3. W **nazwa** tekst na przykład wprowadź nazwę tokenu, **USTERKI**.
+3. W polu tekstowym **Nazwa** wprowadź nazwę tokenu, na przykład usterka.
 
-4. W **priorytet** listy rozwijanej wybierz domyślny priorytet dla nowego tokenu.
+4. Z listy rozwijanej **priorytet** wybierz domyślny priorytet dla nowego tokenu.
 
 5. Wybierz **Dodaj**.
 
 > [!TIP]
-> **Dodaj** przycisk staje się dostępny po podaniu nazwy. Należy wprowadzić nazwę przed kliknięciem przycisku **Dodaj**.
+> Przycisk **Dodaj** zostanie włączony po wprowadzeniu nazwy. Musisz wprowadzić nazwę przed kliknięciem przycisku **Dodaj**.
 
 ### <a name="c-todo-comments"></a>Komentarze C++ TODO
 
-Domyślnie, komentarze C++ TODO są wyświetlane w **listy zadań**.
+Domyślnie Komentarze do C++ zrobienia są wyświetlane w **Lista zadań**.
 
-Aby wyłączyć komentarze C++ TODO na **narzędzia** menu, wybierz **opcje** > **edytora tekstów** > **C/C++**  >  **Widoku** > **Wylicz zadania komentarza**, a następnie ustaw wartość **false**.
+C++ Aby wyłączyć Komentarze do wykonania, w menu **Narzędzia** wybierz polecenie **Opcje** > **Edytor** > tekstu > **C/C++** **Wyświetl** > **Wyliczenie komentarzy zadania** i ustaw wartość na **false**.
 
 ## <a name="shortcuts"></a>Skróty
 
-A *skrótów* to zakładka w kodzie, który jest śledzona w **listy zadań**. Ma inną ikonę niż regularne zakładki. Kliknij dwukrotnie skrót **listy zadań** można przejść do odpowiedniej lokalizacji w kodzie.
+*Skrót* jest zakładką w kodzie, który jest śledzony w **Lista zadań**. Ma inną ikonę niż zwykła Zakładka. Kliknij dwukrotnie skrót w **Lista zadań** , aby przejść do odpowiedniej lokalizacji w kodzie.
 
-![Ikona skrót listy zadań programu Visual Studio](../ide/media/vs2015_task_list_bookmark.png)
+![Ikona skrótu Lista zadań programu Visual Studio](../ide/media/vs2015_task_list_bookmark.png)
 
 ### <a name="create-a-shortcut"></a>Utwórz skrót
 
-Aby utworzyć skrót, Wstaw wskaźnik do kodu, w którym chcesz umieścić skrót. Wybierz **Edytuj** > **zakładki** > **Dodaj skrót do listy zadań** lub naciśnij **Ctrl** + **K**, **Ctrl**+**H**.
+Aby utworzyć skrót, Wstaw wskaźnik do kodu, w którym chcesz umieścić skrót. Wybierz pozycję **Edytuj** > **zakładki** ++Dodaj Lista zadań skrót lub naciśnij klawisze CTRL K, CTRL H. > 
 
-Do nawigowania w skrótach w kodzie, wybierz skrót na liście, a następnie wybierz **następne zadanie** lub **poprzednie zadanie** z menu skrótów.
+Aby nawigować przez skróty w kodzie, wybierz skrót z listy, a następnie wybierz **następne zadanie** lub **poprzednie zadanie** z menu skrótów.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Lista, środowisko, opcje, okno dialogowe zadań](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Lista zadań, środowisko, Opcje — okno dialogowe](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Komentarze do zadań (Visual Studio dla komputerów Mac)](/visualstudio/mac/task-comments)

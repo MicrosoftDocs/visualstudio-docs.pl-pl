@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925856"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154907"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
@@ -48,7 +48,7 @@ W przypadku projektów reguł programu make, które są oparte na szablonie proj
 
 ### <a name="open-folder-projects"></a>Otwórz projekty folderu
 
-W przypadku projektów CMake upewnij się, że ścieżki #include są poprawnie określone dla wszystkich konfiguracji w CMakeLists. txt. Inne typy projektów mogą wymagać pliku pliku cppproperties. JSON. Aby uzyskać więcej informacji, zobacz [Konfigurowanie funkcji IntelliSense z pliku cppproperties. JSON](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Upewnij się, że ścieżki są poprawne dla każdej konfiguracji, która jest zdefiniowana w pliku.
+W przypadku projektów CMake upewnij się, że ścieżki #include są poprawnie określone dla wszystkich konfiguracji w CMakeLists. txt. Inne typy projektów mogą wymagać pliku pliku cppproperties. JSON. Aby uzyskać więcej informacji, zobacz [Konfigurowanie funkcji IntelliSense z pliku cppproperties. JSON](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson). Upewnij się, że ścieżki są poprawne dla każdej konfiguracji, która jest zdefiniowana w pliku.
 
 Jeśli w pliku pliku cppproperties. JSON wystąpi błąd składniowy, IntelliSense w plikach, których dotyczy problem, będzie niepoprawna. Program Visual Studio wyświetli błąd w Okno Dane wyjściowe.
 
