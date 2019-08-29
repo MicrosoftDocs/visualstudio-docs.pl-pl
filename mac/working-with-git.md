@@ -1,101 +1,101 @@
 ---
 title: Praca z usługą Git
-description: Za pomocą narzędzia Git w programie Visual Studio dla komputerów Mac.
+description: Korzystanie z narzędzia Git w Visual Studio dla komputerów Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: b047222f67d75bbc092a731c8de1ca1ba6d94cf7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692162"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108024"
 ---
 # <a name="working-with-git"></a>Praca z usługą Git
 
-Git to Rozproszony system kontroli wersji umożliwiający zespoły mogą pracować na tym samym dokumentach jednocześnie. Oznacza to, że jest centralny serwer, który zawiera wszystkie pliki, ale jeśli repozytorium jest wyewidencjonowany z tego źródła centralnej, całe repozytorium został sklonowany do komputera lokalnego.
+Git to rozproszony system kontroli wersji, który umożliwia zespołom równoczesne działanie tych samych dokumentów. Oznacza to, że istnieje centralny serwer, który zawiera wszystkie pliki, ale jeśli repozytorium jest wyewidencjonowane z tego centralnego źródła, całe repozytorium jest sklonowane na komputerze lokalnym.
 
-W poniższych sekcjach przedstawimy, jak Git może służyć do kontroli wersji w programie Visual Studio dla komputerów Mac.
+Poniższe sekcje zapoznają się z sposobem korzystania z usługi Git na potrzeby kontroli wersji w Visual Studio dla komputerów Mac.
 
-## <a name="git-version-control-menu"></a>Menu Kontrola wersji Git
+## <a name="git-version-control-menu"></a>Menu kontroli wersji Git
 
-Na poniższej ilustracji przedstawiono opcje dostarczane przez program Visual Studio dla komputerów Mac przez element menu kontroli wersji:
+Na poniższym obrazie przedstawiono opcje dostępne Visual Studio dla komputerów Mac przez element menu kontroli wersji:
 
 ![Element menu kontroli wersji](media/version-control-gitVersionControlMenu.png)
 
 ## <a name="push-and-pull"></a>Wypychanie i ściąganie
 
-Wypychanie i ściąganie są dwa najczęściej używane akcje w ramach usługi Git. Aby zsynchronizować zmiany zostały wprowadzone do repozytorium zdalnego dla innych osób, musisz mieć **ściągnięcia** z tego miejsca. Odbywa się w programie Visual Studio dla komputerów Mac, wybierając **kontroli wersji > rozwiązania Update**.
+Wypychanie i ściąganie to dwie z najczęściej używanych działań w ramach usługi git. Aby synchronizować zmiany wprowadzone przez inne osoby w repozytorium zdalnym, należy **ściągnąć** z tego miejsca. Odbywa się to w Visual Studio dla komputerów Mac, wybierając pozycję **Kontrola wersji > Aktualizuj rozwiązanie**.
 
-Gdy zaktualizowane pliki, przeglądane i zatwierdzane ich należy następnie **wypychania** ich do repozytorium zdalnego, aby umożliwić innym osobom uzyskanie dostępu do zmiany. Odbywa się w programie Visual Studio dla komputerów Mac, wybierając **kontroli wersji > wypychanie zmian**. Spowoduje to wyświetlić okno dialogowe wypychania, który umożliwia przeglądanie zatwierdzone zmiany i wybierz gałąź, aby wypchnąć do:
+Po zaktualizowaniu plików przejrzyj je i zatwierdzić, a następnie wypchnij je do repozytorium zdalnego, aby umożliwić innym osobom dostęp do Twoich zmian. Odbywa się to w Visual Studio dla komputerów Mac przez wybranie pozycji **Kontrola wersji > wypychania zmian**. Spowoduje to wyświetlenie okna dialogowego wypychania, umożliwiające wyświetlenie zatwierdzonych zmian i wybranie gałęzi, do której ma zostać wykonane wypychanie:
 
-![Okno dialogowe z wyświetloną gałęzi, aby zatwierdzić](media/version-control-gitPush.png)
+![Okno dialogowe pokazujące gałąź do zatwierdzenia](media/version-control-gitPush.png)
 
-Można także zatwierdzić i wypchnąć zmiany w tym samym czasie, za pomocą okna dialogowego zatwierdzenia:
+Możesz również zatwierdzić i wypchnąć zmiany w tym samym czasie, za pomocą okna dialogowego zatwierdzania:
 
-![Opcja pokazujący sposób Zatwierdź i Wypchnij w tym samym czasie.](media/version-control-commitPush.png)
+![Opcja pokazująca, jak zatwierdzić i wypchnąć w tym samym czasie.](media/version-control-commitPush.png)
 
-## <a name="blame-log-and-merge"></a>Polecenia blame dziennika i scalania
+## <a name="blame-log-and-merge"></a>Polecenia Blame, Rejestruj i Scalaj
 
-W dolnej części okna istnieje pięć kart wyświetlane, jak przedstawiono poniżej:
+W dolnej części okna wyświetlane są pięć kart, jak pokazano poniżej:
 
-![Wersja kontrolki karty](media/version-control-gitTabs.png)
+![Karty kontroli wersji](media/version-control-gitTabs.png)
 
-Umożliwiają one następujące akcje:
+Umożliwiają one wykonywanie następujących czynności:
 
-* **Źródło** -Wyświetla pliku kodu źródłowego.
-* **Zmiany** -wyświetla zmiany kodu między plik lokalny i pliku podstawowego. Można również porównać różnych wersji pliku z różnych skrótów:
+* **Źródło** — wyświetla plik kodu źródłowego.
+* **Zmiany** — wyświetla zmiany w kodzie między plikiem lokalnym a plikiem podstawowym. Możesz również porównać różne wersje pliku z różnych skrótów:
 
     ![Karta zmiany](media/version-control-gitChange.png)
 
-* **Polecenia blame** -Wyświetla nazwę użytkownika skojarzonego z każdej sekcji kodu.
-* **Dziennik** -Wyświetla wszystkie zatwierdzenia, godziny, daty, wiadomości i użytkowników, którzy są odpowiedzialni za pliku:
+* **Polecenia Blame** — wyświetla nazwę użytkownika skojarzoną z każdą sekcją kodu.
+* **Log** — wyświetla wszystkie zatwierdzenia, godziny, daty, komunikaty i użytkowników odpowiedzialne za plik:
 
-    ![Karta dziennika](media/version-control-gitLog.png)
+    ![Karta Dziennik](media/version-control-gitLog.png)
 
-* **Scalanie** — może to służyć w przypadku konfliktu scalania podczas zatwierdzania pracy. Pokazuje wizualną reprezentację zmiany wprowadzone przez Ciebie i innych deweloperów, dzięki czemu możesz połączyć obie sekcje kodu nie pozostawia żadnych śladów.
+* **Scalanie** — ten element może być używany w przypadku konfliktu scalania podczas zatwierdzania pracy. Pokazuje wizualną reprezentację zmian dokonanych przez Ciebie i innego programisty, co pozwala na przejrzyste łączenie obu sekcji kodu.
 
 ## <a name="switching-branches"></a>Przełączanie gałęzi
 
-Domyślnie pierwszej gałęzi, które są tworzone w repozytorium jest znany jako **wzorzec** gałęzi. Nie ma pod względem technicznym żadnych różnic między głównej gałęzi i inne, ale gałąź główna jest tą, która jest w większości przypadków traktować w zespołów programistycznych jako gałąź "live" lub "produkcja".
+Domyślnie pierwsza gałąź utworzona w repozytorium jest określana jako gałąź **główna** . Między gałęzią główną a innymi nie istnieje technicznie wszystko, ale gałąź główna jest taka, która najczęściej jest przemyślana w zespołach programistycznych jako gałąź "na żywo" lub "produkcja".
 
-Niezależnie od wiersza rozwoju mogą być tworzone przez Rozgałęzianie poza głównego (lub dowolnej innej gałęzi istotnego dla badania). Dzięki temu można nowej wersji głównej gałęzi w punkcie w czasie, co do tworzenia aplikacji, niezależnie od co to jest "live". Korzystając z odgałęzień w ten sposób jest często używana na potrzeby funkcji podczas tworzenia oprogramowania
+Niezależny wiersz rozwoju może być tworzony przez rozgałęzienie (lub inne gałęzie). Zapewnia to nową wersję gałęzi głównej w danym momencie, umożliwiając programowanie niezależnie od tego, co to jest "Live". Używanie gałęzi w ten sposób często jest używane do tworzenia oprogramowania
 
-Użytkownicy mogą tworzyć jako wiele gałęzi, takich jak ich dla każdego repozytorium, ale zaleca się, że po zakończeniu ich przy użyciu gałęzi, ich usunięcia go, aby zachować repozytorium organizacji.
+Użytkownicy mogą utworzyć dowolną liczbę gałęzi dla każdego repozytorium, ale zaleca się, aby po zakończeniu korzystania z gałęzi była ona usuwana, aby zachować zorganizowanie repozytorium.
 
-Gałęzie są wyświetlane w programie Visual Studio dla komputerów Mac, przechodząc do **kontroli wersji > Zarządzanie gałęziami i źródłami zdalnymi...** :
+Gałęzie są wyświetlane w Visual Studio dla komputerów Mac przez przechodzenie do **kontroli wersji > zarządzanie gałęziami i zdalnymi...** :
 
-![Wyświetl gałęzi](media/version-control-gitBranch2.png)
+![Widok gałęzi](media/version-control-gitBranch2.png)
 
-Przełącz na inną gałąź, wybierając ją na liście i naciskając klawisz **Przełącz do gałęzi** przycisku.
+Przejdź do innej gałęzi, wybierając ją na liście i naciskając przycisk **Przełącz do gałęzi** .
 
-Aby utworzyć nowy Wybierz gałąź **New** przycisk w oknie dialogowym Konfiguracja repozytorium Git. Wprowadź nową nazwę gałęzi:
+Aby utworzyć nową gałąź, wybierz przycisk **Nowy** w oknie dialogowym Konfiguracja repozytorium git. Wprowadź nową nazwę gałęzi:
 
 ![Utwórz nową gałąź](media/version-control-gitBranch.png)
 
-Można również ustawić gałęzi zdalnej, Twoje _śledzenia_ gałęzi. Przeczytaj więcej na temat śledzenia gałęzi, skorzystaj z [dokumentacja usługi Git](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches).
+Można również ustawić gałąź zdalną dla gałęzi _śledzenia_ . Przeczytaj więcej na temat śledzenia gałęzi w [dokumentacji usługi git](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches).
 
-Zobacz bieżącej gałęzi w konsoli rozwiązania, obok nazwy projektu:
+Zapoznaj się z bieżącą gałęzią w okienko rozwiązania obok nazwy projektu:
 
- ![Bieżąca gałąź wyświetlane w konsoli rozwiązania](media/version-control-gitBranchName.png)
+ ![Bieżąca gałąź wyświetlana w konsoli rozwiązania](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>Przeglądu i zatwierdzania
+## <a name="reviewing-and-committing"></a>Przeglądanie i zatwierdzanie
 
-O przegląd zmian dokonanych w plikach, użyj zmiany, polecenia Blame, dzienników i scalić kartach każdego dokumentu, przedstawione wcześniej w tym temacie.
+Aby przejrzeć zmiany w plikach, Skorzystaj z kart zmiany, polecenia Blame, log i Merge w każdym dokumencie przedstawionym wcześniej w tym temacie.
 
-Przejrzyj wszystkie zmiany w projekcie, przechodząc do **kontroli wersji > Przejrzyj rozwiązanie i zatwierdź** element menu:
+Przejrzyj wszystkie zmiany w projekcie, przechodząc do okna **Kontrola wersji > Przejrzyj rozwiązanie i** element menu zatwierdzania:
 
-![Sprawdź widok kodu](media/version-control-gitReviewCommit.png)
+![Przejrzyj widok kodu](media/version-control-gitReviewCommit.png)
 
-Umożliwia to wyświetlanie wszystkich zmian w każdym pliku projektu z możliwością przywrócenia, Utwórz poprawkę lub czy zatwierdzić.
+Umożliwia to wyświetlanie wszystkich zmian w każdym pliku projektu z opcją przywracania, tworzenia poprawki lub zatwierdzania.
 
-Aby przekazać plik do repozytorium zdalnego, naciśnij klawisze **zatwierdzenia**, wprowadź wiadomość dotyczącą zatwierdzenia i upewnij się, za pomocą przycisku zatwierdzenia:
+Aby zatwierdzić plik do repozytorium zdalnego, naciśnijprzycisk Zatwierdź, Wprowadź wiadomość dotyczącą zatwierdzenia i Potwierdź przy użyciu przycisku zatwierdzania:
 
 ![Zatwierdzanie pliku](media/version-control-gitCommit.png)
 
-Raz zostały zatwierdzone zmiany i przekazać je do repozytorium zdalnego, aby umożliwić innym użytkownikom je zobaczyć.
+Po zatwierdzeniu zmian wypchnij je do zdalnego repozytorium, aby umożliwić innym użytkownikom ich wyświetlanie.
 
 ## <a name="related-video"></a>Pokrewne wideo
 
@@ -103,4 +103,4 @@ Raz zostały zatwierdzone zmiany i przekazać je do repozytorium zdalnego, aby u
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Udostępnij swój kod za pomocą programu Visual Studio 2017 i Azure repozytoriów Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017)
+* [Udostępnianie kodu w programie Visual Studio 2017 i Azure Repos git](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

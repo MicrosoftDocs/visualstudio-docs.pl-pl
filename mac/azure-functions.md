@@ -1,162 +1,161 @@
 ---
 title: Wprowadzenie do usługi Azure Functions
-description: Użycie usługi Azure functions w programie Visual Studio dla komputerów Mac.
+description: Korzystanie z usługi Azure Functions w Visual Studio dla komputerów Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 04/02/2019
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ef59a45bd3dd5b3ab2f3e5219d6674c8e7b095e2
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825551"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108075"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
-Usługa Azure functions to sposób tworzenia i uruchamiania oparte na zdarzeniach fragmenty kodu — — funkcje — — w chmurze, bez konieczności jawnego przydzielania infrastruktury ani zarządzania tą infrastrukturą. Aby uzyskać więcej informacji na temat usługi Azure Functions, zobacz [dokumentacji usługi Azure Functions](/azure/azure-functions/).
+Usługa Azure Functions to sposób tworzenia i uruchamiania fragmentów kodu opartych na zdarzeniach — w chmurze, bez konieczności jawnego udostępniania infrastruktury ani zarządzania nią. Aby uzyskać więcej informacji na temat Azure Functions, zobacz [dokumentację Azure Functions](/azure/azure-functions/).
 
 ## <a name="requirements"></a>Wymagania
 
-Narzędzia funkcji platformy Azure są objęte **programu Visual Studio dla komputerów Mac w wersji 7.5** i nowszych.
+Narzędzia usługi Azure Functions są zawarte w **Visual Studio dla komputerów Mac 7,5** i nowszych.
 
-Aby utworzyć i wdrożyć funkcje należy również subskrypcji platformy Azure, która jest dostępna bezpłatnie w [ https://azure.com/free ](https://azure.com/free).
+Aby tworzyć i wdrażać funkcje, należy również uzyskać subskrypcję platformy Azure, która jest dostępna [https://azure.com/free](https://azure.com/free)bezpłatnie z programu.
 
-## <a name="creating-your-first-azure-functions-project"></a>Tworzenie pierwszego projektu usługi Azure Functions
+## <a name="creating-your-first-azure-functions-project"></a>Tworzenie pierwszego projektu Azure Functions
 
-1. W programie Visual Studio dla komputerów Mac, wybierz **Plik > nowe rozwiązanie**.
-2. Z poziomu okna dialogowego Nowy projekt, wybierz szablon usługi Azure Functions w ramach **chmura > Ogólne** i kliknij przycisk **dalej**:
+1. W Visual Studio dla komputerów Mac wybierz pozycję **plik > nowe rozwiązanie**.
+2. W oknie dialogowym Nowy projekt wybierz szablon Azure Functions w obszarze **Cloud > ogólne** , a następnie kliknij przycisk **dalej**:
 
-    ![Okno dialogowe nowego projektu pokazujący opcję usługi Azure functions](media/azure-functions-image1.png)
+    ![Okno dialogowe Nowy projekt z opcją Azure Functions](media/azure-functions-image1.png)
 
-3. Wybierz początkowy szablon usługi Azure Functions, którego chcesz użyć, wprowadź nazwę funkcji i kliknij przycisk **dalej**.
+3. Wybierz początkowy szablon Azure Functions, którego chcesz użyć, wprowadź nazwę funkcji, a następnie kliknij przycisk **dalej**.
 
-    ![Okno dialogowe nowego projektu przedstawiający szablony usługi Azure functions](media/azure-functions-image2.png)
+    ![Okno dialogowe Nowy projekt z szablonami usługi Azure Functions](media/azure-functions-image2.png)
 
     > [!TIP]
-    > Gdy powiązane środowisko uruchomieniowe usługi Azure Functions i szablony (CLI) są zachowywane do daty, jak to możliwe, podlegają nieuchronnym otrzymują nieaktualne. Podczas tworzenia nowego projektu usługi Functions, Visual Studio for Mac będzie sprawdzać dostępność aktualizacji dla interfejsu wiersza polecenia i Powiadomimy Cię, jak pokazano na poniższej ilustracji. Po prostu kliknij przycisk aby pobrać zaktualizowane szablony.
-    > ![Okno dialogowe nowego projektu przedstawiający aktualizacje usługi Azure functions są dostępne](media/azure-functions-update.png)
+    > Chociaż powiązane Azure Functions środowisko uruchomieniowe i szablony (CLI) są jak najprawdopodobniej aktualne, są one nieaktualne. Podczas tworzenia nowego projektu funkcji program Visual Studio dla komputerów Mac sprawdzi dostępność aktualizacji interfejsu wiersza polecenia i wyświetli powiadomienie, jak pokazano na poniższej ilustracji. Wystarczy kliknąć przycisk, aby pobrać zaktualizowane szablony.
+    > ![Dostępne jest okno dialogowe Nowy projekt pokazujące aktualizacje usługi Azure Functions](media/azure-functions-update.png)
 
-    W zależności od typu funkcji, którą wybierzesz następnej strony wyświetli monit wprowadź szczegóły, takie jak prawa dostępu, jak pokazano na poniższej ilustracji:
+    W zależności od wybranego typu funkcji Następna strona wyświetli monit o podanie szczegółowych informacji, takich jak prawa dostępu, jak pokazano na poniższej ilustracji:
 
-    ![Okno dialogowe nowego projektu przedstawiający dodatkową opcję](media/azure-functions-image3.png)
+    ![Okno dialogowe Nowy projekt z dodatkową opcją](media/azure-functions-image3.png)
 
-    Aby uzyskać więcej informacji na temat różnych typów szablonów usługi Azure Functions i powiązania właściwości wymagane do skonfigurowania każdego szablonu, zobacz [szablonów dostępnych funkcji](#available-function-templates) sekcji. W tym przykładzie używamy wyzwalacza Http przy użyciu dostępu ustawionych uprawnień do anonimowych.
+    Aby uzyskać więcej informacji na temat różnych typów szablonów Azure Functions i właściwości powiązań wymaganych do skonfigurowania poszczególnych szablonów, zobacz sekcję [dostępne szablony funkcji](#available-function-templates) . W tym przykładzie korzystamy z wyzwalacza http z prawami dostępu ustawionymi jako anonimowe.
 
-4. Po ustawieniu parametrów, wybierz lokalizację projektu i kliknij przycisk **Utwórz**.
+4. Po ustawieniu parametrów wybierz lokalizację projektu i kliknij przycisk **Utwórz**.
 
-Program Visual Studio for Mac tworzy projekt .NET Standard za pomocą domyślnej funkcji uwzględnione. Obejmuje również odwołania do NuGet z szeroką gamą **AzureWebJobs** pakietów, jak również **Newtonsoft.Json** pakietu.
+Visual Studio dla komputerów Mac tworzy projekt .NET Standard z dołączoną funkcją domyślną. Zawiera również odwołania NuGet do różnych pakietów **AzureWebJobs** , a także pakiet **Newtonsoft. JSON** .
 
-![Program Visual Studio for Mac edytora wyświetlanie całkiem nowych funkcji platformy azure za pomocą szablonu](media/azure-functions-newproj.png)
+![Edytor Visual Studio dla komputerów Mac wyświetlający zupełnie nową funkcję platformy Azure z szablonu](media/azure-functions-newproj.png)
 
 Nowy projekt zawiera następujące pliki:
 
-* **Twój name.cs funkcja** — ta klasa zawiera schematyczny kod służący do wybranej funkcji. Zawiera on **FunctionName** atrybutu o nazwie funkcji, a atrybut wyzwalacz, który określa, jakie wywołuje funkcję (np.) żądanie HTTP). Aby uzyskać więcej informacji na temat funkcji metody, zobacz [dokumentacja dla deweloperów usługi Azure Functions C#](/azure/azure-functions/functions-dotnet-class-library) artykułu.
-* **Host.JSON** — w tym pliku opisano opcje konfiguracji globalnej dla hosta funkcji. Przykładowy plik i informacji na temat dostępnych ustawień dla tego pliku, zobacz [dokumentacja pliku host.JSON dla usługi Azure Functions](/azure/azure-functions/functions-host-json).
-* **Local.Settings.JSON** — ten plik zawiera wszystkie ustawienia dla działających funkcji lokalnie. Te ustawienia są używane przez podstawowych narzędzi usługi Azure Functions. Aby uzyskać więcej informacji, zobacz [pliku ustawień lokalnych](/azure/azure-functions/functions-run-local#local-settings-file) w artykule podstawowych narzędzi usługi Azure Functions.
+* **Your-Function-Name.cs** — Ta klasa zawiera kod standardowy dla wybranej funkcji. Zawiera atrybut **FunctionName** z nazwą funkcji i atrybut wyzwalacza, który określa, co wyzwala funkcja (np. żądanie HTTP). Aby uzyskać więcej informacji o metodzie funkcji, zapoznaj się z artykułem dotyczącym [dokumentacji dla deweloperów Azure Functions C# ](/azure/azure-functions/functions-dotnet-class-library) .
+* **host. JSON** — ten plik zawiera opis globalnych opcji konfiguracji dla hosta usługi Functions. Przykładowy plik i informacje dotyczące dostępnych ustawień dla tego pliku można znaleźć w [dokumentacji pliku host. JSON dla Azure Functions](/azure/azure-functions/functions-host-json).
+* **Local. Settings. JSON** — ten plik zawiera wszystkie ustawienia dla uruchomionych funkcji lokalnie. Te ustawienia są używane przez Azure Functions Core Tools. Aby uzyskać więcej informacji, zobacz [plik ustawień lokalnych](/azure/azure-functions/functions-run-local#local-settings-file) w artykule Azure Functions Core Tools.
 
-Teraz, po utworzeniu nowego projektu usługi Azure Functions w programie Visual Studio dla komputerów Mac, możesz przetestować się domyślnej funkcji wyzwalanej przez HTTP z komputera lokalnego.
+Po utworzeniu nowego projektu Azure Functions w Visual Studio dla komputerów Mac można przetestować domyślną funkcję wyzwalaną przez protokół HTTP na komputerze lokalnym.
 
-## <a name="testing-the-function-locally"></a>Testowanie funkcji lokalnie
+## <a name="testing-the-function-locally"></a>Lokalne testowanie funkcji
 
-Dzięki obsłudze usługi Azure Functions w programie Visual Studio dla komputerów Mac może testowanie i debugowanie funkcji na lokalnym komputerze deweloperskim.
+Dzięki obsłudze Azure Functions w Visual Studio dla komputerów Mac można testować i debugować funkcję na lokalnym komputerze deweloperskim.
 
-1. Aby przetestować funkcję lokalnie, naciśnij klawisz **Uruchom** przycisku w programie Visual Studio dla komputerów Mac:
+1. Aby przetestować funkcję lokalnie, naciśnij przycisk **Run (Uruchom** ) w Visual Studio dla komputerów Mac:
 
-    ![Rozpocznij debugowanie przycisku w programie visual studio dla komputerów mac](media/azure-functions-run.png)
+    ![Przycisk Rozpocznij debugowanie w programie Visual Studio dla komputerów Mac](media/azure-functions-run.png)
 
-1. Uruchamianie projektu uruchamia lokalne debugowanie funkcji platformy Azure i otwiera nowe okno terminalu, jak pokazano na poniższej ilustracji:
+1. Uruchomienie projektu uruchamia lokalne debugowanie w usłudze Azure Function i otwiera nowe okno terminalu, jak pokazano na poniższej ilustracji:
 
-    ![dane wyjściowe funkcji przedstawiający okno terminalu](media/azure-functions-terminal.png)
+    ![okno terminalu przedstawiające dane wyjściowe funkcji](media/azure-functions-terminal.png)
 
     Skopiuj adres URL z danych wyjściowych.
 
-3. Wklej adres URL żądania HTTP do paska adresu w przeglądarce. Dodaj ciąg zapytania `?name=<yourname>` na końcu adresu URL i wykonaj żądanie. Na poniższej ilustracji przedstawiono odpowiedzi w przeglądarce, aby lokalne żądanie GET zwróconą przez funkcję:
+3. Wklej adres URL żądania HTTP na pasku adresu przeglądarki. Dodaj ciąg `?name=<yourname>` zapytania na końcu adresu URL i wykonaj żądanie. Na poniższej ilustracji przedstawiono odpowiedź w przeglądarce do lokalnego żądania GET zwróconego przez funkcję:
 
-    ![żądania HTTP w przeglądarce](media/azure-functions-httpreq.png)
+    ![żądanie HTTP w przeglądarce](media/azure-functions-httpreq.png)
 
 ## <a name="adding-another-function-to-your-project"></a>Dodawanie innej funkcji do projektu
 
 Szablony funkcji umożliwiają szybkie tworzenie nowych funkcji przy użyciu najczęściej stosowanych wyzwalaczy i szablonów. Aby utworzyć inny typ funkcji, wykonaj następujące czynności:
 
-1. Aby dodać nową funkcję, kliknij prawym przyciskiem myszy nazwę projektu, a następnie wybierz **Dodaj > Dodaj funkcję...** :
+1. Aby dodać nową funkcję, kliknij prawym przyciskiem myszy nazwę projektu i wybierz polecenie **dodaj > Dodaj funkcję...** :
 
-    ![Akcja kontekstu do dodawania nowych funkcji](media/azure-functions-addnew.png)
+    ![Akcja kontekstowa dodawania nowej funkcji](media/azure-functions-addnew.png)
 
-2. Z **nowej funkcji platformy Azure** okno dialogowe, wybierz funkcję, potrzebujesz:
+2. W oknie dialogowym **Nowa funkcja platformy Azure** wybierz wymaganą funkcję:
 
-    ![okno dialogowe Nowy funkcji platformy azure](media/azure-functions-image4.png)
+    ![nowe okno dialogowe funkcji platformy Azure](media/azure-functions-image4.png)
 
-    Lista szablonów funkcji platformy Azure znajdują się w [szablonów dostępnych funkcji](#available-function-templates) sekcji.
+    Lista szablonów funkcji platformy Azure znajduje się w sekcji [dostępne szablony funkcji](#available-function-templates) .
 
-Powyższej procedury można użyć, aby dodać więcej funkcji do projektu aplikacji funkcji. Każda funkcja w projekcie mogą mieć różne wyzwalacza, ale funkcja musi mieć dokładnie jeden wyzwalacz. Aby uzyskać więcej informacji, zobacz [pojęcia powiązania i Wyzwalacze usługi Azure Functions](/azure/azure-functions/functions-triggers-bindings).
+Korzystając z powyższej procedury, można dodać więcej funkcji do projektu aplikacji funkcji. Każda funkcja w projekcie może mieć inny wyzwalacz, ale funkcja musi mieć dokładnie jeden wyzwalacz. Aby uzyskać więcej informacji, zobacz temat [Azure Functions wyzwalacze i koncepcje powiązań](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-1. Kliknij prawym przyciskiem myszy nazwę projektu, a następnie wybierz pozycję **Opublikuj > Opublikuj na platformie Azure**:  ![Publikowanie do opcji menu platformy azure](media/azure-functions-image5.png)
-2. Jeśli już nawiązano subskrypcji platformy Azure konta programu Visual Studio dla komputerów Mac lista dostępnych aplikacji, które usługi są wyświetlane. Jeśli użytkownik nie zalogował się, zostanie wyświetlony monit Aby to zrobić.
-3. Z **Publikuj w usłudze Azure App Service** okna dialogowego, można wybrać istniejącą usługę app lub Utwórz nowe, klikając **New**.
-4. W **Tworzenie nowej usługi App Service** okno dialogowe, wprowadź ustawienia:  ![Publikowanie do opcji menu platformy azure](media/azure-functions-image7.png)
+1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz pozycję **publikuj > Opublikuj na platformie Azure**:  ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image5.png)
+2. Jeśli masz już połączenie z kontem platformy Azure w celu Visual Studio dla komputerów Mac zostanie wyświetlona lista dostępnych usług App Services. Jeśli użytkownik nie zalogował się, zostanie wyświetlony odpowiedni monit.
+3. W oknie dialogowym **Publikowanie w Azure App Service** możesz wybrać istniejącą usługę App Service lub utworzyć nową, klikając przycisk **Nowy**.
+4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia:  ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image7.png)
 
     |Ustawienie  |Opis  |
     |---------|---------|
-    |**Nazwa usługi App Service**|Unikatowa nazwa identyfikująca nową aplikację funkcji.|
+    |**Nazwa App Service**|Globalnie unikatowa nazwa identyfikująca nową aplikację funkcji.|
     |**Subskrypcja**|Subskrypcja platformy Azure do użycia.|
-    |**[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)**|Nazwa grupy zasobów, w której chcesz utworzyć aplikację funkcji. Wybierz **+** do tworzenia nowej grupy zasobów.|
-    |**[Plan usługi](/azure/azure-functions/functions-scale)**|Wybierz istniejący plan lub utworzyć niestandardowy plan. Wybierz lokalizację w regionie blisko Ciebie lub w pobliżu innych usług, dostęp do usługi functions.|
+    |**[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)**|Nazwa grupy zasobów, w której ma zostać utworzona aplikacja funkcji. Wybierz **+** opcję utworzenia nowej grupy zasobów.|
+    |**[Plan usługi](/azure/azure-functions/functions-scale)**|Wybierz istniejący plan lub Utwórz plan niestandardowy. Wybierz lokalizację w regionie blisko siebie lub w niemal innych usługach, do których dostęp ma funkcja.|
 
-5. Kliknij przycisk **dalej** można utworzyć konta magazynu. Konto magazynu platformy Azure jest wymagane przez środowisko uruchomieniowe usługi Functions. Kliknij przycisk **niestandardowe** utworzyć konto magazynu ogólnego przeznaczenia lub użyj istniejącej:
+5. Kliknij przycisk **dalej** , aby utworzyć konto magazynu. Konto usługi Azure Storage jest wymagane przez środowisko uruchomieniowe funkcji. Kliknij pozycję **niestandardowy** , aby utworzyć konto magazynu ogólnego przeznaczenia, lub Użyj istniejącego:
 
-    ![Publikowanie do opcji menu platformy azure](media/azure-functions-image8.png)
+    ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image8.png)
 
-6. Kliknij przycisk **Utwórz** do tworzenia aplikacji funkcji i powiązanych zasobów na platformie Azure przy użyciu tych ustawień, a następnie wdrożyć kod projektu funkcji.
+6. Kliknij przycisk **Utwórz** , aby utworzyć aplikację funkcji i powiązane zasoby na platformie Azure z tymi ustawieniami i wdrożyć kod projektu funkcji.
 
-7. Może pojawić się prośba o okno dialogowe podczas publikowania, informujące o tym do "Aktualizacji funkcje wersji na platformie Azure". Kliknij przycisk **tak**:
+7. Podczas publikowania może pojawić się okno dialogowe z informacją o tym, jak zaktualizować wersję funkcji na platformie Azure. Kliknij przycisk **tak**:
 
-    ![Publikowanie do opcji menu platformy azure](media/azure-functions-image12.png)
+    ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image12.png)
 
 ## <a name="function-app-settings"></a>Ustawienia aplikacji funkcji
 
-Wszystkie ustawienia, które zostały dodane w local.settings.json należy również dodać do aplikacji funkcji na platformie Azure. Te ustawienia nie są ładowane automatycznie podczas publikowania projektu.
+Wszystkie ustawienia dodane w pliku Local. Settings. JSON należy również dodać do aplikacji funkcji na platformie Azure. Te ustawienia nie są przekazywane automatycznie po opublikowaniu projektu.
 
-Aby uzyskać dostęp do ustawień aplikacji, przejdź do witryny Azure portal pod [ https://ms.portal.azure.com/ ](https://ms.portal.azure.com/). W obszarze **aplikacje funkcji**, wybierz opcję **aplikacje funkcji** i wyróżnić swoją nazwę funkcji:
+Aby uzyskać dostęp do ustawień aplikacji, przejdź do Azure Portal pod [https://ms.portal.azure.com/](https://ms.portal.azure.com/)adresem. W obszarze **aplikacje funkcje**wybierz pozycję **aplikacje funkcji** i wyróżnij nazwę funkcji:
 
-![Usługa Azure functions menu](media/azure-functions-image9.png)
+![menu usługi Azure Functions](media/azure-functions-image9.png)
 
-Z **Przegląd** wybierz opcję **ustawienia aplikacji** w obszarze **skonfigurowane funkcje**:
+Na karcie **Przegląd** wybierz pozycję **Ustawienia aplikacji** w obszarze **skonfigurowane funkcje**:
 
-![Na karcie funkcji platformy azure](media/azure-functions-image10.png)
+![Za pośrednictwem karty usługi Azure Functions](media/azure-functions-image10.png)
 
-W tym miejscu można ustawić ustawienia aplikacji dla aplikacji funkcji, w którym można dodawać nowych ustawień aplikacji lub zmodyfikuj istniejące:
+W tym miejscu możesz ustawić ustawienia aplikacji dla aplikacji funkcji, w której można dodać nowe ustawienia aplikacji lub zmodyfikować istniejące:
 
-![obszaru ustawień aplikacji w witrynie Azure portal](media/azure-functions-image11.png)
+![Obszar ustawień aplikacji Azure Portal](media/azure-functions-image11.png)
 
-Co ważne ustawienie może być konieczne ustawienie jest `FUNCTIONS_EXTENSION_VERSION`. Podczas publikowania z programu Visual Studio dla komputerów Mac, ta wartość powinna być równa **beta**.
+Jednym z ważnych ustawień może być konieczne ustawienie wartości `FUNCTIONS_EXTENSION_VERSION`. W przypadku publikowania z Visual Studio dla komputerów Mac należy ustawić wartość **beta**.
 
-## <a name="available-function-templates"></a>Szablony z dostępnych funkcji
+## <a name="available-function-templates"></a>Dostępne szablony funkcji
 
-- **Wyzwalacz usługi GitHub** — reagowanie na zdarzenia występujące w repozytoriach usługi GitHub. Aby uzyskać więcej informacji, zobacz [artykułu usługi Azure Functions w witrynie GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-  - Twórca komentarza usługi GitHub — ta funkcja będzie działać, gdy odbierze element webhook usługi GitHub dla problemu lub żądania ściągnięcia i doda komentarz.
-  - Element WebHook usługi GitHub — będzie można uruchomić tej funkcji, gdy odbierze element webhook usługi GitHub.
+- **Wyzwalacz usługi GitHub** — odpowiadanie na zdarzenia występujące w repozytoriach usługi GitHub. Aby uzyskać więcej informacji, zobacz [artykuł Azure Functions w witrynie GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
+  - Komentarz w witrynie GitHub — ta funkcja zostanie uruchomiona, gdy odbierze element webhook usługi GitHub dla problemu lub żądania ściągnięcia i doda komentarz.
+  - Element webhook usługi GitHub — ta funkcja zostanie uruchomiona, gdy odbierze element webhook usługi GitHub.
 
-- **HTTP** — wyzwalanie wykonywania kodu za pomocą żądania HTTP. Istnieją jawne szablonów dla następujących wyzwalaczy HTTP:
+- **Http** — wyzwalanie wykonywania kodu przy użyciu żądania HTTP. Istnieją jawne szablony dla następujących wyzwalaczy HTTP:
   - Wyzwalacz http
   - HTTP GET CRUD
-  - CRUD POST protokołu HTTP
-  - Wyzwalacz protokołu HTTP z parametrami
+  - HTTP POST CRUD
+  - Wyzwalacz http z parametrami
 
-- **Czasomierz** — wykonywanie oczyszczania lub innych zadań wsadowych na ze wstępnie zdefiniowanym harmonogramem. Ten szablon ma dwa pola: nazwę i harmonogramu jest wyrażeniem CRON 6 pól. Aby uzyskać więcej informacji, zobacz [usługi Azure functions artykuł na czas](/azure/azure-functions/functions-create-scheduled-function)
+- **Timer** — wykonaj oczyszczanie lub inne zadania wsadowe zgodnie ze wstępnie zdefiniowanym harmonogramem. Ten szablon przyjmuje dwa pola: nazwę i harmonogram, czyli sześć wyrażeń firmy cronus. Aby uzyskać więcej informacji, zobacz [artykuł dotyczący usługi Azure Functions w czasie](/azure/azure-functions/functions-create-scheduled-function)
 
-- **Wyzwalacz kolejki** — jest to funkcja, która będzie odpowiadać na komunikaty przychodzące w kolejce usługi Azure Storage. Oprócz nazwy funkcji, ten szablon ma **ścieżki** (Nazwa kolejki, z której zostanie odczytany komunikat) i konto magazynu **połączenia** (Nazwa ustawienia aplikacji zawierającego magazynu Parametry połączenia dla konta). Aby uzyskać więcej informacji, zobacz [usługi Azure functions artykuł na usługi Queue Storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
+- **Wyzwalacz kolejki** — jest to funkcja, która będzie odpowiadać na komunikaty, gdy docierają one do kolejki usługi Azure Storage. Oprócz nazwy funkcji ten szablon przyjmuje **ścieżkę** (nazwę kolejki, z której zostanie odczytany komunikat) i **połączenie** konta magazynu (nazwę aplikacji zawierającą parametry połączenia konta magazynu). Aby uzyskać więcej informacji, zobacz [artykuł dotyczący usługi Azure Functions w queue storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Obiekt blob wyzwalacza** — proces usługi Azure Storage, obiekty BLOB, gdy zostaną one dodane do kontenera. Oprócz nazwy funkcji ten szablon ma właściwości połączenia i ścieżki. Właściwość ścieżki jest ścieżka w ramach konta magazynu, którą będzie monitorował wyzwalacz. Konto połączenia jest nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Aby uzyskać więcej informacji, zobacz [artykułu magazynu obiektów Blob usługi Azure functions](/azure/azure-functions/functions-create-storage-blob-triggered-function).
+- **Wyzwalacz obiektów BLOB** — przetwarzanie obiektów BLOB usługi Azure Storage po ich dodaniu do kontenera. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Aby uzyskać więcej informacji, zobacz [artykuł dotyczący usługi Azure functions BLOB Storage](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
-- **Ogólny element WebHook** — jest to prostej funkcji, który będzie uruchamiany po każdym odebraniu żądania elementu z dowolnej usługi obsługującej takie elementy. Aby uzyskać więcej informacji, zobacz [usługi Azure functions artykuł na ogólny elementów webhook](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+- **Ogólny element webhook** — prosta funkcja, która będzie uruchamiana za każdym razem, gdy odbierze żądanie od dowolnej usługi obsługującej elementy webhook. Aby uzyskać więcej informacji, zobacz [artykuł dotyczący usługi Azure Functions w ogólnych elementach webhook](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Trwałe funkcje aranżacji** — funkcje trwałe umożliwiają napisanie stanowych funkcji w środowisku bezserwerowym. Rozszerzenie zarządza stan, punkty kontrolne i ponowne uruchomienie dla Ciebie. Aby uzyskać więcej informacji, zapoznaj się z przewodnikami usługi Azure functions na [funkcje trwałe](/azure/azure-functions/durable-functions-overview).
+- **Aranżacja funkcji trwałych** — Durable Functions pozwala pisać funkcje stanowe w środowisku bezserwerowym. Rozszerzenie zarządza stanem, punktami kontrolnymi i ponownymi uruchomieniami. Aby uzyskać więcej informacji, zobacz Przewodniki usługi Azure Functions dotyczący [trwałych funkcji](/azure/azure-functions/durable-functions-overview).
 
-- **Zmiany rozmiaru obrazu** — ta funkcja tworzy obrazy o zmienionym rozmiarze, po każdym dodaniu obiektu blob do kontenera. Szablon ma ścieżkę i parametry połączenia dla wyzwalacza, wyjściowy mały obraz i średnie obrazu wyjściowego.
+- Wskaźnik **rozmiaru obrazu** — ta funkcja tworzy obrazy o zmienionym rozmiarze za każdym razem, gdy obiekt BLOB zostanie dodany do kontenera. Szablon przyjmuje ścieżkę i parametry połączenia dla wyzwalacza, niewielką wartość wyjściową obrazu oraz średnią wartość wyjściową obrazu.
 
-- **Token sygnatury dostępu Współdzielonego** — ta funkcja generuje token SAS dla danego nazwy kontenera i obiektów blob usługi Azure Storage. Oprócz nazwy funkcji ten szablon ma właściwości połączenia i ścieżki. Właściwość ścieżki jest ścieżka w ramach konta magazynu, którą będzie monitorował wyzwalacz. Konto połączenia jest nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. **Prawa dostępu** również należy ustawić. Poziom autoryzacji określa, czy funkcja wymaga klucza interfejsu API i którego klucza należy użyć. Funkcja używa klucza funkcji; Administrator używa Twój klucz główny. Aby uzyskać więcej informacji, zobacz [Azure funkcja języka C# umożliwiająca Generowanie tokenów sygnatur dostępu Współdzielonego](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/) próbki.
+- **Token sygnatury** dostępu współdzielonego — ta funkcja generuje token sygnatury dostępu współdzielonego dla danego kontenera usługi Azure Storage i nazwy obiektu BLOB. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Należy również ustawić **prawa dostępu** . Poziom autoryzacji kontroluje, czy funkcja wymaga klucza interfejsu API i klucza, który ma być używany; Funkcja używa klucza funkcji; Administrator używa klucza głównego. Aby uzyskać więcej informacji, zobacz [ C# funkcja platformy Azure do generowania](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/) przykładu tokenów SAS.

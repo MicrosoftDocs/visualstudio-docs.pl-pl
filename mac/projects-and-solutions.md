@@ -1,45 +1,46 @@
 ---
 title: Projekty i rozwiązania
-description: Ten dokument zawiera omówienie projektów i rozwiązań w programie Visual Studio dla komputerów Mac.
+description: Ten dokument zawiera omówienie projektów i rozwiązań w Visual Studio dla komputerów Mac.
+ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: b66a1dfbe0569c501d05b34425e198f1501438ca
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691278"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107819"
 ---
-# <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Projekty i rozwiązania w programie Visual Studio dla komputerów Mac
+# <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Projekty i rozwiązania w Visual Studio dla komputerów Mac
 
-Ten artykuł zawiera omówienie *projektu* i *rozwiązania* koncepcje w programie Visual Studio dla komputerów Mac.
+Ten artykuł zawiera omówienie pojęć dotyczących *projektu* i *rozwiązania* w Visual Studio dla komputerów Mac.
 
 > [!NOTE] 
-> Ten temat dotyczy programu Visual Studio dla komputerów Mac. Dla programu Visual Studio, Windows, zobacz [projektów i rozwiązań w programie Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio).
+> Ten temat ma zastosowanie do Visual Studio dla komputerów Mac. W przypadku programu Visual Studio w systemie Windows Zapoznaj [się z tematem projekty i rozwiązania w programie Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio).
 
 ## <a name="projects"></a>Projekty
 
-Podczas tworzenia nowej aplikacji, witryny sieci Web, itp. w programie Visual Studio dla komputerów Mac należy uruchomić z projektem. Projekt zawiera wszystkie pliki wymagane (kod źródłowy, obrazów, plików danych itp.), które są wymagane do kompilowania pliku wykonywalnego, biblioteki lub witryny sieci Web.
+Podczas tworzenia nowej aplikacji, witryny sieci Web itd. w Visual Studio dla komputerów Mac Zacznij od projektu. Projekt zawiera wszystkie wymagane pliki (kod źródłowy, obrazy, pliki danych itp.), które są potrzebne do skompilowania pliku wykonywalnego, biblioteki lub witryny sieci Web.
 
-Projekt został zdefiniowany w pliku (np. `.csproj` dla C# projektów) zawierającą kod xml, który definiuje plik i hierarchii folderów, ścieżek do plików i ustawień specyficznych dla projektu, takich jak ustawienia kompilacji.
+Projekt jest definiowany przez plik (np. `.csproj` dla C# projektów) zawierający kod XML, który definiuje hierarchię plików i folderów, ścieżki do plików i ustawienia specyficzne dla projektu, takie jak ustawienia kompilacji.
 
-Gdy projekt jest ładowany przez program Visual Studio dla komputerów Mac, w konsoli rozwiązania użyto pliku projektu, aby wyświetlić pliki i foldery w projekcie. Podczas kompilacji program MSBuild odczytuje ustawienia z pliku projektu, aby utworzyć plik wykonywalny.
+Gdy projekt jest ładowany przez Visual Studio dla komputerów Mac, okienko rozwiązania używa pliku projektu do wyświetlania plików i folderów w projekcie. Podczas kompilacji program MSBuild odczytuje ustawienia z pliku projektu w celu utworzenia pliku wykonywalnego.
 
 ## <a name="solutions"></a>Rozwiązania
 
-A *rozwiązania* jest kontenerem tej grupy razem jeden lub więcej powiązanych projektów. Rozwiązania są opisane przez plik tekstowy (rozszerzenie `.sln`) swój własny unikatowy format; nie mają być edytowane ręcznie.
+*Rozwiązanie* jest kontenerem, który grupuje jednocześnie jeden lub więcej powiązanych projektów. Rozwiązania są opisane przez plik tekstowy (rozszerzenie `.sln`) z własnym unikatowym formatem; nie jest przeznaczony do edycji.
 
-## <a name="managing-projects-in-the-solution-pad"></a>Zarządzanie projektami, w konsoli rozwiązania
+## <a name="managing-projects-in-the-solution-pad"></a>Zarządzanie projektami w okienko rozwiązania
 
-Po utworzeniu projektu lub załadowany, służy Konsola rozwiązań do przeglądania i zarządzania, projekt lub rozwiązanie i pliki zawarte w. Poniższa ilustracja przedstawia Konsola rozwiązań za pomocą rozwiązania .NET Core, która zawiera dwa projekty:
+Po utworzeniu lub załadowaniu projektu można użyć okienko rozwiązania do wyświetlania projektu lub rozwiązania i zarządzania nim oraz plikami zawartymi w programie. Na poniższej ilustracji przedstawiono okienko rozwiązania z rozwiązaniem .NET Core zawierającym dwa projekty:
 
 ![Przykładowe rozwiązanie z wieloma projektami](media/solution-example.png)
 
-Można zarządzać właściwości projektów i rozwiązań, albo klikając dwukrotnie nazwę projektu lub rozwiązania, lub kliknij prawym przyciskiem myszy i wybierając polecenie **opcje**.
+Właściwościami projektów i rozwiązań można zarządzać przez dwukrotne kliknięcie projektu lub nazwy rozwiązania lub kliknięcie prawym przyciskiem myszy i wybranie **opcji**.
 
-Więcej informacji o tych opcjach znajduje się w [właściwości projektu i rozwiązania zarządzania](managing-solutions-and-project-properties.md) artykułu.
+Więcej informacji na temat tych opcji znajduje się w artykule [zarządzanie rozwiązaniami i właściwościami projektu](managing-solutions-and-project-properties.md) .
 
 ## <a name="see-also"></a>Zobacz także
 

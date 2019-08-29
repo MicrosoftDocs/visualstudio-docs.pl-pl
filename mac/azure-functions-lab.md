@@ -1,103 +1,102 @@
 ---
 title: 'Samouczek: Azure Functions'
-description: Użycie usługi Azure functions w programie Visual Studio dla komputerów Mac.
+description: Korzystanie z usługi Azure Functions w Visual Studio dla komputerów Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: aebee9f649f183995f209568d78ef08fbde1ef1a
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692890"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108143"
 ---
-# <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: Wprowadzenie do usługi Azure Functions
+# <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: Wprowadzenie do Azure Functions
 
-W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functions przy użyciu programu Visual Studio dla komputerów Mac. Będzie można również zintegrować z tabele magazynu platformy Azure, które reprezentują jedną z wielu różnych powiązania i wyzwalacze dostępnych dla deweloperów usługi Azure Functions.
+W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy użyciu Visual Studio dla komputerów Mac. Ponadto integrujesz się z tabelami usługi Azure Storage, które reprezentują jeden z wielu rodzajów powiązań i wyzwalaczy dostępnych dla deweloperów Azure Functions.
 
 ## <a name="objectives"></a>Cele
 
 > [!div class="checklist"]
-> * Tworzenie i debugowanie lokalne usługi Azure Functions
-> * Integracja z usługą sieci web i zasobami usługi Azure storage
-> * Możesz odpowiednio organizować w przepływie pracy obejmujące wiele funkcji platformy Azure
+> * Tworzenie i debugowanie Azure Functions lokalnych
+> * Integracja z zasobami sieci Web i usługi Azure Storage
+> * Organizowanie przepływu pracy obejmującego wiele Azure Functions
 
 ## <a name="requirements"></a>Wymagania
 
-- Program Visual Studio dla komputerów Mac w wersji 7.5 lub nowszej.
-- Subskrypcja platformy Azure (dostępne wolne od [ https://azure.com/free ](https://azure.com/free)).
+- Visual Studio dla komputerów Mac 7,5 lub wyższy.
+- Subskrypcja platformy Azure (dostępna bezpłatnie z [https://azure.com/free](https://azure.com/free)systemu).
 
-## <a name="exercise-1-creating-an-azure-functions-project"></a>Ćwiczenie 1: Tworzenie projektu usługi Azure Functions
+## <a name="exercise-1-creating-an-azure-functions-project"></a>Ćwiczenie 1: Tworzenie projektu Azure Functions
 
-1. Uruchom **programu Visual Studio dla komputerów Mac**.
+1. Uruchom **Visual Studio dla komputerów Mac**.
 
-2. Wybierz **Plik > nowe rozwiązanie**.
+2. Wybierz pozycję **plik > nowe rozwiązanie**.
 
-3. Z **chmura > Ogólne** kategorii, wybierz opcję **usługi Azure Functions** szablonu. Użyjesz C# do tworzenia biblioteki klas .NET obsługujący usługi Azure Functions. Kliknij przycisk **Dalej**.
+3. W kategorii **ogólne > w chmurze** wybierz szablon **Azure Functions** . Zostanie użyta C# do utworzenia biblioteki klas platformy .NET, która będzie hostować Azure Functions. Kliknij przycisk **Dalej**.
 
-    ![Wybieranie szablonu usługi Azure functions](media/azure-functions-lab-image1.png)
+    ![Wybór szablonu usługi Azure Functions](media/azure-functions-lab-image1.png)
 
-4. Ustaw **Nazwa projektu** do **"AzureFunctionsLab"** i kliknij przycisk **Utwórz**.
+4. W polu **Nazwa projektu** ustaw wartość **"AzureFunctionsLab"** , a następnie kliknij pozycję **Utwórz**.
 
-    ![Nazewnictwo i tworzenie projektu funkcji platformy azure](media/azure-functions-lab-image2.png)
+    ![Nazywanie i tworzenie projektu funkcji platformy Azure](media/azure-functions-lab-image2.png)
 
-5. Rozwiń węzły w **konsoli rozwiązania**. Domyślny szablon projektu zawiera odwołania do NuGet z szeroką gamą pakietów usługi Azure WebJobs, a także pakiet Newtonsoft.Json.
+5. Rozwiń węzły w **okienko rozwiązania**. Domyślny szablon projektu zawiera odwołania NuGet do różnych pakietów Azure WebJobs, a także pakiet Newtonsoft. JSON.
 
-     Dostępne są także trzy pliki:- **host.json** do opisywania globalną opcje konfiguracji dla hosta — **local.settings.json** do konfigurowania ustawień usługi.
-        - Szablon projektu tworzy również domyślny HttpTrigger. Dla tego laboratorium, należy usunąć **HttpTrigger.cs** pliku z projektem.
+     Istnieją również trzy pliki:- **host. JSON** opisujące opcje konfiguracji globalnej dla hosta- **Local. Settings. JSON** na potrzeby konfigurowania ustawień usługi.
+        - Szablon projektu tworzy również domyślny HttpTrigger. Na potrzeby tego laboratorium należy usunąć plik **HttpTrigger.cs** z projektu.
 
-    Open **local.settings.json**. Domyślnie po dwa połączenia pusty ciąg ustawienia.
+    Otwórz plik **Local. Settings. JSON**. Domyślnie mają dwa puste ustawienia parametrów połączenia.
 
-    ![solution pad displaying local.settings.json file](media/azure-functions-lab-image3.png)
+    ![Konsola rozwiązań wyświetlająca plik Local. Settings. JSON](media/azure-functions-lab-image3.png)
 
-## <a name="exercise-2-creating-an-azure-storage-account"></a>Ćwiczenie 2: Tworzenie konta usługi Azure storage
+## <a name="exercise-2-creating-an-azure-storage-account"></a>Ćwiczenie 2: Tworzenie konta usługi Azure Storage
 
-1. Zaloguj się do konta platformy Azure na poziomie [ https://portal.azure.com ](https://portal.azure.com).
+1. Zaloguj się do konta platformy Azure pod [https://portal.azure.com](https://portal.azure.com)adresem.
 
-1. W obszarze **ulubione** sekcji znajduje się w lewej części ekranu wybierz **kont magazynu**:
+1. W sekcji **Ulubione** znajdującej się po lewej stronie ekranu wybierz pozycję **konta magazynu**:
 
-    ![sekcja ulubionych elementu witryny Azure portal przedstawiający kont magazynu](media/azure-functions-lab-image4.png)
+    ![Sekcja Ulubione Azure Portal wyświetlania elementu kont magazynu](media/azure-functions-lab-image4.png)
 
-1. Wybierz **Dodaj** do utworzenia nowego konta magazynu:
+1. Wybierz pozycję **Dodaj** , aby utworzyć nowe konto magazynu:
 
-    ![Przycisk, aby dodać nowe konto magazynu](media/azure-functions-lab-image5.png)
+    ![Przycisk umożliwiający dodanie nowego konta magazynu](media/azure-functions-lab-image5.png)
 
-1. Wprowadź unikatową w skali globalnej nazwę **nazwa** i ponowne użycie go do **grupy zasobów**. Domyślnie, można zachować wszystkie pozostałe elementy.
+1. Wprowadź globalnie unikatową nazwę dla **nazwy** i użyj jej ponownie dla **grupy zasobów**. Wszystkie pozostałe elementy można zachować jako domyślne.
 
-    ![szczegóły nowego konta magazynu](media/azure-functions-lab-image6.png)
+    ![Szczegóły nowego konta magazynu](media/azure-functions-lab-image6.png)
 
-1. Kliknij przycisk **Utwórz**. Może upłynąć kilka minut, aby utworzyć konto magazynu. Otrzymasz powiadomienie po pomyślnym utworzeniu.
+1. Kliknij przycisk **Utwórz**. Utworzenie konta magazynu może potrwać kilka minut. Po pomyślnym utworzeniu zostanie wyświetlone powiadomienie.
 
-    ![powiadomienie pomyślnego wdrożenia](media/azure-functions-lab-image7.png)
+    ![pomyślne powiadomienie dotyczące wdrożenia](media/azure-functions-lab-image7.png)
 
-1. Wybierz **przejdź do zasobu** przycisk powiadomienia.
+1. Wybierz przycisk **Przejdź do zasobu** na stronie powiadomienia.
 
-1. Wybierz **klucze dostępu** kartę.
+1. Wybierz kartę **klucze dostępu** .
 
-    ![Ustawienie klucza dostępu](media/azure-functions-lab-image8.png)
+    ![ustawienie klucza dostępu](media/azure-functions-lab-image8.png)
 
-1. Skopiuj pierwszy **parametry połączenia**. Ten ciąg jest używany w dalszej integracji usługi Azure storage z usługi Azure Functions.
+1. Skopiuj pierwsze **Parametry połączenia**. Ten ciąg służy do integrowania usługi Azure Storage z Azure Functions później.
 
-    ![informacje dotyczące klucza 1](media/azure-functions-lab-image9.png)
+    ![Informacje o kluczu 1](media/azure-functions-lab-image9.png)
 
-1. Wróć do **programu Visual Studio dla komputerów Mac** i Wklej w ciągu połączenia pełne, jak **AzureWebJobsStorage** w **local.settings.json**. Teraz możesz odwoływać się nazwa ustawienia w atrybutach dla funkcji, które muszą mieć dostęp do swoich zasobów.
+1. Wróć do **Visual Studio dla komputerów Mac** i wklej pełne parametry połączenia w programie jako ustawienie **AzureWebJobsStorage** w pliku **Local. Settings. JSON**. Teraz można odwołać się do nazwy ustawienia w atrybutach dla funkcji, które wymagają dostępu do zasobów.
 
-    ![Plik ustawień lokalnych z wprowadzony klucz połączenia](media/azure-functions-lab-image10.png)
+    ![plik ustawień lokalnych z wprowadzonym kluczem połączenia](media/azure-functions-lab-image10.png)
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Przykład 3: Tworzenie i debugowanie funkcji platformy Azure
 
-1. Teraz możesz rozpocząć dodawanie kodu. Podczas pracy z biblioteki klas platformy .NET, usługi Azure Functions są dodawane jako metody statyczne. Z **konsoli rozwiązania**, kliknij prawym przyciskiem myszy **AzureFunctions** węzeł projektu i wybierz pozycję **Dodaj > Dodaj funkcję**:
+1. Teraz możesz zacząć dodawać kod. Podczas pracy z biblioteką klas .NET Azure Functions są dodawane jako metody statyczne. W **okienko rozwiązania**kliknij prawym przyciskiem myszy węzeł projektu **AzureFunctions** i wybierz polecenie **Dodaj > Dodaj funkcję**:
 
-    ![Dodaj opcję — funkcja](media/azure-functions-lab-image11.png)
+    ![Dodawanie opcji funkcji](media/azure-functions-lab-image11.png)
 
-1. W oknie dialogowym nowej usługi Azure Functions wybierz szablon ogólny element webhook. Ustaw **nazwa** do **Dodaj** i kliknij przycisk **Ok** Tworzenie funkcji:
+1. W oknie dialogowym Nowy Azure Functions wybierz ogólny szablon elementu webhook. Ustaw **nazwę** do **dodania** , a następnie kliknij przycisk **OK** , aby utworzyć funkcję:
 
-    ![Okno dialogowe nowej usługi azure functions](media/azure-functions-lab-image12.png)
+    ![Nowe okno dialogowe usługi Azure Functions](media/azure-functions-lab-image12.png)
 
-1. U góry nowego pliku, należy dodać **przy użyciu** dyrektywy poniżej:
+1. W górnej części nowego pliku Dodaj dyrektywy **using** poniżej:
 
     ```csharp
     using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -105,7 +104,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
     using Microsoft.WindowsAzure.Storage.Table;
     ```
 
-1. Usuń istniejące `Run` metody i Dodaj metodę poniżej do klasy jako funkcji platformy Azure:
+1. Usuń istniejącą `Run` metodę i Dodaj metodę poniżej do klasy jako funkcji platformy Azure:
 
     ```csharp
     [FunctionName("Add")]
@@ -121,57 +120,57 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
     }
     ```
 
-1. Przejdźmy teraz przez definicję metody eliminujemy.
+1. Przechodźmy przez fragment definicji metody.
 
-    Pierwszą rzeczą, zostanie wyświetlony jest **FunctionName** atrybut, który oznacza tę metodę jako funkcję platformy Azure. Ten atrybut Określa publiczny nazwę funkcji. Nazwa atrybutu nie musi być zgodna z nazwą rzeczywistego — metoda.
+    Pierwsze, co zobaczysz, jest atrybut **FunctionName** , który oznacza tę metodę jako funkcję platformy Azure. Ten atrybut określa publiczną nazwę funkcji. Nazwa atrybutu nie musi być zgodna z rzeczywistą nazwą metody.
 
-    ![Nowa metoda uruchamiania atrybutem FunctionName wyróżniony](media/azure-functions-lab-image13.png)
+    ![Nowa metoda run z wyróżnionym atrybutem FunctionName](media/azure-functions-lab-image13.png)
 
-1. Następnie metoda jest oznaczona jako **publiczne statyczne** metody, która jest wymagana. Można także zauważyć, że wartość zwracana jest **int**. Chyba że określono inaczej, przy użyciu metody atrybutów, wszelkie niż void wartość zwracaną funkcji platformy Azure jest zwracany do klienta jako tekst. Domyślnie jest zwracana jako **XML**, ale można ją zmienić na **JSON**, którego należy to zrobić później w środowisku laboratoryjnym.
+1. Następnie metoda jest oznaczona jako publiczna Metoda **statyczna** , która jest wymagana. Zauważ również, że wartość zwracana jest liczbą całkowitą. O ile nie określono inaczej przy użyciu atrybutów metody, każda wartość zwracana przez inną niż void funkcja platformy Azure jest zwracana do klienta jako tekst. Domyślnie jest on zwracany jako **XML**, ale można go zmienić na **Format JSON**, który można później wykonać w laboratorium.
 
-    ![Nowa metoda uruchamiania przy użyciu metody inicjowania wyróżniony](media/azure-functions-lab-image14.png)
+    ![Nowa metoda run z wyróżnioną inicjalizacją metody](media/azure-functions-lab-image14.png)
 
-1. Pierwszy parametr jest oznaczony za pomocą **HttpTrigger** atrybut, który wskazuje, że ta metoda jest wywoływana przez żądanie HTTP. Ten atrybut określa również poziom autoryzacji, metody, a także zleceń obsługuje (tylko **"GET"** w tym przypadku). Mogą również opcjonalnie określić **trasy** , zastępuje ścieżki do metody i możliwość podzielenia próbę automatycznego wyodrębniania zmienne przy użyciu ścieżki. Ponieważ **trasy** ma wartość null w tym miejscu będą domyślnie ścieżkę do tej metody **/api/Dodaj**.
+1. Pierwszy parametr jest oznaczony atrybutem **HttpTrigger** , który wskazuje, że ta metoda jest wywoływana przez żądanie HTTP. Ten atrybut określa również poziom autoryzacji metody, a także obsługiwane przez niego zlecenia (w tym przypadku tylko **"Get"** ). Opcjonalnie można również zdefiniować **trasę** , która zastępuje ścieżkę do metody i oferuje sposób automatycznego wyodrębniania zmiennych ze ścieżki. Ponieważ **trasa** ma wartość null, ścieżka do tej metody będzie domyślnie **/API/Add**.
 
-    ![Nowa metoda uruchamiania za pomocą parametru wyróżniony](media/azure-functions-lab-image15.png)
+    ![Nowa metoda run z wyróżnionym parametrem](media/azure-functions-lab-image15.png)
 
-1. Ostatni parametr metody jest **TraceWriter** który może służyć do rejestrowania komunikatów błędów i diagnostyki.
+1. Ostatnim parametrem metody jest **TraceWriter** , który może służyć do rejestrowania komunikatów na potrzeby diagnostyki i błędów.
 
-    ![Nowa metoda uruchamiania z wyróżnioną pozycją TraceWriter](media/azure-functions-lab-image16.png)
+    ![Nowa metoda run z wyróżnioną TraceWriter](media/azure-functions-lab-image16.png)
 
-1. Ustaw punkt przerwania na **zwracają** wiersz metody, klikając na marginesie wiersza:
+1. Ustaw punkt przerwania w wierszu **powrotu** metody, klikając na marginesie wiersza:
 
-    ![Punkt przerwania w wierszu zwrotu](media/azure-functions-lab-image17.png)
+    ![Ustawiony punkt przerwania w wierszu powrotu](media/azure-functions-lab-image17.png)
 
-1. Kompilowanie i uruchamianie projektu w trakcie sesji debugowania, naciskając klawisz **F5** lub wybierając **Uruchom > Rozpocznij debugowanie**. Można również kliknąć **Uruchom** przycisku. Opcje te wykonują to samo zadanie. Odwołuje się do pozostałej części tego laboratorium **F5**, ale można użyć metody, można znaleźć najbardziej Ci.
+1. Kompiluj i uruchamiaj projekt w sesji debugowania, naciskając klawisz **F5** lub wybierając pozycję **Uruchom > rozpocząć debugowanie**. Możesz również kliknąć przycisk **Uruchom** . Wszystkie te opcje wykonują to samo zadanie. Pozostała część tego laboratorium odwołuje się do **F5**, ale można użyć najwygodniejszej metody.
 
     ![Kompilowanie i uruchamianie projektu](media/azure-functions-lab-image18.png)
 
-1. Uruchamianie projektu zostanie automatycznie uruchomiona terminalu aplikacji.
+1. Uruchomienie projektu spowoduje automatyczne otwarcie aplikacji terminalowej.
 
-1. Projekt przechodzi przez proces wykrywania usługi Azure Functions, w oparciu o atrybuty metody i Konwencji plików, które zostało omówione w dalszej części tego artykułu. W tym przypadku wykrywa pojedynczej funkcji platformy Azure i 1 stanowisko "generuje".
+1. Projekt przechodzi przez proces wykrywania Azure Functions na podstawie atrybutów metod i Konwencji plików, które zostały omówione w dalszej części tego artykułu. W tym przypadku wykrywa pojedynczą funkcję platformy Azure i "generuje" 1 funkcję zadania.
 
     ![Dane wyjściowe funkcji platformy Azure w terminalu](media/azure-functions-lab-image19.png)
 
-1. W dolnej części wiadomości uruchamiania hosta usługi Azure Functions drukuje adresy URL dowolnego wyzwalacza HTTP interfejsów API. Powinien istnieć tylko jeden. Skopiuj ten adres URL i wklej go w nowej karcie przeglądarki.
+1. Na dole komunikatów uruchamiania Azure Functions Host drukuje adresy URL dowolnego interfejsu API wyzwalacza HTTP. Powinien być tylko jeden. Skopiuj ten adres URL i wklej go na nowej karcie przeglądarki.
 
     ![Adres URL interfejsu API funkcji platformy Azure](media/azure-functions-lab-image20.png)
 
-1. Punkt przerwania powinny wywoływać bezpośrednio. Żądania sieci web został przesłany do funkcji i można teraz debugować. Wskaźnik myszy nad **x** zmiennej, aby zobaczyć jej wartość.
+1. Punkt przerwania powinien być wyzwalany od razu. Żądanie sieci Web zostało przekazane do funkcji i teraz może być debugowane. Wskaźnik myszy nad zmienną **x** , aby zobaczyć jej wartość.
 
-    ![Punkt przerwania wyzwolone](media/azure-functions-lab-image21.png)
+    ![Wyzwolono punkt przerwania](media/azure-functions-lab-image21.png)
 
-1. Usuń punkt przerwania przy użyciu tej samej metody, które są używane do dodawania go wcześniej (kliknij na marginesie, lub zaznacz wiersz, a następnie naciśnij klawisz **F9**).
+1. Usuń punkt przerwania za pomocą tej samej metody, która została użyta do jej wcześniejszego dodania (kliknij margines lub wybierz wiersz i naciśnij klawisz **F9**).
 
-1. Naciśnij klawisz **F5** kontynuować działanie.
+1. Naciśnij klawisz **F5** , aby kontynuować działanie.
 
-1. XML wynikiem metody będą renderowane w przeglądarce. Zgodnie z oczekiwaniami, operacja dodawania zapisane na stałe tworzy wiarygodne sum. Uwaga: Jeśli wyświetlane są tylko "3" w przeglądarce Safari, go, aby **Safari > Preferencje > Zaawansowane** i "**pokazują tworzenie menu na pasku menu**" checkbox i ponownie załaduj stronę.
+1. W przeglądarce zostanie renderowany wynik XML metody. Zgodnie z oczekiwaniami operacja dodawania stałe generuje sumę wartości. Uwaga Jeśli zobaczysz tylko "3" w przeglądarce Safari, przejdź do **przeglądarki safari > preferences > Advanced** i zaznacz pole wyboru**Pokaż menu Programowanie na pasku menu**, a następnie załaduj ponownie stronę.
 
-1. W **programu Visual Studio dla komputerów Mac**, kliknij przycisk **zatrzymać** przycisk, aby zakończyć sesję debugowania. Aby upewnić się, że nowe zmiany są pobierane, nie zapomnij Uruchom ponownie (Zatrzymaj i uruchom) sesji debugowania.
+1. W **Visual Studio dla komputerów Mac**kliknij przycisk **Zatrzymaj** , aby zakończyć sesję debugowania. Aby upewnić się, że nowe zmiany są pobierane, nie zapomnij uruchomić ponownie (zatrzymać, a następnie uruchomić) sesji debugowania.
 
-    ![Zatrzymaj debugowanie opcji](media/azure-functions-lab-image22.png)
+    ![Opcja zatrzymania debugowania](media/azure-functions-lab-image22.png)
 
-1. W **Uruchom** metody, Zastąp **x** i **y** definicje z poniższym kodem. Ten kod wyodrębnia wartości z ciągu zapytania adresu URL, tak aby operacja dodawania może zostać wykonana dynamicznie w oparciu podane parametry.
+1. W metodzie **Run** Zastąp definicje **x** i **y** poniższym kodem. Ten kod wyodrębnia wartości z ciągu zapytania adresu URL, aby operacja dodawania mogła być wykonywana dynamicznie na podstawie podanych parametrów.
 
     ```csharp
     var query = HttpUtility.ParseQueryString(req.RequestUri.Query);
@@ -185,55 +184,55 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 
 1. Uruchom aplikację.
 
-1. Wróć do okna przeglądarki i Dołącz ciąg `/?x=2&y=3` do adresu URL. Cały adres URL powinien być teraz `http://localhost:7071/api/Add?x=2&y=3`. Przejdź do nowego adresu URL.
+1. Wróć do okna przeglądarki i dołącz ciąg `/?x=2&y=3` do adresu URL. Cały adres URL powinien być `http://localhost:7071/api/Add?x=2&y=3`teraz. Przejdź do nowego adresu URL.
 
-1. Tym razem wynik powinien odzwierciedlać nowych parametrów. Możesz uruchomić projekt z różnymi wartościami. Należy pamiętać, że nie ma wszelkie błędy sprawdzania, dzięki czemu będzie sygnalizować błąd, nieprawidłowe lub brakujące parametry.
+1. Tym razem wynik powinien odzwierciedlać nowe parametry. Możesz uruchamiać projekt z różnymi wartościami. Należy zauważyć, że nie ma żadnego sprawdzenia błędów, więc nieprawidłowe lub brakujące parametry spowodują zgłoszenie błędu.
 
 1. Zatrzymaj sesję debugowania.
 
-## <a name="exercise-4-working-with-functionjson"></a>Ćwiczenie 4: Praca z function.json
+## <a name="exercise-4-working-with-functionjson"></a>Ćwiczenie 4: Praca z funkcją Function. JSON
 
-1. W ćwiczeniu wcześniej wspomniano, Visual Studio for Mac "wygenerowania" funkcję zadania dla funkcji platformy Azure zdefiniowany w bibliotece. Jest to, ponieważ usługi Azure Functions faktycznie nie używa atrybuty metody w czasie wykonywania, ale raczej używa konwencji systemu plików w czasie kompilacji do konfigurowania miejsca i w jaki sposób usługa Azure Functions są udostępniane. Z **konsoli rozwiązania**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Odsłoń w programie Finder**.
+1. W poprzednim ćwiczeniu był on wymieniony Visual Studio dla komputerów Mac "Wygenerowano" funkcję zadania dla funkcji platformy Azure zdefiniowanej w bibliotece. Wynika to z faktu, że Azure Functions nie używa atrybutów metody w czasie wykonywania, ale zamiast tego używa konwencji systemu plików czasu kompilacji do skonfigurowania miejsca i sposobu, w jaki Azure Functions są udostępniane. W **okienko rozwiązania**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Odsłoń w programie Finder**.
 
-     ![Odsłoń w opcji menu wyszukiwania](media/azure-functions-lab-image23.png)
+     ![Opcja Odsłoń w menu wyszukiwania](media/azure-functions-lab-image23.png)
 
-1. Nawigować w systemie plików, aż dojdziesz **bin/Debug/netstandard2.0**. Powinna to być folder o nazwie **Dodaj**. Ten folder został utworzony z atrybutu nazwy funkcji w kodzie języka C#. Rozwiń folder Dodaj, aby wyświetlić jeden **function.json** pliku. Ten plik jest używany przez środowisko uruchomieniowe do zarządzania funkcją platformy Azure. W przypadku innych modeli języka nie obsługują kompilacji (na przykład skrypt języka C# lub JavaScript) te foldery musi być ręcznie tworzone i konserwowane. Dla deweloperów języka C# są one generowane automatycznie z metadanych atrybutu podczas kompilacji. Kliknij prawym przyciskiem myszy **function.json** a następnie wybierz pozycję Tak, aby go otworzyć w programie Visual Studio.
+1. Przejdź w dół systemu plików, dopóki nie zostanie osiągnięty plik **bin/debug/Standard 2.0**. Powinien istnieć folder o nazwie **Add**. Ten folder został utworzony w celu odnoszący się do atrybutu nazwy C# funkcji w kodzie. Rozwiń folder Dodaj, aby wyświetlić plik Single **Function. JSON** . Ten plik jest używany przez środowisko uruchomieniowe do hostowania funkcji platformy Azure i zarządzania nią. W przypadku innych modeli języków bez obsługi czasu kompilacji (takich jak C# skrypt lub JavaScript) te foldery muszą być tworzone ręcznie i konserwowane. Dla C# deweloperów są one automatycznie generowane z metadanych atrybutów podczas kompilacji. Kliknij prawym przyciskiem myszy plik **Function. JSON** i wybierz polecenie, aby otworzyć go w programie Visual Studio.
 
-    ![Function.JSON w katalogu pliku](media/azure-functions-lab-image24.png)
+    ![Function. JSON w katalogu plików](media/azure-functions-lab-image24.png)
 
-1. Biorąc pod uwagę poprzednie kroki tego samouczka, należy mieć podstawową wiedzę na temat atrybutów języka C#. Uwzględniając, ten kod JSON powinien wyglądać znajomo. Istnieją jednak kilka elementów, które nie zostały pokryte w starszych ćwiczeniach. Na przykład, każda **powiązania** musi mieć jej **kierunek** zestawu. Jak może samodzielnie określać **"in"** oznacza, że parametr jest dane wejściowe, natomiast **"out"** wskazuje, że parametr jest zwracana wartość (za pośrednictwem **$return**) lub **się** parametrem metody. Należy także określić **plik_skryptu** (względna do tej lokalizacji końcowej) i **punktu wejścia** — metoda (publiczne ale statyczne) w zestawie. W ciągu następnych kilku krokach, należy dodać ścieżkę niestandardową funkcję przy użyciu tego modelu, więc skopiuj zawartość tego pliku do Schowka.
+1. Uwzględniając poprzednie kroki tego samouczka, należy uzyskać podstawową wiedzę na temat C# atrybutów. Biorąc pod uwagę, ten kod JSON powinien wyglądać znajomo. Istnieje jednak kilka elementów, które nie zostały omówione we wcześniejszych ćwiczeniach. Na przykład każde **powiązanie** musi mieć ustawiony **kierunek** . Jak można wywnioskować, **"w"** oznacza, że parametr jest wejściowy, natomiast **"out"** wskazuje, że parametr jest wartością zwracaną (za pośrednictwem **$Return**) lub parametrem **out** do metody. Należy również określić **scriptFile** (względem tej lokalizacji końcowej) i metodę **EntryPoint** (publiczną i statyczną) w ramach zestawu. W następnych kilku krokach dodasz niestandardową ścieżkę funkcji przy użyciu tego modelu, więc Skopiuj zawartość tego pliku do Schowka.
 
-    ![Plik Function.JSON Otwórz w programie visual studio dla komputerów mac](media/azure-functions-lab-image25.png)
+    ![plik Function. JSON jest otwierany w programie Visual Studio dla komputerów Mac](media/azure-functions-lab-image25.png)
 
-1. W **konsoli rozwiązania**, kliknij prawym przyciskiem myszy **AzureFunctionsLab** węzeł projektu i wybierz pozycję **Dodaj > Nowy Folder**. Nadaj nazwę nowego folderu **Moduł dodający**. Zgodnie z Konwencją domyślna nazwa tego folderu będą definiować ścieżki do interfejsu API, takich jak **interfejsu api/Moduł dodający**.
+1. W **okienko rozwiązania**kliknij prawym przyciskiem myszy węzeł projektu **AzureFunctionsLab** i wybierz polecenie **Dodaj > nowy folder**. Nazwij nowy folder. Domyślnie nazwa tego folderu definiuje ścieżkę do interfejsu API, na przykład **API/** dodające.
 
     ![Opcja nowy folder](media/azure-functions-lab-image26.png)
 
-1. Kliknij prawym przyciskiem myszy **Moduł dodający** i wybierz polecenie **Dodaj > Nowy plik**.
+1. Kliknij prawym przyciskiem myszy folder **dodawania** i wybierz polecenie **Dodaj > nowy plik**.
 
-    ![Nowa opcja pliku](media/azure-functions-lab-image27.png)
+    ![Opcja nowego pliku](media/azure-functions-lab-image27.png)
 
-1. Wybierz **Web** kategorii i **pusty plik JSON** szablonu. Ustaw **nazwa** do **funkcja** i kliknij przycisk **New**.
+1. Wybierz kategorię **sieci Web** i szablon **pustego pliku JSON** . Ustaw **nazwę** na **działanie** i kliknij pozycję **Nowy**.
 
-    ![Opcja pliku pusty kod json](media/azure-functions-lab-image28.png)
+    ![Pusta opcja pliku JSON](media/azure-functions-lab-image28.png)
 
-1. Wklej zawartość innych **function.json** (z kroku 3) w celu zastąpienia domyślnej zawartości nowo utworzony plik.
+1. Wklej zawartość pliku other **Function. JSON** (z kroku 3) w celu zamienienia domyślnej zawartości nowo utworzonego elementu.
 
-1. Usuń następujące wiersze z na górze pliku json:
+1. Usuń następujące wiersze z góry pliku JSON:
 
     ```json
     "configurationSource":"attributes",
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. Na końcu pierwszego powiązania (po **"name": "wymagane"** wiersza), Dodaj poniższe właściwości. Nie zapomnij dołączyć przecinkami w poprzednim wierszu. Ta właściwość zastępuje domyślny katalog główny w taki sposób, że teraz wyodrębni **int** parametrów ze ścieżki i umieszczenie ich w parametrach metody, które są nazywane **x** i **y**.
+1. Na końcu pierwszego powiązania (po wierszu **"nazwa": "REQ** ") Dodaj poniższe właściwości. Nie zapomnij umieścić przecinki w poprzednim wierszu. Ta właściwość przesłania domyślny katalog główny, w taki sposób, że będzie teraz wyodrębniał parametry **int** ze ścieżki i umieścić je w parametrach metod o nazwach **x** i **y**.
 
     ```json
     "direction": "in",
     "route": "Adder/{x:int?}/{y:int?}"
     ```
 
-1. Dodaj inny powiązanie poniżej pierwszej. To powiązanie obsługuje wartość zwracaną przez funkcję. Nie zapomnij dołączyć przecinkami w poprzednim wierszu:
+1. Dodaj kolejne powiązanie poniżej pierwszego. To powiązanie obsługuje zwracaną wartość funkcji. Nie zapomnij umieścić przecinka w poprzednim wierszu:
 
     ```json
     {
@@ -243,13 +242,13 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
     }
     ```
 
-1. Również zaktualizować **punktu wejścia** właściwości w dolnej części pliku przy użyciu metody o nazwie **"Add2"** , takie jak pokazano poniżej. To jest, aby zilustrować, że ścieżka **interfejsu api/Moduł dodający...**  może mapować do odpowiedniej metody o dowolnej nazwie (**Add2** poniżej).
+1. Zaktualizuj również właściwość **EntryPoint** w dolnej części pliku, aby użyć metody o nazwie **"ADD2"** , takiej jak pokazano poniżej. Ma to na celu zilustrowanie, że ścieżka **API/** obiekt dodający może być mapowany do odpowiedniej metody z dowolną nazwą (**ADD2** tutaj).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
     ```
 
-1. Ostateczna **function.json** plik powinien wyglądać podobnie jak następujący kod json:
+1. Końcowy plik **Function. JSON** powinien wyglądać podobnie do następującego kodu JSON:
 
     ```json
     {
@@ -276,11 +275,11 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
     }
     ```
 
-1. Ostatnim krokiem jeden, trzeba wprowadzić to cała praca jest poinstruować Visual Studio dla komputerów Mac skopiować ten plik do tej samej ścieżki względnej w katalogu wyjściowym, za każdym razem, gdy zmienia się. Przy użyciu pliku wybrana, wybierz kartę właściwości z po prawej stronie paska, a także **Kopiuj do katalogu wyjściowego** wybierz **Kopiuj Jeśli nowszy**:
+1. Pierwszym krokiem wymaganym do przeprowadzenia tej operacji jest poinstruować Visual Studio dla komputerów Mac, aby skopiować ten plik do tej samej ścieżki względnej w katalogu wyjściowym za każdym razem, gdy zmieni się. Po wybraniu pliku wybierz kartę właściwości na pasku po prawej stronie, a w polu **Kopiuj do katalogu wyjściowego** wybierz opcję **Kopiuj, jeśli nowszy**:
 
-    ![Opcje właściwości dla pliku json](media/azure-functions-lab-image30.png)
+    ![Opcje właściwości dla pliku JSON](media/azure-functions-lab-image30.png)
 
-1. W **Add.cs**, Zastąp `Run` — metoda (w tym atrybucie) przy użyciu następującej metody, aby zrealizować Oczekiwano funkcji. Jest bardzo podobne do `Run`, z tą różnicą, że korzysta z żadnych atrybutów, a ma jawnych parametrów dla **x** i **y**.
+1. W **Add.cs**Zastąp `Run` metodę (łącznie z atrybutem) następującą metodą, aby spełnić oczekiwaną funkcję. Jest to bardzo podobne do `Run`, z tą różnicą, że nie używa żadnych atrybutów i ma jawne parametry dla **x** i **y**.
 
     ```csharp
     public static int Add2(
@@ -293,23 +292,23 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
     }
     ```
 
-1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
+1. Naciśnij klawisz **F5** , aby skompilować i uruchomić projekt.
 
-1. Zakończeniu kompilacji i uruchamia platformę, teraz poinformuje, jest druga trasa żądania, które mapuje do nowo dodanego metody:
+1. Gdy kompilacja zakończy się, a platforma zacznie się, będzie teraz wskazywać, że dla żądań, które są mapowane na nowo dodaną metodę, jest dostępna druga trasa:
 
-    ![Adres URL dla protokołu Http, funkcje](media/azure-functions-lab-image31.png)
+    ![Adres URL funkcji http](media/azure-functions-lab-image31.png)
 
-1. Wróć do okna przeglądarki i przejdź do **http://localhost:7071/api/Adder/3/5** .
+1. Zwróć okno przeglądarki i przejdź do **http://localhost:7071/api/Adder/3/5** .
 
-1. Tym razem działania metody ponownie, ściągając parametrów ze ścieżki i produkcji to suma.
+1. Tym razem ta metoda działa ponownie, pobierając parametry ze ścieżki i generując sumę.
 
-1. Wróć do **programu Visual Studio dla komputerów Mac** i zakończenie sesji debugowania.
+1. Wróć do **Visual Studio dla komputerów Mac** i Zakończ sesję debugowania.
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>Ćwiczenie 5: Praca z tabelami usługi Azure storage
+## <a name="exercise-5-working-with-azure-storage-tables"></a>Ćwiczenia 5: Praca z tabelami usługi Azure Storage
 
-Często usługi, które tworzysz może być znacznie bardziej złożone niż co możemy utworzone do tej pory wymagać znacznej ilości czasu i/lub infrastrukturę do wykonania. W tym przypadku może okazać się obowiązujące w celu umożliwienia akceptowania żądań, które oczekują w kolejce do przetwarzania, gdy zasoby będą dostępne, które usługi Azure Functions zapewnia obsługę. W innych przypadkach należy do centralnego przechowywania danych. Tabele magazynu platformy Azure pozwolą Ci to zrobić szybko.
+Często tworzona usługa może być dużo bardziej złożona, niż to, co zostało już zrobione i wymaga znacznej ilości czasu i/lub infrastruktury do wykonania. W takim przypadku może wystąpić potrzeba zaakceptowania żądań, które znajdują się w kolejce do przetworzenia, gdy zasoby staną się dostępne, co Azure Functions zapewnia pomoc techniczną dla programu. W innych przypadkach można przechowywać dane centralnie. Tabele usługi Azure Storage umożliwiają szybkie wykonywanie tych czynności.
 
-1. Dodaj klasę poniżej, aby **Add.cs**. Powinien być kierowany wewnątrz przestrzeni nazw, ale poza programem istniejącej klasy.
+1. Dodaj klasę poniżej do **Add.cs**. Powinien on się znaleźć w przestrzeni nazw, ale poza istniejącą klasą.
 
     ```csharp
     public class TableRow : TableEntity
@@ -320,7 +319,7 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
     }
     ```
 
-1. W ramach **Dodaj** klasy, Dodaj poniższy kod, aby wprowadzić inną funkcję. Należy pamiętać, że ta unikatowa do tej pory w tym, że nie obejmują, odpowiedź HTTP. Ostatni wiersz zwraca nowy **wymagają elementu** wypełniony niektóre informacje o kluczu, która ułatwi późniejszą do pobrania w późniejszym czasie na (**PartitionKey** i **RowKey**), a także jej Parametry i sum. Używa również kod w metodzie **TraceWriter** ułatwiają wiedzieć podczas wykonywania funkcji.
+1. W obszarze **Dodaj** Dodaj poniższy kod, aby wprowadzić inną funkcję. Należy zauważyć, że ta grupa jest unikatowa do momentu, w którym nie obejmuje odpowiedzi HTTP. Wiersz końcowy zwraca nowe **TableRow** wypełnione informacjami o kluczowym czasie, które ułatwią jego pobranie w dalszej części (**PartitionKey** i **RowKey**), a także jego parametry i sum. Kod w metodzie korzysta również z **TraceWriter** , aby łatwiej było wiedzieć, kiedy działa funkcja.
 
     ```csharp
     [FunctionName("Process")]
@@ -346,30 +345,30 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
     }
     ```
 
-1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
+1. Naciśnij klawisz **F5** , aby skompilować i uruchomić projekt.
 
-1. Na karcie przeglądarki przejdź do **http://localhost:7071/api/Process/4/6** . Spowoduje to umieszczenie kolejną wiadomość do kolejki po pewnym czasie powinno spowodować kolejnego wiersza, które są dodawane do tabeli.
+1. Na karcie Przeglądarka przejdź do **http://localhost:7071/api/Process/4/6** . Spowoduje to umieszczenie kolejnego komunikatu w kolejce, co powinno spowodować dodanie kolejnego wiersza do tabeli.
 
-1. Wróć do **terminalu** , zwracając uwagę na żądanie przychodzące dla **4 + 6**.
+1. Wróć do **terminalu** i obejrzyj żądanie przychodzące dla **4 + 6**.
 
-    ![Żądanie dodania przedstawiający końcowych danych wyjściowych](media/azure-functions-lab-image32.png)
+    ![Dane wyjściowe terminalu pokazujące żądanie dodania](media/azure-functions-lab-image32.png)
 
-1. Wróć do przeglądarki, aby odświeżyć żądania do tego samego adresu URL. Tym razem zostanie wyświetlony komunikat o błędzie **procesu** metody. Jest to spowodowane kod próbuje dodać wiersz do tabeli usługi Azure Table Storage, za pomocą partycji i wiersza kombinacji klawiszy, który już istnieje.
+1. Wróć do przeglądarki, aby odświeżyć żądanie pod tym samym adresem URL. Tym razem zobaczysz błąd po metodzie **procesu** . Jest to spowodowane tym, że kod próbuje dodać wiersz do tabeli Table Storage platformy Azure przy użyciu kombinacji klucza i partycji, która już istnieje.
 
     ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
-1. Zakończenie sesji debugowania.
+1. Zakończ sesję debugowania.
 
-1. Aby rozwiązać ten błąd, Dodaj następujący parametr do definicji metody bezpośrednio przed **TraceWriter** parametru. Tego parametru powoduje, że platformy usługi Azure Functions w celu podejmowane próby pobierania **wymagają elementu** z **wyniki** tabeli na **PartitionKey** używamy do przechowywania wyniki. Jednak niektóre prawdziwa Magia trafia do odtwarzania po można zauważyć, że **RowKey** dynamicznie generowanych zależy od innych **x** i **y** parametry dla tej samej Metoda. Jeśli ten wiersz już istnieje, następnie **wymagają elementu** będzie mieć je, gdy metoda zaczyna się od nie dodatkowej pracy wymagane przez projektanta. Jeśli wiersz nie istnieje, a następnie po prostu będziesz mieć wartości null. Tego rodzaju wydajności umożliwia deweloperom skoncentrowanie się na logice biznesowej ważna, a nie na infrastrukturze.
+1. Aby wyeliminować błąd, Dodaj następujący parametr do definicji metody bezpośrednio przed parametrem **TraceWriter** . Ten parametr instruuje Azure Functions platformę, aby próbować pobrać **TableRow** z tabeli **wyników** w **PartitionKey** używanym do przechowywania wyników. Jednak niektóre z rzeczywistych magicznych Magic są odtwarzane, gdy zauważysz, że **RowKey** jest generowana dynamicznie na podstawie innych parametrów **x** i **y** dla tej samej metody. Jeśli ten wiersz już istnieje, **TableRow** będzie go używać, gdy metoda zacznie obowiązywać bez dodatkowej pracy wymaganej przez dewelopera. Jeśli wiersz nie istnieje, wówczas będzie miał po prostu wartość null. To sortowanie wydajności pozwala deweloperom skupić się na ważnych logice biznesowej, a nie na infrastrukturze.
 
     ```csharp
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
 
-1. Dodaj poniższy kod do początku metody. Jeśli **wymagają elementu** nie jest null, a firma Microsoft już ma wyników dla Żądana operacja może zwrócić go bezpośrednio. W przeciwnym razie funkcja jest kontynuowane tak jak poprzednio. Chociaż może to nie być najlepszy sposób zwrócenia danych, przedstawia punkt, czy można organizować bardzo zaawansowane operacje w wielu warstwach skalowalne z bardzo niewielkiej ilości kodu.
+1. Dodaj poniższy kod do początku metody. Jeśli **TableRow** nie ma wartości null, mamy już wyniki dla żądania operacji i można ją od razu zwrócić. W przeciwnym razie funkcja będzie kontynuowała działanie tak jak wcześniej. Chociaż może to nie być najbardziej niezawodny sposób zwrócenia danych, ilustruje to punkt, w którym można organizować Zaawansowane operacje niezwykle w wielu warstwach skalowalnych przy użyciu bardzo małego kodu.
 
     ```csharp
     if (tableRow != null)
@@ -379,17 +378,17 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
     }
     ```
 
-1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
+1. Naciśnij klawisz **F5** , aby skompilować i uruchomić projekt.
 
-1. Na karcie przeglądarki, Odśwież adres URL w **http://localhost:7071/api/Process/4/6** . Ponieważ istnieje wiersz tabeli dla tego rekordu, powinien zostać zwrócony natychmiast i bez błędów. Ponieważ nie ma żadnych danych wyjściowych HTTP, zostaną wyświetlone dane wyjściowe w terminalu.
+1. Na karcie Przeglądarka Odśwież adres URL pod adresem **http://localhost:7071/api/Process/4/6** . Ponieważ wiersz tabeli dla tego rekordu istnieje, powinien zostać zwrócony natychmiast i bez błędu. Ponieważ nie ma danych wyjściowych protokołu HTTP, można zobaczyć dane wyjściowe w terminalu.
 
-    ![Końcowych danych wyjściowych przedstawiający wiersz tabeli już istnieje](media/azure-functions-lab-image33.png)
+    ![Dane wyjściowe terminalu pokazujące wiersz tabeli już istnieje](media/azure-functions-lab-image33.png)
 
-1. Aktualizacja adresu URL, aby odzwierciedlić kombinację nie testowano, takich jak **http://localhost:7071/api/Process/5/7** . Należy zauważyć komunikat w terminalu, co oznacza, że wiersz tabeli nie znaleziono (zgodnie z oczekiwaniami).
+1. Zaktualizuj adres URL, aby odzwierciedlić kombinację, która nie została **http://localhost:7071/api/Process/5/7** jeszcze przetestowana, np. Zanotuj komunikat w terminalu, który wskazuje, że nie można odnaleźć wiersza tabeli (zgodnie z oczekiwaniami).
 
-    ![Nowy proces przedstawiający końcowych danych wyjściowych](media/azure-functions-lab-image34.png)
+    ![Dane wyjściowe terminalu pokazujące nowy proces](media/azure-functions-lab-image34.png)
 
-1. Wróć do **programu Visual Studio dla komputerów Mac** i zakończenie sesji debugowania.
+1. Wróć do **Visual Studio dla komputerów Mac** i Zakończ sesję debugowania.
 
 <!--
 1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
@@ -415,4 +414,4 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
 
 ## <a name="summary"></a>Podsumowanie
 
-W tym środowisku laboratoryjnym już wiesz, jak zacząć tworzenie aplikacji usługi Azure Functions za pomocą programu Visual Studio dla komputerów Mac.
+W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions z Visual Studio dla komputerów Mac.

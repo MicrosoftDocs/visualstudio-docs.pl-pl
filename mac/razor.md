@@ -1,83 +1,82 @@
 ---
 title: Razor
-description: Informacje na temat obsługi razor w aplikacji asp.net core w programie Visual Studio dla komputerów Mac
+description: Informacje na temat obsługi Razor w aplikacjach asp.net Core w Visual Studio dla komputerów Mac
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/03/2018
-ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 9e5a3f61ee7065a0615a381bdcc03dafc3566893
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: a66a31d2c63fcb0e2adc4554c49a76c727f9a288
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691268"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107938"
 ---
 # <a name="razor"></a>Razor
 
-Program Visual Studio for Mac zapewnia obsługę Razor do edycji, w tym funkcji IntelliSense i wyróżniania składni w *.cshtml* plików.
+Visual Studio dla komputerów Mac zapewnia obsługę edytowania Razor, w tym funkcji IntelliSense i wyróżniania składni w plikach *. cshtml* .
 
-![Razor do edycji w programie Visual Studio dla komputerów Mac](media/razor-editor.png)
+![Edytowanie Razor w Visual Studio dla komputerów Mac](media/razor-editor.png)
 
-Ten przewodnik zawiera wprowadzenie do tworzenia pierwszej aplikacji sieci web Razor. Bardziej szczegółowe wskazówki można znaleźć na stronie [stron Razor w dokumentacji platformy .NET Core](/aspnet/core/razor-pages/index).
+Ten przewodnik zawiera wprowadzenie do tworzenia pierwszej aplikacji sieci Web Razor. Dokładniejszy przewodnik można Razor Pages znaleźć w [dokumentacji programu .NET Core](/aspnet/core/razor-pages/index).
 
 ## <a name="creating-a-new-razor-project"></a>Tworzenie nowego projektu Razor
 
-* Na ekranie powitalnym wybierz **New** do utworzenia nowego projektu:
+* Na ekranie powitalnym wybierz pozycję **Nowy** , aby utworzyć nowy projekt:
 
-![Program Visual Studio for Mac nowy projekt](media/razor-new.png)
+![Visual Studio dla komputerów Mac nowy projekt](media/razor-new.png)
 
-* W oknie dialogowym Nowy projekt, przejdź do **platformy .NET Core** > **aplikacji** > **aplikacji sieci Web** i wybierz **dalej**przycisku:
+* W oknie dialogowym Nowy projekt przejdź do**aplikacji sieci Web** aplikacji >  **.NET Core** > i wybierz przycisk **dalej** :
 
-![Szablon projektu razor](media/razor-new-project1.png)
+![Szablon projektu Razor](media/razor-new-project1.png)
 
-* Wybierz swoje platformy .NET Core Target Framework wymagane (zalecane 2.2 lub nowszej) i wybierz **dalej**.  Wybierz nazwę projektu i dodać obsługę usługi git, jeśli jest to wymagane. Wybierz **Utwórz** do tworzenia projektu.
+* Wybierz platformę docelową platformy .NET Core (zalecana 2,2 lub nowsza), a następnie wybierz przycisk **dalej**.  Wybierz nazwę projektu i w razie potrzeby Dodaj obsługę usługi git. Wybierz pozycję **Utwórz** , aby utworzyć projekt.
 
-![Nazwa projektu razor](media/razor-new-project2.png)
+![Nazwa projektu Razor](media/razor-new-project2.png)
 
-Program Visual Studio for Mac zostanie Otwórz swój projekt w układzie kodu.
+Visual Studio dla komputerów Mac otworzy projekt w układzie kodu.
 
-* Uruchom projekt bez debugowania za pomocą **Cmd-Opt — F5**
+* Uruchom projekt bez debugowania przy użyciu **polecenia CMD-OPT-F5**
 
-Program Visual Studio będzie uruchomić [Kestral](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel) i uruchomi przeglądarkę, aby `https://localhost:5001` i wyświetlić pierwszej aplikacji sieci web Razor:
+Program Visual Studio uruchomi [Kestral](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel) i uruchomi przeglądarkę w celu `https://localhost:5001` wyświetlenia pierwszej aplikacji sieci Web Razor:
 
-![Aplikacja sieci web razor w przeglądarce Safari](media/razor-webapp.png)
+![Aplikacja sieci Web Razor w przeglądarce Safari](media/razor-webapp.png)
 
-## <a name="project-anatomy"></a>Struktura projektu
+## <a name="project-anatomy"></a>Anatomia projektu
 
-Aplikacje sieci web razor składają się z następujących składników:
+Aplikacje sieci Web Razor składają się z następujących składników:
 
 ### <a name="pages-folder"></a>Folder stron
 
-Folder stron w projekcie jest, gdzie można znaleźć na stronach sieci web, wraz z kodem dla każdego:
-* A * *.cshtml* w pliku kodu znaczników HTML i składni Razor.
-* A * *. cshtml.cs* plików dla Twojego C# związanym z kodem obsługi zdarzenia strony.
+Folder strony w projekcie to miejsce, w którym można znaleźć strony sieci Web, wraz z kodem związanym z każdym z nich:
+* Plik * *. cshtml* dla znaczników HTML i składnia Razor.
+* Plik * *. cshtml.cs* dla kodu związany C# z obsługą zdarzeń na stronach.
 
-Pliki obsługi mają nazwy rozpoczynające się od znaku podkreślenia. Na przykład pliku _Layout.cshtml konfiguruje elementy interfejsu użytkownika dla wszystkich stron. Ten plik konfiguruje menu nawigacji w górnej części strony i informacje o prawach autorskich w dolnej części strony. Aby uzyskać więcej informacji, zobacz [układu w programie ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
+Pliki pomocnicze mają nazwy zaczynające się od znaku podkreślenia. Na przykład plik _Layout. cshtml służy do konfigurowania elementów interfejsu użytkownika wspólnych dla wszystkich stron. Ten plik konfiguruje menu nawigacji w górnej części strony i informacje o prawach autorskich w dolnej części strony. Aby uzyskać więcej informacji, zobacz [Układ w ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
 
 ### <a name="launch-settings"></a>Ustawienia uruchamiania
 
-*LaunchSettings.json* plik zawiera ustawienia programu IIS, adres URL aplikacji i inne powiązane ustawienia.
+Plik *profilu launchsettings. JSON* zawiera ustawienia usług IIS, adres URL aplikacji i inne powiązane ustawienia.
 
 ### <a name="app-settings"></a>Ustawienia aplikacji
 
-*AppSettings, json* plik zawiera dane konfiguracyjne, takie jak parametry połączenia.
+Plik *AppSettings* w formacie JSON zawiera dane konfiguracyjne, takie jak parametry połączenia.
 
-Aby uzyskać więcej informacji o konfiguracji zobacz [konfiguracji w przewodniku ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index).
+Aby uzyskać więcej informacji na temat konfiguracji, zobacz [Konfiguracja w przewodniku ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index).
 
-### <a name="wwwroot-folder"></a>Wwwroot folder
+### <a name="wwwroot-folder"></a>folder wwwroot
 
-Zawiera pliki statyczne, takie jak pliki HTML, plików JavaScript i plików CSS. Aby uzyskać więcej informacji, zobacz [pliki statyczne z platformy ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/static-files).
+Zawiera pliki statyczne, takie jak pliki HTML, pliki JavaScript i pliki CSS. Aby uzyskać więcej informacji, zobacz [pliki statyczne w ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/static-files).
 
 ### <a name="programcs"></a>Program.cs
 
-Zawiera punkt wejścia programu. Aby uzyskać więcej informacji, zobacz [hosta sieci Web programu ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host).
+Zawiera punkt wejścia dla programu. Aby uzyskać więcej informacji, zobacz [ASP.NET Core hosta sieci Web](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host).
 
 ### <a name="startupcs"></a>Startup.cs
 
-Zawiera kod, który konfiguruje zachowania aplikacji, na przykład tego, czy wymaga zgody na pliki cookie. Aby uzyskać więcej informacji, zobacz [uruchamiania aplikacji w programie ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup).
+Zawiera kod, który konfiguruje zachowanie aplikacji, na przykład czy wymaga zgody na pliki cookie. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji w ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup).
 
-## <a name="see-aso"></a>Zobacz programy oraz
+## <a name="see-aso"></a>Zobacz ASO
 
-Aby uzyskać bardziej szczegółowe wskazówki na temat tworzenia aplikacji sieci web Razor zobacz [wprowadzenie do stron Razor programu ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).
+Aby uzyskać bardziej obszerny przewodnik dotyczący tworzenia aplikacji sieci Web Razor [, zobacz Wprowadzenie do Razor Pages w ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).
