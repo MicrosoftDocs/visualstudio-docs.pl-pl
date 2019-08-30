@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c34755fdffb9dd2084f9999aafb01bd6b9fdb4f0
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569852"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180127"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optymalizacja wydajności programu Visual Studio
 
@@ -25,11 +25,11 @@ Ten artykuł zawiera wskazówki, aby wypróbować, jeśli okaże się, że progr
 
 ## <a name="upgrade-visual-studio"></a>Uaktualnij program Visual Studio
 
-Jeśli obecnie używasz programu Visual Studio 2015, Pobierz [programu Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) lub [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) bezpłatnie, aby zapoznaj się z jego lepszą wydajność. Rozwiązania załadować dwóch do trzech razy szybciej niż w programie Visual Studio 2015 za pomocą ulepszenia wydajności w innych obszarach zbyt. Visual Studio 2017 i Visual Studio 2019 r są zgodne side-by-side przy użyciu programu Visual Studio 2015, dzięki czemu nie będzie utracie danych dzięki eksperymentom.
+Jeśli obecnie używasz programu Visual Studio 2015, Pobierz [program Visual studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) lub [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) bezpłatnie, aby sprawdzić jego zwiększoną wydajność. Rozwiązania są ładowane od dwóch do trzech razy szybciej niż w programie Visual Studio 2015, a także ulepszenia wydajności w innych obszarach. Program Visual Studio 2017 i program Visual Studio 2019 są zgodne ze standardami programu Visual Studio 2015, więc nie utracisz żadnych prób.
 
 ::: moniker range="vs-2017"
 
-Jeśli już używasz programu Visual Studio 2017, upewnij się, że używasz wersji 15.6 lub nowszej. Dane pokazują, że rozwiązania ładować się dwa lub trzy razy szybszy w wersji 15.6. Pobierz go [tutaj](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
+Jeśli używasz już programu Visual Studio 2017, upewnij się, że korzystasz z wersji 15,6 lub nowszej. Dane pokazują, że rozwiązania ładować się dwa lub trzy razy szybszy w wersji 15.6. Pobierz go [tutaj](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 ::: moniker-end
 
@@ -49,7 +49,7 @@ Ponadto nie należy uruchamiać swoje rozwiązanie z dysku USB. Skopiuj go na dy
 
 ## <a name="help-us-improve"></a>Pomóż nam w usprawnianiu
 
-Twoja opinia pomoże nam poprawić. Użyj **Zgłoś Problem** funkcji "Zapisz" Śledzenie i wysyłanie do nas. Wybierz ikonę opinii **szybkiego uruchamiania**, lub wybierz **pomocy** > **Wyślij opinię** > **Zgłoś Problem** z paska menu. Aby uzyskać więcej informacji, zobacz [jak zgłosić problem z programem Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+Twoja opinia pomoże nam poprawić. Użyj **Zgłoś Problem** funkcji "Zapisz" Śledzenie i wysyłanie do nas. Wybierz ikonę opinii **szybkiego uruchamiania**, lub wybierz **pomocy** > **Wyślij opinię** > **Zgłoś Problem** z paska menu. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz także
 

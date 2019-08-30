@@ -15,14 +15,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbecfb7e74b38bb935414e701618cef361bf0506
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997451"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180022"
 ---
-# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją programu Visual Studio i uaktualnić problemów
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją i uaktualnieniem programu Visual Studio
 
 > [!IMPORTANT]
 > Nie, problemów z instalacją? Możemy pomóc. Firma Microsoft oferuje [ **Czat na żywo** ](https://visualstudio.microsoft.com/vs/support/#talktous) opcję pomocy technicznej (tylko w języku angielskim).
@@ -71,7 +71,7 @@ Program inicjujący Instalatora programu Visual Studio jest minimalny plik wykon
 
 1. Zamknij Instalatora programu Visual Studio.
 2. Usuń katalog Instalatora programu Visual Studio. Zazwyczaj jest katalog `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Uruchom program inicjujący Instalatora programu Visual Studio. Program inicjujący można znaleźć w folderze pobrane przy użyciu nazwy pliku, który następuje po `vs_[Visual Studio edition]__*.exe` wzorca. Jeśli nie możesz znaleźć tę aplikację, możesz pobrać program inicjujący, przechodząc do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony i klikając **Pobierz** używanej wersji programu Visual Studio. Następnie uruchom plik wykonywalny, aby zresetować metadane instalacji.
+3. Uruchom program inicjujący Instalatora programu Visual Studio. Program inicjujący można znaleźć w folderze pobrane przy użyciu nazwy pliku, który następuje po `vs_[Visual Studio edition]__*.exe` wzorca. Jeśli nie możesz znaleźć tę aplikację, możesz pobrać program inicjujący, przechodząc do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony i klikając **Pobierz** używanej wersji programu Visual Studio. Następnie uruchom plik wykonywalny, aby zresetować metadane instalacji.
 4. Spróbuj zainstalować lub zaktualizować program Visual Studio ponownie. Jeśli Instalator zakończy się niepowodzeniem, przejdź do następnego kroku.
 
 ::: moniker-end
@@ -125,7 +125,7 @@ W tym miejscu znajduje się tabela znane problemy i obejścia, które mogą być
 
 Dzienniki instalacji są wymagane do większości rozwiązywania problemów z instalacją. Gdy Prześlij problem za pomocą [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio.md) w Instalatorze programu Visual Studio, te dzienniki są automatycznie uwzględniane w raporcie.
 
-Jeśli zamierzasz zgłosić Support firmy Microsoft, może być konieczne dostarczenie tych dzienników instalacji przy użyciu [Microsoft Visual Studio i narzędzia do zbierania dzienników platformy .NET Framework](https://aka.ms/vscollect). Narzędzie do zbierania dzienników zbiera dzienniki instalacji z wszystkie składniki zainstalowane przez program Visual Studio, w tym .NET Framework, zestaw Windows SDK i programu SQL Server. Zbiera także informacje o komputerze, spis dla Instalatora Windows i Windows informacje dziennika zdarzeń dla Instalatora programu Visual Studio, Instalator Windows i przywracanie systemu.
+Jeśli zamierzasz zgłosić Support firmy Microsoft, może być konieczne dostarczenie tych dzienników instalacji przy użyciu [Microsoft Visual Studio i narzędzia do zbierania dzienników platformy .NET Framework](https://aka.ms/vscollect). Narzędzie do zbierania dzienników zbiera dzienniki instalacji ze wszystkich składników instalowanych przez program Visual Studio, w tym .NET Framework, Windows SDK i SQL Server. Zbiera także informacje o komputerze, spis dla Instalatora Windows i Windows informacje dziennika zdarzeń dla Instalatora programu Visual Studio, Instalator Windows i przywracanie systemu.
 
 Aby zebrać dzienniki:
 
@@ -143,7 +143,7 @@ Jeśli te rozwiązania wymienione w tym przewodniku rozwiązywania problemów ni
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Remove Visual Studio](remove-visual-studio.md)
+* [Usuń program Visual Studio](remove-visual-studio.md)
 * [Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)
 * [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)

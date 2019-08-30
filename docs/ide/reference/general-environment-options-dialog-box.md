@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605444"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180284"
 ---
 # <a name="options-dialog-box-environment--general"></a>Opcje — okno dialogowe: Środowisko \> ogólne
 
@@ -50,7 +50,7 @@ Menu domyślnie używają stylu wielkości liter. Usuń zaznaczenie tej opcji, a
 Ta opcja włącza lub wyłącza funkcję rozpoznawania punktów na cal (DPI) (lub *PMA*). Gdy PMA jest włączona, interfejs użytkownika programu Visual Studio jest bardziej wyrazisty w dowolnym monitorze monitora wyświetlania ekranu i konfiguracji DPI, w tym na wielu monitorach. Aby włączyć PMA, wymagana jest aktualizacja systemu Windows 10 z kwietnia 2018 lub nowsza i .NET Framework 4,8 lub nowsza. (Ta opcja jest wyświetlana w kolorze szarym, jeśli te dwa wymagania wstępne nie są spełnione).
 
 > [!TIP]
-> - System Windows 10 ma ustawienie informujące o tym, że **system Windows próbuje naprawić aplikacje, tak aby nie były zamazane**. Włączenie **tego ustawienia systemu** Windows ma niewielki efekt, jeśli jest zaznaczone pole wyboru **Optymalizuj Render dla ekranów z inną gęstością pikseli** .
+> - System Windows 10 ma ustawienie informujące o tym, że **system Windows próbuje naprawić aplikacje, tak aby nie były zamazane**. Włączenie tego ustawienia systemu Windows ma niewielki efekt, jeśli jest zaznaczone pole wyboru **Optymalizuj Render dla ekranów z inną gęstością pikseli** .
 > - System Windows 10 zawiera również **Narzędzie do rozwiązywania problemów ze zgodnością programu**. Nie zalecamy próby naprawienia wyglądu programu Visual Studio za pomocą tego narzędzia do rozwiązywania problemów.
 
 ::: moniker-end
@@ -62,7 +62,7 @@ Określa, czy program Visual Studio ustawia automatyczne dopasowanie do wizualiz
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> System Windows 10 ma ustawienie informujące o tym, że **system Windows próbuje naprawić aplikacje, tak aby nie były zamazane**. Włączenie **tego ustawienia jest** zalecane, jeśli program Visual Studio wydaje się zamazany na monitorze. Rozważ uaktualnienie do [programu Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), która znacznie poprawiła czytelność ekranu, ponieważ jest to liczba punktów monitora na aplikację obsługującą cal.
+> System Windows 10 ma ustawienie informujące o tym, że **system Windows próbuje naprawić aplikacje, tak aby nie były zamazane**. Włączenie tego ustawienia jest zalecane, jeśli program Visual Studio wydaje się zamazany na monitorze. Rozważ uaktualnienie do [programu Visual Studio 2019](https://visualstudio.microsoft.com/downloads), która znacznie poprawiła czytelność ekranu, ponieważ jest to liczba punktów monitora na aplikację obsługującą cal.
 
 ::: moniker-end
 
@@ -94,7 +94,7 @@ Określa, że po kliknięciu przycisku **Zamknij** tylko okno narzędzia z fokus
 
 **Przycisk Autoukrywanie ma wpływ tylko na aktywne okno narzędzi**
 
-Określa, że po  kliknięciu przycisku Autoukrywanie tylko okno narzędzia z fokusem jest ukryte automatycznie i nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja nie jest zaznaczona.
+Określa, że po kliknięciu przycisku Autoukrywanie tylko okno narzędzia z fokusem jest ukryte automatycznie i nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja nie jest zaznaczona.
 
 ## <a name="see-also"></a>Zobacz także
 

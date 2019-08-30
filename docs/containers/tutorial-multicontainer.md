@@ -1,60 +1,60 @@
 ---
-title: Samouczek wieloma kontenerami w celu przy użyciu narzędzia Docker Compose i platformy ASP.NET Core
+title: Samouczek wielokontenerowy korzystający z Docker Compose & ASP.NET Core
 author: ghogen
-description: Dowiedz się, jak używać wielu kontenerów za pomocą narzędzia Docker Compose
+description: Dowiedz się, jak używać wielu kontenerów z Docker Compose
 ms.author: ghogen
 ms.date: 02/21/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: bbaa516921649fa2834f03fbf8f9f2f39f35a9ef
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: ce6e98e2d068cd569247c4c4ea869c4280101d47
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261178"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179838"
 ---
-# <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Utwórz aplikację obsługującą wiele kontenerów przy użyciu narzędzia Docker Compose
+# <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Tworzenie aplikacji z obsługą kontenera przy użyciu Docker Compose
 
-W tym samouczku dowiesz się, jak zarządzać więcej niż jednego kontenera i komunikować się między nimi przy użyciu narzędzia kontenerów programu Visual Studio.  Zarządzanie wieloma kontenerami wymaga *aranżacji kontenerów* i wymaga orkiestratora, takiego jak Docker Compose, Kubernetes lub usługi Service Fabric. W tym miejscu użyjemy narzędzia Docker Compose. Docker Compose to idealne narzędzie do debugowania i testowania w ramach cyklu tworzenia oprogramowania lokalnego.
+W tym samouczku dowiesz się, jak zarządzać więcej niż jednym kontenerem i komunikować się między nimi przy użyciu narzędzi kontenera w programie Visual Studio.  Zarządzanie wieloma kontenerami wymaga *aranżacji kontenera* i wymaga koordynatora, takiego jak Docker Compose, Kubernetes lub Service Fabric. W tym miejscu będziemy używać Docker Compose. Docker Compose doskonale nadaje się do lokalnego debugowania i testowania w trakcie cyklu programowania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 ::: moniker range="vs-2017"
-* [Pulpitu platformy docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
+* [Pulpit Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) z zainstalowaną obsługą tworzenia aplikacji dla **sieci Web**, obciążeń **narzędzi platformy Azure** lub **oprogramowania .NET Core dla wielu platform**
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
-* [Pulpitu platformy docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
-* [Narzędzia programistyczne programu .NET core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) podczas tworzenia aplikacji z platformy .NET Core 2.2
+* [Pulpit Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* [Program Visual Studio 2019](https://visualstudio.microsoft.com/downloads) z zainstalowaną obsługą tworzenia aplikacji dla **sieci Web**, obciążeń **narzędzi platformy Azure** i/lub **oprogramowania .NET Core dla wielu platform**
+* [Narzędzia programistyczne programu .net core 2,2](https://dotnet.microsoft.com/download/dotnet-core/2.2) do programowania przy użyciu programu .net Core 2,2
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>Tworzenie projektu aplikacji sieci Web
 
-W programie Visual Studio, należy utworzyć **aplikacji sieci Web programu ASP.NET Core** projektu o nazwie `WebFrontEnd`. Wybierz **aplikacji sieci Web** do tworzenia aplikacji sieci web ze stron Razor. 
+W programie Visual Studio Utwórz projekt **ASP.NET Core aplikacji sieci Web** o nazwie `WebFrontEnd`. Wybierz pozycję **aplikacja sieci Web** , aby utworzyć aplikację sieci Web przy użyciu stron Razor. 
   
 ::: moniker range="vs-2017"
 
-Nie należy wybierać **włączyć obsługę platformy Docker**. Później dodasz obsługę platformy Docker.
+Nie wybieraj opcji **Włącz obsługę platformy Docker**. Później dodasz obsługę platformy Docker.
 
-![Zrzut ekranu przedstawiający tworzenie projektu sieci web](./media/tutorial-multicontainer/docker-tutorial-enable-docker-support.png)
+![Zrzut ekranu przedstawiający tworzenie projektu sieci Web](./media/tutorial-multicontainer/docker-tutorial-enable-docker-support.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-![Zrzut ekranu przedstawiający tworzenie projektu sieci web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Zrzut ekranu przedstawiający tworzenie projektu sieci Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
-Nie należy wybierać **włączyć obsługę platformy Docker**. Później dodasz obsługę platformy Docker.
+Nie wybieraj opcji **Włącz obsługę platformy Docker**. Później dodasz obsługę platformy Docker.
 
-![Zrzut ekranu przedstawiający tworzenie projektu sieci web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Zrzut ekranu przedstawiający tworzenie projektu sieci Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 
-## <a name="create-a-web-api-project"></a>Utwórz projekt internetowego interfejsu API
+## <a name="create-a-web-api-project"></a>Tworzenie projektu interfejsu API sieci Web
 
-Dodaj projekt do tego samego rozwiązania, a następnie wywołaj ją *MyWebAPI*. Wybierz **API** jako projekt typu, a następnie wyczyść pole wyboru **Konfigurowanie protokołu HTTPS**. W tym projekcie używamy tylko protokół SSL dla komunikacji z klientem, a nie dla komunikacji znajdujące kontenerów w ramach jednej aplikacji sieci web. Tylko `WebFrontEnd` wymaga protokołu HTTPS.
+Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozycję **interfejs API** jako typ projektu i usuń zaznaczenie pola wyboru **Konfiguruj dla protokołu HTTPS**. W tym projekcie korzystamy z protokołu SSL do komunikacji z klientem, a nie do komunikacji między kontenerami w tej samej aplikacji sieci Web. Wymaga `WebFrontEnd` tylko protokołu HTTPS.
 
 ::: moniker range="vs-2017"
    ![Zrzut ekranu przedstawiający tworzenie projektu interfejsu API sieci Web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -63,9 +63,9 @@ Dodaj projekt do tego samego rozwiązania, a następnie wywołaj ją *MyWebAPI*.
    ![Zrzut ekranu przedstawiający tworzenie projektu interfejsu API sieci Web](./media/tutorial-multicontainer/vs-2019/web-api-project.png)
 ::: moniker-end
 
-## <a name="add-code-to-call-the-web-api"></a>Dodaj kod, aby wywołać interfejs API sieci Web
+## <a name="add-code-to-call-the-web-api"></a>Dodawanie kodu do wywoływania interfejsu API sieci Web
 
-1. W `WebFrontEnd` otwarty projekt *Index.cshtml.cs* plik i zastąpić `OnGet` metoda następującym kodem.
+1. W projekcie Otwórz plik *index.cshtml.cs* i Zastąp `OnGet` metodę poniższym kodem. `WebFrontEnd`
 
    ```csharp
     public async Task OnGet()
@@ -83,7 +83,7 @@ Dodaj projekt do tego samego rozwiązania, a następnie wywołaj ją *MyWebAPI*.
     }
    ```
 
-1. W *Index.cshtml* Dodaj wiersz, aby wyświetlić `ViewData["Message"]` tak, aby plik będzie wyglądać podobnie do poniższego kodu:
+1. W pliku *index. cshtml* Dodaj wiersz do wyświetlenia `ViewData["Message"]` , aby plik wyglądał jak poniższy kod:
     
       ```cshtml
       @page
@@ -99,7 +99,7 @@ Dodaj projekt do tego samego rozwiązania, a następnie wywołaj ją *MyWebAPI*.
       </div>
       ```
 
-1. Teraz w projekcie interfejsu API sieci Web, Dodaj kod do kontrolera wartości, aby dostosować komunikat zwrócony przez interfejs API dla wywołania dodane z *webfrontend*.
+1. Teraz w projekcie interfejsu API sieci Web Dodaj kod do kontrolera wartości, aby dostosować komunikat zwracany przez interfejs API dla wywołania, które zostało dodane zelementu webfrontonu.
     
       ```csharp
         // GET api/values/5
@@ -110,19 +110,19 @@ Dodaj projekt do tego samego rozwiązania, a następnie wywołaj ją *MyWebAPI*.
         }
       ```
 
-1. W `WebFrontEnd` projektu, wybierz **Dodaj > Obsługa Orkiestratora kontenerów**. **Opcje pomocy technicznej platformy Docker** zostanie wyświetlone okno dialogowe.
+1. W projekcie wybierz pozycję **Dodaj > kontener usługi Orchestrator support.** `WebFrontEnd` Zostanie wyświetlone okno dialogowe **Opcje obsługi platformy Docker** .
 
-1. Wybierz **narzędzia Docker Compose**.
+1. Wybierz **Docker Compose**.
 
-1. Wybierz docelowy system operacyjny, na przykład w systemie Linux.
+1. Wybierz docelowy system operacyjny, na przykład Linux.
 
-   ![Zrzut ekranu przedstawiający Wybieranie docelowy system operacyjny](media/tutorial-multicontainer/docker-tutorial-docker-support-options.PNG)
+   ![Zrzut ekranu przedstawiający Wybieranie docelowego systemu operacyjnego](media/tutorial-multicontainer/docker-tutorial-docker-support-options.PNG)
 
-   Program Visual Studio tworzy *docker-compose.yml* pliku i *.dockerignore* w pliku **narzędzia docker compose** węzła w rozwiązaniu i tego projektu zawiera w pogrubiony czcionki który wskazuje, że jest projekt startowy.
+   Program Visual Studio tworzy plik *Docker-Compose. yml* i plik *. dockerignore* w węźle **Docker-redagowanie** w rozwiązaniu, a ten projekt pokazuje pogrubioną czcionkę, która pokazuje, że jest to projekt startowy.
 
-   ![Zrzut ekranu Eksploratora rozwiązań z projektem docker-compose dodane](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
+   ![Zrzut ekranu przedstawiający Eksplorator rozwiązań z dodanym projektem platformy Docker](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
 
-   *Docker-compose.yml* wygląda następująco:
+   *Docker-Compose. yml* pojawia się w następujący sposób:
 
    ```yaml
    version: '3.4'
@@ -135,16 +135,16 @@ Dodaj projekt do tego samego rozwiązania, a następnie wywołaj ją *MyWebAPI*.
           dockerfile: WebFrontEnd/Dockerfile
    ```
 
-   *.Dockerignore* plik zawiera typy plików i rozszerzenia, które nie mają platformy Docker do uwzględnienia w kontenerze. Te pliki są zwykle skojarzone z środowiska deweloperskiego i kontrola źródła, nie jest częścią aplikacji lub usługi, którą tworzysz.
+   Plik *. dockerignore* zawiera typy plików i rozszerzenia, które nie powinny być uwzględniane przez platformę Docker w kontenerze. Te pliki są zwykle powiązane ze środowiskiem deweloperskim i kontrolą źródła, a nie częścią aplikacji lub usługi, która jest opracowywana.
 
-   Przyjrzyj się **narzędzia kontenerów** sekcji okienko danych wyjściowych, aby uzyskać szczegółowe informacje o polecenia są uruchamiane.  Widać, narzędzie wiersza polecenia narzędzia docker compose służy do konfigurowania i tworzenia kontenerów środowiska wykonawczego.
+   Aby uzyskać szczegółowe informacje na temat wykonywanych poleceń, zapoznaj się z sekcją **Narzędzia kontenera** w okienku danych wyjściowych.  Aby skonfigurować i utworzyć kontenery środowiska uruchomieniowego, można zobaczyć narzędzie wiersza polecenia Docker-Zredaguj.
 
-1. W projekcie interfejsu API sieci Web, ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz **Dodaj** > **obsługi Orkiestratora kontenerów**. Wybierz **narzędzia Docker Compose**, a następnie wybierz ten sam element docelowy system operacyjny.  
+1. W projekcie interfejsu API sieci Web ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Dodaj** > **obsługę programu Orchestrator kontenera**. Wybierz **Docker Compose**, a następnie wybierz ten sam docelowy system operacyjny.  
 
     > [!NOTE]
-    > W tym kroku programu Visual Studio będzie oferować do utworzenia pliku Dockerfile. Jeśli możesz to zrobić w projekcie, który ma już obsługuje platformy Docker, zostanie wyświetlony monit, czy chcesz zastąpić istniejący plik Dockerfile. Jeśli wprowadzono zmiany z pliku dockerfile, który chcesz zachować, wybierz przycisk nie.
+    > W tym kroku program Visual Studio będzie oferować pliku dockerfile. Jeśli wykonasz tę czynność w projekcie, który ma już obsługę platformy Docker, zostanie wyświetlony monit z pytaniem, czy chcesz zastąpić istniejące pliku dockerfile. Jeśli wprowadzono zmiany w pliku dockerfile, które chcesz zachować, wybierz pozycję nie.
 
-    Visual Studio wprowadza pewne zmiany do swojej platformy docker compose plik YML. Teraz obie te usługi są uwzględniane.
+    Program Visual Studio wprowadza pewne zmiany w pliku YML programu Docker. Teraz są uwzględniane obie usługi.
 
     ```yaml
     version: '3.4'
@@ -163,21 +163,21 @@ Dodaj projekt do tego samego rozwiązania, a następnie wywołaj ją *MyWebAPI*.
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. Lokalnie, teraz (F5 lub Ctrl + F5), aby sprawdzić, czy działa zgodnie z oczekiwaniami, należy uruchomić witryny. Jeśli wszystko jest poprawnie skonfigurowane, zostanie wyświetlony komunikat "Hello webfrontend i webapi (z wartością 1)".
+1. Uruchom witrynę lokalnie teraz (F5 lub CTRL + F5), aby sprawdzić, czy działa zgodnie z oczekiwaniami. Jeśli wszystko jest prawidłowo skonfigurowane, zobaczysz komunikat "Hello z webfrontonu i WebAPI (z wartością 1)".
 
-   Skonfigurowano pierwszy projekt, używanego podczas dodawania aranżacji kontenerów do uruchomienia podczas uruchamiania lub debugowania. Można skonfigurować w akcji uruchamiania **właściwości projektu** docker-compose projektu.  W węźle projektu docker-compose, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe, a następnie wybierz **właściwości**, lub użyj klawisze Alt + Enter.  Poniższy zrzut ekranu przedstawia właściwości, które chcesz uzyskać rozwiązanie używane w tym miejscu.  Na przykład można zmienić strony, który jest ładowany przez dostosowanie **adres URL usługi** właściwości.
+   Pierwszy projekt używany podczas dodawania aranżacji kontenera jest ustawiany do uruchamiania lub debugowania. Akcję uruchamiania można skonfigurować we **właściwościach projektu** dla projektu Docker-Zredaguj.  W węźle Docker-redagowanie projektu kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe, a następnie wybierz polecenie **Właściwości**lub użyj klawiszy Alt + Enter.  Poniższy zrzut ekranu przedstawia właściwości, które mają być używane w tym miejscu.  Na przykład można zmienić stronę, która jest ładowana, dostosowując Właściwość **adresu URL usługi** .
 
-   ![Zrzut ekranu przedstawiający docker-compose właściwości projektu](media/tutorial-multicontainer/launch-action.png)
+   ![Zrzut ekranu przedstawiający właściwości projektu platformy Docker](media/tutorial-multicontainer/launch-action.png)
 
-   Oto, zobacz przy uruchamianiu:
+   Oto co widzisz po uruchomieniu:
 
-   ![Zrzut ekranu przedstawiający działającej aplikacji sieci web](media/tutorial-multicontainer/webfrontend.png)
+   ![Zrzut ekranu przedstawiający uruchomioną aplikację sieci Web](media/tutorial-multicontainer/webfrontend.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Sprawdź opcje wdrażania usługi [kontenery na platformie Azure](/azure/containers).
+Zapoznaj się z opcjami wdrażania [kontenerów na platformie Azure](/azure/containers).
 
 ## <a name="see-also"></a>Zobacz także
   
 [Docker Compose](https://docs.docker.com/compose/)  
-[Narzędzia kontenerów](/visualstudio/containers/)
+[Narzędzia kontenera](/visualstudio/containers/)

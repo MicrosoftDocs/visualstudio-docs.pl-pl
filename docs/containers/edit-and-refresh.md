@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 07/25/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: 1b80fa9316c4db5a51fdb20150a9adae5a378682
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d7a7fa83fe0976ee1e08c6c614a11f783178a285
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604761"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179857"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 
@@ -34,7 +34,7 @@ Aby debugować aplikacje w lokalnym kontenerze platformy Docker, należy zainsta
 
 ::: moniker range="vs-2019"
 
-* [Program Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) z zainstalowanym obciążeniem programowaniem w sieci Web
+* [Program Visual Studio 2019](https://visualstudio.microsoft.com/downloads) z zainstalowanym obciążeniem programowaniem w sieci Web
 
 ::: moniker-end
 

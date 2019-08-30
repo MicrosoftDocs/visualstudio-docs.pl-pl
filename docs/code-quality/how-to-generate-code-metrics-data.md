@@ -1,5 +1,5 @@
 ---
-title: Generowanie metryki kodu ze środowiskiem IDE lub wiersza polecenia
+title: Generuj metryki kodu z poziomu środowiska IDE lub z wiersza polecenia
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe82fc213937b7e494afd27bfd964347c17e2b8
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823585"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179976"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: Generowanie danych metryk kodu
 
-Za Generowanie danych metryk kodu na trzy sposoby:
+Dane metryk kodu można generować na trzy sposoby:
 
-- Instalując [analizatory FxCop analizujące kod](#fxcop-analyzers-code-metrics-rules) i włączanie reguł metryk (łatwość konserwacji) cztery kod zawiera.
+- Instalując [analizatory FxCop](#fxcop-analyzers-code-metrics-rules) i włączając cztery zawarte w niej reguły metryki kodu (łatwość konserwacji).
 
-- Wybierając [ **analizy** > **Oblicz metryki kodu** ](#calculate-code-metrics-menu-command) polecenia menu w programie Visual Studio.
+- Poprzez wybranie polecenia [ **Analizuj** > **metryki kodu** ](#calculate-code-metrics-menu-command) w programie Visual Studio.
 
-- Z [wiersza polecenia](#command-line-code-metrics) dla C# i projektach języka Visual Basic.
+- Z [wiersza polecenia](#command-line-code-metrics) dla C# projektów i Visual Basic.
 
-## <a name="fxcop-analyzers-code-metrics-rules"></a>Analizatory FxCop analizujące kod reguły metryk kodu
+## <a name="fxcop-analyzers-code-metrics-rules"></a>Reguły metryk kodu analizatorów FxCop
 
-[Pakietu FxCopAnalyzers NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) obejmuje kilka metryk kodu [analizatora](roslyn-analyzers-overview.md) reguły:
+[Pakiet NuGet FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) zawiera kilka reguł analizatora [](roslyn-analyzers-overview.md) metryk kodu:
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502-avoid-excessive-complexity.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
 - [CA1506](ca1506-avoid-excessive-class-coupling.md)
 
-Te reguły są domyślnie wyłączone, ale można je włączyć [ **Eksploratora rozwiązań** ](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) lub [zestaw reguł](using-rule-sets-to-group-code-analysis-rules.md) pliku. Na przykład aby włączyć zasadę CA1502 jako ostrzeżenie, plik .ruleset będzie zawierać następujący wpis:
+Te reguły są domyślnie wyłączone, ale można je włączyć z poziomu [**Eksplorator rozwiązań**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) lub w pliku [zestawu reguł](using-rule-sets-to-group-code-analysis-rules.md) . Na przykład, aby włączyć CA1502 reguły jako ostrzeżenie, plik zestawu reguł będzie zawierać następujący wpis:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -50,9 +50,9 @@ Te reguły są domyślnie wyłączone, ale można je włączyć [ **Eksploratora
 
 ### <a name="configuration"></a>Konfiguracja
 
-Możesz skonfigurować progi, w których reguły metryki kodu w analizatory FxCop analizujące kod pakietu ognia.
+Można skonfigurować progi, w których reguły metryk kodu są wyzwalane przez program FxCop analizatory.
 
-1. Utwórz plik tekstowy. Na przykład można określić nazwę *CodeMetricsConfig.txt*.
+1. Utwórz plik tekstowy. Na przykład możesz ją nazwać *CodeMetricsConfig. txt*.
 
 2. Dodaj odpowiednie progi do pliku tekstowego w następującym formacie:
 
@@ -60,9 +60,9 @@ Możesz skonfigurować progi, w których reguły metryki kodu w analizatory FxCo
    CA1502: 10
    ```
 
-   W tym przykładzie reguła [CA1502](ca1502-avoid-excessive-complexity.md) skonfigurowano wyzwolenie, gdy metoda złożoność cyklomatyczna jest większy niż 10.
+   W tym przykładzie reguła [CA1502](ca1502-avoid-excessive-complexity.md) jest skonfigurowana do uruchamiania, gdy Złożoność cyklomatyczna metody jest większa niż 10.
 
-3. W **właściwości** okna programu Visual Studio lub w pliku projektu, oznacz akcję kompilacji pliku konfiguracyjnym jako [ **AdditionalFiles**](../ide/build-actions.md#build-action-values). Na przykład:
+3. W oknie **Właściwości** programu Visual Studio lub w pliku projektu Oznacz akcję kompilacja pliku konfiguracji jako [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Przykład:
 
    ```xml
    <ItemGroup>
@@ -70,48 +70,48 @@ Możesz skonfigurować progi, w których reguły metryki kodu w analizatory FxCo
    </ItemGroup>
    ```
 
-## <a name="calculate-code-metrics-menu-command"></a>Oblicz metryki kodu, polecenia menu
+## <a name="calculate-code-metrics-menu-command"></a>Polecenie Oblicz metryki kodu — menu
 
-Generowanie metryki kodu dla jednego lub wszystkich otwartych projektów w IDE, za pomocą **analizy** > **Oblicz metryki kodu** menu.
+Generuj metryki kodu dla jednego lub wszystkich otwartych projektów w środowisku IDE przy użyciu menu **Analizuj** > **metryki kodu** .
 
-### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generowanie wyników metryk kodów dla całego rozwiązania
+### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generuj wyniki metryk kodu dla całego rozwiązania
 
-Wyniki metryki kodu dla całego rozwiązania można wygenerować w dowolnym z następujących sposobów:
+Można generować wyniki metryk kodu dla całego rozwiązania w dowolny z następujących sposobów:
 
-- Na pasku menu wybierz **analizy** > **Oblicz metryki kodu** > **dla rozwiązania**.
+- Na pasku menu wybierz **Analizuj** > **Oblicz metryki** > kodu**dla rozwiązania**.
 
-- W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz **Oblicz metryki kodu**.
+- W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz polecenie **Oblicz metryki kodu**.
 
-- W **wyników metryk kodów** oknie Wybierz **Oblicz metryki kodu dla rozwiązania** przycisku.
+- W oknie **wyników metryk kodu** wybierz przycisk **Oblicz metryki kodu dla rozwiązania** .
 
-Wyniki są generowane i **wyników metryk kodów** zostanie wyświetlone okno. Aby wyświetlić szczegółowe wyniki wyszukiwania, rozwiń węzeł drzewa w **hierarchii** kolumny.
+Wyniki są generowane i zostanie wyświetlone okno **wyników metryk kodu** . Aby wyświetlić szczegóły wyników, rozwiń drzewo w kolumnie hierarchia .
 
-### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Generowanie wyników metryk kodów dla jednego lub więcej projektów
+### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Generuj wyniki metryk kodu dla jednego lub wielu projektów
 
-1. W **Eksploratora rozwiązań**, zaznacz jeden lub więcej projektów.
+1. W **Eksplorator rozwiązań**wybierz co najmniej jeden projekt.
 
-1. Na pasku menu wybierz **analizy** > **Oblicz metryki kodu** > **dla projektów wybrane**.
+1. Na pasku menu wybierz polecenie **Analizuj** > **Oblicz metryki** > kodu**dla wybranych projektów**.
 
-Wyniki są generowane i **wyników metryk kodów** zostanie wyświetlone okno. Aby wyświetlić szczegółowe wyniki wyszukiwania, rozwiń węzeł drzewa w **hierarchii**.
+Wyniki są generowane i zostanie wyświetlone okno **wyników metryk kodu** . Aby wyświetlić szczegóły wyników, rozwiń drzewo w **hierarchii**.
 
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> **Oblicz metryki kodu** polecenie nie działa w przypadku projektów .NET Core i .NET Standard. Aby obliczyć metryki kodu dla projektu .NET Core lub .NET Standard, możesz wykonywać następujące czynności:
+> Polecenie **Oblicz metryki kodu** nie działa w przypadku projektów .NET Core i .NET Standard. Aby obliczyć metryki kodu dla projektu .NET Core lub .NET Standard, można:
 >
-> - Oblicz metrykę kodu z [wiersza polecenia](#command-line-code-metrics) zamiast tego
+> - Zamiast tego Oblicz metrykę kodu z poziomu [wiersza polecenia](#command-line-code-metrics)
 >
-> - Uaktualnianie do [Visual Studio 2019 r.](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+> - Uaktualnianie do [programu Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>Metryki kodu wiersza polecenia
 
-Można wygenerować danych metryk kodu z poziomu wiersza polecenia dla C# i projektach języka Visual Basic dla aplikacji .NET Framework, .NET Core i .NET Standard. Aby uruchomić metryki kodu z poziomu wiersza polecenia, należy zainstalować [pakietu Microsoft.CodeAnalysis.Metrics NuGet](#microsoftcodeanalysismetrics-nuget-package) lub przy tworzeniu [Metrics.exe](#metricsexe) pliku wykonywalnego samodzielnie.
+Można generować dane metryk kodu z wiersza polecenia dla C# i Visual Basic projekty dla .NET Framework, .NET Core i .NET Standard aplikacji. Aby uruchomić metryki kodu z wiersza polecenia, należy zainstalować [pakiet NuGet Microsoft. CodeAnalysis. Metrics](#microsoftcodeanalysismetrics-nuget-package) lub ręcznie utworzyć plik [Metrics. exe](#metricsexe) .
 
-### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pakiet Microsoft.CodeAnalysis.Metrics NuGet
+### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pakiet NuGet Microsoft. CodeAnalysis. Metrics
 
-Najprostszym sposobem Generowanie danych metryk kodu z poziomu wiersza polecenia jest instalując [Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) pakietu NuGet. Po zainstalowaniu pakietu Uruchom `msbuild /t:Metrics` z katalogu, który zawiera plik projektu. Na przykład:
+Najprostszym sposobem generowania danych metryk kodu z wiersza polecenia jest zainstalowanie pakietu NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Po zainstalowaniu pakietu Uruchom `msbuild /t:Metrics` polecenie z katalogu, który zawiera plik projektu. Na przykład:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Nazwa pliku wyjściowego można zastąpić, określając `/p:MetricsOutputFile=<filename>`. Możesz też pobrać [starszego stylu](#previous-versions) kodu danych metryk, określając `/p:LEGACY_CODE_METRICS_MODE=true`. Na przykład:
+Można zastąpić nazwę pliku wyjściowego, określając `/p:MetricsOutputFile=<filename>`. Możesz również uzyskać dane metryk kodu w [starszej wersji](#previous-versions) , określając `/p:LEGACY_CODE_METRICS_MODE=true`. Na przykład:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -158,9 +158,9 @@ Build succeeded.
     0 Error(s)
 ```
 
-### <a name="code-metrics-output"></a>Wyjście metryk kodu
+### <a name="code-metrics-output"></a>Dane wyjściowe metryk kodu
 
-Wygenerowane dane wyjściowe XML ma następujący format:
+Wygenerowane dane wyjściowe XML mają następujący format:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -213,25 +213,25 @@ Wygenerowane dane wyjściowe XML ma następujący format:
 </CodeMetricsReport>
 ```
 
-### <a name="metricsexe"></a>Metrics.exe
+### <a name="metricsexe"></a>Metrics. exe
 
-Jeśli nie chcesz zainstalować pakiet NuGet, można wygenerować i używać *Metrics.exe* bezpośrednio w pliku wykonywalnego. Aby wygenerować *Metrics.exe* pliku wykonywalnego:
+Jeśli nie chcesz instalować pakietu NuGet, możesz bezpośrednio generować plik *Metrics. exe* i korzystać z niego. Aby wygenerować plik wykonywalny *Metrics. exe* :
 
-1. Klonuj [analizatorów dotnet-roslyn](https://github.com/dotnet/roslyn-analyzers) repozytorium.
-2. Otwórz wiersz polecenia programisty dla programu Visual Studio jako administrator.
-3. Z folderu głównego **analizatorów roslyn** repozytorium, wykonaj następujące polecenie: `Restore.cmd`
+1. Sklonuj repozytorium [dotnet/Roslyn-analizatory](https://github.com/dotnet/roslyn-analyzers) .
+2. Otwórz wiersz polecenia dla deweloperów dla programu Visual Studio jako administrator.
+3. Z poziomu katalogu głównego repozytorium **Roslyn-analizators** wykonaj następujące polecenie:`Restore.cmd`
 4. Zmień katalog na *src\Tools*.
-5. Wykonaj następujące polecenie, aby skompilować **Metrics.csproj** projektu:
+5. Wykonaj następujące polecenie, aby skompilować projekt **Metrics. csproj** :
 
    ```shell
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Plik wykonywalny o nazwie *Metrics.exe* jest generowany w *artifacts\bin* katalogu w katalogu głównym repozytorium.
+   Plik wykonywalny o nazwie *Metric. exe* jest generowany w katalogu *artifacts\bin* w obszarze głównym repozytorium.
 
-#### <a name="metricsexe-usage"></a>Użycie Metrics.exe
+#### <a name="metricsexe-usage"></a>Użycie metryk. exe
 
-Aby uruchomić *Metrics.exe*, podaj projekt lub rozwiązanie i dane wyjściowe XML pliku jako argumenty. Na przykład:
+Aby uruchomić program *Metrics. exe*, podaj projekt lub rozwiązanie oraz wyjściowy plik XML jako argumenty. Na przykład:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -241,29 +241,29 @@ Writing output to 'report.xml'...
 Completed Successfully.
 ```
 
-#### <a name="legacy-mode"></a>Starsza wersja trybu
+#### <a name="legacy-mode"></a>Tryb starszej wersji
 
-Istnieje możliwość tworzenia *Metrics.exe* w *ze starszej wersji trybu*. Starsza wersja trybu wersję narzędzia generuje wartości metryk, które są bliżej co [starsze wersje wygenerowany przez narzędzie](#previous-versions). Ponadto w starszym trybie *Metrics.exe* generuje metryki kodu dla tego samego zestawu metody typów tego poprzednie wersje metryki kod wygenerowany przez narzędzie. Na przykład nie generować danych metryki kodu dla inicjatorów pola i właściwości. Starsza wersja trybu przydaje się wstecznej zgodności lub jeśli masz kod ewidencjonowania bramy na podstawie metryki kodu liczb. Polecenie, aby skompilować *Metrics.exe* w starszym trybie jest:
+Możesz wybrać opcję kompilowania programu *Metrics. exe* w *trybie starszej wersji*. Wersja w trybie starszej wersji narzędzia generuje wartości metryk, które są bliższe tym, które [starsze wersje narzędzia](#previous-versions)zostały wygenerowane. Ponadto w starszej wersji programu *Metrics. exe* generuje metryki kodu dla tego samego zestawu typów metod, które zostały wygenerowane przez poprzednie wersje narzędzia. Na przykład nie generuje danych metryk kodu dla inicjatorów pola i właściwości. Starszy tryb jest przydatny do zapewnienia zgodności z poprzednimi wersjami lub jeśli masz bramy ewidencjonowania kodu na podstawie numerów metryk kodu. Polecenie do kompilowania *metryk. exe* w trybie starszej wersji:
 
 ```shell
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ```
 
-Aby uzyskać więcej informacji, zobacz [Włącz generowanie metryki kodu w starszym trybie](https://github.com/dotnet/roslyn-analyzers/pull/1841).
+Aby uzyskać więcej informacji, zobacz [Włączanie generowania metryk kodu w trybie starszej wersji](https://github.com/dotnet/roslyn-analyzers/pull/1841).
 
 ### <a name="previous-versions"></a>Poprzednie wersje
 
-Program Visual Studio 2015 uwzględnione narzędzie metryki kodu wiersza polecenia, które również wywołano *Metrics.exe*. Ta wersja narzędzia zostało binarne analizy, oznacza to, na podstawie zestawu analiz. Nowy *Metrics.exe* narzędzie analizuje kod źródłowy w zamian. Ponieważ nowe *Metrics.exe* narzędzie jest metryk kodu oparty na kodzie, wiersz polecenia źródła wyniki różnią się do tych wygenerowanych przez program Visual Studio IDE i poprzednie wersje *Metrics.exe*.
+Program Visual Studio 2015 zawiera narzędzie metryk kodu wiersza polecenia, które było również nazywane *metryką. exe*. Ta Poprzednia wersja narzędzia wykonała analizę binarną, czyli analizę opartą na zestawie. Nowe narzędzie *Metrics. exe* analizuje zamiast niego kod źródłowy. Ponieważ nowe narzędzie *Metrics. exe* jest źródłem kodu źródłowego, wyniki metryk kodu wiersza polecenia są inne niż te wygenerowane przez środowisko IDE programu Visual Studio i poprzednie wersje programu *Metrics. exe*.
 
-Nowe narzędzie wiersza polecenia kodu w metryki oblicza metryki, nawet w obecności błędy kodu źródłowego, tak długo, jak rozwiązania i projektu może być załadowany.
+Nowe narzędzie metryk kodu wiersza polecenia oblicza metryki nawet w obecności błędów kodu źródłowego, o ile można załadować rozwiązanie i projekt.
 
-#### <a name="metric-value-differences"></a>Różnice wartość metryki
+#### <a name="metric-value-differences"></a>Różnice wartości metryk
 
-`LinesOfCode` Metryka jest bardziej dokładnych i wiarygodnych w narzędziu metryki kodu wiersza polecenia. Jest niezależna od wszelkich różnic generowanie kodu i nie zmienia się podczas zmiany zestawu narzędzi lub środowiska uruchomieniowego. Nowe narzędzie liczby rzeczywiste wiersze kodu, w tym puste wiersze i komentarze.
+`LinesOfCode` Metryka jest bardziej dokładna i niezawodna w nowym narzędziu metryk kodu wiersza polecenia. Jest on niezależny od jakichkolwiek różnic codegen i nie ulega zmianie, gdy zmieni się zestaw narzędzi lub środowisko uruchomieniowe. Nowe narzędzie zlicza rzeczywiste wiersze kodu, w tym puste wiersze i komentarze.
 
-Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używać tych samych formuł jako poprzednie wersje *Metrics.exe*, ale nowe narzędzie zlicza `IOperations` (logiczne źródła instrukcje) zamiast pośredni instrukcje języka (IL). Liczby, może się nieco różnić do tych wygenerowanych przez program Visual Studio IDE i poprzednie wersje *Metrics.exe*.
+Inne metryki, `CyclomaticComplexity` takie `MaintainabilityIndex` jak i używają tych samych formuł co poprzednie wersje programu *Metrics. exe*, ale `IOperations` nowe narzędzie zlicza liczbę (instrukcje źródła logicznego) zamiast instrukcji języka pośredniego (IL). Liczby będą nieco inne niż te wygenerowane przez środowisko IDE programu Visual Studio i poprzednie wersje programu *Metrics. exe*.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z okna wyników metryk kodów](../code-quality/working-with-code-metrics-data.md)
-- [Wartości metryk kodów](../code-quality/code-metrics-values.md)
+- [Wartości metryk kodu](../code-quality/code-metrics-values.md)

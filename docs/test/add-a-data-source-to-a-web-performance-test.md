@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62835127"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180145"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
@@ -66,7 +66,7 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
 ::: moniker range="vs-2019"
 
-1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [pobieranie Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony.
+1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [pobieranie Visual Studio](https://visualstudio.microsoft.com/downloads) strony.
 
 2. Utwórz bazę danych SQL.
 
@@ -156,9 +156,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
 ## <a name="q--a"></a>Pytania i odpowiedzi
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>PYT.: Jakie baz danych można używać jako źródła danych?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>PYTANIA Których baz danych można używać jako źródła danych?
 
-**ODP.:** Można użyć następujących czynności:
+**Z** Można użyć następujących:
 
 - Program Microsoft SQL Azure.
 
@@ -172,9 +172,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
 - Oracle 7.3, 8i, 9i lub 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>PYT.: Jak używać pliku tekstowego (CSV) rozdzielanymi przecinkami jako źródło danych?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>PYTANIA Jak mogę użyć pliku tekstowego z wartościami rozdzielanymi przecinkami (CSV) jako źródła danych?
 
-**ODP.:** Oto jak:
+**Z** Oto jak to zrobić:
 
 1. Utwórz folder do organizowania artefaktów projektów bazy danych i dodać element.
 
@@ -196,9 +196,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
      ![Wprowadź nazwę i wybierz plik CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>PYT.: Co zrobić, jeśli Mój istniejący plik CSV nie zawiera nagłówków kolumn?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>PYTANIA Co zrobić, jeśli mój istniejący plik CSV nie zawiera nagłówków kolumn?
 
-**ODP.:** Jeśli nie możesz dodać nagłówków kolumn, można użyć pliku opisu schematu do traktowania plik CSV jako bazy danych.
+**Z** Jeśli nie możesz dodać nagłówków kolumn, możesz użyć pliku opisu schematu, aby traktować plik CSV jako bazę danych.
 
 1. Dodaj nowy plik tekstowy o nazwie *schema.ini*.
 
@@ -247,9 +247,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
      ![Źródła danych dodane do testu](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>PYT.: Jak używać pliku XML jako źródło danych?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>PYTANIA Jak mogę użyć pliku XML jako źródła danych?
 
-**ODP.:** Tak.
+**Z** Tak.
 
 1. Utwórz folder do organizowania artefaktów projektów bazy danych i dodać element.
 
@@ -279,9 +279,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
      ![Wprowadź nazwę i wybierz plik XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>PYT.: Można dodać powiązania danych na żądanie usługi sieci web używającego protokołu SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>PYTANIA Czy można dodać powiązanie danych do żądania usługi sieci Web, które używa protokołu SOAP?
 
-**ODP.:** Tak, należy ręcznie zmienić XML protokołu SOAP.
+**Z** Tak, musisz ręcznie zmienić kod XML protokołu SOAP.
 
 1. Wybierz żądanie usługi sieci web w drzewie żądań i w oknie dialogowym właściwości, wybierz wielokropek (...) we właściwości treść ciągu.
 

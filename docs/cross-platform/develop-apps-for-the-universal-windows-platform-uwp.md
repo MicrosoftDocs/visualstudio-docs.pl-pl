@@ -9,65 +9,65 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819574"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179870"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 
-Dzięki platformie Universal Windows i naszych jednego rdzenia Windows można uruchamiać tę samą aplikację na dowolnym urządzeniu systemu Windows 10, od telefonów do komputerów stacjonarnych. Tworzenie aplikacji Universal Windows za pomocą programu Visual Studio i narzędzia do programowania uniwersalnych aplikacji Windows.
+Korzystając z platforma uniwersalna systemu Windows i naszego systemu Windows Core, możesz uruchomić tę samą aplikację na dowolnym urządzeniu z systemem Windows 10 z telefonów na komputerach stacjonarnych. Twórz te aplikacje uniwersalne systemu Windows za pomocą programu Visual Studio i narzędzi do tworzenia aplikacji uniwersalnych systemu Windows.
 
 ![Platforma uniwersalna systemu Windows](../cross-platform/media/uwp_coreextensions.png)
 
-Uruchom aplikację na telefonie z systemem Windows 10, system Windows 10 desktop lub konsoli Xbox. To ten sam pakiet aplikacji! Wraz z wprowadzeniem core systemu Windows 10 w pojedynczą, jednolitą jednego pakietu aplikacji można uruchamiać na wszystkich platformach. Różnych platform, mają rozszerzenie SDK, które można dodać do aplikacji, aby skorzystać z zachowań określonych platform. Na przykład zestawu SDK rozszerzenia dla urządzeń przenośnych obsługuje przycisku Wstecz naciśniętym na urządzeniu z systemem Windows phone. Jeśli odwołujesz rozszerzenie SDK w projekcie, wystarczy dodać testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. To, jak może mieć ten sam pakiet aplikacji dla każdej platformy.
+Uruchom aplikację na telefonie z systemem Windows 10, system Windows 10 desktop lub konsoli Xbox. Jest to ten sam pakiet aplikacji. Wraz z wprowadzeniem core systemu Windows 10 w pojedynczą, jednolitą jednego pakietu aplikacji można uruchamiać na wszystkich platformach. Kilka platform zawiera zestawy SDK rozszerzeń, które można dodać do aplikacji, aby korzystać z zachowań specyficznych dla platformy. Na przykład zestawu SDK rozszerzenia dla urządzeń przenośnych obsługuje przycisku Wstecz naciśniętym na urządzeniu z systemem Windows phone. Jeśli odwołujesz się do zestawu SDK rozszerzenia w projekcie, po prostu Dodaj testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. Oznacza to, że możesz mieć ten sam pakiet aplikacji dla każdej platformy.
 
-**Co to jest podstawowa Windows?**
+**Co to jest rdzeń systemu Windows?**
 
-Po raz pierwszy Windows ma zostały zaprojektowane od nowa w zapewnienie wspólnej podstawy na wszystkich platformach systemu Windows 10. Istnieje jeden wspólne źródło, jednej wspólnej jądra Windows, jeden stos operacji We/Wy plików i jednego modelu aplikacji. Dla interfejsu użytkownika istnieje tylko jeden struktury interfejsu użytkownika XAML i jednej struktury interfejsu użytkownika HTML. Możesz skoncentrować się na tworzeniu wspaniałych aplikacji, ponieważ wprowadziliśmy go łatwo aplikacji na różnych urządzeniach z systemem Windows 10.
+Po raz pierwszy system Windows został wdrożony jako wspólny rdzeń na wszystkich platformach Windows 10. Istnieje jedno wspólne źródło, jedno wspólne jądro systemu Windows, jeden stos plików we/wy i jeden model aplikacji. Dla interfejsu użytkownika istnieje tylko jedna struktura interfejsu użytkownika języka XAML i jedna struktura interfejsu użytkownika języka HTML. Możesz skoncentrować się na tworzeniu doskonałej aplikacji, ponieważ ułatwia ona uruchamianie aplikacji na różnych urządzeniach z systemem Windows 10.
 
-**Co to dokładnie jest platformy uniwersalnej Windows?**
+**Co to jest dokładnie platforma uniwersalna systemu Windows?**
 
-Platformy uniwersalnej Windows jest po prostu kolekcją umów i wersji. Te pozwalają na docelowy, gdzie można uruchomić aplikacji. Nie jest już docelowy system operacyjny; Teraz możesz wskazać przynajmniej jednego urządzenia z rodzin. Dowiedz się więcej szczegółów, czytając [wprowadzenie do platformy uniwersalnej Windows](/windows/uwp/get-started/universal-application-platform-guide).
+Platforma uniwersalna systemu Windows jest po prostu kolekcją kontraktów i wersji. Umożliwiają one docelową lokalizację, w której można uruchomić aplikację. Nie jest już ukierunkowany system operacyjny; Teraz należy określić co najmniej jedną rodzinę urządzeń. Więcej informacji można uzyskać, odczytując [wprowadzenie do platforma uniwersalna systemu Windows](/windows/uwp/get-started/universal-application-platform-guide).
 
 ## <a name="requirements"></a>Wymagania
 
-Narzędzia do programowania uniwersalnych aplikacji Windows są dostarczane z emulatorów, które można użyć, aby zobaczyć, jak wygląda aplikacja na różnych urządzeniach. Aby użyć tych emulatorów, musisz zainstalować to oprogramowanie na komputerze fizycznym. Komputer fizyczny, należy uruchomić Windows 8.1 (x64) Professional edition lub nowszy, i mieć procesor obsługujący funkcję Hyper-V klienta i translację adresów drugiego poziomu (SLAT). Nie można użyć emulatorów, gdy program Visual Studio jest zainstalowany na maszynie wirtualnej.
+Narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows są dostarczane z emulatorami, za pomocą których można zobaczyć, jak aplikacja wygląda na różnych urządzeniach. Jeśli chcesz używać tych emulatorów, musisz zainstalować to oprogramowanie na komputerze fizycznym. Na maszynie fizycznej musi działać system Windows 8.1 (x64) Professional Edition lub nowszy oraz procesor obsługujący funkcję Hyper-V klienta i translację adresów drugiego poziomu (SLAT). Emulatorów nie można używać, gdy program Visual Studio jest zainstalowany na maszynie wirtualnej.
 
-Poniżej przedstawiono listę oprogramowania, które są potrzebne:
+Poniżej znajduje się lista programów, które są potrzebne:
 
 ::: moniker range="vs-2017"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2017 obsługuje tworzenie platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) i [wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs).
+- [System Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2017 obsługuje programowanie platformy UWP tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [wymagania systemowe dotyczące](/visualstudio/productinfo/vs2017-system-requirements-vs) [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) programu Visual Studio i system.
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
+- [Program Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Wymagane jest również opcjonalne platforma uniwersalna systemu Windows obciążenie pracą programistyczną.
 
-     ![Obciążenie platformy uniwersalnej systemu Windows](media/uwp_workload.png)
+     ![Obciążenie platformy UWP](media/uwp_workload.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 obsługuje programowania platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [platformy](/visualstudio/releases/2019/compatibility/) i [wymagania systemowe](/visualstudio/releases/2019/system-requirements/).
+- [System Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2019 obsługuje programowanie platformy UWP tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [wymagania systemowe dotyczące](/visualstudio/releases/2019/system-requirements/) [platformy](/visualstudio/releases/2019/compatibility/) programu Visual Studio i system.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
+- [Program Visual Studio](https://visualstudio.microsoft.com/downloads). Wymagane jest również opcjonalne platforma uniwersalna systemu Windows obciążenie pracą programistyczną.
 
-     ![Obciążenie platformy uniwersalnej systemu Windows](media/uwp_workload.png)
+     ![Obciążenie platformy UWP](media/uwp_workload.png)
 
 ::: moniker-end
 
-Po zainstalowaniu tego oprogramowania, należy włączyć urządzenia z systemem Windows 10 do tworzenia aplikacji. Zobacz [włączyć urządzenia na potrzeby programowania](/windows/uwp/get-started/enable-your-device-for-development). Nie potrzebujesz już licencję dewelopera dla każdego urządzenia z systemem Windows 10.
+Po zainstalowaniu tego oprogramowania musisz włączyć urządzenie z systemem Windows 10 na potrzeby programowania. Zobacz [Włączanie urządzenia na potrzeby programowania](/windows/uwp/get-started/enable-your-device-for-development). Na każdym urządzeniu z systemem Windows 10 nie jest już wymagana licencja dewelopera.
 
-## <a name="universal-windows-apps"></a>Universal Windows apps
+## <a name="universal-windows-apps"></a>Aplikacje uniwersalne systemu Windows
 
-Wybierz język preferowany programowania w języku C#, Visual Basic, C++ lub JavaScript do tworzenia aplikacji Universal Windows Platform dla urządzeń z systemem Windows 10. Odczyt [Utwórz swoją pierwszą aplikację](/windows/uwp/get-started/your-first-app) lub Obejrzyj [narzędzia dla systemu Windows 10 — omówienie](https://channel9.msdn.com/Series/ConnectOn-Demand/229) wideo.
+Wybierz preferowany język deweloperski z C#, Visual Basic lub C++ JavaScript, aby utworzyć aplikację platforma uniwersalna systemu Windows dla urządzeń z systemem Windows 10. Przeczytaj artykuł [Tworzenie pierwszej aplikacji](/windows/uwp/get-started/your-first-app) lub Obejrzyj film wideo z [omówieniem narzędzi dla systemu Windows 10](https://channel9.msdn.com/Series/ConnectOn-Demand/229) .
 
-Jeśli masz istniejące aplikacje Windows Store 8.1, aplikacje systemu Windows Phone 8.1 lub Windows Universal aplikacje, które zostały utworzone przy użyciu programu Visual Studio 2015, konieczne będzie portu tych aplikacji mają być użyj najnowszej wersji uniwersalnej platformy Windows. Zobacz [przenoszenie ze środowiska wykonawczego Windows 8.x do platformy uniwersalnej systemu Windows](/windows/uwp/porting/w8x-to-uwp-root).
+Jeśli masz istniejące aplikacje ze sklepu Windows 8,1, aplikacje Windows Phone 8,1 lub aplikacje uniwersalne systemu Windows, które zostały utworzone za pomocą programu Visual Studio 2015, musisz przenieść te aplikacje, aby używały najnowszych platforma uniwersalna systemu Windows. Zobacz [przechodzenie z środowisko wykonawcze systemu Windows 8. x do platformy UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
-Po utworzeniu aplikacji Universal Windows, należy spakować aplikację, aby go zainstalować na urządzeniu z systemem Windows 10 lub przesłać go do Windows Store. Zobacz [pakowanie aplikacji](/windows/uwp/packaging/index).
+Po utworzeniu aplikacji uniwersalnej systemu Windows należy spakować aplikację, aby ją zainstalować na urządzeniu z systemem Windows 10 lub przesłać do sklepu Windows. Zobacz [pakowanie aplikacji](/windows/uwp/packaging/index).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie aplikacji mobilnych dla wielu platform w programie Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+- [Programowanie aplikacji mobilnych na wiele platform w programie Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

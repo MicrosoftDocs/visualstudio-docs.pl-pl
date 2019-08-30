@@ -1,5 +1,5 @@
 ---
-title: Utwórz Windows Forms aplikacji za pomocą Visual Basic
+title: Tworzenie aplikacji Windows Forms z Visual Basic
 description: Dowiedz się, jak tworzenie aplikacji Windows Forms w programie Visual Studio za pomocą Visual Basic, który krok po kroku.
 ms.date: 03/23/2019
 ms.topic: tutorial
@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 4619a56bfe052a1fb191af8edfd1cef8b376617b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c031a047a0331eea0f8397a303d2b5cb0af650e6
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976856"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180135"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Utwórz Windows Forms aplikacji w programie Visual Studio za pomocą Visual Basic
 
@@ -32,10 +32,10 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
 
 > [!NOTE]
-> Niektóre zrzuty ekranu, w tym samouczku Użyj ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](../ide/quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
+> Niektóre zrzuty ekranu w tym samouczku używają ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](../ide/quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
 
 ::: moniker-end
 
@@ -47,9 +47,9 @@ Najpierw utworzysz projekt aplikacji w języku Visual Basic. Typ projektu zawier
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
+2. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
 
-3. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń **języka Visual Basic**, a następnie wybierz **pulpitu Windows**. W środkowym okienku wybierz **aplikacji programu Windows Forms (.NET Framework)**. Następnie Nazwij plik `HelloWorld`.
+3. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń **języka Visual Basic**, a następnie wybierz **pulpitu Windows**. W środkowym okienku wybierz **aplikacji programu Windows Forms (.NET Framework)** . Następnie Nazwij plik `HelloWorld`.
 
      Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** projektu szablonu, Anuluj poza **nowy projekt** okna dialogowego pole, a następnie na pasku menu u góry wybierz **narzędzia**  >  **Pobierz narzędzia i funkcje**. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia, wybierz **Modyfikuj**.
 
@@ -61,32 +61,32 @@ Najpierw utworzysz projekt aplikacji w języku Visual Basic. Typ projektu zawier
 
 1. Open Visual Studio 2019.
 
-1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-   ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Wyświetl okno "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *Windows Forms* w polu wyszukiwania. Następnie wybierz pozycję **języka Visual Basic** od języka, a następnie wybierz **Windows** z listy Platform. 
+1. W oknie **Tworzenie nowego projektu** wprowadź lub wpisz *Windows Forms* w polu wyszukiwania. Następnie wybierz **Visual Basic** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
 
-   Po zastosowaniu filtrów języka i platformy, wybierz **aplikacji programu Windows Forms (.NET Framework)** szablonu, a następnie wybierz **dalej**.
+   Po zastosowaniu filtrów języka i platformy wybierz szablon **aplikacja Windows Forms (.NET Framework)** , a następnie wybierz przycisk **dalej**.
 
-   ![Wybierz szablon języka Visual Basic w aplikacji Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Wybierz szablon Visual Basic dla aplikacji Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
+   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
    >
-   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "nie można odnaleźć szukanego elementu" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
-   > Następnie w Instalatorze programu Visual Studio, wybierz pozycję Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.
+   > Następnie w Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
    > 
    > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem. Następnie wróć do kroku 2, w tym "[Utwórz projekt](#create-a-project)" procedury.
+   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze "[Create a Project](#create-a-project)".
 
-1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *HelloWorld* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *HelloWorld* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
 
-   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "HelloWorld"](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+   ![w oknie "Konfigurowanie nowego projektu" Nazwij swój projekt "HelloWorld"](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
 
-   Visual Studio otwiera nowy projekt.
+   Program Visual Studio otwiera nowy projekt.
 
 ::: moniker-end
 
@@ -100,7 +100,7 @@ Po wybraniu szablonu projektu języka Visual Basic i nazwę pliku, programu Visu
 
      ![Kliknij przycisk przybornika, aby otworzyć okno przybornika](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Jeśli nie widzisz **przybornika** staną się opcji, możesz otworzyć, naciskając klawisz **Ctrl**+**Alt**+**X**.)
+     (Jeśli nie widzisz opcji "przylot" przybornika, możesz otworzyć, naciskając **klawisze CTRL**+**Alt**+**X**).
 
 2. Kliknij przycisk **numeru Pin** ikonę, aby zadokować **przybornika** okna.
 
@@ -110,7 +110,7 @@ Po wybraniu szablonu projektu języka Visual Basic i nazwę pliku, programu Visu
 
      ![Dodawanie przycisku do formularza](../ide/media/vb-add-a-button-to-form1.png)
 
-4. W **wygląd** sekcji (lub **czcionki** sekcji) z **właściwości** okna, typ `Click this`, a następnie naciśnij klawisz **Enter**.
+4. W sekcji **wygląd** (lub w sekcji **czcionki** ) okna **Właściwości** wpisz `Click this`, a następnie naciśnij klawisz **Enter**.
 
      ![Dodawanie tekstu do przycisku w formularzu](../ide/media/vb-button-control-text.png)
 
@@ -134,7 +134,7 @@ Teraz, po dodaniu kontrolki przycisku, aby utworzyć akcję, możemy dodać kont
 
       (Ewentualnie możesz rozwinąć **Form1.vb** w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Form1**.)
 
-2. W **Form1.vb** okna, między **Sub prywatne** wiersza i **End Sub** wiersza (lub pomiędzy **Public Class Form1** wiersza i  **End Class** wiersza), wpisz następujący kod.
+2. W oknie **Form1. vb** między podlinią **prywatną** i końcową (lub między wierszem **publicznego formularza Form1** a wierszem **klasy końcowej** ) wpisz następujący kod.
 
      ![Dodaj kod do formularza](../ide/media/vb-add-code-to-the-form.png)
 
@@ -146,7 +146,7 @@ Teraz, po dodaniu kontrolki przycisku, aby utworzyć akcję, możemy dodać kont
 
    Wykonanych kilka działań. W programie Visual Studio IDE **narzędzia diagnostyczne** okno i **dane wyjściowe** okno zbyt. Ale poza IDE **Form1** pojawi się okno dialogowe. Będzie on zawierał swoje **kliknij** przycisk i tekst, który jest wyświetlany komunikat **Label1**.
 
-2. Kliknij przycisk **kliknij** znajdujący się w **Form1** okno dialogowe. Należy zauważyć, że **Label1** tekst zmienia się na **Hello World!**.
+2. Kliknij przycisk **kliknij** znajdujący się w **Form1** okno dialogowe. Należy zauważyć, że **Label1** tekst zmienia się na **Hello World!** .
 
     ![Formularz Form1 okno dialogowe, które zawiera tekst Label1 ](../ide/media/vb-form1-dialog-hello-world.png)
 
@@ -154,5 +154,5 @@ Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Szybki start: Tworzenie aplikacji konsoli w programie Visual Studio za pomocą Visual Basic](quickstart-visual-basic-console.md)
+* [Szybki start: Tworzenie aplikacji konsolowej w programie Visual Studio przy użyciu Visual Basic](quickstart-visual-basic-console.md)
 * [Dowiedz się więcej o technologii IntelliSense w języku Visual Basic](visual-basic-specific-intellisense.md)

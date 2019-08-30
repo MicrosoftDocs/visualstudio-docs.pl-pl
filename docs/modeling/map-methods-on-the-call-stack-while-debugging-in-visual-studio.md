@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445142"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180075"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
 
@@ -51,7 +51,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
   Zobacz:
 
-- [Wideo: Wizualne debugowanie dzięki integracji debugera mapy kodu (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Plików Wizualizacja wizualna dzięki integracji z debugerem mapy kodu (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [Mapuj stos wywołań](#MapStack)
 
@@ -77,9 +77,9 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 ## <a name="MapStack"></a> Mapuj stos wywołań
 
-1. Rozpocznij debugowanie. (Klawiatura: **F5**)
+1. Rozpocznij debugowanie. Klawiatury **F5**)
 
-2. Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **mapy kodu**. (Klawiatura: **Ctrl** + **Shift** + **`**)
+2. Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **mapy kodu**. Klawiatury **Ctrl** + **Shift** +  **`** )
 
      ![Wybierz mapę kodu, aby rozpocząć mapowanie stosu wywołań](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -105,7 +105,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
  Teraz masz mapę — co dalej? Jeśli pracujesz w języku C# lub Visual Basic, należy dodać elementy, takie jak pola, właściwości i innych metod, aby śledzić, co się dzieje w kodzie.
 
- Kliknij dwukrotnie metodę, aby zobaczyć jej definicję kodu lub użyć menu skrótów dla metody. (Klawiatura: Wybierz metodę na mapie i naciśnij klawisz **F12**)
+ Kliknij dwukrotnie metodę, aby zobaczyć jej definicję kodu lub użyć menu skrótów dla metody. Klawiatury Wybierz metodę na mapie, a następnie naciśnij klawisz **F12**)
 
  ![Przejdź do definicji kodu dla metody na mapie kodu](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -178,7 +178,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 - **Jak zatrzymać automatyczne dodawanie nowych stosów wywołań do mapy?**
 
-   Wybierz ![przycisk &#45; Pokaż automatycznie umieszczane na mapie kodu](../debugger/media/debuggermap_automaticupdateicon.gif) na pasku narzędzi mapy. Aby ręcznie dodać bieżący stos wywołań do mapy, naciśnij klawisz **Ctrl** + **Shift** + **`**.
+   Wybierz ![przycisk &#45; Pokaż automatycznie umieszczane na mapie kodu](../debugger/media/debuggermap_automaticupdateicon.gif) na pasku narzędzi mapy. Aby ręcznie dodać bieżący stos wywołań do mapy, naciśnij klawisz **Ctrl** + **Shift** +  **`** .
 
    Mapa nadal będzie wyróżniać istniejące stosy wywołań na mapie, którą debugujesz.
 

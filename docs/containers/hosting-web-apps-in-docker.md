@@ -1,6 +1,6 @@
 ---
-title: Wdrażanie kontenera platformy Docker programu ASP.NET do rejestru ACR
-description: Dowiedz się, jak wdrożyć aplikację sieci web platformy ASP.NET Core do rejestru kontenerów za pomocą narzędzia kontenerów programu Visual Studio
+title: Wdróż kontener platformy Docker ASP.NET w rejestrze ACR
+description: Dowiedz się, jak używać narzędzi kontenera programu Visual Studio do wdrażania aplikacji sieci Web ASP.NET Core w rejestrze kontenerów
 author: ghogen
 manager: jillfra
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
@@ -9,36 +9,36 @@ ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 812cddf692ab6cc5676a04dabb88a6e1224c7dcb
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: b3b012bfe3b9fc359a8c9688c52aa5bfc27fd2c7
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261045"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179873"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Wdrażanie kontenera platformy ASP.NET w rejestrze kontenerów przy użyciu programu Visual Studio
 
 ## <a name="overview"></a>Omówienie
 
-Docker to aparat uproszczone kontenera, podobne pod pewnymi względami na maszynę wirtualną, której można użyć do hostowania aplikacji i usług.
-Ten samouczek przeprowadzi Cię przez publikowanie konteneryzowaną aplikację przy użyciu programu Visual Studio [usługi Azure Container Registry](https://azure.microsoft.com/services/container-registry).
+Docker to lekki aparat kontenerów, podobny na kilka sposobów na maszynę wirtualną, której można używać do hostowania aplikacji i usług.
+Ten samouczek przeprowadzi Cię przez program Visual Studio w celu opublikowania aplikacji w kontenerze w [Azure Container Registry](https://azure.microsoft.com/services/container-registry).
 
 Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem utwórz [bezpłatne konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Do ukończenia tego samouczka:
+Aby ukończyć ten samouczek:
 
 ::: moniker range="vs-2017"
-* Zainstaluj najnowszą wersję [programu Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)z obciążeniem "programowanie aplikacji platformy ASP.NET i sieci web"
+* Zainstaluj najnowszą wersję programu [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)z obciążeniem "ASP.NET and Web Development"
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-* Zainstaluj najnowszą wersję [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) z obciążeniem "programowanie aplikacji platformy ASP.NET i sieci web"
+* Zainstaluj najnowszą wersję programu [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) z obciążeniem "ASP.NET and Web Development"
 ::: moniker-end
 * Zainstaluj [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 
-## <a name="create-an-aspnet-core-web-app"></a>Tworzenie aplikacji internetowej platformy ASP.NET Core
-Poniższe kroki prowadzą przez proces tworzenia podstawowej aplikacji platformy ASP.NET Core, który będzie używany w ramach tego samouczka.
+## <a name="create-an-aspnet-core-web-app"></a>Tworzenie aplikacji sieci Web ASP.NET Core
+Poniższe kroki przeprowadzą Cię przez proces tworzenia podstawowej aplikacji ASP.NET Core, która będzie używana w tym samouczku.
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -47,22 +47,22 @@ Poniższe kroki prowadzą przez proces tworzenia podstawowej aplikacji platformy
 [!INCLUDE [create-aspnet5-app](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
-## <a name="publish-your-container-to-azure-container-registry"></a>Opublikowany kontener w usłudze Azure Container Registry
-1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz polecenie **Publikuj**.
-2. W oknie dialogowym docelowej publikowania wybierz **Container Registry** kartę.
-3. Wybierz **nowy rejestr Azure Container Registry** i kliknij przycisk **Publikuj**.
-4. Wprowadź żądane wartości w **Utwórz nowy rejestr Azure Container Registry**.
+## <a name="publish-your-container-to-azure-container-registry"></a>Publikowanie kontenera do Azure Container Registry
+1. Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Publikuj**.
+2. W oknie dialogowym Publikowanie elementu docelowego wybierz kartę **Container Registry** .
+3. Wybierz opcję **nowy Azure Container Registry** i kliknij przycisk **Publikuj**.
+4. Wypełnij odpowiednie wartości w polu **Utwórz nową Azure Container Registry**.
 
     | Ustawienie      | Sugerowana wartość  | Opis                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Unikatowa nazwa identyfikująca rejestru kontenerów. |
+    | **Prefiks DNS** | Globalnie unikatowa nazwa | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
     | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure do użycia. |
-    | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której chcesz utworzyć rejestru kontenerów. Wybierz **New** do tworzenia nowej grupy zasobów.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowa (Standard) | Warstwy usługi container Registry  |
-    | **Lokalizacja w rejestrze** | Bliską lokalizację | Wybierz lokalizację w [region](https://azure.microsoft.com/regions/) okolicy lub w pobliżu innych usług używających usługi container registry. |
+    | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowy** , aby utworzyć nową grupę zasobów.|
+    | **[MAGAZYN](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowa (Standard) | Warstwa usług w rejestrze kontenerów  |
+    | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 
-    ![Visual Studio utworzyć okno dialogowe usługi Azure Container Registry](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
+    ![Okno dialogowe tworzenia Azure Container Registry programu Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
 5. Kliknij przycisk **Utwórz**.
 
-Możesz teraz ściągnąć kontenera z rejestru na dowolnym hoście może uruchamiać obrazy Docker, na przykład [usługi Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
+Teraz można ściągnąć kontener z rejestru do dowolnego hosta, który może uruchamiać obrazy platformy Docker, na przykład [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).

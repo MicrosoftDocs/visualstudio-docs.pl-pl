@@ -1,6 +1,6 @@
 ---
-title: Wprowadzenie do edycji dla deweloperów programu Visual Basic
-description: To wprowadzenie 10-minutowe do edytora kodu w programie Visual Studio zawiera kilka sposobów, że Visual Studio wprowadza pisania, nawigowania i zrozumienie kodu języka Visual Basic jest łatwiejsze.
+title: Wprowadzenie do edytowania dla deweloperów Visual Basic
+description: W tym 10-minutowym wprowadzeniu do edytora kodu w programie Visual Studio przedstawiono niektóre sposoby łatwiejszego zapisywania, nawigowania i interpretowania Visual Basic kodu przez program Visual Studio.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2f5043b5c9690c668c12da7b902fdff5228f1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ebbe6ac8ef8e6a6de99159fa8dd5169a9dcac06
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972267"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180394"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
@@ -33,14 +33,14 @@ W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
-W tym artykule przyjęto założenie, że już znasz Visual Basic. Jeśli nie masz, Sugerujemy, zobacz samouczek takich jak [wprowadzenie do języka Visual Basic w programie Visual Studio](../../get-started/visual-basic/tutorial-console.md) pierwszy.
+W tym artykule założono, że znasz już Visual Basic. Jeśli nie, zalecamy zapoznaj się z samouczkiem, takim jak [wprowadzenie do Visual Basic w programie Visual Studio](../../get-started/visual-basic/tutorial-console.md) .
 
 > [!TIP]
-> Aby skorzystać z tego artykułu, upewnij się, że wybrano dla programu Visual Studio ustawienia języka Visual Basic. Aby dowiedzieć się, jak wybranie ustawienia dla zintegrowanego środowiska programistycznego (IDE), zobacz [wybierz ustawienia środowiska](visual-studio-ide.md#select-environment-settings).
+> Aby postępować zgodnie z tym artykułem, upewnij się, że masz wybrane ustawienia Visual Basic dla programu Visual Studio. Aby uzyskać informacje o wybieraniu ustawień dla zintegrowanego środowiska programistycznego (IDE), zobacz [Wybieranie ustawień środowiska](visual-studio-ide.md#select-environment-settings).
 
 ## <a name="create-a-new-code-file"></a>Utwórz nowy plik kodu
 
@@ -54,41 +54,41 @@ Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
 ::: moniker range=">=vs-2019"
 
-1. Otwórz program Visual Studio. Naciśnij klawisz **Esc** lub kliknij przycisk **Kontynuuj bez konieczności pisania kodu** w oknie start, aby otworzyć środowiska programistycznego.
+1. Otwórz program Visual Studio. Naciśnij klawisz **ESC** lub kliknij pozycję **Kontynuuj bez kodu** w oknie uruchamiania, aby otworzyć środowisko programistyczne.
 
 ::: moniker-end
 
-2. Z **pliku** menu na pasku menu wybierz opcję **nowy plik**.
+2. Z menu **plik** na pasku menu wybierz polecenie **nowy plik**.
 
-3. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual Basic**, a następnie wybierz **Otwórz**.
+3. W oknie dialogowym **nowy plik** w obszarze Kategoria **ogólne** wybierz pozycję **Visual Basic Klasa**, a następnie wybierz pozycję **Otwórz**.
 
-   Nowy plik zostanie otwarty w edytorze za pomocą szkielet klasa Visual Basic. (Można już zauważysz, że nie trzeba utworzyć pełny projekt programu Visual Studio na uzyskanie niektórych korzyści oferowanych przez Edytor kodu, takich jak wyróżnianie składni. Wymagany jest plik kodu!)
+   Nowy plik zostanie otwarty w edytorze z szkieletem klasy Visual Basic. (Można już zauważyć, że nie trzeba tworzyć pełnego projektu programu Visual Studio, aby uzyskać pewne korzyści, które oferuje Edytor kodu, takie jak wyróżnianie składni. Wszystko, co jest potrzebne, jest plikiem kodu!)
 
-   ![Plik kodu języka Visual Basic w programie Visual Studio](media/tutorial-editor.png)
+   ![Visual Basic pliku kodu w programie Visual Studio](media/tutorial-editor.png)
 
 ## <a name="use-code-snippets"></a>Używanie fragmentów kodu
 
-Program Visual Studio oferuje przydatne *fragmenty kodu* , umożliwia szybkie i łatwe generowanie najczęściej używane bloki kodu. [Fragmenty kodu](../../ide/code-snippets.md) są dostępne dla różnych języków programowania, w tym Visual Basic C#i C++. Dodajmy języka Visual Basic **Sub** fragment kodu do naszego pliku.
+Program Visual Studio oferuje przydatne *fragmenty kodu* , umożliwia szybkie i łatwe generowanie najczęściej używane bloki kodu. [Fragmenty kodu](../../ide/code-snippets.md) są dostępne dla różnych języków programowania, w tym Visual Basic C#, i C++. Dodajmy do pliku **podrzędny** fragment Visual Basic.
 
-1. Umieść kursor nad wierszem, który mówi `End Class`i wpisz **sub**.
+1. Umieść kursor nad wierszem, który brzmi `End Class`, i wpisz **Sub**.
 
-   Wyskakujące okno dialogowe pojawia się z informacjami o `Sub` — słowo kluczowe i sposób wstawiania **Sub** fragmentu kodu.
+   Zostanie wyświetlone okno dialogowe z informacjami o `Sub` słowie kluczowym i sposobie wstawienia fragmentu kodu **podrzędnego** .
 
    ![Funkcja IntelliSense dla fragmentu kodu w programie Visual Studio](media/tutorial-intellisense-snippet.png)
 
 1. Naciśnij klawisz **kartę** dwa razy, aby wstawić fragment kodu.
 
-   Konspekt dla procedury Sub `MySub()` jest dodawany do pliku.
+   Konspekt procedury `MySub()` sub zostanie dodany do pliku.
 
-Fragmenty kodu dostępne różnią się w różnych językach programowania. Można przyjrzeć się fragmentów kodu dostępne dla języka Visual Basic, wybierając **Edytuj** > **IntelliSense** > **Wstaw fragment kodu** (lub naciśnij  **CTRL**+**K**, **Ctrl**+**X**). Dla języka Visual Basic fragmenty kodu są dostępne w ramach następujących kategorii:
+Fragmenty kodu dostępne różnią się w różnych językach programowania. Dostępne fragmenty kodu dla Visual Basic można sprawdzić, wybierając pozycję **Edytuj** > wstawkę**IntelliSense** > (lub nacisnąć **klawisze CTRL**+**K**, **Ctrl** + **X**). W przypadku Visual Basic są dostępne fragmenty kodu dla następujących kategorii:
 
-![Lista fragment kodu języka Visual Basic](media/tutorial-code-snippet-list.png)
+![Visual Basic listy fragmentów kodu](media/tutorial-code-snippet-list.png)
 
-Istnieją fragmentów kodu do określania, jeśli plik istnieje na komputerze, zapisywania do pliku tekstowego, odczytać wartości rejestru, wykonywanie zapytania SQL, tworząc [For Each... Następna instrukcja](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)i wiele innych.
+Istnieją fragmenty kodu służące do określenia, czy plik istnieje na komputerze, zapisywania do pliku tekstowego, odczytywania wartości rejestru, wykonywania zapytania SQL, tworzenia instrukcji [for each... Następna instrukcja](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)i wiele innych.
 
 ## <a name="comment-out-code"></a>Komentarz do kodu
 
-Pasek narzędzi, który jest wiersz przycisków poniżej paska menu w programie Visual Studio, może pomóc zwiększyć produktywność kodowania. Na przykład możesz można Przełącz tryb uzupełniania IntelliSense, zwiększyć Zmniejsz wcięcie wiersza lub przekształcić w komentarz kod, nie chcesz skompilować. ([IntelliSense](../../ide/using-intellisense.md) jest pomoc kodowania, który zawiera listę metod, między innymi dopasowania.) W tej sekcji firma Microsoft będzie komentarz kodu.
+Pasek narzędzi, który jest wiersz przycisków poniżej paska menu w programie Visual Studio, może pomóc zwiększyć produktywność kodowania. Można na przykład przełączyć tryb uzupełniania IntelliSense, zwiększyć lub zmniejszyć wcięcie linii lub dodać komentarz do kodu, który nie ma być kompilowany. ([IntelliSense](../../ide/using-intellisense.md) to pomoc dla kodowania, która wyświetla listę zgodnych metod, między innymi). W tej sekcji firma Microsoft będzie komentarz kodu.
 
 ![Przyciski paska narzędzi edytora](media/tutorial-editor-toolbar.png)
 
@@ -116,15 +116,15 @@ Pasek narzędzi, który jest wiersz przycisków poniżej paska menu w programie 
                Select word
    ```
 
-1. Nie używamy `morewords` tablicy, ale firma Microsoft może używać go później tak nie chcemy całkowicie usunąć go. Zamiast tego Załóżmy komentarz te wiersze. Zaznacz całą definicję `morewords` do nawias zamykający nawias klamrowy, a następnie wybierz **komentarz zaznaczonych wierszach** przycisk na pasku narzędzi. Jeśli wolisz użyć klawiatury, naciśnij klawisz **Ctrl**+**K**, **Ctrl**+**C**.
+1. Nie używamy `morewords` macierzy, ale możemy jej użyć później, więc nie chcemy jej całkowicie usunąć. Zamiast tego Załóżmy komentarz te wiersze. Zaznacz całą definicję `morewords` do zamykającego nawiasu klamrowego, a następnie wybierz przycisk Dodaj **komentarz do wybranych linii** na pasku narzędzi. Jeśli wolisz użyć klawiatury, naciśnij klawisz **Ctrl**+**K**, **Ctrl**+**C**.
 
    ![Komentarz przycisku](media/tutorial-comment-out.png)
 
-   Znak komentarz języka Visual Basic `'` zostanie dodany na początku każdego wybranego wiersza, aby przekształcić w komentarz kod.
+   Znak `'` komentarza Visual Basic jest dodawany na początku każdego wybranego wiersza w celu dodania komentarza do kodu.
 
 ## <a name="collapse-code-blocks"></a>Zwiń bloki kodu
 
-Można zwinąć fragmentów kodu, aby skoncentrować się tylko na części, które Cię interesują. Praktyczne, możemy Zwiń `_words` tablicy do jednego wiersza kodu. Wybierz małe pole szarego znakiem minus znajdującym się w nim na marginesie wiersz, który jest wyświetlany komunikat `Dim _words = New String() {`. Lub, jeśli jesteś użytkownikiem klawiatury, umieść kursor gdziekolwiek w definicji tablicy i naciśnij klawisz **Ctrl**+**M**, **Ctrl**+**M** .
+Możesz zwinąć sekcje kodu, aby skoncentrować się tylko na interesujących Cię częściach. Aby to umożliwić, Zwiń `_words` tablicę do jednego wiersza kodu. Wybierz Małe szare pole ze znakiem minus wewnątrz niego na marginesie wiersza, który wskazuje `Dim _words = New String() {`. Jeśli jesteś użytkownikiem klawiatury, umieść kursor w dowolnym miejscu w definicji tablicy i naciśnij **klawisze CTRL**+**m**, **Ctrl**+**m**.
 
 ![Przycisk Zwiń konspekt](media/tutorial-collapse.png)
 
@@ -134,7 +134,7 @@ Blok kodu jest ustawiana na tylko pierwszy wiersz, następuje wielokropek (`...`
 
 Edytor programu Visual Studio można łatwo sprawdzić definicji typu, metody itd. Jednym ze sposobów jest przejdź do pliku, który zawiera definicję, na przykład wybierając **przejdź do definicji** dowolnym odwołuje się do symbolu. Jeszcze szybszy sposób, który nie zmienia się od pliku pracujesz w jest użycie [Peek Definition](../../ide/go-to-and-peek-definition.md#peek-definition). Umożliwia wgląd w definicji `String` typu.
 
-1. Kliknij prawym przyciskiem myszy na słowo `String` i wybierz polecenie **Peek Definition** menu zawartości. Lub naciśnij **Alt**+**F12**.
+1. Kliknij prawym przyciskiem myszy słowo `String` i wybierz polecenie **wgląd do definicji** z menu zawartość. Lub naciśnij **Alt**+**F12**.
 
    Okno wyskakujące pojawia się przy użyciu definicji elementu `String` klasy. Można przewijać w oknie podręcznym lub nawet rzut oka na definicję innego typu niż peeked kodu.
 
@@ -170,17 +170,17 @@ Edytor programu Visual Studio można łatwo sprawdzić definicji typu, metody it
 
 Nikt nie pobiera kod bezpośrednio po raz pierwszy, a jedną z rzeczy, które trzeba zmienić to nazwa zmiennej lub metody. Spróbujmy programu Visual Studio [zrefaktoryzuj](../../ide/refactoring-in-visual-studio.md) funkcji, aby zmienić nazwę `_words` zmienną `words`.
 
-1. Umieść kursor nad definicji `_words` zmiennej i wybierz polecenie **Zmień nazwę** w menu kliknij prawym przyciskiem myszy lub kontekstu.
+1. Umieść kursor nad definicją `_words` zmiennej i wybierz polecenie **Zmień nazwę** w menu kontekstowym lub prawym przyciskiem myszy.
 
    Okno podręczne **Zmień nazwę** okno dialogowe pojawia się u góry bezpośrednio z edytora.
 
-1. Za pomocą zmiennej `_words` nadal zaznaczone, wpisz odpowiednią nazwę **wyrazy**. Należy zauważyć, że odwołanie do `words` również automatycznie została zmieniona w zapytaniu. Przed naciśnięciem **Enter** lub kliknij przycisk **Zastosuj**, wybierz opcję **dodawać komentarze** pola wyboru w **Zmień nazwę** okno podręczne.
+1. Po wybraniu `_words` zmiennej wpisz odpowiednie nazwy **wyrazów**. Należy zauważyć, że odwołanie do `words` również automatycznie została zmieniona w zapytaniu. Przed naciśnięciem klawisza **Enter** lub kliknięciem przycisku **Zastosuj**zaznacz pole wyboru **Dołącz Komentarze** w oknie podręcznym **Zmień nazwę** .
 
    ![Zmień nazwę — Okno dialogowe](media/tutorial-rename.png)
 
 1. Naciśnij klawisz **Enter** lub kliknij przycisk **Zastosuj**.
 
-   Oba wystąpienia `words` zostały zmienione, a także odwołania do `words` w komentarzu do kodu.
+   Oba wystąpienia `words` są nazwy, a także odwołanie do w komentarzu do `words` kodu.
 
 ## <a name="next-steps"></a>Następne kroki
 
