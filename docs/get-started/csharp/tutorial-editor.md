@@ -1,6 +1,6 @@
 ---
-title: Wprowadzenie do edycji dla C# deweloperów
-description: To wprowadzenie 10-minutowe do edytora kodu w programie Visual Studio zawiera kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie C# kodu łatwiej.
+title: Wprowadzenie do edytowania dla C# deweloperów
+description: W tym 10-minutowym wprowadzeniu do edytora kodu w programie Visual Studio przedstawiono niektóre sposoby łatwiejszego zapisywania, nawigowania i poznania C# kodu przez program Visual Studio.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971072"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180253"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
@@ -33,14 +33,14 @@ W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
-W tym artykule założono, które znasz już C#. Jeśli nie masz, Sugerujemy, zobacz samouczek takich jak [wprowadzenie C# i ASP.NET Core w programie Visual Studio](tutorial-aspnet-core.md) pierwszy.
+W C#tym artykule założono, że znasz już program. Jeśli nie, zalecamy zapoznaj się z samouczkiem, takim jak [wprowadzenie do C# i ASP.NET Core w programie Visual Studio](tutorial-aspnet-core.md) .
 
 > [!TIP]
-> Aby skorzystać z tego artykułu, upewnij się, że masz C# ustawienia wybrane dla programu Visual Studio. Aby dowiedzieć się, jak wybranie ustawienia dla zintegrowanego środowiska programistycznego (IDE), zobacz [wybierz ustawienia środowiska](visual-studio-ide.md#select-environment-settings).
+> Aby wykonać kroki opisane w tym artykule, upewnij się, że C# masz wybrane ustawienia dla programu Visual Studio. Aby uzyskać informacje o wybieraniu ustawień dla zintegrowanego środowiska programistycznego (IDE), zobacz [Wybieranie ustawień środowiska](visual-studio-ide.md#select-environment-settings).
 
 ## <a name="create-a-new-code-file"></a>Utwórz nowy plik kodu
 
@@ -54,13 +54,13 @@ Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
 ::: moniker range=">=vs-2019"
 
-1. Otwórz program Visual Studio. Naciśnij klawisz **Esc** lub kliknij przycisk **Kontynuuj bez konieczności pisania kodu** w oknie start, aby otworzyć środowiska programistycznego.
+1. Otwórz program Visual Studio. Naciśnij klawisz **ESC** lub kliknij pozycję **Kontynuuj bez kodu** w oknie uruchamiania, aby otworzyć środowisko programistyczne.
 
 ::: moniker-end
 
-2. Z **pliku** menu na pasku menu wybierz opcję **New** > **pliku**.
+2. Z menu **plik** na pasku menu wybierz polecenie **Nowy** > **plik**.
 
-3. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual C#**, a następnie wybierz **Otwórz**.
+3. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual C#** , a następnie wybierz **Otwórz**.
 
    Nowy plik zostanie otwarty w edytorze za pomocą szkielet klasy C#. (Zwróć uwagę, że firma Microsoft nie ma konieczności tworzenia pełnej projekt programu Visual Studio na uzyskanie niektórych korzyści, że Edytor kodu oferuje; wszystko co potrzebne jest pliku z kodem)!
 
@@ -132,7 +132,7 @@ Blok kodu jest ustawiana na tylko pierwszy wiersz, następuje wielokropek (`...`
 
 ## <a name="view-symbol-definitions"></a>Wyświetlanie definicji symbolu
 
-Edytor programu Visual Studio można łatwo sprawdzić definicji typu, metody itd. Jednym ze sposobów jest przejdź do pliku, który zawiera definicję, na przykład wybierając **przejdź do definicji** lub naciskając **F12** dowolnym odwołuje się do symbolu. Jeszcze szybszy sposób, który nie zmienia się od pliku pracujesz w jest użycie [Peek Definition](../../ide/go-to-and-peek-definition.md#peek-definition). Umożliwia wgląd w definicji `string` typu.
+Edytor programu Visual Studio można łatwo sprawdzić definicji typu, metody itd. Jednym ze sposobów jest przejście do pliku, który zawiera definicję, na przykład przez wybranie **Przejdź do definicji** lub naciśnięcie klawisza **F12** wszędzie tam, gdzie jest przywoływany symbol. Jeszcze szybszy sposób, który nie zmienia się od pliku pracujesz w jest użycie [Peek Definition](../../ide/go-to-and-peek-definition.md#peek-definition). Umożliwia wgląd w definicji `string` typu.
 
 1. Kliknij prawym przyciskiem myszy na dowolne wystąpienie `string` i wybierz polecenie **Peek Definition** menu zawartości. Lub naciśnij **Alt**+**F12**.
 

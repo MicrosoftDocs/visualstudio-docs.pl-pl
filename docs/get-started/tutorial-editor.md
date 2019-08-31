@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do edycji w edytorze kodu
+title: Wprowadzenie do edytowania w edytorze kodu
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom: get-started
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6741b40925f5d9914152d396be4686d166bf222
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943940"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180204"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
@@ -32,7 +32,7 @@ W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
@@ -50,13 +50,13 @@ Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
 ::: moniker range=">=vs-2019"
 
-1. Otwórz program Visual Studio. Naciśnij klawisz **Esc** lub kliknij przycisk **Kontynuuj bez konieczności pisania kodu** w oknie start, aby otworzyć środowiska programistycznego.
+1. Otwórz program Visual Studio. Naciśnij klawisz **ESC** lub kliknij pozycję **Kontynuuj bez kodu** w oknie uruchamiania, aby otworzyć środowisko programistyczne.
 
 ::: moniker-end
 
-2. Z **pliku** menu na pasku menu wybierz opcję **New** > **pliku**.
+2. Z menu **plik** na pasku menu wybierz polecenie **Nowy** > **plik**.
 
-3. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual C#**, a następnie wybierz **Otwórz**.
+3. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual C#** , a następnie wybierz **Otwórz**.
 
    Nowy plik zostanie otwarty w edytorze za pomocą szkielet klasy C#. (Zwróć uwagę, że firma Microsoft nie ma konieczności tworzenia pełnej projekt programu Visual Studio na uzyskanie niektórych korzyści, że Edytor kodu oferuje; wszystko co potrzebne jest pliku z kodem)!
 
@@ -66,7 +66,7 @@ Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
 Program Visual Studio oferuje przydatne *fragmenty kodu* , umożliwia szybkie i łatwe generowanie najczęściej używane bloki kodu. [Fragmenty kodu](../ide/code-snippets.md) są dostępne dla różnych języków programowania, w tym C#, Visual Basic i C++. Dodajmy języka C# `void Main` fragment kodu do naszego pliku.
 
-1. Umieść kursor nad końcowego zamykającego nawiasu klamrowego **}** w pliku, a następnie wpisz znaki `svm`. (`svm` oznacza `static void Main`; [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) metodą jest punkt wejścia dla C# aplikacji.)
+1. Umieść kursor tuż nad ostatnim zamykającym nawiasem klamrowym w pliku, a następnie wpisz znaki. `svm` C# (`svm` oznacza`static void Main`to, że metoda [Main ()](/dotnet/csharp/programming-guide/main-and-command-args/) jest punktem wejścia dla aplikacji).
 
    Wyskakujące okno dialogowe pojawia się z informacjami o `svm` fragmentu kodu.
 

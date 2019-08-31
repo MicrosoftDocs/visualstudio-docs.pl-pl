@@ -1,6 +1,6 @@
 ---
-title: 'Samouczek: Wprowadzenie do języka Visual Basic'
-description: Dowiedz się, jak tworzyć aplikacje konsoli języka Visual Basic w programie Visual Studio krok po kroku.
+title: 'Samouczek: Wprowadzenie do Visual Basic'
+description: Dowiedz się, jak tworzyć aplikacje konsolowe Visual Basic w programie Visual Studio, krok po kroku.
 ms.custom: seodec18, get-started
 ms.date: 03/23/2019
 ms.technology: vs-ide-general
@@ -14,16 +14,16 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 234a2d1070a39c0f9d9dbf5b0ae706b02b660abf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 899c47154a3d55811579ff01786096f35272593a
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972528"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180423"
 ---
-# <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: Wprowadzenie do języka Visual Basic w programie Visual Studio
+# <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: Wprowadzenie do Visual Basic w programie Visual Studio
 
-W ramach tego samouczka dla języka Visual Basic (VB), użyjesz programu Visual Studio, aby utworzyć i uruchomić kilka aplikacji konsolowych różnych i zapoznaj się z niektórymi funkcjami [środowiska zintegrowanego rozwoju Visual Studio (IDE)](visual-studio-ide.md) podczas możesz to zrobić.
+W tym samouczku dla Visual Basic (VB) będziesz używać programu Visual Studio do tworzenia i uruchamiania kilku różnych aplikacji konsolowych oraz eksplorowania niektórych funkcji [zintegrowanego środowiska programistycznego (IDE) programu Visual Studio](visual-studio-ide.md) .
 
 ::: moniker range="vs-2017"
 
@@ -33,91 +33,91 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzymy projekt aplikacji w języku Visual Basic. Typ projektu jest dostarczany z wszystkie pliki szablonu, które będą potrzebne, zanim dodaniu jeszcze nic!
+Najpierw utworzymy projekt aplikacji Visual Basic. Typ projektu jest dostarczany ze wszystkimi plikami szablonu, które będą potrzebne, zanim będzie można nawet dodać wszystko.
 
 ::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
+2. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
 
-3. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń **języka Visual Basic**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **Aplikacja konsoli (.NET Core)**. Następnie Nazwij plik *HelloWorld*.
+3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie Nazwij plik *HelloWorld*.
 
-   ![Szablon projektu aplikacji (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE konsoli](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
+   ![Szablon projektu aplikacji konsolowej (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Dodaj obciążenie (opcjonalnie)
 
-Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, możesz ją uzyskać, dodając **programowanie dla wielu platform .NET Core** obciążenia. Można dodać tego obciążenia w jednej z dwóch sposobów, zależności od tego, które aktualizacje programu Visual Studio 2017 są instalowane na komputerze.
+Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, można go uzyskać, dodając obciążenie Międzyplatformowe platformy **.NET Core** . Możesz dodać to obciążenie jeden z dwóch poniższych sposobów, w zależności od tego, które aktualizacje programu Visual Studio 2017 są zainstalowane na maszynie.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Użyj okna dialogowego Nowy projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Korzystanie z okna dialogowego Nowy projekt
 
-1. Kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe.
+1. Kliknij link **otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** .
 
-   ![Kliknij link Otwórz Instalator programu Visual Studio z okna dialogowego Nowy projekt](../media/vs-open-visual-studio-installer-generic.png)
+   ![Kliknij link Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../media/vs-open-visual-studio-installer-generic.png)
 
-1. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
+1. Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
 
-   ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../media/tutorial-aspnet-workload.png)
+   ![Obciążenie Międzyplatformowe dla platformy .NET Core w Instalator programu Visual Studio](../media/tutorial-aspnet-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Użyj paska menu Narzędzia
+#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Korzystanie z paska menu narzędzi
 
-1. Anuluj poza **nowy projekt** okna dialogowego pole, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
+1. Anuluj okno dialogowe **Nowy projekt** , a następnie z górnego paska menu wybierz kolejno opcje **Narzędzia** > **Pobierz narzędzia i funkcje**.
 
-1. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
+1. Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Niektóre zrzuty ekranu, w tym samouczku Użyj ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](../../ide/quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
+> Niektóre zrzuty ekranu w tym samouczku używają ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](../../ide/quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
 
 1. Open Visual Studio 2019.
 
-1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-   ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Wyświetl okno "Tworzenie nowego projektu"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *konsoli* w polu wyszukiwania. Następnie wybierz pozycję **języka Visual Basic** od języka, a następnie wybierz **Windows** z listy Platform. 
+1. W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **Visual Basic** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
 
-   Po zastosowaniu filtrów języka i platformy, wybierz **Aplikacja konsoli (.NET Core)** szablonu, a następnie wybierz **dalej**.
+   Po zastosowaniu filtrów języka i platformy wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
 
-   ![Wybierz szablon języka Visual Basic dla aplikacji konsoli (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   ![Wybierz szablon Visual Basic dla aplikacji konsolowej (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
+   > Jeśli nie widzisz szablonu **Aplikacja konsolowa (.NET Core)** , możesz go zainstalować z okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
    >
-   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "nie można odnaleźć szukanego elementu" w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
-   > Następnie w Instalatorze programu Visual Studio, wybierz **programowanie dla wielu platform .NET Core** obciążenia.
+   > Następnie w Instalator programu Visual Studio wybierz obciążenie dla **wielu platform platformy .NET Core** .
    >
-   > ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../../get-started/media/dot-net-core-xplat-dev-workload.png)
+   > ![Obciążenie Międzyplatformowe dla platformy .NET Core w Instalator programu Visual Studio](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem. Następnie wróć do kroku 2, w tym "[Utwórz projekt](#create-a-project)" procedury.
+   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze "[Create a Project](#create-a-project)".
 
-1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *WhatIsYourName* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *WhatIsYourName* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
 
-   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "WhatIsYourName"](./media/vs-2019/vb-name-your-project-whatname.png)
+   ![w oknie "Konfigurowanie nowego projektu" nazwij projekt "WhatIsYourName"](./media/vs-2019/vb-name-your-project-whatname.png)
 
-   Visual Studio otwiera nowy projekt.
+   Program Visual Studio otwiera nowy projekt.
 
 ::: moniker-end
 
-## <a name="create-a-what-is-your-name-application"></a>Tworzenie aplikacji "Co to jest Twój Name"
+## <a name="create-a-what-is-your-name-application"></a>Tworzenie aplikacji "co to jest Twoja nazwa"
 
-Utwórz aplikację, która wyświetli monit o podanie nazwy użytkownika i wyświetla go wraz z daty i godziny. Oto jak:
+Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a następnie wyświetli ją wraz z datą i godziną. Oto jak to zrobić:
 
  ::: moniker range="vs-2017"
 
-1. Jeśli jeszcze nie jest otwarty kolejno swoje *WhatIsYourName* projektu.
+1. Jeśli nie jest jeszcze otwarty, Otwórz projekt *WhatIsYourName* .
 
-1. Wprowadź następujący kod w języku Visual Basic natychmiast po nawiasie otwierającym, który następuje po `Sub Main(args As String())` wierszu i przed `End Sub` wiersza:
+1. Wprowadź następujący kod Visual Basic bezpośrednio po nawiasie otwierającym, który następuje `Sub Main(args As String())` po wierszu i `End Sub` przed wierszem:
 
      ```vb
      Console.WriteLine(vbCrLf + "What is your name? ")
@@ -128,13 +128,13 @@ Utwórz aplikację, która wyświetli monit o podanie nazwy użytkownika i wyśw
      Console.ReadKey(True)
     ```
 
-    Ten kod zastępuje istniejące <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, i <xref:System.Console.ReadKey%2A> instrukcji.
+    Ten kod zastępuje istniejące <xref:System.Console.WriteLine%2A>instrukcje, <xref:System.Console.Write%2A>i. <xref:System.Console.ReadKey%2A>
 
-   ![Okno kodu, kod co to jest nazwa użytkownika](./media/vs-2019/vb-codewindow-what-name-dark.png)
+   ![Okno kodu z informacjami o kodzie swojej nazwy](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
-1. Po otwarciu okna konsoli, wprowadź nazwę. Okna konsoli powinien wyglądać podobnie do poniższej zrzut ekranu:
+1. Po otwarciu okna konsoli wprowadź swoją nazwę. Okno konsoli powinno wyglądać podobnie do poniższego zrzutu ekranu:
 
-   ![Wyświetlana co to jest imię i nazwisko, datę i godzinę w oknie konsoli, a następnie naciśnij dowolny klawisz, aby kontynuować, wiadomości](media/vb-console-what-name.png)
+   ![Okno konsoli, w którym jest wyświetlana nazwa, Data i godzina, i naciśnij dowolny klawisz, aby kontynuować komunikat](media/vb-console-what-name.png)
 
 1. Naciśnij dowolny klawisz, aby zamknąć okno konsoli.
 
@@ -142,7 +142,7 @@ Utwórz aplikację, która wyświetli monit o podanie nazwy użytkownika i wyśw
 
 ::: moniker range="vs-2019"
 
-1. W *WhatIsYourName* projektu, wprowadź następujący kod w języku Visual Basic natychmiast po nawiasie otwierającym, który następuje po `Sub Main(args As String())` wierszu i przed `End Sub` wiersza:
+1. W projekcie *WhatIsYourName* wprowadź następujący kod Visual Basic bezpośrednio po nawiasie otwierającym, który następuje `Sub Main(args As String())` po `End Sub` wierszu i przed wierszem:
 
      ```vb
      Console.WriteLine(vbCrLf + "What is your name? ")
@@ -153,27 +153,27 @@ Utwórz aplikację, która wyświetli monit o podanie nazwy użytkownika i wyśw
      Console.ReadKey(True)
     ```
 
-    Ten kod zastępuje istniejące <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, i <xref:System.Console.ReadKey%2A> instrukcji.
+    Ten kod zastępuje istniejące <xref:System.Console.WriteLine%2A>instrukcje, <xref:System.Console.Write%2A>i. <xref:System.Console.ReadKey%2A>
 
-   ![Okno kodu, kod co to jest nazwa użytkownika](./media/vs-2019/vb-codewindow-what-name-dark.png)
+   ![Okno kodu z informacjami o kodzie swojej nazwy](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
-1. Po otwarciu okna konsoli, wprowadź nazwę. Okna konsoli powinien wyglądać podobnie do poniższej zrzut ekranu:
+1. Po otwarciu okna konsoli wprowadź swoją nazwę. Okno konsoli powinno wyglądać podobnie do poniższego zrzutu ekranu:
 
-   ![Wyświetlana co to jest imię i nazwisko, datę i godzinę w oknie konsoli, a następnie naciśnij dowolny klawisz, aby kontynuować, wiadomości](media/vb-console-what-name.png)
+   ![Okno konsoli, w którym jest wyświetlana nazwa, Data i godzina, i naciśnij dowolny klawisz, aby kontynuować komunikat](media/vb-console-what-name.png)
 
 1. Naciśnij dowolny klawisz, aby zamknąć okno konsoli.
 
  ::: moniker-end
 
-## <a name="create-a-calculate-this-application"></a>Tworzenie aplikacji "Oblicz to"
+## <a name="create-a-calculate-this-application"></a>Tworzenie aplikacji "Oblicz tę"
 
 ::: moniker range="vs-2017"
 
-1. Otwórz program Visual Studio 2017, a następnie na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
+1. Otwórz program Visual Studio 2017, a następnie z górnego paska menu wybierz pozycję **plik** > **Nowy** > **projekt**.
 
-1. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń **języka Visual Basic**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **Aplikacja konsoli (.NET Core)**. Następnie Nazwij plik *CalculateThis*.
+1. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie Nazwij plik *CalculateThis*.
 
-1. Wprowadź następujący kod między `Module Program` wiersza i `End Module` wiersza:
+1. Wprowadź następujący kod między `Module Program` wierszem a `End Module` wierszem:
 
    ```vb
    Public num1 As Integer
@@ -190,27 +190,27 @@ Utwórz aplikację, która wyświetli monit o podanie nazwy użytkownika i wyśw
    End Sub
    ```
 
-   W oknie Kod powinien wyglądać podobnie Poniższy zrzut ekranu:
+   Okno kodu powinno wyglądać podobnie do poniższego zrzutu ekranu:
 
-   ![Okno kodu, kod CalculateThis](media/vb-codewindow-calculate-this.png)
+   ![Okno kodu przedstawiające kod CalculateThis](media/vb-codewindow-calculate-this.png)
 
-1. Kliknij przycisk **CalculateThis** Aby uruchomić program. Okna konsoli powinien wyglądać podobnie do poniższej zrzut ekranu:
+1. Kliknij pozycję **CalculateThis** , aby uruchomić program. Okno konsoli powinno wyglądać podobnie do poniższego zrzutu ekranu:
 
-    ![Okno konsoli przedstawiający aplikację CalculateThis, która obejmuje monity w przypadku działania, które należy podjąć.](media/vb-console-calculate-this.png)
+    ![Okno konsoli z aplikacją CalculateThis, która zawiera monity o akcje do wykonania.](media/vb-console-calculate-this.png)
 
 ::: moniker-end 
 
 ::: moniker range="vs-2019"
 
-1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**. 
+1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**. 
 
-1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *konsoli* w polu wyszukiwania. Następnie wybierz pozycję **języka Visual Basic** od języka, a następnie wybierz **Windows** z listy Platform. 
+1. W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **Visual Basic** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
 
-1. Po zastosowaniu filtrów języka i platformy, wybierz **Aplikacja konsoli (.NET Core)** szablonu, a następnie wybierz **dalej**.
+1. Po zastosowaniu filtrów języka i platformy wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
 
-   Następnie w **konfigurowania nowego projektu** oknie wpisz lub wprowadź *WhatIsYourName* w **Nazwa projektu** pole. Następnie wybierz pozycję **Utwórz**.
+   Następnie w oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *WhatIsYourName* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
 
-1. Wprowadź następujący kod między `Module Program` wiersza i `End Module` wiersza:
+1. Wprowadź następujący kod między `Module Program` wierszem a `End Module` wierszem:
 
    ```vb
    Public num1 As Integer
@@ -227,45 +227,45 @@ Utwórz aplikację, która wyświetli monit o podanie nazwy użytkownika i wyśw
    End Sub
    ```
 
-   W oknie Kod powinien wyglądać podobnie Poniższy zrzut ekranu:
+   Okno kodu powinno wyglądać podobnie do poniższego zrzutu ekranu:
 
-   ![Okno kodu, kod CalculateThis](media/vb-codewindow-calculate-this.png)
+   ![Okno kodu przedstawiające kod CalculateThis](media/vb-codewindow-calculate-this.png)
 
-1. Kliknij przycisk **CalculateThis** Aby uruchomić program. Okna konsoli powinien wyglądać podobnie do poniższej zrzut ekranu:
+1. Kliknij pozycję **CalculateThis** , aby uruchomić program. Okno konsoli powinno wyglądać podobnie do poniższego zrzutu ekranu:
 
-    ![Okno konsoli przedstawiający aplikację CalculateThis, która obejmuje monity w przypadku działania, które należy podjąć.](media/vb-console-calculate-this.png)
+    ![Okno konsoli z aplikacją CalculateThis, która zawiera monity o akcje do wykonania.](media/vb-console-calculate-this.png)
 
 ::: moniker-end
 
-## <a name="quick-answers-faq"></a>Szybkie odpowiedzi na często zadawane pytania
+## <a name="quick-answers-faq"></a>Szybkie odpowiedzi — często zadawane pytania
 
-Poniżej przedstawiono listę często zadawanych PYTAŃ szybkiego aby zaznaczyć kilka podstawowych pojęć.
+Oto krótkie często zadawane pytania, aby wyróżnić niektóre kluczowe pojęcia.
 
 ### <a name="what-is-visual-basic"></a>Co to jest Visual Basic?
 
-Visual Basic to bezpieczny typowo język programowania, który ustalono, aby były łatwe dowiedzieć się więcej. Jest on uzyskiwany z BASIC, co oznacza "Dla początkujących uniwersalny symboliczne instrukcji kod".
+Visual Basic to bezpieczny dla typu język programowania, który został zaprojektowany, aby ułatwić naukę. Jest on oparty na warstwie Podstawowa, co oznacza "kod instrukcji symbolicznych całego celu".
 
-### <a name="what-is-visual-studio"></a>Co to jest program Visual Studio?
+### <a name="what-is-visual-studio"></a>Co to jest Visual Studio?
 
-Program Visual Studio jest zintegrowanego rozwoju pakietu narzędzi zwiększających produktywność dla deweloperów. Go traktować jako program, który służy do tworzenia aplikacji i programów.
+Program Visual Studio to zintegrowany pakiet programistyczny narzędzi do tworzenia produktywności dla deweloperów. Zastanów się, że program służy do tworzenia programów i aplikacji.
 
-### <a name="what-is-a-console-app"></a>Co to jest aplikacją konsoli?
+### <a name="what-is-a-console-app"></a>Co to jest Aplikacja konsolowa?
 
-Aplikacja konsoli akceptuje dane wejściowe i wyświetla dane wyjściowe w oknie wiersza polecenia, zwanego również Konsola.
+Aplikacja konsolowa pobiera dane wejściowe i wyświetla dane wyjściowe w oknie wiersza polecenia, vel Konsola programu.
 
 ### <a name="what-is-net-core"></a>Co to jest .NET Core?
 
-Platforma .NET core to ewolucyjny następnym krokiem programu .NET Framework. Gdzie programu .NET Framework mogą pozwala na udostępnianie kodu w językach programowania .NET Core dodaje możliwość udostępniania kodu między platformami. Jeszcze lepiej jest "open source". (.NET Framework i .NET Core zawierają biblioteki, wbudowanych funkcji, jak również środowisko uruchomieniowe języka wspólnego (CLR), który działa jako maszyna wirtualna, w którym ma być uruchamiany kod).
+.NET Core to kolejny krok ewolucji .NET Framework. Gdy .NET Framework może udostępniać kod w różnych językach programowania, program .NET Core dodaje możliwość udostępniania kodu na różnych platformach. Jeszcze lepszym rozwiązaniem jest funkcja Open Source. (Zarówno .NET Framework, jak i .NET Core obejmują biblioteki wstępnie utworzonych funkcji, a także środowisko uruchomieniowe języka wspólnego (CLR), które działa jako maszyna wirtualna, w której ma być uruchamiany kod.)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy wykonanie kroków tego samouczka! Aby uzyskać jeszcze więcej, zobacz następujące samouczki.
+Gratulujemy wykonanie kroków tego samouczka! Aby dowiedzieć się więcej, zobacz poniższy samouczek.
 
 > [!div class="nextstepaction"]
-> [Tworzenie biblioteki w języku Visual Basic i .NET Core SDK w programie Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Kompilowanie biblioteki przy użyciu Visual Basic i zestaw .NET Core SDK w programie Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Wskazówki dotyczące języka Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Odwołanie językowe Visual Basic](/dotnet/visual-basic/language-reference/index)
-* [Funkcja IntelliSense w plikach kodu języka Visual Basic](../../ide/visual-basic-specific-intellisense.md)
+* [Dokumentacja języka Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Funkcja IntelliSense dla plików kodu Visual Basic](../../ide/visual-basic-specific-intellisense.md)

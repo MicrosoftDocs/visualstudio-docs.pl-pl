@@ -1,6 +1,6 @@
 ---
-title: 'Szybki start: Tworzenie usługi sieci web platformy ASP.NET Core wF#'
-description: Dowiedz się, jak tworzyć usługi sieci web platformy ASP.NET Core w programie Visual Studio F#krok po kroku.
+title: 'Szybki start: Utwórz usługę sieci Web ASP.NET Core w programieF#'
+description: Dowiedz się, jak utworzyć ASP.NET Core usługę sieci Web w programie F#Visual Studio z programem, krok po kroku.
 ms.date: 08/24/2018
 ms.topic: quickstart
 author: cartermp
@@ -11,16 +11,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953342"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180325"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: Tworzenie pierwszej usługi sieci web platformy ASP.NET Core w F przy użyciu programu Visual Studio\#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: Użyj programu Visual Studio, aby utworzyć pierwszą ASP.NET Core usługę sieci Web w języku F\#
 
-W ramach tego wprowadzenia 5 – 10 minut, aby F# w programie Visual Studio, utworzysz F# aplikacji sieci web platformy ASP.NET Core.
+W tym 5-10 minut wprowadzenie do F# programu Visual Studio zostanie utworzona aplikacja sieci Web F# ASP.NET Core.
 
 ::: moniker range="vs-2017"
 
@@ -30,27 +30,27 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzysz projekt internetowego interfejsu API platformy ASP.NET Core. Typ projektu jest dostarczany z plików szablonów, wchodzących w skład usługi sieci web funkcjonalności, zanim jeszcze dodano niczego!
+Najpierw utworzysz projekt interfejsu API sieci Web ASP.NET Core. Typ projektu zawiera pliki szablonów, które stanowią działającą usługę sieci Web, przed dodaniem nawet wszystkiego.
 
 ::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio.
 
-2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
+2. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
 
-3. W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **Visual F#** , następnie wybierz **Web**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**, następnie wybierz **OK**.
+3. W oknie dialogowym **Nowy projekt** w okienku po lewej stronie rozwiń pozycję **Wizualizacja F#** , a następnie wybierz pozycję **Sieć Web**. W środkowym okienku wybierz pozycję **ASP.NET Core aplikacja sieci Web**, a następnie wybierz przycisk **OK**.
 
-     Jeśli nie widzisz **platformy .NET Core** projektu kategorii szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie. Uruchamia Instalatora programu Visual Studio. Wybierz **ASP.NET i tworzenie aplikacji internetowych** obciążenia, wybierz **Modyfikuj**.
+     Jeśli nie widzisz **platformy .NET Core** projektu kategorii szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie. Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie **ASP.NET i projektowanie sieci Web** , a następnie wybierz **Modyfikuj**.
 
      ![Obciążenie platformy ASP.NET w Instalatorze programu VS](../ide/media/quickstart-aspnet-workload.png)
 
-4 w **Nowa aplikacja internetowa ASP.NET Core** okno dialogowe, wybierz opcję **platformy ASP.NET Core 2.1** z górnego menu rozwijanego. (Jeśli nie widzisz **platformy ASP.NET Core 2.1** na liście, zainstaluj ją, wykonując **Pobierz** link, który powinien zostać wyświetlony w żółty pasek w górnej części okna dialogowego.) Wybierz **OK**.
+4.In nowe okno dialogowe **ASP.NET Core aplikacji sieci Web** , wybierz pozycję **ASP.NET Core 2,1** z menu rozwijanego górne. (Jeśli na liście nie widzisz **ASP.NET Core 2,1** , zainstaluj ją, korzystając z linku **pobierania** , który powinien pojawić się na żółtym pasku w górnej części okna dialogowego). Wybierz **OK**.
 
 ::: moniker-end
 
@@ -58,23 +58,23 @@ Najpierw utworzysz projekt internetowego interfejsu API platformy ASP.NET Core. 
 
 1. Otwórz program Visual Studio.
 
-2. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+2. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-3. Na **Utwórz nowy projekt** wpisz **f # web** do wyszukiwania, a następnie wybierz **aplikacji sieci Web programu ASP.NET Core** szablonu projektu. Wybierz **dalej**.
+3. Na stronie **Tworzenie nowego projektu** wpisz **f # Web** w polu wyszukiwania, a następnie wybierz szablon projektu **aplikacji sieci Web ASP.NET Core** . Wybierz **dalej**.
 
-4. Na **konfigurowania nowego projektu** strony, wprowadź nazwę, a następnie wybierz **Utwórz**.
+4. Na stronie **Konfiguruj nowy projekt** wprowadź nazwę, a następnie wybierz pozycję **Utwórz**.
 
-5. Na **Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core** wybierz opcję **platformy ASP.NET Core 2.1** z górnego menu rozwijanego, a następnie wybierz **Utwórz**.
+5. Na stronie **Tworzenie nowej ASP.NET Core aplikacji sieci Web** wybierz pozycję **ASP.NET Core 2,1** z menu rozwijanego górne, a następnie wybierz pozycję **Utwórz**.
 
 ::: moniker-end
 
 ## <a name="explore-the-ide"></a>Eksploruj IDE
 
-1. W **Eksploratora rozwiązań** narzędzi rozwiń **kontrolerów** folderu, wybierz **ValuesController.fs** aby go otworzyć w edytorze.
+1. Na pasku narzędzi **Eksplorator rozwiązań** rozwiń folder **controllers** , a następnie wybierz **ValuesController. FS** , aby otworzyć go w edytorze.
 
-   ![Eksplorator rozwiązań z folderem kontrolerów rozwinięty w F# projekt internetowego interfejsu API](../ide/media/hello-world-fs-sln-explorer.png)
+   ![Eksplorator rozwiązań z rozwiniętym folderem F# controllers w projekcie interfejsu API sieci Web](../ide/media/hello-world-fs-sln-explorer.png)
 
-2. Następnie zmodyfikuj `Get()` element członkowski może być następujące:
+2. Następnie zmodyfikuj `Get()` składową, tak aby była następująca:
 
    ```fsharp
    [<HttpGet>]
@@ -83,25 +83,25 @@ Najpierw utworzysz projekt internetowego interfejsu API platformy ASP.NET Core. 
        ActionResult<string[]>(values)
    ```
 
-Kod jest bardzo proste. F# Tablicy wartości jest powiązany z `values` nazwę, a następnie przekazywane do struktury programu ASP.NET Core MVC jako `ActionResult`. ASP.NET Core zajmie się resztą dla Ciebie.
+Kod jest prosty. F# Tablica wartości jest powiązana z `values` nazwą, a następnie przenoszona do platformy ASP.NET Core `ActionResult`MVC jako. ASP.NET Core zajmie się resztą.
 
-Powinien wyglądać następująco w edytorze:
+Powinien on wyglądać następująco w edytorze:
 
-![Element członkowski Get zmodyfikowane](../ide/media/hello-world-fs-get-member.png)
+![Zmodyfikowany członek Get](../ide/media/hello-world-fs-get-member.png)
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Naciśnij klawisz **Ctrl**+**F5** Aby uruchomić aplikację, a następnie otwórz go w przeglądarce sieci web.
+1. Naciśnij klawisz **Ctrl**+**F5** , aby uruchomić aplikację i otworzyć ją w przeglądarce sieci Web.
 
-2. Strony należy przejść do `/api/values` trasy, ale jeśli nie, wprowadź `https://localhost:44396/api/values` w przeglądarce.
+2. Strona powinna przechodzić do `/api/values` trasy, ale jeśli nie, wpisz `https://localhost:44396/api/values` ją w przeglądarce.
 
-Przeglądarka sieci web będą teraz wyświetlane dopasowania wcześniej wpisane w formacie JSON.
+W przeglądarce sieci Web zostanie teraz wyświetlone dopasowanie JSON zgodne z wpisanymi wcześniej.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz już trochę F#, ASP.NET Core i programu Visual Studio IDE. Aby sprawdzić działanie aplikacji na publiczny serwer, przycisk.
+Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że uczysz się nieco o F#tym, ASP.NET Core i IDE programu Visual Studio. Aby wyświetlić aplikację uruchomioną na serwerze publicznym, wybierz poniższy przycisk.
 
 > [!div class="nextstepaction"]
 > [Wdrażanie aplikacji w usłudze Azure App Service](../deployment/quickstart-deploy-to-azure.md)
 
-Aby dowiedzieć się więcej na temat F#, zapoznaj się z oficjalną [ F# przewodnik](/dotnet/fsharp/index).
+Aby dowiedzieć się F#więcej na temat, zapoznaj się z oficjalnym [ F# przewodnikiem](/dotnet/fsharp/index).

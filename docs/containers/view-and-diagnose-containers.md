@@ -1,93 +1,93 @@
 ---
-title: Dzienniki kontenerów, zmienne środowiskowe i dostęp do systemu plików
-description: W tym artykule opisano, jak zwiększyć możliwości debugowanie i diagnozowanie aplikacji opartych na kontenerach w programie Visual Studio za pomocą okna narzędzi, aby zobaczyć, co się dzieje w kontenerach hostujących aplikację.
+title: Dzienniki kontenerów, zmienne środowiskowe & dostęp do systemu plików
+description: Opisuje sposób ulepszania możliwości debugowania i diagnozowania aplikacji opartych na kontenerach w programie Visual Studio przy użyciu okna narzędzi, aby zobaczyć, co się dzieje w kontenerach, które obsługują aplikację.
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
 ms.date: 05/06/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: b8e8e2db3f8f6e5aa60f3fa593caf017c349dca8
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3fb9a52f990a2e492c63a6e71a7cc2063110c816
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261198"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179835"
 ---
-# <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Jak wyświetlać i diagnozowanie kontenerów w programie Visual Studio
+# <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Jak wyświetlać i diagnozować kontenery w programie Visual Studio
 
-Można wyświetlić, co się dzieje wewnątrz kontenerów, które hostują aplikację za pomocą **kontenery** okna. Jeśli uruchamianie poleceń Docker za pomocą wiersza polecenia do wyświetlania i Diagnozuj, co się dzieje z kontenerów, to okno umożliwia bardziej wygodne do monitorowania kontenerów bez opuszczania środowiska IDE programu Visual Studio.
+Możesz zobaczyć, co się dzieje w kontenerach, które obsługują aplikację przy użyciu okna **kontenery** . Jeśli używasz wiersza polecenia do uruchamiania poleceń platformy Docker w celu wyświetlenia i zdiagnozowania, co się dzieje z kontenerami, to okno zapewnia wygodniejszy sposób monitorowania kontenerów bez opuszczania środowiska IDE programu Visual Studio.
 
 > [!NOTE]
-> Okno Kontejneru jest obecnie dostępna jako rozszerzenie w wersji zapoznawczej, które możesz [Pobierz](https://aka.ms/vscontainerspreview) dla programu Visual Studio 2019 r.
+> Okno kontenery jest obecnie dostępne jako rozszerzenie w wersji zapoznawczej, które można [pobrać](https://aka.ms/vscontainerspreview) dla programu Visual Studio 2019.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- [Pulpitu platformy docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- Zainstaluj [Visual Studio 2019 r.](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
-- Zainstaluj [rozszerzenia okna kontenerów](https://aka.ms/vscontainerspreview)
+- [Pulpit Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+- Zainstaluj [program Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+- Zainstaluj [rozszerzenie okna kontenerów](https://aka.ms/vscontainerspreview)
 
-## <a name="view-information-about-your-containers"></a>Wyświetl informacje o Twoich kontenerów
+## <a name="view-information-about-your-containers"></a>Wyświetlanie informacji o kontenerach
 
-**Kontenery** zostanie otwarte okno automatycznie podczas uruchamiania konteneryzowanych projektu .NET. Aby wyświetlić swoje kontenery w programie Visual Studio, w dowolnym momencie, użyj **Ctrl**+**Q** aktywować wyszukiwania usługi Visual Studio polu, a typ `Containers` i wybierz pierwszy element. Możesz również otworzyć **kontenery** okna w menu głównym. Użyj ścieżki menu **widoku** > **Windows inne** > **kontenery**.  
+Okno **kontenery** jest otwierane automatycznie po uruchomieniu kontenera projektu .NET. Aby w dowolnym momencie wyświetlić kontenery w programie Visual Studio, użyj **klawisza Ctrl**+**Q** , aby aktywować pole wyszukiwania programu Visual `Containers` Studio, a następnie wpisz i wybierz pierwszy element. Możesz również otworzyć okno **kontenery** z menu głównego. Użyj ścieżki menu **Przeglądaj** > inne**kontenery** **systemu Windows** > .  
 
-![Zrzut ekranu środowiska karty w oknie kontenerów](media/view-and-diagnose-containers/container-window.png)
+![Zrzut ekranu karty środowisko w oknie kontenery](media/view-and-diagnose-containers/container-window.png)
 
-Po lewej stronie zobaczysz listę kontenerów na komputerze lokalnym. Kontenery skojarzone z rozwiązaniem zostaną wyświetlone w obszarze **rozwiązanie Containers**. Po prawej stronie, zobacz okienko z kartami dla **środowiska**, **porty**, **dzienniki**, i **pliki**.
+Po lewej stronie zostanie wyświetlona lista kontenerów na komputerze lokalnym. Kontenery skojarzone z rozwiązaniem są wyświetlane w obszarze **kontenery rozwiązań**. Po prawej stronie zobaczysz okienko z kartami dla **środowiska**, **portów**, **dzienników**i **plików**.
 
 > [!TIP]
-> Gdzie można łatwo dostosować **kontenery** okna narzędzi jest zadokowany w programie Visual Studio. Zobacz [dostosowywanie układów okien w programie Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio). Domyślnie **kontenery** okna jest zadokowane **Obejrzyj** okna, gdy debuger jest uruchomiony.
+> Możesz łatwo dostosować lokalizację okna narzędzia **kontenerów** w programie Visual Studio. Zobacz [Dostosowywanie układów okien w programie Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio). Domyślnie okno kontenerów jest zadokowane przy użyciu okna **czujki** , gdy debuger jest uruchomiony.
 
-## <a name="view-environment-variables"></a>Wyświetlanie zmiennych środowiskowych
+## <a name="view-environment-variables"></a>Wyświetl zmienne środowiskowe
 
-**Środowiska** karta zawiera zmienne środowiskowe w kontenerze. Dla aplikacji kontenera można ustawić te zmienne na wiele sposobów, na przykład w pliku Dockerfile, w pliku ENV lub przy użyciu opcji -e, podczas uruchamiania kontenera za pomocą polecenia Docker.
+Na karcie **środowisko** są wyświetlane zmienne środowiskowe w kontenerze. W przypadku kontenera aplikacji można ustawić te zmienne na wiele sposobów, na przykład w pliku dockerfile, w pliku. ENV lub przy użyciu opcji-e podczas uruchamiania kontenera przy użyciu polecenia Docker.
 
-![Zrzut ekranu środowiska karty w oknie kontenerów](media/view-and-diagnose-containers/container-environment-vars.png)
+![Zrzut ekranu karty środowisko w oknie kontenery](media/view-and-diagnose-containers/container-environment-vars.png)
 
 > [!NOTE]
-> Wszelkie zmiany do zmiennych środowiskowych nie są uwzględniane w czasie rzeczywistym. Ponadto zmiennych środowiskowych na tej karcie są zmienne środowiskowe w kontenerze systemu i nie odzwierciedlają zmienne środowiskowe użytkownika lokalnego do aplikacji.
+> Wszelkie zmiany zmiennych środowiskowych nie są odzwierciedlone w czasie rzeczywistym. Ponadto zmienne środowiskowe na tej karcie są systemowymi zmiennymi środowiskowymi w kontenerze i nie odzwierciedlają zmiennych środowiskowych użytkownika lokalnych dla aplikacji.
 
-## <a name="view-port-mappings"></a>Widok mapowania portów
+## <a name="view-port-mappings"></a>Wyświetl mapowania portów
 
-Na **porty** karcie, można sprawdzić poprawność mapowania portów, które są stosowane dla kontenera usługi.
+Na karcie **porty** można sprawdzić mapowania portów obowiązujące dla danego kontenera.
 
-![Zrzut ekranu porty karty w oknie kontenerów](media/view-and-diagnose-containers/container-ports.png)
+![Zrzut ekranu karty porty w oknie kontenery](media/view-and-diagnose-containers/container-ports.png)
 
-Znane porty są połączone, więc jeśli wystąpią zawartości, dostępne na porcie, możesz kliknąć link, aby otworzyć w przeglądarce.
+Dobrze znane porty są połączone, dlatego jeśli na porcie jest dostępna zawartość, możesz kliknąć link, aby otworzyć przeglądarkę.
 
 ## <a name="view-logs"></a>Wyświetlanie dzienników
 
-**Dzienniki** karta przedstawia wyniki `docker logs` polecenia. Domyślnie karta przedstawia strumienia stdout i stderr do kontenera, ale można skonfigurować dane wyjściowe. Aby uzyskać więcej informacji, zobacz [rejestrowanie Docker](https://docs.docker.com/config/containers/logging/).  Domyślnie **dzienniki** kartę strumienie dzienników, ale możesz wyłączyć, wybierając **zatrzymać** przycisku na karcie.
+Na karcie **dzienniki** są wyświetlane wyniki `docker logs` polecenia. Domyślnie karta pokazuje strumienie stdout i stderr w kontenerze, ale można skonfigurować dane wyjściowe. Aby uzyskać szczegółowe informacje, zobacz [Rejestrowanie platformy Docker](https://docs.docker.com/config/containers/logging/).  Domyślnie karta **dzienniki** przesyła strumieniowo dzienniki, ale można je wyłączyć, wybierając przycisk **Zatrzymaj** na karcie.
 
-![Karta Zrzut ekranu z dzienników w oknie kontenerów](media/view-and-diagnose-containers/containers-logs.jpg)
+![Zrzut ekranu karty Dzienniki w oknie kontenery](media/view-and-diagnose-containers/containers-logs.jpg)
 
-Do czyszczenia dzienników, użyj **wyczyść** znajdujący się na **dzienniki** kartę.  Aby uzyskać wszystkie dzienniki, użyj **Odśwież** przycisku.
+Aby wyczyścić dzienniki, użyj przycisku **Wyczyść** na karcie **dzienniki** .  Aby pobrać wszystkie dzienniki, użyj przycisku **Odśwież** .
 
 > [!NOTE]
-> Program Visual Studio automatycznie przekierowuje stdout i stderr do **dane wyjściowe** okna, dlatego kontenery uruchomione w programie Visual Studio (czyli kontenerów w **rozwiązanie Containers** sekcji) nie będą wyświetlane dzienniki na tej karcie; Użyj **dane wyjściowe** okna zamiast tego.
+> Program Visual Studio automatycznie przekierowuje stdout i stderr do okna **danych wyjściowych** , więc kontenery uruchomione z programu Visual Studio (czyli kontenery w sekcji **kontenery rozwiązania** ) nie będą wyświetlały dzienników na tej karcie. Zamiast tego użyj okna **danych wyjściowych** .
 
-## <a name="view-the-filesystem"></a>Widok systemu plików
+## <a name="view-the-filesystem"></a>Wyświetlanie systemu plików
 
-Na **pliki** karcie, można wyświetlić systemu plików kontenera, w tym folder aplikacji, który zawiera projekt.
+Na karcie **pliki** można wyświetlić system plików kontenera, w tym folder aplikacji zawierający projekt.
 
-![Karta Zrzut ekranu z plików w oknie kontenerów](media/view-and-diagnose-containers/container-filesystem.png)
+![Zrzut ekranu karty pliki w oknie kontenerów](media/view-and-diagnose-containers/container-filesystem.png)
 
-Aby otworzyć pliki w programie Visual Studio, przejdź do pliku i kliknij ją dwukrotnie lub kliknij prawym przyciskiem myszy i wybierz **Otwórz**. Visual Studio otwiera pliki w trybie tylko do odczytu.
+Aby otworzyć pliki w programie Visual Studio, przejdź do pliku, kliknij go dwukrotnie lub kliknij prawym przyciskiem myszy i wybierz polecenie **Otwórz**. Program Visual Studio otwiera pliki w trybie tylko do odczytu.
 
-![Zrzut ekranu przedstawiający otwarty plik do wyświetlenia w programie Visual Studio](media/view-and-diagnose-containers/container-file-open.png)
+![Zrzut ekranu przedstawiający plik otwarty do wyświetlania w programie Visual Studio](media/view-and-diagnose-containers/container-file-open.png)
 
-Za pomocą **pliki** karty, możesz wyświetlić dzienniki aplikacji, takich jak dzienniki usług IIS, pliki konfiguracji i inne pliki zawartości w z kontenerem systemu plików.
+Za pomocą karty **pliki** można wyświetlać dzienniki aplikacji, takie jak dzienniki usług IIS, pliki konfiguracji i inne pliki zawartości w systemie plików kontenera.
 
 ## <a name="start-stop-and-remove-containers"></a>Uruchamianie, zatrzymywanie i usuwanie kontenerów
 
-Domyślnie **kontenery** okno pokazuje wszystkie kontenery na maszynie, która zarządza platformy Docker. Można użyć przycisków paska narzędzi, aby uruchomić, zatrzymać lub remove (Usuń) kontenera nie są już potrzebne.  Ta lista jest aktualizowana dynamicznie, jak kontenery są tworzone lub usuwane.
+Domyślnie w oknie **kontenerów** są wyświetlane wszystkie kontenery na komputerze zarządzanym przez platformę Docker. Za pomocą przycisków paska narzędzi można uruchamiać, zatrzymywać i usuwać (usuwać) kontenerów, które nie są już potrzebne.  Ta lista jest aktualizowana dynamicznie w miarę tworzenia lub usuwania kontenerów.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się więcej o dostępnych w programie Visual Studio narzędzia kontenerów, czytając [omówienie narzędzi kontenera](overview.md).
+Dowiedz się więcej o narzędziach kontenera dostępnych w programie Visual Studio, odczytując [informacje](overview.md)o narzędziach kontenerów.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Tworzenie kontenerów w programie Visual Studio](/visualstudio/containers)
+[Programowanie kontenerów w programie Visual Studio](/visualstudio/containers)
 
-[Marketplace rozszerzeń dla programu Visual Studio](https://marketplace.visualstudio.com/)
+[Witryna Marketplace dla rozszerzeń dla programu Visual Studio](https://marketplace.visualstudio.com/)
