@@ -1,29 +1,29 @@
 ---
-ms.openlocfilehash: b8903ecc6f0bdb1ee24f5b8b7b724311c903e4ba
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6c210537c671ef6960d3f767c740dee5c1538fac
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143643"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197169"
 ---
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) zainstalowane odpowiednie obciążeń dla wybranego języka:
-  * ASP.NET: **ASP.NET i tworzenie aplikacji internetowych**
-  * Node.js: **Tworzenia aplikacji node.js**
+* [Program Visual Studio 2019](https://visualstudio.microsoft.com/downloads) został zainstalowany z odpowiednimi obciążeniami dla wybranego języka:
+  * ASP.NET: **ASP.NET i programowanie dla sieci Web**
+  * Node.js: **Programowanie w programie Node. js**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) zainstalowane odpowiednie obciążeń dla wybranego języka:
-  * ASP.NET: **ASP.NET i tworzenie aplikacji internetowych**
-  * Node.js: **Tworzenia aplikacji node.js**
+* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) został zainstalowany z odpowiednimi obciążeniami dla wybranego języka:
+  * ASP.NET: **ASP.NET i programowanie dla sieci Web**
+  * Node.js: **Programowanie w programie Node. js**
 ::: moniker-end
 
-* Subskrypcja platformy Azure. Jeśli nie masz już subskrypcję, [Utwórz bezpłatne konto](https://azure.microsoft.com/free/dotnet/), zawierający środki w wysokości 200 USD na 30 dni i 12 miesięcy z popularnych bezpłatnych usług.
+* Subskrypcja platformy Azure. Jeśli nie masz jeszcze subskrypcji, [zarejestruj się bezpłatnie](https://azure.microsoft.com/free/dotnet/), co obejmuje $200 USD za 30 dni i 12 miesięcy za popularne bezpłatne usługi.
 
-* Projekt programu ASP.NET, ASP.NET Core, .NET Core lub Node.js. Jeśli nie masz jeszcze projektu, wybierz opcję poniżej:
-  * ASP.NET Core: Postępuj zgodnie z [Szybki Start: Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core przy użyciu programu Visual Studio](../../ide/quickstart-aspnet-core.md), lub użyj **pliku** > **nowy projekt**, wybierz opcję **Visual C#**   >  **Platformy .NET core**, a następnie wybierz **aplikacji sieci Web programu ASP.NET Core**. Po wyświetleniu monitu wybierz **aplikacji sieci Web (Model-View-Controller)** szablonu, upewnij się, że **bez uwierzytelniania** jest wybrany, a następnie wybierz **OK**.
-  * Node.js: Postępuj zgodnie z [Szybki Start: Tworzenie pierwszej aplikacji Node.js przy użyciu programu Visual Studio](../../ide/quickstart-nodejs.md), lub użyj **pliku** > **nowy projekt**, wybierz opcję **JavaScript**, następnie wybierz pozycję **Pusta aplikacja internetowa Node.js**.
+* Projekt ASP.NET, ASP.NET Core, .NET Core lub Node. js. Jeśli nie masz jeszcze projektu, wybierz opcję poniżej:
+  * ASP.NET Core: Skorzystaj [z przewodnika Szybki Start: Użyj programu Visual Studio, aby utworzyć pierwszą](../../ide/quickstart-aspnet-core.md)aplikację sieci Web ASP.NET Core, lub Użyj **pliku** > **Nowy projekt**, wybierz pozycję **Visual C#**   > .NET Core, a następnie wybierz pozycję **ASP.NET Core aplikacji sieci Web.** . Po wyświetleniu monitu wybierz szablon **aplikacja sieci Web (Model-View-Controller)** , upewnij się, że **nie** wybrano opcji uwierzytelnianie, a następnie wybierz przycisk **OK**.
+  * Node.js: Skorzystaj [z przewodnika Szybki Start: Użyj programu Visual Studio, aby utworzyć pierwszą](../../ide/quickstart-nodejs.md)aplikację Node. js, lub użyj opcji **plik** > **Nowy projekt**, wybierz **JavaScript**, a następnie wybierz pustą **aplikację sieci Web Node. js**.
 
-* Upewnij się, że tworzysz projekt za pomocą **kompilacji > Kompiluj rozwiązanie** polecenia menu, przed wykonaniem procedury wdrażania.
+* Przed wykonaniem kroków wdrażania należy się upewnić, że projekt został skompilowany przy użyciu polecenia **kompiluj > Kompiluj rozwiązanie** .

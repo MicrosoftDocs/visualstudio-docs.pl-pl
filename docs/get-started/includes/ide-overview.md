@@ -6,30 +6,30 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 27c9c453549f753f3dfdc1664fd76f7a65d0ded5
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68148384"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197170"
 ---
 Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konsola uruchamianie służy do edytowania, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debugera, większości środowisk IDE podać, program Visual Studio obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i wiele innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 
 ::: moniker range="vs-2017"
 
-![Program Visual Studio 2017 IDE](../media/visual-studio-ide.png)
+![Środowisko IDE programu Visual Studio 2017](../media/visual-studio-ide.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-[![Visual Studio IDE 2019 r](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
+[![Środowisko IDE programu Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
 Ten obraz pokazuje programu Visual Studio Otwórz projekt i kilka okien narzędzi klucza, które będą prawdopodobnie używane:
 
-- [Eksplorator rozwiązań](../../ide/solutions-and-projects-in-visual-studio.md) (prawym górnym rogu) umożliwia wyświetlanie, przejść i zarządzanie plikami kodu. **Eksplorator rozwiązań** ułatwiają organizowanie kodu za pomocą tych plików do grupowania [rozwiązania i projekty](../tutorial-projects-solutions.md).
+- [Eksplorator rozwiązań](../../ide/solutions-and-projects-in-visual-studio.md) (prawy górny) umożliwia wyświetlanie plików kodu i nawigowanie w nich oraz zarządzanie nimi. **Eksplorator rozwiązań** ułatwiają organizowanie kodu za pomocą tych plików do grupowania [rozwiązania i projekty](../tutorial-projects-solutions.md).
 
 - [Okna edytora](../../ide/writing-code-in-the-code-and-text-editor.md) (center), gdzie prawdopodobnie spędzisz większość czasu, wyświetla zawartość pliku. Jest to, który umożliwia edytowanie kodu lub projektować interfejs użytkownika, takie jak okna przy użyciu przycisków i pola tekstowe.
 
@@ -53,9 +53,9 @@ Istnieją trzy wersje programu Visual Studio 2017: Community, Professional i Ent
 
 ::: moniker range="vs-2019"
 
-Program Visual Studio jest dostępna dla Windows i Mac. [Program Visual Studio for Mac](/visualstudio/mac/) ma wiele z tych samych funkcji, jak Visual Studio 2019 r i jest zoptymalizowany pod kątem tworzenia aplikacji dla wielu platform i na urządzeniach przenośnych. Ten artykuł koncentruje się na Windows wersję programu Visual Studio 2019 r.
+Program Visual Studio jest dostępna dla Windows i Mac. [Visual Studio dla komputerów Mac](/visualstudio/mac/) ma wiele takich samych funkcji, jak program Visual Studio 2019 i jest zoptymalizowany pod kątem opracowywania aplikacji mobilnych i międzyplatformowych. Ten artykuł koncentruje się na wersji systemu Windows programu Visual Studio 2019.
 
-Istnieją trzy wersje programu Visual Studio 2019 r.: Community, Professional i Enterprise. Zobacz [porównanie środowiska IDE programu Visual Studio](https://visualstudio.microsoft.com/vs/compare/) Aby dowiedzieć się więcej o funkcji, które są obsługiwane w poszczególnych wydaniach.
+Istnieją trzy wersje programu Visual Studio 2019: Community, Professional i Enterprise. Zobacz [porównanie programu Visual Studio środowisk IDE](https://visualstudio.microsoft.com/vs/compare/) , aby dowiedzieć się, jakie funkcje są obsługiwane w poszczególnych wersjach.
 
 ::: moniker-end
 
@@ -71,11 +71,11 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
 ::: moniker range=">=vs-2019"
 
-- Oczyszczanie kodu
+- Czyszczenie kodu
 
-   Za pomocą kliknięcia przycisku formatowanie kodu i stosować wszelkie poprawki kodu zaproponowana przez Twoje [ustawienia stylu kodu](../../ide/reference/options-text-editor-csharp-formatting.md), [konwencje .editorconfig](../../ide/create-portable-custom-editor-options.md), i [analizatorów Roslyn](../../code-quality/roslyn-analyzers-overview.md). **Kod czyszczenia** pomaga rozwiązać problemy występujące w kodzie, zanim przejdzie do przeglądu kodu. (Obecnie dostępna dla C# tylko kodu.)
+   Po kliknięciu przycisku sformatuj kod i Zastosuj wszelkie poprawki kodu sugerowane przez [Ustawienia stylu kodu](../../ide/reference/options-text-editor-csharp-formatting.md), [konwencje editorconfig](../../ide/create-portable-custom-editor-options.md)i [analizatory Roslyn](../../code-quality/roslyn-analyzers-overview.md). **Czyszczenie kodu** ułatwia rozwiązywanie problemów w kodzie przed przekazaniem ich do przeglądu kodu. (Obecnie dostępne tylko C# dla kodu).
 
-   ![Przycisk Wyczyść kod w programie Visual Studio](../media/vs-2019/code-cleanup.png)
+   ![Przycisk czyszczenia kodu w programie Visual Studio](../media/vs-2019/code-cleanup.png)
 
 ::: moniker-end
 
@@ -93,28 +93,28 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
 - Pole wyszukiwania
 
-   Program Visual Studio może wydawać się trudne w czasie za pomocą menu tak wiele, opcje i właściwości. Pole wyszukiwania jest doskonałym sposobem na szybkie znajdowanie potrzebnej w programie Visual Studio. Po uruchomieniu, wpisując nazwę coś, czego szukasz, program Visual Studio wyświetla wyniki, które przyjmują dokładnie miejscu należy przejść. Jeśli chcesz dodać funkcje do programu Visual Studio, na przykład aby dodać obsługę dodatkowych języka programowania, pole wyszukiwania zawiera wyniki, które Otwórz Instalator programu Visual Studio do zainstalowania obciążeń lub poszczególnych składników.
+   Program Visual Studio może wydawać się trudne w czasie za pomocą menu tak wiele, opcje i właściwości. Pole wyszukiwania to doskonały sposób na szybkie znajdowanie potrzebnych informacji w programie Visual Studio. Po uruchomieniu, wpisując nazwę coś, czego szukasz, program Visual Studio wyświetla wyniki, które przyjmują dokładnie miejscu należy przejść. Aby dodać funkcję do programu Visual Studio, na przykład w celu dodania obsługi dodatkowego języka programowania, w polu wyszukiwania znajdują się wyniki otwierające Instalator programu Visual Studio w celu zainstalowania obciążenia lub pojedynczego składnika.
 
    > [!TIP]
    > Naciśnij klawisz **Ctrl**+**Q** jako skrót do pola wyszukiwania.
 
    ::: moniker range="vs-2017"
 
-   ![Szybkie uruchamianie pola wyszukiwania w programie Visual Studio 2017](../media/quick-launch-nuget.png)
+   ![Pole wyszukiwania szybkiego uruchamiania w programie Visual Studio 2017](../media/quick-launch-nuget.png)
 
-   Aby uzyskać więcej informacji, zobacz [Szybkie uruchamianie](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+   Aby uzyskać więcej informacji, zobacz [Szybki Start](../../ide/reference/quick-launch-environment-options-dialog-box.md).
 
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Pole wyszukiwania w programie Visual Studio 2019 r.](../media/vs-2019/quick-launch-nuget.png)
+   ![Pole wyszukiwania w programie Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 
-- [Udostępnianie na żywo](/visualstudio/liveshare/)
+- [Live Share](/visualstudio/liveshare/)
 
-   Zespołowe przeprowadzanie edytowania i debugowania z innymi osobami w czasie rzeczywistym, niezależnie od tego, jakie usługi typu aplikacji lub języka programowania. Szybko i bezpiecznie Udostępnij swój projekt, a następnie zgodnie z potrzebami, w sesji debugowania terminalu przypadkach localhost sieci web, aplikacje, połączenia głosowe i inne.
+   Współpracuj z innymi osobami w czasie rzeczywistym, niezależnie od typu aplikacji lub języka programowania. Możesz natychmiast i bezpiecznie udostępnić projekt oraz, w razie konieczności, debugowanie sesji, wystąpienia terminala, aplikacje sieci Web, połączenia głosowe i inne.
 
 - [Hierarchia wywołań](../../ide/reference/call-hierarchy.md)
 
@@ -142,23 +142,23 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
 ## <a name="install-the-visual-studio-ide"></a>Zainstaluj program Visual Studio IDE
 
-W tej sekcji utworzysz prosty projekt, aby wypróbować kilka rzeczy, które można wykonać za pomocą programu Visual Studio. Użyjesz [IntelliSense](../../ide/using-intellisense.md) jak kodowanie pomocy, debugować aplikację, aby wyświetlić wartość zmiennej podczas wykonywania programu i Zmień motyw kolorów.
+W tej sekcji utworzysz prosty projekt, aby wypróbować niektóre elementy, które można wykonać za pomocą programu Visual Studio. Użyjesz funkcji [IntelliSense](../../ide/using-intellisense.md) jako pomocy dotyczącej kodowania, Debuguj aplikację, aby wyświetlić wartość zmiennej podczas wykonywania programu, i Zmień motyw kolorów.
 
 ::: moniker range="vs-2017"
 
-Aby rozpocząć pracę, [Pobierz program Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) i zainstaluj go na system. Instalator modułowej umożliwia wybierz i zainstaluj *obciążeń*, służą do grup funkcje potrzebne do programowania języka lub platformy, użytkownik sobie tego życzy. Wykonaj kroki dla [tworzenie programu](#create-a-program), pamiętaj o wybraniu **programowanie dla wielu platform .NET Core** obciążenie podczas instalacji.
+Aby rozpocząć, [Pobierz program Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) i zainstaluj go w systemie. Instalator modułowej umożliwia wybierz i zainstaluj *obciążeń*, służą do grup funkcje potrzebne do programowania języka lub platformy, użytkownik sobie tego życzy. Wykonaj kroki dla [tworzenie programu](#create-a-program), pamiętaj o wybraniu **programowanie dla wielu platform .NET Core** obciążenie podczas instalacji.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Aby rozpocząć pracę, [Pobierz program Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) i zainstaluj go na system. Instalator modułowej umożliwia wybierz i zainstaluj *obciążeń*, służą do grup funkcje potrzebne do programowania języka lub platformy, użytkownik sobie tego życzy. Wykonaj kroki dla [tworzenie programu](#create-a-program), pamiętaj o wybraniu **programowanie dla wielu platform .NET Core** obciążenie podczas instalacji.
+Aby rozpocząć, [Pobierz program Visual Studio](https://visualstudio.microsoft.com/downloads) i zainstaluj go w systemie. Instalator modułowej umożliwia wybierz i zainstaluj *obciążeń*, służą do grup funkcje potrzebne do programowania języka lub platformy, użytkownik sobie tego życzy. Wykonaj kroki dla [tworzenie programu](#create-a-program), pamiętaj o wybraniu **programowanie dla wielu platform .NET Core** obciążenie podczas instalacji.
 
 ::: moniker-end
 
 ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../media/dotnet-core-cross-platform-workload.png)
 
-Po otwarciu programu Visual Studio po raz pierwszy, można opcjonalnie [Zaloguj](../../ide/signing-in-to-visual-studio.md) przy użyciu swojego konta Microsoft albo konta służbowego lub szkolnego.
+Po otwarciu programu Visual Studio po raz pierwszy możesz [zalogować się](../../ide/signing-in-to-visual-studio.md) przy użyciu konto Microsoft lub konta służbowego.
 
 ## <a name="create-a-program"></a>Utwórz program
 
@@ -168,13 +168,13 @@ Przyjrzyjmy się temu bliżej i Utwórz prosty program.
 
 1. Otwórz program Visual Studio.
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
+1. Na pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
 
    ![Plik > Nowy projekt na pasku menu](../media/file-new-project-menu.png)
 
    **Nowy projekt** okno dialogowe zawiera kilka projektu *szablony*. Szablon zawiera podstawowe pliki i ustawienia wymagane dla typu danego projektu.
 
-1. Wybierz **platformy .NET Core** kategorii szablonu w ramach **Visual C#** , a następnie wybierz **Aplikacja konsoli (.NET Core)** szablonu. W **nazwa** polu tekstowym **HelloWorld**, a następnie wybierz pozycję **OK** przycisku.
+1. Wybierz kategorię szablon **.NET Core** w obszarze **Wizualizacja C#** , a następnie wybierz szablon **Aplikacja konsolowa (.NET Core)** . W **nazwa** polu tekstowym **HelloWorld**, a następnie wybierz pozycję **OK** przycisku.
 
    ![Szablon aplikacji .NET core](../media/overview-new-project-dialog.png)
 
@@ -218,7 +218,7 @@ Przyjrzyjmy się temu bliżej i Utwórz prosty program.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Ponownie uruchom aplikację, wybierając **debugowania** > **Rozpocznij bez debugowania** lub naciskając **Ctrl**+**F5**.
+1. Uruchom aplikację ponownie, wybierając pozycję **Debuguj** > **Uruchom bez debugowania** lub naciskając klawisz **Ctrl**+**F5**.
 
    Program Visual Studio ponownie kompiluje aplikację, a okno konsoli otworzy i wyświetli monit o podanie nazwy.
 
@@ -234,21 +234,21 @@ Przyjrzyjmy się temu bliżej i Utwórz prosty program.
 
 1. Otwórz program Visual Studio.
 
-   W oknie uruchamiania pojawia się z różnymi opcjami klonowanie repozytorium, otwieranie projektu zawierającego najnowsze lub tworzenia nowego projektu.
+   Zostanie wyświetlone okno uruchamiania z różnymi opcjami klonowania repozytorium, otwarciem ostatniego projektu lub utworzeniem nowego projektu.
 
-1. Wybierz **Utwórz nowy projekt**.
+1. Wybierz pozycję **Utwórz nowy projekt**.
 
-   ![Okno uruchamiania w usłudze Visual Studio Utwórz nowy projekt](../media/vs-2019/start-window-create-new-project.png)
+   ![Okno uruchamiania programu Visual Studio — Tworzenie nowego projektu](../media/vs-2019/start-window-create-new-project.png)
 
-   **Utwórz nowy projekt** okna otwiera i pokazuje kilka projektów *szablony*. Szablon zawiera podstawowe pliki i ustawienia wymagane dla typu danego projektu.
+   Zostanie otwarte okno **Utwórz nowy projekt** zawierające kilka *szablonów*projektów. Szablon zawiera podstawowe pliki i ustawienia wymagane dla typu danego projektu.
 
-1. Aby znaleźć szablonu firma Microsoft, wpisz lub wprowadź **konsolowa .net core** w polu wyszukiwania. Lista dostępnych szablonów jest automatycznie filtrowany według słów kluczowych, wprowadzony. Rezultaty szablonu można dalej filtrować, wybierając **C#** z **języka** listy rozwijanej. Wybierz **Aplikacja konsoli (.NET Core)** szablonu, a następnie wybierz **dalej**.
+1. Aby znaleźć żądany szablon, wpisz lub wprowadź w polu wyszukiwania **konsolę .NET Core** . Lista dostępnych szablonów jest automatycznie filtrowana na podstawie wprowadzonych słów kluczowych. Można bardziej filtrować wyniki szablonu, wybierając **C#** z listy rozwijanej **Język** . Wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
 
-    ![Utwórz nowy projekt w programie Visual Studio](../media/vs-2019/create-new-project.png)
+    ![Tworzenie nowego projektu w programie Visual Studio](../media/vs-2019/create-new-project.png)
 
-1. W **konfigurowania nowego projektu** oknie wprowadź **HelloWorld** w **Nazwa projektu** opcjonalnie Zmień lokalizację plików projektu, a następnie Wybierz **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wprowadź **HelloWorld** w polu **Nazwa projektu** , opcjonalnie Zmień lokalizację katalogu dla plików projektu, a następnie wybierz pozycję **Utwórz**.
 
-   ![Skonfiguruj nowy projekt w programie Visual Studio](../media/vs-2019/configure-new-project.png)
+   ![Konfigurowanie nowego projektu w programie Visual Studio](../media/vs-2019/configure-new-project.png)
 
    Program Visual Studio tworzy projekt. Jest prostą aplikację "Hello World", która wywołuje <xref:System.Console.WriteLine?displayProperty=nameWithType> metodę w celu wyświetlenia literału ciągu "Hello World!" w oknie konsoli (dane wyjściowe programu).
 
@@ -287,7 +287,7 @@ Przyjrzyjmy się temu bliżej i Utwórz prosty program.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Ponownie uruchom aplikację, wybierając **debugowania** > **Rozpocznij bez debugowania** lub naciskając **Ctrl**+**F5**.
+1. Uruchom aplikację ponownie, wybierając pozycję **Debuguj** > **Uruchom bez debugowania** lub naciskając klawisz **Ctrl**+**F5**.
 
    Program Visual Studio ponownie kompiluje aplikację, a okno konsoli otworzy i wyświetli monit o podanie nazwy.
 
@@ -333,15 +333,15 @@ Po pierwsze możemy zmienić nazwę `name` zmiennej:
 
 ::: moniker-end
 
-4. Teraz Przyjrzyjmy się w technologii IntelliSense. Poniżej wiersza, który jest wyświetlany komunikat `Console.WriteLine($"\nHello {username}!");`, typ `DateTime now = DateTime.`.
+4. Teraz Przyjrzyjmy się w technologii IntelliSense. Poniżej wiersza o treści `Console.WriteLine($"\nHello {username}!");`wpisz. `DateTime now = DateTime.`
 
    Wyświetlone elementy członkowskie <xref:System.DateTime> klasy. Ponadto opis aktualnie zaznaczonego elementu członkowskiego, wyświetla się w osobnym oknie.
 
    ![Funkcja IntelliSense członków listy w programie Visual Studio](../media/intellisense-list-members.png)
 
-5. Wybierz element członkowski o nazwie **teraz**, który jest właściwością klasy, klikając je dwukrotnie lub naciskając **kartę**. Wykonaj w wierszu kodu, dodając je średnikiem na końcu.
+5. Wybierz element członkowski o nazwie **teraz**, który jest właściwością klasy, klikając je dwukrotnie lub naciskając **kartę**. Wypełnij wiersz kodu, dodając średnik do końca.
 
-6. Poniżej wpisz lub wklej następujące wiersze kodu:
+6. Poniżej wpisz lub Wklej następujące wiersze kodu:
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -357,7 +357,7 @@ Po pierwsze możemy zmienić nazwę `name` zmiennej:
 
    Należy zauważyć, że mała ikona śrubokręt pojawia się na marginesie w danym wierszu.
 
-8. Kliknij ikonę śrubokręt, aby zobaczyć, jakie sugestie dotyczące programu Visual Studio jest dostępny. W tym przypadku jest wyświetlane [wstawiona zmienna tymczasowa](../../ide/reference/inline-temporary-variable.md) refaktoryzacji, aby usunąć wiersz kodu bez wprowadzania zmian w ogólnym zachowaniom kodu:
+8. Kliknij ikonę śrubokręt, aby zobaczyć, jakie sugestie dotyczące programu Visual Studio jest dostępny. W tym przypadku jest wyświetlana [wbudowana zmienna tymczasowa](../../ide/reference/inline-temporary-variable.md) Refaktoryzacja w celu usunięcia wiersza kodu bez zmiany ogólnego zachowania kodu:
 
    ![Wbudowane tymczasowej zmiennej Refaktoryzacja w programie Visual Studio](../media/inline-temporary-variable-refactoring.png)
 
@@ -395,7 +395,7 @@ Teraz Ustaw punkt przerwania, aby zobaczyć wartość `username` zmiennej, podcz
 
 1. W oknie konsoli zostanie wyświetlony i poprosi o podanie nazwy użytkownika, wpisz go w i naciśnij klawisz **Enter**.
 
-   Powrót do edytora kodu programu Visual Studio oraz wiersza kodu, punkt przerwania jest wyróżniony na żółto. Oznacza to, że jest następnego wiersza kodu, które spowodują wykonanie programu.
+   Fokus wraca do edytora kodu programu Visual Studio, a wiersz kodu z punktem przerwania zostanie wyróżniony kolorem żółtym. Oznacza to, że jest następnego wiersza kodu, które spowodują wykonanie programu.
 
 1. Umieść kursor myszy nad `username` zmiennej, aby zobaczyć jej wartość. Alternatywnie możesz kliknąć prawym przyciskiem myszy na `username` i wybierz **Dodaj czujkę** można dodać zmienną **Obejrzyj** okna, w którym widać również jego wartość.
 
@@ -413,7 +413,7 @@ Możesz dostosować interfejsu użytkownika programu Visual Studio, w tym zmiany
 
 ::: moniker range="vs-2017"
 
-2. Na **środowiska** > **ogólne** Strona opcji, zmień **motyw kolorów** wyboru, aby **ciemny**, a następnie wybierz pozycję **OK**.
+2. Na stronie **Ogólne** opcje **środowiska** > Zmień wybór motywu **koloru** na ciemny, a następnie wybierz przycisk **OK**.
 
    Motyw kolorów dla całej IDE zmieni się na **ciemny**.
 
@@ -423,7 +423,7 @@ Możesz dostosować interfejsu użytkownika programu Visual Studio, w tym zmiany
 
 ::: moniker range=">=vs-2019"
 
-2. Na **środowiska** > **ogólne** Strona opcji, zmień **motyw kolorów** wyboru, aby **ciemny**, a następnie wybierz pozycję **OK**.
+2. Na stronie **Ogólne** opcje **środowiska** > Zmień wybór motywu **koloru** na ciemny, a następnie wybierz przycisk **OK**.
 
    Motyw kolorów dla całej IDE zmieni się na **ciemny**.
 

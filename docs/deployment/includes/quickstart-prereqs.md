@@ -1,30 +1,30 @@
 ---
-ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 034d4c1e528ff33343b6da1dab3a2de96a0228fc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143617"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197168"
 ---
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) zainstalowane odpowiednie obciążeń dla wybranego języka:
-  * ASP.NET: **ASP.NET i tworzenie aplikacji internetowych**
+* [Program Visual Studio 2019](https://visualstudio.microsoft.com/downloads) został zainstalowany z odpowiednimi obciążeniami dla wybranego języka:
+  * ASP.NET: **ASP.NET i programowanie dla sieci Web**
   * Python: **Programowanie w języku Python**
-  * Node.js: **Tworzenia aplikacji node.js**
+  * Node.js: **Programowanie w programie Node. js**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) zainstalowane odpowiednie obciążeń dla wybranego języka:
-  * ASP.NET: **ASP.NET i tworzenie aplikacji internetowych**
+* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) został zainstalowany z odpowiednimi obciążeniami dla wybranego języka:
+  * ASP.NET: **ASP.NET i programowanie dla sieci Web**
   * Python: **Programowanie w języku Python**
-  * Node.js: **Tworzenia aplikacji node.js**
+  * Node.js: **Programowanie w programie Node. js**
 ::: moniker-end
 
-* Projekt programu ASP.NET, ASP.NET Core, Python lub Node.js. Jeśli nie masz jeszcze projektu, wybierz opcję poniżej:
-  * ASP.NET Core: Postępuj zgodnie z [Szybki Start: Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core przy użyciu programu Visual Studio](../../ide/quickstart-aspnet-core.md), lub użyj **pliku** > **nowy projekt**, wybierz opcję **Visual C#**   >  **Platformy .NET core**, a następnie wybierz **aplikacji sieci Web programu ASP.NET Core**. Po wyświetleniu monitu wybierz **aplikacji sieci Web (Model-View-Controller)** szablonu, upewnij się, że **bez uwierzytelniania** jest wybrany, a następnie wybierz **OK**.
-  * Python: Postępuj zgodnie z [Szybki Start: Tworzenie pierwszej aplikacji sieci web języka Python za pomocą programu Visual Studio](../../ide/quickstart-python.md), lub użyj **pliku** > **nowy projekt**, wybierz opcję **Python**, następnie wybierz pozycję **Projektu sieci Web Flask**.
-  * Node.js: Postępuj zgodnie z [Szybki Start: Tworzenie pierwszej aplikacji Node.js przy użyciu programu Visual Studio](../../ide/quickstart-nodejs.md), lub użyj **pliku** > **nowy projekt**, wybierz opcję **JavaScript**, następnie wybierz pozycję **Pusta aplikacja internetowa Node.js**.
+* Projekt ASP.NET, ASP.NET Core, Python lub Node. js. Jeśli nie masz jeszcze projektu, wybierz opcję poniżej:
+  * ASP.NET Core: Skorzystaj [z przewodnika Szybki Start: Użyj programu Visual Studio, aby utworzyć pierwszą](../../ide/quickstart-aspnet-core.md)aplikację sieci Web ASP.NET Core, lub Użyj **pliku** > **Nowy projekt**, wybierz pozycję **Visual C#**   > .NET Core, a następnie wybierz pozycję **ASP.NET Core aplikacji sieci Web.** . Po wyświetleniu monitu wybierz szablon **aplikacja sieci Web (Model-View-Controller)** , upewnij się, że **nie** wybrano opcji uwierzytelnianie, a następnie wybierz przycisk **OK**.
+  * Python: Skorzystaj [z przewodnika Szybki Start: Utwórz pierwszą aplikację sieci Web w języku Python przy](../../ide/quickstart-python.md)użyciu programu Visual Studio lub użyj opcji **plik** > **Nowy projekt**, wybierz język **Python**, a następnie wybierz pozycję przeciągnij **Projekt sieci Web**.
+  * Node.js: Skorzystaj [z przewodnika Szybki Start: Użyj programu Visual Studio, aby utworzyć pierwszą](../../ide/quickstart-nodejs.md)aplikację Node. js, lub użyj opcji **plik** > **Nowy projekt**, wybierz **JavaScript**, a następnie wybierz pustą **aplikację sieci Web Node. js**.
 
-* Upewnij się, że tworzysz projekt za pomocą **kompilacji > Kompiluj rozwiązanie** polecenia menu, przed wykonaniem procedury wdrażania.
+* Przed wykonaniem kroków wdrażania należy się upewnić, że projekt został skompilowany przy użyciu polecenia **kompiluj > Kompiluj rozwiązanie** .
