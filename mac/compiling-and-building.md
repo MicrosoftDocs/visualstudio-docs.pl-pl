@@ -4,24 +4,39 @@ description: W tym artykule opisano sposób kompilowania i kompilowania projekt�
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 08/29/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: cbf012045145a234f96ac0cd9cdf26565a3a0a64
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 666027835699763dd42139b0b3b20e55fe250892
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108060"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222717"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilowanie i kompilowanie w Visual Studio dla komputerów Mac
 
-Visual Studio dla komputerów Mac może służyć do kompilowania aplikacji i tworzenia zestawów podczas opracowywania projektu. Ważne jest, aby kompilować i kompilować swój kod wczesnie i często, aby można było identyfikować niezgodności typów i inne błędy czasu kompilacji.
+Visual Studio dla komputerów Mac może służyć do kompilowania aplikacji i tworzenia zestawów podczas opracowywania projektu. Ważne jest, aby kompilować swój kod często, aby umożliwić szybkie identyfikowanie niezgodności typów, błędnej składni, błędnie napisanego słowa kluczowego i innych błędów w czasie kompilacji. Dzięki skompilowaniu debugowania można także znajdować i naprawiać błędy czasu wykonywania, takie jak logika, we/wy i błędy dzielenia przez zero.
+
+Pomyślne kompilacje oznacza, że kod źródłowy zawiera poprawną składnię i wszystkie statyczne odwołania do bibliotek, zestawów i innych składników mogą zostać rozpoznane. Proces kompilacji tworzy plik wykonywalny aplikacji. Ten plik wykonywalny może zostać następnie przetestowany przez debugowanie i różne rodzaje testów ręcznych i zautomatyzowanych w celu sprawdzenia jakości kodu. Po pełnym przetestowaniu aplikacji możesz skompilować wersję wydania, aby wdrożyć ją dla klientów.
+
+Na komputerze Mac możesz użyć dowolnej z następujących metod, aby skompilować aplikację: Visual Studio dla komputerów Mac, narzędzia wiersza polecenia programu MSBuild lub Azure Pipelines.
+
+| Metoda kompilacji | Zalety |
+| --- |--- | --- |
+| Visual Studio for Mac |-Kompilacji od razu utworzyć i Testuj je w debugerze.<br />— Uruchom kompilacje wieloprocesorowe C# dla projektów.<br />— Dostosowywanie różne aspekty systemu kompilacji. |
+| Wiersz polecenia programu MSBuild| -Kompiluj projekty bez instalowania Visual Studio dla komputerów Mac.<br />-Tworzy wykonywania wielu procesorach dla wszystkich typów projektów.<br />-Dostosować większość obszarów systemu kompilacji.|
+| Potoki usługi Azure | — Automatyzowanie procesu kompilacji w ramach potoku ciągłej integracji/ciągłego dostarczania.<br />-Zastosować testy automatyczne z każdą kompilacją.<br />-Zatrudniać praktycznie nieograniczona liczba zasobów w chmurze dla procesów kompilacji.<br />-Modyfikować przepływ kompilacji oraz tworzyć aktywności kompilacji, aby wykonywać zadania wysoce niestandardowe.|
+
+Dokumentacja w tej sekcji przechodzi w stan więcej szczegółowych informacji z procesu kompilacji oparte na środowisku IDE. Aby uzyskać więcej informacji na temat tworzenia aplikacji za pomocą wiersza polecenia, zobacz [MSBuild](/visualstudio/msbuild/msbuild). Aby uzyskać szczegółowe informacje na temat tworzenia aplikacji z Azure Pipelines, zobacz [Azure Pipelines](/azure/devops/pipelines).
+
+
+> [!NOTE]
+> Ten temat ma zastosowanie do Visual Studio dla komputerów Mac. W przypadku programu Visual Studio w systemie Windows, zobacz [Kompilowanie i kompilowanie w programie Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).
+
 
 ## <a name="building-from-the-ide"></a>Kompilacja z IDE
 
-Za pomocą Visual Studio dla komputerów Mac można szybko tworzyć i uruchamiać kompilacje, jednocześnie zapewniając kontrolę nad funkcjami kompilacji. Visual Studio dla komputerów Mac używa programu MSBuild jako bazowego systemu kompilacji.
-
-Wszystkie projekty i rozwiązania utworzone w środowisku IDE będą miały domyślną konfigurację kompilacji, która definiuje kontekst dla kompilacji. Te konfiguracje można edytować lub można utworzyć własne. Utworzenie lub zmodyfikowanie tych konfiguracji spowoduje automatyczne zaktualizowanie pliku projektu, który następnie jest używany przez program MSBuild do kompilowania projektu.
+Visual Studio dla komputerów Mac umożliwia natychmiastowe tworzenie i uruchamianie kompilacji, a jednocześnie zapewnia kontrolę nad funkcjami kompilacji. Podczas tworzenia projektu, Visual Studio dla komputerów Mac definiuje domyślną konfigurację kompilacji, która ustawia kontekst dla kompilacji. Można edytować domyślne konfiguracje kompilacji, a także utworzyć własne. Utworzenie lub zmodyfikowanie tych konfiguracji spowoduje automatyczne zaktualizowanie pliku projektu, który następnie jest używany przez program MSBuild do kompilowania projektu.
 
 Aby uzyskać więcej informacji na temat sposobu kompilowania projektów i rozwiązań w środowisku IDE, zobacz Przewodnik [tworzenia i czyszczenia projektów i rozwiązań](building-and-cleaning-projects-and-solutions.md) .
 
@@ -39,16 +54,6 @@ Visual Studio dla komputerów Mac można również użyć do wykonania następuj
 
     ![Dodawanie poleceń niestandardowych](media/compiling-and-building-image6.png)
 
-## <a name="building-from-command-line"></a>Kompilowanie z wiersza polecenia
-
-Możesz użyć aparatu kompilacji MSBuild do kompilowania aplikacji za pomocą wiersza polecenia.
-
-Aby uzyskać więcej informacji na temat korzystania z programu MSBuild, zobacz zawartość programu [MSBuild](/visualstudio/msbuild/msbuild) .
-
-## <a name="building-from-azure-pipelines"></a>Kompilowanie z Azure Pipelines
-
-* [Kompilowanie aplikacji platformy Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
-* [Ciągła integracja z platformą Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)
 
 ## <a name="see-also"></a>Zobacz także
 

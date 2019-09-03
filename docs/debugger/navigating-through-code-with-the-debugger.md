@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905849"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222652"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Nawigowanie po kodzie za pomocą debugera programu Visual Studio
 
-Debuger programu Visual Studio może pomóc w nawigowaniu po kodzie, aby sprawdzić stan aplikacji i wyświetlić jego przepływ wykonania. Skróty klawiaturowe, poleceń debugowania, punkty przerwania i inne funkcje umożliwia szybki dostęp do kodu, który chcesz zbadać. Znajomość poleceń nawigacji debugera i skróty umożliwia szybsze i łatwiejsze do znajdowania i rozwiązywania problemów z aplikacjami.  Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) i [debugowania, narzędzia i techniki](../debugger/write-better-code-with-visual-studio.md) przed przejściem w tym artykule.
+Debuger programu Visual Studio może pomóc w nawigowaniu po kodzie, aby sprawdzić stan aplikacji i wyświetlić jego przepływ wykonania. Skróty klawiaturowe, poleceń debugowania, punkty przerwania i inne funkcje umożliwia szybki dostęp do kodu, który chcesz zbadać. Znajomość poleceń nawigacji debugera i skróty umożliwia szybsze i łatwiejsze do znajdowania i rozwiązywania problemów z aplikacjami.  Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla](../debugger/debugging-absolute-beginners.md) bezwzględnych [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
 
 ## <a name="basic-debugging"></a>Debugowanie podstawowe
 
@@ -40,7 +40,7 @@ Najbardziej debugera, takie jak **modułów** i **Obejrzyj** systemu windows, s�
 
 W trybie przerwania wykonanie aplikacji jest wstrzymana podczas funkcje, zmienne i obiekty pozostają w pamięci. Można sprawdzić pozycje elementów i Stany, aby szukać naruszeń lub błędów. W przypadku niektórych typów projektu może również wprowadzać zmiany do aplikacji w trybie przerwania. Film przedstawiający tych funkcji, zobacz [wprowadzenie do debugera](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
 
-Jeśli przerwiesz w kodzie, który nie ma źródłowych lub symboli (*.pdb*) pliki ładowane, debuger wyświetla **nie znaleziono źródła plików** lub **nie można odnaleźć symboli** strona, która pomoże Ci Znajdź i Załaduj pliki. Zobacz [określanie plików symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Jeśli nie można załadować plików symboli lub źródłowych, nadal możesz debugować instrukcje montażu w **dezasemblacji** okna.
+Jeśli przerwiesz w kodzie, który nie ma źródłowych lub symboli ( *.pdb*) pliki ładowane, debuger wyświetla **nie znaleziono źródła plików** lub **nie można odnaleźć symboli** strona, która pomoże Ci Znajdź i Załaduj pliki. Zobacz [określanie plików symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Jeśli nie można załadować plików symboli lub źródłowych, nadal możesz debugować instrukcje montażu w **dezasemblacji** okna.
 
 Zawsze masz nie można rozpocząć debugowania, uruchamiając aplikację na początku. Można również nacisnąć klawisz **F11** do [kodu krok po kroku](#BKMK_Step_into__over__or_out_of_the_code), naciśnij klawisz **F10** do [Przekrocz nad kodem](#BKMK_Step_over_Step_out), lub [uruchomić do określonej lokalizacji lub Funkcja](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
 
@@ -133,7 +133,7 @@ Gdy wstrzymaniu w debugerze, możesz umieścić kursor instrukcji w kodzie źró
 ![Uruchamianie do kliknięcia](../debugger/media/dbg-run-to-click.png "uruchamianie do kliknięcia")
 
 > [!NOTE]
-> **Uruchamianie do kliknięcia** jest dostępna, począwszy od [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **Polecenie Uruchom do kliknięcia** jest dostępne od [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]początku.
 
 ### <a name="manually-break-into-code"></a>Ręcznie Wejdź do kodu
 
@@ -186,5 +186,5 @@ Aby załadować symbole firmy Microsoft, zobacz [skonfigurować lokalizacje symb
 
 ## <a name="see-also"></a>Zobacz także
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
-- [Narzędzia i techniki DDebugging](../debugger/write-better-code-with-visual-studio.md)
+- [Techniki i narzędzia debugowania](../debugger/write-better-code-with-visual-studio.md)
 - [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md)

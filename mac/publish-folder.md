@@ -1,7 +1,6 @@
 ---
 title: Publikowanie w folderze
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,52 +8,52 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 8bff4b6079818a7e6d4e3500830a036ae6ab28cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e22176d2188df92f0956f88c912d48cb9c954dd9
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937074"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222767"
 ---
-# <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w folderze przy użyciu programu Visual Studio dla komputerów Mac
+# <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w folderze przy użyciu Visual Studio dla komputerów Mac
 
-Narzędzie publikowania do publikowania aplikacji platformy ASP.NET Core w folderze.
+Za pomocą narzędzia do publikowania można publikować aplikacje ASP.NET Core w folderze.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- [Visual Studio 2019 r dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) zainstalowane za pomocą programu ASP.NET Core włączone.
-- Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- [Program Visual Studio 2019 dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) został zainstalowany z włączonym ASP.NET Core.
+- Projekt ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz [utworzyć nowy](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Publikowanie w folderze
 
-Przy użyciu programu Visual Studio dla komputerów Mac możesz opublikować w folderze za pomocą narzędzia publikowania projektów ASP.NET Core. Po opublikowaniu w folderze można przesyłać pliki do serwera sieci web można pobrać go do innego środowiska. Aby opublikować do folderu wykonaj następujące kroki.
+Za pomocą Visual Studio dla komputerów Mac można opublikować projekty ASP.NET Core w folderze za pomocą narzędzia do publikowania. Po opublikowaniu w folderze można przenieść pliki na serwer sieci Web w celu uzyskania ich w innym środowisku. Aby opublikować w folderze, wykonaj następujące kroki.
 
- 1. W konsoli rozwiązania, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**.
+ 1. W okienko rozwiązania kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**.
 
-    ![Menu kontekstowe Opublikuj](media/publish-context-menu.png)
+    ![Menu kontekstowe publikowania](media/publish-context-menu.png)
 
- 2. Jeśli wcześniej zostały opublikowane tego projektu, zobaczysz profil publikowania, w menu. Wybierz ten profil publikowania, aby rozpocząć proces publikowania.
+ 2. Jeśli projekt został wcześniej opublikowany, w menu zostanie wyświetlony profil publikowania. Wybierz ten profil publikowania, aby rozpocząć proces publikowania.
 
- 3. Aby opublikować ten projekt do folderu po raz pierwszy, zaznacz **publikowania do folderu**
+ 3. Aby opublikować ten projekt do folderu po raz pierwszy, wybierz pozycję **Opublikuj do folderu**
 
-    ![Publikowanie w menu kontekstowym folderu](media/publish-to-folder-context-menu.png)
+    ![Menu kontekstowe publikowania w folderze](media/publish-to-folder-context-menu.png)
 
- 4. **Publikowania do folderu** zostanie wyświetlone okno dialogowe. W tym oknie dialogowym możesz dostosować folder, w którym projekt zostanie opublikowany. Możesz użyć **Przeglądaj** przycisk, aby to zrobić, lub Wklej w ścieżce.
+ 4. Zostanie wyświetlone okno dialogowe **Publikowanie do folderu** . W tym oknie dialogowym można dostosować folder, w którym projekt zostanie opublikowany. Możesz użyć przycisku **Przeglądaj** , aby to zrobić, lub wkleić ścieżkę.
 
- 5. Po kliknięciu przycisku **Publikuj** dziać kilka rzeczy. Najpierw tworzony jest profil publikowania. Profil publikowania jest plikiem programu MSBuild, który jest importowany do projektu w procesie publikowania. Zawiera właściwości, które są używane w procesie publikowania. Te pliki są przechowywane w `Properties/PublishProfiles` i mają rozszerzenie `.pubxml`. Następnie proces publikowania jest uruchomiona. Postęp można monitorować, obserwując na pasku stanu w programie Visual Studio dla komputerów Mac.
+ 5. Po kliknięciu przycisku **Publikuj** kilka rzeczy. Pierwszy tworzony jest profil publikowania. Profil publikowania to plik programu MSBuild, który jest importowany do projektu podczas procesu publikowania. Zawiera właściwości, które są używane podczas procesu publikowania. Te pliki są przechowywane w `Properties/PublishProfiles` i mają rozszerzenie. `.pubxml` Następnie proces publikowania zostanie uruchomiony. Postęp można monitorować, obserwując pasek stanu w Visual Studio dla komputerów Mac.
 
-    ![Pasek stanu IDE ze stanu publikowania](media/publish-to-folder-status-bar.png)
+    ![Pasek stanu IDE ze stanem publikowania](media/publish-to-folder-status-bar.png)
 
- 6. Po pomyślnym zakończeniu publikowania do folderu publikowania zostanie otwarte okno wyszukiwania. Teraz, gdy został utworzony profil publikowania, pojawi się w menu kontekstowym publikowania.
+ 6. Po pomyślnym opublikowaniu zostanie otwarte okno wyszukiwania do folderu publikowanie. Teraz, gdy profil publikacji został utworzony, będzie wyświetlany w menu kontekstowym publikowania.
 
-    ![Menu kontekstowe folderu profilu publikowania](media/publish-context-menu-with-folder-profile.png)
+    ![Opublikuj menu kontekstowe z profilem folderu](media/publish-context-menu-with-folder-profile.png)
 
- 7. Aby opublikować projekt ponownie, używając tych samych ustawień możesz kliknąć profil publikowania menu kontekstowego.
+ 7. Aby ponownie opublikować projekt przy użyciu tych samych ustawień, możesz kliknąć profil w menu kontekstowym publikowania.
 
 ## <a name="customize-publish-options"></a>Dostosuj opcje publikowania
 
-Aby zmienić nazwę profilu publikowania (który jest wyświetlany w menu kontekstowym publikowania), Zmień nazwę pliku profilu publikowania. Upewnij się, że nie Zmień rozszerzenie nazwy pliku (`.puxbml`).
+Aby zmienić nazwę profilu publikacji (która jest wyświetlana w menu kontekstowym publikowania), Zmień nazwę pliku profilu publikacji. Upewnij się, że nie zmieniono rozszerzenia pliku (`.puxbml`).
 
-Aby zmienić ścieżkę folderu publikowania, Otwórz profil publikowania, a następnie Edytuj `publishUrl` wartość.
+Aby zmienić ścieżkę folderu publikowania, Otwórz profil publikowania i edytuj `publishUrl` wartość.
 
-Aby zmienić konfigurację kompilacji, który jest używany, należy zmienić `LastUsedBuildConfiguration` właściwości w profilu publikowania.
+Aby zmienić konfigurację kompilacji, która jest używana, Zmień `LastUsedBuildConfiguration` właściwość w profilu publikowania.

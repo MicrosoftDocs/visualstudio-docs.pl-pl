@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924075"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222693"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
 
@@ -108,7 +108,7 @@ Wartość tekstowa jest wymagana. Ten tekst Określa kod wraz z literałami i ob
 
 Dla elementu Code dostępne są trzy atrybuty:
 
--  - Atrybut _ dla języka, który określa język fragmentu kodu. Może to być jedna z następujących wartości:
+-  - Atrybut_wymagany_ dla języka, który określa język fragmentu kodu. Może to być jedna z następujących wartości:
 
    |Wartość|Opis|
    |-----|-----------|
@@ -121,7 +121,7 @@ Dla elementu Code dostępne są trzy atrybuty:
    |`SQL`|Identyfikuje fragment kodu języka SQL.|
    |`HTML`|Identyfikuje fragment kodu języka HTML.|
 
-- Określ opcjonalny atrybut, który określa rodzaj kodu, który zawiera fragment, i lokalizację, w której należy wstawić fragment kodu do skompilowania fragmentu kodu.  -  Może to być jedna z następujących wartości:
+- Określ opcjonalny atrybut, który określa rodzaj kodu, który zawiera fragment.  -  Może to być jedna z następujących wartości:
 
    |Wartość|Opis|
    |-----|-----------|
@@ -131,7 +131,7 @@ Dla elementu Code dostępne są trzy atrybuty:
    |`file`|Określa, że fragment jest kompletnym plikiem kodu. Takie fragmenty kodu można wstawiać autonomicznie do pliku kodu albo do przestrzeni nazw.|
    |`any`|Określa, że fragment można wstawić w dowolnym miejscu. Ten tag jest używany we fragmentach kodu niezależnych od kontekstu, takich jak komentarze.|
 
--  -  _ atrybut ogranicznika, który określa ogranicznik używany do opisywania literałów i obiektów w kodzie. Domyślnie ogranicznik jest `$`.
+-  - _Opcjonalny_ atrybut ogranicznika, który określa ogranicznik używany do opisywania literałów i obiektów w kodzie. Domyślnie ogranicznik jest `$`.
 
 ### <a name="parent-element"></a>Element nadrzędny
 
@@ -632,7 +632,7 @@ Określa typ obiektu. `Object` Element jest używany do identyfikowania elementu
 | - |-----------------|
 |[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Definiuje pola obiektów fragmentu kodu, które można edytować.|
 
-Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Przykład:
+Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Na przykład:
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>

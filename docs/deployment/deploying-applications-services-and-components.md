@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533357"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222615"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
@@ -96,6 +96,13 @@ W programie Visual Studio można tworzyć pakiety aplikacji do wdrożenia w Micr
 - **Pulpit systemu Windows**: Program można wdrożyć do Microsoft Store za pomocą mostka programu Desktop rozpoczynającego się w programie Visual Studio 2017 w wersji 15,4. Aby to zrobić, Zacznij od utworzenia projektu pakietu aplikacji systemu Windows. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji klasycznych dla Microsoft Store (mostek Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Mostek Desktop](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>Wdróż pakiety .NET na NuGet.org
+
+Aby wdrożyć powiązany kod w "pakietach" zawierających skompilowany kod (jako biblioteki dll) wraz z inną zawartością wymaganą w projektach, które używają tych pakietów, możesz użyć programu Visual Studio do utworzenia pakietu NuGet i narzędzia interfejsu wiersza polecenia, aby wydać końcowe polecenie wdrożenia.
+
+- [Tworzenie i publikowanie pakietu .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Tworzenie i publikowanie pakietu .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Wdrażanie na urządzeniu (platformy UWP)
 
