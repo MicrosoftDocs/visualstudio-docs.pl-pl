@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fc0ab18fea11b2dd4478538a095762fee75d35
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 22b48cdb80f34a4bbf57626b9ffe6e4d753e5a55
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180371"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293679"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizowanie programu Visual Studio do najnowszej wersji
 
@@ -30,7 +30,7 @@ ms.locfileid: "70180371"
 
 Zachęcamy do aktualizacji do najnowszej [wersji](/visualstudio/releasenotes/vs2017-relnotes/) programu Visual Studio 2017, aby zawsze uzyskać najnowsze funkcje, poprawki i ulepszenia.
 
-Jeśli chcesz wypróbować naszą najnowszą wersję, rozważ pobranie i zainstalowanie [programu Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) .
+Jeśli chcesz wypróbować naszą najnowszą wersję, rozważ pobranie i zainstalowanie [programu Visual Studio 2019](https://visualstudio.microsoft.com/downloads) .
 
 > [!IMPORTANT]
 > Musisz zalogować się za pomocą konta mającego uprawnienia administracyjne, aby zainstalować, zaktualizować lub zmodyfikuj program Visual Studio. Aby uzyskać więcej informacji, zobacz [uprawnienia użytkownika i program Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -186,7 +186,7 @@ Oto jak zaktualizować program Visual&nbsp;Studio&nbsp;2019.
 
 1. W instalatorze zapoznaj się z zainstalowaną wersją programu Visual Studio.
 
-   Na przykład jeśli wcześniej zainstalowano program&nbsp;Visual Studio&nbsp;Community 2019 i jest dla niego **dostępna** aktualizacja, w instalatorze zostanie wyświetlony komunikat z aktualizacją.
+   Na przykład jeśli wcześniej zainstalowano program&nbsp;Visual Studio&nbsp;Community 2019 i jest dla niego dostępna aktualizacja, w instalatorze zostanie wyświetlony komunikat z **aktualizacją** .
 
      ![Wybierz wersję programu Visual Studio 2019, którą chcesz zaktualizować](media/vs-2019/vs-installer-update-visual-studio-community.png "Wybierz wersję programu Visual Studio 2019, którą chcesz zaktualizować")
 

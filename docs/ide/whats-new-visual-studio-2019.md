@@ -15,19 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918788"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293716"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
 **Zaktualizowano w [wersji 16,2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Pobierz program Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Pobierz program Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 W programie Visual Studio 2019 uzyskasz najlepsze w swojej klasie narzędzia i usługi dla każdego dewelopera, każdej aplikacji i dowolnej platformy. Bez względu na to, czy korzystasz z programu Visual Studio po raz pierwszy, czy korzystasz z niego przez kilka lat, w tej nowej wersji możesz użyć dużej ilości danych.
 
@@ -136,7 +136,7 @@ I w programie Visual Studio 2019 ta usługa jest instalowana domyślnie.
 
 ![Animacja pokazująca funkcję współpracy Live Share w programie Visual Studio 2019](media/vs-2019/live-share.gif)
 
-Aby uzyskać więcej informacji, zobacz [Visual Studio Live Share do przeglądu kodu w czasie rzeczywistym i](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) wpisu w blogu interaktywnej edukacji oraz [Live Share teraz zawarte w blogu programu Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) .
+Aby uzyskać więcej informacji, zobacz [Visual Studio Live Share do przeglądu kodu w czasie rzeczywistym i wpisu w blogu interaktywnej edukacji](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) oraz [Live Share teraz zawarte w blogu programu Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) .
 
 ### <a name="integrated-code-reviews"></a>Zintegrowane przeglądy kodu
 
@@ -186,13 +186,13 @@ Aby uzyskać więcej informacji, zobacz Debugowanie [live ASP.NET Azure Apps prz
 
 ### <a name="microsoft-edge-insider-support"></a>Pomoc techniczna programu Microsoft Edge dla niejawnych testerów
 
-**Nowość w 16,2**: Możesz ustawić punkt przerwania w aplikacji JavaScript i rozpocząć sesję debugowania przy użyciu przeglądarki niejawnego [testera programu Microsoft Edge](https://www.microsoftedgeinsider.com/) . Gdy to zrobisz, program Visual Studio otworzy nowe okno przeglądarki z włączonym debugowaniem, którego można następnie użyć do przechodzenia przez aplikację JavaScript w programie Visual Studio.
+**Nowość w 16,2**: Możesz ustawić punkt przerwania w aplikacji JavaScript i rozpocząć sesję debugowania przy użyciu przeglądarki [niejawnego testera programu Microsoft Edge](https://www.microsoftedgeinsider.com/) . Gdy to zrobisz, program Visual Studio otworzy nowe okno przeglądarki z włączonym debugowaniem, którego można następnie użyć do przechodzenia przez aplikację JavaScript w programie Visual Studio.
 
    ![Zrzut ekranu, który pokazuje renderowanie kodu JavaScript w przeglądarce](media/vs-2019/edge-chromium-breakpoint.png)
 
 ## <a name="whats-next"></a>Co dalej
 
-Często aktualizujemy program Visual Studio 2019 dzięki nowym funkcjom, które mogą usprawnić pracę programistyczną. Aby dowiedzieć się więcej na temat najnowszych innowacji, zapoznaj się z blogiem dotyczącym [programu Visual Studio](https://devblogs.microsoft.com/visualstudio/). Aby uzyskać informacje o tym, co opublikowano w wersji zapoznawczej, zapoznaj się z [informacjami o wersji](/visualstudio/releases/2019/release-notes-preview/)zapoznawczej.
+Często aktualizujemy program Visual Studio 2019 dzięki nowym funkcjom, które mogą usprawnić pracę programistyczną. Aby dowiedzieć się więcej na temat najnowszych innowacji, zapoznaj się z [blogiem dotyczącym programu Visual Studio](https://devblogs.microsoft.com/visualstudio/). Aby uzyskać informacje o tym, co opublikowano w wersji zapoznawczej, zapoznaj się z [informacjami o wersji zapoznawczej](/visualstudio/releases/2019/release-notes-preview/).
 
 Chcesz dowiedzieć się więcej na temat tego, co jeszcze znajduje się w programie Works dla programu Visual Studio 2019? Zapoznaj się z [planem programu Visual Studio](/visualstudio/productinfo/vs-roadmap/).
 

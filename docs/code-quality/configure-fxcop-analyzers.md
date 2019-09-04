@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551146"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293449"
 ---
 # <a name="configure-fxcop-analyzers"></a>Konfigurowanie analizatorów FxCop
 
@@ -46,7 +46,10 @@ Aby uzyskać więcej informacji, zobacz [zestawy reguł dla analizatorów kodu](
 
 ## <a name="editorconfig-file"></a>Plik EditorConfig
 
-Reguły analizatora można skonfigurować przez dodanie par klucz-wartość do pliku [editorconfig](https://editorconfig.org) . Plik konfiguracji może być [specyficzny dla projektu](#per-project-configuration) lub może być [współużytkowany](#shared-configuration) przez dwa lub więcej projektów.
+Reguły analizatora FxCop można skonfigurować przez dodanie par klucz-wartość do pliku [. editorconfig](https://editorconfig.org) . Plik konfiguracji może być [specyficzny dla projektu](#per-project-configuration) lub może być [współużytkowany](#shared-configuration) przez dwa lub więcej projektów.
+
+> [!NOTE]
+> Nie można skonfigurować starszych reguł FxCop przy użyciu pliku. editorconfig.
 
 ### <a name="per-project-configuration"></a>Konfiguracja na projekt
 
@@ -61,7 +64,7 @@ Obecnie nie ma żadnych hierarchicznej obsługi dla "łączenia" plików editorc
 
 ### <a name="shared-configuration"></a>Konfiguracja udostępniona
 
-Można udostępnić plik. editorconfig dla konfiguracji analizatora między co najmniej dwa projekty, ale wymaga to kilku dodatkowych kroków.
+Można udostępnić plik. editorconfig do konfiguracji analizatora FxCop między co najmniej dwa projekty, ale wymaga to kilku dodatkowych kroków.
 
 1. Zapisz plik *. editorconfig* w wspólnej lokalizacji.
 
@@ -90,7 +93,7 @@ Można udostępnić plik. editorconfig dla konfiguracji analizatora między co n
 4. Załaduj ponownie projekt.
 
 > [!NOTE]
-> Nie można skonfigurować starszych reguł FxCop przy użyciu pliku. editorconfig.
+> Dowolnie udostępniona lokalizacja pliku EditorConfig ma zastosowanie tylko do konfigurowania analizatorów FxCop. W przypadku innych ustawień, takich jak wcięcia i styl kodu, plik EditorConfig musi zawsze być umieszczony w folderze projektu lub w folderze nadrzędnym.
 
 ## <a name="option-scopes"></a>Zakresy opcji
 
