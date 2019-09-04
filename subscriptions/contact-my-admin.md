@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: Dowiedz się, jak skontaktować się z administratorem subskrypcji, aby uzyskać pomoc dotyczącą pytań lub problemów.
-ms.openlocfilehash: cc6ce20d97531cca7c6b08d82ba949fb19e6bddc
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: a1769140db7800798c91d583f835e3cad8488397
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70001438"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293522"
 ---
 # <a name="get-assistance-from-your-subscriptions-adminstrator"></a>Uzyskaj pomoc od administratora subskrypcji
 Jeśli Twoja subskrypcja programu Visual Studio jest świadczona przez służbowe lub szkolne, prawdopodobnie została przypisana do Ciebie przez administratora subskrypcji lub administratora.  Administratorzy mogą przypisywać lub usuwać subskrypcje, zmieniać adresy e-mail logowania, określać, czy użytkownik ma możliwość pobrania oprogramowania i wykonywania innych funkcji związanych z subskrypcją.
@@ -27,6 +27,9 @@ Mając na uwadze rozmiar i złożoność wielu organizacji, użytkownik może ni
 4. Wprowadź komunikat dla administratora.
 5. Jeśli chcesz otrzymać kopię wiadomości wysłanej do administratora, kliknij pole wyboru **Wyślij do mnie kopię** . 
 6. Na koniec kliknij pozycję **Wyślij**.
+
+> [!NOTE]
+> **Administratorzy:**  Aby ustawić adres e-mail, na który są wysyłane żądania "Skontaktuj się z administratorem", określ ten adres w [preferencjach umowy](admin-prefs.md#contact-email-address).
 
 ## <a name="resources"></a>Zasoby
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)

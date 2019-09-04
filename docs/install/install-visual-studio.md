@@ -20,24 +20,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263720"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293705"
 ---
 # <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
 ::: moniker range="vs-2019"
 
-Witamy w programie Visual Studio 2019 r! W tej wersji jest można łatwo wybrać i zainstalować tylko funkcje, których potrzebujesz. Ze względu na zmniejszenie rozmiaru minimalnej instalacji szybko i przy mniejszym wpływem na system i.
+Witamy w programie Visual Studio 2019! W tej wersji można łatwo wybrać i zainstalować tylko te funkcje, które są potrzebne. I ze względu na obniżoną minimalną wartość, jest ona instalowana szybko i z mniejszym wpływem na system.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Nowy sposób instalowania programu Visual Studio — Zapraszamy! W tej wersji wprowadziliśmy je łatwiej można wybrać i zainstalować tylko funkcje, których potrzebujesz. Również zmniejszyliśmy minimalnego śladu programu Visual Studio, tak aby zainstalował szybciej i z mniejszym wpływem na system niż kiedykolwiek wcześniej.
+Nowy sposób instalowania programu Visual Studio — Zapraszamy! W tej wersji Ułatwiamy Wybieranie i Instalowanie tylko potrzebnych funkcji. Również zmniejszyliśmy minimalnego śladu programu Visual Studio, tak aby zainstalował szybciej i z mniejszym wpływem na system niż kiedykolwiek wcześniej.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Przed rozpoczęciem instalowania programu Visual Studio:
 
 ::: moniker range="vs-2019"
 
-1. Sprawdź [wymagania systemowe](/visualstudio/releases/2019/system-requirements). Te wymagania ułatwiają określenie, czy komputer obsługuje program Visual Studio 2019 r.
+1. Sprawdź [wymagania systemowe](/visualstudio/releases/2019/system-requirements). Te wymagania pomagają sprawdzić, czy komputer obsługuje program Visual Studio 2019.
 
 1. Zastosowanie najnowszych aktualizacji Windows. Te aktualizacje upewnij się, że komputer ma najnowsze aktualizacje zabezpieczeń i wymagane składniki systemowe dla programu Visual Studio.
 
@@ -94,13 +94,13 @@ Masz pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio o
 
 ::: moniker range="vs-2019"
 
-Masz pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio obok siebie przy użyciu programu Visual Studio 2019 r, zobacz [Visual Studio 2019 r i zgodności platformy](/visualstudio/releases/2019/compatibility/) strony.
+Pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio obok programu Visual Studio 2019 można znaleźć na stronie programu [Visual studio 2019 platformy docelowej i zgodności](/visualstudio/releases/2019/compatibility/) .
 
 ::: moniker-end
 
 ## <a name="step-2---download-visual-studio"></a>Krok 2 — pobieranie programu Visual Studio
 
-Następnie należy pobrać plik inicjujący programu Visual Studio. Aby to zrobić, kliknij poniższy przycisk, wybierz wydanie programu Visual Studio, której potrzebujesz, następnie wybierz **Zapisz**, a następnie wybierz **Otwórz folder**.
+Następnie należy pobrać plik inicjujący programu Visual Studio. Aby to zrobić, wybierz poniższy przycisk, wybierz wersję programu Visual Studio, a następnie wybierz pozycję **Zapisz**, a następnie wybierz pozycję **Otwórz folder**.
 
 ::: moniker range="vs-2017"
 
@@ -112,13 +112,13 @@ Następnie należy pobrać plik inicjujący programu Visual Studio. Aby to zrobi
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Pobierz program Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Pobierz program Visual Studio](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Krok 3 — instalowanie Instalatora programu Visual Studio
 
-Uruchom plik inicjujący, aby zainstalować Instalatora programu Visual Studio. Tego nowego, lekkiego Instalatora zawiera wszystko, co jest potrzebne do zainstalowania i Dostosuj program Visual Studio.
+Uruchom plik programu inicjującego, aby zainstalować Instalator programu Visual Studio. Ten nowy Lightweight Installer zawiera wszystko, czego potrzebujesz do zainstalowania i dostosowania programu Visual Studio.
 
 1. Z usługi **pliki do pobrania** folderu, kliknij dwukrotnie program inicjujący, który jest zgodny lub podobny do jednego z następujących plików:
 
@@ -126,13 +126,13 @@ Uruchom plik inicjujący, aby zainstalować Instalatora programu Visual Studio. 
    * **vs_professional.exe** for Visual Studio Professional
    * **vs_enterprise.exe** programu Visual Studio Enterprise
 
-   Jeśli pojawi się powiadomienie Kontrola konta użytkownika, wybierz opcję **tak**.
+   Jeśli zostanie wyświetlony komunikat Kontrola konta użytkownika, wybierz opcję **tak**.
 
 2. Poprosimy Cię potwierdzić Microsoft [postanowienia licencyjne](https://visualstudio.microsoft.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://privacy.microsoft.com/privacystatement). Wybierz **nadal**.
 
    ![Licencja warunki i zasady zachowania poufności informacji](media/privacy-and-license-terms.png "postanowienia licencyjne firmy Microsoft oraz zasady zachowania poufności informacji")
 
-## <a name="step-4---choose-workloads"></a>Krok 4 — Wybieranie obciążeń
+## <a name="step-4---choose-workloads"></a>Krok 4. Wybieranie obciążeń
 
 Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając zestawy funkcji — lub obciążeń — przewidzianą. Poniżej przedstawiono sposób.
 
@@ -140,11 +140,11 @@ Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając ze
 
 1. Znajdź obciążenie w **Instalowanie programu Visual Studio** ekranu.
 
-   ![Visual Studio 2017: Zainstaluj obciążenie](../install/media/vs-installer-installing-workloads.png)
+   ![Visual Studio 2017: Instalowanie obciążenia](../install/media/vs-installer-installing-workloads.png)
 
      Na przykład wybierz obciążenie "Programowanie aplikacji klasycznych .NET". Dołączono edytora podstawowych domyślny, który zawiera podstawowe obsługę edytowania kodu dla ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu i zintegrowane kontroli kodu źródłowego.
 
-1. Po wybraniu workload(s) należy wybrać **zainstalować**.
+1. Po wybraniu żądanych obciążeń wybierz pozycję **Zainstaluj**.
 
     Następnie ekranów statusu pojawiają się pokazujących postęp instalacji programu Visual Studio.
 
@@ -154,22 +154,22 @@ Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając ze
 
 1. Po zainstalowaniu nowych obciążeń i składników, wybierz **Uruchom**.
 
-   ![Visual Studio 2019: Zainstaluj obciążenie](../install/media/vs-2019/vs-installer-workloads.png)
+   ![Visual Studio 2019: Instalowanie obciążenia](../install/media/vs-2019/vs-installer-workloads.png)
 
-     Na przykład wybierz obciążenie "opracowywanie zawartości platformy ASP.NET i sieci web". Dołączono edytora podstawowych domyślny, który zawiera podstawowe obsługę edytowania kodu dla ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu i zintegrowane kontroli kodu źródłowego.
+     Na przykład wybierz obciążenie "Programowanie ASP.NET i sieci Web". Dołączono edytora podstawowych domyślny, który zawiera podstawowe obsługę edytowania kodu dla ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu i zintegrowane kontroli kodu źródłowego.
 
-1. Po wybraniu workload(s) należy wybrać **zainstalować**.
+1. Po wybraniu żądanych obciążeń wybierz pozycję **Zainstaluj**.
 
     Następnie ekranów statusu pojawiają się pokazujących postęp instalacji programu Visual Studio.
 
  ::: moniker-end
 
 > [!TIP]
-> W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składników, które nie są początkowo zainstalowano. Jeśli masz program Visual Studio, Otwórz, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...**  która otwiera Instalatora programu Visual Studio. Lub Otwórz **Instalatora programu Visual Studio** z Start menu. Z tego miejsca możesz wybrać obciążeń lub składników, które chcesz zainstalować. Następnie wybierz **Modyfikuj**.
+> W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składników, które nie są początkowo zainstalowano. Jeśli masz program Visual Studio, Otwórz, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...**  która otwiera Instalatora programu Visual Studio. Lub Otwórz **Instalatora programu Visual Studio** z Start menu. W tym miejscu możesz wybrać obciążenia lub składniki, które chcesz zainstalować. Następnie wybierz **Modyfikuj**.
 
-## <a name="step-5---choose-individual-components-optional"></a>Krok 5 — wybieranie poszczególnych składników (opcjonalnie)
+## <a name="step-5---choose-individual-components-optional"></a>Krok 5. Wybierz poszczególne składniki (opcjonalnie)
 
-Jeśli nie chcesz dostosować instalację programu Visual Studio za pomocą funkcji obciążeń lub chcesz dodać więcej składników nie instaluje obciążenia, możesz to zrobić poprzez zainstalowanie lub dodanie poszczególne składniki z **poszczególne składniki** kartę. Wybierz co, a następnie postępuj zgodnie z monitami.
+Jeśli nie chcesz używać funkcji obciążeń do dostosowywania instalacji programu Visual Studio lub chcesz dodać więcej składników niż w przypadku instalacji obciążeń, możesz to zrobić, instalując lub dodając poszczególne składniki z karty **poszczególne składniki** . Wybierz, co chcesz zrobić, a następnie postępuj zgodnie z monitami.
 
 ::: moniker range="vs-2017"
 
@@ -179,13 +179,13 @@ Jeśli nie chcesz dostosować instalację programu Visual Studio za pomocą funk
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - instalacji poszczególnych składników](media/vs-2019/vs-installer-individual-components.png "poszczególne składniki Zainstaluj program Visual Studio")
+  ![Visual Studio 2019 — Zainstaluj poszczególne składniki](media/vs-2019/vs-installer-individual-components.png "Zainstaluj poszczególne składniki programu Visual Studio")
 
 ::: moniker-end
 
 ## <a name="step-6---install-language-packs-optional"></a>Krok 6 — instalowanie pakietów językowych (opcjonalnie)
 
-Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacyjnego, gdy jest uruchamiany po raz pierwszy. Aby zainstalować program Visual Studio w języku wybrane, wybierz opcję **pakiety językowe** kartę za pomocą Instalatora programu Visual Studio, a następnie postępuj zgodnie z monitami.
+Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacyjnego, gdy jest uruchamiany po raz pierwszy. Aby zainstalować program Visual Studio w wybranym języku, wybierz kartę **pakiety językowe** z Instalator programu Visual Studio, a następnie postępuj zgodnie z monitami.
 
 ::: moniker range="vs-2017"
 
@@ -195,7 +195,7 @@ Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacy
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - Zainstaluj pakiety językowe](media/vs-2019/vs-installer-language-packs.png "pakiety językowe Zainstaluj program Visual Studio")
+  ![Visual Studio 2019 — Zainstaluj pakiety językowe](media/vs-2019/vs-installer-language-packs.png "Zainstaluj pakiety językowe programu Visual Studio")
 
 ::: moniker-end
 
@@ -203,56 +203,56 @@ Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacy
 
 Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z poziomu wiersza polecenia. Na przykład, możesz wymusić Instalatora Aby uruchomić w języku angielskim, za pomocą następującego polecenia: `vs_installer.exe --locale en-US`. Instalator zapamięta to ustawienie po jej uruchomieniu następnym razem. Instalator obsługuje następujące generatory kodów języka: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru i tr-tr.
 
-## <a name="step-7---select-the-installation-location-optional"></a>Krok 7 — wybierz miejsce instalacji (opcjonalnie)
+## <a name="step-7---select-the-installation-location-optional"></a>Krok 7 — Wybieranie lokalizacji instalacji (opcjonalnie)
 
 ::: moniker range="vs-2017"
 
-**Nowość w wersji 15.7**: Teraz można zmniejszyć miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
+**Nowość w 15,7**: Teraz można zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
-  ![Visual Studio 2017 — Zmień lokalizacje instalacji](media/installation-options-by-location.png "zmiana lokalizacji instalacji")
+  ![Visual Studio 2017 — Zmień lokalizacje instalacji](media/installation-options-by-location.png "Zmień lokalizację instalacji")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Możliwe jest zmniejszenie miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
+Możesz zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
-  ![Visual Studio 2019 - lokalizacje instalacji wybierz](media/vs-2019/vs-installer-installation-locations.png "wybierz miejsce instalacji")
+  ![Visual Studio 2019 — Wybieranie lokalizacji instalacji](media/vs-2019/vs-installer-installation-locations.png "Wybierz lokalizację instalacji")
 
 ::: moniker-end
 
 > [!IMPORTANT]
-> Możesz wybrać inny dysk tylko wtedy, gdy najpierw zainstalować program Visual Studio. Jeśli już został zainstalowany i chcesz zmienić dysków, należy odinstalować program Visual Studio i zainstaluj go ponownie.
+> Inny dysk można wybrać tylko podczas pierwszej instalacji programu Visual Studio. Jeśli został już zainstalowany i chcesz zmienić dyski, należy odinstalować program Visual Studio, a następnie zainstalować go ponownie.
 
-Aby uzyskać więcej informacji, zobacz [wybierz lokalizacje instalacji](change-installation-locations.md) strony.
+Aby uzyskać więcej informacji, zobacz stronę [Wybieranie lokalizacji instalacji](change-installation-locations.md) .
 
 ## <a name="step-8---start-developing"></a>Krok 8 — zacznij programować
 
 ::: moniker range="vs-2017"
 
-1. Po zakończeniu instalacji programu Visual Studio wybierz **Uruchom** przycisk, aby rozpocząć tworzenie aplikacji za pomocą programu Visual Studio.
+1. Po zakończeniu instalacji programu Visual Studio wybierz przycisk **Uruchom** , aby rozpocząć programowanie przy użyciu programu Visual Studio.
 
-2. Wybierz **pliku**, a następnie wybierz **nowy projekt**.
+2. Wybierz pozycję **plik**, a następnie wybierz pozycję **Nowy projekt**.
 
 3. Wybierz typ projektu.
 
-   Na przykład, aby [kompilacji aplikacji w języku C++](../ide/getting-started-with-cpp-in-visual-studio.md), wybierz **zainstalowane**, rozwiń węzeł **Visual C++** , a następnie wybierz typ projektu C++, który chcesz skompilować.
+   Na przykład, aby [skompilować C++ aplikację](../ide/getting-started-with-cpp-in-visual-studio.md), wybierz pozycję **zainstalowane**, rozwiń **pozycję C++Wizualizacja** , a następnie C++ wybierz typ projektu, który chcesz skompilować.
 
-   Do [kompilacji C# aplikacji](../get-started/csharp/tutorial-console.md), wybierz **zainstalowane**, rozwiń węzeł **Visual C#** , a następnie wybierz C# typ, który chcesz skompilować projektu.
+   Aby [skompilować C# aplikację](../get-started/csharp/tutorial-console.md), wybierz pozycję **zainstalowane**, rozwiń **pozycję C#Wizualizacja** , a następnie C# wybierz typ projektu, który chcesz skompilować.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Po zakończeniu instalacji programu Visual Studio wybierz **Uruchom** przycisk, aby rozpocząć tworzenie aplikacji za pomocą programu Visual Studio.
+1. Po zakończeniu instalacji programu Visual Studio wybierz przycisk **Uruchom** , aby rozpocząć programowanie przy użyciu programu Visual Studio.
 
-1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-1. W polu wyszukiwania wprowadź typ aplikacji, którą chcesz utworzyć, aby wyświetlić listę dostępnych szablonów. Na liście szablonów, zależy od workload(s), która została wybrana podczas instalacji. Aby wyświetlić różne szablony, wybierz różnych obciążeń.
+1. W polu wyszukiwania wprowadź typ aplikacji, którą chcesz utworzyć, aby wyświetlić listę dostępnych szablonów. Lista szablonów zależy od obciążeń, które zostały wybrane podczas instalacji. Aby wyświetlić różne szablony, wybierz różne obciążenia.
 
-   Można także filtrować wyszukiwania dla określonego języka programowania przy użyciu **języka** listy rozwijanej. Można filtrować przy użyciu **platformy** listy i **typ projektu** listy zbyt. 
+   Wyszukiwanie w określonym języku programowania można również filtrować za pomocą listy rozwijanej **Język** . Można również filtrować za pomocą listy **platform** i listy **Typ projektu** . 
 
-1. Visual Studio otwiera nowy projekt i wszystko jest gotowe do kodu.
+1. Program Visual Studio otwiera nowy projekt i wszystko jest gotowe do kodu!
 
 ::: moniker-end
 
