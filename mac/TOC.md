@@ -57,7 +57,6 @@
 
 # Kontrola wersji
 ## [Omówienie](version-control.md)
-## [Kontrola wersji TF](tf-version-control.md)
 ## [Konfigurowanie repozytorium Git](set-up-git-repository.md)
 ## [Praca z usługą Git](working-with-git.md)
 ## [Konfigurowanie repozytorium podwersji](set-up-subversion-repository.md)
@@ -100,6 +99,7 @@
 ## [Dzienniki i wyjątki](troubleshooting.md)
 ## [Program poprawy jakości obsługi klienta systemu Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Zgłaszanie problemu](report-a-problem.md)
+## [Rozwiązywanie problemów: Czy program Visual Studio dla komputerów Mac obsługuje kontrolę wersji programu Team Foundation?](tf-version-control.md)
 ## [Rozwiązywanie problemów: Dlaczego nie mogę wyświetlić wszystkich szablonów?](troubleshooting-no-templates.md)
 ## [Rozwiązywanie problemów: Podczas pobierania informacji występują błędy aktualizatora](updater-troubleshooting.md)
 
