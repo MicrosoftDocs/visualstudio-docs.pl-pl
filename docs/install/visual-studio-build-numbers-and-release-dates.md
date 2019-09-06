@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/20/2019
+ms.date: 09/04/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d9d67ce7365a60bd744e0237d95b41f9dea2c641
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: e498e5667a7467c1621b10549cb1f67e6583a05b
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891321"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383730"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,6 +29,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.0 | Wersja zapoznawcza 3 | 4 września 2019 | 16.3.29230.61 |
 | 16.2.3 | Wydanie | 20 sierpnia 2019 r. | 16.2.29215.179 |
 | 16.2.2 | Wydanie | 13 sierpnia 2019 r. | 16.2.29209.62 |
 | 16.3.0 | Preview 2 | 13 sierpnia 2019 r. | 16.3.29209.152 |
@@ -186,7 +187,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.5.1 | Wydanie | 7 grudnia 2017 r. | 15.0.27130.2003 |
 | 15.6.0 Podgląd 1 | Wersja zapoznawcza | 7 grudnia 2017 r. | 15.6.27205.0 |
 | 15.0.7 | Wydanie | 6 grudnia 2017 r. | 15.0.26228.18 |
-| 15.5 | Wydanie | 4 grudnia 2017 r. | 15.0.27130.0 |
+| 15.5.0 | Wydanie | 4 grudnia 2017 r. | 15.0.27130.0 |
 | 15.5.0 w wersji zapoznawczej 5 | Wersja zapoznawcza | 30 listopada 2017 r. | 15.0.27128.1 |
 | 15.4.5 | Wydanie | 27 listopada 2017 r. | 15.0.27004.2010 |
 | 15.5.0 w wersji zapoznawczej 4 | Wersja zapoznawcza | 14 listopada 2017 r. | 15.0.27110.0 |
@@ -198,7 +199,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.5.0 preview 2 | Wersja zapoznawcza | 23 października 2017 r. | 15.0.27019.1 |
 | 15.4.1 | Wydanie | 19 października 2017 r. | 15.0.27004.2005 |
 | 15.5 Podgląd 1 | Wersja zapoznawcza | 11 października 2017 r. | 15.0.27009.1 |
-| 15.4 | Wydanie | 9 października 2017 r. | 15.0.27004.2002 |
+| 15.4.0 | Wydanie | 9 października 2017 r. | 15.0.27004.2002 |
 | 15.4 w wersji zapoznawczej 6 | Wersja zapoznawcza | 9 października 2017 r.| 15.0.27004.20002 |
 | 15.4 w wersji zapoznawczej 5 | Wersja zapoznawcza | 6 października 2017 r. | 15.0.27004.2000 |
 | 15.4 w wersji zapoznawczej 4 | Wersja zapoznawcza | 2 października 2017 r. | 15.0.26929.2 |
@@ -214,7 +215,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.3.1 Podgląd 1 | Wersja zapoznawcza | 18 sierpnia 2017 r. | 15.0.26730.08 |
 | 15.3.1  | Wydanie | 18 sierpnia 2017 r. | 15.0.26730.08 |
 | 15.4 (wersja zapoznawcza) 1 | Wersja zapoznawcza | 24 sierpnia 2017 r. | 15.0.26823.1 |
-| 15.3 | Wydanie | 14 sierpnia 2017 r. | 15.0.26730.3 |
+| 15.3.0 | Wydanie | 14 sierpnia 2017 r. | 15.0.26730.3 |
 | 15.3 Podgląd 7.1 | Wersja zapoznawcza | 11 sierpnia 2017 r. | 15.0.26730.3 |
 | 15.3 Podgląd 7 | Wersja zapoznawcza | 1 sierpnia 2017 r. | 15.0.26730.0 |
 | 15.3 w wersji zapoznawczej 6 | Wersja zapoznawcza | 26 lipca 2017 r. | 15.0.26724.1 |
@@ -232,14 +233,14 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.2.1  | Wydanie | 12 maja 2017 r. | 15.0.26430.6 |
 | 15.3 (wersja zapoznawcza) 1.1 | Wersja zapoznawcza | 11 maja 2017 r. | 15.0.26510.0 |
 | 15.3 Podgląd 1 | Wersja zapoznawcza | 10 maja 2017 r. | 15.0.26507.0 |
-| 15.2 | Wydanie | 10 maja 2017 r. | 15.0.26430.4 |
+| 15.2.0 | Wydanie | 10 maja 2017 r. | 15.0.26430.4 |
 | 15.2 w wersji zapoznawczej 4 | Wersja zapoznawcza | 3 maja 2017 r. | 15.0.26430.1 |
 | 15.2 Podgląd 3 | Wersja zapoznawcza | 26 kwietnia 2017 r. | 15.0.26424.2 |
 | 15.2 preview 2 | Wersja zapoznawcza | 20 kwietnia 2017 r. | 15.0.26419.1 |
 | 15.2 (wersja zapoznawcza) 1 | Wersja zapoznawcza | 17 kwietnia 2017 r. | 15.0.26412.1 |
 | 15.1.2  | Wydanie | 17 kwietnia 2017 r. | 15.0.26403.7 |
 | 15.1.1 | Wydanie | 10 kwietnia 2017 r. | 15.0.26403.3 |
-| 15.1 | Wydanie | 5 kwietnia 2017 r. | 15.0.26403.0 |
+| 15.1.0 | Wydanie | 5 kwietnia 2017 r. | 15.0.26403.0 |
 | 15.0.3  | Wydanie | Do 31 marca 2017 r. | 15.0.26228.12 |
 | 15.0.2 | Wydanie | 28 marca 2017 r. | 15.0.26228.10 |
 | 15.1 Podgląd 3 | Wersja zapoznawcza | 27 marca 2017 r. | 15.0.26323.1 |

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926786"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383719"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -169,7 +169,7 @@ Masz teraz projekt z metodami, które możesz przetestować. W tym artykule test
 
 ::: moniker-end
 
-5. W projekcie **BankTests** Dodaj odwołanie do projektu bankowego.
+5. W projekcie **BankTests** Dodaj odwołanie do projektu **bankowego** .
 
    W **Eksplorator rozwiązań**wybierz pozycję **zależności** w projekcie **BankTests** , a następnie wybierz pozycję **Dodaj odwołanie** z menu dostępnego po kliknięciu prawym przyciskiem myszy.
 
@@ -301,7 +301,7 @@ Metoda testowa musi spełniać następujące wymagania:
 
 Wynik testu zawiera komunikat, który opisuje błąd. W przypadku `AreEqual` metody komunikat wyświetla oczekiwane i co zostało faktycznie odebrane. Spodziewasz się, że saldo zostało zmniejszone, ale zwiększy się o kwotę wycofania.
 
-Test jednostkowy nie wykrył usterki: ilość wycofania jest dodawana do salda konta, gdy należy ją *odjąć*.
+Test jednostkowy nie wykrył usterki: ilość wycofania jest *dodawana* do salda konta, gdy należy ją *odjąć*.
 
 ### <a name="correct-the-bug"></a>Popraw usterkę
 
@@ -429,11 +429,11 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Ponowne testowanie, ponowne zapisywanie i ponowne analizowanie
 
-Przyjęto założenie, że w testowanej metodzie występuje `Debit` błąd, a metoda nie <xref:System.ArgumentOutOfRangeException> generuje nawet danych wyjściowych z wyjątkiem. Obecnie metoda testowa nie obsługuje tego przypadku. `debitAmount` Jeśli wartość jest prawidłowa (to jest mniejsza niż saldo, ale większa od zera), żaden wyjątek nie jest przechwytywany, więc potwierdzenie nigdy nie zostanie wyzwolone. Jeszcze metoda testowa kończy się powodzeniem. Nie jest to dobre, ponieważ metoda testowa ma kończyć się niepowodzeniem, jeśli nie zostanie zgłoszony żaden wyjątek.
+Przyjęto założenie, że w testowanej metodzie występuje `Debit` błąd, a metoda nie <xref:System.ArgumentOutOfRangeException> generuje nawet danych wyjściowych z wyjątkiem. Obecnie metoda testowa nie obsługuje tego przypadku. `debitAmount` Jeśli wartość jest prawidłowa (jest mniejsza niż wartość salda i większa od zera), żaden wyjątek nie jest przechwytywany, więc potwierdzenie nigdy nie zostanie wyzwolone. Jeszcze metoda testowa kończy się powodzeniem. Nie jest to dobre, ponieważ metoda testowa ma kończyć się niepowodzeniem, jeśli nie zostanie zgłoszony żaden wyjątek.
 
 Jest to usterka w metodzie testowej. Aby rozwiązać ten problem, Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> potwierdzenie na końcu metody testowej, aby obsłużyć przypadek, w którym nie jest zgłaszany żaden wyjątek.
 
-Ponownie uruchomienie testu pokazuje, że test zakończy *się niepowodzeniem* w przypadku przechwyconego poprawnego wyjątku. Blok przechwytuje wyjątek, ale metoda nadal jest wykonywana i kończy się niepowodzeniem z nowym <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> potwierdzeniem. `catch` Aby rozwiązać ten problem, należy dodać `return` instrukcję `StringAssert` po `catch` bloku. Ponowne uruchomienie testu potwierdza, że ten problem został rozwiązany. Końcowa wersja `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` wygląda następująco:
+Ponownie uruchomienie testu pokazuje, że test *zakończy się niepowodzeniem* w przypadku przechwyconego poprawnego wyjątku. Blok przechwytuje wyjątek, ale metoda nadal jest wykonywana i kończy się niepowodzeniem z nowym <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> potwierdzeniem. `catch` Aby rozwiązać ten problem, należy dodać `return` instrukcję `StringAssert` po `catch` bloku. Ponowne uruchomienie testu potwierdza, że ten problem został rozwiązany. Końcowa wersja `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` wygląda następująco:
 
 ```csharp
 [TestMethod]
