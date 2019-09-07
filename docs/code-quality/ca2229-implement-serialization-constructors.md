@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11dfa98bb348f874a2774454cc465fb80cb71750
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: dac8a9201e375877c1b586bd6415dd81764f5d2b
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920163"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739238"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: Zaimplementuj konstruktory serializacji
 
@@ -33,27 +33,32 @@ ms.locfileid: "68920163"
 ## <a name="cause"></a>Przyczyna
 Typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejs, nie jest obiektem delegowanym ani interfejsem, a jeden z następujących warunków jest spełniony:
 
-- Typ nie ma konstruktora, który przyjmuje <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> obiekt <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> i obiekt (podpis konstruktora serializacji).
+- Typ nie ma konstruktora, który przyjmuje <xref:System.Runtime.Serialization.SerializationInfo> obiekt <xref:System.Runtime.Serialization.StreamingContext> i obiekt (podpis konstruktora serializacji).
 
 - Typ jest niezapieczętowany i modyfikator dostępu dla jego konstruktora serializacji nie jest chroniony (rodzina).
 
 - Typ jest zapieczętowany i modyfikator dostępu dla jego konstruktora serializacji nie jest prywatny.
 
 ## <a name="rule-description"></a>Opis reguły
-Ta reguła ma zastosowanie do typów, które obsługują serializację niestandardowe. Typ obsługuje serializacji niestandardowej, jeśli implementuje <xref:System.Runtime.Serialization.ISerializable> interfejs. Konstruktor serializacji jest wymagany do deserializacji lub ponownego tworzenia obiektów, które zostały zserializowane przy użyciu <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody.
+
+Ta reguła ma zastosowanie do typów, które obsługują serializację niestandardowe. Typ obsługuje serializacji niestandardowej, jeśli implementuje <xref:System.Runtime.Serialization.ISerializable> interfejs. Konstruktor serializacji jest wymagany do deserializacji lub ponownego tworzenia obiektów, które zostały zserializowane przy użyciu <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=nameWithType> metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+
 Aby naprawić naruszenie tej zasady, należy zaimplementować konstruktora serializacji. Dla zamkniętej klasy należy ustawić konstruktor prywatny; w przeciwnym razie powinien być chroniony.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+
 Nie pomijaj naruszenia reguły. Typ nie może być deserializowany i nie będzie działać w wielu scenariuszach.
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład pokazuje typ, który spełnia regułę.
 
 [!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]
 
 ## <a name="related-rules"></a>Powiązane reguły
+
 [CA2237 Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Zobacz także

@@ -1,5 +1,5 @@
 ---
-title: VSIX Language Pack — dokumentacja schematu 2.0 | Dokumentacja firmy Microsoft
+title: Pakiet językowy VSIX schemat 2,0 Dokumentacja | Microsoft Docs
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,48 +8,46 @@ helpviewer_keywords:
 - localize package
 - localize extension
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
-ms.author: dagriffe
-author: dgriffen
+ms.author: zorio
+author: zoeyr
 manager: jillfra
-ms.workload:
-- dagriffe
-ms.openlocfilehash: acea36031b98693e1d618986720d9932f76a0a63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953104"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739333"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>VSIX language pack — dokumentacja schematu 2.0
+# <a name="vsix-language-pack-schema-20-reference"></a>Dokumentacja schematu pakietu języka VSIX 2,0
 
-Schemat pakietu językowego VSIX informacje zlokalizowanej instalację pakietów VSIX. W wersji 2.0 tego schematu obsługuje elementy dodatkowej lokalizacji.
+Schemat pakietu Language Pack VSIX zawiera zlokalizowane informacje o instalacji pakietów VSIX. Wersja 2,0 tego schematu obsługuje dodatkowe elementy lokalizacji.
 
-## <a name="language-pack-schema"></a>Schemat pakiet języka
+## <a name="language-pack-schema"></a>Schemat pakietu językowego
 
-Element główny pliku pakiet języka jest `<PackageLanguagePackManifest>`, z atrybutem `Version`, czyli wersji formatu pakietu języka. W tym artykule opisano w wersji 2.0 formatu pakietu języka, który jest określany w manifeście przez ustawienie `Version` atrybut na wartość `Version="2.0.0"`. Element główny zawiera dokładnie jeden element podrzędny `<Metadata>` elementu.
+Element główny pliku pakietu językowego ma `<PackageLanguagePackManifest>` `Version`atrybut, który jest wersją formatu pakietu językowego. W tym artykule opisano wersję 2,0 formatu pakietu językowego, która jest określona w manifeście przez ustawienie `Version` atrybutu na wartość. `Version="2.0.0"` Element główny zawiera dokładnie jeden element podrzędny `<Metadata>` .
 
-### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest element
+### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest, element
 
-W ramach `<PackageLanguagePackManifest>` element musi istnieć następującego elementu:
+`<PackageLanguagePackManifest>` W elemencie musi istnieć następujący element:
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|`<Metadata>`| Element zawierający dla wszystkich metadanych zlokalizowanego pakietu
+|`<Metadata>`| Element zawierający dla wszystkich zlokalizowanych metadanych pakietu
 
 ### <a name="metadata-element"></a>Element metadanych
 
-W ramach `<Metadata>` element może mieć następujące elementy:
+W obrębie `<Metadata>` elementu można mieć następujące elementy:
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|`<DisplayName>`|Zlokalizowana nazwa rozszerzenia do zainstalowania|
-|`<Description>`|Zlokalizowany opis rozszerzenia do zainstalowania|
-|`<License>`| Ścieżka do zlokalizowaną wersję licencji rozszerzenia|
+|`<DisplayName>`|Zlokalizowana nazwa rozszerzenia, które ma zostać zainstalowane|
+|`<Description>`|Zlokalizowany opis rozszerzenia, które ma zostać zainstalowane|
+|`<License>`| Ścieżka do zlokalizowanej wersji licencji rozszerzenia|
 |`<MoreInfo>`| Link do zlokalizowanych informacji o rozszerzeniu|
-|`<ReleaseNotes>`| Ścieżka lub link do zlokalizowaną wersję informacje o wersji|
-|`<Icon>`| Ścieżka do zlokalizowaną wersję ikonę rozszerzenia|
+|`<ReleaseNotes>`| Ścieżka lub link do zlokalizowanej wersji informacji o wersji|
+|`<Icon>`| Ścieżka do zlokalizowanej wersji ikony rozszerzeń|
 
-### <a name="sample-manifest"></a>Manifest próbki
+### <a name="sample-manifest"></a>Przykładowy manifest
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -69,6 +67,6 @@ W ramach `<Metadata>` element może mieć następujące elementy:
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)|Pokazuje, jak do obsługi zlokalizowanej instalację pakietu VSIX.|
-|[Odwołanie do schematu 2.0 rozszerzenia VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX manifest w tym artykule opisano zawartość *.vsix* pliku wdrożenia. Plik wdrożenia umożliwia zainstalowanie rozszerzenia programu Visual Studio przy użyciu **rozszerzenia i aktualizacje** okno dialogowe.|
-|[Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Ilustruje sposób używania **rozszerzenia i aktualizacje** okno dialogowe instalowanie, usuwanie, włączanie i wyłączanie rozszerzenia.|
+|[Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)|Pokazuje, jak zapewnić zlokalizowaną obsługę instalacji pakietu VSIX.|
+|[Dokumentacja schematu rozszerzenia VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)|Manifest VSIX opisuje zawartość pliku wdrożenia *. vsix* . Plik wdrożenia umożliwia zainstalowanie rozszerzenia programu Visual Studio przy użyciu okna dialogowego **rozszerzenia i aktualizacje** .|
+|[Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Pokazuje, w jaki sposób używać okna dialogowego **rozszerzenia i aktualizacje** do instalowania, usuwania, uaktywniania i dezaktywowania rozszerzeń.|
