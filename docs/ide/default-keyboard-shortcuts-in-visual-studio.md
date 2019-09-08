@@ -13,38 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160041"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766030"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
-Możesz uzyskać dostęp szereg [polecenia](reference/visual-studio-commands.md) i systemu windows w programie Visual Studio, wybierając odpowiednie skróty klawiaturowe. Ta strona zawiera listę domyślnych skrótów poleceń dla **ogólne** profil, który być może wybrano podczas instalowania programu Visual Studio. Niezależnie od wybranego profilu, możesz [identyfikowanie skrótu](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) dla polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **Klawiatury**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
+Możesz uzyskać dostęp do różnych [poleceń](reference/visual-studio-commands.md) i okien w programie Visual Studio, wybierając odpowiedni skrót klawiaturowy. Ta strona zawiera listę domyślnych skrótów poleceń profilu **ogólnego** , które mogą zostać wybrane podczas instalacji programu Visual Studio. Niezależnie od tego, który profil został wybrany, możesz [zidentyfikować skrót](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) do polecenia, otwierając okno dialogowe **Opcje** , rozwijając węzeł **środowisko** , a następnie wybierając pozycję **Klawiatura**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
 
-Aby uzyskać listę typowych skrótów klawiaturowych i innych informacji o wydajności Zobacz:
+Aby uzyskać listę typowych skrótów klawiaturowych i innych informacji o produktywności, zobacz:
 
 - [Skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Wskazówki dotyczące klawiatury](../ide/productivity-shortcuts.md)
-- [Wskazówki dotyczące produktywności](../ide/productivity-features.md).
+- [Porady dotyczące klawiatury](../ide/productivity-shortcuts.md)
+- [Porady dotyczące produktywności](../ide/productivity-features.md).
 
-Aby uzyskać więcej informacji na temat ułatwień dostępu w programie Visual Studio, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md) i [jak: Używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Aby uzyskać więcej informacji na temat ułatwień dostępu w programie Visual Studio, zobacz [ [porady i wskazówki dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md) oraz instrukcje: Używaj wyłącznie](../ide/reference/how-to-use-the-keyboard-exclusively.md)klawiatury.
 
 |||||
 |-|-|-|-|
 |[Analyze](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Edytowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
 |[Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menu kontekstowe edytora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menu kontekstowe projektu i rozwiązania](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Eksplorator testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Kompilacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Plik](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refaktoryzacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Narzędzia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[Menu kontekstowe widoku klas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Widok](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Debugowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test obciążeniowy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Window](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
+|[Menu kontekstowe Widok klasy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Widok](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
+|[Debugowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test obciążenia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Window](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Menu kontekstowe debugera](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Inne menu kontekstowe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menu kontekstowe Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Centrum diagnostyki](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="global-shortcuts"></a>Globalne skróty
+## <a name="global-shortcuts"></a>Skróty globalne
 
-Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać ich w przypadku dowolnego okna programu Visual Studio jest ustawiony fokus.
+Skróty klawiaturowe są *globalne*, co oznacza, że można ich użyć, gdy dowolne okno programu Visual Studio ma fokus.
 
 ### <a name="bkmk_analyze"></a> Analizowanie
 
@@ -63,7 +63,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
-|Build.BuildSelection|**CTRL + B** (Visual Studio 2019 r)|
+|Build. BuildSelection|**Ctrl + B** (Visual Studio 2019)|
 |Build.BuildSolution|**Ctrl + Shift + B**|
 |Build.Cancel|**Ctrl + Break**|
 |Build.Compile|**CTRL + F7**|
@@ -90,7 +90,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |Debug.DOMExplorer|**Ctrl + Alt + V, D**|
 |Debug.EnableBreakpoint|**CTRL + F9**|
 |Debug.Exceptions|**Ctrl + Alt + E**|
-|Debug.FunctionBreakpoint|**CTRL + K, B** (Visual Studio 2019 r)<br />**Ctrl**+**B** (Visual Studio 2017)|
+|Debug.FunctionBreakpoint|**Ctrl + K, B** (Visual Studio 2019)<br />Ctrl+**B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl + Shift + F11**|
 |Debug.Graphics.StartDiagnostics|**ALT + F5**|
 |Debug.Immediate|**Ctrl + Alt + I**|
@@ -114,7 +114,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |Debug.ParallelWatch3|**Ctrl + Shift + D, 3**|
 |Debug.ParallelWatch4|**Ctrl + Shift + D, 4**|
 |Debug.Processes|**Ctrl + Alt + Z**|
-|Debug.QuickWatch|**SHIFT + F9** lub **Ctrl + Alt + Q**|
+|Debug.QuickWatch|**SHIFT + F9** lub **CTRL + ALT + Q**|
 |Debug.RefreshWindowsapp|**Ctrl + Shift + R**|
 |Debug.Registers|**Ctrl + Alt + G**|
 |Debug.Restart|**Ctrl + Shift + F5**|
@@ -130,8 +130,8 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |Debug.StepIntoSpecific|**Shift + Alt + F11**|
 |Debug.StepOut|**Shift+F11**|
 |Debug.StepOutCurrentProcess|**Ctrl + Shift + Alt + F11**|
-|Debug.StepOver|**F10** (podczas debugowania: Wykonuje krok akcji)|
-|Debug.StepOver|**F10** (podczas debugowania nie: Uruchomiony zostanie program debugowania i zatrzymuje się w pierwszym wierszu kodu użytkownika)|
+|Debug.StepOver|**F10** (Podczas debugowania: Wykonuje krok nad akcją)|
+|Debug.StepOver|**F10** (W przypadku braku debugowania: Uruchamia debugowanie i kończy się w pierwszym wierszu kodu użytkownika)|
 |Debug.StepOverCurrentProcess|**Ctrl + Alt + F10**|
 |Debug.StopDebugging|**SHIFT + F5**|
 |Debug.StopPerformanceAnalysis|**Shift + Alt + F2**|
@@ -166,7 +166,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |Edit.Cut|**CTRL + X**<br /><br /> lub<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> lub<br /><br /> **Ctrl + Shift + dodatki**|
 |Edit.Delete|**Delete**|
-|Edit.Duplicate|**CTRL + D**|
+|Edytuj. Duplikuj|**CTRL + D**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**Ctrl + Shift + F**|
@@ -176,12 +176,12 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |Edit.FindPreviousSelected|**Ctrl + Shift + F3**|
 |Edit.GenerateMethod|**CTRL + K, Ctrl + M**|
 |Edit.GoTo|**CTRL + G**|
-|Edit.GoToAll|**CTRL +** lub **klawisze Ctrl + T**|
+|Edit.GoToAll|**Ctrl +** lub **Ctrl + T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToMember|**CTRL + 1, Ctrl + M** lub **Ctrl + M 1,** lub **Alt +\\**|
-|Edit.GoToNextLocation|**F8** (następny błąd w oknie Lista błędów lub danych wyjściowych)|
-|Edit.GoToPrevLocation|**SHIFT + F8** (poprzedni błąd w oknie Lista błędów lub danych wyjściowych)|
+|Edit.GoToMember|**Ctrl + 1, Ctrl + M** lub **Ctrl + 1, M** lub **Alt +\\**|
+|Edit.GoToNextLocation|**F8** (Następny błąd w Lista błędów lub oknie danych wyjściowych)|
+|Edit.GoToPrevLocation|**Shift + F8** (Poprzedni błąd w Lista błędów lub oknie danych wyjściowych)|
 |Edit.InsertSnippet|**CTRL + K, Ctrl + X**|
 |Edit.MoveControlDown|**CTRL + Strzałka w dół**|
 |Edit.MoveControlDownGrid|**Strzałka w dół**|
@@ -193,7 +193,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |Edit.MoveControlUpGrid|**Strzałka w górę**|
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
-|Edit.OpenFile|**Ctrl + Shift + G** (otwiera nazwę pliku, w obszarze kursora)|
+|Edit.OpenFile|**Ctrl + Shift + G** (Otwiera nazwę pliku pod kursorem)|
 |Edit.Paste|**CTRL + V**<br /><br /> lub<br /><br /> **SHIFT + dodatki**|
 |Edit.PreviousBookmark|**CTRL + K, Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + P**|
@@ -341,9 +341,13 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |--------------| - |
 |TestExplorer.DebugAllTests|**CTRL + R, Ctrl + A**|
 |TestExplorer.DebugAllTestsInContext|**CTRL + R, Ctrl + T**|
+|TestExplorer.DebugLastRun|**Ctrl + R, D**|
 |TestExplorer.RepeatLastRun|**CTRL + R, G**|
 |TestExplorer.RunAllTests|**CTRL + R, A**|
 |TestExplorer.RunAllTestsInContext|**CTRL + R, T**|
+|TestExplorer.ShowTestExplorer|**Ctrl + E, T**|
+|LiveUnitTesting.OpenTab|**Ctrl + E, L**|
+|Test. CodeCoverageResults|**CTRL + E, C**|
 
 ### <a name="bkmk_tools"></a> Narzędzia
 
@@ -359,7 +363,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |--------------| - |
 |View.AllWindows|**Shift + Alt + M**|
 |View.ArchitectureExplorer|**CTRL +\\, Ctrl + R**|
-|View.Backward|**Alt + Strzałka w lewo** (funkcje inaczej niż w edytorze tekstu View.NavigateBackward)|
+|View.Backward|**Alt + Strzałka w lewo** (Funkcje różnią się w zależności od widoku. NavigateBackward w edytorze tekstu)|
 |View.BookmarkWindow|**CTRL + K, Ctrl + W**|
 |View.BrowseNext|**Ctrl + Shift + 1**|
 |View.BrowsePrevious|**Ctrl + Shift + 2**|
@@ -374,7 +378,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |View.ErrorList|**CTRL +\\, E**<br /><br /> lub<br /><br /> **CTRL +\\, Ctrl + E**|
 |View.F#Interactive|**Ctrl + Alt + F**|
 |View.FindSymbolResults|**Ctrl + Alt + F12**|
-|View.Forward|**Alt + Strzałka w prawo** (funkcje inaczej niż w edytorze tekstu View.NavigateForward)|
+|View.Forward|**Alt + Strzałka w prawo**  (Funkcje różnią się w zależności od widoku. NavigateForward w edytorze tekstu)|
 |View.ForwardBrowseContext|**Ctrl + Shift + 7**|
 |View.FullScreen|**Shift + Alt + Enter**|
 |View.NavigateBackward|**CTRL +-**|
@@ -384,7 +388,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL + K, Ctrl + R**|
 |View.Output|**Ctrl + Alt + O** (litery ' O')|
-|View.PopBrowseContext|**Ctrl + Shift + 8** (C++ tylko)|
+|Widok. PopBrowseContext|**Ctrl + Shift + 8** (C++ tylko)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**SHIFT + F4**|
 |View.ResourceView|**Ctrl + Shift + E**|
@@ -401,6 +405,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 |View.WebBrowser|**Ctrl + Alt + R**|
 |View.ZoomIn|**Ctrl + Shift +.**|
 |View.ZoomOut|**Ctrl + Shift +,**|
+|TestExplorer.ShowTestExplorer|**Ctrl + E, T**|
 
 ### <a name="bkmk_window"></a> Okno
 
@@ -789,7 +794,7 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 | Edit.CollapseCurrentRegion | **CTRL + M, Ctrl + S** |
 | Edit.CollapseTag | **CTRL + M, Ctrl + T** |
 | Edit.CollapseToDefinitions | **CTRL + M, Ctrl + O** (litery ' O') |
-| Edit.ContractSelection | **Shift + Alt +-** (non -C++ tylko) |
+| Edytuj. ContractSelection | **Shift + Alt +-** (nieC++ tylko) |
 | Edit.CommentSelection | **CTRL + K, Ctrl + C** |
 | Edit.CompleteWord | **CTRL + SPACJA**<br /><br /> lub<br /><br /> **Alt + Strzałka w prawo** |
 | Edit.CopyParameterTip | **Ctrl + Shift + Alt + C** |
@@ -802,8 +807,8 @@ Te skróty klawiaturowe są *globalnego*, co oznacza, których można używać i
 | Edit.DocumentStartExtend | **Ctrl + Shift + Home** |
 | Edit.ExpandAllOutlining | **CTRL + M, Ctrl + X** |
 | Edit.ExpandCurrentRegion | **CTRL + M, Ctrl + E** |
-| Edit.ExpandSelection | **Shift + Alt +=** (non -C++ tylko) |
-| Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
+| Edit.ExpandSelection | **Shift + Alt + =** (nieC++ tylko) |
+| Edit.ExpandSelectiontoContainingBlock | **Shift + Alt +]** |
 | Edit.FormatDocument | **CTRL + K, Ctrl + D** |
 | Edit.FormatSelection | **CTRL + K, Ctrl + F** |
 | Edit.GotoAll | **Ctrl+T**<br /><br /> lub<br /><br /> **CTRL +** |

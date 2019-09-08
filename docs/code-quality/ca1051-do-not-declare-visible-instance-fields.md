@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547556"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766055"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Nie deklaruj widocznych pól w wystąpieniach
 
@@ -38,9 +38,11 @@ Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to 
 
 ## <a name="rule-description"></a>Opis reguły
 
-Głównym zastosowaniem pola powinno być to, co szczegółowo opisuje implementacja. Pola powinny być `private` lub `internal` i powinny być udostępniane przy użyciu właściwości. Uzyskiwanie dostępu do właściwości w taki sposób, aby uzyskać dostęp do pola, a kod w metodzie dostępu do właściwości może ulec zmianie jako funkcje typu rozwinięte bez wprowadzania istotnych zmian. Właściwości, które po prostu zwracają wartość pola prywatnego lub wewnętrznego, są zoptymalizowane do wykonywania na wartości nominalnej z dostępem do pola. bardzo mały wzrost wydajności jest skojarzony z użyciem widocznych zewnętrznie pól nad właściwościami.
+Głównym zastosowaniem pola powinno być to, co szczegółowo opisuje implementacja. Pola powinny być `private` lub `internal` i powinny być udostępniane przy użyciu właściwości. Uzyskiwanie dostępu do właściwości w taki sposób, aby uzyskać dostęp do pola, a kod w metodzie dostępu do właściwości może ulec zmianie jako funkcje typu rozwinięte bez wprowadzania istotnych zmian.
 
-Widoczne na zewnątrz odnoszą `public`się `protected`do poziomów `protected internal` dostępności, `Protected`, i `Protected Friend` (`Public`, i w Visual Basic).
+Właściwości, które po prostu zwracają wartość pola prywatnego lub wewnętrznego, są zoptymalizowane do wykonywania na wartości nominalnej z dostępem do pola. wzrost wydajności z używania widocznych zewnętrznie pól zamiast właściwości jest minimalny. *Widoczne na zewnątrz* odnoszą `public`się `protected`do poziomów dostępności, `Protected`, i `Protected Friend` `protected internal` (`Public`, i w Visual Basic).
+
+Ponadto pola publiczne nie mogą być chronione przez [żądania połączeń](/dotnet/framework/misc/link-demands). Aby uzyskać więcej informacji, [zobacz CA2112: Zabezpieczone typy nie powinny ujawniać](../code-quality/ca2112-secured-types-should-not-expose-fields.md)pól. (Wymagania dotyczące linków nie mają zastosowania do aplikacji .NET Core).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -48,7 +50,12 @@ Aby naprawić naruszenie tej zasady, należy wprowadzić pole `private` lub `int
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły. Pola widoczne na zewnątrz nie zapewniają żadnych korzyści, które nie są dostępne dla właściwości. Ponadto pola publiczne nie mogą być chronione przez [żądania połączeń](/dotnet/framework/misc/link-demands). Zobacz [CA2112: Zabezpieczone typy nie powinny ujawniać](../code-quality/ca2112-secured-types-should-not-expose-fields.md)pól.
+Pomiń to ostrzeżenie tylko wtedy, gdy masz pewność, że klienci potrzebują bezpośredniego dostępu do pola. W przypadku większości aplikacji uwidocznione pola nie zapewniają wydajności ani korzyści płynących z używania właściwości.
+
+Konsumenci mogą potrzebować dostępu do pól w następujących sytuacjach:
+
+- w kontrolkach zawartości formularzy sieci Web ASP.NET
+- gdy platforma docelowa korzysta z `ref` programu, aby zmodyfikować pola, takie jak platformy Model-View-ViewModel (MVVM) dla WPF i platformy UWP
 
 ## <a name="configurability"></a>Określając
 

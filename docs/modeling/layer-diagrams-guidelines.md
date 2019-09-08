@@ -12,70 +12,70 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c470d5d4001238c9a803f0b6598fbedf9d346bc
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6241a92d8f40a75ba98f09b7e1e0f113e45d4be8
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824194"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766501"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy zależności: wskazówki
 
-Opis architektury aplikacji na wysokim poziomie, tworząc *diagramów zależności* w programie Visual Studio. Upewnij się, że kod pozostaje zgodny z tym projektem, sprawdzanie poprawności kodu za pomocą diagram zależności. Można także dodać sprawdzanie poprawności warstwy w procesie kompilacji. Zobacz [wideo Channel 9: Projektowanie i Walidacja architektury za pomocą diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
+Opisz architekturę aplikacji na wysokim poziomie, tworząc *diagramy zależności* w programie Visual Studio. Upewnij się, że kod pozostaje spójny z tym projektem, sprawdzając poprawność kodu przy użyciu diagramu zależności. Możesz również uwzględnić walidację warstwy w procesie kompilacji. Zobacz [wideo w kanale 9: Projektuj i Weryfikuj architekturę przy użyciu diagramów](http://go.microsoft.com/fwlink/?LinkID=252073)zależności.
 
-Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Diagramy zależności nie są obsługiwane dla projektów .NET Core w programie Visual Studio.
+> Diagramy zależności dla projektów .NET Core są obsługiwane począwszy od programu Visual Studio 2019 w wersji 16,2.
 
 ## <a name="what-is-a-dependency-diagram"></a>Co to jest diagram zależności?
 
-Przykład diagramu tradycyjna architektura diagram zależności identyfikuje główne składniki lub jednostki organizacyjne projektu i ich współzależności. Wywołuje się, każdy węzeł na diagramie *warstwy*, reprezentuje grupę logiczną przestrzenie nazw, projekty lub inne artefakty. Aby narysować zależności, które powinny istnieć w projekcie. W przeciwieństwie do diagramu tradycyjna architektura można zweryfikować, że rzeczywiste zależności w kodzie źródłowym są zgodne z zależności zamierzone, które zostały określone przez. Dokonując weryfikacji część regularnych kompilacji na [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], można upewnić się, że kod programu nadal stosować się do architektury systemu poprzez przyszłe zmiany. Zobacz [diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md).
+Podobnie jak w przypadku tradycyjnego diagramu architektury, diagram zależności identyfikuje główne składniki lub jednostki funkcjonalne projektu i ich współzależności. Każdy węzeł na diagramie o nazwie *warstwa*reprezentuje logiczną grupę przestrzeni nazw, projektów lub innych artefaktów. Możesz narysować zależności, które powinny istnieć w projekcie. W przeciwieństwie do tradycyjnego diagramu architektury można sprawdzić, czy rzeczywiste zależności w kodzie źródłowym są zgodne z zamierzonymi zależnościami określonymi przez użytkownika. Dzięki wprowadzeniu częściowej walidacji regularnej kompilacji [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]w programie można upewnić się, że kod programu będzie nadal przestrzegać architektury systemu przy użyciu przyszłych zmian. Zobacz [diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md).
 
-## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Jak zaprojektować lub zaktualizuj aplikację przy użyciu diagramów zależności
+## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Jak projektować lub aktualizować aplikację przy użyciu diagramów zależności
 
-W poniższych krokach przedstawiono omówienie sposobu używania diagramów zależności w ramach procesu tworzenia. Kolejnych sekcjach, w tym temacie opisano bardziej szczegółowo o każdym kroku. Jeśli tworzysz nowy projekt, należy pominąć kroki, które odwołują się do istniejącego kodu.
+Poniższe kroki zawierają omówienie sposobu używania diagramów zależności w ramach procesu tworzenia oprogramowania. W kolejnych sekcjach tego tematu opisano więcej szczegółów na temat każdego kroku. Jeśli tworzysz nowy projekt, Pomiń procedurę odwołującą się do istniejącego kodu.
 
 > [!NOTE]
-> Te kroki są wyświetlane w kolejności przybliżone. Prawdopodobnie warto nakładać się na zadaniach, zmienić kolejność je do potrzeb swojej własnej sytuacji i ich ponowne przeanalizowanie wraz na początku każdej iteracji w projekcie.
+> Te kroki są wyświetlane w przybliżonej kolejności. Prawdopodobnie chcesz nakładać się na zadania, zmienić ich kolejność, aby dostosować je do własnych sytuacji i ponownie je odwiedzać na początku każdej iteracji w projekcie.
 
-1. [Utwórz diagram zależności](#Create) dla całej aplikacji lub dla warstwy znajdujący się w nim.
+1. [Utwórz diagram zależności](#Create) dla całej aplikacji lub dla warstwy wewnątrz niej.
 
-2. [Zdefiniuj warstwy do reprezentowania podstawowych obszarów funkcjonalnych lub składniki](#CreateLayers) aplikacji. Nazwy tych warstw, zgodnie z ich funkcji, na przykład "Prezentacji" lub "Usługi". Jeśli masz rozwiązanie programu Visual Studio, każda warstwa można skojarzyć z kolekcją *artefaktów*, takich jak projekty, przestrzenie nazw, pliki i tak dalej.
+2. [Zdefiniuj warstwy, aby reprezentować podstawowe obszary funkcjonalne lub składniki](#CreateLayers) aplikacji. Nazwij te warstwy według ich funkcji, na przykład "prezentacja" lub "usługi". Jeśli masz rozwiązanie programu Visual Studio, możesz skojarzyć każdą warstwę z kolekcją *artefaktów*, takimi jak projekty, przestrzenie nazw, pliki i tak dalej.
 
 3. [Odkryj istniejące zależności](#Generate) między warstwami.
 
-4. [Edytowanie warstw i zależności](#EditArchitecture) Aby wyświetlić zaktualizowany projekt ma kod, aby odzwierciedlić.
+4. [Edytuj warstwy i zależności](#EditArchitecture) , aby wyświetlić zaktualizowany projekt, który ma być odzwierciedlany przez kod.
 
-5. [Projektowanie nowych obszarów aplikacji](#NewAreas) , tworząc warstwy do reprezentowania bloków architektury podmiotu zabezpieczeń lub składniki i definiowanie zależności, aby pokazać, jak każda warstwa używa innych.
+5. [Zaprojektuj nowe obszary aplikacji](#NewAreas) przez utworzenie warstw do reprezentowania głównych bloków architektury lub składników i zdefiniowanie zależności, aby pokazać, w jaki sposób każda warstwa używa innych.
 
-6. [Edytuj układ i wygląd diagramu](#EditLayout) ułatwiające omówić go współpracownikom.
+6. [Edytuj układ i wygląd diagramu](#EditLayout) , aby pomóc w omówieniu go współpracownikom.
 
-7. [Walidować kod dla diagram zależności](#Validate) do wyróżnienia konfliktów między kodem i architektura potrzebujesz.
+7. [Sprawdź poprawność kodu względem diagramu zależności](#Validate) , aby wyróżnić konflikty między kodem a wymaganą architekturą.
 
-8. [Aktualizowanie kodu do nowej architektury](#UpdateCode). Wielokrotnie tworzenie i refaktoryzacji kodu, aż sprawdzanie poprawności pokazuje żadne konflikty.
+8. [Zaktualizuj kod, aby był zgodny z nową architekturą](#UpdateCode). Iteracyjnie opracowuje i refaktoryzacji kodu do momentu, gdy Walidacja nie wyświetli żadnych konfliktów.
 
-9. [Uwzględniając sprawdzanie poprawności warstwy w procesie kompilacji](#BuildValidation) aby upewnić się, że kod nadal stosować się do projektu.
+9. [Uwzględnij walidację warstwy w procesie kompilacji](#BuildValidation) , aby upewnić się, że kod będzie nadal zgodny z projektem.
 
-## <a name="Create"></a> Tworzenie diagramów zależności
+## <a name="Create"></a>Tworzenie diagramu zależności
 
-Diagram zależności, należy utworzyć w projekcie modelowania. Możesz Dodaj nowy diagram zależności do istniejącego projektu modelowania, Utwórz nowy projekt modelowania diagram zależności lub Kopiuj istniejącego diagramu zależności w obrębie tego samego projektu modelowania.
+Diagram zależności musi być utworzony w projekcie modelowania. Można dodać nowy diagram zależności do istniejącego projektu modelowania, utworzyć nowy projekt modelowania dla diagramu zależności lub skopiować istniejący diagram zależności w ramach tego samego projektu modelowania.
 
 > [!IMPORTANT]
-> Nie dodawać, przeciągnij lub skopiuj istniejący diagram zależności z projektu modelowania do innego projektu modelowania lub w innej lokalizacji w rozwiązaniu. Diagram zależności, które są kopiowane w ten sposób mają te same odwołania jako oryginalnego diagramu nawet wtedy, gdy modyfikować diagram. To uniemożliwi uniemożliwić prawidłowe działanie walidacji warstwy i spowodować innych problemów, takich jak brakujące elementy lub inne błędy podczas próby otwarcia diagramu.
+> Nie dodawaj, nie przeciągaj ani nie Kopiuj istniejącego diagramu zależności z projektu modelowania do innego projektu modelowania lub do innej lokalizacji w rozwiązaniu. Diagram zależności, który jest kopiowany w ten sposób, będzie miał takie same odwołania jak oryginalny diagram, nawet w przypadku zmodyfikowania diagramu. Uniemożliwi to prawidłowe działanie walidacji warstwy i może spowodować inne problemy, takie jak brakujące elementy lub inne błędy podczas próby otwarcia diagramu.
 
-Zobacz [tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md).
+Zobacz [Tworzenie diagramów zależności na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md).
 
-## <a name="CreateLayers"></a> Zdefiniuj warstwy do reprezentowania obszarów funkcjonalnych i składników
+## <a name="CreateLayers"></a>Definiowanie warstw do reprezentowania obszarów funkcjonalnych lub składników
 
-Warstwy reprezentują logiczne grupy *artefaktów*, takich jak projekty, pliki kodu, przestrzenie nazw, klasy i metody. Możesz utworzyć warstwy z artefaktów w projektach Visual C# i Visual Basic lub do warstwy można dołączyć specyfikacje lub plany, łącząc dokumenty, takie jak pliki programu Word lub prezentacje programu PowerPoint. Każda warstwa jest wyświetlana jako prostokąt na diagramie i pokazuje liczbę artefaktów, które są połączone. Warstwa może zawierać zagnieżdżone warstwy opisujące bardziej szczegółowe zadania.
+Warstwy reprezentują logiczne grupy *artefaktów*, takie jak projekty, pliki kodu, przestrzenie nazw, klasy i metody. Można tworzyć warstwy z artefaktów z projektów C# wizualizacji i Visual Basic, lub dołączać specyfikacje lub plany do warstwy, łącząc dokumenty, takie jak pliki programu Word lub prezentacje programu PowerPoint. Każda warstwa jest wyświetlana jako prostokąt na diagramie i pokazuje liczbę artefaktów, które są z nią połączone. Warstwa może zawierać zagnieżdżone warstwy, które opisują bardziej szczegółowe zadania.
 
-Ogólną wytyczną, nazwa warstwy zgodnie z ich funkcji, na przykład "Prezentacji" lub "Usługi". Jeśli artefakty są ściśle wzajemnie, należy je umieścić w tej samej warstwie. Jeśli artefakty mogą być aktualizowane oddzielnie lub używany w aplikacjach w oddzielnych, umieść je w różnych warstwach. Aby dowiedzieć się więcej na temat wzorców warstwowe, znaleźć wzorce i praktyki [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).
+Ogólną wytyczną jest nazwa warstw, zgodnie z ich funkcją, na przykład "prezentacja" lub "usługi". Jeśli artefakty są blisko siebie zależne, umieść je w tej samej warstwie. Jeśli artefakty mogą być aktualizowane oddzielnie lub używane w oddzielnych aplikacjach, umieść je w różnych warstwach. Aby dowiedzieć się więcej o wzorcach warstwowych, odwiedź witrynę & [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794)Practices w temacie.
 
 > [!TIP]
-> Brak niektórych rodzajów artefaktów, które można połączyć z warstwy, ale które nie obsługują weryfikacji względem diagram zależności. Aby sprawdzić, czy artefakt obsługuje walidację, otwórz **Eksplorator warstw** zbadanie **obsługuje walidację** właściwości łącza artefaktu. Zobacz [odnajdywanie istniejące zależności między warstwami](#Generate).
+> Istnieją pewne typy artefaktów, które można połączyć z warstwami, ale nie obsługują walidacji względem diagramu zależności. Aby sprawdzić, czy artefakt obsługuje walidację, Otwórz **Eksploratora warstw** , aby sprawdzić Właściwość **obsługuje walidację** łącza artefaktu. Zobacz sekcję [odnajdywanie istniejących zależności między warstwami](#Generate).
 
-Podczas aktualizowania nieznanych aplikacji, można również tworzyć mapy kodu. Te diagramy ułatwia odnajdowanie wzorców i zależności, chociaż możesz zapoznać się z kodu. Aby zapoznać się z przestrzeni nazw i klasy, które często dobrze odpowiadają istniejącym warstwom jednak używać Eksploratora rozwiązań. Przypisz te artefakty kodu do warstwy, przeciągając je w Eksploratorze rozwiązań do diagramów zależności. Można następnie użyć diagramów zależności, aby ułatwić aktualizowanie kodu i Utrzymaj spójne z projektu.
+Podczas aktualizowania nieznanej aplikacji można również utworzyć mapy kodu. Te diagramy mogą pomóc w znalezieniu wzorców i zależności podczas eksplorowania kodu. Użyj Eksplorator rozwiązań, aby eksplorować przestrzenie nazw i klasy, które często są dobrze zgodne z istniejącymi warstwami. Przypisz te artefakty kodu do warstw, przeciągając je z Eksplorator rozwiązań do diagramów zależności. Następnie można użyć diagramów zależności, aby ułatwić Aktualizowanie kodu i zachować spójność z projektem.
 
 Zobacz:
 
@@ -85,92 +85,92 @@ Zobacz:
 
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 
-## <a name="Generate"></a> Odkryj istniejące zależności między warstwami
+## <a name="Generate"></a>Odkryj istniejące zależności między warstwami
 
-Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Można sprawdzić istniejące zależności, odtwarzania je.
+Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Istniejące zależności można wykrywać przez odbudowane.
 
 > [!NOTE]
-> Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby zobaczyć, które artefakty mają zależności, które można odtwarzać, kliknij prawym przyciskiem myszy jednego lub wielu warstw, a następnie kliknij przycisk **Wyświetl łącza**. W **Eksplorator warstw**, sprawdź **obsługuje walidację** kolumny. Zależności nie będą odtwarzane dla artefaktów, dla których ta kolumna zawiera **False**.
+> Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby sprawdzić, które artefakty mają zależności, które można odtworzyć, kliknij prawym przyciskiem myszy jedną lub wiele warstw, a następnie kliknij pozycję **Wyświetl linki**. W **Eksploratorze warstwy**zapoznaj się z kolumną **Obsługa walidacji** . Zależności nie będą odtwarzane w przypadku artefaktów, dla których ta kolumna pokazuje **wartość false**.
 
-### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Aby odtwarzać istniejące zależności między warstwami
+### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Aby odtworzyć istniejące zależności między warstwami
 
-Wybierz warstwę jednego lub wielu warstw, kliknij prawym przyciskiem myszy zaznaczonej warstwy, a następnie kliknij **Wygeneruj zależności**.
+Wybierz jedną warstwę lub wiele warstw, kliknij prawym przyciskiem myszy wybraną warstwę, a następnie kliknij polecenie **Generuj zależności**.
 
 Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.
 
-## <a name="EditArchitecture"></a> Edytowanie warstw i zależności w celu przedstawienia zamierzonego projektu
+## <a name="EditArchitecture"></a>Edycja warstw i zależności w celu pokazania zamierzonego projektu
 
-Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, umożliwia edytowanie diagram zależności następujące kroki. Można też rozważyć wprowadzamy zmiany refaktoryzacji w celu struktury kodu przed jej rozszerzeniem. Zobacz [poprawy struktury kodu](#Improving).
+Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, wykonaj następujące kroki, aby edytować diagram zależności. Można również rozważyć wprowadzenie zmian refaktoryzacji w celu poprawy struktury kodu przed jego rozszerzeniem. Zobacz [ulepszanie struktury kodu](#Improving).
 
 |**To**|**Wykonaj następujące kroki**|
 |-|-|
-|Usuń zależności, które nie powinny istnieć|Kliknij zależności, a następnie naciśnij klawisz **Usuń**.|
-|Zmień lub ogranicz kierunek zależności|Ustaw jego **kierunek** właściwości.|
-|Tworzenie nowych zależności|Użyj **zależności** i **zależność dwukierunkowa** narzędzia.<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, kliknij przycisk **wskaźnik** narzędzi lub naciśnij klawisz **ESC** klucza.|
-|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione zależności Namespace** właściwości. Użyj średnika ( **;** ) do oddzielenia przestrzeni nazw.|
-|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione przestrzenie nazw** właściwości. Użyj średnika ( **;** ) do oddzielenia przestrzeni nazw.|
-|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw w warstwie **wymagane przestrzenie nazw** właściwości. Użyj średnika ( **;** ) do oddzielenia przestrzeni nazw.|
+|Usuń zależność, która nie powinna istnieć|Kliknij zależność, a następnie naciśnij klawisz **delete**.|
+|Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|
+|Tworzenie nowych zależności|Użyj **zależności** i **dwukierunkowych narzędzi zależności** .<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, kliknij narzędzie **wskaźnik** lub naciśnij klawisz **ESC** .|
+|Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **niedozwolone zależności przestrzeni nazw** . Użyj średnika ( **;** ), aby oddzielić przestrzenie nazw.|
+|Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w właściwości **zabronione przestrzenie nazw** warstwy. Użyj średnika ( **;** ), aby oddzielić przestrzenie nazw.|
+|Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw we właściwości **wymagane przestrzenie nazw** warstwy. Użyj średnika ( **;** ), aby oddzielić przestrzenie nazw.|
 
-### <a name="Improving"></a> Zwiększanie struktury kodu
+### <a name="Improving"></a>Ulepszanie struktury kodu
 
-Refaktoryzacji zmiany dotyczą poprawy nie wpływają na sposób działania aplikacji, które ułatwia kodu do zmiany i rozszerzać w przyszłości. Kod dobrze jest projekt, który jest łatwy do abstrakcyjnej diagram zależności.
+Zmiany refaktoryzacji są ulepszeniami, które nie wpływają na zachowanie aplikacji, ale ułatwiają zmianę i zwiększenie ich w przyszłości. Dobrze skonstruowany kod ma projekt, który jest łatwy do abstrakcyjny dla diagramu zależności.
 
-Na przykład jeśli tworzysz warstwę dla każdej przestrzeni nazw w kodzie i następnie odtwarzanie zależności, należy to minimalny zestaw jednokierunkowe zależności między warstwami. Jeśli tworzysz bardziej szczegółowego diagramu przy użyciu klasy lub metody jako warstw, w wyniku powinni również mieć takie same charakterystyki.
+Na przykład w przypadku utworzenia warstwy dla każdej przestrzeni nazw w kodzie, a następnie odtworzenia zależności między warstwami powinien istnieć minimalny zestaw współzależności jednokierunkowych między warstwy. Jeśli utworzysz bardziej szczegółowy diagram przy użyciu klas lub metod jako warstw, wynik powinien również mieć te same cechy.
 
-Jeśli nie jest to możliwe, kod będzie trudniejsze do zmieniają się przez cały jej użytkowania i będzie mniej odpowiednia do weryfikacji przy użyciu diagramów zależności.
+Jeśli tak się nie dzieje, kod będzie trudniejszy do zmiany w całym życiu i będzie mniej odpowiedni do walidacji przy użyciu diagramów zależności.
 
-## <a name="NewAreas"></a> Nowe obszary projektowania aplikacji
+## <a name="NewAreas"></a>Projektuj nowe obszary aplikacji
 
-Po uruchomieniu rozwoju nowy projekt lub nowy obszar w nowym projekcie można narysować warstw i zależności w celu identyfikowania głównych składników przed przystąpieniem do tworzenia kodu.
+Po rozpoczęciu opracowywania nowego projektu lub nowego obszaru w nowym projekcie można rysować warstwy i zależności, aby pomóc w zidentyfikowaniu głównych składników przed rozpoczęciem opracowywania kodu.
 
-- **Pokaż do zidentyfikowania wzorców architektonicznych** diagramy zależność, jeśli jest to możliwe. Na przykład diagram zależności, opisujący aplikacji pulpitu może obejmować warstw, takich jak prezentacja, logika domeny i Data Store. Diagram zależności, który obejmuje pojedynczej funkcji w aplikacji może być warstw, takich jak Model, widok i kontroler. Aby uzyskać więcej informacji o tych wzorcach, zobacz [wzorce i rozwiązania: Architektura aplikacji](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Pokaż identyfikowane wzorce architektury** na diagramach zależności, jeśli to możliwe. Na przykład diagram zależności opisujący aplikację klasyczną może obejmować takie warstwy jak prezentacja, Logika domeny i magazyn danych. Diagram zależności, który obejmuje pojedynczą funkcję w aplikacji, może mieć takie warstwy, jak model, widok i kontroler. Aby uzyskać więcej informacji na temat takich wzorców [, zobacz wzorce & praktyki: Architektura](http://go.microsoft.com/fwlink/?LinkId=145794)aplikacji.
 
-- **Tworzenie artefaktu kodu, dla każdej warstwy** takich jak przestrzeń nazw, klasy lub składnika. Ułatwia podążają za kodem i łączenie artefaktów kodu do warstw. Zaraz po utworzeniu każdego artefaktu, połącz go do odpowiedniej warstwy.
+- **Utwórz artefakt kodu dla każdej warstwy** , takiej jak przestrzeń nazw, Klasa lub składnik. Dzięki temu można łatwiej stosować kod i łączyć artefakty kodu z warstwami. Zaraz po utworzeniu każdego artefaktu należy połączyć go z odpowiednią warstwą.
 
-- **Nie masz połączyć większość klas i innych artefaktów do warstw** ponieważ mieści się w ramach większych artefaktów, takich jak przestrzenie nazw, które zostały już połączone z warstwami.
+- **Nie ma potrzeby łączenia większości klas i innych artefaktów z warstwami** , ponieważ należą one do większych artefaktów, takich jak przestrzenie nazw, które zostały już połączone z warstwami.
 
-- **Utwórz nowy diagram na nową funkcję**. Zazwyczaj będzie istnieć jeden lub więcej diagramów zależności opisujące całej aplikacji. W przypadku projektowania nowych funkcji w aplikacji, nie dodać do lub zmiana istniejących diagramów. Zamiast tego Utwórz własną diagram, który odzwierciedla nowej części kodu. Nowy diagram warstwy mogą obejmować prezentacja, logika domeny i warstwy bazy danych dla nowych funkcji.
+- **Utwórz nowy diagram dla nowej funkcji**. Zwykle istnieje co najmniej jeden diagram zależności opisujący całą aplikację. Jeśli projektujesz nową funkcję w aplikacji, nie dodawaj ani nie zmieniaj istniejących diagramów. Zamiast tego należy utworzyć własny diagram, który odzwierciedla nowe części kodu. Warstwy na nowym diagramie mogą obejmować prezentację, logikę domeny i warstwy bazy danych dla nowej funkcji.
 
-     W przypadku tworzenia aplikacji, kodu zostanie zweryfikowana, zarówno przed ogólny diagram i bardziej szczegółowe diagramu funkcji.
+     Podczas kompilowania aplikacji kod zostanie zweryfikowany zarówno na ogólnym diagramie, jak i na bardziej szczegółowym diagramie funkcji.
 
-## <a name="EditLayout"></a> Edytuj układ prezentacji i dyskusji
+## <a name="EditLayout"></a>Edytuj układ prezentacji i dyskusji
 
-Aby pomóc Ci zidentyfikować warstw i zależności lub wdasz z członkami zespołu, należy zmodyfikować wygląd i układ diagramu w następujący sposób:
+Aby ułatwić identyfikację warstw i zależności lub omawianie ich członkom zespołu, Edytuj wygląd i układ diagramu w następujący sposób:
 
-- Zmień rozmiary, kształty i położenie warstw.
+- Zmiana rozmiarów, kształtów i pozycji warstw.
 
 - Zmień kolory warstw i zależności.
 
-  - Wybierz jeden lub więcej warstw i zależności, kliknij prawym przyciskiem myszy, a następnie kliknij **właściwości**. W **właściwości** oknie edycji **kolor** właściwości.
+  - Wybierz co najmniej jedną warstwę lub zależności, kliknij prawym przyciskiem myszy, a następnie kliknij polecenie **Właściwości**. W oknie **Właściwości** Edytuj Właściwość **Color** .
 
-## <a name="Validate"></a> Sprawdź poprawność kodu na podstawie diagramu
+## <a name="Validate"></a>Sprawdzanie poprawności kodu względem diagramu
 
-Po zakończeniu edycji diagramu, użytkownik może sprawdzić jego poprawność kodu ręcznie w dowolnym momencie lub automatycznie każdym razem, gdy kompilujesz.
+Po edytowaniu diagramu można sprawdzić go ręcznie w dowolnym momencie lub automatycznie za każdym razem, gdy kompilujesz.
 
 Zobacz:
 
 - [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
 
-- [Uwzględniając sprawdzanie poprawności warstwy w procesie kompilacji](#BuildValidation)
+- [Uwzględnij walidację warstwy w procesie kompilacji](#BuildValidation)
 
-## <a name="UpdateCode"></a> Aktualizowanie kodu do nowej architektury
+## <a name="UpdateCode"></a>Zaktualizuj kod, aby był zgodny z nową architekturą
 
-Zazwyczaj błędy pojawią się sprawdzanie poprawności kodu na podstawie diagramu zaktualizowane zależności po raz pierwszy. Te błędy mogą mieć kilka przyczyn:
+Zwykle błędy pojawią się podczas pierwszego sprawdzania poprawności kodu na zaktualizowanym diagramie zależności. Te błędy mogą mieć kilka przyczyn:
 
 - Artefakt jest przypisany do niewłaściwej warstwy. W takim przypadku przenieś artefakt.
 
 - Artefakt, taki jak klasa, używa innej klasy w sposób, który powoduje konflikt z architekturą. W tym przypadku zrefaktoryzuj kod, aby usunąć zależność.
 
-Aby rozwiązać te błędy, aktualizuj kod, dopóki nie przestaną pojawiać się błędy podczas walidacji. Zazwyczaj jest procesem iteracyjnym. Aby uzyskać więcej informacji na temat tych błędów, zobacz [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md).
+Aby rozwiązać te błędy, aktualizuj kod, dopóki nie przestaną pojawiać się błędy podczas walidacji. Jest to zazwyczaj proces iteracyjny. Aby uzyskać więcej informacji o tych błędach, zobacz [Weryfikowanie kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md).
 
 > [!NOTE]
-> Tworzenie lub refaktoryzować kod, Niewykluczone, że nowe artefaktów, aby połączyć diagram zależności. Jednak może to nie być konieczne, na przykład w przypadku warstwy, które reprezentują istniejącej przestrzeni nazw, a nowy kod dodaje więcej materiału tylko z tymi przestrzeniami nazw.
+> Podczas opracowywania lub refaktoryzacji kodu, możesz mieć nowe artefakty do łączenia się z diagramem zależności. Jednak może to nie być konieczne, na przykład w przypadku warstw, które reprezentują istniejące przestrzenie nazw, a nowy kod dodaje więcej materiału do tych przestrzeni nazw.
 
-Podczas procesu projektowania możesz pominąć niektóre konflikty zgłoszone podczas walidacji. Na przykład możesz pominąć błędy, które są już poprawiane lub które nie są istotne w konkretnym scenariuszu. Gdy błąd zostanie pominięty, jest dobrym rozwiązaniem do dziennika element roboczy w programie Team Foundation. Aby wykonać to zadanie, zobacz [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md).
+Podczas procesu projektowania możesz pominąć niektóre konflikty zgłoszone podczas walidacji. Na przykład możesz pominąć błędy, które są już poprawiane lub które nie są istotne w konkretnym scenariuszu. W przypadku pominięcia błędu dobrym sposobem jest zarejestrowanie elementu pracy w programie Team Foundation. Aby wykonać to zadanie, zobacz [Weryfikowanie kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="BuildValidation"></a> Uwzględniając sprawdzanie poprawności warstwy w procesie kompilacji
+## <a name="BuildValidation"></a>Uwzględnij walidację warstwy w procesie kompilacji
 
-Aby upewnić się, że przyszłe zmiany w kodzie są zgodne z diagramów zależności, obejmują sprawdzanie poprawności warstwy do swojego rozwiązania standardowym procesem kompilacji. Zawsze, gdy inni członkowie zespołu Skompiluj rozwiązanie, różnice między zależności w kodzie i diagram zależności, będzie zgłaszane jako błędy kompilacji. Aby uzyskać więcej informacji o tym sprawdzania poprawności warstwy w procesie kompilacji, zobacz [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md).
+Aby zapewnić, że przyszłe zmiany w kodzie są zgodne z diagramami zależności, należy uwzględnić walidację warstwy w standardowym procesie kompilacji rozwiązania. Za każdym razem, gdy inny członek zespołu kompiluje rozwiązanie, wszelkie różnice między zależnościami w kodzie a diagramem zależności będą raportowane jako błędy kompilacji. Aby uzyskać więcej informacji na temat sprawdzania poprawności warstwy w procesie kompilacji, zobacz [Sprawdzanie poprawności kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md).
 
 ## <a name="see-also"></a>Zobacz także
 
