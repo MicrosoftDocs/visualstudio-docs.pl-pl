@@ -31,7 +31,7 @@
 # Edytor źródeł
 ## [Funkcje edytora](source-editor.md)
 ## [Refaktoryzacja](refactoring.md)
-## [Funkcja IntelliSense](intellisense.md)
+## [IntelliSense](intellisense.md)
 ## [Komentarze](comments.md)
 ## [Zachowanie edytora](editor-behavior.md)
 ## [Komentarze do zadań](task-comments.md)
@@ -67,7 +67,7 @@
 ## [Publikowanie w usłudze Azure App Service](publish-app-svc.md)
 ## [Publikowanie w folderze](publish-folder.md)
 
-# Pakiety robocze
+# Obciążenia
 ## [Dostępne obciążenia](workloads.md)
 ## ASP.NET Core
 ### [Obsługa platformy .NET Core](net-core-support.md)
@@ -86,7 +86,7 @@
 
 ## Projektowanie gier w środowisku Unity
 ### [Projektowanie gier w środowisku Unity](unity-tools.md)
-### [Konfiguracja](setup-vsmac-tools-unity.md)
+### [Konfigurowanie](setup-vsmac-tools-unity.md)
 ### [Wprowadzenie do korzystania z Unity](unity-walkthrough.md)
 ### [Używanie narzędzi Unity Tools](using-vsmac-tools-unity.md)
 ### [Używanie platformy .NET 4.x w środowisku Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
@@ -99,14 +99,14 @@
 ## [Dzienniki i wyjątki](troubleshooting.md)
 ## [Program poprawy jakości obsługi klienta systemu Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Zgłaszanie problemu](report-a-problem.md)
-## [Rozwiązywanie problemów: Czy program Visual Studio dla komputerów Mac obsługuje kontrolę wersji programu Team Foundation?](tf-version-control.md)
-## [Rozwiązywanie problemów: Dlaczego nie mogę wyświetlić wszystkich szablonów?](troubleshooting-no-templates.md)
+## [Troubleshooting: Czy program Visual Studio dla komputerów Mac obsługuje kontrolę wersji programu Team Foundation?](tf-version-control.md)
+## [Troubleshooting: Dlaczego nie mogę wyświetlić wszystkich szablonów?](troubleshooting-no-templates.md)
 ## [Rozwiązywanie problemów: Podczas pobierania informacji występują błędy aktualizatora](updater-troubleshooting.md)
 
-# [Uwagi do wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Informacje o wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Preview Release Notes (Informacje o wersji zapoznawczej)](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # Przykłady
-## [Polecane przykłady](samples.yml)
+## [Polecane przykłady](samples/index.yml)
 ## [Wszystkie przykłady platformy ASP.NET Core](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
 ## [Wszystkie przykłady platformy .NET Core](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
 ## [Wszystkie przykłady platformy Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
