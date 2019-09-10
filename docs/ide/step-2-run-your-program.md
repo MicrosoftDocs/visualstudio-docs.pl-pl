@@ -1,6 +1,6 @@
 ---
 title: Krok 2. Uruchamianie programu
-ms.date: 08/30/2019
+ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18db6e663284e7d4550f22f5f3f774925bd52dab
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 12ae2a50b114c34f72f4e25ec52db40fc77943d3
+ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293585"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808785"
 ---
-# <a name="step-2-run-your-program"></a>Krok 2. Uruchamianie programu
+# <a name="step-2-run-your-pictureviewer-app"></a>Krok 2. Uruchamianie aplikacji PictureViewer
 
 Podczas tworzenia projektu aplikacji Windows Forms, w rzeczywistości kompilujesz program, który jest uruchamiany. W tym samouczku aplikacja *PictureViewer* nie wykonuje jeszcze&mdash;tej czynności, mimo że będzie. Na razie po prostu wyświetla puste okno, które wyświetla **formularz Form1** na pasku tytułu.
 
