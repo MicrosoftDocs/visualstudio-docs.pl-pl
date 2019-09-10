@@ -8,12 +8,14 @@ metadata:
   description: Dowiedz się, jak używać programu Visual Studio do tworzenia aplikacji, usług i narzędzi w wybranym języku dla dowolnej platformy lub urządzenia.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: 22c6d731d3c7bfaefb6ee0d89d7bae088d86c035
-  ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+  f1_keywords:
+  - MSDNSTART
+  ms.openlocfilehash: 0853a20309869e5cde753685f20584bbd0a3e7dd
+  ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 09/03/2019
-  ms.locfileid: "70222661"
+  ms.lasthandoff: 09/10/2019
+  ms.locfileid: "70864661"
 highlightedContent:
   items:
   - title: Instalacja i instalacja

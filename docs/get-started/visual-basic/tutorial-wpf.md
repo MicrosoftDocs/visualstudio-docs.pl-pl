@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a7e9269c5de8d95ef66b1633da024c8a46c42758
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180409"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864704"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: Tworzenie prostej aplikacji z Visual Basic
 
@@ -100,29 +100,23 @@ Po utworzeniu projektu, można go dostosować. Za pomocą okna **Właściwości*
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Zmień nazwę MainWindow. XAML
 
-Nadaj MainWindow bardziej konkretną nazwę.
-
-1. W **Eksplorator rozwiązań**wybierz pozycję *MainWindow. XAML*. Powinno zostać wyświetlone okno **Właściwości** , ale jeśli nie, wybierz menu **Widok** , a następnie element **okna właściwości** .
-
-1. Zmień właściwość **Nazwa pliku** na `Greetings.xaml`.
-
-     ![okno Właściwości z wyróżnioną nazwą pliku](../media/exploreide-filenameinpropertieswindow.png)
-
-     **Eksplorator rozwiązań** pokazuje, że nazwa pliku to teraz Greetings *. XAML*, a zagnieżdżony plik kodu ma teraz nazwę Greetings *. XAML. vb*. Ten plik kodu jest zagnieżdżony w węźle pliku *. XAML* , aby pokazać, że są one ściśle powiązane ze sobą.
+Nadaj MainWindow bardziej konkretną nazwę. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję *MainWindow. XAML* i wybierz polecenie **Zmień nazwę**. Zmień nazwę pliku na *Greetings. XAML*.
 
 ## <a name="design-the-user-interface-ui"></a>Zaprojektuj interfejs użytkownika
+
+Jeśli projektant nie jest otwarty, wybierz pozycję *Greetings. XAML* w **Eksplorator rozwiązań**i naciśnij klawisz **SHIFT**+**F7** , aby otworzyć projektanta.
 
 Dodamy do tej aplikacji trzy typy kontrolek: <xref:System.Windows.Controls.TextBlock> kontrolka, dwie <xref:System.Windows.Controls.RadioButton> kontrolki i <xref:System.Windows.Controls.Button> kontrolka.
 
 ### <a name="add-a-textblock-control"></a>Dodaj kontrolkę TextBlock
 
-1. **Naciśnij klawisz Ctrl**+**Q** , aby uaktywnić pole wyszukiwania i **Przybornik**typów. Wybierz pozycję **wyświetl > przybornika** z listy wyników.
+1. Naciśnij klawisz **Ctrl**+**Q** , aby uaktywnić pole wyszukiwania i **Przybornik**typów. Wybierz pozycję **wyświetl > przybornika** z listy wyników.
 
 2. W **przyborniku**rozwiń węzeł **formanty wspólnego WPF** , aby zobaczyć formant TextBlock.
 
      ![Przybornik z wyróżnioną kontrolką TextBlock](../media/exploreide-textblocktoolbox.png)
 
-3. Dodaj kontrolkę TextBlock do powierzchni projektowej, wybierając element **TextBlock** i przeciągając go do okna na powierzchni projektowej. Wyśrodkuj formant w górnej części okna.
+3. Dodaj kontrolkę TextBlock do powierzchni projektowej, wybierając element **TextBlock** i przeciągając go do okna na powierzchni projektowej. Wyśrodkuj formant w górnej części okna. W programie Visual Studio 2019 lub nowszym można wyśrodkować formant przy użyciu czerwonych wskazówek.
 
 Okno powinno wyglądać podobnie, jak na poniższej ilustracji:
 
@@ -152,7 +146,7 @@ Następnie dodasz dwie kontrolki [RadioButton](/dotnet/framework/wpf/controls/ra
 
      ![Okno przybornika z wybraną kontrolką RadioButton](../media/exploreide-radiobuttontoolbox.png)
 
-2. Dodaj dwa formanty RadioButton do powierzchni projektowej, wybierając element **RadioButton** i przeciągając go do okna na powierzchni projektowej. Przenieś przyciski (zaznaczając je i używając klawiszy strzałek), aby przyciski pojawiały się obok siebie pod formantem TextBlock.
+2. Dodaj dwa formanty RadioButton do powierzchni projektowej, wybierając element **RadioButton** i przeciągając go do okna na powierzchni projektowej. Przenieś przyciski (zaznaczając je i używając klawiszy strzałek), aby przyciski pojawiały się obok siebie pod formantem TextBlock. Aby wyrównać kontrolki, użyj czerwonej wskazówki.
 
      Okno powinno wyglądać następująco:
 
@@ -168,15 +162,21 @@ Możesz teraz dodawać wyświetlany tekst dla każdego formantu RadioButton. Pon
 
 ### <a name="add-display-text-for-each-radio-button"></a>Dodaj tekst wyświetlany dla każdego przycisku radiowego
 
-1. Na powierzchni projektowej Otwórz menu skrótów dla HelloButton, naciskając prawy przycisk myszy na HelloButton, wybierz polecenie **Edytuj tekst**, a następnie wprowadź `Hello`.
+Zaktualizuj atrybut **zawartości** dla `HelloButton` i `GoodbyeButton` do `"Hello"` i `"Goodbye"` w języku XAML. Znacznik XAML powinien teraz wyglądać podobnie do poniższego przykładu:
 
-2. Otwórz menu skrótów dla GoodbyeButton, naciskając prawy przycisk myszy w GoodbyeButton, wybierz polecenie **Edytuj tekst**, a następnie wprowadź `Goodbye`.
+   ```xaml
+   <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="252,47,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+        <RadioButton x:Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="297,161,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Left" Margin="488,161,0,0" VerticalAlignment="Top"/>
+   </Grid>
+   ```
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>Ustaw przycisk radiowy do sprawdzenia domyślnego
 
 W tym kroku ustawimy HelloButton do domyślnego sprawdzenia, aby jeden z dwóch przycisków radiowych był zawsze zaznaczony.
 
-W widoku XAML Znajdź znaczniki HelloButton i Dodaj atrybut IsChecked:
+W widoku XAML Znajdź znaczniki HelloButton i Dodaj atrybut **IsChecked** :
 
 ```xaml
 IsChecked="True"
@@ -186,7 +186,7 @@ Ostatnim elementem interfejsu użytkownika, który dodasz, jest kontrolka [przyc
 
 ### <a name="add-the-button-control"></a>Dodaj kontrolkę przycisk
 
-1. W **przyborniku**Znajdź formant **Button** , a następnie dodaj go do powierzchni projektowej pod kontrolkami RadioButton, przeciągając go do formularza w widoku projektu.
+1. W **przyborniku**Znajdź formant **Button** , a następnie dodaj go do powierzchni projektowej pod kontrolkami RadioButton, przeciągając go do formularza w widoku projektu. Jeśli używasz programu Visual Studio 2019 lub nowszego, czerwona linia ułatwia wyśrodkowanie formantu.
 
 2. W widoku XAML Zmień wartość **zawartości** kontrolki Button z `Content="Button"` na `Content="Display"`, a następnie Zapisz zmiany.
 
@@ -198,14 +198,14 @@ Ostatnim elementem interfejsu użytkownika, który dodasz, jest kontrolka [przyc
 
 ### <a name="add-code-to-the-display-button"></a>Dodawanie kodu do przycisku wyświetlania
 
-Gdy aplikacja jest uruchomiona, okno komunikatu pojawia się, gdy użytkownik wybierze przycisk radiowy, a następnie wybierze przycisk **wyświetlania** . Jedno okno komunikatu pojawi się, żeby wyświetlić „Hello”, a inne pojawi się, aby wyświetlić „Goodbye”. Aby utworzyć to zachowanie, dodasz kod do `Button_Click` zdarzenia w Greetings *. XAML. vb* lub *Greetings.XAML.cs*.
+Gdy aplikacja jest uruchomiona, okno komunikatu pojawia się, gdy użytkownik wybierze przycisk radiowy, a następnie wybierze przycisk **wyświetlania** . Jedno okno komunikatu pojawi się, żeby wyświetlić „Hello”, a inne pojawi się, aby wyświetlić „Goodbye”. Aby utworzyć to zachowanie, dodasz kod do `Button_Click` zdarzenia w *Greetings. XAML. vb* lub *Greetings.XAML.cs*.
 
 1. Na powierzchni projektowej kliknij dwukrotnie przycisk **Wyświetl** .
 
      *Greetings. XAML. vb* zostanie otwarty z kursorem w `Button_Click` zdarzeniu.
 
     ```vb
-    Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 
     End Sub
     ```
@@ -248,7 +248,16 @@ Zmieniono nazwę *MainWindow. XAML* na *Greetings. XAML* na początku tego samou
 
 2. Zmień `StartupUri="MainWindow.xaml"` na`StartupUri="Greetings.xaml"`, a następnie Zapisz zmiany.
 
-Ponownie uruchom debuger (naciśnij klawisz **F5**). Powinny pojawić się okno Greetings aplikacji. Teraz Zamknij okno aplikacji, aby zatrzymać debugowanie.
+Ponownie uruchom debuger (naciśnij klawisz **F5**). Powinny pojawić się okno **Greetings** aplikacji.
+
+::: moniker range="vs-2017"
+![Zrzut ekranu przedstawiający uruchomioną aplikację](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Zrzut ekranu przedstawiający uruchomioną aplikację](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+ Teraz Zamknij okno aplikacji, aby zatrzymać debugowanie.
 
 ### <a name="debug-with-breakpoints"></a>Debuguj z punktami przerwania
 
@@ -272,7 +281,7 @@ Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów
 
    ![Zrzut ekranu punktu przerwania w debugerze](media/exploreide-debugbreakpoint.png)
 
-6. Na pasku menu wybierz polecenie **Debuguj** > **krok**wychodzący.
+6. Na pasku menu wybierz polecenie **Debuguj** > **krok wychodzący**.
 
      Aplikacja wznawia wykonywanie i pojawia się okno komunikatu z wyrazem "Hello".
 
@@ -287,6 +296,12 @@ Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów
 10. Zamknij okno aplikacji, aby zatrzymać debugowanie.
 
 11. Na pasku menu wybierz **Debuguj** > **Wyłącz wszystkie punkty przerwania**.
+
+### <a name="view-a-representation-of-the-ui-elements"></a>Wyświetl reprezentację elementów interfejsu użytkownika
+
+W uruchomionej aplikacji powinien zostać wyświetlony widżet pojawiający się w górnej części okna. Jest to pomocnik środowiska uruchomieniowego, który zapewnia szybki dostęp do pewnych przydatnych funkcji debugowania. Kliknij pierwszy przycisk, **Przejdź do dynamicznego drzewa wizualnego**. Powinno zostać wyświetlone okno z drzewem zawierającym wszystkie elementy wizualizacji strony. Rozwiń węzły, aby znaleźć przyciski, które zostały dodane.
+
+![Zrzut ekranu aktywnego okna drzewa wizualnego](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>Tworzenie dystrybucyjnej wersji tej aplikacji
 

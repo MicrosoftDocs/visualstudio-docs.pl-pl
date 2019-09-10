@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634852"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864683"
 ---
 # <a name="developer-community-data-privacy"></a>Prywatność danych w społeczności deweloperów
 
@@ -68,8 +68,14 @@ Jeśli **Zgłoś problem** w programie Visual Studio, zbieramy co najmniej jeden
 
 - Dzienniki języka Python, jeśli istnieją
 
-- Zrzut ekranu, jeśli wybierzesz go uwzględnić
+- Dzienniki Windows Forms, jeśli istnieją
 
+> [!NOTE]
+> Pliki dziennika są wysyłane do firmy Microsoft tylko w przypadku podania uprawnień przez przesłanie raportu o problemie, z którym są dołączone. Możesz zobaczyć, które pliki są zawarte w kroku "Summary" okna "Zgłoś problem" (Zobacz zrzut ekranu zawarty w tej notatce). Zebrane dzienniki są przechowywane w folderze% temp% i są czyszczone regularnie i po każdym przekazaniu. Jeśli nie chcesz dołączać dziennika do raportu o problemie, usuń plik z folderu% temp% przed przesłaniem raportu.  
+  > ![Zgłoś problem — podsumowanie zebranych dzienników](media/report-a-problem-logs-collected.png)
+
+- Zrzut ekranu, jeśli wybierzesz go uwzględnić
+  
 - Rejestrowanie danych, jeśli zdecydujesz się na dołączenie nagrania, które obejmuje:
 
   - Kroki prowadzące do odtworzenia problemu
