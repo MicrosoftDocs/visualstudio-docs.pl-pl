@@ -42,3 +42,7 @@
       items:
         - name: Właściwości programu MSBuild dla projektów kontenera
           href: container-msbuild-properties.md
+        - name: Ustawienia dla projektów narzędzia Docker Compose
+          href: docker-compose-properties.md
+        - name: Ustawienia uruchamiania
+          href: container-launch-settings.md
