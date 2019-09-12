@@ -58,7 +58,7 @@ Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` arg
 /Reset lub/e\
 Opcjonalny. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwania.
 
-/Stop
+/Stop\
 Opcjonalna. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Wyszukiwanie ignoruje wszystkie inne argumenty `/stop` , gdy zostały określone. Na przykład aby zatrzymać bieżące wyszukiwanie, należy wpisać następujące polecenie:
 
 ```cmd

@@ -21,10 +21,10 @@ Te warunki są używane do opisywania Microsoft Build Engine (MSBuild) i jego sk
 
 ## <a name="glossary"></a>Słownik
 
-AssemblyFoldersEx
+AssemblyFoldersEx\
 Lokalizacja w rejestrze, w której dostawcy innych firm przechowują ścieżki dla każdej wersji platformy, która obsługuje, gdzie można znaleźć zestawy odwołań w czasie projektowania.
 
-partie
+partie\
 Przetwarzanie wsadowe oznacza dzielenie elementów na różne kategorie znane jako *partie*, na podstawie metadanych elementów, a następnie uruchamianie obiektu docelowego lub zadania jednokrotnie przy użyciu każdej partii. Przetwarzanie wsadowe to odpowiednik programu MSBuild w konstrukcji pętli for-----------. Aby uzyskać więcej informacji, zobacz Tworzenie [pakietów wsadowych](../msbuild/msbuild-batching.md).
 
 Kompilacja-zakres \
@@ -33,7 +33,7 @@ Kompilacja-zakres opisuje obiekt MSBuild, na przykład właściwość globalną,
 projekt podrzędny \
 Zobacz *projekt, element podrzędny*.
 
-rozgrzewa
+rozgrzewa\
 Można zdefiniować warunkowo wiele elementów MSBuild; oznacza to, `Condition` że atrybut jest wyświetlany w elemencie. Zawartość elementów warunkowych jest ignorowana, jeśli warunek nie zostanie spełniony `true`. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).
 
 Definicja, element \
@@ -57,7 +57,7 @@ Zobacz *Funkcja właściwości*.
 Funkcja, element \
 Zobacz element funkcja.
 
-elementów
+elementów\
 Elementy są danymi wejściowymi do systemu kompilacji i są pogrupowane w typy elementów na podstawie ich nazw elementów. Elementy zazwyczaj reprezentują pliki. Ponieważ elementy są nazwane przez typ elementu, do którego należą, *element* warunków i *wartość elementu* mogą być używane zamiennie. Aby uzyskać więcej informacji, [](../msbuild/msbuild-items.md)Zobacz Items.
 
 definicja elementu \

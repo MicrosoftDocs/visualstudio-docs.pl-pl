@@ -46,7 +46,7 @@ Opcjonalny. Pełna nazwa polecenia lub istniejący alias oraz wszystkie parametr
 /DELETE lub/del lub/d\
 Opcjonalny. Usuwa określony alias, usuwając go z autouzupełniania.
 
-/Reset
+/Reset\
 Opcjonalny. Resetuje listę wstępnie zdefiniowanych aliasów do jej oryginalnych ustawień. Oznacza to, że przywraca wszystkie wstępnie zdefiniowane aliasy i usuwa wszystkie aliasy zdefiniowane przez użytkownika.
 
 ## <a name="remarks"></a>Uwagi
