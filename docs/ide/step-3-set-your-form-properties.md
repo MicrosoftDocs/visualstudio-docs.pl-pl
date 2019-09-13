@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123a843676a7562478710bf607f62c92743c462d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 1cf71ca26a26aecceb605c0483499bc0b0e24d30
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293582"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913147"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 
@@ -31,7 +31,7 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 1. Wybierz dowolne miejsce wewnątrz formularza **Form1** , aby go zaznaczyć. Sprawdź okno **Właściwości** , które teraz powinno być wyświetlane właściwości formularza. Formularze mają różne właściwości. Na przykład można ustawić kolor pierwszego planu i tła, tekst tytułu, który pojawia się w górnej części formularza, rozmiar formularza i inne właściwości.
 
    > [!NOTE]
-   > Jeśli okno **Właściwości** nie zostanie wyświetlone, Zatrzymaj program, wybierając kwadratowy przycisk **Zatrzymaj debugowanie** na pasku narzędzi lub po prostu Zamknij okno. Jeśli program jest zatrzymany i nadal nie widzisz okna **Właściwości** , na pasku menu wybierz**okno właściwości** **widoku** > .
+   > Jeśli okno **Właściwości** nie zostanie wyświetlone, Zatrzymaj aplikację, wybierając przycisk **przerywaj debugowania** na pasku narzędzi lub po prostu Zamknij okno. Jeśli aplikacja jest zatrzymana i nadal nie widzisz okna **Właściwości** , na pasku menu wybierz polecenie **Wyświetl** > **okno właściwości**.
 
 1. Po wybraniu formularza Znajdź właściwość **tekst** w oknie **Właściwości** . W zależności od tego, jak lista jest sortowana, może być konieczne przewinięcie w dół. Wybierz **tekst**, wpisz **Podgląd obrazów**, a następnie wybierz **klawisz ENTER**.  Formularz powinien teraz mieć **obraz** tekstu na pasku tytułu, a okno **Właściwości** powinno wyglądać podobnie do poniższego zrzutu ekranu.
 
@@ -50,7 +50,7 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 
 1. Sprawdź okno **Właściwości** i Zauważ, że właściwość **size** została zmieniona. Właściwość **size** zmienia się za każdym razem, gdy zmieniany jest rozmiar formularza. Spróbuj przeciągnąć uchwyt formularza, aby zmienić jego rozmiar na rozmiar formularza około **550, 350** (nie musi być dokładne), który powinien być dobrze przydatny dla tego projektu. Alternatywnie można wprowadzić wartości bezpośrednio we właściwości **size** , a następnie wybrać klawisz **Enter** .
 
-1. Uruchom ponownie program. Pamiętaj, że możesz użyć dowolnej z poniższych metod, aby uruchomić program.
+1. Uruchom aplikację ponownie. Pamiętaj, że możesz użyć dowolnej z poniższych metod, aby uruchomić aplikację.
 
    - Wybierz klawisz **F5** .
 
@@ -61,9 +61,9 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
       ![Przycisk paska narzędzi Rozpocznij debugowanie](../ide/media/express_icondebug.png)<br>
      ***Rozpocznij debugowanie*** *przycisk paska narzędzi*
 
-     Tak jak wcześniej, środowisko IDE kompiluje i uruchamia program, a okno pojawia się.
+     Tak jak wcześniej, środowisko IDE kompiluje i uruchamia aplikację, a zostanie wyświetlone okno.
 
-1. Przed przejściem do następnego kroku Zatrzymaj program, ponieważ środowisko IDE nie pozwala na zmianę programu w trakcie jego działania. Pamiętaj, że możesz użyć dowolnej z poniższych metod, aby zatrzymać program.
+1. Przed przejściem do następnego kroku Zatrzymaj aplikację, ponieważ środowisko IDE nie pozwoli na zmianę aplikacji podczas jej działania. Pamiętaj, że możesz użyć dowolnej z poniższych metod, aby zatrzymać aplikację.
 
    - Na pasku narzędzi wybierz przycisk **Zatrzymaj debugowanie** .
 
@@ -75,9 +75,9 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz [krok 4: Układ formularza przy użyciu formantu](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)TableLayoutPanel.
+* Aby przejść do następnego kroku samouczka, zobacz  **[krok 4: Układ formularza przy użyciu formantu](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** TableLayoutPanel.
 
-* Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Uruchom program](../ide/step-2-run-your-program.md).
+* Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Uruchom aplikację](../ide/step-2-run-your-program.md)przeglądarka obrazów.
 
 ## <a name="see-also"></a>Zobacz także
 

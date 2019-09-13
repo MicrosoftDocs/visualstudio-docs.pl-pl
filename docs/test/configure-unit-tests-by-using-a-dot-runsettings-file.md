@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9f47c54a530f58ea562fd942c1ef795bad37331
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: bb338caa145ad8186b7a27fe94a7822e94c09a02
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490651"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913294"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -28,7 +28,7 @@ Pliki parametrów uruchomieniowych mogą służyć do konfigurowania testów uru
 
 ::: moniker range="vs-2017"
 
-Aby określić plik parametrów uruchomieniowych w środowisku IDE, wybierz > pozycję Testuj **Ustawienia** > testu **Wybierz plik ustawień testu**, a następnie wybierz plik *. runsettings* .
+Aby określić plik parametrów uruchomieniowych w środowisku IDE **, wybierz pozycję** > Testuj **Ustawienia** > testu **Wybierz plik ustawień testu**, a następnie wybierz plik *. runsettings* .
 
 ![Wybieranie menu plik ustawień testu w programie Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -156,6 +156,10 @@ Poniższy kod XML przedstawia zawartość typowego pliku *. runsettings* . Każd
 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
+        <Configuration>
+           <!-- Change to "false" to only add video attachments to failed tests -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
+        </Configuration>
       </DataCollector>
 
     </DataCollectors>
@@ -215,7 +219,7 @@ Element **RunConfiguration** może zawierać następujące elementy:
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptery danych diagnostycznych (moduły zbierające dane)
 
-Element datacollects określa ustawienia adapterów danych diagnostycznych. Adaptery danych diagnostycznych zbierają dodatkowe informacje o środowisku i testowanej aplikacji. Każda karta ma ustawienia domyślne i tylko wtedy, gdy nie chcesz używać ustawień domyślnych.
+Element **Datacollects** określa ustawienia adapterów danych diagnostycznych. Adaptery danych diagnostycznych zbierają dodatkowe informacje o środowisku i testowanej aplikacji. Każda karta ma ustawienia domyślne i tylko wtedy, gdy nie chcesz używać ustawień domyślnych.
 
 #### <a name="code-coverage-adapter"></a>Adapter pokrycia kodu
 

@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e4ace476a2454c7f6735f19cd07f222d6c06564e
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923750"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913336"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing z programem Visual Studio
 
@@ -177,6 +177,12 @@ Aby wyłączyć poszczególne metody z Live Unit Testing umożliwia także nast�
 - Aby uzyskać xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
 - Aby uzyskać NUnit: `[Category("SkipWhenLiveUnitTesting")]`
 - Aby uzyskać MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+
+Można również wykluczyć cały zestaw testów z Live Unit Testing:
+
+- Aby uzyskać xUnit: `[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
+- Aby uzyskać NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
+- Aby uzyskać MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Zobacz także
 

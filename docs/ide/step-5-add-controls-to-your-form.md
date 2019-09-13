@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b0a22fcef06f69f5c8adfa2afa0b6fdadc9f01
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293563"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913163"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie kontrolek do formularza
 
@@ -85,7 +85,7 @@ W tym kroku dodasz kontrolki, takie jak <xref:System.Windows.Forms.PictureBox> k
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-* Aby przejść do następnego kroku samouczka, zobacz [krok 6. Nadaj nazwę kontrolkom](../ide/step-6-name-your-button-controls.md)przycisków.
+* Aby przejść do następnego kroku samouczka, zobacz  **[krok 6. Nadaj nazwę kontrolkom](../ide/step-6-name-your-button-controls.md)** przycisków.
 
 * Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Układ formularza przy użyciu formantu](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)TableLayoutPanel.
 

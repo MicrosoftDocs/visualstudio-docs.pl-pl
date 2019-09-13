@@ -14,65 +14,65 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
+ms.openlocfilehash: 51c89fb82985d37b106f352047bfce74503f3c48
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342415"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913117"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Instrukcje: Korzystanie z kreatorów z szablonami projektu
 
-Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejs, który, po wdrożeniu, umożliwia uruchamianie kodu niestandardowego, gdy użytkownik tworzy projekt z szablonu.
+Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejs, który po zaimplementowaniu umożliwia uruchamianie kodu niestandardowego, gdy użytkownik tworzy projekt na podstawie szablonu.
 
-Dostosowywanie szablonu projektu może służyć do wyświetlania niestandardowego interfejsu użytkownika, który zbiera dane wejściowe, aby dostosować szablon, Dodaj dodatkowe pliki do szablonu użytkownika lub dowolne akcje dozwolone w projekcie.
+Dostosowanie szablonu projektu może służyć do wyświetlania niestandardowego interfejsu użytkownika, który gromadzi dane wprowadzane przez użytkownika w celu dostosowania szablonu, dodania dodatkowych plików do szablonu lub dowolnej innej akcji dozwolonej w projekcie.
 
-<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Metody interfejsu nazywane są w różnym czasie, gdy projekt jest tworzony, od początku tak szybko, jak użytkownik kliknie **OK** na **nowy projekt** okno dialogowe. Każda metoda interfejsu nosi nazwę aby opisać punkt w którym jest wywoływana. Na przykład programu Visual Studio wywołuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> natychmiast po rozpoczęciu do tworzenia projektu, dzięki czemu jest dobrym miejscem do napisania kodu niestandardowego, aby zbierać dane wejściowe użytkownika.
+Metody interfejsu są wywoływane w różnym czasie podczas tworzenia projektu, zaczynając od razu po kliknięciu przycisku OK w oknie dialogowym **Nowy projekt** . <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Każda metoda interfejsu ma nazwę do opisania punktu, w którym jest wywoływana. Na przykład program Visual Studio wywołuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> natychmiast po rozpoczęciu tworzenia projektu, dzięki czemu jest dobrym miejscem do pisania kodu niestandardowego do zbierania danych wejściowych użytkownika.
 
-## <a name="create-a-project-template-project-with-a-vsix-project"></a>Utwórz projekt szablonu projektu z projektu VSIX
+## <a name="create-a-project-template-project-with-a-vsix-project"></a>Tworzenie projektu szablonu projektu z projektem VSIX
 
-Możesz rozpocząć tworzenie szablonu niestandardowego za pomocą projektu szablonu projektu, który jest częścią zestawu SDK programu Visual Studio. W tej procedurze użyto C# projektu szablonu projektu, ale jest również szablon projektami Visual Basic. Następnie możesz dodać projekt VSIX do rozwiązania zawierającego projekt szablonu projektu.
+Utwórz szablon niestandardowy z projektem szablonu projektu, który jest częścią zestawu Visual Studio SDK. W tej procedurze użyjemy projektu szablonu C# projektu, ale istnieje również Visual Basic projektu szablonu projektu. Następnie należy dodać projekt VSIX do rozwiązania, które zawiera projekt szablonu projektu.
 
-1. Tworzenie C# szablonu projektu (w programie Visual Studio, wybierz **pliku** > **New** > **projektu** i poszukaj pozycji "szablon projektu" ). Nadaj mu nazwę **MyProjectTemplate**.
+1. Utwórz projekt C# szablonu projektu (w programie Visual Studio wybierz pozycję **plik** > **Nowy** > **projekt** i wyszukaj "szablon projektu"). Nadaj mu nazwę **MyProjectTemplate**.
 
    > [!NOTE]
-   > Może być konieczne instalowanie zestawu SDK programu Visual Studio. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+   > Może zostać wyświetlony monit o zainstalowanie zestawu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Dodaj nowy projekt VSIX w tym samym rozwiązaniu co projekt szablonu projektu (w **Eksploratora rozwiązań**, wybierz węzeł rozwiązania, kliknij prawym przyciskiem myszy i wybierz **Dodaj** > **nowy projekt**  i poszukaj pozycji "vsix"). Nadaj mu nazwę **MyProjectWizard.**
+2. Dodaj nowy projekt VSIX w tym samym rozwiązaniu co projekt szablonu projektu (w **Eksplorator rozwiązań**wybierz węzeł rozwiązania, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Dodaj** > **Nowy projekt** i wyszukaj ciąg "VSIX"). Nadaj mu nazwę **MyProjectWizard.**
 
-3. Ustaw projekt VSIX jako projekt startowy. W **Eksploratora rozwiązań**, wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy i wybierz **Ustaw jako projekt startowy**.
+3. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
 
-4. Dodaj szablon projektu jako zasób usługi w projekcie VSIX. W **Eksploratora rozwiązań**, w obszarze węzła projektu VSIX, Znajdź *source.extension.vsixmanifest* pliku. Kliknij dwukrotnie, aby go otworzyć w edytorze manifestu.
+4. Dodaj projekt szablonu jako element zawartości projektu VSIX. W **Eksplorator rozwiązań**w WĘŹLE projekt VSIX Znajdź plik *source. Extension. vsixmanifest* . Kliknij go dwukrotnie, aby otworzyć go w edytorze manifestu.
 
-5. W edytorze manifestu, wybierz **zasoby** karty w lewej części okna.
+5. W edytorze manifestu wybierz kartę **zasoby** po lewej stronie okna.
 
-6. W **zasoby** zaznacz **New**. W **Dodaj nowy zasób** okna dla pól typu, zaznacz **Microsoft.VisualStudio.ProjectTemplate**. W **źródła** pól, zaznacz **projekt w bieżącym rozwiązaniu**. W **projektu** pól, zaznacz **MyProjectTemplate**. Następnie kliknij przycisk **OK**.
+6. Na karcie **zasoby** wybierz pozycję **Nowy**. W oknie **Dodawanie nowego zasobu** dla pola Typ wybierz **Microsoft. VisualStudio. ProjectTemplate**. W polu **Źródło** wybierz **projekt w bieżącym rozwiązaniu**. W polu **projekt** wybierz pozycję **MyProjectTemplate**. Następnie kliknij przycisk **OK**.
 
 7. Skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Zostanie wyświetlone drugie wystąpienie programu Visual Studio. (Może to potrwać kilka minut).
 
-8. W drugim wystąpieniu programu Visual Studio, spróbuj utworzyć nowy projekt za pomocą nowego szablonu (**pliku** > **New** > **projektu**, wyszukaj " myProject"). Nowy projekt powinno zostać wyświetlone klasę o nazwie **klasa1**. Utworzono szablonu niestandardowego projektu! Zatrzymać debugowanie.
+8. W drugim wystąpieniu programu Visual Studio spróbuj utworzyć nowy projekt z nowym szablonem (**plik** > **Nowy** > **projekt**, wyszukaj ciąg "Moje projekty"). Nowy projekt powinien pojawić się z klasą o nazwie **Class1**. Szablon projektu niestandardowego został utworzony. Zatrzymaj debugowanie teraz.
 
-## <a name="create-a-custom-template-wizard"></a>Tworzenie kreatora niestandardowego szablonu
+## <a name="create-a-custom-template-wizard"></a>Kreator tworzenia szablonu niestandardowego
 
-Poniższa procedura przedstawia sposób tworzenia niestandardowego kreatora, który służy do otwierania formularza Windows przed utworzeniem projektu. Formularz pozwala użytkownikom na dodawanie wartości parametru niestandardowego, który jest dodawany do kodu źródłowego podczas tworzenia projektu.
+Ta procedura pokazuje, jak utworzyć Kreatora niestandardowego, który otwiera formularz systemu Windows przed utworzeniem projektu. Formularz umożliwia użytkownikom dodanie wartości parametru niestandardowego, która jest dodawana do kodu źródłowego podczas tworzenia projektu.
 
-1. Konfigurowanie projektu VSIX, aby zezwalała na utworzenie zestawu.
+1. Skonfiguruj projekt VSIX, aby umożliwić mu Tworzenie zestawu.
 
-2. W **Eksploratora rozwiązań**, wybierz węzeł projektu VSIX. Poniżej **Eksploratora rozwiązań**, powinien zostać wyświetlony **właściwości** okna. Jeśli tego nie zrobisz, wybierz opcję **widoku** > **okno właściwości**, lub naciśnij **F4**. W **właściwości** okna, wybierz następujące pola do `true`:
+2. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX. Poniżej **Eksplorator rozwiązań**powinien zostać wyświetlony okno **Właściwości** . Jeśli tego nie zrobisz, wybierz pozycję **Wyświetl** > **okno właściwości**lub naciśnij klawisz **F4**. W oknie **Właściwości** wybierz następujące pola, aby `true`:
 
-   - **IncludeAssemblyInVSIXContainer**
+   - **Dołącz zestaw do kontenera VSIX**
 
-   - **IncludeDebugSymbolsInVSIXContainer**
+   - **Dołącz symbole debugowania w kontenerze VSIX**
 
-   - **IncludeDebugSymbolsInLocalVSIXDeployment**
+   - **Dołącz symbole debugowania do lokalnego wdrożenia VSIX**
 
-3. Dodaj zestaw jako zasobu w projekcie VSIX. Otwórz *source.extension.vsixmanifest* plik i wybierz **zasoby** kartę. W **Dodaj nowy zasób** oknie dla **typu** wybierz **Microsoft.VisualStudio.Assembly**, dla **źródła** wybierz **A Projekt w bieżącym rozwiązaniu**oraz **projektu** wybierz **MyProjectWizard**.
+3. Dodaj zestaw jako element zawartości do projektu VSIX. Otwórz plik *source. Extension. vsixmanifest* i wybierz kartę **Assets (zasoby** ). W oknie **Dodawanie nowego elementu zawartości** dla pozycji **Typ** wybierz pozycję **Microsoft. VisualStudio. Assembly**, w polu **Źródło** wybierz **projekt w bieżącym rozwiązaniu**, a następnie wybierz pozycję **Project** SELECT **MyProjectWizard**.
 
-4. Dodaj następujące odwołania do projektu VSIX. (W **Eksploratora rozwiązań**, w węźle projektu VSIX wybierz **odwołania**, kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj odwołanie**.) W **Dodaj odwołanie** okna dialogowego w **Framework** kartę, Znajdź **formularzy System.Windows** zestawu i wybierz ją. Również znaleźć i wybrać **systemu** i **System.Drawing** zestawów. Teraz wybierz **rozszerzenia** kartę. Znajdź **EnvDTE** zestawu i wybierz ją. Również znaleźć **Microsoft.VisualStudio.TemplateWizardInterface** zestawu i wybierz ją. Kliknij przycisk **OK**.
+4. Dodaj następujące odwołania do projektu VSIX. (W **Eksplorator rozwiązań**w WĘŹLE projekt VSIX wybierz pozycję **odwołania**, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Dodaj odwołanie**.) W oknie dialogowym **Dodawanie odwołania** na karcie **Struktura** znajdź zestaw **System. Windows Forms** i wybierz go. Znajdź również i wybierz zestawy **systemowe** i **System. Drawing** . Teraz wybierz kartę **rozszerzenia** . Znajdź zestaw **EnvDTE** i wybierz go. Znajdź również zestaw **Microsoft. VisualStudio. TemplateWizardInterface** i wybierz go. Kliknij przycisk **OK**.
 
-5. Dodaj klasę dla Kreatora wdrażania w projekcie VSIX. (W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu VSIX i wybierz **Dodaj**, następnie **nowy element**, następnie **klasy**.) Nazwa klasy **WizardImplementation**.
+5. Dodaj klasę dla implementacji kreatora do projektu VSIX. (W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu VSIX i wybierz polecenie **Dodaj**, następnie **nowy element**, a następnie **klasy**.) Nadaj klasie nazwę **WizardImplementation**.
 
-6. Zastąp kod w *WizardImplementationClass.cs* pliku następującym kodem:
+6. Zastąp kod w pliku *WizardImplementationClass.cs* następującym kodem:
 
    ```csharp
    using System;
@@ -143,23 +143,23 @@ Poniższa procedura przedstawia sposób tworzenia niestandardowego kreatora, kt�
    }
    ```
 
-    **UserInputForm** do którego odwołuje się ten kod będzie wykonywane później.
+    **UserInputForm** przywoływany w tym kodzie zostanie zaimplementowana później.
 
-    `WizardImplementation` Klasa zawiera implementacje metod dla każdego członka <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. W tym przykładzie, tylko <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> metoda wykonuje zadanie. Wszystkie inne metody nic nie rób lub zwrócić `true`.
+    Klasa zawiera implementacje metod dla każdego <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>elementu członkowskiego. `WizardImplementation` W tym przykładzie tylko <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Metoda wykonuje zadanie. Wszystkie inne metody nie wykonują żadnej operacji `true`ani nie zwracają.
 
     <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Metoda przyjmuje cztery parametry:
 
-   - <xref:System.Object> Parametr, który może być rzutowany w katalogu głównym <xref:EnvDTE._DTE> obiektu, aby umożliwić dostosować projekt.
+   - Parametr, który może być rzutowany na obiekt <xref:EnvDTE._DTE> główny, aby umożliwić dostosowanie projektu. <xref:System.Object>
 
-   - A <xref:System.Collections.Generic.Dictionary%602> parametr, który zawiera zbiór wszystkich parametrów wstępnie zdefiniowanych w szablonie. Aby uzyskać więcej informacji na temat parametrów szablonu, zobacz [parametry szablonu](../ide/template-parameters.md).
+   - <xref:System.Collections.Generic.Dictionary%602> Parametr, który zawiera kolekcję wszystkich wstępnie zdefiniowanych parametrów w szablonie. Aby uzyskać więcej informacji na temat parametrów szablonu, zobacz [Parametry szablonu](../ide/template-parameters.md).
 
-   - A <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> parametr, który zawiera informacje o jakiego typu szablon jest używany.
+   - <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> Parametr, który zawiera informacje o rodzaju używanego szablonu.
 
-   - <xref:System.Object> Tablicę, która zawiera zestaw parametrów przekazanych do kreatora przez program Visual Studio.
+   - <xref:System.Object> Tablica zawierająca zestaw parametrów przesłanych do kreatora przez program Visual Studio.
 
-     Ten przykład dodaje wartości parametru z formularza wejściowego użytkownika do <xref:System.Collections.Generic.Dictionary%602> parametru. Każde wystąpienie `$custommessage$` parametru w projekcie zostanie zastąpione tekstem wprowadzonym przez użytkownika.
+     Ten przykład dodaje wartość parametru z formularza danych wejściowych użytkownika do <xref:System.Collections.Generic.Dictionary%602> parametru. Każde wystąpienie `$custommessage$` parametru w projekcie zostanie zastąpione tekstem wprowadzonym przez użytkownika.
 
-7. Teraz Utwórz **UserInputForm**. W *WizardImplementation.cs* plików, Dodaj następujący kod na końcu `WizardImplementation` klasy.
+7. Teraz Utwórz **UserInputForm**. W pliku *WizardImplementation.cs* Dodaj następujący kod po zakończeniu `WizardImplementation` klasy.
 
    ```csharp
    public partial class UserInputForm : Form
@@ -202,51 +202,51 @@ Poniższa procedura przedstawia sposób tworzenia niestandardowego kreatora, kt�
        }
    ```
 
-    Formularz wprowadzania użytkownika zapewnia prosty formularz Wprowadzanie parametru niestandardowego. Formularz zawiera pole tekstowe o nazwie `textBox1` i przycisk o nazwie `button1`. Po kliknięciu przycisku, tekst z pola tekstowego jest przechowywany w `customMessage` parametru.
+    Formularz dane wejściowe użytkownika zawiera prosty formularz do wprowadzania parametru niestandardowego. Formularz zawiera pole tekstowe o nazwie `textBox1` i przycisk o nazwie. `button1` Gdy przycisk zostanie kliknięty, tekst w polu tekstowym jest przechowywany w `customMessage` parametrze.
 
-## <a name="connect-the-wizard-to-the-custom-template"></a>Kreator nawiązać połączenie z szablonu niestandardowego
+## <a name="connect-the-wizard-to-the-custom-template"></a>Połącz kreatora z szablonem niestandardowym
 
-Szablon niestandardowy projekt, aby użyć niestandardowego kreatora, musisz podpisać zestaw kreatora i dodaj kilka wierszy do szablonu niestandardowego projektu o tym, gdzie można znaleźć implementacji kreatora podczas tworzenia nowego projektu.
+Aby niestandardowy szablon projektu mógł korzystać z niestandardowego kreatora, należy podpisać zestaw kreatora i dodać kilka wierszy do niestandardowego szablonu projektu, aby wiedzieć, gdzie znaleźć implementację kreatora podczas tworzenia nowego projektu.
 
-1. Podpisz zestaw. W **Eksploratora rozwiązań**, wybierz projekt VSIX, kliknij prawym przyciskiem myszy i wybierz **właściwości projektu**.
+1. Podpisz zestaw. W **Eksplorator rozwiązań**wybierz projekt VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz **właściwości projektu**.
 
-2. W **właściwości projektu** wybierz **podpisywanie** kartę w **podpisywanie** karcie wyboru **Podpisz zestaw**. W **wybierz plik klucza o silnej nazwie** pól, zaznacz  **\<nowy >** . W **Utwórz klucz silnej nazwy** okna w **nazwę pliku klucza** wpisz **key.snk**. Usuń zaznaczenie pola wyboru **Chroń mój plik klucza przy użyciu hasła** pola.
+2. W oknie **właściwości projektu** wybierz kartę **podpisywanie** . na karcie **podpisywanie** zaznacz pozycję **podpisz zestaw**. W polu **Wybierz plik klucza o silnej nazwie** wybierz pozycję  **\<nowe >** . W oknie **Tworzenie klucza o silnej nazwie** w polu **Nazwa pliku klucza** wpisz polecenie **Key. snk**. Usuń zaznaczenie pola **Chroń mój klucz przy użyciu hasła** .
 
-3. W **Eksploratora rozwiązań**, wybierz projekt VSIX i Znajdź **właściwości** okna.
+3. W **Eksplorator rozwiązań**wybierz projekt VSIX i Znajdź okno **Właściwości** .
 
-4. Ustaw **katalog danych wyjściowych danych wyjściowych kompilacji kopiowania** pole **true**. Dzięki temu zestaw, który ma być skopiowany do katalogu wyjściowego, gdy rozwiązanie zostanie ponownie skompilowany. Nadal znajduje się w `.vsix` pliku. Zachodzi potrzeba wyświetlenia zestawu, aby dowiedzieć się, jego klucza podpisywania.
+4. W polu **Kopiuj dane wyjściowe kompilacji do katalogu wyjściowego** Ustaw **wartość true**. Dzięki temu zestaw będzie kopiowany do katalogu wyjściowego, gdy rozwiązanie zostanie odbudowane. Nadal znajduje się w `.vsix` pliku. Aby można było znaleźć swój klucz podpisywania, należy wyświetlić zestaw.
 
 5. Ponownie skompiluj rozwiązanie.
 
-6. Teraz można znaleźć pliku key.snk w katalogu projektu MyProjectWizard ( *\<lokalizacji na dysku > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopiuj *key.snk* pliku.
+6. Teraz można znaleźć plik Key. snk w katalogu projektu MyProjectWizard ( *\<Lokalizacja dysku > \MyProjectTemplate\MyProjectWizard\key.snk*). Skopiuj plik *Key. snk* .
 
-7. Przejdź do katalogu wyjściowego i Znajdź zestaw ( *\<lokalizacji na dysku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Wklej *key.snk* pliku w tym miejscu. (Nie jest to absolutnie konieczne, ale jej ułatwi następujące kroki).
+7. Przejdź do katalogu wyjściowego i Znajdź zestaw ( *\<Lokalizacja dysku > \ MyProjectTemplate/MyProjectWizard \ bin \ Debug \ MyProjectWizard. dll*). Wklej tutaj plik *Key. snk* . (Nie jest to bezwzględnie konieczne, ale ułatwia wykonywanie następujących czynności).
 
-8. Otwórz okno polecenia i przejdź do katalogu, w którym utworzono zestaw.
+8. Otwórz okno polecenia i przejdź do katalogu, w którym został utworzony zestaw.
 
-9. Znajdź *sn.exe* narzędzia podpisywania. Na przykład w systemie operacyjnym 64-bitowego systemu Windows 10, typowe ścieżki będzie następujące:
+9. Znajdź narzędzie podpisywania *SN. exe* . Na przykład w systemie operacyjnym Windows 10 64-bitowym typowym ścieżką będzie:
 
      *C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*
 
-     Jeśli nie można odnaleźć narzędzia, spróbuj uruchomić **gdzie /R. sn.exe** w oknie wiersza polecenia. Zanotuj ścieżkę.
+     Jeśli nie możesz znaleźć tego narzędzia, spróbuj uruchomić polecenie, **gdzie/r. SN. exe** w oknie poleceń. Zanotuj ścieżkę.
 
-10. Wyodrębnij klucz publiczny z *key.snk* pliku. W oknie wiersza polecenia wpisz:
+10. Wyodrębnij klucz publiczny z pliku *Key. snk* . W oknie polecenia wpisz
 
-     **\<Lokalizacja sn.exe > \sn.exe -p key.snk outfile.key.**
+     **\<Lokalizacja SN. exe > \sn.exe-p Key. snk pliku. Key.**
 
-     Nie zapomnij Otocz ścieżkę *sn.exe* w znaki cudzysłowu, jeśli istnieją spacje w nazwach katalogów!
+     Nie zapomnij umieścić ścieżki *SN. exe* ze znakami cudzysłowu, jeśli istnieją spacje w nazwach katalogów.
 
-11. Pobierz token klucza publicznego z PlikWyjściowy:
+11. Pobierz token klucza publicznego z pliku:
 
-     **\<Lokalizacja sn.exe > outfile.key -t \sn.exe.**
+     **\<Lokalizacja SN. exe > \sn.exe-t plik. Key.**
 
-     Ponownie nie zapomnij znaki cudzysłowu. Powinien zostać wyświetlony wiersz w danych wyjściowych, takich jak to
+     Ponownie nie zapomnij cudzysłowu. W danych wyjściowych powinna zostać wyświetlona linia, taka jak ta
 
-     **Token klucza publicznego jest \<tokenu >**
+     **Token klucza publicznego jest \<tokenem >**
 
      Zanotuj tę wartość.
 
-12. Dodawanie odwołania do niestandardowego kreatora, aby *.vstemplate* pliku szablonu projektu. W **Eksploratora rozwiązań**, Znajdź plik o nazwie *MyProjectTemplate.vstemplate*, a następnie otwórz go. Po zakończeniu \<TemplateContent > sekcji, dodaj następującą sekcję:
+12. Dodaj odwołanie do kreatora niestandardowego do pliku *vstemplate* szablonu projektu. W **Eksplorator rozwiązań**Znajdź plik o nazwie *MyProjectTemplate. vstemplate*i otwórz go. Po zakończeniu \<sekcji TemplateContent > Dodaj następującą sekcję:
 
     ```xml
     <WizardExtension>
@@ -255,25 +255,25 @@ Szablon niestandardowy projekt, aby użyć niestandardowego kreatora, musisz pod
     </WizardExtension>
     ```
 
-     Gdzie **MyProjectWizard** to nazwa zestawu, a **tokenu** jest token został skopiowany w poprzednim kroku.
+     Gdzie **MyProjectWizard** jest nazwą zestawu, a **token** jest tokenem skopiowanym w poprzednim kroku.
 
-13. Zapisz wszystkie pliki w projekcie i ponownie skompilować.
+13. Zapisz wszystkie pliki w projekcie i Skompiluj ponownie.
 
 ## <a name="add-the-custom-parameter-to-the-template"></a>Dodawanie parametru niestandardowego do szablonu
 
-W tym przykładzie projekt użyty jako szablonu nie wyświetla komunikat określony w postaci danych wejściowych użytkownika niestandardowego kreatora.
+W tym przykładzie projekt używany jako szablon wyświetla komunikat określony w formularzu danych wejściowych użytkownika Kreatora niestandardowego.
 
-1. W **Eksploratora rozwiązań**, przejdź do **MyProjectTemplate** projektu, a następnie otwórz *Class1.cs*.
+1. W **Eksplorator rozwiązań**przejdź do projektu **MyProjectTemplate** i Otwórz *Class1.cs*.
 
-2. W `Main` metoda aplikacji, Dodaj następujący wiersz kodu.
+2. `Main` W metodzie aplikacji Dodaj następujący wiersz kodu.
 
    ```csharp
    Console.WriteLine("$custommessage$");
    ```
 
-    Parametr `$custommessage$` zostaje zastąpiony tekstem wprowadzonym w formularzu wejściowym użytkownika, gdy projekt jest tworzony na podstawie tego szablonu.
+    Parametr `$custommessage$` jest zastępowany tekstem wprowadzonym w formularzu wejściowym użytkownika podczas tworzenia projektu na podstawie szablonu.
 
-Oto pełny kod pliku zanim został on wyeksportowany do szablonu.
+W tym miejscu znajduje się pełen plik kodu przed jego wyeksportowaniem do szablonu.
 
 ```csharp
 using System;
@@ -293,29 +293,29 @@ namespace $safeprojectname$
 }
 ```
 
-## <a name="use-the-custom-wizard"></a>Użyć niestandardowego kreatora
+## <a name="use-the-custom-wizard"></a>Korzystanie z Kreatora niestandardowego
 
-Teraz możesz utworzyć projekt na podstawie szablonu i użyć niestandardowego kreatora.
+Teraz można utworzyć projekt na podstawie szablonu i użyć Kreatora niestandardowego.
 
-1. Ponownie skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Drugie wystąpienie programu Visual Studio powinny być wyświetlane.
+1. Skompiluj ponownie rozwiązanie i Rozpocznij debugowanie. Powinno zostać wyświetlone drugie wystąpienie programu Visual Studio.
 
-2. Utwórz nowy projekt MyProjectTemplate. (**Pliku** > **nowe** > **projektu**).
+2. Utwórz nowy projekt MyProjectTemplate. (**Plik** > nowyprojekt > ).
 
-3. W **nowy projekt** okno dialogowe, wyszukaj "myproject" zlokalizuj szablon, wpisz nazwę, a następnie kliknij przycisk **OK**.
+3. W oknie dialogowym **Nowy projekt** Wyszukaj ciąg "mój projekt", aby zlokalizować szablon, wpisz nazwę i kliknij przycisk **OK**.
 
-     Zostanie otwarty formularz wprowadzania użytkownika kreatora.
+     Zostanie otwarty formularz dane wejściowe użytkownika kreatora.
 
-4. Wpisz wartość dla parametru niestandardowego, a następnie kliknij przycisk.
+4. Wpisz wartość parametru niestandardowego i kliknij przycisk.
 
-     Formularz wprowadzania użytkownika kreatora zostanie zamknięty, a projekt jest tworzony na podstawie tego szablonu.
+     Formularz wprowadzania użytkownika kreatora zostanie zamknięty, a projekt zostanie utworzony na podstawie szablonu.
 
-5. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy plik kodu źródłowego i kliknij przycisk **Wyświetl kod**.
+5. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik kodu źródłowego i kliknij polecenie **Wyświetl kod**.
 
-     Należy zauważyć, że `$custommessage$` został zastąpiony tekstem wprowadzonym w formularz wprowadzania użytkownika kreatora.
+     Należy zauważyć `$custommessage$` , że został zastąpiony tekstem wprowadzonym w formularzu danych wejściowych użytkownika kreatora.
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
-- [Wizardextension — element (szablony Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)
+- [WizardExtension —, element (szablony Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)
 - [Pakiety NuGet w szablonach programu Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

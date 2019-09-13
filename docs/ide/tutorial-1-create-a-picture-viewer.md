@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1506f4303cf5344c4035642cfdd3e42c98396b02
-ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
+ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808778"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913270"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie przeglądarki obrazów
 
@@ -43,7 +43,7 @@ Ten samouczek przeprowadzi Cię przez następujące zadania:
 
 * Napisz metody obsługi zdarzeń.
 
-Po zakończeniu program powinien wyglądać podobnie do poniższej ilustracji:
+Po zakończeniu aplikacja powinna wyglądać podobnie do poniższej ilustracji:
 
 ![Aplikacja przeglądarka obrazów utworzona w tym samouczku](../ide/media/express_pictureviewerdone.png)
 
@@ -52,7 +52,7 @@ Po zakończeniu program powinien wyglądać podobnie do poniższej ilustracji:
 |Tytuł|Opis|
 |-----------|-----------------|
 |[Krok 1. Tworzenie projektu aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Zacznij od utworzenia projektu aplikacji Windows Forms.|
-|[Krok 2. Uruchamianie aplikacji](../ide/step-2-run-your-program.md)|Uruchom program aplikacji Windows Forms, który został utworzony w poprzednim kroku.|
+|[Krok 2. Uruchamianie aplikacji Przeglądarka obrazów](../ide/step-2-run-your-program.md)|Uruchom projekt aplikacji Windows Forms, który został utworzony w poprzednim kroku.|
 |[Krok 3. Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md)|Zmień wygląd formularza przy użyciu okna **Właściwości** .|
 |[Krok 4. Układanie formularza przy użyciu kontrolki TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|`TableLayoutPanel` Dodaj kontrolkę do formularza.|
 |[Krok 5. Dodawanie kontrolek do formularza](../ide/step-5-add-controls-to-your-form.md)|Dodaj kontrolki, takie jak `PictureBox` kontrolka `CheckBox` i kontrolka, do formularza. Dodaj przyciski do formularza.|
@@ -61,7 +61,7 @@ Po zakończeniu program powinien wyglądać podobnie do poniższej ilustracji:
 |[Krok 8. Napisz kod dla programu obsługi zdarzeń przycisku Pokaż obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Napisz kod przy użyciu narzędzia IntelliSense.|
 |[Krok 9. Przeglądanie, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md)|Przejrzyj i Przetestuj swój kod. Dodaj komentarze zgodnie z wymaganiami.|
 |[Krok 10. Napisz kod dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napisz kod, aby inne przyciski i pole wyboru działały przy użyciu funkcji IntelliSense.|
-|[Krok 11. Uruchom program i wypróbuj inne funkcje](../ide/step-11-run-your-program-and-try-other-features.md)|Uruchom program i Ustaw kolor tła. Wypróbuj inne funkcje, takie jak Zmienianie kolorów, czcionek i obramowań.|
+|[Krok 11. Uruchom aplikację i wypróbuj inne funkcje](../ide/step-11-run-your-program-and-try-other-features.md)|Uruchom aplikację i Ustaw kolor tła. Wypróbuj inne funkcje, takie jak Zmienianie kolorów, czcionek i obramowań.|
 
 ## <a name="next-steps"></a>Następne kroki
 

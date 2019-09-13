@@ -2,7 +2,7 @@
 title: 'Samouczek: Wprowadzenie do Visual Basic'
 description: Dowiedz się, jak tworzyć aplikacje konsolowe Visual Basic w programie Visual Studio, krok po kroku.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/11/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 899c47154a3d55811579ff01786096f35272593a
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: eb0bbc0cdf7aff548053c813cdf1b29ed1fed080
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180423"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913309"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: Wprowadzenie do Visual Basic w programie Visual Studio
 
@@ -47,13 +47,13 @@ Najpierw utworzymy projekt aplikacji Visual Basic. Typ projektu jest dostarczany
 
 2. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
 
-3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie Nazwij plik *HelloWorld*.
+3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie nadaj nazwę projektowi *WhatIsYourName*.
 
    ![Szablon projektu aplikacji konsolowej (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Dodaj obciążenie (opcjonalnie)
 
-Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, można go uzyskać, dodając obciążenie Międzyplatformowe platformy **.NET Core** . Możesz dodać to obciążenie jeden z dwóch poniższych sposobów, w zależności od tego, które aktualizacje programu Visual Studio 2017 są zainstalowane na maszynie.
+Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, można go uzyskać, dodając obciążenie **Międzyplatformowe platformy .NET Core** . Możesz dodać to obciążenie jeden z dwóch poniższych sposobów, w zależności od tego, które aktualizacje programu Visual Studio 2017 są zainstalowane na maszynie.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Korzystanie z okna dialogowego Nowy projekt
 

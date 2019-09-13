@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58721610a493283ff0bed8fca9cf6e6f6d668c4d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 402d24ae90c6a7523398b21bfc77eb1b30bdf04f
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293478"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887886"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 
-Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła, w tym kroku należy dodać <xref:System.Windows.Forms.OpenFileDialog> składnik <xref:System.Windows.Forms.ColorDialog> i składnik do formularza.
+Aby umożliwić aplikacji otwieranie plików obrazów i Wybieranie koloru tła, w tym kroku należy dodać <xref:System.Windows.Forms.OpenFileDialog> składnik <xref:System.Windows.Forms.ColorDialog> i składnik do formularza.
 
 Składnik jest jak kontrolka na kilka sposobów. Za pomocą **przybornika** dodasz składnik do formularza i ustawisz jego właściwości przy użyciu okna **Właściwości** . Ale w przeciwieństwie do kontrolki Dodawanie składnika do formularza nie powoduje dodania widocznego elementu, który użytkownik może zobaczyć w formularzu. Zamiast tego zapewnia pewne zachowania, które można wyzwolić przy użyciu kodu. Jest to składnik, który otwiera okno dialogowe **Otwórz plik** .
 
@@ -54,7 +54,7 @@ Składnik jest jak kontrolka na kilka sposobów. Za pomocą **przybornika** doda
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz [krok 8: Napisz kod dla programu obsługi](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)zdarzeń przycisku Pokaż obraz.
+* Aby przejść do następnego kroku samouczka, zobacz  **[krok 8: Napisz kod dla programu obsługi](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)** zdarzeń przycisku Pokaż obraz.
 
 * Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6. Nadaj nazwę kontrolkom](../ide/step-6-name-your-button-controls.md)przycisków.
 

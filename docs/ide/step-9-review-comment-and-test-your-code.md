@@ -16,18 +16,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9f5c6f3aff6338feb0de16a44d3b7d02d0c3b9
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 34f4b8272494e4d1bdef1f073cf602a6c2397445
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293647"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887937"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przeglądanie, komentowanie i testowanie kodu
 
-Następnie Dodaj komentarz do kodu. Komentarz to Uwaga, która nie zmienia sposobu zachowania programu. Ułatwia to osobie odczytującej Twój kod, aby zrozumieć, co robi. Dodawanie komentarzy do kodu jest dobrym wykonywaćem do uzyskania.
+Następnie Dodaj komentarz do kodu. Komentarz to Uwaga, która nie zmienia sposobu zachowania aplikacji. Ułatwia to osobie odczytującej Twój kod, aby zrozumieć, co robi. Dodawanie komentarzy do kodu jest dobrym wykonywaćem do uzyskania.
 
-W C#programie dwa ukośniki (//) oznaczają wiersz jako komentarz. W Visual Basic znak pojedynczego cudzysłowu (') służy do oznaczania linii jako komentarz. Po dodaniu komentarza Przetestuj swój program. Dobrym rozwiązaniem jest częste uruchamianie i testowanie kodu podczas pracy nad projektami, dzięki czemu możesz wychwycić i rozwiązać wszelkie problemy wcześniej, zanim kod będzie bardziej skomplikowany. Jest to nazywane *testami iteracyjnymi*.
+W C#programie dwa ukośniki (//) oznaczają wiersz jako komentarz. W Visual Basic znak pojedynczego cudzysłowu (') służy do oznaczania linii jako komentarz. Po dodaniu komentarza Przetestuj swoją aplikację. Dobrym rozwiązaniem jest częste uruchamianie i testowanie kodu podczas pracy nad projektami, dzięki czemu możesz wychwycić i rozwiązać wszelkie problemy wcześniej, zanim kod będzie bardziej skomplikowany. Jest to nazywane *testami iteracyjnymi*.
 
 Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrobione, może już załadować obraz. Przed dodaniem komentarza do kodu i przetestowania go, należy zapoznać się z pojęciami dotyczącymi kodu, ponieważ często będziesz używać tych koncepcji:
 
@@ -64,7 +64,7 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
      
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
-    Program obsługi <xref:System.Windows.Forms.Control.Click> zdarzeń przycisku showButton jest teraz zakończony i działa. Rozpoczęto pisanie kodu, rozpoczynając `if` od instrukcji. `if` Instrukcja to sposób informowania programu, "Sprawdź to i jeśli jest prawdziwe, wykonaj te akcje". W takim przypadku Użytkownik poinformuje program, aby otworzył okno dialogowe **Otwórz plik** , a jeśli użytkownik wybierze plik, a następnie kliknie przycisk **OK** , Załaduj ten plik w elemencie **PictureBox**.
+    Program obsługi <xref:System.Windows.Forms.Control.Click> zdarzeń przycisku showButton jest teraz zakończony i działa. Rozpoczęto pisanie kodu, rozpoczynając `if` od instrukcji. `if` Instrukcja to sposób informowania o swojej aplikacji, "Sprawdź to i jeśli jest prawdziwe, wykonaj te akcje". W takim przypadku możesz poinstruować aplikację, aby otworzyła okno dialogowe **Otwórz plik** , a jeśli użytkownik wybierze plik i kliknie przycisk **OK** , Załaduj ten plik w elemencie **PictureBox**.
 
     > [!TIP]
     > Środowisko IDE zostało skompilowane, aby ułatwić pisanie kodu, a *fragmenty kodu* są jednym ze sposobów. Fragment kodu jest skrótem, który jest rozwinięty w niewielkim bloku.
@@ -73,22 +73,22 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
     >
     >  Aby uaktywnić fragment kodu przy wpisywaniu tekstu, wpisz go i wybierz klawisz **Tab** . Wiele fragmentów kodu pojawia się w oknie **IntelliSense** , co oznacza, że wybierasz klawisz **Tab** dwa razy: najpierw, aby wybrać wstawkę z okna **IntelliSense** , a następnie wskazać, że IDE używa tego fragmentu kodu. (Technologia IntelliSense obsługuje `if` fragment kodu, ale `ifelse` nie fragment kodu).
 
-1. Przed uruchomieniem programu Zapisz swój program, wybierając przycisk **Zapisz wszystkie** paski narzędzi, który powinien wyglądać podobnie do poniższego zrzutu ekranu.
+1. Przed uruchomieniem aplikacji Zapisz aplikację, wybierając przycisk **Zapisz wszystkie** paski narzędzi, który powinien wyglądać podobnie do poniższego zrzutu ekranu.
 
      ![Przycisk Zapisz wszystkie paski narzędzi](../ide/media/express_iconsaveall.png)<br>
 ***Zapisz wszystko*** *przycisk*
 
-     Alternatywnie, aby zapisać swój program, wybierz pozycję **plik** > **Zapisz wszystko** na pasku menu (lub naciśnij **klawisze CTRL**+**SHIFT**+**S**). Najlepszym rozwiązaniem jest wczesne i częste zapisywanie.
+     Alternatywnie, aby zapisać aplikację, wybierz pozycję **plik** > **Zapisz wszystko** na pasku menu (lub naciśnij **klawisze CTRL**+**SHIFT**+**S**). Najlepszym rozwiązaniem jest wczesne i częste zapisywanie.
 
      Po uruchomieniu program powinien wyglądać jak na poniższej ilustracji.
 
      ![Przeglądarka obrazów](../ide/media/express_pictureviewerdonerun.png)<br>***Przeglądarka obrazów***
 
-## <a name="to-test-your-program"></a>Aby przetestować program
+## <a name="to-test-your-app"></a>Aby przetestować aplikację
 
 1. Wybierz klawisz **F5** lub wybierz przycisk paska narzędzi **Rozpocznij debugowanie** .
 
-1. Wybierz przycisk **Pokaż obraz** , aby uruchomić właśnie napisany kod. Po pierwsze program otwiera okno dialogowe **Otwórz plik** . Sprawdź, czy Twoje filtry są wyświetlane na liście rozwijanej **Pliki typu** u dołu okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy dostarczane z systemem operacyjnym Windows w folderze *Moje dokumenty* w folderze *Moje obrazy Pictures\Sample* .
+1. Wybierz przycisk **Pokaż obraz** , aby uruchomić właśnie napisany kod. Najpierw aplikacja otwiera okno dialogowe **Otwórz plik** . Sprawdź, czy Twoje filtry są wyświetlane na liście rozwijanej **Pliki typu** u dołu okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy dostarczane z systemem operacyjnym Windows w folderze *Moje dokumenty* w folderze *Moje obrazy Pictures\Sample* .
 
     > [!TIP]
     > Jeśli nie widzisz żadnych obrazów w oknie dialogowym **Wybierz plik obrazu** , upewnij się, że na liście rozwijanej w prawym dolnym rogu okna dialogowego jest zaznaczona opcja filtr **wszystkie pliki (\**.)** .
@@ -99,7 +99,7 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 10: Napisz kod dla dodatkowych przycisków i pola](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)wyboru.
+- Aby przejść do następnego kroku samouczka, zobacz  **[krok 10: Napisz kod dla dodatkowych przycisków i pola](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)** wyboru.
 
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8: Napisz kod dla programu obsługi](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)zdarzeń przycisku Pokaż obraz.
 

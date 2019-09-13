@@ -1,6 +1,6 @@
 ---
-title: Krok 11. Uruchamianie programu i wypróbowywanie innych funkcji
-ms.date: 08/30/2019
+title: Krok 11. Uruchom aplikację przeglądarka obrazów i wypróbuj inne funkcje
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5486aa4d2effa3feb03b31bace7a9cfc86fd9925
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293604"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913129"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11. Uruchamianie programu i wypróbowywanie innych funkcji
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Krok 11. Uruchom aplikację przeglądarka obrazów i wypróbuj inne funkcje
 
-Program jest gotowy i gotowy do uruchomienia. Można uruchomić program i ustawić kolor <xref:System.Windows.Forms.PictureBox>tła. Aby dowiedzieć się więcej, spróbuj poprawić program, zmieniając kolor formularza, dostosowując przyciski i pole wyboru i zmieniając właściwości formularza.
+Twoja aplikacja dla przeglądarki obrazów została zakończona i jest gotowa do uruchomienia. Możesz uruchomić aplikację i ustawić kolor <xref:System.Windows.Forms.PictureBox>tła. Aby dowiedzieć się więcej, spróbuj poprawić aplikację, zmieniając kolor formularza, dostosowując przyciski i pole wyboru i zmieniając właściwości formularza.
 
-## <a name="how-to-run-your-program-and-set-the-background-color"></a>Jak uruchomić program i ustawić kolor tła
+## <a name="how-to-run-your-app-and-set-the-background-color"></a>Jak uruchomić aplikację i ustawić kolor tła
 
 1. Wybierz **F5**lub na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
 
@@ -38,7 +38,7 @@ Program jest gotowy i gotowy do uruchomienia. Można uruchomić program i ustawi
     > [!NOTE]
     > Możesz załadować obraz z Internetu, wklejając jego adres URL do okna dialogowego **Otwórz plik** . Spróbuj znaleźć obraz z przezroczystym tłem, aby wyświetlić kolor tła.
 
-1. Wybierz przycisk **Wyczyść obraz** , aby upewnić się, że został wyczyszczony. Następnie zamknij program, wybierając przycisk **Zamknij** .
+1. Wybierz przycisk **Wyczyść obraz** , aby upewnić się, że został wyczyszczony. Następnie zamknij aplikację, wybierając przycisk **Zamknij** .
 
 ## <a name="try-other-features"></a>Wypróbowywanie innych funkcji
 
@@ -48,7 +48,7 @@ Program jest gotowy i gotowy do uruchomienia. Można uruchomić program i ustawi
 
 * Zmień właściwości **FormBorderStyle** i **ControlBox** formularza.
 
-* Użyj właściwości **AcceptButton** i **CancelButton** formularza, aby przyciski były wybierane automatycznie, gdy użytkownik wybierze klawisz **Enter** lub **ESC** . Uruchom okno dialogowe **Otwórz plik** , gdy użytkownik wybierze **klawisz ENTER** i zamknie pole, gdy użytkownik wybierze **klawisz ESC**.
+* Użyj właściwości **AcceptButton** i **CancelButton** formularza, aby przyciski były wybierane automatycznie, gdy użytkownik wybierze klawisz **Enter** lub **ESC** . Utwórz aplikację otwierającą okno dialogowe **Otwórz plik** , gdy użytkownik wybierze **klawisz ENTER** i zamknie pole, gdy użytkownik wybierze **klawisz ESC**.
 
 ## <a name="next-steps"></a>Następne kroki
 

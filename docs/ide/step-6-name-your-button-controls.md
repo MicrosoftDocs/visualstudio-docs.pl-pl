@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794244bcdb814f78338a119d27ec0b0299023e59
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293484"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887977"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 
@@ -71,14 +71,14 @@ Karta ***Form1.cs*** *z C# kodem*
    > [!IMPORTANT]
    > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-   Przeglądasz kod o nazwie `showButton_Click()` ( `ShowButton_Click()`Alternatywnie). Środowisko IDE zostało dodane do kodu formularza podczas otwierania pliku kodu dla przycisku **showButton** . W czasie projektowania, gdy otworzysz plik kodu dla formantu w formularzu, kod jest generowany dla kontrolki, jeśli jeszcze nie istnieje. Ten kod, znany jako *Metoda*, jest uruchamiany po uruchomieniu programu i wybraniu kontrolki — w tym przypadku przycisk **Pokaż obraz** .
+   Przeglądasz kod o nazwie `showButton_Click()` ( `ShowButton_Click()`Alternatywnie). Środowisko IDE zostało dodane do kodu formularza podczas otwierania pliku kodu dla przycisku **showButton** . W czasie projektowania, gdy otworzysz plik kodu dla formantu w formularzu, kod jest generowany dla kontrolki, jeśli jeszcze nie istnieje. Ten kod, znany jako *Metoda*, jest uruchamiany po uruchomieniu aplikacji i wybraniu kontrolki — w tym przypadku przycisk **Pokaż obraz** .
 
 1. Wybierz ponownie kartę **Projektant formularzy systemu Windows** (**Form1.cs [Design]** ), a następnie otwórz plik kodu dla przycisku **Wyczyść obraz** , aby utworzyć dla niego metodę w kodzie formularza. Powtórz tę czynność dla pozostałych dwóch przycisków. Za każdym razem IDE dodaje nową metodę do pliku kodu formularza.
 
 1. Aby dodać jeszcze jedną metodę, Otwórz plik kodu dla kontrolki **CheckBox** w **Projektant formularzy systemu Windows** , aby umożliwić `checkBox1_CheckedChanged()` IDE dodanie metody. Ta metoda jest wywoływana za każdym razem, gdy użytkownik zaznaczy lub wyczyści to pole wyboru.
 
    > [!TIP]
-   > Podczas pracy z programem często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby otworzyć **Projektant formularzy systemu Windows** przez dwukrotne kliknięcie C# *Form1.cs* w lub *Form1. vb* w Visual Basic lub na pasku menu wybierz**Projektant** **widoków** > .
+   > Podczas pracy nad aplikacją często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby otworzyć **Projektant formularzy systemu Windows** przez dwukrotne kliknięcie C# *Form1.cs* w lub *Form1. vb* w Visual Basic lub na pasku menu wybierz**Projektant** **widoków** > .
 
     Poniżej przedstawiono nowy kod widoczny w edytorze kodu.
 
@@ -86,7 +86,7 @@ Karta ***Form1.cs*** *z C# kodem*
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
-    Pięć metod, które zostały dodane, nazywają *programy obsługi zdarzeń*, ponieważ program wywołuje je za każdym razem, gdy występuje zdarzenie (takie jak użytkownik wybierający przycisk lub zaznaczenie pola).
+    Pięć metod, które zostały dodane, nazywają *programy obsługi zdarzeń*, ponieważ aplikacja wywołuje je za każdym razem, gdy występuje zdarzenie (takie jak użytkownik wybierający przycisk lub zaznaczając pole).
 
     Gdy przeglądasz kod kontrolki w środowisku IDE w czasie projektowania, Visual Studio dodaje metodę programu obsługi zdarzeń dla kontrolki, jeśli taka nie istnieje. Na przykład po dwukrotnym kliknięciu przycisku IDE dodaje procedurę obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenia (która jest wywoływana za każdym razem, gdy użytkownik wybierze przycisk). Po dwukrotnym kliknięciu pola wyboru, IDE dodaje procedurę obsługi zdarzeń dla <xref:System.Windows.Forms.CheckBox.CheckedChanged> zdarzenia (która jest wywoływana za każdym razem, gdy użytkownik wybierze lub usunie pole).
 
@@ -100,7 +100,7 @@ Karta ***Form1.cs*** *z C# kodem*
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz [krok 7: Dodaj składniki okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md).
+* Aby przejść do następnego kroku samouczka, zobacz  **[krok 7: Dodaj składniki okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md).**
 
 * Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodaj formanty do formularza](../ide/step-5-add-controls-to-your-form.md).
 

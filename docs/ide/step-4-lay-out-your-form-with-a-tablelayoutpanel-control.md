@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a0bc67968b7248494a087f06037f72152b53300
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 3595705030e2e969f99455700ab70f36bf22274a
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293634"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887988"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. Określanie układu formularza przy użyciu kontrolki TableLayoutPanel
 
@@ -93,7 +93,7 @@ W tym kroku dodasz <xref:System.Windows.Forms.TableLayoutPanel> kontrolkę do fo
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodaj formanty do formularza](../ide/step-5-add-controls-to-your-form.md).
+* Aby przejść do następnego kroku samouczka, zobacz  **[krok 5: Dodaj formanty do formularza](../ide/step-5-add-controls-to-your-form.md).**
 
 * Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3. Ustaw właściwości](../ide/step-3-set-your-form-properties.md)formularza.
 

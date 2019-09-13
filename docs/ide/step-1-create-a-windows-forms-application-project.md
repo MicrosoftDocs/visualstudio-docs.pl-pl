@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2b21edcae4cd825ade551b92f98853da8f2516
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 65339eabcffdf0f333036442ea8473ecf8c8f06e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293664"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888012"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
+# <a name="step-1-create-a-windows-forms-app-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
 
 Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie projektu aplikacji Windows Forms.
 
@@ -70,9 +70,9 @@ Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie proje
 
 ::: moniker-end
 
-Program Visual Studio tworzy rozwiązanie dla Twojego programu. Rozwiązanie pełni rolę kontenera dla wszystkich projektów i plików wymaganych przez program. Te warunki zostaną omówione bardziej szczegółowo w dalszej części tego samouczka.
+Program Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa jako kontener dla wszystkich projektów i plików wymaganych przez aplikację. Te warunki zostaną omówione bardziej szczegółowo w dalszej części tego samouczka.
 
-## <a name="about-the-windows-forms-application-project"></a>Informacje o projekcie aplikacji Windows Forms
+## <a name="about-the-windows-forms-app-project"></a>Informacje o projekcie aplikacji Windows Forms
 
 1. Środowisko deweloperskie zawiera trzy okna: okno główne, **Eksplorator rozwiązań**i okno **Właściwości** .
 
@@ -96,7 +96,7 @@ Program Visual Studio tworzy rozwiązanie dla Twojego programu. Rozwiązanie pe�
 
     * **Okno Eksplorator rozwiązań** W tym oknie można wyświetlać wszystkie elementy w rozwiązaniu i przechodzić do nich.
 
-       W przypadku wybrania pliku zawartość okna **Właściwości** zostanie zmieniona. Jeśli otworzysz plik kodu (który zostanie zakończony w *. cs* w C# i *. vb* w Visual Basic), zostanie wyświetlony plik kodu lub Projektant pliku kodu. Projektant jest powierzchnią wizualną, na której można dodawać kontrolki, takie jak przyciski i listy. W przypadku formularzy programu Visual Studio Projektant jest nazywany **Projektant formularzy systemu Windows**.
+    W przypadku wybrania pliku zawartość okna **Właściwości** zostanie zmieniona. Jeśli otworzysz plik kodu (który zostanie zakończony w *. cs* w C# i *. vb* w Visual Basic), zostanie wyświetlony plik kodu lub Projektant pliku kodu. Projektant jest powierzchnią wizualną, na której można dodawać kontrolki, takie jak przyciski i listy. W przypadku formularzy programu Visual Studio Projektant jest nazywany **Projektant formularzy systemu Windows**.
 
     * **Okno właściwości** W tym oknie można zmienić właściwości elementów wybranych w innych oknach. Na przykład po wybraniu formularza Form1 można zmienić jego tytuł przez ustawienie właściwości **Text** i zmienić kolor tła, ustawiając właściwość **BackColor** .
 
@@ -114,7 +114,7 @@ Program Visual Studio tworzy rozwiązanie dla Twojego programu. Rozwiązanie pe�
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz [krok 2: Uruchom program](../ide/step-2-run-your-program.md).
+* Aby przejść do następnego kroku samouczka, zobacz  **[krok 2: Uruchom aplikację](../ide/step-2-run-your-program.md).**
 
 * Aby powrócić do tematu przeglądu, zobacz [samouczek 1: Utwórz przeglądarkę](../ide/tutorial-1-create-a-picture-viewer.md)obrazów.
 

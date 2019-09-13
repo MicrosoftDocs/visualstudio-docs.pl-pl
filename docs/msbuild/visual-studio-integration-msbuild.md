@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747435"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913284"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja programu Visual Studio (MSBuild)
 Visual Studio zawiera [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do ładowania i kompilacji projektów zarządzanych. Ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest odpowiedzialna za projekt, niemal każdy projekt w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formatu może być pomyślnie używany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nawet jeśli projekt został utworzony przez inne narzędzie i ma niestandardowy proces kompilacji.
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.
 
-  - `ResolvedFrom`, ustawiona na "{TargetFrameworkDirectory}", jeśli została rozwiązana z katalogu .NET Framework.
+  - `ResolvedFrom`Ustaw na wartość "{TargetFrameworkDirectory}", jeśli został on rozwiązany z katalogu .NET Framework.
 
 - Odniesienia modelu COM:
 
@@ -176,17 +176,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveNativeReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `NativeReferenceFile`. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z nowym fragmentem metadanych o nazwie `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.
 
 ## <a name="performance-shortcuts"></a>Skróty wydajności
- Jeśli uruchomisz debugowanie w interfejsie użytkownika programu Visual Studio (albo wybierając klawisz F5 lub wybierając **debugowania** > **Rozpocznij debugowanie** na pasku menu), proces kompilacji używa szybkiego sprawdzania aktualizacji w celu poprawienia wydajności wydajność. W niektórych przypadkach, gdzie niestandardowe kompilacje tworzą pliki, które z kolei kompilowane szybkie sprawdzenie aktualizacji niepoprawnie identyfikuje zmienione pliki. Projekty, które wymagają bardziej szczegółowego sprawdzania aktualizacji można wyłączyć szybkie sprawdzanie przez ustawienie zmiennej środowiskowej `DISABLEFASTUPTODATECHECK=1`. Alternatywnie projekty mogą ją ustawiać jako właściwość narzędzia MSBuild w projekcie lub w pliku, który projekt importuje.
+ Jeśli używasz środowiska IDE programu Visual Studio, aby rozpocząć debugowanie (wybierając klawisz F5 lub wybierając **Debuguj** > **Rozpocznij debugowanie** na pasku menu) lub w celu skompilowania > projektu (na przykład**rozwiązanie** kompilacji kompilacji ) proces kompilacji używa szybkiej kontroli aktualizacji w celu zwiększenia wydajności. W niektórych przypadkach, gdzie niestandardowe kompilacje tworzą pliki, które z kolei kompilowane szybkie sprawdzenie aktualizacji niepoprawnie identyfikuje zmienione pliki. Projekty, które wymagają bardziej szczegółowego sprawdzania aktualizacji można wyłączyć szybkie sprawdzanie przez ustawienie zmiennej środowiskowej `DISABLEFASTUPTODATECHECK=1`. Alternatywnie projekty mogą ją ustawiać jako właściwość narzędzia MSBuild w projekcie lub w pliku, który projekt importuje.
 
  Do regularnych kompilacji w programie Visual Studio nie ma zastosowania szybkie sprawdzenie aktualizacji, a projekt zostanie skompilowany po wywołaniu kompilacji w wierszu polecenia.
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Rozszerzanie procesu kompilacji programu Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
-- [Uruchom kompilację z poziomu środowiska IDE](../msbuild/starting-a-build-from-within-the-ide.md)
-- [Rejestrowanie rozszerzeń środowiska .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)
+- [Instrukcje: Rozwiń proces kompilacji programu Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
+- [Rozpocznij kompilację z poziomu środowiska IDE](../msbuild/starting-a-build-from-within-the-ide.md)
+- [Rejestrowanie rozszerzeń .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
 - [Property — element (MSBuild)](../msbuild/property-element-msbuild.md)
-- [TARGET — element (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Target — element (MSBuild)](../msbuild/target-element-msbuild.md)
 - [CSC — zadanie](../msbuild/csc-task.md)
 - [Vbc — zadanie](../msbuild/vbc-task.md)

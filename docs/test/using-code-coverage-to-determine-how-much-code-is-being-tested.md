@@ -11,14 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976777"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913213"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -28,33 +26,51 @@ Analizy pokrycia kodu mogą dotyczyć zarówno kodów zarządzanych (CLI), jak i
 
 Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu Eksploratora testów. Tabela wyników zawiera procent kodu, który został uruchomiony w każdym zestawie, każdej klasie i metodzie. Ponadto edytor źródła zawiera kod, który został przetestowany.
 
+::: moniker range="vs-2017"
+
 ![Wyniki pokrycia kodu za pomocą kolorowania](../test/media/codecoverage1.png)
+
+::: moniker-end
 
 ## <a name="requirements"></a>Wymagania
 
 Funkcja pokrycia kodu jest dostępna tylko w wersji Visual Studio Enterprise.
 
-## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Analizowanie pokrycia kodu w ramach testów jednostkowych w Eksploratorze testów
+## <a name="analyze-code-coverage"></a>Analizowanie pokrycia kodu
 
 ::: moniker range="vs-2017"
+
 1. W menu **test** wybierz polecenie **Analizuj pokrycie kodu**.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-1. W **Eksploratorze testów**wybierz polecenie **Analizuj pokrycie kodu** z menu **uruchamiania** .
+
+1. W **Eksploratorze testów**wybierz pozycję **Analizuj pokrycie kodu dla wszystkich testów** z menu **Run (uruchamianie** ).
+
+   ![Menu Analiza pokrycia kodu w programie VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
+
+   Jeśli **Eksplorator testów** nie jest otwarty, otwórz go, wybierając **test** > **Windows** > **Test Explorer**lub naciśnij **klawisze CTRL**+**E**,**T**.
+
 ::: moniker-end
 
-2. Aby zobaczyć, które wiersze zostały uruchomione, wybierz ![ikonę](../test/media/codecoverage-showcoloringicon.png) Pokaż kolorowanie pokrycia kodu. **Pokaż kolorowanie pokrycia kodu**.
+2. Po uruchomieniu testów, aby zobaczyć, które wiersze zostały uruchomione, ![wybierz ikonę](../test/media/codecoverage-showcoloringicon.png) Pokaż kolorowanie pokrycia kodu **Pokaż kolorowanie pokrycia kodu** w oknie **wyników pokrycia kodu** . Domyślnie kod, który jest objęty testami, jest wyróżniony w jasnoniebieskim kolorze.
 
-   Aby zmienić kolory lub użyć pogrubienia, wybierz**Opcje** > **Narzędzia** > **czcionki i kolory** > **środowiska** > **Pokaż ustawienia dla: Edytor**tekstu. W obszarze **Wyświetl elementy**Dostosuj elementy pokrycia.
+   > [!TIP]
+   > Aby zmienić kolory lub użyć pogrubionej kroju, wybierz**Opcje** >  **Narzędzia** > **czcionki i kolory** >  ****środowiska** > Pokaż ustawienia dla: Edytor**tekstu. W obszarze **Wyświetl elementy**Dostosuj ustawienia dla elementów "pokrycie", na przykład **nienaruszony obszar pokrycia**.
+   >
+   > ![Czcionki i kolory pokrycia kodu](media/vs-2019/coverage-fonts-and-colors.png)
 
 3. Jeśli wyniki wykażą niewielkie pokrycie, zbadaj części kodu, które nie są wykonywane, i napisz więcej testów, aby je pokryć. Zespoły deweloperów zazwyczaj dążą do około 80% pokrycia kodu. W niektórych sytuacjach dopuszczalne jest niższe zapotrzebowanie. Niższe zapotrzebowanie jest dopuszczalne np. tam, gdzie dany kod jest generowany na podstawie standardowego szablonu.
 
 > [!TIP]
-> - Upewnij się, że optymalizacja kompilatora jest wyłączona
+> - Wyłącz optymalizację kompilatora
 > - Jeśli pracujesz z kodem niezarządzanym (natywnym), użyj kompilacji debugowania
-> - Upewnij się, że generowane są pliki PDB (symbol) dla każdego zestawu
+> - Generuj pliki. pdb (symbol) dla każdego zestawu
 
-Jeśli nie otrzymujesz oczekiwanych wyników, zobacz [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md). Nie zapomnij ponownie uruchomić pokrycia kodu po zaktualizowaniu kodu. Wyniki pokrycia i kolorowanie kodu nie są automatycznie aktualizowane po zmodyfikowaniu kodu ani po uruchomieniu testów.
+Jeśli nie otrzymujesz oczekiwanych wyników, zobacz [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md).
+
+Nie zapomnij ponownie uruchomić pokrycia kodu po zaktualizowaniu kodu. Wyniki pokrycia i kolorowanie kodu nie są automatycznie aktualizowane po zmodyfikowaniu kodu ani po uruchomieniu testów.
 
 ## <a name="report-in-blocks-or-lines"></a>Raport w blokach lub wierszach
 
@@ -227,11 +243,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Użyj następujących makr:
 
-`ExcludeFromCodeCoverage(` Wykluczname `, L"` *Funkcjaname*`");`
+`ExcludeFromCodeCoverage(`*Wykluczname* `, L"` *Funkcjaname*`");`
 
 `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
-- Wykluczname jest dowolną unikatową nazwą.
+- *Wykluczname* jest dowolną unikatową nazwą.
 
 - *FunctionName* jest w pełni kwalifikowaną nazwą funkcji. Może ona zawierać symbole wieloznaczne. Na przykład, aby wykluczyć wszystkie funkcje klasy, należy napisać`MyNamespace::MyClass::*`
 

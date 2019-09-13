@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00874c8fd7ded67c380de1166d7e9753a3bd3c24
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 33ef3c31acd39798df84c39fff82faba063fdaa9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662048"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913230"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Struktura docelowa programu MSBuild i platforma docelowa
-Projekt można skompilować do uruchamiania w *środowisku docelowym*, który jest określoną wersją .NET Framework i platformą docelową, która jestkonkretną architekturą oprogramowania.  Można na przykład określić, że aplikacja ma być uruchamiana na .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 802x86 ("x86"). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy*.
+Projekt można skompilować do uruchamiania w *środowisku docelowym*, który jest określoną wersją .NET Framework i *platformą docelową*, która jest konkretną architekturą oprogramowania.  Można na przykład określić, że aplikacja ma być uruchamiana na .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 802x86 ("x86"). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy*.
 
 > [!IMPORTANT]
 > W tym artykule przedstawiono stary sposób określania platformy docelowej. Projekty w stylu zestawu SDK umożliwiają różne TargetFrameworks, takie jak standard. Aby uzyskać więcej informacji, zobacz [Platformy docelowe](/dotnet/standard/frameworks).
@@ -58,7 +58,10 @@ Struktura docelowa jest określona we `TargetFrameworkVersion` właściwości w 
 
  *Profil docelowy* jest podzbiorem platformy docelowej. Na przykład profil klienta .NET Framework 4 nie zawiera odwołań do zestawów programu MSBuild.
 
- Profil docelowy jest określony we `TargetFrameworkProfile` właściwości w pliku projektu. Profil docelowy można zmienić przy użyciu formantu Target-Framework na stronach właściwości projektu w IDE. Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ > [!NOTE]
+ > Profile docelowe mają zastosowanie tylko do [bibliotek klas przenośnych](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
+
+ Profil docelowy jest określony we `TargetFrameworkProfile` właściwości w pliku projektu. Profil docelowy można zmienić przy użyciu formantu Target-Framework na stronach właściwości projektu w IDE.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -74,7 +77,7 @@ Struktura docelowa jest określona we `TargetFrameworkVersion` właściwości w 
 
 - `Xbox`wyznacza platformę Microsoft Xbox 360.
 
-*Platforma* docelowa to określona platforma, na której ma być uruchamiany projekt. Platforma docelowa jest określona we `PlatformTarget` właściwości kompilacja w pliku projektu. Możesz zmienić platformę docelową, korzystając ze stron właściwości projektu lub **Configuration Manager** w IDE.
+*Platforma docelowa* to określona platforma, na której ma być uruchamiany projekt. Platforma docelowa jest określona we `PlatformTarget` właściwości kompilacja w pliku projektu. Możesz zmienić platformę docelową, korzystając ze stron właściwości projektu lub **Configuration Manager** w IDE.
 
 ```xml
 <PropertyGroup>
@@ -83,7 +86,7 @@ Struktura docelowa jest określona we `TargetFrameworkVersion` właściwości w 
 
 ```
 
-*Konfiguracja* docelowa jest podzbiorem platformy docelowej. Na przykład `x86``Debug` konfiguracja nie obejmuje większości optymalizacji kodu. Konfiguracja docelowa jest określona we `Configuration` właściwości kompilacja w pliku projektu. Konfigurację docelową można zmienić przy użyciu stron właściwości projektu lub **Configuration Manager**.
+*Konfiguracja docelowa* jest podzbiorem platformy docelowej. Na przykład `x86``Debug` konfiguracja nie obejmuje większości optymalizacji kodu. Konfiguracja docelowa jest określona we `Configuration` właściwości kompilacja w pliku projektu. Konfigurację docelową można zmienić przy użyciu stron właściwości projektu lub **Configuration Manager**.
 
 ```xml
 <PropertyGroup>

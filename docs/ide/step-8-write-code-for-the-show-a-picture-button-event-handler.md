@@ -16,20 +16,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab10700e984f50089a3e66b6b89f449d963fd208
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293553"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887956"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Napisz kod dla programu obsługi zdarzeń przycisku Pokaż obraz
 
 W tym kroku zostanie wykonane działanie przycisku **Pokaż obraz** w następujący sposób:
 
-- Gdy użytkownik wybierze ten przycisk, program otwiera <xref:System.Windows.Forms.OpenFileDialog> okno.
+- Gdy użytkownik wybierze ten przycisk, aplikacja otworzy <xref:System.Windows.Forms.OpenFileDialog> pole.
 
-- Jeśli użytkownik otworzy plik obrazu, program wyświetli ten obraz w <xref:System.Windows.Forms.PictureBox>.
+- Jeśli użytkownik otworzy plik obrazu, aplikacja wyświetli ten obraz w <xref:System.Windows.Forms.PictureBox>.
 
 Środowisko IDE ma zaawansowane narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu. Podczas wpisywania kodu IDE otwiera okno z sugerowanymi uzupełnianiem dla wprowadzanych słów częściowych.
 
@@ -69,7 +69,7 @@ Następnie użyj funkcji IntelliSense, aby wprowadzić więcej kodu, aby otworzy
  1. W przypadku korzystania z metody dla formantu lub składnika (nazywanego *wywołaniem metody*) należy dodać nawiasy. Wprowadź nawiasy otwierające i zamykające bezpośrednio po "g" w `ShowDialog`: `()`Powinien teraz wyglądać podobnie jak "openFileDialog1. ShowDialog ()".
 
     > [!NOTE]
-    > Metody są ważną częścią każdego programu, a w tym samouczku przedstawiono kilka sposobów korzystania z metod. Można wywołać metodę składnika, aby poinformować go o tym, jak nazywamy `ShowDialog()` metodę składnika **OpenFileDialog** . Możesz utworzyć własne metody, aby umożliwić programowi wykonywanie zadań, takich jak ten, który tworzysz teraz, zwanej `showButton_Click()` metodą, która otwiera okno dialogowe i obraz, gdy użytkownik wybierze przycisk.
+    > Metody są ważną częścią dowolnej aplikacji, a w tym samouczku przedstawiono kilka sposobów korzystania z metod. Można wywołać metodę składnika, aby poinformować go o tym, jak nazywamy `ShowDialog()` metodę składnika **OpenFileDialog** . Możesz utworzyć własne metody, aby aplikacja mogła wykonać swoją aplikację, jak ta, którą tworzysz teraz, nazywana `showButton_Click()` metodą, która otwiera okno dialogowe i obraz, gdy użytkownik wybierze przycisk.
 
  1. W C#polu Dodaj spację, a następnie Dodaj dwa znaki równości (`==`). Na Visual Basic Dodaj spację, a następnie użyj pojedynczego znaku równości (`=`). (C# i Visual Basic używać różnych operatorów równości).
 
@@ -102,7 +102,7 @@ Następnie użyj funkcji IntelliSense, aby wprowadzić więcej kodu, aby otworzy
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz [krok 9: Przejrzyj, Skomentuj i Przetestuj swój kod](../ide/step-9-review-comment-and-test-your-code.md).
+* Aby przejść do następnego kroku samouczka, zobacz  **[krok 9: Przejrzyj, Skomentuj i Przetestuj swój kod](../ide/step-9-review-comment-and-test-your-code.md).**
 
 * Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 7: Dodaj składniki okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md).
 
