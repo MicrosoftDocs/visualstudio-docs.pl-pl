@@ -118,7 +118,7 @@
               href: ../ide/tutorial-1-create-a-picture-viewer.md
             - name: Krok 1. Tworzenie projektu aplikacji Windows Forms
               href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: Krok 2. Uruchamianie programu
+            - name: Krok 2. Uruchamianie aplikacji
               href: ../ide/step-2-run-your-program.md
             - name: Krok 3. Ustawianie właściwości formularza
               href: ../ide/step-3-set-your-form-properties.md
@@ -136,7 +136,7 @@
               href: ../ide/step-9-review-comment-and-test-your-code.md
             - name: Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: Krok 11. Uruchamianie programu i wypróbowywanie innych funkcji
+            - name: Krok 11. Uruchamianie aplikacji i wypróbowywanie innych funkcji
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: 'Samouczek 2: tworzenie testu matematycznego z limitem czasu (C#)'
           items:
