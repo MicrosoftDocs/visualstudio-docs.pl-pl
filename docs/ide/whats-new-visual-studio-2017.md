@@ -108,11 +108,11 @@ Menedżer rozszerzenia roamingu śledzi wszystkie instalowane rozszerzenia, ale 
 
 W przypadku korzystania z Menedżera rozszerzenia roamingu na liście istnieją trzy typy ikon:
 
-* ![](media/vs2017ide-roamedicon.png) Mobilny ** _** do ikony: Rozszerzenie, które jest częścią tej listy roamingu, ale nie jest zainstalowane na tej maszynie.
+* ![](media/vs2017ide-roamedicon.png) Mobilny **_dostęp_** do ikony: Rozszerzenie, które jest częścią tej listy roamingu, ale nie jest zainstalowane na tej maszynie.
   (Można je zainstalować przy użyciu przycisku **Pobierz** ).
-* ![& Zainstalowana ikona](media/vs2017ide-roamedinstalledicon.png) instalacji z roamingiem ** _** : Wszystkie rozszerzenia, które są częścią tej listy roamingu i zainstalowane w środowisku deweloperskim.
+* ![& Zainstalowana ikona](media/vs2017ide-roamedinstalledicon.png) instalacji z roamingiem **_& zainstalowana_** : Wszystkie rozszerzenia, które są częścią tej listy roamingu i zainstalowane w środowisku deweloperskim.
   (Jeśli zdecydujesz, że nie chcesz korzystać z roamingu, możesz je usunąć za pomocą przycisku **Zatrzymaj roaming** ).
-* ![ ** _** ikona](media/vs2017ide-installedicon.png) instalacji: Wszystkie rozszerzenia, które są zainstalowane w tym środowisku, ale nie są częścią listy roamingu.
+* ![ **_Zainstalowana_** ikona](media/vs2017ide-installedicon.png) instalacji: Wszystkie rozszerzenia, które są zainstalowane w tym środowisku, ale nie są częścią listy roamingu.
   (Rozszerzenia można dodać do listy roaming przy użyciu przycisku **Uruchom roaming** ).
 
 Wszystkie rozszerzenia pobrane po zalogowaniu się zostaną dodane do listy jako zainstalowano **& roamingu**. Rozszerzenie zostanie następnie częścią listy roamingu, co zapewnia dostęp do niego z dowolnego komputera.
