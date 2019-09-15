@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681592"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936905"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej i korzystaj z niej w subskrypcjach programu Visual Studio
 Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy do rozwiązywania problemów z uszkodzeniem w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie wsparcia podstawowego dla [cyklu](https://support.microsoft.com/lifecycle/search)pomocy technicznej. Visual Studio Enterprise standardowa i roczna subskrypcja chmury otrzymuje cztery incydenty, podczas Visual Studio Professional standardowa i roczna subskrypcja chmury odbiera dwa zdarzenia, przez maksymalnie 1 rok od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.
@@ -23,6 +23,13 @@ Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy
 > Nie wszystkie subskrypcje na danym poziomie mogą otrzymywać zdarzenia pomocy technicznej. Subskrypcje nabyte w ramach pełnego etatu, NFR, MPN, MCT i innych programów nie odbierają zdarzeń pomocy technicznej. Jeśli subskrypcja nie kwalifikuje się do otrzymania zdarzeń pomocy technicznej, kafelek pomoc techniczna nie będzie widoczny w dostępnych korzyściach.
 
 **Aby przesłać żądanie pomocy technicznej przy użyciu korzyści, musisz ją najpierw aktywować.  Postępuj zgodnie z instrukcjami w następnej sekcji, aby ukończyć aktywację.**
+
+## <a name="supported-products"></a>Obsługiwane produkty 
+Narzędzia deweloperskie, takie jak środowisko IDE programu Visual Studio i Azure DevOps Server, będą obsługiwały zarówno podstawowe, jak i rozszerzone wsparcie w ramach subskrypcji programu Visual Studio.
+
+Produkty niebędące deweloperami (takie jak SQL, Windows, SharePoint) pobrane z subskrypcji programu Visual Studio kwalifikują się tylko do wsparcia podstawowego. Te produkty są licencjonowane wyłącznie w środowiskach deweloperskich, które umożliwiają projektowanie, opracowywanie, testowanie i prezentowanie aplikacji. Te produkty nie są licencjonowane dla środowisk produkcyjnych.
+
+Opisy na poziomie produktu — rozszerzanie **niedostępnych planów pomocy technicznej** , Jeśli zobaczysz, że nie można użyć planu pomocy technicznej dla określonego produktu (kod: 8). Nie można użyć kontraktu pomocy technicznej dla wybranej wersji produktu.
 
 ## <a name="how-to-activate-the-benefit"></a>Jak aktywować korzyść
 1. Przejdź do https://my.visualstudio.com/Benefits, przewiń w dół do sekcji Pomoc techniczna, a następnie na kafelku pomoc techniczna kliknij pozycję **rozmowa, aby aktywować**.
@@ -105,9 +112,9 @@ Aby skorzystać z pomocy technicznej subskrypcji programu Visual Studio w przypa
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
-| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>2</sup>                                        | 2 zdarzenia                                                          |Yes         |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                             |  Yes         |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                               | Yes         |
+| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>2</sup>                                        | 2 zdarzenia                                                          |Tak         |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                             |  Tak         |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                               | Tak         |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 ||
 

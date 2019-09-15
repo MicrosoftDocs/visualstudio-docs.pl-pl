@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db966d2c0ac048bd650500ed6ab191e6bc867e36
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043308"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987760"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Dowiedz się więcej i porady dotyczące wydajności w debugerze programu Visual Studio
 
-Przeczytaj ten temat, aby dowiedzieć się kilka produktywność porady i wskazówki dla debugera programu Visual Studio. Aby dowiedzieć się więcej o podstawowych funkcji debugera, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md). Niektóre obszary, które nie są objęte Przewodnik po funkcjach omówione w tym temacie.
+Przeczytaj ten temat, aby dowiedzieć się kilka produktywność porady i wskazówki dla debugera programu Visual Studio. Aby zapoznać się z podstawowymi funkcjami debugera, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md). Niektóre obszary, które nie są objęte Przewodnik po funkcjach omówione w tym temacie.
 
 ## <a name="pin-data-tips"></a>Porady dotyczące danych numeru PIN
 
@@ -39,6 +39,10 @@ W większości języków obsługiwanych przez program Visual Studio można edyto
 
 Aby uzyskać więcej informacji na temat korzystania z funkcji i ograniczenia dotyczące funkcji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
 
+## <a name="edit-xaml-code-and-continue-debugging"></a>Edytuj kod XAML i Kontynuuj debugowanie
+
+Aby zmodyfikować kod XAML podczas sesji debugowania, zobacz [pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML](xaml-hot-reload.md).
+
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>Debugowanie problemów, które są trudne do odtworzenia
 
 Jeśli jest trudne lub czasochłonne ponownie utworzyć określonego stanu w swojej aplikacji, należy rozważyć, czy korzystanie z warunkowego punktu przerwania, może pomóc. Możesz użyć [warunkowe punkty przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) i filtrów punktów przerwania, pozwala uniknąć przerwy w kodzie aplikacji, aż aplikacja przejdzie do żądanego stanu (takie jak stan, w którym zmienna jest przechowywanie złe dane). Można ustawić przy użyciu wyrażeń, filtry, liczniki trafień i tak dalej.
@@ -53,9 +57,9 @@ Jeśli jest trudne lub czasochłonne ponownie utworzyć określonego stanu w swo
 
 3. Jeśli interesuje Cię innego typu warunku, wybierz opcję **filtru** zamiast **wyrażenia warunkowego** w **ustawienia punktu przerwania** okno dialogowe, a następnie postępuj zgodnie z Porady dotyczące filtru.
 
-## <a name="configure-the-data-to-show-in-the-debugger"></a>Konfigurowanie danych do wyświetlenia w debugerze
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Skonfiguruj dane, które mają być wyświetlane w debugerze
 
-Dla C#, Visual Basic i C++ (C++tylko kod w sposób niezamierzony), można polecić debugerowi, jakie informacje mają przy użyciu [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) atrybutu. Dla C++ kodu, możesz zrobić tego samego using [wizualizacji Natvis](create-custom-views-of-native-objects.md).
+W C#przypadku, Visual Basic i C++ (C++tylko kod/CLI) można poinstruować debuger, jakie informacje mają być wyświetlane za pomocą atrybutu [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) . W C++ przypadku kodu można wykonać te same czynności przy użyciu [wizualizacji Natvis](create-custom-views-of-native-objects.md).
 
 ## <a name="change-the-execution-flow"></a>Zmień przepływ wykonania
 
@@ -110,7 +114,7 @@ Wizualizator ciągu mogą pomóc Ci dowiedzieć się, czy ciąg jest źle sformu
 
 ![Wizualizator ciągu JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Kilka innych typów takich jak obiekty DataSet i DataTable, które są wyświetlane w oknach debugera można również otworzyć wbudowanego wizualizatora.
+Dla kilku innych typów, takich jak obiekty DataSet i DataTable, które pojawiają się w oknach debugera, można także otworzyć wbudowany wizualizator.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Wejdź do kodu dotyczące wyjątków obsłużonych
 

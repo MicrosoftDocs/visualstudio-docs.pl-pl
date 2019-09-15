@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Dowiedz się, jak anonimowe dane subskrybenta, gdy dostęp do subskrypcji zostanie utracony.
-ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377963"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936913"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Zachowywanie anonimowości informacji o subskrybencie programu Visual Studio
 Gdy wystąpi zdarzenie, które blokuje użycie subskrypcji przez subskrybenta, takie jak wygaśnięcie subskrypcji lub usunięcie konta logowania subskrybenta, informacje osobiste użytkownika, takie jak nazwa i konto logowania, są zasadniczo szyfrowane w celu renderowania nie można ich używać.  Jest to gotowe do ochrony danych osobowych subskrybenta.
@@ -36,5 +36,10 @@ Odp.:  Nie.  Zachowywanie anonimowości jest w odpowiedzi na zdarzenie, które p
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>PYTANIA  Jestem administratorem dla subskrypcji mojej organizacji.  Jeśli jedna z informacji na subskrybencie to anonimowe, czy można ponownie przypisać subskrypcję do innego użytkownika?
 Odp.:  Tak — o ile subskrypcja nie wygasła, może zostać ponownie przypisana do innego subskrybenta.
 
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>PYTANIA Jak można zapobiec zachowywanie anonimowości przez usunięcie adresu e-mail logowania?
+Odp.:  Istnieją dwa sposoby na uniknięcie problemu:
+- Wdróż pojedynczy system zarządzania tożsamościami — MSA lub AAD--, ale nie oba.  
+- Skojarz tożsamości usługi AAD i MSA za pośrednictwem dzierżawy. 
+
 ## <a name="next-steps"></a>Następne kroki
-Dowiedz się, jak zapobiegać zachowywanie anonimowości przez [łączenie tożsamości usługi MSA i usługi AAD](/azure/active-directory/b2b/add-users-administrator).
+Dowiedz się, jak zapobiegać zachowywanie anonimowości przez [kojarzenie tożsamości usługi MSA i usługi AAD](/azure/active-directory/b2b/add-users-administrator).

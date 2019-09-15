@@ -1,7 +1,12 @@
 ---
 title: Krok 6. Dodawanie zadania z odejmowaniem
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d429d2921f252e97bfe7c233a9fe963f7f91299b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: da2b509c0f5291296861da6a13b13e625a67c727
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416550"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987927"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie zadania z odejmowaniem
 W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, jak wykonywać następujące zadania:
@@ -29,12 +34,20 @@ W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, ja
 
 - Zaktualizuj procedurę obsługi <xref:System.Windows.Forms.Timer.Tick> zdarzeń czasomierza, tak aby program obsługi zdarzeń wypełniał poprawną odpowiedź, gdy skończy się czas.
 
+> [!NOTE]
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. 
+> - Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu. 
+> - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+
 ## <a name="to-add-a-subtraction-problem"></a>Aby dodać problem odejmowania
 
 1. Dodaj dwie zmienne całkowite dla problemu odejmowania do formularza, między zmiennymi całkowitymi dla problemu dodawania i czasomierzem. Kod powinien wyglądać podobnie do poniższego.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
+
+     > [!IMPORTANT]
+     > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Nazwy nowych zmiennych liczb całkowitych —**odjemna** i **odjemnik**— nie są terminami programowania. Są to tradycyjne nazwy arytmetyczne dla liczby, która jest odejmowana (odjemnik) i liczba, z której jest odejmowany odjemnik (odjemna). Różnica to odjemna minus odjemnik. Można użyć innych nazw, ponieważ program nie wymaga określonych nazw dla zmiennych, formantów, składników lub metod. Należy przestrzegać reguł, takich jak nierozpoczynanie nazw z cyframi, ale zazwyczaj można używać nazw takich jak x1, X2, x3 i x4. Jednak nazwy ogólne utrudniają odczytywanie i rozwiązywanie problemów niemal niemożliwe do śledzenia. Aby zachować unikatową i użyteczność nazw zmiennych, należy użyć tradycyjnych nazw dla mnożenia (multiplicand × mnożnik = Product) i dzielenia (dzielną ÷ dzielnik = iloraz) w dalszej części tego samouczka.
 
@@ -52,12 +65,13 @@ W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, ja
 
      Można wywołać `Next()` metodę klasy losowej o nazwie "randomer" wcześniej w tym samouczku, na wiele sposobów. Metody, które można wywołać w więcej niż jednym sposobie, są określane jako przeciążone i można użyć funkcji IntelliSense, aby poznać ją. Ponownie Obejrzyj etykietkę narzędzia okna IntelliSense dla `Next()` metody.
 
-     ![Etykietka narzędzia](../ide/media/express_overloads.png)
-**okna narzędzi IntelliSense** okna IntelliSense
+     ![Etykietka narzędzia okna IntelliSense](../ide/media/express_overloads.png)<br/>
+Funkcja ***IntelliSense*** *etykietka narzędzia okna*
 
      Etykietka narzędzia pokazuje **(+ 2 przeciążenia**), co oznacza, że można wywołać `Next()` metodę na dwa inne sposoby. Przeciążenia zawierają różne liczby lub typy argumentów, dzięki czemu działają nieco inaczej od siebie. Na przykład metoda może przyjmować jeden argument Integer, a jedno z jego przeciążeń może przyjmować liczbę całkowitą i ciąg. Należy wybrać poprawne Przeciążenie w zależności od tego, co ma być wykonywane. Po dodaniu kodu do `StartTheQuiz()` metody w oknie IntelliSense pojawiają się dodatkowe informacje, które wkrótce wprowadzisz. `randomizer.Next(` Aby przechodzić przez przeciążenia, wybierz klawisze **Strzałka w górę** i **Strzałka w dół** , jak pokazano na poniższej ilustracji:
 
-     ![Przeciążenie metody Next&#40; &#41; w funkcji przeciążenia](../ide/media/express_nextoverload.png) funkcji IntelliSense dla metody **Next ()** w **technologii IntelliSense**
+     ![Przeciążenie dla następnej&#40; &#41; metody IntelliSense](../ide/media/express_nextoverload.png)<br/>
+*Przeciążenie dla* ***Next ()*** *Metoda w* Funkcja ***IntelliSense***
 
      W takim przypadku należy wybrać ostatnie Przeciążenie, ponieważ można określić wartości minimalne i maksymalne.
 
@@ -77,11 +91,11 @@ W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, ja
 
      Program zawiera problem odejmowania, jak pokazano na poniższej ilustracji:
 
-     ![Quiz matematyczny z rozjęciem](../ide/media/express_addsubtract.png)
-**quizu matematycznego** z problemem odejmowania
+     ![Quiz matematyczny z problemem odejmowania](../ide/media/express_addsubtract.png)<br/>
+***Quiz matematyczny*** *z problemem odejmowania*
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 7: Dodawanie problemów](../ide/step-7-add-multiplication-and-division-problems.md)mnożenia i dzielenia.
+- Aby przejść do następnego kroku samouczka, zobacz  **[krok 7: Dodawanie problemów](../ide/step-7-add-multiplication-and-division-problems.md)** mnożenia i dzielenia.
 
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodaj programy obsługi zdarzeń Enter dla formantów](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)NumericUpDown.

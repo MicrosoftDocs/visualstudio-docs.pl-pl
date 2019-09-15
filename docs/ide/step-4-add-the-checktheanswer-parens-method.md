@@ -1,7 +1,12 @@
 ---
 title: Krok 4. Dodawanie metody CheckTheAnswer()
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,20 +16,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c691b1db57fa1a00ad33441e36ff0f7f79716f11
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 8c40150c3fbcd07abfad4a10155722750cbe4849
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416513"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987702"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Krok 4. Dodawanie metody CheckTheAnswer()
+
 W czwartej części tego samouczka napiszesz metodę, `CheckTheAnswer()`która określa, czy odpowiedzi na problemy matematyczne są poprawne. Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu.
 
 > [!NOTE]
-> Jeśli korzystasz z Visual Basic, użyj `Function` słowa kluczowego zamiast zwykłego `Sub` słowa kluczowego, ponieważ ta metoda zwraca wartość. Jest to naprawdę proste: sub nie zwraca wartości, ale funkcja wykonuje.
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. 
+> - Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu. 
+> - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-whether-the-answers-are-correct"></a>Aby sprawdzić, czy odpowiedzi są poprawne
+
+> [!NOTE]
+> Jeśli korzystasz z Visual Basic, użyj `Function` słowa kluczowego zamiast zwykłego `Sub` słowa kluczowego, ponieważ ta metoda zwraca wartość. Jest to naprawdę proste: sub nie zwraca wartości, ale funkcja wykonuje.
 
 1. `CheckTheAnswer()` Dodaj metodę.
 
@@ -32,6 +43,9 @@ W czwartej części tego samouczka napiszesz metodę, `CheckTheAnswer()`która o
 
      [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]
      [!code-csharp[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]
+
+     > [!IMPORTANT]
+     > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Następnie sprawdź odpowiedź, aktualizując kod w metodzie dla programu obsługi <xref:System.Windows.Forms.Timer.Tick> zdarzeń czasomierza, aby wywołać nową `CheckTheAnswer()` metodę.
 
@@ -51,6 +65,6 @@ W czwartej części tego samouczka napiszesz metodę, `CheckTheAnswer()`która o
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodaj programy obsługi zdarzeń Enter dla formantów](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)NumericUpDown.
+- Aby przejść do następnego kroku samouczka, zobacz  **[krok 5: Dodaj programy obsługi zdarzeń Enter dla formantów](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)** NumericUpDown.
 
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3. Dodawanie czasomierza](../ide/step-3-add-a-countdown-timer.md)odliczania.

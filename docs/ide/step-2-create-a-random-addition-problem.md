@@ -1,7 +1,12 @@
 ---
 title: Krok 2. Tworzenie zadania z dodawaniem losowych liczb
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,18 +16,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: d1eee0c161de486740b7576b184f869bffd7fb98
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416877"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987713"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2. Tworzenie zadania z dodawaniem losowych liczb
+
 W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie problemów matematycznych, które są oparte na liczbie losowej. Należy również utworzyć metodę o nazwie `StartTheQuiz()` i wypełniającą problemy i uruchamiając odliczanie czasomierza. W dalszej części tego samouczka dodasz problemy odejmowania, mnożenia i dzielenia.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu.
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. 
+> - Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu. 
+> - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-random-addition-problem"></a>Aby utworzyć losowy problem dodawania
 
@@ -36,6 +44,9 @@ W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie proble
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+   > [!IMPORTANT]
+   > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Do formularza został dodany losowy obiekt i nazwany się **losowo**obiekt.
 
@@ -60,7 +71,8 @@ W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie proble
 
      Zwróć uwagę, że po wprowadzeniu kropki (.) `randomizer` po wpisaniu w kodzie zostanie otwarte okno IntelliSense zawierające wszystkie metody losowego obiektu, które można wywołać. Na przykład technologia IntelliSense wyświetla listę `Next()` metody w następujący sposób.
 
-     ![Następna Metoda](../ide/media/express_randomwhite.png) Następna Metoda
+     ![Next — Metoda](../ide/media/express_randomwhite.png)<br/>
+*Next — Metoda*
 
      Po wprowadzeniu kropki po obiekcie funkcja IntelliSense wyświetla listę elementów członkowskich obiektu, takich jak właściwości, metody i zdarzenia.
 
@@ -87,14 +99,15 @@ W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie proble
 
 8. Zapisz swój kod, uruchom go, a następnie wybierz przycisk **Start** .
 
-     Pojawia się losowy błąd dodawania, jak pokazano na poniższej ilustracji.
+     Pojawia się losowy błąd dodawania, jak pokazano na poniższym zrzucie ekranu.
 
-     ![Problem losowego](../ide/media/express_additionproblem.png) dodawania losowego problemu podczas dodawania
+     ![Problem losowego dodawania](../ide/media/express_additionproblem.png)<br/>
+*Problem losowego dodawania*
 
      W następnym kroku samouczka dodasz sumę.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 3: Dodawanie czasomierza](../ide/step-3-add-a-countdown-timer.md)odliczania.
+- Aby przejść do następnego kroku samouczka, zobacz  **[krok 3: Dodawanie czasomierza](../ide/step-3-add-a-countdown-timer.md)** odliczania.
 
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1: Tworzenie projektu i Dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

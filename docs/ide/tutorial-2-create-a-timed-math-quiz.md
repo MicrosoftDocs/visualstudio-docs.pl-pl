@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 51bda0a85735bf2b1dae5044b9e4ab8e5384f8ae
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293695"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987875"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Tworzenie quizu matematycznego z limitem czasu
 
@@ -31,7 +31,7 @@ W tym samouczku utworzysz quiz, w którym powinieneś odpowiedzieć cztery losow
 
 - Wykonaj podstawowe operacje arytmetyczne w kodzie.
 
-Po zakończeniu Quiz będzie wyglądał jak na poniższej ilustracji, z wyjątkiem innych liczb:
+Po zakończeniu Quiz będzie wyglądać podobnie do poniższego zrzutu ekranu, z wyjątkiem innych liczb:
 
 ![Quiz matematyczny z czterema problemami](../ide/media/express_finishedquiz.png)
 
@@ -40,7 +40,7 @@ Po zakończeniu Quiz będzie wyglądał jak na poniższej ilustracji, z wyjątki
 Aby pobrać kompletną wersję quizu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
-> Ten samouczek obejmuje wizualizacje C# i Visual Basic, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.
+> W tym samouczku C# omówiono zarówno program, jak i Visual Basic, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

@@ -1,79 +1,89 @@
 ---
-title: Krok 5. Dodawanie obsługi zdarzeń Enter dla formantów NumericUpDown
+title: Krok 5. Dodaj programy obsługi zdarzeń Enter dla kontrolek NumericUpDown
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2687c423f6b2facaa2fa1c3504888c65345888
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 718a24b5afbd1196fdb1fb382cc45197975a0242
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263112"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987906"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5. Dodawanie obsługi zdarzeń Enter dla formantów NumericUpDown
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5. Dodawanie obsługi zdarzeń wprowadzania dla kontrolek NumericUpDown
 
-W piątej części tego samouczka dodasz <xref:System.Windows.Forms.Control.Enter> procedury obsługi zdarzeń, aby upewnić się, wprowadzając odpowiedzi do quizu była nieco łatwiejsza. Ten kod zaznaczy i wyczyści bieżącą wartość w każdym <xref:System.Windows.Forms.NumericUpDown> kontrolować, jak najszybciej quizu ją wybierze i zacznie wpisywać inną wartość.
+W piątej części tego samouczka dodasz <xref:System.Windows.Forms.Control.Enter> programy obsługi zdarzeń, aby ułatwić wprowadzanie odpowiedzi na problemy z quizem. Ten kod zostanie wybrany i wyczyści bieżącą wartość w każdej <xref:System.Windows.Forms.NumericUpDown> kontrolce zaraz po jej wybraniu i rozpoczęciu wprowadzania innej wartości.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. 
+> - Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu. 
+> - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-the-default-behavior"></a>Aby sprawdzić zachowanie domyślne
 
 1. Uruchom program i uruchom quiz.
 
-     W **NumericUpDown** kontrola dla problemu dodawania, kursor miga obok **0** (zero).
+     W kontrolce **NumericUpDown** dla problemu dodawania, kursor będzie się znajdował obok **0** (zero).
 
-2. Wprowadź **3**i zwróć uwagę, że formant pokazuje **30**.
+2. Wprowadź wartość **3**i pamiętaj, że kontrolka pokazuje **30**.
 
-3. Wprowadź **5**i zwróć uwagę, że **350** pojawia się, ale zmienia się na **100** po sekundzie.
+3. Wprowadź wartość **5**i należy zauważyć, że **350** pojawia się, **100** ale po drugiej.
 
-     Przed rozwiązaniem tego problemu zastanów się, co się dzieje. Zastanów się, dlaczego **0** nie zniknęła po wprowadzeniu **3** i dlaczego **350** zmieniony na **100** , ale nie od razu.
+     Przed usunięciem tego problemu należy zastanowić się, co się dzieje. Zastanów się, dlaczego **0** nie znika po wprowadzeniu **3** i dlaczego **350** zmieniony na **100** , ale nie od razu.
 
-     To zachowanie może się wydawać dziwne, ale dobrym pomysłem biorąc pod uwagę logikę kodu. Po wybraniu **Start** przycisku jego **włączone** właściwość jest ustawiona na **False**, a przycisk jest wyszarzony i niedostępny. Program zmienia bieżące zaznaczenie (focus) do formantu, który ma następną najniższą wartość TabIndex, który jest formantem NumericUpDown dla problemu dodawania. Kiedy używasz **kartę** klucza, aby przejść do formantu NumericUpDown, kursor zostanie automatycznie umieszczony na początku formantu, dlatego wprowadzane liczby są wyświetlane po lewej stronie i nie po prawej stronie. Po określeniu numeru jest wyższa niż wartość **MaximumValue** właściwość, która jest równa 100, wprowadzona liczba jest zastępowana wartością tej właściwości.
+     Takie zachowanie może wydawać się nieparzyste, ale jest zrozumiałe dla logiki kodu. Po wybraniu przycisku **Start** , jego właściwość **Enabled** ma wartość **false**, a przycisk jest wyszarzony i jest niedostępny. Program zmienia bieżące zaznaczenie (fokus) na kontrolkę, która ma następną najmniejszą wartość TabIndex, która jest kontrolką NumericUpDown dla problemu dodawania. Gdy używasz klawisza **Tab** , aby przejść do kontrolki NumericUpDown, kursor jest automatycznie ustawiany na początku kontrolki, co oznacza, że wprowadzone liczby są wyświetlane po lewej stronie, a nie po prawej stronie. Po określeniu liczby, która jest wyższa niż wartość właściwości **MaximumValue** , która jest ustawiona na 100, wprowadzona liczba jest zastępowana wartością tej właściwości.
 
-## <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Aby dodać moduł obsługi zdarzeń Enter w formancie NumericUpDown
+## <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Aby dodać procedurę obsługi zdarzeń Enter dla kontrolki NumericUpDown
 
-1. Wybierz pierwsze **NumericUpDown** kontroli (o nazwie "sum") na formularzu, a następnie w **właściwości** okna dialogowego wybierz **zdarzenia** ikonę na pasku narzędzi.
+1. Wybierz pierwszą kontrolkę **NumericUpDown** (o nazwie "Sum") w formularzu, a następnie w oknie dialogowym **Właściwości** wybierz ikonę **zdarzenia** na pasku narzędzi.
 
-   ![Zdarzenia przycisku właściwości w pasku narzędzi](media/control-properties-events.png)
+   ![Przycisk zdarzenia na pasku narzędzi właściwości](media/control-properties-events.png)
 
-   **Zdarzenia** karcie **właściwości** okno dialogowe wyświetla wszystkie zdarzenia, które można odpowiedzieć (obsłużyć) dla elementu wybranego w formularzu. Ponieważ wybrano formant NumericUpDown, wszystkie wymienione wydarzenia odnoszą się do niego.
+   Na karcie **zdarzenia** w oknie dialogowym **Właściwości** są wyświetlane wszystkie zdarzenia, na które można odpowiedzieć (dojście) dla elementu wybranego w formularzu. Ze względu na to, że wybrano kontrolkę NumericUpDown, wszystkie zdarzenia na liście odnoszą się do niego.
 
-2. Wybierz **Enter** zdarzeń, typ `answer_Enter`, a następnie naciśnij klawisz **Enter** klucza.
+2. Wybierz zdarzenie **Enter** , wpisz `answer_Enter`, a następnie naciśnij klawisz **Enter** .
 
-   ![Wprowadź nazwę metody obsługi zdarzeń](media/enter-event.png)
+   ![Wprowadź nazwę metody programu obsługi zdarzeń](media/enter-event.png)
 
-   Właśnie dodałeś program obsługi zdarzeń Enter dla formantu sumy NumericUpDown i możesz nadałeś **answer_Enter**.
+   Właśnie dodano procedurę obsługi zdarzeń Enter dla kontrolki sum NumericUpDown, a nazwa procedury obsługi **answer_Enter**.
 
-3. W metodzie dla **answer_Enter** procedura obsługi zdarzeń, Dodaj następujący kod:
+3. W metodzie dla programu obsługi zdarzeń **answer_Enter** Dodaj następujący kod:
 
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     Ten kod może wyglądać na złożony, ale można go zrozumieć, jeśli spojrzysz na niego krok po kroku. Po pierwsze, spójrz na górę metody: `object sender` w języku C# lub `sender As System.Object` w języku Visual Basic. Ten parametr odwołuje się do obiektu, którego zdarzenie jest uruchamiane, który jest znany jako nadawca. W tym przypadku obiekt nadawcy jest formant NumericUpDown. Tak w pierwszym wierszu metody należy określić że nadawca to nie po prostu każdy obiekt rodzajowy, ale konkretnie formant NumericUpDown. (Każdy formant NumericUpDown jest obiektem, ale nie każdy obiekt jest formantem NumericUpDown). Formant NumericUpDown nosi nazwę **answerBox** w przypadku tej metody, ponieważ będzie używany dla wszystkich formantów NumericUpDown na formularzu, nie tylko dla formantu NumericUpDown sumy. Ponieważ należy zadeklarować zmienną answerBox w tej metodzie, jej zakres dotyczy tylko tej metody. Innymi słowy zmienna może być używana tylko w ramach tej metody.
+     > [!IMPORTANT]
+     > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-     Następny wiersz sprawdza, czy answerBox został pomyślnie przekonwertowany (rzutowany) z obiektu do formantu NumericUpDown. Jeśli konwersja nie powiodła, zmienna będzie miała wartość `null` (C#) lub `Nothing` (Visual Basic). Trzeci wiersz pobiera długość odpowiedzi, która jest wyświetlana w formancie NumericUpDown, a czwarty wiersz wybiera bieżącą wartość w formancie na podstawie tej długości. Teraz gdy uczestnik quizu wybierze formant, Visual Studio uruchamia zdarzenie, co powoduje, że bieżącej odpowiedzi do wybrania. Tak szybko, jak osoba wypełniająca quiz zaczyna wprowadzać inną odpowiedź, poprzednia odpowiedź jest czyszczona i zastąpiona nową odpowiedzią.
+     Ten kod może wyglądać skomplikowanie, ale możesz go zrozumieć, Jeśli zobaczysz go na etapie krok po kroku. Najpierw Spójrz na początek metody: `object sender` w C# lub `sender As System.Object` w Visual Basic. Ten parametr odnosi się do obiektu, którego zdarzenie jest wyzwalane, co jest znane jako nadawca. W takim przypadku obiektem nadawcy jest formant NumericUpDown. Dlatego w pierwszym wierszu metody należy określić, że nadawca nie jest tylko obiektem ogólnym, ale szczególnie formantem NumericUpDown. (Każda kontrolka NumericUpDown jest obiektem, ale nie każdy obiekt jest kontrolką NumericUpDown). Kontrolka NumericUpDown ma nazwę **answerBox** w tej metodzie, ponieważ będzie używana we wszystkich kontrolkach NumericUpDown w formularzu, a nie tylko w formancie NumericUpDown sum. Ponieważ w tej metodzie deklarujesz zmienną answerBox, jej zakres ma zastosowanie tylko do tej metody. Innymi słowy, zmienna może być używana tylko w ramach tej metody.
 
-4. W **Windows Forms Designer**, wybierz opcję, różnicy **NumericUpDown** kontroli.
+     Następny wiersz weryfikuje, czy answerBox został pomyślnie przekonwertowany (rzutowany) z obiektu do kontrolki NumericUpDown. Jeśli konwersja zakończyła się niepowodzeniem, zmienna może mieć wartość `null` (C#) lub `Nothing` (Visual Basic). Trzeci wiersz otrzymuje długość odpowiedzi, która pojawia się w kontrolce NumericUpDown, a czwarta linia wybiera bieżącą wartość w kontrolce na podstawie tej długości. Teraz, gdy program quizu wybierze formant, program Visual Studio wyzwala to zdarzenie, co powoduje wybranie bieżącej odpowiedzi. Zaraz po rozpoczęciu przez program quizu w celu wprowadzenia innej odpowiedzi poprzednia odpowiedź zostanie wyczyszczona i zastąpiona nową odpowiedzią.
 
-5. W **zdarzenia** strony **właściwości** okno dialogowe, przewiń w dół do **Enter** zdarzenia, wybierz strzałkę listy rozwijanej na końcu wiersza, a następnie wybierz `answer_Enter`program obsługi zdarzeń, który właśnie został dodany.
+4. W **Projektant formularzy systemu Windows**wybierz formant różnica **NumericUpDown** .
 
-6. Powtórz poprzedni krok dla formantów NumericUpDown iloczynu i ilorazu.
+5. Na stronie **zdarzenia** okna dialogowego **Właściwości** przewiń w dół do zdarzenia **Enter** , wybierz strzałkę listy rozwijanej na końcu wiersza `answer_Enter` , a następnie wybierz właśnie dodany program obsługi zdarzeń.
+
+6. Powtórz poprzedni krok dla kontrolek NumericUpDown produktu i ilorazu.
 
 7. Zapisz swój program, a następnie uruchom go.
 
-     Po wybraniu **NumericUpDown** kontrolki, istniejąca wartość jest automatycznie wybierane i następnie czyszczona, gdy rozpoczniesz wprowadzać inną wartość.
+     Po wybraniu formantu **NumericUpDown** , istniejąca wartość jest wybierana automatycznie, a następnie wyczyszczona po rozpoczęciu wprowadzania innej wartości.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 6: Dodawanie problemu odejmowania](../ide/step-6-add-a-subtraction-problem.md).
+- Aby przejść do następnego kroku samouczka, zobacz  **[krok 6. Dodawanie problemu](../ide/step-6-add-a-subtraction-problem.md)** odejmowania.
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodawanie metody CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodaj metodę](../ide/step-4-add-the-checktheanswer-parens-method.md)metody CheckTheAnswer ().

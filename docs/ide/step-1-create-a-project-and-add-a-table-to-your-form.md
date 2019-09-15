@@ -1,5 +1,5 @@
 ---
-title: Krok 1. Tworzenie projektu i Dodawanie tabeli do formularza
+title: Krok 1. Tworzenie projektu i dodawanie tabeli do formularza
 ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 3b57164938f8256743f314d1c302a24547f6074d
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501155"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987798"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Tworzenie projektu i Dodawanie tabeli do formularza
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie tabeli do formularza
 
 Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodanie tabeli do formularza. Tabela ułatwia wyrównywanie ikon w uporządkowaną siatkę 4x4. Można również ustawić kilka właściwości, aby poprawić wygląd planszy gry.
 
@@ -25,109 +25,109 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
 ::: moniker range="vs-2017"
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
+1. Na pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
 
-1. Wybierz **Visual C#**  lub **języka Visual Basic** w lewej części **nowy projekt** okna dialogowego pole, a następnie wybierz **Windows Desktop**.
+1. Wybierz pozycję  **C# Wizualizacja** lub **Visual Basic** po lewej stronie okna dialogowego **Nowy projekt** , a następnie wybierz pozycję **Windows Desktop**.
 
-1. Z listy szablonów wybierz **aplikacji programu Windows Forms (.NET Framework)** szablonu, nadaj jej nazwę *nazwę MatchingGame*, a następnie wybierz **OK** przycisku.
+1. Na liście szablonów wybierz szablon **aplikacja Windows Forms (.NET Framework)** , nadaj mu nazwę *MatchingGame*, a następnie wybierz przycisk **OK** .
 
-    Formularz, który nosi nazwę *Form1.cs* lub *Form1.vb* pojawia się w zależności od języka programowania, który został wybrany.
+    Zostanie wyświetlony formularz o nazwie *Form1.cs* lub *Form1. vb* , w zależności od wybranego języka programowania.
 
    > [!NOTE]
-   > Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.<br/><br/>![Obciążenie programowanie aplikacji klasycznych dla platformy .NET w Instalatorze programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz [Zainstaluj program Visual Studio](../install/install-visual-studio.md) strony.
+   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![Obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-   ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Wyświetl okno "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *Windows Forms* w polu wyszukiwania.
+1. W oknie **Tworzenie nowego projektu** wprowadź lub wpisz *Windows Forms* w polu wyszukiwania.
 
-1. Wybierz **aplikacji programu Windows Forms (.NET Framework)** szablonu, a następnie wybierz **dalej**.
+1. Wybierz szablon **aplikacja Windows Forms (.NET Framework)** , a następnie wybierz przycisk **dalej**.
 
-   ![Wybierz szablon języka Visual Basic w aplikacji Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Wybierz szablon Visual Basic dla aplikacji Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
+   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
    >
-   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "nie można odnaleźć szukanego elementu" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Następnie w Instalatorze programu Visual Studio, wybierz pozycję Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.
+   > Następnie w Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
    >
    > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem.
+   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie.
 
-1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *nazwę MatchingGame* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MatchingGame* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
 
 ::: moniker-end
 
-## <a name="to-set-properties-for-a-form"></a>Aby ustawić właściwości dla formularza
+## <a name="to-set-properties-for-a-form"></a>Aby ustawić właściwości formularza
 
-1. W **właściwości** okna, ustaw następujące właściwości formularza.
+1. W oknie **Właściwości** ustaw następujące właściwości formularza.
 
-   1. Formularz zmiany **tekstu** właściwość **Form1** do **gra w dopasowywanie**. Ten tekst jest wyświetlany w górnej części okna gry.
+   1. Zmień właściwość **Text** formularza z **Form1** na **pasującą grę**. Ten tekst jest wyświetlany w górnej części okna gry.
 
-   2. Ustaw rozmiar formularza na 550 pikseli szerokości i 550 pikseli wysokości. Możesz to zrobić, ustawiając **rozmiar** właściwości **550, 550**, lub poprzez przeciąganie rogu formularza, aż zobaczysz właściwy rozmiar w prawym dolnym rogu zintegrowanego rozwoju (środowiska ŚRODOWISKO IDE).
+   2. Ustaw rozmiar formularza na 550 pikseli szerokości i 550 pikseli wysokości. Można to zrobić, ustawiając właściwość **size** na **550, 550**lub przeciągając róg formularza do momentu, gdy zobaczysz właściwy rozmiar w prawym dolnym rogu zintegrowanego środowiska programistycznego (IDE).
 
-2. Wyświetl przybornik, wybierając **przybornika** karty po lewej stronie IDE.
+2. Wyświetl Przybornik, wybierając kartę **Przybornik** po lewej stronie IDE.
 
-3. Przeciągnij <xref:System.Windows.Forms.TableLayoutPanel> z kontrolować **kontenery** kategorii w przyborniku, a następnie ustaw następujące właściwości dla niego.
+3. Przeciągnij formant z kategorii kontenery w przyborniku, a następnie ustaw dla niego następujące właściwości. <xref:System.Windows.Forms.TableLayoutPanel>
 
-   1. Ustaw **BackColor** właściwości **CornflowerBlue**. Aby to zrobić, otwórz **BackColor** okno dialogowe, wybierając strzałkę listy rozwijanej obok **BackColor** właściwość **właściwości** okna.  Następnie wybierz **Web** karcie **BackColor** okno dialogowe, aby wyświetlić listę nazw dostępnych kolorów.
+   1. Ustaw właściwość **BackColor** na **CornflowerBlue**. Aby to zrobić, Otwórz okno dialogowe **BackColor** , wybierając strzałkę listy rozwijanej obok właściwości **BackColor** w oknie **Właściwości** .  Następnie wybierz kartę **Sieć Web** w oknie dialogowym **BackColor** , aby wyświetlić listę dostępnych nazw kolorów.
 
       > [!NOTE]
-      > Kolory nie są w kolejności alfabetycznej, a **CornflowerBlue** znajduje się w pobliżu dolnej części listy.
+      > Kolory nie są w kolejności alfabetycznej, a **CornflowerBlue** znajduje się w dolnej części listy.
 
-   2. Ustaw **Dock** właściwości **wypełnienia** wybierając przycisk listy rozwijanej obok właściwości, a następnie wybierając duży środkowy przycisk. Tabela się rozszerza i obejmuje cały formularz.
+   2. Ustaw właściwość **Dock** na wartość **Fill** , wybierając przycisk listy rozwijanej obok właściwości i wybierając przycisk z dużymi środkami. Tabela się rozszerza i obejmuje cały formularz.
 
-   3. Ustaw **CellBorderStyle** właściwości **Inset**. Zapewnia to wizualne granice pomiędzy poszczególnymi komórkami na planszy.
+   3. Ustaw właściwość **CellBorderStyle** na wartość **Wstaw**. Zapewnia to wizualne granice pomiędzy poszczególnymi komórkami na planszy.
 
    4. Kliknij przycisk trójkąta w prawym górnym rogu formantu TableLayoutPanel, aby wyświetlić jego menu zadań.
 
-   5. W menu zadań wybierz **Dodaj wiersz** dwa razy, aby dodać dwa wiersze, a następnie wybierz **Dodaj kolumnę** dwa razy, aby dodać dwie kolumny.
+   5. W menu zadania wybierz dwa razy **Dodaj wiersz** , aby dodać dwa wiersze, a następnie wybierz dwa razy **Dodaj kolumnę** , aby dodać dwie kolumny.
 
-   6. W menu zadań wybierz **Edytuj wiersze i kolumny** otworzyć **Style kolumn i wierszy** okna. Wybierz każdą z kolumn, wybierz pozycję **procent** przycisk opcji, a następnie ustaw szerokość każdej kolumny na 25 procent ogólnej szerokości. Następnie wybierz pozycję **wierszy** z listy rozwijanej w górnej części okna i Ustaw wysokość każdego wiersza na 25 procent. Gdy wszystko będzie gotowe, wybierz pozycję **OK** przycisku.
+   6. W menu zadania wybierz polecenie **Edytuj wiersze i kolumny** , aby otworzyć okno **Style kolumn i wierszy** . Wybierz każdą z kolumn, wybierz przycisk opcji **procent** , a następnie ustaw szerokość każdej kolumny na 25 procent całkowitej szerokości. Następnie wybierz pozycję **wiersze** w polu listy rozwijanej w górnej części okna, a następnie ustaw wysokość każdego wiersza na 25 procent. Gdy wszystko będzie gotowe, wybierz przycisk **OK** .
 
       TableLayoutPanel powinien być teraz siatką 4 x 4, o szesnastu kwadratowych komórkach równej wielkości. Te wiersze i kolumny są tam, gdzie później pojawią się obrazy ikon.
 
-4. Należy się upewnić, że TableLayoutPanel jest zaznaczony w edytorze formularza. Aby to sprawdzić, powinien zostać wyświetlony **tableLayoutPanel1** w górnej części **właściwości** okna. Jeśli nie jest zaznaczone, wybierz TableLayoutPanel na formularzu lub wybierz go z rozwijanej listy formantów u góry **właściwości** okna.
+4. Należy się upewnić, że TableLayoutPanel jest zaznaczony w edytorze formularza. Aby to sprawdzić, należy zobaczyć **tableLayoutPanel1** w górnej części okna **Właściwości** . Jeśli nie jest zaznaczone, wybierz TableLayoutPanel w formularzu lub wybierz go w kontrolce menu rozwijanego u góry okna **Właściwości** .
 
-    Gdy TableLayoutPanel jest zaznaczony, Otwórz przybornik i Dodaj <xref:System.Windows.Forms.Label> kontroli (znajdujący się w **wspólnych formantów** kategoria) do lewej górnej komórki TableLayoutPanel. Formant etykiety powinny teraz być zaznaczone w środowisku IDE. Ustaw dla niego następujące właściwości.
+    Gdy TableLayoutPanel jest zaznaczone, Otwórz przybornik i Dodaj <xref:System.Windows.Forms.Label> kontrolkę (znajdującą się w kategorii **Formanty standardowe** ) do lewej górnej komórki TableLayoutPanel. Kontrolka etykieta powinna być teraz zaznaczona w IDE. Ustaw dla niego następujące właściwości.
 
-   1. Upewnij się, że etykiety **BackColor** właściwość jest ustawiona na **CornflowerBlue**.
+   1. Upewnij się, że właściwość " **BackColor** " etykiety jest ustawiona na **CornflowerBlue**.
 
-   2. Ustaw **AutoSize** właściwości **False**.
+   2. Ustaw właściwość **AutoSize** na **false**.
 
-   3. Ustaw **Dock** właściwości **wypełnienia**.
+   3. Ustaw właściwość **Dock** na **Fill**.
 
-   4. Ustaw **TextAlign** właściwości **MiddleCenter** , wybierając przycisk listy rozwijanej obok właściwości, a następnie wybierając środkowy przycisk. Gwarantuje to, że ikona pojawia się w środku komórki.
+   4. Ustaw właściwość **TextAlign** na **MiddleCenter** , wybierając przycisk listy rozwijanej obok właściwości, a następnie wybierając środkowy przycisk. Gwarantuje to, że ikona pojawia się w środku komórki.
 
-   5. Wybierz **czcionki** właściwości. Wielokropek ( **...** ) powinien pojawić się przycisk.
+   5. Wybierz właściwość **Font** . Powinien pojawić się przycisk wielokropka ( **...** ).
 
-   6. Wybierz przycisk wielokropka i ustaw **czcionki** wartość **Webdings**, **styl czcionki** do **Bold**i **rozmiar** do **48**.
+   6. Wybierz przycisk wielokropka, a następnie ustaw wartość **czcionki** na **Webdings**, **styl czcionki** na **pogrubiony**, a **rozmiar** na **48**.
 
-   7. Ustaw **tekstu** właściwość etykiety na literę **c**.
+   7. Ustaw właściwość **Text** etykiety na literę **c**.
 
         Lewa górna komórka w TableLayoutPanel powinna teraz zawierać czarne pole wyśrodkowane na niebieskim tle.
 
        > [!NOTE]
-       > Czcionka Webdings to czcionka ikon, która jest dostarczana z systemem operacyjnym Windows. W grze w dopasowywanie, gracz musi dopasować pary ikon, więc ta czcionka jest używana do wyświetlania dopasowywanych ikon. Zamiast umieszczać **c** w **tekstu** właściwość, spróbuj wprowadzić różne litery, aby zobaczyć, jakie ikony są wyświetlane. Znak wykrzyknika to pająk, wielkie N to oko, a przecinek to papryczka chili.
+       > Czcionka Webdings to czcionka ikon, która jest dostarczana z systemem operacyjnym Windows. W grze w dopasowywanie, gracz musi dopasować pary ikon, więc ta czcionka jest używana do wyświetlania dopasowywanych ikon. Zamiast umieszczać **c** we właściwości **Text** , spróbuj wprowadzić różne litery, aby zobaczyć, jakie ikony są wyświetlane. Znak wykrzyknika to pająk, wielkie N to oko, a przecinek to papryczka chili.
 
-5. Wybierz formant etykiety i skopiuj go do następnej komórki w TableLayoutPanel. (Wybierz **Ctrl**+**C** kluczy lub na pasku menu wybierz **Edytuj** > **kopiowania**.) Następnie wklej go. (Wybierz **Ctrl**+**V** kluczy lub na pasku menu wybierz **Edytuj** > **Wklej**.) W drugiej komórce TableLayoutPanel pojawi się kopia pierwszej etykiety. Wklej ją ponownie, a inny etykieta jest wyświetlana w trzeciej komórce. Wklejaj formanty etykiet, aż wszystkie komórki zostaną wypełnione.
+5. Wybierz kontrolkę etykieta i skopiuj ją do następnej komórki w TableLayoutPanel. (Wybierz klawisze **Ctrl**+**C** lub na pasku menu, wybierz polecenie **Edytuj** > **kopię**). Następnie wklej go. (Wybierz klawisze **Ctrl**+**V** lub na pasku menu wybierz polecenie **Edytuj** > **Wklej**). Kopia pierwszej etykiety pojawia się w drugiej komórce TableLayoutPanel. Wklej ją ponownie, a w trzeciej komórce pojawi się inna etykieta. Kontynuuj wklejanie kontrolek etykiet do momentu wypełnienia wszystkich komórek.
 
    > [!NOTE]
-   > Jeśli wkleisz zbyt wiele razy, IDE doda nowy wiersz do TableLayoutPanel, tak, aby miało miejsce na dodanie nowego formantu etykiety. Można cofnąć tę operację. Aby usunąć nową komórkę, wybierz **Ctrl**+**Z** kluczy lub na pasku menu wybierz **Edytuj** > **Cofnij**.
+   > Jeśli wkleisz zbyt wiele razy, IDE dodaje nowy wiersz do TableLayoutPanel, tak aby miał miejsce dodać nową kontrolkę etykieta. Można cofnąć tę operację. Aby usunąć nową komórkę,**wybierz klawisze** **Ctrl +** +lub na pasku menu wybierz polecenie **Edytuj** > **Cofnij**.
 
-    Teraz formularz jest rozmieszczony. Powinien wyglądać tak, jak na poniższej ilustracji:
+    Teraz formularz jest rozmieszczony. Powinien wyglądać podobnie do poniższej ilustracji.
 
-    ![Początkowy formularz gry w dopasowywanie](../ide/media/express_tut4step1.png)<br/>   Początkowy formularz gry w dopasowywanie
+    ![Początkowy pasujący formularz gry](../ide/media/express_tut4step1.png)<br/>*Początkowy pasujący formularz gry*
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 2: Dodawanie obiektu Random i listy ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 2: Dodaj losowy obiekt i listę ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
-- Aby powrócić do tematu przeglądu, zobacz [Tutorial 3: Utwórz pasujący obiekt typu gier](../ide/tutorial-3-create-a-matching-game.md).
+- Aby powrócić do tematu przeglądu, zobacz [samouczek 3: Utwórz pasującą grę](../ide/tutorial-3-create-a-matching-game.md).

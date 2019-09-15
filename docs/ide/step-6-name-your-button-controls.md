@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: b739e3a786d3765721b562538148f044416d38d4
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887977"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987914"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 
@@ -52,7 +52,7 @@ Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w okn
 Karta ***Form1.cs*** *z C# kodem*
 
     > [!NOTE]
-    > Karta Form1.cs może zamiast tego wyświetlać **showButton** jako **showButton** .
+    > Form1.cs na karcie Form1. vb może w zamian wyświetlić **showButton** jako **showButton** .
 
 1. Skup się na tej części kodu.
 
@@ -85,6 +85,9 @@ Karta ***Form1.cs*** *z C# kodem*
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+
+    > [!NOTE]
+    > Kod może nie wyświetlać programów obsługi zdarzeń w przypadku liter "camelCase". 
 
     Pięć metod, które zostały dodane, nazywają *programy obsługi zdarzeń*, ponieważ aplikacja wywołuje je za każdym razem, gdy występuje zdarzenie (takie jak użytkownik wybierający przycisk lub zaznaczając pole).
 
