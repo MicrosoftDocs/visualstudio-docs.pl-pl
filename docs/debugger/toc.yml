@@ -126,8 +126,12 @@
               href: edit-and-continue-visual-basic.md
             - name: Stosowanie edycji w trybie przerwania za pomocą funkcji Edytuj i kontynuuj
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: Pisanie i debugowanie uruchomionego kodu XAML
-          href: xaml-hot-reload.md
+        - name: Ponowne ładowanie przy aktywnym kodzie XAML
+          items:
+            - name: Pisanie i debugowanie uruchomionego kodu XAML
+              href: xaml-hot-reload.md
+            - name: Rozwiązywanie problemów z ponownym ładowaniem przy aktywnym kodzie XAML
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'Funkcja Edytuj i kontynuuj nieobsługiwana w przypadku języka F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Wyświetlanie danych debugera
