@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b739e3a786d3765721b562538148f044416d38d4
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: db84490c5e3067012ec37643996bd3c0a4874abc
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987914"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012593"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 
@@ -52,7 +52,7 @@ Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w okn
 Karta ***Form1.cs*** *z C# kodem*
 
     > [!NOTE]
-    > Form1.cs na karcie Form1. vb może w zamian wyświetlić **showButton** jako **showButton** .
+    > Karta Form1.cs lub Form1. vb może w zamian wyświetlić **showButton** jako **showButton** .
 
 1. Skup się na tej części kodu.
 

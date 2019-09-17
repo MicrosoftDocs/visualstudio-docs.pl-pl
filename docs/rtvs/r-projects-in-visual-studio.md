@@ -1,6 +1,6 @@
 ---
 title: Projekty języka R
-description: Jak utworzyć Menedżera projekty języka R w programie Visual Studio, w tym jej właściwości, polecenia projektów i szablonów.
+description: Jak utworzyć projekty w Menedżerze R w programie Visual Studio, w tym właściwości, polecenia projektu i szablony.
 ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
@@ -8,111 +8,111 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809920"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012623"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Tworzenie projektów języka R w programie Visual Studio
 
-Projekt R ( *.rxproj* pliku) identyfikuje źródła i plikami zawartości skojarzonymi z projektem. Także zawiera informacje o kompilacji dla każdego pliku, przechowuje informacje w celu integracji z systemów kontroli źródła i pomaga organizować aplikację w logiczne składniki. Obszar roboczy informacje dotyczące na przykład listy zainstalowanych pakietów, jednak jest obsługiwana oddzielnie w obszar roboczy.
+Projekt R (plik *. RXPROJ* ) identyfikuje wszystkie pliki źródłowe i zawartości skojarzone z projektem. Zawiera również informacje o kompilacji dla każdego pliku, utrzymuje informacje do integracji z systemami kontroli źródła i pomaga organizować aplikację w składnikach logicznych. Informacje dotyczące obszaru roboczego, takie jak lista zainstalowanych pakietów, są jednak obsługiwane oddzielnie w obszarze roboczym.
 
-Projekty są zawsze zarządzane w ramach programu Visual Studio *rozwiązania*, która może zawierać dowolną liczbę projektów, które mogą odwoływać się do siebie nawzajem. Zobacz [Użyj wiele typów projektów w programie Visual Studio](#use-multiple-project-types-in-visual-studio).
+Projekty są zawsze zarządzane w ramach *rozwiązania*programu Visual Studio, które może zawierać dowolną liczbę projektów, które mogą odwoływać się do siebie nawzajem. Zobacz [Używanie wielu typów projektów w programie Visual Studio](#use-multiple-project-types-in-visual-studio).
 
-## <a name="creating-a-new-r-project"></a>Tworzenie nowego projektu języka R
+## <a name="creating-a-new-r-project"></a>Tworzenie nowego projektu R
 
 1. Otwórz program Visual Studio.
-1. Wybierz **Plik > Nowy > Projekt** (**Ctrl**+**Shift**+**N**)
-1. Wybierz pozycję "Projekt R" w obszarze **szablony** > **R**, należy nadać projektowi nazwę i lokalizację i wybierz **OK**:
+1. Wybierz pozycję **plik > Nowy > projekt** (**Ctrl**+**SHIFT**+**N**)
+1. Wybierz pozycję "projekt r" z sekcji **Szablony** > **R**, Nadaj projektowi nazwę i lokalizację, a następnie wybierz **przycisk OK**:
 
-    ![Okno dialogowe Nowy projekt dla języka R w programie Visual Studio (RTVS w programie VS2017)](media/getting-started-01-new-project.png)
+    ![Okno dialogowe Nowy projekt dla języka R w programie Visual Studio (RTVS w program VS2017)](media/getting-started-01-new-project.png)
 
-To polecenie tworzy projekt z pustym *skryptu. R* plik jest otwarty w edytorze. Zwróć uwagę, również w **Eksploratora rozwiązań** istnieją dwa inne pliki w projekcie:
+To polecenie tworzy projekt z pustym *skryptem. Plik języka R* jest otwarty w edytorze. Należy również zauważyć, że w **Eksplorator rozwiązań** istnieją dwa inne pliki w projekcie:
 
-![Zawartość projektu języka R utworzone na podstawie szablonu](media/projects-template-results.png)
+![Zawartość projektu języka R utworzonego na podstawie szablonu](media/projects-template-results.png)
 
-*. Rhistory* rejestruje niezależnie od polecenia, możesz wprowadzić do [interaktywne R](interactive-repl-for-r-in-visual-studio.md) okna. Możesz otworzyć okno Historia dedykowanych z **R Tools** > **Windows** > **historii** polecenia. To okno ma narzędzi przycisk kontekstu elementy menu i wyczyścić zawartość historii.
+*. Rhistory* rejestruje wszelkie polecenia wprowadzane do okna [R Interactive](interactive-repl-for-r-in-visual-studio.md) . Możesz otworzyć dedykowane okno **historii przy użyciu** > polecenia Windows**History** **systemu Microsoft** > . To okno ma przycisk paska narzędzi i elementy menu kontekstowego, aby wyczyścić zawartość historii.
 
-*Rproject.rproj* pliku zachowuje niektóre ustawienia projektu specyficzne dla języka R, które w przeciwnym razie nie są zarządzane przez program Visual Studio:
+Plik *rproject. rproj* przechowuje niektóre ustawienia projektu specyficzne dla języka R, które nie są zarządzane w inny sposób przez program Visual Studio:
 
 | Właściwość | Domyślne | Opis |
 | --- | --- | --- |
-| Wersja | 1.0 | Wersja R Tools for Visual Studio używane do tworzenia projektu. |
-| RestoreWorkspace | Domyślny | Automatyczne ładowanie poprzedniej zmienne obszaru roboczego z `.RData` pliku w katalogu projektu. |
-| SaveWorkspace | Domyślny | Zapisz bieżący obszar roboczy zmienne `.RData` pliku w katalogu projektu podczas zamykania projektu. |
-| AlwaysSaveHistory | Domyślny | Zapisz bieżące okno interaktywne historii `.RHistory` pliku w katalogu projektu podczas zamykania projektu. |
-| EnableCodeIndexing | Tak | Określa, czy do uruchomienia zadania indeksowania w tle mogą przyspieszyć wyszukiwania kodu. |
-| UseSpacesForTab | Tak | Określa, czy wstawiać miejsca do magazynowania (tak) lub znak tabulacji (Brak) gdy **kartę** zostanie naciśnięty klawisz w edytorze. |
-| NumSpacesForTab | 2 | Liczba miejsc do magazynowania, jeżeli UseSpacesForTab to Yes. |
+| Wersja | 1.0 | Wersja R Tools for Visual Studio użyta do utworzenia projektu. |
+| RestoreWorkspace | Domyślny | Automatycznie Ładuj poprzednie zmienne obszaru roboczego z `.RData` pliku w katalogu projektu. |
+| SaveWorkspace | Domyślny | Zapisz bieżące zmienne obszaru roboczego do `.RData` pliku w katalogu projektu podczas zamykania projektu. |
+| AlwaysSaveHistory | Domyślny | Zapisz bieżącą historię okna interaktywnego do `.RHistory` pliku w katalogu projektu podczas zamykania projektu. |
+| EnableCodeIndexing | Tak | Określa, czy uruchomić zadanie indeksowania w tle w celu przyspieszenia wyszukiwania kodu. |
+| UseSpacesForTab | Tak | Określa, czy należy wstawiać spacje (tak) czy znak tabulacji (nie) po naciśnięciu klawisza **Tab** w edytorze. |
+| NumSpacesForTab | 2 | Liczba spacji do wstawienia, jeśli UseSpacesForTab ma wartość tak. |
 | Kodowanie | UTF-8 | Domyślne kodowanie `.R` plików. |
-| RnwWeave | Sweave | Pakiet do użycia podczas tkania pliku Rnw. |
-| LaTeX | pdfLaTeX | Biblioteki do użycia podczas konwertowania RMarkdwon do formatu PDF. |
+| RnwWeave | Sweave | Pakiet, który ma być używany podczas natkania pliku RNW. |
+| LaTeX | pdfLaTeX | Biblioteka do użycia podczas konwertowania RMarkdown do formatu PDF. |
 
-### <a name="converting-a-folder-of-files-to-an-r-project"></a>Konwertowanie folder z plikami do projektu języka R
+### <a name="converting-a-folder-of-files-to-an-r-project"></a>Konwertowanie folderu plików na projekt języka R
 
-Jeśli masz istniejące foldery *. R* pliki, które mają być zarządzane w projekcie, wykonaj następujące czynności:
+Jeśli masz istniejący folder programu *. Pliki języka R* , które mają być zarządzane w projekcie, wykonaj następujące czynności:
 
-1. Utwórz nowy projekt w programie Visual Studio, tak jak w poprzedniej sekcji.
+1. Utwórz nowy projekt w programie Visual Studio, jak w poprzedniej sekcji.
 1. Skopiuj pliki do folderu projektu.
-1. W Eksploratorze rozwiązań programu Visual Studio kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj** > **istniejący element**, a następnie przejdź do plików, które chcesz dodać. Te pliki są wyświetlane w drzewie Twojego projektu po wybraniu **OK**.
-1. Aby zorganizować kodu w podfolderach, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj** > **nowy Folder** po pierwsze, następnie skopiuj pliki do tego folderu i dodać tych istniejących elementów w kroku 3.
+1. W programie Visual Studio Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Dodaj** > **istniejący element**i przejdź do plików, które chcesz dodać. Te pliki pojawiają się w drzewie projektu po wybraniu przycisku **OK**.
+1. Aby zorganizować kod w podfolderach, kliknij prawym przyciskiem myszy projekt, najpierw wybierz opcję **Dodaj** > **Nowy folder** , a następnie skopiuj pliki do tego folderu i Dodaj te istniejące elementy w kroku 3.
 
 ## <a name="project-properties"></a>Właściwości projektu
 
-Aby otworzyć na stronach właściwości projektu, kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**, lub wybierz **projektu > właściwości (nazwa projektu)** menu element. W otwartym oknie Wyświetla właściwości projektu:
+Aby otworzyć strony właściwości projektu, kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**lub wybierz element menu **Właściwości > projektu (nazwa projektu)** . Otwarte okno wyświetla właściwości projektu:
 
 | Tab | Właściwość | Opis |
 | --- | --- | --- |
-| Uruchom | Plik startowy | Nazwa pliku, który jest uruchamiany z **źródłowy plik startowy** polecenia **F5**, **debugowania** > **Rozpocznij debugowanie**, lub  **Debugowanie** > **Uruchom bez debugowania**. Kliknij prawym przyciskiem myszy plik w projekcie i wybierając polecenie **ustawiony jako skrypt uruchamiania R** także ustawia go jako plik startowy. |
-| | Resetuj R interakcyjne przy uruchomieniu | Czyści wszystkie zmienne z obszaru roboczego w oknie interaktywnym podczas uruchamiania projektu. Gwarancje tak tą operacją nie jest zawartość nie końcowej obszaru roboczego z poprzednich przebiegów. |
+| Uruchom | Plik startowy | Nazwa pliku, który jest uruchamiany za pomocą polecenia **źródłowego pliku startowego** , **F5**, > **debugowanie rozpoczęcia**debugowania lub Rozpocznij **debugowanie** > **bez debugowania**. Kliknij prawym przyciskiem myszy plik w projekcie i wybierz polecenie **Ustaw jako startowy skrypt R** również ustawia go jako plik startowy. |
+| | Resetuj R Interactive przy uruchomieniu | Czyści wszystkie zmienne z obszaru roboczego okna interaktywnego podczas uruchamiania projektu. To gwarantuje, że nie ma żadnej końcowej zawartości obszaru roboczego z poprzedniej. |
 | | Ścieżka projektu zdalnego | Ścieżka do zdalnego obszaru roboczego. |
-| | Transfer plików przy uruchomieniu | Wskazuje, czy projekt pliki podlegają filtru **plików do transferu**, mają zostać skopiowane do zdalnego obszaru roboczego z poszczególnymi uruchomieniami. |
-| | Transfer plików | Nazwy plików i symboli wieloznacznych, wskazując określone pliki do skopiowania do zdalnego obszaru roboczego, jeśli **transferu plików przy uruchomieniu** jest zaznaczone. |
-| Ustawienia | (Plik Settings.R) | Ustawienia projektu języka R pochodzą *Settings.R* lub **. Settings.R* pliki, które znajdują się w projekcie. Jeśli nie ma żadnego pliku ustawień, można dodać zmienne zapisywania strony i domyślnym *Settings.R* zostanie utworzony plik. Plik ustawień można również dodać do projektu przy użyciu **pliku** > **Dodaj nowy element** polecenia menu. <br/> Ustawienia są przechowywane jako kod języka R, a plik może być źródło przed uruchomieniem innych modułów, w związku z tym wstępne wypełnianie środowiska ze wstępnie zdefiniowanymi ustawieniami. |
+| | Transferowanie plików przy uruchomieniu | Wskazuje, czy pliki projektu, zgodnie z filtrem w **plikach do przeniesienia**, mają zostać skopiowane do zdalnego obszaru roboczego przy każdym uruchomieniu. |
+| | Pliki do przesłania | Nazwy plików i symbole wieloznaczne wskazujące określone pliki do skopiowania do zdalnego obszaru roboczego, jeśli wybrano **pliki transferu w uruchomieniu** . |
+| Ustawienia | (Plik Settings. R) | Ustawienia projektu języka R pochodzą z *ustawień. R* lub * *. Settings. R* pliki, które znajdują się wewnątrz projektu. Jeśli nie ma pliku ustawień, możesz dodać zmienne, zapisać stronę i domyślny plik *Ustawienia. R* . Możesz również **dodać plik ustawień** > do projektu za pomocą polecenia menu**Dodaj nowy element** . <br/> Ustawienia są przechowywane jako kod języka R, a plik może być źródłem przed uruchomieniem innych modułów, co oznacza wstępne wypełnianie środowiska ze wstępnie zdefiniowanymi ustawieniami. |
 
 ## <a name="r-specific-project-commands"></a>Polecenia projektu specyficznego dla języka R
 
-Projektów programu Visual Studio obsługuje szereg ogólne poleceń w menu kliknij prawym przyciskiem myszy i **projektu** menu. Aby uzyskać szczegółowe informacje dotyczące tych ogólnych możliwości, zobacz [rozwiązań i projektów w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md). Należy pamiętać, jednak czy R Tools for Visual Studio (RTVS) dodaje swoje własne polecenia do menu kontekstowe dla projektu języka R, a także pliki i foldery w projekcie.
+Projekty programu Visual Studio obsługują wiele ogólnych poleceń za pomocą menu dostępnego po kliknięciu prawym przyciskiem myszy i menu **projektu** . Aby uzyskać szczegółowe informacje na temat tych ogólnych funkcji, zobacz [rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md). Należy jednak pamiętać, że R Tools for Visual Studio (RTVS) dodaje wiele własnych poleceń do menu po kliknięciu prawym przyciskiem myszy dla projektu R, a także plików i folderów w ramach projektu.
 
 | Polecenie | Opis |
 | --- | --- |
-| Ustaw katalog roboczy, w tym miejscu | Określa katalog roboczy okno interaktywne R do folderu projektu, który pozwala także na dowolnego podfolderu w ramach projektu. |
-| Otwórz Folder zawierający | Zostanie otwarty Eksplorator Windows w lokalizacji wybranego pliku. |
-| Dodaj skrypt języka R | Tworzy i otwiera nową *. R* plik o nazwie domyślnej. Można również użyć **Dodaj** > **nowy element** polecenie, aby utworzyć *. R* plików, a także wiele innych typów plików. Zobacz [szablonów elementów specyficznych dla języka R](#r-specific-item-templates). |
-| Dodaj znaczniki R Markdown | Tworzy i otwiera nowe *.rmd* dokumentu o domyślnej nazwie. Można również użyć **Dodaj** > **nowy element** polecenie, aby utworzyć *.rmd* plików, a także wiele innych typów plików. Zobacz [szablonów elementów specyficznych dla języka R](#r-specific-item-templates).  |
-| Publikuj procedury składowane | Uruchamia proces publikowania żadnych procedur składowanych zawarte w skryptów języka R. Zobacz [pracy za pomocą procedur składowanych serwera SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
+| Ustaw tutaj katalog roboczy | Ustawia katalog roboczy okna R Interactive do folderu projektu, który może być również używany w dowolnym podfolderze w projekcie. |
+| Otwórz folder zawierający | Otwiera Eksploratora Windows w lokalizacji wybranego pliku. |
+| Dodaj skrypt języka R | Tworzy i otwiera nowy *. Plik R* o nazwie domyślnej. Możesz również użyć polecenia **Dodaj** > **nowy element** , aby utworzyć *. Pliki języka R* oraz inne typy plików. Zobacz [Szablony elementów specyficznych dla języka R](#r-specific-item-templates). |
+| Dodaj R Markdown | Tworzy i otwiera nowy dokument *. RMD* o nazwie domyślnej. Możesz również użyć polecenia **Dodaj** > **nowy element** , aby utworzyć pliki *RMD* oraz liczbę innych typów plików. Zobacz [Szablony elementów specyficznych dla języka R](#r-specific-item-templates).  |
+| Publikuj procedury składowane | Uruchamia proces publikowania wszelkich procedur składowanych zawartych w skryptach języka R. Zobacz [pracy z SQL Server procedurami składowanymi](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>Szablony elementów specyficznych dla języka R
 
-RTVS zawiera wiele szablonów dla określonych typów plików. Możesz uzyskać dostęp do szablonów, klikając prawym przyciskiem myszy projekt R i wybierając **Dodaj** > **nowy element**, wybierając **projektu**  >   **Dodaj nowy element**, lub za pomocą **pliku** > **New** > **pliku** i wybierając polecenie **R** kartę. Najlepszym sposobem, aby zapoznać się z szablonem jest utworzenie nowego projektu i wstawiania plików każdego typu.
+RTVS zawiera wiele szablonów dla określonych typów plików. Aby uzyskać dostęp do szablonów, kliknij prawym przyciskiem myszy projekt R i wybierz polecenie **Dodaj** > **nowy element**, wybierając kolejno opcje **projekt** > **Dodaj nowy element**lub przy użyciu polecenia nowy **plik** >   >  **Plik** i Wybieranie karty **R** . Najlepszym sposobem eksplorowania szablonu jest utworzenie nowego projektu i wstawienie plików każdego typu.
 
 > [!Note]
-> **Dodaj** > **nowy element** polecenia również wyświetlić typy ogólne plików, które nie są wymienione w tabeli; **pliku** > **New**   >  **Pliku** te typy są zawarte w zamian na **ogólne** kartę.
+> W poleceniach **Dodaj** > **nowy element** są również wyświetlane ogólne **typy plików,**  > które nie są wymienione w tabeli. plik o**nowym** > **pliku** te typy są zawarte zamiast **ogólnego** karta.
 
 | Typ pliku | Opis |
 | --- | --- |
-| Skrypt języka R | Plik tekstowy zawierający te same polecenia, które mogą być wprowadzane w wierszu polecenia języka R. |
-| Znaczniki R Markdown | Plik zawierający [R Markdown](rmarkdown-with-r-in-visual-studio.md) dokumentu. |
-| Ustawienia języka R | Plik, który zawiera ustawienia aplikacji R. |
-| Dokumentace R | Ogólny plik dokumentacji języka R zawierający tylko nazwę aliasu i pola tytułu. |
-| Dokumentace R (funkce) | Dokumentacja języka R plik zawierający wiele pól z komentarzami do opisywania funkcji. |
-| Dokumentace R (zestaw danych) | Dokumentacja języka R plik zawierający wiele pól z komentarzami do opisywania zestawu danych. |
-| SQL Query | I puste *.sql* pliku. Zobacz [pracy z programu SQL Server i R](integrating-sql-server-with-r.md). |
-| Procedura składowana przy użyciu języka R | Plik języka R z podrzędnych zapytanie SQL i podrzędne przechowywane procedury pliku szablonu. Zobacz [pracy z programu SQL Server i R](integrating-sql-server-with-r.md). |
+| Skrypt języka R | Plik tekstowy zawierający te same polecenia, które można wprowadzić w wierszu polecenia języka R. |
+| Znaczniki R Markdown | Plik zawierający dokument [R MARKDOWN](rmarkdown-with-r-in-visual-studio.md) . |
+| Ustawienia języka R | Plik, który zawiera ustawienia aplikacji języka R. |
+| Dokumentacja języka R | Ogólny plik dokumentacji języka R zawierający tylko pola Nazwa, alias i tytuł. |
+| Dokumentacja języka R (funkcja) | Plik dokumentacji języka R zawierający wiele pól z komentarzami opisującymi funkcję. |
+| Dokumentacja języka R (DataSet) | Plik dokumentacji języka R zawierający wiele pól z komentarzami do opisywania zestawu danych. |
+| SQL Query | Pusty plik *. SQL* . Zobacz [Work with SQL Server i R](integrating-sql-server-with-r.md). |
+| Procedura składowana w języku R | Plik R z podrzędnym zapytaniem SQL i podrzędnym plikiem szablonu procedury składowanej. Zobacz [Work with SQL Server i R](integrating-sql-server-with-r.md). |
 
-## <a name="use-multiple-project-types-in-visual-studio"></a>Używanie wielu typów projektu w programie Visual Studio
+## <a name="use-multiple-project-types-in-visual-studio"></a>Używanie wielu typów projektów w programie Visual Studio
 
-Rozwiązania programu Visual Studio zapewnia wygodne miejsce do zbierania i Zarządzaj powiązanymi projektami w jednym miejscu logiczne. Rozwiązania pomaga w zapewnieniu kodu uporządkowane i usprawnia współpracę w obrębie zespołów.
+Rozwiązania programu Visual Studio zapewniają wygodne miejsce do gromadzenia powiązanych projektów i zarządzania nimi w jednym miejscu logicznym. Rozwiązania ułatwiają organizację kodu i ułatwiają współpracę w zespołach.
 
-W poniższym przykładzie rozwiązanie zawiera projekt R dzięki modelowi utworzone przy użyciu języka R i Azure Machine Learning, projektu języka Python/scikit-learn, projektu C++, zawierające modułów na potrzeby intensywnie korzystających z pracy obliczeniowej, projekt SQL do zarządzania danymi i języka Python/Bottle projekt witryny sieci web, która publikuje wyniki:
+W poniższym przykładzie rozwiązanie zawiera projekt języka R z modelem utworzonym przy użyciu języka R i Azure Machine Learning, projekt w języku Python/scikit — Dowiedz C++ się, projekt zawierający moduły do intensywnej pracy obliczeniowej, projekt SQL do zarządzania danymi i środowisko Python/ Projekt butelek dla witryny sieci Web, która publikuje wynik:
 
-![Visual Studio Eksplorator rozwiązań wielu powiązanych projektów w rozwiązaniu](media/projects-polyglot.png)
+![Program Visual Studio Eksplorator rozwiązań pokazujący wiele powiązanych projektów w rozwiązaniu](media/projects-polyglot.png)
 
-Projekt wyróżnioną pogrubienie jest projektem "Uruchamianie" dla rozwiązania; Aby je zmienić, kliknij prawym przyciskiem myszy inny projekt, a następnie wybierz **Ustaw jako projekt startowy**.
+Projekt wyróżniony pogrubioną jest projektem "Start" dla rozwiązania; Aby to zmienić, kliknij prawym przyciskiem myszy inny projekt i wybierz polecenie **Ustaw jako projekt startowy**.
 
 > [!Note]
-> Obecnie nie ma żadnych jawnych R, aby C#integracji języka /C++ (ponieważ ma dla języka Python, zobacz [Tworzenie rozszerzenia C++ dla języka Python](../python/working-with-c-cpp-python-in-visual-studio.md)).  Istnieją jednak dostępne biblioteki, które zapewniają C# i mostków C++ dla języka R.
+> Obecnie nie ma żadnej jawnej integracji z C#językiemC++ R-/języka (w przypadku języka Python, zobacz [Tworzenie C++ rozszerzenia dla języka Python](../python/working-with-c-cpp-python-in-visual-studio.md)).  Dostępne są jednak biblioteki, które C# udostępniają C++ i mostkom dla języka R.
 
-Aby uzyskać więcej informacji na temat zarządzania projektami i rozwiązaniami ogólnie rzecz biorąc, zobacz [rozwiązań i projektów w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).
+Aby uzyskać więcej informacji na temat ogólnego zarządzania projektami i rozwiązaniami, zobacz [rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).

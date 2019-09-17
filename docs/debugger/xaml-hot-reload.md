@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5591d9c05ee0449b9ff77729d73722c18e4d3a
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987677"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012605"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio
 
@@ -38,7 +38,7 @@ Hot reload języka XAML jest szczególnie przydatny w następujących scenariusz
 
 Na poniższej ilustracji przedstawiono użycie aktywnego drzewa wizualnego, aby otworzyć kod źródłowy, a następnie przycisk Wczytaj ponownie z kodowaniem XAML, aby zmienić tekst przycisku i kolor przycisku.
 
-![Hot reload języka XAML](../debugger/media/xaml-hot-reload-using.gif)
+![Ponowne ładowanie przy aktywnym kodzie XAML](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
 > Hot reload programu Visual Studio XAML jest obecnie obsługiwany tylko w przypadku uruchamiania aplikacji w programie Visual Studio lub Blend for Visual Studio z dołączonym debugerem (**F5** lub **Start Debug**). Nie można włączyć tego środowiska przy użyciu funkcji [dołączania do procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) , chyba że [ręcznie ustawisz zmienną środowiskową](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process).
@@ -66,5 +66,5 @@ Podczas korzystania ze gorącego ładowania kodu XAML mogą występować następ
 
 ## <a name="see-also"></a>Zobacz także
 
-[Rozwiązywanie problemów z usługą XAML Załaduj ponownie](xaml-hot-reload-troubleshooting.md)
-[Wczytaj kod XAML na platformie Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
+* [Rozwiązywanie problemów z aktywnym załadowaniem XAML](xaml-hot-reload-troubleshooting.md)
+* [Hot reload języka XAML dla platformy Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
