@@ -17,18 +17,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 27364bd028d9fb493da354d3bff7f11efe5f459d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825709"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062784"
 ---
-# <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów z błędami związanych z siecią, podczas instalowania lub użyć programu Visual Studio
+# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów związanych z siecią podczas instalowania programu Visual Studio lub korzystania z niego
 
 Mamy rozwiązań dla najbardziej typowe błędy związane z siecią lub serwera proxy, które można napotkać podczas instalowania lub używania programu Visual Studio za zaporą lub serwerem proxy.
 
-## <a name="error-proxy-authorization-required"></a>Błąd: "Wymaga autoryzacji serwera proxy"
+## <a name="error-proxy-authorization-required"></a>Błąd: "Wymagana autoryzacja serwera proxy"
 
 Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem za pośrednictwem serwera proxy i serwer proxy blokuje wywołania, które program Visual Studio sprawia, że do niektórych zasobów sieciowych.
 
@@ -36,7 +36,7 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
 - Uruchom ponownie program Visual Studio. Powinna zostać wyświetlona okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia, po wyświetleniu monitu w oknie dialogowym.
 
-- Jeśli ponowne uruchomienie programu Visual Studio nie rozwiązuje ten problem, może to oznaczać, serwer proxy nie jest wyświetlany monit o poświadczenia dla protokołu http:&#47;&#47;go.microsoft.com adresy, ale jest to spowodowane &#42;. visualStudio.microsoft.com adresów. Na tych serwerach należy rozważyć dodanie następujących adresów URL do listy dozwolonych, aby odblokować wszystkie w scenariuszach logowania w programie Visual Studio:
+- Jeśli ponowne uruchomienie programu Visual Studio nie rozwiąże problemu, może to oznaczać, że serwer proxy nie wyświetli monitu o&#47;&#47;podanie poświadczeń dla adresów http: &#42;go.Microsoft.com, ale jest to dla adresów visualStudio.Microsoft.com. W przypadku tych serwerów rozważ dodanie następujących adresów URL do listy dozwolonych, aby odblokować wszystkie scenariusze logowania w programie Visual Studio:
 
   - &#42;.windows.net
 
@@ -48,7 +48,7 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
   - &#42;.live.com
 
-- W przeciwnym razie możesz usunąć http:&#47;&#47;go.microsoft.com adresów z listy dozwolonych, aby w oknie dialogowym uwierzytelniania serwera proxy, pojawia się dla obu protokołu http:&#47;&#47;go.microsoft.com adres i punkty końcowe serwera, gdy program Visual Studio ponownie uruchomione.
+- Można w przeciwnym razie usunąć adres http&#47;&#47;: go.Microsoft.com z listy dozwolonych, tak aby w oknie dialogowym uwierzytelniania serwera proxy pojawia się zarówno adres&#47;&#47;http: go.Microsoft.com, jak i punkty końcowe serwera, gdy program Visual Studio jest uruchomieniu.
 
   -LUB-
 
@@ -69,13 +69,13 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
       Adres serwera proxy poprawne należy wstawić dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Aby uzyskać więcej informacji, zobacz [ &lt;defaultProxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) i [ &lt;proxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) stron.
+     > Aby uzyskać więcej informacji, zobacz [ &lt;strony&gt; defaultProxy (Ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) i [ &lt;element&gt; proxy (Ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  1. Znajdź **devenv.exe.config** (plik devenv.exe w konfiguracji) w: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** lub **% ProgramFiles (x86) %\Microsoft Wizualne Studio\2019\Enterprise\Common7\IDE**.
+  1. Znajdź **devenv. exe. config** (plik konfiguracyjny devenv. exe) w: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** lub **% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Enterprise\Common7\IDE**.
 
   2. Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj ten kod:
 
@@ -88,7 +88,7 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
       Adres serwera proxy poprawne należy wstawić dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Aby uzyskać więcej informacji, zobacz [ &lt;defaultProxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) i [ &lt;proxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) stron.
+     > Aby uzyskać więcej informacji, zobacz [ &lt;strony&gt; defaultProxy (Ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) i [ &lt;element&gt; proxy (Ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
 
 ::: moniker-end
 

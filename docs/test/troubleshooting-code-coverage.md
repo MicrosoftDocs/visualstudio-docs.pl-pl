@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926545"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079578"
 ---
 # <a name="troubleshoot-code-coverage"></a>Rozwiązywanie problemów z pokryciem kodu
 
@@ -56,6 +56,8 @@ Wyjaśnienie&mdash;silnik pokrycia kodu wymaga, że każdy zestaw miał związan
 *.Pdb* plik musi zostać wygenerowany z tej samej kompilacji co *.dll* lub *.exe* plików.
 
 Rozpoznawanie&mdash;upewnij się, że ustawienia kompilacji generują *.pdb* pliku. Jeśli *.pdb* pliki nie są aktualizowane, gdy projekt jest kompilowany, następnie otwórz właściwości projektu, wybierz **kompilacji** wybierz **zaawansowane**i sprawdzić **Informacje debugowania**.
+
+W C++ przypadku projektów upewnij się, że wygenerowane pliki. pdb mają pełne informacje o debugowaniu. Otwórz właściwości projektu i sprawdź, czy dla opcji**Wygeneruj informacje debugowania** dla**debugowania** >  **konsolidatora** > jest ustawiona wartość **Generuj informacje o debugowaniu zoptymalizowane pod kątem udostępniania i publikowania (/Debug: Full)** .
 
 Jeśli *.pdb* i *.dll* lub *.exe* pliki znajdują się w różnych miejscach, kopia *.pdb* pliku, w tym samym katalogu. Użytkownik może również skonfigurować silnik pokrycia kodu, aby wyszukać *.pdb* pliki w innej lokalizacji. Aby uzyskać więcej informacji, zobacz [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 

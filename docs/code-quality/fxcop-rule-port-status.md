@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551059"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062413"
 ---
 # <a name="fxcop-rule-port-status"></a>Stan portu reguły FxCop
 
@@ -25,7 +25,7 @@ Jeśli wcześniej użyto statycznej analizy kodu w programie Visual Studio, moż
 
 [Strona z automatycznie wygenerowaną dokumentacją](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) w repozytorium Roslyn-analizators ma najbardziej aktualną listę reguł, które zostały przeanalizowane do analizatorów FxCop. Ta strona zawiera również dodatkowe informacje, takie jak to, czy reguła jest włączona domyślnie i czy ma skojarzoną *poprawkę kodu*. ([Poprawki kodu](../ide/quick-actions.md) są dostępne dla jednego kliknięcia w menu ikony żarówki w programie Visual Studio).
 
-Od daty na tej stronie Lista reguł FxCop, które zostały przeanalizowane do [analizatorów FxCop](install-fxcop-analyzers.md) , obejmuje:
+Od daty na tej stronie Lista reguł FxCop, które zostały [przeanalizowane do analizatorów FxCop](install-fxcop-analyzers.md) , obejmuje:
 
 Identyfikator reguły | Tytuł
 --------|---------
@@ -69,7 +69,7 @@ Identyfikator reguły | Tytuł
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach
 CA1066 | Typ {0} powinien implementować\<IEquatable T >, ponieważ zastępuje on wartość Equals
 CA1067 | Zastąp obiekt. Equals (Object) podczas implementowania IEquatable\<T >
-CA1068 | Parametry CancellationToken muszą pochodzić z ostatnich
+[CA1068](ca1068.md) | Parametry CancellationToken muszą pochodzić z ostatnich
 CA1200 | Unikaj używania tagów cref z prefiksem
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Nie przekazuj literałów jako zlokalizowanych parametrów
 [CA1304](ca1304-specify-cultureinfo.md) | Określ argument CultureInfo
@@ -193,7 +193,7 @@ CA5369 | Użyj elementu XmlReader do deserializacji
 CA5370 | Użyj elementu XmlReader do walidacji czytnika
 CA5371 | Użyj elementu XmlReader dla odczytu schematu
 CA5372 | Użyj elementu XmlReader dla XPathDocument
-CA5373 | Nie należy używać przestarzałej funkcji wyprowadzania klucza
+CA5373 | Nie używaj przestarzałej funkcji wyprowadzania klucza
 CA5374 | Nie używaj XslTransform
 CA5375 | Nie używaj sygnatury dostępu współdzielonego konta
 CA5376 | Korzystanie z SharedAccessProtocol HttpsOnly
@@ -271,7 +271,7 @@ Identyfikator reguły | Problem ze śledzeniem
 
 ### <a name="deprecated-rules"></a>Przestarzałe reguły
 
-Następujące reguły FxCop starszej wersji są przestarzałe i nie zostaną zaimplementowane jako analizatory. Aby uzyskać więcej informacji, możesz wyszukiwać według identyfikatora reguły (na przykład **CA1009**) na [stronie problemów](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)z usługą GitHub dla analizatorów Roslyn.
+Następujące reguły FxCop starszej wersji są przestarzałe i nie zostaną zaimplementowane jako analizatory. Aby uzyskać więcej informacji, możesz wyszukiwać według identyfikatora reguły (na przykład **CA1009**) na [stronie problemów z usługą GitHub dla analizatorów Roslyn](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: 'C++: tworzenie aplikacji konsoli'
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: 'Python: tworzenie aplikacji internetowej'
       href: ide/quickstart-python.md
     - name: 'Node.js: tworzenie aplikacji internetowej'

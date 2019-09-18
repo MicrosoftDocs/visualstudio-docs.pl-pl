@@ -1,7 +1,7 @@
 ---
 title: Rozwiązywanie problemów z instalacją lub Uaktualnij problemów
 description: Czasami mogą wystąpić problemy. Jeśli Twoje instalację programu Visual Studio lub uaktualnienie nie powiedzie się, może pomóc tej strony.
-ms.date: 03/30/2019
+ms.date: 09/13/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce451ecdeb6d196e6520acffb9a6c76add36f5bf
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: f9612d9943c425a91bb3d01ea3bb5b1e37f270d3
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913258"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062814"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją i uaktualnieniem programu Visual Studio
 
@@ -114,12 +114,14 @@ Jeśli żaden z poprzednich kroków należy postępować instalacja lub uaktualn
 
 ## <a name="offline-installations"></a>Instalacje w trybie offline
 
-W tym miejscu znajduje się tabela znane problemy i obejścia, które mogą być pomocne podczas instalacji z układu lokalnego.
+Poniżej przedstawiono tabelę znanych problemów i niektórych obejść, które mogą pomóc podczas tworzenia [instalacji w trybie offline](create-an-offline-installation-of-visual-studio.md) , a następnie instalacji z układu lokalnego.
 
 | Problem       | Element                   | Rozwiązanie |
 | ----------- | ---------------------- | -------- |
 | Użytkownicy nie mają dostępu do plików. | uprawnienia (kontroli dostępu ACL) | Upewnij się, dostosowanie uprawnień (kontroli dostępu ACL), tak aby ich przyznawać innym użytkownikom dostęp do odczytu *przed* udostępnianie instalacji w trybie offline. |
 | Nowych obciążeń i składników oraz języki, instalacja zakończyć się niepowodzeniem.  | `--layout`  | Upewnij się, że masz dostęp do Internetu, jeśli instalacji z układu częściowe i wybierz obciążeń, składniki oraz języki, które nie zostały pobrane wcześniej w tym układzie częściowe. |
+
+Aby uzyskać więcej informacji na temat rozwiązywania problemów z [instalacją sieciową](create-a-network-installation-of-visual-studio.md), zobacz [Rozwiązywanie problemów związanych z siecią podczas instalowania programu Visual Studio lub korzystania](troubleshooting-network-related-errors-in-visual-studio.md)z niego.
 
 ## <a name="installation-logs"></a>Dzienniki instalacji
 

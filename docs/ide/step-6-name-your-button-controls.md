@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db84490c5e3067012ec37643996bd3c0a4874abc
-ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.openlocfilehash: 397f65639b6ac277aa6975964ba8317adea58a49
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012593"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062850"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 
@@ -64,7 +64,7 @@ Karta ***Form1.cs*** *z C# kodem*
 
     ```vb
         Private Sub showButton_Click() Handles showButton.Click
-    
+
     End Sub
     ```
 
@@ -83,11 +83,11 @@ Karta ***Form1.cs*** *z C# kodem*
     Poniżej przedstawiono nowy kod widoczny w edytorze kodu.
 
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
-    
+
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
     > [!NOTE]
-    > Kod może nie wyświetlać programów obsługi zdarzeń w przypadku liter "camelCase". 
+    > Kod może nie wyświetlać programów obsługi zdarzeń w przypadku liter "camelCase".
 
     Pięć metod, które zostały dodane, nazywają *programy obsługi zdarzeń*, ponieważ aplikacja wywołuje je za każdym razem, gdy występuje zdarzenie (takie jak użytkownik wybierający przycisk lub zaznaczając pole).
 

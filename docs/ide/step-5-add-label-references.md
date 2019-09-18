@@ -1,22 +1,27 @@
 ---
 title: Krok 5. Dodawanie odwołań do etykiet
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35224529e556afee673aafa8e5e8b68e61157f7
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4580fb2a4c77949825b4e84a7aed7553ceffd981
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416564"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079400"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5. Dodawanie odwołań do etykiet
 Program musi śledzić, które kontrolki etykiet wybiera gracz. W tej chwili program pokazuje wszystkie etykiety wybrane przez gracza. Ale zaraz to zmienimy. Po wybraniu pierwszej etykiety program powinien wyświetlać ikonę etykiety. Po wybraniu drugiej etykiety program powinien wyświetlić obie ikony przez krótki czas i potem ponownie je ukryć. Program będzie teraz śledził, który formant Etykieta jest wybierany jako pierwszy, a który jest wybierany drugi przy użyciu *zmiennych odwołania*.
@@ -42,7 +47,7 @@ Program musi śledzić, które kontrolki etykiet wybiera gracz. W tej chwili pro
 4. Wybierz następny formant etykiety i zauważ, że nic się nie dzieje. Program śledzi już pierwszą etykietę, którą wybrał gracz, `firstClicked` więc nie jest równa się `null` w wizualizacji C# ani `Nothing` w Visual Basic. `firstClicked` `Nothing`Gdy instrukcja sprawdzi, `if` czy jest równa lub,stwierdza,żenie,iniewykonujeinstrukcjiwinstrukcji.`null` `if` Tak więc, tylko pierwsza wybrana ikona zmienia kolor na czarny, a inne ikony są niewidoczne, jak pokazano na poniższej ilustracji.
 
      ![Gra w dopasowywanie z](../ide/media/express_tut4step5.png)
-jedną ikoną, w której wyświetlana jest jedna ikona
+**jedną ikoną** , w której wyświetlana jest jedna ikona
 
      Tę sytuację należy rozwiązać w następnym kroku samouczka, dodając kontrolkę **czasomierz** .
 

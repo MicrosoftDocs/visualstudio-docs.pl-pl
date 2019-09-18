@@ -1,22 +1,27 @@
 ---
 title: Krok 7. Zachowywanie widoczności par
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5194d3925393228d951f35a966dff8fd620ea924
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 01eba06b569d48a6ab49174183438fcea96cb5c7
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416526"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079312"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Krok 7. Zachowywanie widoczności par
 Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast sprawiać, że ikony znikają, włączając czasomierz (przy użyciu <xref:System.Windows.Forms.Timer.Start> metody), gra powinna zostać zresetowana tak, aby nie śledzić żadnych etykiet `firstClicked` przy użyciu i `secondClicked` zmiennych odwołania, bez resetowania kolory dla dwóch wybranych etykiet.
@@ -52,12 +57,12 @@ Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne
     firstClicked = null;
     ```
 
-     Pierwsza z tych dwóch instrukcji sprawdza, czy dwie ikony są takie same. Ponieważ dwie wartości są porównywane, program Visual C# używa `==` operatora równości. Druga instrukcja faktycznie zmienia wartość (nazywane przypisaniem), ustawiając  `firstClicked` zmienną `null` odwołania równą do resetowania. Dlatego używa `=` operatora przypisania zamiast tego. C# Wizualizacja `=` używa do ustawiania wartości i `==` porównywania ich. Visual Basic używa `=` zarówno do przypisywania zmiennych, jak i porównywania.
+     Pierwsza z tych dwóch instrukcji sprawdza, czy dwie ikony są takie same. Ponieważ dwie wartości są porównywane, program Visual C# używa `==` operatora równości. Druga instrukcja faktycznie zmienia wartość (nazywane *przypisaniem*), ustawiając `firstClicked` zmienną `null` odwołania równą do resetowania. Dlatego używa `=` operatora przypisania zamiast tego. C# Wizualizacja `=` używa do ustawiania wartości i `==` porównywania ich. Visual Basic używa `=` zarówno do przypisywania zmiennych, jak i porównywania.
 
 2. Zapisz i uruchom program, a następnie zacznij wybierać ikony na formularzu. Jeśli wybierzesz parę, która nie pasuje, wyzwala się zdarzenie czasomierza Takt i obie ikony znikają. W przypadku wybrania pary zgodnej, Nowa `if` instrukcja zostanie wykonana, a instrukcja return powoduje, że metoda pominie kod, który uruchamia czasomierz, więc ikony pozostaną widoczne, jak pokazano na poniższej ilustracji.
 
      ![Gra, którą tworzysz w tym samouczku](../ide/media/express_finishedgame.png)
-, dopasowuje**grę** z widocznymi parami ikon
+,**dopasowuje grę** z widocznymi parami ikon
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

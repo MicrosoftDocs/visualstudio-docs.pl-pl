@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Poznaj pełen zakres korzyści dostępnych dla Ciebie w portalu subskrypcji programu Visual Studio
-ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377917"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095311"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Korzystanie z portalu subskrybenta — my.visualstudio.com
 
@@ -21,8 +21,8 @@ Korzystanie z portalu wymaga zalogowania się za pomocą tożsamości skojarzone
 
 Portal jest zorganizowany na sześć stron.  Każda Strona zapewnia dostęp do różnych produktów lub usług dostępnych w ramach subskrypcji.  Sześć stron to korzyści, pliki do pobrania, klucze produktów, subskrypcje, pomoc techniczna i Portal Marketplace.
 
-## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Korzysta](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Narzędzia i usługi dołączone do subskrypcji są wyświetlane jako "kafelki" na stronie korzyści.  Wszystkie korzyści nie są dostępne we wszystkich subskrypcjach. Kafelki są pogrupowane w trzy kategorie:  Narzędzia, profesjonalne programowanie i pomoc techniczna.  Jeśli używasz Visual Studio Dev Essentials, zobaczysz również kategorię zatytułowaną promowanie, które mogą obejmować wybrane korzyści z innych trzech kategorii.
+## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[Korzysta](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+Narzędzia i usługi dołączone do subskrypcji są wyświetlane jako "kafelki" na stronie korzyści.  Wszystkie korzyści nie są dostępne we wszystkich subskrypcjach. Kafelki są pogrupowane w trzy kategorie:  Narzędzia, profesjonalne programowanie i pomoc techniczna.  
 
 ### <a name="tools"></a>Narzędzia
 Kategoria Tools to miejsce, w którym znajdziesz podstawowe narzędzia programistyczne, takie jak środowisko IDE programu Visual Studio, usługa Azure DevOps, a także narzędzia udostępniane przez naszych partnerów.  Zobaczysz również usługi, takie jak Azure i Visual Studio App Center.
@@ -33,15 +33,15 @@ Ta kategoria zawiera korzyści, takie jak szkolenia online od firmy Microsoft i 
 ### <a name="support"></a>Pomoc techniczna
 Masz pytanie dotyczące platformy Azure?  Uzyskaj pomoc od społeczności platformy Azure za pośrednictwem forów lub Skorzystaj z rozmowy doradczej platformy Azure (wersja zapoznawcza).  Usługa czatu Concierge jest dostępna, aby pomóc w znalezieniu dokumentacji technicznej i informacji o produkcie oraz pomóc w zapytaniach dotyczących subskrypcji.  Wybór subskrypcji obejmuje również pomoc techniczną opartą na zdarzeniach, która pomaga rozwiązywać problemy z szeroką gamę produktów firmy Microsoft działających w środowiskach deweloperskich i testowych.
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[Pliki do pobrania](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmc_idomsftdocs"></a>[Pliki do pobrania](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 W zależności od posiadanej subskrypcji lub programu masz dostęp do pobierania oprogramowania z aktualizacji i poprawek do obszernej biblioteki bieżących produktów, a także starszych wersji, dzięki czemu można testować aplikacje w wielu różnych scenariuszach.
 
 Aby ułatwić subskrybentom z wieloma subskrypcjami, które są skojarzone z jednym kontem, podczas odwiedzania strony pliki do pobrania zostaną wyświetlone pliki do pobrania o najwyższej posiadanej subskrypcji.  Dzięki temu możesz zobaczyć wszystkie pliki do pobrania niezależnie od używanej subskrypcji.
 
-## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmcidomsftdocs"></a>[Klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmc_idomsftdocs"></a>[Klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 Odwiedź stronę klucze produktu, aby uzyskać klucze umożliwiające Instalowanie i aktywowanie produktów oraz sprawdzić, jakie klucze już zażądały.  Można nawet wyeksportować listę wszystkich kluczy do zabezpieczenia.
 
-## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Opłaty](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmc_idomsftdocs"></a>[Opłaty](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 Na stronie subskrypcje można sprawdzić, które subskrypcje są posiadane, przełączać się między subskrypcjami, odnawiać je i aktywować nowe subskrypcje. Możesz również skojarzyć subskrypcje, do których masz dostęp, korzystając z konta Microsoft, które jest już skojarzone z istniejącym środowiskiem IDE programu Visual Studio, platformą Azure DevOps lub zasobami platformy Azure.
 
 ## <a name="support"></a>Pomoc techniczna

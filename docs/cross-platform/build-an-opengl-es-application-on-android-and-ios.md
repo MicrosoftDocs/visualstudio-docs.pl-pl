@@ -1,7 +1,7 @@
 ---
 title: Tworzenie aplikacji OpenGL ES w systemach Android i iOS | Microsoft Docs
 ms.custom: ''
-ms.date: 05/16/2019
+ms.date: 09/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923907"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079275"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Tworzenie aplikacji OpenGL ES w systemach Android i iOS
 
@@ -25,17 +25,21 @@ Możesz tworzyć rozwiązania i projekty programu Visual Studio dla aplikacji sy
 
 ## <a name="requirements"></a>Wymagania
 
-Przed utworzeniem aplikacji OpenGL ES dla systemów iOS i Android upewnij się, że zostały spełnione wszystkie wymagania systemowe. Jeśli jeszcze tego nie zrobiono, zainstaluj Programowanie aplikacji C++ mobilnych przy użyciu obciążenia w Instalator programu Visual Studio. Aby skompilować system iOS, Dołącz opcjonalne C++ narzędzia programistyczne dla systemu iOS. Aby skompilować system Android, zainstaluj narzędzia C++ deweloperskie dla systemu Android i wymagane narzędzia innych firm: Android NDK, Apache Ant, Google Emulator systemu Android i Intel Hardware Accelerated Execution Manager. Następnie skonfiguruj procesor Intel HAXM i Emulator systemu Android do uruchamiania w systemie. Aby uzyskać więcej informacji i uzyskać szczegółowe instrukcje, zobacz [Instalowanie wizualizacji C++ na potrzeby tworzenia aplikacji mobilnych na wiele platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Aby skompilować i przetestować aplikację dla systemu iOS, musisz mieć komputer Mac, a następnie skonfigurować go zgodnie z instrukcjami instalacji. Aby uzyskać więcej informacji na temat sposobu konfigurowania programu do tworzenia aplikacji dla systemu iOS, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
+Przed utworzeniem aplikacji OpenGL ES dla systemów iOS i Android upewnij się, że zostały spełnione wszystkie wymagania systemowe. Jeśli jeszcze tego nie zrobiono, zainstaluj Programowanie aplikacji C++ mobilnych przy użyciu obciążenia w Instalator programu Visual Studio. Aby skompilować system iOS, Dołącz opcjonalne C++ narzędzia programistyczne dla systemu iOS. Aby skompilować system Android, zainstaluj narzędzia C++ deweloperskie dla systemu Android i wymagane narzędzia innych firm: Systemy Android NDK, Apache Ant i Google Emulator systemu Android. Aby zapewnić lepszą wydajność emulatora na platformach firmy Intel, zalecamy także zainstalowanie platformy Intel Hardware Accelerated Execution Manager (HAXM). Następnie skonfiguruj procesor Intel HAXM i Emulator systemu Android do uruchamiania w systemie. Aby uzyskać więcej informacji i uzyskać szczegółowe instrukcje, zobacz [Instalowanie wizualizacji C++ na potrzeby tworzenia aplikacji mobilnych na wiele platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
+
+Aby skompilować i przetestować aplikację dla systemu iOS, musisz mieć komputer Mac, a następnie skonfigurować go zgodnie z instrukcjami instalacji. Aby uzyskać więcej informacji na temat sposobu konfigurowania programu do tworzenia aplikacji dla systemu iOS, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Utwórz nowy projekt aplikacji OpenGL
 
-W tym samouczku należy najpierw utworzyć nowy projekt aplikacji OpenGL ES, a następnie skompilować i uruchomić aplikację domyślną w emulatorze programu Visual Studio dla systemu Android. Następnie utworzysz aplikację dla systemu iOS i uruchomisz aplikację na urządzeniu z systemem iOS.
+W tym samouczku najpierw utworzysz nowy projekt aplikacji OpenGL ES. a następnie Skompiluj i uruchom aplikację domyślną w emulatorze programu Visual Studio dla systemu Android. Następnie utworzysz aplikację dla systemu iOS i uruchomisz aplikację na urządzeniu z systemem iOS.
 
-1. W programie Visual Studio, wybierz **pliku** > **New** > **projektu**.
+::: moniker range="vs-2017"
 
-1. W oknie dialogowym **Nowy projekt** w obszarze **Szablony**wybierz pozycję **Visual C++**   > cross platform, a następnie wybierz szablon **aplikacja opengls (Android, iOS)** .
+1. W programie Visual Studio wybierz pozycję **plik** > **Nowy** > **projekt**.
 
-1. Nadaj aplikacji nazwę `MyOpenGLESApp`, na przykład, a następnie wybierz **przycisk OK**.
+1. W oknie dialogowym **Nowy projekt** w obszarze **Szablony**wybierz pozycję **Visual C++**  > cross platform, a następnie wybierz szablon **aplikacja opengls (Android, iOS)** .
+
+1. Nadaj aplikacji nazwę, na przykład *MyOpenGLESApp*, a następnie wybierz przycisk **OK**.
 
    ![Nowy projekt aplikacji OpenGL](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
@@ -43,7 +47,23 @@ W tym samouczku należy najpierw utworzyć nowy projekt aplikacji OpenGL ES, a n
 
    ![MyOpenGLESApp w Eksplorator rozwiązań](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
-   Nowe rozwiązanie aplikacji OpenGL ES zawiera trzy projekty biblioteki i dwa projekty aplikacji. Folder biblioteki zawiera współużytkowany projekt kodu i dwa projekty specyficzne dla platformy, które odwołują się do udostępnionego kodu:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. W programie Visual Studio wybierz pozycję **plik** > **Nowy** > **projekt**.
+
+1. W oknie dialogowym **Utwórz nowy projekt** wybierz szablon **aplikacja opengls (Android, iOS)** , a następnie wybierz przycisk **dalej**.
+
+1. W oknie dialogowym **Konfigurowanie nowego projektu** wprowadź nazwę, taką jak *MyOpenGLESApp* w polu **Nazwa projektu**, a następnie wybierz pozycję **Utwórz**.
+
+   Program Visual Studio tworzy nowe rozwiązanie i otwiera Eksplorator rozwiązań.
+
+   ![MyOpenGLESApp w Eksplorator rozwiązań](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+
+::: moniker-end
+
+Nowe rozwiązanie aplikacji OpenGL ES zawiera trzy projekty biblioteki i dwa projekty aplikacji. Folder biblioteki zawiera współużytkowany projekt kodu i dwa projekty specyficzne dla platformy, które odwołują się do udostępnionego kodu:
 
 - `MyOpenGLESApp.Android.NativeActivity`zawiera kod odwołań i przyklejania, który implementuje aplikację jako natywną aktywność w systemie Android. Punkty wejścia z kodu łączenia są zaimplementowane w *Main. cpp*, który obejmuje wspólny kod współużytkowany w `MyOpenGLESApp.Shared`. Wstępnie skompilowane nagłówki znajdują się w pliku *PCH. h*. Ten projekt aplikacji natywnej aktywności jest kompilowany do pliku biblioteki udostępnionej ( *. so*), który jest wybierany przez `MyOpenGLESApp.Android.Packaging` projekt.
 
@@ -113,7 +133,7 @@ Aby wdrożyć aplikację systemu iOS na urządzeniu z systemem iOS, należy rów
 
 1. Utwórz nowy projekt **aplikacji pojedynczego widoku** Xcode. Wypełnij pola wymagane podczas tworzenia projektu. Wartości mogą być dowolne, ponieważ projekt jest używany tylko do tworzenia profilu aprowizacji, który jest używany później do podpisywania kompilacji aplikacji.
 
-1. Dodaj identyfikator firmy Apple zarejestrowany na koncie [programu Apple Developer](https://developer.apple.com/programs/) , aby Xcode. Identyfikator Apple ID jest używany jako tożsamość podpisująca do podpisywania aplikacji. Aby dodać swoją tożsamość podpisującą w programie Xcode, otwórz menu **Xcode** i wybierz polecenie Preferences ( **Preferencje**). Wybierz pozycję **konta** , a następnie kliknij przycisk Dodaj (+), aby dodać identyfikator Apple ID. Aby uzyskać szczegółowe instrukcje, zobacz [Dodawanie konta Apple ID](https://help.apple.com/xcode/mac/current/#/devaf282080a).
+1. Dodaj identyfikator firmy Apple zarejestrowany na koncie [programu Apple Developer](https://developer.apple.com/programs/) , aby Xcode. Identyfikator Apple ID jest używany jako tożsamość podpisująca do podpisywania aplikacji. Aby dodać swoją tożsamość podpisującą w programie Xcode, otwórz menu **Xcode** i wybierz polecenie **Preferences (Preferencje**). Wybierz pozycję **konta** , a następnie kliknij przycisk Dodaj (+), aby dodać identyfikator Apple ID. Aby uzyskać szczegółowe instrukcje, zobacz [Dodawanie konta Apple ID](https://help.apple.com/xcode/mac/current/#/devaf282080a).
 
 1. W ustawieniach "ogólne" projektu Xcode Zmień wartość **identyfikatora pakietu** na `com.<NameOfVSProject>`, gdzie `<NameOfVSProject>` jest taka sama jak nazwa projektu rozwiązania Visual Studio, który został utworzony. Na przykład, jeśli utworzono projekt o nazwie `MyOpenGLESApp` w programie Visual Studio, ustaw **Identyfikator pakietu** na. `com.MyOpenGLESApp`
 
@@ -121,7 +141,7 @@ Aby wdrożyć aplikację systemu iOS na urządzeniu z systemem iOS, należy rów
 
 1. Aby włączyć automatyczne podpisywanie, sprawdź. Automatyczne zarządzanie podpisywaniem * *.
 
-   ![Xcode automatyczne] podpisywanie (../cross-platform/media/cppmdd-opengles-iosxcodesign.png "CPPMDD_OpenGLES_iOSXcodeSign")
+   ![Xcode automatyczne podpisywanie](../cross-platform/media/cppmdd-opengles-iosxcodesign.png "CPPMDD_OpenGLES_iOSXcodeSign")
 
 1. Wybierz nazwę zespołu identyfikatora Apple ID, który został dodany jako **zespół**programistyczny.
 
@@ -139,7 +159,7 @@ Aby wdrożyć aplikację systemu iOS na urządzeniu z systemem iOS, należy rów
 
    ![Ustaw platformę rozwiązania na arm64](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "CPPMDD_OpenGLES_SolutionPlatARM64")
 
-1. W Eksplorator rozwiązań otwórz menu skrótów dla projektu MyOpenGLESApp. iOS. Application i wybierz polecenie Zwolnij **projekt** , aby zwolnić projekt.
+1. W Eksplorator rozwiązań otwórz menu skrótów dla projektu MyOpenGLESApp. iOS. Application i wybierz polecenie **Zwolnij projekt** , aby zwolnić projekt.
 
 1. Ponownie otwórz menu skrótów dla niezaładowanego projektu MyOpenGLESApp. iOS. Application i wybierz polecenie **Edytuj projekt. PBXPROJ** , aby edytować plik projektu. W pliku Znajdź `buildSettings` atrybut i Dodaj `DEVELOPMENT_TEAM` go przy użyciu identyfikatora zespołu firmy Apple. `project.pbxproj` Na poniższym zrzucie ekranu przedstawiono przykładową wartość `123456ABC` dla identyfikatora zespołu firmy Apple. Wartość identyfikatora zespołu firmy Apple można znaleźć z Xcode. Przejdź do pozycji **Ustawienia kompilacji** i umieść kursor nad nazwą zespołu deweloperów, aby wyświetlić etykietkę narzędzia. W etykietce narzędzia zostanie wyświetlony identyfikator Twojego zespołu.
 

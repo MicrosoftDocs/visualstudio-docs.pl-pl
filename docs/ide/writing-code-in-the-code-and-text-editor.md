@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531666"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095280"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 
@@ -56,15 +56,15 @@ Możesz znaleźć wiele zaawansowanych funkcji w **Edytuj** > **zaawansowane** m
 |Formatuj zaznaczenie|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe, aby rozdzielić linie w zaznaczeniu.|
 |Zmień spacje na tabulatory w zaznaczonych wierszach|Zmienia spacje wiodące na tabulatory, gdzie jest to odpowiednie.|
 |Zmień tabulatory na spacje w zaznaczonych wierszach|Zmienia tabulatory wiodące na spacje. Jeśli chcesz przekonwertować wszystkie spacje w pliku na tabulacje (lub wszystkie tabulacje na spacje), możesz użyć `Edit.ConvertSpacesToTabs` i `Edit.ConvertTabsToSpaces` poleceń. Te polecenia nie są wyświetlane w menu programu Visual Studio, ale możesz je wywołać **szybki dostęp** okna lub okna poleceń.|
-|Zmień litery na wielkie|Zmienia wszystkie znaki w zaznaczeniu na wielkie litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na wielkie litery. Skrót: **CTRL**+**Shift**+**U**.|
-|Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na małe litery. Skrót: **CTRL**+**U**.|
-|Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrót: **ALT**+**Strzałka w górę**.|
-|Przesuń wybrane wiersze w|Przenosi wybrany wiersz w dół o jeden wiersz. Skrót: **ALT**+**strzałkę w dół**.|
-|Usuń biały znak poziome|Usuwa tabulatory lub spacje na końcu bieżącego wiersza. Skrót: **Ctrl**+**K**, **Ctrl**+ **\\**|
+|Zmień litery na wielkie|Zmienia wszystkie znaki w zaznaczeniu na wielkie litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na wielkie litery. Skrótu **Ctrl**+ShiftU+.|
+|Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na małe litery. SkrótuCtrl+**U**.|
+|Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. SkrótuAlt+**Strzałka w górę**.|
+|Przesuń wybrane wiersze w|Przenosi wybrany wiersz w dół o jeden wiersz. SkrótuAlt+**Strzałka w dół**.|
+|Usuń biały znak poziome|Usuwa tabulatory lub spacje na końcu bieżącego wiersza. Skrótu **Ctrl**+**K**, **Ctrl**+ **\\**|
 |Wyświetl białe znaki|Wyświetla spacje jako kropki podniesione i tabulatory jako strzałki. Koniec pliku jest wyświetlany jako znacznik prostokątny. Jeśli **narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >  **Zawijanie** > **Pokaż widoczne glify dla zawijania** jest zaznaczone, ten glif jest również wyświetlany.|
 |Zawijanie wyrazów|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Można włączać zawijanie wyrazów i Włącz w **Edytor tekstu wszystkie języki** ustawień (**narzędzia** > **opcje** > **Edytor tekstu**   >  **Wszystkie języki**).|
-|Dodaj komentarz do zaznaczenia|Dodaje znaki komentarza do bieżącego wiersza lub zaznaczenia. Skrót: **Ctrl**+**K**, **Ctrl**+**C**|
-|Usuń komentarz z zaznaczenia|Usuwa znaki komentarza z bieżącego wiersza lub zaznaczenia. Skrót: **CTRL**+**K**, **Ctrl**+**U**|
+|Dodaj komentarz do zaznaczenia|Dodaje znaki komentarza do bieżącego wiersza lub zaznaczenia. Skrótu **Ctrl** **K,** Ctrl C++|
+|Usuń komentarz z zaznaczenia|Usuwa znaki komentarza z bieżącego wiersza lub zaznaczenia. Skrótu **Ctrl** **K,** Ctrl U++|
 |Zwiększ wcięcie wiersza|Dodaje znak tabulatora (lub równoważne spacje) do wybranych wierszy lub w bieżącym wierszu.|
 |Zmniejsz wcięcie wiersza|Usuwa znak tabulatora (lub równoważne spacje) z wybranych wierszy lub w bieżącym wierszu.|
 |Wybierz Tag|W dokumencie, który zawiera znaczniki (na przykład XML lub HTML) zaznacza znacznik.|
@@ -76,7 +76,7 @@ Można przenieść w edytorze kodu w kilku różnych sposobów, łącznie z poru
 
 ## <a name="find-references-in-your-code-base"></a>Znajdowanie odwołań w kodzie
 
-Aby dowiedzieć się, gdzie elementy określonego kodu do których istnieją odwołania w całej bazie kodu, można użyć **Znajdź wszystkie odwołania** polecenie i naciśnij klawisz **Shift**+**F12**. Ponadto po kliknięciu typu lub elementu członkowskiego, **wyróżnianie odwołań** funkcja automatycznie wyróżnia wszystkie odwołania do tego typu lub elementu członkowskiego. Aby uzyskać więcej informacji, zobacz [Znajdowanie odwołań w kodzie](finding-references.md).
+Aby znaleźć, gdzie poszczególne elementy kodu są przywoływane w bazie kodu, możesz użyć polecenia **Znajdź wszystkie odwołania** lub naciśnij klawisz **SHIFT**+**F12**. Ponadto po kliknięciu typu lub elementu członkowskiego, **wyróżnianie odwołań** funkcja automatycznie wyróżnia wszystkie odwołania do tego typu lub elementu członkowskiego. Aby uzyskać więcej informacji, zobacz [Znajdowanie odwołań w kodzie](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Dopasowywanie edytora
 
@@ -90,6 +90,6 @@ Dla opcji edytora specyficznych dla języka JavaScript, zobacz [opcji edytora j�
 
 - [Edytor źródła (program Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
-- [Wprowadzenie do języka C++ w programie Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
+- [Wprowadzenie do języka C++ w programie Visual Studio](/cpp/get-started/tutorial-console-cpp)
 - [Wprowadzenie do języka C# i platformy ASP.NET w programie Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 - [Rozpoczynanie pracy z językiem Python w programie Visual Studio](../ide/quickstart-python.md)

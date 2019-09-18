@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/10/2019
+ms.date: 09/16/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 79d16498b146a09f22d542423d4b691a2573e80d
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: f489d453e75031ddb9bd26e59cd4af182301c159
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887995"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062388"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,8 +29,9 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.2.5 | Wydanie | 10 września 2019 | 16.2.29306.81 |
-| 16.0.8 | Wydanie | 10 września 2019 | 16.0.28803.584 |
+| 16.3.0 | Wersja zapoznawcza 4 | 16 września 2019 | 16.3.29311.281 |
+| 16.2.5 | Wydanie | 10 września 2019 r. | 16.2.29306.81 |
+| 16.0.8 | Wydanie | 10 września 2019 r. | 16.0.28803.584 |
 | 16.2.4 | Wydanie | 5 września 2019 r. | 16.2.29230.47 |
 | 16.3.0 | Wersja zapoznawcza 3 | 4 września 2019 | 16.3.29230.61 |
 | 16.2.3 | Wydanie | 20 sierpnia 2019 r. | 16.2.29215.179 |
@@ -95,8 +96,8 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.16 | Wydanie | 10 września 2019 | 15.9.28307.858 |
-| 15.0.27 | Wydanie | 10 września 2019 | 15.0.26228.98 |
+| 15.9.16 | Wydanie | 10 września 2019 r. | 15.9.28307.858 |
+| 15.0.27 | Wydanie | 10 września 2019 r. | 15.0.26228.98 |
 | 15.9.15 | Wydanie | 13 sierpnia 2019 r. | 15.9.28307.812 |
 | 15.0.26 | Wydanie | 13 sierpnia 2019 r. | 15.0.26228.96 |
 | 15.9.14 | Wydanie | 9 lipca 2019 r. | 15.9.28307.770 |

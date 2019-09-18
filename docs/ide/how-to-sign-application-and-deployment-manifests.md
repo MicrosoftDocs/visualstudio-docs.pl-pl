@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f9c0f4913c80e1cf2f2fee24dbed5ad910ca75
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887794"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079367"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji
 
@@ -71,7 +71,7 @@ Aby uzyskać informacje na temat tworzenia plików kluczy [, zobacz How to: Utw�
 4. Wprowadź hasło, aby uzyskać dostęp do pliku klucza, a następnie wybierz klawisz **Enter**.
 
 > [!NOTE]
-> Plik *PFX* nie może zawierać informacji o łańcuchu certyfikatów. Jeśli tak się dzieje, wystąpi następujący błąd importowania: **Nie można znaleźć certyfikatu i klucza prywatnego do odszyfrowania**. Aby usunąć informacje o łańcuchu certyfikatów, można użyć *certmgr. msc* i [wyłączyć opcję](/previous-versions/aa730868(v=vs.80)?redirectedfrom=MSDN#rsvssign_topic3) **uwzględniania wszystkich certyfikatów** podczas eksportowania pliku *. pfx.
+> Plik *PFX* nie może zawierać informacji o łańcuchu certyfikatów. Jeśli tak się dzieje, wystąpi następujący błąd importowania: **Nie można znaleźć certyfikatu i klucza prywatnego do odszyfrowania**. Aby usunąć informacje o łańcuchu certyfikatów, można użyć *certmgr. msc* i [wyłączyć opcję](/previous-versions/aa730868(v=vs.80)) **uwzględniania wszystkich certyfikatów** podczas eksportowania pliku *. pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Podpisywanie przy użyciu certyfikatu testowego
 

@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5502101bb2e199830b68c0fe0b929608a427ed
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 744fd81fe8121936def42277b442d8e54ea88786
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987944"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062870"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Napisz kod dla programu obsługi zdarzeń przycisku Pokaż obraz
 
@@ -44,7 +44,7 @@ Funkcja IntelliSense próbuje określić, co chcesz zrobić dalej, i automatyczn
     ![Technologia IntelliSense z kodem&#35; Visual C](../ide/media/express_ifintellisense.png)
 
     > [!NOTE]
-    > Kod może nie wyświetlać programów obsługi zdarzeń w przypadku liter "camelCase". 
+    > Kod może nie wyświetlać programów obsługi zdarzeń w przypadku liter "camelCase".
 
 1. W oknie **IntelliSense** należy zaznaczyć słowo `if`. (Jeśli nie, wprowadź małą literę `f`i.) Zwróć uwagę, jak pole *etykietki narzędzia* obok okna **IntelliSense** pojawia się z opisem, **fragment kodu dla instrukcji if**. (W Visual Basic, etykietka narzędzia wskazuje również, że jest to fragment, ale nieco inny wyraz). Chcesz użyć tego fragmentu kodu, więc wybierz klawisz **Tab** , aby wstawić `if` do kodu. Następnie ponownie wybierz klawisz **Tab** , aby użyć `if` fragmentu kodu. (W przypadku wybrania w innym miejscu okna funkcji **IntelliSense** zniknęła spacja nad `i` i ponownie wpisz ją, a okno **IntelliSense** zostanie otwarte).
 

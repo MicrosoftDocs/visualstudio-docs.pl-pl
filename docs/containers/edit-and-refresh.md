@@ -1,20 +1,20 @@
 ---
 title: Debugowanie aplikacji w lokalnym kontenerze platformy Docker | Microsoft Docs
 description: Dowiedz się, jak zmodyfikować aplikację uruchomioną w lokalnym kontenerze platformy Docker, odświeżyć kontener poprzez edycję i odświeżanie, a następnie ustawić punkty przerwania debugowania.
+ms.author: ghogen
 author: ghogen
 manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
-ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: d7a7fa83fe0976ee1e08c6c614a11f783178a285
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5af092bbcb987f45b10121f37d40eaa5466c3da5
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179857"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062175"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 
@@ -38,7 +38,7 @@ Aby debugować aplikacje w lokalnym kontenerze platformy Docker, należy zainsta
 
 ::: moniker-end
 
-Aby uruchomić kontenery platformy Docker lokalnie, musisz mieć lokalnego klienta platformy Docker. Możesz użyć przybornika [platformy Docker](https://www.docker.com/products/docker-toolbox), który wymaga wyłączenia funkcji Hyper-V. Można również użyć [Docker for Windows](https://www.docker.com/get-docker), który używa funkcji Hyper-V i wymaga systemu Windows 10. 
+Aby uruchomić kontenery platformy Docker lokalnie, musisz mieć lokalnego klienta platformy Docker. Możesz użyć [przybornika platformy Docker](https://www.docker.com/products/docker-toolbox), który wymaga wyłączenia funkcji Hyper-V. Można również użyć [Docker for Windows](https://www.docker.com/get-docker), który używa funkcji Hyper-V i wymaga systemu Windows 10. 
 
 Kontenery platformy Docker są dostępne dla projektów .NET Framework i .NET Core. Przyjrzyjmy się dwóm przykładom. Najpierw Spójrzmy na aplikację internetową platformy .NET Core. Następnie Przyjrzyjmy się .NET Framework aplikacji konsolowej.
 
@@ -48,14 +48,14 @@ Kontenery platformy Docker są dostępne dla projektów .NET Framework i .NET Co
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-[! UWZGLĘDNIj [Create-aspnet5-App-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)
+[!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
 ### <a name="edit-your-code-and-refresh"></a>Edytuj swój kod i Odśwież
 
 Aby szybko wykonać iterację zmian, możesz uruchomić aplikację w kontenerze. Następnie Kontynuuj, aby wprowadzić zmiany, wyświetlając je tak jak IIS Express.
 
-1. Ustaw **konfigurację rozwiązania** na **Debuguj**. Następnie naciśnij kombinację klawiszy CTRL + F5, aby skompilować obraz platformy Docker i uruchomić go lokalnie.
+1. Ustaw **konfigurację rozwiązania** na **Debuguj**. Następnie naciśnij klawisz **Ctrl**+**F5** , aby skompilować obraz platformy Docker i uruchomić go lokalnie.
 
     Po skompilowaniu i uruchomieniu obrazu kontenera w kontenerze platformy Docker program Visual Studio uruchamia aplikację sieci Web w domyślnej przeglądarce.
 
