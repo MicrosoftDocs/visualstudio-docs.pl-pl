@@ -1,6 +1,6 @@
 ---
 title: Pisanie kodu i zarządzanie nim
-description: Dowiedz się, jak używać edytora kodu i innych narzędzi w programie Visual Studio do zapisu, Nawiguj, zarządzanie i ulepszaj swój kod.
+description: Dowiedz się, jak używać edytora kodu i innych narzędzi w programie Visual Studio do pisania, nawigowania, zarządzania i ulepszania kodu.
 ms.date: 01/01/2018
 layout: LandingPage
 ms.topic: landing-page
@@ -8,16 +8,16 @@ author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: d18ca688c1eac02fc2b24c3f8cb0f9551e4939ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49c8ac683c83753b75c20e15ca9aa12845135905
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430305"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095229"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Pisanie kodu i zarządzanie nim przy użyciu programu Visual Studio
 
-Dowiedz się, jak używać edytora kodu i innych narzędzi w programie Visual Studio do zapisu, Nawiguj, zarządzanie i ulepszaj swój kod.
+Dowiedz się, jak używać edytora kodu i innych narzędzi w programie Visual Studio do pisania, nawigowania, zarządzania i ulepszania kodu.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -69,7 +69,7 @@ Dowiedz się, jak używać edytora kodu i innych narzędzi w programie Visual St
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Przechodzenie do kodu</h3>
+                        <h3>Nawiguj po kodzie</h3>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ Dowiedz się, jak używać edytora kodu i innych narzędzi w programie Visual St
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Używanie programu Visual Studio bez projektów ani rozwiązań</h3>
+                        <h3>Korzystanie z programu Visual Studio bez projektów i rozwiązań</h3>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ Dowiedz się, jak używać edytora kodu i innych narzędzi w programie Visual St
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Zarządzaj kodem przy użyciu narzędzia Git w programie Visual Studio</h3>
+                        <h3>Zarządzanie kodem przy użyciu narzędzia Git w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ Utwórz swoją pierwszą aplikację w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio</h3>
+                        <h3>Wprowadzenie do C# i ASP.NET Core w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@ Utwórz swoją pierwszą aplikację w programie Visual Studio.
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+        <a href="/cpp/get-started/tutorial-console-cpp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -166,7 +166,7 @@ Utwórz swoją pierwszą aplikację w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji konsoli języka C++ w programie Visual Studio</h3>
+                        <h3>Tworzenie aplikacji C++ konsolowej w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -184,7 +184,7 @@ Utwórz swoją pierwszą aplikację w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Rozpoczynanie pracy z językiem Python w programie Visual Studio</h3>
+                        <h3>Wprowadzenie do języka Python w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -238,7 +238,7 @@ Utwórz swoją pierwszą aplikację w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Rozpocznij pracę z narzędziami języka R dla programu Visual Studio</h3>
+                        <h3>Wprowadzenie do R Tools for Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -256,7 +256,7 @@ Utwórz swoją pierwszą aplikację w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji platformy uniwersalnej systemu Windows w języku C#</h3>
+                        <h3>Tworzenie aplikacji platformy UWP w programieC#</h3>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ Utwórz swoją pierwszą aplikację w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji konsolowej .NET Core w języku C#</h3>
+                        <h3>Tworzenie aplikacji konsolowej platformy .NET Core w programieC#</h3>
                     </div>
                 </div>
             </div>
@@ -292,7 +292,7 @@ Utwórz swoją pierwszą aplikację w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Utwórz aplikację internetową platformy Azure w programie Visual Studio</h3>
+                        <h3>Tworzenie aplikacji sieci Web platformy Azure w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
