@@ -11,11 +11,11 @@
           href: roslyn-analyzers-overview.md
         - name: Instalacja
           href: install-roslyn-analyzers.md
-        - name: Konfigurowanie
+        - name: Konfiguracja
           href: use-roslyn-analyzers.md
         - name: Włączanie pełnej analizy rozwiązania
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
-        - name: Często zadawane pytania
+        - name: Najczęściej zadawane pytania
           href: analyzers-faq.md
     - name: Analiza w starszej wersji
       items:
@@ -28,7 +28,7 @@
           href: fxcop-analyzers.yml
         - name: Ręczne przeprowadzanie analizy w starszej wersji
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: Konfigurowanie
+        - name: Konfiguracja
           items:
             - name: Konfigurowanie analizy w starszej wersji
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -119,13 +119,13 @@
           href: fxcop-analyzers.yml
         - name: Instalacja
           href: install-fxcop-analyzers.md
-        - name: Konfigurowanie
+        - name: Konfiguracja
           items:
             - name: Omówienie
               href: configure-fxcop-analyzers.md
             - name: Opcje EditorConfig
               href: fxcop-analyzer-options.md
-        - name: Często zadawane pytania
+        - name: Najczęściej zadawane pytania
           href: fxcop-analyzers-faq.md
     - name: Migrowanie z analizy w starszej wersji do analizatorów FxCop
       items:
@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: 'CA1065: Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach'
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: 'CA1068: Parametry CancellationToken muszą występować na końcu'
+                  href: ca1068.md
                 - name: 'CA2210: Zestawy powinny mieć prawidłowe silne nazwy'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: Ostrzeżenia dotyczące dokumentacji
+              items:
+                - name: Omówienie
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: 'CA1200: Unikaj używania tagów cref z prefiksem'
+                  href: ca1200.md
             - name: Ostrzeżenia dotyczące globalizacji
               items:
                 - name: Omówienie
@@ -1030,7 +1039,7 @@
           href: c26812.md
         - name: C26814
           href: c26814.md
-    - name: Ostrzeżenia C/C++
+    - name: ostrzeżenia C/C++
       items:
         - name: Omówienie
           displayName: C++ warnings
