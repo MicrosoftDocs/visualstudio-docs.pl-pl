@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 930512d762a05a91ab233566b76c6591ab2ea6d4
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180461"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095372"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Samouczek: Tworzenie pierwszej aplikacji platforma uniwersalna systemu Windows w programie Visual Studio za pomocą języków XAML i C&#35;
 
@@ -46,9 +46,9 @@ Najpierw utwórz projekt platforma uniwersalna systemu Windows. Typ projektu jes
    ![Szablon uniwersalnego projektu systemu Windows w oknie dialogowym Nowy projekt w programie Visual Studio IDE](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu projektu **pusta aplikacja (uniwersalna systemu Windows)** , kliknij link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** .<br><br>![Kliknij link Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Uruchamia Instalatora programu Visual Studio. Wybierz **platforma uniwersalna systemu Windows** obciążenie programowaniem, a następnie wybierz polecenie **Modyfikuj**.<br><br>![platforma uniwersalna systemu Windows obciążenie programowaniem w Instalator programu Visual Studio](media/uwp-dev-workload.png)
+   > Jeśli nie widzisz szablonu projektu **pusta aplikacja (uniwersalna systemu Windows)** , kliknij link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** .<br><br>![Kliknij link Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Uruchamia Instalatora programu Visual Studio. Wybierz **platforma uniwersalna systemu Windows obciążenie programowaniem** , a następnie wybierz polecenie **Modyfikuj**.<br><br>![platforma uniwersalna systemu Windows obciążenie programowaniem w Instalator programu Visual Studio](media/uwp-dev-workload.png)
 
-1. Zaakceptuj domyślną **wersję** docelową i ustawienia **minimalnej wersji** w oknie dialogowym **Nowy projekt platforma uniwersalna systemu Windows** .
+1. Zaakceptuj domyślną **wersję docelową** i ustawienia **minimalnej wersji** w oknie dialogowym **Nowy projekt platforma uniwersalna systemu Windows** .
 
    ![Zaakceptuj domyślną wersję docelową i ustawienia minimalnej wersji w oknie dialogowym Nowy projekt platforma uniwersalna systemu Windows](media/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
@@ -61,9 +61,9 @@ Najpierw utwórz projekt platforma uniwersalna systemu Windows. Typ projektu jes
    ![Zrzut ekranu przedstawiający ekran Tworzenie nowego projektu](media/vs-2019/uwp-create-new-project.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu projektu **pusta aplikacja (uniwersalna systemu Windows)** , kliknij link **Zainstaluj więcej narzędzi i funkcji** .<br><br>![Kliknij link zainstaluj więcej narzędzi i funkcji](media/vs-2019/uwp-not-finding.png)<br><br>Uruchamia Instalatora programu Visual Studio. Wybierz **platforma uniwersalna systemu Windows** obciążenie programowaniem, a następnie wybierz polecenie **Modyfikuj**.<br><br>![platforma uniwersalna systemu Windows obciążenie programowaniem w Instalator programu Visual Studio](media/uwp-dev-workload.png)
+   > Jeśli nie widzisz szablonu projektu **pusta aplikacja (uniwersalna systemu Windows)** , kliknij link **Zainstaluj więcej narzędzi i funkcji** .<br><br>![Kliknij link zainstaluj więcej narzędzi i funkcji](media/vs-2019/uwp-not-finding.png)<br><br>Uruchamia Instalatora programu Visual Studio. Wybierz **platforma uniwersalna systemu Windows obciążenie programowaniem** , a następnie wybierz polecenie **Modyfikuj**.<br><br>![platforma uniwersalna systemu Windows obciążenie programowaniem w Instalator programu Visual Studio](media/uwp-dev-workload.png)
 
-1. Zaakceptuj domyślną **wersję** docelową i ustawienia **minimalnej wersji** w oknie dialogowym **Nowy projekt platforma uniwersalna systemu Windows** .
+1. Zaakceptuj domyślną **wersję docelową** i ustawienia **minimalnej wersji** w oknie dialogowym **Nowy projekt platforma uniwersalna systemu Windows** .
 
    ![Zaakceptuj domyślną wersję docelową i ustawienia minimalnej wersji w oknie dialogowym Nowy projekt platforma uniwersalna systemu Windows](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
@@ -178,3 +178,8 @@ Gratulujemy wykonanie kroków tego samouczka! Mamy nadzieję, że znasz kilka po
 
 > [!div class="nextstepaction"]
 > [Tworzenie interfejsu użytkownika](/windows/uwp/design/basics/xaml-basics-ui)
+
+## <a name="see-also"></a>Zobacz także
+
+- [PLATFORMY UWP — Omówienie](/windows/uwp/get-started/universal-application-platform-guide)
+- [Pobierz przykłady aplikacji platformy UWP](/windows/uwp/get-started/get-uwp-app-samples)

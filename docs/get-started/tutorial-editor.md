@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b6741b40925f5d9914152d396be4686d166bf222
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 0f83304daa0e86bb9d4f999262f827615923fe4d
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180204"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095354"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
@@ -36,7 +36,7 @@ W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe
 
 ::: moniker-end
 
-W tym artykule przyjęto założenie, że jesteś zaznajomiony z językiem programowania. Jeśli nie masz, zalecamy najpierw się jednej z programowania przewodników Szybki Start, takie jak tworzenie aplikacji sieci web i [Python](../ide/quickstart-python.md) lub [C#](../get-started/csharp/tutorial-aspnet-core.md), lub Utwórz aplikację konsoli przy użyciu [języka Visual Basic](../ide/quickstart-visual-basic-console.md) lub [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+W tym artykule przyjęto założenie, że jesteś zaznajomiony z językiem programowania. Jeśli nie masz, zalecamy najpierw się jednej z programowania przewodników Szybki Start, takie jak tworzenie aplikacji sieci web i [Python](../ide/quickstart-python.md) lub [C#](../get-started/csharp/tutorial-aspnet-core.md), lub Utwórz aplikację konsoli przy użyciu [języka Visual Basic](../ide/quickstart-visual-basic-console.md) lub [C++](/cpp/get-started/tutorial-console-cpp).
 
 ## <a name="create-a-new-code-file"></a>Utwórz nowy plik kodu
 

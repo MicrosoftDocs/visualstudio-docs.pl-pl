@@ -20,14 +20,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293705"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095358"
 ---
-# <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
+# <a name="install-visual-studio"></a>Instalacja programu Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -236,7 +236,7 @@ Aby uzyskać więcej informacji, zobacz stronę [Wybieranie lokalizacji instalac
 
 3. Wybierz typ projektu.
 
-   Na przykład, aby [skompilować C++ aplikację](../ide/getting-started-with-cpp-in-visual-studio.md), wybierz pozycję **zainstalowane**, rozwiń **pozycję C++Wizualizacja** , a następnie C++ wybierz typ projektu, który chcesz skompilować.
+   Na przykład, aby [skompilować C++ aplikację](/cpp/get-started/tutorial-console-cpp), wybierz pozycję **zainstalowane**, rozwiń **pozycję C++Wizualizacja** , a następnie C++ wybierz typ projektu, który chcesz skompilować.
 
    Aby [skompilować C# aplikację](../get-started/csharp/tutorial-console.md), wybierz pozycję **zainstalowane**, rozwiń **pozycję C#Wizualizacja** , a następnie C# wybierz typ projektu, który chcesz skompilować.
 
