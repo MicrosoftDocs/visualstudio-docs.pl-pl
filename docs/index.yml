@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 0853a20309869e5cde753685f20584bbd0a3e7dd
-  ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+  ms.openlocfilehash: f8d8ed358779471d68a460ae923df5f9d316c2b0
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 09/10/2019
-  ms.locfileid: "70864661"
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71128261"
 highlightedContent:
   items:
   - title: Instalacja i instalacja
@@ -138,7 +138,7 @@ additionalContent:
       url: test/improve-code-quality.md
     - title: Deploy
       summary: Udostępniaj swoje aplikacje i kod przy użyciu Web Deploy, InstallShield, NuGet, ciągłej integracji i nie tylko.
-      url: deployment/index.md
+      url: deployment/index.yml
     - title: Kontrola wersji
       summary: Udostępnianie kodu za pomocą technologii kontroli wersji, takich jak Git i TFVC.
       url: version-control/index.md
@@ -147,7 +147,7 @@ additionalContent:
       url: /azure/devops
     - title: Mierzenie wydajności
       summary: Zidentyfikuj wąskie gardła i zoptymalizować wydajność kodu za pomocą narzędzi diagnostycznych.
-      url: profiling/index.md
+      url: profiling/index.yml
     - title: Rozszerzanie
       summary: Dodaj swoje własne funkcje do programu Visual Studio IDE, aby poprawić komfort programowania.
       url: extensibility/index.md

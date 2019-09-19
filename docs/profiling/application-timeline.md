@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 97ed8dda2ea5d338bc7d60be845fafad6a30b47f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777591"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128288"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie zużycia zasobów i aktywności wątku interfejsu użytkownika (XAML)
 
@@ -123,8 +123,8 @@ Użyj **szczegóły osi czasu** narzędzi, aby sortowanie, filtrowanie i podaj a
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Blog zespołu programu WPF: Nowe narzędzie do analizy wydajności interfejsu użytkownika dla aplikacji WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [Blog zespołu WPF: Nowe narzędzie do analizy wydajności interfejsu użytkownika dla aplikacji WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
 - [Wydajność — najlepsze rozwiązania dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Optymalizowanie wydajności aplikacji WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
-- [Profilowanie w programie Visual Studio](../profiling/index.md)
+- [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

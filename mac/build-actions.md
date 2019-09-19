@@ -1,34 +1,50 @@
 ---
 title: Akcje kompilacji
-description: W tym artykule opisano różne akcje kompilacji, których można użyć dla projektów C#
+description: W tym artykule opisano różne akcje kompilacji, które mogą być używane C# w projektach
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 54e341b4e5961623f41963bb90c2e5d60b110cf4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691198"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128439"
 ---
 # <a name="build-actions"></a>Akcje kompilacji
 
-Wszystkie pliki w programie Visual Studio dla komputerów Mac projektu mają akcji kompilacji. Kontroluje, co się dzieje z pliku podczas kompilacji. To zachowanie można ustawić, klikając prawym przyciskiem myszy dowolny plik i przechodząc do **Build Action**, jak pokazano poniżej:
+Wszystkie pliki w projekcie Visual Studio dla komputerów Mac mają akcję kompilacji. Akcja kompilacji kontroluje, co się dzieje z plikiem podczas kompilacji. 
 
-![Wybieranie akcji kompilacji w kompilacji za pomocą Eksploratora rozwiązań](media/projects-and-solutions-image1.png)
+>[!NOTE]
+>Ten temat ma zastosowanie do Visual Studio dla komputerów Mac. W przypadku programu Visual Studio w systemie Windows Zapoznaj się z tematem [Build Actions](/visualstudio/ide/build-actions).
 
-Akcje niektóre typowe kompilacji dla projektów języka C#:
+## <a name="set-a-build-action"></a>Ustawianie akcji kompilacji
 
-* **Brak** — plik nie jest częścią kompilacji w jakikolwiek sposób — znajduje się w projekcie, aby mieć łatwy dostęp z poziomu środowiska IDE.
-* **Skompilować** — plik zostanie przekazany do kompilatora C# jako plik źródłowy.
-* **EmbeddedResource** — plik zostanie przekazany do kompilatora C# jako zasób do osadzenia w zestawie. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), z `System.Reflection` przestrzeni nazw, można odczytać pliku z zestawu.
-* **Zawartość** — dla projektów platformy ASP.NET, te pliki będą dołączane jako część lokacji podczas jej wdrażania. Projekty Xamarin.iOS i Xamarin.Mac zostaną one uwzględnione w zbiorze aplikacji.
+Aby ustawić akcję kompilacji dla pliku w Visual Studio dla komputerów Mac, można kliknąć prawym przyciskiem myszy dowolny plik i przejść do **akcji kompilacji**, jak pokazano poniżej:
 
-Użytkownik może wybrać więcej niż jeden plik w Eksploratorze rozwiązań, co pozwala ustawić akcji kompilacji do wielu plików jednocześnie.
+![Wybieranie akcji Kompiluj kompilację z Eksploratora rozwiązań](media/projects-and-solutions-image1.png)
 
-Ponadto istnieją akcje kompilacji dla konkretnych projektów. Projekty Xamarin.iOS mają **BundleResource** tworzenie akcji, która doda go jako część pakietu aplikacji. Informacje o akcjach określonej kompilacji platformy Xamarin.Android znajdują się w [proces kompilacji](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) przewodnik.
+Akcje kompilacji dla tego pliku zostaną wyświetlone w menu wysuwanym. 
+
+## <a name="build-action-values"></a>Wartości akcji kompilacji
+
+Niektóre typowe akcje kompilacji dla projektów, które można kompilować w Visual Studio dla komputerów Mac obejmują:
+
+|Akcja kompilacji | Typy projektów | Opis |
+|--|--|--|
+| **Opracowania** | Ile | Plik jest przesyłany do C# kompilatora jako plik źródłowy.|
+| **Zawartość** | .NET, Xamarin | W przypadku projektów ASP.NET te pliki są uwzględniane jako część lokacji podczas jej wdrażania. W przypadku projektów Xamarin. iOS i Xamarin. Mac zostaną one uwzględnione w zbiorze aplikacji.|
+| **Zasób osadzony** | .NET | Plik jest przesyłany do C# kompilatora jako zasób, który ma zostać osadzony w zestawie. [Zestawu. GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream)z `System.Reflection` przestrzeni nazw można następnie użyć do odczytania pliku z zestawu.|
+| **Brak** | Ile | Plik nie jest częścią kompilacji i jest dołączany do projektu w celu łatwego dostępu do środowiska IDE. Ta wartość może być używana dla plików dokumentacji, takich jak pliki Readme, na przykład.|
+
+> [!NOTE]
+> Dodatkowe akcje kompilacji mogą być definiowane przez dla określonych typów projektów, więc lista akcji kompilacji zależy od typu projektu i wartości, które nie znajdują się na liście.  
+
+Projekty Xamarin. iOS mają akcję kompilacji **BundleResource** , która spowoduje dodanie pliku jako części zbioru aplikacji. Informacje o określonych akcjach kompilacji platformy Xamarin. Android można znaleźć w przewodniku [procesu kompilacji](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) .
+
+Istnieje również możliwość wybrania więcej niż jednego pliku w Eksploratorze rozwiązań, co pozwala ustawić akcję kompilacji na wiele plików jednocześnie.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie akcji (Visual Studio Windows)](/visualstudio/ide/build-actions)
+- [Akcje kompilacji (Visual Studio w systemie Windows)](/visualstudio/ide/build-actions)

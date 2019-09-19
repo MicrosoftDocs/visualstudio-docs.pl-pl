@@ -10,52 +10,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcf17504f5ae057e68544d26e071bb74cc7b83bf
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263520"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128212"
 ---
-# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Wdrażanie aplikacji w lokalnym folderze przy użyciu programu Visual Studio
+# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Wdrażanie aplikacji w folderze lokalnym przy użyciu programu Visual Studio
 
-Możesz użyć **Publikuj** narzędzie do publikowania aplikacji platformy ASP.NET, ASP.NET Core, .NET Core i języka Python do folderu lokalnego z programu Visual Studio. Dla środowiska Node.js czynności są obsługiwane, ale interfejs użytkownika jest inny.
+Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, ASP.NET Core, .NET Core i Python do folderu lokalnego z programu Visual Studio. W przypadku środowiska Node. js czynności są obsługiwane, ale interfejs użytkownika jest inny.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Jeśli potrzebujesz opublikować aplikację pulpitu Windows do folderu lokalnego, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic). Dla C++/CLR, zobacz [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dla języka C /C++, zobacz [wdrażanie aplikacji natywnych przy użyciu projektu instalacji](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Jeśli musisz opublikować aplikację klasyczną systemu Windows w folderze lokalnym, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic). Aby C++uzyskać/CLI, zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dlaC++języka C/, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu Instalatora](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Wdrażanie w folderze lokalnym
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj** (lub użyj **kompilacji** > **Publikuj** element menu).
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Publikuj** (lub użyj elementu menu **Kompiluj** > **publikację** ).
 
-    ![Polecenia Opublikuj w menu kontekstowym projektu w Eksploratorze rozwiązań](../deployment/media/quickstart-publish.png "wybierz polecenie Publikuj")
+    ![Polecenie Publikuj w menu kontekstowym projektu w Eksplorator rozwiązań](../deployment/media/quickstart-publish.png "Wybierz pozycję Publikuj")
 
-1. Jeśli wcześniej skonfigurowano żadnych profilów publikowania **Publikuj** zostanie wyświetlone okienko. Wybierz **Utwórz nowy profil**.
+1. Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, zostanie wyświetlone okienko **Publikowanie** . Wybierz pozycję **Utwórz nowy profil**.
 
-1. W **wybierz lokalizację docelową publikowania** okna dialogowego wybierz **folderu**.
+1. W oknie dialogowym **Wybierz cel publikacji** wybierz **folder**.
 
-    ![Wybierz folder lokalny, jako lokalizację docelową publikowania](../deployment/media/quickstart-publish-folder.png "wybierz Folder")
+    ![Wybierz folder lokalny jako element docelowy publikowania](../deployment/media/quickstart-publish-folder.png "Wybierz folder")
 
-1. Wprowadź ścieżkę lub wybierz **Przeglądaj** do określenia folderu lokalnego.
+1. Wprowadź ścieżkę lub wybierz pozycję **Przeglądaj** , aby określić folder lokalny.
 
-1. Wybierz **publikowania**. Visual Studio tworzy projekt i publikuje go do określonego folderu. Właściwości projektu **Publikuj** profil zostanie wyświetlone okienko wyświetlanie podsumowania.
+1. Wybierz **publikowania**. Program Visual Studio kompiluje projekt i publikuje go w określonym folderze. Zostanie wyświetlone okienko **Publikowanie** właściwości projektu przedstawiające Podsumowanie profilu.
 
-    ![Okienko właściwości wyświetlanie podsumowania profil publikowania](../deployment/media/quickstart-publish-folder-summary.png)
+    ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. Aby skonfigurować ustawienia wdrożenia, wybierz **Konfiguruj** w profilu, summary i wybierz pozycję **ustawienia** kartę.
+1. Aby skonfigurować ustawienia wdrażania, wybierz pozycję **Konfiguruj** w podsumowaniu profilu i wybierz kartę **Ustawienia** .
 
-    ![Ustawienia profili](../deployment/media/quickstart-profile-settings.png "ustawienia profilu")
+    ![Ustawienia profilu](../deployment/media/quickstart-profile-settings.png "Ustawienia profilu")
 
-1. Skonfiguruj opcje, takie jak czy wdrażanie konfiguracji Debug i Release, a następnie wybierz pozycję **Zapisz**.
+1. Skonfiguruj opcje, takie jak czy wdrożyć konfigurację debugowania czy wydania, a następnie wybierz pozycję **Zapisz**.
 
-1. Aby ponownie opublikować, wybierz **Publikuj**.
+1. Aby ponownie opublikować, wybierz pozycję **Publikuj**.
 
-Wdrażanie plików publikowanych w jakikolwiek sposób, który chcesz. Na przykład, można umieścić je w *zip* pliku, użyj polecenia prostą kopię albo wdrażać je przy użyciu dowolnego pakietu instalacyjnego wybranych przez użytkownika.
+Wdróż opublikowane pliki w dowolny sposób. Można na przykład spakować je w pliku *zip* , użyć prostego polecenia copy lub wdrożyć je przy użyciu dowolnego wybranego pakietu instalacyjnego.
 
 ## <a name="next-steps"></a>Następne kroki
 
 - [Wdrażanie aplikacji .NET Core za pomocą narzędzia publikowania](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store (mostek dla aplikacji klasycznych)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (.NET) [Wdrażania .NET Framework i aplikacji](/dotnet/framework/deployment/)
+- Architektury [Wdrażanie .NET Framework i aplikacji](/dotnet/framework/deployment/)

@@ -1,72 +1,77 @@
 ---
 title: Ogólne informacje o konfiguracjach kompilacji
-description: W tym artykule opisano różne konfiguracje kompilacji w programie Visual Studio dla komputerów Mac
+description: W tym artykule opisano różne konfiguracje kompilacji w Visual Studio dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/14/2017
+ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826076"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128398"
 ---
-# <a name="understanding-build-configurations"></a>Ogólne informacje o konfiguracjach kompilacji
+# <a name="understanding-build-configurations"></a>Informacje o konfiguracjach kompilacji
 
-## <a name="project-build-configurations"></a>Konfiguracje kompilacji projektu
+Można przechowywać różne konfiguracje rozwiązań i właściwości projektu do użycia w różnych rodzajach kompilacji podczas procesu tworzenia. Projekty utworzone przez Visual Studio dla komputerów Mac przy użyciu szablonu zwykle obejmują konfiguracje debugowania i wydania, które obsługują debugowanie aplikacji i wdrożenia aplikacji. 
 
-Projekty zazwyczaj mają wiele konfiguracji i przełączania się między nimi umożliwia różne dane wyjściowe w czasie kompilacji. Na przykład konfiguracji debugowania zwróci symbole debugowania, umożliwiając debugerowi rozwiązać nazwy funkcji, parametrów i zmiennych z ślad stosu awaria aplikacji. Chociaż te informacje są przydatne podczas tworzenia, prowadzi do rozmiaru pliku nadmuchany i nie jest idealnym rozwiązaniem dla dystrybucji.
+Jeśli chcesz utworzyć niestandardowe konfiguracje, zobacz [Tworzenie i edytowanie konfiguracji kompilacji](/visualstudio/mac/create-and-edit-configurations).
 
-Każda platforma ma konfiguracji specyficznych dla jego kompilacji.
+>[!NOTE]
+>Ten temat ma zastosowanie do Visual Studio dla komputerów Mac. W przypadku programu Visual Studio w systemie Windows Zobacz [Omówienie konfiguracji kompilacji](/visualstudio/ide/understanding-build-configurations).
 
 ## <a name="solution-configurations"></a>Konfiguracje rozwiązania
 
-Podobnie konfiguracje projektu konfiguracje rozwiązania są używane do tworzenia konfiguracje niestandardowe dla całego projektu. Za pomocą **mapowania konfiguracji** karcie **kompilacji > konfiguracje** elementu, można przypisać konfigurację docelową dla każdego elementu rozwiązania, jak pokazano na poniższej ilustracji:
+Konfiguracje rozwiązań służą do określania konfiguracji dla wszystkich projektów w rozwiązaniu. Korzystając z karty **mapowania konfiguracji** w obszarze **konfiguracji > kompilacji** , można przypisać konfigurację docelową dla każdego elementu w otwartym rozwiązaniu. Jest to zademonstrowane na poniższej ilustracji:
 
 ![Opcje mapowania konfiguracji](media/projects-and-solutions-image3.png)
 
-Aby uzyskać więcej informacji o konfiguracji, zobacz [programu Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) klip wideo od James Montemagno.
+Aby uzyskać więcej informacji o konfiguracjach, zobacz [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) Video, Kuba Montemagno.
+
+## <a name="project-build-configurations"></a>Konfiguracje kompilacji projektu
+
+Projekty mają wiele konfiguracji. Konfiguracja i platforma elementy docelowe projektu są używane razem do określenia właściwości, które mają być używane podczas kompilowania. Przełączanie między konfiguracjami pozwala na różne dane wyjściowe w czasie kompilacji. Na przykład konfiguracja debugowania będzie wyprowadzać symbole debugowania, umożliwiając debugerowi rozpoznawanie nazw funkcji, parametrów lub zmiennych ze śladu stosu aplikacji, które uległy awarii. Chociaż te dodatkowe informacje są przydatne podczas opracowywania, prowadzi do niewypełnionego rozmiaru pliku i nie jest idealnym rozwiązaniem do dystrybucji.
+
+Każda platforma ma konkretne konfiguracje dla swojej kompilacji. Dostęp do stron konfiguracji kompilacji dla projektów można uzyskać, przechodząc do sekcji **kompilacja** w oknie dialogowym **Opcje projektu** . Otwórz to okno dialogowe, klikając prawym przyciskiem myszy projekt i wybierając **Opcje** lub klikając dwukrotnie projekt w Eksploratorze rozwiązań.
 
 ## <a name="run-configuration"></a>Uruchom konfigurację
 
-W poprzednich wersjach programu Xamarin Studio, można wybrać możliwość ustawienia projektu jako **projekt startowy**, który jest projekt, który uruchomienia/debugowania podczas korzystania z polecenia globalnego uruchomienia/debugowania. To była wskazywana przez bold krój czcionki dla nazwy projektu w konsoli do projektu.
+Visual Studio dla komputerów Mac pozwala ustawić _konfigurację uruchamiania_. Konfiguracje uruchomieniowe są wyświetlane na liście rozwijanej na pasku narzędzi obok selektora konfiguracji kompilacji, jak pokazano poniżej:
 
-W programie Visual Studio dla komputerów Mac, zamiast ustawiać projekt startowy można ustawić _konfigurację uruchamiania_. Uruchom konfiguracje są prezentowane na liście rozwijanej na pasku narzędzi obok selektor konfiguracji kompilacji, jak przedstawiono poniżej:
+![Lista rozwijana uruchamiania konfiguracji](media/projects-and-solutions-image8.png)
 
-![Uruchom konfigurację, listy rozwijanej](media/projects-and-solutions-image8.png)
+Konfiguracja przebiegu to zestaw opcji wykonywania o nazwie i kilku konfiguracjach, które są zdefiniowane w projekcie do różnych celów. Konfiguracje uruchomieniowe są definiowane na poziomie projektu, a dla każdego projektu wykonywalnego zostanie automatycznie utworzone ustawienie domyślne, chociaż można dodać dowolną liczbę. Niektóre typy projektów automatycznie generują dodatkowe konfiguracje uruchomieniowe. Na przykład projekty systemu watchOS mogą generować _szybkie i konfiguracje powiadomień._
 
-Konfigurację uruchomieniową jest zestawem opcji wykonywania z nazwą i kilka konfiguracji, które są zdefiniowane w projekcie do różnych celów. Uruchom konfiguracje są definiowane na poziomie projektu, a domyślny zostaną utworzone automatycznie dla każdego projektu pliku wykonywalnego, mimo że można dodać dowolną liczbę wymaganych. Niektóre typy projektu automatycznie generować dodatkowe konfiguracje wykonywania. Na przykład projekty systemu watchOS mogą generować _konfiguracje podstawowe informacje i powiadomienia._
+Konfiguracje mogą być udostępniane innym deweloperom (w tym przypadku konfiguracje będą przechowywane w pliku. csproj) lub przechowywane lokalnie (w takim przypadku będą przechowywane w pliku. user).
 
-Konfiguracje można współużytkowane z innymi deweloperami (w takim przypadku konfiguracje będą przechowywane w pliku .csproj) lub przechowywane lokalnie (w takim przypadku będą przechowywane w pliku .user).
+### <a name="android-run-configurations"></a>Konfiguracje uruchamiania systemu Android
 
-### <a name="android-run-configurations"></a>Uruchamianie konfiguracji systemu android
+Uruchamianie konfiguracji dla projektów systemu Android umożliwia określenie określonego działania, usługi lub odbiornika emisji do uruchomienia podczas uruchamiania lub debugowania projektu. Można przekazać dodatkowe dane i ustawić flagi założeń, aby przetestować składniki w różnych warunkach uruchamiania.
 
-Uruchom konfiguracje dla projektów systemu Android umożliwiają określenie, które działania, usługi lub odbiornik emisji do uruchomienia podczas uruchamiania lub debugowania projektu. Można przekazać dodatkowe dane dotyczące zamiarów i ustawienie intencji flagi, aby móc testować w warunkach uruchamiania różnych składników.
+Działania inne niż `MainLauncher` należy `Exported=true` dodać do atrybutu Activity dla debugowania na urządzeniu fizycznym lub zdefiniować filtry zamierzeń.
 
-Działania innych niż `MainLauncher` będzie musiała mieć `Exported=true` dodana do atrybutu działanie do debugowania na urządzeniu fizycznym lub ma zdefiniowane filtry intencji.
+## <a name="examples-of-data-that-might-be-included-in-run-configurations"></a>Przykłady danych, które mogą zostać uwzględnione w konfiguracjach uruchomieniowych
 
-## <a name="examples-of-data-that-might-be-included-in-run-configurations"></a>Przykładowe dane, które może znajdować się w konfiguracji uruchamiania
+Poniższa lista zawiera przykładowe dane, które mogą zostać uwzględnione w konfiguracjach uruchamiania:
 
-Poniższa lista zawiera przykładowe dane, które mogą zostać uwzględnione w konfiguracji uruchamiania:
-
-* Regularne projektu .NET
-  * Alternatywne uruchamianie aplikacji
+* Zwykły projekt .NET
+  * Alternatywna aplikacja startowa
   * Argumenty początkowe
   * Katalog roboczy
   * Zmienne środowiskowe
-  * Opcje środowiska uruchomieniowego mono (do użycia tylko wtedy, gdy jest uruchomiona na Mono)
-* Projekt dla systemu android
-  * Punkt wejścia (działanie, usługi, odbiorcy)
-  * Argumenty metody konwersji i danych
-* Projekt dla systemu iOS
+  * Opcje środowiska uruchomieniowego mono (do użycia tylko w przypadku uruchamiania w trybie mono)
+* Projekt systemu Android
+  * Punkt wejścia (działanie, usługa, odbiorca)
+  * Argumenty i dane intencji
+* projekt systemu iOS
   * Tryb (normalny, pobieranie w tle)
-* Projekt rozszerzenia systemu iOS
-  * Uruchamianie aplikacji: domyślne lub niestandardowe
-* WatchKit project
-  * Tryb (rzut oka, powiadomień)
+* projekt rozszerzenia systemu iOS
+  * Aplikacja startowa: domyślna lub niestandardowa
+* Projekt WatchKit
+  * Tryb (w skrócie, powiadomienie)
   * Ładunek powiadomienia
 
 ## <a name="see-also"></a>Zobacz także
 
-- [O konfiguracjach kompilacji (Visual Studio Windows)](/visualstudio/ide/understanding-build-configurations)
+- [Informacje o konfiguracjach kompilacji (Visual Studio w systemie Windows)](/visualstudio/ide/understanding-build-configurations)

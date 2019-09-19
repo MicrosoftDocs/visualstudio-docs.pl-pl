@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Mierzyć wydajność aplikacji w programie Visual Studio
+summary: Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesora CPU i pamięci oraz inne problemy z poziomu aplikacji. Za pomocą tych narzędzi można zbierać dane dotyczące wydajności podczas uruchamiania aplikacji.
+metadata:
+  title: Mierzenie wydajności w programie Visual Studio
+  description: Dowiedz się, jak za pomocą programu Visual Studio mierzyć wydajność przy użyciu narzędzi profilowania.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/17/2019
+  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71130642"
+landingContent:
+- title: Profilowanie — informacje
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Pierwsze spojrzenie na narzędzia profilowania
+      url: profiling-feature-tour.md
+  - linkListType: concept
+    links:
+    - text: Sposoby uruchamiania narzędzi profilowania
+      url: running-profiling-tools-with-or-without-the-debugger.md
+- title: Wprowadzenie
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Analizowanie użycia procesora CPUC#(, Visual Basic)
+      url: quickstart-cpu-usage-managed.md
+    - text: Analizowanie użycia procesora CPUC++()
+      url: quickstart-cpu-usage-native.md
+    - text: Analizowanie użycia procesora CPU (ASP.NET)
+      url: quickstart-cpu-usage-aspnet.md
+  - linkListType: tutorial
+    links:
+    - text: Rozpocznij Analizowanie użycia procesora CPU
+      url: beginners-guide-to-performance-profiling.md
+    - text: Wprowadzenie pomiaru użycia pamięci
+      url: beginners-guide-to-performance-profiling.md
+- title: Więcej narzędzi wydajności
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Wskazówki dotyczące wydajności
+      url: perftips.md
+    - text: Analizowanie zużycia zasobów (XAML)
+      url: application-timeline.md
+    - text: Analizowanie użycia procesora GPU (Direct3D)
+      url: gpu-usage.md
+    - text: Analizowanie użycia sieci (platformy UWP)
+      url: network-usage.md
+    - text: Analizowanie zużycia energii (platformy UWP)
+      url: analyze-energy-use-in-store-apps.md
+    - text: Eksplorator wydajności (starsza wersja)
+      url: performance-explorer.md

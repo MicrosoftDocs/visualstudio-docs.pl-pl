@@ -3,46 +3,57 @@ title: Kompilowanie oraz oczyszczanie projektów i rozwiązań
 description: W tym artykule opisano sposób tworzenia projektu w Visual Studio dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: b69bdbacc9b6d8d19dd3ce7abbc9b2a822a48f07
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 924bdb08154ecb3caad04cabf7e860bed9204e98
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872268"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128455"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Kompilowanie i czyszczenie projektów i rozwiązań
 
-Wykonaj kroki opisane w tym artykule, aby dowiedzieć się, jak skompilować, skompilować i wyczyścić rozwiązanie i projekt.
+Wykonaj kroki opisane w tym artykule, aby dowiedzieć się, jak tworzyć, odbudować lub czyścić wszystkie lub niektóre projekty w rozwiązaniu.
+
+> [!NOTE]
+> Ten temat ma zastosowanie do Visual Studio dla komputerów Mac. W przypadku programu Visual Studio w systemie Windows Zobacz [Tworzenie i czyszczenie projektów oraz rozwiązań w programie Visual Studio](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Do kompilacji, odbudować lub Wyczyść całe rozwiązanie
 
-Aby skompilować, skompilować lub wyczyścić całe rozwiązanie:
-
-1. Wybierz węzeł rozwiązania w okienko rozwiązania:
+1. Wybierz węzeł rozwiązania w **okienko rozwiązania**:
 
     ![Wybieranie węzła rozwiązania](media/compiling-and-building-image1.png)
 
-2. Wybierz menu Kompilacja na pasku menu, a następnie wybierz jedną z następujących opcji:
+2. Wybierz menu **kompilacja** na pasku menu, a następnie wybierz jedną z następujących opcji:
 
     ![Wybieranie elementu menu Kompiluj wszystko](media/compiling-and-building-image2.png)
 
-    * **Kompiluj wszystko** — próbuje skompilować wszystkie pliki w projekcie, które uległy zmianie w projekcie od czasu ostatniej kompilacji.
-    * **Kompiluj ponownie wszystko** — czyści rozwiązanie, a następnie kompiluje je.
-    * **Wyczyść wszystko** — usuwa wszystkie produkty kompilacji z rozwiązania.
+    * Wybierz opcję **Kompiluj wszystko** , aby skompilować pliki i składniki w ramach projektu, które uległy zmianie od czasu ostatniej kompilacji.
+
+    * Wybierz opcję **Kompiluj ponownie wszystkie** do "Wyczyść" rozwiązania, a następnie kompiluje wszystkie pliki projektu i składniki.
+
+    * Wybierz pozycję **Wyczyść wszystko** , aby usunąć wszystkie pliki pośrednie i wyjściowe. Za pomocą tylko projektu, jak i składnika pliki po lewej nowe wystąpienia pośrednich i pliki wyjściowe może następnie być skompilowana.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Aby skompilować lub ponownie skompilować pojedynczego projektu
 
-1. W okienko rozwiązania wybierz projekt.
+1. Wybierz projekt w **okienko rozwiązania**.
 
-2. Na pasku menu wybierz kompilacja, a następnie wybierz pozycję kompilacja [ProjectName], Skompiluj ponownie [ProjectName] lub wyczyść [ProjectName].
+2. Wybierz menu **kompilacja** z paska menu.
+
+3. Wybierz pozycję kompilacja [ProjectName], Skompiluj ponownie [ProjectName] lub wyczyść [ProjectName].
 
 ## <a name="to-stop-a-build"></a>Aby zatrzymać kompilację
 
-Aby zatrzymać kompilację, naciśnij czerwony kwadrat w obszarze Stan:
+Aby zatrzymać kompilację, użyj jednej z następujących opcji:
 
-![Naciśnij czerwony kwadrat, aby zatrzymać kompilację](media/compiling-and-building-image3.png)
+* Naciśnij czerwony kwadrat w obszarze Stan:
+
+    ![Naciśnij czerwony kwadrat, aby zatrzymać kompilację](media/compiling-and-building-image3.png)
+
+* Użyj elementu **stop** w menu **kompilacja** .
+
+* Naciśnij klawisze **cmd + Shift + Return**.
 
 ## <a name="see-also"></a>Zobacz także
 

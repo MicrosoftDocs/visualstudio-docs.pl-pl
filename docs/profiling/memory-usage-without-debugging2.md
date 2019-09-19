@@ -1,5 +1,5 @@
 ---
-title: Analizowanie użycia pamięci bez debugowania | Dokumentacja firmy Microsoft
+title: Analizuj użycie pamięci bez debugowania | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
@@ -13,210 +13,210 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830793"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128232"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizowanie użycia pamięci bez debugera
 
-**Użycie pamięci** narzędzie monitoruje wykorzystanie pamięci aplikacji. To narzędzie umożliwia skutki pamięci w czasie rzeczywistym scenariusze, które aktywnie tworzysz w programie Visual Studio. Szczegółowe migawek stanu pamięci aplikacji i porównywanie migawek, aby dowiedzieć się, że głównych przyczyn problemów z pamięcią.
+Narzędzie **użycie pamięci** monitoruje użycie pamięci przez aplikację. Za pomocą tego narzędzia można analizować efekty związane z pamięcią w czasie rzeczywistym scenariuszy, które aktywnie opracowujesz w programie Visual Studio. Można utworzyć szczegółowe migawki Stanów pamięci aplikacji i porównać migawki w celu znalezienia głównych przyczyn problemów z pamięcią.
 
-**Użycie pamięci** narzędzie można uruchomić z lub bez debugera. Poniższe instrukcje przedstawiają sposób użycia **użycie pamięci** narzędzia bez debugera w programie Visual Studio **Profiler wydajności**.
+Narzędzie **użycie pamięci** można uruchomić z debugerem lub bez niego. Poniższe instrukcje pokazują, jak używać narzędzia **użycie pamięci** bez debugera w **profilerze wydajności**programu Visual Studio.
 
 >[!NOTE]
->- Do mierzenia użycia pamięci dla aplikacji platformy .NET Core, należy użyć **użycie pamięci** narzędzie za pomocą debugera. Aby uzyskać instrukcje, zobacz [profilu użycie pamięci w programie Visual Studio](memory-usage.md).
->- Aby Analizowanie użycia pamięci w aplikacjach JavaScript i HTML platformy uniwersalnej systemu Windows, należy użyć [pamięci JavaScript](../profiling/javascript-memory.md) narzędzia w **Profiler wydajności**.
+>- Aby zmierzyć użycie pamięci dla aplikacji platformy .NET Core, należy użyć narzędzia **użycie pamięci** z debugerem. Aby uzyskać instrukcje, zobacz [profilowanie użycia pamięci w programie Visual Studio](memory-usage.md).
+>- Aby analizować użycie pamięci w aplikacjach JavaScript lub HTML platformy UWP, użyj narzędzia [pamięci JavaScript](../profiling/javascript-memory.md) w **profilerze wydajności**.
 
-## <a name="memory-usage-diagnostic-sessions"></a>Sesje diagnostyki pamięci użycia
+## <a name="memory-usage-diagnostic-sessions"></a>Sesje diagnostyczne dotyczące użycia pamięci
 
-**Aby rozpocząć sesję diagnostyki wykorzystania pamięci:**
+**Aby rozpocząć sesję diagnostyczną wykorzystania pamięci:**
 
-1. Otwórz C# projektu Windows (UWP, Universal) w programie Visual Studio.
+1. Otwórz projekt C# uniwersalnego systemu Windows (platformy UWP) w programie Visual Studio.
 
-1. Na pasku menu wybierz **debugowania** > **Profiler wydajności**.
+1. Na pasku menu wybierz kolejno opcje **Debuguj program** > **Profiler wydajności**.
 
-1. Wybierz **użycie pamięci**, a następnie wybierz pozycję **Start**.
+1. Wybierz opcję **użycie pamięci**, a następnie wybierz pozycję **Uruchom**.
 
-   ![Uruchamianie sesji diagnostyki użycie pamięci](../profiling/media/memuse_start_diagnosticssession.png "rozpocząć sesję diagnostyki użycia pamięci")
+   ![Rozpocznij sesję diagnostyczną wykorzystania pamięci](../profiling/media/memuse_start_diagnosticssession.png "Rozpocznij sesję diagnostyczną wykorzystania pamięci")
 
-### <a name="monitor-memory-use"></a>Monitorowanie użycia pamięci
+### <a name="monitor-memory-use"></a>Monitoruj użycie pamięci
 
-Podczas uruchamiania sesji diagnostycznej uruchamiania aplikacji, a **narzędzia diagnostyczne** okna wyświetlany jest wykres osi czasu użycia pamięci aplikacji.
+Po uruchomieniu sesji diagnostycznej aplikacja zostanie uruchomiona, a w oknie **Narzędzia diagnostyczne** zostanie wyświetlony wykres osi czasu aplikacji.
 
-![Strona przeglądu użycia pamięci](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
+![Strona przegląd użycia pamięci](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
-Wykres osi czasu wahania pamięci jest wyświetlany jako uruchomienia aplikacji. Wartości graniczne na wykresie zazwyczaj wskazują, że jakiś kod jest zbieranie lub tworzenie danych i odrzucanie go po zakończeniu przetwarzania. Duże wartości szczytowe wskazywać obszary, które mogą być w stanie zoptymalizować. Częste więcej jest wzrost użycia pamięci, które nie są zwracane, ponieważ może to oznaczać, nieefektywnego wykorzystania pamięci lub nawet przeciek pamięci.
+Wykres osi czasu przedstawia fluktuacje pamięci podczas uruchamiania aplikacji. Skoki na wykresie zwykle wskazują, że jakiś kod zbiera lub tworzy dane, a następnie odrzuca je po zakończeniu przetwarzania. Duże skoki wskazują obszary, które mogą być optymalizowane. Większym problemem jest wzrost zużycia pamięci, który nie jest zwracany, ponieważ może to wskazywać na niewydajne użycie pamięci lub nawet przeciek pamięci.
 
-### <a name="take-snapshots-of-app-memory-states"></a>Wykonywanie migawek stanu pamięci aplikacji
+### <a name="take-snapshots-of-app-memory-states"></a>Wykonaj migawki Stanów pamięci aplikacji
 
-Aplikacja używa dużej liczby obiektów i można skoncentrować się analizy na jeden scenariusz. Lub może się okazać problemy z pamięcią w celu zbadania. Można również tworzyć migawek podczas sesji diagnostycznej do przechwytywania użycie pamięci w szczególności momentach. To dobry pomysł, aby uzyskać dodatkowe migawki i migawką będącą punktem odniesienia w aplikacji przed wyświetleniem problem pamięci, innej migawki po pierwszym wystąpieniu problemu, jeśli można powtarzać tego scenariusza.
+Aplikacja używa dużej liczby obiektów i może chcieć skupić analizę w jednym scenariuszu. Możesz też znaleźć problemy z pamięcią, aby zbadać. Podczas sesji diagnostycznej można wykonać migawki w celu przechwycenia użycia pamięci w określonych momentach. Dobrym pomysłem jest uzyskanie podstawowej migawki aplikacji, zanim pojawi się problem z pamięcią, kolejną migawką po pierwszym wystąpieniu problemu i dodatkowych migawek, jeśli można powtórzyć ten scenariusz.
 
-Aby zebrać migawki, wybierz **wykonaj migawkę** gdy zachodzi potrzeba przechwycenia danych pamięci.
+Aby zebrać migawki, wybierz pozycję **zrób migawkę** , jeśli chcesz przechwytywać dane pamięci.
 
-### <a name="BKMK_Close_a_monitoring_session"></a> Zamykanie sesji diagnostycznej
+### <a name="BKMK_Close_a_monitoring_session"></a>Zamknij sesję diagnostyczną
 
-Aby zatrzymać sesji monitorowania bez tworzenia raportu, zamknij okno diagnostycznych. Aby wygenerować raport, gdy wszystko będzie gotowe gromadzenie lub migawki, wybierz opcję **Zatrzymaj Kolekcjonowanie**.
+Aby zatrzymać sesję monitorowania bez tworzenia raportu, po prostu Zamknij okno diagnostyki. Aby wygenerować raport po zakończeniu zbierania lub tworzenia migawek, wybierz pozycję **Zatrzymaj zbieranie**.
 
 ![Zatrzymaj zbieranie](../profiling/media/memuse__stopcollection.png "Zatrzymaj zbieranie")
 
-## <a name="memory-usage-reports"></a>Raporty dotyczące użycia pamięci
+## <a name="memory-usage-reports"></a>Raporty użycia pamięci
 
-Po zatrzymaniu zbierania danych **użycie pamięci** narzędzie zatrzymuje ją i wyświetla **użycie pamięci** strona przeglądu.
+Po zatrzymaniu zbierania danych narzędzie **użycie pamięci** zatrzyma aplikację i wyświetli stronę przegląd **użycia pamięci** .
 
-![Strona przeglądu użycia pamięci](../profiling/media/memuse__reportoverview1.png "strony Przegląd użycia pamięci")
+![Strona przegląd użycia pamięci](../profiling/media/memuse__reportoverview1.png "Strona przegląd użycia pamięci")
 
-### <a name="BKMK_Memory_Usage_snapshot_views"></a> Migawki użycia pamięci
+### <a name="BKMK_Memory_Usage_snapshot_views"></a>Migawki użycia pamięci
 
-Liczby w **migawki** okienka Pokaż bajtów i obiektów w pamięci, gdy każda migawki i różnica między migawki, a poprzednią.
+Liczby w okienkach **migawek** pokazują bajty i obiekty w pamięci, gdy każda migawka została wykonana, i różnicę między migawką a poprzednią.
 
-Liczby są łączy, które szczegółowo open **użycie pamięci** raportu widoków w nowych oknach programu Visual Studio. A [raport szczegóły migawki](#snapshot-details-reports) zawiera typy i wystąpienia w jedną migawkę. A [różnica (różnica) raport migawki](#snapshot-difference-diff-reports) porównuje typy i wystąpienia w dwóch migawek.
+Liczby to linki, które otwierają szczegółowe widoki raportów **użycia pamięci** w nowych oknach programu Visual Studio. [Raport szczegóły migawki](#snapshot-details-reports) przedstawia typy i wystąpienia w jednej migawce. [Raport różnica migawek (diff)](#snapshot-difference-diff-reports) porównuje typy i wystąpienia w dwóch migawkach.
 
-  ![Wyświetl linki migawki](../profiling/media/memuse__snapshotview_numbered.png "łączy widoku migawki")
+  ![Linki widoku migawek](../profiling/media/memuse__snapshotview_numbered.png "Linki widoku migawek")
 
 |||
 |-|-|
-|![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Całkowita liczba bajtów w pamięci, gdy migawka została utworzona.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegóły migawki, posortowane według całkowity rozmiar wystąpienia typu.|
-|![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Całkowita liczba obiektów w pamięci, gdy migawka została utworzona.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegóły migawki, posortowane według liczby wystąpień typów.|
-|![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Różnica między łączny rozmiar obiektów w pamięci w tej migawce, a poprzednią migawkę. <br /><br /> Dodatni oznacza, że liczba pamięci rozmiar tej migawki jest większy niż poprzednia, a ujemna oznacza, że liczba rozmiar jest mniejszy. **Plan bazowy** oznacza, że migawka jest pierwszy w sesji diagnostycznej. **Nie różnicy** oznacza, że różnica wynosi zero.<br /><br /> Wybierz ten link, aby wyświetlić raport diff migawki, posortowane według różnica w łącznym rozmiarze wystąpień typów.|
-|![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Różnica między całkowita liczba obiektów pamięci w tej migawce, a poprzednią migawkę.<br /><br /> Wybierz ten link, aby wyświetlić raport diff migawki, posortowane według różnica w łącznej liczbie wystąpień typów.|
+|![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Całkowita liczba bajtów w pamięci podczas tworzenia migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegółów migawek posortowany według łącznego rozmiaru wystąpień typu.|
+|![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Całkowita liczba obiektów w pamięci podczas tworzenia migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegółów migawek posortowany według liczby wystąpień typów.|
+|![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Różnica między całkowitym rozmiarem obiektów pamięci w tej migawce i poprzednią migawką. <br /><br /> Liczba dodatnia oznacza, że rozmiar pamięci tej migawki jest większy niż poprzednia, a liczba ujemna oznacza, że rozmiar jest mniejszy. **Linia bazowa** oznacza, że migawka jest pierwszą w sesji diagnostycznej. **Żadna różnica nie** oznacza, że różnica wynosi zero.<br /><br /> Wybierz ten link, aby wyświetlić raport różnic migawek posortowany według różnicy w łącznym rozmiarze wystąpień typów.|
+|![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Różnica między łączną liczbą obiektów pamięci w tej migawce i poprzednią migawką.<br /><br /> Wybierz ten link, aby wyświetlić raport różnic migawek posortowany według różnicy w łącznej liczbie wystąpień typów.|
 
-## <a name="memory-usage-snapshot-reports"></a>Raporty migawki użycia pamięci
+## <a name="memory-usage-snapshot-reports"></a>Raporty dotyczące migawek użycia pamięci
 
-<a name="BKMK_Snapshot_report_trees"></a> Po wybraniu jednego z linków migawki w **użycie pamięci** raport migawki zostanie otwarta na nowej stronie Strona przeglądu.
+<a name="BKMK_Snapshot_report_trees"></a>Po wybraniu jednego z linków migawek na stronie Przegląd **użycia pamięci** zostanie otwarty raport migawki na nowej stronie.
 
-![Raport migawki użycia pamięci](../profiling/media/memuse_snapshotreport_all.png "raport migawki użycia pamięci")
+![Raport migawek użycia pamięci](../profiling/media/memuse_snapshotreport_all.png "Raport migawek użycia pamięci")
 
-W raporcie migawki można rozwinąć **typu obiektu** wpisów, aby wyświetlić wpisy podrzędnych. Nazwy są unikatowe identyfikatory, które są generowane przez narzędzie użycie pamięci.
+W raporcie migawki można rozwinąć wpisy **typu obiektu** w celu wyświetlenia wpisów podrzędnych. Nazwy wystąpień to unikatowe identyfikatory, które są generowane przez narzędzie użycie pamięci.
 
-Jeśli **typu obiektu** jest niebieski, możesz wybrać go, aby przejść do obiektu w kodzie źródłowym w osobnym oknie.
+Jeśli **Typ obiektu** to niebieska, możesz go zaznaczyć, aby przejść do obiektu w kodzie źródłowym w osobnym oknie.
 
-Typy, nie można zidentyfikować lub którego zaangażowania w kodzie, którego nie rozumiesz są prawdopodobnie .NET Framework, system operacyjny lub kompilatora obiektów. **Użycie pamięci** narzędzie wyświetli te obiekty, jeśli są one związane z łańcucha własności obiektów.
+Typy, których nie można zidentyfikować lub których zaangażowanie w kodzie nie jest zrozumiałe, prawdopodobnie .NET Framework, systemu operacyjnego lub obiektów kompilatora. Narzędzie **użycie pamięci** wyświetla te obiekty, jeśli są one wykorzystywane w łańcuchach własności obiektów.
 
 W raporcie migawki:
 
-- **Sterty zarządzanej** drzewa zawiera typy i wystąpienia w raporcie. Wybierając typ lub wystąpienie Wyświetla **ścieżki do obiektu głównego** i **przywoływane obiekty** drzewa dla wybranego elementu.
+- **Zarządzane drzewo sterty** pokazuje typy i wystąpienia w raporcie. Wybranie typu lub wystąpienia powoduje wyświetlenie **ścieżek do katalogu głównego** i **przywoływanych obiektów** drzewa dla wybranego elementu.
 
-- **Ścieżki do obiektu głównego** drzewa pokazuje łańcuch obiektów, które odwołują się typ lub wystąpienie. Moduł zbierający elementy bezużyteczne .NET Framework Czyści pamięć dla obiektu, tylko wtedy, gdy wszystkie odwołania do niego zostały zwolnione.
+- **Ścieżka do drzewa głównego** pokazuje łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł wyrzucania elementów bezużytecznych czyści pamięć dla obiektu tylko wtedy .NET Framework, gdy wszystkie odwołania do niego zostały wydane.
 
-- **Przywoływane typy** lub **przywoływane obiekty** drzewa zawiera obiekty, które odwołuje się do wybranego typu lub wystąpienia.
+- **Przywoływane typy** lub drzewa **obiektów, do** których istnieją odwołania, są wyświetlane obiekty, do których odwołuje się wybrany typ lub wystąpienie.
 
-### <a name="BKMK_Report_tree_filters_"></a> Filtry drzewa raportu
+### <a name="BKMK_Report_tree_filters_"></a>Filtry drzewa raportów
 
-Wiele typów w aplikacji nie są bardzo interesujące dla deweloperów aplikacji. Filtry raportów migawki można ukryć większość z tych typów w **sterty zarządzanej** i **ścieżki do obiektu głównego** drzewa.
+Wiele typów w aplikacjach nie jest bardzo interesujące dla deweloperów aplikacji. Filtry migawek można ukryć większość z tych typów w **zarządzanym stosie** i **ścieżkach do drzew głównych** .
 
 ![Opcje sortowania i filtrowania](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
 
-- <a name="BKMK_Filter"></a> Aby filtrować drzewa według nazwy typu, wprowadź nazwę w **filtru** pole. Filtr nie jest rozróżniana wielkość liter i rozpoznaje określonego ciągu w dowolnej części nazwy typu.
+- <a name="BKMK_Filter"></a>Aby odfiltrować drzewo według nazwy typu, wprowadź nazwę w polu **Filtr** . W filtrze nie ma wielkości liter i rozpoznaje określony ciąg w dowolnej części nazwy typu.
 
-- <a name="BKMK_Collapse_Small_Objects"></a> Wybierz **Zwiń małe obiekty** w **filtru** listę rozwijaną, aby ukryć typy, których **rozmiar (w bajtach)** jest mniejsza niż 0,5 procent całkowitej ilości pamięci.
+- <a name="BKMK_Collapse_Small_Objects"></a>Wybierz pozycję **Zwiń małe obiekty** na liście rozwijanej **Filtr** , aby ukryć typy, których **rozmiar (w bajtach)** jest mniejszy niż 0,5 procent całkowitej ilości pamięci.
 
-- <a name="BKMK_Just_My_Code"></a> Wybierz **tylko mój kod** w **filtru** listę rozwijaną, aby ukryć największą liczbą wystąpień, które zostały wygenerowane przez kod zewnętrzny. Typy zewnętrzne należą do systemu operacyjnego lub składnikami ramach lub są generowane przez kompilator.
+- <a name="BKMK_Just_My_Code"></a>Wybierz pozycję **tylko mój kod** na liście rozwijanej **Filtr** , aby ukryć większość wystąpień generowanych przez kod zewnętrzny. Typy zewnętrzne należą do systemu operacyjnego lub składników struktury lub są generowane przez kompilator.
 
-## <a name="snapshot-details-reports"></a>Migawka szczegóły raportów
+## <a name="snapshot-details-reports"></a>Raporty szczegółów migawek
 
- Raport szczegóły migawki opisuje jedną migawkę z sesji diagnostycznej. Aby otworzyć raport, wybierz link rozmiaru lub obiektów w okienku migawki.
+ Raport szczegóły migawki zawiera opis jednej migawki z sesji diagnostycznej. Aby otworzyć raport, wybierz link rozmiar lub obiekty w okienku migawki.
 
- ![Łącza do raportu migawek w okienku migawki](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "łącza do raportu migawek w okienku migawki")
+ ![Linki do raportu migawek w okienku migawek](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Linki do raportu migawek w okienku migawek")
 
-Oba łącza otwarcie tego samego raportu. Jedyna różnica polega na kolejności sortowania począwszy od **sterty zarządzanej** drzewa. Link rozmiar sortuje raport według **całkowity rozmiar (w bajtach)** kolumny. Łącza obiektów sortuje raport według **liczba** kolumny. Po otwarciu raportu można zmienić kolumny sortowania lub zamówienia.
+Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejność sortowania drzewa **sterty zarządzanej** . Link size sortuje raport według kolumny **size (bajty)** . Link obiekty sortuje raport według kolumny **Count** . Można zmienić kolumnę sortowania lub kolejność po otwarciu raportu.
 
-### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Zarządzane drzewa sterty (Raporty migawki szczegóły)
- **Sterty zarządzanej** drzewa zawiera listę typów obiektów, które są przechowywane w pamięci. Rozwiń nazwę typu, aby wyświetlić 10 największych wystąpienia typu, posortowane według rozmiaru. Wybierz typ lub wystąpienie, aby wyświetlić **ścieżki do obiektu głównego** i **przywoływane obiekty** drzewa dla wybranego elementu.
+### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a>Zarządzane drzewo sterty (raporty szczegółów migawek)
+ W drzewie **zarządzanym sterty** są wyświetlane typy obiektów, które są przechowywane w pamięci. Rozwiń nazwę typu, aby wyświetlić dziesięć największych wystąpień typu, posortowane według rozmiaru. Wybierz typ lub wystąpienie, aby wyświetlić **ścieżki do katalogu głównego** i **przywoływanych obiektów** drzewa dla wybranego elementu.
 
- ![Zarządzany stos drzewa](../profiling/media/memuse__snapshotdetails_managedheaptree.png "drzewa sterty zarządzanej")
+ ![Zarządzane drzewo sterty](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Zarządzane drzewo sterty")
 
-**Sterty zarządzanej** drzewa w raporcie szczegóły migawki zawiera następujące kolumny:
+**Zarządzane drzewo sterty** w raporcie ze szczegółowymi informacjami o migawce zawiera następujące kolumny:
 
 |||
 |-|-|
-|**Typ obiektu**|Nazwa wystąpienia typu lub obiektu.|
-|**Liczba**|Liczba wystąpień obiektu tego typu. **Liczba** ma zawsze numer 1 dla wystąpienia.|
-|**Rozmiar (bajty)**|Dla typu, rozmiaru wszystkich wystąpień typu w migawce mniejszy rozmiar obiektów zawartych w wystąpienia.<br /><br /> W przypadku wystąpienia rozmiar mniej rozmiar obiektów zawartych w wystąpieniu obiektu. |
-|**Całkowity rozmiar (w bajtach)**|Rozmiar wystąpienia typu lub rozmiaru pojedyncze wystąpienie, takich jak rozmiar zawartych obiektów.|
+|**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|
+|**Liczbą**|Liczba wystąpień obiektów typu. **Liczba** jest zawsze 1 dla wystąpienia.|
+|**Rozmiar (w bajtach)**|Dla typu, rozmiar wszystkich wystąpień typu w migawce, mniejszy rozmiar obiektów zawartych w wystąpieniach.<br /><br /> Dla wystąpienia, rozmiar obiektu, mniejszy od rozmiaru obiektów zawartych w wystąpieniu. |
+|**Rozmiar włącznie (w bajtach)**|Rozmiar wystąpień typu lub rozmiar pojedynczego wystąpienia, łącznie z rozmiarem zawartych obiektów.|
 |**Module**|Moduł, który zawiera obiekt.|
 
-### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Ścieżki do katalogu głównego drzewa (migawka szczegóły raportów)
-**Ścieżki do katalogu głównego drzewa** pokazuje łańcuch obiektów, które odwołują się typ lub wystąpienie. Moduł zbierający elementy bezużyteczne .NET Framework Czyści pamięć dla obiektu, tylko wtedy, gdy wszystkie odwołania do niego zostały zwolnione.
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a>Ścieżki do drzewa głównego (raporty ze szczegółowymi informacjami o migawce)
+**Ścieżka do drzewa głównego** pokazuje łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł wyrzucania elementów bezużytecznych czyści pamięć dla obiektu tylko wtedy .NET Framework, gdy wszystkie odwołania do niego zostały wydane.
 
-Dla typu w **ścieżki do obiektu głównego** liczbę obiektów, które zawierają odwołania do tego typu jest wyświetlana w drzewie **licznik odwołań** kolumny.
+Dla typu w drzewie **ścieżki do katalogu głównego** liczba obiektów, które zawierają odwołania do tego typu, pojawia się w kolumnie **liczba odwołań** .
 
-![Ścieżki do katalogu głównego drzewa dla typów](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "ścieżki do katalogu głównego drzewa dla typów")
+![Ścieżki do drzewa głównego dla typów](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Ścieżki do drzewa głównego dla typów")
 
-### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Przywoływane typy lub do których odwołuje się obiekty drzewa (migawka szczegóły raportów)
-**Przywoływane typy** lub **przywoływane obiekty** drzewa zawiera obiekty, które odwołuje się do wybranego typu lub wystąpienia.
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a>Przywoływane typy lub drzewo przywoływanych obiektów (raporty szczegółów migawek)
+**Przywoływane typy** lub drzewa **obiektów, do** których istnieją odwołania, są wyświetlane obiekty, do których odwołuje się wybrany typ lub wystąpienie.
 
-![Przywoływane obiekty drzewa dla wystąpień](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "drzewa obiektów, do których odwołuje się do wystąpienia")
+![Drzewo przywoływanych obiektów dla wystąpień](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Drzewo przywoływanych obiektów dla wystąpień")
 
-A **przywoływane typy** drzewa w raporcie szczegóły migawki zawiera następujące kolumny. A **przywoływane obiekty** drzewa nie ma **licznik odwołań** kolumny.
+Drzewo **typów, do których istnieją odwołania** w raporcie szczegóły migawki, zawiera następujące kolumny. Drzewo **obiektów, do którego się odwoływano** , nie ma kolumny **Count Reference** .
 
 |||
 |-|-|
-|**Typ obiektu** lub **wystąpienia**|Nazwa typu lub wystąpienia.|
-|**Liczba odwołań**|W przypadku typów wystąpień obiektu tego typu.|
-|**Rozmiar (bajty)**|Dla typu, rozmiaru wszystkich wystąpień tego typu, mniej rozmiar obiektów znajdujących się w typie.<br /><br /> W przypadku wystąpienia rozmiar obiektu mniej rozmiar obiektów zawartych w obiekcie.|
-|**Całkowity rozmiar (w bajtach)**|Całkowity rozmiar wystąpienia typu lub rozmiar wystąpienia, takich jak rozmiar zawartych obiektów.|
+|**Typ obiektu** lub **wystąpienie**|Nazwa typu lub wystąpienia.|
+|**Liczba odwołań**|Dla typów, liczba wystąpień obiektów typu.|
+|**Rozmiar (w bajtach)**|Dla typu, rozmiar wszystkich wystąpień typu, mniejszy rozmiar obiektów zawartych w typie.<br /><br /> Dla wystąpienia, rozmiar obiektu, mniejszy od rozmiaru obiektów zawartych w obiekcie.|
+|**Rozmiar włącznie (w bajtach)**|Łączny rozmiar wystąpień typu lub rozmiar wystąpienia, łącznie z rozmiarem zawartych obiektów.|
 |**Module**|Moduł, który zawiera obiekt.|
 
-## <a name="snapshot-difference-diff-reports"></a>Raporty migawki różnica (różnica)
+## <a name="snapshot-difference-diff-reports"></a>Raporty różnic migawek (diff)
 
-Raport migawki różnica (różnica) pokazuje zmiany między podstawowym migawki i poprzedniej migawki. Aby otworzyć raport różnic, wybierz jeden z łącza różnica w okienku migawki.
+Raport różnica migawek (diff) przedstawia zmiany między migawką podstawową i poprzednią migawką. Aby otworzyć raport diff, wybierz jedno z łączy różnic w okienku migawki.
 
-Oba łącza otwarcie tego samego raportu. Jedyna różnica polega na kolejności sortowania począwszy od **sterty zarządzanej** drzewa w raporcie. Link rozmiar sortuje raport według **różnica w rozmiarze włącznie (w bajtach)** kolumny. Łącza obiektów sortuje raport według **różnicy liczby** kolumny. Po otwarciu raportu można zmienić kolumny sortowania lub zamówienia.
+Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejność sortowania **zarządzanego drzewa sterty** w raporcie. Link size sortuje raport według kolumny **różnicowego rozmiaru (w bajtach)** . Łącze obiekty sortuje raport według kolumny **Liczba różnic** . Można zmienić kolumnę sortowania lub kolejność po otwarciu raportu.
 
- ![Łącza do różnicy raportu w okienku migawki](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "łącza do różnicy raportu w okienku migawki")
+ ![Łącze do raportu różnic w okienku migawki](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Łącze do raportu różnic w okienku migawki")
 
-### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Zarządzane drzewa sterty (Raporty migawki różnic)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a>Zarządzane drzewo sterty (raporty różnic migawek)
 
- **Sterty zarządzanej** drzewa zawiera listę typów obiektów, które są przechowywane w pamięci. Można rozwinąć nazwę typu, aby wyświetlić 10 największych wystąpienia typu, posortowane według rozmiaru. Wybierz typ lub wystąpienie, aby wyświetlić **ścieżki do obiektu głównego** i **przywoływane obiekty** drzewa dla wybranego elementu.
+ W drzewie **zarządzanym sterty** są wyświetlane typy obiektów, które są przechowywane w pamięci. Można rozwinąć nazwę typu, aby wyświetlić dziesięć największych wystąpień typu, posortowane według rozmiaru. Wybierz typ lub wystąpienie, aby wyświetlić **ścieżki do katalogu głównego** i **przywoływanych obiektów** drzewa dla wybranego elementu.
 
- ![Drzewo stosu zarządzanego dla typu w raporcie różnica](../profiling/media/memuse_snapshotdiff_type_heap.png "sterty zarządzanej drzewa dla typu w raporcie różnicy")
+ ![Zarządzane drzewo sterty dla typu w raporcie różnicowym](../profiling/media/memuse_snapshotdiff_type_heap.png "Zarządzane drzewo sterty dla typu w raporcie różnicowym")
 
-**Sterty zarządzanej** drzewa w raporcie diff migawki zawiera następujące kolumny:
+**Zarządzane drzewo sterty** w raporcie różnic migawek zawiera następujące kolumny:
 
 |||
 |-|-|
-|**Typ obiektu**|Nazwa wystąpienia typu lub obiektu.|
-|**Liczba**|Liczba wystąpień typu podstawowego migawki. **Liczba** ma zawsze numer 1 dla wystąpienia.|
-|**Różnica liczby**|Dla typu, różnią się w liczbie wystąpień typu podstawowego migawki i poprzednią migawkę. To pole jest puste w przypadku wystąpienia.|
-|**Rozmiar (bajty)**|Rozmiar obiektów w migawce podstawowego, mniej rozmiar obiektów w obiektach. Dla typu **rozmiar (w bajtach)** i **całkowity rozmiar (w bajtach)** są sumy rozmiarów wystąpień typu.|
-|**Diff całkowity rozmiar (w bajtach)**|Dla typu, różnią się w całkowity rozmiar wystąpienia typu podstawowego migawki i poprzednią migawkę, mniej rozmiar obiektów w wystąpieniach. To pole jest puste w przypadku wystąpienia.|
-|**Całkowity rozmiar (w bajtach)**|Rozmiar obiektów w migawce podstawowego, takich jak rozmiar obiektów w obiektach.|
-|**Różnica w rozmiarze włącznie (w bajtach)**|Dla typu, różnią się rozmiar wszystkich wystąpień tego typu podstawowego migawki i poprzednią migawkę, takich jak rozmiar obiektów w obiektach. To pole jest puste w przypadku wystąpienia.|
+|**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|
+|**Liczbą**|Liczba wystąpień typu w podstawowej migawce. **Liczba** jest zawsze 1 dla wystąpienia.|
+|**Różnica w liczbie**|Dla typu, różnica w liczbie wystąpień typu między migawką podstawową i poprzednią migawką. Pole jest puste dla wystąpienia.|
+|**Rozmiar (w bajtach)**|Rozmiar obiektów w podstawowej migawce, mniejszej niż rozmiar obiektów w obiektach. Dla typu, **rozmiar (w bajtach)** i **rozmiar włącznie (w bajtach)** są sumami rozmiarów wystąpień typu.|
+|**Różnica w łącznym rozmiarze (w bajtach)**|Dla typu, różnica w łącznym rozmiarze wystąpień typu między migawką podstawową i poprzednią, mniejszą od rozmiaru obiektów w wystąpieniach. Pole jest puste dla wystąpienia.|
+|**Rozmiar włącznie (w bajtach)**|Rozmiar obiektów w podstawowej migawce, łącznie z rozmiarem obiektów w obiektach.|
+|**Różnica w rozmiarze włącznie (w bajtach)**|Dla typu, różnica w rozmiarze wszystkich wystąpień typu między migawką podstawową i poprzednią migawką, włącznie z rozmiarem obiektów w obiektach. Pole jest puste dla wystąpienia.|
 |**Module**|Moduł, który zawiera obiekt.|
 
-### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Ścieżki do katalogu głównego drzewa (Raporty migawki różnic)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a>Ścieżki do drzewa głównego (raporty różnic migawek)
 
-**Ścieżki do katalogu głównego drzewa** pokazuje łańcuch obiektów, które odwołują się typ lub wystąpienie. Moduł zbierający elementy bezużyteczne .NET Framework Czyści pamięć dla obiektu, tylko wtedy, gdy wszystkie odwołania do niego zostały zwolnione.
+**Ścieżka do drzewa głównego** pokazuje łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł wyrzucania elementów bezużytecznych czyści pamięć dla obiektu tylko wtedy .NET Framework, gdy wszystkie odwołania do niego zostały wydane.
 
-Dla typu w **ścieżki do obiektu głównego** liczbę obiektów, które zawierają odwołania do tego typu jest wyświetlana w drzewie **licznik odwołań** kolumny. Różnica w liczbie od poprzedniej migawki jest **Diff odwołanie** kolumny.
+Dla typu w drzewie **ścieżki do katalogu głównego** liczba obiektów, które zawierają odwołania do tego typu, pojawia się w kolumnie **liczba odwołań** . Różnica w liczniku od poprzedniej migawki znajduje się w kolumnie **różnic odwołania** .
 
- ![Ścieżki do katalogu głównego drzewa w raporcie diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "ścieżki do katalogu głównego drzewa w raporcie różnic")
+ ![Ścieżki do drzewa głównego w raporcie różnicowym](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Ścieżki do drzewa głównego w raporcie różnicowym")
 
-### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Przywoływane typy lub odwołanie do obiektów w drzewie (Raporty migawki różnic)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a>Przywoływane typy lub drzewo przywoływanych obiektów (raporty różnic migawek)
 
-**Przywoływane typy** lub **przywoływane obiekty** drzewa zawiera obiekty, które odwołuje się do wybranego typu lub wystąpienia.
+**Przywoływane typy** lub drzewa **obiektów, do** których istnieją odwołania, są wyświetlane obiekty, do których odwołuje się wybrany typ lub wystąpienie.
 
-![Przywoływane typy w raporcie diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "przywoływane typy w raporcie różnic")
+![Przywoływane typy w raporcie różnicowym](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Przywoływane typy w raporcie różnicowym")
 
-A **przywoływane typy** drzewa w raporcie diff migawki zawiera następujące kolumny. A **przywoływane obiekty** drzewo **wystąpienia**, **rozmiar (w bajtach)**, **całkowity rozmiar (w bajtach)**, i **modułu** kolumn.
+Drzewo **typów, do których istnieją odwołania** w raporcie różnic migawek, zawiera następujące kolumny. Drzewo **przywoływanych obiektów** ma **wystąpienie**, **rozmiar (bajty)** , **rozmiar włącznie (w bajtach)** i kolumny **modułów** .
 
 |||
 |-|-|
-|**Typ obiektu** lub **wystąpienia**|Nazwa wystąpienia typu lub obiektu.|
-|**Liczba odwołań**|Liczba wystąpień typu podstawowego migawki.|
-|**Różnica w liczbie odwołań**|Dla typu, różnią się w liczbie wystąpień typu podstawowego migawki i poprzednią migawkę.|
-|**Rozmiar (bajty)**|Rozmiar obiektów w migawce podstawowego, mniej rozmiar obiektów w obiektach. Dla typu **rozmiar (w bajtach)** i **całkowity rozmiar (w bajtach)** są sumy rozmiarów wystąpień typu.|
-|**Diff całkowity rozmiar (w bajtach)**|Dla typu, różnią się w całkowity rozmiar wystąpienia typu podstawowego migawki i poprzednią migawkę, mniej rozmiar obiektów w wystąpieniach. |
-|**Całkowity rozmiar (w bajtach)**|Rozmiar obiektów w migawce podstawowego, takich jak rozmiar obiektów w obiektach.|
-|**Różnica w rozmiarze włącznie (w bajtach)**|Dla typu, różnią się rozmiar wszystkich wystąpień tego typu podstawowego migawki i poprzednią migawkę, takich jak rozmiar obiektów w obiektach.|
+|**Typ obiektu** lub **wystąpienie**|Nazwa typu lub wystąpienia obiektu.|
+|**Liczba odwołań**|Liczba wystąpień typu w podstawowej migawce.|
+|**Różnica w liczbie odwołań**|Dla typu, różnica w liczbie wystąpień typu między migawką podstawową i poprzednią migawką.|
+|**Rozmiar (w bajtach)**|Rozmiar obiektów w podstawowej migawce, mniejszej niż rozmiar obiektów w obiektach. Dla typu, **rozmiar (w bajtach)** i **rozmiar włącznie (w bajtach)** są sumami rozmiarów wystąpień typu.|
+|**Różnica w łącznym rozmiarze (w bajtach)**|Dla typu, różnica w łącznym rozmiarze wystąpień typu między migawką podstawową i poprzednią, mniejszą od rozmiaru obiektów w wystąpieniach. |
+|**Rozmiar włącznie (w bajtach)**|Rozmiar obiektów w podstawowej migawce, łącznie z rozmiarem obiektów w obiektach.|
+|**Różnica w rozmiarze włącznie (w bajtach)**|Dla typu, różnica w rozmiarze wszystkich wystąpień typu między migawką podstawową i poprzednią migawką, włącznie z rozmiarem obiektów w obiektach.|
 |**Module**|Moduł, który zawiera obiekt.|
 
 ## <a name="see-also"></a>Zobacz także
-- [Pamięć języka JavaScript](../profiling/javascript-memory.md)
-- [Profilowanie w programie Visual Studio](../profiling/index.md)
+- [Pamięć JavaScript](../profiling/javascript-memory.md)
+- [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)
 - [Wydajność — najlepsze rozwiązania dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Diagnozowanie problemów z pamięcią za pomocą nowe narzędzie użycie pamięci w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)
+- [Diagnozowanie problemów z pamięcią za pomocą nowego narzędzia użycie pamięci w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

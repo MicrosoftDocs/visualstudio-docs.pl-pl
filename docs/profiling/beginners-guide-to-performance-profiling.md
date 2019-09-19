@@ -17,19 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033035"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128293"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Miara wydajności aplikacji, analizując użycie procesora CPU
-Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **użycie procesora CPU** karta Narzędzia diagnostyczne, aby uzyskać dane wydajności dotyczące Twojej aplikacji. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
+
+Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **użycie procesora CPU** karta Narzędzia diagnostyczne, aby uzyskać dane wydajności dotyczące Twojej aplikacji.
 
 Gdy debuger zatrzymuje, **użycie procesora CPU** Narzędzie gromadzi informacje o funkcjach, które są wykonywane w aplikacji. Narzędzie wyświetla listę funkcji, które zostały wykonując pracę i zawiera wykres osi czasu, w którym można skupić się na poszczególnych segmentach sesji pobierania próbek.
 
 Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania sesję diagnostyczną. Jeśli **użycie procesora CPU** nie oferują danych, których potrzebują, [innych narzędzi do profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne dla użytkownika. W wielu przypadkach wąskich gardeł wydajności aplikacji może być spowodowane przez coś innego niż Procesora, takich jak pamięć, renderowania interfejsu użytkownika lub czas żądania sieciowego. Centrum diagnostyki oferuje wiele innych opcji rejestracji i analizowaniu tego rodzaju danych.
+
+> [!Important]
+> Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
 
 W tym artykule omówimy Analizowanie użycia procesora CPU w normalnym przepływie pracy debugowania. Możesz również Analizowanie użycia procesora CPU bez debugera dołączone lub stosując uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchamianie narzędzi z lub bez debugeraprofilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
@@ -60,7 +64,7 @@ W tym samouczku wykonasz następujące czynności:
 
 5. Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
 
-     Po zakończeniu ładowania aplikacji zostanie wyświetlony widok podsumowania narzędzia diagnostyczne. Jeśli potrzebujesz otworzyć okno, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+     Po zakończeniu ładowania aplikacji zostanie wyświetlony widok podsumowania narzędzia diagnostyczne. Jeśli musisz otworzyć okno, kliknij pozycję **Debuguj** > **okna** > **Pokaż narzędzia diagnostyczne**.
 
      ![Karta Podsumowanie narzędzia do diagnostyki](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
 
@@ -86,7 +90,7 @@ W tym samouczku wykonasz następujące czynności:
 
      ![Diagnostyka narzędzia użycie procesora CPU kartę](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
 
-9. Jeśli chcesz wybrać region dokładniej kodu do analizy, wybierz region na osi czasu Procesora (musi to być region, który pokazuje dane profilowania).
+9. Jeśli chcesz wybrać bardziej konkretny region kodu do analizy, wybierz region na osi czasu procesora (musi to być region, w którym są wyświetlane dane profilowania).
 
      ![Narzędzia diagnostyczne, wybierając pozycję Segment czasu](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
@@ -109,15 +113,15 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
 
     ![Widok wywoływany obiekt wywołujący narzędzia do diagnostyki](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
-    W tym widoku wybranej funkcji pojawia się w nagłówku i w **bieżącą funkcję** pole (w tym przykładzie GetNumber). Funkcja, która wywołała bieżącą funkcję jest wyświetlany po lewej stronie w obszarze **podczas wywoływania funkcji**, oraz wszelkie funkcje wywołane przez bieżącą funkcję są pokazane w **funkcji o nazwie** pole po prawej stronie. (Możesz wybrać jedno z pól można zmienić bieżącej funkcji.)
+    W tym widoku wybranej funkcji pojawia się w nagłówku i w **bieżącą funkcję** pole (w tym przykładzie GetNumber). Funkcja, która wywołała bieżącą funkcję, jest pokazywana po lewej stronie w sekcji **wywoływanie funkcji**, a wszystkie funkcje wywoływane przez bieżącą funkcję są wyświetlane w polu **wywoływane funkcje** po prawej stronie. (Możesz wybrać jedno z pól można zmienić bieżącej funkcji.)
 
     Ten widok przedstawia łączny czas (ms) i procent ogólnej aplikacji, czas, który funkcji zostały podjęte w celu ukończenia działania.
-    **Funkcja treści** również przedstawia łączną ilość czasu (i wartość procentowa czasu) w treści funkcji bez czasu poświęcony na wywołanie i nazywane funkcjami. (W tym przykładzie 2367 poza 2389 ms spędzono w treści funkcji, a pozostałe ms 22 spędzono w kodzie zewnętrznych wywoływanych przez tę funkcję).
+    **Funkcja treści** również przedstawia łączną ilość czasu (i wartość procentowa czasu) w treści funkcji bez czasu poświęcony na wywołanie i nazywane funkcjami. (W tym przykładzie 2367 z 2389 MS zostało zużyte w treści funkcji, a pozostałe 22 MS nastąpiło w kodzie zewnętrznym wywoływanym przez tę funkcję).
 
     > [!TIP]
     > O wysokiej wartości w **treści funkcji** może wskazać wąskie gardło w samej funkcji.
 
-3. Aby wyświetlić widok wyższego poziomu, przedstawiający kolejność, w którym funkcje są wywoływane, wybierz **drzewo wywołań** z listy rozwijanej w górnej części okienka.
+3. Aby wyświetlić widok wyższego poziomu z kolejnością, w której są wywoływane funkcje, wybierz opcję **drzewo wywołań** z listy rozwijanej w górnej części okienka.
 
     Każdy ponumerowany obszar na rysunku dotyczy kroku procedury.
 
@@ -144,13 +148,13 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
     - **Moduły** nazwę modułu zawierającego funkcję lub liczba modułów zawierających funkcje w węźle [kod zewnętrzny].
 
     ::: moniker range=">=vs-2019"
-    Aby wyświetlić wywołania funkcji używających najwięcej procesora CPU w widoku drzewa wywołań, kliknij **Rozwiń ścieżkę aktywną**.
+    Aby wyświetlić wywołania funkcji, które używają najwyższej wartości procentowej przepustowości procesora w widoku drzewa wywołań, kliknij przycisk **Rozwiń ścieżkę gorącą**.
 
-    ![Diagnostyka narzędzi ścieżka aktywna](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
+    ![Gorąca ścieżka narzędzi diagnostycznych](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
     > [!NOTE]
-    > Jeśli zostanie wyświetlony kod w drzewie wywołań oznaczonego jako "uszkodzony" Kod lub "unwalkable stos", oznacza to, że śledzenie zdarzeń dla Windows (ETW) zdarzenia prawdopodobnie zostały usunięte. Spróbuj Kolekcjonowanie śladu tego samego po raz drugi w celu rozwiązania problemu.
+    > Jeśli zobaczysz kod w drzewie wywołań oznaczony jako "uszkodzony" lub "stos niemożliwy do przewidzenia", oznacza to, że zdarzenia śledzenia zdarzeń systemu Windows (ETW) zostały największej. Spróbuj zebrać ten sam ślad przy drugim czasie, aby rozwiązać ten problem.
 
 ## <a name="view-external-code"></a>Pokaż kod zewnętrzny
 

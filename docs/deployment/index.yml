@@ -1,0 +1,90 @@
+### YamlMime:Landing
+title: Dokumentacja wdrażania programu Visual Studio
+summary: Dowiedz się, jak wdrażać aplikacje, usługi i składniki przy użyciu programu Visual Studio
+metadata:
+  title: Wdrożenie w programie Visual Studio
+  description: Dowiedz się, jak wdrażać aplikacje, usługi i składniki przy użyciu programu Visual Studio.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/17/2019
+  ms.openlocfilehash: e682940552de083c167ac573b37d1ba5b7f10a4a
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71130636"
+landingContent:
+- title: Informacje o wdrażaniu
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Omówienie wdrażania
+      url: deploying-applications-services-and-components-resources.md
+    - text: Pierwsze spojrzenie na wdrażanie
+      url: deploying-applications-services-and-components.md
+- title: Wprowadzenie
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Publikowanie w usłudze Azure App Service
+      url: quickstart-deploy-to-azure.md
+    - text: Publikowanie w App Service dla systemu Linux
+      url: quickstart-deploy-to-linux.md
+    - text: Publikowanie w witrynie sieci Web
+      url: quickstart-deploy-to-a-web-site.md
+    - text: Publikowanie w folderze lokalnym
+      url: quickstart-deploy-to-local-folder.md
+- title: Wdrażanie aplikacji .NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Wdrażanie aplikacji platformy .NET Core
+      url: /dotnet/core/deploying/deploy-with-vs
+    - text: Wdrażanie aplikacji klasycznej za pomocą technologii ClickOnce
+      url: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+    - text: Tworzenie aplikacji ClickOnce z poziomu wiersza polecenia
+      url: building-clickonce-applications-from-the-command-line.md
+  - linkListType: how-to-guide
+    links:
+    - text: Pakowanie aplikacji klasycznych dla Sklepu Windows
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: Wdróż pakiety .NET na NuGet.org
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Publikuj w usłudze NuGet.org (.NET Standard)
+      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
+    - text: Publikuj w usłudze NuGet.org (.NET Framework)
+      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
+- title: Wdrażanie aplikacji ASP.NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Publikowanie ASP.NET Core na platformie Azure
+      url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vsd
+    - text: Importowanie ustawień publikowania i wdrażanie w usługach IIS
+      url: tutorial-import-publish-settings-iis.md
+    - text: Publikowanie za pomocą usługi git
+      url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
+- title: Wdrażanie C++ aplikacji
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Wdrażanie przy użyciu projektu instalacyjnego (C/C++)
+      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md
+    - text: Pakowanie aplikacji klasycznych dla Sklepu Windows
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: Wdrażanie aplikacji w języku Python
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Publikowanie w usłudze App Service w systemie Linux
+      url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
+- title: Wdrażanie aplikacji node. js
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Publikowanie w usłudze App Service w systemie Linux
+      url: ../javascript/publish-nodejs-app-azure.md

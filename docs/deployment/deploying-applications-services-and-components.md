@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222615"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128155"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
-Przez wdrożenie aplikacji, usługi lub składnika, należy go rozesłać do instalacji na innych komputerach, urządzeniach lub serwerach lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz. (Wiele typów aplikacji obsługuje inne narzędzia do wdrażania, takie jak wdrażanie wiersza polecenia lub NuGet, które nie zostały opisane w tym miejscu).
+Przez wdrożenie aplikacji, usługi lub składnika, należy go rozesłać do instalacji na innych komputerach, urządzeniach lub serwerach lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz. (Wiele typów aplikacji obsługuje inne narzędzia wdrażania, takie jak wdrożenie wiersza polecenia, które nie zostały opisane w tym miejscu).
 
 Zapoznaj się z przewodnikami Szybki Start i samouczkami, aby uzyskać instrukcje krok po kroku. Aby zapoznać się z omówieniem opcji wdrożenia, zobacz, [jakie opcje publikowania są odpowiednie dla mnie?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
@@ -44,7 +44,7 @@ Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoc
 
     ![Wybierz pozycję Publikuj](../deployment/media/quickstart-publish.png)
 
-- **Pulpit systemu Windows** Aplikację klasyczną systemu Windows można opublikować w folderze przy użyciu wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). Aby C++uzyskać więcej, zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dlaC++języka C/, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu Instalatora](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Pulpit systemu Windows** Aplikację klasyczną systemu Windows można opublikować w folderze przy użyciu wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). Aby C++uzyskać/CLI, zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dlaC++języka C/, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu Instalatora](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
@@ -83,7 +83,7 @@ Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoc
 
     Możesz również wdrożyć aplikacje i usługi ASP.NET na wiele innych sposobów. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji i usług sieci web ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Pulpit systemu Windows** Można opublikować aplikację klasyczną systemu Windows na serwerze sieci Web lub sieciowym udziale plików przy użyciu wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). Aby C++uzyskać więcej, zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dlaC++języka C/, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu Instalatora](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Pulpit systemu Windows** Można opublikować aplikację klasyczną systemu Windows na serwerze sieci Web lub sieciowym udziale plików przy użyciu wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). Aby C++uzyskać/CLI, zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dlaC++języka C/, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu Instalatora](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publikuj w Microsoft Store
 
@@ -93,9 +93,9 @@ W programie Visual Studio można tworzyć pakiety aplikacji do wdrożenia w Micr
 
     ![Tworzenie pakietu aplikacji](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Pulpit systemu Windows**: Program można wdrożyć do Microsoft Store za pomocą mostka programu Desktop rozpoczynającego się w programie Visual Studio 2017 w wersji 15,4. Aby to zrobić, Zacznij od utworzenia projektu pakietu aplikacji systemu Windows. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji klasycznych dla Microsoft Store (mostek Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Pulpit systemu Windows**: Program można wdrożyć do Microsoft Store, rozpoczynając od programu Visual Studio 2017 w wersji 15,4. Aby to zrobić, Zacznij od utworzenia projektu pakietu aplikacji systemu Windows. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji klasycznych na Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
 
-    ![Mostek Desktop](../deployment/media/feature-tour-desktop-bridge.png)
+    ![Pakowanie aplikacji klasycznej](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-net-packages-to-nugetorg"></a>Wdróż pakiety .NET na NuGet.org
 
