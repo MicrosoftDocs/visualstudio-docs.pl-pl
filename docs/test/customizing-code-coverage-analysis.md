@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0395e2d6e54e737af9a98d8c24b8ea29eff7577a
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118673"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150111"
 ---
 # <a name="customize-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 
@@ -63,7 +63,7 @@ Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wy
 
 ::: moniker-end
 
-### <a name="specify-symbol-search-paths"></a>Określ ścieżki wyszukiwania symboli
+## <a name="symbol-search-paths"></a>Ścieżki wyszukiwania symboli
 
 Pokrycie kodu wymaga plików symboli ( *.pdb* plików) dla zestawów. W przypadku zestawów skompilowanych w ramach rozwiązania pliki symboli są zwykle obecne obok plików binarnych, a pokrycie kodu działa automatycznie. W niektórych przypadkach może zajść potrzeba dołączenia przywoływanych zestawów do analizy pokrycia kodu. W takich przypadkach *.pdb* plików mogą nie być w przylegającymi do plików binarnych ale można określić ścieżkę wyszukiwania symbolu w *.runsettings* pliku.
 
@@ -77,9 +77,11 @@ Pokrycie kodu wymaga plików symboli ( *.pdb* plików) dla zestawów. W przypadk
 > [!NOTE]
 > Rozpoznawanie symboli może potrwać, szczególnie przy używaniu zdalnej lokalizacji pliku za pomocą wielu zestawów. W związku z tym, należy wziąć pod uwagę kopiowanie *.pdb* pliki do tej samej lokalizacji lokalnej co plik binarny ( *.dll* i *.exe*) plików.
 
-### <a name="exclude-and-include"></a>Dołączanie i wykluczanie
+## <a name="include-or-exclude-assemblies-and-members"></a>Dołącz lub Wyklucz zestawy i członków
 
-Określone zestawy można wykluczyć z analizy pokrycia kodu. Na przykład:
+Można dołączać lub wykluczać zestawy lub określone typy oraz członków z analizy pokrycia kodu. Jeśli sekcja **include** jest pusta lub pominięta, zostaną uwzględnione wszystkie zestawy, które są załadowane i skojarzono SKOJARZONE pliki PDB. Jeśli zestaw lub element członkowski jest zgodny z klauzulą w sekcji **exclude** , jest on wykluczony z pokrycia kodu. Sekcja **exclude** ma pierwszeństwo przed sekcją **include** : Jeśli zestaw znajduje się na liście **include** i **exclude**, nie zostanie uwzględniony w pokryciu kodu.
+
+Na przykład poniższy kod XML wyklucza pojedynczy zestaw, określając jego nazwę:
 
 ```xml
 <ModulePaths>
@@ -90,7 +92,7 @@ Określone zestawy można wykluczyć z analizy pokrycia kodu. Na przykład:
 </ModulePaths>
 ```
 
-Alternatywnie można określić zestawy, które powinny być włączone. Takie podejście ma zwrot, że po dodaniu większej liczby zestawów do rozwiązania należy pamiętać, aby dodać je do listy:
+W poniższym przykładzie określono, że tylko jeden zestaw powinien być uwzględniony w pokryciu kodu:
 
 ```xml
 <ModulePaths>
@@ -101,11 +103,20 @@ Alternatywnie można określić zestawy, które powinny być włączone. Takie p
 </ModulePaths>
 ```
 
-Jeśli **include** jest puste, przetwarzanie pokrycia kodu obejmuje wszystkie zestawy, które są ładowane i dla których można znaleźć pliki *. pdb* . Pokrycie kodu nie ma elementów, które odpowiadają klauzuli na liście **wykluczyć** listy. **Obejmują** jest przetwarzana przed **wykluczyć**.
+W poniższej tabeli przedstawiono różne sposoby dopasowywania zestawów i członków do dołączenia lub wykluczania z pokrycia kodu.
+
+| Element XML | Co pasuje |
+| - | - |
+| ModulePath | Dopasowuje zestawy określone przez nazwę zestawu lub ścieżkę pliku. |
+| CompanyName | Dopasowuje zestawy według atrybutu **firmy** . |
+| PublicKeyToken | Dopasowuje podpisane zestawy przez token klucza publicznego. |
+| Źródło | Dopasowuje elementy według nazwy ścieżki pliku źródłowego, w którym są zdefiniowane. |
+| Atrybut | Dopasowuje elementy, które mają określony atrybut. Określ pełną nazwę atrybutu, na przykład `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Jeśli wykluczasz <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> atrybut, kod, który używa funkcji języka, `async`takich `await`jak `yield return`,,, i zaimplementowane właściwości, jest wykluczony z analizy pokrycia kodu. Aby wykluczyć faktycznie wygenerowany kod, należy wykluczyć <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> tylko atrybut. |
+| Funkcja | Dopasowuje procedury, funkcje lub metody przez w pełni kwalifikowaną nazwę, łącznie z listą parametrów. Możesz również dopasować część nazwy przy użyciu [wyrażenia regularnego](#regular-expressions).<br/><br/>Przykłady:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>Wyrażenia regularne
 
-Węzły include i Exclude używają wyrażeń regularnych, które nie są takie same jak symbole wieloznaczne. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Oto kilka przykładów:
+Węzły include i Exclude używają wyrażeń regularnych, które nie są takie same jak symbole wieloznaczne. We wszystkich dopasowaniach rozróżniana jest wielkość liter. Oto kilka przykładów:
 
 - **. \***  dopasowuje ciąg znaków
 
@@ -119,9 +130,7 @@ Węzły include i Exclude używają wyrażeń regularnych, które nie są takie 
 
 - **$** Dopasowuje koniec ciągu
 
-We wszystkich dopasowaniach rozróżniana jest wielkość liter.
-
-Na przykład:
+Poniższy kod XML przedstawia sposób dołączania i wykluczania określonych zestawów przy użyciu wyrażeń regularnych:
 
 ```xml
 <ModulePaths>
@@ -138,48 +147,27 @@ Na przykład:
 </ModulePaths>
 ```
 
+Poniższy kod XML przedstawia sposób dołączania i wykluczania określonych funkcji przy użyciu wyrażeń regularnych:
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > Jeśli występuje błąd w wyrażeniu regularnym, takich jak o niezmienionym znaczeniu lub niedopasowane nawiasy, analiza pokrycia kodu nie działa.
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>Inne sposoby, aby dołączyć lub wykluczyć elementy
-
-- **ModulePath** — dopasowuje zestawy określone przez ścieżkę pliku zestawu.
-
-- **Nazwa firmy** — dopasowanie zestawów przez **firmy** atrybutu.
-
-- **PublicKeyToken** — dopasowuje zestawy podpisane przez token klucza publicznego.
-
-- **Źródło** — dopasowuje elementy według nazwy ścieżki pliku źródłowego, w której są zdefiniowane.
-
-- **Atrybut** — dopasowuje elementy, do których dołączono określony atrybut. Określ pełną nazwę atrybutu, na przykład `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.
-
-  > [!TIP]
-  > Jeśli wykluczasz <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> atrybut, kod, który używa funkcji języka, `async`takich `await`jak `yield return`,,, i zaimplementowane właściwości, jest wykluczony z analizy pokrycia kodu. Aby wykluczyć faktycznie wygenerowany kod, należy wykluczyć <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> tylko atrybut.
-
-- **Funkcja** — dopasowuje procedury, funkcji lub metody w pełni kwalifikowanej nazwy. Aby dopasować nazwę funkcji, wyrażenie regularne musi odpowiadać w pełni kwalifikowanej nazwy funkcji, łącznie z przestrzeni nazw, nazwa klasy, nazwy metody i listą parametrów. Na przykład:
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+Aby uzyskać więcej informacji na temat wyrażeń regularnych, zobacz [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="sample-runsettings-file"></a>Przykładowy plik .runsettings
 

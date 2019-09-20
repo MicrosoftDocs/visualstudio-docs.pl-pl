@@ -7,20 +7,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328805"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150176"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig
 
-Możesz dodać [EditorConfig](http://editorconfig.org/) plik do projektu lub kodu, aby wymusić spójnej kodowania style dla wszystkich użytkowników, który działa w bazie kodu. Ustawienia polecenia EditorConfig pierwszeństwo tekstu Visual Studio globalnego ustawienia edytora. Oznacza to, że możesz dostosować każdą bazę kodu do używania ustawień edytora tekstów, które są specyficzne dla tego projektu. Nadal można ustawić preferencje edytora osobistych w programie Visual Studio **opcje** okno dialogowe. Te ustawienia są stosowane zawsze, gdy pracujesz w bazie kodu bez *.editorconfig* pliku, lub gdy *.editorconfig* pliku nie zastępuje danego ustawienia. Przykładem takich preferencji jest styl wcięcia&mdash;tabulatory lub spacje.
+Można dodać plik [EditorConfig](http://editorconfig.org/) do projektu lub bazy kodu w celu wymuszenia spójnych stylów kodowania dla wszystkich, które działają w bazie kodu. Ustawienia polecenia EditorConfig pierwszeństwo tekstu Visual Studio globalnego ustawienia edytora. Oznacza to, że możesz dostosować każdą bazę kodu do używania ustawień edytora tekstów, które są specyficzne dla tego projektu. Nadal można ustawić preferencje edytora osobistych w programie Visual Studio **opcje** okno dialogowe. Te ustawienia są stosowane zawsze, gdy pracujesz w bazie kodu bez *.editorconfig* pliku, lub gdy *.editorconfig* pliku nie zastępuje danego ustawienia. Przykładem takich preferencji jest styl wcięcia&mdash;tabulatory lub spacje.
 
 Polecenie EditorConfig ustawienia są obsługiwane przez wiele kodu edytorami i środowiskami IDE, w tym Visual Studio. Jest przenośny składnikiem przybliżone ilości tych danych przy użyciu kodu i mogą zostać wymuszone kodowania stylów nawet poza programem Visual Studio.
 
-Po dodaniu pliku EditorConfig do projektu w programie Visual Studio, formatowanie istniejącego kodu nie jest zmieniany, chyba że formatowania dokumentu (**Edytuj** > **zaawansowane**  >  **Formatowania dokumentu** lub **Ctrl**+**K**, **Ctrl**+**D**w profilu domyślnym). Jednak wszelkie nowe wiersze kodu są sformatowane zgodnie z ustawieniami EditorConfig.
+::: moniker range=">=vs-2019"
+
+Po dodaniu pliku EditorConfig do projektu w programie Visual Studio, nowe wiersze kodu są formatowane zgodnie z ustawieniami EditorConfig. Formatowanie istniejącego kodu nie jest zmieniane, chyba że zostanie uruchomione jedno z następujących poleceń:
+
+ - [Czyszczenie kodu](../ide/code-styles-and-code-cleanup.md) (**Ctrl**+**K**,Ctrl+**E**), która stosuje wszystkie ustawienia białych znaków, takie jak styl wcięcia i wybrane ustawienia stylu kodu, takie jak sortowanie `using` instrukcji.
+ - **Edytuj** > **Dokument formatu** **zaawansowanego** ( **lub CTRL** **K,** Ctrl+D w profilu domyślnym), który stosuje tylko ustawienia białych znaków, takie jak wcięcie+ > stylów.
+ 
+ ::: moniker-end
+ 
+::: moniker range="=vs-2017"
+
+Po dodaniu pliku EditorConfig do projektu w programie Visual Studio, nowe wiersze kodu są formatowane zgodnie z ustawieniami EditorConfig. Formatowanie istniejącego kodu nie jest zmieniane, chyba że zostanie uruchomione, chyba że użytkownik sformatuje dokument (**Edycja** > **dokumentu w formacie** **zaawansowanym** > lub **Ctrl**+**K**, **Ctrl** + **D** w profilu domyślnym). Formatowanie dokumentu ma wpływ tylko na ustawienia białych znaków, takie jak styl wcięcia, chyba że skonfigurowano dokument formatu w celu [przeprowadzenia dodatkowego czyszczenia kodu](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+ 
+ ::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -55,13 +68,13 @@ Edytor programu Visual Studio obsługuje podstawowy zestaw [właściwości Edito
 - Wstaw\_final_newline
 - root
 
-Ustawienia edytora EditorConfig są obsługiwane we wszystkich językach obsługiwanych przez program Visual Studio, z wyjątkiem XML. Ponadto obsługuje EditorConfig [styl kodu](../ide/editorconfig-code-style-settings-reference.md) Konwencji, w tym [języka](../ide/editorconfig-language-conventions.md), [formatowanie](../ide/editorconfig-formatting-conventions.md), i [nazewnictwa](../ide/editorconfig-naming-conventions.md) konwencje C# i Visual Basic.
+Ustawienia edytora EditorConfig są obsługiwane we wszystkich językach obsługiwanych przez program Visual Studio, z wyjątkiem XML. Ponadto EditorConfig obsługuje konwencje [stylów kodu](../ide/editorconfig-code-style-settings-reference.md) , w tym [Język](../ide/editorconfig-language-conventions.md), [Formatowanie](../ide/editorconfig-formatting-conventions.md)i konwencje [nazewnictwa](../ide/editorconfig-naming-conventions.md) dla C# i Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Dodawanie i usuwanie plików EditorConfig
 
-Podczas dodawania pliku EditorConfig do projektu lub codebase, wszelkie nowe wiersze kodu są sformatowane zgodnie z plików EditorConfig. Jednak dodawania pliku EditorConfig nie konwertować istniejące style nowe licencje do momentu formatowania dokumentu. Na przykład jeśli masz wcięcia w pliku, które są formatowane przy użyciu kart, a następnie dodaj plik wtyczki EditorConfig, który wcięcia ze spacjami, znaki wcięcia nie są automatycznie konwertowane na spacje. Podczas formatowania dokumentu (**Edytuj** > **zaawansowane** > **Formatuj dokument** lub **Ctrl** + **K**, **Ctrl**+**D**), ustawienia w pliku EditorConfig są stosowane do istniejących wierszy kodu.
+Po dodaniu pliku EditorConfig do projektu lub bazy kodu, wszelkie nowe wiersze napisanego kodu są formatowane według pliku EditorConfig. Jednak dodanie pliku EditorConfig nie konwertuje istniejących stylów do nowych, dopóki nie sformatujesz dokumentu lub uruchomisz [oczyszczanie kodu](../ide/code-styles-and-code-cleanup.md). Na przykład, jeśli w pliku znajdują się wcięcia, które są sformatowane przy użyciu kart i dodasz plik EditorConfig, który jest wcięty ze spacjami, znaki wcięcia nie są automatycznie konwertowane na spacje. Podczas formatowania dokumentu (**Edycja** > **dokumentu w formacie** **zaawansowanym** > lub **Ctrl**+**K**, **Ctrl**+**D**), ustawienia odstępu w Plik EditorConfig są stosowane do istniejących wierszy kodu.
 
-Jeśli usuwanie pliku EditorConfig z projektu lub codebase i chcesz, aby nowe wiersze kodu formatowana zgodnie z ustawieniami edytora globalne, musisz zamknąć i ponownie otworzyć wszystkie pliki otwarte kodu.
+Jeśli usuniesz plik EditorConfig z projektu lub bazy kodu i chcesz, aby nowe wiersze kodu były sformatowane zgodnie z ustawieniami edytora globalnego, musisz zamknąć i ponownie otworzyć wszystkie otwarte pliki kodu.
 
 ### <a name="add-an-editorconfig-file-to-a-project"></a>Dodawanie pliku EditorConfig do projektu
 
@@ -71,29 +84,29 @@ Jeśli usuwanie pliku EditorConfig z projektu lub codebase i chcesz, aby nowe wi
 
    **Dodaj nowy element** zostanie otwarte okno dialogowe.
 
-1. W polu wyszukiwania, wyszukaj **editorconfig**.
+1. W polu wyszukiwania Wyszukaj ciąg **editorconfig**.
 
-   Dwa **editorconfig pliku** szablony elementu są wyświetlane w wynikach wyszukiwania.
+   Dwa szablony elementów **plików editorconfig** są wyświetlane w wynikach wyszukiwania.
 
-   ![Szablony elementów pliku EditorConfig w programie Visual Studio](media/editorconfig-item-templates.png)
+   ![Szablony elementów plików EditorConfig w programie Visual Studio](media/editorconfig-item-templates.png)
 
-1. Wybierz **editorconfig pliku (ustawienie domyślne)** szablon, aby dodać plik wtyczki EditorConfig wstępnie wypełnione przy użyciu dwa podstawowe opcje polecenia EditorConfig styl wcięcia i rozmiar. Lub wybierz **editorconfig pliku (.NET)** szablon, aby dodać plik wtyczki EditorConfig wstępnie wypełnione przy użyciu domyślnego [stylu kodu .NET, formatowania i konwencje nazewnictwa](../ide/editorconfig-code-style-settings-reference.md).
+1. Wybierz szablon **plik editorconfig (domyślny)** , aby dodać wstępnie wypełniony plik editorconfig z dwoma podstawowymi opcjami editorconfig dla stylu i rozmiaru wcięcia. Lub wybierz szablon **plik editorconfig (.NET)** , aby dodać wstępnie wypełniony plik editorconfig z domyślnym [stylem kodu platformy .NET, formatowaniem i konwencjami nazewnictwa](../ide/editorconfig-code-style-settings-reference.md).
 
    *.Editorconfig* plik pojawia się w Eksploratorze rozwiązań, a zostanie on otwarty w edytorze.
 
-   ![pliku .editorconfig w Eksploratorze rozwiązań i edytora](media/editorconfig-dotnet.png)
+   ![plik. editorconfig w Eksplorator rozwiązań i edytorze](media/editorconfig-dotnet.png)
 
-1. Przeprowadź edycję pliku zgodnie z potrzebami.
+1. Edytuj plik zgodnie z potrzebami.
 
 ### <a name="other-ways-to-add-an-editorconfig-file"></a>Inne sposoby dodawania pliku EditorConfig
 
 Istnieje kilka innych sposobów, w pliku EditorConfig można dodać do projektu:
 
-- [Funkcja wnioskowania kodu](/visualstudio/intellicode/code-style-inference) z IntelliCode dla programu Visual Studio wnioskuje style kodu z istniejącego kodu. Następnie tworzy pusty plik wtyczki EditorConfig za pomocą preferencji stylu kodu już zdefiniowane.
+- [Funkcja wnioskowania kodu](/visualstudio/intellicode/code-style-inference) rozszerzenia intellicode dla programu Visual Studio wnioskuje style kodu z istniejącego kodu. Następnie tworzy niepusty plik EditorConfig z preferencjami stylu kodu.
 
-- Począwszy od programu Visual Studio 2019 r można [Generowanie pliku EditorConfig na podstawie własnych ustawień styl kodu](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) w **narzędzia** > **opcje**.
+- Począwszy od programu Visual Studio 2019, można [wygenerować plik EditorConfig na podstawie ustawień stylu kodu](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) w**opcji** **Narzędzia** > .
 
-## <a name="file-hierarchy-and-precedence"></a>Pierwszeństwo i hierarchii plików
+## <a name="file-hierarchy-and-precedence"></a>Hierarchia i pierwszeństwo plików
 
 Po dodaniu *.editorconfig* pliku do folderu w hierarchii plików, jego ustawienia mają zastosowanie do wszystkich odpowiednich plików na tym samym poziomie i poniżej. Możesz również zastąpić ustawienia EditorConfig dla konkretnego projektu, kodu lub część kodu, taki sposób, że używa różnych konwencji niż inne części bazy kodu. Może to być przydatne, gdy dołączyć kod z żadnym innym miejscu, a nie chcesz zmienić jego Konwencji.
 
@@ -108,9 +121,9 @@ Jeśli chcesz zastąpić niektóre, ale nie wszystkie ustawienia, określ tylko 
 root = true
 ```
 
-Polecenie EditorConfig pliki są odczytywane od góry do dołu. W przypadku wielu właściwości o takiej samej nazwie najbardziej niedawno znalezione pierwszeństwo ma właściwość o tej nazwie.
+Pliki EditorConfig są odczytywane z góry do dołu. Jeśli istnieje wiele właściwości o tej samej nazwie, pierwszeństwo ma właściwość ostatnio znaleziona o tej nazwie.
 
-## <a name="edit-editorconfig-files"></a>Edytowanie plików EditorConfig
+## <a name="edit-editorconfig-files"></a>Edytuj pliki EditorConfig
 
 Program Visual Studio pozwala edytować *.editorconfig* plików, zapewniając listy uzupełniania IntelliSense.
 
@@ -147,7 +160,7 @@ Teraz, gdy ponownie naciśniesz **kartę** klucza, możesz uzyskać znaki tabula
 
 ![Klawisz TAB dodaje znak tabulacji](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshoot-editorconfig-settings"></a>Rozwiązywanie problemów z ustawieniami wtyczki EditorConfig
+## <a name="troubleshoot-editorconfig-settings"></a>Rozwiązywanie problemów z ustawieniami EditorConfig
 
 W przypadku plików EditorConfig dowolne miejsce w strukturze katalogów lub nowsza lokalizacji projektu, Visual Studio stosuje ustawienia edytora w tym pliku do edytora. W takim przypadku może zostać wyświetlony następujący komunikat na pasku stanu:
 

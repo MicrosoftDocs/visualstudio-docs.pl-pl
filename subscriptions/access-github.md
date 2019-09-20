@@ -1,21 +1,21 @@
 ---
-title: Pakiet programu Visual Studio i usługi GitHub | Microsoft Docs
+title: Oferta programu Visual Studio i usługi GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: Dowiedz się więcej o nowym pakiecie programu Visual Studio i GitHub
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+description: Dowiedz się więcej na temat nowej oferty programu Visual Studio i usługi GitHub
+ms.openlocfilehash: 6c34ecc37285166135584a98453a1e92393073ab
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377648"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150089"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Wprowadzenie do subskrypcji programu Visual Studio za pomocą usługi GitHub Enterprise  
 
-Klienci, którzy mają umowę Enterprise Agreement (EA) z firmą Microsoft, mogą zakupić nowy pakiet subskrypcji, który łączy subskrypcje programu Visual Studio w wersji Standard i usługi GitHub Enterprise. Jest to prosty i ekonomiczny sposób, w jaki Subskrybenci programu Visual Studio mogą uzyskać przedsiębiorstwo w serwisie GitHub. 
+Klienci, którzy mają umowę Enterprise Agreement (EA) z firmą Microsoft, mogą zakupić nową ofertę subskrypcji, która wiąże się z subskrypcjami programu Visual Studio w wersji Standard i usługi GitHub. Jest to prosty i ekonomiczny sposób, w jaki Subskrybenci programu Visual Studio mogą uzyskać przedsiębiorstwo w serwisie GitHub. 
 
 - Wprowadzaj innowacje na dużą skalę za pomocą programu Visual Studio i usługi GitHub, bezpieczniej dostarczając kod źródłowy, społeczność i najlepsze praktyki do środowiska IDE i przepływów pracy.
 - Korzystaj z najlepszych w klasie narzędzia deweloperskie i usługi dla deweloperów z najbardziej kompleksowym zestawem zasobów do tworzenia, wdrażania i zarządzania świetnymi aplikacjami. 
@@ -28,7 +28,7 @@ Jeśli organizacja wprowadza nową umowę EA lub odnawia istniejący, dostępne 
 - Visual Studio Enterprise z usługą GitHub Enterprise
 - Visual Studio Professional z usługą GitHub Enterprise
 
-Jeśli Twoja organizacja ma umowę EA, która nie jest jeszcze związana z odnowieniem, możesz zakupić jednostkę SKU "krok po kroku" w celu dodania przedsiębiorstwa usługi GitHub do istniejących Visual Studio Enterprise lub Visual Studio Professional subskrypcji.  Następnie po odnowieniu umowy można zakupić pakiet.
+Jeśli Twoja organizacja ma umowę EA, która nie jest jeszcze związana z odnowieniem, możesz zakupić jednostkę SKU "krok po kroku" w celu dodania przedsiębiorstwa usługi GitHub do istniejących Visual Studio Enterprise lub Visual Studio Professional subskrypcji. Następnie po odnowieniu umowy można zakupić ofertę.
 
 Istniejące jednostki SKU dla Visual Studio Enterprise, Visual Studio Professional i GitHub Enterprise również będą nadal dostępne osobno. 
 
@@ -40,7 +40,7 @@ Subskrypcje programu Visual Studio + Enterprise w witrynie GitHub są przypisane
 1. Subskrypcja programu Visual Studio (Enterprise lub Professional)
 2. Subskrypcja usługi GitHub Enterprise
 
-Gdy organizacja kupuje subskrypcje, są oni przypisani przez administratorów.  Subskrypcje programu Visual Studio i subskrypcje usługi GitHub Enterprise są przypisywane osobno.  
+Gdy organizacja kupuje subskrypcje, są oni przypisani przez administratorów. Subskrypcje programu Visual Studio i subskrypcje usługi GitHub Enterprise są przypisywane osobno.  
 
 Jeśli masz przypisaną subskrypcję programu Visual Studio i GitHub, otrzymasz wiadomość e-mail z informacją o tym, że administrator subskrypcji programu Visual Studio przypisał subskrypcję do Ciebie.  W tym momencie będzie można go zobaczyć pod adresem https://my.visualstudio.com/subscriptions.  
 

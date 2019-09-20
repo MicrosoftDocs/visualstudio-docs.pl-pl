@@ -1,7 +1,7 @@
 ---
-title: Utwórz plik bazy danych i za pomocą projektanta tabel
-description: Samouczek, który zawiera opis sposobu dodawania tabel i kluczy obcych do bazy danych przy użyciu projektanta tabel w programie Visual Studio. Pokazano również, jak dodawać dane za pomocą interfejsu graficznego.
-ms.date: 11/03/2017
+title: Utwórz plik bazy danych i użyj projektanta tabel
+description: Samouczek opisujący sposób dodawania tabel i kluczy obcych do bazy danych przy użyciu projektanta tabel w programie Visual Studio. Przedstawiono w nim również sposób dodawania danych za pomocą interfejsu graficznego.
+ms.date: 09/19/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
@@ -13,177 +13,169 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
+ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501075"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71159932"
 ---
-# <a name="create-a-database-and-add-tables-in-visual-studio"></a>Tworzenie bazy danych i dodawanie tabel w programie Visual Studio
+# <a name="create-a-database-and-add-tables-in-visual-studio"></a>Tworzenie bazy danych i Dodawanie tabel w programie Visual Studio
 
-Za pomocą programu Visual Studio do tworzenia i aktualizowania lokalnego pliku bazy danych w SQL Server Express LocalDB. Można również utworzyć bazę danych, wykonując instrukcje języka Transact-SQL w **Eksplorator obiektów SQL Server** okna narzędzi w programie Visual Studio. W tym temacie utworzymy *.mdf* pliku i Dodaj tabelami i kluczami przy użyciu projektanta tabel.
+Możesz użyć programu Visual Studio do utworzenia i zaktualizowania lokalnego pliku bazy danych w SQL Server Express LocalDB. Bazę danych można również utworzyć, wykonując instrukcje języka Transact-SQL w oknie narzędzia **Eksplorator obiektów SQL Server** w programie Visual Studio. W tym temacie utworzymy plik *. mdf* i dodamy tabele i klucze przy użyciu projektanta tabel.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Do przeprowadzenia tego instruktażu, konieczne jest posiadanie opcjonalnego **przechowywanie i przetwarzanie danych** obciążenia zainstalowane w programie Visual Studio. Aby go zainstalować, otwórz **Instalatora programu Visual Studio** i wybierz polecenie **Modyfikuj** lub **więcej** > **Modyfikuj** obok wersji Program Visual Studio, który chcesz zmodyfikować.
-
-::: moniker range=">=vs-2019"
-
-Na **obciążeń** , w obszarze **inne zestawy narzędzi**, wybierz **przechowywanie i przetwarzanie danych**, a następnie kliknij przycisk **Modyfikuj** obciążenia, aby dodać Program Visual Studio.
-
-::: moniker-end
-
-::: moniker range="=vs-2017"
-
-Na **obciążeń** , w obszarze **sieć Web i chmura**, wybierz **przechowywanie i przetwarzanie danych**, a następnie kliknij przycisk **Modyfikuj** obciążenia, aby dodać Program Visual Studio.
-
-::: moniker-end
+Aby ukończyć ten przewodnik, konieczne będzie zainstalowanie **aplikacji klasycznych platformy .NET** oraz obciążeń związanych z tworzeniem **i przetwarzaniem danych** w programie Visual Studio. Aby je zainstalować, Otwórz **Instalator programu Visual Studio** a następnie wybierz pozycję **Modyfikuj** (lub **więcej** > **modyfikacji**) obok wersji programu Visual Studio, którą chcesz zmodyfikować.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Tworzenie projektu i pliku lokalnej bazy danych
 
-1. Utwórz nową **Windows Forms App** projektu i nadaj mu nazwę **SampleDatabaseWalkthrough**.
+1. Utwórz nowy projekt **aplikacji Windows Forms** i nadaj mu nazwę **SampleDatabaseWalkthrough**.
 
-2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Na pasku menu wybierz pozycję **projekt** > **Dodaj nowy element**.
 
-3. Na liście szablonów elementów przewiń w dół i wybierz **usługową bazę danych**.
+3. Na liście szablonów elementów przewiń w dół i wybierz pozycję **baza danych oparta na usłudze**.
 
-     ![Okno dialogowe szablonów elementu](../data-tools/media/raddata-vsitemtemplates.png)
+   ![Szablony elementów — okno dialogowe](../data-tools/media/raddata-vsitemtemplates.png)
 
 4. Nazwij bazę danych **SampleDatabase**, a następnie kliknij przycisk **Dodaj**.
 
 ### <a name="add-a-data-source"></a>Dodawanie źródła danych
 
-1. Jeśli **źródeł danych** okno nie jest otwarte, otwórz ją, naciskając klawisz **Shift**+**Alt**+**D** lub wybierania **Widoku** > **Windows inne** > **źródeł danych** na pasku menu.
+1. Jeśli okno **źródła danych** nie jest otwarte, otwórz je, naciskając klawisz **SHIFT**+**Alt**+**D** lub wybierając pozycję **Wyświetl** > inne**źródła danych** **systemu Windows** >  pasek menu.
 
-1. W **źródeł danych** wybierz **Dodaj nowe źródło danych** łącza.
+1. W oknie **źródła danych** wybierz pozycję **Dodaj nowe źródło danych**.
 
-   **Kreatora konfiguracji źródła danych** zostanie otwarty.
+   ![Dodawanie nowego źródła danych w programie Visual Studio](media/add-new-data-source.png)
 
-1. Na **wybierz typ źródła danych** wybierz **bazy danych** , a następnie wybierz **dalej**.
+   Zostanie otwarty **Kreator konfiguracji źródła danych** .
 
-1. Na **wybierz Model bazy danych** wybierz **dalej** aby zaakceptować wartości domyślne (zestaw danych).
+1. Na stronie **Wybierz typ źródła danych** wybierz pozycję **baza danych** , a następnie wybierz przycisk **dalej**.
 
-1. Na **wybierz połączenie danych** wybierz opcję **SampleDatabase.mdf** pliku na liście rozwijanej, a następnie wybierz **dalej**.
+1. Na stronie **Wybierz model bazy danych** wybierz pozycję **dalej** , aby zaakceptować wartość domyślną (DataSet).
 
-1. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** wybierz **dalej**.
+1. Na stronie **Wybierz połączenie danych** wybierz plik **SampleDatabase. mdf** z listy rozwijanej, a następnie wybierz przycisk **dalej**.
 
-1. Jeden **wybierz obiekty bazy danych** stronie zostanie wyświetlony komunikat informujący, że baza danych nie zawiera żadnych obiektów. Wybierz **Zakończ**.
+1. Na stronie **Zapisz parametry połączenia do pliku konfiguracji aplikacji** wybierz pozycję **dalej**.
+
+1. Na stronie **Wybierz obiekty bazy danych** zobaczysz komunikat informujący, że baza danych nie zawiera żadnych obiektów. Wybierz **Zakończ**.
 
 ### <a name="view-properties-of-the-data-connection"></a>Wyświetl właściwości połączenia danych
 
-Możesz wyświetlić parametry połączenia dla *SampleDatabase.mdf* plików, otwierając okno właściwości połączenia danych:
+Parametry połączenia dla pliku *SampleDatabase. mdf* można wyświetlić, otwierając okno właściwości połączenia danych:
 
-- Wybierz **widoku** > **Eksplorator obiektów SQL Server** otworzyć **Eksplorator obiektów SQL Server** okna. Rozwiń **(localdb) \MSSQLLocalDB** > **baz danych**, a następnie kliknij prawym przyciskiem myszy *SampleDatabase.mdf* i wybierz **właściwości**.
+- Wybierz pozycję **Wyświetl** > **Eksplorator obiektów SQL Server** , aby otworzyć okno **Eksplorator obiektów SQL Server** . Rozwiń **(LocalDB) \MSSQLLocalDB** > **bazy danych**, a następnie kliknij prawym przyciskiem myszy *SampleDatabase. mdf* i wybierz pozycję **Właściwości**.
 
-- Alternatywnie, można wybrać **widoku** > **Eksploratora serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając **połączeń danych** węzła, otwierając menu skrótów dla *SampleDatabase.mdf*, a następnie wybierając **właściwości**.
+- Alternatywnie możesz wybrać opcję **Wyświetl** > **Eksplorator serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno Właściwości, rozwijając węzeł **połączenia danych** , kliknij prawym przyciskiem myszy pozycję *SampleDatabase. mdf*, a następnie wybierz polecenie **Właściwości**.
 
-## <a name="create-tables-and-keys-by-using-table-designer"></a>Tworzenie tabel i kluczy przy użyciu projektanta tabel
+## <a name="create-tables-and-keys-by-using-table-designer"></a>Tworzenie tabel i kluczy za pomocą projektanta tabel
 
-W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wierszy przykładowych danych. Utworzysz też klucz obcy, aby określić, jak rekordy w jednej tabeli odpowiadać rekordom w drugiej tabeli.
+W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wierszy przykładowych danych. Utworzysz również klucz obcy, aby określić, jak rekordy w jednej tabeli odpowiadają rekordom w drugiej tabeli.
 
 ### <a name="create-the-customers-table"></a>Tworzenie tabeli Customers
 
-1. W **Eksploratora serwera**, rozwiń węzeł **połączeń danych** węzła, a następnie rozwiń węzeł **SampleDatabase.mdf** węzła.
+1. W **Eksplorator serwera**rozwiń węzeł **połączenia danych** , a następnie rozwiń węzeł **SampleDatabase. mdf** .
 
-2. Otwórz menu skrótów dla **tabel**, a następnie wybierz pozycję **Dodaj nową tabelę**.
+2. Kliknij prawym przyciskiem myszy pozycję **tabele** i wybierz polecenie **Dodaj nową tabelę**.
 
-     **Projektanta tabel** otwiera i pokazuje siatkę z jednym domyślnym wierszem, który reprezentuje pojedynczą kolumnę w tabeli, które tworzysz. Przez dodawanie wierszy do siatki dodajesz kolumny w tabeli.
+   Zostanie otwarty projektant tabel i zostanie wyświetlona siatka z jednym wierszem domyślnym, który reprezentuje pojedynczą kolumnę w tworzonej tabeli. Przez dodawanie wierszy do siatki dodajesz kolumny w tabeli.
 
 3. W siatce dodaj wiersz dla każdego z poniższych wpisów:
 
-    |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
-    |-----------------|---------------|-----------------|
-    |`CustomerID`|`nchar(5)`|False (usunięty)|
-    |`CompanyName`|`nvarchar(50)`|False (usunięty)|
-    |`ContactName`|`nvarchar (50)`|True (wybrane)|
-    |`Phone`|`nvarchar (24)`|True (wybrane)|
+   |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
+   |-----------------|---------------|-----------------|
+   |`CustomerID`|`nchar(5)`|False (usunięty)|
+   |`CompanyName`|`nvarchar(50)`|False (usunięty)|
+   |`ContactName`|`nvarchar (50)`|True (wybrane)|
+   |`Phone`|`nvarchar (24)`|True (wybrane)|
 
-4. Otwórz menu skrótów dla `CustomerID` wiersza, a następnie wybierz pozycję **Ustaw klucz podstawowy**.
+4. Kliknij prawym przyciskiem `CustomerID` myszy wiersz, a następnie wybierz pozycję **Ustaw klucz podstawowy**.
 
-5. Otwórz menu skrótów dla domyślnego wiersza, a następnie wybierz **Usuń**.
+5. Kliknij prawym przyciskiem myszy wiersz domyślny (`Id`), a następnie wybierz polecenie **Usuń**.
 
 6. Nadaj tabeli nazwę Customers, aktualizując pierwszy wiersz w okienku skryptu, aby dopasować następujący przykład:
 
-    ```sql
-    CREATE TABLE [dbo].[Customers]
-    ```
+   ```sql
+   CREATE TABLE [dbo].[Customers]
+   ```
 
-    Powinien zostać wyświetlony podobny do poniższego:
+   Powinieneś wyglądać następująco:
 
-    ![Projektant tabel](../data-tools/media/raddata-table-designer.png)
+   ![Projektant tabel](../data-tools/media/table-designer.png)
 
-7. W lewym górnym rogu **projektanta tabel**, wybierz opcję **aktualizacji**.
+7. W lewym górnym rogu **projektanta tabeli**wybierz pozycję **Aktualizuj**.
 
-8. W **Podgląd aktualizacji bazy danych** okno dialogowe, wybierz opcję **Aktualizuj bazę danych**.
+8. W oknie dialogowym **Podgląd aktualizacji bazy danych** wybierz pozycję **Aktualizuj bazę danych**.
 
-    Wprowadzone zmiany są zapisywane w lokalnym pliku bazy danych.
+   Tabela Customers jest tworzona w lokalnym pliku bazy danych.
 
-### <a name="create-the-orders-table"></a>Utworzyć tabelę Orders
+### <a name="create-the-orders-table"></a>Tworzenie tabeli Orders
 
 1. Dodaj inną tabelę, a następnie dodaj wiersz dla każdego wpisu w tabeli poniżej:
 
-    |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
-    |-----------------|---------------|-----------------|
-    |`OrderID`|`int`|False (usunięty)|
-    |`CustomerID`|`nchar(5)`|False (usunięty)|
-    |`OrderDate`|`datetime`|True (wybrane)|
-    |`OrderQuantity`|`int`|True (wybrane)|
+   |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
+   |-----------------|---------------|-----------------|
+   |`OrderID`|`int`|False (usunięty)|
+   |`CustomerID`|`nchar(5)`|False (usunięty)|
+   |`OrderDate`|`datetime`|True (wybrane)|
+   |`OrderQuantity`|`int`|True (wybrane)|
 
-2. Ustaw **OrderID** jako klucz podstawowy, a następnie usuń domyślny wiersz.
+2. Ustaw pozycję **IDZamówienia** jako klucz podstawowy, a następnie Usuń wiersz domyślny.
 
 3. Nadaj tabeli nazwę Orders, aktualizując pierwszy wiersz w okienku skryptu, aby dopasować następujący przykład:
 
-    ```sql
-    CREATE TABLE [dbo].[Orders]
-    ```
+   ```sql
+   CREATE TABLE [dbo].[Orders]
+   ```
 
-4. W lewym górnym rogu **projektanta tabel**, wybierz opcję **aktualizacji** przycisku.
+4. W lewym górnym rogu **projektanta tabel**wybierz pozycję **Aktualizuj**.
 
-5. W **Podgląd aktualizacji bazy danych** okno dialogowe, wybierz opcję **Aktualizuj bazę danych** przycisku.
+5. W oknie dialogowym **Podgląd aktualizacji bazy danych** wybierz pozycję **Aktualizuj bazę danych**.
 
-    Wprowadzone zmiany są zapisywane w lokalnym pliku bazy danych.
+   Tabela Orders jest tworzona w lokalnym pliku bazy danych. Jeśli rozszerzasz węzeł **tabele** w Eksplorator serwera, zobaczysz dwie tabele:
+
+   ![Węzeł tabel rozwinięty w Eksplorator serwera](media/server-explorer-tables-node.png)
 
 ### <a name="create-a-foreign-key"></a>Tworzenie klucza obcego
 
-1. W okienku kontekstowym po prawej stronie siatki, otwórz menu skrótów dla **klucze obce**, a następnie wybierz pozycję **Dodaj nowy klucz obcy**, jak pokazano na poniższej ilustracji.
+1. W okienku kontekstowym po prawej stronie siatki projektanta tabel dla tabeli Orders (zamówienia) kliknij prawym przyciskiem myszy pozycję **klucze obce** i wybierz polecenie **Dodaj nowy klucz obcy**.
 
-     ![Dodawanie klucza obcego w Projektancie tabel](../data-tools/media/foreignkey.png)
+   ![Dodawanie klucza obcego w Projektancie tabel w programie Visual Studio](../data-tools/media/add-foreign-key.png)
 
-2. W wyświetlonym polu tekstowym Zamień **ToTable** z **klientów**.
+2. W wyświetlonym polu tekstowym Zamień tekst **ToTable** na **klientów**.
 
-3. W okienku języka T-SQL zaktualizuj ostatni wiersz, aby dopasować następujący przykład:
+3. W okienku T-SQL zaktualizuj ostatni wiersz, aby dopasować go do poniższego przykładu:
 
-    ```sql
-    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
-    ```
+   ```sql
+   CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
+   ```
 
-4. W lewym górnym rogu **projektanta tabel**, wybierz opcję **aktualizacji** przycisku.
+4. W lewym górnym rogu **projektanta tabel**wybierz pozycję **Aktualizuj**.
 
-5. W **Podgląd aktualizacji bazy danych** okno dialogowe, wybierz opcję **Aktualizuj bazę danych** przycisku.
+5. W oknie dialogowym **Podgląd aktualizacji bazy danych** wybierz pozycję **Aktualizuj bazę danych**.
 
-    Wprowadzone zmiany są zapisywane w lokalnym pliku bazy danych.
+   Zostanie utworzony klucz obcy.
 
 ## <a name="populate-the-tables-with-data"></a>Wypełnianie tabel danymi
 
-1. W **Eksploratora serwera** lub **Eksplorator obiektów SQL Server**, rozwiń węzeł przykładowej bazy danych.
+1. W **Eksplorator serwera** lub **Eksplorator obiektów SQL Server**rozwiń węzeł przykładowej bazy danych.
 
-2. Otwórz menu skrótów dla **tabel** węzeł **Odśwież**, a następnie rozwiń węzeł **tabel** węzła.
+2. Otwórz menu skrótów dla węzła **tabele** , wybierz **Odśwież**, a następnie rozwiń węzeł **tabele** .
 
-3. Otwórz menu skrótów dla tabeli Customers, a następnie wybierz **Pokaż dane tabeli**.
+3. Otwórz menu skrótów dla tabeli Customers, a następnie wybierz polecenie **Pokaż dane tabeli**.
 
-4. Dodaj dowolne dane, które mają dla niektórych klientów.
+4. Dodaj dowolne dane dla niektórych klientów.
 
     Można określić dowolne pięć znaków jako identyfikatory klienta, ale należy wybrać co najmniej jeden, który można zapamiętać do użycia w dalszej części tej procedury.
 
-5. Otwórz menu skrótów dla tabeli zamówienia, a następnie wybierz **Pokaż dane tabeli**.
+5. Otwórz menu skrótów dla tabeli Orders, a następnie wybierz polecenie **Pokaż dane tabeli**.
 
-6. Dodawanie danych dla niektórych zleceń.
+6. Dodaj dane dla niektórych zamówień.
 
     > [!IMPORTANT]
-    > Upewnij się, że wszystkie identyfikatory zamówień i ilości zamówienia są liczbami całkowitymi i że każdy identyfikator klienta odpowiada wartości określonej w **CustomerID** kolumny w tabeli Klienci.
+    > Upewnij się, że wszystkie identyfikatory zamówień i ilości zamówień są liczbami całkowitymi i że każdy identyfikator klienta odpowiada wartości określonej w kolumnie **IDKlienta** tabeli Customers.
 
-7. Na pasku menu wybierz **pliku** > **Zapisz wszystko**.
+7. Na pasku menu wybierz pozycję **plik** > **Zapisz wszystko**.
 
 ## <a name="see-also"></a>Zobacz także
 
