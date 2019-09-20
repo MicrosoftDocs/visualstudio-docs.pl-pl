@@ -1,10 +1,10 @@
 - name: Dokumentacja wdrażania
-  href: index.md
+  href: index.yml
 - name: Omówienie
   items:
     - name: Omówienie wdrażania
       href: deploying-applications-services-and-components-resources.md
-- name: Przewodniki Szybki start
+- name: Przewodniki Szybki Start
   items:
     - name: Pierwsze spojrzenie na wdrażanie
       href: deploying-applications-services-and-components.md
@@ -22,8 +22,8 @@
       items:
         - name: Wdrażanie aplikacji .NET Core za pomocą narzędzia publikowania
           href: /dotnet/core/deploying/deploy-with-vs
-        - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store (mostek dla aplikacji klasycznych)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Wdrażanie aplikacji klasycznej za pomocą technologii ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Tworzenie aplikacji ClickOnce z wiersza poleceń
@@ -38,14 +38,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Ciągłe wdrażanie platformy ASP.NET Core na platformie Azure za pomocą usługi Git
           href: /aspnet/core/publishing/azure-continuous-deployment
-        - name: Publikowanie w usłudze Kubernetes przy użyciu narzędzi Kubernetes programu Visual Studio
-          href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
     - name: C++
       items:
         - name: Wdrażanie aplikacji C/C++
           href: /cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store (mostek dla aplikacji klasycznych)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Wdrażanie aplikacji C++/CLR za pomocą technologii ClickOnce...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: Platforma UWP
@@ -80,7 +78,7 @@
               href: localizing-clickonce-applications.md
             - name: Publikowanie projektu o specyficznych ustawieniach regionalnych
               href: how-to-publish-a-project-that-has-a-specific-locale.md
-        - name: Bezpieczeństwo
+        - name: Zabezpieczenia
           items:
             - name: Zabezpieczanie aplikacji ClickOnce
               href: securing-clickonce-applications.md

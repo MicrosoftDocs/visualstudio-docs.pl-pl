@@ -523,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: 'CA1824: Oznaczaj zestawy za pomocą atrybutu NeutralResourcesLanguageAttribute'
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: 'CA1825: Unikaj alokacji tablic o zerowej długości'
+                  href: ca1825.md
             - name: Ostrzeżenia dotyczące przenośności
               items:
                 - name: Omówienie
