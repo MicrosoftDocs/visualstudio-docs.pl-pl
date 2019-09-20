@@ -1,5 +1,5 @@
 - name: Dokumentacja profilowania
-  href: index.md
+  href: index.yml
 - name: Omówienie
   href: profiling-overview.md
 - name: Przewodniki Szybki Start

@@ -660,12 +660,12 @@
       href: test/improve-code-quality.md
     - name: Mierzenie wydajności >>
       displayName: Profiling
-      href: profiling/index.md
+      href: profiling/index.yml
     - name: Analizowanie jakości kodu >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
     - name: Wdrażanie >>
-      href: deployment/index.md
+      href: deployment/index.yml
     - name: Rozszerzanie funkcjonalności programu Visual Studio >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
