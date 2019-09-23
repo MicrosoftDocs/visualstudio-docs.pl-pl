@@ -3,7 +3,7 @@ title: Tworzenie aplikacji platforma uniwersalna systemu Windows (platformy UWP)
 description: Tworzenie aplikacji platformy UWP w programie Visual Studio przy użyciu języka XAML iC#
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 930512d762a05a91ab233566b76c6591ab2ea6d4
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095372"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186830"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Samouczek: Tworzenie pierwszej aplikacji platforma uniwersalna systemu Windows w programie Visual Studio za pomocą języków XAML i C&#35;
 
@@ -62,6 +62,10 @@ Najpierw utwórz projekt platforma uniwersalna systemu Windows. Typ projektu jes
 
    > [!NOTE]
    > Jeśli nie widzisz szablonu projektu **pusta aplikacja (uniwersalna systemu Windows)** , kliknij link **Zainstaluj więcej narzędzi i funkcji** .<br><br>![Kliknij link zainstaluj więcej narzędzi i funkcji](media/vs-2019/uwp-not-finding.png)<br><br>Uruchamia Instalatora programu Visual Studio. Wybierz **platforma uniwersalna systemu Windows obciążenie programowaniem** , a następnie wybierz polecenie **Modyfikuj**.<br><br>![platforma uniwersalna systemu Windows obciążenie programowaniem w Instalator programu Visual Studio](media/uwp-dev-workload.png)
+
+1. Nadaj projektowi nazwę, _HelloWorld_i wybierz pozycję **Utwórz**.
+
+   ![Konfigurowanie ekranu projektu](media/vs-2019/uwp-configure-your-project.png)
 
 1. Zaakceptuj domyślną **wersję docelową** i ustawienia **minimalnej wersji** w oknie dialogowym **Nowy projekt platforma uniwersalna systemu Windows** .
 
@@ -154,6 +158,8 @@ Kod używa niektórych interfejsów API systemu Windows, aby utworzyć obiekt sy
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
+
+::: moniker range="vs-2017"
 Czas na skompilowanie, wdrożenie i uruchomienie aplikacji platformy UWP "Hello world", aby zobaczyć, co wygląda i czego szuka. Poniżej przedstawiono sposób.
 
 1. Użyj przycisku Odtwórz (ma tekst **komputer lokalny**), aby uruchomić aplikację na komputerze lokalnym.
@@ -171,6 +177,28 @@ Czas na skompilowanie, wdrożenie i uruchomienie aplikacji platformy UWP "Hello 
    Twoje urządzenie z systemem Windows 10 będzie dosłownie "Hello, World!"
 
 1. Aby zamknąć aplikację, kliknij przycisk **Zatrzymaj debugowanie** na pasku narzędzi. (Alternatywnie wybierz **Debuguj** > **Zatrzymaj debugowanie** z paska menu lub naciśnij klawisze Shift + F5).
+
+::: moniker-end
+::: moniker range=">=vs-2019"
+Czas na skompilowanie, wdrożenie i uruchomienie aplikacji platformy UWP "Hello world", aby zobaczyć, co wygląda i czego szuka. Poniżej przedstawiono sposób.
+
+1. Użyj przycisku Odtwórz (ma tekst **komputer lokalny**), aby uruchomić aplikację na komputerze lokalnym.
+
+   ![Kliknij pozycję maszyna lokalna, aby uruchomić i debugować aplikację platformy UWP](media/uwp-start-or-debug.png)
+
+   (Możesz również wybrać **Debuguj** > **Rozpocznij debugowanie** z paska menu lub naciśnij klawisz F5, aby uruchomić aplikację).
+
+1. Wyświetl aplikację, która pojawia się wkrótce po usunięciu ekranu powitalnego. Aplikacja powinna wyglądać podobnie do tego:
+
+   ![Aplikacja platformy UWP "Hello world"](media/vs-2019/uwp-hello-world-app.png)
+
+1. Kliknij przycisk **Hello World** .
+
+   Twoje urządzenie z systemem Windows 10 będzie dosłownie "Hello, World!"
+
+1. Aby zamknąć aplikację, kliknij przycisk **Zatrzymaj debugowanie** na pasku narzędzi. (Alternatywnie wybierz **Debuguj** > **Zatrzymaj debugowanie** z paska menu lub naciśnij klawisze Shift + F5).
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -1,6 +1,6 @@
 ---
 title: Konwencje języka .NET dla EditorConfig
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,22 +13,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551416"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186535"
 ---
 # <a name="language-conventions"></a>Konwencje języka
 
 Konwencje językowe dla EditorConfig w programie Visual Studio dzielą się na dwie kategorie: te, C#które mają zastosowanie do Visual Basic C# i i tych, które są określone. Konwencje językowe mają wpływ na sposób używania różnych aspektów języka programowania, na przykład modyfikatory i nawiasy.
 
 > [!TIP]
-> - **W tym artykule** znajdują się linki umożliwiające przechodzenie do różnych sekcji strony.
 > - Aby wyświetlić przykłady kodu w preferowanym języku programowania, wybierz go za pomocą selektora języka w prawym górnym rogu okna przeglądarki.
 >
 >   ![Kontrolka selektora języka kodu](media/code-language-picker.png)
+>
+> - **W tym artykule** znajdują się linki umożliwiające przechodzenie do różnych sekcji strony.
 
 ## <a name="rule-format"></a>Format reguły
 
@@ -36,19 +37,48 @@ Reguły dotyczące konwencji języka mają następujący format ogólny:
 
 `option_name = value:severity`
 
-Dla każdej Konwencji językowej należy określić wartość określającą, czy lub kiedy wolisz styl. `true` Wiele reguł akceptuje wartość (Preferuj ten styl) lub `false` (nie Preferuj tego stylu). inne akceptują wartości, takie jak `when_on_single_line` lub `never`. Druga część reguły określa **ważność**.
+Dla każdej Konwencji językowej należy określić wartość określającą, czy lub kiedy wolisz styl. Wiele reguł przyjmuje wartość `true` (Preferuj ten styl) lub `false` (nie Preferuj tego stylu). Inne reguły akceptują wartości, `when_on_single_line` takie `never`jak lub. Druga część reguły określa [ważność](#severity-levels).
 
-### <a name="severity"></a>Ważność
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Ponieważ konwencje językowe są wymuszane przez analizatory, można również ustawić ich ważność przy użyciu domyślnej składni konfiguracji dla analizatorów. Składnia przyjmuje formularz `dotnet_diagnostic.<rule ID>.severity = <severity>`, na `dotnet_diagnostic.IDE0040.severity = silent`przykład. Aby uzyskać więcej informacji, zobacz [Ustawianie ważności reguły w pliku EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file).
+
+::: moniker-end
+
+## <a name="severity-levels"></a>Poziomy ważności
 
 Ważność Konwencji języka określa poziom, na którym należy wymusić ten styl. Poniższa tabela zawiera listę możliwych wartości ważności i ich efektów:
 
 Ważność | Efekt
 :------- | ------
-`none` | Gdy ta reguła jest naruszona, nie pokazuj niczego użytkownikowi. Funkcje generowania kodu generują kod w tym stylu. Reguły o `none` ważności nigdy nie pojawiają się w menu **szybkie akcje i operacje refaktoryzacji** . W większości przypadków jest to traktowane jako "wyłączone" lub "zignorowane".
-`silent`(również `refactoring` w programie Visual Studio 2017 w wersji 15,8 lub nowszej) | Gdy ta reguła jest naruszona, nie pokazuj niczego użytkownikowi. Funkcje generowania kodu generują kod w tym stylu. Reguły o `silent` ważności uczestniczą w oczyszczaniu, jak również w menu **szybkie akcje i refaktoryzacje** .
-`suggestion` | Gdy ta reguła stylu zostanie naruszona, Pokaż ją użytkownikowi jako sugestię. Sugestie są wyświetlane jako trzy szare kropki poniżej dwóch pierwszych znaków.
-`warning` | Gdy ta reguła stylu jest naruszona, Pokaż Ostrzeżenie kompilatora.
 `error` | Gdy ta reguła stylu jest naruszona, Pokaż błąd kompilatora.
+`warning` | Gdy ta reguła stylu jest naruszona, Pokaż Ostrzeżenie kompilatora.
+`suggestion` | Gdy ta reguła stylu zostanie naruszona, Pokaż ją użytkownikowi jako sugestię. Sugestie są wyświetlane jako trzy szare kropki poniżej dwóch pierwszych znaków.
+`silent` | Gdy ta reguła jest naruszona, nie pokazuj niczego użytkownikowi. Funkcje generowania kodu generują kod w tym stylu. Reguły o `silent` ważności uczestniczą w oczyszczaniu i pojawiają się w menu **szybkie akcje i operacje refaktoryzacji** .
+`none` | Gdy ta reguła jest naruszona, nie pokazuj niczego użytkownikowi. Funkcje generowania kodu generują kod w tym stylu. Reguły o `none` ważności nigdy nie pojawiają się w menu **szybkie akcje i operacje refaktoryzacji** . W większości przypadków jest to traktowane jako "wyłączone" lub "zignorowane".
+
+::: moniker range=">=vs-2019"
+
+## <a name="automatically-configure-code-styles"></a>Automatycznie Konfiguruj style kodu
+
+Począwszy od programu Visual Studio 2019 w wersji 16,3, można skonfigurować reguły stylu kodu z menu żarówki [szybkie akcje](quick-actions.md) po wystąpieniu naruszenia stylu.
+
+Aby zmienić Konwencję stylu kodu:
+
+1. Umieść kursor na zygzaku w edytorze, a następnie otwórz wyświetlone menu żarówki. Wybierz pozycję **Konfiguruj lub Pomiń problemy** > **Konfiguruj \<Identyfikator reguły > stylu kodu**.
+
+   ![Konfigurowanie stylu kodu z poziomu menu żarówki w programie Visual Studio](media/vs-2019/configure-code-style.png)
+
+2. Z tego miejsca wybierz jedną z opcji stylu kodu.
+
+   ![Skonfiguruj ustawienie stylu kodu](media/vs-2019/configure-code-style-setting.png)
+
+   Program Visual Studio dodaje lub modyfikuje ustawienia konfiguracji w pliku EditorConfig, jak pokazano w polu podglądu.
+
+Aby zmienić ważność naruszenia stylu kodu, wykonaj te same czynności, ale wybierz opcję **Konfiguruj \<Identyfikator reguły > ważność** zamiast **konfigurować \<Identyfikator reguły > stylu kodu**. Aby uzyskać więcej informacji, zobacz [Automatyczne konfigurowanie ważności reguły](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+
+::: moniker-end
 
 ## <a name="net-code-style-settings"></a>Ustawienia stylu kodu platformy .NET
 

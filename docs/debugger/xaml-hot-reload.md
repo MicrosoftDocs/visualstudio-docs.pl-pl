@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
-ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.openlocfilehash: ff5e70d4ec2831df18ce1b100e70730e2978201e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012605"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186573"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio
 
@@ -68,3 +68,4 @@ Podczas korzystania ze gorącego ładowania kodu XAML mogą występować następ
 
 * [Rozwiązywanie problemów z aktywnym załadowaniem XAML](xaml-hot-reload-troubleshooting.md)
 * [Hot reload języka XAML dla platformy Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
+* [Edytuj i kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

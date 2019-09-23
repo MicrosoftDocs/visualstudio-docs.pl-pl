@@ -1,6 +1,6 @@
 ---
 title: Zaawansowane ustawienia kompilacji (C#) — Okno dialogowe
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461885"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186789"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Zaawansowane ustawienia kompilacji (C#) — Okno dialogowe
+# <a name="advanced-build-settings-dialog-box-c"></a>Zaawansowane ustawienia kompilacji — okno dialogoweC#()
 
-Za pomocą okna dialogowego **Zaawansowane ustawienia kompilacji** w **projektancie projektu** można określić zaawansowane właściwości konfiguracji kompilacji projektu. To okno dialogowe ma zastosowanie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tylko do projektów.
+Za pomocą okna dialogowego **Zaawansowane ustawienia kompilacji** w **projektancie projektu** można określić zaawansowane właściwości konfiguracji kompilacji projektu. To okno dialogowe ma zastosowanie C# tylko do projektów.
 
 ## <a name="general"></a>Ogólne
 
@@ -30,19 +30,19 @@ Poniższe opcje umożliwiają ustawienie ogólnych ustawień zaawansowanych.
 
 **Wersja językowa**
 
-Określa wersję języka do użycia. Zestaw funkcji różni się w każdej wersji, dlatego można użyć tej opcji, aby wymusić, aby kompilator zezwalał tylko na podzbiór wdrożonych funkcji, lub aby włączyć tylko te funkcje, które są zgodne z istniejącym standardem. To ustawienie ma następujące opcje:
+::: moniker range=">=vs-2019"
 
-- **default**
+Linki do [/langversion (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), które zawierają informacje o tym, jak domyślna wersja językowa jest wybierana na podstawie platformy docelowej projektu.
 
-   Odwołuje się do bieżącej wersji.
+::: moniker-end
 
-- **ISO-1** i **ISO-2**
+::: moniker range="vs-2017"
 
-   Odpowiednio dotyczy standardowych funkcji ISO-1 i ISO-2.
+Określa wersję języka do użycia. Zestaw funkcji różni się w każdej wersji, dlatego można użyć tej opcji, aby wymusić, aby kompilator zezwalał tylko na podzbiór wdrożonych funkcji, lub aby włączyć tylko te funkcje, które są zgodne z istniejącym standardem.
 
-- **C#[numer wersji]**
+Wartość domyślna to C# 7,0.
 
-   Odwołuje się do określonej C#wersji programu. Aby uzyskać więcej informacji, zobacz [/langversionC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **Raportowanie wewnętrznego błędu kompilatora**
 
@@ -62,7 +62,7 @@ Poniższe opcje pozwalają określić zaawansowane opcje wyjściowe.
 
 **Informacje o debugowaniu**
 
-Określa typ informacji o debugowaniu generowanych przez kompilator. Informacje o sposobie konfigurowania wydajności debugowania aplikacji znajdują się w temacie ułatwianie [debugowania obrazu](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). To ustawienie ma następujące opcje:
+Określa typ informacji o debugowaniu generowanych przez kompilator. Informacje o sposobie konfigurowania wydajności debugowania aplikacji znajdują się w temacie [ułatwianie debugowania obrazu](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). To ustawienie ma następujące opcje:
 
 - **dawaj**
 
@@ -96,5 +96,5 @@ Określa preferowany adres podstawowy, z którego ma zostać załadowana Bibliot
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index)
+- [Opcje kompilatora języka C#](/dotnet/csharp/language-reference/compiler-options/index)
 - [Strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)

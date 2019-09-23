@@ -1,7 +1,7 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, Windows) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 07/29/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,20 +10,105 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661960"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185993"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 
 Dziennik zmian w programie Visual Studio Tools for Unity.
 
+## <a name="4330"></a>4.3.3.0
+
+Wydanie 23 września, 2019
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integracja:**
+
+  - Naprawiono raportowanie błędów i ostrzeżeń dotyczących uproszczonych kompilacji.
+
+## <a name="4320"></a>4.3.2.0
+
+Wydanie 16 września 2019
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integracja:**
+
+  - Wyjaśniono, że program Visual Studio obsługuje projekty Unity przez dodanie nowej diagnostyki specyficznej dla aparatu Unity. Wprowadziliśmy również zmiany powodujące, że środowisko IDE działa teraz bardziej inteligentnie dzięki pomijaniu ogólnej diagnostyki języka C#, która nie dotyczy projektów Unity. Na przykład IDE nie będzie wyświetlał szybkiej poprawki, aby zmienić zmienną inspektora, do `readonly` której nie można zmodyfikować zmiennej w edytorze aparatu Unity.
+    - `UNT0001`: Komunikaty aparatu Unity są wywoływane przez środowisko uruchomieniowe, nawet jeśli są puste. Nie deklaruj ich, aby uniknąć wykonywania zbędnego przetwarzania przez środowisko uruchomieniowe aparatu Unity.
+    - `UNT0002`: Porównanie tagów przy użyciu równości ciągów jest wolniejsze niż wbudowana metoda CompareTag.
+    - `UNT0003`: Użycie generycznej formy metody GetComponent jest preferowane ze względu na bezpieczeństwo typu.
+    - `UNT0004`: Komunikat Update jest zależny od szybkości ramki i powinien używać wartości Time.deltaTime, a nie wartości Time.fixedDeltaTime.
+    - `UNT0005`: Komunikat FixedUpdate jest niezależny od szybkości ramki i powinien używać wartości Time.fixedDeltaTime, a nie wartości Time.deltaTime.
+    - `UNT0006`: Wykryto niepoprawną sygnaturę metody dla tego komunikatu aparatu Unity.
+    - `UNT0007`: Aparat Unity przesłania wartość operatora porównania null dla obiektów Unity, które są niezgodne z łączeniem wartości null.
+    - `UNT0008`: Aparat Unity przesłania wartość operatora porównania null dla obiektów Unity, które są niezgodne z propagacją wartości null.
+    - `UNT0009`: Podczas stosowania atrybutu InitializeOnLoad względem klasy należy podać konstruktor statyczny. Atrybut InitializeOnLoad zapewnia, że zostanie on wywołany podczas uruchamiania edytora.
+    - `UNT0010`: Składniki MonoBehaviour powinny być tworzone tylko za pomocą metody AddComponent(). MonoBehaviour to składnik, który musi zostać dołączony do obiektu GameObject.
+    - `UNT0011`: Składniki ScriptableObject powinny być tworzone tylko za pomocą metody CreateInstance(). Obiekt ScriptableObject musi zostać utworzony przez aparat Unity do obsługi metod komunikatów aparatu Unity.
+    - `USP0001`dla `IDE0029`: Obiekty Unity nie powinny używać łączenia o wartości null.
+    - `USP0002`dla `IDE0031`: Obiekty Unity nie powinny używać propagacji wartości null.
+    - `USP0003`dla `IDE0051`: Komunikaty aparatu Unity są wywoływane przez środowisko uruchomieniowe aparatu Unity.
+    - `USP0004`dla `IDE0044`: Pola z atrybutem SerializeField nie powinny być tylko do odczytu.
+
+## <a name="4310"></a>4.3.1.0
+
+wydanie 4 września 2019
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Ocena:**
+
+  - Dodano obsługę wyświetlania lepszych typów, tj. `List<object>` `List'1[[System.Object, <corlib...>]]`zamiast.
+
+  - Dodano obsługę dostępu do elementu członkowskiego wskaźnika, `p->data->member`tj.
+
+  - Dodano obsługę niejawnych konwersji w inicjatorach tablicy, tj `new byte [] {1,2,3,4}`.
+
+## <a name="4300"></a>4.3.0.0
+
+Opublikowano 13 sierpnia 2019
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Debuger:**
+
+  - Dodano obsługę protokołu MDS 2,51.
+
+- **Integracja:**
+
+  - Udoskonalono okno "Dołączanie do wystąpienia aparatu Unity" z funkcjami sortowania, wyszukiwania i odświeżania. Identyfikator PID jest teraz wyświetlany nawet dla graczy lokalnych (przez przeszukiwanie gniazd nasłuchujących w systemie w celu pobrania procesu będącego właścicielem).
+
+  - Dodano obsługę plików asmdef.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integracja:**
+
+  - Stała obsługa nieprawidłowych komunikatów podczas komunikowania się z graczami aparatu Unity.
+
+- **Ocena:**
+
+  - Stała obsługa przestrzeni nazw w wyrażeniach.
+
+  - Stała Inspekcja przy użyciu typów IntPtr.
+  
+  - Rozwiązywanie problemów z wyjątkami.
+
+  - Stała Ocena identyfikatorów pseudo (takich jak $exception).
+
+  - Zapobiegaj awarii podczas usuwania odwołań do nieprawidłowych adresów.  
+
+  - Rozwiązano problem z niezaładowanymi domenami aplikacji.
+
 ## <a name="4201"></a>4.2.0.1
 
-Wydana 24 lipca 2019
+wydana 24 lipca 2019
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -79,7 +164,7 @@ Wydana 21 maja 2019
 
   - Zaktualizowany mechanizm wyodrębniania nazw projektów z użyciem aparatu Unity. x.
 
-  - Dodano obsługę pakietów Unity w UPE. Widoczne są tylko pakiety, do których istnieją odwołania ( ```Packages``` przy użyciu manifest. JSON w folderze) i ```Packages``` pakiety lokalne (osadzone w folderze).
+  - Dodano obsługę pakietów Unity w UPE. Widoczne są tylko pakiety, do których istnieją odwołania ( `Packages` przy użyciu manifest. JSON w folderze) i `Packages` pakiety lokalne (osadzone w folderze).
 
 - **Generowanie projektu:**
 
@@ -89,7 +174,7 @@ Wydana 21 maja 2019
 
   - Dodano obsługę nazw kwalifikowanych aliasem (tylko globalna przestrzeń nazw dla teraz). Dlatego ewaluatora wyrażeń akceptuje teraz typy przy użyciu formularza Global:: Namespace. Type.
 
-  - Dodano obsługę ```pointer[index]``` formularza, która jest semantycznie identyczna z formularzem dereferencji ```*(pointer+index)``` wskaźnika.
+  - Dodano obsługę `pointer[index]` formularza, która jest semantycznie identyczna z formularzem dereferencji `*(pointer+index)` wskaźnika.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -129,7 +214,7 @@ Wydanie 13 lutego 2019
 
   - Dodano obsługę w celu prawidłowego wykrywania procesów Unity podczas instalacji i Zezwalanie aparatowi instalacji na lepsze obsłudze blokad plików.
 
-  - Zaktualizowano interfejs API ScriptableObject.
+  - Zaktualizowano `ScriptableObject` interfejs API.
 
 ## <a name="4003"></a>4.0.0.3
 
@@ -139,13 +224,13 @@ Wydanie 31 stycznia 2019
 
 - **Generowanie projektu:**
 
-  - Pola publiczne i serializowane nie będą już powodowały ostrzeżeń. W projektach Unity, które utworzyły te komunikaty, zostały pominięte ostrzeżenia kompilatora CS0649 i IDE0051.
+  - Pola publiczne i serializowane nie będą już powodowały ostrzeżeń. W projektach Unity, które utworzyły `CS0649` te `IDE0051` komunikaty, zostały pominięte ostrzeżenia kompilatora.
 
 - **Integracja:**
 
   - Ulepszono środowisko użytkownika do wyświetlania wystąpień edytora i odtwarzacza Unity (system Windows jest teraz zmieniany, użyj jednolitych marginesów i Wyświetl uchwyt zmiany rozmiaru). Dodano informacje o identyfikatorze procesu dla edytorów aparatu Unity.
 
-  - Zaktualizowano interfejs API z zachowaniem.
+  - Zaktualizowano `MonoBehaviour` interfejs API.
 
 - **Ocena:**
 

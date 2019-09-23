@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500939"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186579"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Zmień nazwę symbolu kodu refaktoryzacji
 
@@ -27,11 +27,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 - Visual Basic
 
-**Co:** Umożliwia zmianę nazwy identyfikatorów w celu symbole kodu, takie jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typów.
+**Whatman** Umożliwia zmianę nazw identyfikatorów dla symboli kodu, takich jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typy.
 
-**Kiedy:** Chcesz coś bezpiecznie zmienić bez konieczności Znajdź wszystkie wystąpienia i kopiowanie/wklejanie nowej nazwy.
+**Czasie** Chcesz bezpiecznie zmienić nazwę elementu bez konieczności znajdowania wszystkich wystąpień, a następnie skopiuj/wklej nową nazwę.
 
-**Dlaczego:** Kopiowanie i wklejanie nową nazwę dla całego projektu, prawdopodobnie będą powodować błędy. To narzędzie refaktoryzacji dokładnie wykona akcję zmiany nazwy.
+**Zalet** Kopiowanie i wklejanie nowej nazwy w całym projekcie prawdopodobnie spowoduje błędy. To narzędzie refaktoryzacji dokładnie wykona akcję zmiany nazwy.
 
 ## <a name="how-to"></a>Instrukcje
 
@@ -70,11 +70,15 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 ## <a name="remarks"></a>Uwagi
 
+- Począwszy od programu Visual Studio 2019 w wersji 16,3, gdy zmieniasz nazwę typu, który pasuje do nazwy pliku, w którym znajduje się, zostanie wyświetlone pole wyboru umożliwiające zmianę nazwy pliku w tym samym czasie. Ta opcja jest wyświetlana w przypadku zmiany nazwy klasy, interfejsu lub wyliczenia. Ta opcja nie jest obsługiwana w przypadku typów częściowych z wieloma definicjami.
+
+   ![Zmień nazwę animacji z plikiemC#](media/rename-with-file-animated-cs.gif)
+   
 - Jeśli używasz nazwę, która już istnieje która może spowodować konflikt, **Zmień nazwę** wyświetli ostrzeżenie, pole.
 
    ![Zmień nazwę konflikt](media/rename-conflict-cs.png)
 
-- Innym sposobem, aby zmienić nazwę symbolu jest zmienić jego nazwę w edytorze. Następnie, umieść kursor w polu Nazwa symbolu, naciśnij klawisz **Ctrl**+ **.** lub po prostu rozwiń menu ikony żarówki, które zostanie wyświetlone, a następnie wybierz **Zmień nazwę \<starej nazwy > na \<nową nazwę >** .
+- Innym sposobem zmiany nazwy symbolu jest zmiana jego nazwy w edytorze. Następnie za pomocą kursora w nazwie symbolu naciśnij klawisz **Ctrl**+ **.** lub po prostu rozwiń wyświetlone menu ikony żarówki, a następnie wybierz pozycję **Zmień \<nazwę starej nazwy > na \<nową >** .
 
 ## <a name="see-also"></a>Zobacz także
 

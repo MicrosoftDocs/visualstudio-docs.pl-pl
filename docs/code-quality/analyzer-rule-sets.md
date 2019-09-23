@@ -1,6 +1,6 @@
 ---
-title: Zestawy reguł analizatora
-ms.date: 04/22/2019
+title: Zestawy reguł analizatora FxCop
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
@@ -10,16 +10,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585138"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185951"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Zestawy reguł dla pakietów analizatora
 
 Wstępnie zdefiniowane zestawy reguł są zawarte w niektórych pakietach analizatora NuGet. Na przykład zestawy reguł, które są dołączone do pakietu analizatora NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (począwszy od wersji 2.6.2), włączają lub wyłączają reguły oparte na ich kategorii, takie jak zabezpieczenia, nazewnictwo lub wydajność. Używanie zestawów reguł ułatwia szybkie wyświetlanie tylko naruszeń reguł, które odnoszą się do określonej kategorii reguł.
+
+Zestaw reguł jest grupą reguł analizy kodu, które identyfikują problemy skierowane i określone warunki. Zestawy reguł umożliwiają włączanie lub wyłączanie reguł oraz Ustawianie ważności naruszeń reguł. Pakiet NuGet analizatora FxCop zawiera wstępnie zdefiniowane zestawy reguł dla następujących kategorii reguł:
+
+- projekt
+- dokumentacja
+- utrzymanie
+- nazewnictwo
+- wydajność
+- niezawodność
+- zabezpieczenia
+- wykorzystanie
 
 Jeśli migrujesz ze starszej analizy "FxCop" do analizy kodu na podstawie .NET Compiler Platform, te zestawy reguł umożliwiają kontynuowanie korzystania z podobnych konfiguracji reguł do [tych, które zostały wcześniej użyte](rule-set-reference.md).
 
@@ -74,5 +85,5 @@ Pakiet analizatora NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.n
 - [Analizatory — często zadawane pytania](analyzers-faq.md)
 - [Omówienie analizatorów .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Zainstaluj analizatory](install-roslyn-analyzers.md)
-- [Korzystanie z analizatorów](use-roslyn-analyzers.md)
+- [Konfiguruj analizatory](use-roslyn-analyzers.md)
 - [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](using-rule-sets-to-group-code-analysis-rules.md)

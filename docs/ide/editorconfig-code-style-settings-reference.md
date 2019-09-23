@@ -1,5 +1,5 @@
 ---
-title: .NET coding convention ustawienia dla wtyczki EditorConfig
+title: Ustawienia konwencji kodowania .NET dla EditorConfig
 ms.date: 06/14/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,40 +13,40 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4ba419c1dc20b46a08460e20a437e7edf21f2857
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: d8be11a8705686ade370a8107aad826b7cab9851
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253723"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186557"
 ---
-# <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
+# <a name="net-coding-convention-settings-for-editorconfig"></a>Ustawienia konwencji kodowania .NET dla EditorConfig
 
-Można definiować i obsługa styl kodu zgodne w Twojej bazy kodu z użyciem [EditorConfig](../ide/create-portable-custom-editor-options.md) pliku. Polecenia EditorConfig obejmuje kilka podstawowych właściwości formatowania, takie jak `indent_style` i `indent_size`. W programie Visual Studio można również skonfigurować przy użyciu pliku EditorConfig ustawienia Konwencji kodowania .NET. Można włączyć lub wyłączyć poszczególne .NET konwencje kodowania i skonfigurować stopień, w którym chcesz każdą regułę wymuszane za pośrednictwem jej poziom ważności.
+Można zdefiniować i zachować spójny styl kodu w bazie kodu przy użyciu pliku [EditorConfig](../ide/create-portable-custom-editor-options.md) . EditorConfig zawiera kilka podstawowych właściwości formatowania, takich jak `indent_style` i `indent_size`. W programie Visual Studio ustawienia konwencji kodowania .NET można także skonfigurować przy użyciu pliku EditorConfig. Możesz włączyć lub wyłączyć poszczególne konwencje kodowania .NET i skonfigurować stopień, w jakim dana reguła ma być wymuszana, za pośrednictwem poziomu ważności.
 
 > [!TIP]
-> - Podczas definiowania Konwencji kodowania w pliku .editorconfig, którą konfigurujesz, jak chcesz [analizatory stylu kodu](../code-quality/roslyn-analyzers-overview.md) wbudowanych w program Visual Studio do analizowania kodu. W pliku .editorconfig jest plik konfiguracyjny dla tych analizatorów.
-> - Kod preferencji stylu programu Visual Studio można również ustawić [Opcje edytora tekstowego](code-styles-and-code-cleanup.md) okna dialogowego. Jednak ustawienia w pliku .editorconfig wziąć pierwszeństwo i preferencje ustawione w **opcje** nie są skojarzone z określonym projektem.
+> - Podczas definiowania konwencji kodowania w pliku EditorConfig, konfigurujesz, w jaki sposób [analizatory stylów kodu](../code-quality/roslyn-analyzers-overview.md) wbudowane w program Visual Studio mają analizować swój kod. Plik EditorConfig jest plikiem konfiguracji dla tych analizatorów.
+> - Preferencje stylu kodu dla programu Visual Studio można także ustawić w oknie dialogowym [Opcje edytora tekstu](code-styles-and-code-cleanup.md) . Jednak ustawienia EditorConfig mają pierwszeństwo i preferencji ustawionych w **opcjach** nie są skojarzone z określonym projektem.
 
 ## <a name="convention-categories"></a>Kategorie Konwencji
 
-Istnieją trzy obsługiwane .NET kodowania Konwencji kategorie:
+Istnieją trzy obsługiwane kategorie konwencji kodowania .NET:
 
-- [Konwencje języka](../ide/editorconfig-language-conventions.md)
+- [Konwencje językowe](../ide/editorconfig-language-conventions.md)
 
-   Reguły dotyczące języka C# lub Visual Basic. Na przykład można określić zasady dotyczące korzystania z `var` lub jawnych typów podczas definiowania zmiennych i preferowanie elementy członkowskie z wyrażeniem.
+   Reguły dotyczące języka C# lub Visual Basic. Na przykład można określić reguły dotyczące użycia lub typów `var` jawnych podczas definiowania zmiennych lub wstępnego wnioskowania członków w postaci wyrażeń.
 
 - [Konwencje formatowania](../ide/editorconfig-formatting-conventions.md)
 
-   Zasady dotyczące układu i strukturę kodu w celu ułatwienia odczytu. Na przykład można określić zasady wokół Allman nawiasów klamrowych lub preferowanie miejsca do magazynowania w bloki sterujące.
+   Reguły dotyczące układu i struktury kodu, aby ułatwić ich odczytywanie. Na przykład można określić reguły wokół nawiasów klamrowych Allman lub miejsca, w których są nałożone spacje w blokach sterowania.
 
 - [Konwencje nazewnictwa](../ide/editorconfig-naming-conventions.md)
 
-   Zasady dotyczące nazw elementów kodu. Na przykład można określić które `async` metody musi kończyć się "Async".
+   Reguły dotyczące nazewnictwa elementów kodu. Na przykład można określić, że `async` metody muszą kończyć się "Async".
 
-## <a name="example-editorconfig-file"></a>Przykładowy plik wtyczki EditorConfig
+## <a name="example-editorconfig-file"></a>Przykładowy plik EditorConfig
 
-Aby ułatwić Ci rozpoczęcie pracy, w tym miejscu znajduje się przykład *.editorconfig* pliku z opcjami domyślnymi:
+Aby ułatwić rozpoczęcie pracy, Oto przykładowy plik *editorconfig* z opcjami domyślnymi:
 
 ```ini
 ###############################
@@ -207,5 +207,5 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 ## <a name="see-also"></a>Zobacz także
 
 - [Szybkie akcje](../ide/quick-actions.md)
-- [Tworzenie przenośnych niestandardowy Edytor opcji](../ide/create-portable-custom-editor-options.md)
-- [Platforma kompilatora .NET pliku .editorconfig](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [Tworzenie przenośnych opcji edytora niestandardowego](../ide/create-portable-custom-editor-options.md)
+- [.NET Compiler Platform plik editorconfig](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
