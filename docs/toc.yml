@@ -654,7 +654,7 @@
         - name: 'Przewodnik: tworzenie środowiska kompilowania na wielu komputerach'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Debugowanie >>
-      href: debugger/index.md
+      href: debugger/index.yml
     - name: Testowanie >>
       displayName: Unit testing
       href: test/improve-code-quality.md
