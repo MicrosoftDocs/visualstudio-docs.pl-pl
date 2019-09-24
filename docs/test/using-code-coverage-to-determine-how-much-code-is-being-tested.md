@@ -57,7 +57,7 @@ Funkcja pokrycia kodu jest dostępna tylko w wersji Visual Studio Enterprise.
 2. Po uruchomieniu testów, aby zobaczyć, które wiersze zostały uruchomione, ![wybierz ikonę](../test/media/codecoverage-showcoloringicon.png) Pokaż kolorowanie pokrycia kodu **Pokaż kolorowanie pokrycia kodu** w oknie **wyników pokrycia kodu** . Domyślnie kod, który jest objęty testami, jest wyróżniony w jasnoniebieskim kolorze.
 
    > [!TIP]
-   > Aby zmienić kolory lub użyć pogrubionej kroju, wybierz**Opcje** >  **Narzędzia** > **czcionki i kolory** >  ****środowiska** > Pokaż ustawienia dla: Edytor**tekstu. W obszarze **Wyświetl elementy**Dostosuj ustawienia dla elementów "pokrycie", na przykład **nienaruszony obszar pokrycia**.
+   > Aby zmienić kolory lub użyć pogrubionej kroju, wybierz**Opcje** > **Narzędzia** > **czcionki i kolory** > **środowiska** > **Pokaż ustawienia dla: Edytor**tekstu. W obszarze **Wyświetl elementy**Dostosuj ustawienia dla elementów "pokrycie", na przykład **nienaruszony obszar pokrycia**.
    >
    > ![Czcionki i kolory pokrycia kodu](media/vs-2019/coverage-fonts-and-colors.png)
 
