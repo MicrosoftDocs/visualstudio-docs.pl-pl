@@ -3,19 +3,19 @@ title: Dokumentacja programu Visual Studio
 summary: Dowiedz się, jak używać programu Visual Studio do tworzenia aplikacji, usług i narzędzi w wybranym przez Ciebie języku dla platform i urządzeń.
 brand: visual-studio
 metadata:
-  title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
+  title: Dokumentacja programu Visual Studio | Microsoft Docs
   titleSuffix: ''
   description: Dowiedz się, jak używać programu Visual Studio do tworzenia aplikacji, usług i narzędzi w wybranym języku dla dowolnej platformy lub urządzenia.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: f8d8ed358779471d68a460ae923df5f9d316c2b0
-  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.openlocfilehash: f754d62f95dee9531429f9421571982307af9966
+  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 09/19/2019
-  ms.locfileid: "71128261"
+  ms.lasthandoff: 09/24/2019
+  ms.locfileid: "71238127"
 highlightedContent:
   items:
   - title: Instalacja i instalacja
@@ -132,7 +132,7 @@ additionalContent:
       url: ide/compiling-and-building-in-visual-studio.md
     - title: Debugowanie
       summary: Zbadaj i naprawiania błędów w kodzie.
-      url: debugger/index.md
+      url: debugger/index.yml
     - title: Test
       summary: Uruchom testy w projektach.
       url: test/improve-code-quality.md

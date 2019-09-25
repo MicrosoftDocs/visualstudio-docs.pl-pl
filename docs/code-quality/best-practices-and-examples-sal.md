@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 478efc77bd1fb14f6241e026cfe280355a90746a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 27570e282c230d4bec47e70aa1bcdd053b75597c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919442"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236756"
 ---
 # <a name="best-practices-and-examples-sal"></a>Najlepsze praktyki i przykłady (SAL)
 Oto kilka sposobów, aby maksymalnie wykorzystać możliwości języka z adnotacjami kodu źródłowego (SAL) i uniknąć niektórych typowych problemów.
@@ -238,11 +238,11 @@ W tym przykładzie mówi `_Out_opt_` , że wskaźnik może mieć wartość null 
 
 ## <a name="see-also"></a>Zobacz także
 
-[Korzystanie z adnotacji sal w celuC++ zmniejszenia liczby wad](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-języka C/Code w celu uzyskania adnotacji[sal](../code-quality/understanding-sal.md)
-[i zwracania wartości](../code-quality/annotating-function-parameters-and-return-values.md)
-[](../code-quality/annotating-function-behavior.md) 
- [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)
-[Dodawanie adnotacji do zachowania](../code-quality/annotating-locking-behavior.md)
-blokowania[określające, kiedy i gdzie adnotacja stosuje](../code-quality/specifying-when-and-where-an-annotation-applies.md)
-[funkcje wewnętrzne](../code-quality/intrinsic-functions.md)
+[Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
+[Informacje o języku SAL](../code-quality/understanding-sal.md)  
+[Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)  
+[Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)  
+[Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)  
+[Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)  
+[Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+[Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)  

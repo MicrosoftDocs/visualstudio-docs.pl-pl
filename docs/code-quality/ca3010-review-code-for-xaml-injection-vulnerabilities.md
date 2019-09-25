@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 965e0d800bd7c725236d96499d2bf2d441b40412
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: efd30a783f534d76f7f7f3fa18fd181dbe7e98a1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841087"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237239"
 ---
 # <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML
 
@@ -24,35 +24,35 @@ ms.locfileid: "65841087"
 |TypeName|ReviewCodeForXamlInjectionVulnerabilities|
 |CheckId|CA3010|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Żądania HTTP potencjalnie niezaufanych danych wejściowych przypada <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> metoda obciążenia.
+Potencjalnie niezaufane dane wejściowe żądania HTTP docierają <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> do metody ładowania.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Podczas pracy z niezaufane dane wejściowe, można w trosce o ataki przez iniekcję kodu XAML. XAML jest językiem znaczników, który bezpośrednio reprezentuje tworzenia wystąpienia obiektu, jak i wykonywania. Oznacza to, że elementy tworzone w XAML mogą wchodzić w interakcje z zasobami systemu (na przykład sieci access i system plików we/wy). Jeśli osoba atakująca może kontrolować dane wejściowe <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> obciążenia wywołania metody, a następnie osoba atakująca może wykonać kod.
+Podczas pracy z niezaufanymi danymi wejściowymi należy mieć na uwadze ataki kodu XAML. XAML jest językiem znaczników, który bezpośrednio reprezentuje Tworzenie wystąpienia obiektu i wykonywanie. Oznacza to, że elementy utworzone w języku XAML mogą korzystać z zasobów systemowych (np. dostępu do sieci i we/wy systemu plików). Jeśli osoba atakująca może kontrolować dane wejściowe do <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> wywołania metody ładowania, atakujący może wykonać kod.
 
-Próbuje znaleźć danych wejściowych z żądania HTTP, która będzie działać ta reguła <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> metoda obciążenia.
-
-> [!NOTE]
-> Ta reguła nie może śledzić dane w zestawach. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP i przekazuje je do innego zestawu, który ładuje XAML, ta zasada nie wygenerowanie ostrzeżenia.
+Ta reguła próbuje znaleźć dane wejściowe z żądań HTTP, które <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> docierają do metody ładowania.
 
 > [!NOTE]
-> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w pliku EditorConfig.
+> Ta reguła nie może śledzić danych między zestawami. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP, a następnie przekazuje je do innego zestawu, który ładuje kod XAML, ta reguła nie wygenerowała ostrzeżenia.
+
+> [!NOTE]
+> Istnieje konfigurowalny limit, w jaki ta reguła będzie analizować przepływ danych w ramach wywołań metod. Zobacz [konfigurację analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) , aby dowiedzieć się, jak skonfigurować limit w pliku EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Nie ładuj niezaufanych XAML.
+Nie Ładuj niezaufanego kodu XAML.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń od tej reguły.
+Nie pomijaj ostrzeżeń z tej reguły.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;

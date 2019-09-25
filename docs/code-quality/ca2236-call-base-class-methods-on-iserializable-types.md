@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0075a6296e839030448c0209c77f1717a5fcb1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a9a3070abc1f2bab3f3658589db54b656a635e2b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920123"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238083"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Wywołuj metody klasy bazowej dla typów ISerializable
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920123"
 |TypeName|CallBaseClassMethodsOnISerializableTypes|
 |CheckId|CA2236|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Typ pochodzi z typu, który implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejs, i jeden z następujących warunków jest spełniony:

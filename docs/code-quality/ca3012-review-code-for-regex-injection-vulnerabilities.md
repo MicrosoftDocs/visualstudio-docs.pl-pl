@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 42808b3961b18a23f594800f9d0782c908c9b1ba
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841039"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237181"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia regularnego
 
@@ -24,40 +24,40 @@ ms.locfileid: "65841039"
 |TypeName|ReviewCodeForRegexInjectionVulnerabilities|
 |CheckId|CA3012|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Potencjalnie niezaufane dane wejściowe żądania HTTP osiągnie wyrażenie regularne.
+Potencjalnie niezaufane dane wejściowe żądania HTTP docierają do wyrażenia regularnego.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Podczas pracy z niezaufane dane wejściowe, można w trosce o atakami polegającymi na iniekcji wyrażenia regularnego. Osoba atakująca może przy użyciu iniekcji wyrażenia regularnego złośliwie modyfikują wyrażenie regularne, aby wyrażenie regularne pasuje niepożądanych wyników lub aby wprowadzić wyrażenie regularne używać Procesora nadmierne skutkuje atak typu "odmowa usługi".
+Podczas pracy z niezaufanymi danymi wejściowymi należy mieć na uwadze ataki z iniekcją wyrażeń regularnych. Osoba atakująca może użyć iniekcji wyrażenia regularnego w celu złośliwego zmodyfikowania wyrażeń regularnych, aby wyrażenie regularne pasowało do nieoczekiwanych wyników, lub aby wyrażenie regularne zużywać nadmierny procesor w wyniku ataku typu "odmowa usługi".
 
-Ta zasada próbuje odnaleźć danych wejściowych z żądań HTTP docieranie do wyrażenia regularnego.
-
-> [!NOTE]
-> Ta reguła nie może śledzić dane w zestawach. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP i przekazuje je do innego zestawu, który tworzy wyrażenie regularne, ta zasada nie wygenerowanie ostrzeżenia.
+Ta reguła próbuje znaleźć dane wejściowe z żądań HTTP, które docierają do wyrażenia regularnego.
 
 > [!NOTE]
-> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w pliku EditorConfig.
+> Ta reguła nie może śledzić danych między zestawami. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP, a następnie przekazuje je do innego zestawu, który tworzy wyrażenie regularne, ta reguła nie spowoduje wygenerowania ostrzeżenia.
+
+> [!NOTE]
+> Istnieje konfigurowalny limit, w jaki ta reguła będzie analizować przepływ danych w ramach wywołań metod. Zobacz [konfigurację analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) , aby dowiedzieć się, jak skonfigurować limit w pliku EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Niektóre środki zaradcze dla wstrzyknięć kodu wyrażenia regularnego obejmują:
+Niektóre środki zaradcze związane z iniekcją wyrażeń regularnych obejmują:
 
-- Zawsze używaj [dopasowania limitu czasu](/dotnet/standard/base-types/best-practices#use-time-out-values) przy użyciu wyrażeń regularnych.
-- Należy unikać używania wyrażeń regularnych, w oparciu o dane wejściowe użytkownika.
-- Znaki specjalne ucieczki w danych wejściowych użytkownika, wywołując <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> lub w inny sposób.
-- Zezwala na tylko inne niż-znaki specjalne z danych wejściowych użytkownika.
+- Zawsze używaj [limitu czasu dopasowania](/dotnet/standard/base-types/best-practices#use-time-out-values) podczas używania wyrażeń regularnych.
+- Unikaj używania wyrażeń regularnych na podstawie danych wejściowych użytkownika.
+- Ucieczki znaków specjalnych z danych wejściowych użytkownika <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> przez wywołanie lub inną metodę.
+- Zezwalaj tylko na znaki niespecjalne z danych wejściowych użytkownika.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jeśli wiesz, że używasz [dopasowania limitu czasu](/dotnet/standard/base-types/best-practices#use-time-out-values) i danych wejściowych użytkownika jest bezpłatna znaków specjalnych, można pominąć to ostrzeżenie.
+Jeśli wiesz, że używasz [limitu czasu dopasowania](/dotnet/standard/base-types/best-practices#use-time-out-values) , a dane wejściowe użytkownika są wolne od znaków specjalnych, można pominąć to ostrzeżenie.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b9091df08368674511b770158ea47c247aade7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c0c99d5d0adb145a061693f8a83b1f674e05eed4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841361"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237337"
 ---
 # <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie protokołu LDAP
 
@@ -24,40 +24,40 @@ ms.locfileid: "65841361"
 |TypeName|ReviewCodeForLdapInjectionVulnerabilities|
 |CheckId|CA3005|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Potencjalnie niezaufane dane wejściowe żądania HTTP osiągnie instrukcję LDAP.
+Potencjalnie niezaufane dane wejściowe żądania HTTP docierają do instrukcji LDAP.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Podczas pracy z niezaufane dane wejściowe, można w trosce o atakami polegającymi na iniekcji Lightweight Directory Access protokołu (LDAP). Osoba atakująca może potencjalnie uruchamiać złośliwe instrukcje LDAP katalogów informacji. Aplikacje, które używają danych wejściowych użytkownika do konstruowania dynamicznych instrukcji LDAP, aby uzyskać dostęp do katalogu usług są szczególnie narażone.
+Podczas pracy z niezaufanymi danymi wejściowymi należy mieć na uwadze ataki z wykorzystaniem protokołu LDAP (Lightweight Directory Access Protocol). Osoba atakująca może potencjalnie uruchamiać złośliwe instrukcje LDAP względem katalogów informacyjnych. Aplikacje korzystające z danych wejściowych użytkownika do konstruowania dynamicznych instrukcji LDAP do uzyskiwania dostępu do usług katalogowych są szczególnie podatne na ataki.
 
-Ta zasada próbuje odnaleźć danych wejściowych z żądań HTTP w osiągnięciu instrukcji LDAP.
-
-> [!NOTE]
-> Ta reguła nie może śledzić dane w zestawach. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP i przekazuje je do innego zestawu, który wykonuje instrukcję LDAP, ta zasada nie wygenerowanie ostrzeżenia.
+Ta reguła próbuje znaleźć dane wejściowe z żądań HTTP, które docierają do instrukcji LDAP.
 
 > [!NOTE]
-> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w pliku EditorConfig.
+> Ta reguła nie może śledzić danych między zestawami. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP, a następnie przekazuje je do innego zestawu, który wykonuje instrukcję LDAP, ta reguła nie spowoduje wygenerowania ostrzeżenia.
+
+> [!NOTE]
+> Istnieje konfigurowalny limit, w jaki ta reguła będzie analizować przepływ danych w ramach wywołań metod. Zobacz [konfigurację analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) , aby dowiedzieć się, jak skonfigurować limit w pliku EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Dla kontrolowanej przez użytkownika części instrukcji LDAP należy wziąć pod uwagę jedną z:
-- Zezwalaj na bezpieczne listę znaków specjalnych innych niż.
-- Nie zezwalaj na znaki specjalne
+W przypadku części instrukcji LDAP kontrolowanej przez użytkownika należy wziąć pod uwagę jedną z:
+- Zezwalaj tylko na bezpieczną listę znaków niespecjalnych.
+- Nie Zezwalaj na znaki specjalne
 - Znaki specjalne ucieczki.
 
-Zobacz [firmy OWASP LDAP iniekcji zapobiegania da się oszukać arkusza](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) Aby uzyskać więcej wskazówek.
+Aby uzyskać więcej wskazówek, zobacz [Arkusz Ściągawka zapobiegania iniekcji LDAP OWASP](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) .
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jeśli znasz z danych wejściowych zostało zweryfikowane lub poprzedzone znakiem zmiany znaczenia, bezpieczne, to można pominąć to ostrzeżenie.
+Jeśli wiesz, że dane wejściowe zostały zweryfikowane lub zostały zmienione w celu zapewnienia bezpieczeństwa, możesz pominąć to ostrzeżenie.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;

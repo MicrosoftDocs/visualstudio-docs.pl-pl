@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2301
 - DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder
-ms.openlocfilehash: 0291aa4d8130cfdc9b919e0c8430e56ef0f95296
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 24bb9c9762a57f7ce97e41a9a8e6c2831a1dde20
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891194"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237769"
 ---
 # <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301: Nie wywołuj metody BinaryFormatter.Deserialize bez uprzedniego ustawienia właściwości BinaryFormatter.Binder
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891194"
 |TypeName|DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder|
 |CheckId|CA2301|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 

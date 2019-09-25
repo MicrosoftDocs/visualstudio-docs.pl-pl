@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 37ba7e8664c6fa24e302dbebd38643a0c451114c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841065"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237242"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XML
 
@@ -24,37 +24,37 @@ ms.locfileid: "65841065"
 |TypeName|ReviewCodeForXmlInjectionVulnerabilities|
 |CheckId|CA3009|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Potencjalnie niezaufane dane wejściowe żądania HTTP osiągnie nieprzetworzone dane wyjściowe XML.
+Potencjalnie niezaufane dane wejściowe żądania HTTP docierają do nieprzetworzonych danych wyjściowych XML.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Podczas pracy z niezaufane dane wejściowe, można w trosce o ataki przez iniekcję kodu XML. Atakującej wykorzystanie iniekcji XML do wstawiania znaków specjalnych w dokumencie XML, dzięki czemu nieprawidłowy dokument XML. Lub osoba atakująca złośliwie można wstawić węzłów XML atakującego.
+Podczas pracy z niezaufanymi danymi wejściowymi należy mieć na uwadze ataki kodu XML. Osoba atakująca może użyć iniekcji XML, aby wstawić znaki specjalne do dokumentu XML, wprowadzając dokument jako nieprawidłowy XML. Osoba atakująca może w sposób złośliwy wstawić wybrane przez siebie węzły XML.
 
-Ta zasada próbuje odnaleźć danych wejściowych z żądań HTTP, osiągając pierwotne zapisu XML.
-
-> [!NOTE]
-> Ta reguła nie może śledzić dane w zestawach. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP i przekazuje je do innego zestawu, który zapisuje nieprzetworzonym kodzie XML, ta zasada nie wygenerowanie ostrzeżenia.
+Ta reguła próbuje znaleźć dane wejściowe z żądań HTTP, które docierają do nieprzetworzonego zapisu XML.
 
 > [!NOTE]
-> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w pliku EditorConfig.
+> Ta reguła nie może śledzić danych między zestawami. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP, a następnie przekazuje je do innego zestawu, który zapisuje nieprzetworzony kod XML, ta reguła nie spowoduje wygenerowania ostrzeżenia.
+
+> [!NOTE]
+> Istnieje konfigurowalny limit, w jaki ta reguła będzie analizować przepływ danych w ramach wywołań metod. Zobacz [konfigurację analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) , aby dowiedzieć się, jak skonfigurować limit w pliku EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Nie zapisuj nieprzetworzonym kodzie XML. Zamiast tego należy użyć metody lub właściwości tego Kodowanie XML swoje dane wejściowe.
+Nie zapisuj nieprzetworzonych danych XML. Zamiast tego należy użyć metod lub właściwości, które kodują dane wejściowe w języku XML.
 
-Lub XML, kodowania danych wejściowych przed napisaniem nieprzetworzonym kodzie XML.
+Lub przed zapisaniem nieprzetworzonego kodu XML.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń od tej reguły.
+Nie pomijaj ostrzeżeń z tej reguły.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;

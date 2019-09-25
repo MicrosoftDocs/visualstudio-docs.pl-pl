@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4965c9df3c2256511b8e44de8d388a9155d0d8f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841607"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237375"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Przegląd kodu pod kątem luk umożliwiających ujawnienie informacji
 
@@ -24,35 +24,35 @@ ms.locfileid: "65841607"
 |TypeName|ReviewCodeForInformationDisclosureVulnerabilities|
 |CheckId|CA3004|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Komunikat o wyjątku, ślad stosu lub ciąg reprezentujący osiągnie dane wyjściowe w sieci web.
+Komunikat wyjątku, ślad stosu lub Reprezentacja ciągu dociera do danych wyjściowych w sieci Web.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Ujawnieniu informacji o wyjątku zapewnia wgląd w elementach wewnętrznych aplikacji, co może pomóc osobom atakującym znaleźć inne luki w zabezpieczeniach, aby wykorzystać osoby atakujące.
+Odłączanie informacji o wyjątkach daje osobom atakującym wgląd w wewnętrzne dane aplikacji, co może pomóc atakującym znaleźć inne luki w zabezpieczeniach.
 
-Ta zasada próbuje znaleźć komunikat o wyjątku, ślad stosu lub ciąg reprezentujący są dane wyjściowe do odpowiedzi HTTP.
-
-> [!NOTE]
-> Ta reguła nie może śledzić dane w zestawach. Na przykład jeśli jeden zestaw przechwytuje wyjątek i przekazuje je do innego zestawu, który generuje wyjątek, ta zasada nie wygenerowanie ostrzeżenia.
+Ta reguła próbuje znaleźć komunikat wyjątku, ślad stosu lub ciąg reprezentujący dane wyjściowe do odpowiedzi HTTP.
 
 > [!NOTE]
-> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w pliku EditorConfig.
+> Ta reguła nie może śledzić danych między zestawami. Na przykład, jeśli jeden zestaw przechwytuje wyjątek, a następnie przekazuje go do innego zestawu, który wyprowadza wyjątek, ta reguła nie spowoduje wygenerowania ostrzeżenia.
+
+> [!NOTE]
+> Istnieje konfigurowalny limit, w jaki ta reguła będzie analizować przepływ danych w ramach wywołań metod. Zobacz [konfigurację analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) , aby dowiedzieć się, jak skonfigurować limit w pliku EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Nie danych wyjściowych informacje o wyjątku do odpowiedzi HTTP. Zamiast tego Podaj ogólny komunikat o błędzie. Zobacz [firmy OWASP obsługę błędów strony](https://www.owasp.org/index.php/Error_Handling) Aby uzyskać więcej wskazówek.
+Nie wyprowadzaj informacji o wyjątku do odpowiedzi HTTP. Zamiast tego należy podać ogólny komunikat o błędzie. Zobacz [stronę obsługa błędów OWASP](https://www.owasp.org/index.php/Error_Handling) , aby uzyskać więcej wskazówek.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jeśli znasz z danych wyjściowych w sieci web znajduje się w granicy zaufania aplikacji i nigdy nie jest ujawniany poza, cieszymy się pominąć to ostrzeżenie. To jest rzadkie. Wziąć pod uwagę, że granicy zaufania aplikacji i przepływów danych może się zmieniać wraz z upływem czasu.
+Jeśli wiesz, że dane wyjściowe sieci Web znajduje się w granicach zaufania aplikacji i nigdy nie są narażone na zewnątrz, możesz pominąć to ostrzeżenie. Jest to rzadkie. Należy wziąć pod uwagę, że granica zaufania aplikacji i przepływy danych mogą ulec zmianie z upływem czasu.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;

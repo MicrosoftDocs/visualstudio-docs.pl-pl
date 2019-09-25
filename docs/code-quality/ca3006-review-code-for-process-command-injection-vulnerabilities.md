@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e41301dcf0a1358b6d063ce557212915b5f591
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 986607d7f42f49c99396bbb021c48bad549930c9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841445"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237283"
 ---
 # <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie polecenia procesu
 
@@ -24,36 +24,36 @@ ms.locfileid: "65841445"
 |TypeName|ReviewCodeForProcessCommandInjectionVulnerabilities|
 |CheckId|CA3006|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Potencjalnie niezaufane dane wejściowe żądania HTTP osiągnie polecenia procesu.
+Potencjalnie niezaufane dane wejściowe żądania HTTP docierają do procesu.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Podczas pracy z niezaufane dane wejściowe, można w trosce o atakami polegającymi na iniekcji poleceń. Ataku polegającego na iniekcji poleceń, można wykonać szkodliwe polecenia na system operacyjny, naruszenie bezpieczeństwa i integralności serwera.
+Podczas pracy z niezaufanymi danymi wejściowymi należy zastanowić się nad atakami polegającymi na iniekcji poleceń. Atak polegający na iniekcji poleceń może wykonywać złośliwe polecenia w podstawowym systemie operacyjnym, narażając zabezpieczenia i integralność serwera.
 
-Ta zasada próbuje odnaleźć danych wejściowych z żądań HTTP, osiągając polecenia procesu.
-
-> [!NOTE]
-> Ta reguła nie może śledzić dane w zestawach. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP i przekazuje je do innego zestawu, który uruchamia proces, ta zasada nie wygenerowanie ostrzeżenia.
+Ta reguła próbuje znaleźć dane wejściowe z żądań HTTP, które docierają do polecenia procesu.
 
 > [!NOTE]
-> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w pliku EditorConfig.
+> Ta reguła nie może śledzić danych między zestawami. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP, a następnie przekazuje je do innego zestawu, który uruchamia proces, ta reguła nie spowoduje wygenerowania ostrzeżenia.
+
+> [!NOTE]
+> Istnieje konfigurowalny limit, w jaki ta reguła będzie analizować przepływ danych w ramach wywołań metod. Zobacz [konfigurację analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) , aby dowiedzieć się, jak skonfigurować limit w pliku EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-- Jeśli to możliwe Unikaj uruchamianie procesów w oparciu o dane wejściowe użytkownika.
-- Sprawdź dane wejściowe względem znanych bezpiecznego zestawu znaków i długość.
+- Jeśli to możliwe, unikaj uruchamiania procesów na podstawie danych wejściowych użytkownika.
+- Sprawdzaj poprawność danych wejściowych dla znanego, bezpiecznego zestawu znaków i długości.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jeśli znasz danych wejściowych zostało zweryfikowane lub poprzedzone znakiem zmiany znaczenia, bezpieczne jest bezpieczne pominąć to ostrzeżenie.
+Jeśli wiesz, że dane wejściowe zostały zweryfikowane lub zostały zmienione w celu zapewnienia bezpieczeństwa, możesz bezpiecznie pominąć to ostrzeżenie.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;

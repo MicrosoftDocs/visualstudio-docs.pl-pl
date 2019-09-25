@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8912cb6eeec8009364936a42d572f4f3d83fae5e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0e74ec49667a4fe66c399bd15e8b24aa6589ce88
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919919"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237844"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242: Poprawnie testuj nie-liczby (NaN)
 
@@ -30,7 +30,7 @@ ms.locfileid: "68919919"
 |TypeName|TestForNaNCorrectly|
 |CheckId|CA2242|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Wyrażenie testuje wartość w odniesieniu <xref:System.Single.NaN?displayProperty=fullName> do lub. <xref:System.Double.NaN?displayProperty=fullName>

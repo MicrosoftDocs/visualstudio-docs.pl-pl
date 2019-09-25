@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d3a8c087e6b07bad34c76865bbbb852d115e055
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 410683e907544fa17ca6c73c53f9eca9a85d752b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062427"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238053"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analiza kodu dla zarządzanego kodu — Ostrzeżenia
 Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia wskazujące naruszenia reguł w zarządzanych bibliotekach kodu. Ostrzeżenia są zorganizowane w obszary reguły, takie jak projektowanie, lokalizacja, wydajność i zabezpieczenia. Każde ostrzeżenie oznacza naruszenie reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dla każdego ostrzeżenia analizy kodu zarządzanego.
@@ -32,7 +32,7 @@ Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia wskazujące narusz
 |Typ|Nazwa typu dla reguły.|
 |CheckId|Unikatowy identyfikator reguły. CheckId i Category są używane do pomijania w źródle ostrzeżenia.|
 |Kategoria|Kategoria ostrzeżenia.|
-|Zmiana kluczowa|Czy poprawka dla naruszenia reguły jest istotną zmianą. Istotna zmiana oznacza, że zestaw, który ma zależność od obiektu docelowego, który spowodował naruszenie, nie zostanie ponownie skompilowany przy użyciu nowej stałej wersji lub może zakończyć się niepowodzeniem w czasie wykonywania ze względu na zmianę. Jeśli jest dostępnych wiele poprawek, a co najmniej jedna poprawka jest istotną zmianą, a jedna poprawka nie jest, określono zarówno "", jak i "bez przerywania".|
+|Zmiana podziału|Czy poprawka dla naruszenia reguły jest istotną zmianą. Istotna zmiana oznacza, że zestaw, który ma zależność od obiektu docelowego, który spowodował naruszenie, nie zostanie ponownie skompilowany przy użyciu nowej stałej wersji lub może zakończyć się niepowodzeniem w czasie wykonywania ze względu na zmianę. Jeśli jest dostępnych wiele poprawek, a co najmniej jedna poprawka jest istotną zmianą, a jedna poprawka nie jest, określono zarówno element "", jak i "bez przerywania".|
 |Przyczyna|Określony kod zarządzany, który powoduje wygenerowanie ostrzeżenia przez regułę.|
 |Opis|W tym artykule omówiono problemy, które znajdują się za ostrzeżeniem.|
 |Jak naprawić naruszenia|Wyjaśnia, jak zmienić kod źródłowy w celu spełnienia reguły i uniemożliwić wygenerowanie ostrzeżenia.|

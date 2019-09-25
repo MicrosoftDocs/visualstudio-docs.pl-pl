@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b81bd810bac142bdec23074e69bbd3840043c8f6
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c9e43dcdf1e923cb7bc4a98b17fd0be71b7927eb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841406"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237398"
 ---
 # <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie ścieżki pliku
 
@@ -24,43 +24,43 @@ ms.locfileid: "65841406"
 |TypeName|ReviewCodeForFilePathInjectionVulnerabilities|
 |CheckId|CA3003|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Potencjalnie niezaufane dane wejściowe żądania HTTP osiągnie ścieżki operacji na pliku.
+Potencjalnie niezaufane dane wejściowe żądania HTTP docierają do ścieżki operacji na pliku.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Podczas pracy z niezaufane dane wejściowe z żądania sieci web należy zachować ostrożność, użycia kontrolowanej przez użytkownika dane wejściowe podczas określania ścieżki do plików. Osoba atakująca może być możliwy odczyt pliku niezamierzonego skutkuje ujawnienie informacji poufnych danych. Lub osoba atakująca może zapisać do pliku niezamierzonego skutkuje nieuprawnione modyfikacje danych poufnych lub zagrożenia dla bezpieczeństwa serwera. Jest to typowa technika osoba atakująca [ścieżkę przechodzenia](https://www.owasp.org/index.php/Path_Traversal) uzyskiwania dostępu do plików poza katalogiem zamierzone.
+Podczas pracy z niezaufanymi danymi wejściowymi z żądań sieci Web należy zastanowić się nad użyciem danych wejściowych sterowanych przez użytkownika podczas określania ścieżek do plików. Osoba atakująca może mieć możliwość odczytania niezamierzonego pliku, co spowoduje ujawnienie informacji poufnych danych. Osoba atakująca może mieć możliwość zapisu w niezamierzonym pliku, co spowoduje nieautoryzowane modyfikacje poufnych danych lub naruszenie zabezpieczeń serwera. Typową techniką ataku jest [Przechodzenie ścieżki](https://www.owasp.org/index.php/Path_Traversal) w celu uzyskania dostępu do plików poza zamierzonym katalogiem.
 
-Ta zasada próbuje odnaleźć danych wejściowych z żądań HTTP, osiągając ścieżki w operacji na pliku.
-
-> [!NOTE]
-> Ta reguła nie może śledzić dane w zestawach. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP i przekazuje je do innego zestawu, która zapisuje do pliku, ta zasada nie wygenerowanie ostrzeżenia.
+Ta reguła próbuje znaleźć dane wejściowe z żądań HTTP, które docierają do ścieżki w operacji na pliku.
 
 > [!NOTE]
-> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w pliku EditorConfig.
+> Ta reguła nie może śledzić danych między zestawami. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP, a następnie przekazuje je do innego zestawu, który zapisuje w pliku, ta reguła nie spowoduje wygenerowania ostrzeżenia.
+
+> [!NOTE]
+> Istnieje konfigurowalny limit, w jaki ta reguła będzie analizować przepływ danych w ramach wywołań metod. Zobacz [konfigurację analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) , aby dowiedzieć się, jak skonfigurować limit w pliku EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-- Jeśli to możliwe ograniczyć ścieżek plików na podstawie danych wejściowych użytkownika, do listy bezpiecznych jawnie znane.  Na przykład jeśli aplikacja wymaga tylko dostęp do "red.txt", "green.txt" lub "blue.txt", Zezwalaj tylko na tych wartości.
-- Sprawdź, czy niezaufanych nazwy plików i Zweryfikuj, czy nazwa jest poprawnie sformułowany.
-- Podczas określania ścieżki, należy używać nazw pełnej ścieżki.
-- Należy unikać potencjalnie niebezpieczne konstrukcje, takie jak zmienne środowiskowe ścieżki.
-- Tylko akceptować długie nazwy plików i sprawdzać poprawność długiej nazwy, jeśli użytkownik przesyła krótkie nazwy.
-- Ograniczanie danych wprowadzonych przez użytkownika końcowego nieprawidłowych znaków.
-- Odrzuć nazw, w którym została przekroczona długość MAX_PATH.
-- Obsługa nazw plików dosłownie, bez interpretacji.
-- Ustal, czy nazwa pliku reprezentuje pliku lub urządzenia.
+- Jeśli to możliwe, Ogranicz ścieżki plików na podstawie danych wprowadzonych przez użytkownika do jawnie znanej bezpiecznej listy.  Na przykład jeśli aplikacja musi mieć dostęp tylko do "Red. txt", "Green. txt" lub "Blue. txt", Zezwalaj tylko na te wartości.
+- Sprawdź niezaufane nazwy plików i sprawdź, czy nazwa jest poprawnie sformułowana.
+- Użyj pełnych nazw ścieżek podczas określania ścieżek.
+- Unikaj potencjalnie niebezpiecznych konstrukcji, takich jak zmienne środowiskowe Path.
+- Akceptowane są tylko długie nazwy plików i weryfikują długie nazwy, jeśli użytkownik przesyła krótkie nazwy.
+- Ogranicz dane wejściowe użytkownika końcowego do prawidłowych znaków.
+- Odrzuć nazwy, gdy zostanie przekroczona długość MAX_PATH.
+- Obsługa nazw plików jest dosłownie, bez interpretacji.
+- Ustal, czy nazwa pliku reprezentuje plik lub urządzenie.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jeśli dane wejściowe zostały zweryfikowane, zgodnie z opisem w poprzedniej sekcji, to można pominąć to ostrzeżenie.
+Jeśli sprawdzono dane wejściowe zgodnie z opisem w poprzedniej sekcji, można pominąć to ostrzeżenie.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;

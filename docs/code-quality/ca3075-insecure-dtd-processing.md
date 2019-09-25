@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42efb51dfe9c447538fe8f01bdd37c73bf993d8f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541120"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237118"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Niezabezpieczone przetwarzanie definicji DTD
 
@@ -22,62 +22,62 @@ ms.locfileid: "62541120"
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Jeśli używasz niezabezpieczone <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> wystąpień lub odwołanie do jednostki zewnętrznej źródeł, analizator może akceptować niezaufanych danych wejściowych i ujawnienia poufnych informacji dla osób atakujących.
+W przypadku korzystania z niezabezpieczonych <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> wystąpień lub odwoływania się do zewnętrznych źródeł jednostek Analizator może zaakceptować niezaufane dane wejściowe i ujawnić poufne informacje osobom atakującym.
 
 ## <a name="rule-description"></a>Opis reguły
 
-A *definicji typu dokumentu (DTD)* jest jeden z dwóch sposobów analizatora XML można określić ważności dokumentu, zgodnie z definicją [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła szuka właściwości i wystąpienia, gdzie niezaufanych danych jest akceptowany w celu otrzymania deweloperów o potencjalnych [ujawnienie informacji](/dotnet/framework/wcf/feature-details/information-disclosure) zagrożenia lub [przeprowadzenie ataku typu "odmowa usługi" (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataków. Ta zasada wyzwala, gdy:
+*Definicja typu dokumentu (DTD)* to jeden z dwóch sposobów, przez który parser XML może ustalić ważność dokumentu, zgodnie z definicją [organizacja World Wide Web Consortium (W3C) XML (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła umożliwia wyszukiwanie właściwości i wystąpień, w przypadku których dane niezaufane są akceptowane, aby ostrzec deweloperów o potencjalnych zagrożeniach związanych z [ujawnianiem informacji](/dotnet/framework/wcf/feature-details/information-disclosure) lub atakami [typu "odmowa usługi" (DOS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Ta zasada wyzwala następujące wyzwalacze:
 
-- Włączono XmlReaderSettings <xref:System.Xml.XmlReader> wystąpienia, który jest rozpoznawany jako zewnętrzne jednostki XML przy użyciu <xref:System.Xml.XmlUrlResolver>.
+- DtdProcessing jest włączona w <xref:System.Xml.XmlReader> wystąpieniu, które rozpoznaje zewnętrzne jednostki XML przy użyciu. <xref:System.Xml.XmlUrlResolver>
 
-- <xref:System.Xml.XmlNode.InnerXml%2A> Ustawiono właściwość w pliku XML.
+- <xref:System.Xml.XmlNode.InnerXml%2A> Właściwość w pliku XML jest ustawiona.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> wartość właściwości jest równa analizy.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>Właściwość jest ustawiona na wartość Parse.
 
-- Niezaufane dane wejściowe zostanie przetworzona przy użyciu <xref:System.Xml.XmlResolver> zamiast <xref:System.Xml.XmlSecureResolver>.
+- Niezaufane dane wejściowe są przetwarzane przy <xref:System.Xml.XmlResolver> użyciu <xref:System.Xml.XmlSecureResolver>zamiast.
 
-- <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> Metoda jest wywoływana za pomocą niezabezpieczonego <xref:System.Xml.XmlReaderSettings> wystąpienia lub nie wcale.
+- Metoda jest wywoływana z niezabezpieczonym <xref:System.Xml.XmlReaderSettings> wystąpieniem lub bez wystąpienia. <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType>
 
-- <xref:System.Xml.XmlReader> jest tworzona przy użyciu ustawień domyślnych niezabezpieczone lub wartości.
+- <xref:System.Xml.XmlReader>jest tworzony z niezabezpieczonymi domyślnymi ustawieniami lub wartościami.
 
-W każdym z tych przypadków, wynik jest taki sam: zawartość z dowolnego systemu lub sieci udziały plików na komputerze, gdzie jest przetwarzany plik XML, będzie ona widoczna dla osoba atakująca lub przetwarzanie elementu DTD może służyć jako wektor systemu DoS.
+W każdym z tych przypadków wynik jest taki sam: zawartość z systemu plików lub udziałów sieciowych z komputera, na którym jest przetwarzany kod XML, będzie widoczna dla osoby atakującej lub można użyć przetwarzania DTD jako wektora DoS.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-- CATCH i przetwórz wszystkie wyjątki klasy XmlTextReader poprawnie, aby uniknąć ujawnienia informacji ścieżki.
+- Należy prawidłowo przechwycić i przetworzyć wszystkie wyjątki XmlTextReader, aby uniknąć ujawnienia informacji o ścieżce.
 
-- Użyj <xref:System.Xml.XmlSecureResolver> do ograniczania zasobów, które mogą uzyskiwać dostęp do klasy XmlTextReader.
+- Użyj, <xref:System.Xml.XmlSecureResolver> aby ograniczyć zasoby, do których XmlTextReader może uzyskać dostęp.
 
-- Nie zezwalaj na <xref:System.Xml.XmlReader> otworzyć dowolnych zasobów zewnętrznych, ustawiając <xref:System.Xml.XmlResolver> właściwości **null**.
+- Nie Zezwalaj <xref:System.Xml.XmlReader> na otwieranie jakichkolwiek zasobów zewnętrznych przez <xref:System.Xml.XmlResolver> ustawienie właściwości na **null**.
 
-- Upewnij się, że <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> właściwości jest przypisywany z zaufanego źródła.
+- Upewnij się, <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> że właściwość jest przypisana z zaufanego źródła.
 
-**.NET 3.5 i starszych**
+**.NET 3,5 i starsze**
 
-- Wyłącz przetwarzanie DTD, jeśli masz do czynienia ze źródeł niezaufanych, ustawiając <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> właściwości **true**.
+- Wyłącz przetwarzanie DTD w przypadku postępowania z niezaufanymi źródłami, ustawiając <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> właściwość na **wartość true**.
 
-- Klasy XmlTextReader ma dziedziczenia pełnego zaufania.
+- Klasa XmlTextReader ma pełne żądanie dziedziczenia zaufania.
 
 **.NET 4 i nowsze**
 
-- Unikaj włączania XmlReaderSettings, jeśli masz zajmujących źródeł niezaufanych, ustawiając <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> właściwości **Zabroń** lub **Ignoruj**.
+- Unikaj włączania DtdProcessing w przypadku korzystania z niezaufanych źródeł przez ustawienie właściwości <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> na wartość **Zabroń** lub **Ignoruj**.
 
-- Upewnij się, że metoda Load() przyjmuje instancję XmlReader we wszystkich przypadkach elementu.
+- Upewnij się, że metoda Load () przyjmuje wystąpienie elementu XmlReader we wszystkich przypadkach InnerXml.
 
 > [!NOTE]
-> Ta zasada może raportować pewnych wystąpień z prawidłową XmlSecureResolver wyników fałszywie dodatnich.
+> Ta reguła może zgłosić fałszywie dodatnie dla niektórych prawidłowych wystąpień XmlSecureResolver.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jeśli nie masz pewności, że dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z tego ostrzeżenia.
+Jeśli nie masz pewności, że dane wejściowe są znane z zaufanego źródła, nie pomijaj reguły z tego ostrzeżenia.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.IO;
@@ -121,7 +121,7 @@ class TestClass
 }
 ```
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.Xml;
@@ -161,7 +161,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violations"></a>Naruszenia
+### <a name="violations"></a>Ze
 
 ```csharp
 using System.Xml;
@@ -209,7 +209,7 @@ public static void TestMethod(string xml)
 }
 ```
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.IO;
@@ -250,7 +250,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.Xml;
@@ -287,7 +287,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.Xml;
@@ -315,7 +315,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violations"></a>Naruszenia
+### <a name="violations"></a>Ze
 
 ```csharp
 using System.Xml;

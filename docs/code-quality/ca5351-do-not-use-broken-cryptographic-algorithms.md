@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af307158ecd8d5a1f93ebd1f8575cad5cf51e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2729e74e3abf6be2ae5b17a836d920c1376decd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540862"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236948"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: Nie używaj uszkodzonych algorytmów kryptograficznych
 
@@ -22,46 +22,46 @@ ms.locfileid: "62540862"
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
 |Kategoria|Microsoft.Cryptography|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 > [!NOTE]
-> To ostrzeżenie Data ostatniej aktualizacji listopada 2015 r.
+> To ostrzeżenie zostało ostatnio zaktualizowane w listopadzie 2015.
 
 ## <a name="cause"></a>Przyczyna
 
-Tworzenie skrótu funkcji, takich jak <xref:System.Security.Cryptography.MD5> i algorytmów szyfrowania, takich jak <xref:System.Security.Cryptography.DES> i <xref:System.Security.Cryptography.RC2> może narazić poważne ryzyko i może spowodować narażenie poufnych informacji za pomocą technik ataku trivial, takich jak ataki siłowe i Kolizje wyznaczania wartości skrótu.
+Funkcje tworzenia skrótów, takie <xref:System.Security.Cryptography.MD5> jak i algorytmy szyfrowania <xref:System.Security.Cryptography.DES> , <xref:System.Security.Cryptography.RC2> takie jak i mogą ujawniać znaczne ryzyko i mogą powodować narażenie poufnych informacji przez proste techniki ataków, takie jak ataki typu "odczynniki" i " kolizje skrótów.
 
-Na poniższej liście algorytmów kryptograficznych podlegają znane ataki kryptograficzne. Algorytm skrótu kryptograficznego <xref:System.Security.Cryptography.MD5> jest podatna na ataki kolizji wyznaczania wartości skrótu.  W zależności od użycia kolizji wyznaczania wartości skrótu może prowadzić do personifikacji przechwyceniem, zmanipulowaniem lub inne rodzaje ataków w systemach, które polegają na unikatowe dane wyjściowe kryptograficznych funkcji skrótu. Algorytmy szyfrowania <xref:System.Security.Cryptography.DES> i <xref:System.Security.Cryptography.RC2> są ataki kryptograficzne, które mogą spowodować niezamierzone ujawnienie zaszyfrowanych danych.
+Lista algorytmów kryptograficznych poniżej podlega znanym atakom kryptograficznym. Algorytm <xref:System.Security.Cryptography.MD5> wyznaczania wartości skrótu jest objęty atakami polegającymi na kolizji.  W zależności od użycia kolizja skrótów może prowadzić do personifikacji, naruszenia lub innego rodzaju ataków w systemach, które opierają się na unikatowych danych wyjściowych funkcji tworzenia skrótów. Algorytmy <xref:System.Security.Cryptography.DES> szyfrowania i <xref:System.Security.Cryptography.RC2> podlegają atakom kryptograficznym, które mogą spowodować niezamierzone ujawnienie zaszyfrowanych danych.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Uszkodzony kryptograficznych algorytmy nie są uznawane za bezpieczne i należy go unikać, ich użycie. Algorytm wyznaczania wartości skrótu MD5 jest podatny na ataki kolizji znane, że określonych luk w zabezpieczeniach będzie zależeć od kontekstu użytkowania.  Algorytmy wyznaczania wartości skrótu używany do zapewnienia integralności danych (na przykład podpisu pliku lub certyfikat cyfrowy) są szczególnie narażone.  W tym kontekście osoby atakujące można wygenerować dwa oddzielne fragmenty danych, w taki sposób, że niegroźne danych można zastąpić za pomocą złośliwe dane, bez zmiany wartości skrótu lub unieważnienie skojarzonego podpisu cyfrowego.
+Uszkodzone algorytmy kryptograficzne nie są uznawane za bezpieczne i nie należy ich stosować. Algorytm wyznaczania wartości skrótu MD5 jest podatny na znane ataki kolizji, chociaż konkretna usterka różni się w zależności od kontekstu użytkowania.  Algorytmy wyznaczania wartości skrótu używane do zapewnienia integralności danych (na przykład sygnatury pliku lub certyfikatu cyfrowego) są szczególnie narażone.  W tym kontekście osoby atakujące mogą generować dwa oddzielne fragmenty danych, dzięki czemu niegroźne dane mogą zostać zastąpione złośliwymi danymi, bez zmiany wartości skrótu ani unieważniania skojarzonego podpisu cyfrowego.
 
-Algorytmy szyfrowania:
+Dla algorytmów szyfrowania:
 
-- <xref:System.Security.Cryptography.DES> szyfrowanie zawiera mały rozmiar klucza, który może być ataków siłowych w mniej niż jeden dzień.
+- <xref:System.Security.Cryptography.DES>Szyfrowanie zawiera mały rozmiar klucza, który może być wymuszany w ciągu krótszym niż dzień.
 
-- <xref:System.Security.Cryptography.RC2> Szyfrowanie jest podatny na atak związane z kluczem, gdy osoba atakująca znajduje matematyczne relacje między wszystkie wartości klucza.
+- <xref:System.Security.Cryptography.RC2>szyfrowanie jest podatne na atak z kluczem pokrewnym, gdzie osoba atakująca znajdzie relacje matematyczne między wszystkimi wartościami klucza.
 
-Ta zasada wyzwala umożliwia znalezienie dowolnego z powyższych funkcji kryptograficznych w kodzie źródłowym i generuje ostrzeżenia dla użytkownika.
+Ta reguła jest wyzwalana po znalezieniu którejkolwiek z powyższych funkcji kryptograficznych w kodzie źródłowym i zgłaszaniu użytkownikowi ostrzeżenia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Użyj kryptograficznie silniejszych opcji:
+Użyj opcji silnie silniejszych:
 
-- Skróty w użytku MD5, [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) rodziny (na przykład <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- W przypadku algorytmu MD5 należy używać skrótów w rodzinie [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) (na przykład <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384>,,, <xref:System.Security.Cryptography.SHA256>).
 
-- DES i RC2 użytku <xref:System.Security.Cryptography.Aes> szyfrowania.
+- W przypadku algorytmu DES i RC2 <xref:System.Security.Cryptography.Aes> należy użyć szyfrowania.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły, chyba że jest zostały sprawdzone przez eksperta kryptograficznych.
+Nie pomijaj ostrzeżenia z tej reguły, chyba że została sprawdzona przez eksperta kryptograficznego.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-Poniższe przykłady pseudo-kodu ilustrują wzorzec wykrywane przez to reguły i możliwe alternatywy.
+Poniższe pseudo kodu przykładowe ilustrują wzorzec wykrywany przez tę regułę i możliwe alternatywy.
 
-### <a name="md5-hashing-violation"></a>MD5 Naruszenie wyznaczania wartości skrótu
+### <a name="md5-hashing-violation"></a>Naruszenie skrótu MD5
 
 ```csharp
 using System.Security.Cryptography;
@@ -69,7 +69,7 @@ using System.Security.Cryptography;
 var hashAlg = MD5.Create();
 ```
 
-Rozwiązanie:
+Narzędzie
 
 ```csharp
 using System.Security.Cryptography;
@@ -77,7 +77,7 @@ using System.Security.Cryptography;
 var hashAlg = SHA256.Create();
 ```
 
-### <a name="rc2-encryption-violation"></a>RC2 Naruszenie szyfrowania
+### <a name="rc2-encryption-violation"></a>Naruszenie szyfrowania RC2
 
 ```csharp
 using System.Security.Cryptography;
@@ -85,7 +85,7 @@ using System.Security.Cryptography;
 RC2 encAlg = RC2.Create();
 ```
 
-Rozwiązanie:
+Narzędzie
 
 ```csharp
 using System.Security.Cryptography;
@@ -96,7 +96,7 @@ using (AesManaged encAlg = new AesManaged())
 }
 ```
 
-### <a name="des-encryption-violation"></a>Naruszenie szyfrowanie DES
+### <a name="des-encryption-violation"></a>Naruszenie szyfrowania DES
 
 ```csharp
 using System.Security.Cryptography;
@@ -104,7 +104,7 @@ using System.Security.Cryptography;
 DES encAlg = DES.Create();
 ```
 
-Rozwiązanie:
+Narzędzie
 
 ```csharp
 using System.Security.Cryptography;

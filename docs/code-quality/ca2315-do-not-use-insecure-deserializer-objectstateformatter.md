@@ -1,5 +1,5 @@
 ---
-title: 'CA2315: Nie używaj niezabezpieczonych Deserializator ObjectStateFormatter'
+title: 'CA2315: Nie używaj niezabezpieczonego deserializatora ObjectStateFormatter'
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,31 +13,31 @@ ms.workload:
 f1_keywords:
 - CA2315
 - DoNotUseInsecureDeserializerObjectStateFormatter
-ms.openlocfilehash: 793fa9df333eed7e485d7d8829849ae30d9c93a2
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 30e9d55fa5aa9c909c29935988f76107a4b5556d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135576"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237670"
 ---
-# <a name="ca2315-do-not-use-insecure-deserializer-objectstateformatter"></a>CA2315: Nie używaj niezabezpieczonych Deserializator ObjectStateFormatter
+# <a name="ca2315-do-not-use-insecure-deserializer-objectstateformatter"></a>CA2315: Nie używaj niezabezpieczonego deserializatora ObjectStateFormatter
 
 |||
 |-|-|
 |TypeName|DoNotUseInsecureDeserializerObjectStateFormatter|
 |CheckId|CA2315|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-A <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> metody deserializacji został o nazwie lub odwołania.
+<xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> Metoda deserializacji została wywołana lub przywoływana.
 
 ## <a name="rule-description"></a>Opis reguły
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Ta reguła umożliwia znalezienie <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> deserializacji wywołania metody lub odwołania.
+Ta zasada umożliwia <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> znalezienie wywołań metod deserializacji lub odwołań.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -47,9 +47,9 @@ Ta reguła umożliwia znalezienie <xref:System.Web.UI.ObjectStateFormatter?displ
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.IO;

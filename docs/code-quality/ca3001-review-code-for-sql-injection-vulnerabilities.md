@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841461"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238122"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL
 
@@ -24,35 +24,35 @@ ms.locfileid: "65841461"
 |TypeName|ReviewCodeForSqlInjectionsVulnerabilities|
 |CheckId|CA3001|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Potencjalnie niezaufane dane wejściowe żądania HTTP osiągnie tekst polecenia SQL.
+Potencjalnie niezaufane dane wejściowe żądania HTTP docierają do tekstu polecenia SQL.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Podczas pracy z niezaufane dane wejściowe i polecenia SQL, należy w trosce o ataki przez wstrzyknięcie kodu SQL. Ataku polegającego na iniekcji SQL może wykonać złośliwy poleceń SQL, naruszenie bezpieczeństwa i integralności aplikacji. Typowe techniki obejmują, przy użyciu pojedynczy cudzysłów lub apostrof ograniczająca ciągi literału, dwa łączniki dla komentarz i średnikami, na końcu instrukcji. Aby uzyskać więcej informacji, zobacz [wstrzyknięcie kodu SQL](/sql/relational-databases/security/sql-injection).
+Podczas pracy z niezaufanymi poleceniami wejściowymi i SQL należy zastanowić się nad atakami polegającymi na iniekcji SQL. Atak wykorzystujący wstrzyknięcie kodu SQL może wykonywać złośliwe polecenia SQL, narażając zabezpieczenia i integralność aplikacji. Typowe techniki obejmują używanie pojedynczego cudzysłowu lub apostrofu do ograniczania ciągów literałów, dwóch kresek dla komentarza i średnika dla końca instrukcji. Aby uzyskać więcej informacji, zobacz [iniekcja SQL](/sql/relational-databases/security/sql-injection).
 
-Ta zasada próbuje odnaleźć danych wejściowych z żądań HTTP, osiągając tekst polecenia SQL.
-
-> [!NOTE]
-> Ta reguła nie może śledzić dane w zestawach. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP i przekazuje je do innego zestawu, który wykonuje polecenia SQL, ta zasada nie wygenerowanie ostrzeżenia.
+Ta reguła próbuje znaleźć dane wejściowe z żądań HTTP, które docierają do tekstu polecenia SQL.
 
 > [!NOTE]
-> Brak można skonfigurować maksymalną głębokość ta zasada będzie analizowała przepływ danych między wywołania metody. Zobacz [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) dotyczące sposobu konfigurowania limitu w pliku EditorConfig.
+> Ta reguła nie może śledzić danych między zestawami. Na przykład jeśli jeden zestaw odczytuje dane wejściowe żądania HTTP, a następnie przekazuje je do innego zestawu, który wykonuje polecenie SQL, ta reguła nie spowoduje wygenerowania ostrzeżenia.
+
+> [!NOTE]
+> Istnieje konfigurowalny limit, w jaki ta reguła będzie analizować przepływ danych w ramach wywołań metod. Zobacz [konfigurację analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) , aby dowiedzieć się, jak skonfigurować limit w pliku EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Za pomocą sparametryzowanych poleceń SQL lub procedur składowanych parametrów zawierający niezaufane dane wejściowe.
+Użyj sparametryzowanych poleceń SQL lub procedur składowanych z parametrami zawierającymi niezaufane dane wejściowe.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli wiesz, że dane wejściowe zawsze jest weryfikowany pod kątem znanych, bezpiecznych zestaw znaków.
+Jeśli wiadomo, że dane wejściowe są zawsze sprawdzane pod kątem znanego bezpiecznego zestawu znaków, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System;
@@ -107,7 +107,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="parameterized-solution"></a>Rozwiązanie sparametryzowane
+### <a name="parameterized-solution"></a>Sparametryzowane rozwiązanie
 
 ```csharp
 using System;
@@ -165,7 +165,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="stored-procedure-solution"></a>Procedura składowana rozwiązania
+### <a name="stored-procedure-solution"></a>Rozwiązanie procedury składowanej
 
 ```csharp
 using System;

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a047ec190652e3559e8bf83fe14834ed95d8a69
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 53d049cad426201a8aaa48662061a4a424116b26
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920113"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237940"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920113"
 |TypeName|MarkISerializableTypesWithSerializable|
 |CheckId|CA2237|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Typ widoczny na zewnątrz implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejs, a typ nie jest oznaczony <xref:System.SerializableAttribute?displayProperty=fullName> atrybutem. Reguła ignoruje typy pochodne, których typ podstawowy nie jest możliwy do serializacji.

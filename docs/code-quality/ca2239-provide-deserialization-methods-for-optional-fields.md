@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cd59ec30ce45c94ac3422c4271959d74073bff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cf2e30956879c0c61bb57d65b89445962f34959a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920063"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237891"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Udostępnij metody deserializacji dla pól opcjonalnych
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920063"
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Typ ma pole oznaczone <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> atrybutem, a typ nie zapewnia metod obsługi zdarzeń deserializacji.

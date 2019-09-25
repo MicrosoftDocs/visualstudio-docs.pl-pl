@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2300
 - DoNotUseInsecureDeserializerBinaryFormatter
-ms.openlocfilehash: 8a2bc2929b53843749d939f16057a11c0e944e33
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 4ca4990308ceab21e2c6e256770ff37a3ca9a6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891213"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237945"
 ---
 # <a name="ca2300-do-not-use-insecure-deserializer-binaryformatter"></a>CA2300: Nie używaj niezabezpieczonego deserializatora BinaryFormatter
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891213"
 |TypeName|DoNotUseInsecureDeserializerBinaryFormatter|
 |CheckId|CA2300|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 

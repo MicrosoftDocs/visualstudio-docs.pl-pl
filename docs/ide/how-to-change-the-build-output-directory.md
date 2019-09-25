@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416816"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238186"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Instrukcje: Zmiana katalogu wyjściowego kompilacji
 
@@ -36,13 +36,22 @@ Możesz określić lokalizację danych wyjściowych generowanych przez projekt n
 
 4. Znajdź wpis ścieżki wyjściowej na stronie&mdash;, która różni się w zależności od typu projektu:
 
-   - **Ścieżka** wyjściowa C# i projekty JavaScript
+   - **Ścieżka wyjściowa** C# i projekty JavaScript
    - **Ścieżka wyjściowa kompilacji** dla projektów Visual Basic
    - **Katalog wyjściowy** dla projektów C++ wizualnych
 
    Wpisz ścieżkę, do której mają zostać wygenerowane dane wyjściowe (bezwzględne lub względne dla katalogu głównego projektu), lub kliknij przycisk **Przeglądaj** , aby przejść do tego folderu.
 
    ![Właściwość ścieżki wyjściowej dla projektu programu C# Visual Studio](media/output-path.png)
+   
+   > [!NOTE]
+   > Niektóre projekty domyślnie obejmują strukturę i środowisko uruchomieniowe w ścieżce kompilacji. Aby to zmienić, kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań**, wybierz polecenie **Edytuj plik projektu**i Dodaj następujące elementy:
+   > ```xml
+   > <PropertyGroup>
+   >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   >   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+   > </PropertyGroup>
+   > ```
 
 > [!TIP]
 > Jeśli dane wyjściowe nie są generowane do określonej lokalizacji, upewnij się, że tworzysz odpowiednią konfigurację (na przykład **debugowanie** lub **wydanie**), wybierając ją na pasku menu programu Visual Studio.
