@@ -1,5 +1,5 @@
 - name: Dokumentacja debugera
-  href: index.md
+  href: index.yml
 - name: Omówienie
   items:
     - name: Co to jest debugowanie?
@@ -450,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Pobieranie z wyprzedzeniem zawartości aplikacji ze sklepu Microsoft Store
               href: prefetch-content-for-windows-store-apps.md
-        - name: Kod zarządzany
+        - name: 'Kod zarządzany (C#, Visual Basic, F#)'
           items:
             - name: Debugowanie kodu zarządzanego
               href: debugging-managed-code.md
@@ -494,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'Debugowanie języka F#'
               href: debugging-f-hash.md
-        - name: Kod natywny
+        - name: Kod C/C++
           items:
             - name: Debugowanie kodu natywnego
               href: debugging-native-code.md
@@ -582,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: Debugowanie wprowadzonego kodu
               href: how-to-debug-injected-code.md
-        - name: Debugowanie kodu GPU
+        - name: Kod GPU
           href: debugging-gpu-code.md
         - name: Diagnostyka grafiki
           href: graphics/toc.yml
@@ -632,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Serwer internetowy nie został poprawnie skonfigurowany
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript i TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Aplikacje internetowe
           items:
             - name: Debugowanie aplikacji internetowych

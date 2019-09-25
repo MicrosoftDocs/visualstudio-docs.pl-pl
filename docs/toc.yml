@@ -1,4 +1,4 @@
-- name: Dokumentacja programu Visual Studio
+- name: Dokumentacja środowiska IDE programu Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: Omówienie

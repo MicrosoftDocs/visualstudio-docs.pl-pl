@@ -31,7 +31,7 @@
 # Edytor źródeł
 ## [Funkcje edytora](source-editor.md)
 ## [Refaktoryzacja](refactoring.md)
-## [IntelliSense](intellisense.md)
+## [Funkcja IntelliSense](intellisense.md)
 ## [Komentarze](comments.md)
 ## [Zachowanie edytora](editor-behavior.md)
 ## [Komentarze do zadań](task-comments.md)
@@ -67,7 +67,7 @@
 ## [Publikowanie w usłudze Azure App Service](publish-app-svc.md)
 ## [Publikowanie w folderze](publish-folder.md)
 
-# Obciążenia
+# Pakiety robocze
 ## [Dostępne obciążenia](workloads.md)
 ## ASP.NET Core
 ### [Obsługa platformy .NET Core](net-core-support.md)
@@ -75,6 +75,7 @@
 ### [Tworzenie aplikacji platformy ASP.NET Core w programie Visual Studio dla komputerów Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript i TypeScript](javascript.md)
+### [launchSettings.json](launch-settings.md)
 ## Azure
 ### [Omówienie](azure-workload.md)
 ### [Wprowadzenie do usługi Azure Functions](azure-functions.md)
@@ -86,7 +87,7 @@
 
 ## Projektowanie gier w środowisku Unity
 ### [Projektowanie gier w środowisku Unity](unity-tools.md)
-### [Konfigurowanie](setup-vsmac-tools-unity.md)
+### [Konfiguracja](setup-vsmac-tools-unity.md)
 ### [Wprowadzenie do korzystania z Unity](unity-walkthrough.md)
 ### [Używanie narzędzi Unity Tools](using-vsmac-tools-unity.md)
 ### [Używanie platformy .NET 4.x w środowisku Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
@@ -99,11 +100,11 @@
 ## [Dzienniki i wyjątki](troubleshooting.md)
 ## [Program poprawy jakości obsługi klienta systemu Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Zgłaszanie problemu](report-a-problem.md)
-## [Troubleshooting: Czy program Visual Studio dla komputerów Mac obsługuje kontrolę wersji programu Team Foundation?](tf-version-control.md)
-## [Troubleshooting: Dlaczego nie mogę wyświetlić wszystkich szablonów?](troubleshooting-no-templates.md)
+## [Rozwiązywanie problemów: Czy program Visual Studio dla komputerów Mac obsługuje kontrolę wersji programu Team Foundation?](tf-version-control.md)
+## [Rozwiązywanie problemów: Dlaczego nie mogę wyświetlić wszystkich szablonów?](troubleshooting-no-templates.md)
 ## [Rozwiązywanie problemów: Podczas pobierania informacji występują błędy aktualizatora](updater-troubleshooting.md)
 
-# [Informacje o wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Uwagi do wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Preview Release Notes (Informacje o wersji zapoznawczej)](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # Przykłady
 ## [Polecane przykłady](samples/index.yml)
