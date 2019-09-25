@@ -1,6 +1,6 @@
 ---
 title: Narzędzia języka F#
-description: Dowiedz się, które funkcje programu Visual Studio są obsługiwane w F#.
+description: Dowiedz się, które funkcje programu Visual Studio F#są obsługiwane w programie.
 ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -10,166 +10,166 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747595"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211305"
 ---
-# <a name="develop-with-visual-f-in-visual-studio"></a>Programowanie za pomocą wizualizacji F# w programie Visual Studio
+# <a name="develop-with-visual-f-in-visual-studio"></a>Programowanie za pomocą F# wizualizacji w Visual Studio
 
-Ten artykuł zawiera informacje o funkcjach programu Visual Studio dla F# rozwoju.
+Ten artykuł zawiera informacje o funkcjach programu Visual F# Studio na potrzeby programowania.
 
-## <a name="install-f-support"></a>Zainstaluj F# pomocy technicznej
+## <a name="install-f-support"></a>Zainstaluj F# obsługę
 
-Tworzyć aplikacje za pomocą F# w programie Visual Studio, należy najpierw zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia, jeśli jeszcze go. Instalowanie programu Visual Studio obciążeń za pośrednictwem Instalator programu Visual Studio, który można otworzyć, wybierając **narzędzia** > **Pobierz narzędzia i funkcje**.
+Aby rozpocząć tworzenie F# w programie Visual Studio, najpierw zainstaluj obciążenie **Programowanie aplikacji klasycznych platformy .NET** , jeśli nie zostało to jeszcze zrobione. Możesz zainstalować obciążenia programu Visual Studio za pomocą Instalator programu Visual Studio, które można otworzyć, wybierając pozycję **Narzędzia** > **Pobierz narzędzia i funkcje**.
 
-![Obciążenie programowanie aplikacji klasycznych dla platformy .NET w programie Visual Studio](media/dotnet-desktop-development-workload.png)
+![Obciążenie Programowanie aplikacji klasycznych dla platformy .NET w programie Visual Studio](media/dotnet-desktop-development-workload.png)
 
 ## <a name="f-project-features"></a>F#funkcje projektu
 
-Różnych szablonów projektów i elementów dostępnych dla F# w programie Visual Studio. Na poniższej ilustracji przedstawiono niektóre F# szablony projektów dla platformy .NET Core i .NET Standard:
+Różne szablony projektów i elementów są dostępne dla F# programu Visual Studio. Na poniższej ilustracji przedstawiono niektóre szablony F# projektów dla platformy .NET Core i .NET standard:
 
 ![F#Szablony projektów w programie Visual Studio](media/fsharp-project-templates.png)
 
-Na poniższej ilustracji przedstawiono niektóre F# elementu szablonów:
+Na poniższej ilustracji przedstawiono niektóre szablony F# elementów:
 
-![F#Szablony elementów w programie Visual Studio](media/fsharp-item-templates.png)
+![F#szablony elementów w programie Visual Studio](media/fsharp-item-templates.png)
 
-Aby uzyskać więcej informacji na temat szablonów elementów, aby uzyskać dostęp do danych, zobacz [ F# dostawców typów](/dotnet/fsharp/tutorials/type-providers/index).
+Aby uzyskać więcej informacji na temat szablonów elementów na potrzeby dostępu do danych, zobacz [ F# dostawcy typów](/dotnet/fsharp/tutorials/type-providers/index).
 
-W poniższej tabeli podsumowano funkcje we właściwościach projektu dla F#:
+Poniższa tabela zawiera podsumowanie funkcji właściwości projektu dla F#:
 
-|Ustawienia projektu|Obsługiwane w F#?|Uwagi|
+|Ustawienie projektu|Obsługiwane w F#?|Uwagi|
 |---------------|----------------|-----|
 |Pliki zasobów|Tak||
-|Odwołanie do ustawienia, debugowania i kompilacji|Yes||
-|Wielowersyjność kodu|Yes||
-|Ikony i manifestu|Nie|Dostępne opcje wiersza polecenia kompilatora.|
-|ASP.NET Client Services|Nie||
-|ClickOnce|Nie|W innym języku .NET, należy użyć projektu klienta, jeśli ma to zastosowanie.|
-|Silne nazewnictwo|Nie|Dostępne opcje wiersza polecenia kompilatora.|
-|Zestaw publikowania i przechowywania wersji|Nie||
-|Analiza kodu|Nie|Narzędzia do analizy kodu można uruchomić ręcznie lub jako część polecenia po kompilacji.|
-|Zabezpieczenia (zmiana poziomów zaufania)|Nie||
+|Ustawienia kompilacji, debugowania i odwołania|Tak||
+|Wielowersyjność kodu|Tak||
+|Ikona i manifest|Nie|Dostępne za poorednictwem opcji wiersza poleceń kompilatora.|
+|ASP.NET usługi klienta|Nie||
+|ClickOnce|Nie|Użyj projektu klienta w innym języku .NET, jeśli ma to zastosowanie.|
+|Silne nazewnictwo|Nie|Dostępne za poorednictwem opcji wiersza poleceń kompilatora.|
+|Publikowanie zestawów i przechowywanie wersji|Nie||
+|Analiza kodu|Nie|Narzędzia do analizy kodu można uruchamiać ręcznie lub jako część polecenia po kompilacji.|
+|Zabezpieczenia (Zmień poziomy zaufania)|Nie||
 
 ## <a name="project-designer"></a>Projektant projektu
 
-**Projektant projektu** składa się z kilku stron właściwości projektu, pogrupowane według pokrewne funkcje. Dostępny dla stron F# projekty są głównie podzbiór tych, które są dostępne dla innych języków i są opisane w poniższej tabeli. Linki zostały podane dla odpowiedniego języka C# **projektanta projektu** strony.
+**Projektant projektu** składa się z kilku stron właściwości projektu pogrupowanych według pokrewnych funkcji. Strony dostępne dla F# projektów są głównie podzbiorem tych dostępnych dla innych języków i są opisane w poniższej tabeli. Linki są dostarczane do odpowiedniej C# strony **projektanta projektu** .
 
 |Strona projektanta projektu|Linki pokrewne|Opis|
 | - |-------------|-----------|
-|Aplikacja|[Strona aplikacji, Projektant projektu](reference/application-page-project-designer-csharp.md)|Umożliwia określenie ustawień na poziomie aplikacji i właściwości, takie jak tego, czy tworzysz bibliotekę lub plik wykonywalny, jakiej wersji programu .NET aplikacja cele i informacji na temat przechowywania plików zasobów, z których korzysta aplikacja.|
-|Kompilacja|[Build Page, Project Designer](reference/build-page-project-designer-csharp.md)|Umożliwia kontrolowanie sposobu kompilowania kodu.|
-|Zdarzenia kompilacji|[Strona zdarzenia, Projektant projektu kompilacji](reference/build-events-page-project-designer-csharp.md)|Pozwala określić polecenie do uruchomienia przed lub po kompilacji.|
-|Debugowanie|[Strona debugowania, Projektant projektu](reference/debug-page-project-designer.md)|Można kontrolować, jak aplikacja zostanie uruchomiona podczas debugowania. Obejmuje to, co polecenia i co na uruchamianie aplikacji, że katalog jest i wszelkie specjalne trybów debugowania, który chcesz włączyć, takich jak SQL i kodu natywnego.|
-|Pakiet (tylko zestaw SDK platformy .NET)|Brak|Umożliwia zdefiniowanie metadanych pakietu NuGet, podczas publikowania jako pakiet NuGet.|
-|Ścieżki odwołania|[Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md)|Pozwala określić, gdzie do przeszukania pod kątem zestawów, który zależy od kodu.|
-|Zasoby (tylko zestaw SDK platformy .NET)|Brak|Umożliwia generowanie i zarządzanie nimi domyślnego pliku zasobów.|
+|Aplikacja|[Strona aplikacji, Projektant projektu](reference/application-page-project-designer-csharp.md)|Umożliwia określenie ustawień i właściwości na poziomie aplikacji, takich jak to, czy tworzysz bibliotekę lub plik wykonywalny, która wersja programu .NET jest przeznaczona dla aplikacji, oraz informacje o tym, gdzie są przechowywane pliki zasobów używane przez aplikację.|
+|Kompilacja|[Strona kompilacja, Projektant projektu](reference/build-page-project-designer-csharp.md)|Umożliwia sterowanie sposobem kompilowania kodu.|
+|Zdarzenia kompilacji|[Strona zdarzenia kompilacji, Projektant projektu](reference/build-events-page-project-designer-csharp.md)|Umożliwia określenie poleceń do uruchomienia przed kompilacją lub po niej.|
+|Debugowanie|[Strona debugowania, Projektant projektu](reference/debug-page-project-designer.md)|Umożliwia sterowanie sposobem uruchamiania aplikacji podczas debugowania. Dotyczy to również poleceń, które mają być używane, i zawartości katalogu początkowego aplikacji oraz wszelkich specjalnych trybów debugowania, które mają być włączone, takich jak kod natywny i SQL.|
+|Pakiet (tylko .NET SDK)|Brak|Umożliwia definiowanie metadanych pakietu NuGet podczas publikowania jako pakiet NuGet.|
+|Ścieżki odwołań|[Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md)|Pozwala określić, gdzie mają być wyszukiwane zestawy, od których zależy kod.|
+|Zasoby (tylko zestaw SDK platformy .NET)|Brak|Umożliwia generowanie domyślnego pliku zasobów i zarządzanie nim.|
 
-### <a name="f-specific-settings"></a>F#-określone ustawienia
+### <a name="f-specific-settings"></a>F#Ustawienia specyficzne dla
 
-Poniższa tabela zawiera podsumowanie ustawień, które są specyficzne dla F#:
+Poniższa tabela zawiera podsumowanie ustawień, które są specyficzne F#dla:
 
 |Strona projektanta projektu|Ustawienie|Opis|
 | - |-------|-----------|
-|Kompilacja|Generuj wywołania zakończenia|Jeśli zaznaczone, umożliwia korzystanie z fragmentarycznej instrukcji Microsoft Intermediate Language (MSIL). Powoduje to ramek stosu, można użyć ponownie dla funkcji cyklicznych. Odpowiednikiem `--tailcalls` — opcja kompilatora.|
-|Kompilacja|Inne flagi|Pozwala określić opcje wiersza polecenia kompilatora dodatkowe.|
+|Kompilacja|Generuj wywołania tail|W przypadku wybrania tej wartości program umożliwia korzystanie z instrukcji języka pośredniego (MSIL) firmy Microsoft. Powoduje to, że ramka stosu zostanie ponownie użyta na potrzeby funkcji cyklicznych. Odpowiednik opcji kompilatora `--tailcalls` .|
+|Kompilacja|Inne flagi|Umożliwia określenie dodatkowych opcji wiersza polecenia kompilatora.|
 
 ## <a name="code-and-text-editor-features"></a>Funkcje edytora kodu i tekstu
 
-Następujące funkcje edytory kodu i tekstu programu Visual Studio są obsługiwane w F#:
+Następujące funkcje programu Visual Studio Code i edytorów tekstu są obsługiwane w programie F#:
 
 |Funkcja|Opis|Obsługiwane w F#?|
 |-------|-----------|----------------|
-|Automatycznie komentarz|Można dodać komentarz lub usuń znaczniki komentarza sekcje kodu.|Tak|
-|Automatycznie Formatuj|Formatuje kodu za pomocą standardowych wcięcia i stylu.|Nie|
-|Zakładki|Umożliwia zapisanie miejsc w edytorze.|Tak|
-|Zmiana wcięcia|Wcięcia lub usuwa wcięcia w zaznaczonych wierszach.|Tak|
-|Inteligentne wcięcie|Automatycznie wcięcia i cofnąć wcięcia kursor na podstawie położenia F# reguł ustawiania zakresu.|Tak|
-|[Znajdowanie i zastępowanie tekstu](finding-and-replacing-text.md)|Umożliwia wyszukiwanie w pliku, projekt lub rozwiązanie i potencjalnie zmiana tekstu.|Tak|
-|Przejdź do definicji interfejsu API platformy .NET|Gdy kursor znajduje się na interfejs API programu .NET, zawiera kod generowany z metadanych platformy .NET.|Nie|
-|Przejdź do definicji dla użytkownika z interfejsu API|Gdy kursor znajduje się w jednostce program, który zdefiniowano, przenosi kursor do lokalizacji w kodzie, w której jednostka została zdefiniowana.|Tak|
-|Przejdź do wiersza|Umożliwia przejście do określonego wiersza w pliku przez numer wiersza.|Tak|
-|Paski nawigacji u góry pliku|Można przejść do lokalizacji w kodzie, na przykład nazwę funkcji.|Tak|
-|Wskazówki dotyczące struktury bloku|Pokazuje wytyczne, które wskazują F# zakresy, które mogą być najechania kursorem dla wersji zapoznawczej.|Tak|
-|[Obramowanie](outlining.md)|Umożliwia zwijanie sekcji kodu, aby utworzyć bardziej zwarty.|Yes|
-|Zmień spacje na tabulatory|Konwertuje spacje na znaki tabulacji.|Tak|
-|Kolorowanie typów|Pokazuje zdefiniowane nazwy typów w kolorze specjalne.|Tak|
-|Szybkie wyszukiwanie. Zobacz Szybkie szukanie, znajdowanie i zamienianie okna.|Umożliwia wyszukiwanie pliku lub projektu.|Tak|
-|**CTRL**+**kliknij** do przejdź do definicji|Służy do przechowywania **Ctrl** i kliknij pozycję F# symbol do wywołania, przejdź do definicji.|Tak|
-|Przejdź do definicji z sekcji szybkich informacji|Możesz klikać symbole wewnątrz etykietki narzędzi, które wywoływać przejdź do definicji.|Tak|
-|Przejdź do wszystkich|Umożliwia globalny, dopasowywania rozmytego nawigacji dla wszystkich F# tworzy się za pośrednictwem **Ctrl**+**T**.|Tak|
-|Zmiany nazwy wstawionego elementu|Zmienia nazwę wszystkich wystąpień elementu wbudowanego symboli.|Tak|
-|Znajdź wszystkie odwołania|Umożliwia znalezienie wszystkich wystąpień symbolu w bazie kodu.|Tak|
-|Uprość nazwy poprawki kodu|Usuwa niepotrzebne kwalifikatory dla F# symboli.|Tak|
-|Usuń nieużywane `open` poprawki kodu — instrukcja|Usuwa wszystkie zbędne `open` instrukcje w dokumencie.|Tak|
-|Poprawka kodu nieużywanych wartości|Sugeruje, zmiana nazwy nieużywany identyfikator, aby znaku podkreślenia.|Tak|
+|Automatycznie komentarz|Umożliwia komentowanie lub usuwanie komentarzy do sekcji kodu.|Tak|
+|Automatycznie Formatuj|Formatuje kod ze standardowym wcięciem i stylem.|Nie|
+|Zakładki|Umożliwia zapisywanie miejsc w edytorze.|Tak|
+|Zmień wcięcie|Zwiększa wcięcie wybranych wierszy lub usuwa z nich wcięcia.|Tak|
+|Inteligentne wcięcia|Automatycznie zwiększa wcięcie i cofa wcięcie kursora zgodnie z F# regułami określania zakresu.|Tak|
+|[Znajdowanie i zastępowanie tekstu](finding-and-replacing-text.md)|Umożliwia wyszukiwanie w pliku, projekcie lub rozwiązaniu, a także może spowodować zmianę tekstu.|Tak|
+|Przejdź do definicji interfejsu API platformy .NET|Po umieszczeniu kursora w interfejsie API platformy .NET program wyświetla kod generowany na podstawie metadanych platformy .NET.|Nie|
+|Przejdź do definicji dla interfejsu API zdefiniowanego przez użytkownika|Gdy kursor znajduje się w zdefiniowanej jednostce programu, przenosi kursor do lokalizacji w kodzie, w którym zdefiniowano jednostkę.|Tak|
+|Przejdź do wiersza|Umożliwia przejście do określonego wiersza w pliku według numeru wiersza.|Tak|
+|Paski nawigacyjne w górnej części pliku|Umożliwia przechodzenie do lokalizacji w kodzie, przez, na przykład, nazwa funkcji.|Tak|
+|Wskazówki dotyczące struktury bloków|Pokazuje wskazówki wskazujące F# zakresy, które mogą być przesuwane w wersji zapoznawczej.|Tak|
+|[Obramowanie](outlining.md)|Umożliwia zwinięcie sekcji kodu w celu utworzenia bardziej kompaktowego widoku.|Tak|
+|Na tabulatory|Konwertuje spacje na tabulatory.|Tak|
+|Kolorowanie typów|Pokazuje zdefiniowane nazwy typów w specjalnym kolorze.|Tak|
+|Szybkie znajdowanie. Zobacz szybkie znajdowanie, Znajdowanie i zamienianie okna.|Umożliwia wyszukiwanie w pliku lub projekcie.|Tak|
+|**Naciśnij klawisz Ctrl**+ **, aby przejść do definicji**|Umożliwia zatrzymanie klawisza **Ctrl** i kliknięcie F# symbolu do wywołania przejdź do definicji.|Tak|
+|Przejdź do definicji z sekcji szybkich informacji|Symbole, które można klikać w obrębie etykietek narzędzi, które wywołują przejdź do definicji.|Tak|
+|Przejdź do wszystkich|Włącza globalną, rozmytyą nawigację dla wszystkich F# konstrukcji za pośrednictwem **Ctrl**+**T**.|Tak|
+|Nazwa wbudowana|Zmienia nazwę wszystkich wystąpień symbolu w tekście.|Tak|
+|Znajdź wszystkie odwołania|Znajduje wszystkie wystąpienia symbolu w bazie kodu.|Tak|
+|Uprość poprawkę kodu nazw|Usuwa zbędne kwalifikatory F# dla symboli.|Tak|
+|Usuń nieużywaną `open` poprawkę kodu instrukcji|Usuwa wszystkie zbędne `open` instrukcje w dokumencie.|Tak|
+|Poprawka nieużywanego kodu wartości|Sugeruje zmianę nazwy nieużywanego identyfikatora na podkreślenie.|Tak|
 
-Aby uzyskać ogólne informacje na temat edytowania kodu w programie Visual Studio i funkcje edytora tekstu, zobacz [pisanie kodu w edytorze](writing-code-in-the-code-and-text-editor.md).
+Aby uzyskać ogólne informacje na temat edytowania kodu w programie Visual Studio i funkcji edytora tekstów, zobacz [pisanie kodu w edytorze](writing-code-in-the-code-and-text-editor.md).
 
 ## <a name="intellisense-features"></a>Funkcje IntelliSense
 
-W poniższej tabeli podsumowano funkcje IntelliSense obsługiwane i nieobsługiwane w F#:
+W poniższej tabeli zestawiono funkcje IntelliSense obsługiwane i nieobsługiwane w F#programie:
 
 |Funkcja|Opis|Obsługiwane w F#?|
 |-------|-----------|----------------|
-|Automatycznie implementować interfejsów|Generuje kod wycinków dla metod interfejsu.|Tak|
-|Fragmenty kodu|Wprowadza kod z biblioteki typowe konstrukcje programowania na tematy.|Nie|
-|Dokończ wyraz|Zapisuje wpisywanie, wykonując słów i nazwy podczas wpisywania.|Yes|
-|Automatyczne uzupełnianie|Po włączeniu powoduje, że uzupełnianie wyrazów, zaznacz pierwsze dopasowanie, podczas wpisywania, zamiast czekać, aż można wybrać jedną lub naciśnij **Ctrl**+**miejsca**.|Tak|
-|Zakończenie oferty dla symboli w nieotwartych przestrzeniach nazw|Za pomocą automatycznego uzupełniania pasującego symbol, który znajduje się w przestrzeni nazw usługi nieotwarte jest zalecane, oferty, można wykonać przy użyciu odpowiednich `open` instrukcji po wybraniu.|Tak|
-|Generuj elementy kodu|Umożliwia generowanie kodu klasy zastępczej dla różnych konstrukcji.|Nie|
-|Lista składników|Podczas wpisywania tekstu operator dostępu do elementów członkowskich (.), zawiera elementy członkowskie typu.|Tak|
-|Organizowanie deklaracje Using/Otwórz|Organizuje przestrzenie nazw odwołuje się **przy użyciu** instrukcji w C# lub **Otwórz** dyrektywy w F#.|Nie|
-|Informacje o parametrach|Zawiera przydatne informacje dotyczące parametrów podczas wpisywania wywołania funkcji.|Tak|
-|Szybkie informacje|Wyświetla pełną deklarację dla każdego identyfikatora w kodzie.|Yes|
-|Automatyczne uzupełnianie nawiasów|Automatycznie wykonuje F# nawias klamrowy składni konstrukcji w sposób transakcyjny.|Yes|
+|Automatycznie Implementuj interfejsy|Generuje fragmenty kodu dla metod interfejsu.|Tak|
+|Fragmenty kodu|Wprowadza kod z biblioteki wspólnych konstrukcji kodowania do tematów.|Nie|
+|Dokończ wyraz|Zapisuje tekst, wykonując słowa i nazwy podczas wpisywania.|Tak|
+|Automatyczne uzupełnianie|Po włączeniu powoduje, że uzupełnianie wyrazów wybiera pierwsze dopasowanie podczas pisania, zamiast czekać na wybranie jednego lub naciśnięcie klawisza **Ctrl**+ **.**|Tak|
+|Ukończenie oferty dla symboli w nieotwartych przestrzeniach nazw|W przypadku automatycznego uzupełniania sugerowany symbol, który znajduje się w nieotwartym obszarze nazw, jest proponowany, a oferta została `open` zakończona z odpowiednią instrukcją w przypadku wybrania.|Tak|
+|Generuj elementy kodu|Umożliwia generowanie kodu szczątkowego dla różnych konstrukcji.|Nie|
+|Lista składników|Po wpisaniu operatora dostępu do elementu członkowskiego (.), pokazuje elementy członkowskie dla danego typu.|Tak|
+|Organizuj przy użyciu/Otwórz|Organizuje przestrzenie nazw, do których C# odwołują się instrukcje F# **using** w lub **otwierają** dyrektywy w.|Nie|
+|Informacje o parametrach|Wyświetla przydatne informacje dotyczące parametrów podczas wpisywania wywołania funkcji.|Tak|
+|Szybkie informacje|Wyświetla kompletną deklarację dla dowolnego identyfikatora w kodzie.|Tak|
+|Automatyczne uzupełnianie nawiasów klamrowych|Automatycznie uzupełnia F# w sposób transakcyjny konstrukcje składniowe w nawiasach klamrowych.|Tak|
 
-Aby uzyskać ogólne informacje na temat technologii IntelliSense, zobacz [IntelliSense użyj](using-intellisense.md).
+Aby uzyskać ogólne informacje na temat technologii IntelliSense, zobacz [Korzystanie z funkcji IntelliSense](using-intellisense.md).
 
 ## <a name="debugging-features"></a>Funkcje debugowania
 
-W poniższej tabeli podsumowano funkcje, które są dostępne podczas debugowania F# kodu:
+Poniższa tabela zawiera podsumowanie funkcji dostępnych podczas debugowania F# kodu:
 
 |Funkcja|Opis|Obsługiwane w F#?|
 |-------|-----------|----------------|
-|okno zmiennych automatycznych|Pokazuje zmienne automatyczne lub tymczasowego.|Nie|
-|Punkty przerwania|Można wstrzymać wykonanie kodu w określonych punktach podczas debugowania.|Tak|
-|Warunkowe punkty przerwania|Umożliwia punktów przerwania, warunek, który określa, czy należy wstrzymać wykonywania testu.|Tak|
-|Edytuj i kontynuuj|Umożliwia kodu można modyfikować i skompilowany podczas debugowania uruchomiony program bez zatrzymywania i ponownego uruchamiania debugera.|Nie|
-|Ewaluator wyrażeń|Oblicza i wykonuje kod w czasie wykonywania.|Nie, ale języka C# Ewaluator wyrażeń mogą być używane, ale należy użyć składni języka C#.|
-|Debugowanie historyczne|Można przejść do wcześniej wykonywany kod.|Yes|
-|okno zmiennych lokalnych|Pokazuje lokalnie zdefiniowane wartości oraz zmienne.|Yes|
-|Uruchom do kursora|Umożliwia wykonanie kodu, aż do osiągnięcia wiersz zawierający kursor.|Tak|
-|Wkrocz|Pozwala na wcześniejsze wykonanie i Przenieś do dowolnej wywołania funkcji.|Tak|
-|Przekrocz nad|Pozwala na wcześniejsze wykonanie w bieżącej ramki stosu i przejścia za każde wywołanie funkcji.|Yes|
+|okno zmiennych automatycznych|Wyświetla zmienne automatyczne lub tymczasowe.|Nie|
+|Punkty przerwania|Umożliwia wstrzymanie wykonywania kodu w określonych punktach podczas debugowania.|Tak|
+|Warunkowe punkty przerwania|Włącza punkty przerwania, które testują warunek określający, czy wykonywanie powinno zostać wstrzymane.|Tak|
+|Edytuj i kontynuuj|Umożliwia modyfikowanie i kompilowanie kodu w trakcie debugowania działającego programu bez zatrzymywania i ponownego uruchamiania debugera.|Nie|
+|Ewaluatora wyrażeń|Oblicza i wykonuje kod w czasie wykonywania.|Nie, ale można C# używać ewaluatora wyrażeń, chociaż należy użyć C# składni.|
+|Debugowanie historyczne|Umożliwia wkroczenie do wykonanego wcześniej kodu.|Tak|
+|okno zmiennych lokalnych|Pokazuje zdefiniowane lokalnie wartości i zmienne.|Tak|
+|Uruchom do kursora|Umożliwia wykonywanie kodu do momentu, aż wiersz zawierający kursor zostanie osiągnięty.|Tak|
+|Wkrocz|Umożliwia wykonywanie i przechodzenie do dowolnego wywołania funkcji.|Tak|
+|Przekrocz nad|Umożliwia wykonywanie z wyprzedzeniem bieżącej ramki stosu i przechodzenie do poprzedniego wywołania funkcji.|Tak|
 
-Aby uzyskać ogólne informacje o debugerze programu Visual Studio, zobacz [debugowania w programie Visual Studio](../debugger/index.md).
+Aby uzyskać ogólne informacje na temat debugera programu Visual Studio, zobacz [debugowanie w programie Visual Studio](../debugger/index.yml).
 
 ## <a name="additional-tools"></a>Dodatkowe narzędzia
 
-Poniższa tabela zawiera podsumowanie obsługi F# w narzędziach Visual Studio.
+Poniższa tabela zawiera podsumowanie obsługi programu F# w narzędziach Visual Studio.
 
 |Narzędzie|Opis|Obsługiwane w F#?|
 |----|-----------|----------------|
-|Hierarchia wywołań|Wyświetla struktury zagnieżdżonej funkcji wywołania w kodzie.|Nie|
-|Metryki kodów|Zbiera informacje o swoim kodzie, takie jak liczba linii.|Nie|
-|Widok klas|Zapewnia widok na podstawie typu kodu w projekcie.|Nie|
-|[Okno listy błędów](reference/error-list-window.md)|Zawiera listę błędów w kodzie.|Yes|
-|[F# Interactive](/dotnet/fsharp/tutorials/fsharp-interactive/)|Pozwala wpisać (lub skopiuj i Wklej) F# kodowanie i natychmiastowe jego uruchomienie, niezależnie od tworzenia projektu. F# Okno interaktywne to pętla drukowania odczytu i oceń, (REPL).|Tak|
-|Przeglądarka obiektów|Umożliwia wyświetlanie typów w zestawie.|F#typy w jakiej występują w skompilowanych zestawach nie są wyświetlane dokładnie tak, jak je tworzyć. Możesz przeglądać reprezentacją skompilowanego F# typów, ale nie można wyświetlić typy, w jakiej występują w F#.|
+|Hierarchia wywołań|Wyświetla zagnieżdżoną strukturę wywołań funkcji w kodzie.|Nie|
+|Metryki kodów|Zbiera informacje o kodzie, takie jak liczby wierszy.|Nie|
+|Widok klas|Przedstawia widok kodu w projekcie oparty na typie.|Nie|
+|[Okno Lista błędów](reference/error-list-window.md)|Pokazuje listę błędów w kodzie.|Tak|
+|[F# Interactive](/dotnet/fsharp/tutorials/fsharp-interactive/)|Umożliwia wpisywanie (lub kopiowanie i wklejanie) F# kodu i natychmiastowe uruchamianie go niezależnie od kompilowania projektu. Okno F# interaktywne to odczytana, oszacowana i drukowana pętla (REPL).|Tak|
+|Przeglądarka obiektów|Umożliwia wyświetlanie typów w zestawie.|F#typy, które pojawiają się w skompilowanych zestawach, nie są wyświetlane dokładnie podczas ich tworzenia. Można przeglądać skompilowaną reprezentację F# typów, ale nie można wyświetlić typów, z F#których się pojawiają.|
 |[Okno danych wyjściowych](reference/output-window.md)|Wyświetla dane wyjściowe kompilacji.|Tak|
-|Analiza wydajności|Udostępnia narzędzia do pomiaru wydajności kodu.|Tak|
-|Okno właściwości|Wyświetla i umożliwia edytowanie właściwości obiektu w środowisku programistycznym, który ma fokus.|Tak|
-|Server Explorer|Zapewnia sposoby interakcji z różnych zasobów serwera.|Tak|
-|Eksplorator rozwiązań|Umożliwia wyświetlanie i zarządzanie nimi, projektów i plików.|Yes|
-|Lista zadań|Umożliwia zarządzanie elementami roboczymi odnoszących się do kodu.|Nie|
-|Projekty testowe|Oferuje funkcje, które pomagają testować kod.|Nie|
-|Przybornik|Wyświetla karty zawierające przeciąganego obiekty, takie jak formanty i części tekstu lub kodu.|Yes|
+|Analiza wydajności|Oferuje narzędzia do mierzenia wydajności kodu.|Tak|
+|Okno właściwości|Wyświetla i umożliwia edytowanie właściwości obiektu w środowisku programistycznym, które ma fokus.|Tak|
+|Server Explorer|Zapewnia sposoby współpracy z różnymi zasobami serwera.|Tak|
+|Eksplorator rozwiązań|Umożliwia wyświetlanie projektów i plików oraz zarządzanie nimi.|Tak|
+|Lista zadań|Umożliwia zarządzanie elementami roboczymi związanymi z kodem.|Nie|
+|Projekty testowe|Oferuje funkcje, które ułatwiają testowanie kodu.|Nie|
+|Przybornik|Wyświetla karty zawierające przeciągane obiekty, takie jak kontrolki i sekcje tekstu lub kodu.|Tak|
 
 ## <a name="see-also"></a>Zobacz także
 
 - [F#Przewodnik (.NET Framework)](/dotnet/fsharp/)
-- [Rozpoczynanie pracy z usługą F# w programie Visual Studio](/dotnet/fsharp/get-started/get-started-visual-studio)
+- [Wprowadzenie F# do programu Visual Studio](/dotnet/fsharp/get-started/get-started-visual-studio)

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f3c118b097dbcd9eba8a5755672bde9c11cb13a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 468b63ca554ea126bbd621a2502e54540e6ed068
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920309"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231278"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Metody Dispose powinny wywoływać metodę Dispose klasy bazowej
 
@@ -29,7 +29,7 @@ ms.locfileid: "68920309"
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Typ, który implementuje <xref:System.IDisposable?displayProperty=fullName> dziedziczy z typu, który również implementuje <xref:System.IDisposable>. Metoda typu dziedziczenia nie <xref:System.IDisposable.Dispose%2A> wywołuje metody typu nadrzędnego. <xref:System.IDisposable.Dispose%2A>

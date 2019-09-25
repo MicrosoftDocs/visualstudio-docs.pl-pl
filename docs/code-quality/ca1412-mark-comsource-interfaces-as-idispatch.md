@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a7214ce37aa48d69b9261d686960fa0a4c308c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caaae787d5e4801f3fc3b8d881b386595fb2eca4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546352"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234688"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Oznacz interfejsy ComSource atrybutem IDispatch
 
@@ -30,20 +30,20 @@ ms.locfileid: "62546352"
 |-|-|
 |TypeName|MarkComSourceInterfacesAsIDispatch|
 |CheckId|CA1412|
-|Kategoria|Microsoft.Interoperability|
-|Zmiana kluczowa|Kluczowa|
+|Kategoria|Microsoft. współdziałanie|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ jest oznaczony za pomocą <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atrybut i co najmniej jeden określony interfejs nie jest oznaczony atrybutem <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> ustawioną wartość atrybutu `InterfaceIsDispatch` wartość.
+Typ jest oznaczony <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atrybutem, a co najmniej jeden określony interfejs nie jest oznaczony <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutem ustawionym na `InterfaceIsDispatch` wartość.
 
 ## <a name="rule-description"></a>Opis reguły
 
-<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> Służy do identyfikowania interfejsów zdarzeń, które klasa udostępnia klientom Component Object Model (COM). Interfejsy te muszą być widoczne jako `InterfaceIsIDispatch` aby umożliwić klientom Visual Basic 6 COM otrzymywać powiadomienia o zdarzeniach. Domyślnie, jeśli interfejs nie jest oznaczony atrybutem <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutu, jest ona uwidoczniona jako podwójnego interfejsu.
+<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>służy do identyfikowania interfejsów zdarzeń, które Klasa uwidacznia dla klientów Component Object Model (COM). Te interfejsy muszą być uwidocznione `InterfaceIsIDispatch` jako, aby umożliwić klientom Visual Basic 6 com otrzymywanie powiadomień o zdarzeniach. Domyślnie, jeśli interfejs nie jest oznaczony <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutem, zostanie uwidoczniony jako podwójny interfejs.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy dodać lub zmodyfikować <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutu tak, aby jego wartość jest równa InterfaceIsIDispatch dla wszystkich interfejsów, które są określone za pomocą <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atrybutu.
+Aby naprawić naruszenie tej zasady, należy dodać lub zmodyfikować <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybut, tak aby jego wartość była równa InterfaceIsIDispatch dla wszystkich interfejsów, które są określone <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> przy użyciu atrybutu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -51,14 +51,14 @@ Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład pokazuje klasę, gdy jeden z interfejsów narusza regułę.
+W poniższym przykładzie pokazano klasę, w której jeden z interfejsów narusza regułę.
 
 [!code-csharp[FxCop.Interoperability.MarkIDispatch#1](../code-quality/codesnippet/CSharp/ca1412-mark-comsource-interfaces-as-idispatch_1.cs)]
 [!code-vb[FxCop.Interoperability.MarkIDispatch#1](../code-quality/codesnippet/VisualBasic/ca1412-mark-comsource-interfaces-as-idispatch_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA1408: Nie używaj wartości AutoDual elementu ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408: Nie używaj AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Zobacz także
 

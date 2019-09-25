@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b3c6298c2186b6a73b4a7ef441b5f4c42c90ff6a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714981"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231062"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nie publikuj zasobów w formatach z wersji wstępnych
 
@@ -28,19 +28,19 @@ ms.locfileid: "66714981"
 |TypeName|DoNotShipUnreleasedResourceFormats|
 |CheckId|CA2228|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Plik zasobów został skompilowany przy użyciu wersji platformy .NET, który nie jest obecnie obsługiwane.
+Plik zasobów został skompilowany przy użyciu wersji platformy .NET, która nie jest obecnie obsługiwana.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Pliki zasobów, które zostały utworzone przy użyciu wersji platformy .NET w wersji wstępnej może nie być użyteczne z obsługiwanymi wersjami programu .NET.
+Pliki zasobów, które zostały skompilowane przy użyciu wersji wstępnych programu .NET, mogą nie być używane przez obsługiwane wersje programu .NET.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy utworzyć ten zasób, używając obsługiwanej wersji programu .NET.
+Aby naprawić naruszenie tej reguły, skompiluj zasób przy użyciu obsługiwanej wersji platformy .NET.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 

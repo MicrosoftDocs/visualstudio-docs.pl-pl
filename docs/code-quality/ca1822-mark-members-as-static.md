@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 11f210b9d37f15b3ea92b92112e48eecd3c8b9e1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921383"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233408"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Oznaczaj składowe jako statyczne
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921383"
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Rozdzielenie — Jeśli element członkowski nie jest widoczny poza zestawem, niezależnie od wprowadzonej zmiany. Bez przerywania — Jeśli po prostu zmienisz element członkowski na wystąpienie z `this` słowem kluczowym.<br /><br /> Przerywanie — Jeśli element członkowski zostanie zmieniony z elementu członkowskiego wystąpienia na statyczny element członkowski i będzie widoczny poza zestawem.|
+|Zmiana podziału|Rozdzielenie — Jeśli element członkowski nie jest widoczny poza zestawem, niezależnie od wprowadzonej zmiany. Rozdzielenie — Jeśli po prostu zmienisz element członkowski na wystąpienie z `this` słowem kluczowym.<br /><br /> Przerywanie — Jeśli element członkowski zostanie zmieniony z elementu członkowskiego wystąpienia na statyczny element członkowski i będzie widoczny poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
 Członek, który nie ma dostępu do danych wystąpienia, nie jest oznaczony jako static ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Shared in).

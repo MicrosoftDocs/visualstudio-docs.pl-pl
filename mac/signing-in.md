@@ -3,22 +3,22 @@ title: Logowanie do Visual Studio dla komputerów Mac
 description: Jak zalogować się do Visual Studio dla komputerów Mac
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957370"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213663"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Zaloguj się do Visual Studio dla komputerów Mac
 
-Zalogowanie się do Visual Studio dla komputerów Mac polega na [tym](enable-subscription.md), jak aktywować subskrypcję. Po pobraniu Visual Studio dla komputerów Mac zawsze domyślnie otrzymujesz wersję Community. Jeśli masz [licencję Professional lub Enterprise](https://visualstudio.microsoft.com/vs/compare/), należy najpierw zalogować się w celu odblokowania dodatkowych funkcji. Ponadto uzyskasz również następujące czynności:
+Zalogowanie się do Visual Studio dla komputerów Mac polega na [tym, jak aktywować subskrypcję](enable-subscription.md). Po pobraniu Visual Studio dla komputerów Mac zawsze domyślnie otrzymujesz wersję Community. Jeśli masz [licencję Professional lub Enterprise](https://visualstudio.microsoft.com/vs/compare/), należy najpierw zalogować się w celu odblokowania dodatkowych funkcji. Ponadto uzyskasz również następujące czynności:
 
 * **Dostęp do programu Visual Studio Dev Essentials** — ten program obejmuje bezpłatne oferty oprogramowania, szkolenia, pomoc techniczną i inne. Zobacz [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) Aby uzyskać więcej informacji.
 
-* **Automatycznie łącz** się z platformą Azure w środowisku IDE bez monitowania o poświadczenia dla tego samego konta.
+* **Automatycznie łącz się z platformą Azure** w środowisku IDE bez monitowania o poświadczenia dla tego samego konta.
 
 Po uruchomieniu Visual Studio dla komputerów Mac po raz pierwszy zostanie wyświetlony monit o zalogowanie się przy użyciu konto Microsoft. Użyj konto Microsoft, która jest połączona z licencją, której chcesz użyć. Jeśli nie masz konto Microsoft, zapoznaj się z artykułem [Jak mogę zarejestrować się w celu uzyskania konta](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account).
 
@@ -29,17 +29,17 @@ Jeśli użytkownik zdecyduje się na nie logować się bezpośrednio, będzie mo
 > [!TIP]
 > Przed zalogowaniem się do Visual Studio dla komputerów Mac upewnij się, że masz połączenie z Internetem. Subskrypcje > można aktywować tylko w trybie online. Jeśli nie masz połączenia, wybierz pozycję "chcę to zrobić później" i zaloguj się za pomocą menu po nawiązaniu połączenia.
 
-Aby zalogować się do Visual Studio dla komputerów Mac, wykonaj następujące czynności:
+Aby zalogować się do Visual Studio dla komputerów Mac przy pierwszym uruchomieniu, wykonaj następujące czynności:
 
 1. Kliknij przycisk **Zaloguj się przy użyciu konta Microsoft** w oknie logowania:
 
-    ![Okno dialogowe kont w Visual Studio dla komputerów Mac](media/signing-in-image12.png)
+    ![Okno dialogowe kont w Visual Studio dla komputerów Mac](media/ide-tour-2019-start-signin.png)
 
 2. Wprowadź swoje poświadczenia firmy Microsoft:
 
     ![Okno dialogowe poświadczeń firmy Microsoft](media/signing-in-image13.png)
 
-3. Po zalogowaniu zobaczysz okno uruchamiania programu Visual Studio 2019 dla komputerów Mac. W tym miejscu możesz otworzyć lub utworzyć nowy projekt:
+4. Po zalogowaniu zobaczysz opcję wyboru skrótów klawiaturowych. Wybierz opcję, której chcesz użyć, i **Kontynuuj**. Następnie zostanie wyświetlony monit z oknem uruchamiania programu Visual Studio 2019 for Mac. W tym miejscu możesz otworzyć lub utworzyć nowy projekt:
 
     ![Logowanie powiodło się](media/signing-in-image14.png)
 

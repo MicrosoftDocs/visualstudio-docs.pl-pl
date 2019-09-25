@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 7c7fa7756383426f990e18225995a768de9fefbd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300601"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231735"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nie likwiduj obiektów wielokrotnie
 
@@ -28,7 +28,7 @@ ms.locfileid: "68300601"
 |TypeName|DoNotDisposeObjectsMultipleTimes|
 |CheckId|CA2202|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 

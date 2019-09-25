@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c581757a559311b6660a77c4d9190a7361314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcb5937f58088684e7bfc204ab4143434b0684ae
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779550"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236408"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Rozważ przekazywanie typów podstawowych jako parametrów
 
@@ -32,35 +32,35 @@ ms.locfileid: "62779550"
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
-Deklaracja metody zawiera parametr formalny, który jest typem pochodnym, a metoda wywołuje tylko członkowie podstawowy typ parametru.
+Deklaracja metody zawiera formalny parametr, który jest typem pochodnym, a metoda wywołuje tylko elementy członkowskie typu podstawowego parametru.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Jeśli typ podstawowy jest określony jako parametr w deklaracji metody, dowolny typ, który pochodzi od typu podstawowego, może zostać przekazany jako odpowiadający argument do metody. Jeśli argument jest używana wewnątrz treści metody, określonej metody, która jest wykonywana zależy od typu argumentu. Jeśli dodatkowe funkcje, które są dostarczane przez typ pochodny nie jest wymagana, użycie typu podstawowego umożliwia szersze wykorzystanie metody.
+Jeśli typ podstawowy jest określony jako parametr w deklaracji metody, dowolny typ, który pochodzi od typu podstawowego, może zostać przekazany jako odpowiadający argument do metody. Gdy argument jest używany wewnątrz treści metody, określona metoda jest zależna od typu argumentu. Jeśli dodatkowe funkcje dostarczone przez typ pochodny nie są wymagane, użycie typu podstawowego umożliwia szersze użycie metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy zmienić typ parametru do jego typ podstawowy.
+Aby naprawić naruszenie tej reguły, Zmień typ parametru na jego typ podstawowy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Pomijaj ostrzeżeń dla tej reguły można bezpiecznie
+Można bezpiecznie pominąć ostrzeżenie z tej reguły
 
-- Jeśli metoda, która wymaga określonych funkcji, która jest dostarczana przez typ pochodny
+- Jeśli metoda wymaga określonej funkcjonalności, która jest dostarczana przez typ pochodny
 
      \- lub —
 
-- Aby wymusić typu pochodnego lub typu bardziej pochodnego jest przekazywany do metody.
+- Aby wymusić, że tylko typ pochodny lub bardziej pochodny typ jest przekazanie do metody.
 
-W takich przypadkach kod będzie bardziej niezawodne z powodu silnego typu sprawdzanie dostarczonego przez kompilatora i środowiska uruchomieniowego.
+W takich przypadkach kod będzie bardziej niezawodny ze względu na ścisłe sprawdzanie typu dostarczone przez kompilator i środowisko uruchomieniowe.
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie pokazano metodę `ManipulateFileStream`, które mogą być używane tylko w <xref:System.IO.FileStream> obiektu, który narusza tę regułę. Druga metoda `ManipulateAnyStream`, spełnia reguły, zastępując <xref:System.IO.FileStream> parametru za pomocą <xref:System.IO.Stream>.
+Poniższy przykład przedstawia metodę, `ManipulateFileStream`, która może być używana tylko <xref:System.IO.FileStream> z obiektem, co narusza tę regułę. Druga metoda `ManipulateAnyStream`,,, spełnia regułę przez <xref:System.IO.FileStream> zastąpienie parametru za pomocą <xref:System.IO.Stream>.
 
 [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
 [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]

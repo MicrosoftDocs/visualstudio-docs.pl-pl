@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 12371c34c846991a0ec41f5e9d9588c5bde8e4d6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714749"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233593"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Unikaj niezapieczętowanych atrybutów
 
@@ -31,23 +31,23 @@ ms.locfileid: "66714749"
 |TypeName|AvoidUnsealedAttributes|
 |CheckId|CA1813|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
-Publiczny typ dziedziczy z <xref:System.Attribute?displayProperty=fullName>, nie jest abstrakcyjna i nie jest zapieczętowany (`NotInheritable` w języku Visual Basic).
+Typ publiczny dziedziczy z <xref:System.Attribute?displayProperty=fullName>, nie jest abstrakcyjny i nie jest zapieczętowany (`NotInheritable` w Visual Basic).
 
 ## <a name="rule-description"></a>Opis reguły
 
-.NET dostarcza metody do pobierania atrybutów niestandardowych. Domyślnie te metody wyszukują hierarchie dziedziczenia atrybutu. Na przykład <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> wyszukiwania dla podanego typu atrybutu lub dowolny typ atrybutu, który rozszerza podanego typu atrybutu. Plombowanie atrybutu eliminuje wyszukiwanie przez hierarchię dziedziczenia i może zwiększyć wydajność.
+.NET oferuje metody pobierania atrybutów niestandardowych. Domyślnie te metody wyszukują hierarchie dziedziczenia atrybutu. Na przykład <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> wyszukuje określony typ atrybutu lub dowolny typ atrybutu, który rozszerza określony typ atrybutu. Opieczętowanie atrybutu eliminuje wyszukiwanie w hierarchii dziedziczenia i może zwiększyć wydajność.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Zapieczętuj typ atrybutu lub ułatwiają abstrakcyjne.
+Aby naprawić naruszenie tej zasady, należy zapieczętować typ atrybutu lub uczynić go abstrakcyjnym.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły. Pomiń tylko wtedy, gdy definiujesz hierarchii atrybutów i nie można zapieczętować ten atrybut lub ułatwiają abstrakcyjne.
+Można bezpiecznie pominąć ostrzeżenie z tej reguły. Pomiń tylko w przypadku definiowania hierarchii atrybutów i nie można zapieczętować atrybutu ani uczynić abstrakcyjnym.
 
 ## <a name="example"></a>Przykład
 
@@ -58,8 +58,8 @@ Poniższy przykład pokazuje niestandardowy atrybut, który spełnia tę reguł�
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1019: Zdefiniuj metody dostępu dla argumentów atrybutu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
-- [CA1018: Oznacz atrybuty atrybutem Attributeusage](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+- [CA1019 Zdefiniuj metody dostępu dla argumentów atrybutów](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1018 Oznacz atrybuty atrybutem AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>Zobacz także
 

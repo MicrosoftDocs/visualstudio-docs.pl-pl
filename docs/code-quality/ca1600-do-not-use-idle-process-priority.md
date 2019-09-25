@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 686929471ee8b6b5d1896f61bcbcd97a59135462
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921811"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234377"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Nie używaj priorytetu procesu o wartości Bezczynny
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921811"
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
 |Kategoria|Microsoft. Mobility|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Ta reguła występuje, gdy procesy są ustawione `ProcessPriorityClass.Idle`na.

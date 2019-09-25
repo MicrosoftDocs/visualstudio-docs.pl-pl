@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2539cef9e6b2fe20513943f686aeaa1ff7a79013
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714362"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235105"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ argument CultureInfo
 
@@ -27,12 +27,12 @@ ms.locfileid: "66714362"
 |-|-|
 |TypeName|SpecifyCultureInfo|
 |CheckId|CA1304|
-|Kategoria|Microsoft.Globalization|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Globalizacja|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda lub Konstruktor wywołuje członka mającego przeciążenie, które akceptuje <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> parametru, a metoda lub Konstruktor niewywołujący przeciążenia, które przyjmuje <xref:System.Globalization.CultureInfo> parametru. Ta zasada powoduje ignorowanie wywołania następujących metod:
+Metoda lub Konstruktor wywołuje element członkowski mający Przeciążenie, które akceptuje <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> parametr, a metoda lub Konstruktor nie wywołuje przeciążenia, które <xref:System.Globalization.CultureInfo> pobiera parametr. Ta reguła ignoruje wywołania następujących metod:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -40,36 +40,36 @@ Metoda lub Konstruktor wywołuje członka mającego przeciążenie, które akcep
 
 ## <a name="rule-description"></a>Opis reguły
 
-Gdy <xref:System.Globalization.CultureInfo> lub <xref:System.IFormatProvider?displayProperty=nameWithType> obiektu nie jest podany, wartość domyślna, która jest dostarczana przez członka przeciążonego może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych. Ponadto elementy członkowskie programu .NET wybierz domyślną kulturę i formatowanie na podstawie założeń, które mogą być niepoprawne w kodzie. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać charakterystyczne dla kultury informacje zgodnie z następującymi wytycznymi:
+Gdy obiekt <xref:System.IFormatProvider?displayProperty=nameWithType> lub nie jest podany, wartość domyślna, która jest dostarczana przez przeciążony element członkowski, może nie mieć żądanego efektu we wszystkich ustawieniach regionalnych. <xref:System.Globalization.CultureInfo> Ponadto członkowie platformy .NET wybierają domyślną kulturę i formatowanie na podstawie założeń, które mogą nie być poprawne dla kodu. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać informacje specyficzne dla kultury zgodnie z poniższymi wskazówkami:
 
-- Jeśli wartość będzie wyświetlana dla użytkownika, należy użyć bieżącej kultury. Zobacz <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Jeśli wartość będzie wyświetlana użytkownikowi, Użyj bieżącej kultury. Zobacz <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Jeśli wartości są przechowywane i używane przez oprogramowanie, oznacza to, utrwalone w pliku lub bazy danych, użyć niezmiennej kultury. Zobacz <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Jeśli wartość będzie przechowywana i dostępna przez oprogramowanie, czyli utrwalone dla pliku lub bazy danych, użyj niezmiennej kultury. Zobacz <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Jeśli miejsce docelowe wartość nie jest znany, mają odbiorcy danych lub dostawca określenie kultury.
+- Jeśli nie znasz miejsca docelowego wartości, w polu odbiorca danych lub dostawca Określ kulturę.
 
-Nawet jeśli domyślne zachowanie członka przeciążonego jest odpowiednia dla Twoich potrzeb, lepiej jest jawnie wywołać przeciążenie specyficzne dla kultury tak, aby Twój kod jest automatycznie dokumentowane i łatwiej utrzymywane w dobrym stanie.
+Nawet jeśli domyślne zachowanie przeciążonego elementu członkowskiego jest odpowiednie dla Twoich potrzeb, lepiej jest jawnie wywołać Przeciążenie specyficzne dla kultury, aby kod był samodzielny i łatwiejszy w obciążeniu.
 
 > [!NOTE]
-> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> jest używana tylko w celu pobrania zlokalizowanych zasobów przy użyciu wystąpienia <xref:System.Resources.ResourceManager?displayProperty=nameWithType> klasy.
+> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>służy tylko do pobierania zlokalizowanych zasobów przy użyciu wystąpienia <xref:System.Resources.ResourceManager?displayProperty=nameWithType> klasy.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, użyj przeciążenia, które przyjmuje <xref:System.Globalization.CultureInfo> argumentu.
+Aby naprawić naruszenie tej zasady, Użyj przeciążenia, które przyjmuje <xref:System.Globalization.CultureInfo> argument.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, gdy jest pewne, że domyślnej kultury jest odpowiednim wyborem oraz łatwości utrzymania kodu nie ma priorytet ważne rozwoju.
+Można bezpiecznie pominąć ostrzeżenie z tej reguły, gdy jest to pewne, że domyślna kultura jest poprawna, i gdzie łatwość utrzymania kodu nie jest ważnym priorytetem programistycznym.
 
 ## <a name="example-showing-how-to-fix-violations"></a>Przykład pokazujący, jak naprawić naruszenia
 
-W poniższym przykładzie `BadMethod` powoduje, że dwa naruszenie tej zasady. `GoodMethod` poprawia pierwszy naruszenia przez przekazanie Niezmienna kultura <xref:System.String.Compare%2A?displayProperty=nameWithType>i naprawia drugi naruszenia przez przekazanie bieżącej kultury, aby <xref:System.String.ToLower%2A?displayProperty=nameWithType> ponieważ `string3` jest wyświetlany użytkownikowi.
+W poniższym przykładzie `BadMethod` powoduje dwa naruszenia tej reguły. `GoodMethod`koryguje pierwsze naruszenie, przekazując niezmienną kulturę do <xref:System.String.Compare%2A?displayProperty=nameWithType>, i koryguje drugie naruszenie, przekazując bieżącą kulturę do <xref:System.String.ToLower%2A?displayProperty=nameWithType> , ponieważ `string3` jest ona wyświetlana użytkownikowi.
 
 [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
 
-## <a name="example-showing-formatted-output"></a>Przykład przedstawiający sformatowane dane wyjściowe
+## <a name="example-showing-formatted-output"></a>Przykład pokazujący sformatowane dane wyjściowe
 
-Poniższy przykład przedstawia efekt bieżącej kultury na domyślnym <xref:System.IFormatProvider> wybranego przez <xref:System.DateTime> typu.
+Poniższy przykład pokazuje wpływ bieżącej kultury na wartość domyślną <xref:System.IFormatProvider> wybraną <xref:System.DateTime> przez typ.
 
 [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
 
@@ -82,8 +82,8 @@ Ten przykład generuje następujące wyniki:
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1305: Określ argument IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305: Określ IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Używanie klasy CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)
+- [Korzystanie z klasy CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

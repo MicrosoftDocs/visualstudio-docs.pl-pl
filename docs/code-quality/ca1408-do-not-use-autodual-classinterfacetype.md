@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b79483e8703ea297634d0d81d5449c09b58c9fb7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b26d92ca63a94cac7e293a688b1c7b3331586877
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921982"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234792"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Nie używaj wartości AutoDual elementu ClassInterfaceType
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921982"
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
 |Kategoria|Microsoft. współdziałanie|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Typ widoczny dla Component Object Model (com) jest oznaczony <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybutem ustawionym `AutoDual` na wartość <xref:System.Runtime.InteropServices.ClassInterfaceType>.

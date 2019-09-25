@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c91de575abe8b19a5d8f6fca864e2bc452da7cb2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547643"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236094"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Magazyn typu wyliczeniowego powinien być typu Int32
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547643"
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 

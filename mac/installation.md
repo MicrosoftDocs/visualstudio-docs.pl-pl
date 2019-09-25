@@ -1,103 +1,114 @@
 ---
-title: Install Visual Studio 2019 for Mac
-description: Instrukcje dotyczące sposobu instalowania programu Visual Studio 2019 dla systemów Mac i dodatkowe składniki wymagane dla wieloplatformowego opracowywania aplikacji.
+title: Zainstaluj program Visual Studio 2019 dla komputerów Mac
+description: Instrukcje dotyczące sposobu instalowania programu Visual Studio 2019 for Mac oraz dodatkowych składników wymaganych do tworzenia aplikacji na wiele platform.
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 2086532f0602b4a2509358cbb6d57178a9a1a0d4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691464"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211467"
 ---
-# <a name="install-visual-studio-2019-for-mac"></a>Install Visual Studio 2019 for Mac
+# <a name="install-visual-studio-2019-for-mac"></a>Zainstaluj program Visual Studio 2019 dla komputerów Mac
 
-Aby rozpocząć tworzenie aplikacji programu .NET native, dla wielu platform w systemie macOS, należy zainstalować program Visual Studio 2019 dla komputerów Mac, poniższe kroki.
+Aby rozpocząć tworzenie natywnych aplikacji platformy .NET dla wielu platform w systemie macOS, zainstaluj program Visual Studio 2019 for Mac, wykonując poniższe kroki.
 
  > [!div class="button"]
- > [Pobierz program Visual Studio dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
+ > [Pobierz Visual Studio dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
 
 ## <a name="requirements"></a>Wymagania
 
-- Komputer Mac z systemem macOS wysokiej Sierra 10.12 lub nowszej.
+- Komputer Mac z macOS wysoka firma Sierra 10,12 lub nowszą.
 
-Aby kompilować aplikacje Xamarin dla systemu iOS lub macOS, należy także:
+Do kompilowania aplikacji platformy Xamarin dla systemu iOS lub macOS potrzebne są również:
 
-- Środowisko Xcode 10.0 lub nowszy. Najnowsza stabilna wersja zazwyczaj jest zalecane.
-- Tego identyfikatora firmy Apple. Jeśli nie masz jeszcze identyfikatora Apple ID można utworzyć nowe konto na https://appleid.apple.com. Należy mieć identyfikator Apple ID do instalowania i rejestrowania się w środowisku Xcode.
+- Xcode 10,0 lub nowszy. Zwykle zalecana jest najnowsza stabilna wersja.
+- Identyfikator Apple ID. Jeśli nie masz już identyfikatora Apple ID, możesz utworzyć nowy https://appleid.apple.com. Konieczne jest posiadanie identyfikatora Apple ID na potrzeby instalacji i logowania do usługi Xcode.
 
 ## <a name="installation-instructions"></a>Instrukcje instalacji
 
-1. Pobierz Instalatora z [program Visual Studio for Mac strony pobierania](https://aka.ms/vsmac).
-2. Po ukończeniu pobierania kliknij **VisualStudioforMacInstaller.dmg** Zainstaluj Instalator, następnie uruchom go, klikając dwukrotnie plik logo strzałkę:
+1. Pobierz instalatora ze [strony pobierania Visual Studio dla komputerów Mac](https://aka.ms/vsmac).
+2. Po zakończeniu pobierania kliknij plik **VisualStudioforMacInstaller. dmg** , aby zainstalować Instalatora, a następnie uruchom go, dwukrotnie klikając logo strzałki:
 
-    [![Kliknij strzałkę w dużych, aby rozpocząć instalację](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![Kliknij dużą strzałkę, aby rozpocząć instalację.](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
-3. Może być przedstawiany z ostrzeżeniem o aplikacji są pobierane z Internetu. Kliknij przycisk **Otwórz**.
-4. Zaczekaj, aż Instalator sprawdza, czy system:
+3. Może zostać wyświetlone ostrzeżenie o aplikacji pobieranej z Internetu. Kliknij przycisk **Otwórz**.
+4. Zaczekaj, aż Instalator sprawdzi swój system:
 
-    [![Instalator sprawdza, czy zainstalowanych składników w systemie](media/install-checking-sml.png)](media/install-checking.png#lightbox)
+    [![Instalator sprawdza system pod kątem zainstalowanych składników](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
-5. Alert zostanie wyświetlony prośbą o potwierdzenie warunki ochrony prywatności i licencji. Skorzystaj z linków, aby je odczytać, a następnie naciśnij klawisz **Kontynuuj** Jeśli zgadzasz się:
+5. Zostanie wyświetlony alert z prośbą o potwierdzenie postanowień dotyczących prywatności i licencji. Postępuj zgodnie z linkami, aby je odczytać, a następnie naciśnij pozycję **Kontynuuj** , jeśli akceptujesz:
 
-    [![Skorzystaj z linków do prywatności i warunki, a następnie kontynuuj, wyrażasz zgodę](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Postępuj zgodnie z linkami do prywatności i postanowień, a następnie Kontynuuj, jeśli zgadzasz się](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
-6. Zostanie wyświetlona lista dostępnych obciążeń. Wybierz składniki, które chcesz użyć:
+6. Zostanie wyświetlona lista dostępnych obciążeń. Wybierz składniki, których chcesz użyć:
 
-    [![Wybierz funkcji opcjonalnych obciążenia, które chcesz zainstalować](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Wybierz opcjonalne funkcje obciążenia, które chcesz zainstalować](media/install-selection.png)](media/install-selection.png#lightbox)
 
-   Jeśli nie chcesz zainstalować na wszystkich platformach, należy pomóc zdecydować, które platformy, aby zainstalować za pomocą przewodnika poniżej:
+   Jeśli nie chcesz instalować wszystkich platform, Skorzystaj z poniższego przewodnika, aby ułatwić podjęcie decyzji o tym, które platformy instalować:
 
-   * **Aplikacje korzystające z platformy Xamarin**:
-      - Zestaw narzędzi Xamarin.Forms — wybierz **Android** i **dla systemu iOS** platformy.
-      - iOS — do wybrania **iOS** platformy (należy pamiętać, że będą musieli zainstalować [ **Xcode**](https://developer.apple.com/xcode/)).
-      - Android — do wybrania **Android** platformy (należy zauważyć, że powinni wybrać też odpowiednie zależności).
-      - Wybierz tylko — Mac **macOS** platformy (należy pamiętać, że będą musieli zainstalować [ **Xcode**](https://developer.apple.com/xcode/)).
-      - Wybierz pełni Międzyplatformowe aplikacje Xamarin — **Android**, **dla systemu iOS**, i **macOS** platformy.
-   * **Aplikacje .NET core** — wybierz **platformy .NET Core** platformy.
-   * **Aplikacje sieci Web programu ASP.NET Core** — wybierz **platformy .NET Core** platformy.
-   * **Opracowywanie gier Unity dla wielu platform** — żadnych dodatkowych platform muszą być zainstalowane poza Visual Studio dla komputerów Mac. Zapoznaj się [przewodnik konfiguracji środowiska Unity](/visualstudio/mac/setup-vsmac-tools-unity) Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity.
 
-7. Po dokonaniu wyborów, naciśnij klawisz **zainstalować** przycisku.
-8. Instalator wyświetli postęp pobierania i instalacji programu Visual Studio dla komputerów Mac i wybranego obciążenia. Może zostać wyświetlony o wprowadzenie hasła do przyznawania uprawnień niezbędnych do instalacji.
+|Typ aplikacji  |Cel  |Wybór  |Uwagi  |
+|---------|---------|---------|---------|
+|**Aplikacje korzystające z platformy Xamarin**| Xamarin.Forms|Wybierz platformy **Android** i **iOS** |Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/) |
+||tylko system iOS|Wybierz platformę **iOS**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
+||Tylko system Android|Wybierz platformę **Android**|Pamiętaj, że należy również wybrać odpowiednie zależności|
+||Tylko Mac|Wybierz platformę **macOS (kakao)**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
+|**Aplikacje platformy .NET Core**|         |Wybierz platformę **.NET Core** .|         |
+|**ASP.NET Core aplikacji sieci Web**|         |Wybierz platformę **.NET Core** .|         |
+|**Azure Functions**|         |Wybierz platformę **.NET Core** .|         |
+|**Programowanie gier dla wielu platform w środowisku Unity**|         |Nie trzeba instalować dodatkowych platform poza Visual Studio dla komputerów Mac.| Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity, zapoznaj się z [przewodnikiem Instalatora aparatu Unity](/visualstudio/mac/setup-vsmac-tools-unity) .|
 
-Jeśli masz problemy z siecią podczas instalowania w środowisku firmowym, zapoznaj się z [instalacji za zaporą lub serwer proxy](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) instrukcje.
 
-Dowiedz się więcej o zmianach w [informacje o wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
+7. Po dokonaniu wyboru Naciśnij przycisk **Zainstaluj** .
+8. Instalator wyświetli postęp, gdy pobiera i instaluje Visual Studio dla komputerów Mac i wybrane obciążenia. Zostanie wyświetlony monit o wprowadzenie hasła w celu udzielenia uprawnień niezbędnych do instalacji.
+
+    [![Wybierz opcjonalne funkcje obciążenia, które chcesz zainstalować](media/installation-progress.png)](media/installation-progress.png#lightbox)
+
+9. Po zainstalowaniu programu Visual Studio dla komputerów Mac wyświetli monit o spersonalizowanie instalacji, logując się i wybierając kluczowe powiązania, których chcesz użyć:
+
+    [![Zaloguj się do środowiska IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
+
+    [![Wybierz Skróty klawiaturowe, których chcesz użyć](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
+
+Jeśli podczas instalowania programu w środowisku firmowym występuje problem z siecią, zapoznaj się z instrukcjami dotyczącymi [instalacji za zaporą lub serwerem proxy](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) .
+
+Dowiedz się więcej o zmianach wprowadzonych w [informacjach o wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
 
 > [!NOTE]
-> Jeśli nie wybrano zainstalowanie platformy lub narzędzia podczas oryginalnej instalacji (cofając go w kroku #6), należy uruchomić Instalatora ponownie Jeśli chcesz dodać składniki później.
+> W przypadku wybrania opcji nieinstalowania platformy lub narzędzia podczas instalacji początkowej (bez zaznaczania w kroku #6), należy ponownie uruchomić Instalatora, jeśli chcesz dodać składniki później.
 
-## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Zainstaluj program Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy
+## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalowanie Visual Studio dla komputerów Mac za zaporą lub serwerem proxy
 
-Aby zainstalować program Visual Studio dla komputerów Mac za zaporą, niektóre punkty końcowe muszą być udostępnione w celu pobrania wymagane narzędzia i aktualizacje oprogramowania.
+Aby zainstalować Visual Studio dla komputerów Mac za zaporą, należy udostępnić pewne punkty końcowe, aby umożliwić pobieranie wymaganych narzędzi i aktualizacji oprogramowania.
 
-Skonfiguruj sieci, aby zezwolić na dostęp do następujących lokalizacji:
+Skonfiguruj sieć w taki sposób, aby zezwalała na dostęp do następujących lokalizacji:
 
-- [Visual Studio punktów końcowych.](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+- [Punkty końcowe programu Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Instalowanie programu Visual Studio dla komputerów Mac pozwala rozpocząć pisanie kodu dla aplikacji. Następujące przewodniki znajdują się przeprowadzenie Cię przez proces w następnych krokach pisania i wdrażania projektów.
+Zainstalowanie Visual Studio dla komputerów Mac pozwala rozpocząć pisanie kodu dla aplikacji. Podano następujące przewodniki, które przeprowadzą Cię przez kolejne kroki pisania i wdrażania projektów.
 
 ### <a name="ios"></a>iOS
 
 1. [Witaj, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
-2. [Aprowizowanie urządzenia](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(w celu uruchomienia aplikacji na urządzeniu).
+2. [Inicjowanie obsługi urządzeń](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) (Aby uruchomić aplikację na urządzeniu).
 
 ### <a name="android"></a>Android
 
-1. [Przy użyciu Menedżera zestawów SDK platformy Xamarin Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+1. [Korzystanie z programu Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
 2. [Emulator zestawu SDK systemu Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
 4. [Konfigurowanie urządzenia na potrzeby programowania](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
-### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikacje platformy .NET core, aplikacje sieci web platformy ASP.NET Core, tworzenia gier Unity
+### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikacje platformy .NET Core, ASP.NET Core aplikacje sieci Web, Programowanie gier w środowisku Unity
 
-W przypadku innych obciążeń zobacz [obciążeń](workloads.md) strony.
+W przypadku innych obciążeń zapoznaj się ze stroną [obciążenia](workloads.md) .
 
 ## <a name="related-video"></a>Pokrewne wideo
 
@@ -105,4 +116,4 @@ W przypadku innych obciążeń zobacz [obciążeń](workloads.md) strony.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zainstaluj program Visual Studio (na Windows)](/visualstudio/install/install-visual-studio)
+- [Zainstaluj program Visual Studio (w systemie Windows)](/visualstudio/install/install-visual-studio)

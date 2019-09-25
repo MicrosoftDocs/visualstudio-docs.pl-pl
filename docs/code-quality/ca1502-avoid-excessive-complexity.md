@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db4f767aa2ecb31bca3a5530e1b4bbf5ce15729d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797407"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234558"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Unikaj nadmiernej złożoności
 
@@ -31,46 +31,46 @@ ms.locfileid: "62797407"
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|Kategoria|Microsoft.Maintainability|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. łatwość obsługi|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda ma złożoność cyklomatyczną nadmierne.
+Metoda ma nadmierną Złożoność cyklomatyczna.
 
 ## <a name="rule-description"></a>Opis reguły
 
-*Złożoność Cyklomatyczna* mierzy liczbę liniowo niezależnych ścieżek za pośrednictwem metody, która jest określana przez liczbę i złożoność rozgałęzień warunkowych. Złożoność cyklomatyczna niski na ogół wskazuje metodę, która jest łatwy do zrozumienia, testowania i obsługi. Złożoność cyklomatyczna jest obliczana na podstawie grafu przepływu sterowania, metody i znajduje się w następujący sposób:
+*Złożoność cyklomatyczna* mierzy liczbę liniowo niezależnych ścieżek za pomocą metody, która jest określana przez liczbę i złożoność gałęzi warunkowych. Niska Złożoność cyklomatyczna zazwyczaj wskazuje metodę, która jest łatwa do zrozumienia, testowania i konserwowania. Złożoność cyklomatyczna jest obliczana na podstawie grafu przepływu sterowania metody i jest podawana w następujący sposób:
 
-złożoność cyklomatyczna = liczba krawędzi — liczba węzłów + 1
+Złożoność cyklomatyczna = liczba krawędzi — liczba węzłów + 1
 
-A *węzła* reprezentuje punkt gałęzi logiki i *krawędzi* reprezentuje linię między węzłami.
+*Węzeł* reprezentuje punkt rozgałęzienia logiki, a *krawędź* reprezentuje linię między węzłami.
 
-Reguły raporty naruszenie zasad, gdy złożoność cyklomatyczna jest więcej niż 25.
+Reguła zgłasza naruszenie, gdy Złożoność cyklomatyczna jest większa niż 25.
 
-Dowiedz się więcej na temat metryk kodu [mierzenie złożoności kodu zarządzanego](../code-quality/code-metrics-values.md).
+Aby dowiedzieć się więcej o metrykach kodu, zapoznaj się [z złożonością miary kodu zarządzanego](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Refaktoryzuj metody do jego złożoność cykliczną.
+Aby naprawić naruszenie tej zasady, należy rozwiązać metodę, aby zmniejszyć jej złożoność cyklomatyczna.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli nie łatwo można zmniejszyć złożoność i metoda jest łatwy do zrozumienia, testowania i obsługi. W szczególności metoda, która zawiera dużą `switch` (`Select` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrukcja jest kandydatem do wykluczenia. Ryzyko destabilizing kod podstawowy zaległości w cyklu rozwoju lub wprowadzenia nieoczekiwanej zmianie w zachowania w czasie wykonywania w kodzie uprzednio wysłane może przeważyć zalety łatwości utrzymania refaktoryzacji kodu.
+Jeśli złożoność nie zostanie łatwo zredukowana, można bezpiecznie pominąć ostrzeżenie z tej reguły, a metoda jest łatwa do zrozumienia, testowania i konserwowania. W szczególności Metoda, która zawiera duże `switch` (`Select` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrukcji, jest kandydatem do wykluczenia. Ryzyko destabilizacji podstawy kodu w cyklu programowania lub wprowadzenie nieoczekiwanej zmiany zachowania w czasie wykonywania w wcześniej dostarczonym kodzie może wzważyć korzyści płynące z refaktoryzacji kodu.
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>Jak obliczana jest złożoność Cyklomatyczna
+## <a name="how-cyclomatic-complexity-is-calculated"></a>Jak jest obliczana Złożoność cyklomatyczna
 
-Złożoność cyklomatyczna jest obliczany przez dodanie 1 do następujących:
+Złożoność cyklomatyczna jest obliczana przez dodanie 1 do następujących:
 
-- Liczba gałęzi (takich jak `if`, `while`, i `do`)
+- Liczba gałęzi (takich jak `if`, `while`i `do`)
 
-- Liczba `case` instrukcje w `switch`
+- `case` Liczba instrukcji w`switch`
 
 ## <a name="example"></a>Przykład
 
-Poniższe przykłady przedstawiają metody, które mają różnej złożoności cyklomatycznej.
+W poniższych przykładach przedstawiono metody, które mają różne złożone cyklomatyczna.
 
-**Złożoność Cyklomatyczna 1**
+**Złożoność cyklomatyczna 1**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
@@ -78,7 +78,7 @@ Poniższe przykłady przedstawiają metody, które mają różnej złożoności 
 
 ## <a name="example"></a>Przykład
 
-**Złożoność Cyklomatyczna 2**
+**Złożoność cyklomatyczna 2**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
@@ -86,7 +86,7 @@ Poniższe przykłady przedstawiają metody, które mają różnej złożoności 
 
 ## <a name="example"></a>Przykład
 
-**Złożoność Cyklomatyczna 3**
+**Złożoność cyklomatyczna 3**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
@@ -94,7 +94,7 @@ Poniższe przykłady przedstawiają metody, które mają różnej złożoności 
 
 ## <a name="example"></a>Przykład
 
-**Złożoność Cyklomatyczna 8**
+**Złożoność cyklomatyczna 8**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]

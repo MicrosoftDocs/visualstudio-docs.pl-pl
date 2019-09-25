@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 56e6e7a53f5f8b07d1afc8b68ef641c576524316
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8e4e5c4ed258bcc88fedbb6d015fed576d326a0f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922055"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234954"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922055"
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
 |Kategoria|Microsoft. współdziałanie|
-|Zmiana kluczowa|DependsOnFix|
+|Zmiana podziału|DependsOnFix|
 
 ## <a name="cause"></a>Przyczyna
 Typ widoczny dla Component Object Model (COM) pochodzi z typu, który nie jest widoczny dla modelu COM.

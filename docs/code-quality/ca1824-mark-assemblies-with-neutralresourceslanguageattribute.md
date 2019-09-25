@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40cb2a3674884a9fb4f1449c9afa2e0a2d27050f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df5c0db4e9e141e5833893bbbb447328eab8851e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808563"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233344"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Oznaczaj zestawy za pomocą atrybutu NeutralResourcesLanguageAttribute
 
@@ -28,43 +28,43 @@ ms.locfileid: "62808563"
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Zestaw zawiera **ResX**— na podstawie zasobów, ale nie ma <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> stosowane do niego.
+Zestaw zawiera zasób oparty na protokole **resx**, <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> ale nie ma do niego zastosowania.
 
 ## <a name="rule-description"></a>Opis reguły
 
-<xref:System.Resources.NeutralResourcesLanguageAttribute> Atrybut informuje Menedżera zasobów kultury domyślnej aplikacji. Jeśli zasoby domyślnej kultury są osadzone w głównym zestawie przez aplikację i <xref:System.Resources.ResourceManager> musi pobrać zasoby, które należą do tej samej kultury jako kultury domyślnej <xref:System.Resources.ResourceManager> automatycznie używa zasobów znajdujących się w głównym zestawie zamiast wyszukiwać zestawu satelickiego. To pomija sondy zwykle zestawu, zwiększa wydajność wyszukiwania dla pierwszego zasobu, obciążenia i może zmniejszyć zestaw roboczy.
+Ten <xref:System.Resources.NeutralResourcesLanguageAttribute> atrybut informuje Menedżera zasobów domyślnej kultury aplikacji. Jeśli zasoby kultury domyślnej są osadzone w zestawie głównym aplikacji i <xref:System.Resources.ResourceManager> muszą pobierać zasoby należące do tej samej kultury co kultura Domyślna <xref:System.Resources.ResourceManager> , automatycznie używa zasobów znajdujących się w zestawie głównym Zamiast wyszukiwania zestawu satelickiego. Spowoduje to pominięcie zwykłej sondy zestawu, zwiększenie wydajności wyszukiwania dla pierwszego załadowanego zasobu i może zmniejszyć zestaw roboczy.
 
 > [!TIP]
-> Zobacz [pakowanie i wdrażanie zasobów](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) dla procesu, <xref:System.Resources.ResourceManager> używa do sondowania dla plików zasobów.
+> Zobacz [pakowanie i wdrażanie zasobów](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) dla procesu, który <xref:System.Resources.ResourceManager> używa do sondowania plików zasobów.
 
-## <a name="fix-violations"></a>Naprawić naruszenia
+## <a name="fix-violations"></a>Napraw naruszenia
 
-Aby naprawić naruszenie tej zasady, Dodaj atrybut do zestawu, a także określić język zasobów kultury neutralnej.
+Aby naprawić naruszenie tej zasady, Dodaj atrybut do zestawu i określ język zasobów kultury neutralnej.
 
-### <a name="to-specify-the-neutral-language-for-resources"></a>Określa neutralny język zasobów
+### <a name="to-specify-the-neutral-language-for-resources"></a>Aby określić język neutralny dla zasobów
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
-2. Wybierz **aplikacji** , a następnie wybierz pozycję **informacje o zestawie**.
+2. Wybierz kartę **aplikacja** , a następnie wybierz pozycję **Informacje o zestawie**.
 
    > [!NOTE]
-   > Jeśli projekt jest projektem .NET Standard i .NET Core, wybierz **pakietu** kartę.
+   > Jeśli projekt jest projektem .NET Standard lub .NET Core, wybierz kartę **pakiet** .
 
-3. Wybierz język z **neutralnym językiem** lub **neutralny język asemblera** listy rozwijanej.
+3. Wybierz język z listy rozwijanej Język **neutralny** lub niezależny od **zestawu** .
 
 4. Kliknij przycisk **OK**.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest dozwolone, aby pominąć ostrzeżenie od tej reguły. Jednak może obniżyć wydajność uruchamiania.
+Można pominąć ostrzeżenie z tej reguły. Może jednak wystąpić spadek wydajności uruchomienia.
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>
-- [Zasoby w aplikacjach komputerowych (.NET)](/dotnet/framework/resources/)
-- [CA1703 — ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1701 — ciąg zasobu, w których wyrazy złożone powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [Zasoby w aplikacjach klasycznych (.NET)](/dotnet/framework/resources/)
+- [CA1703 — ciągi zasobów powinny mieć poprawną pisownię](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1701 — wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)

@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: bb0d92496412792643ae67745afae2fec51fca90
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872093"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211321"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Domyślne skróty klawiaturowe w Visual Studio dla komputerów Mac
 
 Aby uzyskać informacje o ułatwieniach dostępu [do klawiatury, zobacz How to: Użyj nawigacji](~/accessibility.md#how-to-use-keyboard-navigation)klawiaturowej.
 
-Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów Mac przy użyciu odpowiedniego skrótu klawiaturowego. Ten dokument zawiera listę domyślnych skrótów dla schematu powiązania klawiszy **programu Visual Studio** . Aby uzyskać więcej informacji na temat zmiany schematu powiązania kluczy, zobacz [Dostosowywanie środowiska IDE](~/customizing-the-ide.md#key-bindings). Możesz również dostosować skróty dla polecenia za pomocą elementu menu**preferencji** **Visual Studio dla komputerów Mac** > i wybierając opcję**powiązania klucza** **środowiska** > w oknie **preferencji** .
+Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów Mac przy użyciu odpowiedniego skrótu klawiaturowego. Ten dokument zawiera listę domyślnych skrótów dla schematu powiązania klucza **Visual Studio dla komputerów Mac** . Aby uzyskać więcej informacji na temat zmiany schematu powiązania kluczy, zobacz [Dostosowywanie środowiska IDE](~/customizing-the-ide.md#key-bindings). Możesz również dostosować skróty dla polecenia za pomocą elementu menu**preferencji** **Visual Studio dla komputerów Mac** > i wybierając opcję**powiązania klucza** **środowiska** > w oknie **preferencji** .
 
 > [!TIP]
 > Skróty klawiaturowe wyświetlane w tym dokumencie i preferencje dotyczące powiązań klawiszy w Visual Studio dla komputerów Mac są prezentowane przy użyciu symboli często używanych w macOS. Jeśli nie masz pewności co do symbolu, zapoznaj się z [tabelą macOS Key Symbols loopkup](#macos-key-symbols-lookup).
@@ -83,7 +83,7 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Wyczyść F# interaktywny|**⌃ ⌥ C**|
-|F# Interactive|**⌃⌥F**|
+|Interaktywny F#|**⌃⌥F**|
 |Uruchom F# ponownie interaktywny|**⌃⌥R**|
 |Wyślij wiersz do F# interaktywnego|**⌃⌥L**|
 |Wyślij odwołania do F# interaktywnego|**⌃ ⌥ P**|
@@ -105,7 +105,7 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Zapisanie|**⌘S**|
 |Zapisz wszystko|**⇧⌘S**|
 
-## <a name="help"></a>Help
+## <a name="help"></a>Pomoc
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
@@ -117,7 +117,7 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Zaimplementuj komunikaty aparatu Unity|**⇧ ⌘ M**|
-|Skontrol|**⌥ ⌘ I**|
+|skontrol|**⌥ ⌘ I**|
 
 ## <a name="project"></a>Projekt
 
@@ -263,7 +263,7 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |⇟|**Strona w dół** (**PG DN**)|
 |⌫|**Usuń** (**Backspace**)|
 |⌦|**Usuwanie do przodu**|
-|⏎|**Return**|
+|❌|**Return**|
 |←→↑↓|**Klawisze strzałek**|
 |↖|**Strona główna**|
 |↘|**End**|

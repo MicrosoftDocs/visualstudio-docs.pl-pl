@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Korzystanie z macierzystego sprawdzania w czasie wykonywania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Użyj natywnych testów w czasie wykonywania | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,48 +37,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846973"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211016"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Instrukcje: Korzystanie z macierzystego sprawdzania w czasie wykonywania
-W elemencie wizualnym C++, możesz użyć natywnych [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:
+# <a name="how-to-use-native-run-time-checks"></a>Instrukcje: Korzystanie z natywnego sprawdzania w trakcie wykonywania
+W wizualizacji C++, można użyć natywnej [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:
 
 - Uszkodzenie wskaźnika stosu.
 
-- Przepełnienia lokalne tablice.
+- Przekroczenia tablic lokalnych.
 
 - Uszkodzenie stosu.
 
-- Zależności w niezainicjowanych zmiennych lokalnych.
+- Zależności od niezainicjowanych zmiennych lokalnych.
 
-- Utrata danych na przypisanie do zmiennej krótszy.
+- Utrata danych w przypisaniu do krótszej zmiennej.
 
-  Jeśli używasz **usunęliśmy** przy użyciu zoptymalizowanego (**/O**) kompilacji powoduje błąd kompilatora. Jeśli używasz `runtime_checks` pragmy w optymalizowania kompilacji pragmy nie ma wpływu.
+  Jeśli używasz **/RTC** z zoptymalizowaną ( **/o**) kompilacją, wynik błędu kompilatora. Jeśli w zoptymalizowanej `runtime_checks` kompilacji używasz dyrektywy pragma, pragma nie ma żadnego wpływu.
 
-  Podczas debugowania programu, który ma włączone kontrole czasu wykonywania, domyślna akcja dotyczy programu zatrzymać, a następnie Przerwij do debugera, gdy wystąpi błąd czasu wykonywania. Można zmienić to domyślne zachowanie dla sprawdzanie w czasie wykonania. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).
+  Podczas debugowania programu, który ma włączone sprawdzanie czasu wykonywania, domyślną akcją jest zatrzymanie i przerwanie działania programu w debugerze w przypadku wystąpienia błędu w czasie wykonywania. Można zmienić to zachowanie domyślne dla dowolnego sprawdzenia w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).
 
-  W poniższych procedurach opisano sposób włączania macierzyste sprawdzanie w czasie wykonywania w kompilacji debugowania oraz jak zmodyfikować zachowanie natywnych sprawdzanie w czasie wykonania.
+  W poniższych procedurach opisano, jak włączyć natywne testy w czasie wykonywania w kompilacji debugowania oraz jak zmodyfikować natywne zachowanie w czasie wykonywania.
 
-  Inne tematy w tej sekcji zawierają informacje dotyczące:
+  W innych tematach w tej sekcji znajdują się informacje o:
 
-- [Dostosowywanie środowiska wykonawczego sprawdza, czy za pomocą biblioteki wykonawczej języka C](../debugger/native-run-time-checks-customization.md)
+- [Dostosowywanie kontroli w czasie wykonywania przy użyciu biblioteki wykonawczej C](../debugger/native-run-time-checks-customization.md)
 
-- [Za pomocą środowiska wykonawczego sprawdza, czy bez biblioteki wykonawczej języka C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
+- [Używanie testów w czasie wykonywania bez biblioteki wykonawczej C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
-### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Aby włączyć macierzyste sprawdzanie w czasie wykonywania w kompilacji debugowania
+### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Aby włączyć natywne testy w czasie wykonywania w kompilacji debugowania
 
-- Użyj **usunęliśmy** opcji i łącze z wersji debugowania biblioteki wykonawczej języka C (/ MDd, na przykład).
+- Użyj opcji **/RTC** i Połącz z wersją debugową biblioteki wykonawczej C (na przykład/MDD).
 
-### <a name="to-modify-native-run-time-check-behavior"></a>Aby zmodyfikować zachowanie natywnych sprawdzenie czasu wykonywania
+### <a name="to-modify-native-run-time-check-behavior"></a>Aby zmodyfikować natywne zachowanie sprawdzania w czasie wykonywania
 
-- Użyj `runtime_checks` pragmy.
+- `runtime_checks` Użyj dyrektywy pragma.
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [Sprawdzanie błędów czasu wykonywania](/cpp/c-runtime-library/run-time-error-checking)

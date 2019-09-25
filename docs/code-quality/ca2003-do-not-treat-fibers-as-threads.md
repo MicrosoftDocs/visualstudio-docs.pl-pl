@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8faaf3c6557065188c795d75ea9bbe4e78998709
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f5e4e7eb28207cb37824b23acbbac02b6df380d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806991"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233139"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Nie traktuj włókien jak wątków
 
@@ -28,19 +28,19 @@ ms.locfileid: "62806991"
 |TypeName|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|
 |Kategoria|Microsoft.Reliability|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Zarządzane zarządzalny wątek jest traktowany jako wątek Win32.
+Zarządzany wątek jest traktowany jako wątek Win32.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Nie należy zakładać, że wątków zarządzanych jest wątek Win32; jest włókien. Środowisko uruchomieniowe języka wspólnego (CLR) jest uruchamiany w zarządzanych wątkach jako włókien w kontekście rzeczywistych wątki, które są własnością SQL. Te wątki mogą być współużytkowane przez nawet baz danych i domen aplikacji w procesie programu SQL Server. Za pomocą programu managed działa lokalny magazyn wątków, ale nie możesz użyć pamięci lokalnej wątku niezarządzanym lub przyjęto założenie, że Twój kod zostaną ponownie uruchomione w bieżącym wątku systemu operacyjnego. Nie należy zmieniać ustawienia, takie jak ustawienia regionalne wątku. Nie należy wywoływać CreateCriticalSection lub Funkcja CreateMutex za pośrednictwem metody P/Invoke, ponieważ wymagają one, wątek, który wprowadzi blokadę należy również zamknąć blokady. Ponieważ wątku, który wprowadzi blokady nie zakończyć blokadę, gdy używasz włókien, sekcje krytyczne Win32 i Muteksy są bezużyteczne w języku SQL. Większość stanu może być bezpiecznie korzystać na zarządzanej <xref:System.Threading.Thread> obiektu, łącznie z lokalnego magazynu zarządzanych wątków i bieżącej kultury interfejsu użytkownika wątku. Jednak podczas programowania modelu przyczyny, będzie można zmienić bieżącej kultury wątku, gdy używasz programu SQL. To ograniczenie, będą wymuszane za pośrednictwem nowego uprawnienia.
+Nie przyjmij wątku zarządzanego jako wątku Win32; jest to włókna. Środowisko uruchomieniowe języka wspólnego (CLR) uruchamia zarządzane wątki jako włókien w kontekście rzeczywistych wątków, które są własnością bazy danych SQL. Te wątki mogą być współużytkowane przez domeny aplikacji i nawet bazy danych w procesie SQL Server. Korzystanie z lokalnego magazynu wątków zarządzanych działa, ale nie można użyć magazynu lokalnego wątku niezarządzanego lub założenie, że kod zostanie uruchomiony ponownie w bieżącym wątku systemu operacyjnego. Nie należy zmieniać ustawień, takich jak ustawienia regionalne wątku. Nie wywołuj CreateCriticalSection ani muteksu za pośrednictwem P/Invoke, ponieważ wymagają one, aby wątek, który przechodził blokadę, również zakończył blokadę. Ponieważ wątek, który przechodzi do blokady, nie zamyka blokady w przypadku używania włókien, sekcje krytyczne Win32 i muteksy są bezużyteczne w programie SQL Server. Można bezpiecznie użyć większości stanu na zarządzanym <xref:System.Threading.Thread> obiekcie, w tym lokalnego magazynu wątku zarządzanego i kultury bieżącego interfejsu użytkownika (UI) wątku. Jednak ze względu na model programowania nie będzie można zmienić bieżącej kultury wątku, gdy używasz języka SQL. To ograniczenie zostanie wymuszone przez nowe uprawnienie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Sprawdź użycie wątków i odpowiednio zmień swój kod.
+Sprawdź użycie wątków i odpowiednio zmień kod.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 

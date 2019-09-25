@@ -3,21 +3,21 @@ title: Odinstaluj Visual Studio dla komputerów Mac
 description: Instrukcje dotyczące odinstalowywania Visual Studio dla komputerów Mac i narzędzi pokrewnych.
 author: asb3993
 ms.author: amburns
-ms.date: 08/09/2019
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: bb2da7b181cb8065c310780a27a5f0190971d915
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 7d86e5abbb25d8c348f550d28618aae614725471
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108147"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211508"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie Visual Studio dla komputerów Mac
 
 Za pomocą tego przewodnika można odinstalować każdy składnik Visual Studio dla komputerów Mac oddzielnie, przechodząc do odpowiedniej sekcji lub używając skryptów dostępnych w sekcji [skrypt dezinstalacji](#uninstall-script) , aby odinstalować wszystko.
 
-Jeśli wcześniej zainstalowano Xamarin Studio na maszynie, w uzupełnieniu do poniższych kroków może być również konieczne wykonanie instrukcji dotyczących odinstalowywania programu [Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) .
+Jeśli wcześniej zainstalowano Xamarin Studio na maszynie, w uzupełnieniu do poniższych kroków może być również konieczne wykonanie instrukcji dotyczących [odinstalowywania programu Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) .
 
 > [!NOTE]
 > Te informacje spowodują usunięcie z komputera programu Visual Studio 2019 lub 2017 dla komputerów Mac. Aby odinstalować Visual Studio Code, zobacz [ten problem](https://github.com/Microsoft/vscode/issues/52151) , aby uzyskać szczegółowe informacje.

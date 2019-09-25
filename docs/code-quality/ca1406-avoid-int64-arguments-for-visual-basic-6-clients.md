@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dfcc612e931756b0e3d817556c9b37844bc3cfd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 82a8b1ea389c37dc63a9fe7366208a2a3028efb8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922036"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234801"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Unikaj używania argumentów typu Int64 w klientach w języku Visual Basic 6
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922036"
 |TypeName|AvoidInt64ArgumentsForVB6Clients|
 |CheckId|CA1406|
 |Kategoria|Microsoft. współdziałanie|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Typ, który jest jawnie oznaczony jako widoczny dla Component Object Model (com) deklaruje element członkowski przyjmujący <xref:System.Int64?displayProperty=fullName> argument.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1eb4c2535060f9a110d149e88ac2532e6ad1412
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f49c9dfdac1d8d8aec8ec32df7374b5ae0a28e92
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921099"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233024"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Określ kierowanie dla argumentów ciągu P/Invoke
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921099"
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
 |Kategoria|Microsoft. Globalizacja|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Element członkowski wywołania platformy zezwala na częściowo zaufane obiekty wywołujące, ma parametr String i nie jest jawnie zorganizowany przez ciąg.

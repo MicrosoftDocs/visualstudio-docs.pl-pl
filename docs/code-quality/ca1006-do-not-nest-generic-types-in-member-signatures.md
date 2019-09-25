@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 20bee606fd8cd98482a7304e068aaa7cbd5773a7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 45ff4831875150df02d04553e75cebcab9a9f572
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923226"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236504"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Nie zagnieżdżaj typów ogólnych w podpisach składowych
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923226"
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
 |CheckId|CA1006|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Widoczny na zewnątrz element członkowski ma sygnaturę zawierającą argument typu zagnieżdżonego.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8e949e21530654882cba99a7d9fedad8b5b59b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3c06f8693034b9943de8072f110f4661b87098a5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920268"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231152"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątków
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920268"
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania, przerywania|
+|Zmiana podziału|Nieprzerwanie, przerywanie|
 
 ## <a name="cause"></a>Przyczyna
 Wyjątek jest generowany z `finally`klauzuli, Filter lub Fault.

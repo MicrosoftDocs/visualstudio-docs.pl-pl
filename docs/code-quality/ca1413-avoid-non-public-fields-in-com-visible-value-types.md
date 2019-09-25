@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb216af1b6cd742aff83b248b6752adea292345
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0d4fed5b16120ec069eaa4101670c88ad8f3a247
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921840"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234650"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Unikaj niepublicznych pól w typach wartości widocznych w modelu COM
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921840"
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
 |Kategoria|Microsoft. współdziałanie|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Typ wartości, który jest jawnie oznaczony jako widoczny dla Component Object Model (COM) deklaruje pole niepubliczne wystąpienie.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b292c58e666c11130fb25f67c234bfd2282fe463
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5503f00995a4720207ea0ea9c29201d379e70adb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922257"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234905"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: Punkty wejścia P/Invoke powinny istnieć
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922257"
 |TypeName|PInvokeEntryPointsShouldExist|
 |CheckId|CA1400|
 |Kategoria|Microsoft. współdziałanie|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Metoda publiczna lub chroniona jest oznaczona za <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>pomocą. Nie można zlokalizować biblioteki niezarządzanej lub dopasować metody do funkcji w bibliotece. Jeśli reguła nie może znaleźć nazwy metody dokładnie tak, jak jest określona, szuka wersji ANSI lub znaków dwubajtowych metody przez sufiks nazwy metody z "A" lub "W". Jeśli nie zostanie znalezione dopasowanie, reguła próbuje zlokalizować funkcję przy użyciu formatu nazwy __stdcall (_MyMethod@12, gdzie 12 reprezentuje długość argumentów). Jeśli nie zostanie znalezione dopasowanie, a nazwa metody rozpoczyna się od "#", reguła wyszukuje funkcję jako odwołanie porządkowe, a nie odwołanie do nazwy.

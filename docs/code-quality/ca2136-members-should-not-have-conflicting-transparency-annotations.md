@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcef8fbfd61b8cd8c946f76d6fcb93dc46f1654
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7f9455e83d7cb128a34696ae5e849fd0901f1891
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920629"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232218"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Adnotacje przezroczystości składowych nie powinny powodować konfliktu
 
@@ -29,7 +29,7 @@ ms.locfileid: "68920629"
 |TypeName|TransparencyAnnotationsShouldNotConflict|
 |CheckId|CA2136|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Ta zasada jest wyzwalana, gdy element członkowski typu jest <xref:System.Security> oznaczony atrybutem zabezpieczeń, który ma inną przezroczystość niż atrybut zabezpieczeń kontenera elementu członkowskiego.

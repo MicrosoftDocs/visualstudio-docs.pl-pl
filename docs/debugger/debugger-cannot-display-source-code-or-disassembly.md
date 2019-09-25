@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caaa099a9be7eb11abe52c88c1acda185a0b39b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ee3181bedc520f24840f1b16221ea21055bf698
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852570"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211179"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Debuger nie może wyświetlić kodu źródłowego lub dezasemblacji
 Odczytuje ten błąd:
@@ -37,6 +37,6 @@ Odczytuje ten błąd:
 - Zagadnienia dotyczące zabezpieczeń może uniemożliwić debugera na podstawie odczytu stosu, wątek, zarejestruj się i innymi informacjami kontekstu z programu, który debugujesz. Jest to najbardziej prawdopodobne w przypadku debugowania aplikacji sieci Web i nie mieć odpowiednich uprawnień dostępu do katalogu wirtualnego. Ustawienia zabezpieczeń katalogu wirtualnego na anonimowe i spróbuj ponownie.
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

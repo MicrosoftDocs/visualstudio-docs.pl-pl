@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 50c67c614c4ece8f1925f4133f749a1c5747fe31
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547329"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234171"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identyfikatory powinny mieć poprawny sufiks
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547329"
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 

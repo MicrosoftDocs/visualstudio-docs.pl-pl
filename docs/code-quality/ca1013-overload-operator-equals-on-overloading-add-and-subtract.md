@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c82e7303ea4016974be04c3d8745cb2011017f0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2bb5fd5c0e68b5dcffc212af03294d94d04d2abe
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923159"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236334"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania
 
@@ -35,7 +35,7 @@ ms.locfileid: "68923159"
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Typ publiczny lub chroniony implementuje operatory dodawania lub odejmowania bez implementowania operatora porównania.

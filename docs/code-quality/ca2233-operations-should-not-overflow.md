@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99aae681dbe7bbeece557a15d78aed0b3f07f6f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806605"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230831"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operacje nie powinny powodować przepełnienia
 
@@ -31,32 +31,32 @@ ms.locfileid: "62806605"
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda wykonuje operację arytmetyczną i nie można zweryfikować operandów wcześniej w celu uniknięcia przepełnienia.
+Metoda wykonuje operację arytmetyczną i nie sprawdza wcześniej operandów, aby zapobiec przepełnieniu.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Nie należy wykonywać operacji arytmetycznych bez uprzedniego sprawdzenia operandów, aby upewnić się, że wynik operacji nie jest spoza zakresu możliwych wartości dla typów danych związane. W zależności od kontekstu wykonywania i typy danych związane przepełnienie arytmetyczne może spowodować albo <xref:System.OverflowException?displayProperty=fullName> lub odrzucone najbardziej znaczące bity wyniku.
+Nie wykonuj operacji arytmetycznych bez uprzedniego sprawdzenia operandów, aby upewnić się, że wynik operacji nie należy do zakresu możliwych wartości dla typów danych. W zależności od kontekstu wykonywania i typów danych, przepełnienie arytmetyczne może spowodować odrzucanie <xref:System.OverflowException?displayProperty=fullName> lub najbardziej znaczących bitów wyniku.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy zweryfikować operandy przed wykonaniem operacji.
+Aby naprawić naruszenie tej zasady, przed wykonaniem operacji Sprawdź poprawność operandów.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli możliwe wartości argumentów nigdy nie spowoduje, że operacja arytmetyczna przepełnienia.
+Jeśli możliwe wartości operandów nigdy nie spowodują przepełnienia operacji arytmetycznej, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
-## <a name="example-of-a-violation"></a>Przykładem naruszenia
+## <a name="example-of-a-violation"></a>Przykład naruszenia
 
-W poniższym przykładzie metoda manipuluje liczba całkowita, która narusza tę regułę. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] wymaga **Usuń** możliwość przepełnienia liczby całkowitej można wyłączyć tego ognia.
+Metoda w poniższym przykładzie operuje liczbą całkowitą, która narusza tę regułę. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]wymaga wyłączenia opcji przepełnienia **liczby całkowitej** , aby można było ją uruchomić.
 
 [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
 [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]
 
-Jeśli metoda w tym przykładzie zostanie przekazana <xref:System.Int32.MinValue?displayProperty=fullName>, operacja będzie niedopełnienie. Powoduje to najbardziej znaczącego bitu wyniku odrzucone. Poniższy kod pokazuje, jak ten problem wystąpi.
+Jeśli metoda w tym przykładzie jest przenoszona <xref:System.Int32.MinValue?displayProperty=fullName>, operacja spowodowałaby niedopełnienie. Powoduje to najbardziej znaczący bit wyniku, który ma zostać odrzucony. Poniższy kod pokazuje, jak to się dzieje.
 
 ```csharp
 public static void Main()
@@ -81,32 +81,32 @@ Dane wyjściowe:
 2147483647
 ```
 
-## <a name="fix-with-input-parameter-validation"></a>Usuń z weryfikacją parametr wejściowy
+## <a name="fix-with-input-parameter-validation"></a>Napraw przy użyciu walidacji parametru wejściowego
 
-Poniższy przykład naprawia wcześniejszego naruszenia praw, weryfikując wartość danych wejściowych.
+Poniższy przykład naprawia poprzednie naruszenie, sprawdzając wartość danych wejściowych.
 
 [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)]
 [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]
 
-## <a name="fix-with-a-checked-block"></a>Napraw przy użyciu sprawdzonego bloku
+## <a name="fix-with-a-checked-block"></a>Popraw z zaznaczonym blokiem
 
-Poniższy przykład naprawia wcześniejszego naruszenia praw, opakowując operacji w sprawdzonego bloku. Jeśli operacja powoduje przepełnienie <xref:System.OverflowException?displayProperty=fullName> zostanie zgłoszony.
+Poniższy przykład naprawia poprzednie naruszenie przez zapakowanie operacji w zaznaczonym bloku. Jeśli operacja powoduje przepełnienie, <xref:System.OverflowException?displayProperty=fullName> zostanie zgłoszony.
 
-Bloki zaznaczenia nie są obsługiwane w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
+Zaznaczone bloki nie są obsługiwane w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]programie.
 
 [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]
 
-## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Włącz zaznaczony przepełnienie/niedopełnienie arytmetyczne
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Włącz sprawdzone przepełnienie arytmetyczne/niedomiar
 
-Jeśli włączysz zaznaczone arytmetyczne przepełnienie/niedopełnienie w języku C# jest odpowiednikiem zawijania każda operacja liczby całkowitej w sprawdzonego bloku.
+W przypadku włączenia sprawdzania przepełnienia arytmetycznego/ C#przeciążenia w programie jest on równoznaczny z zamiarem zawijania każdej operacji całkowitej w zaznaczonym bloku.
 
-Aby włączyć funkcję kontroli arytmetyczne przepełnienie/niedopełnienie w języku C#:
+Aby włączyć sprawdzanie przepełnienia arytmetycznego/ C#przeciążenia w:
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**.
 
-2. Wybierz **kompilacji** kartę, a następnie kliknij przycisk **zaawansowane**.
+2. Wybierz kartę **kompilacja** , a następnie kliknij pozycję **Zaawansowane**.
 
-3. Wybierz **sprawdzaj przepełnienie/niedopełnienie arytmetyczne** i kliknij przycisk **OK**.
+3. Wybierz pozycję **Sprawdź, aby uzyskać arytmetyczne przepełnienie/niedomiar** i kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 837abb051467135b6332b53b2c59e5016d3adff6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744807"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233067"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach
 
@@ -33,23 +33,23 @@ ms.locfileid: "66744807"
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda ustawia <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> właściwości przy użyciu ciągu, który jest zbudowany z argumentem ciągu do metody.
+Metoda ustawia <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> właściwość przy użyciu ciągu skompilowanego z argumentu ciągu do metody.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Zasada ta zakłada, że argument ciągu zawiera dane wejściowe użytkownika. Ciąg polecenia SQL zbudowany z danych wejściowych użytkownika jest narażony na ataki przez wstrzyknięcie kodu SQL. W przypadku ataku polegającego na iniekcji SQL złośliwy użytkownik dostarcza dane wejściowe, które zmienia Projekt kwerendy w celu podjęcia próby uszkodzić lub uzyskania nieautoryzowanego dostępu do podstawowej bazy danych. Typowe techniki to m.in. wprowadzanie pojedynczy cudzysłów lub apostrof, czyli Ogranicznik ciągu literału SQL; dwa łączniki, które oznacza Komentarz SQL; i średnikiem, co oznacza, że następujące nowe polecenie. Jeśli dane wejściowe użytkownika musi należeć do zapytania, użyj jednej z następujących pozycji, wymienione w kolejności skuteczności, aby zmniejszyć ryzyko ataków.
+Zasada ta zakłada, że argument ciągu zawiera dane wejściowe użytkownika. Ciąg polecenia SQL zbudowany z danych wejściowych użytkownika jest narażony na ataki przez wstrzyknięcie kodu SQL. W przypadku ataku polegającego na iniekcji SQL złośliwy użytkownik wprowadza dane wejściowe, które zmieniają projekt zapytania w próbie uszkodzenia lub uzyskania nieautoryzowanego dostępu do źródłowej bazy danych. Typowe techniki obejmują iniekcję pojedynczego cudzysłowu lub apostrofu, który jest ogranicznikiem ciągu znaków literału SQL; dwie kreski, co oznacza komentarz SQL; i średnik, który wskazuje, że nowe polecenie jest następujące. Jeśli dane wejściowe użytkownika muszą być częścią zapytania, użyj jednego z następujących elementów w kolejności skuteczności, aby zmniejszyć ryzyko ataku.
 
 - Użyj procedury składowanej.
 
-- Przy użyciu parametrów poleceń sparametryzowanych.
+- Użyj sparametryzowanego ciągu polecenia.
 
-- Weryfikowanie danych wejściowych użytkownika, zarówno dla typu i zawartości, przed utworzeniem ciągu polecenia.
+- Sprawdź poprawność danych wejściowych użytkownika dla typu i zawartości przed skompilowaniem ciągu polecenia.
 
-Implementuje następujące typy .NET <xref:System.Data.IDbCommand.CommandText%2A> właściwość lub ustaw właściwość przy użyciu argumentu ciągu konstruktorów.
+Następujące typy .NET implementują <xref:System.Data.IDbCommand.CommandText%2A> właściwość lub dostarczają konstruktorów, które ustawiają właściwość przy użyciu argumentu ciągu.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> i <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -59,16 +59,16 @@ Implementuje następujące typy .NET <xref:System.Data.IDbCommand.CommandText%2A
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> i <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-Należy zauważyć, że zasada ta jest naruszona stosowania metody ToString typu jest jawnie lub niejawnie do konstruowania ciągu zapytania. Oto przykład.
+Należy zauważyć, że ta reguła jest naruszona, gdy Metoda ToString typu jest używana jawnie lub niejawnie do konstruowania ciągu zapytania. Oto przykład.
 
 ```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
-Zostanie naruszona zasada, ponieważ złośliwy użytkownik może zastąpić metodę ToString().
+Reguła jest naruszana, ponieważ złośliwy użytkownik może zastąpić metodę ToString ().
 
-Również zostanie naruszona zasada niejawnie stosowania ToString.
+Zasada jest również naruszona, gdy Metoda ToString jest używana niejawnie.
 
 ```csharp
 int x = 10;
@@ -77,15 +77,15 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy użyć sparametryzowanych zapytań.
+Aby naprawić naruszenie tej reguły, użyj zapytania parametrycznego.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli tekst polecenia nie zawiera danych podawanych przez użytkownika.
+Jeśli tekst polecenia nie zawiera żadnych danych wprowadzonych przez użytkownika, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie pokazano metodę `UnsafeQuery`, który narusza regułę i metody `SaferQuery`, odpowiadającej reguły za pomocą ciągu sparametryzowanego polecenia.
+Poniższy przykład przedstawia metodę, `UnsafeQuery`, która narusza regułę i metodę, `SaferQuery`, która spełnia regułę przy użyciu sparametryzowanego ciągu polecenia.
 
 [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
 [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

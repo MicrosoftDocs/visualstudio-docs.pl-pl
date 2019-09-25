@@ -1,5 +1,5 @@
 ---
-title: CA2153 reguł analizy kodu dla uszkodzony wyjątków stanu
+title: Reguła analizy kodu CA2153 dla wyjątków uszkodzonych Stanów
 ms.date: 02/19/2019
 ms.topic: reference
 author: gewarren
@@ -7,53 +7,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b75e45b8a199265eaefe3a2b3c37ed62039e0eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36442ad0792ef712acd322d17688d8ceb21444cb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542160"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231892"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Unikaj obsługi wyjątków stan uszkodzony
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Unikaj obsługi wyjątków uszkodzonego stanu
 
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-[Uszkodzony stan wyjątków (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) wskazać, że pamięć uszkodzenie istnieje w procesie. Przechwytywanie tych zamiast zezwalać awarię procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać do regionu pamięci uszkodzony.
+[Wyjątki uszkodzonych Stanów (rozszerzeń klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) wskazują, że uszkodzenie pamięci istnieje w procesie. Ich przechwycenie zamiast zezwalania na awarię procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać lukę w uszkodzonym regionie pamięci.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Rozszerzenie klienta wskazuje, że stan procesu został uszkodzony i nie zgłoszony przez system. W tym scenariuszu uszkodzony ogólny program obsługi tylko przechwytuje wyjątek po oznaczeniu metodę z <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> atrybutu. Domyślnie [środowiska uruchomieniowego języka wspólnego (CLR)](/dotnet/standard/clr) obsługi catch nie jest wywoływany w przypadku rozszerzeń klienta.
+Rozszerzenie klienta wskazuje, że stan procesu został uszkodzony i nie został przechwycony przez system. W scenariuszu uszkodzenia stanu ogólna procedura obsługi przechwytuje wyjątek tylko wtedy, gdy oznaczy metodę przy użyciu <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> atrybutu. Domyślnie [środowisko uruchomieniowe języka wspólnego (CLR)](/dotnet/standard/clr) nie wywołuje obsługi catch dla rozszerzeń klienta.
 
-Najbezpieczniej jest, aby zezwolić na awarię procesu bez wychwytywanie tych rodzajów wyjątków. Nawet rejestrowania kodu może umożliwić atakującemu wykorzystać błędy uszkodzenia pamięci.
+Najbezpieczniejsza opcja polega na tym, aby proces mógł ulec awarii bez przechwycenia tych rodzajów wyjątków. Nawet rejestrowanie kodu może pozwolić osobom atakującym na korzystanie z usterek awarii pamięci.
 
-To ostrzeżenie uaktywnia Przechwytywanie rozszerzeń klienta za pomocą ogólny program obsługi, który przechwytuje wszystkie wyjątki, na przykład `catch (System.Exception e)` lub `catch` w przypadku braku parametrów wyjątku.
+To ostrzeżenie jest wyzwalane podczas przechwytywania rozszerzeń klienta z użyciem ogólnej procedury obsługi, która przechwytuje wszystkie wyjątki `catch (System.Exception e)` , `catch` na przykład lub bez parametru wyjątku.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby rozwiązać tego ostrzeżenia, wykonaj jedną z następujących czynności:
+Aby rozwiązać ten problem, wykonaj jedną z następujących czynności:
 
-- Usuń <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atrybutu. Przywraca domyślne zachowanie środowiska uruchomieniowego, gdzie rozszerzeń klienta nie zostaną przekazane do obsługi catch.
+- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> Usuń atrybut. Spowoduje to przywrócenie domyślnego zachowania środowiska uruchomieniowego, w którym rozszerzeń klienta nie są przenoszone do obsługi catch.
 
-- Usuń procedurę obsługi catch ogólne, in preference of programów obsługi, które Przechwytuj typów wyjątków określonych. Może to obejmować rozszerzeń klienta, przy założeniu, że kod procedury obsługi bezpiecznie mógł je obsłużyć (rzadkiego).
+- Usuń ogólny program obsługi catch w preferencjach obsługi, które przechwytują określone typy wyjątków. Może to obejmować rozszerzeń klienta, przy założeniu, że kod procedury obsługi może bezpiecznie obsłużyć je (rzadki).
 
-- Zgłoś ponownie rozszerzenie klienta w obsługi catch, który przekazuje wyjątek do obiektu wywołującego i powinno dawać wynik końcowy uruchomionego procesu.
+- Ponownie zgłoś rozszerzenie klienta w obsłudze catch, które przekazuje wyjątek do obiektu wywołującego i powinno spowodować zakończenie uruchomionego procesu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
 Nie pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="pseudo-code-example"></a>Przykładowy pseudo-kod
+## <a name="pseudo-code-example"></a>Przykład pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
-Poniższy pseudo-kod przedstawiono wzorzec wykryte przez tę regułę.
+Poniższy pseudo kodu ilustruje wzorzec wykryty przez tę regułę.
 
 ```csharp
 [HandleProcessCorruptedStateExceptions]
@@ -71,9 +71,9 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-1---remove-the-attribute"></a>Rozwiązanie 1. Usuń atrybut
+### <a name="solution-1---remove-the-attribute"></a>Rozwiązanie 1 — Usuwanie atrybutu
 
-Usuwanie <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atrybutu zapewnia uszkodzony stan wyjątki nie są obsługiwane przez metodę.
+<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> Usunięcie atrybutu gwarantuje, że wyjątki uszkodzonych stanów nie są obsługiwane przez metodę.
 
 ```csharp
 void TestMethod1()
@@ -89,9 +89,9 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2---catch-specific-exceptions"></a>Rozwiązanie 2 - określonych wyjątków catch
+### <a name="solution-2---catch-specific-exceptions"></a>Rozwiązanie 2 — Przechwytywanie określonych wyjątków
 
-Usuń procedurę obsługi catch ogólne i przechwytywać tylko typy określonego wyjątku.
+Usuń ogólny program obsługi catch i Przechwyć tylko określone typy wyjątków.
 
 ```csharp
 void TestMethod1()
@@ -111,9 +111,9 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3---rethrow"></a>Zgłoś ponownie rozwiązanie 3-
+### <a name="solution-3---rethrow"></a>Rozwiązanie 3 — ponowne zgłoszenie
 
-Zgłoś ponownie wyjątek.
+Ponownie Zgłoś wyjątek.
 
 ```csharp
 [HandleProcessCorruptedStateExceptions]

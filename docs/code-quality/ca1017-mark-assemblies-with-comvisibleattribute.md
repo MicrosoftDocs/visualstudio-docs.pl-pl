@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e6bc88d3932baa5bbb4a723d7a16509831d58146
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 073332738a01cb299b2b185c6fca20131222f981
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923100"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236255"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Oznacz zestawy atrybutem ComVisibleAttribute
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923100"
 |TypeName|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Zestaw nie ma <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> zastosowanego atrybutu.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aecfe8e0be0f5d32df41b7eb164423fd4d405db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b52f4412b1b048c41033f74200828f70361c1ea3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545006"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232520"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Konstruktory statyczne powinny być prywatne
 
@@ -28,28 +28,28 @@ ms.locfileid: "62545006"
 |TypeName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ ma statyczny Konstruktor, który nie jest prywatny.
+Typ ma Konstruktor statyczny, który nie jest prywatny.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Statyczny Konstruktor, znany także jako konstruktora klasy, jest używany do inicjowania typu. System wywołuje statyczny konstruktor przed utworzeniem pierwszego wystąpienia typu lub przed odwołaniem do któregokolwiek ze statycznych elementów członkowskich. Użytkownik nie ma kontroli nad kiedy wywoływany jest konstruktor statyczny. Jeśli konstruktor statyczny nie jest prywatny, może być wywołany przez kod inny niż system. W zależności od operacji, które są wykonywane w konstruktorze, może to spowodować nieoczekiwane zachowanie.
+Konstruktor statyczny, nazywany również konstruktorem klasy, jest używany do inicjowania typu. System wywołuje statyczny konstruktor przed utworzeniem pierwszego wystąpienia typu lub przed odwołaniem do któregokolwiek ze statycznych elementów członkowskich. Użytkownik nie ma kontroli nad tym, kiedy Konstruktor statyczny jest wywoływany. Jeśli konstruktor statyczny nie jest prywatny, może być wywołany przez kod inny niż system. W zależności od operacji, które są wykonywane w konstruktorze, może to spowodować nieoczekiwane zachowanie.
 
-Ta zasada jest wymuszana przez Kompilatory języka C# i Visual Basic.
+Ta reguła jest wymuszana przez C# kompilatory i Visual Basic.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Naruszenia zwykle są spowodowane przez jedną z następujących czynności:
+Naruszenia są zwykle spowodowane przez jedną z następujących akcji:
 
-- Zdefiniowany Konstruktor statyczny dla danego typu i nie wykonał on prywatnych.
+- Zdefiniowano konstruktora statycznego dla typu i nie został on prywatny.
 
-- Kompilator języka programowania dodany statyczny Konstruktor do typu, a nie wykonał on prywatnych.
+- Kompilator języka programowania dodał do typu domyślnego konstruktora statycznego i nie uczynić go prywatnym.
 
-Aby rozwiązać pierwszy rodzaj naruszenie, upewnij konstruktora statycznego prywatnego. Aby rozwiązać drugi rodzaj, Dodaj Konstruktor statyczny prywatny do danego typu.
+Aby naprawić pierwszy rodzaj naruszenia, ustaw swój statyczny Konstruktor jako prywatny. Aby naprawić drugi rodzaj, Dodaj prywatny statyczny Konstruktor do typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj te naruszenia. Jeśli projekt oprogramowania wymaga jawnym wywołaniem statyczny Konstruktor, jest prawdopodobne, że projekt zawiera poważne wady i powinna zostać przejrzana pod.
+Nie pomijaj tych naruszeń. Jeśli projekt oprogramowania wymaga jawnego wywołania konstruktora statycznego, prawdopodobnie projekt zawiera poważne wady i należy go przejrzeć.

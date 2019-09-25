@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc94a04d708315cc143afd1556cb8a2f0072e91
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 34f9b8a79e38bdb9b6b097588697e2cd6c3545f7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923297"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236592"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Unikaj nadmiernego użycia parametrów w typach ogólnych
 
@@ -28,7 +28,7 @@ ms.locfileid: "68923297"
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
 |CheckId|CA1005|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Widoczny na zewnątrz typ ogólny ma więcej niż dwa parametry typu.

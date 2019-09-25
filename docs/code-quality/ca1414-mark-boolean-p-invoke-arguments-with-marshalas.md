@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8d47b73009e0bd742c989ddc0311644453e5d9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 22e62a1e3209399be4b10a3ec28db4afdd6f0f20
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921869"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234672"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Oznacz argumenty typu boolean elementu P/Invoke argumentem MarshalAs
 
@@ -32,7 +32,7 @@ ms.locfileid: "68921869"
 |TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|
 |CheckId|CA1414|
 |Kategoria|Microsoft. współdziałanie|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Deklaracja metody wywołania platformy zawiera <xref:System.Boolean?displayProperty=fullName> parametr lub wartość zwracaną, <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> ale atrybut nie jest stosowany do parametru lub wartości zwracanej.

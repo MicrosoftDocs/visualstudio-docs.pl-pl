@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24723559988974c51798c3e099ff8c1d86a15db9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0365d82917b8cfbaf291d557a6ac2d95c220562a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920517"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232121"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>Metody CA2141:Transparent nie mogą spełniać LinkDemands
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920517"
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
 |CheckId|CA2141|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Metoda przezroczysta pod względem zabezpieczeń wywołuje metodę w zestawie, który nie jest oznaczony <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atrybutem (APTCA) lub metoda przezroczysta zabezpieczeń <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` spełnia dla typu lub metody.

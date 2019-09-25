@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c05c0b17bc9866edd7c07874be14578ed4cf884
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cfa705654a5cc4122e5ee554fe050722d7883970
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922556"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235481"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś metody P/Invoke do klasy NativeMethods
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922556"
 |TypeName|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 

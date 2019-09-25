@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8a02ae357dbf36cb4d3e4bd21aaad0fed3a320
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 7407fcbe035d02992f414027114d69c257f5f390
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586586"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232924"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Pola tablicy nie powinny być tylko do odczytu
 
@@ -28,47 +28,47 @@ ms.locfileid: "67586586"
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
 |CheckId|CA2105|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
-Pole publiczne lub chronione, który zawiera tablicę jest zadeklarowany tylko do odczytu.
+Pole publiczne lub chronione, które przechowuje tablicę, jest zadeklarowane jako tylko do odczytu.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Po zastosowaniu `readonly` (`ReadOnly` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) modyfikatora pola, które zawiera tablicę, pola nie można zmienić do odwoływania się do innej tablicy. Można jednak zmienić elementy tablicy, które są przechowywane w polu tylko do odczytu. Kod, który podejmuje decyzje lub wykonuje operacje, które są oparte na elementach tablicy tylko do odczytu, które są publicznie dostępne mogą zawierać luki w zabezpieczeniach kończona.
+Po zastosowaniu `readonly` modyfikatora`ReadOnly` ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]in) do pola, które zawiera tablicę, pola nie można zmienić, aby odwoływać się do innej tablicy. Można jednak zmienić elementy tablicy, które są przechowywane w polu tylko do odczytu. Kod, który podejmuje decyzje lub wykonuje operacje oparte na elementach tablicy tylko do odczytu, które mogą być dostępne publicznie, może zawierać lukę w zabezpieczeniach.
 
-Należy pamiętać, że mających publiczne pole również narusza regułę projektowania [CA1051: Nie deklaruj widocznych pól wystąpień](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+Należy pamiętać, że posiadanie pola publicznego narusza także regułę [projektu CA1051: Nie deklaruj widocznych pól](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)wystąpień.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby rozwiązać problem luki w zabezpieczeniach, która jest identyfikowana przez tę regułę, nie należy polegać na zawartości tablicy tylko do odczytu, które są publicznie dostępne. Zdecydowanie zaleca się korzystanie z jednej z następujących procedur:
+Aby naprawić lukę w zabezpieczeniach, która jest identyfikowana przez tę regułę, nie należy polegać na zawartości tablicy tylko do odczytu, która jest dostępna publicznie. Zdecydowanie zaleca się użycie jednej z następujących procedur:
 
-- Zastąp tablicy silnie typizowaną kolekcją, której nie można zmienić. Aby uzyskać więcej informacji, zobacz <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
+- Zastąp tablicę kolekcją o jednoznacznie określonym typie, której nie można zmienić. Aby uzyskać więcej informacji, zobacz <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
 
-- Zastąp pole publiczne metody, która zwróci klon tablicy prywatnej. Ponieważ kod nie polega na klonie, nie ma ryzyka, jeśli elementy są modyfikowane.
+- Zastąp pole publiczne metodą zwracającą klon tablicy prywatnej. Ponieważ kod nie bazuje na klonie, nie ma żadnych zagrożeń, jeśli elementy są modyfikowane.
 
-Jeśli została wybrana opcja drugiej metody, nie zastępują pola z właściwością; właściwości zwracające tablice niekorzystnie wpłynąć na wydajność. Aby uzyskać więcej informacji, zobacz [CA1819: Właściwości nie powinny zwracać tablic](../code-quality/ca1819-properties-should-not-return-arrays.md).
+W przypadku wybrania drugiego podejścia nie należy zamieniać pola na Właściwość; Właściwości, które zwracają tablice, mają negatywny wpływ na wydajność. Aby uzyskać więcej informacji, [Zobacz CA1819: Właściwości nie powinny zwracać tablic](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Wykluczenie ostrzeżenie od tej reguły jest zdecydowanie odradzane. Niemal żadnych scenariuszy wystąpić, gdy zawartość pola tylko do odczytu nie są ważne. Jeśli jest to w przypadku danego scenariusza, należy usunąć `readonly` modyfikator zamiast wiadomości z wyjątkiem.
+Wyłączenie ostrzeżenia z tej reguły jest zdecydowanie odradzane. Niemal nie występują żadne scenariusze, w których zawartość pola tylko do odczytu nie jest ważna. W takim przypadku w scenariuszu Usuń `readonly` modyfikator zamiast wykluczania komunikatu.
 
 ## <a name="example-1"></a>Przykład 1
 
-W tym przykładzie pokazano niebezpieczeństwa naruszenie tej zasady. Pierwsza część zawiera biblioteki przykładu, który ma typ, `MyClassWithReadOnlyArrayField`, która zawiera dwa pola (`grades` i `privateGrades`), które nie są bezpieczne. Pole `grades` publicznej i w związku z tym narażony na dowolny obiekt wywołujący. Pole `privateGrades` jest prywatny, ale jest nadal podatne, ponieważ jest on zwracany do wywoływania przez `GetPrivateGrades` metody. `securePrivateGrades` Pole jest widoczne w bezpieczny sposób przez `GetSecurePrivateGrades` metody. Jest zadeklarowany jako prywatny dobrego projektowania rozwiązań. Druga część zawiera kod, który zmienia wartości przechowywane w `grades` i `privateGrades` elementów członkowskich.
+Ten przykład pokazuje zagrożenie naruszenia tej reguły. Pierwsza część pokazuje przykładową bibliotekę, która ma typ, `MyClassWithReadOnlyArrayField`który zawiera dwa pola (`grades` i `privateGrades`), które nie są bezpieczne. Pole `grades` jest publiczne i dlatego jest narażone na dowolnego wywołującego. Pole `privateGrades` jest prywatne, ale jest nadal podatne na ataki, ponieważ jest zwracane do wywoływania `GetPrivateGrades` przez metodę. Pole jest udostępniane w sposób bezpieczny `GetSecurePrivateGrades` przez metodę. `securePrivateGrades` Jest on zadeklarowany jako prywatny do przestrzegania dobrych praktyk projektowania. Druga część pokazuje kod, który zmienia wartości przechowywane w `grades` i `privateGrades` elementów członkowskich.
 
-Biblioteka klas przykład pojawia się w następującym przykładzie.
+Przykładowa Biblioteka klas zostanie wyświetlona w poniższym przykładzie.
 
 [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]
 
 ## <a name="example-2"></a>Przykład 2
 
-W poniższym kodzie użyto przykład biblioteki klas, aby zilustrować problemy z zabezpieczeniami tablicy tylko do odczytu.
+Poniższy kod używa przykładowej biblioteki klas do zilustrowania problemów z zabezpieczeniami tablicy tylko do odczytu.
 
 [!code-csharp[FxCop.Security.TestArrayFieldsRead#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_2.cs)]
 
-Dane wyjściowe z tego przykładu są:
+Dane wyjściowe z tego przykładu to:
 
 ```text
 Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90
@@ -77,7 +77,7 @@ After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades,
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA2104 : Nie deklaruj odczytu modyfikowalnych typów referencyjnych tylko](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
+- [CA2104 Nie deklaruj modyfikowalnych typów referencyjnych tylko do odczytu](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
 
 ## <a name="see-also"></a>Zobacz także
 

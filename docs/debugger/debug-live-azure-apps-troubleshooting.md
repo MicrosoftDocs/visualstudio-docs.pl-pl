@@ -11,94 +11,94 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c66ba4a5031326ec288d3a5f2f3c4851d17ca6
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559768"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211238"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
 
-Jeśli kroki opisane w tym artykule nie rozwiązują problemu, należy wyszukać problemu na [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html) lub zgłosić nowy problem, wybierając **pomocy** > **Prześlij opinię**   >  **Zgłoś Problem** w programie Visual Studio.
+Jeśli kroki opisane w tym artykule nie rozwiążą problemu, wyszukaj problem dotyczący [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html) lub zgłoś nowy problem, wybierając pozycję **Pomoc** > **Wyślij opinię** > **Zgłoś problem** w programie Visual Studio.
 
-## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problem: "Dołączanie rozszerzenia Snapshot Debugger" wystąpi błąd kodu stanu HTTP
+## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problem: "Attach Snapshot Debugger" napotka błąd kodu stanu HTTP
 
-Jeśli zostanie wyświetlony następujący błąd w **dane wyjściowe** okna podczas próby dołączenia, może być to znany problem wymienione poniżej. Spróbuj proponowanych rozwiązań, a jeśli problem pozostaje nierozwiązany skontaktuj się z poprzednim alias.
+Jeśli w oknie **danych wyjściowych** wystąpi następujący błąd podczas próby dołączenia, może to być znany problem wymieniony poniżej. Wypróbuj proponowane rozwiązania, a jeśli problem będzie nadal występował, skontaktuj się z poprzednim aliasem.
 
 `[TIMESTAMP] Error --- Unable to Start Snapshot Debugger - Attach Snapshot Debugger failed: System.Net.WebException: The remote server returned an error: (###) XXXXXX`
 
-### <a name="401-unauthorized"></a>(401) nieautoryzowane
+### <a name="401-unauthorized"></a>(401) — nieautoryzowane
 
-Ten błąd wskazuje, czy wywołania REST wystawiony przez program Visual Studio do platformy Azure wykorzystuje poświadczenia są nieprawidłowe. To znana usterka. za pomocą modułu Azure Active Directory łatwe OAuth mogą dawać tego błędu.
-
-Wykonaj następujące czynności:
-
-* Upewnij się, że konta personalizacji programu Visual Studio ma uprawnienia do subskrypcji platformy Azure i zasobów, który jest podłączany do. Szybko określić, to jest sprawdzenie, czy zasób jest dostępny w oknie dialogowym z **debugowania** > **dołączyć rozszerzenie Snapshot Debugger...**   >  **Zasobów platformy azure** > **wybierz istniejący**, lub w programie Cloud Explorer.
-* Jeśli ten błąd nie ustąpi, użyj jednej z kanałami przesyłania opinii, opisano na początku tego artykułu.
-
-### <a name="403-forbidden"></a>Zabronione (403)
-
-Ten błąd wskazuje, że odmówiono udzielenia uprawnienia. Może to być spowodowane przez wiele różnych problemów.
+Ten błąd wskazuje, że wywołanie REST wystawione przez program Visual Studio na platformę Azure używa nieprawidłowego poświadczenia. Przyczyną tego błędu może być znany błąd z modułem Easy OAuth Azure Active Directory.
 
 Wykonaj następujące czynności:
 
-* Sprawdź, czy Twoje konto programu Visual Studio ma prawidłową subskrypcję platformy Azure z odpowiednimi uprawnieniami kontroli dostępu opartej na rolach (RBAC) dla zasobu. Dla usługi App Service, sprawdź, czy uprawnienia do [zapytania](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) planu usługi App Service hostującego twoją aplikację.
-* Sprawdź, czy sygnatury czasowej na komputerze klienckim jest prawidłowe i aktualne. Serwery z sygnaturami czasowymi wyłączona przez więcej niż 15 minut sygnatura czasowa żądania zazwyczaj generują ten błąd.
-* Jeśli ten błąd nie ustąpi, użyj jednej z kanałami przesyłania opinii, opisano na początku tego artykułu.
+* Upewnij się, że konto personalizacji programu Visual Studio ma uprawnienia do subskrypcji i zasobu platformy Azure, do którego dołączasz. Aby szybko ustalić, czy zasób jest dostępny w oknie dialogowym z > **dołączania debugowania Snapshot Debugger...**  > Zasób >  **platformy Azure** **Wybierz istniejący**lub w Eksploratorze chmury.
+* Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
+
+### <a name="403-forbidden"></a>(403) zabronione
+
+Ten błąd wskazuje, że uprawnienie jest odrzucane. Może to być spowodowane przez wiele różnych problemów.
+
+Wykonaj następujące czynności:
+
+* Sprawdź, czy Twoje konto programu Visual Studio ma prawidłową subskrypcję platformy Azure z wymaganymi uprawnieniami Access Control opartymi na rolach (RBAC) dla zasobu. W przypadku usługi AppService Sprawdź, czy masz uprawnienia do [wykonywania zapytań](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) dotyczących planu App Service, który obsługuje aplikację.
+* Sprawdź, czy sygnatura czasowa komputera klienckiego jest prawidłowa i aktualna. Serwery z sygnaturami czasowymi wyciętymi przez ponad 15 minut sygnatury czasowej żądania zwykle powodują ten błąd.
+* Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
 ### <a name="404-not-found"></a>(404) nie znaleziono
 
-Ten błąd wskazuje, że na serwerze nie można odnaleźć witryny sieci Web.
+Ten błąd oznacza, że nie można odnaleźć witryny sieci Web na serwerze.
 
 Wykonaj następujące czynności:
 
-* Sprawdź, czy masz wdrożenia i uruchomienia na zasób usługi App Service, które są związane z witryny sieci Web.
-* Sprawdź, czy witryna jest dostępne pod adresem https://\<zasobów\>. azurewebsites.net
-* Jeśli ten błąd nie ustąpi, użyj jednej z kanałami przesyłania opinii, opisano na początku tego artykułu.
+* Sprawdź, czy witryna sieci Web została wdrożona i uruchomiona na zasobie App Service, do której dołączasz.
+* Sprawdź, czy witryna jest dostępna pod adresem\<https://\>Resource. azurewebsites.NET
+* Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
-### <a name="406-not-acceptable"></a>(406) nie do przyjęcia
+### <a name="406-not-acceptable"></a>(406) nie akceptowalny
 
-Ten błąd wskazuje, że serwer jest w stanie odpowiadać na typ ustawiony w nagłówku Accept żądania.
+Ten błąd wskazuje, że serwer nie może odpowiedzieć na typ ustawiony w nagłówku Accept żądania.
 
 Wykonaj następujące czynności:
 
-* Sprawdź, czy witryna jest dostępne pod adresem https://\<zasobów\>. azurewebsites.net
-* Sprawdź, czy witryny nie została zmigrowana do nowych wystąpień. Rozszerzenie Snapshot Debugger używa pojęcie ARRAffinity na potrzeby kierowania żądań do konkretnych wystąpień, które mogą wygenerować sporadycznie tego błędu.
-* Jeśli ten błąd nie ustąpi, użyj jednej z kanałami przesyłania opinii, opisano na początku tego artykułu.
+* Sprawdź, czy witryna jest dostępna pod adresem\<https://\>Resource. azurewebsites.NET
+* Sprawdź, czy lokacja nie została zmigrowana do nowych wystąpień. Snapshot Debugger używa koncepcji ARRAffinity w przypadku żądań routingu do określonych wystąpień, co sporadycznie może spowodować wystąpienie tego błędu.
+* Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
-### <a name="409-conflict"></a>Konflikt (409)
+### <a name="409-conflict"></a>(409) konflikt
 
-Ten błąd wskazuje, czy żądanie jest w konflikcie z bieżącego stanu serwera.
+Ten błąd wskazuje, że żądanie powoduje konflikt z bieżącym stanem serwera.
 
-Jest to znany problem, który występuje, gdy użytkownik próbuje dołączyć rozszerzenie Snapshot Debugger dla usługi App Service, która włączyła dotycząca usługi Application Insights. Dotycząca usługi Application Insights ustawia AppSettings z inną wielkością liter niż program Visual Studio przyczyną tego problemu.
+Jest to znany problem, który występuje, gdy użytkownik podejmie próbę dołączenia Snapshot Debugger do AppService z włączonym ApplicationInsights. ApplicationInsights ustawia dla AppSettings inną wielkość liter niż program Visual Studio, powodując ten problem.
 
 ::: moniker range=">= vs-2019"
-Firma Microsoft został rozwiązany w programie Visual Studio 2019 r.
+Ten problem został rozwiązany w programie Visual Studio 2019.
 ::: moniker-end
 
 Wykonaj następujące czynności:
 
 ::: moniker range="vs-2017"
 
-* Sprawdź w witrynie Azure portal, że AppSettings dla debugera migawek (SNAPSHOTDEBUGGER_EXTENSION_VERSION) i InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION) są wielkie litery. Jeśli nie, zaktualizuj ustawienia ręcznie, która wymusza ponowne uruchomienie witryny.
+* Sprawdź, czy w Azure Portal są wielkie litery dla debugera migawek (SNAPSHOTDEBUGGER_EXTENSION_VERSION) i InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION). W przeciwnym razie zaktualizuj ustawienia ręcznie, co wymusza ponowne uruchomienie lokacji.
 ::: moniker-end
-* Jeśli ten błąd nie ustąpi, użyj jednej z kanałami przesyłania opinii, opisano na początku tego artykułu.
+* Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
 ### <a name="500-internal-server-error"></a>(500) wewnętrzny błąd serwera
 
-Ten błąd wskazuje, że witryna jest całkowicie w dół lub serwer nie może obsłużyć żądania. Snapshot Debugger tylko funkcje na uruchamianie aplikacji. [Application Insights Snapshot Debugger](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) zapewnia tworzenia migawek przy wyjątkach i może być najlepszym narzędziem do Twoich potrzeb.
+Ten błąd oznacza, że witryna jest całkowicie wyłączona lub serwer nie może obsłużyć żądania. Snapshot Debugger tylko funkcje na uruchomionych aplikacjach. [Application Insights Snapshot Debugger](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) udostępnia snapshotting na wyjątkach i może być najlepszym narzędziem do Twoich potrzeb.
 
-### <a name="502-bad-gateway"></a>(502): Nieprawidłowa brama
+### <a name="502-bad-gateway"></a>(502) zła Brama
 
-Ten błąd wskazuje na problem z siecią po stronie serwera i mogą być tymczasowe.
+Ten błąd wskazuje na problem z siecią po stronie serwera i może być tymczasowy.
 
 Wykonaj następujące czynności:
 
-* Należy poczekać kilka minut przed ponownie dołączanie rozszerzenia Snapshot Debugger.
-* Jeśli ten błąd nie ustąpi, użyj jednej z kanałami przesyłania opinii, opisano na początku tego artykułu.
+* Poczekaj kilka minut, a następnie ponownie dołączaj Snapshot Debugger.
+* Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problem: Punkt przyciągania jest wyłączone
+## <a name="issue-snappoint-does-not-turn-on"></a>Problem: Punkt przyciągania nie jest włączona
 
 Jeśli widoczna jest ikona ostrzeżenia ![ikona ostrzeżenia punktu przyciągania](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "ikona ostrzeżenia punktu przyciągania") przy użyciu punktu przyciągania zamiast ikony regularne punktu przyciągania następnie punktu przyciągania nie jest włączona.
 
@@ -106,9 +106,9 @@ Jeśli widoczna jest ikona ostrzeżenia ![ikona ostrzeżenia punktu przyciągani
 
 Wykonaj następujące czynności:
 
-1. Upewnij się, że mają tę samą wersję kodu źródłowego, który został użyty do tworzenia i wdrażania aplikacji. Upewnij się, że są ładowane poprawne symbole dla danego wdrożenia. Aby to zrobić, należy wyświetlić **modułów** okno podczas debugowania migawki i sprawdź kolumna plik symboli zawiera plik .pdb załadowanych modułów, debugowania. Rozszerzenie Snapshot Debugger podejmie próbę automatycznego pobrania i zastosowania symbole dla danego wdrożenia.
+1. Upewnij się, że masz taką samą wersję kodu źródłowego, która była używana do kompilowania i wdrażania aplikacji. Upewnij się, że są ładowane poprawne symbole dla danego wdrożenia. Aby to zrobić, należy wyświetlić **modułów** okno podczas debugowania migawki i sprawdź kolumna plik symboli zawiera plik .pdb załadowanych modułów, debugowania. Rozszerzenie Snapshot Debugger podejmie próbę automatycznego pobrania i zastosowania symbole dla danego wdrożenia.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problem: Symbole nie są ładowane podczas otwierania migawki
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problem: Symbole nie są ładowane, gdy otwieram migawkę
 
 Jeśli zostanie wyświetlone następujące okno, symboli nie został załadowany.
 
@@ -124,7 +124,7 @@ Wykonaj następujące czynności:
 
 - Również jeśli Twoja organizacja korzysta z serwera symboli lub porzuca symbole w inną ścieżkę, aby załadować symbole prawidłowy dla danego wdrożenia należy użyć ustawienia symboli.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problem: Nie widzę opcji "Dołączanie rozszerzenia Snapshot Debugger" w Eksploratorze chmury
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problem: Nie widzę opcji "Dołącz Snapshot Debugger" w programie Cloud Explorer
 
 Wykonaj następujące czynności:
 
@@ -133,17 +133,17 @@ Wykonaj następujące czynności:
 - Upewnij się, że Twoja aplikacja jest obsługiwana. Obecnie tylko ASP.NET (4.6.1+) i aplikacji platformy ASP.NET Core (w wersji 2.0 i nowsze) wdrożonych w usłudze Azure App Services są obsługiwane.
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-- Upewnij się, że Twoja aplikacja jest obsługiwana:
-  - Usługi aplikacji Azure — aplikacji ASP.NET uruchomionych w programie .NET Framework 4.6.1 lub nowszej.
-  - Usługa Azure App Services — aplikacje platformy ASP.NET Core uruchomiony w programie .NET Core 2.0 lub nowszych na Windows.
-  - Usługa Azure Virtual Machines (i zestawu skalowania maszyn wirtualnych) - aplikacji ASP.NET uruchomionych w programie .NET Framework 4.6.1 lub nowszej.
-  - Usługa Azure Virtual Machines (i zestawu skalowania maszyn wirtualnych) — aplikacje platformy ASP.NET Core uruchomiony w programie .NET Core 2.0 lub nowszych na Windows.
-  - Usługi platformy Azure Kubernetes — aplikacje platformy ASP.NET Core uruchomionej na platformy .NET Core 2.2 lub później na Debian 9.
-  - Usługi platformy Azure Kubernetes — aplikacje platformy ASP.NET Core uruchomionej na platformy .NET Core 2.2 lub później na Alpine 3.8.
-  - Usługi platformy Azure Kubernetes — aplikacje platformy ASP.NET Core uruchomionej na platformy .NET Core 2.2 lub później na Ubuntu 18.04.
+- Upewnij się, że aplikacja jest obsługiwana:
+  - Azure App Services — aplikacje ASP.NET uruchomione na .NET Framework 4.6.1 lub nowszych.
+  - App Services platformy Azure — aplikacje ASP.NET Core uruchomione na platformie .NET Core 2,0 lub nowszej w systemie Windows.
+  - Platforma Azure Virtual Machines (i zestaw skalowania maszyn wirtualnych) — aplikacje ASP.NET uruchomione na .NET Framework 4.6.1 lub nowszych.
+  - Platforma Azure Virtual Machines (i zestaw skalowania maszyn wirtualnych) — ASP.NET Core aplikacje działające na platformie .NET Core 2,0 lub nowszej w systemie Windows.
+  - Usługi Azure Kubernetes Services — ASP.NET Core aplikacje działające na platformie .NET Core 2,2 lub nowszej w systemie Debian 9.
+  - Usługi Azure Kubernetes Services — ASP.NET Core aplikacje działające na platformie .NET Core 2,2 lub nowszej na Alpine 3,8.
+  - Usługi Azure Kubernetes Services — ASP.NET Core aplikacje działające na platformie .NET Core 2,2 lub nowszej w systemie Ubuntu 18,04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problem: Można wyświetlić tylko ograniczona migawek w narzędziach diagnostycznych
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problem: W narzędzia diagnostyczne są widoczne tylko migawki z ograniczeniami
 
 ![Punkt przyciągania ograniczona](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "punkt przyciągania z ograniczoną przepływnością")
 
@@ -152,51 +152,51 @@ Wykonaj następujące czynności:
 - Migawki zajmują mało pamięci, ale charakteryzują się opłaty zatwierdzenia. Jeśli rozszerzenie Snapshot Debugger wykryje, że usługi na serwerze występuje duże obciążenie pamięci duże, nie będzie wykonywać migawek. Możesz usunąć migawki już przechwycony przez zatrzymanie sesji rozszerzenia Snapshot Debugger i podjęcie ponownej próby.
 
 ::: moniker range=">= vs-2019"
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problem: Debugowanie migawki z wieloma wersjami programu Visual Studio pozwala mi błędy
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problem: Debugowanie migawek z wieloma wersjami programu Visual Studio zawiera błędy
 
-2019 usługi Visual Studio wymaga nowszej wersji rozszerzenie witryny Snapshot Debugger w usłudze Azure App Service.  Ta wersja nie jest zgodny ze starszą wersją programu rozszerzenie witryny Snapshot Debugger, które są używane przez program Visual Studio 2017.  Jeśli próbujesz dołączyć rozszerzenie Snapshot Debugger w Visual Studio 2019 r do usługi Azure App Service, w którym ma zostały wcześniej debugowane debugera migawki programu Visual Studio 2017, zostanie wyświetlony następujący błąd:
+W Azure App Service programu Visual Studio 2019 jest wymagana nowsza wersja rozszerzenia witryny Snapshot Debugger.  Ta wersja nie jest zgodna ze starszą wersją rozszerzenia witryny Snapshot Debugger używanego przez program Visual Studio 2017.  Podczas próby dołączenia Snapshot Debugger w programie Visual Studio 2019 do Azure App Service, który został wcześniej debugowany przez Snapshot Debugger w programie Visual Studio 2017, zostanie wyświetlony następujący błąd:
 
-![Niezgodne rozszerzenie witryny Snapshot Debugger Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "rozszerzenie witryny niezgodne rozszerzenia Snapshot Debugger Visual Studio 2019 r.")
+![Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual Studio 2019")
 
-Z drugiej strony Jeśli używasz programu Visual Studio 2017 można dołączyć rozszerzenie Snapshot Debugger do usługi Azure App Service, w którym ma zostały wcześniej debugowane debugera migawki w programie Visual Studio 2019 r, zostanie wyświetlony następujący błąd:
+Jeśli używasz programu Visual Studio 2017 do dołączania Snapshot Debugger do Azure App Service, który został wcześniej debugowany przez Snapshot Debugger w programie Visual Studio 2019, wystąpi następujący błąd:
 
-![Niezgodne rozszerzenie witryny Snapshot Debugger programu Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "rozszerzenie witryny niezgodne rozszerzenia Snapshot Debugger programu Visual Studio 2017")
+![Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual Studio 2017")
 
-Aby rozwiązać ten problem, Usuń następujące ustawienia aplikacji w witrynie Azure portal i ponownie dołączyć rozszerzenie Snapshot Debugger:
+Aby rozwiązać ten problem, Usuń następujące ustawienia aplikacji z Azure Portal i Dołącz Snapshot Debugger ponownie:
 
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 ::: moniker-end
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problem: Występują problemy z debugowania migawek i trzeba włączyć rejestrowanie większej ilości
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problem: Mam problemy z debugowaniem migawek i muszę włączyć więcej rejestrowania
 
-### <a name="enable-agent-logs"></a>Włączanie dzienników agenta
+### <a name="enable-agent-logs"></a>Włącz dzienniki agenta
 
-Aby włączyć lub wyłączyć agenta rejestrowania Otwórz program Visual Studio przejdź do *Narzędzia > Opcje > rozszerzenia Snapshot Debugger > agent Włącz rejestrowanie*. Należy pamiętać, jeśli *usuwania starego agenta loguje rozpoczęcia sesji* jest również włączone, każdy pomyślne programu Visual Studio dołączyć będzie usunąć poprzednie dzienniki agenta.
+Aby włączyć i wyłączyć rejestrowanie agenta, Otwórz program Visual Studio przejdź do *menu narzędzia > opcje > Snapshot Debugger > włączyć rejestrowanie agenta*. Zwróć uwagę, że po włączeniu *usuwania starych dzienników agentów podczas uruchamiania sesji* wszystkie pomyślne dołączenie do programu Visual Studio zostaną usunięte z poprzednich dzienników agenta.
 
-Dzienniki agenta można znaleźć w następujących lokalizacjach:
+Dzienniki agentów można znaleźć w następujących lokalizacjach:
 
 - App Services:
-  - Przejdź do witryny Kudu usługi App Service (czyli yourappservice. **Menedżer sterowania usługami**. azurewebsites.net) i przejdź do konsoli debugowania.
-  - Dzienniki agenta są przechowywane w następującym katalogu:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
-- VM/VMSS:
-  - Zaloguj się do maszyny Wirtualnej agenta, dzienniki są przechowywane w następujący sposób:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - Przejdź do witryny kudu App Service (czyli yourappservice. **SCM**. azurewebsites.NET) i przejdź do konsoli debugowania.
+  - Dzienniki agentów są przechowywane w następującym katalogu:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+- MASZYNA WIRTUALNA/VMSS:
+  - Zaloguj się do maszyny wirtualnej, dzienniki agentów są przechowywane w następujący sposób:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
-  - Przejdź do następującego katalogu: / tmp/diag/AgentLogs / *
+  - Przejdź do następującego katalogu:/tmp/diag/AgentLogs/*
 
-### <a name="enable-profilerinstrumentation-logs"></a>Włączanie dzienników Profiler/Instrumentacji
+### <a name="enable-profilerinstrumentation-logs"></a>Włączenie profilera/dzienników Instrumentacji
 
 Dzienniki Instrumentacji można znaleźć w następujących lokalizacjach:
 
 - App Services:
-  - Rejestrowanie błędów jest automatycznie przesyłany do D:\Home\LogFiles\eventlog.xml, są oznaczone zdarzenia `<Provider Name="Instrumentation Engine" />` lub "Produkcyjne punkty przerwania"
-- VM/VMSS:
-  - Zaloguj się do maszyny Wirtualnej, a następnie otwórz Podgląd zdarzeń.
-  - Otwórz następujący widok: *Dzienniki Windows > Aplikacja*.
-  - *Filtruj bieżący dziennik* przez *źródła zdarzeń* za pomocą *punktów przerwania w środowisku produkcyjnym* lub *aparatu Instrumentacji*.
+  - Rejestrowanie błędów jest wysyłane automatycznie do D:\Home\LogFiles\eventlog.XML, zdarzenia są oznaczane `<Provider Name="Instrumentation Engine" />` za pomocą lub "punktami przerwania produkcyjnego"
+- MASZYNA WIRTUALNA/VMSS:
+  - Zaloguj się do maszyny wirtualnej i Otwórz Podgląd zdarzeń.
+  - Otwórz następujący widok: *Dzienniki systemu Windows > aplikacji*.
+  - *Filtruj bieżący dziennik* według *źródła zdarzeń* przy użyciu *punktów przerwania produkcji* lub *aparatu oprzyrządowania*.
 - AKS
-  - Instrumentacja aparatu rejestrowania na /tmp/diag/log.txt (ustawiana MicrosoftInstrumentationEngine_FileLogPath w pliku DockerFile)
-  - Rejestrowanie ProductionBreakpoint na /tmp/diag/shLog.txt
+  - Rejestrowanie aparatu Instrumentacji w lokalizacji/tmp/diag/log.txt (Ustaw MicrosoftInstrumentationEngine_FileLogPath w pliku dockerfile)
+  - Rejestrowanie ProductionBreakpoint w/tmp/diag/shLog.txt
 
 ## <a name="known-issues"></a>Znane problemy
 
@@ -219,8 +219,8 @@ Debugowanie migawki i usługi Application Insights są zależne od ICorProfiler,
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Debugowanie na żywo aplikacji ASP.NET, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md)
-- [Debugowanie na żywo ASP.NET Azure wirtualnego Machines\Virtual maszyn Scale Sets przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
-- [Debugowanie na żywo ASP.NET Azure Kubernetes za pomocą rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
+- [Debuguj zestawy skalowania maszyn wirtualnych ASP.NET platformy Azure na żywo przy użyciu Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Debuguj Live ASP.NET Azure Kubernetes przy użyciu Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
 - [Debugowanie migawek — często zadawane pytania](../debugger/debug-live-azure-apps-faq.md)

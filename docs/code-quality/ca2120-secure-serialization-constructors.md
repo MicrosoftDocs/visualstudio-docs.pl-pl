@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc7f4a82b9a75e4d189e969712472f06b4019b73
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 38de3597d3693b072fec12f64211af4469851627
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920879"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232542"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Zabezpiecz konstruktory serializacji
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920879"
 |TypeName|SecureSerializationConstructors|
 |CheckId|CA2120|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejs, nie jest delegatem lub interfejsem i jest zadeklarowany w zestawie, który zezwala częściowo zaufanym obiektom wywołującym. Typ ma konstruktora, który przyjmuje <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> obiekt <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> i obiekt (podpis konstruktora serializacji). Ten konstruktor nie jest zabezpieczony przez sprawdzanie zabezpieczeń, ale co najmniej jeden z zwykłych konstruktorów w typie jest zabezpieczony.

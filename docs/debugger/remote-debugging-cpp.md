@@ -1,5 +1,5 @@
 ---
-title: Zdalne debugowanie projektu Visual C++ | Dokumentacja firmy Microsoft
+title: Debugowanie zdalne projektu wizualnego C++ | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903531"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211114"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Zdalne debugowanie projektu Visual C++ w programie Visual Studio
-Debugowanie aplikacji Visual Studio na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w którym wdrożysz swoją aplikację, należy skonfigurować projekt, aby połączyć się z komputerem zdalnym z programu Visual Studio, a następnie wdrożyć i uruchomić aplikację.
+# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Debugowanie zdalne projektu wizualizacji C++ w Visual Studio
+Aby debugować aplikację programu Visual Studio na innym komputerze, zainstaluj i Uruchom narzędzia zdalne na komputerze, na którym zostanie wdrożona aplikacja, skonfiguruj projekt do łączenia się z komputerem zdalnym z programu Visual Studio, a następnie wdróż i uruchom aplikację.
 
 ![Składniki zdalnego debugera](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
@@ -52,62 +52,62 @@ Zdalny debuger jest obsługiwane w systemie Windows 7 lub nowszej (nie phone) i 
 > [!NOTE]
 > Jeśli potrzebujesz dodać uprawnienia dla dodatkowych użytkowników do zmienić tryb uwierzytelniania lub numer portu dla zdalnego debugera, zobacz [Konfigurowanie debugera zdalnego](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a> Debugowanie zdalne projektu Visual C++
- W poniższej procedurze nazwa i ścieżka projektu jest C:\remotetemp\MyMfc, a nazwa komputera zdalnego jest **MJO DL**.
+## <a name="remote_cplusplus"></a>Debugowanie zdalne projektu wizualnego C++
+ W poniższej procedurze nazwa i ścieżka projektu to C:\remotetemp\MyMfc, a nazwa komputera zdalnego to **MJO-DL**.
 
-1. Tworzenie aplikacji MFC o nazwie **mymfc.**
+1. Utwórz aplikację MFC o nazwie **mymfc.**
 
-2. Ustaw punkt przerwania gdzieś w aplikacji, które łatwo zostanie osiągnięty, na przykład w **MainFrm.cpp**, na początku `CMainFrame::OnCreate`.
+2. Ustaw punkt przerwania w aplikacji, która jest łatwo dostępna, na przykład w **MainFrm. cpp**, na początku `CMainFrame::OnCreate`.
 
-3. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz pozycję **właściwości**. Otwórz **debugowanie** kartę.
+3. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**. Otwórz kartę **debugowanie** .
 
-4. Ustaw **debuger do uruchomienia** do **zdalny debuger Windows**.
+4. Ustaw **debuger do uruchamiania** na **zdalny debuger systemu Windows**.
 
     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
 
-5. Do właściwości, należy wprowadzić następujące zmiany:
+5. Wprowadź następujące zmiany właściwości:
 
    |Ustawienie|Wartość|
    |-|-|
    |Polecenie zdalne|C:\remotetemp\mymfc.exe|
    |Katalog roboczy|C:\remotetemp|
-   |Nazwa serwera zdalnego|Listy Dystrybucyjnej MJO:*numer_portu*|
-   |Połączenie|Zdalny z uwierzytelnianiem Windows|
-   |Typ debugera|Tylko w trybie macierzystym|
+   |Nazwa serwera zdalnego|MJO-DL:*numer_portu*|
+   |Połączenie|Zdalne z uwierzytelnianiem systemu Windows|
+   |Typ debugera|Tylko natywny|
    |Katalog wdrażania|C:\remotetemp.|
    |Dodatkowe pliki do wdrożenia|C:\data\mymfcdata.txt.|
 
-    Jeśli wdrożono dodatkowe pliki (opcjonalnie), folder musi istnieć na obu komputerach.
+    W przypadku wdrażania dodatkowych plików (opcjonalnie) folder musi istnieć na obu komputerach.
 
-6. W Eksploratorze rozwiązań kliknij rozwiązanie prawym przyciskiem myszy i wybierz polecenie **programu Configuration Manager**.
+6. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy rozwiązanie i wybierz pozycję **Configuration Manager**.
 
-7. Aby uzyskać **debugowania** konfigurację, kliknij przycisk **Wdróż** pole wyboru.
+7. W obszarze Konfiguracja **debugowania** zaznacz pole wyboru **Wdróż** .
 
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
 
-8. Rozpocznij debugowanie (**Debuguj > Rozpocznij debugowanie**, lub **F5**).
+8. Rozpocznij debugowanie (**debuguj > rozpocząć debugowanie**lub **F5**).
 
-9. Plik wykonywalny jest automatycznie wdrażane na komputerze zdalnym.
+9. Plik wykonywalny jest automatycznie wdrażany na komputerze zdalnym.
 
 10. Po wyświetleniu monitu wprowadź poświadczenia sieci, aby nawiązać połączenie z komputerem zdalnym.
 
-     Wymagane poświadczenia są specyficzne dla konfiguracji zabezpieczeń w sieci. Na przykład na komputerze domeny, możesz wybrać certyfikat zabezpieczeń, lub wprowadź nazwę domeny i hasło. Na komputerze nienależących do domeny, wprowadzić nazwę komputera i prawidłową nazwę konta użytkownika, takie jak <strong>MJO-DL\name@something.com</strong>, oraz prawidłowe hasło.
+     Wymagane poświadczenia są specyficzne dla konfiguracji zabezpieczeń sieci. Na przykład na komputerze domeny można wybrać certyfikat zabezpieczeń lub podać nazwę domeny i hasło. Na komputerze nienależących do domeny, wprowadzić nazwę komputera i prawidłową nazwę konta użytkownika, takie jak <strong>MJO-DL\name@something.com</strong>, oraz prawidłowe hasło.
 
-11. Na komputerze programu Visual Studio powinien zostać wyświetlony, że wykonanie zostanie zatrzymana w punkcie przerwania.
+11. Na komputerze z Visual Studio powinno być widoczne, że wykonywanie zostało zatrzymane w punkcie przerwania.
 
     > [!TIP]
-    > Alternatywnie można rozłożyć pliki w osobnym kroku. W **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy **mymfc** węzeł, a następnie wybierz **Wdróż**.
+    > Alternatywnie można wdrożyć pliki w osobnym kroku. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł **MyMfc** **,** a następnie wybierz polecenie **Wdróż**.
 
-    Jeśli masz pliki niezawierające kodu, które są wymagane przez aplikację, można określić je w **dodatkowe pliki do wdrażania** na **zdalny debuger Windows** strony.
+    Jeśli masz pliki inne niż kod, które są wymagane przez aplikację, możesz je określić w **dodatkowych plikach do wdrożenia** na stronie **zdalnego debugera systemu Windows** .
 
-    Alternatywnie można dołączyć pliki w projekcie i ustaw **zawartości** właściwości **tak** w **właściwości** strony dla każdego pliku. Te pliki są kopiowane do **katalogu wdrażania** określono na **zdalny debuger Windows** strony. Możesz również zmienić **typu elementu** do **kopiowania pliku** i określić dodatkowe właściwości istnieje, jeśli potrzebne pliki będą kopiowane do podfolderu **katalogu wdrażania**.
+    Alternatywnie można uwzględnić pliki w projekcie i ustawić właściwość **Content** na **wartość Yes (tak** ) na stronie **Właściwości** dla każdego pliku. Te pliki są kopiowane do **katalogu wdrożenia** określonego na stronie **zdalnego debugera systemu Windows** . Możesz również zmienić **Typ elementu** na **Kopiuj plik** i określić dodatkowe właściwości tam, gdzie pliki mają być kopiowane do podfolderu **katalogu wdrożenia**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Konfigurowanie debugowania przy użyciu zdalnego symboli
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)

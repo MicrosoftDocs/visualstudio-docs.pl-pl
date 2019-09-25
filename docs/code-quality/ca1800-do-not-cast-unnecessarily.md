@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 942a9911d0dadbf5f130344735ca9aa504cb71fd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 85d168e97f422a3965096a334cb2a448406604f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921593"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233838"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Nie rzutuj niepotrzebnie
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921593"
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Metoda wykonuje duplikaty rzutowania dla jednego z jego argumentów lub zmiennych lokalnych.
@@ -41,7 +41,7 @@ Aby przeprowadzić pełną analizę według tej reguły, testowany zestaw musi b
 ## <a name="rule-description"></a>Opis reguły
 Zduplikowane rzutowania zmniejszają wydajność, zwłaszcza gdy rzutowania są wykonywane w niedużej iteracji. W przypadku jawnych zduplikowanych operacji rzutowania Zapisz wynik rzutowania w zmiennej lokalnej i Użyj zmiennej lokalnej zamiast zduplikowanych operacji rzutowania.
 
-C# Jeśli operator jest używany do sprawdzania, czy rzutowanie zakończy się powodzeniem przed wykonaniem rzeczywistego rzutowania, rozważ przetestowanie `as` wyniku `is` operatora. Zapewnia to te same funkcje bez niejawnej operacji rzutowania wykonywanej przez `is` operatora. Lub w C# 7,0 i nowszych użyć `is` operatora z dopasowywaniem do [wzorca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) , aby sprawdzić konwersję typu i rzutować wyrażenie na zmienną tego typu w jednym kroku.
+C# Jeśli operator jest używany do sprawdzania, czy rzutowanie zakończy się powodzeniem przed wykonaniem rzeczywistego rzutowania, rozważ przetestowanie `as` wyniku `is` operatora. Zapewnia to te same funkcje bez niejawnej operacji rzutowania wykonywanej przez `is` operatora. Lub w C# 7,0 i nowszych użyć `is` operatora z [dopasowywaniem do wzorca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) , aby sprawdzić konwersję typu i rzutować wyrażenie na zmienną tego typu w jednym kroku.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 Aby naprawić naruszenie tej reguły, zmodyfikuj implementację metody w celu zminimalizowania liczby operacji rzutowania.

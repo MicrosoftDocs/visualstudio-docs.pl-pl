@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f4cac83c83b47fda5cf9cde85a3e14d857d2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4107800a5623de29448a9213184dd44feed2cac9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545541"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232814"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Przejrzyj zabezpieczenia deklaratywne dla typów wartości
 
@@ -28,33 +28,33 @@ ms.locfileid: "62545541"
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Publiczny lub chroniony typ wartości jest zabezpieczony przez [dane i modelowanie](/dotnet/framework/data/index) lub [zapotrzebowania na łącza](/dotnet/framework/misc/link-demands).
+Typ wartości publicznej lub chronionej jest zabezpieczony przez żądania [danych i modelowania](/dotnet/framework/data/index) lub [łączenia](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Typy wartości są przydzielane i zainicjowany przez ich konstruktory domyślne przed innymi konstruktorów. Jeśli typ wartości jest zabezpieczony przez zapotrzebowania lub LinkDemand, a obiekt wywołujący nie ma uprawnienia, które spełniają innych niż kontrola zabezpieczeń, dowolny Konstruktor domyślny zakończy się niepowodzeniem i zostanie zgłoszony wyjątek zabezpieczeń. Typ wartości nie cofnięto przydziału; Pozostało się w stanie ustawione przez jej konstruktora domyślnego. Nie należy zakładać, że obiekt wywołujący, która przekazuje wystąpienie typu wartości ma uprawnienia do tworzenia lub dostęp do wystąpienia.
+Typy wartości są przydzielone i inicjowane przez ich domyślne konstruktory przed wykonaniem innych konstruktorów. Jeśli typ wartości jest zabezpieczony przez żądanie lub LinkDemand, a obiekt wywołujący nie ma uprawnień, które spełniają sprawdzanie zabezpieczeń, żaden Konstruktor inny niż domyślny zakończy się niepowodzeniem i zostanie zgłoszony wyjątek zabezpieczeń. Nie cofnięto przydziału typu wartości; pozostało w stanie ustawionym przez jego domyślnego konstruktora. Nie należy zakładać, że obiekt wywołujący, który przekazuje wystąpienie typu wartości, ma uprawnienia do tworzenia wystąpienia lub uzyskiwania do niego dostępu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Nie można naprawić naruszenie tej zasady, o ile nie usuniesz sprawdzanie zabezpieczeń z typu i sprawdza, czy zabezpieczenia na poziomie metody użycia w tym miejscu. Naprawianie naruszenia w ten sposób nie uniemożliwia wywołującym z niewystarczającymi uprawnieniami uzyskanie wystąpienia typu wartości. Upewnij się, że wystąpienie typu wartości w stanie domyślnym nie spowodować ujawnienie poufnych informacji i nie można używać w szkodliwy sposób.
+Nie można naprawić naruszenia tej reguły, chyba że usuniesz kontrolę zabezpieczeń z typu i użyjemy kontroli zabezpieczeń na poziomie metody w miejscu. Rozwiązanie tego naruszenia w ten sposób nie zapobiega wywołującemu z niewystarczającymi uprawnieniami do uzyskiwania wystąpień typu wartości. Należy upewnić się, że wystąpienie typu wartości w stanie domyślnym nie ujawnia informacji poufnych i nie może być używane w sposób szkodliwy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Ostrzeżenie od tej reguły można pominąć, jeśli dowolny obiekt wywołujący może uzyskać jedno wystąpienie typu wartości w stanie domyślnym bez stanowiące zagrożenie dla bezpieczeństwa.
+Można pominąć ostrzeżenie z tej reguły, jeśli każdy obiekt wywołujący może uzyskać wystąpienia typu wartości w stanie domyślnym bez zaproponowania zagrożenia bezpieczeństwa.
 
 ## <a name="example-1"></a>Przykład 1
 
-Poniższy przykład zawiera bibliotekę zawierającą typ wartości, która narusza tę regułę. `StructureManager` Typu przyjęto założenie, że obiekt wywołujący, która przekazuje wystąpienie typu wartości ma uprawnienia do tworzenia lub dostęp do wystąpienia.
+W poniższym przykładzie przedstawiono bibliotekę zawierającą typ wartości, który narusza tę regułę. `StructureManager` Typ zakłada, że obiekt wywołujący, który przekazuje wystąpienie typu wartości, ma uprawnienia do tworzenia wystąpienia lub uzyskiwania do niego dostępu.
 
 [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
 ## <a name="example-2"></a>Przykład 2
 
-Następująca aplikacja pokazuje słabość biblioteki.
+Poniższa aplikacja pokazuje słabość biblioteki.
 
 [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
 
@@ -68,5 +68,5 @@ New values SecuredTypeStructure 200 200
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zapotrzebowanie na łącza](/dotnet/framework/misc/link-demands)
+- [Wymagania dotyczące linków](/dotnet/framework/misc/link-demands)
 - [Dane i modelowanie](/dotnet/framework/data/index)

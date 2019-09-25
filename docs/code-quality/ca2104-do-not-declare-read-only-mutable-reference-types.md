@@ -1,5 +1,5 @@
 ---
-title: 'CA2104: Nie deklaruj tylko do odczytu modyfikowalnych typów referencyjnych'
+title: 'CA2104: Nie deklaruj modyfikowalnych typów referencyjnych tylko do odczytu'
 ms.date: 11/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f4f165b4b00f46b478907c9affca672b4c7f113
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545358"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232952"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Nie deklaruj modyfikowalnych typów referencyjnych tylko do odczytu
 
@@ -32,10 +32,10 @@ ms.locfileid: "62545358"
 |TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|
 |CheckId|CA2104|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 > [!NOTE]
-> CA2104 reguły jest przestarzały i zostanie usunięta w przyszłych wersjach programu Visual Studio. Nie będzie można zaimplementować jako [analizatora](roslyn-analyzers-overview.md) z powodu skomplikowane analizy, które są wymagane do określenia rzeczywistego niezmienności typu.
+> Reguła CA2104 jest przestarzała i zostanie usunięta w przyszłej wersji programu Visual Studio. Nie zostanie ona zaimplementowana jako [Analizator](roslyn-analyzers-overview.md) ze względu na skomplikowaną analizę, która jest wymagana do określenia rzeczywistego niezmienności typu.
 
 ## <a name="cause"></a>Przyczyna
 
@@ -43,25 +43,25 @@ Typ widoczny z zewnątrz zawiera widoczne na zewnątrz pole tylko do odczytu, kt
 
 ## <a name="rule-description"></a>Opis reguły
 
-Typ zmienny to typ, którego dane wystąpienia mogą być modyfikowane. <xref:System.Text.StringBuilder?displayProperty=fullName> Klasy jest przykładem typu referencji zmiennej. Zawiera elementy członkowskie, które można zmienić wartość wystąpienia klasy. Na przykład typ referencyjny niezmienne <xref:System.String?displayProperty=fullName> klasy. Po utworzeniu wystąpienia, jego wartość nigdy nie można zmienić.
+Typ zmienny to typ, którego dane wystąpienia mogą być modyfikowane. <xref:System.Text.StringBuilder?displayProperty=fullName> Klasa jest przykładem modyfikowalnego typu odwołania. Zawiera elementy członkowskie, które mogą zmienić wartość wystąpienia klasy. Przykładem niezmiennego typu odwołania jest <xref:System.String?displayProperty=fullName> Klasa. Po utworzeniu wystąpienia jego wartość nie może ulec zmianie.
 
-Modyfikator tylko do odczytu ([tylko do odczytu](/dotnet/csharp/language-reference/keywords/readonly) w C#, [tylko do odczytu](/dotnet/visual-basic/language-reference/modifiers/readonly) w języku Visual Basic i [const](/cpp/cpp/const-cpp) w języku C++) na typ referencyjny zapobiega pola z pola (lub wskaźnika w języku C++) zastępowane przez inne wystąpienie typu referencyjnego. Jednak modyfikator nie uniemożliwia dane wystąpienia pola modyfikowana za pomocą typu odwołania.
+Modyfikator tylko do odczytu ([ReadOnly](/dotnet/csharp/language-reference/keywords/readonly) w C#, [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) w Visual Basic i [const](/cpp/cpp/const-cpp) in C++) dla pola typu odwołania (lub wskaźnika w C++) zapobiega zastąpieniu pola przez inne wystąpienie typu odwołania. Modyfikator nie zapobiega jednak modyfikowaniu danych wystąpienia pola za pośrednictwem typu referencyjnego.
 
-Ta zasada może przypadkowo Pokaż naruszenie dla typu, jest rzeczywiście, niezmienne. W takiej sytuacji jest bezpieczne pominąć to ostrzeżenie.
+Ta reguła może przypadkowo pokazać naruszenie dla niezmiennego typu, w rzeczywistości. W takim przypadku można bezpiecznie pominąć to ostrzeżenie.
 
-Pola tablicy tylko do odczytu są wykluczone z tej reguły, ale zamiast tego spowodować naruszenie [CA2105: Pola tablicy nie można odczytać tylko](../code-quality/ca2105-array-fields-should-not-be-read-only.md) reguły.
+Pola tablicy tylko do odczytu są wykluczone z tej reguły, ale zamiast tego powodują naruszenie [CA2105: Pola tablicy nie powinny być tylko](../code-quality/ca2105-array-fields-should-not-be-read-only.md) do odczytu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy usunąć modyfikatora tylko do odczytu lub, jeśli istotną zmianę, Zastąp pole z typem niezmienne.
+Aby naprawić naruszenie tej zasady, Usuń modyfikator tylko do odczytu lub, jeśli istotna zmiana jest akceptowalna, Zastąp pole niezmiennym typem.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli typ pola jest niezmienny.
+Jeśli typ pola jest niezmienny, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład przedstawia deklarację pola, która powoduje naruszenie tej zasady:
+W poniższym przykładzie pokazano deklarację pola, która powoduje naruszenie tej reguły:
 
 [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CPP/ca2104-do-not-declare-read-only-mutable-reference-types_1.cpp)]
 [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CSharp/ca2104-do-not-declare-read-only-mutable-reference-types_1.cs)]

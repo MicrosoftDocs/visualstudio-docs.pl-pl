@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff77d02ef9778112f5229e8104e9a1c1a1cde87
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 33edff9b22559799cef4ad7e03058a5eb212182b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920439"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232012"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: Kod przezroczysty nie powinien ładować zestawów z tablic bajtowych
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920439"
 |TypeName|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|
 |CheckId|CA2144|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Metoda przezroczysta ładuje zestaw z tablicy bajtowej przy użyciu jednej z następujących metod:

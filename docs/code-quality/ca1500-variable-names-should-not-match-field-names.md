@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 740edb9861d2e3e758a36dfc067cb85fe4fc2c7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbc3fbeac6d01b718af2022a09bddb92e9c7c2c6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807163"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234569"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nazwy zmiennych nie powinny być zgodne z nazwami pól
 
@@ -30,20 +30,20 @@ ms.locfileid: "62807163"
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|Kategoria|Microsoft.Maintainability|
-|Zmiana kluczowa|Gdy wywoływane na parametr, który ma taką samą nazwę jako pola:<br /><br /> Niepowodujących niezgodności — Jeśli nie są widoczne pola i metody, która deklaruje parametr spoza zestawu, niezależnie od tego, wprowadzone zmiany.<br />-Istotne - po zmianie nazwy pola i są widoczne poza zestawem.<br />-Istotne — Jeśli zmienisz nazwę parametru i metody, która deklaruje ją są widoczne poza zestawem.<br /><br /> Gdy wywoływane na zmiennej lokalnej, która ma taką samą nazwę jako pola:<br /><br /> Niepowodujących niezgodności — Jeśli pola nie są widoczne spoza zestawu, niezależnie od tego, wprowadzone zmiany.<br />Niepowodujących niezgodności — Jeśli zmiana nazwy zmiennej lokalnej, a nie zmieniaj nazwy pola.<br />-Istotne — Jeśli zmieniasz nazwę pola i może być widoczny spoza zestawu.|
+|Kategoria|Microsoft. łatwość obsługi|
+|Zmiana podziału|Gdy jest uruchamiany na parametrze, który ma taką samą nazwę jak pole:<br /><br /> -Bez przerywania — Jeśli zarówno pole, jak i Metoda deklarująca parametr nie mogą być widoczne poza zestawem, niezależnie od wprowadzonej zmiany.<br />-Dzielenie — Jeśli zmienisz nazwę pola i będzie można je zobaczyć poza zestawem.<br />-Przerywanie — Jeśli zmienisz nazwę parametru i metodę, która deklaruje, może być widoczna poza zestawem.<br /><br /> Gdy jest uruchamiany w zmiennej lokalnej, która ma taką samą nazwę jak pole:<br /><br /> -Bez przerywania — Jeśli pole nie może być widoczne poza zestawem, niezależnie od wprowadzonej zmiany.<br />-Bez przerywania — Jeśli zmienisz nazwę zmiennej lokalnej i nie zmienisz nazwy pola.<br />-Dzielenie — Jeśli zmienisz nazwę pola i będzie ono widoczne poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda wystąpienia deklaruje parametr lub zmienna lokalna, których nazwa pasuje do pola wystąpienia typu deklarującego. Aby przechwytywać zmienne lokalne, które naruszają reguły, przetestowane zestawu muszą zostać skompilowane przy użyciu informacji o debugowaniu i plik bazy danych (PDB) programu skojarzone muszą być dostępne.
+Metoda wystąpienia deklaruje parametr lub zmienną lokalną, której nazwa pasuje do pola wystąpienia typu deklarującego. Aby przechwytywać lokalne zmienne naruszające regułę, testowany zestaw musi być skompilowany przy użyciu informacji debugowania, a plik bazy danych programu (. pdb) musi być dostępny.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Jeśli nazwa pola wystąpienia jest zgodna, parametr lub nazwę zmiennej lokalnej, pole wystąpienia odbywa się za pomocą `this` (`Me` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) — słowo kluczowe, gdy komputer znajduje się wewnątrz treści metody. Utrzymywanie kodu, jest łatwo zapomnieć ta różnica i przyjęto założenie, że zmienna parametr/elementu lokalnego odwołuje się do pola wystąpienia, co prowadzi do błędów. Dotyczy to zwłaszcza treści metod długiej.
+Gdy nazwa pola wystąpienia pasuje do parametru lub nazwy zmiennej lokalnej, do pola wystąpienia uzyskuje się dostęp za pomocą `this` słowa kluczowego (`Me` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) w treści metody. Podczas zachowywania kodu można łatwo zapomnieć o tej różnicy i założyć, że zmienna parametru/Local odwołuje się do pola wystąpienia, które prowadzi do błędów. Dotyczy to szczególnie długich treści metod.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Zmień nazwę parametru/zmiennej lub pola.
+Aby naprawić naruszenie tej reguły, Zmień nazwę parametru/zmiennej lub pola.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -51,7 +51,7 @@ Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład przedstawia dwa naruszenia reguły.
+W poniższym przykładzie przedstawiono dwa naruszenia reguły.
 
 [!code-vb[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/VisualBasic/ca1500-variable-names-should-not-match-field-names_1.vb)]
 [!code-csharp[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/CSharp/ca1500-variable-names-should-not-match-field-names_1.cs)]

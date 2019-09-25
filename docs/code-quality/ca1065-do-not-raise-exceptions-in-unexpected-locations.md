@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dd45410a2c928a0ffbbe827b100edd119cf59f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797487"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235247"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach
 
@@ -28,7 +28,7 @@ ms.locfileid: "62797487"
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
@@ -36,13 +36,13 @@ Metoda, od której nie oczekiwano zgłaszania wyjątków, zgłasza wyjątek.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Metody, nie oczekiwano zgłaszania wyjątków, które mogą zostać podzielone w następujący sposób:
+Metody, które nie są oczekiwane na wygenerowanie wyjątków, można podzielić w następujący sposób:
 
-- Właściwości metod Get
+- Metody get właściwości
 
-- Metody dostępu zdarzeń
+- Metody dostępu do zdarzeń
 
-- Metody Equals
+- Equals — metody
 
 - Metody GetHashCode
 
@@ -58,91 +58,91 @@ Metody, nie oczekiwano zgłaszania wyjątków, które mogą zostać podzielone w
 
 - Operatory rzutowania niejawnego
 
-W poniższych sekcjach omówiono te typy metody.
+W poniższych sekcjach omówiono te typy metod.
 
-### <a name="property-get-methods"></a>Właściwości metod Get
+### <a name="property-get-methods"></a>Metody get właściwości
 
-Właściwości są po prostu inteligentne pola. W związku z tym ich powinny zachowywać się jak możliwie pola. Nie zgłaszają wyjątki, pól i nie powinien właściwości. Jeśli właściwość, która zgłosiła wyjątek, należy wziąć pod uwagę co metody.
+Właściwości są zasadniczo polami inteligentnymi. W związku z tym powinny one zachowywać się jak najwięcej pola. Pola nie generują wyjątków i nie powinny mieć właściwości. Jeśli masz właściwość, która zgłasza wyjątek, rozważ utworzenie jej jako metody.
 
-Następujące wyjątki mogą być generowane metody get właściwości:
+Następujące wyjątki mogą być zgłaszane z metody get właściwości:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> oraz wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> oraz wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName>i wszystkie pochodne
 
-- <xref:System.ArgumentException?displayProperty=fullName> (tylko z indeksowanej get)
+- <xref:System.ArgumentException?displayProperty=fullName>(tylko ze indeksowanych Get)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (tylko z indeksowanej get)
+- <xref:System.Collections.Generic.KeyNotFoundException>(tylko ze indeksowanych Get)
 
-### <a name="event-accessor-methods"></a>Metody dostępu zdarzeń
+### <a name="event-accessor-methods"></a>Metody dostępu do zdarzeń
 
-Metod dostępu zdarzeń powinny być proste operacje, które nie zgłaszają wyjątki. Zdarzenie nie powinien zgłosić wyjątek, gdy użytkownik próbuje dodać lub usunąć program obsługi zdarzeń.
+Metody dostępu zdarzeń powinny być prostymi operacjami, które nie generują wyjątków. Zdarzenie nie powinno zgłosić wyjątku podczas próby dodania lub usunięcia programu obsługi zdarzeń.
 
-Następujące wyjątki mogą być generowane z metody dostępu zdarzeń:
+Następujące wyjątki mogą być zgłaszane z metody dostępu do zdarzeń:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> oraz wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> oraz wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName>i wszystkie pochodne
 
-- <xref:System.ArgumentException> i pochodne
+- <xref:System.ArgumentException>i pochodne
 
-### <a name="equals-methods"></a>Metody Equals
+### <a name="equals-methods"></a>Equals — metody
 
-Następujące **jest równa** metody nie powinna zgłaszać wyjątków:
+Następujące metody **równości** nie powinny generować wyjątków:
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-**Jest równa** metoda powinna zwrócić `true` lub `false` zamiast zgłaszać wyjątek. Na przykład, jeśli jest równa przechodzi przez dwa typy niezgodne powinna tylko zwrócić `false` zamiast zgłaszać <xref:System.ArgumentException>.
+Metoda **Equals** powinna zwracać `true` lub `false` zamiast zgłaszać wyjątek. Na przykład, jeśli wartość Equals jest przenoszona dwa niezgodne typy, należy po `false` prostu zwrócić zamiast <xref:System.ArgumentException>wyrzucać.
 
 ### <a name="gethashcode-methods"></a>Metody GetHashCode
 
-Następujące **GetHashCode** metody zazwyczaj powinien nie generuje wyjątków:
+Następujące metody **GetHashCode** zazwyczaj nie generują wyjątków:
 
 - <xref:System.Object.GetHashCode%2A>
 
 - <xref:System.Collections.IEqualityComparer.GetHashCode%2A>
 
-**GetHashCode** zawsze powinna zwrócić wartość. W przeciwnym razie może utracić elementów w tabeli wyznaczania wartości skrótu.
+**GetHashCode** zawsze powinna zwracać wartość. W przeciwnym razie można utracić elementy w tabeli skrótów.
 
-Wersje **GetHashCode** które trwają argument może zgłosić <xref:System.ArgumentException>. Jednak **Object.GetHashCode** powinno nigdy nie zgłasza wyjątku.
+Wersje **GetHashCode** , które przyjmują argument, mogą zgłosić <xref:System.ArgumentException>. Jednak **obiekt. GetHashCode** nigdy nie powinien zgłosić wyjątku.
 
 ### <a name="tostring-methods"></a>Metody ToString
 
-Debuger używa <xref:System.Object.ToString%2A?displayProperty=fullName> ułatwia wyświetlanie informacji o obiektach w formacie ciągu. W związku z tym **ToString** nie należy zmieniać stan obiektu i jego nie powinien zgłaszać wyjątki.
+Debuger używa <xref:System.Object.ToString%2A?displayProperty=fullName> do wyświetlania informacji o obiektach w formacie ciągu. W związku z tym **ToString** nie powinien zmieniać stanu obiektu i nie powinien zgłaszać wyjątków.
 
 ### <a name="static-constructors"></a>Konstruktory statyczne
 
-Zgłaszanie wyjątków z konstruktora statycznego powoduje, że typ bezużyteczne w bieżącej domenie aplikacji. Należy dobrze przemyślane (na przykład problem z zabezpieczeniami) dla zostanie zgłoszony wyjątek w konstruktorze statycznym.
+Wyrzucanie wyjątków od konstruktora statycznego powoduje, że typ nie będzie bezużyteczny w bieżącej domenie aplikacji. Aby zgłaszać wyjątek z konstruktora statycznego, należy mieć dobrą przyczynę (na przykład problem z zabezpieczeniami).
 
 ### <a name="finalizers"></a>Finalizatory
 
-Zostanie zgłoszony wyjątek z finalizatora powoduje, że CLR szybkie, nie powiedzie się, które zniszczy procesu. W związku z tym zgłaszanie wyjątków w finalizator zawsze należy unikać.
+Zgłaszanie wyjątku od finalizatora powoduje, że środowisko CLR może szybko zakończyć pracę, co spowoduje rozbicie procesu. W związku z tym, należy zawsze unikać zgłaszania wyjątków w finalizatorze.
 
 ### <a name="dispose-methods"></a>Metody Dispose
 
-A <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metody nie powinien zgłosić wyjątek. Dispose jest często określane jako część logiki oczyszczania w `finally` klauzuli. W związku z tym, jawnie zostanie zgłoszony wyjątek od metody Dispose wymusza użytkownikowi dodanie obsługi wewnątrz wyjątków `finally` klauzuli.
+<xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Metoda nie powinna zgłosić wyjątku. Metoda Dispose jest często wywoływana jako część logiki oczyszczania w `finally` klauzuli. W związku z tym jawne zgłaszanie wyjątku z metody Dispose wymusza, aby użytkownik dodał obsługę `finally` wyjątków wewnątrz klauzuli.
 
-**Dispose(false)** ścieżka kodu powinno nigdy nie zgłaszają wyjątki, ponieważ usuwania prawie zawsze jest wywoływany z finalizatora.
+Ścieżka kodu **Dispose (false)** nigdy nie powinna zgłaszać wyjątków, ponieważ metoda Dispose jest niemal zawsze wywoływana z finalizatora.
 
-### <a name="equality-operators--"></a>Operatory równości (==,! =)
+### <a name="equality-operators--"></a>Operatory równości (= =,! =)
 
-Takie jak metody Equals, operatory równości powinna zwracać albo `true` lub `false`i nie powinna zgłaszać wyjątków.
+Podobnie jak metody Equals, operatory równości powinny zwracać `true` lub `false`i nie powinny zgłaszać wyjątków.
 
 ### <a name="implicit-cast-operators"></a>Operatory rzutowania niejawnego
 
-Ponieważ użytkownik jest często świadomości, operator rzutowania niejawne został wywołany, wyjątek zgłoszony przez operator niejawne rzutowanie jest nieoczekiwany. W związku z tym bez wyjątków powinny być wyrzucanych z operatorów rzutowania niejawnego.
+Ponieważ użytkownik często nie jest świadomy, że wywołano operator rzutowania niejawnego, nieoczekiwany wyjątek zgłoszony przez niejawnego operatora rzutowania. W związku z tym nie należy zgłaszać wyjątków z niejawnych operatorów rzutowania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Dla metody pobierające albo zmień logikę, tak, aby nie ma już zgłoszenie wyjątku lub zmień wartość właściwości do metody.
+W przypadku metod pobierających właściwości Zmień logikę, tak aby nie było już konieczne zgłaszanie wyjątku, lub zmień właściwość na metodę.
 
-Dla wszystkich innych metoda typów wymienionych powyżej Zmień logikę, tak, aby już nie należy go zgłosić wyjątek.
+Dla wszystkich innych typów metod wymienionych wcześniej Zmień logikę, tak aby nie musiała już zgłosić wyjątku.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jeśli naruszenie zostało spowodowane przez deklaracji wyjątku zamiast zgłoszony wyjątek, jest bezpieczne Pomijaj ostrzeżeń dla tej reguły.
+Jeśli naruszenie zostało spowodowane przez deklarację wyjątku zamiast zgłoszonego wyjątku, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
 

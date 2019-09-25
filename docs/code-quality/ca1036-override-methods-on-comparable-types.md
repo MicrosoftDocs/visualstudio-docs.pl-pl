@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4e04e1afdbecdc9c333ea43a52bff3123d448a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: be340314afe36f3a930474f345715965f566b2d4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547622"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236003"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Przesłaniaj metody porównywalnych typów
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547622"
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 

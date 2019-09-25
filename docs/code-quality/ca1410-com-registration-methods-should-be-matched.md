@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a424e3c884d47b7deb848b418fbf0f3344d6c379
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714734"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234736"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Metody rejestracji modelu COM powinny mieć swoje odpowiedniki
 
@@ -30,20 +30,20 @@ ms.locfileid: "66714734"
 |-|-|
 |TypeName|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
-|Kategoria|Microsoft.Interoperability|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. współdziałanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ deklaruje metodę, która jest oznaczona za pomocą <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atrybutu, ale nie deklaruje metody oznaczonej za pomocą <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atrybut, lub na odwrót.
+Typ deklaruje metodę, która jest oznaczona <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atrybutem, ale nie deklaruje metody, która jest oznaczona atrybutem lub na <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> odwrót.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Dla klientów Component Object Model (COM), aby utworzyć typ architektury .NET najpierw należy zarejestrować typu. Jeśli jest dostępna, metody, która jest oznaczona za pomocą <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atrybutu jest wywoływana podczas procesu rejestracji, aby uruchomić kod określony przez użytkownika. Odpowiedniej metody, która jest oznaczona za pomocą <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atrybutu jest wywoływana podczas proces wyrejestrowania w celu odwrócenia operacji metodę rejestracji.
+W przypadku klientów Component Object Model (COM) do tworzenia typu .NET należy najpierw zarejestrować typ. Jeśli jest dostępna, metoda oznaczona <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atrybutem jest wywoływana podczas procesu rejestracji w celu uruchomienia kodu określonego przez użytkownika. Odpowiadająca metoda oznaczona <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atrybutem jest wywoływana podczas procesu wyrejestrowywania, aby wycofać operacje metody rejestracji.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy dodać odpowiadającej rejestracji lub metodę wyrejestrowania.
+Aby naprawić naruszenie tej reguły, Dodaj odpowiednią metodę rejestracji lub wyrejestrowywania.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -51,17 +51,17 @@ Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład pokazuje typ, który narusza regułę. Komentarze kod przedstawia poprawkę dotyczącą naruszenia.
+Poniższy przykład pokazuje typ, który narusza regułę. Kod z komentarzem pokazuje poprawkę dla naruszenia.
 
 [!code-csharp[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/CSharp/ca1410-com-registration-methods-should-be-matched_1.cs)]
 [!code-vb[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/VisualBasic/ca1410-com-registration-methods-should-be-matched_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA1411: Metody rejestracji modelu COM nie powinny być widoczne](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+[CA1411 Metody rejestracji modelu COM nie powinny być widoczne](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
-- [Rejestrowanie zestawów z modelem COM](/dotnet/framework/interop/registering-assemblies-with-com)
+- [Rejestrowanie zestawów przy użyciu modelu COM](/dotnet/framework/interop/registering-assemblies-with-com)
 - [Regasm.exe (narzędzie rejestracji zestawów)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

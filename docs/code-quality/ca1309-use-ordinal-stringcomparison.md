@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c528266c54bbb2f3f0d9420461d700a46b09bd5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eff846cfacb30d97c28cadd14b86f7724b1d2ce4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922282"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234938"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Użyj porządkowego ustawienia właściwości StringComparison
 
@@ -28,11 +28,11 @@ ms.locfileid: "68922282"
 |TypeName|UseOrdinalStringComparison|
 |CheckId|CA1309|
 |Kategoria|Microsoft. Globalizacja|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Operacja porównywania ciągów, która nie jest językiem, nie <xref:System.StringComparison> ustawia parametru na wartość porządkową lub **OrdinalIgnoreCase**.
+Operacja porównywania ciągów, która nie jest językiem, nie <xref:System.StringComparison> ustawia parametru na wartość **porządkową** lub **OrdinalIgnoreCase**.
 
 ## <a name="rule-description"></a>Opis reguły
 Wiele operacji na <xref:System.String.Compare%2A?displayProperty=fullName> ciągach, co jest najważniejszymi metodami i <xref:System.String.Equals%2A?displayProperty=fullName> , zapewnia teraz Przeciążenie, <xref:System.StringComparison?displayProperty=fullName> które akceptuje wartość wyliczenia jako parametr.

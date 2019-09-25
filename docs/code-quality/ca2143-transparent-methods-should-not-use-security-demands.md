@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 532a10740b0617f32e4f970da8dc2a7e2807f792
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a182beba738e583fad83c3f51d7efa312761906d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920469"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231984"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Metody przezroczyste nie powinny używać żądań zabezpieczeń
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920469"
 |TypeName|TransparentMethodsShouldNotDemand|
 |CheckId|CA2143|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Typ tranparent lub metoda jest deklaratywnie oznaczona z <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` zapotrzebowaniem <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> lub metoda wywołuje metodę.

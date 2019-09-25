@@ -1,5 +1,5 @@
 ---
-title: Debugowanie, opcje ― Okno dialogowe | Dokumentacja firmy Microsoft
+title: Debugowanie, Opcje — okno dialogowe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a6a6d8312dba4ae89e773fc2be8fa0b9984e0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fc11269713770bbc1950d8f15626936ddd2174f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851650"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211142"
 ---
 # <a name="debugging-options-dialog-box"></a>Debugowanie, opcje ― Okno dialogowe
-**Debugowanie** folder, w **opcje** okno dialogowe na **narzędzia** menu, zawiera następujące stron, które umożliwiają określenie debugera opcje narzędzia.
+Folder **debugowanie** w oknie dialogowym **Opcje** w menu **Narzędzia** zawiera następujące strony, które umożliwiają określenie opcji narzędzia debugera.
 
 - [Ogólne, Debugowanie, Opcje, okno dialogowe](../debugger/general-debugging-options-dialog-box.md)
 
@@ -37,10 +37,10 @@ ms.locfileid: "62851650"
 
 - [Okno Dane wyjściowe, Debugowanie, Opcje, okno dialogowe](../debugger/output-window-debugging-options-dialog-box.md)
 
-- [Symbole, debugowanie, opcje — Okno dialogowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Symbole, debugowanie, Opcje — okno dialogowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Debugowanie odwołań do interfejsu użytkownika](../debugger/debugging-user-interface-reference.md)

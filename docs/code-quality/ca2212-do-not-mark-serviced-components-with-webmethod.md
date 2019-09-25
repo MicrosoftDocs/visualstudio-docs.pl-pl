@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a47b7e703d811ff5dce421db103af89bb3a76512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b2ace5f6e51fc7a8d29faab14cc2332fd808f93
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796439"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231656"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: Nie oznaczaj składników usługi atrybutem WebMethod
 
@@ -28,23 +28,23 @@ ms.locfileid: "62796439"
 |TypeName|DoNotMarkServicedComponentsWithWebMethod|
 |CheckId|CA2212|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda w typie, który dziedziczy z <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> jest oznaczona za pomocą <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.
+Metoda w typie, który dziedziczy z <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> , jest oznaczona za pomocą. <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Opis reguły
 
-<xref:System.Web.Services.WebMethodAttribute> ma zastosowanie do metody w ramach usługi sieci web XML, które zostały utworzone za pomocą programu ASP.NET; zapewnia metody wywoływane przez klientów sieci web do zdalnego. Metody i klasy musi być publiczny i wykonywanie w aplikacji sieci web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent> typy są hostowane przez aplikacji modelu COM + i mogą używać usług COM +. <xref:System.Web.Services.WebMethodAttribute> nie ma zastosowania do <xref:System.EnterpriseServices.ServicedComponent> typów, ponieważ nie są przeznaczone dla tych samych scenariuszy. W szczególności Dodawanie atrybutu do <xref:System.EnterpriseServices.ServicedComponent> metody nie oznacza, że metody wywoływane przez klientów sieci web do zdalnego. Ponieważ <xref:System.Web.Services.WebMethodAttribute> i <xref:System.EnterpriseServices.ServicedComponent> metody mają konflikt zachowania i wymagania dotyczące kontekstu i przepływu transakcji, zachowanie metod będzie niepoprawne w niektórych scenariuszach.
+<xref:System.Web.Services.WebMethodAttribute>dotyczy metod w usłudze sieci Web XML, które zostały utworzone przy użyciu ASP.NET; sprawia, że metoda jest wywoływana z zdalnych klientów sieci Web. Metoda i Klasa muszą być publiczne i wykonywane w aplikacji sieci Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent>typy są obsługiwane przez aplikacje COM+ i mogą korzystać z usług COM+. <xref:System.Web.Services.WebMethodAttribute>nie ma zastosowania do <xref:System.EnterpriseServices.ServicedComponent> typów, ponieważ nie są one przeznaczone do tych samych scenariuszy. W celu dodania atrybutu do <xref:System.EnterpriseServices.ServicedComponent> metody nie można wywołać metody z zdalnych klientów sieci Web. Ponieważ <xref:System.Web.Services.WebMethodAttribute> Metoda ma sprzeczne zachowania i wymagania dotyczące przepływu kontekstu i transakcji, zachowanie metody będzie nieprawidłowe w niektórych scenariuszach. <xref:System.EnterpriseServices.ServicedComponent>
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, usuń atrybut z <xref:System.EnterpriseServices.ServicedComponent> metody.
+Aby naprawić naruszenie tej reguły, Usuń atrybut z <xref:System.EnterpriseServices.ServicedComponent> metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły. Istnieje nie scenariuszy, w którym połączenie tych elementów jest poprawna.
+Nie pomijaj ostrzeżeń dla tej reguły. Nie ma żadnych scenariuszy, w których łączenie tych elementów jest poprawne.
 
 ## <a name="see-also"></a>Zobacz także
 

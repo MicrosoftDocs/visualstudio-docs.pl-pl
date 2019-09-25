@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d29eb9475d48e634766df65836162d6a79fed77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e671deab060346bb998932495e5590f19945eaa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808413"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233103"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Używaj klasy SafeHandle w celu hermetyzacji zasobów natywnych
 
@@ -28,27 +28,27 @@ ms.locfileid: "62808413"
 |TypeName|UseSafeHandleToEncapsulateNativeResources|
 |CheckId|CA2006|
 |Kategoria|Microsoft.Reliability|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Zarządzany kod używa <xref:System.IntPtr> dostęp do zasobów natywnych.
+Kod zarządzany używa <xref:System.IntPtr> do uzyskiwania dostępu do zasobów natywnych.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Korzystanie z `IntPtr` w kodzie zarządzanym może wskazywać na potencjalny problem zabezpieczeń i niezawodności. Wszystkie przypadki użycia `IntPtr` muszą być przejrzane w celu określenia czy użytkowania <xref:System.Runtime.InteropServices.SafeHandle> , lub podobnej technologii jest wymagany w tym miejscu. Problemy z wystąpi `IntPtr` reprezentuje niektóre zasobu natywnego, takich jak pamięć, dojścia do pliku lub gniazdo, że kod zarządzany jest uważany za własne. Jeśli kod zarządzany jest właścicielem zasobu, jego również zwolnić macierzystymi zasobami, które są skojarzone z nią, ponieważ niewykonanie tej czynności mogłoby spowodować wycieki zasobów.
+`IntPtr` Użycie w kodzie zarządzanym może wskazywać na potencjalny problem z zabezpieczeniami i niezawodnością. Wszystkie zastosowania programu `IntPtr` muszą zostać zweryfikowane w celu ustalenia, czy w <xref:System.Runtime.InteropServices.SafeHandle> jego miejscu wymagane jest użycie lub Podobna technologia. Występują problemy, jeśli `IntPtr` reprezentuje jakiś zasób natywny, taki jak pamięć, dojście do pliku lub gniazdo, że kod zarządzany jest traktowany jako własny. Jeśli zarządzany kod jest właścicielem zasobu, musi również zwolnić natywne skojarzone z nim zasoby, ponieważ nie spowoduje to powstania wycieku zasobów.
 
-W takich przypadkach problemy z zabezpieczeniami lub niezawodność będą dostępne są także jeśli dostęp do wielu wątków może być `IntPtr` i sposób przy zwalnianiu zasobów, który jest reprezentowany przez `IntPtr` podano. Te problemy obejmują recyklingu `IntPtr` wartość w wersji zasobu w trakcie jednoczesne użycie zasobów w innym wątku. Może to spowodować sytuacje wyścigu, gdzie jeden wątek może odczytu lub zapisu danych, który jest skojarzony z niewłaściwego zasobu. Na przykład, jeśli danego typu przechowuje dojście systemu operacyjnego jako `IntPtr` . Umożliwia ono użytkownikom wywołać oba **Zamknij** i innych metod, które używa dojścia równocześnie, jak i bez pewnego rodzaju synchronizacji, kod ma uchwyt odtwarzania Wystąpił problem.
+W takich scenariuszach istnieją również problemy z zabezpieczeniami lub niezawodnością, jeśli dostęp wielowątkowy jest dozwolony do `IntPtr` i w sposób umożliwiający zwolnienie zasobu reprezentowanego `IntPtr` przez program. Te problemy obejmują odtwarzanie `IntPtr` wartości w wydaniu zasobów podczas jednoczesnego używania zasobu w innym wątku. Może to spowodować sytuacje wyścigu, w których jeden wątek może odczytywać lub zapisywać dane skojarzone z niewłaściwym zasobem. Na przykład, jeśli typ przechowuje dojście systemu operacyjnego jako `IntPtr` i umożliwia użytkownikom wywoływanie zarówno **zamknięcia** , jak i innej metody, która używa tego uchwytu jednocześnie i bez pewnego rodzaju synchronizacji, kod ma problem z odtwarzaniem obsługi.
 
-Tego dojścia do odtwarzania problem może spowodować uszkodzenie danych, a często luki w zabezpieczeniach. `SafeHandle` i jego klasa element równorzędny <xref:System.Runtime.InteropServices.CriticalHandle> mechanizm do hermetyzacji natywnych dojście do zasobu, dzięki czemu można uniknąć tych problemów wątków. Ponadto można użyć `SafeHandle` i jego klasa element równorzędny `CriticalHandle` dla innych wątków problemów, na przykład dokładnie kontrolować okres istnienia zarządzanych obiektów, które zawierają kopię uchwyt macierzysty za pośrednictwem wywołania metod natywnych. W takiej sytuacji można często wyeliminować wywołania `GC.KeepAlive`. Zmniejszenie wydajności, która wiąże się, gdy używasz `SafeHandle` i w mniejszym stopniu `CriticalHandle`, często można zmniejszyć za pomocą zachowania ostrożności podczas projektowania.
+Ten problem z odtwarzaniem obsłudze może spowodować uszkodzenie danych i często lukę w zabezpieczeniach. `SafeHandle`i jej klasy <xref:System.Runtime.InteropServices.CriticalHandle> równorzędnej zapewniają mechanizm hermetyzowania natywnego uchwytu do zasobu, co pozwala uniknąć takich problemów z wątkami. Ponadto można użyć `SafeHandle` klasy `CriticalHandle` i jej elementów równorzędnych do innych problemów związanych z wątkami, na przykład w celu starannej kontroli okresu istnienia zarządzanych obiektów, które zawierają kopię natywnego uchwytu w przypadku wywołań metod natywnych. W takiej sytuacji często można usunąć wywołania do `GC.KeepAlive`. Narzuty wydajności, które naliczane podczas `SafeHandle` korzystania z i, w mniejszym `CriticalHandle`stopniu, mogą być często ograniczone poprzez staranne projektowanie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Konwertuj `IntPtr` wykorzystania `SafeHandle` bezpieczne zarządzanie dostępem do zasobów natywnych. Zobacz <xref:System.Runtime.InteropServices.SafeHandle> artykuł dokumentacji, przykładów.
+Konwertuj `IntPtr` użycie na `SafeHandle` , aby bezpiecznie zarządzać dostępem do zasobów natywnych. Przykłady można znaleźć w artykule referencyjnym.<xref:System.Runtime.InteropServices.SafeHandle>
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie Pomijaj to ostrzeżenie.
+Nie pomijaj tego ostrzeżenia.
 
 ## <a name="see-also"></a>Zobacz także
 

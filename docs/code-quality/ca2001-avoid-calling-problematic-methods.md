@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abef0067a58225eea6110d4cc2f7257bc605463
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95209067f3821b6446b64dc7990e189720d20cea
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808390"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233193"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Unikaj wywoływania problematycznych metod
 
@@ -28,7 +28,7 @@ ms.locfileid: "62808390"
 |TypeName|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
 |Kategoria|Microsoft.Reliability|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
@@ -36,23 +36,23 @@ Element członkowski wywołuje potencjalnie niebezpieczną lub problematyczną m
 
 ## <a name="rule-description"></a>Opis reguły
 
-Unikaj niepotrzebnych i potencjalnie niebezpiecznych metody wywołań. Naruszenie tej reguły występuje, gdy element członkowski wywołuje jedną z następujących metod:
+Unikaj tworzenia niepotrzebnych i potencjalnie niebezpiecznych wywołań metod. Naruszenie tej reguły występuje, gdy element członkowski wywołuje jedną z następujących metod:
 
 |Metoda|Opis|
 |------------|-----------------|
-|<xref:System.GC.Collect%2A?displayProperty=fullName>|Wywoływanie GC. Zbierz może znacząco wpłynąć na wydajność aplikacji i jest niepotrzebna. Aby uzyskać więcej informacji, zobacz [kąski: wydajność Rico Mariani](http://go.microsoft.com/fwlink/?LinkId=169256) wpis w blogu w witrynie MSDN.|
-|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend i Thread.Resume zostały wycofane z powodu ich nieprzewidywalne zachowanie.  Użyj innych klas w <xref:System.Threading> przestrzeni nazw, takich jak <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, i <xref:System.Threading.Semaphore>, aby zsynchronizować wątków lub chronić zasoby.|
-|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Metoda DangerousGetHandle stanowi zagrożenie bezpieczeństwa, ponieważ może zwracać uchwyt, który jest nieprawidłowy. Zobacz <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> i <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> metody, aby uzyskać więcej informacji o tym, jak użyć tej metody DangerousGetHandle bezpiecznie.|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Te metody mogą ładować zestawów z nieoczekiwanych lokalizacjach. Na przykład zobacz wpisy w blogu .NET CLR uwagi Suzanne Cooka [funkcję LoadFile programu vs. LoadFrom —](http://go.microsoft.com/fwlink/?LinkId=164450) i [Wybieranie kontekstu powiązania](http://go.microsoft.com/fwlink/?LinkId=164451) informacji o metodach, które ładują zestawów.|
-|[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [Funkcję CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|Przy uruchomieniu kodu użytkownika wykonywane w procesie zarządzanego jest za późno niezawodny sposób będą wywoływać CoSetProxyBlanket. Środowisko uruchomieniowe języka wspólnego (CLR) ma akcje inicjowania, które mogą uniemożliwić pomyślne wykonanie użytkowników P/Invoke.<br /><br /> W przypadku wywołania CoSetProxyBlanket zarządzanej aplikacji, zalecamy rozpocząć proces przy użyciu pliku wykonywalnego kod natywny (C++), wywołania CoSetProxyBlanket w kodzie natywnym, a następnie uruchom aplikację z kodu zarządzanego w procesie. (Pamiętaj określić numer wersji środowiska uruchomieniowego.)|
+|<xref:System.GC.Collect%2A?displayProperty=fullName>|Wywoływanie GC. Zbieranie danych może znacząco wpłynąć na wydajność aplikacji i jest rzadko konieczne. Aby uzyskać więcej informacji, zobacz wpis w blogu [Mariani Performance smakowite kąski](http://go.microsoft.com/fwlink/?LinkId=169256) w witrynie MSDN.|
+|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Wątki. Suspend i Thread. Resume są przestarzałe ze względu na nieprzewidywalne zachowanie.  Użyj <xref:System.Threading> innych klas w przestrzeni nazw, takich jak <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, i <xref:System.Threading.Semaphore>, aby synchronizować wątki lub chronić zasoby.|
+|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Metoda DangerousGetHandle stanowi zagrożenie bezpieczeństwa, ponieważ może zwrócić dojście, które jest nieprawidłowe. <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> Zobacz<xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> i metody, aby uzyskać więcej informacji na temat bezpiecznego używania metody DangerousGetHandle.|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Te metody mogą ładować zestawy z nieoczekiwanych lokalizacji. Na przykład zapoznaj się z wpisami [w blogu Suzanne programu .NET CLR uwagi dotyczące języka LoadFile a Metody](http://go.microsoft.com/fwlink/?LinkId=164450) LoadFrom i [wybierania kontekstu powiązania](http://go.microsoft.com/fwlink/?LinkId=164451) dla informacji o metodach ładujących zestawy.|
+|[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) Mechanizm<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) Mechanizm|Przez czas, gdy kod użytkownika zaczyna wykonywanie w procesie zarządzanym, jest zbyt późno na niezawodne wywoływanie CoSetProxyBlanket. Środowisko uruchomieniowe języka wspólnego (CLR) wykonuje akcje inicjowania, które mogą uniemożliwiać pomyślne wywoływanie P/Invoke użytkowników.<br /><br /> Jeśli musisz wywołać CoSetProxyBlanket dla aplikacji zarządzanej, zalecamy uruchomienie procesu przy użyciu kodu natywnego (C++), wywołanie CoSetProxyBlanket w kodzie natywnym, a następnie uruchomienie aplikacji kodu zarządzanego w procesie. (Pamiętaj o określeniu numeru wersji środowiska uruchomieniowego).|
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, usuń lub Zastąp wywołanie niebezpieczną lub problematyczną metodę.
+Aby naprawić naruszenie tej zasady, Usuń lub Zastąp wywołanie metody niebezpieczne lub problematyczne.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Wiadomości od tej reguły ma pomijać tylko wtedy, gdy nie alternatywy dla problematycznego metody są dostępne.
+Komunikaty z tej reguły należy pomijać tylko wtedy, gdy nie są dostępne żadne alternatywy dla problematycznej metody.
 
 ## <a name="see-also"></a>Zobacz także
 

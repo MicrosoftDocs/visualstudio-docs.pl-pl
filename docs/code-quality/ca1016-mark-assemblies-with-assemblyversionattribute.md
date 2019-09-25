@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e09a670ac85d37bc2c0297201db93462f64ca1
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 140037b025db88230762bc0d540d933cec7a5119
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714458"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236310"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Oznacz zestawy atrybutem AssemblyVersion
 
@@ -32,7 +32,7 @@ ms.locfileid: "66714458"
 |TypeName|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
@@ -48,21 +48,21 @@ Tożsamość zestawu składa się z następujących informacji:
 
 - Kultura
 
-- Klucz publiczny (w przypadku zestawów o silnej nazwie).
+- Klucz publiczny (dla zestawów o silnych nazwach).
 
-.NET używa numeru wersji, aby jednoznacznie zidentyfikować zestaw i powiązać z typami w zestawach o silnej nazwie. Numer wersji jest używany razem z zasadami wersji i wydawcy. Domyślnie aplikacje są uruchamiane tylko z wersji zestawu, z którego zostały zbudowane.
+Platforma .NET używa numeru wersji do unikatowego identyfikowania zestawu i powiązania z typami w zestawach o silnej nazwie. Numer wersji jest używany razem z zasadami wersji i wydawcy. Domyślnie aplikacje są uruchamiane tylko z wersji zestawu, z którego zostały zbudowane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Dodaj numer wersji do zestawu przy użyciu <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> atrybutu.
+Aby naprawić naruszenie tej reguły, Dodaj numer wersji do zestawu przy użyciu <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> atrybutu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły dla zestawów, które są używane przez strony trzecie lub w środowisku produkcyjnym.
+Nie pomijaj ostrzeżenia z tej reguły dla zestawów, które są używane przez strony trzecie lub w środowisku produkcyjnym.
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie przedstawiono zestaw, który ma <xref:System.Reflection.AssemblyVersionAttribute> zastosowany.
+Poniższy przykład pokazuje zestaw, do <xref:System.Reflection.AssemblyVersionAttribute> którego zastosowano atrybut.
 
 [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
 [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]

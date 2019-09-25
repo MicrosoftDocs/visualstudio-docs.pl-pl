@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 704972127130cc7be991213249ff41212fa40676
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921291"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233268"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko interfejsu API platformy docelowej
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921291"
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
 |Kategoria|Microsoft. przenośność|
-|Zmiana kluczowa|Przerywanie — gdy jest uruchamiany z podpisem widocznego na zewnątrz elementu członkowskiego lub typu.<br /><br /> Rozdzielenie — gdy jest uruchamiany w treści metody.|
+|Zmiana podziału|Przerywanie — gdy jest uruchamiany z podpisem widocznego na zewnątrz elementu członkowskiego lub typu.<br /><br /> Rozdzielenie — gdy jest uruchamiany w treści metody.|
 
 ## <a name="cause"></a>Przyczyna
 Element członkowski lub typ używa elementu członkowskiego lub typu, który został wprowadzony w dodatku Service Pack, który nie został dołączony do platformy dostosowanej projektu.

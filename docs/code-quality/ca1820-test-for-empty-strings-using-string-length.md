@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b197cacc764f1f5472d3eb074ac89199db508408
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744651"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233429"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Testuj obecność pustych ciągów przy użyciu długości ciągu
 
@@ -28,28 +28,28 @@ ms.locfileid: "66744651"
 |TypeName|TestForEmptyStringsUsingStringLength|
 |CheckId|CA1820|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Ciąg jest porównywana do pustego ciągu za pomocą <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+Ciąg jest porównywany z ciągiem pustym przy użyciu <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Porównywanie ciągów za pomocą <xref:System.String.Length%2A?displayProperty=nameWithType> właściwości lub <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> metoda jest szybsza niż przy użyciu <xref:System.Object.Equals%2A>. Jest to spowodowane <xref:System.Object.Equals%2A> wykonuje znacznie więcej instrukcji MSIL niż albo <xref:System.String.IsNullOrEmpty%2A> lub liczbę instrukcji wykonywane w celu pobrania <xref:System.String.Length%2A> właściwości wartość i porównać go na wartość zero.
+Porównywanie ciągów przy <xref:System.String.Length%2A?displayProperty=nameWithType> użyciu właściwości <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> lub metody jest szybsze niż używanie <xref:System.Object.Equals%2A>. Jest to spowodowane <xref:System.Object.Equals%2A> wykonywaniem znacznie większej liczby instrukcji MSIL <xref:System.String.IsNullOrEmpty%2A> niż albo liczba <xref:System.String.Length%2A> instrukcji wykonanych w celu pobrania wartości właściwości i porównania jej z zerem.
 
-Dla ciągów o wartości null <xref:System.Object.Equals%2A> i `<string>.Length == 0` zachowywać się inaczej. Jeśli użytkownik próbuje pobrać wartość <xref:System.String.Length%2A> właściwości na pusty ciąg, środowisko uruchomieniowe języka wspólnego generuje <xref:System.NullReferenceException?displayProperty=fullName>. Jeśli wykonywane jest porównanie pusty ciąg pusty ciąg, środowisko uruchomieniowe języka wspólnego nie zgłasza wyjątku i zwraca `false`. Testowanie pod kątem wartości null nie znacząco wpływa na względnej wydajności dwóm metodom. Podczas określania wartości .NET Framework 2.0 lub nowszej, należy użyć <xref:System.String.IsNullOrEmpty%2A> metody. W przeciwnym razie użyj <xref:System.String.Length%2A> == 0 porównania, jeśli to możliwe.
+Dla ciągów o wartości <xref:System.Object.Equals%2A> null `<string>.Length == 0` i zachowywać się inaczej. Jeśli spróbujesz pobrać wartość <xref:System.String.Length%2A> właściwości dla ciągu o wartości null, środowisko uruchomieniowe języka wspólnego <xref:System.NullReferenceException?displayProperty=fullName>wygeneruje. Jeśli wykonujesz porównanie między ciągiem o wartości null i pustym ciągiem, środowisko uruchomieniowe języka wspólnego nie zgłasza wyjątku i zwraca wartość `false`. Testowanie dla wartości null nie ma znacząco wpływu na względną wydajność tych dwóch metod. W <xref:System.String.IsNullOrEmpty%2A> przypadku określania wartości docelowej .NET Framework 2,0 lub nowszej Użyj metody. W przeciwnym razie należy <xref:System.String.Length%2A> użyć porównania = = 0 wszędzie tam, gdzie jest to możliwe.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy zmienić wartość porównania do użycia <xref:System.String.IsNullOrEmpty%2A> metody.
+Aby naprawić naruszenie tej reguły, Zmień porównanie, aby użyć <xref:System.String.IsNullOrEmpty%2A> metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli wydajność nie ma problemu.
+Jeśli wydajność nie jest problemem, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład ilustruje różne techniki, które są używane do wyszukania pusty ciąg.
+Poniższy przykład ilustruje różne techniki, które są używane do wyszukania pustego ciągu.
 
 [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

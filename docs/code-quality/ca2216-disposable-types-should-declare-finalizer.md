@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4baee9f532c0351feeced07ce9403245ccee14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541874"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231254"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Typy możliwe do likwidacji powinny deklarować finalizator
 
@@ -28,15 +28,15 @@ ms.locfileid: "62541874"
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ, który implementuje <xref:System.IDisposable?displayProperty=fullName>i zawiera pola, które sugerują wykorzystanie zasobów niezarządzanych, nie implementuje finalizatora, zgodnie z opisem w <xref:System.Object.Finalize%2A?displayProperty=fullName>.
+Typ, który implementuje <xref:System.IDisposable?displayProperty=fullName>i ma pola, które sugerują użycie niezarządzanych zasobów, nie implementuje finalizatora, zgodnie z opisem przez <xref:System.Object.Finalize%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Naruszenie tej zasady jest zgłaszany, gdy możliwe do rozporządzania typ zawiera pola z następujących typów:
+Zgłoszono naruszenie tej reguły, jeśli typ jednorazowy zawiera pola następujących typów:
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -46,11 +46,11 @@ Naruszenie tej zasady jest zgłaszany, gdy możliwe do rozporządzania typ zawie
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy zaimplementować finalizator, który wywołuje swoje <xref:System.IDisposable.Dispose%2A> metody.
+Aby naprawić naruszenie tej reguły, zaimplementuj finalizator, który wywoła <xref:System.IDisposable.Dispose%2A> metodę.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Bezpiecznie Pomijaj ostrzeżeń dla tej reguły, jeśli typ nie implementuje <xref:System.IDisposable> na potrzeby zwalniania niezarządzanych zasobów.
+Jeśli typ nie zostanie zaimplementowany <xref:System.IDisposable> na potrzeby zwalniania niezarządzanych zasobów, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
 
@@ -60,11 +60,11 @@ Poniższy przykład pokazuje typ, który narusza tę regułę.
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA2115: Wywołaj GC. KeepAlive podczas korzystania z zasobów natywnych](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: Wywołaj metodę GC. Utrzymywanie aktywności w przypadku korzystania z zasobów natywnych](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816: Wywołaj GC. SuppressFinalize poprawnie](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Wywołaj metodę GC. SuppressFinalize prawidłowo](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
-[CA1049: Typy, które posiadają natywne zasoby powinny być usuwalne](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: Typy, które są właścicielami zasobów natywnych, powinny być jednorazowe](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
 ## <a name="see-also"></a>Zobacz także
 

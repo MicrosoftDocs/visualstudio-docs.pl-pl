@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797348"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234270"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identyfikatory nie powinny zawierać znaków podkreślenia
 
@@ -28,17 +28,17 @@ ms.locfileid: "62797348"
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Istotne — gdy wywoływane zestawów<br /><br /> Dzielenie non - zgłoszony w parametrach typu|
+|Zmiana podziału|Przerywanie — gdy są wywoływane w zestawach<br /><br /> Rozdzielenie — gdy zostanie wywołane w parametrach typu|
 
 ## <a name="cause"></a>Przyczyna
 
-Nazwa identyfikatora zawiera znak podkreślenia (\_) znaków.
+Nazwa identyfikatora zawiera znak podkreślenia (\_).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Według Konwencji nazwy identyfikatorów nie zawierają znaku podkreślenia (\_) znaków. Reguła sprawdza przestrzenie nazw, typów, elementów członkowskich i parametry.
+Według Konwencji nazwy identyfikatorów nie zawierają znaku podkreślenia (\_). Reguła sprawdza przestrzenie nazw, typy, elementy członkowskie i parametry.
 
-Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Zmniejsza to nauki, jest wymagany dla nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
+Konwencje nazewnictwa zapewniają typowy wygląd bibliotek przeznaczonych dla środowiska uruchomieniowego języka wspólnego. Zmniejsza to krzywą uczenia, która jest wymagana w przypadku nowych bibliotek oprogramowania i zwiększa zaufanie klienta, że biblioteka została opracowana przez kogoś, kto ma doświadczenie w tworzeniu kodu zarządzanego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -51,4 +51,4 @@ Nie pomijaj ostrzeżeń dla tej reguły.
 ## <a name="related-rules"></a>Powiązane reguły
 
 - [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Identyfikatory powinny różnić się przez więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1708 Identyfikatory powinny różnić się więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

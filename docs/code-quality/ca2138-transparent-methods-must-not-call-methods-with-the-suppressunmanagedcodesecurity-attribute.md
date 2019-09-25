@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 316aef3b0f1f715857fde8eaf2a6e74b1a49e40f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d88b2f5c15d51ff840cc6ff116396ffd6b5efd60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920579"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232209"
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: Metody przezroczyste nie mogą wywoływać metod z atrybutem SuppressUnmanagedCodeSecurity
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920579"
 |TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|
 |CheckId|CA2138|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Metoda przezroczysta pod względem bezpieczeństwa wywołuje metodę, która jest oznaczona <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> za pomocą atrybutu.

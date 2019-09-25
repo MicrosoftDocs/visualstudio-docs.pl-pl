@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0008767f7d37e2c088dad58a328b025f81090ad8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920801"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232451"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Opakuj podatne na przejęcie klauzule finally w zewnętrzny blok try
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920801"
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 W wersjach 1,0 i 1,1 .NET Framework `try` Metoda publiczna lub chroniona zawiera / `catch` / `finally` blok. `finally` Zostanie wyświetlony `finally` blok służący do resetowania stanu zabezpieczeń i nie jest on ujęty w bloku.

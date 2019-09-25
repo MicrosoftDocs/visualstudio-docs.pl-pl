@@ -1,5 +1,5 @@
 ---
-title: Debugowanie odwołań do interfejsu użytkownika | Dokumentacja firmy Microsoft
+title: Debugowanie odwołania do interfejsu użytkownika | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d459e1c6611fa1b20e05ba2d5bd24e23750109d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28757580b7f45e3d63cba1782f17283ad01f26c6
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852185"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211042"
 ---
 # <a name="debugging-user-interface-reference"></a>Debugowanie odwołań do interfejsu użytkownika
-Następujących okien dialogowych mogą wystąpić podczas debugowania aplikacji.
+Podczas debugowania aplikacji mogą wystąpić następujące okna dialogowe.
 
- Wiele funkcji debugera można zautomatyzować za pomocą modelu rozszerzalności programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual Studio SDK debugowania.
+ Można zautomatyzować wiele funkcji debugera przy użyciu modelu rozszerzalności programu Visual Studio. Aby uzyskać więcej informacji, zobacz zestaw SDK debugowania programu Visual Studio.
 
 - [Wybieranie punktów przerwania, okno dialogowe](../debugger/choose-breakpoints-dialog-box.md)
 
@@ -43,6 +43,6 @@ Następujących okien dialogowych mogą wystąpić podczas debugowania aplikacji
 - [Błędy i ostrzeżenia debugowania, okna dialogowe](../debugger/debugging-errors-and-warning-dialog-boxes.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Okno Polecenie](../ide/reference/command-window.md)

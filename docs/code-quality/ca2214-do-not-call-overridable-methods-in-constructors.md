@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a59346cb70269d4d2b405279fc9ea5573a879b1e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 8eb881da0a7ed243bda35079f617a314053f2d85
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546997"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231292"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Nie wywołuj w konstruktorach metod, które można przesłaniać
 
@@ -31,7 +31,7 @@ ms.locfileid: "69546997"
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 

@@ -1,5 +1,5 @@
 ---
-title: Debugowanie usług platformy Azure | Dokumentacja firmy Microsoft
+title: Debugowanie usług platformy Azure | Microsoft Docs
 ms.date: 09/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 940097c58d6c18e3be5f6659d764007b16cd4859
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563363"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211267"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Debugowanie usług platformy Azure w programie Visual Studio
 
-Visual Studio umożliwia debugowanie usług platformy Azure w różnych scenariuszach:
+Możesz użyć programu Visual Studio do debugowania usług platformy Azure w różnych scenariuszach:
 
-- Aby debugować aplikacji produkcyjnej, hostowana w usłudze Azure App Service, zobacz [debugowania na żywo aplikacji ASP.NET przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md).
+- Aby debugować aplikację produkcyjną hostowaną w Azure App Service, zobacz [debugowanie live ASP.NET Apps przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md).
 
-- Aby debugować aplikacji produkcyjnej hostowanych w maszynie wirtualnej platformy Azure lub zestawu skalowania maszyn wirtualnych platformy Azure, zobacz [debugowania na żywo maszyn wirtualnych platformy Azure w programie ASP.NET i maszyn wirtualnych platformy Azure skalowanie zestawów za pomocą rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md).
+- Aby debugować aplikację produkcyjną hostowaną na maszynie wirtualnej platformy Azure lub zestawu skalowania maszyn wirtualnych platformy Azure, zobacz [debugowanie na żywo maszyn wirtualnych ASP.NET platformy Azure i zestawów skalowania maszyn wirtualnych platformy Azure przy użyciu Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md).
 
-- Aby debugować aplikacji produkcyjnej, hostowana w usłudze Azure Kubernetes Service, zobacz [debugowania na żywo usług Kubernetes usługi Azure ASP.NET przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md).
+- Aby debugować aplikację produkcyjną hostowaną w usłudze Azure Kubernetes, zobacz [debugowanie usługi live ASP.NET Azure Kubernetes Services przy użyciu Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md).
 
-- Aby debugować aplikacji produkcyjnej za pomocą usługi Application Insights i hostowanych w usłudze Azure App Service lub Service Fabric, zobacz [debugowanie migawek wyjątków w aplikacjach .NET](/azure/application-insights/app-insights-snapshot-debugger).
+- Aby debugować aplikację produkcyjną przy użyciu Application Insights i hostowanej w Azure App Service lub Service Fabric, zobacz [debugowanie migawek na wyjątkach w aplikacjach .NET](/azure/application-insights/app-insights-snapshot-debugger).
 
-- Do zdalnego debugowania programu ASP.NET w usługach IIS (usługi Azure App Service lub Maszynie wirtualnej platformy Azure), zobacz [zdalnego debugowania platformy ASP.NET w usłudze Azure](remote-debugging-azure.md).
+- Aby ASP.NET debugowanie zdalne na serwerze IIS (Azure App Service lub na maszynie wirtualnej platformy Azure), zobacz [zdalne debugowanie ASP.NET na platformie Azure](remote-debugging-azure.md).
 
-- Do zdalnego debugowania programu ASP.NET w usłudze Azure Service Fabric, zobacz [debugowania zdalnego aplikacji usługi Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+- Aby uzyskać zdalną ASP.NET debugowania na platformie Azure Service Fabric, zobacz [debugowanie aplikacji Service Fabric zdalnej](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)

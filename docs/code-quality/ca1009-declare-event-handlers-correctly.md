@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a98ec47688f289fadba66401aca9fcee7b602cdc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e923730213ca31a4429d8547fdaaf980692f9a96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923567"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236477"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Poprawnie deklaruj procedury obsługi zdarzeń
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923567"
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Delegat, który obsługuje zdarzenie publiczne lub chronione, nie ma poprawnej sygnatury, zwracanego typu ani nazw parametrów.

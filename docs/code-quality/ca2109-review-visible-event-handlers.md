@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee5b1d92a6c7a813eea6efb409d3c2a22f68547c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 88fbd5bbe873ae8bec9a506efbdb20d3fc77a2c1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921125"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232803"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Przejrzyj widoczne procedury obsługi zdarzeń
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921125"
 |TypeName|ReviewVisibleEventHandlers|
 |CheckId|CA2109|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Wykryto publiczną lub chronioną metodę obsługi zdarzeń.

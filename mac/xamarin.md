@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872348"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211471"
 ---
 # <a name="xamarin-mobile-app-development"></a>Programowanie aplikacji mobilnych dla platformy Xamarin
 
 Najwyższej jakości pomoc techniczna dla platformy [Xamarin](/xamarin) umożliwia tworzenie rozbudowanych natywnych środowisk dla systemów Android, macOS, iOS, tvOS i watchOS. Aplikacje dla wielu platform oparte na platformie Xamarin.Forms ułatwiają współużytkowanie kodu interfejsu użytkownika opartego na języku XAML między systemami Android, iOS i macOS bez ograniczania dostępu do funkcji natywnych.
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+Hot reload języka XAML dla platformy Xamarin. Forms jest wbudowana w Visual Studio dla komputerów Mac w wersji 8,3 i nowszych. Po włączeniu tej funkcji zmiany zostaną natychmiast odzwierciedlone w uruchomionej aplikacji przy każdym zapisaniu pliku.
+
+Można włączyć funkcję dynamicznego ponownego ładowania kodu XAML, zaznaczając pole wyboru **Włącz rozszerzenie Xamarin Hot reload** w **programie Visual Studio > Preferences > Projects > Xamarin Hot reload**.
+
+Aby uzyskać więcej informacji na temat ponownego ładowania, zobacz [Przewodnik po załadowaniu kodu XAML dla platformy Xamarin. Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) w ramach dokumentacji.
 
 ## <a name="android"></a>Android
 

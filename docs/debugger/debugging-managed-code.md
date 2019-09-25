@@ -1,6 +1,6 @@
 ---
-title: Debugowanie zarządzanego kodu | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+title: Debugowanie kodu zarządzanego | Microsoft Docs
+ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,72 +16,72 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851875"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211201"
 ---
-# <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuguj kod zarządzany (C#, Visual Basic, F#, C++/CLI)
 
-W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych aplikacji lub aplikacje napisane w językach przeznaczonych środowisko uruchomieniowe języka wspólnego, takich jak Visual Basic, C# i C++. Techniki opisane w tym miejscu są techniki wysokiego poziomu. [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
+W tej sekcji opisano typowe problemy z debugowaniem i techniki dla aplikacji zarządzanych lub aplikacje w językach przeznaczonych dla środowiska uruchomieniowego języka wspólnego, takie C#jak Visual Basic C++, i/CLI. Opisane poniżej techniki są technikami wysokiego poziomu. [Najpierw Spójrz na debuger](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-[Komunikaty diagnostyczne w oknie danych wyjściowych](../debugger/diagnostic-messages-in-the-output-window.md)\
-W tym artykule opisano <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> klas, za pomocą których można napisać komunikaty czasu wykonywania, aby **dane wyjściowe** okna. Te klasy zawierają metody danych wyjściowych, które umożliwiają informacji wyjściowych bez przerywania wynik wykonywania i informacje również przerywa wykonywanie, jeśli określony warunek zakończy się niepowodzeniem.
+[Komunikaty diagnostyczne w Okno Dane wyjściowe](../debugger/diagnostic-messages-in-the-output-window.md)\
+Opisuje klasy <xref:System.Diagnostics.Trace>i, za pomocą których można zapisywać komunikaty w czasie wykonywania w oknie **danych wyjściowych.** <xref:System.Diagnostics.Debug> Te klasy obejmują metody wyjściowe, które umożliwiają włączenie informacji wyjściowych bez przerywania wykonywania i informacji wyjściowych, które również przerywają wykonywanie w przypadku niepowodzenia określonego warunku.
 
-[Potwierdzenia w zarządzanym kodzie](../debugger/assertions-in-managed-code.md)\
-W tym artykule opisano potwierdzenia w zarządzanym kodzie, których warunki, które określisz jako argumenty do badania `Assert` metody. Ponadto, ten temat zawiera przykładowy kod, informacje na temat korzystania z <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> metody klasy, zagadnienia dotyczące debugowania, jak i wydania wersji kodu, efekty uboczne assert argumentów, dostosowywanie assert zachowanie i plików konfiguracji.
+[Potwierdzenia w kodzie zarządzanym](../debugger/assertions-in-managed-code.md)\
+Opisuje potwierdzenia w kodzie zarządzanym, które warunki testowe należy określić jako argumenty `Assert` metod. Ponadto w tym temacie przedstawiono przykładowy kod, informacje na temat używania <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> metod klasy, zagadnienia dotyczące debugowania i wydań wersji kodu, efektów ubocznych, argumentów potwierdzenia, dostosowywania zachowania potwierdzenia i plików konfiguracji.
 
 [Instrukcje stop w Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
-W tym artykule opisano `Stop` instrukcji, co stanowi alternatywę dla ustawienie punktu przerwania. Przykładowy kod znajduje się również, wraz z porównania między `Stop` instrukcji i `End` instrukcji, jak również między `Stop` i `Assert` instrukcji.
+Zawiera opis `Stop` instrukcji, która stanowi alternatywę dla ustawienia punktu przerwania. Podano również przykładowy kod wraz `Stop` z porównaniami między instrukcją `End` i instrukcją, a `Assert` także między `Stop` i instrukcją.
 
-[Przewodnik: Debugowanie formularza Windows](../debugger/walkthrough-debugging-a-windows-form.md)\
-Zapewnia instrukcje krok po kroku dotyczące tworzenia formularzy Windows i debugowanie formularza. Formularz Windows, standardowy składnik zarządzanej aplikacji Windows, jest jednym z najczęściej używanych aplikacji zarządzanych. W tym instruktażu wykorzystano Visual C# i Visual Basic, ale techniki tworzenia formularzy Windows w języku C++ ogólnie wygląda podobnie.
+[Przewodnik: Debugowanie formularza systemu Windows](../debugger/walkthrough-debugging-a-windows-form.md)\
+Zawiera instrukcje krok po kroku dotyczące tworzenia formularza systemu Windows i debugowania tego formularza. Formularz systemu Windows, standardowy składnik zarządzanej aplikacji systemu Windows, jest jednym z najczęściej używanych aplikacji zarządzanych. W tym instruktażu C# są stosowane wizualizacje i Visual Basic, ale techniki tworzenia formularzy systemu C++ Windows za pomocą są zwykle podobne.
 
 [Debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)\
-Zawiera przykłady kodu, aby umożliwić debugowanie `OnStart` metody to zarządzana usługa Windows. Aby debugować `OnStart` metody usługi Windows, należy dodać kilka wierszy kodu, aby zasymulować usługi.
+Zawiera przykłady kodu, które umożliwiają debugowanie `OnStart` metody zarządzanej usługi systemu Windows. Aby debugować `OnStart` metodę usługi systemu Windows, należy dodać kilka wierszy kodu w celu symulowania usługi.
 
 [Debugowanie w trybie mieszanym](../debugger/debugging-mixed-mode-applications.md)\
-W tym artykule omówiono debugowanie aplikacji w trybie mieszanym. Oznacza to, każda aplikacja, która łączy kodu natywnego za pomocą kodu zarządzanego.
+Omawia debugowanie aplikacji w trybie mieszanym. Oznacza to, że wszystkie aplikacje łączące kod natywny z kodem zarządzanym.
 
-[Błąd: Debugowanie jest niemożliwe, ponieważ w systemie jest włączony debuger jądra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
-W tym artykule opisano komunikat o błędzie występujący, jeśli zostanie podjęta próba debugowanie kodu zarządzanego na [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], lub systemu Windows NT, który został uruchomiony w trybie debugowania.
+[Błąd: Debugowanie nie jest możliwe, ponieważ w systemie jest włączony debuger jądra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+Opisuje komunikat o błędzie, który występuje w przypadku próby [!INCLUDE[win7](../debugger/includes/win7_md.md)]debugowania kodu zarządzanego w [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]systemie,,, [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]lub systemu Windows NT, który został uruchomiony w trybie debugowania.
 
 [Optymalizacja i debugowanie JIT](../debugger/jit-optimization-and-debugging.md)\
-Opisuje skutki optymalizację JIT na temat debugowania.
+Opisuje skutki optymalizacji JIT podczas debugowania.
 
 [Debugowanie LINQ i DLINQ](../debugger/debugging-linq.md)\
-W tym artykule omówiono techniki debugowania zapytań LINQ.
+Omawia techniki debugowania zapytań LINQ.
 
-[Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)\
-Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.
+[Przewodnik: Debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md)\
+Opisuje sposób używania okienek **zadań równoległych** i **stosów równoległych** do debugowania aplikacji równoległej.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
 [IntelliTrace](../debugger/intellitrace.md)\
-Znajduj błędy szybciej i łatwiej, rejestrując historię wykonywania aplikacji za pomocą funkcji IntelliTrace. Krok do tyłu i przekazywać je za pośrednictwem zarejestrowane zdarzenia i wywołania, aby sprawdzić stan aplikacji w kluczowych punktach w czasie. Debugowanie kodu bez ustawiania wielu punktów przerwania lub ponownego uruchamiania aplikacji w taki sposób, jak często. Requires Visual Studio Enterprise.
+Wykrywaj błędy szybciej i łatwiej, rejestrując historię wykonywania aplikacji za pomocą IntelliTrace. Przechodzenie do tyłu i do przodu przez zarejestrowane zdarzenia i wywołania w celu sprawdzenia stanu aplikacji w czasie. Debuguj kod bez ustawiania wielu punktów przerwania lub ponownego uruchamiania aplikacji. Wymaga Visual Studio Enterprise.
 
 [Śledzenie i Instrumentacja aplikacji](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
-W tym artykule opisano, śledzenie, możesz monitorować wykonywanie aplikacji, gdy jest uruchomiona i instrumentacji, które obejmuje umieszczenie instrukcji śledzenia w lokalizacjach strategicznych w kodzie. Ten temat zawiera także łącza do wprowadzenie do Instrumentacji i śledzenia, przełączniki śledzenia, obiekty nasłuchujące śledzenia kodu w aplikacji, Dodawanie instrukcji śledzenia do kodu aplikacji i kompilowanie warunkowe ze śledzenia <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> .
+Opisuje śledzenie, sposób monitorowania wykonywania aplikacji podczas jej działania oraz instrumentacji, która polega na umieszczeniu instrukcji Trace w strategicznych lokalizacjach w kodzie. Ten temat zawiera również linki do wprowadzenia do Instrumentacji i śledzenia, przełączników śledzenia, detektorów śledzenia, śledzenia kodu w aplikacji, dodawania instrukcji śledzenia do kodu aplikacji i kompilowania warunkowo <xref:System.Diagnostics.Debug> z <xref:System.Diagnostics.Trace> i .
 
-[/ ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)\
-Zawiera opis opcji konsolidatora, która dodaje <xref:System.Diagnostics.DebuggableAttribute> do kodu napisanego w języku C++. Ten atrybut jest potrzebnych do korzystania z debugowania funkcji, takich jak dołączanie przy użyciu języka C++.
+[/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)\
+Opisuje opcję konsolidatora, która <xref:System.Diagnostics.DebuggableAttribute> dodaje do kodu pisanego C++przy użyciu. Ten atrybut jest wymagany do korzystania z C++funkcji debugowania, takich jak Attach.
 
-[Debugowanie aplikacji usługi Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)\
-Zawiera informacje dotyczące debugowania aplikacji usług Windows, w tym konfigurowania, dołączanie do procesu, debugowanie kodu w usłudze `OnStart` metodę i kod w metody Main, ustawiania punktów przerwania, a za pomocą kontroli usług Manager, aby uruchomić, zatrzymać, wstrzymać lub kontynuować usługę.
+[Debugowanie aplikacji usługi systemu Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)\
+Zawiera zagadnienia dotyczące debugowania aplikacji usługi systemu Windows, w tym konfigurowania, dołączania do procesu, debugowania kodu w `OnStart` metodzie usługi i kodu w metodzie Main, ustawiania punktów przerwania i korzystania z kontrolki usług Menedżer umożliwiający uruchamianie, zatrzymywanie, wstrzymywanie i kontynuowanie usługi.
 
 [Debugowanie i profilowanie](/dotnet/framework/debug-trace-profile/index)\
-W tym artykule omówiono wymagania konfiguracji i debugowania aplikacji .NET Framework.
+W tym artykule omówiono debugowanie .NET Framework aplikacji i wymagania dotyczące konfiguracji.
 
 [Debugowanie skryptów i aplikacji sieci Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
-Zawiera opis typowych problemów debugowania i technik, które można napotkać podczas debugowania skryptów i aplikacji sieci Web.
+Opisuje typowe problemy z debugowaniem i techniki, które można napotkać podczas debugowania skryptów i aplikacji sieci Web.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Debugowanie formantów formularzy Windows niestandardowego w czasie projektowania](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Przewodnik: Debuguj niestandardowe kontrolki Windows Forms w czasie projektowania](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

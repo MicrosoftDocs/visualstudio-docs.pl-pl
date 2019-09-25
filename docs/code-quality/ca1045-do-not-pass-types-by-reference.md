@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fd0da0f8b04055622b46087ecb9f12b375d9576
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c6a8fda526647a1a9f7f999928cb08978a61bd04
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922850"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235780"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Nie przekazuj typów przez odwołanie
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922850"
 |TypeName|DoNotPassTypesByReference|
 |CheckId|CA1045|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Metoda publiczna lub chroniona w typie publicznym ma `ref` parametr, który przyjmuje typ pierwotny, typ referencyjny lub typ wartości, który nie jest jednym z typów wbudowanych.

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 77909627385a7aa2e41f87c23ec41dc8ac0e1a5e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 11ff4ca3a3146c1080e26fd3ab50af7f7cf0e4e6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920358"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231761"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Pola niebędące stałymi nie powinny być widoczne
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920358"
 |TypeName|NonConstantFieldsShouldNotBeVisible|
 |CheckId|CA2211|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Publiczne lub chronione pole statyczne nie jest stałą ani nie jest tylko do odczytu.

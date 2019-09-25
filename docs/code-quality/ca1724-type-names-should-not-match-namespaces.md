@@ -14,34 +14,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546023"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233854"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Nazwy typów nie powinny odpowiadać nazwom
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Nazwy typów nie powinny być zgodne z przestrzeniami nazw
 
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
-Nazwa typu, który jest zgodny z nazwą odwołania obszaru nazw, który ma co najmniej jeden typ widoczny na zewnątrz. Porównanie nazwa jest rozróżniana wielkość liter.
+Nazwa typu jest zgodna z nazwą przestrzeni nazw przywoływanej, która ma co najmniej jeden typ widoczny na zewnątrz. W porównaniu do nazw nie jest rozróżniana wielkość liter.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Nazwy typów utworzonych przez użytkownika nie powinny odpowiadać nazwy przywoływane obszary nazw, które mają typy widoczne na zewnątrz. Naruszenie tej zasady może zmniejszyć użyteczność biblioteki.
+Nazwy typów utworzone przez użytkownika nie powinny być zgodne z nazwami przywoływanych obszarów nazw, które mają typy widoczne na zewnątrz. Naruszenie tej reguły może zmniejszyć użyteczność biblioteki.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Zmień nazwę typu w taki sposób, że nie jest zgodna nazwa przestrzeni nazw, do którego istnieje odwołanie, zawierający typy widoczne na zewnątrz.
+Zmień nazwę typu na taki, który nie jest zgodny z nazwą przywoływanej przestrzeni nazw, która ma typy widoczne na zewnątrz.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-W nowych wdrożeniach Brak znanego scenariusze wystąpić, gdy trzeba Pomijaj ostrzeżeń dla tej reguły. Zanim można pominąć to ostrzeżenie, zastanów się, jak użytkownicy biblioteki mogą być pomylone według tej nazwy. Do wysłania biblioteki, trzeba będzie Pomijaj ostrzeżeń dla tej reguły.
+W przypadku nowych rozwiązań nie występują żadne znane scenariusze, w których należy pominąć ostrzeżenie z tej reguły. Przed pominięciem ostrzeżenia należy uważnie rozważyć, w jaki sposób użytkownicy biblioteki mogą być pomylone ze zgodną nazwą. W przypadku bibliotek wysyłkowych może być konieczne pominięcie ostrzeżenia z tej reguły.

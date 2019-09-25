@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d878572c4391805773a9a711ee88e7b58f507c65
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921301"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233296"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklaracje metody P/Invoke powinny być przenośne
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921301"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Kategoria|Microsoft. przenośność|
-|Zmiana kluczowa|Przerywanie — jeśli P/Invoke jest widoczny poza zestawem. Bez przerywania — jeśli P/Invoke nie jest widoczny poza zestawem.|
+|Zmiana podziału|Przerywanie — jeśli P/Invoke jest widoczny poza zestawem. Bez przerywania — jeśli P/Invoke nie jest widoczny poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
 Ta reguła służy do obliczania rozmiaru każdego parametru oraz wartości zwracanej P/Invoke i sprawdza, czy ich rozmiar w przypadku przekierowania do kodu niezarządzanego na 32-bitowych i 64-bitowych platformach jest poprawny. Najbardziej typowym naruszeniem tej reguły jest przekazanie liczby całkowitej o stałym rozmiarze, gdy wymagana jest zmienna o rozmiarze wskaźnika zależnym od platformy.

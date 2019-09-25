@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a9f6c8fd44749de43d86bf8037df0130ad682321
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714678"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235034"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Określ argument IFormatProvider
 
@@ -29,14 +29,14 @@ ms.locfileid: "66714678"
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|Kategoria|Microsoft.Globalization|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Globalizacja|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda lub Konstruktor wywołują jednego lub więcej członków, którzy mają przeciążenia akceptujące <xref:System.IFormatProvider?displayProperty=fullName> parametru, a metoda lub Konstruktor niewywołujący przeciążenia, które przyjmuje <xref:System.IFormatProvider> parametru.
+Metoda lub Konstruktor wywołuje jeden lub więcej elementów członkowskich, które mają przeciążenia, które <xref:System.IFormatProvider?displayProperty=fullName> akceptują parametr, a metoda lub Konstruktor nie wywołuje przeciążenia, które <xref:System.IFormatProvider> pobiera parametr.
 
-Ta zasada powoduje ignorowanie wywołania do metod .NET, które są udokumentowane jako ignorowanie <xref:System.IFormatProvider> parametru. Reguła ignoruje także następujących metod:
+Ta reguła ignoruje wywołania metod .NET, które są udokumentowane jako ignorowanie <xref:System.IFormatProvider> parametru. Reguła ignoruje także następujące metody:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,27 +44,27 @@ Ta zasada powoduje ignorowanie wywołania do metod .NET, które są udokumentowa
 
 ## <a name="rule-description"></a>Opis reguły
 
-Gdy <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> lub <xref:System.IFormatProvider> obiektu nie jest podany, wartość domyślna, która jest dostarczana przez członka przeciążonego może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych. Ponadto elementy członkowskie programu .NET wybierz domyślną kulturę i formatowanie na podstawie założeń, które mogą być niepoprawne w kodzie. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać informacje specyficzne dla kultury, zgodnie z następującymi wytycznymi:
+Gdy obiekt <xref:System.IFormatProvider> lub nie jest podany, wartość domyślna, która jest dostarczana przez przeciążony element członkowski, może nie mieć żądanego efektu we wszystkich ustawieniach regionalnych. <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> Ponadto członkowie platformy .NET wybierają domyślną kulturę i formatowanie na podstawie założeń, które mogą nie być poprawne dla kodu. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać informacje specyficzne dla kultury zgodnie z poniższymi wskazówkami:
 
-- Jeśli wartość będzie wyświetlana dla użytkownika, należy użyć bieżącej kultury. Zobacz <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Jeśli wartość będzie wyświetlana użytkownikowi, Użyj bieżącej kultury. Zobacz <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Jeśli wartości są przechowywane i używane przez oprogramowanie (utrwalone w pliku lub bazy danych), należy użyć niezmiennej kultury. Zobacz <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Jeśli wartość będzie przechowywana i używana przez oprogramowanie (utrwalone dla pliku lub bazy danych), użyj niezmiennej kultury. Zobacz <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Jeśli miejsce docelowe wartość nie jest znany, mają odbiorcy danych lub dostawca określenie kultury.
+- Jeśli nie znasz miejsca docelowego wartości, w polu odbiorca danych lub dostawca Określ kulturę.
 
-Nawet jeśli domyślne zachowanie członka przeciążonego jest odpowiednia dla Twoich potrzeb, lepiej jest jawnie wywołać przeciążenie specyficzne dla kultury tak, aby Twój kod jest automatycznie dokumentowane i łatwiej utrzymywane w dobrym stanie.
+Nawet jeśli domyślne zachowanie przeciążonego elementu członkowskiego jest odpowiednie dla Twoich potrzeb, lepiej jest jawnie wywołać Przeciążenie specyficzne dla kultury, aby kod był samodzielny i łatwiejszy w obciążeniu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, użyj przeciążenia, które przyjmuje <xref:System.IFormatProvider> argumentu. Możesz też korzystać z [C# ciągiem interpolowanym](/dotnet/csharp/tutorials/string-interpolation) i przekazać ją do <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> metody.
+Aby naprawić naruszenie tej zasady, Użyj przeciążenia, które przyjmuje <xref:System.IFormatProvider> argument. Lub Użyj [ C# ciągu interpolowanego](/dotnet/csharp/tutorials/string-interpolation) i przekaż <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> go do metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, gdy jest pewne, że domyślny format jest odpowiednim wyborem oraz łatwości utrzymania kodu nie ma priorytet ważne rozwoju.
+Można bezpiecznie pominąć ostrzeżenie z tej reguły, gdy jest to pewne, że domyślny format jest poprawny, i gdzie łatwość utrzymania kodu nie jest ważnym priorytetem programistycznym.
 
 ## <a name="example"></a>Przykład
 
-W poniższym kodzie `example1` ciągu narusza regułę CA1305. `example2` Ciąg spełnia reguł CA1305 przez przekazanie <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, który implementuje <xref:System.IFormatProvider>, <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. `example3` Ciąg spełnia reguł CA1305, przekazując ciąg interpolowany <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
+W poniższym kodzie `example1` ciąg narusza reguły CA1305. Ciąg spełnia reguły CA1305 przez przekazywanie <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, które implementuje <xref:System.IFormatProvider>, do <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. `example2` Ciąg spełnia kryteria CA1305 przez przekazanie ciągu interpolowanego do <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>. `example3`
 
 ```csharp
 string name = "Georgette";
@@ -81,8 +81,8 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1304: Określ klasę CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304: Określ CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Używanie klasy CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)
+- [Korzystanie z klasy CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

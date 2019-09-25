@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 536e676a1b2527c466aae741ca7117be507bfb9a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921119"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232753"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Zabezpieczenie metody powinno być nadzbiorem typu
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921119"
 |TypeName|MethodSecurityShouldBeASupersetOfType|
 |CheckId|CA2114|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Typ ma Zabezpieczenia deklaracyjne, a jedna z jej metod ma deklaracyjne zabezpieczenia dla tej samej akcji zabezpieczeń, a akcja zabezpieczeń nie jest [potrzebami konsolidacji](/dotnet/framework/misc/link-demands), a uprawnienia sprawdzane przez typ nie są podzbiorem uprawnień zaewidencjonowanych przez metodę.

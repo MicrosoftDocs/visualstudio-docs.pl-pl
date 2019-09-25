@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 837659ca24eb66995626668185500db7bc32bbd7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 8b29c9ed644c223488261333e79f17229bd4b7a3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547376"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235298"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
 
@@ -30,7 +30,7 @@ ms.locfileid: "69547376"
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 

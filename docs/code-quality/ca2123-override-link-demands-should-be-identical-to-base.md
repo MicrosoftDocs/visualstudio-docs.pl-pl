@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3b5bd062ca37ae477f5ab7d52d56fd7e4b4fb71b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920812"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232490"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Przesłonięcia żądań konsolidacji powinny być identyczne z podstawowymi
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920812"
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
 |CheckId|CA2123|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Metoda publiczna lub chroniona w typie publicznym przesłania metodę lub implementuje interfejs i nie ma tego samego [łącza](/dotnet/framework/misc/link-demands) , jak interfejs lub metoda wirtualna.

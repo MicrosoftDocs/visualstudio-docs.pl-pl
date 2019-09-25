@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2110a8d0b58d87a4554971cf00af6441d293aa91
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 9f9425ab1ea9eadd3bd06d950118ce83ba5c35f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975891"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231645"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Poprawnie twórz wystąpienia wyjątków argumentów
 
@@ -32,48 +32,48 @@ ms.locfileid: "65975891"
 |TypeName|InstantiateArgumentExceptionsCorrectly|
 |CheckId|CA2208|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Możliwe przyczyny: w następujących sytuacjach:
+Możliwe przyczyny są następujące:
 
-- Połączenie jest nawiązywane w przypadku domyślnego (bezparametrowego) konstruktora typu wyjątku, lub pochodzi z <xref:System.ArgumentException>.
+- Wykonano wywołanie domyślnego (bezparametrowego) konstruktora typu wyjątku, który jest lub pochodzi od, <xref:System.ArgumentException>.
 
-- Niepoprawny argument ciągu jest przekazywany do sparametryzowania konstruktora typu wyjątku, lub pochodzi z <xref:System.ArgumentException>.
+- Do sparametryzowanego konstruktora typu wyjątku jest przenoszona niepoprawnym argumentem ciągu, który jest lub pochodzi od <xref:System.ArgumentException>,.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Zamiast wywoływania domyślnego konstruktora, należy wywołać jedną z przeciążeń konstruktora, które umożliwia bardziej zrozumiały komunikat o wyjątku należy podać. Komunikat o wyjątku powinien docelowe dewelopera i wyjaśniają warunek błędu i jak rozwiązać lub uniknąć wyjątku.
+Zamiast wywoływania domyślnego konstruktora, wywołaj jedno z przeciążeń konstruktora, które pozwala na podano bardziej zrozumiały komunikat wyjątku. Komunikat o wyjątku powinien wskazywać dewelopera i jasno wyjaśnić warunek błędu oraz jak poprawić lub uniknąć wyjątku.
 
-Podpisy konstruktorów ciąg jednego i dwa z <xref:System.ArgumentException> i jego typów pochodnych nie są spójne względem pozycji `message` i `paramName` parametrów. Upewnij się, że te konstruktory są wywoływane z argumentami prawidłowy ciąg. Podpisy są następujące:
+Sygnatury jednego i dwóch konstruktorów <xref:System.ArgumentException> ciągów i jego typów pochodnych nie są spójne z uwzględnieniem pozycji `message` i `paramName` parametrów. Upewnij się, że te konstruktory są wywoływane z prawidłowymi argumentami ciągu. Podpisy są następujące:
 
-- <xref:System.ArgumentException>(string `message`)
-- <xref:System.ArgumentException>(string `message`, ciąg `paramName`)
-- <xref:System.ArgumentNullException>(string `paramName`)
-- <xref:System.ArgumentNullException>(string `paramName`, ciąg `message`)
-- <xref:System.ArgumentOutOfRangeException>(string `paramName`)
-- <xref:System.ArgumentOutOfRangeException>(string `paramName`, ciąg `message`)
-- <xref:System.DuplicateWaitObjectException>(string `parameterName`)
-- <xref:System.DuplicateWaitObjectException>(string `parameterName`, ciąg `message`)
+- <xref:System.ArgumentException>(ciąg `message`)
+- <xref:System.ArgumentException>(String `message`, String `paramName`)
+- <xref:System.ArgumentNullException>(ciąg `paramName`)
+- <xref:System.ArgumentNullException>(String `paramName`, String `message`)
+- <xref:System.ArgumentOutOfRangeException>(ciąg `paramName`)
+- <xref:System.ArgumentOutOfRangeException>(String `paramName`, String `message`)
+- <xref:System.DuplicateWaitObjectException>(ciąg `parameterName`)
+- <xref:System.DuplicateWaitObjectException>(String `parameterName`, String `message`)
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej reguły, wywołanie konstruktora przyjmującego komunikat i/lub nazwę parametru i upewnij się, argumenty są odpowiednie dla typu <xref:System.ArgumentException> wywoływana.
+Aby naprawić naruszenie tej reguły, Wywołaj konstruktora, który przyjmuje komunikat, nazwę parametru lub oba parametry, i upewnij się, że argumenty są odpowiednie dla typu <xref:System.ArgumentException> wywoływanego.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, tylko wtedy, gdy jest to sparametryzowania konstruktora jest wywoływana z argumentami prawidłowy ciąg.
+Można bezpiecznie pominąć ostrzeżenie z tej reguły tylko wtedy, gdy Konstruktor sparametryzowany jest wywoływany z prawidłowymi argumentami ciągu.
 
 ## <a name="example"></a>Przykład
 
-Poniższy kod pokazuje konstruktora, który jest niepoprawnie tworzy wystąpienie <xref:System.ArgumentNullException>.
+Poniższy kod przedstawia konstruktora, który nieprawidłowo tworzy wystąpienie wystąpienia <xref:System.ArgumentNullException>.
 
 [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_1.cpp)]
 [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_1.cs?range=3-6)]
 [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_1.vb)]
 
-Poniższy kod naprawia wcześniejszego naruszenia praw, przełączając argumentach konstruktora.
+Poniższy kod naprawia poprzednie naruszenie przez przełączenie argumentów konstruktora.
 
 [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_2.cpp)]
 [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_2.cs?range=3-6)]
@@ -81,4 +81,4 @@ Poniższy kod naprawia wcześniejszego naruszenia praw, przełączając argument
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1507: Użyj nameof zamiast ciągów](ca1507.md)
+- [CA1507: Użyj nameof zamiast ciągu](ca1507.md)

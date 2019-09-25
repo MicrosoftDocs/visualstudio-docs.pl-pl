@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8528b9e6ad302319f1fb1ebb010c7f55b93932
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416595"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211255"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Skompilować i utworzyć w programie Visual Studio
 
@@ -25,7 +25,7 @@ Podczas kompilowania kodu źródłowego, aparat kompilacji tworzy zespołów i w
 
 Przez kompilacjom kodu, można szybko zidentyfikować błędy kompilacji, takie jak niepoprawna składnia, błędnie napisane słowa kluczowe i wpisz niezgodności. Można także wykryć i poprawić błędy czasu wykonywania, takie jak błędy logiczne i semantyczne, tworząc i uruchamianiu wersji debugowania kodu.
 
-Pomyślnej kompilacji sprawdza, czy kod źródłowy aplikacji zawiera poprawną składnię i że może rozpoznać wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki. Generowany jest plik wykonywalny aplikacji mogą być testowane dla prawidłowego działania w obu [debugowania środowiska](../debugger/index.md) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po aplikacji zostało w pełni przetestowane, można kompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego [procesu, zobacz Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md).
+Pomyślnej kompilacji sprawdza, czy kod źródłowy aplikacji zawiera poprawną składnię i że może rozpoznać wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki. Generowany jest plik wykonywalny aplikacji mogą być testowane dla prawidłowego działania w obu [debugowania środowiska](../debugger/index.yml) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po aplikacji zostało w pełni przetestowane, można kompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego [procesu, zobacz Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md).
 
 Używasz jednej z następujących metod do tworzenia aplikacji: środowiska IDE programu Visual Studio, narzędzia wiersza polecenia programu MSBuild i potoków usługi Azure:
 

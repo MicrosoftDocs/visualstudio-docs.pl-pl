@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019.
-ms.date: 09/23/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c2caed210edbed5f17d74ee78a55612aa0afa4cb
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186479"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211329"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -107,6 +107,12 @@ Aby uzyskać więcej informacji, zobacz [lepsze środowisko z wieloma monitorami
 **Nowość w 16,2**: Zaktualizowaliśmy Eksploratora testów w celu zapewnienia lepszej obsługi dużych zestawów testów, łatwiejszego filtrowania, bardziej wykrywalnych poleceń, widoków listy odtwarzania z kartami i dostosowywalnych kolumn umożliwiających precyzyjne dostosowanie informacji o testowaniu.
 
    ![Zrzut ekranu pokazujący ulepszenia interfejsu użytkownika w Eksploratorze testów](media/vs-2019/test-explorer-ui.png)
+
+### <a name="net-core"></a>.NET Core
+
+**Nowość w 16,3**: Dodaliśmy obsługę programu .NET Core 3,0. Międzyplatformowe, Open Source&mdash;i w pełni obsługiwane przez firmę Microsoft. 
+
+Aby uzyskać więcej informacji, zobacz wpis na blogu dotyczący [programu .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
 ## <a name="collaborate"></a>Współpraca
 

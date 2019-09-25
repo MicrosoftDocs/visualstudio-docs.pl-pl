@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 54f7d3a0efc2f6199c030c8dd488de3b5b158240
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714764"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231723"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Zestawy powinny mieć prawidłowe silne nazwy
 
@@ -28,35 +28,35 @@ ms.locfileid: "66714764"
 |TypeName|AssembliesShouldHaveValidStrongNames|
 |CheckId|CA2210|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Zestaw jest podpisany silną nazwą, nie można zweryfikować silnej nazwy lub silnej nazwy nie jest prawidłowym bez bieżące ustawienia rejestru komputera.
+Zestaw nie jest podpisany przy użyciu silnej nazwy, nie można zweryfikować silnej nazwy lub silna nazwa nie będzie prawidłowa bez bieżących ustawień rejestru na komputerze.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Ta zasada pobiera i weryfikuje silną nazwę zestawu. Naruszenie wystąpi w przypadku spełnienia dowolnego z następujących czynności:
+Ta reguła pobiera i weryfikuje silną nazwę zestawu. Występuje naruszenie, jeśli którykolwiek z następujących warunków jest spełniony:
 
-- Zestaw ma silną nazwę.
+- Zestaw nie ma silnej nazwy.
 
-- Zestaw został zmieniony po zarejestrowaniu się.
+- Zestaw został zmieniony po podpisaniu.
 
 - Zestaw jest podpisany z opóźnieniem.
 
-- Zestaw został niepoprawnie podpisany lub podpisywanie nie powiodło się.
+- Zestaw został niepoprawnie podpisany lub nie można podpisać.
 
-- Zestaw wymaga ustawienia rejestru w celu przekazania weryfikacji. Na przykład narzędzie silnych nazw (Sn.exe) został użyty do pominięcia weryfikacji dla zestawu.
+- Zestaw wymaga ustawień rejestru w celu przeprowadzenia weryfikacji. Na przykład narzędzie silnej nazwy (SN. exe) zostało użyte do pominięcia weryfikacji zestawu.
 
-Silna nazwa chroni klientów przed nieświadomym ładowaniem zestawu, który został zmieniony. Zestawy bez silnej nazwy nie powinny być wdrażane poza bardzo ograniczonymi scenariuszami. Jeśli użytkownik udostępnia lub dystrybuuje zestawy, które nie są poprawnie podpisane, zestaw może zostać zmieniony, środowisko uruchomieniowe języka wspólnego może nie załadować zestawu lub użytkownik będzie musiał wyłączyć weryfikację na swoim komputerze. Ma to zestaw bez silnej nazwy z następujące wady:
+Silna nazwa chroni klientów przed nieświadomym ładowaniem zestawu, który został zmieniony. Zestawy bez silnej nazwy nie powinny być wdrażane poza bardzo ograniczonymi scenariuszami. Jeśli użytkownik udostępnia lub dystrybuuje zestawy, które nie są poprawnie podpisane, zestaw może zostać zmieniony, środowisko uruchomieniowe języka wspólnego może nie załadować zestawu lub użytkownik będzie musiał wyłączyć weryfikację na swoim komputerze. Zestaw bez silnej nazwy ma następujące wady:
 
-- Nie można zweryfikować jej źródła.
+- Nie można zweryfikować jego pochodzenia.
 
-- Środowisko uruchomieniowe języka wspólnego nie ostrzec użytkowników, jeśli zawartość zestawu została zmieniona.
+- Środowisko uruchomieniowe języka wspólnego nie może ostrzegać użytkowników o zmianie zawartości zestawu.
 
-- Nie można załadować do pamięci podręcznej zestawów globalnych.
+- Nie można go załadować do globalnej pamięci podręcznej zestawów.
 
-Należy pamiętać, że można załadować i przeanalizować zestawu podpisanego z opóźnieniem, należy wyłączyć weryfikację zestawu.
+Należy pamiętać, że aby załadować i przeanalizować zestaw z opóźnieniem, należy wyłączyć weryfikację dla zestawu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -64,41 +64,41 @@ Należy pamiętać, że można załadować i przeanalizować zestawu podpisanego
 
 Użyj jednej z następujących procedur:
 
-- Użyj [narzędzie Assembly Linker (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker).
+- Użyj [Narzędzia konsolidatora zestawu (Al. exe)](/dotnet/framework/tools/al-exe-assembly-linker).
 
-- Dla programu .NET Framework 2.0, użyj `/keyfile` lub `/keycontainer` — opcja kompilatora [/KeyFile (Określ klucz lub parę klucz Aby podpisać zestaw)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) lub  [ /KeyContainer (Określ kontener klucza, aby podpisać zestaw)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) w — opcja konsolidatora C++).
+- Dla `/keyfile` .NET Framework 2,0 użyj opcji kompilatora lub [](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) `/keycontainer` /keyfile (Określ klucz lub parę kluczy, aby podpisać zestaw) lub [/KEYCONTAINER (Określ kontener klucza do podpisania zestawu)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) opcji konsolidatora w programie C++).
 
-- .NET Framework w wersji 1.0 lub 1.1, użyj <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> lub <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atrybutu.
+- Dla .NET Framework v 1.0 lub v 1.1 Użyj <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> atrybutu lub. <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
 
-### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Utwórz zestaw o silnej nazwie w programie Visual Studio
+### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Podpisz zestaw za pomocą silnej nazwy w programie Visual Studio
 
-1. W programie Visual Studio Otwórz swoje rozwiązanie.
+1. W programie Visual Studio Otwórz rozwiązanie.
 
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości.**
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **właściwości.**
 
-3. Kliknij przycisk **podpisywanie** , a następnie wybierz pozycję **Podpisz zestaw** pole wyboru.
+3. Kliknij kartę **podpisywanie** i zaznacz pole wyboru **podpisz zestaw** .
 
-4. Z **wybierz plik klucza o silnej nazwie**, wybierz opcję **New**.
+4. W obszarze **Wybierz plik klucza o silnej nazwie**wybierz pozycję **Nowy**.
 
-   **Utwórz klucz silnej nazwy** oknie zostanie wyświetlona.
+   Zostanie wyświetlone okno **Utwórz klucz o silnej nazwie** .
 
-5. W **nazwę pliku klucza**, wpisz nazwę dla swojego klucza silnej nazwy.
+5. W polu **Nazwa pliku klucza**wpisz nazwę klucza silnej nazwy.
 
-6. Wybierz, czy klucz jest chroniony hasłem, a następnie kliknij przycisk **OK**.
+6. Zdecyduj, czy klucz ma być chroniony hasłem, a następnie kliknij przycisk **OK**.
 
-7. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **kompilacji**.
+7. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **Kompiluj**.
 
-### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Podpisać zestaw silną nazwą poza programem Visual Studio
+### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Podpisz zestaw o silnej nazwie poza programem Visual Studio
 
-Użyj [narzędzie silnych nazw (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+Użyj [Narzędzia silnej nazwy (SN. exe)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Tylko Pomijaj ostrzeżeń dla tej reguły, jeśli zestaw jest używany w środowisku, w których naruszeniu zawartość nie jest wymagana.
+Pomiń tylko ostrzeżenie z tej reguły, jeśli zestaw jest używany w środowisku, w którym manipulowanie zawartością nie jest problemem.
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>
 - <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
-- [Instrukcje: Podpisywanie zestawu silną nazwą](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Instrukcje: Podpisz zestaw silną nazwą](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Sn.exe (narzędzie silnych nazw)](/dotnet/framework/tools/sn-exe-strong-name-tool)

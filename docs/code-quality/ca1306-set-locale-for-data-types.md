@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: aaf16ccd187681be7406fdadbde620a167a40c96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922792"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235028"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Ustaw ustawienia regionalne dla typów danych
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922792"
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
 |Kategoria|Microsoft. Globalizacja|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Metoda lub Konstruktor utworzył jeden lub <xref:System.Data.DataTable?displayProperty=fullName> więcej lub <xref:System.Data.DataSet?displayProperty=fullName> wystąpienie i nie ustawił jawnie właściwości locale (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> lub <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).

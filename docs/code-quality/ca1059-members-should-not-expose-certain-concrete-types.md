@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f24881d04599677c5d45c93fc940286f115d593
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922510"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235463"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Składowe nie powinny ujawniać niektórych typów konkretnych
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922510"
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Widoczny na zewnątrz element członkowski jest określonym konkretnym typem lub uwidacznia niektóre konkretne typy za pomocą jednego z jego parametrów lub zwracanych wartości. Obecnie ta reguła zgłasza narażenie następujących typów konkretnych:

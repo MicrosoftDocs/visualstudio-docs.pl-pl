@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d77ecc255f03e38e39a9321d9c7a9e5568e94a4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88464effce80b6957dc8945ad17f5a39b4f449c8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546339"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234519"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Unikaj nadmiernego dziedziczenia
 
@@ -30,8 +30,8 @@ ms.locfileid: "62546339"
 |-|-|
 |TypeName|AvoidExcessiveInheritance|
 |CheckId|CA1501|
-|Kategoria|Microsoft.Maintainability|
-|Zmiana kluczowa|Kluczowa|
+|Kategoria|Microsoft. łatwość obsługi|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
@@ -39,19 +39,19 @@ Typ jest głęboki na więcej niż cztery poziomy w hierarchii dziedziczenia.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Hierarchie typów głęboko zagnieżdżonych mogą być trudne do śledzenia, zrozumienia i utrzymania. Ta zasada ogranicza analizy do hierarchii, w tym samym module.
+Hierarchie typów głęboko zagnieżdżonych mogą być trudne do śledzenia, zrozumienia i utrzymania. Ta reguła ogranicza analizę do hierarchii w tym samym module.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, typ lub pochodzić od typu podstawowego, który jest mniej szczegółowa w hierarchii dziedziczenia eliminują część pośredniego typów podstawowych.
+Aby naprawić naruszenie tej reguły, należy utworzyć typ z typu podstawowego, który jest mniej głębokie w hierarchii dziedziczenia, lub wyeliminować niektóre pośrednie typy podstawowe.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły. Jednak kod może być trudne do utrzymania. Należy pamiętać, że w zależności od widoczność typów podstawowych, rozpoznawanie naruszenie tej zasady może utworzyć przełomowe zmiany. Na przykład usunięcie publicznej typów podstawowych jest istotną zmianę.
+Można bezpiecznie pominąć ostrzeżenie z tej reguły. Jednak kod może być trudniejszy do utrzymania. Należy pamiętać, że w zależności od widoczności typów podstawowych Rozwiązywanie naruszeń tej reguły może spowodować istotne zmiany. Na przykład usunięcie publicznych typów podstawowych jest istotną zmianą.
 
 ## <a name="example"></a>Przykład
 
-Typ, który narusza regułę określającą, można znaleźć w poniższym przykładzie:
+Poniższy przykład pokazuje typ, który narusza regułę:
 
 [!code-csharp[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/CSharp/ca1501-avoid-excessive-inheritance_1.cs)]
 [!code-vb[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/VisualBasic/ca1501-avoid-excessive-inheritance_1.vb)]

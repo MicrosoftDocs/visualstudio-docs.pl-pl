@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 67d1a1c37a1c39e07dd5b8754fef223bfa8ad7a2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920659"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232278"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Metody muszą zachowywać spójną przezroczystość podczas nadpisywania metod bazowych
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920659"
 |TypeName|MethodsMustOverrideWithConsistentTransparency|
 |CheckId|CA2134|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Ta reguła jest wyzwalana, gdy metoda oznaczona <xref:System.Security.SecurityCriticalAttribute> przy użyciu przesłonięć ma metodę, która jest przezroczysta <xref:System.Security.SecuritySafeCriticalAttribute>lub oznaczona przy użyciu. Zasada jest wyzwalana również wtedy, gdy metoda jest przezroczysta lub oznaczona <xref:System.Security.SecuritySafeCriticalAttribute> przy użyciu przesłonięć metody, która jest oznaczona <xref:System.Security.SecurityCriticalAttribute>za pomocą.

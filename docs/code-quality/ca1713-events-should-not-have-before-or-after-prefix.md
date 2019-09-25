@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee39ffbfd2e73a14fd42d574cef92a24784d1ad4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 834c0f73a1fdc26f06c62e1c6e3a2d19372a244d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921672"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234104"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Zdarzenia nie powinny mieć prefiksu „before” ani „after”
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921672"
 |TypeName|EventsShouldNotHaveBeforeOrAfterPrefix|
 |CheckId|CA1713|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Nazwa zdarzenia rozpoczyna się od "Before" lub "After".

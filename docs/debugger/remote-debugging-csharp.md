@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408537"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211128"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Zdalne debugowanie projektu C# lub Visual Basic w programie Visual Studio
 Aby debugować aplikację programu Visual Studio, która została wdrożona na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, skonfiguruj projekt, aby nawiązać połączenie z komputerem zdalnym z programu Visual Studio, a następnie uruchom aplikację.
@@ -71,14 +71,14 @@ Debuger nie można wdrożyć aplikacje klasyczne Visual C# lub Visual Basic do m
 
 5. Upewnij się, że **katalog roboczy** pole tekstowe jest puste.
 
-6. Wybierz **maszyny zdalnej użyj**i wpisz **yourmachinename:port** w polu tekstowym. (Numer portu są wyświetlane w oknie debugera zdalnego. Numer portu zwiększa wartość 2, w każdej wersji programu Visual Studio).
+6. Wybierz opcję **Użyj maszyny zdalnej**i wpisz **yourmachinename: Port** w polu tekstowym. (Numer portu jest wyświetlany w oknie debugera zdalnego. Numer portu zwiększa wartość 2, w każdej wersji programu Visual Studio).
 
-    W tym przykładzie należy użyć:
+    W tym przykładzie Użyj:
     ::: moniker range=">=vs-2019"
-    **MJO-DL:4024** on Visual Studio 2019
+    **MJO-DL: 4024** w programie Visual Studio 2019
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **MJO-DL:4022** on Visual Studio 2017
+    **MJO-DL: 4022** w programie Visual Studio 2017
     ::: moniker-end
 
 7. Upewnij się, że **Włącz debugowanie kodu natywnego** nie jest zaznaczone.
@@ -117,7 +117,7 @@ Debuger nie można wdrożyć aplikacje klasyczne Visual C# lub Visual Basic do m
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)

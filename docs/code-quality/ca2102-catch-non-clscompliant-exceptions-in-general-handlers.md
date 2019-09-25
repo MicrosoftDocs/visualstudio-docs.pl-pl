@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f361720f45a24e561ab2a886537bda02c73c006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f62ad97bbb96f49a7263edd29f0f8a7c263bec4c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545775"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233008"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Przechwytuj wyjątki bez atrybutu CLSCompliant w ogólnych procedurach obsługi
 
@@ -27,33 +27,33 @@ ms.locfileid: "62545775"
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
 |CheckId|CA2102|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Element członkowski w zestawie, który nie jest oznaczony atrybutem <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> lub jest oznaczony jako `RuntimeCompatibility(WrapNonExceptionThrows = false)` zawiera blok catch obsługujący <xref:System.Exception?displayProperty=fullName> i nie zawiera bezpośrednio następującego ogólnego bloku catch. Ta zasada powoduje ignorowanie [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] zestawów.
+Element członkowski w zestawie, który nie jest oznaczony lub jest <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> oznaczony `RuntimeCompatibility(WrapNonExceptionThrows = false)` , zawiera blok catch, który obsługuje <xref:System.Exception?displayProperty=fullName> i nie zawiera natychmiast po ogólnym bloku catch. Ta reguła ignoruje [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] zestawy.
 
 ## <a name="rule-description"></a>Opis reguły
 
-W bloku catch, który obsługuje <xref:System.Exception> przechwytuje wszystkie wyjątki zgodne Common Language Specification (CLS). Jednak nie przechwytuje wyjątków zgodne ze specyfikacją CLS. Niezgodny ze specyfikacją CLS zgodne wyjątki mogą zostać wygenerowane, z kodu macierzystego lub kodu zarządzanego, który został wygenerowany przez firmę Microsoft pośredniego (MSIL) języka asemblera. Należy zauważyć, że języka C# i [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatory nie zezwalają na niezgodnych ze specyfikacją CLS zgodnych wyjątki zostanie wygenerowany i [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nie przechwytuje wyjątków zgodne ze specyfikacją CLS. Jeśli celem blok catch ma obsługiwać wszystkie wyjątki, należy użyć następującej składni bloku catch ogólne.
+Blok catch obsługujący <xref:System.Exception> przechwycenie wszystkich wyjątków zgodnych z Common Language Specification (CLS). Nie są jednak przechwytywane wyjątki niezgodne ze specyfikacją CLS. Wyjątki niezgodne ze specyfikacją CLS mogą być zgłaszane z kodu natywnego lub kodu zarządzanego, który został wygenerowany przez asembler języka pośredniego firmy Microsoft (MSIL). Należy zauważyć, C# że [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatory i nie zezwalają na zgłaszanie wyjątków niezgodnych ze [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] specyfikacją CLS i nie przechwytuje wyjątków niezgodnych ze specyfikacją CLS. Jeśli cel bloku catch ma obsługiwać wszystkie wyjątki, należy użyć następującej składni ogólnego bloku catch.
 
-- C#: `catch {}`
+- C#:`catch {}`
 
-- C++: `catch(...) {}` lub `catch(Object^) {}`
+- C++: `catch(...) {}` lub`catch(Object^) {}`
 
-Wyjątek nieobsługiwany niezgodnych ze specyfikacją CLS staje się problem z zabezpieczeniami, usunięcie wcześniej dozwolone uprawnienia w bloku catch. Ponieważ wyjątki zgodne ze specyfikacją CLS nie są wychwytywane, złośliwy metodę, która zgłasza wyjątek niezgodny ze specyfikacją można uruchomić z podwyższonym poziomem uprawnień.
+Nieobsłużony wyjątek nieobsługiwany przez CLS jest problemem z zabezpieczeniami, gdy wcześniej dozwolone uprawnienia zostaną usunięte w bloku catch. Ponieważ wyjątki niezgodne ze specyfikacją CLS nie są przechwytywane, złośliwa Metoda, która zgłasza wyjątek niezgodny ze specyfikacją CLS, może działać z podniesionymi uprawnieniami.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, gdy celem jest przechwytywać wszystkie wyjątki, Zastąp lub Dodaj ogólnego bloku catch lub oznaczyć zestaw `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Jeśli uprawnienia zostaną usunięte w bloku catch, zduplikowane funkcji w ogólne blok catch. Jeśli nie jest celem do obsługi wszystkich wyjątków, Zastąp blok catch, który obsługuje <xref:System.Exception> przy użyciu bloków catch, które obsługują typy określonego wyjątku.
+Aby naprawić naruszenie tej reguły, gdy celem jest przechwycenie wszystkich wyjątków, podstawianie lub Dodawanie ogólnego bloku catch lub oznaczanie zestawu `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Jeśli uprawnienia są usuwane w bloku catch, należy zduplikować funkcje w bloku ogólnego catch. Jeśli nie jest to cel, aby obsługiwać wszystkie wyjątki, Zastąp blok catch obsługujący <xref:System.Exception> bloki catch obsługujące określone typy wyjątków.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli blok try nie zawiera żadnych instrukcji, które mogą generować wyjątek zgodne ze specyfikacją CLS. Ponieważ każdy kod macierzysty lub zarządzany może zgłosić wyjątek niezgodny ze specyfikacją, wymaga znajomości cały kod, który może być wykonywana w wszystkie ścieżki kodu wewnątrz bloku try. Zauważ, że wyjątki zgodne ze specyfikacją CLS nie zostaną zgłoszone przez środowisko uruchomieniowe języka wspólnego.
+Jeśli blok try nie zawiera żadnych instrukcji, które mogą generować wyjątek niezgodny ze specyfikacją CLS, można bezpiecznie pominąć ostrzeżenie z tej reguły. Ponieważ każdy kod macierzysty lub zarządzany może zgłosić wyjątek niezgodny ze specyfikacją CLS, wymaga znajomości wszystkich kodów, które mogą być wykonywane we wszystkich ścieżkach kodu wewnątrz bloku try. Należy zauważyć, że wyjątki niezgodne ze specyfikacją CLS nie są zgłaszane przez środowisko uruchomieniowe języka wspólnego.
 
 ## <a name="example-1"></a>Przykład 1
 
-Poniższy przykład przedstawia klasę MSIL, które zgłasza wyjątek zgodne ze specyfikacją CLS.
+W poniższym przykładzie pokazano klasę MSIL, która zgłasza wyjątek niezgodny ze specyfikacją CLS.
 
 ```cpp
 .assembly ThrowNonClsCompliantException {}
@@ -71,11 +71,11 @@ Poniższy przykład przedstawia klasę MSIL, które zgłasza wyjątek zgodne ze 
 
 ## <a name="example-2"></a>Przykład 2
 
-Poniższy przykład przedstawia metodę, która zawiera blok catch ogólnego, który spełnia reguły.
+Poniższy przykład przedstawia metodę, która zawiera ogólny blok catch, który spełnia kryteria.
 
 [!code-csharp[FxCop.Security.CatchNonClsCompliantException#1](../code-quality/codesnippet/CSharp/ca2102-catch-non-clscompliant-exceptions-in-general-handlers_1.cs)]
 
-Skompiluj następujący poprzednich przykładach.
+Skompiluj poprzednie przykłady w następujący sposób.
 
 ```cpp
 ilasm /dll ThrowNonClsCompliantException.il
@@ -84,7 +84,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA1031: Nie przechwytuj wyjątków typów ogólnych](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+[CA1031 Nie Przechwytuj typów wyjątków ogólnych](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521a44b432a5b8ea886b23aab6b39789efe3b1b0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 802442a71eed3267a71fad9a5a208c9ee82cb556
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920709"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232349"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Typy krytyczne pod względem zabezpieczeń nie mogą brać udziału w określaniu równoważności typów
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920709"
 |TypeName|CriticalTypesMustNotParticipateInTypeEquivalence|
 |CheckId|CA2131|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Typ jest częścią równoważności typu i albo sam typ, albo element członkowski lub pole typu, jest oznaczone <xref:System.Security.SecurityCriticalAttribute> atrybutem.

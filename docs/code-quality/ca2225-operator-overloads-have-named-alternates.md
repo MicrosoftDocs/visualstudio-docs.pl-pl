@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546906"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231090"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Przeciążenia operatorów mają nazwane elementy alternatywne
 
@@ -28,7 +28,7 @@ ms.locfileid: "69546906"
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dae77bf7783edc165305f9b3ba60969d4f126a8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 56c2281f76b9064427d1d651523b9cda441eb029
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922895"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236018"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Moduły wyliczające powinny być silnie typizowane
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922895"
 |TypeName|EnumeratorsShouldBeStronglyTyped|
 |CheckId|CA1038|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Typ publiczny lub chroniony implementuje <xref:System.Collections.IEnumerator?displayProperty=fullName> , <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> ale nie zapewnia jednoznacznie wpisanej wersji właściwości. Typy, które pochodzą z następujących typów, są wykluczone z tej reguły:

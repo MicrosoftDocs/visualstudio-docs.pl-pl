@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e9582fb6bbdbda8aefbb60e2c69d16380eec3dff
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922050"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234754"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Metody rejestracji modelu COM nie powinny być widoczne
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922050"
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
 |Kategoria|Microsoft. współdziałanie|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 

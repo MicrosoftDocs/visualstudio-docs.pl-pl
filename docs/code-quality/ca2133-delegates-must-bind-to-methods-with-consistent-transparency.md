@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0745506bfe55305c9c3a55f57823e5d80c453006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14061c0f54593a2cb9b591d39cb46a433b0e34be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796740"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232306"
 ---
 # <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Delegaci muszą być powiązani z metodami ze spójną przezroczystością
 
@@ -24,22 +24,22 @@ ms.locfileid: "62796740"
 |TypeName|DelegatesMustBindWithConsistentTransparency|
 |CheckId|CA2133|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 > [!NOTE]
-> To ostrzeżenie jest stosowane tylko do kodu, który jest uruchomiony w środowisku CoreCLR (wersja środowiska CLR, które są specyficzne dla aplikacji sieci web w technologii Silverlight).
+> To ostrzeżenie jest stosowane tylko do kodu, na którym działa CoreCLR (wersja środowiska CLR, która jest specyficzna dla aplikacji sieci Web Silverlight).
 
 ## <a name="cause"></a>Przyczyna
 
-To ostrzeżenie uruchamiane jest na metodzie wiążącej obiekt delegowany, która jest oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute> do metody, która jest przezroczysta lub oznaczona za pomocą <xref:System.Security.SecuritySafeCriticalAttribute>. Ostrzeżenie jest także uruchamiane na metodzie wiążącej obiekt delegowany, który jest przezroczysty lub bezpieczny-krytyczny dla metody krytycznej.
+To ostrzeżenie jest generowane na metodzie, która wiąże delegata, który jest <xref:System.Security.SecurityCriticalAttribute> oznaczony za pomocą do metody, która jest przezroczysta lub oznaczona <xref:System.Security.SecuritySafeCriticalAttribute>przy użyciu. Ostrzeżenie jest także uruchamiane na metodzie wiążącej obiekt delegowany, który jest przezroczysty lub bezpieczny-krytyczny dla metody krytycznej.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Typy delegatów i metod, które mogą powiązać musi mieć spójną przezroczystość. Delegaty przejrzyste i bezpieczny krytyczny może powiązać tylko z innych metod przezroczysty lub bezpieczny krytyczny. Podobnie krytyczne delegatów mogą powiązać tylko z metody krytyczne. Te reguły powiązania upewnij się, że tylko kod, który może wywołać metodę za pośrednictwem delegata można również wywoływane ma tę samą metodę bezpośrednio. Na przykład zasad powiązania uniemożliwia podczas wywoływania kodu krytycznego bezpośrednio przez obiekt delegowany przezroczysty kod przezroczysty.
+Typy delegatów i metody, do których są powiązane, muszą mieć spójną przejrzystość. Delegaty przezroczyste i krytyczne o krytycznym znaczeniu mogą wiązać się tylko z innymi niejawnymi lub bezpiecznymi metodami. Podobnie Delegaty krytyczne mogą wiązać się tylko z metodami krytycznymi. Te reguły powiązań zapewniają, że jedyny kod, który może wywołać metodę za pośrednictwem delegata, mógł również wywołać tę samą metodę bezpośrednio. Na przykład reguły powiązań uniemożliwiają przezroczystemu kodowi Wywoływanie kodu krytycznego bezpośrednio za pośrednictwem przezroczystego delegata.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie to ostrzeżenie, zmień przezroczystość, delegata lub metody, która wiąże ją tak, aby przezroczystość dwa są równoważne.
+Aby naprawić naruszenie tego ostrzeżenia, Zmień przezroczystość delegata lub metodę, która jest powiązana, tak aby przezroczystość obu tych elementów była odpowiednikiem.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 

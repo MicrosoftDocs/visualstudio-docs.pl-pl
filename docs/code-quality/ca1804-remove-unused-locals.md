@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0a83d0afffc50c7697fad98c4dc49e31770d63d4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921567"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233751"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Usuwaj nieużywane zmienne lokalne
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921567"
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Nieprzerwanie|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Metoda deklaruje zmienną lokalną, ale nie używa zmiennej, z wyjątkiem ewentualnej odbiorcy instrukcji przypisania. Do analizy według tej reguły testowany zestaw musi być skompilowany przy użyciu informacji debugowania, a plik bazy danych programu (. pdb) musi być dostępny.

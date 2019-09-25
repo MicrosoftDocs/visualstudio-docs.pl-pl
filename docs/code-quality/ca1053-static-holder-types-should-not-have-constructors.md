@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fec59e1d683c7867eb1cad9ae4e796a0815200d4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604785"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235585"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: Statyczne typy posiadaczy nie powinny mieć domyślnych konstruktorów
 
@@ -28,7 +28,7 @@ ms.locfileid: "68604785"
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 > [!NOTE]
 > Reguła CA1053 jest łączona w [CA1052: Statyczne typy zbiorników powinny być](ca1052-static-holder-types-should-be-sealed.md) zapieczętowane w [analizatorach FxCop](fxcop-analyzers.yml).

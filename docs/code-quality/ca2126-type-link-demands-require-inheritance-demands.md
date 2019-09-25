@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be42519f87c3c040c1f80c80d53d490853d986e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4f01ba5af7640521333093e4bba1f36a95363b60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920766"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232465"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Żądania LinkDemand dla typu wymagają żądań dziedziczenia
 
@@ -32,7 +32,7 @@ ms.locfileid: "68920766"
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
 |CheckId|CA2126|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Publiczny niezapieczętowany typ jest chroniony z zapotrzebowaniem na link, ma metodę zastąpiania, a ani typ ani Metoda nie są chronione za pomocą żądania dziedziczenia.

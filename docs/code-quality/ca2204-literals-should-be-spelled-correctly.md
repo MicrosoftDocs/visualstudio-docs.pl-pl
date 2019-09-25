@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82146c2ac997a0202c20e15492becb89a293f427
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6763fd9f8999bd590511026f6571db6a747c43bc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541926"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231857"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Pisownia literałów powinna być poprawna
 
@@ -28,27 +28,27 @@ ms.locfileid: "62541926"
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Literał ciągu jest przekazywany jako argument parametru Lokalizowalny lub lokalizowalne właściwości, a ciąg zawiera jeden lub więcej wyrazów, które nie są rozpoznawane przez bibliotekę sprawdzania pisowni Microsoft.
+Ciąg literału jest przenoszona jako argument dla lokalizowalnego parametru lub do właściwości lokalizowalnej, a ciąg zawiera jeden lub więcej wyrazów, które nie są rozpoznawane przez bibliotekę sprawdzania pisowni firmy Microsoft.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Ta reguła sprawdza, czy ciąg literału, który jest przekazywany jako wartość parametru lub właściwości, gdy dla jednego lub więcej z następujących przypadków ma wartość true:
+Ta reguła sprawdza ciąg literału, który jest przesyłany jako wartość do parametru lub właściwości, gdy spełniony jest co najmniej jeden z następujących przypadków:
 
-- <xref:System.ComponentModel.LocalizableAttribute> Atrybut parametru lub właściwość jest ustawiona na wartość true.
+- <xref:System.ComponentModel.LocalizableAttribute> Atrybut parametru lub właściwości jest ustawiony na wartość true.
 
-- Nazwa parametru lub właściwości zawiera "Text", "Message" lub "Podpis".
+- Nazwa parametru lub właściwości zawiera tekst "text", "Message" lub "Caption".
 
-- Nazwa zmiennej ciągu, który jest przekazywany do <xref:System.Console.Write%2A> lub <xref:System.Console.WriteLine> metodą jest "value" lub "format".
+- Nazwa zmiennej ciągu, która jest przenoszona do <xref:System.Console.Write%2A> metody lub <xref:System.Console.WriteLine> ma wartość "value" lub "format".
 
-Ta reguła umożliwia przekształcanie ciągów literałów w wyrazy, tokenizowanie wyrazy złożone i sprawdza pisownię każdego wyrazu lub token. Aby uzyskać informacji na temat analizy algorytmu, zobacz [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Ta reguła analizuje ciąg literału w słowach, tokenizowanie wyrazy złożone i sprawdza pisownię każdego wyrazu lub tokenu. Aby uzyskać informacje na temat algorytmu analizy, [zobacz CA1704: Identyfikatory powinny być poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)napisane.
 
 ## <a name="language"></a>Język
 
-Moduł sprawdzania pisowni sprawdza obecnie wyłącznie w odniesieniu do słowników kulturę opartą na język angielski. Możesz zmienić kulturę projektu w pliku projektu, dodając **CodeAnalysisCulture** elementu.
+Sprawdzanie pisowni jest obecnie sprawdzane tylko w przypadku słowników kulturowych opartych na języku angielskim. Kulturę projektu można zmienić w pliku projektu, dodając element **CodeAnalysisCulture** .
 
 Na przykład:
 
@@ -59,17 +59,17 @@ Na przykład:
 ```
 
 > [!IMPORTANT]
-> Jeśli ustawisz kultury na coś innego niż kulturę opartą na język angielski, ten reguł analizy kodu dyskretnie jest wyłączone.
+> W przypadku ustawienia kultury na coś innego niż kultura oparta na języku angielskim ta reguła analizy kodu jest dyskretnie wyłączona.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Popraw pisownię wyrazu, lub Dodaj ten wyraz do słownika niestandardowego. Aby uzyskać informacje o sposobie używania słowników niestandardowych, zobacz [jak: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Aby naprawić naruszenie tej zasady, Popraw pisownię wyrazu lub Dodaj słowo do słownika niestandardowego. Informacje o sposobach korzystania z słowników niestandardowych można [znaleźć w temacie How to: Dostosowywanie słownika](../code-quality/how-to-customize-the-code-analysis-dictionary.md)analizy kodu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły. Poprawnie właściwej słów zmniejszyć nauki wymagany dla nowe biblioteki oprogramowania.
+Nie pomijaj ostrzeżeń dla tej reguły. Prawidłowo napisane wyrazy zmniejszają krzywą szkoleniową wymaganą dla nowych bibliotek oprogramowania.
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA1703: Ciągi zasobów, które powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1704: Identyfikatory powinny być poprawnie napisane](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1703: Ciągi zasobów powinny być poprawnie napisane](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

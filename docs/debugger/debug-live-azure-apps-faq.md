@@ -1,5 +1,5 @@
 ---
-title: Często zadawane pytania dotyczące debugowania migawek | Dokumentacja firmy Microsoft
+title: Często zadawane pytania dotyczące debugowania migawek | Microsoft Docs
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,75 +10,75 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586839"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211215"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Często zadawane pytania dotyczące debugowania migawek w programie Visual Studio
 
-Poniżej przedstawiono listę pytań, które mogą się podczas debugowania na żywo aplikacji platformy Azure przy użyciu rozszerzenia Snapshot Debugger.
+Poniżej znajduje się lista pytań, które mogą wystąpić podczas debugowania aktywnych aplikacji platformy Azure przy użyciu Snapshot Debugger.
 
-#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>Co to jest to koszt wydajności wykonywania migawki?
+#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>Jaki jest koszt wydajności tworzenia migawki?
 
-Po przechwyceniu przez rozszerzenie Snapshot Debugger migawkę aplikacji rozwidlenia procesu aplikacji i wstrzymuje rozwidlone kopiowania. Podczas debugowania migawki debugowania względem rozwidlone kopię procesu. Ten proces zajmuje tylko 10-20 MS, ale nie obejmuje kopiowania pełnego stosu aplikacji. Zamiast tego kopiuje tabeli strony i ustawia strony, aby skopiować przy zapisie. Jeśli niektóre obiekty aplikacji w przypadku zmiany sterty odpowiednich stronach są kopiowane. To serwatki każda migawka zawiera małe w pamięci kosztów (rzędu kilku setki kilobajtów dla większości aplikacji).
+Gdy Snapshot Debugger przechwytuje migawkę aplikacji, rozwidlenie procesu aplikacji i wstrzymuje kopiowanie do rozwidlenia. Podczas debugowania migawki jest debugowana w odniesieniu do rozwidlenia kopii procesu. Ten proces trwa tylko 10-20 milisekund, ale nie kopiuje pełnego sterty aplikacji. Zamiast tego kopiuje tylko tabelę stron i ustawia strony do kopiowania przy zapisie. Jeśli niektóre obiekty aplikacji na stercie zmienią się, ich odpowiednie strony zostaną skopiowane. W tej serwatki każda migawka ma mały koszt w pamięci (w kolejności setek kilobajtów dla większości aplikacji).
 
-#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>Co się dzieje w przypadku skalowania w poziomie w usłudze Azure App Service (wiele wystąpień aplikacji)?
+#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>Co się stanie, jeśli mam Azure App Service skalowania w poziomie (wiele wystąpień aplikacji)?
 
-Jeśli masz wiele wystąpień aplikacji, punkty przyciągania stosowane do każdego pojedynczego wystąpienia. Tylko pierwszy punkt przyciągania, aby trafić warunkom określonym tworzy migawkę. Jeśli masz wiele punktów przyciągania, nowsze migawek pochodzą z tego samego wystąpienia, jak utworzyć pierwszą migawką. Punkty rejestrowania wysyłany do okna danych wyjściowych będzie wyświetlana tylko komunikaty z jednego wystąpienia, gdy punkty rejestrowania wysyłane do dzienników aplikacji wysyłanie komunikatów z każdego wystąpienia.
+Jeśli masz wiele wystąpień aplikacji, punkty przyciągania je zastosować do każdego pojedynczego wystąpienia. Tylko pierwszy punkt przyciągania do osiągnięcia z określonymi warunkami tworzy migawkę. Jeśli masz wiele punkty przyciągania, późniejsze migawki pochodzą z tego samego wystąpienia, które utworzyło pierwszą migawkę. Punkty rejestrowania wysyłane do okna danych wyjściowych będzie zawierać tylko komunikaty z jednego wystąpienia, podczas gdy punkty rejestrowania wysyłane do dzienników aplikacji wysyła komunikaty z każdego wystąpienia.
 
-#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Jak rozszerzenie Snapshot Debugger załadować symbole?
+#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Jak są Snapshot Debugger symbole ładowania?
 
-Rozszerzenie Snapshot Debugger wymaga posiadania pasujących symboli dla aplikacji lokalnych lub wdrożony do usługi Azure App Service. (Osadzonych plików PDB obecnie nie są obsługiwane.) Rozszerzenie Snapshot Debugger automatycznie pobiera symbole z usługi Azure App Service. Począwszy od programu Visual Studio 2017 wersja 15.2, wdrażanie w usłudze Azure App Service wdraża symbole Twojej aplikacji.
+Snapshot Debugger wymaga posiadania pasujących symboli dla aplikacji lokalnie lub wdrożonej w Azure App Service. (Osadzone plików PDB nie są obecnie obsługiwane). Snapshot Debugger automatycznie pobiera symbole z Azure App Service. Począwszy od programu Visual Studio 2017 w wersji 15,2, wdrożenie do Azure App Service również wdraża symbole aplikacji.
 
-#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Rozszerzenie Snapshot Debugger działa dla kompilacji wydania mojej aplikacji?
+#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Czy Snapshot Debugger działa w przypadku kompilacji wydania mojej aplikacji?
 
-Tak — rozszerzenie Snapshot Debugger jest przeznaczony do pracy dla kompilacji wydania. Gdy punktu przyciągania jest umieszczany w funkcji, funkcja jest ponownie kompilowana do wersji debugowania, dzięki czemu debugowania. Zatrzymywanie rozszerzenia Snapshot Debugger zwraca funkcje do wersji kompilacji wydania.
+Tak — Snapshot Debugger jest przeznaczony do pracy z kompilacjami wydań. Gdy punkt przyciągania jest umieszczany w funkcji, funkcja jest ponownie kompilowana z powrotem do wersji debugowania, dzięki czemu możliwością debugowania. Zatrzymywanie Snapshot Debugger zwraca funkcje do wersji kompilacji wydania.
 
-#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Punkty rejestrowania może spowodować skutki uboczne w mojej aplikacji produkcyjnych?
+#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Czy punkty rejestrowania może spowodować skutki uboczne w mojej aplikacji produkcyjnej?
 
-Nie — komunikaty dziennika, dodanych do aplikacji są przetwarzane niemal. Nie spowodują one wszelkie efekty uboczne w aplikacji. Jednak niektóre właściwości natywne mogą być niedostępne z punkty rejestrowania.
+Nie — wszystkie komunikaty dziennika dodawane do aplikacji są oceniane praktycznie. Nie mogą one spowodować żadnych efektów ubocznych w aplikacji. Niektóre właściwości macierzyste mogą jednak być niedostępne dla punkty rejestrowania.
 
-#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>Rozszerzenie Snapshot Debugger działa Jeśli mój serwer znajduje się pod obciążeniem?
+#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>Czy Snapshot Debugger działa, jeśli mój serwer jest w trakcie ładowania?
 
-Tak, debugowanie migawki można pracować na serwerach w warunkach obciążenia. Rozszerzenie Snapshot Debugger ogranicza i nie przechwytywania migawek w sytuacjach, gdy istnieje małą ilością wolnej pamięci na serwerze.
+Tak, debugowanie migawek może współpracować z serwerami w ramach obciążenia. Snapshot Debugger ogranicza i nie przechwytuje migawek w sytuacjach, gdy na serwerze istnieje niska ilość wolnej pamięci.
 
-#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>Jak odinstalować rozszerzenie Snapshot Debugger?
+#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>Jak mogę odinstalować Snapshot Debugger?
 
-Możesz odinstalować rozszerzenie witryny Snapshot Debugger w usłudze App Service wykonując następujące kroki:
+Na App Service można odinstalować rozszerzenie witryny Snapshot Debugger, wykonując następujące czynności:
 
-1. Wyłącz usługi App Service za pomocą Eksploratora chmury w programie Visual Studio lub witryny Azure portal.
-1. Przejdź do witryny Kudu usługi App Service (czyli yourappservice. **Menedżer sterowania usługami**. azurewebsites.net) i przejdź do **rozszerzeń witryny**.
-1. Kliknij przycisk X w rozszerzenie witryny Snapshot Debugger go usunąć.
+1. Wyłącz App Service za pomocą programu Cloud Explorer w programie Visual Studio lub Azure Portal.
+1. Przejdź do witryny kudu App Service (czyli yourappservice. **SCM**. azurewebsites.NET) i przejdź do **rozszerzeń witryny**.
+1. Kliknij przycisk X na rozszerzeniu witryny Snapshot Debugger, aby go usunąć.
 
-#### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>Dlaczego porty są otwarte w trakcie sesji rozszerzenia Snapshot Debugger
+#### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>Dlaczego porty są otwierane podczas sesji Snapshot Debugger?
 
-Rozszerzenie Snapshot Debugger musi otworzyć zestawu portów w celu debugowania migawki wykonane na platformie Azure, są tego samego porty wymagane do zdalnego debugowania. [Listę portów, w tym miejscu można znaleźć](../debugger/remote-debugger-port-assignments.md).
+Snapshot Debugger musi otworzyć zestaw portów w celu debugowania migawek wykonanych na platformie Azure, które są tymi samymi portami, które są wymagane do zdalnego debugowania. [Listę portów można znaleźć tutaj](../debugger/remote-debugger-port-assignments.md).
 
-#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Jak wyłączyć rozszerzenie zdalnego debugera?
+#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Jak mogę wyłączyć rozszerzenie debugera zdalnego?
 
-W przypadku usług aplikacji:
-1. Wyłącz rozszerzenia zdalny debuger za pośrednictwem witryny Azure portal dla usługi App Service.
-2. Witryna Azure portal > Blok zasobu usługi aplikacji > *ustawień aplikacji*
-3. Przejdź do *debugowanie* sekcji, a następnie kliknij przycisk *poza* przycisku *zdalne debugowanie*.
+Dla App Services:
+1. Wyłącz rozszerzenie debugera zdalnego za pomocą Azure Portal App Service.
+2. Azure Portal > bloku zasobów usługi aplikacji > *ustawień aplikacji*
+3. Przejdź do sekcji *debugowanie* , a następnie kliknij przycisk *off (Wyłącz* ) dla *debugowania zdalnego*.
 
-Dla usługi AKS:
-1. Aktualizacja z pliku Dockerfile, aby usunąć sekcje odpowiadające [Visual Studio Snapshot Debugger w obrazach Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
-2. Ponownie skompiluj i wdróż zmodyfikowany obraz Docker.
+Dla AKS:
+1. Zaktualizuj pliku dockerfile, aby usunąć sekcje odpowiadające [Visual Studio Snapshot Debugger na obrazach platformy Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Kompiluj ponownie i Wdróż zmodyfikowany obraz platformy Docker.
 
-Do skalowania maszyn wirtualnych/maszyna wirtualna zestawy Usuń pule KeyVaults i ruchu przychodzącego NAT rozszerzenie, certyfikaty, zdalny debuger w następujący sposób:
+W przypadku maszyn wirtualnych i zestawów skalowania maszyn wirtualnych Usuń rozszerzenie debugera zdalnego, certyfikaty, magazyny kluczy i pule NAT dla ruchu przychodzącego w następujący sposób:
 
 1. Usuń rozszerzenie debugera zdalnego
 
-   Istnieje kilka sposobów, aby wyłączyć zdalnego debugera dla maszyn wirtualnych i zestawów skalowania maszyn wirtualnych:
+   Istnieje kilka sposobów wyłączenia zdalnego debugera dla maszyn wirtualnych i zestawów skalowania maszyn wirtualnych:
 
-      - Wyłącz zdalnego debugera za pomocą Eksploratora chmury
+      - Wyłączanie debugera zdalnego za pomocą programu Cloud Explorer
 
-         - Eksplorator chmury > zasobu maszyny wirtualnej > Wyłącz debugowanie (Wyłączanie debugowania nie istnieje dla zestawu w programie Cloud Explorer skalowania maszyn wirtualnych).
+         - W programie Cloud Explorer > zasobów maszyny wirtualnej > wyłączenie debugowania (wyłączenie debugowania nie istnieje dla zestawu skalowania maszyn wirtualnych w Eksploratorze chmury).
 
-      - Wyłącz zdalnego debugera za pomocą skryptów/poleceń cmdlet programu PowerShell
+      - Wyłącz zdalny debuger za pomocą skryptów/poleceń cmdlet programu PowerShell
 
          Dla maszyny wirtualnej:
 
@@ -94,20 +94,20 @@ Do skalowania maszyn wirtualnych/maszyna wirtualna zestawy Usuń pule KeyVaults 
          Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
-      - Wyłącz zdalnego debugera w witrynie Azure portal
-         - Witryna Azure portal > Twojej maszyny wirtualnej/wirtualnego machine scale sets z bloku zasobów > rozszerzenia
-         - Odinstaluj rozszerzenie Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
+      - Wyłącz zdalny debuger za pomocą Azure Portal
+         - Azure Portal > bloku zasobów maszyny wirtualnej/zestawu skalowania maszyn wirtualnych > rozszerzenia
+         - Odinstaluj rozszerzenie Microsoft. VisualStudio. Azure. RemoteDebug. VSRemoteDebugger
 
          > [!NOTE]
-         > Zestawy skalowania maszyn wirtualnych — portalu nie zezwala na usuwanie porty DebuggerListener. Należy użyć programu Azure PowerShell. Zobacz szczegóły poniżej.
+         > Zestawy skalowania maszyn wirtualnych — Portal nie zezwala na usuwanie portów DebuggerListener. Musisz użyć Azure PowerShell. Aby uzyskać szczegółowe informacje, zobacz poniżej.
 
-2. Usuń certyfikaty i usługa Azure KeyVault
+2. Usuń certyfikaty i Magazyn kluczy platformy Azure
 
-   Podczas instalowania rozszerzenia debugera zdalnego dla maszyny wirtualnej lub zestawy skalowania maszyn wirtualnych, certyfikaty klienta i serwera są tworzone do uwierzytelniania klienta w PORÓWNANIU z maszyny wirtualnej platformy Azure lub zasobów zestawów skalowania maszyn wirtualnych.
+   Podczas instalowania rozszerzenia debugera zdalnego dla maszyny wirtualnej lub zestawu skalowania maszyn wirtualnych można utworzyć zarówno certyfikaty klienta, jak i serwera, aby uwierzytelniać klienta programu VS przy użyciu zasobów maszyn wirtualnych platformy Azure/zestawów skalowania maszyn wirtualnych.
 
    - Certyfikat klienta
 
-      Ten certyfikat jest certyfikat z podpisem własnym na terenie Cert: / CurrentUser/Moje /
+      Ten certyfikat jest certyfikatem z podpisem własnym znajdującym się w certyfikacie:/CurrentUser/my/
 
       ```
       Thumbprint                                Subject
@@ -116,7 +116,7 @@ Do skalowania maszyn wirtualnych/maszyna wirtualna zestawy Usuń pule KeyVaults 
       1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
-      Jednym ze sposobów, aby usunąć ten certyfikat z Twojego komputera jest za pomocą programu PowerShell
+      Jednym ze sposobów usunięcia tego certyfikatu z komputera jest za pośrednictwem programu PowerShell
 
       ```powershell
       $ResourceName = 'ResourceName' # from above
@@ -124,11 +124,11 @@ Do skalowania maszyn wirtualnych/maszyna wirtualna zestawy Usuń pule KeyVaults 
       ```
 
    - Certyfikat serwera
-      - Odpowiednie odcisk palca certyfikatu serwera jest wdrażany jako wpis tajny do magazynu kluczy Azure. VS spróbuje znaleźć lub utworzyć magazynu kluczy z prefiksem MSVSAZ * w regionie odpowiadające maszynie wirtualnej lub zasobie zestawów skalowania maszyn wirtualnych. Wszystkie maszyny wirtualnej lub maszyny wirtualnej zestawów skalowania zasobów, w którym wdrożona w związku z tym współużytkują ten sam magazyn kluczy.
-      - Aby usunąć wpis tajny odcisk palca dla certyfikatu serwera, przejdź do witryny Azure portal i Znajdź KeyVault MSVSAZ * w tym samym regionie, który jest hostem zasobu. Usuń klucz tajny, który powinien być oznaczony jako `remotedebugcert<<ResourceName>>`
-      - Należy również usunąć tajnego klucza serwera z zasobu za pomocą programu PowerShell.
+      - Odpowiedni odcisk palca certyfikatu serwera jest wdrażany jako klucz tajny magazynu kluczy platformy Azure. Program VS podejmie próbę znalezienia lub utworzenia magazynu kluczy z prefiksem MSVSAZ * w regionie odpowiadającym zasobie maszyny wirtualnej lub zestawu skalowania maszyn wirtualnych. Wszystkie zasoby maszyn wirtualnych i zestawów skalowania maszyn wirtualnych wdrożone w tym regionie będą współużytkować ten sam magazyn kluczy.
+      - Aby usunąć wpis tajny odcisku palca certyfikatu serwera, przejdź do Azure Portal i Znajdź Magazyn kluczy MSVSAZ * w tym samym regionie, w którym znajduje się zasób. Usuń klucz tajny, który powinien być oznaczony etykietą`remotedebugcert<<ResourceName>>`
+      - Należy również usunąć klucz tajny serwera z zasobu za pośrednictwem programu PowerShell.
 
-      W przypadku maszyn wirtualnych:
+      Dla maszyn wirtualnych:
 
       ```powershell
       $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
@@ -142,9 +142,9 @@ Do skalowania maszyn wirtualnych/maszyna wirtualna zestawy Usuń pule KeyVaults 
       Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
       ```
 
-3. Usuń wszystkie pule translatora adresów Sieciowych dla ruchu przychodzącego DebuggerListener (tylko zestaw skalowania maszyn wirtualnych)
+3. Usuń wszystkie DebuggerListener przychodzące pule NAT (tylko zestaw skalowania maszyn wirtualnych)
 
-   Zdalny debuger wprowadza DebuggerListener pule translatora adresów Sieciowych przychodzącego, które są stosowane do modułu równoważenia obciążenia z zestawu skalowania.
+   Zdalny debuger wprowadza DebuggerListener w powiązane pule NAT, które są stosowane do modułu równoważenia obciążenia zestawu skalowania.
 
    ```powershell
    $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
@@ -158,30 +158,30 @@ Do skalowania maszyn wirtualnych/maszyna wirtualna zestawy Usuń pule KeyVaults 
    }
    ```
 
-#### <a name="how-do-i-disable-snapshot-debugger"></a>Jak wyłączyć rozszerzenie Snapshot Debugger?
+#### <a name="how-do-i-disable-snapshot-debugger"></a>Jak mogę wyłączyć Snapshot Debugger?
 
-Dla usługi App Service:
-1. Wyłącz rozszerzenia Snapshot Debugger w witrynie Azure portal dla usługi App Service.
-2. Witryna Azure portal > Blok zasobu usługi aplikacji > *ustawień aplikacji*
-3. Usuń następujące ustawienia aplikacji w witrynie Azure portal, a następnie zapisz zmiany.
+Dla App Service:
+1. Wyłącz Snapshot Debugger za pośrednictwem Azure Portal App Service.
+2. Azure Portal > bloku zasobów usługi aplikacji > *ustawień aplikacji*
+3. Usuń następujące ustawienia aplikacji z Azure Portal i Zapisz zmiany.
    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
    > [!WARNING]
-   > Zmiany w ustawieniach aplikacji zostanie zainicjowana ponowne uruchomienie aplikacji. Aby uzyskać więcej informacji na temat ustawień aplikacji, zobacz [skonfigurować aplikację usługi App Service w witrynie Azure portal](/azure/app-service/web-sites-configure).
+   > Wszelkie zmiany ustawień aplikacji spowodują zainicjowanie ponownego uruchomienia aplikacji. Aby uzyskać więcej informacji na temat ustawień aplikacji, zobacz [Konfigurowanie aplikacji App Service w Azure Portal](/azure/app-service/web-sites-configure).
 
-Dla usługi AKS:
-1. Aktualizacja z pliku Dockerfile, aby usunąć sekcje odpowiadające [Visual Studio Snapshot Debugger w obrazach Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
-2. Ponownie skompiluj i wdróż zmodyfikowany obraz Docker.
+Dla AKS:
+1. Zaktualizuj pliku dockerfile, aby usunąć sekcje odpowiadające [Visual Studio Snapshot Debugger na obrazach platformy Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Kompiluj ponownie i Wdróż zmodyfikowany obraz platformy Docker.
 
-Dla zestawów skalowania maszyn wirtualnych/maszyna wirtualna:
+W przypadku maszyn wirtualnych i zestawów skalowania maszyn wirtualnych:
 
-Istnieje kilka sposobów, aby wyłączyć rozszerzenia Snapshot Debugger:
-- Eksplorator chmury > zasobów w zestawie skalowania maszyn wirtualnych/maszyna wirtualna > Wyłącz diagnostyki
+Istnieje kilka sposobów wyłączenia Snapshot Debugger:
+- Program Cloud Explorer > swoją maszynę wirtualną/zasób zestawu skalowania maszyn wirtualnych > wyłączyć diagnostykę
 
-- Witryna Azure portal > bloku zasobów w zestawie skalowania maszyn wirtualnych/maszyna wirtualna > Rozszerzenia > Microsoft.Insights.VMDiagnosticsSettings odinstalować rozszerzenie
+- Azure Portal > bloku zasobów maszyny wirtualnej/zestawu skalowania maszyn wirtualnych > rozszerzenia > Odinstaluj rozszerzenie Microsoft. Insights. VMDiagnosticsSettings
 
-- Polecenia cmdlet programu PowerShell z [Az programu PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- Polecenia cmdlet programu PowerShell z programu [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
    Maszyna wirtualna:
 
@@ -198,8 +198,8 @@ Istnieje kilka sposobów, aby wyłączyć rozszerzenia Snapshot Debugger:
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Debugowanie na żywo aplikacji ASP.NET, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md)
-- [Debugowanie na żywo maszyn wirtualnych Machines\Virtual Azure ASP.NET scale sets przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
-- [Debugowanie na żywo ASP.NET Azure Kubernetes za pomocą rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
-- [Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Debuguj zestawy skalowania maszyn wirtualnych ASP.NET platformy Azure na żywo przy użyciu Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Debuguj Live ASP.NET Azure Kubernetes przy użyciu Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
+- [Rozwiązywanie problemów i znane problemy związane z debugowaniem migawek](../debugger/debug-live-azure-apps-troubleshooting.md)

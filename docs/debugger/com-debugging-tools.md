@@ -1,5 +1,5 @@
 ---
-title: Narzędzia debugowania COM | Dokumentacja firmy Microsoft
+title: Narzędzia debugowania modelu COM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,30 +21,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181596e7b76dc2288da82e731455710fde0205d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564746"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211276"
 ---
 # <a name="com-debugging-tools"></a>Narzędzia debugowania COM
 
-Ten temat zawiera narzędzia, które mogą pomóc Ci testowanie i sprawdzanie programy COM.
+Ten temat zawiera listę narzędzi, które mogą pomóc w testowaniu i sprawdzaniu programów COM.
 
 Przeglądarka obiektów OLE/COM
 
-OLEVIEW Wyświetla zainstalowane na komputerze i interfejsy, które obsługują obiekty ActiveX i OLE. Umożliwia także edytować rejestr i przyjrzyj się bibliotek typów.
+OLEVIEW wyświetla ActiveX i obiekty OLE zainstalowane na komputerze oraz obsługiwane przez nich interfejsy. Pozwala również edytować rejestr i przeglądać biblioteki typów.
 
 Przykłady klas Microsoft Foundation
 
-Przykłady MFC ActiveX OCLIENT i SUPERPAD są również możliwe było przetestowanie aplikacji przed. Dołączono pełny kod źródłowy dla tych przykładów.
+Przykłady kontrolek ActiveX MFC OCLIENT i SUPERPAD są również dostępne do testowania aplikacji. Uwzględniono pełny kod źródłowy tych przykładów.
 
 ### <a name="see-also"></a>Zobacz także
 
 - [Debugowanie aplikacji COM i kontrolek ActiveX](../debugger/com-and-activex-debugging.md)
 - [Narzędzia debugowania COM](../debugger/com-debugging-tools.md)
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
-- [Przykład OCLIENT: Pokazuje wizualną edycję aplikacji kontenera](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Przykład SUPERPAD: Pokazuje wizualną edycję serwera, który umożliwia edycję tekstu za pomocą CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Przykład OCLIENT: Ilustruje wizualną edycję kontenera aplikacji](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [Przykład SUPERPAD: Demonstruje serwer edycji wizualnej, który Edytuje tekst za pomocą elementu CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d71200c6c7fbb61e7994119fde5e75f7623fa669
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 79585cd9cae31f46a9506085c9c8faf5b5844d44
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547192"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234087"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Wyliczenia z atrybutem Flags powinny mieć nazwy w liczbie mnogiej
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547192"
 |TypeName|FlagsEnumsShouldHavePluralNames|
 |CheckId|CA1714|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 

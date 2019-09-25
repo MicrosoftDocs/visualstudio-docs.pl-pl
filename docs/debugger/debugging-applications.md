@@ -1,5 +1,5 @@
 ---
-title: Debugowanie aplikacji | Dokumentacja firmy Microsoft
+title: Debugowanie aplikacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,25 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b918559742e9570ba3ad0ad1233ab643d087fdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63d393e5ab056f16e54382b2295a667f079ede95
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852240"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211168"
 ---
 # <a name="debugging-applications"></a>Debugowanie aplikacji
-Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Typy innej aplikacji i różnych języków wymagają różnych ustawień i technik, a obecna różne problemy wymagające można debugować.
+Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Różne typy aplikacji i różne języki wymagają różnych ustawień i technik oraz stwarzają różne problemy, które muszą być debugowane.
 
 ## <a name="debugging-for-different-types-of-applications"></a>Debugowanie dla różnych typów aplikacji
 
 |||
 |-|-|
-|[Debugowanie aplikacji platformy UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|W tym artykule opisano sposób debugowania aplikacji platformy uniwersalnej systemu Windows.|
-|[Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)|W tym artykule opisano sposób debugowania kodu zarządzanego (Visual C#, Visual Basic i F3).|
-|[Debugowanie kodu natywnego](../debugger/debugging-native-code.md)|W tym artykule opisano sposób debugowania inny rodzaj natywnych aplikacji w języku C++.|
-|[Debugowanie kodu GPU](../debugger/debugging-gpu-code.md)|W tym artykule opisano sposób debugowania kodu C++, który jest uruchamiany w jednostce przetwarzania graficznego (GPU).|
-|[Diagnostyka grafiki (debugowanie DirectX graphics)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|W tym artykule opisano, jak debugowanie grafiki DirectX.|
-|[Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|W tym artykule opisano sposób debugowania aplikacji ASP.NET.|
-|[Debugowanie aplikacji internetowych](../debugger/debugging-web-applications.md)|W tym artykule opisano sposób debugowania skryptów i aplikacji sieci Web.|
-|[Debugowanie usług WCF](../debugger/debugging-wcf-services.md)|W tym artykule opisano sposób debugowania usług Windows Communication Foundation.|
+|[Debugowanie aplikacji platformy UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Opisuje sposób debugowania aplikacji platformy UWP.|
+|[Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)|Opisuje sposób debugowania kodu zarządzanego (Visual C#, Visual Basic, F#i C++/CLI).|
+|[Debugowanie kodu natywnego](../debugger/debugging-native-code.md)|Opisuje sposób debugowania różnego rodzaju natywnych C++ aplikacji.|
+|[Debugowanie kodu GPU](../debugger/debugging-gpu-code.md)|Opisuje sposób debugowania C++ kodu, który jest URUCHAMIANY w procesorze GPU.|
+|[Diagnostyka grafiki (Debugowanie grafiki DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Opisuje sposób debugowania grafiki DirectX.|
+|[Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Opisuje sposób debugowania aplikacji ASP.NET.|
+|[Debuguj kod w języku Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Opisuje sposób debugowania kodu w języku Python|
+|[Debugowanie aplikacji JavaScript i TypeScript](/javascript/debug-nodejs.md)|Opisuje sposób debugowania aplikacji JavaScript, TypeScript i Node. js|
+|[Debugowanie aplikacji internetowych](../debugger/debugging-web-applications.md)|Opisuje sposób debugowania aplikacji sieci Web i skryptów.|
+|[Debugowanie usług WCF](../debugger/debugging-wcf-services.md)|Opisuje sposób debugowania usług Windows Communication Foundation.|

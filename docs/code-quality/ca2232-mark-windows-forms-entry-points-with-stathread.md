@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3f5b76015a3a54ee085b5cc2dd532920ff0795
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 06772f8dd91c27834b329293d06cfbc2a7dcfcef
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920176"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230758"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Oznacz punkty wejścia modelu Windows Forms atrybutem STAThread
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920176"
 |TypeName|MarkWindowsFormsEntryPointsWithStaThread|
 |CheckId|CA2232|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez przerywania|
+|Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Zestaw odwołuje się <xref:System.Windows.Forms> do przestrzeni nazw, a jego punkt wejścia nie jest oznaczony <xref:System.STAThreadAttribute?displayProperty=fullName> atrybutem.

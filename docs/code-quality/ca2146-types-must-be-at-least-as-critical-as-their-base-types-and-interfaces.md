@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a70e999505bd900a7b3d89693ef4f6a1cef9de7d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ce7870077cb859a25de70c726c78cad1d50270e5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920423"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231948"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typy muszą być co najmniej tak krytyczne jak ich typy i interfejsy podstawowe
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920423"
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|
 |CheckId|CA2146|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Typ przezroczysty pochodzi <xref:System.Security.SecuritySafeCriticalAttribute> od typu, który jest oznaczony za pomocą <xref:System.Security.SecurityCriticalAttribute>lub lub typu, <xref:System.Security.SecuritySafeCriticalAttribute> który jest oznaczony atrybutem, pochodzi <xref:System.Security.SecurityCriticalAttribute> od typu, który jest oznaczony atrybutem.

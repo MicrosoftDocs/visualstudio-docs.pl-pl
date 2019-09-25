@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4bef51c547d4a1614137e0691343bef635aed50d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921318"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233276"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Pola typu wartości powinny być przenośne
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921318"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
 |Kategoria|Microsoft. przenośność|
-|Zmiana kluczowa|Przerywanie — Jeśli pole może być widoczne poza zestawem.<br /><br /> Bez przerywania — Jeśli pole nie jest widoczne poza zestawem.|
+|Zmiana podziału|Przerywanie — Jeśli pole może być widoczne poza zestawem.<br /><br /> Bez przerywania — Jeśli pole nie jest widoczne poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
 Ta reguła sprawdza, czy struktury zadeklarowane za pomocą jawnego układu są wyrównane prawidłowo, gdy są przekazywane do kodu niezarządzanego w 64-bitowych systemach operacyjnych. IA-64 nie zezwala na niewyrównany dostęp do pamięci, a proces zostanie rozwiązany, jeśli to naruszenie nie zostanie naprawione.

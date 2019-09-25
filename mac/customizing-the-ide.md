@@ -1,33 +1,33 @@
 ---
 title: Dostosowywanie środowiska IDE
-description: Programu Visual Studio dla komputerów Mac można dostosować na różne sposoby, pozwalając użytkownikom na tworzenie aplikacji w środowisku, które spełnia ich wydajność i estetycznych potrzeb. W tym temacie przedstawiono różne sposoby programu Visual Studio for Mac można dostosować do własnych potrzeb.
+description: Visual Studio dla komputerów Mac można dostosować na różne sposoby, umożliwiając użytkownikom opracowywanie aplikacji w środowisku, które spełniają zarówno ich wydajność, jak i estetyczne potrzeby. W tym artykule przedstawiono różne sposoby dostosowania Visual Studio dla komputerów Mac do własnych potrzeb.
 author: alanjclark
 ms.author: alcl
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: ff0c7a2970a9ecfdfb9de08f487ad7dfbe768249
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: fa1e2924e810f9e37f28d5becdfd8d46243b76fe
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691838"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213743"
 ---
 # <a name="customizing-the-ide"></a>Dostosowywanie środowiska IDE
 
-Visual Studio dla komputerów Mac można dostosować różne sposoby, dzięki czemu użytkownicy mogą tworzyć aplikacje w środowisku, które odpowiadają ich potrzebom zarówno efektywność, jak i wyglądu. W tym artykule przedstawiono różne sposoby, w programie Visual Studio for Mac można dostosować do własnych potrzeb.
+Visual Studio dla komputerów Mac można dostosować, umożliwiając użytkownikom opracowywanie aplikacji w środowisku, które zaspokaja ich potrzeby w zakresie wydajności i estetyczności. W tym artykule przedstawiono różne sposoby dostosowania Visual Studio dla komputerów Mac do własnych potrzeb.
 
 ## <a name="dark-theme"></a>Motyw ciemny
 
-![Motyw ciemny widoku](media/customizing-the-ide-image7a.png)
+![Ciemny widok motywu](media/customizing-the-ide-image7a.png)
 
-Możesz przełączać kompozycji w programie Visual Studio dla komputerów Mac, przechodząc do **programu Visual Studio > Preferencje > środowisko > Styl wizualny** i wybierając odpowiednią motywu z **motyw interfejsu użytkownika** listy rozwijanej , jak pokazano na poniższej ilustracji:
+Możesz przełączyć motywy w Visual Studio dla komputerów Mac, przechodząc do okna **preferencji > programu Visual Studio > środowisko > stylu wizualizacji** i wybierając żądany motyw z listy rozwijanej **motyw interfejsu użytkownika** , jak pokazano na poniższej ilustracji:
 
-![Wybór motywu ciemny](media/customizing-the-ide-image7b.png)
+![Ciemny wybór motywu](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Lokalizacja
 
-Program Visual Studio for Mac jest zlokalizowana w następujących językach 14, dzięki czemu może być dostępna dla deweloperów więcej:
+Visual Studio dla komputerów Mac jest lokalizowana w następujących 14 językach, dzięki czemu można uzyskać dostęp do większej liczby deweloperów:
 
 * Chiński — Chiny
 * Chiński — Tajwan
@@ -44,89 +44,93 @@ Program Visual Studio for Mac jest zlokalizowana w następujących językach 14,
 * Hiszpański
 * turecki
 
-Aby zmienić język wyświetlany przez program Visual Studio dla komputerów Mac, przejdź do **programu Visual Studio > Preferencje > środowisko > Styl wizualny** i wybierz żądany język z **język interfejsu użytkownika**listy rozwijanej, jak pokazano na poniższej ilustracji:
+Aby zmienić język wyświetlany przez Visual Studio dla komputerów Mac, przejdź do **okna preferencji > programu Visual Studio > środowisku > stylu wizualizacji** i wybierz żądany język z listy rozwijanej **język interfejsu użytkownika** , jak pokazano w poniższej tabeli. Image
 
 ![Wybór języka](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>Informacje o autorze
 
-Panel informacji Autor umożliwia Dodaj istotne informacje o sobie, takie jak nazwa, adres e-mail właściciela praw autorskich do pracy, firmy, a znak towarowy:
+Panel Informacje o autorze umożliwia dodanie odpowiednich informacji o sobie, takich jak imię i nazwisko, adres e-mail, właściciel praw autorskich dla swojej pracy, firmy i znaku towarowego:
 
-![Edytuj sekcję informacje o autorze](media/customizing-the-ide-image9a.png)
+![Edytuj sekcję informacji o autorze](media/customizing-the-ide-image9a.png)
 
-Te informacje są używane do wypełniania nagłówki standardowych plikowych, takich jak licencji, które można dodać do nowych plików:
+Te informacje służą do wypełniania standardowych nagłówków plików, takich jak licencja, które mogą zostać dodane do nowych plików:
 
-![Standardowe opcje nagłówka](media/customizing-the-ide-image8a.png)
+![Opcje nagłówka standardowego](media/customizing-the-ide-image8a.png)
 
-Wypełnione **nazwa** i **E-mail** pola, które będą używane w dowolnym zatwierdzenia, które jest nawiązywane za pomocą kontroli wersji w programie Visual Studio dla komputerów Mac. Jeśli te pola nie zostały wypełnione, Visual Studio for Mac wyświetli monit Aby to zrobić, podczas próby użycia systemu kontroli wersji.
+Wypełnione **nazwy** i pola **poczty e-mail** będą używane w każdym zatwierdzeniu, które odbywa się za pośrednictwem kontroli wersji w Visual Studio dla komputerów Mac. Jeśli te pola nie zostały wypełnione, Visual Studio dla komputerów Mac wyświetli monit o to, gdy spróbujesz użyć kontroli wersji.
 
-## <a name="key-bindings"></a>Powiązania klawiszy
+## <a name="key-bindings"></a>Powiązania kluczy
 
-Powiązania kluczy pozwalają dostosować swoje Środowisko deweloperskie, dzięki czemu można przenosić efektywniej w programie Visual Studio dla komputerów Mac. Oferuje ona powiązań klawiszy dla znanych wieloma popularnymi środowiskami IDE, takie jak Visual Studio (na Windows), ReSharper, Visual Studio Code i Xcode.
+Kluczowe powiązania lub skróty klawiaturowe umożliwiają dostosowanie środowiska programistycznego, co pozwala na efektywniejsze przechodzenie w Visual Studio dla komputerów Mac. Zapewnia znane kluczowe powiązania dla wielu popularnych środowisk IDE, takich jak Visual Studio (w systemie Windows), programy do powiększania, Visual Studio Code i Xcode.
 
-Można ustawić powiązań klawiszy, przechodząc do **programu Visual Studio > Preferencje > środowisko > klucz powiązania**, jak pokazano na poniższej ilustracji:
+Powiązania kluczy można ustawić przez przechodzenie do **preferencji > programu Visual Studio > > kluczowe powiązania środowiska**, jak pokazano na poniższej ilustracji:
 
-![Ustaw klucz powiązania](media/customizing-the-ide-image10a.png)
+![Ustawianie powiązań kluczy](media/customizing-the-ide-image10a.png)
 
-W tym miejscu można wyszukać kombinacje powiązanie klawiszy, Wyświetlanie powiązań powodujące konflikt, Dodaj nowe powiązania i edytować istniejące powiązania.
+W tym miejscu możesz wyszukiwać kombinacje kluczy powiązań, wyświetlać powiązania powodujące konflikty, dodawać nowe powiązania i edytować istniejące powiązania.
+
+Te powiązania można również ustawić podczas początkowej konfiguracji Visual Studio dla komputerów Mac przy użyciu ekranu **wyboru klawiatury** :
+
+![Ustawianie powiązań kluczy, pierwsze uruchomienie](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>Układ obszaru roboczego
 
-Program Visual Studio dla komputerów Mac w obszarze roboczym składa się obszaru głównego dokumentu (zwykle edytora, powierzchni projektanta lub plik opcji) otoczony bezpłatnych *okienka* które zawierają przydatne informacje dotyczące uzyskiwania dostępu do aplikacji i zarządzanie pliki, testowanie i debugowanie.
+Obszar roboczy Visual Studio dla komputerów Mac składa się z głównego obszaru dokumentu (zwykle edytora, powierzchni projektanta lub pliku opcji), otoczone przez uzupełniające *konsole* zawierające przydatne informacje umożliwiające dostęp do plików aplikacji, testowanie i debugera.
 
  ![Układ obszaru roboczego](media/customizing-the-ide-image1a.png)
 
-### <a name="viewing-and-arranging-pads"></a>Przeglądanie i rozmieszczanie okienka
+### <a name="viewing-and-arranging-pads"></a>Przeglądanie i rozmieszczanie konsol
 
-Po otwarciu dowolnego nowego rozwiązania lub pliku w programie Visual Studio dla komputerów Mac, użytkownik zauważy, niektóre *okienka* w obszarze roboczym, w tym okienku rozwiązania, konspekt dokumentu i błędy:
+Po otwarciu nowego rozwiązania lub pliku w Visual Studio dla komputerów Mac należy zauważyć, że niektóre *konsole* znajdują się w obszarze roboczym, w tym okienko rozwiązania, konspekt dokumentu i błędy:
 
-![Okienka rozwiązania](media/customizing-the-ide-image2a.png)
+![Konsole rozwiązań](media/customizing-the-ide-image2a.png)
 
-Program Visual Studio dla komputerów Mac udostępnia okienka zawierającego dodatkowe informacje, narzędzia i nawigacji pomocy, wszystkie z nich jest możliwy, przechodząc do **Widok > okienka** element menu i wybierając pozycję Konsola, aby dodać go:
+Visual Studio dla komputerów Mac zawiera konsole zawierające dodatkowe informacje, narzędzia i ułatwienia nawigacji, do których wszystkie są dostępne, przechodząc do **widoku widok > konsole** , a następnie wybierając konsolę, aby ją dodać:
 
-![Wybierz nowy konsoli](media/customizing-the-ide-image3a.png)
+![Wybierz nową konsolę](media/customizing-the-ide-image3a.png)
 
-Okienka mogą również automatycznie otwarty przez różne polecenia, takie jak **Znajdź w plikach** (Shift + Cmd + F) polecenia, co spowoduje otwarcie odłączony konsolę wyników wyszukiwania.
+Konsole mogą być również otwierane automatycznie przez różne polecenia, takie jak **Znajdź w plikach** (Shift + Cmd + F), które otwiera odłączoną konsolę wyników wyszukiwania.
 
-Podkładki można przenieść i ułożone w całym przepływie pracy w sposób, który jest najbardziej przydatne. Na przykład może być zadokowane po dowolnej stronie edytora dokumentów, przylegające do innej konsoli, powyżej lub poniżej innej konsoli lub jako zbiór okienka z zakładkami, dzięki któremu można szybko przełączać się między nimi.
+Konsole można przenosić i rozmieszczać w całym przepływie pracy w dowolny sposób, który jest najbardziej przydatny dla Ciebie. Na przykład można zadokować je na dowolnej stronie edytora dokumentów, sąsiadująco z inną konsolą, powyżej lub pod inną konsolą lub jako zestaw konsol z kartami, dzięki czemu można szybko przełączać się między nimi.
 
-Dla często używanych okienka można również całkowicie odłączyć konsoli w programie Visual Studio dla komputerów Mac okna i utworzyć oddzielne okno dla tej konsoli.
+W przypadku często używanych konsol można również całkowicie odłączyć konsolę od okna Visual Studio dla komputerów Mac i utworzyć osobne okno dla tej konsoli.
 
-Podkładki można ukryte i zamknięte przez przełączników w prawym górnym rogu każdej konsoli:
+Konsole mogą być ukrywane i zamykane za pomocą przełączników w prawym górnym rogu poszczególnych konsol:
 
-![Ukrywanie i zamykanie okienka](media/customizing-the-ide-image5a.png)
+![Ukrywanie i zamykanie konsol](media/customizing-the-ide-image5a.png)
 
-Okienka Autohidden są zadokowane do krawędzi obszaru roboczego, również łatwo dostępne, gdy są one wymagane. Kursor konsolę wyświetla go ponownie i zostaną ukryte, gdy pojawią się utraci fokus klawiatury i myszy.
+Autoukryte konsole są zadokowane po bokach obszaru roboczego, dzięki czemu są one łatwo dostępne, gdy są wymagane. Umieszczenie kursora nad konsolą zostanie ponownie wyświetlone i zostanie ono ukryte, gdy wskaźnik myszy i fokusu zostanie pozostawiony.
 
 ### <a name="organizing-layouts"></a>Organizowanie układów
 
-Okienka, które są wyświetlane w dowolnym momencie są zależne od bieżącego kontekstu. Na przykład korzystając z projektanta wizualnego, okienka siatki przybornika i właściwości są dla Ciebie najważniejsze; debugowanie, warto okienka debugera w celu wyświetlania stosu i zmienne lokalne.
+Konsole, które są wyświetlane w dowolnym momencie, są zależne od bieżącego kontekstu. Na przykład podczas korzystania z projektanta wizualnego, Przybornik i konsole siatki właściwości są najważniejsze. podczas debugowania przydatne jest posiadanie konsol debugera do wyświetlania stosu i elementów lokalnych.
 
-Stan okienka open jest reprezentowany przez *układ*. Układy można dostosować ręcznie za pośrednictwem menu Widok, jak pokazano na poniższej ilustracji, lub przełączania automatycznie po wykonaniu akcji, takich jak debugowanie lub otwierania scenorysu:
+Stan otwartych multiplekserów jest reprezentowany przez *Układ*. Układy można przełączać ręcznie za pomocą menu Widok, jak pokazano na poniższej ilustracji, lub są automatycznie przełączane podczas wykonywania akcji, takich jak debugowanie lub otwieranie scenorysu:
 
-![Wybieranie nowego układów](media/customizing-the-ide-image6b.png)
+![Wybieranie nowych układów](media/customizing-the-ide-image6b.png)
 
-Istnieje jeden aktywny układ i wszelkie zmiany wprowadzone w układzie, takie jak dodanie lub zmiana położenia konsoli spowoduje jedynie zmianę aktywny układ. Po zamknięciu programu Visual Studio dla komputerów Mac, nie można zapisać zmiany wprowadzone przez użytkownika.
+Zawsze istnieje aktywny układ i wszelkie zmiany wprowadzone w układzie, takie jak dodanie lub zmiana położenia konsoli, spowoduje jedynie zmianę aktywnego układu. Po zamknięciu Visual Studio dla komputerów Mac wprowadzone zmiany nie zostaną zapisane.
 
-Jednak jest możliwe utworzenie nowego układu przy użyciu **Widok > Zapisz bieżący układ** elementu menu. Bieżący układ spowoduje to dodanie do menu, aby wybrać go w dowolnym momencie:
+Istnieje jednak możliwość utworzenia nowego układu przy użyciu elementu menu **widok > Zapisz bieżący układ** . To polecenie spowoduje dodanie bieżącego układu do menu, aby można było je wybrać w dowolnym momencie:
 
 ![Zapisz bieżący układ](media/customizing-the-ide-image6a.png)
 
-### <a name="side-by-side-editing-support"></a>Side-by-side edycji pomocy technicznej
+### <a name="side-by-side-editing-support"></a>Obsługa edycji równoczesnej
 
-Program Visual Studio for Mac pozwala na otwieranie edytorów tekstu obok siebie lub być odłączony przestawne okno edytora.
+Visual Studio dla komputerów Mac pozwala na otwieranie edytorów tekstu obok siebie lub w celu uzyskania edytora jako odłączonego okna.
 
-tryb 2 kolumn można włączyć za pośrednictwem widoku elementu menu, wybierając **Widok > kolumny edytora > 2 kolumny**, lub poprzez przeciąganie kartę Edytor do jednej krawędzi obszaru Edytor:
+Tryb dwóch kolumn można włączyć za pomocą elementu menu Widok, wybierając opcję **wyświetl > kolumny edytora > 2 kolumny**lub przeciągając kartę edytora do jednej z krawędzi obszaru edytora:
 
-![Tryb side-by-side dwie kolumny](media/customizing-the-ide-sbs.png)
+![Dwukolumnowy tryb Side-by-Side](media/customizing-the-ide-sbs.png)
 
-Edytor karty można przeciągnąć poza obszar dokumentu, aby utworzyć przestawne okno edytora. To okno przestawne również obsługuje edytory side-by-side i może zawierać kilka Edytor karty:
+Tabulatory edytora można przeciągać poza obszar dokumentu w celu utworzenia przepływającego okna edytora. To przestawne okno obsługuje również edytorów równoległych i może zawierać kilka kart edytora:
 
-![Tworzenie nowego okna](media/customizing-the-ide-sbs1.png)
+![Utwórz nowe okno](media/customizing-the-ide-sbs1.png)
 
-![Dwie kolumny obok dodatkowe karty](media/customizing-the-ide-sbs2.png)
+![Dwie kolumny obok siebie z dodatkowymi kartami](media/customizing-the-ide-sbs2.png)
 
-Aby powrócić do jednego, Otwórz Edytor, wybierz **Widok > kolumny edytora > 1 kolumnowego**.
+Aby przywrócić pojedynczy otwarty Edytor, wybierz pozycję **wyświetl > kolumny edytora > 1 kolumna**.
 
 ## <a name="related-video"></a>Pokrewne wideo
 
@@ -134,4 +138,4 @@ Aby powrócić do jednego, Otwórz Edytor, wybierz **Widok > kolumny edytora > 1
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Personalizowanie programu Visual Studio IDE (na Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)
+- [Personalizowanie środowiska IDE programu Visual Studio (w systemie Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

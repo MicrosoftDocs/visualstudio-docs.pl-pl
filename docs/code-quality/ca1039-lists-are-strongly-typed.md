@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94b1e8134eb89e4ae78ec0ad6f07fd7406215185
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fcc399457f4dde1c65836d9c9498c782ba92ecc2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922841"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235986"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listy są silnie typizowane
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922841"
 |TypeName|ListsAreStronglyTyped|
 |CheckId|CA1039|
 |Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Kluczowa|
+|Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
