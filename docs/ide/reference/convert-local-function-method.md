@@ -1,48 +1,44 @@
 ---
-title: Konwertuj funkcją lokalną do metody
+title: Konwertuj funkcję lokalną na metodę
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccddc3aef24ba14245dc568ca5f369e38ce8eba0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531639"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301695"
 ---
-# <a name="convert-a-local-function-to-a-method"></a>Konwertuj funkcją lokalną do metody
+# <a name="convert-a-local-function-to-a-method"></a>Konwertuj funkcję lokalną na metodę
 
 Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
-- Visual Basic
 
-**Co:** Konwertuj funkcją lokalną do metody.
+**Whatman** Konwertuj funkcję lokalną na metodę.
 
-**Kiedy:** Masz lokalne funkcja, która ma zostać zdefiniowana poza bieżący kontekst lokalnego.
+**Czasie** Masz funkcję lokalną, którą chcesz zdefiniować poza bieżącym kontekstem lokalnym.
 
-**Dlaczego:** Chcesz przekonwertować funkcją lokalną do metody, aby wywołując poza lokalnego kontekstu. Można przekonwertować do metody, pobierając lokalnych funkcji jest zbyt długa. Po zdefiniowaniu funkcji w oddzielnych metodach kod jest łatwiejsza do odczytania.
+**Zalet** Chcesz skonwertować funkcję lokalną na metodę, aby można było ją wywołać poza kontekstem lokalnym. Możesz chcieć skonwertować na metodę, gdy funkcja lokalna jest zbyt długa. Podczas definiowania funkcji w osobnej metodzie kod jest łatwiejszy do odczytania.
 
-## <a name="convert-local-function-to-method-refactoring"></a>Konwertuj funkcję lokalnego do refaktoryzacji — metoda
+## <a name="convert-local-function-to-method-refactoring"></a>Konwertuj funkcję lokalną na refaktoryzację metody
 
 1. Umieść kursor w funkcji lokalnej.
 
-    ![Konwertuj funkcją lokalną do przykładowego kodu — metoda](media/convert-local-function-to-method.png)
+    ![Konwertowanie funkcji lokalnej na przykład kodu metody](media/convert-local-function-to-method.png)
 
-2. Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+2. Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
 
-    ![Konwertuj funkcję lokalnych na przykład poprawki kodu — metoda](media/convert-local-function-to-method-codefix.png)
+    ![Konwertuj funkcję lokalną na przykład naprawy kodu metody](media/convert-local-function-to-method-codefix.png)
 
-2. Naciśnij klawisz Enter, aby zaakceptować refaktoryzacji.
+2. Naciśnij klawisz ENTER, aby zaakceptować refaktoryzację.
 
-    ![Konwertuj funkcję lokalnego próbkę wynik, metoda](media/convert-local-function-to-method-result.png)
+    ![Przykład konwersji funkcji lokalnej na wynik metody](media/convert-local-function-to-method-result.png)
 
 ## <a name="see-also"></a>Zobacz także
 
