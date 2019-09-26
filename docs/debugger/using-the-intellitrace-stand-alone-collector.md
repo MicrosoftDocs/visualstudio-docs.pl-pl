@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680630"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252528"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Korzystanie z autonomicznego modułu zbierającego IntelliTraceC#(, Visual Basic)
 
@@ -121,7 +121,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 1. Na serwerze aplikacji otwórz okno wiersza polecenia jako administrator.
 
-2. Użyj polecenia **icacls** systemu Windows, aby nadać administratorowi serwera pełne uprawnienia do katalogu modułu zbierającego. Przykład:
+2. Użyj polecenia **icacls** systemu Windows, aby nadać administratorowi serwera pełne uprawnienia do katalogu modułu zbierającego. Na przykład:
 
      `icacls "C:\IntelliTraceCollector" /grant "` *Domain\AdministratorID\<>* `":F`
 
@@ -135,7 +135,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
     2. Nadaj puli aplikacji aplikacji sieci Web lub aplikacji programu SharePoint uprawnienia do odczytu i wykonania do katalogu modułu zbierającego.
 
-         Przykład:
+         Na przykład:
 
         - W przypadku aplikacji sieci Web w **puli aplikacji z** identyfikatorem usługi
 
@@ -183,7 +183,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 2. W przypadku aplikacji sieci Web lub aplikacji programu SharePoint nadaj jej pulę aplikacji pełne uprawnienia do katalogu plików. iTrace. Można użyć polecenia **icacls** systemu Windows lub Eksploratora Windows (lub Eksploratora plików).
 
-    Przykład:
+    Na przykład:
 
    - Aby skonfigurować uprawnienia za pomocą polecenia **icacls** systemu Windows:
 
@@ -315,7 +315,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
   - Można skrócić czas uruchamiania, wyłączając zdarzenia, które nie są istotne dla aplikacji. Na przykład Wyłącz zdarzenia Windows Workflow dla aplikacji, które nie używają przepływu pracy systemu Windows.
 
-  - Można zwiększyć wydajność uruchamiania i środowiska uruchomieniowego, wyłączając zdarzenia rejestru dla aplikacji, które uzyskują dostęp do rejestru, ale nie wykazują problemów z ustawieniami rejestru.
+  - Można poprawić wydajność uruchamiania i uruchamiania, wyłączając zdarzenia rejestru dla aplikacji, które uzyskują dostęp do rejestru, ale nie wykazują problemów z ustawieniami rejestru.
 
 - Przejrzyj moduły w planie kolekcji, dla którego IntelliTrace zbiera dane. Edytuj plan kolekcji w celu uwzględnienia tylko interesujących Cię modułów:
 

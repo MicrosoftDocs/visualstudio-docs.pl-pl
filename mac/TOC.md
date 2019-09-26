@@ -95,6 +95,10 @@
 ## [Aplikacje mobilne na platformie Xamarin](/visualstudio/mac/xamarin)
 
 # [Ułatwienia dostępu](accessibility.md)
+## [Ustawianie opcji ułatwień dostępu środowiska IDE](accessibility-ide-options.md)
+## [Korzystanie z narzędzi ułatwień dostępu systemu macOS](accessibility-macos.md)
+### [Używanie nawigacji za pomocą klawiatury](accessibility-keyboard.md)
+### [Korzystanie z usługi VoiceOver](accessibility-voiceover.md)
 
 # Rozwiązywanie problemów
 ## [Dzienniki i wyjątki](troubleshooting.md)
