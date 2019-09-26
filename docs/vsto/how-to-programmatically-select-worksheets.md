@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Programowe Zaznaczanie arkuszy'
+title: 'Instrukcje: Programowe Wybieranie arkuszy'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,48 +13,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b56df406049f3f4076f6e4d1efebcf0eb2abb18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20ebc8fea14b3dc52c802543f97318ec7fae7529
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962301"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255630"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Instrukcje: Programowe Zaznaczanie arkuszy
-  <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> Metoda wybiera określony obiekt, który przenosi wybranych przez użytkownika do nowego obiektu. Użyj <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> metody, aby przenieść fokus do obiektu bez wprowadzania zmian w wybranych przez użytkownika.
+# <a name="how-to-programmatically-select-worksheets"></a>Porady: Programowe Wybieranie arkuszy
+  <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> Metoda wybiera określony obiekt, który przenosi zaznaczenie użytkownika do nowego obiektu. Użyj metody <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> , jeśli chcesz przenieść fokus do obiektu bez zmiany wyboru użytkownika.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Jeśli chcesz wybrać istniejącego arkusza w dodatku narzędzi VSTO dla programów lub jeśli arkusz został utworzony w czasie wykonywania w dostosowaniu na poziomie dokumentu, należy uruchomić je przy użyciu programu Excel <xref:Microsoft.Office.Interop.Excel.Sheets> kolekcji skoroszytu programu Excel; w przeciwnym razie możesz uzyskać dostęp <xref:Microsoft.Office.Tools.Excel.Worksheet>bezpośrednio element hosta.
+ Jeśli chcesz wybrać istniejący arkusz w dodatku VSTO lub jeśli arkusz został utworzony w czasie wykonywania w dostosowaniu na poziomie dokumentu, musisz uzyskać do niego dostęp przy użyciu kolekcji programu Excel <xref:Microsoft.Office.Interop.Excel.Sheets> skoroszytu programu Excel. w przeciwnym razie możesz uzyskać dostęp do <xref:Microsoft.Office.Tools.Excel.Worksheet>element hosta bezpośrednio.
 
-## <a name="use-the-worksheet-host-item"></a>Użyj element hosta arkusza
- W dostosowaniu na poziomie dokumentu, Dodaj następujący kod do *Sheet1.vb* lub *Sheet1.cs*.
+## <a name="use-the-worksheet-host-item"></a>Użyj elementu hosta arkusza
+ W dostosowaniu na poziomie dokumentu Dodaj następujący kod do *Arkusz1. vb* lub *Sheet1.cs*.
 
-### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>Aby wybrać pierwszego arkusza w skoroszycie, przy użyciu elementu hosta
+### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>Aby wybrać pierwszy arkusz w skoroszycie przy użyciu elementu hosta
 
-1. Wywołaj <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> metody `Sheet1`.
+1. Wywołaj`Sheet1`metodę <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#19)]
 
-## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Korzystać z kolekcji arkuszy skoroszytu programu Excel
- Dostęp do arkusza za pomocą programu Excel <xref:Microsoft.Office.Interop.Excel.Sheets> kolekcji.
+## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Korzystanie z kolekcji arkuszy skoroszytu programu Excel
+ Dostęp do arkusza przy użyciu kolekcji programu <xref:Microsoft.Office.Interop.Excel.Sheets> Excel.
 
-### <a name="to-select-the-first-worksheet-in-a-workbook-using-the-sheets-collection-of-the-excel-workbook"></a>Aby wybrać pierwszego arkusza w skoroszycie, przy użyciu kolekcji arkuszy skoroszytu programu Excel
+### <a name="to-select-the-first-worksheet-in-a-workbook-using-the-sheets-collection-of-the-excel-workbook"></a>Aby zaznaczyć pierwszy arkusz w skoroszycie przy użyciu kolekcji arkusze skoroszytu programu Excel
 
-1. Wywołaj <xref:Microsoft.Office.Interop.Excel.Sheets.Select%2A> metody <xref:Microsoft.Office.Interop.Excel.Sheets> kolekcji, aby zaznaczyć pierwszy arkusz aktywnym skoroszycie.
+1. Wywołaj <xref:Microsoft.Office.Interop.Excel.Sheets> metodę kolekcji, aby zaznaczyć pierwszy arkusz aktywnego skoroszytu. <xref:Microsoft.Office.Interop.Excel.Sheets.Select%2A>
 
      [!code-csharp[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#20)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Praca z arkuszami](../vsto/working-with-worksheets.md)
-- [Instrukcje: Programowe Drukowanie arkuszy](../vsto/how-to-programmatically-print-worksheets.md)
-- [Instrukcje: Programowe usuwanie arkuszy ze skoroszytu](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
+- [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
+- [Instrukcje: Programowe drukowanie arkuszy](../vsto/how-to-programmatically-print-worksheets.md)
+- [Instrukcje: Programowe usuwanie arkuszy ze skoroszytów](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
 - [Instrukcje: Programowe ukrywanie arkuszy](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Instrukcje: Programowe Włączanie ochrony arkuszy](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Element hosta arkusza](../vsto/worksheet-host-item.md)
 - [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
+- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676734"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253039"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Korzystanie z narzędzi Visual Studio Tools for Unity
 
@@ -91,7 +91,7 @@ Aby utworzyć pusty definicje metod MonoBehavior za pomocą Kreatora MonoBehavio
 
 Eksplorator projektu środowiska Unity pokazuje wszystkie pliki projektu środowiska Unity i katalogów w taki sam sposób, który wykonuje Unity Editor. Stanowi to odmianę przechodząc skrypty Unity za pomocą normalnego Eksploratorze rozwiązań Visual Studio, który organizuje ich w projekty i rozwiązania, generowane przez program Visual Studio.
 
-- W menu głównym programu Visual Studio wybierz **Widok > Eksploratora projektów aparatu Unity**. Klawisz skrótu: **ALT**+**Shift**+**E**
+- W menu głównym programu Visual Studio wybierz **Widok > Eksploratora projektów aparatu Unity**. Skrót klawiaturowy: **ALT**+**Shift**+**E**
 
    ![Wyświetl okno Eksploratora projektów aparatu Unity. ](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -181,7 +181,7 @@ Należy pamiętać, że opisanym tutaj scenariuszu założono, że kod źródło
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Debugowanie zarządzanego projektu biblioteki DLL używane w swoim projekcie aparatu Unity
 
-1. Dodaj istniejący projekt DLL do rozwiązania Visual Studio, generowane przez program Visual Studio Tools for Unity. Rzadziej może być rozpoczynaniu nowego zarządzanego projektu biblioteki DLL zawiera składniki kodu w swoim projekcie aparatu Unity; Jeśli tak jest rzeczywiście, możesz zamiast tego dodać nowego zarządzanego projektu biblioteki DLL do rozwiązania Visual Studio. Aby uzyskać więcej informacji na temat dodawania nowego lub istniejącego projektu do rozwiązania, zobacz [jak: Dodaj do rozwiązania, projekty](https://msdn.microsoft.com/library/ff460187.aspx).
+1. Dodaj istniejący projekt DLL do rozwiązania Visual Studio, generowane przez program Visual Studio Tools for Unity. Rzadziej może być rozpoczynaniu nowego zarządzanego projektu biblioteki DLL zawiera składniki kodu w swoim projekcie aparatu Unity; Jeśli tak jest rzeczywiście, możesz zamiast tego dodać nowego zarządzanego projektu biblioteki DLL do rozwiązania Visual Studio. Aby uzyskać więcej informacji na temat dodawania nowego lub istniejącego projektu do rozwiązania, zobacz [How to: Dodaj projekty do rozwiązania](https://msdn.microsoft.com/library/ff460187.aspx).
 
    ![Dodaj istniejący projekt DLL do rozwiązania. ](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -190,19 +190,19 @@ Należy pamiętać, że opisanym tutaj scenariuszu założono, że kod źródło
 2. Odwołanie do poprawnego profilu framework Unity w projekcie biblioteki DLL. W programie Visual Studio, we właściwościach projektu biblioteki DLL, ustaw **platformę docelową** właściwości do korzystania z wersji framework aparatu Unity. Jest to Unity podstawowej biblioteki klas zgodną zgodności interfejsu API, że docelowy system operacyjny projektu, takie jak pełne Unity, micro lub sieci web podstawowej biblioteki klas. Zapobiega to wywołanie metody framework znajdujące się w innych platform lub poziomy zgodności, ale który nie istnieje w wersji framework Unity, którą używasz biblioteki DLL.
 
 > [!NOTE]
-> Poniżej przedstawiono tylko wymagane, jeśli używasz starszej wersji środowiska uruchomieniowego mechanizmu Unity. Jeśli używasz nowego środowiska uruchomieniowego Unity nie trzeba już używać tych dedykowanych profilów 3.5. Użyj platformy .NET 4.x profilu zgodne z wersją środowiska Unity.
+> Poniższe elementy są wymagane tylko w przypadku korzystania ze starszego środowiska uruchomieniowego aparatu Unity. Jeśli używasz nowego środowiska uruchomieniowego aparatu Unity, nie musisz już korzystać z tych dedykowanych profilów 3,5. Użyj profilu platformy .NET 4. x zgodnego z wersją aparatu Unity.
 
    ![Ustawić platformę docelową biblioteki DLL platformy Unity. ](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
-3. Skopiuj bibliotekę DLL do folderu zasobów w swoim projekcie aparatu Unity. Na platformie Unity zasoby są pliki, które są pakowane i wdrażany wraz z Twojej aplikacji platformy Unity, tak aby mogły być załadowane w czasie wykonywania. Ponieważ biblioteki DLL są połączone w czasie wykonywania, biblioteki DLL musi zostać wdrożony jako zasoby. Edytor platformy Unity można wdrożyć jako element zawartości, wymaga bibliotek DLL, które należy umieścić w folderze Zasoby w swoim projekcie aparatu Unity. Istnieją dwa sposoby, możesz to zrobić:
+3. Skopiuj bibliotekę DLL do folderu zasobów w swoim projekcie aparatu Unity. Na platformie Unity zasoby są pliki, które są pakowane i wdrażany wraz z Twojej aplikacji platformy Unity, tak aby mogły być załadowane w czasie wykonywania. Ponieważ biblioteki DLL są połączone w czasie wykonywania, biblioteki dll należy wdrożyć jako zasoby. Edytor platformy Unity można wdrożyć jako element zawartości, wymaga bibliotek DLL, które należy umieścić w folderze Zasoby w swoim projekcie aparatu Unity. Istnieją dwa sposoby, możesz to zrobić:
 
    - Zmodyfikuj ustawienia kompilacji projektu biblioteki DLL, aby obejmować końcowe utworzone zadanie, które kopiuje pliki wyjściowe DLL i pliku PDB z jego folderu danych wyjściowych, aby **zasoby** folderu projektu środowiska Unity.
 
    - Zmodyfikuj ustawienia kompilacji projektu biblioteki DLL, aby ustawić jej folderu danych wyjściowych **zasoby** folderu projektu środowiska Unity. Biblioteki DLL i pliku PDB, pliki zostaną umieszczone w **zasoby** folderu.
 
-   PDB, pliki są wymagane podczas debugowania, ponieważ zawiera symbole debugowania biblioteki DLL i utwórz mapę kodu, biblioteki DLL do postaci kodu źródłowego. Jeśli jest przeznaczony dla starszej wersji środowiska uruchomieniowego, Visual Studio Tools for Unity użyje informacji z biblioteki DLL i pliku PDB do tworzenia biblioteki DLL. Plik MDB debugowania symbol format jest używany przez aparat skryptów starszego aparatu Unity. Jeśli są przeznaczone dla nowego środowiska uruchomieniowego i przy użyciu pliku PDB przenośny, Visual Studio Tools for Unity nie spróbuje wykonać żadnych konwersji symbolu jako nowe środowisko uruchomieniowe Unity jest w stanie natywnie korzystanie z plików PDB przenośny.
-   
-   Można znaleźć więcej informacji na temat generowania plików PDB [tutaj](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Jeśli nowe środowisko uruchomieniowe, upewnij się, że "Informacje o debugowaniu" jest ustawiona na "Portable", aby można było prawidłowo wygenerować pliku PDB przenośny. Jeśli jest przeznaczony dla starszej wersji środowiska uruchomieniowego, należy użyć "Pełnej".
+   PDB, pliki są wymagane podczas debugowania, ponieważ zawiera symbole debugowania biblioteki DLL i utwórz mapę kodu, biblioteki DLL do postaci kodu źródłowego. Jeśli celem jest starsze środowisko uruchomieniowe, Visual Studio Tools for Unity będzie używać informacji z bibliotek DLL i PDB do tworzenia biblioteki DLL. Plik MDB, który jest formatem symboli debugowania używanym przez starszy aparat skryptów aparatu Unity. Jeśli obiektem docelowym jest nowy środowisko uruchomieniowe i użyto przenośnego pliku PDB, Visual Studio Tools for Unity nie spróbuje wykonać konwersji symboli, ponieważ nowe środowisko uruchomieniowe aparatu Unity będzie w stanie natywnie wykorzystać przenośne plików PDB.
+
+   Więcej informacji na temat generowania plików PDB można znaleźć [tutaj](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Jeśli chcesz utworzyć nowe środowisko uruchomieniowe, upewnij się, że "informacje o debugowaniu" są ustawione na "Przenośne", aby poprawnie wygenerować przenośnego pliku PDB. Jeśli obiektem docelowym jest starsze środowisko uruchomieniowe, musisz użyć pełnego.
 
 4. Debugowanie kodu. Można teraz debugować kod źródłowy biblioteki DLL wraz z kodu źródłowego w swoim projekcie aparatu Unity i wszystkie funkcje, które już znasz, takich jak punkty przerwania debugowania i krokowe wykonywanie kodu.
 

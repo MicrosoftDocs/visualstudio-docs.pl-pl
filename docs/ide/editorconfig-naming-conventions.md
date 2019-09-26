@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957428"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251693"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla EditorConfig
 
@@ -184,7 +184,7 @@ Konwencje nazewnictwa powinny być uporządkowane z najbardziej specyficznych dl
 
 ::: moniker range=">=vs-2019"
 
-Począwszy od programu Visual Studio 2019 w wersji 16,2, kolejność, w której reguły nazewnictwa są zdefiniowane w pliku EditorConfig, nie ma znaczenia. Zamiast tego program Visual Studio automatycznie porządkuje reguły nazewnictwa zgodnie z definicją samych reguł. [Rozszerzenie usługi językowej EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) może analizować plik EditorConfig i zgłaszać przypadki, w których kolejność sortowania reguł w pliku różni się od tego, co kompilator będzie używać w czasie wykonywania.
+Począwszy od programu Visual Studio 2019 w wersji 16,2, kolejność, w której reguły nazewnictwa są zdefiniowane w pliku EditorConfig, nie ma znaczenia. Zamiast tego program Visual Studio automatycznie porządkuje reguły nazewnictwa zgodnie z definicją samych reguł. [Rozszerzenie usługi języka EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) może analizować plik EditorConfig i zgłaszać przypadki, w których kolejność sortowania reguł w pliku różni się od tego, co kompilator będzie używać w czasie wykonywania.
 
 Jeśli używasz wcześniejszej wersji programu Visual Studio, konwencje nazewnictwa powinny być uporządkowane z najbardziej specyficznych dla najmniej określonych w pliku EditorConfig. Pierwsza napotkana reguła jest jedyną zastosowanym regułą. Jeśli jednak istnieje wiele *Właściwości* reguł o tej samej nazwie, pierwszeństwo ma właściwość ostatnio znaleziona o tej nazwie. Aby uzyskać więcej informacji, zobacz [Hierarchia plików i pierwszeństwo](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 

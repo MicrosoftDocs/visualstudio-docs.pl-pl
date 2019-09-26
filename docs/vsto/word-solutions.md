@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c8837c1c95dc5f032a10773645f93a46ec29662
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551206"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254938"
 ---
 # <a name="word-solutions"></a>rozwiązania programu Word
   Program Visual Studio zawiera szablony projektów, których można użyć do tworzenia dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Word. Można używać tych rozwiązań do automatyzowania programu Word, rozszerzeń funkcji programu Word i dostosowywania interfejsu użytkownika programu Word. Aby uzyskać więcej informacji na temat różnic między dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -114,5 +114,5 @@ ms.locfileid: "69551206"
 |[Formanty Windows Forms na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Opisuje sposób dodawania formantów Windows Forms do dokumentów programu Word.|
 |[Przewodnik: Utwórz swoje pierwsze dostosowanie na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Pokazuje, jak utworzyć podstawowe dostosowanie na poziomie dokumentu dla programu Word.|
 |[Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Pokazuje, jak utworzyć podstawowy dodatek narzędzi VSTO dla programu Word.|
-|[Przewodnik: Dodawanie formantów do dokumentu w czasie wykonywania w dodatku narzędzi VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Pokazuje, jak dodać przycisk Windows Forms i <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu w czasie wykonywania przy użyciu dodatku VSTO.|
+|[Przewodnik: Dodawanie kontrolek do dokumentu w czasie wykonywania w dodatku narzędzi VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Pokazuje, jak dodać przycisk Windows Forms i <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu w czasie wykonywania przy użyciu dodatku VSTO.|
 |[Word 2010 w programowaniu pakietu Office](http://go.microsoft.com/fwlink/?LinkId=199020)|Zawiera łącza do artykułów i dokumentacji referencyjnej dotyczącej opracowywania rozwiązań programu Word (niespecyficznych dla programowania Office przy użyciu programu Visual Studio).|

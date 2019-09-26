@@ -20,50 +20,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 083fe8cdd3bf9d0e4de4809aacfb78b537e4ed8e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939554"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255534"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatyzowanie programu Word za pomocą obiektów rozszerzonych
-  Podczas opracowywania rozwiązań programu Word w programie Visual Studio, możesz użyć *hostować elementy* i *kontrolki hosta*s w posiadanych rozwiązaniach. Są to obiekty, które rozszerzają niektóre powszechnie używane obiekty w modelu obiektów programu Word (oznacza to, że model obiektu, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Word), takie jak <xref:Microsoft.Office.Interop.Word.Document> i <xref:Microsoft.Office.Interop.Word.ContentControl> obiektów. Obiekty rozszerzone zachowują się jak obiekty programu Word, w których są one oparte na, ale dodają dodatkowe zdarzenia i możliwości wiązania danych do obiektów.
+  Podczas opracowywania rozwiązań programu Word w programie Visual Studio można używać *elementów hosta* i *kontrolek hosta*w swoich rozwiązaniach. Są to obiekty, które rozszerzają niektóre często używane obiekty w modelu obiektów programu Word (czyli model obiektów, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Word), taki <xref:Microsoft.Office.Interop.Word.Document> jak <xref:Microsoft.Office.Interop.Word.ContentControl> obiekty i. Obiekty rozszerzone zachowują się jak obiekty programu Word, na których się opierają, ale dodają do obiektów dodatkowe zdarzenia i możliwości powiązania danych.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Elementów hosta i kontrolek hosta są dostępne zarówno w przypadku dodatków narzędzi VSTO dla programów, jak i dostosowań na poziomie dokumentu, ale kontekst, w którym mogą one być używane jest inna dla każdego typu rozwiązania. Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
+ Elementy hosta i formanty hosta są dostępne zarówno dla dodatków VSTO, jak i dostosowań na poziomie dokumentu, chociaż kontekst, w którym mogą być używane, różni się w zależności od typu rozwiązania. Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md).
 
 ## <a name="document-host-item"></a>Element hosta dokumentu
- Word projektów zapewniają dostęp do <xref:Microsoft.Office.Tools.Word.Document> element hosta. <xref:Microsoft.Office.Tools.Word.Document> Element hosta działa jako kontener dla innych kontrolek, łącznie z kontrolki hosta i kontrolek Windows Forms i utrzymuje informacji na temat formantów na powierzchni. <xref:Microsoft.Office.Tools.Word.Document> Element hosta zawiera także większość tych samych elementów członkowskich jako <xref:Microsoft.Office.Interop.Word.Document> klasy, która jest odpowiadającą klasę w modelu obiektów programu Word.
+ Projekty programu Word umożliwiają dostęp do <xref:Microsoft.Office.Tools.Word.Document> elementu hosta. Element <xref:Microsoft.Office.Tools.Word.Document> hosta działa jako kontener dla innych kontrolek, w tym formantów hosta i kontrolek Windows Forms, i utrzymuje informacje o kontrolkach na jego powierzchni. Element hosta zapewnia również większość elementów członkowskich <xref:Microsoft.Office.Interop.Word.Document> , które są w klasie, która jest odpowiednią klasą w modelu obiektów programu Word. <xref:Microsoft.Office.Tools.Word.Document>
 
- Aby uzyskać więcej informacji, zobacz [element hosta dokumentu](../vsto/document-host-item.md).
+ Aby uzyskać więcej informacji, zobacz [dokument element hosta](../vsto/document-host-item.md).
 
 ## <a name="word-host-controls"></a>formanty hosta programu Word
- Istnieje kilka hosta formantów dla programu Word, które ułatwiają tworzenie, organizowanie i automatyzowanie dokumentów. Większość ich funkcji obejmuje importowania, prezentowania i ochrony danych. Te kontrolki hosta zapewniają zdarzenia oraz funkcje wiązania danych, które nie mają ich odpowiedników w macierzystym modelu obiektów programu Word.
+ Istnieje kilka kontrolek hosta dla programu Word, które ułatwiają tworzenie, organizowanie i automatyzowanie dokumentów. Większość ich funkcji obejmuje importowanie, prezentowanie i ochronę danych. Te kontrolki hosta zapewniają zdarzenia i możliwości powiązań danych, których odpowiedniki w modelu obiektów natywnego programu Word nie mają.
 
- W projektach na poziomie dokumentu można dodać dowolną kontrolkę hosta do dokumentu w czasie projektowania lub można dodać kontrolki zawartości oraz zakładki, które znajdują się w czasie wykonywania. W projektach dodatku narzędzi VSTO można dodać formanty zawartości i formantów zakładek do dowolnego otwartego dokumentu w czasie wykonywania.
+ W projektach na poziomie dokumentu można dodać dowolny formant hosta do dokumentu w czasie projektowania lub dodać kontrolki zawartości i kontrolki zakładki w czasie wykonywania. W projektach dodatku VSTO można dodać kontrolki zawartości i kontrolki zakładki do dowolnego otwartego dokumentu w czasie wykonywania.
 
- Aby uzyskać informacje o kontrolkach hosta, którego można używać w projektach programu Word zobacz następujące tematy:
+ Aby uzyskać więcej informacji na temat kontrolek hosta, których można używać w projektach programu Word, zobacz następujące tematy:
 
-- [Formanty zawartości](../vsto/content-controls.md)
+- [Kontrolki zawartości](../vsto/content-controls.md)
 
-- [BOOKMARK, kontrolka](../vsto/bookmark-control.md)
+- [Kontrolka zakładki](../vsto/bookmark-control.md)
 
-- [Formant XMLNode](../vsto/xmlnode-control.md)
+- [XMLNode — formant](../vsto/xmlnode-control.md)
 
 - [Formant XMLNodes](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Instrukcje: Dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
 - [Instrukcje: Dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
-- [Instrukcje: Zmiana rozmiaru formantów zakładki](../vsto/how-to-resize-bookmark-controls.md)
-- [Przewodnik: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
-- [Przewodnik: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
+- [Instrukcje: Zmień rozmiar kontrolek zakładek](../vsto/how-to-resize-bookmark-controls.md)
+- [Przewodnik: Tworzenie szablonu za pomocą kontrolek zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
+- [Przewodnik: Powiązywanie kontrolek zawartości z niestandardowymi częściami XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
 - [Przewodnik: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Rozwiązania programu Word](../vsto/word-solutions.md)
-- [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
+- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

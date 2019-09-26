@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f210b9d37f15b3ea92b92112e48eecd3c8b9e1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7ebbbbe01f1dd23dfc560e019133dacd3517b388
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233408"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253451"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Oznaczaj składowe jako statyczne
 

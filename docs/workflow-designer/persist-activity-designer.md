@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — Persist, Projektant działań
+title: Projektant przepływu pracy — Projektant działań utrwalania
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,34 +10,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c97d916d00d1c976b4e27381f55e42cbb7cb0db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7be70d18b1fc8ff12e2d1fb177b41775954334ed
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004122"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254848"
 ---
 # <a name="persist-activity-designer"></a>Persist, projektant działań
 
-**Utrwalanie** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Persist> działania.
+Projektant działań **utrwalania** służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Persist> działania.
 
-## <a name="the-persist-activity"></a>Utrwalanie działania
+## <a name="the-persist-activity"></a>Działanie utrwalania
 
-<xref:System.Activities.Statements.Persist> Działanie zapisuje przepływ pracy na dysku, jeśli jest to możliwe. <xref:System.Activities.Statements.Persist> Działania nie można wykonać w strefie bez trwałości, jak na przykład w ramach <xref:System.Activities.Statements.TransactionScope> działania. Jeśli używasz <xref:System.Activities.Statements.Persist> działań w zakresie bez trwałości, zgłaszany jest wyjątek w czasie wykonywania.
+<xref:System.Activities.Statements.Persist> Działanie zapisuje przepływ pracy na dysku, jeśli jest to możliwe. Działanie nie może zostać wykonane w strefie nietrwałości, jak na przykład <xref:System.Activities.Statements.TransactionScope> w ramach działania. <xref:System.Activities.Statements.Persist> Jeśli używasz <xref:System.Activities.Statements.Persist> działania w zakresie nietrwałości, wyjątek jest zgłaszany w czasie wykonywania.
 
-### <a name="using-the-persist-activity-designer"></a>Za pomocą Persist, Projektant działań
+### <a name="using-the-persist-activity-designer"></a>Korzystanie z projektanta działań utrwalania
 
-**Utrwalanie** projektanta działań można znaleźć w **środowiska uruchomieniowego** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** Karta (można także wybrać **przybornika** z **widoku** menu lub klawiszy CTRL + ALT + X.)
+Projektanta działań **utrwalania** można znaleźć w kategorii **środowiska uruchomieniowego** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
 
-**Utrwalanie** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.Persist> działanie przy użyciu domyślnego **DisplayName** z utrwalanie. <xref:System.Activities.Activity.DisplayName%2A> Mogą być edytowane w nagłówku **utrwalanie** projektanta działań lub **DisplayName** pola siatki właściwości.
+Projektanta działań **utrwalania** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład <xref:System.Activities.Statements.Sequence>wewnątrz. Spowoduje to utworzenie <xref:System.Activities.Statements.Persist> działania z domyślną wartością **DisplayName** elementu utrwalania. Można edytować w nagłówku projektanta działań **trwałych** lub w polu DisplayName siatki właściwości. <xref:System.Activities.Activity.DisplayName%2A>
 
-### <a name="the-persist-properties"></a>Utrwalanie właściwości
+### <a name="the-persist-properties"></a>Właściwości utrwalania
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Persist> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich mogą być edytowane na powierzchni projektanta przepływów pracy.
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Persist> właściwości i opisano sposób ich użycia w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na Projektant przepływu pracy powierzchni.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.Persist> działania. Wartość domyślna to utrwalanie. Chociaż nazwa wyświetlana nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć nazwy wyświetlanej.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.Persist> działania. Wartość domyślna to utrwalanie. Chociaż nazwa wyświetlana nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie nazwy wyświetlanej.|
 
 ## <a name="see-also"></a>Zobacz także
 

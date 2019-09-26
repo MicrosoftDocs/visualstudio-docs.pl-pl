@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31f125c11bb364f2650384d8d5894f7f48a9bd3e
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154920"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254378"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6. Korzystanie z szablonu projektu sieci Web Django sondy
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-Jak widać, Sondowaniu przechowuje opis w jego `text` pola i publikacji Data w `pub_date`. Te pola są jedynymi osobami, które istnieją dla sondowania w bazie danych. `total_votes` pola jest obliczane w czasie wykonywania.
+Jak widać, Sondowaniu przechowuje opis w jego `text` pola i publikacji Data w `pub_date`. Te pola są jedynymi tymi, które istnieją dla sondowania w bazie danych programu; `total_votes` pole jest obliczane w czasie wykonywania.
 
-Wybór jest powiązany z sondowania za pośrednictwem `poll` pola, zawiera opis w `text`i przechowuje licznik tego wyboru tych elementów w `votes`. `votes_percentage` Pola jest obliczane w czasie wykonywania i nie znajduje się w bazie danych.
+Wybór jest powiązany z sondowania za pośrednictwem `poll` pola, zawiera opis w `text`i przechowuje licznik tego wyboru tych elementów w `votes`. `votes_percentage` Pole jest obliczane w czasie wykonywania i nie można go znaleźć w bazie danych.
 
 Pełna lista typów pól jest `CharField` (ograniczoną tekstu) `TextField` (nieograniczona liczba tekst), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey`, i `ManyToMany`. Każde pole ma niektórych atrybutów, takich jak `max_length`. `blank=True` Atrybut oznacza, że pole jest opcjonalne; `null=true` oznacza, że wartość jest opcjonalna. Istnieje również `choices` atrybut, który ogranicza wartości do wartości w tablicy krotki wartości wartość/wyświetlania danych. (Zobacz [modelu odwołania do pól](https://docs.djangoproject.com/en/2.0/ref/models/fields/) w dokumentacji Django.)
 
@@ -192,7 +192,7 @@ Ogólne Django w funkcji migracji oznacza, że użytkownik należy nigdy nie zar
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Zainteresowany Co się stanie, jeśli zapomnię uruchomić polecenie migracji po wprowadzeniu zmian w modelach?
 
-Udzielić Jeśli modele nie są zgodne z informacjami znajdującymi się w bazie danych, Django w czasie wykonywania z odpowiednimi wyjątkami. Na przykład, Jeśli zapomnisz do migrowania zmiana modelu pokazano w poprzedniej sekcji, zostanie wyświetlony błąd **takich kolumn: app_poll.author**:
+Udzielić Jeśli modele nie są zgodne z informacjami znajdującymi się w bazie danych, Django kończy się niepowodzeniem w czasie wykonywania z odpowiednimi wyjątkami. Na przykład, Jeśli zapomnisz do migrowania zmiana modelu pokazano w poprzedniej sekcji, zostanie wyświetlony błąd **takich kolumn: app_poll.author**:
 
 ![Błąd pokazany, gdy zmiana modelu ma nie została poddana migracji](media/django/step06-exception-when-forgetting-to-migrate.png).
 

@@ -5,16 +5,16 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211321"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273318"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Domyślne skróty klawiaturowe w Visual Studio dla komputerów Mac
 
-Aby uzyskać informacje o ułatwieniach dostępu [do klawiatury, zobacz How to: Użyj nawigacji](~/accessibility.md#how-to-use-keyboard-navigation)klawiaturowej.
+Aby uzyskać informacje o ułatwieniach dostępu [do klawiatury, zobacz How to: Użyj nawigacji](~/accessibility-keyboard.md)klawiaturowej.
 
 Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów Mac przy użyciu odpowiedniego skrótu klawiaturowego. Ten dokument zawiera listę domyślnych skrótów dla schematu powiązania klucza **Visual Studio dla komputerów Mac** . Aby uzyskać więcej informacji na temat zmiany schematu powiązania kluczy, zobacz [Dostosowywanie środowiska IDE](~/customizing-the-ide.md#key-bindings). Możesz również dostosować skróty dla polecenia za pomocą elementu menu**preferencji** **Visual Studio dla komputerów Mac** > i wybierając opcję**powiązania klucza** **środowiska** > w oknie **preferencji** .
 

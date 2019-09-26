@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 598ced6d3e924ecf1d2826be6a6976f56c02afa5
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624067"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253600"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługi w chmurze platformy Azure może mieć jedną lub więcej procesów roboczych lub role sieci web. Dla każdej roli musisz zdefiniować sposób konfigurowania tej roli, a także skonfigurować, jak działa tej roli. Aby dowiedzieć się więcej na temat ról w usługach cloud services, zobacz wideo [wprowadzenie do usług Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 Informacje dotyczące usługi w chmurze są przechowywane w następujących plikach:
 
-- **Plik ServiceDefinition.csdef** -pliku definicji usługi definiuje ustawienia środowiska uruchomieniowego dla swojej usługi w chmurze w tym, jakie role są wymagane punkty końcowe i rozmiar maszyny wirtualnej. Brak danych przechowywanych w `ServiceDefinition.csdef` można zmienić, gdy jest uruchomiona rola użytkownika.
+- **ServiceDefinition. csdef** — plik definicji usługi definiuje ustawienia czasu wykonywania dla usługi w chmurze, w tym informacje o wymaganych rolach, punktach końcowych i rozmiarze maszyny wirtualnej. Brak danych przechowywanych w `ServiceDefinition.csdef` można zmienić, gdy jest uruchomiona rola użytkownika.
 - **ServiceConfiguration.cscfg** — plik konfiguracji usługi umożliwia skonfigurowanie liczby wystąpień roli są uruchamiane, a wartości ustawienia zdefiniowane dla roli. Dane przechowywane w `ServiceConfiguration.cscfg` można zmienić po uruchomieniu roli użytkownika.
 
 Aby przechowywać różne wartości dla ustawienia które kontrolują sposób uruchamiania roli, można zdefiniować wiele konfiguracji usługi. Dla każdego środowiska wdrażania, można użyć konfiguracji innej usługi. Na przykład można ustawić parametry połączenia konta magazynu, tak aby korzystanie z emulatora lokalnego magazynu platformy Azure w ramach konfiguracji lokalnej usługi i utworzyć inną konfigurację usługi do użycia usługi Azure storage w chmurze.

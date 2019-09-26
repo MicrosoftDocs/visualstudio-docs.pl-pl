@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551115"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253170"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące analizatorów FxCop i FxCop
 
@@ -43,7 +43,7 @@ Aby uruchomić analizatory FxCop, najpierw [Zainstaluj dla nich pakiet NuGet](in
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Otrzymuję ostrzeżenie CA0507 nawet po zainstalowaniu pakietu NuGet analizatorów FxCop
 
-Jeśli zainstalowano analizatory FxCop, ale nadal pojawia się ostrzeżenie CA0507 **"" Uruchomienie analizy kodu "zostało zaniechane na rzecz analizatorów FxCop, które są uruchamiane podczas kompilacji"** , może być konieczne ustawienie właściwości **RunCodeAnalysis** MSBuild w pliku projektu na **wartość false**. W przeciwnym razie Starsza analiza zostanie wykonana po każdej kompilacji.
+Jeśli zainstalowano analizatory FxCop, ale nadal pojawia się ostrzeżenie CA0507 **"" Uruchomienie analizy kodu "zostało zaniechane na rzecz analizatorów FxCop, które są uruchamiane podczas kompilacji"** , może być konieczne ustawienie właściwości **RunCodeAnalysis** MSBuild w [projekcie plik](../ide/solutions-and-projects-in-visual-studio.md#project-file) na **wartość false**. W przeciwnym razie Starsza analiza zostanie wykonana po każdej kompilacji.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -51,7 +51,7 @@ Jeśli zainstalowano analizatory FxCop, ale nadal pojawia się ostrzeżenie CA05
 
 ## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Które reguły zostały przeanalizowane do analizatorów FxCop?
 
-Aby uzyskać informacje o tym, które starsze reguły analizy zostały przeanalizowane do [analizatorów FxCop](install-fxcop-analyzers.md), zobacz [FxCop reguły stanu portu](fxcop-rule-port-status.md).
+Aby uzyskać informacje o tym, które starsze reguły analizy zostały [przeanalizowane do analizatorów FxCop](install-fxcop-analyzers.md), zobacz [FxCop reguły stanu portu](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Zobacz także
 

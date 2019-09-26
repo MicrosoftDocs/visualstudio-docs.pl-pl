@@ -22,16 +22,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efd3ffb81d8ef1ad69a24acc277b8f5fe10df436
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62930743"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252521"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Przewodnik: Debugowanie aplikacji równoległych w programie Visual Studio (C#, Visual Basic, C++)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Przewodnik: Debugowanie aplikacji równoległej w programie Visual StudioC#(, Visual Basic C++,)
 
-Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległej. Te okna pomaga zrozumieć i zweryfikować zachowanie środowiska uruchomieniowego kodu, który używa [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punkty przerwania. Po kodu przerywa, instruktaż przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows, aby go sprawdzić.
+Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległej. Te okna pomagają zrozumieć i sprawdzić zachowanie w czasie wykonywania kodu, który używa [biblioteki zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punkty przerwania. Po kodu przerywa, instruktaż przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows, aby go sprawdzić.
 
  Ten przewodnik zawiera wskazówki te zadania:
 
@@ -65,24 +65,24 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++** ), wybierz **szablony**, a następnie:
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Console** (lub **C++** ), wybierz pozycję **Szablony**, a następnie:
 
-    - Aby uzyskać C# lub Visual Basic, wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla dowolnego C# lub Visual Basic. W oknie dialogowym wybierz **Utwórz**.
-    - Dla języka C++, wybierz **Tworzenie nowego projektu aplikacji Konsolowej** dla języka C++. W oknie dialogowym wybierz **Utwórz**.
+    - W C# przypadku programu lub Visual Basic wybierz opcję **Utwórz nowy projekt aplikacja konsoli (.NET Framework)** dla obu C# lub Visual Basic. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
+    - W C++obszarze Wybierz pozycję **Utwórz nowy projekt aplikacji konsoli** dla C++. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
 
-    Następnie wpisz nazwę lub użyj nazwy domyślnej i kliknij **Utwórz**.
+    Następnie wpisz nazwę lub użyj nazwy domyślnej, a następnie kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego pole, wybierz następujące opcje:
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** wybierz następujące opcje:
 
-    - Dla C# aplikacji, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)** .
-    - Dla aplikacji w języku Visual Basic w obszarze **języka Visual Basic**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)** .
-    - Dla aplikacji w języku C++ w obszarze **Visual C++** , wybierz **pulpitu Windows**,, a następnie wybierz **aplikacji konsoli Windows**.
+    - W przypadku C# aplikacji w obszarze **C#Wizualizacja**wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)** .
+    - W przypadku aplikacji Visual Basic w obszarze **Visual Basic**wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)** .
+    - W przypadku C++ aplikacji w obszarze **C++Wizualizacja**wybierz pozycję **Windows Desktop**, a następnie wybierz pozycję **Aplikacja konsolowa systemu Windows**.
 
-    Następnie wpisz nazwę lub użyj nazwy domyślnej i kliknij **OK**.
+    Następnie wpisz nazwę lub użyj nazwy domyślnej, a następnie kliknij przycisk **OK**.
     ::: moniker-end
 
-    Jeśli nie widzisz **aplikacja Konsolowa** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** lub **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
+    Jeśli szablon projektu **aplikacji konsolowej** nie jest widoczny, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje...** , co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **opracowywanie aplikacji C++ klasycznych** , a następnie wybierz **Modyfikuj**.
 
 1. Otwórz plik kodu .cpp, .cs lub .vb w projekcie. Usunąć jej zawartość, aby utworzyć plik pusty kod.
 

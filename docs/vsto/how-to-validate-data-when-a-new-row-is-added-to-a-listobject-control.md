@@ -1,5 +1,5 @@
 ---
-title: Walidacja danych po dodaniu nowego rzędu do kontrolki ListObject
+title: Sprawdź poprawność danych po dodaniu nowego wiersza do kontrolki ListObject
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,48 +14,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cf302388b71174767d41cc8b1a7594f4223db2a
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: f65bbc374c1d0ec2a940ff98fcc6f04e5391b2db
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328864"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255681"
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Instrukcje: Walidacja danych po dodaniu nowego rzędu do kontrolki ListObject
-  Użytkownicy mogą dodawać nowe wiersze do <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który jest powiązany z danymi. Możesz walidować dane użytkownika przed zatwierdzeniem zmian w źródle danych.
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Porady: Sprawdź poprawność danych po dodaniu nowego wiersza do kontrolki ListObject
+  Użytkownicy mogą dodawać nowe wiersze do <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki, która jest powiązana z danymi. Możesz sprawdzić poprawność danych użytkownika przed zatwierdzeniem zmian w źródle danych.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="data-validation"></a>Sprawdzanie poprawności danych
- Zawsze, gdy wiersz zostanie dodany do <xref:Microsoft.Office.Tools.Excel.ListObject> , jest powiązany z danymi, <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> zdarzenie jest wywoływane. Może obsługiwać to zdarzenie, aby wykonać walidację danych. Na przykład jeśli aplikacja wymaga, że tylko pracownicy między w wieku od 18 i 65 można dodać do źródła danych, sprawdź, czy wiek wprowadzono mieści się w zakresie przed dodaniem wiersza.
+ Po każdym dodaniu wiersza do elementu <xref:Microsoft.Office.Tools.Excel.ListObject> , który jest powiązany z danymi <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> , zdarzenie jest zgłaszane. To zdarzenie można obsłużyć w celu przeprowadzenia walidacji danych. Na przykład, jeśli aplikacja wymaga, aby do źródła danych można było dodać tylko pracowników między 18 a 65, sprawdź, czy wprowadzony wiek znajduje się w tym zakresie przed dodaniem wiersza.
 
 > [!NOTE]
-> Należy zawsze sprawdzić dane wejściowe użytkownika na serwerze, oprócz klienta. Aby uzyskać więcej informacji, zobacz [zabezpieczanie aplikacje klienckich](/dotnet/framework/data/adonet/secure-client-applications).
+> Oprócz klienta należy zawsze sprawdzać dane wejściowe użytkownika na serwerze. Aby uzyskać więcej informacji, zobacz [Zabezpieczanie aplikacji klienckich](/dotnet/framework/data/adonet/secure-client-applications).
 
-### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Aby sprawdzić poprawność danych, gdy nowy wiersz jest dodawany do powiązanych z danymi ListObject
+### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Aby sprawdzić poprawność danych po dodaniu nowego wiersza do elementu ListObject powiązanego z danymi
 
-1. Tworzenie zmiennych dla Identyfikatora i <xref:System.Data.DataTable> na poziomie klasy.
+1. Utwórz zmienne dla identyfikatora i <xref:System.Data.DataTable> na poziomie klasy.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2. Utwórz nową <xref:System.Data.DataTable> i dodawanie przykładowe kolumny i dane w `Startup` program obsługi zdarzeń `Sheet1` klasy (w projekcie poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku narzędzi VSTO).
+2. Utwórz nowe <xref:System.Data.DataTable> i Dodaj przykładowe kolumny i dane `Startup` do procedury obsługi `Sheet1` zdarzeń klasy (w projekcie na poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
 
-3. Dodaj kod, aby `list1_BeforeAddDataBoundRow` program obsługi zdarzeń, aby sprawdzić, czy wiek wprowadzono mieści się w dopuszczalnym zakresem.
+3. Dodaj kod do `list1_BeforeAddDataBoundRow` programu obsługi zdarzeń, aby sprawdzić, czy wprowadzony wiek mieści się w dopuszczalnym zakresie.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]
      [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]
 
 ## <a name="compile-the-code"></a>Skompilować kod
- W tym przykładzie kodu założono, że istniejące <xref:Microsoft.Office.Tools.Excel.ListObject> o nazwie `list1` w arkuszu, w której występuje ten kod.
+ W tym przykładzie kodu założono, że masz <xref:Microsoft.Office.Tools.Excel.ListObject> istniejącą `list1` nazwę w arkuszu, w którym występuje ten kod.
 
 ## <a name="see-also"></a>Zobacz także
-- [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
-- [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [ListObject — formant](../vsto/listobject-control.md)
 - [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)
-- [Instrukcje: Mapowanie kolumn ListObject do danych](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Instrukcje: Mapowanie kolumn ListObject na dane](../vsto/how-to-map-listobject-columns-to-data.md)

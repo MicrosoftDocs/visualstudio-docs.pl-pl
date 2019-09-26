@@ -17,83 +17,83 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939398"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255148"
 ---
 # <a name="bookmark-control"></a>Bookmark, formant:
-  <xref:Microsoft.Office.Tools.Word.Bookmark> Formant jest zakładki, która ma unikatową nazwę, udostępnia zdarzenia i może być powiązana z danymi. Zakładka może służyć jako symbol zastępczy, aby oznaczyć element lub lokalizacji w dokumencie programu Microsoft Office Word. <xref:Microsoft.Office.Tools.Word.Bookmark> Kontroli jest kombinacją <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu i <xref:Microsoft.Office.Interop.Word.Range> obiektu.
+  <xref:Microsoft.Office.Tools.Word.Bookmark> Kontrolka jest zakładką, która ma unikatową nazwę, uwidacznia zdarzenia i może być powiązana z danymi. Zakładka może służyć jako symbol zastępczy do oznaczania elementu lub lokalizacji w Microsoft Office dokumencie programu Word. Kontrolka jest kombinacją <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu i <xref:Microsoft.Office.Interop.Word.Range> obiektu. <xref:Microsoft.Office.Tools.Word.Bookmark>
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO dla programów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
+ W projektach na poziomie dokumentu można dodawać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w czasie projektowania lub w czasie wykonywania. W projektach dodatku VSTO można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kontrolek zakładek do](../vsto/how-to-add-bookmark-controls-to-word-documents.md)dokumentów programu Word.
 
-## <a name="bind-data-to-the-control"></a>Wiązanie danych do kontrolki
- A <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolka obsługuje proste powiązanie danych. Zakładki ma zostać powiązana z źródła danych przy użyciu <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> właściwości. Domyślna właściwość powiązania danych zakładka jest <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwości.
+## <a name="bind-data-to-the-control"></a>Powiąż dane z kontrolką
+ <xref:Microsoft.Office.Tools.Word.Bookmark> Kontrolka obsługuje proste powiązanie danych. Zakładka powinna być powiązana ze źródłem danych przy użyciu <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> właściwości. Domyślną właściwością powiązania danych zakładki jest <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwość.
 
- Jeśli dane w powiązanej zestaw danych zostanie zaktualizowane, <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolka pokazuje zmiany.
+ Jeśli dane w powiązanym zestawie danych zostaną zaktualizowane, <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolka wyświetli te zmiany.
 
- W projektach na poziomie dokumentu, możesz również powiązać dane do zakładek przy użyciu **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [jak: Zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ W projektach na poziomie dokumentu można także powiązać dane z zakładkami przy użyciu okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [jak: Wypełnij dokumenty danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Formatowanie
- Formatowanie, które mogą być stosowane do <xref:Microsoft.Office.Interop.Word.Bookmark> mogą być stosowane do <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli. To formatowanie obejmuje czcionek, wcięć, odstępów, numerowanie i stylów.
+ Formatowanie, które można zastosować do elementu <xref:Microsoft.Office.Interop.Word.Bookmark> , można zastosować <xref:Microsoft.Office.Tools.Word.Bookmark> do kontrolki. To formatowanie obejmuje czcionki, wcięcia, odstępy, numerację i style.
 
 ## <a name="assign-text-to-the-bookmark"></a>Przypisywanie tekstu do zakładki
- Dodatkowe różnicy <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektu i <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> formant jest, jak działa, jeśli tekst jest przypisana do zakładki. Jeśli tekst jest przypisana do zerowej długości <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>, tekst jest dołączany po prawej stronie zakładka i Zakładka pozostanie o zerowej długości. Jednak jeśli tekst jest przypisana do zerowej długości <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>, tekst jest wstawiany do zakładki, a długość zakładki rozszerza całkowitą liczbę znaków wstawiony.
+ Dodatkowa różnica między <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektem <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> a kontrolką jest zachowaniem, gdy tekst jest przypisany do zakładki. W przypadku przypisywania tekstu do długości <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>zerowej tekst jest dołączany po prawej stronie zakładki, a zakładki pozostają zerowej długości. Jeśli jednak tekst zostanie przypisany do zerowej długości <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>, tekst zostanie wstawiony do zakładki, a długość zakładki zostanie rozwinięta do całkowitej liczby wstawionych znaków.
 
- <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> Kontroli ma również <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> właściwości. Ta właściwość jest inny niż <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> właściwość, która jest dostępna w <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> właściwość <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> kontroli, lub <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> właściwość <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektu.
+ Kontrolka<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>marównieżwłaściwość. <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> Ta <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> właściwość różni się od właściwości, która jest dostępna <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> we właściwości <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> kontrolki lub <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> właściwości <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektu.
 
 |Właściwość Text|Opis|
 |-------------------|-----------------|
-|<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Ta właściwość służy do wyświetlania tekstu w zakładce i pozostawić zakładki w dokumencie. Przypisywanie tekstu do zakładki rozszerza zakres zakładki i nie powoduje usunięcia zakładki.<br /><br /> Na przykład `Bookmark1.Text = "Hello world"` wstawia tekst do zakładki i pozostawia zakładki bez zmian.|
-|<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Ta właściwość służy do wyświetlania tekstu w lokalizacji zakładki i automatycznie usunąć zakładki. Na przykład `Bookmark1.Range.Text = "Hello world"` wstawia tekst do zakładki, a następnie usuwa zakładki.|
+|<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Ta właściwość służy do wyświetlania tekstu w zakładce i pozostawiania zakładki w dokumencie. Przypisanie tekstu do zakładki rozszerza zakres zakładek i nie usuwa zakładki.<br /><br /> Na przykład `Bookmark1.Text = "Hello world"` wstawia tekst do zakładki i pozostawia zakładkę bez zmian.|
+|<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Użyj tej właściwości, aby wyświetlić tekst w lokalizacji zakładki i automatycznie usunąć zakładkę. Na przykład `Bookmark1.Range.Text = "Hello world"` wstawia tekst do zakładki i usuwa zakładkę.|
 
 ## <a name="rename-the-control-at-design-time"></a>Zmień nazwę kontrolki w czasie projektowania
- W przypadku projektów na poziomie dokumentu, podczas przeciągania <xref:Microsoft.Office.Tools.Word.Bookmark> z kontrolować **przybornika** do dokumentu, program Visual Studio automatycznie generuje nazwę dla formantu. Możesz zmienić nazwę kontrolki **właściwości** okna.
+ W projektach na poziomie dokumentu, gdy przeciągasz <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolkę z **przybornika** do dokumentu, program Visual Studio automatycznie generuje nazwę formantu. Nazwę kontrolki można zmienić w oknie **Właściwości** .
 
-## <a name="overlapping-controls"></a>Nakładanie się formantów
- Formanty zakładek może nakładać się na siebie nawzajem. Ten sam tekst mogą być współdzielone przez więcej niż jedną zakładkę. Po przypisaniu nowego tekstu do jednego z nakładającymi się zakładki zawiera nowy tekst i zakładki nie nakładają się na siebie. Inne zakładki teraz zawiera tylko tekst, który nie został udostępniony między oryginalnego zakładkami nakładających się.
+## <a name="overlapping-controls"></a>Nakładające się kontrolki
+ Kontrolki zakładki mogą nakładać się na siebie nawzajem. Ten sam tekst może być współużytkowany przez więcej niż jedną zakładkę. Po przypisaniu nowego tekstu do jednej z nakładających się zakładek zawiera on tylko nowy tekst, a zakładki nie nakładają się na siebie. Inna zakładka zawiera teraz tylko tekst, który nie został udostępniony między oryginalnymi nakładającymi się zakładkami.
 
- W poniższej tabeli przedstawiono, jak zdania "To jest tekst przykładowy." jest współużytkowana przez dwie nakładające się zakładek:
+ W poniższej tabeli pokazano, jak zdanie "to jest przykładowy tekst". jest współużytkowany przez dwie nakładające się zakładki:
 
 |Zakładka|Tekst|
 |--------------|----------|
-|Nakładające się zakładki|[to jest przykładowy {] tekst.}|
-|Bookmark1|To jest przykładowy|
+|Nakładające się zakładki|[to jest tekst {Sample].}|
+|Bookmark1|Jest to przykład|
 |Bookmark2|Przykładowy tekst.|
 
- Jeśli przypiszesz nowy tekst "Jest zastąpienie". Aby Bookmark1 zakładki nie nakładają się i Bookmark2 zachowuje tylko tekst, który nie został pierwotnie część Bookmark1.
+ Jeśli przypiszesz nowy tekst "to jest zastąpienie". Aby Bookmark1, zakładki nie nakładają się, a Bookmark2 zachowuje tylko tekst, który nie był pierwotnie częścią Bookmark1.
 
 |Zakładka|Tekst|
 |--------------|----------|
-|Dwa oddzielne zakładki|[to jest zastąpienie] {tekst}.|
-|Bookmark1|To zastąpienie|
-|Bookmark2|Tekst.|
+|Dwie oddzielne zakładki|[to jest zastąpienie] {Text.}|
+|Bookmark1|To zastępuje|
+|Bookmark2|Opis.|
 
-W przypadku zmiany tekstu zakładki, która zawiera inny zakładki wewnętrzny zakładki nie jest usuwany. Jednak wewnętrzny zakładki staje się puste zakładki i przenosi do końca zakładki zewnętrzne.
+Jeśli zmienisz tekst zakładki zawierającej inną zakładkę, wewnętrzna zakładka nie zostanie usunięta. Jednak zakładka wewnętrzna staje się pustą zakładką i przechodzi do końca zakładki zewnętrznej.
 
-W poniższej tabeli przedstawiono, jak zdania "To jest tekst przykładowy." jest współużytkowany przez zakładki, która znajduje się w innym zakładkę:
+W poniższej tabeli pokazano, jak zdanie "to jest przykładowy tekst". jest współużytkowany przez zakładkę, która jest zawarta w innej zakładki:
 
 |Zakładka|Tekst|
 |--------------|----------|
-|Nakładające się zakładki|[to jest tekst {przykładowy}].|
-|Bookmark1|To jest tekst przykładowy.|
+|Nakładające się zakładki|[to jest tekst {Sample}.]|
+|Bookmark1|To jest przykładowy tekst.|
 |Bookmark2|przykład|
 
- Jeśli przypiszesz nowy tekst "Jest zastąpienie". Aby Bookmark1 już nie nakładają się na zakładki, a następnie Bookmark2 staje się puste zakładki, która znajduje się na końcu Bookmark1.
+ Jeśli przypiszesz nowy tekst "to jest zastąpienie". Aby Bookmark1, zakładki nie nakładają się na siebie, a Bookmark2 stają się pustą zakładką, która znajduje się na końcu Bookmark1.
 
 |Zakładka|Tekst|
 |--------------|----------|
-|Dwa oddzielne zakładki|[to jest zastąpienie.]{}|
-|Bookmark1|To zastąpienie.|
-|Bookmark2|*\<empty>*|
+|Dwie oddzielne zakładki|[to jest zastąpienie.]{}|
+|Bookmark1|To zastępuje.|
+|Bookmark2|*\<puste >*|
 
 ## <a name="events"></a>Zdarzenia
 
-Następujące zdarzenia są dostępne dla <xref:Microsoft.Office.Tools.Word.Bookmark> sterowania:
+Dla <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki dostępne są następujące zdarzenia:
 
 - <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
@@ -112,7 +112,7 @@ Następujące zdarzenia są dostępne dla <xref:Microsoft.Office.Tools.Word.Book
 ## <a name="see-also"></a>Zobacz także
 
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
-- [Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Przewodnik: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

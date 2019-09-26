@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159932"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273360"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Tworzenie bazy danych i Dodawanie tabel w programie Visual Studio
 
@@ -68,6 +68,9 @@ Parametry połączenia dla pliku *SampleDatabase. mdf* można wyświetlić, otwi
 
 - Alternatywnie możesz wybrać opcję **Wyświetl** > **Eksplorator serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno Właściwości, rozwijając węzeł **połączenia danych** , kliknij prawym przyciskiem myszy pozycję *SampleDatabase. mdf*, a następnie wybierz polecenie **Właściwości**.
 
+  > [!TIP]
+  > Jeśli nie można rozwinąć węzła połączenia danych lub nie ma na liście połączenia SampleDatabase. mdf, wybierz przycisk **Połącz z bazą danych** na pasku narzędzi Eksplorator serwera. W oknie dialogowym **Dodawanie połączenia** upewnij się, że w obszarze **Źródło danych**została wybrana opcja **Microsoft SQL Server plik bazy danych** , a następnie wyszukaj i wybierz plik SampleDatabase. mdf. Zakończ Dodawanie połączenia, wybierając **przycisk OK**.
+
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Tworzenie tabel i kluczy za pomocą projektanta tabel
 
 W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wierszy przykładowych danych. Utworzysz również klucz obcy, aby określić, jak rekordy w jednej tabeli odpowiadają rekordom w drugiej tabeli.
@@ -75,6 +78,8 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 ### <a name="create-the-customers-table"></a>Tworzenie tabeli Customers
 
 1. W **Eksplorator serwera**rozwiń węzeł **połączenia danych** , a następnie rozwiń węzeł **SampleDatabase. mdf** .
+
+   Jeśli nie można rozwinąć węzła połączenia danych lub nie ma na liście połączenia SampleDatabase. mdf, wybierz przycisk **Połącz z bazą danych** na pasku narzędzi Eksplorator serwera. W oknie dialogowym **Dodawanie połączenia** upewnij się, że w obszarze **Źródło danych**została wybrana opcja **Microsoft SQL Server plik bazy danych** , a następnie wyszukaj i wybierz plik SampleDatabase. mdf. Zakończ Dodawanie połączenia, wybierając **przycisk OK**.
 
 2. Kliknij prawym przyciskiem myszy pozycję **tabele** i wybierz polecenie **Dodaj nową tabelę**.
 

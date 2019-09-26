@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926714"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254395"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Okienka zadań to panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna w aplikacji Microsoft Office. Niestandardowe okienka zadań umożliwiają utworzenie własnego okienka zadań i udostępnienie użytkownikom znanego interfejsu umożliwiającego dostęp do funkcji rozwiązania. Na przykład interfejs może zawierać kontrolki, które uruchamiają kod, aby modyfikować dokumenty lub wyświetlać dane ze źródła danych.
@@ -59,7 +59,7 @@ ms.locfileid: "68926714"
    Aby uzyskać więcej informacji, zobacz [jak: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 ### <a name="create-the-user-interface"></a>Tworzenie interfejsu użytkownika
- Wszystkie niestandardowe okienka zadań, które są tworzone przy użyciu narzędzi programistycznych pakietu Office w programie Visual <xref:System.Windows.Forms.UserControl> Studio, zawierają obiekt. Ta kontrolka użytkownika udostępnia interfejs użytkownika niestandardowego okienka zadań. Kontrolkę użytkownika można utworzyć w czasie projektowania lub w środowisku uruchomieniowym. Jeśli utworzysz kontrolkę użytkownika w czasie projektowania, możesz użyć Projektant formularzy systemu Windows, aby skonstruować interfejs użytkownika okienka zadań.
+ Wszystkie niestandardowe okienka zadań, które są tworzone przy użyciu narzędzi programistycznych pakietu Office w programie Visual <xref:System.Windows.Forms.UserControl> Studio, zawierają obiekt. Ta kontrolka użytkownika udostępnia interfejs użytkownika niestandardowego okienka zadań. Kontrolkę użytkownika można utworzyć w czasie projektowania lub w czasie wykonywania. Jeśli utworzysz kontrolkę użytkownika w czasie projektowania, możesz użyć Projektant formularzy systemu Windows, aby skonstruować interfejs użytkownika okienka zadań.
 
 ### <a name="instantiate-the-custom-task-pane"></a>Tworzenie wystąpienia niestandardowego okienka zadań
  Po utworzeniu kontrolki użytkownika zawierającej interfejs użytkownika niestandardowego okienka zadań należy utworzyć wystąpienie <xref:Microsoft.Office.Tools.CustomTaskPane>. W tym celu Przekaż kontrolkę użytkownika do <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> funkcji w dodatku VSTO, wywołując jedną <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> z metod. Ta kolekcja jest udostępniana jako `CustomTaskPanes` pole `ThisAddIn` klasy. Poniższy przykład kodu jest przeznaczony do uruchomienia z `ThisAddIn` klasy.

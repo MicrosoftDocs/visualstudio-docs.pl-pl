@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864683"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273399"
 ---
 # <a name="developer-community-data-privacy"></a>Prywatność danych w społeczności deweloperów
 
@@ -70,10 +70,6 @@ Jeśli **Zgłoś problem** w programie Visual Studio, zbieramy co najmniej jeden
 
 - Dzienniki Windows Forms, jeśli istnieją
 
-> [!NOTE]
-> Pliki dziennika są wysyłane do firmy Microsoft tylko w przypadku podania uprawnień przez przesłanie raportu o problemie, z którym są dołączone. Możesz zobaczyć, które pliki są zawarte w kroku "Summary" okna "Zgłoś problem" (Zobacz zrzut ekranu zawarty w tej notatce). Zebrane dzienniki są przechowywane w folderze% temp% i są czyszczone regularnie i po każdym przekazaniu. Jeśli nie chcesz dołączać dziennika do raportu o problemie, usuń plik z folderu% temp% przed przesłaniem raportu.  
-  > ![Zgłoś problem — podsumowanie zebranych dzienników](media/report-a-problem-logs-collected.png)
-
 - Zrzut ekranu, jeśli wybierzesz go uwzględnić
   
 - Rejestrowanie danych, jeśli zdecydujesz się na dołączenie nagrania, które obejmuje:
@@ -84,8 +80,10 @@ Jeśli **Zgłoś problem** w programie Visual Studio, zbieramy co najmniej jeden
 
   - Plik zrzutu
 
-  > [!NOTE]
-  > Przed przesłaniem raportu można usunąć wszystkie dane rejestrowania, które nie mają być przesyłane.
+> [!NOTE]
+> Pliki dziennika, zrzuty ekranu i dane rejestrowania są wysyłane do firmy Microsoft tylko wtedy, gdy podajesz uprawnienia, przesyłając raport o problemie, za pomocą którego zostały uwzględnione. Możesz zobaczyć, które pliki są zawarte w kroku "Summary" okna "Zgłoś problem" (Zobacz zrzut ekranu zawarty w tej notatce). Zebrane dzienniki i pliki są przechowywane w folderze% temp% i są czyszczone regularnie i po każdym przekazaniu. Jeśli nie chcesz dołączać dziennika do raportu o problemie, usuń plik z folderu% temp% przed przesłaniem raportu.  
+  > ![Zgłoś problem — podsumowanie zebranych dzienników](media/report-a-problem-logs-collected.png)
+ 
 
 ## <a name="see-also"></a>Zobacz także
 

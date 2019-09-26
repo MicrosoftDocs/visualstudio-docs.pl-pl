@@ -16,92 +16,92 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 052149783f93c1bf2f394be2fac9f6a51c9c0cf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5fd0253c6ca560c58724c8a83e343164b678923
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977926"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254143"
 ---
 # <a name="office-ui-customization"></a>Dostosowywanie interfejsu użytkownika pakietu Office
-  Możesz dostosować interfejs użytkownika (UI) aplikacji pakietu Microsoft Office, przy użyciu narzędzi Office developer tools w programie Visual Studio. W tym temacie opisano funkcje interfejsu użytkownika, które można dostosować w następujących sekcjach:
+  Interfejs użytkownika (UI) aplikacji Microsoft Office można dostosować przy użyciu narzędzi Office Developer Tools w programie Visual Studio. W tym temacie opisano funkcje interfejsu użytkownika, które można dostosować w następujących sekcjach:
 
 - [Porównanie funkcji interfejsu użytkownika](#Comparison)
 
-- [Okienka akcji i niestandardowych okienek zadań](#Actions)
+- [Okienka akcji i niestandardowe okienka zadań](#Actions)
 
-- [Niestandardowy interfejs użytkownika wstążki.](#Ribbon)
+- [Niestandardowy interfejs użytkownika wstążki](#Ribbon)
 
 - [Widok Backstage](#Backstage)
 
 - [Regiony formularzy programu Outlook](#FormRegion)
 
-- [Formanty w dokumentach](#Controls)
+- [Kontrolki dokumentów](#Controls)
 
 - [Menu skrótów](#Shortcut)
 
-## <a name="Comparison"></a> Porównanie funkcji interfejsu użytkownika
- W poniższej tabeli porównano główne funkcje interfejsu użytkownika, które można dostosować w projektach programu Microsoft Office.
+## <a name="Comparison"></a>Porównanie funkcji interfejsu użytkownika
+ Poniższa tabela zawiera porównanie głównych funkcji interfejsu użytkownika, które można dostosować w projektach Microsoft Office.
 
-|Funkcja|Obsługiwane typy projektów|Obsługiwane aplikacje Microsoft Office|
+|Funkcja|Obsługiwane typy projektów|Obsługiwane Microsoft Office aplikacje|
 |-------------|-----------------------------|---------------------------------------------|
-|Okienko akcji|Dostosowania na poziomie dokumentów|Excel<br /><br /> Word|
-|Niestandardowe okienka zadań|Dodatków narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|
-|Niestandardowy interfejs użytkownika wstążki.|Dostosowania na poziomie dokumentów<br /><br /> Dodatków narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|
-|Widok Backstage|Dostosowania na poziomie dokumentów<br /><br /> Dodatków narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|
-|Regiony formularzy programu Outlook|Dodatków narzędzi VSTO|Outlook|
-|Formanty w dokumentach|Dostosowania na poziomie dokumentów<br /><br /> Dodatków narzędzi VSTO|Excel<br /><br /> Word|
-|Menu skrótów|Dostosowania na poziomie dokumentów<br /><br /> Dodatków narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|
+|Okienko akcje|Dostosowania na poziomie dokumentów|Excel<br /><br /> Word|
+|Niestandardowe okienka zadań|Dodatki narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|
+|Niestandardowy interfejs użytkownika wstążki|Dostosowania na poziomie dokumentów<br /><br /> Dodatki narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|
+|Widok Backstage|Dostosowania na poziomie dokumentów<br /><br /> Dodatki narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|
+|Regiony formularzy programu Outlook|Dodatki narzędzi VSTO|Outlook|
+|Kontrolki dokumentów|Dostosowania na poziomie dokumentów<br /><br /> Dodatki narzędzi VSTO|Excel<br /><br /> Word|
+|Menu skrótów|Dostosowania na poziomie dokumentów<br /><br /> Dodatki narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|
 
-## <a name="Actions"></a> Okienka akcji i niestandardowych okienek zadań
- Panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna aplikacji Microsoft Office są okienka zadań. Prawie wszystkie aplikacje Microsoft Office zawierają wbudowanego zadania okienka. Przykład okienka zadań to okienko zadań pomocy w programie Word.
+## <a name="Actions"></a>Okienka akcji i niestandardowe okienka zadań
+ Okienka zadań to panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna w aplikacji Microsoft Office. Prawie wszystkie Microsoft Office aplikacje obejmują wbudowane okienka zadań. Przykładem okienka zadań jest okienko zadań pomoc w programie Word.
 
- Narzędzi programistycznych pakietu Office w programie Visual Studio zawierają dwa różne sposoby dostosowywania okienka zadań:
+ Narzędzia programistyczne pakietu Office w programie Visual Studio oferują dwa różne sposoby dostosowywania okienka zadań:
 
-- Możesz dodać okienek akcji do dostosowywania poziomie dokumentu. Domyślnie po prawej stronie aplikacji, po prawej stronie dokumentu zostanie wyświetlone okienko akcji. Jednak w okienku Akcje mogą być wyświetlane na od lewej górnej i dolnej części dokumentu.
+- Okienko akcji można dodać do dostosowania na poziomie dokumentu. Domyślnie okienko akcje jest wyświetlane po prawej stronie aplikacji z prawej strony dokumentu. Jednak okienko akcje może być również wyświetlane w lewej, górnej lub dolnej części dokumentu.
 
-- Dodatek narzędzi VSTO dla programów, można dodać niestandardowego okienka zadań. Użytkownikom można zadokować niestandardowych okienek zadań na różnych stronach w oknie aplikacji lub ich przeciągnij niestandardowych okienek zadań w dowolnej lokalizacji w oknie.
+- Możesz dodać niestandardowe okienko zadań do dodatku narzędzi VSTO. Użytkownicy mogą dokować niestandardowe okienka zadań na różnych stronach okna aplikacji lub przeciągać niestandardowe okienka zadań do dowolnej lokalizacji w oknie.
 
-  Okienka akcji niestandardowych okienek zadań funkcję udostępnia i hostowanie wielu kontrolek, aby ułatwić użytkownikom wykonywanie zadań takich jak wprowadzanie danych. W porównaniu do grupy wstążek, okienka akcji i niestandardowych okienek zadań zapewnia znacznie większy obszar tekstu i formanty.
+  Okienka akcji i niestandardowe okienka zadań zapewniają funkcje, udostępniając różne kontrolki, które ułatwiają użytkownikom wykonywanie zadań, takich jak wprowadzanie danych. W porównaniu z grupą wstążki okienka akcji i niestandardowe okienka zadań zapewniają znacznie większy obszar do uwzględnienia tekstu i kontrolek.
 
-  Aby uzyskać więcej informacji na temat okienka akcji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md). Aby uzyskać więcej informacji na temat niestandardowych okienek zadań, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
+  Aby uzyskać więcej informacji na temat okienek akcji, zobacz [Omówienie okienka Akcje](../vsto/actions-pane-overview.md). Aby uzyskać więcej informacji na temat niestandardowych okienek zadań, zobacz [niestandardowe okienka zadań](../vsto/custom-task-panes.md).
 
-## <a name="Ribbon"></a> Niestandardowy interfejs użytkownika wstążki.
- Można dostosować interfejsu użytkownika wstążki, aby udostępnić funkcje, które można dodać do aplikacji pakietu Office. Wstążka jest sposób organizowania powiązane polecenia (w formie formantów), aby były one łatwiej znaleźć. Możesz utworzyć własne karty Wstążki i grupy, aby zapewnić użytkownikom dostęp do funkcji, które oferują w rozwiązaniu. Większość funkcji, które były dostępne przy użyciu menu i pasków zadań we wcześniejszych wersjach systemu Microsoft Office może teraz uzyskiwać dostęp za pomocą wstążki.
+## <a name="Ribbon"></a>Niestandardowy interfejs użytkownika wstążki
+ Interfejs użytkownika wstążki można dostosować w taki sposób, aby uwidaczniał funkcje dodawane do aplikacji w pakiecie Office. Wstążka jest sposobem organizowania powiązanych poleceń (w formie kontrolek), aby ułatwić ich znalezienie. Możesz utworzyć własne karty wstążki i grupy, aby zapewnić użytkownikom dostęp do funkcji udostępnianych w rozwiązaniu. Większość funkcji, do których uzyskano dostęp przy użyciu menu i pasków narzędzi we wcześniejszych wersjach systemu Microsoft Office, można teraz uzyskać dostęp za pomocą wstążki.
 
- Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).
+ Aby uzyskać więcej informacji, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md).
 
-## <a name="Backstage"></a> Widok Backstage
- W aplikacjach pakietu Office, klikając **pliku** zostanie otwarta karta widoku Backstage. Widok Backstage zapewnia interfejs użytkownika, łączy zadania z poziomu plików i akcji, która zastępuje podobne funkcje dostępne z przycisk Microsoft Office w programie Microsoft Office system 2007. Widok Backstage jest całkowicie rozszerzalny za pomocą pliku XML.
+## <a name="Backstage"></a>Widok Backstage
+ W aplikacjach pakietu Office kliknięcie karty **plik** spowoduje otwarcie widoku Backstage. Widok Backstage udostępnia interfejs użytkownika, który łączy zadania i akcje na poziomie plików, a także zastępuje podobne funkcje dostępne na przycisku Microsoft Office w systemie Microsoft Office 2007. Widok Backstage jest w pełni rozszerzalny przy użyciu XML.
 
- Program Visual Studio nie zapewnia projektanta lub interfejsów API do dostosowywania widoku Backstage. Jednak jeśli dodasz **wstążki (XML)** element XML do projektu pakietu Office, można dodać do pliku XML wstążki do dostosowywania widoku Backstage. Aby uzyskać więcej informacji na temat **wstążki (XML)** elementów, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).
+ Program Visual Studio nie udostępnia projektanta ani interfejsów API do dostosowywania widoku Backstage. Jeśli jednak dodasz element **wstążki (XML)** do projektu pakietu Office, możesz dodać kod XML do pliku XML wstążki, aby dostosować widok Backstage. Aby uzyskać więcej informacji na temat elementów **wstążki (XML)** , zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
- Aby uzyskać więcej informacji na temat dostosowywania widoku Backstage, zobacz [wprowadzenie do widoku widoku Backstage programu Office 2010 dla programistów](http://go.microsoft.com/fwlink/?LinkId=182189) i [dostosować widok widoku Backstage programu Office 2010 dla programistów](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Aby uzyskać więcej informacji na temat dostosowywania widoku Backstage, zobacz [wprowadzenie do widoku Backstage pakietu office 2010 dla deweloperów](http://go.microsoft.com/fwlink/?LinkId=182189) i [Dostosuj widok backstage pakietu Office 2010 dla deweloperów](http://go.microsoft.com/fwlink/?LinkId=182188).
 
-## <a name="FormRegion"></a> Regiony formularzy programu Outlook
- Użyj regionów formularzy w celu dodania funkcji niestandardowych do standardowych formularzy programu Microsoft Office Outlook. Można utworzyć regionów formularzy w, które rozszerzają dowolnego istniejącego formularza za pomocą dodatkowych pól lub kontrolek. Jeśli tworzysz nowy region formularza za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio, można użyć tylko formanty Windows Forms na region formularza. Jeśli importujesz regionu formularza zaprojektowanego w programie Outlook, można użyć tylko natywne kontrolki programu Outlook.
+## <a name="FormRegion"></a>Regiony formularzy programu Outlook
+ Za pomocą regionów formularza można dodawać niestandardowe funkcje do standardowych formularzy programu Outlook Microsoft Office. Można tworzyć regiony formularzy, które poszerzają wszelkie istniejące formularze z dodatkowymi polami lub kontrolkami. Jeśli tworzysz nowy region formularza przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio, możesz użyć tylko formantów Windows Forms w regionie formularza. W przypadku zaimportowania regionu formularza, który został zaprojektowany w programie Outlook, można używać tylko natywnych kontrolek programu Outlook.
 
- Można utworzyć regionów formularzy, które zajmują różne obszary interfejsu użytkownika programu Outlook. Na przykład regionów formularzy w przylegającym są wyświetlane w dolnej części strony pierwszego formularza, a każdy sąsiednimi region formularza jest zwijany. Można również dodać regionu formularza oddzielny, która jest wyświetlana jako stronę pełnej dodatkowych formularzy i który może znajdować się na wszystkich istniejących formularza standardowego lub niestandardowego formularza.
+ Można tworzyć regiony formularzy, które zajmują różne obszary interfejsu użytkownika programu Outlook. Na przykład sąsiadujące regiony formularza są wyświetlane u dołu pierwszej strony formularza, a każdy region przylegających formularzy jest zwijany. Możesz również dodać osobny region formularza, który jest wyświetlany jako pełna dodatkowa strona formularza i który może być wyświetlany na dowolnym istniejącym formularzu standardowym lub formularzu niestandardowym.
 
- Aby uzyskać więcej informacji, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+ Aby uzyskać więcej informacji, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
 
-## <a name="Controls"></a> Formanty w dokumentach
- Możesz dodać różne formanty dokumenty programu Word i arkusze programu Excel. Na przykład możesz chcieć dodać kontrolkę selektora daty do dokumentu, co użytkownik wpisz daty w standardowym formacie, albo umieść przycisku w arkuszach wysyłać dane do bazy danych.
+## <a name="Controls"></a>Kontrolki dokumentów
+ Można dodać różne kontrolki do dokumentów programu Word i arkuszy programu Excel. Na przykład możesz chcieć dodać kontrolkę selektora daty do dokumentu, aby użytkownik mógł wprowadzić daty w formacie standardowym, lub umieścić przycisk w arkuszu, aby wysłać dane do bazy danych.
 
- Podczas tworzenia projektów na poziomie dokumentu dla programu Excel lub Word, można użyć projektanta programu Visual Studio, aby dodać formanty do dokumentu lub skoroszytu w projekcie w czasie projektowania lub można programowo dodać formanty w czasie wykonywania. Podczas tworzenia projektów dodatku VSTO dla programu Excel lub Word, można programowo dodawać formanty, otwórz dokument lub skoroszyt w czasie wykonywania.
+ Podczas opracowywania projektów na poziomie dokumentu dla programu Excel lub Word, można użyć projektanta programu Visual Studio, aby dodać kontrolki do dokumentu lub skoroszytu w projekcie w czasie projektowania lub można programowo dodać kontrolki w czasie wykonywania. Podczas tworzenia projektów dodatku VSTO dla programu Excel lub Word, można programowo dodać kontrolki do dowolnego otwartego dokumentu lub skoroszytu w czasie wykonywania.
 
- Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md) i [Windows forms, formanty na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+ Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md) oraz [kontrolek Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
-## <a name="Shortcut"></a> Menu skrótów
- Menu skrótów pojawia się po kliknięciu prawym przyciskiem myszy w oknie aplikacji lub dokumentu. Możesz ustawić menu skrótów, po wystąpieniu zdarzenia, takie jak kiedy użytkownik kliknie prawym przyciskiem myszy dokumentu, skoroszytu lub kontrolki hosta. Liczba różnych menu poleceń lub kontrolek można dodać do menu skrótów. Tworzenie menu skrótów za pomocą pliku XML. Jeśli dodasz **wstążki (XML)** element XML do projektu pakietu Office, można dodać do pliku XML wstążki, aby utworzyć menu skrótów. Aby uzyskać więcej informacji na temat za pomocą języka XML, aby utworzyć menu skrótów, zobacz [jak: Dodawanie poleceń do menu skrótów](../vsto/how-to-add-commands-to-shortcut-menus.md).
+## <a name="Shortcut"></a>Menu skrótów
+ Menu skrótów pojawia się po kliknięciu prawym przyciskiem myszy w oknie dokumentu lub aplikacji. Można ustawić menu skrótów, które ma być wyświetlane po wystąpieniu zdarzenia, na przykład gdy użytkownik kliknie prawym przyciskiem myszy dokument, skoroszyt lub formant hosta. Do menu skrótów można dodać wiele różnych poleceń menu lub kontrolek. Utwórz menu skrótów za pomocą języka XML. Jeśli dodasz element **wstążki (XML)** do projektu pakietu Office, możesz dodać kod XML do pliku XML wstążki, aby utworzyć menu skrótów. Aby uzyskać więcej informacji na temat tworzenia menu skrótów przy użyciu języka [XML, zobacz How to: Dodaj polecenia do menu](../vsto/how-to-add-commands-to-shortcut-menus.md)skrótów.
 
 ## <a name="see-also"></a>Zobacz także
 - [Wstążka — omówienie](../vsto/ribbon-overview.md)
-- [Windows forms, formanty na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Kontrolki formularzy Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)
-- [Użyj kontrolek WPF w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md)
-- [Instrukcje: Pokazywanie karty dewelopera na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
+- [Korzystanie z formantów WPF w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md)
+- [Instrukcje: Pokaż kartę Deweloper na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
 - [Instrukcje: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)
-- [Przewodnik: Zbieranie danych za pomocą formularza Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Przewodnik: Zbieranie danych przy użyciu formularza systemu Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)

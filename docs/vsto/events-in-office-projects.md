@@ -32,29 +32,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e822ae5f50436a2f1b0b4863b7e6cf3a7d5d0963
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ae8d89baf864c73bed42e4f478624bc930e3c143
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826053"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253607"
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
-  Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń w przypadku dostosowań na poziomie dokumentu są nieco inne niż dodatków narzędzi VSTO dla programów obsługi zdarzeń.
+  Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń dla dostosowań na poziomie dokumentu różnią się nieco od programów obsługi zdarzeń dla dodatków narzędzi VSTO.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="document-level-projects"></a>Projektów na poziomie dokumentu
- Program Visual Studio udostępnia wygenerowany kod związany z nowych lub istniejących dokumentów lub arkuszy w dostosowaniach na poziomie dokumentu. Ten kod wywołuje dwóch różnych zdarzeń: **Uruchamianie** i **zamknięcia**.
+## <a name="document-level-projects"></a>Projekty na poziomie dokumentu
+ Program Visual Studio udostępnia wygenerowany kod za nowym lub istniejącymi dokumentami lub arkuszami w obszarze dostosowania na poziomie dokumentu. Ten kod wywołuje dwa różne zdarzenia: **Uruchamianie** i **zamykanie**.
 
 ### <a name="startup-event"></a>Startup — Zdarzenie
- **Uruchamiania** zdarzenie jest wywoływane dla każdego z elementów hosta (dokumentu, skoroszytu lub arkusza) po dokumentu i całego kodu inicjowania w zestawie została uruchomiona. To ostatnia rzecz do uruchamiania w konstruktorze klasy, działający w kodzie. Aby uzyskać więcej informacji na temat elementów hosta, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
+ Zdarzenie **uruchamiania** jest wywoływane dla każdego elementu hosta (dokumentu, skoroszytu lub arkusza) po uruchomieniu dokumentu i został uruchomiony cały kod inicjalizacji w zestawie. Ostatnim krokiem jest uruchomienie w konstruktorze klasy, w której uruchomiono kod. Aby uzyskać więcej informacji na temat elementów hosta, zobacz [Omówienie elementów hosta i formantów hosta](../vsto/host-items-and-host-controls-overview.md).
 
- Podczas tworzenia projektów dokumentów programu Visual Studio tworzy obsługę zdarzeń dla **uruchamiania** zdarzenia w plikach wygenerowanego kodu:
+ Podczas tworzenia projektu na poziomie dokumentu program Visual Studio tworzy programy obsługi zdarzeń dla zdarzenia **uruchamiania** w wygenerowanych plikach kodu:
 
-- Dla projektów programu Microsoft Office Word, program obsługi zdarzeń o nazwie `ThisDocument_Startup`.
+- W przypadku projektów programu Microsoft Office Word program obsługi zdarzeń ma `ThisDocument_Startup`nazwę.
 
-- Dla projektów programu Microsoft Office Excel programy obsługi zdarzeń mają następujące nazwy:
+- W przypadku Microsoft Office projektów programu Excel programy obsługi zdarzeń mają następujące nazwy:
 
   - `Sheet1_Startup`
 
@@ -65,13 +65,13 @@ ms.locfileid: "67826053"
   - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown — Zdarzenie
- **Zamknięcia** zdarzenie jest wywoływane dla każdego z elementów hosta (dokument lub arkusz) po domenie aplikacji, które Twój kod jest ładowany w chcesz zwolnić. Jest ostatnim zadaniem, które ma zostać wywołana w klasie, ponieważ zwalnia.
+ Zdarzenie **zamknięcia** jest wywoływane dla każdego elementu hosta (dokumentu lub arkusza), gdy domena aplikacji, w której jest ładowany kod, zostanie zwolniona. Jest to ostatni element, który ma zostać wywołany w klasie podczas jej ładowania.
 
- Podczas tworzenia projektów dokumentów programu Visual Studio tworzy obsługę zdarzeń dla **zamknięcia** zdarzenia w plikach wygenerowanego kodu:
+ Podczas tworzenia projektu na poziomie dokumentu program Visual Studio tworzy programy obsługi zdarzeń dla zdarzenia **zamknięcia** w wygenerowanych plikach kodu:
 
-- Dla projektów programu Microsoft Office Word, program obsługi zdarzeń o nazwie `ThisDocument_Shutdown`.
+- W przypadku projektów programu Microsoft Office Word program obsługi zdarzeń ma `ThisDocument_Shutdown`nazwę.
 
-- Dla projektów programu Microsoft Office Excel programy obsługi zdarzeń mają następujące nazwy:
+- W przypadku Microsoft Office projektów programu Excel programy obsługi zdarzeń mają następujące nazwy:
 
   - `Sheet1_Shutdown`
 
@@ -82,10 +82,10 @@ ms.locfileid: "67826053"
   - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
-> Nie usuwaj programowo kontrole podczas **zamknięcia** program obsługi zdarzeń dokumentu. Elementy interfejsu użytkownika w pliku nie są już dostępne podczas **zamknięcia** wystąpi zdarzenie. Jeśli chcesz usunąć kontrolki przed zamknięciem aplikacji, Dodaj kod do innego programu obsługi zdarzeń, takich jak **BeforeClose** lub **BeforeSave**.
+> Nie należy programistycznie usuwać formantów podczas procedury obsługi zdarzeń **zamykania** dokumentu. Elementy interfejsu użytkownika dokumentu nie są już dostępne w przypadku wystąpienia zdarzenia **zamknięcia** . Jeśli chcesz usunąć formanty przed zamknięciem aplikacji, Dodaj kod do innego programu obsługi zdarzeń, takiego jak **BeforeClose** lub **BeforeSave**.
 
 ### <a name="event-handler-method-declarations"></a>Deklaracje metody obsługi zdarzeń
- Co deklaracja metody obsługi zdarzeń ma te same argumenty przekazywane do niej: *nadawcy* i *e*. W programie Excel *nadawcy* argument odwołuje się do arkusza, takich jak `Sheet1` lub `Sheet2`; w programie Word, *nadawcy* argument, który odwołuje się do dokumentu. *e* argument, który odwołuje się do standardowych argumenty dla zdarzenia, które nie są używane w tym przypadku.
+ Każda deklaracja metody obsługi zdarzeń ma przekazane te same argumenty: *Sender* i *e*. W programie Excel argument *nadawcy* odwołuje się do arkusza, takiego `Sheet1` jak `Sheet2`lub; w programie Word argument *nadawcy* odwołuje się do dokumentu. Argument *e* odwołuje się do standardowych argumentów dla zdarzenia, które nie są używane w tym przypadku.
 
  Poniższy przykład kodu pokazuje domyślne programy obsługi zdarzeń w projektach na poziomie dokumentu dla programu Word.
 
@@ -95,13 +95,13 @@ ms.locfileid: "67826053"
  Poniższy przykład kodu pokazuje domyślne programy obsługi zdarzeń w projektach na poziomie dokumentu dla programu Excel.
 
 > [!NOTE]
-> Poniższy przykład kodu pokazuje obsługę zdarzeń w `Sheet1` klasy. Nazwy programów obsługi zdarzeń w innych klas elementów hosta odpowiadać Nazwa klasy. Na przykład w `Sheet2` klasy **uruchamiania** nosi nazwę programu obsługi zdarzeń `Sheet2_Startup`. W `ThisWorkbook` klasy **uruchamiania** nosi nazwę programu obsługi zdarzeń `ThisWorkbook_Startup`.
+> Poniższy przykład kodu pokazuje procedury obsługi zdarzeń w `Sheet1` klasie. Nazwy programów obsługi zdarzeń w innych klasach elementów hosta odpowiadają nazwie klasy. Na przykład w `Sheet2` klasie program obsługi zdarzeń **uruchamiania** ma nazwę `Sheet2_Startup`. W klasie program obsługi zdarzeń **uruchamiania** ma nazwę `ThisWorkbook_Startup`. `ThisWorkbook`
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
 
-### <a name="order-of-events-in-document-level-excel-projects"></a>Kolejność zdarzeń w projektach programu Excel poziomie dokumentu
- **Uruchamiania** są wywoływane programy obsługi zdarzeń w projektach programu Excel, w następującej kolejności:
+### <a name="order-of-events-in-document-level-excel-projects"></a>Kolejność zdarzeń w projektach programu Excel na poziomie dokumentu
+ Procedury obsługi zdarzeń **uruchamiania** w projektach programu Excel są wywoływane w następującej kolejności:
 
 1. `ThisWorkbook_Startup`.
 
@@ -113,7 +113,7 @@ ms.locfileid: "67826053"
 
 5. Inne arkusze w kolejności.
 
-   **Zamknięcia** procedury obsługi zdarzeń w rozwiązaniu skoroszytu są wywoływane w następującej kolejności:
+   Programy obsługi zdarzeń **zamknięcia** w rozwiązaniu skoroszytu są wywoływane w następującej kolejności:
 
 6. `ThisWorkbook_Shutdown`.
 
@@ -125,36 +125,36 @@ ms.locfileid: "67826053"
 
 10. Inne arkusze w kolejności.
 
-    Kolejność jest określana podczas kompilowania projektu. Jeśli użytkownik zmienia arkuszy w czasie wykonywania, nie powoduje zmiany kolejności, że zdarzenia są wywoływane przy następnym otwarcie lub zamknięcie skoroszytu.
+    Kolejność jest określana podczas kompilowania projektu. Jeśli użytkownik zmieni rozmieszczenie arkuszy w czasie wykonywania, nie zmienia kolejności, w której zdarzenia są zgłaszane przy następnym otwarciu lub zamknięciu skoroszytu.
 
-## <a name="vsto-add-in-projects"></a>Projekty dodatków narzędzi VSTO
- Program Visual Studio udostępnia wygenerowanego kodu w dodatkach VSTO. Ten kod wywołuje dwóch różnych zdarzeń: <xref:Microsoft.Office.Tools.AddInBase.Startup> i <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
+## <a name="vsto-add-in-projects"></a>Projekty dodatków VSTO
+ Program Visual Studio udostępnia wygenerowany kod w dodatkach narzędzi VSTO. Ten kod wywołuje dwa różne zdarzenia: <xref:Microsoft.Office.Tools.AddInBase.Startup> i <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
 
 ### <a name="startup-event"></a>Startup — Zdarzenie
- <xref:Microsoft.Office.Tools.AddIn.Startup> Zdarzenie jest wywoływane po dodatku narzędzi VSTO zostanie załadowany i całego kodu inicjowania w zestawie została uruchomiona. To zdarzenie jest obsługiwane przez `ThisAddIn_Startup` metody w pliku wygenerowanego kodu.
+ <xref:Microsoft.Office.Tools.AddIn.Startup> Zdarzenie jest zgłaszane po załadowaniu dodatku VSTO i uruchomieniu wszystkich kodów inicjalizacji w zestawie. To zdarzenie jest obsługiwane przez `ThisAddIn_Startup` metodę w wygenerowanym pliku kodu.
 
- Możesz pisać kod w `ThisAddIn_Startup` procedura obsługi zdarzeń jest pierwszy kod użytkownika do uruchomienia, chyba że dodatku narzędzi VSTO dla programów zastępuje <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> metody. W tym przypadku `ThisAddIn_Startup` programu obsługi zdarzeń jest wywoływana po <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.
+ Kod w programie `ThisAddIn_Startup` obsługi zdarzeń to pierwszy kod użytkownika do uruchomienia, chyba że dodatek VSTO <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> zastępuje metodę. W takim przypadku `ThisAddIn_Startup` program obsługi zdarzeń jest wywoływany po <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.
 
- Nie należy dodawać kod w `ThisAdd-In_Startup` programu obsługi zdarzeń, jeśli kod wymaga dokument jest otwarty. Zamiast tego należy dodać kod do zdarzenia, które wywołuje aplikacji pakietu Office, gdy użytkownik tworzy lub otwiera dokument. Aby uzyskać więcej informacji, zobacz [dostęp do dokumentu, podczas uruchamiania aplikacji Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+ Nie dodawaj kodu w `ThisAdd-In_Startup` programie obsługi zdarzeń, jeśli kod wymaga otwarcia dokumentu. Zamiast tego należy dodać ten kod do zdarzenia, które aplikacja pakietu Office zgłasza, gdy użytkownik tworzy lub otwiera dokument. Aby uzyskać więcej informacji, zobacz [dostęp do dokumentu podczas uruchamiania aplikacji pakietu Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
- Aby uzyskać więcej informacji na temat sekwencji uruchamiania dodatków narzędzi VSTO dla programów, zobacz [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
+ Aby uzyskać więcej informacji na temat sekwencji uruchamiania dodatków narzędzi VSTO, zobacz [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md).
 
 ### <a name="shutdown-event"></a>Shutdown — Zdarzenie
- <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Zdarzenie jest wywoływane, gdy domena aplikacji, który Twój kod jest ładowany w ma zostać zwolniony. To zdarzenie jest obsługiwane przez `ThisAddIn_Shutdown` metody w pliku wygenerowanego kodu. Ta procedura obsługi zdarzeń jest ostatni kod użytkownika do uruchomienia po dodatku narzędzi VSTO jest zwalniana.
+ <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Zdarzenie jest zgłaszane, gdy domena aplikacji, w której jest ładowany kod, zostanie zwolniona. To zdarzenie jest obsługiwane przez `ThisAddIn_Shutdown` metodę w wygenerowanym pliku kodu. Ten program obsługi zdarzeń jest ostatnim kodem użytkownika do uruchomienia, gdy dodatek narzędzi VSTO zostanie zwolniony.
 
-#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Zdarzenie zamknięcia w dodatkach VSTO programu Outlook
- <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Zdarzenie jest zgłaszane tylko wtedy, gdy użytkownik wyłącza dodatku narzędzi VSTO za pomocą okna dialogowego Dodatki COM w programie Outlook. Nie jest zgłaszany, gdy kończy działanie programu Outlook. Jeśli masz kod, który należy uruchomić, gdy kończy działanie programu Outlook, obsługują jedną z następujących zdarzeń:
+#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Zdarzenie zamknięcia w dodatkach narzędzia VSTO programu Outlook
+ <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Zdarzenie jest zgłaszane tylko wtedy, gdy użytkownik wyłączy dodatek VSTO przy użyciu okna dialogowego Dodatki COM w programie Outlook. Nie jest zgłaszane, gdy program Outlook zostanie zakończony. Jeśli masz kod, który musi być uruchamiany podczas zamykania programu Outlook, dojście jednego z następujących zdarzeń:
 
-- <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Zdarzenia <xref:Microsoft.Office.Interop.Outlook.Application> obiektu.
+- <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Zdarzenie<xref:Microsoft.Office.Interop.Outlook.Application> obiektu.
 
-- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Zdarzenia <xref:Microsoft.Office.Interop.Outlook.Explorer> obiektu.
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Zdarzenie<xref:Microsoft.Office.Interop.Outlook.Explorer> obiektu.
 
 > [!NOTE]
-> Można wymusić programu Outlook w celu podniesienia <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzenie, kiedy wychodzi przez modyfikację rejestru. Jednak jeśli administrator przywraca ustawienie, dowolny kod dodasz do `ThisAddIn_Shutdown` metoda jest już uruchamiany, gdy kończy działanie programu Outlook. Aby uzyskać więcej informacji, zobacz [zamykania zmian dla programu Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Można wymusić, <xref:Microsoft.Office.Tools.AddInBase.Shutdown> aby program Outlook zgłaszał zdarzenie po jego zakończeniu przez zmodyfikowanie rejestru. Jeśli jednak administrator powróci to ustawienie, dowolny kod, który zostanie dodany do `ThisAddIn_Shutdown` metody, nie będzie już działać po zamknięciu programu Outlook. Aby uzyskać więcej informacji, zobacz temat [zmiany w zamknięciu programu Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Zobacz także
-- [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
-- [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)
-- [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)
-- [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)
+- [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
+- [Instrukcje: Tworzenie projektów pakietu Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
+- [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
+- [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)

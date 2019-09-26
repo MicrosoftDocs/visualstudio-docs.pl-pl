@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740119"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254056"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Przewodnik: Powiąż z danymi z usługi w projekcie dodatku VSTO
   Można powiązać dane z kontrolkami hosta w projektach dodatku VSTO. W tym instruktażu pokazano, jak dodać kontrolki do dokumentu programu Word Microsoft Office, powiązać kontrolki z danymi pobranymi z usługi zawartości MSDN i odpowiadać na zdarzenia w czasie wykonywania.
@@ -73,7 +73,7 @@ ms.locfileid: "68740119"
 
 6. W oknie dialogowym **Dodawanie odwołania kreatora** kliknij przycisk **Zakończ**.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Dodaj kontrolkę zawartości i powiąż z danymi w czasie wykonywania
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>Dodaj kontrolkę zawartości i powiąż z danymi w czasie wykonywania
  W projektach dodatku VSTO Dodawanie i powiązywanie kontrolek w czasie wykonywania. W tym instruktażu Skonfiguruj kontrolkę zawartość, aby pobierać dane z usługi sieci Web, gdy użytkownik kliknie wewnątrz kontrolki.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Aby dodać kontrolkę zawartości i powiązać ją z danymi

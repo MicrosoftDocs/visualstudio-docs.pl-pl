@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9333f2fb1bff0fdb8a3f0dac8004f66156b8863d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c288764cf9182bc34233d312546f7915eed5975
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870822"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252181"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Dokumentacja schematu rozszerzenia VSIX 2,0
 Plik manifestu wdrożenia VSIX opisuje zawartość pakietu VSIX. Format pliku podlega schematowi. Wersja 2,0 tego schematu obsługuje Dodawanie niestandardowych typów i atrybutów.  Schemat manifestu jest rozszerzalny. Moduł ładujący manifest ignoruje elementy XML i atrybuty, które nie są zrozumiałe.
@@ -187,9 +187,9 @@ Plik manifestu wdrożenia VSIX opisuje zawartość pakietu VSIX. Format pliku po
 
   - `TargetVersion`— zakres wersji, do którego odnosi się dany zasób. Służy do wysyłania wielu wersji zasobów do różnych wersji programu Visual Studio. Wymaga programu Visual Studio w wersji 2017,3 lub nowszej.
 
-  - `AnyAttribute*`-Otwarty zestaw atrybutów, które są udostępniane w czasie wykonywania jako słownik par nazwa-wartość.
+  - `AnyAttribute*`-Otwarty zestaw atrybutów, które są ujawniane w czasie wykonywania jako słownik par nazwa-wartość.
 
-    `<AnyElement>*`-Każda zawartość strukturalna jest dozwolona między `<Asset>` tagiem BEGIN i End. Wszystkie elementy są uwidocznione jako lista obiektów XmlElement. Rozszerzenia VSIX mogą definiować metadane specyficzne dla określonego typu w pliku manifestu i wyliczać je w czasie wykonywania.
+    `<AnyElement>*`-Każda zawartość strukturalna jest dozwolona między `<Asset>` tagiem BEGIN i End. Wszystkie elementy są uwidocznione jako lista obiektów XmlElement. Rozszerzenia VSIX mogą definiować metadane specyficzne dla typu strukturalnego w pliku manifestu i wyliczać je w czasie wykonywania.
 
 ### <a name="sample-manifest"></a>Przykładowy manifest
 

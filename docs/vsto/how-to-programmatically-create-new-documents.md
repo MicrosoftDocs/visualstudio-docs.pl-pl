@@ -14,39 +14,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4940b5f5064fdb47439ad6b38b855785ae06c781
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71610d0bd2e957d932e31d83d06aca914bf8b585
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575133"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251953"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Instrukcje: Programowe tworzenie nowych dokumentów
-  Po utworzeniu dokumentu programowo nowy dokument jest natywny <xref:Microsoft.Office.Interop.Word.Document> obiektu. Ten obiekt nie ma dodatkowych zdarzeń i możliwości wiązania danych <xref:Microsoft.Office.Tools.Word.Document> element hosta. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+  Gdy tworzysz dokument programowo, nowy dokument jest obiektem macierzystym <xref:Microsoft.Office.Interop.Word.Document> . Ten obiekt nie ma dodatkowych zdarzeń i możliwości <xref:Microsoft.Office.Tools.Word.Document> powiązania danych elementu hosta. Aby uzyskać więcej informacji, zobacz Ograniczenia programowe [elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Podczas tworzenia projektów dokumentów nie można programowo dodać <xref:Microsoft.Office.Tools.Word.Document> hosta elementy do projektu. W projekcie dodatku narzędzi VSTO dla programów, należy przekonwertować którekolwiek <xref:Microsoft.Office.Interop.Word.Document> obiekt <xref:Microsoft.Office.Tools.Word.Document> element hosta w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+ Podczas opracowywania projektu na poziomie dokumentu nie można programowo dodawać <xref:Microsoft.Office.Tools.Word.Document> elementów hosta do projektu. W projekcie dodatku VSTO można przekonwertować dowolny <xref:Microsoft.Office.Interop.Word.Document> obiekt <xref:Microsoft.Office.Tools.Word.Document> na element hosta w czasie wykonywania. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="to-create-a-new-document-based-on-the-normal-template"></a>Aby utworzyć nowy dokument oparty na szablonie normalnego
+## <a name="to-create-a-new-document-based-on-the-normal-template"></a>Aby utworzyć nowy dokument w oparciu o normalny szablon
 
-- Użyj <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Documents> kolekcję, aby utworzyć nowy dokument oparty na szablonie normalny. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
+- <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> Użyj metody <xref:Microsoft.Office.Interop.Word.Documents> kolekcji, aby utworzyć nowy dokument w oparciu o normalny szablon. Aby użyć tego przykładu kodu, należy uruchomić go `ThisDocument` z `ThisAddIn` lub klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#1)]
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
 
-## <a name="use-custom-templates"></a>Użyj szablonów niestandardowych
- <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> Metoda ma opcjonalny *szablonu* argumentu, aby utworzyć nowy dokument oparty na szablonie inne niż szablonu normalnej. Musisz podać nazwę pliku i w pełni kwalifikowana ścieżka szablonu.
+## <a name="use-custom-templates"></a>Korzystanie z szablonów niestandardowych
+ Metoda ma opcjonalny argument szablonu do tworzenia nowego dokumentu na podstawie szablonu innego niż normalny szablon. <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> Należy podać nazwę pliku i w pełni kwalifikowaną ścieżkę szablonu.
 
-### <a name="to-create-a-new-document-based-on-a-custom-template"></a>Aby utworzyć nowy dokument oparty na szablonie niestandardowym
+### <a name="to-create-a-new-document-based-on-a-custom-template"></a>Aby utworzyć nowy dokument na podstawie szablonu niestandardowego
 
-- Wywołaj <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Documents> kolekcji i określ ścieżkę do szablonu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
+- Wywołaj <xref:Microsoft.Office.Interop.Word.Documents> metodę kolekcji i określ ścieżkę do szablonu. <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> Aby użyć tego przykładu kodu, należy uruchomić go `ThisDocument` z `ThisAddIn` lub klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#2)]
      [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
+- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

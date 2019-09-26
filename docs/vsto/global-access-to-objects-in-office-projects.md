@@ -30,32 +30,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f05f18201a055ac88e4af90d7b8e4d9db8f4e4b6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427942"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253449"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globalny dostęp do obiektów w projektach pakietu Office
-  Podczas tworzenia projektu pakietu Office program Visual Studio automatycznie generuje klasę o nazwie `Globals` w projekcie. Możesz użyć `Globals` klasy, aby mieć dostęp do kilku elementów inny projekt, w czasie wykonywania z dowolnego kodu w projekcie.
+  Podczas tworzenia projektu pakietu Office Program Visual Studio automatycznie generuje klasę o nazwie `Globals` w projekcie. Można użyć klasy, `Globals` Aby uzyskać dostęp do kilku różnych elementów projektu w czasie wykonywania z dowolnego kodu w projekcie.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="how-to-use-the-globals-class"></a>Jak używać klasy globalne
- `Globals` jest klasą statyczną, który utrzymuje odwołania do określonych elementów w projekcie. Za pomocą `Globals` klasy, są dostępne następujące elementy w projekcie kodu w czasie wykonywania:
+## <a name="how-to-use-the-globals-class"></a>Jak używać klasy Globals
+ `Globals`jest klasą statyczną, która zachowuje odwołania do określonych elementów w projekcie. Korzystając z `Globals` klasy, można uzyskać dostęp do następujących elementów z dowolnego kodu w projekcie w czasie wykonywania:
 
-- `ThisWorkbook` i `Sheet` *n* klasy w projekcie skoroszytem lub szablonem programu Excel. Dostęp do tych obiektów za pomocą `Globals.ThisWorkbook` i `Sheet` *n* właściwości.
+- Klasy `ThisWorkbook` i `Sheet` *n* w skoroszycie programu Excel lub w projekcie szablonu. Dostęp do tych obiektów można uzyskać przy użyciu `Globals.ThisWorkbook` właściwości `Sheet` *i* .
 
-- `ThisDocument` Klasy w projekcie dokumentem lub szablonem programu Word. Dostęp do obiektu za pomocą `Globals.ThisDocument` właściwości.
+- `ThisDocument` Klasa w dokumencie programu Word lub projekcie szablonu. Dostęp do tego obiektu można uzyskać przy użyciu `Globals.ThisDocument` właściwości.
 
-- `ThisAddIn` Klasy w projekcie dodatku narzędzi VSTO. Dostęp do obiektu za pomocą `Globals.ThisAddIn` właściwości.
+- `ThisAddIn` Klasa w projekcie dodatku VSTO. Dostęp do tego obiektu można uzyskać przy użyciu `Globals.ThisAddIn` właściwości.
 
-- Wszystkie taśmy w projekcie, który można dostosować przy użyciu projektanta wstążki. Dostęp do wstążki przy użyciu `Globals.Ribbons` właściwości. Aby uzyskać więcej informacji, zobacz [dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md).
+- Wszystkie wstążki w projekcie, które zostały dostosowane przy użyciu projektanta wstążki. Możesz uzyskać dostęp do wstążki przy użyciu `Globals.Ribbons` właściwości. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md).
 
-- Wszystkie regiony formularza programu Outlook w projekcie dodatku narzędzi VSTO dla programu Outlook. Dostęp do regionów formularzy przy użyciu `Globals.FormRegions` właściwości. Aby uzyskać więcej informacji, zobacz [dostępu do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md).
+- Wszystkie regiony formularzy programu Outlook w projekcie dodatku VSTO programu Outlook. Możesz uzyskać dostęp do regionów formularza przy użyciu `Globals.FormRegions` właściwości. Aby uzyskać więcej informacji, zobacz [dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md).
 
-- Obiekt fabryki, która pozwala na tworzenie formantów wstążki, a następnie Hostuj elementy w czasie wykonywania w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dostęp do obiektu za pomocą `Globals.Factory` właściwości. Ten obiekt jest wystąpieniem klasy, która implementuje jedną następujących interfejsów:
+- Obiekt fabryki, który umożliwia tworzenie kontrolek wstążki i elementów hosta w czasie wykonywania w projektach przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]lub. Dostęp do tego obiektu można uzyskać przy użyciu `Globals.Factory` właściwości. Ten obiekt jest wystąpieniem klasy implementującej jeden z następujących interfejsów:
 
   - <xref:Microsoft.Office.Tools.Factory>
 
@@ -65,21 +65,21 @@ ms.locfileid: "63427942"
 
   - <xref:Microsoft.Office.Tools.Word.Factory>
 
-  Na przykład, można użyć `Globals.Sheet1` właściwość Wstawianie tekstu do <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolować na `Sheet1` kiedy użytkownik kliknie przycisk w okienku akcji w projekcie na poziomie dokumentu dla programu Excel.
+  Na przykład można użyć właściwości, `Globals.Sheet1` aby wstawić tekst do kontrolki `Sheet1` , <xref:Microsoft.Office.Tools.Excel.NamedRange> gdy użytkownik kliknie przycisk w okienku Akcje w projekcie na poziomie dokumentu dla programu Excel.
 
   [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
   [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
 
-## <a name="initialize-the-globals-class"></a>Inicjowanie klasy globalne
- Kod, który próbuje użyć `Globals` klasy przed zainicjowaniem jest dokument lub dodatku narzędzi VSTO może zgłosić wyjątek czasu wykonywania. Na przykład za pomocą `Globals` podczas deklarowania zmienną na poziomie klasy może się nie powieść ponieważ `Globals` klasy może nie być zainicjowana za pomocą odwołania do wszystkich elementów hosta przed utworzeniem wystąpienia deklarowanego obiektu.
+## <a name="initialize-the-globals-class"></a>Inicjowanie klasy Globals
+ Kod, który próbuje użyć `Globals` klasy przed zainicjowaniem dokumentu lub dodatku VSTO może zgłosić wyjątek czasu wykonywania. Na przykład użycie `Globals` podczas deklarowania zmiennej na poziomie klasy może się nie powieść, `Globals` ponieważ Klasa może nie zostać zainicjowana z odwołaniami do wszystkich elementów hosta przed wystąpieniem zadeklarowanego obiektu.
 
 > [!NOTE]
-> `Globals` Klasy nigdy nie został zainicjowany w czasie projektowania, ale wystąpienia kontrolki są tworzone przez projektanta. Oznacza to, że jeśli utworzysz formant użytkownika, który korzysta z właściwością `Globals` klasy z wewnątrz klasy formantu użytkownika, musisz sprawdzić, czy właściwość ta zwraca **null** przed podjęciem próby użycia zwróconego obiektu.
+> `Globals` Klasa nigdy nie została zainicjowana w czasie projektowania, ale instancje sterujące są tworzone przez projektanta. Oznacza to, że w przypadku utworzenia kontrolki użytkownika, która używa właściwości `Globals` klasy z wewnątrz klasy kontrolki użytkownika, należy sprawdzić, czy właściwość zwraca **wartość null** przed podjęciem próby użycia zwracanego obiektu.
 
 ## <a name="see-also"></a>Zobacz także
-- [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Dostęp do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
-- [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
+- [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
+- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Element hosta dokumentu](../vsto/document-host-item.md)
 - [Element hosta skoroszytu](../vsto/workbook-host-item.md)
 - [Element hosta arkusza](../vsto/worksheet-host-item.md)

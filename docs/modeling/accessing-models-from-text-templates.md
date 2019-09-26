@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7dd7df55f67d486d03048860bf3d20f976a70f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b9e3b3762b127b1f66b43d6c961054b9cef04048
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870712"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254120"
 ---
 # <a name="access-models-from-text-templates"></a>Dostęp do modeli z szablonów tekstowych
 
 Za pomocą szablonów tekstowych można tworzyć pliki raportów, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modelach języka właściwych dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablony tekstowe będą działały w trybie eksperymentalnym podczas debugowania DSL, a także będą działały na komputerze, na którym wdrożono DSL.
 
 > [!NOTE]
-> Podczas tworzenia rozwiązania DSL, przykładowy szablon  **\*** tekstowy jest generowany w projekcie debugowania. Zmiany nazw klas domen nie będą już działać. Jednak zawierają one wymagane dyrektywy podstawowe i zawierają przykłady, które można zaktualizować w celu dopasowania do języka DSL.
+> Podczas tworzenia rozwiązania DSL,  **\*przykładowy szablon tekstowy** jest generowany w projekcie debugowania. Zmiany nazw klas domen nie będą już działać. Jednak zawierają one wymagane dyrektywy podstawowe i zawierają przykłady, które można zaktualizować w celu dopasowania do języka DSL.
 
  Aby uzyskać dostęp do modelu z szablonu tekstu:
 
@@ -136,7 +136,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ```
 
 ## <a name="loading-models-dynamically"></a>Dynamiczne ładowanie modeli
- Jeśli chcesz określić w czasie wykonywania modele do załadowania, można załadować plik modelu dynamicznie w kodzie programu, zamiast używać dyrektywy specyficznej dla DSL.
+ Jeśli chcesz określić w czasie wykonywania modele do załadowania, możesz załadować plik modelu dynamicznie w kodzie programu, zamiast używać dyrektywy specyficznej dla DSL.
 
  Jednak jedna z funkcji dyrektywy specyficznej dla DSL polega na zaimportowaniu przestrzeni nazw DSL, aby kod szablonu mógł używać klas domeny zdefiniowanych w tym DSL. Ponieważ nie używasz dyrektywy, musisz dodać  **\<> zestawu** i  **\<zaimportować dyrektywy >** dla wszystkich modeli, które mogą zostać załadowane. Jest to proste, jeśli różne modele, które można załadować, to wszystkie wystąpienia tego samego DSL.
 

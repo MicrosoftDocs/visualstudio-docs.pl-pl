@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie wstążki do InfoPath
+title: Dostosowywanie wstążki dla programu InfoPath
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,56 +13,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437441"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255507"
 ---
-# <a name="customize-a-ribbon-for-infopath"></a>Dostosowywanie wstążki do InfoPath
-  Podczas dostosowywania wstążki w programie Microsoft InfoPath pakietu Office, należy rozważyć, gdzie Twoje niestandardowa Wstążka pojawią się w aplikacji. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] może wyświetlać wstążki w trzech następujących rodzajów InfoPath aplikacji systemu windows:
+# <a name="customize-a-ribbon-for-infopath"></a>Dostosowywanie wstążki dla programu InfoPath
+  Po dostosowaniu wstążki w Microsoft Office InfoPath należy rozważyć, gdzie wstążka niestandardowa będzie wyświetlana w aplikacji. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]można wyświetlić Wstążkę w następujących trzech typach okien aplikacji programu InfoPath:
 
-- Windows, wyświetlające szablonu formularza, który jest otwierany w trybie projektowania.
+- System Windows, który wyświetla szablon formularza otwarty w trybie projektowania.
 
-- Windows, do wyświetlania formularza, który jest oparty na szablonie formularza.
+- System Windows, który wyświetla formularz oparty na szablonie formularza.
 
 - Okno podglądu wydruku.
 
-  **Dotyczy:** Informacje przedstawione w tym temacie dotyczą projektów dodatku VSTO dla programu InfoPath 2010. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).
+  **Dotyczy:** Informacje przedstawione w tym temacie dotyczą projektów dodatku VSTO dla programu InfoPath 2010. Aby uzyskać więcej informacji, zobacz [dostępność funkcji według aplikacji pakietu Office i typów projektów](../vsto/features-available-by-office-application-and-project-type.md).
 
-  Użytkownicy i projektanci Otwórz szablon formularza w trybie projektowania, aby zmodyfikować wygląd i układ szablonu. Użytkownicy otworzyć formularze, które opierają się w szablonie formularza, aby dodać zawartość.
+  Użytkownicy i projektanci otwierają szablon formularza w trybie projektowania, aby modyfikować wygląd i układ szablonu. Użytkownicy otwierają formularze, które są oparte na szablonie formularza do dodawania zawartości.
 
-  Okno podglądu wydruku umożliwia projektantów i użytkowników wyświetlić podgląd strony formularza lub szablonu formularza, przed ich drukowanie.
+  Okno podglądu wydruku umożliwia projektantom i użytkownikom wyświetlanie podglądu stron formularza lub szablonu formularza przed ich wydrukowaniem.
 
 > [!NOTE]
-> **AddIns** karta nie pojawi się w oknie Podgląd wydruku. Jeśli chcesz, aby niestandardowej karty pojawią się w oknie Podgląd wydruku, upewnij się, że **OfficeId** nie ustawiono właściwości karty **TabAddIns**.
+> Karta **Dodatki** nie jest wyświetlana w oknie Podgląd wydruku. Jeśli chcesz, aby w oknie podglądu wydruku była wyświetlana karta niestandardowa, upewnij się, że właściwość **OfficeId** karty nie jest ustawiona na **TabAddIns**.
 
- Należy określić typ wstążki każdego okna, w którym chcesz Wstążkę w taki sposób, w celu są wyświetlane.
+ Należy określić typ wstążki dla każdego okna, w którym ma zostać wyświetlona wstążka.
 
-## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Określ typ Wstążkę w Projektancie wstążki
- Jeśli używasz **Wstążka (Projektant graficzny)** element, kliknij przycisk **RibbonType** właściwości wstążki w **właściwości** okna, a następnie wybierz dowolną identyfikatorów wstążki opisane w poniższej tabeli.
+## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Określanie typu wstążki w Projektancie wstążki
+ Jeśli używasz **wstążki (projektant graficzny)** , kliknij właściwość **wstążka** wstążki w oknie **Właściwości** , a następnie wybierz dowolne identyfikatory wstążki opisane w poniższej tabeli.
 
-|Identyfikator wstążki|Okno, w którym wstążce pojawi się po uruchomieniu projektu|
+|Identyfikator wstążki|Okno, w którym wstążka będzie wyświetlana podczas uruchamiania projektu|
 |---------------|---------------------------------------------------------------------|
-|**Microsoft.InfoPath.Designer**|Windows, wyświetlające szablonu formularza, który jest otwierany w trybie projektowania.|
-|**Microsoft.InfoPath.Editor**|Windows, do wyświetlania formularza, który jest oparty na szablonie formularza.|
+|**Microsoft.InfoPath.Designer**|System Windows, który wyświetla szablon formularza otwarty w trybie projektowania.|
+|**Microsoft.InfoPath.Editor**|System Windows, który wyświetla formularz oparty na szablonie formularza.|
 |**Microsoft.InfoPath.PrintPreview**|Okno podglądu wydruku.|
 
- Możesz dodać więcej niż jeden wstążki do projektu. Jeśli więcej niż jeden wstążki udostępnić identyfikator wstążki, zastępują `CreateRibbonExtensibilityObject` method in Class metoda `ThisAddin` klasy projektu, aby określić, które wstążki do wyświetlenia w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).
+ Do projektu można dodać więcej niż jedną Wstążkę. Jeśli więcej niż jedna wstążka korzysta z identyfikatora wstążki, Zastąp `CreateRibbonExtensibilityObject` metodę `ThisAddin` w klasie projektu, aby określić, która wstążka ma być wyświetlana w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md).
 
-## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Określ typ wstążki za pomocą XML wstążki
- Jeśli używasz **wstążki (XML)** , należy sprawdzić wartość *ribbonID* parametr <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody i zwrócenie odpowiedniego wstążki.
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Określ typ wstążki przy użyciu kodu XML wstążki
+ Jeśli używasz elementu **wstążki (XML)** , sprawdź wartość <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> parametru *ribbonID* w metodzie i zwróć odpowiednią Wstążkę.
 
- <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> Metody jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. *RibbonID* parametru jest ciąg, który identyfikuje typ okna programu InfoPath, które jest otwierane.
+ <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> Metoda jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. Parametr *ribbonID* jest ciągiem, który identyfikuje typ okna programu InfoPath, które jest otwierane.
 
- Poniższy przykład kodu demonstruje sposób wyświetlania niestandardowa Wstążka tylko w oknie, który wyświetla szablonu formularza w trybie projektowania. Na Wstążce, aby wyświetlić została określona w `GetResourceText()` metody, która jest generowany w klasie wstążki. Aby uzyskać więcej informacji o klasie wstążki, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).
+ Poniższy przykład kodu demonstruje, jak wyświetlić Wstążkę niestandardową tylko w oknie, w którym jest wyświetlany szablon formularza w trybie projektowania. Wstążka do wyświetlenia jest określona w `GetResourceText()` metodzie, która jest generowana w klasie wstążki. Aby uzyskać więcej informacji na temat klasy wstążki, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Wstążka — omówienie](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)

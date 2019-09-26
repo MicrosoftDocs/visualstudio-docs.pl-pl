@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818429"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253142"
 ---
 # <a name="using-net-4x-in-unity"></a>Przy użyciu platformy .NET 4.x na platformie Unity
 
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 Podczas eksportowania swoją grę do platform, takich jak iOS, Unity użyje jej aparat IL2CPP "transpiluj" IL dla kodu C++, który następnie jest kompilowany przy użyciu natywnego kompilatora platformę docelową. W tym scenariuszu istnieje kilka funkcji .NET, które nie są obsługiwane, takich jak części odbicia i użycie `dynamic` — słowo kluczowe. Podczas korzystania z tych funkcji we własnym kodzie można kontrolować, mogą występować problemy z używaniem 3rd dll innych firm i zestawy SDK, które nie zostały zapisane za pomocą aparatu Unity i IL2CPP na uwadze. Aby uzyskać więcej informacji na ten temat, zobacz [skryptów ograniczenia](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) dokumentacja w witrynie firmy Unity.
 
-Ponadto jak wspomniano w powyższym przykładzie na składnik Json.NET, Unity będzie podejmować próby odłączenia nieużywany kod w procesie IL2CPP eksportu.  Chociaż zwykle nie jest to problem z bibliotek, które używają odbicia, może przypadkowo paska się właściwości lub metody, które będą wywoływane w czasie wykonywania, który nie można określić w czasie eksportu.  Aby rozwiązać te problemy, należy dodać **link.xml** plik do projektu, który zawiera listę zestawy i przestrzenie nazw, aby nie uruchamiać oddzielającego procesu przed.  Aby uzyskać szczegółowe informacje, zobacz [dokumentów firmy Unity w obcięcie kodu bajtowego](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
+Ponadto jak wspomniano w powyższym przykładzie na składnik Json.NET, Unity będzie podejmować próby odłączenia nieużywany kod w procesie IL2CPP eksportu.  Chociaż zwykle nie jest to problem, z bibliotekami, które używają odbicia, może przypadkowo oddzielić właściwości lub metody, które będą wywoływane w czasie wykonywania, których nie można określić w czasie eksportowania.  Aby rozwiązać te problemy, należy dodać **link.xml** plik do projektu, który zawiera listę zestawy i przestrzenie nazw, aby nie uruchamiać oddzielającego procesu przed.  Aby uzyskać szczegółowe informacje, zobacz [dokumentów firmy Unity w obcięcie kodu bajtowego](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
 
 ## <a name="net-4x-sample-unity-project"></a>Programu .NET 4.x przykładowego projektu aparatu Unity
 

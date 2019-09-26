@@ -1,5 +1,5 @@
 ---
-title: Dostęp do regionów formularzy w czasie wykonywania
+title: Dostęp do regionu formularza w czasie wykonywania
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,77 +8,77 @@ dev_langs:
 helpviewer_keywords:
 - Inspectors [Office development in Visual Studio]
 - Explorers [Office development in Visual Studio]
-- form regions [Office development in Visual Studio], accessing at runtime
+- form regions [Office development in Visual Studio], accessing at run time
 author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eed4d9dee7cc6c7de387d590662c47d90a99a2ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5dd8818b57a1aa33b70254303150d8f00e36cc02
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001156"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255796"
 ---
-# <a name="access-a-form-region-at-runtime"></a>Dostęp do regionów formularzy w czasie wykonywania
+# <a name="access-a-form-region-at-run-time"></a>Dostęp do regionu formularza w czasie wykonywania
 
 |Informacje zawarte w tym artykule dotyczą|
 |----------------|
-|Informacje przedstawione w tym temacie mają zastosowane tylko do poniższych typów projektów i wersji pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Typ projektu**<br /><br /> -Projekty dodatków narzędzi VSTO dla programów<br /><br /> **Wersja Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
+|Informacje przedstawione w tym temacie mają zastosowane tylko do poniższych typów projektów i wersji pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [dostępność funkcji według aplikacji pakietu Office i typów projektów](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Typ projektu**<br /><br /> — Projekty dodatków narzędzi VSTO<br /><br /> **Wersja Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
 
- Użyj `Globals` klasy do regionów formularzy w dostęp z dowolnego miejsca w obrębie projektu programu Outlook. Aby uzyskać więcej informacji na temat `Globals` klasy, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Użyj klasy `Globals` , aby uzyskać dostęp do regionów formularzy z dowolnego miejsca w projekcie programu Outlook. Aby uzyskać więcej informacji na `Globals` temat klasy, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>Dostęp do obszarów formularzy, które pojawiają się w określonym oknie inspektora programu Outlook
- Aby uzyskać dostęp do wszystkich regionów formularzy, które pojawiają się w określonym Inspektor programu Outlook, wywołaj `FormRegions` właściwość `Globals` klasy i przekazać <xref:Microsoft.Office.Interop.Outlook.Inspector> obiekt, który reprezentuje Inspektor.
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>Obszary formularzy dostępu, które są wyświetlane w określonym oknie Inspektora programu Outlook
+ Aby uzyskać dostęp do wszystkich regionów formularzy, które są wyświetlane w określonym Inspektorze `FormRegions` programu Outlook, `Globals` Wywołaj Właściwość <xref:Microsoft.Office.Interop.Outlook.Inspector> klasy i przekaż obiekt, który reprezentuje Inspektor.
 
- Poniższy przykład pobiera kolekcję regionów formularzy, które są wyświetlane w panelu Inspektor, który aktualnie ma fokus. W tym przykładzie następnie uzyskuje dostęp do regionów formularzy w kolekcji o nazwie `formRegion1` i ustawia tekst, który pojawia się w polu tekstowym, aby `Hello World`.
+ Poniższy przykład pobiera kolekcję regionów formularza, które są wyświetlane w Inspektorze, który aktualnie ma fokus. Ten przykład następnie uzyskuje dostęp do regionu formularza w kolekcji o `formRegion1` nazwie i ustawia tekst, który pojawia się w `Hello World`polu tekstowym.
 
  [!code-vb[Trin_Outlook_FR_Access#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#2)]
  [!code-csharp[Trin_Outlook_FR_Access#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#2)]
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>Dostęp do obszarów formularzy, które pojawiają się w określonym oknie Eksploratora programu Outlook
- Aby uzyskać dostęp do wszystkich obszarów formularzy, które pojawiają się w określonym Eksplorator programu Outlook, wywołaj `FormRegions` właściwość `Globals` klasy i przekazać <xref:Microsoft.Office.Interop.Outlook.Explorer> obiekt, który reprezentuje Eksploratora.
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>Obszary formularzy dostępu, które są wyświetlane w określonym oknie Eksploratora programu Outlook
+ Aby uzyskać dostęp do wszystkich regionów formularzy, które są wyświetlane w określonym Eksploratorze programu `FormRegions` Outlook, wywołaj Właściwość `Globals` <xref:Microsoft.Office.Interop.Outlook.Explorer> klasy i przekaż obiekt, który reprezentuje Eksploratora.
 
- Poniższy przykład pobiera kolekcję regionów formularza, które są wyświetlane w Eksploratorze, który aktualnie ma fokus. W tym przykładzie następnie uzyskuje dostęp do regionów formularzy w kolekcji o nazwie `formRegion1` i ustawia tekst, który pojawia się w polu tekstowym, aby `Hello World`.
+ Poniższy przykład pobiera kolekcję regionów formularza, które są wyświetlane w Eksploratorze, który ma aktualnie fokus. Ten przykład następnie uzyskuje dostęp do regionu formularza w kolekcji o `formRegion1` nazwie i ustawia tekst, który pojawia się w `Hello World`polu tekstowym.
 
  [!code-vb[Trin_Outlook_FR_Access#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#3)]
  [!code-csharp[Trin_Outlook_FR_Access#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#3)]
 
 ## <a name="access-all-form-regions"></a>Dostęp do wszystkich regionów formularzy
- Aby uzyskać dostęp do wszystkich regionów formularzy, które pojawiają się na wszystkie eksploratorów i wszystkie inspektorzy, należy wywołać `FormRegions` właściwość `Globals` klasy.
+ Aby uzyskać dostęp do wszystkich regionów formularzy, które są wyświetlane we wszystkich Explorer i wszystkich inspektorach `FormRegions` , należy wywołać `Globals` właściwość klasy.
 
- Poniższy przykład pobiera kolekcję regionów formularzy, które pojawiają się na wszystkie eksploratorów i wszystkie inspektorzy. W tym przykładzie następnie uzyskuje dostęp do regionu formularza o nazwie `formRegion1` i ustawia tekst, który pojawia się w polu tekstowym, aby `Hello World`.
+ Poniższy przykład pobiera kolekcję regionów formularza, które są wyświetlane we wszystkich Explorer i wszystkich inspektorach. Ten przykład następnie uzyskuje dostęp do regionu formularza `formRegion1` o nazwie i ustawia tekst, który pojawia się w `Hello World`polu tekstowym.
 
  [!code-vb[Trin_Outlook_FR_Access#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#1)]
  [!code-csharp[Trin_Outlook_FR_Access#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#1)]
 
-## <a name="access-controls-on-a-form-region"></a>Kontroli dostępu do regionów formularzy
- Do kontroli dostępu do regionów formularzy przy użyciu `Globals` klasy, należy formanty dostępny do kodu poza plik kodu regionu formularza.
+## <a name="access-controls-on-a-form-region"></a>Kontrola dostępu w regionie formularza
+ Aby uzyskać dostęp do formantów w regionie formularza przy użyciu `Globals` klasy, należy udostępnić kontrolki dostęp do kodu spoza pliku kodu regionu formularza.
 
-### <a name="form-regions-designed-in-the-form-region-designer"></a>Regionów formularzy zaprojektowanych w projektanta regionów formularza
- Aby uzyskać C#, zmień modyfikator każdy formant, który chcesz uzyskać dostęp. Aby to zrobić, zaznacz każdy formant w projektanta regionów formularza i zmień **Modyfikatory** właściwości **wewnętrzne** lub **publicznych** w **właściwości** okna. Na przykład, jeśli zmienisz **modyfikator** właściwość `textBox1` do **wewnętrzne**, możesz uzyskać dostęp `textBox1` , wpisując `Globals.FormRegions.FormRegion1.textBox1`.
+### <a name="form-regions-designed-in-the-form-region-designer"></a>Regiony formularzy zaprojektowane w projektancie regionów formularza
+ W C#programie Zmień modyfikator każdej kontrolki, do której chcesz uzyskać dostęp. W tym celu zaznacz każdy formant w projektancie regionów formularza i zmień właściwość **Modyfikatory** na **Internal** lub **publiczny** w oknie **Właściwości** . Na przykład, jeśli zmienisz `textBox1` Właściwość **modyfikatora** na **Internal**, możesz uzyskać dostęp `textBox1` , wpisując. `Globals.FormRegions.FormRegion1.textBox1`
 
- Dla języka Visual Basic nie trzeba zmienić modyfikator.
+ W przypadku Visual Basic nie trzeba zmieniać modyfikatora.
 
-### <a name="imported-form-regions"></a>Regiony formularzy zaimportowany
- Po zaimportowaniu regionu formularza zaprojektowanego w programie Outlook, modyfikator dostępu dla każdego formantu na region formularza staje się prywatnych. Ponieważ nie można użyć projektanta regionów formularza do modyfikowania regionu formularza zaimportowane, nie ma możliwości zmiany modyfikator kontrolki w **właściwości** okna.
+### <a name="imported-form-regions"></a>Zaimportowane regiony formularzy
+ Podczas importowania regionu formularza, który został zaprojektowany w programie Outlook, modyfikator dostępu dla każdej kontrolki w regionie formularza zostaje prywatny. Ponieważ nie można użyć projektanta regionów formularza do zmodyfikowania regionu formularza zaimportowanego, nie ma możliwości zmiany modyfikatora kontrolki w oknie **Właściwości** .
 
- Aby włączyć dostęp do kontrolki z poza plikiem kodu regionu formularza, należy utworzyć właściwość w pliku kodu regionu formularza do zwrócenia tej kontrolki.
+ Aby umożliwić dostęp do formantu spoza pliku kodu regionu formularza, Utwórz właściwość w pliku kodu regionu formularza, aby zwrócić tę kontrolkę.
 
- Aby uzyskać więcej informacji o sposobie tworzenia właściwości w C#, zobacz [jak: Deklarowanie i użycie Odczyt, zapis właściwości &#40;C&#35; Podręcznik programowania&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).
+ Aby uzyskać więcej informacji na temat sposobu tworzenia właściwości C#w programie [, zobacz How to: Zadeklaruj i użyj funkcji odczytu &#40;zapisu&#35; właściwości C&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)Przewodnik programowania.
 
- Aby uzyskać więcej informacji na temat tworzenia właściwości w języku Visual Basic, zobacz [jak: Tworzenie właściwości (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).
+ Aby uzyskać więcej informacji na temat sposobu tworzenia właściwości w Visual Basic, [zobacz How to: Utwórz Właściwość (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).
 
 ## <a name="see-also"></a>Zobacz także
 - [Wytyczne dotyczące tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Niestandardowe akcje w regionach formularzy programu Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
 - [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
-- [Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [Instrukcje: Ochrona programu Outlook przed wyświetlaniem regionów formularzy](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Przewodnik: Importowanie regionu formularza zaprojektowanego w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Instrukcje: Zapobiegaj wyświetlaniu przez program Outlook regionu formularza](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
-- [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)

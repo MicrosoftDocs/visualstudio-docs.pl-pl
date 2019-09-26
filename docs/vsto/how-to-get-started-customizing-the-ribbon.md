@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wprowadzenie do dostosowywania wstążki'
+title: 'Porady: Wprowadzenie do dostosowywania wstążki'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,63 +15,63 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9b0f1ef704f5dd1426374e23806e5950ed5f6bb
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967901"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255860"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Instrukcje: Wprowadzenie do dostosowywania wstążki
-  Aby dostosować Wstążki aplikacji pakietu Microsoft Office, należy dodać **Wstążka (Projektant graficzny)** lub **wstążki (XML)** elementu do projektu programu pakietu Office.
+  Aby dostosować Wstążkę Microsoft Office aplikacji, Dodaj **Wstążkę (Visual Designer)** lub **Wstążkę (XML)** do projektu pakietu Office.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-a-ribbon-to-a-project"></a>Aby dodać wstążki do projektu
+### <a name="to-add-a-ribbon-to-a-project"></a>Aby dodać Wstążkę do projektu
 
-1. Na **projektu** Menu, kliknij przycisk **Dodaj nowy element**.
+1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)** lub **wstążki (XML)**. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).
+2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **wstążka (projektant graficzny)** lub **wstążka (XML)** . Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md).
 
-3. W **nazwa** wpisz nazwę elementu wstążki.
+3. W polu **Nazwa** wpisz nazwę elementu wstążki.
 
     Nazwy nie mogą zawierać następujących znaków:
 
-   - Krzyżyk (#)
+   - Funt (#)
 
-   - Procentu (%)
+   - Procent (%)
 
    - Handlowe "i" (&)
 
    - Gwiazdka (*)
 
-   - Kreski pionowej (|)
+   - Kreska pionowa (|)
 
-   - Ukośnik odwrotny (\\)
+   - Ukośnik odwrotny\\()
 
    - Dwukropek (:)
 
    - Podwójny cudzysłów (")
 
-   - Mniej niż (\<)
+   - Mniejsze niż (\<)
 
    - Większe niż (>)
 
    - Znak zapytania (?)
 
-   - Do przodu ukośnika (/)
+   - Ukośnik (/)
 
-   - Spacji wiodących albo końcowych ("")
+   - Spacje początkowe lub końcowe ("")
 
-   - Nazwy zarezerwowane dla Windows lub systemu DOS, np. ("nul", "aux", "con", "com1", "lpt1" i tak dalej)
+   - Nazwy zarezerwowane dla systemu Windows lub DOS, takie jak ("NUL", "AUX", "con", "COM1", "LPT1" itd.)
 
 4. Kliknij przycisk **OK**.
 
-   Element wstążki, który pojawia się w **Eksploratora rozwiązań**. Aby uzyskać informacje o następnych krokach, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).
+   Element wstążki zostanie wyświetlony w **Eksplorator rozwiązań**. Aby uzyskać informacje o następnych krokach, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)
-- [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Przewodnik: Tworzenie niestandardowej karty przy użyciu języka XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

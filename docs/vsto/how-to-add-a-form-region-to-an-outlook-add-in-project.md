@@ -17,58 +17,58 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c742b4cbbda440ea84314efbc5281e54771fe60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c1a9c9201050bf4ccb3bd6beb2ada837c2b808b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427890"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255961"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook
-  Tworzenie regionu formularza, aby rozszerzyć standardowy lub niestandardowy formularz programu Microsoft Office Outlook za pomocą **nowy Region formularza programu Outlook** kreatora. Możesz utworzyć nowy region formularza i projektowanie interfejsu użytkownika w programie Visual Studio lub można importować regionu formularza zaprojektowanego w programie Outlook i Dodaj języka Visual Basic lub C# kodu.
+  Utwórz region formularza w celu rozbudowania standardowego lub niestandardowego formularza Microsoft Office Outlook przy użyciu **nowego kreatora regionu formularza programu Outlook** . Można utworzyć nowy region formularza i zaprojektować interfejs użytkownika w programie Visual Studio lub zaimportować region formularza, który został zaprojektowany w programie Outlook i dodać Visual Basic lub C# kod.
 
- W przypadku regionów formularzy programu Outlook, które było używane w innym projekcie programu Outlook może używać go w bieżącym projekcie dodatku narzędzi VSTO dla programu Outlook przy użyciu **Dodaj istniejący element** okno dialogowe. Aby uzyskać więcej informacji, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+ Jeśli masz region formularza programu Outlook używany w innym projekcie programu Outlook, możesz użyć go ponownie w bieżącym projekcie dodatku VSTO programu Outlook przy użyciu okna dialogowego **Dodaj istniejący element** . Aby uzyskać więcej informacji, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>Aby dodać nowy region formularza do projektu programu Outlook
 
-1. Otwórz lub Utwórz projekt dodatku narzędzi VSTO dla programu Outlook w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Otwórz lub Utwórz projekt dodatku VSTO dla programu Outlook w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [jak: Utwórz projekty pakietu Office w programie](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
 
-2. W **Eksploratora rozwiązań**, wybierz węzeł projektu dodatku narzędzi VSTO dla programu Outlook.
+2. W **Eksplorator rozwiązań**wybierz węzeł projekt dodatku VSTO programu Outlook.
 
-3. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
+3. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-4. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Region formularza programu Outlook**.
+4. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **region formularza programu Outlook**.
 
-5. Wpisz nazwę dla regionu formularza w **nazwa** , a następnie kliknij przycisk **Dodaj**.
+5. Wpisz nazwę regionu formularza w polu **Nazwa** , a następnie kliknij przycisk **Dodaj**.
 
-     **Regionu formularza NewOutlook** uruchamiany jest Kreator.
+     Zostanie uruchomiony Kreator **regionu formularza NewOutlook** .
 
-6. Na **wybierz sposób tworzenia regionu formularza** wybierz, czy chcesz zaprojektować regionu formularza za pomocą przeciągania zarządzane formanty do projektanta wizualnego lub zaimportować regionu formularza zaprojektowanego w programie Outlook.
+6. Na stronie **Wybierz, jak chcesz utworzyć region formularza** wybierz, czy chcesz zaprojektować region formularza, przeciągając formanty zarządzane do projektanta wizualnego, czy zaimportuj region formularza, który został zaprojektowany w programie Outlook.
 
     > [!NOTE]
-    > Jeśli decydujesz się zaimportować regionu formularza zaprojektowanego w programie Outlook, a następnie należy określić lokalizację magazynu formularzy programu Outlook (*OFS*) pliku. Nie można dodać zarządzane formanty do regionu formularza, który projektowania w programie Outlook; można dodać tylko kod związany z istniejącego interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+    > W przypadku wybrania opcji importowania regionu formularza zaprojektowanego w programie Outlook należy określić lokalizację pliku magazynu formularza programu Outlook (*OFS*). Nie można dodać formantów zarządzanych do regionu formularza, który projektujesz w programie Outlook; można dodać tylko kod związany z istniejącym interfejsem użytkownika. Aby uzyskać więcej informacji, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
 
-7. Na **wybierz typ regionu formularza chcesz utworzyć** strony, przejrzyj typów regionu formularza i wybierz jedną, a następnie kliknij **dalej**. Aby uzyskać więcej informacji na temat typów regionu formularza, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+7. Na stronie **Wybierz typ regionu formularza, który chcesz utworzyć** , przejrzyj typy regionów formularzy i wybierz je, a następnie kliknij przycisk **dalej**. Aby uzyskać więcej informacji na temat typów regionów formularzy, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
 
-8. Na **tekst opisu i wybierz preferencje wyświetlania** stronie **nazwa** wpisz nazwę dla regionu formularza. Zastąpienie i typów regionów formularza Zamień wszystkie **tytuł** i **opis** pola również są dostępne.
+8. Na stronie **Wprowadź tekst opisowy i wybierz stronę Preferencje wyświetlania** w polu **Nazwa** wpisz nazwę regionu formularza. W przypadku typów regionów zastępujących i Zamień wszystkie pola **tytuł** i **Opis** są również dostępne.
 
-     Aby dowiedzieć się, jak gdzie nazwę, tytuł i opis są wyświetlane w programie Outlook w przypadku wdrażania regionu formularza, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+     Aby uzyskać informacje o tym, gdzie nazwa, tytuł i opis pojawiają się w programie Outlook podczas wdrażania regionu formularza, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
 
-9. Wybierz co najmniej jeden trybów wyświetlania, w których ma być wyświetlane regionu formularza.
+9. Wybierz co najmniej jeden tryb wyświetlania, w którym ma być wyświetlany region formularza.
 
-     Wszystkie typy regionu formularza może występować w inspektorów, w trybie redagowania (do tworzenia elementów) i w trybie do odczytu (w przypadku wyświetlania elementów). Sąsiadujące, zamieniania i typów regionów formularza Zamień wszystkie również może znajdować się w okienku odczytu.
+     Wszystkie typy regionów formularza mogą pojawić się w inspektorach w trybie redagowania (na potrzeby tworzenia elementów) i w trybie odczytu (do wyświetlania elementów). Sąsiednie, zastępcze i Zamień — wszystkie typy regionów formularza mogą również być wyświetlane w okienku odczytywania.
 
 10. Kliknij przycisk **Dalej**.
 
-11. Na **Określ klasy wiadomości, które będzie wyświetlany ten region formularza** stronie, wybierz standardowych klas wiadomości programu Outlook lub wpisz nazwy co najmniej jedną klasę niestandardową wiadomość, a następnie kliknij **Zakończ**. Aby uzyskać więcej informacji, zobacz [kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
+11. Na stronie **Zidentyfikuj klasy komunikatów, które będą wyświetlać ten region formularza** wybierz pozycję standardowe klasy wiadomości programu Outlook lub wpisz nazwy jednej lub kilku niestandardowych klas komunikatów, a następnie kliknij przycisk **Zakończ**. Aby uzyskać więcej informacji, zobacz [kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Dostęp do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
+- [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Wytyczne dotyczące tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Przewodnik: Importowanie regionu formularza zaprojektowanego w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
 - [Niestandardowe akcje w regionach formularzy programu Outlook](../vsto/custom-actions-in-outlook-form-regions.md)

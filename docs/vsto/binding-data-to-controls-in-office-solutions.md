@@ -1,5 +1,5 @@
 ---
-title: Wiązanie danych do kontrolek w rozwiązaniach pakietu Office
+title: Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,92 +18,92 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aca6c91724e26059011c1044c9a2d501c7995bc5
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939567"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255829"
 ---
-# <a name="bind-data-to-controls-in-office-solutions"></a>Wiązanie danych do kontrolek w rozwiązaniach pakietu Office
-  Możesz powiązać kontrolek formularzy Windows Forms i *hostowania kontrolek* na dokument programu Microsoft Office Word lub skoroszyt programu Microsoft Office Excel ze źródłem danych, więc formanty automatycznie wyświetlać dane. Dane można powiązać formanty w projektach na poziomie dokumentu i poziomie aplikacji.
+# <a name="bind-data-to-controls-in-office-solutions"></a>Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office
+  Można powiązać kontrolki Windows Forms i *kontrolki hosta* w dokumencie Microsoft Office Word lub Microsoft Office arkuszu programu Excel ze źródłem danych, aby kontrolki automatycznie wyświetlały dane. Dane można powiązać z kontrolkami zarówno w projektach na poziomie aplikacji, jak i na poziomie dokumentu.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Formanty hosta rozszerzyć obiektów, które znajdują się w programach Word i Excel modeli obiektów, takich jak formanty zawartości w programie Word lub nazwane zakresy w programie Excel. Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
+ Formanty hosta poszerzają obiekty, które znajdują się w modelach programów Word i Excel, takich jak kontrolki zawartości w programie Word i nazwane zakresy w programie Excel. Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md).
 
- Zarówno Windows Forms i kontrolek hosta przy użyciu modelu powiązanie danych formularzy Windows, który obsługuje zarówno *proste powiązanie danych* i *złożone powiązanie danych* ze źródłami danych, takich jak zestawy danych i tabel danych. Aby uzyskać pełne informacje o modelu powiązanie danych w formularzach Windows Forms, zobacz [powiązanie danych i formularze Windows](/dotnet/framework/winforms/data-binding-and-windows-forms).
+ Zarówno Windows Forms, jak i formanty hosta używają modelu powiązań danych Windows Forms, który obsługuje zarówno *proste powiązanie danych* , jak i *złożone powiązanie danych* ze źródłami danych, takimi jak zestawy danych i tabele dane. Aby uzyskać pełne informacje na temat modelu powiązań danych w Windows Forms, zobacz [powiązane z danymi i Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Używanie bazy danych w programie Excel? ](http://go.microsoft.com/fwlink/?LinkID=130287).
+ ![link do wideo](../vsto/media/playvideo.gif "link do wideo") Aby zapoznać się z pokrewną [prezentacją wideo, zobacz Jak mogę: Korzystać z danych bazy danych w programie Excel? ](http://go.microsoft.com/fwlink/?LinkID=130287).
 
 ## <a name="simple-data-binding"></a>Proste powiązanie danych
- Proste powiązanie danych występuje, gdy właściwość formantu jest powiązana z elementu danych jednego, takiego jak wartość w tabeli danych. Na przykład <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwość, która może być powiązany z polem w zestawie danych. Po zmianie pola w zestawie danych zmienia się również wartość nazwanego zakresu Wszystkie hosta formantów, z wyjątkiem <xref:Microsoft.Office.Tools.Word.XMLNodes> sterowania, pomocy technicznej proste powiązanie danych. <xref:Microsoft.Office.Tools.Word.XMLNodes> Formantu kolekcji, i dlatego nie obsługuje powiązanie danych.
+ Proste powiązanie danych istnieje, gdy właściwość kontrolki jest powiązana z pojedynczym elementem danych, takim jak wartość w tabeli danych. Na przykład <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolka <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> zawiera właściwość, która może być powiązana z polem w zestawie danych. Gdy pole w zestawie danych ulegnie zmianie, wartość w nazwanym zakresie zmienia się również. Wszystkie kontrolki hosta, z wyjątkiem <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolki, obsługują proste powiązanie danych. <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant jest kolekcją i w związku z tym nie obsługuje powiązania danych.
 
- Aby wykonać proste powiązanie danych z kontrolką hosta, Dodaj <xref:System.Windows.Forms.Binding> do `DataBindings` właściwości formantu. A <xref:System.Windows.Forms.Binding> obiekt reprezentuje proste powiązanie między wartością właściwości formantu, a wartość elementu danych.
+ Aby wykonać proste powiązanie danych z kontrolką hosta, należy dodać <xref:System.Windows.Forms.Binding> `DataBindings` do właściwości kontrolki. <xref:System.Windows.Forms.Binding> Obiekt reprezentuje proste powiązanie między wartością właściwości kontrolki a wartością elementu danych.
 
- Poniższy przykład pokazuje jak powiązać <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwość elementu danych w projekcie na poziomie dokumentu.
+ Poniższy przykład ilustruje sposób powiązania <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwości z elementem danych w projekcie na poziomie dokumentu.
 
  [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
  [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
 
- Aby uzyskać wskazówki, który demonstruje proste powiązanie danych, zobacz [instruktażu: Proste powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) dla projektu na poziomie dokumentu i [instruktażu: Proste powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) w projekcie dodatku narzędzi VSTO.
+ Aby zapoznać się z przewodnikami, które pokazują proste [powiązanie danych, zobacz Przewodnik: Proste powiązanie danych w projekcie](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) na poziomie dokumentu dla projektu na poziomie dokumentu i [przewodnika: Proste powiązanie danych w projekcie](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) dodatku VSTO dla projektu dodatku VSTO.
 
 ## <a name="complex-data-binding"></a>Złożone powiązanie danych
- Złożone powiązanie danych występuje, gdy właściwość formantu jest powiązana z więcej niż jednego elementu danych, takich jak wiele kolumn w tabeli danych. <xref:Microsoft.Office.Tools.Excel.ListObject> Sterowania dla programu Excel jest jedynym formantem hosta, która obsługuje złożone powiązanie danych. Dostępne są także wiele kontrolek formularzy Windows, które obsługują złożone powiązanie danych, takie jak <xref:System.Windows.Forms.DataGridView> kontroli.
+ Złożone powiązanie danych istnieje, gdy właściwość kontrolki jest powiązana z więcej niż jednym elementem danych, takim jak wiele kolumn w tabeli danych. <xref:Microsoft.Office.Tools.Excel.ListObject> Formant dla programu Excel jest jedyną kontrolką hosta, która obsługuje złożone powiązanie danych. Istnieje również wiele Windows Forms formantów, które obsługują złożone powiązanie danych, takie jak <xref:System.Windows.Forms.DataGridView> kontrolka.
 
- Aby wykonać złożone powiązanie danych, należy ustawić `DataSource` właściwości formantu do obiektu źródła danych, która jest obsługiwana przez złożone powiązanie danych. Na przykład <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> właściwość <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli można powiązać z wielu kolumn w tabeli danych. Wszystkie dane w tabeli danych pojawia się w <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli i z danymi w tabeli zmian danych, <xref:Microsoft.Office.Tools.Excel.ListObject> zmienia także. Aby uzyskać listę źródeł danych, które umożliwiają złożone powiązanie danych, zobacz [źródła danych obsługiwane przez formularze Windows](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).
+ Aby wykonać złożone powiązanie danych, ustaw `DataSource` właściwość kontrolki na obiekt źródła danych, który jest obsługiwany przez złożone powiązanie danych. Na przykład <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> Właściwość <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki może być powiązana z wieloma kolumnami w tabeli danych. Wszystkie dane w tabeli danych są wyświetlane w <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolce, a w miarę zmiany <xref:Microsoft.Office.Tools.Excel.ListObject> danych w tabeli danych. Aby zapoznać się z listą źródeł danych, których można użyć do tworzenia złożonych powiązań danych, zobacz [źródła danych obsługiwane przez Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).
 
- Poniższy przykład kodu tworzy <xref:System.Data.DataSet> przy użyciu dwóch <xref:System.Data.DataTable> obiektów i wypełnia jednej z tabel z danymi. Kod następnie powiąże <xref:Microsoft.Office.Tools.Excel.ListObject> do tabeli, która zawiera dane. Ten przykład dotyczy programu Excel projektów dokumentów.
+ Poniższy przykład kodu tworzy <xref:System.Data.DataSet> z dwoma <xref:System.Data.DataTable> obiektami i wypełnia jedną z tabel danymi. Następnie kod tworzy powiązanie <xref:Microsoft.Office.Tools.Excel.ListObject> z tabelą zawierającą dane. Ten przykład dotyczy projektu na poziomie dokumentu programu Excel.
 
  [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
  [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
 
- Aby uzyskać wskazówki dotyczące pokazują złożone powiązanie danych, zobacz [instruktażu: Złożone powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) dla projektu na poziomie dokumentu i [instruktażu: Złożone powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) w projekcie dodatku narzędzi VSTO.
+ Aby zapoznać się z przewodnikami demonstrującymi złożone powiązanie [danych, zobacz Przewodnik: Złożone powiązanie danych w projekcie](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) na poziomie dokumentu dla projektu na poziomie dokumentu i [przewodnika: Złożone powiązanie danych w projekcie](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) dodatku VSTO dla projektu dodatku VSTO.
 
-## <a name="display-data-in-documents-and-workbooks"></a>Wyświetlanie danych w dokumentach i skoroszyty
- W projektach na poziomie dokumentu można używać **źródeł danych** okna można łatwo dodać formanty powiązane z danymi do dokumentów lub skoroszytów, ten sam sposób, możesz użyć dla formularzy Windows Forms. Aby uzyskać więcej informacji o korzystaniu z **źródeł danych** okna, zobacz [formanty powiązania formularzy Windows do danych w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) i [dodasz nowe źródła danych](../data-tools/add-new-data-sources.md).
+## <a name="display-data-in-documents-and-workbooks"></a>Wyświetlanie danych w dokumentach i skoroszytach
+ W projektach na poziomie dokumentu, można użyć okna **źródła danych** , aby łatwo dodać kontrolki powiązane z danymi do dokumentów lub skoroszytów, tak samo jak w przypadku Windows Forms. Aby uzyskać więcej informacji o korzystaniu z okna **źródła danych** , zobacz [bind Windows Forms Controls to Data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) i [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md).
 
-### <a name="drag-controls-from-the-data-sources-window"></a>Przeciągnij formanty z okna źródeł danych
- Formant jest tworzony w dokumencie po przeciągnięciu obiektu na jego z **źródeł danych** okna. Typ kontrolki, który jest tworzony zależy od tego, czy powiązanie pojedynczej kolumny danych lub wiele kolumn z danymi.
+### <a name="drag-controls-from-the-data-sources-window"></a>Przeciągnij kontrolki z okna źródła danych
+ W dokumencie jest tworzony formant, gdy przeciągasz na niego obiekt z okna **źródła danych** . Typ formantu, który jest tworzony, zależy od tego, czy jest on powiązany z jedną kolumną danych, czy z wieloma kolumnami danych.
 
- Dla programu Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> formant zostanie utworzony w arkuszu dla każdego indywidualnego pola i <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli jest tworzony dla każdego zakresu danych, który zawiera wiele wierszy i kolumn. Możesz zmienić to ustawienie domyślne, wybierając tabelę lub pole **źródeł danych** okna, a następnie wybierając innej kontrolki z listy rozwijanej.
+ Dla programu Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> w arkuszu tworzony jest formant dla każdego pojedynczego pola, <xref:Microsoft.Office.Tools.Excel.ListObject> a dla każdego zakresu danych, który zawiera wiele wierszy i kolumn, tworzony jest formant. Można zmienić to ustawienie domyślne, wybierając tabelę lub pole w oknie **źródła danych** , a następnie wybierając inną kontrolkę z listy rozwijanej.
 
- A <xref:Microsoft.Office.Tools.Word.ContentControl> formant jest dodawany do dokumentów. Typ zawartości kontrolki zależy od typu danych pola, które wybrano.
+ <xref:Microsoft.Office.Tools.Word.ContentControl> Kontrolka jest dodawana do dokumentów. Typ formantu zawartości zależy od typu danych wybranego pola.
 
-### <a name="bind-data-in-document-level-projects-at-design-time"></a>Powiązanie danych w projektach na poziomie dokumentu w czasie projektowania
- Poniższe tematy przedstawiają przykłady powiązanie danych w czasie projektowania:
+### <a name="bind-data-in-document-level-projects-at-design-time"></a>Powiąż dane w projektach na poziomie dokumentu w czasie projektowania
+ W poniższych tematach przedstawiono przykłady powiązań danych w czasie projektowania:
 
-- [Instrukcje: Zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Instrukcje: Wypełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
-- [Instrukcje: Zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Instrukcje: Wypełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
-- [Instrukcje: Zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Instrukcje: Wypełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
-- [Instrukcje: Zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Instrukcje: Wypełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)
 
 - [Instrukcje: Przewijanie rekordów bazy danych w arkuszu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
-### <a name="bind-data-in-vsto-add-in-projects"></a>Powiązanie danych w projektach dodatku narzędzi VSTO
- W projektach dodatku narzędzi VSTO formanty można dodać tylko w czasie wykonywania. Poniższe tematy przedstawiają przykłady powiązanie danych w czasie wykonywania:
+### <a name="bind-data-in-vsto-add-in-projects"></a>Powiązywanie danych w projektach dodatku narzędzi VSTO
+ W projektach dodatku VSTO można dodawać kontrolki tylko w czasie wykonywania. W poniższych tematach przedstawiono przykłady powiązań danych w czasie wykonywania:
 
-- [Przewodnik: Proste powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Przewodnik: Proste powiązanie danych w projekcie dodatku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
-- [Przewodnik: Złożone powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Przewodnik: Złożone powiązanie danych w projekcie dodatku VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
-## <a name="update-data-that-is-bound-to-host-controls"></a>Aktualizowanie danych, który jest powiązany z kontrolki hosta
- Powiązanie danych między źródłem danych i kontrolki hosta obejmuje aktualizację dwukierunkowe danych. W proste powiązanie danych, zmiany w źródle danych są automatycznie odzwierciedlane w kontrolce hosta, ale zmiany w kontrolce hosta wymagają jawnym wywołaniem można zaktualizować źródła danych. Przyczyną jest to, że w niektórych przypadkach, zmiany w jednym polu powiązanych z danymi nie są akceptowane, chyba że towarzyszy im zmiany w innym polu powiązanych z danymi. Na przykład możesz mieć dwa pola, jeden dla wieku i jeden dla lat doświadczenia. Środowisko nie może przekraczać wieku. Użytkownik nie może zaktualizować wiek od 50 do 25, a następnie doświadczenie od 30 do 10, chyba że użytkownik wprowadza zmiany w tym samym czasie. Aby rozwiązać ten problem, pola z proste powiązanie danych nie są aktualizowane, dopóki aktualizacje jawnie są wysyłane przez kod.
+## <a name="update-data-that-is-bound-to-host-controls"></a>Aktualizowanie danych powiązanych z kontrolkami hosta
+ Powiązanie danych między źródłem danych a kontrolką hosta obejmuje dwukierunkową aktualizację danych. W prostym powiązaniu danych zmiany w źródle danych są automatycznie odzwierciedlane w formancie hosta, ale zmiany w formancie hosta wymagają jawnego wywołania, aby zaktualizować źródło danych. Przyczyną jest to, że w niektórych przypadkach zmiany w jednym polu związanym z danymi nie są akceptowane, chyba że zostaną dołączone przez zmiany w innym polu związanym z danymi. Na przykład mogą istnieć dwa pola — jeden dla wieku i jeden dla lat doświadczenia. Środowisko pracy nie może przekroczyć wieku. Użytkownik nie może zaktualizować wieku z 50 do 25, a następnie doświadczenia z od 30 do 10, chyba że wprowadza zmiany w tym samym czasie. Aby rozwiązać ten problem, pola z prostym powiązaniem danych nie są aktualizowane, dopóki aktualizacje nie zostaną jawnie przesłane przez kod.
 
- Aby zaktualizować źródła danych z kontrolki hosta, które umożliwiają proste powiązanie danych, konieczne jest wysłanie aktualizacji do źródła danych w pamięci (takie jak <xref:System.Data.DataSet> lub <xref:System.Data.DataTable>) i bazy danych zaplecza, jeśli rozwiązanie używa jednego.
+ Aby zaktualizować źródło danych z formantów hosta, które włączają proste powiązanie danych, należy wysłać aktualizacje do źródła danych znajdującego się w pamięci ( <xref:System.Data.DataSet> na przykład lub <xref:System.Data.DataTable>) oraz do bazy danych zaplecza, jeśli rozwiązanie używa jednego z nich.
 
- Nie trzeba jawnie zaktualizować źródło danych w pamięci, gdy wykonujesz złożone powiązanie danych przy użyciu <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli. W takim przypadku zmiany są automatycznie wysyłane do źródła danych w pamięci bez dodatkowego kodu.
+ Nie musisz jawnie aktualizować źródła danych znajdującego się w pamięci podczas wykonywania złożonych powiązań danych przy użyciu <xref:Microsoft.Office.Tools.Excel.ListObject> formantu. W takim przypadku zmiany są automatycznie wysyłane do źródła danych znajdującego się w pamięci bez dodatkowego kodu.
 
- Aby uzyskać więcej informacji, zobacz [jak: Aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+ Aby uzyskać więcej informacji, zobacz [jak: Aktualizowanie źródła danych przy użyciu danych z kontrolki](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)hosta.
 
 ## <a name="see-also"></a>Zobacz także
-- [Powiązanie danych oraz Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
-- [Instrukcje: Tworzenie prostego formantu powiązanego na formularzu Windows](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
+- [Powiązanie danych i Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
+- [Instrukcje: Tworzenie prostego formantu powiązanego w formularzu systemu Windows](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
 - [Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Dane w pamięci podręcznej](../vsto/caching-data.md)
+- [Dane pamięci podręcznej](../vsto/caching-data.md)
 - [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)

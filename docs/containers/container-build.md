@@ -1,29 +1,29 @@
 ---
-title: Narzędzia kontenerów programu Visual Studio kompilacji — omówienie
+title: Omówienie kompilacji narzędzi kontenerów programu Visual Studio
 author: ghogen
-description: Omówienie procesu kompilacji narzędzia kontenerów
+description: Przegląd procesu kompilacji narzędzi kontenera
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 9f2da112bfeebe4e0bce976736eee5696d888105
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: edc4674e2468124ecb46b25a1411043ed4b66a2a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552823"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253118"
 ---
-# <a name="building-containerized-apps-using-visual-studio-or-the-command-line"></a>Tworzenie kontenerowych nimi aplikacji przy użyciu programu Visual Studio lub wiersza polecenia
+# <a name="building-containerized-apps-using-visual-studio-or-the-command-line"></a>Tworzenie aplikacji kontenerowych przy użyciu programu Visual Studio lub wiersza polecenia
 
-W przypadku tworzenia z programu Visual Studio IDE, czy Konfigurowanie kompilacji wiersza polecenia, musisz wiedzieć, jak program Visual Studio tworzy używa pliku Dockerfile do tworzenia projektów.  Ze względu na wydajność programu Visual Studio, następuje specjalny proces konteneryzowanych aplikacji. Zrozumienie, w jaki sposób program Visual Studio kompiluje projekty jest szczególnie ważne w przypadku, gdy możesz dostosować proces kompilacji, modyfikując plik Dockerfile.
+Niezależnie od tego, czy tworzysz z programu Visual Studio IDE, czy konfigurujesz kompilację w wierszu polecenia, musisz wiedzieć, jak kompilacja Visual Studio używa pliku dockerfile do kompilowania projektów.  Ze względu na wydajność program Visual Studio jest zgodny ze specjalnym procesem dla aplikacji kontenerowych. Zrozumienie sposobu, w jaki program Visual Studio kompiluje projekty, jest szczególnie istotny podczas dostosowywania procesu kompilacji przez zmodyfikowanie pliku dockerfile.
 
-Gdy program Visual Studio tworzy projekt, który nie używa kontenerów platformy Docker, wywołuje MSBuild na komputerze lokalnym i generuje pliki wyjściowe w folderze (zazwyczaj `bin`) w folderze rozwiązania lokalnego. Dla projektów konteneryzowanych jednak proces kompilacji uwzględnia instrukcji pliku Dockerfile w celu skompilowania aplikacji konteneryzowanych. Plik Dockerfile, który używa programu Visual Studio jest podzielony na wiele etapów. Ten proces zależy od platformy Docker *wieloetapowych kompilacji* funkcji.
+Gdy program Visual Studio kompiluje projekt, który nie używa kontenerów platformy Docker, wywołuje program MSBuild na maszynie lokalnej i generuje pliki wyjściowe w folderze ( `bin`zazwyczaj) w folderze rozwiązania lokalnego. Jednak w przypadku projektu kontenera proces kompilacji bierze pod uwagę instrukcje pliku dockerfile na potrzeby tworzenia kontenera aplikacji. Pliku dockerfile, które są używane przez program Visual Studio, jest podzielony na wiele etapów. Ten proces polega na funkcji *kompilacji potokach wieloetapowych* platformy Docker.
 
-## <a name="multistage-build"></a>Wieloetapowych kompilacji
+## <a name="multistage-build"></a>Kompilacja potokach wieloetapowych
 
-Funkcja kompilacji wieloetapowych ułatwia proces tworzenia kontenerów bardziej efektywne i sprawia, że kontenery mniejszych, umożliwiając im zawierają tylko bity, które Twoja aplikacja wymaga w czasie wykonywania. Wieloetapowych kompilacji jest używany dla projektów .NET Core, nie projektów programu .NET Framework.
+Funkcja kompilacji potokach wieloetapowych ułatwia proces kompilowania kontenerów bardziej wydajnie i sprawia, że kontenery są mniejsze, dzięki czemu mogą zawierać tylko bity wymagane przez aplikację w czasie wykonywania. Kompilacja potokach wieloetapowych jest używana dla projektów .NET Core, a nie .NET Framework projektów.
 
-Kompilacja wieloetapowych umożliwia obrazów kontenera do utworzenia w etapach, które tworzą pośrednich obrazów. Na przykład należy rozważyć typowy plik Dockerfile, generowane przez program Visual Studio — to pierwszy etap `base`:
+Kompilacja potokach wieloetapowych umożliwia tworzenie obrazów kontenerów w etapach, które generują obrazy pośrednie. Przykładowo Rozważmy typowe pliku dockerfile wygenerowane przez program Visual Studio — pierwszy etap to `base`:
 
 ```
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
@@ -32,9 +32,9 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Wiersze w pliku Dockerfile zaczynają się od obrazu Nanoserver z rejestru kontenerów firmy Microsoft (mcr.microsoft.com) i Utwórz obraz pośrednich `base` udostępnia porty 80 i 443 i ustawia katalog roboczy `/app`.
+Linie w pliku dockerfile zaczynają się od obrazu Nanoserver z Microsoft Container Registry (MCR.Microsoft.com) i tworzą pośredni obraz `base` , który uwidacznia porty 80 i 443, i ustawia katalog roboczy na. `/app`
 
-Następny etap to `build`, która jest wyświetlana w następujący sposób:
+Następnym etapem jest `build`, która wygląda następująco:
 
 ```
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
@@ -46,7 +46,7 @@ WORKDIR "/src/WebApplication43"
 RUN dotnet build "WebApplication43.csproj" -c Release -o /app
 ```
 
-Możesz zobaczyć, że `build` etapu zaczyna się od innego oryginalny obraz z rejestru (`sdk` zamiast `aspnet`), zamiast kontynuowanie z podstawowego.  `sdk` Obraz ma wszystkie narzędzia do kompilacji i z tego powodu jest znacznie większa niż obraz aspnet, która zawiera tylko składników środowiska wykonawczego. Przyczyna przy użyciu osobny obraz staną się oczywiste, jeśli przyjrzymy się pozostałej części pliku Dockerfile:
+Możesz zobaczyć, że `build` etap zaczyna się od innego oryginalnego obrazu z rejestru (`sdk` a nie `aspnet`), a nie z bazy.  `sdk` Obraz zawiera wszystkie narzędzia kompilacji i z tego powodu jest dużo większy niż obraz ASPNET, który zawiera tylko składniki środowiska uruchomieniowego. Przyczyna użycia oddzielnego obrazu zostanie wyczyszczona, gdy zobaczysz resztę pliku dockerfile:
 
 ```
 FROM build AS publish
@@ -58,19 +58,19 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 ```
 
-Ostatnim krokiem jest uruchamiany ponownie z `base`i zawiera `COPY --from=publish` można skopiować opublikowane dane wyjściowe do finalnego obrazu. Ten proces umożliwia końcowego obraz, który ma być o wiele mniejsza, ponieważ nie trzeba uwzględniać wszystkie narzędzia do kompilacji, które były `sdk` obrazu.
+Końcowy etap zostanie uruchomiony ponownie z `base`i `COPY --from=publish` zawiera kopię publikowanych danych wyjściowych do obrazu końcowego. Dzięki temu obraz końcowy może być dużo mniejszy, ponieważ nie musi zawierać wszystkich narzędzi do kompilacji, które znajdowały się w `sdk` obrazie.
 
-## <a name="faster-builds-for-the-debug-configuration"></a>Szybsze kompilowanie dla konfiguracji debugowania
+## <a name="faster-builds-for-the-debug-configuration"></a>Szybsze kompilacje dla konfiguracji debugowania
 
-Istnieje kilka optymalizacji, które pomagają wydajności procesu kompilacji dla projektów konteneryzowanych program Visual Studio. Po rozpoczęciu debugowania (F5), wcześniej utworzony obraz zostanie ponownie użyty, jeśli jest to możliwe. Jeśli nie chcesz ponownie użyć poprzedniej kontenera, możesz użyć **odbudować** lub **czysty** polecenia w programie Visual Studio, aby wymusić programu Visual Studio do używania nowej kontenera.
+Istnieje kilka optymalizacji, które program Visual Studio pomaga zwiększyć wydajność procesu kompilacji dla projektów kontenerowych. Po rozpoczęciu debugowania (F5) wcześniej skompilowany obraz jest ponownie używany, jeśli jest to możliwe. Jeśli nie chcesz ponownie używać poprzedniego kontenera, możesz użyć polecenia **Kompiluj** lub **Wyczyść** w programie Visual Studio, aby wymusić użycie przez program Visual Studio nowego kontenera.
 
-Ponadto w celu poprawy wydajności procesu kompilacji dla konteneryzowanych aplikacji nie jest tak proste jak po prostu wykonując kroki opisane w pliku Dockerfile. Tworzenie w kontenerze jest znacznie wolniejsze niż opierając się na komputerze lokalnym.  Dlatego podczas kompilowania **debugowania** konfiguracji programu Visual Studio rzeczywiście kompiluje projekty na komputerze lokalnym, a następnie udostępnia folder dane wyjściowe do kontenera przy użyciu zamontowania woluminu. Nosi nazwę kompilacji z użyciem tego rodzaju optymalizacji, włączone *Fast* tryb kompilacji.
+Ponadto w celu zwiększenia wydajności proces kompilacji dla aplikacji kontenerowych nie jest tak prosty jak po kroku opisanym w pliku dockerfile. Kompilowanie w kontenerze jest znacznie wolniejsze niż kompilowanie na komputerze lokalnym.  Dlatego podczas kompilowania w konfiguracji **debugowania** program Visual Studio rzeczywiście kompiluje projekty na komputerze lokalnym, a następnie udostępnia folder wyjściowy do kontenera przy użyciu funkcji montowania woluminu. Kompilacja z włączoną opcją optymalizacji jest nazywana kompilacją trybu *szybkiego* .
 
-W **Fast** tryb, wywołań programu Visual Studio `docker build` z nieprawidłowym argumentem platformy docker do tworzenia tylko `base` etapu.  Visual Studio obsługuje resztą procesu bez względu na zawartość pliku Dockerfile. Tak gdy modyfikujesz z pliku Dockerfile, takie jak dostosować środowisko kontenerów lub zainstalować dodatkowe zależności w pierwszym etapie należy umieszczać modyfikacje.  Wszystkie niestandardowe kroki umieszczone w pliku Dockerfile `build`, `publish`, lub `final` etapów nie zostaną wykonane.
+W trybie **szybkim** program Visual Studio `docker build` wywołuje z argumentem, który instruuje platformę Docker, aby kompiluje tylko ten `base` etap.  Program Visual Studio obsługuje resztę procesu bez względu na zawartość pliku dockerfile. Dlatego w przypadku zmodyfikowania pliku dockerfile, na przykład w celu dostosowania środowiska kontenera lub zainstalowania dodatkowych zależności, należy wprowadzić modyfikacje w pierwszym etapie.  Wszelkie niestandardowe kroki umieszczone w pliku dockerfile `build`, `publish`, lub `final` etapy nie będą wykonywane.
 
-Tego rodzaju optymalizacji wydajności występuje tylko wtedy, gdy tworzysz **debugowania** konfiguracji. W **wersji** konfiguracji kompilacji odbywa się w kontenerze, jak określono w pliku Dockerfile.
+Ta optymalizacja wydajności występuje tylko w przypadku kompilowania w konfiguracji **debugowania** . W konfiguracji **wydania** kompilacja odbywa się w kontenerze określonym w pliku dockerfile.
 
-Jeśli chcesz wyłączyć optymalizację wydajności i kompilacji jako Określa plik Dockerfile, następnie ustawić **ContainerDevelopmentMode** właściwości **regularne** w pliku projektu w następujący sposób:
+Jeśli chcesz wyłączyć optymalizację wydajności i kompilację jako pliku dockerfile, ustaw właściwość **ContainerDevelopmentMode** na **Regular** w pliku projektu w następujący sposób:
 
 ```xml
 <PropertyGroup>
@@ -78,15 +78,15 @@ Jeśli chcesz wyłączyć optymalizację wydajności i kompilacji jako Określa 
 </PropertyGroup>
 ```
 
-Aby przywrócić optymalizacji wydajności, należy usunąć właściwość z pliku projektu.
+Aby przywrócić optymalizację wydajności, Usuń właściwość z pliku projektu.
 
-## <a name="building-from-the-command-line"></a>Tworzenie z wiersza polecenia
+## <a name="building-from-the-command-line"></a>Kompilowanie z wiersza polecenia
 
-Możesz użyć `docker build` lub `MSBuild` do kompilacji z wiersza polecenia.
+Można użyć `docker build` lub `MSBuild` do kompilowania z wiersza polecenia.
 
-### <a name="docker-build"></a>kompilacji platformy docker
+### <a name="docker-build"></a>Kompilacja platformy Docker
 
-Tworzenie konteneryzowanej rozwiązania z wiersza polecenia, zazwyczaj można użyć polecenia `docker build <context>` dla każdego projektu w rozwiązaniu. Należy podać *kompilacji kontekstu* argumentu. *Kompilacji kontekstu* dla pliku Dockerfile jest folder na komputerze lokalnym, który jest używany jako folder roboczy do generowania obrazu. Na przykład jest folder, który można skopiować pliki z przy kopiowaniu do kontenera.  W projektach .NET Core należy użyć folderu zawierającego plik rozwiązania (.sln).  Wyrażony w postaci ścieżki względnej, ten argument jest zazwyczaj ".." dla pliku Dockerfile w folderze projektu i plik rozwiązania w folderze nadrzędnym.  Dla projektów programu .NET Framework kontekstu kompilacji jest folder projektu, a nie w folderze rozwiązania.
+Aby skompilować rozwiązanie z kontenerem z wiersza polecenia, można zwykle użyć polecenia `docker build <context>` dla każdego projektu w rozwiązaniu. Podajesz argument *kontekstu kompilacji* . *Kontekst kompilacji* dla pliku dockerfile to folder na komputerze lokalnym, który jest używany jako folder roboczy do generowania obrazu. Na przykład jest to folder, z którego kopiowane są pliki podczas kopiowania do kontenera.  W projektach .NET Core Użyj folderu zawierającego plik rozwiązania (. sln).  W postaci ścieżki względnej ten argument jest zwykle ".." dla pliku dockerfile w folderze projektu i pliku rozwiązania w folderze nadrzędnym.  W przypadku projektów .NET Framework, kontekst kompilacji jest folderem projektu, a nie folderem rozwiązania.
 
 ```cmd
 docker build -f Dockerfile ..
@@ -94,17 +94,17 @@ docker build -f Dockerfile ..
 
 ### <a name="msbuild"></a>MSBuild
 
-Pliki Dockerfile utworzone przez program Visual Studio dla projektów programu .NET Framework (i dla projektów .NET Core utworzone za pomocą wersji programu Visual Studio przed Visual Studio 2017 Update 4) nie są wieloetapowych pliki Dockerfile.  Kroki opisane w tych plików Dockerfile nie można skompilować kod.  Zamiast tego gdy program Visual Studio tworzy plik Dockerfile .NET Framework, najpierw kompiluje projekt, korzystając z programu MSBuild.  Jeśli się to powiedzie, program Visual Studio tworzy następnie plik Dockerfile, po prostu kopiuje dane wyjściowe kompilacji z programu MSBuild do Wynikowy obraz platformy Docker.  Ponieważ kroki do kompilowania kodu nie są zawarte w pliku Dockerfile, nie można utworzyć plików Dockerfile Framework .NET przy użyciu `docker build` z wiersza polecenia. Należy użyć programu MSBuild do kompilowania tych projektów.
+Wieloetapowe dockerfile utworzone przez program Visual Studio dla projektów .NET Framework (i dla projektów .NET Core utworzonych przy użyciu wersji programu Visual Studio wcześniejszych niż Visual Studio 2017 Update 4) nie są potokach wieloetapowych wieloetapowe dockerfile.  Kroki opisane w tych wieloetapowe dockerfile nie kompilują kodu.  Zamiast tego, gdy program Visual Studio kompiluje .NET Framework pliku dockerfile, najpierw kompiluje projekt przy użyciu programu MSBuild.  Gdy to się powiedzie, program Visual Studio kompiluje pliku dockerfile, który po prostu kopiuje dane wyjściowe kompilacji z programu MSBuild do wynikowego obrazu platformy Docker.  Ponieważ kroki kompilowania kodu nie są uwzględnione w pliku dockerfile, nie można skompilować .NET Framework wieloetapowe dockerfile przy użyciu `docker build` wiersza polecenia. Do kompilowania tych projektów należy używać programu MSBuild.
 
-Do tworzenia obrazu dla pojedynczej platformy docker container projektu można użyć programu MSBuild z `/t:ContainerBuild` opcja polecenia. Na przykład:
+Aby utworzyć obraz dla pojedynczego projektu kontenera platformy Docker, można użyć programu MSBuild z `/t:ContainerBuild` opcją polecenia. Na przykład:
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-Zostaną wyświetlone dane wyjściowe podobne do wyświetlania w **dane wyjściowe** okna podczas kompilowania rozwiązania z programu Visual Studio IDE. Zawsze używaj `/p:Configuration=Release`, ponieważ w przypadku, gdy program Visual Studio używa kompilacji wieloetapowych optymalizacji, wyniki podczas kompilowania **debugowania** konfiguracji nie może być zgodnie z oczekiwaniami.
+Dane wyjściowe będą wyglądać podobnie jak w oknie **danych wyjściowych** podczas kompilowania rozwiązania z poziomu środowiska IDE programu Visual Studio. Zawsze używaj `/p:Configuration=Release`, ponieważ w przypadkach, gdy program Visual Studio używa optymalizacji kompilacji potokach wieloetapowych, wyniki podczas kompilowania konfiguracji **debugowania** mogą nie być zgodne z oczekiwaniami.
 
-Jeśli używasz narzędzia Docker Compose projektu, użyj polecenia do tworzenia obrazów:
+Jeśli używasz projektu Docker Compose, użyj polecenia, aby skompilować obrazy:
 
 ```cmd
 msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
@@ -112,10 +112,10 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się, jak dostosować kompilacji przez ustawienie dodatkowych właściwości programu MSBuild w plikach projektu. Zobacz [właściwości programu MSBuild dla projektów kontenera](container-msbuild-properties.md).
+Dowiedz się, jak dodatkowo dostosować kompilacje przez ustawienie dodatkowych właściwości programu MSBuild w plikach projektu. Zobacz [Właściwości programu MSBuild dla projektów kontenerów](container-msbuild-properties.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 [Program MSBuild](../msbuild/msbuild.md)
-[pliku Dockerfile na Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
-[kontenerów systemu Linux na Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)
+[pliku dockerfile w kontenerach systemu Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+[Linux w systemie Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)

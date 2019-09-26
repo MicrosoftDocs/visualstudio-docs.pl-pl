@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36442ad0792ef712acd322d17688d8ceb21444cb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0179a9609907adc07dc6d8a085eb9a2a0c38c065
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231892"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253227"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Unikaj obsługi wyjątków uszkodzonego stanu
 
@@ -39,7 +39,7 @@ To ostrzeżenie jest wyzwalane podczas przechwytywania rozszerzeń klienta z uż
 
 Aby rozwiązać ten problem, wykonaj jedną z następujących czynności:
 
-- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> Usuń atrybut. Spowoduje to przywrócenie domyślnego zachowania środowiska uruchomieniowego, w którym rozszerzeń klienta nie są przenoszone do obsługi catch.
+- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> Usuń atrybut. Spowoduje to przywrócenie domyślnego zachowania w czasie wykonywania, w którym rozszerzeń klienta nie są przenoszone do obsługi catch.
 
 - Usuń ogólny program obsługi catch w preferencjach obsługi, które przechwytują określone typy wyjątków. Może to obejmować rozszerzeń klienta, przy założeniu, że kod procedury obsługi może bezpiecznie obsłużyć je (rzadki).
 

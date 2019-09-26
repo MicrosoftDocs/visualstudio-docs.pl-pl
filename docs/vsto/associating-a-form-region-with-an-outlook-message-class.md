@@ -15,24 +15,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 45db262b6bf7843a3893c5d60f0b6eaea5fcb70b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440361"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254573"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Kojarzenie regionu formularza z klasą wiadomości programu Outlook
-  Można określić elementy, które program Microsoft Office Outlook wyświetlania regionu formularza przez kojarzenie regionu formularza z klasą wiadomości dla każdego elementu. Na przykład, jeśli chcesz dołączyć regionu formularza do dolnej części elementu poczty, można skojarzyć regionu formularza z `IPM.Note` klasą wiadomości.
+  Można określić, które Microsoft Office elementy programu Outlook będą wyświetlać region formularza, kojarząc region formularza z klasą wiadomości każdego elementu. Na przykład jeśli chcesz dołączyć region formularza do dołu elementu poczty, możesz skojarzyć region formularza z `IPM.Note` klasą wiadomości.
 
- Aby skojarzyć regionu formularza z klasą wiadomości, określ nazwę klasy wiadomości w **nowy Region formularza programu Outlook** kreatora lub zastosować atrybut do klasy fabryka regionów formularza.
+ Aby skojarzyć region formularza z klasą wiadomości, określ nazwę klasy komunikatu w kreatorze **nowego regionu formularza programu Outlook** lub zastosuj atrybut do klasy fabryki regionów formularza.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="understand-outlook-message-classes"></a>Omówienie klas wiadomości programu Outlook
- Klasą wiadomości programu Outlook identyfikuje typ elementu programu Outlook. W poniższej tabeli wymieniono te osiem standardowe typy elementów i ich nazwy klas wiadomości.
+## <a name="understand-outlook-message-classes"></a>Informacje o klasach wiadomości programu Outlook
+ Klasa wiadomości programu Outlook identyfikuje typ elementu programu Outlook. W poniższej tabeli wymieniono osiem standardowych typów elementów i ich nazwy klas komunikatów.
 
-|Typ elementu programu Outlook|Nazwa klasy wiadomości|
+|Typ elementu programu Outlook|Nazwa klasy komunikatu|
 |-----------------------|------------------------|
 |AppointmentItem|`IPM.Appointment`|
 |ContactItem|`IPM.Contact`|
@@ -42,71 +42,71 @@ ms.locfileid: "63440361"
 |PostItem|`IPM.Post` lub `IPM.Post.RSS`|
 |TaskItem|`IPM.Task`|
 
- Można również określić nazwy niestandardowych klasach wiadomości. Niestandardowych klasach wiadomości zidentyfikować niestandardowych formularzy utworzonych w programie Outlook.
+ Można również określić nazwy niestandardowych klas komunikatów. Niestandardowe klasy komunikatów identyfikują formularze niestandardowe zdefiniowane w programie Outlook.
 
 > [!NOTE]
-> Zastąpienie i regionów formularza Zamień wszystkie można określić nową nazwę klasy niestandardowy komunikat. Nie trzeba użyć nazwy klas wiadomości istniejącego formularza niestandardowego. Nazwa niestandardowej klasy wiadomości musi być unikatowa. Jednym ze sposobów, aby upewnić się, że nazwa jest unikatowa jest do Konwencja nazewnictwa podobny do następującego: \<*StandardMessageClassName*>.\< *Firmy*>.\< *MessageClassName*> (na przykład: `IPM.Note.Contoso.MyMessageClass`).
+> Dla regionów zamiany i Zamień — wszystkie regiony formularzy można określić nową niestandardową nazwę klasy wiadomości. Nie trzeba używać nazwy klasy wiadomości istniejącego formularza niestandardowego. Nazwa niestandardowej klasy wiadomości musi być unikatowa. Jednym ze sposobów upewnienia się, że nazwa jest unikatowa, jest użycie konwencji nazewnictwa podobnego do poniższego: \<*StandardMessageClassName*>. \<> *Firmy*. MessageClassName > (na przykład: `IPM.Note.Contoso.MyMessageClass`). \<
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Kojarzenie regionu formularza z klasą wiadomości programu Outlook
- Istnieją dwa sposoby kojarzenie regionu formularza z klasą wiadomości:
+ Istnieją dwa sposoby kojarzenia regionu formularza z klasą wiadomości:
 
-- Użyj **nowy Region formularza programu Outlook** kreatora.
+- Użyj kreatora **nowego regionu formularza programu Outlook** .
 
 - Zastosuj atrybuty klasy.
 
-### <a name="use-the-new-outlook-form-region-wizard"></a>Za pomocą Kreatora nowego regionu formularza programu Outlook
- Na ostatniej stronie **nowy Region formularza programu Outlook** kreatora można wybrać standardowych klasach wiadomości i wpisz nazwy niestandardowych klasach wiadomości, które chcesz skojarzyć z regionu formularza.
+### <a name="use-the-new-outlook-form-region-wizard"></a>Korzystanie z Kreatora nowego regionu formularza programu Outlook
+ Na ostatniej stronie kreatora **nowego regionu formularza programu Outlook** można wybrać standardowe klasy komunikatów i wpisać nazwy niestandardowych klas komunikatów, które mają być skojarzone z regionem formularza.
 
- Standardowych klasach wiadomości nie są dostępne, gdy region formularza zaprojektowano w celu zastąpienia cały formularz lub domyślną stronę formularza. Można określić nazwy klas standardową wiadomość tylko w przypadku formularzy, Dodaj nową stronę do formularza lub które są dołączane do dolnej części formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+ Standardowe klasy wiadomości są niedostępne, jeśli region formularza zaprojektowano w celu zamienienia całego formularza lub domyślnej strony formularza. Można określić standardowe nazwy klas komunikatów tylko dla formularzy, które dodają nową stronę do formularza lub które są dołączane na dole formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodaj region formularza do projektu](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)dodatku programu Outlook.
 
- Aby dołączyć co najmniej jedną klasę niestandardowy komunikat, wpisz ich nazwy w **których niestandardowych klasach wiadomości będzie wyświetlany ten region formularza?** pole.
+ Aby uwzględnić co najmniej jedną niestandardową klasę wiadomości, wpisz swoje nazwy w polu, **które niestandardowe klasy komunikatów będą wyświetlać ten region formularza?**
 
- Nazwy, które podczas pisania muszą przestrzegać następujących wytycznych:
+ Wpisane nazwy muszą być zgodne z następującymi wskazówkami:
 
-- Użyj wiadomości w pełni kwalifikowaną nazwę klasy (na przykład: "IPM.Note.Contoso").
+- Użyj w pełni kwalifikowanej nazwy klasy komunikatów (na przykład: IPM. Uwaga. contoso ").
 
-- Użyj średników do oddzielenia nazwy klas wiadomości.
+- Użyj średników do rozdzielenia wielu nazw klas komunikatów.
 
-- Nie należy dołączać standardowych klas wiadomości programu Outlook, takich jak "IPM. Note"lub"IPM. Skontaktuj się z". Uwzględnij tylko niestandardowych klasach wiadomości, takich jak "IPM. Note.Contoso".
+- Nie uwzględniaj standardowych klas wiadomości programu Outlook, takich jak "IPM. Uwaga "lub" IPM. Kontakt ". Zawierają tylko niestandardowe klasy komunikatów, takie jak "IPM. Uwaga. contoso ".
 
-- Nie określono klasy bazowej wiadomości samodzielnie (na przykład: "IPM").
+- Nie określaj podstawowej klasy wiadomości (na przykład: "IPM").
 
-- Nie może przekraczać 256 znaków dla każdej nazwy klas wiadomości.
+- Nazwy klas komunikatów nie mogą przekraczać 256 znaków.
 
-  **Nowy Region formularza programu Outlook** Kreator sprawdza poprawność format dane wejściowe, po kliknięciu **Zakończ**.
+  Kreator **nowego regionu formularza programu Outlook** sprawdza poprawność formatu danych wejściowych po kliknięciu przycisku **Zakończ**.
 
 > [!NOTE]
-> **Nowy Region formularza programu Outlook** Kreator sprawdza, czy nazwy klas wiadomości, które należy podać są poprawne lub jest nieprawidłowy.
+> Kreator **nowego regionu formularza programu Outlook** nie sprawdza, czy nazwy klas komunikatów, które zostały wprowadzone, są prawidłowe lub prawidłowe.
 
- Po zakończeniu działania kreatora **nowy Region formularza programu Outlook** Kreator ma zastosowanie atrybutów do klasy regionu formularza, która zawiera nazwy klas określony komunikat. Można także ręcznie zastosować te atrybuty.
+ Po zakończeniu pracy Kreatora Kreator **nowego regionu formularza programu Outlook** zastosuje atrybuty do klasy region formularza, która zawiera określone nazwy klas komunikatów. Te atrybuty można również zastosować ręcznie.
 
 ### <a name="apply-class-attributes"></a>Zastosuj atrybuty klasy
- Możesz skojarzyć regionu formularza z klasą wiadomości programu Outlook, po ukończeniu **nowy Region formularza programu Outlook** kreatora. Aby to zrobić, należy zastosować atrybutów do klasy fabryka regionów formularza.
+ Po zakończeniu pracy kreatora **nowego regionu formularza programu Outlook** można skojarzyć region formularza z klasą wiadomości programu Outlook. W tym celu Zastosuj atrybuty do klasy fabryki regionów formularza.
 
- W poniższym przykładzie pokazano dwa <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> atrybuty, które zostały zastosowane do klasy fabryka regionów formularza o nazwie `myFormRegion`. Pierwszy atrybut kojarzy regionu formularza z klasą standardową wiadomość dla formularza wiadomość poczty. Drugi atrybut kojarzy regionu formularza z niestandardową klasę wiadomości o nazwie `IPM.Task.Contoso`.
+ W poniższym przykładzie przedstawiono dwa <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> atrybuty, które zostały zastosowane do klasy fabryki regionów formularza o nazwie `myFormRegion`. Pierwszy atrybut kojarzy region formularza z klasą standardowego komunikatu dla formularza wiadomości e-mail. Drugi atrybut kojarzy region formularza z niestandardową klasą wiadomości `IPM.Task.Contoso`o nazwie.
 
  [!code-vb[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb#1)]
  [!code-csharp[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs#1)]
 
- Atrybuty muszą być zgodne z następującymi wytycznymi:
+ Atrybuty muszą być zgodne z następującymi wskazówkami:
 
-- Dla niestandardowych klasach wiadomości, użyj wiadomości w pełni kwalifikowaną nazwę klasy (na przykład: "IPM.Note.Contoso").
+- W przypadku niestandardowych klas komunikatów Użyj w pełni kwalifikowanej nazwy klasy komunikatów (na przykład: IPM. Uwaga. contoso ").
 
-- Nie określono klasy bazowej wiadomości samodzielnie (na przykład: "IPM").
+- Nie określaj podstawowej klasy wiadomości (na przykład: "IPM").
 
-- Nie może przekraczać 256 znaków dla każdej nazwy klas wiadomości.
+- Nazwy klas komunikatów nie mogą przekraczać 256 znaków.
 
-- Nie należy dołączać nazwy standardowych klasach wiadomości, jeśli region formularza zastępuje cały formularz lub domyślną stronę formularza. Można określić nazwy klas standardową wiadomość tylko w przypadku formularzy, Dodaj nową stronę do formularza lub które są dołączane do dolnej części formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+- Nie uwzględniaj nazw standardowych klas komunikatów, jeśli region formularza zastępuje całą formę lub stronę domyślną formularza. Można określić standardowe nazwy klas komunikatów tylko dla formularzy, które dodają nową stronę do formularza lub które są dołączane na dole formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodaj region formularza do projektu](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)dodatku programu Outlook.
 
-  Podczas kompilowania projektu programu Visual Studio sprawdza poprawność format nazwy klas wiadomości.
+  Program Visual Studio sprawdza poprawność formatu nazw klas komunikatów podczas kompilowania projektu.
 
 > [!NOTE]
-> Program Visual Studio nie sprawdza, czy nazwy klas wiadomości, które należy podać prawidłowy lub jest nieprawidłowy.
+> Program Visual Studio nie sprawdza, czy nazwy klas komunikatów, które zostały wprowadzone są poprawne lub prawidłowe.
 
 ## <a name="see-also"></a>Zobacz także
-- [Dostęp do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
+- [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
-- [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Wytyczne dotyczące tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Nazwa formularza i komunikat klasy — omówienie](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)
-- [Jak formularzy programu Outlook i elementy współpracują ze sobą](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)
+- [Przegląd nazw formularzy i klas komunikatów](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)
+- [Jak program Outlook Forms i elementy współpracują ze sobą](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)

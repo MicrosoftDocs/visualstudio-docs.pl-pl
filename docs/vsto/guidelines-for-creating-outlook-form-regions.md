@@ -13,82 +13,82 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d48a3ad24d094d0ebc822b572f2521eaefae5356
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a962b1ae2bff7b9a954204485a6ee73a3b63eb7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826499"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255950"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Wytyczne dotyczące tworzenia regionów formularzy programu Outlook
-  Poniższe informacje mogą pomóc w optymalizacji regionów formularzy w sieci i uniknąć potencjalnych problemów:
+  Poniższe informacje mogą pomóc zoptymalizować regiony formularzy i uniknąć potencjalnych problemów:
 
-- [Użyj nazwy regionu formularza](#UsingFormRegions).
+- [Użyj nazw regionów formularza](#UsingFormRegions).
 
 - [Wyłącz dziedziczenie regionu formularza](#DisablingInheritance).
 
-- [Informacje o typach i nazwy klas wiadomości](#ClassNames).
+- [Zrozumienie typów i nazw klas komunikatów](#ClassNames).
 
-- [Projektowanie regionów formularzy w okienku odczytu sąsiadujące](#ReadingPane).
+- [Projektuj sąsiednie regiony formularzy dla okienka odczytu](#ReadingPane).
 
-- [Użyj rozmiarów optymalnych ikonę](#UsingOptimal).
+- [Używaj optymalnych rozmiarów ikon](#UsingOptimal).
 
-  Aby uzyskać więcej informacji na temat regionów formularzy zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+  Aby uzyskać więcej informacji na temat regionów formularzy, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
 
   [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="UsingFormRegions"></a> Użyj nazwy regionów formularza
- Istnieje kilka nazw używany do opisania regionu formularza. Należy zrozumieć różnicę między te nazwy i ich wpływ na region formularza. W poniższej tabeli opisano nazwy.
+## <a name="UsingFormRegions"></a>Użyj nazw regionów formularza
+ Istnieje kilka nazw używanych do opisywania regionu formularza. Ważne jest, aby zrozumieć różnicę między tymi nazwami i wpływem na region formularza. Poniższa tabela opisuje każdą nazwę.
 
 |Nazwa regionu formularza|Opis|
 |----------------------|-----------------|
-|Nazwa elementu regionu formularza|Nazwa określona dla **Region formularza programu Outlook** pozycja **Dodaj nowy element** okno dialogowe. Jest to nazwa pliku kodu regionu formularza, który pojawia się w **Eksploratora rozwiązań**.|
-|<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> Właściwość|Określ tę nazwę w **tekst opisu i wybierz preferencje wyświetlania** strony **nowy Region formularza programu Outlook** kreatora. Ta nazwa jest wyświetlana jako **FormRegionName** właściwość **właściwości** okna.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> właściwości w celu określenia etykietę, która identyfikuje region formularza programu Outlook interfejsu użytkownika (UI). Dla regionów formularza oddzielny ta nazwa jest wyświetlana jako przycisk na Wstążce elementu programu Outlook.<br /><br /> Dla regionów formularza sąsiednimi ta nazwa pojawia się jako tekst nagłówka powyżej regionu formularza.|
-|`Microsoft.Office.Tools.Outlook.FormRegionName` Atrybut|Po dodaniu **Region formularza programu Outlook** elementu do projektu, program Visual Studio ustawia tę właściwość, aby w pełni kwalifikowaną nazwę regionu formularza. W pełni kwalifikowana nazwa domyślna jest nazwa dodatku narzędzi VSTO połączona nazwa regionu formularza za pomocą pojedynczego znaku kropki — na przykład `OutlookAddIn1.FormRegion1`.<br /><br /> Ta w pełni kwalifikowana nazwa pojawia się również jako atrybut u góry klasy fabryka regionów formularza.<br /><br /> Użyj `Microsoft.Office.Tools.Outlook.FormRegionName` atrybutu, aby jednoznacznie zidentyfikować region formularza we wszystkich dodatków narzędzi VSTO dla programu Outlook. Nie można zmienić wartość `Microsoft.Office.Tools.Outlook.FormRegionName` atrybutu, zmieniając element regionu formularza lub zmieniając <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> właściwości. Aby zmienić tę nazwę, należy zmodyfikować `Microsoft.Office.Tools.Outlook.FormRegionName` atrybutu w pliku kodu regionu formularza.|
+|Nazwa elementu regionu formularza|Nazwa określona dla elementu **region formularza programu Outlook** w oknie dialogowym **Dodaj nowy element** . Jest to nazwa pliku kodu regionu formularza, który pojawia się w **Eksplorator rozwiązań**.|
+|<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A>wartość|Tę nazwę należy określić w **tekście opisowym i wybrać stronę Preferencje wyświetlania** w kreatorze **nowego regionu formularza programu Outlook** . Ta nazwa jest wyświetlana jako właściwość **FormRegionName** w oknie **Właściwości** .<br /><br /> <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> Użyj właściwości, aby określić etykietę identyfikującą region formularza w interfejsie użytkownika programu Outlook. W odniesieniu do odrębnych regionów formularza ta nazwa jest wyświetlana jako przycisk na Wstążce elementu programu Outlook.<br /><br /> W przypadku sąsiadujących regionów formularza ta nazwa jest wyświetlana jako tekst nagłówka powyżej regionu formularza.|
+|`Microsoft.Office.Tools.Outlook.FormRegionName`przypisane|Po dodaniu elementu **regionu formularza programu Outlook** do projektu program Visual Studio ustawia tę właściwość na w pełni kwalifikowaną nazwę regionu formularza. Domyślna w pełni kwalifikowana nazwa to nazwa dodatku VSTO połączonego z nazwą regionu formularza przez kropkę — na przykład `OutlookAddIn1.FormRegion1`.<br /><br /> Ta w pełni kwalifikowana nazwa jest również wyświetlana jako atrybut w górnej części klasy fabryki regionów formularza.<br /><br /> Użyj atrybutu `Microsoft.Office.Tools.Outlook.FormRegionName` , aby jednoznacznie identyfikować region formularza we wszystkich dodatkach VSTO programu Outlook. Nie można zmienić wartości `Microsoft.Office.Tools.Outlook.FormRegionName` atrybutu poprzez zmianę nazwy elementu regionu formularza lub przez <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> zmianę właściwości. Aby zmienić tę nazwę, należy zmodyfikować `Microsoft.Office.Tools.Outlook.FormRegionName` atrybut w pliku kodu regionu formularza.|
 
-## <a name="DisablingInheritance"></a> Wyłącz dziedziczenie regionu formularza
- Domyślnie niestandardową klasę wiadomości dziedziczy wszystkie skojarzenia regionu formularza klasy bazowej wiadomości. Na przykład o nazwie klasy wiadomości `IPM.Task.Contoso` pochodzi od klasy `IPM.Task`. W związku z tym `IPM.Task.Contoso` dziedziczy formularza skojarzenia region `IPM.Task`.
+## <a name="DisablingInheritance"></a>Wyłącz dziedziczenie regionów formularza
+ Domyślnie Klasa komunikatów niestandardowych dziedziczy wszystkie skojarzenia regionów formularzy podstawowej klasy komunikatów. Na przykład Klasa komunikatu o nazwie `IPM.Task.Contoso` dziedziczy z. `IPM.Task` W związku z tym `IPM.Task` dziedziczyskojarzeniaregionuformularza.`IPM.Task.Contoso`
 
- Jeśli użytkownik nie chce region formularza ma być skojarzona z wszystkie pochodne klasy wiadomości, ustaw <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> właściwość regionu formularza **true**. Na przykład w przypadku skojarzenia sąsiednimi regionu formularza z `IPM.Task` i ustaw <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> właściwości **true**, region formularza tylko zostaną dołączone do dołu formularza zadania standardowego. Region formularza nie zostanie dołączony do dołu wszystkie wersje dostosowany formularz zadania standardowego.
+ Jeśli nie chcesz, aby region formularza został skojarzony z żadną pochodną klasą komunikatów, ustaw <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> Właściwość region formularza na **wartość true**. Na przykład, jeśli skojarzesz sąsiedni region formularza z `IPM.Task` i <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> ustawisz właściwość na **true**, region formularza zostanie dołączony tylko do dolnej części standardowego formularza zadania. Region formularza nie zostanie dołączony do dolnej części dowolnych dostosowanych wersji standardowego formularza zadania.
 
-## <a name="ClassNames"></a> Opis typów i nazwy klas wiadomości
- Nazwa typu elementu programu Outlook różni się od nazwy klas wiadomości, elementu programu Outlook. Na przykład, nazwa typu elementu danych RSS jest `Microsoft.Office.Interop.Outlook.PostItem`. Nazwa klasy wiadomości elementu danych RSS jest `IPM.Post.RSS`.
+## <a name="ClassNames"></a>Opis typów i nazw klas komunikatów
+ Nazwa typu elementu programu Outlook różni się od nazwy klasy wiadomości elementu programu Outlook. Na przykład nazwa typu elementu RSS to `Microsoft.Office.Interop.Outlook.PostItem`. Nazwa klasy wiadomości elementu RSS to `IPM.Post.RSS`.
 
- Użyj nazwy typu można odwoływać się do elementu programu Outlook w kodzie. Aby uzyskać listę nazw typów, zobacz [kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
+ Użyj nazwy typu, aby odwołać się do elementu programu Outlook w kodzie. Aby uzyskać listę nazw typów, zobacz [kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
- Użyj nazwy klas wiadomości elementów programu Outlook w **nowy Region formularza programu Outlook** kreatora, aby skojarzyć element z regionu formularza. Aby uzyskać listę nazw klas prawidłowy komunikat, zobacz [kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
+ Użyj nazwy klasy wiadomości elementów programu Outlook w kreatorze **nowego regionu formularza programu Outlook** w celu skojarzenia elementu z regionem formularza. Aby uzyskać listę prawidłowych nazw klas komunikatów, zobacz [kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
-## <a name="ReadingPane"></a> Projektowanie regionów formularzy w przylegającym okienka odczytu
- W okienku odczytu programu Outlook umożliwia elementu programu Outlook w wersji zapoznawczej bez konieczności otwierania elementu. W okienku odczytu jest przeznaczony do odczytu tylko. W związku z tym, kontrolki wejściowe, które dodajesz do regionów formularzy programu sąsiadujących, takich jak pole tekstowe, mogą nie zachowywać się zgodnie z oczekiwaniami, gdy region elementu i formularz są otwarte w okienku odczytu.
+## <a name="ReadingPane"></a>Projektuj przylegające obszary formularzy dla okienka odczytu
+ Możesz użyć okienka czytania programu Outlook, aby wyświetlić podgląd elementu programu Outlook bez otwierania elementu. Okienko odczytu jest przeznaczone tylko do odczytu. W związku z tym, formanty wejściowe, które można dodać do sąsiadującego regionu formularza, takie jak pole tekstowe, mogą nie zachowywać się zgodnie z oczekiwaniami, gdy region elementu i formularza jest otwarty w okienku odczytywania.
 
- Na przykład jeśli element, który ma przylegającym regionie formularza jest otwarty w okienku odczytu, możliwe jest następujących sytuacji:
+ Na przykład jeśli element, który ma sąsiadujący region formularza jest otwarty w okienku odczytywania, możliwe jest następujące sytuacje:
 
-1. W polu tekstowym, która znajduje się na region formularza, zaznacz jakiś tekst.
+1. Zaznacz tekst w polu tekstowym, które znajduje się w regionie formularza.
 
-2. Naciśnij klawisz **Usuń**.
+2. Naciśnij klawisz **delete**.
 
-3. Element całego poczty zostanie usunięty zamiast tekstu w polu tekstowym.
+3. Cały element poczty jest usuwany zamiast tekstu w polu tekstowym.
 
-   W przypadku projektowania sąsiednimi regionu formularza, który zawiera kontrolki wejściowe, przetestuj kontrolki w okienku odczytu, aby upewnić się, że działają prawidłowo. Rozważ dodanie kodu niestandardowego, który wyłącza formantów, które nie zachowywać się zgodnie z oczekiwaniami.
+   Jeśli projektujesz sąsiadujący region formularza zawierający kontrolki wejściowe, przetestuj kontrolki w okienku odczytywania, aby upewnić się, że działają prawidłowo. Rozważ dodanie niestandardowego kodu, który wyłącza kontrolki, które nie zachowywać się zgodnie z oczekiwaniami.
 
-   Alternatywnie, można ustawić <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ShowInspectorRead%2A> właściwość regionu formularza **False**. Nie można używać w ten sposób regionu formularza w okienku odczytu.
+   Alternatywnie można ustawić <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ShowInspectorRead%2A> Właściwość region formularza na **wartość false**. W ten sposób region formularza nie może być używany w okienku odczytywania.
 
-## <a name="UsingOptimal"></a> Użyj rozmiarów optymalnych ikony
- Można określić, ikony, które mają być regionu formularza do wyświetlenia przez ustawienie właściwości ikony w **ikony** grupy właściwości **właściwości** okna. Aby osiągnąć najwyższą jakość wizualną, skorzystaj z poniższych wskazówek:
+## <a name="UsingOptimal"></a>Użyj optymalnych rozmiarów ikon
+ Możesz określić, które ikony mają być wyświetlane w regionie formularza przez ustawienie właściwości ikony w grupie właściwości **ikony** okna **Właściwości** . Poniższe wskazówki umożliwiają osiągnięcie najlepszej jakości wizualnej:
 
-- Aby uzyskać **strony** ikonę, przy użyciu pliku Portable Network Graphics (PNG).
+- Dla ikony **strony** użyj pliku Portable Network Graphics (PNG).
 
-- **Okno** ikon powinna być 32 x 32 piksele.
+- Ikony **okna** powinny zawierać od 32 do 32 pikseli.
 
-- Wszystkie inne ikony powinien być 16 x 16 pikseli.
+- Wszystkie inne ikony powinny mieć 16 pikseli na 16 pikseli.
 
-  **Strony** pojawi się ikona na Wstążce Inspektor dla elementów, które mają oddzielny, zamieniania lub regionów formularza Zamień wszystkie.
+  Ikona **strony** pojawia się na Wstążce inspektora dla elementów, które mają oddzielne, zastępcze lub zastąpione regiony formularzy.
 
-  **Okna** ikona pojawia się w obszarze powiadomień, a następnie w **Alt**+**kartę** okno dialogowe Otwórz elementy tego wyświetlana zastąpienia lub formularza Zamień wszystkie regiony.
+  Ikona **okna** jest wyświetlana w obszarze powiadomień, a w oknie dialogowym **Alt**+**Tab** dla otwartych elementów wyświetlających zastępowanie lub zastępowanie — wszystkie regiony formularza.
 
 ## <a name="see-also"></a>Zobacz także
-- [Dostęp do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
+- [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
-- [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

@@ -1,5 +1,5 @@
 ---
-title: Utrwalanie kontrolek dynamicznych w dokumentach pakietu Office
+title: Utrwalanie formantów dynamicznych w dokumentach pakietu Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,28 +18,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976590"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256005"
 ---
-# <a name="persist-dynamic-controls-in-office-documents"></a>Utrwalanie kontrolek dynamicznych w dokumentach pakietu Office
+# <a name="persist-dynamic-controls-in-office-documents"></a>Utrwalanie formantów dynamicznych w dokumentach pakietu Office
 
-Formanty, które są dodawane w czasie wykonywania nie są zachowywane, gdy dokument lub skoroszyt zostanie zapisany i zamknięte. Dokładne zachowanie różni się dla formantów hosta i kontrolek formularzy Windows Forms. W obu przypadkach można dodać kod do rozwiązania, aby ponownie utworzyć kontrolki, gdy użytkownik ponownie otwiera dokument.
+Kontrolki dodawane w czasie wykonywania nie są utrwalane, gdy dokument lub skoroszyt jest zapisywany i zamykany. Dokładne zachowanie jest różne w przypadku formantów hosta i formantów Windows Forms. W obu przypadkach można dodać kod do rozwiązania, aby ponownie utworzyć kontrolki po ponownym otwarciu dokumentu przez użytkownika.
 
-Formanty, które dodają do dokumentów w czasie wykonywania są nazywane *kontrolek dynamicznych*. Aby uzyskać więcej informacji na temat kontrolek dynamicznych, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
+Kontrolki dodawane do dokumentów w czasie wykonywania są nazywane *kontrolkami dynamicznymi*. Aby uzyskać więcej informacji na temat formantów dynamicznych, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
-## <a name="persist-host-controls-in-the-document"></a>Utrwalanie kontrolki hosta w dokumencie
+## <a name="persist-host-controls-in-the-document"></a>Utrwalanie formantów hosta w dokumencie
 
-Po zapisaniu dokumentu i następnie zamknięte, wszystkie formanty hosta dynamicznego zostaną usunięte z dokumentu. Tylko podstawowy natywnych obiektów pakietu Office pozostają za zaporą. Na przykład <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> staje się kontrolki hosta <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Natywnych obiektów pakietu Office nie są podłączone do zdarzenia kontrolki hosta, a nie mają funkcji powiązanie danych kontrolki hosta.
+Po zapisaniu i zamknięciu dokumentu wszystkie dynamiczne kontrolki hosta są usuwane z dokumentu. Tylko bazowe natywne obiekty pakietu Office pozostają w tle. Na przykład <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> kontrolka hosta zmieni się na <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Natywne obiekty pakietu Office nie są połączone ze zdarzeniami kontroli hosta i nie mają funkcji powiązania danych formantu hosta.
 
-W poniższej tabeli wymieniono natywnego obiektu pakietu Office, który jest pozostawione w dokumencie dla każdego typu kontrolki hosta.
+Poniższa tabela zawiera listę natywnych obiektów pakietu Office, które są pozostawione w dokumencie dla każdego typu formantu hosta.
 
-|Typ kontrolki hosta|Natywne typ obiektów pakietu Office|
+|Typ formantu hosta|Typ natywnego obiektu pakietu Office|
 |-----------------------|-------------------------------|
 |<xref:Microsoft.Office.Tools.Excel.Chart>|<xref:Microsoft.Office.Interop.Excel.Chart>|
 |<xref:Microsoft.Office.Tools.Excel.ListObject>|<xref:Microsoft.Office.Interop.Excel.ListObject>|
@@ -47,67 +47,67 @@ W poniższej tabeli wymieniono natywnego obiektu pakietu Office, który jest poz
 |<xref:Microsoft.Office.Tools.Word.Bookmark>|<xref:Microsoft.Office.Interop.Word.Bookmark>|
 |<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DropDownListContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.GroupContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PictureContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|<xref:Microsoft.Office.Interop.Word.ContentControl>|
 
-### <a name="re-create-dynamic-host-controls-when-documents-are-opened"></a>Ponownie utworzyć formanty hosta dynamicznego, gdy są otwarte dokumenty
+### <a name="re-create-dynamic-host-controls-when-documents-are-opened"></a>Ponownie utwórz dynamiczne kontrolki hosta podczas otwierania dokumentów
 
-Za każdym razem, gdy użytkownik otwiera dokument, można ponownie utworzyć formanty hosta dynamicznego zamiast istniejącej kontrolki natywne. Tworzenie kontrolki hosta w ten sposób, po otwarciu dokumentu symuluje środowisko, które użytkownicy mogą oczekiwać.
+Możesz ponownie utworzyć dynamiczne kontrolki hosta zamiast istniejących formantów natywnych za każdym razem, gdy użytkownik otworzy dokument. Tworzenie kontrolek hosta w ten sposób, gdy dokument zostanie otwarty, symuluje środowisko, którego mogą oczekiwać użytkownicy.
 
-Aby ponownie utworzyć kontrolki hosta programu Word, lub <xref:Microsoft.Office.Tools.Excel.NamedRange> lub <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki hosta dla programu Excel, użyj `Add` \< *kontrolować klasy*> metody <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> lub <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> obiektu. Metoda, która ma parametr dla natywnych obiektów pakietu Office.
+Aby ponownie utworzyć formant hosta dla programu Word lub <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki `Add`hosta \<dla programu Excel, użyj *klasy kontrolki*> metody <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> lub <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> obiektu. Użyj metody, która ma parametr dla natywnego obiektu pakietu Office.
 
-Na przykład, jeśli chcesz utworzyć <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> kontrolki z istniejących natywnych hosta <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> po otwarciu dokumentu, użyj <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> metody i przekazać w istniejącym <xref:Microsoft.Office.Interop.Excel.ListObject>. W poniższym przykładzie kodu pokazano to w projekcie na poziomie dokumentu dla programu Excel. Ponownie tworzy dynamiczny kod <xref:Microsoft.Office.Tools.Excel.ListObject> opartego na istniejącej <xref:Microsoft.Office.Interop.Excel.ListObject> o nazwie `MyListObject` w `Sheet1` klasy.
+Na przykład <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> Jeśli chcesz utworzyć formant hosta z istniejącej natywnej <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> , gdy dokument <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> zostanie otwarty, użyj metody i przekaż istniejący <xref:Microsoft.Office.Interop.Excel.ListObject>. Poniższy przykład kodu ilustruje ten element w projekcie na poziomie dokumentu dla programu Excel. Kod odtwarza dynamiczny <xref:Microsoft.Office.Tools.Excel.ListObject> , który jest oparty na istniejącym <xref:Microsoft.Office.Interop.Excel.ListObject> nazwie `MyListObject` w `Sheet1` klasie.
 
 [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
 [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
 
-### <a name="re-create-chart"></a>Ponowne tworzenie wykresu
+### <a name="re-create-chart"></a>Utwórz ponownie wykres
 
-Ponownie utworzyć <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> kontrolki, hosta należy najpierw usunąć natywnych <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>i ponownie utwórz <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> przy użyciu <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> metody. Istnieje nie `Add` \< *kontrolować klasy*> metodę, która umożliwia utworzenie nowego <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> oparty na istniejącym <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>.
+Aby ponownie utworzyć <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> formant hosta, należy najpierw usunąć natywny <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>, a <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> następnie ponownie <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> utworzyć przy użyciu metody. Nie `Add` <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> istnieje Klasa formantów > Metoda, która umożliwia tworzenie nowych na podstawie istniejących. \<
 
-Jeśli nie usuwaj najpierw natywnych <xref:Microsoft.Office.Interop.Excel.Chart>, a następnie utworzysz wykres drugi, zduplikowany, po ponownym utworzeniu <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>.
+Jeśli nie usuniesz najpierw natywnego <xref:Microsoft.Office.Interop.Excel.Chart>, utworzysz drugi, zduplikowany wykres po ponownym <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>utworzeniu.
 
-## <a name="persist-windows-forms-controls-in-documents"></a>Utrwalanie formantów Windows Forms w dokumentach
+## <a name="persist-windows-forms-controls-in-documents"></a>Utrwalaj Windows Forms kontrolki w dokumentach
 
-Po zapisaniu dokumentu i następnie zamknięty [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatycznie usuwa wszystkie kontrolki Windows Forms utworzony dynamicznie z dokumentu. Jednak to zachowanie różni się na poziomie dokumentu i projektów dodatku VSTO.
+Gdy dokument zostanie zapisany, a następnie zamknięty, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatycznie usunie wszystkie dynamicznie utworzone kontrolki Windows Forms z dokumentu. Zachowanie jest jednak różne w przypadku projektów dodatków na poziomie dokumentu i narzędzi VSTO.
 
-W dostosowaniach na poziomie dokumentu kontrolki i ich podstawowej otoki ActiveX, (które są używane do hostowania kontrolki do dokumentu) są usuwane przy następnym otwarciu dokumentu. Nie ma żadnego wskazania, że formanty były nigdy nie istnieje.
+W przypadku dostosowań na poziomie dokumentu formanty i ich bazowe otoki ActiveX (które są używane do hostowania formantów w dokumencie) są usuwane przy następnym otwarciu dokumentu. Nie ma żadnego wskazania, że kontrolki były kiedykolwiek dostępne.
 
-W dodatków narzędzi VSTO dla programów formanty są usuwane, ale otoki ActiveX pozostają w dokumencie. Przy następnym otwarciu dokumentu, otoki ActiveX są widoczne. W programie Excel otoki ActiveX wyświetlanie obrazów formantów, postaci aktualnej podczas ostatniego dokument został zapisany. W programie Word otoki ActiveX są niewidoczne, chyba że użytkownik kliknie na nich, w tym przypadku są wyświetlane linia kropkowana, który reprezentuje obramowania kontrolki. Istnieje kilka sposobów, możesz usunąć otoki ActiveX. Aby uzyskać więcej informacji, zobacz [Usuń otoki ActiveX w dodatku](#removingActiveX).
+W dodatkach narzędzia VSTO formanty są usuwane, ale otoki ActiveX pozostają w dokumencie. Gdy użytkownik następnym razem otworzy dokument, otoki ActiveX są widoczne. W programie Excel otoki ActiveX wyświetlają obrazy formantów, jak pojawiły się podczas ostatniego zapisywania dokumentu. W programie Word otoki ActiveX są niewidoczne, chyba że użytkownik kliknie je, w takim przypadku wyświetla linię kropkowaną, która reprezentuje obramowanie kontrolek. Istnieje kilka sposobów usuwania otok ActiveX. Aby uzyskać więcej informacji, zobacz [usuwanie otoki ActiveX w dodatku](#removingActiveX).
 
-### <a name="re-create-windows-forms-controls-when-documents-are-opened"></a>Utwórz ponownie kontrolek formularzy Windows Forms, gdy są otwarte dokumenty
+### <a name="re-create-windows-forms-controls-when-documents-are-opened"></a>Utwórz ponownie kontrolki Windows Forms, gdy dokumenty są otwarte
 
-Możesz je ponownie utworzyć usuniętego kontrolek Windows Forms po użytkownik ponownie otwiera dokument. Aby to zrobić, rozwiązanie musi wykonać następujące zadania:
+Po ponownym otwarciu dokumentu można utworzyć ponownie usunięte kontrolki Windows Forms. W tym celu Twoje rozwiązanie musi wykonać następujące zadania:
 
-1. Store informacji na temat rozmiaru, lokalizacja i stan kontrolki, gdy dokument zostanie zapisany lub zamknięte. W dostosowaniu na poziomie dokumentu można zapisać danych do pamięci podręcznej danych w dokumencie. W dodatku narzędzi VSTO dla programów można zapisać danych z niestandardowym elementem XML w dokumencie.
+1. Przechowuj informacje o rozmiarze, lokalizacji i stanie formantów, gdy dokument jest zapisywany lub zamknięty. W dostosowaniu na poziomie dokumentu dane można zapisać w pamięci podręcznej danych w dokumencie. W dodatku VSTO można zapisać dane do niestandardowej części XML w dokumencie.
 
-2. Utwórz ponownie kontrolek w zdarzenie, które jest wywoływane, gdy dokument jest otwarty. W projektach na poziomie dokumentu, można to zrobić `Sheet` *n* `_Startup` lub `ThisDocument_Startup` procedury obsługi zdarzeń. W projektach dodatku narzędzi VSTO można zrobić w przypadku tym programy obsługi dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> lub <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> zdarzenia.
+2. Ponownie utwórz kontrolki w zdarzeniu, które jest zgłaszane, gdy dokument zostanie otwarty. W projektach na poziomie dokumentu można to zrobić `Sheet`za pomocą *n* `_Startup` lub `ThisDocument_Startup` programów obsługi zdarzeń. W projektach dodatku VSTO można to zrobić w programach obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> zdarzeń lub. <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
-### <a name="removingActiveX"></a> Usuń otoki ActiveX w dodatku
+### <a name="removingActiveX"></a>Usuń otoki ActiveX w dodatku
 
-Po dodaniu dynamiczne kontrolek Windows Forms do dokumentów za pomocą dodatku narzędzi VSTO uniemożliwia otoki ActiveX dla formantów znajdujących się w dokumencie następnym razem, gdy zostanie otwarta w następujący sposób.
+Po dodaniu formantów Windows Forms dynamicznych do dokumentów przy użyciu dodatku VSTO można zapobiec wyświetlaniu przez niego otoki ActiveX w dokumencie przy następnym otwarciu w następujący sposób.
 
-#### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>Po otwarciu dokumentu, Usuń otoki ActiveX
+#### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>Usuń otoki ActiveX po otwarciu dokumentu
 
-Aby usunąć wszystkie otoki ActiveX, należy wywołać `GetVstoObject` metodę w celu wygenerowania element hosta dla elementu <xref:Microsoft.Office.Interop.Word.Document> lub <xref:Microsoft.Office.Interop.Excel.Workbook> reprezentujący nowo otwartego dokumentu. Na przykład, aby usunąć wszystkie otoki ActiveX z dokumentu programu Word, należy wywołać `GetVstoObject` metodę w celu wygenerowania element hosta dla elementu <xref:Microsoft.Office.Interop.Word.Document> obiektu, który jest przekazywany do narzędzia obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> zdarzeń.
+Aby usunąć wszystkie otoki ActiveX, wywołaj `GetVstoObject` metodę w celu wygenerowania elementu hosta <xref:Microsoft.Office.Interop.Word.Document> dla lub <xref:Microsoft.Office.Interop.Excel.Workbook> , który reprezentuje nowo otwarty dokument. Na przykład aby usunąć wszystkie otoki ActiveX z dokumentu programu Word, można wywołać `GetVstoObject` metodę w celu wygenerowania elementu hosta <xref:Microsoft.Office.Interop.Word.Document> dla obiektu, który jest przesyłany do programu obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> zdarzenia.
 
-Ta procedura jest przydatna, gdy wiadomo, że dokument zostanie otwarty tylko na komputerach, które mają dodatku narzędzi VSTO zainstalowane. Jeśli dokument mogą być przekazywane do innych użytkowników, którzy nie mają dodatku narzędzi VSTO zainstalowane, rozważ usunięcie kontrolki przed zamknięciem zamiast tego dokumentu.
+Ta procedura jest przydatna, gdy wiadomo, że dokument zostanie otwarty tylko na komputerach, na których zainstalowano dodatek VSTO. Jeśli dokument może zostać przesłany do innych użytkowników, którzy nie mają zainstalowanego dodatku VSTO, Rozważ usunięcie kontrolek przed zamknięciem dokumentu.
 
-Poniższy przykład kodu pokazuje sposób wywołania `GetVstoObject` metody, gdy dokument jest otwarty.
+Poniższy przykład kodu demonstruje, jak wywołać metodę, `GetVstoObject` gdy dokument zostanie otwarty.
 
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
-Mimo że `GetVstoObject` metoda jest używana głównie w celu wygenerowania nowego elementu hosta w czasie wykonywania, ta metoda także czyści wszystkie otoki ActiveX z dokumentu jest wywoływana dla określonego dokumentu po raz pierwszy. Aby uzyskać więcej informacji o sposobie używania `GetVstoObject` metody, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+`GetVstoObject` Chociaż metoda jest używana głównie do generowania nowego elementu hosta w czasie wykonywania, ta metoda również czyści wszystkie otoki ActiveX z dokumentu przy pierwszym wywołaniu dla określonego dokumentu. Aby uzyskać więcej informacji o sposobach korzystania `GetVstoObject` z metody, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-Jeśli dodatku narzędzi VSTO dla programów tworzy kontrolek dynamicznych, po otwarciu dokumentu, dodatku narzędzi VSTO dla programów już wywoła `GetVstoObject` metodę jako część procesu tworzenia kontrolki. Nie musisz dodać wywołanie oddzielnych `GetVstoObject` metodę, aby usunąć otoki ActiveX w tym scenariuszu.
+Jeśli Twój dodatek narzędzi VSTO tworzy dynamiczne kontrolki po otwarciu dokumentu, dodatek Narzędzia VSTO już wywoła `GetVstoObject` metodę jako część procesu, aby utworzyć formanty. Nie trzeba dodawać oddzielnego wywołania `GetVstoObject` metody, aby usunąć otoki ActiveX w tym scenariuszu.
 
-#### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>Usuwanie kontrolek dynamicznych, przed zamknięciem dokumentu
+#### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>Usuń formanty dynamiczne przed zamknięciem dokumentu
 
-Dodatek narzędzi VSTO dla programu jawnie usunąć każdy dynamicznej kontroli z dokumentu przed zamknięciem dokumentu. Ta procedura jest przydatne w przypadku dokumentów, które mogą być przekazywane do innych użytkowników, którzy nie mają dodatku narzędzi VSTO zainstalowane.
+Dodatek VSTO może jawnie usunąć każdą dynamiczną kontrolę z dokumentu przed zamknięciem dokumentu. Ta procedura jest przydatna w przypadku dokumentów, które mogą być przesyłane do innych użytkowników, którzy nie mają zainstalowanego dodatku VSTO.
 
-Poniższy przykład kodu demonstruje sposób usunięcia wszystkich kontrolek Windows Forms z dokumentu programu Word, gdy dokument zostanie zamknięty.
+Poniższy przykład kodu demonstruje, jak usunąć wszystkie kontrolki Windows Forms z dokumentu programu Word, gdy dokument jest zamknięty.
 
 [!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
 [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

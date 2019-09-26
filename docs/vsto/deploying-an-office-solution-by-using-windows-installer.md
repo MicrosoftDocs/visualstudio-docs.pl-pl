@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69551717"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Wdróż rozwiązanie pakietu Office przy użyciu Instalator Windows
@@ -125,7 +125,7 @@ Projekt **OfficeAddInSetup** można skonfigurować tak, aby zawierał dane wyjś
 
 ### <a name="to-add-the-project-output"></a>Aby dodać dane wyjściowe projektu
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , a następnie wybierz plik asystenta **projektu** , który przedstawiono na poniższej ilustracji.
+1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , a następnie wybierz plik **Asystenta projektu** , który przedstawiono na poniższej ilustracji.
 
    ![Plik Asystenta projektu w Eksplorator rozwiązań](../vsto/media/installshield-projectassistant.png "Plik Asystenta projektu w Eksplorator rozwiązań")
 
@@ -163,13 +163,13 @@ W aplikacji Instalatora należy uwzględnić nie tylko poniższe składniki, ale
 
 ### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>Dodaj .NET Framework 4 lub .NET Framework 4,5 jako warunek wstępny
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , rozwiń węzeł **Określ dane aplikacji** , a następnie wybierz plik redystrybucyjny , który przedstawiono na poniższej ilustracji.
+1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , rozwiń węzeł **Określ dane aplikacji** , a następnie wybierz plik **redystrybucyjny** , który przedstawiono na poniższej ilustracji.
 
    ![Plik redystrybucyjny w Eksplorator rozwiązań](../vsto/media/installshield-redistributablesfile.png "Plik redystrybucyjny w Eksplorator rozwiązań")
 
 2. Na pasku menu wybierz **Widok** > **Otwórz**.
 
-   Zostanie otwarta strona redystrybucyjne.
+   Zostanie otwarta strona **redystrybucyjne** .
 
 3. Na liście składników redystrybucyjnych zaznacz odpowiednie pole wyboru dla wersji .NET Framework, do której odwołuje się rozwiązanie.
 
@@ -179,7 +179,7 @@ W aplikacji Instalatora należy uwzględnić nie tylko poniższe składniki, ale
 
 ### <a name="AddToolsForOffice"></a>Dodaj Visual Studio 2010 Tools dla pakietu Office Runtime
 
-Strona redystrybucyjna zawiera element o nazwie **Microsoft VSTO 2010 Runtime**, ale odwołuje się do starszej wersji środowiska uruchomieniowego. W związku z tym można ręcznie utworzyć plik konfiguracji, który odwołuje się do najnowszej wersji. Następnie należy umieścić ten plik w tym samym katalogu, w którym znajdują się pliki konfiguracji dla wszystkich innych elementów, które pojawiają się na stronie redystrybucyjne.
+Strona **redystrybucyjna** zawiera element o nazwie **Microsoft VSTO 2010 Runtime**, ale odwołuje się do starszej wersji środowiska uruchomieniowego. W związku z tym można ręcznie utworzyć plik konfiguracji, który odwołuje się do najnowszej wersji. Następnie należy umieścić ten plik w tym samym katalogu, w którym znajdują się pliki konfiguracji dla wszystkich innych elementów, które pojawiają się na stronie **redystrybucyjne** .
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>Aby dodać program Visual Studio 2010 Tools for Office Runtime jako warunek wstępny
 
@@ -235,7 +235,7 @@ Strona redystrybucyjna zawiera element o nazwie **Microsoft VSTO 2010 Runtime**,
 
    W przypadku 64-bitowych systemów operacyjnych: *% ProgramFiles (x86)% \ 2013LE \\\ SetupPrerequisites*
 
-11. Na stronie redystrybucyjna projektu InstallShield wybierz przycisk **Odśwież** , aby odświeżyć listę składników redystrybucyjnych, jak pokazano na poniższej ilustracji.
+11. Na stronie **redystrybucyjna** projektu InstallShield wybierz przycisk **Odśwież** , aby odświeżyć listę składników redystrybucyjnych, jak pokazano na poniższej ilustracji.
 
    ![Przycisk Odśwież.](../vsto/media/installshield-refreshbutton.png "Przycisk Odśwież.")
 
@@ -415,7 +415,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 ### <a name="to-add-a-custom-action-that-runs-your-program"></a>Aby dodać akcję niestandardową, która uruchamia program
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , a następnie wybierz plik asystenta **projektu** , który przedstawiono na poniższej ilustracji.
+1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **OfficeAddInSetup** , a następnie wybierz plik **Asystenta projektu** , który przedstawiono na poniższej ilustracji.
 
    ![Plik Asystenta projektu w Eksplorator rozwiązań](../vsto/media/installshield-projectassistant.png "Plik Asystenta projektu w Eksplorator rozwiązań")
 
@@ -442,7 +442,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 8. Na liście zdarzeń w obszarze **Akcje niestandardowe podczas instalacji**Otwórz menu skrótów dla zdarzenia **okna dialogowego po zakończeniu instalacji** , a następnie wybierz polecenie **nowy plik exe**.
 
-   Akcja niestandardowa o nazwie **NewCustomAction1** pojawia się w obszarze zdarzenia **okna dialogowego po** pomyślnym zakończeniu instalacji. Zestaw właściwości dla akcji niestandardowej pojawia się w okienku obok zdarzeń.
+   Akcja niestandardowa o nazwie **NewCustomAction1** pojawia się w obszarze zdarzenia **okna dialogowego po pomyślnym zakończeniu instalacji** . Zestaw właściwości dla akcji niestandardowej pojawia się w okienku obok zdarzeń.
 
    > [!IMPORTANT]
    > Dwa **po zakończeniu instalacji zdarzenia okna dialogowego sukces** są wyświetlane na liście zdarzeń. Upewnij się, że wybrano wystąpienie zdarzenia **okna dialogowego po zakończeniu instalacji** , które jest wyświetlane w obszarze **Akcje niestandardowe** w węźle instalacja.
@@ -488,7 +488,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 
 3. W Eksploratorze **kompilacji** wybierz folder **SingleImage** .
 
-4. W okienku obok Eksploratora kompilacje wybierz kartę **Setup. exe** .
+4. W okienku obok Eksploratora **kompilacje** wybierz kartę **Setup. exe** .
 
 5. Na stronie właściwości **Setup. exe** z listy **Lokalizacja wymagań wstępnych InstallShield** wybierz pozycję **Pobierz z sieci Web**.
 

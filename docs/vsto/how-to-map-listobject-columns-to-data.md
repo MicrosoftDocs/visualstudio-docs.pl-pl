@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Mapowanie kolumn ListObject do danych'
+title: 'Instrukcje: Mapowanie kolumn ListObject na dane'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,56 +13,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a37c0f12943d60f67ee0d17b15315ac85af509d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e0056687e8ca28af4dbc9032d7bbee0cf976378
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967888"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253682"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Instrukcje: Mapowanie kolumn ListObject do danych
-  Po powiązaniu <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolę <xref:System.Data.DataTable>, możesz nie chcieć wyświetlić wszystkie kolumny na liście lub może być określone kolumny, które nie są powiązane z danymi. Można mapować kolumny, które mają być wyświetlane w <xref:Microsoft.Office.Tools.Excel.ListObject> podczas wywoływania <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody.
+# <a name="how-to-map-listobject-columns-to-data"></a>Instrukcje: Mapowanie kolumn ListObject na dane
+  Po powiązaniu <xref:Microsoft.Office.Tools.Excel.ListObject> formantu <xref:System.Data.DataTable>z, możesz nie chcieć wyświetlać wszystkich kolumn na liście lub mogą istnieć pewne kolumny, które nie są powiązane z danymi. Można mapować kolumny, które mają być wyświetlane w <xref:Microsoft.Office.Tools.Excel.ListObject> czasie <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> wywoływania metody.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Utwórz listę w programie Excel, która jest połączona z listą programu SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
+ ![link do wideo](../vsto/media/playvideo.gif "link do wideo") Aby zapoznać się z pokrewną [prezentacją wideo, zobacz Jak mogę: Utworzyć listę w programie Excel, która jest połączona z listą programu SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
-## <a name="map-columns"></a>Mapowanie kolumn
+## <a name="map-columns"></a>Mapuj kolumny
 
-### <a name="to-map-a-data-table-to-columns-in-a-list"></a>Do mapowania kolumn na liście tabeli danych
+### <a name="to-map-a-data-table-to-columns-in-a-list"></a>Aby zmapować tabelę danych na kolumny na liście
 
-1. Utwórz <xref:System.Data.DataTable> na poziomie klasy.
+1. <xref:System.Data.DataTable> Utwórz na poziomie klasy.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2. Dodawanie przykładowe kolumny i dane w `Startup` program obsługi zdarzeń `Sheet1` klasy (w projekcie poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku narzędzi VSTO).
+2. Dodaj przykładowe kolumny i dane do `Startup` procedury obsługi `Sheet1` zdarzeń klasy (w projekcie na poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody i przekazać w nazwach kolumn w kolejności, powinny one zostać wyświetlone. Obiekt listy, który zostanie powiązany do nowo utworzonego <xref:System.Data.DataTable>, ale kolejność kolumn w obiekcie listy różnią się od kolejności, pojawiają się na <xref:System.Data.DataTable>.
+3. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metodę i przekaż nazwy kolumn w kolejności, w jakiej powinny się pojawiać. Obiekt list zostanie powiązany z nowo utworzonym <xref:System.Data.DataTable>, ale kolejność kolumn w obiekcie list będzie różna od kolejności, w której <xref:System.Data.DataTable>się znajdują.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
 
-## <a name="specify-unmapped-columns"></a>Określ kolumny niezamapowane
- Podczas mapowania kolumn <xref:System.Data.DataTable>, można również określić, że niektóre kolumny ma nie zostać powiązana z danych, przekazując ciąg pusty. Nową kolumnę, która nie jest powiązany z danymi jest dodawane do <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli.
+## <a name="specify-unmapped-columns"></a>Określ niezamapowane kolumny
+ Podczas mapowania kolumn do <xref:System.Data.DataTable>, można również określić, że niektóre kolumny nie powinny być powiązane z danymi przez przekazanie pustego ciągu. Nowa kolumna, która nie jest powiązana z danymi, jest następnie dodawana do <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki.
 
-### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>Aby określić niezamapowaną kolumnę, gdy mapowanie kolumn ListObject
+### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>Aby określić niezamapowanej kolumny podczas mapowania kolumn ListObject
 
-1. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody i przekazać w nazwach kolumn w kolejności, powinny one zostać wyświetlone. Użyj pustego ciągu, aby wskazać, gdzie jest dodać niezamapowaną kolumnę; w tym przypadku między kolumny title i ostatniej kolumnie Nazwa.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metodę i przekaż nazwy kolumn w kolejności, w jakiej powinny się pojawiać. Użyj pustego ciągu, aby wskazać miejsce dodania niezamapowanej kolumny; w tym przypadku między kolumną tytuł i kolumną nazwisko.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]
      [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]
 
 ## <a name="compile-the-code"></a>Skompilować kod
- Ten przykład kodu zakłada, masz istniejącą <xref:Microsoft.Office.Tools.Excel.ListObject> o nazwie `list1` w arkuszu, w której występuje ten kod.
+ W tym przykładzie kodu założono, że <xref:Microsoft.Office.Tools.Excel.ListObject> masz `list1` istniejącą nazwę w arkuszu, w którym znajduje się ten kod.
 
 ## <a name="see-also"></a>Zobacz także
-- [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
-- [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Instrukcje: Wypełnianie formantów ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Instrukcje: Wypełnij kontrolki ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject — formant](../vsto/listobject-control.md)

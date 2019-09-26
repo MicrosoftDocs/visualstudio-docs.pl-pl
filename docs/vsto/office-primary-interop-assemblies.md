@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551686"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253741"
 ---
 # <a name="office-primary-interop-assemblies"></a>podstawowe zestawy międzyoperacyjne pakietu Office
 
@@ -37,7 +37,7 @@ W tym temacie opisano następujące aspekty używania Microsoft Office zestawów
 
 - [Pełna lista podstawowych zestawów międzyoperacyjnych dla aplikacji Microsoft Office](#pialist)
 
-Aby uzyskać więcej informacji na temat podstawowych zestawów międzyoperacyjnych, zobacz [podstawowe zestawy](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))międzyoperacyjności.
+Aby uzyskać więcej informacji na temat podstawowych zestawów międzyoperacyjnych, zobacz [podstawowe zestawy międzyoperacyjności](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
 
 <a name="separateassemblies"></a>
 
@@ -66,7 +66,7 @@ Począwszy od programu Visual Studio 2017, te kopie zestawów PIA są instalowan
 - (lub *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* w 64-bitowych systemach operacyjnych)
 
 > [!NOTE]
-> W przypadku starszych wersji programu Visual Studio te zestawów Pia zostaną zainstalowane do folderu Visual Studio Tools dla Office\PIA w folderze *% ProgramFiles% dla tej wersji programu Visual Studio.  
+> W przypadku starszych wersji programu Visual Studio te zestawów Pia zostaną zainstalowane do folderu Visual Studio Tools dla Office\PIA w folderze *% ProgramFiles% dla tej wersji programu Visual Studio.
 > Na przykład: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools dla Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Podstawowe zestawy międzyoperacyjności w globalnej pamięci podręcznej zestawów
@@ -121,7 +121,7 @@ Poniższa tabela zawiera listę podstawowych zestawów międzyoperacyjnych, któ
 
 ### <a name="binding-redirect-assemblies"></a>Zestawy przekierowania powiązań
 
-W przypadku instalowania i rejestrowania pakietu Office zestawów PIA w globalnej pamięci podręcznej zestawów (z pakietem Office lub przez zainstalowanie pakietu redystrybucyjnego dla zestawów PIA) zestawy przekierowania powiązań również są instalowane tylko w globalnej pamięci podręcznej zestawów. Te zestawy ułatwiają upewnienie się, że poprawna wersja podstawowych zestawów międzyoperacyjnych została załadowana w czasie wykonywania.
+W przypadku instalowania i rejestrowania pakietu Office zestawów PIA w globalnej pamięci podręcznej zestawów (z pakietem Office lub przez zainstalowanie pakietu redystrybucyjnego dla zestawów PIA) zestawy przekierowania powiązań również są instalowane tylko w globalnej pamięci podręcznej zestawów. Te zestawy pomagają upewnić się, że poprawna wersja podstawowych zestawów międzyoperacyjnych jest załadowana w czasie wykonywania.
 
 Na przykład, gdy rozwiązanie, które odwołuje [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] się do zestawu, działa na komputerze, [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] który ma wersję tego samego podstawowego zestawu międzyoperacyjnego, zestaw [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] przekierowania powiązania instruuje środowisko uruchomieniowe [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] , aby załadować wersja podstawowego zestawu międzyoperacyjnego.
 

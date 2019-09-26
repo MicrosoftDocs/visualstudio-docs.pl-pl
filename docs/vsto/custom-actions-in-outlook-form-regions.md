@@ -13,45 +13,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951158"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254443"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Niestandardowe akcje w regionach formularzy programu Outlook
-  Akcje wyświetlanie przycisków, które umożliwiają użytkownikom odpowiedzieć na element programu Microsoft Office Outlook. Na przykład, aby odpowiedzieć elementu poczty, użytkownik kliknie **odpowiedzi**, **Odpowiedz wszystkim**, lub **do przodu** przyciski akcji. Każda z tych akcji tworzy nowy element poczty i wypełni pola elementu przy użyciu informacji z oryginalnego elementu.
+  Akcje Wyświetla przyciski umożliwiające użytkownikom odpowiadanie na Microsoft Office element programu Outlook. Na przykład aby odpowiedzieć na element poczty e-mail, użytkownicy klikają przyciski **Odpowiedz**, **Odpowiedz wszystkim**lub **Prześlij dalej** . Każda z tych akcji tworzy nowy element poczty i wypełnia pola elementu przy użyciu informacji z oryginalnego elementu.
 
- Można utworzyć niestandardową akcję, która otwiera dowolnego rodzaju elementu programu Outlook. Na przykład można dodać niestandardową akcję, która zostanie otwarty nowy element terminu lub zadania. Ustaw właściwości niestandardowej akcji lub użyj niestandardowego kodu, aby wypełnić pola nowego elementu. Akcje niestandardowe są wyświetlane w **akcje niestandardowe** listy rozwijanej elementu, który jest otwarty w oknie inspektora programu Outlook.
+ Można utworzyć akcję niestandardową, która otwiera dowolny rodzaj elementu programu Outlook. Na przykład można dodać akcję niestandardową, która otwiera nowy termin lub element zadania. Ustaw właściwości akcji niestandardowej lub użyj kodu niestandardowego, aby wypełnić pola nowego elementu. Akcje niestandardowe są wyświetlane na liście rozwijanej **Akcje niestandardowe** elementu, który jest otwarty w oknie Inspektora programu Outlook.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Dodawanie akcji niestandardowych do regionu formularza
- Aby dodać akcję niestandardową do regionu formularza, należy użyć **akcje niestandardowe** okno dialogowe. Możesz otworzyć **akcje niestandardowe** okno dialogowe po wybraniu regionu formularza w **Eksploratora rozwiązań**, coraz **manifestu** w węźle **właściwości Okno**, wybierając opcję **CustomActions** właściwości, a następnie klikając przycisk wielokropka (![przenośnych elipsy projektanta ASP.NET](../sharepoint/media/mwellipsis.gif "przenośnych ASP.NET Projektant elipsy")).
+ Aby dodać akcję niestandardową do regionu formularza, użyj okna dialogowego **Akcje niestandardowe** . Możesz otworzyć okno dialogowe **Akcje niestandardowe** , wybierając region formularza w **Eksplorator rozwiązań**, rozwijając węzeł **manifestu** w **oknie właściwości**, wybierając Właściwość **CustomActions** , a następnie klikając przycisk przycisk wielokropka (![ASP.net Mobile Designer elipsa](../sharepoint/media/mwellipsis.gif "ASP.net Mobile Designer Elipsa")).
 
- Możesz użyć **akcje niestandardowe** okno dialogowe, aby określić *docelowe formularza*. Formularz docelowy jest formularz, który jest wyświetlany, gdy użytkownik wykonuje akcji niestandardowej.
+ Możesz użyć okna dialogowego **Akcje niestandardowe** , aby określić *formularz docelowy*. Formularz docelowy jest formularz, który pojawia się, gdy użytkownik wykonuje akcję niestandardową.
 
- Można również użyć **akcje niestandardowe** okno dialogowe, aby określić, jak informacje z oryginalnego elementu pojawią się w formularzu docelowym.
+ Możesz również użyć okna dialogowego **Akcje niestandardowe** , aby określić, jak informacje z oryginalnego elementu mają być wyświetlane w formularzu docelowym.
 
- W poniższej tabeli opisano właściwości, które są dostępne w **akcje niestandardowe** okno dialogowe.
+ W poniższej tabeli opisano właściwości, które są dostępne w oknie dialogowym **Akcje niestandardowe** .
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**AddressLike**|Określa, jak formularz docelowy problem zostanie rozwiązany.|
-|**Body**|Określa, jak treści elementu jest dołączany do formularza docelowego.|
-|**Włączone**|Wskazuje, czy włączono akcji niestandardowej. Jeśli ta właściwość jest ustawiona **false**, akcji niestandardowej jest wyłączona.|
-|**— Metoda**|Określa typ odpowiedzi jest dostępne podczas wykonywania akcji niestandardowej. Akcja niestandardowa można wysyłać formularza, otwórz formularz lub monitować użytkownika, czy chcą wysłać lub Otwórz formularz.|
-|**Nazwa**|Określa nazwę wewnętrzną, który można odwoływać się do akcji niestandardowej w kodzie.|
-|**ShowOnRibbon**|Wskazuje, czy mają być wyświetlane akcji niestandardowej na Wstążce oryginalnego elementu.|
-|**SubjectPrefix**|Określa tekst, który jest wstawiany na początku tego tematu formularza docelowego.|
-|**TargetForm**|Określa nazwę klasy wiadomości w postaci docelowego. Na przykład wpisz **IPM. Zadanie** do otwierania formularza zadania.|
-|**Tytuł**|Określa etykietę przycisk akcji niestandardowej.|
+|**AddressLike**|Określa sposób, w jaki zostanie rozkierowany formularz docelowy.|
+|**Body**|Określa sposób, w jaki treść oryginalnego elementu jest dołączana do formularza docelowego.|
+|**Dostępny**|Wskazuje, czy akcja niestandardowa jest włączona. Jeśli ta właściwość ma wartość **Fałsz**, Akcja niestandardowa zostanie wyłączona.|
+|**— Metoda**|Określa typ odpowiedzi dostępnej podczas wykonywania akcji niestandardowej. Akcja niestandardowa umożliwia wysłanie formularza, otwarcie formularza lub wyświetlenie monitu o potwierdzenie lub otwarcie formularza.|
+|**Nazwa**|Określa nazwę wewnętrzną, która może być używana do odwoływania się do tej akcji niestandardowej w kodzie.|
+|**ShowOnRibbon**|Wskazuje, czy akcja niestandardowa ma być wyświetlana na Wstążce oryginalnego elementu.|
+|**SubjectPrefix**|Określa tekst wstawiany na początku wiersza tematu formularza docelowego.|
+|**TargetForm**|Określa nazwę klasy komunikatu w formularzu docelowym. Na przykład wpisz **IPM. Zadanie** umożliwiające otwarcie formularza zadania.|
+|**Tytuł**|Określa etykietę przycisku akcji niestandardowej.|
 
-## <a name="customize-a-custom-action-at-runtime"></a>Dostosuj akcję niestandardową, w czasie wykonywania
- Można również dodać zachowania do akcji niestandardowej przy użyciu kodu. Na przykład można dodać kod, który przyjmuje nazwy adresatów wiadomości e-mail i dodaje tych nazw jako uczestnicy nowego elementu terminu. Aby to zrobić, należy obsługiwać [Akcja niestandardowa](/office/vba/api/Outlook.MailItem.CustomAction) zdarzenia [obiektu MailItem](/office/vba/api/Outlook.MailItem).
+## <a name="customize-a-custom-action-at-run-time"></a>Dostosuj akcję niestandardową w czasie wykonywania
+ Możesz również dodać zachowanie do akcji niestandardowej przy użyciu kodu. Można na przykład dodać kod, który przyjmuje nazwy adresatów poczty e-mail i dodaje te nazwy jako uczestników w nowym elemencie terminu. [W tym](/office/vba/api/Outlook.MailItem.CustomAction) celu należy obsłużyć zdarzenie " [MailItem" obiektu](/office/vba/api/Outlook.MailItem).
 
 ## <a name="see-also"></a>Zobacz także
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
-- [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

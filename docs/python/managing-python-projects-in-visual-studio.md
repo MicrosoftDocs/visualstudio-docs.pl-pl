@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536340"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254213"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -31,26 +31,26 @@ Program Visual Studio udostępnia wiele szablonów projektu języka Python, aby 
 
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Visual Studio 2019 obsługuje otwieranie folderu zawierającego kod Python i uruchamianie kodu bez tworzenia plików projektu i rozwiązania Visual Studio. Aby uzyskać więcej informacji, zobacz [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md). Istnieją jednak korzyści z korzystania z pliku projektu, zgodnie z opisem w tej sekcji.
+> Program Visual Studio 2019 obsługuje Otwieranie folderu zawierającego kod języka Python i uruchamianie tego kodu bez tworzenia plików projektu i rozwiązania programu Visual Studio. Aby uzyskać więcej informacji, [zobacz Szybki Start: Otwórz i uruchom kod w języku Python w](quickstart-05-python-visual-studio-open-folder.md)folderze. Istnieją jednak zalety korzystania z pliku projektu, zgodnie z opisem w tej sekcji.
 ::: moniker-end
 
 > [!Tip]
-> Bez projektu wszystkie wersje programu Visual Studio działać z kodu w języku Python. Można na przykład otwórz Python pliku przez siebie i korzystaj z automatycznego uzupełniania IntelliSense i debugowanie (klikając prawym przyciskiem myszy w edytorze i wybierając polecenie **rozpocząć debugowanie**). Ponieważ taki kod zawsze używa globalnego środowiska domyślnego, jednak mogą pojawić się błędy lub nieprawidłowe uzupełnienia Jeśli kod jest przeznaczona do innego środowiska. Ponadto program Visual Studio analizuje wszystkich plików i pakietów w folderze, z którego pojedynczy plik jest otwarty, może zużywać znaczną ilość czasu procesora CPU.
+> Bez projektu wszystkie wersje programu Visual Studio działają prawidłowo z kodem języka Python. Można na przykład otwórz Python pliku przez siebie i korzystaj z automatycznego uzupełniania IntelliSense i debugowanie (klikając prawym przyciskiem myszy w edytorze i wybierając polecenie **rozpocząć debugowanie**). Ponieważ taki kod zawsze używa globalnego środowiska domyślnego, jednak mogą pojawić się błędy lub nieprawidłowe uzupełnienia Jeśli kod jest przeznaczona do innego środowiska. Ponadto program Visual Studio analizuje wszystkich plików i pakietów w folderze, z którego pojedynczy plik jest otwarty, może zużywać znaczną ilość czasu procesora CPU.
 >
 > Będzie polegać na utworzenie projektu programu Visual Studio z istniejącego kodu, zgodnie z opisem w [Tworzenie projektu z istniejących plików](#create-project-from-existing-files).
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Szczegółowe informacje: Korzystanie z kontroli źródła z projektów języka Python](https://youtu.be/Aq8eqApnugM) (witrynie youtube.com, 8 m 55s). |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Głębokie szczegółowe: Używaj kontroli źródła z projektami](https://youtu.be/Aq8eqApnugM) języka Python (YouTube.com, 8 m 55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Dodaj pliki, Przypisz plik startowy i ustaw środowisk
 
 Podczas opracowywania aplikacji, zazwyczaj konieczne dodanie nowych plików o różnych typach do projektu. Dodawanie takich plików jest wykonywane przez kliknięcie prawym przyciskiem myszy projekt i wybierając polecenie **Dodaj** > **istniejący element** za pomocą którego przeglądania w poszukiwaniu pliku do dodania, lub **Dodaj**  >  **Nowy element**, co spowoduje uruchomienie okna dialogowego za pomocą różnych szablonów elementów. Zgodnie z opisem na [elementu szablony](python-item-templates.md) odwołania, opcje obejmują pustych plików języka Python, klasa języka Python, testu jednostki i różne pliki powiązane z aplikacji sieci web. Możesz eksplorować tych opcji z projektem testowym, aby dowiedzieć się, co jest dostępne w używanej wersji programu Visual Studio.
 
-Każdy projekt języka Python ma jeden plik startowy przypisane, wyświetlany czcionką pogrubioną w **Eksploratora rozwiązań**. Plik startowy jest plik który jest uruchamiany podczas uruchamiania debugowania (**F5** lub **debugowania** > **Rozpocznij debugowanie**) lub po uruchomieniu projektu **Interactive** okna (**Shift**+**Alt**+**F5** lub **debugowania**  >  **Wykonywania projektów w języku Python interaktywne**). Aby je zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako element startowy** (lub **Ustaw jako plik startowy** w starszych wersjach programu Visual Studio).
+Każdy projekt języka Python ma jeden plik startowy przypisane, wyświetlany czcionką pogrubioną w **Eksploratora rozwiązań**. Plik startowy jest plik który jest uruchamiany podczas uruchamiania debugowania (**F5** lub **debugowania** > **Rozpocznij debugowanie**) lub po uruchomieniu projektu **Interactive** okna (**Shift**+**Alt**+**F5** lub **debugowania**  >  **Wykonywania projektów w języku Python interaktywne**). Aby to zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz polecenie **Ustaw jako element startowy** (lub **Ustaw jako plik startowy** we wcześniejszych wersjach programu Visual Studio).
 
 > [!Tip]
-> Jeśli usuniesz plik startowy wybranego z projektu, a nie wybieraj nowe jednego, programu Visual Studio nie może ustalić, jakie plik w języku Python na początek z podczas próby uruchomienia projektu. W takim przypadku Visual Studio 2017 w wersji 15.6 i nowszych wskazuje błąd; wcześniejszych wersjach albo otworzyć okno danych wyjściowych z interpreter języka Python, uruchamiania lub zobacz okno dane wyjściowe są wyświetlane, ale zniknąć niemal natychmiast. Jeśli wystąpi dowolne z tych zachowań, sprawdź, czy plik startowy przypisane.
+> Jeśli wybrany plik startowy zostanie usunięty z projektu i nie wybierzesz nowego, program Visual Studio nie wie, w jakim pliku Python rozpoczyna się przy próbie uruchomienia projektu. W takim przypadku Visual Studio 2017 w wersji 15.6 i nowszych wskazuje błąd; wcześniejszych wersjach albo otworzyć okno danych wyjściowych z interpreter języka Python, uruchamiania lub zobacz okno dane wyjściowe są wyświetlane, ale zniknąć niemal natychmiast. Jeśli wystąpi dowolne z tych zachowań, sprawdź, czy plik startowy przypisane.
 >
 > Jeśli chcesz nie zamykaj okna dane wyjściowe jakiegokolwiek powodu, kliknij prawym przyciskiem myszy projekt, wybierz opcję **właściwości**, wybierz opcję **debugowania** kartę, a następnie dodaj `-i` do **Interpreter argumentów**  pola. Ten argument powoduje, że interpreter przejść do trybu interaktywnego, po zakończeniu działania programu, a tym samym utrzymywanie okna otwarte do momentu wprowadzenia **Ctrl**+**Z**  >  **Enter** aby wyjść.
 
@@ -58,12 +58,12 @@ Każdy projekt języka Python ma jeden plik startowy przypisane, wyświetlany cz
 Nowy projekt zawsze jest skojarzony z domyślnym środowisku Python globalnego. Aby skojarzyć projekt z innego środowiska (w tym środowisk wirtualnych), kliknij prawym przyciskiem myszy **środowiska Python** węzła projektu, wybierz opcję **środowiska Python Dodaj/Usuń**, i Wybierz te, które chcesz.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Nowy projekt zawsze jest skojarzony z domyślnym środowisku Python globalnego. Aby skojarzyć projekt z innego środowiska (w tym środowisk wirtualnych), kliknij prawym przyciskiem myszy **środowiska Python** węzła projektu, wybierz opcję **Dodaj środowiska...** i wybierz te, które mają. Można również użyć formantu listy rozwijanej środowisk na pasku narzędzi, aby wybrać i środowisko lub Dodaj do projektu.
+Nowy projekt zawsze jest skojarzony z domyślnym środowisku Python globalnego. Aby skojarzyć projekt z innym środowiskiem (w tym środowiskami wirtualnymi), kliknij prawym przyciskiem myszy węzeł **środowiska Python** w projekcie, wybierz polecenie **Dodaj środowisko**i wybierz odpowiednie. Możesz również użyć kontrolki lista rozwijana środowiska na pasku narzędzi, aby wybrać środowisko i dodać kolejną do projektu.
 
-![Dodaj polecenie środowiska na pasku narzędzi języka Python](media/environments/environments-toolbar-2019.png)
+![Polecenie Dodaj środowisko na pasku narzędzi języka Python](media/environments/environments-toolbar-2019.png)
 ::: moniker-end
 
-Zmiany aktywnego środowiska, kliknij prawym przyciskiem myszy żądany środowiska w **Eksploratora rozwiązań** i wybierz **aktywować środowisko** jak pokazano poniżej. Aby uzyskać więcej informacji, zobacz [wybierz środowisko dla projektu](selecting-a-python-environment-for-a-project.md).
+Aby zmienić aktywne środowisko, kliknij prawym przyciskiem myszy odpowiednie środowisko w **Eksplorator rozwiązań** a następnie wybierz pozycję **Aktywuj środowisko** , jak pokazano poniżej. Aby uzyskać więcej informacji, zobacz [wybierz środowisko dla projektu](selecting-a-python-environment-for-a-project.md).
 
 ![Aktywowanie środowisko na potrzeby projektu języka Python](media/projects-activate-environment.png)
 
@@ -75,7 +75,7 @@ Program Visual Studio zapewnia wiele sposobów konfigurowania projektu języka P
 
 ![Okno dialogowe Nowy projekt z szablonami języka Python](media/projects-new-project-dialog.png)
 
-Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual Studio 2017 i nowsze (nie wszystkie szablony są dostępne we wszystkich poprzednich wersjach):
+Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual Studio 2017 i nowszych (nie wszystkie szablony są dostępne we wszystkich poprzednich wersjach):
 
 | Szablon | Opis |
 | --- | --- |
@@ -88,7 +88,7 @@ Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual 
 | **Strony sieci Web w technologii Silverlight v Ironpythonu** | Projekt IronPython, który działa w przeglądarce, za pomocą programu Silverlight. Kod Python aplikacji znajduje się na stronie sieci web jako skrypt. Tag skryptu standardowy ściąga kodu JavaScript, która inicjuje IronPython działają w ramach programu Silverlight, z którego kodu w języku Python mogą wchodzić w interakcje z DOM. |
 | **IronPython Windows Forms aplikacji** | Struktury projektu, IronPython przy użyciu interfejsu użytkownika tworzone za pomocą interfejsu Windows Forms przy użyciu kodu. Aplikacja jest uruchamiana bez wyświetlania konsoli. |
 | **Tło w aplikacji (IoT)** | Obsługuje wdrażanie projektów języka Python do uruchamiania jako usługi w tle na urządzeniach. Odwiedź stronę [Centrum deweloperów systemu Windows IoT](https://dev.windows.com/en-us/iot) Aby uzyskać więcej informacji. |
-| **Modułu rozszerzenia języka Python** | Ten szablon jest wyświetlany w obszarze Visual C++ Jeśli zainstalowałeś **Python natywne narzędzia programistyczne** z obciążeniem Python w programie Visual Studio 2017 lub nowszego (zobacz [instalacji](installing-python-support-in-visual-studio.md)). Zapewnia struktury podstawowe rozszerzenia C++ biblioteki DLL, podobnie jak opisane na [Tworzenie rozszerzenia C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md). |
+| **Modułu rozszerzenia języka Python** | Ten szablon jest wyświetlany w C++ obszarze Wizualizacja, jeśli zainstalowano **natywne narzędzia programistyczne** języka Python z obciążeniem w języku Python w programie Visual Studio 2017 lub nowszym (zobacz [Instalacja](installing-python-support-in-visual-studio.md)). Zapewnia struktury podstawowe rozszerzenia C++ biblioteki DLL, podobnie jak opisane na [Tworzenie rozszerzenia C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md). |
 
 > [!Note]
 > Ponieważ interpretacji języka Python, projektów języka Python w programie Visual Studio nie generują autonomicznego pliku wykonywalnego, podobnie jak inne projekty skompilowanych języka (C#, na przykład). Aby uzyskać więcej informacji, zobacz [pytań i odpowiedzi](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
@@ -104,7 +104,7 @@ Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual 
 
 ## <a name="linked-files"></a>Połączone pliki
 
-Połączone pliki są pliki, które są przenoszone do projektu, ale zazwyczaj znajdują się poza folderów projektu aplikacji. Pojawiają się na **Eksploratora rozwiązań** jako ikonę nałożone skrót normalnej plików: ![Ikona połączonego pliku](media/projects-linked-file-icon.png)
+Połączone pliki są pliki, które są przenoszone do projektu, ale zazwyczaj znajdują się poza folderów projektu aplikacji. Są one wyświetlane w **Eksplorator rozwiązań** jako normalne pliki ze zastąpioną ikoną skrótu: ![Ikona połączonego pliku](media/projects-linked-file-icon.png)
 
 Połączone pliki są określone w *.pyproj* plików przy użyciu `<Compile Include="...">` elementu. Połączone pliki są użycie ścieżki względnej poza struktury katalogów, jawnych lub niejawnych użycie ścieżki w ramach **Eksploratora rozwiązań**:
 
@@ -143,7 +143,7 @@ Odwołania do rozszerzenia zazwyczaj wskazują współzależności między proje
 
 Odwołanie do *.pyd* plik umożliwia funkcji IntelliSense dla wygenerowanego modułu. Program Visual Studio ładuje *.pyd* mezzanine do interpretera języka Python i introspects jego typy i funkcje. Ponadto próbuje analizowanie ciągów dokumentacji funkcji w celu zapewnienia pomocy dotyczącej sygnatur.
 
-Jeśli w dowolnym momencie modułu rozszerzenia zostaną zaktualizowane na dysku, Visual Studio zerwano modułu w tle. Ta akcja nie ma wpływu na zachowanie środowiska uruchomieniowego, ale niektóre ukończenia nie są dostępne do czasu ukończenia analizy.
+Jeśli w dowolnym momencie modułu rozszerzenia zostaną zaktualizowane na dysku, Visual Studio zerwano modułu w tle. Ta akcja nie ma wpływu na zachowanie w czasie wykonywania, ale niektóre uzupełniania nie są dostępne do czasu zakończenia analizy.
 
 Również może być konieczne dodanie [ścieżki wyszukiwania](search-paths.md) do folderu zawierającego modułu.
 
@@ -167,5 +167,8 @@ from System.Windows.Forms import *
 ### <a name="webpi-projects"></a>Projekty Instalatora WebPI
 
 Możesz dodać odwołania do wpisów dotyczących produktu Instalatora WebPI wdrożenia na Microsoft Azure Cloud Services, na którym można zainstalować dodatkowe składniki za pośrednictwem źródle danych Instalatora WebPI. Domyślnie wyświetlane źródło danych jest specyficzny dla języka Python i obejmuje Django, języka CPython i inne podstawowe składniki. Możesz wybrać własne źródło danych również, jak pokazano poniżej. Podczas publikowania w systemie Microsoft Azure, zadanie instalacji instaluje wszystkie produkty której dotyczy odwołanie.
+
+> [!IMPORTANT]
+> Projekty Instalatora WebPI nie są dostępne w programie Visual Studio 2017 lub Visual Studio 2019.
 
 ![Odwołania Instalatora WebPI](media/projects-webPI-components.png)

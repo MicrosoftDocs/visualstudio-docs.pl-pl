@@ -15,62 +15,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438816"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254587"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Instrukcje: Programowe Włączanie ochrony arkuszy
-  Funkcja ochrony w programie Microsoft Office Excel uniemożliwia użytkownikom i kod modyfikowanie obiektów w arkuszu. Domyślnie wszystkie komórki są blokowane po włączeniu ochrony.
+  Funkcja ochrony w programie Microsoft Office Excel pomaga zapobiegać modyfikowaniu obiektów w arkuszu przez użytkowników i kod. Domyślnie wszystkie komórki są blokowane po włączeniu ochrony.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- W dostosowaniach na poziomie dokumentu można chronić arkuszy, za pomocą projektanta programu Excel. Arkusz umożliwia również ochronę programowo w czasie wykonywania w dowolnym typem projektu.
+ W przypadku dostosowań na poziomie dokumentu można chronić arkusze przy użyciu programu Excel Designer. Można również programowo chronić arkusz w czasie wykonywania w dowolnym typie projektu.
 
 > [!NOTE]
-> Nie można dodać kontrolek formularzy Windows Forms obszary arkusza, które są chronione.
+> Nie można dodać formantów Windows Forms do obszarów arkusza, które są chronione.
 
-## <a name="use-the-designer"></a>Za pomocą projektanta
+## <a name="use-the-designer"></a>Korzystanie z narzędzia Projektant
 
-### <a name="to-protect-a-worksheet-in-the-designer"></a>Aby chronić arkusz w Projektancie
+### <a name="to-protect-a-worksheet-in-the-designer"></a>Aby chronić arkusz w projektancie
 
-1. W **zmiany** grupy **przeglądu** kliknij pozycję **Chroń arkusz**.
+1. W grupie **zmiany** na karcie **Przegląd** kliknij pozycję **Chroń arkusz**.
 
-    **Chroń arkusz** pojawi się okno dialogowe. Można ustawić hasła i opcjonalnie określić pewne akcje, które użytkownicy mogą wykonywać na arkusz, takie jak format komórki lub wstawianie wierszy.
+    Zostanie wyświetlone okno dialogowe **Ochrona arkusza** . Można ustawić hasło i opcjonalnie określić pewne akcje, które użytkownicy mogą wykonywać w arkuszu, takie jak formatowanie komórek lub wstawianie wierszy.
 
-   Możesz również zezwolić użytkownikom edytowanie określonych zakresów w arkuszach chronionych.
+   Możesz również umożliwić użytkownikom edytowanie określonych zakresów w chronionych arkuszach.
 
-### <a name="to-allow-editing-in-specific-ranges"></a>Aby umożliwić edycję w określonych zakresach
+### <a name="to-allow-editing-in-specific-ranges"></a>Aby zezwolić na edytowanie w określonych zakresach
 
-1. W **zmiany** grupy **przeglądu** kliknij pozycję **Zezwalanie użytkownikom na edycję zakresów**.
+1. W grupie **zmiany** na karcie **Przegląd** kliknij pozycję **zezwól użytkownikom na edytowanie zakresów**.
 
-     **Zezwalanie użytkownikom na edycję zakresów** pojawi się okno dialogowe. Można określić zakresy, które są odblokowane, przy użyciu hasła i użytkowników, którzy mogą edytować zakresów, bez użycia hasła.
+     Zostanie wyświetlone okno dialogowe **Zezwalaj użytkownikom na edytowanie zakresów** . Można określić zakresy, które są odblokowane przy użyciu hasła, oraz użytkowników, którzy mogą edytować zakresy bez hasła.
 
-## <a name="use-code-at-runtime"></a>Użyj kodu w czasie wykonywania
- Poniższy kod ustawia hasło (przy użyciu zmiennej getPasswordFromUser, zawierającą uzyskanych od użytkownika hasła) i umożliwia sortowanie tylko.
+## <a name="use-code-at-run-time"></a>Użyj kodu w czasie wykonywania
+ Poniższy kod ustawia hasło (przy użyciu zmiennej getPasswordFromUser, która zawiera hasło uzyskane od użytkownika) i umożliwia tylko sortowanie.
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>Aby chronić arkusz przy użyciu kodu w dostosowaniu na poziomie dokumentu
 
-1. Wywołaj <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metoda arkusza. W tym przykładzie założono, że pracujesz z arkusza o nazwie `Sheet1`.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metodę arkusza. W tym przykładzie założono, że pracujesz z arkuszem o nazwie `Sheet1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
 
-### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>Aby chronić arkusz przy użyciu kodu w dodatku narzędzi VSTO
+### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>Aby chronić arkusz przy użyciu kodu w dodatku VSTO
 
-1. Wywołaj <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> metoda aktywnego arkusza.
+1. Wywołaj <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> metodę aktywnego arkusza.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Praca z arkuszami](../vsto/working-with-worksheets.md)
+- [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
 - [Instrukcje: Programowe usuwanie ochrony z arkuszy](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
-- [Instrukcje: Programowe Włączanie ochrony skoroszytów](../vsto/how-to-programmatically-protect-workbooks.md)
+- [Instrukcje: Programowo Chroń skoroszyty](../vsto/how-to-programmatically-protect-workbooks.md)
 - [Instrukcje: Programowe ukrywanie arkuszy](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
+- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Element hosta arkusza](../vsto/worksheet-host-item.md)
 - [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

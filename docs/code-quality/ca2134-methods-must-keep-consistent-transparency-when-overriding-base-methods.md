@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d1a1c37a1c39e07dd5b8754fef223bfa8ad7a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 517588826983613c71a74296914b1dfeb3eaa2b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71232278"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253316"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Metody muszą zachowywać spójną przezroczystość podczas nadpisywania metod bazowych
 
@@ -34,13 +34,13 @@ Reguła jest stosowana podczas zastępowania metody wirtualnej lub implementują
 ## <a name="rule-description"></a>Opis reguły
 Ta zasada jest uruchamiana przy próbie zmiany dostępu zabezpieczeń metody w celu dalszej części łańcucha dziedziczenia. Na przykład, jeśli metoda wirtualna w klasie bazowej jest przezroczysta lub bezpieczna-krytyczna, Klasa pochodna musi zastąpić ją metodą przezroczystą lub bezpieczną o krytycznym znaczeniu. Z drugiej strony, Jeśli wirtualna ma krytyczne zabezpieczenia, Klasa pochodna musi zastąpić ją metodą krytyczną zabezpieczeń. Ta sama reguła ma zastosowanie do implementowania metod interfejsu.
 
-Reguły przezroczystości są wymuszane, gdy kod jest kompilowany w trybie JIT zamiast w środowisku uruchomieniowym, dzięki czemu Obliczanie przezroczystości nie ma informacji o typie dynamicznym. W związku z tym wynik obliczeń przezroczystości musi być możliwy do ustalenia wyłącznie z typów statycznych, które są kompilowane JIT, niezależnie od typu dynamicznego.
+Reguły przezroczystości są wymuszane, gdy kod jest kompilowany w trybie JIT, a nie w czasie wykonywania, tak aby Obliczanie przejrzystości nie zawierało informacji o typie dynamicznym. W związku z tym wynik obliczeń przezroczystości musi być możliwy do ustalenia wyłącznie z typów statycznych, które są kompilowane JIT, niezależnie od typu dynamicznego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 Aby naprawić naruszenie tej zasady, Zmień przezroczystość metody zastępującej metodę wirtualną lub implementując interfejs, aby dopasować przezroczystość metody wirtualnej lub interfejsu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
-Nie pomijaj ostrzeżeń z tej reguły. Naruszenia tej reguły spowodują powstanie środowiska uruchomieniowego <xref:System.TypeLoadException> dla zestawów, które używają przejrzystości poziomu 2.
+Nie pomijaj ostrzeżeń z tej reguły. Naruszenia tej reguły powodują, że w czasie <xref:System.TypeLoadException> wykonywania dla zestawów, które używają przejrzystości poziomu 2.
 
 ## <a name="examples"></a>Przykłady
 

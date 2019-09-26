@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie wstążki do programu Outlook
+title: Dostosowywanie wstążki dla programu Outlook
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,42 +16,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58735a36afd48132f919e370da5e27fd0c42a0f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 646192baa6caaa33410b1dd8d17d1983f7d27e30
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956159"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255550"
 ---
-# <a name="customize-a-ribbon-for-outlook"></a>Dostosowywanie wstążki do programu Outlook
-  Podczas dostosowywania wstążki w programie Microsoft Outlook pakietu Office, należy rozważyć, gdzie Twoje niestandardowa Wstążka pojawią się w aplikacji. Program Outlook wyświetli wstążki w głównej aplikacji interfejsu użytkownika (UI), a w systemie windows, które otwierają, gdy użytkownicy wykonają pewnych zadań, takich jak tworzenie wiadomości e-mail. Tych aplikacji systemu windows są nazywane inspektorzy.
+# <a name="customize-a-ribbon-for-outlook"></a>Dostosowywanie wstążki dla programu Outlook
+  Po dostosowaniu wstążki w Microsoft Office Outlook należy rozważyć, gdzie wstążka niestandardowa będzie wyświetlana w aplikacji. W programie Outlook wstążka jest wyświetlana w głównym interfejsie użytkownika aplikacji oraz w oknach, które są otwierane, gdy użytkownicy wykonują określone zadania, takie jak tworzenie wiadomości e-mail. Te okna aplikacji są nazwanymi inspektorami.
 
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Używać projektanta wstążki w celu dostosowania wstążki w programie Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
+ ![link do wideo](../vsto/media/playvideo.gif "link do wideo") Aby zapoznać się z pokrewną [prezentacją wideo, zobacz Jak mogę: Korzystanie z projektanta wstążki w celu dostosowania wstążki w programie Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="add-a-custom-ribbon-to-the-main-application-ui"></a>Dodaj niestandardowe wstążki do głównego interfejsu użytkownika aplikacji
- Głównej aplikacji interfejsu użytkownika w programie Outlook jest nazywany Eksploratora. Jeśli używasz **Wstążka (Projektant graficzny)** elementu, można dodać wstążki do Eksploratora, klikając **RibbonType** właściwości wstążki w **właściwości** oknie a następnie wybierając **Microsoft.Outlook.Explorer**.
+## <a name="add-a-custom-ribbon-to-the-main-application-ui"></a>Dodaj niestandardową Wstążkę do interfejsu użytkownika aplikacji głównej
+ Interfejs użytkownika aplikacji głównej w programie Outlook nazywa się Eksploratorem. Jeśli używasz **wstążki (projektant graficzny)** , możesz dodać Wstążkę do Eksploratora, klikając Właściwość **wstążktype** wstążki w oknie **Właściwości** , a następnie wybierając pozycję **Microsoft. Outlook. Explorer**.
 
-## <a name="assign-a-ribbon-to-an-inspector"></a>Przypisz wstążki do Inspektor
- Inspektor, który chcesz dostosować, określając typ wstążki, który odnosi się do klasy wiadomości, aby inspektor możesz zidentyfikować.
+## <a name="assign-a-ribbon-to-an-inspector"></a>Przypisywanie wstążki do Inspektora
+ Można zidentyfikować inspektora, który ma zostać dostosowany przez określenie typu wstążki, który odpowiada klasie komunikatów dla inspektora.
 
- Jeśli używasz **Wstążka (Projektant graficzny)** element, kliknij przycisk **RibbonType** właściwości wstążki w **właściwości** okna, a następnie wybierz co najmniej jedną wstążki identyfikatory z Lista wartości.
+ Jeśli używasz **wstążki (projektant graficzny)** , kliknij właściwość **wstążka** wstążki w oknie **Właściwości** , a następnie wybierz co najmniej jeden identyfikator wstążki z listy wartości.
 
- Możesz dodać więcej niż jeden wstążki do projektu. Jeśli więcej niż jeden Wstążka udostępnia identyfikator wstążki, zastępują `CreateRibbonExtensibilityObject` method in Class metoda `ThisAddin` klasy projektu, aby określić, które wstążki do wyświetlenia w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md). Aby uzyskać więcej informacji o każdym typie wstążki, zobacz artykuł techniczny [dostosowania wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
+ Do projektu można dodać więcej niż jedną Wstążkę. Jeśli więcej niż jedna wstążka ma identyfikator wstążki, Zastąp `CreateRibbonExtensibilityObject` metodę `ThisAddin` w klasie projektu, aby określić, która wstążka ma być wyświetlana w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md). Aby uzyskać więcej informacji na temat poszczególnych typów wstążki, zobacz artykuł techniczny [Dostosowywanie wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
-## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Określ typ wstążki za pomocą XML wstążki
- Jeśli używasz **wstążki (XML)** , należy sprawdzić wartość *ribbonID* parametr <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody i zwrócenie odpowiedniego wstążki.
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Określ typ wstążki przy użyciu kodu XML wstążki
+ Jeśli używasz elementu **wstążki (XML)** , sprawdź wartość <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> parametru *ribbonID* w metodzie i zwróć odpowiednią Wstążkę.
 
- <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> Metody jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. *RibbonID* parametru jest ciąg, który identyfikuje programu Explorer lub określonego typu inspector. Aby uzyskać pełną listę możliwych wartości *ribbonID* parametru, zobacz artykuł techniczny [dostosowania wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
+ <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> Metoda jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. Parametr *ribbonID* jest ciągiem, który identyfikuje Eksploratora lub określony typ inspektora. Pełną listę możliwych wartości parametru *ribbonID* można znaleźć w artykule technicznym dotyczącym [dostosowywania wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
- Poniższy przykład kodu demonstruje sposób wyświetlania niestandardowej tylko we wstążce `Microsoft.Outlook.Mail.Compose` inspector. To narzędzie inspector, która zostanie otwarta, gdy użytkownik tworzy nową wiadomość e-mail. Na Wstążce, aby wyświetlić została określona w `GetResourceText()` metody, która jest generowany w **wstążki** klasy. Aby uzyskać więcej informacji na temat **wstążki** klasy, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).
+ Poniższy przykład kodu demonstruje, jak wyświetlić Wstążkę niestandardową tylko w `Microsoft.Outlook.Mail.Compose` Inspektorze. Jest to Inspektor otwierający się, gdy użytkownik tworzy nową wiadomość e-mail. Wstążka do wyświetlenia jest określona w `GetResourceText()` metodzie, która jest generowana w klasie **wstążki** . Aby uzyskać więcej informacji na temat klasy **wstążki** , zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Wstążka — omówienie](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)

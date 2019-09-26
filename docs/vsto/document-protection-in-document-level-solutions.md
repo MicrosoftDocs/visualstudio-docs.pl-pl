@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a894f1e0fb9d5e9d55f46c442bc975de0bd900d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872071"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253810"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Ochrona dokumentów w rozwiązaniach na poziomie dokumentu
   Funkcji ochrony programu Microsoft Office Word i Microsoft Office Excel można użyć w projektach na poziomie dokumentu. Te funkcje blokują nieautoryzowanym użytkownikom wprowadzanie zmian do chronionych części dokumentu.
@@ -30,7 +30,7 @@ ms.locfileid: "68872071"
 
  Za pomocą programu Excel można włączać i wyłączać ochronę, gdy skoroszyt jest otwarty w projektancie. Przy użyciu programu Word można włączyć ochronę tylko poza projektantem. W czasie wykonywania można programowo włączyć lub wyłączyć ochronę dla programów Word i Excel.
 
- Po włączeniu ochrony dokumentów w dokumencie otwartym w projektancie wszystkie formanty są usuwane z przybornika lub stają się niedostępne i nie można przeciągać niczego z okna **źródła danych** do dokumentu.
+ Po włączeniu ochrony dokumentów w dokumencie otwartym w projektancie wszystkie formanty są usuwane z **przybornika** lub stają się niedostępne i nie można przeciągać niczego z okna **źródła danych** do dokumentu.
 
 ## <a name="serverdocument-and-protected-documents"></a>ServerDocument i chronione dokumenty
  Jeśli dokument jest chroniony, nie można uzyskać dostępu do pamięci podręcznej danych spoza dokumentu. Nie można użyć <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy do pobierania lub manipulowania danymi, które są buforowane w chronionym dokumencie, lub przy użyciu innych metod <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.

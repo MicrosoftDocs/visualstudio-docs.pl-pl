@@ -12,26 +12,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27feb1c6a85740d8a9287ce3a2a47800595e178a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978930"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253780"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>Skoroszyt użyty do tworzenia tego projektu zawiera formanty ActiveX, których projektant nie może załadować
-  Ten błąd jest wyświetlany, gdy dodajesz formant do dokumentu programu Word lub arkusz programu Excel programowo, Zapisz dokument lub skoroszyt, a następnie utwórz nowe rozwiązanie poziomie dokumentu, w oparciu o dokument lub skoroszyt.
+  Ten błąd jest wyświetlany, gdy dodasz kontrolkę do dokumentu programu Word lub arkusza programu Excel programowo, Zapisz dokument lub skoroszyt, a następnie utwórz nowe rozwiązanie na poziomie dokumentu na podstawie dokumentu lub skoroszytu.
 
- Informacje opisujące typu zarządzanego formantu nie są zapisywane wraz z dokument lub skoroszyt. Podczas tworzenia nowego rozwiązania na podstawie ten dokument lub skoroszyt programu Visual Studio nie ma wystarczających informacji, aby załadować formantu w Projektancie elementu host.
+ Informacje opisujące typ zarządzany kontrolki nie są zapisywane wraz z dokumentem lub skoroszytem. Gdy tworzysz nowe rozwiązanie na podstawie tego dokumentu lub skoroszytu, program Visual Studio nie ma wystarczających informacji do załadowania formantu w projektancie elementów hosta.
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
 1. Otwórz dokument lub skoroszyt.
 
-2. Usuwanie kontrolek, które zostały dodane w czasie wykonywania. Można to zrobić, wybierając je w dokumencie lub skoroszycie i naciskając klawisz **Usuń** klucza.
+2. Usuń kontrolki, które zostały dodane w czasie wykonywania. Można to zrobić, zaznaczając je w dokumencie lub skoroszycie i naciskając klawisz **delete** .
 
-3. Utwórz rozwiązanie poziomu dokumentu oparte na dokumencie lub skoroszycie.
+3. Utwórz rozwiązanie na poziomie dokumentu na podstawie dokumentu lub skoroszytu.
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Instrukcje: Tworzenie projektów pakietu Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

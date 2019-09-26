@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cbade56f80d75e6ab8d735aaf586d45d2dedb42
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926671"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255687"
 ---
 # <a name="actions-pane-overview"></a>Przegląd okienka Akcje
   Okienko akcji to dostosowywalne okienko zadań **Akcje dokumentu** , które jest dołączone do określonego Microsoft Office dokumentu programu Word Microsoft Office lub skoroszytu programu Excel. Okienko akcje jest hostowane wewnątrz okienka zadań pakietu Office wraz z innymi wbudowanymi okienkami zadań, takimi jak okienko zadań **Źródło XML** w programie Excel lub w okienku zadania **Style i formatowanie** w programie Word. Aby zaprojektować interfejs użytkownika okienka akcji, można użyć formantów Windows Forms lub formantów WPF.
@@ -40,7 +40,7 @@ ms.locfileid: "68926671"
  [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
 
- Okienko akcje będzie widoczne w czasie wykonywania, gdy tylko jawnie dodasz do niego formant. Po wyświetleniu okienka Akcje można dynamicznie dodawać lub usuwać kontrolki w odpowiedzi na akcje użytkownika. Zazwyczaj należy dodać kod, aby wyświetlić okienko akcje w programie `Startup` `ThisDocument` obsługi zdarzeń lub `ThisWorkbook` tak, aby okienko akcje było widoczne, gdy użytkownik po raz pierwszy otworzy dokument. Może jednak być konieczne wyświetlenie okienka Akcje tylko w odpowiedzi na akcję użytkownika w dokumencie. Na przykład, można dodać kod do `Click` zdarzenia kontrolki dokumentu.
+ Okienko akcje będzie widoczne w czasie wykonywania, gdy tylko jawnie dodasz do niego kontrolkę. Po wyświetleniu okienka Akcje można dynamicznie dodawać lub usuwać kontrolki w odpowiedzi na akcje użytkownika. Zazwyczaj należy dodać kod, aby wyświetlić okienko akcje w programie `Startup` `ThisDocument` obsługi zdarzeń lub `ThisWorkbook` tak, aby okienko akcje było widoczne, gdy użytkownik po raz pierwszy otworzy dokument. Może jednak być konieczne wyświetlenie okienka Akcje tylko w odpowiedzi na akcję użytkownika w dokumencie. Na przykład, można dodać kod do `Click` zdarzenia kontrolki dokumentu.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Dodawanie wielu formantów do okienka Akcje
  Po dodaniu wielu formantów do okienka Akcje należy zgrupować kontrolki w kontrolce użytkownika, a następnie dodać kontrolkę użytkownika do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwości. Ten proces obejmuje następujące kroki:

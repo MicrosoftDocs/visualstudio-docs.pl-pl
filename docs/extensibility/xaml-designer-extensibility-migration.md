@@ -9,12 +9,12 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
-ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
+ms.openlocfilehash: 9f5085c7a655f186c3c8a4a6eecada8b440650cd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024555"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273216"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migracja rozszerzalności projektanta XAML
 
@@ -26,7 +26,7 @@ W programie Visual Studio 2019 Projektant XAML obsługuje dwie różne architekt
 
 ![Rozszerzalność — migracja — architektura](media/xaml-designer-extensibility-migration-architecture.png)
 
-Ze względu na to przejście do architektury rozszerzenia innych firm nie są już ładowane do tego samego procesu co biblioteki formantów innych firm. Rozszerzenia nie mogą już mieć bezpośrednich zależności od bibliotek formantów ani bezpośredniego dostępu do obiektów środowiska uruchomieniowego. Rozszerzenia, które zostały wcześniej napisano dla architektury izolacji projektanta przy użyciu interfejsu API *Microsoft. Windows. rozszerzalność. dll* , muszą zostać zmigrowane do nowego podejścia do pracy z architekturą izolacji powierzchni. W tym przypadku istniejące rozszerzenie będzie musiało zostać skompilowane pod kątem nowych zestawów interfejsów API rozszerzalności. Dostęp do typów kontroli środowiska uruchomieniowego za pomocą wystąpień [typeof](/dotnet/csharp/language-reference/keywords/typeof) lub uruchomieniowych musi zostać zamieniony lub usunięty, ponieważ biblioteki formantów są teraz ładowane w innym procesie.
+Ze względu na to przejście do architektury rozszerzenia innych firm nie są już ładowane do tego samego procesu co biblioteki formantów innych firm. Rozszerzenia nie mogą już mieć bezpośrednich zależności od bibliotek formantów ani bezpośredniego dostępu do obiektów w czasie wykonywania. Rozszerzenia, które zostały wcześniej napisano dla architektury izolacji projektanta przy użyciu interfejsu API *Microsoft. Windows. rozszerzalność. dll* , muszą zostać zmigrowane do nowego podejścia do pracy z architekturą izolacji powierzchni. W tym przypadku istniejące rozszerzenie będzie musiało zostać skompilowane pod kątem nowych zestawów interfejsów API rozszerzalności. Dostęp do typów kontroli czasu wykonywania za pośrednictwem [typeof](/dotnet/csharp/language-reference/keywords/typeof) lub wystąpień czasu wykonywania musi zostać zamieniony lub usunięty, ponieważ biblioteki formantów są teraz ładowane w innym procesie.
 
 ## <a name="new-extensibility-api-assemblies"></a>Nowe zestawy interfejsów API rozszerzalności
 
@@ -43,11 +43,11 @@ Zamiast używać rozszerzenia pliku *. Design. dll* , nowe rozszerzenia powierzc
 
 Chociaż biblioteki formantów innych firm są kompilowane dla rzeczywistego docelowego środowiska uruchomieniowego (.NET Core lub platformy UWP), rozszerzenie *. DesignTools. dll* powinno być zawsze kompilowane jako zestaw .NET Framework.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Oddziel Tabele atrybutów od typów środowiska uruchomieniowego
+## <a name="decouple-attribute-tables-from-run-time-types"></a>Oddziel Tabele atrybutów od typów czasu wykonywania
 
 Model rozszerzalności izolacji powierzchni nie zezwala na używanie rozszerzeń w przypadku rzeczywistych bibliotek kontroli i dlatego rozszerzenia nie mogą odwoływać się do typów z biblioteki formantów. Na przykład biblioteka. *DesignTools. dll* nie powinna być zależna od *biblioteki. dll*.
 
-Takie zależności były najczęściej używane podczas rejestrowania metadanych dla typów za pośrednictwem tabel atrybutów. Kod rozszerzenia, który odwołuje się do typów bibliotek kontroli bezpośrednio za pośrednictwem [typeof](/dotnet/csharp/language-reference/keywords/typeof) lub GetType, jest zastępowany w nowych interfejsach API przy użyciu nazw typów opartych na ciągach: [](/dotnet/visual-basic/language-reference/operators/gettype-operator)
+Takie zależności były najczęściej używane podczas rejestrowania metadanych dla typów za pośrednictwem tabel atrybutów. Kod rozszerzenia, który odwołuje się do typów bibliotek kontroli bezpośrednio za pośrednictwem [typeof](/dotnet/csharp/language-reference/keywords/typeof) lub [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) , jest zastępowany w nowych interfejsach API przy użyciu nazw typów opartych na ciągach:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -103,8 +103,9 @@ Obecnie obsługiwane są następujące dostawcy funkcji:
 * `ContextMenuProvider`
 * `ParentAdapter`
 * `PlacementAdapter`
+* `DesignModeValueProvider`jest obsługiwane z ograniczeniem, `TranslatePropertyValue` które zostanie wywołane `InvalidateProperty` za pośrednictwem lub podczas modyfikacji projektanta. Nie zostanie wywołana w przypadku zmodyfikowania w kodzie czasu wykonywania.
 
-Ponieważ dostawcy funkcji są obecnie załadowane w procesie innym niż rzeczywisty kod środowiska uruchomieniowego i biblioteki kontroli, nie mogą oni już bezpośrednio uzyskiwać dostępu do obiektów środowiska uruchomieniowego. Zamiast tego wszystkie takie interakcje muszą zostać przekonwertowane, aby można było korzystać z odpowiednich interfejsów API opartych na modelu. Interfejs API modelu został <xref:System.Type> zaktualizowany i dostęp do <xref:System.Object> niego lub nie jest już dostępny lub został zastąpiony programem `TypeIdentifier` i `TypeDefinition`.
+Ponieważ dostawcy funkcji są obecnie załadowane w procesie innym niż rzeczywisty kod w czasie wykonywania i biblioteki kontroli, nie mogą oni już bezpośrednio uzyskiwać dostępu do obiektów w czasie wykonywania. Zamiast tego wszystkie takie interakcje muszą zostać przekonwertowane, aby można było korzystać z odpowiednich interfejsów API opartych na modelu. Interfejs API modelu został <xref:System.Type> zaktualizowany i dostęp do <xref:System.Object> niego lub nie jest już dostępny lub został zastąpiony programem `TypeIdentifier` i `TypeDefinition`.
 
 `TypeIdentifier`reprezentuje ciąg bez nazwy zestawu identyfikującego typ. Można rozpoznać do zapytania, aby uzyskać dodatkowe informacje o typie. `TypeDefinition` `TypeIdenfifier` `TypeDefinition`wystąpienia nie mogą być buforowane w kodzie rozszerzenia.
 
@@ -133,12 +134,15 @@ Interfejsy API usunięte z zestawu interfejsów API rozszerzalności izolacji po
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
+* `AssemblyReferences.GetTypes(Type baseType)`
 
 Interfejsy API używane `TypeIdentifier` <xref:System.Type>zamiast:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
 * `ModelFactory.CreateStaticMemberItem(EditingContext context, Type type, string memberName)`
+* `ModelFactory.ResolveType(EditingContext context, Type)`zmieniono na`MetadataFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
+* `ModelService.ResolveType(TypeIdentifier typeIdentifier)`zmieniono na`MetadataService.ResolveType(TypeIdentifier typeIdentifier)`
 * `ViewItem.ItemType`
 * `ModelEvent.EventType`
 * `ModelEvent.IsEventOfType(Type type)`
@@ -157,7 +161,6 @@ Interfejsy API, `TypeIdentifier` które używają <xref:System.Type> zamiast i n
 
 Interfejsy API używane `TypeDefinition` <xref:System.Type>zamiast:
 
-* `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
 * `ValueTranslationService.HasValueTranslation(Type itemType, PropertyIdentifier identifier)`
 * `ValueTranslationService.TranslatePropertyValue(Type itemType, ModelItem item, PropertyIdentifier identifier, object value)`
@@ -172,15 +175,12 @@ Interfejsy API używane `TypeDefinition` <xref:System.Type>zamiast:
 * `FeatureManager.GetCustomAttributes(Type type, Type attributeType)`
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
+* `PropertyEntry.PropertyType`
 
-Interfejsy API używane `ModelItem` <xref:System.Object>zamiast:
+Interfejsy API używane `AssemblyIdentifier` `<xref:System.Reflection.AssemblyName?displayProperty=fullName>`zamiast:
 
-* `ModelItemCollection.Insert(int index, object value)`
-* `ModelItemCollection.Remove(object value)`
-* `ModelItemDictionary.Add(object key, object value)`
-* `ModelItemDictionary.ContainsKey(object key)`
-* `ModelItemDictionary.Remove(object key)`
-* `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
+* `AssemblyReferences.ReferencedAssemblies`
+* `AssemblyReferences.LocalAssemblyName`zmieniono na`AssemblyReferences.LocalAssemblyIdentifier`
 
 Ponadto interfejsy `ModelItem` API, `SetValue` takie jak, obsługują tylko wystąpienia typów pierwotnych lub wbudowanych typów .NET Framework, które można przekonwertować dla docelowego środowiska uruchomieniowego. Obsługiwane są obecnie następujące typy:
 

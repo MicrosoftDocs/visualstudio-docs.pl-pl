@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be913ab1f66e82038afce776bc326e5f91c7f2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 435eb5a9fd7e41a69c873df4c728e42551734a37
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233801"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253367"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Używaj literałów w odpowiednich miejscach
 
@@ -41,11 +41,11 @@ Domyślnie ta reguła sprawdza tylko widoczne na zewnątrz pola, ale [można to 
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wartość `static readonly` pola jest obliczana w czasie wykonywania, gdy wywoływana jest statyczny Konstruktor dla typu deklarującego. `static readonly` Jeśli pole jest inicjowane, gdy jest zadeklarowany, a Konstruktor statyczny nie jest zadeklarowany jawnie, kompilator emituje konstruktora statycznego, aby zainicjować pole.
+Wartość `static readonly` pola jest obliczana w czasie wykonywania, gdy wywoływany jest Konstruktor statyczny dla typu deklarującego. `static readonly` Jeśli pole jest inicjowane, gdy jest zadeklarowany, a Konstruktor statyczny nie jest zadeklarowany jawnie, kompilator emituje konstruktora statycznego, aby zainicjować pole.
 
-Wartość `const` pola jest obliczana w czasie kompilacji i przechowywana w metadanych, co zwiększa wydajność środowiska uruchomieniowego w porównaniu `static readonly` do pola.
+Wartość `const` pola jest obliczana w czasie kompilacji i przechowywana w metadanych, co zwiększa wydajność w czasie wykonywania w porównaniu `static readonly` do pola.
 
-Ponieważ wartość przypisana do pola Target jest obliczanej w czasie kompilacji, należy zmienić deklarację na `const` pole, aby wartość była obliczana w czasie kompilacji, a nie w środowisku uruchomieniowym.
+Ponieważ wartość przypisana do pola Target jest obliczanej w czasie kompilacji, należy zmienić deklarację na `const` pole, aby wartość była obliczana w czasie kompilacji, a nie w czasie wykonywania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
