@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253741"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342505"
 ---
 # <a name="office-primary-interop-assemblies"></a>podstawowe zestawy międzyoperacyjne pakietu Office
 
@@ -61,13 +61,13 @@ Te kopie zestawów Pia ułatwiają programowi Visual Studio uniknięcie kilku pr
 
 Począwszy od programu Visual Studio 2017, te kopie zestawów PIA są instalowane w następujących lokalizacjach udostępnionych na komputerze deweloperskim:
 
-- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
+- `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (lub *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* w 64-bitowych systemach operacyjnych)
+- (lub `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` w 64-bitowych systemach operacyjnych)
 
 > [!NOTE]
-> W przypadku starszych wersji programu Visual Studio te zestawów Pia zostaną zainstalowane do folderu Visual Studio Tools dla Office\PIA w folderze *% ProgramFiles% dla tej wersji programu Visual Studio.
-> Na przykład: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools dla Office\PIA\*
+> W przypadku starszych wersji programu Visual Studio te zestawów Pia zostaną zainstalowane do folderu Visual Studio Tools dla Office\PIA w folderze `%ProgramFiles%` dla tej wersji programu Visual Studio.
+> Na przykład: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Podstawowe zestawy międzyoperacyjności w globalnej pamięci podręcznej zestawów
 
@@ -86,7 +86,7 @@ W większości przypadków należy dodać odwołania do zestawów Pia, które s�
 Jeśli zainstalowano i zarejestrowano zestawów PIA w globalnej pamięci podręcznej zestawów, te wersje zestawów są wyświetlane na karcie **com** okna dialogowego **Menedżer odwołań** . Należy unikać dodawania odwołań do tych wersji zestawów, ponieważ występują pewne problemy z programowaniem, które mogą wystąpić podczas ich używania. Jeśli na przykład zarejestrowano różne wersje zestawów PIA w globalnej pamięci podręcznej zestawów, projekt zostanie automatycznie powiązany z wersją zestawu, który został zarejestrowany jako ostatni — nawet w przypadku określenia innej wersji zestawu na **modelu COM** . Karta okna dialogowego **Menedżer odwołań** .
 
 > [!NOTE]
-> Niektóre zestawy są dodawane do projektu automatycznie po dodaniu zestawu, który się do nich odwołuje. Na przykład odwołania do zestawów *Office. dll* i *Microsoft. VBE. Interop. dll* są dodawane automatycznie po dodaniu odwołania do zestawów programów Word, Excel, Outlook, Microsoft Forms lub Graph.
+> Niektóre zestawy są dodawane do projektu automatycznie po dodaniu zestawu, który się do nich odwołuje. Na przykład odwołania do zestawów `Office.dll` i `Microsoft.Vbe.Interop.dll` są dodawane automatycznie po dodaniu odwołania do zestawów programów Word, Excel, Outlook, Microsoft Forms lub Graph.
 
 <a name="pialist"></a>
 

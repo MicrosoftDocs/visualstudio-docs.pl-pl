@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891338"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342454"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -134,12 +134,12 @@ Eksplorator testów umożliwia grupowanie testów w wstępnie zdefiniowanych kat
 ### <a name="group-tests-in-the-test-list"></a>Grupuj testy na liście testów
 
 ::: moniker range="vs-2017"
-Aby zmienić sposób, w jaki są zorganizowane testy, wybierz strzałkę w dół obok przycisku Grupuj **według** ![w Eksploratorze](../test/media/ute_groupby_btn.png) testów i wybierz nowe kryteria grupowania.
+Aby zmienić sposób, w jaki są zorganizowane testy, wybierz strzałkę w dół obok przycisku **Grupuj według** ![Test Explorer przycisk grupy @ no__t-2 i wybierz nowe kryteria grupowania.
 
 ![Grupuj testy według kategorii w Eksploratorze testów](../test/media/ute_groupbycategory.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Eksplorator testów pozwala grupować testy w hierarchię. Domyślnym grupowaniem hierarchii jest **projekt**, **przestrzeń nazw**, a następnie **Klasa**. Aby zmienić sposób organizowania testów, wybierz przycisk **Grupuj według** przycisk ![Grupa Eksploratora](../test/media/ute_groupby_btn.png) testów i wybierz nowe kryteria grupowania.
+Eksplorator testów pozwala grupować testy w hierarchię. Domyślnym grupowaniem hierarchii jest **projekt**, **przestrzeń nazw**, a następnie **Klasa**. Aby zmienić sposób, w jaki są zorganizowane testy, wybierz przycisk **Grupuj według** ![Test Explorer przycisk grupy @ no__t-2 i wybierz nowe kryteria grupowania.
 
 ![Grupuj testy według kategorii w Eksploratorze testów](../test/media/vs-2019/test-explorer-groupby-162.png)
 
@@ -175,7 +175,7 @@ Cechą jest zazwyczaj para nazwa kategorii/wartość, ale może to być równie�
 
 **Cechy struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego**
 
-W środowisku testów jednostkowych firmy Microsoft dla zarządzanych aplikacji należy zdefiniować nazwę cechy/wartość pary w <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> atrybucie. Struktura testowa zawiera również następujące wstępnie zdefiniowane cechy:
+W środowisku testów jednostkowych firmy Microsoft dla aplikacji zarządzanych definiujesz parę nazwa/wartość w atrybucie <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. Struktura testowa zawiera również następujące wstępnie zdefiniowane cechy:
 
 |Cecha|Opis|
 |-|-----------------|
@@ -200,7 +200,7 @@ Można utworzyć i zapisać listę testów, które chcesz uruchomić lub wyświe
 
 **Aby dodać testy do listy odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu po kliknięciu prawym przyciskiem myszy wybierz polecenie **Dodaj do listy odtwarzania**, a następnie wybierz listę odtwarzania, do której chcesz dodać testy.
 
-**Aby otworzyć listę odtwarzania**, wybierz pozycję **Testuj** > **listę odtwarzania** z menu programu Visual Studio, a następnie wybierz pozycję z listy ostatnio używanych list odtwarzania lub wybierz pozycję **Otwórz listę odtwarzania** , aby określić nazwę i lokalizację listy odtwarzania.
+**Aby otworzyć listę odtwarzania**, wybierz pozycję **Testuj** > **list odtwarzania** z menu programu Visual Studio, a następnie wybierz pozycję z listy ostatnio używanych list odtwarzania lub wybierz pozycję **Otwórz listę odtwarzania** , aby określić nazwę i lokalizację listy odtwarzania.
 
 Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
 ::: moniker-end
@@ -245,7 +245,7 @@ Kolumny można filtrować, sortować i zmieniać ich kolejność.
 
 Możesz również użyć filtrów wyszukiwania programu Test Explorer, aby ograniczyć metody testowe w projektach, które są wyświetlane i uruchamiane.
 
-Po wpisaniu ciągu w polu wyszukiwania **Eksploratora testów** i wybraniu klawisza **Enter**lista testów jest filtrowana, aby wyświetlić tylko te testy, których w pełni kwalifikowane nazwy zawierają ciąg.
+Po wpisaniu ciągu w polu wyszukiwania **Eksploratora testów** i wybraniu **klawisza ENTER**lista testów jest filtrowana, aby wyświetlić tylko te testy, których w pełni kwalifikowane nazwy zawierają ciąg.
 
 Aby odfiltrować według innych kryteriów:
 
@@ -273,7 +273,7 @@ Aby odfiltrować według innych kryteriów:
 |**Komunikat o błędzie**|Wyszukuje dopasowania w zdefiniowanych przez użytkownika komunikatach o błędach zwracanych przez nieudane potwierdzenia.|
 |**Ścieżka pliku**|Wyszukuje dopasowania w w pełni kwalifikowanych nazwach plików źródłowych testów.|
 |**W pełni kwalifikowana nazwa**|Przeszukuje w pełni kwalifikowaną nazwę testowanych przestrzeni nazw, klas i metod w celu dopasowania.|
-|**Output**|Wyszukuje komunikaty o błędach zdefiniowane przez użytkownika, które są zapisywane w standardowym wyjściu (stdout) lub w standardowym błędzie (stderr). Składnia służąca do określania komunikatów wyjściowych jest definiowana przez strukturę testów jednostkowych.|
+|**Dane wyjściowe**|Wyszukuje komunikaty o błędach zdefiniowane przez użytkownika, które są zapisywane w standardowym wyjściu (stdout) lub w standardowym błędzie (stderr). Składnia służąca do określania komunikatów wyjściowych jest definiowana przez strukturę testów jednostkowych.|
 |**Wynik**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **Testy zakończone niepowodzeniem**, **pominięte testy**, **testy zakończone powodzeniem**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
@@ -320,6 +320,7 @@ Można określić ilość kodu produktu, który jest faktycznie testowany przez 
 Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu:
 
 ::: moniker range="vs-2017"
+
 1. Wybierz **test** na górnym pasku menu, a następnie wybierz polecenie **Analizuj pokrycie kodu**.
 
 2. Wybierz jedno z następujących poleceń z podmenu:
@@ -327,9 +328,13 @@ Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu:
     - **Wybrane testy** uruchamiają metody testowe, które zostały wybrane w Eksploratorze testów.
 
     - **Wszystkie testy** są uruchamiane ze wszystkich metod testowych w rozwiązaniu.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
+
 * Kliknij prawym przyciskiem myszy w Eksploratorze testów i wybierz polecenie **Analizuj pokrycie kodu dla wybranych testów**
+
 ::: moniker-end
 
 **Wyniki pokrycia kodu** okno wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.
@@ -338,12 +343,12 @@ Aby uzyskać więcej informacji, zobacz [użycie pokrycia kodu, aby ustalić, il
 
 ## <a name="test-shortcuts"></a>Skróty testowe
 
-Testy można uruchomić z poziomu **Eksploratora testów**, klikając prawym przyciskiem myszy w edytorze kodu na test i wybierając polecenie **Uruchom test**lub używając domyślnych [skrótów Eksploratora testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) w programie Visual Studio. Niektóre skróty są oparte na kontekście. Oznacza to, że uruchamiają lub debugują testy w zależności od tego, gdzie znajduje się kursor w edytorze kodu. Jeśli kursor znajduje się wewnątrz metody testowej, ta metoda testowa jest uruchamiana. Jeśli kursor znajduje się na poziomie klasy, wszystkie testy w tej klasie są uruchamiane. Jest to taka sama dla poziomu przestrzeni nazw.
+Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przyciskiem myszy w edytorze kodu na test i wybierając polecenie **Uruchom test** lub używając domyślnych [skrótów Eksploratora testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) w programie Visual Studio. Niektóre skróty są oparte na kontekście. Oznacza to, że uruchamiają lub debugują testy w zależności od tego, gdzie znajduje się kursor w edytorze kodu. Jeśli kursor znajduje się wewnątrz metody testowej, ta metoda testowa jest uruchamiana. Jeśli kursor znajduje się na poziomie klasy, wszystkie testy w tej klasie są uruchamiane. Jest to taka sama dla poziomu przestrzeni nazw.
 
 |Częste polecenia| Skróty klawiaturowe|
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
-|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
+|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **t**|
 |TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
 |TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
 

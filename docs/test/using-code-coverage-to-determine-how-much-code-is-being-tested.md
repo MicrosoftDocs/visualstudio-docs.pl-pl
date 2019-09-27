@@ -11,12 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913213"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342432"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -46,11 +46,11 @@ Funkcja pokrycia kodu jest dostępna tylko w wersji Visual Studio Enterprise.
 
 ::: moniker range=">=vs-2019"
 
-1. W **Eksploratorze testów**wybierz pozycję **Analizuj pokrycie kodu dla wszystkich testów** z menu **Run (uruchamianie** ).
+1. W menu **test** wybierz polecenie **Analizuj pokrycie kodu dla wszystkich testów**.
 
    ![Menu Analiza pokrycia kodu w programie VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
 
-   Jeśli **Eksplorator testów** nie jest otwarty, otwórz go, wybierając **test** > **Windows** > **Test Explorer**lub naciśnij **klawisze CTRL**+**E**,**T**.
+   Możesz również uruchomić pokrycie kodu z poziomu okna narzędzia Eksploratora testów.
 
 ::: moniker-end
 

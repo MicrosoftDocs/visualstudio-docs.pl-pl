@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 6a5fcb489e403ff4297b4e8520346d0cc7be8361
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490601"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342331"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisywanie ról do kontrolera testów i agenta testowego
 
@@ -84,7 +84,7 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
      Aby uzyskać informacje o tych adapterach i innych adapterach, których można użyć w ustawieniu testu, zobacz [Konfigurowanie testów jednostkowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-4. Wybierzpozycję hosty.
+4. Wybierz pozycję **hosty**.
 
 5. Obowiązkowe Jeśli maszyna działa w 64-bitowej wersji systemu Microsoft Windows i został skompilowany test przy użyciu **dowolnej konfiguracji procesora** , Użyj listy rozwijanej **Uruchom test w programie 32 bit lub 64 bit** i wybierz pozycję **Uruchom testy w procesie 64-bitowym na 64-bitowym Maszyna**.
 
@@ -97,13 +97,13 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
 ::: moniker range="vs-2017"
 
-8. W menu test wybierz opcję **Wybierz plik ustawień testu** , a następnie wybierz *TestSettingDistributedTestWalkthrough. testsettings*.
+8. W menu **test** wybierz pozycję **Ustawienia testu** > **Wybierz plik ustawień testu** , a następnie wybierz plik *TestSettingDistributedTestWalkthrough. testsettings* .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. W **Eksploratorze testów**wybierz strzałkę na przycisku **Ustawienia** , a następnie wybierz pozycję **Wybierz plik ustawień**. Przejdź do pliku *TestSettingDistributedTestWalkthrough. testsettings* i wybierz go.
+8. W menu **test** wybierz **pozycję Wybierz plik ustawień**. Przejdź do pliku *TestSettingDistributedTestWalkthrough. testsettings* i wybierz go.
 
 ::: moniker-end
 

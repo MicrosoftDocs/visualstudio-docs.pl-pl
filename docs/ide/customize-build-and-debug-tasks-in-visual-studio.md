@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291042"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342395"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie kompilacji i debugowania zadań rozwoju "Otwórz Folder"
 
@@ -30,8 +30,8 @@ Dostosowywanie bez projektu bazę kodu przy użyciu następujących *.json* plik
 
 |Nazwa pliku|Cel|
 |-|-|
-|*tasks.vs.json*|Określenie niestandardowych poleceń kompilacji i przełączniki kompilatora i dowolnego (bez kompilacji powiązane) zadania.<br>Udostępnianych za pośrednictwem **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy element menu **skonfigurować zadania**.|
-|*launch.vs.json*|Określ argumenty wiersza polecenia do debugowania.<br>Udostępnianych za pośrednictwem **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy element menu **ustawienia debugowania i uruchamiania**.|
+|*tasks.vs.json*|Określenie niestandardowych poleceń kompilacji i przełączniki kompilatora i dowolnego (bez kompilacji powiązane) zadania.<br>Dostępne za pośrednictwem **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy element menu **Konfiguruj zadania**.|
+|*launch.vs.json*|Określ argumenty wiersza polecenia do debugowania.<br>Dostępne za pośrednictwem **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy element menu **Ustawienia debugowania i uruchamiania**.|
 
 Te *.json* pliki znajdują się w ukrytym folderze o nazwie *.vs* w folderze głównym kodu. *Tasks.vs.json* i *launch.vs.json* pliki są tworzone przez program Visual Studio na zgodnie z potrzebami, po wybraniu **skonfigurować zadania** lub **debugowania Ustawienia i uruchamiania** do pliku lub folderu w **Eksploratora rozwiązań**. Te *.json* pliki są ukryte, ponieważ użytkownicy zwykle nie chcesz zaewidencjonować je w kontroli źródła. Jednak jeśli chcesz mieć możliwość sprawdzania ich do kontroli źródła, przeciągnij pliki w folderze głównym w bazie kodu, gdzie są one widoczne.
 
@@ -44,7 +44,7 @@ Można zautomatyzować skrypty kompilacji lub innych zewnętrznych operacji na p
 
 ![Konfigurowanie menu zadania](../ide/media/customize-configure-tasks-menu.png)
 
-Tworzy (lub zostanie otwarty) *tasks.vs.json* w pliku *.vs* folderu. Można zdefiniować zadania kompilacji lub dowolnego zadania w tym pliku, a następnie wywołaj go przy użyciu nazwy, należy nadać mu z **Eksploratora rozwiązań** prawym przyciskiem myszy.
+Tworzy (lub zostanie otwarty) *tasks.vs.json* w pliku *.vs* folderu. Można zdefiniować zadanie kompilacji lub dowolne zadanie w tym pliku, a następnie wywołać je przy użyciu nazwy podaną w **Eksplorator rozwiązań** kliknięciu prawym przyciskiem myszy.
 
 Niestandardowe zadania można dodawać do pojedynczych plików lub do wszystkich plików określonego typu. Na przykład pliki pakietu NuGet można skonfigurować, aby zadanie "Przywróć Packages" lub wszystkie pliki źródłowe można skonfigurować tak, aby zadanie analizy statycznej, takich jak linter dla wszystkich *js* plików.
 
@@ -117,7 +117,7 @@ Aby uzyskać takie *pliku reguł programu make* , zawierający kompilacji czyste
 }
 ```
 
-Po zdefiniowaniu zadań kompilacji w *tasks.vs.json*, dodatkowe kliknij prawym przyciskiem myszy menu (menu kontekstowe) elementy są dodawane do odpowiednich plików w **Eksploratora rozwiązań**. Na przykład "kompilacja", "rebuild" i "czysta" opcje są dodawane do menu kontekstowego dowolnego *pliku reguł programu make* plików.
+Po zdefiniowaniu zadań kompilacji w pliku *Tasks. vs. JSON*do odpowiednich plików w **Eksplorator rozwiązań**są dodawane dodatkowe menu z prawym przyciskiem myszy (menu kontekstowe). Na przykład "kompilacja", "rebuild" i "czysta" opcje są dodawane do menu kontekstowego dowolnego *pliku reguł programu make* plików.
 
 ![menu kontekstowe pliku reguł programu make, kompilacji, ponownej kompilacji i czyszczenia](media/customize-build-rebuild-clean.png)
 
@@ -147,7 +147,7 @@ W poniższym przykładzie przedstawiono *tasks.vs.json* pliku, który definiuje 
 }
 ```
 
-- `taskName` Określa nazwę, która jest wyświetlana w menu kontekstowym.
+- `taskName` Określa nazwę, która pojawia się w menu rozwijanym prawym przyciskiem myszy.
 - `appliesTo` Określa pliki, które można wykonać polecenia na.
 - `command` Właściwość określa polecenie do wywołania. W tym przykładzie `COMSPEC` zmienna środowiskowa jest używany do identyfikowania interpretera wiersza polecenia, zwykle *cmd.exe*.
 - `args` Właściwość określa argumenty do przekazania do wywoływanej polecenia.
@@ -191,7 +191,7 @@ Wiele *tasks.vs.json* pliki mogą znajdować się w głównych i podkatalogi baz
 - Katalog nadrzędny bieżący katalog do katalogu głównego.
 - Ustawienia plików w katalogu głównym.
 
-Mają zastosowanie następujące reguły agregacji *tasks.vs.json*. Instrukcje dotyczące sposobu ustawienia w innym pliku są agregowane zobacz sekcję odpowiednie dla tego pliku, w tym artykule.
+Te reguły agregacji mają zastosowanie do *zadań. vs. JSON*. Instrukcje dotyczące sposobu ustawienia w innym pliku są agregowane zobacz sekcję odpowiednie dla tego pliku, w tym artykule.
 
 ### <a name="properties-for-tasksvsjson"></a>Właściwości pliku tasks.vs.json
 
@@ -257,6 +257,9 @@ Można utworzyć zadania dla dowolnego pliku lub folderu, określając jej nazw�
 
    Po wybraniu **F5**, debuger uruchamia i zatrzymuje w dowolnym punkcie przerwania może zostały skonfigurowane. Wszystkie znajomego debugera systemu windows są dostępne i funkcjonalne.
 
+   > [!IMPORTANT]
+   > Aby uzyskać dodatkowe informacje na temat niestandardowych zadań kompilacji i C++ debugowania w projektach otwartych folderów, zobacz [Otwieranie folderu C++ obsługa dla systemów kompilacji w programie Visual Studio](/cpp/build/open-folder-projects-cpp).
+
 ### <a name="specify-arguments-for-debugging"></a>Określ argumenty do debugowania
 
 Można określić argumenty wiersza polecenia do przekazywania do debugowania w *launch.vs.json* pliku. Dodaj argumenty `args` tablicy, jak pokazano w poniższym przykładzie:
@@ -307,7 +310,7 @@ Odczytywanie ustawień *.gitignore* pliku są stosowane do katalogu nadrzędnego
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie kodu bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Otwieranie folderu projektów na potrzeby języka C++](/cpp/build/open-folder-projects-cpp)
-- [Projekty CMake dlaC++](/cpp/build/cmake-projects-in-visual-studio)
+- [Otwórz Folder projektów w języku C++](/cpp/build/open-folder-projects-cpp)
+- [CMake projekty dlaC++](/cpp/build/cmake-projects-in-visual-studio)
 - [NMAKE — dokumentacja](/cpp/build/reference/nmake-reference)
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

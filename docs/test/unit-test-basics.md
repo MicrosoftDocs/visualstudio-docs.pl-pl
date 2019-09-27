@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891341"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342436"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -26,13 +26,13 @@ Można szybko wygenerować projekty testowe i metod testowych w kodzie lub ręcz
 
 Eksplorator testów można również uruchomić innych firm i open source, struktur testów jednostek, które zostały zaimplementowane interfejsy dodatek programu Test Explorer. Można dodać wiele z tych środowisk przy użyciu Menedżera rozszerzeń programu Visual Studio i galerii programu Visual Studio. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="get-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpoczęcie pracy
 
 Aby zapoznać się z wprowadzeniem do testów jednostkowych, które umożliwia przejście bezpośrednio do kodowania zobacz jeden z tych tematów:
 
-- [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego @ no__t-0
 
-- [Szybki start: Programowanie sterowane testami za pomocą Eksploratora testów](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Szybki start: Programowanie sterowane testami za pomocą Eksploratora testów @ no__t-0
 
 - [Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -120,7 +120,7 @@ Projekt testu jednostkowego zwykle odzwierciedla strukturę projektu pojedynczeg
 
 **Aby dodać projekt testu jednostkowego do rozwiązania:**
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj** > **Nowy** **projekt**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **dodaj** **Nowy** **projekt** > .
 
 ::: moniker range="vs-2017"
 
@@ -137,7 +137,7 @@ Projekt testu jednostkowego zwykle odzwierciedla strukturę projektu pojedynczeg
 
 2. Użyj pola wyszukiwania szablonu projektu, aby znaleźć szablon projektu testów jednostkowych dla środowiska testowego, którego chcesz użyć.
 
-3. Na następnej stronie Nadaj projektowi nazwę. Aby przetestować `Accounts` projekt naszego przykładu, można nazwać projekt `AccountsTests`.
+3. Na następnej stronie Nadaj projektowi nazwę. Aby przetestować projekt `Accounts` tego przykładu, można nazwać projekt `AccountsTests`.
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ Aby uzyskać więcej informacji na temat struktur testów jednostek pochodzącyc
 
 ## <a name="set-timeouts-for-unit-tests"></a>Ustawianie limitów czasu dla testów jednostkowych
 
-Jeśli używasz platformy MSTest Framework, możesz użyć <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> , aby ustawić limit czasu dla indywidualnej metody testowej:
+Jeśli używasz platformy MSTest Framework, możesz użyć <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute>, aby ustawić limit czasu dla indywidualnej metody testowej:
 
 ```csharp
 [TestMethod]
@@ -255,7 +255,7 @@ Można również filtrować testy w dowolnym widoku, pasujący tekst w polu wysz
 ![Uruchom testy z paska narzędzi Eksploratora testów](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Wybierz test, aby wyświetlić szczegóły tego testu w okienku Szczegóły testu. Wybierz **Otwórz test** z menu dostępnego po kliknięciu prawym przyciskiem myszy (klawiatura: **F12**) Aby wyświetlić kod źródłowy wybranego testu.
+Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Wybierz test, aby wyświetlić szczegóły tego testu w okienku Szczegóły testu. Wybierz **Otwórz test z menu dostępnego** po kliknięciu prawym przyciskiem myszy (klawiatura: **F12**) Aby wyświetlić kod źródłowy wybranego testu.
 
 ::: moniker range="vs-2017"
 
@@ -369,7 +369,7 @@ Dowiedz się więcej o [testów jednostkowych opartych na danych](../test/how-to
 
 Można uruchomić pokrycie kodów w wybranych testach albo we wszystkich testach w rozwiązaniu. **Wyniki pokrycia kodu** okno wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.
 
-Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu, wybierz **testy** menu programu Visual Studio, a następnie wybierz **analiza pokrycia kodu**.
+Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu, wybierz **test** > **Analizuj pokrycie kodu dla wszystkich testów**.
 
 Wyniki pokrycia są wyświetlane w **wyniki pokrycia kodu** okna.
 
@@ -377,7 +377,7 @@ Wyniki pokrycia są wyświetlane w **wyniki pokrycia kodu** okna.
 
 Dowiedz się więcej o [pokrycia kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
-**PYTANIA Czy mogę przetestować metody w moim kodzie, który ma zależności zewnętrzne?**
+**PYTANIA Czy można testować metody w moim kodzie z zależnościami zewnętrznymi?**
 
 **Z** Tak. Jeśli masz program Visual Studio Enterprise, Microsoft Fakes może służyć za pomocą metody testowe, które należy zapisać przy użyciu struktur testów jednostek dla kodu zarządzanego.
 
@@ -391,7 +391,7 @@ W obu metod użyjesz wygenerowanego delegatów wywołania metody zależności do
 
 Dowiedz się więcej o [izolowanie metody testów jednostkowych with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**PYTANIA Czy można używać innych platform testów jednostkowych do tworzenia testów jednostkowych?**
+**PYTANIA Czy mogę użyć innych platform testów jednostkowych do tworzenia testów jednostkowych?**
 
 **Z** Tak, wykonaj następujące kroki, aby [znaleźć i zainstalować inne platformy](../test/install-third-party-unit-test-frameworks.md). Po ponownym uruchomieniu programu Visual Studio ponownie otwórz rozwiązanie do utworzenia testów jednostkowych, a następnie wybierz zainstalowany struktur w tym miejscu:
 

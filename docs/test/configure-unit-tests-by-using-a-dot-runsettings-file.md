@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25d0f49939a42d9a9b8cc56f03ed37ab83aa98f2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 799d3f23a6b4e269c08bc889461596178e71b4c8
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251826"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342488"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -38,11 +38,11 @@ Plik jest wyświetlany w menu Ustawienia testu i można go zaznaczyć lub usuną
 
 ::: moniker range=">=vs-2019"
 
-Aby określić plik parametrów uruchomieniowych w środowisku IDE, w **Eksploratorze testów**wybierz strzałkę na przycisku **Ustawienia** , a następnie wybierz pozycję **Wybierz plik ustawień**. Przejdź do pliku *. runsettings* i wybierz go.
+Aby określić plik parametrów uruchomieniowych w środowisku IDE, wybierz pozycję **testuj** > **Wybierz plik ustawień**. Przejdź do pliku *. runsettings* i wybierz go.
 
-![Wybieranie menu plik ustawień testu w programie Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+![Wybieranie menu plik ustawień testu w programie Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
-Plik jest wyświetlany w menu Ustawienia w Eksploratorze testów i można go zaznaczyć lub usunąć. Gdy jest zaznaczone, plik parametrów uruchomieniowych ma zastosowanie zawsze, gdy wybierzesz opcję **Analizuj pokrycie kodu**.
+Plik jest wyświetlany w menu test i można go zaznaczyć lub usunąć jego zaznaczenie. Gdy jest zaznaczone, plik parametrów uruchomieniowych ma zastosowanie zawsze, gdy wybierzesz opcję **Analizuj pokrycie kodu**.
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ Aby dostosować testy przy użyciu pliku *. runsettings* , wykonaj następujące
 
 ::: moniker range=">=vs-2019"
 
-3. Aby wybrać plik parametrów uruchomieniowych, w **Eksploratorze testów**wybierz strzałkę na przycisku **Ustawienia** , a następnie wybierz pozycję **Wybierz plik ustawień**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
+3. Aby wybrać plik parametrów uruchomieniowych, wybierz opcję **testuj** > **Wybierz plik ustawień**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ Poniższy kod XML przedstawia zawartość typowego pliku *. runsettings* . Każd
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -157,7 +157,7 @@ Poniższy kod XML przedstawia zawartość typowego pliku *. runsettings* . Każd
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
+          <!-- Change to "false" to only add video attachments to failed tests -->
           <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
         </Configuration>
       </DataCollector>
@@ -284,7 +284,7 @@ Aby użyć parametrów przebiegu testowego, Dodaj <xref:Microsoft.VisualStudio.T
 
 Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody testowe mające <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atrybut.
 
-|Konfiguracja|Domyślny|Wartości|
+|Konfigurowanie|Domyślny|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|false|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli masz plik *App. config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|

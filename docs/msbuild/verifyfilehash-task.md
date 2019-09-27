@@ -1,5 +1,5 @@
 ---
-title: Zadanie VerifyFileHash | Dokumentacja firmy Microsoft
+title: VerifyFileHash — zadanie | Microsoft Docs
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e7330e750d0f636979f52eacf398ca7d496c523
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577365"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342411"
 ---
-# <a name="verifyfilehash-task"></a>VerifyFileHash task
+# <a name="verifyfilehash-task"></a>VerifyFileHash, zadanie
 
-Sprawdza, czy plik odpowiada oczekiwanej wyznaczania wartości skrótu.
+Sprawdza, czy plik jest zgodny z oczekiwanym skrótem pliku.
 
-To zadanie, który został dodany w 15.8, ale wymaga [obejście](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) do użycia dla wersji programu MSBuild poniżej 16.0.
+To zadanie zostało dodane w 15,8, ale wymaga [obejścia](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) do użycia z wersjami MSBuild poniżej 16,0.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
@@ -34,15 +34,14 @@ To zadanie, który został dodany w 15.8, ale wymaga [obejście](https://github.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`File`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br />Pliki do skrótu i zweryfikowane.|
-|`Hash`|Wymagane `String` parametru.<br /><br />Oczekiwano skrótu pliku.|
-|`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` Parametr wyjściowy.<br /><br />`Files` Danych wejściowych za pomocą dodatkowych metadanych, ustaw wartość skrótu pliku.|
-|`Algorithm`|Opcjonalnie `String` parametru.<br /><br />Algorytm. Dozwolone wartości: `SHA256`, `SHA384`, `SHA512`. Domyślne = `SHA256`.|
-|`HashEncoding`|Opcjonalnie `String` parametru.<br /><br />Kodowanie do użycia dla wygenerowane skróty. Wartość domyślna to `hex`. Dozwolone wartości = `hex`, `base64`.|
+|`File`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br />Pliki do wyznaczania wartości skrótu i weryfikacji.|
+|`Hash`|Wymagany `String` parametr.<br /><br />Oczekiwany skrót pliku.|
+|`Algorithm`|Opcjonalny `String` parametr.<br /><br />Algorytm. Dozwolone wartości: `SHA256`, `SHA384`, `SHA512`. Wartość domyślna = `SHA256`.|
+|`HashEncoding`|Opcjonalny `String` parametr.<br /><br />Kodowanie, które ma być używane dla wygenerowanych skrótów. Wartość domyślna to `hex`. Dozwolone wartości = `hex`, `base64`.|
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie użyto `VerifyFileHash` zadania, aby zweryfikować swój własny sumy kontrolnej.
+W poniższym przykładzie za pomocą zadania `VerifyFileHash` można sprawdzić własną sumę kontrolną.
 
 ```xml
 <Project>

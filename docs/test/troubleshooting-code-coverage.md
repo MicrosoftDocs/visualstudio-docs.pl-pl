@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079578"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342479"
 ---
 # <a name="troubleshoot-code-coverage"></a>Rozwiązywanie problemów z pokryciem kodu
 
@@ -29,6 +29,7 @@ Aby uzyskać więcej informacji, zobacz [użycie pokrycia kodu, aby ustalić, il
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Możliwe przyczyny braku wyników lub wyświetlania starych wyników
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Czy masz odpowiednią wersję programu Visual Studio?
+
 Potrzebujesz programu Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>Nie zostały wykonane żadne testy
@@ -43,7 +44,7 @@ Rozpoznawanie&mdash;w Eksploratorze testów wybierz **Uruchom wszystkie** Aby sp
 
 Podczas modyfikowania i ponownego przeprowadzania testów poprzedni wynik pokrycia kodu może nadal być widoczny, włącznie z kolorowaniem kodu z tego starego uruchamiania.
 
-1. Uruchom analizę pokrycia kodu.
+1. Uruchom **Analizowanie pokrycia kodu**.
 
 2. Upewnij się, czy wybrano najbardziej aktualnych wyników w **wyniki pokrycia kodu** okna.
 

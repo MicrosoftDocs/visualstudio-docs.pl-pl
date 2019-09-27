@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150111"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342362"
 ---
 # <a name="customize-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 
@@ -40,7 +40,7 @@ Aby dostosować pokrycie kodu, wykonaj następujące kroki:
 
 ::: moniker range=">=vs-2019"
 
-3. Aby wybrać plik parametrów uruchomieniowych, w **Eksploratorze testów**wybierz strzałkę na przycisku **Ustawienia** , a następnie wybierz pozycję **Wybierz plik ustawień**. Aby określić plik parametrów uruchomieniowych do uruchamiania testów z wiersza polecenia, zobacz [Konfigurowanie testów jednostkowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Aby wybrać plik parametrów uruchomieniowych, w menu **test** wybierz polecenie **Wybierz plik ustawień**. Aby określić plik parametrów uruchomieniowych do uruchamiania testów z wiersza polecenia, zobacz [Konfigurowanie testów jednostkowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wy
 
 ::: moniker range=">=vs-2019"
 
-Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wybierz plik z menu **Ustawienia** w **Eksploratorze testów**.
+Aby wyłączyć ustawienia niestandardowe i włączać, usuń zaznaczenie lub wybierz plik w menu **test** .
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ W poniższej tabeli przedstawiono różne sposoby dopasowywania zestawów i czł
 | ModulePath | Dopasowuje zestawy określone przez nazwę zestawu lub ścieżkę pliku. |
 | CompanyName | Dopasowuje zestawy według atrybutu **firmy** . |
 | PublicKeyToken | Dopasowuje podpisane zestawy przez token klucza publicznego. |
-| Źródło | Dopasowuje elementy według nazwy ścieżki pliku źródłowego, w którym są zdefiniowane. |
+| Source | Dopasowuje elementy według nazwy ścieżki pliku źródłowego, w którym są zdefiniowane. |
 | Atrybut | Dopasowuje elementy, które mają określony atrybut. Określ pełną nazwę atrybutu, na przykład `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Jeśli wykluczasz <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> atrybut, kod, który używa funkcji języka, `async`takich `await`jak `yield return`,,, i zaimplementowane właściwości, jest wykluczony z analizy pokrycia kodu. Aby wykluczyć faktycznie wygenerowany kod, należy wykluczyć <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> tylko atrybut. |
 | Funkcja | Dopasowuje procedury, funkcje lub metody przez w pełni kwalifikowaną nazwę, łącznie z listą parametrów. Możesz również dopasować część nazwy przy użyciu [wyrażenia regularnego](#regular-expressions).<br/><br/>Przykłady:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
@@ -270,7 +270,7 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
-            
+
             <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
             <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
