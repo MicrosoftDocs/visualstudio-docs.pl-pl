@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7330e750d0f636979f52eacf398ca7d496c523
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342411"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481972"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash, zadanie
 
@@ -34,7 +34,7 @@ To zadanie zostało dodane w 15,8, ale wymaga [obejścia](https://github.com/Mic
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`File`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br />Pliki do wyznaczania wartości skrótu i weryfikacji.|
+|`File`|Wymagany `String` parametr.<br /><br />Plik do wyznaczania wartości skrótu i weryfikacji.|
 |`Hash`|Wymagany `String` parametr.<br /><br />Oczekiwany skrót pliku.|
 |`Algorithm`|Opcjonalny `String` parametr.<br /><br />Algorytm. Dozwolone wartości: `SHA256`, `SHA384`, `SHA512`. Wartość domyślna = `SHA256`.|
 |`HashEncoding`|Opcjonalny `String` parametr.<br /><br />Kodowanie, które ma być używane dla wygenerowanych skrótów. Wartość domyślna to `hex`. Dozwolone wartości = `hex`, `base64`.|

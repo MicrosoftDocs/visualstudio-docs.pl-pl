@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231090"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481774"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Przeciążenia operatorów mają nazwane elementy alternatywne
 
@@ -27,7 +27,7 @@ ms.locfileid: "71231090"
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|Kategoria|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
@@ -38,62 +38,65 @@ Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to 
 
 ## <a name="rule-description"></a>Opis reguły
 
-Przeciążanie operatora umożliwia użycie symboli do reprezentowania obliczeń dla typu. Na przykład typ, który przeciąża symbol plus (+) dla dodania, zazwyczaj ma alternatywny element członkowski o nazwie "Add". Nazwany alternatywny element członkowski zapewnia dostęp do tych samych funkcji co operator i jest udostępniany deweloperom programu w językach, które nie obsługują przeciążonych operatorów.
+Przeciążanie operatora umożliwia użycie symboli do reprezentowania obliczeń dla typu. Na przykład typ, który przeciąża symbol Plus `+` dla dodania mógłby zwykle mieć alternatywny element członkowski o nazwie `Add`. Nazwany alternatywny element członkowski zapewnia dostęp do tych samych funkcji co operator. Jest ona dostarczana dla deweloperów, którzy programu w językach, którzy nie obsługują przeciążonych operatorów.
 
-Ta reguła bada operatory wymienione w poniższej tabeli.
+Ta reguła bada:
 
-|C#|Visual Basic|C++|Nazwa alternatywna|
-|---------|------------------|-----------|--------------------|
-|+ (binarny)|+|+ (binarny)|Dodaj|
-|+=|+=|+=|Dodaj|
+- Operatory niejawnych i jawnych rzutowania w typie przez sprawdzanie metod o nazwach `To<typename>` i `From<typename>`.
+
+- Operatory wymienione w poniższej tabeli:
+
+|C#|Visual Basic|C++|Nazwa metody alternatywnej|
+|-|-|-|-|
+|+ (binarny)|+|+ (binarny)|Add|
+|+=|+=|+=|Add|
 |&|Oraz|&|BitwiseAnd|
 |&=|I =|&=|BitwiseAnd|
 |&#124;|Lub|&#124;|Bitowy|
 |&#124;=|Lub =|&#124;=|Bitowy|
-|--|Brak|--|Dekrementacji|
+|--|ND|--|Dekrementacji|
 |/|/|/|Mieszczon|
 |/=|/=|/=|Mieszczon|
 |==|=|==|Równa się|
 |^|XOR|^|XOR|
 |^=|XOR =|^=|XOR|
-|>|>|>|{1&gt;Compare&lt;1}|
-|>=|>=|>=|{1&gt;Compare&lt;1}|
-|++|Brak|++|Pełny|
-|<>|!=|Równa się|
+|>|>|>|CompareTo lub Porównaj|
+|>=|>=|>=|CompareTo lub Porównaj|
+|++|ND|++|Pełny|
+|!=|<>|!=|Równa się|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
-|<|<|<|{1&gt;Compare&lt;1}|
-|<=|<=|\<=|{1&gt;Compare&lt;1}|
-|&&|Brak|&&|LogicalAnd|
-|&#124;&#124;|Brak|&#124;&#124;|LogicalOr|
-|!|Brak|!|LogicalNot|
+|<|<|<|CompareTo lub Porównaj|
+|<=|<=|\<=|CompareTo lub Porównaj|
+|&&|ND|&&|LogicalAnd|
+|&#124;&#124;|ND|&#124;&#124;|LogicalOr|
+|!|ND|!|LogicalNot|
 |%|Mod|%|Mod lub reszta|
-|%=|Brak|%=|Mod|
+|%=|ND|%=|Mod|
 |* (binarny)|*|*|Mnożenia|
-|*=|Brak|*=|Mnożenia|
+|*=|ND|*=|Mnożenia|
 |~|nie|~|OnesComplement|
 |>>|>>|>>|RightShift|
-=|Brak|>>=|RightShift|
+=|ND|>>=|RightShift|
 |-(binarny)|-(binarny)|-(binarny)|Odjęt|
-|-=|Brak|-=|Odjęt|
-|true|IsTrue|Brak|IsTrue (Właściwość)|
-|-(jednoargumentowe)|Brak|-|Negate|
-|+ (jednoargumentowy)|Brak|+|Dłużon|
+|-=|ND|-=|Odjęt|
+|true|IsTrue|ND|IsTrue (Właściwość)|
+|-(jednoargumentowe)|ND|-|Negate|
+|+ (jednoargumentowy)|ND|+|Dłużon|
 |false|IsFalse|False|IsTrue (Właściwość)|
 
-Nie można obciążyć elementu = = w wybranym języku.
+\* N/A oznacza, że operator nie może być przeciążony w wybranym języku.
 
-Reguła sprawdza także niejawne i jawne Operatory rzutowania w typie`SomeType`() przez sprawdzenie metod o `ToSomeType` nazwie `FromSomeType`i.
-
-W C#przypadku, gdy operator binarny jest przeciążony, odpowiedni operator przypisania, jeśli istnieje, również jest niejawnie przeciążony.
+> [!NOTE]
+> W C#przypadku, gdy operator binarny jest przeciążony, odpowiedni operator przypisania, jeśli istnieje, również jest niejawnie przeciążony.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy zaimplementować alternatywną metodę dla operatora; Nadaj mu nazwę przy użyciu zalecanej nazwy alternatywnej.
+Aby naprawić naruszenie tej zasady, należy zaimplementować alternatywną metodę dla operatora. Nadaj mu nazwę przy użyciu zalecanej nazwy alternatywnej.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżenia z tej reguły, jeśli implementujesz bibliotekę udostępnioną. Aplikacje mogą ignorować ostrzeżenie z tej reguły.
+Nie pomijaj ostrzeżenia z tej reguły, Jeśli wdrażasz bibliotekę udostępnioną. Aplikacje mogą ignorować ostrzeżenie z tej reguły.
 
 ## <a name="configurability"></a>Określając
 

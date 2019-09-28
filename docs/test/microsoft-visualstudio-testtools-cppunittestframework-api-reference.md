@@ -1,26 +1,24 @@
 ---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
-ms.date: 06/13/2019
+ms.date: 09/27/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 36681858506a05d5d8c9f0a5be25a70b833ee022
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fca428a7a810453b3ddcbd9b0d10d6a8f13d0550
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926613"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481857"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Dokumentacja interfejsu API Microsoft. VisualStudio. TestTools. CppUnitTestFramework
 
-W tym temacie wymieniono publiczne elementy członkowskie `Microsoft::VisualStudio::CppUnitTestFramework` przestrzeni nazw. Użyj tych interfejsów API do C++ pisania testów jednostkowych w oparciu o środowisko testów jednostkowych firmy Microsoft. Na końcu tematu znajduje się [przykład użycia](#example) .
+W tym temacie wymieniono publiczne elementy członkowskie przestrzeni nazw `Microsoft::VisualStudio::CppUnitTestFramework`. Użyj tych interfejsów API do C++ pisania testów jednostkowych w oparciu o środowisko testów jednostkowych firmy Microsoft. Na końcu tematu znajduje się [przykład użycia](#example) .
 
-Pliki nagłówkowe znajdują się w folderze _VisualStudio2012 [x86] InstallFolder_ **\VC\UnitTest\include** .
-
-Pliki lib znajdują się w folderze _VisualStudio2012 [x86] InstallFolder_ **\VC\UnitTest\lib** .
+Pliki nagłówkowe i lib znajdują się w *folderze \<Visual Studio installation > \VC\Auxiliary\VS\UnitTest*.
 
 Ścieżki nagłówka i lib są automatycznie konfigurowane w natywnym projekcie testowym.
 
@@ -104,7 +102,7 @@ Pliki lib znajdują się w folderze _VisualStudio2012 [x86] InstallFolder_ **\VC
 TEST_CLASS(className)
 ```
 
-Wymagane dla każdej klasy zawierającej metody testowe. Identyfikuje element *ClassName* jako klasę testową. `TEST_CLASS`musi być zadeklarowany w zakresie namescape.
+Wymagane dla każdej klasy zawierającej metody testowe. Identyfikuje element *ClassName* jako klasę testową. `TEST_CLASS` musi być zadeklarowana w zakresie namescape.
 
 ```cpp
 TEST_METHOD(methodName)
@@ -113,7 +111,7 @@ TEST_METHOD(methodName)
 }
 ```
 
-Definiuje *MethodName* jako metodę testową. `TEST_METHOD`musi być zadeklarowany w zakresie klasy metody.
+Definiuje *MethodName* jako metodę testową. `TEST_METHOD` musi być zadeklarowana w zakresie klasy metody.
 
 ### <a name="Initialize_and_cleanup"></a>Inicjuj i oczyść
 
@@ -126,7 +124,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
-Definiuje *MethodName* jako metodę, która jest uruchamiana przed uruchomieniem każdej metody testowej. `TEST_METHOD_INITIALIZE`można zdefiniować tylko raz w klasie testowej i musi być zdefiniowana w klasie testowej.
+Definiuje *MethodName* jako metodę, która jest uruchamiana przed uruchomieniem każdej metody testowej. `TEST_METHOD_INITIALIZE` można zdefiniować tylko raz w klasie testowej i musi być zdefiniowana w klasie testowej.
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)
@@ -135,7 +133,7 @@ TEST_METHOD_CLEANUP(methodName)
 }
 ```
 
-Definiuje *MethodName* jako metodę, która jest uruchamiana po wykonaniu każdej metody testowej. `TEST_METHOD_CLEANUP`można zdefiniować tylko raz w klasie testowej i musi być zdefiniowany w zakresie klasy testowej.
+Definiuje *MethodName* jako metodę, która jest uruchamiana po wykonaniu każdej metody testowej. `TEST_METHOD_CLEANUP` można zdefiniować tylko raz w klasie testowej i musi być zdefiniowana w zakresie klasy testowej.
 
 #### <a name="test_classes"></a>Klasy testowe
 
@@ -146,7 +144,7 @@ TEST_CLASS_INITIALIZE(methodName)
 }
 ```
 
-Definiuje *MethodName* jako metodę, która jest uruchamiana przed utworzeniem każdej klasy testowej. `TEST_CLASS_INITIALIZE`można zdefiniować tylko raz w klasie testowej i musi być zdefiniowany w zakresie klasy testowej.
+Definiuje *MethodName* jako metodę, która jest uruchamiana przed utworzeniem każdej klasy testowej. `TEST_CLASS_INITIALIZE` można zdefiniować tylko raz w klasie testowej i musi być zdefiniowana w zakresie klasy testowej.
 
 ```cpp
 TEST_CLASS_CLEANUP(methodName)
@@ -155,7 +153,7 @@ TEST_CLASS_CLEANUP(methodName)
 }
 ```
 
-Definiuje *MethodName* jako metodę, która jest uruchamiana po utworzeniu każdej klasy testowej. `TEST_CLASS_CLEANUP`można zdefiniować tylko raz w klasie testowej i musi być zdefiniowany w zakresie klasy testowej.
+Definiuje *MethodName* jako metodę, która jest uruchamiana po utworzeniu każdej klasy testowej. `TEST_CLASS_CLEANUP` można zdefiniować tylko raz w klasie testowej i musi być zdefiniowana w zakresie klasy testowej.
 
 #### <a name="test_modules"></a>Moduły testowe
 
@@ -166,13 +164,13 @@ TEST_MODULE_INITIALIZE(methodName)
 }
 ```
 
-Definiuje metodę *MethodName* , która jest uruchamiana podczas ładowania modułu. `TEST_MODULE_INITIALIZE`można zdefiniować tylko raz w module testowym i musi być zadeklarowany w zakresie przestrzeni nazw.
+Definiuje metodę *MethodName* , która jest uruchamiana podczas ładowania modułu. `TEST_MODULE_INITIALIZE` można zdefiniować tylko raz w module testowym i musi być zadeklarowany w zakresie przestrzeni nazw.
 
 ```cpp
 TEST_MODULE_CLEANUP(methodName)
 ```
 
-Definiuje metodę *MethodName* , która jest uruchamiana, gdy moduł jest zwolniony. `TEST_MODULE_CLEANUP`można zdefiniować tylko raz w module testowym i musi być zadeklarowany w zakresie przestrzeni nazw.
+Definiuje metodę *MethodName* , która jest uruchamiana, gdy moduł jest zwolniony. `TEST_MODULE_CLEANUP` można zdefiniować tylko raz w module testowym i musi być zadeklarowany w zakresie przestrzeni nazw.
 
 ### <a name="create_test_attributes"></a>Utwórz atrybuty testu
 
@@ -185,9 +183,9 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
-Dodaje atrybuty zdefiniowane z co najmniej jednym `TEST_METHOD_ATTRIBUTE` makrem do metody testowej *testMethodName*.
+Dodaje atrybuty zdefiniowane przy użyciu co najmniej jednego makra `TEST_METHOD_ATTRIBUTE` do metody testowej *testMethodName*.
 
-Makro definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue.* `TEST_METHOD_ATTRIBUTE`
+Makro `TEST_METHOD_ATTRIBUTE` definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue*.
 
 #### <a name="test_class_attributes"></a>Atrybuty klasy testowej
 
@@ -198,9 +196,9 @@ BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
 END_TEST_CLASS_ATTRIBUTE()
 ```
 
-Dodaje atrybuty zdefiniowane z co najmniej jednym `TEST_CLASS_ATTRIBUTE` makrem do klasy testowej *testClassName*.
+Dodaje atrybuty zdefiniowane przy użyciu co najmniej jednego makra `TEST_CLASS_ATTRIBUTE` do klasy testowej *testClassName*.
 
-Makro definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue.* `TEST_CLASS_ATTRIBUTE`
+Makro `TEST_CLASS_ATTRIBUTE` definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue*.
 
 #### <a name="test_module_attributes"></a>Atrybuty modułu testowego
 
@@ -211,43 +209,43 @@ BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
 END_TEST_MODULE_ATTRIBUTE()
 ```
 
-Dodaje atrybuty zdefiniowane z co najmniej jednym `TEST_MODULE_ATTRIBUTE` makrem do modułu testowego *testModuleName*.
+Dodaje atrybuty zdefiniowane przy użyciu co najmniej jednego makra `TEST_MODULE_ATTRIBUTE` do modułu testowego *testModuleName*.
 
-Makro definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue.* `TEST_MODULE_ATTRIBUTE`
+Makro `TEST_MODULE_ATTRIBUTE` definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue*.
 
 #### <a name="pre_defined_attributes"></a>Wstępnie zdefiniowane atrybuty
 
-Te wstępnie zdefiniowane makra atrybutów są udostępniane jako wygoda dla typowych przypadków. Mogą zostać zastąpione przez makro `TEST_METHOD_ATTRIBUTE` opisane powyżej.
+Te wstępnie zdefiniowane makra atrybutów są udostępniane jako wygoda dla typowych przypadków. Mogą zostać zastąpione przez makro `TEST_METHOD_ATTRIBUTE` opisany powyżej.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
-Definiuje nazwę `Owner` i wartość atrybutu *ownerAlias.* `TEST_METHOD_ATTRIBUTE`
+Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `Owner` i wartością atrybutu *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
-Definiuje nazwę `Description` i wartość atrybutu *Description.* `TEST_METHOD_ATTRIBUTE`
+Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `Description` i wartością atrybutu *Description*.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
-Definiuje nazwę `Priority` i wartość atrybutu *priorytet.* `TEST_METHOD_ATTRIBUTE`
+Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `Priority` i wartością atrybutu *priorytet*.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
-Definiuje wartość `WorkItem` przy użyciu nazwy i wartości atrybutu elementu *roboczego.* `TEST_METHOD_ATTRIBUTE`
+Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `WorkItem` i wartością atrybutu elementu *roboczego*.
 
 ```cpp
 TEST_IGNORE()
 ```
 
-Definiuje przy użyciu `Ignore` nazwy`true`iwartościatrybutu. `TEST_METHOD_ATTRIBUTE`
+Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `Ignore` i wartością atrybutu `true`.
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 
