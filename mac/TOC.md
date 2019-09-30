@@ -100,7 +100,8 @@
 # Ułatwienia dostępu
 ## [Omówienie](accessibility.md)
 ## [Ustawianie opcji ułatwień dostępu środowiska IDE](accessibility-ide-options.md)
-## [Korzystanie z narzędzi ułatwień dostępu systemu macOS](accessibility-macos.md)
+## Narzędzia i funkcje ułatwień dostępu macOS
+### [Korzystanie z narzędzi ułatwień dostępu systemu macOS](accessibility-macos.md)
 ### [Używanie nawigacji za pomocą klawiatury](accessibility-keyboard.md)
 ### [Korzystanie z usługi VoiceOver](accessibility-voiceover.md)
 
