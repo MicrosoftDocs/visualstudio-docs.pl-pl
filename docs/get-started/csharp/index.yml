@@ -6,7 +6,7 @@ metadata:
   description: Twórz C# aplikacje za pomocą programu Visual Studio.
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 09/27/2019
   author: ghogen
   ms.author: ghogen
   manager: jillfra
@@ -14,18 +14,18 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: cefa370c40ccd32a1ddd7b108ccc493d8019fcb2
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: 6c7e810e4370b1ea1fc0be5fbcd196b2e0ecf301
+  ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71252154"
+  ms.lasthandoff: 09/30/2019
+  ms.locfileid: "71681563"
 landingContent:
-- title: Wprowadzenie
+- title: Rozpoczęcie pracy
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Instalowanie programu Visual Studio
+    - text: Instalacja programu Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
@@ -35,16 +35,18 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: tworzenie aplikacji konsoli
+    - text: Tworzenie aplikacji konsoli
       url: tutorial-console.md
-    - text: tworzenie aplikacji internetowej
+    - text: Tworzenie aplikacji sieci web
       url: tutorial-aspnet-core.md
-    - text: Tworzenie pierwszej aplikacji ASP.NET Core
+    - text: Tworzenie aplikacji ASP.NET Core
       url: tutorial-aspnet-core-ef-step-01.md
     - text: Tworzenie aplikacji platforma uniwersalna systemu Windows
       url: tutorial-uwp.md
     - text: Tworzenie aplikacji klasycznej systemu Windows
       url: tutorial-wpf.md
+    - text: Tworzenie aplikacji Windows Forms
+      url: ../../ide/create-csharp-winform-visual-studio.md
     - text: Dowiedz się C# więcej o języku
       url: /dotnet/csharp/tutorials/intro-to-csharp/
 - title: Poznawanie programu Visual Studio

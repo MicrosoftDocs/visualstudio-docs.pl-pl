@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 411a9b1150961307a2a8ed3cdfae9842fb56701c
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870766"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681623"
 ---
 # <a name="assembly-information-dialog-box"></a>Informacje o zestawie — Okno dialogowe
 
@@ -27,24 +27,24 @@ Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksp
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
 
-**Tytuły**\
+**Tytuł**\
 Określa tytuł manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyTitleAttribute>do.
 
-**Zharmonizowan**\
+**Opis**\
 Określa opcjonalny opis manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyDescriptionAttribute>do.
 
-**Przedsiębiorstwo**\
+@No__t **firmy**— 1
 Określa nazwę firmy dla manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyCompanyAttribute>do.
 
 Możesz ustawić lub zmienić wartość domyślną dla firmy w rejestrze. Wyszukaj wartość **RegisteredOrganization** w obszarze **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** lub **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion** klucz, w zależności od używanej wersji systemu Windows.
 
-**Iloczyn**\
+@No__t **produktu**— 1
 Określa nazwę produktu dla manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyProductAttribute>do.
 
-**Prawo**\
+**Prawa autorskie**\
 Określa informacje o prawach autorskich dla manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyCopyrightAttribute>do.
 
-**Handlowych**\
+**Znak towarowy**\
 Określa znak towarowy dla manifestu zestawu. Odnosi się <xref:System.Reflection.AssemblyTrademarkAttribute>do.
 
 **Wersja zestawu**\
@@ -53,14 +53,17 @@ Określa numer wersji zestawu. Odnosi się <xref:System.Reflection.AssemblyVersi
 **Wersja pliku**\
 Określa numer wersji, który instruuje kompilator, aby używał określonej wersji dla zasobu wersji plików Win32. Odnosi się <xref:System.Reflection.AssemblyFileVersionAttribute>do.
 
-**IDENT**\
+**IDENTYFIKATOR GUID**\
 Unikatowy identyfikator GUID, który identyfikuje zestaw. Podczas tworzenia projektu program Visual Studio generuje identyfikator GUID dla zestawu. Odnosi się <xref:System.Guid>do.
 
-**Język neutralny**\
+@No__t **języka neutralnego**-1
 Określa kulturę obsługiwaną przez zestaw. Odnosi się <xref:System.Resources.NeutralResourcesLanguageAttribute>do. Wartość domyślna to **(brak)** .
 
-**Ustaw zestaw COM jako widoczny**\
+**Ustaw zestaw com jako widoczny**\
 Określa, czy typy w zestawie będą dostępne dla modelu COM. Odnosi się <xref:System.Runtime.InteropServices.ComVisibleAttribute>do.
+
+> [!NOTE]
+> Aby uzyskać więcej informacji na temat ustawiania tych właściwości podczas generowania pakietu NuGet w bibliotece klas .NET Framework, zobacz [Konfigurowanie właściwości projektu dla pakietu](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
 ## <a name="see-also"></a>Zobacz także
 

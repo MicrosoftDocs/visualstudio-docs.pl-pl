@@ -14,18 +14,18 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - VB
-  ms.openlocfilehash: 6e0d373ab1a8fff8271e867171f0cb4900bf0533
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: d3ef8f82785d920f296179b26bada410e6132f52
+  ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71253562"
+  ms.lasthandoff: 09/30/2019
+  ms.locfileid: "71681610"
 landingContent:
-- title: Wprowadzenie
+- title: Rozpoczęcie pracy
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Instalowanie programu Visual Studio
+    - text: Instalacja programu Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
@@ -35,10 +35,12 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: tworzenie aplikacji konsoli
+    - text: Tworzenie aplikacji konsoli
       url: tutorial-console.md
     - text: Tworzenie aplikacji klasycznej systemu Windows
       url: tutorial-wpf.md
+    - text: Tworzenie aplikacji Windows Forms
+      url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
     - text: Dowiedz się więcej o języku Visual Basic
       url: /dotnet/visual-basic/developing-apps/programming/
 - title: Poznawanie programu Visual Studio

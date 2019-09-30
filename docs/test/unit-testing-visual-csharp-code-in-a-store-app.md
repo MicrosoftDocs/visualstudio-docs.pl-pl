@@ -1,26 +1,26 @@
 ---
 title: Testowanie jednostek kodu języka Visual C#
-ms.date: 11/04/2016
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: gewarren
+author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-author: gewarren
-ms.openlocfilehash: dfb0ed5775e011471ba32d4962b0bf25cfcda2b1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 0a724ab273401994faeb88ae197966ef538e842a
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481887"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681596"
 ---
 # <a name="unit-test-c-code"></a>Test jednostkowy kodu w języku C#
 
-W tym artykule opisano jeden ze sposobów tworzenia testów jednostkowych C# dla klasy w aplikacji platformy UWP. Klasa Rooter pokazuje niejasne chwile teorii limit z calculus poprzez implementację funkcji, który oblicza oszacowanie pierwiastek kwadratowy z podanej liczbie. Aplikacja matematycznych następnie może używać tej funkcji do pokazania użytkownika fun rzeczy, które można wykonać za pomocą matematyczne.
+W tym artykule opisano jeden ze sposobów tworzenia testów jednostkowych C# dla klasy w aplikacji platformy UWP.
 
-W tym artykule przedstawiono sposób korzystania z jednostki testowania jako pierwszy krok w rozwoju. W tym podejściu najpierw napisać metodę testową, która sprawdza określone zachowanie w systemie, które testujesz, a następnie napisać kod, który przejdzie test. Wycofanie tej strategii, wprowadzając zmiany kolejności poniższych procedur, w pierwszej operacji zapisu kod, który chcesz przetestować, a następnie napisz testy jednostkowe.
+Klasa **Rooter** , która jest klasą testowa, implementuje funkcję, która oblicza oszacowanie wartości pierwiastek kwadratowy danej liczby.
 
-W tym artykule tworzy również jedno rozwiązanie Visual Studio i oddzielnych projektów dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie biblioteki DLL lub można utworzyć oddzielne rozwiązania dla testów jednostkowych i biblioteki DLL.
+W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu najpierw napiszesz test, który weryfikuje określone zachowanie w systemie, który jest testowany, a następnie napisze kod, który przeszedł test.
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Tworzenie rozwiązania i projektu testu jednostkowego
 
@@ -28,47 +28,17 @@ W tym artykule tworzy również jedno rozwiązanie Visual Studio i oddzielnych p
 
 2. Wyszukaj i wybierz szablon projektu **pusta aplikacja (uniwersalna systemu Windows)** .
 
-3. Nadaj nazwę projektowi `Maths`.
+3. Nazwij projekt **matematyczny**.
 
-4. W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania, wybierz **Dodaj** z menu skrótów, a następnie wybierz **nowy projekt**.
+4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **dodaj** **Nowy projekt** > .
 
 5. Wyszukaj i wybierz szablon projektu **aplikacja testów jednostkowych (uniwersalna systemu Windows)** .
 
-6. Otwórz *UnitTest1.cs* w edytorze programu Visual Studio.
-
-   ```csharp
-   using System;
-   using System.Collections.Generic;
-   using System.Linq;
-   using System.Text;
-   using Microsoft.VisualStudio.TestTools.UnitTesting;
-   using Maths;
-
-   namespace RooterTests
-   {
-       [TestClass]
-       public class UnitTest1
-
-           [TestMethod]
-           public void TestMethod1()
-           {
-
-           }
-   ```
-
-   Należy pamiętać o następujących kwestiach:
-
-   - Każdy test jest definiowana za pomocą <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atrybutu. Metoda testowa musi zwracać typ void i nie może mieć żadnych parametrów.
-
-   - Metody testu muszą być w klasie z atrybutem <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> atrybutu.
-
-        Gdy testy są uruchamiane, tworzone jest wystąpienie każdej klasy testu. Metody testowe są wywoływane w nieokreślonej kolejności.
-
-   - Można zdefiniować specjalne metody, które są wywoływane przed i po każdym modułu, klasy lub metody. Aby uzyskać więcej informacji, zobacz [używania struktury MSTest w testach jednostkowych](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md).
+6. Nazwij projekt testowy **RooterTests**.
 
 ## <a name="verify-that-the-tests-run-in-test-explorer"></a>Sprawdź, czy testy zostaną wykonane w Eksploratorze testów
 
-1. Wstaw kod testu w TestMethod1 w *UnitTest1.cs* pliku:
+1. Wstaw kod testu do **TestMethod1** w pliku *UnitTest.cs* :
 
    ```csharp
    [TestMethod]
@@ -78,21 +48,29 @@ W tym artykule tworzy również jedno rozwiązanie Visual Studio i oddzielnych p
    }
    ```
 
-   Należy zauważyć, że <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> klasa udostępnia kilka metod statycznych, których można sprawdzić wyniki za pomocą metod testowych.
+   Klasa <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> zawiera kilka metod statycznych, których można użyć do sprawdzenia wyników w metodach testowych.
 
-2. Na **testu** menu, wybierz **Uruchom** , a następnie wybierz **Uruchom wszystkie**.
+::: moniker range="vs-2017"
 
-   Projekt testowy skompilowane i uruchomione. **Eksploratora testów** zostanie wyświetlone okno i test znajduje się w obszarze **testy zakończone powodzeniem**. **Podsumowanie** okienku u dołu okna udostępnia dodatkowe szczegóły dotyczące wybranego testu.
+2. W menu **test** wybierz polecenie **Uruchom** > **wszystkie testy**.
 
-   ![Eksplorator testów](../test/media/ute_cpp_testexplorer_testmethod1.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. W menu **test** wybierz polecenie **Uruchom wszystkie testy**.
+
+::: moniker-end
+
+   Projekt testowy skompilowane i uruchomione. Poczekaj, ponieważ może to trochę potrwać. **Eksploratora testów** zostanie wyświetlone okno i test znajduje się w obszarze **testy zakończone powodzeniem**. **Podsumowanie** okienku u dołu okna udostępnia dodatkowe szczegóły dotyczące wybranego testu.
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Dodaj klasę Rooter do projektu matematycznych
 
-1. W **Eksploratora rozwiązań**, wybierz **matematycznych** nazwy projektu. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **klasy**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **matematyczny** , a następnie wybierz polecenie **Dodaj** **klasę** > .
 
 2. Nazwa pliku klasy *Rooter.cs*.
 
-3. Dodaj następujący kod do klasy Rooter *Rooter.cs* pliku:
+3. Dodaj następujący kod do pliku *Rooter.Cser* klasy **root** :
 
    ```csharp
    public Rooter()
@@ -106,23 +84,27 @@ W tym artykule tworzy również jedno rozwiązanie Visual Studio i oddzielnych p
    }
    ```
 
-   `Rooter` Klasa deklaruje Konstruktor i `SquareRoot` metoda narzędzie do szacowania.
+   Klasa **root** deklaruje Konstruktor i metodę szacowania **SquareRoot** . Metoda **SquareRoot** jest tylko minimalną implementacją, wystarczy do przetestowania podstawowej struktury instalacji testowej.
 
-4. `SquareRoot` Metodą jest tylko minimalny implementacji wystarczający do testowania podstawowej struktury testowania instalacji.
+4. Dodaj słowo kluczowe `public` do deklaracji klasy **Rooter** , aby kod testu mógł uzyskać do niego dostęp.
 
-## <a name="couple-the-test-project-to-the-app-project"></a>Kilka projekt testowy do projektu aplikacji
+   ```csharp
+   public class Rooter
+   ```
 
-1. Dodaj odwołanie do niej matematycznych w projekcie RooterTests.
+## <a name="add-a-project-reference"></a>Dodaj odwołanie do projektu
 
-    1. W **Eksploratora rozwiązań**, wybierz **RooterTests** projektu, a następnie wybierz **Dodaj odwołanie** w menu skrótów.
+1. Dodaj odwołanie z projektu RooterTests do aplikacji Maths.
 
-    2. W **Dodaj odwołanie - RooterTests** okna dialogowego rozwiń **rozwiązania** i wybierz polecenie **projektów**. Następnie wybierz pozycję **matematycznych** elementu.
+    1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **RooterTests** , a następnie wybierz polecenie **Dodaj** **odwołanie** > .
+
+    2. W **Dodaj odwołanie - RooterTests** okna dialogowego rozwiń **rozwiązania** i wybierz polecenie **projektów**. Wybierz projekt **Maths** .
 
         ![Dodaj odwołanie do projektu matematycznych](../test/media/ute_cs_windows_addreference.png)
 
-2. Dodaj instrukcję using instrukcję, aby *UnitTest1.cs* pliku:
+2. Dodaj instrukcję `using` do pliku *UnitTest.cs* :
 
-    1. Otwórz *UnitTest1.cs*.
+    1. Otwórz *UnitTest.cs*.
 
     2. Dodaj następujący kod poniżej `using Microsoft.VisualStudio.TestTools.UnitTesting;` wiersza:
 
@@ -130,7 +112,7 @@ W tym artykule tworzy również jedno rozwiązanie Visual Studio i oddzielnych p
        using Maths;
        ```
 
-3. Dodaj test, który używa funkcji Rooter. Dodaj następujący kod do *UnitTest1.cs*:
+3. Dodaj test, który używa funkcji **Rooter** . Dodaj następujący kod do *UnitTest.cs*:
 
    ```csharp
    [TestMethod]
@@ -144,19 +126,35 @@ W tym artykule tworzy również jedno rozwiązanie Visual Studio i oddzielnych p
    }
    ```
 
-4. Skompiluj rozwiązanie.
-
    Nowy test jest wyświetlany w **Eksploratora testów** w **testy nieuruchamiane** węzła.
 
-5. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+4. Aby uniknąć "ładunek zawiera co najmniej dwa pliki z tą samą ścieżką docelową", w **Eksplorator rozwiązań**rozwiń węzeł **Właściwości** w projekcie **Maths** , a następnie usuń plik *default. Rd. XML* .
 
-   ![Podstawowy Test zakończony pomyślnie](../test/media/ute_cpp_testexplorer_basictest.png)
+::: moniker range="vs-2017"
 
-Mają ustawienie testu i projekty kodu, a następnie zweryfikować, że można uruchomić testy, które uruchamiania funkcji w projekcie kodu. Teraz możesz rozpocząć pisanie rzeczywistych testów i kodu.
+6. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+
+   Rozwiązanie zostanie skompilowane i testy są uruchamiane i przekazywane.
+
+   ![BasicTest przeszedł do Eksploratora testów](../test/media/ute_cpp_testexplorer_basictest.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie testy**.
+
+   Rozwiązanie zostanie skompilowane i testy są uruchamiane i przekazywane.
+
+   ![Test podstawowy zakończony w Eksploratorze testów](../test/media/vs-2019/test-explorer-uwp-app.png)
+
+::: moniker-end
+
+Zostały skonfigurowane projekty testów i aplikacji oraz sprawdzono, że można uruchomić testy, które wywołują funkcje w projekcie aplikacji. Teraz możesz rozpocząć pisanie rzeczywistych testów i kodu.
 
 ## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>Iteracyjne Udoskonal testy i nadawać im przekazać
 
-1. Dodaj nowy test:
+1. Dodaj nowy test o nazwie **RangeTest**:
 
    ```csharp
    [TestMethod]
@@ -174,20 +172,16 @@ Mają ustawienie testu i projekty kodu, a następnie zweryfikować, że można u
    ```
 
    > [!TIP]
-   > Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego Dodaj nowy test, zaktualizować kod, tak aby test zakończy się pomyślnie, a następnie dodaj innego testu, i tak dalej.
-   >
-   > Użytkownicy zmiany ich wymagań, wyłącz testy, które nie są już prawidłowe. Zapisz nowe testy i ich działania pojedynczo, w taki sam sposób przyrostowego.
+   > Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego Dodaj nowy test.
 
-2. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
-
-3. Test nie powiedzie się.
+2. Uruchom test **RangeTest** i sprawdź, czy ten błąd nie powiódł się.
 
    ![RangeTest kończy się niepowodzeniem](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
    > [!TIP]
-   > Po napisaniu go Sprawdź, czy każdy test zakończy się niepowodzeniem. Dzięki temu można uniknąć łatwe Błąd zapisywania testu, który nigdy nie zakończy się niepowodzeniem.
+   > Natychmiast po napisaniu testu należy go uruchomić, aby sprawdzić, czy ten błąd nie powiódł się. Dzięki temu można uniknąć łatwe Błąd zapisywania testu, który nigdy nie zakończy się niepowodzeniem.
 
-4. Tak, aby nowy test zakończy się pomyślnie, należy zwiększyć testowany kod. Zmiana `SquareRoot` działa w programach *Rooter.cs* do tego:
+3. Tak, aby nowy test zakończy się pomyślnie, należy zwiększyć testowany kod. Zmień funkcję **SquareRoot** w *Rooter.cs* na:
 
    ```csharp
    public double SquareRoot(double x)
@@ -204,101 +198,49 @@ Mają ustawienie testu i projekty kodu, a następnie zweryfikować, że można u
    }
    ```
 
-5. Kompiluj rozwiązanie, a następnie w polu **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+::: moniker range="vs-2017"
+
+4. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie testy**.
+
+::: moniker-end
 
    Teraz kod przechodzi wszystkie trzy testy.
 
 > [!TIP]
 > Tworzenie kodu, dodając jeden testów w danym momencie. Upewnij się, że po każdej iteracji kod przechodzi wszystkie testy.
 
-## <a name="debug-a-failing-test"></a>Debuguj test niepowodzeniem
-
-1. Dodaj kolejny test do *UnitTest1.cs*:
-
-    ```csharp
-    // Verify that negative inputs throw an exception.
-    [TestMethod]
-    public void NegativeRangeTest()
-    {
-        string message;
-        Rooter rooter = new Rooter();
-        for (double v = -0.1; v > -3.0; v = v - 0.5)
-        {
-            try
-            {
-                // Should raise an exception:
-                double actual = rooter.SquareRoot(v);
-
-                message = String.Format("No exception for input {0}", v);
-                Assert.Fail(message);
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                continue; // Correct exception.
-            }
-            catch (Exception e)
-            {
-                message = String.Format("Incorrect exception for {0}", v);
-                Assert.Fail(message);
-            }
-        }
-    }
-    ```
-
-2. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
-
-   Test nie powiedzie się. Wybierz nazwę testu w **Eksploratora testów**. Potwierdzenie nie powiodło się, jest wyróżniona. Komunikat o błędzie jest widoczny w okienku szczegółów **Eksplorator testów**.
-
-   ![NegativeRangeTests nie powiodło się.](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
-
-3. Aby zobaczyć, dlaczego test zakończy się niepowodzeniem, krok przy użyciu funkcji:
-
-    1. Ustaw punkt przerwania na początku `SquareRoot` funkcji.
-
-    2. W menu skrótów testów zakończonych niepowodzeniem, wybierz **Debuguj wybrane testy**.
-
-        Po zatrzymaniu w punkcie przerwania Uruchom przejść przez kod.
-
-    3. Dodaj kod do metody Rooter w celu wyłapania wyjątku:
-
-        ```csharp
-        public double SquareRoot(double x)
-        {
-            if (x < 0.0)
-            {
-                throw new ArgumentOutOfRangeException();
-        }
-        ```
-
-4. W **Eksploratora testów**, wybierz **Uruchom wszystkie** poprawiony metoda testowa, i upewnij się, że nie zostały wprowadzone regresji.
-
-Teraz kod przechodzi wszystkie testy.
-
-![Kod przechodzi wszystkie testy](../test/media/ute_ult_alltestspass.png)
-
 ## <a name="refactor-the-code"></a>Refaktoryzacja kodu
 
-**Uprość centralnej obliczeń w funkcji SquareRoot.**
+W tej sekcji Refaktoryzacja dotyczy zarówno aplikacji, jak i kodu testowego, a następnie ponownie uruchamia testy, aby upewnić się, że są one nadal przekazywane.
 
-1. Zmień implementację wynik
+### <a name="simplify-the-square-root-estimation"></a>Uproszczenie oszacowania głównego elementu kwadratowego
+
+1. Uprość Obliczanie centralne w funkcji **SquareRoot** , zmieniając jeden wiersz kodu w następujący sposób:
 
     ```csharp
-    // old code
-    //result = result - (result*result - v)/(2*result);
-    // new code
-    result = (result + v/result) / 2.0;
+    // Old code
+    //estimate = estimate - (estimate * estimate - x) / (2 * estimate);
+
+    // New code
+    estimate = (estimate + x/estimate) / 2.0;
     ```
 
-2. Wybierz **Uruchom wszystkie** wycofanej metoda testowa, i upewnij się, że nie zostały wprowadzone regresji.
+2. Uruchom wszystkie testy, aby upewnić się, że regresja nie została wprowadzona. Wszystkie te powinny być przekazywane.
 
 > [!TIP]
 > Stabilne zestawy testów jednostkowych dobre daje pewność, że użytkownik nie wprowadzają błędów po zmianie kodu.
 
-**Refaktoryzuj kod testu, aby wyeliminować zduplikowany kodem.**
+### <a name="eliminate-duplicated-code"></a>Eliminowanie duplikatu kodu
 
-Należy pamiętać, że `RangeTest` metoda twardych kody mianownik `tolerance` zmiennej, która jest przekazywana do <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> metody. Jeśli planujesz dodać dodatkowe testy, które używają tych samych obliczeń na uszkodzenia użytkowania ustaloną wartość w wielu miejscach może prowadzić do błędów.
+Metoda **RangeTest** określa mianownik zmiennej *tolerancji* , która jest przenoszona do metody <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>. Jeśli planujesz dodać dodatkowe testy, które używają tego samego obliczenia tolerancji, użycie zakodowanej wartości w wielu lokalizacjach sprawia, że kod jest trudniejszy do utrzymania.
 
-1. Dodaj prywatną metodę do klasy Unit1Test, aby obliczyć wartość tolerancji, a następnie zamiast tego wywołać tej metody.
+1. Dodaj prywatną metodę pomocnika do klasy **UnitTest1** , aby obliczyć wartość tolerancji, a następnie Wywołaj tę metodę z **RangeTest**.
 
     ```csharp
     private double ToleranceHelper(double expected)
@@ -312,16 +254,20 @@ Należy pamiętać, że `RangeTest` metoda twardych kody mianownik `tolerance` z
     public void RangeTest()
     {
         ...
-        // old code
+        // Old code
         // double tolerance = expected/1000;
-        // new code
+
+        // New code
         double tolerance = ToleranceHelper(expected);
-        Assert.AreEqual(expected, actual, tolerance);
     }
     ...
     ```
 
-2. Wybierz **Uruchom wszystkie** wycofanej metoda testowa, i upewnij się, że nie zostały wprowadzone błąd.
+2. Uruchom **RangeTest** , aby upewnić się, że nadal kończy się powodzeniem.
 
-> [!NOTE]
-> Jeśli dodasz metody pomocnika do klasy testowej, które nie mają być wyświetlane w **Eksploratora testów**, nie należy dodawać <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atrybutu do metody.
+> [!TIP]
+> W przypadku dodania metody pomocnika do klasy testowej, która nie ma być wyświetlana w **Eksploratorze testów**, nie należy dodawać atrybutu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> do metody.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Przewodnik: Programowanie oparte na testach przy użyciu narzędzia Test Explorer @ no__t-0
