@@ -30,7 +30,7 @@ Szybkie akcje w tej sekcji rozwiązują błędy w kodzie, które mogłyby spowod
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Popraw błędny symbol lub słowo kluczowe
 
-Jeśli przypadkowo omyłkowo popełniasz typ lub słowo kluczowe w programie Visual Studio, Ta szybka akcja automatycznie poprawi ją. Te elementy będą widoczne w menu żarówki jako **"Zmień" błędnie*napisane słowo*"na"*Popraw wyraz*** ". Na przykład:
+Jeśli przypadkowo omyłkowo popełniasz typ lub słowo kluczowe w programie Visual Studio, Ta szybka akcja automatycznie poprawi ją. Te elementy będą widoczne w menu żarówki jako **"Zmień" błędnie*napisane słowo*"na"*Popraw wyraz*"** . Na przykład:
 
 ```csharp
 // Before

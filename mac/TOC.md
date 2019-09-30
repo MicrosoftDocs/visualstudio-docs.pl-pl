@@ -1,5 +1,8 @@
 # [Visual Studio dla komputerów Mac](index.yml)
-# [Samouczek środowiska IDE](ide-tour.md)
+
+# Wprowadzenie
+## [Samouczek środowiska IDE](ide-tour.md)
+## [Visual Studio dla komputerów Mac dla użytkowników systemu Windows](vsmac-for-windows-users.md)
 
 # Instalacja
 ## [Instalowanie programu Visual Studio 2019 dla komputerów Mac](installation.md)
@@ -94,11 +97,14 @@
 ### [Dziennik Zmian](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Aplikacje mobilne na platformie Xamarin](/visualstudio/mac/xamarin)
 
-# [Ułatwienia dostępu](accessibility.md)
+# Ułatwienia dostępu
+## [Omówienie](accessibility.md)
 ## [Ustawianie opcji ułatwień dostępu środowiska IDE](accessibility-ide-options.md)
 ## [Korzystanie z narzędzi ułatwień dostępu systemu macOS](accessibility-macos.md)
 ### [Używanie nawigacji za pomocą klawiatury](accessibility-keyboard.md)
 ### [Korzystanie z usługi VoiceOver](accessibility-voiceover.md)
+
+# [Visual Studio dla komputerów Mac dla użytkowników systemu Windows](vsmac-for-windows-users.md)
 
 # Rozwiązywanie problemów
 ## [Dzienniki i wyjątki](troubleshooting.md)
