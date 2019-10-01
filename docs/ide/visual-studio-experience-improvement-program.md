@@ -1,6 +1,6 @@
 ---
 title: Program poprawy jakości obsługi klienta
-description: Dowiedz się, jak do zarządzania ustawieniami ochrony prywatności w programie Visual Studio.
+description: Dowiedz się, jak zarządzać ustawieniami prywatności w programie Visual Studio.
 ms.date: 05/21/2018
 ms.topic: conceptual
 author: PoulChapman
@@ -8,50 +8,52 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582017"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693014"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta systemu Visual Studio
 
-Visual Studio klienta środowiska Improvement Program (VSCEIP) zaprojektowano w celu pomóc firmie Microsoft w ulepszaniu programu Visual Studio wraz z upływem czasu. Ten program [zbiera informacje o błędach](../ide/diagnostic-data-collection.md), sprzęt komputerowy i jak użytkownicy korzystają programu Visual Studio, bez zakłócania pracy użytkowników w ich zadań na komputerze. Informacje zbierane pomaga firma Microsoft może identyfikować, które funkcje, aby poprawić. W tym dokumencie opisano sposób korzystania z opcji w lub poza nią VSCEIP.
+Program Visual Studio Program poprawy jakości obsługi klienta (VSCEIP) został zaprojektowany, aby pomóc firmie Microsoft w ulepszaniu programu Visual Studio w miarę upływu czasu. Ten program [zbiera informacje o błędach](../ide/diagnostic-data-collection.md), sprzęcie komputerowym i sposobie korzystania przez użytkowników z programu Visual Studio bez zakłócania pracy użytkowników na komputerze. Zbierane informacje ułatwiają firmie Microsoft identyfikację funkcji, które należy poprawić. W tym dokumencie opisano, jak wybrać lub z VSCEIP.
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
+> [!NOTE]
+> Ustawienia opt lub out telemetrii VSCEIP nie mają zastosowania do "Zgłoś problem" w programie Visual Studio. Podczas raportowania dzienniki problemów są zbierane i wysyłane do firmy Microsoft tylko w przypadku podania uprawnień przez kliknięcie przycisku Prześlij. Jeśli interesuje Cię zarządzanie dziennikami przed przesłaniem do "Zgłoś problem", zobacz [prywatność danych informacji zwrotnych](./developer-community-privacy.md) , aby uzyskać więcej szczegółów.
 
-## <a name="opt-in-or-out"></a>Zoptymalizowany pod kątem wewnątrz lub na zewnątrz
+## <a name="opt-in-or-out"></a>Zaewidencjonuj lub Wycofaj
 
-VSCEIP jest domyślnie włączona. Można ją wyłączyć lub ponowne zalogowanie, wykonując następujące instrukcje:
+VSCEIP jest domyślnie włączona. Można ją wyłączyć lub ponownie włączyć, wykonując następujące instrukcje:
 
-1. W programie Visual Studio, wybierz **pomocy** > **Wyślij opinię**, a następnie wybierz pozycję **ustawienia**.
+1. W programie Visual Studio wybierz pozycję **pomoc** > **Wyślij opinię**, a następnie wybierz pozycję **Ustawienia**.
 
-   **Visual Studio Experience Improvement Program** zostanie otwarte okno dialogowe.
+   Zostanie otwarte okno dialogowe **program poprawy jakości obsługi programu Visual Studio** .
 
-1. Aby zrezygnować, należy wybrać **nie, nie chcę uczestniczyć**, a następnie wybierz pozycję **OK**. Aby włączyć, wybierz pozycję **tak, chcę uczestniczyć**, a następnie wybierz pozycję **OK**.
+1. Aby zrezygnować z korzystania z programu, wybierz pozycję **nie, nie chcę uczestniczyć**w programie, a następnie wybierz przycisk **OK**. Wybierz opcję **tak, chcę uczestniczyć**, a następnie wybierz przycisk **OK**.
 
-   ![Visual Studio Experience Improvement Program okna dialogowego](media/experience-improvement-program.png)
+   ![Okno dialogowe Program poprawy jakości obsługi programu Visual Studio](media/experience-improvement-program.png)
 
 ### <a name="registry-settings"></a>Ustawienia rejestru
 
-Jeśli zainstalujesz [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017), należy zaktualizować rejestru w celu skonfigurowania VSCEIP. Klienci korporacyjni można konstruować zasady grupy chęć uczestnictwa w lub poza nią VSCEIP, ustawiając zasady związane z rejestrem.
+W przypadku instalowania [narzędzi kompilacji dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017)należy zaktualizować rejestr w celu skonfigurowania VSCEIP. Klienci korporacyjni mogą utworzyć zasady grupy, aby zrezygnować z VSCEIP lub z nich przez ustawienie zasad opartych na rejestrze.
 
 Odpowiedni klucz rejestru i ustawienia są następujące:
 
 ::: moniker range="vs-2017"
 
-- W 64-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
-- W 32-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
-- Po włączeniu zasady grupy klucza = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+- W 64-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- W 32-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Gdy zasady grupy jest włączona, klucz = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- W 64-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
-- W 32-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
-- Po włączeniu zasady grupy klucza = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+- W 64-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- W 32-bitowym systemie operacyjnym, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Gdy zasady grupy jest włączona, klucz = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 ::: moniker-end
 
@@ -59,18 +61,18 @@ Wpis = **OptIn**
 
 Wartość = (DWORD)
 
-- **0** jest wyłączony (Wyłącz VSCEIP)
-- **1** jest zgoda (Włącz VSCEIP)
+- **0** jest wyłączone (Wyłącz VSCEIP)
+- **1** jest włączona (Włącz VSCEIP)
 
 > [!CAUTION]
-> Niepoprawne edytowanie rejestru może spowodować poważne uszkodzenie systemu. Przed wprowadzeniem zmian w rejestrze należy wykonać kopię zapasową wszystkich cennych danych, które znajdują się na komputerze. Można również użyć **Ostatnia znana dobra konfiguracja** opcji uruchamiania w razie wystąpienia problemów po zastosowaniu zmiany ręcznie.
+> Niepoprawne edytowanie rejestru może spowodować poważne uszkodzenie systemu. Przed wprowadzeniem zmian w rejestrze należy wykonać kopię zapasową wszelkich cennych danych na komputerze. W przypadku wystąpienia problemów po zastosowaniu zmian ręcznych można również użyć opcji uruchamiania **Ostatnia znana dobra konfiguracja** .
 
-Aby uzyskać więcej informacji na temat informacji zbieranych, przetwarzanych lub przekazywanych w ramach VSCEIP, zobacz [zasady zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement).
+Aby uzyskać więcej informacji na temat informacji zbieranych, przetwarzanych lub przesyłanych przez VSCEIP, zobacz [zasady zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Informacje diagnostyczne zebrane przez program Visual Studio](diagnostic-data-collection.md)
-* [Porozmawiaj z nami](../ide/talk-to-us.md)
-* [Jak zgłosić problem z programem Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
-* [Poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement)
+* [Opcje opinii programu Visual Studio](../ide/feedback-options.md)
+* [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
+* [Społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/)
+* [Zasady zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement)
