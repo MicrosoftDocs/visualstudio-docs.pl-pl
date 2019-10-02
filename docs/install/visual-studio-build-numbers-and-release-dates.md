@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/25/2019
+ms.date: 10/01/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 584243fa3bfc8d4c0400c0613351508b5ec4e809
-ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.openlocfilehash: 43984192051fbef5648c021e2a05b4ac82d18a09
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71301676"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720543"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,43 +29,44 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.3.1 | Wydanie | 25 września, 2019 | 16.3.29324.140 |
+| 16.3.2 | Release | 1 października 2019 | 16.3.29326.143 |
+| 16.3.1 | Release | 25 września 2019 r. | 16.3.29324.140 |
 | 16.4.0 | Wersja zapoznawcza 1 | 23 września 2019 r. | 16.4.29319.158 |
-| 16.3.0 | Wydanie | 23 września 2019 r. | 16.3.29318.209 |
+| 16.3.0 | Release | 23 września 2019 r. | 16.3.29318.209 |
 | 16.3.0 | Wersja zapoznawcza 4 | 16 września 2019 | 16.3.29311.281 |
-| 16.2.5 | Wydanie | 10 września 2019 r. | 16.2.29306.81 |
-| 16.0.8 | Wydanie | 10 września 2019 r. | 16.0.28803.584 |
-| 16.2.4 | Wydanie | 5 września 2019 r. | 16.2.29230.47 |
+| 16.2.5 | Release | 10 września 2019 r. | 16.2.29306.81 |
+| 16.0.8 | Release | 10 września 2019 r. | 16.0.28803.584 |
+| 16.2.4 | Release | 5 września 2019 r. | 16.2.29230.47 |
 | 16.3.0 | Wersja zapoznawcza 3 | 4 września 2019 | 16.3.29230.61 |
-| 16.2.3 | Wydanie | 20 sierpnia 2019 r. | 16.2.29215.179 |
-| 16.2.2 | Wydanie | 13 sierpnia 2019 r. | 16.2.29209.62 |
+| 16.2.3 | Release | 20 sierpnia 2019 r. | 16.2.29215.179 |
+| 16.2.2 | Release | 13 sierpnia 2019 r. | 16.2.29209.62 |
 | 16.3.0 | Preview 2 | 13 sierpnia 2019 r. | 16.3.29209.152 |
-| 16.0.7 | Wydanie | 13 sierpnia 2019 r. | 16.0.28803.571 |
-| 16.2.1 | Wydanie | 6 sierpnia 2019 r. | 16.2.29201.188 |
-| 16.2.0 | Wydanie | 24 lipca 2019 r. | 16.2.29123.88 |
+| 16.0.7 | Release | 13 sierpnia 2019 r. | 16.0.28803.571 |
+| 16.2.1 | Release | 6 sierpnia 2019 r. | 16.2.29201.188 |
+| 16.2.0 | Release | 24 lipca 2019 r. | 16.2.29123.88 |
 | 16.3.0 | Wersja zapoznawcza 1 | 24 lipca 2019 r. | 16.3.29123.89 |
 | 16.2.0 | Wersja zapoznawcza 4 | 16 lipca 2019 | 16.2.29111.141 |
-| 16.1.6 | Wydanie | 9 lipca 2019 r. | 16.1.29102.190 |
-| 16.0.6 | Wydanie | 9 lipca 2019 r. | 16.0.28803.540 |
-| 16.1.5 | Wydanie | 2 lipca 2019 r. | 16.1.29025.244 |
-| 16.1.4 | Wydanie | 25 czerwca 2019 r. | 16.1.29020.237 |
+| 16.1.6 | Release | 9 lipca 2019 r. | 16.1.29102.190 |
+| 16.0.6 | Release | 9 lipca 2019 r. | 16.0.28803.540 |
+| 16.1.5 | Release | 2 lipca 2019 r. | 16.1.29025.244 |
+| 16.1.4 | Release | 25 czerwca 2019 r. | 16.1.29020.237 |
 | 16.2.0 | Wersja zapoznawcza 3 | 25 czerwca 2019 r. | 16.2.29021.104 |
-| 16.1.3 | Wydanie | 11 czerwca 2019 r. | 16.1.29009.5 |
+| 16.1.3 | Release | 11 czerwca 2019 r. | 16.1.29009.5 |
 | 16.2.0 | Preview 2 | 11 czerwca 2019 r. | 16.2.29006.145 |
-| 16.0.5 | Wydanie | 11 czerwca 2019 r. | 16.0.28803.514 |
-| 16.1.2 | Wydanie | 5 czerwca 2019 r. | 16.1.29001.49 |
-| 16.1.1 | Wydanie | 24 maja 2019 r. | 16.1.28922.388 |
-| 16.1.0 | Wydanie | 21 maja 2019 r. | 16.1.28917.181 |
+| 16.0.5 | Release | 11 czerwca 2019 r. | 16.0.28803.514 |
+| 16.1.2 | Release | 5 czerwca 2019 r. | 16.1.29001.49 |
+| 16.1.1 | Release | 24 maja 2019 r. | 16.1.28922.388 |
+| 16.1.0 | Release | 21 maja 2019 r. | 16.1.28917.181 |
 | 16.2.0 | Wersja zapoznawcza 1 | 21 maja 2019 r. | 16.2.28917.182 |
-| 16.0.4 | Wydanie | 14 maja 2019 r. | 16.0.28803.452 |
+| 16.0.4 | Release | 14 maja 2019 r. | 16.0.28803.452 |
 | 16.1.0 | Wersja zapoznawcza 3 | 6 maja 2019 | 16.1.28902.138 |
-| 16.0.3 | Wydanie | 30 kwietnia 2019 r. | 16.0.28803.352 |
+| 16.0.3 | Release | 30 kwietnia 2019 r. | 16.0.28803.352 |
 | 16.1.0 | Preview 2 | 23 kwietnia 2019 | 16.1.28822.285 |
-| 16.0.2 | Wydanie | 18 kwietnia 2019 r. | 16.0.28803.202 |
+| 16.0.2 | Release | 18 kwietnia 2019 r. | 16.0.28803.202 |
 | 16.1.0 | Wersja zapoznawcza 1 | 10 kwietnia 2019 | 16.1.28809.33 |
-| 16.0.1 | Wydanie | 9 kwietnia 2019 r. | 16.0.28803.156 |
+| 16.0.1 | Release | 9 kwietnia 2019 r. | 16.0.28803.156 |
 | 16.0.1 | Wersja zapoznawcza 1 | 9 kwietnia 2019 r. | 16.0.28803.156 |
-| 16.0.0 | Wydanie | 2 kwietnia 2019 r. | 16.0.28729.10 |
+| 16.0.0 | Release | 2 kwietnia 2019 r. | 16.0.28729.10 |
 | 16.0.0 | Wersja zapoznawcza 5 | 2 kwietnia 2019 r. | 16.0.28729.10 |
 | 16.0.0 | Release Candidate 4 (RC. 4) | 26 marca 2019 | 16.0.28721.148 |
 | 16.0.0 | Wersja zapoznawcza 4,4 | 26 marca 2019 | 16.0.28721.148 |
@@ -99,27 +100,27 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.16 | Wydanie | 10 września 2019 r. | 15.9.28307.858 |
-| 15.0.27 | Wydanie | 10 września 2019 r. | 15.0.26228.98 |
-| 15.9.15 | Wydanie | 13 sierpnia 2019 r. | 15.9.28307.812 |
-| 15.0.26 | Wydanie | 13 sierpnia 2019 r. | 15.0.26228.96 |
-| 15.9.14 | Wydanie | 9 lipca 2019 r. | 15.9.28307.770 |
-| 15.0.25 | Wydanie | 9 lipca 2019 r. | 15.0.26228.92 |
-| 15.9.13 | Wydanie | 11 czerwca 2019 r. | 15.9.28307.718 |
-| 15.0.24 | Wydanie | 11 czerwca 2019 r. | 15.0.26228.88 |
-| 15.9.12 | Wydanie | 14 maja 2019 r. | 15.9.28307.665 |
-| 15.0.23 | Wydanie | 14 maja 2019 r. | 15.0.26228.85 |
-| 15.9.11 | Wydanie | 2 kwietnia 2019 r. | 15.9.28307.586 |
-| 15.9.10 | Wydanie | 25 marca 2019 | 15.9.28307.557 |
-| 15.9.9 | Wydanie | 12 marca 2019 r. | 15.9.28307.518 |
-| 15.0.22 | Wydanie | 12 marca 2019 r. | 15.0.26228.76 |
-| 15.9.8 | Wydanie | 5 marca 2019 | 15.9.28307.481 |
-| 15.9.7 | Wydanie | 12 lutego 2019 r. | 15.9.28307.423 |
-| 15.0.21 | Wydanie | 12 lutego 2019 r. | 15.0.26228.73 |
-| 15.9.6 | Wydanie | 24 stycznia 2019 | 15.9.28307.344 |
-| 15.9.5 | Wydanie | 8 stycznia 2019 | 15.9.28307.280 |
-| 15.9.4 | Wydanie | 11 grudnia 2018 | 15.9.28307.222 |
-| 15.0.20 | Wydanie | 11 grudnia 2018 | 15.0.26228.64 |
+| 15.9.16 | Release | 10 września 2019 r. | 15.9.28307.858 |
+| 15.0.27 | Release | 10 września 2019 r. | 15.0.26228.98 |
+| 15.9.15 | Release | 13 sierpnia 2019 r. | 15.9.28307.812 |
+| 15.0.26 | Release | 13 sierpnia 2019 r. | 15.0.26228.96 |
+| 15.9.14 | Release | 9 lipca 2019 r. | 15.9.28307.770 |
+| 15.0.25 | Release | 9 lipca 2019 r. | 15.0.26228.92 |
+| 15.9.13 | Release | 11 czerwca 2019 r. | 15.9.28307.718 |
+| 15.0.24 | Release | 11 czerwca 2019 r. | 15.0.26228.88 |
+| 15.9.12 | Release | 14 maja 2019 r. | 15.9.28307.665 |
+| 15.0.23 | Release | 14 maja 2019 r. | 15.0.26228.85 |
+| 15.9.11 | Release | 2 kwietnia 2019 r. | 15.9.28307.586 |
+| 15.9.10 | Release | 25 marca 2019 | 15.9.28307.557 |
+| 15.9.9 | Release | 12 marca 2019 r. | 15.9.28307.518 |
+| 15.0.22 | Release | 12 marca 2019 r. | 15.0.26228.76 |
+| 15.9.8 | Release | 5 marca 2019 | 15.9.28307.481 |
+| 15.9.7 | Release | 12 lutego 2019 r. | 15.9.28307.423 |
+| 15.0.21 | Release | 12 lutego 2019 r. | 15.0.26228.73 |
+| 15.9.6 | Release | 24 stycznia 2019 | 15.9.28307.344 |
+| 15.9.5 | Release | 8 stycznia 2019 | 15.9.28307.280 |
+| 15.9.4 | Release | 11 grudnia 2018 | 15.9.28307.222 |
+| 15.0.20 | Release | 11 grudnia 2018 | 15.0.26228.64 |
 | 15.9.3 | Wydanie | 28 listopada 2018 r. | 15.9.28307.145 |
 | 15.9.2 | Wydanie | 19 listopada 2018 r. | 15.9.28307.108 |
 | 15.9.1 | Wydanie | 15 listopada 2018 r. | 15.9.28307.105 |
@@ -196,7 +197,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.5.1 | Wydanie | 7 grudnia 2017 r. | 15.0.27130.2003 |
 | 15.6.0 Podgląd 1 | Wersja zapoznawcza | 7 grudnia 2017 r. | 15.6.27205.0 |
 | 15.0.7 | Wydanie | 6 grudnia 2017 r. | 15.0.26228.18 |
-| 15.5.0 | Wydanie | 4 grudnia 2017 r. | 15.0.27130.0 |
+| 15.5.0 | Release | 4 grudnia 2017 r. | 15.0.27130.0 |
 | 15.5.0 w wersji zapoznawczej 5 | Wersja zapoznawcza | 30 listopada 2017 r. | 15.0.27128.1 |
 | 15.4.5 | Wydanie | 27 listopada 2017 r. | 15.0.27004.2010 |
 | 15.5.0 w wersji zapoznawczej 4 | Wersja zapoznawcza | 14 listopada 2017 r. | 15.0.27110.0 |
@@ -208,7 +209,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.5.0 preview 2 | Wersja zapoznawcza | 23 października 2017 r. | 15.0.27019.1 |
 | 15.4.1 | Wydanie | 19 października 2017 r. | 15.0.27004.2005 |
 | 15.5 Podgląd 1 | Wersja zapoznawcza | 11 października 2017 r. | 15.0.27009.1 |
-| 15.4.0 | Wydanie | 9 października 2017 r. | 15.0.27004.2002 |
+| 15.4.0 | Release | 9 października 2017 r. | 15.0.27004.2002 |
 | 15.4 w wersji zapoznawczej 6 | Wersja zapoznawcza | 9 października 2017 r.| 15.0.27004.20002 |
 | 15.4 w wersji zapoznawczej 5 | Wersja zapoznawcza | 6 października 2017 r. | 15.0.27004.2000 |
 | 15.4 w wersji zapoznawczej 4 | Wersja zapoznawcza | 2 października 2017 r. | 15.0.26929.2 |
@@ -224,7 +225,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.3.1 Podgląd 1 | Wersja zapoznawcza | 18 sierpnia 2017 r. | 15.0.26730.08 |
 | 15.3.1  | Wydanie | 18 sierpnia 2017 r. | 15.0.26730.08 |
 | 15.4 (wersja zapoznawcza) 1 | Wersja zapoznawcza | 24 sierpnia 2017 r. | 15.0.26823.1 |
-| 15.3.0 | Wydanie | 14 sierpnia 2017 r. | 15.0.26730.3 |
+| 15.3.0 | Release | 14 sierpnia 2017 r. | 15.0.26730.3 |
 | 15.3 Podgląd 7.1 | Wersja zapoznawcza | 11 sierpnia 2017 r. | 15.0.26730.3 |
 | 15.3 Podgląd 7 | Wersja zapoznawcza | 1 sierpnia 2017 r. | 15.0.26730.0 |
 | 15.3 w wersji zapoznawczej 6 | Wersja zapoznawcza | 26 lipca 2017 r. | 15.0.26724.1 |
@@ -242,14 +243,14 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.2.1  | Wydanie | 12 maja 2017 r. | 15.0.26430.6 |
 | 15.3 (wersja zapoznawcza) 1.1 | Wersja zapoznawcza | 11 maja 2017 r. | 15.0.26510.0 |
 | 15.3 Podgląd 1 | Wersja zapoznawcza | 10 maja 2017 r. | 15.0.26507.0 |
-| 15.2.0 | Wydanie | 10 maja 2017 r. | 15.0.26430.4 |
+| 15.2.0 | Release | 10 maja 2017 r. | 15.0.26430.4 |
 | 15.2 w wersji zapoznawczej 4 | Wersja zapoznawcza | 3 maja 2017 r. | 15.0.26430.1 |
 | 15.2 Podgląd 3 | Wersja zapoznawcza | 26 kwietnia 2017 r. | 15.0.26424.2 |
 | 15.2 preview 2 | Wersja zapoznawcza | 20 kwietnia 2017 r. | 15.0.26419.1 |
 | 15.2 (wersja zapoznawcza) 1 | Wersja zapoznawcza | 17 kwietnia 2017 r. | 15.0.26412.1 |
 | 15.1.2  | Wydanie | 17 kwietnia 2017 r. | 15.0.26403.7 |
 | 15.1.1 | Wydanie | 10 kwietnia 2017 r. | 15.0.26403.3 |
-| 15.1.0 | Wydanie | 5 kwietnia 2017 r. | 15.0.26403.0 |
+| 15.1.0 | Release | 5 kwietnia 2017 r. | 15.0.26403.0 |
 | 15.0.3  | Wydanie | Do 31 marca 2017 r. | 15.0.26228.12 |
 | 15.0.2 | Wydanie | 28 marca 2017 r. | 15.0.26228.10 |
 | 15.1 Podgląd 3 | Wersja zapoznawcza | 27 marca 2017 r. | 15.0.26323.1 |
