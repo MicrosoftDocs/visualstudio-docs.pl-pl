@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: b40c18c4b85b39e118ac59b97649253d27324854
+ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365398"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71814355"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
@@ -59,7 +59,7 @@ W C# automatycznie wyróżniony kod, punkt przerwania i bieżącej linii wykonyw
 
  ![Punkt przerwania wykonywania zatrzymana](../debugger/media/breakpointexecution.png "punktu przerwania wykonywania")
 
- Po zatrzymaniu debugera w punkcie przerwania, można sprawdzić bieżący stan aplikacji, w tym wartości zmiennych i stosu wywołań. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
+ Po zatrzymaniu debugera w punkcie przerwania, można sprawdzić bieżący stan aplikacji, w tym wartości zmiennych i stosu wywołań. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [How: Użyj okna stosu wywołań @ no__t-0.
 
 - Punkt przerwania jest przełącznikiem. Można kliknąć go, naciśnij **F9**, lub użyj **debugowania** > **Przełącz punkt przerwania** usunąć lub ponownie.
 
@@ -67,11 +67,11 @@ W C# automatycznie wyróżniony kod, punkt przerwania i bieżącej linii wykonyw
 
 - Ustaw warunki i akcje, dodawanie i edytowanie etykiet lub wyeksportuj punkt przerwania, kliknij go prawym przyciskiem myszy i wybierając odpowiednie polecenie lub przenosząc kursor myszy nad nim i wybierając **ustawienia** ikony.
 
-## <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Ustawianie punktów przerwania w debugerze systemu windows
+## <a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Ustawianie punktów przerwania w debugerze systemu windows
 
 Można również ustawić punkty przerwania z **stos wywołań** i **dezasemblacji** debugera systemu windows.
 
-### <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Ustaw punkt przerwania w oknie stosu wywołań
+### <a name="set-a-breakpoint-in-the-call-stack-window"></a>Ustawianie punktu przerwania w oknie stosu wywołań
 
  Aby przerwać w instrukcji lub wierszu, który powraca wywołanie funkcji, można ustawić punkt przerwania w **stos wywołań** okna.
 
@@ -87,7 +87,7 @@ Punkt przerwania stosu wywołań jest wyświetlany w **punktów przerwania** okn
 
 Debuger przerywa w instrukcji.
 
-Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
+Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [How: Użyj okna stosu wywołań @ no__t-0.
 
 Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
@@ -150,24 +150,24 @@ Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [meto
 
 ::: moniker range=">= vs-2019"
 
-## <a name="BKMK_set_a_data_breakpoint_managed"></a>Ustaw punkty przerwania danych (.NET Core w wersji 3.0 lub nowszej)
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>Ustaw punkty przerwania danych (.NET Core 3,0 lub nowszy)
 
-Punkty przerwania danych przerwać wykonywanie, gdy właściwość określonego obiektu.
+Punkty przerwania danych przerywają wykonywanie w przypadku zmiany właściwości określonego obiektu.
 
 **Aby ustawić punkt przerwania danych**
 
-1. W projekcie platformy .NET Core rozpocząć debugowanie i poczekaj, aż do osiągnięcia punktu przerwania.
+1. W projekcie .NET Core, Rozpocznij debugowanie i poczekaj, aż zostanie osiągnięty punkt przerwania.
 
-2. W **Autos**, **Obejrzyj**, lub **lokalne** okna, kliknij prawym przyciskiem myszy właściwość i wybierz **Przerwij w przypadku zmiany wartości** w menu kontekstowym.
+2. W oknie **Autokorekty**, **czujka**lub **lokalne** kliknij prawym przyciskiem myszy właściwość i wybierz pozycję **Przerwij, gdy wartość zostanie zmieniona** w menu kontekstowym.
 
-    ![Zarządzany punkt przerwania danych](../debugger/media/managed-data-breakpoint.png "zarządzany punkt przerwania danych")
+    Zarządzany punkt(../debugger/media/managed-data-breakpoint.png "przerwania danych zarządzanych") ![punktów przerwania danych]
 
-Punkty przerwania danych w programie .NET Core, nie będzie działać dla:
+Punkty przerwania danych w programie .NET Core nie będą działały dla:
 
-- Właściwości, które nie są rozwijane w etykietce narzędzia, zmienne lokalne, automatyczne, lub okno czujki
+- Właściwości, które nie są rozwijane w etykietce narzędzia, elementy lokalne, autouzupełniania ani okno wyrażeń kontrolnych
 - Zmienne statyczne
-- Klasy z atrybutu DebuggerTypeProxy
-- Pola wewnątrz struktury
+- Klasy z atrybutem DebuggerTypeProxy
+- Pola wewnątrz struktur
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ Punkty przerwania danych w programie .NET Core, nie będzie działać dla:
 
 1. W projekcie w języku C++ rozpocząć debugowanie i zaczekaj, aż do osiągnięcia punktu przerwania. Na **debugowania** menu, wybierz **nowego punktu przerwania** > **punkt przerwania danych**
 
-    Możesz również wybrać **New** > **punkt przerwania danych** w **punktów przerwania** okna lub kliknij prawym przyciskiem myszy element w **Autos**, **Obejrzyj**, lub **lokalne** okna, a następnie wybierz pozycję **Przerwij w przypadku zmiany wartości**w menu kontekstowym.
+    W oknie **punkty przerwania** można także wybrać **Nowy** **punkt przerwania danych**  >  lub kliknąć prawym przyciskiem myszy element w oknie **Autostarty**, **czujka**lub **lokalne** , a następnie wybrać pozycję **Przerwij, gdy wartość zostanie zmieniona** w menu kontekstowym.
 
 2. W **adres** wpisz adres pamięci lub wyrażenie, które daje w wyniku adres pamięci. Na przykład wpisz `&avar` przerwanie, kiedy zawartość zmiennej `avar` zmiany.
 
@@ -189,7 +189,7 @@ Punkty przerwania danych nie działają w następujących warunkach:
 - Proces, który nie jest debugowany, zapisuje w lokalizacji pamięci.
 - Lokalizacja pamięci jest współużytkowana przez dwa lub więcej procesów.
 - Lokalizacja pamięci jest aktualizowana w jądrze. Na przykład, jeśli pamięć jest przekazywana do Windows 32-bitowych `ReadFile` funkcji, pamięć zostanie zaktualizowana z trybu jądra, debuger nie spowodują przerwania działania aktualizacji.
-- Gdzie wyrażenia kontrolnego jest większy niż 4 bajty na 32-bitowym sprzęcie i 8 bajtów w 64-bitowym sprzęcie. Jest to ograniczenie x86 architektury.
+- Gdzie wyrażenie czujki jest większe niż 4 bajty na 32-bitowym sprzęcie i 8 bajtów na urządzeniu 64-bitowym. Jest to ograniczenie architektury x86.
 
 > [!NOTE]
 > - Punkty przerwania danych są zależne od adresów pamięci. Adres zmiennej zmiany między jedną sesją debugowania do następnego, dzięki czemu punkty przerwania danych są automatycznie wyłączane na koniec każdej sesji debugowania.
@@ -242,7 +242,7 @@ Punkty przerwania z zestawem warunków są wyświetlane razem ze **+** symbol w 
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Wyrażenie warunkowe
 
-Po wybraniu **wyrażenia warunkowego**, możesz wybrać dwa warunki: **Ma wartość true** lub **po zmianie**. Wybierz **ma wartość true** na przerwanie, gdy wyrażenie jest spełniony, lub **po zmianie** na przerwanie, gdy zmieniono wartość wyrażenia.
+Po wybraniu **wyrażenia warunkowego**można wybrać dwa warunki: **Ma wartość true** lub w **przypadku zmiany**. Wybierz **ma wartość true** na przerwanie, gdy wyrażenie jest spełniony, lub **po zmianie** na przerwanie, gdy zmieniono wartość wyrażenia.
 
  W poniższym przykładzie zostaje trafiony punkt przerwania tylko wtedy, gdy wartość `testInt` jest **4**:
 
@@ -259,6 +259,7 @@ Po wybraniu **wyrażenia warunkowego**, możesz wybrać dwa warunki: **Ma warto�
  >- Dla kodu natywnego debuger nie uważa pierwszej oceny warunku za zmianę, więc nie trafiony punkt przerwania w pierwszej oceny.
  >- Dla kodu zarządzanego, debuger uderza w punkt przerwania w pierwszej ocenie po **po zmianie** jest zaznaczone.
 
+<a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>
 ### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Za pomocą identyfikatorów obiektów w wyrażeniach warunkowych (C# i F# tylko)
  Istnieją terminy, gdy zachodzi potrzeba przyjrzeć się zachowaniu określonego obiektu. Na przykład można dowiedzieć się, dlaczego obiekt został wstawiony do kolekcji więcej niż jeden raz. W C# i F#, można tworzyć identyfikatory obiektów dla określonego wystąpienia [typy odwołań](/dotnet/csharp/language-reference/keywords/reference-types)i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.
 
@@ -268,7 +269,7 @@ Po wybraniu **wyrażenia warunkowego**, możesz wybrać dwa warunki: **Ma warto�
 
 2. Rozpocznij debugowanie, a po wstrzymuje wykonywanie w punkcie przerwania, wybierz **debugowania** > **Windows** > **lokalne** lub **Alt** + **4** otworzyć **lokalne** okna.
 
-   Znajdź wystąpienie określonego obiektu w **lokalne** okna, kliknij go prawym przyciskiem myszy, a następnie wybierz pozycję **wprowadzić identyfikator obiektu**.
+   Znajdź wystąpienie określonego obiektu w oknie **zmiennych lokalnych** , kliknij je prawym przyciskiem myszy, a następnie wybierz pozycję **Utwórz identyfikator obiektu**.
 
    Powinien zostać wyświetlony **$** oraz liczbą **lokalne** okna. Jest to identyfikator obiektu.
 

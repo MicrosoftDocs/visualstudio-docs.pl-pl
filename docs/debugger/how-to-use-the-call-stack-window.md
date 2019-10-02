@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
+ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906363"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71814334"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Wyświetl stos wywołań i korzystanie z okna stosu wywołań w debugerze
 
@@ -86,7 +86,7 @@ Kod niezwiązany z użytkownikiem jest wszelki kod, który nie jest wyświetlany
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Ustaw punkt przerwania w punkcie Zakończ wywołania funkcji
 
-- Zobacz [Ustaw punkt przerwania w funkcji stosu wywołań](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+- Zobacz [Ustaw punkt przerwania w funkcji stosu wywołań](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
 ## <a name="display-calls-to-or-from-another-thread"></a>Wyświetlić wywołania do lub z innego wątku
 
@@ -96,7 +96,7 @@ Kod niezwiązany z użytkownikiem jest wszelki kod, który nie jest wyświetlany
 
 W programie Visual Studio Enterprise (tylko) możesz wyświetlić mapy kodu dla stosu wywołań podczas debugowania.
 
-- W **stos wywołań** okna, otwórz menu skrótów. Wybierz **Pokaż stos wywołań na mapie kodu** (**Ctrl** + **Shift** + **`**).
+- W **stos wywołań** okna, otwórz menu skrótów. Wybierz **Pokaż stos wywołań na mapie kodu** (**Ctrl** + **Shift** +  **`** ).
 
     Aby uzyskać więcej informacji, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
@@ -108,7 +108,7 @@ W programie Visual Studio Enterprise (tylko) możesz wyświetlić mapy kodu dla 
 
 ## <a name="change-the-optional-information-displayed"></a>Zmienić wyświetlane informacje opcjonalne
 
-- Kliknij prawym przyciskiem myszy **stos wywołań** okna i zestawu lub wyczyść **Pokaż \<**  _informacje, które mają_ **>**.
+- Kliknij prawym przyciskiem myszy **stos wywołań** okna i zestawu lub wyczyść **Pokaż \<**  _informacje, które mają_ **>** .
 
 ## <a name="bkmk_symbols"></a> Ładowanie symboli dla modułu (C#, C++, Visual Basic F#)
 
