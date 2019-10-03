@@ -22,7 +22,7 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Funkcje właściwości
               href: property-functions.md
-        - name: Items
+        - name: Elementy
           items:
             - name: Elementy programu MSBuild
               href: msbuild-items.md
@@ -88,7 +88,7 @@
       items:
         - name: Pojęcia zaawansowane dotyczące programu MSBuild
           href: msbuild-advanced-concepts.md
-        - name: Tworzenie partii
+        - name: Przetwarzanie wsadowe
           items:
             - name: Przetwarzanie wsadowe w programie MSBuild
               href: msbuild-batching.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Rejestrowanie rozszerzeń środowiska .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Równoległe kompilowanie wielu projektów
+        - name: Równoległe tworzenie wielu projektów
           items:
             - name: Równoległe tworzenie wielu projektów za pomocą narzędzia MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -236,7 +236,7 @@
               href: usingtask-element-msbuild.md
             - name: When — Element (MSBuild)
               href: when-element-msbuild.md
-        - name: Dokumentacja zadań
+        - name: Odwołanie do zadania
           items:
             - name: Dokumentacja dotycząca zadań programu MSBuild — omówienie
               href: msbuild-task-reference.md
@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: ToolTaskExtension — Klasa podstawowa
               href: tooltaskextension-base-class.md
+            - name: Diagnozowanie błędów zadań
+              href: diagnosing-task-failures.md
             - name: AL (Assembly Linker) — Zadanie
               href: al-assembly-linker-task.md
             - name: AspNetCompiler — Zadanie
