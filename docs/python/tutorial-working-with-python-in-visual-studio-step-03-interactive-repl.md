@@ -11,21 +11,21 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3576e34b52e524b88300c089c2beda0be6ed0e28
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740020"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831869"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Krok 3. Korzystanie z okna interaktywnego REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Krok 3: Korzystanie z okna interaktywnego REPL
 
 **Poprzedni krok: [Zapisz i uruchom kod](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 Visual Studio **Interactive** okna dla języka Python zapewnia rozbudowane odczytu — ocena print-loop (REPL) który znacznie skraca zwykle cyklu Edycja--kompilacja--debugowanie. **Interactive** okna oferuje wszystkie funkcje środowiska REPL wiersza polecenia języka Python. Zapewnia także ją łatwo wymienić kod przy użyciu plików źródłowych w programie Visual Studio edytora, które w przeciwnym razie jest kłopotliwe przy użyciu wiersza polecenia.
 
 > [!NOTE]
-> W przypadku problemów z programem REPL upewnij się, `ipython` że `ipykernel` zainstalowano pakiety i aby uzyskać pomoc dotyczącą instalowania pakietów, zobacz [kartę pakiety środowiska Python](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> W przypadku problemów z usługą REPL upewnij się, że zainstalowano pakiety `ipython` i `ipykernel`, a aby uzyskać pomoc dotyczącą instalowania pakietów, zobacz [kartę pakiety środowiska Python](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
 1. Otwórz **Interactive** okna, klikając prawym przyciskiem myszy projekt środowiska Python w **Eksploratora rozwiązań** (takie jak **środowiska Python 3.6 (32-bitowy)** pokazano na rysunku wcześniej) i Wybieranie **Otwórz okno interaktywne**. Możesz też wybrać **widoku** > **Windows inne** > **Windows Interactive Python** z głównego menu programu Visual Studio.
 
@@ -54,7 +54,7 @@ Visual Studio **Interactive** okna dla języka Python zapewnia rozbudowane odczy
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Wybierz tylko `import` i `from` instrukcji w *.py* pliku, kliknij prawym przyciskiem myszy i wybierz **Wyślij do środowiska interaktywnego** (lub naciśnij **Ctrl** + **Wprowadź**). Fragment kodu natychmiast jest wklejany do **Interactive** okna i uruchom. Teraz wybierz `make_dot_string` działać, a następnie powtórz tego samego polecenia, które ponownie uruchomi ten fragment kodu. Ponieważ kod definiuje funkcję, możesz szybko przetestować tę funkcję, wywołując kilka razy:
+1. Zaznacz instrukcje funkcji `import`, `from` i `make_dot_string` w pliku *. PR* , kliknij prawym przyciskiem myszy i wybierz polecenie **Wyślij do interaktywnego** (lub naciśnij klawisz **Ctrl**+**Enter**). Fragment kodu natychmiast jest wklejany do **Interactive** okna i uruchom. Teraz wybierz `make_dot_string` działać, a następnie powtórz tego samego polecenia, które ponownie uruchomi ten fragment kodu. Ponieważ kod definiuje funkcję, możesz szybko przetestować tę funkcję, wywołując kilka razy:
 
     ![Wysyłanie kodu do okna interaktywnego i testowanie go](media/vs-getting-started-python-14-interactive4.png)
 
