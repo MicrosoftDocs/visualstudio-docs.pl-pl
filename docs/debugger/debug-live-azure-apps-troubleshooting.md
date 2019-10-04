@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211238"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962932"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
 
-Jeśli kroki opisane w tym artykule nie rozwiążą problemu, wyszukaj problem dotyczący [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html) lub zgłoś nowy problem, wybierając pozycję **Pomoc** > **Wyślij opinię** > **Zgłoś problem** w programie Visual Studio.
+Jeśli kroki opisane w tym artykule nie rozwiązują problemu, wyszukaj problem w [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html) lub zgłoś nowy problem, wybierając **Pomoc** > **Wyślij opinię** > **Zgłoś problem** w programie Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problem: "Attach Snapshot Debugger" napotka błąd kodu stanu HTTP
 
@@ -34,7 +34,7 @@ Ten błąd wskazuje, że wywołanie REST wystawione przez program Visual Studio 
 
 Wykonaj następujące czynności:
 
-* Upewnij się, że konto personalizacji programu Visual Studio ma uprawnienia do subskrypcji i zasobu platformy Azure, do którego dołączasz. Aby szybko ustalić, czy zasób jest dostępny w oknie dialogowym z > **dołączania debugowania Snapshot Debugger...**  > Zasób >  **platformy Azure** **Wybierz istniejący**lub w Eksploratorze chmury.
+* Upewnij się, że konto personalizacji programu Visual Studio ma uprawnienia do subskrypcji i zasobu platformy Azure, do którego dołączasz. Aby szybko ustalić, czy zasób jest dostępny w oknie dialogowym @no__t **debugowania**— 1**Dołącz Snapshot Debugger...**  >  @no__t**zasobów platformy Azure**— 5**Wybierz istniejący**lub w Eksploratorze chmury.
 * Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
 ### <a name="403-forbidden"></a>(403) zabronione
@@ -54,7 +54,8 @@ Ten błąd oznacza, że nie można odnaleźć witryny sieci Web na serwerze.
 Wykonaj następujące czynności:
 
 * Sprawdź, czy witryna sieci Web została wdrożona i uruchomiona na zasobie App Service, do której dołączasz.
-* Sprawdź, czy witryna jest dostępna pod adresem\<https://\>Resource. azurewebsites.NET
+* Sprawdź, czy witryna jest dostępna pod adresem https://@no__t -0resource\>.azurewebsites.net
+* Sprawdź, czy prawidłowo uruchomiona niestandardowa aplikacja sieci Web nie zwraca kodu stanu 404 w przypadku uzyskania dostępu do https://@no__t -0resource\>.azurewebsites.net
 * Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
 ### <a name="406-not-acceptable"></a>(406) nie akceptowalny
@@ -63,7 +64,7 @@ Ten błąd wskazuje, że serwer nie może odpowiedzieć na typ ustawiony w nagł
 
 Wykonaj następujące czynności:
 
-* Sprawdź, czy witryna jest dostępna pod adresem\<https://\>Resource. azurewebsites.NET
+* Sprawdź, czy witryna jest dostępna pod adresem https://@no__t -0resource\>.azurewebsites.net
 * Sprawdź, czy lokacja nie została zmigrowana do nowych wystąpień. Snapshot Debugger używa koncepcji ARRAffinity w przypadku żądań routingu do określonych wystąpień, co sporadycznie może spowodować wystąpienie tego błędu.
 * Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
@@ -156,11 +157,11 @@ Wykonaj następujące czynności:
 
 W Azure App Service programu Visual Studio 2019 jest wymagana nowsza wersja rozszerzenia witryny Snapshot Debugger.  Ta wersja nie jest zgodna ze starszą wersją rozszerzenia witryny Snapshot Debugger używanego przez program Visual Studio 2017.  Podczas próby dołączenia Snapshot Debugger w programie Visual Studio 2019 do Azure App Service, który został wcześniej debugowany przez Snapshot Debugger w programie Visual Studio 2017, zostanie wyświetlony następujący błąd:
 
-![Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual Studio 2019")
+![Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "niezgodne Snapshot Debugger rozszerzeniu witryny programu Visual Studio 2019")
 
 Jeśli używasz programu Visual Studio 2017 do dołączania Snapshot Debugger do Azure App Service, który został wcześniej debugowany przez Snapshot Debugger w programie Visual Studio 2019, wystąpi następujący błąd:
 
-![Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual Studio 2017")
+![Niezgodne Snapshot Debugger rozszerzenia witryny programu Visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "niezgodne Snapshot Debugger rozszerzeniu witryny programu Visual Studio 2017")
 
 Aby rozwiązać ten problem, Usuń następujące ustawienia aplikacji z Azure Portal i Dołącz Snapshot Debugger ponownie:
 
@@ -189,7 +190,7 @@ Dzienniki agentów można znaleźć w następujących lokalizacjach:
 Dzienniki Instrumentacji można znaleźć w następujących lokalizacjach:
 
 - App Services:
-  - Rejestrowanie błędów jest wysyłane automatycznie do D:\Home\LogFiles\eventlog.XML, zdarzenia są oznaczane `<Provider Name="Instrumentation Engine" />` za pomocą lub "punktami przerwania produkcyjnego"
+  - Rejestrowanie błędów jest wysyłane automatycznie do D:\Home\LogFiles\eventlog.xml, zdarzenia są oznaczane za pomocą `<Provider Name="Instrumentation Engine" />` lub "produkcyjnych punktów przerwania"
 - MASZYNA WIRTUALNA/VMSS:
   - Zaloguj się do maszyny wirtualnej i Otwórz Podgląd zdarzeń.
   - Otwórz następujący widok: *Dzienniki systemu Windows > aplikacji*.

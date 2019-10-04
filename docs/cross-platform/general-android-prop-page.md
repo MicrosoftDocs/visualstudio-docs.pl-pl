@@ -1,12 +1,12 @@
 ---
-title: Ogólne właściwości projektu (Android C++) | Dokumentacja firmy Microsoft
+title: Ogólne właściwości projektu (Android C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
@@ -22,25 +22,25 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4526a329b4e047a449995b7b5ef66362aff1cc8f
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818950"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950583"
 ---
 # <a name="general-project-properties-android-c"></a>Ogólne właściwości projektu (Android C++)
 
-Właściwość | Opis | Opcje
+Właściwość | Opis | Decyzji
 --- | ---| ---
 Katalog wyjściowy | Określa ścieżkę względną do katalogu pliku wyjściowego; może zawierać zmienne środowiskowe.
 Katalog pośredni | Określa ścieżkę względną do pośredniego katalogu plików; może zawierać zmienne środowiskowe.
-Nazwa obiektu docelowego | Określa nazwę pliku, który zostanie wygenerowany przez projekt.
-Rozszerzenie docelowe | Określa rozszerzenie pliku, który zostanie wygenerowany przez projekt. (Przykład: *.exe* lub *.dll*)
-Rozszerzenia do usunięcia podczas oczyszczania | Rozdzielana średnikami Specyfikacja symboli wieloznacznych, które pliki w katalogu pośrednim mają zostać usunięte podczas oczyszczania lub ponownie skompiluj.
-Plik dziennika kompilacji | Określa plik dziennika kompilacji do zapisu, gdy rejestrowanie kompilacji jest włączona.
-Zestaw narzędzi platformy | Określa zestaw narzędzi, używana do tworzenia bieżącej konfiguracji; Jeśli nie jest używany zestaw, domyślny zestaw narzędzi
-Typ konfiguracji | Określa typ danych wyjściowych generowanych przez tę konfigurację. | **Biblioteka dynamiczna (SO)** — Biblioteka dynamiczna (*SO*)<br>**Biblioteka statyczna (.a)** — biblioteka statyczna (*.a*)<br>**Narzędzie** — narzędzie<br>**Plik reguł programu make** -pliku reguł programu make<br>
-Docelowy poziom interfejsu API | Android NDK docelowy poziom interfejsu API przez tę konfigurację.
-Użycie biblioteki STL | Określa, które standardowej biblioteki języka C++ do użycia dla tej konfiguracji. | **Minimalny Biblioteka środowiska uruchomieniowego języka C++ (system)**<br>**C++biblioteka statyczna środowiska uruchomieniowego (gabi ++ _static)**<br>**C++Biblioteka udostępniona środowiska uruchomieniowego (gabi ++ _shared)**<br>**Biblioteka statyczna środowiska uruchomieniowego STLport (stlport_static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego STLport (stlport_shared)**<br>**Biblioteka statyczna GNU STL (gnustl_static)**<br>**Biblioteka udostępniona GNU STL (gnustl_shared)**<br>**Biblioteka libc ++ LLVM statyczne (c ++ _static)**<br>**Biblioteka libc ++ LLVM udostępnionego (c ++ _shared)**<br>
-Tryb Thumb | Generuj kod wykonujący dla mikroarchitektury thumb. Dotyczy tylko architektury arm. | **Thumb**<br>**ARM**<br>**Disabled (Wyłączone)**<br>
+Nazwa obiektu docelowego | Określa nazwę pliku, który zostanie wygenerowany przez ten projekt.
+Rozszerzenie docelowe | Określa rozszerzenie pliku, który zostanie wygenerowany przez ten projekt. (Przykład: *. exe* lub *. dll*)
+Rozszerzenia do usunięcia podczas czyszczenia | Rozdzielana średnikami Specyfikacja symboli wieloznacznych, dla których pliki w katalogu pośrednim mają zostać usunięte podczas czyszczenia lub odbudowy.
+Plik dziennika kompilacji | Określa plik dziennika kompilacji, w którym ma zostać zapisany wpis, gdy rejestrowanie kompilacji jest włączone.
+Zestaw narzędzi platformy | Określa zestaw narzędzi używany do tworzenia bieżącej konfiguracji; Jeśli nie zostanie ustawiona, używany jest domyślny zestaw narzędzi
+Typ konfiguracji | Określa typ danych wyjściowych generowanych przez tę konfigurację. | **Biblioteka dynamiczna (. so)** — Biblioteka dynamiczna ( *. tak*)<br>**Biblioteka statyczna (. a)** — Biblioteka statyczna ( *. a*)<br>**Narzędzia — narzędzie**<br>**Reguł programu make** — plik reguł programu make<br>
+Docelowy poziom interfejsu API | Poziom interfejsu API NDK dla systemu Android, którego dotyczy ta konfiguracja.
+Użycie STL | Określa, C++ która Biblioteka standardowa ma być używana dla tej konfiguracji. | **Minimalna C++ Biblioteka środowiska uruchomieniowego (system)**<br>**C++Biblioteka statyczna środowiska uruchomieniowego (Gabi + + _static)**<br>**C++udostępniona biblioteka środowiska uruchomieniowego (Gabi + + _shared)**<br>**Biblioteka statyczna środowiska uruchomieniowego STLport (stlport_static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego STLport (stlport_shared)**<br>**Biblioteka statyczna GNU STL (gnustl_static)**<br>**Udostępniona biblioteka GNU STL (gnustl_shared)**<br>**Biblioteka statyczna LLVM libc + + (c++ _static)**<br>**Biblioteka udostępniona LLVM libc + + (c++ _shared)**<br>
+Tryb przewijania | Generuj kod, który jest wykonywany dla mikroarchitektury przycisku przewijania. Dotyczy to tylko architektury ARM. | **Odcisk**<br>**ARM**<br>**Disabled (Wyłączone)**<br>

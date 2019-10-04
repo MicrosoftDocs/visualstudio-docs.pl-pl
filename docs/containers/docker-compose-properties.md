@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 06a1c5b637ca2ed9306162ee1960c60d103e5843
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185981"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950635"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose właściwości kompilacji
 
@@ -19,7 +19,7 @@ Oprócz właściwości kontrolujących poszczególne projekty platformy Docker, 
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Jak ustawić właściwości programu MSBuild
 
-Aby ustawić wartość właściwości, edytuj plik projektu. W przypadku właściwości Docker Compose ten plik projektu jest jednym z rozszerzeniem. dcproj, o ile nie wskazano inaczej w tabeli w następnej sekcji. Załóżmy na przykład, że chcesz określić uruchamianie przeglądarki po rozpoczęciu debugowania. `DockerLaunchAction` Właściwość w pliku projektu. dcproj można ustawić w następujący sposób.
+Aby ustawić wartość właściwości, edytuj plik projektu. W przypadku właściwości Docker Compose ten plik projektu jest jednym z rozszerzeniem. dcproj, o ile nie wskazano inaczej w tabeli w następnej sekcji. Załóżmy na przykład, że chcesz określić uruchamianie przeglądarki po rozpoczęciu debugowania. Właściwość `DockerLaunchAction` w pliku projektu. dcproj można ustawić w następujący sposób.
 
 ```xml
 <PropertyGroup>
@@ -27,18 +27,18 @@ Aby ustawić wartość właściwości, edytuj plik projektu. W przypadku właśc
 </PropertyGroup>
 ```
 
-Możesz dodać ustawienie właściwości do istniejącego `PropertyGroup` elementu lub jeśli nie istnieje, Utwórz nowy `PropertyGroup` element.
+Możesz dodać ustawienie właściwości do istniejącego elementu `PropertyGroup` lub jeśli nie istnieje, Utwórz nowy element `PropertyGroup`.
 
 ## <a name="docker-compose-msbuild-properties"></a>Docker Compose właściwości programu MSBuild
 
 W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla projektów Docker Compose.
 
-| Nazwa właściwości | Lokalizacja | Opis | Wartość domyślna  |
+| Nazwa właściwości | Location | Opis | Wartość domyślna  |
 |---------------|----------|-------------|----------------|
-|DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane `docker-compose build` do polecenia. Na przykład:`--parallel --pull` |
-|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane `docker-compose down` do polecenia. Na przykład:`--timeout 500`|-|  
+|DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry do przekazania do `docker-compose build` polecenia. Na przykład: `--parallel --pull` |
+|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry do przekazania do `docker-compose down` polecenia. Na przykład: `--timeout 500`|-|  
 |DockerComposeProjectPath|CSPROJ lub vbproj|Ścieżka względna do pliku platformy Docker-redagowanie projektu (dcproj). Ustaw tę właściwość podczas publikowania projektu usługi, aby znaleźć skojarzone ustawienia kompilacji obrazu przechowywane w pliku Docker-Compose. yml.|-|
-|DockerComposeUpArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane `docker-compose up` do polecenia. Na przykład:`--timeout 500`|-|
+|DockerComposeUpArguments|dcproj|Określa dodatkowe parametry do przekazania do `docker-compose up` polecenia. Na przykład: `--timeout 500`|-|
 |DockerLaunchAction| dcproj | Określa akcję uruchamiania do wykonania na F5 lub CTRL + F5.  Dozwolone wartości to None, LaunchBrowser i LaunchWCFTestClient|Brak|
 |DockerLaunchBrowser| dcproj | Wskazuje, czy ma zostać uruchomiona przeglądarka. Ignorowany, jeśli określono DockerLaunchAction. | False |
 |DockerServiceName| dcproj|Jeśli określono DockerLaunchAction lub DockerLaunchBrowser, DockerServiceName jest nazwą usługi, która powinna zostać uruchomiona.  Użyj tej właściwości, aby określić, który z potencjalnie wielu projektów, do których może się odwoływać plik platformy Docker, zostanie uruchomiony.|-|
@@ -46,7 +46,7 @@ W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla 
 |DockerTargetOS| dcproj | Docelowy system operacyjny używany podczas kompilowania obrazu platformy Docker.|-|
 
 > [!NOTE]
-> DockerComposeBuildArguments, DockerComposeDownArguments i DockerComposeUpArguments są nowe w programie Visual Studio 2019 w wersji 16,3 Preview 3.
+> DockerComposeBuildArguments, DockerComposeDownArguments i DockerComposeUpArguments są nowe w programie Visual Studio 2019 w wersji 16,3.
 
 ## <a name="docker-compose-file-labels"></a>Docker Compose etykiety plików
 

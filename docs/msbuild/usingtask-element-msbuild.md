@@ -1,5 +1,5 @@
 ---
-title: Usingtask — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: UsingTask — element (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411008"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962916"
 ---
-# <a name="usingtask-element-msbuild"></a>Usingtask — element (MSBuild)
-Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.md) element do zestawu zawierającego implementację zadania.
+# <a name="usingtask-element-msbuild"></a>UsingTask, element (MSBuild)
+Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-element-msbuild.md) , do zestawu, który zawiera implementację zadania.
 
- \<Projekt > \<UsingTask >
+ \<Project > \<UsingTask >
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,6 +39,9 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
     Condition="'String A'=='String B'" />
 ```
 
+> [!NOTE]
+> W przeciwieństwie do właściwości i elementów, zostanie użyty *pierwszy* element `UsingTask`, który ma zastosowanie do `TaskName`. Aby zastąpić zadania, należy zdefiniować nowy `UsingTask` *przed* istniejącym.
+
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
@@ -46,35 +49,35 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`AssemblyName`|Albo `AssemblyName` atrybutu lub `AssemblyFile` atrybut jest wymagany.<br /><br /> Nazwa zestawu do załadowania. `AssemblyName` Atrybut akceptuje zestawy o silnych nazwach, silne nazwy nie jest wymagany. Przy użyciu tego atrybutu jest równoważne z ładowaniem zestawu, za pomocą <xref:System.Reflection.Assembly.Load%2A> metody na platformie .NET.<br /><br /> Nie można używać tego atrybutu, jeśli `AssemblyFile` atrybut jest używany.|
-|`AssemblyFile`|Albo `AssemblyName` lub `AssemblyFile` atrybut jest wymagany.<br /><br /> Ścieżka pliku zestawu. Ten atrybut akceptuje pełne ścieżki lub ścieżek względnych. Względne ścieżki są względne wobec katalogu pliku projektu lub pliku obiektów docelowych gdzie `UsingTask` elementu jest zadeklarowany. Przy użyciu tego atrybutu jest równoważne z ładowaniem zestawu, za pomocą <xref:System.Reflection.Assembly.LoadFrom%2A> metody na platformie .NET.<br /><br /> Nie można używać tego atrybutu, jeśli `AssemblyName` atrybut jest używany.|
-|`TaskFactory`|Atrybut opcjonalny.<br /><br /> Określa klasę w zestawie, który jest odpowiedzialny za Generowanie wystąpień z określonym `Task` nazwy.  Użytkownik może również określić `TaskBody` jako element podrzędny, która fabryka zadań odbiera używana do generowania zadania. Zawartość `TaskBody` są specyficzne dla fabryki zadań.|
-|`TaskName`|Atrybut wymagany.<br /><br /> Nazwa zadania, odwołanie z zestawu. Możliwe są niejasności, ten atrybut należy zawsze określić pełną przestrzeni nazw. Jeśli występują niejasności, program MSBuild wybiera dopasowanie dowolnego spowodować uzyskanie nieoczekiwanych wyników.|
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do oceny. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
+|`AssemblyName`|Wymagany jest atrybut `AssemblyName` lub atrybut `AssemblyFile`.<br /><br /> Nazwa zestawu do załadowania. Atrybut `AssemblyName` akceptuje zestawy o silnych nazwach, chociaż silne nazewnictwo nie jest wymagane. Użycie tego atrybutu jest równoznaczne z załadowaniem zestawu za pomocą metody <xref:System.Reflection.Assembly.Load%2A> w programie .NET.<br /><br /> Nie można użyć tego atrybutu, jeśli jest używany atrybut `AssemblyFile`.|
+|`AssemblyFile`|Wymagany jest atrybut `AssemblyName` lub `AssemblyFile`.<br /><br /> Ścieżka pliku zestawu. Ten atrybut akceptuje pełne ścieżki lub ścieżki względne. Ścieżki względne są względne dla katalogu pliku projektu lub pliku docelowego, gdzie jest zadeklarowany element `UsingTask`. Użycie tego atrybutu jest równoznaczne z załadowaniem zestawu za pomocą metody <xref:System.Reflection.Assembly.LoadFrom%2A> w programie .NET.<br /><br /> Nie można użyć tego atrybutu, jeśli jest używany atrybut `AssemblyName`.|
+|`TaskFactory`|Atrybut opcjonalny.<br /><br /> Określa klasę w zestawie, która jest odpowiedzialna za generowanie wystąpień określonej `Task` nazwy.  Użytkownik może także określić `TaskBody` jako element podrzędny, który fabryka zadań odbiera i używa do wygenerowania zadania. Zawartość `TaskBody` jest specyficzna dla fabryki zadań.|
+|`TaskName`|Atrybut wymagany.<br /><br /> Nazwa zadania do odwołania z zestawu. Jeśli niejasności są możliwe, ten atrybut powinien zawsze określać pełne przestrzenie nazw. Jeśli jest niejasności, MSBuild wybiera dowolne dopasowanie, co może spowodować nieoczekiwane wyniki.|
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Zestaw parametrów, które pojawiają się na zadanie, który jest generowany przez określony `TaskFactory`.|
-|[Zadanie](../msbuild/task-element-msbuild.md)|Dane, które są przekazywane do `TaskFactory` do generowania wystąpienia zadania.|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Zestaw parametrów, które są wyświetlane w zadaniu wygenerowanym przez określony `TaskFactory`.|
+|[Zadanie](../msbuild/task-element-msbuild.md)|Dane, które są przesyłane do `TaskFactory` w celu wygenerowania wystąpienia zadania.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
+| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="remarks"></a>Uwagi
- Zmienne środowiskowe, właściwości wiersza polecenia, właściwości na poziomie projektu i elementy na poziomie projektu może być przywoływany w `UsingTask` elementy zawarte w pliku projektu, albo plik bezpośrednio lub za pośrednictwem importowanym projekcie. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
+ Zmienne środowiskowe, właściwości wiersza polecenia, właściwości na poziomie projektu i elementy na poziomie projektu mogą być przywoływane w elementach `UsingTask` zawartych w pliku projektu bezpośrednio lub za pomocą zaimportowanego pliku projektu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
-> Właściwości na poziomie projektu i elementy nie mają znaczenia jeśli `UsingTask` element pochodzi z jednego z *.tasks* pliki, które są globalnie zarejestrowane w usłudze aparatu MSBuild. Wartości na poziomie projektu nie są globalne do programu MSBuild.
+> Właściwości na poziomie projektu i elementy nie mają znaczenia, jeśli element `UsingTask` pochodzi z jednego z plików *. Tasks* , które są globalnie zarejestrowane w aparacie MSBuild. Wartości na poziomie projektu nie są globalne dla programu MSBuild.
 
- W wersji 4.0 programu MSBuild, przy użyciu zadań mogą być ładowane z *.overridetask* plików.
+ W programie MSBuild 4,0 przy użyciu zadań można ładować z plików *. overridetask* .
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak używać `UsingTask` element z `AssemblyName` atrybutu.
+ Poniższy przykład pokazuje, jak używać elementu `UsingTask` z atrybutem `AssemblyName`.
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
@@ -90,7 +93,7 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
 ```
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak używać `UsingTask` element z `AssemblyFile` atrybutu.
+ Poniższy przykład pokazuje, jak używać elementu `UsingTask` z atrybutem `AssemblyFile`.
 
 ```xml
 <UsingTask TaskName="Email"

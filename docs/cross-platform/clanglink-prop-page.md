@@ -1,12 +1,12 @@
 ---
-title: Clang właściwości konsolidatora (Android C++) | Dokumentacja firmy Microsoft
+title: Właściwości konsolidatora Clang ( C++Android) | Microsoft Docs
 ms.custom: ''
 ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 66e88848-116c-4eb0-bc57-183394d35b57
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.VCLinkerTool.OutputFile
@@ -32,35 +32,35 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 16dcb7ff5925f341fc78b57f1d9a4f011a27d576
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8f138b6c496f9dec32ad44dbdfa2064dd639990
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815780"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950684"
 ---
-# <a name="clang-linker-properties-android-c"></a>Clang właściwości konsolidatora (Android C++)
+# <a name="clang-linker-properties-android-c"></a>Właściwości konsolidatora Clang ( C++Android)
 
-Właściwość | Opis | Opcje
+Właściwość | Opis | Decyzji
 --- | ---| ---
-Plik wyjściowy | Opcja przesłania domyślną nazwę i lokalizację programu tworzonego przez konsolidatora. (-o)
+Plik wyjściowy | Opcja zastępuje domyślną nazwę i lokalizację programu tworzonego przez konsolidatora. (-o)
 Pokaż postęp | Drukuje wiadomości dotyczące postępu konsolidatora.
-Wersja | -Version — opcja nakazuje konsolidatorowi umieszczenie numeru wersji w nagłówku pliku wykonywalnego.
-Włącz pełne dane wyjściowe | Verbose — opcja nakazuje konsolidatorowi wysyłanie pełnych komunikatów na potrzeby debugowania.
-Włącz konsolidację przyrostową | Ta opcja nakazuje konsolidatorowi włączenie konsolidowania przyrostowego.
-Ścieżka wyszukiwania biblioteki udostępnionej | Umożliwia użytkownikowi Wypełnianie ścieżki wyszukiwania biblioteki udostępnionej.
-Dodatkowe katalogi biblioteki | Umożliwia użytkownikowi przesłanianie ścieżki środowiskowej biblioteki. (-L folder).
-Raport nierozpoznanych odwołań do symboli | Włączenie tej opcji będzie zgłaszać nierozpoznanych odwołań do symboli.
-Optymalizacja pod kątem użycia pamięci | Optymalizuj pod kątem użycia pamięci przez kątem tabel symboli, zgodnie z potrzebami.
-Ignoruj określone biblioteki domyślne | Określa jedną lub więcej nazw bibliotek domyślnych do zignorowania.
-Wymuszaj odwołania do symboli | Symbol wymuszania do można wpisać w pliku wyjściowym jako niezdefiniowanego symbolu.
-Informacje o symbolach debugera | Informacje o symbolach w pliku danych wyjściowych debugera. | **Uwzględnij wszystkie**<br>**Pomiń niepotrzebne symbole na potrzeby przetwarzania relokacji**<br>**Pomiń informacje o symbolach debugera tylko**<br>**Pomiń wszystkie informacje o symbolach**<br>
-Informacje o symbolach debugera pakietu | Usuń informacje o symbolach debugera przed pakowania.  Kopię oryginalny plik binarny będzie służyć do debugowania.
-Nazwa pliku mapy | Opcja Map nakazuje konsolidatorowi utworzenie pliku mapy o nazwie określonej przez użytkownika.
-Oznacz zmienne tylko do odczytu po relokacji | Ta opcja oznacza zmienne jako tylko do odczytu po relokacji.
+Version | Opcja-Version nakazuje konsolidatorowi umieszczenie numeru wersji w nagłówku pliku wykonywalnego.
+Włącz pełne dane wyjściowe | Opcja-verbose nakazuje konsolidatorowi wyprowadzanie pełnych komunikatów na potrzeby debugowania.
+Włącz konsolidację przyrostową | Opcja nakazuje konsolidatorowi włączenie konsolidacji przyrostowej.
+Ścieżka wyszukiwania biblioteki udostępnionej | Zezwala użytkownikowi na wypełnienie ścieżki wyszukiwania biblioteki udostępnionej.
+Dodatkowe katalogi biblioteki | Zezwala użytkownikowi na przesłanianie ścieżki biblioteki środowiskowej. (-L folder).
+Zgłoś nierozpoznane odwołania do symboli | Ta opcja po włączeniu spowoduje zgłoszenie nierozpoznanych odwołań do symboli.
+Optymalizuj pod kątem użycia pamięci | Optymalizuj pod kątem użycia pamięci przez odczytanie tabel symboli stosownie do potrzeb.
+Ignoruj określone biblioteki domyślne | Określa co najmniej jedną nazwę bibliotek domyślnych do zignorowania.
+Wymuszaj odwołania do symboli | Wymuś wprowadzenie symbolu w pliku wyjściowym jako niezdefiniowanego symbolu.
+Informacje o symbolach debugera | Informacje o symbolach debugera z pliku wyjściowego. | **Uwzględnij wszystko**<br>**Pomiń niepotrzebne symbole na potrzeby przetwarzania relokacji**<br>**Pomiń tylko informacje o symbolach debugera**<br>**Pomiń wszystkie informacje o symbolach**<br>
+Informacje o symbolach debugera pakietów | Rozpakuj informacje o symbolach debugera przed opakowaniem.  Kopia oryginalnego pliku binarnego zostanie użyta do debugowania.
+Nazwa pliku mapy | Opcja map nakazuje konsolidatorowi utworzenie pliku mapy o nazwie określonej przez użytkownika.
+Oznacz zmienne jako tylko do odczytu po relokacji | Ta opcja oznacza zmienne jako tylko do odczytu po relokacji.
 Włącz natychmiastowe powiązanie funkcji | Ta opcja oznacza obiekt do natychmiastowego powiązania funkcji.
 Wymagaj stosu wykonywalnego | Ta opcja oznacza dane wyjściowe jako niewymagające stosu wykonywalnego.
-Całe archiwum | Całe archiwum używa całego kodu ze źródeł i zależności dodatkowych.
-Dodatkowe opcje | Dodatkowe opcje.
+Całe archiwum | Całe archiwum używa całego kodu ze źródeł i dodatkowych zależności.
+Opcje dodatkowe | Opcje dodatkowe.
 {1&gt;Dodatkowe zależności&lt;1} | Określa dodatkowe elementy do dodania do wiersza polecenia konsolidacji.
-Zależności biblioteki | Ta opcja umożliwia określenie dodatkowych bibliotek, które mają zostać dodane do wiersza polecenia konsolidatora. Dodatkowe biblioteki zostaną dodane w celu uruchomienia wiersza polecenia konsolidatora z *lib* i kończyć się znakiem *.a* lub *SO* rozszerzenia.  (-lFILE)
+Zależności biblioteki | Ta opcja umożliwia określenie dodatkowych bibliotek, które mają zostać dodane do wiersza polecenia konsolidatora. Dodatkowe biblioteki zostaną dodane na końcu wiersza polecenia konsolidatora z *biblioteki lib* i kończyć z rozszerzeniem. *a* lub *.*  (-lFILE)
