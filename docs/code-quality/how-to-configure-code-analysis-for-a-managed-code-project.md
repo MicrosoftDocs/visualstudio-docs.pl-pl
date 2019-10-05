@@ -13,21 +13,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 86aa308369ef93792126c7f8da5f59f94ef0c02a
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551050"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975117"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Instrukcje: Konfigurowanie starszej analizy dla kodu zarządzanego
 
 W programie Visual Studio można wybrać spośród listy [zestawów reguł](../code-quality/rule-set-reference.md) analizy kodu, które mają zostać zastosowane do projektu kodu zarządzanego. Domyślnie **reguł zalecanych Minimum Microsoft** zestaw reguł jest zaznaczone, ale można zastosować inną regułę, ustaw, jeśli to konieczne. Zestawy reguł można zastosować do jednego lub wielu projektów w rozwiązaniu.
 
-Informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci Web ASP.NET można znaleźć w temacie [How to: Skonfiguruj analizę kodu dla aplikacji](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)sieci Web ASP.NET.
-
 > [!NOTE]
-> Ten artykuł ma zastosowanie do starszej analizy, a nie do [.NET compiler platform analizatorów kodu](use-roslyn-analyzers.md), które nie uruchamiają analizy kodu po kompilacji.
+> Ten artykuł ma zastosowanie do starszej analizy, a nie do [.NET compiler platform analizatorów kodu](use-roslyn-analyzers.md).
 
 ## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Konfigurowanie zestawu reguł dla projektu .NET Framework
 
@@ -37,20 +35,40 @@ Informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci Web ASP.
 
    - Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**, a następnie wybierz pozycję **analizy kodu** kartę.
 
-1. W **konfiguracji** i **platformy** listy, wybierz platformę konfiguracji i docelowej kompilacji.
+2. W **konfiguracji** i **platformy** listy, wybierz platformę konfiguracji i docelowej kompilacji.
 
-1. Aby uruchomić analizę kodu, za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji** pole wyboru. Można również uruchomić analizę kodu ręcznie, wybierając **analizy** > **Uruchom analizę kodu** > **Uruchom analizę kodu dla \<nazwa_projektu >** .
+::: moniker range="vs-2017"
 
-1. Domyślnie program analizy kodu nie raportuje ostrzeżenia z kodu, który jest generowany automatycznie przez narzędzia zewnętrzne. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, należy wyczyścić **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
+3. Aby uruchomić analizę kodu za każdym razem, gdy projekt zostanie skompilowany przy użyciu wybranej konfiguracji, wybierz pozycję **Włącz analizę kodu podczas kompilacji**. Można również uruchomić analizę kodu ręcznie, wybierając **analizy** > **Uruchom analizę kodu** > **Uruchom analizę kodu dla \<nazwa_projektu >** .
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Aby uruchomić analizę kodu za każdym razem, gdy projekt został skompilowany przy użyciu wybranej konfiguracji, wybierz pozycję **Uruchom przy kompilacji** w sekcji **analizatory binarne** . Można również uruchomić analizę kodu ręcznie, wybierając **analizy** > **Uruchom analizę kodu** > **Uruchom analizę kodu dla \<nazwa_projektu >** .
+
+::: moniker-end
+
+4. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, należy wyczyścić **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
 
     > [!NOTE]
-    > Ta opcja nie pomija błędy analizy kodu i ostrzeżenia z wygenerowanego kodu podczas błędy i ostrzeżenia są wyświetlane w formularzach i szablony. Zarówno można przeglądać i zachować kod źródłowy dla formularza lub szablon, bez konieczności on zastąpiony.
+    > Ta opcja nie pomija błędy analizy kodu i ostrzeżenia z wygenerowanego kodu podczas błędy i ostrzeżenia są wyświetlane w formularzach i szablony. Możesz wyświetlić i zachować kod źródłowy formularza lub szablonu i nie zostanie on zastąpiony.
 
-1. W **Uruchom ten zestaw reguł** listy, wykonaj jedną z następujących czynności:
+::: moniker range="vs-2017"
+
+5. W **Uruchom ten zestaw reguł** listy, wykonaj jedną z następujących czynności:
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. Na liście **aktywne reguły** wykonaj jedną z następujących czynności:
+
+::: moniker-end
 
     - Wybierz zestaw reguł, który chcesz użyć.
 
-    - Wybierz  **\<Przeglądaj … >** można znaleźć, ustaw istniejącej reguły niestandardowe, który nie jest na liście.
+    - Wybierz pozycję **\<Browse >** , aby znaleźć istniejący niestandardowy zestaw reguł, którego nie ma na liście.
 
     - Zdefiniuj [niestandardowego zestawu reguł](../code-quality/how-to-create-a-custom-rule-set.md).
 
@@ -77,4 +95,3 @@ Domyślnie są przypisywane projektów zarządzanych rozwiązania *reguł zaleca
 ## <a name="see-also"></a>Zobacz także
 
 - [Informacje o zestawie reguł analizy kodu](../code-quality/rule-set-reference.md)
-- [Instrukcje: Konfigurowanie analizy kodu dla aplikacji sieci Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

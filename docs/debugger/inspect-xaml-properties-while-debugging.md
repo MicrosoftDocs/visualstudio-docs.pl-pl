@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: e1d26886eecf09ff8195b7a38338fa62e7f1d0bf
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322547"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974949"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Sprawdzanie właściwości XAML podczas debugowania
 Możesz uzyskać widok działającego kodu XAML w czasie rzeczywistym za pomocą **aktywnego drzewa wizualnego** i **Eksploratora właściwości na żywo**. Te narzędzia udostępniają widok drzewa elementów interfejsu użytkownika uruchomionej aplikacji XAML i pokazują właściwości środowiska uruchomieniowego każdego z wybranych elementów interfejsu użytkownika.
@@ -71,20 +71,22 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 Skompiluj projekt, a następnie rozpocząć debugowanie. (Konfiguracja kompilacji musi być debugowana, nie wersja. Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md).)
 
-Po wyświetleniu okna, kliknij przycisk **Dodaj element** kilka razy. Powinieneś wyglądać następująco:
+Po wyświetleniu okna powinien pojawić się pasek narzędzi w aplikacji w działającej aplikacji. 
 
-![Główne okno aplikacji](../debugger/media/livevisualtree-app.png "LiveVIsualTree — aplikacja")
+![Główne okno aplikacji](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")
 
-Teraz otwórz okno **dynamiczne drzewo wizualne** (**debuguj > Windows > dynamicznym drzewie wizualnym**lub znajdź je po lewej stronie IDE). Przeciągnij go z położenia dokowania, aby można było zobaczyć to okno i okno **właściwości na żywo** obok siebie. W oknie **dynamiczne drzewo wizualne** rozwiń węzeł **ContentPresenter** . Powinien zawierać węzły dla przycisku i pola listy. Rozwiń pole listy (a następnie **ScrollContentPresenter** i **ItemsPresenter**), aby znaleźć elementy pola listy. Okno powinno wyglądać następująco:
+Teraz kliknij przycisk **Dodaj element** kilka razy, aby dodać nowe elementy do listy.
 
-![ListBoxItems w dynamicznym drzewie wizualnym](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree — ListBoxItems")
+Następnie otwórz okno **dynamiczne drzewo wizualne** , klikając przycisk z lewej strony na pasku narzędzi w aplikacji (lub przechodząc do **debugowania > Windows > dynamicznym drzewie wizualnym**). Po otwarciu należy przeciągnąć ją z lokalizacji dokującej, aby można było zobaczyć to okno i okno **właściwości na żywo** obok siebie. W oknie **dynamiczne drzewo wizualne** rozwiń węzeł **ContentPresenter** . Powinien zawierać węzły dla przycisku i pola listy. Rozwiń pole listy (a następnie **ScrollContentPresenter** i **ItemsPresenter**), aby znaleźć elementy pola listy. Okno powinno wyglądać następująco:
+
+![ListBoxItems w dynamicznym drzewie wizualnym](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")
 
 Wróć do okna aplikacji i Dodaj kilka innych elementów. W **dynamicznym drzewie wizualnym**powinny być widoczne więcej elementów pola listy.
 
-Teraz przyjrzyjmy się właściwościom jednego z elementów pola listy. Wybierz pierwszy element pola listy w **dynamicznym drzewie wizualnym** i kliknij ikonę **Pokaż właściwości** na pasku narzędzi. Powinien pojawić się **Eksplorator właściwości na żywo** . Należy pamiętać, że pole **Content** ma wartość "Item1 —", a pole**koloru** **tła** > jest **#FFFFFFE0**. Wróć do **aktywnego drzewa wizualnego** i wybierz drugi element pola listy. **Eksplorator właściwości na żywo** powinien pokazać, że pole **Content** ma wartość "Item2 —", a pole**koloru** **tła** > jest **#FFD3D3D3**.
+Teraz przyjrzyjmy się właściwościom jednego z elementów pola listy. Wybierz pierwszy element pola listy w **dynamicznym drzewie wizualnym** i kliknij ikonę **Pokaż właściwości** na pasku narzędzi. Powinien pojawić się **Eksplorator właściwości na żywo** . Należy pamiętać, że pole **Content** ma wartość "Item1 —", a pole**koloru**  >  w **tle**jest **#FFFFFFE0**. Wróć do **aktywnego drzewa wizualnego** i wybierz drugi element pola listy. **Eksplorator właściwości na żywo** powinien pokazać, że pole **Content** ma wartość "Item2 —", a pole**koloru** w **tle** >  jest **#FFD3D3D3**.
 
 > [!NOTE]
-> Żółte obramowanie wokół właściwości w **Eksploratorze właściwości na żywo** oznacza, że wartość właściwości jest ustawiana za pośrednictwem powiązania, takiego `Color = {BindingExpression}`jak. Zielona krawędź oznacza, że wartość jest ustawiana za pomocą zasobu, `Color = {StaticResource MyBrush}`na przykład.
+> Żółte obramowanie wokół właściwości w **Eksploratorze właściwości na żywo** oznacza, że wartość właściwości jest ustawiana za pośrednictwem powiązania, takiego jak `Color = {BindingExpression}`. Zielona krawędź oznacza, że wartość jest ustawiana za pomocą zasobu, na przykład `Color = {StaticResource MyBrush}`.
 
 Rzeczywista struktura języka XAML zawiera wiele elementów, które prawdopodobnie nie są bezpośrednio zainteresowane. Jeśli nie znasz dobrze kodu, być może masz czas, w którym możesz uzyskać informacje o tym, czego szukasz. Tak więc **dynamiczne drzewo wizualne** zawiera kilka sposobów umożliwiających znalezienie elementu, który ma być badany, za pomocą interfejsu użytkownika aplikacji.
 
@@ -92,7 +94,7 @@ Rzeczywista struktura języka XAML zawiera wiele elementów, które prawdopodobn
 
 **Wyświetl moduły definiowania układu w działającej aplikacji**. Możesz włączyć ten tryb po wybraniu przycisku bezpośrednio z prawej strony przycisku Włącz wybór. Gdy jest włączona funkcja **modułów definiowania układu wyświetlania** , powoduje, że w oknie aplikacji wyświetlane są poziome i pionowe linie wzdłuż granic zaznaczonego obiektu, dzięki czemu można zobaczyć, jakie elementy są wyrównane do, a także prostokąty pokazujące marginesy. Na przykład Włącz opcje **Włącz zaznaczenie** i **układ wyświetlania** w, a następnie wybierz blok **Dodawanie tekstu elementu** w aplikacji. Powinien zostać wyświetlony węzeł blok tekstu w **dynamicznym drzewie wizualnym** i właściwości bloku tekstu w **podglądzie właściwości na żywo**, a także w poziomie i w pionie na granicach bloku tekstu.
 
-![LivePropertyViewer w DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer — DisplayLayout")
+![LivePropertyViewer w DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
 
 **Podgląd zaznaczenia**. Możesz włączyć ten tryb, wybierając trzeci przycisk z lewej strony na dynamicznym pasku narzędzi drzewa wizualnego. Ten tryb pokazuje kod XAML, w którym zadeklarowano element, jeśli masz dostęp do kodu źródłowego aplikacji. Wybierz pozycję **Włącz zaznaczenie** i **Podgląd zaznaczenia**, a następnie wybierz przycisk w naszej aplikacji testowej. Plik MainWindow. XAML zostanie otwarty w programie Visual Studio, a kursor zostanie umieszczony w wierszu, w którym przycisk jest zdefiniowany.
 

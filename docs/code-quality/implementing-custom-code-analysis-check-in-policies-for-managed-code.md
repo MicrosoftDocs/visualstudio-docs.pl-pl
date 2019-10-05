@@ -1,5 +1,5 @@
 ---
-title: Zasady ewidencjonowania analizy kodu niestandardowego dla kodu zarządzanego
+title: Niestandardowe zasady ewidencjonowania analizy kodu dla kodu zarządzanego
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55294f7418de085cb4ceccd4063a4b2b55cbc6c4
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260840"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975035"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementowanie niestandardowych zasad zaewidencjonowania analizy kodu dla kodu zarządzanego
 
@@ -110,10 +110,18 @@ Należy określić zestaw reguł zasad ewidencjonowania w projekcie jako zestaw 
 
 4. Jeśli to konieczne, kliknij odpowiednie opcje w **konfiguracji** i **platformy** listy.
 
-5. Aby uruchomić analizę kodu, ilekroć dany projekt kodu został skompilowany przy użyciu określonej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** pole wyboru.
+::: moniker range="vs-2017"
 
-6. Ignorowanie kodu w składników innych firm, wybierz **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
+5. Aby uruchomić analizę kodu przy każdym skompilowaniu projektu kodu przy użyciu określonej konfiguracji, wybierz opcję **Włącz analizę kodu podczas kompilacji**.
 
-7. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >** .
+::: moniker-end
 
-8. Określ lokalną wersję pliku zestawu reguł zasad ewidencjonowania.
+::: moniker range=">=vs-2019"
+
+5. Aby uruchomić analizę kodu przy każdym skompilowaniu projektu kodu przy użyciu określonej konfiguracji, wybierz pozycję **Uruchom przy kompilacji** w sekcji **analizatory binarne** .
+
+::: moniker-end
+
+6. Na liście **Uruchom ten zestaw reguł** kliknij pozycję **\<Browse >** .
+
+8. Wybierz lokalną wersję pliku zestawu reguł ewidencjonowania.

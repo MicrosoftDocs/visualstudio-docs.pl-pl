@@ -8,14 +8,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d769accce87b789b207d9cf337d5b9adc46e413e
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 77c189e4a15f2ae4049c45d2c8463079895f5be2
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71963327"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975144"
 ---
-# <a name="how-to-disable-code-analysis-in-visual-studio"></a>Jak wyłączyć analizę kodu w programie Visual Studio
+# <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Jak wyłączyć analizę kodu źródłowego dla kodu zarządzanego
 
 ::: moniker range=">=vs-2019"
 

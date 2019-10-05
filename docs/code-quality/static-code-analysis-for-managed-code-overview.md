@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e306d19dcf10e929bfb6432e6b6eb585996657f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 4eac88d56399b7f8552962afa50b52c8431232b9
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550850"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974926"
 ---
 # <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Przegląd analizy kodu dla kodu zarządzanego w programie Visual Studio
 
@@ -26,15 +26,15 @@ Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje in
 Narzędzie do analizy reprezentuje kontrole wykonywane podczas analizy jako komunikaty ostrzegawcze. Komunikaty ostrzegawcze identyfikują wszelkie istotne problemy związane z programowaniem i projektowaniem oraz, gdy jest to możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.
 
 > [!NOTE]
-> Starsza analiza (analiza kodu statycznego) nie jest obsługiwana w przypadku projektów .NET Core i .NET Standard w programie Visual Studio. Jeśli uruchamiasz analizę kodu w projekcie .NET Core lub .NET standard w ramach programu MSBuild, zobaczysz błąd podobny do **błędu: CA0055 : Nie można zidentyfikować platformy dla \<>** biblioteki DLL. Aby analizować kod w projektach .NET Core lub .NET Standard, należy zamiast tego użyć [analizatorów kodu](../code-quality/roslyn-analyzers-overview.md) .
+> Starsza analiza (analiza kodu statycznego) nie jest obsługiwana w przypadku projektów .NET Core i .NET Standard w programie Visual Studio. Jeśli uruchamiasz analizę kodu w projekcie .NET Core lub .NET Standard w ramach programu MSBuild, zobaczysz błąd podobny do **error: CA0055 : Nie można zidentyfikować platformy dla @no__t -0your. dll >** . Aby analizować kod w projektach .NET Core lub .NET Standard, należy zamiast tego użyć [analizatorów kodu](../code-quality/roslyn-analyzers-overview.md) .
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integracja IDE (zintegrowane środowisko programistyczne)
 
 Możesz uruchomić analizę kodu dla projektu ręcznie lub automatycznie.
 
-Aby uruchomić analizę kodu przy każdej kompilacji projektu, wybierz pozycję **Włącz analizę kodu na kompilacji** na stronie właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznej analizy](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)kodu.
+Aby uruchomić analizę kodu przy każdej kompilacji projektu, wybierz opcję na stronie właściwości **Analiza kodu** projektu. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie automatycznej analizy kodu @ no__t-0.
 
-Aby ręcznie uruchomić analizę kodu w projekcie, na pasku menu wybierz polecenie **Analizuj** >  > analizę kodu**Uruchom analizę kodu \<w projekcie >** .
+Aby ręcznie uruchomić analizę kodu w projekcie, na pasku menu wybierz pozycję **analizuj** > **uruchom analizę kodu** > **Uruchom analizę kodu na \<project >** .
 
 ## <a name="rule-sets"></a>Zestawy reguł
 
@@ -56,8 +56,21 @@ Public class MyClass
 
 Aby uzyskać więcej informacji, zobacz [pomijanie ostrzeżeń](../code-quality/in-source-suppression-overview.md).
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
-> W przypadku migrowania projektu do programu Visual Studio 2017 lub Visual Studio 2019 może zostać nagle zakryta duża liczba ostrzeżeń dotyczących analizy kodu. Jeśli nie masz gotowości do rozwiązania ostrzeżeń i chcesz od razu zwiększyć produktywność, możesz utworzyć *linię bazową* dla projektu. Z menu **Analizuj** wybierz kolejno opcje **Uruchom analizę kodu i Pomiń aktywne problemy**.
+> W przypadku migrowania projektu do programu Visual Studio 2017 może wystąpić nagłe zaistnienie dużej liczby ostrzeżeń dotyczących analizy kodu. Jeśli nie możesz naprawić ostrzeżeń, możesz pominąć wszystkie z nich, wybierając pozycję **analizuj** > **Uruchom analizę kodu i pominąć aktywne problemy**.
+>
+> ![Uruchom analizę kodu i Pomiń problemy w programie Visual Studio](media/suppress-active-issues.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> W przypadku migrowania projektu do programu Visual Studio 2019 może wystąpić nagłe zaistnienie dużej liczby ostrzeżeń dotyczących analizy kodu. Jeśli nie możesz naprawić ostrzeżeń, możesz pominąć wszystkie z nich, wybierając pozycję **analizuj** > **kompilacja i pominąć aktywne problemy**.
+
+::: moniker-end
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Uruchom analizę kodu w ramach zasad ewidencjonowania
 
@@ -77,4 +90,4 @@ Możesz użyć zintegrowanych funkcji systemu kompilacji, aby uruchomić Narzęd
 
 - [Omówienie analizatorów opartych na .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md)
 - [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Instrukcje: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Instrukcje: Włączanie i wyłączanie automatycznej analizy kodu @ no__t-0

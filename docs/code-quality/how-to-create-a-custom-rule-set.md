@@ -1,5 +1,5 @@
 ---
-title: Tworzenie zestawu reguł analizy kodu niestandardowego
+title: Tworzenie niestandardowego zestawu reguł analizy kodu
 ms.date: 11/02/2018
 ms.topic: conceptual
 f1_keywords:
@@ -11,74 +11,94 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4b52bb573b9a98c5a797f67cdbd4608f8b8636da
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676561"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975097"
 ---
-# <a name="customize-a-rule-set"></a>Dostosuj zestaw reguł
+# <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
-Można utworzyć niestandardowego zestawu reguł do potrzeb określonego projektu dla analizy kodu.
+Można utworzyć niestandardowy zestaw reguł, który spełnia wymagania projektu dotyczące analizy kodu.
 
-## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Tworzenie niestandardowego zestawu reguł z istniejącego zestawu reguł
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Tworzenie niestandardowego zestawu reguł na podstawie istniejącego zestawu reguł
 
-Aby utworzyć niestandardową regułę zestaw, możesz otworzyć wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca można dodawać i usuwać określone zasady i możesz zmienić akcję, która występuje, gdy zostanie naruszona zasada&mdash;na przykład wyświetlić ostrzeżenia lub błędu.
+Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca można dodawać lub usuwać określone reguły, a także zmienić akcję, która występuje, gdy reguła zostanie naruszona @ no__t-0for przykład, wyświetlić ostrzeżenie lub błąd.
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
-2. Na **właściwości** stron, wybierz opcję **analizy kodu** kartę.
+2. Na stronie **Właściwości** wybierz kartę **Analiza kodu** .
 
-3. W **Uruchom ten zestaw reguł** listy rozwijanej, wykonaj jedną z następujących czynności:
+::: moniker range="vs-2017"
+
+3. Z listy rozwijanej **Uruchom ten zestaw reguł** wykonaj jedną z następujących czynności:
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Z listy rozwijanej **aktywne reguły** wykonaj jedną z następujących czynności:
+
+::: moniker-end
 
    - Wybierz zestaw reguł, który chcesz dostosować.
 
      \- lub —
 
-   - Wybierz  **\<Przeglądaj … >** do określenia zestawu istniejącą regułę, która nie jest na liście.
+   - Wybierz pozycję **\<Browse >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
 
-4. Wybierz **Otwórz** reguły są wyświetlane w edytorze zestawu reguł.
+4. Wybierz pozycję **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.
 
 > [!NOTE]
-> Jeśli masz projekt .NET Core lub .NET Standard, proces jest nieco inny, ponieważ nie istnieje żadne **analizy kodu** kartę właściwości. Postępuj zgodnie z instrukcjami, aby [skopiuj wstępnie zdefiniowana reguła ustawiona na projekt i ustawić ją jako aktywny zestaw reguł](analyzer-rule-sets.md). Po skopiowaniu przez zestaw reguł można [go edytować w programie Visual Studio, w edytorze zestawu reguł](working-in-the-code-analysis-rule-set-editor.md) , otwierając go z **Eksploratora rozwiązań**.
+> Jeśli masz projekt .NET Core lub .NET Standard, proces jest nieco inny, ponieważ nie ma karty właściwości **analizy kodu** . Postępuj zgodnie z instrukcjami, aby [skopiować wstępnie zdefiniowany zestaw reguł do projektu i ustawić go jako aktywny zestaw reguł](analyzer-rule-sets.md). Po skopiowaniu zestawu reguł można [go edytować w edytorze zestawu reguł programu Visual Studio](working-in-the-code-analysis-rule-set-editor.md) , otwierając go z **Eksplorator rozwiązań**.
 
-## <a name="create-a-new-rule-set"></a>Tworzenie nowego zestawu reguł
+## <a name="create-a-new-rule-set"></a>Utwórz nowy zestaw reguł
 
-Można utworzyć nowego pliku zestawu reguł z **nowy plik** okno dialogowe:
+Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy plik** :
 
-1. Wybierz **pliku** > **New** > **pliku**, lub naciśnij **Ctrl**+**N**.
+1. Wybierz pozycję **plik**@no__t-**1 nowy** > **plik**lub naciśnij **kombinację klawiszy CTRL**+**N**.
 
-2. W **nowy plik** okno dialogowe, wybierz opcję **ogólne** kategorii po lewej stronie, a następnie wybierz pozycję **zestawu reguł analizy kodu**.
+2. W oknie dialogowym **nowy plik** wybierz kategorię **Ogólne** po lewej stronie, a następnie wybierz pozycję **zestaw reguł analizy kodu**.
 
 3. Wybierz pozycję **Otwórz**.
 
-   Nowy *.ruleset* plik zostanie otwarty w edytorze zestawu reguł.
+   *Nowy plik zestawu reguł zostanie* otwarty w edytorze zestawu reguł.
 
-## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Tworzenie niestandardowego zestawu reguł z wielu zestawów reguł
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Tworzenie niestandardowego zestawu reguł na podstawie wielu zestawów reguł
 
 > [!NOTE]
-> Poniższa procedura nie ma zastosowania do projektów .NET Core, które nie zawierają **analizy kodu** kartę właściwości.
+> Poniższa procedura nie dotyczy projektów platformy .NET Core, które nie mają karty właściwości **analizy kodu** .
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
-2. Na **właściwości** stron, wybierz opcję **analizy kodu** kartę.
+2. Na stronie **Właściwości** wybierz kartę **Analiza kodu** .
 
-3. Wybierz  **\<Wybierz wiele reguł ustawia... >** z **Uruchom ten zestaw reguł**.
+::: moniker range="vs-2017"
 
-4. W **apletu Dodaj lub Usuń zestawy reguł** okno dialogowe, wybierz zestawy reguł można chcesz uwzględnić w Twojego nowego zestawu reguł.
+3. Wybierz **\<Choose wiele zestawów reguł >** z **uruchamiania tego zestawu reguł**.
 
-   ![Dodawanie lub usuwanie zestawów reguł, okno dialogowe](media/add-remove-rule-sets.png)
+::: moniker-end
 
-5. Wybierz **Zapisz jako**, wprowadź nazwę dla *.ruleset* pliku, a następnie wybierz **Zapisz**.
+::: moniker range=">=vs-2019"
 
-   Nowy zestaw reguł wybrano **Uruchom ten zestaw reguł** listy.
+3. Wybierz **\<Choose wiele zestawów reguł >** z **aktywnych reguł**.
 
-6. Wybierz **Otwórz** można otworzyć nowej reguły, które są ustawiane za pomocą edytora zestawu reguł.
+::: moniker-end
 
-## <a name="rule-precedence"></a>Priorytet reguły
+4. W oknie dialogowym **Dodawanie lub usuwanie zestawów reguł** wybierz zestawy reguł, które chcesz dołączyć do nowego zestawu reguł.
 
-- Jeśli ta sama zasada jest wymienionych dwóch lub więcej razy w regule ustawić z różnymi poziomami ważności, kompilator generuje błąd. Na przykład:
+   ![Okno dialogowe Dodawanie lub usuwanie zestawów reguł](media/add-remove-rule-sets.png)
+
+5. Wybierz pozycję **Zapisz jako**, wprowadź nazwę pliku *. zestawu reguł* , a następnie wybierz pozycję **Zapisz**.
+
+   Nowy zestaw reguł zostanie wybrany na liście **Uruchom ten zestaw reguł** .
+
+6. Wybierz pozycję **Otwórz** , aby otworzyć nowy zestaw reguł w edytorze zestawu reguł.
+
+## <a name="rule-precedence"></a>Pierwszeństwo reguł
+
+- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł z różnymi serwerami, kompilator generuje błąd. Na przykład:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -89,11 +109,11 @@ Można utworzyć nowego pliku zestawu reguł z **nowy plik** okno dialogowe:
    </RuleSet>
    ```
 
-- Jeśli ta sama zasada wymienionych dwóch lub więcej razy w regule ustawić za pomocą *tego samego* ważność, zobaczysz poniższe ostrzeżenie w **lista błędów**:
+- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł o *takiej samej* ważności, w **Lista błędów**mogą pojawić się następujące ostrzeżenie:
 
-   **CA0063: Nie można załadować pliku zestawu reguł "\[swoje] .ruleset" lub jednej z jej regułą zależnego zestawu plików. Plik nie jest zgodny ze schematem zestawu reguł.**
+   **CA0063: Nie można załadować pliku zestawu reguł "\[your]. zestaw reguł" lub jeden z jego zależnych plików zestawu reguł. Plik jest niezgodny ze schematem zestawu reguł.**
 
-- Jeśli zestaw reguł zawiera zestaw przy użyciu reguł podrzędnych **Include** tagu i zestawów reguł nadrzędnymi i podrzędnymi zarówno listy tę samą regułę, ale z różnymi poziomami ważności, następnie ważność zestawu reguł nadrzędnego pierwszeństwo. Na przykład:
+- Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Na przykład:
 
    ```xml
    <!-- Parent rule set -->
@@ -116,16 +136,16 @@ Można utworzyć nowego pliku zestawu reguł z **nowy plik** okno dialogowe:
 
 ## <a name="name-and-description"></a>Nazwa i opis
 
-Aby zmienić nazwę wyświetlaną zestawu reguł, który jest otwarty w edytorze, otwórz **właściwości** okna, wybierając **widoku** > **okno właściwości** na pasku menu. Wprowadź nazwę wyświetlaną w **nazwa** pole. Można również wprowadzić opis zestawu reguł.
+Aby zmienić nazwę wyświetlaną zestawu reguł, który jest otwarty w edytorze, Otwórz okno **Właściwości** , wybierając pozycję **Wyświetl** > **Właściwości okna** na pasku menu. Wprowadź nazwę wyświetlaną w polu **Nazwa** . Możesz również wprowadzić opis zestawu reguł.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy masz zestaw reguł, następnym krokiem jest dostosowywanie reguł przez dodanie lub usunięcie reguł lub modyfikowanie ważność naruszeń reguł.
+Teraz, gdy masz zestaw reguł, następnym krokiem jest dostosowanie reguł poprzez dodanie lub usunięcie zasad lub zmodyfikowanie ważności naruszeń reguł.
 
 > [!div class="nextstepaction"]
-> [Modyfikowanie zasad w edytorze zestawu reguł](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
+> [Modyfikuj reguły w edytorze zestawu reguł](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego @ no__t-0
 - [Informacje o zestawie reguł analizy kodu](../code-quality/rule-set-reference.md)

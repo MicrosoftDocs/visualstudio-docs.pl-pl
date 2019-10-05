@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 313b578743fd734da3354989a8cee16022779242
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185951"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974696"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Zestawy reguł dla pakietów analizatora
 
@@ -36,7 +36,7 @@ Jeśli migrujesz ze starszej analizy "FxCop" do analizy kodu na podstawie .NET C
 
 ## <a name="use-analyzer-package-rule-sets"></a>Użyj zestawów reguł pakietu analizatora
 
-Po [zainstalowaniu pakietu analizatora NuGet](install-roslyn-analyzers.md)Znajdź wstępnie zdefiniowany zestaw reguł w jego katalogu *zestawów reguł* . Jeśli na `Microsoft.CodeAnalysis.FxCopAnalyzers` przykład przywoływano pakiet analizatora, można znaleźć jego katalog *reguł* w lokalizacji *% USERPROFILE%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\\\< \rulesets\>* . Z tego miejsca Skopiuj jeden lub więcej zestawów reguł i wklej je w katalogu zawierającym projekt programu Visual Studio lub bezpośrednio do **Eksplorator rozwiązań**.
+Po [zainstalowaniu pakietu analizatora NuGet](install-roslyn-analyzers.md)Znajdź wstępnie zdefiniowany zestaw reguł w jego katalogu *zestawów reguł* . Jeśli na przykład przywoływano pakiet analizatora `Microsoft.CodeAnalysis.FxCopAnalyzers`, można znaleźć jego katalog *reguł* w lokalizacji *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-4 @ no__t-5version @ no__t-6\rulesets*. Z tego miejsca Skopiuj jeden lub więcej zestawów reguł i wklej je w katalogu zawierającym projekt programu Visual Studio lub bezpośrednio do **Eksplorator rozwiązań**.
 
 Możesz również [dostosować wstępnie zdefiniowany zestaw reguł](how-to-create-a-custom-rule-set.md) do preferencji. Na przykład można zmienić ważność jednej lub kilku reguł, aby naruszenia były wyświetlane jako błędy lub ostrzeżenia w **Lista błędów**.
 
@@ -46,7 +46,7 @@ Proces ustawiania aktywnego zestawu reguł jest nieco inny w zależności od teg
 
 ### <a name="net-core"></a>.NET Core
 
-Aby ustawić regułę zestawu aktywnych reguł dla analizy w projektach .NET Core lub .NET Standard, ręcznie Dodaj właściwość **CodeAnalysisRuleSet** do pliku projektu. Na przykład poniższy fragment kodu jest ustawiany `HelloWorld.ruleset` jako aktywny zestaw reguł.
+Aby ustawić regułę zestawu aktywnych reguł dla analizy w projektach .NET Core lub .NET Standard, ręcznie Dodaj właściwość **CodeAnalysisRuleSet** do pliku projektu. Na przykład poniższy fragment kodu ustawia `HelloWorld.ruleset` jako aktywny zestaw reguł.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -57,11 +57,29 @@ Aby ustawić regułę zestawu aktywnych reguł dla analizy w projektach .NET Cor
 
 ### <a name="net-framework"></a>.NET Framework
 
-Aby ustawić regułę zestawu aktywnych reguł dla analizy w .NET Framework projekty, kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**. Na stronie właściwości projektu wybierz kartę **Analiza kodu** . W obszarze **Uruchom ten zestaw reguł**wybierz pozycję **Przeglądaj**, a następnie wybierz żądany zestaw reguł skopiowany do katalogu projektu. Teraz widzisz tylko naruszenia reguły dla tych reguł, które są włączone w wybranym zestawie reguł.
+Aby ustawić regułę zestawu aktywnych reguł dla analizy w .NET Framework projekty:
+
+- Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**.
+
+- Na stronie właściwości projektu wybierz kartę **Analiza kodu** .
+
+::: moniker range="vs-2017"
+
+- W obszarze **Uruchom ten zestaw reguł**wybierz pozycję **Przeglądaj**, a następnie wybierz żądany zestaw reguł skopiowany do katalogu projektu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- W obszarze **aktywne reguły**wybierz pozycję **Przeglądaj**, a następnie wybierz żądany zestaw reguł skopiowany do katalogu projektu.
+
+::: moniker-end
+
+   Teraz widzisz tylko naruszenia reguły dla tych reguł, które są włączone w wybranym zestawie reguł.
 
 ## <a name="available-rule-sets"></a>Dostępne zestawy reguł
 
-Wstępnie zdefiniowane zestawy reguł analizatora obejmują trzy zestaw reguł, które mają wpływ na wszystkie reguły&mdash;w pakiecie, które włączają je wszystkie, ale te, które je wyłączyją, i są uznawane za wszystkie zasady ważności i ustawienia włączania każdej reguły:
+Wstępnie zdefiniowane zestawy reguł analizatora obejmują trzy zestaw reguł, które mają wpływ na wszystkie reguły w pakiecie @ no__t-0one, które umożliwiają ich wszystkie, te, które wyłączają je wszystkie, i te, które są zgodne z domyślną ważnością i ustawieniami włączania każdej reguły:
 
 - AllRulesEnabled. zestaw reguł
 - AllRulesDisabled. zestaw reguł

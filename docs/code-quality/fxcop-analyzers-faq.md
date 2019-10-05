@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 3dc304d8d6bf844fb9c23f0e92efc5250da91e4d
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253170"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975135"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące analizatorów FxCop i FxCop
 
@@ -24,18 +24,18 @@ Zrozumienie różnic między starszymi analizatorami FxCop i FxCop może być ni
 
 Starsza FxCop uruchamia analizę po kompilacji dla skompilowanego zestawu. Działa jako oddzielny plik wykonywalny o nazwie **plik FxCopCmd. exe**. Plik FxCopCmd. exe ładuje skompilowany zestaw, uruchamia analizę kodu, a następnie raportuje wyniki (lub *diagnostykę*).
 
-Analizatory FxCop są oparte na .NET Compiler Platform ("Roslyn"). Należy [je zainstalować jako pakiet NuGet](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) , do którego odwołuje się projekt lub rozwiązanie. Analizatory FxCop uruchamiają analizę opartą na kodzie źródłowym podczas wykonywania kompilatora. Analizatory FxCop są hostowane w ramach procesu kompilatora, pliku **CSC. exe** lub **VBC. exe**i uruchamiają analizę po skompilowaniu projektu. Wyniki analizatora są raportowane wraz z wynikami kompilatora.
+Analizatory FxCop są oparte na .NET Compiler Platform ("Roslyn"). Należy [je zainstalować jako pakiet NuGet](install-fxcop-analyzers.md#nuget-package) , do którego odwołuje się projekt lub rozwiązanie. Analizatory FxCop uruchamiają analizę opartą na kodzie źródłowym podczas wykonywania kompilatora. Analizatory FxCop są hostowane w ramach procesu kompilatora, pliku **CSC. exe** lub **VBC. exe**i uruchamiają analizę po skompilowaniu projektu. Wyniki analizatora są raportowane wraz z wynikami kompilatora.
 
 > [!NOTE]
-> Można także [zainstalować analizatory FxCop jako rozszerzenie programu Visual Studio](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix). W takim przypadku analizatory są wykonywane podczas wpisywania w edytorze kodu, ale nie są wykonywane w czasie kompilacji. Jeśli chcesz uruchomić analizatory FxCop w ramach ciągłej integracji (CI), zamiast tego zainstaluj je jako pakiet NuGet.
+> Można także [zainstalować analizatory FxCop jako rozszerzenie programu Visual Studio](install-fxcop-analyzers.md#vsix). W takim przypadku analizatory są wykonywane podczas wpisywania w edytorze kodu, ale nie są wykonywane w czasie kompilacji. Jeśli chcesz uruchomić analizatory FxCop w ramach ciągłej integracji (CI), zamiast tego zainstaluj je jako pakiet NuGet.
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Czy polecenie uruchomienia analizy kodu uruchamia analizatory FxCop?
 
-Nie. Po wybraniu opcji **Analizuj** > **analizę kodu uruchamiania**zostanie wykonana Starsza analiza. **Analiza kodu uruchamiania** nie ma wpływu na analizatory oparte na Roslyn, w tym analizatory FxCop z Roslyn.
+Nie. Po wybraniu opcji **analizuj** > **Uruchom analizę kodu**zostanie wykonana Starsza analiza. **Analiza kodu uruchamiania** nie ma wpływu na analizatory oparte na Roslyn, w tym analizatory FxCop z Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Czy właściwość projektu MSBuild RunCodeAnalysis jest uruchamiana analizatory?
 
-Nie. Właściwość **RunCodeAnalysis** w pliku projektu (na przykład *. csproj*) jest używana tylko do wykonywania starszych FxCop. Uruchamia zadanie programu MSBuild po kompilacji, które wywołuje **plik FxCopCmd. exe**. Jest to równoznaczne z wybraniem opcji **Analizuj** > **analizę kodu uruchamiania** w programie Visual Studio.
+Nie. Właściwość **RunCodeAnalysis** w pliku projektu (na przykład *. csproj*) jest używana tylko do wykonywania starszych FxCop. Uruchamia zadanie programu MSBuild po kompilacji, które wywołuje **plik FxCopCmd. exe**. Jest to równoznaczne z wybraniem opcji **analizuj** > **Uruchom analizę kodu** w programie Visual Studio.
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>Jak uruchomić analizatory FxCop?
 

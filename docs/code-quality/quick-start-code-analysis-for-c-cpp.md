@@ -1,6 +1,6 @@
 ---
 title: 'Szybki start: Analiza kodu C/C++'
-description: Uruchom analizę statyczną C++ kodu w programie Visual Studio do wykrywania typowych problemów kodowania i usterek.
+description: Uruchom analizę statyczną C++ w kodzie w programie Visual Studio, aby wykrywać typowe problemy z kodowaniem i wady.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,109 +11,109 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 039ffcd1717dba8ec3c76ae1ca4a691d60851ee5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: c3132db62de6f2775a739adb82b24c759e4767dc
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226070"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974897"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Szybki start: Analiza kodu C/C++
 
-Aby poprawić jakość aplikacji, należy regularnie uruchamiania analizy kodu dla kodu C lub C++. To może pomóc w znalezieniu typowe problemy, naruszeń dobrą praktyką programowania lub usterki, które są trudne do odnajdywania za pomocą testowania. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ analiza kodu szuka wzorców konkretnego kodu, które są prawidłowe, ale nadal można tworzyć problemy dla Ciebie lub innych osób używających Twojego kodu.
+Jakość aplikacji można poprawić, uruchamiając analizę kodu regularnie w języku C lub C++ kodzie. Może to pomóc w znalezieniu typowych problemów, naruszeniu dobrych rozwiązań programistycznych lub wad, które trudno wykryć poprzez testowanie. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ analiza kodu szuka wzorców konkretnego kodu, które są prawidłowe, ale nadal można tworzyć problemy dla Ciebie lub innych osób używających Twojego kodu.
 
 ## <a name="configure-rule-sets-for-a-project"></a>Konfigurowanie zestawów reguł dla projektu
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla nazwy projektu, a następnie wybierz **właściwości**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla nazwy projektu, a następnie wybierz polecenie **Właściwości**.
 
-2. Poniższe kroki są opcjonalne:
+2. Następujące kroki są opcjonalne:
 
-    1. W **konfiguracji** i **platformy** listy, wybierz platformę kompilacji konfiguracji i docelowej.
+    1. Na listach **Konfiguracja** i **platforma** wybierz konfigurację kompilacji i platformę docelową.
 
     2. Domyślnie program analizy kodu nie raportuje ostrzeżenia z kodu, który jest generowany automatycznie przez narzędzia zewnętrzne. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, należy wyczyścić **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
 
         > [!NOTE]
-        > Ta opcja nie pomija błędy analizy kodu i ostrzeżenia z wygenerowanego kodu podczas błędy i ostrzeżenia są wyświetlane w formularzach i szablony. Można wyświetlać lub zachować kod źródłowy dla formularza lub szablonu.
+        > Ta opcja nie pomija błędy analizy kodu i ostrzeżenia z wygenerowanego kodu podczas błędy i ostrzeżenia są wyświetlane w formularzach i szablony. Można zarówno wyświetlać, jak i konserwować kod źródłowy formularza lub szablonu.
 
-3. Aby uruchomić analizę kodu, za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz **Włącz analizę kodu C/c++ podczas kompilacji** pole wyboru. Można również uruchomić analizę kodu ręcznie, otwierając **analizy** menu, a następnie wybierając **Uruchom analizę kodu dla** *ProjectName*.
+3. Aby uruchomić analizę kodu za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz pole wyboru **Włącz analizę koduC++ dla C/on Build** . Możesz również ręcznie uruchomić analizę kodu, otwierając menu **Analizuj** , a następnie wybierając polecenie **Uruchom analizę kodu na** *ProjectName*.
 
 4. W **Uruchom ten zestaw reguł** listy, wykonaj jedną z następujących czynności:
 
-    - Wybierz zestaw reguł, który chcesz użyć.
+    - Wybierz zestaw reguł, którego chcesz użyć.
 
-    - Wybierz  **\<Przeglądaj … >** do określenia, ustaw istniejącej reguły niestandardowe, który nie jest na liście.
+    - Wybierz **\<Browse >** , aby określić istniejący niestandardowy zestaw reguł, którego nie ma na liście.
 
     - Zdefiniuj [niestandardowego zestawu reguł](../code-quality/how-to-create-a-custom-rule-set.md).
 
-### <a name="standard-cc-rule-sets"></a>Standard języka C/C++ zestawy reguł
+### <a name="standard-cc-rule-sets"></a>Standardowe C/C++ zestawy reguł
 
 Program Visual Studio zawiera dwa standardowe zestawy reguł dla kodu natywnego:
 
 |Zestaw reguł|Opis|
 |--------------|-----------------|
-|Zalecane reguły kodu natywnego firmy Microsoft, co najmniej|Ten zestaw reguł koncentruje się na najważniejszych problemów w kodzie natywnym, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji. Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów natywnych.|
-|Zalecane reguły kodu natywnego firmy Microsoft|Ten zestaw reguł obejmuje szerokiej gamy problemów. Zawiera ono wszystkie reguły w Microsoft Native Minimum reguł zalecanych.|
+|Minimalne zalecane reguły natywne firmy Microsoft|Ten zestaw reguł dotyczy najważniejszych problemów w kodzie natywnym, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji. Ten zestaw reguł powinien być dołączany do każdego niestandardowego zestawu reguł tworzonego dla projektów natywnych.|
+|Zalecane reguły natywne firmy Microsoft|Ten zestaw reguł obejmuje szeroki zakres problemów. Zawiera wszystkie reguły w minimalnych zalecanych regułach firmy Microsoft w języku macierzystym.|
 
-## <a name="run-code-analysis"></a>Przeprowadź analizę kodu
+## <a name="run-code-analysis"></a>Uruchom analizę kodu
 
-Na stronie analizy kodu na stronach właściwości projektu można skonfigurować analizy kodu do uruchomienia każdorazowo kompilacji projektu. Można również uruchamiać analizę kodu ręcznie.
+Na stronie Analiza kodu na stronach właściwości projektu można skonfigurować analizę kodu, która będzie uruchamiana za każdym razem, gdy kompilujesz projekt. Możesz również ręcznie uruchomić analizę kodu.
 
-Aby uruchomić analizę kodu na rozwiązanie:
+Aby uruchomić analizę kodu w rozwiązaniu:
 
 - Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla rozwiązania**.
 
 Aby uruchomić analizę kodu w projekcie:
 
-1. W Eksploratorze rozwiązań wybierz nazwę projektu.
+1. W Eksplorator rozwiązań wybierz nazwę projektu.
 
-2. Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla** *Nazwa projektu*.
+2. W menu **kompilacja** wybierz polecenie **Uruchom analizę kodu dla** *nazwy projektu*.
 
-   Projektu lub rozwiązania jest kompilowana i uruchamia analizy kodu. Wyniki są wyświetlane na liście błędów.
+   Projekt lub rozwiązanie zostały skompilowane i zostanie uruchomiona Analiza kodu. Wyniki pojawiają się w Lista błędów.
 
-## <a name="analyze-and-resolve-code-analysis-warnings"></a>Analizowanie i rozwiązywanie ostrzeżenia analizy kodu
+## <a name="analyze-and-resolve-code-analysis-warnings"></a>Analizowanie i rozwiązywanie ostrzeżeń dotyczących analizy kodu
 
-Aby analizować szczególne ostrzeżenie, wybierz tytuł ostrzeżenia na liście błędów. Ostrzeżenie rozwija, aby wyświetlić dodatkowe informacje o problemie. Jeśli to możliwe, analizy kodu wyświetla numery wierszy i logika analizy, które doprowadziło do ostrzeżenia. Aby uzyskać szczegółowe informacje na temat ostrzeżenia, w tym możliwe rozwiązania problemu należy wybrać identyfikator ostrzeżenia, aby wyświetlić jego odpowiedniego tematu Pomocy online.
+Aby przeanalizować określone ostrzeżenie, wybierz tytuł ostrzeżenia w Lista błędów. Ostrzeżenie zostanie rozwinięte, aby wyświetlić dodatkowe informacje o problemie. Gdy jest to możliwe, analiza kodu wyświetla numery wierszy i logikę analizy, które doprowadziły do ostrzeżenia. Aby uzyskać szczegółowe informacje o ostrzeżeniu, w tym o możliwych rozwiązaniach problemu, wybierz identyfikator ostrzeżenia, aby wyświetlić odpowiedni temat pomocy online.
 
-Po wybraniu ostrzeżenie, wiersz kodu, który spowodował ostrzeżenie jest wyróżniony w edytorze kodu programu Visual Studio.
+Po wybraniu ostrzeżenia wiersz kodu, który spowodował ostrzeżenie, jest wyróżniony w edytorze kodu programu Visual Studio.
 
-Po zrozumieniu problem można rozwiązać, w kodzie. Następnie uruchom ponownie analizę kodu, aby upewnić się, że ostrzeżenie nie jest już wyświetlany na liście błędów, a rozwiązanie problemu nie został zgłoszony wszelkie nowe ostrzeżenia.
+Po zrozumieniu problem można rozwiązać, w kodzie. Następnie ponownie uruchom analizę kodu, aby upewnić się, że ostrzeżenie nie pojawia się już w Lista błędów i że poprawka nie zgłosiła żadnych nowych ostrzeżeń.
 
-## <a name="suppress-code-analysis-warnings"></a>Pomijanie ostrzeżeń analizy kodu
+## <a name="suppress-code-analysis-warnings"></a>Pomiń ostrzeżenia analizy kodu
 
-Istnieją terminy, gdy można zdecydować, Rezygnacja z naprawiania ostrzeżenie analizy kodu. Można zdecydować, rozpoznawanie ostrzeżenia wymaga zbyt dużo nagrywanie względem prawdopodobieństwo wystąpienia problemu w implementacji rzeczywistych swój kod. Lub może być uważa, że analizy, który jest używany w ostrzeżenia jest nieodpowiedni dla określonego kontekstu. Poszczególne ostrzeżenia można pominąć, tak aby nie były widoczne na liście błędów.
+Istnieją terminy, gdy można zdecydować, Rezygnacja z naprawiania ostrzeżenie analizy kodu. Można zdecydować, rozpoznawanie ostrzeżenia wymaga zbyt dużo nagrywanie względem prawdopodobieństwo wystąpienia problemu w implementacji rzeczywistych swój kod. Lub może być uważa, że analizy, który jest używany w ostrzeżenia jest nieodpowiedni dla określonego kontekstu. Możesz pominąć poszczególne ostrzeżenia, aby nie były wyświetlane w Lista błędów.
 
 Aby pominąć Ostrzeżenie:
 
-1. Jeśli nie są wyświetlane szczegółowe informacje, wybierz tytuł ostrzeżenie, aby ją rozwinąć.
+1. Jeśli szczegółowe informacje nie są wyświetlane, wybierz tytuł ostrzeżenia, aby go rozwinąć.
 
 2. Wybierz **akcje** widocznego u dołu ostrzeżenia.
 
-3. Wybierz **Pomiń komunikat** , a następnie wybierz **w źródłowej**.
+3. Wybierz pozycję **Pomiń komunikat** , a następnie wybierz pozycję **w polu Źródło**.
 
-   Pomijanie wiadomości wstawia `#pragma warning (disable:[warning ID])` który umożliwia pominięcie ostrzeżenia dla wiersza kodu.
+   Pomijanie komunikatu powoduje wstawienie `#pragma warning (disable:[warning ID])`, które pomija Ostrzeżenie dla wiersza kodu.
 
-## <a name="create-work-items-for-code-analysis-warnings"></a>Utwórz elementy robocze dla kodu ostrzeżenia analizy
+## <a name="create-work-items-for-code-analysis-warnings"></a>Utwórz elementy robocze dla ostrzeżeń analizy kodu
 
-Element roboczy, funkcja śledzenia umożliwia rejestrowanie błędów z poziomu programu Visual Studio. Aby użyć tej funkcji, należy połączyć się z wystąpieniem programu Team Foundation Server.
+Za pomocą funkcji śledzenia elementów roboczych można rejestrować usterki w programie Visual Studio. Aby użyć tej funkcji, należy nawiązać połączenie z wystąpieniem Team Foundation Server.
 
-**Aby utworzyć element roboczy dla co najmniej jedno ostrzeżenie kodu C/C++**
+**Aby utworzyć element roboczy dla co najmniej jednego ostrzeżenia C/C++ Code**
 
-1. Na liście błędów Rozwiń i wybierz ostrzeżenia
+1. W Lista błędów rozwiń i wybierz ostrzeżenia
 
-2. W menu skrótów dla ostrzeżenia wybierz **Utwórz element pracy**, a następnie wybierz typ elementu roboczego.
+2. W menu skrótów dla ostrzeżeń wybierz polecenie **Utwórz element roboczy**, a następnie wybierz typ elementu pracy.
 
-3. Program Visual Studio tworzy pojedynczym elemencie roboczym dla wybranych ostrzeżeń i wyświetla element roboczy w oknie dokumentu w IDE.
+3. Program Visual Studio tworzy pojedynczy element roboczy dla wybranych ostrzeżeń i wyświetla element roboczy w oknie dokumentu IDE.
 
-4. Dodaj wszelkie dodatkowe informacje, a następnie wybierz **Zapisz element roboczy**.
+4. Dodaj wszelkie dodatkowe informacje, a następnie wybierz pozycję **Zapisz element roboczy**.
 
 ## <a name="search-and-filter-code-analysis-results"></a>Wyszukiwanie i filtrowanie wyników analizy kodu
 
 Możesz wyszukiwać długim spisem komunikaty ostrzegawcze i filtrować ostrzeżeń w rozwiązaniach dotyczących wielu projektów.
 
-- **Aby ostrzeżeń filtru według tytułu lub identyfikator ostrzeżenia**: Wprowadź słowo kluczowe w polu wyszukiwania.
+- **Aby odfiltrować ostrzeżenia według tytułu lub identyfikatora ostrzeżenia**: Wprowadź słowo kluczowe w polu wyszukiwania.
 
-- **Aby ostrzeżeń filtru według ważności**: Domyślnie komunikaty analizy kodu są przypisywane ważność **ostrzeżenie**. Możesz przypisać wagi co najmniej jedna wiadomość jako **błąd** w zestawie reguł niestandardowych. Na **ważność** kolumny **lista błędów**, wybierz strzałkę listy rozwijanej, a następnie ikonę filtru. Wybierz **ostrzeżenie** lub **błąd** do wyświetlenia tylko komunikaty, które są przypisane do odpowiednich ważności. Wybierz **Zaznacz wszystko** Aby wyświetlić wszystkie komunikaty.
+- **Aby odfiltrować ostrzeżenia według ważności**: Domyślnie do komunikatów analizy kodu są przypisywane ważność **ostrzeżenia**. Można przypisać ważność co najmniej jednego komunikatu jako **błąd** w niestandardowym zestawie reguł. W kolumnie **ważność** **Lista błędów**wybierz strzałkę listy rozwijanej, a następnie ikonę filtru. Wybierz **Ostrzeżenie** lub **błąd** , aby wyświetlić tylko te komunikaty, do których przypisano odpowiednią ważność. Wybierz **pozycję Zaznacz wszystko** , aby wyświetlić wszystkie komunikaty.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Analiza kodu C/c++](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Analiza kodu dla języka C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

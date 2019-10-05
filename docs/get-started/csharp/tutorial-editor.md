@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5bbca5e46ee83764a6a431ae13829a882b1d859f
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180253"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975162"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
@@ -58,7 +58,7 @@ Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
 ::: moniker-end
 
-2. Z menu **plik** na pasku menu wybierz polecenie **Nowy** > **plik**.
+2. Z menu **plik** na pasku menu wybierz **Nowy** **plik** >  lub naciśnij **klawisze CTRL**+**N**.
 
 3. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual C#** , a następnie wybierz **Otwórz**.
 
@@ -80,7 +80,7 @@ Program Visual Studio oferuje przydatne *fragmenty kodu* , umożliwia szybkie i 
 
    Zostanie wyświetlony `static void Main()` podpis metody poproś o dodanie Cię do pliku. [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) metodą jest punkt wejścia dla aplikacji w języku C#.
 
-Fragmenty kodu dostępne różnią się w różnych językach programowania. Można przyjrzeć się fragmentów kodu dostępne dla danego języka, wybierając **Edytuj** > **IntelliSense** > **Wstaw fragment kodu**, a następnie Wybieranie folderu danego języka. Dla języka C# listy wygląda następująco:
+Fragmenty kodu dostępne różnią się w różnych językach programowania. Aby sprawdzić dostępne fragmenty kodu dla danego języka, wybierz opcję **edytuj** > **IntelliSense** > **Wstaw wstawka** lub naciśnij **klawisze Ctrl**+**K**, **Ctrl**+**X**, a następnie wybierz folder Twojego języka. Dla języka C# listy wygląda następująco:
 
 ![Lista fragment kodu języka C#](../media/tutorial-code-snippet-list.png)
 
