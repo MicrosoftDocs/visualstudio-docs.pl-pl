@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461454"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000207"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 
-Użyj strony **kompilacja** **projektanta projektu** , aby określić właściwości konfiguracji kompilacji projektu. Ta strona ma zastosowanie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tylko do projektów.
+Użyj strony **kompilacja** **projektanta projektu** , aby określić właściwości konfiguracji kompilacji projektu. Ta strona ma zastosowanie tylko do projektów [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
 
 Aby uzyskać dostęp do strony **kompilacja** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz **Widok**, **strony właściwości** w menu. Gdy zostanie wyświetlony Projektant projektu, wybierz kartę **kompilacja** .
 
@@ -34,7 +34,7 @@ Aby uzyskać dostęp do strony **kompilacja** , wybierz węzeł projektu (nie w�
 Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.
 
 > [!NOTE]
-> W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. W związku z tym te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md)debugowania i wydania.
+> W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. W związku z tym te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Ustaw konfiguracje Debug i Release @ no__t-0.
 
 **Konfiguracja**
 
@@ -42,7 +42,7 @@ Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia
 
 **Platformach**
 
-Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienie domyślne jest **aktywne (dowolny procesor)** . Możesz zmienić aktywną platformę przy użyciu **Configuration Manager**. Aby uzyskać więcej informacji, zobacz [jak: Utwórz i Edytuj konfiguracje](../../ide/how-to-create-and-edit-configurations.md).
+Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienie domyślne jest **aktywne (dowolny procesor)** . Możesz zmienić aktywną platformę przy użyciu **Configuration Manager**. Aby uzyskać więcej informacji, zobacz [jak: Utwórz i Edytuj konfiguracje @ no__t-0.
 
 ## <a name="general"></a>Ogólne
 
@@ -54,11 +54,11 @@ Określa symbole, na których ma zostać wykonana Kompilacja warunkowa. Oddziela
 
 **Zdefiniuj stałą DEBUG**
 
-Definiuje debugowanie jako symbol we wszystkich plikach kodu źródłowego w aplikacji. Wybranie tego jest równoważne użyciu `/define:DEBUG` opcji wiersza polecenia.
+Definiuje debugowanie jako symbol we wszystkich plikach kodu źródłowego w aplikacji. Wybranie tego jest równoważne użyciu opcji wiersza polecenia `/define:DEBUG`.
 
 **Zdefiniuj stałą TRACE**
 
-Definiuje śledzenie jako symbol we wszystkich plikach kodu źródłowego w aplikacji. Wybranie tego jest równoważne użyciu `/define:TRACE` opcji wiersza polecenia.
+Definiuje śledzenie jako symbol we wszystkich plikach kodu źródłowego w aplikacji. Wybranie tego jest równoważne użyciu opcji wiersza polecenia `/define:TRACE`.
 
 **Obiekt docelowy platformy**
 
@@ -104,25 +104,22 @@ Blokuje możliwość generowania co najmniej jednego ostrzeżenia przez kompilat
 
 Poniższe ustawienia służą do określania, które ostrzeżenia są traktowane jako błędy. Wybierz jedną z następujących opcji, aby wskazać, w których warunkach ma zostać zwrócony błąd, gdy kompilacja napotka ostrzeżenie. Aby uzyskać więcej informacji, zobacz [/warnaserrorC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**Brak**
+**Brak** — nie traktuje żadnych ostrzeżeń jako błędów.
 
-Nie traktuje żadnych ostrzeżeń jako błędów.
+**Wszystkie** — traktuje wszystkie ostrzeżenia jako błędy.
 
-**Określone ostrzeżenia**
+**Określone ostrzeżenia** — traktuje określone ostrzeżenia jako błędy. Oddziel wiele numerów ostrzeżeń przecinkami lub średnikami.
 
-Traktuje określone ostrzeżenia jako błędy. Oddziel wiele numerów ostrzeżeń przecinkami lub średnikami.
+> [!TIP]
+> Jeśli nie chcesz, aby ostrzeżenia analizy kodu były traktowane jak błędy, zobacz [często zadawane pytania dotyczące analizy kodu](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
-**Całą**
-
-Traktuje wszystkie ostrzeżenia jako błędy.
-
-## <a name="output"></a>Dane wyjściowe
+## <a name="output"></a>Output
 
 Poniższe ustawienia służą do konfigurowania opcji danych wyjściowych dla procesu kompilacji.
 
 **Ścieżka wyjściowa**
 
-Określa lokalizację plików wyjściowych dla konfiguracji projektu. Wprowadź ścieżkę do danych wyjściowych kompilacji w tym polu lub wybierz przycisk **Przeglądaj** , aby określić ścieżkę. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug lub bin\Release\\.
+Określa lokalizację plików wyjściowych dla konfiguracji projektu. Wprowadź ścieżkę do danych wyjściowych kompilacji w tym polu lub wybierz przycisk **Przeglądaj** , aby określić ścieżkę. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug lub bin\Release @ no__t-0.
 
 W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Polecenie **Build** z menu **Debuguj** (F5) umieści kompilację w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Build** z menu **kompilacja** umieszcza je w określonej lokalizacji. Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../../ide/understanding-build-configurations.md).
 
@@ -132,11 +129,11 @@ Określa nazwę pliku, do którego zostaną przetworzone komentarze dokumentacji
 
 **Rejestracja w celu współdziałania z modelem COM**
 
-Wskazuje, że aplikacja zarządzana uwidacznia obiekt COM (otoka COM, która jest wywoływana), która umożliwia obiektowi COM współpracujące z zarządzaną aplikacją. Właściwość **Typ danych wyjściowych** na [stronie aplikacji](../../ide/reference/application-page-project-designer-visual-basic.md) **projektanta projektu** dla tej aplikacji musi być ustawiona na wartość **Biblioteka klas** , aby właściwość **register dla elementu com** była dostępna. Aby zapoznać się z przykładową klasą, którą [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] można uwzględnić w aplikacji i uwidocznić jako obiekt com, zobacz [przykład klasy com](/dotnet/csharp/programming-guide/interop/example-com-class).
+Wskazuje, że aplikacja zarządzana uwidacznia obiekt COM (otoka COM, która jest wywoływana), która umożliwia obiektowi COM współpracujące z zarządzaną aplikacją. Właściwość **Typ danych wyjściowych** na [stronie aplikacji](../../ide/reference/application-page-project-designer-visual-basic.md) **projektanta projektu** dla tej aplikacji musi być ustawiona na wartość **Biblioteka klas** , aby właściwość **register dla elementu com** była dostępna. Aby zapoznać się z przykładową klasą, którą można uwzględnić w aplikacji [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i uwidocznić jako obiekt COM, zobacz [przykład klasy com](/dotnet/csharp/programming-guide/interop/example-com-class).
 
 **Generuj zestaw serializacji**
 
-Określa, czy kompilator będzie używać narzędzie XML Serializer Generator (Sgen. exe) do tworzenia zestawów serializacji XML. Zestawy serializacji mogą zwiększyć wydajność <xref:System.Xml.Serialization.XmlSerializer> uruchamiania, jeśli użyto tej klasy do serializacji typów w kodzie. Domyślnie ta opcja jest ustawiona na wartość **automatycznie**, co oznacza, że zestawy serializacji są generowane tylko wtedy, gdy używane <xref:System.Xml.Serialization.XmlSerializer> jest kodowanie typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to <xref:System.Xml.Serialization.XmlSerializer>, czy kod używa. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll. Aby uzyskać więcej informacji, zobacz [narzędzie XML Serializer Generator (Sgen. exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+Określa, czy kompilator będzie używać narzędzie XML Serializer Generator (Sgen. exe) do tworzenia zestawów serializacji XML. Zestawy serializacji mogą zwiększyć wydajność uruchamiania <xref:System.Xml.Serialization.XmlSerializer>, jeśli użyto tej klasy do serializacji typów w kodzie. Domyślnie ta opcja jest ustawiona na wartość **automatycznie**, co oznacza, że zestawy serializacji są generowane tylko wtedy, gdy użyto <xref:System.Xml.Serialization.XmlSerializer> do kodowania typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to, czy kod używa <xref:System.Xml.Serialization.XmlSerializer>. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll. Aby uzyskać więcej informacji, zobacz [narzędzie XML Serializer Generator (Sgen. exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 **Zaawansowane**
 

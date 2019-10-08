@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 5aec8c26a827a39abdfeacfc0e3d6dea4a62db43
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062165"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999975"
 ---
 # <a name="code-analysis-faq"></a>Analiza kodu — często zadawane pytania
 
@@ -55,7 +55,32 @@ ODP **.:** Środowisko IDE programu Visual Studio zawiera wbudowane analizatory,
 
 **P**: Jaka jest różnica między starszą analizą a analizą kodu na podstawie .NET Compiler Platform?
 
-Odp **.: Analiza kodu oparta na .NET compiler platform**analizuje kod źródłowy w czasie rzeczywistym i podczas kompilacji, natomiast Starsza analiza analizuje pliki binarne po zakończeniu kompilacji. Aby uzyskać więcej informacji, zobacz [Analiza na podstawie .NET compiler platform a Starsza analiza](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) i [FxCop — często zadawane pytania](fxcop-analyzers-faq.md).
+Odp **.: Analiza kodu oparta na .NET compiler platform**analizuje kod źródłowy w czasie rzeczywistym i podczas kompilacji, natomiast Starsza analiza analizuje pliki binarne po zakończeniu kompilacji. Aby uzyskać więcej informacji, zobacz [Analiza na podstawie .NET compiler platform a Starsza analiza](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) i [FxCop — często zadawane pytania](fxcop-analyzers-faq.md).
+
+## <a name="treat-warnings-as-errors"></a>Traktuj ostrzeżenia jako błędy
+
+**P**: Mój projekt używa opcji Build, aby traktować ostrzeżenia jako błędy. Po przeprowadzeniu migracji ze starszej wersji analizy do analizy kodu źródłowego wszystkie ostrzeżenia analizy kodu są teraz wyświetlane jako błędy. Jak mogę to zapobiec?
+
+ODP **.:** Aby zapobiec potraktowaniu ostrzeżeń analizy kodu jako błędów, wykonaj następujące kroki:
+
+  1. Utwórz plik. props o następującej zawartości:
+
+     ```xml
+     <Project>
+        <PropertyGroup>
+           <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+        </PropertyGroup>
+     </Project>
+     ```
+
+  2. Dodaj wiersz do pliku projektu. csproj lub. vbproj, aby zaimportować plik. props, który został utworzony w poprzednim kroku. Ten wiersz musi być umieszczony przed wszystkimi wierszami, które zaimportują Analizator FxCop. props Files. Na przykład, jeśli plik. props ma nazwę CodeAnalysis. props:
+
+     ```xml
+     ...
+     <Import Project="..\..\codeanalysis.props" Condition="Exists('..\..\codeanalysis.props')" />
+     <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+     ...
+     ```
 
 ## <a name="see-also"></a>Zobacz także
 

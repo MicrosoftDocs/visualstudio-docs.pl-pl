@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 331c346e7322543bef0814818a776c705b773846
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211370"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000182"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Tworzenie kodu w programie Visual Studio
 
@@ -26,7 +26,7 @@ Poznasz Edytor i utworzono jakiś kod. Teraz chcesz upewnić się, że kod dzia�
 
 Istnieją dwa podstawowe typy konfiguracji kompilacji: **Debugowanie** i **wydanie**. Konfiguracja **debugowania** generuje wolniejszy, większy plik wykonywalny, który umożliwia bogatsze interaktywne środowisko debugowania w czasie wykonywania. Plik wykonywalny **debugowania** nigdy nie powinien być dostarczany. Konfiguracja **wydania** kompiluje szybszy i zoptymalizowany plik wykonywalny, który jest odpowiedni do dostarczenia (co najmniej z perspektywy kompilatora). W domyślnej konfiguracji kompilacji **debugowania**.
 
-Najprostszym sposobem kompilowania projektu jest naciśnięcie klawisza **F7**, ale można również uruchomić kompilację, wybierając opcję **Kompiluj** > **rozwiązanie** z menu głównego.
+Najprostszym sposobem kompilowania projektu jest naciśnięcie klawisza **F7**, ale można również uruchomić kompilację, wybierając opcję **Kompiluj** **rozwiązanie**  >  z menu głównego.
 
 ![Wybór menu projektu kompilacji programu Visual Studio](../ide/media/vs_ide_gs_debug_build_menu_item.png)
 
@@ -44,13 +44,13 @@ Jeśli nie wprowadzono żadnych modyfikacji kodu, który został wcześniej utwo
 
 ![Dane wyjściowe i Lista błędów programu Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Kliknij wiersz błędu w oknie **Lista błędów** , aby przejść do wiersza, w którym występuje błąd. (Lub Włącz numery wierszy, naciskając **klawisze CTRL**+**Q**, wpisując **numery wierszy**, a następnie wybierając **lub wyłączając numery wierszy** z wyników. Jest to najszybszy sposób uzyskania okna dialogowego **Opcje** , w którym można włączyć numery wierszy.)
+Kliknij wiersz błędu w oknie **Lista błędów** , aby przejść do wiersza, w którym występuje błąd. (Lub Włącz numery wierszy, naciskając **klawisze Ctrl**+**Q**, wpisując **numery wierszy**, a następnie wybierając **lub wyłączając numery wierszy** z wyników. Jest to najszybszy sposób uzyskania okna dialogowego **Opcje** , w którym można włączyć numery wierszy.)
 
 ![Edytor programu Visual Studio z numerami wierszy](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
 ![Opcja numerów wierszy programu Visual Studio](../ide/media/vs_ide_gs_debug_options_line_numbers.png)
 
-Naciśnij klawisz **Ctrl**+**G** , aby szybko przejść do numeru wiersza, w którym wystąpił błąd.
+Naciśnij **klawisze Ctrl**+**G** , aby szybko przejść do numeru wiersza, w którym wystąpił błąd.
 
 Błąd jest identyfikowany przez czerwoną podkreślenie "zygzaka". Umieść kursor nad jej, aby uzyskać więcej informacji. Wprowadzić poprawki i jego znikną, chociaż może powodować nowy błąd z korekty. (Jest to nazywane "regresją").
 
@@ -74,13 +74,13 @@ Analizatory kodu szukają typowych problemów z kodem, które mogą prowadzić d
 
 ### <a name="c-and-visual-basic-code-analysis"></a>C#i Visual Basic Analiza kodu
 
-Program Visual Studio zawiera wbudowany zestaw [.NET compiler platform analizatorów](../code-quality/roslyn-analyzers-overview.md) , które sprawdzają C# i Visual Basic kod podczas pisania. Dodatkowe analizatory można zainstalować jako rozszerzenie programu Visual Studio lub jako pakiet NuGet. Jeśli zostaną znalezione naruszenia reguł, są one raportowane zarówno w edytorze kodu jako falistej w kodzie nieprawidłowym, jak i w **Lista błędów**.
+Program Visual Studio zawiera wbudowany zestaw [.NET compiler platform analizatorów](../code-quality/roslyn-analyzers-overview.md) , które sprawdzają C# i Visual Basic kod podczas pisania. Dodatkowe analizatory można zainstalować jako rozszerzenie programu Visual Studio lub jako pakiet NuGet. Jeśli zostaną znalezione naruszenia zasad, są one raportowane zarówno w Lista błędów, jak i w edytorze kodu jako zygzak w kodzie nieprawidłowym.
 
 ### <a name="c-code-analysis"></a>C++Analiza kodu
 
 Aby analizować C++ kod, uruchom [analizę kodu statycznego](../code-quality/quick-start-code-analysis-for-c-cpp.md). Zapoznaj się z wykonywać, aby uruchomić go po usunięciu oczywistych błędów, które uniemożliwiają pomyślne skompilowanie, i Poświęć trochę czasu na wygenerowanie ostrzeżeń. Zarządzaniem mu towarzyszą się na siebie i możesz poznać kilka technik stylu kodu.
 
-Naciśnij klawisz **Alt**+**F11** (lub wybierz polecenie **Analizuj** > **analizę kodu w rozwiązaniu** z górnego menu), aby rozpocząć analizę kodu statycznego.
+Naciśnij **kombinację klawiszy Alt**+**F11** (lub wybierz pozycję **Analizuj** > **Uruchom analizę kodu w rozwiązaniu** z górnego menu), aby rozpocząć analizę kodu statycznego.
 
 ![Element menu analizy Visual Studio Code](../ide/media/vs_ide_gs_debug_run_code_analysis.png)
 
@@ -114,11 +114,11 @@ Oprócz formatowania pliku dla spacji, wcięcia, et zadanie, **czyszczenie kodu*
 
 ## <a name="debug-your-running-code"></a>Debugowanie uruchomionego kodu
 
-Teraz, po pomyślnym skompilowaniu kodu i wykonaniu małego czyszczenia, uruchom go, naciskając klawisz **F5** lub wybierając **Debuguj** > **Rozpocznij debugowanie**. Spowoduje to uruchomienie aplikacji w środowisku debugowania, aby można było obserwować jej zachowanie szczegółowo. Środowisko IDE programu Visual Studio zmienia się w trakcie działania aplikacji: okno **dane wyjściowe** jest zastępowane dwoma nowymi (w konfiguracji okna domyślnego), oknem **autostarty/lokalne/Watch** z kartami oraz **stos wywołań/punktów przerwania/ustawienia wyjątku/dane wyjściowe** okno z kartami. Te okna mają wiele kart, które umożliwiają sprawdzanie i ocenianie zmiennych aplikacji, wątków, stosów wywołań i różnych innych zachowań w miarę ich działania.
+Teraz, po pomyślnym skompilowaniu kodu i wykonaniu nieco czyszczenia, uruchom go, naciskając klawisz **F5** lub wybierając pozycję **Debuguj** > **Rozpocznij debugowanie**. Spowoduje to uruchomienie aplikacji w środowisku debugowania, aby można było obserwować jej zachowanie szczegółowo. Środowisko IDE programu Visual Studio zmienia się w trakcie działania aplikacji: okno **dane wyjściowe** jest zastępowane dwoma nowymi (w konfiguracji okna domyślnego), oknem **autostarty/lokalne/Watch** z kartami oraz **stos wywołań/punktów przerwania/ustawienia wyjątku/dane wyjściowe** okno z kartami. Te okna mają wiele kart, które umożliwiają sprawdzanie i ocenianie zmiennych aplikacji, wątków, stosów wywołań i różnych innych zachowań w miarę ich działania.
 
 ![Program Visual Studio — autouzupełniania i stosy wywołań okien](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-Zatrzymaj aplikację, naciskając klawisz **SHIFT**+**F5** lub klikając przycisk **Zatrzymaj** . Lub po prostu możesz zamknąć okno główne aplikacji (lub okno dialogowe wiersza polecenia).
+Zatrzymaj aplikację, naciskając klawisz **Shift**+**F5** lub klikając przycisk **Zatrzymaj** . Lub po prostu możesz zamknąć okno główne aplikacji (lub okno dialogowe wiersza polecenia).
 
 Jeżeli kod działa bez zarzutu i dokładnie tak jak oczekiwano, Gratulacje! Jeśli jednak zawiesz lub uległ awarii lub wykazałeś pewne dziwne wyniki, musisz znaleźć źródło tych problemów i naprawić błędy.
 

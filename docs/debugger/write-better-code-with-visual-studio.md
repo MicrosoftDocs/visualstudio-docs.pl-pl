@@ -1,6 +1,6 @@
 ---
 title: Narzędzia i techniki debugowania
-description: Zapis lepszego kodu z mniej błędów przy użyciu programu Visual Studio, Usuń wyjątki, napraw błędy i poprawić kod
+description: Pisanie lepszego kodu z mniejszymi usterkami przy użyciu programu Visual Studio do rozwiązywania wyjątków, naprawiania błędów i ulepszania kodu
 ms.custom:
 - debug-experiment
 - seodec18
@@ -13,43 +13,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: b1fe0a9bb1e966bd1451bb5d816eaab814071fb5
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262132"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000178"
 ---
-# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debugowanie techniki i narzędzia, aby ułatwić tworzenie lepszego kodu
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniki i narzędzia debugowania ułatwiające pisanie lepszego kodu
 
-Naprawianie usterek i błędów w kodzie może być czasochłonne — a czasem zakłócenie — zadanie. Zajmuje trochę czasu, aby dowiedzieć się, jak można debugować skutecznie, ale rozbudowane środowisko IDE, takie jak Visual Studio ułatwia zadania o wiele prostsze. Środowisko IDE może pomóc Ci napraw błędy i zdebugować kod szybciej i nie tylko, jednak może również pomoc zapisu lepszego kodu przy użyciu mniejszej liczby usterek. Naszym celem w tym artykule jest umożliwiają całościowy obraz procesu "poprawianie błędów", dzięki czemu będzie wiadomo, kiedy należy używać analizator kodu kiedy należy używać debugera, sposób naprawić wyjątków oraz kod intencji. Jeśli już wiesz, musisz użyć debugera, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
+Naprawianie usterek i błędów w kodzie może być czasochłonne i czasami frustrujące — zadanie. Zajmuje trochę czasu, aby dowiedzieć się, jak można debugować skutecznie, ale rozbudowane środowisko IDE, takie jak Visual Studio ułatwia zadania o wiele prostsze. Środowisko IDE może pomóc w rozwiązaniu błędów i szybszej debugowania kodu, a nie tylko, ale może też pomóc napisać lepszy kod z mniejszą liczbą błędów. Naszym celem tego artykułu jest udostępnienie całościowego widoku procesu "Usterka-naprawianie", dzięki czemu wiadomo, kiedy należy używać analizatora kodu, kiedy należy używać debugera, jak naprawić wyjątki i jak kod zamiaru. Jeśli już wiesz, że musisz użyć debugera, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
-W tym artykule będziemy wyjaśniać, wykorzystując IDE, aby zwiększyć wydajność swoje sesje kodowania. Firma Microsoft dotyku kilku zadań, takich jak:
+W tym artykule omówiono sposób wykorzystania środowiska IDE, aby zwiększyć produktywność sesji kodowania. Firma Microsoft dotyku kilku zadań, takich jak:
 
 * Przygotowanie kodu do debugowania przy użyciu analizatora kodu środowiska IDE
 
 * Jak naprawić wyjątków (błędy środowiska wykonawczego)
 
-* Jak zminimalizować błędy kodowania intencji (przy użyciu assert)
+* Jak zminimalizować usterki przez kodowanie dla zamiaru (przy użyciu potwierdzenia)
 
 * Kiedy należy używać debugera
 
 Aby zademonstrować te zadania, pokazujemy kilka najbardziej typowych błędów i usterek, które będzie występować podczas próby przeprowadzenia debugowania aplikacji. Mimo że kod przykładowy C#, informacje koncepcyjne poniżej ogólnie stosuje się do języka C++, Visual Basic, JavaScript i inne języki obsługiwane przez program Visual Studio (z wyjątkiem sytuacji, gdy podane). Zrzuty ekranu są w języku C#.
 
-## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Utwórz przykładową aplikację z niektórych błędów i błędy w nim
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Tworzenie przykładowej aplikacji z niektórymi usterkami i błędami
 
 Poniższy kod zawiera pewne błędy, które można rozwiązać, przy użyciu programu Visual Studio IDE. W tym miejscu aplikacja jest prosta aplikacja, która symuluje pobieranie danych JSON z niektórych operacji, podczas deserializacji danych do obiektu i aktualizowanie prostą listę nowych danych.
 
 Aby utworzyć aplikację:
 
-1. Otwórz program Visual Studio i wybierz polecenie **pliku** > **New** > **projektu**. W obszarze **Visual C#** , wybierz **pulpitu Windows** lub **platformy .NET Core**, a następnie w środkowym okienku wybierz **aplikacja Konsolowa**.
+1. Otwórz program Visual Studio i wybierz pozycję **plik** > **Nowy** > **projektu**. W obszarze **Visual C#** , wybierz **pulpitu Windows** lub **platformy .NET Core**, a następnie w środkowym okienku wybierz **aplikacja Konsolowa**.
 
     > [!NOTE]
     > Jeśli nie widzisz **aplikację Konsolową** szablonu projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** lub **programowanie dla wielu platform .NET Core** obciążenia, wybierz **Modyfikuj**.
 
-2. W **nazwa** wpisz **Console_Parse_JSON** i kliknij przycisk **OK**. Program Visual Studio tworzy projekt.
+2. W polu **Nazwa** wpisz **Console_Parse_JSON** , a następnie kliknij przycisk **OK**. Program Visual Studio tworzy projekt.
 
-3. Zamień domyślny kod w projekcie *Program.cs* plik zawierający poniższy kod przykładowy.
+3. Zastąp domyślny kod w pliku *program.cs* projektu następującym przykładowym kodem.
 
 ```csharp
 using System;
@@ -192,7 +192,7 @@ Należy zauważyć, że ten błąd wskazuje ikonę żarówki, aby lewym dolnym r
 
 Po kliknięciu tego elementu, program Visual Studio dodaje `using System.Text` instrukcji na górze *Program.cs* plików i czerwona fala zniknie. (Jeśli nie masz pewności, co zrobić będzie sugerowanej poprawki, wybierz **podgląd zmian** łącza po prawej stronie przed zastosowaniem poprawki.)
 
-Poprzedni błąd jest popularnym, który zazwyczaj naprawić, dodając nowe `using` instrukcji w kodzie. Istnieją takie jak kilka błędów wspólne, podobne do tego jednego ```The type or namespace `Name` cannot be found.``` te rodzaje błędów może wskazywać na Brak odwołania do zestawu (kliknij projekt prawym przyciskiem myszy, wybierz polecenie **Dodaj** > **odwołania**), nieprawidłowo zapisana nazwa lub Brak biblioteki, który chcesz dodać (dla C#, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Zarządzaj pakietami NuGet**).
+Poprzedni błąd jest popularnym, który zazwyczaj naprawić, dodając nowe `using` instrukcji w kodzie. Istnieje kilka typowych, podobnych błędów, takich jak ```The type or namespace `Name` cannot be found.``` tego rodzaju błędy mogą wskazywać brak odwołania do zestawu (kliknij projekt prawym przyciskiem myszy, wybierz polecenie **Dodaj** **odwołanie** > ), nazwę błędnej pisowni lub brakującą bibliotekę, której potrzebujesz Aby dodać (dla C#, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Zarządzaj pakietami NuGet**).
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>Usuń pozostałe błędy i ostrzeżenia
 
@@ -218,7 +218,7 @@ internal int points;
 
 Pozbycie czerwoną linią falistą w edytorze kodu.
 
-Następnie umieść kursor nad linią falistą w deklaracji zielony `points` element członkowski danych. Analizator kodu informujący o tym, że zmienna nigdy nie jest przypisywana wartość.
+Następnie umieść wskaźnik myszy na zielonym zygzaku w deklaracji elementu członkowskiego danych `points`. Analizator kodu informujący o tym, że zmienna nigdy nie jest przypisywana wartość.
 
 ![Komunikat ostrzegawczy dotyczący nieprzypisanej zmiennej](../debugger/media/write-better-code-warning-message.png)
 
@@ -255,7 +255,7 @@ Po osiągnięciu wyjątek, należy poprosić (i odpowiedzi) na kilka pytań:
 
 * Ten wyjątek jest coś, co użytkownicy mogą występować?
 
-Jeśli jest to pierwsza, naprawić błąd. (W przykładowej aplikacji, która oznacza Napraw nieprawidłowe dane). Po drugie, może być konieczne do obsługi wyjątków w kodzie przy użyciu `try/catch` bloku (spojrzymy na inne strategie możliwe w następnej sekcji). W przykładowej aplikacji Zastąp następujący kod:
+Jeśli jest to pierwsza, naprawić błąd. (W przykładowej aplikacji, która oznacza Napraw nieprawidłowe dane). Jeśli jest to ostatnie, może być konieczne obsłużenie wyjątku w kodzie przy użyciu bloku `try/catch` (w następnej sekcji patrzmy inne możliwe strategie). W przykładowej aplikacji Zastąp następujący kod:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -294,7 +294,7 @@ Poniżej przedstawiono kilka ważnych wskazówki dotyczące obsługi wyjątków:
     }
     ```
 
-* Dla nieznanego funkcje, które zawierają w swojej aplikacji, zwłaszcza tych, które wchodzenie w interakcje z danymi zewnętrznymi (np. żądania sieci web) zapoznaj się z dokumentacją, aby zobaczyć, jakie wyjątki funkcji będzie prawdopodobnie zgłaszany. Może to być kluczowych informacji do obsługi błędów właściwe i do debugowania aplikacji.
+* W przypadku nieznanych funkcji, które są dołączane do aplikacji, szczególnie tych, które współdziałają z danymi zewnętrznymi (takimi jak żądanie sieci Web), zapoznaj się z dokumentacją, aby zobaczyć, jakie wyjątki może zgłosić funkcja. Może to być kluczowych informacji do obsługi błędów właściwe i do debugowania aplikacji.
 
 Dla przykładowej aplikacji, należy naprawić `SerializationException` w `GetJsonData` metody, zmieniając `4o` do `40`.
 

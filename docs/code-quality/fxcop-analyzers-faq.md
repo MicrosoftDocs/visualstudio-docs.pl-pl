@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3dc304d8d6bf844fb9c23f0e92efc5250da91e4d
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 277155bdab713ec12daa380fc2721a31b5d932a2
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975135"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000121"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące analizatorów FxCop i FxCop
 
@@ -52,6 +52,10 @@ Jeśli zainstalowano analizatory FxCop, ale nadal pojawia się ostrzeżenie CA05
 ## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Które reguły zostały przeanalizowane do analizatorów FxCop?
 
 Aby uzyskać informacje o tym, które starsze reguły analizy zostały [przeanalizowane do analizatorów FxCop](install-fxcop-analyzers.md), zobacz [FxCop reguły stanu portu](fxcop-rule-port-status.md).
+
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>Ostrzeżenia analizy kodu są traktowane jako błędy
+
+Jeśli projekt używa opcji kompilacja do traktowania ostrzeżeń jako błędów, ostrzeżenia analizatora FxCop mogą pojawić się jako błędy. Aby zapobiec potraktowaniu ostrzeżeń analizy kodu jako błędów, wykonaj kroki opisane w temacie [Analiza kodu — często zadawane pytania](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="see-also"></a>Zobacz także
 

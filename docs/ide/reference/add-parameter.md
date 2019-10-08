@@ -1,5 +1,5 @@
 ---
-title: Dodaj parametr do metody szybka akcja
+title: Dodawanie parametru do szybkiej akcji metody
 ms.date: 09/28/2018
 ms.topic: reference
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dbed81809cb3b69814fbf10dde7129b45396eaa
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792270"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000196"
 ---
-# <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Dodaj parametr do metody za pomocą szybkich akcji
+# <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Dodawanie parametru do metody przy użyciu szybkiej akcji
 
 Dotyczy to generowanie kodu:
 
@@ -22,29 +22,29 @@ Dotyczy to generowanie kodu:
 
 - Visual Basic
 
-**Co:** Umożliwia automatyczne dodawanie parametru do metody, na podstawie użycia.
+**Whatman** Umożliwia automatyczne dodanie parametru do metody na podstawie użycia.
 
-**Kiedy:** Należy dodać parametr do metody i poprawnie Zadeklaruj go automatycznie.
+**Czasie** Musisz dodać parametr do metody i chcieć prawidłowo zadeklarować ją automatycznie.
 
-**Dlaczego:** Można dodać parametr do deklaracji metody przed wywołaniem, jednak ta funkcja dodaje go automatycznie na podstawie wywołania metody.
+**Zalet** Można dodać parametr do deklaracji metody przed wywołaniem, jednak ta funkcja automatycznie dodaje ją na podstawie wywołania metody.
 
 ## <a name="how-to-use-it"></a>Jak z niej korzystać
 
 1. Dodaj dodatkowy argument do wywołania metody.
 
-   Czerwony znak "falista" pojawia się w obszarze Nazwa metody, gdy wywołujesz.
+   Czerwona zygzakowata pojawia się pod nazwą metody, w której jest wywoływana.
 
-2. Umieść wskaźnik myszy na czerwony "falista", aż pojawi się w menu Szybkie akcje. Wybierz **Strzałka w dół** w menu Szybkie akcje, a następnie wybierz **Dodaj parametr do [Metoda]**.
+2. Umieść wskaźnik myszy na czerwono, aby pojawiło się menu szybkie akcje. Wybierz **strzałkę w dół** w menu szybkie akcje, a następnie wybierz polecenie **Dodaj parametr do [Metoda]** .
 
-   ![Dodaj parametr do metody szybkich działań w programie Visual Studio](media/add-parameter-to-method.png)
+   ![Dodawanie parametru do szybkiej akcji metody w programie Visual Studio](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > Można także uzyskać dostęp w menu Szybkie akcje, umieszczając kursor w wierszu wywołania metody, a następnie albo naciskając **Ctrl**+**.** lub wybierając ikonę żarówki na marginesie pliku.
+   > Możesz również uzyskać dostęp do menu szybkie akcje, umieszczając kursor w wierszu wywołania metody, a następnie naciskając klawisz **Ctrl**+ **.** (kropka) lub wybierz ikonę żarówki w marginesie pliku.
 
-   Visual Studio dodaje nowy parametr do deklaracji metody.
+   Program Visual Studio dodaje nowy parametr do deklaracji metody.
 
 > [!NOTE]
-> W przypadku innych wywołań do metody ich może powodować błędy po użyciu tej szybkiej akcji, ponieważ nie określają argumentu dla parametru nowo dodane.
+> Jeśli masz inne wywołania metody, mogą one generować błędy po użyciu tej szybkiej akcji, ponieważ nie określają argumentu dla nowo dodanego parametru.
 
 ## <a name="see-also"></a>Zobacz także
 
