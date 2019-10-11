@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 85bf4e140b3a379221c3b7e5a05428b29e3a985b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585191"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018381"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Zestaw reguł zabezpieczeń dla zarządzanego kodu
 
@@ -64,25 +64,25 @@ Użyj zestawu reguł zabezpieczeń firmy Microsoft dla starszej wersji analizy k
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Metody przezroczyste nie mogą używać asercji zabezpieczeń|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Metody przezroczyste nie mogą wywoływać kodu natywnego|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Zestawy powinny mieć prawidłowe silne nazwy|
-|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Nie używaj niezabezpieczonego deserializatora BinaryFormatter|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Nie wywołuj metody BinaryFormatter.Deserialize bez uprzedniego ustawienia właściwości BinaryFormatter.Binder|
-|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize|
-|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Nie używaj niezabezpieczonego deserializatora LosFormatter|
-|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Nie używaj niezabezpieczonego deserializatora NetDataContractSerializer|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|Nie wykonuj deserializacji bez uprzedniego ustawienia właściwości NetDataContractSerializer.Binder|
-|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Upewnij się, że właściwość NetDataContractSerializer.Binder jest ustawiona przed deserializacją|
-|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Nie używaj niezabezpieczonego deserializatora ObjectStateFormatter|
+|[CA2300](ca2300.md)|Nie używaj niezabezpieczonego deserializatora BinaryFormatter|
+|[CA2301](ca2301.md)|Nie wywołuj metody BinaryFormatter.Deserialize bez uprzedniego ustawienia właściwości BinaryFormatter.Binder|
+|[CA2302](ca2302.md)|Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize|
+|[CA2305](ca2305.md)|Nie używaj niezabezpieczonego deserializatora LosFormatter|
+|[CA2310](ca2310.md)|Nie używaj niezabezpieczonego deserializatora NetDataContractSerializer|
+|[CA2311](ca2311.md)|Nie wykonuj deserializacji bez uprzedniego ustawienia właściwości NetDataContractSerializer.Binder|
+|[CA2312](ca2312.md)|Upewnij się, że właściwość NetDataContractSerializer.Binder jest ustawiona przed deserializacją|
+|[CA2315](ca2315.md)|Nie używaj niezabezpieczonego deserializatora ObjectStateFormatter|
 |[CA2321](ca2321.md)|Nie wykonuj deserializacji za pomocą obiektu JavaScriptSerializer zainicjowanego przy użyciu parametru SimpleTypeResolver|
 |[CA2322](ca2322.md)|Upewnij się, że obiekt JavaScriptSerializer nie został zainicjowany przy użyciu parametru SimpleTypeResolver przed deserializacją|
-|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL|
-|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających działanie skryptów między witrynami|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie ścieżki pliku|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających ujawnienie informacji|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie protokołu LDAP|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie polecenia procesu|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających otwarcie przekierowania|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia XPath|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XML|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie biblioteki DLL|
-|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia regularnego|
+|[CA3001](../code-quality/ca3001.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL|
+|[CA3002](../code-quality/ca3002.md)|Przegląd kodu pod kątem luk umożliwiających działanie skryptów między witrynami|
+|[CA3003](../code-quality/ca3003.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie ścieżki pliku|
+|[CA3004](../code-quality/ca3004.md)|Przegląd kodu pod kątem luk umożliwiających ujawnienie informacji|
+|[CA3005](../code-quality/ca3005.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie protokołu LDAP|
+|[CA3006](../code-quality/ca3006.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie polecenia procesu|
+|[CA3007](../code-quality/ca3007.md)|Przegląd kodu pod kątem luk umożliwiających otwarcie przekierowania|
+|[CA3008](../code-quality/ca3008.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia XPath|
+|[CA3009](../code-quality/ca3009.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XML|
+|[CA3010](../code-quality/ca3010.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML|
+|[CA3011](../code-quality/ca3011.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie biblioteki DLL|
+|[CA3012](../code-quality/ca3012.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia regularnego|

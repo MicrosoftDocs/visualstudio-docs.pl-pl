@@ -7,18 +7,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 27d254ac50b8127ab5cef9ba4cf914d14c0cfba5
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: c6eb32357998f0867b00a5ef0e9119c3c357ed1b
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186382"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172744"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Opcje zakresu reguł dla analizatorów FxCop
 
 Niektóre reguły analizatora FxCop umożliwiają udoskonalanie części bazy kodu, do których powinny być stosowane. Ta strona zawiera listę dostępnych opcji konfiguracji zakresu, ich wartości dopuszczalne i reguły, do których mogą być stosowane. Aby użyć tych opcji, należy określić je w [pliku EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 Te opcje konfiguracji są dostępne od wersji 2.6.3 pakietu NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
+
+> [!TIP]
+> Aby zapoznać się z pełną listą opcji dostępnych dla danej wersji pakietu FxCopAnalyzers, zapoznaj się z plikiem *analizatora Configuration.MD* w folderze *Dokumentacja* pakietu. Plik znajduje się w lokalizacji *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\documentation\Analyzer Configuration.MD*. Ten plik dokumentacji konfiguracji jest dołączony do każdej wersji pakietu, począwszy od wersji 2.6.5. Oto przykład sposobu udokumentowania opcji w pliku *Configuration.MD analizatora* :
+>
+> Nazwa opcji: `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t-1
+> Wartości opcji: wartości całkowite \
+> Wartość domyślna: Specyficzne dla każdej konfigurowalnej reguły ("100000" domyślnie dla większości reguł) \
+> Przykład: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## <a name="api_surface"></a>api_surface
 
@@ -33,19 +41,19 @@ Te opcje konfiguracji są dostępne od wersji 2.6.3 pakietu NuGet [Microsoft. Co
 | Czy ignorować metody asynchroniczne, które nie zwracają wartości | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
 
 > [!NOTE]
-> W wersji 2.6.3 i wcześniejszej części pakietu analizatora ta opcja została nazwana `skip_async_void_methods`.
+> W wersji 2.6.3 i wcześniejszej części pakietu analizatora ta opcja miała nazwę `skip_async_void_methods`.
 
 ## <a name="exclude_single_letter_type_parameters"></a>exclude_single_letter_type_parameters
 
 | Opis | Dozwolone wartości | Wartość domyślna | Konfigurowalne reguły |
 | - | - | - | - |
-| Określa, czy wykluczyć z reguły [parametry typu](/dotnet/csharp/programming-guide/generics/generic-type-parameters) o pojedynczym znaku, na przykład `S` w`Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
+| Określa, czy wykluczyć z reguły [parametry typu](/dotnet/csharp/programming-guide/generics/generic-type-parameters) z pojedynczym znakiem, na przykład `S` w `Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
 
 > [!NOTE]
-> W wersji 2.6.3 i wcześniejszej części pakietu analizatora ta opcja została nazwana `allow_single_letter_type_parameters`.
+> W wersji 2.6.3 i wcześniejszej części pakietu analizatora ta opcja miała nazwę `allow_single_letter_type_parameters`.
 
 ## <a name="output_kind"></a>output_kind
 
 | Opis | Dozwolone wartości | Wartość domyślna | Konfigurowalne reguły |
 | - | - | - | - |
-| Określa, że kod w projekcie, który generuje ten typ zestawu, powinien być analizowany | Co najmniej jedno pole <xref:Microsoft.CodeAnalysis.OutputKind> wyliczenia<br/><br/>Rozdziel wiele wartości przecinkami (,) | Wszystkie rodzaje danych wyjściowych | [CA2007](ca2007-do-not-directly-await-task.md) |
+| Określa, że kod w projekcie, który generuje ten typ zestawu, powinien być analizowany | Co najmniej jedno pole wyliczenia <xref:Microsoft.CodeAnalysis.OutputKind><br/><br/>Rozdziel wiele wartości przecinkami (,) | Wszystkie rodzaje danych wyjściowych | [CA2007](ca2007-do-not-directly-await-task.md) |

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c7139234ab9f36842e92ead9e43f8d0a0a71a00e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 11b05a7993d2fcd6bc52b53edfde2e97a566574c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551199"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018830"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio
 
@@ -89,9 +89,9 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
    Alternatywnie można utworzyć plik wsadowy, który używa narzędzia Certutil. exe, które jest dostarczane z systemem Windows, przy użyciu następujących poleceń:
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -102,7 +102,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
 
 ::: moniker range="vs-2019"
 
-1. Skopiuj [narzędzie Menedżer certyfikatów](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr. exe) do udziału instalacyjnego (na przykład \\server\share\vs2019). Certmgr.exe nie jest częścią Windows, ale jest dostępny jako część [zestawu Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Skopiuj [narzędzie Menedżer certyfikatów](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr. exe) do udziału instalacyjnego (na przykład \\server \ Share \ vs2019). Certmgr.exe nie jest częścią Windows, ale jest dostępny jako część [zestawu Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 2. Utwórz plik wsadowy za pomocą następujących poleceń:
 
@@ -148,7 +148,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
   * Certyfikat pośredni: **Podpisywanie kodu firmy Microsoft — Asystent zgodności**
     * Wymagane we wszystkich systemach. Należy pamiętać, że systemy za pomocą wszystkie aktualizacje stosowane z witryny Windows Update nie mogą mieć ten certyfikat.
   * Certyfikat główny: **Urząd certyfikacji głównej firmy Microsoft**
-    * Wymagana. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
+    * Wymagany. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
 
 **Aktualizacja**: W przypadku programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej Instalator programu Visual Studio wymaga zainstalowania tylko certyfikatów głównych w systemie. Te certyfikaty są przechowywane w plikach. cer zamiast. p12.
 
@@ -179,7 +179,7 @@ Po podpis jest weryfikowany w środowisku, w trybie online, interfejsy API Windo
 Jest jednym ze sposobów, aby sprawdzić instalację systemu wykonaj następujące kroki:
 
 1. Uruchom **mmc.exe**.<br/>
-  a. Kliknij pozycję **plik**, a następnie wybierz pozycję **Dodaj/Usuń**przystawkę.<br/>
+  a. Kliknij pozycję **plik**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
   b. Kliknij dwukrotnie **certyfikaty**, wybierz opcję **konto komputera**, a następnie kliknij przycisk **dalej**.<br/>
   c. Wybierz **komputera lokalnego**, kliknij przycisk **Zakończ**, a następnie kliknij przycisk **OK**.<br/>
   d. Rozwiń **certyfikaty (komputer lokalny)** .<br/>
@@ -189,7 +189,7 @@ Jest jednym ze sposobów, aby sprawdzić instalację systemu wykonaj następują
    f. Rozwiń **pośrednie urzędy certyfikacji**, a następnie wybierz pozycję **certyfikaty**.<br/>
     * Sprawdź tę listę pod kątem wymaganych certyfikatów pośrednich.<br/>
 
-2. Kliknij pozycję **plik**, a następnie wybierz pozycję **Dodaj/Usuń**przystawkę.<br/>
+2. Kliknij pozycję **plik**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
   a. Kliknij dwukrotnie **certyfikaty**, wybierz opcję **Moje konto użytkownika**, kliknij przycisk **Zakończ**, a następnie kliknij przycisk **OK**.<br/>
   b. Rozwiń **Certyfikaty — bieżący użytkownik**.<br/>
   c. Rozwiń **pośrednie urzędy certyfikacji**, a następnie wybierz pozycję **certyfikaty**.<br/>

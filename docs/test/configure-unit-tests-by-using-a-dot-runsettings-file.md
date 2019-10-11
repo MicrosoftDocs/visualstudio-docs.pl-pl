@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bdf67f78d1a4cc7e2d17336a7272b919fcc6fba9
-ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.openlocfilehash: 4194a392eee1d5c9beaa0640f4006d1f01ebbace
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71693026"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262315"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -28,7 +28,7 @@ Pliki parametrów uruchomieniowych mogą służyć do konfigurowania testów uru
 
 ::: moniker range="vs-2017"
 
-Aby określić plik parametrów uruchomieniowych w środowisku IDE **, wybierz pozycję** > Testuj **Ustawienia** > testu **Wybierz plik ustawień testu**, a następnie wybierz plik *. runsettings* .
+Aby określić plik parametrów uruchomieniowych w środowisku IDE, wybierz pozycję **testuj** > **Ustawienia testu** > **Wybierz plik ustawień testu**, a następnie wybierz plik *. runsettings* .
 
 ![Wybieranie menu plik ustawień testu w programie Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -91,7 +91,7 @@ Aby dostosować testy przy użyciu pliku *. runsettings* , wykonaj następujące
 
 ::: moniker range="vs-2017"
 
-3. W menu **test** wybierz pozycję **Ustawienia** > testu**Wybierz plik ustawień testu**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
+3. W menu **test** wybierz pozycję **Ustawienia testu** > **Wybierz plik ustawień testu**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
 
 ::: moniker-end
 
@@ -211,7 +211,7 @@ Element **RunConfiguration** może zawierać następujące elementy:
 |Węzeł|Domyślny|Wartości|
 |-|-|-|
 |**ResultsDirectory**||Katalog, w którym są umieszczane wyniki testów.|
-|**TargetFrameworkVersion**|Framework40|`FrameworkCore10`w przypadku `FrameworkUap10` źródeł .NET Core dla źródeł opartych na platformy UWP `Framework45` , dla .NET Framework 4,5 i wyższych `Framework40` , dla .NET Framework 4,0 i `Framework35` .NET Framework 3,5.<br /><br />To ustawienie określa wersję struktury testów jednostkowych używanej do odnajdywania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.<br /><br />W przypadku pominięcia `TargetFrameworkVersion` elementu z pliku *. runsettings* platforma automatycznie określa wersję platformy opartą na skompilowanych plikach binarnych.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` dla źródeł .NET Core, `FrameworkUap10` dla źródeł opartych na platformy UWP, `Framework45` dla .NET Framework 4,5 i wyższych, `Framework40` dla .NET Framework 4,0 i `Framework35` dla .NET Framework 3,5.<br /><br />To ustawienie określa wersję struktury testów jednostkowych używanej do odnajdywania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.<br /><br />W przypadku pominięcia `TargetFrameworkVersion` elementu z pliku *. runsettings* platforma automatycznie określi wersję platformy opartą na skompilowanych plikach binarnych.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|fałsz, prawda|
 |**TestAdaptersPaths**||Co najmniej jedna ścieżka do katalogu, w którym znajduje się TestAdapters|
@@ -252,12 +252,11 @@ Aby dostosować każdy inny typ adapterów danych diagnostycznych, należy uży�
 ```xml
 <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
-    <Parameter name="webAppUserName" value="Admin" />
-    <Parameter name="webAppPassword" value="Password" />
+    <Parameter name="docsUrl" value="https://docs.microsoft.com" />
 </TestRunParameters>
 ```
 
-Parametry przebiegu testowego zapewniają sposób definiowania zmiennych i wartości, które są dostępne dla testów w czasie wykonywania. Dostęp do parametrów przy użyciu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> właściwości:
+Parametry przebiegu testowego zapewniają sposób definiowania zmiennych i wartości, które są dostępne dla testów w czasie wykonywania. Uzyskaj dostęp do parametrów przy użyciu właściwości <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType>:
 
 ```csharp
 [TestMethod]
@@ -267,7 +266,7 @@ public void HomePageTest()
 }
 ```
 
-Aby użyć parametrów przebiegu testowego, Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole prywatne i Właściwość <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> publiczną do klasy testowej.
+Aby użyć parametrów przebiegu testowego, Dodaj pole private <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> i Właściwość Public <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> do klasy testowej.
 
 ### <a name="mstest-run-settings"></a>MSTest Parametry uruchomieniowe
 
@@ -283,7 +282,7 @@ Aby użyć parametrów przebiegu testowego, Dodaj <xref:Microsoft.VisualStudio.T
 </MSTest>
 ```
 
-Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody testowe mające <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atrybut.
+Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody testowe mające atrybut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
 |Konfigurowanie|Domyślny|Wartości|
 |-|-|-|
@@ -292,7 +291,7 @@ Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody te
 |**SettingsFile**||W tym miejscu możesz określić plik ustawień testu, który ma być używany z kartą MSTest. Możesz również określić plik ustawień testu [w menu Ustawienia](#ide).<br /><br />Jeśli określisz tę wartość, musisz także ustawić **ForcedlegacyMode** na **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Po zakończeniu przebiegu testu MSTest jest zamykany. Każdy proces, który jest uruchamiany jako część testu, również zostanie zamknięty. Jeśli chcesz zatrzymać program wykonujący testy, ustaw wartość na **true**. Można na przykład użyć tego ustawienia, aby zachować działanie przeglądarki między kodowanymi testami interfejsu użytkownika.|
 |**DeploymentEnabled**|true|W przypadku ustawienia wartości **false**elementy wdrożenia określone w metodzie testowej nie są kopiowane do katalogu wdrożenia.|
-|**CaptureTraceOutput**|true|Możesz pisać do śledzenia debugowania z metody testowej przy użyciu <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
+|**CaptureTraceOutput**|true|Można pisać do śladu debugowania z metody testowej przy użyciu <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Aby zachować katalog wdrożenia po przebiegu testu, należy ustawić tę wartość na **false**.|
 |**MapInconclusiveToFailed**|false|Jeśli test zakończy się nieniejednoznacznie, jest mapowany do stanu pominięty w **Eksploratorze testów**. Jeśli chcesz, aby testy niejednoznaczne były wyświetlane jako nieudane, ustaw wartość na **true**.|
 |**Inprocmode**|false|Jeśli chcesz, aby testy były uruchamiane w tym samym procesie co karta MSTest, ustaw tę wartość na **true**. To ustawienie zapewnia mniejszy przyrost wydajności. Ale jeśli test kończy się wyjątkiem, pozostałe testy nie są uruchamiane.|

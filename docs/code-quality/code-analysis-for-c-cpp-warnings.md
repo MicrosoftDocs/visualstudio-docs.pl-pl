@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8a1c77a7db2a16b05c1b6b0eeb5e02abef4c9c3
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540784"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018458"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Analiza kodu dla C/C++ — Ostrzeżenia
-Ta sekcja zawiera ostrzeżenia analizy kodu C/C++ z wyjątkiem tych, które są wywoływane przez [podstawowych wytycznych dotyczących języka C++](code-analysis-for-cpp-corecheck.md). Aby uzyskać informacje o analizie kodu, zobacz [/ analyze (analiza kodu)](/cpp/build/reference/analyze-code-analysis) i [— Szybki Start: Analiza kodu C/c++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+W tej sekcji przedstawiono ostrzeżeniaC++ analizy kodu C/Code, z wyjątkiem tych, które zostały zgłoszone przez [ C++ sprawdzenie podstawowych wytycznych](code-analysis-for-cpp-corecheck.md). Aby uzyskać informacje na temat analizy kodu, zobacz [/analyze (analiza kodu)](/cpp/build/reference/analyze-code-analysis) i [Quick Start: Analiza kodu dla języka CC++/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>Zobacz też
 

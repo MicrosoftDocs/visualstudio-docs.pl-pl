@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a5272d74e1987cd7838932182e7e59c9c53f21
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e5b754f32edb86d10b4dd722ea7c6486f8179af6
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923946"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018735"
 ---
 # <a name="intrinsic-functions"></a>Funkcje wewnętrzne
 Wyrażenie w porażeniu SAL może być C/C++ wyrażeniem, pod warunkiem, że jest wyrażeniem, które nie ma efektów ubocznych — na przykład + +,--, i wywołania funkcji wszystkie mają efekty uboczne w tym kontekście.  Funkcja SAL udostępnia jednak niektóre obiekty podobne do funkcji i niektóre zastrzeżone symbole, które mogą być używane w wyrażeniach SAL. Są one nazywane *funkcjami wewnętrznymi*.
@@ -30,21 +30,21 @@ Poniższe adnotacje funkcji instrinsic zapewniają ogólne narzędzie dla SAL.
 
 |Adnotacja|Opis|
 |----------------|-----------------|
-|`_Curr_`|Synonim dla obiektu, który jest aktualnie dodawany do adnotacji.  Gdy adnotacja jest używana, `_Curr_` jest taka sama jak pierwszy parametr do `_At_`. `_At_`  W przeciwnym razie jest to parametr lub cała funkcja/wartość zwracana, z którą adnotacja jest w sposób leksykalny.|
+|`_Curr_`|Synonim dla obiektu, który jest aktualnie dodawany do adnotacji.  Gdy adnotacja `_At_` jest używana, `_Curr_` jest taka sama jak pierwszy parametr `_At_`.  W przeciwnym razie jest to parametr lub cała funkcja/wartość zwracana, z którą adnotacja jest w sposób leksykalny.|
 |`_Inexpressible_(expr)`|Wyraża sytuację, w której rozmiar buforu jest zbyt złożony do reprezentowania przy użyciu wyrażenia adnotacji — na przykład, kiedy jest obliczany przez skanowanie zestawu danych wejściowych, a następnie liczenie wybranych elementów członkowskich.|
-|`_Nullterm_length_(param)`|`param`to liczba elementów w buforze, do których nie dołączany jest terminator o wartości null. Może być zastosowany do dowolnego buforu typu innego niż "void".|
-|`_Old_(expr)`|Gdy jest oceniana w warunku wstępnym, `_Old_` zwraca wartość `expr`wejściową.  Gdy jest oceniane w warunku post, zwraca wartość `expr` , ponieważ zostałaby oceniona w warunku wstępnym.|
-|`_Param_(n)`|Parametr do funkcji, zliczanie od 1 do `n`, i `n` jest stałą całkowitą literału. `n` Jeśli parametr ma nazwę, ta adnotacja jest taka sama, aby uzyskać dostęp do parametru według nazwy. **Uwaga:** `n` mogą się odwoływać do parametrów pozycyjnych, które są zdefiniowane przez wielokropek lub które mogą być używane w prototypach funkcji, gdzie nazwy nie są używane.|
-|`return`|Słowa kluczowegoC++ `return` języka C/zastrzeżonego można użyć w wyrażeniu sal do wskazania wartości zwracanej funkcji.  Wartość jest dostępna tylko w stanie post; jest to błąd składniowy, aby używać go w stanie sprzed.|
+|`_Nullterm_length_(param)`|`param` to liczba elementów w buforze, do których nie dołączany jest terminator o wartości null. Może być zastosowany do dowolnego buforu typu innego niż "void".|
+|`_Old_(expr)`|Gdy jest oceniana w warunku wstępnym, `_Old_` zwraca wartość wejściową `expr`.  Gdy jest on oceniany w warunku post, zwraca wartość `expr`, ponieważ zostałaby oceniona w warunku wstępnym.|
+|`_Param_(n)`|@No__t-0th parametr do funkcji, licząc od 1 do `n` i `n` jest stałą całkowitą. Jeśli parametr ma nazwę, ta adnotacja jest taka sama, aby uzyskać dostęp do parametru według nazwy. **Uwaga:**  `n` może odwoływać się do parametrów pozycyjnych, które są zdefiniowane przez wielokropek lub które mogą być używane w prototypach funkcji, gdzie nazwy nie są używane.|
+|`return`|Słowo kluczowe CC++ /zastrzeżone `return` może być używane w wyrażeniu sal w celu wskazania wartości zwracanej funkcji.  Wartość jest dostępna tylko w stanie post; jest to błąd składniowy, aby używać go w stanie sprzed.|
 
 ## <a name="string-specific"></a>Określony ciąg
-Poniższe adnotacje funkcji wewnętrznych umożliwiają manipulowanie ciągami. Wszystkie cztery z tych funkcji służą tego samego celu: aby zwrócić liczbę elementów typu znalezionych przed terminatorem o wartości null. Różnice to rodzaje danych w elementach, do których odwołują się. Należy pamiętać, że jeśli chcesz określić długość bufora zakończono znakiem null, który nie zawiera znaków, użyj `_Nullterm_length_(param)` adnotacji z poprzedniej sekcji.
+Poniższe adnotacje funkcji wewnętrznych umożliwiają manipulowanie ciągami. Wszystkie cztery z tych funkcji służą tego samego celu: aby zwrócić liczbę elementów typu znalezionych przed terminatorem o wartości null. Różnice to rodzaje danych w elementach, do których odwołują się. Należy pamiętać, że jeśli chcesz określić długość bufora zakończono znakiem null, który nie zawiera znaków, użyj adnotacji `_Nullterm_length_(param)` z poprzedniej sekcji.
 
 |Adnotacja|Opis|
 |----------------|-----------------|
-|`_String_length_(param)`|`param`to liczba elementów w ciągu, które nie obejmują terminatora null. Ta adnotacja jest zarezerwowana dla typów ciągów znaków.|
-|`strlen(param)`|`param`to liczba elementów w ciągu, które nie obejmują terminatora null. Ta adnotacja jest zarezerwowana do użycia w tablicach znaków i przypomina funkcję środowiska uruchomieniowego C [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
-|`wcslen(param)`|`param`jest liczbą elementów w ciągu do (ale nie obejmuje) terminatora o wartości null. Ta adnotacja jest zarezerwowana do użycia w tablicach o szerokim znaku i przypomina funkcję środowiska uruchomieniowego C [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`_String_length_(param)`|`param` to liczba elementów w ciągu, które nie obejmują terminatora null. Ta adnotacja jest zarezerwowana dla typów ciągów znaków.|
+|`strlen(param)`|`param` to liczba elementów w ciągu, które nie obejmują terminatora null. Ta adnotacja jest zarezerwowana do użycia w tablicach znaków i przypomina funkcję środowiska uruchomieniowego C [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`wcslen(param)`|`param` to liczba elementów w ciągu, do których nie ma terminatora null. Ta adnotacja jest zarezerwowana do użycia w tablicach o szerokim znaku i przypomina funkcję środowiska uruchomieniowego C [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 
 ## <a name="see-also"></a>Zobacz też
 

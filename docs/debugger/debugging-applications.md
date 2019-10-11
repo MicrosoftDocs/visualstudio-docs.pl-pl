@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9848b666df985ddc7c2c4d0cf56f9ae4cafcb347
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962899"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018786"
 ---
 # <a name="debugging-applications"></a>Debugowanie aplikacji
 Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Różne typy aplikacji i różne języki wymagają różnych ustawień i technik oraz stwarzają różne problemy, które muszą być debugowane.
@@ -34,6 +34,6 @@ Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Różne
 |[Diagnostyka grafiki (Debugowanie grafiki DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Opisuje sposób debugowania grafiki DirectX.|
 |[Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Opisuje sposób debugowania aplikacji ASP.NET.|
 |[Debuguj kod w języku Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Opisuje sposób debugowania kodu w języku Python|
-|[Debugowanie aplikacji JavaScript i TypeScript](/javascript/debug-nodejs)|Opisuje sposób debugowania aplikacji JavaScript, TypeScript i Node. js|
+|[Debugowanie aplikacji JavaScript i TypeScript](../javascript/debug-nodejs.md)|Opisuje sposób debugowania aplikacji JavaScript, TypeScript i Node. js|
 |[Debugowanie aplikacji internetowych](../debugger/debugging-web-applications.md)|Opisuje sposób debugowania aplikacji sieci Web i skryptów.|
 |[Debugowanie usług WCF](../debugger/debugging-wcf-services.md)|Opisuje sposób debugowania usług Windows Communication Foundation.|

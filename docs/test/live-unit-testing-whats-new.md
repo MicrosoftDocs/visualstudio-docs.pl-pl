@@ -1,64 +1,64 @@
 ---
-title: What's New in Live Unit Testing w programie Visual Studio 2017
+title: Co nowego w programie Live Unit Testing w programie Visual Studio 2017
 titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
 - Live Unit Testing What's New
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 86ed90e6a4fe211d162f12785b0f3f555802ad17
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6a96089de8f9998c12cbc2e12765d128b1d2195b
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823756"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262284"
 ---
-# <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>What's new in Live Unit Testing dla programu Visual Studio 2017
+# <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Co nowego w programie Live Unit Testing for Visual Studio 2017
 
-Ten temat zawiera listę nowych funkcji dodanych do Live Unit Testing w każdej wersji programu Visual Studio, począwszy od programu Visual Studio 2017 w wersji 15.3. Aby uzyskać omówienie sposobu użycia Live Unit Testing, zobacz [Live Unit Testing w programie Visual Studio](live-unit-testing.md).
+W tym temacie wymieniono nowe funkcje, które zostały dodane do Live Unit Testing w każdej wersji programu Visual Studio, począwszy od wersji 15,3 programu Visual Studio 2017. Aby zapoznać się z omówieniem sposobu korzystania z Live Unit Testing, zobacz [Live Unit Testing with Visual Studio](live-unit-testing.md).
 
-## <a name="version-154"></a>W wersji 15.4
+## <a name="version-154"></a>Wersja 15,4
 
-Począwszy od programu Visual Studio 2017 w wersji 15.4 Live Unit Testing obejmuje usprawnień i ulepszeń w wielu obszarach:
+Począwszy od programu Visual Studio 2017 w wersji 15,4, Live Unit Testing zawiera ulepszenia i ulepszenia w wielu obszarach:
 
-- **Ulepszone możliwości odnajdywania**. Dla użytkowników, którzy nie wiadomo, które Live Unit Testing funkcji istnieje, środowiska IDE programu Visual Studio pokazuje złoty pasek jest wspomniany Live Unit Testing zawsze wtedy, gdy użytkownik otwiera rozwiązanie, które zawiera testy jednostkowe, ale Live Unit Testing nie jest włączona. Informacje przedstawione w złoty pasek umożliwia użytkownikowi, aby dowiedzieć się więcej na temat Live Unit Testing i je włączyć. Złoty pasek też wyświetlane informacje, gdy Live Unit Testing wymagania wstępne nie są spełnione. Należą do nich następujące elementy:
+- **Ulepszona możliwość odnajdywania**. W przypadku użytkowników, którzy nie wiedzą, że funkcja Live Unit Testing istnieje, środowisko IDE programu Visual Studio Wyświetla złoty pasek wskazujący Live Unit Testing za każdym razem, gdy użytkownik otworzy rozwiązanie, które zawiera testy jednostkowe, ale Live Unit Testing nie jest włączona. Informacje przedstawione na złotym pasku pozwalają użytkownikowi dowiedzieć się więcej na temat Live Unit Testing i włączyć go. Złoty pasek wyświetla również informacje, gdy Live Unit Testing wymagania wstępne nie są spełnione. Należą do nich:
 
-  - Brak adaptery testowe.
-  - Istnieją starsze wersje adaptery testowe.
-  - Przywracanie pakietów NuGet przywoływane przez to rozwiązanie jest wymagana.
+  - Brak adapterów testowych.
+  - Istnieją starsze wersje adapterów testowych.
+  - Wymagany jest przywracanie pakietów NuGet, do których odwołuje się rozwiązanie.
 
-- **Integracja z usługą powiadomień Centrum zadań**. Środowiska IDE programu Visual Studio zawiera obecnie Live Unit Testing przetwarzania w tle powiadomienia w Centrum zadań, dzięki czemu użytkownicy mogą łatwo stwierdzić, co się dzieje po włączeniu Live Unit Testing. Dotyczy to kluczy od Live Unit Testing z dużym rozwiązaniem problemu. Wcześniej przez kilka minut, dopóki nie znajdowała się ikony pokrycia, użytkownicy nie mógł określić czy Live Unit Testing naprawdę włączono i tego, czy była praca. Koniec!
+- **Integracja z powiadomieniami centrum zadań**. Środowisko IDE programu Visual Studio wyświetla teraz Live Unit Testing powiadomienia o przetwarzaniu w tle w centrum zadań, dzięki czemu użytkownicy mogą łatwo określić, co dzieje się, gdy Live Unit Testing jest włączona. Eliminuje to kluczowy problem z uruchamianiem Live Unit Testing na dużym rozwiązaniu. Wcześniej przez kilka minut, aż pojawiły się ikony pokrycia, użytkownicy nie będą mogli określić, czy Live Unit Testing był naprawdę włączony i czy działał. Jeszcze nie!
 
-- **Obsługa MSTest framework w wersji 1**: Live Unit Testing już współpracuje z trzech struktur testów jednostek pochodzących od popularnych: xUnit, NUnit oraz MSTest. Wcześniej Live Unit Testing działało tylko w przypadku projektów testów jednostkowych MSTest użycia MS Test version 2. Począwszy od programu Visual Studio 2017 w wersji 15.4 teraz obsługuje ona również MSTest w wersji 1 także.
+- **Obsługa programu MSTest Framework w wersji 1**: Live Unit Testing już współdziałać z trzema popularnymi strukturami testów jednostkowych: xUnit, NUnit i MSTest. Wcześniej Live Unit Testing działała tylko wtedy, gdy projekty testów jednostkowych MSTest korzystały z MS test w wersji 2. Począwszy od programu Visual Studio 2017 w wersji 15,4, obsługuje także również MSTest w wersji 1.
 
-- **Niezawodność i wydajność**: Live Unit Testing teraz gwarantuje, że system może lepiej wykryć, kiedy projekty nie wykonano pełnego ładowania i pozwala uniknąć awarii Live Unit Testing. Tworzenie wydajnością ulepszenia również unikać reevaluating projektów programu MSBuild, gdy wiadomo, że nic w projekcie pliku została zmieniona.
+- **Niezawodność & wydajność**: Live Unit Testing teraz zapewnia, że system może lepiej wykryć, kiedy projekty nie zakończyły się w pełni, i pozwala uniknąć awarii Live Unit Testing. Udoskonalenia wydajności kompilacji należy również unikać ponownej oceny projektów programu MSBuild, gdy system wie, że nic w pliku projektu nie uległo zmianie.
 
-- **Udoskonalenia interfejsu użytkownika różnych**:  Mylenie **zestaw testów na żywo — uwzględnianie/wykluczanie** gestu kliknij prawym przyciskiem myszy opcję została zmieniona na **Live Unit Testing uwzględniania/wykluczania**. **Resetuj i wyczyść** opcja **testu** > **Live Unit Testing** menu zostało usunięte. Jest teraz dostępny, wybierając **narzędzia** > **opcje** > **Live Unit Testing** i wybierając polecenie **Usuń dane utrwalone** .
+- **Różne udoskonalenia interfejsu użytkownika**:  Zmieniono nazwę opcji **dołączania i wykluczania na żywo** z gestu kliknięcia prawym przyciskiem myszy w celu **Live Unit Testing dołączania/wykluczania**. Opcja **Resetuj czyste** w menu Live Unit Testing **@no__t-** 2 zostało usunięte. Jest teraz dostępna, wybierając pozycję **narzędzia** > **Opcje** > **Live Unit Testing** i wybierając pozycję **Usuń utrwalone dane**.
 
-## <a name="version-153"></a>W wersji 15.3
+## <a name="version-153"></a>Wersja 15,3
 
-Począwszy od programu Visual Studio 2017 w wersji 15.3, Live Unit Testing ulepszenia funkcji i ulepszeń w dwóch głównych obszarach:
+Począwszy od programu Visual Studio 2017 w wersji 15,3, Live Unit Testing funkcje ulepszenia i ulepszenia w dwóch głównych obszarach:
 
-- Obsługa platformy .NET Core i .NET Standard. Live Unit Testing można użyć w rozwiązania .NET Core i .NET Standard, napisany w języku C# lub Visual Basic.
+- Obsługa platformy .NET Core i .NET Standard. Live Unit Testing można używać w przypadku rozwiązań .NET Core i .NET Standard zapisanych w C# obu lub Visual Basic.
 
-- Usprawnienia wydajności. Można zauważyć, że wydajność jest znacznie szybszy po pierwszej pełnej kompilacji i uruchomienia testów w ramach Live Unit Testing. Zauważysz również istotnie poprawiającą wydajność poprawy w kolejnych przewodnikach Start Live Unit Testing na tym samym rozwiązaniu. Teraz możemy utrwalić dane generowane przez funkcję Live Unit Testing i ponowne użycie go możliwie jak możliwego Sprawdzanie aktualności.
+- Usprawnienia wydajności. Zauważ, że wydajność jest znacznie szybsza po pierwszej pełnej kompilacji i uruchomieniu testów w obszarze Live Unit Testing. Zauważysz również znaczące zwiększenie wydajności w kolejnych uruchomieniach Live Unit Testing na tym samym rozwiązaniu. Teraz utrwalamy dane wygenerowane przez Live Unit Testing i wielokrotnego użytku.
 
-Oprócz tych główne dodatki Live Unit Testing obejmuje następujące ulepszenia:
+Oprócz tych głównych dodatków, Live Unit Testing obejmuje następujące udoskonalenia:
 
-- Nowa ikona zlewce obecnie jest używana do rozróżniania metodę testową z metodami regularnych. Ikona puste zlewce wskazuje, że określonego testu nie jest uwzględniony w Live Unit Testing.
+- Nowa ikona zlewki jest teraz używana do odróżniania metody testowej od zwykłych metod. Pusta ikona zlewki wskazuje, że konkretny test nie jest uwzględniony w Live Unit Testing.
 
-- Po kliknięciu metody testowej w oknie podręcznym interfejsu użytkownika z ikoną pokrycia Live Unit Testing, masz teraz możliwość debugowania testów bezpośrednio w tym kontekście, w oknie interfejsu użytkownika i bez konieczności opuszczania edytora kodu. Jest to szczególnie przydatne, jeśli patrzy testów zakończonych niepowodzeniem.
+- Po kliknięciu metody testowej w oknie podręcznym interfejsie użytkownika ikony pokrycia Live Unit Testing masz teraz możliwość debugowania bezpośrednio z tego kontekstu w oknie interfejsu użytkownika i bez konieczności opuszczania edytora kodu. Jest to szczególnie przydatne, gdy przeglądasz test zakończony niepowodzeniem.
 
-- Dodano kilka dodatkowych opcji można skonfigurować do narzędzia/Opcje/Live Unit Testing / ogólne. Aby limit, pamięć używana na potrzeby Live Unit Testing. Można również określić ścieżkę pliku danych utrwalonych Live Unit Testing dla otwartego rozwiązania.
+- Dodano kilka dodatkowych konfigurowalnych opcji Narzędzia/Opcje/Live Unit Testing/ogólne. Możesz wycap pamięć używaną dla Live Unit Testing. Możesz również określić ścieżkę pliku dla utrwalonych Live Unit Testing danych dla otwartego rozwiązania.
 
-- Dodano kilka dodatkowe elementy menu w menu paska z testów/Live Unit Testing. **Resetuj czysty** spowoduje usunięcie istniejących danych i wygeneruje ją ponownie. **Opcja** przechodzi do narzędzia/Opcje/Live Unit Testing / ogólne.
+- Dodano kilka dodatkowych elementów menu pod paskiem menu test/Live Unit Testing. **Zresetuj czyste** usuwa utrwalone dane i wygeneruje je ponownie. **Opcja** przechodzi do opcji narzędzia/opcje/Live Unit Testing/ogólne.
 
-- Następujące atrybuty można teraz użyć, aby określić w kodzie źródłowym, chcesz wykluczyć metod testowych docelowych z Live Unit Testing:
+- Teraz można użyć następujących atrybutów, aby określić w kodzie źródłowym, który ma zostać wykluczony dla określonych metod testowych z Live Unit Testing:
 
   - Aby uzyskać xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
   - Aby uzyskać NUnit: `[Category("SkipWhenLiveUnitTesting")]`
@@ -67,4 +67,4 @@ Oprócz tych główne dodatki Live Unit Testing obejmuje następujące ulepszeni
 ## <a name="see-also"></a>Zobacz także
 
 - [Wprowadzenie do funkcji Live Unit Testing](live-unit-testing-intro.md)
-- [Live Unit Testing w programie Visual Studio](live-unit-testing.md)
+- [Live Unit Testing z programem Visual Studio](live-unit-testing.md)

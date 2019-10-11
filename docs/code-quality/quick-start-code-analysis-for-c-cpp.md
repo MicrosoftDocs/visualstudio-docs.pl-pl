@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b14737c09cf7ff2b14eda1f61408b531b9c22c14
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 2c68bb94a66be2c9fc1da4365cb77adf8d1330a1
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018366"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163023"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Szybki start: Analiza kodu C/C++
 
@@ -26,24 +26,11 @@ Jakość aplikacji można poprawić, uruchamiając analizę kodu regularnie w j�
 
 1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla nazwy projektu, a następnie wybierz polecenie **Właściwości**.
 
-2. Następujące kroki są opcjonalne:
+2. Opcjonalnie na listach **Konfiguracja** i **platforma** wybierz konfigurację kompilacji i platformę docelową.
 
-    1. Na listach **Konfiguracja** i **platforma** wybierz konfigurację kompilacji i platformę docelową.
+3. Aby uruchomić analizę kodu, za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji** pole wyboru. Możesz również ręcznie uruchomić analizę kodu, otwierając menu **Analizuj** , a następnie wybierając polecenie **Uruchom analizę kodu na** *ProjectName* lub **uruchomić analizę kodu dla pliku**.
 
-    2. Domyślnie program analizy kodu nie raportuje ostrzeżenia z kodu, który jest generowany automatycznie przez narzędzia zewnętrzne. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, należy wyczyścić **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
-
-        > [!NOTE]
-        > Ta opcja nie pomija błędy analizy kodu i ostrzeżenia z wygenerowanego kodu podczas błędy i ostrzeżenia są wyświetlane w formularzach i szablony. Można zarówno wyświetlać, jak i konserwować kod źródłowy formularza lub szablonu.
-
-3. Aby uruchomić analizę kodu za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz pole wyboru **Włącz analizę koduC++ dla C/on Build** . Możesz również ręcznie uruchomić analizę kodu, otwierając menu **Analizuj** , a następnie wybierając polecenie **Uruchom analizę kodu na** *ProjectName*.
-
-4. W **Uruchom ten zestaw reguł** listy, wykonaj jedną z następujących czynności:
-
-    - Wybierz zestaw reguł, którego chcesz użyć.
-
-    - Wybierz **\<Browse >** , aby określić istniejący niestandardowy zestaw reguł, którego nie ma na liście.
-
-    - Zdefiniuj [niestandardowego zestawu reguł](../code-quality/how-to-create-a-custom-rule-set.md).
+4. Wybierz [zestaw reguł](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md) , którego chcesz użyć, lub Utwórz [niestandardowy zestaw reguł](../code-quality/how-to-create-a-custom-rule-set.md). Jeśli używasz LLVM/Clang-CL, zobacz [using Clang-uporządkowanego in Visual Studio](../code-quality/clang-tidy.md) , aby skonfigurować opcje analizy Clang-uporządkowanego.
 
 ### <a name="standard-cc-rule-sets"></a>Standardowe C/C++ zestawy reguł
 
@@ -56,17 +43,23 @@ Program Visual Studio zawiera dwa standardowe zestawy reguł dla kodu natywnego:
 
 ## <a name="run-code-analysis"></a>Uruchom analizę kodu
 
-Na stronie Analiza kodu na stronach właściwości projektu można skonfigurować analizę kodu, która będzie uruchamiana za każdym razem, gdy kompilujesz projekt. Możesz również ręcznie uruchomić analizę kodu.
+Na stronie Analiza kodu na stronie właściwości projektu można skonfigurować analizę kodu, która będzie uruchamiana za każdym razem, gdy kompilujesz projekt. Możesz również ręcznie uruchomić analizę kodu.
 
 Aby uruchomić analizę kodu w rozwiązaniu:
 
-- Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla rozwiązania**.
+- W menu **kompilacja** wybierz polecenie **Uruchom analizę kodu w rozwiązaniu**.
 
 Aby uruchomić analizę kodu w projekcie:
 
 1. W Eksplorator rozwiązań wybierz nazwę projektu.
 
 2. W menu **kompilacja** wybierz polecenie **Uruchom analizę kodu dla** *nazwy projektu*.
+
+Aby uruchomić analizę kodu dla pliku:
+
+1. W Eksplorator rozwiązań wybierz nazwę pliku.
+
+2. W menu **kompilacja** wybierz polecenie **Uruchom analizę kodu dla pliku** lub naciśnij **klawisze Ctrl + Shift + Alt + F7**.
 
    Projekt lub rozwiązanie zostały skompilowane i zostanie uruchomiona Analiza kodu. Wyniki pojawiają się w Lista błędów.
 
@@ -116,4 +109,4 @@ Możesz wyszukiwać długim spisem komunikaty ostrzegawcze i filtrować ostrzeż
 
 ## <a name="see-also"></a>Zobacz także
 
-[Analiza kodu dla języka C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)
+- [Analiza kodu dla języka C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

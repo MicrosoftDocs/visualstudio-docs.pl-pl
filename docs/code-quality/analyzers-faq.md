@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aec8c26a827a39abdfeacfc0e3d6dea4a62db43
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 12e6681490c6c933369d3fef064ec88f240e3a99
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999975"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172771"
 ---
 # <a name="code-analysis-faq"></a>Analiza kodu — często zadawane pytania
 
@@ -24,24 +24,30 @@ Ta strona zawiera odpowiedzi na kilka często zadawanych pytań dotyczących ana
 
 **P**: Czy należy używać analizy kodu lub EditorConfig do sprawdzania stylu kodu?
 
-ODP **.:** Analiza kodu i pliki EditorConfig są dostępne w ręku. Podczas definiowania stylów kodu [w pliku EditorConfig](../ide/editorconfig-code-style-settings-reference.md) lub na stronie [Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) , można faktycznie skonfigurować analizatory kodu, które są wbudowane w program Visual Studio. Plików EditorConfig można także użyć do skonfigurowania niektórych pakietów analizatora NuGet, takich jak [FxCop](configure-fxcop-analyzers.md).
+ODP **.:** Analiza kodu i pliki EditorConfig są dostępne w ręku. Podczas definiowania stylów kodu [w pliku EditorConfig](../ide/editorconfig-code-style-settings-reference.md) lub na stronie [Opcje edytora tekstu](../ide/code-styles-and-code-cleanup.md) , można faktycznie skonfigurować analizatory kodu, które są wbudowane w program Visual Studio. Pliki EditorConfig mogą służyć do włączania lub wyłączania reguł analizatora, a także do konfigurowania niektórych pakietów analizatora NuGet, takich jak [FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig a zestawy reguł
 
 **P**: Czy należy skonfigurować moje analizatory przy użyciu zestawu reguł lub pliku EditorConfig?
 
-ODP **.:** Zestawy reguł i pliki EditorConfig mogą współistnieć i mogą być używane do konfigurowania analizatorów. [Zestawy reguł](analyzer-rule-sets.md) umożliwiają włączanie i wyłączanie reguł oraz ustawianie ich ważności. Pliki EditorConfig oferują inne sposoby konfigurowania reguł. W przypadku analizatorów FxCop pliki EditorConfig umożliwiają [Definiowanie typów kodu do analizy](fxcop-analyzer-options.md). W przypadku analizatorów w stylu kodu, które są wbudowane w program Visual Studio, pliki EditorConfig umożliwiają [Definiowanie preferowanych stylów kodu](../ide/editorconfig-code-style-settings-reference.md) dla bazy kodu.
+ODP **.:** Zestawy reguł i pliki EditorConfig mogą współistnieć i mogą być używane do konfigurowania analizatorów. Zarówno pliki EditorConfig, jak i zestawy reguł umożliwiają włączanie i wyłączanie reguł oraz ustawianie ich ważności.
+
+Jednak pliki EditorConfig oferują dodatkowe sposoby konfigurowania reguł:
+
+- W przypadku analizatorów FxCop pliki EditorConfig umożliwiają [Definiowanie typów kodu do analizy](fxcop-analyzer-options.md).
+- W przypadku analizatorów w stylu kodu, które są wbudowane w program Visual Studio, pliki EditorConfig umożliwiają [Definiowanie preferowanych stylów kodu](../ide/editorconfig-code-style-settings-reference.md) dla bazy kodu.
 
 Oprócz zestawów reguł i plików EditorConfig Niektóre analizatory są konfigurowane przy użyciu plików tekstowych oznaczonych jako [dodatkowe pliki](../ide/build-actions.md#build-action-values) dla kompilatorów C# i VB.
 
 > [!NOTE]
-> Nie można używać plików EditorConfig do konfigurowania starszej analizy, natomiast zestawy reguł mogą.
+> - Plików EditorConfig można używać tylko do włączania reguł i ustawiania ich ważności w programie Visual Studio 2019 w wersji 16,3 lub nowszej.
+> - Nie można używać plików EditorConfig do konfigurowania starszej analizy, natomiast zestawy reguł mogą.
 
 ## <a name="code-analysis-in-ci-builds"></a>Analiza kodu w kompilacjach CI
 
 **P**: Czy analiza kodu oparta na .NET Compiler Platform działa w kompilacjach ciągłej integracji (CI)?
 
-ODP **.:** Tak. W przypadku analizatorów instalowanych z pakietu NuGet te reguły są [wymuszane w czasie kompilacji](roslyn-analyzers-overview.md#build-errors), w tym w trakcie kompilacji elementu konfiguracji. Analizatory używane w kompilacjach CI respektują konfigurację reguły z obu [zestawów reguł](analyzer-rule-sets.md) i [plików. editorconfig](configure-fxcop-analyzers.md). Obecnie analizatory kodu, które są wbudowane w program Visual Studio, nie są dostępne jako pakiet NuGet, dlatego te reguły nie są wymuszane w kompilacji CI.
+ODP **.:** Tak. W przypadku analizatorów instalowanych z pakietu NuGet te reguły są [wymuszane w czasie kompilacji](roslyn-analyzers-overview.md#build-errors), w tym w trakcie kompilacji elementu konfiguracji. Analizatory używane w kompilacjach CI respektują konfigurację reguły z obu zestawów reguł i plików EditorConfig. Obecnie analizatory kodu, które są wbudowane w program Visual Studio, nie są dostępne jako pakiet NuGet, dlatego te reguły nie są wymuszane w kompilacji CI.
 
 ## <a name="ide-analyzers-versus-stylecop"></a>Analizatory IDE a StyleCop
 

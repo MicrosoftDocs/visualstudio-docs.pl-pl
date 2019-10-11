@@ -4,23 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
 author: gewarren
-ms.openlocfilehash: f0274ecbbe89d35c1bc12651dd234632c973e1a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 90a9a0abb43f8185219cb9ca8e4b41d2ed113838
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808122"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018915"
 ---
-# <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
+# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Używanie podkładki do izolowania aplikacji do testów jednostkowych
 
-**Typy podkładkę** są jedną z dwóch technologii używanych struktura sztucznych elementów testowych Microsoft pozwala łatwo wyodrębniać składniki w ramach testu w środowisku. Podkładki kierowanie wywołań do określonych metod do kodu napisanego w ramach testu. Wiele metod zwracać różne wyniki zależne od warunków zewnętrznych, ale podkładka jest pod kontrolą testów i może zwrócić spójne wyniki w każdym wywołaniu. To sprawia, że testy znacznie łatwiejsze do zapisu.
+**Typy podkładki** są jedną z dwóch technologii używanych przez firmę Microsoft do wyizolowania składników w ramach testu ze środowiska. Podkładki kierowanie wywołań do określonych metod do kodu napisanego w ramach testu. Wiele metod zwracać różne wyniki zależne od warunków zewnętrznych, ale podkładka jest pod kontrolą testów i może zwrócić spójne wyniki w każdym wywołaniu. Ułatwia to zapisanie testów.
 
-Stosowanie podkładek do izolowania kodu z zestawów, które nie są częścią rozwiązania. Aby wyizolować składników rozwiązania od siebie nawzajem, firma Microsoft zaleca, aby użyć wycinków.
+Użyj *podkładek* , aby odizolować swój kod od zestawów, które nie są częścią rozwiązania. Aby izolować składniki rozwiązania od siebie, użyj *wycinków*.
 
-Aby uzyskać omówienie i szybki start wskazówki, zobacz [izolowanie testowanego kodu za pomocą Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+Aby zapoznać się z omówieniem i "Szybki Start", zobacz [Izolowanie testowanego kodu za pomocą](../test/isolating-code-under-test-with-microsoft-fakes.md)elementów sztucznych firmy Microsoft.
 
 **Wymagania**
 
@@ -30,9 +31,9 @@ Aby uzyskać omówienie i szybki start wskazówki, zobacz [izolowanie testowaneg
 > [!NOTE]
 > Projekty .NET standard nie są obsługiwane.
 
-## <a name="example-the-y2k-bug"></a>Przykład: Błąd Y2K
+## <a name="example-the-y2k-bug"></a>Przykład: Usterka Y2K
 
-Rozważmy metodę, która zgłosiła wyjątek na 1 stycznia 2000:
+Rozważmy metodę, która zgłasza wyjątek 1 stycznia 2000:
 
 ```csharp
 // code under test
@@ -63,19 +64,19 @@ using (ShimsContext.Create()) {
 
 ## <a name="how-to-use-shims"></a>Jak używać podkładek
 
-### <a name="AddFakes"></a> Dodaj zestawy elementów sztucznych
+Najpierw Dodaj zestaw elementów sztucznych:
 
-1. W **Eksploratora rozwiązań**, rozwiń węzeł projektu testu jednostkowego **odwołania**.
+1. W **Eksplorator rozwiązań**rozwiń węzeł **odwołania** projektu testów jednostkowych.
 
-    - Jeśli pracujesz w języku Visual Basic, wybierz opcję **Pokaż wszystkie pliki** w **Eksploratora rozwiązań** narzędzi, aby można było wyświetlić **odwołania** węzła.
+   - Jeśli pracujesz w języku Visual Basic, wybierz opcję **Pokaż wszystkie pliki** w **Eksploratora rozwiązań** narzędzi, aby można było wyświetlić **odwołania** węzła.
 
-2. Wybierz zestaw zawierający definicje klas, dla których chcesz utworzyć podkładki. Na przykład, jeśli chcesz utworzyć podkładkę **daty/godziny**, wybierz opcję **System.dll**.
+2. Wybierz zestaw, który zawiera definicje klas, dla których chcesz utworzyć podkładki. Na przykład, jeśli chcesz utworzyć podkładkę **daty/godziny**, wybierz opcję **System.dll**.
 
 3. W menu skrótów wybierz **Dodaj zestawy Substytuowane**.
 
-### <a name="ShimsContext"></a> Użyj ShimsContext
+### <a name="use-shimscontext"></a>Użyj ShimsContext
 
-Używając typy podkładek w środowiska testów jednostkowych, należy wpisać kod testowy w `ShimsContext` kontrolować okres istnienia usługi podkładki. Jeśli firma Microsoft nie wymaga to, Twoje podkładki będzie wystarczą do momentu zamknięcia elementu AppDomain. Najprostszym sposobem utworzenia `ShimsContext` przy użyciu statycznych `Create()` metody, jak pokazano w poniższym kodzie:
+W przypadku korzystania z typów podkładek w środowisku testów jednostkowych należy otoczyć kod testu w `ShimsContext` w celu kontrolowania okresu istnienia podkładki. W przeciwnym razie podkładki będą ostatnio do momentu wyłączenia elementu AppDomain. Najprostszym sposobem utworzenia `ShimsContext` przy użyciu statycznych `Create()` metody, jak pokazano w poniższym kodzie:
 
 ```csharp
 //unit test code
@@ -87,9 +88,9 @@ public void Y2kCheckerTest() {
 }
 ```
 
-Koniecznie prawidłowo dispose w każdym kontekście podkładki. Jako ogólną regułę można przyjąć, zawsze wywołuj `ShimsContext.Create` wewnątrz `using` instrukcję, aby zapewnić właściwe rozliczanie zarejestrowanych podkładki. Na przykład, możesz zarejestrować podkładki dla metody testowej, która zastępuje `DateTime.Now` metody delegata, która zawsze zwraca pierwszy stycznia 2000. Jeśli zapomnisz wyczyść zarejestrowanych podkładki w metodzie testowej, pozostała część przebiegu testu zawsze zwróci wartość pierwszego 2000 stycznia jako DateTime.Now. Może to być Zaskakujące i pozostał przejrzysty.
+Koniecznie prawidłowo dispose w każdym kontekście podkładki. Jako regułę przycisku przewijania Wywołaj `ShimsContext.Create` wewnątrz instrukcji `using`, aby zapewnić prawidłowe wyczyszczenie zarejestrowanych podkładek. Na przykład, możesz zarejestrować podkładki dla metody testowej, która zastępuje `DateTime.Now` metody delegata, która zawsze zwraca pierwszy stycznia 2000. Jeśli zapomnisz wyczyścić zarejestrowaną podkładkę w metodzie testowej, pozostała część przebiegu testu zawsze zwróci pierwszy styczeń 2000 jako wartość `DateTime.Now`. Może to być Zaskakujące i pozostał przejrzysty.
 
-### <a name="WriteShims"></a> Napisać test podkładek
+### <a name="write-a-test-with-shims"></a>Napisz test z podkładkami
 
 W kodzie testowym Wstaw *przekierowania* dla metody, którą chcesz substytuować. Na przykład:
 
@@ -158,11 +159,11 @@ Należy zauważyć, że przekierowania są tworzone i usuwane w czasie wykonywan
 
 Możesz zobaczyć kompilacji o błędzie informującym, przestrzeń nazw elementów sztucznych nie istnieje. Ten błąd pojawia się czasami, gdy istnieją inne błędy kompilacji. Usuń inne błędy, a jego będą dopasowywane.
 
-## <a name="BKMK_Shim_basics"></a> Podkładki dla różnych rodzajów metod
+## <a name="shims-for-different-kinds-of-methods"></a>Podkładki dla różnych rodzajów metod
 
 Typy podkładek umożliwiają Zastąp dowolnej metody .NET, w tym metod statycznych i metod niewirtualnych, za pomocą własnych obiektów delegowanych.
 
-### <a name="BKMK_Static_methods"></a> Metody statyczne
+### <a name="static-methods"></a>Metody statyczne
 
 Właściwości, aby dołączyć podkładek do metody statyczne są umieszczane w typu shim. Każda właściwość ma setter, który może służyć do dołączania obiekt delegowany do metody docelowej. Na przykład, biorąc klasy `MyClass` przy użyciu statycznej metody `MyMethod`:
 
@@ -179,10 +180,10 @@ Dołączamy podkładek do `MyMethod` która zawsze zwraca 5:
 
 ```csharp
 // unit test code
-ShimMyClass.MyMethod = () =>5;
+ShimMyClass.MyMethod = () => 5;
 ```
 
-### <a name="BKMK_Instance_methods__for_all_instances_"></a> Metody wystąpienia (dla wszystkich wystąpień)
+### <a name="instance-methods-for-all-instances"></a>Metody wystąpień (dla wszystkich wystąpień)
 
 Podobnie do metody statyczne metody wystąpienia można można użyć podkładki dla wszystkich wystąpień. Właściwości, które można dołączyć te podkładek są umieszczane w zagnieżdżony typ o nazwie wszystkich wystąpień, aby uniknąć mylenia go. Na przykład, biorąc klasy `MyClass` z metodą wystąpienia `MyMethod`:
 
@@ -219,7 +220,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 Należy zauważyć, że elementów sztucznych przekazuje wystąpienie środowiska IR w tym przypadku jako pierwszy argument delegata.
 
-### <a name="BKMK_Instance_methods__for_one_instance_"></a> Wystąpienie metody (jedno wystąpienie środowiska wykonawczego)
+### <a name="instance-methods-for-one-runtime-instance"></a>Metody wystąpień (dla jednego wystąpienia czasu wykonywania)
 
 Metody wystąpienia można również można użyć podkładki dla przez różne delegatów, oparte na odbiorcy wywołania. Dzięki temu tej samej metody wystąpienia, można mieć różne ustawienia dla każdego wystąpienia tego typu. Właściwości, aby skonfigurować te ustawienia są metody wystąpienia samego typu shim. Każdy typ podkładki wystąpień jest również skojarzony z wystąpieniem pierwotnych z typem zastąpionym podkładką.
 
@@ -276,11 +277,10 @@ Typ ma również niejawna konwersja z typem zastąpionym podkładką, aby można
 ```csharp
 // unit test code
 var shim = new ShimMyClass();
-MyClass instance = shim; // implicit cast retrieves the runtime
-                         // instance
+MyClass instance = shim; // implicit cast retrieves the runtime instance
 ```
 
-### <a name="BKMK_Constructors"></a> Konstruktory
+### <a name="constructors"></a>Konstruktorów
 
 Konstruktory mogą również można użyć podkładki dla Aby dołączyć typy podkładek do obiektów w przyszłości. Każdy Konstruktor jest ujawniona jako statycznej metody konstruktora do typu shim. Na przykład, biorąc klasy `MyClass` przy użyciu konstruktora, biorąc liczbą całkowitą:
 
@@ -331,7 +331,7 @@ public class ShimMyClass : ShimBase<MyClass>
 }
 ```
 
-### <a name="BKMK_Base_members"></a> Składowe bazowe
+### <a name="base-members"></a>Podstawowe elementy członkowskie
 
 Tworząc podkładki dla typu podstawowego, a następnie przekazując wystąpienia podrzędne jako parametr do konstruktora klasy bazowej podkładki można uzyskać dostępu do właściwości podkładki elementów podstawowych.
 
@@ -374,19 +374,19 @@ public class ShimMyBase : ShimBase<MyBase> {
 }
 ```
 
-### <a name="BKMK_Static_constructors"></a> Konstruktory statyczne
+### <a name="static-constructors"></a>Konstruktory statyczne
 
 Typy podkładek ujawnia metody statyczne `StaticConstructor` chciał podłożyć statyczne konstruktora typu. Ponieważ konstruktory statyczne są wykonywane, gdy tylko, należy się upewnić, że podkładka jest skonfigurowana, przed uzyskaniem dostępu do dowolnego członka typu.
 
-### <a name="BKMK_Finalizers"></a> Finalizatory
+### <a name="finalizers"></a>Finalizatory
 
 Finalizatory nie są obsługiwane w Fakes.
 
-### <a name="BKMK_Private_methods"></a> Metody prywatne
+### <a name="private-methods"></a>Metody prywatne
 
 Generator kodu pozornego tworzy widoczne właściwości podkładki dla metody prywatne, którzy mają tylko typy widoczne w podpisie, oznacza to, typy parametrów i typ zwracany.
 
-### <a name="BKMK_Binding_interfaces"></a> Interfejsy powiązania
+### <a name="binding-interfaces"></a>Interfejsy powiązań
 
 Gdy typem zastąpionym podkładką implementuje interfejs, generator kodu emituje metodę, która umożliwi jednocześnie powiązać wszystkie elementy członkowskie z tego interfejsu.
 
@@ -401,7 +401,7 @@ public class MyClass : IEnumerable<int> {
 }
 ```
 
-Firma Microsoft może podkładkę implementacje `IEnumerable<int>` w MyClass przez wywołanie metody Bind:
+W celu utworzenia podkładki implementacji `IEnumerable<int>` w MyClass, wywołując metodę bind:
 
 ```csharp
 // unit test code
@@ -426,7 +426,7 @@ Każdy typ podkładki wygenerowanego posiada wystąpienie `IShimBehavior` interf
 
 Jeśli zachowanie nie została jawnie ustawiona, używa wystąpienia zwróconą przez statyczną `ShimsBehaviors.Current` właściwości. Domyślnie właściwość ta zwraca zachowanie, które zgłasza `NotImplementedException` wyjątku.
 
-To zachowanie można zmienić w dowolnym momencie przez ustawienie `InstanceBehavior` właściwość dowolne wystąpienie podkładki. Na przykład poniższy fragment kodu zmienia podkładka do zachowania, które nie działa lub zwraca wartość domyślną typu zwracanego — czyli wartość default(T):
+To zachowanie można zmienić w dowolnym momencie przez ustawienie `InstanceBehavior` właściwość dowolne wystąpienie podkładki. Na przykład poniższy fragment kodu zmienia podkładkę na zachowanie, które nic nie robi ani nie zwraca wartości domyślnej typu zwracanego — to znaczy, `default(T)`:
 
 ```csharp
 // unit test code
@@ -441,8 +441,7 @@ To zachowanie można także zmienić globalnie dla wszystkich wystąpień typu s
 // unit test code
 // change default shim for all shim instances
 // where the behavior has not been set
-ShimsBehaviors.Current =
-    ShimsBehaviors.DefaultValue;
+ShimsBehaviors.Current = ShimsBehaviors.DefaultValue;
 ```
 
 ## <a name="detect-environment-accesses"></a>Wykrywanie, uzyskuje dostęp do środowiska
@@ -457,15 +456,15 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-## <a name="BKMK_Concurrency"></a> Współbieżność
+## <a name="concurrency"></a>Współbieżność
 
-Typy podkładek stosowane do wszystkich wątków w domenie aplikacji i braku koligacji wątku. Jest to ważne faktów, jeśli planujesz użyć modułu uruchamiającego testy, która obsługuje współbieżność: testy obejmujące typy podkładek, nie można uruchomić jednocześnie. Ta właściwość nie jest wymuszana przez środowiska uruchomieniowego podrobionych.
+Typy podkładek stosowane do wszystkich wątków w domenie aplikacji i braku koligacji wątku. Jest to ważny fakt, jeśli planujesz użyć modułu uruchamiającego testy, który obsługuje współbieżność. Testy obejmujące typy podkładek nie mogą być uruchamiane współbieżnie. Ta właściwość nie jest wymuszana przez środowiska uruchomieniowego podrobionych.
 
 ## <a name="call-the-original-method-from-the-shim-method"></a>Wywołaj metodę oryginalnego z metody podkładek
 
-Wyobraź sobie, że Chcieliśmy, aby faktycznie wpisać tekst w systemie plików, po sprawdzania poprawności nazwy pliku przekazywany do metody. W takiej sytuacji firma Microsoft będzie chciała wywołać oryginalnej metody w środku metoda podkładki.
+Załóżmy, że chcesz napisać tekst do systemu plików po walidacji nazwy pliku przekazaną do metody. W takim przypadku należy wywołać metodę początkową w środku metody podkładek.
 
-Pierwszym sposobem, aby rozwiązać ten problem jest powodującą otoczenie wywołania do oryginalnej metody za pomocą delegata i `ShimsContext.ExecuteWithoutShims()` zgodnie z poniższym kodem:
+Pierwszym podejściem do rozwiązania tego problemu jest zawinięcie wywołania do oryginalnej metody przy użyciu delegata i `ShimsContext.ExecuteWithoutShims()`, jak w poniższym kodzie:
 
 ```csharp
 // unit test code
@@ -479,7 +478,7 @@ ShimFile.WriteAllTextStringString = (fileName, content) => {
 };
 ```
 
-Innym rozwiązaniem jest podkładki o wartości null, wywołaj metodę oryginalnego i przywrócić podkładka.
+Innym podejściem jest ustawienie podkładki na wartość null, wywołanie metody oryginalnej i przywrócenie podkładki.
 
 ```csharp
 // unit test code
@@ -502,12 +501,28 @@ shim = (fileName, content) => {
 ShimFile.WriteAllTextStringString = shim;
 ```
 
-## <a name="BKMK_Limitations"></a> Ograniczenia
+## <a name="systemenvironment"></a>System. Environment
+
+Do podkładki <xref:System.Environment?displayProperty=fullName> Dodaj następującą zawartość do pliku mscorlib. sztuczne po elemencie **Assembly** :
+
+```xml
+<ShimGeneration>
+    <Add FullName="System.Environment"/>
+</ShimGeneration>
+```
+
+Po skompilowaniu rozwiązania metody i właściwości klasy <xref:System.Environment?displayProperty=fullName> są dostępne do zastąpionym podkładką, na przykład:
+
+```csharp
+System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
+```
+
+## <a name="limitations"></a>Ograniczenia
 
 Nie można użyć podkładki dla wszystkich typów z biblioteki klas podstawowych platformy .NET **mscorlib** i **systemu**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Izolowanie testowanego kodu za pomocą Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost blog: Program Visual Studio 2012 podkładek](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Wideo (1 godz. 16): Testowanie untestable kodu za pomocą elementów sztucznych w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+- Blog @no__t 0Peter Provost: Podkładki programu Visual Studio 2012 @ no__t-0
+- [Video (1h16): Testowanie kodu niemożliwego do testowania za pomocą elementów sztucznych w programie Visual Studio 2012 @ no__t-0

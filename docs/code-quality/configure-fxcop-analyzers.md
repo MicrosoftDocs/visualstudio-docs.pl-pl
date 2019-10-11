@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7619b040343720198e190f551741f565e62fa145
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 62dd64dfe4e801f91731b1ed569e3a809156d0d1
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186400"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172788"
 ---
 # <a name="configure-fxcop-analyzers"></a>Konfigurowanie analizatorów FxCop
 
 [Pakiet analizatorów FxCop](install-fxcop-analyzers.md) składa się z najważniejszych reguł "FxCop" ze starszej analizy przekonwertowanej na .NET compiler platform analizatory kodu. W przypadku niektórych reguł FxCop można uściślić, które części bazy kodu powinny być stosowane za poorednictwem [konfigurowalnych opcji](fxcop-analyzer-options.md). Każda opcja jest określona przez dodanie pary klucz-wartość do pliku [EditorConfig](https://editorconfig.org) . Plik konfiguracji może być [specyficzny dla projektu](#per-project-configuration) lub może być [współużytkowany](#shared-configuration) przez dwa lub więcej projektów.
 
 > [!TIP]
-> Do projektu można dodać plik. editorconfig, klikając prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierając polecenie **Dodaj** > **nowy element**. W oknie **Dodaj nowy element** wprowadź **editorconfig** w polu wyszukiwania. Wybierz szablon **plik editorconfig (domyślnie)** , a następnie wybierz pozycję **Dodaj**.
+> Dodaj plik. editorconfig do projektu, klikając prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierając pozycję **dodaj** **nowy element** > . W oknie **Dodaj nowy element** wprowadź **editorconfig** w polu wyszukiwania. Wybierz szablon **plik editorconfig (domyślnie)** , a następnie wybierz pozycję **Dodaj**.
 >
 > ![Dodawanie pliku editorconfig do projektu w programie Visual Studio](media/add-editorconfig-file.png)
 
 ::: moniker range=">=vs-2019"
 
-Aby uzyskać informacje o konfigurowaniu ważności reguły (na przykład, czy jest to błąd czy ostrzeżenie), zobacz [Ustawianie ważności reguły w pliku EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). Można też wybrać jeden z wbudowanych [zestawów reguł](analyzer-rule-sets.md) , aby szybko włączyć lub wyłączyć kategorię reguł.
+Aby uzyskać informacje o konfigurowaniu ważności reguły (na przykład, czy jest to błąd czy ostrzeżenie), zobacz [Ustawianie ważności reguły w pliku EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). Można też wybrać jeden z wbudowanych [plików EditorConfig lub zestawów reguł](analyzer-rule-sets.md) , aby szybko włączyć lub wyłączyć kategorię reguł.
 
 ::: moniker-end
 

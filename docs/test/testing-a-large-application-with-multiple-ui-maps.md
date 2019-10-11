@@ -1,5 +1,5 @@
 ---
-title: Testi dużej aplikacji przy użyciu wielu map interfejsu użytkownika
+title: Testowanie dużej aplikacji przy użyciu wielu map interfejsu użytkownika
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb49e4e84f61e817e3df8bbbdd20c6922d180ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9cb534fc08706ef56ebbc85afe1500e4424196ad
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926741"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018894"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map interfejsu użytkownika
 
@@ -54,7 +54,7 @@ Utwórz wiele map interfejsu użytkownika w każdym z następujących typów syt
 
     Nowy folder zostanie wyświetlony w ramach projektu kodowanego testu interfejsu użytkownika.
 
-2. Kliknij prawym przyciskiem `UIMaps` myszy folder, wskaż polecenie **Dodaj**, a następnie wybierz **nowy element**.
+2. Kliknij prawym przyciskiem myszy folder `UIMaps`, wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
 
     **Dodaj nowy element** zostanie wyświetlone okno dialogowe.
 
@@ -77,13 +77,13 @@ Utwórz wiele map interfejsu użytkownika w każdym z następujących typów syt
 
    W wielu przypadkach okno najwyższego poziomu aplikacji pozostaje stałe dla wszystkich kreatorów, formularzy i stron. Chociaż każda Mapa interfejsu użytkownika ma klasę dla okna najwyższego poziomu, wszystkie mapy są prawdopodobnie odwołują się do tego samego okna najwyższego poziomu, w ramach którego są uruchamiane wszystkie składniki aplikacji. Kodowane testy interfejsu użytkownika przeszukają kontrolki hierarchicznie od góry w dół, rozpoczynając od okna najwyższego poziomu, a więc w złożonej aplikacji, rzeczywiste okno najwyższego poziomu może być zduplikowane w każdej mapie interfejsu użytkownika. Jeśli rzeczywiste okno najwyższego poziomu jest duplikowane, wielokrotne modyfikacje zostaną wprowadzone w przypadku zmiany tego okna. Może to spowodować problemy z wydajnością podczas przełączania map interfejsu użytkownika.
 
-   Aby zminimalizować ten efekt, można użyć `CopyFrom()` metody, aby upewnić się, że nowe okno najwyższego poziomu w tej mapie interfejsu użytkownika jest takie samo jak główne okno najwyższego poziomu.
+   Aby zminimalizować ten efekt, można użyć metody `CopyFrom()`, aby upewnić się, że nowe okno najwyższego poziomu w tej mapie interfejsu użytkownika jest takie samo jak główne okno najwyższego poziomu.
 
 ## <a name="example"></a>Przykład
 
 Poniższy przykład jest częścią klasy narzędzi, która zapewnia dostęp do każdego składnika i ich formantów podrzędnych, które są reprezentowane przez klasy generowane w różnych mapach interfejsu użytkownika.
 
-W tym przykładzie aplikacja sieci Web o nazwie `Contoso` ma stronę główną, stronę produktu i stronę koszyka zakupów. Każda z tych stron udostępnia wspólne okno najwyższego poziomu, które jest oknem przeglądarki. Istnieje Mapa interfejsu użytkownika dla każdej strony, a Klasa narzędzi ma kod podobny do następującego:
+W tym przykładzie aplikacja sieci Web o nazwie `Contoso` zawiera stronę główną, stronę produktu i stronę koszyka zakupów. Każda z tych stron udostępnia wspólne okno najwyższego poziomu, które jest oknem przeglądarki. Istnieje Mapa interfejsu użytkownika dla każdej strony, a Klasa narzędzi ma kod podobny do następującego:
 
 ```csharp
 using ContosoProject.UIMaps;

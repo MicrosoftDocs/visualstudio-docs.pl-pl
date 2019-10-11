@@ -62,13 +62,14 @@
           href: using-the-assert-classes.md
         - name: Microsoft Fakes
           items:
-            - name: Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
+            - name: Izolowanie testowanego kodu
+              displayName: 'shim, stub, fakes'
               href: isolating-code-under-test-with-microsoft-fakes.md
-            - name: Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych
+            - name: Izolowanie części aplikacji przy użyciu klas zastępczych
               href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
-            - name: Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
+            - name: Izolowanie aplikacji od innych zestawów przy użyciu podkładek
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
-            - name: 'Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes'
+            - name: 'Konwencje dotyczące generowania, kompilowania i nazywania'
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
         - name: Testy jednostkowe oparte na danych
           items:

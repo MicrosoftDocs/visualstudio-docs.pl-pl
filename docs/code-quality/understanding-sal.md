@@ -5,19 +5,19 @@ ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c5dfa3d7e1e47fbcd2b0d11a0671b2594125c9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 61a1f74d964c2d6f43608f23b9898054048bb86b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923801"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018245"
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 
-Język adnotacji kodu źródłowego firmy Microsoft (SAL) zawiera zestaw adnotacji, za pomocą których można opisać, w jaki sposób funkcja używa jej parametrów, przyjętych przez niego założeń i gwarantuje, że po zakończeniu. Adnotacje są zdefiniowane w pliku `<sal.h>`nagłówkowym. Program Visual Studio Code Analysis C++ for używa adnotacji sal do modyfikowania jej analizy funkcji. Aby uzyskać więcej informacji na temat SAL 2,0 dla opracowywania sterowników systemu Windows, zobacz [Adnotacje sal 2,0 dla sterowników systemu Windows](http://go.microsoft.com/fwlink/?LinkId=250979).
+Język adnotacji kodu źródłowego firmy Microsoft (SAL) zawiera zestaw adnotacji, za pomocą których można opisać, w jaki sposób funkcja używa jej parametrów, przyjętych przez niego założeń i gwarantuje, że po zakończeniu. Adnotacje są zdefiniowane w pliku nagłówkowym `<sal.h>`. Program Visual Studio Code Analysis C++ for używa adnotacji sal do modyfikowania jej analizy funkcji. Aby uzyskać więcej informacji na temat SAL 2,0 dla opracowywania sterowników systemu Windows, zobacz [Adnotacje sal 2,0 dla sterowników systemu Windows](http://go.microsoft.com/fwlink/?LinkId=250979).
 
 Natywnie, C i C++ zapewniają tylko ograniczone sposoby, aby deweloperzy mogli stale wyznaczać intencje i niewariancje. Za pomocą adnotacji SAL można opisać funkcje bardziej szczegółowo, aby deweloperzy korzystający z nich mogli lepiej zrozumieć, jak ich używać.
 
@@ -27,7 +27,7 @@ Po prostu podano niedrogi, aby umożliwić kompilatorowi Sprawdzanie kodu.
 
 ### <a name="sal-makes-code-more-valuable"></a>SAL sprawia, że kod jest bardziej cenny
 
-SAL ułatwia zrozumienie projektu kodu, zarówno dla ludzi, jak i dla narzędzi do analizy kodu. Rozważmy ten przykład, który pokazuje funkcję `memcpy`środowiska uruchomieniowego C:
+SAL ułatwia zrozumienie projektu kodu, zarówno dla ludzi, jak i dla narzędzi do analizy kodu. Rozważmy ten przykład, który pokazuje funkcję środowiska uruchomieniowego C `memcpy`:
 
 ```cpp
 
@@ -38,18 +38,18 @@ void * memcpy(
 );
 ```
 
-Czy można sprawdzić, co to jest funkcja? Po zaimplementowaniu lub wywołaniu funkcji należy zachować pewne właściwości, aby zapewnić poprawność programu. Wystarczy, że szukasz deklaracji, takiej jak ta w przykładzie, nie wiesz, co się stało. Bez adnotacji SAL należy polegać na dokumentacji lub komentarzach do kodu. Oto dokumentacja MSDN dotycząca `memcpy` następującej treści:
+Czy można sprawdzić, co to jest funkcja? Po zaimplementowaniu lub wywołaniu funkcji należy zachować pewne właściwości, aby zapewnić poprawność programu. Wystarczy, że szukasz deklaracji, takiej jak ta w przykładzie, nie wiesz, co się stało. Bez adnotacji SAL należy polegać na dokumentacji lub komentarzach do kodu. Poniżej przedstawiono dokumentację MSDN dla `memcpy`:
 
 > "Kopiuje liczbę bajtów SRC do miejsca docelowego. Jeśli źródło i miejsce docelowe nakładają się na siebie, zachowanie memcpy jest niezdefiniowane. Użyj memmove, aby obsłużyć nakładające się regiony.
 > **Uwaga dotycząca zabezpieczeń:** Upewnij się, że bufor docelowy ma ten sam rozmiar lub większy niż bufor źródłowy. Aby uzyskać więcej informacji, zobacz Unikanie przepełnień buforu ".
 
 Dokumentacja zawiera kilka bitów informacji, które sugerują, że Twój kod musi zachować pewne właściwości, aby zapewnić poprawność programu:
 
-- `memcpy``count` Kopiuje bajty z bufora źródłowego do bufora docelowego.
+- `memcpy` kopiuje `count` z bufora źródłowego do bufora docelowego.
 
 - Bufor docelowy musi być co najmniej tak duży jak bufor źródłowy.
 
-Jednak kompilator nie może odczytać dokumentacji ani komentarzy nieformalnych. Nie wiadomo, że istnieje relacja między dwoma buforami i `count`i nie może efektywnie odgadnąć relacji. SAL może zapewnić większą przejrzystość właściwości i implementacji funkcji, jak pokazano poniżej:
+Jednak kompilator nie może odczytać dokumentacji ani komentarzy nieformalnych. Nie wiadomo, że istnieje relacja między dwoma buforami i `count`, a także nie może efektywnie odgadnąć relacji. SAL może zapewnić większą przejrzystość właściwości i implementacji funkcji, jak pokazano poniżej:
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
-Zwróć uwagę, że te adnotacje przypominają informacje w dokumentacji MSDN, ale są bardziej zwięzłe i są zgodne ze wzorcem semantycznym. Po odczytaniu tego kodu można szybko zrozumieć właściwości tej funkcji oraz uniknąć problemów z zabezpieczeniami przepełnienia buforu. Jeszcze lepsze wzorce semantyczne, które zawiera, mogą zwiększyć wydajność i efektywność zautomatyzowanych narzędzi do analizy kodu w wczesnym wykrywaniu potencjalnych usterek. Załóżmy, że ktoś zapisuje tę implementację `wmemcpy`debugowania:
+Zwróć uwagę, że te adnotacje przypominają informacje w dokumentacji MSDN, ale są bardziej zwięzłe i są zgodne ze wzorcem semantycznym. Po odczytaniu tego kodu można szybko zrozumieć właściwości tej funkcji oraz uniknąć problemów z zabezpieczeniami przepełnienia buforu. Jeszcze lepsze wzorce semantyczne, które zawiera, mogą zwiększyć wydajność i efektywność zautomatyzowanych narzędzi do analizy kodu w wczesnym wykrywaniu potencjalnych usterek. Załóżmy, że ktoś pisze tę implementację debugowaną `wmemcpy`:
 
 ```cpp
 
@@ -82,7 +82,7 @@ Ta implementacja zawiera typowy błąd poza jedną. Na szczęście kod autora za
 ### <a name="sal-basics"></a>Podstawowe informacje dotyczące SAL
 SAL definiuje cztery podstawowe rodzaje parametrów, które są podzielone według wzorca użycia.
 
-|Kategoria|Adnotacja parametru|Opis|
+|Category|Adnotacja parametru|Opis|
 |--------------|--------------------------|-----------------|
 |**Wejście do wywołanej funkcji**|`_In_`|Dane są przesyłane do wywołanej funkcji i są traktowane jako tylko do odczytu.|
 |**Wejście do wywoływanej funkcji i wyjście do obiektu wywołującego**|`_Inout_`|Użyteczne dane są przesyłane do funkcji i potencjalnie modyfikowane.|
@@ -114,13 +114,13 @@ W przykładach narzędzie do analizy Visual Studio Code jest używane razem z ad
 
 2. Na pasku menu wybierz **kompilacja**, **Uruchom analizę kodu w rozwiązaniu**.
 
-     Rozważmy\_ w przykładzie w tej sekcji. \_ Jeśli uruchomisz analizę kodu, to ostrzeżenie jest wyświetlane:
+     Rozważmy przykład \_In @ no__t-1 w tej sekcji. Jeśli uruchomisz analizę kodu, to ostrzeżenie jest wyświetlane:
 
     > **C6387 nieprawidłowa wartość parametru** "Pinta" może mieć wartość "0": to nie jest zgodne ze specyfikacją funkcji "InCallee".
 
-### <a name="example-the-_in_-annotation"></a>Przykład: \_W\_ adnotacji
+### <a name="example-the-_in_-annotation"></a>Przykład: Adnotacja \_In @ no__t-1
 
-`_In_` Adnotacja wskazuje, że:
+Adnotacja `_In_` wskazuje, że:
 
 - Parametr musi być prawidłowy i nie zostanie zmodyfikowany.
 
@@ -128,9 +128,9 @@ W przykładach narzędzie do analizy Visual Studio Code jest używane razem z ad
 
 - Obiekt wywołujący musi dostarczyć bufor i zainicjować go.
 
-- `_In_`Określa wartość "tylko do odczytu". Typowy błąd ma zastosowanie `_In_` do parametru, który powinien `_Inout_` mieć adnotację.
+- `_In_` określa "tylko do odczytu". Typowy błąd polega na zastosowaniu `_In_` do parametru, który powinien mieć adnotację `_Inout_`.
 
-- `_In_`jest dozwolony, ale ignorowany przez analizator dla skalarnych wartości niebędących wskaźnikami.
+- `_In_` jest dozwolony, ale ignorowany przez analizator dla skalarnych wartości niebędących wskaźnikami.
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -154,11 +154,11 @@ void BadInCaller()
 }
 ```
 
-Jeśli w tym przykładzie używasz analizy Visual Studio Code, sprawdza ona, czy wywołujący przekażą wskaźnik o wartości innej niż null do zainicjowanego buforu `pInt`dla elementu. W tym przypadku `pInt` wskaźnik nie może mieć wartości null.
+Jeśli używasz analizy Visual Studio Code w tym przykładzie, sprawdza, czy wywołujący przekażą wskaźnik o wartości innej niż null do zainicjowanego buforu dla `pInt`. W tym przypadku wskaźnik `pInt` nie może mieć wartości NULL.
 
-### <a name="example-the-_in_opt_-annotation"></a>Przykład: W adnotacji\_ opt \_\_
+### <a name="example-the-_in_opt_-annotation"></a>Przykład: Adnotacja \_In @ no__t-1opt @ no__t-2
 
-`_In_opt_`jest taka sama jak `_In_`, z tą różnicą, że parametr wejściowy może mieć wartość null i dlatego funkcja powinna ją sprawdzić.
+`_In_opt_` jest taka sama jak `_In_`, z tą różnicą, że parametr wejściowy może mieć wartość NULL i dlatego funkcja powinna ją sprawdzić.
 
 ```cpp
 
@@ -184,9 +184,9 @@ void InOptCaller()
 
 Visual Studio Code Analysis sprawdza, czy funkcja sprawdza wartość NULL przed uzyskaniem dostępu do buforu.
 
-### <a name="example-the-_out_-annotation"></a>Przykład: Adnotacja\_ out \_
+### <a name="example-the-_out_-annotation"></a>Przykład: Adnotacja \_Out @ no__t-1
 
-`_Out_`obsługuje typowy scenariusz, w którym jest przenoszona wskaźnik o wartości innej niż NULL, który wskazuje na bufor elementu, a funkcja Inicjuje element. Obiekt wywołujący nie musi inicjować buforu przed wywołaniem; wywoływana funkcja niesie obietnice zwiększenia, aby ją zainicjować przed zwróceniem.
+`_Out_` obsługuje typowy scenariusz, w którym jest przenoszona wskaźnik o wartości innej niż NULL, który wskazuje na bufor elementu, i funkcja Inicjuje element. Obiekt wywołujący nie musi inicjować buforu przed wywołaniem; wywoływana funkcja niesie obietnice zwiększenia, aby ją zainicjować przed zwróceniem.
 
 ```cpp
 void GoodOutCallee(_Out_ int *pInt)
@@ -208,11 +208,11 @@ void OutCaller()
 }
 ```
 
-Narzędzie do analizy Visual Studio Code sprawdza, czy obiekt wywołujący przekazuje wskaźnik o wartości innej niż null do `pInt` buforu dla i że bufor jest inicjowany przez funkcję przed zwróceniem.
+Narzędzie do analizy Visual Studio Code sprawdza, czy obiekt wywołujący przekazuje wskaźnik o wartości innej niż NULL do buforu dla `pInt` i że bufor jest inicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_out_opt_-annotation"></a>Przykład: Adnotacja opt out\_ \_\_
+### <a name="example-the-_out_opt_-annotation"></a>Przykład: Adnotacja \_Out @ no__t-1opt @ no__t-2
 
-`_Out_opt_`jest taka sama jak `_Out_`, z tą różnicą, że parametr może mieć wartość null i dlatego funkcja powinna ją sprawdzić.
+`_Out_opt_` jest taka sama jak `_Out_`, z tą różnicą, że parametr może mieć wartość NULL i dlatego funkcja powinna ją sprawdzić.
 
 ```cpp
 void GoodOutOptCallee(_Out_opt_ int *pInt)
@@ -235,14 +235,14 @@ void OutOptCaller()
 }
 ```
 
-Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza obecność wartości null `pInt` przed usunięciem odwołania, a jeśli `pInt` nie ma wartości null, to bufor zostanie zainicjowany przez funkcję przed zwróceniem.
+Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza wartość NULL przed usunięciem odwołania do `pInt`, a jeśli `pInt` nie ma wartości NULL, to bufor zostanie zainicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_inout_-annotation"></a>Przykład: Adnotacja\_ Inout \_
+### <a name="example-the-_inout_-annotation"></a>Przykład: Adnotacja \_Inout @ no__t-1
 
-`_Inout_`służy do dodawania adnotacji do parametru wskaźnika, który może zostać zmieniony przez funkcję. Wskaźnik musi wskazywać prawidłowe dane zainicjowane przed wywołaniem, a nawet w przypadku zmiany, musi mieć prawidłową wartość zwracaną. Adnotacja określa, że funkcja może swobodnie odczytywać i zapisywać w buforze jednego elementu. Obiekt wywołujący musi dostarczyć bufor i zainicjować go.
+`_Inout_` służy do dodawania adnotacji do parametru wskaźnika, który może zostać zmieniony przez funkcję. Wskaźnik musi wskazywać prawidłowe dane zainicjowane przed wywołaniem, a nawet w przypadku zmiany, musi mieć prawidłową wartość zwracaną. Adnotacja określa, że funkcja może swobodnie odczytywać i zapisywać w buforze jednego elementu. Obiekt wywołujący musi dostarczyć bufor i zainicjować go.
 
 > [!NOTE]
-> Podobnie `_Out_`jak `_Inout_` , należy zastosować do modyfikowalnej wartości.
+> Podobnie jak `_Out_`, `_Inout_` musi mieć zastosowanie do modyfikowalnej wartości.
 
 ```cpp
 void InOutCallee(_Inout_ int *pInt)
@@ -266,11 +266,11 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code Analysis sprawdza, czy obiekty wywołujące przechodzą wskaźnik o wartości innej niż null do zainicjowanego buforu dla `pInt`, i że przed `pInt` zwróceniem nadal jest inne niż null i bufor jest zainicjowany.
+Visual Studio Code Analysis sprawdza, czy obiekty wywołujące przechodzą wskaźnik o wartości innej niż NULL do zainicjowanego buforu dla `pInt` i że przed zwróceniem `pInt` nadal jest niezerowe i bufor jest zainicjowany.
 
-### <a name="example-the-_inout_opt_-annotation"></a>Przykład: Adnotacja opt Inout\_ \_\_
+### <a name="example-the-_inout_opt_-annotation"></a>Przykład: Adnotacja \_Inout @ no__t-1opt @ no__t-2
 
-`_Inout_opt_`jest taka sama jak `_Inout_`, z tą różnicą, że parametr wejściowy może mieć wartość null i dlatego funkcja powinna ją sprawdzić.
+`_Inout_opt_` jest taka sama jak `_Inout_`, z tą różnicą, że parametr wejściowy może mieć wartość NULL i dlatego funkcja powinna ją sprawdzić.
 
 ```cpp
 void GoodInOutOptCallee(_Inout_opt_ int *pInt)
@@ -295,11 +295,11 @@ void InOutOptCaller()
 }
 ```
 
-Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza wartość null przed uzyskaniem dostępu do buforu, a jeśli `pInt` nie ma wartości null, to bufor zostanie zainicjowany przez funkcję przed zwróceniem.
+Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza wartość NULL przed uzyskaniem dostępu do buforu, a jeśli `pInt` nie ma wartości NULL, to bufor zostanie zainicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_outptr_-annotation"></a>Przykład: Adnotacja\_ Outptr \_
+### <a name="example-the-_outptr_-annotation"></a>Przykład: Adnotacja \_Outptr @ no__t-1
 
-`_Outptr_`służy do dodawania adnotacji do parametru, który jest przeznaczony do zwrócenia wskaźnika.  Sam parametr nie powinien mieć wartości NULL, a wywołana funkcja zwraca wskaźnik o wartości innej niż NULL i wskaźnik wskazuje na zainicjowanie danych.
+`_Outptr_` służy do dodawania adnotacji do parametru, który jest przeznaczony do zwrócenia wskaźnika.  Sam parametr nie powinien mieć wartości NULL, a wywołana funkcja zwraca wskaźnik o wartości innej niż NULL i wskaźnik wskazuje na zainicjowanie danych.
 
 ```cpp
 void GoodOutPtrCallee(_Outptr_ int **pInt)
@@ -325,11 +325,11 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Code Analysis sprawdza, czy obiekt wywołujący przekazuje wskaźnik `*pInt`o wartości innej niż null oraz że bufor jest inicjowany przez funkcję przed zwróceniem.
+Visual Studio Code Analysis sprawdza, czy obiekt wywołujący przekazuje wskaźnik o wartości innej niż NULL dla `*pInt` i że bufor jest inicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_outptr_opt_-annotation"></a>Przykład: Adnotacja opt Outptr\_ \_\_
+### <a name="example-the-_outptr_opt_-annotation"></a>Przykład: Adnotacja \_Outptr @ no__t-1opt @ no__t-2
 
-`_Outptr_opt_`jest taka sama jak `_Outptr_`, z tą różnicą, że parametr jest opcjonalny — obiekt wywołujący może przekazać wskaźnik o wartości null dla parametru.
+`_Outptr_opt_` jest taka sama jak `_Outptr_`, z tą różnicą, że parametr jest opcjonalny — obiekt wywołujący może przekazać wskaźnik o wartości NULL dla parametru.
 
 ```cpp
 void GoodOutPtrOptCallee(_Outptr_opt_ int **pInt)
@@ -357,11 +357,11 @@ void OutPtrOptCaller()
 }
 ```
 
-Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza obecność wartości null `*pInt` przed usunięciem odwołania, oraz że bufor jest inicjowany przez funkcję przed zwróceniem.
+Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza wartość NULL przed usunięciem odwołania do `*pInt`, i że bufor jest inicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Przykład: Pomyślna\_ adnotacja w \_połączeniu z out \_\_
+### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Przykład: Adnotacja @no__t 0Success @ no__t-1 w połączeniu z \_Out @ no__t-3
 
-Adnotacje można stosować do większości obiektów.  W szczególności można dodać adnotacje do całej funkcji.  Jedną z najbardziej oczywistych cech funkcji jest to, że może ona zakończyć się powodzeniem lub niepowodzeniem. Ale podobnie jak skojarzenie między buforem i jego rozmiarem,C++ C/nie można ekspresować sukces lub Niepowodzenie funkcji. Za pomocą `_Success_` adnotacji można wypowiedzieć, jakie sukcesy dla funkcji wyglądają jak.  Parametr do `_Success_` adnotacji jest tylko wyrażeniem, gdy wartość true wskazuje, że funkcja zakończyła się powodzeniem. Wyrażenie może być dowolne, co może obsłużyć Analizator adnotacji. Efekty adnotacji po zwracaniu funkcji są stosowane tylko wtedy, gdy funkcja się powiedzie. W tym przykładzie pokazano `_Success_` , jak współdziała z `_Out_` programem w celu wykonania odpowiednich czynności. Możesz użyć słowa kluczowego `return` , aby reprezentować wartość zwracaną.
+Adnotacje można stosować do większości obiektów.  W szczególności można dodać adnotacje do całej funkcji.  Jedną z najbardziej oczywistych cech funkcji jest to, że może ona zakończyć się powodzeniem lub niepowodzeniem. Ale podobnie jak skojarzenie między buforem i jego rozmiarem,C++ C/nie można ekspresować sukces lub Niepowodzenie funkcji. Korzystając z adnotacji `_Success_`, można wypowiedzieć, jak wygląda sukces funkcji.  Parametr do adnotacji `_Success_` jest tylko wyrażeniem, gdy wartość true wskazuje, że funkcja zakończyła się powodzeniem. Wyrażenie może być dowolne, co może obsłużyć Analizator adnotacji. Efekty adnotacji po zwracaniu funkcji są stosowane tylko wtedy, gdy funkcja się powiedzie. W tym przykładzie pokazano, jak `_Success_` współdziała z `_Out_` w celu wykonania odpowiednich czynności. Możesz użyć słowa kluczowego `return`, aby przedstawić wartość zwracaną.
 
 ```cpp
 _Success_(return != false) // Can also be stated as _Success_(return)
@@ -376,7 +376,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 }
 ```
 
-Adnotacja powoduje, że analiza Visual Studio Code sprawdza, czy obiekt wywołujący przekazuje wskaźnik o wartości innej niż null `pInt`do buforu dla, i że bufor jest inicjowany przez funkcję przed zwróceniem. `_Out_`
+Adnotacja `_Out_` powoduje, że Visual Studio Code analizy sprawdzają, czy obiekt wywołujący przekazuje wskaźnik o wartości innej niż NULL do buforu dla `pInt` i czy bufor jest inicjowany przez funkcję przed zwróceniem.
 
 ## <a name="sal-best-practice"></a>Najlepsze rozwiązanie SAL
 

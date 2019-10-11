@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 10/01/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 43984192051fbef5648c021e2a05b4ac82d18a09
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+ms.openlocfilehash: 3f11387de78601df68894479b7a51b6ba7d8b51c
+ms.sourcegitcommit: 21b80f7b5403c04ee69f19a394e46bf922f06d7d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720543"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72279549"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,7 +29,9 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.3.2 | Release | 1 października 2019 | 16.3.29326.143 |
+| 16.3.4 | Release | 10 października 2019 r. | 16.3.29409.12 |
+| 16.3.3 | Release | 8 października 2019 r. | 16.3.29403.142 |
+| 16.3.2 | Release | 1 października 2019 r. | 16.3.29326.143 |
 | 16.3.1 | Release | 25 września 2019 r. | 16.3.29324.140 |
 | 16.4.0 | Wersja zapoznawcza 1 | 23 września 2019 r. | 16.4.29319.158 |
 | 16.3.0 | Release | 23 września 2019 r. | 16.3.29318.209 |

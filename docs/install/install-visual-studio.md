@@ -2,7 +2,7 @@
 title: Instalowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
-ms.date: 04/16/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095358"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018852"
 ---
 # <a name="install-visual-studio"></a>Instalacja programu Visual Studio
 
@@ -82,7 +82,7 @@ Przed rozpoczęciem instalowania programu Visual Studio:
 
 1. Ponowne uruchomienie komputera. Ponowne uruchomienie gwarantuje, że żadne oczekujące instalacje lub aktualizacje nie zakłócą instalacji programu Visual Studio.
 
-1. Zwolnij miejsce. Usuń niepotrzebne pliki i aplikacje z usługi % SystemDrive %, na przykład uruchamianie aplikacji Oczyszczanie dysku. 
+1. Zwolnij miejsce. Usuń niepotrzebne pliki i aplikacje z usługi % SystemDrive %, na przykład uruchamianie aplikacji Oczyszczanie dysku.
 
 ::: moniker-end
 
@@ -100,16 +100,17 @@ Pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio obok p
 
 ## <a name="step-2---download-visual-studio"></a>Krok 2 — pobieranie programu Visual Studio
 
-Następnie należy pobrać plik inicjujący programu Visual Studio. Aby to zrobić, wybierz poniższy przycisk, wybierz wersję programu Visual Studio, a następnie wybierz pozycję **Zapisz**, a następnie wybierz pozycję **Otwórz folder**.
+Następnie należy pobrać plik inicjujący programu Visual Studio.
 
 ::: moniker range="vs-2017"
 
- > [!div class="button"]
- > [Pobierz program Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+Aby uzyskać program inicjujący dla programu Visual Studio 2017, zobacz stronę pobierania [poprzednich wersji programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) , aby uzyskać szczegółowe informacje o tym, jak to zrobić.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Aby to zrobić, wybierz poniższy przycisk, wybierz wersję programu Visual Studio, a następnie wybierz pozycję **Zapisz**, a następnie wybierz pozycję **Otwórz folder**.
 
  > [!div class="button"]
  > [Pobierz program Visual Studio](https://visualstudio.microsoft.com/downloads)
@@ -179,7 +180,7 @@ Jeśli nie chcesz używać funkcji obciążeń do dostosowywania instalacji prog
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 — Zainstaluj poszczególne składniki](media/vs-2019/vs-installer-individual-components.png "Zainstaluj poszczególne składniki programu Visual Studio")
+  ![Visual studio 2019 — Zainstaluj poszczególne składniki](media/vs-2019/vs-installer-individual-components.png "Zainstaluj poszczególne składniki programu Visual Studio")
 
 ::: moniker-end
 
@@ -195,7 +196,7 @@ Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacy
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 — Zainstaluj pakiety językowe](media/vs-2019/vs-installer-language-packs.png "Zainstaluj pakiety językowe programu Visual Studio")
+  ![Visual studio 2019 — Zainstaluj pakiety językowe](media/vs-2019/vs-installer-language-packs.png "Zainstaluj pakiety językowe programu Visual Studio")
 
 ::: moniker-end
 
@@ -209,7 +210,7 @@ Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z
 
 **Nowość w 15,7**: Teraz można zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
-  ![Visual Studio 2017 — Zmień lokalizacje instalacji](media/installation-options-by-location.png "Zmień lokalizację instalacji")
+  ![Visual Studio 2017 — Zmienianie lokalizacji instalacji](media/installation-options-by-location.png "Zmień lokalizację instalacji")
 
 ::: moniker-end
 
@@ -217,7 +218,7 @@ Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z
 
 Możesz zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
-  ![Visual Studio 2019 — Wybieranie lokalizacji instalacji](media/vs-2019/vs-installer-installation-locations.png "Wybierz lokalizację instalacji")
+  ![Visual Studio 2019 — Wybierz lokalizacje instalacji](media/vs-2019/vs-installer-installation-locations.png "Wybierz lokalizację instalacji")
 
 ::: moniker-end
 
@@ -250,7 +251,7 @@ Aby uzyskać więcej informacji, zobacz stronę [Wybieranie lokalizacji instalac
 
 1. W polu wyszukiwania wprowadź typ aplikacji, którą chcesz utworzyć, aby wyświetlić listę dostępnych szablonów. Lista szablonów zależy od obciążeń, które zostały wybrane podczas instalacji. Aby wyświetlić różne szablony, wybierz różne obciążenia.
 
-   Wyszukiwanie w określonym języku programowania można również filtrować za pomocą listy rozwijanej **Język** . Można również filtrować za pomocą listy **platform** i listy **Typ projektu** . 
+   Wyszukiwanie w określonym języku programowania można również filtrować za pomocą listy rozwijanej **Język** . Można również filtrować za pomocą listy **platform** i listy **Typ projektu** .
 
 1. Program Visual Studio otwiera nowy projekt i wszystko jest gotowe do kodu!
 

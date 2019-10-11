@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 04a4738181c579617711150da4eb99e08aeb039c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062413"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018424"
 ---
 # <a name="fxcop-rule-port-status"></a>Stan portu reguły FxCop
 
@@ -27,7 +27,7 @@ Jeśli wcześniej użyto statycznej analizy kodu w programie Visual Studio, moż
 
 Od daty na tej stronie Lista reguł FxCop, które zostały [przeanalizowane do analizatorów FxCop](install-fxcop-analyzers.md) , obejmuje:
 
-Identyfikator reguły | Tytuł
+Identyfikator reguły | Stanowisko
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | Nie deklaruj statycznych składowych na typach ogólnych
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji
@@ -67,9 +67,9 @@ Identyfikator reguły | Tytuł
 [CA1063](ca1063-implement-idisposable-correctly.md) | Zaimplementuj poprawnie interfejs IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | Wyjątki powinny być publiczne
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach
-CA1066 | Typ {0} powinien implementować\<IEquatable T >, ponieważ zastępuje on wartość Equals
-CA1067 | Zastąp obiekt. Equals (Object) podczas implementowania IEquatable\<T >
-[CA1068](ca1068.md) | Parametry CancellationToken muszą pochodzić z ostatnich
+CA1066 | Typ {0} powinien implementować element IEquatable @ no__t-1T >, ponieważ zastępuje on wartość Equals
+CA1067 | Zastąp obiekt. Equals (Object) podczas implementowania IEquatable @ no__t-0T >
+[CA1068](ca1068.md) | Parametry CancellationToken muszą występować na końcu
 CA1200 | Unikaj używania tagów cref z prefiksem
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Nie przekazuj literałów jako zlokalizowanych parametrów
 [CA1304](ca1304-specify-cultureinfo.md) | Określ argument CultureInfo
@@ -149,28 +149,28 @@ CA2010 | Zawsze korzystaj z wartości zwracanej przez metody oznaczone atrybutem
 [CA2242](ca2242-test-for-nan-correctly.md) | Poprawnie testuj nie-liczby (NaN)
 [CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | Analiza literałów ciągów atrybutów powinna przebiegać poprawnie
 CA2244 | Nie Duplikuj zainicjowanych elementów indeksowanych
-[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md) | Nie używaj niezabezpieczonego deserializatora BinaryFormatter
-[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) | Nie wywołuj metody BinaryFormatter.Deserialize bez uprzedniego ustawienia właściwości BinaryFormatter.Binder
-[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) | Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize
-[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md) | Nie używaj niezabezpieczonego deserializatora LosFormatter
-[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md) | Nie używaj niezabezpieczonego deserializatora NetDataContractSerializer
-[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md) | Nie wykonuj deserializacji bez uprzedniego ustawienia właściwości NetDataContractSerializer.Binder
-[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md) | Upewnij się, że właściwość NetDataContractSerializer.Binder jest ustawiona przed deserializacją
-[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md) | Nie używaj niezabezpieczonego deserializatora ObjectStateFormatter
+[CA2300](ca2300.md) | Nie używaj niezabezpieczonego deserializatora BinaryFormatter
+[CA2301](ca2301.md) | Nie wywołuj metody BinaryFormatter.Deserialize bez uprzedniego ustawienia właściwości BinaryFormatter.Binder
+[CA2302](ca2302.md) | Upewnij się, że właściwość BinaryFormatter.Binder jest ustawiona przed wywołaniem metody BinaryFormatter.Deserialize
+[CA2305](ca2305.md) | Nie używaj niezabezpieczonego deserializatora LosFormatter
+[CA2310](ca2310.md) | Nie używaj niezabezpieczonego deserializatora NetDataContractSerializer
+[CA2311](ca2311.md) | Nie wykonuj deserializacji bez uprzedniego ustawienia właściwości NetDataContractSerializer.Binder
+[CA2312](ca2312.md) | Upewnij się, że właściwość NetDataContractSerializer.Binder jest ustawiona przed deserializacją
+[CA2315](ca2315.md) | Nie używaj niezabezpieczonego deserializatora ObjectStateFormatter
 [CA2321](ca2321.md) | Nie wykonuj deserializacji za pomocą obiektu JavaScriptSerializer zainicjowanego przy użyciu parametru SimpleTypeResolver
 [CA2322](ca2322.md) | Upewnij się, że obiekt JavaScriptSerializer nie został zainicjowany przy użyciu parametru SimpleTypeResolver przed deserializacją
-[CA3001](ca3001-review-code-for-sql-injection-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL
-[CA3002](ca3002-review-code-for-xss-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających działanie skryptów między witrynami
-[CA3003](ca3003-review-code-for-file-path-injection-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie ścieżki pliku
-[CA3004](ca3004-review-code-for-information-disclosure-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających ujawnienie informacji
-[CA3005](ca3005-review-code-for-ldap-injection-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie protokołu LDAP
-[CA3006](ca3006-review-code-for-process-command-injection-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie polecenia procesu
-[CA3007](ca3007-review-code-for-open-redirect-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających otwarcie przekierowania
-[CA3008](ca3008-review-code-for-xpath-injection-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia XPath
-[CA3009](ca3009-review-code-for-xml-injection-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XML
-[CA3010](ca3010-review-code-for-xaml-injection-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML
-[CA3011](ca3011-review-code-for-dll-injection-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie biblioteki DLL
-[CA3012](ca3012-review-code-for-regex-injection-vulnerabilities.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia regularnego
+[CA3001](ca3001.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL
+[CA3002](ca3002.md) | Przegląd kodu pod kątem luk umożliwiających działanie skryptów między witrynami
+[CA3003](ca3003.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie ścieżki pliku
+[CA3004](ca3004.md) | Przegląd kodu pod kątem luk umożliwiających ujawnienie informacji
+[CA3005](ca3005.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie protokołu LDAP
+[CA3006](ca3006.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie polecenia procesu
+[CA3007](ca3007.md) | Przegląd kodu pod kątem luk umożliwiających otwarcie przekierowania
+[CA3008](ca3008.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia XPath
+[CA3009](ca3009.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XML
+[CA3010](ca3010.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML
+[CA3011](ca3011.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie biblioteki DLL
+[CA3012](ca3012.md) | Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia regularnego
 CA3061 | Nie dodawaj schematu według adresu URL
 [CA3075](ca3075-insecure-dtd-processing.md) | Niezabezpieczone przetwarzanie DTD w kodzie XML
 [CA3076](ca3076-insecure-xslt-script-execution.md) | Niezabezpieczone przetwarzanie skryptów XSLT.
