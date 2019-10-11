@@ -2,23 +2,25 @@
 title: Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia
 ms.date: 04/28/2018
 ms.topic: conceptual
+f1_keywords:
+- vs.codeanalysis.rulesets.native
 author: mikeblome
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 061b52a683992bdc2fe5792ab05e00f788434a0f
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018223"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163100"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Użyj zestawów reguł, aby określić C++ reguły do uruchomienia
 
 W programie Visual Studio można utworzyć i zmodyfikować niestandardowy *zestaw reguł* , aby spełniał wymagania dotyczące projektu związane z analizą kodu. Domyślne zestawy reguł są przechowywane w `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 w wersji 15,7 lub nowszej** Zestawy reguł niestandardowych można utworzyć przy użyciu dowolnego edytora tekstu i zastosować je w przypadku kompilacji w wierszu polecenia niezależnie od tego, jakiego systemu kompilacji używasz. Aby uzyskać więcej informacji, zobacz [/analyze: reguł](/cpp/build/reference/analyze-code-analysis).
+**Program Visual Studio 2017 w wersji 15,7 lub nowszej:** Zestawy reguł niestandardowych można utworzyć przy użyciu dowolnego edytora tekstu i zastosować je w przypadku kompilacji w wierszu polecenia niezależnie od tego, jakiego systemu kompilacji używasz. Aby uzyskać więcej informacji, zobacz [/analyze: reguł](/cpp/build/reference/analyze-code-analysis).
 
 Aby utworzyć niestandardowy C++ zestaw reguł w programie Visual Studio, projekt C/C++ musi być otwarty w środowisku IDE programu Visual Studio. Następnie można otworzyć standardowy zestaw reguł w edytorze zestawu reguł, a następnie dodać lub usunąć określone reguły i opcjonalnie zmienić akcję, która występuje, gdy analiza kodu ustali, że reguła została naruszona.
 
@@ -26,7 +28,7 @@ Aby utworzyć nowy niestandardowy zestaw reguł, Zapisz go przy użyciu nowej na
 
 ## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Aby utworzyć regułę niestandardową na podstawie jednego istniejącego zestawu reguł
 
-1. W Eksplorator rozwiązań otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Właściwości**.
+1. W Eksplorator rozwiązań otwórz menu skrótów dla projektu, a następnie wybierz **Właściwości**.
 
 2. Na karcie **Właściwości** wybierz pozycję **Analiza kodu**.
 
@@ -36,7 +38,7 @@ Aby utworzyć nowy niestandardowy zestaw reguł, Zapisz go przy użyciu nowej na
 
      \- lub —
 
-   - Wybierz **\<Browse >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
+   - Wybierz **\<Browse... >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
 
 4. Wybierz pozycję **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.
 
@@ -50,9 +52,11 @@ Aby utworzyć nowy niestandardowy zestaw reguł, Zapisz go przy użyciu nowej na
 
 - Aby zmienić akcję wykonywaną w przypadku naruszenia reguły w analizie kodu, wybierz pole **akcji** dla reguły, a następnie wybierz jedną z następujących wartości:
 
-     **Warn** — generuje ostrzeżenie.
+     **Ostrzeżenie** — generuje ostrzeżenie.
 
      **Błąd** — generuje błąd.
+     
+     **Info** — generuje komunikat.
 
      **Brak** — wyłącza regułę. Ta akcja jest taka sama jak usuwanie reguły z zestawu reguł.
 
