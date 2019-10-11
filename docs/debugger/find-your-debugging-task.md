@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817525"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018782"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Znajdowanie zadania debugowania w programie Visual Studio
 
@@ -34,7 +34,10 @@ Wypróbuj warunkowy punkt przerwania, aby kontrolować miejsce i czas, w którym
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>Wstrzymaj kod tylko wtedy, gdy zmienia się właściwość lub wartość określonego obiektu
 
-Dla C++programu Ustaw [punkt przerwania danych](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). W przypadku aplikacji korzystających z platformy .NET Core 3 można również ustawić [punkt przerwania danych](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+Dla C++programu Ustaw [punkt przerwania danych](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). 
+::: moniker range=">= vs-2019"
+W przypadku aplikacji korzystających z platformy .NET Core 3 można również ustawić [punkt przerwania danych](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+::: moniker-end
 
 W przeciwnym razie C# dla F# i tylko można [śledzić identyfikator obiektu za pomocą warunkowego punktu przerwania](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
 

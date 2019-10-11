@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5ba9e8dda927edca08565b088cbde90d63443908
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234270"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252574"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identyfikatory nie powinny zawierać znaków podkreślenia
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234270"
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|Kategoria|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Zmiana podziału|Przerywanie — gdy są wywoływane w zestawach<br /><br /> Rozdzielenie — gdy zostanie wywołane w parametrach typu|
 
 ## <a name="cause"></a>Przyczyna
@@ -46,9 +46,9 @@ Usuń wszystkie znaki podkreślenia z nazwy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżeń dla tej reguły.
+Nie pomijaj ostrzeżeń dla kodu produkcyjnego. Można jednak bezpiecznie pominąć to ostrzeżenie dla kodu testu. Możesz pominąć ostrzeżenia z tej reguły, ustawiając jej [ważność](use-roslyn-analyzers.md#rule-severity) na **none**. 
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Identyfikatory powinny różnić się więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter @ no__t-0
+- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter @ no__t-0

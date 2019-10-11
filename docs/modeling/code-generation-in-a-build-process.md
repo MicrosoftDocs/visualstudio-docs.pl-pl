@@ -13,14 +13,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d61a5bcd530afb951f98f84f1f4e38e36f96d6
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: MT
+ms.openlocfilehash: db5c1a244ce74985df25f31f5e554ad77b9bb8ae
+ms.sourcegitcommit: d370bdc430fb9fc7549158dfb0ddd7a12b513a0e
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533305"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036647"
 ---
-# <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
+# <a name="invoke-text-transformation-in-the-build-process"></a>Wywołaj transformację tekstu w procesie kompilacji
 
 [Transformację tekstu](../modeling/code-generation-and-t4-text-templates.md) można wywołać w ramach [procesu kompilacji](/azure/devops/pipelines/index) rozwiązania programu Visual Studio. Istnieją zadania kompilacji, które są przeznaczone do przekształcania tekstu. Zadania kompilacji T4 uruchamiają szablon tekstowy czasu projektowania, a także kompilują szablony tekstowe czasu wykonywania (wstępnie przetworzone).
 
@@ -32,36 +32,32 @@ Aby włączyć zadania kompilacji na komputerze deweloperskim, Zainstaluj zestaw
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Jeśli [serwer kompilacji](/azure/devops/pipelines/agents/agents) działa na komputerze, na którym nie zainstalowano programu Visual Studio, Skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp najnowsze numery wersji dla "*".
+Jeśli [serwer kompilacji](/azure/devops/pipelines/agents/agents) działa na komputerze, na którym nie zainstalowano programu Visual Studio, Skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego:
 
-- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
-
+  - Microsoft. VisualStudio. TextTemplating. Sdk. host. 15.0. dll
   - Microsoft.TextTemplating.Build.Tasks.dll
-
   - Microsoft.TextTemplating.targets
 
-- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - Microsoft. VisualStudio. TextTemplating. 15.0. dll
+  - Microsoft. VisualStudio. TextTemplating. Interfaces. 15.0. dll
+  - Microsoft. VisualStudio. TextTemplating. VSHost. 15.0. dll
 
-  - Microsoft. VisualStudio. TextTemplating. Interfaces. *. 0. dll (kilka plików)
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
-
-- $ (ProgramFiles) \Microsoft Visual Studio *. 0 \ Common7\IDE\PublicAssemblies\
-
-  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+  - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
   
 > [!TIP]
-> Jeśli otrzymasz `MissingMethodException` metodę Microsoft. CodeAnalysis podczas uruchamiania elementów docelowych kompilacji TextTemplating na serwerze kompilacji, upewnij się, że zestawy Roslyn znajdują się w katalogu o nazwie *Roslyn* , który znajduje się w tym samym katalogu, co plik wykonywalny kompilacji (na przykład *MSBuild. exe*).
+> Jeśli otrzymasz `MissingMethodException` dla metody Microsoft. CodeAnalysis podczas uruchamiania elementów docelowych kompilacji TextTemplating na serwerze kompilacji, upewnij się, że zestawy Roslyn znajdują się w katalogu o nazwie *Roslyn* , który znajduje się w tym samym katalogu, co plik wykonywalny kompilacji (na przykład  *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Edytuj plik projektu
 
 Edytuj plik projektu, aby skonfigurować niektóre funkcje programu MSBuild, na przykład importując elementy docelowe transformacji tekstu.
 
-W **Eksplorator rozwiązań**wybierz pozycję **Zwolnij** z menu dostępnego po kliknięciu prawym przyciskiem myszy projektu. Pozwala to na edycję pliku .csproj lub .vbproj w edytorze XML. Po zakończeniu edycji wybierz pozycję Załaduj **ponownie**.
+W **Eksplorator rozwiązań**wybierz pozycję **Zwolnij** z menu dostępnego po kliknięciu prawym przyciskiem myszy projektu. Pozwala to na edycję pliku .csproj lub .vbproj w edytorze XML. Po zakończeniu edycji wybierz pozycję **Załaduj ponownie**.
 
 ## <a name="import-the-text-transformation-targets"></a>Importuj cele transformacji tekstu
 
@@ -75,18 +71,21 @@ W pliku .vbproj lub .csproj znajdź taki wiersz:
 
 Po tym wierszu wstaw import szablonu tekstu:
 
-```xml
-<!-- Optionally make the import portable across VS versions -->
-  <PropertyGroup>
-    <!-- Get the Visual Studio version: -->
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
-    <!-- Keep the next element all on one line: -->
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
+::: moniker range=">=vs-2019"
 
-<!-- This is the important line: -->
-  <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" />
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
+```
+
+::: moniker-end
 
 ## <a name="transform-templates-in-a-build"></a>Przekształcanie szablonów w kompilacji
 
@@ -148,7 +147,7 @@ Jeśli nie dostosowano kroku dostosujesz, ostrzeżenie zostanie zarejestrowane w
 
 ## <a name="customize-the-build-process"></a>Dostosuj proces kompilacji
 
-Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Można zdefiniować zadania, które są wywoływane przed przekształceniem i po nim, ustawiając `$(BeforeTransform)` właściwości `$(AfterTransform)`i:
+Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Można zdefiniować zadania, które są wywoływane przed przekształceniem i po nim, przez ustawienie właściwości `$(BeforeTransform)` i `$(AfterTransform)`:
 
 ```xml
 <PropertyGroup>
@@ -163,9 +162,9 @@ Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Mo
   </Target>
 ```
 
-W `AfterTransform`programie można odwoływać się do list plików:
+W `AfterTransform` można odwoływać się do list plików:
 
-- GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpiły istniejące pliki tylko do `%(GeneratedFiles.ReadOnlyFileOverwritten)` odczytu, będą spełnione. Pliki te można wyewidencjonować z kontroli źródła.
+- GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpiły istniejące pliki tylko do odczytu, wartość `%(GeneratedFiles.ReadOnlyFileOverwritten)` będzie prawdziwa. Pliki te można wyewidencjonować z kontroli źródła.
 
 - NonGeneratedFiles — lista plików tylko do odczytu, które nie zostały nadpisane.
 
@@ -185,7 +184,7 @@ Właściwości te są stosowane tylko przez program MSBuild. Nie wpływają one 
 </ItemGroup>
 ```
 
-Przydatnym folderem do przekierowania `$(IntermediateOutputPath)`jest.
+Przydatnym folderem do przekierowania jest `$(IntermediateOutputPath)`.
 
 Jeśli określisz nazwę pliku wyjściowego, ma pierwszeństwo przed rozszerzeniem określonym w dyrektywie Output w szablonach.
 
@@ -253,7 +252,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue`Pobiera dane z `T4ParameterValues` tylko wtedy, gdy używasz programu MSBuild. Gdy przekształcasz szablon przy użyciu programu Visual Studio, parametry mają wartości domyślne.
+> `ResolveParameterValue` pobiera dane z `T4ParameterValues` tylko w przypadku korzystania z programu MSBuild. Gdy przekształcasz szablon przy użyciu programu Visual Studio, parametry mają wartości domyślne.
 
 ## <a name="msbuild"></a>Korzystanie z właściwości projektu w dyrektywach Assembly i include
 
@@ -286,7 +285,7 @@ Te dyrektywy pobierają wartości z T4parameterValues zarówno w hostach MSBuild
 
 ## <a name="q--a"></a>Pytania i odpowiedzi
 
-**Dlaczego warto przetwarzać szablony na serwerze kompilacji? Zostały już przekształcone szablony w programie Visual Studio przed zapisaniem mojego kodu.**
+**Why czy chcesz przekształcić szablony na serwerze kompilacji? Zostały już przekształcone szablony w programie Visual Studio przed zapisaniem kodu.**
 
 W przypadku zaktualizowania dołączonego pliku lub innego pliku odczytanego przez szablon program Visual Studio nie przekształca pliku automatycznie. Przekształcanie szablonów w ramach kompilacji gwarantuje, że wszystko jest aktualne.
 
@@ -298,19 +297,19 @@ W przypadku zaktualizowania dołączonego pliku lub innego pliku odczytanego prz
 
 - [Szablony tekstu czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md) są przekształcane przez program Visual Studio.
 
-- [Szablony tekstu czasu wykonywania](../modeling/run-time-text-generation-with-t4-text-templates.md) są przekształcane w czasie wykonywania w aplikacji.
+- [Szablony tekstu w czasie wykonywania](../modeling/run-time-text-generation-with-t4-text-templates.md) są przekształcane w czasie wykonywania w aplikacji.
 
 ## <a name="see-also"></a>Zobacz także
 
 ::: moniker range="vs-2017"
 
-- Istnieją dobre wskazówki w szablonie programu MSbuild języka T4 w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
+- Istnieją dobre wskazówki w szablonie programu MSbuild języka T4 w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Community\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Istnieją dobre wskazówki w szablonie programu MSbuild języka T4 w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets*
+- Istnieją dobre wskazówki w szablonie programu MSbuild języka T4 w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets*
 
 ::: moniker-end
 

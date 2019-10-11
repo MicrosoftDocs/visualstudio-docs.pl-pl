@@ -21,45 +21,45 @@ f1_keywords:
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493633"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72015966"
 ---
 # <a name="annotating-structs-and-classes"></a>Dodawanie adnotacji struktur i klas
 
-Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą funkcji adnotacje, przypominają invariants — jest uznawana za tę prawdziwe dowolnego wywołania funkcji i funkcji wejścia/wyjścia, która obejmuje otaczającej strukturze jako parametr lub wartość wyniku.
+Możesz dodawać adnotacje do struktury i składowych klas przy użyciu adnotacji, które działają jak niewarianty — są one uznawane za prawdziwe w przypadku dowolnego wywołania funkcji lub wejścia/wyjścia funkcji, która obejmuje otaczającą strukturę jako parametr lub wartość wynikową.
 
-## <a name="struct-and-class-annotations"></a>Struktury i klasy adnotacji
+## <a name="struct-and-class-annotations"></a>Adnotacje struktury i klasy
 
 - `_Field_range_(low, high)`
 
-     To pole jest z zakresu (włącznie) z `low` do `high`.  Odpowiednikiem `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` zastosowany do obiektu adnotacjami przy użyciu odpowiednich warunków pre lub post.
+     Pole znajduje się w zakresie (włącznie) od `low` do `high`.  Odpowiednik `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` zastosowany do obiektu z adnotacją przy użyciu odpowiednich warunków wstępnych lub post.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     Pola, które ma rozmiar obszaru do zapisu w elementy (lub w bajtach) jako określony przez `size`.
+     Pole, które ma rozmiar zapisywalny w elementach (lub bajtach) określony przez `size`.
 
 - `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     Pola, które ma rozmiar obszaru do zapisu w elementy (lub w bajtach) jako określony przez `size`i `count` tych elementów (w bajtach), które są do odczytu.
+     Pole, które ma zapisywalny rozmiar w elementach (lub bajtach) określony przez `size` i `count` tych elementów (bajtów), które są odczytywane.
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     Pola, które ma elementy readable i writable rozmiar elementów (lub w bajtach) jako określony przez `size`.
+     Pole, które ma zarówno czytelny, jak i zapisywalny rozmiar w elementach (lub bajtach) określony przez `size`.
 
 - `_Field_z_`
 
-     Pole, które zawiera ciąg zakończony znakiem null.
+     Pole, które ma ciąg zakończony znakiem null.
 
 - `_Struct_size_bytes_(size)`
 
-     Ma zastosowanie do deklaracji struktury lub klasy.  Wskazuje, że prawidłowy obiekt tego typu mogą być większe niż zadeklarowanym typem z liczbą bajtów jest określona przez `size`.  Na przykład:
+     Dotyczy deklaracji struktury lub klasy.  Wskazuje, że prawidłowy obiekt tego typu może być większy niż zadeklarowany typ, z liczbą bajtów określoną przez `size`.  Na przykład:
 
     ```cpp
 
@@ -71,7 +71,7 @@ Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą fu
 
     ```
 
-     Rozmiar buforu w bajtach parametr `pM` typu `MyStruct *` zostaje następnie przeniesiony za:
+     Rozmiar buforu w bajtach `pM` typu `MyStruct *` jest następnie traktowany jako:
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -104,11 +104,11 @@ struct MyBuffer
 };
 ```
 
-Informacje w tym przykładzie:
+Uwagi dotyczące tego przykładu:
 
-- `_Field_z_` jest odpowiednikiem `_Null_terminated_`.  `_Field_z_` dla nazwy pola określa, że pole nazwy jest ciąg zakończony znakiem null.
-- `_Field_range_` Aby uzyskać `bufferSize` Określa, że wartość `bufferSize` powinny być w ciągu 1 i `MaxBufferSize` (oba włącznie).
-- Wyniki zakończenia `_Struct_size_bytes_` i `_Field_size_` adnotacje są równoważne. Struktury lub klasy, które mają podobny układ `_Field_size_` jest łatwiej odczytywać i utrzymywania, ponieważ ma ona mniejszą liczbę odwołań i obliczeń niż równowartość `_Struct_size_bytes_` adnotacji. `_Field_size_` nie wymaga konwersji na rozmiar w bajtach. Jeśli rozmiar w bajtach jest jedyną opcją, na przykład dla pola wskaźnika void `_Field_size_bytes_` mogą być używane. Jeśli oba `_Struct_size_bytes_` i `_Field_size_` istnieje, oba będą dostępne dla narzędzia. Jest to narzędzie co należy zrobić, jeśli dwa adnotacji nie zgadzają się.
+- `_Field_z_` jest równoważne z `_Null_terminated_`.  `_Field_z_` dla pola Nazwa Określa, że pole Nazwa jest ciągiem zakończonym wartością null.
+- `_Field_range_` dla `bufferSize` określa, że wartość `bufferSize` powinna należeć do zakresu od 1 do `MaxBufferSize` (włącznie).
+- Końcowe wyniki adnotacji `_Struct_size_bytes_` i `_Field_size_` są równoważne. W przypadku struktur lub klas, które mają podobny układ, `_Field_size_` jest łatwiejsze do odczytania i konserwowania, ponieważ ma mniejszą liczbę odwołań i obliczeń niż odpowiednik adnotacji `_Struct_size_bytes_`. `_Field_size_` nie wymaga konwersji do rozmiaru bajtowego. Jeśli rozmiar bajtu jest jedyną opcją, na przykład dla pola wskaźnika void, można użyć `_Field_size_bytes_`. Jeśli istnieje zarówno `_Struct_size_bytes_`, jak i `_Field_size_`, oba będą dostępne dla narzędzi. Jest to narzędzie, co należy zrobić, jeśli dwa adnotacje nie zgadzają się.
 
 ## <a name="see-also"></a>Zobacz też
 

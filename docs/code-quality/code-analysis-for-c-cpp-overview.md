@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b0e29f6a9a502054b59fc7313c3eff0565f938
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: MT
+ms.openlocfilehash: 493db26aed1a4e5f41acdd054dba266577159809
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919886"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018491"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu dla języka CC++ /przegląd
 
@@ -50,7 +50,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>Obsługa #pragma
 
-Można użyć `#pragma` dyrektywy do traktowania ostrzeżeń jako błędów, włączania lub wyłączania ostrzeżeń oraz pomijania ostrzeżeń dla poszczególnych wierszy kodu. Aby uzyskać więcej informacji, zobacz [dyrektywy pragma i słowo kluczowe __pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+Można użyć dyrektywy `#pragma`, aby traktować ostrzeżenia jako błędy; Włącza lub wyłącza ostrzeżenia oraz pomija ostrzeżenia dla poszczególnych wierszy kodu. Aby uzyskać więcej informacji, zobacz [dyrektywy pragma i słowo kluczowe __pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Obsługa adnotacji
 
@@ -62,12 +62,12 @@ Można wymagać, aby wszystkie operacje ewidencjonowania kodu źródłowego spe�
 
 ## <a name="team-build-integration"></a>Integracja kompilacji zespołowej
 
-Możesz użyć zintegrowanych funkcji systemu kompilacji, aby uruchomić Narzędzie analizy kodu jako krok [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] procesu kompilacji. Aby uzyskać więcej informacji, zobacz [potoki Azure](/azure/devops/pipelines/index?view=vsts).
+Możesz użyć zintegrowanych funkcji systemu kompilacji, aby uruchomić Narzędzie analizy kodu jako krok procesu kompilacji [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Aby uzyskać więcej informacji, zobacz [potoki Azure](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Szybki start: Analiza kodu dla języka C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Przewodnik: Analizowanie kodu CC++ /Code dla wad](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Szybki start: Analiza kodu dla C/C++](quick-start-code-analysis-for-c-cpp.md)
+- [Przewodnik: Analizowanie kodu CC++ /Code dla wad @ no__t-1
 - [Analiza kodu C/C++ — ostrzeżenia](code-analysis-for-c-cpp-warnings.md)
 - [Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++](using-the-cpp-core-guidelines-checkers.md)
 - [C++Informacje dotyczące najważniejszych wskazówek dotyczących sprawdzania](code-analysis-for-cpp-corecheck.md)
