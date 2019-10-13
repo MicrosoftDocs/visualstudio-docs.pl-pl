@@ -1,7 +1,7 @@
 ---
 title: Utworzenie instalacji sieciowej
 description: Dowiedz się, jak utworzyć punkt instalacji sieciowej dla wdrażania programu Visual Studio w przedsiębiorstwie.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 521b29f87db6379a011a0b46dfd1405b374ab9ba
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018878"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289655"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
@@ -39,7 +39,7 @@ Pobierz plik programu inicjującego dla używanej wersji programu Visual Studio.
 
 Aby uzyskać program inicjujący dla programu Visual Studio 2017, zobacz stronę pobierania [poprzednich wersji programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) , aby uzyskać szczegółowe informacje o tym, jak to zrobić.
 
-Plik wykonywalny instalatora @ no__t-0or jest bardziej szczegółowy, a program inicjujący @ no__t-1should odpowiada jednemu z następujących elementów.
+Plik wykonywalny instalatora @ no__t-0or jest bardziej szczegółowy, a program inicjujący @ no__t-1should pasuje lub może być podobny do jednego z następujących.
 
 | Wersja | Nazwa pliku |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Inne obsługiwane programu inicjujące obejmują **vs_feedbackclient. exe**, **v
 
 ::: moniker range="vs-2019"
 
-Ustawienia pliku wykonywalnego&mdash;lub dokładniej, plik inicjujący&mdash;musi odpowiadać jednej z następujących czynności.
+Plik wykonywalny instalatora @ no__t-0or jest bardziej szczegółowy, a program inicjujący @ no__t-1should jest zgodny z jedną z następujących elementów.
 
 |Wersja | Pobieranie|
 |-------------|-----------------------|
@@ -64,6 +64,9 @@ Ustawienia pliku wykonywalnego&mdash;lub dokładniej, plik inicjujący&mdash;mus
 Inne obsługiwane programu inicjujące obejmują [vs_TeamExplorer. exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent. exe](https://aka.ms/vs/16/release/vs_testagent.exe)i [vs_testcontroller. exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
 ::: moniker-end
+
+>[!TIP]
+>Jeśli wcześniej pobrano plik inicjujący i chcesz sprawdzić jego wersję, poniżej przedstawiono sposób. W systemie Windows otwórz Eksploratora plików, kliknij prawym przyciskiem myszy plik programu inicjującego, wybierz polecenie **Właściwości**, wybierz kartę **szczegóły** , a następnie Wyświetl numer **wersji produktu** . Aby dopasować tę liczbę do wersji programu Visual Studio, zobacz stronę [numery kompilacji i daty wydania programu Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ## <a name="create-an-offline-installation-folder"></a>Utwórz folder instalacji w trybie offline
 
