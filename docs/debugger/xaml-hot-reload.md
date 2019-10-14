@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5e70d4ec2831df18ce1b100e70730e2978201e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 5e49049d05a285889c54906534200acadaf2397e
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186573"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306211"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio
 
@@ -47,13 +47,14 @@ Na poniższej ilustracji przedstawiono użycie aktywnego drzewa wizualnego, aby 
 
 Poniżej przedstawiono znane ograniczenia dotyczące gorącego ładowania kodu XAML. Aby obejść wszystkie ograniczenia, z których korzystasz, Zatrzymaj debuger, a następnie ukończ operację.
 
-|Bieg|WPF|Platforma UWP|Uwagi|
+|Ograniczenie|WPF|Platforma UWP|Uwagi|
 |-|-|-|-|
 |Zdarzenia okablowania do kontrolek, gdy aplikacja jest uruchomiona|Nieobsługiwane|Nieobsługiwane|Zobacz błąd: *Upewnij się, że zdarzenie nie powiodło się*. Należy pamiętać, że w WPF można odwołać się do istniejącej procedury obsługi zdarzeń. W aplikacjach platformy UWP odwoływanie się do istniejącej procedury obsługi zdarzeń nie jest obsługiwane.|
-|Tworzenie obiektów zasobów w słowniku zasobów, takich jak te znajdujące się w pliku/oknie lub pliku *App. XAML* aplikacji|Obsługiwane począwszy od programu Visual Studio 2019 Update 2|Obsługiwane|Przykład: Dodawanie `SolidColorBrush` do słownika zasobów do użycia `StaticResource`jako.</br>Uwaga: Zasoby statyczne, konwertery stylów i inne elementy zapisywane w słowniku zasobów mogą być stosowane/używane podczas korzystania z usługi XAML. Tylko tworzenie zasobu nie jest obsługiwane.</br> Zmiana właściwości słownik `Source` zasobów.|
+|Tworzenie obiektów zasobów w słowniku zasobów, takich jak te znajdujące się w pliku/oknie lub pliku *App. XAML* aplikacji|Obsługiwane począwszy od programu Visual Studio 2019 Update 2|Obsługiwane|Przykład: dodanie `SolidColorBrush` do słownika zasobów do użycia jako `StaticResource`.</br>Uwaga: Zasoby statyczne, konwertery stylów i inne elementy zapisywane w słowniku zasobów mogą być stosowane/używane podczas korzystania z usługi XAML. Tylko tworzenie zasobu nie jest obsługiwane.</br> Zmiana właściwości słownik zasobów `Source`.|
 |Dodawanie nowych kontrolek, klas, okien lub innych plików do projektu, gdy aplikacja jest uruchomiona|Nieobsługiwane|Nieobsługiwane|Brak|
 |Zarządzanie pakietami NuGet (Dodawanie/usuwanie/aktualizowanie pakietów)|Nieobsługiwane|Nieobsługiwane|Brak|
-|Zmiana powiązania danych korzystającego z rozszerzenia znacznika {x:Bind}|Brak|Obsługiwane począwszy od programu Visual Studio 2019|Wymaga to systemu Windows 10 w wersji 1809 (Kompilacja 10.0.17763). Nieobsługiwane w programie Visual Studio 2017 lub starszych wersjach.|
+|Zmiana powiązania danych korzystającego z rozszerzenia znacznika {x:Bind}|ND|Obsługiwane począwszy od programu Visual Studio 2019|Wymaga to systemu Windows 10 w wersji 1809 (Kompilacja 10.0.17763). Nieobsługiwane w programie Visual Studio 2017 lub starszych wersjach.|
+|Zmiana dyrektyw X:UID — nie jest obsługiwana|ND|Nieobsługiwane|Brak|
 
 ## <a name="error-messages"></a>Komunikaty o błędach
 

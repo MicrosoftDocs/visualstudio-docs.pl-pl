@@ -493,37 +493,43 @@
                   displayName: performance warnings
                   href: performance-warnings.md
                 - name: 'CA1800: Nie rzutuj niepotrzebnie'
-                  href: ca1800-do-not-cast-unnecessarily.md
+                  href: ca1800.md
+                - name: 'CA1801: Dokonaj przeglądu nieużywanych parametrów'
+                  href: ca1801.md
                 - name: 'CA1802: Używaj literałów w odpowiednich miejscach'
-                  href: ca1802-use-literals-where-appropriate.md
+                  href: ca1802.md
                 - name: 'CA1804: Usuwaj nieużywane zmienne lokalne'
-                  href: ca1804-remove-unused-locals.md
+                  href: ca1804.md
+                - name: 'CA1806: Nie ignoruj wyników metod'
+                  href: ca1806.md
                 - name: 'CA1809: Unikaj zbyt wielu zmiennych lokalnych'
-                  href: ca1809-avoid-excessive-locals.md
+                  href: ca1809.md
                 - name: 'CA1810: Inicjuj pola statyczne typu referencyjnego śródwierszowo'
-                  href: ca1810-initialize-reference-type-static-fields-inline.md
+                  href: ca1810.md
                 - name: 'CA1811: Unikaj niewywołanego kodu prywatnego'
-                  href: ca1811-avoid-uncalled-private-code.md
+                  href: ca1811.md
                 - name: 'CA1812: Unikaj klas wewnętrznych bez wystąpień'
-                  href: ca1812-avoid-uninstantiated-internal-classes.md
+                  href: ca1812.md
                 - name: 'CA1813: Unikaj niezapieczętowanych atrybutów'
-                  href: ca1813-avoid-unsealed-attributes.md
+                  href: ca1813.md
                 - name: 'CA1814: Wybieraj tablice nieregularne zamiast wielowymiarowych'
-                  href: ca1814-prefer-jagged-arrays-over-multidimensional.md
+                  href: ca1814.md
                 - name: 'CA1815: Przesłaniaj metodę equals i operator równości w typach wartości'
-                  href: ca1815-override-equals-and-operator-equals-on-value-types.md
+                  href: ca1815.md
+                - name: 'CA1816: Poprawnie wywołaj metodę GC.SuppressFinalize'
+                  href: ca1816.md
                 - name: 'CA1819: Właściwości nie powinny zwracać tablic'
-                  href: ca1819-properties-should-not-return-arrays.md
+                  href: ca1819.md
                 - name: 'CA1820: Testuj obecność pustych ciągów przy użyciu długości ciągu'
-                  href: ca1820-test-for-empty-strings-using-string-length.md
+                  href: ca1820.md
                 - name: 'CA1821: Usuwaj puste finalizatory'
-                  href: ca1821-remove-empty-finalizers.md
+                  href: ca1821.md
                 - name: 'CA1822: Oznaczaj składowe jako statyczne'
-                  href: ca1822-mark-members-as-static.md
+                  href: ca1822.md
                 - name: 'CA1823: Unikaj nieużywanych pól prywatnych'
-                  href: ca1823-avoid-unused-private-fields.md
+                  href: ca1823.md
                 - name: 'CA1824: Oznaczaj zestawy za pomocą atrybutu NeutralResourcesLanguageAttribute'
-                  href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                  href: ca1824.md
                 - name: 'CA1825: Unikaj alokacji tablic o zerowej długości'
                   href: ca1825.md
             - name: Ostrzeżenia dotyczące przenośności
@@ -751,11 +757,11 @@
                   displayName: usage warnings
                   href: usage-warnings.md
                 - name: 'CA1801: Dokonaj przeglądu nieużywanych parametrów'
-                  href: ca1801-review-unused-parameters.md
+                  href: ca1801.md
                 - name: 'CA1806: Nie ignoruj wyników metod'
-                  href: ca1806-do-not-ignore-method-results.md
+                  href: ca1806.md
                 - name: 'CA1816: Poprawnie wywołaj metodę GC.SuppressFinalize'
-                  href: ca1816-call-gc-suppressfinalize-correctly.md
+                  href: ca1816.md
                 - name: 'CA2200: Ponowie zgłoś wyjątek, aby zachować szczegóły stosu'
                   href: ca2200-rethrow-to-preserve-stack-details.md
                 - name: 'CA2201: Nie zgłaszaj wyjątków o zastrzeżonych typach'
