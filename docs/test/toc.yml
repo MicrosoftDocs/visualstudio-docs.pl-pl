@@ -120,13 +120,13 @@
     - name: Wprowadzenie
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: Nowości dotyczące funkcji Live Unit Testing
+    - name: Co nowego?
       href: live-unit-testing-whats-new.md
-    - name: Rozpoczynanie pracy z funkcją Live Unit Testing
+    - name: Wprowadzenie
       href: live-unit-testing-start.md
-    - name: Używanie funkcji Live Unit Testing w wersji Enterprise Edition
+    - name: Konfigurowanie i używanie
       href: live-unit-testing.md
-    - name: Live Unit Testing — często zadawane pytania
+    - name: Najczęściej zadawane pytania
       href: live-unit-testing-faq.md
 - name: Internetowe testowanie wydajnościowe i obciążeniowe
   items:
