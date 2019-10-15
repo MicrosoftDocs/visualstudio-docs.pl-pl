@@ -32,7 +32,6 @@
 ##### [CloudPilot](vs-cloudpilot.md)
 ##### [Enterprise Mobility & Security](vs-ems.md)
 ##### [Microsoft 365](vs-m365.md)
-##### [Subskrypcja dewelopera usługi Office 365](vs-office-dev.md)
 ##### [Subskrypcja usługi Office 365](vs-office365.md)
 ##### [Parasoft](vs-parasoft.md)
 ##### [Power BI Pro](vs-pbi.md)
