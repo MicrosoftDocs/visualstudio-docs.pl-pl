@@ -170,8 +170,8 @@
   items:
     - name: Programowanie
       items:
-        - name: 'Indeks: pisanie kodu za pomocą środowiska IDE'
-          href: ide/index-writing-code.md
+        - name: Wprowadzenie
+          href: ide/index-writing-code.yml
         - name: Poruszanie się w środowisku IDE
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: Rozwiązania i projekty
