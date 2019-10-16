@@ -44,8 +44,6 @@
       items:
         - name: Używanie punktów przerwania
           href: using-breakpoints.md
-        - name: Używanie punktów śledzenia
-          href: using-tracepoints.md
         - name: Rozwiązywanie problemów z punktami przerwania
           href: troubleshooting-breakpoints.md
     - name: Inspekcja danych
@@ -138,6 +136,8 @@
               href: xaml-hot-reload-troubleshooting.md
         - name: 'Funkcja Edytuj i kontynuuj nieobsługiwana w przypadku języka F#'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: Rejestrowanie w oknie danych wyjściowych
+      href: using-tracepoints.md
     - name: Wyświetlanie danych debugera
       items:
         - name: Moduły
@@ -238,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Widoki niestandardowe (zarządzane)
               items:
-                - name: Tworzenie niestandardowych widoków obiektów
+                - name: Tworzenie niestandardowych widoków obiektów zarządzanych
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Określanie zawartości do wyświetlenia w debugerze
                   href: using-the-debuggerdisplay-attribute.md
