@@ -1,5 +1,5 @@
 ---
-title: 'CA1709: Identyfikatory powinny mieć prawidłową wielkość liter'
+title: 'CA1709: Identyfikatory powinny być zapisywane z uwzględnieniem wielkości liter'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,31 +14,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: bbc066709fc5f90944b91130c1ef57a5120b1844
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234149"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443940"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identyfikatory powinny mieć prawidłową wielkość liter
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identyfikatory powinny być zapisywane z uwzględnieniem wielkości liter
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Przerywanie — gdy jest wywoływany dla zestawów, przestrzeni nazw, typów, elementów członkowskich i parametrów.<br /><br /> Rozdzielenie — w przypadku uruchomienia parametrów typu ogólnego.|
 
 ## <a name="cause"></a>Przyczyna
 
 Nazwa identyfikatora nie ma poprawnej wielkości liter.
 
-\- lub —
+\- lub-
 
 Nazwa identyfikatora zawiera dwuliterowy akronim, a druga litera jest małymi literami.
 
-\- lub —
+\- lub-
 
 Nazwa identyfikatora zawiera akronim trzech lub więcej wielkich liter.
 
@@ -46,11 +46,11 @@ Nazwa identyfikatora zawiera akronim trzech lub więcej wielkich liter.
 
 Konwencje nazewnictwa zapewniają typowy wygląd bibliotek przeznaczonych dla środowiska uruchomieniowego języka wspólnego. Ta spójność zmniejsza krzywą uczenia, która jest wymagana w przypadku nowych bibliotek oprogramowania, i zwiększa zaufanie klienta, że biblioteka została opracowana przez kogoś, kto ma doświadczenie w tworzeniu kodu zarządzanego.
 
-Według Konwencji nazwy parametrów używają notacji CamelCase wielkości liter, a przestrzeń nazw, typ i nazwy elementów członkowskich używają wielkości liter w Pascalu. W nazwie notacji CamelCase — pierwsza litera jest małymi literami, a pierwsza litera dowolnego wyrazu w nazwie jest wielką literą. Przykłady nazw `packetSniffer` `ioFile`notacji CamelCase —, i `fatalErrorCode`. W nazwie z wielkością liter w języku Pascal pierwsza litera ma wielkie litery, a pierwsza litera dowolnego wyrazu w nazwie jest wielką literą. Przykłady nazw z wielkością liter w języku `PacketSniffer`Pascal `IOFile`to, `FatalErrorCode`i.
+Według Konwencji nazwy parametrów używają notacji CamelCase wielkości liter, a przestrzeń nazw, typ i nazwy elementów członkowskich używają wielkości liter w Pascalu. W nazwie notacji CamelCase — pierwsza litera jest małymi literami, a pierwsza litera dowolnego wyrazu w nazwie jest wielką literą. Przykłady @no__t nazw notacji CamelCase-0, `ioFile` i `fatalErrorCode`. W nazwie z wielkością liter w języku Pascal pierwsza litera ma wielkie litery, a pierwsza litera dowolnego wyrazu w nazwie jest wielką literą. Przykłady nazw z wielkością liter w języku Pascala to `PacketSniffer`, `IOFile` i `FatalErrorCode`.
 
 Ta reguła dzieli nazwę na wyrazy w oparciu o wielkość liter i sprawdza wszystkie dwuliterowe słowa w odniesieniu do listy typowych wyrazów dwuliterowych, takich jak "in" lub "my". Jeśli dopasowanie nie zostanie znalezione, przyjmuje się, że słowo jest akronimem. Ponadto ta reguła zakłada, że znaleziono akronim, gdy nazwa zawiera cztery wielkie litery w wierszu lub trzy wielkie litery w wierszu na końcu nazwy.
 
-Zgodnie z Konwencją, dwuliterowe akronimy używają wszystkich wielkich liter i akronimów trzech lub więcej znaków używają wielkości liter w Pascalu. W poniższych przykładach użyto tej konwencji nazewnictwa: "DB", "CR", "CPA" i "ECMA". Poniższe przykłady naruszają Konwencję: "IO", "XML" i "DoD" oraz dla nazw nieparametrów, "XP" i "cpl".
+Zgodnie z Konwencją, dwuliterowe akronimy używają wszystkich wielkich liter i akronimów trzech lub więcej znaków używają wielkości liter w Pascalu. W poniższych przykładach użyto tej konwencji nazewnictwa: "DB", "CR", "CPA" i "ECMA". Poniższe przykłady naruszają Konwencję: "IO", "XML" i "DoD" oraz dla nazw niebędących parametrami, "XP" i "cpl".
 
 Wartość "ID" jest specjalną wielkością liter, aby spowodować naruszenie tej reguły. Element "ID" nie jest akronimem, ale jest skrótem dla elementu "Identification".
 
@@ -62,8 +62,8 @@ Zmień nazwę tak, aby była uwzględniana wielkość liter.
 
 W przypadku posiadania własnych konwencji nazewnictwa można bezpiecznie pominąć to ostrzeżenie lub, jeśli identyfikator reprezentuje poprawną nazwę, na przykład nazwę firmy lub technologię.
 
-Możesz również dodać określone terminy, skróty i akronimy do słownika niestandardowego analizy kodu. Warunki określone w słowniku niestandardowym nie spowodują naruszeń tej reguły. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie słownika](../code-quality/how-to-customize-the-code-analysis-dictionary.md)analizy kodu.
+Możesz również dodać określone terminy, skróty i akronimy do słownika niestandardowego analizy kodu. Warunki określone w słowniku niestandardowym nie spowodują naruszeń tej reguły. Aby uzyskać więcej informacji, zobacz [How to: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA1708 Identyfikatory powinny różnić się więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+[CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

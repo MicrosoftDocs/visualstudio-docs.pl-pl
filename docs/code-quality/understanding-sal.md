@@ -8,12 +8,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 61a1f74d964c2d6f43608f23b9898054048bb86b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e3740b9a7544d6cc6d5b9eceb548ae66e7d3f474
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018245"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445597"
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 
@@ -82,7 +82,7 @@ Ta implementacja zawiera typowy błąd poza jedną. Na szczęście kod autora za
 ### <a name="sal-basics"></a>Podstawowe informacje dotyczące SAL
 SAL definiuje cztery podstawowe rodzaje parametrów, które są podzielone według wzorca użycia.
 
-|Category|Adnotacja parametru|Opis|
+|Kategoria|Adnotacja parametru|Opis|
 |--------------|--------------------------|-----------------|
 |**Wejście do wywołanej funkcji**|`_In_`|Dane są przesyłane do wywołanej funkcji i są traktowane jako tylko do odczytu.|
 |**Wejście do wywoływanej funkcji i wyjście do obiektu wywołującego**|`_Inout_`|Użyteczne dane są przesyłane do funkcji i potencjalnie modyfikowane.|
@@ -118,7 +118,7 @@ W przykładach narzędzie do analizy Visual Studio Code jest używane razem z ad
 
     > **C6387 nieprawidłowa wartość parametru** "Pinta" może mieć wartość "0": to nie jest zgodne ze specyfikacją funkcji "InCallee".
 
-### <a name="example-the-_in_-annotation"></a>Przykład: Adnotacja \_In @ no__t-1
+### <a name="example-the-_in_-annotation"></a>Przykład: adnotacja \_In @ no__t-1
 
 Adnotacja `_In_` wskazuje, że:
 
@@ -156,7 +156,7 @@ void BadInCaller()
 
 Jeśli używasz analizy Visual Studio Code w tym przykładzie, sprawdza, czy wywołujący przekażą wskaźnik o wartości innej niż null do zainicjowanego buforu dla `pInt`. W tym przypadku wskaźnik `pInt` nie może mieć wartości NULL.
 
-### <a name="example-the-_in_opt_-annotation"></a>Przykład: Adnotacja \_In @ no__t-1opt @ no__t-2
+### <a name="example-the-_in_opt_-annotation"></a>Przykład: \_In @ no__t-1opt @ no__t-2
 
 `_In_opt_` jest taka sama jak `_In_`, z tą różnicą, że parametr wejściowy może mieć wartość NULL i dlatego funkcja powinna ją sprawdzić.
 
@@ -184,7 +184,7 @@ void InOptCaller()
 
 Visual Studio Code Analysis sprawdza, czy funkcja sprawdza wartość NULL przed uzyskaniem dostępu do buforu.
 
-### <a name="example-the-_out_-annotation"></a>Przykład: Adnotacja \_Out @ no__t-1
+### <a name="example-the-_out_-annotation"></a>Przykład: adnotacja \_Out @ no__t-1
 
 `_Out_` obsługuje typowy scenariusz, w którym jest przenoszona wskaźnik o wartości innej niż NULL, który wskazuje na bufor elementu, i funkcja Inicjuje element. Obiekt wywołujący nie musi inicjować buforu przed wywołaniem; wywoływana funkcja niesie obietnice zwiększenia, aby ją zainicjować przed zwróceniem.
 
@@ -210,7 +210,7 @@ void OutCaller()
 
 Narzędzie do analizy Visual Studio Code sprawdza, czy obiekt wywołujący przekazuje wskaźnik o wartości innej niż NULL do buforu dla `pInt` i że bufor jest inicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_out_opt_-annotation"></a>Przykład: Adnotacja \_Out @ no__t-1opt @ no__t-2
+### <a name="example-the-_out_opt_-annotation"></a>Przykład: \_Out @ no__t-1opt @ no__t-2
 
 `_Out_opt_` jest taka sama jak `_Out_`, z tą różnicą, że parametr może mieć wartość NULL i dlatego funkcja powinna ją sprawdzić.
 
@@ -237,7 +237,7 @@ void OutOptCaller()
 
 Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza wartość NULL przed usunięciem odwołania do `pInt`, a jeśli `pInt` nie ma wartości NULL, to bufor zostanie zainicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_inout_-annotation"></a>Przykład: Adnotacja \_Inout @ no__t-1
+### <a name="example-the-_inout_-annotation"></a>Przykład: adnotacja \_Inout @ no__t-1
 
 `_Inout_` służy do dodawania adnotacji do parametru wskaźnika, który może zostać zmieniony przez funkcję. Wskaźnik musi wskazywać prawidłowe dane zainicjowane przed wywołaniem, a nawet w przypadku zmiany, musi mieć prawidłową wartość zwracaną. Adnotacja określa, że funkcja może swobodnie odczytywać i zapisywać w buforze jednego elementu. Obiekt wywołujący musi dostarczyć bufor i zainicjować go.
 
@@ -268,7 +268,7 @@ void BadInOutCaller()
 
 Visual Studio Code Analysis sprawdza, czy obiekty wywołujące przechodzą wskaźnik o wartości innej niż NULL do zainicjowanego buforu dla `pInt` i że przed zwróceniem `pInt` nadal jest niezerowe i bufor jest zainicjowany.
 
-### <a name="example-the-_inout_opt_-annotation"></a>Przykład: Adnotacja \_Inout @ no__t-1opt @ no__t-2
+### <a name="example-the-_inout_opt_-annotation"></a>Przykład: \_Inout @ no__t-1opt @ no__t-2
 
 `_Inout_opt_` jest taka sama jak `_Inout_`, z tą różnicą, że parametr wejściowy może mieć wartość NULL i dlatego funkcja powinna ją sprawdzić.
 
@@ -297,7 +297,7 @@ void InOutOptCaller()
 
 Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza wartość NULL przed uzyskaniem dostępu do buforu, a jeśli `pInt` nie ma wartości NULL, to bufor zostanie zainicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_outptr_-annotation"></a>Przykład: Adnotacja \_Outptr @ no__t-1
+### <a name="example-the-_outptr_-annotation"></a>Przykład: adnotacja \_Outptr @ no__t-1
 
 `_Outptr_` służy do dodawania adnotacji do parametru, który jest przeznaczony do zwrócenia wskaźnika.  Sam parametr nie powinien mieć wartości NULL, a wywołana funkcja zwraca wskaźnik o wartości innej niż NULL i wskaźnik wskazuje na zainicjowanie danych.
 
@@ -327,7 +327,7 @@ void OutPtrCaller()
 
 Visual Studio Code Analysis sprawdza, czy obiekt wywołujący przekazuje wskaźnik o wartości innej niż NULL dla `*pInt` i że bufor jest inicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_outptr_opt_-annotation"></a>Przykład: Adnotacja \_Outptr @ no__t-1opt @ no__t-2
+### <a name="example-the-_outptr_opt_-annotation"></a>Przykład: \_Outptr @ no__t-1opt @ no__t-2
 
 `_Outptr_opt_` jest taka sama jak `_Outptr_`, z tą różnicą, że parametr jest opcjonalny — obiekt wywołujący może przekazać wskaźnik o wartości NULL dla parametru.
 
@@ -359,7 +359,7 @@ void OutPtrOptCaller()
 
 Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza wartość NULL przed usunięciem odwołania do `*pInt`, i że bufor jest inicjowany przez funkcję przed zwróceniem.
 
-### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Przykład: Adnotacja @no__t 0Success @ no__t-1 w połączeniu z \_Out @ no__t-3
+### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Przykład: adnotacja \_Success @ no__t-1 w połączeniu z \_Out @ no__t-3
 
 Adnotacje można stosować do większości obiektów.  W szczególności można dodać adnotacje do całej funkcji.  Jedną z najbardziej oczywistych cech funkcji jest to, że może ona zakończyć się powodzeniem lub niepowodzeniem. Ale podobnie jak skojarzenie między buforem i jego rozmiarem,C++ C/nie można ekspresować sukces lub Niepowodzenie funkcji. Korzystając z adnotacji `_Success_`, można wypowiedzieć, jak wygląda sukces funkcji.  Parametr do adnotacji `_Success_` jest tylko wyrażeniem, gdy wartość true wskazuje, że funkcja zakończyła się powodzeniem. Wyrażenie może być dowolne, co może obsłużyć Analizator adnotacji. Efekty adnotacji po zwracaniu funkcji są stosowane tylko wtedy, gdy funkcja się powiedzie. W tym przykładzie pokazano, jak `_Success_` współdziała z `_Out_` w celu wykonania odpowiednich czynności. Możesz użyć słowa kluczowego `return`, aby przedstawić wartość zwracaną.
 

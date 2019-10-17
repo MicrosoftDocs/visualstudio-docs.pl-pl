@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 875e0b4052cdc7287b264899620d4e083ac6b153
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234080"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443875"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identyfikatory powinny mieć poprawny prefiks
 
@@ -31,7 +31,7 @@ ms.locfileid: "71234080"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Przerywanie — gdy jest uruchamiany w interfejsach.<br /><br /> Rozdzielenie — gdy zostanie zgłoszone w parametrach typu ogólnego.|
 
 ## <a name="cause"></a>Przyczyna
@@ -71,7 +71,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> Ta reguła nigdy nie jest wyzwalana dla parametru `T`typu o nazwie, `Collection<T>`na przykład.
+> Ta reguła nigdy nie jest wyzwalana dla parametru typu o nazwie `T`, na przykład `Collection<T>`.
 
 ### <a name="api-surface"></a>Powierzchnia interfejsu API
 

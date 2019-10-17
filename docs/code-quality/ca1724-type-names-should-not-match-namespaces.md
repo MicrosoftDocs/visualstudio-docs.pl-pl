@@ -1,5 +1,5 @@
 ---
-title: 'CA1724: Nazwy typów nie powinny być takie same jak nazwy przestrzeni nazw'
+title: 'CA1724: Nazwy typów nie powinny odpowiadać nazwom pól'
 ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2e5ab83a73da6035df985b93294f850b5a49248f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233854"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443450"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Nazwy typów nie powinny być zgodne z przestrzeniami nazw
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: nazwy typów nie powinny być zgodne z przestrzeniami nazw
 
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna

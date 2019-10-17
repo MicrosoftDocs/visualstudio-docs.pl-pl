@@ -1,5 +1,5 @@
 ---
-title: 'CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter'
+title: 'CA1701: Wyrazy złożone ciągu zasobu należy zapisywać z uwzględnieniem wielkości liter'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c5d7aa3c29ca8ba82f6c50b070c5210cf10d1884
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234362"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443928"
 ---
-# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter
+# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Wyrazy złożone ciągu zasobu należy zapisywać z uwzględnieniem wielkości liter
 
 |||
 |-|-|
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1701|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
@@ -48,8 +48,8 @@ Zmień słowo tak, aby była uwzględniana wielkość liter.
 
 Domyślnie używana jest wersja angielskojęzyczna (EN) modułu sprawdzania pisowni. Jeśli chcesz zmienić język sprawdzania pisowni, możesz to zrobić, dodając jeden z następujących atrybutów do pliku *AssemblyInfo.cs* lub *AssemblyInfo. vb* :
 
-- Użyj <xref:System.Reflection.AssemblyCultureAttribute> , aby określić kulturę, jeśli zasoby znajdują się w zestawie satelickim.
-- Użyj <xref:System.Resources.NeutralResourcesLanguageAttribute> , aby określić *neutralną kulturę* zestawu, jeśli zasoby znajdują się w tym samym zestawie, w którym znajduje się kod.
+- Użyj <xref:System.Reflection.AssemblyCultureAttribute>, aby określić kulturę, jeśli zasoby znajdują się w zestawie satelickim.
+- Użyj <xref:System.Resources.NeutralResourcesLanguageAttribute>, aby określić *neutralną kulturę* zestawu, jeśli zasoby znajdują się w tym samym zestawie, w którym znajduje się kod.
 
 > [!IMPORTANT]
 > W przypadku ustawienia kultury na coś innego niż kultura oparta na języku angielskim ta reguła analizy kodu jest dyskretnie wyłączona.
@@ -58,13 +58,13 @@ Domyślnie używana jest wersja angielskojęzyczna (EN) modułu sprawdzania piso
 
 Jeśli obie części wyrazu złożonego są rozpoznawane przez słownik pisowni, można bezpiecznie pominąć ostrzeżenie z tej reguły, a zamiarem jest użycie dwóch wyrazów.
 
-Możesz również dodać wyrazy złożone do słownika niestandardowego dla narzędzia sprawdzania pisowni. Słowa w słowniku niestandardowym nie powodują naruszeń. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie słownika](../code-quality/how-to-customize-the-code-analysis-dictionary.md)analizy kodu.
+Możesz również dodać wyrazy złożone do słownika niestandardowego dla narzędzia sprawdzania pisowni. Słowa w słowniku niestandardowym nie powodują naruszeń. Aby uzyskać więcej informacji, zobacz [How to: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1702: W wyrazach złożonych należy poprawnie uwzględniać wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 - [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Identyfikatory powinny różnić się więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Zobacz także
 

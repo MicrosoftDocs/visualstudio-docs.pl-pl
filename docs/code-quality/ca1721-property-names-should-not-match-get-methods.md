@@ -1,5 +1,5 @@
 ---
-title: 'CA1721: Nazwy właściwości nie powinny być takie same jak nazwy metod Get'
+title: 'CA1721: Nazwy właściwości nie powinny odpowiadać metodom Get'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 805ceb7abf7096df29894a23be6c8e7b1f6bd5b2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 719f5ffe3cd3fd7a897aeaff270a1e32661ae590
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233907"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438939"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Nazwy właściwości nie powinny być takie same jak nazwy metod Get
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Nazwy właściwości nie powinny odpowiadać metodom Get
 
 |||
 |-|-|
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
 |CheckId|CA1721|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -75,4 +75,4 @@ Poniższy przykład zawiera metodę i właściwość, która narusza tę reguł�
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1024: Użyj właściwości, jeśli to konieczne](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Używaj właściwości wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1024-use-properties-where-appropriate.md)

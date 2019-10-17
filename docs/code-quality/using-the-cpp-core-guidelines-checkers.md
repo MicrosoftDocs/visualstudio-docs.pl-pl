@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 57c8d6daf75987bfb5c6a6642b89f198693a5dce
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018418"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445654"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
@@ -55,11 +55,11 @@ int main()
 
 Ten przykład ilustruje kilka ostrzeżeń, które mogą znaleźć C++ podstawowe reguły sprawdzania:
 
-- C26494 jest typem reguły. 5: Zawsze Inicjuj obiekt.
+- C26494 jest typem reguły. 5: zawsze Inicjuj obiekt.
 
-- C26485 jest zakresem reguł. 3: Brak zanikają tablicy do wskaźnika.
+- C26485 jest zakresem reguł. 3: brak zanikania tablicy do wskaźnika.
 
-- C26481 jest granicami reguł. 1: Nie używaj arytmetyki wskaźnika. Zamiast nich należy używać słów kluczowych `span`.
+- C26481 jest zakresem reguł. 1: nie używaj arytmetyki wskaźnika. Zamiast nich należy używać słów kluczowych `span`.
 
 Jeśli C++ podstawowe zestaw reguł analizy kodu są instalowane i włączane podczas kompilowania tego kodu, pierwsze dwa ostrzeżenia są wyjściowe, ale trzeci jest pomijany. Oto dane wyjściowe kompilacji z przykładowego kodu:
 

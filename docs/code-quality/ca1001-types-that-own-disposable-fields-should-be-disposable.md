@@ -1,5 +1,5 @@
 ---
-title: 'CA1001: Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji'
+title: 'CA1001: Typy, które posiadają pola usuwalne, powinny być usuwalne'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,30 +17,30 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bda8fc80992a2246c30e28582eb93b4624ab81c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f49624e4e39bb0b3c1a0c1be7f32e797536d30eb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236694"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431793"
 ---
-# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji
+# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Typy, które posiadają pola usuwalne, powinny być usuwalne
 
 |||
 |-|-|
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |CheckId|CA1001|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Bez przerywania — Jeśli typ nie jest widoczny poza zestawem.<br /><br /> Przerywanie — Jeśli typ jest widoczny poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
-Klasa deklaruje i implementuje pole wystąpienia, które jest <xref:System.IDisposable?displayProperty=fullName> typem, a Klasa nie implementuje. <xref:System.IDisposable>
+Klasa deklaruje i implementuje pole wystąpienia, które jest typu <xref:System.IDisposable?displayProperty=fullName>, a Klasa nie implementuje <xref:System.IDisposable>.
 
 ## <a name="rule-description"></a>Opis reguły
-Klasa implementuje <xref:System.IDisposable> interfejs do usuwania niezarządzanych zasobów, których jest właścicielem. Pole wystąpienia, które jest <xref:System.IDisposable> typem wskazuje, że pole jest właścicielem niezarządzanego zasobu. Klasa, która deklaruje <xref:System.IDisposable> pole pośrednio jest właścicielem niezarządzanego zasobu i powinna <xref:System.IDisposable> implementować interfejs. Jeśli Klasa nie jest bezpośrednio własnością żadnych niezarządzanych zasobów, nie należy implementować finalizatora.
+Klasa implementuje interfejs <xref:System.IDisposable> do usuwania niezarządzanych zasobów, których jest właścicielem. Pole wystąpienia, które jest typu <xref:System.IDisposable> wskazuje, że pole jest właścicielem niezarządzanego zasobu. Klasa, która deklaruje pole <xref:System.IDisposable> pośrednio jest właścicielem niezarządzanego zasobu i powinna implementować interfejs <xref:System.IDisposable>. Jeśli Klasa nie jest bezpośrednio własnością żadnych niezarządzanych zasobów, nie należy implementować finalizatora.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
-Aby naprawić naruszenie tej reguły, zaimplementuj <xref:System.IDisposable> i <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> z metody wywołać <xref:System.IDisposable.Dispose%2A> metodę pola.
+Aby naprawić naruszenie tej reguły, Implementuj <xref:System.IDisposable> i z metody <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Wywołaj metodę <xref:System.IDisposable.Dispose%2A> pola.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 Nie pomijaj ostrzeżeń dla tej reguły.
@@ -52,10 +52,10 @@ Poniższy przykład pokazuje klasę, która narusza regułę i klasę, która sp
 [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
 
 ## <a name="related-rules"></a>Powiązane reguły
-[CA2213 Pola jednorazowe powinny zostać usunięte](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+[CA2213: Pola możliwe do likwidacji powinny zostać zlikwidowane](../code-quality/ca2213.md)
 
-[CA2216 Typy jednorazowe powinny deklarować finalizator](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216: Typy możliwe do likwidacji powinny deklarować finalizator](../code-quality/ca2216.md)
 
-[CA2215 Metody Dispose powinny wywoływać metodę Dispose klasy bazowej](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+[CA2215: Metody Dispose powinny wywoływać metodę Dispose klasy podstawowej](../code-quality/ca2215.md)
 
-[CA1049: Typy, które są właścicielami zasobów natywnych, powinny być jednorazowe](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: Typy z zasobami natywnymi powinny być możliwe do likwidacji](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

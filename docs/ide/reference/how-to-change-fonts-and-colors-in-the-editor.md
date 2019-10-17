@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ee1fced0b04ae058f05dc46e4414b76b0f506213
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605403"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381002"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Instrukcje: Zmień czcionki i kolory dla edytora w programie Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Instrukcje: zmiana czcionek i kolorów dla edytora w programie Visual Studio
 
 Można zmienić domyślną krój czcionki, dostosować rozmiar czcionki i zmienić kolor pierwszego planu i tła dla różnych **elementów wyświetlania** tekstu w edytorze kodu. Po zmianie ustawień czcionki należy pamiętać o następujących kwestiach:
 
@@ -29,13 +29,11 @@ Można zmienić domyślną krój czcionki, dostosować rozmiar czcionki i zmieni
 
 - Nazwy czcionek o stałej szerokości są wyświetlane pogrubioną czcionką.
 
-- Opcje **pierwszego planu elementu**, **tła elementu**i pogrubienia można ustawić dla każdego typu elementu tekstowego. Na przykład jeśli zmienisz kolory i wybierzesz  pogrubienie dla **komentarzy** i **zakładek**, nie ma to żadnego oddziaływania.
+- Opcje **pierwszego planu elementu**, **tła elementu**i **pogrubienia** można ustawić dla każdego typu elementu tekstowego. Na przykład jeśli zmienisz kolory i wybierzesz **pogrubienie** dla **komentarzy** i **zakładek**, nie ma to żadnego oddziaływania.
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Zmień domyślną krój i rozmiar czcionki oraz kolory
 
-1. Wybierz **Opcje** z menu **Narzędzia** , a następnie w folderze **środowisko** wybierz pozycję **czcionki i kolory**.
-
-     [Czcionki i kolory, środowisko, opcje](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) zostanie otwarte okno dialogowe.
+1. Wybierz **Opcje** z menu **Narzędzia** . W obszarze **środowisko**wybierz pozycję [czcionki i kolory](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 2. W obszarze **Pokaż ustawienia dla**wybierz pozycję **Edytor tekstu**.
 
@@ -51,4 +49,4 @@ Można zmienić domyślną krój czcionki, dostosować rozmiar czcionki i zmieni
 ## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Instrukcje: Zmień czcionki i kolory w programie Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Instrukcje: zmiana czcionek i kolorów w programie Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

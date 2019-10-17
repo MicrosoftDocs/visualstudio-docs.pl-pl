@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2677c2ef5342b795bb684f3ab06bc7cf5195cf7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 64fd1aee2a778c72a81f82a0d435ce37d408c9a5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233895"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443803"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identyfikatory nie powinny zawierać nazw typów
 
@@ -27,7 +27,7 @@ ms.locfileid: "71233895"
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -42,21 +42,21 @@ Domyślnie ta reguła sprawdza tylko widoczne na zewnątrz elementy członkowski
 
 ## <a name="rule-description"></a>Opis reguły
 
-Nazwy parametrów i składowych są lepiej używane do przekazywania ich znaczenia niż opisywanie ich typu, który powinien być udostępniany przez narzędzia deweloperskie. W przypadku nazw członków, jeśli nazwa typu danych musi być użyta, należy użyć nazwy niezależnej od języka, a nie dla konkretnego języka. Na przykład zamiast nazwy C# `int`typu, należy użyć nazwy typu danych niezależnej od języka,. `Int32`
+Nazwy parametrów i składowych są lepiej używane do przekazywania ich znaczenia niż opisywanie ich typu, który powinien być udostępniany przez narzędzia deweloperskie. W przypadku nazw członków, jeśli nazwa typu danych musi być użyta, należy użyć nazwy niezależnej od języka, a nie dla konkretnego języka. Na przykład zamiast nazwy C# typu `int`, użyj nazwy typu danych niezależnej od języka, `Int32`.
 
 Każdy token dyskretny w nazwie parametru lub elementu członkowskiego jest sprawdzany pod kątem następujących nazw typów danych specyficznych dla języka:
 
-- Bool
+- Logiczna
 - WChar
 - Int8
 - UInt8
-- Krótkie
+- Wybierak
 - UShort
 - int
 - UInt
 - Liczba całkowita
 - UInteger —
-- Długie
+- Długo
 - ULong
 - Bajt
 - Opatrzon
@@ -89,7 +89,7 @@ Ponadto nazwy parametrów są również sprawdzane pod względem następujących
 - Single
 - Double
 - Wartość dziesiętna
-- Guid
+- Ident
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -118,6 +118,6 @@ Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lu
 ## <a name="related-rules"></a>Powiązane reguły
 
 - [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Identyfikatory powinny różnić się więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707 Identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1719: Nazwy parametrów nie powinny być zgodne z nazwami składowych](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707: Identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1719: Nazwy parametrów nie powinny odpowiadać nazwom składowych](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

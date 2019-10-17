@@ -1,5 +1,5 @@
 ---
-title: 'CA1500: Nazwy zmiennych nie powinny być zgodne z nazwami pól'
+title: 'CA1500: Nazwy zmiennych nie powinny odpowiadać nazwom pól'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc3fbeac6d01b718af2022a09bddb92e9c7c2c6
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3f7e8b0021fc3c318389aa3d6d3f53391b71351f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234569"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443968"
 ---
-# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nazwy zmiennych nie powinny być zgodne z nazwami pól
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nazwy zmiennych nie powinny odpowiadać nazwom pól
 
 |||
 |-|-|
@@ -39,7 +39,7 @@ Metoda wystąpienia deklaruje parametr lub zmienną lokalną, której nazwa pasu
 
 ## <a name="rule-description"></a>Opis reguły
 
-Gdy nazwa pola wystąpienia pasuje do parametru lub nazwy zmiennej lokalnej, do pola wystąpienia uzyskuje się dostęp za pomocą `this` słowa kluczowego (`Me` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) w treści metody. Podczas zachowywania kodu można łatwo zapomnieć o tej różnicy i założyć, że zmienna parametru/Local odwołuje się do pola wystąpienia, które prowadzi do błędów. Dotyczy to szczególnie długich treści metod.
+Gdy nazwa pola wystąpienia pasuje do parametru lub nazwy zmiennej lokalnej, do pola wystąpienia uzyskuje się dostęp za pomocą słowa kluczowego `this` (`Me` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), gdy wewnątrz treści metody. Podczas zachowywania kodu można łatwo zapomnieć o tej różnicy i założyć, że zmienna parametru/Local odwołuje się do pola wystąpienia, które prowadzi do błędów. Dotyczy to szczególnie długich treści metod.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
