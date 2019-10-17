@@ -1,5 +1,5 @@
 ---
-title: 'CA1009: Poprawnie deklaruj procedury obsługi zdarzeń'
+title: 'CA1009: Należy poprawnie zadeklarować obsługę zdarzenia'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e923730213ca31a4429d8547fdaaf980692f9a96
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a7a91388c6f75043c92a053da3f5a8fb22ae82b9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236477"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446873"
 ---
-# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Poprawnie deklaruj procedury obsługi zdarzeń
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Należy poprawnie zadeklarować obsługę zdarzenia
 
 |||
 |-|-|
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -49,14 +49,14 @@ Aby naprawić naruszenie tej reguły, Popraw sygnaturę, zwracany typ lub nazwy 
 Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład przedstawia delegata, który jest odpowiedni do obsługi zdarzeń. Metody, które mogą być wywoływane przez ten program obsługi zdarzeń, są zgodne z podpisem określonym w wytycznych dotyczących projektowania. `AlarmEventHandler`jest nazwą typu delegata. `AlarmEventArgs`pochodzi z klasy podstawowej dla danych zdarzenia, <xref:System.EventArgs>i przechowuje dane zdarzenia alarmu.
+Poniższy przykład przedstawia delegata, który jest odpowiedni do obsługi zdarzeń. Metody, które mogą być wywoływane przez ten program obsługi zdarzeń, są zgodne z podpisem określonym w wytycznych dotyczących projektowania. `AlarmEventHandler` jest nazwą typu delegata. `AlarmEventArgs` pochodzi z klasy podstawowej dla danych zdarzenia, <xref:System.EventArgs> i przechowuje dane zdarzenia alarmu.
 
 [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
 [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
 [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
-[CA2109: Przejrzyj widoczne procedury obsługi zdarzeń](../code-quality/ca2109-review-visible-event-handlers.md)
+[CA2109: Przejrzyj widoczne procedury obsługi zdarzeń](../code-quality/ca2109.md)
 
 ## <a name="see-also"></a>Zobacz także
 
