@@ -1,5 +1,5 @@
 ---
-title: 'CA1301: Unikaj duplikowania akceleratorów'
+title: 'CA1301: Należy unikać duplikowania akceleratorów'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1970eefee70fa14179c77566f23f213f09026646
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235161"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444379"
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Unikaj duplikowania akceleratorów
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Należy unikać duplikowania akceleratorów
 
 |||
 |-|-|
@@ -46,7 +46,7 @@ Aby naprawić naruszenie tej zasady, zdefiniuj unikatowe klucze dostępu dla wsz
 Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano minimalną postać zawierającą dwie kontrolki, które mają identyczne klucze dostępu. Klucze są przechowywane w pliku zasobów, który nie jest wyświetlany. Jednak ich wartości są wyświetlane w `checkBox.Text` wierszach z komentarzem. Zachowanie zduplikowanych akceleratorów może być badane przez wymianę `checkBox.Text` wierszy z ich komentarzem. Jednak w tym przypadku przykład nie spowoduje wygenerowania ostrzeżenia z reguły.
+W poniższym przykładzie pokazano minimalną postać zawierającą dwie kontrolki, które mają identyczne klucze dostępu. Klucze są przechowywane w pliku zasobów, który nie jest wyświetlany. Jednak ich wartości są wyświetlane w wierszach z komentarzem `checkBox.Text`. Zachowanie zduplikowanych akceleratorów można sprawdzić przez wymianę wierszy `checkBox.Text` z ich komentarzem. Jednak w tym przypadku przykład nie spowoduje wygenerowania ostrzeżenia z reguły.
 
 [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 

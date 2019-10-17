@@ -1,5 +1,5 @@
 ---
-title: 'CA1005: Unikaj nadmiernego użycia parametrów w typach ogólnych'
+title: 'CA1005: Unikaj nadużywania parametrów na typach generycznych'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,27 +14,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f9b8a79e38bdb9b6b097588697e2cd6c3545f7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 77f913a2dc31ee77445ee90b417f1a7d1cf23b8d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236592"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449345"
 ---
-# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Unikaj nadmiernego użycia parametrów w typach ogólnych
+# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Unikaj nadużywania parametrów na typach generycznych
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
 |CheckId|CA1005|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 Widoczny na zewnątrz typ ogólny ma więcej niż dwa parametry typu.
 
 ## <a name="rule-description"></a>Opis reguły
-Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Jest to zazwyczaj oczywiste z jednym parametrem typu, jak `List<T>`w, i w niektórych przypadkach z dwoma parametrami typu, `Dictionary<TKey, TValue>`jak w. Jeśli istnieje więcej niż dwa parametry typu, trudności są zbyt duże dla większości użytkowników (na `TooManyTypeParameters<T, K, V>` przykład w C# lub `TooManyTypeParameters(Of T, K, V)` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Jest to zazwyczaj oczywiste z jednym parametrem typu, tak jak w `List<T>`, a w niektórych przypadkach z dwoma parametrami typu, takimi jak w `Dictionary<TKey, TValue>`. Jeśli istnieje więcej niż dwa parametry typu, trudności są zbyt duże dla większości użytkowników (na przykład `TooManyTypeParameters<T, K, V>` w C# lub `TooManyTypeParameters(Of T, K, V)` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 Aby naprawić naruszenie tej reguły, Zmień projekt tak, aby używał nie więcej niż dwóch parametrów typu.
@@ -45,17 +45,17 @@ Nie pomijaj ostrzeżenia z tej reguły, chyba że projekt absolutnie wymaga wię
 ## <a name="related-rules"></a>Powiązane reguły
 [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
-[CA1000: Nie deklaruj statycznych składowych na typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
 [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
 [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
-[CA1004: Metody ogólne powinny podawać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004: Metody ogólne powinny udostępniać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
-[CA1003: Użyj ogólnych wystąpień programu obsługi zdarzeń](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003: Użyj wystąpień ogólnej procedury obsługi zdarzeń](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
-[CA1007 Używaj typów ogólnych, tam gdzie to konieczne](../code-quality/ca1007-use-generics-where-appropriate.md)
+[CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Zobacz także
 [Typy ogólne](/dotnet/csharp/programming-guide/generics/index)

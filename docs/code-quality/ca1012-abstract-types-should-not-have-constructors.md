@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef4bff83b1921b3cf15b25aaf225645379478f38
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6ba7a88e2167f5e67eb5cefe706bfc2cf1abfccd
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236354"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441664"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: Typy abstrakcyjne nie powinny mieć konstruktorów
 
@@ -29,7 +29,7 @@ ms.locfileid: "71236354"
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
 |CheckId|CA1012|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
@@ -67,7 +67,7 @@ Poniższy fragment kodu zawiera typ abstrakcyjny, który narusza tę regułę.
 [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
 [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
 
-Poniższy fragment kodu naprawia poprzednie naruszenie, zmieniając ułatwienia dostępu konstruktora z `public` do. `protected`
+Poniższy fragment kodu naprawia poprzednie naruszenie, zmieniając ułatwienia dostępu konstruktora z `public` do `protected`.
 
 [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
 [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

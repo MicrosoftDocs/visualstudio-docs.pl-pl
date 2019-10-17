@@ -1,5 +1,5 @@
 ---
-title: 'CA1013: Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania'
+title: 'CA1013: Przeciąż operator equals przeciążając operatory add i subtract'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,27 +21,27 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb5fd5c0e68b5dcffc212af03294d94d04d2abe
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 575afd3609da0e8f362408f8a1550303ec03cf3f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236334"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446733"
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Przeciąż operator equals przeciążając operatory add i subtract
 
 |||
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 Typ publiczny lub chroniony implementuje operatory dodawania lub odejmowania bez implementowania operatora porównania.
 
 ## <a name="rule-description"></a>Opis reguły
-Gdy wystąpienia typu można łączyć za pomocą operacji, takich jak dodawanie i odejmowanie, należy prawie zawsze definiować równość `true` dla wszystkich dwóch wystąpień, które mają te same wartości elementów.
+Gdy wystąpienia typu można łączyć przy użyciu operacji takich jak dodawanie i odejmowanie, należy prawie zawsze definiować równość, aby zwracać `true` dla wszystkich dwóch wystąpień, które mają te same wartości elementów.
 
 Nie można użyć domyślnego operatora równości w przeciążonej implementacji operatora równości. Wykonanie tej operacji spowoduje przepełnienie stosu. Aby zaimplementować operator równości, użyj metody Object. Equals w implementacji. Zobacz Poniższy przykład.
 
@@ -66,7 +66,7 @@ Aby naprawić naruszenie tej zasady, należy zaimplementować operator równośc
 Jeśli domyślna implementacja operatora równości zapewnia poprawne zachowanie dla tego typu, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie zdefiniowano typ (`BadAddableType`), który narusza tę regułę. Ten typ powinien implementować operator równości, aby wszystkie dwa wystąpienia, które mają te same wartości pól `true` , były sprawdzane pod kątem równości. Typ `GoodAddableType` pokazuje poprawioną implementację. Należy zauważyć, że ten typ powoduje także implementację operatora nierówności <xref:System.Object.Equals%2A> i zastąpień w celu spełnienia innych reguł. Zaimplementowana <xref:System.Object.GetHashCode%2A>zostanie również kompletna implementacja.
+W poniższym przykładzie zdefiniowano typ (`BadAddableType`) naruszający tę regułę. Ten typ powinien implementować operator równości, aby wszystkie dwa wystąpienia, które mają te same wartości pól, były testowane `true` dla równości. Typ `GoodAddableType` pokazuje poprawioną implementację. Należy zauważyć, że ten typ implementuje także operator nierówności i przesłania <xref:System.Object.Equals%2A> w celu spełnienia innych reguł. Kompletna implementacja również implementuje <xref:System.Object.GetHashCode%2A>.
 
 [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
 

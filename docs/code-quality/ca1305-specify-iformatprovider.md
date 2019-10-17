@@ -1,5 +1,5 @@
 ---
-title: 'CA1305: Określ argument IFormatProvider'
+title: 'CA1305: Określ IFormatProvider'
 ms.date: 06/30/2018
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a9f6c8fd44749de43d86bf8037df0130ad682321
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5a759b6eefe92b4168684b098b4025f589893b4b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235034"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444427"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: Określ argument IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: Określ IFormatProvider
 
 |||
 |-|-|
@@ -34,9 +34,9 @@ ms.locfileid: "71235034"
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda lub Konstruktor wywołuje jeden lub więcej elementów członkowskich, które mają przeciążenia, które <xref:System.IFormatProvider?displayProperty=fullName> akceptują parametr, a metoda lub Konstruktor nie wywołuje przeciążenia, które <xref:System.IFormatProvider> pobiera parametr.
+Metoda lub Konstruktor wywołuje jeden lub więcej elementów członkowskich, które mają przeciążenia, które akceptują <xref:System.IFormatProvider?displayProperty=fullName> parametru, a metoda lub Konstruktor nie wywołuje przeciążenia, które pobiera parametr <xref:System.IFormatProvider>.
 
-Ta reguła ignoruje wywołania metod .NET, które są udokumentowane jako ignorowanie <xref:System.IFormatProvider> parametru. Reguła ignoruje także następujące metody:
+Ta reguła ignoruje wywołania metod .NET, które są udokumentowane jako ignorowanie parametru <xref:System.IFormatProvider>. Reguła ignoruje także następujące metody:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Ta reguła ignoruje wywołania metod .NET, które są udokumentowane jako ignoro
 
 ## <a name="rule-description"></a>Opis reguły
 
-Gdy obiekt <xref:System.IFormatProvider> lub nie jest podany, wartość domyślna, która jest dostarczana przez przeciążony element członkowski, może nie mieć żądanego efektu we wszystkich ustawieniach regionalnych. <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> Ponadto członkowie platformy .NET wybierają domyślną kulturę i formatowanie na podstawie założeń, które mogą nie być poprawne dla kodu. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać informacje specyficzne dla kultury zgodnie z poniższymi wskazówkami:
+Gdy nie podano obiektu <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> lub <xref:System.IFormatProvider>, wartość domyślna, która jest dostarczana przez przeciążony element członkowski, może nie mieć żądanego efektu we wszystkich ustawieniach regionalnych. Ponadto członkowie platformy .NET wybierają domyślną kulturę i formatowanie na podstawie założeń, które mogą nie być poprawne dla kodu. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać informacje specyficzne dla kultury zgodnie z poniższymi wskazówkami:
 
 - Jeśli wartość będzie wyświetlana użytkownikowi, Użyj bieżącej kultury. Zobacz <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
@@ -56,7 +56,7 @@ Nawet jeśli domyślne zachowanie przeciążonego elementu członkowskiego jest 
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Użyj przeciążenia, które przyjmuje <xref:System.IFormatProvider> argument. Lub Użyj [ C# ciągu interpolowanego](/dotnet/csharp/tutorials/string-interpolation) i przekaż <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> go do metody.
+Aby naprawić naruszenie tej zasady, Użyj przeciążenia, które przyjmuje <xref:System.IFormatProvider> argumentu. Można też użyć [ C# ciągu interpolowanego](/dotnet/csharp/tutorials/string-interpolation) i przekazać go do metody <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -64,7 +64,7 @@ Można bezpiecznie pominąć ostrzeżenie z tej reguły, gdy jest to pewne, że 
 
 ## <a name="example"></a>Przykład
 
-W poniższym kodzie `example1` ciąg narusza reguły CA1305. Ciąg spełnia reguły CA1305 przez przekazywanie <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, które implementuje <xref:System.IFormatProvider>, do <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. `example2` Ciąg spełnia kryteria CA1305 przez przekazanie ciągu interpolowanego do <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>. `example3`
+W poniższym kodzie ciąg `example1` narusza reguły CA1305. Ciąg `example2` spełnia reguły CA1305 przez przekazanie <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, który implementuje <xref:System.IFormatProvider>, aby <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. Ciąg `example3` spełnia reguły CA1305 przez przekazanie ciągu interpolowanego do <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
 
 ```csharp
 string name = "Georgette";
@@ -81,7 +81,7 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1304: Określ CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304: Określ klasę CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Zobacz także
 

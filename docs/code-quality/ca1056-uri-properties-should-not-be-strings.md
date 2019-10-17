@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 71e365fa0891e9cb01f7a2860a9c2f13b78072b3
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 48d513e8806253fe42166bc3d766377828b104ed
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235529"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446566"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: Właściwości identyfikatora URI nie powinny być ciągami
 
@@ -31,7 +31,7 @@ ms.locfileid: "71235529"
 |-|-|
 |TypeName|UriPropertiesShouldNotBeStrings|
 |CheckId|CA1056|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -42,11 +42,11 @@ Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to 
 
 ## <a name="rule-description"></a>Opis reguły
 
-Ta reguła dzieli nazwę właściwości na tokeny na podstawie Konwencji dotyczącej wielkości liter Pascala i sprawdza, czy każdy token jest równy "URI", "URI", "urn", "urn", "URL" lub "URL". W przypadku dopasowania reguła zakłada, że właściwość reprezentuje identyfikator URI (Uniform Resource Identifier). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. <xref:System.Uri?displayProperty=fullName> Klasa udostępnia te usługi w bezpieczny i bezpieczny sposób.
+Ta reguła dzieli nazwę właściwości na tokeny na podstawie Konwencji dotyczącej wielkości liter Pascala i sprawdza, czy każdy token jest równy "URI", "URI", "urn", "urn", "URL" lub "URL". W przypadku dopasowania reguła zakłada, że właściwość reprezentuje identyfikator URI (Uniform Resource Identifier). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. Klasy <xref:System.Uri?displayProperty=fullName> udostępniają te usługi w bezpieczny i bezpieczny sposób.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej reguły, Zmień właściwość na <xref:System.Uri> typ.
+Aby naprawić naruszenie tej reguły, Zmień właściwość na typ <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -64,7 +64,7 @@ Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lu
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład pokazuje typ, `ErrorProne`, który narusza tę regułę i `SaferWay`typ, który spełnia regułę.
+Poniższy przykład przedstawia typ, `ErrorProne`, który narusza tę regułę i typ `SaferWay`, który spełnia regułę.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1056-uri-properties-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1056-uri-properties-should-not-be-strings_1.vb)]
@@ -73,6 +73,6 @@ Poniższy przykład pokazuje typ, `ErrorProne`, który narusza tę regułę i `S
 ## <a name="related-rules"></a>Powiązane reguły
 
 - [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA1055: Zwracane wartości identyfikatora URI nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234 Przekaż obiekty System. URI zamiast ciągów](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: Przeciążenia identyfikatora URI ciągu wywołania system. URI overloads](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1055: Wartości zwracane identyfikatora URI nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234: Przekaż obiekty System.Uri zamiast ciągów](../code-quality/ca2234.md)
+- [CA1057: Przeciążenia identyfikatora URI w postaci ciągu wywołują przeciążenia metody System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1024: Używaj właściwości, o ile to możliwe'
+title: 'CA1024: Używaj właściwości wszędzie, gdzie jest to odpowiednie'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d312618c80abb6a4ce6e1a2676903d85867f4989
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2ba4a7a16675bf6da0aa465a515b73c907aa80ac
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236158"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449296"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości, o ile to możliwe
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości wszędzie, gdzie jest to odpowiednie
 
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -85,7 +85,7 @@ Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lu
 
 Jednym z powodów programiści nie należy używać właściwości, ponieważ nie chce, aby debuger miał Autorozszerzanie. Na przykład właściwość może polegać na przydzieleniu dużego obiektu lub wywołaniu P/Invoke, ale może nie mieć w rzeczywistości żadnych zauważalnych efektów ubocznych.
 
-Można uniemożliwić debugerowi możliwość autorozszerzania właściwości poprzez zastosowanie <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Poniższy przykład pokazuje, że ten atrybut jest stosowany do właściwości wystąpienia.
+Można uniemożliwić debugerowi możliwość autorozszerzania właściwości, stosując <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Poniższy przykład pokazuje, że ten atrybut jest stosowany do właściwości wystąpienia.
 
 ```vb
 Imports System

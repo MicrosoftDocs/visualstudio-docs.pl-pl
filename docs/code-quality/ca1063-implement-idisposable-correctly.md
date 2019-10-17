@@ -1,5 +1,5 @@
 ---
-title: 'CA1063: Poprawnie zaimplementuj interfejs IDisposable'
+title: 'CA1063: Należy prawidłowo zaimplementować interfejs IDisposable'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -16,55 +16,55 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b29c9ed644c223488261333e79f17229bd4b7a3
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0fd4ba8d5dd5568dc7fca50ed61739b490bdcba7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235298"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440603"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Należy prawidłowo zaimplementować interfejs IDisposable
 
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-<xref:System.IDisposable?displayProperty=nameWithType> Interfejs nie został poprawnie zaimplementowany. Możliwe przyczyny tego obejmują:
+Interfejs <xref:System.IDisposable?displayProperty=nameWithType> nie został poprawnie zaimplementowany. Możliwe przyczyny tego obejmują:
 
-- <xref:System.IDisposable>jest zaimplementowana w klasie.
+- <xref:System.IDisposable> jest zaimplementowana w klasie.
 
-- `Finalize`zostanie ponownie zastąpiony.
+- `Finalize` ponownie zostanie przesłonięty.
 
-- `Dispose()`jest zastępowany.
+- `Dispose()` został zastąpiony.
 
-- Metoda nie jest publiczna, [zapieczętowana](/dotnet/csharp/language-reference/keywords/sealed)ani nazywana **Dispose.** `Dispose()`
+- Metoda `Dispose()` nie jest publiczna, [zapieczętowana](/dotnet/csharp/language-reference/keywords/sealed)ani o nazwie **Dispose**.
 
-- `Dispose(bool)`nie jest chroniony, wirtualny lub niezapieczętowany.
+- `Dispose(bool)` nie jest chroniony, wirtualny lub niezapieczętowany.
 
-- W niezapieczętowanych typach, `Dispose()` należy wywołać `Dispose(true)`.
+- W niezapieczętowanych typach `Dispose()` musi wywoływać `Dispose(true)`.
 
-- W przypadku typów `Finalize` niezapieczętowanych implementacja nie wywołuje ani obu `Dispose(bool)` , ani ani do finalizatora klasy bazowej.
+- W przypadku niezapieczętowanych typów implementacja `Finalize` nie wywołuje ani obu `Dispose(bool)` lub finalizatora klasy bazowej.
 
 Naruszenie jednego z tych wzorców wyzwala ostrzeżenie CA1063.
 
-Każdy niezapieczętowany typ, który deklaruje i implementuje <xref:System.IDisposable> interfejs, musi udostępniać własną `protected virtual void Dispose(bool)` metodę. `Dispose()`należy wywołać `Dispose(true)`metodę, a finalizator powinien wywołać. `Dispose(false)` W przypadku utworzenia niezapieczętowanego typu, który deklaruje i implementuje <xref:System.IDisposable> interfejs, należy go zdefiniować `Dispose(bool)` i wywołać. Aby uzyskać więcej informacji, zobacz [Oczyszczanie zasobów niezarządzanych (Przewodnik po platformie .NET)](/dotnet/standard/garbage-collection/unmanaged) i [wzorca usuwania](/dotnet/standard/design-guidelines/dispose-pattern).
+Każdy niezapieczętowany typ, który deklaruje i implementuje interfejs <xref:System.IDisposable> musi zapewnić własną metodę `protected virtual void Dispose(bool)`. `Dispose()` powinna wywołać `Dispose(true)`, a finalizator powinien wywołać metodę `Dispose(false)`. W przypadku utworzenia niezapieczętowanego typu, który deklaruje i implementuje interfejs <xref:System.IDisposable>, należy zdefiniować `Dispose(bool)` i wywołać go. Aby uzyskać więcej informacji, zobacz [Oczyszczanie zasobów niezarządzanych (Przewodnik po platformie .NET)](/dotnet/standard/garbage-collection/unmanaged) i [wzorca usuwania](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wszystkie <xref:System.IDisposable> typy powinny poprawnie zaimplementować [wzorzec Dispose](/dotnet/standard/design-guidelines/dispose-pattern) .
+Wszystkie typy <xref:System.IDisposable> powinny poprawnie zaimplementować [wzorzec Dispose](/dotnet/standard/design-guidelines/dispose-pattern) .
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
 Sprawdź kod i ustal, które z następujących rozwiązań spowodują rozwiązanie tego naruszenia:
 
-- Usuń <xref:System.IDisposable> z listy interfejsów, które są implementowane przez typ, i Przesłoń implementację metody Dispose klasy podstawowej.
+- Usuń <xref:System.IDisposable> z listy interfejsów, które są implementowane przez typ, i Przesłoń implementację metody Dispose klasy bazowej.
 
 - Usuń finalizator z typu, Przesłoń metodę Dispose (usuwanie bool) i umieść logikę finalizacji w ścieżce kodu, gdzie "Dispose" ma wartość false.
 
@@ -76,11 +76,11 @@ Sprawdź kod i ustal, które z następujących rozwiązań spowodują rozwiązan
 
 - Upewnij się, że metoda Dispose (bool) jest zadeklarowana jako chroniona, wirtualna i niezapieczętowany.
 
-- Zmodyfikuj metodę Dispose (), tak aby wywoła ona metodę Dispose (true) <xref:System.GC.SuppressFinalize%2A> , a następnie wywołuje w bieżącym`this`wystąpieniu obiektu `Me` (lub w Visual Basic), a następnie zwraca wartość.
+- Zmodyfikuj metodę Dispose (), tak aby wywołuje metodę Dispose (true), a następnie wywołuje <xref:System.GC.SuppressFinalize%2A> w bieżącym wystąpieniu obiektu (`this` lub `Me` w Visual Basic), a następnie zwraca wartość.
 
 - Zmodyfikuj finalizator, aby wywoływał metodę Dispose (false), a następnie zwraca wartość.
 
-- W przypadku utworzenia niezapieczętowanego typu, który deklaruje i implementuje <xref:System.IDisposable> interfejs, upewnij się, że <xref:System.IDisposable> implementacja jest zgodna ze wzorcem opisanym wcześniej w tej sekcji.
+- Jeśli utworzysz niezapieczętowany typ, który deklaruje i implementuje interfejs <xref:System.IDisposable>, upewnij się, że implementacja <xref:System.IDisposable> jest zgodna ze wzorcem opisanym wcześniej w tej sekcji.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 

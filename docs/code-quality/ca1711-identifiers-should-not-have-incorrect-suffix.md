@@ -1,5 +1,5 @@
 ---
-title: 'CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów'
+title: 'CA1711: Identyfikatory powinny mieć poprawny przyrostek'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e04487a9bfcd8ef9a0e9a15bc76a93b221f9ce1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1a2ae438091c55c9e0e6b14350ca2527907ab33c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234144"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443920"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory powinny mieć poprawny przyrostek
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -42,7 +42,7 @@ Zgodnie z Konwencją, tylko nazwy typów, które poszerzają pewne typy podstawo
 
 W poniższej tabeli wymieniono zastrzeżone sufiksy i typy podstawowe oraz interfejsy, z którymi są skojarzone.
 
-|Suffix|Typ podstawowy/interfejs|
+|Przedrostk|Typ podstawowy/interfejs|
 |------------|--------------------------|
 |Atrybut|<xref:System.Attribute?displayProperty=fullName>|
 |Kolekcja|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
@@ -51,7 +51,7 @@ W poniższej tabeli wymieniono zastrzeżone sufiksy i typy podstawowe oraz inter
 |EventHandler|Delegat programu obsługi zdarzeń|
 |Wyjątek|<xref:System.Exception?displayProperty=fullName>|
 |Uprawnienie|<xref:System.Security.IPermission?displayProperty=fullName>|
-|Kolejka|<xref:System.Collections.Queue?displayProperty=fullName>|
+|Niej|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stos|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Strumień|<xref:System.IO.Stream?displayProperty=fullName>|
 
@@ -61,9 +61,9 @@ Ponadto **nie** należy używać następujących sufiksów:
 
 - `Enum`
 
-- `Impl`(Użyj `Core` zamiast tego)
+- `Impl` (Użyj zamiast tego `Core`)
 
-- `Ex`lub podobnego sufiksu, aby odróżnić go od wcześniejszej wersji tego samego typu
+- `Ex` lub podobnego sufiksu, aby odróżnić go od wcześniejszej wersji tego samego typu
 
 Konwencje nazewnictwa zapewniają typowy wygląd bibliotek przeznaczonych dla środowiska uruchomieniowego języka wspólnego. Zmniejsza to krzywą uczenia, która jest wymagana w przypadku nowych bibliotek oprogramowania i zwiększa zaufanie klienta, że biblioteka została opracowana przez kogoś, kto ma doświadczenie w tworzeniu kodu zarządzanego.
 

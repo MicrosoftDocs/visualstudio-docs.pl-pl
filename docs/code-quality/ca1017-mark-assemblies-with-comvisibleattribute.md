@@ -1,5 +1,5 @@
 ---
-title: 'CA1017: Oznacz zestawy atrybutem ComVisibleAttribute'
+title: 'CA1017: Oznacz zestawy za pomocą ComVisibleAttribute'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,27 +18,27 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 073332738a01cb299b2b185c6fca20131222f981
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: daf9da821178e9e17ed5f0693d4d268b04ca337c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236255"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441624"
 ---
-# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Oznacz zestawy atrybutem ComVisibleAttribute
+# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Oznacz zestawy za pomocą ComVisibleAttribute
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
-Zestaw nie ma <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> zastosowanego atrybutu.
+Zestaw nie ma zastosowanego atrybutu <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
-Ten <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybut określa, w jaki sposób klienci com uzyskują dostęp do kodu zarządzanego. Zasada dobrego projektowania nakazuje, aby zestawy jawnie wskazywały widoczność COM. Widoczność COM można ustawić dla całego zestawu, a następnie przesłonić dla poszczególnych typów i elementów członkowskich typu. Jeśli atrybut nie jest obecny, zawartość zestawu jest widoczna dla klientów modelu COM.
+Atrybut <xref:System.Runtime.InteropServices.ComVisibleAttribute> Określa, jak klienci COM uzyskują dostęp do kodu zarządzanego. Zasada dobrego projektowania nakazuje, aby zestawy jawnie wskazywały widoczność COM. Widoczność COM można ustawić dla całego zestawu, a następnie przesłonić dla poszczególnych typów i elementów członkowskich typu. Jeśli atrybut nie jest obecny, zawartość zestawu jest widoczna dla klientów modelu COM.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 Aby naprawić naruszenie tej reguły, Dodaj atrybut do zestawu. Jeśli nie chcesz, aby zestaw był widoczny dla klientów modelu COM, zastosuj atrybut i ustaw jego wartość na `false`.
@@ -47,7 +47,7 @@ Aby naprawić naruszenie tej reguły, Dodaj atrybut do zestawu. Jeśli nie chces
 Nie pomijaj ostrzeżeń dla tej reguły. Jeśli zestaw ma być widoczny, zastosuj atrybut i ustaw jego wartość na `true`.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje zestaw, który ma atrybut zastosowany, <xref:System.Runtime.InteropServices.ComVisibleAttribute> aby zapobiec widocznym dla klientów modelu com.
+Poniższy przykład pokazuje zestaw, który ma atrybut <xref:System.Runtime.InteropServices.ComVisibleAttribute> zastosowany, aby zapobiec widocznym dla klientów modelu COM.
 
 [!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
 [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]

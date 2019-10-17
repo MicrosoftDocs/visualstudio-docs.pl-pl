@@ -1,5 +1,5 @@
 ---
-title: 'CA1308: Normalizuj ciągi do postaci zapisanej wielkimi literami'
+title: 'CA1308: Znormalizuj ciągi na wielkie litery'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c33f4b0b55728d659c34e0ffc8723f555a6d074d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a217e3882cbf90365f507623347a3846ed30187a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234915"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444320"
 ---
-# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizuj ciągi do postaci zapisanej wielkimi literami
+# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Znormalizuj ciągi na wielkie litery
 
 |||
 |-|-|

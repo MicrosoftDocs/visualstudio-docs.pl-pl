@@ -1,5 +1,5 @@
 ---
-title: 'CA1021: Unikaj parametrów out'
+title: 'CA1021: Unikanie parametrów wyjściowych'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,33 +14,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e333e53fea1b965b250bdc97924e93728d55805a
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2b07c987bdaa2d037c8c6dc95a37d5e77069dea5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236184"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449339"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021: Unikaj parametrów out
+# <a name="ca1021-avoid-out-parameters"></a>CA1021: Unikanie parametrów wyjściowych
 
 |||
 |-|-|
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
-Metoda publiczna lub chroniona w typie publicznym ma `out` parametr.
+Metoda publiczna lub chroniona w typie publicznym ma parametr `out`.
 
 ## <a name="rule-description"></a>Opis reguły
-Przekazywanie typów przez odwołanie (za `out` pomocą `ref`lub) wymaga środowiska ze wskaźnikami, zrozumienie, jak typy wartości i typy odwołań różnią się i obsługują metody z wieloma zwracanymi wartościami. Ponadto różnice między `out` i `ref` parametrów nie są szeroko zrozumiałe.
+Przekazywanie typów przez odwołanie (przy użyciu `out` lub `ref`) wymaga środowiska ze wskaźnikami, zrozumienie, jak typy wartości i typy referencyjne różnią się i obsługują metody z wieloma zwracanymi wartościami. Ponadto różnice między parametrami `out` i `ref` nie są szeroko zrozumiałe.
 
 Gdy typ odwołania jest przenoszona "przez odwołanie", Metoda zamierza użyć parametru, aby zwrócić inne wystąpienie obiektu. Przekazywanie typu odwołania przez odwołanie jest również znane jako użycie podwójnego wskaźnika, wskaźnika do wskaźnika lub podwójnego pośrednika. Przy użyciu domyślnej konwencji wywoływania, która jest przekazywany "przez wartość", parametr, który pobiera typ odwołania, już otrzymuje wskaźnik do obiektu. Wskaźnik, a nie obiekt, do którego wskazuje, jest przenoszona przez wartość. Wartość Pass by oznacza, że metoda nie może zmienić wskaźnika tak, aby wskazywała nowe wystąpienie typu odwołania. Można jednak zmienić zawartość obiektu, do którego się odwołuje. W przypadku większości aplikacji jest to wystarczające i daje odpowiednie zachowanie.
 
-Jeśli metoda musi zwrócić inne wystąpienie, użyj wartości zwracanej metody, aby to osiągnąć. Zapoznaj <xref:System.String?displayProperty=fullName> się z klasą dla różnych metod, które działają na ciągach i zwracają nowe wystąpienie ciągu. Gdy ten model jest używany, obiekt wywołujący musi zdecydować, czy oryginalny obiekt jest zachowywany.
+Jeśli metoda musi zwrócić inne wystąpienie, użyj wartości zwracanej metody, aby to osiągnąć. Zapoznaj się z klasą <xref:System.String?displayProperty=fullName>, aby poznać różne metody, które działają na ciągach i zwracają nowe wystąpienie ciągu. Gdy ten model jest używany, obiekt wywołujący musi zdecydować, czy oryginalny obiekt jest zachowywany.
 
-Mimo że zwracane wartości są commonplace i intensywnie używane, poprawne stosowanie `out` i `ref` parametrów wymaga pośrednich umiejętności związanych z projektowaniem i programowaniem. Architekty biblioteki, którzy projektują dla ogólnych odbiorców, nie powinni oczekiwać od użytkowników `out` , `ref` aby Master pracował z lub parametrami.
+Mimo że zwracane wartości są commonplace i intensywnie używane, poprawne zastosowanie parametrów `out` i `ref` wymaga pośrednich umiejętności związanych z projektowaniem i programowaniem. Architekty biblioteki, którzy projektują dla ogólnych odbiorców, nie powinni oczekiwać, aby użytkownicy korzystali z parametrów `out` lub `ref`.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 Aby naprawić naruszenie tej zasady, która jest spowodowana przez typ wartości, należy zwrócić obiekt jako wartość zwracaną przez metodę. Jeśli metoda musi zwracać wiele wartości, Zaprojektuj ją w celu zwrócenia pojedynczego wystąpienia obiektu, który zawiera wartości.
@@ -56,12 +56,12 @@ Następująca Biblioteka pokazuje dwie implementacje klasy, która generuje odpo
 [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]
 
 ## <a name="example"></a>Przykład
-W poniższej aplikacji przedstawiono środowisko użytkownika. Wywołanie przeprojektowanej biblioteki (`UseTheSimplifiedClass` Metoda) jest bardziej proste, a informacje zwracane przez metodę są łatwo zarządzane. Dane wyjściowe z dwóch metod są identyczne.
+W poniższej aplikacji przedstawiono środowisko użytkownika. Wywołanie przeprojektowanej biblioteki (`UseTheSimplifiedClass`) jest bardziej proste, a informacje zwracane przez metodę są łatwo zarządzane. Dane wyjściowe z dwóch metod są identyczne.
 
 [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_2.cs)]
 
 ## <a name="example"></a>Przykład
-W poniższej bibliotece pokazano, jak `ref` są używane parametry typów referencyjnych i przedstawiono lepszy sposób implementacji tej funkcji.
+W poniższej bibliotece pokazano, jak są używane parametry `ref` dla typów referencyjnych i przedstawiono lepszy sposób implementacji tej funkcji.
 
 [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]
 
@@ -86,7 +86,7 @@ Passing by return value:
 ## <a name="try-pattern-methods"></a>Metody wzorców try
 
 ### <a name="description"></a>Opis
-Metody implementujące wzorzec **try\<coś >** , takie jak <xref:System.Int32.TryParse%2A?displayProperty=fullName>, nie powodują tego naruszenia. W poniższym przykładzie pokazano strukturę (typ wartości) implementującą <xref:System.Int32.TryParse%2A?displayProperty=fullName> metodę.
+Metody implementujące wzorzec **try @ no__t-1Something >** , takie jak <xref:System.Int32.TryParse%2A?displayProperty=fullName>, nie powodują tego naruszenia. Poniższy przykład pokazuje strukturę (typ wartości) implementującą metodę <xref:System.Int32.TryParse%2A?displayProperty=fullName>.
 
 ### <a name="code"></a>Kod
 [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]

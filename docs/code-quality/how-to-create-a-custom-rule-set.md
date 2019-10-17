@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b52bb573b9a98c5a797f67cdbd4608f8b8636da
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 33d8d97a5d036a2bd931bfa951fea2715569830a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975097"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448997"
 ---
 # <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
@@ -44,7 +44,7 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 
    - Wybierz zestaw reguł, który chcesz dostosować.
 
-     \- lub —
+     \- lub-
 
    - Wybierz pozycję **\<Browse >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
 
@@ -111,7 +111,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 - Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł o *takiej samej* ważności, w **Lista błędów**mogą pojawić się następujące ostrzeżenie:
 
-   **CA0063: Nie można załadować pliku zestawu reguł "\[your]. zestaw reguł" lub jeden z jego zależnych plików zestawu reguł. Plik jest niezgodny ze schematem zestawu reguł.**
+   **CA0063: nie można załadować pliku zestawu reguł "\[your]. zestaw reguł" lub jeden z jego zależnych plików zestawu reguł. Plik jest niezgodny ze schematem zestawu reguł.**
 
 - Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Na przykład:
 
@@ -147,5 +147,5 @@ Teraz, gdy masz zestaw reguł, następnym krokiem jest dostosowanie reguł poprz
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego @ no__t-0
+- [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Informacje o zestawie reguł analizy kodu](../code-quality/rule-set-reference.md)

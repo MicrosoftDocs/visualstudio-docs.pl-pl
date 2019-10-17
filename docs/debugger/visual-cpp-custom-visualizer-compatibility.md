@@ -1,5 +1,5 @@
 ---
-title: Zgodność niestandardowego wizualizatora Visual C/C++
+title: Zgodność wizualizacjiC++ języka Visual C/niestandardowego
 ms.date: 01/28/2019
 ms.prod: visual-studio-dev16
 ms.topic: reference
@@ -16,17 +16,17 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 32e38dd3bba8a1127d8756972b73e8b47a514f1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9fdd44be89fde2fbc26038c8b88fff405876264f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901169"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430620"
 ---
-# <a name="visual-cc-custom-visualizer-compatibility"></a>Zgodność niestandardowego wizualizatora Visual C/C++
+# <a name="visual-cc-custom-visualizer-compatibility"></a>Zgodność wizualizacjiC++ języka Visual C/niestandardowego
 
-Począwszy od programu Visual Studio 2019 Visual C++ obejmuje ulepszone debugera, który używa zewnętrznego procesu 64-bitowego do hostowania jej składniki wymagających dużej ilości pamięci. W ramach tej aktualizacji należy zaktualizować niektórych rozszerzeń Ewaluator wyrażeń Visual C/C++, aby były zgodne z debugerem nowe.
+Począwszy od programu Visual Studio 2019 C++ , program zawiera udoskonalony debuger, który używa zewnętrznego procesu 64-bitowego do hostowania składników intensywnie korzystających z pamięci. W ramach tej aktualizacji Niektóre rozszerzenia ewaluatora C/C++ Expression muszą zostać zaktualizowane, aby były zgodne z nowym debugerem.
 
-Jeśli aktualnie używanym starszej wersji dodatku EE C/C++ lub C/C++ niestandardowego wizualizatora, można wyłączyć użycia to proces zewnętrzny, przechodząc do **narzędzia** > **opcje**  >   **Debugowanie**, a następnie usunięcie zaznaczenia tej opcji **debugowania ładowania symboli w procesie zewnętrznym (tylko natywne)**. Jeśli wyłączysz tę opcję, wystąpią znaczne zwiększenie użycia pamięci w ramach procesu IDE (devenv.exe). Tak Jeśli spodziewasz się debugowania dużych projektów, zalecane jest, należy skontaktować się z właścicielem rozszerzenia, aby był zgodny z tą opcją debugowania.
+Jeśli obecnie korzystasz z starszego dodatku C/C++ EE lub wizualizacji językaC++ c/niestandardowego, możesz wyłączyć korzystanie z tego procesu zewnętrznego, przechodząc do opcji **narzędzia** > **Opcje** > **debugowania**, a następnie anulując wybór **debugowania ładowania symbole w procesie zewnętrznym (tylko kod natywny)** . Jeśli ta opcja zostanie odprowadzona, wystąpi znaczący wzrost użycia pamięci w procesie IDE (devenv. exe). Dlatego, jeśli oczekujesz na Debugowanie dużych projektów, zaleca się współdziałanie z właścicielem rozszerzenia, aby była zgodna z tą opcją debugowania.
 
-Jeśli jesteś właścicielem starszej wersji dodatku EE C/C++ lub C/C++ niestandardowego wizualizatora, można znaleźć więcej informacji na temat ładowania rozszerzenia w procesie roboczym na włączenie [rozszerzalności Concord przykłady wiki](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Worker-Process-Remoting). Możesz również znaleźć [przykładowe niestandardowego wizualizatora C/C++](https://github.com/Microsoft/ConcordExtensibilitySamples/tree/master/CppCustomVisualizer).
+Jeśli jesteś właścicielem starszego dodatku C/C++ EE lub wizualizacji c/C++ Custom, możesz znaleźć więcej informacji na temat rezygnacji z załadowania rozszerzenia w procesie roboczym na [przykładach rozszerzalności Concord](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Worker-Process-Remoting). Możesz również znaleźć [przykład C/C++ Custom wizualizatora](https://github.com/Microsoft/ConcordExtensibilitySamples/tree/master/CppCustomVisualizer).

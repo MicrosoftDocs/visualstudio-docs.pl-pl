@@ -1,5 +1,5 @@
 ---
-title: 'CA1058: Typy nie powinny rozszerzać niektórych typów podstawowych'
+title: 'CA1058: Typy nie powinny rozszerzać pewnych typów bazowych'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa1ffbb393700647f12c455c8d1307a77548f2d1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8bec913e5352c0028859f03ebda7c5f112db654f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235491"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446544"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy nie powinny rozszerzać niektórych typów podstawowych
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy nie powinny rozszerzać pewnych typów bazowych
 
 |||
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -47,9 +47,9 @@ Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to 
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wyjątki powinny pochodzić od <xref:System.Exception?displayProperty=fullName> lub jednej z jej podklas <xref:System> w przestrzeni nazw.
+Wyjątki powinny pochodzić od <xref:System.Exception?displayProperty=fullName> lub jednej z jej podklas w przestrzeni nazw <xref:System>.
 
-Nie należy tworzyć podklasy, <xref:System.Xml.XmlDocument> Jeśli chcesz utworzyć widok XML źródłowego modelu obiektów lub źródła danych.
+Nie należy tworzyć podklasy <xref:System.Xml.XmlDocument>, jeśli chcesz utworzyć widok XML źródłowego modelu obiektów lub źródła danych.
 
 ### <a name="non-generic-collections"></a>Kolekcje inne niż ogólne
 
@@ -85,7 +85,7 @@ Aby naprawić naruszenie tej reguły, należy utworzyć typ z innego typu podsta
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżenia z tej reguły dla naruszeń <xref:System.ApplicationException>. Można bezpiecznie pominąć ostrzeżenie z tej reguły dla naruszeń <xref:System.Xml.XmlDocument>. Można bezpiecznie pominąć ostrzeżenie o nieogólnej kolekcji, jeśli kod został wcześniej opublikowany.
+Nie pomijaj ostrzeżenia z tej reguły dla naruszeń dotyczących <xref:System.ApplicationException>. W przypadku naruszeń dotyczących <xref:System.Xml.XmlDocument> można bezpiecznie pominąć ostrzeżenie z tej reguły. Można bezpiecznie pominąć ostrzeżenie o nieogólnej kolekcji, jeśli kod został wcześniej opublikowany.
 
 ## <a name="configurability"></a>Określając
 

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8eaaaa8b810e79b2bd1a4da0ab1d9887c8a46380
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253304"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440129"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Unikaj nadmiernej złożoności
 
@@ -56,15 +56,15 @@ Aby naprawić naruszenie tej zasady, należy rozwiązać metodę, aby zmniejszy�
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jeśli złożoność nie zostanie łatwo zredukowana, można bezpiecznie pominąć ostrzeżenie z tej reguły, a metoda jest łatwa do zrozumienia, testowania i konserwowania. W szczególności Metoda, która zawiera duże `switch` (`Select` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrukcji, jest kandydatem do wykluczenia. Ryzyko destabilizacji podstawy kodu w cyklu programowania lub wprowadzenie nieoczekiwanej zmiany w czasie wykonywania w wcześniej dostarczonym kodzie może wzważyć korzyści płynące z refaktoryzacji kodu.
+Jeśli złożoność nie zostanie łatwo zredukowana, można bezpiecznie pominąć ostrzeżenie z tej reguły, a metoda jest łatwa do zrozumienia, testowania i konserwowania. W szczególności Metoda, która zawiera dużą `switch` (`Select` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrukcji jest kandydatem do wykluczenia. Ryzyko destabilizacji podstawy kodu w cyklu programowania lub wprowadzenie nieoczekiwanej zmiany w czasie wykonywania w wcześniej dostarczonym kodzie może wzważyć korzyści płynące z refaktoryzacji kodu.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Jak jest obliczana Złożoność cyklomatyczna
 
 Złożoność cyklomatyczna jest obliczana przez dodanie 1 do następujących:
 
-- Liczba gałęzi (takich jak `if`, `while`i `do`)
+- Liczba gałęzi (takich jak `if`, `while` i `do`)
 
-- `case` Liczba instrukcji w`switch`
+- Liczba instrukcji `case` w `switch`
 
 ## <a name="example"></a>Przykład
 

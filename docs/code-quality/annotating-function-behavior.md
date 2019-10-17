@@ -20,12 +20,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb0e8bdbb2bd62fa637b9cecce64adf98f71013
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: b77379d0bb9dbd80f01eadf5209353b3fd12eb1c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72016051"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446307"
 ---
 # <a name="annotating-function-behavior"></a>Zachowanie funkcji dodawania adnotacji
 Oprócz dodawania adnotacji do [parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)można dodawać adnotacje do właściwości całej funkcji.

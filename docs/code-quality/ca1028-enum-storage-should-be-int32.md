@@ -1,5 +1,5 @@
 ---
-title: 'CA1028: Magazyn typu wyliczeniowego powinien być typu Int32'
+title: 'CA1028: Pamięć wyliczenia powinna być Int32'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,35 +17,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0ece210d20a675cf2f55b5b619a1c1b526638582
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236094"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449265"
 ---
-# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Magazyn typu wyliczeniowego powinien być typu Int32
+# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Pamięć wyliczenia powinna być Int32
 
 |||
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ podstawowy wyliczenia nie <xref:System.Int32?displayProperty=fullName>jest.
+Typ podstawowy wyliczenia nie jest <xref:System.Int32?displayProperty=fullName>.
 
 Domyślnie ta reguła sprawdza tylko publiczne wyliczenia, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Domyślnie <xref:System.Int32?displayProperty=fullName> typ danych jest używany do przechowywania wartości stałej. Mimo że można zmienić ten typ podstawowy, nie jest to konieczne ani zalecane w przypadku większości scenariuszy. Nie zostanie osiągnięty znaczący wzrost wydajności przy użyciu typu danych, który jest <xref:System.Int32>mniejszy niż. Jeśli nie można użyć domyślnego typu danych, należy <xref:System.Byte>użyć jednego z typów <xref:System.Int16> <xref:System.Int32>całkowitych zgodnych ze specyfikacją CLS (Common Language system),,, lub <xref:System.Int64> , aby upewnić się, że wszystkie wartości wyliczenia mogą być reprezentowane w Języki programowania zgodne ze specyfikacją CLS.
+Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Domyślnie typ danych <xref:System.Int32?displayProperty=fullName> jest używany do przechowywania wartości stałej. Mimo że można zmienić ten typ podstawowy, nie jest to konieczne ani zalecane w przypadku większości scenariuszy. Nie zostanie osiągnięty znaczący wzrost wydajności przy użyciu typu danych, który jest mniejszy niż <xref:System.Int32>. Jeśli nie można użyć domyślnego typu danych, należy użyć jednego z typów całkowitych zgodnych ze specyfikacją CLS (Common Language system), <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32> lub <xref:System.Int64>, aby upewnić się, że wszystkie wartości wyliczenia mogą być reprezentowane w programowaniu zgodnym ze specyfikacją CLS Języki.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej reguły, chyba że występują problemy z rozmiarem lub zgodnością <xref:System.Int32>, użyj programu. W sytuacjach, <xref:System.Int32> gdy nie jest wystarczająco duży, aby pomieścić wartości <xref:System.Int64>, użyj. Jeśli zgodność z poprzednimi wersjami wymaga mniejszego <xref:System.Byte> typu <xref:System.Int16>danych, użyj lub.
+Aby naprawić naruszenie tej reguły, chyba że występują problemy z rozmiarem lub zgodnością, użyj <xref:System.Int32>. W sytuacjach, w których <xref:System.Int32> nie jest wystarczająco duży, aby pomieścić wartości, użyj <xref:System.Int64>. Jeśli zgodność z poprzednimi wersjami wymaga mniejszego typu danych, należy użyć <xref:System.Byte> lub <xref:System.Int16>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -77,11 +77,11 @@ Poniższy przykład naprawia poprzednie naruszenie, zmieniając typ danych bazow
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1008 Wyliczenia powinny mieć wartość zerową](../code-quality/ca1008-enums-should-have-zero-value.md)
-- [CA1027 Oznacz typy wyliczeniowe atrybutem FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217 Nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Nie Nazwij wartości wyliczeniowych "zarezerwowane"](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: Nie określaj prefiksu wartości wyliczenia z nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1008: Wyliczenia powinny zawierać wartość zero](../code-quality/ca1008-enums-should-have-zero-value.md)
+- [CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217.md)
+- [CA1700: Nie nadawaj wartościom wyliczenia nazwy „Reserved”](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>Zobacz także
 

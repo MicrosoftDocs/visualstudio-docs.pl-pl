@@ -1,5 +1,5 @@
 ---
-title: 'CA1018: Oznacz atrybuty atrybutem AttributeUsage'
+title: 'CA1018: Oznacz atrybuty AttributeUsageAttribute'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 133ee073398817c037af95e2009c5acc98e1e5a2
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 041555ed8036c145963f00295365fb204f1879dd
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306133"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446752"
 ---
-# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Oznacz atrybuty atrybutem AttributeUsage
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Oznacz atrybuty AttributeUsageAttribute
 
 |||
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
-|Category|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -48,15 +48,15 @@ Aby naprawić naruszenie tej reguły, określ elementy docelowe dla atrybutu prz
 Przed wykluczeniem komunikatu należy usunąć naruszenie tej reguły. Nawet jeśli atrybut dziedziczy <xref:System.AttributeUsageAttribute>, atrybut powinien być obecny, aby uprościć konserwację kodu.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie zdefiniowano dwa atrybuty. `BadCodeMaintainerAttribute` niepoprawnie pomija instrukcję <xref:System.AttributeUsageAttribute> i `GoodCodeMaintainerAttribute` prawidłowo implementuje atrybut opisany wcześniej w tej sekcji. Należy pamiętać, że właściwość `DeveloperName` jest wymagana przez regułę projektowania [CA1019: Zdefiniuj metody dostępu dla argumentów atrybutów @ no__t-0 i są one dołączane do kompletności.
+W poniższym przykładzie zdefiniowano dwa atrybuty. `BadCodeMaintainerAttribute` niepoprawnie pomija instrukcję <xref:System.AttributeUsageAttribute> i `GoodCodeMaintainerAttribute` prawidłowo implementuje atrybut opisany wcześniej w tej sekcji. Należy zauważyć, że właściwość `DeveloperName` jest wymagana przez regułę projektowania [CA1019: Zdefiniuj metody dostępu dla argumentów atrybutów](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) i jest dołączana do kompletności.
 
 [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
 [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
-[CA1019: Zdefiniuj metody dostępu dla argumentów atrybutów @ no__t-0
+[CA1019: Zdefiniuj metody dostępu dla argumentów atrybutu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
-[CA1813: Unikaj niezapieczętowanych atrybutów @ no__t-0
+[CA1813: Unikaj niezapieczętowanych atrybutów](../code-quality/ca1813.md)
 
 ## <a name="see-also"></a>Zobacz także
 

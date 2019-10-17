@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fdbb6012fb1252c90014ba91caf8ad7dacf901c2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1617ad2d5132f22da3c25565e6310977b286eaef
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234860"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444327"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Unikaj przeciążeń w interfejsach widocznych dla modelu COM
 
@@ -56,7 +56,7 @@ void SomeMethod_3(int valueOne, int valueTwo);
 Klienci Visual Basic 6 COM nie mogą implementować metod interfejsu przy użyciu znaku podkreślenia w nazwie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
-Aby naprawić naruszenie tej reguły, Zmień nazwy przeciążonych metod tak, aby nazwy były unikatowe. Alternatywnie, ustaw interfejs jako niewidoczny dla modelu COM, zmieniając ułatwienia `internal` dostępu`Friend` do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](w programie) lub <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> stosując atrybut ustawiony `false`na.
+Aby naprawić naruszenie tej reguły, Zmień nazwy przeciążonych metod tak, aby nazwy były unikatowe. Alternatywnie, uczyń interfejs niewidoczny dla modelu COM, zmieniając dostępność na `internal` (`Friend` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) lub stosując atrybut <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> ustawiony na `false`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 Nie pomijaj ostrzeżeń dla tej reguły.
@@ -70,9 +70,9 @@ Poniższy przykład pokazuje interfejs, który narusza regułę i interfejs, kt�
 ## <a name="related-rules"></a>Powiązane reguły
 [CA1413: Unikaj pól niepublicznych w typach wartości widocznych dla modelu COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
-[CA1407: Unikaj statycznych elementów członkowskich w typach widocznych dla modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407: Unikaj składowych statycznych w typach widocznych dla modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
-[CA1017 Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017: Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Zobacz także
 

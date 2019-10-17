@@ -1,5 +1,5 @@
 ---
-title: 'CA1043: Używaj argumentów typu liczba całkowita lub ciąg dla indeksatorów'
+title: 'CA1043: Dla indeksatorów używaj argumentów integral lub string'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,31 +18,31 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 298c92263903c3799f1e7e184a554f896366566c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 10424344abc52d4911b7caf60e02b03e6ed6e96f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235843"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446623"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Używaj argumentów typu liczba całkowita lub ciąg dla indeksatorów
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Dla indeksatorów używaj argumentów integral lub string
 
 |||
 |-|-|
 |TypeName|UseIntegralOrStringArgumentForIndexers|
 |CheckId|CA1043|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ zawiera indeksator, który używa typu indeksu innego <xref:System.Int32?displayProperty=fullName>niż, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, lub <xref:System.String?displayProperty=fullName>.
+Typ zawiera indeksator używający typu indeksu innego niż <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName> lub <xref:System.String?displayProperty=fullName>.
 
 Domyślnie ta reguła sprawdza tylko typy publiczne i chronione, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Indeksatory, czyli właściwości indeksowane, powinny używać typów całkowitych lub ciągów dla indeksu. Te typy są zwykle używane do indeksowania struktur danych i zwiększają użyteczność biblioteki. <xref:System.Object> Użycie typu powinno być ograniczone do tych przypadków, w których nie można określić określonego typu Integer lub String w czasie projektowania. Jeśli projekt wymaga innych typów indeksu, należy rozważyć, czy typ reprezentuje logiczny magazyn danych. Jeśli nie reprezentuje logicznego magazynu danych, należy użyć metody.
+Indeksatory, czyli właściwości indeksowane, powinny używać typów całkowitych lub ciągów dla indeksu. Te typy są zwykle używane do indeksowania struktur danych i zwiększają użyteczność biblioteki. Użycie typu <xref:System.Object> powinno być ograniczone do tych przypadków, w których nie można określić określonego typu Integer lub String w czasie projektowania. Jeśli projekt wymaga innych typów indeksu, należy rozważyć, czy typ reprezentuje logiczny magazyn danych. Jeśli nie reprezentuje logicznego magazynu danych, należy użyć metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -64,7 +64,7 @@ Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lu
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie pokazano indeksator, który używa <xref:System.Int32> indeksu.
+W poniższym przykładzie pokazano indeksator używający indeksu <xref:System.Int32>.
 
 [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
 [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]
@@ -73,4 +73,4 @@ W poniższym przykładzie pokazano indeksator, który używa <xref:System.Int32>
 ## <a name="related-rules"></a>Powiązane reguły
 
 - [CA1023: Indeksatory nie powinny być wielowymiarowe](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
-- [CA1024: Użyj właściwości, jeśli to konieczne](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Używaj właściwości wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1024-use-properties-where-appropriate.md)

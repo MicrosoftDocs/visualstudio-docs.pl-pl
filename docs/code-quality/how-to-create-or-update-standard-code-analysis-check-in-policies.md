@@ -11,62 +11,62 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 738bb1bcf14d5b3459f325fe13eb3c4b0119e562
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816360"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448966"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Instrukcje: Tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 
-Możesz wymagać, można uruchomić analizę kodu dla wszystkich projektów kodu w projekcie DevOps platformy Azure w przy użyciu zasady analizy kodu ewidencjonowania. Wymaga analizy kodu może poprawić jakość kodu, który jest ewidencjonowany w kodzie podstawowym.
+Można wymagać uruchamiania analizy kodu dla wszystkich projektów kodu w projekcie usługi Azure DevOps za pomocą zasad ewidencjonowania analizy kodu. Wymaganie analizy kodu może poprawić jakość kodu, który jest sprawdzany w bazie kodu.
 
 > [!NOTE]
 > Ta funkcja jest dostępna tylko wtedy, gdy używasz Team Foundation Server.
 
-Zasady ewidencjonowania analizy kodu są ustawiane w ustawieniach projektu i mają zastosowanie do każdego projektu kodu. Przebiegi analizy kodu są skonfigurowane dla projektów kodu w pliku projektu (.xxproj) dla projektu kodu. Przebiegi analizy kodu są wykonywane na komputerze lokalnym. Po włączeniu zasad analizy kodu ewidencjonowania, muszą być skompilowane pliki w projekcie kodu, które mają być sprawdzane po ich ostatniej modyfikacji i uruchomienia analizy kodu zwrócić, zawiera co najmniej reguły w ustawieniach projektu odbywa się na komputerze, gdzie zmiany wprowadzono s.
+Zasady ewidencjonowania analizy kodu są ustawiane w ustawieniach projektu i stosowane do każdego projektu kodu. Przebiegi analizy kodu są skonfigurowane dla projektów kodu w pliku projektu (. xxproj) dla projektu kodu. Uruchomienia analizy kodu są wykonywane na komputerze lokalnym. Po włączeniu zasad zaewidencjonowania analizy kodu, pliki w projekcie kodu, które mają być zaewidencjonowane, muszą być kompilowane po ostatniej edycji i przebiegu analizy kodu, który zawiera, co najmniej reguły w ustawieniach projektu muszą zostać wykonane na komputerze, na którym zmiana zostały wykonane.
 
-- Dla kodu zarządzanego, Ustaw zasady ewidencjonowania, określając *zestaw reguł* zawierającą podzbiór reguł analizy kodu.
+- Dla kodu zarządzanego ustawia się zasady ewidencjonowania, określając *zestaw reguł* , który zawiera podzbiór reguł analizy kodu.
 
-- Dla kodu C/C++ w programie Visual Studio 2017 w wersji 15.6 i starszych wersjach zasad ewidencjonowania wymaga, że są uruchomione wszystkie reguły analizy kodu. Możesz dodać wstępne procesora dyrektywy można wyłączyć określone zasady dla poszczególnych projektów kodu projektu DevOps platformy Azure. W wersji 15.7 lub nowszej, możesz użyć **/ analyze: ruleset** Aby określić, które reguł do uruchomienia. Aby uzyskać więcej informacji, zobacz [przy użyciu zestawów reguł do określania reguł C++ do uruchomienia](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- W przypadku językaC++ C/Code w programie Visual Studio 2017 w wersji 15,6 lub starszej zasady ewidencjonowania wymagają uruchomienia wszystkich reguł analizy kodu. Można dodać dyrektywy poprzedzające procesor, aby wyłączyć określone reguły dla poszczególnych projektów kodu w projekcie usługi Azure DevOps. W 15,7 i nowszych można użyć **/analyze:** Rule, aby określić, które reguły mają być uruchamiane. Aby uzyskać więcej informacji, zobacz [używanie zestawów reguł do określania C++ reguł do uruchomienia](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
-Po określeniu zasad ewidencjonowania dla kodu zarządzanego, członkowie zespołu mogą wykonywać synchronizację z ich ustawienia analizy kodu dla projektów kodu do ustawień zasad projektu DevOps platformy Azure.
+Po określeniu zasad ewidencjonowania dla kodu zarządzanego członkowie zespołu mogą synchronizować swoje ustawienia analizy kodu dla projektów kodu z ustawieniami zasad projektu usługi Azure DevOps.
 
 ## <a name="to-open-the-check-in-policy-editor"></a>Aby otworzyć Edytor zasad ewidencjonowania
 
-1. W programie Team Explorer, kliknij prawym przyciskiem myszy nazwę projektu, wskaż opcję **ustawienia projektu**, a następnie kliknij przycisk **kontroli źródła**.
+1. W Team Explorer kliknij prawym przyciskiem myszy nazwę projektu, wskaż polecenie **Ustawienia projektu**, a następnie kliknij pozycję **Kontrola źródła**.
 
-1. W **kontroli źródła** okno dialogowe, wybierz opcję **zasad ewidencjonowania** kartę.
+1. W oknie dialogowym **Kontrola źródła** wybierz kartę **zasady ewidencjonowania** .
 
 1. Wykonaj jedną z następujących czynności:
 
-    - Kliknij przycisk **Dodaj** do tworzenia nowych zasad ewidencjonowania.
+    - Kliknij przycisk **Dodaj** , aby utworzyć nowe zasady ewidencjonowania.
 
-    - Kliknij dwukrotnie istniejące **analizy kodu** pozycja **typ zasad** listy, aby zmienić zasady.
+    - Kliknij dwukrotnie istniejący element **analizy kodu** na liście **Typ zasad** , aby zmienić zasady.
 
 ## <a name="to-set-policy-options"></a>Aby ustawić opcje zasad
 
-Zaznacz lub wyczyść następujące opcje:
+Zaznacz lub usuń zaznaczenie następujących opcji:
 
 |Opcja|Opis|
 |------------|-----------------|
-|**Wymuszanie zaewidencjonowanie obejmowało tylko pliki, które są częścią bieżącego rozwiązania.**|Analiza kodu można uruchomić tylko na pliki określone w plikach konfiguracji rozwiązania i projektu. Te zasady gwarantuje, że cały kod, który jest częścią rozwiązania są analizowane.|
-|**Wymuszanie analiza kodu C/C++ (/ analyze)**|Wymaga się, że wszystkie projekty C lub C++ być kompilowany / analyze — opcja kompilatora do uruchamiania analizy kodu, zanim może zostać sprawdzone.|
-|**Wymuszanie analizy kodu dla kodu zarządzanego**|Wymaga wszystkich zarządzanych projektów uruchamiania analizy kodu i kompilacji, zanim może zostać sprawdzone.|
+|**Wymuś zaewidencjonowanie tylko do plików, które są częścią bieżącego rozwiązania.**|Analiza kodu może być uruchamiana tylko na plikach określonych w plikach konfiguracji rozwiązania i projektu. Ta zasada gwarantuje, że jest analizowany cały kod, który jest częścią rozwiązania.|
+|**Wymuś analizę koduC++ C/Code (/analyze)**|Wymaga, aby wszystkie C C++ lub projekty zostały skompilowane przy użyciu opcji kompilatora/Analyze, aby uruchomić analizę kodu, zanim będzie można je zaewidencjonować.|
+|**Wymuszaj analizę kodu dla kodu zarządzanego**|Wymaga, aby wszystkie zarządzane projekty wykonywały analizę kodu i kompilację, zanim będzie można je zaewidencjonować.|
 
-## <a name="to-specify-a-managed-rule-set"></a>Aby określić zestaw reguł zarządzanych
+## <a name="to-specify-a-managed-rule-set"></a>Aby określić zarządzany zestaw reguł
 
-Z **Uruchom ten zestaw reguł** listy, użyj jednej z następujących metod:
+Z listy **Uruchom ten zestaw reguł** Użyj jednej z następujących metod:
 
-- Wybierz zestaw standardowych reguł firmy Microsoft.
+- Wybierz standardowy zestaw reguł firmy Microsoft.
 
-- Wybierz niestandardową regułę, ustaw, klikając  **\<wybierz zestaw reguł z kontroli źródła... >** . Następnie wpisz ścieżkę kontroli wersji, reguły, ustaw w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
+- Wybierz zestaw reguł niestandardowych, klikając **\<Select zestaw reguł z kontroli źródła... >** . Następnie wpisz ścieżkę kontroli wersji zestawu reguł w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
-Aby uzyskać więcej informacji o sposobie tworzenia i wdrażania reguły niestandardowe zasady ewidencjonowania, zobacz [Implementowanie niestandardowych zaewidencjonowania zasad dla zarządzanego kodu](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Aby uzyskać więcej informacji na temat sposobu tworzenia i implementowania niestandardowego zestawu reguł zaewidencjonowania, zobacz [implementowanie niestandardowych zasad ewidencjonowania dla kodu zarządzanego](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie i używanie zasad ewidencjonowania analizy kodu](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Tworzenie zasad zaewidencjonowania analizy kodu i korzystanie z nich](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

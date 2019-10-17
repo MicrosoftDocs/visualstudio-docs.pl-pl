@@ -1,5 +1,5 @@
 ---
-title: 'CA1031: Nie przechwytuj typów wyjątków ogólnych'
+title: 'CA1031: Nie przechwytuj wyjątków typów ogólnych'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,43 +18,43 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c1dc1e5ed18ddcd42d42c96f3f853808c58ade48
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 81bef833728f9de2b700d06fa198f51d1fb2578d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236067"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449326"
 ---
-# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Nie przechwytuj typów wyjątków ogólnych
+# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Nie przechwytuj wyjątków typów ogólnych
 
 |||
 |-|-|
 |TypeName|DoNotCatchGeneralExceptionTypes|
 |CheckId|CA1031|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
-Ogólny wyjątek, taki jak <xref:System.Exception?displayProperty=fullName> lub <xref:System.SystemException?displayProperty=fullName> , jest przechwytywany `catch` w instrukcji lub Ogólna klauzula catch, taka jak `catch()` .
+Ogólny wyjątek, taki jak <xref:System.Exception?displayProperty=fullName> lub <xref:System.SystemException?displayProperty=fullName>, jest przechwytywany w instrukcji `catch` lub jest używana Ogólna klauzula catch, taka jak `catch()`.
 
 ## <a name="rule-description"></a>Opis reguły
 Ogólne wyjątki nie powinny być przechwytywane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
-Aby naprawić naruszenie tej zasady, Przechwyć bardziej szczegółowy wyjątek lub ponownie Zgłoś wyjątek ogólny jako ostatnią instrukcję w `catch` bloku.
+Aby naprawić naruszenie tej zasady, Przechwyć bardziej szczegółowy wyjątek lub ponownie Zgłoś wyjątek ogólny jako ostatnią instrukcję w bloku `catch`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 Nie pomijaj ostrzeżeń dla tej reguły. Przechwytywanie typów wyjątków ogólnych może spowodować ukrycie problemów w czasie wykonywania z poziomu użytkownika biblioteki i utrudnienie debugowania.
 
 > [!NOTE]
-> Począwszy od .NET Framework 4, środowisko uruchomieniowe języka wspólnego (CLR) nie dostarcza już wyjątków uszkodzonych stanu występujących w systemie operacyjnym i kodzie zarządzanym, na przykład naruszeń dostępu [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]w, do obsługi przez kod zarządzany. Jeśli chcesz skompilować aplikację w .NET Framework 4 lub nowszej wersji i zachować obsługę wyjątków uszkodzonych Stanów, możesz zastosować <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atrybut do metody, która obsługuje wyjątek uszkodzony stan.
+> Począwszy od .NET Framework 4, środowisko uruchomieniowe języka wspólnego (CLR) nie dostarcza już wyjątków uszkodzonych stanu występujących w systemie operacyjnym i kodzie zarządzanym, takich jak naruszenia dostępu w [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], do obsługi przez kod zarządzany. Jeśli chcesz skompilować aplikację w .NET Framework 4 lub nowszej wersji i zachować obsługę wyjątków uszkodzonych Stanów, można zastosować atrybut <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> do metody, która obsługuje wyjątek uszkodzonego stanu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje typ, który narusza tę regułę i typ, który poprawnie implementuje `catch` blok.
+Poniższy przykład pokazuje typ, który narusza tę regułę i typ, który poprawnie implementuje blok `catch`.
 
 [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
 [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]
 [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]
 
 ## <a name="related-rules"></a>Powiązane reguły
-[CA2200: Zgłoś ponownie, aby zachować szczegóły stosu](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)
+[CA2200: Zgłoś ponownie wyjątek, aby zachować szczegóły stosu](../code-quality/ca2200.md)

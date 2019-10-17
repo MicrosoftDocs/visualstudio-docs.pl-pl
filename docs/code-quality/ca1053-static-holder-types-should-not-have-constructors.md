@@ -1,5 +1,5 @@
 ---
-title: 'CA1053: Statyczne typy przechowujące nie powinny mieć konstruktorów'
+title: 'CA1053: Typy obsługi statycznej nie powinny mieć konstruktorów'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,24 +14,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f63a5017b5bd3b552882a11d9796af2530dd5634
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235585"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449118"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: Statyczne typy posiadaczy nie powinny mieć domyślnych konstruktorów
+# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: statyczne typy posiadaczy nie powinny mieć domyślnych konstruktorów
 
 |||
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 > [!NOTE]
-> Reguła CA1053 jest łączona w [CA1052: Statyczne typy zbiorników powinny być](ca1052-static-holder-types-should-be-sealed.md) zapieczętowane w [analizatorach FxCop](fxcop-analyzers.yml).
+> Reguła CA1053 jest łączona w [CA1052: statyczne typy zbiorników powinny być zapieczętowane](ca1052-static-holder-types-should-be-sealed.md) w [analizatorach FxCop](fxcop-analyzers.yml).
 
 ## <a name="cause"></a>Przyczyna
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1010: Kolekcje powinny implementować interfejs ogólny'
+title: 'CA1010: Kolekcje powinny implementować interfejs generyczny'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 066b9d013847f5362ee0dd712002cf8578fb57a6
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d3e50fb93e8cdfe6f65fe1b2de1da54b58a6a8c9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236439"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449311"
 ---
-# <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Kolekcje powinny implementować interfejs ogólny
+# <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Kolekcje powinny implementować interfejs generyczny
 
 |||
 |-|-|
 |TypeName|CollectionsShouldImplementGenericInterface|
 |CheckId|CA1010|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejs, ale nie <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> implementuje interfejsu, a zestaw zawierający jest przeznaczony dla platformy .NET. Ta reguła ignoruje typy, <xref:System.Collections.IDictionary?displayProperty=fullName>które implementują.
+Typ implementuje interfejs <xref:System.Collections.IEnumerable?displayProperty=fullName>, ale nie implementuje interfejsu <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> i zawiera zestaw docelowy platformy .NET. Ta reguła ignoruje typy implementujące <xref:System.Collections.IDictionary?displayProperty=fullName>.
 
 Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to skonfigurować](#configurability).
 
@@ -68,18 +68,18 @@ Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lu
 
 ## <a name="example-violation"></a>Przykładowe naruszenie
 
-Poniższy przykład pokazuje klasę (typ referencyjny), która pochodzi od klasy niegenerycznej `CollectionBase` , która narusza tę regułę.
+W poniższym przykładzie pokazano klasę (typ referencyjny), która pochodzi od nieogólnej klasy `CollectionBase`, która narusza tę regułę.
 
 [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
 Aby naprawić naruszenie tej reguły, wykonaj jedną z następujących czynności:
 
 - Zaimplementuj interfejsy ogólne.
-- Zmień klasę bazową na typ, który implementuje zarówno interfejsy ogólne, jak i inne niż ogólne, takie jak `Collection<T>` Klasa.
+- Zmień klasę bazową na typ, który implementuje zarówno interfejsy ogólne, jak i inne niż ogólne, takie jak Klasa `Collection<T>`.
 
 ## <a name="fix-by-base-class-change"></a>Napraw według zmiany klasy bazowej
 
-Poniższy przykład naprawia naruszenie, zmieniając klasę bazową kolekcji z klasy niegenerycznej `CollectionBase` na klasę generyczną `Collection<T>` (`Collection(Of T)` w Visual Basic).
+Poniższy przykład naprawia naruszenie, zmieniając klasę bazową kolekcji z klasy niegenerycznej `CollectionBase` do generycznej `Collection<T>` (`Collection(Of T)` w Visual Basic) klasy.
 
 [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
@@ -87,19 +87,19 @@ Zmiana klasy bazowej już wydanej klasy jest traktowana jako istotna zmiana dla 
 
 ## <a name="fix-by-interface-implementation"></a>Naprawa przez implementację interfejsu
 
-Poniższy przykład naprawia naruszenie, implementując te interfejsy ogólne: `IEnumerable<T>`, `ICollection<T>`, i `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, i `IList(Of T)` w Visual Basic).
+Poniższy przykład naprawia naruszenie przez implementację tych interfejsów ogólnych: `IEnumerable<T>`, `ICollection<T>` i `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)` i `IList(Of T)` w Visual Basic).
 
 [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1005: Unikaj nadmiernego użycia parametrów w typach ogólnych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1000: Nie deklaruj statycznych składowych na typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1005: Unikaj nadużywania parametrów w typach ogólnych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 - [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002-do-not-expose-generic-lists.md)
 - [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004: Metody ogólne powinny podawać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1003: Użyj ogólnych wystąpień programu obsługi zdarzeń](../code-quality/ca1003-use-generic-event-handler-instances.md)
-- [CA1007 Używaj typów ogólnych, tam gdzie to konieczne](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1004: Metody ogólne powinny udostępniać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1003: Użyj wystąpień ogólnej procedury obsługi zdarzeń](../code-quality/ca1003-use-generic-event-handler-instances.md)
+- [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Zobacz także
 

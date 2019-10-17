@@ -1,5 +1,5 @@
 ---
-title: 'CA1036: Przesłaniaj metody porównywalnych typów'
+title: 'CA1036: Przesłaniaj metody na typach porównywalnych'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,31 +14,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be340314afe36f3a930474f345715965f566b2d4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: cf0fe86332093c9ac760418f311f16f090db5c9a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236003"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449266"
 ---
-# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Przesłaniaj metody porównywalnych typów
+# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Przesłaniaj metody na typach porównywalnych
 
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ implementuje <xref:System.IComparable?displayProperty=fullName> interfejs i nie przesłania <xref:System.Object.Equals%2A?displayProperty=fullName> ani nie przeciąża operatora specyficznego dla języka pod kątem równości, nierówności, mniejszej niż lub większej niż. Zasada nie zgłasza naruszenia, jeśli typ dziedziczy tylko implementację interfejsu.
+Typ implementuje interfejs <xref:System.IComparable?displayProperty=fullName> i nie przesłania <xref:System.Object.Equals%2A?displayProperty=fullName> ani nie przeciąża operatora specyficznego dla języka pod kątem równości, nierówności, mniejszej niż lub większej niż. Zasada nie zgłasza naruszenia, jeśli typ dziedziczy tylko implementację interfejsu.
 
 Domyślnie ta reguła sprawdza tylko typy publiczne i chronione, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Typy, które definiują niestandardowy porządek sortowania, <xref:System.IComparable> implementują interfejs. <xref:System.IComparable.CompareTo%2A> Metoda zwraca liczbę całkowitą, która wskazuje poprawną kolejność sortowania dla dwóch wystąpień typu. Ta reguła identyfikuje typy, które ustawiają kolejność sortowania. Ustawienie kolejności sortowania oznacza, że zwykłe znaczenie, nierówne, mniejsze niż i większe niż nie są stosowane. Po wprowadzeniu implementacji programu <xref:System.IComparable>, należy również przesłonić <xref:System.Object.Equals%2A> , aby zwracała wartości, które są spójne z <xref:System.IComparable.CompareTo%2A>. W przypadku zastąpienia <xref:System.Object.Equals%2A> i kodowania w języku, który obsługuje przeciążenia operatorów, należy również dostarczyć operatory, które są spójne z. <xref:System.Object.Equals%2A>
+Typy, które definiują niestandardowy porządek sortowania, implementują interfejs <xref:System.IComparable>. Metoda <xref:System.IComparable.CompareTo%2A> zwraca liczbę całkowitą, która wskazuje poprawną kolejność sortowania dla dwóch wystąpień typu. Ta reguła identyfikuje typy, które ustawiają kolejność sortowania. Ustawienie kolejności sortowania oznacza, że zwykłe znaczenie, nierówne, mniejsze niż i większe niż nie są stosowane. Po wprowadzeniu implementacji <xref:System.IComparable> należy również przesłonić <xref:System.Object.Equals%2A>, aby zwracały wartości spójne z <xref:System.IComparable.CompareTo%2A>. W przypadku zastąpienia <xref:System.Object.Equals%2A> i kodowania w języku, który obsługuje przeciążenia operatorów, należy również dostarczyć operatory spójne z <xref:System.Object.Equals%2A>.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -60,7 +60,7 @@ W C#programie tokeny służące do reprezentowania tych operatorów są następu
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Można bezpiecznie pominąć ostrzeżenie z reguły CA1036, gdy naruszenie jest spowodowane przez brakujące operatory, a język programowania nie obsługuje przeciążania operatora, tak jak w przypadku Visual Basic. Jeśli określisz, że implementacja operatorów nie ma sensu w kontekście aplikacji, można także bezpiecznie pominąć ostrzeżenie z tej reguły, gdy zostanie ona wykorzystana w przypadku operatorów równości innych niż op_Equality. Należy jednak zawsze przesłonić op_Equality i operator = = w przypadku przesłonięcia <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+Można bezpiecznie pominąć ostrzeżenie z reguły CA1036, gdy naruszenie jest spowodowane przez brakujące operatory, a język programowania nie obsługuje przeciążania operatora, tak jak w przypadku Visual Basic. Jeśli określisz, że implementacja operatorów nie ma sensu w kontekście aplikacji, można także bezpiecznie pominąć ostrzeżenie z tej reguły, gdy zostanie ona wykorzystana w przypadku operatorów równości innych niż op_Equality. Należy jednak zawsze przesłonić op_Equality i operator = = w przypadku zastąpienia <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
 ## <a name="configurability"></a>Określając
 
@@ -74,11 +74,11 @@ Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lu
 
 ## <a name="examples"></a>Przykłady
 
-Poniższy kod zawiera typ, który jest poprawnie zaimplementowany <xref:System.IComparable>. Komentarze do <xref:System.Object.Equals%2A> kodu identyfikują metody, które spełniają różne reguły, które są związane <xref:System.IComparable> z i interfejsem.
+Poniższy kod zawiera typ, który poprawnie implementuje <xref:System.IComparable>. Komentarze do kodu identyfikują metody, które spełniają różne reguły, które są związane z <xref:System.Object.Equals%2A> i interfejs <xref:System.IComparable>.
 
 [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
-Poniższy kod aplikacji testuje zachowanie <xref:System.IComparable> implementacji, która była pokazana wcześniej.
+Poniższy kod aplikacji testuje zachowanie implementacji <xref:System.IComparable>, która była pokazana wcześniej.
 
 [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 

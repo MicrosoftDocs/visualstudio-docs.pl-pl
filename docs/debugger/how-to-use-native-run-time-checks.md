@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Użyj natywnych testów w czasie wykonywania | Microsoft Docs'
+title: 'Instrukcje: korzystanie z natywnych testów w czasie wykonywania | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 3cef755721a9c5b917b080fa10f1819055a18ed7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211016"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430554"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Instrukcje: Korzystanie z natywnego sprawdzania w trakcie wykonywania
-W wizualizacji C++, można użyć natywnej [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:
+# <a name="how-to-use-native-run-time-checks"></a>Porady: Korzystanie z macierzystego sprawdzania w trakcie wykonywania
+W projekcie programu Visual C++ Studio można użyć natywnej [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:
 
 - Uszkodzenie wskaźnika stosu.
 
@@ -57,7 +57,7 @@ W wizualizacji C++, można użyć natywnej [runtime_checks](/cpp/preprocessor/ru
 
 - Utrata danych w przypisaniu do krótszej zmiennej.
 
-  Jeśli używasz **/RTC** z zoptymalizowaną ( **/o**) kompilacją, wynik błędu kompilatora. Jeśli w zoptymalizowanej `runtime_checks` kompilacji używasz dyrektywy pragma, pragma nie ma żadnego wpływu.
+  Jeśli używasz **/RTC** z zoptymalizowaną ( **/o**) kompilacją, wynik błędu kompilatora. Jeśli w zoptymalizowanej kompilacji używasz dyrektywy pragma `runtime_checks`, pragma nie ma żadnego wpływu.
 
   Podczas debugowania programu, który ma włączone sprawdzanie czasu wykonywania, domyślną akcją jest zatrzymanie i przerwanie działania programu w debugerze w przypadku wystąpienia błędu w czasie wykonywania. Można zmienić to zachowanie domyślne dla dowolnego sprawdzenia w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).
 
@@ -75,7 +75,7 @@ W wizualizacji C++, można użyć natywnej [runtime_checks](/cpp/preprocessor/ru
 
 ### <a name="to-modify-native-run-time-check-behavior"></a>Aby zmodyfikować natywne zachowanie sprawdzania w czasie wykonywania
 
-- `runtime_checks` Użyj dyrektywy pragma.
+- Użyj dyrektywy pragma `runtime_checks`.
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie w programie Visual Studio](../debugger/index.yml)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1008: Typy wyliczeniowe powinny mieć wartość zero'
+title: 'CA1008: Wyliczenia powinny mieć wartość zero'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,25 +18,25 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f981d7ec12d49acc0e3d33ded5b27e855d9f0923
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236488"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441681"
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Typy wyliczeniowe powinny mieć wartość zero
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Wyliczenia powinny mieć wartość zero
 
 |||
 |-|-|
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Rozdzielenie — gdy zostanie wyświetlony monit o dodanie wartości **Brak** do wyliczenia bez flagi. Przerywanie — gdy zostanie wyświetlony monit o zmianę nazwy lub usunięcie wartości wyliczenia.|
 
 ## <a name="cause"></a>Przyczyna
 
-Wyliczenie bez zastosowania <xref:System.FlagsAttribute?displayProperty=fullName> nie definiuje elementu członkowskiego, który ma wartość zero. Lub Wyliczenie, które ma zastosowanie <xref:System.FlagsAttribute> , definiuje element członkowski, który ma wartość zero, ale jego nazwą nie jest "none". Lub, Wyliczenie definiuje wiele elementów członkowskich o wartości zero.
+Wyliczenie bez zastosowanego <xref:System.FlagsAttribute?displayProperty=fullName> nie definiuje elementu członkowskiego, który ma wartość zero. Lub Wyliczenie, które ma zastosowany <xref:System.FlagsAttribute> definiuje element członkowski, który ma wartość zero, ale jego nazwą nie jest "none". Lub, Wyliczenie definiuje wiele elementów członkowskich o wartości zero.
 
 Domyślnie ta reguła sprawdza się tylko na wyliczeniu widocznym na zewnątrz, ale [można to skonfigurować](#configurability).
 
@@ -44,7 +44,7 @@ Domyślnie ta reguła sprawdza się tylko na wyliczeniu widocznym na zewnątrz, 
 
 Wartość domyślna niezainicjowanego wyliczenia, podobnie jak inne typy wartości, wynosi zero. Wyliczenie z atrybutami bez flag powinna definiować element członkowski, który ma wartość zero, aby wartość domyślna była prawidłową wartością wyliczenia. W razie potrzeby Nadaj nazwę elementowi członkowskiemu "none". W przeciwnym razie Przypisz zero do najczęściej używanej składowej. Domyślnie, jeśli wartość pierwszego wyliczenia elementu członkowskiego nie jest ustawiona w deklaracji, jego wartość wynosi zero.
 
-Jeśli Wyliczenie, które ma <xref:System.FlagsAttribute> zastosowanie definiuje element członkowski o wartości zero, jego nazwa powinna mieć wartość "Brak", aby wskazać, że nie zostały ustawione żadne wartości w wyliczeniu. Użycie elementu członkowskiego o wartości zerowej do dowolnego innego celu jest sprzeczne z użyciem <xref:System.FlagsAttribute> w, że operatory i i lub bitowe są bezużyteczne dla elementu członkowskiego. Oznacza to, że tylko jeden element członkowski powinien mieć przypisaną wartość zero. Jeśli wiele elementów członkowskich, które mają wartość zero, występuje w wyliczeniu z atrybutami flagi, `Enum.ToString()` zwraca nieprawidłowe wyniki dla elementów członkowskich, które nie są równe zero.
+Jeśli Wyliczenie, które ma <xref:System.FlagsAttribute>, definiuje element członkowski o wartości zero, jego nazwa powinna być równa "none", aby wskazać, że nie zostały ustawione żadne wartości w wyliczeniu. Korzystanie z elementu członkowskiego o wartości zerowej do dowolnego innego celu jest sprzeczne z użyciem <xref:System.FlagsAttribute> w tym, że operatory i i lub bitowe są bezużyteczne dla elementu członkowskiego. Oznacza to, że tylko jeden element członkowski powinien mieć przypisaną wartość zero. Jeśli wiele elementów członkowskich, które mają wartość zero, występuje w wyliczeniu z atrybutami flagi, `Enum.ToString()` zwraca nieprawidłowe wyniki dla elementów członkowskich, które nie są równe zero.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -66,7 +66,7 @@ Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lu
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie przedstawiono dwa wyliczenia, które spełniają zasadę i Wyliczenie, `BadTraceOptions`które naruszają daną regułę.
+W poniższym przykładzie przedstawiono dwa wyliczenia, które spełniają zasadę i Wyliczenie, `BadTraceOptions`, które naruszają regułę.
 
 [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
 [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
@@ -74,11 +74,11 @@ W poniższym przykładzie przedstawiono dwa wyliczenia, które spełniają zasad
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA2217 Nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Nie Nazwij wartości wyliczeniowych "zarezerwowane"](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: Nie określaj prefiksu wartości wyliczenia z nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
-- [CA1028 Magazyn wyliczeniowy powinien mieć wartość Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
-- [CA1027 Oznacz typy wyliczeniowe atrybutem FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217.md)
+- [CA1700: Nie nadawaj wartościom wyliczenia nazwy „Reserved”](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1028: Magazyn typu wyliczeniowego powinien być typu Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+- [CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Zobacz także
 

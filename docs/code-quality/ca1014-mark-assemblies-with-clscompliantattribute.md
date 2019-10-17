@@ -1,5 +1,5 @@
 ---
-title: 'CA1014: Oznacz zestawy atrybutem CLSCompliant'
+title: 'CA1014: Oznacz zestawy za pomocą CLSCompliantAttribute'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,24 +18,24 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 387eb464959fba522e31f9586998335cb306d844
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c615015fac5e8e9b60425679e116b8c7680ea637
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236327"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441642"
 ---
-# <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Oznacz zestawy atrybutem CLSCompliant
+# <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Oznacz zestawy za pomocą CLSCompliantAttribute
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithClsCompliant|
 |CheckId|CA1014|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
-Zestaw nie ma <xref:System.CLSCompliantAttribute?displayProperty=fullName> zastosowanego atrybutu.
+Zestaw nie ma zastosowanego atrybutu <xref:System.CLSCompliantAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
 The Common Language Specification (CLS) definiuje ograniczenia nazw, typów danych i reguł, z którymi muszą być zgodne zestawy, jeśli zostaną użyte w językach programowania. Dobry projekt wymusza, że wszystkie zestawy jawnie wskazują zgodność ze specyfikacją CLS z <xref:System.CLSCompliantAttribute>. Jeśli atrybut nie jest obecny w zestawie, zestaw nie jest zgodny.
@@ -49,7 +49,7 @@ Aby naprawić naruszenie tej reguły, Dodaj atrybut do zestawu. Zamiast oznacza�
 Nie pomijaj ostrzeżeń dla tej reguły. Jeśli nie chcesz, aby zestaw był zgodny, zastosuj atrybut i ustaw jego wartość na `false`.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje zestaw, który ma <xref:System.CLSCompliantAttribute?displayProperty=fullName> atrybut zastosowany, który deklaruje zgodny ze specyfikacją CLS.
+W poniższym przykładzie przedstawiono zestaw, który ma atrybut <xref:System.CLSCompliantAttribute?displayProperty=fullName>, który deklaruje zgodność ze specyfikacją CLS.
 
 [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
 [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]

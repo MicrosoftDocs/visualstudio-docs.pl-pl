@@ -1,5 +1,5 @@
 ---
-title: 'CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter'
+title: 'CA1702: Wyrazy złożone należy zapisywać z uwzględnieniem wielkości liter'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: ea3285bfd5769a2bd37363d5a9eb6179b9cef563
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234334"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439901"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Wyrazy złożone należy zapisywać z uwzględnieniem wielkości liter
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Przerywanie — gdy są uruchamiane w zestawach.<br /><br /> Rozdzielenie — gdy jest uruchamiany w parametrach typu.|
 
 ## <a name="cause"></a>Przyczyna
@@ -65,9 +65,9 @@ Jeśli obie części wyrazu złożonego są rozpoznawane przez słownik pisowni,
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1701 Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Identyfikatory powinny różnić się więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Zobacz także
 

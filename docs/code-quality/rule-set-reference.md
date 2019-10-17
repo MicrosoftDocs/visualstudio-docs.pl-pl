@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da0d70af989d759df94eb2d22606ad90373936ad
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585241"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448831"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Odwołanie zestawu reguł analizy kodu
 
@@ -23,9 +23,9 @@ Podczas konfigurowania starszej analizy dla projektów kodu zarządzanego w prog
 > [!NOTE]
 > Zestawy reguł w tej sekcji odnoszą się do starszej analizy. Aby uzyskać informacje o zestawach reguł dostępnych dla pakietów analizatora kodu, zobacz [Korzystanie z zestawów reguł z analizami kodu](analyzer-rule-sets.md).
 
-Można użyć jednego z tych zestawów reguł wbudowanych lub możesz [Dostosuj zestaw reguł](../code-quality/how-to-create-a-custom-rule-set.md) zgodnie z wymaganiami projektu. W przypadku dołączania wielu zestawów reguł, które zawierają tę samą regułę w zestawie reguł niestandardowych, ta reguła występuje tylko raz w zestawie reguł niestandardowych.
+Można użyć jednego z tych wbudowanych zestawów reguł lub [dostosować zestaw reguł](../code-quality/how-to-create-a-custom-rule-set.md) tak, aby odpowiadał wymaganiom projektu. W przypadku dołączania wielu zestawów reguł, które zawierają tę samą regułę w zestawie reguł niestandardowych, ta reguła występuje tylko raz w zestawie reguł niestandardowych.
 
-W tematach w tej sekcji opisano wbudowane reguły zestawów i zasady (lub ostrzeżenia) zawierają.
+W tematach w tej sekcji opisano wbudowane zestawy reguł oraz reguły (lub ostrzeżenia), które zawierają.
 
 | Zestaw reguł | Uwzględnione reguły |
 | - | - |

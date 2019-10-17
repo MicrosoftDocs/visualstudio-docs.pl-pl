@@ -1,5 +1,5 @@
 ---
-title: 'CA1060: Przenieś metody P-Invoke do klasy NativeMethods'
+title: 'CA1060: Przenieś wywołania P-Invoke do klasy NativeMethods'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa705654a5cc4122e5ee554fe050722d7883970
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: da4713c32e4e9313a55ea2944bf4990a0b9c29c3
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235481"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440811"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś metody P/Invoke do klasy NativeMethods
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś P/Invokes do klasy NativeMethods
 
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -39,7 +39,7 @@ Metoda używa usług wywołania platformy w celu uzyskania dostępu do kodu niez
 
 ## <a name="rule-description"></a>Opis reguły
 
-Metody wywołania platformy, takie jak te, które są oznaczone przy użyciu <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atrybutu lub metod, które są zdefiniowane za `Declare` pomocą słowa kluczowego w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], uzyskują dostęp do niezarządzanego kodu. Metody te powinny znajdować się w jednej z następujących klas:
+Metody wywoływania platformy, takie jak te, które są oznaczone przy użyciu atrybutu <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> lub metod, które są zdefiniowane za pomocą słowa kluczowego `Declare` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], uzyskują dostęp do niezarządzanego kodu. Metody te powinny znajdować się w jednej z następujących klas:
 
 - **NativeMethods** — Ta klasa nie pomija przechodzenia stosu dla niezarządzanego kodu. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> nie może być zastosowany do tej klasy). Ta klasa jest dla metod, które mogą być używane w dowolnym miejscu, ponieważ zostanie wykonane przeszukiwanie stosu.
 
@@ -47,7 +47,7 @@ Metody wywołania platformy, takie jak te, które są oznaczone przy użyciu <xr
 
 - **UnsafeNativeMethods** — Ta klasa pomija przeszukiwania stosu dla niezarządzanego kodu. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> jest zastosowany do tej klasy). Ta klasa jest dla metod, które są potencjalnie niebezpieczne. Każdy obiekt wywołujący te metody musi wykonać pełny przegląd zabezpieczeń, aby upewnić się, że użycie jest bezpieczne, ponieważ nie zostanie wykonane żadne przeszukiwanie stosu.
 
-Klasy te są zadeklarowane `internal` jako`Friend`(, w Visual Basic) i deklarują Konstruktor prywatny, aby zapobiec tworzeniu nowych wystąpień. Metody w tych klasach powinny mieć `static` wartość `internal` i`Shared` ( `Friend` i w Visual Basic).
+Klasy te są zadeklarowane jako `internal` (`Friend`, in Visual Basic) i deklarują Konstruktor prywatny, aby zapobiec tworzeniu nowych wystąpień. Metody w tych klasach powinny mieć `static` i `internal` (`Shared` i `Friend` w Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 Aby naprawić naruszenie tej reguły, Przenieś metodę do odpowiedniej klasy **NativeMethods** . W przypadku większości aplikacji przeniesienie P/Invoke do nowej klasy o nazwie **NativeMethods** jest wystarczające.
@@ -92,7 +92,7 @@ W poniższym przykładzie przedstawiono Właściwość **Environment.** nierucho
 ## <a name="unsafenativemethods-example"></a>Przykład UnsafeNativeMethods
 
 ### <a name="description"></a>Opis
-Metody P/Invoke, które nie mogą być bezpiecznie wywoływane i mogą spowodować, że efekty uboczne powinny zostać umieszczone w klasie o nazwie **UnsafeNativeMethods**. Metody te powinny być ściśle sprawdzone, aby upewnić się, że nie są narażone na użytkownika przypadkowo. Reguła [CA2118: Przejrzyj SuppressUnmanagedCodeSecurityAttribute użycie](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) może Ci pomóc. Alternatywnie metody powinny mieć inne uprawnienia, które są żądane, zamiast **UnmanagedCode** , gdy ich używają.
+Metody P/Invoke, które nie mogą być bezpiecznie wywoływane i mogą spowodować, że efekty uboczne powinny zostać umieszczone w klasie o nazwie **UnsafeNativeMethods**. Metody te powinny być ściśle sprawdzone, aby upewnić się, że nie są narażone na użytkownika przypadkowo. Reguła [CA2118: przegląd użycia SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118.md) może Ci pomóc. Alternatywnie metody powinny mieć inne uprawnienia, które są żądane, zamiast **UnmanagedCode** , gdy ich używają.
 
 Poniższy przykład przedstawia **kursor. Ukryj** metodę, która otacza funkcję **ShowCursor** z User32. dll.
 

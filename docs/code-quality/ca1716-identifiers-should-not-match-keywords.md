@@ -1,5 +1,5 @@
 ---
-title: 'CA1716: Identyfikatory nie powinny być zgodne ze słowami kluczowymi'
+title: 'CA1716: Identyfikatory nie powinny odpowiadać słowom kluczowym'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3f030c9c64d975d93aa2aeee90d37f765a6a63
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b52fb16d2cf5e56ded5cf8f4ed9e8e25c942d7c9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234043"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438980"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identyfikatory nie powinny być zgodne ze słowami kluczowymi
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identyfikatory nie powinny odpowiadać słowom kluczowym
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna

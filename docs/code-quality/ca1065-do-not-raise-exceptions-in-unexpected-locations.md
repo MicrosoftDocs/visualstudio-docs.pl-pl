@@ -1,5 +1,5 @@
 ---
-title: 'CA1065: Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach'
+title: 'CA1065: Nie należy wyrzucać wyjątków w nieoczekiwanych lokalizacjach'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 93233f4c4fe7d718b128d569ae2fa55858f2453b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235247"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440595"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie należy wyrzucać wyjątków w nieoczekiwanych lokalizacjach
 
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
@@ -66,13 +66,13 @@ Właściwości są zasadniczo polami inteligentnymi. W związku z tym powinny on
 
 Następujące wyjątki mogą być zgłaszane z metody get właściwości:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>i wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName> i wszystkie pochodne
 
-- <xref:System.ArgumentException?displayProperty=fullName>(tylko ze indeksowanych Get)
+- <xref:System.ArgumentException?displayProperty=fullName> (tylko ze indeksowanych Get)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(tylko ze indeksowanych Get)
+- <xref:System.Collections.Generic.KeyNotFoundException> (tylko ze indeksowanych Get)
 
 ### <a name="event-accessor-methods"></a>Metody dostępu do zdarzeń
 
@@ -80,11 +80,11 @@ Metody dostępu zdarzeń powinny być prostymi operacjami, które nie generują 
 
 Następujące wyjątki mogą być zgłaszane z metody dostępu do zdarzeń:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>i wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName> i wszystkie pochodne
 
-- <xref:System.ArgumentException>i pochodne
+- <xref:System.ArgumentException> i pochodne
 
 ### <a name="equals-methods"></a>Equals — metody
 
@@ -94,7 +94,7 @@ Następujące metody **równości** nie powinny generować wyjątków:
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Metoda **Equals** powinna zwracać `true` lub `false` zamiast zgłaszać wyjątek. Na przykład, jeśli wartość Equals jest przenoszona dwa niezgodne typy, należy po `false` prostu zwrócić zamiast <xref:System.ArgumentException>wyrzucać.
+Metoda **Equals** powinna zwracać `true` lub `false` zamiast zgłaszać wyjątek. Na przykład jeśli wartość Equals jest przenoszona dwa niezgodne typy, należy po prostu zwrócić `false` zamiast zgłaszać <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Metody GetHashCode
 
@@ -106,11 +106,11 @@ Następujące metody **GetHashCode** zazwyczaj nie generują wyjątków:
 
 **GetHashCode** zawsze powinna zwracać wartość. W przeciwnym razie można utracić elementy w tabeli skrótów.
 
-Wersje **GetHashCode** , które przyjmują argument, mogą zgłosić <xref:System.ArgumentException>. Jednak **obiekt. GetHashCode** nigdy nie powinien zgłosić wyjątku.
+Wersje **GetHashCode** , które przyjmują argument mogą zgłosić <xref:System.ArgumentException>. Jednak **obiekt. GetHashCode** nigdy nie powinien zgłosić wyjątku.
 
 ### <a name="tostring-methods"></a>Metody ToString
 
-Debuger używa <xref:System.Object.ToString%2A?displayProperty=fullName> do wyświetlania informacji o obiektach w formacie ciągu. W związku z tym **ToString** nie powinien zmieniać stanu obiektu i nie powinien zgłaszać wyjątków.
+Debuger używa <xref:System.Object.ToString%2A?displayProperty=fullName> w celu ułatwienia wyświetlania informacji o obiektach w formacie ciągu. W związku z tym **ToString** nie powinien zmieniać stanu obiektu i nie powinien zgłaszać wyjątków.
 
 ### <a name="static-constructors"></a>Konstruktory statyczne
 
@@ -122,13 +122,13 @@ Zgłaszanie wyjątku od finalizatora powoduje, że środowisko CLR może szybko 
 
 ### <a name="dispose-methods"></a>Metody Dispose
 
-<xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Metoda nie powinna zgłosić wyjątku. Metoda Dispose jest często wywoływana jako część logiki oczyszczania w `finally` klauzuli. W związku z tym jawne zgłaszanie wyjątku z metody Dispose wymusza, aby użytkownik dodał obsługę `finally` wyjątków wewnątrz klauzuli.
+Metoda <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> nie powinna zgłaszać wyjątku. Metoda Dispose jest często wywoływana jako część logiki oczyszczania w klauzuli `finally`. W związku z tym jawne zgłaszanie wyjątku z metody Dispose wymusza, aby użytkownik dodał obsługę wyjątków wewnątrz klauzuli `finally`.
 
 Ścieżka kodu **Dispose (false)** nigdy nie powinna zgłaszać wyjątków, ponieważ metoda Dispose jest niemal zawsze wywoływana z finalizatora.
 
 ### <a name="equality-operators--"></a>Operatory równości (= =,! =)
 
-Podobnie jak metody Equals, operatory równości powinny zwracać `true` lub `false`i nie powinny zgłaszać wyjątków.
+Podobnie jak metody Equals, operatory równości powinny zwracać wartość `true` lub `false` i nie powinny zgłaszać wyjątków.
 
 ### <a name="implicit-cast-operators"></a>Operatory rzutowania niejawnego
 
@@ -146,7 +146,7 @@ Jeśli naruszenie zostało spowodowane przez deklarację wyjątku zamiast zgłos
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątków](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątku](../code-quality/ca2219.md)
 
 ## <a name="see-also"></a>Zobacz także
 

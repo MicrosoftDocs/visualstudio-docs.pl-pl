@@ -7,17 +7,17 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5e07f1e9ce83f36e6ecfbae148c84d18f40ff1
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015962"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448645"
 ---
 # <a name="best-practices-and-examples-sal"></a>Najlepsze praktyki i przykłady (SAL)
 Oto kilka sposobów, aby maksymalnie wykorzystać możliwości języka z adnotacjami kodu źródłowego (SAL) i uniknąć niektórych typowych problemów.
 
-## <a name="_in_"></a>\_W\_
+## <a name="_in_"></a>\_In @ no__t-1
 
 Jeśli funkcja ma być zapisu w elemencie, użyj `_Inout_` zamiast `_In_`. Jest to szczególnie istotne w przypadku zautomatyzowanej konwersji ze starszych makr na SAL. Przed SAL, wielu programistów używa makr jako komentarzy — makra o nazwach `IN`, `OUT`, `IN_OUT` lub wariantów tych nazw. Chociaż zalecamy przekonwertowanie tych makr na SAL, Zachęcamy również do pomyślnego przeprowadzenia konwersji, ponieważ kod może ulec zmianie od momentu zapisania oryginalnego prototypu, a stare makro może nie odzwierciedlać tego kodu. Należy zwrócić szczególną uwagę na to, że makro komentarza `OPTIONAL` jest często umieszczane nieprawidłowo — na przykład po niewłaściwej stronie przecinka.
 
@@ -42,7 +42,7 @@ void Func2(_Inout_ PCHAR p1)
 }
 ```
 
-## <a name="_opt_"></a>\_opt\_
+## <a name="_opt_"></a>\_opt @ no__t-1
 
 Jeśli obiekt wywołujący nie może przekazać wskaźnika o wartości null, użyj `_In_` lub `_Out_` zamiast `_In_opt_` lub `_Out_opt_`. Ma to zastosowanie nawet do funkcji, która sprawdza jej parametry i zwraca błąd, jeśli ma wartość NULL, gdy nie powinna być. Mimo że funkcja sprawdza, czy jej parametr jest nieoczekiwany NULL i zwraca bezproblemowo dobry sposób kodowania, nie oznacza, że adnotacja parametru może być typu opcjonalnego (`_*Xxx*_opt_`).
 
@@ -245,4 +245,4 @@ W tym przykładzie `_Out_opt_` wskazuje, że wskaźnik może mieć wartość NUL
 [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)  
 [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)  
 [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
-[Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)  
+[Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)

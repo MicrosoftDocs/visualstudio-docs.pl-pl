@@ -1,5 +1,5 @@
 ---
-title: 'CA1062: Waliduj argumenty metod publicznych'
+title: CA1062 Walidacja argumentów metod publicznych
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,35 +17,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8106a4c0244cbd79e88a2bdc50e04ea74627dab4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6019956d37d420b72275223148c2a3468a820884
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235338"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440707"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Waliduj argumenty metod publicznych
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062 Walidacja argumentów metod publicznych
 
 |||
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Widoczna na zewnątrz Metoda odwołuje się do jednego z argumentów odwołania bez weryfikowania, czy ten argument `null` jest`Nothing` (w Visual Basic).
+Widoczna na zewnątrz Metoda odwołuje się do jednego z argumentów odwołania bez sprawdzania, czy ten argument jest `null` (`Nothing` w Visual Basic).
 
 ## <a name="rule-description"></a>Opis reguły
 
-Wszystkie argumenty odwołania, które są przekazane do widocznych zewnętrznie metod, powinny `null`być sprawdzane względem. W razie potrzeby throw <xref:System.ArgumentNullException> , gdy argument ma `null`wartość.
+Wszystkie argumenty odwołania, które są przekazane do widocznych zewnętrznie metod, powinny być sprawdzane pod kątem `null`. W razie potrzeby Zgłoś <xref:System.ArgumentNullException>, gdy argument jest `null`.
 
-Jeśli metodę można wywołać z nieznanego zestawu, ponieważ jest ona zadeklarowana jako publiczna lub chroniona, należy zweryfikować wszystkie parametry metody. Jeśli metoda jest przeznaczona do wywoływania tylko przez znane zestawy, należy wprowadzić metodę wewnętrzną i zastosować <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybut do zestawu, który zawiera metodę.
+Jeśli metodę można wywołać z nieznanego zestawu, ponieważ jest ona zadeklarowana jako publiczna lub chroniona, należy zweryfikować wszystkie parametry metody. Jeśli metoda jest przeznaczona do wywoływania tylko przez znane zestawy, należy wprowadzić metodę wewnętrzną i zastosować <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybutu do zestawu, który zawiera metodę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej reguły, sprawdź poprawność każdego argumentu odwołania `null`względem.
+Aby naprawić naruszenie tej zasady, sprawdź poprawność każdego argumentu odwołania dla `null`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -76,7 +76,7 @@ namespace DesignLibrary
         {
             if (input == null)
             {
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
             }
             if (input.Length != 0)
             {
@@ -107,7 +107,7 @@ Namespace DesignLibrary
         Sub Validate(ByVal input As String)
 
             If input Is Nothing Then
-                Throw New ArgumentNullException("input")
+                Throw New ArgumentNullException(NameOf(input))
             End If
 
             If input.Length <> 0 Then
@@ -123,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>Przykład
 
-Konstruktory kopiujące wypełniające pola lub właściwości, które są obiektami odniesienia, mogą również naruszać regułę CA1062. Naruszenie występuje, ponieważ skopiowany obiekt, który jest przesyłany do konstruktora kopiującego, `null` może`Nothing` być (w Visual Basic). Aby rozwiązać ten problem, należy użyć statycznej metody udostępnionej w Visual Basic), aby sprawdzić, czy skopiowany obiekt nie ma wartości null.
+Konstruktory kopiujące wypełniające pola lub właściwości, które są obiektami odniesienia, mogą również naruszać regułę CA1062. Naruszenie występuje, ponieważ skopiowany obiekt, który jest przesyłany do konstruktora kopiującego, może być `null` (`Nothing` w Visual Basic). Aby rozwiązać ten problem, należy użyć statycznej metody udostępnionej w Visual Basic), aby sprawdzić, czy skopiowany obiekt nie ma wartości null.
 
-W poniższym `Person` przykładzie `other` klasy obiekt, `Person` który jest przesyłany do konstruktora kopiującego może być `null`.
+W poniższym przykładzie klasy `Person` obiekt `other`, który jest przesyłany do konstruktora kopiującego `Person` może być `null`.
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>Przykład
 
-W poniższym `Person` `PassThroughNonNull` , zmienionym przykładzie, obiekt,któryjestprzesyłanydokonstruktorakopiującego,jestnajpierwsprawdzanypodkątemwartościnullwmetodzie.`other`
+W poniższym przykładzie zmienionym `Person`, obiekt `other`, który jest przesyłany do konstruktora kopiującego, jest najpierw sprawdzany pod kątem wartości null w metodzie `PassThroughNonNull`.
 
 ```csharp
 public class Person
@@ -175,7 +175,7 @@ public class Person
     private static Person PassThroughNonNull(Person person)
     {
         if (person == null)
-            throw new ArgumentNullException("person");
+            throw new ArgumentNullException(nameof(person));
         return person;
     }
 }

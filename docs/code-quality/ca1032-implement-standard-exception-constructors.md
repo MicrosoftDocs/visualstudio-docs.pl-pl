@@ -1,5 +1,5 @@
 ---
-title: 'CA1032: Zaimplementuj standardowe konstruktory wyjątków'
+title: 'CA1032: Implementowanie standardowych konstruktorów wyjątków'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a73a615c08b538f4580a8d40765dcd7603722aa1
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236049"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446706"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Zaimplementuj standardowe konstruktory wyjątków
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementowanie standardowych konstruktorów wyjątków
 
 |||
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ rozciąga <xref:System.Exception?displayProperty=fullName> się, ale nie deklaruje wszystkich wymaganych konstruktorów.
+Typ rozszerza <xref:System.Exception?displayProperty=fullName>, ale nie deklaruje wszystkich wymaganych konstruktorów.
 
 ## <a name="rule-description"></a>Opis reguły
 
@@ -48,9 +48,9 @@ Ponadto, jeśli używasz starszej analizy FxCop w przeciwieństwie do [analizato
 
 - chroniona lub prywatna NewException (SerializationInfo, StreamingContext)
 
-Niepowodzenie podczas dostarczenia pełnego zestawu konstruktorów może utrudnić poprawną obsługę wyjątków. Na przykład Konstruktor, który ma sygnaturę `NewException(string, Exception)` , jest używany do tworzenia wyjątków, które są spowodowane innymi wyjątkami. Bez tego konstruktora nie można utworzyć i zgłosić wystąpienia wyjątku niestandardowego, który zawiera wewnętrzny (zagnieżdżony) wyjątek, który jest tym, jaki kod zarządzany powinien wykonać w takiej sytuacji.
+Niepowodzenie podczas dostarczenia pełnego zestawu konstruktorów może utrudnić poprawną obsługę wyjątków. Na przykład Konstruktor, który ma sygnaturę `NewException(string, Exception)` służy do tworzenia wyjątków, które są spowodowane innymi wyjątkami. Bez tego konstruktora nie można utworzyć i zgłosić wystąpienia wyjątku niestandardowego, który zawiera wewnętrzny (zagnieżdżony) wyjątek, który jest tym, jaki kod zarządzany powinien wykonać w takiej sytuacji.
 
-Pierwsze trzy konstruktory wyjątków są publiczne według Konwencji. Czwarty Konstruktor jest chroniony w niezapieczętowanych klasach i prywatny w klasach zapieczętowanych. Aby uzyskać więcej informacji, [Zobacz CA2229: Implementuj konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)serializacji.
+Pierwsze trzy konstruktory wyjątków są publiczne według Konwencji. Czwarty Konstruktor jest chroniony w niezapieczętowanych klasach i prywatny w klasach zapieczętowanych. Aby uzyskać więcej informacji, zobacz [CA2229: Implementuj konstruktory serializacji](../code-quality/ca2229.md).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -58,7 +58,7 @@ Aby naprawić naruszenie tej reguły, Dodaj brakujące konstruktory do wyjątku 
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Można bezpiecznie pominąć ostrzeżenie z tej reguły, gdy naruszenie jest spowodowane przez użycie innego poziomu dostępu dla konstruktorów publicznych. Ponadto w przypadku kompilowania biblioteki klas przenośnych (PCL) `NewException(SerializationInfo, StreamingContext)` nie można pominąć ostrzeżenia dla konstruktora.
+Można bezpiecznie pominąć ostrzeżenie z tej reguły, gdy naruszenie jest spowodowane przez użycie innego poziomu dostępu dla konstruktorów publicznych. Ponadto w przypadku kompilowania biblioteki klas przenośnych (PCL) nie można pominąć ostrzeżenia dla konstruktora `NewException(SerializationInfo, StreamingContext)`.
 
 ## <a name="example"></a>Przykład
 
@@ -68,4 +68,4 @@ Poniższy przykład zawiera typ wyjątku, który narusza tę regułę i typ wyj�
 
 ## <a name="see-also"></a>Zobacz także
 
-[CA2229: Implementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1041: Udostępnij komunikat ObsoleteAttribute'
+title: 'CA1041: Zapewnianie wiadomości ObsoleteAttribute'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,39 +18,39 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6620ac646c7fe20de856185708effc9e1a331e57
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 51427ec499c223c50fbe72523a3be44ed0ce9094
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235854"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449218"
 ---
-# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Udostępnij komunikat ObsoleteAttribute
+# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Zapewnianie wiadomości ObsoleteAttribute
 
 |||
 |-|-|
 |TypeName|ProvideObsoleteAttributeMessage|
 |CheckId|CA1041|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ lub element członkowski jest oznaczony przy użyciu <xref:System.ObsoleteAttribute?displayProperty=fullName> atrybutu, który nie <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> ma określonej właściwości.
+Typ lub element członkowski jest oznaczony przy użyciu atrybutu <xref:System.ObsoleteAttribute?displayProperty=fullName>, który nie ma określonej właściwości <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName>.
 
 Domyślnie ta reguła sprawdza tylko widoczne na zewnątrz typy i elementy członkowskie, ale [można to skonfigurować](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
-<xref:System.ObsoleteAttribute>służy do oznaczania przestarzałych typów bibliotek i elementów członkowskich. Odbiorcy biblioteki powinni unikać używania dowolnego typu lub elementu członkowskiego, który jest oznaczony jako przestarzały. Wynika to z faktu, że może to nie być obsługiwane i ostatecznie zostanie usunięte z nowszych wersji biblioteki. Po skompilowaniu <xref:System.ObsoleteAttribute.Message%2A> typu lub elementu członkowskiego <xref:System.ObsoleteAttribute> oznaczonego za pomocą jest wyświetlana właściwość atrybutu. Dostarcza to informacje użytkownika o przestarzałym typie lub elemencie członkowskim. Te informacje zazwyczaj obejmują czas, przez jaki przestarzały typ lub składowa będą obsługiwane przez projektantów biblioteki i preferowane zastąpienie do użycia.
+<xref:System.ObsoleteAttribute> służy do oznaczania przestarzałych typów bibliotek i elementów członkowskich. Odbiorcy biblioteki powinni unikać używania dowolnego typu lub elementu członkowskiego, który jest oznaczony jako przestarzały. Wynika to z faktu, że może to nie być obsługiwane i ostatecznie zostanie usunięte z nowszych wersji biblioteki. Po skompilowaniu typu lub elementu członkowskiego oznaczonego przy użyciu <xref:System.ObsoleteAttribute> jest wyświetlana właściwość <xref:System.ObsoleteAttribute.Message%2A> atrybutu. Dostarcza to informacje użytkownika o przestarzałym typie lub elemencie członkowskim. Te informacje zazwyczaj obejmują czas, przez jaki przestarzały typ lub składowa będą obsługiwane przez projektantów biblioteki i preferowane zastąpienie do użycia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, należy dodać `message` parametr <xref:System.ObsoleteAttribute> do konstruktora.
+Aby naprawić naruszenie tej zasady, należy dodać parametr `message` do konstruktora <xref:System.ObsoleteAttribute>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Nie pomijaj ostrzeżenia z tej reguły, <xref:System.ObsoleteAttribute.Message%2A> ponieważ właściwość zawiera krytyczne informacje o nieaktualnym typie lub elemencie członkowskim.
+Nie pomijaj ostrzeżenia z tej reguły, ponieważ właściwość <xref:System.ObsoleteAttribute.Message%2A> zawiera krytyczne informacje o nieaktualnym typie lub elemencie członkowskim.
 
 ## <a name="configurability"></a>Określając
 
@@ -64,7 +64,7 @@ Tę opcję można skonfigurować tylko dla tej reguły, dla wszystkich reguł lu
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład pokazuje przestarzałą składową, która jest prawidłowo zadeklarowana <xref:System.ObsoleteAttribute>.
+Poniższy przykład przedstawia przestarzałą składową, która ma poprawnie zadeklarowaną <xref:System.ObsoleteAttribute>.
 
 [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)]
 [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)]

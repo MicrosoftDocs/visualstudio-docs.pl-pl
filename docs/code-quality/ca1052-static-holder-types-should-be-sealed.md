@@ -1,5 +1,5 @@
 ---
-title: 'CA1052: Statyczne typy posiadaczy powinny być statyczne lub NotInheritable'
+title: 'CA1052: statyczne typy posiadaczy powinny być statyczne lub NotInheritable'
 ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 757b6b46e0c0892f5eb4c868b15654b29cd51c0e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7fb332a293e30bfba38e1487576d5a28b1a3be36
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235619"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446599"
 ---
-# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: Statyczne typy posiadaczy powinny być statyczne lub NotInheritable
+# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: statyczne typy posiadaczy powinny być statyczne lub NotInheritable
 
 |||
 |-|-|
 |TypeName|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -42,7 +42,7 @@ Domyślnie ta reguła sprawdza tylko typy widoczne na zewnątrz, ale [można to 
 
 ## <a name="rule-description"></a>Opis reguły
 
-Reguła CA1052 zakłada, że typ, który zawiera tylko statyczne składowe, nie jest przeznaczony do dziedziczenia, ponieważ typ nie udostępnia żadnych funkcji, które mogą zostać zastąpione w typie pochodnym. Typ, który nie jest przeznaczony do dziedziczenia powinien być oznaczony `static` modyfikatorem w C# , aby uniemożliwić jego użycie jako typ podstawowy. Ponadto należy usunąć jego konstruktora domyślnego. W Visual Basic Klasa powinna być konwertowana na [moduł](/dotnet/visual-basic/language-reference/statements/module-statement).
+Reguła CA1052 zakłada, że typ, który zawiera tylko statyczne składowe, nie jest przeznaczony do dziedziczenia, ponieważ typ nie udostępnia żadnych funkcji, które mogą zostać zastąpione w typie pochodnym. Typ, który nie jest przeznaczony do dziedziczenia powinien być oznaczony za pomocą modyfikatora `static` C# w celu zabronienia użycia jako typ podstawowy. Ponadto należy usunąć jego konstruktora domyślnego. W Visual Basic Klasa powinna być konwertowana na [moduł](/dotnet/visual-basic/language-reference/statements/module-statement).
 
 Ta reguła nie uruchamia się dla klas abstrakcyjnych ani klas, które mają klasę bazową. Jednak reguła jest wyzwalana dla klas, które obsługują pusty interfejs.
 
@@ -55,7 +55,7 @@ Aby naprawić naruszenie tej reguły, Oznacz typ jako `static` i Usuń Konstrukt
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Pomiń ostrzeżenie z tej reguły tylko wtedy, gdy typ jest przeznaczony do dziedziczenia. Brak `static` modyfikatora sugeruje, że typ jest użyteczny jako typ podstawowy.
+Pomiń ostrzeżenie z tej reguły tylko wtedy, gdy typ jest przeznaczony do dziedziczenia. Brak modyfikatora `static` sugeruje, że typ jest użyteczny jako typ podstawowy.
 
 ## <a name="configurability"></a>Określając
 
@@ -77,7 +77,7 @@ Poniższy przykład pokazuje typ, który narusza regułę:
 
 ## <a name="fix-with-the-static-modifier"></a>Popraw przy użyciu modyfikatora statycznego
 
-Poniższy przykład pokazuje, jak naprawić naruszenie tej reguły, zaznaczając typ z `static` modyfikatorem w: C#
+Poniższy przykład pokazuje, jak naprawić naruszenie tej reguły przez oznaczenie typu za pomocą modyfikatora `static` w C#:
 
 ```csharp
 public static class StaticMembers

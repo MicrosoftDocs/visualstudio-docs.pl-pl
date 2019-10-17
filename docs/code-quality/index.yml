@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Analiza kodu w programie Visual Studio
+summary: Program Visual Studio oferuje kilka różnych narzędzi do analizowania i poprawiania jakości kodu.
+metadata:
+  title: Analizatory kodu
+  description: Dowiedz się, jak program Visual Studio może pomóc w analizie jakości kodu.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450722"
+landingContent:
+- title: Analizowanie C i C++ Code
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analizowanie C i C++ Code
+      url: code-analysis-for-c-cpp-overview.md
+  - linkListType: reference
+    links:
+    - text: C++Ostrzeżenia analizy kodu
+      url: code-analysis-for-c-cpp-warnings.md
+- title: Analizowanie jakości kodu zarządzanego
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analiza źródła
+      url: roslyn-analyzers-overview.md
+    - text: Analiza w starszej wersji
+      url: static-code-analysis-for-managed-code-overview.md
+  - linkListType: concept
+    links:
+    - text: Najczęściej zadawane pytania
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: Instalowanie analizatorów FxCop
+      url: install-fxcop-analyzers.md
+  - linkListType: reference
+    links:
+    - text: Ostrzeżenia analizy kodu zarządzanego
+      url: code-analysis-for-managed-code-warnings.md
+- title: Analizowanie stylu kodu zarządzanego
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Analizowanie stylu kodu
+      url: ../ide/create-portable-custom-editor-options.md
+- title: Mierzenie złożoności kodu
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Metryki kodu
+      url: code-metrics-values.md

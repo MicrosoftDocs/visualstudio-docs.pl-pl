@@ -13,47 +13,47 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 3f06ca7d37cb7653ebbe50cea201bf6dbbdee8e9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745198"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445868"
 ---
 # <a name="code-analysis-application-errors"></a>Błędy aplikacji analizy kodu
 
-Ta sekcja jest odniesieniem komunikaty o błędach, które są generowane przez narzędzie do analizy kodu zarządzanego.
+Ta sekcja zawiera informacje o komunikatach o błędach, które są generowane przez narzędzie do analizy kodu zarządzanego.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 |||
 |-|-|
-|[CA0001](ca0001.md)|W ramach narzędzia do analizy kodu zarządzanego, który nie wskazuje oczekiwany błąd został zgłoszony wyjątek.|
+|[CA0001](ca0001.md)|W narzędziu do analizy kodu zarządzanego został zgłoszony wyjątek, który nie wskazuje oczekiwanego warunku błędu.|
 |[CA0051](ca0051.md)|Nie wybrano żadnych reguł.|
 |[CA0052](ca0052.md)|Nie wybrano żadnych elementów docelowych do przeanalizowania.|
 |[CA0053](ca0053.md)|Nie można załadować zestawu reguł.|
-|[CA0054](ca0054.md)|Zestaw reguły niestandardowej ma nieprawidłowy XML.|
-|[CA0055](ca0055.md)|Nie można załadować pliku:\<ścieżka >|
-|[CA0056](ca0056.md)|Plik projektu ma nieprawidłową wersję narzędzia do analizy.|
-|[CA0057](ca0057.md)|Nie można zamapować naruszeń w bieżącym zestawie elementów docelowych i reguł.|
-|[CA0058](ca0058.md)|Nie można załadować zestawów odwołania.|
-|[CA0059](ca0059.md)|Błąd przełącznik wiersza polecenia.|
+|[CA0054](ca0054.md)|Zestaw reguł niestandardowych ma nieprawidłowe zasoby XML.|
+|[CA0055](ca0055.md)|Nie można załadować pliku: \<path >|
+|[CA0056](ca0056.md)|Plik projektu ma niepoprawną wersję narzędzia do analizy.|
+|[CA0057](ca0057.md)|Nie można zamapować naruszeń na bieżący zestaw elementów docelowych i reguł.|
+|[CA0058](ca0058.md)|Nie można załadować zestawów, do których się odwołuje.|
+|[CA0059](ca0059.md)|Błąd przełączania wiersza polecenia.|
 |[CA0060](ca0060.md)|Nie można załadować zestawów, do których odwołuje się pośrednio.|
-|[CA0061](ca0061.md)|Reguła "*RuleId*" nie został odnaleziony.|
-|[CA0062](ca0062.md)|Reguła "*RuleId*"odwołanie do zestawu reguł"*RuleSetName*" nie został odnaleziony.|
-|[CA0063](ca0063.md)|Nie można załadować pliku zestawu reguł lub jednej z jego plików zestawu reguł zależnych.|
-|[CA0064](ca0064.md)|Analiza nie została wykonana, ponieważ określonego zestawu reguł nie zawiera żadnych reguł programu FxCop.|
-|[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: Typ "*TypeName*"zawiera właściwość i pole o tej samej nazwie"*PropertyFieldName*"|
-|[CA0066](ca0066.md)|Wartość "*VersionID*" udostępniane **dla przełącznika/targetframeworkversion** nie jest rozpoznawaną wersją.|
+|[CA0061](ca0061.md)|Nie można znaleźć reguły "*RuleID*".|
+|[CA0062](ca0062.md)|Nie można znaleźć reguły "*RuleID*", do której odwołuje się zestaw*reguł "RuleName".*|
+|[CA0063](ca0063.md)|Nie można załadować pliku zestawu reguł lub jednego z jego zależnych plików zestawu reguł.|
+|[CA0064](ca0064.md)|Nie wykonano żadnej analizy, ponieważ określony zestaw reguł nie zawiera żadnych reguł FxCop.|
+|[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: typ "*TypeName*" zawiera właściwość i pole o tej samej nazwie "*PropertyFieldName*"|
+|[CA0066](ca0066.md)|Wartość "*VersionId*" podana dla **dla przełącznika/TargetFrameworkVersion** nie jest rozpoznawaną wersją.|
 |[CA0067](ca0067.md)|Nie znaleziono katalogu.|
-|[CA0068](ca0068.md)|Debugowanie nie można odnaleźć informacji dla zestawu docelowego *"AssemblyName"* .|
-|[CA0069](ca0069.md)|Za pomocą alternatywnej platformy. *FrameworkVersion1* nie został odnaleziony. Za pomocą *FrameworkVersion2* zamiast tego. Aby uzyskać najlepsze wyniki analizy upewnij się, że zainstalowano poprawną wersję.|
-|[CA0070](ca0070.md)|Nie można załadować zestawu lub typu z powodu uprawnień zabezpieczeń.|
+|[CA0068](ca0068.md)|Nie można znaleźć informacji debugowania dla zestawu docelowego *"AssemblyName"* .|
+|[CA0069](ca0069.md)|Korzystanie z alternatywnej platformy. Nie można znaleźć *FrameworkVersion1* . Zamiast tego należy użyć *FrameworkVersion2* . W celu uzyskania najlepszych wyników analizy upewnij się, że zainstalowano poprawną wersję platformy.|
+|[CA0070](ca0070.md)|Nie można załadować zestawu lub typu ze względu na uprawnienia zabezpieczeń.|
 |[CA0501](ca0501.md)|Nie można odczytać raportu wyjściowego.|
 |[CA0502](ca0502.md)|Nieobsługiwany język.|
-|[CA0503](ca0503.md)|Właściwość jest przestarzała. Użyj właściwości zastępującej|
-|[CA0504](ca0504.md)|Katalog reguł zostało zignorowane, ponieważ nie istnieje|
-|[CA0505](ca0505.md)|Właściwość jest przestarzała. Użyj właściwości zastępującej|
+|[CA0503](ca0503.md)|Właściwość jest przestarzała. Użycie właściwości zastępującej|
+|[CA0504](ca0504.md)|Katalog reguł został zignorowany, ponieważ nie istnieje|
+|[CA0505](ca0505.md)|Właściwość jest przestarzała. Użycie właściwości zastępującej|
 |[Błędy polecenia FxCopCmd](fxcopcmd-errors.md)|Błędy analizy kodu zarządzanego.|
 
 ## <a name="related-sections"></a>Sekcje pokrewne

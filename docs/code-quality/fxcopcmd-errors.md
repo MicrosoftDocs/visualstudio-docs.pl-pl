@@ -10,47 +10,47 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40d4b7baa3d994ca41213a100881e5f509a5167
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1892fa9f47e0b3b315531adc51cf538ff7fe4dee
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816491"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449021"
 ---
-# <a name="fxcopcmd-tool-errors"></a>Fxcopcmd — błędy narzędzi
+# <a name="fxcopcmd-tool-errors"></a>Błędy narzędzi plik FxCopCmd
 
-Fxcopcmd — nie należy wziąć pod uwagę wszystkie błędy jako krytyczny. Jeśli FxCopCmd ma wystarczające informacje, aby przeprowadzić analizę częściowe, wykonuje błędów analizy i raporty, które wystąpiły. Kod błędu, który jest 32-bitową liczbę całkowitą, zawiera bitowa kombinacja wartości liczbowe, które odnoszą się do błędów.
+Plik FxCopCmd nie uwzględnia wszystkich błędów jako krytycznych. Jeśli plik FxCopCmd ma wystarczające informacje do przeprowadzenia analizy częściowej, wykonuje analizę i zgłasza błędy, które wystąpiły. Kod błędu, który jest 32-bitową liczbą całkowitą, zawiera bitową kombinację wartości liczbowych, które odnoszą się do błędów.
 
-W poniższej tabeli opisano kody błędów zwracane przez polecenia FxCopCmd:
+W poniższej tabeli opisano kody błędów zwracane przez plik FxCopCmd:
 
 |Błąd|Wartość liczbowa|
 |-----------|-------------------|
 |Brak błędów|0x0|
 |Błąd analizy|0x1|
-|Wyjątki od reguły|0x2|
+|Wyjątki reguł|0x2|
 |Błąd ładowania projektu|0x4|
 |Błąd ładowania zestawu|0x8|
-|Błąd ładowania biblioteki reguły|0x10|
-|Błąd ładowania raportu importu|0x20|
+|Błąd ładowania biblioteki reguł|0x10|
+|Zaimportuj błąd ładowania raportu|0x20|
 |Błąd danych wyjściowych|0x40|
-|Błąd przełącznik wiersza polecenia|0x80|
-|Błąd podczas inicjowania|0x100|
-|Błąd odwołania do zestawu|0x200|
+|Błąd przełączania wiersza polecenia|0x80|
+|Błąd inicjowania|0x100|
+|Błąd odwołań do zestawu|0x200|
 |BuildBreakingMessage|0x400|
 |Nieznany błąd|0x1000000|
 
-**Błąd analizy** jest zwracany w przypadku błędów krytycznych. Wskazuje, że nie można wykonać analizy. Jeśli ma to zastosowanie, kod błędu zawiera także podstawową przyczyną błędu krytycznego. Następujące warunki generować błędy krytyczne:
+**Błąd analizy** jest zwracany w przypadku błędów krytycznych. Oznacza to, że analiza nie mogła zostać ukończona. Jeśli ma to zastosowanie, kod błędu zawiera również podstawową przyczynę błędu krytycznego. Poniższe warunki generują błędy krytyczne:
 
-- Nie można wykonać analizy ze względu na niewystarczające dane wejściowe.
+- Nie można wykonać analizy z powodu niewystarczających danych wejściowych.
 
-- Analiza zgłosiła wyjątek, który nie jest obsługiwany przez FxCopCmd.
+- Analiza zgłosiła wyjątek, który nie jest obsługiwany przez plik FxCopCmd.
 
-- Plik projektu nie można odnaleźć lub jest uszkodzony.
+- Nie można znaleźć określonego pliku projektu lub jest on uszkodzony.
 
-- Nie określono opcji output lub nie można zapisać pliku.
+- Nie określono opcji Output lub nie można zapisać pliku.
 
 > [!NOTE]
-> Kod powrotny polecenia FxCopCmd **błąd odwołuje się zestaw** 0x200 przez siebie to ostrzeżenie, a nie błąd. Ten kod powrotny wskazuje, że zawierają odwołania pośrednie niejedna FxCopCmd mógł je obsłużyć. Ostrzeżenie oznacza, że istnieje możliwość, że niektóre wyniki analizy mogą zabezpieczenia mogły zostać naruszone. Traktuj **błąd odwołuje się zestaw** jako błąd, w połączeniu z innymi kod powrotny.
+> Zestaw kodu powrotu plik FxCopCmd **odwołuje** się do błędu 0x200 przez siebie, jest to ostrzeżenie, a nie błąd. Ten kod powrotny wskazuje, że brakuje pośrednich odwołań, ale plik FxCopCmd mógł je obsłużyć. Ostrzeżenie oznacza, że istnieje możliwość, że niektóre wyniki analizy mogły zostać naruszone. Traktuj **błąd odwołania do zestawu** jako błąd, gdy jest on połączony z innym kodem zwrotnym.
 
 ## <a name="see-also"></a>Zobacz także
 

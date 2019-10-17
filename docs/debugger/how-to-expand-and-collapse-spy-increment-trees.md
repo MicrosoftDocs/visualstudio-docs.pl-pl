@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Rozwijanie i zwijanie drzew w programie Spy ++ | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: rozwijanie i zwijanie drzew w programie Spy + + | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe706260bcb535f33a14eea2fd174ee37ea1c8aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 68ebfcc4b95b50988673e5ce229d27c5c12d0783
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388373"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450365"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Instrukcje: Rozwijanie i zwijanie drzew w programie Spy ++
-Można rozwijać i zwijać widoki Windows, procesy i wątki, korzystając z dwóch metod: klikając ikony w oknie lub za pomocą **drzewa** menu. + I - działają ikony w drzewie, jak w oknie projektu Visual C++.
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Porady: rozwijanie i zwijanie drzewek w programie Spy++
+Możesz rozwijać i zwijać widoki Windows, procesy i wątki przy użyciu dwóch metod: klikając ikony w oknie lub korzystając z menu **drzewa** . Ikony + i-w drzewie działają jak w oknie C++ projektu.
 
- **Drzewa** menu zawiera cztery polecenia:
+ Menu **drzewa** zawiera cztery polecenia:
 
-|Polecenia menu|Opis|
+|Polecenie menu|Opis|
 |------------------|-----------------|
 |**Rozwiń jeden poziom**|Rozwija obecnie wybrany element do następnego poziomu.|
 |**Rozwiń gałąź**|W pełni rozwija obecnie wybrany element.|
-|**Rozwiń wszystko**|W pełni rozwija wszystkie elementy w oknie.|
-|**Zwiń**|W pełni zwija obecnie wybrany element.|
+|**Rozwiń wszystko**|W pełni rozszerza wszystkie elementy w oknie.|
+|**Zespolon**|W pełni zwija obecnie wybrany element.|
 
 > [!TIP]
-> Jeśli proces jest rozwiniesz, zobaczysz wszystkie wątki, które jest właścicielem procesu. Jeśli wątek jest rozwiniesz, zobaczysz listę wszystkich okien, który jest właścicielem.
+> Jeśli rozszerzasz proces, zobaczysz wszystkie wątki, do których należy dany proces. Po rozwinięciu wątku zostanie wyświetlona lista wszystkich okien, do których należy.
 
-### <a name="to-expand-or-collapse-spy-trees"></a>Aby rozwinąć lub zwinąć drzew w programie Spy ++
+### <a name="to-expand-or-collapse-spy-trees"></a>Aby rozwinąć lub zwinąć drzewa programu Spy + +
 
-1. Zaznacz jeden z elementów w widoku Windows, procesów lub wątków.
+1. Zaznacz jeden z elementów w widoku okna, procesy lub wątki.
 
-2. Z **drzewa** menu, wybierz jedną z rozwiń lub Zwiń poleceń.
+2. Z menu **drzewa** wybierz jedno z poleceń rozwiń lub Zwiń.
 
 ## <a name="see-also"></a>Zobacz też
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)

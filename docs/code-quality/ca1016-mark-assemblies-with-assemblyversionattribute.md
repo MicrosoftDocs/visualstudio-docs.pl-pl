@@ -1,5 +1,5 @@
 ---
-title: 'CA1016: Oznacz zestawy atrybutem AssemblyVersion'
+title: 'CA1016: Oznacz zestawy za pomocą AssemblyVersionAttribute'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 140037b025db88230762bc0d540d933cec7a5119
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 85a8d2d9efe83f62bd0bd40021ffe0e752cf4666
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236310"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441606"
 ---
-# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Oznacz zestawy atrybutem AssemblyVersion
+# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Oznacz zestawy za pomocą AssemblyVersionAttribute
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
@@ -46,7 +46,7 @@ Tożsamość zestawu składa się z następujących informacji:
 
 - Numer wersji
 
-- Kultura
+- dziedzinie
 
 - Klucz publiczny (dla zestawów o silnych nazwach).
 
@@ -54,7 +54,7 @@ Platforma .NET używa numeru wersji do unikatowego identyfikowania zestawu i pow
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej reguły, Dodaj numer wersji do zestawu przy użyciu <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> atrybutu.
+Aby naprawić naruszenie tej reguły, Dodaj numer wersji do zestawu przy użyciu atrybutu <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -62,7 +62,7 @@ Nie pomijaj ostrzeżenia z tej reguły dla zestawów, które są używane przez 
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład pokazuje zestaw, do <xref:System.Reflection.AssemblyVersionAttribute> którego zastosowano atrybut.
+Poniższy przykład pokazuje zestaw, który ma zastosowany atrybut <xref:System.Reflection.AssemblyVersionAttribute>.
 
 [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
 [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]

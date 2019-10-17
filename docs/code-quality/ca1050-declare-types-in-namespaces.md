@@ -1,5 +1,5 @@
 ---
-title: 'CA1050: Deklaruj typy w przestrzeniach nazw'
+title: 'CA1050: Deklaruj typy w przestrzeni nazw'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8127c68cfe7eb541b8adea8affad99027e0c1fe7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 4d7b132a2840afcc581dda8d341f0193c27f0ef2
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235751"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449199"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Deklaruj typy w przestrzeniach nazw
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Deklaruj typy w przestrzeni nazw
 
 |||
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -52,7 +52,7 @@ W poniższym przykładzie przedstawiono bibliotekę, która ma nieprawidłowo za
 [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
 
 ## <a name="example"></a>Przykład
-Następująca aplikacja korzysta z wcześniej zdefiniowanej biblioteki. Należy zauważyć, że typ, który jest zadeklarowany poza przestrzenią nazw jest `Test` tworzony, gdy nazwa nie jest kwalifikowana przez przestrzeń nazw. Należy również pamiętać, że w `Test` celu uzyskania `Goodspace`dostępu do typu w, nazwa przestrzeni nazw jest wymagana.
+Następująca aplikacja korzysta z wcześniej zdefiniowanej biblioteki. Należy zauważyć, że typ, który jest zadeklarowany poza przestrzenią nazw jest tworzony, gdy nazwa `Test` nie kwalifikuje się do przestrzeni nazw. Należy również pamiętać, że aby uzyskać dostęp do typu `Test` w `Goodspace`, wymagana jest nazwa przestrzeni nazw.
 
 [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
 [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

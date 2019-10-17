@@ -1,5 +1,5 @@
 ---
-title: 'CA1410: Metody rejestracji modelu COM powinny mieć swoje odpowiedniki'
+title: 'CA1410: Metody rejestracji COM powinny być dopasowane'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c7c7c20ece08bc5167887727e423a3f7cdf7ee19
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234736"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440205"
 ---
-# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Metody rejestracji modelu COM powinny mieć swoje odpowiedniki
+# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Metody rejestracji COM powinny być dopasowane
 
 |||
 |-|-|
@@ -35,11 +35,11 @@ ms.locfileid: "71234736"
 
 ## <a name="cause"></a>Przyczyna
 
-Typ deklaruje metodę, która jest oznaczona <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atrybutem, ale nie deklaruje metody, która jest oznaczona atrybutem lub na <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> odwrót.
+Typ deklaruje metodę, która jest oznaczona atrybutem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>, ale nie deklaruje metody, która jest oznaczona za pomocą atrybutu <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> lub odwrotnie.
 
 ## <a name="rule-description"></a>Opis reguły
 
-W przypadku klientów Component Object Model (COM) do tworzenia typu .NET należy najpierw zarejestrować typ. Jeśli jest dostępna, metoda oznaczona <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atrybutem jest wywoływana podczas procesu rejestracji w celu uruchomienia kodu określonego przez użytkownika. Odpowiadająca metoda oznaczona <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atrybutem jest wywoływana podczas procesu wyrejestrowywania, aby wycofać operacje metody rejestracji.
+W przypadku klientów Component Object Model (COM) do tworzenia typu .NET należy najpierw zarejestrować typ. Jeśli jest dostępny, metoda oznaczona przy użyciu atrybutu <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> jest wywoływana podczas procesu rejestracji w celu uruchomienia kodu określonego przez użytkownika. Odpowiadająca metoda oznaczona atrybutem <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> jest wywoływana podczas procesu wyrejestrowywania, aby wycofać operacje metody rejestracji.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -58,7 +58,7 @@ Poniższy przykład pokazuje typ, który narusza regułę. Kod z komentarzem pok
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA1411 Metody rejestracji modelu COM nie powinny być widoczne](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+[CA1411: Metody rejestracji modelu COM nie powinny być widoczne](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Zobacz także
 

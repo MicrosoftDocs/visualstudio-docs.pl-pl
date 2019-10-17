@@ -1,5 +1,5 @@
 ---
-title: 'CA1303: Nie przekazuj literałów jako zlokalizowanych parametrów'
+title: 'CA1303: Nie należy przekazywać literałów jako parametrów zlokalizowanych'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2700dc2ade7ba901f15f67045e3170e2bbb40ff8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 443fec0c9f20148d775a734137941cd7c78da889
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235116"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444396"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nie przekazuj literałów jako zlokalizowanych parametrów
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nie należy przekazywać literałów jako parametrów zlokalizowanych
 
 |||
 |-|-|
@@ -41,7 +41,7 @@ Metoda przekazuje literał ciągu jako parametr do konstruktora lub metody .NET,
 
 To ostrzeżenie jest zgłaszane, gdy ciąg literału zostanie przesunięty jako wartość do parametru lub właściwości, co najmniej jeden z następujących przypadków ma wartość true:
 
-- <xref:System.ComponentModel.LocalizableAttribute> Atrybut parametru lub właściwości jest ustawiony na wartość true.
+- Atrybut <xref:System.ComponentModel.LocalizableAttribute> parametru lub właściwości jest ustawiony na wartość true.
 
 - Nazwa parametru lub właściwości zawiera tekst "text", "Message" lub "Caption".
 
@@ -53,7 +53,7 @@ Literały ciągu, które są osadzone w kodzie źródłowym, są trudne do zloka
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej reguły, Zastąp literał ciągu ciągiem pobranym przez wystąpienie <xref:System.Resources.ResourceManager> klasy.
+Aby naprawić naruszenie tej reguły, Zastąp literał ciągu ciągiem pobranym przez wystąpienie klasy <xref:System.Resources.ResourceManager>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 

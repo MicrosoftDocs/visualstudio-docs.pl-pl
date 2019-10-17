@@ -1,5 +1,5 @@
 ---
-title: Rozpocznij sesję debugowania dla aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
+title: Rozpocznij sesję debugowania dla aplikacji platformy UWP | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/20/2018
 ms.topic: conceptual
@@ -35,186 +35,187 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 7c65662d054b8c3dd9e650fe088f7048cc3b4071
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4504dda362c8a50f33168a12839e894a14316d7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62930029"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72436004"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Rozpoczynanie sesji debugowania aplikacji platformy UWP
 
-W tym artykule opisano sposób uruchamiania sesji debugowania programu Visual Studio dla aplikacji uniwersalnych platformy Windows (UWP). Aplikacje platformy uniwersalnej systemu Windows mogą być napisane w XAML i C++, XAML i C#/Visual Basic. Aby rozpocząć debugowanie aplikacji platformy uniwersalnej systemu Windows, skonfiguruj sesję debugowania, a następnie wybierz sposób, aby uruchomić aplikację.
+W tym artykule opisano sposób uruchamiania sesji debugowania programu Visual Studio dla aplikacji platforma uniwersalna systemu Windows (platformy UWP). Aplikacje platformy UWP można pisać w języku XAML C++, w języku XAML C#i w warstwie Podstawowa/Visual. Aby rozpocząć debugowanie aplikacji platformy UWP, skonfiguruj sesję debugowania i wybierz sposób uruchomienia aplikacji.
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Począwszy od programu Visual Studio 2019 aplikacji platformy uniwersalnej systemu Windows dla języków HTML i JavaScript nie są już obsługiwane.
+> Począwszy od programu Visual Studio 2019, platformy UWP aplikacje dla języka HTML i języka JavaScript nie są już obsługiwane.
 ::: moniker-end
 ::: moniker range="vs-2017"
-W programie Visual Studio 2017 większość poleceń i opcji wymienionych w tym artykule dotyczą również aplikacji platformy UWP dla języków HTML i JavaScript. W przypadku, gdy polecenia różnią się między zarządzanymi i aplikacje C++, JavaScript aplikacje zwykle są takie same, jak polecenia dla aplikacji platformy uniwersalnej systemu Windows w języku C++.
+W programie Visual Studio 2017 większość poleceń i opcji przedstawionych w tym artykule ma również zastosowanie do aplikacji platformy UWP dla języka HTML i języka JavaScript. W przypadku, gdy polecenia są różne C++ w aplikacjach zarządzanych i aplikacji, aplikacje JavaScript zwykle są takie C++ same jak polecenia dla aplikacji platformy UWP.
 ::: moniker-end
 
-## <a name="BKMK_The_easy_way_to_start_debugging"></a>Uruchom debugowanie z narzędzi programu Visual Studio
+## <a name="BKMK_The_easy_way_to_start_debugging"></a>Rozpocznij debugowanie na pasku narzędzi programu Visual Studio
 
-Jest najprostszym sposobem, aby skonfigurować i rozpocząć debugowanie ze standardowych narzędzi programu Visual Studio.
+Najprostszym sposobem konfigurowania i uruchamiania debugowania jest ze standardowego paska narzędzi programu Visual Studio.
 
-![Debuguj z poziomu paska narzędzi](../debugger/media/vsrun_select_target_device.png)
+![Debuguj z paska narzędzi](../debugger/media/vsrun_select_target_device.png)
 
-1. Z **konfiguracji** menu rozwijane **standardowa** narzędzi, wybierz opcję **debugowania**.
+1. Na liście rozwijanej **Konfiguracja** na pasku narzędzi **Standardowy** wybierz pozycję **Debuguj**.
 
-1. Z **platformy** listy rozwijanej wybierz platformę docelową kompilacji dla.
+1. Z listy rozwijanej **platforma** Wybierz platformę docelową do skompilowania.
 
-1. Z listy rozwijanej obok zielona strzałka wybierz cel debugowania. Można wybrać komputer lokalny, połączonych urządzeń, symulatora lokalnego programu Visual Studio, urządzenie zdalne lub emulator.
+1. Z listy rozwijanej obok zielonej strzałki wybierz element docelowy debugowania. Można wybrać maszynę lokalną, urządzenie połączone bezpośrednio, lokalny symulator programu Visual Studio, urządzenie zdalne lub emulator.
 
-1. Aby rozpocząć debugowanie, wybierz zielony **Start** strzałkę na pasku narzędzi lub wybierz **debugowania** > **Rozpocznij debugowanie**, lub naciśnij **F5**.
+1. Aby rozpocząć debugowanie, wybierz zieloną strzałkę **startową** na pasku narzędzi lub wybierz kolejno opcje **Debuguj** > **Rozpocznij debugowanie**lub naciśnij klawisz **F5**.
 
-   Visual Studio kompiluje i uruchamia aplikację w debugerze.
+   Program Visual Studio kompiluje i uruchamia aplikację z dołączonym debugerem.
 
-Debugowanie kontynuowany do momentu punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi nieobsługiwany wyjątek, lub zakończenia aplikacji.
+Debugowanie jest kontynuowane do momentu, gdy zostanie osiągnięty punkt przerwania, zostanie ręcznie zawieszone wykonanie, wystąpił nieobsługiwany wyjątek lub aplikacja zostanie zakończona.
 
-### <a name="BKMK_Choose_the_deployment_target"></a> Target — opcje wdrażania
+### <a name="BKMK_Choose_the_deployment_target"></a>Opcje elementu docelowego wdrożenia
 
-Możesz ustawić docelowy debugowania na pasku narzędzi programu Visual Studio lub projektu na debugowanie strony właściwości. Wybierz jedną z następujących opcji:
+Możesz ustawić cel debugowania na pasku narzędzi programu Visual Studio lub na stronie właściwości debugowania projektu. Wybierz jedną z następujących opcji:
 
 |||
 |-|-|
-|**Maszyna lokalna**|Debugowanie aplikacji w bieżącej sesji na komputerze lokalnym.|
-|**Symulator**|Debugowanie aplikacji w symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu Windows. Symulator jest oknem pulpitu, która symuluje urządzenie funkcje, takie jak touch gestów i obracanie urządzeń, które mogą nie istnieć na komputerze lokalnym. Opcja symulator jest dostępna tylko wtedy, gdy Twoja aplikacja **minimalnej platformy docelowej. Wersja** jest mniejsza niż system operacyjny na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji platformy UWP w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md).|
-|**Komputer zdalny**|Debugowanie aplikacji na urządzeniu podłączone do komputera lokalnego za pośrednictwem sieci lub kabla Ethernet. Remote Tools for Visual Studio musi być zainstalowana i uruchomiona na urządzeniu zdalnym. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji platformy UWP na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).|
-|**urządzenia**|Debugowanie aplikacji na urządzeniu z portu USB. Urządzenie musi być odblokowane dla deweloperów i mieć ekranu odblokowane.|
-|**Mobile Emulator**|Rozruch emulatora określony w nazwie emulatora, Wdróż aplikację i Rozpocznij debugowanie. Emulatory są dostępne tylko dla maszyn Hyper-V jest włączona.|
+|**Komputer lokalny**|Debuguj aplikację w bieżącej sesji na komputerze lokalnym.|
+|**Wykorzystaniem**|Debuguj aplikację w symulatorze programu Visual Studio dla aplikacji platformy UWP. Symulator to okno pulpitu, które symuluje funkcje urządzenia, takie jak gesty dotykowe i rotacja urządzeń, które mogą nie istnieć na komputerze lokalnym. Opcja symulator jest dostępna tylko wtedy, gdy **minimalna wersja platformy docelowej** aplikacji jest mniejsza lub równa systemowi operacyjnemu na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji platformy UWP w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md).|
+|**Maszyna zdalna**|Debuguj aplikację na urządzeniu podłączonym do komputera lokalnego za pośrednictwem sieci lub kabla Ethernet. Remote Tools for Visual Studio musi być zainstalowana i uruchomiona na urządzeniu zdalnym. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji platformy UWP na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).|
+|**Pliku**|Debuguj aplikację na urządzeniu podłączonym do portu USB. Urządzenie musi być odblokowane przez dewelopera i mieć odblokowany ekran.|
+|**Emulator urządzenia przenośnego**|Wykonaj rozruch emulatora określonego w polu Nazwa emulatora, wdróż aplikację i Rozpocznij debugowanie. Emulatory są dostępne tylko na maszynach z obsługą funkcji Hyper-V.|
 
-## <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Konfigurowanie debugowania na stronie właściwości projektu
+## <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Konfigurowanie debugowania na stronie właściwości projektu
 
-Aby skonfigurować dodatkowe opcje debugowania, należy użyć strony właściwości debugowania projektu.
+Aby skonfigurować dodatkowe opcje debugowania, użyj strony właściwości debugowania projektu.
 
 **Aby otworzyć właściwości debugowania:**
 
-1. W **Eksploratora rozwiązań**, wybierz projekt, a następnie wybierz **właściwości** ikonę, lub kliknij prawym przyciskiem myszy projekt i wybierz pozycję **właściwości**.
+1. W **Eksplorator rozwiązań**wybierz projekt, a następnie wybierz ikonę **Właściwości** lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**.
 
-1. W lewej części **właściwości** okienka:
+1. Po lewej stronie okienka **Właściwości** :
 
-   - Aby uzyskać C# i aplikacji Visual Basic, wybierz opcję **debugowania**.
+   - W C# przypadku aplikacji i Visual Basic wybierz pozycję **Debuguj**.
 
-     ![C#i strony właściwości debugowania projektu w języku Visual Basic](../debugger/media/dbg_csvb_debugpropertypage.png)
+     ![C#i Visual Basic strony właściwości debugowania projektu](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - W aplikacjach C++ wybierz **właściwości konfiguracji** > **debugowanie**.
+   - W C++ przypadku aplikacji wybierz pozycję **Właściwości konfiguracji** > **debugowanie**.
 
-     ![Debugowania strona właściwości aplikacji platformy uniwersalnej systemu Windows w języku C++](../debugger/media/dbg_cpp_debugpropertypage.png)
+     ![C++Strona właściwości debugowania aplikacji platformy UWP](../debugger/media/dbg_cpp_debugpropertypage.png)
 
-### <a name="BKMK_Choose_the_debugger_to_use"></a> Wybierz debuger do użycia
+### <a name="BKMK_Choose_the_debugger_to_use"></a>Wybierz debuger do użycia
 
-Aby uzyskać C# i aplikacji Visual Basic, Visual Studio debuguje kodzie zarządzanym domyślnie. Można debugować kodu inne lub dodatkowe typy. Można również ustawić **typ debugera** wartości dla dowolnego zadania w tle, które są częścią projektu.
+W C# przypadku aplikacji i Visual Basic program Visual Studio domyślnie debuguje kod zarządzany. Możesz wybrać opcję debugowania innych lub dodatkowych typów kodu. Możesz również ustawić wartości **typu debugera** dla wszystkich zadań w tle, które są częścią projektu.
 
-W aplikacjach C++ Visual Studio debuguje kodu natywnego, domyślnie. Można debugować określone typy kodu, zamiast lub oprócz kodu natywnego.
+W C++ aplikacjach program Visual Studio domyślnie debuguje kod natywny. Można zdecydować się na debugowanie określonych typów kodu zamiast lub oprócz kodu natywnego.
 
 **Aby określić typy kodu do debugowania:**
 
-- Dla C# i aplikacji w języku Visual Basic, wybierz jedną z następujących debugery z **typ aplikacji** i **typu proces w tle** listy rozwijane w obszarze **typ debugera** na **debugowania** stronę właściwości.
+- W C# przypadku aplikacji i Visual Basic wybierz jeden z następujących debugerów z listy rozwijanej Typ **aplikacji** i **Typ procesu w tle** w obszarze **Typ debugera** na stronie właściwości **debugowania** .
 
-- W aplikacjach C++, wybierz jedną z następujących debugery z **typ debugera** menu rozwijane **debugowanie** stronę właściwości.
+- W C++ przypadku aplikacji wybierz jeden z następujących debugerów z listy rozwijanej **Typ debugera** na stronie właściwości **debugowania** .
 
 |||
 |-|-|
-|**Tylko zarządzany**|Debugowanie kodu zarządzanego w aplikacji. Kod języka JavaScript i kodu natywnego języka C/C++ są ignorowane.|
-|**Tylko w trybie macierzystym**|Debugowanie kodu natywnego języka C/C++ w aplikacji. Kod zarządzany i kod JavaScript są ignorowane.|
-|**Mieszany (zarządzany i natywny)**|Debugowanie kodu C/C++ natywnego i zarządzanego kodu w aplikacji. Kod JavaScript jest ignorowany. W projektach C++, ta opcja jest wywoływana **zarządzany i natywny**.|
-|**Skrypt**|Debugowanie kodu JavaScript w aplikacji. Kodu zarządzanego i natywnego kodu są ignorowane.|
-|**Natywny ze skryptem**|Debugowanie kodu natywnego języka C/C++ oraz kodu JavaScript w aplikacji. Kod zarządzany jest ignorowany. Dostępne w projektach C++ lub tylko zadania w tle.|
-|**Tylko procesor GPU (C++ AMP)**|Debugowanie kodu natywnego języka C++ jest uruchamiany na jednostka przetwarzania grafiki (GPU). Dostępne w tylko dla projektów C++.|
+|**Tylko zarządzane**|Debuguj kod zarządzany w aplikacji. Kod JavaScript i natywny kodC++ C/Code są ignorowane.|
+|**Tylko natywny**|Debuguj natywny kodC++ C/w aplikacji. Kod zarządzany i kod JavaScript są ignorowane.|
+|**Mieszany (zarządzany i natywny)**|Debuguj natywny kodC++ C/Code i kod zarządzany w aplikacji. Kod JavaScript jest ignorowany. W C++ projektach ta opcja jest nazywana **zarządzanym i natywnym**.|
+|**Skrypt**|Debuguj kod JavaScript w aplikacji. Kod zarządzany i kod natywny zostały zignorowane.|
+|**Natywny ze skryptem**|Debuguj natywny kodC++ C/Code i JavaScript w aplikacji. Kod zarządzany jest ignorowany. Dostępne tylko C++ w projektach lub zadaniach w tle.|
+|**Tylko procesor GPUC++ (amp)**|Debuguj kod C++ natywny, który jest URUCHAMIANY w procesorze GPU. Dostępne tylko C++ w projektach.|
 
-### <a name="BKMK__Optional__Disable_network_loopbacks"></a> Wyłącz sprzężenia zwrotne w sieci (opcjonalnie)
+### <a name="BKMK__Optional__Disable_network_loopbacks"></a>Wyłącz sprzężenia zwrotne sieci (opcjonalnie)
 
- Dla bezpieczeństwa aplikacji platformy UWP, który jest zainstalowany w standardowy sposób nie może wprowadzać wywołań sieci do zainstalowania na urządzeniu. Visual Studio wyłącza wdrożone aplikacje od tej reguły domyślnie, aby możliwe było przetestowanie procedur komunikacji na jednym komputerze. Przed publikacją aplikacji należy przetestować aplikację bez zwolnienia.
+ W przypadku zabezpieczeń aplikacja platformy UWP zainstalowana w standardowym sposobie nie może nawiązywać połączeń sieciowych z urządzeniem, na którym jest ono zainstalowane. Program Visual Studio domyślnie wyłącza wdrożone aplikacje z tej reguły, dzięki czemu można testować procedury komunikacji na pojedynczym komputerze. Przed udostępnieniem aplikacji należy przetestować aplikację bez wykluczania.
 
-**Aby usunąć wykluczenie sprzężenie zwrotne sieci:**
+**Aby usunąć wyłączenie sprzężenia zwrotnego sieci:**
 
-- Dla C# i aplikacji w języku Visual Basic, usuń zaznaczenie opcji **Zezwalaj na sprzężenie zwrotne sieci lokalnej** pole wyboru w obszarze **opcje uruchamiania** na **debugowania** stronę właściwości.
+- W C# przypadku aplikacji i Visual Basic Usuń zaznaczenie pola wyboru **Zezwalaj na sprzężenie zwrotne sieci lokalnej** w obszarze **Opcje uruchamiania** na stronie właściwości **debugowania** .
 
-- W przypadku aplikacji Visual C++, wybierz **nie** z **Zezwalaj na sprzężenie zwrotne lokalnej sieci** menu rozwijane **debugowanie** stronę właściwości.
+- W C++ przypadku aplikacji wybierz pozycję **nie** z listy rozwijanej **Zezwalaj na sprzężenie zwrotne sieci lokalnej** na stronie właściwości **debugowania** .
 
-### <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Ponownie zainstaluje aplikację po rozpoczęciu debugowania (opcjonalnie)
- Do diagnozowania problemów z instalacją przy użyciu C# lub aplikacji Visual Basic, wybierz opcję **Odinstaluj i zainstaluj ponownie mój pakiet** na **debugowania** stronę właściwości. Ta opcja odtwarza oryginalnej instalacji, po rozpoczęciu debugowania. Ta opcja jest niedostępna dla projektów C++.
+### <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a>Zainstaluj ponownie aplikację po rozpoczęciu debugowania (opcjonalnie)
+ Aby zdiagnozować problemy z instalacją C# aplikacji lub Visual Basic, wybierz opcję **Odinstaluj, a następnie zainstaluj ponownie pakiet** na stronie właściwości **debugowania** . Ta opcja powoduje odtworzenie oryginalnej instalacji po rozpoczęciu debugowania. Ta opcja jest niedostępna dla C++ projektów.
 
-### <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Ustaw opcje uwierzytelniania dla zdalnego debugowania
+### <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a>Ustawianie opcji uwierzytelniania dla zdalnego debugowania
 
-Domyślnie, należy podać poświadczenia Windows, aby uruchomić zdalny debuger po wybraniu **maszyny zdalnej** jako cel wdrożenia. Możesz zmienić wymogu uwierzytelniania.
+Domyślnie należy podać poświadczenia systemu Windows w celu uruchomienia debugera zdalnego po wybraniu **maszyny zdalnej** jako celu wdrożenia. Istnieje możliwość zmiany wymagania dotyczącego uwierzytelniania.
 
-**Uniwersalny (protokół niezaszyfrowanym)** tryb uwierzytelniania jest urządzeń IoT i konsoli Xbox, HoloLens i twórcy Update lub nowszej komputerów z systemem Windows 10.
+Tryb uwierzytelniania **uniwersalnego (nieszyfrowanego protokołu)** jest przeznaczony dla urządzeń IoT, Xbox i HoloLens oraz do aktualizacji lub nowszych komputerów z systemem Windows 10 dla twórców.
 
 **Aby zmienić metodę uwierzytelniania:**
 
-- Dla C# aplikacji Visual Basic i na **debugowania** strony właściwości, wybierz opcję **maszyny zdalnej** jako **urządzenie docelowe**. Następnie wybierz **Brak** lub **uniwersalny (protokół niezaszyfrowanym)** dla **tryb uwierzytelniania**.
+- W C# przypadku aplikacji i Visual Basic na stronie właściwości **debugowania** wybierz pozycję **maszyna zdalna** jako **urządzenie docelowe**. Następnie wybierz pozycję **Brak** lub **uniwersalny (niezaszyfrowany protokół)** w **trybie uwierzytelniania**.
 
-- W aplikacjach C++ wybierz **maszyny zdalnej** w obszarze **debuger do uruchomienia** na **debugowanie** stronę właściwości. Następnie wybierz **bez uwierzytelniania** lub **uniwersalny (protokół niezaszyfrowanym)** dla **typ uwierzytelniania**.
+- W C++ przypadku aplikacji wybierz pozycję **maszyna zdalna** w obszarze **debuger do uruchomienia** na stronie właściwości **debugowania** . Następnie wybierz opcję **Brak uwierzytelniania** lub **uniwersalnego (nieszyfrowanego protokołu)** dla **typu uwierzytelniania**.
 
 > [!CAUTION]
-> Istnieje nie zabezpieczeń sieci podczas uruchamiania zdalnego debugera w **Brak** lub **uniwersalny (protokół niezaszyfrowanym)** tryby. Wybierz te tryby wyłącznie w zaufanych sieciach, które są się, że nie są zagrożone przez złośliwego kodu lub szkodliwy ruch.
+> Po uruchomieniu zdalnego debugera w trybie **Brak** lub **uniwersalne (nieszyfrowane protokoły)** nie ma zabezpieczeń sieci. Wybierz te tryby tylko dla zaufanych sieci, na których pewno nie są narażone złośliwe lub zagrożone dane.
 
-## <a name="BKMK_Start_the_debugging_session"></a> Opcje uruchamiania debugowania
+## <a name="BKMK_Start_the_debugging_session"></a>Opcje uruchamiania debugowania
 
-Po wybraniu **debugowania** > **Rozpocznij debugowanie** lub naciśnij **F5**, Visual Studio uruchamia aplikację w debugerze. Wykonywanie jest kontynuowane, dopóki punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi nieobsługiwany wyjątek, lub kończy się w aplikacji.
+Po wybraniu opcji **debuguj** > **Rozpocznij debugowanie** lub naciśnij klawisz **F5**program Visual Studio uruchomi aplikację z dołączonym debugerem. Wykonywanie jest kontynuowane do momentu, gdy punkt przerwania zostanie osiągnięty, zostanie wykonane ręcznie wstrzymanie wykonywania, wystąpił nieobsługiwany wyjątek lub aplikacja zostanie zakończona.
 
-### <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Rozpocznij debugowanie, ale opóźnienie uruchomienie aplikacji
+### <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>Rozpocznij debugowanie, ale Opóźnij uruchomienie aplikacji
 
-Domyślnie program Visual Studio uruchamia aplikację natychmiast, po rozpoczęciu debugowania. Można również ustawić aplikację, aby uruchomić tryb debugowania, ale uruchamiają aplikację poza debugerem. Na przykład możesz chcieć debugowanie, uruchamianie aplikacji z Windows **Start** menu lub debugowania proces w tle w aplikacji. Jeśli wybierzesz tę opcję, aplikacja uruchamia się w debugerze w momencie uruchomienia.
+Domyślnie program Visual Studio uruchamia aplikację natychmiast po rozpoczęciu debugowania. Możesz również ustawić aplikację do uruchamiania w trybie debugowania, ale uruchomić aplikację poza debugerem. Na przykład możesz chcieć debugować uruchamianie aplikacji z menu **Start** systemu Windows lub debugować proces w tle w aplikacji. W przypadku wybrania tej opcji aplikacja zostanie uruchomiona w debugerze przy uruchamianiu.
 
-**Aby wyłączyć automatyczne uruchomienia:**
+**Aby wyłączyć automatyczne uruchamianie aplikacji:**
 
-- Dla C# i aplikacji Visual Basic, wybierz opcję **nie uruchamiaj, ale Debuguj kod przy rozpoczęciu** w obszarze **opcje uruchamiania** na **debugowania** stronę właściwości.
+- W C# przypadku aplikacji i Visual Basic wybierz pozycję nie **uruchamiaj, ale Debuguj mój kod po uruchomieniu** w obszarze **Opcje uruchamiania** na stronie właściwości **debugowania** .
 
-- W aplikacjach C++ wybierz **nie** z **Uruchom aplikację** menu rozwijane **debugowanie** stronę właściwości.
+- W C++ przypadku aplikacji wybierz pozycję **nie** na liście rozwijanej **uruchamiania aplikacji** na stronie właściwości **debugowania** .
 
-Aby uzyskać więcej informacji na temat debugowania zadania w tle, zobacz [wyzwalacza wstrzymania, wznowienia i zdarzeń aplikacji platformy UWP w tle](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
+Aby uzyskać więcej informacji na temat debugowania zadań w tle, zobacz [wyzwalacze wstrzymywanie, wznawiania i zdarzeń w tle dla aplikacji platformy UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
-### <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Debugowanie aplikacji platformy uniwersalnej systemu Windows zainstalowany lub włączony
+### <a name="BKMK_Start_an_installed_app_in_the_debugger"></a>Debuguj zainstalowaną lub uruchomioną aplikację platformy UWP
 
-Możesz użyć **pakietu debugowania zainstalowanej aplikacji** do debugowania aplikacji platformy UWP, który jest już zainstalowany lub włączony na urządzeniu lokalnym lub zdalnym. Aplikacja została zainstalowana z Microsoft Store lub może nie być projektu programu Visual Studio. Na przykład aplikacja może mieć system kompilacji niestandardowej, która nie korzysta z programu Visual Studio.
+W celu debugowania aplikacji platformy UWP, która jest już zainstalowana lub uruchomiona na urządzeniu lokalnym lub zdalnym, można użyć **debugowania zainstalowanego pakietu aplikacji** . Aplikacja mogła zostać zainstalowana z poziomu Microsoft Store lub nie jest projektem programu Visual Studio. Na przykład aplikacja może mieć niestandardowy system kompilacji, który nie używa programu Visual Studio.
 
-Natychmiast rozpocząć zainstalowaną aplikację lub ustawić jego uruchomienie w debugerze, gdy uruchomiony przy użyciu innej metody. Aby uzyskać więcej informacji, zobacz [wyzwalacza wstrzymania, wznowienia i zdarzeń aplikacji platformy UWP w tle)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
+Możesz natychmiast uruchomić zainstalowaną aplikację lub można ją skonfigurować do uruchamiania w debugerze po uruchomieniu z inną metodą. Aby uzyskać więcej informacji, zobacz [wyzwalacze wstrzymywanie, wznawiania i zdarzeń w tle dla aplikacji platformy UWP)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
-Aby uruchomić aplikację platformy uniwersalnej systemu Windows zainstalowany lub włączony w debugerze, zaznacz **debugowania** > **inne cele debugowania** > **pakietu debugowania zainstalowanej aplikacji**. Aby uzyskać więcej instrukcji, zobacz [debugowanie zainstalowanego pakietu aplikacji](../debugger/debug-installed-app-package.md).
+Aby uruchomić zainstalowaną lub uruchomioną aplikację platformy UWP w debugerze, wybierz pozycję **debuguj** > **inne elementy docelowe debugowania** > **debugowanie zainstalowanego pakietu aplikacji**. Aby uzyskać więcej instrukcji, zobacz [debugowanie zainstalowanego pakietu aplikacji](../debugger/debug-installed-app-package.md).
 
-### <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Dołącz debuger do uruchomionej aplikacji Windows 8.x
+### <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Dołącz debuger do uruchomionej aplikacji systemu Windows 8. x
 
-Aby dołączyć debuger [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji, musisz podać Debugowalny Menedżer pakietów do zestawu aplikacji do uruchamiania w trybie debugowania. Debugowalny Menedżer pakietów jest zainstalowany za pomocą narzędzi Remote Tools for Visual Studio.
+Aby dołączyć debuger do aplikacji [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], należy użyć Menedżera pakietów możliwością debugowania, aby skonfigurować aplikację do uruchamiania w trybie debugowania. Menedżer pakietów możliwością debugowania jest instalowany z Remote Tools for Visual Studio.
 
-1. Instalowanie narzędzi Remote Tools dla programu Visual Studio na urządzeniu, w którym aplikacja zostanie zainstalowana. Aby uzyskać więcej informacji, zobacz [Instalowanie narzędzi zdalnych](../debugger/remote-debugging.md).
+1. Zainstaluj Remote Tools for Visual Studio na urządzeniu, na którym zainstalowano aplikację. Aby uzyskać więcej informacji, zobacz [Instalowanie narzędzi zdalnych](../debugger/remote-debugging.md).
 
-1. W Windows **Start** ekranu, wyszukiwanie i Rozpocznij **Debugowalny Menedżer pakietów**.
+1. Na ekranie **startowym** systemu Windows wyszukaj i uruchom **Menedżera pakietów możliwością debugowania**.
 
-   Zostanie wyświetlone okno programu PowerShell, poprawnie skonfigurowany na potrzeby polecenia cmdlet AppxDebug.
+   Zostanie wyświetlone okno programu PowerShell prawidłowo skonfigurowane dla polecenia cmdlet AppxDebug.
 
-1. Określ element PackageFullName identyfikator aplikacji.
+1. Określ identyfikator PackageFullName aplikacji.
 
-   1. Aby wyświetlić listę, która zawiera element PackageFullName wszystkie aplikacje, wpisz `Get-AppxPackage` w wierszu polecenia programu PowerShell.
+   1. Aby wyświetlić listę zawierającą PackageFullName wszystkich aplikacji, wpisz `Get-AppxPackage` w wierszu polecenia programu PowerShell.
 
-   1. W wierszu polecenia programu PowerShell wprowadź `Enable-AppxDebug <PackageFullName>`, gdzie \<Pełna_nazwa_pakietu > jest identyfikatorem element PackageFullName aplikacji.
+   1. W wierszu polecenia programu PowerShell wprowadź `Enable-AppxDebug <PackageFullName>`, gdzie \<PackageFullName > jest identyfikatorem PackageFullName aplikacji.
 
-1. Wybierz **debugowania** > **dołączyć do procesu**.
+1. Wybierz pozycję **debuguj** > **Dołącz do procesu**.
 
-1. W **dołączyć do procesu** okna dialogowego należy określić urządzenie zdalne w **adres docelowy połączenia** pole.
+1. W oknie dialogowym **Dołącz do procesu** Określ urządzenie zdalne w polu **cel połączenia** .
 
-   Można wprowadzić nazwę urządzenia, wybierz ją z listy rozwijanej w **adres docelowy połączenia** , albo pozycję **znaleźć** można znaleźć urządzenia w **połączeń zdalnych** okno dialogowe.
+   Możesz wprowadzić nazwę urządzenia, wybrać ją z listy rozwijanej w polu **cel połączenia** lub wybrać opcję **Znajdź** , aby znaleźć urządzenie w oknie dialogowym **połączenia zdalne** .
 
-1. Do określania typu kod chcesz debugować obok **dołączyć do** wybierz opcję **wybierz**.
+1. Aby określić typ kodu, który ma być debugowany, obok pola **Dołącz do** wybierz pozycję **Wybierz**.
 
-1. W **Wybieranie typu kodu** okna dialogowego wybierz opcję:
-   - **Automatycznie Określ typ kodu do debugowania**, lub
-   - **Debugowania tych typów kodu**, a następnie wybierz jeden lub więcej typów kodu z listy.
+1. W oknie dialogowym **Wybierz typ kodu** wybierz jedną z opcji:
+   - **Automatycznie Określ typ kodu do debugowania**lub
+   - **Debuguj te typy kodu**, a następnie wybierz jeden lub więcej typów kodu z listy.
 
-1. W **dostępne procesy** wybierz proces aplikacji do debugowania.
+1. Z listy **dostępne procesy** wybierz proces aplikacji do debugowania.
 
-1. Wybierz **dołączyć**.
+1. Wybierz pozycję **Dołącz**.
 
- Program Visual Studio dołącza debuger do procesu. Wykonywanie jest kontynuowane, dopóki punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi nieobsługiwany wyjątek, lub kończy się w aplikacji.
+ Program Visual Studio dołącza debuger do procesu. Wykonywanie jest kontynuowane do momentu, gdy punkt przerwania zostanie osiągnięty, zostanie wykonane ręcznie wstrzymanie wykonywania, wystąpił nieobsługiwany wyjątek lub aplikacja zostanie zakończona.
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> JavaScript aplikacje uruchamiane w wystąpieniu *wwahost.exe* procesu. Jeśli więcej niż jednej aplikacji JavaScript działa, konieczne będzie znany identyfikator liczbowych procesu (PID) aplikacji *wwahost.exe* proces do dołączenia do niej.
+> Aplikacje JavaScript działają w wystąpieniu procesu *wwahost. exe* . Jeśli więcej niż jedna aplikacja JavaScript jest uruchomiona, należy znać identyfikator procesu *wwahost. exe* aplikacji, aby dołączyć do niego.
 >
-> Najprostszym sposobem, aby dołączyć do aplikacji JavaScript jest Zamknij wszystkie inne aplikacje języka JavaScript. Lub możesz zauważyć identyfikatory PID uruchomiona *wwahost.exe* procesy Windows Menedżera zadań przed rozpoczęciem korzystania z aplikacji. Po uruchomieniu aplikacji, jego *wwahost.exe* identyfikator PID będzie ten, który różni się od innych niż wymienione wcześniej.
+> Najprostszym sposobem dołączenia do aplikacji JavaScript jest zamknięcie wszystkich innych aplikacji JavaScript. Można też zauważyć identyfikatory PID uruchomionych procesów *wwahost. exe* w Menedżerze zadań systemu Windows przed rozpoczęciem aplikacji. Po uruchomieniu aplikacji jego identyfikator PID *wwahost. exe* będzie inny niż te, które zanotowano wcześniej.
 ::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+
+- [Debugowanie aplikacji w programie Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md)

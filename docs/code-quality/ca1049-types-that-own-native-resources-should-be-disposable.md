@@ -1,5 +1,5 @@
 ---
-title: 'CA1049: Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji'
+title: 'CA1049: Typy, które posiadają natywne zasoby powinny być usuwalne'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: c685e0d12ebb8f76d61687dd138e90c51a9cc8f5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306121"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440828"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typy, które posiadają natywne zasoby powinny być usuwalne
 
 |||
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|Category|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
@@ -56,13 +56,13 @@ Poniższy przykład przedstawia typ, który implementuje <xref:System.IDisposabl
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
-[CA2115: Wywołaj metodę GC. Utrzymywanie aktywności w przypadku korzystania z zasobów natywnych @ no__t-0
+[CA2115: Wywołaj funkcję GC.KeepAlive w przypadku korzystania z zasobów natywnych](../code-quality/ca2115.md)
 
-[CA1816: Wywołaj metodę GC. SuppressFinalize prawidłowo @ no__t-0
+[CA1816: Wywołaj poprawnie metodę GC.SuppressFinalize](../code-quality/ca1816.md)
 
-[CA2216: Typy jednorazowe powinny deklarować finalizator @ no__t-0
+[CA2216: Typy możliwe do likwidacji powinny deklarować finalizator](../code-quality/ca2216.md)
 
-[CA1001: Typy, które są własnością pól, powinny być jednorazowe @ no__t-0
+[CA1001: Typy z polami możliwymi do likwidacji powinny być możliwe do likwidacji](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Zobacz także
 

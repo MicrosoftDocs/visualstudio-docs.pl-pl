@@ -1,5 +1,5 @@
 ---
-title: 'CA1304: Określ argument CultureInfo'
+title: 'CA1304: Określ CultureInfo'
 ms.date: 06/30/2018
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2539cef9e6b2fe20513943f686aeaa1ff7a79013
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 50f4726b21b51b963074ee9ae1c161872f6a5e5a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235105"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444436"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ argument CultureInfo
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ CultureInfo
 
 |||
 |-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "71235105"
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda lub Konstruktor wywołuje element członkowski mający Przeciążenie, które akceptuje <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> parametr, a metoda lub Konstruktor nie wywołuje przeciążenia, które <xref:System.Globalization.CultureInfo> pobiera parametr. Ta reguła ignoruje wywołania następujących metod:
+Metoda lub Konstruktor wywołuje element członkowski z przeciążeniem akceptującym parametr <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>, a metoda lub Konstruktor nie wywołuje przeciążenia, które przyjmuje parametr <xref:System.Globalization.CultureInfo>. Ta reguła ignoruje wywołania następujących metod:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -40,7 +40,7 @@ Metoda lub Konstruktor wywołuje element członkowski mający Przeciążenie, kt
 
 ## <a name="rule-description"></a>Opis reguły
 
-Gdy obiekt <xref:System.IFormatProvider?displayProperty=nameWithType> lub nie jest podany, wartość domyślna, która jest dostarczana przez przeciążony element członkowski, może nie mieć żądanego efektu we wszystkich ustawieniach regionalnych. <xref:System.Globalization.CultureInfo> Ponadto członkowie platformy .NET wybierają domyślną kulturę i formatowanie na podstawie założeń, które mogą nie być poprawne dla kodu. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać informacje specyficzne dla kultury zgodnie z poniższymi wskazówkami:
+Gdy nie podano obiektu <xref:System.Globalization.CultureInfo> lub <xref:System.IFormatProvider?displayProperty=nameWithType>, wartość domyślna, która jest dostarczana przez przeciążony element członkowski, może nie mieć żądanego efektu we wszystkich ustawieniach regionalnych. Ponadto członkowie platformy .NET wybierają domyślną kulturę i formatowanie na podstawie założeń, które mogą nie być poprawne dla kodu. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać informacje specyficzne dla kultury zgodnie z poniższymi wskazówkami:
 
 - Jeśli wartość będzie wyświetlana użytkownikowi, Użyj bieżącej kultury. Zobacz <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
@@ -51,11 +51,11 @@ Gdy obiekt <xref:System.IFormatProvider?displayProperty=nameWithType> lub nie je
 Nawet jeśli domyślne zachowanie przeciążonego elementu członkowskiego jest odpowiednie dla Twoich potrzeb, lepiej jest jawnie wywołać Przeciążenie specyficzne dla kultury, aby kod był samodzielny i łatwiejszy w obciążeniu.
 
 > [!NOTE]
-> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>służy tylko do pobierania zlokalizowanych zasobów przy użyciu wystąpienia <xref:System.Resources.ResourceManager?displayProperty=nameWithType> klasy.
+> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> służy tylko do pobierania zlokalizowanych zasobów przy użyciu wystąpienia klasy <xref:System.Resources.ResourceManager?displayProperty=nameWithType>.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej zasady, Użyj przeciążenia, które przyjmuje <xref:System.Globalization.CultureInfo> argument.
+Aby naprawić naruszenie tej zasady, Użyj przeciążenia, które przyjmuje <xref:System.Globalization.CultureInfo> argumentu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
@@ -63,13 +63,13 @@ Można bezpiecznie pominąć ostrzeżenie z tej reguły, gdy jest to pewne, że 
 
 ## <a name="example-showing-how-to-fix-violations"></a>Przykład pokazujący, jak naprawić naruszenia
 
-W poniższym przykładzie `BadMethod` powoduje dwa naruszenia tej reguły. `GoodMethod`koryguje pierwsze naruszenie, przekazując niezmienną kulturę do <xref:System.String.Compare%2A?displayProperty=nameWithType>, i koryguje drugie naruszenie, przekazując bieżącą kulturę do <xref:System.String.ToLower%2A?displayProperty=nameWithType> , ponieważ `string3` jest ona wyświetlana użytkownikowi.
+W poniższym przykładzie `BadMethod` powoduje dwa naruszenia tej reguły. `GoodMethod` koryguje pierwsze naruszenie, przekazując niezmienną kulturę do <xref:System.String.Compare%2A?displayProperty=nameWithType> i koryguje drugie naruszenie, przekazując bieżącą kulturę do <xref:System.String.ToLower%2A?displayProperty=nameWithType>, ponieważ do użytkownika jest wyświetlany `string3`.
 
 [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
 
 ## <a name="example-showing-formatted-output"></a>Przykład pokazujący sformatowane dane wyjściowe
 
-Poniższy przykład pokazuje wpływ bieżącej kultury na wartość domyślną <xref:System.IFormatProvider> wybraną <xref:System.DateTime> przez typ.
+Poniższy przykład pokazuje wpływ bieżącej kultury na domyślną <xref:System.IFormatProvider>, która jest wybierana przez typ <xref:System.DateTime>.
 
 [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
 
@@ -82,7 +82,7 @@ Ten przykład generuje następujące wyniki:
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-- [CA1305: Określ IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305: Określ interfejs IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Zobacz także
 

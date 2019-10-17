@@ -1,5 +1,5 @@
 ---
-title: COM i debugowanie ActiveX | Dokumentacja firmy Microsoft
+title: Debugowanie modelu COM i ActiveX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,25 +21,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 701a0096e89123fc9c5445805bb43777735c0924
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563910"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435917"
 ---
 # <a name="com-and-activex-debugging"></a>COM i debugowanie ActiveX
-Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji modelu COM i kontrolek ActiveX.
+Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji COM i kontrolek ActiveX.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md) wspomniany uwagi podczas debugowania aplikacji modelu COM. Obejmują problemów: debugowanie kontenera przy użyciu dwóch projektów w obrębie tego samego rozwiązania, śledzenia do wywołania, które bardziej szczegółowo w granicach procesu, ustawiania punktów przerwania w funkcjach wywołania zwrotnego i przechodzenie między oraz kontenery i serwery i serwera COM.
+ [Debugowanie kontenera i serwera com](../debugger/com-server-and-container-debugging.md) Przed debugowaniem aplikacji COM wymienia specjalne zagadnienia. Problemy obejmują: Debugowanie serwera COM i kontenera przy użyciu dwóch projektów w tym samym rozwiązaniu, śledzenie wywołań, które przechodzą między różnymi procesami, ustawianie punktów przerwania w funkcjach wywołania zwrotnego i przechodzenie między i do kontenerów i serwerów.
 
- [Instrukcje: Debugowanie kontrolki ActiveX](../debugger/how-to-debug-an-activex-control.md) zawiera informacje na temat debugowania formantów ActiveX. Obejmuje to: określenie kontenera dla sesji debugowania zobaczyć, jak wykonuje kod w kontrolce ActiveX, debugowania powiązanych z danymi formantu ActiveX, symulując określonego kontenera i przechodzenie do kodu kontenera.
+ [Instrukcje: debugowanie kontrolki ActiveX](../debugger/how-to-debug-an-activex-control.md) Zawiera informacje na temat debugowania formantów ActiveX. Obejmuje to: Określanie kontenera dla sesji debugowania, aby zobaczyć, jak kod w kontrolce ActiveX jest wykonywany, debugowanie kontrolki ActiveX powiązanej z danymi, symulowanie określonego kontenera i przechodzenie do kodu kontenera.
 
- [Narzędzia debugowania COM](../debugger/com-debugging-tools.md) zawiera listę przeglądarek i przykładowe aplikacje, które mogą być przydatne podczas debugowania aplikacji modelu COM.
+ [Narzędzia debugowania modelu COM](../debugger/com-debugging-tools.md) Wyświetla listę osób przeglądających i przykładowych aplikacji, które mogą być przydatne w debugowaniu aplikacji COM.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md) zawiera łącza do większych sekcji dokumentacji debugowania. Informacje obejmują: co nowego w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, edytowanie i kontynuowani, debugowanie zarządzanego kodu, debugowania projektów Visual C++, debugowania modelu COM i ActiveX, debugowania bibliotek DLL, debugowanie SQL i użytkownika odwołania do interfejsu.
+ [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md) Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje: co nowego w debugerze, ustawieniach i przygotowaniu, punktach przerwania, obsługa wyjątków, edytowanie i kontynuowanie, debugowanie kodu zarządzanego, C++ Debugowanie projektów, debugowanie modelu COM i ActiveX, debugowanie bibliotek DLL, debugowanie SQL i użytkownik odwołania do interfejsu.
 
 ## <a name="see-also"></a>Zobacz też
 

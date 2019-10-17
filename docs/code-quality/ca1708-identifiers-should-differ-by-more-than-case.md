@@ -1,5 +1,5 @@
 ---
-title: 'CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter'
+title: 'CA1708: Identyfikatory powinny różnić się czymś więcej niż wielkością liter'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203f7f287ebb5b71ecad6e6ad4a861d63e5cf08
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8110533573aaeb9b8c32d224cc03d6ca238e0e8e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234219"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439850"
 ---
-# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter
+# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identyfikatory powinny różnić się czymś więcej niż wielkością liter
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna

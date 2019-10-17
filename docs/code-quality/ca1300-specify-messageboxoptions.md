@@ -1,5 +1,5 @@
 ---
-title: 'CA1300: Określ argument MessageBoxOptions'
+title: 'CA1300: Określ MessageBoxOptions'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 746475e60bbe72c4ebfc51f13d0b2d4d0552ff62
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 4403b1f565698ae170bbccf152d5866250c0f114
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235198"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444456"
 ---
-# <a name="ca1300-specify-messageboxoptions"></a>CA1300: Określ argument MessageBoxOptions
+# <a name="ca1300-specify-messageboxoptions"></a>CA1300: Określ MessageBoxOptions
 
 |||
 |-|-|
@@ -35,15 +35,15 @@ ms.locfileid: "71235198"
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda wywołuje Przeciążenie <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> metody, która nie <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> przyjmuje argumentu.
+Metoda wywołuje Przeciążenie metody <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>, która nie przyjmuje argumentu <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
 
-Aby wyświetlić okno komunikatu poprawnie dla kultur korzystających z kolejności czytania od prawej do lewej, Przekaż do <xref:System.Windows.Forms.MessageBox.Show%2A> metody pola [MessageBoxOptions. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) i [MessageBoxOptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) . <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> Sprawdź Właściwość zawierającej kontrolki, aby określić, czy ma być używana kolejność odczytywania od prawej do lewej.
+Aby wyświetlić okno komunikatu prawidłowo dla kultur korzystających z kolejności czytania od prawej do lewej, Przekaż pola [MessageBoxOptions. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) i [MessageBoxOptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) do metody <xref:System.Windows.Forms.MessageBox.Show%2A>. Sprawdź Właściwość <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> kontrolki zawierającej, aby określić, czy ma być używana kolejność odczytywania od prawej do lewej.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby naprawić naruszenie tej reguły, wywołaj Przeciążenie <xref:System.Windows.Forms.MessageBox.Show%2A> metody, która <xref:System.Windows.Forms.MessageBoxOptions> przyjmuje argument.
+Aby naprawić naruszenie tej reguły, wywołaj Przeciążenie metody <xref:System.Windows.Forms.MessageBox.Show%2A>, która przyjmuje argument <xref:System.Windows.Forms.MessageBoxOptions>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 

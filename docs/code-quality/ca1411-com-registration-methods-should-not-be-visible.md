@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e9582fb6bbdbda8aefbb60e2c69d16380eec3dff
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b39e16b2a94a22582b9f369e647676541fa4220d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234754"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440175"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Metody rejestracji modelu COM nie powinny być widoczne
 
@@ -35,13 +35,13 @@ ms.locfileid: "71234754"
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda oznaczona przy użyciu <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> lub atrybutu jest widoczna na zewnątrz.
+Metoda oznaczona z atrybutem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> jest widoczna na zewnątrz.
 
 ## <a name="rule-description"></a>Opis reguły
-Gdy zestaw jest zarejestrowany w Component Object Model (COM), wpisy są dodawane do rejestru dla każdego typu widocznego dla modelu COM w zestawie. Metody, które są oznaczone <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atrybutem and <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> , są wywoływane odpowiednio w procesach rejestracji i wyrejestrowywania, aby uruchomić kod użytkownika, który jest specyficzny dla rejestracji/wyrejestrowywania tych typów. Tego kodu nie należy wywoływać poza tymi procesami.
+Gdy zestaw jest zarejestrowany w Component Object Model (COM), wpisy są dodawane do rejestru dla każdego typu widocznego dla modelu COM w zestawie. Metody oznaczone atrybutami <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> i <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> są wywoływane odpowiednio w procesach rejestracji i wyrejestrowania, aby można było uruchomić kod użytkownika, który jest specyficzny dla rejestracji/wyrejestrowywania tych typów. Tego kodu nie należy wywoływać poza tymi procesami.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
-Aby naprawić naruszenie tej reguły, Zmień dostępność metody `private` na lub `internal` (`Friend` w programie [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Aby naprawić naruszenie tej reguły, Zmień dostępność metody na `private` lub `internal` (`Friend` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 Nie pomijaj ostrzeżeń dla tej reguły.

@@ -1,5 +1,5 @@
 ---
-title: 'CA1057: Identyfikator URI typu string przeciąża wywołanie przeciążane przez typ System.Uri'
+title: 'CA1057: Przeciążenia identyfikatora URI, który jest ciągiem, wywołują przeciążenia System.Uri'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,31 +18,31 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e6bd77a49690979ea7ab3c4619fdd578a80bb77c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 92990533b77d27f38296f8519c00840ff1f8c8b1
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235524"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449090"
 ---
-# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Identyfikator URI typu string przeciąża wywołanie przeciążane przez typ System.Uri
+# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Przeciążenia identyfikatora URI, który jest ciągiem, wywołują przeciążenia System.Uri
 
 |||
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|
 |CheckId|CA1057|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
 
-Typ deklaruje przeciążenia metody, które różnią się tylko zastępowaniem parametru <xref:System.Uri?displayProperty=fullName> ciągu parametrem, a Przeciążenie, które pobiera parametr String, nie wywołuje przeciążenia, które <xref:System.Uri> pobiera parametr.
+Typ deklaruje przeciążenia metody, które różnią się tylko zastępowaniem parametru ciągu ciągiem <xref:System.Uri?displayProperty=fullName>, a Przeciążenie, które przyjmuje parametr String, nie wywołuje przeciążenia, które przyjmuje parametr <xref:System.Uri>.
 
 ## <a name="rule-description"></a>Opis reguły
-Ponieważ przeciążenia różnią się tylko ciągiem lub <xref:System.Uri> parametrem, przyjmuje się, że reprezentuje on jednolity identyfikator zasobów (URI). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. <xref:System.Uri> Klasa udostępnia te usługi w bezpieczny i bezpieczny sposób. Aby skorzystać zalety <xref:System.Uri> klasy, Przeciążenie ciągu powinno <xref:System.Uri> wywoływać przeciążenie przy użyciu argumentu ciągu.
+Ponieważ przeciążenia różnią się tylko ciągiem lub <xref:System.Uri>, przyjmuje się, że ciąg reprezentuje jednolity identyfikator zasobów (URI). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. Klasy <xref:System.Uri> udostępniają te usługi w bezpieczny i bezpieczny sposób. Aby skorzystać zalety klasy <xref:System.Uri>, Przeciążenie ciągu powinno wywoływać przeciążenie <xref:System.Uri> przy użyciu argumentu ciągu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
-Ponownie Zaimplementuj metodę, która używa ciągu reprezentującego identyfikator URI, aby tworzył wystąpienie <xref:System.Uri> klasy za pomocą argumentu String, a następnie <xref:System.Uri> przekazuje obiekt do przeciążenia, które ma <xref:System.Uri> parametr.
+Ponownie Zaimplementuj metodę, która używa ciągu reprezentującego identyfikator URI, aby tworzył wystąpienie klasy <xref:System.Uri> przy użyciu argumentu String, a następnie przekazuje obiekt <xref:System.Uri> do przeciążenia, które ma parametr <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 Jeśli parametr ciągu nie reprezentuje identyfikatora URI, można bezpiecznie pominąć ostrzeżenie z tej reguły.
@@ -55,10 +55,10 @@ Poniższy przykład pokazuje poprawnie zaimplementowane Przeciążenie ciągu.
 [!code-vb[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/VisualBasic/ca1057-string-uri-overloads-call-system-uri-overloads_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
-[CA2234 Przekaż obiekty System. URI zamiast ciągów](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+[CA2234: Przekaż obiekty System.Uri zamiast ciągów](../code-quality/ca2234.md)
 
 [CA1056: Właściwości identyfikatora URI nie powinny być ciągami](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
 [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
-[CA1055: Zwracane wartości identyfikatora URI nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+[CA1055: Wartości zwracane identyfikatora URI nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

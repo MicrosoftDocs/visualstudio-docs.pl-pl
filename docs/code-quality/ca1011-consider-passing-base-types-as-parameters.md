@@ -1,5 +1,5 @@
 ---
-title: 'CA1011: Rozważ przekazywanie typów podstawowych jako parametrów'
+title: 'CA1011: Należy rozważyć przekazywanie typów bazowych jako parametrów'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dcb5937f58088684e7bfc204ab4143434b0684ae
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: fbb807f7146c781d2b97cf80f2e78c8beb5c38b4
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236408"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441671"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Rozważ przekazywanie typów podstawowych jako parametrów
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Należy rozważyć przekazywanie typów bazowych jako parametrów
 
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
@@ -52,7 +52,7 @@ Można bezpiecznie pominąć ostrzeżenie z tej reguły
 
 - Jeśli metoda wymaga określonej funkcjonalności, która jest dostarczana przez typ pochodny
 
-     \- lub —
+     \- lub-
 
 - Aby wymusić, że tylko typ pochodny lub bardziej pochodny typ jest przekazanie do metody.
 
@@ -60,7 +60,7 @@ W takich przypadkach kod będzie bardziej niezawodny ze względu na ścisłe spr
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład przedstawia metodę, `ManipulateFileStream`, która może być używana tylko <xref:System.IO.FileStream> z obiektem, co narusza tę regułę. Druga metoda `ManipulateAnyStream`,,, spełnia regułę przez <xref:System.IO.FileStream> zastąpienie parametru za pomocą <xref:System.IO.Stream>.
+Poniższy przykład przedstawia metodę `ManipulateFileStream`, która może być używana tylko z obiektem <xref:System.IO.FileStream>, co narusza tę regułę. Druga metoda, `ManipulateAnyStream`, spełnia regułę przez zastąpienie parametru <xref:System.IO.FileStream> przy użyciu <xref:System.IO.Stream>.
 
 [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
 [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
@@ -68,4 +68,4 @@ Poniższy przykład przedstawia metodę, `ManipulateFileStream`, która może by
 
 ## <a name="related-rules"></a>Powiązane reguły
 
-[CA1059: Składowe nie powinny ujawniać niektórych typów konkretnych](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+[CA1059: Składowe nie powinny ujawniać pewnych typów konkretnych](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

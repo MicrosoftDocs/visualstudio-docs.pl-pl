@@ -1,5 +1,5 @@
 ---
-title: 'CA1600: Nie używaj priorytetu procesu o wartości Bezczynny'
+title: 'CA1600: Nie używaj priorytetu procesu bezczynności'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 686929471ee8b6b5d1896f61bcbcd97a59135462
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2075918672452e222ba4becae915712ba20ff0d0
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234377"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440015"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Nie używaj priorytetu procesu o wartości Bezczynny
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Nie używaj priorytetu procesu bezczynności
 
 |||
 |-|-|
@@ -31,10 +31,10 @@ ms.locfileid: "71234377"
 |Zmiana podziału|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
-Ta reguła występuje, gdy procesy są ustawione `ProcessPriorityClass.Idle`na.
+Ta reguła występuje, gdy dla procesów ustawiono wartość `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Opis reguły
-Nie należy ustawiać priorytetu procesu na Idle. Procesy, które `System.Diagnostics.ProcessPriorityClass.Idle` mają zajmować procesor CPU, gdy byłyby w stanie bezczynności, w związku z tym blokują zablokowanie.
+Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają `System.Diagnostics.ProcessPriorityClass.Idle` będą zajmowały procesor CPU, gdy będzie w przeciwnym razie w stanie bezczynności.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 Ustaw procesy na `ProcessPriorityClass.BelowNormal`.

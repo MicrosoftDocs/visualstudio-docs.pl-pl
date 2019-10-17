@@ -8,17 +8,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 669b7806e01772e6a871b6c6a9bf47907cf9a5a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c72dd1455405ecbabb86ca10744639d402881cef
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816591"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449141"
 ---
 # <a name="cryptography-warnings"></a>Ostrzeżenia dotyczące kryptografii
-Ostrzeżenia dotyczące kryptografii obsługują bezpieczniejsze biblioteki i aplikacje przy użyciu poprawnego użycia kryptografii. Ostrzeżenia te pomagają zapobiec usterkom w zabezpieczeniach w programie. Przyczynę wyłączenia któregokolwiek z tych ostrzeżeń należy wyraźnie oznaczyć w kodzie i poinformować o tym osobę odpowiedzialną za bezpieczeństwo w projekcie.
+Ostrzeżenia kryptografii obsługują bezpieczniejsze biblioteki i aplikacje poprzez poprawne użycie kryptografii. Ostrzeżenia te pomagają zapobiec usterkom w zabezpieczeniach w programie. Przyczynę wyłączenia któregokolwiek z tych ostrzeżeń należy wyraźnie oznaczyć w kodzie i poinformować o tym osobę odpowiedzialną za bezpieczeństwo w projekcie.
 
 |Reguła|Opis|
 |----------|-----------------|
-|[CA5350: Nie używaj słabych algorytmów kryptograficznych](../code-quality/ca5350-do-not-use-weak-cryptographic-algorithms.md)|Słabe szyfrowanie, algorytmy i funkcje wyznaczania wartości skrótu są używane obecnie do szeregu przyczyn, ale nie powinny być używane, aby zagwarantować poufność ani spójność danych, które chronią.        Ta zasada wyzwala, gdy znajdzie TripleDES, SHA1 lub RIPEMD160 algorytmów w kodzie.|
-|[CA5351: Nie używaj uszkodzonych algorytmów kryptograficznych](../code-quality/ca5351-do-not-use-broken-cryptographic-algorithms.md)|Uszkodzony kryptograficznych algorytmy nie są uznawane za bezpieczne i ich użycie powinno być zdecydowanie odradzane. Ta zasada wyzwala, gdy znajdzie algorytmu wyznaczania wartości skrótu MD5 lub DES lub RC2 algorytmów szyfrowania w kodzie.|
+|[CA5350: Nie używaj słabych algorytmów kryptograficznych](../code-quality/ca5350.md)|Słabe algorytmy szyfrowania i funkcje wyznaczania wartości skrótu są obecnie używane z wielu powodów, ale nie powinny być używane do zagwarantowania poufności lub integralności chronionych danych.        Ta reguła jest wyzwalana po znalezieniu w kodzie algorytmów TripleDES, SHA1 lub RIPEMD160.|
+|[CA5351: Nie używaj uszkodzonych algorytmów kryptograficznych](../code-quality/ca5351.md)|Uszkodzone algorytmy kryptograficzne nie są uważane za bezpieczne, a ich użycie nie powinno być zdecydowanie zalecane. Ta reguła jest wyzwalana, gdy odnajdzie algorytm wyznaczania wartości skrótu MD5 lub algorytmy szyfrowania DES lub RC2 w kodzie.|
