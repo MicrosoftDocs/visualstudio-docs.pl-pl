@@ -239,7 +239,7 @@
             - name: Widoki niestandardowe (zarządzane)
               items:
                 - name: Tworzenie niestandardowych widoków obiektów zarządzanych
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: Określanie zawartości do wyświetlenia w debugerze
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Określanie typu do wyświetlenia w debugerze
