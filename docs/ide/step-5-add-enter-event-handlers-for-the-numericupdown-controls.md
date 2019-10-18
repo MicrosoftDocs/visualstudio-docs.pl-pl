@@ -1,5 +1,5 @@
 ---
-title: Krok 5. Dodaj programy obsługi zdarzeń Enter dla kontrolek NumericUpDown
+title: Krok 5. Dodawanie obsługi zdarzeń Enter dla formantów NumericUpDown
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,20 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118738"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314119"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5. Dodawanie obsługi zdarzeń wprowadzania dla kontrolek NumericUpDown
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5. Dodawanie obsługi zdarzeń Enter dla kontrolek NumericUpDown
 
-W piątej części tego samouczka dodasz <xref:System.Windows.Forms.Control.Enter> programy obsługi zdarzeń, aby ułatwić wprowadzanie odpowiedzi na problemy z quizem. Ten kod zostanie wybrany i wyczyści bieżącą wartość w każdej <xref:System.Windows.Forms.NumericUpDown> kontrolce zaraz po jej wybraniu i rozpoczęciu wprowadzania innej wartości.
+W piątej części tego samouczka dodasz obsługę zdarzeń <xref:System.Windows.Forms.Control.Enter>, aby wprowadzić odpowiedzi na problemy z quizem nieco łatwiejszy. Ten kod zostanie wybrany i wyczyści bieżącą wartość w każdej kontrolce <xref:System.Windows.Forms.NumericUpDown>, gdy tylko wybierze ją, a następnie zacznie wprowadzić inną wartość.
 
 > [!NOTE]
 > Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem.
-> - Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu.
+> - Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-the-default-behavior"></a>Aby sprawdzić zachowanie domyślne
@@ -62,16 +62,15 @@ W piątej części tego samouczka dodasz <xref:System.Windows.Forms.Control.Ente
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     > [!IMPORTANT]
-     > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Ten kod może wyglądać skomplikowanie, ale możesz go zrozumieć, Jeśli zobaczysz go na etapie krok po kroku. Najpierw Spójrz na początek metody: `object sender` w C# lub `sender As System.Object` w Visual Basic. Ten parametr odnosi się do obiektu, którego zdarzenie jest wyzwalane, co jest znane jako nadawca. W takim przypadku obiektem nadawcy jest formant NumericUpDown. Dlatego w pierwszym wierszu metody należy określić, że nadawca nie jest tylko obiektem ogólnym, ale szczególnie formantem NumericUpDown. (Każda kontrolka NumericUpDown jest obiektem, ale nie każdy obiekt jest kontrolką NumericUpDown). Kontrolka NumericUpDown ma nazwę **answerBox** w tej metodzie, ponieważ będzie używana we wszystkich kontrolkach NumericUpDown w formularzu, a nie tylko w formancie NumericUpDown sum. Ponieważ w tej metodzie deklarujesz zmienną answerBox, jej zakres ma zastosowanie tylko do tej metody. Innymi słowy, zmienna może być używana tylko w ramach tej metody.
 
-     Następny wiersz weryfikuje, czy answerBox został pomyślnie przekonwertowany (rzutowany) z obiektu do kontrolki NumericUpDown. Jeśli konwersja zakończyła się niepowodzeniem, zmienna może mieć wartość `null` (C#) lub `Nothing` (Visual Basic). Trzeci wiersz otrzymuje długość odpowiedzi, która pojawia się w kontrolce NumericUpDown, a czwarta linia wybiera bieżącą wartość w kontrolce na podstawie tej długości. Teraz, gdy program quizu wybierze formant, program Visual Studio wyzwala to zdarzenie, co powoduje wybranie bieżącej odpowiedzi. Zaraz po rozpoczęciu przez program quizu w celu wprowadzenia innej odpowiedzi poprzednia odpowiedź zostanie wyczyszczona i zastąpiona nową odpowiedzią.
+     Następny wiersz weryfikuje, czy answerBox został pomyślnie przekonwertowany (rzutowany) z obiektu do kontrolki NumericUpDown. Jeśli konwersja zakończyła się niepowodzeniem, zmienna miałaby wartość `null` (C#) lub `Nothing` (Visual Basic). Trzeci wiersz otrzymuje długość odpowiedzi, która pojawia się w kontrolce NumericUpDown, a czwarta linia wybiera bieżącą wartość w kontrolce na podstawie tej długości. Teraz, gdy program quizu wybierze formant, program Visual Studio wyzwala to zdarzenie, co powoduje wybranie bieżącej odpowiedzi. Zaraz po rozpoczęciu przez program quizu w celu wprowadzenia innej odpowiedzi poprzednia odpowiedź zostanie wyczyszczona i zastąpiona nową odpowiedzią.
 
 4. W **Projektant formularzy systemu Windows**wybierz formant różnica **NumericUpDown** .
 
-5. Na stronie **zdarzenia** okna dialogowego **Właściwości** przewiń w dół do zdarzenia **Enter** , wybierz strzałkę listy rozwijanej na końcu wiersza `answer_Enter` , a następnie wybierz właśnie dodany program obsługi zdarzeń.
+5. Na stronie **zdarzenia** okna dialogowego **Właściwości** przewiń w dół do zdarzenia **Enter** , wybierz strzałkę listy rozwijanej na końcu wiersza, a następnie wybierz właśnie dodany program obsługi zdarzeń `answer_Enter`.
 
 6. Powtórz poprzedni krok dla kontrolek NumericUpDown produktu i ilorazu.
 
@@ -81,6 +80,6 @@ W piątej części tego samouczka dodasz <xref:System.Windows.Forms.Control.Ente
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz  **[krok 6. Dodawanie problemu](../ide/step-6-add-a-subtraction-problem.md)** odejmowania.
+- Aby przejść do następnego kroku samouczka, zobacz **[krok 6: Dodawanie problemu odejmowania](../ide/step-6-add-a-subtraction-problem.md)** .
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodaj metodę](../ide/step-4-add-the-checktheanswer-parens-method.md)metody CheckTheAnswer ().
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodawanie metody metody CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).

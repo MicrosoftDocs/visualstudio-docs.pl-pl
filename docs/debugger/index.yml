@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Dokumentacja debugera programu Visual Studio
-summary: Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywania programu i znajdowanie problemów.
+summary: Debuger programu Visual Studio pomaga obserwować zachowanie programu w czasie wykonywania i znajdować problemy.
 metadata:
   title: Debugowanie w Visual Studio
   description: Dowiedz się, jak debugować aplikacje i kod przy użyciu programu Visual Studio.
@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: 9ddd78b13e3281c4285d0bb2aaf4ee0a34af5369
-  ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+  ms.openlocfilehash: c98bb7851b2b959e078c954cd8f11b1d4151ce0b
+  ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71814306"
+  ms.lasthandoff: 10/15/2019
+  ms.locfileid: "72349690"
 landingContent:
 - title: Informacje o debugowaniu
   linkLists:
@@ -22,13 +22,11 @@ landingContent:
     links:
     - text: Co to jest debugowanie?
       url: what-is-debugging.md
-    - text: Narzędzia i techniki debugowania
-      url: write-better-code-with-visual-studio.md
     - text: Pierwsze spojrzenie na debugera
       url: debugger-feature-tour.md
     - text: Znajdowanie zadania debugowania
       url: find-your-debugging-task.md
-- title: Rozpoczęcie pracy
+- title: Wprowadzenie
   linkLists:
   - linkListType: tutorial
     links:

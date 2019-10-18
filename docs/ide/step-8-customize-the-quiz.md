@@ -1,5 +1,5 @@
 ---
-title: Krok 8. Dostosowywanie testu
+title: Krok 8. Dostosowywanie quizu
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,20 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 402817ace34f12fb7659b7251cbe755d036ebc4b
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: cee7b855256f352c9ac9ed39994191f4a9e6d946
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118638"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314208"
 ---
-# <a name="step-8-customize-the-quiz"></a>Krok 8. Dostosowywanie testu
+# <a name="step-8-customize-the-quiz"></a>Krok 8. Dostosowywanie quizu
 
-W ostatniej części samouczka zapoznajesz się z innymi sposobami dostosowywania quizu i rozwinięcia tego, co już znasz. Na przykład należy zastanowić się, jak program tworzy losowe problemy dotyczące dzielenia, dla których odpowiedź nigdy nie jest częścią. Aby dowiedzieć się więcej, `timeLabel` Zmień kolor kontrolki na inny i nadaj wskazówkę quizu.
+W ostatniej części samouczka zapoznajesz się z innymi sposobami dostosowywania quizu i rozwinięcia tego, co już znasz. Na przykład należy zastanowić się, jak program tworzy losowe problemy dotyczące dzielenia, dla których odpowiedź nigdy nie jest częścią. Aby dowiedzieć się więcej, Zmień kolor kontrolki `timeLabel` na inny, a następnie Przekaż wskazówkę do wskazówki.
 
 > [!NOTE]
 > Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem.
-> - Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu.
+> - Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-customize-the-quiz"></a>Aby dostosować Quiz
@@ -41,15 +41,14 @@ W ostatniej części samouczka zapoznajesz się z innymi sposobami dostosowywani
   timeLabel.BackColor = Color.Red
   ```
 
-  > [!IMPORTANT]
-  > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>![Kontrolka języka programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+  [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
   Zresetuj kolor, gdy quiz jest ustawiony na wartość.
 
-- Nadaj quizowi wskazówkę, odtwarzając dźwięk po wprowadzeniu odpowiedniej odpowiedzi do <xref:System.Windows.Forms.NumericUpDown> kontrolki. (Należy napisać procedurę obsługi zdarzeń dla każdego <xref:System.Windows.Forms.NumericUpDown.ValueChanged> zdarzenia kontrolki, które jest wyzwalane za każdym razem, gdy osoba przyjmująca Quiz zmieni wartość kontrolki).
+- Nadaj quizowi wskazówkę, odtwarzając dźwięk po wprowadzeniu prawidłowej odpowiedzi do kontrolki <xref:System.Windows.Forms.NumericUpDown>. (Należy napisać procedurę obsługi zdarzeń dla każdego zdarzenia <xref:System.Windows.Forms.NumericUpDown.ValueChanged> kontrolki, które jest wyzwalane za każdym razem, gdy osoba zażąda zmiany wartości kontrolki.)
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego samouczka, zobacz  **[samouczek 3: Utwórz pasującą grę](../ide/tutorial-3-create-a-matching-game.md).**
+- Aby przejść do następnego samouczka, zobacz **[samouczek 3: Tworzenie gry w dopasowywanie](../ide/tutorial-3-create-a-matching-game.md)** .
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 7: Dodawanie problemów](../ide/step-7-add-multiplication-and-division-problems.md)mnożenia i dzielenia.
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 7. Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).
