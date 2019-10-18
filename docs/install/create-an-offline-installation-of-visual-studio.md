@@ -16,24 +16,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
-ms.translationtype: HT
+ms.openlocfilehash: b9c8b60914e814ab6957ee9ec9307b12d9c3d1ba
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381092"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516883"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 
 ::: moniker range="vs-2017"
 
-Program Visual Studio 2017 został zaprojektowany tak, aby działał prawidłowo w różnych konfiguracjach sieci i komputerów. Mimo że zalecamy wypróbowanie [Instalatora sieci Web programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads)&mdash;which to mały plik i pozwala zachować aktualność wraz ze wszystkimi najnowszymi poprawkami i funkcjami @ no__t-2WE zrozumieć, że może być niemożliwe.
+Program Visual Studio 2017 został zaprojektowany tak, aby działał prawidłowo w różnych konfiguracjach sieci i komputerów. Mimo że zalecamy wypróbowanie [Instalatora sieci Web programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads) &mdash;which jest to mały plik i pozwala na bieżące korzystanie ze wszystkich najnowszych poprawek i funkcji &mdash;we zrozumienia, że może być niemożliwe.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Program Visual Studio 2019 został zaprojektowany tak, aby działał prawidłowo w różnych konfiguracjach sieci i komputerów. Mimo że zalecamy wypróbowanie [Instalatora sieci Web programu Visual Studio](https://visualstudio.microsoft.com/downloads)&mdash;which to mały plik i pozwala zachować aktualność wraz ze wszystkimi najnowszymi poprawkami i funkcjami @ no__t-2WE zrozumieć, że może być niemożliwe.
+Program Visual Studio 2019 został zaprojektowany tak, aby działał prawidłowo w różnych konfiguracjach sieci i komputerów. Mimo że zalecamy wypróbowanie [Instalatora sieci Web programu Visual Studio](https://visualstudio.microsoft.com/downloads) &mdash;which jest to mały plik i pozwala na bieżące korzystanie ze wszystkich najnowszych poprawek i funkcji &mdash;we zrozumienia, że może być niemożliwe.
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Aby ukończyć ten krok, musisz mieć połączenie z Internetem.
 
 Aby uzyskać program inicjujący dla programu Visual Studio 2017, zobacz stronę pobierania [poprzednich wersji programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) , aby uzyskać szczegółowe informacje o tym, jak to zrobić.
 
-Plik wykonywalny instalatora @ no__t-0or jest bardziej szczegółowy, a program inicjujący @ no__t-1should pasuje lub może być podobny do jednego z następujących.
+Plik wykonywalny instalatora &mdash;or bardziej szczegółowy, &mdash;should pliku programu inicjującego jest zgodny z jedną z następujących czynności:
 
 | Wersja | Nazwa pliku |
 |-------------|-----------------------|
@@ -92,7 +92,7 @@ Plik wykonywalny instalatora @ no__t-0or jest bardziej szczegółowy, a program 
 
 ::: moniker range="vs-2019"
 
-Zacznij od pobrania programu inicjującego Visual Studio dla wybranej wersji programu Visual Studio. Plik Instalatora @ no__t-0or inicjujący @ no__t-1will pasuje lub być podobny do jednego z następujących.
+Zacznij od pobrania programu inicjującego Visual Studio dla wybranej wersji programu Visual Studio. Plik Instalatora &mdash;or program inicjujący &mdash;will jest zgodny z jedną z następujących czynności:
 
 | Wersja                    | Plik                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
@@ -136,7 +136,7 @@ Otwórz wiersz polecenia i użyj jednego z poleceń z poniższych przykładów. 
     vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- Aby utworzyć pełny układ lokalny ze wszystkimi funkcjami (trwa to długo, @ no__t-0we ma _wiele_ funkcji!), uruchom polecenie:
+- Aby utworzyć pełny układ lokalny ze wszystkimi funkcjami (trwa to długo &mdash;we ma _wiele_ funkcji!), uruchom następujące polecenie:
 
    ```cmd
     vs_community.exe --layout c:\vslayout --lang en-US
@@ -164,9 +164,9 @@ Jeśli chcesz zainstalować język inny niż angielski, Zmień wartość `en-US`
 > Po uruchomieniu z lokalnej pamięci podręcznej instalacji Instalator używa lokalnych wersji każdego z tych plików. Ale w przypadku wybrania składników podczas instalacji, które nie znajdują się w pamięci podręcznej, Instalator próbuje pobrać je z Internetu.
 
 ::: moniker range="vs-2019"
-
-> W przypadku instalacji i aktualizacji z 16,1 i nowszymi, jeśli wystąpi błąd "nie można odnaleźć produktu zgodnego z następującymi parametrami" w systemach offline, użyj przełącznika--noweb z 16.3.5 lub nowszym.
-
+> [!IMPORTANT]
+> W przypadku instalacji w trybie offline, jeśli zostanie wyświetlony komunikat o błędzie "nie można odnaleźć produktu zgodnego z następującymi parametrami", upewnij się, że używasz przełącznika `--noweb` w wersji 16.3.5 lub nowszej.
+>
 ::: moniker-end
 
 Aby upewnić się, że instalujesz tylko pobrane pliki, Użyj tych samych opcji wiersza polecenia, które zostały użyte do utworzenia pamięci podręcznej układu. Na przykład jeśli utworzono pamięć podręczną układu przy użyciu następującego polecenia:

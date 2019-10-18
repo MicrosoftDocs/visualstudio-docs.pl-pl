@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d941022427cbfa8d16efe98f716feceff980583
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e3c0b45fe73624a7506fbfdb52204201d286a73e
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445665"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535758"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Zestaw reguł Mixed Minimum Rules
 
@@ -86,13 +86,13 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C28182](../code-quality/c28182.md)|Wyłuskanie wskaźnika o wartości NULL. Wskaźnik zawiera taką samą wartość NULL jak inny wskaźnik.|
 |[C28202](../code-quality/c28202.md)|Niedozwolone odwołanie do niestatycznej składowej|
 |[C28203](../code-quality/c28203.md)|Niejednoznaczne odwołanie do składowej klasy.|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 lub \_On @ no__t-3failure @ no__t-4 użyty w niedozwolonym kontekście|
+|[C28205](../code-quality/c28205.md)|\_Success \_ lub \_On \_failure \_ używane w niedozwolonym kontekście|
 |[C28206](../code-quality/c28206.md)|Lewy argument operacji wskazuje na strukturę, użyj "->"|
 |[C28207](../code-quality/c28207.md)|Lewy argument operacji jest strukturą, użyj "."|
 |[C28210](../code-quality/c28210.md)|Adnotacje dla kontekstu __on_failure nie mogą być w jawnym kontekście wstępnym|
 |[C28211](../code-quality/c28211.md)|Oczekiwano nazwy kontekstu statycznego dla SAL_context|
 |[C28212](../code-quality/c28212.md)|Oczekiwano wyrażenia wskaźnika dla adnotacji|
-|[C28213](../code-quality/c28213.md)|Adnotacja \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 musi być używana do odwoływania się do, bez modyfikacji, wcześniejszej deklaracji.|
+|[C28213](../code-quality/c28213.md)|@No__t_0Use \_decl \_annotations \_ adnotacja musi być używana do odwoływania się, bez modyfikacji, wcześniejszej deklaracji.|
 |[C28214](../code-quality/c28214.md)|Nazwy parametrów atrybutu muszą być P1... P9|
 |[C28215](../code-quality/c28215.md)|Nie można zastosować typefix do parametru, który ma już typefix|
 |[C28216](../code-quality/c28216.md)|Adnotacja Checkreturn dotyczy ma zastosowanie tylko do warunki końcowe dla określonego parametru funkcji.|
@@ -101,7 +101,7 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C28219](../code-quality/c28219.md)|Oczekiwano składowej wyliczenia dla adnotacji, parametr w adnotacji|
 |[C28220](../code-quality/c28220.md)|Oczekiwano wyrażenia liczby całkowitej dla adnotacji, parametr w adnotacji|
 |[C28221](../code-quality/c28221.md)|Oczekiwano wyrażenia ciągu dla parametru w adnotacji|
-|[C28222](../code-quality/c28222.md)|__yes, @no__t -0 _NO lub @no__t -1 _maybe oczekiwano dla adnotacji|
+|[C28222](../code-quality/c28222.md)|__yes, \__no lub \__maybe oczekiwane dla adnotacji|
 |[C28223](../code-quality/c28223.md)|Nie znaleziono oczekiwanego tokenu/identyfikatora dla adnotacji, parametr|
 |[C28224](../code-quality/c28224.md)|Adnotacja wymaga parametrów|
 |[C28225](../code-quality/c28225.md)|Nie znaleziono poprawnej liczby wymaganych parametrów w adnotacji|
@@ -134,26 +134,26 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C28267](../code-quality/c28267.md)|W adnotacji znaleziono błąd składni w funkcji.|
 |[C28272](../code-quality/c28272.md)|Adnotacja dla funkcji, parametr podczas badania, jest niespójna z deklaracją funkcji|
 |[C28273](../code-quality/c28273.md)|W przypadku funkcji wskazówki są niespójne z deklaracją funkcji|
-|[C28275](../code-quality/c28275.md)|Parametr do \_Macro @ no__t-1value @ no__t-2 ma wartość null|
+|[C28275](../code-quality/c28275.md)|Parametr \_Macro \_value \_ ma wartość null|
 |[C28279](../code-quality/c28279.md)|Dla symbolu znaleziono "BEGIN" bez odpowiadającego mu "End"|
 |[C28280](../code-quality/c28280.md)|Dla symbolu znaleziono element "End" bez odpowiadającego mu elementu "BEGIN|
 |[C28282](../code-quality/c28282.md)|Ciągi formatu muszą znajdować się w warunkach wstępnych|
 |[C28285](../code-quality/c28285.md)|Dla funkcji, błąd składni w parametrze|
 |[C28286](../code-quality/c28286.md)|Dla funkcji, błąd składniowy blisko końca|
-|[C28287](../code-quality/c28287.md)|Dla funkcji, błąd składni w adnotacji @no__t 0At @ no__t-1 () (Nierozpoznana Nazwa parametru)|
-|[C28288](../code-quality/c28288.md)|Dla funkcji, błąd składni w adnotacji @no__t 0At @ no__t-1 () (Nieprawidłowa nazwa parametru)|
+|[C28287](../code-quality/c28287.md)|Dla funkcji, błąd składniowy w \_At \_ () () adnotacji (Nierozpoznana Nazwa parametru)|
+|[C28288](../code-quality/c28288.md)|Dla funkcji, błąd składni w adnotacji \_At \_ () (Nieprawidłowa nazwa parametru)|
 |[C28289](../code-quality/c28289.md)|Dla funkcji: ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru|
 |[C28290](../code-quality/c28290.md)|Adnotacja dla funkcji zawiera więcej elementów zewnętrznych niż rzeczywista liczba parametrów|
 |[C28291](../code-quality/c28291.md)|wpis o wartości null/notnull na poziomie DEREF 0 jest bezużyteczne dla funkcji.|
 |[C28300](../code-quality/c28300.md)|Operandy wyrażenia niezgodnych typów dla operatora|
 |[C28301](../code-quality/c28301.md)|Brak adnotacji dla pierwszej deklaracji funkcji.|
-|[C28302](../code-quality/c28302.md)|W adnotacji znaleziono dodatkowy operator @no__t 0Deref @ no__t-1.|
-|[C28303](../code-quality/c28303.md)|W adnotacji znaleziono niejednoznaczny operator @no__t 0Deref @ no__t-1.|
-|[C28304](../code-quality/c28304.md)|Znaleziono niewłaściwie umieszczony operator \_Notref @ no__t-1 do tokenu.|
+|[C28302](../code-quality/c28302.md)|Znaleziono dodatkowy operator \_ \_Deref w adnotacji.|
+|[C28303](../code-quality/c28303.md)|W adnotacji znaleziono niejednoznaczny operator \_Deref \_.|
+|[C28304](../code-quality/c28304.md)|Znaleziono niewłaściwie umieszczony operator \_ \_Notref, który został zastosowany do tokenu.|
 |[C28305](../code-quality/c28305.md)|Wykryto błąd podczas analizowania tokenu.|
 |[C28350](../code-quality/c28350.md)|Adnotacja zawiera opis sytuacji, która nie jest stosowana warunkowo.|
 |[C28351](../code-quality/c28351.md)|Adnotacja opisuje, gdzie w warunku nie można używać wartości dynamicznej (zmiennej).|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
+|[CA1001](../code-quality/ca1001.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
 |[CA1821](../code-quality/ca1821.md)|Usuwaj puste finalizatory|
 |[CA2213](../code-quality/ca2213.md)|Pola możliwe do likwidacji należy likwidować|
 |[CA2231](../code-quality/ca2231.md)|Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals|

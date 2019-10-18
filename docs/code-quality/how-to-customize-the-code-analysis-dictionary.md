@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dostosowywanie słownika analizy kodu'
+title: 'Porady: dostosowywanie słownika analizy kodu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b43d731634022a2f3fcb9e00b552e75e5322db8c
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 5ec2afbdad9e68de38fcee8e4477a73851718e9d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715238"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535841"
 ---
-# <a name="how-to-customize-the-code-analysis-dictionary"></a>Instrukcje: Dostosowywanie słownika analizy kodu
+# <a name="how-to-customize-the-code-analysis-dictionary"></a>Porady: dostosowywanie słownika analizy kodu
 
-Analiza kodu użyto słownika wbudowanego do sprawdzenia identyfikatorów w kodzie w poszukiwaniu błędów pisowni, gramatyki wielkości liter i innych konwencji nazewnictwa platformy .NET wytycznych projektowych. Można utworzyć słownika niestandardowego pliku Xml, aby dodać, usunąć lub zmodyfikować warunki, skróty i akronimów do wbudowanych słownika.
+Analiza kodu używa wbudowanego słownika do sprawdzania identyfikatorów w kodzie pod kątem błędów w pisowni, przypadku gramatyki i innych konwencji nazewnictwa w wytycznych dotyczących projektowania platformy .NET. Możesz utworzyć niestandardowy plik XML słownika, aby dodać, usunąć lub zmodyfikować terminy, skróty i akronimy do wbudowanego słownika.
 
-Załóżmy, że Twój kod zawiera klasę o nazwie **DoorKnokker**. Analiza kodu będzie identyfikować nazwę jako złożonej z dwóch słów: **drzwi** i **knokker**. Wywołałby ostrzeżenie, **knokker** nie została wpisana poprawnie. Aby wymusić analizy kodu, rozpoznawał pisowni, należy dodać termin **knokker** do słownika niestandardowego.
+Załóżmy na przykład, że kod zawiera klasę o nazwie **DoorKnokker**. Analiza kodu powinna identyfikować nazwę jako związek dwóch wyrazów: **drzwi** i **knokker**. Następnie zostanie zgłoszone ostrzeżenie, że **knokker** nie został wpisany poprawnie. Aby wymusić rozpoznanie pisowni przez analizę kodu, możesz dodać termin **knokker** do słownika niestandardowego.
 
 ## <a name="to-create-a-custom-dictionary"></a>Aby utworzyć słownik niestandardowy
 
-Utwórz plik o nazwie **CustomDictionary.xml**.
+Utwórz plik o nazwie **CustomDictionary. XML**.
 
-Zdefiniuj swoje podasz niestandardowe wyrazy, korzystając z następującej struktury XML:
+Zdefiniuj niestandardowe słowa przy użyciu następującej struktury XML:
 
 ```xml
 <Dictionary>
@@ -58,25 +58,25 @@ Zdefiniuj swoje podasz niestandardowe wyrazy, korzystając z następującej stru
    </Dictionary>
 ```
 
-## <a name="custom-dictionary-elements"></a>Słownik niestandardowy elementów
+## <a name="custom-dictionary-elements"></a>Elementy słownika niestandardowego
 
-Można zmodyfikować zachowanie słownika analizy kodu, dodając warunki jako tekst wewnętrzny z następujących elementów do słownika:
+Możesz zmodyfikować zachowanie słownika analizy kodu, dodając warunki jako tekst wewnętrzny następujących elementów w słowniku niestandardowym:
 
-- [Słownik/słów/rozpoznane/programu Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
+- [Słownik/wyrazy/rozpoznane/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
-- [Słownik/słów/nierozpoznany/programu Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
+- [Słownik/wyrazy/nierozpoznane/słowo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Słownik/słów/przestarzałe/termin [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Słownik/wyrazy/przestarzałe/termin [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [Słownik/słów/złożone/termin [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Słownik/wyrazy/związek/wyrażenie [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
-- [Słownik/słów/DiscreteExceptions/termin](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Słownik/wyrazy/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [Słownik/akronimów/CasingExceptions/akronim](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Słownik/akronimy/CasingExceptions/akronim](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="BKMK_DictionaryWordsRecognizedWord"></a> Słownik/słów/rozpoznane/programu Word
+### <a name="BKMK_DictionaryWordsRecognizedWord"></a>Słownik/wyrazy/rozpoznane/Word
 
-Aby uwzględnić termin na liście terminów, które identyfikują analizy kodu jako poprawnie zapisany, należy dodać termin jako tekst wewnętrzny elementu słownik/słów/Recognized/programu Word. Warunki w elementach słownik/słów/Recognized/słowa nie jest rozróżniana wielkość liter.
+Aby uwzględnić termin na liście warunków identyfikowanych przez analizę kodu jako prawidłowo wpisany, należy dodać termin jako tekst wewnętrzny słownika/wyrazów/rozpoznany/wyraz. W przypadku wyrazów/słów/rozpoznaje/elementy słowa nie jest rozróżniana wielkość liter.
 
 **Przykład**
 
@@ -93,25 +93,25 @@ Aby uwzględnić termin na liście terminów, które identyfikują analizy kodu 
 </Dictionary>
 ```
 
-Warunki w węzłach słów/słownik/Recognized są stosowane do następujących reguł analizy kodu:
+Warunki dotyczące słownika/słów/rozpoznanych węzłów są stosowane do następujących reguł analizy kodu:
 
-- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701.md)
 
-- [CA1702: Wyrazy złożone powinny mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702.md)
 
-- [CA1703: Ciągi zasobów, które powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703.md)
 
-- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704.md)
 
-- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md)
 
-- [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: Używaj preferowanych terminów](../code-quality/ca1726.md)
 
-- [CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Słownik/słów/nierozpoznany/programu Word
+### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Słownik/wyrazy/nierozpoznane/słowo
 
-Aby wykluczyć termin z listy terminów, które identyfikują analizy kodu jako poprawnie zapisany, Dodaj wyrażenie, aby wykluczyć je jako tekst wewnętrzny elementu słownik/słów/nierozpoznane/programu Word. Warunki w elementach słownik/słów/nierozpoznane/słowa nie jest rozróżniana wielkość liter.
+Aby wykluczyć termin z listy warunków identyfikowanych przez analizę kodu jako prawidłowo wpisany, Dodaj termin do wykluczenia jako tekst wewnętrzny słownika/słów/nierozpoznanego/słowa. W warunkach słownika/słów/nierozpoznawalnych/nierozpoznanych elementów słowa nie jest rozróżniana wielkość liter.
 
 **Przykład**
 
@@ -128,31 +128,31 @@ Aby wykluczyć termin z listy terminów, które identyfikują analizy kodu jako 
 </Dictionary>
 ```
 
-Warunki w węźle słów/słownik/nierozpoznane są stosowane do następujących reguł analizy kodu:
+Warunki w słowniku/słowach/nierozpoznanym węźle są stosowane do następujących reguł analizy kodu:
 
-- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701.md)
 
-- [CA1702: Wyrazy złożone powinny mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702.md)
 
-- [CA1703: Ciągi zasobów, które powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703.md)
 
-- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704.md)
 
-- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md)
 
-- [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: Używaj preferowanych terminów](../code-quality/ca1726.md)
 
-- [CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Słownik/słów/przestarzałe/termin [@PreferredAlternate]
+### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Słownik/wyrazy/przestarzałe/termin [@PreferredAlternate]
 
-Aby dołączyć termin na liście warunków, które identyfikują analizy kodu, jako przestarzałe, należy dodać termin jako tekst wewnętrzny elementu słownik/słów/przestarzałe/termin. Przestarzałe termin jest programu word, która została wpisana poprawnie, ale nie powinny być używane.
+Aby uwzględnić termin na liście warunków identyfikowanych jako przestarzałe przez analizę kodu, Dodaj termin jako tekst wewnętrzny słownika/wyrazów/przestarzałych/terminowych. Przestarzały termin to wyraz, który jest wpisany prawidłowo, ale nie powinien być używany.
 
-Aby dołączyć proponowany termin alternatywny ostrzeżenia, należy określić alternatywna w atrybucie PreferredAlternate elementu terminu. Wartość atrybutu można pozostawić puste, jeśli nie chcesz sugerować alternatywne.
+Aby w ostrzeżeniu uwzględnić sugerowany termin alternatywny, określ alternatywę w atrybucie PreferredAlternate elementu Term. Wartość atrybutu można pozostawić pustą, jeśli nie chcesz, aby zasugerować alternatywę.
 
-- Przestarzałe termin w słownika / / element uznane za przestarzałe/termin nie jest rozróżniana wielkość liter.
+- Jako przestarzały termin w słowniku/słowach/przestarzały element/wyrażenie nie jest rozróżniana wielkość liter.
 
-- Wartość atrybutu PreferredAlternate jest rozróżniana wielkość liter. Użyj pisanymi wielkimi literami dla złożonych alternatyw.
+- W wartości atrybutu PreferredAlternate jest rozróżniana wielkość liter. Użyj przypadku w języku Pascal dla alternatywnych odmian.
 
 **Przykład**
 
@@ -169,25 +169,25 @@ Aby dołączyć proponowany termin alternatywny ostrzeżenia, należy określić
 </Dictionary>
 ```
 
-Warunki w węźle słów/słownik/przestarzałe, są stosowane do następujących reguł analizy kodu:
+Warunki w słowniku/słowach/przestarzałych węzłach są stosowane do następujących reguł analizy kodu:
 
-- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701.md)
 
-- [CA1702: Wyrazy złożone powinny mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702.md)
 
-- [CA1703: Ciągi zasobów, które powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703.md)
 
-- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704.md)
 
-- [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: Używaj preferowanych terminów](../code-quality/ca1726.md)
 
-### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Słownik/słów/złożone/termin [@CompoundAlternate]
+### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Słownik/wyrazy/związek/wyrażenie [@CompoundAlternate]
 
-Słownik wbudowany identyfikuje niektóre terminy jako pojedynczy, odrębny terminy zamiast złożone termin. Dołącz termin do listy warunków, które identyfikują analizy kodu, jako wyraz złożony i określ poprawny wielkość liter w wyrazie termin, należy dodać termin jako tekst wewnętrzny elementu słownik/słów/złożone/termin. W atrybucie CompoundAlternate elementu terminu Określ poszczególnych wyrazów składających się termin złożone przez pierwszą literę poszczególnych wyrazów (pisanymi wielkimi literami). Należy pamiętać, że okres określony w tekst wewnętrzny jest automatycznie dodawany do listy słów/słownik/DiscreteExceptions.
+Wbudowany słownik identyfikuje niektóre terminy jako pojedyncze, osobne warunki, a nie termin złożony. Aby uwzględnić termin na liście warunków identyfikowanych przez analizę kodu jako wyraz złożony i aby określić poprawną wielkość liter w danym okresie, Dodaj termin jako wewnętrzny tekst słownika/wyrazów/elementu złożonego/terminu. W atrybucie CompoundAlternate elementu Term Określ poszczególne wyrazy, które składają się na termin złożony, wielką literą pojedynczych wyrazów (przypadek Pascal). Należy zauważyć, że termin określony w tekście wewnętrznym jest automatycznie dodawany do listy słownik/wyrazy/DiscreteExceptions.
 
-- Przestarzałe termin w słownika / / element uznane za przestarzałe/termin nie jest rozróżniana wielkość liter.
+- W warunku złożonym w słowniku/słowach/elemencie złożonym/Term nie jest rozróżniana wielkość liter.
 
-- Wartość atrybutu PreferredAlternate jest rozróżniana wielkość liter. Użyj pisanymi wielkimi literami dla złożonych alternatyw.
+- W wartości atrybutu CompoundAlternate jest rozróżniana wielkość liter. Użyj przypadku w języku Pascal dla alternatywnych odmian.
 
 **Przykład**
 
@@ -204,19 +204,19 @@ Słownik wbudowany identyfikuje niektóre terminy jako pojedynczy, odrębny term
 </Dictionary>
 ```
 
-Warunki w węźle słów/słownik/złożone są stosowane do następujących reguł analizy kodu:
+Warunki w słowniku/słowach/węźle złożonym są stosowane do następujących reguł analizy kodu:
 
-- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701.md)
 
-- [CA1702: Wyrazy złożone powinny mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702.md)
 
-- [CA1703: Ciągi zasobów, które powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703.md)
 
-- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704.md)
 
-### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Słownik/słów/DiscreteExceptions/termin
+### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Słownik/wyrazy/DiscreteExceptions/Term
 
-Aby wykluczyć termin na liście warunków, które identyfikują analizy kodu, jako pojedynczy, odrębny programu word, gdy wyrażenie jest sprawdzana przez reguł stosowania wielkości liter dla wyrazy złożone, Dodaj termin jako tekst wewnętrzny elementu słownik/słów/DiscreteExceptions/termin. Termin w elemencie słownik/słów/DiscreteExceptions/termin nie jest rozróżniana wielkość liter.
+Aby wykluczyć termin z listy warunków, które Analiza kodu identyfikuje jako pojedynczy, odrębny wyraz, gdy termin jest sprawdzany przez reguły wielkości liter dla wyrazów złożonych, Dodaj termin jako tekst wewnętrzny słownika/wyrazów/DiscreteExceptions/Term. W warunku słownika/słów/DiscreteExceptions/Term nie jest rozróżniana wielkość liter.
 
 **Przykład**
 
@@ -233,15 +233,15 @@ Aby wykluczyć termin na liście warunków, które identyfikują analizy kodu, j
 </Dictionary>
 ```
 
-Warunki w węźle słów/słownik/DiscreteExceptions są stosowane do następujących reguł analizy kodu:
+Warunki w węźle słownik/wyrazy/DiscreteExceptions są stosowane do następujących reguł analizy kodu:
 
-- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701.md)
 
-- [CA1702: Wyrazy złożone powinny mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702.md)
 
-### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Słownik/akronimów/CasingExceptions/akronim
+### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Słownik/akronimy/CasingExceptions/akronim
 
-Dołącz akronim listy warunków, które identyfikują analizy kodu, co to jest poprawna i wskazują, jak zasady akronim, gdy wyrażenie jest sprawdzana przez wielkość liter w wyrazie wyrazy złożone, Dodaj termin jako tekst zawarty wewnątrz słownik/akronimów/CasingExceptions / Acronym element. Akronimem w elemencie słownik/akronimów/CasingExceptions/akronim jest uwzględniana wielkość liter.
+Aby dołączyć akronim na liście warunków identyfikowanych przez analizę kodu jako prawidłowo wpisany i aby wskazać, jak akronim ma być sprawdzany przez reguły wielkości liter dla wyrazów złożonych, Dodaj termin jako tekst wewnętrzny słownika/akronimów/CasingExceptions/ Akronim elementu. Akronim w elemencie dictionary/Akronims/CasingExceptions/akronim jest uwzględniana wielkość liter.
 
 **Przykład**
 
@@ -258,20 +258,20 @@ Dołącz akronim listy warunków, które identyfikują analizy kodu, co to jest 
 </Dictionary>
 ```
 
-Warunki w węźle akronimów/słownik/CasingExceptions są stosowane do następujących reguł analizy kodu:
+Warunki w węźle słownik/akronimy/CasingExceptions są stosowane do następujących reguł analizy kodu:
 
-- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md)
 
-## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Aby zastosować słownika niestandardowego do projektu
+## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Aby zastosować słownik niestandardowy do projektu
 
-1. W **Eksploratora rozwiązań**, użyj jednej z następujących procedur:
+1. W **Eksplorator rozwiązań**Użyj jednej z następujących procedur:
 
-2. Aby dodać słownika do pojedynczego projektu, kliknij prawym przyciskiem myszy nazwę projektu, a następnie kliknij przycisk **Dodaj istniejący element**. Określ plik w **Dodaj istniejący element** okno dialogowe.
+2. Aby dodać słownik do pojedynczego projektu, kliknij prawym przyciskiem myszy nazwę projektu, a następnie kliknij pozycję **Dodaj istniejący element**. Określ plik w oknie dialogowym **Dodaj istniejący element** .
 
-3. Aby dodać słownika, która jest współużytkowana przez dwa lub więcej projektów, Znajdź plik do udziału w **Dodaj istniejący element** okna dialogowego kliknij strzałkę w dół na **Dodaj** przycisk, a następnie kliknij przycisk **Dodaj jako łącze** .
+3. Aby dodać słownik współużytkowany przez dwa lub więcej projektów, zlokalizuj plik do udostępnienia w oknie dialogowym **Dodaj istniejący element** , kliknij strzałkę w dół na przycisku **Dodaj** , a następnie kliknij przycisk **Dodaj jako link**.
 
-4. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **CustomDictionary.xml** nazwę pliku i kliknij przycisk **właściwości**.
+4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy nazwę pliku **CustomDictionary. XML** i kliknij polecenie **Właściwości**.
 
-5. Z **Build Action** listy wybierz **CodeAnalysisDictionary**.
+5. Z listy **Akcja kompilacji** wybierz pozycję **CodeAnalysisDictionary**.
 
-6. Z **Kopiuj do katalogu wyjściowego** listy wybierz **nie Kopiuj**.
+6. Z listy **Kopiuj do katalogu wyjściowego** wybierz pozycję nie **Kopiuj**.

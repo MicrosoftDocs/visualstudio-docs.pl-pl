@@ -1,6 +1,6 @@
 ---
-title: Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
-ms.date: 05/31/2019
+title: Krok 1. Tworzenie projektu i Dodawanie etykiet do formularza
+ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,27 +10,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b52851ce3e344293faede243413fc796e9882196
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119053"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516683"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i Dodawanie etykiet do formularza
 
 Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet, przycisku i innych kontrolek do formularza. Należy również ustawić właściwości dla każdej dodawanej kontrolki. Projekt będzie zawierać formularz, formanty i (w dalszej części samouczka). Przycisk uruchamia quiz, etykiety pokazują problemy z quizem, a inne kontrolki wyświetlają odpowiedzi quizu i czas, który pozostanie do końca quizu.
 
 > [!NOTE]
 > Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. 
-> - Aby zapoznać się z omówieniem samouczka, [zobacz Samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu. 
+> - Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md). 
 > - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-project-for-a-form"></a>Aby utworzyć projekt dla formularza
 
 ::: moniker range="vs-2017"
 
-1. Na pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
+1. Na pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
 1. Wybierz pozycję  **C# Wizualizacja** lub **Visual Basic** po lewej stronie okna dialogowego **Nowy projekt** , a następnie wybierz pozycję **Windows Desktop**.
 
@@ -39,7 +39,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
     Zostanie wyświetlony formularz o nazwie *Form1.cs* lub *Form1. vb* , w zależności od wybranego języka programowania.
 
    > [!NOTE]
-   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![Obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
+   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![ obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio ](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
 
 ::: moniker-end
 
@@ -49,11 +49,11 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
    ![Wyświetl okno "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. W oknie **Tworzenie nowego projektu** wprowadź lub wpisz *Windows Forms* w polu wyszukiwania.
+1. W oknie **Tworzenie nowego projektu** wprowadź lub wpisz *Windows Forms* w polu wyszukiwania. Następnie wybierz pozycję **pulpit** z listy **Typ projektu** .
 
-1. Wybierz szablon **aplikacja Windows Forms (.NET Framework)** , a następnie wybierz przycisk **dalej**.
+   Po zastosowaniu filtru **Typ projektu** wybierz szablon **aplikacja Windows Forms (.NET Framework)** dla obu C# lub Visual Basic, a następnie wybierz przycisk **dalej**.
 
-   ![Wybierz szablon Visual Basic dla aplikacji Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Wybierz szablon Visual Basic C# lub dla aplikacji Windows Forms (.NET Framework).](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
@@ -62,7 +62,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
    >
    > Następnie w Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
    >
-   > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   > ![Obciążenie .NET Core w Instalator programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
    > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie.
 
@@ -86,7 +86,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 ## <a name="to-create-the-time-remaining-box"></a>Aby utworzyć pole pozostało czasu
 
-1. Dodaj kontrolkę z **przybornika**, a następnie ustaw wartość właściwości **(Name)** na **timeLabel.** <xref:System.Windows.Forms.Label>
+1. Dodaj kontrolkę <xref:System.Windows.Forms.Label> z **przybornika**, a następnie ustaw wartość właściwości **(Name)** na **timeLabel**.
 
      Ta etykieta zostanie umieszczony w prawym górnym rogu, która pokazuje liczbę sekund, które pozostaną w quizie.
 
@@ -102,7 +102,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 6. W oknie **Właściwości** wybierz właściwość **tekst** , a następnie wybierz klawisz **Backspace** , aby wyczyścić jego wartość.
 
-7. **+** Wybierz znak plus () obok właściwości **Font** , a następnie zmień wartość właściwości **size** na **15,75**.
+7. Wybierz znak plusa ( **+** ) obok właściwości **Font** , a następnie zmień wartość właściwości **size** na **15,75**.
 
      Można zmienić kilka właściwości czcionki, jak pokazano na poniższym zrzucie ekranu.
 
@@ -130,9 +130,9 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 7. Ustaw właściwość **(Name)** na **plusLeftLabel**.
 
-8. Wybierz etykietę **plusLeftLabel** , a następnie wybierz klawisze **Ctrl**+**C** lub **Kopiuj** w menu **Edycja** .
+8. Wybierz etykietę **plusLeftLabel** , a następnie wybierz klawisze **Ctrl** +**C** lub **Kopiuj** w menu **Edycja** .
 
-9. Wklej etykietę trzy razy, wybierając klawisze **Ctrl**+**V** lub **Wklej** w menu **Edycja** .
+9. Wklej etykietę trzy razy, wybierając klawisze **Ctrl** +**V** lub **Wklej** w menu **Edycja** .
 
 10. Rozmieść trzy nowe etykiety tak, aby znajdowały się w wierszu z prawej strony etykiety **plusLeftLabel** .
 
@@ -144,7 +144,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 13. Ustaw wartość właściwości **tekst** czwartej etykiety na **=** (znak równości).
 
-14. Dodaj formant z **przybornika**, ustaw jego rozmiar czcionki na **18**i ustaw jego szerokość na 100. <xref:System.Windows.Forms.NumericUpDown>
+14. Dodaj formant <xref:System.Windows.Forms.NumericUpDown> z **przybornika**, ustaw jego rozmiar czcionki na **18**i ustaw jego szerokość na **100**.
 
      Dowiesz się więcej o tym rodzaju kontrolce później.
 
@@ -185,7 +185,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Aby dodać przycisk Start i ustawić kolejność tabulacji
 
-1. Dodaj kontrolkę z **przybornika**, a następnie ustaw jej właściwość **(Name)** na **startButton.** <xref:System.Windows.Forms.Button>
+1. Dodaj kontrolkę <xref:System.Windows.Forms.Button> z **przybornika**, a następnie ustaw jej właściwość **(Name)** na **startButton**.
 
 2. Ustaw właściwość **Text** , aby **uruchomić Quiz**.
 
@@ -198,7 +198,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 6. Ustaw wartość właściwości **TabIndex** dla formantu **startButton** na **1**.
 
     > [!NOTE]
-    > Właściwość **TabIndex** ustawia kolejność formantów, gdy wybierany jest klawisz **Tab** . Aby zobaczyć, jak to działa, Otwórz dowolne okno dialogowe (na przykład na pasku menu wybierz **plik** > **Otwórz**), a następnie wybierz klawisz **Tab** kilka razy. Obejrzyj, jak kursor przemieszcza się z kontrolki, aby kontrolować każde wybranie klawisza **Tab** . Programista zdecydował o kolejności podczas tworzenia tego formularza.
+    > Właściwość **TabIndex** ustawia kolejność formantów, gdy wybierany jest klawisz **Tab** . Aby zobaczyć, jak to działa, Otwórz dowolne okno dialogowe (na przykład na pasku menu wybierz **plik**  > **Otwórz**), a następnie wybierz klawisz **Tab** kilka razy. Obejrzyj, jak kursor przemieszcza się z kontrolki, aby kontrolować każde wybranie klawisza **Tab** . Programista zdecydował o kolejności podczas tworzenia tego formularza.
 
 7. Ustaw wartość właściwości **TabIndex** dla kontrolki sum NumericUpDown na **2**, dla kontrolki różnica na **3**, dla kontrolki produktu na **4**, a dla kontrolki ilorazu wartość **5**.
 
@@ -206,10 +206,10 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
      ![Początkowy formularz quizu matematycznego](../ide/media/express_formlaidout.png)
 
-8. Aby sprawdzić, czy właściwość **TabIndex** działa zgodnie z oczekiwaniami, Zapisz i uruchom program, wybierając klawisz **F5** lub wybierając **Debuguj** > **Rozpocznij debugowanie** na pasku menu, a następnie wybierz klawisz **Tab** kilka razy. .
+8. Aby sprawdzić, czy właściwość **TabIndex** działa zgodnie z oczekiwaniami, Zapisz i uruchom program, wybierając klawisz **F5** lub wybierając pozycję **Debuguj**  > **Rozpocznij debugowanie** na pasku menu, a następnie wybierz klawisz **Tab** kilka razy.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz  **[krok 2: Utwórz losowy problem](../ide/step-2-create-a-random-addition-problem.md)** z dodaniem.
+- Aby przejść do następnego kroku samouczka, zobacz **[krok 2. Tworzenie losowego problemu z dodaniem](../ide/step-2-create-a-random-addition-problem.md)** .
 
-- Aby powrócić do tematu przeglądu, zobacz [samouczek 2: Utwórz Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)matematyczny z limitem czasu.
+- Aby powrócić do tematu przeglądu, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).

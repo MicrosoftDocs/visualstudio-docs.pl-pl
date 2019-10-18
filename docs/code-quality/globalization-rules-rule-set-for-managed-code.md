@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 905f3323f4ede33ba8a7e1547bed7a81c43be96d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 4a4aa987c58ace1bb2fa8c0a2dfac3c0aecd87d7
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449034"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535866"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Zestaw reguł globalizacji dla zarządzanego kodu
 
@@ -21,14 +21,14 @@ Zestaw reguł globalizacji firmy Microsoft umożliwia skoncentrowanie się na pr
 
 |Reguła|Opis|
 |----------|-----------------|
-|[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|Określ argument MessageBoxOptions|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Unikaj duplikowania akceleratorów|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Nie umieszczajj ciągów specyficznych dla ustawień regionalnych|
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Nie przekazuj literałów jako zlokalizowanych parametrów|
-|[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|Określ argument CultureInfo|
-|[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|Określ argument IFormatProvider|
-|[CA1306](../code-quality/ca1306-set-locale-for-data-types.md)|Ustaw ustawienia regionalne dla typów danych|
-|[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|Określ argument StringComparison|
-|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
-|[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|Użyj porządkowego ustawienia właściwości StringComparison|
+|[CA1300](../code-quality/ca1300.md)|Określ argument MessageBoxOptions|
+|[CA1301](../code-quality/ca1301.md)|Unikaj duplikowania akceleratorów|
+|[CA1302](../code-quality/ca1302.md)|Nie umieszczajj ciągów specyficznych dla ustawień regionalnych|
+|[CA1303](../code-quality/ca1303.md)|Nie przekazuj literałów jako zlokalizowanych parametrów|
+|[CA1304](../code-quality/ca1304.md)|Określ argument CultureInfo|
+|[CA1305](../code-quality/ca1305.md)|Określ argument IFormatProvider|
+|[CA1306](../code-quality/ca1306.md)|Ustaw ustawienia regionalne dla typów danych|
+|[CA1307](../code-quality/ca1307.md)|Określ argument StringComparison|
+|[CA1308](../code-quality/ca1308.md)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
+|[CA1309](../code-quality/ca1309.md)|Użyj porządkowego ustawienia właściwości StringComparison|
 |[CA2101](../code-quality/ca2101.md)|Określ kierowanie dla argumentów ciągu P/Invoke|

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf26a04f5db5ed3e3f2710a5421dece6cf6cc0c7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 8f48b2d60feb9743529de8ed80b80365ffb815d1
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450353"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72534600"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Podstawowy zestaw reguł poprawności dla zarządzanego kodu
 
@@ -23,23 +23,23 @@ Poniższa tabela zawiera opis wszystkich reguł w zestawie reguł poprawności p
 
 |Reguła|Opis|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Poprawnie deklaruj procedury obsługi zdarzeń|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Oznacz zestawy atrybutem AssemblyVersion|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Przenieś metody P/Invoke do klasy NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Nie ukrywaj metod klasy bazowej|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Poprawnie zaimplementuj interfejs IDisposable|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Unikaj duplikowania akceleratorów|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Punkty wejścia P/Invoke powinny istnieć|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Elementy P/Invoke nie powinny być widoczne|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Metody rejestracji modelu COM powinny mieć swoje odpowiedniki|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Poprawnie zadeklaruj elementy P/Invoke|
+|[CA1001](../code-quality/ca1001.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
+|[CA1009](../code-quality/ca1009.md)|Poprawnie deklaruj procedury obsługi zdarzeń|
+|[CA1016](../code-quality/ca1016.md)|Oznacz zestawy atrybutem AssemblyVersion|
+|[CA1033](../code-quality/ca1033.md)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
+|[CA1049](../code-quality/ca1049.md)|Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji|
+|[CA1060](../code-quality/ca1060.md)|Przenieś metody P/Invoke do klasy NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Nie ukrywaj metod klasy bazowej|
+|[CA1063](../code-quality/ca1063.md)|Poprawnie zaimplementuj interfejs IDisposable|
+|[CA1065](../code-quality/ca1065.md)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
+|[CA1301](../code-quality/ca1301.md)|Unikaj duplikowania akceleratorów|
+|[CA1400](../code-quality/ca1400.md)|Punkty wejścia P/Invoke powinny istnieć|
+|[CA1401](../code-quality/ca1401.md)|Elementy P/Invoke nie powinny być widoczne|
+|[CA1403](../code-quality/ca1403.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|
+|[CA1404](../code-quality/ca1404.md)|Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM|
+|[CA1410](../code-quality/ca1410.md)|Metody rejestracji modelu COM powinny mieć swoje odpowiedniki|
+|[CA1415](../code-quality/ca1415.md)|Poprawnie zadeklaruj elementy P/Invoke|
 |[CA1821](../code-quality/ca1821.md)|Usuwaj puste finalizatory|
 |[CA1900](../code-quality/ca1900.md)|Pola typu wartości powinny być przenośne|
 |[CA1901](../code-quality/ca1901.md)|Deklaracje metody P/Invoke powinny być przenośne|
@@ -85,10 +85,10 @@ Poniższa tabela zawiera opis wszystkich reguł w zestawie reguł poprawności p
 |[CA2240](../code-quality/ca2240.md)|Poprawnie zaimplementuj interfejs ISerializable|
 |[CA2241](../code-quality/ca2241.md)|Podaj poprawne argumenty metod formatowania|
 |[CA2242](../code-quality/ca2242.md)|Poprawnie testuj nie-liczby (NaN)|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Typy wyliczeniowe powinny mieć wartość zero|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania|
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Nie przekazuj literałów jako zlokalizowanych parametrów|
-|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
+|[CA1008](../code-quality/ca1008.md)|Typy wyliczeniowe powinny mieć wartość zero|
+|[CA1013](../code-quality/ca1013.md)|Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania|
+|[CA1303](../code-quality/ca1303.md)|Nie przekazuj literałów jako zlokalizowanych parametrów|
+|[CA1308](../code-quality/ca1308.md)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
 |[CA1806](../code-quality/ca1806.md)|Nie ignoruj wyników metod|
 |[CA1816](../code-quality/ca1816.md)|Poprawnie wywołaj metodę GC.SuppressFinalize|
 |[CA1819](../code-quality/ca1819.md)|Właściwości nie powinny zwracać tablic|

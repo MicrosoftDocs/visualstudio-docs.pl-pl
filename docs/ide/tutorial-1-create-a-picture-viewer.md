@@ -1,6 +1,6 @@
 ---
 title: 'Samouczek 1: Tworzenie przeglądarki obrazów'
-ms.date: 08/30/2019
+ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,19 +10,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9a525ef9da6583a37d5e4d26bfec7d0558cde4
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 9c751f6b55bc50a064473468d95c07a54aba76ae
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118670"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516621"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie przeglądarki obrazów
 
 W tym samouczku utworzysz aplikację, która ładuje obraz z pliku i wyświetla go w oknie. Dowiesz się, jak za pomocą **Projektant formularzy systemu Windows** przeciągać formanty, takie jak przyciski i pola obrazu w formularzu, ustawiać ich właściwości i korzystać z kontenerów w celu bezproblemowego zmiany rozmiaru formularza. Zacznij również pisać kod.
 
 > [!NOTE]
-> Ten samouczek obejmuje wizualizacje C# i Visual Basic, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.
+> W tym samouczku C# omówiono zarówno program, jak i Visual Basic, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.
 
 Ten samouczek przeprowadzi Cię przez następujące zadania:
 
@@ -51,18 +51,20 @@ Po zakończeniu aplikacja powinna wyglądać podobnie do poniższej ilustracji:
 |[Krok 1. Tworzenie projektu aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Zacznij od utworzenia projektu aplikacji Windows Forms.|
 |[Krok 2. Uruchamianie aplikacji Przeglądarka obrazów](../ide/step-2-run-your-program.md)|Uruchom projekt aplikacji Windows Forms, który został utworzony w poprzednim kroku.|
 |[Krok 3. Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md)|Zmień wygląd formularza przy użyciu okna **Właściwości** .|
-|[Krok 4. Układanie formularza przy użyciu kontrolki TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|`TableLayoutPanel` Dodaj kontrolkę do formularza.|
-|[Krok 5. Dodawanie kontrolek do formularza](../ide/step-5-add-controls-to-your-form.md)|Dodaj kontrolki, takie jak `PictureBox` kontrolka `CheckBox` i kontrolka, do formularza. Dodaj przyciski do formularza.|
+|[Krok 4. układ formularza przy użyciu kontrolki TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Dodaj kontrolkę `TableLayoutPanel` do formularza.|
+|[Krok 5. Dodawanie kontrolek do formularza](../ide/step-5-add-controls-to-your-form.md)|Dodawanie kontrolek, takich jak kontrolka `PictureBox` i kontrolka `CheckBox`, do formularza. Dodaj przyciski do formularza.|
 |[Krok 6. Nadaj nazwę kontrolkom przycisków](../ide/step-6-name-your-button-controls.md)|Zmień nazwy przycisków na bardziej zrozumiałe.|
-|[Krok 7. Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md)|`OpenFileDialog` Dodaj składnik`ColorDialog` i składnik do formularza.|
-|[Krok 8. Napisz kod dla programu obsługi zdarzeń przycisku Pokaż obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Napisz kod przy użyciu narzędzia IntelliSense.|
-|[Krok 9. Przeglądanie, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md)|Przejrzyj i Przetestuj swój kod. Dodaj komentarze zgodnie z wymaganiami.|
-|[Krok 10. Napisz kod dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napisz kod, aby inne przyciski i pole wyboru działały przy użyciu funkcji IntelliSense.|
-|[Krok 11. Uruchom aplikację i wypróbuj inne funkcje](../ide/step-11-run-your-program-and-try-other-features.md)|Uruchom aplikację i Ustaw kolor tła. Wypróbuj inne funkcje, takie jak Zmienianie kolorów, czcionek i obramowań.|
+|[Krok 7. Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md)|Dodaj składnik `OpenFileDialog` i składnik `ColorDialog` do formularza.|
+|[Krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku Pokaż obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Napisz kod przy użyciu narzędzia IntelliSense.|
+|[Krok 9. przeglądanie, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md)|Przejrzyj i Przetestuj swój kod. Dodaj komentarze zgodnie z wymaganiami.|
+|[Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napisz kod, aby inne przyciski i pole wyboru działały przy użyciu funkcji IntelliSense.|
+|[Krok 11. Uruchamianie aplikacji i wypróbowanie innych funkcji](../ide/step-11-run-your-program-and-try-other-features.md)|Uruchom aplikację i Ustaw kolor tła. Wypróbuj inne funkcje, takie jak Zmienianie kolorów, czcionek i obramowań.|
+
+Dostępne są również wspaniałe, bezpłatne zasoby szkoleniowe dotyczące wideo. Aby dowiedzieć się więcej na C#temat programowania w programie, zobacz [ C# podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na temat programowania w Visual Basic, zobacz [Visual Basic podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby rozpocząć pracę z samouczkiem, **Zacznij od [kroku 1: Utwórz projekt](../ide/step-1-create-a-windows-forms-application-project.md)** aplikacji Windows Forms.
+Aby rozpocząć pracę z samouczkiem, Zacznij od **[kroku 1: Tworzenie projektu aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)** .
 
 ## <a name="see-also"></a>Zobacz także
 

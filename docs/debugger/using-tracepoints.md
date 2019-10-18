@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71095260"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516394"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Używanie punkty śledzenia w debugerze programu Visual Studio
 
@@ -22,7 +22,7 @@ Punkty śledzenia umożliwiają rejestrowanie informacji w oknie danych wyjścio
 
 ## <a name="let39s-take-an-example"></a>&#39;Zapoznaj się z przykładem
 
-Poniższy przykładowy program to prosta `for` pętla ze zmienną licznika, która zwiększa się o jeden za każdym razem, gdy pętla uruchamia kolejną iterację.
+Poniższy przykładowy program to prosta pętla `for`a ze zmienną licznika, która zwiększa się o jeden za każdym razem, gdy pętla uruchamia kolejną iterację.
 
 ![Przykład licznika](../debugger/media/counterexample.png "Przykład licznika")
 
@@ -47,29 +47,29 @@ Możesz ustawić punkty śledzenia, określając ciąg wyjściowy w obszarze pol
 
 5. Wprowadź komunikat, który chcesz zalogować do pola tekstowego **Pokaż komunikat w okno dane wyjściowe** (Aby uzyskać szczegółowe informacje, zobacz sekcję w dalszej części tego artykułu).
 
-   Punkt śledzenia jest teraz ustawiony. Naciśnij przycisk &quot;Zamknij&quot; , jeśli wszystko, co chcesz zrobić, rejestruje pewne informacje w okno dane wyjściowe.
+   Punkt śledzenia jest teraz ustawiony. Naciśnij przycisk &quot;Close &quot;, jeśli wszystko, co chcesz zrobić, rejestruje pewne informacje w Okno Dane wyjściowe.
 
 6. Jeśli chcesz dodać warunki określające, czy wiadomość jest wyświetlana, zaznacz pole wyboru **warunki** .
 
    ![Pole zaewidencjonowanych warunków](../debugger/media/checkedconditionsbox.png "Pole zaewidencjonowanych warunków")
 
-   Istnieją trzy opcje dla warunków: **Wyrażenie warunkowe**, **Filtr**i **licznik trafień**.
+   Istnieją trzy opcje dla warunków: **wyrażenie warunkowe**, **Filtr**i **licznik trafień**.
 
 ## <a name="actions-menu"></a>Menu Akcje
 
 To menu umożliwia zarejestrowanie komunikatu w oknie danych wyjściowych. Wpisz ciągi, które mają być wyprowadzane w polu komunikatu (bez cudzysłowów). Jeśli chcesz wyświetlić wartości zmiennych, upewnij się, że zostały one ujęte w nawiasy klamrowe.
 
-Na przykład, jeśli chcesz wyświetlić wartość `counter` zmiennej w konsoli wyjściowej, wpisz {Counter} w polu tekstowym komunikat.
+Jeśli na przykład chcesz wyświetlić wartość zmiennej `counter` w konsoli wyjściowej, wpisz {Counter} w polu tekstowym Message (komunikat).
 
 ![Komunikat wyjściowy licznika](../debugger/media/counteroutputmessage.png "Komunikat wyjściowy licznika")
 
 Jeśli klikniesz przycisk **Zamknij** , a następnie debugujesz program (**F5**), zobaczysz następujące dane wyjściowe w oknie danych wyjściowych.
 
-![Komunikat akcji w okno dane wyjściowe](../debugger/media/actionsmessageinoutputwindow.png "Komunikat akcji w okno dane wyjściowe")
+![Komunikat akcji w Okno Dane wyjściowe](../debugger/media/actionsmessageinoutputwindow.png "Komunikat akcji w Okno Dane wyjściowe")
 
 Możesz również użyć specjalnych słów kluczowych, aby wyświetlić bardziej szczegółowe informacje. Wprowadź słowo kluczowe dokładnie tak, jak pokazano poniżej (Użyj "$" przed słowami kluczowymi i wersalikami dla samego słowa kluczowego.
 
-| Słowo kluczowe | Co jest wyświetlane |
+| Kodu | Co jest wyświetlane |
 | --- | --- |
 | $ADDRESS | Bieżąca instrukcja |
 | $CALLER | Nazwa funkcji wywołującej |
@@ -88,11 +88,11 @@ Warunki umożliwiają filtrowanie komunikatów wyjściowych, aby były wyświetl
 ### <a name="conditional-expression"></a>Wyrażenie warunkowe
 W przypadku wyrażenia warunkowego komunikat wyjściowy jest wyświetlany tylko wtedy, gdy są spełnione określone warunki.
 
-W przypadku wyrażeń warunkowych można ustawić punkt śledzenia na wyjściowy komunikat, gdy określony warunek ma wartość true lub po zmianie. Na przykład, jeśli chcesz wyświetlić wartość licznika tylko w przypadku iteracji `for` pętli, możesz wybrać opcję **jest true** , a następnie wpisz `i%2 == 0` w polu tekstowym komunikat.
+W przypadku wyrażeń warunkowych można ustawić punkt śledzenia na wyjściowy komunikat, gdy określony warunek ma wartość true lub po zmianie. Na przykład, jeśli chcesz wyświetlić wartość licznika tylko w przypadku iteracji pętli `for`, możesz wybrać opcję **jest true** , a następnie w polu tekstowym komunikat wpisać `i%2 == 0`.
 
 ![Wyrażenie warunkowe jest prawdziwe](../debugger/media/conditionalexpressionistrue.png "Wyrażenie warunkowe jest prawdziwe")
 
-Jeśli chcesz wydrukować wartość licznika podczas zmiany iteracji `for` w pętli, zaznacz opcję **kiedy zmieniono** i wpisz `i` w polu tekstowym komunikat.
+Jeśli chcesz wydrukować wartość licznika w przypadku zmiany iteracji pętli `for`, zaznacz opcję **kiedy zmieniono** i wpisz `i` w polu tekstowym komunikat.
 
 ![Wyrażenie warunkowe po zmianie](../debugger/media/conditionalexpressionwhenchanged.png "Wyrażenie warunkowe po zmianie")
 
@@ -101,7 +101,7 @@ Zachowanie opcji **gdy zmiana** jest inne dla różnych języków programowania.
 - W przypadku kodu natywnego debuger nie rozważa pierwszej oceny warunku, który ma zostać zmieniony, więc nie trafi punkt śledzenia przy pierwszej ocenie.
 - W przypadku kodu zarządzanego debuger trafi punkt śledzenia podczas pierwszej oceny po wybraniu opcji **zmiana** .
 
-Aby uzyskać bardziej szczegółowy podgląd prawidłowych wyrażeń, których można użyć podczas ustawiania warunków, zobacz [wyrażenia w debugerze](expressions-in-the-debugger.md)
+Aby uzyskać bardziej szczegółowy podgląd prawidłowych wyrażeń, których można użyć podczas ustawiania warunków, zobacz [wyrażenia w debugerze](expressions-in-the-debugger.md).
 
 ### <a name="hit-count"></a>Liczba trafień
 Warunek liczby trafień umożliwia wysyłanie danych wyjściowych dopiero po wierszu kodu, w którym ustawiono punkt śledzenia, wykonanej określoną liczbę razy.
@@ -110,7 +110,7 @@ W polu liczba trafień można wybrać, aby wyprowadzić komunikat, gdy linia kod
 
 ![Liczba trafień wyrażenia warunkowego](../debugger/media/conditionalexpressionhitcount.png "Liczba trafień wyrażenia warunkowego")
 
-### <a name="filter"></a>Filtr
+### <a name="filter"></a>filtru
 Dla warunku filtru Określ, które urządzenia, procesy lub wątki będą wyświetlane.
 
 ![Filtr wyrażenia warunkowego](../debugger/media/conditionalexpressionfilter.png "Filtr wyrażenia warunkowego")
@@ -123,7 +123,7 @@ Lista wyrażeń filtrów:
 - ThreadId = wartość
 - ThreadName = "name"
 
-Ujmij ciągi (takie jak nazwy) w podwójnych cudzysłowach. Wartości można wprowadzać bez cudzysłowów. Można łączyć klauzule using `&` (`AND`), `||` (`OR`), `!` (`NOT`) i nawiasów.
+Ujmij ciągi (takie jak nazwy) w podwójnych cudzysłowach. Wartości można wprowadzać bez cudzysłowów. Można łączyć klauzule przy użyciu `&` (`AND`), `||` (`OR`), `!` (`NOT`) i nawiasów.
 
 ## <a name="considerations"></a>Uwagi
 
@@ -131,12 +131,15 @@ Podczas gdy punkty śledzenia mają na celu debugowanie bardziej przejrzystego i
 
 Czasami, gdy sprawdzasz właściwość lub atrybut obiektu, jego wartość może się zmienić. Nie jest to błąd spowodowany przez samą funkcję punkt śledzenia, ale warto zauważyć, że użycie punkty śledzenia do sprawdzenia obiektów nie pozwala uniknąć tych przypadkowych modyfikacji.
 
-Sposób, w jaki wyrażenia są oceniane w oknie komunikatu **akcji** , może być inny niż język aktualnie używany do programowania. Na przykład, aby wyprowadzić ciąg, nie trzeba zawijać wiadomości w cudzysłowie, nawet jeśli podczas korzystania z `Debug.WriteLine()` lub. `console.log()` Ponadto składnia nawiasów klamrowych (`{ }`) do wyrażeń wyjściowych może być również inna niż Konwencja do wyprowadzania wartości w języku deweloperskim. (Jednak zawartość w nawiasach klamrowych (`{ }`) powinna być nadal zapisywana przy użyciu składni języka programowania).
+Sposób, w jaki wyrażenia są oceniane w oknie komunikatu **akcji** , może być inny niż język aktualnie używany do programowania. Na przykład, aby wyprowadzić ciąg, nie trzeba zawijać komunikatu w cudzysłowie, nawet jeśli zwykle używa się `Debug.WriteLine()` lub `console.log()`. Ponadto składnia nawiasów klamrowych (`{ }`) do wyrażeń wyjściowych może być również inna niż Konwencja do wyprowadzania wartości w języku deweloperskim. Jednak zawartość w nawiasach klamrowych (`{ }`) powinna być nadal napisywana przy użyciu składni języka programowania.
+
+Jeśli próbujesz debugować działającą aplikację i wyszukać podobną funkcję, zapoznaj się z naszą funkcją punkt rejestrowania w Snapshot Debugger. Debuger migawek to narzędzie służące do badania problemów w aplikacjach produkcyjnych. Punkty rejestrowania umożliwia również wysyłanie komunikatów do Okno Dane wyjściowe bez konieczności modyfikowania kodu źródłowego i nie ma wpływu na uruchomioną aplikację. Aby uzyskać więcej informacji, zobacz [debugowanie na żywo aplikacji platformy Azure](../debugger/debug-live-azure-applications.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
-- [Tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)
-- [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md)
+- [Pisanie lepszego C# kodu przy użyciu programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Najpierw Spójrz na Debugowanie](../debugger/debugger-feature-tour.md)
 - [Wyrażenia w debugerze](expressions-in-the-debugger.md)
 - [Używanie punktów przerwania](../debugger/using-breakpoints.md)
+- [Debugowanie aktywnych aplikacji platformy Azure](../debugger/debug-live-azure-applications.md)

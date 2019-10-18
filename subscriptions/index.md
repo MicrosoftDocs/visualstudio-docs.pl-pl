@@ -7,12 +7,12 @@ layout: LandingPage
 ms.date: 06/25/2018
 ms.topic: landing-page
 description: Subskrypcje programu Visual Studio — zapraszamy!
-ms.openlocfilehash: 9c2981ddf109a253f55e4c72dd4e88ceb2c820ff
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.openlocfilehash: 5848ccca0468b6293f7e31785944f5cb8b14a17c
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383701"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516855"
 ---
 # <a name="visual-studio-subscriptions"></a>Subskrypcje programu Visual Studio
 
@@ -20,8 +20,8 @@ Subskrypcje programu Visual Studio to kompleksowy zestaw zasobów umożliwiając
 
 ## <a name="get-started"></a>Rozpocznij
 
-Administratorzy mogą się zalogować [https://manage.visualstudio.com](https://manage.visualstudio.com) , aby przypisać subskrypcje do zespołu.<br>
-Subskrybenci logują się [https://my.visualstudio.com](https://my.visualstudio.com) do usługi w celu uzyskania dostępu do korzyści z subskrypcji.
+Administratorzy mogą logować się do [https://manage.visualstudio.com](https://manage.visualstudio.com) , aby przypisać subskrypcje do zespołu.<br>
+Subskrybenci logują się do [https://my.visualstudio.com](https://my.visualstudio.com) , aby uzyskać dostęp do korzyści z subskrypcji.
 
 <!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
@@ -175,7 +175,7 @@ Aby zwiększyć swoją subskrypcję jeszcze bardziej użyteczną, należy częst
                             <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Subskrypcja dewelopera pakietu Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Konto dewelopera systemu Windows</a></li>
-                            <li>PowerBI Pro</li>
+                            <li>Power BI Pro</li>
                         </ul>
                     </div>
                 </div>
@@ -191,10 +191,9 @@ Aby zwiększyć swoją subskrypcję jeszcze bardziej użyteczną, należy częst
                         <p>Subskrypcje programu Visual Studio obejmują szkolenia techniczne i profesjonalne przez firmę Microsoft i naszych partnerów. Zawartość szkoleniowa obejmuje najnowsze kursy dotyczące technologii i profesjonalnego szkolenia w zakresie ciągłego rozwoju kariery. Uzyskaj ekspertą pomoc w rozwiązywaniu problemów i odpowiedzi na nie. Twoja subskrypcja może obejmować:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">Serwis LinkedIn Premium</a> (Business, Tech i Creative)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (chmura, projektowanie, mobilne i dane)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (Cloud, Design, Mobile i Data)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (nauka danych i AI)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Zdarzenia pomocy technicznej firmy Microsoft dla profesjonalistów</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Czat z doradcą Azure Advisor</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Społeczność platformy Azure</a></li>
                         </ul>
                     </div>

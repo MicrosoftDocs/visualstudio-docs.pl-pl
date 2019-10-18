@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce642ee57112561ba687b7ebe962150ce4e268e
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1940680af30928b46dbb73616569d0db318dac18
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446530"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535741"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Zestaw reguł Mixed Recommended Rules
 
@@ -151,7 +151,7 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C28020](../code-quality/c28020.md)|Wyrażenie nie jest prawdziwe w tym wywołaniu|
 |[C28021](../code-quality/c28021.md)|Parametr, którego typem jest adnotacja, musi być wskaźnikiem|
 |[C28022](../code-quality/c28022.md)|Klasy funkcji w tej funkcji nie są zgodne z klasami funkcji dla elementu typedef użytego do jego zdefiniowania.|
-|[C28023](../code-quality/c28023.md)|Przypisana lub przenoszona funkcja powinna mieć \_Function @ no__t-1class @ no__t-2 dla co najmniej jednej z klas (ES)|
+|[C28023](../code-quality/c28023.md)|Przypisana lub przenoszona funkcja powinna mieć \_Function \_class \_ adnotacja dla co najmniej jednej z klas (ES)|
 |[C28024](../code-quality/c28024.md)|Wskaźnik funkcji, do której jest przypisany, ma adnotację z klasą funkcji, która nie znajduje się na liście klas funkcji.|
 |[C28039](../code-quality/c28039.md)|Typ rzeczywistego parametru powinien dokładnie pasować do typu|
 |[C28112](../code-quality/c28112.md)|Do zmiennej, do której uzyskuje się dostęp za pośrednictwem funkcji zablokowaniej, zawsze należy uzyskać dostęp za pośrednictwem funkcji Zablokowani.|
@@ -169,14 +169,14 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C28196](../code-quality/c28196.md)|Wymaganie nie jest spełnione. (Wyrażenie nie jest szacowane na wartość true).|
 |[C28202](../code-quality/c28202.md)|Niedozwolone odwołanie do niestatycznej składowej|
 |[C28203](../code-quality/c28203.md)|Niejednoznaczne odwołanie do składowej klasy.|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 lub \_On @ no__t-3failure @ no__t-4 użyty w niedozwolonym kontekście|
+|[C28205](../code-quality/c28205.md)|\_Success \_ lub \_On \_failure \_ używane w niedozwolonym kontekście|
 |[C28206](../code-quality/c28206.md)|Lewy argument operacji wskazuje na strukturę, użyj "->"|
 |[C28207](../code-quality/c28207.md)|Lewy argument operacji jest strukturą, użyj "."|
 |[C28209](../code-quality/c28209.md)|Deklaracja symbolu ma sprzeczną deklarację|
 |[C28210](../code-quality/c28210.md)|Adnotacje dla kontekstu __on_failure nie mogą być w jawnym kontekście wstępnym|
 |[C28211](../code-quality/c28211.md)|Oczekiwano nazwy kontekstu statycznego dla SAL_context|
 |[C28212](../code-quality/c28212.md)|Oczekiwano wyrażenia wskaźnika dla adnotacji|
-|[C28213](../code-quality/c28213.md)|Adnotacja \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 musi być używana do odwoływania się do, bez modyfikacji, wcześniejszej deklaracji.|
+|[C28213](../code-quality/c28213.md)|@No__t_0Use \_decl \_annotations \_ adnotacja musi być używana do odwoływania się, bez modyfikacji, wcześniejszej deklaracji.|
 |[C28214](../code-quality/c28214.md)|Nazwy parametrów atrybutu muszą być P1... P9|
 |[C28215](../code-quality/c28215.md)|Nie można zastosować typefix do parametru, który ma już typefix|
 |[C28216](../code-quality/c28216.md)|Adnotacja Checkreturn dotyczy ma zastosowanie tylko do warunki końcowe dla określonego parametru funkcji.|
@@ -185,7 +185,7 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C28219](../code-quality/c28219.md)|Oczekiwano składowej wyliczenia dla adnotacji, parametr w adnotacji|
 |[C28220](../code-quality/c28220.md)|Oczekiwano wyrażenia liczby całkowitej dla adnotacji, parametr w adnotacji|
 |[C28221](../code-quality/c28221.md)|Oczekiwano wyrażenia ciągu dla parametru w adnotacji|
-|[C28222](../code-quality/c28222.md)|__yes, @no__t -0 _NO lub @no__t -1 _maybe oczekiwano dla adnotacji|
+|[C28222](../code-quality/c28222.md)|__yes, \__no lub \__maybe oczekiwane dla adnotacji|
 |[C28223](../code-quality/c28223.md)|Nie znaleziono oczekiwanego tokenu/identyfikatora dla adnotacji, parametr|
 |[C28224](../code-quality/c28224.md)|Adnotacja wymaga parametrów|
 |[C28225](../code-quality/c28225.md)|Nie znaleziono poprawnej liczby wymaganych parametrów w adnotacji|
@@ -219,44 +219,44 @@ Dołącz ten zestaw reguł do dowolnego niestandardowego zestawu reguł tworzone
 |[C28267](../code-quality/c28267.md)|W adnotacji znaleziono błąd składni w funkcji.|
 |[C28272](../code-quality/c28272.md)|Adnotacja dla funkcji, parametr podczas badania, jest niespójna z deklaracją funkcji|
 |[C28273](../code-quality/c28273.md)|W przypadku funkcji wskazówki są niespójne z deklaracją funkcji|
-|[C28275](../code-quality/c28275.md)|Parametr do \_Macro @ no__t-1value @ no__t-2 ma wartość null|
+|[C28275](../code-quality/c28275.md)|Parametr \_Macro \_value \_ ma wartość null|
 |[C28279](../code-quality/c28279.md)|Dla symbolu znaleziono "BEGIN" bez odpowiadającego mu "End"|
 |[C28280](../code-quality/c28280.md)|Dla symbolu znaleziono element "End" bez odpowiadającego mu elementu "BEGIN|
 |[C28282](../code-quality/c28282.md)|Ciągi formatu muszą znajdować się w warunkach wstępnych|
 |[C28285](../code-quality/c28285.md)|Dla funkcji, błąd składni w parametrze|
 |[C28286](../code-quality/c28286.md)|Dla funkcji, błąd składniowy blisko końca|
-|[C28287](../code-quality/c28287.md)|Dla funkcji, błąd składni w adnotacji @no__t 0At @ no__t-1 () (Nierozpoznana Nazwa parametru)|
-|[C28288](../code-quality/c28288.md)|Dla funkcji, błąd składni w adnotacji @no__t 0At @ no__t-1 () (Nieprawidłowa nazwa parametru)|
+|[C28287](../code-quality/c28287.md)|Dla funkcji, błąd składniowy w \_At \_ () () adnotacji (Nierozpoznana Nazwa parametru)|
+|[C28288](../code-quality/c28288.md)|Dla funkcji, błąd składni w adnotacji \_At \_ () (Nieprawidłowa nazwa parametru)|
 |[C28289](../code-quality/c28289.md)|Dla funkcji: ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru|
 |[C28290](../code-quality/c28290.md)|Adnotacja dla funkcji zawiera więcej elementów zewnętrznych niż rzeczywista liczba parametrów|
 |[C28291](../code-quality/c28291.md)|wpis o wartości null/notnull na poziomie DEREF 0 jest bezużyteczne dla funkcji.|
 |[C28300](../code-quality/c28300.md)|Operandy wyrażenia niezgodnych typów dla operatora|
 |[C28301](../code-quality/c28301.md)|Brak adnotacji dla pierwszej deklaracji funkcji.|
-|[C28302](../code-quality/c28302.md)|W adnotacji znaleziono dodatkowy operator @no__t 0Deref @ no__t-1.|
-|[C28303](../code-quality/c28303.md)|W adnotacji znaleziono niejednoznaczny operator @no__t 0Deref @ no__t-1.|
-|[C28304](../code-quality/c28304.md)|Znaleziono niewłaściwie umieszczony operator \_Notref @ no__t-1 do tokenu.|
+|[C28302](../code-quality/c28302.md)|Znaleziono dodatkowy operator \_ \_Deref w adnotacji.|
+|[C28303](../code-quality/c28303.md)|W adnotacji znaleziono niejednoznaczny operator \_Deref \_.|
+|[C28304](../code-quality/c28304.md)|Znaleziono niewłaściwie umieszczony operator \_ \_Notref, który został zastosowany do tokenu.|
 |[C28305](../code-quality/c28305.md)|Wykryto błąd podczas analizowania tokenu.|
 |[C28306](../code-quality/c28306.md)|Adnotacja dla parametru jest przestarzała|
 |[C28307](../code-quality/c28307.md)|Adnotacja dla parametru jest przestarzała|
 |[C28350](../code-quality/c28350.md)|Adnotacja zawiera opis sytuacji, która nie jest stosowana warunkowo.|
 |[C28351](../code-quality/c28351.md)|Adnotacja opisuje, gdzie w warunku nie można używać wartości dynamicznej (zmiennej).|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Poprawnie deklaruj procedury obsługi zdarzeń|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Oznacz zestawy atrybutem AssemblyVersion|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Przenieś metody P/Invoke do klasy NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Nie ukrywaj metod klasy bazowej|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Poprawnie zaimplementuj interfejs IDisposable|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Unikaj duplikowania akceleratorów|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Punkty wejścia P/Invoke powinny istnieć|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Elementy P/Invoke nie powinny być widoczne|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Metody rejestracji modelu COM powinny mieć swoje odpowiedniki|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Poprawnie zadeklaruj elementy P/Invoke|
+|[CA1001](../code-quality/ca1001.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
+|[CA1009](../code-quality/ca1009.md)|Poprawnie deklaruj procedury obsługi zdarzeń|
+|[CA1016](../code-quality/ca1016.md)|Oznacz zestawy atrybutem AssemblyVersion|
+|[CA1033](../code-quality/ca1033.md)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
+|[CA1049](../code-quality/ca1049.md)|Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji|
+|[CA1060](../code-quality/ca1060.md)|Przenieś metody P/Invoke do klasy NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Nie ukrywaj metod klasy bazowej|
+|[CA1063](../code-quality/ca1063.md)|Poprawnie zaimplementuj interfejs IDisposable|
+|[CA1065](../code-quality/ca1065.md)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
+|[CA1301](../code-quality/ca1301.md)|Unikaj duplikowania akceleratorów|
+|[CA1400](../code-quality/ca1400.md)|Punkty wejścia P/Invoke powinny istnieć|
+|[CA1401](../code-quality/ca1401.md)|Elementy P/Invoke nie powinny być widoczne|
+|[CA1403](../code-quality/ca1403.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|
+|[CA1404](../code-quality/ca1404.md)|Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM|
+|[CA1410](../code-quality/ca1410.md)|Metody rejestracji modelu COM powinny mieć swoje odpowiedniki|
+|[CA1415](../code-quality/ca1415.md)|Poprawnie zadeklaruj elementy P/Invoke|
 |[CA1821](../code-quality/ca1821.md)|Usuwaj puste finalizatory|
 |[CA1900](../code-quality/ca1900.md)|Pola typu wartości powinny być przenośne|
 |[CA1901](../code-quality/ca1901.md)|Deklaracje metody P/Invoke powinny być przenośne|

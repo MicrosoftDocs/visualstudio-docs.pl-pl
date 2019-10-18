@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 670150053053a2e556e0f111312247f243c2a8c0
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 2e4a71acfc9872c1709dcfe5abf062a95cb3e89d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975048"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535825"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Pomiń ostrzeżenia analizy kodu
 
@@ -27,7 +27,7 @@ Często warto wskazać, że ostrzeżenie nie jest stosowane. Wskazuje to członk
 
 Atrybut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> jest atrybutem warunkowym, który jest zawarty w metadanych IL zestawu kodu zarządzanego, tylko jeśli symbol kompilacji CODE_ANALYSIS jest zdefiniowany w czasie kompilacji.
 
-W C++programie/CLI Użyj makr CA @ NO__T-1SUPPRESS @ NO__T-2MESSAGE lub CA @ NO__T-3GLOBAL @ NO__T-4SUPPRESS_MESSAGE w pliku nagłówkowym, aby dodać atrybut.
+W C++programie/CLI Użyj makr urzędu certyfikacji \_SUPPRESS \_MESSAGE lub urzędu certyfikacji \_GLOBAL \_SUPPRESS_MESSAGE w pliku nagłówkowym, aby dodać atrybut.
 
 > [!NOTE]
 > Nie należy używać pominięć ze źródła w kompilacjach wydania, aby zapobiec przypadkowemu wysłaniu metadanych pomijania w źródle. Ponadto ze względu na koszt przetwarzania pomijania w źródle wydajność aplikacji może być obniżona.
@@ -35,7 +35,7 @@ W C++programie/CLI Użyj makr CA @ NO__T-1SUPPRESS @ NO__T-2MESSAGE lub CA @ NO_
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> W przypadku migrowania projektu do programu Visual Studio 2017 może wystąpić nagłe zaistnienie dużej liczby ostrzeżeń dotyczących analizy kodu. Jeśli nie możesz naprawić ostrzeżeń, możesz pominąć wszystkie z nich, wybierając pozycję **analizuj** > **Uruchom analizę kodu i pominąć aktywne problemy**.
+> W przypadku migrowania projektu do programu Visual Studio 2017 może wystąpić nagłe zaistnienie dużej liczby ostrzeżeń dotyczących analizy kodu. Jeśli nie możesz naprawić ostrzeżeń, możesz pominąć wszystkie z nich, wybierając pozycję **analizuj**  > **uruchomić analizę kodu i pominąć aktywne problemy**.
 >
 > ![Uruchom analizę kodu i Pomiń problemy w programie Visual Studio](media/suppress-active-issues.png)
 
@@ -44,13 +44,13 @@ W C++programie/CLI Użyj makr CA @ NO__T-1SUPPRESS @ NO__T-2MESSAGE lub CA @ NO_
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> W przypadku migrowania projektu do programu Visual Studio 2019 może wystąpić nagłe zaistnienie dużej liczby ostrzeżeń dotyczących analizy kodu. Jeśli nie możesz naprawić ostrzeżeń, możesz pominąć wszystkie z nich, wybierając pozycję **analizuj** > **kompilacja i pominąć aktywne problemy**.
+> W przypadku migrowania projektu do programu Visual Studio 2019 może wystąpić nagłe zaistnienie dużej liczby ostrzeżeń dotyczących analizy kodu. Jeśli nie możesz naprawić ostrzeżeń, możesz pominąć wszystkie z nich, wybierając pozycję **analizuj**  > **Kompiluj i Pomiń aktywne problemy**.
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage — atrybut
 
-Po wybraniu opcji **Pomiń** w menu kontekstowym lub kliknięciu prawym przyciskiem myszy ostrzeżenia analizy kodu w **Lista błędów**atrybut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> jest dodawany do kodu lub do globalnego pliku pomijania projektu.
+W przypadku wybrania opcji **Pomiń** w menu kontekstowym lub kliknięciu prawym przyciskiem myszy ostrzeżenia analizy kodu w **Lista błędów**atrybut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> zostanie dodany w kodzie lub do globalnego pliku pomijania projektu.
 
 Atrybut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> ma następujący format:
 
@@ -94,7 +94,7 @@ Właściwości tego atrybutu obejmują:
 
 ## <a name="suppressmessage-usage"></a>SuppressMessage użycie
 
-Ostrzeżenia analizy kodu są pomijane na poziomie, do którego jest stosowany atrybut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. Na przykład atrybut może być stosowany na poziomie zestawu, modułu, typu, elementu członkowskiego lub parametru. Celem jest ścisłe sprzęganie informacji o pominięciu do kodu, w którym występuje naruszenie.
+Ostrzeżenia analizy kodu są pomijane na poziomie, do którego zastosowano atrybut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. Na przykład atrybut może być stosowany na poziomie zestawu, modułu, typu, elementu członkowskiego lub parametru. Celem jest ścisłe sprzęganie informacji o pominięciu do kodu, w którym występuje naruszenie.
 
 Ogólna forma pomijania obejmuje kategorię reguły i Identyfikator reguły, która zawiera opcjonalną, czytelną dla człowieka reprezentację nazwy reguły. Na przykład:
 
@@ -108,11 +108,11 @@ Ze względów utrzymania nie zaleca się pominięcia nazwy reguły.
 
 ## <a name="suppress-selective-violations-within-a-method-body"></a>Pomiń wybiórcze naruszenia w treści metody
 
-Atrybuty pomijania można zastosować do metody, ale nie mogą być osadzone w treści metody. Oznacza to, że wszystkie naruszenia określonej reguły są pomijane, jeśli dodasz do metody atrybut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>.
+Atrybuty pomijania można zastosować do metody, ale nie mogą być osadzone w treści metody. Oznacza to, że wszystkie naruszenia określonej reguły są pomijane w przypadku dodania do metody atrybutu <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>.
 
-W niektórych przypadkach może być konieczne pominięcie określonego wystąpienia naruszenia, na przykład w taki sposób, że przyszły kod nie zostanie automatycznie wykluczony z reguły analizy kodu. Niektóre reguły analizy kodu umożliwiają wykonanie tej czynności przy użyciu właściwości `MessageId` atrybutu <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. Ogólnie rzecz biorąc, starsze reguły dla naruszeń dla określonego symbolu (zmienna lokalna lub parametr) respektują Właściwość `MessageId`. [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) jest przykładem takiej reguły. Jednak starsze reguły dla naruszeń kodu wykonywalnego (bez symboli) nie respektują właściwości `MessageId`. Ponadto .NET Compiler Platform ("Roslyn") analizatory nie respektują właściwości `MessageId`.
+W niektórych przypadkach może być konieczne pominięcie określonego wystąpienia naruszenia, na przykład w taki sposób, że przyszły kod nie zostanie automatycznie wykluczony z reguły analizy kodu. Niektóre reguły analizy kodu umożliwiają wykonanie tej czynności przy użyciu właściwości `MessageId` atrybutu <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. Ogólnie rzecz biorąc, starsze reguły dla naruszeń dla określonego symbolu (zmienna lokalna lub parametr) respektują Właściwość `MessageId`. [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) jest przykładem takiej reguły. Jednak starsze reguły dla naruszeń kodu wykonywalnego (bez symboli) nie respektują właściwości `MessageId`. Dodatkowo analizatory .NET Compiler Platform ("Roslyn") nie respektują właściwości `MessageId`.
 
-Aby pominąć określone naruszenie symbolu reguły, należy określić nazwę symbolu dla właściwości `MessageId` atrybutu <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. W poniższym przykładzie pokazano kod z dwoma naruszeniami [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;one dla zmiennej `name` i jeden dla zmiennej `age`. Tylko naruszenie dla symbolu `age` jest pomijane.
+Aby pominąć określone naruszenie symbolu reguły, należy określić nazwę symbolu dla właściwości `MessageId` atrybutu <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. W poniższym przykładzie pokazano kod z dwoma naruszeniami [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) &mdash;one dla zmiennej `name` i jeden dla zmiennej `age`. Tylko naruszenie dla symbolu `age` jest pomijane.
 
 ```vb
 Public Class Animal
@@ -151,10 +151,10 @@ public class Animal
 
 Kompilatory kodu zarządzanego i narzędzia innych firm generują kod, aby ułatwić szybkie tworzenie kodu. Kod wygenerowany przez kompilator, który pojawia się w plikach źródłowych jest zwykle oznaczony atrybutem `GeneratedCodeAttribute`.
 
-Można wybrać, czy pomijać ostrzeżenia i błędy analizy kodu dla wygenerowanego kodu. Aby uzyskać informacje na temat sposobu pomijania takich ostrzeżeń i błędów, zobacz [How: Pomiń ostrzeżenia dla wygenerowanego kodu @ no__t-0.
+Można wybrać, czy pomijać ostrzeżenia i błędy analizy kodu dla wygenerowanego kodu. Aby uzyskać informacje na temat sposobu pomijania takich ostrzeżeń i błędów, zobacz [How to: pomijanie ostrzeżeń dla wygenerowanego kodu](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
-> Analiza kodu ignoruje `GeneratedCodeAttribute`, gdy jest stosowany do całego zestawu lub jednego parametru.
+> Analiza kodu ignoruje `GeneratedCodeAttribute`, gdy jest stosowana do całego zestawu lub jednego parametru.
 
 ## <a name="global-level-suppressions"></a>Pominięcia na poziomie globalnym
 

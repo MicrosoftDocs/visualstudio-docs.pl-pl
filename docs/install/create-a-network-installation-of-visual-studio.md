@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
-ms.translationtype: HT
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381075"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516319"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
@@ -39,7 +39,7 @@ Pobierz plik programu inicjującego dla używanej wersji programu Visual Studio.
 
 Aby uzyskać program inicjujący dla programu Visual Studio 2017, zobacz stronę pobierania [poprzednich wersji programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) , aby uzyskać szczegółowe informacje o tym, jak to zrobić.
 
-Plik wykonywalny instalatora @ no__t-0or jest bardziej szczegółowy, a program inicjujący @ no__t-1should pasuje lub może być podobny do jednego z następujących.
+Plik wykonywalny instalatora &mdash;or bardziej szczegółowy, &mdash;should pliku programu inicjującego jest zgodny z jedną z następujących czynności:
 
 | Wersja | Nazwa pliku |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Inne obsługiwane programu inicjujące obejmują **vs_feedbackclient. exe**, **v
 
 ::: moniker range="vs-2019"
 
-Plik wykonywalny instalatora @ no__t-0or jest bardziej szczegółowy, a program inicjujący @ no__t-1should jest zgodny z jedną z następujących elementów.
+Plik wykonywalny instalatora &mdash;or bardziej szczegółowy, &mdash;should pliku programu inicjującego jest zgodny z jedną z następujących czynności:
 
 |Wersja | Pobieranie|
 |-------------|-----------------------|
@@ -221,17 +221,17 @@ Administratorzy mogą wdrażać program Visual Studio na stacjach roboczych klie
 > Aby zapobiec wystąpieniu błędu, upewnij się, że pełna ścieżka układu jest krótsza niż 80 znaków.
 >
 > [!TIP]
-> W przypadku wykonywania jako część pliku wsadowego opcja `--wait` zapewnia, że proces `vs_enterprise.exe` będzie oczekiwać do momentu zakończenia instalacji, zanim zwróci kod zakończenia.
+> Podczas wykonywania jako część pliku wsadowego, opcja `--wait` zapewnia, że proces `vs_enterprise.exe` czeka na zakończenie instalacji, zanim zwróci kod zakończenia.
 >
 > Jest to przydatne, jeśli administrator przedsiębiorstwa chce wykonać dalsze czynności na zakończeniu instalacji (na przykład w celu [zastosowania klucza produktu do pomyślnej instalacji](automatically-apply-product-keys-when-deploying-visual-studio.md)), ale musi poczekać na zakończenie instalacji, aby obsłużyć kod powrotny z tego instalacji.
 >
-> Jeśli nie używasz `--wait`, proces `vs_enterprise.exe` kończy działanie przed ukończeniem instalacji i zwróci niewłaściwy kod zakończenia, który nie reprezentuje stanu operacji instalacji.
+> Jeśli nie używasz `--wait`, proces `vs_enterprise.exe` zostanie zakończony przed ukończeniem instalacji i zwróci niewłaściwy kod zakończenia, który nie reprezentuje stanu operacji instalacji.
 >
 
 ::: moniker range="vs-2019"
-
-> W przypadku instalacji w trybie offline, jeśli zostanie wyświetlony komunikat o błędzie "nie można odnaleźć projektu zgodnego z następującymi parametrami", upewnij się, że używasz przełącznika--noweb z wersją 16.3.5 lub nowszą.
-
+> [!IMPORTANT]
+> W przypadku instalacji w trybie offline, jeśli zostanie wyświetlony komunikat o błędzie "nie można odnaleźć produktu zgodnego z następującymi parametrami", upewnij się, że używasz przełącznika `--noweb` w wersji 16.3.5 lub nowszej.
+>
 ::: moniker-end
 
 Podczas instalacji z układu, zainstalowaną zawartość uzyskuje się z układu. Jednak w przypadku wybrania składnika, który nie jest w układzie, zostanie on pobrany z Internetu.  Aby uniemożliwić pobranie przez Instalatora programu Visual Studio żadnej zawartości, której brakuje w układzie, użyj opcji `--noWeb`. Jeśli użyto `--noWeb`, a w układzie brakuje żadnej zawartości wybranej do zainstalowania, instalator zakończy się niepowodzeniem.
@@ -241,7 +241,7 @@ Podczas instalacji z układu, zainstalowaną zawartość uzyskuje się z układu
 
 ### <a name="error-codes"></a>Kody błędów
 
-Jeśli użyto parametru `--wait`, a następnie w zależności od wyniku operacji, zmienna środowiskowa `%ERRORLEVEL%` jest ustawiona na jedną z następujących wartości:
+Jeśli użyto `--wait` parametru, a następnie w zależności od wyniku operacji, zmienna środowiskowa `%ERRORLEVEL%` jest ustawiana na jedną z następujących wartości:
 
 [!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 

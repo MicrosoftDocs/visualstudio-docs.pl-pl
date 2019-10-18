@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc3d0376e0f3af186802fa566e1618ae7ed89a78
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 10758bbabeb21f00ea10dd779bc6a44acdcc6bba
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305607"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535791"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Zarządzany minimalny zestaw reguł dla kodu zarządzanego
 
@@ -21,7 +21,7 @@ Zarządzane reguły minimalne koncentrują się na najważniejszych problemach w
 
 |Reguła|Opis|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
+|[CA1001](../code-quality/ca1001.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
 |[CA1821](../code-quality/ca1821.md)|Usuwaj puste finalizatory|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Pola możliwe do likwidacji należy likwidować|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Operator przeciążenia jest równy na przesłanianiu `ValueType.Equals`|
+|[CA2213](../code-quality/ca2213.md)|Pola możliwe do likwidacji należy likwidować|
+|[CA2231](../code-quality/ca2231.md)|Operator przeciążenia jest równy na przesłanianiu `ValueType.Equals`|

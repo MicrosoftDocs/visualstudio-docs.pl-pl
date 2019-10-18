@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fa7ae62c19a7af45188bab08ce9b3144032b7d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435710"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536032"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
@@ -99,7 +99,7 @@ Przekrocz **nad właściwościami i operatorami (tylko kod zarządzany)** : unie
 
 **Pomiń optymalizację JIT podczas ładowania modułu (tylko kod zarządzany)** : wyłącza optymalizację JIT kodu zarządzanego, gdy moduł jest ładowany i jest kompilowany w trybie JIT podczas dołączania debugera. Wyłączenie optymalizacji może ułatwić debugowanie niektórych problemów, ale kosztem wydajności. Jeśli używasz Tylko mój kod, pominięcie optymalizacji JIT może spowodować, że kod niebędący użytkownikiem będzie wyświetlany jako kod użytkownika ("mój kod"). Aby uzyskać więcej informacji, zobacz [Optymalizacja i debugowanie JIT](../debugger/jit-optimization-and-debugging.md).
 
-**Włącz debugowanie kodu JavaScript dla ASP.NET (Chrome, Edge i IE)** : włącza debuger skryptów dla aplikacji ASP.NET. Przy pierwszym użyciu w programie Chrome może być konieczne zalogowanie się do przeglądarki w celu włączenia zainstalowanych rozszerzeń programu Chrome. Wyłącz tę opcję, aby przywrócić starsze zachowanie.
+**Włącz debugowanie kodu JavaScript dla ASP.NET (Chrome, Microsoft Edge i IE)** : włącza debuger skryptów dla aplikacji ASP.NET. Przy pierwszym użyciu w programie Chrome może być konieczne zalogowanie się do przeglądarki w celu włączenia zainstalowanych rozszerzeń programu Chrome. Wyłącz tę opcję, aby przywrócić starsze zachowanie.
 
 **Włącz narzędzia deweloperskie Edge dla aplikacji JavaScript platformy UWP (eksperymentalne)** : włącza narzędzia deweloperskie dla platformy UWP aplikacji JavaScript w przeglądarce Microsoft Edge.
 
@@ -117,7 +117,7 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki DLL, uż
 
 **Użyj zarządzanego trybu zgodności**: zastępuje domyślny aparat debugowania ze starszą wersją, aby umożliwić te scenariusze:
 
-- Używasz języka .NET Framework innego niż C#, Visual Basic lub F# , który oferuje własną ewaluatora wyrażeń (obejmuje C++to/CLI).
+- Używasz języka .NET innego niż C#, Visual Basic lub F# , który oferuje własną ewaluatora wyrażeń (obejmuje C++to/CLI).
 
 - Chcesz włączyć funkcję Edytuj i Kontynuuj dla C++ projektów podczas debugowania w trybie mieszanym.
 

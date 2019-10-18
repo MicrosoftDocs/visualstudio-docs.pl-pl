@@ -12,12 +12,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 020577cfe692d5d306a555e763d08807ab191074
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 40be42871bac0a138d15b11b86f34419f2a6c67d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450941"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535294"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Rozwiązywanie problemów z ponownym ładowaniem przy aktywnym kodzie XAML
 
@@ -35,7 +35,7 @@ Funkcja jest domyślnie włączona. Po rozpoczęciu debugowania aplikacji upewni
 
 ![Dostępny jest dostęp do gorącego ładowania XAML](../debugger/media/xaml-hot-reload-available.png)
 
-Jeśli nie widzisz paska narzędzi w aplikacji, Otwórz @no__t**Opcje** **debugowania** > **Ogólne**. Upewnij się, że są zaznaczone obie opcje, **Włącz narzędzia debugowania interfejsu użytkownika dla języka XAML** i wybierz **opcję Włącz funkcję dynamicznego ponownego ładowania XAML** .
+Jeśli nie widzisz paska narzędzi w aplikacji, Otwórz**opcje**  >  **debugowania**  > **Ogólne**. Upewnij się, że są zaznaczone obie opcje, **Włącz narzędzia debugowania interfejsu użytkownika dla języka XAML** i wybierz **opcję Włącz funkcję dynamicznego ponownego ładowania XAML** .
 
 ![Włącz gorącą ponowną ładowanie XAML](../debugger/media/xaml-hot-reload-enable.png)
 
@@ -45,7 +45,10 @@ Jeśli są wybrane te opcje, przejdź do aktywnego drzewa wizualnego (**Debug** 
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Sprawdź, czy używasz debugowania początkowego zamiast dołączania do procesu
 
-Funkcja ładowania gorącego XAML wymaga, aby zmienna środowiskowa `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` była ustawiona na 1 podczas uruchamiania aplikacji. Program Visual Studio automatycznie ustawia tę wartość jako część **debugowania** > **Rozpocznij debugowanie** (lub **F5**). Jeśli chcesz użyć polecenia Załaduj ponownie w języku XAML z @no__t **debugowania**-1**Dołącz do procesu** , a następnie Ustaw zmienną środowiskową samodzielnie.
+Funkcja ładowania gorącego XAML wymaga, aby zmienna środowiskowa `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` była ustawiona na 1 podczas uruchamiania aplikacji. Program Visual Studio automatycznie ustawia tę wartość jako część **debugowania** > **Rozpocznij debugowanie** (lub **F5**). Jeśli chcesz użyć języka XAML do ponownego załadowania przy użyciu  >  **debugowania** **Dołącz do procesu** , a następnie Ustaw zmienną środowiskową samodzielnie.
+
+> [!NOTE]
+> Aby ustawić zmienną środowiskową, wyszukaj ciąg "zmienna środowiskowa" i wybierz polecenie **Edytuj zmienne środowiskowe systemu**. W otwartym oknie dialogowym wybierz **zmienne środowiskowe**, a następnie dodaj je jako zmienną użytkownika i ustaw wartość na `1`. Aby wyczyścić, Usuń zmienną po zakończeniu debugowania.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Sprawdź, czy właściwości programu MSBuild są poprawne
 

@@ -1,6 +1,6 @@
 ---
-title: 'Samouczek 2: Tworzenie quizu matematycznego z limitem czasu'
-ms.date: 11/04/2016
+title: 'Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu'
+ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,22 +9,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e092e11474aa872903977e1b07c699b160bef8a2
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118862"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516596"
 ---
-# <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Tworzenie quizu matematycznego z limitem czasu
+# <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu
 
-W tym samouczku utworzysz quiz, w którym powinieneś odpowiedzieć cztery losowe problemy arytmetyczne w określonym czasie. Dowiesz się, jak:
+W tym samouczku utworzysz quiz, w którym powinieneś odpowiedzieć cztery losowe problemy arytmetyczne w określonym czasie.
 
-- Generuj liczby losowe przy użyciu <xref:System.Random> klasy.
+> [!NOTE]
+> W tym samouczku C# omówiono zarówno program, jak i Visual Basic, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.
 
-- Wyzwalaj zdarzenia w określonym czasie przy użyciu <xref:System.Windows.Forms.Timer> formantu.
+Ten samouczek przeprowadzi Cię przez następujące zadania:
 
-- Sterowanie przepływem programu za `if else` pomocą instrukcji.
+- Generuj liczby losowe przy użyciu klasy <xref:System.Random>.
+
+- Wyzwalaj zdarzenia w określonym czasie przy użyciu kontrolki <xref:System.Windows.Forms.Timer>.
+
+- Sterowanie przepływem programu za pomocą instrukcji `if else`.
 
 - Wykonaj podstawowe operacje arytmetyczne w kodzie.
 
@@ -34,20 +39,25 @@ Po zakończeniu Quiz będzie wyglądać podobnie do poniższego zrzutu ekranu, z
 
 ## <a name="tutorial-links"></a>Linki samouczków
 
-Aby pobrać kompletną wersję quizu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
-
-> [!NOTE]
-> W tym samouczku C# omówiono zarówno program, jak i Visual Basic, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.
-
-## <a name="related-topics"></a>Tematy pokrewne
-
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Krok 1. Tworzenie projektu i Dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Zacznij od utworzenia projektu, zmiany właściwości i dodania `Label` kontrolek.|
-|[Krok 2. Utwórz losowy problem dodawania](../ide/step-2-create-a-random-addition-problem.md)|Utwórz problem z dodaniem i Użyj `Random` klasy w celu wygenerowania liczb losowych.|
+|[Krok 1. Tworzenie projektu i Dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Zacznij od utworzenia projektu, zmiany właściwości i dodania formantów `Label`.|
+|[Krok 2. Tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md)|Utwórz problem z dodaniem i użyj klasy `Random`, aby wygenerować liczby losowe.|
 |[Krok 3. Dodawanie czasomierza odliczania](../ide/step-3-add-a-countdown-timer.md)|Dodaj czasomierz odliczania, aby można było przekroczyć limit czasu quizu.|
-|[Krok 4. Dodaj metodę metody CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)|Dodaj metodę, aby sprawdzić, czy w ramach tego problemu została wprowadzona poprawna odpowiedź.|
-|[Krok 5. Dodaj programy obsługi zdarzeń Enter dla kontrolek NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)|Dodaj programy obsługi zdarzeń, które ułatwiają wykonywanie quizu.|
+|[Krok 4. Dodawanie metody metody CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)|Dodaj metodę, aby sprawdzić, czy w ramach tego problemu została wprowadzona poprawna odpowiedź.|
+|[Krok 5. Dodawanie obsługi zdarzeń Enter dla kontrolek NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)|Dodaj programy obsługi zdarzeń, które ułatwiają wykonywanie quizu.|
 |[Krok 6. Dodawanie problemu odejmowania](../ide/step-6-add-a-subtraction-problem.md)|Dodawanie problemu odejmowania, który generuje liczby losowe, używa czasomierza i sprawdza poprawność odpowiedzi.|
 |[Krok 7. Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md)|Dodawanie problemów mnożenia i dzielenia, które generują liczby losowe, użyj czasomierza i sprawdzaj poprawność odpowiedzi.|
 |[Krok 8. Dostosowywanie quizu](../ide/step-8-customize-the-quiz.md)|Wypróbuj inne funkcje, takie jak zmiana kolorów i dodanie wskazówki.|
+
+Dostępne są również wspaniałe, bezpłatne zasoby szkoleniowe dotyczące wideo. Aby dowiedzieć się więcej na C#temat programowania w programie, zobacz [ C# podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na temat programowania w Visual Basic, zobacz [Visual Basic podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
+
+## <a name="next-steps"></a>Następne kroki
+
+Aby rozpocząć pracę z samouczkiem, Zacznij od **[kroku 1: Tworzenie projektu i Dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)** .
+
+## <a name="see-also"></a>Zobacz także
+
+* [Więcej C# samouczków](/visualstudio/get-started/csharp/)
+* [Samouczki Visual Basic](/visualstudio/get-started/visual-basic/)
+* [C++Podręcznik](/cpp/get-started/tutorial-console-cpp)

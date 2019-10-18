@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc279f0ae9e0420810e12c21f5f7cf29de0d15e7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 636443a65922e72bfcede09d5692e441c6c2cb36
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449159"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535900"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Rozszerzony zestaw reguł poprawności dla zarządzanego kodu
 
@@ -25,23 +25,23 @@ W poniższej tabeli opisano wszystkie reguły w zestawie reguł poprawnych rozsz
 
 |Reguła|Opis|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Poprawnie deklaruj procedury obsługi zdarzeń|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Oznacz zestawy atrybutem AssemblyVersion|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Przenieś metody P/Invoke do klasy NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Nie ukrywaj metod klasy bazowej|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Poprawnie zaimplementuj interfejs IDisposable|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Unikaj duplikowania akceleratorów|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Punkty wejścia P/Invoke powinny istnieć|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Elementy P/Invoke nie powinny być widoczne|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Metody rejestracji modelu COM powinny mieć swoje odpowiedniki|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Poprawnie zadeklaruj elementy P/Invoke|
+|[CA1001](../code-quality/ca1001.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
+|[CA1009](../code-quality/ca1009.md)|Poprawnie deklaruj procedury obsługi zdarzeń|
+|[CA1016](../code-quality/ca1016.md)|Oznacz zestawy atrybutem AssemblyVersion|
+|[CA1033](../code-quality/ca1033.md)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
+|[CA1049](../code-quality/ca1049.md)|Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji|
+|[CA1060](../code-quality/ca1060.md)|Przenieś metody P/Invoke do klasy NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Nie ukrywaj metod klasy bazowej|
+|[CA1063](../code-quality/ca1063.md)|Poprawnie zaimplementuj interfejs IDisposable|
+|[CA1065](../code-quality/ca1065.md)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
+|[CA1301](../code-quality/ca1301.md)|Unikaj duplikowania akceleratorów|
+|[CA1400](../code-quality/ca1400.md)|Punkty wejścia P/Invoke powinny istnieć|
+|[CA1401](../code-quality/ca1401.md)|Elementy P/Invoke nie powinny być widoczne|
+|[CA1403](../code-quality/ca1403.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|
+|[CA1404](../code-quality/ca1404.md)|Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM|
+|[CA1410](../code-quality/ca1410.md)|Metody rejestracji modelu COM powinny mieć swoje odpowiedniki|
+|[CA1415](../code-quality/ca1415.md)|Poprawnie zadeklaruj elementy P/Invoke|
 |[CA1821](../code-quality/ca1821.md)|Usuwaj puste finalizatory|
 |[CA1900](../code-quality/ca1900.md)|Pola typu wartości powinny być przenośne|
 |[CA1901](../code-quality/ca1901.md)|Deklaracje metody P/Invoke powinny być przenośne|
@@ -87,10 +87,10 @@ W poniższej tabeli opisano wszystkie reguły w zestawie reguł poprawnych rozsz
 |[CA2240](../code-quality/ca2240.md)|Poprawnie zaimplementuj interfejs ISerializable|
 |[CA2241](../code-quality/ca2241.md)|Podaj poprawne argumenty metod formatowania|
 |[CA2242](../code-quality/ca2242.md)|Poprawnie testuj nie-liczby (NaN)|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Typy wyliczeniowe powinny mieć wartość zero|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania|
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Nie przekazuj literałów jako zlokalizowanych parametrów|
-|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
+|[CA1008](../code-quality/ca1008.md)|Typy wyliczeniowe powinny mieć wartość zero|
+|[CA1013](../code-quality/ca1013.md)|Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania|
+|[CA1303](../code-quality/ca1303.md)|Nie przekazuj literałów jako zlokalizowanych parametrów|
+|[CA1308](../code-quality/ca1308.md)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
 |[CA1806](../code-quality/ca1806.md)|Nie ignoruj wyników metod|
 |[CA1816](../code-quality/ca1816.md)|Poprawnie wywołaj metodę GC.SuppressFinalize|
 |[CA1819](../code-quality/ca1819.md)|Właściwości nie powinny zwracać tablic|
@@ -116,22 +116,22 @@ W poniższej tabeli opisano wszystkie reguły w zestawie reguł poprawnych rozsz
 |[CA2226](../code-quality/ca2226.md)|Operatory powinny mieć symetryczne przeciążenia|
 |[CA2227](../code-quality/ca2227.md)|Właściwości kolekcji powinny być tylko do odczytu|
 |[CA2239](../code-quality/ca2239.md)|Udostępnij metody deserializacji dla pól opcjonalnych|
-|[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|Zaimplementuj standardowe konstruktory wyjątków|
-|[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|Parametry identyfikatora URI nie powinny być ciągami|
-|[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|Wartości zwracane identyfikatora URI nie powinny być ciągami|
-|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|Właściwości identyfikatora URI nie powinny być ciągami|
-|[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Identyfikator URI typu string przeciąża wywołanie przeciążane przez typ System.Uri|
-|[CA1402](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md)|Unikaj przeciążeń w interfejsach widocznych dla modelu COM|
-|[CA1406](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)|Unikaj używania argumentów typu Int64 w klientach w języku Visual Basic 6|
-|[CA1407](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)|Unikaj statycznych składowych w typach widocznych dla modelu COM|
-|[CA1408](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)|Nie używaj wartości AutoDual elementu ClassInterfaceType|
-|[CA1409](../code-quality/ca1409-com-visible-types-should-be-creatable.md)|Typy widoczne dla modelu COM powinny mieć możliwość utworzenia|
-|[CA1411](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)|Metody rejestracji modelu COM nie powinny być widoczne|
-|[CA1412](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)|Oznacz interfejsy ComSource atrybutem IDispatch|
-|[CA1413](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)|Unikaj niepublicznych pól w typach wartości widocznych w modelu COM|
-|[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Oznacz argumenty typu boolean elementu P/Invoke argumentem MarshalAs|
-|[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Nie używaj priorytetu procesu o wartości Bezczynny|
-|[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Nie używaj czasomierzy, które uniemożliwiają zmiany stanu zasilania|
+|[CA1032](../code-quality/ca1032.md)|Zaimplementuj standardowe konstruktory wyjątków|
+|[CA1054](../code-quality/ca1054.md)|Parametry identyfikatora URI nie powinny być ciągami|
+|[CA1055](../code-quality/ca1055.md)|Wartości zwracane identyfikatora URI nie powinny być ciągami|
+|[CA1056](../code-quality/ca1056.md)|Właściwości identyfikatora URI nie powinny być ciągami|
+|[CA1057](../code-quality/ca1057.md)|Identyfikator URI typu string przeciąża wywołanie przeciążane przez typ System.Uri|
+|[CA1402](../code-quality/ca1402.md)|Unikaj przeciążeń w interfejsach widocznych dla modelu COM|
+|[CA1406](../code-quality/ca1406.md)|Unikaj używania argumentów typu Int64 w klientach w języku Visual Basic 6|
+|[CA1407](../code-quality/ca1407.md)|Unikaj statycznych składowych w typach widocznych dla modelu COM|
+|[CA1408](../code-quality/ca1408.md)|Nie używaj wartości AutoDual elementu ClassInterfaceType|
+|[CA1409](../code-quality/ca1409.md)|Typy widoczne dla modelu COM powinny mieć możliwość utworzenia|
+|[CA1411](../code-quality/ca1411.md)|Metody rejestracji modelu COM nie powinny być widoczne|
+|[CA1412](../code-quality/ca1412.md)|Oznacz interfejsy ComSource atrybutem IDispatch|
+|[CA1413](../code-quality/ca1413.md)|Unikaj niepublicznych pól w typach wartości widocznych w modelu COM|
+|[CA1414](../code-quality/ca1414.md)|Oznacz argumenty typu boolean elementu P/Invoke argumentem MarshalAs|
+|[CA1600](../code-quality/ca1600.md)|Nie używaj priorytetu procesu o wartości Bezczynny|
+|[CA1601](../code-quality/ca1601.md)|Nie używaj czasomierzy, które uniemożliwiają zmiany stanu zasilania|
 |[CA1824](../code-quality/ca1824.md)|Oznaczaj zestawy za pomocą atrybutu NeutralResourcesLanguageAttribute|
 |[CA2001](../code-quality/ca2001.md)|Unikaj wywoływania problematycznych metod|
 |[CA2003](../code-quality/ca2003.md)|Nie traktuj włókien jak wątków|

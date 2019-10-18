@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8f34a8b98433642ab9d5eb087eacac0061ba96c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 4100ee49cf4735a05693ec2a76d7407af8cac7f3
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450336"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72534582"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Podstawowe reguły zasad projektowania dla zarządzanego kodu
 
@@ -25,24 +25,88 @@ W poniższej tabeli opisano wszystkie reguły w zestawie reguł podstawowych wyt
 
 |Reguła|Opis|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Poprawnie deklaruj procedury obsługi zdarzeń|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Oznacz zestawy atrybutem AssemblyVersion|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Przenieś metody P/Invoke do klasy NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Nie ukrywaj metod klasy bazowej|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Poprawnie zaimplementuj interfejs IDisposable|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Unikaj duplikowania akceleratorów|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Punkty wejścia P/Invoke powinny istnieć|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Elementy P/Invoke nie powinny być widoczne|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Metody rejestracji modelu COM powinny mieć swoje odpowiedniki|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Poprawnie zadeklaruj elementy P/Invoke|
+|[CA1000](../code-quality/ca1000.md)|Nie deklaruj statycznych składowych na typach ogólnych|
+|[CA1001](../code-quality/ca1001.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
+|[CA1002](../code-quality/ca1002.md)|Nie uwidaczniaj list ogólnych|
+|[CA1003](../code-quality/ca1003.md)|Użyj ogólnych wystąpień procedury obsługi zdarzeń|
+|[CA1004](../code-quality/ca1004.md)|Metody ogólne powinny podawać parametr typu|
+|[CA1005](../code-quality/ca1005.md)|Unikaj nadmiernego użycia parametrów w typach ogólnych|
+|[CA1006](../code-quality/ca1006.md)|Nie zagnieżdżaj typów ogólnych w podpisach składowych|
+|[CA1007](../code-quality/ca1007.md)|Używaj typów ogólnych tam, gdzie to odpowiednie|
+|[CA1008](../code-quality/ca1008.md)|Typy wyliczeniowe powinny mieć wartość zero|
+|[CA1009](../code-quality/ca1009.md)|Poprawnie deklaruj procedury obsługi zdarzeń|
+|[CA1010](../code-quality/ca1010.md)|Kolekcje powinny implementować interfejs ogólny|
+|[CA1011](../code-quality/ca1011.md)|Rozważ przekazywanie typów podstawowych jako parametrów|
+|[CA1012](../code-quality/ca1012.md)|Typy abstrakcyjne nie powinny mieć konstruktorów|
+|[CA1013](../code-quality/ca1013.md)|Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania|
+|[CA1014](../code-quality/ca1014.md)|Oznacz zestawy atrybutem CLSCompliant|
+|[CA1016](../code-quality/ca1016.md)|Oznacz zestawy atrybutem AssemblyVersion|
+|[CA1017](../code-quality/ca1017.md)|Oznacz zestawy atrybutem ComVisibleAttribute|
+|[CA1018](../code-quality/ca1018.md)|Oznacz atrybuty atrybutem AttributeUsage|
+|[CA1019](../code-quality/ca1019.md)|Zdefiniuj metody dostępu dla argumentów atrybutów|
+|[CA1023](../code-quality/ca1023.md)|Indeksatory nie powinny być wielowymiarowe|
+|[CA1024](../code-quality/ca1024.md)|Używaj właściwości, o ile to możliwe|
+|[CA1025](../code-quality/ca1025.md)|Zastąp powtarzalne argumenty tablicą params|
+|[CA1026](../code-quality/ca1026.md)|Nie należy używać parametrów domyślnych|
+|[CA1027](../code-quality/ca1027.md)|Oznacz typy wyliczeniowe atrybutem Flags|
+|[CA1028](../code-quality/ca1028.md)|Magazyn typu wyliczeniowego powinien być typu Int32|
+|[CA1030](../code-quality/ca1030.md)|Używaj zdarzeń, o ile to możliwe|
+|[CA1031](../code-quality/ca1031.md)|Nie przechwytuj typów wyjątków ogólnych|
+|[CA1032](../code-quality/ca1032.md)|Zaimplementuj standardowe konstruktory wyjątków|
+|[CA1033](../code-quality/ca1033.md)|Metody interfejsu powinny móc zostać wywołane przez typy podrzędne|
+|[CA1034](../code-quality/ca1034.md)|Typy zagnieżdżone nie powinny być widoczne|
+|[CA1035](../code-quality/ca1035.md)|Implementacje interfejsu ICollection mają silnie typizowane składowe|
+|[CA1036](../code-quality/ca1036.md)|Przesłaniaj metody porównywalnych typów|
+|[CA1038](../code-quality/ca1038.md)|Moduły wyliczające powinny być silnie typizowane|
+|[CA1039](../code-quality/ca1039.md)|Listy są silnie typizowane|
+|[CA1041](../code-quality/ca1041.md)|Udostępnij komunikat ObsoleteAttribute|
+|[CA1043](../code-quality/ca1043.md)|Używaj argumentów typu liczba całkowita lub ciąg dla indeksatorów|
+|[CA1044](../code-quality/ca1044.md)|Właściwości nie powinny być tylko do zapisu|
+|[CA1046](../code-quality/ca1046.md)|Nie przeciążaj operatora równości w typach referencyjnych|
+|[CA1047](../code-quality/ca1047.md)|Nie deklaruj chronionych składowych w typach zapieczętowanych|
+|[CA1048](../code-quality/ca1048.md)|Nie deklaruj wirtualnych składowych w typach zapieczętowanych|
+|[CA1049](../code-quality/ca1049.md)|Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji|
+|[CA1050](../code-quality/ca1050.md)|Deklaruj typy w przestrzeniach nazw|
+|[CA1051](../code-quality/ca1051.md)|Nie deklaruj widocznych pól w wystąpieniach|
+|[CA1052](../code-quality/ca1052.md)|Statyczne typy przechowujące powinny być zapieczętowane|
+|[CA1053](../code-quality/ca1053.md)|Statyczne typy przechowujące nie powinny mieć konstruktorów|
+|[CA1054](../code-quality/ca1054.md)|Parametry identyfikatora URI nie powinny być ciągami|
+|[CA1055](../code-quality/ca1055.md)|Wartości zwracane identyfikatora URI nie powinny być ciągami|
+|[CA1056](../code-quality/ca1056.md)|Właściwości identyfikatora URI nie powinny być ciągami|
+|[CA1057](../code-quality/ca1057.md)|Identyfikator URI typu string przeciąża wywołanie przeciążane przez typ System.Uri|
+|[CA1058](../code-quality/ca1058.md)|Typy nie powinny rozszerzać niektórych typów podstawowych|
+|[CA1059](../code-quality/ca1059.md)|Składowe nie powinny ujawniać niektórych typów konkretnych|
+|[CA1060](../code-quality/ca1060.md)|Przenieś metody P/Invoke do klasy NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Nie ukrywaj metod klasy bazowej|
+|[CA1063](../code-quality/ca1063.md)|Poprawnie zaimplementuj interfejs IDisposable|
+|[CA1064](../code-quality/ca1064.md)|Wyjątki powinny być publiczne|
+|[CA1065](../code-quality/ca1065.md)|Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach|
+|[CA1301](../code-quality/ca1301.md)|Unikaj duplikowania akceleratorów|
+|[CA1400](../code-quality/ca1400.md)|Punkty wejścia P/Invoke powinny istnieć|
+|[CA1401](../code-quality/ca1401.md)|Elementy P/Invoke nie powinny być widoczne|
+|[CA1403](../code-quality/ca1403.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|
+|[CA1404](../code-quality/ca1404.md)|Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM|
+|[CA1410](../code-quality/ca1410.md)|Metody rejestracji modelu COM powinny mieć swoje odpowiedniki|
+|[CA1415](../code-quality/ca1415.md)|Poprawnie zadeklaruj elementy P/Invoke|
+|[CA1500](../code-quality/ca1500.md)|Nazwy zmiennych nie powinny być zgodne z nazwami pól|
+|[CA1502](../code-quality/ca1502.md)|Unikaj nadmiernej złożoności|
+|[CA1708](../code-quality/ca1708.md)|Identyfikatory powinny różnić się nie tylko wielkością liter|
+|[CA1716](../code-quality/ca1716.md)|Identyfikatory nie powinny być zgodne ze słowami kluczowymi|
+|[CA1801](../code-quality/ca1801.md)|Dokonaj przeglądu nieużywanych parametrów|
+|[CA1804](../code-quality/ca1804.md)|Usuwaj nieużywane zmienne lokalne|
+|[CA1809](../code-quality/ca1809.md)|Unikaj zbyt wielu zmiennych lokalnych|
+|[CA1810](../code-quality/ca1810.md)|Inicjuj pola statyczne typu referencyjnego śródwierszowo|
+|[CA1811](../code-quality/ca1811.md)|Unikaj niewywołanego kodu prywatnego|
+|[CA1812](../code-quality/ca1812.md)|Unikaj klas wewnętrznych bez wystąpień|
+|[CA1813](../code-quality/ca1813.md)|Unikaj niezapieczętowanych atrybutów|
+|[CA1814](../code-quality/ca1814.md)|Wybieraj tablice nieregularne zamiast wielowymiarowych|
+|[CA1815](../code-quality/ca1815.md)|Przesłaniaj metodę equals i operator równości w typach wartości|
+|[CA1819](../code-quality/ca1819.md)|Właściwości nie powinny zwracać tablic|
+|[CA1820](../code-quality/ca1820.md)|Testuj obecność pustych ciągów przy użyciu długości ciągu|
 |[CA1821](../code-quality/ca1821.md)|Usuwaj puste finalizatory|
+|[CA1822](../code-quality/ca1822.md)|Oznaczaj składowe jako statyczne|
+|[CA1823](../code-quality/ca1823.md)|Unikaj nieużywanych pól prywatnych|
 |[CA1900](../code-quality/ca1900.md)|Pola typu wartości powinny być przenośne|
 |[CA1901](../code-quality/ca1901.md)|Deklaracje metody P/Invoke powinny być przenośne|
 |[CA2002](../code-quality/ca2002.md)|Nie blokuj obiektów o słabej tożsamości|
@@ -70,93 +134,19 @@ W poniższej tabeli opisano wszystkie reguły w zestawie reguł podstawowych wyt
 |[CA2147](../code-quality/ca2147.md)|Metody przezroczyste nie mogą używać asercji zabezpieczeń|
 |[CA2149](../code-quality/ca2149.md)|Metody przezroczyste nie mogą wywoływać kodu natywnego|
 |[CA2200](../code-quality/ca2200.md)|Ponowie zgłoś wyjątek, aby zachować szczegóły stosu|
+|[CA2201](../code-quality/ca2201.md)|Nie zgłaszaj wyjątków o zastrzeżonych typach|
 |[CA2202](../code-quality/ca2202.md)|Nie likwiduj obiektów wielokrotnie|
+|[CA2205](../code-quality/ca2205.md)|Użyj zarządzanych odpowiedników funkcji API Win32|
 |[CA2207](../code-quality/ca2207.md)|Pola statyczne typu wartości inicjuj bezpośrednio|
+|[CA2208](../code-quality/ca2208.md)|Poprawnie twórz wystąpienia wyjątków argumentów|
+|[CA2211](../code-quality/ca2211.md)|Pola niebędące stałymi nie powinny być widoczne|
 |[CA2212](../code-quality/ca2212.md)|Nie oznaczaj składników usługi atrybutem WebMethod|
 |[CA2213](../code-quality/ca2213.md)|Pola możliwe do likwidacji należy likwidować|
 |[CA2214](../code-quality/ca2214.md)|Nie wywołuj w konstruktorach metod, które można przesłaniać|
 |[CA2216](../code-quality/ca2216.md)|Typy możliwe do likwidacji powinny deklarować finalizator|
-|[CA2220](../code-quality/ca2220.md)|Finalizatory powinny wywoływać finalizator klasy bazowej|
-|[CA2229](../code-quality/ca2229.md)|Zaimplementuj konstruktory serializacji|
-|[CA2231](../code-quality/ca2231.md)|Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals|
-|[CA2232](../code-quality/ca2232.md)|Oznacz punkty wejścia modelu Windows Forms atrybutem STAThread|
-|[CA2235](../code-quality/ca2235.md)|Oznacz wszystkie pola nieprzeznaczone do serializacji|
-|[CA2236](../code-quality/ca2236.md)|Wywołuj metody klasy bazowej dla typów ISerializable|
-|[CA2237](../code-quality/ca2237.md)|Oznacz typy ISerializable atrybutem SerializableAttribute|
-|[CA2238](../code-quality/ca2238.md)|Poprawnie implementuj metody serializacji|
-|[CA2240](../code-quality/ca2240.md)|Poprawnie zaimplementuj interfejs ISerializable|
-|[CA2241](../code-quality/ca2241.md)|Podaj poprawne argumenty metod formatowania|
-|[CA2242](../code-quality/ca2242.md)|Poprawnie testuj nie-liczby (NaN)|
-|[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|Nie deklaruj statycznych składowych na typach ogólnych|
-|[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|Nie uwidaczniaj list ogólnych|
-|[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|Użyj ogólnych wystąpień procedury obsługi zdarzeń|
-|[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Metody ogólne powinny podawać parametr typu|
-|[CA1005](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|Unikaj nadmiernego użycia parametrów w typach ogólnych|
-|[CA1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|Nie zagnieżdżaj typów ogólnych w podpisach składowych|
-|[CA1007](../code-quality/ca1007-use-generics-where-appropriate.md)|Używaj typów ogólnych tam, gdzie to odpowiednie|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Typy wyliczeniowe powinny mieć wartość zero|
-|[CA1010](../code-quality/ca1010-collections-should-implement-generic-interface.md)|Kolekcje powinny implementować interfejs ogólny|
-|[CA1011](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)|Rozważ przekazywanie typów podstawowych jako parametrów|
-|[CA1012](../code-quality/ca1012-abstract-types-should-not-have-constructors.md)|Typy abstrakcyjne nie powinny mieć konstruktorów|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania|
-|[CA1014](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)|Oznacz zestawy atrybutem CLSCompliant|
-|[CA1017](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|Oznacz zestawy atrybutem ComVisibleAttribute|
-|[CA1018](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|Oznacz atrybuty atrybutem AttributeUsage|
-|[CA1019](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|Zdefiniuj metody dostępu dla argumentów atrybutów|
-|[CA1023](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)|Indeksatory nie powinny być wielowymiarowe|
-|[CA1024](../code-quality/ca1024-use-properties-where-appropriate.md)|Używaj właściwości, o ile to możliwe|
-|[CA1025](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)|Zastąp powtarzalne argumenty tablicą params|
-|[CA1026](../code-quality/ca1026-default-parameters-should-not-be-used.md)|Nie należy używać parametrów domyślnych|
-|[CA1027](../code-quality/ca1027-mark-enums-with-flagsattribute.md)|Oznacz typy wyliczeniowe atrybutem Flags|
-|[CA1028](../code-quality/ca1028-enum-storage-should-be-int32.md)|Magazyn typu wyliczeniowego powinien być typu Int32|
-|[CA1030](../code-quality/ca1030-use-events-where-appropriate.md)|Używaj zdarzeń, o ile to możliwe|
-|[CA1031](../code-quality/ca1031-do-not-catch-general-exception-types.md)|Nie przechwytuj typów wyjątków ogólnych|
-|[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|Zaimplementuj standardowe konstruktory wyjątków|
-|[CA1034](../code-quality/ca1034-nested-types-should-not-be-visible.md)|Typy zagnieżdżone nie powinny być widoczne|
-|[CA1035](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)|Implementacje interfejsu ICollection mają silnie typizowane składowe|
-|[CA1036](../code-quality/ca1036-override-methods-on-comparable-types.md)|Przesłaniaj metody porównywalnych typów|
-|[CA1038](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)|Moduły wyliczające powinny być silnie typizowane|
-|[CA1039](../code-quality/ca1039-lists-are-strongly-typed.md)|Listy są silnie typizowane|
-|[CA1041](../code-quality/ca1041-provide-obsoleteattribute-message.md)|Udostępnij komunikat ObsoleteAttribute|
-|[CA1043](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)|Używaj argumentów typu liczba całkowita lub ciąg dla indeksatorów|
-|[CA1044](../code-quality/ca1044-properties-should-not-be-write-only.md)|Właściwości nie powinny być tylko do zapisu|
-|[CA1046](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)|Nie przeciążaj operatora równości w typach referencyjnych|
-|[CA1047](../code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md)|Nie deklaruj chronionych składowych w typach zapieczętowanych|
-|[CA1048](../code-quality/ca1048-do-not-declare-virtual-members-in-sealed-types.md)|Nie deklaruj wirtualnych składowych w typach zapieczętowanych|
-|[CA1050](../code-quality/ca1050-declare-types-in-namespaces.md)|Deklaruj typy w przestrzeniach nazw|
-|[CA1051](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)|Nie deklaruj widocznych pól w wystąpieniach|
-|[CA1052](../code-quality/ca1052-static-holder-types-should-be-sealed.md)|Statyczne typy przechowujące powinny być zapieczętowane|
-|[CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|Statyczne typy przechowujące nie powinny mieć konstruktorów|
-|[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|Parametry identyfikatora URI nie powinny być ciągami|
-|[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|Wartości zwracane identyfikatora URI nie powinny być ciągami|
-|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|Właściwości identyfikatora URI nie powinny być ciągami|
-|[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Identyfikator URI typu string przeciąża wywołanie przeciążane przez typ System.Uri|
-|[CA1058](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|Typy nie powinny rozszerzać niektórych typów podstawowych|
-|[CA1059](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|Składowe nie powinny ujawniać niektórych typów konkretnych|
-|[CA1064](../code-quality/ca1064-exceptions-should-be-public.md)|Wyjątki powinny być publiczne|
-|[CA1500](../code-quality/ca1500-variable-names-should-not-match-field-names.md)|Nazwy zmiennych nie powinny być zgodne z nazwami pól|
-|[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|Unikaj nadmiernej złożoności|
-|[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|Identyfikatory powinny różnić się nie tylko wielkością liter|
-|[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Identyfikatory nie powinny być zgodne ze słowami kluczowymi|
-|[CA1801](../code-quality/ca1801.md)|Dokonaj przeglądu nieużywanych parametrów|
-|[CA1804](../code-quality/ca1804.md)|Usuwaj nieużywane zmienne lokalne|
-|[CA1809](../code-quality/ca1809.md)|Unikaj zbyt wielu zmiennych lokalnych|
-|[CA1810](../code-quality/ca1810.md)|Inicjuj pola statyczne typu referencyjnego śródwierszowo|
-|[CA1811](../code-quality/ca1811.md)|Unikaj niewywołanego kodu prywatnego|
-|[CA1812](../code-quality/ca1812.md)|Unikaj klas wewnętrznych bez wystąpień|
-|[CA1813](../code-quality/ca1813.md)|Unikaj niezapieczętowanych atrybutów|
-|[CA1814](../code-quality/ca1814.md)|Wybieraj tablice nieregularne zamiast wielowymiarowych|
-|[CA1815](../code-quality/ca1815.md)|Przesłaniaj metodę equals i operator równości w typach wartości|
-|[CA1819](../code-quality/ca1819.md)|Właściwości nie powinny zwracać tablic|
-|[CA1820](../code-quality/ca1820.md)|Testuj obecność pustych ciągów przy użyciu długości ciągu|
-|[CA1822](../code-quality/ca1822.md)|Oznaczaj składowe jako statyczne|
-|[CA1823](../code-quality/ca1823.md)|Unikaj nieużywanych pól prywatnych|
-|[CA2201](../code-quality/ca2201.md)|Nie zgłaszaj wyjątków o zastrzeżonych typach|
-|[CA2205](../code-quality/ca2205.md)|Użyj zarządzanych odpowiedników funkcji API Win32|
-|[CA2208](../code-quality/ca2208.md)|Poprawnie twórz wystąpienia wyjątków argumentów|
-|[CA2211](../code-quality/ca2211.md)|Pola niebędące stałymi nie powinny być widoczne|
 |[CA2217](../code-quality/ca2217.md)|Nie oznaczaj typów wyliczeniowych atrybutem Flags|
 |[CA2219](../code-quality/ca2219.md)|Nie zgłaszaj wyjątków w klauzulach wyjątków|
+|[CA2220](../code-quality/ca2220.md)|Finalizatory powinny wywoływać finalizator klasy bazowej|
 |[CA2221](../code-quality/ca2221.md)|Finalizatory powinny być chronione|
 |[CA2222](../code-quality/ca2222.md)|Nie obniżaj dziedziczonej widoczności składowych|
 |[CA2223](../code-quality/ca2223.md)|Składowe powinny różnić się nie tylko zwracanym typem|
@@ -164,6 +154,16 @@ W poniższej tabeli opisano wszystkie reguły w zestawie reguł podstawowych wyt
 |[CA2225](../code-quality/ca2225.md)|Przeciążenia operatorów mają nazwane elementy alternatywne|
 |[CA2226](../code-quality/ca2226.md)|Operatory powinny mieć symetryczne przeciążenia|
 |[CA2227](../code-quality/ca2227.md)|Właściwości kolekcji powinny być tylko do odczytu|
+|[CA2229](../code-quality/ca2229.md)|Zaimplementuj konstruktory serializacji|
 |[CA2230](../code-quality/ca2230.md)|Użyj elementu params dla argumentów zmiennych|
+|[CA2231](../code-quality/ca2231.md)|Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals|
+|[CA2232](../code-quality/ca2232.md)|Oznacz punkty wejścia modelu Windows Forms atrybutem STAThread|
 |[CA2234](../code-quality/ca2234.md)|Przekazuj obiekty System.Uri zamiast ciągów|
+|[CA2235](../code-quality/ca2235.md)|Oznacz wszystkie pola nieprzeznaczone do serializacji|
+|[CA2236](../code-quality/ca2236.md)|Wywołuj metody klasy bazowej dla typów ISerializable|
+|[CA2237](../code-quality/ca2237.md)|Oznacz typy ISerializable atrybutem SerializableAttribute|
+|[CA2238](../code-quality/ca2238.md)|Poprawnie implementuj metody serializacji|
 |[CA2239](../code-quality/ca2239.md)|Udostępnij metody deserializacji dla pól opcjonalnych|
+|[CA2240](../code-quality/ca2240.md)|Poprawnie zaimplementuj interfejs ISerializable|
+|[CA2241](../code-quality/ca2241.md)|Podaj poprawne argumenty metod formatowania|
+|[CA2242](../code-quality/ca2242.md)|Poprawnie testuj nie-liczby (NaN)|

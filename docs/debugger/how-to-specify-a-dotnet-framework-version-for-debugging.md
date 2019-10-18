@@ -1,5 +1,5 @@
 ---
-title: Określanie wersji programu .NET Framework do debugowania | Dokumentacja firmy Microsoft
+title: Określ wersję .NET Framework do debugowania | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,52 +17,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: d612c3f0a542fe30e9241b43c1df5d82a09832fd
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747473"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535975"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Instrukcje: Określanie wersji programu .NET Framework do debugowania (C#, Visual Basic F#)
+# <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Określ starszą wersję .NET Framework na potrzeby debugowaniaC#(, Visual Basic F#,)
 
-Debuger programu Visual Studio obsługuje debugowanie starszych wersji programu Microsoft .NET Framework, a także bieżącej wersji. W przypadku uruchomienia aplikacji w programie Visual Studio, debuger zawsze można zidentyfikować poprawną wersję programu .NET Framework dla aplikacji, którą debugujesz. Jednak jeśli aplikacja jest już uruchomiona i możesz rozpocząć debugowanie za pomocą **dołączyć do**, debuger może nie zawsze można zidentyfikować starszej wersji programu .NET Framework. Jeśli tak się stanie, zostanie wyświetlony komunikat o błędzie informujący, że,
+Debuger programu Visual Studio obsługuje debugowanie starszych wersji platformy Microsoft .NET, a także bieżącą wersję. Po uruchomieniu aplikacji z programu Visual Studio debuger zawsze może zidentyfikować poprawną wersję .NET Framework dla debugowanej aplikacji. Jeśli jednak aplikacja jest już uruchomiona i rozpocznie debugowanie przy użyciu funkcji **Dołącz do**, debuger może nie zawsze identyfikować starszej wersji .NET Framework. W takim przypadku zostanie wyświetlony komunikat o błędzie z informacją,
 
 ``` cmd
 The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
-W rzadkich przypadkach, gdy zostanie wyświetlony ten błąd można ustawić klucz rejestru, aby wskazać do debugera w wyborze wersji do użycia.
+W rzadkich przypadkach, gdy ten błąd pojawia się, można ustawić klucz rejestru, aby wskazać debuger, którego wersja ma używać.
 
-### <a name="to-specify-a-net-framework-version-for-debugging"></a>Aby określić wersji programu .NET Framework do debugowania
+### <a name="to-specify-a-net-framework-version-for-debugging"></a>Aby określić wersję .NET Framework do debugowania
 
-1. Szukaj w katalogu Windows\Microsoft.NET\Framework można znaleźć wersji .NET Framework zainstalowanej na komputerze. Numery wersji wyglądać mniej więcej tak:
+1. W katalogu Windows\Microsoft.NET\Framework Znajdź wersje .NET Framework zainstalowanych na maszynie. Numery wersji wyglądają następująco:
 
     `V1.1.4322`
 
-    Określ liczbę poprawnej wersji i zanotuj ją.
+    Zidentyfikuj poprawny numer wersji i zanotuj go.
 
-2. Rozpocznij **Edytora rejestru** (regedit).
+2. Uruchom **Edytor rejestru** (regedit).
 
-3. W **Edytora rejestru**, otwórz folder, w kluczu HKEY_LOCAL_MACHINE.
+3. W **Edytorze rejestru**Otwórz folder HKEY_LOCAL_MACHINE.
 
-4. Przejdź do: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
+4. Przejdź do: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine \\ {449EC4CC-30D2-4032-9256-EE18EB41B62B}
 
-    Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine i kliknij **nowy klucz**. Nazwij nowy klucz `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
+    Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy pozycję HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine, a następnie kliknij pozycję **nowy klucz**. Nadaj nazwę nowemu kluczowi `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
 
-5. Po przejściu do {449EC4CC-30D2-4032-9256-EE18EB41B62B}, Szukaj w **nazwa** kolumny i Znajdź klucz CLRVersionForDebugging.
+5. Po przejściu do programu {449EC4CC-30D2-4032-9256-EE18EB41B62B} zajrzyj do kolumny **name (nazwa** ) i Znajdź klucz CLRVersionForDebugging.
 
-   1. Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy {449EC4CC-30D2-4032-9256-EE18EB41B62B} i kliknij przycisk **nową wartość ciągu**. Kliknij prawym przyciskiem myszy nową wartość ciągu, kliknij przycisk **Zmień nazwę**i wpisz `CLRVersionForDebugging`.
+   1. Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy pozycję {449EC4CC-30D2-4032-9256-EE18EB41B62B}, a następnie kliknij pozycję **Nowa wartość ciągu**. Następnie kliknij prawym przyciskiem myszy nową wartość ciągu, kliknij polecenie **Zmień nazwę**i wpisz `CLRVersionForDebugging`.
 
-6. Kliknij dwukrotnie **CLRVersionForDebugging**.
+6. Kliknij dwukrotnie pozycję **CLRVersionForDebugging**.
 
-7. W **Edytowanie ciągu** wpisz numer wersji .NET Framework w **wartość** pole. Na przykład: V1.1.4322
+7. W polu **Edytuj ciąg** wpisz numer wersji .NET Framework w polu **wartość** . Na przykład: V 1.1.4322
 
 8. Kliknij przycisk **OK**.
 
-9. Zamknij **Edytora rejestru**.
+9. Zamknij **Edytor rejestru**.
 
-     Jeśli nadal otrzymujesz komunikat o błędzie podczas uruchamiania debugowania, upewnij się, że wprowadzony numer wersji, który jest poprawnie w rejestrze. Sprawdź także, że używasz wersji programu .NET Framework obsługiwane przez program Visual Studio. Debuger jest zgodny z bieżącen wersji .NET Framework i poprzednich wersji, ale może nie być zgodny wprzód z przyszłych wersji.
+     Jeśli po rozpoczęciu debugowania nadal pojawia się komunikat o błędzie, sprawdź, czy w rejestrze wprowadzono numer wersji. Sprawdź również, czy używasz wersji .NET Framework obsługiwanej przez program Visual Studio. Debuger jest zgodny z bieżącą wersją .NET Framework i poprzednimi wersjami, ale może nie być zgodny z przyszłymi wersjami.
 
 ## <a name="see-also"></a>Zobacz też
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

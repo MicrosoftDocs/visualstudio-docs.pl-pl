@@ -1,90 +1,58 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Visual Studio | JavaScript and TypeScript
+### YamlMime:Landing
+title: Samouczki programu Visual Studio | JavaScript i TypeScript
+summary: Tworzenie aplikacji JavaScript i TypeScript przy użyciu programu Visual Studio
 metadata:
-  title: JavaScript i TypeScript programowania za pomocą programu Visual Studio | Dokumentacja firmy Microsoft
-  meta.description: Tutorials and conceptual articles about developing JavaScript and TypeScript apps with Visual Studio.
-  author: mikejo5000
-  manager: jillfra
-  ms.prod: visual-studio-windows
-  ms.technology: vs-javascript
+  title: JavaScript i TypeScript w programie Visual Studio
+  description: Dowiedz się, jak tworzyć aplikacje JavaScript i TypeScript przy użyciu programu Visual Studio.
   ms.topic: landing-page
-  ms.date: 01/15/2019
+  author: mikejo5000
   ms.author: mikejo
-  dev_langs:
-    - JavaScript
-    - TypeScript
-sections:
-  - title: Rozpoczynanie pracy z programem Visual Studio
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Instalowanie programu Visual Studio
-          - href: ../javascript/quickstart-ide-orientation-js.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: Przewodnik po środowisku IDE programu Visual Studio
-  - title: Samouczki
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: tutorial-nodejs.md
-            html: <p>Tworzenie aplikacji sieci web przy użyciu środowiska Node.js i Express</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_nodejs.svg'
-          - href: tutorial-nodejs-with-react-and-jsx.md
-            html: <p>Tworzenie aplikacji sieci web przy użyciu środowiska Node.js i React</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_React.svg'
-          - href: quickstart-vuejs-with-nodejs.md
-            html: <p>Tworzenie aplikacji sieci web przy użyciu środowiska Node.js i Vue.js</p>
-            image:
-              src: ../javascript/media/logo-vuejs.png
-          - href: publish-nodejs-app-azure.md
-            html: <p>Publikowanie aplikacji Node.js w usłudze App Service w systemie Linux</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_linux-color.svg'
-  - title: Tworzenie aplikacji
-    items:
-      - type: paragraph
-        text: 'Dowiedz się, jak używać programu Visual Studio dla zadań programistycznych.'
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: write-and-edit-code.md
-            html: <p>Pisanie i edytowanie kodu</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: nodejs-interactive-repl.md
-            html: <p>Używanie interaktywnej pętli REPL środowiska Node.js</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-          - href: npm-package-management.md
-            html: <p>Zarządzanie pakietami npm</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_npm.svg'
-          - href: debug-nodejs.md
-            html: <p>Debugowanie kodu</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-          - href: develop-javascript-code-without-solutions-projects.md
-            html: <p>Tworzenie kodu bez projektów ani rozwiązań</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: unit-testing-javascript-with-visual-studio.md
-            html: <p>Pisanie i Uruchamianie testów jednostkowych</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_unit-testing.svg'
+  manager: jillfra
+  ms.date: 10/15/2019
+  ms.openlocfilehash: 1bdf2530d8e6513f57b515680410b9111cec87c6
+  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72517117"
+landingContent:
+- title: Wprowadzenie
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: JavaScript i TypeScript w programie Visual Studio
+      url: javascript-in-vs-2019.md
+  - linkListType: how-to-guide
+    links:
+    - text: Instalowanie programu Visual Studio
+      url: ../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: Rozpocznij Przewodnik
+      url: quickstart-ide-orientation-js.md
+- title: Tworzenie aplikacji JavaScript i TypeScript
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Tworzenie aplikacji sieci Web przy użyciu środowiska Node. js i języka Express
+      url: tutorial-nodejs.md
+    - text: Tworzenie aplikacji sieci Web przy użyciu środowiska Node. js i reagowanie na nie
+      url: tutorial-nodejs-with-react-and-jsx.md
+    - text: Tworzenie aplikacji sieci Web przy użyciu środowiska Node. js i Vue. js
+      url: quickstart-vuejs-with-nodejs.md
+- title: Poznawanie programu Visual Studio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Pisanie i edytowanie kodu
+      url: write-and-edit-code.md
+    - text: Zarządzanie pakietami npm
+      url: npm-package-management.md
+    - text: Używanie interaktywnej pętli REPL środowiska Node.js
+      url: nodejs-interactive-repl.md
+    - text: Debugowanie kodu
+      url: debug-nodejs.md
+    - text: Opracowywanie kodu bez projektów i rozwiązań
+      url: develop-javascript-code-without-solutions-projects.md
+    - text: Zapisz i uruchom testy jednostkowe
+      url: unit-testing-javascript-with-visual-studio.md
