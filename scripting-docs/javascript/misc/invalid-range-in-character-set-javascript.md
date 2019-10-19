@@ -1,5 +1,5 @@
 ---
-title: Nieprawidłowy zakres w znak zestawu (JavaScript) | Dokumentacja firmy Microsoft
+title: Nieprawidłowy zakres w zestawie znaków (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29f28f0ceeb6bd1bf0a8f28438afd803d3a9a9ac
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007051"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576631"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Nieprawidłowy zakres w zestawie znaków (JavaScript)
-Próbowano utworzyć wyrażenia regularnego z ustawionym nieprawidłowy znak. Zestawy znaków musi należeć do zakresu od pojedynczych znaków, np. a-z lub 0-9 nie może zawierać klasy znaków, takich jak \w w zestawie znaków. Pierwszy znak w zakresie również musi występować przed drugim znakiem z zakresu. Na przykład:  
+Podjęto próbę utworzenia wyrażenia regularnego z nieprawidłowym zakresem zestawu znaków. Zestawy znaków muszą mieć zakres tylko z pojedynczych znaków, takich jak a-z lub 0-9; nie można dołączać klas znaków, takich jak \w, w zestawie znaków. Pierwszy znak w zakresie musi również występować przed drugim znakiem z zakresu. Na przykład:  
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  
@@ -31,8 +31,8 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Aby utworzyć zestaw znaków z wyrażenia regularnego i upewnij się, że znajdują się w odpowiedniej kolejności, należy użyć tylko pojedyncze znaki.  
+- Używaj tylko pojedynczych znaków do redagowania zestawu znaków wyrażenia regularnego i upewnij się, że znajdują się one w odpowiedniej kolejności.  
   
-## <a name="see-also"></a>Zobacz też  
- [Obiekt będący wyrażeniem regularnym](../../javascript/reference/regular-expression-object-javascript.md)   
- [Składnia wyrażeń regularnych (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [obiektu wyrażenia regularnego](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Składnia wyrażenia regularnego (JavaScript)](https://msdn.microsoft.com/library/1400241x)

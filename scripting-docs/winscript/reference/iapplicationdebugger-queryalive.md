@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::QueryAlive | Dokumentacja firmy Microsoft
+title: 'IApplicationDebugger:: QueryAlive | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b4c455305116863a4a8ad16ff21cd7554a36239
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 867d00a4ef42aa8759496540edc1937fc6f2a0a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991180"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577825"
 ---
 # <a name="iapplicationdebuggerqueryalive"></a>IApplicationDebugger::QueryAlive
-Wskazuje, czy debuger jest elastyczny.  
+Wskazuje, czy debuger jest odpowiedzią.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,16 +37,16 @@ HRESULT QueryAlive();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wskazuje, czy debuger jest elastyczny. Implementacje tej metody zawsze powinna zwrócić `S_OK`.  
+ Ta metoda wskazuje, czy debuger jest odpowiedzią. Implementacje tej metody powinny zawsze zwracać `S_OK`.  
   
- Jeśli proces debugera zostaje nieoczekiwanie zamknięty, COM zwraca błąd z serwera proxy kierujące do wywołania tej metody.  
+ Jeśli proces debugera nieoczekiwanie zakończy działanie, COM zwróci błąd z kierujący serwer proxy dla wywołań tej metody.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IApplicationDebugger, interfejs](../../winscript/reference/iapplicationdebugger-interface.md)

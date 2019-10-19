@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::GetExtendedPropertyInfo | Dokumentacja firmy Microsoft
+title: 'IDebugExtendedProperty:: GetExtendedPropertyInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89067720b6643c8c187e6340fb529989f2439933
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77167c46e02bcf2bf5d3ce5836ad5de103176e93
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946105"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576376"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
-Pobiera rozszerzone informacje dotyczące właściwości rozszerzonej, czyli więcej informacji, niż jest to prostsze `IDebugProperty`.  
+Pobiera rozszerzone informacje dla właściwości rozszerzonej, która jest więcej informacji niż prostsze `IDebugProperty`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,18 +39,18 @@ HRESULT GetExtendedPropertyInfo(
   
 #### <a name="parameters"></a>Parametry  
  `dwFieldSpec`  
- [in] Określa stałe EX_DBGPROP_INFO_FLAGS określające pola do wypełniania w `ExtendedDebugPropertyInfo` struktury.  
+ podczas Określa stałe EX_DBGPROP_INFO_FLAGS, które określają pola, które mają zostać wypełnione w strukturze `ExtendedDebugPropertyInfo`.  
   
  `nRadix`  
- [in] Podstawy do użycia w interpretacji wszelkie dane liczbowe.  
+ podczas Podstawy do użycia w interpretacji wszelkich informacji numerycznych.  
   
  `pExtendedPropertyInfo`  
- [out] Zwraca `ExtendedDebugPropertyInfo` struktury, który opisuje właściwości.  
+ określoną Zwraca strukturę `ExtendedDebugPropertyInfo` opisującą właściwość.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
+ Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugExtendedProperty   interfejsu](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
  [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

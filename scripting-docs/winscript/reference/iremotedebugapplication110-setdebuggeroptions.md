@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::SetDebuggerOptions | Microsoft Docs
+title: 'IRemoteDebugApplication110:: SetDebuggerOptions | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a61eabb307bda39fd871e8f5f4f7198256f0929e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e7168a4ef8ec70368c0ff691ba1f721275f9d65d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383348"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577423"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
-Wywołuje się, aby zaktualizować opcje debugera. Ta metoda powinna być wywoływana po [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) metoda automatycznie powraca do domyślnych opcji. Domyślne opcje 0 (SDO_NONE).  
+Wywołuje się, by zaktualizować opcje debugera. Ta metoda powinna być wywoływana po [IRemoteDebugApplication:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). Metoda [IRemoteDebugApplication::D isconnectdebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) automatycznie przywraca domyślne opcje. Opcje domyślne to 0 (SDO_NONE).  
   
 > [!IMPORTANT]
-> [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) jest implementowany przez PDM v 11.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,11 +34,11 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
   
 #### <a name="parameters"></a>Parametry  
  `mask`  
- [Wyliczenie SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) maski.  
+ Maska [wyliczenia SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) .  
   
  `value`  
- [Wyliczenie SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) wartość.  
+ Wartość [wyliczenia SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) .  
   
-## <a name="see-also"></a>Zobacz też  
- [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IRemoteDebugApplication   interfejsu](../../winscript/reference/iremotedebugapplication-interface.md)  
  [IRemoteDebugApplication110, interfejs](../../winscript/reference/iremotedebugapplication110-interface.md)

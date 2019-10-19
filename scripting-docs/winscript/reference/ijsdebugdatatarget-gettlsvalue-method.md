@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::GetTlsValue, metoda | Dokumentacja firmy Microsoft
+title: 'IJsDebugDataTarget:: GetTLSValue — — Metoda | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 458aaab05f274983fdaf69c6e702502974665403
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf9acf370656d5310a03d68ed74e10671a0bc2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582813"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577606"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>IJsDebugDataTarget::GetTlsValue — Metoda
-Dla debugowanego wątku pobiera wartość w gnieździe magazynu lokalnego (TLS) wątku dla określonego indeksu TLS.  
+Dla debugowanego wątku Pobiera wartość w gnieździe lokalnego magazynu wątków (TLS) dla określonego indeksu protokołu TLS.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,21 +37,21 @@ HRESULT GetTlsValue(
   
 #### <a name="parameters"></a>Parametry  
  `threadId`  
- [in] Wątek działający w procesie docelowym do odczytu.  
+ podczas Wątek działający w procesie docelowym, z którego ma zostać odczytany.  
   
  `tlsIndex`  
- [in] Indeks TLS, na który została przydzielony podczas procesu docelowego wywołanego przez funkcję TlsAlloc.  
+ podczas Indeks protokołu TLS, który został przydzielony podczas procesu docelowego o nazwie funkcja funkcja TlsAlloc.  
   
  `pValue`  
- [out] Wartość wskaźnika wielkości, która została zapisana w gnieździe TLS wątku. Jeśli wątek docelowy jest 32-bitowy, górne 32 bity tej wartości będą równe zeru.  
+ określoną Wartość wskaźnika, która była przechowywana w gnieździe TLS wątku. Jeśli wątek docelowy jest 32-bitowy, górne 32 bity tej wartości będą równe zero.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Każdy wątek procesu ma własne gniazdo dla każdego indeksu TLS.  
+ Każdy wątek procesu ma własne miejsce dla każdego indeksu protokołu TLS.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)

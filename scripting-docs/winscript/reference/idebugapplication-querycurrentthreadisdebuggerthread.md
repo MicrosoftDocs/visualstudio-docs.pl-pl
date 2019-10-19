@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::QueryCurrentThreadIsDebuggerThread | Dokumentacja firmy Microsoft
+title: 'IDebugApplication:: QueryCurrentThreadIsDebuggerThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ed53bcdb5e0d613a757c0c60f4791b0c59e3476
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f70cde752506919d90bf963d010ebfc7abf5e88
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990817"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577217"
 ---
 # <a name="idebugapplicationquerycurrentthreadisdebuggerthread"></a>IDebugApplication::QueryCurrentThreadIsDebuggerThread
-Określa, czy bieżący wątek uruchomionego wątku debugera.  
+Określa, czy bieżący uruchomiony wątek jest wątkiem debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,15 +37,15 @@ HRESULT QueryCurrentThreadIsDebuggerThread();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`S_OK`|Wykonanie metody powiodło się i bieżący wątek uruchomione jest debugera wątku.|  
-|`S_FALSE`|Bieżący uruchomionego wątku nie jest wątek debugera.|  
+|`S_OK`|Metoda powiodła się, a bieżący uruchomiony wątek jest wątkiem debugera.|  
+|`S_FALSE`|Bieżący uruchomiony wątek nie jest wątkiem debugera.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda określa, czy bieżący wątek uruchomionego wątku debugera.  
+ Ta metoda określa, czy bieżący uruchomiony wątek jest wątkiem debugera.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

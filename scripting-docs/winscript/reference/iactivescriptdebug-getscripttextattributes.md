@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::GetScriptTextAttributes | Dokumentacja firmy Microsoft
+title: 'IActiveScriptDebug:: GetScriptTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faec7cf65bed39a038c5ab7cc09d9908063a2c63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57bd466965f6431a1418df1aa56cf6a7bbbc78cc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009548"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576929"
 ---
 # <a name="iactivescriptdebuggetscripttextattributes"></a>IActiveScriptDebug::GetScriptTextAttributes
-Zwraca atrybuty tekstu dla dowolnego bloku tekst skryptu.  
+Zwraca atrybuty tekstu dla dowolnego bloku tekstu skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,41 +41,41 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `pstrCode`  
- [in] Tekst bloku skryptu. Ten ciąg nie muszą być zakończone znakiem null.  
+ podczas Tekst bloku skryptu. Ten ciąg nie może być zakończony znakiem null.  
   
  `uNumCodeChars`  
- [in] Liczba znaków w tekście bloku skryptu.  
+ podczas Liczba znaków w tekście bloku skryptu.  
   
  `pstrDelimiter`  
- [in] Adres ogranicznika końcowego elementu skrypt bloku. Gdy `pstrCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika, takiego jak dwa pojedyncze cudzysłowy ("), aby wykrywać koniec bloku skryptu. Ten parametr określa ogranicznik używany przez hosta, dzięki czemu silnik wykonywania skryptów zapewnić pierwotne przetwarzanie warunkowe (na przykład, zastępując pojedynczy znak cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użytku w roli ogranicznika). Dokładnie jak (i czy) używa aparatu skryptów, te informacje zależy od silnika wykonywania skryptów. Ustaw ten parametr na wartość NULL, jeśli host nie korzystał z ogranicznika do oznaczenia końca bloku skryptu.  
+ podczas Adres ogranicznika bloku końca skryptu. Gdy `pstrCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika, takiego jak dwa znaki pojedynczego cudzysłowu (' '), w celu wykrycia końca bloku skryptu. Ten parametr określa ogranicznik używany przez hosta, który umożliwia aparatowi obsługi skryptów dostarczenie pewnych warunkowego przetwarzania wstępnego (na przykład zastępowanie pojedynczego cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użycia jako ogranicznika). Dokładnie tak, jak (i jeśli) aparat skryptów używa tych informacji, zależy od aparatu skryptów. Ustaw ten parametr na wartość NULL, Jeśli host nie używał ogranicznika do oznaczenia końca bloku skryptu.  
   
  `dwFlags`  
- [in] Flagi skojarzone z bloku skryptu. Może być kombinacją tych wartości:  
+ podczas Flagi skojarzone z blokiem skryptu. Może być kombinacją następujących wartości:  
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Wskazuje, że operatory kropka i identyfikatory powinny identyfikowany za pomocą flagi SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP, odpowiednio.|  
-|GETATTRFLAG_THIS|0x0100|Wskazuje, że identyfikator dla bieżącego obiektu powinny zostać określone z flagą SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Wskazuje, czy ciąg tekstu zawartości i komentarz powinny zostać określone z flagą SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Wskazuje, że identyfikatory i operatory kropek powinny być identyfikowane odpowiednio flagami SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRFLAG_THIS|0x0100|Wskazuje, że identyfikator dla bieżącego obiektu powinien być zidentyfikowany przy użyciu flagi SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Wskazuje, że zawartość ciągu i tekst komentarza powinny być identyfikowane przy użyciu flagi SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [out w] Bufor do przechowywania atrybutów zwracane.  
+ [in. out] Bufor zawierający zwrócone atrybuty.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Hosta inteligentnego, który implementuje `IDebugDocumentText` interfejsu ta metoda umożliwia delegowanie wywołań `IDebugDocumentText::GetText` metody.  
+ Inteligentny host implementujący interfejs `IDebugDocumentText` może używać tej metody do delegowania wywołań do metody `IDebugDocumentText::GetText`.  
   
- Ta metoda Bloki skryptu; `GetScriptletTextAttributes` metoda jest przeznaczona dla skryptlety.  
+ Ta metoda dla bloków skryptu; Metoda `GetScriptletTextAttributes` jest dla skryptlety.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)   
- [IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
- [Interfejs IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)   
- [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptDebug   interfejsu](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [IActiveScriptDebug:: GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)    
+ [IDebugDocumentText   interfejsu](../../winscript/reference/idebugdocumenttext-interface.md)  
+ [IDebugDocumentText:: gettext](../../winscript/reference/idebugdocumenttext-gettext.md)    
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

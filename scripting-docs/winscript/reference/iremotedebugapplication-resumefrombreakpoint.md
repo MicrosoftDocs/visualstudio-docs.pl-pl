@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Dokumentacja firmy Microsoft
+title: 'IRemoteDebugApplication:: ResumeFromBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5844381188cb03c99ab0a44ed9b9e0fdbab67e6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fead9c14efbe73bd006a5ff3e1cfb10ad40404b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944172"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577460"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
-Nadal aplikację, która jest obecnie dostępna w punkcie przerwania.  
+Kontynuuje aplikację, która jest obecnie w punkcie przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,25 +39,25 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Parametry  
  `prptFocus`  
- [in] Do przechodzenia tryby, wątek, który ma wpływ tryb przechodzenia krok po kroku.  
+ podczas W przypadku trybów taktowania wątek, w którym ma wpływ tryb taktowania.  
   
  `bra`  
- [in] Akcja do wykonania po wznowieniu aplikacji.  
+ podczas Akcja, która ma zostać podjęta po wznowieniu działania aplikacji.  
   
  `era`  
- [in] Akcja do wykonania w przypadku gdy aplikacja jest zatrzymana z powodu błędu.  
+ podczas Akcja, która ma zostać podjęta w przypadku, gdy aplikacja została zatrzymana z powodu błędu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda nadal aplikację, która jest obecnie dostępna w punkcie przerwania.  
+ Ta metoda kontynuuje aplikację, która jest obecnie w punkcie przerwania.  
   
-## <a name="see-also"></a>Zobacz też  
- [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)   
- [Wyliczenie BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IRemoteDebugApplication   interfejsu](../../winscript/reference/iremotedebugapplication-interface.md)  
+ @No__t_1 [Wyliczenie BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [ERRORRESUMEACTION, wyliczenie](../../winscript/reference/errorresumeaction-enumeration.md)

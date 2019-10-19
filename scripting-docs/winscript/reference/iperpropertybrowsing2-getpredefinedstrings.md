@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetPredefinedStrings | Dokumentacja firmy Microsoft
+title: 'IPerPropertyBrowsing2:: GetPredefinedStrings | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a5f71ba91c65a8d99d831c777fc47fe9233fc18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55ade724dd9ee5d59feb9d04c5b525ca839a9cec
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944856"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576774"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
-Umożliwia obiektowi wywołującemu wypełnić pole listy zliczono tablicę wskaźników ciągu, które reprezentują potencjalnych wartości dla tej właściwości.  
+Umożliwia obiektowi wywołującemu Wypełnienie pola listy z zliczoną tablicą wskaźników ciągu reprezentujących potencjalne wartości tej właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,16 +39,16 @@ HRESULT GetPredefinedStrings(
   
 #### <a name="parameters"></a>Parametry  
  `dispid`  
- [in] Wyślij identyfikator właściwości, dla którego obiekt wywołujący żąda listy parametrów.  
+ podczas Identyfikator wysyłania właściwości, dla której obiekt wywołujący żąda listy ciągów.  
   
  `pCaStrings`  
- [out] Wskaźnik do struktury przydzielonej przez obiekt wywołujący, zliczono tablicy, która zawiera liczba elementów i adres przydzielony Metoda tablicy wskaźników ciągu. Jeśli metoda nie powiedzie się, nie pamięć została przydzielona, i zawartość struktury są niezdefiniowane.  
+ określoną Wskaźnik do rozliczanej struktury obiektu wywołującego, która zawiera liczbę elementów i adres tablicy wskaźników ciągu. Jeśli metoda nie powiedzie się, nie przydzielono żadnej pamięci i zawartość struktury jest niezdefiniowana.  
   
  `pCaCookies`  
- [out] Wskaźnik do przydzielonej przez obiekt wywołujący, liczone strukturę tablicy, która zawiera liczba elementów i adres przydzielony metoda Tablica słów podwójnych. Jeśli metoda nie powiedzie się, nie pamięć została przydzielona, i zawartość struktury są niezdefiniowane.  
+ określoną Wskaźnik do rozliczanej struktury obiektu wywołującego, która zawiera liczbę elementów i adres tablicy typu DWORD przydzieloną metodę. Jeśli metoda nie powiedzie się, nie przydzielono żadnej pamięci i zawartość struktury jest niezdefiniowana.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
+ Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IPerPropertyBrowsing2, interfejs 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

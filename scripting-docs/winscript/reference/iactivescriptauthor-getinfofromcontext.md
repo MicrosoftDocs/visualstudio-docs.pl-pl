@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetInfoFromContext | Dokumentacja firmy Microsoft
+title: 'IActiveScriptAuthor:: GetInfoFromContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 457b2ad1bda3226caf3604e3ccd6b976f01bca83
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935389"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576212"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
-Zwraca typu informacji i pozycji zakotwiczenia dla danego znaku w bloku kodu. Zawiera informacje dla elementu członkowskiego, IntelliSense, wykazy globalne i porady dotyczące parametru.  
+Zwraca informacje o typie i położenia zakotwiczenia dla danego znaku w bloku kodu. Zawiera informacje na temat elementów członkowskich IntelliSense, list globalnych i porad dotyczących parametrów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,55 +46,55 @@ HRESULT GetInfoFromContext(
   
 #### <a name="parameters"></a>Parametry  
  `pszCode`  
- [in] Adres ciągu bloku kodu, które są używane do generowania wyników informacji.  
+ podczas Adres ciągu bloku kodu używany do generowania wyników informacji.  
   
  `cchCode`  
- [in] Długość bloku kodu.  
+ podczas Długość bloku kodu.  
   
  `ichCurrentPosition`  
- [in] Pozycja znaku względem początku bloku.  
+ podczas Pozycja znaku względem początku bloku.  
   
  `dwListTypesRequested`  
- [in] Typy list żądanie. Może być kombinacją następujących wartości:  
+ podczas Żądane typy list. Może być kombinacją następujących wartości:  
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Brak listy.|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|Lista elementów członkowskich.|  
-|SCRIPT_CMPL_ENUMLIST|0x0002|Lista wyliczenia.|  
-|SCRIPT_CMPL_PARAMLIST|0x0004|Wywołaj liście parametrów metody.|  
+|SCRIPT_CMPL_ENUMLIST|0x0002|Lista tekstów stałych.|  
+|SCRIPT_CMPL_PARAMLIST|0x0004|Lista parametrów metody wywołania.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Globalna lista.|  
   
- Typ SCRIPT_CMPL_GLOBALLIST jest traktowany jako domyślny element ukończenia można łączyć za pomocą operatora OR z innymi elementami ukończenia. Skrypt tworzenia aparatu najpierw próbuje wypełnić informacji o typie dla inne listy uzupełniania. W przypadku niepowodzenia aparat wypełnienie dla SCRIPT_CMPL_GLOBALLIST.  
+ Typ SCRIPT_CMPL_GLOBALLIST jest traktowany jako domyślny element uzupełniający, który można łączyć za pomocą operatora OR z innymi elementami ukończenia. Aparat tworzenia skryptów najpierw próbuje wypełnić informacje o typie dla innych elementów listy uzupełniania. Jeśli to się nie powiedzie, aparat wypełnia dla SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
- [out] Typ listy.  
+ określoną Typ podanej listy.  
   
  `pichListAnchorPosition`  
- [out] Indeks początkowy kontekst, który zawiera bieżącej pozycji. Indeks początkowy jest określana względem początku bloku.  
+ określoną Początkowy indeks kontekstu zawierającego bieżącą pozycję. Indeks początkowy jest względem początku bloku.  
   
- To jest wypełniana tylko wtedy, gdy `dwListTypesRequested` obejmuje SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST lub SCRIPT_CMPL_GLOBALLIST. Dla innych typów żądanej listy wynik jest niezdefiniowany.  
+ Jest to wypełniane tylko wtedy, gdy `dwListTypesRequested` zawiera SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST lub SCRIPT_CMPL_GLOBALLIST. W przypadku innych żądanych typów list wynik jest niezdefiniowany.  
   
  `pichFuncAnchorPosition`  
- [out] Indeks początkowy wywołania funkcji, która zawiera bieżące położenie. Indeks początkowy jest określana względem początku bloku.  
+ określoną Początkowy indeks wywołania funkcji, który zawiera bieżącą pozycję. Indeks początkowy jest względem początku bloku.  
   
- To jest wypełniana tylko wtedy, gdy kontekst, który zawiera bieżące położenie jest wywołanie funkcji, a gdy `dwListTypesRequested` obejmuje SCRIPT_CMPL_PARAMLIST. W przeciwnym razie wynik jest niezdefiniowany.  
+ Jest to wypełniane tylko wtedy, gdy kontekst zawierający bieżącą pozycję jest wywołaniem funkcji i gdy `dwListTypesRequested` zawiera SCRIPT_CMPL_PARAMLIST. W przeciwnym razie wynik jest niezdefiniowany.  
   
  `pmemid`  
- [out] MEMBERID funkcji, zgodnie z definicją według typu w `IProvideMultipleClassInfo``ppunk` parametr wyjściowy.  
+ określoną Właściwość MEMBERID funkcji, zgodnie z definicją typu w parametrze `IProvideMultipleClassInfo``ppunk` out.  
   
- To jest wypełniana tylko wtedy, gdy `dwListTypesRequested` obejmuje SCRIPT_CMPL_PARAMLIST.  
+ Jest to wypełniane tylko wtedy, gdy `dwListTypesRequested` zawiera SCRIPT_CMPL_PARAMLIST.  
   
  `piCurrentParameter`  
- [out] Indeks parametru, która zawiera bieżące położenie. Jeśli bieżące położenie jest na nazwę funkcji, zwracana jest wartość -1.  
+ określoną Indeks parametru, który zawiera bieżącą pozycję. Jeśli bieżące położenie jest w nazwie funkcji, zwracana jest wartość-1.  
   
- `piCurrentParameter` Wartość jest wypełniana tylko wtedy, gdy `dwListTypesRequested` obejmuje SCRIPT_CMPL_PARAMLIST.  
+ Wartość `piCurrentParameter` jest wypełniana tylko wtedy, gdy `dwListTypesRequested` zawiera SCRIPT_CMPL_PARAMLIST.  
   
  `ppunk`  
- Informacje o typie, który jest dostarczany w formie `IProvideMultipleClassInfo` obiektu.  
+ Informacje o typie, które są dostępne w formie obiektu `IProvideMultipleClassInfo`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -102,6 +102,6 @@ HRESULT GetInfoFromContext(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
- [IProvideMultipleClassInfo Interface](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
+## <a name="see-also"></a>Zobacz także  
+ [IProvideMultipleClassInfo   interfejsu](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)  
  [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

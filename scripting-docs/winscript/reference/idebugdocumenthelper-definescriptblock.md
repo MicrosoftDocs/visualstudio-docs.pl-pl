@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::DefineScriptBlock | Dokumentacja firmy Microsoft
+title: IDebugDocumentHelper::D efineScriptBlock | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a320e4e43a983ace4decbaa68de0b1a7df7d457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a2418b18e80ac86b672b3847f24ef9084ed1252
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783027"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576980"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Wskazuje do elementu pomocniczego do określonego zakresu znaków blok skryptu, który jest obsługiwany przez aparat skryptu.  
+Wskazuje pomocnikowi, że konkretny zakres znaków jest blokiem skryptu, który jest obsługiwany przez dany aparat skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,35 +41,35 @@ HRESULT DefineScriptBlock(
   
 #### <a name="parameters"></a>Parametry  
  `ulCharOffset`  
- [in] Lokalizacja początku bloku skryptu.  
+ podczas Lokalizacja początku bloku skryptu.  
   
  `cChars`  
- [in] Liczba znaków w bloku skryptu.  
+ podczas Liczba znaków w bloku skryptu.  
   
  `pas`  
- [in] Aparat skryptów dla tego bloku skryptu.  
+ podczas Aparat skryptów dla tego bloku skryptu.  
   
  `fScriptlet`  
- [in] Flaga wskazująca, czy za pomocą bloku skryptu scriptlet.  
+ podczas Flaga wskazująca, czy blok skryptu jest obiektem Scriptlet.  
   
  `pdwSourceContext`  
- [out] Kontekst źródła dla bloku skryptu.  
+ określoną Kontekst źródłowy bloku skryptu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jest host inteligentny użyć tej metody podczas jego dokumenty zawierają bloki osadzonych skryptów. Aparat języka użyć tej metody, gdy jego kod zawiera skrypty osadzone w innych językach.  
+ Inteligentny host może użyć tej metody, gdy dokumenty zawierają osadzone bloki skryptu. Aparat języka może używać tej metody, gdy jej kod zawiera osadzone skrypty dla innych języków.  
   
- Aparat skryptów jest odpowiedzialny za wszystkie składni kolorowanie i kod kontekstu wyszukiwań w bloku skryptu.  
+ Aparat skryptów jest odpowiedzialny za wszystkie kolorowanie składni i wyszukiwania kontekstu kodu w bloku skryptu.  
   
- `DefineScriptBlock` Metoda powinna być wywoływana po dodaniu tekstu (na przykład za pomocą `IDebugDocumentHelper::AddDBCSText` metoda), ale przed skrypt przeanalizowaniu bloku (na przykład za pomocą `IActiveScriptParse ::ParseScriptText` metody).  
+ Metoda `DefineScriptBlock` powinna być wywoływana po dodaniu tekstu (na przykład przy użyciu metody `IDebugDocumentHelper::AddDBCSText`), ale przed przeanalizą bloku skryptu (na przykład przy użyciu metody `IActiveScriptParse ::ParseScriptText`).  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

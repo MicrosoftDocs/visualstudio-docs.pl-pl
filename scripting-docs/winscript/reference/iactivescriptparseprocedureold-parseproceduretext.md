@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedureOld::ParseProcedureText | Microsoft Docs
+title: IActiveScriptParseProcedureOld::P arseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e521bbdcd8d7397c1c2dfb377fd9b41811499f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 116cbc7fac0d53b55c9766945d56ecebd27b6785
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993218"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577451"
 ---
 # <a name="iactivescriptparseprocedureoldparseproceduretext"></a>IActiveScriptParseProcedureOld::ParseProcedureText
-Analizuje procedury danego kodu i dodaje procedurę anonimowych do przestrzeni nazw.  
+Analizuje daną procedurę kodu i dodaje anonimową procedurę do przestrzeni nazw.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,56 +45,56 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parametry  
  `pstrCode`  
- [in] Tekst procedury do oceny. Interpretacja tego ciągu zależy od języka skryptów.  
+ podczas Tekst procedury do obliczenia. Interpretacja tego ciągu zależy od języka skryptowego.  
   
  `pstrFormalParams`  
- [in] Nazwy parametrów formalnych w procedurze. Nazwy parametrów muszą być oddzielone ogranicznikami odpowiednie dla silnika wykonywania skryptów. Nazwy nie powinna zostać ujęta w nawiasy.  
+ podczas Formalne nazwy parametrów dla procedury. Nazwy parametrów muszą być oddzielone odpowiednimi ogranicznikami aparatu obsługi skryptów. Nazwy nie powinny być ujęte w nawiasy.  
   
  `pstrItemName`  
- [in] Nazwa elementu o nazwie, który podaje kontekst, w którym ma zostać obliczone procedury. Jeśli ten parametr jest `NULL`, kod jest oceniany w kontekście globalnym silnika wykonywania skryptów.  
+ podczas Nazwa nazwanego elementu, który zawiera kontekst, w którym ma zostać oceniona procedura. Jeśli ten parametr jest `NULL`, kod jest oceniany w kontekście globalnym aparatu skryptów.  
   
  `punkContext`  
- [in] Obiekt kontekstu. Ten obiekt jest zarezerwowany do użytku w środowisku debugowania, gdzie taki kontekst może być świadczona przez debuger do reprezentowania aktywnego kontekstu wykonywania. Jeśli ten parametr jest `NULL`, aparat używa parametru `pstrItemName` do zidentyfikowania kontekstu.  
+ podczas Obiekt kontekstu. Ten obiekt jest zarezerwowany do użytku w środowisku debugowania, gdzie taki kontekst może być dostarczony przez debuger do reprezentowania aktywnego kontekstu czasu wykonywania. Jeśli ten parametr jest `NULL`, aparat używa `pstrItemName` do identyfikowania kontekstu.  
   
  `pstrDelimiter`  
- [in] Ogranicznik końcowy wewnętrzny. Gdy `pstrCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika, takiego jak dwa pojedyncze cudzysłowy ("), aby wykrywać koniec procedury. Ten parametr określa ogranicznik używany przez hosta, dzięki czemu silnik wykonywania skryptów zapewnić niektóre warunkowe pierwotne przetwarzanie (na przykład, zastępując pojedynczy znak cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użytku w roli ogranicznika). Dokładnie jak (i czy) używa aparatu skryptów, te informacje zależy od silnika wykonywania skryptów. Ustaw ten parametr na `NULL` Jeśli host nie korzystał z ogranicznika do oznaczenia końca procedury.  
+ podczas Ogranicznik końca procedury. Gdy `pstrCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika, takiego jak dwa znaki pojedynczego cudzysłowu (' '), w celu wykrycia końca procedury. Ten parametr określa ogranicznik używany przez hosta, co pozwala aparatowi skryptów zapewnić pewne warunkowe, pierwotne przetwarzanie wstępne (na przykład zastępowanie pojedynczego cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użycia jako ogranicznika). Dokładnie tak, jak (i jeśli) aparat skryptów używa tych informacji, zależy od aparatu skryptów. Ustaw ten parametr, aby `NULL`, Jeśli host nie używał ogranicznika do oznaczenia końca procedury.  
   
  `dwSourceContextCookie`  
- [in] Wartość zdefiniowanych przez aplikację, która jest używana na potrzeby debugowania.  
+ podczas Wartość zdefiniowana przez aplikację, która jest używana na potrzeby debugowania.  
   
  `ulStartingLineNumber`  
- [in] Liczony od zera wartość, która określa, na która linia będzie rozpoczynać analizę.  
+ podczas Wartość zerowa, która określa, w którym wierszu rozpocznie się analizowanie.  
   
  `dwFlags`  
- [in] Flagi skojarzone z tą procedurą. Może być kombinacją tych wartości.  
+ podczas Flagi skojarzone z procedurą. Może być kombinacją tych wartości.  
   
 |Stała|Wartość|Znaczenie|  
 |--------------|-----------|-------------|  
-|SCRIPTPROC_ISEXPRESSION|0x00000020|Oznacza to, że kod w `pstrCode` jest wyrażeniem, która reprezentuje wartość zwracaną przez procedurę.|  
-|SCRIPTPROC_IMPLICIT_THIS|0x00000100|Oznacza to, że `this` wskaźnik myszy znajduje się w zakresie procedury.|  
-|SCRIPTPROC_IMPLICIT_PARENTS|0x00000200|Oznacza to, że nadrzędne `this` wskaźnika znajdują się w zakresie procedury.|  
+|SCRIPTPROC_ISEXPRESSION|0x00000020|Wskazuje, że kod w `pstrCode` jest wyrażeniem, które reprezentuje wartość zwracaną przez procedurę.|  
+|SCRIPTPROC_IMPLICIT_THIS|0x00000100|Wskazuje, że w zakresie procedury znajduje się wskaźnik `this`.|  
+|SCRIPTPROC_IMPLICIT_PARENTS|0x00000200|Wskazuje, że elementy nadrzędne wskaźnika `this` są zawarte w zakresie procedury.|  
   
  `ppdisp`  
- [out] Zwraca otoki wysyłki, w których domyślną metodą jest procedurą analizowane przez tę metodę.  
+ określoną Zwraca otokę wysyłania, w której metoda domyślna jest procedurą przeanalizowana przez tę metodę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
+|`E_INVALIDARG`|Nieprawidłowy argument.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_NOTIMPL`|Ta metoda nie jest obsługiwana. Aparat skryptów nie obsługuje dodawania czasu wykonywania procedur do przestrzeni nazw.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jest w stanie niezainicjowanym lub zamkniętym).|  
-|`OLESCRIPT_E_SYNTAX`|Wystąpił nieokreślony błąd składniowy w procedurze.|  
-|`S_FALSE`|Aparat skryptów nie obsługuje obiektu dispatch; `ppdisp`parametr ma wartość `NULL`.|  
+|`E_NOTIMPL`|Ta metoda nie jest obsługiwana. Aparat skryptów nie obsługuje dodawania procedur do przestrzeni nazw w czasie wykonywania.|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów jest w stanie niezainicjowanym lub zamkniętym).|  
+|`OLESCRIPT_E_SYNTAX`|W procedurze Wystąpił nieokreślony błąd składniowy.|  
+|`S_FALSE`|Aparat skryptów nie obsługuje obiektu wysyłania; `ppdisp`parameter jest ustawiona na `NULL`.|  
   
 ## <a name="remarks"></a>Uwagi  
- Brak kodu skryptu jest oceniany podczas tego wywołania; Przeciwnie, procedura jest kompilowana do metody na `ppdisp` gdzie może być wywołany przez skrypt później.  
+ Kod skryptu nie jest oceniany podczas tego wywołania; Zamiast tego procedura została skompilowana do metody na `ppdisp`, gdzie może być wywoływana przez skrypt później.  
   
- Ten interfejs jest przestarzała zastąpiona ceną `IActiveScriptParseProcedure` interfejsu. `IActiveScriptParseProcedure::ParseProcedureText` Metoda jest podobna do tej metody, ale pozwala na podanie nazwy procedury. W każdych okolicznościach `IActiveScriptParseProcedure::ParseProcedureText` powinny być używane.  
+ Ten interfejs jest przestarzały na korzyść interfejsu `IActiveScriptParseProcedure`. Metoda `IActiveScriptParseProcedure::ParseProcedureText` jest podobna do tej metody, ale umożliwia określenie nazwy procedury. We wszystkich okolicznościach należy używać `IActiveScriptParseProcedure::ParseProcedureText`.  
   
-## <a name="see-also"></a>Zobacz też  
- [IActiveScriptParseProcedureOld Interface](../../winscript/reference/iactivescriptparseprocedureold-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptParseProcedureOld   interfejsu](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
  [IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)

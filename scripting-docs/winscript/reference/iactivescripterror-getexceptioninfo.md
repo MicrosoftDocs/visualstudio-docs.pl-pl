@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetExceptionInfo | Dokumentacja firmy Microsoft
+title: 'IActiveScriptError:: GetExceptionInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71e8f787e6837e6fa41c7b3cd831448b5d20a95e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f776a5f1a60b1280ab1f133ead04fb275782e5c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009574"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576939"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
-Pobiera informacje o błędzie, który wystąpił podczas aparat skryptów był uruchomiony skrypt.  
+Pobiera informacje o błędzie, który wystąpił, gdy aparat skryptów uruchomił skrypt.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT GetExceptionInfo(
   
 #### <a name="parameters"></a>Parametry  
  `pexcepinfo`  
- [out] Adres `EXCEPINFO` strukturę, która otrzymuje informacje o błędzie.  
+ określoną Adres struktury `EXCEPINFO`, która otrzymuje informacje o błędzie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` w przypadku powodzenia lub `E_FAIL` Jeśli wystąpił błąd.  
+ Zwraca `S_OK`, jeśli się powiedzie, lub `E_FAIL` w przypadku wystąpienia błędu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

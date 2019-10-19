@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddScriptlet | Dokumentacja firmy Microsoft
+title: 'IActiveScriptAuthor:: AddScriptlet | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64df7bd4c0d0dde303cdc15d7111688d14c7dc49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a349a848f282e6b3a228c7b17009e0261801be5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935461"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577984"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
-Dodaje skryptletu kodu jako element podrzędny elementu poziomu głównego `IScriptNode` obiektu. Na hoście w pełni kwalifikowana nazwa scriptlet może mieć tylko dwa poziomy.  
+Dodaje kod Scriptlet jako element podrzędny obiektu głównego poziomu `IScriptNode`. W pełni kwalifikowana nazwa Scriptlet może mieć tylko dwa poziomy na hoście.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,31 +44,31 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parametry  
  `pszDefaultName`  
- [in] Adres nazwy domyślnej, aby skojarzyć ze scriptlet.  
+ podczas Adres nazwy domyślnej, która ma zostać skojarzona z Scriptlet.  
   
  `pszCode`  
- [in] Adres tekstu scriptlet.  
+ podczas Adres tekstu Scriptlet.  
   
  `pszItemName`  
- [in] Adres buforu identyfikator najwyższego poziomu o nazwie FQDN scriptlet na hoście.  
+ podczas Adres buforu identyfikatora najwyższego poziomu w pełni kwalifikowanej nazwy Scriptlet na hoście.  
   
  `pszSubItemName`  
- [in] Adres buforu identyfikator drugiego poziomu, nazwy FQDN scriptlet na hoście. Ustaw na wartość NULL, jeśli nazwa zawiera tylko jeden poziom.  
+ podczas Adres buforu identyfikatora drugiego poziomu w pełni kwalifikowanej nazwy Scriptlet na hoście. Ustaw wartość NULL, jeśli nazwa ma tylko jeden poziom.  
   
  `pszEventName`  
- [in] Adres buforu, który zawiera nazwę zdarzenia, dla którego scriptlet ma program obsługi zdarzeń.  
+ podczas Adres buforu, który zawiera nazwę zdarzenia, dla którego Scriptlet jest procedura obsługi zdarzeń.  
   
  `pszDelimiter`  
- [in] Adres ogranicznika końcowego elementu skrypt bloku. Gdy `pszCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika (takie jak dwa pojedyncze cudzysłowy), na końcu bloku skryptu do wykrywania. Ustaw ten parametr na wartość NULL, jeśli ogranicznika nie są oznaczane koniec bloku skryptu.  
+ podczas Adres ogranicznika bloku End-of-Script. Gdy `pszCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika (takiego jak dwa znaki pojedynczego cudzysłowu) w celu wykrycia końca bloku skryptu. Ustaw ten parametr na wartość NULL, jeśli ogranicznik nie oznacza końca bloku skryptu.  
   
  `dwCookie`  
- [in] Wartość zdefiniowanych przez aplikację, która jest używana do kojarzenia scriptlet z obiektu hosta.  
+ podczas Zdefiniowana przez aplikację wartość, która jest używana do kojarzenia Scriptlet z obiektem hosta.  
   
  `dwFlags`  
- [in] Nie jest używany.  
+ podczas Nieużywane.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -76,5 +76,5 @@ HRESULT AddScriptlet(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

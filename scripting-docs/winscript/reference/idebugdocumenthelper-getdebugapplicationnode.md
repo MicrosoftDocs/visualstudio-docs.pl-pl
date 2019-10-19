@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetDebugApplicationNode | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHelper:: GetDebugApplicationNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10740c3489b617b1685ad222cac7c158e0196c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b0fc05b73ffd9880b1dec366cabd4b3cc316b80
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783087"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576952"
 ---
 # <a name="idebugdocumenthelpergetdebugapplicationnode"></a>IDebugDocumentHelper::GetDebugApplicationNode
-Zwraca węzeł aplikacji debugowania odpowiadającego do tego dokumentu.  
+Zwraca węzeł aplikacji debugowania odpowiadający temu dokumentowi.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT GetDebugApplicationNode(
   
 #### <a name="parameters"></a>Parametry  
  `ppdan`  
- [out] Węzeł aplikacji debugowania odpowiadającego do tego dokumentu.  
+ określoną Węzeł aplikacji debugowania odpowiadający temu dokumentowi.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca węzeł aplikacji debugowania odpowiadającego do tego dokumentu.  
+ Zwróć węzeł aplikacji debugowania odpowiedni dla tego dokumentu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

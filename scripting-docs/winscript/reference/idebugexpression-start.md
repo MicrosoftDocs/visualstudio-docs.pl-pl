@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Start | Dokumentacja firmy Microsoft
+title: 'IDebugExpression:: Start | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e80f3fb8087d39c76f59cf5c6bc8719c1cbaf5e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8c3666adfc83f3ad60b942cd3f7fe9eedfccba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978526"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576430"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
-Rozpoczyna się obliczania wyrażenia.  
+Rozpoczyna Obliczanie wyrażenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,18 +37,18 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parametry  
  `pdecb`  
- [in] Wywołanie zwrotne wskazujące, po zakończeniu oceny wyrażenia. Jeśli ten parametr jest `NULL`, żadne zdarzenia nie są uruchamiane, a klient musi wykonać sondowanie stan wyrażenia przy użyciu `QueryIsComplete`.  
+ podczas Wywołanie zwrotne wskazujące, kiedy szacowanie wyrażeń zostało zakończone. Jeśli ten parametr jest `NULL`, żadne zdarzenia nie są uruchamiane i klient musi sondować stan wyrażenia przy użyciu `QueryIsComplete`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda rozpoczyna obliczania wyrażenia.  
+ Ta metoda rozpoczyna Obliczanie wyrażenia.  
   
-## <a name="see-also"></a>Zobacz też  
- [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugExpression:: Abort](../../winscript/reference/idebugexpression-abort.md)    
  [IDebugExpression, interfejs](../../winscript/reference/idebugexpression-interface.md)

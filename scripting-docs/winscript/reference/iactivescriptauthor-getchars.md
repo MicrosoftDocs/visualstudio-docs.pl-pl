@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetChars | Dokumentacja firmy Microsoft
+title: 'IActiveScriptAuthor:: GetChars | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ce2b46d65c2ce92111bc4b6f44f66ce9dc4ce5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935376"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576250"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
-Zwraca zestaw znaków zakończenia dla kontekstu żądanego zakończenia.  
+Zwraca zestaw znaków zakończenia dla żądanego kontekstu uzupełniania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,19 +38,19 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>Parametry  
  `fRequestedList`  
- [in] Kontekst żądanego zakończenia.  
+ podczas Żądany kontekst uzupełniania.  
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Żądanie wyliczenia po lewej stronie.|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Żąda kontekstu zakończenia elementu członkowskiego.|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Żąda wyliczenia po lewej stronie.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Żąda kontekstu uzupełniania elementu członkowskiego.|  
 |SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Żąda listy parametrów.|  
-|SCRIPT_CMPL_COMMIT|0x0004|Ukończenie żądania listy parametrów.|  
+|SCRIPT_CMPL_COMMIT|0x0004|Żąda wykonania listy parametrów.|  
   
  `pbstrChars`  
- [out] Znaki, które odnoszą się do kontekstu żądanego zakończenia.  
+ określoną Znaki, które odnoszą się do żądanego kontekstu uzupełniania.  
   
-|`fRequestedList` Parametr|Znaki zwrócone|  
+|`fRequestedList` parametr|Zwrócone znaki|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  
@@ -58,7 +58,7 @@ HRESULT GetChars(
 |SCRIPT_CMPL_COMMIT|"()"|  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -66,5 +66,5 @@ HRESULT GetChars(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

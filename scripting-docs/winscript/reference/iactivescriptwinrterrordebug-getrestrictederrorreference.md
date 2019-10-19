@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference | Microsoft Docs
+title: 'IActiveScriptWinRTErrorDebug:: GetRestrictedErrorReference | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4696c66ec331c08f3419d79f0f48feb3bf9d80f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4665071fe26ed3dadbaadbcbaa79217562d311c6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432960"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577914"
 ---
 # <a name="iactivescriptwinrterrordebuggetrestrictederrorreference"></a>IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference
-Zwraca środowiska uruchomieniowego Windows ograniczony błąd odwołania, jeśli jest dostępny.  
+Zwraca środowisko wykonawcze systemu Windows ograniczonego błędu odwołania, jeśli jest dostępny.  
   
 > [!IMPORTANT]
-> [Interfejs IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) jest implementowany przez PDM v 11.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,7 +34,7 @@ HRESULT GetRestrictedErrorReference([out] BSTR * referenceString);
   
 #### <a name="parameters"></a>Parametry  
  `referenceString`  
- [out] Ciąg błędu odwołania.  
+ określoną Ciąg błędu odwołania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptWinRTErrorDebug, interfejs](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)

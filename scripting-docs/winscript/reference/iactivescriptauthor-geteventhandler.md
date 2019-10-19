@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetEventHandler | Dokumentacja firmy Microsoft
+title: 'IActiveScriptAuthor:: GetEventHandler | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bba60df6485ddaac0363a3416739efd7be69389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c69b32f0040ea6d52e0712b8e1813cc5a0b40c58
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935636"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576229"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
-Zwraca scriptlet, który ma określone atrybuty.  
+Zwraca Scriptlet, który ma określone atrybuty.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,22 +41,22 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>Parametry  
  `pdisp`  
- [in] `IDispatch` Obiekt, który odpowiada `NamedItem` do której jest dołączona scriptlet.  
+ podczas Obiekt `IDispatch`, który odnosi się do `NamedItem`, do którego jest dołączona Scriptlet.  
   
  `pszItem`  
- [in] Adres buforu identyfikator najwyższego poziomu o nazwie FQDN scriptlet na hoście.  
+ podczas Adres buforu identyfikatora najwyższego poziomu w pełni kwalifikowanej nazwy Scriptlet na hoście.  
   
  `pszSubItem`  
- [in] Adres buforu identyfikator drugiego poziomu, nazwy FQDN scriptlet na hoście. Ustaw na wartość NULL, jeśli nazwa zawiera tylko jeden poziom.  
+ podczas Adres buforu identyfikatora drugiego poziomu w pełni kwalifikowanej nazwy Scriptlet na hoście. Ustaw wartość NULL, jeśli nazwa ma tylko jeden poziom.  
   
  `pszEvent`  
- [in] Adres buforu, który zawiera nazwę zdarzenia. Scriptlet ma program obsługi zdarzeń dla tego zdarzenia.  
+ podczas Adres buforu, który zawiera nazwę zdarzenia. Scriptlet jest obsługą zdarzeń dla tego zdarzenia.  
   
  `ppse`  
- [out] Adres zmiennej, która otrzymuje wskaźnik `IScriptEntry` interfejsu scriptlet, który ma określone atrybuty.  
+ określoną Adres zmiennej, która otrzymuje wskaźnik do interfejsu `IScriptEntry` Scriptlet, który ma określone atrybuty.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -64,6 +64,6 @@ HRESULT GetEventHandler(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptAuthor   interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
  [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

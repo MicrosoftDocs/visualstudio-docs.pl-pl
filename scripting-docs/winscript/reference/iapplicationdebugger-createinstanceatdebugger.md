@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::CreateInstanceAtDebugger | Microsoft Docs
+title: 'IApplicationDebugger:: CreateInstanceAtDebugger | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c15dc5d9b36a718ed41813bac46bc4b9415eb853
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425824"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577888"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
-Umożliwia tworzenie obiektów w procesie debugowania przez kod to znaczy poza procesem do debugera.  
+Umożliwia tworzenie obiektów w procesie debugera przez kod, który jest poza procesem do debugera.  
   
 > [!IMPORTANT]
-> Ta metoda nie powinny być implementowane, ponieważ zezwala ona na niezaufanego kodu do tworzenia obiektów dowolnego wątku zaufanych debugera.  
+> Ta metoda nie powinna być zaimplementowana, ponieważ umożliwia niezaufanego kodu tworzenie dowolnych obiektów w zaufanym wątku debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,22 +44,22 @@ HRESULT CreateInstanceAtDebugger(
   
 #### <a name="parameters"></a>Parametry  
  `rclsid`  
- [in] Klasa identyfikator (CLSID) obiektu do utworzenia.  
+ podczas Identyfikator klasy (CLSID) obiektu do utworzenia.  
   
  `pUnkOuter`  
- [in] Jeśli `NULL`, obiekt nie został utworzony jako część agregacji. W przeciwnym razie `pUnkOuter` jest wskaźnikiem do obiektu agregacji `IUnknown` interfejsu (kontrolowanie `IUnknown`).  
+ podczas Jeśli `NULL`, obiekt nie jest tworzony w ramach agregacji. W przeciwnym razie `pUnkOuter` jest wskaźnikiem do interfejsu `IUnknown` obiektu agregacji (kontrolka `IUnknown`).  
   
  `dwClsContext`  
- [in] Kontekst do uruchamiania kodu wykonywalnego. Wartości te są pobierane z wyliczenia `CLSCTX`.  
+ podczas Kontekst do uruchamiania kodu wykonywalnego. Wartości są pobierane z `CLSCTX` wyliczenia.  
   
  `riid`  
- [in] Identyfikator interfejsu używany do komunikacji z obiektem.  
+ podczas Identyfikator interfejsu używany do komunikacji z obiektem.  
   
  `ppvObject`  
- [out] Adres zmiennej wskaźnika, który otrzymuje wskaźnik interfejsu w `riid`. Po powrocie pomyślne *`ppvObject` znajduje się wskaźnik żądanego interfejsu. W przypadku awarii \* `ppvObject` zawiera `NULL`.  
+ określoną Adres zmiennej wskaźnika, która odbiera wskaźnik interfejsu żądany w `riid`. Po pomyślnym powrocie, * `ppvObject` zawiera żądany wskaźnik interfejsu. W przypadku niepowodzenia `ppvObject` \* zawiera `NULL`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -70,5 +70,5 @@ HRESULT CreateInstanceAtDebugger(
   
  Metoda nie jest obecnie zaimplementowana.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IApplicationDebugger, interfejs](../../winscript/reference/iapplicationdebugger-interface.md)

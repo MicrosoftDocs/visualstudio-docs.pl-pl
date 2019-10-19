@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::CreateStackFrameEnumerator, metoda | Dokumentacja firmy Microsoft
+title: 'IJsDebugDataTarget:: CreateStackFrameEnumerator — Metoda | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8103ac689ac812aee2037f0f2e89f1d3a7448c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59d58f0256a326d3922e280818176a43ef4aa5ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583083"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577629"
 ---
 # <a name="ijsdebugdatatargetcreatestackframeenumerator-method"></a>IJsDebugDataTarget::CreateStackFrameEnumerator — Metoda
-Tworzy moduł wyliczający ramek stosu.  
+Tworzy moduł wyliczający dla ramek stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,15 +36,15 @@ HRESULT CreateStackFrameEnumerator(
   
 #### <a name="parameters"></a>Parametry  
  `threadId`  
- [in] Wątek działający w procesie docelowym.  
+ podczas Wątek działający w procesie docelowym.  
   
  `ppEnumerator`  
- [out] Moduł wyliczający ramek stosu.  
+ określoną Moduł wyliczający dla ramek stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)

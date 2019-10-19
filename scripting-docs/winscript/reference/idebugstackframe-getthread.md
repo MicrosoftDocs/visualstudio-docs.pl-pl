@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetThread | Dokumentacja firmy Microsoft
+title: 'IDebugStackFrame:: GetThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6926347c67895b3860964a559898691dd3e61e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51cb000ef20877f4f3f6536cc9a01ae44c2810c8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935063"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576736"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
 Zwraca wątek skojarzony z tą ramką stosu.  
@@ -37,10 +37,10 @@ HRESULT GetThread(
   
 #### <a name="parameters"></a>Parametry  
  `ppat`  
- [out] Wątek, skojarzone z tą ramką stosu.  
+ określoną Wątek skojarzony z tą ramką stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -49,5 +49,5 @@ HRESULT GetThread(
 ## <a name="remarks"></a>Uwagi  
  Ta metoda zwraca wątek skojarzony z tą ramką stosu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugStackFrame, interfejs](../../winscript/reference/idebugstackframe-interface.md)

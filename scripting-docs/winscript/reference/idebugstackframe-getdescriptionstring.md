@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDescriptionString | Dokumentacja firmy Microsoft
+title: 'IDebugStackFrame:: GetDescriptionString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f870c6dbc654f8465d201c53443228153ce4a68b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eb29574d240a02073721046cec65bdf483b3eb0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934612"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576743"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-Zwraca opis krótki lub długo tekstowych ramki stosu.  
+Zwraca krótki lub długi tekstowy opis ramki stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,20 +38,20 @@ HRESULT GetDescriptionString(
   
 #### <a name="parameters"></a>Parametry  
  `fLong`  
- [in] Flaga, gdzie `TRUE` zwraca długi opis i `FALSE` zwraca krótki opis.  
+ podczas Flaga, gdzie `TRUE` zwraca długi opis i `FALSE` zwraca Krótki opis.  
   
  `pbstrDescription`  
- [out] Opis ramki stosu.  
+ określoną Opis ramki stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Zazwyczaj Jeśli `fLong` jest `FALSE`, ta metoda zapewnia tylko nazwę funkcji, skojarzone z ramki stosu. Gdy `fLong` jest `TRUE`, Metoda ta może również udostępniać parametrów funkcji i inne istotne informacje.  
+ Zazwyczaj jeśli `fLong` jest `FALSE`, ta metoda zawiera tylko nazwę funkcji skojarzonej z ramką stosu. Gdy `fLong` jest `TRUE`, ta metoda może także podawać parametry funkcji i inne istotne informacje.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugStackFrame, interfejs](../../winscript/reference/idebugstackframe-interface.md)

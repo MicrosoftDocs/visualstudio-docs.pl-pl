@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptState | Microsoft Docs
+title: 'IActiveScript:: SetScriptState | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16a13b545ddd482f8aa143d289d46447370e23ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea947e00ffd5a3498261f4a3a8acd4791e8ace60
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935534"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577992"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
-Umieszcza silnik wykonywania skryptów w danym stanie. Ta metoda może być wywołana z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
+Umieszcza aparat wykonywania skryptów w danym stanie. Ta metoda może być wywoływana z wątków niebazowych bez wypełniania niepodstawowego wywołania obiektów hosta lub interfejsu [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,25 +37,25 @@ HRESULT SetScriptState(
   
 #### <a name="parameters"></a>Parametry  
  `ss`  
- [in] Ustawia silnik wykonywania skryptów w danym stanie. Może to być jedna z wartości zdefiniowanych w [wyliczenie SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) wyliczenia.  
+ podczas Ustawia aparat wykonywania skryptów dla danego stanu. Może być jedną z wartości zdefiniowanych w wyliczeniu [wyliczenia SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) .  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
-|`E_FAIL`|Aparat skryptów nie obsługuje przejścia z powrotem do stanu zainicjowania. Host należy odrzucić ten silnik wykonywania skryptów i tworzenie, inicjowanie i załadować nowy aparat skryptów, aby osiągnąć ten sam efekt.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany) i w związku z tym nie powiodła się.|  
-|`OLESCRIPT_S_PENDING`|Metoda zostało pomyślnie dodane do kolejki, ale nie zmienił się stan jeszcze. Podczas zmiany stanu, witryna zostanie wywołany przez [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metody.|  
-|`S_FALSE`|Wykonanie metody powiodło się, ale skryptu zostało już w danym stanie.|  
+|`S_OK`|Prawnego.|  
+|`E_FAIL`|Aparat skryptów nie obsługuje przejścia z powrotem do stanu zainicjowania. Host musi odrzucić ten aparat skryptów i utworzyć, zainicjować i załadować nowy aparat obsługi skryptów, aby osiągnąć ten sam efekt.|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów nie został jeszcze załadowany lub zainicjowany) i w związku z tym nie powiodło się.|  
+|`OLESCRIPT_S_PENDING`|Metoda została pomyślnie umieszczona w kolejce, ale stan nie został jeszcze zmieniony. Po zmianie stanu lokacja zostanie wywołana z powrotem przez metodę [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .|  
+|`S_FALSE`|Metoda zakończyła się pomyślnie, ale skrypt już znajduje się w danym stanie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aby uzyskać więcej informacji na temat stany aparatu obsługi skryptów, zobacz sekcję stany aparatu obsługi skryptów [aparatów skryptów Windows](../../winscript/windows-script-engines.md) .  
+ Więcej informacji o Stanach aparatu skryptów znajduje się w sekcji Stany aparatu skryptów w [aparatach skryptów systemu Windows](../../winscript/windows-script-engines.md) .  
   
-## <a name="see-also"></a>Zobacz też  
- [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
- [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
- [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
- [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)    
+ [IActiveScript:: GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)    
+ [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)    
+ [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

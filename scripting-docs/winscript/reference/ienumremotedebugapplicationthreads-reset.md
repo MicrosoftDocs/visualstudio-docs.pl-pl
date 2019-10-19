@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Reset | Dokumentacja firmy Microsoft
+title: 'IEnumRemoteDebugApplicationThreads:: Reset | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a7c6fca01af5a3413ace6d95ca5c5879f4318ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab1f2b4afdcaa9cdb6f506c64b1c7563cd218624
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807189"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577781"
 ---
 # <a name="ienumremotedebugapplicationthreadsreset"></a>IEnumRemoteDebugApplicationThreads::Reset
-Resetuje sekwencji wyliczenia na początku.  
+Resetuje sekwencję wyliczenia na początek.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,14 +37,14 @@ HRESULT Reset();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda powoduje zresetowanie sekwencji wyliczenia na początku.  
+ Ta metoda resetuje sekwencję wyliczenia na początek.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IEnumRemoteDebugApplicationThreads, interfejs](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

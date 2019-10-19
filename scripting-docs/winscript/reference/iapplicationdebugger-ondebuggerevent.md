@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebuggerEvent | Dokumentacja firmy Microsoft
+title: 'IApplicationDebugger:: onDebuggerEvent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b78bb3345463dfd682534dc60a216f3e0e8fdf2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f8edb2a3c39d639b5b6722707d7b6c0b57a5c19
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991362"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577867"
 ---
 # <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
-Obsługuje zdarzenie aplikacji niestandardowych.  
+Obsługuje zdarzenie niestandardowej aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,13 +38,13 @@ HRESULT onDebuggerEvent(
   
 #### <a name="parameters"></a>Parametry  
  `riid`  
- [in] Identyfikator interfejsu dla obiektu.  
+ podczas Identyfikator interfejsu dla obiektu.  
   
  `punk`  
- [in] Obiekt zdarzenia, która implementuje interfejs zdefiniowany przez `riid`.  
+ podczas Obiekt zdarzenia, który implementuje interfejs zdefiniowany przez `riid`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -52,12 +52,12 @@ HRESULT onDebuggerEvent(
 |`E_NOTIMPL`|Metoda nie jest obecnie zaimplementowana.|  
   
 ## <a name="remarks"></a>Uwagi  
- Semantyka `IUnknown` jest całkowicie zdefiniowane aplikacji/debugera.  
+ Semantyką `IUnknown` jest zdefiniowana pełna aplikacja/debuger.  
   
- Ta metoda umożliwia niestandardowe rozszerzenia modelu debuger; nie jest obecnie zaimplementowana.  
+ Ta metoda zezwala na niestandardowe rozszerzenia modelu debugera; nie jest ona obecnie zaimplementowana.  
   
- Ta metoda jest wywoływana, gdy `IDebugApplication::FireDebuggerEvent` jest wywoływana.  
+ Ta metoda jest wywoływana, gdy zostanie wywołana `IDebugApplication::FireDebuggerEvent`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IApplicationDebugger   interfejsu](../../winscript/reference/iapplicationdebugger-interface.md)  
  [IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)

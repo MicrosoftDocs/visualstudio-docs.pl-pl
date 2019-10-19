@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentToTop | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHelper:: BringDocumentToTop | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74ad5bfbf8ba56839be198e24f4a2c3166899065
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b8afe5c03153517fe8923141ca251e6390cd782
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783670"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577007"
 ---
 # <a name="idebugdocumenthelperbringdocumenttotop"></a>IDebugDocumentHelper::BringDocumentToTop
-Ten dokument udostępnia do góry w debugerze interfejsu użytkownika.  
+Przenosi ten dokument do góry w interfejsie użytkownika debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,14 +37,14 @@ HRESULT BringDocumentToTop();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda uruchamia debuger, jeśli nie jest już uruchomiona.  
+ Ta metoda uruchamia debuger, jeśli nie został jeszcze uruchomiony.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

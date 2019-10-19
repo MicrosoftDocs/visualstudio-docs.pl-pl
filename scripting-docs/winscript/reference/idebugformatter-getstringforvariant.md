@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVariant | Dokumentacja firmy Microsoft
+title: 'IDebugFormatter:: GetStringForVariant | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 901bf9648d4d16faf7386b528cc3fd877070a5b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f703396190f1fb7791306ee9e389b676e749f8f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996843"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576368"
 ---
 # <a name="idebugformattergetstringforvariant"></a>IDebugFormatter::GetStringForVariant
-Zwraca ciąg reprezentujący wartość wariant.  
+Zwraca ciąg, który reprezentuje daną wartość WARIANTu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,23 +39,23 @@ HRESULT GetStringForVariant(
   
 #### <a name="parameters"></a>Parametry  
  `pvar`  
- [in] Wariant do reprezentowania jako ciąg.  
+ podczas WARIANT reprezentujący ciąg.  
   
  `nRadix`  
- [in] Podstawa dla wartości liczbowych.  
+ podczas Podstawy do użycia dla wartości liczbowych.  
   
  `pbstrValue`  
- [out] Ciąg reprezentujący `pvar`.  
+ określoną Ciąg reprezentujący `pvar`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca ciąg reprezentujący danej wartości typu variant.  
+ Ta metoda zwraca ciąg, który reprezentuje daną wartość wariantu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugFormatter, interfejs](../../winscript/reference/idebugformatter-interface.md)

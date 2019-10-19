@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460eb832b94a1826d2d8f990b76a2afe90f992c8
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
-ms.translationtype: HT
+ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314100"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576292"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2. Tworzenie losowego problemu dodawania
 
@@ -73,7 +73,7 @@ W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie proble
      Po wprowadzeniu kropki po obiekcie funkcja IntelliSense wyświetla listę elementów członkowskich obiektu, takich jak właściwości, metody i zdarzenia.
 
     > [!NOTE]
-    > Gdy używasz metody `Next()` z obiektem `Random`, na przykład podczas wywoływania `randomizer.Next(50)`, otrzymasz losową liczbę mniejszą niż 50 (od 0 do 49). W tym przykładzie wywołano `randomizer.Next(51)`. Użyto 51, a nie 50, aby dwie liczby losowe dodali do odpowiedzi od 0 do 100. Jeśli podano 50 do metody `Next()`, wybiera liczbę z przepustek od 0 do 49, więc największą możliwą odpowiedzią jest 98, nie 100. Po uruchomieniu pierwszych dwóch instrukcji w metodzie każda z dwóch zmiennych całkowitych, **addend1** i **addend2**, utrzymuje liczbę losową z zakresu od 0 do 50. Ten zrzut ekranu przedstawia C# kod wizualizacji, ale technologia IntelliSense działa tak samo jak w przypadku Visual Basic.
+    > Gdy używasz metody `Next()` z obiektem `Random`, na przykład podczas wywoływania `randomizer.Next(50)`, otrzymasz losową liczbę mniejszą niż 50 (od 0 do 49). W tym przykładzie wywołano `randomizer.Next(51)`. Użyto 51, a nie 50, aby dwie liczby losowe dodali do odpowiedzi od 0 do 100. Jeśli podano 50 do metody `Next()`, wybiera liczbę z przepustek od 0 do 49, więc największą możliwą odpowiedzią jest 98, nie 100. Po uruchomieniu pierwszych dwóch instrukcji w metodzie każda z dwóch zmiennych całkowitych, **addend1** i **addend2**, utrzymuje liczbę losową z zakresu od 0 do 50. Ten zrzut ekranu C# przedstawia kod, ale technologia IntelliSense działa w taki sam sposób w przypadku Visual Basic.
 
      Zapoznaj się bliżej z tymi instrukcjami.
 

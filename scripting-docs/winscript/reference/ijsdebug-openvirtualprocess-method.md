@@ -1,5 +1,5 @@
 ---
-title: IJsDebug::OpenVirtualProcess, metoda | Dokumentacja firmy Microsoft
+title: 'IJsDebug:: OpenVirtualProcess — — Metoda | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97a055bf1550d74dc6b86d93ffdb9ca406afb43d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3de39beb28a68ec3b8e0d76b17a7e914a464ecfe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583597"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577743"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess — Metoda
-Metoda fabryki użyty do utworzenia nowego obiektu wirtualnego procesu.  
+Metoda fabryki użyta do utworzenia nowego obiektu procesu wirtualnego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,24 +38,24 @@ HRESULT OpenVirtualProcess(
   
 #### <a name="parameters"></a>Parametry  
  `processId`  
- [in] Identyfikator procesu, aby dołączyć debuger.  
+ podczas Identyfikator procesu, do którego ma zostać dołączony debuger.  
   
  `runtimeJsBaseAddress`  
- [in] Adres podstawowy, w którym środowisko uruchomieniowe JavaScript został załadowany do procesu docelowego.  
+ podczas Adres podstawowy, pod którym środowisko uruchomieniowe języka JavaScript zostało załadowane do procesu docelowego.  
   
  `pDataTarget`  
- [in] Debuger dostarczony interfejs do wykonywania kwerend dotyczących stanu procesu.  
+ podczas Debuger dostarczył interfejs do wykonywania zapytań dotyczących stanu procesu.  
   
  `ppProcess`  
- [out] Nowy obiekt proces debugowania  
+ określoną Nowy obiekt procesu debugowania  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca wartość E_JsDEBUG_MISMATCHED_RUNTIME, jeśli Jscript9diag i Jscript9 są niezgodne.  
+ Zwraca E_JsDEBUG_MISMATCHED_RUNTIME, jeśli Jscript9diag i jscript9 nie są zgodne.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IJsDebug, interfejs](../../winscript/reference/ijsdebug-interface.md)

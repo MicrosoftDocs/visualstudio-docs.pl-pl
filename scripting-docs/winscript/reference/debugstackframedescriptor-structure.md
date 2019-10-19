@@ -1,5 +1,5 @@
 ---
-title: Struktura DebugStackFrameDescriptor | Dokumentacja firmy Microsoft
+title: Struktura DebugStackFrameDescriptor | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fddae48178ec6c56ce647f5c4f3a1bff3d81a980
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 910e08ec6d9982354eb71b50d5e916917808f140
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955197"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576551"
 ---
 # <a name="debugstackframedescriptor-structure"></a>Struktura DebugStackFrameDescriptor
 Wylicza ramki stosu i scala dane wyjściowe z kilku modułów wyliczających w tym samym wątku.  
@@ -41,22 +41,22 @@ typedef struct tagDebugStackFrameDescriptor {
   
 ## <a name="members"></a>Elementy członkowskie  
  `pdsf`  
- Obiekt w ramce stosu.  
+ Obiekt ramki stosu.  
   
  `dwMin`  
- Reprezentacja zależnych od maszyny niższy zakres adresów fizycznych skojarzonych z tą ramką stosu.  
+ Reprezentacja z dolnym zakresem adresów fizycznych skojarzonych z tą ramką stosu.  
   
  `dwLim`  
- Reprezentacja zależnych od maszyny Górny zakres adresów fizycznych skojarzonych z tą ramką stosu.  
+ Reprezentacja z górnym zakresem adresów fizycznych skojarzonych z tą ramką stosu.  
   
  `fFinal`  
- Flaga wskazująca, że ramki jest przetwarzany.  
+ Flaga wskazująca, że ramka jest przetwarzana.  
   
  `punkFinal`  
- Jeśli ten parametr nie jest `NULL`, powinna zostać przerwana w bieżącym modułu wyliczającego, scalanie i nowe hasło, które mają być uruchamiane. Obiekt wskazuje, jak uruchomić nowe wyliczenie.  
+ Jeśli ten parametr nie jest `NULL`, bieżące scalenie modułu wyliczającego powinno zostać zatrzymane i należy uruchomić nowy. Obiekt wskazuje, jak rozpocząć nowe Wyliczenie.  
   
 ## <a name="remarks"></a>Uwagi  
- Menedżer debugowania procesów używa tej struktury, aby posortować ramek stosu z wielu aparatów skryptów. Zgodnie z Konwencją stosów rosnąć w dół. W związku z tym w architekturach, w którym stosy rozwój, adresy powinna być uzupełniony parami.  
+ Menedżer debugowania procesów używa tej struktury do sortowania ramek stosu z wielu aparatów skryptów. Według Konwencji, stosy rosną. W związku z tym w przypadku architektury, w których stosy rosną, adresy powinny być parach-uzupełnione.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadState | Microsoft Docs
+title: 'IActiveScript:: GetScriptThreadState | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0066894830c111a8e0ad18f7acdc09d6114162e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f6ef4b0acdf6e3b746316bef8abe9a3f0f8225
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935613"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72578006"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
 Pobiera bieżący stan wątku skryptu.  
@@ -38,27 +38,27 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>Parametry  
  `stidThread`  
- [in] Identyfikator wątku, dla którego pożądany jest stan, lub jeden z następujących identyfikatorów specjalne wątku:  
+ podczas Identyfikator wątku, dla którego jest potrzebny stan, lub jeden z następujących identyfikatorów specjalnych wątków:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTTHREADID_BASE|Podstawowy wątek; oznacza to wątek, w którym skryptów aparatu została utworzona.|  
+|SCRIPTTHREADID_BASE|Wątek podstawowy; oznacza to, że wątek, w którym utworzono wystąpienie aparatu skryptów.|  
 |SCRIPTTHREADID_CURRENT|Aktualnie wykonywany wątek.|  
   
  `pstsState`  
- [out] Adres zmiennej, która otrzymuje stan wskazany wątku. Stan jest wskazywany przez jedno nazwane wartości stałe zdefiniowane przez [wyliczenie SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md) wyliczenia. Jeśli ten parametr wskazuje bieżący wątek, stan może się zmienić w dowolnym momencie.  
+ określoną Adres zmiennej, która odbiera stan wskazanego wątku. Stan jest wskazywany przez jedną z nazwanych stałych określonych przez Wyliczenie [wyliczenia SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md) . Jeśli ten parametr nie identyfikuje bieżącego wątku, stan może się zmienić w dowolnym momencie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
+|`S_OK`|Prawnego.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów nie został jeszcze załadowany lub zainicjowany).|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda może być wywołana z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
+ Ta metoda może być wywoływana z wątków niebazowych bez wypełniania niepodstawowego wywołania obiektów hosta lub interfejsu [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::GetThreadContext, metoda | Dokumentacja firmy Microsoft
+title: 'IJsDebugDataTarget:: GetThreadContext — — Metoda | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7904ef81eb900c6466069267101f30d89e362a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da5722553b448605129adcf32cfaa52e2dc76352
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582836"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577655"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>IJsDebugDataTarget::GetThreadContext — Metoda
-Pobiera kontekst dla podanego wątku.  
+Pobiera kontekst dla danego wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,21 +38,21 @@ HRESULT GetThreadContext(
   
 #### <a name="parameters"></a>Parametry  
  `threadId`  
- [in] Wątek działający w procesie docelowym.  
+ podczas Wątek działający w procesie docelowym.  
   
  `contextFlags`  
- [in] Określa flagi kontekstu. Jest tak samo jak w przypadku pola ContextFlags KONTEKSTU (Aby uzyskać więcej informacji, zobacz plik winnt.h, Szukaj CONTEXT_ALL).  
+ podczas Określa flagi kontekstu. Jest to takie samo jak pole ContextFlags kontekstu (Aby uzyskać więcej informacji, zobacz Winnt. h, Search for CONTEXT_ALL).  
   
  `contextSize`  
- [in] Rozmiar buforu określony przez pContext.  
+ podczas Rozmiar buforu określony przez pContext.  
   
  `pContext`  
- [out] Odbiera strukturę CONTEXT specyficzną dla platformy do buforu określonego przez pContext.  
+ określoną Odbiera strukturę kontekstu specyficzną dla platformy do buforu określonego przez pContext.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)
