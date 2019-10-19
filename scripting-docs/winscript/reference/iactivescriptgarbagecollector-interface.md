@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptGarbageCollector Interface | Microsoft Docs
+title: Interfejs IActiveScriptGarbageCollector | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,21 +11,21 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b53a53c03a7b76050c8d4264048f0549f5142183
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e495f89f97ba645bb6131176fa15f1d2aa55c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009440"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573567"
 ---
 # <a name="iactivescriptgarbagecollector-interface"></a>Interfejs IActiveScriptGarbageCollector
-Udostępnia metodę, aby rozpocząć wyrzucania elementów bezużytecznych. Ten interfejs należy ją zaimplementować za aparatów aktywnego skryptu, które chcesz wyczyścić swoje zasoby.  
+Udostępnia metodę uruchamiania odzyskiwania pamięci. Ten interfejs powinien być zaimplementowany przez aparaty aktywnych skryptów, które chcą oczyścić swoje zasoby.  
   
 ## <a name="methods"></a>Metody  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)|Uruchamia wyrzucanie elementów bezużytecznych.|  
+|[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)|Uruchamia odzyskiwanie pamięci.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Interfejsy aktywnego skryptu](../../winscript/reference/active-script-interfaces.md)

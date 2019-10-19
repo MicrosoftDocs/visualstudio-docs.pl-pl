@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::GetScriptletTextAttributes | Dokumentacja firmy Microsoft
+title: 'IActiveScriptDebug:: GetScriptletTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 781282b5c825954ada4fbb35daa2a97b379c3f13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a5dd9e219e51b001659225636396fe45ac815b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955045"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572811"
 ---
 # <a name="iactivescriptdebuggetscriptlettextattributes"></a>IActiveScriptDebug::GetScriptletTextAttributes
-Zwraca atrybuty tekstu dla dowolnego scriptlet.  
+Zwraca atrybuty tekstu dla dowolnych Scriptlet.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,41 +41,41 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `pstrCode`  
- [in] Tekstu scriptlet. Ten ciąg nie muszą być zakończone znakiem null.  
+ podczas Tekst Scriptlet. Ten ciąg nie może być zakończony znakiem null.  
   
  `uNumCodeChars`  
- [in] Liczba znaków w tekstu scriptlet.  
+ podczas Liczba znaków w tekście Scriptlet.  
   
  `pstrDelimiter`  
- [in] Adres ogranicznika końcowego scriptlet. Gdy `pstrCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika, takiego jak dwa pojedyncze cudzysłowy ("), aby wykrywać koniec scriptletu. Ten parametr określa ogranicznik używany przez hosta, dzięki czemu silnik wykonywania skryptów zapewnić pierwotne przetwarzanie warunkowe (na przykład, zastępując pojedynczy znak cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użytku w roli ogranicznika). Dokładnie jak (i czy) używa aparatu skryptów, te informacje zależy od silnika wykonywania skryptów. Ustaw ten parametr na wartość NULL, jeśli host nie korzystał z ogranicznika do oznaczenia końca scriptlet.  
+ podczas Adres ogranicznika końca Scriptlet. Gdy `pstrCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika, takiego jak dwa znaki pojedynczego cudzysłowu (' '), aby wykryć koniec Scriptlet. Ten parametr określa ogranicznik używany przez hosta, który umożliwia aparatowi obsługi skryptów dostarczenie pewnych warunkowego przetwarzania wstępnego (na przykład zastępowanie pojedynczego cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użycia jako ogranicznika). Dokładnie tak, jak (i jeśli) aparat skryptów używa tych informacji, zależy od aparatu skryptów. Ustaw ten parametr na wartość NULL, Jeśli host nie używał ogranicznika do oznaczenia końca Scriptlet.  
   
  `dwFlags`  
- [in] Flagi skojarzone ze scriptlet. Może być kombinacją tych wartości:  
+ podczas Flagi skojarzone z Scriptlet. Może być kombinacją następujących wartości:  
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Wskazuje, że operatory kropka i identyfikatory powinny identyfikowany za pomocą flagi SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP, odpowiednio.|  
-|GETATTRFLAG_THIS|0x0100|Wskazuje, że identyfikator dla bieżącego obiektu powinny zostać określone z flagą SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Wskazuje, czy ciąg tekstu zawartości i komentarz powinny zostać określone z flagą SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Wskazuje, że identyfikatory i operatory kropek powinny być identyfikowane odpowiednio flagami SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRFLAG_THIS|0x0100|Wskazuje, że identyfikator dla bieżącego obiektu powinien być zidentyfikowany przy użyciu flagi SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Wskazuje, że zawartość ciągu i tekst komentarza powinny być identyfikowane przy użyciu flagi SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [out w] Bufor do przechowywania atrybutów zwracane.  
+ [in. out] Bufor zawierający zwrócone atrybuty.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Hosta inteligentnego, który implementuje `IDebugDocumentText` interfejsu ta metoda umożliwia delegowanie wywołań `IDebugDocumentText::GetText` metody.  
+ Inteligentny host implementujący interfejs `IDebugDocumentText` może używać tej metody do delegowania wywołań do metody `IDebugDocumentText::GetText`.  
   
- To wywołanie jest dostarczane, ponieważ skryptlety są wyrażenia, a także mogą mieć innej składni niż blok skryptu. Jeśli mają tę samą składnię, implementacja tej metody będzie taka sama jak implementacja `GetScriptTextAttributes` metody.  
+ To wywołanie jest dostarczone, ponieważ skryptlety ma być wyrażeniami i może mieć inną składnię niż blok skryptu. Jeśli mają tę samą składnię, implementacja tej metody będzie taka sama jak implementacja metody `GetScriptTextAttributes`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)   
- [IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)   
- [Interfejs IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)   
- [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptDebug   interfejsu](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [IActiveScriptDebug:: GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)    
+ [IDebugDocumentText   interfejsu](../../winscript/reference/idebugdocumenttext-interface.md)  
+ [IDebugDocumentText:: gettext](../../winscript/reference/idebugdocumenttext-gettext.md)    
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetLCID | Microsoft Docs
+title: 'IActiveScriptSite:: GetLcid | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6ebcfec9764aae98f7d74ac98e0c88ecec7c4da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913ca23ac687fdd080a778afb1dcba2e4dcdd6b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992765"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570740"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
-Pobiera identyfikator ustawień regionalnych skojarzoną z interfejsem użytkownika hosta. Aparat skryptów używa identyfikatora, aby upewnić się, że ciągi błędów i inne elementy interfejsu użytkownika, generowane przez aparat są wyświetlane w odpowiednim języku.  
+Pobiera identyfikator ustawień regionalnych skojarzony z interfejsem użytkownika hosta. Aparat skryptów używa identyfikatora, aby upewnić się, że ciągi błędów i inne elementy interfejsu użytkownika wygenerowane przez aparat pojawiają się w odpowiednim języku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,19 +37,19 @@ HRESULT GetLCID(
   
 #### <a name="parameters"></a>Parametry  
  `plcid`  
- [out] Adres zmiennej, która odbiera identyfikator ustawień regionalnych dla elementów interfejsu użytkownika wyświetlany przez silnik wykonywania skryptów.  
+ określoną Adres zmiennej, która otrzymuje identyfikator ustawień regionalnych dla elementów interfejsu użytkownika wyświetlanych przez aparat skryptów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
-|`E_NOTIMPL`|Ta metoda nie jest zaimplementowana. Użyj ustawienia regionalne zdefiniowane przez system.|  
+|`S_OK`|Prawnego.|  
+|`E_NOTIMPL`|Ta metoda nie jest zaimplementowana. Użyj zdefiniowanych przez system ustawień regionalnych.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli ta metoda zwraca `E_NOTIMPL`, zdefiniowaną przez system identyfikator ustawień regionalnych, które powinny być używane.  
+ Jeśli ta metoda zwróci `E_NOTIMPL`, należy użyć identyfikatora ustawień regionalnych zdefiniowanych przez system.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

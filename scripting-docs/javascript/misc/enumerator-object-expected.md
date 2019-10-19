@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano obiektu wyliczenia | Dokumentacja firmy Microsoft
+title: Oczekiwano obiektu modułu wyliczającego | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06005f635e5173e903cfba6a952750d64181d0bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90b6b923f631c7785428a1b3879528e97c1bfd6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946345"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572867"
 ---
 # <a name="enumerator-object-expected"></a>Oczekiwano obiektu wyliczenia
-Podjęto próbę wywołania **Enumerator.prototype.atEnd, Enumerator.prototype.item, Enumerator.prototype.moveFirst,** lub **Enumerator.prototype.moveNext** metody na obiekt typu innych niż `Enumerator`. Obiekt tego typu wywołania musi być typu `Enumerator`. Poniżej przedstawiono przykładowy kod, która narusza tę regułę:  
+Podjęto próbę wywołania metody **Enumerator. prototype. atEnd, Enumerator. prototype. Item, Enumerator. prototype. MoveFirst** lub **Enumerator. prototype. MoveNext** na obiekcie typu innego niż `Enumerator`. Obiekt tego typu wywołania musi być typu `Enumerator`. Oto przykład kodu, który dzieli tę regułę:  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,11 +32,11 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Tylko wywołania **Enumerator.prototype.atEnd**, **Enumerator.prototype.item**, **Enumerator.prototype.moveFirst**, lub  **Enumerator.prototype.moveNext** metod obiektów typu `Enumerator`. Aby sprawdzić, czy obiekt jest `Enumerator` obiektu, należy użyć:  
+- Wywołaj metody **Enumerator. prototype. atEnd**, **Enumerator. prototype. Item**, **Enumerator. prototype. MoveFirst**lub **Enumerator. prototype. MoveNext** dla obiektów typu `Enumerator`. Aby dowiedzieć się, czy obiekt jest obiektem `Enumerator`, użyj:  
   
     ```js
     if(x instanceof Enumerator)  
     ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Enumerator, obiekt](../../javascript/reference/enumerator-object-javascript.md)

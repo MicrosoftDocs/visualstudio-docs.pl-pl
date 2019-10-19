@@ -1,5 +1,5 @@
 ---
-title: Stałe SCRIPTTHREADID | Dokumentacja firmy Microsoft
+title: Stałe SCRIPTTHREADID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfbb39d10d552141a68d40a7be3f1715a80f8f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf1b23b191bda29b00bf29f482332301897f9f37
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840207"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575671"
 ---
 # <a name="scriptthreadid-constants"></a>Stałe SCRIPTTHREADID
-Umożliwia określenie typu wątku.  
+Służy do określania typu wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,14 +38,14 @@ typedef DWORD SCRIPTTHREADID;
 |Stała|Wartość|Znaczenie|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Aktualnie wykonywany wątek.|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|Podstawowy wątek; oznacza to wątek, w którym skryptów aparatu została utworzona.|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|Wątek podstawowy; oznacza to, że wątek, w którym utworzono wystąpienie aparatu skryptów.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Wszystkie wątki.|  
   
 ## <a name="remarks"></a>Uwagi  
- `SCRIPTTHREADID` Typ jest używany przez `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, i `IActiveScript::InterruptScriptThread`, ale stałe mogą być używane tylko przez `IActiveScript::GetScriptThreadState` i `IActiveScript::InterruptScriptThread`.  
+ Typ `SCRIPTTHREADID` jest używany przez `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` i `IActiveScript::InterruptScriptThread`, ale stałe mogą być używane tylko przez `IActiveScript::GetScriptThreadState` i `IActiveScript::InterruptScriptThread`.  
   
-## <a name="see-also"></a>Zobacz też  
- [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
- [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
- [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
+ [IActiveScript:: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)    
+ [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

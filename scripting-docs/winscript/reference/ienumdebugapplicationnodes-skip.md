@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Skip | Microsoft Docs
+title: 'IEnumDebugApplicationNodes:: Skip | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97880e6a40efefa5f3643b474ba5d731f8dc3630
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def20df8ee38763856fb33d6410788c934f541a5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951478"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573025"
 ---
 # <a name="ienumdebugapplicationnodesskip"></a>IEnumDebugApplicationNodes::Skip
-Pomija określoną liczbę segmentów w kolejności wyliczenia.  
+Pomija określoną liczbę segmentów w sekwencji wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba segmentów w kolejności wyliczenie, aby pominąć.  
+ podczas Liczba segmentów w sekwencji wyliczenia do pominięcia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda pomija określoną liczbę segmentów w kolejności wyliczenia.  
+ Ta metoda pomija określoną liczbę segmentów w sekwencji wyliczenia.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IEnumDebugApplicationNodes, interfejs](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

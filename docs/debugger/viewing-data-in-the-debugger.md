@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowych widoków danych w debugerze | Dokumentacja firmy Microsoft
+title: Tworzenie niestandardowych widoków danych w debugerze | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,27 +19,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929991"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568999"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Tworzenie niestandardowych widoków danych w debugerze programu Visual Studio (C#, Visual Basic, C++)
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger udostępnia wiele narzędzi do inspekcji i modyfikacji stanu programu. Większość tych narzędzi działa tylko w trybie przerwania.
+Debuger [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia wiele narzędzi do sprawdzania i modyfikowania stanu programu. Większość z tych narzędzi działa tylko w trybie przerwania.
 
-## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Tworzenie niestandardowych widoków danych w oknach zmiennych i etykietki danych
+## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Tworzenie niestandardowych widoków danych w oknach zmiennych i na etykietkach
 
- Wiele [okna debugera](../debugger/debugger-windows.md), takich jak **Autos** i **Obejrzyj** systemu windows, pozwalają na sprawdzanie zmiennych. Można dostosować sposób C++ typów zarządzanych obiektów i własne typy są wyświetlane w oknach zmiennych debugera, a w [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych widoków C++ obiektów](../debugger/create-custom-views-of-native-objects.md) i [Tworzenie niestandardowych widoków obiektów](../debugger/create-custom-views-of-dot-managed-objects.md).
+ Wiele [okien debugera](../debugger/debugger-windows.md), takich jak okna **autouzupełniania** i **czujki** , umożliwiają inspekcję zmiennych. Możesz dostosować sposób, C++ w jaki typy, obiekty zarządzane i własne typy są wyświetlane w oknach zmiennych debugera i w [etykietkach](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)danych. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych widoków C++ obiektów](../debugger/create-custom-views-of-native-objects.md) i [Tworzenie widoków niestandardowych obiektów zarządzanych](../debugger/create-custom-views-of-managed-objects.md).
 
-## <a name="create-custom-visualizers"></a>Tworzenie niestandardowych wizualizatorów
+## <a name="create-custom-visualizers"></a>Tworzenie wizualizacji niestandardowych
 
- Wizualizatory umożliwiają wyświetlanie zawartości zmiennej lub obiektu w znaczący sposób. W debugerze programu Visual Studio wizualizatora odnosi się do innego systemu windows, które można otworzyć za pomocą ikonę lupy ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ikonę Wizualizator") ikony. Na przykład wizualizatora HTML pokazuje, jak byłby interpretowany i wyświetlany w przeglądarce ciągu HTML. Dostęp wizualizatorów można uzyskać poprzez DataTips, **Obejrzyj** oknie **Autos** oknie i **lokalne** okna. **QuickWatch** okno dialogowe udostępnia również wizualizatora. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md).
+ Wizualizatory umożliwiają wyświetlanie zawartości obiektu lub zmiennej w zrozumiały sposób. W debugerze programu Visual Studio, wizualizator odwołuje się do różnych okien, które można otworzyć za pomocą ikony lupy ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Ikona wizualizatora") . Na przykład wizualizator HTML pokazuje, jak ciąg HTML będzie interpretowany i wyświetlany w przeglądarce. Można uzyskać dostęp do wizualizatorów ze wskazówek dotyczących danych, okna **czujki** , okna **Autostart** i okna **zmiennych lokalnych** . Okno dialogowe **QuickWatch** zawiera również wizualizator. Aby uzyskać więcej informacji, zobacz [Tworzenie wizualizacji niestandardowych](../debugger/create-custom-visualizers-of-data.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
-- [Okno polecenia](../ide/reference/command-window.md)
+- [okno Polecenie](../ide/reference/command-window.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

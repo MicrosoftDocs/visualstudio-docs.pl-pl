@@ -1,5 +1,5 @@
 ---
-title: Struktura TEXT_DOCUMENT_ARRAY | Dokumentacja firmy Microsoft
+title: Struktura TEXT_DOCUMENT_ARRAY | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d188729b68f8086da62d40ca28fc29945c8be7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b52b382aa1e91e509672728a3c8f931bfeae27a9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840060"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572974"
 ---
-# <a name="textdocumentarray-structure"></a>Struktura TEXT_DOCUMENT_ARRAY
-Tablica [interfejs IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md) obiektów. Elementy członkowskie są przydzielane przy użyciu CoTaskMemAlloc.  
+# <a name="text_document_array-structure"></a>Struktura TEXT_DOCUMENT_ARRAY
+Tablica obiektów [interfejsu IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md) . Elementy członkowskie są przydzieleni do CoTaskMemAlloc.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,5 +36,5 @@ typedef struct tagTEXT_DOCUMENT_ARRAY{    DWORD dwCount;    [size_is(dwCount)] I
  `Members`  
  Zestaw dokumentów.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

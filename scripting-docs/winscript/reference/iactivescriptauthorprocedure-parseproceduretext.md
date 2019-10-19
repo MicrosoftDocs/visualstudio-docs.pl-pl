@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure::ParseProcedureText | Microsoft Docs
+title: IActiveScriptAuthorProcedure::P arseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c513b105a483d0f80510dff9c91fa2c3f09e0523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11a34843f30274ec78f1652c5ed5cd4dbcf2884a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955162"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572817"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-Analizuje kod procedury, dodaje tekst procedury kodu do skryptu tworzenia aparatu i tworzy `IScriptEntry` obiekt, który odnosi się do procedury kodu.  
+Analizuje procedurę kodu, dodaje tekst procedury kodu do aparatu tworzenia skryptów i tworzy obiekt `IScriptEntry`, który odnosi się do procedury kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,38 +44,38 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parametry  
  `pszCode`  
- [in] Tekst skryptu można przeanalizować.  
+ podczas Tekst skryptu do analizy.  
   
  `pszFormalParams`  
- [in] Adres nazwy parametrów formalnych w procedurze. Nazwy parametrów muszą być rozdzielone odpowiednie ograniczniki skryptu tworzenia aparatu. Nazwy nie powinna zostać ujęta w nawiasy.  
+ podczas Adres formalnych nazw parametrów dla procedury. Nazwy parametrów muszą być oddzielone odpowiednimi ogranicznikami dla aparatu tworzenia skryptów. Nazwy nie powinny być ujęte w nawiasy.  
   
  `pszProcedureName`  
- [in] Adres nazwa procedury, która ma być analizowany.  
+ podczas Adres nazwy procedury, która ma zostać przeanalizowana.  
   
  `pszItemName`  
- [in] Skojarzony adres buforu, który zawiera nazwę elementu `IScriptEntry` obiektu.  
+ podczas Adres buforu, który zawiera nazwę elementu skojarzoną z obiektem `IScriptEntry`.  
   
  `pszDelimiter`  
- [in] Adres ogranicznika końcowego elementu skrypt bloku. Gdy `pszCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika (takie jak dwa pojedyncze cudzysłowy), na końcu bloku skryptu do wykrywania. Ustaw ten parametr na wartość NULL, jeśli nie było ogranicznika do oznaczenia końca bloku skryptu.  
+ podczas Adres ogranicznika bloku End-of-Script. Gdy `pszCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika (takiego jak dwa znaki pojedynczego cudzysłowu) w celu wykrycia końca bloku skryptu. Ustaw ten parametr na wartość NULL, jeśli nie ma ogranicznika, aby oznaczyć koniec bloku skryptu.  
   
  `dwCookie`  
- [in] Zdefiniowane przez aplikację wartość skojarzoną z nowymi `IScriptEntry` obiektu.  
+ podczas Zdefiniowana przez aplikację wartość, która jest skojarzona z nowym obiektem `IScriptEntry`.  
   
  `dwFlags`  
- [in] Nie jest używany.  
+ podczas Nieużywane.  
   
  `pdispFor`  
- [in] Nie jest używany.  
+ podczas Nieużywane.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Bieżący [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparat nie obsługuje tej metody.  
+ Bieżący aparat [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] nie implementuje tej metody.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptAuthorProcedure, interfejs](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CauseBreak | Microsoft Docs
+title: 'IRemoteDebugApplication:: CauseBreak | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce0ebe3b32b11bdd79884504233b3f4e09a035f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8107d7f8450df759b53175505c8d7fc2b6bde641
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944339"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571509"
 ---
 # <a name="iremotedebugapplicationcausebreak"></a>IRemoteDebugApplication::CauseBreak
-Powoduje, że aplikacja wkroczenia do debugera przy najbliższej sposobności.  
+Powoduje, że aplikacja przerywa się w debugerze w najwcześniejszym możliwym czasie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,14 +37,14 @@ HRESULT CauseBreak();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołanie tej metody nie powoduje aplikacji natychmiast przerywa. Jeśli aplikacja nie jest aktualnie wykonuje kod skryptu, długi czas może upłynąć, zanim aplikacja faktycznie przerywa.  
+ Wywołanie tej metody nie powoduje natychmiastowego przerwania aplikacji. Jeśli aplikacja nie wykonuje obecnie kodu skryptu, długi czas może upłynąć, zanim aplikacja rzeczywiście się przerwie.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

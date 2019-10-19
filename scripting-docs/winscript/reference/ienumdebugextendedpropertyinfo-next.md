@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Next | Dokumentacja firmy Microsoft
+title: 'IEnumDebugExtendedPropertyInfo:: Next | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65e734d1cf57fe9387407a80c9d3e76d7f53ada8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 23ebc3e3fd1f7802f4630be42a594d73f8657e43
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963496"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574259"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
-Pobiera określoną liczbę`ExtendedDebugPropertyInfo` struktur w kolejności wyliczenia.  
+Pobiera określoną liczbę struktur `ExtendedDebugPropertyInfo` w sekwencji wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,17 +39,17 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba `ExtendedDebugPropertyInfo`struktur, które mają zostać pobrane.  
+ podczas Liczba `ExtendedDebugPropertyInfo`structures do pobrania.  
   
  `rgelt`  
- [out] Tablica `ExtendedDebugPropertyInfo` struktury pobierane.  
+ określoną Pobrano tablicę struktur `ExtendedDebugPropertyInfo`.  
   
  `pceltFetched`  
- [out] Liczba `ExtendedDebugPropertyInfo` struktury faktycznego pobrania.  
+ określoną Liczba aktualnie pobranych struktur `ExtendedDebugPropertyInfo`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
+ Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
-## <a name="see-also"></a>Zobacz też  
- [IEnumDebugExtendedPropertyInfo Interface](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IEnumDebugExtendedPropertyInfo   interfejsu](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
  [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

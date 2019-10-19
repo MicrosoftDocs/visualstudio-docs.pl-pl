@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a66556e9476631fa0372b14e73eb8c6241fc63
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
-ms.translationtype: HT
+ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314204"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572486"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. przeglądanie, komentowanie i testowanie kodu
 
@@ -65,7 +65,7 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
     > [!TIP]
     > Środowisko IDE zostało skompilowane, aby ułatwić pisanie kodu, a *fragmenty kodu* są jednym ze sposobów. Fragment kodu jest skrótem, który jest rozwinięty w niewielkim bloku.
     >
-    >  Zobaczysz wszystkie dostępne fragmenty kodu. Na pasku menu wybierz kolejno opcje **narzędzia**  > **kod fragmenty kodu**. W C#przypadku, fragment `if` znajduje się **w C# wizualizacji** . W przypadku Visual Basic, fragmenty kodu `if` są w **warunkach i pętle**  > **wzorców**. Za pomocą tego menedżera można przeglądać istniejące fragmenty kodu lub dodawać własne fragmenty kodu.
+    >  Zobaczysz wszystkie dostępne fragmenty kodu. Na pasku menu wybierz kolejno opcje **narzędzia**  > **kod fragmenty kodu**. W C#przypadku, fragment `if` znajduje się **w C# wizualizacji** . W przypadku Visual Basic fragmenty kodu `if` znajdują się w **wzorcach** ,  > **warunkowe i pętle**. Za pomocą tego menedżera można przeglądać istniejące fragmenty kodu lub dodawać własne fragmenty kodu.
     >
     >  Aby uaktywnić fragment kodu przy wpisywaniu tekstu, wpisz go i wybierz klawisz **Tab** . Wiele fragmentów kodu pojawia się w oknie **IntelliSense** , co oznacza, że wybierasz klawisz **Tab** dwa razy: najpierw, aby wybrać wstawkę z okna **IntelliSense** , a następnie wskazać, że IDE używa tego fragmentu kodu. (Technologia IntelliSense obsługuje fragment kodu `if`, ale nie fragment `ifelse`).
 

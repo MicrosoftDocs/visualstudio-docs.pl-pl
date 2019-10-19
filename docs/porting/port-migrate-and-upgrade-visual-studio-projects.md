@@ -1,7 +1,7 @@
 ---
 title: Przenoszenie, migrowanie i uaktualnianie projektów
-description: Odwołanie do pomocy technicznej w programie Visual Studio 2017 dla projektów utworzonych we wcześniejszych wersjach programu Visual Studio i sposobu, w jaki program Visual Studio decyduje o konieczności migracji projektu.
-ms.date: 04/16/2019
+description: Odwołanie do obsługi projektów utworzonych w obecnej i wcześniejszych wersjach programu Visual Studio.
+ms.date: 10/17/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,18 +19,18 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 97eaada072a4ff0038ae7b57810b0d3318df1035
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
-ms.translationtype: HT
+ms.openlocfilehash: 7a348693dcae89c7d27b12f80dd4e21534a7bdec
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314176"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574147"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Dokumentacja migracji i uaktualniania projektu dla programu Visual Studio
 
 ::: moniker range="vs-2017"
 
-Każda nowa wersja programu Visual Studio zwykle obsługuje większość poprzednich typów projektów, plików i innych zasobów. Możesz z nich korzystać, [gdy wszystko jest zawsze dostępne](../ide/solutions-and-projects-in-visual-studio.md), a pod warunkiem, że nie zależą od nowszych funkcji, program Visual Studio zwykle próbuje zachować zgodność wsteczną z poprzednimi wersjami, takimi jak Visual Studio 2015, Visual Studio 2013 i visual Studio 2012. (Zobacz [Informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes/) , dla których funkcje są specyficzne dla których wersji).
+Każda wersja programu Visual Studio zwykle obsługuje większość poprzednich typów projektów, plików i innych zasobów. Można z nich korzystać, [gdy zawsze się znajdują](../ide/solutions-and-projects-in-visual-studio.md), i pod warunkiem, że nie zależą od nowszych funkcji, program Visual Studio próbuje zachować zgodność wstecz z poprzednimi wersjami, takimi jak Visual Studio 2015, Visual Studio 2013 i visual Studio 2012. (Zobacz [Informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes/) , dla których funkcje są specyficzne dla których wersji).
 
 Obsługa niektórych typów projektów zmienia się również w miarę upływu czasu. Nowsza wersja programu Visual Studio może nie obsługiwać już niektórych projektów lub wymaga aktualizacji projektu, tak aby nie był już zgodny z poprzednią wersją. Bieżący stan problemów dotyczących migracji można znaleźć w [witrynie społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com).
 
@@ -72,7 +72,7 @@ Jeśli nie widzisz w tym miejscu projektu lub typu pliku, który powinien być o
 | Visual Studio Tools for Apache Cordova | Projekty mogą być otwierane w programie Visual Studio 2017, ale nie są zgodne z poprzednimi wersjami. Podczas otwierania projektu z programu Visual Studio 2015 zostanie wyświetlony monit o zezwolenie na modyfikacje projektu. Ta modyfikacja uaktualnia projekt do korzystania z zestawów narzędzi zamiast pliku `taco.json` w celu zarządzania przechowywaniem wersji biblioteki oprogramowania Cordova, jej platform, wtyczek i jej zależności węzłów/npm. Więcej informacji można znaleźć w [przewodniku migracji](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) . |
 | Wdrażanie w sieci Web (WDPROJ) | Obsługa projektów wdrażania w sieci Web została usunięta w programie Visual Studio 2012 z dodatkiem obsługa profilu publikowania. Ponieważ nie ma odpowiednika w programie Visual Studio 2017, nie istnieje automatyczna ścieżka migracji dla takich projektów. Zamiast tego Otwórz plik WDPROJ w edytorze tekstu i skopiuj wszystkie dostosowania do pliku pubxml (Publish profil) zgodnie z opisem w temacie [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Możesz otworzyć ten projekt w programie Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 i Visual Studio 2012 |
-| Windows Presentation Foundation | Możesz otworzyć ten projekt w Visual Studio 2013, Visual Studio 2012 i Visual Studio 2010 z dodatkiem SP1. |
+| Windows Presentation Foundation | Możesz otworzyć ten projekt w programie Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 i Visual Studio 2010 SP1. |
 | Aplikacje ze sklepu Windows/Phone | Projekty dla Sklepu Windows 8,1 i 8,0 oraz Windows Phone 8,1 i 8,0 nie są obsługiwane w programie Visual Studio 2017. Aby obsługiwać te aplikacje, należy nadal używać programu Visual Studio 2015. Aby obsługiwać projekty systemu Windows Phone 7.x, należy używać programu Visual Studio 2012. |
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Jak program Visual Studio decyduje o czasie migracji projektu
@@ -112,11 +112,11 @@ Więcej informacji można znaleźć w następujących artykułach:
 
 ::: moniker range="vs-2019"
 
-Każda nowa wersja programu Visual Studio zwykle obsługuje większość poprzednich typów projektów, plików i innych zasobów. Możesz z nich korzystać, [gdy wszystko jest zawsze dostępne](../ide/solutions-and-projects-in-visual-studio.md), a pod warunkiem, że nie zależą od nowszych funkcji, program Visual Studio zwykle próbuje zachować zgodność wsteczną z poprzednimi wersjami, takimi jak visual Studio 2017, visual Studio 2015, Visual Studio 2013 i Program Visual Studio 2012. (Zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes/) , dla których funkcje są specyficzne dla których wersji).
+Każda nowa wersja programu Visual Studio zwykle obsługuje większość poprzednich typów projektów, plików i innych zasobów. Można z nich korzystać, [gdy wszystko jest zawsze dostępne](../ide/solutions-and-projects-in-visual-studio.md), a pod warunkiem, że nie zależą od nowszych funkcji, program Visual Studio próbuje zachować zgodność z poprzednimi wersjami, takimi jak visual Studio 2017, visual Studio 2015, Visual Studio 2013 i Visual Studio 2012. (Zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes/) , dla których funkcje są specyficzne dla których wersji).
 
-Obsługa niektórych typów projektów zmienia się również w miarę upływu czasu. Nowsza wersja programu Visual Studio może nie obsługiwać już niektórych projektów lub może wymagać aktualizacji projektu, aby nie był już zgodny z poprzednimi wersjami. Bieżący stan problemów dotyczących migracji można znaleźć w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com).
+Obsługa niektórych typów projektów zmienia się w czasie. Nowsza wersja programu Visual Studio może nie obsługiwać już niektórych projektów lub może wymagać aktualizacji projektu, aby nie był już zgodny z poprzednimi wersjami. Bieżący stan problemów dotyczących migracji można znaleźć w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com).
 
-Ten artykuł zawiera szczegółowe informacje dotyczące typów projektów, które program Visual Studio 2019 może migrować. Zawiera również szczegółowe informacje o typach projektów, które są przestarzałe w programie Visual Studio 2019 lub wkrótce są przestarzałe. Artykuł wyklucza typy projektów, które nie są już obsługiwane w programie Visual Studio 2019 i dlatego nie można przeprowadzić migracji. Artykuł wyklucza również obsługiwane typy projektów, które nie mają problemów z migracją; Ta lista jest dostępna na [platformie docelowej i zgodności](/visualstudio/releases/2019/compatibility).
+Ten artykuł zawiera szczegółowe informacje dotyczące typów projektów, które program Visual Studio 2019 może migrować. Zawiera również informacje o typach projektów, które są przestarzałe w programie Visual Studio 2019 lub wkrótce są przestarzałe. Artykuł wyklucza typy projektów, które nie są już obsługiwane w programie Visual Studio 2019 i dlatego nie można przeprowadzić migracji. Artykuł wyklucza również obsługiwane typy projektów, które nie mają problemów z migracją; Ta lista jest dostępna na [platformie docelowej i zgodności](/visualstudio/releases/2019/compatibility).
 
 > [!IMPORTANT]
 > Niektóre typy projektów wymagają zainstalowania określonych obciążeń za pomocą Instalator programu Visual Studio. Jeśli nie masz zainstalowanego obciążenia, program Visual Studio zgłosi nieznany lub niezgodny typ projektu. W takim przypadku Sprawdź opcje instalacji i spróbuj ponownie. Zobacz artykuł dotyczący [platformy i zgodności](/visualstudio/releases/2019/compatibility) , aby uzyskać szczegółowe informacje o obsłudze projektu w programie Visual Studio 2019.
@@ -162,7 +162,7 @@ Jeśli nie widzisz w tym miejscu projektu lub typu pliku, który powinien być o
 | Visual Studio Tools for Apache Cordova | Obsługa Apache Cordova została usunięta w programie Visual Studio 2019. Ponieważ nie ma odpowiednika w programie Visual Studio 2019, nie istnieje automatyczna ścieżka migracji dla takich projektów.<br/><br/>Możesz użyć rozszerzenia narzędzi Cordova Tools for Visual Studio Code (zapewnia obsługę najnowszej wersji oprogramowania Cordova) lub kontynuować korzystanie z programu Visual Studio 2017. |
 | Wdrażanie w sieci Web (WDPROJ) | Obsługa projektów wdrażania w sieci Web została usunięta w programie Visual Studio 2012 z dodatkiem obsługa profilu publikowania. Ponieważ nie ma odpowiednika w programie Visual Studio 2019, nie istnieje automatyczna ścieżka migracji dla takich projektów. Zamiast tego Otwórz plik WDPROJ w edytorze tekstu i skopiuj wszystkie dostosowania do pliku pubxml (Publish profil) zgodnie z opisem w temacie [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Możesz otworzyć ten projekt w programie Visual Studio 2019, Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 i Visual Studio 2012. |
-| Windows Presentation Foundation | Możesz otworzyć ten projekt w programie Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 i Visual Studio 2010 SP1. |
+| Windows Presentation Foundation | Możesz otworzyć ten projekt w programie Visual Studio 2019, Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 i Visual Studio 2010 z dodatkiem SP1. |
 | Aplikacje Windows Phone | Projekty dla Windows Phone nie są obsługiwane w programie Visual Studio 2019. <br/><br/>Aby obsługiwać aplikacje Windows Phone 8. x, użyj programu Visual Studio 2015. Aby obsługiwać projekty systemu Windows Phone 7.x, należy używać programu Visual Studio 2012. |
 | Aplikacje Windows Store | Projekty uniwersalne systemu Windows w języku JavaScript nie są obsługiwane w programie Visual Studio 2019. Aby zachować te projekty, użyj programu Visual Studio 2017. <br/><br/>Zestawy SDK systemu Windows 10 przed aktualizacją programu Windows 10 dla twórców (kompilacja 16299) zostały usunięte z Instalatora programu Visual Studio 2019. Starsze zestawy SDK można pobrać ręcznie lub przekierować projekty, aby użyć nowszych zestawów SDK.<br/><br/>Projekty uniwersalne systemu Windows korzystające z pliku Project. JSON nie są obsługiwane. Zalecamy uaktualnienie tych projektów do korzystania z odwołań do pakietów. Alternatywnie Dodaj odwołanie do Microsoft. NET. test. SDK w wersji 16.0.0.0 w pliku Project. JSON.<br/><br/>Projekty dla Sklepu Windows 8,1 i 8,0 nie są obsługiwane w programie Visual Studio 2019. Aby obsługiwać te aplikacje, należy nadal używać programu Visual Studio 2015. |
 | Xamarin | Xamarin Live Player rozszerzenie dla programu Visual Studio i Visual Studio dla komputerów Mac zostało usunięte. Spowoduje to usunięcie ekranu parowania i dowolnej integracji. Zamiast tego należy użyć wbudowanego podglądu interfejsu Xamarin. Forms.<br/><br/>Emulator programu Visual Studio dla systemu Android został usunięty z Instalator programu Visual Studio. Zamiast tego należy użyć nowej obsługi funkcji Hyper-V w emulatorze systemu Google Android. |

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Attach | Dokumentacja firmy Microsoft
+title: 'IDebugApplicationNode:: Attach | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c41d06c116c7c15ad308ce2ace837ea01d90ab1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30d4e189ec878def1cfd88517654955cd2d1aa12
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990488"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574783"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
-Dodaje ten węzeł aplikacji do drzewa określonego projektu.  
+Dodaje ten węzeł aplikacji do określonego drzewa projektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,18 +37,18 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parametry  
  `pdanParent`  
- [in] Drzewo projektu, w którym ma zostać dodany ten węzeł aplikacji.  
+ podczas Drzewo projektu, do którego ma zostać dodany ten węzeł aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda dodaje ten węzeł aplikacji do projektu drzewa, za pomocą `pdanParent` jako element nadrzędny. Jeśli `pdanParent` jest `NULL`, ten węzeł aplikacji będzie węzłem najwyższego poziomu.  
+ Ta metoda dodaje ten węzeł aplikacji do drzewa projektu przy użyciu `pdanParent` jako elementu nadrzędnego. Jeśli `pdanParent` jest `NULL`, ten węzeł aplikacji będzie węzłem najwyższego poziomu.  
   
-## <a name="see-also"></a>Zobacz też  
- [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugApplicationNode::D etach](../../winscript/reference/idebugapplicationnode-detach.md)    
  [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

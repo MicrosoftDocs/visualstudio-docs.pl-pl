@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedureOld Interface | Microsoft Docs
+title: Interfejs IActiveScriptParseProcedureOld | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,25 +17,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 520d3f1414447abfc7c018d36853b72aefbbf15f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4558a0cab2aea9b56db2759bb80b1287cd33ce87
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386171"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571428"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>Interfejs IActiveScriptParseProcedureOld
-Umożliwia tekstu kodu źródłowego dla procedur, które mają zostać dodane do skryptu. Dla interpretowanych języków skryptów, które nie mają niezależne środowisko tworzenia, np. VBScript, zapewnia to alternatywny mechanizm (inne niż `IActiveScriptParse` lub `IPersist*`) aby dodać skrypt procedury do przestrzeni nazw.  
+Umożliwia dodanie tekstu kodu źródłowego do skryptu. W przypadku interpretowanych języków skryptów, które nie mają niezależnego środowiska projektowego, takiego jak VBScript, zapewnia alternatywny mechanizm (inny niż `IActiveScriptParse` lub `IPersist*`), aby dodać procedury skryptu do przestrzeni nazw.  
   
 > [!NOTE]
-> Ten interfejs jest przestarzała zastąpiona ceną `IActiveScriptParseProcedure` interfejsu.  
+> Ten interfejs jest przestarzały na korzyść interfejsu `IActiveScriptParseProcedure`.  
   
 ## <a name="methods"></a>Metody  
- Oprócz metod odziedziczone `IUnknown`, `IActiveScriptParseProcedureOld` interfejsu udostępnia następujące metody.  
+ Oprócz metod dziedziczonych z `IUnknown` interfejs `IActiveScriptParseProcedureOld` udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analizuje procedury danego kodu i dodaje procedurę do przestrzeni nazw.|  
+|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analizuje daną procedurę kodu i dodaje procedurę do przestrzeni nazw.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)

@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::AddApplication | Dokumentacja firmy Microsoft
+title: 'IMachineDebugManagerCookie:: addapplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c71983dd5f1273679351bc45c1db2df62757d153
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da436308c71a66d3070d42128d8da03ae88d2935
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977659"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573913"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-Dodaje aplikację do uruchamiania listy aplikacji.  
+Dodaje aplikację do listy uruchomionych aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,25 +39,25 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pda`  
- [in] Aplikacja z uruchomioną listy aplikacji.  
+ podczas Aplikacja na listę uruchomionych aplikacji.  
   
  `dwDebugAppCookie`  
- [in] Plik cookie, który identyfikuje aplikację debugowania.  
+ podczas Plik cookie, który identyfikuje aplikację do debugowania.  
   
  `pdwAppCookie`  
- [out] Plik cookie, który służy do usuwania aplikacji Menedżer debugowania maszyny.  
+ określoną Plik cookie służący do usuwania aplikacji z Menedżera debugowania maszyny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana przez Menedżer debugowania procesów zawsze wtedy, gdy `IProcessDebugManager::AddApplication` jest wywoływana.  
+ Ta metoda jest wywoływana przez Menedżera debugowania procesów za każdym razem, gdy `IProcessDebugManager::AddApplication` jest wywoływana.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
- [IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IMachineDebugManagerCookie   interfejsu](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ [IMachineDebugManagerCookie:: RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)    
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

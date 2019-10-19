@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::CreateChildHandler | Dokumentacja firmy Microsoft
+title: 'IScriptNode:: CreateChildHandler | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bca8b30021d39638f3755bace2625bb38a44242d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e024bb7d6a81b35994edddfe9e71666b0ee8df0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787147"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573601"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-Dodaje scriptlet jako wystąpienie podrzędnych `IScriptNode`.  
+Dodaje Scriptlet jako wystąpienie podrzędne `IScriptNode`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,49 +46,49 @@ HRESULT CreateChildHandler(
   
 #### <a name="parameters"></a>Parametry  
  `pszDefaultName`  
- [in] Adres nazwy domyślnej, aby skojarzyć ze scriptlet.  
+ podczas Adres nazwy domyślnej, która ma zostać skojarzona z Scriptlet.  
   
  `prgpszNames`  
- [w size_is (`cpszNames`)] identyfikatorów w pełni kwalifikowana nazwa hosta.  
+ [in, size_is (`cpszNames`)] Lista identyfikatorów z w pełni kwalifikowanej nazwy hosta.  
   
  `cpszNames`  
- [in] Liczba identyfikatorów w `prgpszNames` parametru.  
+ podczas Liczba identyfikatorów w parametrze `prgpszNames`.  
   
  `pszEvent`  
- [in] Adres buforu, który identyfikuje nazwę zdarzenia, skojarzone ze scriptlet.  
+ podczas Adres buforu identyfikujący nazwę zdarzenia skojarzoną z Scriptlet.  
   
  `pszDelimiter`  
- [in] Adres ogranicznika końcowego elementu skrypt bloku. Do analizowania, host zazwyczaj używa rozdzielnika (takie jak dwa pojedyncze cudzysłowy), aby wykrywać koniec bloku skryptu.  
+ podczas Adres ogranicznika bloku End-of-Script. W celu przeanalizowania Host zwykle używa ogranicznika (takiego jak dwa znaki pojedynczego cudzysłowu) w celu wykrycia końca bloku skryptu.  
   
- Ogranicznik umożliwia przetwarzanie wstępne za pomocą skryptu tworzenia aparatu. Na przykład aparat może zastąpić znak pojedynczego cudzysłowu dwa znaki pojedynczego cudzysłowu jako ogranicznika. Aparat określa sposób korzystania z ogranicznikiem.  
+ Ogranicznik włącza przetwarzanie wstępne przez aparat tworzenia skryptów. Na przykład aparat może zamienić pojedynczy cudzysłów z dwoma pojedynczymi cudzysłowami do użycia jako ogranicznik. Aparat określa sposób użycia ogranicznika.  
   
- Wartość NULL, jeśli nie było ogranicznika używany do identyfikowania koniec bloku skryptu.  
+ Ustaw wartość NULL, jeśli żaden ogranicznik nie zostanie użyty do zidentyfikowania końca bloku skryptu.  
   
  `ptiSignature`  
- [in] Informacje o typie dla obiektu funkcji.  
+ podczas Informacje o typie dla obiektu funkcji.  
   
  `iMethodSignature`  
- [in] Indeks funkcji w `ITypeInfo``ptiSignature` parametru.  
+ podczas Indeks funkcji w parametrze `ITypeInfo``ptiSignature`.  
   
  `isn`  
- [in] Indeks elementu podrzędnego w obiekcie nadrzędnym.  
+ podczas Indeks elementu podrzędnego w elemencie nadrzędnym.  
   
  `dwCookie`  
- [in] Wartość zdefiniowanych przez aplikację, która jest używana do kojarzenia wpis z obiektu hosta.  
+ podczas Zdefiniowana przez aplikację wartość, która jest używana do kojarzenia wpisu z obiektem hosta.  
   
  `ppse`  
- [out] Adres zmiennej, która otrzymuje wskaźnik `IScriptEntry` interfejsu, wystąpienia podrzędne.  
+ określoną Adres zmiennej, która otrzymuje wskaźnik do interfejsu `IScriptEntry` wystąpienia podrzędnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Scriptlet określa procedurę obsługi zdarzeń. Ta metoda tworzy scriptlet, jeśli jest wywoływany przez `IScriptNode` obiekt, który reprezentuje strony sieci Web. Ta metoda nie powiedzie się, jeśli jest ona wywoływana przez inne interfejsy.  
+ Scriptlet określa procedurę obsługi zdarzeń. Ta metoda tworzy element Scriptlet, jeśli jest wywoływany przez obiekt `IScriptNode`, który reprezentuje stronę sieci Web. Ta metoda nie powiedzie się, jeśli jest wywoływana przez inne interfejsy.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptNode](../../winscript/reference/iscriptnode-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IScriptNode   interfejsu](../../winscript/reference/iscriptnode-interface.md)  
  [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

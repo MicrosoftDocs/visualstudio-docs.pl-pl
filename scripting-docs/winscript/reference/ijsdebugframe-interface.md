@@ -1,5 +1,5 @@
 ---
-title: IJsDebugFrame, interfejs | Dokumentacja firmy Microsoft
+title: Interfejs IJsDebugFrame | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f5a848967148705a2b8dcd3f6b75dcb3a5db26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91fe8cdf91b0c2121f4a1a7f111794b0fbe36669
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558006"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575103"
 ---
 # <a name="ijsdebugframe-interface"></a>IJsDebugFrame — Interfejs
 Reprezentuje ramkę stosu.  
@@ -33,16 +33,16 @@ IJsDebugFrame : public IUnknown;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IJsDebugFrame::Evaluate, metoda](../../winscript/reference/ijsdebugframe-evaluate-method.md)|Ocena wyrażenia w kontekście tej ramki stosu.|  
+|[IJsDebugFrame::Evaluate, metoda](../../winscript/reference/ijsdebugframe-evaluate-method.md)|Oceń wyrażenie w kontekście tej ramki stosu.|  
 |[IJsDebugFrame::GetDebugProperty, metoda](../../winscript/reference/ijsdebugframe-getdebugproperty-method.md)|Zwraca przeglądarkę właściwości dla tej ramki stosu.|  
-|[IJsDebugFrame::GetDocumentPositionWithId, metoda](../../winscript/reference/ijsdebugframe-getdocumentpositionwithid-method.md)|Zwraca bieżącą pozycję ramki stosu w obrębie dokumentu poziomie użytkownika.|  
-|[IJsDebugFrame::GetDocumentPositionWithName, metoda](../../winscript/reference/ijsdebugframe-getdocumentpositionwithname-method.md)|Zwraca bieżącą pozycję ramki stosu w obrębie dokumentu poziomie użytkownika.|  
-|[IJsDebugFrame::GetName, metoda](../../winscript/reference/ijsdebugframe-getname-method.md)|Pobiera nazwę przyjazną dla użytkownika ramki stosu.|  
-|[IJsDebugFrame::GetReturnAddress, metoda](../../winscript/reference/ijsdebugframe-getreturnaddress-method.md)|Pobiera adres zwrotny wypychany na "początku" (zobacz GetStackRange) klatki.|  
-|[IJsDebugFrame::GetStackRange, metoda](../../winscript/reference/ijsdebugframe-getstackrange-method.md)|Zwraca bezwzględny zakres adresów dla logicznej ramki stosu JavaScript.|  
+|[IJsDebugFrame::GetDocumentPositionWithId, metoda](../../winscript/reference/ijsdebugframe-getdocumentpositionwithid-method.md)|Zwraca bieżącą pozycję ramki stosu w dokumencie na poziomie użytkownika.|  
+|[IJsDebugFrame::GetDocumentPositionWithName, metoda](../../winscript/reference/ijsdebugframe-getdocumentpositionwithname-method.md)|Zwraca bieżącą pozycję ramki stosu w dokumencie na poziomie użytkownika.|  
+|[IJsDebugFrame::GetName, metoda](../../winscript/reference/ijsdebugframe-getname-method.md)|Pobiera przyjazną dla użytkownika nazwę ramki stosu.|  
+|[IJsDebugFrame::GetReturnAddress, metoda](../../winscript/reference/ijsdebugframe-getreturnaddress-method.md)|Pobiera adres zwrotny wypychany przy użyciu elementu "Start" (zobacz GetStackRange —) ramki.|  
+|[IJsDebugFrame::GetStackRange, metoda](../../winscript/reference/ijsdebugframe-getstackrange-method.md)|Zwraca bezwzględny zakres adresów logicznej ramki stosu JavaScript.|  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
